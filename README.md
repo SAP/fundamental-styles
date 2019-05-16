@@ -1,15 +1,15 @@
-# SAP Fiori Fundamentals
+# Fundamental Styles
 
 [![npm version](https://badge.fury.io/js/fiori-fundamentals.svg)](https://badge.fury.io/js/fiori-fundamentals)
 [![Build Status](https://travis-ci.org/SAP/fundamental.svg?branch=master)](https://travis-ci.org/SAP/fundamental)
 [![Slack](https://img.shields.io/badge/slack-ui--fundamentals-blue.svg?logo=slack)](https://ui-fundamentals.slack.com)
 
 
-## What is SAP Fiori Fundamentals?
+## What is Fundamental Styles?
 
-SAP Fiori Fundamentals is a light-weight presentation layer that can be used with your UI framework of choice (e.g. Angular, React, Vue, etc.). With Fiori Fundamentals’ library of stylesheets and HTML tags, developers can build consistent Fiori apps in any web-based technology.
+Fundamental Styles is a light-weight presentation layer that can be used with your UI framework of choice (e.g. Angular, React, Vue, etc.). With Fundamental Styles’ library of stylesheets and HTML tags, developers can build consistent Fiori apps in any web-based technology.
 
-**Learn more at http://sap.github.io/fundamental/**
+**Learn more at http://sap.github.io/fundamental-styles/**
 
 We are also working on [Angular](https://github.com/SAP/fundamental-ngx), [React](https://github.com/SAP/fundamental-react) and [Vue](https://github.com/SAP/fundamental-vue) implementations.
 
@@ -26,22 +26,22 @@ The fully compiled, minified library is available via CDN for inclusion in your 
 
 ### NPM Package
 
-The compiled CSS for the full library and modules, e.g., core, layout, etc., are distributed via [NPM](https://www.npmjs.com/package/fiori-fundamentals) along with the SASS source.
+The compiled CSS for the full library and modules, e.g., core, layout, etc., are distributed via [NPM](https://www.npmjs.com/package/fundamental-styles) along with the SASS source.
 
-This gives you incredible flexibility to use individual components and enable [advanced customization](https://github.com/SAP/fundamental/wiki/Advanced-Customization) options.
+This gives you incredible flexibility to use individual components and enable [advanced customization](https://github.com/SAP/fundamental-styles/wiki/Advanced-Customization) options.
 
 ````
-npm install fiori-fundamentals --save
+npm install fundamental-styles --save
 ````
 
-> NOTE: We only distribute the fonts, icons and compiled CSS and [the SASS source](https://github.com/SAP/fundamental/tree/master/scss), not the full project or HTML for specific components. If your project uses LESS, see [LESS compatible Fiori Fundamentals](https://github.com/SAP/fundamental/wiki/LESS-compatible-Fiori-Fundamentals).
+> NOTE: We only distribute the fonts, icons and compiled CSS and [the SASS source](https://github.com/SAP/fundamental-styles/tree/master/scss), not the full project or HTML for specific components. If your project uses LESS, see [LESS compatible Fiori Fundamentals](https://github.com/SAP/fundamental-styles/wiki/LESS-compatible-Fiori-Fundamentals).
 
 
 ## Working with the Project
 
 ### Download and Installation
 
-1. **Clone Repository** - Clone the repo using the git software of your choice or using the git command `git clone https://github.com/SAP/fundamental.git`
+1. **Clone Repository** - Clone the repo using the git software of your choice or using the git command `git clone https://github.com/SAP/fundamental-styles.git`
 
 1. **Install NPM Dependencies**: `npm install`
 
@@ -66,15 +66,15 @@ The project has the following prerequisites:
 If you are importing .scss files in your project, the icons path needs to be configured in your project's .scss file before the Fiori Fundamentals scss import as described below. Please note that the path variable name has to be `$fd-icons-path` in order to override the default value set in `scss/icons/icon.scss`.
 
 ```
-$fd-icons-path : "../node_modules/fiori-fundamentals/scss/icons/"; // should be declared before the scss import
+$fd-icons-path : "../node_modules/fundamental-styles/scss/icons/"; // should be declared before the scss import
 
-@import "../node_modules/fiori-fundamentals/scss/all.scss";
+@import "../node_modules/fundamental-styles/scss/all.scss";
 
 ```
 
 ## Support
 
-If you encounter an issue, you can create a [ticket](https://github.com/SAP/fundamental/issues/new/choose) or post on the [Fundamentals Slack channel](https://join.slack.com/t/ui-fundamentals/shared_invite/enQtNTIzOTU0Mzc2NTc5LThlOTYxOGE3NGIzZDY3MGYyNjRiYWFlM2U0OGFjMGQ5YTA1MWU0ZjRjOTZmMGIzYWU1MmMyNzNjMjJhNzZhYzY).
+If you encounter an issue, you can create a [ticket](https://github.com/SAP/fundamental-styles/issues/new/choose) or post on the [Fundamentals Slack channel](https://join.slack.com/t/ui-fundamentals/shared_invite/enQtNTIzOTU0Mzc2NTc5LThlOTYxOGE3NGIzZDY3MGYyNjRiYWFlM2U0OGFjMGQ5YTA1MWU0ZjRjOTZmMGIzYWU1MmMyNzNjMjJhNzZhYzY).
 
 
 ## Contributing
@@ -102,4 +102,4 @@ The following circumstances will NOT be considered a MAJOR or BREAKING change:
 ## License
 
 Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
-This file is licensed under the Apache Software License, v. 2 except as noted otherwise in the [LICENSE](https://github.com/SAP/fundamental/blob/master/LICENSE) file.
+This file is licensed under the Apache Software License, v. 2 except as noted otherwise in the [LICENSE](https://github.com/SAP/fundamental-styles/blob/master/LICENSE) file.
