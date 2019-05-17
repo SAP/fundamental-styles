@@ -32,6 +32,7 @@ $block: #{$fd-namespace}-app;
       padding: 0 var(--fd-padding-ui);
     }
     &--vertical {
+      overflow-y: auto;
       flex: 0;
       @include fd-screen(m) {
         max-width: $fd-app-sidebar-width;
@@ -43,6 +44,7 @@ $block: #{$fd-namespace}-app;
   }
   &__main {
     flex: 1 1;
-    overflow: auto;
+    overflow-y: auto;
+    height: 100%;
   }
 }
