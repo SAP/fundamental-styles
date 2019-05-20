@@ -19,6 +19,20 @@ Used when extra emphasis is needed especially when a link needs to standout from
 * Disabled state can be rendered using class `is-disabled` and/or `aria-disabled="true"` attribute
 
 {% capture default %}
-Lorem ipsum <a href="#" class="fd-link">dolor sit amet consectetur <span class="sap-icon--cart"></span> </a> adipiscing elit.
+<a href="#" class="fd-link">Standard Link</a>
+<br><br>
+<a href="#" class="fd-link"><strong>Emphasized Link</strong></a>
+<br><br>
+<a href="#" class="fd-link" aria-disabled="true">Disabled Link</a>
+<br><br>
+<a href="#" class="fd-link">
+    Icon Left Link 
+    <span class="sap-icon--slim-arrow-right sap-icon--s"></span>
+</a>
+<br><br>
+<a href="#" class="fd-link">
+    <span class="sap-icon--slim-arrow-left sap-icon--s"></span> 
+    Icon Right Link
+</a>
 {% endcapture %}
 {% include display-component.html component=default %}
