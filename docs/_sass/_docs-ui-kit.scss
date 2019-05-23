@@ -39,7 +39,7 @@
         &-btn {
             font-size: 16px;
             font-weight: bold;
-            background-color: $docs-home-dark-color;
+            background-color: docs-color(action, 3);
             color: fd-color(text, 5) !important;
             display: inline-block;
             margin-top: 16px;
@@ -52,8 +52,8 @@
                 margin-bottom: 20px;
             }
 
-            &:hover {
-                background-color: $accent-color;
+            &:hover{
+                background-color: docs-color(action, 4);
                 text-decoration: none;
                 box-shadow: none;
             }

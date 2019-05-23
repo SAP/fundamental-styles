@@ -29,7 +29,12 @@ layout: default
     <h1 class="docs-header-h1">{{ page.title }}</h1>
 
    {% if page.summary %}
-    <p class="docs-component-intro">{{page.summary}}</p>
+   <div class="fd-container">
+        <div class="fd-col--10">
+            <p class="docs-component-intro">{{page.summary}}</p>
+        </div>
+   </div>
+    
    {% endif %}
 
     {% unless page.toc == false %}
