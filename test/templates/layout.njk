@@ -7,32 +7,29 @@
     <title>{{ id }}</title>
     <link rel="stylesheet" href="static/layout.css">
     <style>
-        {% if not selfContained %}
-            {% set core_sass = 'core.scss' %}
-            {{ core_sass | sass_to_css }}
-
-            {% for sass in css_deps %}
-                {% set dep_sass = sass + '.scss' %}
-                {{ dep_sass | sass_to_css }}
-            {% endfor %}
-        {% endif %}
-        {% if id === 'icon' %}
-            {% set component_sass = 'icons.scss' %}
-        {% elif id === 'radio' or id === 'checkbox' or id === 'input' %}
-            {% set component_sass = 'components/form.scss' %}
-        {% elif id === 'panel' or id === 'panel-grid' or id === 'layout' %}
-            {% set component_sass = 'layout.scss' %}
+        {% if ie11 %}
+            {% set sass = 'all-ie11.scss' %}
+        {% elif selfContained %}
+            {% if id === 'icon' %}
+                {% set sass = 'icons.scss' %}
+            {% elif id === 'radio' or id === 'checkbox' or id === 'input' %}
+                {% set sass = 'components/form.scss' %}
+            {% elif id === 'panel' or id === 'panel-grid' or id === 'layout' %}
+                {% set sass = 'layout.scss' %}
+            {% else %}
+                {% set sass = 'components/' + id + '.scss'  %}
+            {% endif %}
         {% else %}
-            {% set component_sass = 'components/' + id + '.scss'  %}
+         {% set sass = 'all.scss' %}
         {% endif %}
-        {{ component_sass | sass_to_css }}
+        {{ sass | sass_to_css }}
     </style>
 </head>
 
 <body>
     <a href="../">Back to Index</a>
     <header class="test-header">
-        <h1>{% if selfContained %}Self-Contained Styles Playground{% else %}Playground{% endif %}: <code>{{ data.id }}</code></h1>
+        <h1>{% if selfContained %}Self-Contained Styles Playground{% elif ie11 %}IE11 Playground{% else %}Playground{% endif %}: <code>{{ data.id }}</code></h1>
         <form action="#" method="get">
             <fieldset class="test-fieldset">
                 <label class="test-label"><input type="checkbox" value="" id="toggleBg"> Toggle BG</label>
