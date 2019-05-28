@@ -18,9 +18,9 @@ Status indicators are used to easily highlight the state of an object. `badge`, 
 ## Badge Style Options
 `badge` Status Indicator has three options: `default`, `--pill` and `--filled`
 {% capture badge %}
-<span class="fd-badge">Default</span>
-<span class="fd-badge fd-badge--pill"> Default </span>
-<span class="fd-badge fd-badge--filled">Default</span>
+<span class="fd-badge">Label</span>
+<span class="fd-badge fd-badge--filled">Label</span>
+<span class="fd-badge fd-badge--pill"> Label </span>
 
 
 {% endcapture %}
@@ -31,17 +31,17 @@ Status indicators are used to easily highlight the state of an object. `badge`, 
 ### Badge Color Options
 In addition the the default grey, there are three additional Semantic color options available: `--success`, `--warning` and `-error`
 {% capture badge %}
-<span class="fd-badge fd-badge--success">Default</span>
-<span class="fd-badge fd-badge--warning">Default</span>
-<span class="fd-badge fd-badge--error">Default</span>
+<span class="fd-badge fd-badge--success">Label</span>
+<span class="fd-badge fd-badge--warning">Label</span>
+<span class="fd-badge fd-badge--error">Label</span>
 <br><br>
-<span class="fd-badge fd-badge--success fd-badge--pill">Default</span>
-<span class="fd-badge fd-badge--warning fd-badge--pill">Default</span>
-<span class="fd-badge fd-badge--error fd-badge--pill">Default</span>
+<span class="fd-badge fd-badge--success fd-badge--pill">Label</span>
+<span class="fd-badge fd-badge--warning fd-badge--pill">Label</span>
+<span class="fd-badge fd-badge--error fd-badge--pill">Label</span>
 <br><br>
-<span class="fd-badge fd-badge--success fd-badge--filled">Default</span>
-<span class="fd-badge fd-badge--warning fd-badge--filled">Default</span>
-<span class="fd-badge fd-badge--error fd-badge--filled">Default</span>
+<span class="fd-badge fd-badge--success fd-badge--filled">Label</span>
+<span class="fd-badge fd-badge--warning fd-badge--filled">Label</span>
+<span class="fd-badge fd-badge--error fd-badge--filled">Label</span>
 
 {% endcapture %}
 {% include display-component.html component=badge %}
