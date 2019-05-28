@@ -84,7 +84,7 @@ The buttons can also be set to a state:
 
 * **Normal**: The default state of the button. It can be clicked/tapped to perform the corresponding action.
 * **Selected**: Used to signal this button is selected among other buttons. This state can be rendered using `is-selected` class or `aria-selected="true"` attribute for accessibility.
-* **Disabled**: It cannot be clicked/tapped.  This state can be rendered using `is-disabled` class or `aria-disabled="true"` attribute for accessibility.
+* **Disabled**: It cannot be clicked/tapped. This state can be rendered using `is-disabled` class or `aria-disabled="true"` attribute for accessibility.
 
 {% capture button-standard-state %}
 <button class="fd-button--emphasized">Normal State</button>
@@ -133,33 +133,75 @@ Group a series of buttons together on a single line with the button group.
 {% endcapture %}
 {% include display-component.html component=button-group-small %}
 
+# Split Button
+{% include status-container.html key="button-group" %}
+Button with multiple actions
+
+{% capture button-split %}
+<div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
+  <button class="fd-button sap-icon--cart" aria-label="button">Button with text</button>
+  <button class="fd-button sap-icon--slim-arrow-down" aria-controls="t4c0o273" aria-haspopup="true" 
+  aria-expanded="false" aria-label="More"></button>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
+  id="t4c0o273">
+    <nav class="fd-menu">
+        <ul class="fd-menu__list">
+          <li><a role="button" class="fd-menu__item">Add to list</a>
+        </li>
+          <li><a role="button" class="fd-menu__item">Save for later</a>
+        </li>
+        </ul>
+    </nav>
+  </div>
+</div>
+
+<div class="fd-button-split" role="group" aria-label="button-split">
+  <button class="fd-button--emphasized sap-icon--cart" aria-label="button">Button with text</button>
+  <button class="fd-button--emphasized sap-icon--slim-arrow-down" aria-controls="t4c0o2732" 
+  aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
+    id="t4c0o2732">
+    <nav class="fd-menu">
+        <ul class="fd-menu__list">
+          <li><a role="button" class="fd-menu__item">Add to list</a>
+        </li>
+          <li><a role="button" class="fd-menu__item">Save for later</a>
+        </li>
+        </ul>
+    </nav>
+  </div>
+</div>
+
+{% endcapture %}
+{% include display-component.html component=button-split %}
+
 ## Button RTL support
 
 
 {% capture button-group-small %}
 <div dir="rtl">
-<button class="fd-button--emphasized sap-icon--cart">Add to Cart</button>
-<button class="fd-button sap-icon--cart">Add to Cart</button>
-<button class="fd-button--light sap-icon--cart">Add to Cart</button>
-<button class="fd-button--emphasized fd-button--positive sap-icon--accept">Approve</button>
-<button class="fd-button--emphasized fd-button--negative sap-icon--decline">Reject</button>
-<br><br>
-<button class="fd-button sap-icon--cart"></button>
-<button class="fd-button--light sap-icon--cart"></button>
-<button class="fd-button--standard sap-icon--filter"></button>
-<button class="fd-button--emphasized fd-button--positive sap-icon--accept"></button>
-<button class="fd-button--emphasized fd-button--negative sap-icon--decline"></button>
-<div class="fd-button-group" role="group" aria-label="Group label">
-  <button class="fd-button sap-icon--survey"></button>
-  <button class="fd-button sap-icon--pie-chart" aria-pressed="true"></button>
-  <button class="fd-button sap-icon--pool"></button>
-</div>
+  <button class="fd-button--emphasized sap-icon--cart">Add to Cart</button>
+  <button class="fd-button sap-icon--cart">Add to Cart</button>
+  <button class="fd-button--light sap-icon--cart">Add to Cart</button>
+  <button class="fd-button--emphasized fd-button--positive sap-icon--accept">Approve</button>
+  <button class="fd-button--emphasized fd-button--negative sap-icon--decline">Reject</button>
+  <br><br>
+  <button class="fd-button sap-icon--cart"></button>
+  <button class="fd-button--light sap-icon--cart"></button>
+  <button class="fd-button--standard sap-icon--filter"></button>
+  <button class="fd-button--emphasized fd-button--positive sap-icon--accept"></button>
+  <button class="fd-button--emphasized fd-button--negative sap-icon--decline"></button>
+  <div class="fd-button-group" role="group" aria-label="Group label">
+    <button class="fd-button sap-icon--survey"></button>
+    <button class="fd-button sap-icon--pie-chart" aria-pressed="true"></button>
+    <button class="fd-button sap-icon--pool"></button>
+  </div>
 
-<div class="fd-button-group" role="group" aria-label="Group label">
-  <button class="fd-button fd-button--compact" aria-pressed="true">Left</button>
-  <button class="fd-button fd-button--compact">Middle</button>
-  <button class="fd-button fd-button--compact">Right</button>
-</div>
+  <div class="fd-button-group" role="group" aria-label="Group label">
+    <button class="fd-button fd-button--compact" aria-pressed="true">Left</button>
+    <button class="fd-button fd-button--compact">Middle</button>
+    <button class="fd-button fd-button--compact">Right</button>
+  </div>
 </div>
 {% endcapture %}
 {% include display-component.html component=button-group-small %}
@@ -167,15 +209,18 @@ Group a series of buttons together on a single line with the button group.
 <br>
 
 <style media="screen">
-.fd-button,
-.fd-button-group,
-[class*="fd-button--"]{
-	margin-right: 10px;
-}
+  .fd-button,
+  .fd-button-group,
+  [class*="fd-button--"] {
+    margin-right: 10px;
+  }
 
-.fd-button-group [class*="fd-button"]{
-	margin-right: 0px;
-}
-
-
+  .fd-button-group [class*="fd-button"] {
+    margin-right: 0px;
+  }
+  .fd-button-split .fd-button--emphasized,
+  .fd-button-split .fd-button
+  {
+    margin-right: 0;
+  }
 </style>
