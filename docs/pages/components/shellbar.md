@@ -62,7 +62,7 @@ This example shows the minimum shellbar for a single application product with on
 {% capture app-layout %}
 <div class="fd-shellbar">
   <div class="fd-shellbar__group fd-shellbar__group--start">
-    <a href="#" class="fd-shellbar__logo"><img src="//unpkg.com/fiori-fundamentals/dist/images/sap-logo.png" srcset="//unpkg.com/fiori-fundamentals/dist/images/sap-logo@2x.png 1x, //unpkg.com/fiori-fundamentals/dist/images/sap-logo@3x.png 2x, //unpkg.com/fiori-fundamentals/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></a>
+    <a href="#" class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></a>
     <div class="fd-shellbar__product">
       <span class="fd-shellbar__title">Corporate Portal</span>
     </div>
@@ -104,7 +104,7 @@ This example includes the product menu for navigating to applications within the
 {% capture app-layout %}
 <div class="fd-shellbar">
   <div class="fd-shellbar__group fd-shellbar__group--start">
-    <a href="#" class="fd-shellbar__logo"><img src="//unpkg.com/fiori-fundamentals/dist/images/sap-logo.png" srcset="//unpkg.com/fiori-fundamentals/dist/images/sap-logo@2x.png 1x, //unpkg.com/fiori-fundamentals/dist/images/sap-logo@3x.png 2x, //unpkg.com/fiori-fundamentals/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></a>
+    <a href="#" class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></a>
     <div class="fd-shellbar__product">
       <div class="fd-product-menu">
         <div class="fd-popover fd-popover--right">
@@ -191,7 +191,7 @@ When a product has multiple links, the product links should collapse into an ove
 {% capture app-layout %}
 <div class="fd-shellbar">
   <div class="fd-shellbar__group fd-shellbar__group--start">
-    <a href="#" class="fd-shellbar__logo"><img src="//unpkg.com/fiori-fundamentals/dist/images/sap-logo.png" srcset="//unpkg.com/fiori-fundamentals/dist/images/sap-logo@2x.png 1x, //unpkg.com/fiori-fundamentals/dist/images/sap-logo@3x.png 2x, //unpkg.com/fiori-fundamentals/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></a>
+    <a href="#" class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></a>
     <div class="fd-shellbar__product">
       <span class="fd-shellbar__title">Corporate Portal</span>
     </div>
@@ -294,7 +294,7 @@ This example shows an application with CoPilot, integration with other products,
     </div>
   </div>
   <div class="fd-shellbar__group fd-shellbar__group--middle">
-    <img src="//unpkg.com/fiori-fundamentals/dist/images/copilot.png" alt="CoPilot" height="30" width="30" />
+    <img src="//unpkg.com/fundamental-styles/dist/images/copilot.png" alt="CoPilot" height="30" width="30" />
   </div>
   <div class="fd-shellbar__group fd-shellbar__group--end">
     <div class="fd-shellbar__actions">

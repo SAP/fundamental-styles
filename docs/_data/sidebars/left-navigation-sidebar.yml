@@ -235,7 +235,7 @@ entries:
       url: /resources/ui-kit.html
       output: web
 
-    - title: SAP Fiori Fundamentals Implementation Libraries
+    - title: SAP Fundamental Styles Implementation Libraries
       url: /resources/fundamentals-libraries.html
       output: web
 

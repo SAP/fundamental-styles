@@ -21,7 +21,6 @@ Includes:
 
 ## Container
 {: .docs-header-h1}
-{% include status-container.html key="container" %}
 
 Columns must be wrapper with this container. Some modifiers are provided to give you better control over your layout.
 
@@ -77,7 +76,6 @@ Default container has a letterbox max-width of `1290px`.
 
 ## Columns
 {: .docs-header-h1}
-{% include status-container.html key="col" %}
 
 ## Equal width Columns
 {: .docs-header-h2}

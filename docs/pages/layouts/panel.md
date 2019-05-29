@@ -56,7 +56,7 @@ Place patterns and interactions within panels on your pages to achieve focus and
 
 
 # Panel Grid
-{% include status-container.html key="panel-grid" %}
+
 Use a panel grid to arrange panels evenly in a grid layout.
 
 > This uses CSS grid which is [not supported by some older browsers](https://caniuse.com/#feat=css-grid). A flexbox fallback is included but it is recommended you test your page if you have a significant number of users on IE 11, for example.

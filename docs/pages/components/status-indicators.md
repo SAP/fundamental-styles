@@ -14,7 +14,6 @@ Status indicators are used to easily highlight the state of an object. `badge`, 
 <br>
 
 # Badge
-{% include status-container.html key="badge" %}
 
 ## Badge Style Options
 `badge` Status Indicator has three options: `default`, `--pill` and `--filled`
@@ -50,7 +49,6 @@ In addition the the default grey, there are three additional Semantic color opti
 <hr>
 
 # Label
-{% include status-container.html key="label" %}
 A `label` is similar to the `badge` status Indicator, but it does not have have any borders or background color. Color options of default grey, `--success`, `--warning` and `--error` are available.
 {% capture badge %}
 <span class="fd-label">Default</span>
@@ -63,7 +61,6 @@ A `label` is similar to the `badge` status Indicator, but it does not have have 
 <hr>
 
 # Status Indicator Label
-{% include status-container.html key="status-label" %}
 ## Status Indicator Label with build in status icons
 
 {% capture badge %}
@@ -102,7 +99,7 @@ A `label` is similar to the `badge` status Indicator, but it does not have have 
 <hr>
 
 # Counter
-{% include status-container.html key="counter" %}
+
 ## Default Counter
 Counter has a minimum value 1. Maximum display is 999+
 {% capture badge %}

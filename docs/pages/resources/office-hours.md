@@ -5,18 +5,13 @@ sidebar: left-navigation-sidebar
 toc: false
 permalink: /office-hours/
 folder: resources
-summary: Every month the SAP Fiori Fundamentals' team hosts a live stream of a presentation covering anything from library updates, how-to's and demos. It's also an opportunity for us to engage with our users and answer pre-submitted questions.
+summary: Every month the SAP Fundamental Styles' team hosts a live stream of a presentation covering anything from library updates, how-to's and demos. It's also an opportunity for us to engage with our users and answer pre-submitted questions.
 ---
 
 ## How to participate
 {: .docs-header-h2}
 
 We'd like to extend an invitation to submit your questions & comments to be discussed beforehand. <a href="https://goo.gl/forms/1E5kARHs6f8f6jkk1" target="_blank">Simply fill out this form and we'll do our best to answer your question(s) & comment(s) to the session</a>!
-
-## Next Session
-{: .docs-header-h2}
-
-Stay tuned for details on our February Office Hours session!
 
 ## Past Sessions
 {: .docs-header-h2}

@@ -1,18 +1,18 @@
 ---
-title: How to use Fiori Fundamentals SCSS with Angular
+title: How to use Fundamental Styles SCSS with Angular
 keywords: how to use scss
 sidebar: left-navigation-sidebar
 toc: false
 permalink: resources/how-to-use-scss.html
 folder: resources
-summary: The following step-by-step guide will covers how to install Fiori Fundamentals in your angular project, import SCSS in your workflow and explain some built-in functions.
+summary: The following step-by-step guide will covers how to install Fundamental Styles in your angular project, import SCSS in your workflow and explain some built-in functions.
 ---
 
 ## Table of contents
 {:.docs-header-h2}
 1. [Prerequisites and Requirements](#prerequisites-and-requirements)
 1. [Configuring Angular Project to use SCSS](#configuring-angular-project-to-use-scss)
-1. [Installing Fiori Fundamentals via NPM](#installing-fiori-fundamentals-via-npm)
+1. [Installing Fundamental Styles via NPM](#installing-fundamental-styles-via-npm)
 1. [Configuring and Importing SCSS source](#configuring-and-importing-scss-source)
 1. [Selective Imports](#selective-imports)
 1. [Core Functions and Mixins](#core-functions-and-mixins)
@@ -46,25 +46,25 @@ To set the angular project to use SCSS:
 The Basic SCSS configuration is now complete.
 
 
-## Installing Fiori Fundamentals via NPM
+## Installing Fundamental Styles via NPM
 {:.docs-header-h2}
 
-Fiori Fundamentals is currently available as an [NPM package](https://www.npmjs.com/package/fiori-fundamentals){:target="_blank"} and a compiled and minified [CDN file](https://unpkg.com/fiori-fundamentals@latest/dist/fiori-fundamentals.min.css){:target="_blank"}. The following steps will cover how to install it via NPM.
+Fundamental Styles is currently available as an [NPM package](https://www.npmjs.com/package/fundamental-styles){:target="_blank"} and a compiled and minified [CDN file](https://unpkg.com/fundamental-styles@latest/dist/fundamental-styles.min.css){:target="_blank"}. The following steps will cover how to install it via NPM.
 
-1. Type `npm install fiori-fundamentals --save-dev`. This will install the package as a dev dependency.
-2. Verify the installation was successful by typing `npm list fiori-fundamentals`
+1. Type `npm install fundamental-styles --save-dev`. This will install the package as a dev dependency.
+2. Verify the installation was successful by typing `npm list fundamental-styles`
 
-Fiori Fundamentals installation is now complete
+Fundamental Styles installation is now complete
 
 ## Configuring and Importing SCSS source
 {:.docs-header-h2}
 
 1. Open `scss/app.scss` file
-2. Add the following line of code to define the icons path: <br><br> `$fd-icons-path: "~fiori-fundamentals/scss/icons/";`
-3. Add the following line of code to define the fonts path: <br><br> `$fd-fonts-path: "~fiori-fundamentals/scss/fonts/";`
-4. Add the following line of code to import SCSS source file: <br><br> `@import "~fiori-fundamentals/scss/all.scss";`
+2. Add the following line of code to define the icons path: <br><br> `$fd-icons-path: "~fundamental-styles/scss/icons/";`
+3. Add the following line of code to define the fonts path: <br><br> `$fd-fonts-path: "~fundamental-styles/scss/fonts/";`
+4. Add the following line of code to import SCSS source file: <br><br> `@import "~fundamental-styles/scss/fundamental-styles.scss";`
 
-Importing Fiori Fundamentals SCSS is now complete
+Importing Fundamental Styles SCSS is now complete
 
 > **Note:** In order to render the icons and fonts correctly, you need to define the `$fd-icons-path` and `$fd-fonts-path` variables.
 
@@ -72,9 +72,9 @@ At this point, the contents of your `scss/app.scss` should look like this:
 
 {% highlight css %}
 
-$fd-icons-path: "~fiori-fundamentals/scss/icons/";
-$fd-fonts-path: "~fiori-fundamentals/scss/fonts/";
-@import "~fiori-fundamentals/scss/all.scss";
+$fd-icons-path: "~fundamental-styles/scss/icons/";
+$fd-fonts-path: "~fundamental-styles/scss/fonts/";
+@import "~fundamental-styles/scss/fundamental-styles.scss";
 
 {% endhighlight %}
 
@@ -83,7 +83,7 @@ You can continue to build out your SCSS workflow based on your project needs.
 ## Selective Imports
 {:.docs-header-h2}
 
-Fiori Fundamentals is divided into several functional pieces. You may choose to import key features selectively to reduce the SCSS overhead in your project.
+Fundamental Styles is divided into several functional pieces. You may choose to import key features selectively to reduce the SCSS overhead in your project.
 
 Here is an overview of the SCSS structure -
 
@@ -95,7 +95,7 @@ scss/
  |- icons/
  |- layout/
  |- theme/
- all.scss
+fundamental-styles.scss
  components.scss
  core.scss
  helpers.scss
@@ -104,46 +104,46 @@ scss/
 {% endhighlight %}
 
 
-- `all.scss`: Includes all components.
+- `fundamental-styles.scss`: Includes all components.
 - `components.scss`: SCSS source for each components. The components are decoupled  with little or no dependency on other components.
 - `core.scss`: The main purpose of core is elements and forms. It's like the reset and foundation.
 - `helpers.scss`: Includes various helper functions.
-- `icons.scss`: Fiori Fundamentals's custom icon library.
+- `icons.scss`: Fundamental Styles's custom icon library.
 - `/theme/fundamental.scss`: Includes fonts.
 - `layout.scss`: App level layout components such as top Overview of Core features bar, side nav, containers, panels, etc.
 
-You can choose to selectively import parts of the library that best fits the need of your project. Please note that components, icons, layout and helpers have a dependency on `settings.scss`. Therefore, `settings.scss` should always be included in case if you are not importing `all.scss`. For fonts, make sure you are importing `theme/fundamental.scss`
+You can choose to selectively import parts of the library that best fits the need of your project. Please note that components, icons, layout and helpers have a dependency on `settings.scss`. Therefore, `settings.scss` should always be included in case if you are not importing `fundamental-styles.scss`. For fonts, make sure you are importing `theme/fundamental-styles.scss`
 
-For selective import your `app.scss` content should look like this:
+For selective import your `fundamental-styles.scss` content should look like this:
 
 {% highlight css %}
-$fd-icons-path: "~fiori-fundamentals/scss/icons/";
-@import "~fiori-fundamentals/scss/theme/fundamental";
-@import "~fiori-fundamentals/scss/core";
-@import "~fiori-fundamentals/scss/{feature}";
+$fd-icons-path: "~fundamental-styles/scss/icons/";
+@import "~fundamental-styles/scss/theme/fundamental";
+@import "~fundamental-styles/scss/core";
+@import "~fundamental-styles/scss/{feature}";
 
 {% endhighlight %}
 
 ### Angular components
 {:.docs-header-h3}
 
-If you are writing angular components using Fiori Fundamentals toolkit, you will need to import the following in your component's scss file:
+If you are writing angular components using Fundamental Styles toolkit, you will need to import the following in your component's scss file:
 
 {% highlight css %}
-@import "~fiori-fundamentals/scss/core/settings";
-@import "~fiori-fundamentals/scss/core/mixins";
-@import "~fiori-fundamentals/scss/core/functions";
+@import "~fundamental-styles/scss/core/settings";
+@import "~fundamental-styles/scss/core/mixins";
+@import "~fundamental-styles/scss/core/functions";
 {% endhighlight %}
 
 
 ## Core Functions and Mixins
 {:.docs-header-h2}
 
-Fiori Fundamentals comes with some very useful built-in functions and mixins to help maintain consistency and quality of your SCSS source files. We recommend that you utilize these functions instead of hard coding colors, spacing, fonts, etc. in your code to keep CSS low specificity. Utilizing functions also helps in retaining the integrity of the theming options and makes it easy to switch between different themes such as a high-contrast theme for accessibility or a brand specific theme.
+Fundamental Styles comes with some very useful built-in functions and mixins to help maintain consistency and quality of your SCSS source files. We recommend that you utilize these functions instead of hard coding colors, spacing, fonts, etc. in your code to keep CSS low specificity. Utilizing functions also helps in retaining the integrity of the theming options and makes it easy to switch between different themes such as a high-contrast theme for accessibility or a brand specific theme.
 
 > **Note:** In order to use the functions and mixins, please ensure that you are importing the functions SCSS files <br>
-> `@import "~fiori-fundamentals/scss/core/functions";` <br>
-> `@import "~fiori-fundamentals/scss/core/mixins";`
+> `@import "~fundamental-styles/scss/core/functions";` <br>
+> `@import "~fundamental-styles/scss/core/mixins";`
 
 ## Color Function
 {:.docs-header-h3}
@@ -171,7 +171,7 @@ The space function can be utilized for heights, padding, margins and other posit
 
 
 
-The design system defines a variety of spacing increments that are commonly used throughout and [all of those are available](https://github.com/SAP/fundamental/blob/master/scss/_settings.scss#L18) using the mixin by passing the key. However, there are four units that will be used most often when building and extending components. These are accessible with special keys to apply consistent padding and margins.
+The design system defines a variety of spacing increments that are commonly used throughout and [all of those are available](https://github.com/SAP/fundamental-styles/blob/master/scss/_settings.scss#L18) using the mixin by passing the key. However, there are four units that will be used most often when building and extending components. These are accessible with special keys to apply consistent padding and margins.
 
 {% highlight css %}
 .foo {

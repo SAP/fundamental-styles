@@ -1,13 +1,13 @@
 {
-  "name": "fiori-fundamentals",
-  "version": "1.5.8-rc.5",
-  "description": "Fiori Fundamentals is a Design System and HTML/CSS Component Library used to build modern Product User Experiences with the SAP look and feel. Learn more about this project at - http://sap.github.io/fundamental/",
+  "name": "fundamental-styles",
+  "version": "0.0.0",
+  "description": "Fundamental Styles is a Design System and HTML/CSS Component Library used to build modern Product User Experiences with the SAP look and feel. Learn more about this project at - http://sap.github.io/fundamental-styles/",
   "main": "index.js",
   "scripts": {
-    "build": "npm run style:remove && npm run style:compile && npm run style:rename && npm run style:postCSS && npm run style:assets",
+    "build": "npm run style:remove && npm run style:compile && npm run style:postCSS && npm run style:assets",
     "build:prod": "npm run build && npm run style:less && npm run style:minify",
     "deploy": "gh-pages -d docs/_site",
-    "docs:compile": "npm run build && npm run docs:config && cp scss/icons/SAP-icons.woff docs/css/; cp dist/fiori-fundamentals-ie11.css docs/css",
+    "docs:compile": "npm run build && npm run docs:config && cp scss/icons/SAP-icons.woff docs/css/; cp dist/fundamental-styles-ie11.css docs/css",
     "docs:config": "./scripts/create-library-config.js",
     "docs:prod": "npm run docs:compile && cd docs && bundle install && bundle exec jekyll build --config _config.yml,_config-library.yml,_config-prod.yml && cd ..",
     "docs": "npm run docs:compile && cd docs && bundle install && bundle exec jekyll build --config _config.yml,_config-library.yml && cd ..",
@@ -23,11 +23,10 @@
     "std-version": "standard-version -m \"chore(release): version %s build ${TRAVIS_BUILD_NUMBER} [ci skip]\"",
     "style:assets": "./scripts/copy-assets.sh",
     "style:compile": "node-sass -q --output-style expanded --precision 5 scss/ --output dist/",
-    "style:less": " mv dist/fundamentals-ie11.less.css less/fiori-fundamentals-ie11.less && mv dist/fundamentals.less.css less/fiori-fundamentals.less && ./scripts/less.js",
+    "style:less": " mv dist/fundamental-styles-ie11.less.css less/fundamental-styles-ie11.less && mv dist/fundamental-styles.less.css less/fundamental-styles.less && ./scripts/less.js",
     "style:minify": "foreach -t -g \"dist/*.css\" -x \"cleancss -O1 specialComments:1 #{path} -o #{dir}/#{name}.min.css\" --no-c && foreach -t -g \"dist/components/*.css\" -x \"cleancss -O1 specialComments:1 #{path} -o #{dir}/#{name}.min.css\" --no-c",
     "style:postCSS": "postcss --config config/postcss.config.js  --replace dist/**/*.css && postcss --config config/postcss.config.js  --replace dist/*.css",
     "style:remove": "if [ -d dist/ ]; then rm -rf dist/; fi",
-    "style:rename": "mv dist/all.css dist/fiori-fundamentals.css && mv dist/all-ie11.css dist/fiori-fundamentals-ie11.css",
     "test": "server-test start:playground http-get://localhost:3030 test:visual",
     "test:ci-config": "./ci-scripts/generateBackstopConfig.js",
     "test:reference": "backstop reference --config ./test/visual-regression-tests/config/backstopConfig.js --docker",
@@ -36,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SAP/fundamental.git"
+    "url": "https://github.com/SAP/fundamental-styles.git"
   },
   "files": [
     "/dist",
@@ -45,7 +44,7 @@
   ],
   "author": "",
   "license": "Apache-2.0",
-  "homepage": "https://sap.github.io/fundamental/",
+  "homepage": "https://sap.github.io/fundamental-styles/",
   "devDependencies": {
     "backstopjs": "3.9.2",
     "browser-sync": "^2.26.3",
