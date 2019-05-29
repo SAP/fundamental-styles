@@ -1,14 +1,14 @@
 $accent-color: docs-color(action, 3);
 
-.has-accent-color{
+.has-accent-color {
     color: $accent-color;
 }
 
-.has-accent-background{
+.has-accent-background {
     background-color: $accent-color;
 }
 
-.img-fluid{
+.img-fluid {
     max-width: 100%;
     height: auto;
 }

@@ -1,80 +1,79 @@
-.docs-type{
+.docs-type {
 
     &_header {
         font-size: 13px;
         font-weight: bold;
     }
 
-    &_drop-cap{
+    &_drop-cap {
         float: left;
-        font-size:150px;
+        font-size: 150px;
         padding: 16px 20px 10px 0;
         margin-left: -10px;
         line-height: 80px;
         font-weight: bold;
     }
 
-    &_SAP{
+    &_SAP {
         font-size: 20px;
         font-weight: bold;
 
-        &--1{
+        &--1 {
             font-size: 30px;
             font-weight: normal;
             line-height: 36px;
         }
 
-        &--2{
+        &--2 {
             font-size: 24px;
             font-weight: normal;
             line-height: 32px;
         }
 
-        &--3{
+        &--3 {
             font-size: 18px;
             font-weight: normal;
             line-height: 24px;
         }
 
-        &--4{
+        &--4 {
             font-size: 16px;
             font-weight: normal;
             line-height: 20px;
         }
 
-        &--5{
+        &--5 {
             font-size: 14px;
             font-weight: normal;
             line-height: 20px;
         }
 
-        &--6{
+        &--6 {
             font-size: 13px;
             font-weight: normal;
             line-height: 16px;
         }
 
-        &--7{
+        &--7 {
             font-size: 12px;
             font-weight: normal;
             line-height: 8px;
         }
 
-        &--8{
+        &--8 {
             font-size: 11px;
             font-weight: normal;
             line-height: 8px;
         }
-
     }
 
-    &__scale{
-        &--preview{
+    &__scale {
+        &--preview {
             text-align: center;
             vertical-align: bottom;
             padding: 0 20px 10px;
         }
-        &--info{
+        &--info {
             text-align: center;
             vertical-align: bottom;
             padding: 10px 20px 0;

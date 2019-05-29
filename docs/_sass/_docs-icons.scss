@@ -1,4 +1,4 @@
-.demo-icon-wrapper{
+.demo-icon-wrapper {
   padding: 10px;
   float: left;
   width: 16%;
@@ -7,12 +7,11 @@
   & span {
     padding: 10px;
     display: inline-block;
-    &:before{
+    &::before {
         font-size: 35px;
     }
   }
   & h5 {
     margin-bottom: 0;
   }
-
 }

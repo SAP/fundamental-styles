@@ -3,10 +3,10 @@ $search-border-color: docs-color(neturals, 1);
 $search-input-bg: docs-color(background, 1);
 $search-results-link-hover: docs-color(background, 2);
 
-.search-box{
+.search-box {
     position: relative;
 
-    &__icon{
+    &__icon {
         position: absolute;
         top: 8px;
         left: 8px;
@@ -14,7 +14,7 @@ $search-results-link-hover: docs-color(background, 2);
         color: $search-border-color;
     }
 
-    &__input{
+    &__input {
         height: 40px !important;
         border-color: $search-border-color !important;
         background-color: $search-input-bg !important;
@@ -29,18 +29,17 @@ $search-results-link-hover: docs-color(background, 2);
         position: absolute;
         top: 41px;
         z-index: 1;
-        width:100%;
+        width: 100%;
         margin-left: 0;
         border: 1px solid $search-border-color;
         border-top: none;
-        &-links a{
+        &-links a {
             color: docs-color(text,1);
             display: block;
             padding: 10px;
-            &:hover{
+            &:hover {
                 background-color: $search-results-link-hover;
             }
         }
     }
-
 }

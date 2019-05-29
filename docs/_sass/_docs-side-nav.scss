@@ -1,6 +1,6 @@
 $side-nav-bg: #EEEEEE;
 $side-nav-links-color: docs-color(text, 1);
-.side-nav{
+.side-nav {
     background-color: $side-nav-bg;
     padding: 20px 40px;
     float: none;
@@ -13,56 +13,56 @@ $side-nav-links-color: docs-color(text, 1);
         display: none;
     }
 
-    &__headers{
+    &__headers {
         font-size: 28px;
         font-weight: bold;
         list-style: none;
 
-        &:last-child hr{
+        &:last-child hr {
             display: none;
         }
 
-        >ul{
+        >ul {
             display: none;
         }
-        &.active>ul{
+        &.active>ul {
             display: block;
         }
-        &-link{
+        &-link {
             color: $side-nav-links-color !important;
             font-family: '72', sans-serif;
             padding: 20px 20px 5px 20px;
             display: block;
-            &:hover{
+            &:hover {
                 color: $side-nav-links-color;
             }
         }
-        ol,ul{
+        ol, ul {
             margin-left: 0;
         }
     }
 
-    &__links-container{
+    &__links-container {
         margin: 0 -20px;
     }
-    &__links{
+    &__links {
         list-style: none;
         font-weight: normal;
-        &-link{
+        &-link {
             color: $side-nav-links-color !important;
             display: block;
             padding: 12px 30px;
             font-weight: lighter;
             font-size: 18px;
             font-family: '72', sans-serif;
-            &:hover{
+            &:hover {
                 color: $side-nav-links-color;
                 text-decoration: none;
                 background-color: #fbfbfb;
             }
         }
-        &.active{
-            a{
+        &.active {
+            a {
                 padding-left: 30px;
                 color: red;
                 font-weight: bold;
@@ -70,14 +70,13 @@ $side-nav-links-color: docs-color(text, 1);
         }
     }
 
-    .search-box{
+    .search-box {
         margin-bottom: 20px;
     }
 
-    &__seperator{
+    &__seperator {
         margin: 15px 20px 0 20px;
         border-bottom: 1px solid #242424;
         opacity: .3;
-
     }
 }

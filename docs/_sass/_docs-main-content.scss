@@ -1,10 +1,10 @@
-.main-content{
+.main-content {
     vertical-align: top;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
-.docs-content{
+.docs-content {
     padding: 40px 40px 80px 60px;
     min-width: 1024px;
     max-width: 1440px;
@@ -14,21 +14,20 @@
         min-width: auto;
         width: 100%;
     }
-    > ol li, 
+    > ol li,
     > ul li {
-        margin: 10px 0px 10px 0;
+        margin: 10px 0 10px 0;
     }
 
-    > h2{
+    > h2 {
         @extend .docs-header-h2;
     }
 
-    > h3{
+    > h3 {
         @extend .docs-header-h3;
     }
-    
 }
-.docs-content-full-width{
+.docs-content-full-width {
     padding: 40px 40px 80px 40px;
     width: 100%;
     @include media("<=tablet") {
@@ -36,5 +35,3 @@
         padding-top: 20px;
     }
 }
-
-

@@ -1,5 +1,5 @@
 
-.docs-colors{
+.docs-colors {
     $colors-example-1-bg: fd-color(background, 1);
     $colors-example-1-text: fd-color(text, 1);
     $colors-example-2-bg: fd-color(action, 1);
@@ -30,7 +30,6 @@
             &:nth-child(4n) {
 
                 clear: right;
-
             }
 
             &-name {
@@ -49,21 +48,21 @@
         }
     }
 
-    &_example{
+    &_example {
         text-align: center;
-        &--1{
+        &--1 {
             background-color: $colors-example-1-bg;
             color: $colors-example-1-text;
         }
-        &--2{
+        &--2 {
             background-color: $colors-example-2-bg;
             color: $colors-example-2-text;
         }
-        &--3{
+        &--3 {
             background-color: $colors-example-3-bg;
             color: $colors-example-3-text;
         }
-        &--4{
+        &--4 {
             background-color: $colors-example-4-bg;
             color: $colors-example-4-text;
         }

@@ -11,6 +11,8 @@
     "docs:config": "./scripts/create-library-config.js",
     "docs:prod": "npm run docs:compile && cd docs && bundle install && bundle exec jekyll build --config _config.yml,_config-library.yml,_config-prod.yml && cd ..",
     "docs": "npm run docs:compile && cd docs && bundle install && bundle exec jekyll build --config _config.yml,_config-library.yml && cd ..",
+    "docs:lint": "stylelint './docs/_sass/*.scss'",
+    "docs:lint:fix": "stylelint './docs/_sass/*.scss' --fix",
     "lint:fix": "stylelint './scss/**/*.scss' --fix",
     "lint:pre-commit": "printf \"running pre-commit lint...\"  && npm run lint && printf \"done!\n\"",
     "lint": "stylelint './scss/**/*.scss'",

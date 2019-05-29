@@ -16,7 +16,7 @@ $grid-transition-delay: 100ms;
         grid-template-columns: auto;
     }
 
-    &--item{
+    &--item {
         background: $grid-item-bg-color;
         padding: 40px 10px;
         display: block;
@@ -26,7 +26,7 @@ $grid-transition-delay: 100ms;
         z-index: 1;
         transition: all ease-in-out $grid-transition-delay;
 
-        &:hover{
+        &:hover {
             background-color: $grid-item-bg-color;
             box-shadow: 0 0 20px 0 rgba(138, 143, 161, 0.4);
             text-decoration: none;
@@ -49,163 +49,163 @@ $grid-transition-delay: 100ms;
         margin: 0 auto;
     }
 
-    &--img{
+    &--img {
 
-        &__action-bar{
+        &__action-bar {
             width: 300px;
-            margin-top:60px;
+            margin-top: 60px;
         }
 
-        &__alert{
+        &__alert {
             width: 250px;
-            margin-top:20px;
+            margin-top: 20px;
         }
 
-        &__status-indicators{
+        &__status-indicators {
             width: 250px;
-            margin-top:60px;
+            margin-top: 60px;
         }
 
-        &__button{
+        &__button {
             width: 150px;
-            margin-top:40px;
+            margin-top: 40px;
         }
 
-        &__combobox-input{
-            margin-top:10px;
+        &__combobox-input {
+            margin-top: 10px;
         }
 
-        &__contextual-menu{
+        &__contextual-menu {
             width: 100px;
-            margin-top:10px;
+            margin-top: 10px;
         }
 
-        &__dropdown{
+        &__dropdown {
             width: 250px;
-            margin-top:20px;
+            margin-top: 20px;
         }
 
-        &__icons{
+        &__icons {
             width: 250px;
-            margin-top:70px;
+            margin-top: 70px;
         }
 
-        &__identifier{
+        &__identifier {
             width: 200px;
-            margin-top:50px;
+            margin-top: 50px;
         }
 
-        &__image{
+        &__image {
             width: 100px;
-            margin-top:20px;
+            margin-top: 20px;
         }
 
-        &__inline-help{
+        &__inline-help {
             width: 250px;
-            margin-top:30px;
+            margin-top: 30px;
         }
 
-        &__link{
+        &__link {
             width: 100px;
-            margin-top:60px;
+            margin-top: 60px;
         }
 
-        &__localization-editor{
-            margin-top:60px;
+        &__localization-editor {
+            margin-top: 60px;
         }
 
-        &__form{
+        &__form {
             width: 250px;
-            margin-top:30px;
+            margin-top: 30px;
         }
 
-        &__input-group{
+        &__input-group {
             width: 250px;
-            margin-top:30px;
+            margin-top: 30px;
         }
 
-        &__list-group{
+        &__list-group {
             width: 300px;
-            margin-top:40px;
+            margin-top: 40px;
         }
 
-        &__loading-spinner{
+        &__loading-spinner {
             width: 50px;
-            margin-top:50px;
+            margin-top: 50px;
         }
 
-        &__mega-menu{
+        &__mega-menu {
             width: 110px;
-            margin-top:0px;
+            margin-top: 0;
         }
 
-        &__modal{
+        &__modal {
             width: 230px;
-            margin-top:0px;
+            margin-top: 0;
         }
 
-        &__multi-input{
+        &__multi-input {
             width: 230px;
-            margin-top:50px;
+            margin-top: 50px;
         }
 
-        &__pagination{
+        &__pagination {
             width: 300px;
-            margin-top:60px;
+            margin-top: 60px;
         }
 
-        &__search-input{
-            margin-top:50px;
+        &__search-input {
+            margin-top: 50px;
         }
 
-        &__side-navigation{
+        &__side-navigation {
             width: 100px;
-            margin-top:0px;
+            margin-top: 0;
         }
 
-        &__shellbar{
+        &__shellbar {
             width: 300px;
-            margin-top:50px;
+            margin-top: 50px;
         }
 
-        &__table{
+        &__table {
             width: 300px;
-            margin-top:0px;
+            margin-top: 0;
         }
 
-        &__tabs{
+        &__tabs {
             width: 300px;
-            margin-top:60px;
+            margin-top: 60px;
         }
 
-        &__tag{
+        &__tag {
             width: 150px;
-            margin-top:50px;
+            margin-top: 50px;
         }
 
-        &__tile{
+        &__tile {
             width: 300px;
-            margin-top:40px;
+            margin-top: 40px;
         }
 
-        &__tile-grid{
+        &__tile-grid {
             width: 300px;
-            margin-top:20px;
+            margin-top: 20px;
         }
 
-        &__toggle{
+        &__toggle {
             width: 40px;
-            margin-top:30px;
+            margin-top: 30px;
         }
 
-        &__toolbar{
+        &__toolbar {
             width: 320px;
-            margin-top:60px;
+            margin-top: 60px;
         }
 
-        &__tree{
+        &__tree {
             width: 300px;
-            margin-top:0px;
+            margin-top: 0;
         }
     }
 }
