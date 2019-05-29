@@ -43,4 +43,4 @@ notifications:
     on_success: change
   slack: 
     rooms:
-      - ui-fundamentals:zVRyxlqkYnQFD7p8QHkWM8Fd#fundamental-automated
+      - ui-fundamentals:zVRyxlqkYnQFD7p8QHkWM8Fd#styles-automated
