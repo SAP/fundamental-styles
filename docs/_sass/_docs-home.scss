@@ -1,22 +1,19 @@
-.docs-home{
+.docs-home {
 
-    $docs-home-white-color: docs-color(background, 1);
-    $docs-home-dark-color: docs-color(text, 1);
-
-    &_hero{
+    &_hero {
         background-image: url('../images/home-hero-bg.png');
         background-size: cover;
         background-position: -190px -350px;
         background-repeat: no-repeat;
-        background-color: #242424;
-        color: #d4d4d4;
+        background-color: $docs-home-grey-color;
+        color: $docs-home-dark-color;
         padding-top: 100px;
         @include media("<=tablet") {
             padding-top: 0;
         }
 
 
-        &-heading{
+        &-heading {
             font-size: 70px;
             font-weight: 100;
             line-height: 1.1;
@@ -26,25 +23,25 @@
             }
         }
 
-        &-bold{
+        &-bold {
             font-weight: bold;
         }
 
-        &-img{
+        &-img {
             float: right;
             @include media("<=tablet") {
                 width: 100%;
             }
         }
 
-        &-content{
+        &-content {
             padding: 100px;
             @include media("<=tablet") {
                 padding: 20px;
             }
         }
 
-        &-description{
+        &-description {
             font-size: 20px;
             line-height: 1.2;
             margin-top: 20px;
@@ -52,30 +49,30 @@
             max-width: 520px;
         }
 
-        &-btn{
+        &-btn {
             font-size: 16px;
             font-weight: bold;
             background-color: $docs-home-dark-color;
             color: fd-color(text, 5) !important;
             display: inline-block;
-            margin-top:36px;
-            margin-bottom:32px;
+            margin-top: 36px;
+            margin-bottom: 32px;
             line-height: 0;
             padding: 20px;
-            border:none;
+            border: none;
             @include media("<=tablet") {
                 margin-top: 20px;
                 margin-bottom: 20px;
             }
 
-            &:hover{
+            &:hover {
                 background-color: $accent-color;
                 text-decoration: none;
                 box-shadow: none;
             }
         }
 
-        &-version{
+        &-version {
             display: inline-block;
             text-transform: none;
             border-radius: 20px;
@@ -85,93 +82,92 @@
         }
     }
 
-    &_panel{
-        padding:100px;
-        background: #181818;
+    &_panel {
+        padding: 100px;
+        background: $docs-home-white-color;
         @include media("<=tablet") {
             padding: 20px;
         }
 
-        &--alt{
-            background: #242424;
+        &--alt {
+            background: $docs-home-grey-color;
         }
 
-        &-title{
-            color:#DFDFDF;
+        &-title {
+            color: $docs-home-dark-color;
             font-size: 60px;
-            border-bottom: 1px solid #979797;
+            border-bottom: 1px solid $docs-home-dark-color;
             padding-bottom: 20px;
             margin-bottom: 50px;
             a {
-                color:#DFDFDF;
+                color: $docs-home-dark-color;
             }
             a:hover {
-              color: #5FA8EF;
+              color: $docs-home-dark-color;
                 text-decoration: none;
             }
         }
 
-        &-heading{
-            color:#C7C7C7;
+        &-heading {
+            color: $docs-home-dark-color;
             font-size: 30px;
             margin-top: 20px;
             margin-bottom: 30px;
             font-weight: 100;
-
         }
 
-        &-description{
-            color:#8F8F8F;
+        &-description {
+            color: $docs-home-dark-color;
             font-size: 16px;
             margin-bottom: 30px;
         }
 
-        &-action{
+        &-action {
             font-size: 15px;
             font-weight: bold;
             margin-bottom: 20px;
             display: inline-block;
         }
 
-        &-img{
+        &-img {
             float: right;
         }
 
-        &-search-box{
+        &-search-box {
             margin-bottom: 40px;
 
-            .search-box__input{
+            .search-box__input {
                 border-radius: 40px !important;
                 font-size: 22px;
                 padding: 30px;
                 padding-left: 60px !important;
-                border-color: #9B9B9B !important;
+                border-color: $docs-home-dark-color !important;
                 background-color: transparent !important;
-                color: fd-color(text, 5) !important;
+                color: $docs-home-dark-color !important;
             }
-            .search-box__icon{
+            .search-box__icon {
                 font-size: 30px;
-                color: #9B9B9B;
+                color: $docs-home-dark-color;
                 padding-left: 10px;
             }
-            .search-box__results{
+            .search-box__results {
                 border: none;
                 top: 65px;
                 padding: 0;
                 margin-left: 50px;
                 width: calc(100% - 100px);
             }
-            .search-box__results-links a{
+            .search-box__results-links a {
                 font-size: 20px;
             }
-            .search-box__results-links a:hover{
+            .search-box__results-links a:hover {
                 color: docs-color(action, 3);
                 background: transparent;
                 text-decoration: none;
             }
         }
 
-        &-resources-link{
+        &-resources-link {
             display: block;
             color: #c7c7c7;
             font-size: 20px;
@@ -179,16 +175,15 @@
             position: relative;
             padding-left: 30px;
 
-            span{
+            span {
                 position: absolute;
-                left: 0px;
-                top:0;
+                left: 0;
+                top: 0;
             }
         }
-
     }
 
-    &_getting-started{
+    &_getting-started {
         width: 50%;
         float: left;
         padding: 100px 50px;
@@ -197,13 +192,13 @@
         text-align: center;
         display: inline-block;
         transition: all 0.5s ease;
-        color:$docs-home-dark-color;
+        color: $docs-home-dark-color;
 
-        &:hover{
-            color:$docs-home-dark-color;
+        &:hover {
+            color: $docs-home-dark-color;
         }
 
-        &-label{
+        &-label {
             margin-top: 40px;
             display: block;
             font-weight: bold;
@@ -211,84 +206,83 @@
             font-size: 16px;
         }
 
-        &--designer{
+        &--designer {
             background-image: url('../images/home-designers-bg.png');
             border-right: 1px solid docs-color(neturals, 2);
         }
 
-        &--developer{
+        &--developer {
             background-image: url('../images/home-developers-bg.png');
        }
     }
 
-    &_ui-guidelines{
+    &_ui-guidelines {
         text-align: center;
         background-color: docs-color(background, 3);
         color: $docs-home-white-color;
         padding: 100px 0;
 
-        &-heading{
+        &-heading {
             font-size: 28px;
             font-weight: 900;
             margin-bottom: 12px;
         }
 
-        &-description{
+        &-description {
             font-size: 14px;
         }
 
-        &-img{
+        &-img {
             height: 120px;
             vertical-align: baseline;
             position: relative;
             margin-bottom: 30px;
 
-            img{
+            img {
                 position: absolute;
                 bottom: 0;
-                left:0;
-                right:0;
-                margin-left:auto;
-                margin-right:auto;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
 
-        &-link{
+        &-link {
             width: 200px;
             display: inline-block;
             font-size: 16px;
             font-weight: bold;
             text-transform: uppercase;
-            color: $docs-home-white-color !important;
+            color: $docs-home-dark-color !important;
 
-            &:hover{
-                color: $docs-home-white-color;
+            &:hover {
+                color: $docs-home-dark-color;
             }
         }
     }
 
-    &_support{
+    &_support {
         width: 60%;
         margin: 160px auto;
         display: flex;
 
-        &-link{
+        &-link {
             width: 50%;
             float: left;
             text-align: center;
-            color: docs-color(text, 2);
+            color: $docs-home-dark-color;
 
-            &:hover{
-                color: docs-color(text, 2);
+            &:hover {
+                color: $docs-home-dark-color;
             }
 
-            img{
+            img {
                 display: block;
                 margin: 30px auto;
                 width: 80px;
             }
         }
     }
-
 }
 

@@ -1,38 +1,46 @@
 .docs-top-nav {
-    background-color: #000;
+    background-color: $docs-home-white-color;
     height: 87px;
-    &__logo{
+
+    &__logo {
         margin-top: 25px;
         margin-left: 35px;
         display: inline-block;
         font-size: 24px;
         font-weight: bold;
-        color: fd-color(text, 5) !important;
+        color: $docs-home-dark-color !important;
 
-        &:hover{
+        &:hover {
             text-decoration: none;
-            color: fd-color(text, 5) !important;
+            color: $docs-home-dark-color !important;
         }
-        &__accent{
+        &__accent {
             font-weight: 100;
         }
-
     }
 
 
-    &__support{
+    &__support {
         font-size: 1.14286rem;
         line-height: 1.25;
         font-weight: 400;
-        color: fd-color(text, 5) !important;
         padding: 30px 20px 0 0;
         display: inline-block;
         @include media("<=tablet") {
             display: none;
         }
-        &--link{
+        &--link {
             display: inline-block;
-            vertical-align: top
+            vertical-align: middle;
+        }
+    }
+
+    &__button {
+        color: $docs-home-dark-color;
+        border-color: $docs-home-dark-color;
+
+        &:hover {
+            background-color: $accent-color;
         }
     }
 

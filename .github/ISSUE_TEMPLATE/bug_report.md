@@ -8,8 +8,8 @@ about: Create a report to help us improve
 
 Before opening:
 
-- [Search for duplicate or closed issues](https://github.com/SAP/fundamental/issues?utf8=✓&q=is%3Aissue)
-- Read the [contributing guidelines](https://github.com/SAP/fundamental/wiki/Contribution-Guidelines)
+- [Search for duplicate or closed issues](https://github.com/SAP/fundamental-styles/issues?utf8=✓&q=is%3Aissue)
+- Read the [contributing guidelines](https://github.com/SAP/fundamental-styles/wiki/Contribution-Guidelines)
 
 Feature requests must include:
 - As much detail as possible for what we should add and why it's important
@@ -22,7 +22,7 @@ A clear and concise description of what the bug is.
 
 > Is this issue related to a specific component?
 
-> What version of the Fiori Fundamentals are you using?
+> What version of the Fundamental Styles are you using?
 
 > What offering/product do you work on? Any pressing ship or release dates we should be aware of?
 

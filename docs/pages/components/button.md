@@ -116,7 +116,6 @@ The buttons can also be set to a state:
 
 
 # Button Group
-{% include status-container.html key="button-group" %}
 Group a series of buttons together on a single line with the button group.
 
 {% capture button-group-small %}

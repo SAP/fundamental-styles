@@ -1,7 +1,7 @@
-.docs-footer{
-    background: #EAEAEA;
-    border-top: 1px solid docs-color(neturals, 1);
+.docs-footer {
+    background: $docs-home-white-color;
     bottom: 0;
+    margin-bottom: 32px;
     padding: 32px;
     width: 100%;
     font-size: 16px;
@@ -10,6 +10,5 @@
     }
     &__link {
       margin-left: 20px;
-
     }
 }

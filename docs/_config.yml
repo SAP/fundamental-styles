@@ -1,19 +1,19 @@
 
-repository: /SAP/fundamental
+repository: /SAP/fundamental-styles
 
 # this property is useful for conditional filtering of content that is separate from the PDF.
 output: web
 
 # this appears on the top navigation bar next to the home button
-topnav_title: Fiori Fundamentals
+topnav_title: Fundamental Styles
 
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
-site_title: SAP Fiori Fundamentals
+site_title: SAP Fundamental Styles
 
-site_description: SAP Fiori Fundamentals is a Fiori 3 component library and SASS toolkit for building SAP user interfaces with any technology.
+site_description: SAP Fundamental Styles is a Fiori 3 component library and SASS toolkit for building SAP user interfaces with any technology.
 
 # this appears in the footer
-company_name: SAP Fiori Fundamentals
+company_name: SAP Fundamental Styles
 
 # if you have google-analytics ID, put it in. if not, edit this value to blank.
 google_analytics: UA-126805333-1
@@ -24,7 +24,7 @@ host: 127.0.0.1
 # the port where the preview is rendered. You can leave this as is unless you have other Jekyll builds using this same port that might cause conflicts. in that case, use another port such as 4006.
 port: 4000
 
-feedback_subject_line: Fiori Fundamentals Documentation Feedback
+feedback_subject_line: Fundamental Styles Documentation Feedback
 
 # used as a contact email for the Feedback link in the top navigation bar
 feedback_email: fundamental@sap.com

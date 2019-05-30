@@ -7,8 +7,8 @@ about: Request a new component
 <!--
 Before opening:
 
-- [Search for duplicate or closed issues](https://github.com/SAP/fundamental/issues?utf8=✓&q=is%3Aissue)
-- Read the [contributing guidelines](https://github.com/SAP/fundamental/wiki/Contribution-Guidelines)
+- [Search for duplicate or closed issues](https://github.com/SAP/fundamental-styles/issues?utf8=✓&q=is%3Aissue)
+- Read the [contributing guidelines](https://github.com/SAP/fundamental-styles/wiki/Contribution-Guidelines)
 
 Feature requests must include:
 - As much detail as possible for what we should add and why it's important

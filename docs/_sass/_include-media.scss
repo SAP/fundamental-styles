@@ -196,26 +196,6 @@ $im-no-media-expressions: ('screen', 'portrait', 'landscape') !default;
   @return $message;
 }
 
-
-///
-/// Wrapper mixin for the log function so it can be used with a more friendly
-/// API than `@if im-log('..') {}` or `$_: im-log('..')`. Basically, use the function
-/// within functions because it is not possible to include a mixin in a function
-/// and use the mixin everywhere else because it's much more elegant.
-///
-/// @param {String} $message - Message to log
-///
-@mixin log($message) {
-  @if im-log($message) {}
-}
-
-
-///
-/// Function with no `@return` called next to `@warn` in Sass 3.3
-/// to trigger a compiling error and stop the process.
-///
-@function noop() {}
-
 ///
 /// Determines whether a list of conditions is intercepted by the static breakpoint.
 ///
@@ -225,10 +205,6 @@ $im-no-media-expressions: ('screen', 'portrait', 'landscape') !default;
 ///
 @function im-intercepts-static-breakpoint($conditions...) {
   $no-media-breakpoint-value: map-get($breakpoints, $im-no-media-breakpoint);
-
-  @if not $no-media-breakpoint-value {
-    @if im-log('`#{$im-no-media-breakpoint}` is not a valid breakpoint.') {}
-  }
 
   @each $condition in $conditions {
     @if not map-has-key($media-expressions, $condition) {
@@ -433,8 +409,7 @@ $im-no-media-expressions: ('screen', 'portrait', 'landscape') !default;
     $character: str-slice($value, $i, $i);
 
     @if not (index(map-keys($numbers), $character) or $character == '.') {
-      @return to-length(if($minus, -$result, $result), str-slice($value, $i))
-    }
+      @return to-length(if($minus, -$result, $result), str-slice($value, $i)); }
 
     @if $character == '.' {
       $digits: 1;

@@ -3,7 +3,7 @@
 const fs = require('fs');
 
 const regex = /calc\((.*)var(.*)\)/g;
-const files = ['./less/fiori-fundamentals.less', './less/fiori-fundamentals-ie11.less'];
+const files = ['./less/fundamental-styles.less', './less/fundamental-styles-ie11.less'];
 
 
 files.forEach(file => {

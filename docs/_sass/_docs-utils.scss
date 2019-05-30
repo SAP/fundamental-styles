@@ -1,14 +1,17 @@
 $accent-color: docs-color(action, 3);
+$docs-home-white-color: docs-color(background, 1);
+$docs-home-dark-color: docs-color(text, 1);
+$docs-home-grey-color: #EAEAEA;
 
-.has-accent-color{
+.has-accent-color {
     color: $accent-color;
 }
 
-.has-accent-background{
+.has-accent-background {
     background-color: $accent-color;
 }
 
-.img-fluid{
+.img-fluid {
     max-width: 100%;
     height: auto;
 }

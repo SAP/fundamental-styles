@@ -1,53 +1,53 @@
-body{
+body {
     font-family: '72', sans-serif;
     background-color: fd-color(background, 2);
 }
 
-a, a:visited{
+a, a:visited {
     color: docs-color(action, 3);
-    &:hover{
+    &:hover {
         color: docs-color(action, 3);
     }
 }
 
-ul,ol{
+ul, ol {
     margin-left: 40px;
 }
 
-hr{
+hr {
     margin: 36px 0;
     float: none;
     clear: both;
 }
 
 
-.highlight{
+.highlight {
     max-width: 1440px;
     margin: 25px 0 0 0;
 }
 
-.docs-tiles{
+.docs-tiles {
     $docs-tiles-color: docs-color(action, 3);
     margin: 0 -20px;
      grid-auto-rows: 1fr;
 
-    .fd-tile[role="button"]{
+    .fd-tile[role="button"] {
         border: 1px solid docs-color(neturals, 1);
         margin: 20px;
         padding-top: 10px;
         padding-bottom: 20px;
         text-decoration: none;
 
-        &:hover{
+        &:hover {
             border-color: $docs-tiles-color;
         }
-        &:active, :focus{
+        &:active, :focus {
             border-color: $docs-tiles-color;
             text-decoration: none;
         }
     }
 
-    .fd-tile__header{
+    .fd-tile__header {
         color: $docs-tiles-color !important;
         font-weight: normal;
         font-size: 20px;
@@ -57,20 +57,16 @@ hr{
           margin-bottom: 0;
         }
     }
-    .fd-tile__content{
+    .fd-tile__content {
         align-self: auto;
     }
-    .fd-tile__description{
+    .fd-tile__description {
         color: docs-color(text, 1);
     }
-    a:hover{
+    a:hover {
         color: inherit;
         text-decoration: none;
     }
-}
-
-hr{
-    margin: 36px 0;
 }
 
 pre {
@@ -102,7 +98,7 @@ pre {
     border-radius: 4px;
 }
 
-  blockquote{
+  blockquote {
       margin: 15px 0;
       padding: 10px;
       border: 1px solid #ccc;
@@ -112,7 +108,7 @@ pre {
   }
 
 
-.docs-container{
+.docs-container {
     margin-left: 0;
     width: 100%;
     display: flex;
@@ -120,20 +116,19 @@ pre {
     @include media("<=tablet") {
         display: inline;
     }
-
 }
 
 
-.docs-landing-page{
+.docs-landing-page {
     width: 100%;
     min-width: 1024px;
 }
 
-.docs-table{
+.docs-table {
     border: 1px solid fd-color(neutral, 3);
     width: 100%;
 
-    td{
+    td {
         vertical-align: top;
     }
 }
@@ -144,7 +139,6 @@ pre {
   margin-bottom: 30px;
   border: solid 1px fd-color(neutral, 3);
   border-width: 1px 0;
-
 }
 
 .docs-intro {

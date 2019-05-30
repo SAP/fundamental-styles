@@ -2,7 +2,7 @@
 $fd-namespace: fd !default;
 $fd-support-css-var-fallback: false !default;
 
-//————————v FIORI FUNDAMENTALS FOUNDATION ————————v
+//————————v Fundamental Styles FOUNDATION ————————v
 
 //breakpoints
 $fd-breakpoints: (
@@ -183,7 +183,7 @@ $fd-colors-background-states: map-merge((
   "default": map-get($fd-colors-background, 7)
 ), $fd-colors-background-states);
 
-//————————^ FIORI FUNDAMENTALS FOUNDATION ————————^
+//————————^ Fundamental Styles FOUNDATION ————————^
 
 //features
 $fd-space-modify: normal !default; //normal, compact

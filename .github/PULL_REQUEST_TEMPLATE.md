@@ -1,4 +1,4 @@
-Closes sap/fundamental#
+Closes SAP/fundamental-styles#
 
 {{short description}}
 

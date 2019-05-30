@@ -1,5 +1,5 @@
 # this config file is used when building on github-pages server 
-baseurl: /fundamental
+baseurl: /fundamental-styles
 
 sass:
   style: compressed
