@@ -1,10 +1,6 @@
 .docs-top-nav {
-    $docs-home-white-color: docs-color(background, 1);
-    $docs-home-dark-color: docs-color(text, 1);
-
     background-color: $docs-home-white-color;
     height: 87px;
-    border-bottom: 1px solid docs-color(neturals, 1);
 
     &__logo {
         margin-top: 25px;
@@ -12,11 +8,11 @@
         display: inline-block;
         font-size: 24px;
         font-weight: bold;
-        color: #181818 !important;
+        color: $docs-home-dark-color !important;
 
         &:hover {
             text-decoration: none;
-            color: #181818 !important;
+            color: $docs-home-dark-color !important;
         }
         &__accent {
             font-weight: 100;
@@ -28,7 +24,6 @@
         font-size: 1.14286rem;
         line-height: 1.25;
         font-weight: 400;
-        color: #181818 !important;
         padding: 30px 20px 0 0;
         display: inline-block;
         @include media("<=tablet") {
@@ -36,11 +31,16 @@
         }
         &--link {
             display: inline-block;
-            vertical-align: top;
+            vertical-align: middle;
+        }
+    }
 
-            &--svg {
-                background-color: #181818;
-            }
+    &__button {
+        color: $docs-home-dark-color;
+        border-color: $docs-home-dark-color;
+
+        &:hover {
+            background-color: $accent-color;
         }
     }
 

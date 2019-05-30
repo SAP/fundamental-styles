@@ -1,5 +1,5 @@
-$side-nav-bg: #EEEEEE;
-$side-nav-links-color: docs-color(text, 1);
+$side-nav-bg: $docs-home-dark-color;
+$side-nav-links-color: $docs-home-white-color;
 .side-nav {
     background-color: $side-nav-bg;
     padding: 20px 40px;
@@ -58,7 +58,7 @@ $side-nav-links-color: docs-color(text, 1);
             &:hover {
                 color: $side-nav-links-color;
                 text-decoration: none;
-                background-color: #fbfbfb;
+                background-color: $accent-color;
             }
         }
         &.active {

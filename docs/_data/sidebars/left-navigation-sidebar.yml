@@ -238,7 +238,4 @@ entries:
     - title: SAP Fundamental Styles Implementation Libraries
       url: /resources/fundamentals-libraries.html
       output: web
-
-    - title: Office Hours
-      url: /office-hours/
-      output: web
+      

@@ -1,14 +1,11 @@
 .docs-home {
 
-    $docs-home-white-color: docs-color(background, 1);
-    $docs-home-dark-color: docs-color(text, 1);
-
     &_hero {
         background-image: url('../images/home-hero-bg.png');
         background-size: cover;
         background-position: -190px -350px;
         background-repeat: no-repeat;
-        background-color: $docs-home-white-color;
+        background-color: $docs-home-grey-color;
         color: $docs-home-dark-color;
         padding-top: 100px;
         @include media("<=tablet") {
@@ -55,8 +52,8 @@
         &-btn {
             font-size: 16px;
             font-weight: bold;
-            background-color: $docs-home-white-color;
-            color: $docs-home-dark-color;
+            background-color: $docs-home-dark-color;
+            color: fd-color(text, 5) !important;
             display: inline-block;
             margin-top: 36px;
             margin-bottom: 32px;
@@ -87,32 +84,32 @@
 
     &_panel {
         padding: 100px;
-        background: #181818;
+        background: $docs-home-white-color;
         @include media("<=tablet") {
             padding: 20px;
         }
 
         &--alt {
-            background: #242424;
+            background: $docs-home-grey-color;
         }
 
         &-title {
-            color: #DFDFDF;
+            color: $docs-home-dark-color;
             font-size: 60px;
-            border-bottom: 1px solid #979797;
+            border-bottom: 1px solid $docs-home-dark-color;
             padding-bottom: 20px;
             margin-bottom: 50px;
             a {
-                color: #DFDFDF;
+                color: $docs-home-dark-color;
             }
             a:hover {
-              color: #5FA8EF;
+              color: $docs-home-dark-color;
                 text-decoration: none;
             }
         }
 
         &-heading {
-            color: #C7C7C7;
+            color: $docs-home-dark-color;
             font-size: 30px;
             margin-top: 20px;
             margin-bottom: 30px;
@@ -120,7 +117,7 @@
         }
 
         &-description {
-            color: #8F8F8F;
+            color: $docs-home-dark-color;
             font-size: 16px;
             margin-bottom: 30px;
         }
@@ -144,13 +141,13 @@
                 font-size: 22px;
                 padding: 30px;
                 padding-left: 60px !important;
-                border-color: #9B9B9B !important;
+                border-color: $docs-home-dark-color !important;
                 background-color: transparent !important;
-                color: fd-color(text, 5) !important;
+                color: $docs-home-dark-color !important;
             }
             .search-box__icon {
                 font-size: 30px;
-                color: #9B9B9B;
+                color: $docs-home-dark-color;
                 padding-left: 10px;
             }
             .search-box__results {
@@ -257,10 +254,10 @@
             font-size: 16px;
             font-weight: bold;
             text-transform: uppercase;
-            color: $docs-home-white-color !important;
+            color: $docs-home-dark-color !important;
 
             &:hover {
-                color: $docs-home-white-color;
+                color: $docs-home-dark-color;
             }
         }
     }
@@ -274,10 +271,10 @@
             width: 50%;
             float: left;
             text-align: center;
-            color: #181818;
+            color: $docs-home-dark-color;
 
             &:hover {
-                color: #181818;
+                color: $docs-home-dark-color;
             }
 
             img {
