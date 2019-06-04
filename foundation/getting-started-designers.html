@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Create a harmonious experience for users with Fundamental Styles design language. As designers, deliver geat outcomes with flexible consistent design that gu...">
+<meta name="keywords" content=" getting started designers">
+<title>
+	
+	Designers - SAP Fundamental Styles
+	
+
+</title>
+
+<!-- Google Tag Manager -->
+<script>
+	(function (w, d, s, l, i) {
+		w[l] = w[l] || []; w[l].push({
+			'gtm.start':
+				new Date().getTime(), event: 'gtm.js'
+		}); var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-M953JX6');
+</script>
+<!-- End Google Tag Manager -->
+
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1559660984307716000">
+<link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="fundamental-styles" href="/feed.xml">
+
+</head>
+
+<body>
+    
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M953JX6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    
+    <div class="docs-wrapper">
+
+
+         <!-- Navigation -->
+<nav class="docs-top-nav">
+    <div class="docs-top-nav__mobile">
+
+        <!-- logo -->
+        <a class="docs-top-nav__logo" href="/fundamental-styles/index.html">
+            SAP Fundamental <span class="docs-top-nav__logo__accent">Styles</span>
+        </a>
+
+        <button id="mobile-sidenav-btn" class="fd-button--light sap-icon--menu2" aria-haspopup="true" aria-expanded="false" aria-label="Menu"></button>
+
+        <!-- support links -->
+        <div class="docs-top-nav__support fd-has-float-right">
+
+            <span class="fd-has-align-items-center fd-has-margin-right-small">
+                <span>v0.0.0</span>
+                <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
+                        <title>GitHub</title>
+                        <path fill="#424e5a" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z" fill="white" fill-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </span>
+
+            <span class="fd-popover fd-popover--right">
+                <button class="fd-button docs-top-nav__button" aria-expanded="false" aria-haspopup="true" aria-controls="jhqD" class=" fd-popover__control ">
+                    Support
+                </button>
+                <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="jhqD">
+                    <nav class="fd-menu" id="">
+                        <ul class="fd-menu__list">
+                            <li><a href="https://github.com/SAP/fundamental-styles/issues/new" target="_blank" class="fd-menu__item">Submit
+                                    an issue</a></li>
+                            <li><a href="mailto:fundamental@sap.com" target="_blank" class="fd-menu__item">Email Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </span>
+        </div>
+    </div>
+</nav> 
+
+        <!-- Page Content -->
+        <div class="docs-container">
+            <!-- Sidebar Column -->
+            
+                <div class="side-nav" id="tg-sb-sidebar">
+                    
+
+<div class="search-box">
+    <span class="sap-icon--search search-box__icon"></span>
+    <input type="text" id="search-input" class=" search-box__input" placeholder="search...">
+    <ul id="results-container" class="search-box__results"></ul>
+</div>
+
+<script src="https://unpkg.com/simple-jekyll-search@1.7.2/dest/simple-jekyll-search.min.js"></script>
+<script type="text/javascript">
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/fundamental-styles/js/search.json',
+        searchResultTemplate: '<li class="search-box__results-links"><a href="/fundamental-styles{url}" title="Designers">{folder} > {title}</a></li>',
+        noResultsText: '<li class="no-search-results">No results found</li>',
+        limit: 10,
+        fuzzy: true,
+    });
+</script>
+
+
+
+
+<ul class="side-nav__links-container">
+
+    
+        
+
+        
+
+            
+            <li class="side-nav__headers">
+            
+                <a class="side-nav__headers-link" href="/fundamental-styles/getting-started.html">getting started</a>
+                <ul >
+                    
+                </ul>
+                <hr class="side-nav__seperator">
+            </li>
+        
+    
+        
+
+        
+
+            
+            <li class="side-nav__headers active">
+            
+                <a class="side-nav__headers-link" href="/fundamental-styles/foundation/index.html">foundation</a>
+                <ul >
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/foundation/colors.html" class="side-nav__links-link">Colors</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/foundation/grid.html" class="side-nav__links-link">Grid</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/foundation/spacing.html" class="side-nav__links-link">Spacing</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/foundation/type.html" class="side-nav__links-link">Type</a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+                <hr class="side-nav__seperator">
+            </li>
+        
+    
+        
+
+        
+
+            
+            <li class="side-nav__headers">
+            
+                <a class="side-nav__headers-link" href="/fundamental-styles/layouts/index.html">layouts</a>
+                <ul >
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/layouts/shell-layout.html" class="side-nav__links-link">Application Shell</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/layouts/page-layout.html" class="side-nav__links-link">Page</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/layouts/section.html" class="side-nav__links-link">Section</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/layouts/panel.html" class="side-nav__links-link">Panel</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/layouts/columns.html" class="side-nav__links-link">Columns</a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+                <hr class="side-nav__seperator">
+            </li>
+        
+    
+        
+
+        
+
+            
+            <li class="side-nav__headers">
+            
+                <a class="side-nav__headers-link" href="/fundamental-styles/components/index.html">components</a>
+                <ul >
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/action-bar.html" class="side-nav__links-link">Action Bar</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/alert.html" class="side-nav__links-link">Alert</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/button.html" class="side-nav__links-link">Button</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/breadcrumb.html" class="side-nav__links-link">Breadcrumb</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/calendar.html" class="side-nav__links-link">Calendar</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/combobox-input.html" class="side-nav__links-link">Combobox Input</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/contextual-menu.html" class="side-nav__links-link">Contextual Menu</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/date-picker.html" class="side-nav__links-link">Date Picker</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/dropdown.html" class="side-nav__links-link">Dropdown</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/form.html" class="side-nav__links-link">Forms</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/identifier.html" class="side-nav__links-link">Identifier</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/icon.html" class="side-nav__links-link">Icon</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/image.html" class="side-nav__links-link">Image</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/input-group.html" class="side-nav__links-link">Input Group</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/inline-help.html" class="side-nav__links-link">Inline Help</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/list-group.html" class="side-nav__links-link">List Group</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/link.html" class="side-nav__links-link">Link</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/loading-spinner.html" class="side-nav__links-link">Loading Spinner</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/localization-editor.html" class="side-nav__links-link">Localization Editor</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/mega-menu.html" class="side-nav__links-link">Mega Menu</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/menu.html" class="side-nav__links-link">Menu</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/modal.html" class="side-nav__links-link">Modal</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/multi-input.html" class="side-nav__links-link">Multi Input</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/pagination.html" class="side-nav__links-link">Pagination</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/popover.html" class="side-nav__links-link">Popover</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/search-input.html" class="side-nav__links-link">Search Input</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/shellbar.html" class="side-nav__links-link">Shellbar</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/side-navigation.html" class="side-nav__links-link">Side Navigation</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/status-indicators.html" class="side-nav__links-link">Status Indicators</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/table.html" class="side-nav__links-link">Table</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/tabs.html" class="side-nav__links-link">Tabs</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/tile.html" class="side-nav__links-link">Tile</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/tile-grid.html" class="side-nav__links-link">Tile Grid</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/time.html" class="side-nav__links-link">Time</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/time-picker.html" class="side-nav__links-link">Time Picker</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/token.html" class="side-nav__links-link">Token</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/toggle.html" class="side-nav__links-link">Toggle</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/tree.html" class="side-nav__links-link">Tree</a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+                <hr class="side-nav__seperator">
+            </li>
+        
+    
+        
+
+        
+
+            
+            <li class="side-nav__headers">
+            
+                <a class="side-nav__headers-link" href="/fundamental-styles/resources/index.html">resources</a>
+                <ul >
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/resources/how-to-use-scss.html" class="side-nav__links-link">How to use SCSS</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/resources/design-system-utilities.html" class="side-nav__links-link">Design System Utilities</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/resources/ui-kit.html" class="side-nav__links-link">UI Kit</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/resources/fundamentals-libraries.html" class="side-nav__links-link">SAP Fundamental Styles Implementation Libraries</a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+                <hr class="side-nav__seperator">
+            </li>
+        
+    
+
+
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<!-- <script>$("li.active").parents('li').toggleClass("active");</script> -->
+
+                </div>
+            
+
+            <div class="main-content" id="tg-sb-content">
+                <!-- Content Column -->
+                
+
+<div class="docs-content">
+
+    <h1 class="docs-header-h1">Designers</h1>
+
+   
+    <p class="docs-component-intro">Create a harmonious experience for users with Fundamental Styles design language. As designers, deliver geat outcomes with flexible consistent design that guarantees faster build times.</p>
+   
+
+    
+
+
+    
+
+  <hr>
+
+<h2 class="docs-header-h2">Design Principles</h2>
+
+<h3 class="docs-header-h3">Flexible</h3>
+<p>Allow for frequent and infrequent task completion paths; linear and nonlinear ways of working.</p>
+
+<h3 class="docs-header-h3">Delightful</h3>
+<p>Enrich users with pleasurable, memorable experience by simplifying their workflow with easy interactions.</p>
+
+<h3 class="docs-header-h3">Simple</h3>
+<p>Design for clear and straightforward interactions to instill a feeling of confidence and ease. Our users should always know what to do and how to do it.</p>
+
+<h3 class="docs-header-h3">Adaptive</h3>
+<p>Allow users to complete a task when they want, where they want, how they want; surfacing the most important actions, tasks, and information first.
+	Get Started</p>
+
+[ IMAGE OF UI KIT ]
+
+<ol>
+	<li>To start designing, download the Fundamental Styles Kit: Sketch or Axure. Fundament UI Kit is built to provide the core visual styles, components, and templates.</li>
+	<li>Make sure to learn more about our UI Guidlines: Colors, Grid, Spacing and Type.</li>
+</ol>
+
+<h3 class="docs-header-h3">Releases</h3>
+<p>Fundamental Styles team is always making improvements to the kit. Keep track of updates.</p>
+
+<p>If you have any questions, email our team.</p>
+
+    <div class="tags">
+        
+    </div>
+
+</div>
+
+            </div>
+
+        </div>
+        
+            <footer class="docs-footer">
+    <div class="row">
+        <div class="fd-has-float-left">
+            <img src="/fundamental-styles/images/footer-sap-logo.png" alt="" height="24">
+        </div>
+        <div class="fd-has-float-right">
+            <span class="docs-footer__link">Have a question? <a href="mailto:fundamental@sap.com">Email</a> us.</span>
+            <span class="docs-footer__link">&copy; Copyright SAP <span id="copyright-year">2019</span></span>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="/fundamental-styles/js/customscripts.js"></script>
+        
+    </div>
+    
+         <!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-126805333-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+ 
+    
+</body>
+
+</html>

@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The following step-by-step guide will covers how to install Fundamental Styles in your angular project, import SCSS in your workflow and explain some built-i...">
+<meta name="keywords" content=" how to use scss">
+<title>
+	
+	How to use Fundamental Styles SCSS with Angular - SAP Fundamental Styles
+	
+
+</title>
+
+<!-- Google Tag Manager -->
+<script>
+	(function (w, d, s, l, i) {
+		w[l] = w[l] || []; w[l].push({
+			'gtm.start':
+				new Date().getTime(), event: 'gtm.js'
+		}); var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-M953JX6');
+</script>
+<!-- End Google Tag Manager -->
+
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1559660984307716000">
+<link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="fundamental-styles" href="/feed.xml">
+
+</head>
+
+<body>
+    
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M953JX6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    
+    <div class="docs-wrapper">
+
+
+         <!-- Navigation -->
+<nav class="docs-top-nav">
+    <div class="docs-top-nav__mobile">
+
+        <!-- logo -->
+        <a class="docs-top-nav__logo" href="/fundamental-styles/index.html">
+            SAP Fundamental <span class="docs-top-nav__logo__accent">Styles</span>
+        </a>
+
+        <button id="mobile-sidenav-btn" class="fd-button--light sap-icon--menu2" aria-haspopup="true" aria-expanded="false" aria-label="Menu"></button>
+
+        <!-- support links -->
+        <div class="docs-top-nav__support fd-has-float-right">
+
+            <span class="fd-has-align-items-center fd-has-margin-right-small">
+                <span>v0.0.0</span>
+                <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
+                        <title>GitHub</title>
+                        <path fill="#424e5a" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z" fill="white" fill-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </span>
+
+            <span class="fd-popover fd-popover--right">
+                <button class="fd-button docs-top-nav__button" aria-expanded="false" aria-haspopup="true" aria-controls="jhqD" class=" fd-popover__control ">
+                    Support
+                </button>
+                <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="jhqD">
+                    <nav class="fd-menu" id="">
+                        <ul class="fd-menu__list">
+                            <li><a href="https://github.com/SAP/fundamental-styles/issues/new" target="_blank" class="fd-menu__item">Submit
+                                    an issue</a></li>
+                            <li><a href="mailto:fundamental@sap.com" target="_blank" class="fd-menu__item">Email Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </span>
+        </div>
+    </div>
+</nav> 
+
+        <!-- Page Content -->
+        <div class="docs-container">
+            <!-- Sidebar Column -->
+            
+                <div class="side-nav" id="tg-sb-sidebar">
+                    
+
+<div class="search-box">
+    <span class="sap-icon--search search-box__icon"></span>
+    <input type="text" id="search-input" class=" search-box__input" placeholder="search...">
+    <ul id="results-container" class="search-box__results"></ul>
+</div>
+
+<script src="https://unpkg.com/simple-jekyll-search@1.7.2/dest/simple-jekyll-search.min.js"></script>
+<script type="text/javascript">
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/fundamental-styles/js/search.json',
+        searchResultTemplate: '<li class="search-box__results-links"><a href="/fundamental-styles{url}" title="How to use Fundamental Styles SCSS with Angular">{folder} > {title}</a></li>',
+        noResultsText: '<li class="no-search-results">No results found</li>',
+        limit: 10,
+        fuzzy: true,
+    });
+</script>
+
+
+
+
+<ul class="side-nav__links-container">
+
+    
+        
+
+        
+
+            
+            <li class="side-nav__headers">
+            
+                <a class="side-nav__headers-link" href="/fundamental-styles/getting-started.html">getting started</a>
+                <ul >
+                    
+                </ul>
+                <hr class="side-nav__seperator">
+            </li>
+        
+    
+        
+
+        
+
+            
+            <li class="side-nav__headers">
+            
+                <a class="side-nav__headers-link" href="/fundamental-styles/foundation/index.html">foundation</a>
+                <ul >
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/foundation/colors.html" class="side-nav__links-link">Colors</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/foundation/grid.html" class="side-nav__links-link">Grid</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/foundation/spacing.html" class="side-nav__links-link">Spacing</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/foundation/type.html" class="side-nav__links-link">Type</a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+                <hr class="side-nav__seperator">
+            </li>
+        
+    
+        
+
+        
+
+            
+            <li class="side-nav__headers">
+            
+                <a class="side-nav__headers-link" href="/fundamental-styles/layouts/index.html">layouts</a>
+                <ul >
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/layouts/shell-layout.html" class="side-nav__links-link">Application Shell</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/layouts/page-layout.html" class="side-nav__links-link">Page</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/layouts/section.html" class="side-nav__links-link">Section</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/layouts/panel.html" class="side-nav__links-link">Panel</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/layouts/columns.html" class="side-nav__links-link">Columns</a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+                <hr class="side-nav__seperator">
+            </li>
+        
+    
+        
+
+        
+
+            
+            <li class="side-nav__headers">
+            
+                <a class="side-nav__headers-link" href="/fundamental-styles/components/index.html">components</a>
+                <ul >
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/action-bar.html" class="side-nav__links-link">Action Bar</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/alert.html" class="side-nav__links-link">Alert</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/button.html" class="side-nav__links-link">Button</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/breadcrumb.html" class="side-nav__links-link">Breadcrumb</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/calendar.html" class="side-nav__links-link">Calendar</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/combobox-input.html" class="side-nav__links-link">Combobox Input</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/contextual-menu.html" class="side-nav__links-link">Contextual Menu</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/date-picker.html" class="side-nav__links-link">Date Picker</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/dropdown.html" class="side-nav__links-link">Dropdown</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/form.html" class="side-nav__links-link">Forms</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/identifier.html" class="side-nav__links-link">Identifier</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/icon.html" class="side-nav__links-link">Icon</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/image.html" class="side-nav__links-link">Image</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/input-group.html" class="side-nav__links-link">Input Group</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/inline-help.html" class="side-nav__links-link">Inline Help</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/list-group.html" class="side-nav__links-link">List Group</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/link.html" class="side-nav__links-link">Link</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/loading-spinner.html" class="side-nav__links-link">Loading Spinner</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/localization-editor.html" class="side-nav__links-link">Localization Editor</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/mega-menu.html" class="side-nav__links-link">Mega Menu</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/menu.html" class="side-nav__links-link">Menu</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/modal.html" class="side-nav__links-link">Modal</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/multi-input.html" class="side-nav__links-link">Multi Input</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/pagination.html" class="side-nav__links-link">Pagination</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/popover.html" class="side-nav__links-link">Popover</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/search-input.html" class="side-nav__links-link">Search Input</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/shellbar.html" class="side-nav__links-link">Shellbar</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/side-navigation.html" class="side-nav__links-link">Side Navigation</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/status-indicators.html" class="side-nav__links-link">Status Indicators</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/table.html" class="side-nav__links-link">Table</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/tabs.html" class="side-nav__links-link">Tabs</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/tile.html" class="side-nav__links-link">Tile</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/tile-grid.html" class="side-nav__links-link">Tile Grid</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/time.html" class="side-nav__links-link">Time</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/time-picker.html" class="side-nav__links-link">Time Picker</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/token.html" class="side-nav__links-link">Token</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/toggle.html" class="side-nav__links-link">Toggle</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/tree.html" class="side-nav__links-link">Tree</a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+                <hr class="side-nav__seperator">
+            </li>
+        
+    
+        
+
+        
+
+            
+            <li class="side-nav__headers active">
+            
+                <a class="side-nav__headers-link" href="/fundamental-styles/resources/index.html">resources</a>
+                <ul >
+                    
+                    
+                    
+                    <li class="side-nav__links active">
+                        <a href="/fundamental-styles/resources/how-to-use-scss.html" class="side-nav__links-link">How to use SCSS</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/resources/design-system-utilities.html" class="side-nav__links-link">Design System Utilities</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/resources/ui-kit.html" class="side-nav__links-link">UI Kit</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/resources/fundamentals-libraries.html" class="side-nav__links-link">SAP Fundamental Styles Implementation Libraries</a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+                <hr class="side-nav__seperator">
+            </li>
+        
+    
+
+
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<!-- <script>$("li.active").parents('li').toggleClass("active");</script> -->
+
+                </div>
+            
+
+            <div class="main-content" id="tg-sb-content">
+                <!-- Content Column -->
+                
+
+<div class="docs-content">
+
+    <h1 class="docs-header-h1">How to use Fundamental Styles SCSS with Angular</h1>
+
+   
+    <p class="docs-component-intro">The following step-by-step guide will covers how to install Fundamental Styles in your angular project, import SCSS in your workflow and explain some built-in functions.</p>
+   
+
+    
+
+
+    
+
+  <h2 class="docs-header-h2" id="table-of-contents">Table of contents</h2>
+<ol>
+  <li><a href="#prerequisites-and-requirements">Prerequisites and Requirements</a></li>
+  <li><a href="#configuring-angular-project-to-use-scss">Configuring Angular Project to use SCSS</a></li>
+  <li><a href="#installing-fundamental-styles-via-npm">Installing Fundamental Styles via NPM</a></li>
+  <li><a href="#configuring-and-importing-scss-source">Configuring and Importing SCSS source</a></li>
+  <li><a href="#selective-imports">Selective Imports</a></li>
+  <li><a href="#core-functions-and-mixins">Core Functions and Mixins</a></li>
+</ol>
+
+<h2 class="docs-header-h2" id="prerequisites-and-requirements">Prerequisites and Requirements</h2>
+
+<ul>
+  <li>Familiarity using terminal or command prompt</li>
+  <li>This guides assumes that the initial setup was done using <a href="https://angular.io/" target="_blank">Angular 4</a> or higher and initial setup was doing using <a href="https://cli.angular.io/" target="_blank">Angular CLI</a></li>
+  <li><a href="https://www.npmjs.com/" target="_blank">NPM</a> is installed globally</li>
+</ul>
+
+<h2 class="docs-header-h2" id="configuring-angular-project-to-use-scss">Configuring Angular Project to use SCSS</h2>
+
+<p>Angular CLI does not configure the project to process SCSS files by default. Instead it is set to a CSS file located at the root of <code class="highlighter-rouge">src</code> folder. We recommend that you use keep all your SCSS files in one place under <code class="highlighter-rouge">src/scss/</code>.</p>
+
+<p>To set the angular project to use SCSS:</p>
+
+<ol>
+  <li>
+    <p>Type <code class="highlighter-rouge">ng set defaults.styleExt scss</code> in command prompt or terminal at project root.</p>
+  </li>
+  <li>
+    <p>Open <code class="highlighter-rouge">.angular-cli.json</code> located at the project root and change the styles configuration to <code class="highlighter-rouge">"styles": [ "scss/app.scss"]</code></p>
+  </li>
+  <li>
+    <p>Verify that the <code class="highlighter-rouge">styleExt</code> is set to <code class="highlighter-rouge">scss</code></p>
+  </li>
+  <li>
+    <p>Create a folder named <code class="highlighter-rouge">scss</code> under the <code class="highlighter-rouge">src</code> folder and a also create the main SCSS file named <code class="highlighter-rouge">app.scss</code></p>
+  </li>
+  <li>
+    <p>Remove the src/styles.css file. It will not be used.</p>
+  </li>
+</ol>
+
+<p>The Basic SCSS configuration is now complete.</p>
+
+<h2 class="docs-header-h2" id="installing-fundamental-styles-via-npm">Installing Fundamental Styles via NPM</h2>
+
+<p>Fundamental Styles is currently available as an <a href="https://www.npmjs.com/package/fundamental-styles" target="_blank">NPM package</a> and a compiled and minified <a href="https://unpkg.com/fundamental-styles@latest/dist/fundamental-styles.min.css" target="_blank">CDN file</a>. The following steps will cover how to install it via NPM.</p>
+
+<ol>
+  <li>Type <code class="highlighter-rouge">npm install fundamental-styles --save-dev</code>. This will install the package as a dev dependency.</li>
+  <li>Verify the installation was successful by typing <code class="highlighter-rouge">npm list fundamental-styles</code></li>
+</ol>
+
+<p>Fundamental Styles installation is now complete</p>
+
+<h2 class="docs-header-h2" id="configuring-and-importing-scss-source">Configuring and Importing SCSS source</h2>
+
+<ol>
+  <li>Open <code class="highlighter-rouge">scss/app.scss</code> file</li>
+  <li>Add the following line of code to define the icons path: <br /><br /> <code class="highlighter-rouge">$fd-icons-path: "~fundamental-styles/scss/icons/";</code></li>
+  <li>Add the following line of code to define the fonts path: <br /><br /> <code class="highlighter-rouge">$fd-fonts-path: "~fundamental-styles/scss/fonts/";</code></li>
+  <li>Add the following line of code to import SCSS source file: <br /><br /> <code class="highlighter-rouge">@import "~fundamental-styles/scss/fundamental-styles.scss";</code></li>
+</ol>
+
+<p>Importing Fundamental Styles SCSS is now complete</p>
+
+<blockquote>
+  <p><strong>Note:</strong> In order to render the icons and fonts correctly, you need to define the <code class="highlighter-rouge">$fd-icons-path</code> and <code class="highlighter-rouge">$fd-fonts-path</code> variables.</p>
+</blockquote>
+
+<p>At this point, the contents of your <code class="highlighter-rouge">scss/app.scss</code> should look like this:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="err">$</span><span class="nt">fd-icons-path</span><span class="o">:</span> <span class="s1">"~fundamental-styles/scss/icons/"</span><span class="o">;</span>
+<span class="err">$</span><span class="nt">fd-fonts-path</span><span class="o">:</span> <span class="s1">"~fundamental-styles/scss/fonts/"</span><span class="o">;</span>
+<span class="k">@import</span> <span class="s1">"~fundamental-styles/scss/fundamental-styles.scss"</span><span class="p">;</span></code></pre></figure>
+
+<p>You can continue to build out your SCSS workflow based on your project needs.</p>
+
+<h2 class="docs-header-h2" id="selective-imports">Selective Imports</h2>
+
+<p>Fundamental Styles is divided into several functional pieces. You may choose to import key features selectively to reduce the SCSS overhead in your project.</p>
+
+<p>Here is an overview of the SCSS structure -</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">scss</span><span class="o">/</span>
+ <span class="o">|</span><span class="nt">-</span> <span class="nt">components</span><span class="o">/</span>
+ <span class="o">|</span><span class="nt">-</span> <span class="nt">core</span><span class="o">/</span>
+ <span class="o">|</span><span class="nt">-</span> <span class="nt">helpers</span><span class="o">/</span>
+ <span class="o">|</span><span class="nt">-</span> <span class="nt">icons</span><span class="o">/</span>
+ <span class="o">|</span><span class="nt">-</span> <span class="nt">layout</span><span class="o">/</span>
+ <span class="o">|</span><span class="nt">-</span> <span class="nt">theme</span><span class="o">/</span>
+<span class="nt">fundamental-styles</span><span class="nc">.scss</span>
+ <span class="nt">components</span><span class="nc">.scss</span>
+ <span class="nt">core</span><span class="nc">.scss</span>
+ <span class="nt">helpers</span><span class="nc">.scss</span>
+ <span class="nt">icons</span><span class="nc">.scss</span>
+ <span class="nt">layout</span><span class="nc">.scss</span></code></pre></figure>
+
+<ul>
+  <li><code class="highlighter-rouge">fundamental-styles.scss</code>: Includes all components.</li>
+  <li><code class="highlighter-rouge">components.scss</code>: SCSS source for each components. The components are decoupled  with little or no dependency on other components.</li>
+  <li><code class="highlighter-rouge">core.scss</code>: The main purpose of core is elements and forms. It’s like the reset and foundation.</li>
+  <li><code class="highlighter-rouge">helpers.scss</code>: Includes various helper functions.</li>
+  <li><code class="highlighter-rouge">icons.scss</code>: Fundamental Styles’s custom icon library.</li>
+  <li><code class="highlighter-rouge">/theme/fundamental.scss</code>: Includes fonts.</li>
+  <li><code class="highlighter-rouge">layout.scss</code>: App level layout components such as top Overview of Core features bar, side nav, containers, panels, etc.</li>
+</ul>
+
+<p>You can choose to selectively import parts of the library that best fits the need of your project. Please note that components, icons, layout and helpers have a dependency on <code class="highlighter-rouge">settings.scss</code>. Therefore, <code class="highlighter-rouge">settings.scss</code> should always be included in case if you are not importing <code class="highlighter-rouge">fundamental-styles.scss</code>. For fonts, make sure you are importing <code class="highlighter-rouge">theme/fundamental-styles.scss</code></p>
+
+<p>For selective import your <code class="highlighter-rouge">fundamental-styles.scss</code> content should look like this:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="err">$</span><span class="nt">fd-icons-path</span><span class="o">:</span> <span class="s1">"~fundamental-styles/scss/icons/"</span><span class="o">;</span>
+<span class="k">@import</span> <span class="s1">"~fundamental-styles/scss/theme/fundamental"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s1">"~fundamental-styles/scss/core"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s1">"~fundamental-styles/scss/{feature}"</span><span class="p">;</span></code></pre></figure>
+
+<h3 class="docs-header-h3" id="angular-components">Angular components</h3>
+
+<p>If you are writing angular components using Fundamental Styles toolkit, you will need to import the following in your component’s scss file:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@import</span> <span class="s1">"~fundamental-styles/scss/core/settings"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s1">"~fundamental-styles/scss/core/mixins"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s1">"~fundamental-styles/scss/core/functions"</span><span class="p">;</span></code></pre></figure>
+
+<h2 class="docs-header-h2" id="core-functions-and-mixins">Core Functions and Mixins</h2>
+
+<p>Fundamental Styles comes with some very useful built-in functions and mixins to help maintain consistency and quality of your SCSS source files. We recommend that you utilize these functions instead of hard coding colors, spacing, fonts, etc. in your code to keep CSS low specificity. Utilizing functions also helps in retaining the integrity of the theming options and makes it easy to switch between different themes such as a high-contrast theme for accessibility or a brand specific theme.</p>
+
+<blockquote>
+  <p><strong>Note:</strong> In order to use the functions and mixins, please ensure that you are importing the functions SCSS files <br />
+<code class="highlighter-rouge">@import "~fundamental-styles/scss/core/functions";</code> <br />
+<code class="highlighter-rouge">@import "~fundamental-styles/scss/core/mixins";</code></p>
+</blockquote>
+
+<h2 class="docs-header-h3" id="color-function">Color Function</h2>
+
+<p>If you have a need to apply a color to any of your scss/css class, you can use the built-in color function - <br /> <code class="highlighter-rouge">fd-color(group, shade)</code></p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.foo</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">fd-color</span><span class="p">(</span><span class="n">neutral</span><span class="p">,</span> <span class="m">3</span><span class="p">);</span> <span class="c">/* renders #ccdaeb */</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">fd-color</span><span class="p">(</span><span class="nb">text</span><span class="p">,</span> <span class="m">1</span><span class="p">);</span> <span class="c">/* renders #21262c */</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>You can refer to the <a href="/fundamental-styles/foundation/colors.html" target="_blank">colors page</a> for the complete list of the available color options.</p>
+
+<h2 class="docs-header-h3" id="spacing-function">Spacing Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fd-space("value")
+</code></pre></div></div>
+<p>The space function can be utilized for heights, padding, margins and other positioning. <br /></p>
+
+<p>The design system defines a variety of spacing increments that are commonly used throughout and <a href="https://github.com/SAP/fundamental-styles/blob/master/scss/_settings.scss#L18">all of those are available</a> using the mixin by passing the key. However, there are four units that will be used most often when building and extending components. These are accessible with special keys to apply consistent padding and margins.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.foo</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="n">fd-space</span><span class="p">(</span><span class="s1">"tiny"</span><span class="p">);</span> <span class="c">/* renders 8px */</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="n">fd-space</span><span class="p">(</span><span class="s1">"small"</span><span class="p">);</span> <span class="c">/* renders 24px */</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>The following spacing options are available -</p>
+
+<table class="docs-table">
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Rendered Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">fd-space("tiny")</code></td>
+      <td>8px</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">fd-space("small")</code></td>
+      <td>16px</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">fd-space("medium")</code></td>
+      <td>32px</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">fd-space("large")</code></td>
+      <td>48px</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="docs-header-h3" id="type-mixin">Type Mixin</h2>
+
+<p>You can utilize the type mixin to render size, line height and weight - <br /> <code class="highlighter-rouge">fd-type($size, $weight)</code></p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.foo__header</span> <span class="p">{</span>
+    <span class="err">@include</span> <span class="err">fd-type("3",</span> <span class="err">"bold");</span> <span class="c">/* renders the css below */</span>
+    <span class="c">/* font-size: 1.75rem; */</span>
+    <span class="c">/* line-height: 1.4; */</span>
+    <span class="c">/* font-weight: 700; */</span>
+<span class="p">}</span></code></pre></figure>
+
+<table class="docs-table">
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">size</code></td>
+      <td><code class="highlighter-rouge">-1</code>, <code class="highlighter-rouge">0</code>, <code class="highlighter-rouge">1</code>, <code class="highlighter-rouge">2</code>, <code class="highlighter-rouge">3</code>, <code class="highlighter-rouge">4</code>, <code class="highlighter-rouge">5</code>, <code class="highlighter-rouge">6</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">weight</code></td>
+      <td><code class="highlighter-rouge">light</code>, <code class="highlighter-rouge">normal</code>, <code class="highlighter-rouge">bold</code></td>
+    </tr>
+  </tbody>
+</table>
+
+
+    <div class="tags">
+        
+    </div>
+
+</div>
+
+            </div>
+
+        </div>
+        
+            <footer class="docs-footer">
+    <div class="row">
+        <div class="fd-has-float-left">
+            <img src="/fundamental-styles/images/footer-sap-logo.png" alt="" height="24">
+        </div>
+        <div class="fd-has-float-right">
+            <span class="docs-footer__link">Have a question? <a href="mailto:fundamental@sap.com">Email</a> us.</span>
+            <span class="docs-footer__link">&copy; Copyright SAP <span id="copyright-year">2019</span></span>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="/fundamental-styles/js/customscripts.js"></script>
+        
+    </div>
+    
+         <!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-126805333-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+ 
+    
+</body>
+
+</html>

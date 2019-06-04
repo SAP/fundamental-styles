@@ -1,0 +1,828 @@
+[
+
+
+
+
+{
+"title": "Action Bar",
+"tags": "",
+"keywords": "action bar, action, bar",
+"url": "/components/action-bar.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+
+
+{
+"title": "Alert",
+"tags": "",
+"keywords": "alert",
+"url": "/components/alert.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Breadcrumb",
+"tags": "",
+"keywords": "breadcrumb",
+"url": "/components/breadcrumb.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Button",
+"tags": "",
+"keywords": "button, buttons",
+"url": "/components/button.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Calendar",
+"tags": "",
+"keywords": "calendar",
+"url": "/components/calendar.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Colors",
+"tags": "",
+"keywords": "colors",
+"url": "/foundation/colors.html",
+"summary": "",
+"folder": "foundation"
+}
+,
+
+
+
+{
+"title": "Column Layouts",
+"tags": "",
+"keywords": "containers column grid",
+"url": "/layouts/columns.html",
+"summary": "",
+"folder": "layouts"
+}
+,
+
+
+
+{
+"title": "Combobox Input",
+"tags": "",
+"keywords": "combobox input",
+"url": "/components/combobox-input.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Contextual Menu",
+"tags": "",
+"keywords": "contextual, menu",
+"url": "/components/contextual-menu.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Date Picker",
+"tags": "",
+"keywords": "date-picker",
+"url": "/components/date-picker.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Design System Utilities",
+"tags": "",
+"keywords": "design system cheat sheet",
+"url": "/resources/design-system-utilities.html",
+"summary": "The following guide covers all the major utility features of the Fundamental Styles (FDUI) design system toolkit. We recommend that you utilize these functions, mixins and helper classes to maintain consistency throughout your application. Using the toolkit features will ensure that you application will remain compatible and easy to upgrade with the future versions of FDUI, transition between themes and customization.",
+"folder": "resources"
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "/css/docs-all.css",
+"summary": "",
+"folder": ""
+}
+,
+
+
+
+{
+"title": "Dropdown",
+"tags": "",
+"keywords": "dropdown, dropdowns",
+"url": "/components/dropdown.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+
+
+{
+"title": "Forms",
+"tags": "",
+"keywords": "form, forms, checkboxes, input, inputs, input help elemnts, input sates, select, radio buttons,",
+"url": "/components/form.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+
+
+
+
+{
+"title": "SAP Fundamental Styles Implementation Libraries",
+"tags": "",
+"keywords": "libraries frameworks angular vue react",
+"url": "/resources/fundamentals-libraries.html",
+"summary": "SAP Fundamental Styles can be used with your framework of choice, however fundamentals-react, fundamentals-ngx, and fundamentals-vue are currently in active development.",
+"folder": "resources"
+}
+,
+
+
+
+{
+"title": "Designers",
+"tags": "",
+"keywords": "getting started designers",
+"url": "/foundation/getting-started-designers.html",
+"summary": "Create a harmonious experience for users with Fundamental Styles design language. As designers, deliver geat outcomes with flexible consistent design that guarantees faster build times.",
+"folder": "foundation"
+}
+,
+
+
+
+{
+"title": "Getting Started",
+"tags": "",
+"keywords": "getting started",
+"url": "/getting-started.html",
+"summary": "",
+"folder": ""
+}
+,
+
+
+
+{
+"title": "Global Navigation",
+"tags": "",
+"keywords": "global navigation",
+"url": "/layouts/global-navigation.html",
+"summary": "",
+"folder": "layouts"
+}
+,
+
+
+
+{
+"title": "Grid",
+"tags": "",
+"keywords": "grid",
+"url": "/foundation/grid.html",
+"summary": "",
+"folder": "fundamentals"
+}
+,
+
+
+
+{
+"title": "Grid",
+"tags": "",
+"keywords": "grid",
+"url": "/layouts/grid.html",
+"summary": "",
+"folder": "layouts"
+}
+,
+
+
+
+{
+"title": "How to use Fundamental Styles SCSS with Angular",
+"tags": "",
+"keywords": "how to use scss",
+"url": "/resources/how-to-use-scss.html",
+"summary": "The following step-by-step guide will covers how to install Fundamental Styles in your angular project, import SCSS in your workflow and explain some built-in functions.",
+"folder": "resources"
+}
+,
+
+
+
+{
+"title": "Icon",
+"tags": "",
+"keywords": "icon",
+"url": "/components/icon.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Identifier",
+"tags": "",
+"keywords": "icon, identifier",
+"url": "/components/identifier.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Image",
+"tags": "",
+"keywords": "image",
+"url": "/components/image.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Homepage",
+"tags": "",
+"keywords": "Homepage",
+"url": "/index.html",
+"summary": "",
+"folder": ""
+}
+,
+
+
+
+{
+"title": "Components",
+"tags": "",
+"keywords": "components",
+"url": "/components/index.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Resources",
+"tags": "",
+"keywords": "guide, guides, resources,",
+"url": "/resources/index.html",
+"summary": "",
+"folder": "resources"
+}
+,
+
+
+
+{
+"title": "Foundation",
+"tags": "",
+"keywords": "guide, guides",
+"url": "/foundation/index.html",
+"summary": "",
+"folder": "foundation"
+}
+,
+
+
+
+{
+"title": "Layouts",
+"tags": "",
+"keywords": "layouts",
+"url": "/layouts/index.html",
+"summary": "",
+"folder": "layouts"
+}
+,
+
+
+
+
+
+{
+"title": "Demo Pages",
+"tags": "",
+"keywords": "demo page",
+"url": "/demo-pages/index.html",
+"summary": "",
+"folder": "demo-pages"
+}
+,
+
+
+
+{
+"title": "Inline Help",
+"tags": "",
+"keywords": "inline, help",
+"url": "/components/inline-help.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Input Group",
+"tags": "",
+"keywords": "input group, input groups, input, groups",
+"url": "/components/input-group.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Link",
+"tags": "",
+"keywords": "link",
+"url": "/components/link.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "List Group",
+"tags": "",
+"keywords": "list group, lists group, list, lists, groups",
+"url": "/components/list-group.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Loading Spinner",
+"tags": "",
+"keywords": "loading, spinner",
+"url": "/components/loading-spinner.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Localization Editor",
+"tags": "",
+"keywords": "localization editor",
+"url": "/components/localization-editor.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Mega Menu",
+"tags": "",
+"keywords": "mega, menu",
+"url": "/components/mega-menu.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Menu",
+"tags": "",
+"keywords": "menu",
+"url": "/components/menu.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+
+
+{
+"title": "Modal",
+"tags": "",
+"keywords": "modal, modals",
+"url": "/components/modal.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Multi Input",
+"tags": "",
+"keywords": "multi input",
+"url": "/components/multi-input.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+
+
+
+
+{
+"title": "Page",
+"tags": "",
+"keywords": "page layout",
+"url": "/layouts/page-layout.html",
+"summary": "",
+"folder": "layouts"
+}
+,
+
+
+
+{
+"title": "Pagination",
+"tags": "",
+"keywords": "pagination",
+"url": "/components/pagination.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Panel",
+"tags": "",
+"keywords": "panel, panel-grid, gird",
+"url": "/layouts/panel.html",
+"summary": "",
+"folder": "layouts"
+}
+,
+
+
+
+{
+"title": "Popover",
+"tags": "",
+"keywords": "popover",
+"url": "/components/popover.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Responsive Demo",
+"tags": "",
+"keywords": "",
+"url": "/layouts/responsive-test.html",
+"summary": "",
+"folder": "layouts"
+}
+,
+
+
+
+{
+"title": "Search Input",
+"tags": "",
+"keywords": "search input",
+"url": "/components/search-input.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+
+
+{
+"title": "Section",
+"tags": "",
+"keywords": "section layout",
+"url": "/layouts/section.html",
+"summary": "",
+"folder": "layouts"
+}
+,
+
+
+
+{
+"title": "Application Shell",
+"tags": "",
+"keywords": "shell application layouts overlay",
+"url": "/layouts/shell-layout.html",
+"summary": "",
+"folder": "layouts"
+}
+,
+
+
+
+
+
+{
+"title": "Shellbar",
+"tags": "",
+"keywords": "shell shellbar global navigation",
+"url": "/components/shellbar.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Side Navigation",
+"tags": "",
+"keywords": "side navigation",
+"url": "/components/side-navigation.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+
+
+{
+"title": "Spacing",
+"tags": "",
+"keywords": "spacing",
+"url": "/foundation/spacing.html",
+"summary": "",
+"folder": "fundamentals"
+}
+,
+
+
+
+{
+"title": "Status Indicators",
+"tags": "",
+"keywords": "status indicators, status, indicators, badge, label, counter",
+"url": "/components/status-indicators.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Table",
+"tags": "",
+"keywords": "table",
+"url": "/components/table.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+
+
+{
+"title": "Tabs",
+"tags": "",
+"keywords": "tab, tabs",
+"url": "/components/tabs.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Tag",
+"tags": "",
+"keywords": "tag",
+"url": "/components/tag.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Tile Grid",
+"tags": "",
+"keywords": "tile grid",
+"url": "/components/tile-grid.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Tile",
+"tags": "",
+"keywords": "tile",
+"url": "/components/tile.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+
+
+{
+"title": "Time Picker",
+"tags": "",
+"keywords": "time picker",
+"url": "/components/time-picker.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Time",
+"tags": "",
+"keywords": "time",
+"url": "/components/time.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Toggle",
+"tags": "",
+"keywords": "toggle",
+"url": "/components/toggle.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Token",
+"tags": "",
+"keywords": "tag, token",
+"url": "/components/token.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+
+
+{
+"title": "Tree",
+"tags": "",
+"keywords": "tree",
+"url": "/components/tree.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Typography",
+"tags": "",
+"keywords": "type",
+"url": "/foundation/type.html",
+"summary": "",
+"folder": "fundamentals"
+}
+,
+
+
+
+{
+"title": "SAP Fundamental Styles UI Kit",
+"tags": "",
+"keywords": "ui ki toolkit sketch design stencils",
+"url": "/resources/ui-kit.html",
+"summary": "UI Kit includes ready-to-use, state-of-the-art drafts of SAP Fiori layouts, patterns and controls in sketch. You are welcome to use the design stencils to visualize your SAP Fiori app. They are easy to use and give you a realistic impression of your final design.",
+"folder": "resources"
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "/assets/css/style.css",
+"summary": "",
+"folder": ""
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "/pages/",
+"summary": "",
+"folder": ""
+}
+
+
+
+
+
+
+]

@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" shell application layouts overlay">
+<title>
+	
+	Application Shell - SAP Fundamental Styles
+	
+
+</title>
+
+<!-- Google Tag Manager -->
+<script>
+	(function (w, d, s, l, i) {
+		w[l] = w[l] || []; w[l].push({
+			'gtm.start':
+				new Date().getTime(), event: 'gtm.js'
+		}); var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-M953JX6');
+</script>
+<!-- End Google Tag Manager -->
+
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1559660984307716000">
+<link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="fundamental-styles" href="/feed.xml">
+
+</head>
+
+<body>
+    
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M953JX6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    
+    <div class="docs-wrapper">
+
+
+         <!-- Navigation -->
+<nav class="docs-top-nav">
+    <div class="docs-top-nav__mobile">
+
+        <!-- logo -->
+        <a class="docs-top-nav__logo" href="/fundamental-styles/index.html">
+            SAP Fundamental <span class="docs-top-nav__logo__accent">Styles</span>
+        </a>
+
+        <button id="mobile-sidenav-btn" class="fd-button--light sap-icon--menu2" aria-haspopup="true" aria-expanded="false" aria-label="Menu"></button>
+
+        <!-- support links -->
+        <div class="docs-top-nav__support fd-has-float-right">
+
+            <span class="fd-has-align-items-center fd-has-margin-right-small">
+                <span>v0.0.0</span>
+                <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
+                        <title>GitHub</title>
+                        <path fill="#424e5a" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z" fill="white" fill-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </span>
+
+            <span class="fd-popover fd-popover--right">
+                <button class="fd-button docs-top-nav__button" aria-expanded="false" aria-haspopup="true" aria-controls="jhqD" class=" fd-popover__control ">
+                    Support
+                </button>
+                <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="jhqD">
+                    <nav class="fd-menu" id="">
+                        <ul class="fd-menu__list">
+                            <li><a href="https://github.com/SAP/fundamental-styles/issues/new" target="_blank" class="fd-menu__item">Submit
+                                    an issue</a></li>
+                            <li><a href="mailto:fundamental@sap.com" target="_blank" class="fd-menu__item">Email Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </span>
+        </div>
+    </div>
+</nav> 
+
+        <!-- Page Content -->
+        <div class="docs-container">
+            <!-- Sidebar Column -->
+            
+                <div class="side-nav" id="tg-sb-sidebar">
+                    
+
+<div class="search-box">
+    <span class="sap-icon--search search-box__icon"></span>
+    <input type="text" id="search-input" class=" search-box__input" placeholder="search...">
+    <ul id="results-container" class="search-box__results"></ul>
+</div>
+
+<script src="https://unpkg.com/simple-jekyll-search@1.7.2/dest/simple-jekyll-search.min.js"></script>
+<script type="text/javascript">
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/fundamental-styles/js/search.json',
+        searchResultTemplate: '<li class="search-box__results-links"><a href="/fundamental-styles{url}" title="Application Shell">{folder} > {title}</a></li>',
+        noResultsText: '<li class="no-search-results">No results found</li>',
+        limit: 10,
+        fuzzy: true,
+    });
+</script>
+
+
+
+
+<ul class="side-nav__links-container">
+
+    
+        
+
+        
+
+            
+            <li class="side-nav__headers">
+            
+                <a class="side-nav__headers-link" href="/fundamental-styles/getting-started.html">getting started</a>
+                <ul >
+                    
+                </ul>
+                <hr class="side-nav__seperator">
+            </li>
+        
+    
+        
+
+        
+
+            
+            <li class="side-nav__headers">
+            
+                <a class="side-nav__headers-link" href="/fundamental-styles/foundation/index.html">foundation</a>
+                <ul >
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/foundation/colors.html" class="side-nav__links-link">Colors</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/foundation/grid.html" class="side-nav__links-link">Grid</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/foundation/spacing.html" class="side-nav__links-link">Spacing</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/foundation/type.html" class="side-nav__links-link">Type</a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+                <hr class="side-nav__seperator">
+            </li>
+        
+    
+        
+
+        
+
+            
+            <li class="side-nav__headers active">
+            
+                <a class="side-nav__headers-link" href="/fundamental-styles/layouts/index.html">layouts</a>
+                <ul >
+                    
+                    
+                    
+                    <li class="side-nav__links active">
+                        <a href="/fundamental-styles/layouts/shell-layout.html" class="side-nav__links-link">Application Shell</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/layouts/page-layout.html" class="side-nav__links-link">Page</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/layouts/section.html" class="side-nav__links-link">Section</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/layouts/panel.html" class="side-nav__links-link">Panel</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/layouts/columns.html" class="side-nav__links-link">Columns</a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+                <hr class="side-nav__seperator">
+            </li>
+        
+    
+        
+
+        
+
+            
+            <li class="side-nav__headers">
+            
+                <a class="side-nav__headers-link" href="/fundamental-styles/components/index.html">components</a>
+                <ul >
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/action-bar.html" class="side-nav__links-link">Action Bar</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/alert.html" class="side-nav__links-link">Alert</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/button.html" class="side-nav__links-link">Button</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/breadcrumb.html" class="side-nav__links-link">Breadcrumb</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/calendar.html" class="side-nav__links-link">Calendar</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/combobox-input.html" class="side-nav__links-link">Combobox Input</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/contextual-menu.html" class="side-nav__links-link">Contextual Menu</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/date-picker.html" class="side-nav__links-link">Date Picker</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/dropdown.html" class="side-nav__links-link">Dropdown</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/form.html" class="side-nav__links-link">Forms</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/identifier.html" class="side-nav__links-link">Identifier</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/icon.html" class="side-nav__links-link">Icon</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/image.html" class="side-nav__links-link">Image</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/input-group.html" class="side-nav__links-link">Input Group</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/inline-help.html" class="side-nav__links-link">Inline Help</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/list-group.html" class="side-nav__links-link">List Group</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/link.html" class="side-nav__links-link">Link</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/loading-spinner.html" class="side-nav__links-link">Loading Spinner</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/localization-editor.html" class="side-nav__links-link">Localization Editor</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/mega-menu.html" class="side-nav__links-link">Mega Menu</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/menu.html" class="side-nav__links-link">Menu</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/modal.html" class="side-nav__links-link">Modal</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/multi-input.html" class="side-nav__links-link">Multi Input</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/pagination.html" class="side-nav__links-link">Pagination</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/popover.html" class="side-nav__links-link">Popover</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/search-input.html" class="side-nav__links-link">Search Input</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/shellbar.html" class="side-nav__links-link">Shellbar</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/side-navigation.html" class="side-nav__links-link">Side Navigation</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/status-indicators.html" class="side-nav__links-link">Status Indicators</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/table.html" class="side-nav__links-link">Table</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/tabs.html" class="side-nav__links-link">Tabs</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/tile.html" class="side-nav__links-link">Tile</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/tile-grid.html" class="side-nav__links-link">Tile Grid</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/time.html" class="side-nav__links-link">Time</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/time-picker.html" class="side-nav__links-link">Time Picker</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/token.html" class="side-nav__links-link">Token</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/toggle.html" class="side-nav__links-link">Toggle</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/components/tree.html" class="side-nav__links-link">Tree</a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+                <hr class="side-nav__seperator">
+            </li>
+        
+    
+        
+
+        
+
+            
+            <li class="side-nav__headers">
+            
+                <a class="side-nav__headers-link" href="/fundamental-styles/resources/index.html">resources</a>
+                <ul >
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/resources/how-to-use-scss.html" class="side-nav__links-link">How to use SCSS</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/resources/design-system-utilities.html" class="side-nav__links-link">Design System Utilities</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/resources/ui-kit.html" class="side-nav__links-link">UI Kit</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="side-nav__links">
+                        <a href="/fundamental-styles/resources/fundamentals-libraries.html" class="side-nav__links-link">SAP Fundamental Styles Implementation Libraries</a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+                <hr class="side-nav__seperator">
+            </li>
+        
+    
+
+
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<!-- <script>$("li.active").parents('li').toggleClass("active");</script> -->
+
+                </div>
+            
+
+            <div class="main-content" id="tg-sb-content">
+                <!-- Content Column -->
+                
+
+<div class="docs-content">
+
+    <h1 class="docs-header-h1">Application Shell</h1>
+
+   
+
+    
+
+
+    
+
+  <p>Shell layout containers are used to construct the master template and application containers, providing structure to your application. The structure is divided into two layout components — <code class="highlighter-rouge">shell</code> and <code class="highlighter-rouge">app</code>.</p>
+
+<ul>
+  <li>The <code class="highlighter-rouge">shell</code> layer is only for high-level containers: global header, app content, global footer and full-page overlay.</li>
+  <li>The <code class="highlighter-rouge">app</code> layer is for application-level containers: sidebar and page content.</li>
+</ul>
+
+<p>These are dumb containers only concerned with placement with no effect on their contents. Simple responsive behaviors are built-in.
+<br /><br /></p>
+
+<h2 id="container-hierarchy">Container hierarchy</h2>
+
+<ul>
+  <li><code class="highlighter-rouge">.fd-shell</code>: The outermost full-screen root wrapper
+    <ul>
+      <li><code class="highlighter-rouge">.fd-shell__header</code>: Global header for <a href="/components/shellbar.html">shellbar component</a>
+        <ul>
+          <li><code class="highlighter-rouge">.fd-shell__header--fixed</code>: Modifier to make the header persistent (sticky)</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.fd-shell__app</code>: The wrapper for the app content
+        <ul>
+          <li><code class="highlighter-rouge">.fd-app</code>: The root application content container
+            <ul>
+              <li><code class="highlighter-rouge">.fd-app__navigation</code>: Optional navigation container, use <code class="highlighter-rouge">--horizontal</code> or <code class="highlighter-rouge">--vertical</code> orientations</li>
+              <li><code class="highlighter-rouge">.fd-app__main</code>: Main app content</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.fd_shell__footer</code>: Optional global footer
+        <ul>
+          <li><code class="highlighter-rouge">.fd-shell__footer--fixed</code>: Modifier to make the footer persistent (sticky)</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.fd-shell__overlay</code>: Appended container for overlaying content
+        <ul>
+          <li><code class="highlighter-rouge">.fd-overlay</code>: Common standalone component used to dim background</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 class="docs-header-h2" id="application-with-only-top-bar">Application with only Top Bar</h2>
+<p>This is the master layout which provides the foundation for all page templates. Use this foundation when a full-width layout is needed, e.g., home page, launchpad, dashboard, etc.</p>
+
+<p>Both the header and footer can be fixed by applying the <code class="highlighter-rouge">.fd-shell--fixed</code> modifier to the <code class="highlighter-rouge">.fd-shell</code> container, or each can be fixed individual by apply <code class="highlighter-rouge">.fd-shell__header--fixed</code> or <code class="highlighter-rouge">.fd-shell__footer--fixed</code>.</p>
+
+<blockquote>
+  <p>See the <a href="/components/shellbar.html">shellbar component</a> which is used in the header container.</p>
+</blockquote>
+
+<p>The <code class="highlighter-rouge">app</code> containers here provide additional structure to application content.</p>
+
+<div class="fd-tile docs-component docs-component__app">
+    <label class="fd-form__label docs-component__bg-toggle" for="37600" title="Change Background">
+        <span class="fd-toggle fd-toggle--xs fd-form__control">
+            <input type="checkbox" name="" value="" id="37600" class="toggle-bg" />
+            <span class="fd-toggle__switch" role="presentation"></span>
+        </span>
+
+    </label>
+    <div class="fd-tile__content">
+		
+<div class="fd-shell fd-shell--fundamentals">
+    <div class="fd-shell__header">
+        fd-shell__header
+    </div>
+    <div class="fd-shell__app">
+        <div class="fd-app">
+            <main class="fd-app__main">
+                fd-app__main
+            </main>
+        </div>
+    </div>
+    <div class="fd-shell__footer">
+        fd-shell__footer
+    </div>
+</div>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell fd-shell--fundamentals"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__header"</span><span class="nt">&gt;</span>
+        fd-shell__header
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__app"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-app"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"fd-app__main"</span><span class="nt">&gt;</span>
+                fd-app__main
+            <span class="nt">&lt;/main&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__footer"</span><span class="nt">&gt;</span>
+        fd-shell__footer
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 class="docs-header-h2" id="application-with-horizontal-navigation">Application with horizontal navigation</h2>
+
+<p>The sidebar is an optional <code class="highlighter-rouge">app</code> layout container and should be used with applications with more than two levels of navigation.</p>
+
+<div class="fd-tile docs-component docs-component__app">
+    <label class="fd-form__label docs-component__bg-toggle" for="23050" title="Change Background">
+        <span class="fd-toggle fd-toggle--xs fd-form__control">
+            <input type="checkbox" name="" value="" id="23050" class="toggle-bg" />
+            <span class="fd-toggle__switch" role="presentation"></span>
+        </span>
+
+    </label>
+    <div class="fd-tile__content">
+		
+<div class="fd-shell fd-shell--fundamentals">
+    <div class="fd-shell__header">
+        fd-shell__header
+    </div>
+    <div class="fd-shell__app">
+        <div class="fd-app">
+            <div class="fd-app__navigation fd-app__navigation--horizontal">
+                fd-app__navigation--horizontal
+            </div>
+            <main class="fd-app__main">
+                fd-app__main
+            </main>
+        </div>
+    </div>
+    <div class="fd-shell__footer">
+        fd-shell__footer
+    </div>
+</div>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell fd-shell--fundamentals"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__header"</span><span class="nt">&gt;</span>
+        fd-shell__header
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__app"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-app"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-app__navigation fd-app__navigation--horizontal"</span><span class="nt">&gt;</span>
+                fd-app__navigation--horizontal
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"fd-app__main"</span><span class="nt">&gt;</span>
+                fd-app__main
+            <span class="nt">&lt;/main&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__footer"</span><span class="nt">&gt;</span>
+        fd-shell__footer
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 class="docs-header-h2" id="application-with-sidebar">Application with Sidebar</h2>
+
+<p>The sidebar is an optional <code class="highlighter-rouge">app</code> layout container and should be used with applications with more than two levels of navigation.</p>
+
+<div class="fd-tile docs-component docs-component__app">
+    <label class="fd-form__label docs-component__bg-toggle" for="21400" title="Change Background">
+        <span class="fd-toggle fd-toggle--xs fd-form__control">
+            <input type="checkbox" name="" value="" id="21400" class="toggle-bg" />
+            <span class="fd-toggle__switch" role="presentation"></span>
+        </span>
+
+    </label>
+    <div class="fd-tile__content">
+		
+<div class="fd-shell fd-shell--fundamentals">
+    <div class="fd-shell__header">
+        fd-shell__header
+    </div>
+    <div class="fd-shell__app">
+        <div class="fd-app">
+            <div class="fd-app__navigation fd-app__navigation--vertical">
+                fd-app__navigation--vertical
+            </div>
+            <main class="fd-app__main">
+                fd-app__main
+            </main>
+        </div>
+    </div>
+    <div class="fd-shell__footer">
+        fd-shell__footer
+    </div>
+</div>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell fd-shell--fundamentals"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__header"</span><span class="nt">&gt;</span>
+        fd-shell__header
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__app"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-app"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-app__navigation fd-app__navigation--vertical"</span><span class="nt">&gt;</span>
+                fd-app__navigation--vertical
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"fd-app__main"</span><span class="nt">&gt;</span>
+                fd-app__main
+            <span class="nt">&lt;/main&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__footer"</span><span class="nt">&gt;</span>
+        fd-shell__footer
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 class="docs-header-h2" id="application-with-ui-overlay">Application with UI overlay</h2>
+<p>The overlay container is meant to accommodate any content that needs to be positioned on top of the UI. The is often included at the bottom of the DOM to overcome positioning and overflow styles of content container.
+There are two options for Application overlay.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">.fd-overlay--modal</code>: Dims background and position the modal in the center of the viewport.</li>
+  <li><code class="highlighter-rouge">.fd-overlay--alert</code>: Does not dim the background and positions the alert component near the top of the viewport.
+Commonly the <code class="highlighter-rouge">fd-overlay</code> class will be added to the overlay to dim the background and center the content, as with a modal. However, the container is generic enough to accommodate any full-UI takeover.</li>
+</ul>
+
+<p>The container visibility can be toggled with the <code class="highlighter-rouge">aria-hidden</code> attribute.</p>
+
+<h3 class="docs-header-h3" id="application-overlay-modal-example">Application Overlay Modal example</h3>
+
+<div class="fd-tile docs-component docs-component__app">
+    <label class="fd-form__label docs-component__bg-toggle" for="83700" title="Change Background">
+        <span class="fd-toggle fd-toggle--xs fd-form__control">
+            <input type="checkbox" name="" value="" id="83700" class="toggle-bg" />
+            <span class="fd-toggle__switch" role="presentation"></span>
+        </span>
+
+    </label>
+    <div class="fd-tile__content">
+		
+<div class="fd-shell fd-shell--fundamentals">
+    <div class="fd-shell__header">
+        fd-shell__header
+    </div>
+    <div class="fd-shell__app">
+        <div class="fd-app">
+            <main class="fd-app__main">
+                fd-app__main
+            </main>
+        </div>
+    </div>
+    <div class="fd-shell__footer">
+        fd-shell__footer
+    </div>
+    <div class="fd-shell__overlay fd-overlay fd-overlay--modal" aria-hidden="false">
+        <div class="fd-modal" role="dialog">
+          <div class="fd-modal__content" role="document">
+              <header class="fd-modal__header">
+                  <h3 class="fd-modal__title">fd-modal__header</h3>
+                  <button class="fd-button--light fd-modal__close"></button>
+              </header>
+              <div class="fd-modal__body">
+                  fd-modal__body
+              </div>
+              <footer class="fd-modal__footer">
+                <div class="fd-modal__actions">
+                  <button class=" fd-button--light">fd-modal__action</button>
+                  <button class=" fd-button">fd-modal__action</button>
+                </div>
+                </footer>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell fd-shell--fundamentals"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__header"</span><span class="nt">&gt;</span>
+        fd-shell__header
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__app"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-app"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"fd-app__main"</span><span class="nt">&gt;</span>
+                fd-app__main
+            <span class="nt">&lt;/main&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__footer"</span><span class="nt">&gt;</span>
+        fd-shell__footer
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__overlay fd-overlay fd-overlay--modal"</span> <span class="na">aria-hidden=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-modal"</span> <span class="na">role=</span><span class="s">"dialog"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-modal__content"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"fd-modal__header"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"fd-modal__title"</span><span class="nt">&gt;</span>fd-modal__header<span class="nt">&lt;/h3&gt;</span>
+                  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light fd-modal__close"</span><span class="nt">&gt;&lt;/button&gt;</span>
+              <span class="nt">&lt;/header&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-modal__body"</span><span class="nt">&gt;</span>
+                  fd-modal__body
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"fd-modal__footer"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-modal__actions"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--light"</span><span class="nt">&gt;</span>fd-modal__action<span class="nt">&lt;/button&gt;</span>
+                  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button"</span><span class="nt">&gt;</span>fd-modal__action<span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/footer&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 class="docs-header-h3" id="application-overlay-alert-example">Application Overlay Alert example</h3>
+
+<div class="fd-tile docs-component docs-component__app">
+    <label class="fd-form__label docs-component__bg-toggle" for="76300" title="Change Background">
+        <span class="fd-toggle fd-toggle--xs fd-form__control">
+            <input type="checkbox" name="" value="" id="76300" class="toggle-bg" />
+            <span class="fd-toggle__switch" role="presentation"></span>
+        </span>
+
+    </label>
+    <div class="fd-tile__content">
+		
+<div class="fd-shell fd-shell--fundamentals">
+    <div class="fd-shell__header">
+        fd-shell__header
+    </div>
+    <div class="fd-shell__app">
+        <div class="fd-app">
+            <main class="fd-app__main">
+                fd-app__main
+            </main>
+        </div>
+    </div>
+    <div class="fd-shell__footer">
+        fd-shell__footer
+    </div>
+    <div class="fd-shell__overlay fd-overlay fd-overlay--alert" aria-hidden="false">
+        <div class="fd-alert fd-alert--warning fd-alert--dismissible" role="alert" id="4Nolz351">
+          <button class="fd-alert__close" aria-controls="4Nolz351" aria-label="Close"></button>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit
+        </div>
+    </div>
+</div>
+
+
+
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell fd-shell--fundamentals"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__header"</span><span class="nt">&gt;</span>
+        fd-shell__header
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__app"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-app"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"fd-app__main"</span><span class="nt">&gt;</span>
+                fd-app__main
+            <span class="nt">&lt;/main&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__footer"</span><span class="nt">&gt;</span>
+        fd-shell__footer
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__overlay fd-overlay fd-overlay--alert"</span> <span class="na">aria-hidden=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-alert fd-alert--warning fd-alert--dismissible"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">id=</span><span class="s">"4Nolz351"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-alert__close"</span> <span class="na">aria-controls=</span><span class="s">"4Nolz351"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;/button&gt;</span>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+</div>
+
+            </div>
+
+        </div>
+        
+            <footer class="docs-footer">
+    <div class="row">
+        <div class="fd-has-float-left">
+            <img src="/fundamental-styles/images/footer-sap-logo.png" alt="" height="24">
+        </div>
+        <div class="fd-has-float-right">
+            <span class="docs-footer__link">Have a question? <a href="mailto:fundamental@sap.com">Email</a> us.</span>
+            <span class="docs-footer__link">&copy; Copyright SAP <span id="copyright-year">2019</span></span>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="/fundamental-styles/js/customscripts.js"></script>
+        
+    </div>
+    
+         <!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-126805333-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+ 
+    
+</body>
+
+</html>
