@@ -1,7 +1,7 @@
 # Fundamental Styles
 
 [![npm version](https://badge.fury.io/js/fundamental-styles.svg)](https://badge.fury.io/js/fundamental-styles)
-[![Build Status](https://travis-ci.org/SAP/fundamental-styles.svg?branch=master)](https://travis-ci.org/SAP/fundamental-styles)
+[![Build Status](https://travis-ci.com/SAP/fundamental-styles.svg?branch=master)](https://travis-ci.com/SAP/fundamental-styles)
 [![Slack](https://img.shields.io/badge/slack-ui--fundamentals-blue.svg?logo=slack)](https://ui-fundamentals.slack.com)
 
 ## What is Fundamental Styles?
