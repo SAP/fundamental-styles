@@ -4,7 +4,6 @@
 [![Build Status](https://travis-ci.org/SAP/fundamental-styles.svg?branch=master)](https://travis-ci.org/SAP/fundamental-styles)
 [![Slack](https://img.shields.io/badge/slack-ui--fundamentals-blue.svg?logo=slack)](https://ui-fundamentals.slack.com)
 
-
 ## What is Fundamental Styles?
 
 Fundamental Styles is a light-weight presentation layer that can be used with your UI framework of choice (e.g. Angular, React, Vue, etc.). With Fundamental Styles’ library of stylesheets and HTML tags, developers can build consistent Fiori apps in any web-based technology.
