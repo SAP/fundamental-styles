@@ -102,7 +102,7 @@ When there are several main actions for a page, consider displaying them under a
 <div style="width:319px;">
     <div class="fd-action-bar">
         <div class="fd-action-bar__back">
-            <button class="fd-button--light fd-button--compact sap-icon--nav-back"></button>
+            <button class="fd-button--light fd-button--compact sap-icon--nav-back" aria-label="Back"></button>
         </div>
         <div class="fd-action-bar__header">
             <h3 class="fd-action-bar__title">
