@@ -51,7 +51,7 @@
   "license": "Apache-2.0",
   "homepage": "https://sap.github.io/fundamental-styles/",
   "devDependencies": {
-    "backstopjs": "3.9.2",
+    "backstopjs": "4.0.6",
     "browser-sync": "^2.26.3",
     "clean-css-cli": "^4.2.1",
     "del": "^3.0.0",
