@@ -5,7 +5,7 @@ set -e
 git config --global user.email "fundamental@sap.com"
 git config --global user.name "fundamental-bot"
 
-npm run std-version -- --prerelease rc --no-verify
+npm run std-version -- --prerelease rc --no-verify --commit-all
 
 git status
 
