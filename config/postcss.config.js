@@ -9,8 +9,7 @@ module.exports = {
     sourcesContent: true,
     plugins: {
         autoprefixer: {
-            cascade: true,
-            browsers: ["last 2 versions"]
+            cascade: true
         },
         'postcss-clean': {
             format: 'beautify',

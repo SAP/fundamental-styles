@@ -90,5 +90,6 @@
       "lint:pre-commit"
     ],
     "silent": false
-  }
+  },
+  "browserslist": ["last 2 versions"]
 }
