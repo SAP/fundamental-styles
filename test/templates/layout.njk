@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="static/layout.css">
     <style>
         {% if ie11 %}
-            {% set sass = 'all-ie11.scss' %}
+            {% set sass = 'fundamental-styles-ie11.scss' %}
         {% elif selfContained %}
             {% if id === 'icon' %}
                 {% set sass = 'icons.scss' %}
@@ -20,7 +20,7 @@
                 {% set sass = 'components/' + id + '.scss'  %}
             {% endif %}
         {% else %}
-         {% set sass = 'all.scss' %}
+         {% set sass = 'fundamental-styles.scss' %}
         {% endif %}
         {{ sass | sass_to_css }}
     </style>
