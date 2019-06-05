@@ -93,10 +93,5 @@
   },
   "browserslist": [
     "last 2 versions"
-  ],
-  "standard-version": {
-    "skip": {
-      "bump": false
-    }
-  }
+  ]
 }
