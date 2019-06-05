@@ -15,6 +15,7 @@ $fd-shell-footer-height: 40px !default;
 
 $block: #{$fd-namespace}-shell;
 .#{$block} {
+  overflow: hidden;
   position: absolute;
   min-height: 100vh;
   height: 100vh;
@@ -35,7 +36,7 @@ $block: #{$fd-namespace}-shell;
       position: static;
     }
     & .#{$block}__app {
-      overflow: scroll;
+      overflow: hidden;
       margin-top: 0;
       flex: 1;
       min-height: auto;

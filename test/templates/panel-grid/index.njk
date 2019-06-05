@@ -3,10 +3,6 @@
 {% from "./component.njk" import panel_grid %}
 {% from "./../panel/component.njk" import panel, panel_header, panel_actions, panel_filters, panel_body, panel_footer %}
 
-<!-- include add'tl css from src/styles/, e.g., ['helpers','components/button'] -->
-{% set css_deps = ['fonts','icons','helpers'] %}
-
-
 {% set panel_item %}
 {% call panel() -%}
     {% call panel_body() -%}

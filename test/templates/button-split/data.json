@@ -1,0 +1,33 @@
+{
+    "id": "button-split",
+    "name": "Button Split",
+    "css_vars": true,
+    "rtl": true,
+    "version": "1.0.0",
+    "properties": {
+        "label": "Group label",
+        "buttons": [
+            {
+                "properties": {
+                    "label": "Left"
+                },
+                "aria": {
+                    "pressed": true
+                }
+            },
+            {
+                "properties": {
+                    "label": "Middle"
+                }
+            },
+            {
+                "properties": {
+                    "label": "Right"
+                }
+            }
+        ]
+    },
+    "modifier": {},
+    "state": {},
+    "aria": {}
+}

@@ -3,9 +3,6 @@
 {% from "../button/component.njk" import button %}
 {% from "./component.njk" import panel, panel_header, panel_actions, panel_filters, panel_body, panel_footer %}
 
-<!-- include add'tl css from src/styles/, e.g., ['helpers','components/button'] -->
-{% set css_deps = ['helpers'] %}
-
 {% set panel_example %}
 {% call panel() -%}
     {% call panel_header({ title: ".fd-panel__title", description: ".fd-panel__description" }) -%}

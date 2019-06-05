@@ -1,0 +1,13 @@
+{% from "../button/component.njk" import button %}
+<!--
+button_split:
+    properties={},
+    modifier={ block: [] },
+    state={},
+    aria={}
+-->
+{% macro button_split(properties={}, modifier={}, state={}, aria={}) -%}
+<div class="fd-button-split{{ modifier.block | modifier('button-split') }}{{ state | state }}"{{ aria | aria }} role="group" aria-label="{{properties.label}}">
+  {{- caller() | indent -}}
+</div>
+{%- endmacro %}

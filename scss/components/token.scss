@@ -15,9 +15,9 @@ $block: #{$fd-namespace}-token;
     //LOCAL VARS (set all themeable properties, always include !default)
     $fd-token-border-color: fd-color("neutral", 3) !default;
     $fd-token-color: fd-color("text", 2) !default;
-    $fd-token-background-color: fd-color-state("information") !default;
+    $fd-token-background-color: fd-color("neutral", 1) !default;
     --fd-token-color: var(--fd-color-text-2);
-    --fd-token-background-color: var(--fd-color-background-information);
+    --fd-token-background-color: var(--fd-color-neutral-1);
     --fd-token-border-color: var(--fd-color-neutral-3);
 
     @include fd-reset();
@@ -33,12 +33,12 @@ $block: #{$fd-namespace}-token;
     border-width: 1px;
     border-style: solid;
     @include fd-var-color("border-color", $fd-token-border-color, --fd-token-border-color);
-    cursor: pointer;
     @include fd-icon("decline", "s", "after") {
         @include fd-var-color("color", fd-color("action", 1), --fd-color-action-1);
         margin-left: fd-space(tiny);
         vertical-align: bottom;
         line-height: fd-space(6);
+        cursor: pointer;
     }
     @include fd-rtl() {
         @include fd-icon("decline", "s", "before") {
@@ -46,6 +46,7 @@ $block: #{$fd-namespace}-token;
             margin-left: fd-space(tiny);
             vertical-align: bottom;
             line-height: fd-space(6);
+            cursor: pointer;
         }
 
         &::before {
