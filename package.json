@@ -2,7 +2,6 @@
   "name": "fundamental-styles",
   "version": "0.1.0-rc.1",
   "description": "Fundamental Styles is a Design System and HTML/CSS Component Library used to build modern Product User Experiences with the SAP look and feel. Learn more about this project at - http://sap.github.io/fundamental-styles/",
-
   "main": "index.js",
   "scripts": {
     "build": "npm run style:remove && npm run style:compile && npm run style:postCSS && npm run style:assets",
@@ -33,7 +32,7 @@
     "style:minify": "foreach -t -g \"dist/*.css\" -x \"cleancss -O1 specialComments:1 #{path} -o #{dir}/#{name}.min.css\" --no-c && foreach -t -g \"dist/components/*.css\" -x \"cleancss -O1 specialComments:1 #{path} -o #{dir}/#{name}.min.css\" --no-c",
     "style:postCSS": "postcss --config config/postcss.config.js  --replace dist/**/*.css && postcss --config config/postcss.config.js  --replace dist/*.css",
     "style:remove": "if [ -d dist/ ]; then rm -rf dist/; fi",
-    "test": "server-test start:playground http-get://localhost:3030 test:visual",
+    "test": "server-test start:playground:default http-get://localhost:3030 test:visual",
     "test:ci-config": "./ci-scripts/generateBackstopConfig.js",
     "test:reference": "backstop reference --config ./test/visual-regression-tests/config/backstopConfig.js --docker",
     "test:update": "server-test start:playground:default http-get://localhost:3030 test:reference && backstop approve --config ./test/visual-regression-tests/config/backstopConfig.js",
@@ -91,5 +90,6 @@
       "lint:pre-commit"
     ],
     "silent": false
-  }
+  },
+  "browserslist": ["last 2 versions"]
 }

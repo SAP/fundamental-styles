@@ -65,7 +65,7 @@
                 margin-bottom: 20px;
             }
 
-            &:hover{
+            &:hover {
                 background-color: docs-color(action, 4);
                 text-decoration: none;
                 box-shadow: none;
@@ -103,11 +103,7 @@
                 color: $docs-home-dark-color;
             }
             a:hover {
-<<<<<<< HEAD
-              color: $docs-home-dark-color;
-=======
-                color: #E3F3F8;
->>>>>>> 6955561e... docs: Update UI Kit landing page with latest sketch file (#1460)
+                color: $docs-home-dark-color;
                 text-decoration: none;
             }
         }
