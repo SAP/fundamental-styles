@@ -208,7 +208,7 @@
 "tags": "",
 "keywords": "getting started",
 "url": "/getting-started.html",
-"summary": "",
+"summary": "SAP Fiori Fundamentals is a light-weight presentation layer using HTML and CSS with the following implementations under active development:<a href="https://sap.github.io/fundamental-ngx/" target="_blank">Angular</a>, <a href="https://sap.github.io/fundamental-react/" target="_blank">React</a>, and <a href="https://sap.github.io/fundamental-vue/" target="_blank">Vue</a>. With Fiori Fundamentals’ library of stylesheets and HTML tags, developers can build consistent Fiori apps in any web-based technology.",
 "folder": ""
 }
 ,
@@ -300,6 +300,18 @@
 
 
 {
+"title": "Components",
+"tags": "",
+"keywords": "components",
+"url": "/components/index.html",
+"summary": "",
+"folder": "components"
+}
+,
+
+
+
+{
 "title": "Homepage",
 "tags": "",
 "keywords": "Homepage",
@@ -312,12 +324,24 @@
 
 
 {
-"title": "Components",
+"title": "Foundation",
 "tags": "",
-"keywords": "components",
-"url": "/components/index.html",
+"keywords": "guide, guides",
+"url": "/foundation/index.html",
+"summary": "Fiori Fundamentals is a unified, flexible design system that solves complex problems in a meaningful way and creates simple intuitive experience.",
+"folder": "foundation"
+}
+,
+
+
+
+{
+"title": "Demo Pages",
+"tags": "",
+"keywords": "demo page",
+"url": "/demo-pages/index.html",
 "summary": "",
-"folder": "components"
+"folder": "demo-pages"
 }
 ,
 
@@ -335,16 +359,6 @@
 
 
 
-{
-"title": "Foundation",
-"tags": "",
-"keywords": "guide, guides",
-"url": "/foundation/index.html",
-"summary": "",
-"folder": "foundation"
-}
-,
-
 
 
 {
@@ -354,20 +368,6 @@
 "url": "/layouts/index.html",
 "summary": "",
 "folder": "layouts"
-}
-,
-
-
-
-
-
-{
-"title": "Demo Pages",
-"tags": "",
-"keywords": "demo page",
-"url": "/demo-pages/index.html",
-"summary": "",
-"folder": "demo-pages"
 }
 ,
 
@@ -649,6 +649,8 @@
 
 
 
+
+
 {
 "title": "Table",
 "tags": "",
@@ -658,8 +660,6 @@
 "folder": "components"
 }
 ,
-
-
 
 
 

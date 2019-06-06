@@ -1,5 +1,5 @@
 /*!
- * Fundamental Styles v0.0.0
+ * Fundamental Styles v0.1.0
  * Copyright (c) 2019 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -3696,6 +3696,7 @@ input[type=checkbox]:indeterminate[aria-disabled=true]::before {
     .fd-shell__overlay
 */
 .fd-shell {
+  overflow: hidden;
   position: absolute;
   min-height: 100vh;
   height: 100vh;
@@ -3727,7 +3728,7 @@ input[type=checkbox]:indeterminate[aria-disabled=true]::before {
   position: static
 }
 .fd-shell--fixed .fd-shell__app {
-  overflow: scroll;
+  overflow: hidden;
   margin-top: 0;
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -3802,6 +3803,7 @@ input[type=checkbox]:indeterminate[aria-disabled=true]::before {
   padding: 0 var(--fd-padding-ui)
 }
 .fd-app__navigation--vertical {
+  overflow-y: auto;
   -webkit-box-flex: 0;
   -ms-flex: 0;
   flex: 0
@@ -3818,7 +3820,8 @@ input[type=checkbox]:indeterminate[aria-disabled=true]::before {
   -webkit-box-flex: 1;
   -ms-flex: 1 1;
   flex: 1 1;
-  overflow: auto
+  overflow-y: auto;
+  height: 100%
 }
 .fd-page {
   --fd-page-background-color: transparent;
@@ -4704,8 +4707,6 @@ input[type=checkbox]:indeterminate[aria-disabled=true]::before {
 .fd-badge+(( --success | --warning | --error ), (--pill | --filled))
 */
 .fd-badge {
-  --fd-badge-color: var(--fd-color-text-3);
-  --fd-badge-background-color: transparent;
   font-size: 14px;
   line-height: 1.42857;
   color: #32363a;
@@ -4714,17 +4715,17 @@ input[type=checkbox]:indeterminate[aria-disabled=true]::before {
   font-size: .85714rem;
   line-height: 1.33333;
   font-weight: 400;
-  font-weight: 700;
-  color: #6a6d70;
-  color: var(--fd-badge-color);
-  background-color: transparent;
-  background-color: var(--fd-badge-background-color);
-  text-transform: uppercase;
+  border-color: #0a6ed1;
+  border-color: var(--fd-color-action);
+  background-color: #f5faff;
+  background-color: var(--fd-color-background-6);
   line-height: 16px;
   vertical-align: middle;
   display: inline-block;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
   border-radius: 4px;
   border-width: 1px;
   border-style: solid
@@ -4733,33 +4734,42 @@ input[type=checkbox]:indeterminate[aria-disabled=true]::before {
   border-radius: 12px
 }
 .fd-badge--filled {
-  --fd-badge-background-color: var(--fd-color-neutral-1);
-  background-color: #fafafa;
+  font-weight: 700;
+  color: #fff;
+  color: var(--fd-color-text-5);
+  background-color: #0a6ed1;
+  background-color: var(--fd-color-action);
   border: none
 }
 .fd-badge--filled.fd-badge--success {
-  --fd-badge-background-color: var(--fd-color-background-positive);
-  background-color: #f1fdf6
+  background-color: #0a7e3e;
+  background-color: var(--fd-color-positive)
 }
 .fd-badge--filled.fd-badge--warning {
-  --fd-badge-background-color: var(--fd-color-background-alert);
-  background-color: #fef7f1
+  background-color: #e9730c;
+  background-color: var(--fd-color-alert)
 }
 .fd-badge--filled.fd-badge--error {
-  --fd-badge-background-color: var(--fd-color-background-negative);
-  background-color: #ffebeb
+  background-color: #b00;
+  background-color: var(--fd-color-negative)
 }
 .fd-badge--success {
-  --fd-badge-color: var(--fd-color-positive);
-  color: #0a7e3e
+  background-color: #f1fdf6;
+  background-color: var(--fd-color-background-3);
+  border-color: #0a7e3e;
+  border-color: var(--fd-color-positive)
 }
 .fd-badge--warning {
-  --fd-badge-color: var(--fd-color-alert);
-  color: #e9730c
+  background-color: #fef7f1;
+  background-color: var(--fd-color-background-4);
+  border-color: #e9730c;
+  border-color: var(--fd-color-alert)
 }
 .fd-badge--error {
-  --fd-badge-color: var(--fd-color-negative);
-  color: #b00
+  background-color: #ffebeb;
+  background-color: var(--fd-color-background-5);
+  border-color: #b00;
+  border-color: var(--fd-color-negative)
 }
 /*!
 .fd-button+( (--compact), (--emphasized, --light), (--standard, --positive, --medium, --negative))+( (.is-disabled | [aria-disabled=true]) | (.is-selected | [aria-selected=true] | (.is-pressed | [aria-pressed=true]))
@@ -6354,6 +6364,116 @@ a.fd-button--shell[aria-selected=true] {
   --fd-button-color: var(--fd-color-text-2)
 }
 /*!
+.fd-button-group+()
+    .fd-button
+*/
+.fd-button-group,
+.fd-segmented-button {
+  padding: 0;
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle
+}
+.fd-button-group > *,
+.fd-segmented-button > * {
+  margin: 0
+}
+.fd-button-group > :not(:first-child):not(:last-child),
+.fd-segmented-button > :not(:first-child):not(:last-child) {
+  border-radius: 0
+}
+.fd-button-group > :not(:last-child),
+.fd-segmented-button > :not(:last-child) {
+  border-right-width: 0
+}
+.fd-button-group > :first-child,
+.fd-segmented-button > :first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0
+}
+.fd-button-group > :last-child,
+.fd-segmented-button > :last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0
+}
+.fd-button-group > [dir=rtl]:not(:first-child),
+.fd-segmented-button > [dir=rtl]:not(:first-child),
+[dir=rtl] .fd-button-group > :not(:first-child),
+[dir=rtl] .fd-segmented-button > :not(:first-child) {
+  border-right: none
+}
+.fd-button-group > [dir=rtl]:last-child,
+.fd-segmented-button > [dir=rtl]:last-child,
+[dir=rtl] .fd-button-group > :last-child,
+[dir=rtl] .fd-segmented-button > :last-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0
+}
+.fd-button-group > [dir=rtl]:first-child,
+.fd-segmented-button > [dir=rtl]:first-child,
+[dir=rtl] .fd-button-group > :first-child,
+[dir=rtl] .fd-segmented-button > :first-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-right-width: 1px
+}
+/*!
+.fd-button-split+()
+    .fd-button
+*/
+.fd-button-split {
+  padding: 0;
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+  position: relative;
+  margin: 0
+}
+.fd-button-split [class*=fd-button]:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0
+}
+.fd-button-split [class*=fd-button]:nth-child(2) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left-width: 0
+}
+.fd-button-split[dir=rtl] [class*=fd-button]:nth-child(2),
+[dir=rtl] .fd-button-split [class*=fd-button]:nth-child(2) {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-left-width: 1px
+}
+.fd-button-split[dir=rtl] [class*=fd-button]:first-child,
+[dir=rtl] .fd-button-split [class*=fd-button]:first-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-left-width: 0
+}
+.fd-button-split .fd-button--emphasized:first-child {
+  margin-right: 1px
+}
+.fd-button-split .fd-button--emphasized[dir=rtl]:first-child,
+[dir=rtl] .fd-button-split .fd-button--emphasized:first-child {
+  margin-right: 0;
+  margin-left: 1px
+}
+.fd-button-split .fd-popover__body {
+  width: 100%
+}
+/*!
 .fd-breadcrumb
     .fd-breadcrumb__item
     .fd-breadcrump__link
@@ -7112,19 +7232,16 @@ a.fd-button--shell[aria-selected=true] {
 .fd-label+(--success | --warning | --error)
 */
 .fd-label {
-  --fd-label-color: var(--fd-color-text-3);
   font-size: 14px;
   line-height: 1.42857;
   color: #32363a;
   color: var(--fd-color-text-1);
   font-family: '72',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-  font-size: .85714rem;
-  line-height: 1.33333;
+  font-size: 1rem;
+  line-height: 1.42857;
   font-weight: 400;
-  font-weight: 700;
-  color: #6a6d70;
-  color: var(--fd-label-color);
-  text-transform: uppercase;
+  color: #0a6ed1;
+  color: var(--fd-color-action);
   line-height: 24px;
   vertical-align: middle;
   display: inline-block;
@@ -7132,16 +7249,16 @@ a.fd-button--shell[aria-selected=true] {
   padding-right: 8px
 }
 .fd-label--success {
-  --fd-label-color: var(--fd-color-positive);
-  color: #0a7e3e
+  color: #0a7e3e;
+  color: var(--fd-color-positive)
 }
 .fd-label--warning {
-  --fd-label-color: var(--fd-color-alert);
-  color: #e9730c
+  color: #e9730c;
+  color: var(--fd-color-alert)
 }
 .fd-label--error {
-  --fd-label-color: var(--fd-color-negative);
-  color: #b00
+  color: #b00;
+  color: var(--fd-color-negative)
 }
 /*!
 .fd-pagination
@@ -9303,66 +9420,6 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http://github.danielcar
   clear: right
 }
 /*!
-.fd-button-group+()
-    .fd-button
-*/
-.fd-button-group,
-.fd-segmented-button {
-  padding: 0;
-  margin: 0;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  vertical-align: middle
-}
-.fd-button-group > *,
-.fd-segmented-button > * {
-  margin: 0
-}
-.fd-button-group > :not(:first-child):not(:last-child),
-.fd-segmented-button > :not(:first-child):not(:last-child) {
-  border-radius: 0
-}
-.fd-button-group > :not(:last-child),
-.fd-segmented-button > :not(:last-child) {
-  border-right-width: 0
-}
-.fd-button-group > :first-child,
-.fd-segmented-button > :first-child {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0
-}
-.fd-button-group > :last-child,
-.fd-segmented-button > :last-child {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0
-}
-.fd-button-group > [dir=rtl]:not(:first-child),
-.fd-segmented-button > [dir=rtl]:not(:first-child),
-[dir=rtl] .fd-button-group > :not(:first-child),
-[dir=rtl] .fd-segmented-button > :not(:first-child) {
-  border-right: none
-}
-.fd-button-group > [dir=rtl]:last-child,
-.fd-segmented-button > [dir=rtl]:last-child,
-[dir=rtl] .fd-button-group > :last-child,
-[dir=rtl] .fd-segmented-button > :last-child {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0
-}
-.fd-button-group > [dir=rtl]:first-child,
-.fd-segmented-button > [dir=rtl]:first-child,
-[dir=rtl] .fd-button-group > :first-child,
-[dir=rtl] .fd-segmented-button > :first-child {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-right-width: 1px
-}
-/*!
 .fd-tile+()
   .fd-tile__media+()
   .fd-tile__content+()
@@ -9584,7 +9641,7 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http://github.danielcar
 */
 .fd-token {
   --fd-token-color: var(--fd-color-text-2);
-  --fd-token-background-color: var(--fd-color-background-information);
+  --fd-token-background-color: var(--fd-color-neutral-1);
   --fd-token-border-color: var(--fd-color-neutral-3);
   font-size: 14px;
   line-height: 1.42857;
@@ -9596,7 +9653,7 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http://github.danielcar
   font-weight: 400;
   color: #51555a;
   color: var(--fd-token-color);
-  background-color: #f5faff;
+  background-color: #fafafa;
   background-color: var(--fd-token-background-color);
   line-height: 24px;
   vertical-align: middle;
@@ -9607,36 +9664,36 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http://github.danielcar
   border-width: 1px;
   border-style: solid;
   border-color: #d9d9d9;
-  border-color: var(--fd-token-border-color);
+  border-color: var(--fd-token-border-color)
+}
+.fd-token::after {
+  font-family: SAP-icons;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none
+}
+.fd-token::after {
+  content: ""
+}
+.fd-token::after {
+  font-size: .85714rem;
+  line-height: 1
+}
+.fd-token::after {
+  color: #0a6ed1;
+  color: var(--fd-color-action-1);
+  margin-left: 8px;
+  vertical-align: bottom;
+  line-height: 24px;
   cursor: pointer
 }
-.fd-token::after {
-  font-family: SAP-icons;
-  font-style: normal;
-  font-weight: 400;
-  text-align: center;
-  display: inline-block;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  speak: none
-}
-.fd-token::after {
-  content: ""
-}
-.fd-token::after {
-  font-size: .85714rem;
-  line-height: 1
-}
-.fd-token::after {
-  color: #0a6ed1;
-  color: var(--fd-color-action-1);
-  margin-left: 8px;
-  vertical-align: bottom;
-  line-height: 24px
-}
 .fd-token[dir=rtl]::before,
 [dir=rtl] .fd-token::before {
   font-family: SAP-icons;
@@ -9666,7 +9723,8 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http://github.danielcar
   color: var(--fd-color-action-1);
   margin-left: 8px;
   vertical-align: bottom;
-  line-height: 24px
+  line-height: 24px;
+  cursor: pointer
 }
 .fd-token[dir=rtl]::before,
 [dir=rtl] .fd-token::before {
@@ -10269,6 +10327,20 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http://github.danielcar
 .fd-popover__body--no-arrow::before {
   display: none
 }
+.fd-popover__body--no-arrow.fd-popover__body--left {
+  left: 0
+}
+.fd-popover__body--no-arrow.fd-popover__body--left[dir=rtl],
+[dir=rtl] .fd-popover__body--no-arrow.fd-popover__body--left {
+  right: 0
+}
+.fd-popover__body--no-arrow.fd-popover__body--right {
+  right: 0
+}
+.fd-popover__body--no-arrow.fd-popover__body--right[dir=rtl],
+[dir=rtl] .fd-popover__body--no-arrow.fd-popover__body--right {
+  left: 0
+}
 .fd-popover__body.is-hidden,
 .fd-popover__body[aria-hidden=true] {
   z-index: 1;
@@ -10386,7 +10458,8 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http://github.danielcar
     .fd-date-picker__content+()
     .fd-date-picker__title+()
 */
-.fd-date-picker .fd-popover__body {
+.fd-date-picker .fd-popover__body,
+.fd-date-picker .fd-popover__popper {
   padding: 0 12px
 }
 .fd-time {
