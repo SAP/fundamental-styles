@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.0"></a>
+# [0.1.0](https://github.com/SAP/fundamental-styles/compare/v0.1.0-rc.8...v0.1.0) (2019-06-06)
+
+
+
 <a name="0.1.0-rc.8"></a>
 # [0.1.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.1.0-rc.7...v0.1.0-rc.8) (2019-06-06)
 
