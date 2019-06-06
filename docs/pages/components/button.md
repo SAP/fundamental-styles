@@ -134,7 +134,6 @@ Group a series of buttons together on a single line with the button group.
 {% include display-component.html component=button-group-small %}
 
 # Split Button
-
 Button with multiple actions
 
 {% capture button-split %}
