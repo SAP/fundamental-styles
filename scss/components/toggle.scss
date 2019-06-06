@@ -10,20 +10,22 @@ $block: #{$fd-namespace}-toggle;
 
 .#{$block} {
 
-    $fd-toggle-sizes: ("default": fd-space(12) fd-space(5) 20px -5px -5px, //48px 28px
-        "xs": fd-space(9) fd-space(5) 14px -3px -10px, //36px 20px
-        "s": fd-space(10) fd-space(6) 17px -4px -10px, //40px 24px
-        "l": fd-space(14) fd-space(8) 22px -6px -2px, //56px 32px
+    $fd-toggle-sizes: ("default": fd-space(13) fd-space(5.5) 20px -5px -5px,
+        "xs": fd-space(9) fd-space(5) 14px -4px 15px,
+        "s": fd-space(10) fd-space(6) 17px -5px 15px,
+        "compact": fd-space(10) fd-space(6.5) 16px -6px 13px,
+        "l": fd-space(14) fd-space(8) 22px -6px 23px,
         ) !default;
     $_defaults: map-get($fd-toggle-sizes, "default");
     $fd-toggle-width: nth($_defaults, 1);
     $fd-toggle-height: nth($_defaults, 2);
-    $fd-toggle-background-color: fd-color("neutral", 3) !default;
-    $fd-toggle-on-background-color--disabled: fd-color-state("disabled", "action");
+    $fd-toggle-background-color: fd-color("neutral", 4) !default;
+    $fd-toggle-on-background-color--disabled: #c5dcf2;
     $fd-toggle-switch-width: nth($_defaults, 2);
     $fd-toggle-switch-background-color--disabled: hsla(240, 2%, 93%, 1) !default;
-    $fd-toggle-switch-on-background-color--disabled: hsla(209, 90%, 92%, 1) !default;
-
+    $fd-toggle-switch-border-color--disabled: hsla(212, 8%, 57%, 0.4) !default;
+    $fd-toggle-switch-on-background-color--disabled: #9ebbd8 !default;
+    $fd-toggle-switch-hover-background-color: #EBF5FE;
     @include fd-reset();
     position: relative;
     display: inline-block;
@@ -52,17 +54,20 @@ $block: #{$fd-namespace}-toggle;
         &[aria-disabled="true"] {
             opacity: 1;
             background-color: $fd-toggle-switch-background-color--disabled;
-            & + .#{$block}__switch {
+            border-color: $fd-toggle-switch-border-color--disabled;
+            &+.#{$block}__switch {
                 opacity: 1;
-                border-color: $fd-toggle-switch-background-color--disabled;
+                border-color: $fd-toggle-switch-border-color--disabled;
                 box-shadow: none;
                 background-color: $fd-toggle-switch-background-color--disabled;
                 pointer-events: none;
             }
+            &+.#{$block}__switch::before {
+                border-color: $fd-toggle-switch-border-color--disabled;
+            }
         }
 
         &:checked {
-
             &[disabled],
             &.is-disabled,
             &[aria-disabled="true"] {
@@ -87,40 +92,49 @@ $block: #{$fd-namespace}-toggle;
         left: 0;
         right: 0;
         bottom: 0;
+        border-style: solid;
+        border-width: 1px;
+        @include fd-var-color("border-color", $fd-toggle-background-color, --fd-color-neutral-4);
         @include fd-var-color("background-color", $fd-toggle-background-color, --fd-color-neutral-3);
-        -webkit-transition: 0.4s;
-        transition: 0.4s;
+        transition: all 0.4s;
         border-radius: 34px;
+        &:hover {
+            @include fd-var-color("border-color", fd-color-state("selected", "action"), --fd-color-action-selected);
+            &::before {
+                @include fd-var-color("border-color", fd-color-state("selected", "action"), --fd-color-action-selected);
+                background-color: $fd-toggle-switch-hover-background-color;
+            }
+        }
     }
 
     &__switch::before {
         position: absolute;
         content: "";
-        height: fd-space(7);
-        width: fd-space(7);
-        left: 0;
-        top: -5px;
+        height: fd-space(8);
+        width: fd-space(8);
+        left: -1px;
+        top: -6px;
         @include fd-var-color("background-color", fd-color("background", 2), --fd-color-background-2);
         border-style: solid;
         border-width: 1px;
-        @include fd-var-color("border-color", $fd-toggle-background-color, --fd-color-neutral-3);
-        -webkit-transition: 0.4s;
-        transition: 0.4s;
+        @include fd-var-color("border-color", $fd-toggle-background-color, --fd-color-neutral-4);
+        transition: all 0.4s;
         border-radius: 50%;
+        z-index: 1;
     }
 
     input:checked+&__switch {
-        background-color: adjust-color($fd-link-color, $alpha: 0.6);
+        background-color: rgba(10, 110, 209, 0.6);
     }
 
     input:checked+&__switch::before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
+        // -webkit-transform: translateX(26px);
+        // -ms-transform: translateX(26px);
+        // transform: translateX(26px);
         @include fd-var-color("background-color", fd-color-state("selected", "action"), --fd-color-action-selected);
         @include fd-var-color("border-color", fd-color-state("selected", "action"), --fd-color-action-selected);
         pointer-events: none;
-        left: -6px;
+        left: calc(100% - 31px);
     }
 
     //SIZES
@@ -141,6 +155,103 @@ $block: #{$fd-namespace}-toggle;
                     left: nth($list, 5);
                 }
             }
+        }
+    }
+
+    // block level modifier for inline lables
+    &--label,
+    &--semantic {
+        width: 62px;
+        height: 22px;
+        .#{$block}__label--on {
+            visibility: hidden;
+        }
+    }
+
+    &--label input:checked+&__switch,
+    &--semantic input:checked+&__switch {
+        &::before {
+            left: calc(100% - 31px);
+        }
+        .#{$block}__label--off {
+            visibility: hidden;
+        }
+        .#{$block}__label--on {
+            visibility: visible;
+        }
+    }
+
+    &--label.#{$block}--compact input:checked+&__switch,
+    &--semantic.#{$block}--compact input:checked+&__switch {
+        &::before {
+            left: calc(100% - 25px);
+        }
+    }
+
+    &--label,
+    &--semantic {
+        &.#{$block}--compact {
+            width: 56px;
+
+            .#{$block}__switch::before {
+                top: -3px;
+            }
+        }
+    }
+
+    // label elements
+    &__label {
+        &--off {
+            @include fd-type("-1");
+            position: absolute;
+            right: 6px;
+            top: 3px;
+        }
+        &--on {
+            @include fd-type("-1");
+            position: absolute;
+            left: 8px;
+            top: 3px;
+        }
+    }
+
+    // semantic modifier
+    &--semantic {
+        .#{$block}__switch {
+            @include fd-var-color("background-color", fd-color("background", 5), --fd-color-background-5);
+            @include fd-var-color("border-color", fd-color("status", 3), --fd-color-status-3);
+        }
+
+        .#{$block}__switch::before {
+            @include fd-var-color("background-color", fd-color("status", 3), --fd-color-status-3);
+            @include fd-var-color("border-color", fd-color("status", 3), --fd-color-status-3);
+        }
+
+        input:checked + .#{$block}__switch {
+            @include fd-var-color("background-color", fd-color("background", 3), --fd-color-background-3);
+            @include fd-var-color("border-color", fd-color("status", 1), --fd-color-status-1);
+        }
+        input:checked + .#{$block}__switch::before {
+            @include fd-var-color("background-color", fd-color("status", 1), --fd-color-status-1);
+            @include fd-var-color("border-color", fd-color("status", 1), --fd-color-status-1);
+        }
+    }
+
+    // semantic elements
+    &__semantic {
+        &--off {
+            @include fd-type("-1");
+            position: absolute;
+            right: 12px;
+            top: 2px;
+            @include fd-var-color("color", fd-color("status", 3), --fd-color-status-3);
+        }
+        &--on {
+            @include fd-type("-1");
+            position: absolute;
+            left: 12px;
+            top: 2px;
+            @include fd-var-color("color", fd-color("status", 1), --fd-color-status-1);
         }
     }
 }

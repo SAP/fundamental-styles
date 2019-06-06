@@ -27,7 +27,7 @@ rules:
   selector-pseudo-class-no-unknown: true
 
   ## General / Sheet
-  no-duplicate-selectors: true
+  # no-duplicate-selectors: true
   no-empty-source: true
   no-extra-semicolons: true
 
