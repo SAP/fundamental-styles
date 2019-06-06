@@ -11,7 +11,7 @@ $block: #{$fd-namespace}-date-picker;
 
 .#{$block} {
     .#{$fd-namespace}-popover {
-        &__body {
+        &__body, &__popper {
             padding: 0 fd-space(xs);
         }
     }
