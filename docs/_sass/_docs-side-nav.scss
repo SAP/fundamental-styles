@@ -1,8 +1,10 @@
 $side-nav-bg: $docs-home-dark-color;
 $side-nav-links-color: $docs-home-white-color;
 .side-nav {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 27px - 40px - 20px);
     background-color: $side-nav-bg;
-    padding: 20px 40px;
     float: none;
     vertical-align: top;
     width: 290px;
@@ -43,7 +45,9 @@ $side-nav-links-color: $docs-home-white-color;
     }
 
     &__links-container {
-        margin: 0 -20px;
+        padding-left: 20px;
+        margin: 0;
+        overflow-y: auto;
     }
     &__links {
         list-style: none;
@@ -70,13 +74,13 @@ $side-nav-links-color: $docs-home-white-color;
         }
     }
 
-    .search-box {
-        margin-bottom: 20px;
-    }
-
     &__seperator {
         margin: 15px 20px 0 20px;
         border-bottom: 1px solid #242424;
         opacity: .3;
     }
+}
+
+.search-box {
+    padding: 20px 40px;
 }

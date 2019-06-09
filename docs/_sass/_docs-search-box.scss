@@ -5,11 +5,12 @@ $search-results-link-hover: docs-color(background, 2);
 
 .search-box {
     position: relative;
+    flex-shrink: 0;
 
     &__icon {
         position: absolute;
-        top: 8px;
-        left: 8px;
+        top: 28px;
+        left: 50px;
         font-size: 20px;
         color: $search-border-color;
     }
@@ -27,9 +28,9 @@ $search-results-link-hover: docs-color(background, 2);
         font-size: 12px;
         background-color: white;
         position: absolute;
-        top: 41px;
+        top: 61px;
         z-index: 1;
-        width: 100%;
+        width: calc(100% - 80px);
         margin-left: 0;
         border: 1px solid $search-border-color;
         border-top: none;
