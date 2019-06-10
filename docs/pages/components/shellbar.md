@@ -92,7 +92,7 @@ This example shows the minimum shellbar for a single application product with on
   </div>
 </div>
 {% endcapture %}
-{% include display-component.html component=app-layout class="global-nav" %}
+{% include display-component.html component=app-layout class="" %}
 
 
 ## Product Menu and Search
@@ -181,7 +181,7 @@ This example includes the product menu for navigating to applications within the
   </div>
 </div>
 {% endcapture %}
-{% include display-component.html component=app-layout class="global-nav" %}
+{% include display-component.html component=app-layout class="" %}
 
 ## Links with collapsible menu
 {: .docs-header-h2}
@@ -275,7 +275,7 @@ When a product has multiple links, the product links should collapse into an ove
   </div>
 </div>
 {% endcapture %}
-{% include display-component.html component=app-layout class="global-nav" %}
+{% include display-component.html component=app-layout class="" %}
 
 ## Product Switcher and CoPilot
 {: .docs-header-h2}
@@ -405,4 +405,4 @@ This example shows an application with CoPilot, integration with other products,
   </div>
 </div>
 {% endcapture %}
-{% include display-component.html component=app-layout class="global-nav" %}
+{% include display-component.html component=app-layout class="" %}
