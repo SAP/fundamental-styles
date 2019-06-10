@@ -235,11 +235,6 @@ tabs:
   since: 1.0.0
   updated:
 
-tag:
-  since: 1.0.0
-  updated:
-  remove: 1.5.0
-
 token:
   since: 1.3.0
   updated:
