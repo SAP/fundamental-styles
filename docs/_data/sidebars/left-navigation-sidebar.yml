@@ -140,10 +140,6 @@ entries:
       url: /components/localization-editor.html
       output: web
 
-    - title: Mega Menu
-      url: /components/mega-menu.html
-      output: web
-
     - title: Menu
       url: /components/menu.html
       output: web

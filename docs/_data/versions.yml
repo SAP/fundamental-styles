@@ -184,11 +184,6 @@ localization-editor:
   since: 1.2.0
   updated:
 
-mega-menu:
-  since: 1.0.0
-  updated:
-  remove: 1.7.0
-
 menu:
   since: 1.1.0
   updated:

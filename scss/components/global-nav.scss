@@ -105,12 +105,6 @@ $block: #{$fd-namespace}-global-nav;
                 background-color: $fd-side-nav-launchpad-background-color;
             }
         }
-
-        .fd-mega-menu {
-            position: absolute;
-            top: $fd-global-nav-height;
-            left: 0;
-        }
     }
 
     &__context-menu {
