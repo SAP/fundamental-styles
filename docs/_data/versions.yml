@@ -118,11 +118,6 @@ dropdown:
   updated: 1.2.0
   remove: 1.5.0
 
-global-nav:
-  since: 1.0.0
-  updated:
-  remove: 1.7.0
-
 form:
   since: 1.0.0
   updated:
