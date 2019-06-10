@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.0"></a>
+# [0.2.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.1.1-rc.2...v0.2.0-rc.0) (2019-06-10)
+
+
+### Features
+
+* toggle updates ([#1466](https://github.com/SAP/fundamental-styles/issues/1466)) ([#30](https://github.com/SAP/fundamental-styles/issues/30)) ([c2930a9](https://github.com/SAP/fundamental-styles/commit/c2930a9))
+
+
+
 <a name="0.1.1-rc.2"></a>
 ## [0.1.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.1.1-rc.1...v0.1.1-rc.2) (2019-06-10)
 
