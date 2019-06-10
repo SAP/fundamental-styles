@@ -8,8 +8,25 @@ toggle:
 -->
 {% macro toggle(properties={}, modifier={}, state={}, aria={}, classes=[]) -%}
 {%- set _id = properties.id or utils.id() -%}
+{%- set semantic = 'false' -%}
+{%- for m in modifier.block -%}
+    {%- if m == 'semantic' -%}
+        {%- set semantic = 'true' -%}
+    {%- endif -%}
+{%- endfor -%}
 <span class="fd-toggle{{ modifier.block | modifier('toggle') }}{{ classes | classes }}"{{ aria | aria }}>
     <input type="checkbox" name="" value="" id="{{ _id }}"{{ ' disabled' if state.disabled }}{{ ' checked' if state.checked }}>
-    <span class="fd-toggle__switch" role="presentation"></span>
+    <span class="fd-toggle__switch" role="presentation">
+    {%- if properties.onLabel -%}
+        <span class="fd-toggle__label--on">{{properties.onLabel}}</span>
+    {%- endif -%}
+    {%- if properties.offLabel -%}
+        <span class="fd-toggle__label--off">{{properties.offLabel}}</span>
+    {%- endif -%}
+    {%- if semantic =='true' -%}
+        <span class="fd-toggle__semantic--off sap-icon--decline"></span>
+        <span class="fd-toggle__semantic--on sap-icon--accept"></span>
+    {%- endif -%}
+    </span>
 </span>
 {%- endmacro %}

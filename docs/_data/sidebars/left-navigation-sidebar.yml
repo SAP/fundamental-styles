@@ -208,7 +208,7 @@ entries:
       url: /components/token.html
       output: web
 
-    - title: Toggle
+    - title: Toggle / Switch
       url: /components/toggle.html
       output: web
 
