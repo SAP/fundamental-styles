@@ -158,16 +158,6 @@ $block: #{$fd-namespace}-toggle;
         }
     }
 
-    // block level modifier for inline lables
-    &--label,
-    &--semantic {
-        width: 62px;
-        height: 22px;
-        .#{$block}__label--on {
-            visibility: hidden;
-        }
-    }
-
     &--label input:checked+&__switch,
     &--semantic input:checked+&__switch {
         &::before {
@@ -190,6 +180,12 @@ $block: #{$fd-namespace}-toggle;
 
     &--label,
     &--semantic {
+        width: 62px;
+        height: 22px;
+        .#{$block}__label--on {
+            visibility: hidden;
+        }
+
         &.#{$block}--compact {
             width: 56px;
 
