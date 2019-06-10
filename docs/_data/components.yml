@@ -48,9 +48,6 @@
     - title: Localization Editor
       meta: localization-editor
 
-    - title: Mega Menu
-      meta: mega-menu
-
     - title: Modal
       meta: modal
 
@@ -77,9 +74,6 @@
 
     - title: Tabs
       meta: tabs
-
-    - title: Tag
-      meta: tag
 
     - title: Tile
       meta: tile

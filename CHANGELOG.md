@@ -1,8 +1,74 @@
-# Changelog
+# Change Log
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [0.1.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.1.0-rc.2...v0.1.0-rc.3) (2019-06-05)
+<a name="0.2.0-rc.3"></a>
+# [0.2.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.2...v0.2.0-rc.3) (2019-06-10)
+
+
+
+<a name="0.2.0-rc.2"></a>
+# [0.2.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.1...v0.2.0-rc.2) (2019-06-10)
+
+
+
+<a name="0.2.0-rc.1"></a>
+# [0.2.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.0...v0.2.0-rc.1) (2019-06-10)
+
+
+
+<a name="0.2.0-rc.0"></a>
+# [0.2.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.1.1-rc.2...v0.2.0-rc.0) (2019-06-10)
+
+
+### Features
+
+* toggle updates ([#1466](https://github.com/SAP/fundamental-styles/issues/1466)) ([#30](https://github.com/SAP/fundamental-styles/issues/30)) ([c2930a9](https://github.com/SAP/fundamental-styles/commit/c2930a9))
+
+
+
+<a name="0.1.1-rc.2"></a>
+## [0.1.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.1.1-rc.1...v0.1.1-rc.2) (2019-06-10)
+
+
+
+<a name="0.1.1-rc.1"></a>
+## [0.1.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.1.1-rc.0...v0.1.1-rc.1) (2019-06-07)
+
+
+
+<a name="0.1.1-rc.0"></a>
+## [0.1.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.1.0...v0.1.1-rc.0) (2019-06-07)
+
+
+
+<a name="0.1.0"></a>
+# [0.1.0](https://github.com/SAP/fundamental-styles/compare/v0.1.0-rc.8...v0.1.0) (2019-06-06)
+
+
+
+<a name="0.1.0-rc.8"></a>
+# [0.1.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.1.0-rc.7...v0.1.0-rc.8) (2019-06-06)
+
+
+
+<a name="0.1.0-rc.7"></a>
+# [0.1.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.1.0-rc.6...v0.1.0-rc.7) (2019-06-06)
+
+
+
+<a name="0.1.0-rc.6"></a>
+# [0.1.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.1.0-rc.5...v0.1.0-rc.6) (2019-06-06)
+
+
+
+<a name="0.1.0-rc.5"></a>
+# [0.1.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.1.0-rc.4...v0.1.0-rc.5) (2019-06-06)
+
+
+
+<a name="0.1.0-rc.4"></a>
+# [0.1.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.1.0-rc.3...v0.1.0-rc.4) (2019-06-06)
 
 
 
