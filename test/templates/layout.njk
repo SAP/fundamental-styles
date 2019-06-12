@@ -7,23 +7,38 @@
     <title>{{ id }}</title>
     <link rel="stylesheet" href="static/layout.css">
     <style>
-        {% if ie11 %}
-            {% set sass = 'fundamental-styles-ie11.scss' %}
-        {% elif selfContained %}
-            {% if id === 'icon' %}
-                {% set sass = 'icons.scss' %}
-            {% elif id === 'radio' or id === 'checkbox' or id === 'input' %}
-                {% set sass = 'components/form.scss' %}
-            {% elif id === 'panel' or id === 'panel-grid' or id === 'layout' %}
-                {% set sass = 'layout.scss' %}
-            {% else %}
-                {% set sass = 'components/' + id + '.scss'  %}
-            {% endif %}
+        {% if selfContained %}
+            {% set sass = id + '.scss'  %}
+            {{ sass | component_css }}
         {% else %}
-         {% set sass = 'fundamental-styles.scss' %}
+            {% if ie11 %}
+                {% set sass = 'fundamental-styles-ie11.scss' %}
+            {% else %}
+                {% set sass = 'fundamental-styles.scss' %}
+            {% endif %}
+            {{ sass | sass_to_css }}
         {% endif %}
-        {{ sass | sass_to_css }}
     </style>
+    <script>
+        function toggleStylesheet( href, onoff ){
+            var existingNode=0; //get existing stylesheet node if it already exists:
+            for(var i = 0; i < document.styleSheets.length; i++){
+                if( document.styleSheets[i].href && document.styleSheets[i].href.indexOf(href)>-1 ) existingNode = document.styleSheets[i].ownerNode;
+            }
+            if(onoff == undefined) onoff = !existingNode; //toggle on or off if undefined
+            if(onoff){ //TURN ON:
+                if(existingNode) return onoff; //already exists so cancel now
+                var link  = document.createElement('link');
+                link.rel  = 'stylesheet';
+                link.type = 'text/css';
+                link.href = href;
+                document.getElementsByTagName('head')[0].appendChild(link);
+            }else{ //TURN OFF:
+                if(existingNode) existingNode.parentNode.removeChild(existingNode);
+            }
+            return onoff;
+        }
+    </script>
 </head>
 
 <body>
@@ -32,13 +47,16 @@
         <h1>{% if selfContained %}Self-Contained Styles Playground{% elif ie11 %}IE11 Playground{% else %}Playground{% endif %}: <code>{{ data.id }}</code></h1>
         <form action="#" method="get">
             <fieldset class="test-fieldset">
-                <label class="test-label"><input type="checkbox" value="" id="toggleBg"> Toggle BG</label>
-                <span>
-                    Contexts:
-                    <label class="test-label"><input type="checkbox" value="" id="toggleDir"> RTL</label>
-                    <label class="test-label" title="Enables touch metrics"><input type="checkbox" value="" id="toggleTouch"> Touch</label>
-                    <label class="test-label" title="Forces compact metrics"><input type="checkbox" value="" id="toggleCompact"> Compact</label>
-                </span>
+                <legend>Contexts</legend>
+                <label class="test-label"><input type="checkbox" value="" id="toggleDir"> RTL</label>
+                <label class="test-label" title="Enables touch metrics"><input type="checkbox" value="" id="toggleTouch"> Touch</label>
+                <label class="test-label" title="Forces compact metrics"><input type="checkbox" value="" id="toggleCompact"> Compact</label>
+            </fieldset>
+            <fieldset class="test-fieldset">
+                <legend>Toggles</legend>
+                <label class="test-label"><input type="checkbox" value="" id="toggleBg"> BG Color</label>
+                <label class="test-label"><input type="checkbox" value="" id="toggleTheme"> Theme</label>
+                <label class="test-label"><input type="checkbox" value="" id="toggleNormalize"> Normalize</label>
             </fieldset>
         </form>
         <div class="status">
