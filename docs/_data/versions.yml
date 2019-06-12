@@ -142,7 +142,6 @@ textarea:
   since: 1.0.0
   updated: 1.4.1
 
-
 icon:
   since: 1.0.0
   updated:
@@ -238,11 +237,6 @@ tabs:
 token:
   since: 1.3.0
   updated:
-
-toolbar:
-  since: 1.0.0
-  updated:
-  remove: 1.4.0
 
 tile:
   since: 1.0.0
