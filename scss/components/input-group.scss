@@ -135,7 +135,11 @@ $block: #{$fd-namespace}-input-group;
         &--button {
           padding: 0;
           [class*="fd-button"] {
-            border-radius: 0;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            background-color: white;
           }
         }
         &--before {

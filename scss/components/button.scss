@@ -78,7 +78,11 @@ a.#{$block} {
       }
       &:empty {
         padding: 0;
-        &::before,
+        &::before {
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 1px;
+        }
         &::after {
           margin-right: 0;
           margin-left: 0;
@@ -223,6 +227,8 @@ a.#{$block} {
   }
   //.fd-button--light
   &--light {
+    --fd-forms-height: 34px;
+    --fd-forms-height-compact: 26px;
     --fd-button-border-color: transparent;
     --fd-button-background-color: transparent;
     @include fd-var-color("border-color", transparent);
@@ -232,6 +238,7 @@ a.#{$block} {
       --fd-button-color: var(--fd-color-action-1);
       @include fd-var-color("color", fd-color("action", 1));
       @include fd-var-color("background-color", fd-color("neutral", 1));
+      @include fd-var-color("border-color", fd-color-state("hover","action"),--fd-color-action-hover);
       @include fd-disabled() {
         --fd-button-background-color: transparent;
         --fd-button-color: var(--fd-color-action-1);
