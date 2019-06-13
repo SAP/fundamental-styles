@@ -100,6 +100,8 @@ $block: #{$fd-namespace}-side-nav;
     }
 
     &__link {
+        display: flex;
+        align-items: center;
 
         //STATES *******************************************
         &.has-child {
