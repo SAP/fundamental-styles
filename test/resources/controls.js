@@ -89,6 +89,40 @@
         }
     });
 
+    const uglyThemeCss = "static/theme-ugly.css";
+    const toggleTheme = document.getElementById("toggleTheme");
+    const toggleThemeState = localStorage.getItem('toggleThemeState');
+    if (toggleThemeState == "true") {
+        toggleTheme.checked = true;
+        toggleStylesheet(uglyThemeCss, true);
+    }
+    toggleTheme.addEventListener('change', function () {
+        if (this.checked) {
+            toggleStylesheet(uglyThemeCss, true);
+            localStorage.setItem("toggleThemeState", true);
+        } else {
+            toggleStylesheet(uglyThemeCss, false);
+            localStorage.setItem("toggleThemeState", false);
+        }
+    });
+
+    const normalizeCss = "normalize/normalize.css";
+    const toggleNormalize = document.getElementById("toggleNormalize");
+    const toggleNormalizeState = localStorage.getItem('toggleNormalizeState');
+    if (toggleNormalizeState == "true") {
+        toggleNormalize.checked = true;
+        toggleStylesheet(toggleNormalize, true);
+    }
+    toggleNormalize.addEventListener('change', function () {
+        if (this.checked) {
+            toggleStylesheet(normalizeCss, true);
+            localStorage.setItem("toggleNormalizeState", true);
+        } else {
+            toggleStylesheet(normalizeCss, false);
+            localStorage.setItem("toggleNormalizeState", false);
+        }
+    });
+
     const toggleDir = document.getElementById("toggleDir");
     const toggleDirState = localStorage.getItem('toggleDir');
     if (toggleDirState == "true") {

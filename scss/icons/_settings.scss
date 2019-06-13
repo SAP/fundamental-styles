@@ -4,10 +4,10 @@
 //sizes
 $fd-icons-sizes: (
     "default": $fd-font-size, //14px
-    "s": #{12/$fd-type--base}rem, //12px
-    "m": #{16/$fd-type--base}rem, //16px
-    "l": #{20/$fd-type--base}rem, //20px
-    "xl": #{24/$fd-type--base}rem //24px
+    "s": 12px,
+    "m": 16px,
+    "l": 20px,
+    "xl": 24px
 ) !default;
 
 //icon map

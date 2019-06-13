@@ -10,6 +10,7 @@ const TEMPLATE_DIRECTORY = path.join(__dirname, 'templates');
 const MODULES_DIRECTORY = path.join(__dirname, 'modules');
 const PUBLIC_DIRECTORY = path.join(__dirname, 'public');
 const SASS_DIRECTORY = path.join(__dirname, '..', 'scss');
+const COMPONENTS_DIRECTORY = path.join(__dirname, '..', 'components');
 
 const GLOBALS = {
     namespace: 'fd'
@@ -33,6 +34,17 @@ env.addFilter('sass_to_css', (sassFile = "app.scss") => {
         }).css.toString();
     } catch (err) {
         signale.error(`sassToCss: ${err.message}`);
+    }
+});
+// convert SASS to CSS from the lib source (for self-contained component styles)
+env.addFilter('component_css', (sassFile) => {
+    try {
+        const scss_filename = `${COMPONENTS_DIRECTORY}/${sassFile}`;
+        return sass.renderSync({
+            file: scss_filename
+        }).css.toString();
+    } catch (err) {
+        signale.error(`component_css: ${err.message}`);
     }
 });
 // convert an array to classes
@@ -164,6 +176,7 @@ app.set('view engine', 'njk');
 
 app.use(router);
 app.use('/static', express.static(path.join(__dirname, 'resources')));
+app.use('/normalize', express.static(path.join(__dirname, '..', 'node_modules', 'normalize.css')));
 
 //load font files
 router.get('/(*/)?FundamentalIcons:key', (req, res) => {
