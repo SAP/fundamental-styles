@@ -101,7 +101,6 @@ $block: #{$fd-namespace}-side-nav;
     }
 
     &__link {
-        
         //STATES *******************************************
         &.has-child {
             background-image: url(#{$fd-down-arrow-icon});
