@@ -74,9 +74,10 @@ $block: #{$fd-namespace}-side-nav;
 
     &__link,
     &__sublink {
+        display: flex;
+        align-items: center;
         padding: $fd-side-nav-link-padding;
         color: $fd-side-nav-link-color;
-        display: block;
         @include fd-type("0", "normal");
 
         //STATES *******************************************
@@ -100,9 +101,7 @@ $block: #{$fd-namespace}-side-nav;
     }
 
     &__link {
-        display: flex;
-        align-items: center;
-
+        
         //STATES *******************************************
         &.has-child {
             background-image: url(#{$fd-down-arrow-icon});
