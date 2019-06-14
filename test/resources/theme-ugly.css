@@ -1,0 +1,16 @@
+:root {
+    --fd-color-action-1: magenta;
+    --fd-color-action-2: purple;
+    --fd-color-background-2: palegoldenrod;
+    --fd-color-action-hover: lime;
+    --fd-color-action-selected: powderblue;
+    --fd-color-status-1: #333;
+    --fd-color-status-2: #666;
+    --fd-color-status-3: #999;
+    --fd-color-status-4: #ccc;
+
+    --fd-forms-height: 50px;
+    --fd-forms-height-compact: 25px;
+    --fd-button-line-height: 50px;
+    --fd-button-line-height-compact: 25px;
+}

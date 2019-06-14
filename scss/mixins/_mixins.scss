@@ -5,6 +5,12 @@
     line-height: $fd-line-height;
     @include fd-var-color("color", $fd-color, --fd-color-text-1);
     font-family: $fd-font-family;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    &::before,
+    &::after {
+        box-sizing: inherit;
+    }
 }
 @mixin fd-reset-spacing {
   padding: 0;
@@ -140,7 +146,6 @@
   display: inline-block;
   margin: 0;
   padding: 0;
-  font-smoothing: antialiased; /* stylelint-disable-line property-no-unknown */
   appearance: none;
   outline: 0;
   border: 0;

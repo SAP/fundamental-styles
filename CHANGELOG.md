@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.8"></a>
+# [0.2.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.7...v0.2.0-rc.8) (2019-06-14)
+
+
+### Features
+
+* Added two additional type sizes ([#76](https://github.com/SAP/fundamental-styles/issues/76)) ([e91dcae](https://github.com/SAP/fundamental-styles/commit/e91dcae))
+
+
+
+<a name="0.2.0-rc.7"></a>
+# [0.2.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.6...v0.2.0-rc.7) (2019-06-13)
+
+
+
+<a name="0.2.0-rc.6"></a>
+# [0.2.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.5...v0.2.0-rc.6) (2019-06-12)
+
+
+
+<a name="0.2.0-rc.5"></a>
+# [0.2.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.4...v0.2.0-rc.5) (2019-06-12)
+
+
+### Bug Fixes
+
+* Self-contained styles for button ([#60](https://github.com/SAP/fundamental-styles/issues/60)) ([e94b026](https://github.com/SAP/fundamental-styles/commit/e94b026))
+
+
+
 <a name="0.2.0-rc.4"></a>
 # [0.2.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.3...v0.2.0-rc.4) (2019-06-11)
 
