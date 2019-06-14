@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.8"></a>
+# [0.2.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.7...v0.2.0-rc.8) (2019-06-14)
+
+
+### Features
+
+* Added two additional type sizes ([#76](https://github.com/SAP/fundamental-styles/issues/76)) ([e91dcae](https://github.com/SAP/fundamental-styles/commit/e91dcae))
+
+
+
 <a name="0.2.0-rc.7"></a>
 # [0.2.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.6...v0.2.0-rc.7) (2019-06-13)
 
