@@ -10,9 +10,9 @@
   }
   @if $var {
     @if $important {
-      #{$property}: var(#{$var}) !important;
+      #{$property}: var(#{$var}, #{$value}) !important;
     } @else {
-      #{$property}: var(#{$var});
+      #{$property}: var(#{$var}, #{$value});
     }
   }
 }
@@ -21,6 +21,6 @@
     #{$property}: #{$value};
   }
   @if $var {
-    #{$property}: var(#{$var});
+    #{$property}: var(#{$var}, #{$value});
   }
 }

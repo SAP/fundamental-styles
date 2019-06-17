@@ -27,7 +27,7 @@
     @if $fd-support-css-var-fallback {
       box-shadow: 0 0 0 1px $shadow-value;
     }
-    box-shadow: 0 0 0 1px var(#{$shadow-var});
+    box-shadow: 0 0 0 1px var(#{$shadow-var}, #{$shadow-value});
     @content;
   }
 }
