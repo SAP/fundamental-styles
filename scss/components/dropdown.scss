@@ -130,7 +130,7 @@ $block: #{$fd-namespace}-dropdown;
             @if $fd-support-css-var-fallback {
               box-shadow: 0 0 0 1px fd-color-state("hover", "action");
             }
-            box-shadow: 0 0 0 1px var(--fd-color-action-hover);
+            box-shadow: none;
         }
     }
     &__control.fd-button--standard {
