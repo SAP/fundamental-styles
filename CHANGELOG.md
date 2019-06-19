@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.10"></a>
+# [0.2.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.9...v0.2.0-rc.10) (2019-06-19)
+
+
+### Bug Fixes
+
+* popover button alignment in action bar ([#96](https://github.com/SAP/fundamental-styles/issues/96)) ([4b152c0](https://github.com/SAP/fundamental-styles/commit/4b152c0))
+
+
+### Features
+
+* removed deprecated component toolbar ([#78](https://github.com/SAP/fundamental-styles/issues/78)) ([ad91c85](https://github.com/SAP/fundamental-styles/commit/ad91c85)), closes [#63](https://github.com/SAP/fundamental-styles/issues/63) [#63](https://github.com/SAP/fundamental-styles/issues/63) [#63](https://github.com/SAP/fundamental-styles/issues/63)
+
+
+
 <a name="0.2.0-rc.9"></a>
 # [0.2.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.8...v0.2.0-rc.9) (2019-06-14)
 
