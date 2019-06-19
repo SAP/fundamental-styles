@@ -59,6 +59,8 @@ $fd-type: map-merge((
   "4": 24px 32/24 16px, //23/32 16
   "5": 36px 40/36 20px, //36/40 20
   "6": 48px 52/48 24px, //48/52 24
+  "7": 72px 84/72 32px, //84/72 32
+  "8": 96px 105/96 36px, //105/96 36
 ), $fd-type);
 
 $fd-font-size: #{$fd-type--base}px !default;

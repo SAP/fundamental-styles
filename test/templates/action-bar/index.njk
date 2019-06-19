@@ -29,6 +29,47 @@
 }}{%- endset %}
 
 
+{%- set popoverBtn %}
+    {%- set _id = utils.id() %}
+    {%- macro sample_control(properties={}) -%}
+        <button class="fd-button fd-popover__control{{ modifier.control | modifier('popover__control') }}" aria-label="label" aria-expanded="false" aria-haspopup="true" aria-controls="{{ properties.id }}">Popover</button>
+    {%- endmacro %}
+    {{ popover(properties={
+            id: _id,
+            control: sample_control(properties={id: _id}),
+            body: menu(properties={
+            items: [
+                { "label": "Option 1" },
+                { "label": "Option 2" },
+                { "label": "Option 3" },
+                { "label": "Option 4" }
+                ]
+            })
+        }, modifier={ block: ['left']})
+    }}
+{%- endset %}
+
+{%- set popoverBtn2 %}
+    {%- set _id = utils.id() %}
+    {%- macro sample_control(properties={}) -%}
+        <button class="fd-button fd-popover__control{{ modifier.control | modifier('popover__control') }}" aria-label="label" aria-expanded="false" aria-haspopup="true" aria-controls="{{ properties.id }}">Popover</button>
+    {%- endmacro %}
+    {{ popover(properties={
+            id: _id,
+            control: sample_control(properties={id: _id}),
+            body: menu(properties={
+            items: [
+                { "label": "Option 1" },
+                { "label": "Option 2" },
+                { "label": "Option 3" },
+                { "label": "Option 4" }
+                ]
+            })
+        }, modifier={ block: ['left']})
+    }}
+{%- endset %}
+
+
 {%- set contextmenu %}
     {%- set _id = utils.id() %}
 
@@ -207,7 +248,6 @@
         aria={}
     )
 }}
-</div>
 
 {% endset %}
 {{ format(example) }}
@@ -234,6 +274,50 @@
     )
 }}
 </div>
+{% endset %}
+{{ format(example) }}
+
+<h2>Action bar with Popover Button</h2>
+{% set example %}
+{{  action_bar(
+        properties={
+            title: "Action Bar with buttons with popover",
+            actions: {
+                properties: {
+                    items: [popoverBtn]
+                }
+            },
+            back_button: true
+        },
+        modifier={
+            block: []
+        },
+        state={},
+        aria={}
+    )
+}}
+{% endset %}
+{{ format(example) }}
+
+<h2>Action bar with Button + Popover Button</h2>
+{% set example %}
+{{  action_bar(
+        properties={
+            title: "Action Bar with buttons with button + popover",
+            actions: {
+                properties: {
+                    items: [primarybtn, popoverBtn2]
+                }
+            },
+            back_button: true
+        },
+        modifier={
+            block: []
+        },
+        state={},
+        aria={}
+    )
+}}
 {% endset %}
 {{ format(example) }}
 
