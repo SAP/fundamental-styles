@@ -82,8 +82,11 @@ a.#{$block} {
           margin-left: 0;
         }
       }
-      &:focus[aria-disabled=true] {
-        box-shadow: none;
+      &:focus {
+        &.is-disabled,
+        &[aria-disabled="true"] {
+          box-shadow: none;
+        }
       }
       //states
       @include fd-focus();
