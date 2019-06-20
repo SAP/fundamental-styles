@@ -236,7 +236,8 @@ a.#{$block} {
       --fd-button-color: var(--fd-color-action-1);
       @include fd-var-color("color", fd-color("action", 1), --fd-button-color);
       @include fd-var-color("background-color", fd-color("neutral", 1), --fd-button-background-color);
-      @include fd-var-color("border-color", fd-color-state("hover","action"),--fd-color-action-hover);
+      box-shadow: 0 0 0 1px var(--fd-color-action-hover,#085CAF);
+      z-index: 1;
       @include fd-disabled() {
         --fd-button-background-color: transparent;
         --fd-button-color: var(--fd-color-action-1);
@@ -330,6 +331,10 @@ a.#{$block} {
         @include fd-var-color("color", fd-color("action", 2), --fd-button-color);
         @include fd-var-color("background-color", fd-color("status", 2), --fd-button-background-color);
       }
+    }
+    &[aria-expanded="true"] {
+      box-shadow: 0 0 0 1px var(--fd-color-action-3, #0854A0);
+      z-index: 1;
     }
   }
 

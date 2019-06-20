@@ -134,15 +134,14 @@ $block: #{$fd-namespace}-input-group;
         }
         &--button {
           padding: 0;
-          @include fd-hover() {
-            @include fd-var-color("border-color", fd-color("action", 1), --fd-button-border-color);
-          }
           [class*="fd-button"] {
             border-top-right-radius: 3px;
             border-bottom-right-radius: 3px;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
-            border: none;
+            &:focus {
+                z-index: 1;
+            }
           }
         }
         &--before {
