@@ -333,6 +333,10 @@ a.#{$block} {
       }
     }
     &[aria-expanded="true"] {
+      --fd-button-background-color: var(--fd-color-action-selected);
+      --fd-button-color: var(--fd-color-action-2);
+      @include fd-var-color("color", fd-color("action", 2), --fd-button-color);
+      @include fd-var-color("background-color", fd-color-state("selected","action"), --fd-button-background-color);
       box-shadow: 0 0 0 1px var(--fd-color-action-3, #0854A0);
       z-index: 1;
     }
