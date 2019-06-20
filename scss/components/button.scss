@@ -612,24 +612,5 @@ a.#{$block} {
         }
       }
     }
-    //DEPRECATE --toolbar
-    &--toolbar {
-      --fd-button-color: var(--fd-color-text-2);
-      --fd-button-border-color: var(--fd-color-neutral-3);
-      --fd-button-background-color: var(--fd-color-neutral-1);
-      @include fd-focus(--fd-color-neutral-3);
-      @include fd-active-pressed-selected() {
-        --fd-button-background-color: var(--fd-color-action-selected);
-        --fd-button-color: var(--fd-color-action-2);
-      }
-      @include fd-hover() {
-        --fd-button-background-color: var(--fd-color-action-hover);
-        --fd-button-color: var(--fd-color-action-2);
-        @include fd-disabled() {
-          --fd-button-background-color: var(--fd-color-neutral-3);
-          --fd-button-color: var(--fd-color-text-2);
-        }
-      }
-    }
 }
 /* stylelint-enable */
