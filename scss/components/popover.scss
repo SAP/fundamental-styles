@@ -43,9 +43,10 @@ $block: #{$fd-namespace}-popover;
       border-radius: $fd-border-radius;
       @include fd-var-color("background-color", $fd-popover-background-color, --fd-color-background-2);
       @if $fd-support-css-var-fallback {
-        box-shadow: 0 5px 20px 0 fd-color("neutral", 3), 0 2px 8px 0 fd-color("neutral", 2);
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.05);
       }
-      box-shadow: 0 5px 20px 0 var(--fd-color-neutral-3), 0 2px 8px 0 var(--fd-color-neutral-2);
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.05);
+      border-color: var(--fd-color-neutral-3);
       opacity: 1;
       visibility: visible;
       transition: all $fd-popover-transition-params;
