@@ -150,6 +150,8 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
     height: fd-space(13);
     display: flex;
     align-items: center;
+    width: 276px;
+    margin-left: -12px;
   }
   &__action {
     [class*="sap-icon"] {
@@ -166,6 +168,7 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
     flex: 1;
     justify-content: space-between;
     align-items: center;
+    padding: 12px;
   }
 
   //TABLE styles
