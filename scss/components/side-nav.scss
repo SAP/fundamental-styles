@@ -25,7 +25,7 @@ $block: #{$fd-namespace}-side-nav;
     $fd-side-nav-hover-background-color: fd-color("neutral", 1);
     $fd-side-nav-link-color: fd-color("text", 2);
     $fd-side-nav-max-width: 249px;
-    $fd-side-nav-link-padding: fd-space(2.5) fd-space(5);
+    $fd-side-nav-link-padding: fd-space(2.5) fd-space(7.5) fd-space(2.5) fd-space(5);
     $fd-side-nav-title-padding: fd-space(2) fd-space(5);
     $fd-side-nav-icon-right-padding: fd-space(2.5);
     $fd-side-nav-link-disabled-color: fd-color("text", 3);
@@ -80,7 +80,28 @@ $block: #{$fd-namespace}-side-nav;
         color: $fd-side-nav-link-color;
         @include fd-type("0", "normal");
 
+        .fd-side-nav__link-icon {
+            line-height: 20px;
+
+            &--s {
+                line-height: 19px;
+            }
+
+            &--m {
+                line-height: 20px;
+            }
+
+            &--l {
+                line-height: 24px;
+            }
+
+            &--xl {
+                line-height: 28px;
+            }
+        }
+
         //STATES *******************************************
+
         &:hover {
             background-color: $fd-side-nav-hover-background-color;
         }
@@ -105,7 +126,7 @@ $block: #{$fd-namespace}-side-nav;
         &.has-child {
             background-image: url(#{$fd-down-arrow-icon});
             background-repeat: no-repeat;
-            background-position: left calc(100% - 10px) top 15px;
+            background-position: left calc(100% - 14px) top 15px;
         }
 
         &.is-expanded,
