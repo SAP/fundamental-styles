@@ -214,6 +214,7 @@ $block: #{$fd-namespace}-input-group;
             background-size: fd-space(5);
             position: relative;
             left: -(fd-space(11));
+            z-index: map-get($fd-z-index-levels, "second");
         }
     }
 }
