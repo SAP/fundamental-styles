@@ -135,8 +135,8 @@ $block: #{$fd-namespace}-input-group;
         &--button {
           padding: 0;
           [class*="fd-button"] {
-            border-top-right-radius: 3px;
-            border-bottom-right-radius: 3px;
+            border-top-right-radius: $fd-border-radius;
+            border-bottom-right-radius: $fd-border-radius;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
             &:focus {

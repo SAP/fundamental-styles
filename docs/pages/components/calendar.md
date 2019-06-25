@@ -175,225 +175,227 @@ These are dynamic classes which are affected by user selections
 ## Example: Dates, Months, Years
 
 {% capture default-calendar-dates-months-years %}
-<div class="fd-calendar">
-	<header class="fd-calendar__header">
-	<div class="fd-calendar__navigation">
-		<div class="fd-calendar__action">
-			<button class="fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="false"></button>
+<div style="width: 292px">
+	<div class="fd-calendar">
+		<header class="fd-calendar__header">
+		<div class="fd-calendar__navigation">
+			<div class="fd-calendar__action">
+				<button class="fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="false"></button>
+			</div>
+			<div class="fd-calendar__action">
+				<button class="fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="crM8l491">February</button>
+			</div>
+			<div class="fd-calendar__action">
+				<button class="fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="FTXrD591">2018</button>
+			</div>
+			<div class="fd-calendar__action">
+				<button class="fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-right" aria-label="Next"></button>
+			</div>
 		</div>
-		<div class="fd-calendar__action">
-  			<button class="fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="crM8l491">February</button>
-		</div>
-		<div class="fd-calendar__action">
-			<button class="fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="FTXrD591">2018</button>
-		</div>
-		<div class="fd-calendar__action">
-			<button class="fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-right" aria-label="Next"></button>
-		</div>
-	</div>
-	</header>
-	<div class="fd-calendar__content">
-		<div class="fd-calendar__dates" id="XVXTR263" aria-hidden="false">
-			<table class="fd-calendar__table" role="grid">
-			<thead class="fd-calendar__group">
-			<tr class="fd-calendar__row">
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">S</span>
-				</th>
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">M</span>
-				</th>
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">T</span>
-				</th>
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">W</span>
-				</th>
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">T</span>
-				</th>
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">F</span>
-				</th>
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">S</span>
-				</th>
-			</tr>
-			</thead>
-			<tbody class="fd-calendar__group">
-			<tr class="fd-calendar__row">
-				<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
-					<span class="fd-calendar__text">30</span>
-				</td>
-				<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
-					<span class="fd-calendar__text">31</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">1</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">2</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">3</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">4</span>
-				</td>
-				<td class="fd-calendar__item is-selected is-selected-range-first" role="gridcell">
-					<span class="fd-calendar__text">5</span>
-				</td>
-			</tr>
-			<tr class="fd-calendar__row">
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">6</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">7</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">8</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">9</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">10</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">11</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">12</span>
-				</td>
-			</tr>
-			<tr class="fd-calendar__row">
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">13</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">14</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">15</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">16</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">17</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">18</span>
-				</td>
-				<td class="fd-calendar__item fd-calendar__item--current is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">19</span>
-				</td>
-			</tr>
-			<tr class="fd-calendar__row">
-				<td class="fd-calendar__item is-selected is-selected-range-last" role="gridcell">
-					<span class="fd-calendar__text">20</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">21</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">22</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">23</span>
-				</td>
-				<td class="fd-calendar__item is-blocked" role="gridcell">
-					<span class="fd-calendar__text">24</span>
-				</td>
-				<td class="fd-calendar__item is-blocked" role="gridcell">
-					<span class="fd-calendar__text">25</span>
-				</td>
-				<td class="fd-calendar__item is-blocked" role="gridcell">
-					<span class="fd-calendar__text">26</span>
-				</td>
-			</tr>
-			<tr class="fd-calendar__row">
-				<td class="fd-calendar__item is-blocked" role="gridcell">
-					<span class="fd-calendar__text">27</span>
-				</td>
-				<td class="fd-calendar__item is-blocked" role="gridcell">
-					<span class="fd-calendar__text">28</span>
-				</td>
-				<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
-					<span class="fd-calendar__text">1</span>
-				</td>
-				<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
-					<span class="fd-calendar__text">2</span>
-				</td>
-				<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
-					<span class="fd-calendar__text">3</span>
-				</td>
-				<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
-					<span class="fd-calendar__text">4</span>
-				</td>
-				<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
-					<span class="fd-calendar__text">5</span>
-				</td>
-			</tr>
-			</tbody>
-			</table>
-		</div>
-		<div class="fd-calendar__months" id="crM8l491" aria-hidden="true">
-			<ul class="fd-calendar__list">
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Jan.</span></li>
-				<li class="fd-calendar__item fd-calendar__item--current">
-				<span class="fd-calendar__text">Feb.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Mar.</span></li>
-				<li class="fd-calendar__item is-selected">
-				<span class="fd-calendar__text">Apr.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">May</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Jun.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Jul.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Aug.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Sep.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Oct.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Nov.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Dec.</span></li>
-			</ul>
-		</div>
-		<div class="fd-calendar__years" aria-hidden="true" id="FTXrD591">
-			<ul class="fd-calendar__list">
-				<li class="fd-calendar__item fd-calendar__item--current">
-				<span class="fd-calendar__text">2018</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2019</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2020</span></li>
-				<li class="fd-calendar__item is-selected">
-				<span class="fd-calendar__text">2021</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2022</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2023</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2024</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2025</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2026</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2027</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2028</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2029</span></li>
-			</ul>
+		</header>
+		<div class="fd-calendar__content">
+			<div class="fd-calendar__dates" id="XVXTR263" aria-hidden="false">
+				<table class="fd-calendar__table" role="grid">
+				<thead class="fd-calendar__group">
+				<tr class="fd-calendar__row">
+					<th class="fd-calendar__column-header">
+						<span class="fd-calendar__day-of-week">S</span>
+					</th>
+					<th class="fd-calendar__column-header">
+						<span class="fd-calendar__day-of-week">M</span>
+					</th>
+					<th class="fd-calendar__column-header">
+						<span class="fd-calendar__day-of-week">T</span>
+					</th>
+					<th class="fd-calendar__column-header">
+						<span class="fd-calendar__day-of-week">W</span>
+					</th>
+					<th class="fd-calendar__column-header">
+						<span class="fd-calendar__day-of-week">T</span>
+					</th>
+					<th class="fd-calendar__column-header">
+						<span class="fd-calendar__day-of-week">F</span>
+					</th>
+					<th class="fd-calendar__column-header">
+						<span class="fd-calendar__day-of-week">S</span>
+					</th>
+				</tr>
+				</thead>
+				<tbody class="fd-calendar__group">
+				<tr class="fd-calendar__row">
+					<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
+						<span class="fd-calendar__text">30</span>
+					</td>
+					<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
+						<span class="fd-calendar__text">31</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">1</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">2</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">3</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">4</span>
+					</td>
+					<td class="fd-calendar__item is-selected is-selected-range-first" role="gridcell">
+						<span class="fd-calendar__text">5</span>
+					</td>
+				</tr>
+				<tr class="fd-calendar__row">
+					<td class="fd-calendar__item is-selected-range" role="gridcell">
+						<span class="fd-calendar__text">6</span>
+					</td>
+					<td class="fd-calendar__item is-selected-range" role="gridcell">
+						<span class="fd-calendar__text">7</span>
+					</td>
+					<td class="fd-calendar__item is-selected-range" role="gridcell">
+						<span class="fd-calendar__text">8</span>
+					</td>
+					<td class="fd-calendar__item is-selected-range" role="gridcell">
+						<span class="fd-calendar__text">9</span>
+					</td>
+					<td class="fd-calendar__item is-selected-range" role="gridcell">
+						<span class="fd-calendar__text">10</span>
+					</td>
+					<td class="fd-calendar__item is-selected-range" role="gridcell">
+						<span class="fd-calendar__text">11</span>
+					</td>
+					<td class="fd-calendar__item is-selected-range" role="gridcell">
+						<span class="fd-calendar__text">12</span>
+					</td>
+				</tr>
+				<tr class="fd-calendar__row">
+					<td class="fd-calendar__item is-selected-range" role="gridcell">
+						<span class="fd-calendar__text">13</span>
+					</td>
+					<td class="fd-calendar__item is-selected-range" role="gridcell">
+						<span class="fd-calendar__text">14</span>
+					</td>
+					<td class="fd-calendar__item is-selected-range" role="gridcell">
+						<span class="fd-calendar__text">15</span>
+					</td>
+					<td class="fd-calendar__item is-selected-range" role="gridcell">
+						<span class="fd-calendar__text">16</span>
+					</td>
+					<td class="fd-calendar__item is-selected-range" role="gridcell">
+						<span class="fd-calendar__text">17</span>
+					</td>
+					<td class="fd-calendar__item is-selected-range" role="gridcell">
+						<span class="fd-calendar__text">18</span>
+					</td>
+					<td class="fd-calendar__item fd-calendar__item--current is-selected-range" role="gridcell">
+						<span class="fd-calendar__text">19</span>
+					</td>
+				</tr>
+				<tr class="fd-calendar__row">
+					<td class="fd-calendar__item is-selected is-selected-range-last" role="gridcell">
+						<span class="fd-calendar__text">20</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">21</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">22</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">23</span>
+					</td>
+					<td class="fd-calendar__item is-blocked" role="gridcell">
+						<span class="fd-calendar__text">24</span>
+					</td>
+					<td class="fd-calendar__item is-blocked" role="gridcell">
+						<span class="fd-calendar__text">25</span>
+					</td>
+					<td class="fd-calendar__item is-blocked" role="gridcell">
+						<span class="fd-calendar__text">26</span>
+					</td>
+				</tr>
+				<tr class="fd-calendar__row">
+					<td class="fd-calendar__item is-blocked" role="gridcell">
+						<span class="fd-calendar__text">27</span>
+					</td>
+					<td class="fd-calendar__item is-blocked" role="gridcell">
+						<span class="fd-calendar__text">28</span>
+					</td>
+					<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
+						<span class="fd-calendar__text">1</span>
+					</td>
+					<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
+						<span class="fd-calendar__text">2</span>
+					</td>
+					<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
+						<span class="fd-calendar__text">3</span>
+					</td>
+					<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
+						<span class="fd-calendar__text">4</span>
+					</td>
+					<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
+						<span class="fd-calendar__text">5</span>
+					</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+			<div class="fd-calendar__months" id="crM8l491" aria-hidden="true">
+				<ul class="fd-calendar__list">
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">Jan.</span></li>
+					<li class="fd-calendar__item fd-calendar__item--current">
+					<span class="fd-calendar__text">Feb.</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">Mar.</span></li>
+					<li class="fd-calendar__item is-selected">
+					<span class="fd-calendar__text">Apr.</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">May</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">Jun.</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">Jul.</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">Aug.</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">Sep.</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">Oct.</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">Nov.</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">Dec.</span></li>
+				</ul>
+			</div>
+			<div class="fd-calendar__years" aria-hidden="true" id="FTXrD591">
+				<ul class="fd-calendar__list">
+					<li class="fd-calendar__item fd-calendar__item--current">
+					<span class="fd-calendar__text">2018</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2019</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2020</span></li>
+					<li class="fd-calendar__item is-selected">
+					<span class="fd-calendar__text">2021</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2022</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2023</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2024</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2025</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2026</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2027</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2028</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2029</span></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
@@ -404,169 +406,171 @@ These are dynamic classes which are affected by user selections
 The previous and next controls are standard buttons with all available states. For example, add disabled or <code>aria-disabled="true"</code> to gray out the previous button when past dates are not allowed.
 
 {% capture default-calendar-dates %}
-<div class="fd-calendar">
-	<header class="fd-calendar__header">
-	<div class="fd-calendar__navigation">
-		<div class="fd-calendar__action">
-			<button class="fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
+<div style="width: 292px">
+	<div class="fd-calendar">
+		<header class="fd-calendar__header">
+		<div class="fd-calendar__navigation">
+			<div class="fd-calendar__action">
+				<button class="fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
+			</div>
+			<div class="fd-calendar__action">
+				<button class="fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="xB1D3835">September</button>
+			</div>
+			<div class="fd-calendar__action">
+				<button class="fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="8bZhe525">2018</button>
+			</div>
+			<div class="fd-calendar__action">
+				<button class="fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-right" aria-label="Next"></button>
+			</div>
 		</div>
-		<div class="fd-calendar__action">
-			<button class="fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="xB1D3835">September</button>
-		</div>
-		<div class="fd-calendar__action">
-			<button class="fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="8bZhe525">2018</button>
-		</div>
-		<div class="fd-calendar__action">
-			<button class="fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-right" aria-label="Next"></button>
-		</div>
-	</div>
-	</header>
-	<div class="fd-calendar__content">
-		<div class="fd-calendar__dates" id="TgBx9346" aria-hidden="false">
-			<table class="fd-calendar__table" role="grid">
-			<thead class="fd-calendar__group">
-			<tr class="fd-calendar__row">
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">S</span>
-				</th>
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">M</span>
-				</th>
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">T</span>
-				</th>
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">W</span>
-				</th>
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">T</span>
-				</th>
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">F</span>
-				</th>
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">S</span>
-				</th>
-			</tr>
-			</thead>
-			<tbody class="fd-calendar__group">
-			<tr class="fd-calendar__row">
-				<td class="fd-calendar__item fd-calendar__item--other-month is-disabled" role="gridcell">
-					<span class="fd-calendar__text">29</span>
-				</td>
-				<td class="fd-calendar__item fd-calendar__item--other-month is-disabled" role="gridcell">
-					<span class="fd-calendar__text">30</span>
-				</td>
-				<td class="fd-calendar__item fd-calendar__item--other-month is-disabled" role="gridcell">
-					<span class="fd-calendar__text">31</span>
-				</td>
-				<td class="fd-calendar__item is-disabled" role="gridcell">
-					<span class="fd-calendar__text">1</span>
-				</td>
-				<td class="fd-calendar__item is-disabled" role="gridcell">
-					<span class="fd-calendar__text">2</span>
-				</td>
-				<td class="fd-calendar__item is-disabled" role="gridcell">
-					<span class="fd-calendar__text">3</span>
-				</td>
-				<td class="fd-calendar__item is-disabled" role="gridcell">
-					<span class="fd-calendar__text">4</span>
-				</td>
-			</tr>
-			<tr class="fd-calendar__row">
-				<td class="fd-calendar__item is-disabled" role="gridcell">
-					<span class="fd-calendar__text">5</span>
-				</td>
-				<td class="fd-calendar__item fd-calendar__item--current" role="gridcell">
-					<span class="fd-calendar__text">6</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">7</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">8</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">9</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">10</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">11</span>
-				</td>
-			</tr>
-			<tr class="fd-calendar__row">
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">12</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">13</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">14</span>
-				</td>
-				<td class="fd-calendar__item is-selected" role="gridcell">
-					<span class="fd-calendar__text">15</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">16</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">17</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">18</span>
-				</td>
-			</tr>
-			<tr class="fd-calendar__row">
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">19</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">20</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">21</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">22</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">23</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">24</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">25</span>
-				</td>
-			</tr>
-			<tr class="fd-calendar__row">
-				<td class="fd-calendar__item is-blocked" role="gridcell">
-					<span class="fd-calendar__text">26</span>
-				</td>
-				<td class="fd-calendar__item is-blocked" role="gridcell">
-					<span class="fd-calendar__text">27</span>
-				</td>
-				<td class="fd-calendar__item is-blocked" role="gridcell">
-					<span class="fd-calendar__text">28</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">29</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">30</span>
-				</td>
-				<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
-					<span class="fd-calendar__text">1</span>
-				</td>
-				<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
-					<span class="fd-calendar__text">2</span>
-				</td>
-			</tr>
-			</tbody>
-			</table>
+		</header>
+		<div class="fd-calendar__content">
+			<div class="fd-calendar__dates" id="TgBx9346" aria-hidden="false">
+				<table class="fd-calendar__table" role="grid">
+				<thead class="fd-calendar__group">
+				<tr class="fd-calendar__row">
+					<th class="fd-calendar__column-header">
+						<span class="fd-calendar__day-of-week">S</span>
+					</th>
+					<th class="fd-calendar__column-header">
+						<span class="fd-calendar__day-of-week">M</span>
+					</th>
+					<th class="fd-calendar__column-header">
+						<span class="fd-calendar__day-of-week">T</span>
+					</th>
+					<th class="fd-calendar__column-header">
+						<span class="fd-calendar__day-of-week">W</span>
+					</th>
+					<th class="fd-calendar__column-header">
+						<span class="fd-calendar__day-of-week">T</span>
+					</th>
+					<th class="fd-calendar__column-header">
+						<span class="fd-calendar__day-of-week">F</span>
+					</th>
+					<th class="fd-calendar__column-header">
+						<span class="fd-calendar__day-of-week">S</span>
+					</th>
+				</tr>
+				</thead>
+				<tbody class="fd-calendar__group">
+				<tr class="fd-calendar__row">
+					<td class="fd-calendar__item fd-calendar__item--other-month is-disabled" role="gridcell">
+						<span class="fd-calendar__text">29</span>
+					</td>
+					<td class="fd-calendar__item fd-calendar__item--other-month is-disabled" role="gridcell">
+						<span class="fd-calendar__text">30</span>
+					</td>
+					<td class="fd-calendar__item fd-calendar__item--other-month is-disabled" role="gridcell">
+						<span class="fd-calendar__text">31</span>
+					</td>
+					<td class="fd-calendar__item is-disabled" role="gridcell">
+						<span class="fd-calendar__text">1</span>
+					</td>
+					<td class="fd-calendar__item is-disabled" role="gridcell">
+						<span class="fd-calendar__text">2</span>
+					</td>
+					<td class="fd-calendar__item is-disabled" role="gridcell">
+						<span class="fd-calendar__text">3</span>
+					</td>
+					<td class="fd-calendar__item is-disabled" role="gridcell">
+						<span class="fd-calendar__text">4</span>
+					</td>
+				</tr>
+				<tr class="fd-calendar__row">
+					<td class="fd-calendar__item is-disabled" role="gridcell">
+						<span class="fd-calendar__text">5</span>
+					</td>
+					<td class="fd-calendar__item fd-calendar__item--current" role="gridcell">
+						<span class="fd-calendar__text">6</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">7</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">8</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">9</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">10</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">11</span>
+					</td>
+				</tr>
+				<tr class="fd-calendar__row">
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">12</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">13</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">14</span>
+					</td>
+					<td class="fd-calendar__item is-selected" role="gridcell">
+						<span class="fd-calendar__text">15</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">16</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">17</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">18</span>
+					</td>
+				</tr>
+				<tr class="fd-calendar__row">
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">19</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">20</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">21</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">22</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">23</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">24</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">25</span>
+					</td>
+				</tr>
+				<tr class="fd-calendar__row">
+					<td class="fd-calendar__item is-blocked" role="gridcell">
+						<span class="fd-calendar__text">26</span>
+					</td>
+					<td class="fd-calendar__item is-blocked" role="gridcell">
+						<span class="fd-calendar__text">27</span>
+					</td>
+					<td class="fd-calendar__item is-blocked" role="gridcell">
+						<span class="fd-calendar__text">28</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">29</span>
+					</td>
+					<td class="fd-calendar__item" role="gridcell">
+						<span class="fd-calendar__text">30</span>
+					</td>
+					<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
+						<span class="fd-calendar__text">1</span>
+					</td>
+					<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
+						<span class="fd-calendar__text">2</span>
+					</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
 		</div>
 	</div>
 </div>
@@ -576,51 +580,53 @@ The previous and next controls are standard buttons with all available states. F
 ## Example: Months
 
 {% capture default-calendar-months %}
-<div class="fd-calendar">
-	<header class="fd-calendar__header">
-	<div class="fd-calendar__navigation">
-		<div class="fd-calendar__action">
-			<button class="fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="undefined"></button>
+<div style="width: 292px">
+	<div class="fd-calendar">
+		<header class="fd-calendar__header">
+		<div class="fd-calendar__navigation">
+			<div class="fd-calendar__action">
+				<button class="fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="undefined"></button>
+			</div>
+			<div class="fd-calendar__action">
+				<button class="fd-button--light fd-button--compact" aria-selected="true" aria-expanded="true" aria-controls="Eo94h672">January</button>
+			</div>
+			<div class="fd-calendar__action">
+				<button class="fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="GMnxs122">2018</button>
+			</div>
+			<div class="fd-calendar__action">
+				<button class="fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-right" aria-label="Next"></button>
+			</div>
 		</div>
-		<div class="fd-calendar__action">
-			<button class="fd-button--light fd-button--compact" aria-selected="true" aria-expanded="true" aria-controls="Eo94h672">January</button>
-		</div>
-		<div class="fd-calendar__action">
-			<button class="fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="GMnxs122">2018</button>
-		</div>
-		<div class="fd-calendar__action">
-			<button class="fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-right" aria-label="Next"></button>
-		</div>
-	</div>
-	</header>
-	<div class="fd-calendar__content">
-		<div class="fd-calendar__months" id="Eo94h672" aria-hidden="false">
-			<ul class="fd-calendar__list">
-				<li class="fd-calendar__item fd-calendar__item--current">
-				<span class="fd-calendar__text">Jan.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Feb.</span></li>
-				<li class="fd-calendar__item is-selected">
-				<span class="fd-calendar__text">Mar.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Apr.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">May</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Jun.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Jul.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Aug.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Sep.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Oct.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Nov.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Dec.</span></li>
-			</ul>
+		</header>
+		<div class="fd-calendar__content">
+			<div class="fd-calendar__months" id="Eo94h672" aria-hidden="false">
+				<ul class="fd-calendar__list">
+					<li class="fd-calendar__item fd-calendar__item--current">
+					<span class="fd-calendar__text">Jan.</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">Feb.</span></li>
+					<li class="fd-calendar__item is-selected">
+					<span class="fd-calendar__text">Mar.</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">Apr.</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">May</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">Jun.</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">Jul.</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">Aug.</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">Sep.</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">Oct.</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">Nov.</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">Dec.</span></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
@@ -630,51 +636,53 @@ The previous and next controls are standard buttons with all available states. F
 ## Example: Years
 
 {% capture default-calendar-years %}
-<div class="fd-calendar">
-	<header class="fd-calendar__header">
-	<div class="fd-calendar__navigation">
-		<div class="fd-calendar__action">
-			<button class="fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="undefined"></button>
+<div style="width: 292px">
+	<div class="fd-calendar">
+		<header class="fd-calendar__header">
+		<div class="fd-calendar__navigation">
+			<div class="fd-calendar__action">
+				<button class="fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="undefined"></button>
+			</div>
+			<div class="fd-calendar__action">
+				<button class="fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="fm3cr569">January</button>
+			</div>
+			<div class="fd-calendar__action">
+				<button class="fd-button--light fd-button--compact" aria-selected="true" aria-expanded="true" aria-controls="bufLe361">2018</button>
+			</div>
+			<div class="fd-calendar__action">
+				<button class="fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-right" aria-label="Next"></button>
+			</div>
 		</div>
-		<div class="fd-calendar__action">
-			<button class="fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="fm3cr569">January</button>
-		</div>
-		<div class="fd-calendar__action">
-			<button class="fd-button--light fd-button--compact" aria-selected="true" aria-expanded="true" aria-controls="bufLe361">2018</button>
-		</div>
-		<div class="fd-calendar__action">
-			<button class="fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-right" aria-label="Next"></button>
-		</div>
-	</div>
-	</header>
-	<div class="fd-calendar__content">
-		<div class="fd-calendar__years" aria-hidden="false" id="bufLe361">
-			<ul class="fd-calendar__list">
-				<li class="fd-calendar__item fd-calendar__item--current">
-				<span class="fd-calendar__text">2018</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2019</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2020</span></li>
-				<li class="fd-calendar__item is-selected">
-				<span class="fd-calendar__text">2021</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2022</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2023</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2024</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2025</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2026</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2027</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2028</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2029</span></li>
-			</ul>
+		</header>
+		<div class="fd-calendar__content">
+			<div class="fd-calendar__years" aria-hidden="false" id="bufLe361">
+				<ul class="fd-calendar__list">
+					<li class="fd-calendar__item fd-calendar__item--current">
+					<span class="fd-calendar__text">2018</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2019</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2020</span></li>
+					<li class="fd-calendar__item is-selected">
+					<span class="fd-calendar__text">2021</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2022</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2023</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2024</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2025</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2026</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2027</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2028</span></li>
+					<li class="fd-calendar__item">
+					<span class="fd-calendar__text">2029</span></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>

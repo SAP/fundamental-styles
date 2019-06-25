@@ -79,7 +79,6 @@ a.#{$block} {
         &::before {
           margin-right: 0;
           margin-left: 0;
-          margin-bottom: 1px;
         }
         &::after {
           margin-right: 0;
@@ -339,6 +338,12 @@ a.#{$block} {
       @include fd-var-color("background-color", fd-color-state("selected","action"), --fd-button-background-color);
       box-shadow: 0 0 0 1px var(--fd-color-action-3, #0854A0);
       z-index: 1;
+    }
+    &[class*="#{sap-icon}"] {
+      &::before,
+      &::after {
+        margin-bottom: 1px;
+      }
     }
   }
 
