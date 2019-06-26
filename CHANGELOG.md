@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.12"></a>
+# [0.2.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.11...v0.2.0-rc.12) (2019-06-24)
+
+
+### Bug Fixes
+
+* fixes clear button in search input inside an input group ([#116](https://github.com/SAP/fundamental-styles/issues/116)) ([1e445a3](https://github.com/SAP/fundamental-styles/commit/1e445a3))
+
+
+
 <a name="0.2.0-rc.11"></a>
 # [0.2.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.10...v0.2.0-rc.11) (2019-06-19)
 
