@@ -27,22 +27,22 @@ const defaultScenario = {
   "postInteractionWait": 0,
   "selectorExpansion": false,
   "expect": 0,
-  "misMatchThreshold" : 0.1,
-  "requireSameDimensions": true  
+  "misMatchThreshold": 0.1,
+  "requireSameDimensions": true
 }
 
 // Specific visual test component configurations.  Read the associated component configuration directory and merge the json.
-fs.readdirSync("test/templates").forEach(function(component) {
-  if(!component.includes('.njk') && component != 'spinner'){
+fs.readdirSync("test/templates").forEach(function (component) {
+  if (!component.includes('.njk') && (component != 'spinner' && component != 'loading-spinner' && component != 'loading-dots')) {
     let componentScenario = {
       "label": component,
       "urlSuffix": `/${component}`,
       "selectors": [
-          `#example-container .fd-${component}`,
-        ],
-        "selectorExpansion": true
+        `#example-container .fd-${component}`,
+      ],
+      "selectorExpansion": true
     }
-    const scenario = {...defaultScenario, ...componentScenario};
+    const scenario = { ...defaultScenario, ...componentScenario };
     // Ensure each config file has a urlSuffix, label and selectors defined.
     if (!scenario.urlSuffix || !scenario.label || !scenario.selectors) {
       throw "Error with backstop config file '" + configFile + "', must include urlSuffix, label and selectors";

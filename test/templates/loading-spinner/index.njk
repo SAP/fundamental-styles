@@ -1,0 +1,44 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "../button/component.njk" import button %}
+{% from "./component.njk" import loading_spinner %}
+
+{% block content %}
+
+
+<p>Toggle the <code>aria-hidden</code> attribute to hide/show the loading-spinner. Use <code>--small</code> and <code>--large</code> for sizing options</p>
+    <!-- output the component example and the code snippet -->
+    {% set example %}
+{{  loading_spinner(
+        properties=data.properties,
+        modifier={
+            block: ["small"]
+        },
+        state=data.state,
+        aria=data.aria
+    )
+}}
+
+{{  loading_spinner(
+        properties=data.properties,
+        modifier=data.modifier,
+        state=data.state,
+        aria=data.aria
+    )
+}}
+
+{{  loading_spinner(
+        properties=data.properties,
+        modifier={
+            block: ["large"]
+        },
+        state=data.state,
+        aria=data.aria
+    )
+}}
+
+    {% endset %}
+    {{ format(example) }}
+
+
+{% endblock %}

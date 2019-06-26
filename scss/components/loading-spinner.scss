@@ -1,0 +1,97 @@
+@import "./../settings";
+@import "./../mixins";
+@import "./../functions";
+/*!
+.fd-loading-spinner+(.is-hidden|[aria-hidden=true] --small, --large)
+
+
+Inspired by line scale spinner from Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
+* Copyright 2015 Daniel Cardoso <@DanielCardoso>
+* Licensed under MIT
+*/
+$block: #{$fd-namespace}-loading-spinner;
+.#{$block} {
+
+    //LOCAL VARS (set all themeable properties, always include !default)
+    $fd-spinner-size: fd-space(10) !default;
+    $fd-spinner-size--small: fd-space(6) !default;
+    $fd-spinner-size--large: fd-space(16) !default;
+    $fd-spinner-background-color: fd-color(neutral, 2) !default;
+    $fd-spinner-ring-color: fd-color(action, 1) !default;
+    --fd-spinner-background-color: var(--fd-color-neutral-2);
+    --fd-spinner-ring-color: var(--fd-color-action-1);
+
+    // BLOCK BASE *******************************************
+    @include fd-reset();
+
+    position: relative;
+    width: $fd-spinner-size;
+    height: $fd-spinner-size;
+    display: block;
+    font-size: 0;
+    color: var(--fd-spinner-background-color);
+    @include fd-var-color("color", $fd-spinner-background-color);
+    margin: 10px auto;
+
+    // ELEMENTS
+    &::before,
+    &::after {
+        width: 100%;
+        height: 100%;
+        content: "";
+        display: inline-block;
+        float: none;
+        border: 0 solid currentColor;
+        border-width: 4px;
+        border-radius: 100%;
+    }
+
+    &::after {
+        border-color: var(--fd-spinner-ring-color);
+        @include fd-var-color("border-color", $fd-spinner-ring-color);
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        margin-top: -$fd-spinner-size;
+        animation: fd-loading-spinner-spin 1s linear infinite;
+    }
+
+    // MODIFIERS
+    &--small {
+        width: $fd-spinner-size--small;
+        height: $fd-spinner-size--small;
+
+        &::after {
+            margin-top: -$fd-spinner-size--small;
+        }
+    }
+
+    &--large {
+        width: $fd-spinner-size--large;
+        height: $fd-spinner-size--large;
+        &::after {
+            margin-top: -$fd-spinner-size--large;
+        }
+    }
+
+    // STATES
+    &.is-hidden,
+    &[aria-hidden="true"] {
+        display: none;
+    }
+}
+
+// ANIMATION
+@keyframes fd-loading-spinner-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

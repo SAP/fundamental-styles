@@ -1,0 +1,75 @@
+@import "./../settings";
+@import "./../mixins";
+@import "./../functions";
+/*!
+.fd-loading-dots+(.is-hidden|[aria-hidden=true] --small, --large)
+
+
+Inspired by line scale dots from Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
+* Copyright 2015 Daniel Cardoso <@DanielCardoso>
+* Licensed under MIT
+*/
+$block: #{$fd-namespace}-loading-dots;
+.#{$block} {
+
+    //LOCAL VARS (set all themeable properties, always include !default)
+    $fd-dots-size: 8px !default;
+    $fd-dots-color: fd-color(action, 1) !default;
+    --fd-dots-color: var(--fd-color-action-1);
+
+    // BLOCK BASE *******************************************
+    @include fd-reset();
+
+    position: relative;
+    width: fd-space(15);
+    height: fd-space(4.5);
+    display: block;
+    font-size: 0;
+    color: var(--fd-dots-color);
+    @include fd-var-color("color", $fd-dots-color);
+    margin: fd-space(2.5) auto;
+
+    // ELEMENTS
+    &>div {
+        position: relative;
+        width: $fd-dots-size;
+        height: $fd-dots-size;
+        margin: fd-space(1.5);
+        display: inline-block;
+        border-radius: 100%;
+        background-color: currentColor;
+        border: 0 solid currentColor;
+        animation: fd-loading-dots-pulse 1s ease infinite;
+    }
+
+    &>div:nth-child(1) {
+        animation-delay: -200ms;
+    }
+
+    &>div:nth-child(2) {
+        animation-delay: -100ms;
+    }
+
+    &>div:nth-child(3) {
+        animation-delay: 0ms;
+    }
+
+    // STATES
+    &.is-hidden,
+    &[aria-hidden="true"] {
+        display: none;
+    }
+}
+
+// ANIMATION
+@keyframes fd-loading-dots-pulse {
+    0%,
+    60%,
+    100% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(2);
+    }
+}

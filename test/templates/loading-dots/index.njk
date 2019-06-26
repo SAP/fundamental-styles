@@ -1,0 +1,25 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "../button/component.njk" import button %}
+{% from "./component.njk" import loading_dots %}
+
+{% block content %}
+
+
+<p>Toggle the <code>aria-hidden</code> attribute to hide/show the loading-dots.
+    <!-- output the component example and the code snippet -->
+    {% set example %}
+
+{{  loading_dots(
+        properties=data.properties,
+        modifier=data.modifier,
+        state=data.state,
+        aria=data.aria
+    )
+}}
+
+    {% endset %}
+    {{ format(example) }}
+
+
+{% endblock %}

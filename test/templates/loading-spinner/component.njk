@@ -1,0 +1,11 @@
+<!--
+loading-spinner:
+    properties={},
+    modifier={ block: [] },
+    state={},
+    aria={}
+-->
+{% macro loading_spinner(properties={}, modifier={}, state={}, aria={}) -%}
+<div class="fd-loading-spinner{{ modifier.block | modifier('loading-spinner') }}{{ state | state }}"{{ aria | aria }}>
+</div>
+{%- endmacro %}

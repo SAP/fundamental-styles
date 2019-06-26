@@ -1,0 +1,14 @@
+<!--
+loading-dots:
+    properties={},
+    modifier={ block: [] },
+    state={},
+    aria={}
+-->
+{% macro loading_dots(properties={}, modifier={}, state={}, aria={}) -%}
+<div class="fd-loading-dots{{ modifier.block | modifier('loading-dots') }}{{ state | state }}"{{ aria | aria }}>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+{%- endmacro %}
