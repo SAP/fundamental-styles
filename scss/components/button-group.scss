@@ -53,15 +53,8 @@ $block-alt: #{$fd-namespace}-segmented-button;
 }
 .fd-button-group .fd-button--compact:hover,
 .fd-button-group .fd-button:hover {
-  &.is-disabled {
+  &:disabled {
     --fd-button-background-color: white;
     @include fd-var-color("background-color", white);
   }
 }
-
-.fd-button-group .fd-button--compact:focus,
-.fd-button-group .fd-button:focus {
-  &.is-disabled {
-    box-shadow: none;
-  }
-} 
