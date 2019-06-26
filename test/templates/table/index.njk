@@ -39,6 +39,75 @@
 {% set example %}
 {{  table(properties={
         rows: [row, row, row],
+        rowClass : {"rowIndex": 2, "class": "fd-table__row--valid"},
+        headers: [
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            }
+        ]
+    })
+}}
+{{  table(properties={
+        rows: [row, row, row],
+        rowClass : {"rowIndex": 2, "class": "fd-table__row--warning"},
+        headers: [
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            }
+        ]
+    })
+}}
+
+{{  table(properties={
+        rows: [row, row, row],
+        rowClass : {"rowIndex": 2, "class": "fd-table__row--error"},
+        headers: [
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            }
+        ]
+    })
+}}
+
+{{  table(properties={
+        rows: [row, row, row],
+        rowClass : {"rowIndex": 2, "class": "fd-table__row--information"},
         headers: [
             {
                 label: "Header Column"

@@ -58,7 +58,7 @@ table:
     </thead>
     <tbody>
         {%- for row in properties.rows %}
-        <tr{% if properties.selectedRow === loop.index %} aria-selected="true"{% endif %}>
+        <tr{% if properties.selectedRow === loop.index %} aria-selected="true"{% endif %} {% if properties.rowClass.rowIndex === loop.index %} class="{{properties.rowClass.class}}"{% endif %}>
             {%- for item in row %}
             {%- if item.label %}
             <td class="{{item.class}}" style="left:{{0 if item.fixed_col else item.offset }}; width:{{item.width}}">{{ item.label }}</td>

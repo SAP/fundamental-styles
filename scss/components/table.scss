@@ -23,6 +23,7 @@ $block: #{$fd-namespace}-table;
     --fd-table-cell-spacing: var(--fd-width-gutter);
 
     $fd-table-cell-padding: fd-space("s") !default;
+    $fd-table-header-cell-padding: fd-space(3) !default;
     $fd-table-transition-params: $fd-animation--speed ease-in !default;
     $fd-table-sort-icon-size: fd-space(3);
     $fd-table-sort-column-header-background-color: fd-color("neutral", 2);
@@ -118,6 +119,18 @@ $block: #{$fd-namespace}-table;
         &.fd-table__fixed-col {
             @include fd-var-color("background-color", $fd-table-fixed-column-cell-color, --fd-color-background-2);
         }
+
+        @include fd-rtl() {
+            &:first-child {
+                @include fd-var-size("padding-right", $fd-width--gutter, --fd-width-gutter);
+              }
+
+            text-align: right;
+        }
+    }
+    th {
+        padding-top: $fd-table-header-cell-padding;
+        padding-bottom: $fd-table-header-cell-padding;
     }
 
     &__sort-column {
@@ -207,6 +220,80 @@ $block: #{$fd-namespace}-table;
     &--striped {
         tbody tr:nth-child(even) {
             @include fd-var-color("background-color", fd-color-state("hover"), --fd-color-background-hover);
+        }
+    }
+
+    &__row--valid,
+    &__row--warning,
+    &__row--error,
+    &__row--information {
+        & td:first-child {
+            position: relative;
+            &::before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                border: fd-space(.5) solid;
+                border-top-left-radius: fd-space(1);
+                border-bottom-left-radius: fd-space(1);
+                content: "";
+                height: 100%;
+            }
+            @include fd-rtl() {
+                &::before {
+                    left: auto;
+                    right: 0;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    border-top-right-radius: fd-space(1);
+                    border-bottom-right-radius: fd-space(1);
+                }
+            }
+        }
+    }
+    &__row--valid {
+        &:hover {
+            --fd-color-background-hover: var(--fd-color-background-3);
+        }
+        @include fd-var-color("background-color", fd-color('background', 3), --fd-color-background-3);
+        & td:first-child {
+            &::before {
+                @include fd-var-color("border-color", fd-color('status', 1), --fd-color-status-1);
+            }
+        }
+    }
+    &__row--warning {
+        &:hover {
+            --fd-color-background-hover: var(--fd-color-background-4);
+        }
+        @include fd-var-color("background-color", fd-color('background', 4), --fd-color-background-4);
+        & td:first-child {
+            &::before {
+                @include fd-var-color("border-color", fd-color('status', 2), --fd-color-status-2);
+            }
+        }
+    }
+    &__row--error {
+        &:hover {
+            --fd-color-background-hover: var(--fd-color-background-5);
+        }
+        @include fd-var-color("background-color", fd-color('background', 5), --fd-color-background-5);
+        & td:first-child {
+            &::before {
+                @include fd-var-color("border-color", fd-color('status', 3), --fd-color-status-3);
+            }
+        }
+    }
+    &__row--information {
+        &:hover {
+            --fd-color-background-hover: var(--fd-color-background-6);
+        }
+        @include fd-var-color("background-color", fd-color('background', 6), --fd-color-background-6);
+        & td:first-child {
+            &::before {
+                @include fd-var-color("border-color", fd-color('status', 5), --fd-color-status-5);
+                border-color: fd-color('status', 5);
+            }
         }
     }
 }

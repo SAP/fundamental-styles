@@ -205,6 +205,92 @@ It is recommended to add the parameter `area-selected="true` to the row that is 
 
 <br />
 
+
+## Table with semantic row highlithging 
+Table rows support semantic row lighlithing with the modifiers `fd-table__row--valid`, `fd-table__row--warning`, `fd-table__row--error` and `fd-table__row--information` 
+
+{% capture table-checkbox %}
+<table class="fd-table">
+    <thead>
+        <tr>
+            <th scope="col"><input type="checkbox"></th>
+            <th scope="col">Column Header</th>
+            <th scope="col">Column Header</th>
+            <th scope="col">Column Header</th>
+            <th scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><input type="checkbox" checked></td>
+            <td><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>01/26/17</td>
+        </tr>
+        <tr class="fd-table__row--valid">
+            <td><input type="checkbox"></td>
+            <td><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>01/26/17</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>01/26/17</td>
+        </tr>
+         <tr class="fd-table__row--warning">
+            <td><input type="checkbox"></td>
+            <td><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>01/26/17</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>01/26/17</td>
+        </tr>
+         <tr class="fd-table__row--error">
+            <td><input type="checkbox"></td>
+            <td><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>01/26/17</td>
+        </tr>  
+        <tr>
+            <td><input type="checkbox"></td>
+            <td><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>01/26/17</td>
+        </tr>
+         <tr class="fd-table__row--information">
+            <td><input type="checkbox"></td>
+            <td><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>01/26/17</td>
+        </tr>   
+        <tr>
+            <td><input type="checkbox"></td>
+            <td><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>01/26/17</td>
+        </tr>                    
+    </tbody>
+</table>
+{% endcapture %}
+{% include display-component.html component=table-checkbox %}
+
+<br />
+
 ## Table with Contextual Menu
 When more than three actions exist per row and/or space doesn't allow for actions,
 a contextual menu can be substituted in order to display all actions in one menu.
@@ -669,3 +755,9 @@ a contextual menu can be substituted in order to display all actions in one menu
 </div>
 {% endcapture %}
 {% include display-component.html component=table-sort %}
+
+<style>
+   .fd-table a{ 
+      color: #0a6ed1; 
+   }
+</style>
