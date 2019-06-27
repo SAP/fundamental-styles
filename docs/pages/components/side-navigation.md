@@ -20,32 +20,32 @@ The left navigation can always display or expand/collapse using the menu icon wi
     <ul class="fd-side-nav__list">
         <li class="fd-side-nav__item">
             <a class="fd-side-nav__link" href="#">
-                <span class="fd-side-nav__link-icon--l">Link Item</span>
+                Link Item
             </a>
         </li>
         <li class="fd-side-nav__item">
             <a class="fd-side-nav__link is-selected" aira-selected="true" href="#">
-               <span class="fd-side-nav__link-icon--l">Link Item</span>
+               Link Item
             </a>
         </li>
         <li class="fd-side-nav__item">
             <a class="fd-side-nav__link" href="#">
-                <span class="fd-side-nav__link-icon--l">Link Item</span>
+                Link Item
             </a>
         </li>
         <li class="fd-side-nav__item">
             <a class="fd-side-nav__link" href="#">
-                <span class="fd-side-nav__link-icon--l">Link Item</span>
+                Link Item
             </a>
         </li>
         <li class="fd-side-nav__item">
             <a class="fd-side-nav__link" href="#">
-                <span class="fd-side-nav__link-icon--l">Link Item</span>
+                Link Item
             </a>
         </li>
         <li class="fd-side-nav__item">
             <a class="fd-side-nav__link" href="#">
-                <span class="fd-side-nav__link-icon--l">Link Item</span>
+                Link Item
             </a>
         </li>
     </ul>
@@ -65,27 +65,27 @@ Use this to group navigation. Titles are not clickable.
         <ul class="fd-side-nav__list">
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <span class="fd-side-nav__link-icon--l">icon link</span>
+                   icon link
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <span class="fd-side-nav__link-icon--l">item link</span>
+                   item link
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <span class="fd-side-nav__link-icon--l">icon link</span>
+                    icon link
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <span class="fd-side-nav__link-icon--l">item link</span>
+                    item link
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <span class="fd-side-nav__link-icon--l">item link</span>
+                    item link
                 </a>
             </li>
         </ul>
@@ -95,27 +95,27 @@ Use this to group navigation. Titles are not clickable.
         <ul class="fd-side-nav__list">
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <span class="fd-side-nav__link-icon--l">item link</span>
+                    item link
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <span class="fd-side-nav__link-icon--l">item link</span>
+                    item link
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <span class="fd-side-nav__link-icon--l">item link</span>
+                    item link
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <span class="fd-side-nav__link-icon--l">item link</span>
+                    item link
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <span class="fd-side-nav__link-icon--l">item link</span>
+                    item link
                 </a>
             </li>
         </ul>
@@ -135,13 +135,13 @@ Use this when there is more than one level of hierarchy in the left navigation. 
         <ul class="fd-side-nav__list">
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <span class="fd-side-nav__link-icon--l">item link</span>
+                    item link
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link has-child" href="#" aria-controls="Rk65C501"
                 aria-haspopup="true">
-                    <span class="fd-side-nav__link-icon--l">item link</span>
+                    item link
             </a>
             <ul class="fd-side-nav__sublist" id="Rk65C501" aria-hidden="true">
                 <li class="fd-side-nav__subitem">
@@ -164,7 +164,7 @@ Use this when there is more than one level of hierarchy in the left navigation. 
         <li class="fd-side-nav__item">
             <a class="fd-side-nav__link has-child" href="#" aria-controls="mM3Zf660"
             aria-haspopup="true">
-            <span class="fd-side-nav__link-icon--l">item link</span>
+            item link
         </a>
         <ul class="fd-side-nav__sublist" id="mM3Zf660" aria-hidden="true">
             <li class="fd-side-nav__subitem">
@@ -187,7 +187,7 @@ Use this when there is more than one level of hierarchy in the left navigation. 
     <li class="fd-side-nav__item">
         <a class="fd-side-nav__link has-child" href="#" aria-controls="8t8RN919"
         aria-haspopup="true">
-        <span class="fd-side-nav__link-icon--l">item link</span>
+        item link
     </a>
     <ul class="fd-side-nav__sublist" id="8t8RN919" aria-hidden="true">
         <li class="fd-side-nav__subitem">
@@ -209,7 +209,7 @@ Use this when there is more than one level of hierarchy in the left navigation. 
 </li>
 <li class="fd-side-nav__item">
     <a class="fd-side-nav__link" href="#">
-        <span class="fd-side-nav__link-icon--l">item link</span>
+        item link
     </a>
 </li>
 </ul>
@@ -219,26 +219,26 @@ Use this when there is more than one level of hierarchy in the left navigation. 
     <ul class="fd-side-nav__list">
         <li class="fd-side-nav__item">
             <a class="fd-side-nav__link" href="#">
-                <span class="fd-side-nav__link-icon--l">item link</span>
+                item link
             </a>
         </li>
         <li class="fd-side-nav__item">
             <a class="fd-side-nav__link" href="#">
-                <span class="fd-side-nav__link-icon--l">item link</span>
+                item link
             </a></li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <span class="fd-side-nav__link-icon--l">item link</span>
+                    item link
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <span class="fd-side-nav__link-icon--l">item link</span>
+                    item link
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <span class="fd-side-nav__link-icon--l">item link</span>
+                    item link
                 </a>
             </li>
         </ul>
@@ -256,37 +256,37 @@ Use this when there is more than one level of hierarchy in the left navigation. 
         <li class="fd-side-nav__item">
             <a class="fd-side-nav__link" href="#">
                 <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                <span class="fd-side-nav__link-icon--l">Link icondsfdsfsfds</span>
+                Link icon
             </a>
         </li>
         <li class="fd-side-nav__item">
             <a class="fd-side-nav__link" href="#">
                 <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                <span class="fd-side-nav__link-icon--l">Link icon</span>
+                Link icon
             </a>
         </li>
         <li class="fd-side-nav__item">
             <a class="fd-side-nav__link" href="#">
                 <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                <span class="fd-side-nav__link-icon--l">Link icon</span>
+                Link icon
             </a>
         </li>
         <li class="fd-side-nav__item">
             <a class="fd-side-nav__link" href="#">
                 <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                <span class="fd-side-nav__link-icon--l">Link icon</span>
+                Link icon with two row text to test wrapping 
             </a>
         </li>
         <li class="fd-side-nav__item">
             <a class="fd-side-nav__link" href="#">
                 <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                <span class="fd-side-nav__link-icon--l">Link icon</span>
+                Link icon with two row text to test wrapping  
             </a>
         </li>
         <li class="fd-side-nav__item">
             <a class="fd-side-nav__link" href="#">
                 <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                <span class="fd-side-nav__link-icon--l">Link icon</span>
+                Link icon with two row text to test wrapping  
             </a>
         </li>
     </ul>

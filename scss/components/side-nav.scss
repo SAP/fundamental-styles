@@ -25,7 +25,7 @@ $block: #{$fd-namespace}-side-nav;
     $fd-side-nav-hover-background-color: fd-color("neutral", 1);
     $fd-side-nav-link-color: fd-color("text", 2);
     $fd-side-nav-max-width: 249px;
-    $fd-side-nav-link-padding: fd-space(2.5) fd-space(7.5) fd-space(2.5) fd-space(5);
+    $fd-side-nav-link-padding: fd-space(2.5) fd-space(8.75) fd-space(2.5) fd-space(5);
     $fd-side-nav-title-padding: fd-space(2) fd-space(5);
     $fd-side-nav-icon-right-padding: fd-space(2.5);
     $fd-side-nav-link-disabled-color: fd-color("text", 3);
@@ -75,30 +75,9 @@ $block: #{$fd-namespace}-side-nav;
     &__link,
     &__sublink {
         display: flex;
-        align-items: flex-start;
         padding: $fd-side-nav-link-padding;
         color: $fd-side-nav-link-color;
         @include fd-type("0", "normal");
-
-        .fd-side-nav__link-icon {
-            line-height: 20px;
-
-            &--s {
-                line-height: 19px;
-            }
-
-            &--m {
-                line-height: 20px;
-            }
-
-            &--l {
-                line-height: 24px;
-            }
-
-            &--xl {
-                line-height: 28px;
-            }
-        }
 
         //STATES *******************************************
 
@@ -145,12 +124,31 @@ $block: #{$fd-namespace}-side-nav;
 
     &__icon {
         padding-right: $fd-side-nav-icon-right-padding;
+        margin-top: -1px;
+
+        &.sap-icon--s {
+            margin-top: 0;
+        }
+
+        &.sap-icon--m {
+            margin-top: 0;
+        }
+
+        &.sap-icon--l {
+            margin-top: -2px;
+        }
+
+        &.sap-icon--xl {
+            margin-top: -4px;
+        }
     }
 
     &--icons {
-        min-width: auto;
+        min-width: 75px;
         .#{$block}__icon {
             padding-right: 0;
+            position: relative;
+            left: calc(50% - 4px);
         }
     }
 }
