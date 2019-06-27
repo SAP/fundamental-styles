@@ -48,6 +48,7 @@ $block: #{$fd-namespace}-side-nav;
     &__title {
         display: block;
         margin-bottom: 0;
+        margin-top: 0;
         padding: $fd-side-nav-title-padding;
         @include fd-type("-1", "normal");
         text-transform: uppercase;
@@ -77,11 +78,13 @@ $block: #{$fd-namespace}-side-nav;
         padding: $fd-side-nav-link-padding;
         color: $fd-side-nav-link-color;
         display: block;
+        text-decoration: none;
         @include fd-type("0", "normal");
 
         //STATES *******************************************
         &:hover {
             background-color: $fd-side-nav-hover-background-color;
+            @include fd-var-color("color", fd-color-state("hover", "action"), --fd-color-action-hover);
         }
         &.is-selected,
         &.is-expanded,
@@ -132,4 +135,8 @@ $block: #{$fd-namespace}-side-nav;
             padding-right: 0;
         }
     }
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
 }
