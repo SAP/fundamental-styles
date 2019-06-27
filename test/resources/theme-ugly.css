@@ -14,4 +14,10 @@
     --fd-forms-height-compact: 25px;
     --fd-button-line-height: 50px;
     --fd-button-line-height-compact: 25px;
+
+    --fd-color-text-1: rgb(93%, 2%, 45%);
+    --fd-color-text-2: rgb(57%, 27%, 2%);
+    --fd-color-positive: rgb(29%, 35%, 88%);
+    --fd-color-alert: rgb(68%, 83%, 37%);
+    --fd-color-negative: rgb(74%, 61%, 74%);
 }

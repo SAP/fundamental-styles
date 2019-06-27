@@ -180,3 +180,11 @@ $fd-status-label-icon-size: fd-space(4) !default;
       }
     }
 }
+
+:root {
+    --fd-color-text-1: #32363a;
+    --fd-color-text-2: #51555a;
+    --fd-color-positive: #0a7e3e;
+    --fd-color-alert: #e9730c;
+    --fd-color-negative: #bb0000;
+}
