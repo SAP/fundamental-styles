@@ -2,6 +2,46 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.16"></a>
+# [0.2.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.15...v0.2.0-rc.16) (2019-06-28)
+
+
+### Bug Fixes
+
+* fixed misalignment issue with icon ([#88](https://github.com/SAP/fundamental-styles/issues/88)) ([2662e89](https://github.com/SAP/fundamental-styles/commit/2662e89))
+
+
+
+<a name="0.2.0-rc.15"></a>
+# [0.2.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.14...v0.2.0-rc.15) (2019-06-28)
+
+
+### Bug Fixes
+
+* Fixed button text and border when disabled button is hover or pressed ([#75](https://github.com/SAP/fundamental-styles/issues/75)) ([15a9822](https://github.com/SAP/fundamental-styles/commit/15a9822))
+
+
+
+<a name="0.2.0-rc.14"></a>
+# [0.2.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.13...v0.2.0-rc.14) (2019-06-28)
+
+
+### Bug Fixes
+
+* added self-contained styles for image component ([#127](https://github.com/SAP/fundamental-styles/issues/127)) ([d32b370](https://github.com/SAP/fundamental-styles/commit/d32b370))
+
+
+
+<a name="0.2.0-rc.13"></a>
+# [0.2.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.12...v0.2.0-rc.13) (2019-06-27)
+
+
+### Bug Fixes
+
+* self-contained styles for label component ([#115](https://github.com/SAP/fundamental-styles/issues/115)) ([eb91d3d](https://github.com/SAP/fundamental-styles/commit/eb91d3d)), closes [#102](https://github.com/SAP/fundamental-styles/issues/102) [#102](https://github.com/SAP/fundamental-styles/issues/102)
+
+
+
 <a name="0.2.0-rc.12"></a>
 # [0.2.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.11...v0.2.0-rc.12) (2019-06-24)
 
