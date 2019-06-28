@@ -76,7 +76,10 @@ a.#{$block} {
       }
       &:empty {
         padding: 0;
-        &::before,
+        &::before {
+          margin-right: 0;
+          margin-left: 0;
+        }
         &::after {
           margin-right: 0;
           margin-left: 0;
@@ -221,6 +224,8 @@ a.#{$block} {
   }
   //.fd-button--light
   &--light {
+    --fd-forms-height: 34px;
+    --fd-forms-height-compact: 26px;
     --fd-button-border-color: transparent;
     --fd-button-background-color: transparent;
     @include fd-var-color("border-color", transparent, --fd-button-border-color);
@@ -322,6 +327,12 @@ a.#{$block} {
         --fd-button-color: var(--fd-color-action-2);
         @include fd-var-color("color", fd-color("action", 2), --fd-button-color);
         @include fd-var-color("background-color", fd-color("status", 2), --fd-button-background-color);
+      }
+    }
+    &[class*="#{sap-icon}"] {
+      &::before,
+      &::after {
+        margin-bottom: 1px;
       }
     }
   }

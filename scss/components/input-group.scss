@@ -135,7 +135,13 @@ $block: #{$fd-namespace}-input-group;
         &--button {
           padding: 0;
           [class*="fd-button"] {
-            border-radius: 0;
+            border-top-right-radius: $fd-border-radius;
+            border-bottom-right-radius: $fd-border-radius;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            &:focus {
+                z-index: 1;
+            }
           }
         }
         &--before {
@@ -215,6 +221,11 @@ $block: #{$fd-namespace}-input-group;
             position: relative;
             left: -(fd-space(11));
             z-index: map-get($fd-z-index-levels, "second");
+        }
+    }
+    .fd-input {
+        &:focus {
+          box-shadow: none;
         }
     }
 }
