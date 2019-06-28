@@ -10,3 +10,10 @@ $block: #{$fd-namespace}-link;
 .#{$block} {
   @include fd-link();
 }
+
+a.#{$block} {
+  font-size: $fd-font-size;
+  font-family: $fd-font-family;
+  line-height: $fd-line-height;
+  -webkit-font-smoothing: antialiased;
+}
