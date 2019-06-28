@@ -45,10 +45,9 @@ $fd-status-label-icon-size: fd-space(4) !default;
 
 
 .#{$block} {
-
-
-  --fd-status-label-color: var(--fd-color-text-2);
-  --fd-status-label-icon-background-color: var(--fd-color-text-2);
+  @include fd-var-size("--fd-status-label-color", #51555a, --fd-color-text-2);
+  @include fd-var-size("--fd-status-label-icon-background-color", #51555a, --fd-color-text-2);
+  
 
     //LOCAL VARS (set all themeable properties, always include !default)
 
@@ -93,19 +92,20 @@ $fd-status-label-icon-size: fd-space(4) !default;
 
     //BLOCK MODIFIERS ************
     &--success {
-      --fd-status-label-color: var(--fd-color-positive);
+      @include fd-var-size("--fd-status-label-color", #0a7e3e, --fd-color-positive);
       @include fd-var-color("color", $fd-color--success);
     }
     &--warning {
-      --fd-status-label-color: var(--fd-color-alert);
+      @include fd-var-size("--fd-status-label-color", #e9730c, --fd-color-alert);
       @include fd-var-color("color", $fd-color--warning);
     }
     &--error {
-      --fd-status-label-color: var(--fd-color-negative);
+      @include fd-var-size("--fd-status-label-color", #bb0000, --fd-color-negative);
       @include fd-var-color("color", $fd-color--error);
     }
     &--available {
-      --fd-status-label-icon-background-color: var(--fd-color-positive);
+      @include fd-var-size("--fd-status-label-icon-background-color", #0a7e3e, --fd-color-positive);
+      
       @extend %fd-status-icon;
       &::before {
         width: 7px;
@@ -124,7 +124,8 @@ $fd-status-label-icon-size: fd-space(4) !default;
       }
     }
     &--away {
-      --fd-status-label-icon-background-color: var(--fd-color-alert);
+      @include fd-var-size("--fd-status-label-icon-background-color", #e9730c, --fd-color-alert);
+
       @extend %fd-status-icon;
       &::before {
         width: 6px;
@@ -143,7 +144,7 @@ $fd-status-label-icon-size: fd-space(4) !default;
       }
     }
     &--busy {
-      --fd-status-label-icon-background-color: var(--fd-color-negative);
+      @include fd-var-size("--fd-status-label-icon-background-color", #bb0000, --fd-color-negative);
       @extend %fd-status-icon;
       &::before {
         width: 4px;
@@ -179,12 +180,4 @@ $fd-status-label-icon-size: fd-space(4) !default;
         }
       }
     }
-}
-
-:root {
-    --fd-color-text-1: #32363a;
-    --fd-color-text-2: #51555a;
-    --fd-color-positive: #0a7e3e;
-    --fd-color-alert: #e9730c;
-    --fd-color-negative: #bb0000;
 }
