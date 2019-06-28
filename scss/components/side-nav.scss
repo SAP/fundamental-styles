@@ -144,11 +144,18 @@ $block: #{$fd-namespace}-side-nav;
     }
 
     &--icons {
-        min-width: 75px;
-        .#{$block}__icon {
-            padding-right: 0;
-            position: relative;
-            left: calc(50% - 4px);
+        min-width: auto;
+
+        .#{$block} {
+            &__link,
+            &__sublink {
+                padding: fd-space(2.5) fd-space(5);
+                justify-content: center;
+            }
+
+            &__icon {
+                padding-right: 0;
+            }
         }
     }
 }
