@@ -66,27 +66,27 @@ $block: #{$fd-namespace}-breadcrumb;
             margin-left: $fd-breadcrumb-link-margin;
         }
     }
-}
 
-a {
-    text-decoration: none;
-    display: inline-block;
-    transition: all $fd-animation--speed ease-in;
-    @include fd-var-color("color", $fd-color--action, --fd-color-action);
-    @include fd-hover() {
-      @include fd-var-color("color", fd-color-state("hover", "action"), --fd-color-action-hover);
-    }
-    @include fd-active-pressed-selected() {
-      @include fd-var-color("color", fd-color-state("selected", "action"), --fd-color-action-selected);
-      outline: none;
-    }
-    &:focus {
-      outline-style: dotted;
-      outline-width: 1px;
-      @include fd-var-color("outline-color", fd-color-state("hover", "action"), --fd-color-action-focus);
-    }
-    @include fd-disabled() {
-      @include fd-var-color("outline-color", fd-color-state("disabled", "action"), --fd-color-action-disabled);
-      cursor: not-allowed;
+    a {
+        text-decoration: none;
+        display: inline-block;
+        transition: all $fd-animation--speed ease-in;
+        @include fd-var-color("color", $fd-color--action, --fd-color-action);
+        @include fd-hover() {
+          @include fd-var-color("color", fd-color-state("hover", "action"), --fd-color-action-hover);
+        }
+        @include fd-active-pressed-selected() {
+          @include fd-var-color("color", fd-color-state("selected", "action"), --fd-color-action-selected);
+          outline: none;
+        }
+        &:focus {
+          outline-style: dotted;
+          outline-width: 1px;
+          @include fd-var-color("outline-color", fd-color-state("hover", "action"), --fd-color-action-focus);
+        }
+        @include fd-disabled() {
+          @include fd-var-color("outline-color", fd-color-state("disabled", "action"), --fd-color-action-disabled);
+          cursor: not-allowed;
+        }
     }
 }
