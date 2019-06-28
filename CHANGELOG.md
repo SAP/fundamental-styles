@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.14"></a>
+# [0.2.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.13...v0.2.0-rc.14) (2019-06-28)
+
+
+### Bug Fixes
+
+* added self-contained styles for image component ([#127](https://github.com/SAP/fundamental-styles/issues/127)) ([d32b370](https://github.com/SAP/fundamental-styles/commit/d32b370))
+
+
+
 <a name="0.2.0-rc.13"></a>
 # [0.2.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.12...v0.2.0-rc.13) (2019-06-27)
 
