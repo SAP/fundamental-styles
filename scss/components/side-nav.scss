@@ -54,6 +54,8 @@ $block: #{$fd-namespace}-side-nav;
         text-transform: uppercase;
         color: $fd-side-nav-link-disabled-color;
         background: $fd-side-nav-title-background-color;
+        font-size: $fd-font-size;
+        font-family: $fd-font-family;
     }
 
     &__list,
@@ -62,6 +64,7 @@ $block: #{$fd-namespace}-side-nav;
         display: flex;
         flex-wrap: wrap;
         padding-left: 0;
+        margin-top: 0;
         margin-bottom: 0;
         list-style: none;
         flex-direction: column;
@@ -135,8 +138,4 @@ $block: #{$fd-namespace}-side-nav;
             padding-right: 0;
         }
     }
-}
-ul, ol {
-    margin-top: 0;
-    margin-bottom: 0;
 }
