@@ -46,6 +46,7 @@ $block: #{$fd-namespace}-side-nav;
     }
 
     &__title {
+        @include fd-reset();
         display: block;
         margin-bottom: 0;
         margin-top: 0;
@@ -54,17 +55,15 @@ $block: #{$fd-namespace}-side-nav;
         text-transform: uppercase;
         color: $fd-side-nav-link-disabled-color;
         background: $fd-side-nav-title-background-color;
-        font-size: $fd-font-size;
-        font-family: $fd-font-family;
     }
 
     &__list,
     &__sublist {
         @include fd-reset();
+        @include fd-reset-spacing();
         display: flex;
         flex-wrap: wrap;
         padding-left: 0;
-        margin-top: 0;
         margin-bottom: 0;
         list-style: none;
         flex-direction: column;
