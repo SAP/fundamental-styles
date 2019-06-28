@@ -25,7 +25,7 @@ $block: #{$fd-namespace}-side-nav;
     $fd-side-nav-hover-background-color: fd-color("neutral", 1);
     $fd-side-nav-link-color: fd-color("text", 2);
     $fd-side-nav-max-width: 249px;
-    $fd-side-nav-link-padding: fd-space(2.5) fd-space(5);
+    $fd-side-nav-link-padding: fd-space(2.5) fd-space(8.75) fd-space(2.5) fd-space(5);
     $fd-side-nav-title-padding: fd-space(2) fd-space(5);
     $fd-side-nav-icon-right-padding: fd-space(2.5);
     $fd-side-nav-link-disabled-color: fd-color("text", 3);
@@ -74,12 +74,13 @@ $block: #{$fd-namespace}-side-nav;
 
     &__link,
     &__sublink {
+        display: flex;
         padding: $fd-side-nav-link-padding;
         color: $fd-side-nav-link-color;
-        display: block;
         @include fd-type("0", "normal");
 
         //STATES *******************************************
+
         &:hover {
             background-color: $fd-side-nav-hover-background-color;
         }
@@ -100,12 +101,11 @@ $block: #{$fd-namespace}-side-nav;
     }
 
     &__link {
-
         //STATES *******************************************
         &.has-child {
             background-image: url(#{$fd-down-arrow-icon});
             background-repeat: no-repeat;
-            background-position: calc(100% - #{$fd-forms-select-width--background-image}) center;
+            background-position: right 14px top 15px;
         }
 
         &.is-expanded,
@@ -124,12 +124,38 @@ $block: #{$fd-namespace}-side-nav;
 
     &__icon {
         padding-right: $fd-side-nav-icon-right-padding;
+        margin-top: -1px;
+
+        &.sap-icon--s {
+            margin-top: 0;
+        }
+
+        &.sap-icon--m {
+            margin-top: 0;
+        }
+
+        &.sap-icon--l {
+            margin-top: -2px;
+        }
+
+        &.sap-icon--xl {
+            margin-top: -4px;
+        }
     }
 
     &--icons {
         min-width: auto;
-        .#{$block}__icon {
-            padding-right: 0;
+
+        .#{$block} {
+            &__link,
+            &__sublink {
+                padding: fd-space(2.5) fd-space(5);
+                justify-content: center;
+            }
+
+            &__icon {
+                padding-right: 0;
+            }
         }
     }
 }
