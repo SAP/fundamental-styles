@@ -51,10 +51,3 @@ $block-alt: #{$fd-namespace}-segmented-button;
     }
   }
 }
-.fd-button-group .fd-button--compact:hover,
-.fd-button-group .fd-button:hover {
-  &:disabled {
-    --fd-button-background-color: white;
-    @include fd-var-color("background-color", white);
-  }
-}
