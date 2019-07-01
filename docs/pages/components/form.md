@@ -16,9 +16,10 @@ These components can be used alone. For example, the `form__item` element with t
 <br>
 
 ## Inputs
-Inputs are used to collect data from the user and should always be paired with a label. When a field is required, the label should include an asterisk (*).
 
 A text input field allows users to enter and edit text or numeric values in one line. To help users enter a valid value, it provides additional features like “auto-complete”, “suggestions”, and “value help”.
+
+Use `aria-required="true"` for form fields that are required. A red astrisk will render to indicate that the field is required to the user. 
 
 Use the input field if:
 
@@ -34,28 +35,28 @@ Do not use the input field if:
 {% capture inputs %}
 <div class="fd-form__set">
     <div class="fd-form__item">
-        <label class="fd-form__label" for="input-1">Default Input:</label>
+        <label class="fd-form__label" for="input-1">Default Input</label>
         <input class="fd-form__control" type="text" id="input-1" placeholder="Field placeholder text">
     </div>
 </div>
 
 <div class="fd-form__set">
     <div class="fd-form__item">
-        <label class="fd-form__label" for="input-1">Compact Input:</label>
+        <label class="fd-form__label" for="input-1">Compact Input</label>
         <input class="fd-input--compact fd-form__control" type="text" id="input-1" placeholder="Field placeholder text">
     </div>
 </div>
 
 <div class="fd-form__set">
     <div class="fd-form__item">
-        <label class="fd-form__label" aria-required="true" for="input-2">Required Input:*</label>
+        <label class="fd-form__label" aria-required="true" for="input-2">Required Input</label>
         <input class="fd-form__control" type="text" id="input-2" placeholder="Field placeholder text">
     </div>
 </div>
 
 <div class="fd-form__set">
     <div class="fd-form__item">
-        <label class="fd-form__label" aria-required="true" for="input-3">Password:*</label>
+        <label class="fd-form__label" aria-required="true" for="input-3">Password</label>
         <input class="fd-form__control" type="password" id="input-3">
     </div>
 </div>
@@ -65,6 +66,145 @@ Do not use the input field if:
 {% include display-component.html component=inputs %}
 
 <br/>
+
+## Input States
+The state of the input field can reflect validity of the data entered, whether the input data is editable or disabled.
+* **Normal**: The field is editable but no validation has occurred
+* **Information**: Draws attention to the field with a netural color
+* **Valid**: The data format entered has been validated and it's correct, such as an email address.
+* **Invalid**: The data entered is not valid and must be corrected.
+* **Warning**: The data entered is formatted correctly but there are other issues are problematic but will not stop the user from moving forward.
+* **Disabled**: This indicates the field is not editable. A common use case is that this field is dependent on a previous entry or selection within the form.
+* **Read Only**: Used to display static information in the context of a form.
+
+Along with Invalid and Warning, error messages should be displayed below the field so the user can correct the error and move forward.
+
+{% capture inputs %}
+<div class="fd-form__item">
+    <label class="fd-form__label" for="OatmD552">
+        Normal Input
+    </label>
+    <input type="text" class="fd-form__control" id="OatmD552" 
+        placeholder="Field placeholder text">
+    <span class="fd-form__message">
+        Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
+    </span>
+</div>
+
+<div class="fd-form__item">
+    <label class="fd-form__label" for="input-2">
+        Information Input
+    </label>
+    <input class="fd-form__control is-information" type="text" id="input-2" 
+        placeholder="Field placeholder text">
+    <span class="fd-form__message fd-form__message--information">
+        Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
+    </span>
+</div>
+
+<div class="fd-form__item">
+    <label class="fd-form__label" for="input-2" placeholder="Field placeholder text">
+        Valid/Success Input
+    </label>
+    <input class="fd-form__control is-valid" type="text" id="input-2" 
+        placeholder="Field placeholder text">
+    <span class="fd-form__message fd-form__message--valid">
+        Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
+    </span>
+</div>
+
+<div class="fd-form__item">
+    <label class="fd-form__label" for="pvsz1273">
+        Warning Input
+    </label>
+    <input type="text" class="fd-form__control is-warning" id="pvsz1273" 
+        placeholder="Field placeholder text">
+    <span class="fd-form__message fd-form__message--warning">
+        Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
+    </span>
+</div>
+
+<div class="fd-form__item">
+    <label class="fd-form__label" for="UI7xy545">
+        Invalid Input
+    </label>
+    <input type="text" class="fd-form__control is-invalid" id="UI7xy545" 
+    placeholder="Field placeholder text">
+    <span class="fd-form__message fd-form__message--error">
+        Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
+    </span>
+</div>
+
+<div class="fd-form__item">
+    <label class="fd-form__label" for="input-6">Disabled Input:</label>
+    <input class="fd-form__control" type="text" id="input-6" value="Non editable data" disabled>
+</div>
+
+<div class="fd-form__item">
+    <label class="fd-form__label" for="input-7">Read Only Input:</label>
+    <input class="fd-form__control" type="text" id="input-7" value="Read only data" readonly>
+</div>
+{% endcapture %}
+
+{% include display-component.html component=inputs %}
+
+<br>
+
+## Message with no icon
+
+Using the `fd-form__message--no-icon` modifier will render the message without any icons.
+
+- The inline help element is displayed as a ? Icon. On hover or click, help content is displayed.
+- Help content can also be visible at all times to avoid mistakes. This type of help generally contains validation rules about the data allowed in the input field. An example is "Maximum 20 characters". This is displayed below the input field.
+
+{% capture no-icon %}
+<div class="fd-form__item">
+    <label class="fd-form__label" for="input-2">
+        Information Input
+    </label>
+    <input class="fd-form__control is-information" type="text" id="input-2" 
+        placeholder="Field placeholder text">
+    <span class="fd-form__message fd-form__message--information fd-form__message--no-icon">
+        Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
+    </span>
+</div>
+
+<div class="fd-form__item">
+    <label class="fd-form__label" for="input-2" placeholder="Field placeholder text">
+        Valid/Success Input
+    </label>
+    <input class="fd-form__control is-valid" type="text" id="input-2" 
+        placeholder="Field placeholder text">
+    <span class="fd-form__message fd-form__message--valid fd-form__message--no-icon">
+        Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
+    </span>
+</div>
+
+<div class="fd-form__item">
+    <label class="fd-form__label" for="pvsz1273">
+        Warning Input
+    </label>
+    <input type="text" class="fd-form__control is-warning" id="pvsz1273" 
+        placeholder="Field placeholder text">
+    <span class="fd-form__message fd-form__message--warning fd-form__message--no-icon">
+        Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
+    </span>
+</div>
+
+<div class="fd-form__item">
+    <label class="fd-form__label" for="UI7xy545">
+        Invalid Input
+    </label>
+    <input type="text" class="fd-form__control is-invalid" id="UI7xy545" 
+    placeholder="Field placeholder text">
+    <span class="fd-form__message fd-form__message--error fd-form__message--no-icon">
+        Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
+    </span>
+</div>
+{% endcapture %}
+
+{% include display-component.html component=no-icon %}
+<br>
 
 ## Inputs help elements
 
@@ -100,81 +240,6 @@ Help elements give the user information about the input. Two types of help eleme
 {% endcapture %}
 
 {% include display-component.html component=inputs-help %}
-
-<br/>
-
-## Input States
-The state of the input field can reflect validity of the data entered, whether the input data is editable or disabled.
-* **Normal**: The field is editable but no validation has occurred
-* **Valid**: The data format entered has been validated and it's correct, such as an email address.
-* **Invalid**: The data entered is not valid and must be corrected.
-* **Warning**: The data entered is formatted correctly but there are other issues are problematic but will not stop the user from moving forward.
-* **Disabled**: This indicates the field is not editable. A common use case is that this field is dependent on a previous entry or selection within the form.
-* **Read Only**: Used to display static information in the context of a form.
-
-Along with Invalid and Warning, error messages should be displayed below the field so the user can correct the error and move forward.
-
-{% capture inputs %}
-<div class="fd-form__item">
-    <label class="fd-form__label" for="OatmD552">
-        Normal Input:
-    </label>
-    <input type="text" class="fd-form__control" id="OatmD552" placeholder="Field placeholder text">
-    <span class="fd-form__message">
-        Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
-    </span>
-</div>
-
-<div class="fd-form__item">
-    <label class="fd-form__label" for="input-2">
-        Valid Input:
-    </label>
-    <input class="fd-form__control is-valid" type="text" id="input-2">
-</div>
-
-<div class="fd-form__item">
-    <label class="fd-form__label" for="UI7xy545">
-        Invalid Input:
-    </label>
-    <input type="text" class="fd-form__control is-invalid" id="UI7xy545" placeholder="Field placeholder text">
-    <span class="fd-form__message fd-form__message--error">
-        Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
-    </span>
-</div>
-
-<div class="fd-form__item">
-    <label class="fd-form__label" for="pvsz1273">
-        Warning Input:
-    </label>
-    <input type="text" class="fd-form__control is-warning" id="pvsz1273" placeholder="Field placeholder text">
-    <span class="fd-form__message fd-form__message--warning">
-        Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
-    </span>
-</div>
-
-
-<div class="fd-form__item">
-    <label class="fd-form__label" for="VmsRZ860">
-        Field Label:
-    </label>
-    <input type="text" class="fd-form__control" id="VmsRZ860" placeholder="Field placeholder text">
-    <span class="fd-form__message fd-form__message--help">
-        Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
-    </span>
-</div>
-
-<div class="fd-form__item">
-    <label class="fd-form__label" for="input-6">Disabled Input:</label>
-    <input class="fd-form__control" type="text" id="input-6" value="Non editable data" disabled>
-</div>
-
-<div class="fd-form__item">
-    <label class="fd-form__label" for="input-7">Read Only Input:</label>
-    <input class="fd-form__control" type="text" id="input-7" value="Read only data" readonly>
-</div>
-{% endcapture %}
-
-{% include display-component.html component=inputs %}
 
 
 <br>

@@ -23,7 +23,7 @@
   //action colors
   --fd-color-action: var(--fd-color-action-1);
   --fd-color-action-hover: #{map-get($fd-colors-action-states, "hover")};
-  --fd-color-action-focus: #{map-get($fd-colors-action-states, "hover")};
+  --fd-color-action-focus: #{map-get($fd-colors-action-states, "focus")};
   --fd-color-action-selected: #{map-get($fd-colors-action-states, "selected")};
   --fd-color-action-disabled: #{map-get($fd-colors-action-states, "disabled")};
   --fd-color-action-visited: #{map-get($fd-colors-action-states, "visited")};
@@ -32,6 +32,7 @@
   --fd-color-positive: #{$fd-color--positive};
   --fd-color-negative: #{$fd-color--negative};
   --fd-color-alert: #{$fd-color--alert};
+  --fd-color-information: #{$fd-color--information};
 
   //form colors
   --fd-forms-color--focus: #{$fd-forms-color--focus};

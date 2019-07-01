@@ -59,11 +59,7 @@ form-item:
     {%- if type == "checkbox" or type == "radio" or type == "toggle" %}
     <label class="fd-form__label" {{ ' aria-required="'+ state.required +'"'  if state.required }} for="{{_id}}">
         {{ form_control(type,_id,properties,state=state,aria=aria,modifier=modifier.control) }}
-        {%- if state.required %}
-        {{ properties.label+'*' }}
-        {%- else %}
         {{ properties.label }}
-        {%- endif %}
         {%- if properties.help %}
         <span class="fd-form__help">
             {{ inline_help({ content: properties.help }) }}
@@ -72,11 +68,7 @@ form-item:
     </label>
     {%- else %}
     <label class="fd-form__label" {{ ' aria-required="'+ state.required +'"' if state.required }}  for="{{_id}}">
-       {%- if state.required %}
-        {{ properties.label+'*' }}
-        {%- else %}
         {{ properties.label }}
-        {%- endif %}
         {%- if properties.help %}
         <span class="fd-form__help">
             {{ inline_help({ content: properties.help }) }}

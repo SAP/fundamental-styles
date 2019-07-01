@@ -21,9 +21,10 @@
 {{ form_item() }}
 {{ form_item(state={ required: true }) }}
 {{ form_item(state={ status: "valid" }) }}
+{{ form_item(state={ status: "warning" }) }}
 {{ form_item(state={ status: "invalid" }) }}
-{{ form_item(state={ disabled: true }) }}
-{{ form_item(state={ readonly: true }) }}
+{{ form_item(properties={value: "Disabled Field", label: "Field Label"},state={ disabled: true }) }}
+{{ form_item(properties={value: "Read Only", label: "Field Label"}, state={ readonly: true }) }}
 {% endset %}
 {{ format(example) }}
 <br><br>
@@ -114,10 +115,47 @@
         placeholder: "Field placeholder text",
         message: "Pellentesque metus lacus commodo eget justo ut rutrum varius nunc" },
     modifier={
+        message: "valid"
+    },
+    state={ status: "valid" }
+    )
+}}
+
+{{ form_item(
+    properties={
+        label: "Field Label",
+        placeholder: "Field placeholder text",
+        message: "Pellentesque metus lacus commodo eget justo ut rutrum varius nunc" },
+    modifier={
+        message: "information"
+    },
+    state={ status: "information" }
+    )
+}}
+
+{{ form_item(
+    properties={
+        label: "Field Label",
+        placeholder: "Field placeholder text",
+        message: "Pellentesque metus lacus commodo eget justo ut rutrum varius nunc" },
+    modifier={
+        message: ["information", "no-icon"]
+    },
+    state={ status: "information" }
+    )
+}}
+
+{{ form_item(
+    properties={
+        label: "Field Label",
+        placeholder: "Field placeholder text",
+        message: "Pellentesque metus lacus commodo eget justo ut rutrum varius nunc" },
+    modifier={
         message: "help"
     }
     )
 }}
+
 {% endset %}
 {{ format(example) }}
 <br><br>

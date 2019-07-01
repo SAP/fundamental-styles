@@ -9,7 +9,7 @@
             .fd-form__item+(--check, --inline)
                 .fd-form__label
                 .fd-form__control
-            .fd-form__message(--help, --error, --warning)
+            .fd-form__message(--help, --error, --warning, --valid, --information, --no-icon)
 */
 $block: #{$fd-namespace}-form;
 .#{$block} {
@@ -30,7 +30,6 @@ $block: #{$fd-namespace}-form;
         @include fd-last-child();
         .#{$block}__item {
             @include fd-last-child();
-            // margin-right: $fd-form-item-gutter;
         }
     }
     &__set {
@@ -59,7 +58,7 @@ $block: #{$fd-namespace}-form;
             .#{$block}__label {
                 box-sizing: content-box;
                 &:focus-within {
-                    outline-width: 1px;
+                    outline-width: fd-space(.25);
                     outline-style: dotted;
                     @include fd-var-color("outline-color", fd-color-state("hover", "action"), --fd-color-action-focus);
                     padding: $fd-form-item-focus-gutter;
@@ -116,6 +115,13 @@ $block: #{$fd-namespace}-form;
             opacity: 0.4;
         }
     }
+    &__label[aria-required="true"] {
+        &::after {
+            content: "*";
+            color: fd-color("status", 3);
+            margin-left: fd-space(1);
+        }
+    }
     &__control {
         min-width: $fd-forms-height--input-check;
     }
@@ -132,9 +138,10 @@ $block: #{$fd-namespace}-form;
         clear: both;
         display: block;
         @include fd-type(#{$fd-form-message-font-size});
-        color: $fd-form-message-color;
-        padding: fd-space(2) 0;
+        color: fd-color("text", 1);
+        padding: fd-space(1.625) 0;
         position: relative;
+
         //adjust for checks
         @at-root {
             .#{$block}__item--check + & {
@@ -147,8 +154,9 @@ $block: #{$fd-namespace}-form;
             }
         }
         &::before {
-            width: 18px;
-            height: 18px;
+            $fd-form-message-icon-size: fd-space(4.5);
+            width: $fd-form-message-icon-size;
+            height: $fd-form-message-icon-size;
             font-style: normal;
             font-size: 1.3em;
             font-family: "SAP-icons";
@@ -156,34 +164,69 @@ $block: #{$fd-namespace}-form;
             left: 0;
             color: fd-color("text", 5);
             text-align: center;
-            line-height: 18px;
+            line-height: $fd-form-message-icon-size;
         }
-        &--warning, &--error, &--help {
-            padding-left: fd-space(6);
+        &--information, &--valid, &--warning, &--error, &--help {
+            margin: fd-space(.25) fd-space(.5);
+            padding-left: fd-space(8);
+            padding-right: fd-space(1);
+            border-bottom-left-radius: fd-space(1);
+            border-bottom-right-radius: fd-space(1);
             &::before {
-                left: 0;
-                top: 6px;
+                left: fd-space(2);
+                top: fd-space(1.25);
+            }
+            @include fd-rtl() {
+                padding-left: fd-space(1);
+                padding-right: fd-space(8);
+                &::before {
+                    left: 0;
+                    right: fd-space(2);
+                }
             }
         }
         &--help {
-            color: fd-color(text);
             &::before {
                 color: fd-color(text);
                 content: "";
             }
         }
+        &--information {
+            background: fd-color("background", 6);
+            &::before {
+                color: $fd-color--information;
+                content: "";
+            }
+        }
+        &--valid {
+            background: fd-color("background", 3);
+            &::before {
+                color: $fd-color--success;
+                content: "";
+            }
+        }
         &--warning {
-            color: $fd-color--warning;
+            background: fd-color("background", 4);
             &::before {
                 color: $fd-color--warning;
                 content: "";
             }
         }
         &--error {
-            color: $fd-color--error;
+            background: fd-color("background", 5);
+
             &::before {
                 content: "";
                 color: $fd-color--error;
+            }
+        }
+        &--no-icon {
+            padding-left: fd-space(1);
+            &::before {
+                display: none;
+            }
+            @include fd-rtl() {
+                padding-right: fd-space(1);
             }
         }
     }

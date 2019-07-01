@@ -153,6 +153,7 @@ $fd-color--action: map-get($fd-colors-action, 1) !default;
 $fd-colors-action-states: () !default;
 $fd-colors-action-states: map-merge((
   "hover": adjust-color($fd-color--action, $lightness: -7%),
+  "focus": adjust-color($fd-color--action, $lightness: 30%),
   "selected": adjust-color($fd-color--action, $lightness: -10%, $saturation: 7%),
   "disabled": change-color($fd-color--action, $alpha: 0.4),
   "visited": adjust-hue($fd-color--action, 45deg),
@@ -172,6 +173,7 @@ $fd-color--alert: map-get($fd-colors-status, 2) !default;
 $fd-color--warning: $fd-color--alert !default;
 $fd-color--positive: map-get($fd-colors-status, 1) !default;
 $fd-color--success: $fd-color--positive !default;
+$fd-color--information: map-get($fd-colors-status, 5) !default;
 
 $fd-colors-background-states: () !default;
 $fd-colors-background-states: map-merge((
@@ -243,7 +245,7 @@ $fd-button-line-height: $fd-forms-height - 2;
 $fd-button-line-height--compact: $fd-forms-height--compact - 2;
 
 $fd-forms-color: $fd-color !default;
-$fd-forms-color--placeholder: adjust-color(map-get($fd-colors-text, 3), $lightness: 14) !default;
+$fd-forms-color--placeholder: map-get($fd-colors-text, 4) !default;
 
 $fd-forms-color--focus: $fd-forms-color !default;
 $fd-forms-color--disabled: map-get($fd-colors-text, 3) !default;
