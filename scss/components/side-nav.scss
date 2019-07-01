@@ -80,7 +80,6 @@ $block: #{$fd-namespace}-side-nav;
         display: flex;
         padding: $fd-side-nav-link-padding;
         color: $fd-side-nav-link-color;
-        display: block;
         text-decoration: none;
         @include fd-type("0", "normal");
 
