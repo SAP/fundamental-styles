@@ -47,7 +47,6 @@ $fd-status-label-icon-size: fd-space(4) !default;
 .#{$block} {
   @include fd-var-size("--fd-status-label-color", #51555a, --fd-color-text-2);
   @include fd-var-size("--fd-status-label-icon-background-color", #51555a, --fd-color-text-2);
-  
 
     //LOCAL VARS (set all themeable properties, always include !default)
 
@@ -105,7 +104,6 @@ $fd-status-label-icon-size: fd-space(4) !default;
     }
     &--available {
       @include fd-var-size("--fd-status-label-icon-background-color", #0a7e3e, --fd-color-positive);
-      
       @extend %fd-status-icon;
       &::before {
         width: 7px;
