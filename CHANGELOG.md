@@ -2,6 +2,57 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.18"></a>
+# [0.2.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.17...v0.2.0-rc.18) (2019-06-30)
+
+
+### Bug Fixes
+
+* added self-contained style for link component ([#118](https://github.com/SAP/fundamental-styles/issues/118)) ([d4d1833](https://github.com/SAP/fundamental-styles/commit/d4d1833)), closes [#101](https://github.com/SAP/fundamental-styles/issues/101) [#97](https://github.com/SAP/fundamental-styles/issues/97) [#101](https://github.com/SAP/fundamental-styles/issues/101) [#101](https://github.com/SAP/fundamental-styles/issues/101) [#101](https://github.com/SAP/fundamental-styles/issues/101)
+* added self-contained styles for the badge component ([#121](https://github.com/SAP/fundamental-styles/issues/121)) ([7dbb13f](https://github.com/SAP/fundamental-styles/commit/7dbb13f)), closes [#99](https://github.com/SAP/fundamental-styles/issues/99) [#99](https://github.com/SAP/fundamental-styles/issues/99)
+
+
+
+<a name="0.2.0-rc.17"></a>
+# [0.2.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.16...v0.2.0-rc.17) (2019-06-28)
+
+
+### Bug Fixes
+
+* Added self-contained style for token component ([#133](https://github.com/SAP/fundamental-styles/issues/133)) ([8de7d3d](https://github.com/SAP/fundamental-styles/commit/8de7d3d))
+
+
+
+<a name="0.2.0-rc.16"></a>
+# [0.2.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.15...v0.2.0-rc.16) (2019-06-28)
+
+
+### Bug Fixes
+
+* fixed misalignment issue with icon ([#88](https://github.com/SAP/fundamental-styles/issues/88)) ([2662e89](https://github.com/SAP/fundamental-styles/commit/2662e89))
+
+
+
+<a name="0.2.0-rc.15"></a>
+# [0.2.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.14...v0.2.0-rc.15) (2019-06-28)
+
+
+### Bug Fixes
+
+* Fixed button text and border when disabled button is hover or pressed ([#75](https://github.com/SAP/fundamental-styles/issues/75)) ([15a9822](https://github.com/SAP/fundamental-styles/commit/15a9822))
+
+
+
+<a name="0.2.0-rc.14"></a>
+# [0.2.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.13...v0.2.0-rc.14) (2019-06-28)
+
+
+### Bug Fixes
+
+* added self-contained styles for image component ([#127](https://github.com/SAP/fundamental-styles/issues/127)) ([d32b370](https://github.com/SAP/fundamental-styles/commit/d32b370))
+
+
+
 <a name="0.2.0-rc.13"></a>
 # [0.2.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.12...v0.2.0-rc.13) (2019-06-27)
 

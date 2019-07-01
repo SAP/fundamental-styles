@@ -64,6 +64,66 @@
 
     {% endfor %}
 
+<h2> disabled </h2>
 
+{% set example %}
+
+  {% call button_group() -%}
+    {{-  button(
+      { icon: 'survey' },
+      disabled = true,
+        modifier={ block: [""] },
+        aria={ label: 'Survey' })
+      }}
+    {{-  button(
+        { icon: 'pie-chart' },
+          modifier={ block: [""] },
+          aria={ label: 'Chart' })
+        }}
+    {{-  button(
+          { icon: 'pool' },
+            modifier={ block: [""] },
+            aria={ label: 'Pool' })
+          }}
+  {%- endcall %}
+
+    {% call button_group() -%}
+    {{-  button(
+      { label: 'First' },
+        modifier={ block: ["compact"] },
+        aria={ })
+      }}
+    {{-  button(
+        { label: 'Second' },
+        disabled = true,
+          modifier={ block: ["compact"] },
+          aria={ })
+        }}
+    {{-  button(
+          { label: 'Third' },
+            modifier={ block: ["compact"] })
+          }}
+  {%- endcall %}
+
+  {% call button_group() -%}
+    {{-  button(
+      { label: 'First' },
+        modifier={ block: [""] },
+        aria={ })
+      }}
+    {{-  button(
+        { label: 'Second' },
+          modifier={ block: [""] },
+          aria={ })
+        }}
+    {{-  button(
+          { label: 'Third' },
+          disabled = true,
+            modifier={ block: [""] })
+          }}
+  {%- endcall %}
+
+    {% endset %}
+    {{ format(example) }}
 
 {% endblock %}

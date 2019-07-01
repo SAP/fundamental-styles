@@ -25,7 +25,7 @@ The left navigation can always display or expand/collapse using the menu icon wi
         </li>
         <li class="fd-side-nav__item">
             <a class="fd-side-nav__link is-selected" aira-selected="true" href="#">
-                Link Item
+               Link Item
             </a>
         </li>
         <li class="fd-side-nav__item">
@@ -65,12 +65,12 @@ Use this to group navigation. Titles are not clickable.
         <ul class="fd-side-nav__list">
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    icon link
+                   icon link
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    item link
+                   item link
                 </a>
             </li>
             <li class="fd-side-nav__item">
@@ -141,7 +141,7 @@ Use this when there is more than one level of hierarchy in the left navigation. 
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link has-child" href="#" aria-controls="Rk65C501"
                 aria-haspopup="true">
-                item link
+                    item link
             </a>
             <ul class="fd-side-nav__sublist" id="Rk65C501" aria-hidden="true">
                 <li class="fd-side-nav__subitem">
@@ -274,19 +274,19 @@ Use this when there is more than one level of hierarchy in the left navigation. 
         <li class="fd-side-nav__item">
             <a class="fd-side-nav__link" href="#">
                 <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                Link icon
+                Link icon with two row text to test wrapping 
             </a>
         </li>
         <li class="fd-side-nav__item">
             <a class="fd-side-nav__link" href="#">
                 <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                Link icon
+                Link icon with two row text to test wrapping  
             </a>
         </li>
         <li class="fd-side-nav__item">
             <a class="fd-side-nav__link" href="#">
                 <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                Link icon
+                Link icon with two row text to test wrapping  
             </a>
         </li>
     </ul>
