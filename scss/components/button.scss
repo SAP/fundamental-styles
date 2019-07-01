@@ -464,13 +464,6 @@ a.#{$block} {
   }
 }
 
-
-//CONTEXTS
-.#{$block}-group [class*="#{$block}--"],
-.#{$block}-group .#{$block} {
-  @extend .#{$block}--standard;
-}
-
 /* stylelint-disable no-duplicate-selectors */
 //DEPRECATED
 .#{$block} {
