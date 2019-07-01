@@ -10,6 +10,30 @@ button {
     margin: 20px;
 }
 
+h1 {
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h6 {
+    font-size: 32px;
+}
+
 a {
-    color: indigo;
+    color: hotpink;
 }
