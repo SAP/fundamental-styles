@@ -1,5 +1,6 @@
 :root {
     --fd-color-action-1: magenta;
+    --fd-color-action: orangered;
     --fd-color-action-2: purple;
     --fd-color-background-default: teal; 
     --fd-color-background-alert: lightSalmon;
@@ -13,9 +14,20 @@
     --fd-color-status-2: #666;
     --fd-color-status-3: #999;
     --fd-color-status-4: #ccc;
+    --fd-color-text-2: mediumaquamarine;
 
     --fd-forms-height: 50px;
     --fd-forms-height-compact: 25px;
     --fd-button-line-height: 50px;
     --fd-button-line-height-compact: 25px;
+
+    --fd-color-text-1: rgb(93%, 2%, 45%);
+    --fd-color-background-6: powderblue;
+    --fd-color-text-5: gold;
+    --fd-color-positive: rgb(87%, 33%, 21%);
+    --fd-color-negative: rgb(9%, 75%, 29%);
+    --fd-color-background-3: rgb(47%, 36%, 91%);
+    --fd-color-background-4: rgb(51%, 6%, 2%);
+    --fd-color-alert: rgb(84%, 13%, 91%);
+    --fd-color-background-5: rgb(13%, 71%, 90%);
 }
