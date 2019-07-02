@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.19"></a>
+# [0.2.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.18...v0.2.0-rc.19) (2019-07-02)
+
+
+### Bug Fixes
+
+* added self-contained style for the status-label component ([#122](https://github.com/SAP/fundamental-styles/issues/122)) ([3d3f18b](https://github.com/SAP/fundamental-styles/commit/3d3f18b)), closes [#98](https://github.com/SAP/fundamental-styles/issues/98) [#98](https://github.com/SAP/fundamental-styles/issues/98) [#98](https://github.com/SAP/fundamental-styles/issues/98) [#98](https://github.com/SAP/fundamental-styles/issues/98) [#98](https://github.com/SAP/fundamental-styles/issues/98) [#98](https://github.com/SAP/fundamental-styles/issues/98)
+* added self-contained styles for side-nav component ([#137](https://github.com/SAP/fundamental-styles/issues/137)) ([8ffe17a](https://github.com/SAP/fundamental-styles/commit/8ffe17a))
+
+
+
 <a name="0.2.0-rc.18"></a>
 # [0.2.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.17...v0.2.0-rc.18) (2019-06-30)
 
