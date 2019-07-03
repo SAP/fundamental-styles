@@ -187,10 +187,10 @@ $block: #{$fd-namespace}-input-group;
         flex: 1;
         width: 100%;
         display: block;
-        min-width: fd-space(12);
         @include fd-var-color("background-color", fd-color(neutral, 1), --fd-color-neutral-1);
         &--step-up,
         &--step-down {
+            min-width: fd-space(12);
             @include fd-type("0");
             @include fd-var-color("color", $fd-color--action, --fd-color-action);
             position: relative;
@@ -206,6 +206,7 @@ $block: #{$fd-namespace}-input-group;
             }
         }
         &--step-up {
+            min-width: fd-space(12);
             border-bottom-style: solid;
             border-bottom-width: 1px;
             @include fd-var-color("border-bottom-color", $fd-forms-border-color, --fd-forms-border-color);
@@ -213,6 +214,7 @@ $block: #{$fd-namespace}-input-group;
             border-bottom-right-radius: 0;
         }
         &--clear {
+            min-width: fd-space(12);
             background-color: transparent;
             background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjMDA5Q0RGIiBkPSJNMTMgMEM1LjgyIDAgMCA1LjgyIDAgMTNzNS44MiAxMyAxMyAxMyAxMy01LjgyIDEzLTEzUzIwLjE4IDAgMTMgMHptNS4xOTUgMTcuMzk2YS41NjQuNTY0IDAgMSAxLS43OTkuNzk5TDEzIDEzLjc5OWwtNC4zOTYgNC4zOTZhLjU2NC41NjQgMCAxIDEtLjc5OS0uNzk5TDEyLjIwMSAxMyA3LjgwNSA4LjYwNGEuNTY0LjU2NCAwIDEgMSAuNzk5LS43OTlMMTMgMTIuMjAxbDQuMzk2LTQuMzk2YS41NjQuNTY0IDAgMSAxIC43OTkuNzk5TDEzLjc5OSAxM2w0LjM5NiA0LjM5NnoiLz48L3N2Zz4=');
             background-repeat: no-repeat;
@@ -221,6 +223,12 @@ $block: #{$fd-namespace}-input-group;
             position: relative;
             left: -(fd-space(11));
             z-index: map-get($fd-z-index-levels, "second");
+        }
+        &--picker {
+            height: 100% !important;
+            max-height: 100% !important;
+            border-top-right-radius: $fd-border-radius;
+            border-bottom-right-radius: $fd-border-radius;
         }
     }
     .fd-input {
