@@ -2,6 +2,11 @@
     --fd-color-action-1: magenta;
     --fd-color-action: orangered;
     --fd-color-action-2: purple;
+    --fd-color-background-default: teal; 
+    --fd-color-background-alert: lightSalmon;
+    --fd-color-background-negative: tomato;
+    --fd-color-background-positive: khaki;
+    --fd-color-background-information: plum; 
     --fd-color-background-2: palegoldenrod;
     --fd-color-action-hover: lime;
     --fd-color-action-selected: powderblue;

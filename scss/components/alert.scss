@@ -160,4 +160,8 @@ $block: #{$fd-namespace}-alert;
         @include fd-icon("message-information", "l", "after");
       }
     }
+    &__text {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
 }
