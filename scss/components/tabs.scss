@@ -39,7 +39,7 @@ $block: #{$fd-namespace}-tabs;
   @include fd-var-color("border-bottom-color", $fd-tabs-background-color, --fd-tabs-background-color);
   &__item {
     @include fd-reset();
-      padding: 0 $fd-tabs-link-padding-x;
+    padding: 0 $fd-tabs-link-padding-x;
   }
   &__link {
     @include fd-reset();

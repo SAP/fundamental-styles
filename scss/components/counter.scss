@@ -11,7 +11,7 @@ $block: #{$fd-namespace}-counter;
   $fd-counter-radius: $fd-border-radius !default;
   $fd-counter-background: fd-color("status", 4) !default;
   $fd-counter-color: fd-color("text", 5) !default;
-  $fd-counter-font-size: 0.785714285714286em !default;
+  $fd-counter-font-size: 0.78571em !default;
 
   --fd-counter-color: var(--fd-color-text-5);
   --fd-counter-background-color: var(--fd-color-status-4);
@@ -20,13 +20,15 @@ $block: #{$fd-namespace}-counter;
   @include fd-var-color("color", $fd-counter-color, --fd-counter-color);
   @include fd-var-color("background-color", $fd-counter-background, --fd-counter-background-color);
   font-size: $fd-counter-font-size;
+  font-family: $fd-font-family;
+  -webkit-font-smoothing: antialiased;
   line-height: 1;
   display: inline-block;
   text-align: center;
   padding: fd-space(1);
   &--notification {
     --fd-counter-background-color: var(--fd-color-status-3);
-    @include fd-var-color("background-color", fd-color("status", 3));
+    @include fd-var-color("background-color", $fd-counter-background, --fd-counter-background-color);
     position: absolute;
     transform: translate(-40%, -50%);
     @include fd-rtl() {
