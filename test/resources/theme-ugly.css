@@ -1,6 +1,6 @@
 :root {
   --fd-color-action: orangered;
-  --fd-color-action-1: rgb(166, 255, 0);
+  --fd-color-action-1: magenta;
   --fd-color-action-2: purple;
   --fd-color-action-hover: lime;
   --fd-color-action-selected: powderblue;
@@ -15,7 +15,6 @@
   --fd-color-background-4: rgb(51%, 6%, 2%);
   --fd-color-background-5: rgb(13%, 71%, 90%);
   --fd-color-background-6: powderblue;
-  --fd-color-background-hover: darkblue;
   --fd-color-status-1: #333;
   --fd-color-status-2: #666;
   --fd-color-status-3: #999;
@@ -30,7 +29,7 @@
   --fd-forms-height-compact: 25px;
   --fd-button-line-height: 50px;
   --fd-button-line-height-compact: 25px;
-  --fd-color-neutral-1: rgb(117, 7, 7);
+  --fd-color-neutral-1: #fafafa;
   --fd-color-neutral-2: yellow;
   --fd-color-neutral-3: green;
   --fd-color-accent-1: #bc3f8c;
@@ -48,4 +47,5 @@
   --fd-color-accent-13: #2b78c5;
   --fd-color-accent-14: #6367de;
   --fd-color-accent-15: #984bd2;
+  --fd-counter-background-color: Chocolate;
 }
