@@ -163,6 +163,11 @@ $block: #{$fd-namespace}-input-group;
                 width: 0;
             }
         }
+        &.is-disabled {
+            border-color: var(--fd-color-neutral-2);
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
     }
     &--before {
         #{$fd-elements-inputs--text} {
@@ -174,6 +179,9 @@ $block: #{$fd-namespace}-input-group;
         #{$fd-elements-inputs--text} {
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
+            &:disabled {
+                opacity: 0.4;
+            }
         }
     }
     &__button {
