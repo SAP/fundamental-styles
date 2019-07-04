@@ -11,7 +11,7 @@ $block: #{$fd-namespace}-counter;
   $fd-counter-radius: $fd-border-radius !default;
   $fd-counter-background: fd-color("status", 4) !default;
   $fd-counter-color: fd-color("text", 5) !default;
-  $fd-counter-font-size: 0.78571em !default;
+  $fd-counter-font-size: 0.785714285714286em !default;
 
   --fd-counter-color: var(--fd-color-text-5);
   --fd-counter-background-color: var(--fd-color-status-4);
