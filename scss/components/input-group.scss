@@ -224,12 +224,12 @@ $block: #{$fd-namespace}-input-group;
             left: -(fd-space(11));
             z-index: map-get($fd-z-index-levels, "second");
         }
-        &--picker {
-            height: 100% !important;
-            max-height: 100% !important;
-            border-top-right-radius: $fd-border-radius;
-            border-bottom-right-radius: $fd-border-radius;
-        }
+        @include fd-rtl() {
+            border-top-left-radius: $fd-border-radius;
+            border-bottom-left-radius: $fd-border-radius;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+          }
     }
     .fd-input {
         &:focus {
