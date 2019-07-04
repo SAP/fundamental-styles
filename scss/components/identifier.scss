@@ -111,9 +111,27 @@ $block: #{$fd-namespace}-identifier;
     }
     //background
     &--transparent {
-      --fd-identifier-color: var(--fd-color-text-1);
       --fd-identifier-background-color: transparent;
-      @include fd-var-color("color", $fd-color);
+      @include fd-var-color("color", map-get($fd-colors-text, 1), --fd-color-text-1);
       @include fd-var-color("background-color", transparent);
+    }
+
+    .#{$fd-namespace}-has-background-color-none {
+      background-color: transparent !important;
+    }
+    @each $type, $shades in $fd-colors {
+      @each $shade, $value in $shades {
+          @if $shade == 1 {
+              //set default selector for convenience
+              .#{$fd-namespace}-has-background-color-#{$type},
+              .#{$fd-namespace}-has-background-color-#{$type}-#{$shade} {
+                  @include fd-var-color("background-color", $value, --fd-color-#{$type}-#{$shade}, true);
+              }
+          } @else {
+              .#{$fd-namespace}-has-background-color-#{$type}-#{$shade} {
+                  @include fd-var-color("background-color", $value, --fd-color-#{$type}-#{$shade}, true);
+              }
+          }
+      }
     }
 }
