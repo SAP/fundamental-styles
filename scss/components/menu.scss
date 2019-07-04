@@ -70,6 +70,7 @@ $block: #{$fd-namespace}-menu;
     &__title {
       display: block;
       margin-bottom: 0;
+      margin-top: 0;
       padding: $fd-menu-title-padding $fd-menu-item-padding-x;
       @include fd-type("-1", "normal");
       text-transform: uppercase;
