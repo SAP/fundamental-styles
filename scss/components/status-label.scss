@@ -28,7 +28,7 @@ $fd-status-label-icon-size: fd-space(4) !default;
     position: absolute;
     top: 0;
     left: 0;
-    @include fd-var-color("background-color", $fd-status-label-color, --fd-status-label-icon-background-color);
+    @include fd-var-color("background-color", map-get($fd-colors-text, 2), --fd-status-label-icon-background-color);
   }
   @include fd-rtl() {
     padding-left: initial;
@@ -45,8 +45,6 @@ $fd-status-label-icon-size: fd-space(4) !default;
 
 
 .#{$block} {
-
-
   --fd-status-label-color: var(--fd-color-text-2);
   --fd-status-label-icon-background-color: var(--fd-color-text-2);
 
@@ -81,7 +79,7 @@ $fd-status-label-icon-size: fd-space(4) !default;
     position: relative;
     @include fd-reset();
 
-    @include fd-var-color("color", $fd-status-label-color, --fd-status-label-color);
+    @include fd-var-color("color", map-get($fd-colors-text, 2), --fd-status-label-color);
 
 
     &::before {
@@ -94,15 +92,15 @@ $fd-status-label-icon-size: fd-space(4) !default;
     //BLOCK MODIFIERS ************
     &--success {
       --fd-status-label-color: var(--fd-color-positive);
-      @include fd-var-color("color", $fd-color--success);
+      @include fd-var-color("color", $fd-color--success, --fd-status-label-color);
     }
     &--warning {
       --fd-status-label-color: var(--fd-color-alert);
-      @include fd-var-color("color", $fd-color--warning);
+      @include fd-var-color("color", $fd-color--warning, --fd-status-label-color);
     }
     &--error {
       --fd-status-label-color: var(--fd-color-negative);
-      @include fd-var-color("color", $fd-color--error);
+      @include fd-var-color("color", $fd-color--error, --fd-status-label-color);
     }
     &--available {
       --fd-status-label-icon-background-color: var(--fd-color-positive);
@@ -115,7 +113,7 @@ $fd-status-label-icon-size: fd-space(4) !default;
         background-image: url($fd-status-indicator-available);
       }
       &::after {
-        @include fd-var-color("background-color", $fd-color--success);
+        @include fd-var-color("background-color", $fd-color--success, --fd-status-label-icon-background-color);
       }
       @include fd-rtl() {
         &::before {
@@ -134,7 +132,7 @@ $fd-status-label-icon-size: fd-space(4) !default;
         background-image: url($fd-status-indicator-away);
       }
       &::after {
-        @include fd-var-color("background-color", $fd-color--warning);
+        @include fd-var-color("background-color", $fd-color--warning, --fd-status-label-icon-background-color);
       }
       @include fd-rtl() {
         &::before {
@@ -153,7 +151,7 @@ $fd-status-label-icon-size: fd-space(4) !default;
         background-image: url($fd-status-indicator-busy);
       }
       &::after {
-        @include fd-var-color("background-color", $fd-color--error);
+        @include fd-var-color("background-color", $fd-color--error, --fd-status-label-icon-background-color);
       }
       @include fd-rtl() {
         &::before {

@@ -8,5 +8,6 @@
 $block: #{$fd-namespace}-link;
 
 .#{$block} {
+  @include fd-reset();
   @include fd-link();
 }
