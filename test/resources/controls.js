@@ -111,7 +111,7 @@
     const toggleUnNormalizeState = localStorage.getItem('toggleUnNormalizeState');
     if (toggleUnNormalizeState == "true") {
         toggleUnNormalize.checked = true;
-        toggleStylesheet(toggleUnNormalize, true);
+        toggleStylesheet(unNormalizeCss, true);
     }
     toggleUnNormalize.addEventListener('change', function () {
         if (this.checked) {
@@ -128,7 +128,7 @@
     const toggleNormalizeState = localStorage.getItem('toggleNormalizeState');
     if (toggleNormalizeState == "true") {
         toggleNormalize.checked = true;
-        toggleStylesheet(toggleNormalize, true);
+        toggleStylesheet(normalizeCss, true);
     }
     toggleNormalize.addEventListener('change', function () {
         if (this.checked) {
