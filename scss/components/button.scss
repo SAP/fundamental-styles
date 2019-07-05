@@ -554,8 +554,9 @@ a.#{$block} {
     &--secondary {
       --fd-button-border-color: transparent;
       @include fd-hover() {
-        --fd-button-background-color: var(--fd-color-neutral-1);
-        --fd-button-color: var(--fd-color-action-1);
+        @include fd-var-color("color", map-get($fd-colors-action, 1), --fd-button-color);
+        @include fd-var-color("background-color", map-get($fd-colors-neutral, 1),--fd-button-background-color);
+
         @include fd-disabled() {
           --fd-button-background-color: var(--fd-color-background-2);
           --fd-button-color: var(--fd-color-action-1);

@@ -111,9 +111,8 @@ $block: #{$fd-namespace}-identifier;
     }
     //background
     &--transparent {
-      --fd-identifier-color: var(--fd-color-text-1);
       --fd-identifier-background-color: transparent;
-      @include fd-var-color("color", $fd-color);
+      @include fd-var-color("color", map-get($fd-colors-text, 1), --fd-color-text-1);
       @include fd-var-color("background-color", transparent);
     }
 }
