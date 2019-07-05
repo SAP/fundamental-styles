@@ -33,7 +33,7 @@ This gives you incredible flexibility to use individual components and enable [a
 npm install fundamental-styles --save
 ````
 
-> NOTE: We only distribute the fonts, icons and compiled CSS and [the SASS source](https://github.com/SAP/fundamental-styles/tree/master/scss), not the full project or HTML for specific components. If your project uses LESS, see [LESS compatible Fundamental Styles](https://github.com/SAP/fundamental-styles/wiki/LESS-compatible-fundamental-styles).
+> NOTE: We only distribute the fonts, icons and compiled CSS and [the SASS source](https://github.com/SAP/fundamental-styles/tree/master/scss), not the full project or HTML for specific components. 
 
 
 ## Working with the Project
