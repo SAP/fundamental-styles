@@ -106,12 +106,29 @@
         }
     });
 
+    const unNormalizeCss = "static/unnormalize.css";
+    const toggleUnNormalize = document.getElementById("toggleUnNormalize");
+    const toggleUnNormalizeState = localStorage.getItem('toggleUnNormalizeState');
+    if (toggleUnNormalizeState == "true") {
+        toggleUnNormalize.checked = true;
+        toggleStylesheet(unNormalizeCss, true);
+    }
+    toggleUnNormalize.addEventListener('change', function () {
+        if (this.checked) {
+            toggleStylesheet(unNormalizeCss, true);
+            localStorage.setItem("toggleUnNormalizeState", true);
+        } else {
+            toggleStylesheet(unNormalizeCss, false);
+            localStorage.setItem("toggleUnNormalizeState", false);
+        }
+    });
+
     const normalizeCss = "normalize/normalize.css";
     const toggleNormalize = document.getElementById("toggleNormalize");
     const toggleNormalizeState = localStorage.getItem('toggleNormalizeState');
     if (toggleNormalizeState == "true") {
         toggleNormalize.checked = true;
-        toggleStylesheet(toggleNormalize, true);
+        toggleStylesheet(normalizeCss, true);
     }
     toggleNormalize.addEventListener('change', function () {
         if (this.checked) {
