@@ -84,13 +84,13 @@ a.#{$block} {
       border-color: var(--fs-button-border-color);
       height: var(--fs-button-height);
       max-height: var(--fs-button-max-height);
-      min-height: var(--fs-button-min-width);
+      min-width: var(--fs-button-min-width);
       &:disabled {
         opacity: 0.4;
         cursor: not-allowed;
       }
       &::before {
-        margin-right: fd-space(2);
+        //margin-right: fd-space(2);
         vertical-align: text-bottom;
         font-size: 1rem;
         line-height: 1rem;
@@ -132,6 +132,12 @@ a.#{$block} {
 
   &--ghost {
     background-color: var(--fs-button-ghost-background);
+  }
+
+  &--compact {
+    padding: var(--fs-button-compact-padding);
+    height: var(--fs-button-compact-height);
+    max-height: var(--fs-button-compact-max-height);
   }
 }
 

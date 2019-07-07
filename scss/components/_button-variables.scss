@@ -2,10 +2,10 @@
   --fs-button-border-width: var(--sapButton_BorderWidth, $sapButton_BorderWidth);
   --fs-button-border-radius: var(--sapButton_BorderCornerRadius, $sapButton_BorderCornerRadius);
   --fs-button-border-color: var(--sapButton_BorderColor, $sapButton_BorderColor);
+  --fs-button-border-style: solid;
   --fs-button-background: var(--sapButton_Background, $sapButton_Background);
   --fs-button-text-color: var(--sapButton_TextColor, $sapButton_TextColor);
   --fs-button-icon-color: var(--sapButton_IconColor, $sapButton_IconColor);
-  --fs-button-border-style: solid;
 
   --fs-button-hover-background: var(--sapButton_Hover_Background, sapButton_Hover_Background);
   --fs-button-hover-text-color: var(--sapButton_Hover_TextColor, $sapButton_Hover_TextColor);
@@ -17,12 +17,19 @@
   --fs-button-active-text-color: var(--sapButton_Active_TextColor, $sapButton_Active_TextColor);
   --fs-button-active-icon-color: var(--sapButton_Active_TextColor, $sapButton_Active_TextColor);
 
+  --fs-button-font-size: var(--sapFontSize, $sapFontSize);
+  --fs-button-margin: 0;
+
+  --fs-button-padding: 0 calc(0.6875rem - var(--sapButton_BorderWidth)) 0 calc(0.6875rem - var(--sapButton_BorderWidth));
   --fs-button-height: var(--sapElement_Height, $sapElement_Height);
   --fs-button-max-height: var(--sapElement_Height, $sapElement_Height);
   --fs-button-min-width: var(--sapElement_Height, $sapElement_Height);
-  --fs-button-font-size: var(--sapFontSize, $sapFontSize);
-  --fs-button-padding: 0 0.6875rem 0 0.6875rem;
-  --fs-button-margin: 0;
+
+  --fs-button-compact-padding: 0 calc(0.5rem - var(--sapButton_BorderWidth)) 0
+    calc(0.5rem - var(--sapButton_BorderWidth));
+  --fs-button-compact-height: 1.625rem;
+  --fs-button-compact-max-height: 1.625rem;
+  --fs-button-compact-min-width: 2rem;
 
   //button designs
   //emphasized
