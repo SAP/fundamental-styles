@@ -31,6 +31,8 @@
   --fs-button-compact-max-height: 1.625rem;
   --fs-button-compact-min-width: 2rem;
 
+  --fs-button-focus-color: var(--sapContent_FocusColor, $sapContent_FocusColor);
+
   //button designs
   //emphasized
   --fs-button-emphasized-border-color: var(--sapButton_Emphasized_BorderColor, $sapButton_Emphasized_BorderColor);
