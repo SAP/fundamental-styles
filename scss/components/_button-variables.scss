@@ -1,0 +1,101 @@
+:root {
+  --fs-button-border-width: var(--sapButton_BorderWidth, $sapButton_BorderWidth);
+  --fs-button-border-radius: var(--sapButton_BorderCornerRadius, $sapButton_BorderCornerRadius);
+  --fs-button-border-color: var(--sapButton_BorderColor, $sapButton_BorderColor);
+  --fs-button-background: var(--sapButton_Background, $sapButton_Background);
+  --fs-button-text-color: var(--sapButton_TextColor, $sapButton_TextColor);
+  --fs-button-icon-color: var(--sapButton_IconColor, $sapButton_IconColor);
+  --fs-button-border-style: solid;
+
+  --fs-button-hover-background: var(--sapButton_Hover_Background, sapButton_Hover_Background);
+  --fs-button-hover-text-color: var(--sapButton_Hover_TextColor, $sapButton_Hover_TextColor);
+  --fs-button-hover-icon-color: var(--sapButton_Hover_TextColor, $sapButton_Hover_TextColor);
+  --fs-button-hover-border-color: var(--sapButton_Hover_BorderColor, $sapButton_Hover_BorderColor);
+
+  --fs-button-active-background: var(--sapButton_Active_Background, $sapButton_Active_Background);
+  --fs-button-active-border-color: var(--sapButton_Active_BorderColor, $sapButton_Active_BorderColor);
+  --fs-button-active-text-color: var(--sapButton_Active_TextColor, $sapButton_Active_TextColor);
+  --fs-button-active-icon-color: var(--sapButton_Active_TextColor, $sapButton_Active_TextColor);
+
+  --fs-button-height: var(--sapElement_Height, $sapElement_Height);
+  --fs-button-max-height: var(--sapElement_Height, $sapElement_Height);
+  --fs-button-min-width: var(--sapElement_Height, $sapElement_Height);
+  --fs-button-font-size: var(--sapFontSize, $sapFontSize);
+  --fs-button-padding: 0 0.6875rem 0 0.6875rem;
+  --fs-button-margin: 0;
+
+  //button designs
+  //emphasized
+  --fs-button-emphasized-border-color: var(--sapButton_Emphasized_BorderColor, $sapButton_Emphasized_BorderColor);
+  --fs-button-emphasized-text-color: var(--sapButton_Emphasized_TextColor, $sapButton_Emphasized_TextColor);
+  --fs-button-emphasized-icon-color: var(--sapButton_Emphasized_TextColor, $sapButton_Emphasized_TextColor);
+  --fs-button-emphasized-background: var(--sapButton_Emphasized_Background, $sapButton_Emphasized_Background);
+  --fs-button-emphasized-hover-background: var(
+    --sapButton_Emphasized_Hover_Background,
+    $sapButton_Emphasized_Hover_Background
+  );
+  //--fs-button-emphasized-hover-text: var();
+  --fs-button-emphasized-hover-border-color: var(
+    --sapButton_Emphasized_Hover_BorderColor,
+    $sapButton_Emphasized_Hover_BorderColor
+  );
+  --fs-button-emphasized-active-background: var(
+    --sapButton_Emphasized_Active_Background,
+    $sapButton_Emphasized_Active_Background
+  );
+  --fs-button-emphasized-active-border-color: var(
+    --sapButton_Emphasized_Active_BorderColor,
+    $sapButton_Emphasized_Active_BorderColor
+  );
+  --fs-button-emphasized-active-text-color: var(--sapButton_Emphasized_TextColor, $sapButton_Emphasized_TextColor);
+  --fs-button-emphasized-active-icon-color: var(--sapButton_Emphasized_TextColor, $sapButton_Emphasized_TextColor);
+  --fs-button-emphasized-font-weight: bold;
+
+  //lite
+  --fs-button-lite-border-color: var(--sapButton_Lite_BorderColor, $sapButton_Lite_BorderColor);
+  --fs-button-lite-text-color: var(--sapButton_Lite_TextColor, $sapButton_Lite_TextColor);
+  --fs-button-lite-icon-color: var(--sapButton_Lite_TextColor, $sapButton_Lite_TextColor);
+  --fs-button-lite-background: var(--sapButton_Lite_Background, $sapButton_Lite_Background);
+  --fs-button-lite-hover-background: var(--sapButton_Lite_Hover_Background, $sapButton_Lite_Hover_Background);
+  //--fs-button-lite-hover-text: var();
+  --fs-button-lite-hover-border-color: var(--sapButton_Lite_Hover_BorderColor, $sapButton_Lite_Hover_BorderColor);
+  --fs-button-lite-active-background: var(--sapButton_Lite_Active_Background, $sapButton_Lite_Active_Background);
+  --fs-button-lite-active-border-color: var(--sapButton_Lite_Active_BorderColor, $sapButton_Lite_Active_BorderColor);
+  --fs-button-lite-active-text-color: var(--sapButton_Active_TextColor, $sapButton_Active_TextColor);
+  --fs-button-lite-active-icon-color: var(--sapButton_Active_TextColor, $sapButton_Active_TextColor);
+
+  //accept
+  --fs-button-accept-border-color: var(--sapButton_Accept_BorderColor, $sapButton_Accept_BorderColor);
+  --fs-button-accept-text-color: var(--sapButton_Accept_TextColor, $sapButton_Accept_TextColor);
+  --fs-button-accept-icon-color: var(--sapButton_Accept_TextColor, $sapButton_Accept_TextColor);
+  --fs-button-accept-background: var(--sapButton_Accept_Background, $sapButton_Accept_Background);
+  --fs-button-accept-hover-background: var(--sapButton_Accept_Hover_Background, $sapButton_Accept_Hover_Background);
+  //--fs-button-accept-hover-text: var();
+  --fs-button-accept-hover-border-color: var(--sapButton_Accept_Hover_BorderColor, $sapButton_Accept_Hover_BorderColor);
+  --fs-button-accept-active-background: var(--sapButton_Accept_Active_Background, $sapButton_Accept_Active_Background);
+  --fs-button-accept-active-border-color: var(
+    --sapButton_Accept_Active_BorderColor,
+    $sapButton_Accept_Active_BorderColor
+  );
+  --fs-button-accept-active-text-color: var(--sapButton_Active_TextColor, $sapButton_Active_TextColor);
+  --fs-button-accept-active-icon-color: var(--sapButton_Active_TextColor, $sapButton_Active_TextColor);
+
+  //reject
+  --fs-button-reject-border-color: var(--sapButton_Reject_BorderColor, $sapButton_Reject_BorderColor);
+  --fs-button-reject-text-color: var(--sapButton_Reject_TextColor, $sapButton_Reject_TextColor);
+  --fs-button-reject-icon-color: var(--sapButton_Reject_TextColor, $sapButton_Reject_TextColor);
+  --fs-button-reject-background: var(--sapButton_Reject_Background, $sapButton_Reject_Background);
+  --fs-button-reject-hover-background: var(--sapButton_Reject_Hover_Background, $sapButton_Reject_Hover_Background);
+  //--fs-button-reject-hover-text: var();
+  --fs-button-reject-hover-border-color: var(--sapButton_Reject_Hover_BorderColor, $sapButton_Reject_Hover_BorderColor);
+  --fs-button-reject-active-background: var(--sapButton_Reject_Active_Background, $sapButton_Reject_Active_Background);
+  --fs-button-reject-active-border-color: var(
+    --sapButton_Reject_Active_BorderColor,
+    --sapButton_Reject_Active_BorderColor
+  );
+  --fs-button-reject-active-text-color: var(--sapButton_Active_TextColor, $sapButton_Active_TextColor);
+  --fs-button-reject-active-icon-color: var(--sapButton_Active_TextColor, $sapButton_Active_TextColor);
+
+  //ghost
+  --fs-button-ghost-background: transparent;
+}

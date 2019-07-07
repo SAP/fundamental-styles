@@ -1,0 +1,72 @@
+@import "./../mixins";
+
+//library namespace
+$fd-namespace: fd !default;
+$fd-support-css-var-fallback: false !default;
+
+//spacing
+$fd-spacing--base: 4px !default;
+$fd-spacing: () !default;
+$fd-spacing: map-merge(
+  (
+    base: $fd-spacing--base,
+    //4
+      xxs: $fd-spacing--base * 2,
+    //8
+      xs: $fd-spacing--base * 3,
+    //12
+      s: $fd-spacing--base * 4,
+    //16
+      reg: $fd-spacing--base * 6,
+    //24
+      m: $fd-spacing--base * 8,
+    //32
+      l: $fd-spacing--base * 9,
+    //36
+      xl: $fd-spacing--base * 10,
+    //40
+      xxl: $fd-spacing--base * 12,
+    //48
+  ),
+  $fd-spacing
+);
+
+//type
+//sets HTML el
+$fd-type--base: 14 !default;
+$fd-type: () !default;
+$fd-type: map-merge(
+  (
+    //"key": font-size line-height margin-bottom
+      "-1": 12px 16/12 8px,
+    //12/16 8 btm
+      "0": 14px 20/14 12px,
+    //14/20 12
+      "1": 16px 20/16 12px,
+    //16/20 12
+      "2": 18px 24/18 12px,
+    //18/24 12
+      "3": 20px 28/20 12px,
+    //20/28 12
+      "4": 24px 32/24 16px,
+    //23/32 16
+      "5": 36px 40/36 20px,
+    //36/40 20
+      "6": 48px 52/48 24px,
+    //48/52 24
+      "7": 72px 84/72 32px,
+    //84/72 32
+      "8": 96px 105/96 36px,
+    //105/96 36
+  ),
+  $fd-type
+);
+
+$fd-font-size: #{$fd-type--base}px !default;
+$fd-line-height: 20 /#{$fd-type--base} !default;
+
+$fd-forms-height: $fd-spacing--base * 9 !default;
+$fd-button-height: $fd-forms-height;
+:root {
+  --fd-forms-height: #{$fd-forms-height};
+}

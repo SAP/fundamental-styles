@@ -3,10 +3,16 @@
     "name": "Button",
     "css_vars": true,
     "rtl": true,
-    "version": "1.0.0",
+    "version": "0.0.1",
     "properties": {
         "label": "BUTTON_LABEL",
-        "icon": "#/icon"
+        "icon": "#/icon",
+        "design": "",
+        "mode": "cozy",
+        "disabled": false,
+        "selected": false,
+        "pressed": false,
+        "size": "large"
     },
     "modifier": {
         "block": [
