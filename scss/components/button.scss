@@ -85,6 +85,7 @@ a.#{$block} {
       height: var(--fs-button-height);
       max-height: var(--fs-button-max-height);
       min-width: var(--fs-button-min-width);
+
       &:focus {
         box-shadow: 0 0 0 1px var(--fs-button-focus-color);
       }

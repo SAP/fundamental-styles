@@ -4,17 +4,9 @@
 {% from "../icon/component.njk" import icon %}
 {%- macro button(properties={}, classes="", design="", mode="") -%}
     {% set is_default = design == '' %}
-
     {{properties.design}}
-
-    {# <button {{ 'disabled' if properties.disabled == true}} class="{{ 'fd-button' if is_default }}{{ ' fd-button--'+size if size }}{{ ' fd-button--'+design if design }}{{ ' sap-icon--'+properties.icon if properties.icon }}{{ state | state }}{{ classes | classes }}" {{ aria | aria }}>
-        {%- if properties.label %}{{properties.label}}
-        {%- endif %}
-    </button> #}
-
     <button {{'aria-disabled="true"' if properties.disabled}} {{ 'disabled' if properties.disabled == true}} class="{{ ' fd-button' if is_default }}{{ ' fd-button--compact' if mode=='compact' }}{{ ' fd-button--'+design if not is_default }}{{ ' sap-icon--'+properties.icon if properties.icon }}">
         {%- if properties.label %}{{properties.label}}
         {%- endif %}
     </button>
-
 {%- endmacro %}
