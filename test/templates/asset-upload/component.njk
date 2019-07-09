@@ -1,0 +1,17 @@
+
+<!--
+asset-upload:
+    properties={},
+    modifier={ block: [] }
+-->
+{% macro asset_upload(properties={}, modifier={}, state={}, aria={}, classes=[]) -%}
+<div class="fd-asset-upload{{ modifier.block | modifier('asset-upload') }}{{classes|classes}}">
+    <input type="file" id="asset-upload" class="fd-asset-upload__input"/>
+    <label for="asset-upload" class="fd-asset-upload__label">
+        <span class="fd-asset-upload__text">{{properties.text}}</span>
+        {%- if properties.message %}
+        <span class="fd-asset-upload__message">{{properties.message}}</span>
+        {%- endif %}
+    </label>
+</div>
+{%- endmacro %}
