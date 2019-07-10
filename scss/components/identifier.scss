@@ -43,6 +43,7 @@ $block: #{$fd-namespace}-identifier;
     //sizes
     @each $size, $value in $fd-identifier-sizes {
       &--#{$size} {
+        @include fd-reset-spacing();
         width: $value;
         height: $value;
         max-width: $value;
