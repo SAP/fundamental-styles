@@ -1,14 +1,18 @@
 body {
     font-size: 24px;
-    font-family: Courier, monospace;
+    font-family: "Comic Sans MS", Courier, monospace;
+    color: brown;
 }
 
 p,
 a,
+ul,
+li,
 button {
-    font-size: 20px;
+    font-size: 30px;
     padding: 20px;
     margin: 20px;
+    border: 2px dashed orangered;
 }
 
 h1,
