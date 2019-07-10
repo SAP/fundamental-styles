@@ -8,6 +8,7 @@
         "label": "BUTTON_LABEL",
         "icon": "#/icon",
         "design": "",
+        "icon-position": "begin",
         "mode": "cozy",
         "disabled": false,
         "selected": false,

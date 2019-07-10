@@ -1,35 +1,15 @@
 @import "../core/new_root";
-@import "./../functions";
+//@import "./../functions";
 @import "./../icons/mixins";
 
 @import "./button-variables";
 @import "../../theme-designer/Base/baseLib/sap_fiori_3/css_variables_copy";
 @import "../../theme-designer/Base/baseLib/sap_fiori_3/sass_variables.scss";
 
-//Fiori 3 button spec:
-//
-
-// fd-button
-
-//design
-// --standard
-// --transparent
-// --positive
-// --negative
-// --emphasized
-
-// --compact/--cozy
-
 // --text
 // --text + --icon
 // --icon
-
-//states
-// --normal
-// --selected
-// --disabled
-// --hover
-// --focus
+// --icon +
 
 // RTL mode
 
