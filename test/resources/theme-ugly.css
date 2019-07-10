@@ -31,4 +31,15 @@
     --fd-color-background-4: rgb(51%, 6%, 2%);
     --fd-color-alert: rgb(84%, 13%, 91%);
     --fd-color-background-5: rgb(13%, 71%, 90%);
+
+    --fd-color-accent-1: #bc3f8c;
+    --fd-color-accent-2: #6a68a8;
+    --fd-color-accent-3: #4f9344;
+    --fd-color-accent-4: #32c71c;
+    --fd-color-accent-5: #0cd06b;
+    --fd-color-accent-6: #253470;
+    --fd-color-accent-7: #a8fac7;
+    --fd-color-accent-8: #945ef7;
+    --fd-color-accent-9: #e3ba20;
+    --fd-color-accent-12: #41cc50;
 }
