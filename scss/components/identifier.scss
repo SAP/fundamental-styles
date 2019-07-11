@@ -102,16 +102,16 @@ $block: #{$fd-namespace}-identifier;
       }
     }
     //borders
-    &--circle {
+    &.fd-identifier--circle {
       border-radius: 50%;
     }
     //thumbnail
-    &--thumbnail {
+    &.fd-identifier--thumbnail {
       text-indent: -200%;
       overflow: hidden;
     }
     //background
-    &--transparent {
+    &.fd-identifier--transparent {
       --fd-identifier-background-color: transparent;
       @include fd-var-color("color", map-get($fd-colors-text, 1), --fd-color-text-1);
       @include fd-var-color("background-color", transparent);
