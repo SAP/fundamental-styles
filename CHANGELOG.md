@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.30"></a>
+# [0.2.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.29...v0.2.0-rc.30) (2019-07-11)
+
+
+### Bug Fixes
+
+* added self-contained style for breadcrumb ([#120](https://github.com/SAP/fundamental-styles/issues/120)) ([5c49111](https://github.com/SAP/fundamental-styles/commit/5c49111)), closes [#100](https://github.com/SAP/fundamental-styles/issues/100) [#100](https://github.com/SAP/fundamental-styles/issues/100) [#100](https://github.com/SAP/fundamental-styles/issues/100) [#100](https://github.com/SAP/fundamental-styles/issues/100) [#100](https://github.com/SAP/fundamental-styles/issues/100)
+
+
+
 <a name="0.2.0-rc.29"></a>
 # [0.2.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.28...v0.2.0-rc.29) (2019-07-11)
 
