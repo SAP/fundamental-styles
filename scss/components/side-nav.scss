@@ -36,8 +36,7 @@ $block: #{$fd-namespace}-side-nav;
 
     background-color: $fd-side-nav-background-color;
     min-width: $fd-side-nav-max-width;
-    margin: 0;
-    padding: 0;
+    @include fd-reset();
 
     //ELEMENTS *******************************************
     &__group {
@@ -75,8 +74,14 @@ $block: #{$fd-namespace}-side-nav;
         }
     }
 
+    &__item,
+    &__subitem {
+        @include fd-reset();
+    }
+
     &__link,
     &__sublink {
+        @include fd-reset();
         display: flex;
         padding: $fd-side-nav-link-padding;
         color: $fd-side-nav-link-color;
