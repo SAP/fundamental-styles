@@ -24,6 +24,7 @@ $block: #{$fd-namespace}-breadcrumb;
     list-style: none;
     padding-right: fd-space(4);
 
+
     @include fd-rtl() {
         padding: 0 0 0 fd-space(4);
         &__item {
@@ -40,6 +41,7 @@ $block: #{$fd-namespace}-breadcrumb;
 
     //ELEMENTS *******************************************
     &__item {
+        @include fd-reset();
         &::after {
             content: "/";
             margin-right: $fd-breadcrumb-link-margin;
@@ -60,10 +62,22 @@ $block: #{$fd-namespace}-breadcrumb;
     }
 
     &__link {
+        @include fd-reset();
         margin-right: $fd-breadcrumb-link-margin;
         @include fd-rtl() {
             margin-right: initial;
             margin-left: $fd-breadcrumb-link-margin;
+        }
+
+        @include fd-link();
+        text-decoration: none;
+        display: inline-block;
+        transition: all $fd-animation--speed ease-in;
+        border-style: none;
+        &:focus {
+            outline-style: dotted;
+            outline-width: 1px;
+            @include fd-var-color("outline-color", fd-color-state("hover", "action"), --fd-color-action-focus);
         }
     }
 }
