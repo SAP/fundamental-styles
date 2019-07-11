@@ -29,7 +29,7 @@ $block: #{$fd-namespace}-tile;
   @include fd-var-color("background-color", $fd-tile-background-color, --fd-tile-background-color);
 
   &__text {
-    @include fd-reset-spacing();
+    @include fd-reset();
   }
 
   //MODIFICATIONS
@@ -80,19 +80,8 @@ $block: #{$fd-namespace}-tile;
   &__actions {
     padding: fd-space(3) $fd-tile-content-padding-x fd-space(3) fd-space(3);
   }
-  @each $type, $shades in $fd-colors {
-    @each $shade, $value in $shades {
-        @if $shade == 1 {
-            //set default selector for convenience
-            .#{$fd-namespace}-has-background-color-#{$type},
-            .#{$fd-namespace}-has-background-color-#{$type}-#{$shade} {
-                @include fd-var-color("background-color", $value, --fd-color-#{$type}-#{$shade}, true);
-            }
-        } @else {
-            .#{$fd-namespace}-has-background-color-#{$type}-#{$shade} {
-                @include fd-var-color("background-color", $value, --fd-color-#{$type}-#{$shade}, true);
-            }
-        }
-    }
+
+  .fd-has-background-color-accent-3 {
+    background-color: var(--fd-color-accent-3, map-get($fd-colors-accent, 3));
   }
 }
