@@ -19,6 +19,9 @@ Token are used to represent contextualizing information. They can be useful to s
 <span class="fd-token" role="button">Lorem</span>
 <span class="fd-token" role="button">Dolor</span>
 <span class="fd-token" role="button">Filter</span>
+<span class="fd-token" role="button">
+Filter <span class="sap-icon--decline sap-icon--s"></span>
+</span>
 {% endcapture %}
 
 {% include display-component.html component=default-alert %}

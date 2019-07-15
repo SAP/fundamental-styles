@@ -1,0 +1,57 @@
+@import "./../settings";
+@import "./../mixins";
+@import "./../icons/mixins";
+@import "./../functions";
+
+
+/*!
+.fd-tag+(--no-border)
+    .fd-tag__content+()
+    .fd-tag__title+()
+*/
+$block: #{$fd-namespace}-tag;
+
+.#{$block} {
+  &__close {
+    @include fd-icon("decline", "s") {
+      @include fd-var-color("color", fd-color("action", 1), --fd-color-action-1);
+      margin-left: fd-space(tiny);
+      margin-right: 0;
+      vertical-align: bottom;
+      line-height: fd-space(6);
+      cursor: pointer;
+    }
+    @include fd-focus();
+    @include fd-rtl() {
+      @include fd-icon("decline", "s") {
+        @include fd-var-color("color", fd-color("action", 1), --fd-color-action-1);
+        margin-left: 0;
+        margin-right: fd-space(tiny);
+        vertical-align: bottom;
+        line-height: fd-space(6);
+        cursor: pointer;
+      }
+    }
+  }
+    //LOCAL VARS (set all themeable properties, always include !default)
+    $fd-tag-border-color: fd-color("neutral", 3) !default;
+    $fd-tag-color: fd-color("text", 2) !default;
+    $fd-tag-background-color: fd-color("neutral", 1) !default;
+    --fd-tag-color: var(--fd-color-text-2);
+    --fd-tag-background-color: var(--fd-color-neutral-1);
+    --fd-tag-border-color: var(--fd-color-neutral-3);
+
+    @include fd-reset();
+    @include fd-type("-1");
+    @include fd-var-color("color", $fd-tag-color, --fd-tag-color);
+    @include fd-var-color("background-color", $fd-tag-background-color, --fd-tag-background-color);
+    line-height: fd-space(6);
+    vertical-align: middle;
+    display: inline-block;
+    padding-left: fd-space(2);
+    padding-right: fd-space(2);
+    border-radius: $fd-border-radius;
+    border-width: 1px;
+    border-style: solid;
+    @include fd-var-color("border-color", $fd-tag-border-color, --fd-tag-border-color);
+}
