@@ -28,7 +28,7 @@ The Input Group supports `--compact` mode
         <label class="fd-form__label" for="">Default Size </label>
         <div class="fd-input-group fd-input-group--before">
             <span class="fd-input-group__addon fd-input-group__addon--before">$</span>
-            <input class="" type="text" id="" name="" value="1234568910 ">
+            <input class="fd-input" type="text" id="" name="" value="1234568910 ">
         </div>
     </div>
 </div>
@@ -60,7 +60,7 @@ The Input Group with text add-on component is typically used to specify the type
         <label class="fd-form__label" for="">Left Aligned Text Add-on</label>
         <div class="fd-input-group fd-input-group--before">
             <span class="fd-input-group__addon fd-input-group__addon--before">$</span>
-            <input class="" type="text" id="" name="" value="1234568910 ">
+            <input class="fd-input" type="text" id="" name="" value="1234568910 ">
         </div>
     </div>
 </div>
@@ -69,7 +69,7 @@ The Input Group with text add-on component is typically used to specify the type
     <div class="fd-form__item">
         <label class="fd-form__label" for="">Right Aligned Text Addon</label>
         <div class="fd-input-group fd-input-group--after">
-            <input class="" type="text" id="" name="" value="1234568910 ">
+            <input class="fd-input" type="text" id="" name="" value="1234568910 ">
             <span class="fd-input-group__addon fd-input-group__addon--after">€</span>
         </div>
     </div>
@@ -79,7 +79,7 @@ The Input Group with text add-on component is typically used to specify the type
     <div class="fd-form__item">
         <label class="fd-form__label" for="">Right Aligned Text Addon</label>
         <div class="fd-input-group fd-input-group--after">
-            <input class="" type="text" id="" name="" value="" placeholder="Field placeholder text">
+            <input class="fd-input" type="text" id="" name="" value="" placeholder="Field placeholder text">
             <span class="fd-input-group__addon fd-input-group__addon--after">km/h</span>
         </div>
     </div>
@@ -89,7 +89,7 @@ The Input Group with text add-on component is typically used to specify the type
     <div class="fd-form__item">
         <label class="fd-form__label" for="">Character Counter Example</label>
         <div class="fd-input-group fd-input-group--after">
-            <input class="" type="text" id="" name="" value="This is a test">
+            <input class="fd-input" type="text" id="" name="" value="This is a test">
             <span class="fd-input-group__addon fd-input-group__addon--after">50</span>
         </div>
     </div>
@@ -109,7 +109,7 @@ For an integer value input, a spinner can be added allowing the user to increase
     <div class="fd-form__item">
         <label class="fd-form__label" for="">Quantity Spinner</label>
         <div class="fd-input-group fd-input-group--after">
-            <input class="" type="number" id="spinner-1" name="" value="100" />
+            <input class="fd-input" type="number" id="spinner-1" name="" value="100" />
             <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--after">
                 <button class="fd-input-group__button fd-input-group__button--step-up sap-icon--slim-arrow-up" aria-label="Step up" onclick="document.getElementById('spinner-1').stepUp();"></button>
                 <button class="fd-input-group__button fd-input-group__button--step-down sap-icon--slim-arrow-down" aria-label="Step down" onclick="document.getElementById('spinner-1').stepDown();"></button>
@@ -132,7 +132,7 @@ The Input with add-on supports icons.
     <div class="fd-form__item">
         <label class="fd-form__label" for="">Search input</label>
         <div class="fd-input-group">
-            <input class="" type="search" id="search-1" name="" value="Search Term" placeholder="Enter Term..">
+            <input class="fd-input" type="search" id="search-1" name="" value="Search Term" placeholder="Enter Term..">
             <span class="fd-input-group__addon fd-input-group__addon--button">
                 <button class="fd-input-group__button fd-input-group__button--clear" aria-label="Clear" onclick="document.getElementById('search-1').value = '';"></button>
             </span>
@@ -147,7 +147,7 @@ The Input with add-on supports icons.
             <span class="fd-input-group__addon fd-input-group__addon--before">
                 <span class="sap-icon--globe" role="presentation"></span>
             </span>
-            <input class="" type="text" id="" name="" value="1000000">
+            <input class="fd-input" type="text" id="" name="" value="1000000">
         </div>
     </div>
 </div>
@@ -156,7 +156,7 @@ The Input with add-on supports icons.
     <div class="fd-form__item">
         <label class="fd-form__label" for="">Input with icon on the right</label>
         <div class="fd-input-group fd-input-group--after">
-            <input class="" type="text" id="" name="" value="1000000">
+            <input class="fd-input" type="text" id="" name="" value="1000000">
             <span class="fd-input-group__addon fd-input-group__addon--after">
                 <span class="sap-icon--hide" role="presentation"></span>
             </span>
@@ -178,7 +178,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
     <div class="fd-form__item">
         <label class="fd-form__label" for="">Input with action</label>
         <div class="fd-input-group fd-input-group--after">
-            <input class="" type="text" id="" name="" value="1000000">
+            <input class="fd-input" type="text" id="" name="" value="1000000">
             <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--after">
                 <button class="fd-button--light">
                     Button
@@ -192,7 +192,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
     <div class="fd-form__item">
         <label class="fd-form__label" for="">Input with icon action</label>
         <div class="fd-input-group fd-input-group--after">
-            <input class="" type="text" id="" name="" value="1000000">
+            <input class="fd-input" type="text" id="" name="" value="1000000">
             <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--after">
                 <button class="fd-button--icon fd-button--light sap-icon--navigation-down-arrow"></button>
             </span>
@@ -204,7 +204,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
     <div class="fd-form__item">
         <label class="fd-form__label" for="">Input with text action</label>
         <div class="fd-input-group fd-input-group--after">
-            <input class="" type="text" id="" name="" value="1000000">
+            <input class="fd-input" type="text" id="" name="" value="1000000">
             <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--after">
                 <button class="fd-button--light">
                     Button
@@ -218,7 +218,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
     <div class="fd-form__item">
         <label class="fd-form__label" for="">Input with icon text action</label>
         <div class="fd-input-group fd-input-group--after">
-            <input class="" type="text" id="" name="" value="1000000">
+            <input class="fd-input" type="text" id="" name="" value="1000000">
             <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--after">
                 <button class="fd-button--icon fd-button--light sap-icon--navigation-down-arrow"></button>
             </span>
@@ -236,7 +236,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
 
 {% capture button-addon %}
 <div class="fd-input-group fd-input-group--after">
-    <textarea class="" id=""></textarea>
+    <textarea class="fd-textarea" id=""></textarea>
     <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--textarea">
         km/h
     </span>

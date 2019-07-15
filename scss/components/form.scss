@@ -188,3 +188,8 @@ $block: #{$fd-namespace}-form;
         }
     }
 }
+input.fd-form__input {
+    &:focus {
+        box-shadow: none;
+    }
+}

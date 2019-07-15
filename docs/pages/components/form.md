@@ -35,7 +35,7 @@ Do not use the input field if:
 <div class="fd-form__set">
     <div class="fd-form__item">
         <label class="fd-form__label" for="input-1">Default Input:</label>
-        <input class="fd-form__control" type="text" id="input-1" placeholder="Field placeholder text">
+        <input class="fd-form__control fd-form__input" type="text" id="input-1" placeholder="Field placeholder text">
     </div>
 </div>
 

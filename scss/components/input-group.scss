@@ -217,4 +217,10 @@ $block: #{$fd-namespace}-input-group;
             z-index: map-get($fd-z-index-levels, "second");
         }
     }
+    .fd-input,
+    .fd-textarea {
+        &:focus {
+          box-shadow: none;
+        }
+    }
 }
