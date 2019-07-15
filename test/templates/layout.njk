@@ -5,7 +5,9 @@
     <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ id }}</title>
-    <link rel="stylesheet" href="static/layout.css">
+    {% if not selfContained %}
+        <link rel="stylesheet" href="static/layout.css">
+    {% endif %}
     <style>
         {% if selfContained %}
             {% set sass = id + '.scss'  %}
