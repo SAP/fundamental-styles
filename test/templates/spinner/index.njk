@@ -5,7 +5,7 @@
 
 {% block content %}
 
-<p>Toggle the <code>aria-hidden</code> attribute to hide/show the spinner.</p>
+<p>Toggle the <code>is-hidden</code> attribute to hide/show the spinner.</p>
     <!-- output the component example and the code snippet -->
     {% set example %}
     {{  spinner(
@@ -18,13 +18,12 @@
     {% endset %}
     {{ format(example) }}
 <br><br>
-<h2>[aria-busy="true"]</h2>
-<p>The spinnner is most often used within another component to indicate the loading state. Any container (even <code>ui-, app-, and page-level</code>) can be "activated" by setting <code>aria-busy="true"</code>.
+<h2>is-busy</h2>
+<p>The spinnner is most often used within another component to indicate the loading state. Any container (even <code>ui-, app-, and page-level</code>) can be "activated" by setting <code>is-busy</code>.
 </p>
-<p>The spinner should be included inside the container. Its visibility can be toggled in relation to the <code>aria-busy</code> attribute. They should always be opposites, i.e, if currently loading, <code>section[aria-busy="true"]</code>, <code>.fd-spinner[aria-hidden="false"]</code>, once the content is loaded, toggle to false and true respectively.</p>
 
     {% set example %}
-<div class="fd-panel" aria-busy="true">
+<div class="fd-panel is-busy">
     {{  spinner(
             properties=data.properties,
             modifier=data.modifier,
