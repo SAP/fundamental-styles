@@ -20,10 +20,12 @@ $block: #{$fd-namespace}-nav;
   list-style: none;
   //MODIFIERS *******************************************
   &--vertical {
+    @include fd-link();
     flex-direction: column;
   }
   //ELEMENTS *******************************************
   &__link {
+    @include fd-link();
     display: block;
     padding: $fd-nav-link-padding-y $fd-nav-link-padding-x;
     @include fd-selected() {
