@@ -42,7 +42,7 @@ $block: #{$fd-namespace}-identifier;
     //BLOCK MODIFIERS ************
     //sizes
     @each $size, $value in $fd-identifier-sizes {
-      &--#{$size} {
+      &.#{$block}--#{$size} {
         @include fd-reset-spacing();
         width: $value;
         height: $value;
@@ -102,16 +102,16 @@ $block: #{$fd-namespace}-identifier;
       }
     }
     //borders
-    &.fd-identifier--circle {
+    &.#{$block}--circle {
       border-radius: 50%;
     }
     //thumbnail
-    &.fd-identifier--thumbnail {
+    &.#{$block}--thumbnail {
       text-indent: -200%;
       overflow: hidden;
     }
     //background
-    &.fd-identifier--transparent {
+    &.#{$block}--transparent {
       --fd-identifier-background-color: transparent;
       @include fd-var-color("color", map-get($fd-colors-text, 1), --fd-color-text-1);
       @include fd-var-color("background-color", transparent);
