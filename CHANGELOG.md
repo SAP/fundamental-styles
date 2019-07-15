@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.33"></a>
+# [0.2.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.32...v0.2.0-rc.33) (2019-07-15)
+
+
+### Bug Fixes
+
+* Added self-contained style for icon component ([#155](https://github.com/SAP/fundamental-styles/issues/155)) ([3ba59ec](https://github.com/SAP/fundamental-styles/commit/3ba59ec))
+
+
+
+<a name="0.2.0-rc.32"></a>
+# [0.2.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.31...v0.2.0-rc.32) (2019-07-15)
+
+
+### Bug Fixes
+
+* Self-contained style cleanup ([#175](https://github.com/SAP/fundamental-styles/issues/175)) ([aaf6bd5](https://github.com/SAP/fundamental-styles/commit/aaf6bd5))
+
+
+
+<a name="0.2.0-rc.31"></a>
+# [0.2.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.30...v0.2.0-rc.31) (2019-07-12)
+
+
+
+<a name="0.2.0-rc.30"></a>
+# [0.2.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.29...v0.2.0-rc.30) (2019-07-11)
+
+
+### Bug Fixes
+
+* added self-contained style for breadcrumb ([#120](https://github.com/SAP/fundamental-styles/issues/120)) ([5c49111](https://github.com/SAP/fundamental-styles/commit/5c49111)), closes [#100](https://github.com/SAP/fundamental-styles/issues/100) [#100](https://github.com/SAP/fundamental-styles/issues/100) [#100](https://github.com/SAP/fundamental-styles/issues/100) [#100](https://github.com/SAP/fundamental-styles/issues/100) [#100](https://github.com/SAP/fundamental-styles/issues/100)
+
+
+
 <a name="0.2.0-rc.29"></a>
 # [0.2.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.28...v0.2.0-rc.29) (2019-07-11)
 
