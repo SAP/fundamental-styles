@@ -241,6 +241,10 @@ $block: #{$fd-namespace}-toggle;
             right: 12px;
             top: 2px;
             @include fd-var-color("color", fd-color("status", 3), --fd-color-status-3);
+
+            &::before {
+                @include fd-type("-1");
+            }
         }
         &--on {
             @include fd-type("-1");
@@ -248,6 +252,10 @@ $block: #{$fd-namespace}-toggle;
             left: 12px;
             top: 2px;
             @include fd-var-color("color", fd-color("status", 1), --fd-color-status-1);
+
+            &::before {
+                @include fd-type("-1");
+            }
         }
     }
 }
