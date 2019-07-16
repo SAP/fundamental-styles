@@ -15,7 +15,7 @@ $block: #{$fd-namespace}-identifier;
       s: $fd-const-ratio * 8,   //32px
       m: $fd-const-ratio * 12,  //48px
       l: $fd-const-ratio * 16,  //64px
-      xl: $fd-const-ratio * 22, //88px
+      xl: $fd-const-ratio * 20, //80px
       xxl: $fd-const-ratio * 28 //112px
     ) !default;
     $fd-identifier-border-radius: $fd-border-radius !default;
