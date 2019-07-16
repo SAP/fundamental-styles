@@ -25,6 +25,7 @@ $block: #{$fd-namespace}-identifier;
     //BLOCK BASE *******************************************
     @at-root {
       [class*="#{$block}"] {
+        @include fd-reset();
         --fd-identifier-color: var(--fd-color-text-5);
         --fd-identifier-background-color: var(--fd-color-status-4);
         @include fd-reset();
