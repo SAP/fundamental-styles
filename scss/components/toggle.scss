@@ -11,7 +11,7 @@ $block: #{$fd-namespace}-toggle;
 .#{$block} {
 
     $fd-toggle-sizes: ("default": fd-space(13) fd-space(5.5) 20px -5px -5px,
-        "xs": fd-space(9) fd-space(5) 14px -4px 15px,
+        "xs": fd-space(9) fd-space(5) 14px -4.5px 15px,
         "s": fd-space(10) fd-space(6) 17px -5px 15px,
         "compact": fd-space(10) fd-space(6.5) 16px -6px 13px,
         "l": fd-space(14) fd-space(8) 22px -6px 23px,
@@ -121,16 +121,15 @@ $block: #{$fd-namespace}-toggle;
         transition: all 0.4s;
         border-radius: 50%;
         z-index: 1;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     }
 
     input:checked+&__switch {
         background-color: rgba(10, 110, 209, 0.6);
+        @include fd-var-color("border-color", fd-color-state("selected", "action"), --fd-color-action-selected);
     }
 
     input:checked+&__switch::before {
-        // -webkit-transform: translateX(26px);
-        // -ms-transform: translateX(26px);
-        // transform: translateX(26px);
         @include fd-var-color("background-color", fd-color-state("selected", "action"), --fd-color-action-selected);
         @include fd-var-color("border-color", fd-color-state("selected", "action"), --fd-color-action-selected);
         pointer-events: none;
@@ -158,6 +157,24 @@ $block: #{$fd-namespace}-toggle;
         }
     }
 
+    // block level modifier for inline lables
+    &--label,
+    &--semantic {
+        width: 62px;
+        height: 22px;
+        .#{$block}__label--on {
+            visibility: hidden;
+        }
+
+        &.#{$block}--compact {
+            width: 56px;
+
+            .#{$block}__switch::before {
+                top: -3px;
+            }
+        }
+    }
+
     &--label input:checked+&__switch,
     &--semantic input:checked+&__switch {
         &::before {
@@ -175,23 +192,6 @@ $block: #{$fd-namespace}-toggle;
     &--semantic.#{$block}--compact input:checked+&__switch {
         &::before {
             left: calc(100% - 25px);
-        }
-    }
-
-    &--label,
-    &--semantic {
-        width: 62px;
-        height: 22px;
-        .#{$block}__label--on {
-            visibility: hidden;
-        }
-
-        &.#{$block}--compact {
-            width: 56px;
-
-            .#{$block}__switch::before {
-                top: -3px;
-            }
         }
     }
 
@@ -241,6 +241,10 @@ $block: #{$fd-namespace}-toggle;
             right: 12px;
             top: 2px;
             @include fd-var-color("color", fd-color("status", 3), --fd-color-status-3);
+
+            &::before {
+                @include fd-type("-1");
+            }
         }
         &--on {
             @include fd-type("-1");
@@ -248,6 +252,10 @@ $block: #{$fd-namespace}-toggle;
             left: 12px;
             top: 2px;
             @include fd-var-color("color", fd-color("status", 1), --fd-color-status-1);
+
+            &::before {
+                @include fd-type("-1");
+            }
         }
     }
 }
