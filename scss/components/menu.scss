@@ -79,6 +79,7 @@ $block: #{$fd-namespace}-menu;
     }
     &__item {
       display: block;
+      transition: all $fd-animation--speed ease-in;
       @include action-cursor();
       padding: $fd-menu-item-padding-y $fd-menu-item-padding-x;
       @include fd-var-color("background-color", $fd-menu-item-background-color, --fd-menu-item-background-color);
@@ -96,6 +97,19 @@ $block: #{$fd-namespace}-menu;
           @include fd-hover() {
             @include fd-var-color("background-color", fd-color-state("selected-hover"), --fd-color-background-selected-hover);
           }
+      }
+      @include fd-active-pressed-selected() {
+        @include fd-var-color("color", fd-color-state("selected", "action"), --fd-color-action-selected);
+        outline: none;
+      }
+      &:focus {
+        outline-style: dotted;
+        outline-width: 1px;
+        @include fd-var-color("outline-color", fd-color-state("hover", "action"), --fd-color-action-focus);
+      }
+      @include fd-disabled() {
+        @include fd-var-color("outline-color", fd-color-state("disabled", "action"), --fd-color-action-disabled);
+        cursor: not-allowed;
       }
     }
     &--addon-before {
