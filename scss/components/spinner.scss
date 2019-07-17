@@ -31,15 +31,13 @@ $block: #{$fd-namespace}-spinner;
     justify-content: space-between;
     margin: 0 auto;
 
-    &.is-hidden,
-    &[aria-hidden="true"] {
+    &.is-hidden {
         display: none;
     }
 
     //this is the only globally-applied instance of aria and state classes, may want to rethink this, maybe require a class like .fd-spinner-backdrop to be used in conjunction with the state
     @at-root {
-        .is-busy,
-        [aria-busy="true"] {
+        .is-busy {
             position: relative;
             min-height: $_height;
             &::before {
@@ -75,7 +73,7 @@ $block: #{$fd-namespace}-spinner;
         animation: line-scale $fd-spinner-animation-speed infinite ease;
         animation-delay: -($fd-spinner-animation-speed);
     }
-    div {
+    .fd-spinner__body {
         &::before,
         &::after {
             content: "";
