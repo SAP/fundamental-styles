@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.38"></a>
+# [0.2.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.37...v0.2.0-rc.38) (2019-07-17)
+
+
+### Bug Fixes
+
+* Alert updates ([#188](https://github.com/SAP/fundamental-styles/issues/188)) ([7d03915](https://github.com/SAP/fundamental-styles/commit/7d03915))
+* Update radio and check styles ([875b524](https://github.com/SAP/fundamental-styles/commit/875b524))
+
+
+
 <a name="0.2.0-rc.37"></a>
 # [0.2.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.36...v0.2.0-rc.37) (2019-07-16)
 
