@@ -84,7 +84,13 @@ a.#{$block} {
       }
 
       //states
-      @include fd-focus();
+      @include fd-focus() {
+        @include fd-disabled() {
+          opacity: 0.4;
+          cursor: not-allowed;
+          box-shadow: none;
+        }
+      }
       @include fd-hover() {
           --fd-button-background-color: var(--fd-color-action-hover);
           --fd-button-color: var(--fd-color-action-2);
@@ -106,6 +112,7 @@ a.#{$block} {
       @include fd-disabled() {
         opacity: 0.4;
         cursor: not-allowed;
+        box-shadow: none;
       }
     }
   }
@@ -235,6 +242,7 @@ a.#{$block} {
         --fd-button-color: var(--fd-color-action-1);
         @include fd-var-color("color", fd-color("action", 1), --fd-button-color);
         @include fd-var-color("background-color", transparent, --fd-button-background-color);
+        box-shadow: none;
       }
       box-shadow: 0 0 0 1px var(--fd-color-action-hover, map-get($fd-colors-action-states, "hover"));
     }
