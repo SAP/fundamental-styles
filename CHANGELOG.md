@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.40"></a>
+# [0.2.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.39...v0.2.0-rc.40) (2019-07-18)
+
+
+### Bug Fixes
+
+* update XL identifier size ([#190](https://github.com/SAP/fundamental-styles/issues/190)) ([93fe066](https://github.com/SAP/fundamental-styles/commit/93fe066))
+
+
+
 <a name="0.2.0-rc.39"></a>
 # [0.2.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.38...v0.2.0-rc.39) (2019-07-17)
 
