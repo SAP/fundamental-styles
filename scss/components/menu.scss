@@ -42,6 +42,7 @@ $block: #{$fd-namespace}-menu;
     padding-bottom: fd-space(base);
     &__group,
     &__list {
+      @include fd-reset();
       list-style: none;
       margin-bottom: 0;
     }
@@ -49,6 +50,7 @@ $block: #{$fd-namespace}-menu;
       padding-left: 0;
     }
     &__list {
+      @include fd-reset();
       margin: 0;
       padding: 0;
       list-style: none;
@@ -78,6 +80,7 @@ $block: #{$fd-namespace}-menu;
       @include fd-var-color("background-color", $fd-menu-title-background-color, --fd-menu-title-background-color);
     }
     &__item {
+      @include fd-reset();
       display: block;
       transition: all $fd-animation--speed ease-in;
       @include action-cursor();
