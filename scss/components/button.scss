@@ -273,7 +273,7 @@ a.#{$block} {
       --fd-button-color: var(--fd-color-status-4);
       @include fd-hover() {
         --fd-button-color: var(--fd-color-status-4);
-        box-shadow: 0 0 0 1px var(--fd-color-status-4);
+        box-shadow: 0 0 0 1px var(--fd-color-status-4, map-get($fd-colors-status, 4));
         @include fd-var-color("color", fd-color("status", 4), --fd-button-color);
         @include fd-disabled() {
           --fd-button-color: var(--fd-color-status-4);
@@ -291,7 +291,7 @@ a.#{$block} {
       --fd-button-color: var(--fd-color-status-3);
       @include fd-hover() {
         --fd-button-color: var(--fd-color-status-3);
-        box-shadow: 0 0 0 1px var(--fd-color-status-3);
+        box-shadow: 0 0 0 1px var(--fd-color-status-3, map-get($fd-colors-status, 3));
         @include fd-var-color("color", fd-color("status", 3), --fd-button-color);
         @include fd-disabled() {
           --fd-button-color: var(--fd-color-status-3);
@@ -309,7 +309,7 @@ a.#{$block} {
       --fd-button-color: var(--fd-color-status-1);
       @include fd-hover() {
         --fd-button-color: var(--fd-color-status-1);
-        box-shadow: 0 0 0 1px var(--fd-color-status-1);
+        box-shadow: 0 0 0 1px var(--fd-color-status-1, map-get($fd-colors-status, 1));
         @include fd-var-color("color", fd-color("status", 1), --fd-button-color);
         @include fd-disabled() {
           --fd-button-color: var(--fd-color-status-1);
@@ -327,7 +327,7 @@ a.#{$block} {
       --fd-button-color: var(--fd-color-status-2);
       @include fd-hover() {
         --fd-button-color: var(--fd-color-status-2);
-        box-shadow: 0 0 0 1px var(--fd-color-status-2);
+        box-shadow: 0 0 0 1px var(--fd-color-status-2, map-get($fd-colors-status, 2));
         @include fd-var-color("color", fd-color("status", 2), --fd-button-color);
         @include fd-disabled() {
           --fd-button-color: var(--fd-color-status-2);
