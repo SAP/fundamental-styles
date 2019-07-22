@@ -12,7 +12,7 @@ summary:
 Asset Upload provides a stylized component for file upload button.
 {: .docs-intro}
 
-## Default Asset Upload
+## Asset Upload with Icon and Message
 
 {% capture default %}
 <div class="fd-asset-upload">
