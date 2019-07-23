@@ -72,6 +72,10 @@ entries:
       url: /components/alert.html
       output: web
 
+    - title: Asset Upload
+      url: /components/asset-upload.html
+      output: web
+
     - title: Button
       url: /components/button.html
       output: web
