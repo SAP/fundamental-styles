@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.46"></a>
+# [0.2.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.45...v0.2.0-rc.46) (2019-07-23)
+
+
+### Bug Fixes
+
+* add asset upload component ([#197](https://github.com/SAP/fundamental-styles/issues/197)) ([c83a3f9](https://github.com/SAP/fundamental-styles/commit/c83a3f9))
+
+
+
 <a name="0.2.0-rc.45"></a>
 # [0.2.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.44...v0.2.0-rc.45) (2019-07-23)
 
