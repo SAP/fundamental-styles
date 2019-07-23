@@ -567,55 +567,5 @@ a.#{$block} {
         }
       }
     }
-    //DEPRECATE --secondary
-    &--secondary {
-      --fd-button-border-color: transparent;
-      @include fd-hover() {
-        --fd-button-background-color: var(--fd-color-neutral-1);
-        --fd-button-color: var(--fd-color-action-1);
-        @include fd-disabled() {
-          --fd-button-background-color: var(--fd-color-background-2);
-          --fd-button-color: var(--fd-color-action-1);
-        }
-      }
-      @include fd-active-pressed-selected() {
-        --fd-button-background-color: var(--fd-color-action-selected);
-        --fd-button-color: var(--fd-color-action-2);
-      }
-      &.#{$block}--negative {
-        --fd-button-color: var(--fd-color-status-3);
-        --fd-button-border-color: transparent;
-        --fd-button-background-color: transparent;
-        @include fd-hover() {
-          --fd-button-background-color: var(--fd-color-neutral-1);
-          --fd-button-color: var(--fd-color-status-3);
-          @include fd-disabled() {
-            --fd-button-background-color: transparent;
-            --fd-button-color: var(--fd-color-status-3);
-          }
-        }
-        @include fd-active-pressed-selected() {
-          --fd-button-background-color: var(--fd-color-status-3);
-          --fd-button-color: var(--fd-color-action-2);
-        }
-      }
-      &.#{$block}--positive {
-        --fd-button-color: var(--fd-color-status-1);
-        --fd-button-border-color: transparent;
-        --fd-button-background-color: transparent;
-        @include fd-hover() {
-          --fd-button-background-color: var(--fd-color-neutral-1);
-          --fd-button-color: var(--fd-color-status-1);
-          @include fd-disabled() {
-            --fd-button-background-color: transparent;
-            --fd-button-color: var(--fd-color-status-1);
-          }
-        }
-        @include fd-active-pressed-selected() {
-          --fd-button-background-color: var(--fd-color-status-1);
-          --fd-button-color: var(--fd-color-action-2);
-        }
-      }
-    }
 }
 /* stylelint-enable */
