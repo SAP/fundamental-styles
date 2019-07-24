@@ -80,8 +80,4 @@ $block: #{$fd-namespace}-tile;
   &__actions {
     padding: fd-space(3) $fd-tile-content-padding-x fd-space(3) fd-space(3);
   }
-
-  .fd-has-background-color-accent-3 {
-    background-color: var(--fd-color-accent-3, map-get($fd-colors-accent, 3));
-  }
 }
