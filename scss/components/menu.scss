@@ -133,4 +133,7 @@ $block: #{$fd-namespace}-menu;
         align-items: center;
         width: 30px;
     }
+    &__list-item {
+      @include fd-reset();
+    }
 }
