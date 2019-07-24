@@ -18,7 +18,7 @@ There are multiple sizes:
 - Small (`--s`) - 32px
 - Medium (`--m`) - 48px
 - Large (`--l`) - 64px
-- Extra Large (`--xl`) - 88px
+- Extra Large (`--xl`) - 80px
 - Extra Extra Large (`--xxl`) - 112px
 
 <br>
