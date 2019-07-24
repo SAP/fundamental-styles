@@ -1,0 +1,67 @@
+@import "./../settings";
+@import "./../mixins";
+@import "./../functions";
+@import "./../icons/mixins";
+/*!
+.fd-asset-upload+(--no-icon)
+  .fd-asset-upload__label
+    .fd-asset-upload__text
+    .fd-asset-upload__message
+*/
+$block: #{$fd-namespace}-asset-upload;
+.#{$block} {
+
+  @include fd-reset();
+  @include fd-type("0");
+  $fd-asset-upload-padding: fd-space(3);
+  $fd-asset-upload-border-radius: fd-space(1);
+  $fd-asset-upload-border-color: var(--fd-color-neutral-4);
+  $fd-asset-upload-background-color: var(--fd-color-neutral-1);
+  $fd-asset-upload-text-color: var(--fd-color-action-1);
+  $fd-asset-upload-border-color--hover: var(--fd-color-action-1);
+  $fd-asset-upload-border-color--focus: var(--fd-color-action-focus);
+
+  &__input {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+
+    &:focus + .#{$block}__label {
+        border: 1px solid $fd-asset-upload-border-color--focus;
+        box-shadow: 0 0 0 1px $fd-asset-upload-border-color--focus;
+    }
+  }
+
+  &__input + .#{$block}__label {
+    background-color: $fd-asset-upload-background-color;
+    border: 1px dashed $fd-asset-upload-border-color;
+    text-align: center;
+    padding: $fd-asset-upload-padding;
+    border-radius: $fd-asset-upload-border-radius;
+    cursor: pointer;
+    display: block;
+
+    &:hover {
+      border-style: solid;
+      border-color: $fd-asset-upload-border-color--hover;
+    }
+  }
+
+  &__text {
+    display: block;
+    color: $fd-asset-upload-text-color;
+    @include fd-icon("upload-to-cloud", "m");
+    margin-bottom: fd-space(.5);
+
+    &::before {
+      display: block;
+      margin-bottom: fd-space(1);
+    }
+  }
+
+  &--no-icon {
+    .#{$block}__text::before {
+      display: none;
+    }
+  }
+}
