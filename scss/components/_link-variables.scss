@@ -1,0 +1,11 @@
+:root {
+  --fs-link-color: var(--sapLinkColor, $sapLinkColor);
+  --fs-link-text-decoration: underline;
+  --fs-link-transition: all $fd-animation--speed ease-in;
+  --fs-link-font-family: var(--sapFontFamily, $sapFontFamily);
+  --fs-link-font-size: var(--sapFontSize, $sapFontSize);
+  --fs-link-disabled-opacity: var(--sapContent_DisabledOpacity, $sapContent_DisabledOpacity);
+  --fs-link-focus-border-width: var(--sapContent_FocusWidth, $sapContent_FocusWidth);
+  --fs-link-focus-border-style: var(--sapContent_FocusStyle, $sapContent_FocusStyle);
+  --fs-link-focus-border-color: var(--sapContent_FocusColor, $sapContent_FocusColor);
+}

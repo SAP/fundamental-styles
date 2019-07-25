@@ -1,12 +1,11 @@
-{% macro format(content="",bgcolor="transparent") %}
-<div style="background-color:{{bgcolor}}">
-{{ content }}
-</div>
-<br><br>
-<textarea readonly class="test-textarea">{{ content | e | trim }}</textarea>
+{% macro format(content = "", bgcolor = "transparent") %}
+    <div style="background-color:{{bgcolor}}">
+        {{ content }}
+    </div>
+    <br><br>
+    <textarea readonly="readonly" cols="100" rows="15" class="test-textarea">{{ content | e | trim }}</textarea>
 {% endmacro %}
 
-
 {% macro code() -%}
-<textarea readonly class="test-textarea">{{ caller() | trim }}</textarea>
+    <textarea readonly="readonly" cols="100" rows="15" class="test-textarea">{{ caller() | trim }}</textarea>
 {%- endmacro %}

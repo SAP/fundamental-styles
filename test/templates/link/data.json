@@ -5,17 +5,7 @@
   "rtl": true,
   "version": "1.0.0",
   "properties": {
-    "text": "lorem ipsum"
-  },
-  "modifier": {},
-  "state": {
-    "selected": false,
-    "pressed": false,
-    "disabled": false
-  },
-  "aria": {
-    "selected": false,
-    "pressed": false,
+    "text": "Standard Link",
     "disabled": false
   }
 }

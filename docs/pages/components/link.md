@@ -11,26 +11,23 @@ summary:
 
 Used when extra emphasis is needed especially when a link needs to standout from the surrounding text.
 {: .docs-intro}
-
-<br>
-
-## Link States
-* Selected state can be rendered using class `is-selected` and/or `aria-selected="true"` attribute
-* Disabled state can be rendered using class `is-disabled` and/or `aria-disabled="true"` attribute
+<style>
+    a{
+        margin-right: 10px !important;
+    }
+</style>
 
 {% capture default %}
-<a href="#" class="fd-link">Standard Link</a>
-<br><br>
-<a href="#" class="fd-link"><strong>Emphasized Link</strong></a>
-<br><br>
-<a href="#" class="fd-link" aria-disabled="true">Disabled Link</a>
-<br><br>
-<a href="#" class="fd-link">
+<a role="link" href="#" class="fd-link">Standard Link</a>
+<a role="link" href="#" class="fd-link" design="Emphasized">Emphasized Link</a>
+<a role="link" class="fd-link" aria-disabled="true" disabled>Disabled Link</a>
+<br>
+<a role="link" href="#" class="fd-link">
     Icon Left Link 
     <span class="sap-icon--slim-arrow-right sap-icon--s"></span>
 </a>
-<br><br>
-<a href="#" class="fd-link">
+<br>
+<a role="link" href="#" class="fd-link">
     <span class="sap-icon--slim-arrow-left sap-icon--s"></span> 
     Icon Right Link
 </a>

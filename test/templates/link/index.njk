@@ -3,43 +3,37 @@
 {% from "../button/component.njk" import button %}
 {% from "./component.njk" import link %}
 
+{% set link_data = [
+    {
+        text: 'Standard Link',
+        disabled: false
+    }, {
+        text: 'Standard Disabled Link',
+        disabled: true
+    }, {
+        text: 'Emphasized Link',
+        disabled: false,
+        design: 'Emphasized'
+    }, {
+        text: 'Emphasized Disabled Link',
+        disabled: true,
+        design: 'Emphasized'
+    }
+] %}
+
 {% block content %}
-
-    <!-- output the component example and the code snippet -->
-    {% set example %}
-{{  link(
-        properties=data.properties,
-        modifier={},
-        state={},
-        aria={}
-    )
-}}
-<br>
-{{  link(
-        properties=data.properties,
-        modifier={
-
-        },
-        state=data.state,
-        aria={
-          selected: true
+    <style media="screen">
+        .link-playground a {
+            margin-right: 5px !important;
         }
-    )
-}}
-<br>
-{{  link(
-        properties=data.properties,
-        modifier={
+    </style>
 
-        },
-        state=data.state,
-        aria={
-          disabled: true
-        }
-    )
-}}
-    {% endset %}
-    {{ format(example) }}
-
-
+    <div class="link-playground">
+        {% set example1 %}
+        {% for l1 in link_data %}
+            {{ link(properties=l1)}}
+        {% endfor %}
+        {% endset %}
+        {{ format(example1) }}
+    </div>
 {% endblock %}

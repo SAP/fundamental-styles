@@ -1,0 +1,42 @@
+@import "./link-variables";
+@import "../self-contained-settings";
+@import "../../theme-designer/Base/baseLib/sap_fiori_3/css_variables";
+@import "../../theme-designer/Base/baseLib/sap_fiori_3/sass_variables.scss";
+
+/*!
+.fd-link
+*/
+$block: #{$fd-namespace}-link;
+
+.#{$block} {
+  color: var(--fs-link-color);
+  font-family: var(--fs-link-font-family);
+  font-size: var(--fs-link-font-size);
+  transition: var(--fs-link-transition);
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  &:visited,
+  &:active {
+    color: var(--fs-link-color);
+  }
+  &:hover {
+    text-decoration: var(--fs-link-text-decoration);
+  }
+  &[disabled] {
+    opacity: var(--fs-link-disabled-opacity);
+    pointer-events: none;
+    text-shadow: none;
+    outline: none;
+    cursor: default;
+  }
+  &:focus {
+    text-decoration: var(--fs-link-text-decoration);
+    outline-style: var(--fs-link-focus-border-style);
+    outline-width: var(--fs-link-focus-border-width);
+    outline-color: var(--fs-link-focus-border-color);
+  }
+  &[design="Emphasized"] {
+    font-weight: bold;
+  }
+}
