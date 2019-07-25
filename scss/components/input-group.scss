@@ -163,17 +163,28 @@ $block: #{$fd-namespace}-input-group;
                 width: 0;
             }
         }
+        @include fd-disabled() {
+            border-color: var(--fd-color-neutral-2);
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
     }
     &--before {
         #{$fd-elements-inputs--text} {
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
+            @include fd-disabled() {
+                opacity: 0.4;
+            }
         }
     }
     &--after {
         #{$fd-elements-inputs--text} {
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
+            @include fd-disabled() {
+                opacity: 0.4;
+            }
         }
     }
     &__button {
