@@ -1,6 +1,6 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "../button/component.njk" import button %}
+{% from "../button/component.njk" import button2 %}
 {% from "./component.njk" import button_group %}
 
 {% block content %}
@@ -22,17 +22,17 @@
 {% set example %}
 
   {% call button_group() -%}
-    {{-  button(
+    {{-  button2(
       { icon: 'survey' },
         modifier={ block: [size] },
         aria={ label: 'Survey' })
       }}
-    {{-  button(
+    {{-  button2(
         { icon: 'pie-chart' },
           modifier={ block: [size] },
           aria={ label: 'Chart', selected: true })
         }}
-    {{-  button(
+    {{-  button2(
           { icon: 'pool' },
             modifier={ block: [size] },
             aria={ label: 'Pool' })
@@ -40,17 +40,17 @@
   {%- endcall %}
 
   {% call button_group() -%}
-    {{-  button(
+    {{-  button2(
       { label: 'First' },
         modifier={ block: [size] },
         aria={ selected: true })
       }}
-    {{-  button(
+    {{-  button2(
         { label: 'Second' },
           modifier={ block: [size] },
           aria={ })
         }}
-    {{-  button(
+    {{-  button2(
           { label: 'Third' },
             modifier={ block: [size] },
             aria={ })
@@ -69,18 +69,18 @@
 {% set example %}
 
   {% call button_group() -%}
-    {{-  button(
+    {{-  button2(
       { icon: 'survey' },
       disabled = true,
         modifier={ block: [""] },
         aria={ label: 'Survey' })
       }}
-    {{-  button(
+    {{-  button2(
         { icon: 'pie-chart' },
           modifier={ block: [""] },
           aria={ label: 'Chart' })
         }}
-    {{-  button(
+    {{-  button2(
           { icon: 'pool' },
             modifier={ block: [""] },
             aria={ label: 'Pool' })
@@ -88,35 +88,35 @@
   {%- endcall %}
 
     {% call button_group() -%}
-    {{-  button(
+    {{-  button2(
       { label: 'First' },
         modifier={ block: ["compact"] },
         aria={ })
       }}
-    {{-  button(
+    {{-  button2(
         { label: 'Second' },
         disabled = true,
           modifier={ block: ["compact"] },
           aria={ })
         }}
-    {{-  button(
+    {{-  button2(
           { label: 'Third' },
             modifier={ block: ["compact"] })
           }}
   {%- endcall %}
 
   {% call button_group() -%}
-    {{-  button(
+    {{-  button2(
       { label: 'First' },
         modifier={ block: [""] },
         aria={ })
       }}
-    {{-  button(
+    {{-  button2(
         { label: 'Second' },
           modifier={ block: [""] },
           aria={ })
         }}
-    {{-  button(
+    {{-  button2(
           { label: 'Third' },
           disabled = true,
             modifier={ block: [""] })
