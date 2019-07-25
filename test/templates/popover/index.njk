@@ -1,7 +1,7 @@
 {% extends "layout.njk" %}
 {% import "./../utils.njk" as utils %}
 {% from "./../format.njk" import format %}
-{% from "./component.njk" import popover, popover_popperjs %}
+{% from "./component.njk" import popover, popover_popperjs, list %}
 {% from "./../menu/component.njk" import menu %}
 
 {% block content %}
@@ -19,7 +19,7 @@
 {%- set _id6 = utils.id() %}
 
 {%- macro sample_control(properties={}) -%}
-  <span class="fd-popover__control{{ modifier.control | modifier('popover__control') }}  fd-image--m fd-image--circle" aria-label="Image label" aria-controls="{{ properties.id }}" aria-expanded="false" aria-haspopup="true"{{ " disabled" if state.disabled }}{{ aria | aria }} style="background-image: url('/static/nature.jpg');"></span>
+  <span class="fd-popover__control{{ modifier.control | modifier('popover__control') }}" aria-controls="{{ properties.id }}" aria-expanded="false" aria-haspopup="true"{{ " disabled" if state.disabled }}{{ aria | aria }}>Click Here</span>
 {%- endmacro %}
 
 <h2>popover with menu default </h2>
@@ -27,14 +27,7 @@
 {{  popover(properties={
     id: _id,
     control: sample_control(properties={id: _id}),
-    body: menu(properties={
-      items: [
-          { "label": "Option 1" },
-          { "label": "Option 2" },
-          { "label": "Option 3" },
-          { "label": "Option 4" }
-        ]
-      })
+    body: list()
   }, modifier={ block: ['left']})
 }}
 {% endset %}
@@ -47,14 +40,7 @@
 {{  popover(properties={
     id: _id2,
     control: sample_control(properties={id: _id2}),
-    body: menu(properties={
-      items: [
-          { "label": "Option 1" },
-          { "label": "Option 2" },
-          { "label": "Option 3" },
-          { "label": "Option 4" }
-        ]
-      })
+    body: list()
   }, modifier={ block: ['right']})
 }}
 
@@ -68,14 +54,7 @@
 {{  popover(properties={
     id: _id3,
     control: sample_control(properties={id: _id3}),
-    body: menu(properties={
-      items: [
-          { "label": "Option 1" },
-          { "label": "Option 2" },
-          { "label": "Option 3" },
-          { "label": "Option 4" }
-        ]
-      })
+    body: list()
   }, modifier={ block: ['no-arrow']})
 }}
 
@@ -90,14 +69,7 @@
 {{  popover(properties={
     id: _id4,
     control: sample_control(properties={id: _id4}),
-    body: menu(properties={
-      items: [
-          { "label": "Option 1" },
-          { "label": "Option 2" },
-          { "label": "Option 3" },
-          { "label": "Option 4" }
-        ]
-      })
+    body: list()
   }, modifier={ block: ['no-arrow', 'right']})
 }}
 
@@ -114,14 +86,7 @@ is simply a styling example.</p>
 {{  popover_popperjs(properties={
     id: _id5,
     control: sample_control(properties={id: _id5}),
-    body: menu(properties={
-      items: [
-          { "label": "Option 1" },
-          { "label": "Option 2" },
-          { "label": "Option 3" },
-          { "label": "Option 4" }
-        ]
-      })
+    body: list()
   }, modifier={ block: []})
 }}
 
@@ -138,14 +103,7 @@ is simply a styling example.</p>
 {{  popover_popperjs(properties={
     id: _id6,
     control: sample_control(properties={id: _id6}),
-    body: menu(properties={
-      items: [
-          { "label": "Option 1" },
-          { "label": "Option 2" },
-          { "label": "Option 3" },
-          { "label": "Option 4" }
-        ]
-      })
+    body: list()
   }, modifier={ block: ['no-arrow']})
 }}
 

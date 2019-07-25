@@ -25,6 +25,18 @@ $block: #{$fd-namespace}-popover;
   $fd-popover-transition-params: $fd-animation--speed !default;
   $fd-popover-transition-distance: -15px !default;
 
+  $fd-popover-item-color: fd-color("text", 2) !default;
+  $fd-popover-item-color--hover: $fd-color !default;
+  $fd-popover-item-background-color: map-get($fd-colors-background, 2) !default;
+  $fd-popover-item-background-color--hover: fd-color-state("hover") !default;
+  $fd-popover-item-background-color--selected: fd-color-state("selected") !default;
+
+  $fd-popover-item-padding-x: fd-space("regular") !default;
+  $fd-popover-item-padding-y: fd-space("tiny") + 2px !default;
+
+  $fd-popover-item-separator-color: fd-color("neutral", 2) !default;
+  --fd-popover-item-separator-color: var(--fd-color-neutral-2);
+
     // Consider removing this reset, look into its use and seeing font-size/line-height/color...
     // @include fd-reset;
     position: relative;
@@ -154,6 +166,57 @@ $block: #{$fd-namespace}-popover;
           opacity: 0;
           visibility: hidden;
           transform: translateY($fd-popover-transition-distance);
+      }
+    }
+
+    &__item {
+      @include fd-reset();
+      display: block;
+      @include action-cursor();
+      padding: $fd-popover-item-padding-y $fd-popover-item-padding-x;
+      @include fd-var-color("background-color", $fd-popover-item-background-color, --fd-popover-item-background-color);
+      @include fd-var-color("color", $fd-popover-item-color, --fd-popover-item-color);
+      @include fd-weight("normal");
+      > .fd-checkbox {
+        margin: 0 10px 0 0;
+      }
+      @include fd-hover() {
+        @include fd-var-color("color", $fd-popover-item-color--hover, --fd-color-text-1);
+        @include fd-var-color("background-color", $fd-popover-item-background-color--hover, --fd-color-background-hover);
+      }
+      @include fd-selected() {
+          @include fd-var-color("background-color", $fd-popover-item-background-color--selected, --fd-color-background-selected);
+          @include fd-hover() {
+            @include fd-var-color("background-color", fd-color-state("selected-hover"), --fd-color-background-selected-hover);
+          }
+      }
+    }
+    &__list {
+      @include fd-reset();
+      position: relative;
+      display: block;
+      white-space: nowrap;
+      padding-top: fd-space(base);
+      padding-bottom: fd-space(base);
+    }
+
+    &__list-item {
+      @include fd-reset();
+      margin: 0;
+      list-style: none;
+      //modified with separator border
+      @at-root {
+        &--separated {
+          & > *,
+          .#{$block}__list > * {
+            border-top-style: solid;
+            border-top-width: 1px;
+            @include fd-var-color("border-top-color", $fd-popover-item-separator-color, --fd-popover-item-separator-color);
+            &:first-child {
+              border-top-width: 0;
+            }
+          }
+        }
       }
     }
 

@@ -1,5 +1,4 @@
 {% from "./../icon/component.njk" import icon %}
-{% from "./../image/component.njk" import image %}
 <!--
 popover:
     properties={},
@@ -36,4 +35,13 @@ popover:
   {{properties.body}}
   <div class="fd-popover__arrow"></div>
 </div>
+{%- endmacro -%}
+
+{%- macro list(properties={}, modifier={}, state={}, aria={ hidden: true }) -%}
+<ul class="fd-popover__list">
+  <li class="fd-popover__list-item"><a role="button" class="fd-popover__item">Option 1</a></li>
+  <li class="fd-popover__list-item"><a role="button" class="fd-popover__item">Option 2</a></li>
+  <li class="fd-popover__list-item"><a role="button" class="fd-popover__item">Option 3</a></li>
+  <li class="fd-popover__list-item"><a role="button" class="fd-popover__item">Option 4</a></li>
+</ul>
 {%- endmacro -%}
