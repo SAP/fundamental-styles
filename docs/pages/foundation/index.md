@@ -14,16 +14,6 @@ problems in a meaningful way and creates simple intuitive experience.
 </p>
 
 <div class="fd-tile-grid fd-tile-grid--2col docs-tiles">
-    <a class="fd-tile" role="button" href="colors.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Colors
-             </h2>
-             <p class="fd-tile__description">
-                 Colors bring designs to life. It is used in a meaningful way to express emotions and tone, and promotes a distinct and consistent look and feel throughout all application.
-             </p>
-        </div>
-    </a>
     <a class="fd-tile" role="button" href="grid.html">
         <div class="fd-tile__content">
              <h2 class="fd-tile__header">

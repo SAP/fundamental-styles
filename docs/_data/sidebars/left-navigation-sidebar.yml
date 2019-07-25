@@ -15,10 +15,6 @@ entries:
     output: web
 
     folderitems:
-    - title: Colors
-      url: /foundation/colors.html
-      output: web
-
     - title: Grid
       url: /foundation/grid.html
       output: web
@@ -229,10 +225,6 @@ entries:
 
     - title: Design System Utilities
       url: /resources/design-system-utilities.html
-      output: web
-
-    - title: UI Kit
-      url: /resources/ui-kit.html
       output: web
 
     - title: SAP Fundamental Styles Implementation Libraries

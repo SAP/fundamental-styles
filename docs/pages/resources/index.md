@@ -25,13 +25,6 @@ summary:
             </h2>
         </div>
     </a>
-    <a class="fd-tile" role="button" href="ui-kit.html">
-        <div class="fd-tile__content">
-            <h2 class="fd-tile__header">
-                UI Kit
-            </h2>
-        </div>
-    </a>
     <a class="fd-tile" role="button" href="fundamentals-libraries.html">
         <div class="fd-tile__content">
             <h2 class="fd-tile__header">
