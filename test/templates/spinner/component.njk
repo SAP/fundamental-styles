@@ -7,6 +7,6 @@ spinner:
 -->
 {% macro spinner(properties={}, modifier={}, state={}, aria={}) -%}
 <div class="fd-spinner{{ modifier.block | modifier('spinner') }}{{ state | state }}"{{ aria | aria }}>
-    <div></div>
+    <div class="fd-spinner__body"></div>
 </div>
 {%- endmacro %}

@@ -1,0 +1,16 @@
+{
+    "id": "file-upload",
+    "name": "File Upload",
+    "css_vars": true,
+    "rtl": true,
+    "version": "1.0.0",
+    "properties": {
+        "text": "Upload Link",
+        "message": ""
+    },
+    "modifier": {
+        "block": []
+    },
+    "state": {},
+    "aria": {}
+}

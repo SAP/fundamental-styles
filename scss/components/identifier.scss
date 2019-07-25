@@ -15,7 +15,7 @@ $block: #{$fd-namespace}-identifier;
       s: $fd-const-ratio * 8,   //32px
       m: $fd-const-ratio * 12,  //48px
       l: $fd-const-ratio * 16,  //64px
-      xl: $fd-const-ratio * 22, //88px
+      xl: $fd-const-ratio * 20, //80px
       xxl: $fd-const-ratio * 28 //112px
     ) !default;
     $fd-identifier-border-radius: $fd-border-radius !default;
@@ -25,6 +25,7 @@ $block: #{$fd-namespace}-identifier;
     //BLOCK BASE *******************************************
     @at-root {
       [class*="#{$block}"] {
+        @include fd-reset();
         --fd-identifier-color: var(--fd-color-text-5);
         --fd-identifier-background-color: var(--fd-color-status-4);
         @include fd-reset();
@@ -42,7 +43,8 @@ $block: #{$fd-namespace}-identifier;
     //BLOCK MODIFIERS ************
     //sizes
     @each $size, $value in $fd-identifier-sizes {
-      &--#{$size} {
+      &.#{$block}--#{$size} {
+        @include fd-reset-spacing();
         width: $value;
         height: $value;
         max-width: $value;
@@ -101,19 +103,18 @@ $block: #{$fd-namespace}-identifier;
       }
     }
     //borders
-    &--circle {
+    &.#{$block}--circle {
       border-radius: 50%;
     }
     //thumbnail
-    &--thumbnail {
+    &.#{$block}--thumbnail {
       text-indent: -200%;
       overflow: hidden;
     }
     //background
-    &--transparent {
-      --fd-identifier-color: var(--fd-color-text-1);
+    &.#{$block}--transparent {
       --fd-identifier-background-color: transparent;
-      @include fd-var-color("color", $fd-color);
+      @include fd-var-color("color", map-get($fd-colors-text, 1), --fd-color-text-1);
       @include fd-var-color("background-color", transparent);
     }
 }

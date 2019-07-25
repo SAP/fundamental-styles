@@ -84,7 +84,13 @@ a.#{$block} {
       }
 
       //states
-      @include fd-focus();
+      @include fd-focus() {
+        @include fd-disabled() {
+          opacity: 0.4;
+          cursor: not-allowed;
+          box-shadow: none;
+        }
+      }
       @include fd-hover() {
           --fd-button-background-color: var(--fd-color-action-hover);
           --fd-button-color: var(--fd-color-action-2);
@@ -106,6 +112,7 @@ a.#{$block} {
       @include fd-disabled() {
         opacity: 0.4;
         cursor: not-allowed;
+        box-shadow: none;
       }
     }
   }
@@ -235,7 +242,9 @@ a.#{$block} {
         --fd-button-color: var(--fd-color-action-1);
         @include fd-var-color("color", fd-color("action", 1), --fd-button-color);
         @include fd-var-color("background-color", transparent, --fd-button-background-color);
+        box-shadow: none;
       }
+      box-shadow: 0 0 0 1px var(--fd-color-action-hover, map-get($fd-colors-action-states, "hover"));
     }
     @include fd-active-pressed-selected() {
       --fd-button-background-color: var(--fd-color-action-selected);
@@ -264,9 +273,11 @@ a.#{$block} {
       --fd-button-color: var(--fd-color-status-4);
       @include fd-hover() {
         --fd-button-color: var(--fd-color-status-4);
+        box-shadow: 0 0 0 1px var(--fd-color-status-4, map-get($fd-colors-status, 4));
         @include fd-var-color("color", fd-color("status", 4), --fd-button-color);
         @include fd-disabled() {
           --fd-button-color: var(--fd-color-status-4);
+          box-shadow: none;
         }
       }
       @include fd-active-pressed-selected() {
@@ -280,9 +291,11 @@ a.#{$block} {
       --fd-button-color: var(--fd-color-status-3);
       @include fd-hover() {
         --fd-button-color: var(--fd-color-status-3);
+        box-shadow: 0 0 0 1px var(--fd-color-status-3, map-get($fd-colors-status, 3));
         @include fd-var-color("color", fd-color("status", 3), --fd-button-color);
         @include fd-disabled() {
           --fd-button-color: var(--fd-color-status-3);
+          box-shadow: none;
         }
       }
       @include fd-active-pressed-selected() {
@@ -296,9 +309,11 @@ a.#{$block} {
       --fd-button-color: var(--fd-color-status-1);
       @include fd-hover() {
         --fd-button-color: var(--fd-color-status-1);
+        box-shadow: 0 0 0 1px var(--fd-color-status-1, map-get($fd-colors-status, 1));
         @include fd-var-color("color", fd-color("status", 1), --fd-button-color);
         @include fd-disabled() {
           --fd-button-color: var(--fd-color-status-1);
+          box-shadow: none;
         }
       }
       @include fd-active-pressed-selected() {
@@ -312,9 +327,11 @@ a.#{$block} {
       --fd-button-color: var(--fd-color-status-2);
       @include fd-hover() {
         --fd-button-color: var(--fd-color-status-2);
+        box-shadow: 0 0 0 1px var(--fd-color-status-2, map-get($fd-colors-status, 2));
         @include fd-var-color("color", fd-color("status", 2), --fd-button-color);
         @include fd-disabled() {
           --fd-button-color: var(--fd-color-status-2);
+          box-shadow: none;
         }
       }
       @include fd-active-pressed-selected() {
@@ -547,56 +564,6 @@ a.#{$block} {
             --fd-button-background-color: var(--fd-color-status-1);
             --fd-button-color: var(--fd-color-action-2);
           }
-        }
-      }
-    }
-    //DEPRECATE --secondary
-    &--secondary {
-      --fd-button-border-color: transparent;
-      @include fd-hover() {
-        --fd-button-background-color: var(--fd-color-neutral-1);
-        --fd-button-color: var(--fd-color-action-1);
-        @include fd-disabled() {
-          --fd-button-background-color: var(--fd-color-background-2);
-          --fd-button-color: var(--fd-color-action-1);
-        }
-      }
-      @include fd-active-pressed-selected() {
-        --fd-button-background-color: var(--fd-color-action-selected);
-        --fd-button-color: var(--fd-color-action-2);
-      }
-      &.#{$block}--negative {
-        --fd-button-color: var(--fd-color-status-3);
-        --fd-button-border-color: transparent;
-        --fd-button-background-color: transparent;
-        @include fd-hover() {
-          --fd-button-background-color: var(--fd-color-neutral-1);
-          --fd-button-color: var(--fd-color-status-3);
-          @include fd-disabled() {
-            --fd-button-background-color: transparent;
-            --fd-button-color: var(--fd-color-status-3);
-          }
-        }
-        @include fd-active-pressed-selected() {
-          --fd-button-background-color: var(--fd-color-status-3);
-          --fd-button-color: var(--fd-color-action-2);
-        }
-      }
-      &.#{$block}--positive {
-        --fd-button-color: var(--fd-color-status-1);
-        --fd-button-border-color: transparent;
-        --fd-button-background-color: transparent;
-        @include fd-hover() {
-          --fd-button-background-color: var(--fd-color-neutral-1);
-          --fd-button-color: var(--fd-color-status-1);
-          @include fd-disabled() {
-            --fd-button-background-color: transparent;
-            --fd-button-color: var(--fd-color-status-1);
-          }
-        }
-        @include fd-active-pressed-selected() {
-          --fd-button-background-color: var(--fd-color-status-1);
-          --fd-button-color: var(--fd-color-action-2);
         }
       }
     }
