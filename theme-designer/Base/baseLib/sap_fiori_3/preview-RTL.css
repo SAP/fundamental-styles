@@ -1,0 +1,15 @@
+/**
+* Copyright (c) 2012-2019 SAP SE. All Rights Reserved Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+*
+* Theming Engine 1.43.2
+* data:{"Path": "Base.baseLib.sap_fiori_3.preview", "PathPattern": "/%frameworkId%/%libId%/%themeId%/%fileId%.css", "Extends": ["sap_base_fiori","baseTheme"], "Tags": ["Fiori_3"], "FallbackThemeId": "sap_belize", "Version": { "Build":"11.1.6-SNAPSHOT.20190708050027", "Source": "11.1.6-SNAPSHOT", "Engine": "1.43.2"}}
+*/
+
+.sapThemeMetaData-Base-baseLib{background-image: url('data:text/plain;utf-8,{"Path": "Base.baseLib.sap_fiori_3.preview", "PathPattern": "/%frameworkId%/%libId%/%themeId%/%fileId%.css", "Extends": ["sap_base_fiori","baseTheme"], "Tags": ["Fiori_3"], "FallbackThemeId": "sap_belize", "Version": { "Build":"11.1.6-SNAPSHOT.20190708050027", "Source": "11.1.6-SNAPSHOT", "Engine": "1.43.2"}}');}
+
+/*Base.baseLib.baseTheme.base*/.sapSvgLibs{background-image:none,url('../../../Base/baseLib/sap_fiori_3/svg-RTL/libs/SAPGUI-icons.svg'),url('../../../Base/baseLib/sap_fiori_3/svg-RTL/libs/SAPWeb-icons.svg')}.sapSvgLibsDataUri{background-image:url("data:text/plain;utf-8,none,url('../../../Base/baseLib/sap_fiori_3/svg-RTL/libs/SAPGUI-icons.svg'),url('../../../Base/baseLib/sap_fiori_3/svg-RTL/libs/SAPWeb-icons.svg')")}.sapSvgIconPositive{fill:#107e3e!important}.sapSvgIconCritical{fill:#e9730c!important}.sapSvgIconNegative{fill:#bb0000!important}
+/*Base.baseLib.baseTheme.preview*/
+/*Base.baseLib.sap_base_fiori.base*/
+/*Base.baseLib.sap_base_fiori.preview*/
+/*Base.baseLib.sap_fiori_3.base*/@font-face{font-family:'72';font-style:normal;font-weight:400;src:local('72'),url('../../../Base/baseLib/sap_fiori_3/../sap_base_fiori/fonts/72-Regular.woff2') format('woff2'),url('../../../Base/baseLib/sap_fiori_3/../sap_base_fiori/fonts/72-Regular.woff') format('woff')}@font-face{font-family:'72';font-style:normal;font-weight:700;src:local('72-Bold'),url('../../../Base/baseLib/sap_fiori_3/../sap_base_fiori/fonts/72-Bold.woff2') format('woff2'),url('../../../Base/baseLib/sap_fiori_3/../sap_base_fiori/fonts/72-Bold.woff') format('woff')}@font-face{font-family:'72full';font-style:normal;font-weight:400;src:url('../../../Base/baseLib/sap_fiori_3/../sap_base_fiori/fonts/72-Regular-full.woff2') format('woff2'),url('../../../Base/baseLib/sap_fiori_3/../sap_base_fiori/fonts/72-Regular-full.woff') format('woff')}@font-face{font-family:'72full';font-style:normal;font-weight:700;src:url('../../../Base/baseLib/sap_fiori_3/../sap_base_fiori/fonts/72-Bold-full.woff2') format('woff2'),url('../../../Base/baseLib/sap_fiori_3/../sap_base_fiori/fonts/72-Bold-full.woff') format('woff')}
+/*Base.baseLib.sap_fiori_3.preview*/

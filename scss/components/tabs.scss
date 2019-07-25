@@ -38,12 +38,15 @@ $block: #{$fd-namespace}-tabs;
   border-bottom-width: $fd-tabs-border-width;
   @include fd-var-color("border-bottom-color", $fd-tabs-background-color, --fd-tabs-background-color);
   &__item {
+    @include fd-reset();
       padding: 0 $fd-tabs-link-padding-x;
   }
   &__link {
+    @include fd-reset();
     display: block;
     position: relative;
     padding: $fd-tabs-link-padding-y 0;
+    text-decoration: none;
     @include fd-type("0");
     @include action-cursor();
     @include fd-var-color("color", $fd-tabs-link-color, --fd-tabs-link-color);

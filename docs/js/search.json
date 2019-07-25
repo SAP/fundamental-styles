@@ -12,7 +12,6 @@ layout:
 "tags": "{{ page.tags }}",
 "keywords": "{{page.keywords}}",
 "url": "{{ page.url}}",
-"summary": "{{page.summary | strip }}",
 "folder": "{{page.folder | strip }}"
 }
 {% unless forloop.last and site.posts.size < 1 %},{% endunless %}
@@ -25,8 +24,7 @@ layout:
 "title": "{{ post.title | escape }}",
 "tags": "{{ post.tags }}",
 "keywords": "{{post.keywords}}",
-"url": "{{ post.url | remove: "/" }}",
-"summary": "{{post.summary | strip }}"
+"url": "{{ post.url | remove: "/" }}"
 }
 {% unless forloop.last %},{% endunless %}
 {% endfor %}

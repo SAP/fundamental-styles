@@ -3,7 +3,7 @@
 @import "./../functions";
 @import "./../icons/mixins";
 /*!
-.fd-alert+(--information, --success, --warning, --error)
+.fd-alert+(--information, --success, --warning, --error, --no-icon)
     .fd-alert__close
 */
 $block: #{$fd-namespace}-alert;
@@ -27,7 +27,7 @@ $block: #{$fd-namespace}-alert;
     --fd-alert-border-color: var(--fd-color-neutral-4);
     --fd-alert-action-color: var(--fd-color-action-1);
 
-    $fd-alert-padding-x: fd-space("xxs") !default;
+    $fd-alert-padding-x: fd-space(2.25) !default;
     $fd-alert-padding-y: fd-space("xs") !default;
 
     // Block
@@ -51,12 +51,11 @@ $block: #{$fd-namespace}-alert;
       position: absolute;
       right: 0;
       top: 0;
-      @include fd-icon("decline", "l");
+      @include fd-icon("decline", "m");
       @include fd-button-reset();
       @include fd-var-color("color", $fd-alert-action-color, --fd-alert-action-color);
-
       width: fd-space(9);
-      height: fd-space(9);
+      height: fd-space(9.5);
       @include fd-focus();
       @include fd-rtl() {
         left: 0;
@@ -77,11 +76,18 @@ $block: #{$fd-namespace}-alert;
     &--information,
     &--success,
     &--error {
+      &::before {
+        margin-top: fd-space(.75);
+      }
       padding-left: fd-space("large");
       @include fd-rtl() {
         padding-right: fd-space("large");
         padding-left: $fd-alert-padding-x;
         &::before {
+          display: none;
+        }
+        &::after {
+          margin-top: fd-space(.5);
           display: none;
         }
       }
@@ -113,9 +119,9 @@ $block: #{$fd-namespace}-alert;
       }
       @include fd-var-color("background-color", $fd-alert-background-color--warning, --fd-alert-background-color);
       @include fd-var-color("border-color", $fd-alert-border-color--warning, --fd-alert-border-color);
-      @include fd-icon("message-warning", "l");
+      @include fd-icon("message-warning", "m");
       @include fd-rtl() {
-        @include fd-icon("message-warning", "l", "after");
+        @include fd-icon("message-warning", "m", "after");
       }
     }
     &--error {
@@ -127,9 +133,9 @@ $block: #{$fd-namespace}-alert;
       }
       @include fd-var-color("background-color", $fd-alert-background-color--error, --fd-alert-background-color);
       @include fd-var-color("border-color", $fd-alert-border-color--error, --fd-alert-border-color);
-      @include fd-icon("message-error", "l");
+      @include fd-icon("message-error", "m");
       @include fd-rtl() {
-        @include fd-icon("message-error", "l", "after");
+        @include fd-icon("message-error", "m", "after");
       }
     }
     &--success {
@@ -141,9 +147,9 @@ $block: #{$fd-namespace}-alert;
       }
       @include fd-var-color("background-color", $fd-alert-background-color--success, --fd-alert-background-color);
       @include fd-var-color("border-color", $fd-alert-border-color--success, --fd-alert-border-color);
-      @include fd-icon("message-success", "l");
+      @include fd-icon("message-success", "m");
       @include fd-rtl() {
-        @include fd-icon("message-success", "l", "after");
+        @include fd-icon("message-success", "m", "after");
       }
     }
     &--information {
@@ -155,9 +161,21 @@ $block: #{$fd-namespace}-alert;
       }
       @include fd-var-color("background-color", $fd-alert-background-color--information, --fd-alert-background-color);
       @include fd-var-color("border-color", $fd-alert-border-color--information, --fd-alert-border-color);
-      @include fd-icon("message-information", "l");
+      @include fd-icon("message-information", "m");
       @include fd-rtl() {
-        @include fd-icon("message-information", "l", "after");
+        @include fd-icon("message-information", "m", "after");
+      }
+    }
+    &--no-icon {
+      padding-left: $fd-alert-padding-x;
+      &::before {
+        display: none;
+      }
+      @include fd-rtl() {
+        padding-right: $fd-alert-padding-x;
+        &::after {
+          display: none;
+        }
       }
     }
     &__text {

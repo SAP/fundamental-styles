@@ -2,6 +2,127 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.47"></a>
+# [0.2.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.46...v0.2.0-rc.47) (2019-07-25)
+
+
+### Bug Fixes
+
+* replace button: --secendary with --light ([#206](https://github.com/SAP/fundamental-styles/issues/206)) ([89c8b25](https://github.com/SAP/fundamental-styles/commit/89c8b25))
+
+
+
+<a name="0.2.0-rc.46"></a>
+# [0.2.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.45...v0.2.0-rc.46) (2019-07-23)
+
+
+### Bug Fixes
+
+* add asset upload component ([#197](https://github.com/SAP/fundamental-styles/issues/197)) ([c83a3f9](https://github.com/SAP/fundamental-styles/commit/c83a3f9))
+
+
+
+<a name="0.2.0-rc.45"></a>
+# [0.2.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.44...v0.2.0-rc.45) (2019-07-23)
+
+
+### Bug Fixes
+
+* fixed secondary button part ([#193](https://github.com/SAP/fundamental-styles/issues/193)) ([bc0c973](https://github.com/SAP/fundamental-styles/commit/bc0c973))
+
+
+
+<a name="0.2.0-rc.44"></a>
+# [0.2.0-rc.44](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.43...v0.2.0-rc.44) (2019-07-23)
+
+
+### Bug Fixes
+
+* updated light button styling ([#178](https://github.com/SAP/fundamental-styles/issues/178)) ([3aed452](https://github.com/SAP/fundamental-styles/commit/3aed452))
+
+
+
+<a name="0.2.0-rc.43"></a>
+# [0.2.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.42...v0.2.0-rc.43) (2019-07-22)
+
+
+
+<a name="0.2.0-rc.42"></a>
+# [0.2.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.41...v0.2.0-rc.42) (2019-07-19)
+
+
+### Bug Fixes
+
+* added self-contained style for Tabs component ([#184](https://github.com/SAP/fundamental-styles/issues/184)) ([2e2bfab](https://github.com/SAP/fundamental-styles/commit/2e2bfab))
+
+
+
+<a name="0.2.0-rc.41"></a>
+# [0.2.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.40...v0.2.0-rc.41) (2019-07-18)
+
+
+### Bug Fixes
+
+* added self-contained style for product-tile component  ([#161](https://github.com/SAP/fundamental-styles/issues/161)) ([7daf4e7](https://github.com/SAP/fundamental-styles/commit/7daf4e7))
+
+
+
+<a name="0.2.0-rc.40"></a>
+# [0.2.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.39...v0.2.0-rc.40) (2019-07-18)
+
+
+### Bug Fixes
+
+* update XL identifier size ([#190](https://github.com/SAP/fundamental-styles/issues/190)) ([93fe066](https://github.com/SAP/fundamental-styles/commit/93fe066))
+
+
+
+<a name="0.2.0-rc.39"></a>
+# [0.2.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.38...v0.2.0-rc.39) (2019-07-17)
+
+
+### Features
+
+* added self-contained style for identifier component ([#157](https://github.com/SAP/fundamental-styles/issues/157)) ([73e7e30](https://github.com/SAP/fundamental-styles/commit/73e7e30))
+
+
+
+<a name="0.2.0-rc.38"></a>
+# [0.2.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.37...v0.2.0-rc.38) (2019-07-17)
+
+
+### Bug Fixes
+
+* Alert updates ([#188](https://github.com/SAP/fundamental-styles/issues/188)) ([7d03915](https://github.com/SAP/fundamental-styles/commit/7d03915))
+* Update radio and check styles ([875b524](https://github.com/SAP/fundamental-styles/commit/875b524))
+
+
+
+<a name="0.2.0-rc.37"></a>
+# [0.2.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.36...v0.2.0-rc.37) (2019-07-16)
+
+
+
+<a name="0.2.0-rc.36"></a>
+# [0.2.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.35...v0.2.0-rc.36) (2019-07-16)
+
+
+
+<a name="0.2.0-rc.35"></a>
+# [0.2.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.34...v0.2.0-rc.35) (2019-07-15)
+
+
+
+<a name="0.2.0-rc.34"></a>
+# [0.2.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.33...v0.2.0-rc.34) (2019-07-15)
+
+
+### Bug Fixes
+
+* added self-contained styles for spinner component ([#130](https://github.com/SAP/fundamental-styles/issues/130)) ([28ce75c](https://github.com/SAP/fundamental-styles/commit/28ce75c))
+
+
+
 <a name="0.2.0-rc.33"></a>
 # [0.2.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.32...v0.2.0-rc.33) (2019-07-15)
 
