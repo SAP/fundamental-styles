@@ -100,7 +100,7 @@
       }}
     </td>
     <td>
-      <span>extra large (xl) - 88px</span>
+      <span>extra large (xl) - 80px</span>
     </td>
     <td>
       <code>.fd-identifier--xl</code>
@@ -278,7 +278,7 @@ Include <code>role="presentation"</code> when the identifier is only used for il
 <p>Use helpers classes tp change the background colors, e.g., <code>.fd-has-background-color-accent-10</code>
 </p>
 {%- set example %}
-{% for num in range(1,10) %}
+{% for num in range(1,16) %}
 {%- set cls = "has-background-color-accent-"+num %}
 {{  identifier(
     properties={
@@ -294,7 +294,7 @@ Include <code>role="presentation"</code> when the identifier is only used for il
 )
 }}
 {%- endfor %}
-{% for num in range(1,10) | reverse %}
+{% for num in range(1,16) | reverse %}
 {%- set cls = "has-background-color-accent-"+num %}
 {{  identifier(
     properties={

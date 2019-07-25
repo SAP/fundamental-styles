@@ -24,6 +24,4 @@ test/visual-regression-tests/backstop_data
 docs/css/fundamental-styles-ie11.css
 test/visual-regression-tests/config/backstopConfigCI.json
 docs/_config-library.yml
-/less/fundamental-styles-ie11.less
-/less/fundamental-styles.less
 test/visual-regression-tests/resources/reference_images/visual_regression_fundamental_DS_Store_0_example-containerfd-DS_Store_0_desktop.png

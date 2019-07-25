@@ -12,7 +12,7 @@
 {% set example %}
 {{  alert(
         properties={
-            text: '<p>Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu. <a href="#" class="fd-link">Learn More</a></p>',
+            text: '<p class="fd-alert__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.</p>',
             dismissible: false
         },
         modifier={
@@ -23,7 +23,7 @@
 <br>
 {{  alert(
         properties={
-            text: '<p>Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu. <a href="#" class="fd-link">Learn More</a></p>',
+            text: '<p class="fd-alert__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.</p>',
             dismissible: false
         },
         modifier={
@@ -34,7 +34,7 @@
 <br>
 {{  alert(
         properties={
-            text: '<p>Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.',
+            text: '<p class="fd-alert__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.',
             dismissible: false
         },
         modifier={
@@ -45,7 +45,7 @@
 <br>
 {{  alert(
         properties={
-            text: '<p>Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.',
+            text: '<p class="fd-alert__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.',
             dismissible: false
         },
         modifier={
@@ -56,11 +56,76 @@
 <br>
 {{  alert(
         properties={
-            text: '<p>Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.',
+            text: '<p class="fd-alert__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.',
             dismissible: false
         },
         modifier={
             block: ["error"]
+        }
+    )
+}}
+<br>
+
+{% endset %}
+{{- format(example) -}}
+
+<br><br>
+
+<h1>alert --no-icon</h1>
+
+<!-- output the component example and the code snippet -->
+{% set example %}
+{{  alert(
+        properties={
+            text: '<p class="fd-alert__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.</p>',
+            dismissible: false
+        },
+        modifier={
+            block: []
+        }
+    )
+}}
+<br>
+{{  alert(
+        properties={
+            text: '<p class="fd-alert__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.</p>',
+            dismissible: false
+        },
+        modifier={
+            block: ["information", "no-icon"]
+        }
+    )
+}}
+<br>
+{{  alert(
+        properties={
+            text: '<p class="fd-alert__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.',
+            dismissible: false
+        },
+        modifier={
+            block: ["success", "no-icon"]
+        }
+    )
+}}
+<br>
+{{  alert(
+        properties={
+            text: '<p class="fd-alert__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.',
+            dismissible: false
+        },
+        modifier={
+            block: ["warning", "no-icon"]
+        }
+    )
+}}
+<br>
+{{  alert(
+        properties={
+            text: '<p class="fd-alert__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.',
+            dismissible: false
+        },
+        modifier={
+            block: ["error", "no-icon"]
         }
     )
 }}
@@ -76,7 +141,7 @@
 {% set example %}
 {{  alert(
         properties={
-            text: 'Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et mattis erat vel aliquet in sem urna et sagittis diam in vehicula. <a href="#" class="fd-link">Learn More</a>',
+            text: '<p class="fd-alert__text">Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et mattis erat vel aliquet in sem urna et sagittis diam in vehicula.</p>',
             dismissible: true
         },
         modifier={
@@ -87,7 +152,7 @@
 <br>
 {{  alert(
         properties={
-            text: 'Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et. <a href="#" class="fd-link">Learn More</a>',
+            text: '<p class="fd-alert__text">Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.</p>',
             dismissible: true
         },
         modifier={
@@ -98,7 +163,7 @@
 <br>
 {{  alert(
         properties={
-            text: 'Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et. <a href="#" class="fd-link">Learn More</a>',
+            text: '<p class="fd-alert__text">Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.</p>',
             dismissible: true
         },
         modifier={
@@ -109,7 +174,7 @@
 <br>
 {{  alert(
         properties={
-            text: 'Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et. <a href="#" class="fd-link">Learn More</a>',
+            text: '<p class="fd-alert__text">Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.</p>',
             dismissible: true
         },
         modifier={
@@ -120,7 +185,7 @@
 <br>
 {{  alert(
         properties={
-            text: 'Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et. Pellentesque metus in sem lacus commodo eget justo ut rutrum varius nunc. Sed non rhoncus risus. <a href="#" class="fd-link">Learn More</a>',
+            text: '<p class="fd-alert__text">Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et. Pellentesque metus in sem lacus commodo eget justo ut rutrum varius nunc. Sed non rhoncus risus.</p>',
             dismissible: true
         },
         modifier={
@@ -132,11 +197,73 @@
 {{- format(example) -}}
 
 <br><br>
+
+<h1>dismissible + no-icon</h1>
+
+{% set example %}
+{{  alert(
+        properties={
+            text: 'Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et mattis erat vel aliquet in sem urna et sagittis diam in vehicula.',
+            dismissible: true
+        },
+        modifier={
+            block: []
+        }
+    )
+}}
+<br>
+{{  alert(
+        properties={
+            text: 'Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.',
+            dismissible: true
+        },
+        modifier={
+            block: ["information", "no-icon"]
+        }
+    )
+}}
+<br>
+{{  alert(
+        properties={
+            text: 'Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.',
+            dismissible: true
+        },
+        modifier={
+            block: ["success", "no-icon"]
+        }
+    )
+}}
+<br>
+{{  alert(
+        properties={
+            text: 'Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.',
+            dismissible: true
+        },
+        modifier={
+            block: ["warning", "no-icon"]
+        }
+    )
+}}
+<br>
+{{  alert(
+        properties={
+            text: 'Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et. Pellentesque metus in sem lacus commodo eget justo ut rutrum varius nunc. Sed non rhoncus risus.',
+            dismissible: true
+        },
+        modifier={
+            block: ["error", "no-icon"]
+        }
+    )
+}}
+{% endset %}
+{{- format(example) -}}
+
+<br><br>
 <h1>dismissible right to left</h1>
 {% set example %}
 {{  alert(
         properties={
-            text: ' حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد وأسي.',
+            text: '<p class="fd-alert__text"> حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد وأسي.',
             dismissible: true,
             rtl: true
         },
@@ -148,7 +275,7 @@
 <br>
 {{  alert(
         properties={
-            text: ' حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد وأسي.',
+            text: '<p class="fd-alert__text"> حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد وأسي.',
             dismissible: true,
             rtl: true
         },
@@ -160,8 +287,8 @@
 <br>
 {{  alert(
         properties={
-            text: ' حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد وأسي.',
-            dismissible: false,
+            text: '<p class="fd-alert__text"> حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد وأسي.',
+            dismissible: true,
             rtl: true
         },
         modifier={
@@ -173,7 +300,7 @@
 <br>
 {{  alert(
         properties={
-            text: ' حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد وأسي.',
+            text: '<p class="fd-alert__text"> حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد وأسي.',
             dismissible: true,
             rtl: true
         },

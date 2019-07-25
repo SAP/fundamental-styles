@@ -76,10 +76,10 @@ $block: #{$fd-namespace}-form;
             .#{$block}__control {
                 float: left;
                 vertical-align: middle;
-                margin-right: fd-space(2);
+                margin-right: fd-space(3);
                 @include fd-rtl() {
                     float: right;
-                    margin-left: fd-space(2);
+                    margin-left: fd-space(3);
                     margin-right: 0;
                 }
             }
@@ -90,14 +90,14 @@ $block: #{$fd-namespace}-form;
         }
         &--inline {
             float: left;
-            margin-right: fd-space(3);
+            margin-right: fd-space(4);
             .#{$block}__label {
                 width: auto;
             }
             @include fd-rtl() {
               float: right;
               margin-right: 0;
-              margin-left: fd-space(3);
+              margin-left: fd-space(4);
               .#{$block}__label {
                   width: auto;
               }

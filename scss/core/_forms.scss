@@ -198,7 +198,7 @@ input[type="radio"],
 .#{$fd-namespace}-radio {
     border-radius: 50%;
     &::after {
-        $check-size_: 10px;
+        $check-size_: 8px;
         content: "";
         border-radius: 50%;
         width: $check-size_;

@@ -1,0 +1,44 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{# {% from "../button/component.njk" import button %} #}
+{% from "./component.njk" import asset_upload %}
+{% from "../icon/component.njk" import icon %}
+
+{% block content %}
+
+
+<h2>default</h2>
+    <!-- output the component example and the code snippet -->
+    {% set example %}
+{{  asset_upload(
+        properties={
+            text: "Upload Link",
+        message: "Maximum file size is 100MB"
+        }
+    ) 
+}}
+{{  asset_upload(
+        properties={
+            text: "Upload Link"
+        }
+    ) 
+}}
+{{  asset_upload(
+        properties={
+        text: "Upload Link",
+        message: "Maximum file size is 100MB"
+        },
+        modifier={ block:['no-icon']}) 
+}}
+{{  asset_upload(
+        properties={
+        text: "Upload Link"
+        },
+        modifier={ block:['no-icon']}) 
+}}
+
+
+    {% endset %}
+    {{ format(example) }}
+
+{% endblock %}

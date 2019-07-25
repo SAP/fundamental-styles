@@ -25,7 +25,7 @@ $block: #{$fd-namespace}-side-nav;
     $fd-side-nav-hover-background-color: fd-color("neutral", 1);
     $fd-side-nav-link-color: fd-color("text", 2);
     $fd-side-nav-max-width: 249px;
-    $fd-side-nav-link-padding: fd-space(2.5) fd-space(5);
+    $fd-side-nav-link-padding: fd-space(2.5) fd-space(8.75) fd-space(2.5) fd-space(5);
     $fd-side-nav-title-padding: fd-space(2) fd-space(5);
     $fd-side-nav-icon-right-padding: fd-space(2.5);
     $fd-side-nav-link-disabled-color: fd-color("text", 3);
@@ -36,8 +36,7 @@ $block: #{$fd-namespace}-side-nav;
 
     background-color: $fd-side-nav-background-color;
     min-width: $fd-side-nav-max-width;
-    margin: 0;
-    padding: 0;
+    @include fd-reset();
 
     //ELEMENTS *******************************************
     &__group {
@@ -46,8 +45,10 @@ $block: #{$fd-namespace}-side-nav;
     }
 
     &__title {
+        @include fd-reset();
         display: block;
         margin-bottom: 0;
+        margin-top: 0;
         padding: $fd-side-nav-title-padding;
         @include fd-type("-1", "normal");
         text-transform: uppercase;
@@ -58,6 +59,7 @@ $block: #{$fd-namespace}-side-nav;
     &__list,
     &__sublist {
         @include fd-reset();
+        @include fd-reset-spacing();
         display: flex;
         flex-wrap: wrap;
         padding-left: 0;
@@ -72,16 +74,25 @@ $block: #{$fd-namespace}-side-nav;
         }
     }
 
+    &__item,
+    &__subitem {
+        @include fd-reset();
+    }
+
     &__link,
     &__sublink {
+        @include fd-reset();
+        display: flex;
         padding: $fd-side-nav-link-padding;
         color: $fd-side-nav-link-color;
-        display: block;
+        text-decoration: none;
         @include fd-type("0", "normal");
 
         //STATES *******************************************
+
         &:hover {
             background-color: $fd-side-nav-hover-background-color;
+            @include fd-var-color("color", fd-color-state("hover", "action"), --fd-color-action-hover);
         }
         &.is-selected,
         &.is-expanded,
@@ -100,12 +111,11 @@ $block: #{$fd-namespace}-side-nav;
     }
 
     &__link {
-
         //STATES *******************************************
         &.has-child {
             background-image: url(#{$fd-down-arrow-icon});
             background-repeat: no-repeat;
-            background-position: calc(100% - #{$fd-forms-select-width--background-image}) center;
+            background-position: right 14px top 15px;
         }
 
         &.is-expanded,
@@ -124,12 +134,38 @@ $block: #{$fd-namespace}-side-nav;
 
     &__icon {
         padding-right: $fd-side-nav-icon-right-padding;
+        margin-top: -1px;
+
+        &.sap-icon--s {
+            margin-top: 0;
+        }
+
+        &.sap-icon--m {
+            margin-top: 0;
+        }
+
+        &.sap-icon--l {
+            margin-top: -2px;
+        }
+
+        &.sap-icon--xl {
+            margin-top: -4px;
+        }
     }
 
     &--icons {
         min-width: auto;
-        .#{$block}__icon {
-            padding-right: 0;
+
+        .#{$block} {
+            &__link,
+            &__sublink {
+                padding: fd-space(2.5) fd-space(5);
+                justify-content: center;
+            }
+
+            &__icon {
+                padding-right: 0;
+            }
         }
     }
 }
