@@ -94,9 +94,15 @@ fieldset {
     &::placeholder {
       @include fd-var-color("color", $fd-forms-color--placeholder, --fd-color-neutral-4);
     }
+    &[readonly] {
+        border-bottom-color: transparent;
+    }
 }
 input.#{$fd-namespace}-input--compact {
     @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);
+    &[readonly] {
+        border-bottom-color: transparent;
+    }
 }
 textarea,
 .#{$fd-namespace}-textarea {

@@ -17,7 +17,7 @@ summary:
                 <div class="fd-input-group fd-input-group--after">
                     <input type="text" class="fd-input" id="" value="Ba" placeholder="Select Fruit">
                     <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
-                        <button class=" fd-button--light sap-icon--search"></button>
+                        <button class=" fd-button--light sap-icon--search fd-input-group__button"></button>
                     </span>
                 </div>
             </div>
@@ -43,7 +43,7 @@ summary:
                 <div class="fd-input-group fd-input-group--after fd-input-group--compact">
                     <input type="text" class="fd-input fd-input--compact" id="" value="Ba" placeholder="Select Fruit">
                     <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
-                        <button class=" fd-button--light sap-icon--search"></button>
+                        <button class=" fd-button--light fd-button--compact sap-icon--search fd-input-group__button"></button>
                     </span>
                 </div>
             </div>

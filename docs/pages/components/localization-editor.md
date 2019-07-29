@@ -22,7 +22,7 @@ summary:
             <input type="text" class="" id="" aria-controls="NJvVh542c" aria-expanded="false"
             aria-haspopup="true" placeholder="Enter Label">
             <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
-            <button class="fd-button--light fd-localization-editor__button"
+            <button class="fd-popover__control fd-button--light fd-input-group__button"
             aria-controls="test" aria-expanded="false" aria-haspopup="true">EN*</button>
             </span>
          </div>
@@ -72,7 +72,7 @@ summary:
             <input type="text" class="fd-input fd-input--compact" id="" aria-controls="test22" aria-expanded="false"
             aria-haspopup="true" placeholder="Enter Label">
             <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
-            <button class="fd-button--light fd-localization-editor__button"
+            <button class="fd-popover__control fd-button--light fd-button--compact fd-input-group__button"
             aria-controls="test22" aria-expanded="false" aria-haspopup="true">EN*</button>
             </span>
          </div>

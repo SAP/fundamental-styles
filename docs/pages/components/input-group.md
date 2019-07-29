@@ -179,8 +179,8 @@ The Input with add-on supports actions. Actions can be shown with a text label o
         <label class="fd-form__label" for="">Input with action</label>
         <div class="fd-input-group fd-input-group--after">
             <input class="fd-input" type="text" id="" name="" value="1000000">
-            <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--after">
-                <button class="fd-button--light">
+            <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--after ">
+                <button class="fd-button--light fd-input-group__button">
                     Button
                 </button>
             </span>
@@ -194,7 +194,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
         <div class="fd-input-group fd-input-group--after">
             <input class="fd-input" type="text" id="" name="" value="1000000">
             <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--after">
-                <button class="fd-button--icon fd-button--light sap-icon--navigation-down-arrow"></button>
+                <button class="fd-button--icon fd-button--light sap-icon--navigation-down-arrow fd-input-group__button"></button>
             </span>
         </div>
     </div>
@@ -206,7 +206,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
         <div class="fd-input-group fd-input-group--after">
             <input class="fd-input" type="text" id="" name="" value="1000000">
             <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--after">
-                <button class="fd-button--light">
+                <button class="fd-button--light fd-input-group__button">
                     Button
                 </button>
             </span>
@@ -220,7 +220,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
         <div class="fd-input-group fd-input-group--after">
             <input class="fd-input" type="text" id="" name="" value="1000000">
             <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--after">
-                <button class="fd-button--icon fd-button--light sap-icon--navigation-down-arrow"></button>
+                <button class="fd-button--icon fd-button--light sap-icon--navigation-down-arrow fd-input-group__button"></button>
             </span>
         </div>
     </div>

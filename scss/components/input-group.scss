@@ -134,9 +134,6 @@ $block: #{$fd-namespace}-input-group;
         }
         &--button {
           padding: 0;
-          [class*="fd-button"] {
-            border-radius: 0;
-          }
         }
         &--before {
             border-top-right-radius: 0;
@@ -189,10 +186,13 @@ $block: #{$fd-namespace}-input-group;
     }
     &__button {
         @include fd-button-reset();
+        padding: 0 12px;
         flex: 1;
         width: 100%;
         display: block;
         min-width: fd-space(12);
+        border-top-right-radius: $fd-border-radius;
+        border-bottom-right-radius: $fd-border-radius;
         @include fd-var-color("background-color", fd-color(neutral, 1), --fd-color-neutral-1);
         &--step-up,
         &--step-down {
@@ -234,4 +234,10 @@ $block: #{$fd-namespace}-input-group;
           box-shadow: none;
         }
     }
+}
+
+.fd-textarea {
+    &:focus {
+        box-shadow: snone;
+      }
 }
