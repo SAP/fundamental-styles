@@ -38,10 +38,5 @@ popover:
 {%- endmacro -%}
 
 {%- macro list(properties={}, modifier={}, state={}, aria={ hidden: true }) -%}
-<ul class="fd-popover__list">
-  <li class="fd-popover__list-item"><a role="button" class="fd-popover__item">Option 1</a></li>
-  <li class="fd-popover__list-item"><a role="button" class="fd-popover__item">Option 2</a></li>
-  <li class="fd-popover__list-item"><a role="button" class="fd-popover__item">Option 3</a></li>
-  <li class="fd-popover__list-item"><a role="button" class="fd-popover__item">Option 4</a></li>
-</ul>
+<div class="popover-body__pgd">Here is the popover content!</div>
 {%- endmacro -%}
