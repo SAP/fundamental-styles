@@ -1,6 +1,5 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "../button/component.njk" import button2 %}
 {% from "./component.njk" import button_group %}
 
 {% block content %}
@@ -22,39 +21,15 @@
 {% set example %}
 
   {% call button_group() -%}
-    {{-  button2(
-      { icon: 'survey' },
-        modifier={ block: [size] },
-        aria={ label: 'Survey' })
-      }}
-    {{-  button2(
-        { icon: 'pie-chart' },
-          modifier={ block: [size] },
-          aria={ label: 'Chart', selected: true })
-        }}
-    {{-  button2(
-          { icon: 'pool' },
-            modifier={ block: [size] },
-            aria={ label: 'Pool' })
-          }}
+  <button class="btn-playground sap-icon--survey" aria-label="Survey"></button>
+  <button class="btn-playground sap-icon--pie-chart" aria-label="Chart" aria-selected="true"></button>
+  <button class="btn-playground sap-icon--pool" aria-label="Pool"></button>
   {%- endcall %}
 
   {% call button_group() -%}
-    {{-  button2(
-      { label: 'First' },
-        modifier={ block: [size] },
-        aria={ selected: true })
-      }}
-    {{-  button2(
-        { label: 'Second' },
-          modifier={ block: [size] },
-          aria={ })
-        }}
-    {{-  button2(
-          { label: 'Third' },
-            modifier={ block: [size] },
-            aria={ })
-          }}
+   <button class="btn-playground">First</button>
+   <button class="btn-playground">Second</button>
+   <button class="btn-playground">Third</button>
   {%- endcall %}
 
 
@@ -69,61 +44,25 @@
 {% set example %}
 
   {% call button_group() -%}
-    {{-  button2(
-      { icon: 'survey' },
-      disabled = true,
-        modifier={ block: [""] },
-        aria={ label: 'Survey' })
-      }}
-    {{-  button2(
-        { icon: 'pie-chart' },
-          modifier={ block: [""] },
-          aria={ label: 'Chart' })
-        }}
-    {{-  button2(
-          { icon: 'pool' },
-            modifier={ block: [""] },
-            aria={ label: 'Pool' })
-          }}
+    <button class="btn-playground sap-icon--survey" aria-label="Survey" disabled></button>
+    <button class="btn-playground sap-icon--pie-chart" aria-label="Chart"></button>
+    <button class="btn-playground sap-icon--pool" aria-label="Pool"></button>
   {%- endcall %}
 
     {% call button_group() -%}
-    {{-  button2(
-      { label: 'First' },
-        modifier={ block: ["compact"] },
-        aria={ })
-      }}
-    {{-  button2(
-        { label: 'Second' },
-        disabled = true,
-          modifier={ block: ["compact"] },
-          aria={ })
-        }}
-    {{-  button2(
-          { label: 'Third' },
-            modifier={ block: ["compact"] })
-          }}
+     <button class="btn-playground">First</button>
+     <button class="btn-playground" disabled>Second</button>
+     <button class="btn-playground">Third</button>
   {%- endcall %}
 
   {% call button_group() -%}
-    {{-  button2(
-      { label: 'First' },
-        modifier={ block: [""] },
-        aria={ })
-      }}
-    {{-  button2(
-        { label: 'Second' },
-          modifier={ block: [""] },
-          aria={ })
-        }}
-    {{-  button2(
-          { label: 'Third' },
-          disabled = true,
-            modifier={ block: [""] })
-          }}
+     <button class="btn-playground">First</button>
+     <button class="btn-playground">Second</button>
+     <button class="btn-playground" disabled>Third</button>
   {%- endcall %}
 
     {% endset %}
     {{ format(example) }}
 
 {% endblock %}
+

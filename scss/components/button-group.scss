@@ -3,157 +3,21 @@
 @import "./../functions";
 
 
-@import "./../icons/mixins";
-
-/*!
-.fd-button+( --compact )+( (.is-disabled | [aria-disabled=true]) | (.is-selected | [aria-selected=true] | (.is-pressed | [aria-pressed=true]))
-*/
-
-$block: btn-playground;
-.#{$block},
-a.#{$block} {
-  //spacing
-  $fd-button-padding-x: fd-space("xs") !default;
-  //anim
-  $fd-button-transition-params: $fd-animation--speed ease-in !default;
-
-  //BASE
-  //set all reset and baseline block styles
-  @at-root {
-    .#{$block}, [class*="#{$block}--"], a[class*="#{$block}--"] {
-      --fd-button-color: var(--fd-color-action-1);
-      --fd-button-border-color: var(--fd-color-action-1);
-      --fd-button-background-color: var(--fd-color-background-2);
-      @include fd-reset();
-      @include fd-button-reset();
-      //set metrics
-      @include fd-var-size("height", $fd-forms-height, --fd-forms-height);
-      @include fd-var-size("max-height", $fd-forms-height, --fd-forms-height);
-      @include fd-var-size("min-width", $fd-forms-height, --fd-forms-height);
-      @include fd-type("0");
-      @include fd-icon-size("m", "before");
-      @include fd-icon-size("m", "after");
-      @include fd-var-size("line-height", $fd-button-line-height, --fd-button-line-height);
-      padding-left: $fd-button-padding-x;
-      padding-right: $fd-button-padding-x;
-      text-align: center;
-
-      //look
-      border-style: solid;
-      border-width: 1px;
-      @include fd-var-color("color", fd-color("action", 1), --fd-button-color);
-      @include fd-var-color("border-color", fd-color("action", 1), --fd-button-border-color);
-      @include fd-var-color("background-color", fd-color("background", 2), --fd-button-background-color);
-
-      //animation
-      transition: all $fd-button-transition-params;
-
-      //placements
-      &::before {
-        margin-right: fd-space(2);
-        vertical-align: text-bottom;
-      }
-
-      @at-root {
-        [dir="rtl"] &,
-        &[dir="rtl"] {
-          &::before {
-            margin-right: 0;
-            margin-left: fd-space(2);
-          }
-        }
-      }
-      &::after {
-        margin-left: fd-space(2);
-        vertical-align: middle;
-      }
-      @at-root {
-        [dir="rtl"] &,
-        &[dir="rtl"] {
-          &::after {
-            margin-left: 0;
-            margin-right: fd-space(2);
-          }
-        }
-      }
-      &:empty {
-        padding: 0;
-        &::before,
-        &::after {
-          margin-right: 0;
-          margin-left: 0;
-        }
-      }
-
-      //states
-      @include fd-focus() {
-        @include fd-disabled() {
-          opacity: 0.4;
-          cursor: not-allowed;
-          box-shadow: none;
-        }
-      }
-      @include fd-hover() {
-          --fd-button-background-color: var(--fd-color-action-hover);
-          --fd-button-color: var(--fd-color-action-2);
-          @include fd-var-color("color", fd-color("action",2), --fd-button-color);
-          @include fd-var-color("background-color", fd-color-state("hover","action"), --fd-button-background-color);
-          @include fd-disabled() {
-            --fd-button-background-color: var(--fd-color-background-2);
-            --fd-button-color: var(--fd-color-action-1);
-            @include fd-var-color("color", fd-color("action",1), --fd-button-color);
-            @include fd-var-color("background-color", fd-color("background",2), --fd-button-background-color);
-          }
-      }
-      @include fd-active-pressed-selected() {
-        --fd-button-background-color: var(--fd-color-action-selected);
-        --fd-button-color: var(--fd-color-action-2);
-        @include fd-var-color("color", fd-color("action", 2), --fd-button-color);
-        @include fd-var-color("background-color", fd-color-state("selected","action"), --fd-button-background-color);
-      }
-      @include fd-disabled() {
-        opacity: 0.4;
-        cursor: not-allowed;
-        box-shadow: none;
-      }
-    }
-  }
-  //compact sizes (see `core/root` for css vars rules)
-  &--compact {
-    //set metrics
-    @include fd-var-size("height", $fd-forms-height, --fd-forms-height-compact);
-    @include fd-var-size("max-height", $fd-forms-height, --fd-forms-height-compact);
-    @include fd-var-size("min-width", $fd-forms-height, --fd-forms-height-compact);
-    @include fd-var-size("line-height", $fd-button-line-height--compact, --fd-button-line-height-compact);
-    @at-root {
-      .fd-for-touch & {
-        @include fd-var-size("height", $fd-forms-height, --fd-forms-height);
-        @include fd-var-size("min-width", $fd-forms-height, --fd-forms-height);
-        @include fd-var-size("line-height", $fd-button-line-height, --fd-button-line-height);
-      }
-      .fd-for-compact & {
-        @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);
-        @include fd-var-size("min-width", $fd-forms-height--compact, --fd-forms-height-compact);
-        @include fd-var-size("line-height", $fd-button-line-height--compact, --fd-button-line-height-compact);
-      }
-    }
-    @include fd-screen(m) {
-      @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);
-      @include fd-var-size("min-width", $fd-forms-height--compact, --fd-forms-height-compact);
-      @include fd-var-size("line-height", $fd-button-line-height--compact, --fd-button-line-height-compact);
-    }
-  }
+.btn-playground {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: $fd-border-radius;
 }
 
 /*!
 .fd-button-group+()
     .fd-button
 */
-// $block: #{$fd-namespace}-button-group;
-// $block-alt: #{$fd-namespace}-segmented-button;
+$block: #{$fd-namespace}-button-group;
+$block-alt: #{$fd-namespace}-segmented-button;
 
-.fd-button-group,
-.fd-segmented-button {
+.#{$block},
+.#{$block-alt} {
 
   @include fd-reset-spacing();
   display: inline-flex;
