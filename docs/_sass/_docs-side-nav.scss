@@ -13,6 +13,10 @@ $side-nav-links-color: $docs-home-white-color;
     @include media("<=tablet") {
         width: auto;
         display: none;
+        &.fd-styles__mobile-list {
+            width: auto;
+            display: block;
+        }
     }
 
     &__headers {
