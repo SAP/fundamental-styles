@@ -16,7 +16,7 @@ echo "$std_ver"
 git push --follow-tags "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" master > /dev/null 2>&1;
 
 # build dist and component folders
-npm run build:prod
+npm run build
 
 npm publish
 
