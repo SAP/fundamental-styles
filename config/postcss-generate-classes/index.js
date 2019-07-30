@@ -3,11 +3,11 @@ const parser = require('postcss-selector-parser');
 
 let processor = (root) => {
     root.walkAttributes((attr) => {
-		// console.log({attr});
+		console.log({attr});
 		const className = parser.className({value: `sapUix-${attr._attribute}`});
 		attr.replaceWith(className);
-		// attr.remove();
-		// console.log("nested", node.nodes)
+		attr.remove();
+		console.log("nested", node.nodes)
     });
 };
 const selectorProcessor = parser(processor);
