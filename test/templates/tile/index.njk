@@ -1,8 +1,5 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "../button/component.njk" import button %}
-{% from "../image/component.njk" import image %}
-{% from "../identifier/component.njk" import identifier %}
 {% from "./component.njk" import tile, tile_content, tile_media, tile_actions %}
 
 {% block content %}
@@ -12,25 +9,7 @@
   }
 </style>
 
-{% set icon = identifier(
-  properties={ icon: "home" },
-  modifier={ block: ["m","transparent"] }
-) %}
-{% set icon_accent = identifier(
-  properties={ icon: "home" },
-  modifier={ block: ["m"] },
-  classes="has-background-color-accent-3"
-) %}
-{% set image_default = image(
-  properties={ url: data.properties.media.url },
-  modifier={ block: ["m"] },
-  aria={ label: data.properties.media.alt }
-) %}
-{% set image_round = image(
-  properties={ url: data.properties.media.url },
-  modifier={ block: ["m","circle"] },
-  aria={ label: data.properties.media.alt }
-) %}
+
 
 {%- set tile_default %}
 {% call tile() -%}
@@ -55,7 +34,7 @@
 {%- set tile_media_id %}
 {% call tile() -%}
 {% call tile_media() -%}
-  {{icon}}
+  <img src="/static/nature.jpg" alt="picture" width="30px" height="30px">
 {%- endcall %}
 {%- call tile_content({ title: data.properties.title }) -%}
 {%- endcall %}
@@ -65,7 +44,7 @@
 {%- set tile_media_id_accent %}
 {%- call tile() -%}
   {%- call tile_media() -%}
-    {{icon_accent}}
+    <img src="/static/nature.jpg" alt="picture" width="30px" height="30px">
   {%- endcall %}
   {%- call tile_content(data.properties) -%}
   {%- endcall %}
@@ -76,7 +55,7 @@
 {%- set tile_media_image %}
 {%- call tile() -%}
   {% call tile_media() -%}
-    {{image_default}}
+   <img src="/static/nature.jpg" alt="picture" width="30px" height="30px">
   {%- endcall %}
   {%- call tile_content({ title: data.properties.title }) -%}
   {%- endcall %}
@@ -86,7 +65,7 @@
 {%- set tile_media_image_round %}
 {%- call tile() -%}
   {% call tile_media() -%}
-    {{image_round}}
+   <img src="/static/nature.jpg" alt="picture" width="30px" height="30px">
   {%- endcall %}
   {%- call tile_content(data.properties) -%}
   {%- endcall %}
@@ -99,13 +78,8 @@
     {% call tile_content({ title: data.properties.title }) -%}
     {%- endcall %}
     {%- call tile_actions() -%}
-    {{  button(
-        {
-            icon: 'overflow'
-        },
-        modifier={ block: ['light'] },
-        aria={ label: 'More' })
-    }}
+    <button class="sap-icon--overflow" aria-label="More"></button>
+ 
     {%- endcall %}
   {%- endcall %}
 {% endset %}
