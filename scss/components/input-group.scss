@@ -190,9 +190,8 @@ $block: #{$fd-namespace}-input-group;
         flex: 1;
         width: 100%;
         display: block;
-        min-width: fd-space(12);
-        border-top-right-radius: $fd-border-radius;
-        border-bottom-right-radius: $fd-border-radius;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
         @include fd-var-color("background-color", fd-color(neutral, 1), --fd-color-neutral-1);
         &--step-up,
         &--step-down {
@@ -238,6 +237,6 @@ $block: #{$fd-namespace}-input-group;
 
 .fd-textarea {
     &:focus {
-        box-shadow: snone;
+        box-shadow: none;
       }
 }

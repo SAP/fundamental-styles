@@ -19,7 +19,7 @@ summary:
          Localization Editor Label
          </label>
          <div class="fd-input-group fd-input-group--after">
-            <input type="text" class="" id="" aria-controls="NJvVh542c" aria-expanded="false"
+            <input type="text" class="fd-input" id="" aria-controls="NJvVh542c" aria-expanded="false"
             aria-haspopup="true" placeholder="Enter Label">
             <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
             <button class="fd-popover__control fd-button--light fd-input-group__button"
