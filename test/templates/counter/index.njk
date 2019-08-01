@@ -23,48 +23,20 @@
 
 
 {% set example %}
-<button class="fd-button--light sap-icon--bell" aria-label="Notifications">{{ counter(count=1,modifier="notification") }}</button>
+<button class="counter-button_pgd sap-icon--bell" aria-label="Notifications">{{ counter(count=1,modifier="notification") }}</button>
 
-<button class="fd-button--light sap-icon--bell" aria-label="Notifications">{{ counter(count=20,modifier="notification") }}</button>
+<button class="counter-button_pgd sap-icon--bell" aria-label="Notifications">{{ counter(count=20,modifier="notification") }}</button>
 
-<button class="fd-button--light sap-icon--bell" aria-label="Notifications">{{ counter(count=300,modifier="notification") }}</button>
+<button class="counter-button_pgd sap-icon--bell" aria-label="Notifications">{{ counter(count=300,modifier="notification") }}</button>
 
-<button class="fd-button--light sap-icon--bell" aria-label="Notifications">{{ counter(count=6000,modifier="notification") }}</button>
+<button class="counter-button_pgd sap-icon--bell" aria-label="Notifications">{{ counter(count=6000,modifier="notification") }}</button>
 
-<nav class="fd-menu fd-menu--addon-before">
-    <ul class="fd-menu__list">
-      <li><div class="fd-menu__addon-before"><span class="sap-icon--bell"></span>{{ counter(count=5,modifier="notification",aria={ label: "Unread count"}) }}</div><a href="#" class="fd-menu__item">Option 2</a>
-    </li>
-    </ul>
-</nav>
+<ul class="counter-list_pgd">
+    <li class="counter-list-item_pgd"><div class="counter-list-item-before_pgd"><span class="sap-icon--bell"></span>{{ counter(count=5,modifier="notification",aria={ label: "Unread count"}) }}</div>Option 2</li>
+</ul>
 
 {% endset %}
 {{ format(example) }}
 <br><br>
-
-
-
-<h3>Addt'l examples</h3>
-{% set example %}
-<p>Lorem ipsum {{ counter(count=5, modifier="") }}</p>
-
-<ul class="fd-tabs" role="tablist">
-    <li class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="AvcVC566" href="#AvcVC566" role="tab">Link {{ counter(count=25,  modifier="") }}</a>
-    </li>
-    <li class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="5mxO9110" aria-selected="true" href="#5mxO9110" role="tab">Selected</a>
-    </li>
-    <li class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="r0pk3445" href="#r0pk3445" role="tab">Link</a>
-    </li>
-    <li class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="Dj1Ri832" aria-disabled="true" role="tab">Disabled</a>
-    </li>
-</ul>
-{% endset %}
-{{ format(example) }}
-
-
 
 {% endblock %}

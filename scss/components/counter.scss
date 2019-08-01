@@ -11,7 +11,7 @@ $block: #{$fd-namespace}-counter;
   $fd-counter-radius: $fd-border-radius !default;
   $fd-counter-background: fd-color("status", 4) !default;
   $fd-counter-color: fd-color("text", 5) !default;
-  $fd-counter-font-size: 0.785714285714286em !default;
+  $fd-counter-font-size: 0.785714285714286rem !default;
 
   --fd-counter-color: var(--fd-color-text-5);
   --fd-counter-background-color: var(--fd-color-status-4);
@@ -27,6 +27,7 @@ $block: #{$fd-namespace}-counter;
   text-align: center;
   padding: fd-space(1);
   &--notification {
+    font-size: $fd-counter-font-size;
     --fd-counter-background-color: var(--fd-color-status-3);
     @include fd-var-color("background-color", map-get($fd-colors-status, 3), --fd-counter-background-color);
     position: absolute;
@@ -35,4 +36,48 @@ $block: #{$fd-namespace}-counter;
       transform: translate(40%, -50%);
     }
   }
+}
+
+.counter-button_pgd {
+  padding: 0;
+  margin: 0;
+  height: $fd-forms-height;
+  width: $fd-forms-height;
+  background-color: white;
+  border: none;
+  color: black;
+  font-size: $fd-font-size;
+  font-family: $fd-font-family;
+}
+
+.counter-list-item-before_pgd {
+  float: left;
+  clear: left;
+  margin-right: 10px;
+  margin-left: 0;
+  @include fd-rtl() {
+    float: right;
+    clear: right;
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-list-item_pgd {
+  font-size: $fd-font-size;
+  font-family: $fd-font-family;
+  padding: 0;
+  margin: 0;
+  border: none;
+  color: black;
+}
+
+.counter-list_pgd {
+  list-style-type: none;
+  padding: 0;
+  margin: 16px 0;
+  border: none;
 }
