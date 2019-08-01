@@ -46,5 +46,8 @@
     --fd-color-accent-12: #41cc50;
     --fd-color-accent-13: #2b78c5;
     --fd-color-accent-14: #6367de;
-    --fd-color-accent-15: #984bd2;
+
+    --fd-forms-color: #32363a;
+    --fd-forms-border-color: #89919a;
+    --fd-forms-background-color: #FFFFFF;
 }
