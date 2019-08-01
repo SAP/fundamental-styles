@@ -62,7 +62,7 @@ search_input:
                 "id": _id,
                 "value": properties.value,
                 "placeholder": properties.placeholder
-              })
+              }, size=size)
             }}
           {% endif %}
         </div>
@@ -93,7 +93,7 @@ search_input:
 {%- endmacro -%}
 
 
-{%- macro search_input_control(properties={}, modifier={}, state={}) -%}
+{%- macro search_input_control(properties={}, modifier={}, state={}, size="") -%}
 <div class="fd-search-input__control" aria-controls="{{ properties.id }}" aria-expanded="false" aria-haspopup="true">
   {{- input_group(
       modifier={
@@ -114,8 +114,8 @@ search_input:
             },
             modifier={
               block: ['light']
-            }, size=size
-          )
+            }, size=size,
+            classes=['input-group__button'])
       },size=size)
   }}
 </div>

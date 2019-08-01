@@ -393,7 +393,8 @@
         },
         modifier={
             block: ['light']
-        })
+        },
+        classes=['input-group__button'])
 }}{%- endset %}
 {%- set btn %}{{  button(
         {
@@ -401,7 +402,8 @@
         },
         modifier={
             block: ['light']
-        })
+        },
+        classes=['input-group__button'])
 }}{%- endset %}
 
 {% set example %}
@@ -434,7 +436,15 @@
                 value: "2000000"
             }
         },
-        after: iconbtn
+        after: button(
+                {
+                    label: '',
+                    icon: 'navigation-down-arrow'
+                },
+                modifier={
+                    block: ['light']
+                },
+                classes=['input-group__button--readonly'])
     })
 }}
 {{ input_group(
@@ -462,7 +472,7 @@
                 value: "4000000"
             }
         },
-        after: button({ icon: 'navigation-down-arrow' }, modifier={ block: ['light'] })
+        after: button({ icon: 'navigation-down-arrow' }, modifier={ block: ['light'] }, classes=['input-group__button'])
     })
 }}
 {% endset %}
@@ -492,7 +502,8 @@
                 },
                 modifier={
                     block: ['light']
-                },size="compact")
+                },size="compact", 
+                classes=['input-group__button'])
     },
     size="compact")
 }}
@@ -517,7 +528,8 @@
                 },
                 modifier={
                     block: ['light']
-                },size="compact")
+                },size="compact", 
+                classes=['input-group__button--readonly'])
     },
     size="compact")
 }}
@@ -532,7 +544,14 @@
                 value: "3000000"
             }
         },
-        after: btn
+        after: button(
+        {
+            label: 'Button'
+        },
+        modifier={
+            block: ['light', 'compact']
+        },
+        classes=['input-group__button'])
     },
     size="compact")
 }}
@@ -547,7 +566,8 @@
                 value: "4000000"
             }
         },
-        after: button({ icon: 'navigation-down-arrow' }, modifier={ block: ['light'] },size="compact")
+        after: button({ icon: 'navigation-down-arrow' }, modifier={ block: ['light'] },size="compact",
+        classes=['input-group__button'])
     },
     size="compact")
 }}
