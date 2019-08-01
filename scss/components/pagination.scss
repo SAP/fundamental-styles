@@ -37,6 +37,7 @@ $block: #{$fd-namespace}-pagination;
     padding-left: fd-space(1);
     padding-right: fd-space(1);
     position: relative;
+    text-decoration: none;
     @include fd-selected() {
       @include fd-var-color("color", $fd-pagination-link-color--active, --fd-pagination-link-color-active);
       text-decoration: none;
@@ -53,10 +54,13 @@ $block: #{$fd-namespace}-pagination;
       padding-right: fd-space(2);
     }
     &--next {
-      transform: scaleX(-1);
-      @include fd-rtl() {
-        transform: scaleX(1);
+      &::before,
+      &::after {
+       transform: scaleX(-1);
       }
+      @include fd-rtl() {
+       transform: scaleX(1);
+       }
     }
     &--more {
       &::before {
