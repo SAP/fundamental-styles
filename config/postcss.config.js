@@ -3,8 +3,7 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const postcssClean = require('postcss-clean');
 const postcssBanner = require('postcss-banner');
-const postcssGenerateClasses = require('./postcss-generate-classes/index.js');//ask web-components to publish this
-// const postcssAddFallback = require('./postcss-add-fallback/index.js'); //ask web-components to publish this
+const postcssGenerateClasses = require('./postcss-generate-classes/index.js');
 const postcssImport = require('postcss-import');
 const packageVersion = require('../package.json').version;
 const year = new Date().getFullYear();
@@ -14,9 +13,8 @@ module.exports = {
     annotation: true,
     sourcesContent: true,
     plugins: [
-        postcssGenerateClasses(),
         postcssImport(),
-        // postcssAddFallback(),
+        postcssGenerateClasses(),
         autoprefixer({
             cascade: true
         }),

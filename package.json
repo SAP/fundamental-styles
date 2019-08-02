@@ -26,7 +26,7 @@
     "start": "npm run docs:compile && cd docs && bundle install && bundle exec jekyll serve --incremental --config _config.yml,_config-library.yml",
     "std-version": "standard-version -m \"chore(release): version %s build ${TRAVIS_BUILD_NUMBER} [ci skip]\"",
     "style:assets": "./scripts/copy-assets.sh",
-    "style:compile": "node-sass -q --output-style expanded --precision 5 components/ --output dist/",
+    "style:compile": "node-sass -q --output-style expanded --precision 5 components/button.scss --output dist/",
     "style:postCSS": "postcss --config config/postcss.config.js  --replace dist/*.css",
     "style:remove": "if [ -d dist/ ]; then rm -rf dist/; fi",
     "test": "server-test start:playground:default http-get://localhost:3030 test:visual",
