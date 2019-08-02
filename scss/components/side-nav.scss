@@ -1,171 +1,252 @@
 @import "./../settings";
 @import "./../mixins";
 @import "./../functions";
+@import "./../../theme-designer/Base/baseLib/sap_fiori_3/sass_variables.scss";
 
-/*!
-.fd-side-nav
-    .fd-side-nav__group
-        .fd-side-nav__title
-        .fd-side-nav__list
-            .fd-side-nav__item
-                .fd-side-nav__link (.has-child, .is-active, .is-expanded)
-                .fd-side-nav__sublist
-                    .fd-side-nav__subitem
-                    .fd-side-nav__sublink (.is-active)
-*/
 
 $block: #{$fd-namespace}-side-nav;
 
 .#{$block} {
+    //LOCAL VARS AND MIXINS *******************************************
+    $fd-side-nav-max-width: 15rem;
+    $fd-side-nav-max-width--condensed: 3rem;
 
-    //LOCAL VARS
-    $fd-side-nav-text-size: fd-type("1");
-    $fd-side-nav-background-color: fd-color("background", 2);
-    $fd-side-nav-selected-background-color: rgba(fd-color("action", 1), 0.07);
-    $fd-side-nav-hover-background-color: fd-color("neutral", 1);
-    $fd-side-nav-link-color: fd-color("text", 2);
-    $fd-side-nav-max-width: 249px;
-    $fd-side-nav-link-padding: fd-space(2.5) fd-space(8.75) fd-space(2.5) fd-space(5);
-    $fd-side-nav-title-padding: fd-space(2) fd-space(5);
-    $fd-side-nav-icon-right-padding: fd-space(2.5);
-    $fd-side-nav-link-disabled-color: fd-color("text", 3);
-    $fd-side-nav-title-background-color: fd-color("neutral", 1);
+    $fd-side-nav-item-height: 2.75rem;
+    $fd-side-nav-item-height--compact: 2rem;
 
+    $fd-side-nav-icon-height: 2.75rem;
+    $fd-side-nav-icon-height--compact: 2rem;
+    $fd-side-nav-icon-width: 3rem;
+
+    $fd-side-nav-padding: 1rem;
+    $fd-side-nav-padding-2: 2rem;
+    $fd-side-nav-padding-3: 3rem;
+
+    $fd-side-nav-separator-margin: 0.25rem 1rem;
+    $fd-side-nav-separator-margin--condensed: 0.25rem 0.5rem;
+    $fd-side-nav-utility-margin: 3rem;
+
+    $fd-side-nav-border: $sapList_BorderWidth solid;
+
+
+    @mixin fd-side-nav-arrow {
+        font-family: "SAP-icons";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.875rem;
+        text-decoration: inherit;
+        text-transform: none;
+        speak: none;
+    }
+
+    @mixin fd-side-nav-icon-container {
+        min-height: $fd-side-nav-icon-height;
+        min-width: $fd-side-nav-icon-width;
+        color: $sapContent_IconColor;
+    }
 
     //BLOCK BASE *******************************************
-
-    background-color: $fd-side-nav-background-color;
-    min-width: $fd-side-nav-max-width;
-    @include fd-reset();
+    background-color: $sapList_Background;
+    max-width: $fd-side-nav-max-width;
+    border-right: $fd-side-nav-border;
+    border-right-color: $sapGroup_ContentBorderColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     //ELEMENTS *******************************************
-    &__group {
-        list-style: none;
-        margin-bottom: 0;
-    }
-
-    &__title {
-        @include fd-reset();
-        display: block;
-        margin-bottom: 0;
-        margin-top: 0;
-        padding: $fd-side-nav-title-padding;
-        @include fd-type("-1", "normal");
-        text-transform: uppercase;
-        color: $fd-side-nav-link-disabled-color;
-        background: $fd-side-nav-title-background-color;
-    }
-
+    &__main-navigation,
     &__list,
-    &__sublist {
-        @include fd-reset();
-        @include fd-reset-spacing();
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none;
-        flex-direction: column;
-    }
-
-    &__sublist {
-        &[aria-hidden="true"] {
-            display: none;
-        }
-    }
-
+    &__sublist,
     &__item,
     &__subitem {
         @include fd-reset();
     }
 
-    &__link,
-    &__sublink {
+    &__utility {
         @include fd-reset();
-        display: flex;
-        padding: $fd-side-nav-link-padding;
-        color: $fd-side-nav-link-color;
-        text-decoration: none;
-        @include fd-type("0", "normal");
-
-        //STATES *******************************************
-
-        &:hover {
-            background-color: $fd-side-nav-hover-background-color;
-            @include fd-var-color("color", fd-color-state("hover", "action"), --fd-color-action-hover);
-        }
-        &.is-selected,
-        &.is-expanded,
-        &[aria-selected="true"],
-        &[aria-expanded="true"] {
-            color: $fd-side-nav-link-color;
-            background-color: $fd-side-nav-selected-background-color;
-            @include fd-weight("bold");
-        }
-
-
-        &.is-disabled,
-        &[aria-disabled="true"] {
-            color: $fd-side-nav-link-disabled-color;
+        margin-top: $fd-side-nav-utility-margin;
+        &::before {
+            content: " ";
+            display: block;
+            border-top: $fd-side-nav-border;
+            border-top-color: $sapAccentColor6;
+            margin: $fd-side-nav-separator-margin;
         }
     }
 
-    &__link {
-        //STATES *******************************************
-        &.has-child {
-            background-image: url(#{$fd-down-arrow-icon});
-            background-repeat: no-repeat;
-            background-position: right 14px top 15px;
-        }
-
-        &.is-expanded,
-        &[aria-expanded="true"] {
-            background-image: url(#{$fd-forms-select-background-image--expanded});
-        }
-    }
-
-    &__sublink {
-        font-weight: normal;
-        padding-left: fd-space(5) * 2;
+    &__sublist {
         &[aria-hidden="true"] {
             display: none;
         }
     }
 
-    &__icon {
-        padding-right: $fd-side-nav-icon-right-padding;
-        margin-top: -1px;
-
-        &.sap-icon--s {
-            margin-top: 0;
+    &__item {
+        &.no-icon {
+            .#{$block}__title:first-child {
+                padding-left: $fd-side-nav-padding-3;
+            }
         }
 
-        &.sap-icon--m {
-            margin-top: 0;
-        }
-
-        &.sap-icon--l {
-            margin-top: -2px;
-        }
-
-        &.sap-icon--xl {
-            margin-top: -4px;
+        &.has-child {
+            .#{$block}__link {
+                &::after {
+                    @include fd-side-nav-icon-container();
+                    @include fd-flex-center();
+                    @include fd-side-nav-arrow();
+                    content: "\e066";                        // Hard-coded value
+                }
+                &.is-expanded,
+                &[aria-expanded="true"] {
+                    border-bottom: none;
+                    &::after {
+                        content: "\e1e2";                   // Hard-coded value
+                    }
+                }
+                &:active::after {
+                    color: $sapList_Active_TextColor;
+                }
+            }
         }
     }
 
-    &--icons {
-        min-width: auto;
+    &__subitem {
+        &[aria-hidden="true"] {
+            display: none;
+        }
 
+        &:last-child {
+            .#{$block}__sublink {
+                border-bottom: $fd-side-nav-border;
+                border-bottom-color: $sapList_BorderColor;
+            }
+        }
+    }
+
+    &__link,
+    &__sublink {
+        @include fd-reset();
+        @include fd-flex-vertical-align();
+        height: $fd-side-nav-item-height;
+        border-bottom: $fd-side-nav-border;
+        border-bottom-color: $sapList_BorderColor;
+
+        &:hover {
+            background-color: $sapList_Hover_Background;
+        }
+
+        &:active {
+            background-color: $sapList_Active_Background;
+            border-bottom-color: fade($sapList_BorderColor, 0%);
+
+            .#{$block}__title,
+            .#{$block}__icon {
+                color: $sapList_Active_TextColor;
+            }
+        }
+
+        &.is-selected,
+        &[aria-selected="true"] {
+            background-color: $sapList_SelectionBackgroundColor;
+            border-bottom-color: $sapSelectedColor;
+
+            &:hover {
+                background-color: $sapList_Hover_SelectionBackground;
+            }
+            &:active {
+            background-color: $sapList_Active_Background;
+            border-bottom-color: fade($sapList_BorderColor, 0%);
+
+                .#{$block}__title,
+                .#{$block}__icon {
+                    color: $sapList_Active_TextColor;
+                }
+            }
+        }
+    }
+
+    &__sublink {
+        padding-left: $fd-side-nav-padding;
+        border-bottom: none;
+    }
+
+    &__icon {
+        @include fd-flex-center();
+        @include fd-side-nav-icon-container();
+
+        &[class*=sap-icon]::before {
+            font-size: 1.125rem;        // Mismatch with fd-icons? Hard-coded value
+        }
+    }
+
+    &__title {
+        width: 100%;
+        font-family: $sapFontFamily;
+        font-size: $sapFontLargeSize;
+        font-weight: normal;
+        color: $sapList_TextColor;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-right: $fd-side-nav-padding;
+        &:first-child {
+            padding-left: $fd-side-nav-padding;
+        }
+    }
+
+
+    &.condensed {
+        max-width: $fd-side-nav-max-width--condensed;
+        .#{$block} {
+            &__title {
+                display: none;
+            }
+            &__item {
+                &.no-icon {
+                  display: none;
+                }
+                &.has-child {
+                    .#{$block}__link::after {
+                        display: none;
+                    }
+                    .#{$block}__sublist {
+                        display: none;
+                    }
+                }
+            }
+            &__utility {
+                &::before {
+                    margin: $fd-side-nav-separator-margin--condensed;
+                }
+            }
+        }
+    }
+
+    &.has-icons {
+        .#{$block}__sublink {
+            padding-left: $fd-side-nav-padding-2;
+        }
+    }
+
+    &.compact {
         .#{$block} {
             &__link,
             &__sublink {
-                padding: fd-space(2.5) fd-space(5);
-                justify-content: center;
+                height: $fd-side-nav-item-height--compact;
             }
 
-            &__icon {
-                padding-right: 0;
+            &__icon,
+            &__item.has-child .#{$block}__link::after {
+                min-height: $fd-side-nav-icon-height--compact;
             }
+
+            &__title {
+                font-size: $sapFontSize;
+            }
+        }
+
+        .#{$block}__icon[class*=sap-icon]::before {
+            font-size: 1rem;                    // Mismatch with fd-icons? Hard-coded value
         }
     }
 }

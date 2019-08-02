@@ -263,3 +263,14 @@
 @mixin action-cursor {
   cursor: pointer;
 }
+
+@mixin fd-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin fd-flex-vertical-align {
+  display: flex;
+  align-items: center;
+}
