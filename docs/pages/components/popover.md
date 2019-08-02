@@ -49,7 +49,7 @@ There are four placement options:
 {% capture default-popoverwmenu %}
 <div class="fd-popover">
     <div class="fd-popover__control">
-        <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="jhqD0558a" aria-expanded="false" aria-haspopup="true">Left Aligned (default)</button>
+        <button class="fd-button" aria-label="Image label" aria-controls="jhqD0558a" aria-expanded="false" aria-haspopup="true">Left Aligned (default)</button>
     </div>
     <div class="fd-popover__body" aria-hidden="true" id="jhqD0558a">
         <nav class="fd-menu" id="">
@@ -65,7 +65,7 @@ There are four placement options:
 
 <div class="fd-popover fd-popover--right">
     <div class="fd-popover__control">
-        <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="jhqD055" aria-expanded="false" aria-haspopup="true">Right Aligned</button>
+        <button class="fd-button" aria-label="Image label" aria-controls="jhqD055" aria-expanded="false" aria-haspopup="true">Right Aligned</button>
     </div>
     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="jhqD055">
         <nav class="fd-menu" id="">
@@ -81,7 +81,7 @@ There are four placement options:
 
 <div class="fd-popover">
     <div class="fd-popover__control">
-        <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="jhqD0" aria-expanded="false" aria-haspopup="true">No Arrow & Left Aligned</button>
+        <button class="fd-button" aria-label="Image label" aria-controls="jhqD0" aria-expanded="false" aria-haspopup="true">No Arrow & Left Aligned</button>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="jhqD0">
         <nav class="fd-menu" id="">
@@ -97,7 +97,7 @@ There are four placement options:
 
 <div class="fd-popover fd-popover--right">
     <div class="fd-popover__control">
-        <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="jhqDa2" aria-expanded="false" aria-haspopup="true">No Arrow & Right Aligned</button>
+        <button class="fd-button" aria-label="Image label" aria-controls="jhqDa2" aria-expanded="false" aria-haspopup="true">No Arrow & Right Aligned</button>
     </div>
     <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="jhqDa2">
         <nav class="fd-menu" id="">
@@ -123,7 +123,7 @@ Virtually any component can be used as a `fd-popover__control` to control the di
 {% capture default-popoverwmenu %}
 <div class="fd-popover">
     <div class="fd-popover__control">
-        <a href="#" class="fd-link  fd-popover__control" aria-label="Image label" aria-controls="jhqD05581" aria-expanded="false" aria-haspopup="true">
+        <a href="#" class="fd-link" aria-label="Image label" aria-controls="jhqD05581" aria-expanded="false" aria-haspopup="true">
             Link with a popover
         </a>
     </div>
@@ -141,7 +141,7 @@ Virtually any component can be used as a `fd-popover__control` to control the di
 
 <div class="fd-popover fd-popover--right">
     <div class="fd-popover__control">
-        <span class=" fd-image--m fd-image--circle fd-popover__control" aria-label="Image label" aria-controls="jhqD0551" aria-expanded="false" aria-haspopup="true" aria-label="Image label"
+        <span class=" fd-image--m fd-image--circle" aria-label="Image label" aria-controls="jhqD0551" aria-expanded="false" aria-haspopup="true" aria-label="Image label"
 style="background-image: url('https://placeimg.com/400/400/nature');"></span>
     </div>
     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="jhqD0551">
@@ -160,7 +160,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
     <div class="fd-popover__control">
         <div class="fd-form__item " >
         <label class="fd-form__label" for="input-1">Input with a Popover:</label>
-        <input class="fd-form__control fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="jhqD01" aria-expanded="false" aria-haspopup="true">
+        <input class="fd-form__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="jhqD01" aria-expanded="false" aria-haspopup="true">
     </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="jhqD01">
@@ -178,7 +178,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 
 <div class="fd-popover fd-popover--right">
     <div class="fd-popover__control">
-        <span class="sap-icon--cart sap-icon--xl fd-popover__control" aria-label="Image label" aria-controls="jhqD1" aria-expanded="false" aria-haspopup="true"></span>
+        <span class="sap-icon--cart sap-icon--xl" aria-label="Image label" aria-controls="jhqD1" aria-expanded="false" aria-haspopup="true"></span>
     </div>
     <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="jhqD1">
         <nav class="fd-menu" id="">
