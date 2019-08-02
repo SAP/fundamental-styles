@@ -147,7 +147,7 @@ Add `role=button` to rendering a tile as a button
 <br>
 
 ## Disabled state
-Add class `is-disabled` attribute !!!!!
+Add class `is-disabled` attribute
 
 {% capture tile %}
 <div class="fd-tile" is-disabled>
