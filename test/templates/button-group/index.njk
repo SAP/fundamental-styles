@@ -10,34 +10,50 @@
 </style>
 <h2>default</h2>
 
-
-    {% for size in ["","compact"] %}
-      {%- set modifier = { block: [size] } %}
-      {%- if size == "default" %}
-        {%- set modifier = { block: [] } %}
-      {%- endif %}
-<h2> {{size}}</h2>
-
 {% set example %}
 
   {% call button_group() -%}
-  <button class="btn-playground sap-icon--survey" aria-label="Survey"></button>
-  <button class="btn-playground sap-icon--pie-chart" aria-label="Chart" aria-selected="true"></button>
-  <button class="btn-playground sap-icon--pool" aria-label="Pool"></button>
+    <button class="btn-playground sap-icon--survey" aria-label="Survey"></button>
+    <button class="btn-playground sap-icon--pie-chart" aria-label="Chart"></button>
+    <button class="btn-playground sap-icon--pool" aria-label="Pool"></button>
+  {%- endcall %}
+
+    {% call button_group() -%}
+     <button class="btn-playground">First</button>
+     <button class="btn-playground">Second</button>
+     <button class="btn-playground">Third</button>
   {%- endcall %}
 
   {% call button_group() -%}
-   <button class="btn-playground">First</button>
-   <button class="btn-playground">Second</button>
-   <button class="btn-playground">Third</button>
+     <button class="btn-playground">First</button>
+     <button class="btn-playground">Second</button>
+     <button class="btn-playground">Third</button>
+     <button class="btn-playground">Fourth</button>
   {%- endcall %}
-
 
     {% endset %}
     {{ format(example) }}
 
 
-    {% endfor %}
+ <h2>compact</h2>
+
+{% set example %}
+
+  {% call button_group() -%}
+    <button class="btn-playground-compact sap-icon--survey" aria-label="Survey"></button>
+    <button class="btn-playground-compact sap-icon--pie-chart" aria-label="Chart"></button>
+    <button class="btn-playground-compact sap-icon--pool" aria-label="Pool"></button>
+  {%- endcall %}
+
+    {% call button_group() -%}
+     <button class="btn-playground-compact">First</button>
+     <button class="btn-playground-compact">Second</button>
+     <button class="btn-playground-compact">Third</button>
+  {%- endcall %}
+
+    {% endset %}
+    {{ format(example) }}   
+
 
 <h2> disabled </h2>
 
@@ -59,6 +75,7 @@
      <button class="btn-playground">First</button>
      <button class="btn-playground">Second</button>
      <button class="btn-playground" disabled>Third</button>
+      <button class="btn-playground">Fourth</button>
   {%- endcall %}
 
     {% endset %}
