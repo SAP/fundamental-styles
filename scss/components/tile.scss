@@ -46,7 +46,6 @@ $block: #{$fd-namespace}-tile;
     }
   }
   //STATES
-  &[aria-disabled="true"],
   &.is-disabled {
     opacity: 0.4;
   }

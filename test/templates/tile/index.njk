@@ -127,14 +127,14 @@
 
     <br><br>
     <h2>disabled</h2>
-    <p>Add <code>aria-disabled=true</code></p>
+    <p>Add <code>is-disabled</code></p>
     {% set example %}
-{%- call tile(aria={disabled: true}) -%}
+{%- call tile() -%}
   {%- call tile_content({ title: data.properties.title }) -%}
   {%- endcall %}
 {%- endcall %}
 
-{% call tile(aria={disabled: true}) -%}
+{% call tile() -%}
   {%- call tile_media() -%}
     {{icon}}
   {%- endcall %}

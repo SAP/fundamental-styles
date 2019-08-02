@@ -147,10 +147,10 @@ Add `role=button` to rendering a tile as a button
 <br>
 
 ## Disabled state
-Add class `is-disabled` and/or `aria-disabled="true"` attribute
+Add class `is-disabled` attribute !!!!!
 
 {% capture tile %}
-<div class="fd-tile" aria-disabled="true">
+<div class="fd-tile" is-disabled>
     <div class="fd-tile__content">
         <h3 class="fd-tile__title">Tile Title</h3>
     </div>
@@ -158,7 +158,7 @@ Add class `is-disabled` and/or `aria-disabled="true"` attribute
 
 <br>
 
-<div class="fd-tile" aria-disabled="true">
+<div class="fd-tile" is-disabled>
     <div class="fd-tile__media">
         <span class=" fd-identifier--m fd-identifier--transparent sap-icon--home"></span>
     </div>
@@ -169,7 +169,7 @@ Add class `is-disabled` and/or `aria-disabled="true"` attribute
 
 <br>
 
-<div class="fd-product-tile" aria-disabled="true">
+<div class="fd-product-tile" is-disabled>
     <div class="fd-product-tile__media" style="background-image: url('https://techne.yaas.io/images/product-thumbnail-wide.png');"></div>
     <div class="fd-product-tile__content">
         <h3 class="fd-product-tile__title">Disabled Product Tile</h3>

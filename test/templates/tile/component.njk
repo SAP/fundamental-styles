@@ -6,7 +6,7 @@ tile:
     aria={}
 -->
 {% macro tile(properties={}, modifier={}, state={}, aria={}, classes=[]) -%}
-<div class="fd-tile{{ modifier.block | modifier('tile') }}{{ state | state }}{{ classes | classes }}"{{ aria | aria }}>
+<div class="fd-tile{{ modifier.block | modifier('tile') }}{{ state | state }}{{ classes | classes }}"{{ aria | aria }} is-disabled>
 {{- caller() | indent -}}
 </div>
 {%- endmacro %}
