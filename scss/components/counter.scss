@@ -39,22 +39,18 @@ $block: #{$fd-namespace}-counter;
 }
 
 .counter-button_pgd {
-  padding: 0;
-  margin: 0;
+  @include fd-reset();
   height: $fd-forms-height;
   width: $fd-forms-height;
   background-color: white;
   border: none;
   color: black;
-  font-size: $fd-font-size;
-  font-family: $fd-font-family;
 }
 
 .counter-list-item-before_pgd {
+  @include fd-reset();
   float: left;
   clear: left;
-  margin-right: 10px;
-  margin-left: 0;
   @include fd-rtl() {
     float: right;
     clear: right;
@@ -67,10 +63,7 @@ $block: #{$fd-namespace}-counter;
 }
 
 .counter-list-item_pgd {
-  font-size: $fd-font-size;
-  font-family: $fd-font-family;
-  padding: 0;
-  margin: 0;
+  @include fd-reset();
   border: none;
   color: black;
 }
