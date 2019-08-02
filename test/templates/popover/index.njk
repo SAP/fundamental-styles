@@ -17,9 +17,10 @@
 {%- set _id4 = utils.id() %}
 {%- set _id5 = utils.id() %}
 {%- set _id6 = utils.id() %}
+{%- set _id7 = utils.id() %}
 
 {%- macro sample_control(properties={}) -%}
-  <span class="fd-popover__control{{ modifier.control | modifier('popover__control') }}" aria-controls="{{ properties.id }}" aria-expanded="false" aria-haspopup="true"{{ " disabled" if state.disabled }}{{ aria | aria }}>Click Here</span>
+  <span aria-controls="{{ properties.id }}" aria-expanded="false" aria-haspopup="true"{{ " disabled" if state.disabled }}{{ aria | aria }}>Click Here</span>
 {%- endmacro %}
 
 <h2>popover with menu default </h2>
@@ -27,6 +28,19 @@
 {{  popover(properties={
     id: _id,
     control: sample_control(properties={id: _id}),
+    body: list()
+  })
+}}
+{% endset %}
+{{ format(example) }}
+
+<br><br><br><br>
+
+<h2>popover with menu left </h2>
+{% set example %}
+{{  popover(properties={
+    id: _id7,
+    control: sample_control(properties={id: _id7}),
     body: list()
   }, modifier={ block: ['left']})
 }}
