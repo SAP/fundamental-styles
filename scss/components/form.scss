@@ -34,6 +34,9 @@ $block: #{$fd-namespace}-form;
         }
     }
     &__set {
+        border: 0;
+        padding: 0;
+        margin: 0;
         margin-bottom: $fd-form-item-margin-bottom;
         &:last-child {
           margin-bottom: 0;
