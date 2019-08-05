@@ -36,7 +36,7 @@ module.exports = {
         }),
         postcssCustomProperties({
             preserve: true,
-            importFrom: 'web-components/sap_fiori_3/parameters-bundle.css'
+            importFrom: 'web-components/sap_fiori_3/parameters-bundle.css' //publish in ui5-webcomponents package
           }),
         minify,
         postcssBanner({

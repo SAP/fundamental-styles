@@ -1,6 +1,9 @@
 const postcss = require('postcss');
 const parser = require('postcss-selector-parser');
-//TO DO: figure out how to pass file name- to replace fd-button
+
+//TO DO: 
+//* figure out how to pass file name- to replace fd-button with component file name
+//* handle .#{$block}, [class*="#{$block}--"], a[class*="#{$block}--"], the [class*="#{$block}--"] selectors are getting picked up by the attribute selector block
 
 let processor = (root) => {
 ;    root.walk((selector) => {
@@ -37,13 +40,13 @@ module.exports = postcss.plugin('generate classes plugin', function (opts) {
 			//replace :host selector with included contents after the other transformations, if replaced before, erases _all_ information inside of :host(...)
 			if( rule.selector.includes(':host')) {
 				
-				// let ruleContents = rule.selector.match(/(?<=:host\()(.*)(?=\))/, rule.selector);
+				let ruleContents = rule.selector.match(/(?<=:host\()(.*)(?=\))/, rule.selector);
 				
-				// //handles empty :host selector
-				// if(ruleContents === null) {
-				// 	ruleContents = '.fd-button'
-				// }
-				// rule.selector = rule.selector.replace(rule.selector, ruleContents);
+				//handles empty :host selector
+				if(ruleContents === null) {
+					ruleContents = '.fd-button'
+				}
+				rule.selector = rule.selector.replace(rule.selector, ruleContents);
 			}
 		});
 
