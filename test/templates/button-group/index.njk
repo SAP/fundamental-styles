@@ -2,12 +2,22 @@
 {% from "./../format.njk" import format %}
 {% from "./component.njk" import button_group %}
 
+
 {% block content %}
 <style media="screen">
   .fd-button-group {
     margin-bottom: 10px;
   }
 </style>
+
+<style>
+  .btn-playground {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+  }
+</style>
+
 <h2>default</h2>
 
 {% set example %}
@@ -33,27 +43,6 @@
 
     {% endset %}
     {{ format(example) }}
-
-
- <h2>compact</h2>
-
-{% set example %}
-
-  {% call button_group() -%}
-    <button class="btn-playground-compact sap-icon--survey" aria-label="Survey"></button>
-    <button class="btn-playground-compact sap-icon--pie-chart" aria-label="Chart"></button>
-    <button class="btn-playground-compact sap-icon--pool" aria-label="Pool"></button>
-  {%- endcall %}
-
-    {% call button_group() -%}
-     <button class="btn-playground-compact">First</button>
-     <button class="btn-playground-compact">Second</button>
-     <button class="btn-playground-compact">Third</button>
-  {%- endcall %}
-
-    {% endset %}
-    {{ format(example) }}   
-
 
 <h2> disabled </h2>
 
