@@ -270,8 +270,3 @@ $block: #{$fd-namespace}-popover;
         }
     }
 }
-
-.popover-body__pgd {
-@include fd-reset();
-padding: 0 4px;
-}
