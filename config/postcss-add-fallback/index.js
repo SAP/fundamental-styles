@@ -1,7 +1,6 @@
 const postcss = require('postcss');
 const fs = require('fs');
 const arrayUniq = require('array-uniq');
-const bundle = require('./parameters-bundle.css');
 
 const findCSSVars = styleString => {
 	const vars = new Map();
@@ -19,8 +18,10 @@ module.exports = postcss.plugin('add fallback plugin', function (opts) {
 
 	return function (root, result) {
 		// If importFrom was given, parse all CSS variables from there
-		const sourceParams = fs.readFileSync('./parameters-bundle.css').toString();
-		params = findCSSVars(sourceParams);
+		if (opts.importFrom) {
+			const sourceParams = fs.readFileSync(opts.importFrom).toString();
+			params = findCSSVars(sourceParams);
+		}
 
 		root.walkDecls(decl => {
 			// extract var name

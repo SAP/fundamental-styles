@@ -1,8 +1,9 @@
 const postcss = require('postcss');
 const parser = require('postcss-selector-parser');
 //file name
-let processor = (root) => {
-    root.walk((selector) => {
+let processor = (root, fileName) => {
+	console.log(fileName)
+;    root.walk((selector) => {
 		let newClass;
 		 if((selector.type === 'tag' || selector.type === 'class') && selector.value.includes('ui5-')){
 			
@@ -12,13 +13,15 @@ let processor = (root) => {
 			if(selector.value === ':host') {
 				// newClass = 'fd-button';
 			}
-		}else if (selector.type === 'combinator') {
+		} else if (selector.type === 'combinator') {
 			//do nothing
-		}else if(selector.type === 'selector') {
+		} else if(selector.type === 'attribute' && selector.value !== undefined) {
+			selector.quoted ? 
+			newClass = `fd-button--${selector.raws.unquoted.toLowerCase()}`
+			: newClass = `fd-button--${selector.value.toLowerCase()}`;
+
+		} else if(selector.type === 'selector') {
 			//do nothing
-		}else if(selector.type === 'attribute' && selector.value !== undefined) {
-			
-			newClass = `fd-button--${selector.value.toLowerCase()}`;
 		}
 		if(newClass !== undefined) {
 			selector.replaceWith(parser.className({value: newClass}));
@@ -29,6 +32,8 @@ let processor = (root) => {
 
 module.exports = postcss.plugin('generate classes plugin', function (opts) {
 	opts = opts || {};
+
+	const fileName = opts.fileName;
 
 	return function (root, result) {
 		root.walkRules(rule => {
