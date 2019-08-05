@@ -10,7 +10,7 @@ const postcssImport = require('postcss-import');
 const packageVersion = require('../package.json').version;
 const year = new Date().getFullYear();
 
-const minify = process.env.MODE === 'production' ? cssnano({
+const minify = process.env.NODE_ENV === 'production' ? cssnano({
     preset: [
         'default', {
             mergeLonghand: false, // https://github.com/cssnano/cssnano/issues/675
@@ -25,7 +25,7 @@ module.exports = {
     sourcesContent: true,
     plugins: [
         postcssImport(),
-        postcssGenerateClasses({fileName: 'jenna.txt'}),
+        postcssGenerateClasses(),
         postcssAddFallback({importFrom: 'web-components/sap_fiori_3/parameters-bundle.css'}),  //publish in ui5-webcomponents package
         autoprefixer({
             cascade: true
@@ -38,6 +38,12 @@ module.exports = {
             preserve: true,
             importFrom: 'web-components/sap_fiori_3/parameters-bundle.css'
           }),
-        minify
+        minify,
+        postcssBanner({
+            banner: `Fundamental Styles v${packageVersion}
+Copyright (c) ${year} SAP SE or an SAP affiliate company.
+Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)`,
+            important: true})
+
     ]
 }
