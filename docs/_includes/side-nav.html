@@ -5,70 +5,82 @@
 
 
 <ul class="side-nav__links-container">
-{% for entry in sidebar %}
+    {% for entry in sidebar %}
     {% for folder in entry.folders %}
-        {% if folder.output contains "web" %}
+    {% if folder.output contains "web" %}
 
-        {% assign folder-name = folder.title | downcase %}
+    {% assign folder-name = folder.title | downcase %}
 
-            {% if page.url contains folder-name %}
-            <li class="side-nav__headers active">
+    {% if page.url contains folder-name %}
+    <li class="side-nav__headers active">
+        {% else %}
+    <li class="side-nav__headers">
+        {% endif %}
+        <a class="side-nav__headers-link"
+           href="{{site.baseurl}}{{folder.url}}">{{ folder.title }}</a>
+        <ul>
+            {% for folderitem in folder.folderitems %}
+            {% if folderitem.output contains "web" %}
+            {% if folderitem.external_url %}
+            <li class="side-nav__links">
+                <a href="{{site.baseurl}}{{folderitem.external_url}}"
+                   target="_blank">{{folderitem.title}}</a>
+            </li>
+            {% elsif page.url == folderitem.url %}
+            <li class="side-nav__links active">
+                <a href="{{site.baseurl}}{{folderitem.url}}"
+                   class="side-nav__links-link">{{folderitem.title}}</a>
+            </li>
             {% else %}
-            <li class="side-nav__headers">
+            <li class="side-nav__links">
+                <a href="{{site.baseurl}}{{folderitem.url}}"
+                   class="side-nav__links-link">{{folderitem.title}}</a>
+            </li>
             {% endif %}
-                <a class="side-nav__headers-link" href="{{site.baseurl}}{{folder.url}}">{{ folder.title }}</a>
-                <ul >
-                    {% for folderitem in folder.folderitems %}
-                    {% if folderitem.output contains "web" %}
-                    {% if folderitem.external_url %}
-                    <li class="side-nav__links">
-                        <a href="{{site.baseurl}}{{folderitem.external_url}}" target="_blank">{{folderitem.title}}</a>
+            {% for subfolders in folderitem.subfolders %}
+            {% if subfolders.output contains "web" %}
+            <li class="subfolders">
+                <a href="#">{{ subfolders.title }}</a>
+                <ul>
+                    {% for subfolderitem in subfolders.subfolderitems %}
+                    {% if subfolderitem.output contains "web" %}
+                    {% if subfolderitem.external_url %}
+                    <li>
+                        <a href="{{site.baseurl}}{{subfolderitem.external_url}}"
+                           target="_blank">{{subfolderitem.title}}</a>
                     </li>
-                    {% elsif page.url == folderitem.url %}
-                    <li class="side-nav__links active">
-                        <a href="{{site.baseurl}}{{folderitem.url}}" class="side-nav__links-link">{{folderitem.title}}</a>
+                    {% elsif page.url == subfolderitem.url %}
+                    <li class="active">
+                        <a href={{site.baseurl}}"{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a>
                     </li>
                     {% else %}
-                    <li class="side-nav__links">
-                        <a href="{{site.baseurl}}{{folderitem.url}}" class="side-nav__links-link">{{folderitem.title}}</a>
+                    <li>
+                        <a href="{{site.baseurl}}{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a>
                     </li>
                     {% endif %}
-                    {% for subfolders in folderitem.subfolders %}
-                    {% if subfolders.output contains "web" %}
-                    <li class="subfolders">
-                        <a href="#">{{ subfolders.title }}</a>
-                        <ul>
-                            {% for subfolderitem in subfolders.subfolderitems %}
-                            {% if subfolderitem.output contains "web" %}
-                            {% if subfolderitem.external_url %}
-                            <li>
-                                <a href="{{site.baseurl}}{{subfolderitem.external_url}}" target="_blank">{{subfolderitem.title}}</a>
-                            </li>
-                            {% elsif page.url == subfolderitem.url %}
-                            <li class="active">
-                                <a href={{site.baseurl}}"{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a>
-                            </li>
-                            {% else %}
-                            <li>
-                                <a href="{{site.baseurl}}{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a>
-                            </li>
-                            {% endif %}
-                            {% endif %}
-                            {% endfor %}
-                        </ul>
-                    </li>
-                    {% endif %}
-                    {% endfor %}
                     {% endif %}
                     {% endfor %}
                 </ul>
-                <hr class="side-nav__seperator">
             </li>
-        {% endif %}
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+        </ul>
+        <hr class="side-nav__seperator">
+    </li>
+    {% endif %}
     {% endfor %}
-{% endfor %}
+    {% endfor %}
 
 </ul>
 
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <!-- <script>$("li.active").parents('li').toggleClass("active");</script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="{{site.baseurl}}/js/customscripts.js"></script>

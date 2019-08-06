@@ -5,7 +5,7 @@ layout: default
 {% if page.simple_map == true %}
 
 <script>
-    $(document).ready ( function(){
+    $(document).ready(function () {
         $('.box{{page.box_number}}').addClass('active');
     });
 </script>
@@ -15,7 +15,7 @@ layout: default
 {% elsif page.complex_map == true %}
 
 <script>
-    $(document).ready ( function(){
+    $(document).ready(function () {
         $('.modalButton{{page.box_number}}').addClass('active');
     });
 </script>
@@ -26,28 +26,31 @@ layout: default
 
 <div class="docs-content-full-width">
 
-    <h1 class="docs-headers-h1">{{ page.title }}</h1>
+    <h2 class="docs-headers-h2">{{ page.title }}</h2>
 
-   {% if page.summary %}
-   <div class="fd-container">
+    {% if page.summary %}
+    <div class="fd-container">
         <div class="fd-col--10">
             <p class="docs-component-intro">{{page.summary}}</p>
         </div>
-   </div>
-   {% endif %}
+    </div>
+    {% endif %}
 
     {% unless page.toc == false %}
-        {% include toc.html %}
+    {% include toc.html %}
     {% endunless %}
 
 
     {% if site.github_editme_path %}
 
-    <a target="_blank" href="https://github.com/{{site.github_editme_path}}{% unless page.url contains "index.html" %}pages/{% endunless %}{{page.folder}}{{page.url | remove: ".html" | append: ".md"}}" class="btn bfd-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank"
+       href="https://github.com/{{site.github_editme_path}}{% unless page.url contains "index.html" %}pages/{% endunless %}{{page.folder}}{{page.url | remove: ".html" | append: ".md"}}"
+       class="btn bfd-default githubEditButton"
+       role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     {% endif %}
 
-  {{content}}
+    {{content}}
 
     <div class="tags">
         {% if page.tags != null %}
@@ -55,7 +58,9 @@ layout: default
         {% assign projectTags = site.data.tags.allowed-tags %}
         {% for tag in page.tags %}
         {% if projectTags contains tag %}
-        <a href="{{ "tag_" | append: tag | append: ".html" }}" class="btn bfd-default navbar-btn cursorNorm" role="button">{{page.tagName}}{{tag}}</a>
+        <a href="{{ "tag_" | append: tag | append: ".html" }}"
+           class="btn bfd-default navbar-btn cursorNorm"
+           role="button">{{page.tagName}}{{tag}}</a>
         {% endif %}
         {% endfor %}
         {% endif %}
