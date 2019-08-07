@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.53"></a>
+# [0.2.0-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.52...v0.2.0-rc.53) (2019-08-06)
+
+
+
+<a name="0.2.0-rc.52"></a>
+# [0.2.0-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.51...v0.2.0-rc.52) (2019-08-06)
+
+
+
+<a name="0.2.0-rc.51"></a>
+# [0.2.0-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.50...v0.2.0-rc.51) (2019-08-06)
+
+
+
+<a name="0.2.0-rc.50"></a>
+# [0.2.0-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.49...v0.2.0-rc.50) (2019-08-05)
+
+
+
 <a name="0.2.0-rc.49"></a>
 # [0.2.0-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.48...v0.2.0-rc.49) (2019-07-30)
 

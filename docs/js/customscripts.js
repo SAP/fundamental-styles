@@ -14,7 +14,7 @@ $(document).ready(function () {
     }
 
     $('#mobile-sidenav-btn').click(() => {
-        $("#tg-sb-sidebar").slideToggle('400');
+        $("#tg-sb-sidebar").toggleClass('fd-styles__mobile-list');
     });
 
 });
