@@ -9,44 +9,46 @@ folder: components
 summary:
 ---
 
-The left navigation can always display or expand/collapse using the menu icon within the global navigation.
+The left navigation area can be used to display navigation structures with up to two levels. It contains links that change the content in the main area. 
+
+The side navigation consists of two container section:  the Main Navigation Section (top-aligned) with links used to navigate within the user’s current work context, and Utility Section (bottom-aligned) that contains links to additional information.
+
 {: .docs-intro}
 
-> {{ site.data.strings.headerDisclaimer }}
-
-## Side Navigation with one level
+## Side Navigation with one level - cozy mode
+There is only one level of navigation; all further navigation is shown in the content area.
 {% capture default %}
 <nav class="fd-side-nav">
     <div class="fd-side-nav__main-navigation">
         <ul class="fd-side-nav__list">
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">Link Item</div>
+                    <div class="fd-side-nav__text">Link Item</div>
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link is-selected" aira-selected="true" href="#">
-                    <div class="fd-side-nav__title">Link Item</div>
+                    <div class="fd-side-nav__text">Link Item</div>
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">Link Item</div>
+                    <div class="fd-side-nav__text">Link Item</div>
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">Link Item</div>
+                    <div class="fd-side-nav__text">Link Item</div>
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">Link Item</div>
+                    <div class="fd-side-nav__text">Link Item</div>
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">Link Item</div>
+                    <div class="fd-side-nav__text">Link Item</div>
                 </a>
             </li>
         </ul>
@@ -55,12 +57,12 @@ The left navigation can always display or expand/collapse using the menu icon wi
         <ul class="fd-side-nav__list">
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">Link Item</div>
+                    <div class="fd-side-nav__text">Link Item</div>
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">Link Item</div>
+                    <div class="fd-side-nav__text">Link Item</div>
                 </a>
             </li>
         </ul>
@@ -71,8 +73,8 @@ The left navigation can always display or expand/collapse using the menu icon wi
 
 <br>
 
-## Side navigation with multiple levels
-Use this when there is more than one level of hierarchy in the left navigation. Each level can be expanded and collapsed.
+## Side navigation with multiple levels - cozy mode
+Use this when there is more than one level of hierarchy in the left navigation. The entries on the first level are just group headers(don't trigger navigation themselves). There are only two levels of navigation. For more levels of navigation, use the content area. 
 
 {% capture default %}
 <nav class="fd-side-nav">
@@ -80,28 +82,28 @@ Use this when there is more than one level of hierarchy in the left navigation. 
         <ul class="fd-side-nav__list">
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">item link</div>
+                    <div class="fd-side-nav__text">item link</div>
                 </a>
             </li>
             <li class="fd-side-nav__item has-child">
                 <a class="fd-side-nav__link" href="#" aria-controls="sublist-01"
                 aria-haspopup="true">
-                    <div class="fd-side-nav__title">item link</div>
+                    <div class="fd-side-nav__text">item link</div>
                 </a>
                 <ul class="fd-side-nav__sublist" id="sublist-01" aria-hidden="true">
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                 </ul>
@@ -109,22 +111,22 @@ Use this when there is more than one level of hierarchy in the left navigation. 
             <li class="fd-side-nav__item has-child">
                 <a class="fd-side-nav__link" href="#" aria-controls="sublist-02"
                 aria-haspopup="true">
-                    <div class="fd-side-nav__title">item link</div>
+                    <div class="fd-side-nav__text">item link</div>
                 </a>
                 <ul class="fd-side-nav__sublist" id="sublist-02" aria-hidden="true">
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                 </ul>
@@ -132,34 +134,34 @@ Use this when there is more than one level of hierarchy in the left navigation. 
             <li class="fd-side-nav__item has-child">
                 <a class="fd-side-nav__link" href="#" aria-controls="sublist-03"
                 aria-haspopup="true" aria-expanded="true">
-                    <div class="fd-side-nav__title">item link</div>
+                    <div class="fd-side-nav__text">item link</div>
                 </a>
                 <ul class="fd-side-nav__sublist" id="sublist-03" aria-hidden="false">
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink is-selected" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                 </ul>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">item link</div>
+                    <div class="fd-side-nav__text">item link</div>
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">item link</div>
+                    <div class="fd-side-nav__text">item link</div>
                 </a>
             </li>
         </ul>
@@ -168,12 +170,12 @@ Use this when there is more than one level of hierarchy in the left navigation. 
         <ul class="fd-side-nav__list">
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">Link Item</div>
+                    <div class="fd-side-nav__text">Link Item</div>
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">Link Item</div>
+                    <div class="fd-side-nav__text">Link Item</div>
                 </a>
             </li>
         </ul>
@@ -184,8 +186,9 @@ Use this when there is more than one level of hierarchy in the left navigation. 
 
 <br>
 
-## Side navigation with multiple levels compact
-Use this when there is more than one level of hierarchy in the left navigation. Each level can be expanded and collapsed.
+## Side navigation with multiple levels - compact mode
+
+In compact mode the dimensions of the controls are reduced, allowing more information to be displayed. This mode is suggested for devices operated by mouse and keyboard.
 
 {% capture default %}
 <nav class="fd-side-nav compact">
@@ -193,28 +196,28 @@ Use this when there is more than one level of hierarchy in the left navigation. 
         <ul class="fd-side-nav__list">
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">item link</div>
+                    <div class="fd-side-nav__text">item link</div>
                 </a>
             </li>
             <li class="fd-side-nav__item has-child">
                 <a class="fd-side-nav__link" href="#" aria-controls="sublist-04"
                 aria-haspopup="true">
-                    <div class="fd-side-nav__title">item link</div>
+                    <div class="fd-side-nav__text">item link</div>
                 </a>
                 <ul class="fd-side-nav__sublist" id="sublist-04" aria-hidden="true">
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                 </ul>
@@ -222,22 +225,22 @@ Use this when there is more than one level of hierarchy in the left navigation. 
             <li class="fd-side-nav__item has-child">
                 <a class="fd-side-nav__link" href="#" aria-controls="sublist-05"
                 aria-haspopup="true">
-                    <div class="fd-side-nav__title">item link</div>
+                    <div class="fd-side-nav__text">item link</div>
                 </a>
                 <ul class="fd-side-nav__sublist" id="sublist-05" aria-hidden="true">
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                 </ul>
@@ -245,34 +248,34 @@ Use this when there is more than one level of hierarchy in the left navigation. 
             <li class="fd-side-nav__item has-child">
                 <a class="fd-side-nav__link" href="#" aria-controls="sublist-06"
                 aria-haspopup="true" aria-expanded="true">
-                    <div class="fd-side-nav__title">item link</div>
+                    <div class="fd-side-nav__text">item link</div>
                 </a>
                 <ul class="fd-side-nav__sublist" id="sublist-06" aria-hidden="false">
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink is-selected" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                 </ul>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">item link</div>
+                    <div class="fd-side-nav__text">item link</div>
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">item link</div>
+                    <div class="fd-side-nav__text">item link</div>
                 </a>
             </li>
         </ul>
@@ -281,12 +284,12 @@ Use this when there is more than one level of hierarchy in the left navigation. 
         <ul class="fd-side-nav__list">
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">Link Item</div>
+                    <div class="fd-side-nav__text">Link Item</div>
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">Link Item</div>
+                    <div class="fd-side-nav__text">Link Item</div>
                 </a>
             </li>
         </ul>
@@ -297,7 +300,8 @@ Use this when there is more than one level of hierarchy in the left navigation. 
 
 <br>
 
-## Side navigation with icons
+## Side navigation with icons - cozy mode
+The entries in the side navigation consist of an icon with text. The use or non-use of icons must be consistent for all links on one level (avoid mixing entries with and without icons on the same level). The use of icons on the second level is not recommended. 
 {% capture default %}
 <nav class="fd-side-nav has-icons">
     <div class="fd-side-nav__main-navigation">
@@ -305,29 +309,29 @@ Use this when there is more than one level of hierarchy in the left navigation. 
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link is-selected" href="#">
                     <i class="fd-side-nav__icon sap-icon--employee" role="presentation"></i>
-                    <div class="fd-side-nav__title">item link</div>
+                    <div class="fd-side-nav__text">item link</div>
                 </a>
             </li>
             <li class="fd-side-nav__item has-child">
                 <a class="fd-side-nav__link" href="#" aria-controls="sublist-07"
                 aria-haspopup="true">
                     <i class="fd-side-nav__icon sap-icon--appointment" role="presentation"></i>
-                    <div class="fd-side-nav__title">item link</div>
+                    <div class="fd-side-nav__text">item link</div>
                 </a>
                 <ul class="fd-side-nav__sublist" id="sublist-07" aria-hidden="true">
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                 </ul>
@@ -336,22 +340,22 @@ Use this when there is more than one level of hierarchy in the left navigation. 
                 <a class="fd-side-nav__link" href="#" aria-controls="sublist-08"
                 aria-haspopup="true">
                     <i class="fd-side-nav__icon sap-icon--contacts" role="presentation"></i>
-                    <div class="fd-side-nav__title">item link</div>
+                    <div class="fd-side-nav__text">item link</div>
                 </a>
                 <ul class="fd-side-nav__sublist" id="sublist-08" aria-hidden="true">
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                 </ul>
@@ -360,35 +364,30 @@ Use this when there is more than one level of hierarchy in the left navigation. 
                 <a class="fd-side-nav__link" href="#" aria-controls="sublist-09"
                 aria-haspopup="true">
                     <i class="fd-side-nav__icon sap-icon--shipping-status" role="presentation"></i>
-                    <div class="fd-side-nav__title">item link</div>
+                    <div class="fd-side-nav__text">item link</div>
                 </a>
                 <ul class="fd-side-nav__sublist" id="sublist-09" aria-hidden="true">
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                     <li class="fd-side-nav__subitem">
                         <a class="fd-side-nav__sublink" href="#">
-                            <div class="fd-side-nav__title">Link Item</div>
+                            <div class="fd-side-nav__text">Link Item</div>
                         </a>
                     </li>
                 </ul>
             </li>
-            <li class="fd-side-nav__item no-icon">
-                <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">item link</div>
-                </a>
-            </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
                     <i class="fd-side-nav__icon sap-icon--value-help" role="presentation"></i>
-                    <div class="fd-side-nav__title">item link</div>
+                    <div class="fd-side-nav__text">item link</div>
                 </a>
             </li>
         </ul>
@@ -398,13 +397,13 @@ Use this when there is more than one level of hierarchy in the left navigation. 
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
                     <i class="fd-side-nav__icon sap-icon--compare" role="presentation"></i>
-                    <div class="fd-side-nav__title">Link Item</div>
+                    <div class="fd-side-nav__text">Link Item</div>
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
                     <i class="fd-side-nav__icon sap-icon--chain-link" role="presentation"></i>
-                    <div class="fd-side-nav__title">Link Item</div>
+                    <div class="fd-side-nav__text">Link Item</div>
                 </a>
             </li>
         </ul>
@@ -415,8 +414,7 @@ Use this when there is more than one level of hierarchy in the left navigation. 
 
 <br>
 
-## Side navigation collapsed with icons
-The user can identify which level they are on based on the icon displayed as selected when the navigation is collapsed. Note that the suggested use is when there is only one level of navigation as the user can only see one level of navigation when collapsed.
+## Side navigation with icons - condensed state
 
 {% capture default %}
 <nav class="fd-side-nav condensed">
@@ -425,30 +423,25 @@ The user can identify which level they are on based on the icon displayed as sel
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link is-selected" href="#">
                     <i class="fd-side-nav__icon sap-icon--home" role="presentation"></i>
-                    <div class="fd-side-nav__title">Link icon</div>
-                </a>
-            </li>
-            <li class="fd-side-nav__item no-icon">
-                <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">Link icon</div>
+                    <div class="fd-side-nav__text">Link icon</div>
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
                     <i class="fd-side-nav__icon sap-icon--add-document" role="presentation"></i>
-                    <div class="fd-side-nav__title">Link icon</div>
+                    <div class="fd-side-nav__text">Link icon</div>
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
                     <i class="fd-side-nav__icon sap-icon--user-settings" role="presentation"></i>
-                    <div class="fd-side-nav__title">Link icon</div>
+                    <div class="fd-side-nav__text">Link icon</div>
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
                     <i class="fd-side-nav__icon sap-icon--call" role="presentation"></i>
-                    <div class="fd-side-nav__title">Link icon</div>
+                    <div class="fd-side-nav__text">Link icon</div>
                 </a>
             </li>
         </ul>
@@ -458,13 +451,13 @@ The user can identify which level they are on based on the icon displayed as sel
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
                     <i class="fd-side-nav__icon sap-icon--compare" role="presentation"></i>
-                    <div class="fd-side-nav__title">Link Item</div>
+                    <div class="fd-side-nav__text">Link Item</div>
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
                     <i class="fd-side-nav__icon sap-icon--chain-link" role="presentation"></i>
-                    <div class="fd-side-nav__title">Link Item</div>
+                    <div class="fd-side-nav__text">Link Item</div>
                 </a>
             </li>
         </ul>
@@ -475,7 +468,7 @@ The user can identify which level they are on based on the icon displayed as sel
 
 <br>
 
-## Side navigation collapsed with icons compact
+## Side navigation with icons - condensed state, compact mode
 
 {% capture default %}
 <nav class="fd-side-nav condensed compact">
@@ -484,30 +477,25 @@ The user can identify which level they are on based on the icon displayed as sel
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link is-selected" href="#">
                     <i class="fd-side-nav__icon sap-icon--home" role="presentation"></i>
-                    <div class="fd-side-nav__title">Link icon</div>
-                </a>
-            </li>
-            <li class="fd-side-nav__item no-icon">
-                <a class="fd-side-nav__link" href="#">
-                    <div class="fd-side-nav__title">Link icon</div>
+                    <div class="fd-side-nav__text">Link icon</div>
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
                     <i class="fd-side-nav__icon sap-icon--add-document" role="presentation"></i>
-                    <div class="fd-side-nav__title">Link icon</div>
+                    <div class="fd-side-nav__text">Link icon</div>
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
                     <i class="fd-side-nav__icon sap-icon--user-settings" role="presentation"></i>
-                    <div class="fd-side-nav__title">Link icon</div>
+                    <div class="fd-side-nav__text">Link icon</div>
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
                     <i class="fd-side-nav__icon sap-icon--call" role="presentation"></i>
-                    <div class="fd-side-nav__title">Link icon</div>
+                    <div class="fd-side-nav__text">Link icon</div>
                 </a>
             </li>
         </ul>
@@ -517,13 +505,13 @@ The user can identify which level they are on based on the icon displayed as sel
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
                     <i class="fd-side-nav__icon sap-icon--compare" role="presentation"></i>
-                    <div class="fd-side-nav__title">Link Item</div>
+                    <div class="fd-side-nav__text">Link Item</div>
                 </a>
             </li>
             <li class="fd-side-nav__item">
                 <a class="fd-side-nav__link" href="#">
                     <i class="fd-side-nav__icon sap-icon--chain-link" role="presentation"></i>
-                    <div class="fd-side-nav__title">Link Item</div>
+                    <div class="fd-side-nav__text">Link Item</div>
                 </a>
             </li>
         </ul>
