@@ -15,8 +15,11 @@ The side navigation consists of two container section:  the Main Navigation Sect
 
 {: .docs-intro}
 
+> {{ site.data.strings.headerDisclaimer }}
+
 ## Side Navigation with one level - cozy mode
 There is only one level of navigation; all further navigation is shown in the content area.
+
 {% capture default %}
 <nav class="fd-side-nav">
     <div class="fd-side-nav__main-navigation">
@@ -187,7 +190,6 @@ Use this when there is more than one level of hierarchy in the left navigation. 
 <br>
 
 ## Side navigation with multiple levels - compact mode
-
 In compact mode the dimensions of the controls are reduced, allowing more information to be displayed. This mode is suggested for devices operated by mouse and keyboard.
 
 {% capture default %}
@@ -302,6 +304,7 @@ In compact mode the dimensions of the controls are reduced, allowing more inform
 
 ## Side navigation with icons - cozy mode
 The entries in the side navigation consist of an icon with text. The use or non-use of icons must be consistent for all links on one level (avoid mixing entries with and without icons on the same level). The use of icons on the second level is not recommended. 
+
 {% capture default %}
 <nav class="fd-side-nav has-icons">
     <div class="fd-side-nav__main-navigation">
