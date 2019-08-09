@@ -1,19 +1,20 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
 {% from "./component.njk" import menu %}
+{% from "./component.njk" import menuWithAllHeadlines %}
 {% from "../icon/component.njk" import icon %}
 
 {% block content %}
-<h2>default</h2>
-{% set example %}
-{{ menu(properties=data.properties) }}
-{% endset %}
-{{ format(example) }}
+  <h2>default</h2>
+  {% set example %}
+  {{ menu(properties=data.properties) }}
+  {% endset %}
+  {{ format(example) }}
 
-<br /><br /><br />
-<h2>grouped</h2>
-{% set example %}
-{{ menu(properties={
+  <br/><br/><br/>
+  <h2>grouped</h2>
+  {% set example %}
+  {{ menu(properties={
   items: [
       { "label": "Option 1" },
       { "label": "Option 2"},
@@ -28,13 +29,13 @@
     ]
   })
 }}
-{% endset %}
-{{ format(example) }}
+  {% endset %}
+  {{ format(example) }}
 
-<br /><br /><br />
-<h1>menu list with separators</h1>
-{% set example %}
-{{ menu(properties={
+  <br/><br/><br/>
+  <h2>menu list with separators</h2>
+  {% set example %}
+  {{ menu(properties={
   items: [
       { "label": "Option 1" },
       { "label": "Option 2"},
@@ -44,13 +45,13 @@
     separator: true
   })
 }}
-{% endset %}
-{{ format(example) }}
+  {% endset %}
+  {{ format(example) }}
 
-<br /><br /><br />
-<h2>separated and grouped</h2>
-{% set example %}
-{{ menu(properties={
+  <br/><br/><br/>
+  <h2>separated and grouped</h2>
+  {% set example %}
+  {{ menu(properties={
   items: [
       {
         "label": "Group Header",
@@ -72,13 +73,13 @@
     separator: true
   })
 }}
-{% endset %}
-{{ format(example) }}
+  {% endset %}
+  {{ format(example) }}
 
-<br /><br /><br />
-<h1>menu with icons</h1>
-{% set example %}
-{{ menu(properties={
+  <br/><br/><br/>
+  <h2>menu with icons</h2>
+  {% set example %}
+  {{ menu(properties={
             items: [
               { "label": "Option 1", "icon": "accept" },
               { "label": "Option 2", "icon": "cart" },
@@ -90,7 +91,24 @@
         },
         modifier=["addon-before"])
 }}
-{% endset %}
-{{ format(example) }}
+  {% endset %}
+  {{ format(example) }}
 
+  <br/><br/><br/>
+  <h2>menu with headlines</h2>
+  {% set example %}
+  {{ menuWithAllHeadlines(properties={
+            items: [
+              { "label": "Option 1", "icon": "accept", "class": "is-disabled" },
+              { "label": "Option 2", "icon": "cart" },
+              { "label": "Option 3", "icon": "windows-doors", "class": "is-disabled" },
+              { "label": "Option 4", "icon": "past" }
+            ],
+            addon_before: true,
+            separator: true
+        },
+        modifier=["addon-before"])
+}}
+  {% endset %}
+  {{ format(example) }}
 {% endblock %}
