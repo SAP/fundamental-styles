@@ -9,13 +9,18 @@
 <style media="screen">
     .fd-popover{ margin-left: 100px; margin-right: 100px;}
 
+    .sample-control {
+      padding: 10px;
+      margin: 0;
+      border: 1px solid black;
+      background: #ccc;
+      font-size: 14px;
+    }
     .sample-content {
-    font-family: Arial;
-    color: black;
-    font-size: 14px;
-    margin: 0;
-    border: 0;
-    padding: 0 4px;
+      font-size: 14px;
+      margin: 0;
+      border: 0;
+      padding: 10px;
     }
 </style>
 
@@ -29,7 +34,9 @@
 {%- set _id7 = utils.id() %}
 
 {%- macro sample_control(properties={}) -%}
-  <span aria-controls="{{ properties.id }}" aria-expanded="false" aria-haspopup="true"{{ " disabled" if state.disabled }}{{ aria | aria }}>Click Here</span>
+  <span class="fd-popover__control" aria-controls="{{ properties.id }}" aria-expanded="false" aria-haspopup="true"{{ " disabled" if state.disabled }}{{ aria | aria }}>
+    <button class="sample-control">Click Here</button>
+  </span>
 {%- endmacro %}
 
 <h2>popover with menu default </h2>
