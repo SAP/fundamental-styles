@@ -17,16 +17,16 @@ mergeable:
       - do: approvals
         min:
           count: 2
-        or: 
-          - required:
-              reviewers: [ 'InnaAtanasova' ] 
-          - required:
-              reviewers: [ 'droshev' ]  
-          - required:
-              reviewers: [ 'jbadan' ]  
-          - required:
-              reviewers: [ 'greg-a-smith' ]  
-          - required:
-              reviewers: [ 'bcullman' ]  
-          - required:
-              reviewers: [ 'hertweckhr1' ]  
+          or: 
+            - required:
+                reviewers: [ 'InnaAtanasova' ] 
+            - required:
+                reviewers: [ 'droshev' ]  
+            - required:
+                reviewers: [ 'jbadan' ]  
+            - required:
+                reviewers: [ 'greg-a-smith' ]  
+            - required:
+                reviewers: [ 'bcullman' ]  
+            - required:
+                reviewers: [ 'hertweckhr1' ]  
