@@ -2,15 +2,15 @@
 @import "./../mixins";
 @import "./../functions";
 
+
 /*!
 .fd-tile+()
-  .fd-tile__media+()
-  .fd-tile__content+()
-  .fd-tile__title+()
-  .fd-tile__actions+()
+        .fd-tile__media+()
+        .fd-tile__content+()
+        .fd-tile__title+()
+        .fd-tile__actions+()
 */
 $block: #{$fd-namespace}-tile;
-
 .#{$block} {
   //VARS
   $fd-tile-color: fd-color("text",3) !default;
@@ -22,15 +22,17 @@ $block: #{$fd-namespace}-tile;
   $fd-tile-box-shadow: 0 0 5px 0 rgba($fd-tile-color, 0.4) !default;
   //anim
   $fd-tile-transition-params: $fd-animation--speed ease-in !default;
-
   --fd-tile-color: var(--fd-color-text-3);
   --fd-tile-background-color: var(--fd-color-background-2);
   --fd-tile-title-color: var(--fd-color-text-1);
-
   @include fd-reset();
   display: flex;
   @include fd-var-color("color", $fd-tile-color, --fd-tile-color);
   @include fd-var-color("background-color", $fd-tile-background-color, --fd-tile-background-color);
+
+  &__text {
+    @include fd-reset();
+  }
 
   //MODIFICATIONS
   &--button,
@@ -44,7 +46,6 @@ $block: #{$fd-namespace}-tile;
     }
   }
   //STATES
-  &[aria-disabled="true"],
   &.is-disabled {
     opacity: 0.4;
   }
@@ -75,7 +76,7 @@ $block: #{$fd-namespace}-tile;
   &__title {
     @include fd-type("0");
     @include fd-var-color("color", $fd-tile-title-color, --fd-tile-title-color);
-    margin-bottom: 0;
+    @include fd-reset-spacing();
   }
   &__actions {
     padding: fd-space(3) $fd-tile-content-padding-x fd-space(3) fd-space(3);
