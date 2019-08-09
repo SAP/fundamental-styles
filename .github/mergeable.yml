@@ -15,18 +15,18 @@ mergeable:
           regex: \[ \]
           message: There are incomplete TODO task(s) unchecked.
       - do: approvals
-        min:
-          count: 2
-          or: 
-            - required:
-                reviewers: [ 'InnaAtanasova' ] 
-            - required:
-                reviewers: [ 'droshev' ]  
-            - required:
-                reviewers: [ 'jbadan' ]  
-            - required:
-                reviewers: [ 'greg-a-smith' ]  
-            - required:
-                reviewers: [ 'bcullman' ]  
-            - required:
-                reviewers: [ 'hertweckhr1' ]  
+        or: 
+          min:
+            count: 1
+          - required:
+              reviewers: [ 'InnaAtanasova' ] 
+          - required:
+              reviewers: [ 'droshev' ]  
+          - required:
+              reviewers: [ 'jbadan' ]  
+          - required:
+              reviewers: [ 'greg-a-smith' ]  
+          - required:
+              reviewers: [ 'bcullman' ]  
+          - required:
+              reviewers: [ 'hertweckhr1' ]  
