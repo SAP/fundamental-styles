@@ -1,42 +1,35 @@
 {% extends "layout.njk" %}
-{% from "./component.njk" import counter %}
 {% from "./../format.njk" import format %}
 
 {% block content %}
-<div>
+    <div>
 
-    <h2>default</h2>
-    <p>Show nothing when 0, max is 999</p>
-    <br>
-    {% set single_counter %}
-{{ counter(count=0, modifier="") }}
-{{ counter(count=5, modifier="") }}
-{{ counter(count=25, modifier="") }}
-{{ counter(count=101, modifier="") }}
-{{ counter(count=4001, modifier="") }}
+        <h2>default</h2>
+        <br/>
+        {% set single_counter %}
+        <span class="fd-counter" aria-label="Unread count">5</span>
+        <span class="fd-counter" aria-label="Unread count">25</span>
+        <span class="fd-counter" aria-label="Unread count">101</span>
+        <span class="fd-counter" aria-label="Unread count">4001</span>
+        <span class="fd-counter" aria-label="Unread count">9999+</span>
+        {% endset %}
+        {{ format(single_counter) }}
+    </div>
+
+    <br><br>
+    <h2>notification</h2>
+
+    {% set example %}
+    <p>Read<span class="fd-counter" arial-label="Unread count">1</span></p>
+    <br/>
+    <button aria-label="Notifications">Open<span class="fd-counter fd-counter--notification" arial-label="Unread count">24</span></button>
+    <br/><br/>
+    <button aria-label="Notifications">Check<span class="fd-counter" arial-label="Unread count">300</span></button>
+    <br/><br/>
+    <a aria-label="Notifications">close<span class="fd-counter" arial-label="Unread count">6000</span></a>
+    <br/><br/>
+    <span class="sap-icon--bell"><span class="fd-counter fd-counter--notification" arial-label="Unread count">24</span></span>
     {% endset %}
-    {{ format(single_counter) }}
-</div>
-
-<br><br>
-<h2>notification</h2>
-
-
-{% set example %}
-<button class="counter-button_pgd sap-icon--bell" aria-label="Notifications">{{ counter(count=1,modifier="notification") }}</button>
-
-<button class="counter-button_pgd sap-icon--bell" aria-label="Notifications">{{ counter(count=20,modifier="notification") }}</button>
-
-<button class="counter-button_pgd sap-icon--bell" aria-label="Notifications">{{ counter(count=300,modifier="notification") }}</button>
-
-<button class="counter-button_pgd sap-icon--bell" aria-label="Notifications">{{ counter(count=6000,modifier="notification") }}</button>
-
-<ul class="counter-list_pgd">
-    <li class="counter-list-item_pgd"><div class="counter-list-item-before_pgd"><span class="sap-icon--bell"></span>{{ counter(count=5,modifier="notification",aria={ label: "Unread count"}) }}</div>Option 2</li>
-</ul>
-
-{% endset %}
-{{ format(example) }}
-<br><br>
+    {{ format(example) }}
 
 {% endblock %}

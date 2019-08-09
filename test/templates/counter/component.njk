@@ -3,18 +3,17 @@
     count: 1,
     modifier: ["notification"],
     aria: {
-      label: "Unread count"
+        label: "Unread count"
     }
-  }
-%}
+} %}
 {% macro counter(count=defaults.count, modifier=defaults.modifier, state={}, aria=defaults.aria, classes=[]) -%}
-    {%- set limit = 999 %}
+    {%- set limit = 9999 %}
     {%- if count > limit %}
         {%- set _count = limit + "+" %}
     {%- else %}
         {%- set _count = count %}
     {%- endif %}
     {%- if count !== 0 %}
-<span class="fd-counter{{ modifier | modifier('counter') }}{{ classes | classes }}"{{aria | aria}}>{{ _count }}</span>
+        <span class="fd-counter{{ modifier | modifier('counter') }}{{ classes | classes }}" {{aria | aria}}>{{ _count }}</span>
     {%- endif %}
 {%- endmacro %}
