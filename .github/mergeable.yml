@@ -17,7 +17,7 @@ mergeable:
       - do: approvals
         or: 
           min:
-            count: 1
+            count: 2
           - required:
               reviewers: [ 'InnaAtanasova' ] 
           - required:
