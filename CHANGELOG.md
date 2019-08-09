@@ -2,6 +2,61 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.54"></a>
+# [0.2.0-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.53...v0.2.0-rc.54) (2019-08-09)
+
+
+### Bug Fixes
+
+* added self-contained style for tile component ([#159](https://github.com/SAP/fundamental-styles/issues/159)) ([8fee047](https://github.com/SAP/fundamental-styles/commit/8fee047))
+
+
+
+<a name="0.2.0-rc.53"></a>
+# [0.2.0-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.52...v0.2.0-rc.53) (2019-08-06)
+
+
+
+<a name="0.2.0-rc.52"></a>
+# [0.2.0-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.51...v0.2.0-rc.52) (2019-08-06)
+
+
+
+<a name="0.2.0-rc.51"></a>
+# [0.2.0-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.50...v0.2.0-rc.51) (2019-08-06)
+
+
+
+<a name="0.2.0-rc.50"></a>
+# [0.2.0-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.49...v0.2.0-rc.50) (2019-08-05)
+
+
+
+<a name="0.2.0-rc.49"></a>
+# [0.2.0-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.48...v0.2.0-rc.49) (2019-07-30)
+
+
+
+<a name="0.2.0-rc.48"></a>
+# [0.2.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.47...v0.2.0-rc.48) (2019-07-29)
+
+
+### Bug Fixes
+
+* update slack readme link ([#214](https://github.com/SAP/fundamental-styles/issues/214)) ([701e638](https://github.com/SAP/fundamental-styles/commit/701e638))
+
+
+
+<a name="0.2.0-rc.47"></a>
+# [0.2.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.46...v0.2.0-rc.47) (2019-07-25)
+
+
+### Bug Fixes
+
+* replace button: --secendary with --light ([#206](https://github.com/SAP/fundamental-styles/issues/206)) ([89c8b25](https://github.com/SAP/fundamental-styles/commit/89c8b25))
+
+
+
 <a name="0.2.0-rc.46"></a>
 # [0.2.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.45...v0.2.0-rc.46) (2019-07-23)
 
