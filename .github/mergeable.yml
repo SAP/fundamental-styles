@@ -15,9 +15,7 @@ mergeable:
           regex: \[ \]
           message: There are incomplete TODO task(s) unchecked.
       - do: approvals
-        or: 
-          min:
-            count: 2
+        or:
           - required:
               reviewers: [ 'InnaAtanasova' ] 
           - required:
@@ -29,4 +27,6 @@ mergeable:
           - required:
               reviewers: [ 'bcullman' ]  
           - required:
-              reviewers: [ 'hertweckhr1' ]  
+              reviewers: [ 'hertweckhr1' ]
+          min:
+            count: 2
