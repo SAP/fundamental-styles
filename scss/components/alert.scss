@@ -15,15 +15,15 @@ $block: #{$fd-namespace}-alert;
     $fd-alert-padding-status: 2.5rem;
 
     @mixin fd-alert-icon-container {
-      position: absolute; 
-      width: 2.5rem; 
+      position: absolute;
+      width: 2.5rem;
       top: 0.6rem;
       left: 0;
     }
 
     @mixin fd-alert-close-btn-container {
-      position: absolute; 
-      width: 2.5rem; 
+      position: absolute;
+      width: 2.5rem;
       height: 2.5rem;
       top: 0;
       right: 0;
@@ -48,7 +48,7 @@ $block: #{$fd-namespace}-alert;
     // NEUTRAL
     $fd-alert-background-color: var(--sapNeutralBackground, $sapNeutralBackground) !default;
     $fd-alert-border-color: var(--sapNeutralBorderColor, $sapNeutralBorderColor) !default;
-    
+
     // ---------------------------------------------------------------------------
 
     // Block
@@ -96,9 +96,9 @@ $block: #{$fd-namespace}-alert;
       &::after {
         @include fd-alert-icon-container();
       }
-     
+
       padding-left: $fd-alert-padding-status;
-      
+
       @include fd-rtl() {
         padding-right: $fd-alert-padding-status;
         padding-left: $fd-alert-padding-default;
