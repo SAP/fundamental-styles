@@ -19,11 +19,12 @@ tile:
   {%- endif %}
 
   {%- if properties.description %}
-  <p>{{ properties.description }}</p>
+  <p class="fd-tile__text">{{ properties.description }}</p>
   {%- endif %}
   {{- caller() }}
 </div>
 {%- endmacro %}
+
 
 {%- macro tile_media(properties={}, modifier=[], aria={}, classes=[]) %}
 <div class="fd-tile__media">
