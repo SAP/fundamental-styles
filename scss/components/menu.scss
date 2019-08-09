@@ -51,6 +51,9 @@ $block: #{$fd-namespace}-menu;
     }
     &__list {
       @include fd-reset();
+      & > * {
+        @include fd-reset();
+      }
       margin: 0;
       padding: 0;
       list-style: none;
@@ -127,13 +130,10 @@ $block: #{$fd-namespace}-menu;
           float: right;
           clear: right;
         }
-        height: 39px;
+        height: 39px;//TODO get rid of hardcoded height
         display: flex;
         justify-content: center;
         align-items: center;
         width: 30px;
-    }
-    &__list-item {
-      @include fd-reset();
     }
 }

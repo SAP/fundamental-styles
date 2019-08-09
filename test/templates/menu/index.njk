@@ -4,46 +4,13 @@
 {% from "../icon/component.njk" import icon %}
 
 {% block content %}
-
-
-{#
-<h1>** Test with non-UL and LI content **</h1>
-<nav class="fd-menu">
-  <div class="fd-menu__list fd-menu__list--separated">
-    <a href="#" class="fd-menu__item">Option 1</a>
-    <a href="#" class="fd-menu__item">Option 2</a>
-    <a href="#" class="fd-menu__item">Option 3</a>
-    <a href="#" class="fd-menu__item">Option 4</a>
-  </div>
-</nav>
-<br>
-<h1>** Test with nested UL **</h1>
-<nav class="fd-menu">
-  <ul class="fd-menu__list fd-menu__list--separated">
-    <li class="fd-menu__item">Option 1</li>
-    <li class="fd-menu__item">Option 2</li>
-    <li class="fd-menu__item">Option 3</li>
-    <li class="fd-menu__group">
-      <h1 class="fd-menu__title">Group Header</h1>
-      <ul class="fd-menu__list">
-        <li class="fd-menu__item">Option 3</li>
-        <li class="fd-menu__item">Option 3</li>
-        <li class="fd-menu__item">Option 3</li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-#}
-
 <h2>default</h2>
-
 {% set example %}
 {{ menu(properties=data.properties) }}
 {% endset %}
 {{ format(example) }}
 
-<br><br><br>
-
+<br /><br /><br />
 <h2>grouped</h2>
 {% set example %}
 {{ menu(properties={
@@ -64,100 +31,7 @@
 {% endset %}
 {{ format(example) }}
 
-<br><br><br>
-
-<h2>grouped with H2 headers</h2>
-{% set example %}
-{{ menu(properties={
-  items: [
-      { "label": "Option 1" },
-      { "label": "Option 2"},
-      { "label": "Option 3" },
-      {  "label": "Group Header",
-        "header_size": "h2",
-        "items": [
-            { "label": "Option 4" },
-            { "label": "Option 5" },
-            { "label": "Option 6" }
-        ]
-      }
-    ]
-  })
-}}
-{% endset %}
-{{ format(example) }}
-
-<br><br><br>
-
-<h2>grouped with H4 headers</h2>
-{% set example %}
-{{ menu(properties={
-  items: [
-      { "label": "Option 1" },
-      { "label": "Option 2"},
-      { "label": "Option 3" },
-      {  "label": "Group Header",
-        "header_size": "h4",
-        "items": [
-            { "label": "Option 4" },
-            { "label": "Option 5" },
-            { "label": "Option 6" }
-        ]
-      }
-    ]
-  })
-}}
-{% endset %}
-{{ format(example) }}
-
-<br><br><br>
-
-<h2>grouped with H5 headers</h2>
-{% set example %}
-{{ menu(properties={
-  items: [
-      { "label": "Option 1" },
-      { "label": "Option 2"},
-      { "label": "Option 3" },
-      {  "label": "Group Header",
-        "header_size": "h5",
-        "items": [
-            { "label": "Option 4" },
-            { "label": "Option 5" },
-            { "label": "Option 6" }
-        ]
-      }
-    ]
-  })
-}}
-{% endset %}
-{{ format(example) }}
-
-<br><br><br>
-
-<h2>grouped with H6 headers</h2>
-{% set example %}
-{{ menu(properties={
-  items: [
-      { "label": "Option 1" },
-      { "label": "Option 2"},
-      { "label": "Option 3" },
-      {  "label": "Group Header",
-        "header_size": "h6",
-        "items": [
-            { "label": "Option 4" },
-            { "label": "Option 5" },
-            { "label": "Option 6" }
-        ]
-      }
-    ]
-  })
-}}
-{% endset %}
-{{ format(example) }}
-
-<br><br><br>
-
+<br /><br /><br />
 <h1>menu list with separators</h1>
 {% set example %}
 {{ menu(properties={
@@ -173,8 +47,7 @@
 {% endset %}
 {{ format(example) }}
 
-<br><br><br>
-
+<br /><br /><br />
 <h2>separated and grouped</h2>
 {% set example %}
 {{ menu(properties={
@@ -202,8 +75,7 @@
 {% endset %}
 {{ format(example) }}
 
-
-
+<br /><br /><br />
 <h1>menu with icons</h1>
 {% set example %}
 {{ menu(properties={
@@ -213,13 +85,10 @@
               { "label": "Option 3", "icon": "windows-doors" },
               { "label": "Option 4", "icon": "past" }
             ],
-            addon_before: true
+            addon_before: true,
+            separator: true
         },
-        modifier=["addon-before"]
-
-        )
-
-
+        modifier=["addon-before"])
 }}
 {% endset %}
 {{ format(example) }}
