@@ -28,5 +28,5 @@ mergeable:
               reviewers: [ 'bcullman' ]  
           - required:
               reviewers: [ 'hertweckhr1' ]
-          min:
-            count: 2
+          - min:
+              count: 2
