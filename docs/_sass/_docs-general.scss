@@ -1,6 +1,7 @@
 body {
     font-family: '72', sans-serif;
     background-color: fd-color(background, 2);
+    overflow: hidden;
 }
 
 a, a:visited {
@@ -20,6 +21,11 @@ hr {
     clear: both;
 }
 
+.doc-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
 
 .highlight {
     max-width: 1440px;
@@ -112,12 +118,14 @@ pre {
     margin-left: 0;
     width: 100%;
     display: flex;
-    min-height: calc(100vh - 87px - 89px);
     @include media("<=tablet") {
         display: inline;
     }
 }
 
+.docs-headers-h2 {
+    flex-shrink: 0;
+}
 
 .docs-landing-page {
     width: 100%;
