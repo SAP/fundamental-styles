@@ -1,11 +1,17 @@
 {% extends "layout.njk" %}
 {% from "./component.njk" import list_group %}
-{% from "../form/component.njk" import form_item %}
-{% from "../button/component.njk" import button %}
-{% from "../icon/component.njk" import icon %}
 {% from "./../format.njk" import format %}
 
 {% block content %}
+<style>
+
+.test-pg__checkbox{
+    width: 15px;
+    height: 15px;
+    border: 1px solid magenta;
+    border-radius: 2px;
+}
+</style>
 
 <h2>default</h2>
 {% set example %}
@@ -13,19 +19,19 @@
 {% endset %}
 {{ format(example) }}
 
-<br><br>
+<br /><br />
 <h2>with actions</h2>
 {% set example %}
 {{ list_group(data.properties) }}
 {% endset %}
 {{ format(example) }}
 
-<br><br>
+<br /><br />
 <h2>with checkboxes</h2>
 {% set example %}
 {{  list_group(
       properties={
-          items: [form_item("checkbox",{ label: "List item 1" }),form_item("checkbox",{ label: "List item 2 sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" }),form_item("checkbox",{ label: "List item 3" })]
+          items: ["<div class='test-pg__checkbox'></div>I have a bike","<div class='test-pg__checkbox'></div>I have a motobike","<div class='test-pg__checkbox'></div>I have a car"]
       })
 }}
 {% endset %}

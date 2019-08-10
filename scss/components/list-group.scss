@@ -21,6 +21,7 @@ $block: #{$fd-namespace}-list-group;
   @include fd-reset();
   margin-left: 0;
   &__item {
+    @include fd-reset();
     list-style: none;
     padding: $fd-list-group-item-padding-y $fd-list-group-item-padding-x;
     display: flex;
@@ -29,7 +30,7 @@ $block: #{$fd-namespace}-list-group;
     transition: background-color $fd-list-group-transition-params;
     &:hover {
       --fd-list-group-background-color: var(--fd-color-background-hover);
-      @include fd-var-color("background-color", $fd-list-group-background-color--hover);
+      @include fd-var-color("background-color", $fd-list-group-background-color--hover, --fd-color-background-hover);
     }
   }
   &__action {
