@@ -85,12 +85,14 @@ $block: #{$fd-namespace}-action-bar;
         }
     }
     &__title {
+        @include fd-reset();
         @include fd-type("4");
         @include fd-action-bar-responsive();
         margin-bottom: fd-space(base);
     }
 
     &__description {
+        @include fd-reset();
         @include fd-var-color("color", $fd-action-bar-description-color, --fd-color-text-3);
         @include fd-type("0");
         @include fd-hide-on-mobile();
@@ -107,8 +109,7 @@ $block: #{$fd-namespace}-action-bar;
             opacity: 0;
             visibility: hidden;
         }
-        & > *,
-        & > button {
+        & > * {
           margin-left: fd-space(2);
           &:first-child {
             margin-left: 0;
