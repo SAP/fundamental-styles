@@ -2,8 +2,8 @@
 @import "./../mixins";
 @import "./../icons/mixins";
 
+@import "./../../node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/css_variables";
 @import "./../../node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/sass_variables.scss";
-@import "./../../node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/css_variables.css";
 
 $block: #{$fd-namespace}-alert;
 .#{$block} {
