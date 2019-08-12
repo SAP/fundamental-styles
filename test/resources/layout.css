@@ -1,7 +1,5 @@
 body {
     padding: 20px;
-    background-color: rgb(243, 244, 245);
-    transition: background-color .25s;
 }
 .test-label {
     margin-right: 20px;
@@ -59,14 +57,4 @@ textarea.test-textarea {
 
 .status {
     margin-top: 10px;
-}
-
-.placeholder-button {
-    height: 28px;
-    min-width: 28px;
-    line-height: 26px;
-    color: black;
-    background-color: grey;
-    padding: 0 12px;
-    border: 1px solid black;
 }
