@@ -1,7 +1,5 @@
 body {
     padding: 20px;
-    background-color: rgb(243, 244, 245);
-    transition: background-color .25s;
 }
 .test-label {
     margin-right: 20px;

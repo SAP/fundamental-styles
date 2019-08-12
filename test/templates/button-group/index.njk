@@ -1,7 +1,7 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "../button/component.njk" import button %}
 {% from "./component.njk" import button_group %}
+
 
 {% block content %}
 <style media="screen">
@@ -9,118 +9,22 @@
     margin-bottom: 10px;
   }
 </style>
+
 <h2>default</h2>
 
-
-    {% for size in ["","compact"] %}
-      {%- set modifier = { block: [size] } %}
-      {%- if size == "default" %}
-        {%- set modifier = { block: [] } %}
-      {%- endif %}
-<h2> {{size}}</h2>
-
 {% set example %}
-
-  {% call button_group() -%}
-    {{-  button(
-      { icon: 'survey' },
-        modifier={ block: [size] },
-        aria={ label: 'Survey' })
-      }}
-    {{-  button(
-        { icon: 'pie-chart' },
-          modifier={ block: [size] },
-          aria={ label: 'Chart', selected: true })
-        }}
-    {{-  button(
-          { icon: 'pool' },
-            modifier={ block: [size] },
-            aria={ label: 'Pool' })
-          }}
-  {%- endcall %}
-
-  {% call button_group() -%}
-    {{-  button(
-      { label: 'First' },
-        modifier={ block: [size] },
-        aria={ selected: true })
-      }}
-    {{-  button(
-        { label: 'Second' },
-          modifier={ block: [size] },
-          aria={ })
-        }}
-    {{-  button(
-          { label: 'Third' },
-            modifier={ block: [size] },
-            aria={ })
-          }}
-  {%- endcall %}
-
-
-    {% endset %}
-    {{ format(example) }}
-
-
-    {% endfor %}
-
-<h2> disabled </h2>
-
-{% set example %}
-
-  {% call button_group() -%}
-    {{-  button(
-      { icon: 'survey' },
-      disabled = true,
-        modifier={ block: [""] },
-        aria={ label: 'Survey' })
-      }}
-    {{-  button(
-        { icon: 'pie-chart' },
-          modifier={ block: [""] },
-          aria={ label: 'Chart' })
-        }}
-    {{-  button(
-          { icon: 'pool' },
-            modifier={ block: [""] },
-            aria={ label: 'Pool' })
-          }}
-  {%- endcall %}
 
     {% call button_group() -%}
-    {{-  button(
-      { label: 'First' },
-        modifier={ block: ["compact"] },
-        aria={ })
-      }}
-    {{-  button(
-        { label: 'Second' },
-        disabled = true,
-          modifier={ block: ["compact"] },
-          aria={ })
-        }}
-    {{-  button(
-          { label: 'Third' },
-            modifier={ block: ["compact"] })
-          }}
+     <button class="btn-playground">First</button>
+     <button class="btn-playground">Second</button>
+     <button class="btn-playground">Third</button>
   {%- endcall %}
 
   {% call button_group() -%}
-    {{-  button(
-      { label: 'First' },
-        modifier={ block: [""] },
-        aria={ })
-      }}
-    {{-  button(
-        { label: 'Second' },
-          modifier={ block: [""] },
-          aria={ })
-        }}
-    {{-  button(
-          { label: 'Third' },
-          disabled = true,
-            modifier={ block: [""] })
-          }}
+     <button class="btn-playground">First</button>
+     <button class="btn-playground">Second</button>
+     <button class="btn-playground">Third</button>
+     <button class="btn-playground">Fourth</button>
   {%- endcall %}
 
     {% endset %}
