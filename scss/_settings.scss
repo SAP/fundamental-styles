@@ -2,6 +2,9 @@
 $fd-namespace: fd !default;
 $fd-support-css-var-fallback: false !default;
 
+@import "./../node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/sass_variables.scss";
+@import "./../node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/css_variables";
+
 //————————v Fundamental Styles FOUNDATION ————————v
 
 //breakpoints

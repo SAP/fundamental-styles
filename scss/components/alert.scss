@@ -2,9 +2,6 @@
 @import "./../mixins";
 @import "./../icons/mixins";
 
-@import "./../../node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/css_variables";
-@import "./../../node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/sass_variables.scss";
-
 $block: #{$fd-namespace}-alert;
 .#{$block} {
     $fd-alert-border: 1px solid;
