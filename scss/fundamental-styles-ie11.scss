@@ -1,5 +1,6 @@
 // CUSTOM imports to create the IE11-compatible CSS
 $fd-support-css-var-fallback: true;
+@import "./../node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/css_variables";
 @import "./settings";
 @import "./fonts";
 @import "./icons";

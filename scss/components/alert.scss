@@ -4,202 +4,204 @@
 
 $block: #{$fd-namespace}-alert;
 .#{$block} {
-    $fd-alert-border: 1px solid;
-    $fd-alert-border-radius: 0.25rem;
-    $fd-alert-padding: 0.5rem 1rem;
-    $fd-alert-padding-default: 1rem;
-    $fd-alert-padding-dismissible: 2.5rem;
-    $fd-alert-padding-status: 2.5rem;
-    // temporary here
-    @mixin fd-reset_alert {
-      font-family: var(--sapFontFamily, $sapFontFamily);
-      -webkit-font-smoothing: antialiased;
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-      border: 0;
-      &::before,
-      &::after {
-          box-sizing: inherit;
-      }
+  $fd-alert-border: 1px solid;
+  $fd-alert-border-radius: 0.25rem;
+  $fd-alert-padding: 0.5rem 1rem;
+  $fd-alert-padding-default: 1rem;
+  $fd-alert-padding-dismissible: 2.5rem;
+  $fd-alert-padding-status: 2.5rem;
+  // temporary here
+  @mixin fd-reset_alert {
+    font-family: var(--sapFontFamily, $sapFontFamily);
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    &::before,
+    &::after {
+      box-sizing: inherit;
     }
+  }
 
-    @mixin fd-alert-icon-container {
-      position: absolute;
-      width: 2.5rem;
-      top: 0.6rem;
+  @mixin fd-alert-icon-container {
+    position: absolute;
+    width: 2.5rem;
+    top: 0.6rem;
+    left: 0;
+  }
+
+  @mixin fd-alert-close-btn-container {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 0;
+    right: 0;
+  }
+
+  // SUCCESS
+  $fd-alert-background-color--success: var(--sapSuccessBackground, $sapSuccessBackground) !default;
+  $fd-alert-border-color--success: var(--sapSuccessBorderColor, $sapSuccessBorderColor) !default;
+
+  // ERROR
+  $fd-alert-background-color--error: var(--sapErrorBackground, $sapErrorBackground) !default;
+  $fd-alert-border-color--error: var(--sapErrorBorderColor, $sapErrorBorderColor) !default;
+
+  // WARNING
+  $fd-alert-background-color--warning: var(--sapWarningBackground, $sapWarningBackground) !default;
+  $fd-alert-border-color--warning: var(--sapWarningBorderColor, $sapWarningBorderColor) !default;
+
+  // INFORMATION
+  $fd-alert-background-color--information: var(--sapInformationBackground, $sapInformationBackground) !default;
+  $fd-alert-border-color--information: var(--sapInformationBorderColor, $sapInformationBorderColor) !default;
+
+  // NEUTRAL
+  $fd-alert-background-color: var(--sapNeutralBackground, $sapNeutralBackground) !default;
+  $fd-alert-border-color: var(--sapNeutralBorderColor, $sapNeutralBorderColor) !default;
+
+  // ---------------------------------------------------------------------------
+
+  // Block
+  @include fd-reset_alert();
+  position: relative;
+  color: var(--sapTextColor, $sapTextColor);
+  background-color: $fd-alert-background-color;
+  border: $fd-alert-border;
+  border-color: $fd-alert-border-color;
+  border-radius: $fd-alert-border-radius;
+  padding: $fd-alert-padding;
+
+  //DEPRECATE v1.6 (brute force embedded solution to adopt new styles)
+  .sap-icon--message-error,
+  .sap-icon--message-warning,
+  .sap-icon--message-success,
+  .sap-icon--message-information {
+    display: none;
+  }
+
+  // Elements
+  &__close {
+    @include fd-alert-close-btn-container();
+    @include fd-icon("decline", "m");
+    @include fd-button-reset();
+    @include fd-focus();
+    @include fd-rtl() {
       left: 0;
+      right: auto;
+    }
+  }
+
+  // Modifiers
+  &--dismissible {
+    padding-right: $fd-alert-padding-dismissible;
+    @include fd-rtl() {
+      padding-right: $fd-alert-padding-default;
+      padding-left: $fd-alert-padding-dismissible;
+    }
+  }
+
+  &--warning,
+  &--information,
+  &--success,
+  &--error {
+    &::before,
+    &::after {
+      @include fd-alert-icon-container();
     }
 
-    @mixin fd-alert-close-btn-container {
-      position: absolute;
-      width: 2.5rem;
-      height: 2.5rem;
-      top: 0;
-      right: 0;
-    }
+    padding-left: $fd-alert-padding-status;
 
-    // SUCCESS
-    $fd-alert-background-color--success: var(--sapSuccessBackground, $sapSuccessBackground) !default;
-    $fd-alert-border-color--success: var(--sapSuccessBorderColor, $sapSuccessBorderColor) !default;
-
-    // ERROR
-    $fd-alert-background-color--error: var(--sapErrorBackground, $sapErrorBackground) !default;
-    $fd-alert-border-color--error: var(--sapErrorBorderColor, $sapErrorBorderColor) !default;
-
-    // WARNING
-    $fd-alert-background-color--warning: var(--sapWarningBackground, $sapWarningBackground) !default;
-    $fd-alert-border-color--warning: var(--sapWarningBorderColor, $sapWarningBorderColor) !default;
-
-    // INFORMATION
-    $fd-alert-background-color--information: var(--sapInformationBackground, $sapInformationBackground) !default;
-    $fd-alert-border-color--information: var(--sapInformationBorderColor, $sapInformationBorderColor) !default;
-
-    // NEUTRAL
-    $fd-alert-background-color: var(--sapNeutralBackground, $sapNeutralBackground) !default;
-    $fd-alert-border-color: var(--sapNeutralBorderColor, $sapNeutralBorderColor) !default;
-
-    // ---------------------------------------------------------------------------
-
-    // Block
-    @include fd-reset_alert();
-    position: relative;
-    color: var(--sapTextColor, $sapTextColor);
-    background-color: $fd-alert-background-color;
-    border: $fd-alert-border;
-    border-color: $fd-alert-border-color;
-    border-radius: $fd-alert-border-radius;
-    padding: $fd-alert-padding;
-
-
-    //DEPRECATE v1.6 (brute force embedded solution to adopt new styles)
-    .sap-icon--message-error, .sap-icon--message-warning, .sap-icon--message-success, .sap-icon--message-information {
-      display: none;
-    }
-
-    // Elements
-    &__close {
-      @include fd-alert-close-btn-container();
-      @include fd-icon("decline", "m");
-      @include fd-button-reset();
-      @include fd-focus();
-      @include fd-rtl() {
-        left: 0;
-        right: auto;
-      }
-    }
-
-    // Modifiers
-    &--dismissible {
-      padding-right: $fd-alert-padding-dismissible;
-      @include fd-rtl() {
-        padding-right: $fd-alert-padding-default;
-        padding-left: $fd-alert-padding-dismissible;
-      }
-    }
-
-    &--warning,
-    &--information,
-    &--success,
-    &--error {
-      &::before,
-      &::after {
-        @include fd-alert-icon-container();
-      }
-
-      padding-left: $fd-alert-padding-status;
-
-      @include fd-rtl() {
-        padding-right: $fd-alert-padding-status;
-        padding-left: $fd-alert-padding-default;
-        &::before {
-          display: none;
-        }
-        &::after {
-          display: none;
-        }
-      }
-
-      &.#{$block}--dismissible {
-        padding-right: $fd-alert-padding-dismissible;
-        @include fd-rtl() {
-          padding-left: $fd-alert-padding-dismissible;
-        }
-      }
-      @include fd-rtl() {
-        @include fd-icon-base("after") {
-          position: absolute;
-          right: 0;
-        }
-      }
-    }
-
-    &--warning {
-      &::before,
-      &::after {
-        color: $fd-alert-border-color--warning;
-      }
-      background-color: $fd-alert-background-color--warning;
-      border-color: $fd-alert-border-color--warning;
-      @include fd-icon("message-warning", "m");
-      @include fd-rtl() {
-        @include fd-icon("message-warning", "m", "after");
-      }
-    }
-
-    &--error {
-      &::before,
-      &::after {
-        color: $fd-alert-border-color--error;
-      }
-      background-color: $fd-alert-background-color--error;
-      border-color: $fd-alert-border-color--error;
-      @include fd-icon("message-error", "m");
-      @include fd-rtl() {
-        @include fd-icon("message-error", "m", "after");
-      }
-    }
-
-    &--success {
-      &::before,
-      &::after {
-        color: $fd-alert-border-color--success;
-      }
-      background-color: $fd-alert-background-color--success;
-      border-color: $fd-alert-border-color--success;
-      @include fd-icon("message-success", "m");
-      @include fd-rtl() {
-        @include fd-icon("message-success", "m", "after");
-      }
-    }
-
-    &--information {
-      &::before,
-      &::after {
-        color: $fd-alert-border-color--information;
-      }
-      background-color: $fd-alert-background-color--information;
-      border-color: $fd-alert-border-color--information;
-      @include fd-icon("message-information", "m");
-      @include fd-rtl() {
-        @include fd-icon("message-information", "m", "after");
-      }
-    }
-
-    &--no-icon {
+    @include fd-rtl() {
+      padding-right: $fd-alert-padding-status;
       padding-left: $fd-alert-padding-default;
       &::before {
         display: none;
       }
-      @include fd-rtl() {
-        padding-right: $fd-alert-padding-default;
-        &::after {
-          display: none;
-        }
+      &::after {
+        display: none;
       }
     }
 
-    &__text {
-      @include fd-reset_alert();
+    &.#{$block}--dismissible {
+      padding-right: $fd-alert-padding-dismissible;
+      @include fd-rtl() {
+        padding-left: $fd-alert-padding-dismissible;
+      }
     }
+    @include fd-rtl() {
+      @include fd-icon-base("after") {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+
+  &--warning {
+    &::before,
+    &::after {
+      color: $fd-alert-border-color--warning;
+    }
+    background-color: $fd-alert-background-color--warning;
+    border-color: $fd-alert-border-color--warning;
+    @include fd-icon("message-warning", "m");
+    @include fd-rtl() {
+      @include fd-icon("message-warning", "m", "after");
+    }
+  }
+
+  &--error {
+    &::before,
+    &::after {
+      color: $fd-alert-border-color--error;
+    }
+    background-color: $fd-alert-background-color--error;
+    border-color: $fd-alert-border-color--error;
+    @include fd-icon("message-error", "m");
+    @include fd-rtl() {
+      @include fd-icon("message-error", "m", "after");
+    }
+  }
+
+  &--success {
+    &::before,
+    &::after {
+      color: $fd-alert-border-color--success;
+    }
+    background-color: $fd-alert-background-color--success;
+    border-color: $fd-alert-border-color--success;
+    @include fd-icon("message-success", "m");
+    @include fd-rtl() {
+      @include fd-icon("message-success", "m", "after");
+    }
+  }
+
+  &--information {
+    &::before,
+    &::after {
+      color: $fd-alert-border-color--information;
+    }
+    background-color: $fd-alert-background-color--information;
+    border-color: $fd-alert-border-color--information;
+    @include fd-icon("message-information", "m");
+    @include fd-rtl() {
+      @include fd-icon("message-information", "m", "after");
+    }
+  }
+
+  &--no-icon {
+    padding-left: $fd-alert-padding-default;
+    &::before {
+      display: none;
+    }
+    @include fd-rtl() {
+      padding-right: $fd-alert-padding-default;
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__text {
+    @include fd-reset_alert();
+  }
 }
