@@ -19,6 +19,15 @@
   padding: 0;
   margin: 0;
 }
+
+@mixin fd-reset-block {
+  margin-top: 0;
+  margin-bottom: $fd-margin-bottom;
+  &:last-child {
+      margin-bottom: 0;
+  }
+}
+
 @mixin fd-clearfix {
     &::after {
         content: "";
