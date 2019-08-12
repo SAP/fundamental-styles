@@ -76,10 +76,10 @@ calendar:
     {{ calendar_dates(_grid_id, properties, aria={ hidden: properties.dates.show === false } ) | indent(2) }}
     {%- endif %}
     {%- if properties.months %}
-      {{ calendar_months(_months_id, properties, aria={ hidden: not properties.months.show === true } ) }}
+      {{ calendar_months(_months_id, properties)}}
     {%- endif %}
     {%- if properties.years %}
-      {{ calendar_years(_years_id, properties, aria={ hidden: not  properties.years.show === true  } ) }}
+      {{ calendar_years(_years_id, properties) }}
     {%- endif %}
   </div>
 </div>
@@ -95,7 +95,7 @@ calendar:
   {%- endif %}
   {%- set _predate = 31 %}
   {%- set _enddate = 0 %}
-<div class="fd-calendar__dates" id="{{id}}"{{ aria | aria }}>
+<div class="fd-calendar__dates" id="{{id}}">
   <table class="fd-calendar__table"{{ { role: 'grid'} | aria }}>
     {{ calendar_header_group() }}
     <tbody class="fd-calendar__group">
@@ -134,9 +134,12 @@ calendar:
 </div>
 {%- endmacro %}
 
-{% macro calendar_months(id, properties={}, modifier={}, state={}, aria={}) -%}
+{% macro calendar_months(id, properties={}, modifier={}, state={}) -%}
+  {% if not properties.months.show === true %}
+      {% set is_hidden = 'is-hidden' %}
+  {% endif %}
   {%- set month = data.months[properties.month] %}
-  <div class="fd-calendar__months{{ state | state}}" id="{{id}}"{{ aria | aria }}>
+  <div class="fd-calendar__months{{ state | state}} {{ is_hidden }}" id="{{id}}">
     <ul class="fd-calendar__list">
     {%- for month in data.months %}
 {%- set _is_current = properties.month === loop.index0 %}
@@ -146,8 +149,11 @@ calendar:
   </ul>
   </div>
 {%- endmacro %}
-{% macro calendar_years(id, properties={}, modifier={}, state={}, aria={}) -%}
-  <div class="fd-calendar__years{{ state | state}}"{{ aria | aria }} id="{{id}}">
+{% macro calendar_years(id, properties={}, modifier={}, state={}) -%}
+  {% if not properties.years.show === true %}
+      {% set is_hidden = 'is-hidden' %}
+  {% endif %}
+  <div class="fd-calendar__years{{ state | state}} {{is_hidden}}" id="{{id}}">
     <ul class="fd-calendar__list">
       {%- for i in range(0,12) %}
       {%- set year = properties.year + loop.index0 %}
