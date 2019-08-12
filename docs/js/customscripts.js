@@ -19,7 +19,7 @@ $(document).ready(function () {
 
 });
 
-(function () {
+$(document).ready(function () {
     //dropdown
     var els = document.querySelectorAll("[aria-controls]");
     for (var i = 0; i < els.length; i++) {
@@ -192,5 +192,4 @@ $(document).ready(function () {
         }
     }
 
-
-})();
+});
