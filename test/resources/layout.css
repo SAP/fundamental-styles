@@ -60,3 +60,13 @@ textarea.test-textarea {
 .status {
     margin-top: 10px;
 }
+
+.placeholder-button {
+    height: 28px;
+    min-width: 28px;
+    line-height: 26px;
+    color: black;
+    background-color: grey;
+    padding: 0 12px;
+    border: 1px solid black;
+}

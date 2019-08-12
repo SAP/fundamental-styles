@@ -1,5 +1,4 @@
 {% import "./../utils.njk" as utils %}
-{% from "../button/component.njk" import button %}
 <!--
 calendar:
     properties={},
@@ -161,44 +160,19 @@ calendar:
 {%- endmacro %}
 
 {% macro calendar_header(ids={},properties={}, modifier={}, state={}, aria={}) -%}
-  {%- set month = data.months[properties.month] %}
-  {%- set year = properties.year %}
   <header class="fd-calendar__header{{ state | state}}"{{ aria | aria }}>
     <div class="fd-calendar__navigation">
       <div class="fd-calendar__action">
-        {{  button(
-          {
-            icon: 'slim-arrow-left' },
-                modifier={ block: ['standard','light','compact'] },
-                aria={ label: 'Previous', disabled: properties.dates.disablePast })
-        }}
+        <button class="placeholder-button"><</button>
       </div>
       <div class="fd-calendar__action">
-        {{  button(
-            { label: month.name },
-            modifier={ block: ['light','compact'] },
-            aria={ selected: properties.months.show === true, expanded: properties.months.show === true,  controls: ids.months }
-
-          )
-        }}
+        <button class="placeholder-button">XXXX</button>
       </div>
       <div class="fd-calendar__action">
-        {{  button(
-          {
-            label: year },
-            modifier={ block: ['light','compact']
-          },
-          aria={ selected: properties.years.show === true, expanded: properties.years.show === true, controls: ids.years }
-          )
-        }}
+        <button class="placeholder-button">XXXX</button>
       </div>
       <div class="fd-calendar__action">
-        {{ button(
-          {
-            icon: 'slim-arrow-right' },
-                modifier={ block: ['standard','light','compact'] },
-                aria={ label: 'Next' })
-        }}
+        <button class="placeholder-button">></button>
       </div>
     </div>
   </header>
