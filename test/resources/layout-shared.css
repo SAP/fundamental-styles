@@ -1,29 +1,35 @@
 body {
-    background-color: rgb(243, 244, 245);
-    transition: background-color .25s;
+  background-color: rgb(243, 244, 245);
+  transition: background-color 0.25s;
 }
 
 .btn-playground {
-    border: 1px solid black;
-    border-radius: 4px;
-    padding: 10px;
-    background: beige;
-    font-size: 14px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  background: beige;
+  font-size: 14px;
 }
 
 .panel-playground {
-    border: 1px solid navy;
-    border-radius: 4px;
-    padding: 10px;
-    background: gold;
-    font-size: 14px;
-    box-shadow: 0 5px 20px 0 blue;
+  border: 1px solid navy;
+  border-radius: 4px;
+  padding: 10px;
+  background: gold;
+  font-size: 14px;
+  box-shadow: 0 5px 20px 0 blue;
 }
 
 .input-playground {
-    width: 250px;
-    background: beige;
-    padding: 10px;
-    font-size: 14px;
+  width: 250px;
+  background: beige;
+  padding: 10px;
+  font-size: 14px;
 }
 
+.test-pg__checkbox {
+  width: 15px;
+  height: 15px;
+  border: 1px solid magenta;
+  border-radius: 2px;
+}
