@@ -1,23 +1,17 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
 {% from "./component.njk" import panel_grid %}
-{% from "./../panel/component.njk" import panel, panel_header, panel_actions, panel_filters, panel_body, panel_footer %}
 
 {% set panel_item %}
-{% call panel() -%}
-    {% call panel_body() -%}
-      <p>.fd-panel</p>
-    {%- endcall %}
-{%- endcall %}
+    <div class="panel-playground">.fd-flannel</div>
+{% endset %}
+{% set panel_body %}
+    <div class="panel-body-playground">.fd-flannel</div>
 {% endset %}
 
 
 {% set panel_item_span %}
-{% call panel(classes="has-grid-column-span-2") -%}
-    {% call panel_body() -%}
-      <p>.fd-panel</p>
-    {%- endcall %}
-{%- endcall %}
+    <div class="panel-playground has-grid-column-span-2">.fd-flannel</div>
 {% endset %}
 
 {% block content %}
