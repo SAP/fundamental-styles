@@ -44,4 +44,4 @@
 {% endmacro %}
 
 {% macro pageLink(page=0, selected=false) %}
-<a href="#" {{' aria-selected="true"' if selected}} class="fd-pagination__link">{{page}}</a>{% endmacro %}
+<a href="#" class="fd-pagination__link {{'is-selected' if selected}}">{{page}}</a>{% endmacro %}
