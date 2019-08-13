@@ -15,7 +15,7 @@ toggle:
     {%- endif -%}
 {%- endfor -%}
 <span class="fd-toggle{{ modifier.block | modifier('toggle') }}{{ classes | classes }}"{{ aria | aria }}>
-    <input type="checkbox" name="" value="" id="{{ _id }}"{{ ' disabled' if state.disabled }}{{ ' checked' if state.checked }}>
+    <input class="fd-toggle__input" type="checkbox" name="" value="" id="{{ _id }}"{{ ' disabled' if state.disabled }}{{ ' checked' if state.checked }}>
     <span class="fd-toggle__switch" role="presentation">
     {%- if properties.onLabel -%}
         <span class="fd-toggle__label--on">{{properties.onLabel}}</span>
