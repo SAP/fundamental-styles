@@ -4,7 +4,7 @@
     --fd-color-action-2: purple;
     --fd-color-action-hover: lime;
     --fd-color-action-selected: powderblue;
-    --fd-color-background-default: teal; 
+    --fd-color-background-default: teal;
     --fd-color-background-alert: lightSalmon;
     --fd-color-background-negative: tomato;
     --fd-color-background-positive: khaki;
@@ -15,6 +15,7 @@
     --fd-color-background-4: rgb(51%, 6%, 2%);
     --fd-color-background-5: rgb(13%, 71%, 90%);
     --fd-color-background-6: powderblue;
+    --fd-color-background-hover: darkblue;
     --fd-color-status-1: #333;
     --fd-color-status-2: #666;
     --fd-color-status-3: #999;
@@ -25,13 +26,11 @@
     --fd-color-positive: rgb(87%, 33%, 21%);
     --fd-color-negative: rgb(9%, 75%, 29%);
     --fd-color-alert: rgb(84%, 13%, 91%);
-
     --fd-forms-height: 50px;
     --fd-forms-height-compact: 25px;
     --fd-button-line-height: 50px;
     --fd-button-line-height-compact: 25px;
-
-    --fd-color-neutral-1: #FAFAFA;
+    --fd-color-neutral-1: rgb(117, 7, 7);
     --fd-color-neutral-2: yellow;
     --fd-color-neutral-3: green;
     --fd-color-accent-1: #bc3f8c;

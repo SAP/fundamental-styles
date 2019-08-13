@@ -3,10 +3,10 @@
 {{ content }}
 </div>
 <br><br>
-<textarea readonly class="test-textarea">{{ content | e | trim }}</textarea>
+<textarea readonly rows="10" cols="100" class="test-textarea">{{ content | e | trim }}</textarea>
 {% endmacro %}
 
 
 {% macro code() -%}
-<textarea readonly class="test-textarea">{{ caller() | trim }}</textarea>
+<textarea readonly rows="10" cols="100" class="test-textarea">{{ caller() | trim }}</textarea>
 {%- endmacro %}
