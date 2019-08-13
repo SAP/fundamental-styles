@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.59"></a>
+# [0.2.0-rc.59](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.58...v0.2.0-rc.59) (2019-08-12)
+
+
+### Bug Fixes
+
+* added self-contained style for button-group component ([#163](https://github.com/SAP/fundamental-styles/issues/163)) ([8ffa618](https://github.com/SAP/fundamental-styles/commit/8ffa618))
+
+
+
+<a name="0.2.0-rc.58"></a>
+# [0.2.0-rc.58](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.57...v0.2.0-rc.58) (2019-08-12)
+
+
+### Bug Fixes
+
+* Added self-contained style for Popover component ([#162](https://github.com/SAP/fundamental-styles/issues/162)) ([d38f8c7](https://github.com/SAP/fundamental-styles/commit/d38f8c7))
+
+
+
+<a name="0.2.0-rc.57"></a>
+# [0.2.0-rc.57](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.56...v0.2.0-rc.57) (2019-08-10)
+
+
+
+<a name="0.2.0-rc.56"></a>
+# [0.2.0-rc.56](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.55...v0.2.0-rc.56) (2019-08-09)
+
+
+
 <a name="0.2.0-rc.55"></a>
 # [0.2.0-rc.55](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.54...v0.2.0-rc.55) (2019-08-09)
 
