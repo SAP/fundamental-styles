@@ -2,22 +2,27 @@
 {% from "./../format.njk" import format %}
 
 {% block content %}
-    <div>
+    <style>
+        .pg-icon-placeholder::before {
+            border: 1px solid;
+            padding: 5px;
+            content: "i";
+        }
+    </style>
 
-        <h2>default</h2>
-        <br/>
-        {% set single_counter %}
-        <span class="fd-counter" aria-label="Unread count">5</span>
-        <span class="fd-counter" aria-label="Unread count">25</span>
-        <span class="fd-counter" aria-label="Unread count">101</span>
-        <span class="fd-counter" aria-label="Unread count">4001</span>
-        <span class="fd-counter" aria-label="Unread count">9999+</span>
-        {% endset %}
-        {{ format(single_counter) }}
-    </div>
+    <h2>default counters</h2>
+    <br/>
+    {% set single_counter %}
+    <span class="fd-counter" aria-label="Unread count">5</span>
+    <span class="fd-counter" aria-label="Unread count">25</span>
+    <span class="fd-counter" aria-label="Unread count">101</span>
+    <span class="fd-counter" aria-label="Unread count">4001</span>
+    <span class="fd-counter" aria-label="Unread count">9999+</span>
+    {% endset %}
+    {{ format(single_counter) }}
 
     <br><br>
-    <h2>notification</h2>
+    <h2>default and notification counters</h2>
 
     {% set example %}
     <p>Read<span class="fd-counter" arial-label="Unread count">1</span></p>
@@ -28,7 +33,8 @@
     <br/><br/>
     <a aria-label="Notifications">close<span class="fd-counter" arial-label="Unread count">6000</span></a>
     <br/><br/>
-    <span class="sap-icon--bell"><span class="fd-counter fd-counter--notification" arial-label="Unread count">24</span></span>
+    <span class="pg-icon-placeholder">
+        <span class="fd-counter fd-counter--notification" arial-label="Unread count">24</span></span>
     {% endset %}
     {{ format(example) }}
 
