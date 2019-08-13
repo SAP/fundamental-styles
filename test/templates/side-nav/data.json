@@ -5,82 +5,70 @@
     "css_vars": true,
     "rtl": false,
     "properties": {
-        "title": "Group Title",
-        "navgroups": [
-            {
-                "id": "",
-                "title": "Group Name",
-                "items": [
-                    {
-                        "label": "item link"
-                    },
-                    {
-                        "label": "item link",
-                        "state": {
-                            "haschild": true,
-                            "selected": true
+        "main": [
+                {
+                    "label": "item link",
+                    "icon": "home",
+                    "selected": true
+                },
+                {
+                    "label": "item link",
+                    "icon": "question-mark",
+                    "haschild": true,
+                    "items": [
+                        {
+                            "label": "Link"
                         },
-                        "items": [
-                            {
-                                "label": "Link"
-                            },
-                            {
-                                "label": "Link"
-                            },
-                            {
-                                "label": "Link"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "item link"
-                    },
-                    {
-                        "label": "item link"
-                    },
-                    {
-                        "label": "item link"
-                    }
-                ]
-            },
-            {
-                "id": "",
-                "title": "Group Name 2",
-                "items": [
-                    {
-                        "label": "item link"
-                    },
-                    {
-                        "label": "item link",
-                        "state": {
-                            "haschild": true
+                        {
+                            "label": "Link"
                         },
-                        "items": [
-                            {
-                                "label": "Link"
-                            },
-                            {
-                                "label": "Link",
-                                "state": {
-                                    "selected": true
-                                }
-                            },
-                            {
-                                "label": "Link"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "item link"
-                    },
-                    {
-                        "label": "item link"
-                    },
-                    {
-                        "label": "item link"
-                    }
-                ]
-            }
+                        {
+                            "label": "Link"
+                        }
+                    ]
+                },
+                {
+                    "label": "item link",
+                    "icon": "documents",
+                    "haschild": true,
+                    "items": [
+                        {
+                            "label": "Link"
+                        },
+                        {
+                            "label": "Link"
+                        },
+                        {
+                            "label": "Link"
+                        }
+                    ]
+                },
+                {
+                    "label": "item link",
+                    "icon": "competitor"
+                },
+                {
+                    "label": "item link",
+                    "icon": "attachment"
+                }
+        ],
+        "utility": [
+                {
+                    "label": "item link",
+                    "icon": "chain-link"
+                },
+                {
+                    "label": "item link",
+                    "icon": "compare"
+                }
         ]
+    },
+    "state": {
+        "compact": false,
+        "condensed": false
+        
+    },
+    "modifier": {
+        "hasicons": true
     }
 }

@@ -308,15 +308,11 @@
     }
 
     .fd-side-nav {
-        max-width: 250px;
+        min-height: 600px;
     }
 
     .fd-side-nav__link {
         color: inherit;
-    }
-
-    .fd-side-nav--icons {
-        max-width: 65px;
     }
 
     .fd-dropdown {

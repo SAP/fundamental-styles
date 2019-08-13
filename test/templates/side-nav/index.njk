@@ -5,390 +5,390 @@
 {% block content %}
 
 <style media="screen">
-    .fd-side-nav{
-        float: left;
-        margin: 0 30px 50px 0;
+    html {
+      font-size: initial;
+      line-height: initial;
     }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-size: initial;
+      line-height: initial;
+    }
+
+    textarea.test-textarea {
+        font-family: monospace;
+        height: 100px;
+        width: 90%;
+        padding: 10px;
+        font-size: 0.9rem;
+        border: solid 1px rgba(0,0,0,0.1)
+    }
+    
 </style>
 
-
     <!-- output the component example and the code snippet -->
+    <h2>Side navigation with icons and multiple levels - cozy state</h2>
     {% set example %}
 
         {{ side_nav(
                 properties = {
-                    "items": [
-                    { "label": "Link Item"},
-                    { "label": "Link Item" },
-                    {
-                        "label": "item link",
-                        "selected": true
-                     },
-                    { "label": "Link Item" },
-                    { "label": "Link Item" },
-                    { "label": "Link Item" },
-                    { "label": "Link Item" }
-                    ]
-                }
-            )
+                "main": [
+                        {
+                            "label": "Overview",
+                            "icon": "home",
+                            "selected": true
+                        },
+                        {
+                            "label": "Questions",
+                            "icon": "question-mark",
+                            "haschild": true,
+                            "items": [
+                                {
+                                    "label": "My Opportunities"
+                                },
+                                {
+                                    "label": "My Requests"
+                                },
+                                {
+                                    "label": "My Links"
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Documents",
+                            "icon": "documents",
+                            "haschild": true,
+                            "items": [
+                                {
+                                    "label": "Link"
+                                },
+                                {
+                                    "label": "Link"
+                                },
+                                {
+                                    "label": "Link"
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Awards",
+                            "icon": "competitor"
+                        },
+                        {
+                            "label": "Files",
+                            "icon": "attachment"
+                        }
+                ],
+                "utility": [
+                        {
+                            "label": "Legal Information",
+                            "icon": "compare"
+                        },
+                        {
+                            "label": "Useful Links",
+                            "icon": "chain-link"
+                        }
+                ]
+            },
+            state = {
+                "compact": false,
+                "condensed": false
+                
+            },
+            modifier = {
+                "hasicons": true
+            }
+          )
         }}
     {% endset %}
-    {{ format(example) }}
+    {{- format(example) -}}
 
-    <br><br><br>
-<h2>w/ group headings</h2>
-    {% set example %}
-    {{ side_nav(
-        properties = {
-          "title": "Group Title",
-          "navgroups": [
-            {
-              "title": "Group Name",
-              "items": [
-                { "label": "icon link"},
-                {
-                    "label": "item link",
-                    "haschild": true
-                 },
-                { "label": "icon link"},
-                { "label": "item link" },
-                { "label": "item link" }
-              ]
-            },
-            {
-                "title": "Group Name",
-                "items": [
-                  { "label": "item link" },
-                  {
-                      "label": "item link",
-                      "haschild": true
-                   },
-                  { "label": "item link" },
-                  { "label": "item link" },
-                  { "label": "item link" }
-              ]
-            }
-          ]
-        }
-    )}}
-    {% endset %}
-    {{ format(example) }}
-
-     <br><br><br>
-<h2>w/ H2 group headings</h2>
-    {% set example %}
-    {{ side_nav(
-        properties = {
-          "title": "Group Title",
-          "navgroups": [
-            {
-              "title": "Group Name",
-              "title_size": "h2",
-              "items": [
-                { "label": "icon link"},
-                {
-                    "label": "item link",
-                    "haschild": true
-                 },
-                { "label": "icon link"},
-                { "label": "item link" },
-                { "label": "item link" }
-              ]
-            },
-            {
-                "title": "Group Name",
-                "title_size": "h2",
-                "items": [
-                  { "label": "item link" },
-                  {
-                      "label": "item link",
-                      "haschild": true
-                   },
-                  { "label": "item link" },
-                  { "label": "item link" },
-                  { "label": "item link" }
-              ]
-            }
-          ]
-        }
-    )}}
-    {% endset %}
-    {{ format(example) }}
 
     <br><br><br>
 
-<h2>w/ H4 group headings</h2>
+    <h2>Side navigation with icons and multiple levels - compact state</h2>
     {% set example %}
-    {{ side_nav(
-        properties = {
-          "title": "Group Title",
-          "navgroups": [
-            {
-              "title": "Group Name",
-              "title_size": "h4",
-              "items": [
-                { "label": "icon link"},
-                {
-                    "label": "item link",
-                    "haschild": true
-                 },
-                { "label": "icon link"},
-                { "label": "item link" },
-                { "label": "item link" }
-              ]
-            },
-            {
-                "title": "Group Name",
-                "title_size": "h4",
-                "items": [
-                  { "label": "item link" },
-                  {
-                      "label": "item link",
-                      "haschild": true
-                   },
-                  { "label": "item link" },
-                  { "label": "item link" },
-                  { "label": "item link" }
-              ]
-            }
-          ]
-        }
-    )}}
-    {% endset %}
-    {{ format(example) }}
 
-    <br><br><br>
-
-<h2>w/ H5 group headings</h2>
-    {% set example %}
-    {{ side_nav(
-        properties = {
-          "title": "Group Title",
-          "navgroups": [
-            {
-              "title": "Group Name",
-              "title_size": "h5",
-              "items": [
-                { "label": "icon link"},
-                {
-                    "label": "item link",
-                    "haschild": true
-                 },
-                { "label": "icon link"},
-                { "label": "item link" },
-                { "label": "item link" }
-              ]
-            },
-            {
-                "title": "Group Name",
-                "title_size": "h5",
-                "items": [
-                  { "label": "item link" },
-                  {
-                      "label": "item link",
-                      "haschild": true
-                   },
-                  { "label": "item link" },
-                  { "label": "item link" },
-                  { "label": "item link" }
-              ]
-            }
-          ]
-        }
-    )}}
-    {% endset %}
-    {{ format(example) }}
-
-        <br><br><br>
-
-<h2>w/ H6 group headings</h2>
-    {% set example %}
-    {{ side_nav(
-        properties = {
-          "title": "Group Title",
-          "navgroups": [
-            {
-              "title": "Group Name",
-              "title_size": "h6",
-              "items": [
-                { "label": "icon link"},
-                {
-                    "label": "item link",
-                    "haschild": true
-                 },
-                { "label": "icon link"},
-                { "label": "item link" },
-                { "label": "item link" }
-              ]
-            },
-            {
-                "title": "Group Name",
-                "title_size": "h6",
-                "items": [
-                  { "label": "item link" },
-                  {
-                      "label": "item link",
-                      "haschild": true
-                   },
-                  { "label": "item link" },
-                  { "label": "item link" },
-                  { "label": "item link" }
-              ]
-            }
-          ]
-        }
-    )}}
-    {% endset %}
-    {{ format(example) }}
-
-    <br><br><br>
-
-    <h2>w/ sublink</h2>
-    {% set example %}
-    {{ side_nav(
-        properties = {
-          "title": "Group Title",
-          "navgroups": [
-            {
-              "title": "Group Name",
-              "items": [
-                { "label": "item link" },
-                {
-                    "label": "item link",
-                    "haschild": true,
-                    "items": [
-                        { "label": "Link" },
-                        { "label": "Link" },
-                        { "label": "Link" }
-                    ]
-                 },
-                {
-                    "label": "item link",
-                    "haschild": true,
-                    "items": [
-                        { "label": "Link" },
-                        { "label": "Link" },
-                        { "label": "Link" }
-                    ]
-                 },
-                {
-                    "label": "item link",
-                    "haschild": true,
-                    "items": [
-                        { "label": "Link" },
-                        { "label": "Link" },
-                        { "label": "Link" }
-                    ]
-                 },
-                { "label": "item link" }
-              ]
-            },
-            {
-                "title": "Group Name",
-                "items": [
-                  { "label": "item link" },
-                  {
-                      "label": "item link",
-                      "haschild": true
-                   },
-                  { "label": "item link" },
-                  { "label": "item link" },
-                  { "label": "item link" }
-              ]
-            }
-          ]
-        }
-    )}}
-    {% endset %}
-    {{ format(example) }}
-
-    <br><br><br>
-
-    <h1>Selected with sub links</h1>
-    {% set example %}
-    {{ side_nav(
-        properties = {
-          "title": "Group Title",
-          "navgroups": [
-            {
-              "title": "Group test",
-              "items": [
-                { "label": "item link" },
-                {
-                    "label": "item link",
-                    "haschild": true,
-                    "expanded": true,
-                    "items": [
-                        { "label": "Link" },
-                        { "label": "Link" },
-                        { "label": "Link" }
-                    ]
-                 },
-                { "label": "item link" },
-                { "label": "item link" },
-                { "label": "item link" }
-              ]
-            },
-            {
-                "title": "Group Name",
-                "items": [
-                  { "label": "item link" },
-                  {
-                      "label": "item link",
-                      "haschild": true
-                   },
-                  { "label": "item link" },
-                  { "label": "item link" },
-                  { "label": "item link" }
-              ]
-            }
-          ]
-        }
-    )}}
-    {% endset %}
-    {{ format(example) }}
-
-    <br><br><br>
-
-    <h1>Text with Icons</h1>
-    {% set example %}
-    {{ side_nav(
-            properties = {
-                "items": [
-                { "label": "Link icon", "icon": "home"},
-                { "label": "Link icon", "icon": "home"},
-                { "label": "Link icon", "icon": "home"},
-                { "label": "Link icon", "icon": "home"},
-                { "label": "Link icon", "icon": "home"},
-                { "label": "Link icon", "icon": "home"}
-                ]
-            }
-        )
-    }}
-    {% endset %}
-    {{ format(example) }}
-
-    <br><br><br>
-
-    <h1>Icons only</h1>
-    {% set example %}
-    {{ side_nav(
-            properties = {
-                "items": [
-                { "icon": "home"},
-                { "icon": "home"},
-                { "icon": "home"},
-                { "icon": "home"},
-                { "icon": "home"},
-                { "icon": "home"}
+        {{ side_nav(
+                properties = {
+                "main": [
+                        {
+                            "label": "Overview",
+                            "icon": "home",
+                            "selected": true
+                        },
+                        {
+                            "label": "Questions",
+                            "icon": "question-mark",
+                            "haschild": true,
+                            "items": [
+                                {
+                                    "label": "My Opportunities"
+                                },
+                                {
+                                    "label": "My Requests"
+                                },
+                                {
+                                    "label": "My Links"
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Documents",
+                            "icon": "documents",
+                            "haschild": true,
+                            "items": [
+                                {
+                                    "label": "Link"
+                                },
+                                {
+                                    "label": "Link"
+                                },
+                                {
+                                    "label": "Link"
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Awards",
+                            "icon": "competitor"
+                        },
+                        {
+                            "label": "Files",
+                            "icon": "attachment"
+                        }
+                ],
+                "utility": [
+                        {
+                            "label": "Legal Information",
+                            "icon": "compare"
+                        },
+                        {
+                            "label": "Useful Links",
+                            "icon": "chain-link"
+                        }
                 ]
             },
-            modifier={
-                block: ["icons"]
+            state = {
+                "compact": true,
+                "condensed": false
+                
+            },
+            modifier = {
+                "hasicons": true
             }
-        )
-    }}
+          )
+        }}
     {% endset %}
-    {{ format(example) }}
+    {{- format(example) -}}
+
+    <br><br><br>
+
+    <h2>Side navigation with icons - condensed state</h2>
+    {% set example %}
+
+        {{ side_nav(
+                properties = {
+                "main": [
+                        {
+                            "label": "Overview",
+                            "icon": "home",
+                            "selected": true
+                        },
+                        {
+                            "label": "Questions",
+                            "icon": "question-mark",
+                            "haschild": true,
+                            "items": [
+                                {
+                                    "label": "My Opportunities"
+                                },
+                                {
+                                    "label": "My Requests"
+                                },
+                                {
+                                    "label": "My Links"
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Documents",
+                            "icon": "documents",
+                            "haschild": true,
+                            "items": [
+                                {
+                                    "label": "Link"
+                                },
+                                {
+                                    "label": "Link"
+                                },
+                                {
+                                    "label": "Link"
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Awards",
+                            "icon": "competitor"
+                        },
+                        {
+                            "label": "Files",
+                            "icon": "attachment"
+                        }
+                ],
+                "utility": [
+                        {
+                            "label": "Legal Information",
+                            "icon": "compare"
+                        },
+                        {
+                            "label": "Useful Links",
+                            "icon": "chain-link"
+                        }
+                ]
+            },
+            state = {
+                "compact": false,
+                "condensed": true
+                
+            },
+            modifier = {
+                "hasicons": true
+            }
+          )
+        }}
+    {% endset %}
+    {{- format(example) -}}
+
+    <br><br><br>
+
+    <h2>Side navigation with text only</h2>
+    {% set example %}
+
+        {{ side_nav(
+                properties = {
+                "main": [
+                        {
+                            "label": "Overview",
+                            "selected": true
+                        },
+                        {
+                            "label": "Questions",
+                            "haschild": true,
+                            "items": [
+                                {
+                                    "label": "My Opportunities"
+                                },
+                                {
+                                    "label": "My Requests"
+                                },
+                                {
+                                    "label": "My Links"
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Documents",
+                            "haschild": true,
+                            "items": [
+                                {
+                                    "label": "Link"
+                                },
+                                {
+                                    "label": "Link"
+                                },
+                                {
+                                    "label": "Link"
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Awards"
+                        },
+                        {
+                            "label": "Files"
+                        }
+                ],
+                "utility": [
+                        {
+                            "label": "Legal Information"
+                        },
+                        {
+                            "label": "Useful Links"
+                        }
+                ]
+            },
+            state = {
+                "compact": false,
+                "condensed": false
+                
+            },
+            modifier = {
+                "hasicons": false
+            }
+          )
+        }}
+    {% endset %}
+    {{- format(example) -}}
+
+
+    <br><br><br>
+
+    <h2>Side navigation with text only - compact state</h2>
+    {% set example %}
+
+        {{ side_nav(
+                properties = {
+                "main": [
+                        {
+                            "label": "Home",
+                            "selected": true
+                        },
+                        {
+                            "label": "Questions",
+                            "haschild": true,
+                            "items": [
+                                {
+                                    "label": "My Progress"
+                                },
+                                {
+                                    "label": "My Documents"
+                                },
+                                {
+                                    "label": "My Links"
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Customers"
+                        },
+                        {
+                            "label": "POS"
+                        }
+                ],
+                "utility": [
+                        {
+                            "label": "Legal Information"
+                        },
+                        {
+                            "label": "Useful Links"
+                        }
+                ]
+            },
+            state = {
+                "compact": true,
+                "condensed": false
+                
+            },
+            modifier = {
+                "hasicons": false
+            }
+          )
+        }}
+    {% endset %}
+    {{- format(example) -}}
+
 
 {% endblock %}
