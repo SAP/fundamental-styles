@@ -10,3 +10,10 @@ body {
     background: beige;
     font-size: 14px;
 }
+
+.input-playground {
+    width: 250px;
+    background: beige;
+    padding: 10px;
+    font-size: 14px;
+}
