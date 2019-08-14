@@ -6,6 +6,7 @@
 //needed for color variables in docs site
 @import "../../scss/functions/_color.scss";
 @import "../../scss/_settings.scss";
+@import "../../scss/mixins";
 //docs site specific styles
 @import "include-media.scss";
 @import "docs-settings";

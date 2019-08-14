@@ -45,6 +45,23 @@
 
             &__body {
                 width: 100%;
+
+                &--no-arrow {
+                    //needed for styling split buttons popover
+                    &.fd-popover__body--left {
+                      left: 0;
+                      @include fd-rtl() {
+                        right: 0;
+                      }
+                    }
+
+                    &.fd-popover__body--right {
+                      right: 0;
+                      @include fd-rtl() {
+                        left: 0;
+                      }
+                    }
+                }
             }
         }
     }

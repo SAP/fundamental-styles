@@ -1,90 +1,15 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
 {% from "./component.njk" import button_split %}
-{% from "../button/component.njk" import button %}
-{% from "../menu/component.njk" import menu %}
-{% from "./../popover/component.njk" import popover_body %}
 {% import "./../utils.njk" as utils %}
-
-
-<!-- include add'tl css from src/styles/, e.g., ['helpers','components/button'] -->
-{% set css_deps = ['components/button','icons' ,'components/menu', 'components/popover'] %}
 
 {% block content %}
 
-<h2>default</h2>
-
-{% set emphasis = ["emphasized", ""] %}
-{% set size = ["", "compact"] %}
-{% set types = ["", "standard", "positive ", "medium", "negative" ] %}
-
-{% for s in size %}
-  
-  <br><br>
-  <h2> {{s}}</h2>
-
   {% set example %}
   
-{% for e in emphasis %}
-{% for t in types %}
-{% call button_split() -%}
-  {{-  button(
-    { 
-      icon: 'cart',
-      label: 'Button' 
-    },
-    modifier={ block: [s, e, t] },
-    aria={ label: 'button' })
-  }}
-  {{-  button(
-    { 
-      icon: 'slim-arrow-down' 
-      },
-    modifier={ block: [s, e, t] },
-    aria={ label: 'dropdown'})
-  }}
-{%- endcall %}
-{% endfor %}
-<br><br>
-{% endfor %}
-{% endset %}
-{{ format(example) }}
-
-{% endfor %}
-
-<br><br>
-
-<h2>with popover menu</h2>
-{% set example %}
-{%- set _id = utils.id() %}
-{% call button_split() -%}
-    {{-  button(
-      { 
-        icon: 'cart',
-        label: 'Button with text' 
-      },
-      modifier={ block: ['emphasized'] },
-      aria={ label: 'button' })
-    }}
-    {{- button({ icon: 'slim-arrow-down' }, modifier={ block: ['emphasized'] }, aria={ controls: _id, haspopup: true, expanded: false, label: 'More' }) | indent(4) }}
-    {{  popover_body(properties={
-            id: _id,
-            body: menu(properties={
-            items: [
-                { "label": "Add to list" },
-                { "label": "Save for later" }
-              ]
-            })
-        },
-        modifier={ block: ['no-arrow', 'right']},
-        classes="contextual-menu"
-        ) | indent(4)
-    }}
-
-    {%- endcall %}
+{% call button_split() -%}{%- endcall %}
 
 {% endset %}
 {{ format(example) }}
-
 
 {% endblock %}
