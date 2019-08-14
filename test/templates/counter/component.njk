@@ -6,14 +6,12 @@
         label: "Unread count"
     }
 } %}
+
+{%- set limit = 9999 %}
+{%- set _count = limit + "+"%}}
+
 {% macro counter(count=defaults.count, modifier=defaults.modifier, state={}, aria=defaults.aria, classes=[]) -%}
-    {%- set limit = 9999 %}
-    {%- if count > limit %}
-        {%- set _count = limit + "+" %}
-    {%- else %}
-        {%- set _count = count %}
+    {%- if count <= limit %}{%- set _count = count %}
     {%- endif %}
-    {%- if count !== 0 %}
-        <span class="fd-counter{{ modifier | modifier('counter') }}{{ classes | classes }}" {{aria | aria}}>{{ _count }}</span>
-    {%- endif %}
+    <span class="fd-counter{{ modifier | modifier('counter') }}{{ classes | classes }}" {{aria | aria}}>{{ _count }}</span>
 {%- endmacro %}

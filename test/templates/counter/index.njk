@@ -1,5 +1,6 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
+{% from "./component.njk" import counter %}
 
 {% block content %}
     <style>
@@ -13,28 +14,27 @@
     <h2>default counters</h2>
     <br/>
     {% set single_counter %}
-    <span class="fd-counter" aria-label="Unread count">5</span>
-    <span class="fd-counter" aria-label="Unread count">25</span>
-    <span class="fd-counter" aria-label="Unread count">101</span>
-    <span class="fd-counter" aria-label="Unread count">4001</span>
-    <span class="fd-counter" aria-label="Unread count">9999+</span>
+    {{counter(count = 5, modifier='')}}
+    {{counter(count = 25, modifier='')}}
+    {{counter(count = 101, modifier='')}}
+    {{counter(count = 4001, modifier='')}}
+    {{counter(count = 10101, modifier='')}}
     {% endset %}
     {{ format(single_counter) }}
 
     <br><br>
-    <h2>default and notification counters</h2>
+    <h2>notification counters</h2>
 
     {% set example %}
-    <p>Read<span class="fd-counter" arial-label="Unread count">1</span></p>
+    <div>Inbox{{counter(count = 1)}}</div>
     <br/>
-    <button aria-label="Notifications">Open<span class="fd-counter fd-counter--notification" arial-label="Unread count">24</span></button>
+    <div>Inbox{{counter(count = 24)}}</div>
+    <br/>
+    <div>Inbox{{counter(count = 300)}}</div>
+    <br/>
+    <div>Inbox{{counter(count = 6000) | trim}}</div>
     <br/><br/>
-    <button aria-label="Notifications">Check<span class="fd-counter" arial-label="Unread count">300</span></button>
-    <br/><br/>
-    <a aria-label="Notifications">close<span class="fd-counter" arial-label="Unread count">6000</span></a>
-    <br/><br/>
-    <span class="pg-icon-placeholder">
-        <span class="fd-counter fd-counter--notification" arial-label="Unread count">24</span></span>
+    <div>Inbox{{counter(count = 12000) | trim}}</div>
     {% endset %}
     {{ format(example) }}
 

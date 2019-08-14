@@ -26,7 +26,6 @@ $block: #{$fd-namespace}-counter;
   text-align: center;
   padding: fd-space(1);
   &--notification {
-    font-size: $fd-counter-font-size;
     --fd-counter-background-color: var(--fd-color-status-3);
     @include fd-var-color("background-color", map-get($fd-colors-status, 3), --fd-counter-background-color);
     position: absolute;
