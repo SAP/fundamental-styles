@@ -33,7 +33,8 @@ $block: #{$fd-namespace}-pagination;
     list-style: none;
     margin-bottom: 0;
   }
-  &__link {  @include fd-reset();
+  &__link {
+    @include fd-reset();
     @include fd-type("0");
     @include fd-var-color("color", $fd-pagination-link-color, --fd-pagination-link-color);
     background-color: transparent;
@@ -51,21 +52,21 @@ $block: #{$fd-namespace}-pagination;
     &--next {
       @include fd-reset();
       @include fd-type("0");
-      @include fd-icon("nav-back","s");
-      @include fd-rtl() {
-        transform: scaleX(-1);
-      }
+      @include fd-var-color("color", $fd-pagination-link-color, --fd-pagination-link-color);
       padding-left: fd-space(2);
       padding-right: fd-space(2);
     }
-    &--next {
-      &::before,
-      &::after {
-       transform: scaleX(-1);
-      }
+    &--previous {
+      @include fd-icon("navigation-left-arrow","s");
       @include fd-rtl() {
-       transform: scaleX(1);
-       }
+        @include fd-icon("navigation-right-arrow","s");
+      }
+    }
+    &--next {
+      @include fd-icon("navigation-right-arrow","s");
+      @include fd-rtl() {
+        @include fd-icon("navigation-left-arrow","s");
+      }
     }
     &--more {
       &::before {
