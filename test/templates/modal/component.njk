@@ -1,45 +1,26 @@
-{% import "../forms.njk" as forms %}
-{% from "../button/component.njk" import button %}
-{% from "../icon/component.njk" import icon %}
 <!--
 modal:
     properties={},
 -->
 {% macro modal(properties={}) %}
 <div class="fd-modal" role="dialog">
-  <div class="fd-modal__content" role="document">
-      <header class="fd-modal__header">
-      {% set title_size = properties.header_size  if properties.header_size  else "h3" %}
-      <{{title_size}} class="fd-modal__title">{{ properties.header }}</{{title_size}}>
-          {{  button(
-                  {
-                      label: item.label
-                  },
-                  modifier={
-                      block: ['light']
-                  },
-                  classes=['modal__close'])
-          }}
-      </header>
-      <div class="fd-modal__body">
+    <div class="fd-modal__content" role="document">
+        <header class="fd-modal__header">
+            {% set title_size = properties.header_size if properties.header_size else "h3" %}
+            <{{title_size}} class="fd-modal__title">{{ properties.header }}</{{title_size}}>
+            <button class="fd-modal__close"></button>
+        </header>
+        <div class="fd-modal__body">
             <p>{{properties.body}}</p>
-      </div>
-      <footer class="fd-modal__footer">
-        <div class="fd-modal__actions">
-          {%- for item in properties.actions %}
-          {{  button(
-                  {
-                      label: item.label
-                  },
-                  modifier={
-                      block: [item.type]
-                  })
-          }}
-          {%- endfor %}
         </div>
+        <footer class="fd-modal__footer">
+            <div class="fd-modal__actions">
+                {%- for action in properties.actions %}
+                    <button>{{action.label}}</button>
+                {%- endfor %}
+            </div>
         </footer>
-  </div>
-
+    </div>
 </div>
 
 {%- endmacro %}
