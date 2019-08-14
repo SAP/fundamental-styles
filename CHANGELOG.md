@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.63"></a>
+# [0.2.0-rc.63](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.62...v0.2.0-rc.63) (2019-08-14)
+
+
+
+<a name="0.2.0-rc.62"></a>
+# [0.2.0-rc.62](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.61...v0.2.0-rc.62) (2019-08-14)
+
+
+### Bug Fixes
+
+* added self-contained-style for pagination component ([#225](https://github.com/SAP/fundamental-styles/issues/225)) ([ec01327](https://github.com/SAP/fundamental-styles/commit/ec01327)), closes [#220](https://github.com/SAP/fundamental-styles/issues/220)
+
+
+### Features
+
+* remove user menu component ([#252](https://github.com/SAP/fundamental-styles/issues/252)) ([1611697](https://github.com/SAP/fundamental-styles/commit/1611697))
+
+
+
 <a name="0.2.0-rc.61"></a>
 # [0.2.0-rc.61](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.60...v0.2.0-rc.61) (2019-08-13)
 
