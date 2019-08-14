@@ -1,6 +1,5 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "../form/component.njk" import form_item %}
 {% from "./component.njk" import toggle %}
 
 {% block content %}
@@ -12,7 +11,7 @@
 }
 </style>
 
-<p>Wrap a regular <code>input[type=checkbox]</code> and an empty <code>.fd-toggle__switch</code>. <i>The empty switch container is necessary for compatibilty with Firefox.</i></p>
+<p>Wrap an <code>input[type=checkbox]</code> and an empty <code>.fd-toggle__switch</code>. <i>The empty switch container is necessary for compatibilty with Firefox.</i></p>
 
 <h3>Cozy Toggle (default)</h3>
 {% set example %}
@@ -260,21 +259,6 @@
     )
 }}
 </label>
-{% endset %}
-{{ format(example) }}
-
-<br><br><br>
-
-<hr>
-
-<h1>Use with <code>.fd-form__item--check</code></h1>
-<p>Replace the normal checkbox with the <code>.fd-toggle</code> component. Apply the <code>.fd-form__control</code> class to the <code>.fd-toggle</code> component instead of to the <code>input</code> element. Everything else works the same.</p>
-
-{% set example %}
-{{ form_item("toggle", modifier={ control: "s" }) }}
-{{ form_item("toggle", modifier={ control: "s" }) }}
-{{ form_item("toggle") }}
-{{ form_item("toggle", modifier={ control: "l" }) }}
 {% endset %}
 {{ format(example) }}
 

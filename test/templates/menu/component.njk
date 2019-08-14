@@ -1,57 +1,61 @@
 {% import "./../utils.njk" as utils %}
-<!--
-menu:
-    properties={},
-    modifier={ block: [] },
-    state={},
-    aria={}
--->
+{% set headlines = ['h2', 'h3', 'h4', 'h5', 'h6'] %}
 
-{%- macro menu(properties={}, modifier=[], classes=[], aria=[]) -%}
-{{modifier.addon | dump(2)}}
-<nav class="fd-menu{{ modifier | modifier('menu') }}{{ classes | classes }}"{{ aria | aria }}{% if properties.id %} id="{{ properties.id }}"{% endif %}>
-{%- for item in properties.items %}
-  {%- if item.items %}
-    {%- if not loop.first %}
-    </ul>
-      {%- endif %}
-      {{ optgroup(item, properties.separator)| indent(2) }}
-    {%- else %}
-      {%- if loop.first %}
-    <ul class="fd-menu__list{{ 'separated' | modifier('menu__list') if properties.separator }}">
+{%- macro menu(properties={}, modifier=[], classes=[], aria=[], header_size='h3') -%}
+  {{modifier.addon | dump(2)}}
+  <nav class="fd-menu{{ modifier | modifier('menu') }}{{ classes | classes }}" {{ aria | aria }} {% if properties.id %} id="{{ properties.id }}" {% endif %}>
+    {%- for item in properties.items %}
+      {%- if item.items %}
+        {%- if not loop.first %}
+      </ul>
+    {%- endif %}
+    {{ optgroup(item, properties.separator, header_size )| indent(2) }}
+  {%- else %}
+    {%- if loop.first %}
+      <ul class="fd-menu__list{{ 'separated' | modifier('menu__list') if properties.separator }}">
       {%- endif %}
       {{ option(item, properties) }}
       {%- if loop.last %}
-    </ul>
-      {%- endif %}
+      </ul>
     {%- endif %}
+  {%- endif %}
 {%- endfor %}
 </nav>
 {%- endmacro %}
 
-{%- macro option(item={}, properties={}) -%}
-    <li>
-        {%- if properties.addon_before -%}
-        <div class="fd-menu__addon-before">
-            {%- if item.icon -%}
-            <span class="sap-icon--{{item.icon}}"></span>
-            {%- endif -%}
-        </div>
-        {%- endif -%}
-        <a role="button" class="fd-menu__item">{{ item.label }}</a>
-    </li>
+{%- macro menuWithAllHeadlines(properties={}, modifier=[], classes=[], aria=[]) -%}
+{%- for _h in headlines %}
+<h3>menu with
+  {{ _h}}
+  headline</h3>
+{{ menu(properties, modifier, class, aria, _h)}}
+{%- endfor %}
 {%- endmacro %}
 
-{% macro optgroup(properties={}, separated=false) -%}
-    <div class="fd-menu__group">
-    {%- if properties.label %}
-      {% set title_size = properties.header_size if properties.header_size else "h3" %}
-      <{{title_size}} class="fd-menu__title">{{ properties.label }}</{{title_size}}>
-    {%- endif %}
-      <ul class="fd-menu__list{{ 'separated' | modifier('menu__list') if separated }}">
-          {%- for item in properties.items %}
-            {{ option(item) }}
-          {%- endfor %}
-      </ul>
-    </div>
+{%- macro option(item={}, properties={}) -%}
+<li>
+{%- if properties.addon_before -%}
+  <div class="fd-menu__addon-before">
+    {%- if item.icon -%}
+      <span>i</span>
+    {%- endif -%}
+  </div>
+{%- endif -%}
+<a role="button" class="fd-menu__item {{item.class if item.class}}">{{ item.label }}</a>
+</li>
+{%- endmacro %}
+
+{%- macro optgroup(properties={}, separated=false, header_size='h3') -%}
+<div class="fd-menu__group">
+{%- if properties.label %}
+  {% set title_size = header_size if header_size else 
+    "h3" %}
+  <{{title_size}} class="fd-menu__title">{{ properties.label }}</{{title_size}}>
+{%- endif %}
+<ul class="fd-menu__list{{ 'separated' | modifier('menu__list') if separated }}">
+  {%- for item in properties.items %}
+    {{ option(item) }}
+  {%- endfor %}
+</ul>
+</div>
 {%- endmacro %}
