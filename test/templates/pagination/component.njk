@@ -1,50 +1,47 @@
 
 {% import "../forms.njk" as forms %}
-{% from "../button/component.njk" import button %}
 {% from "../icon/component.njk" import icon %}
-{#
-    see ./data.json for object structure
-#}
+
 {% macro pagination(properties={}) %}
+
 {%- set currentPage = properties.currentPage -%}
 {%- set totalItems = properties.totalItems -%}
 {%- set itemsPerPage = properties.itemsPerPage -%}
 {%- set pages = totalItems/itemsPerPage -%}
+
 <div class="fd-pagination">
   <span class="fd-pagination__total">{{totalItems}} items</span>
   <nav class="fd-pagination__nav">
+{%- if currentPage !== 1%}
     <a href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Previous" aria-disabled="{{currentPage === 1}}"></a>
-    {%- if pages < 4 %}
-        {%- for item in range(1, pages + 1) %}
-    <a href="#" class="fd-pagination__link"{{ ' aria-selected="true"' if item === currentPage }}>{{item}}</a>
-        {%- endfor %}
-    {%- elseif (currentPage === pages) or (currentPage === pages + 1) or (currentPage > 4) %}
-    <a href="#" class="fd-pagination__link">1</a>
-        {%- for item in range(pages, pages+1) %}
-    <span class="fd-pagination__link fd-pagination__link--more" role="presentation"></span>
-            {%- if (item === currentPage) %}
-    <a href="#" class="fd-pagination__link">{{item - 1}}</a>
-            {%- elseif (currentPage !== (pages)) or (item !== (pages))%}
-    <a href="#" class="fd-pagination__link">{{currentPage -1}}</a>
-    <a href="#" class="fd-pagination__link" aria-selected="true">{{currentPage}}</a>
-    <a href="#" class="fd-pagination__link">{{currentPage+1}}</a>
-    <span class="fd-pagination__link fd-pagination__link--more" role="presentation"></span>
-            {%- endif %}
-    <a href="#" class="fd-pagination__link"{{ ' aria-selected="true"' if item === currentPage  or item === pages + 1  }}>{{item}}</a>
-        {%- endfor %}
-    {%- else %}
-        {%- for item in range(1, 4) %}
-    <a href="#" class="fd-pagination__link"{{ ' aria-selected="true"' if item === currentPage }}>{{item}}</a>
-        {%- endfor %}
-        {%- for item in range(pages, pages+1) %}
-    <span class="fd-pagination__link fd-pagination__link--more" role="presentation"></span>
-            {%- if (item === currentPage) %}
-    <a href="#" class="fd-pagination__link">{{item - 1}}</a>
-            {%- endif %}
-    <a href="#" class="fd-pagination__link"{{ ' aria-selected="true"' if item === currentPage  or item === pages + 1  }}>{{item}}</a>
-        {%- endfor %}
-    {%- endif %}
+{%- endif %}
+{%- if pages < 4 %}
+    {%- for item in range(1, pages + 1) %}{{pageLink(item, item === currentPage)}}{%- endfor %}
+{%- elseif (currentPage === pages) or (currentPage === pages + 1) or (currentPage > 4) %}
+    {{ pageLink(1) }}
+    {%- for item in range(pages, pages+1) %}
+        <span class="fd-pagination__link fd-pagination__link--more" role="presentation"></span>
+        {%- if (item === currentPage) %}{{pageLink(item - 1)}}
+        {%- elseif (currentPage !== (pages)) or (item !== (pages))%}
+            {{pageLink(currentPage - 1)}}{{pageLink(currentPage, true)}}{{pageLink(currentPage + 1)}}
+            <span class="fd-pagination__link fd-pagination__link--more" role="presentation"></span>
+        {%- endif %} 
+        {{ pageLink(item, item === currentPage  or item === pages + 1) }}
+    {%- endfor %}
+{%- else %}
+    {%- for item in range(1, 4) %}{{pageLink(item, item === currentPage)}}{%- endfor %}
+    {%- for item in range(pages, pages+1) %}
+        <span class="fd-pagination__link fd-pagination__link--more" role="presentation"></span>
+        {%- if (item === currentPage) %} {{pageLink(item -1)}} {%- endif %}
+        {{ pageLink(item, item === currentPage  or item === pages + 1)}}
+    {%- endfor %}
+{%- endif %}
+{%- if currentPage !== pages %}
     <a href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next" aria-disabled="{{currentPage === pages | round(0)}}"></a>
+{%- endif %}
   </nav>
 </div>
 {% endmacro %}
+
+{% macro pageLink(page=0, selected=false) %}
+<a href="#" class="fd-pagination__link {{'is-selected' if selected}}">{{page}}</a>{% endmacro %}

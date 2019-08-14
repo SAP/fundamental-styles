@@ -1,6 +1,6 @@
 :root {
     --fd-color-action: orangered;
-    --fd-color-action-1: magenta;
+    --fd-color-action-1: rgb(166, 255, 0);
     --fd-color-action-2: purple;
     --fd-color-action-hover: lime;
     --fd-color-action-selected: powderblue;
@@ -21,7 +21,7 @@
     --fd-color-status-3: #999;
     --fd-color-status-4: #ccc;
     --fd-color-text-1: rgb(93%, 2%, 45%);
-    --fd-color-text-2: mediumaquamarine;
+    --fd-color-text-2: rgb(205, 102, 119);
     --fd-color-text-5: gold;
     --fd-color-positive: rgb(87%, 33%, 21%);
     --fd-color-negative: rgb(9%, 75%, 29%);
