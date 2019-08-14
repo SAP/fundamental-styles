@@ -39,6 +39,16 @@
         }
     }
 
+    .fd-button-split {
+        & .fd-popover {
+            display: block;
+
+            &__body {
+                width: 100%;
+            }
+        }
+    }
+
     .fd-identifier--s {
         display: inline-block;
         background: transperant ;
