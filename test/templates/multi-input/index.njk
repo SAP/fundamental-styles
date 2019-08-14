@@ -15,20 +15,4 @@
 
     {{ format(basic_multi_input) }}
 
-
-<br><br>
-
-<h3>compact</h3>
-
-
-{% set basic_multi_input %}
-    {{ multi_input(
-        properties={
-            placeholder: "Select Fruit"
-        },size="compact")
-    }}
-{% endset %}
-
-{{ format(basic_multi_input) }}
-
 {% endblock %}
