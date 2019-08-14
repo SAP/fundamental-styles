@@ -11,11 +11,11 @@ body {
     font-size: 14px;
 }
 
-.panel-playground, .panel-body-playground {
+.panel-playground {
     border: 1px solid navy;
     border-radius: 4px;
     padding: 10px;
     background: gold;
     font-size: 14px;
-    box-shadow: 0 5px 20px 0;
+    box-shadow: 0 5px 20px 0 blue;
 }
