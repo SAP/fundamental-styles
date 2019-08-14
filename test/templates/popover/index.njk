@@ -22,10 +22,6 @@
       border: 0;
       padding: 10px;
     }
-
-    .sample-control-input {
-      width: 500px;
-    } 
 </style>
 
 
@@ -41,10 +37,6 @@
   <button class="fd-popover__control sample-control" aria-controls="{{ properties.id }}" aria-expanded="false" aria-haspopup="true"{{ " disabled" if state.disabled }}{{ aria | aria }}>
     Click Here
   </button>
-{%- endmacro %}
-
-{%- macro sample_control_input(properties={}) -%}
-  <input class="fd-popover__control sample-control-input" />
 {%- endmacro %}
 
 <h2>popover with menu default </h2>
@@ -147,23 +139,5 @@ is simply a styling example.</p>
 
 {% endset %}
 {{ format(example) }}
-
-<br><br><br><br>
-
-<h2>Full width of parent with popper.js</h2>
-<p>NOTE: This will not be functional as the popper.js library is not being used here so this
-is simply a styling example.</p>
-{% set example %}
-
-{{  popover_popperjs(properties={
-    id: _id7,
-    control: sample_control_input(properties={id: _id7}),
-    body: popover_content()
-  }, modifier={ block: ['no-arrow', 'full-width']})
-}}
-
-{% endset %}
-{{ format(example) }}
-
 
 {% endblock %}
