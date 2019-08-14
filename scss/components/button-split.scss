@@ -18,7 +18,6 @@ $block: #{$fd-namespace}-button-split;
   :first-child {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    border-right: yellow;
   }
   :nth-child(2) {
     border-top-left-radius: 0;
@@ -39,19 +38,17 @@ $block: #{$fd-namespace}-button-split;
       border-top-right-radius: $fd-border-radius;
       border-bottom-right-radius: $fd-border-radius;
       border-left-width: 0;
-      border-right: pink;
-      border-left: yellow;
     }
   }
-  // --emphasized {
-  //   &:first-child {
-  //       margin-right: 1px;
-  //   }
-  //   @include fd-rtl() {
-  //       &:first-child {
-  //           margin-right: 0;
-  //           margin-left: 1px;
-  //       }
-  //   }
-  // }
+  [class*="--emphasized"] {
+    &:first-child {
+        margin-right: 1px;
+    }
+    @include fd-rtl() {
+        &:first-child {
+            margin-right: 0;
+            margin-left: 1px;
+        }
+    }
+  }
 }
