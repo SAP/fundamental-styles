@@ -101,8 +101,12 @@ $block: #{$fd-namespace}-panel;
         &--bleed {
           padding: 0;
         }
-        p {
-            @include fd-reset-block();
+        > :first-child {
+          margin-top: 0;
+        }
+
+        > :last-child {
+          margin-bottom: 0;
         }
     }
     &__footer {
