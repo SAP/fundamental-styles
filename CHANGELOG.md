@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.66"></a>
+# [0.2.0-rc.66](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.65...v0.2.0-rc.66) (2019-08-14)
+
+
+### Features
+
+* remove contextual menu from scss directory ([#259](https://github.com/SAP/fundamental-styles/issues/259)) ([417f106](https://github.com/SAP/fundamental-styles/commit/417f106))
+
+
+
 <a name="0.2.0-rc.65"></a>
 # [0.2.0-rc.65](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.64...v0.2.0-rc.65) (2019-08-14)
 
