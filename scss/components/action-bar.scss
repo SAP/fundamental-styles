@@ -69,14 +69,11 @@ $block: #{$fd-namespace}-action-bar;
                 width: 0;
                 height: 100%;
                 position: absolute;
-                top: - fd-space(1);
+                top: 0;
                 right: - fd-space(1);
                 border-right-style: solid;
                 border-right-width: 1px;
                 @include fd-var-color("border-right-color", $fd-action-bar-backbtn-separator-color, --fd-action-bar-backbtn-separator-color);
-        }
-        button {
-            margin-top: - fd-space(2);
         }
         @include fd-rtl() {
           transform: scaleX(-1);

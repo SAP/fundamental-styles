@@ -1,35 +1,10 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "./component.njk" import action_bar %}
-{% from "./component.njk" import action_bar_headlines %}
+{% from "./component.njk" import action_bar, action_bar_headlines %}
 {% import "./../utils.njk" as utils %}
 
 
 {% block content %}
-<style media="screen">
-    .fd-action-bar {
-        margin: 0 20px;
-    }
-    .test-btn-placeholder{
-        border: 1px solid lightblue;
-        border-radius: 4px;
-        padding: 2px 5px;
-        background-color: yellow;
-        color: green;
-    }
-    .test-btn-back{
-        margin: -8px 0 0 0;
-        padding: 0;
-        border: none;
-        border-radius: 4px;
-        background-color: white;
-        min-height: 28px;
-        width: 26px;
-        display: flex;
-        justify-content: center;
-    }
-</style>
-
 {%- macro render_txt_button() %}<div class="test-btn-placeholder">Button</div>{%- endmacro %}
 {%- macro render_icon_button() %}<div class="test-btn-placeholder sap-icon--overflow"></div>{%- endmacro %}
 
