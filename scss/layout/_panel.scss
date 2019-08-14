@@ -67,10 +67,12 @@ $block: #{$fd-namespace}-panel;
     }
     &__description {
         @include fd-reset();
+        @include fd-type("-1");
         margin-top: fd-space(base);
     }
     &__actions {
         @include fd-reset();
+        @include fd-type("-1");
         margin-left: auto;
         margin-top: -#{fd-space(base)};
         margin-bottom: -#{fd-space(base)};
