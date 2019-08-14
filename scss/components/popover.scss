@@ -170,6 +170,10 @@ $block: #{$fd-namespace}-popover;
         box-shadow: 0 5px 20px 0 var(--fd-color-neutral-3), 0 2px 8px 0 var(--fd-color-neutral-2);
         opacity: 1;
 
+        &--full-width {
+          width: 100%;
+      }
+
         &--no-arrow {
             margin: 0 !important;
 
