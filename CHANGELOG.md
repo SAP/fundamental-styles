@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.67"></a>
+# [0.2.0-rc.67](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.66...v0.2.0-rc.67) (2019-08-15)
+
+
+### Bug Fixes
+
+* self contained styles for panel grid ([#254](https://github.com/SAP/fundamental-styles/issues/254)) ([14339da](https://github.com/SAP/fundamental-styles/commit/14339da))
+
+
+
 <a name="0.2.0-rc.66"></a>
 # [0.2.0-rc.66](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.65...v0.2.0-rc.66) (2019-08-14)
 
