@@ -1,24 +1,13 @@
+## Related Issue
 Closes SAP/fundamental-styles#
 
-{{short description}}
+## Description
+{{ _Enter short description of the change_ }}
 
-<!-- If you've made any style changes, please provide appropriate before and after screenshots to help reviewers. -->
-#### Before and After Screenshots
+## Screenshots
+> **NOTE:** If you've made any style changes, please provide appropriate before and after screenshots to help reviewers.
 
-#### Test
+### Before:
 
-* {{test thing}}
 
-#### Changelog
-
-**New**
-
-* {{new thing}}
-
-**Changed**
-
-* {{change thing}}
-
-**Removed**
-
-* {{removed thing}}
+### After:
