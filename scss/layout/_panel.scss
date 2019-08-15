@@ -66,10 +66,14 @@ $block: #{$fd-namespace}-panel;
         @include fd-var-color("color", $fd-panel-title-color, --fd-panel-title-color);
     }
     &__description {
+        @include fd-reset();
+        @include fd-var-color("color", fd-color("text", 3), --fd-color-text-3);
         @include fd-type("-1");
         margin-top: fd-space(base);
     }
     &__actions {
+        @include fd-reset();
+        @include fd-var-color("color", fd-color("text", 3), --fd-color-text-3);
         @include fd-type("-1");
         margin-left: auto;
         margin-top: -#{fd-space(base)};
@@ -80,7 +84,7 @@ $block: #{$fd-namespace}-panel;
         }
     }
     &__filters {
-        @include fd-var-color("color", fd-color("text", 3), --fd-color-text-3);
+        @include fd-reset();
         padding: $fd-panel-filters-padding;
         //border-bottom: solid 1px $fd-panel-filters-border-color;
         border-bottom-style: solid;
@@ -95,7 +99,7 @@ $block: #{$fd-namespace}-panel;
         }
     }
     &__body {
-        @include fd-var-color("color", fd-color("text", 3), --fd-color-text-3);
+        @include fd-reset();
         padding: $fd-panel-padding;
         &--full-bleed,
         &--bleed {
@@ -110,7 +114,7 @@ $block: #{$fd-namespace}-panel;
         }
     }
     &__footer {
-        @include fd-var-color("color", fd-color("text", 3), --fd-color-text-3);
+        @include fd-reset();
         display: flex;
         justify-content: center;
         padding: $fd-panel-footer-padding;
