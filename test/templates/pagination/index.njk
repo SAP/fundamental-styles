@@ -16,6 +16,10 @@
         }
     )
 }}
+{% endset %}
+{{- format(example) -}}
+<br /><br />
+{% set example2 %}
 {{  pagination(
         properties={
             totalItems: 30,
@@ -24,6 +28,22 @@
         }
     )
 }}
+{% endset %}
+{{- format(example2) -}}
+<br /><br />
+{% set example20 %}
+{{  pagination(
+        properties={
+            totalItems: 30,
+            itemsPerPage: 10,
+            currentPage: 3
+        }
+    )
+}}
+{% endset %}
+{{- format(example20) -}}
+<br /><br />
+{% set example3 %}
 {{  pagination(
         properties={
             totalItems: 500,
@@ -32,6 +52,10 @@
         }
     )
 }}
+{% endset %}
+{{- format(example3) -}}
+<br /><br />
+{% set example4 %}
 {{  pagination(
         properties={
             totalItems: 500,
@@ -40,6 +64,10 @@
         }
     )
 }}
+{% endset %}
+{{- format(example4) -}}
+<br /><br />
+{% set example5 %}
 {{  pagination(
         properties={
             totalItems: 500,
@@ -48,10 +76,7 @@
         }
     )
 }}
-
-
 {% endset %}
-
-{{- format(example) -}}
+{{- format(example5) -}}
 
 {% endblock %}

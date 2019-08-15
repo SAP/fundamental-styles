@@ -32,7 +32,7 @@ $block: #{$fd-namespace}-toggle;
     width: $fd-toggle-width;
     height: $fd-toggle-height;
 
-    input {
+    &__input {
         opacity: 0;
         width: 0;
         height: 0;
@@ -50,9 +50,8 @@ $block: #{$fd-namespace}-toggle;
             border-color: transparent;
         }
         &[disabled],
-        &.is-disabled,
-        &[aria-disabled="true"] {
-            opacity: 1;
+        &.is-disabled {
+            opacity: 0;
             background-color: $fd-toggle-switch-background-color--disabled;
             border-color: $fd-toggle-switch-border-color--disabled;
             &+.#{$block}__switch {
@@ -69,8 +68,7 @@ $block: #{$fd-namespace}-toggle;
 
         &:checked {
             &[disabled],
-            &.is-disabled,
-            &[aria-disabled="true"] {
+            &.is-disabled {
                 &+.#{$block}__switch {
                     border-color: transparent;
                     background-color: $fd-toggle-on-background-color--disabled;
@@ -95,7 +93,7 @@ $block: #{$fd-namespace}-toggle;
         border-style: solid;
         border-width: 1px;
         @include fd-var-color("border-color", $fd-toggle-background-color, --fd-color-neutral-4);
-        @include fd-var-color("background-color", $fd-toggle-background-color, --fd-color-neutral-3);
+        @include fd-var-color("background-color", fd-color("neutral", 3), --fd-color-neutral-3);
         transition: all 0.4s;
         border-radius: 34px;
         &:hover {

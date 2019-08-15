@@ -2,6 +2,102 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.70"></a>
+# [0.2.0-rc.70](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.69...v0.2.0-rc.70) (2019-08-15)
+
+
+### Bug Fixes
+
+* added self-contained styles for list-group ([#245](https://github.com/SAP/fundamental-styles/issues/245)) ([d77e3f0](https://github.com/SAP/fundamental-styles/commit/d77e3f0))
+
+
+
+<a name="0.2.0-rc.69"></a>
+# [0.2.0-rc.69](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.68...v0.2.0-rc.69) (2019-08-15)
+
+
+
+<a name="0.2.0-rc.68"></a>
+# [0.2.0-rc.68](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.67...v0.2.0-rc.68) (2019-08-15)
+
+
+### Bug Fixes
+
+* Added self-contained style for Counter component ([#219](https://github.com/SAP/fundamental-styles/issues/219)) ([91aac1d](https://github.com/SAP/fundamental-styles/commit/91aac1d))
+
+
+
+<a name="0.2.0-rc.67"></a>
+# [0.2.0-rc.67](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.66...v0.2.0-rc.67) (2019-08-15)
+
+
+### Bug Fixes
+
+* self contained styles for panel grid ([#254](https://github.com/SAP/fundamental-styles/issues/254)) ([14339da](https://github.com/SAP/fundamental-styles/commit/14339da))
+
+
+
+<a name="0.2.0-rc.66"></a>
+# [0.2.0-rc.66](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.65...v0.2.0-rc.66) (2019-08-14)
+
+
+### Features
+
+* remove contextual menu from scss directory ([#259](https://github.com/SAP/fundamental-styles/issues/259)) ([417f106](https://github.com/SAP/fundamental-styles/commit/417f106))
+
+
+
+<a name="0.2.0-rc.65"></a>
+# [0.2.0-rc.65](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.64...v0.2.0-rc.65) (2019-08-14)
+
+
+
+<a name="0.2.0-rc.64"></a>
+# [0.2.0-rc.64](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.63...v0.2.0-rc.64) (2019-08-14)
+
+
+### Bug Fixes
+
+* Self contained combobox-input and multi-input ([#257](https://github.com/SAP/fundamental-styles/issues/257)) ([a403649](https://github.com/SAP/fundamental-styles/commit/a403649))
+
+
+
+<a name="0.2.0-rc.63"></a>
+# [0.2.0-rc.63](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.62...v0.2.0-rc.63) (2019-08-14)
+
+
+
+<a name="0.2.0-rc.62"></a>
+# [0.2.0-rc.62](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.61...v0.2.0-rc.62) (2019-08-14)
+
+
+### Bug Fixes
+
+* added self-contained-style for pagination component ([#225](https://github.com/SAP/fundamental-styles/issues/225)) ([ec01327](https://github.com/SAP/fundamental-styles/commit/ec01327)), closes [#220](https://github.com/SAP/fundamental-styles/issues/220)
+
+
+### Features
+
+* remove user menu component ([#252](https://github.com/SAP/fundamental-styles/issues/252)) ([1611697](https://github.com/SAP/fundamental-styles/commit/1611697))
+
+
+
+<a name="0.2.0-rc.61"></a>
+# [0.2.0-rc.61](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.60...v0.2.0-rc.61) (2019-08-13)
+
+
+### Bug Fixes
+
+* Added self-contained style for Menu component ([#177](https://github.com/SAP/fundamental-styles/issues/177)) ([1c9d952](https://github.com/SAP/fundamental-styles/commit/1c9d952))
+* Added self-contained style for Toggle component  ([#227](https://github.com/SAP/fundamental-styles/issues/227)) ([c4b5759](https://github.com/SAP/fundamental-styles/commit/c4b5759))
+
+
+
+<a name="0.2.0-rc.60"></a>
+# [0.2.0-rc.60](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.59...v0.2.0-rc.60) (2019-08-13)
+
+
+
 <a name="0.2.0-rc.59"></a>
 # [0.2.0-rc.59](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.58...v0.2.0-rc.59) (2019-08-12)
 
