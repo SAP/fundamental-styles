@@ -7,10 +7,10 @@
 $block: #{$fd-namespace}-panel-grid;
 .#{$block} {
   //VARS
-
   $fd-panel-grid-items-per-row: 3 !default;
   $fd-panel-grid-box-shadow: 0 5px 20px 0 rgba(fd-color("text"), 0.08) !default;
 
+  @include fd-reset();
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;

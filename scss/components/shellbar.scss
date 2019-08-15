@@ -249,3 +249,12 @@ $block: #{$fd-namespace}-shellbar;
         padding: $fd-shellbar-outer-spacing-tb $fd-shellbar-outer-spacing-lr-large;
     }
 }
+
+$block-user-menu: #{$fd-namespace}-user-menu;
+.#{$block-user-menu} {
+    @include fd-reset();
+    text-align: left;
+    &__control {
+      padding: fd-space(1);
+    }
+  }
