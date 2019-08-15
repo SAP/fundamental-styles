@@ -8,7 +8,6 @@ button_split:
 -->
 {% macro button_split(properties={}, modifier={}, state={}, aria={}) -%}
 <div class="fd-button-split{{ modifier.block | modifier('button-split') }}{{ state | state }}"{{ aria | aria }} role="group" aria-label="{{properties.label}}">
-  <button class="btn-playground">placeholder</button>
-  <button class="btn-playground">x</button>
+  {{- caller() | indent -}}
 </div>
 {%- endmacro %}

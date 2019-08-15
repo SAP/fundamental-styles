@@ -5,9 +5,24 @@
 
 {% block content %}
 
-  {% set example %}
+<h2>default</h2>
+{% set example %}
   
-{% call button_split() -%}{%- endcall %}
+{% call button_split() -%}
+  <button class="btn-playground">placeholder</button>
+  <button class="btn-playground">x</button>
+{%- endcall %}
+
+{% endset %}
+{{ format(example) }}
+
+<h2>emphasized</h2>
+{% set example %}
+  
+{% call button_split() -%}
+  <button class="btn-playground--emphasized">placeholder</button>
+  <button class="btn-playground--emphasized">x</button>
+{%- endcall %}
 
 {% endset %}
 {{ format(example) }}

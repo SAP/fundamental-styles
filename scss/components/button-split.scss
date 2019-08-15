@@ -14,30 +14,33 @@ $block: #{$fd-namespace}-button-split;
   display: inline-flex;
   vertical-align: middle;
   position: relative;
-  margin: 0;
   :first-child {
+    margin: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
   :nth-child(2) {
+    margin: 0;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-left-width: 0;
   }
   @include fd-rtl() {
-    :nth-child(2) {
-      border-top-left-radius: $fd-border-radius;
-      border-bottom-left-radius: $fd-border-radius;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      border-left-width: 1px;
-    }
     :first-child {
+      margin: 0;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       border-top-right-radius: $fd-border-radius;
       border-bottom-right-radius: $fd-border-radius;
       border-left-width: 0;
+    }
+    :nth-child(2) {
+      margin: 0;
+      border-top-left-radius: $fd-border-radius;
+      border-bottom-left-radius: $fd-border-radius;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-left-width: 1px;
     }
   }
   [class*="--emphasized"] {
