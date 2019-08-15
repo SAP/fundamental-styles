@@ -1,34 +1,20 @@
 {% extends "layout.njk" %}
 {% from "./component.njk" import list_group %}
-{% from "../form/component.njk" import form_item %}
-{% from "../button/component.njk" import button %}
-{% from "../icon/component.njk" import icon %}
 {% from "./../format.njk" import format %}
 
 {% block content %}
 
-<h2>default</h2>
-{% set example %}
-{{  list_group({ items: data.properties.items }) }}
-{% endset %}
-{{ format(example) }}
+    <h2>default</h2>
+    {% set example %}
+    {{  list_group({ items: data.properties.items }) }}
+    {% endset %}
+    {{ format(example) }}
 
-<br><br>
-<h2>with actions</h2>
-{% set example %}
-{{ list_group(data.properties) }}
-{% endset %}
-{{ format(example) }}
-
-<br><br>
-<h2>with checkboxes</h2>
-{% set example %}
-{{  list_group(
-      properties={
-          items: [form_item("checkbox",{ label: "List item 1" }),form_item("checkbox",{ label: "List item 2 sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" }),form_item("checkbox",{ label: "List item 3" })]
-      })
-}}
-{% endset %}
-{{ format(example) }}
+    <br/><br/>
+    <h2>with actions</h2>
+    {% set example %}
+    {{ list_group(data.properties) }}
+    {% endset %}
+    {{ format(example) }}
 
 {% endblock %}

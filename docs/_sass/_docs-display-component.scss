@@ -38,6 +38,17 @@
             color: inherit;
         }
     }
+    //implementation libraries will handle this differently as popover will live separately in the dom
+    //see popper.scss __full-width class
+    .fd-combobox-input, .fd-multi-input {
+        & .fd-popover {
+            display: block;
+
+            &__body {
+                width: 100%;
+            }
+        }
+    }
 
     .fd-identifier--s {
         display: inline-block;
@@ -361,10 +372,6 @@
 
     .fd-calendar__content {
         background: white;
-    }
-
-    .fd-toggle input {
-        border-radius: 15px;
     }
 
     &__spacing-example {

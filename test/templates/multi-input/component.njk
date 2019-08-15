@@ -1,13 +1,8 @@
-{% from "./../popover/component.njk" import popover %}
-{% from "./../menu/component.njk" import menu %}
-{% from "./../input-group/component.njk" import input_group %}
-{% from "../button/component.njk" import button %}
 {% import "./../utils.njk" as utils %}
 
 {#
     see ./data.json for object structure
 #}
-{%- set _id = utils.id() %}
 
 {% macro multi_input(
     properties={},
@@ -16,65 +11,14 @@
     classes=[]
     ,size="")
 -%}
-{%- set _id = utils.id() %}
     <div class="fd-multi-input">
         <div class="fd-multi-input-field">
-            <div class="fd-popover">
-                <div class="fd-popover__control">
-                    <div class="fd-combobox-control" aria-controls="{{_id}}" aria-expanded="false" aria-haspopup="true">
-                      {{- input_group(
-                          modifier={
-                              block: "after",
-                              after: ['after', 'button']
-                          },
-                          properties={
-                              input: {
-                                  properties: {
-                                      placeholder: "Select Fruit"
-                                  }
-                              },
-                              after: button(
-                                {
-                                    label: '',
-                                    icon: 'navigation-down-arrow'
-                                },
-                                modifier={
-                                    block: ['light']
-                                },size=size)
-                          },size=size)
-                      }}
-                    </div>
-                </div>
-                <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="{{_id}}">
-                    <nav class="fd-menu">
-                    <ul class="fd-menu__list">
-                        <li>{%- set _id = utils.id() %}
-                            <label for="{{_id}}" class="fd-menu__item">
-                                <input type="checkbox" class="fd-checkbox" id="{{_id}}">
-                                Apple
-                            </label>
-                        </li>
-                        <li>{%- set _id = utils.id() %}
-                            <label for="{{_id}}" class="fd-menu__item">
-                                <input type="checkbox" class="fd-checkbox" id="{{_id}}">
-                                Berry
-                            </label>
-                        </li>
-                        <li>{%- set _id = utils.id() %}
-                            <label for="{{_id}}" class="fd-menu__item">
-                                <input type="checkbox" class="fd-checkbox" id="{{_id}}">
-                                Banana
-                            </label>
-                        </li>
-                    </ul>
-                    </nav>
-                </div>
-            </div>
+            <input class="input-playground" placeholder="placeholder input" />
         </div>
         <div class="fd-multi-input-tokens">
-            <span class="fd-token" role="button">Apple</span>
-            <span class="fd-token" role="button">Berry</span>
-            <span class="fd-token" role="button">Banana</span>
+            <button class="btn-playground">placeholder</button>
+            <button class="btn-playground">placeholder</button>
+            <button class="btn-playground">placeholder</button>
         </div>
     </div>
 {%- endmacro %}
