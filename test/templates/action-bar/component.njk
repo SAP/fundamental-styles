@@ -1,27 +1,7 @@
 {% set headlines = ['h2', 'h3', 'h4', 'h5', 'h6'] %}
 
 {%- macro action_bar(properties={}, aria={}, title_size="h3") %}
-<div class="fd-action-bar">
-{%- if properties.back_button %}
-    <div class="fd-action-bar__back"><div class="test-btn-back sap-icon--nav-back"></div></div>
-{%- endif %}
-
-    <div class="fd-action-bar__header">
-        <{{title_size}} class="fd-action-bar__title">{{ properties.title }}</{{title_size}}>
-{%- if properties.description %}<p class="fd-action-bar__description">{{ properties.description }}</p>{%- endif %}
-    </div>
-{%- if properties.actions %}
-    {%- set actions = properties.actions %}
-    <div class="fd-action-bar__actions"{{ actions.aria | aria }}>
-    {%- for item in actions.properties.items %}{{ item }}{%- endfor %}
-    </div>
-{%- endif %}
-</div>
-{%- endmacro %}
-
-{%- macro action_bar_headlines(properties={}, aria={}) %}
-{%- for _h in headlines %}
-<h3>action bar with {{ _h}} headline</h3>
-{{ action_bar(properties, aria, _h) }}
-{%- endfor %}
-{%- endmacro %}
+        <div class="fd-action-bar">
+                {%- if properties.back_button %}
+                        <div class="fd-action-bar__back">
+                                <div class="btn-playground"><</div> </div> {%- endif %} <div class="fd-action-bar__header"> <{{title_size}} class="fd-action-bar__title">{{ properties.title }}</{{title_size}}> {%- if properties.description %} <p class="fd-action-bar__description">{{ properties.description }}</p> {%- endif %} </div> {%- if properties.actions %} {%- set actions = properties.actions %} <div class="fd-action-bar__actions" {{ actions.aria | aria }}> {%- for item in actions.properties.items %}{{ item }} {%- endfor %} </div> {%- endif %} </div> {%- endmacro %} {%- macro action_bar_headlines(properties={}, aria={}) %} {%- for _h in headlines %} <h3>action bar with {{ _h}} headline</h3> {{ action_bar(properties, aria, _h) }} {%- endfor %} {%- endmacro %}

@@ -1,21 +1,25 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "./component.njk" import action_bar, action_bar_headlines %}
+{% from "./component.njk" import action_bar,
+action_bar_headlines %}
 {% import "./../utils.njk" as utils %}
 
-
 {% block content %}
-{%- macro render_txt_button() %}<div class="test-btn-placeholder">Button</div>{%- endmacro %}
-{%- macro render_icon_button() %}<div class="test-btn-placeholder sap-icon--overflow"></div>{%- endmacro %}
+    {%- macro render_txt_button() %}
+        <div class="btn-playground">Button</div>
+    {%- endmacro %}
+    {%- macro render_icon_button() %}
+        <div class="btn-playground"></div>
+    {%- endmacro %}
 
-{%- set primarybtn %}{{render_txt_button()}}{%- endset %}
+    {%- set primarybtn %}{{render_txt_button()}}{%- endset %}
 
-{%- set contextmenu %}{{render_icon_button()}}{%- endset %}
+    {%- set contextmenu %}{{render_icon_button()}}{%- endset %}
 
-<!-- output the component example and the code snippet -->
+    <!-- output the component example and the code snippet -->
 
-{% set example %}
-{{  action_bar(
+    {% set example %}
+    {{  action_bar(
         properties={
             title: "Action Bar with description and back button",
             description: data.properties.description,
@@ -30,11 +34,11 @@
         aria={}
     )
 }}
-{% endset %}
-{{ format(example) }}
+    {% endset %}
+    {{ format(example) }}
 
-{% set example %}
-{{  action_bar(
+    {% set example %}
+    {{  action_bar(
         properties={
             title: "Action Bar with no description",
             actions: {
@@ -48,11 +52,11 @@
         aria={}
     )
 }}
-{% endset %}
-{{ format(example) }}
+    {% endset %}
+    {{ format(example) }}
 
-{% set example3 %}
-{{  action_bar_headlines(
+    {% set example3 %}
+    {{  action_bar_headlines(
         properties={
             title: "Action Bar with header",
             description: "Description message lorem ipsum",
@@ -66,12 +70,11 @@
         aria={}
     )
 }}
-{% endset %}
-{{ format(example3) }}
+    {% endset %}
+    {{ format(example3) }}
 
-
-{% set example %}
-{{  action_bar(
+    {% set example %}
+    {{  action_bar(
         properties={
             title: "Action Bar with no back button",
             actions: {
@@ -84,14 +87,14 @@
         aria={}
     )
 }}
-{% endset %}
-{{ format(example) }}
-<br><br>
+    {% endset %}
+    {{ format(example) }}
+    <br><br>
 
-<h2>Action bar on mobile screen  (320px)</h2>
-{% set example %}
-<div style="width:319px">
-{{  action_bar(
+    <h2>Action bar on mobile screen (320px)</h2>
+    {% set example %}
+    <div style="width:319px">
+        {{  action_bar(
         properties={
             title: "Action Bar with description and back button",
             actions: {
@@ -105,17 +108,17 @@
         aria={}
     )
 }}
-</div>
-{% endset %}
-{{ format(example) }}
+    </div>
+    {% endset %}
+    {{ format(example) }}
 
-<h2>Actions Hidden</h2>
-<div id="toggles">
-<button type="button" id="button">Simulate dirty state</button>
-<br>
-    <!-- output the component example and the code snippet -->
-    {% set example %}
-    {{  action_bar(
+    <h2>Actions Hidden</h2>
+    <div id="toggles">
+        <button type="button" id="button">Simulate dirty state</button>
+        <br>
+        <!-- output the component example and the code snippet -->
+        {% set example %}
+        {{  action_bar(
             properties={
                 navigation: backbtn,
                 title: data.properties.title,
@@ -132,9 +135,9 @@
             aria={}
         )
     }}
-    {% endset %}
-    {{ format(example) }}
-</div>
+        {% endset %}
+        {{ format(example) }}
+    </div>
     <script type="text/javascript">
         var button = document.getElementById("button");
         var toggles = document.getElementById("toggles");
@@ -142,16 +145,16 @@
         function doDirty() {
             for (var i = 0; i < actions.length; i++) {
                 var item = actions[i];
-                if(item.hasAttribute('aria-hidden')) {
-                    item.setAttribute('aria-hidden',false);
+                if (item.hasAttribute('aria-hidden')) {
+                    item.setAttribute('aria-hidden', false);
                 } else {
                     var classes = item.getAttribute("class");
-                    classes.replace('is-disabled','');
-                    item.setAttribute("class",classes.replace('is-disabled',''));
+                    classes.replace('is-disabled', '');
+                    item.setAttribute("class", classes.replace('is-disabled', ''));
                 }
             }
         }
-        button.addEventListener('click',function() {
+        button.addEventListener('click', function () {
             doDirty();
         })
     </script>
