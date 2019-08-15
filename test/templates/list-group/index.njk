@@ -4,28 +4,17 @@
 
 {% block content %}
 
-<h2>default</h2>
-{% set example %}
-{{  list_group({ items: data.properties.items }) }}
-{% endset %}
-{{ format(example) }}
+    <h2>default</h2>
+    {% set example %}
+    {{  list_group({ items: data.properties.items }) }}
+    {% endset %}
+    {{ format(example) }}
 
-<br /><br />
-<h2>with actions</h2>
-{% set example %}
-{{ list_group(data.properties) }}
-{% endset %}
-{{ format(example) }}
-
-<br /><br />
-<h2>with checkboxes</h2>
-{% set example %}
-{{  list_group(
-      properties={
-          items: ["<div class='test-pg__checkbox'></div>I have a bike","<div class='test-pg__checkbox'></div>I have a motobike","<div class='test-pg__checkbox'></div>I have a car"]
-      })
-}}
-{% endset %}
-{{ format(example) }}
+    <br/><br/>
+    <h2>with actions</h2>
+    {% set example %}
+    {{ list_group(data.properties) }}
+    {% endset %}
+    {{ format(example) }}
 
 {% endblock %}

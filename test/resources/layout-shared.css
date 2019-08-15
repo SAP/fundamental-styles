@@ -26,10 +26,3 @@ body {
   padding: 10px;
   font-size: 14px;
 }
-
-.test-pg__checkbox {
-  width: 15px;
-  height: 15px;
-  border: 1px solid magenta;
-  border-radius: 2px;
-}
