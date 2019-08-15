@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.68"></a>
+# [0.2.0-rc.68](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.67...v0.2.0-rc.68) (2019-08-15)
+
+
+### Bug Fixes
+
+* Added self-contained style for Counter component ([#219](https://github.com/SAP/fundamental-styles/issues/219)) ([91aac1d](https://github.com/SAP/fundamental-styles/commit/91aac1d))
+
+
+
 <a name="0.2.0-rc.67"></a>
 # [0.2.0-rc.67](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.66...v0.2.0-rc.67) (2019-08-15)
 
