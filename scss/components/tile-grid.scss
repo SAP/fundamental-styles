@@ -7,6 +7,7 @@
 $block: #{$fd-namespace}-tile-grid;
 .#{$block} {
   //VARS
+  @include fd-reset();
   $fd-tile-grid-border-color: fd-color("neutral", 2) !default;
   $fd-tile-grid-items-per-row: 3 !default;
 
@@ -38,6 +39,7 @@ $block: #{$fd-namespace}-tile-grid;
 
     //BLOCK MODIFIERS ************
     @each $n in 2, 3, 4, 5, 6 {
+      @include fd-reset();
       &--#{$n}col {
         grid-template-columns: repeat(#{$n}, 1fr);
         & > * {

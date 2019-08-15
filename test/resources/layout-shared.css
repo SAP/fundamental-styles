@@ -10,3 +10,15 @@ body {
     background: beige;
     font-size: 14px;
 }
+
+.tile-playground {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px;
+    background: beige;
+    font-size: 14px;
+}
+
+.product_tile_media_playground {
+    background-image: url("./static/nature.jpg");
+}
