@@ -107,13 +107,17 @@ $block: #{$fd-namespace}-action-bar;
             visibility: hidden;
         }
         & > * {
-          margin-left: fd-space(2);
+          &:nth-child(n+1) {
+            margin-left: fd-space(2);
+          }
           &:first-child {
             margin-left: 0;
           }
           @include fd-rtl() {
-            margin-right: fd-space(2);
-            margin-left: 0;
+            &:nth-child(n+1) {
+              margin-right: fd-space(2);
+              margin-left: 0;
+            }
             &:first-child {
               margin-right: 0;
             }
