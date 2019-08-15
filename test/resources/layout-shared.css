@@ -17,3 +17,10 @@ body {
     padding: 10px;
     font-size: 14px;
 }
+
+.badge-playground {
+    border: 1px solid black;
+    border-radius: 4px;
+    background: beige;
+    font-size: 10px;
+}
