@@ -1,7 +1,6 @@
 @import "./../settings";
 @import "./../mixins";
 @import "./../functions";
-@import "./../icons/mixins";
 
 /*!
 .fd-modal
@@ -72,10 +71,8 @@ $block: #{$fd-namespace}-modal;
       right: auto;
     }
     top: fd-space(2);
-    @include fd-icon("decline", "l");
     width: fd-space(9);
     height: fd-space(9);
-    @include fd-focus();
   }
 
   &__body {
