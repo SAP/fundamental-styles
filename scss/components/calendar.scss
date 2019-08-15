@@ -21,13 +21,14 @@ $block: #{$fd-namespace}-calendar;
 //VARS
 //making these more readily available
 $fd-calendar-item-color: fd-color-state("selected", "action") !default;
+$fd-calendar-content-background-color: fd-color("background", 2) !default;
 $fd-calendar-item-color--other-month: fd-color("text") !default;
 $fd-calendar-item-color--disabled: fd-color-state("disabled", "action") !default;
 $fd-calendar-item-color--selected: fd-color("text", 5) !default;
 $fd-calendar-item-color--current: $fd-calendar-item-color !default;
 $fd-calendar-item-color--blocked: fd-color("text", 1) !default;
 $fd-calendar-item-background-color: fd-color("background", 2) !default;
-$fd-calendar-item-background-color--hover: fd-color("neutral", 1) !default;
+$fd-calendar-item-background-color--hover: fd-color("neutral", 3) !default;
 $fd-calendar-item-background-color--selected: fd-color-state("selected", "action") !default;
 $fd-calendar-item-background-color--selected-range: fd-color-state("selected", "background") !default;
 $fd-calendar-item-border-color--current: $fd-color--action !default;
@@ -50,7 +51,7 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
   justify-content: center;
   &:hover {
     @include action-cursor();
-    @include fd-var-color("background-color", $fd-calendar-item-background-color--hover, --fd-color-neutral-1);
+    @include fd-var-color("background-color", $fd-calendar-item-background-color--hover, --fd-color-neutral-3);
   }
 }
 %fd-calendar-item-other-month {
@@ -149,6 +150,7 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
   }
   &__content {
     padding: fd-space(xs) 0;
+    @include fd-var-color("background-color", $fd-calendar-content-background-color, --fd-color-background-2);
   }
   &__navigation {
     display: flex;
