@@ -16,6 +16,7 @@ $block: #{$fd-namespace}-counter;
   --fd-counter-color: var(--fd-color-text-5);
   --fd-counter-background-color: var(--fd-color-status-4);
 
+  @include fd-reset();
   border-radius: $fd-counter-radius;
   @include fd-var-color("color", $fd-counter-color, --fd-counter-color);
   @include fd-var-color("background-color", $fd-counter-background, --fd-counter-background-color);
@@ -26,7 +27,7 @@ $block: #{$fd-namespace}-counter;
   padding: fd-space(1);
   &--notification {
     --fd-counter-background-color: var(--fd-color-status-3);
-    @include fd-var-color("background-color", fd-color("status", 3));
+    @include fd-var-color("background-color", map-get($fd-colors-status, 3), --fd-counter-background-color);
     position: absolute;
     transform: translate(-40%, -50%);
     @include fd-rtl() {
