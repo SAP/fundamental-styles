@@ -15,7 +15,6 @@ It is used for short forms, confirmation messages or to display contextual infor
 
 > {{ site.data.strings.headerDisclaimer }}
 
-
 ## Informational Modal
 This is used to present information to the user but the Alert Component doesn’t fit all the information.
 
@@ -25,7 +24,7 @@ This is used to present information to the user but the Alert Component doesn’
     <div class="fd-modal__content" role="document">
         <div class="fd-modal__header">
             <h3 class="fd-modal__title">Product Added</h3>
-            <button class="fd-button--light fd-modal__close" aria-label="close"></button>
+            <button class="fd-button--light fd-modal__close sap-icon--decline sap-icon--l" aria-label="close"></button>
         </div>
         <div class="fd-modal__body">
             <b>Thew new product have been added to your catalog.</b><br/>
@@ -53,7 +52,7 @@ This is used to confirm with the user before continuing with a destructive or co
     <div class="fd-modal__content" role="document">
         <div class="fd-modal__header">
             <h3 class="fd-modal__title">Delete</h3>
-            <button class="fd-button--light fd-modal__close" aria-label="close"></button>
+            <button class="fd-button--light fd-modal__close sap-icon--decline sap-icon--l" aria-label="close"></button>
         </div>
         <div class="fd-modal__body">
             Do you want to delete item <b>X</b>?
@@ -82,7 +81,7 @@ This is used for short forms in order to collect information from the user.
     <div class="fd-modal__content" role="document">
         <div class="fd-modal__header">
             <h3 class="fd-modal__title">Invite user</h3>
-            <button class="fd-button--light fd-modal__close" aria-label="close"></button>
+            <button class="fd-button--light fd-modal__close sap-icon--decline sap-icon--l" aria-label="close"></button>
         </div>
         <div class="fd-modal__body">
             <div class="fd-form__group">
