@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.75"></a>
+# [0.2.0-rc.75](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.74...v0.2.0-rc.75) (2019-08-16)
+
+
+### Bug Fixes
+
+* self contained styles for calendar component ([#251](https://github.com/SAP/fundamental-styles/issues/251)) ([f28ab88](https://github.com/SAP/fundamental-styles/commit/f28ab88))
+
+
+
 <a name="0.2.0-rc.74"></a>
 # [0.2.0-rc.74](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.73...v0.2.0-rc.74) (2019-08-16)
 
