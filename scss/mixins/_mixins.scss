@@ -26,6 +26,12 @@
   }
 }
 
+@mixin fd-children {
+  &:nth-child(n+1) {
+    @content;
+  }
+}
+
 @mixin fd-clearfix {
     &::after {
         content: "";
