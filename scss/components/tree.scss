@@ -70,8 +70,7 @@ $block: #{$fd-namespace}-tree;
         margin-left: 0;
         padding-left: 0;
         padding-right: 0;
-        &.is-hidden,
-        &[aria-hidden="true"] {
+        &.is-hidden {
             max-height: 0;
             opacity: 0;
             overflow: hidden;
@@ -149,6 +148,7 @@ $block: #{$fd-namespace}-tree;
     }
 
     &__control {
+        @include fd-reset();
         @include fd-button-reset();
         position: absolute;
         top: calc(50% - #{$fd-tree-control-width}/2);
@@ -162,11 +162,9 @@ $block: #{$fd-namespace}-tree;
         @include fd-var-color("color", $fd-link-color, --fd-color-action-1);
         @include fd-focus();
         @include fd-rtl() {
-          margin-left: fd-space(3);
-          margin-right: -#{$_row_padding};
+          margin-right: -40px;
           transform: rotate(0deg);
         }
-        &[aria-pressed="true"],
         &.is-pressed {
             transform: rotate(270deg);
         }
