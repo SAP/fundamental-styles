@@ -25,7 +25,8 @@ body {
 }
 
 .input-playground {
-  width: 250px;
+  width: 100%;
+  box-sizing: border-box;
   background: beige;
   padding: 10px;
   font-size: 14px;
