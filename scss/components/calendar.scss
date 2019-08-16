@@ -142,6 +142,9 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
     align-items: center;
   }
   &__action {
+    & > * {
+      @include fd-reset-child-spacing();
+    }
     [class*="sap-icon"] {
       @include fd-rtl() {
         transform: scaleX(-1);
