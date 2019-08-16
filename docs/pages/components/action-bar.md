@@ -76,7 +76,7 @@ When there are several main actions for a page, consider displaying them under a
                     <button class="fd-button--light sap-icon--overflow"
                     aria-controls="wgxzK859" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                 </div>
-                <div class="fd-popover__body" aria-hidden="true" id="wgxzK859">
+                <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="wgxzK859">
                     <nav class="fd-menu" id="">
                         <ul class="fd-menu__list">
                             <li><a href="#" class="fd-menu__item">Edit</a></li>
