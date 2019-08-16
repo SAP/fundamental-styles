@@ -138,6 +138,7 @@ $block: #{$fd-namespace}-tree;
             }
         }
         &--actions {
+            @include fd-reset();
             padding-top: 0;
             padding-bottom: 0;
             text-align: right;
