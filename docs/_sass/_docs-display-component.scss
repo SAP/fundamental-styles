@@ -38,9 +38,8 @@
             color: inherit;
         }
     }
-    //implementation libraries will handle this differently as popover will live separately in the dom
-    //see popper.scss __full-width class
-    .fd-combobox-input, .fd-multi-input {
+    //implementation libraries will handle this differently as popper/popover will live separately in the dom
+    .fd-combobox-input, .fd-multi-input, .fd-button-split {
         & .fd-popover {
             display: block;
 

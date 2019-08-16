@@ -204,22 +204,3 @@ Button with multiple actions
 </div>
 {% endcapture %}
 {% include display-component.html component=button-group-small %}
-
-<br>
-
-<style media="screen">
-  .fd-button,
-  .fd-button-group,
-  [class*="fd-button--"] {
-    margin-right: 10px;
-  }
-
-  .fd-button-group [class*="fd-button"] {
-    margin-right: 0px;
-  }
-  .fd-button-split .fd-button--emphasized,
-  .fd-button-split .fd-button
-  {
-    margin-right: 0;
-  }
-</style>
