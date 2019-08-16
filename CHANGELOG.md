@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.73"></a>
+# [0.2.0-rc.73](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.72...v0.2.0-rc.73) (2019-08-16)
+
+
+### Bug Fixes
+
+* add self-contained styles for Modal component ([#256](https://github.com/SAP/fundamental-styles/issues/256)) ([04362c0](https://github.com/SAP/fundamental-styles/commit/04362c0))
+
+
+
 <a name="0.2.0-rc.72"></a>
 # [0.2.0-rc.72](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.71...v0.2.0-rc.72) (2019-08-15)
 
