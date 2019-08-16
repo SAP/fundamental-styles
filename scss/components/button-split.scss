@@ -27,20 +27,18 @@ $block: #{$fd-namespace}-button-split;
   }
   @include fd-rtl() {
     :first-child {
-      margin: 0;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       border-top-right-radius: $fd-border-radius;
       border-bottom-right-radius: $fd-border-radius;
-      border-left-width: 0;
     }
     :nth-child(2) {
-      margin: 0;
       border-top-left-radius: $fd-border-radius;
       border-bottom-left-radius: $fd-border-radius;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
       border-left-width: 1px;
+      border-right-width: 0;
     }
   }
   [class*="--emphasized"] {
