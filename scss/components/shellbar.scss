@@ -263,6 +263,11 @@ $block-product-menu: #{$fd-namespace}-product-menu;
 
 .#{$block-product-menu} {
   $fd-product-menu-color: var(--fd-color-shell-2);
+  padding-right: 8px;
+  @include fd-rtl() {
+    padding-right: 0;
+    padding-left: 8px;
+  }
   &__control {
     @include fd-var-color("background-color", $fd-product-menu-color, --fd-color-shell-2);
     position: relative;
@@ -282,6 +287,14 @@ $block-product-menu: #{$fd-namespace}-product-menu;
       top: calc(50% - 2.5px);
       margin-left: 8px;
       margin-right: 8px;
+    }
+  }
+  .fd-popover__body--right {
+    right: -10px;
+
+    @include fd-rtl() {
+      right: auto;
+      left: -14px;
     }
   }
 }
