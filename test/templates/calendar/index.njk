@@ -1,21 +1,14 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "../button/component.njk" import button %}
 {% from "./component.njk" import calendar %}
 
 {% block content %}
-<style>
-main {background-color: white;}
-
-</style>
-
 
 <p>The <code>.fd-calendar__item</code> container takes the majority of styling. The rest of the markup provides the structure and layout.
 </p>
 <p>Classes available for <code>.fd-calendar__item</code>. All are available to dates, months, and years.</p>
 <style media="screen">
-    .calander-info{ background: #ccc;}
-    .calander-info td{ background: #fff;}
+    .calander-info{ background: #f3f4f5;}
 </style>
 <table class="fd-calendar calander-info" cellpadding="10" cellspacing="1" style="width: auto;">
   <tr>
