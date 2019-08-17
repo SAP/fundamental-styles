@@ -1,0 +1,14 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+
+{% block content %}
+    {% set example %}
+    <div style="border: 1px solid">
+        <article class="fd-page">
+            <header class="fd-page__header">Header</header>
+            <div class="fd-page__content">content</div>
+        </article>
+    </div>
+    {% endset %}
+    {{ format(example) }}
+{% endblock %}
