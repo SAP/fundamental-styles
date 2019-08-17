@@ -1,8 +1,5 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "../tile/component.njk" import tile, tile_content, tile_media, tile_actions %}
-{% from "../product-tile/component.njk" import product_tile, product_tile_content, product_tile_media %}
-{% from "../button/component.njk" import button %}
 {% from "./component.njk" import tile_grid %}
 {% from "../identifier/component.njk" import identifier %}
 
@@ -10,41 +7,31 @@
 
 
 {%- set tile_default %}
-{% call tile() -%}
-  {% call tile_content({ title: "Lorem ipsum" }) -%}
-  {%- endcall %}
-{%- endcall %}
+    <div class="tile-playgound">
+        <div class="tile-playground">Tile PG</div>
+    </div>
 {% endset %}
 
 {%- set tile_empty %}
-{% call tile() -%}
-{% call tile_content() -%}
-{%- endcall %}
-{%- endcall %}
+    <div class="tile-playgound">
+        <div class="tile-playground"></div>
+    </div>
 {% endset %}
 
 {%- set tile_icon %}
-{% call tile() -%}
-{% call tile_media() -%}
-{{
-  identifier(
-  properties={ icon: "home" },
-  modifier={ block: ["m"] },
-  classes=["has-background-color-accent-3"])
-}}
-{%- endcall %}
-{%- call tile_content({ title: "Lorem ipsum" }) -%}
-{%- endcall %}
-{%- endcall %}
+    <div class="tile-playgound">
+        <div class="tile-playground">
+            <span class="media-tile-playground"><img src="/static/nature.jpg" alt="picture" width="30px" height="30px"></span>
+            <span class="media-tile-playground">Media Tile PG<span>
+        </div>
+    </div>
 {% endset %}
 
 {%- set product_tile_image %}
-{%- call product_tile(aria={role: "button"}) -%}
-  {% call product_tile_media( { url: "./static/nature.jpg" }) -%}
-  {%- endcall %}
-  {%- call product_tile_content({ title: "Lorem ipsum" }) -%}
-  {%- endcall %}
-{%- endcall %}
+    <div class="product-tile-playground">
+        <img class="product-tile-media" src="/static/nature.jpg" alt="picture" style="width: 100%" height="100px">
+        <div class="tile-playground">Product Tile PG</div>
+    </div>
 {% endset %}
 
 <h2>3-col grid (default)</h2>
@@ -189,16 +176,14 @@ product_tile_image, product_tile_image, product_tile_image, product_tile_image, 
 <p>Shows use of helper classes <code>.fd-has-grid-row-span-2</code> and <code>.fd-has-grid-column-span-2</code>.
 </p>
 {% set tile_span_row_2 %}
-{% call tile(classes=['has-grid-row-span-2','has-background-color-accent-7']) -%}
-  {% call tile_content({ title: "Lorem ipsum" }) -%}
-  {%- endcall %}
-{%- endcall %}
+    <div class="tile-playgound fd-has-grid-row-span-2 fd-has-background-color-accent-7">
+        <div style="padding: 10px">Tile PG</div>
+    </div>
 {% endset %}
 {% set tile_span_col_2 %}
-{% call tile(classes=['has-grid-column-span-2','has-background-color-accent-7']) -%}
-  {% call tile_content({ title: "Lorem ipsum" }) -%}
-  {%- endcall %}
-{%- endcall %}
+    <div class="tile-playgound fd-has-grid-column-span-2 fd-has-background-color-accent-7">
+        <div style="padding: 10px">Tile PG</div>
+    </div>
 {% endset %}
 
 

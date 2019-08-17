@@ -6,8 +6,8 @@
 */
 $block: #{$fd-namespace}-tile-grid;
 .#{$block} {
-  //VARS
   @include fd-reset();
+  //VARS
   $fd-tile-grid-border-color: fd-color("neutral", 2) !default;
   $fd-tile-grid-items-per-row: 3 !default;
 
@@ -18,6 +18,7 @@ $block: #{$fd-namespace}-tile-grid;
   position: relative;
 
   & > * {
+    @include fd-reset();
     margin-bottom: 0;
     border-radius: 0 !important;
     position: relative;
@@ -30,6 +31,7 @@ $block: #{$fd-namespace}-tile-grid;
     flex: 1;
   }
   @include fd-screen(s) {
+    @include fd-reset();
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

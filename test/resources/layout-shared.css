@@ -28,13 +28,33 @@ body {
 }
 
 .tile-playground {
-    border: 1px solid black;
-    border-radius: 4px;
     padding: 10px;
-    background: beige;
+    background: white;
     font-size: 14px;
 }
 
-.product_tile_media_playground {
-    background-image: url("./static/nature.jpg");
+.product-tile-playground {
+  padding: 10px;
+  background: white;
+  font-size: 14px;
+  width: 25%;
 }
+
+.media-tile-playground {
+  display: table-cell;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.fd-has-grid-row-span-2 {
+  grid-row: span 2;
+} 
+
+.fd-has-grid-column-span-2 {
+  grid-column: span 2;
+}
+
+.fd-has-background-color-accent-7 {
+  background-color: var(--fd-color-accent-7, #0cd7ed) !important;
+}
+
