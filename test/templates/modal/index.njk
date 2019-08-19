@@ -1,17 +1,14 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
 {% from "./component.njk" import modal %}
-{% from "../icon/component.njk" import icon %}
 
 {% block content %}
 
-
 <p>
-NOTE: The <code>modal</code> itself does not provide the outer container. Use the <code>.fd-overlay</code> layout component in conjunction with the <code>.fd-ui__overlay</code> template container to hide and show the modal. See <a href="http://localhost:3030/pages/overlay">the overlay example</a>.
-
+  NOTE: The <code>modal</code> itself does not provide the outer container. Use the <code>.fd-overlay</code> layout component in conjunction with the <code>.fd-ui__overlay</code> template container to hide and show the modal. See <a href="http://localhost:3030/pages/overlay">the overlay example</a>.
 </p>
-{% set example %}
 
+{% set example %}
 
   {{  modal(
         properties={
@@ -32,7 +29,6 @@ NOTE: The <code>modal</code> itself does not provide the outer container. Use th
 
 {% set example %}
 
-
   {{  modal(
         properties={
             header: "Modal with H2 Header",
@@ -51,7 +47,6 @@ NOTE: The <code>modal</code> itself does not provide the outer container. Use th
 <br><br>
 
 {% set example %}
-
 
   {{  modal(
         properties={
@@ -72,7 +67,6 @@ NOTE: The <code>modal</code> itself does not provide the outer container. Use th
 
 {% set example %}
 
-
   {{  modal(
         properties={
             header: "Modal with H5 Header",
@@ -91,7 +85,6 @@ NOTE: The <code>modal</code> itself does not provide the outer container. Use th
 <br><br>
 
 {% set example %}
-
 
   {{  modal(
         properties={

@@ -339,7 +339,7 @@ These are dynamic classes which are affected by user selections
 			</tbody>
 			</table>
 		</div>
-		<div class="fd-calendar__months" id="crM8l491" aria-hidden="true">
+		<div class="fd-calendar__months is-hidden" id="crM8l491" aria-hidden="true">
 			<ul class="fd-calendar__list">
 				<li class="fd-calendar__item">
 				<span class="fd-calendar__text">Jan.</span></li>
@@ -367,7 +367,7 @@ These are dynamic classes which are affected by user selections
 				<span class="fd-calendar__text">Dec.</span></li>
 			</ul>
 		</div>
-		<div class="fd-calendar__years" aria-hidden="true" id="FTXrD591">
+		<div class="fd-calendar__years is-hidden" aria-hidden="true" id="FTXrD591">
 			<ul class="fd-calendar__list">
 				<li class="fd-calendar__item fd-calendar__item--current">
 				<span class="fd-calendar__text">2018</span></li>

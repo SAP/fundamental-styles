@@ -21,13 +21,14 @@ $block: #{$fd-namespace}-calendar;
 //VARS
 //making these more readily available
 $fd-calendar-item-color: fd-color-state("selected", "action") !default;
+$fd-calendar-content-background-color: fd-color("background", 2) !default;
 $fd-calendar-item-color--other-month: fd-color("text") !default;
 $fd-calendar-item-color--disabled: fd-color-state("disabled", "action") !default;
 $fd-calendar-item-color--selected: fd-color("text", 5) !default;
 $fd-calendar-item-color--current: $fd-calendar-item-color !default;
 $fd-calendar-item-color--blocked: fd-color("text", 1) !default;
 $fd-calendar-item-background-color: fd-color("background", 2) !default;
-$fd-calendar-item-background-color--hover: fd-color("neutral", 1) !default;
+$fd-calendar-item-background-color--hover: fd-color("neutral", 3) !default;
 $fd-calendar-item-background-color--selected: fd-color-state("selected", "action") !default;
 $fd-calendar-item-background-color--selected-range: fd-color-state("selected", "background") !default;
 $fd-calendar-item-border-color--current: $fd-color--action !default;
@@ -35,11 +36,10 @@ $fd-calendar-table-item-width: fd-space(9) !default;
 $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
 
 %fd-calendar-item {
-  --fd-calendar-item-color: var(--fd-color-action-selected);
-  --fd-calendar-item-background-color: var(--fd-color-background-2);
+  @include fd-reset();
   @include fd-type("-1");
-  @include fd-var-color("color", $fd-calendar-item-color, --fd-calendar-item-color);
-  @include fd-var-color("background-color", $fd-calendar-item-background-color, --fd-calendar-item-background-color);
+  @include fd-var-color("color", $fd-calendar-item-color, --fd-color-action-selected);
+  @include fd-var-color("background-color", $fd-calendar-item-background-color, --fd-color-background-2);
   height: $fd-calendar-table-item-width;
   min-width: $fd-calendar-table-item-width;
   padding: 0;
@@ -51,28 +51,23 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
   justify-content: center;
   &:hover {
     @include action-cursor();
-    --fd-calendar-item-background-color: var(--fd-color-neutral-1);
-    @include fd-var-color("background-color", $fd-calendar-item-background-color--hover);
+    @include fd-var-color("background-color", $fd-calendar-item-background-color--hover, --fd-color-neutral-3);
   }
 }
 %fd-calendar-item-other-month {
-  --fd-calendar-item-color: var(--fd-color-text-1);
-  @include fd-var-color("color", $fd-calendar-item-color--other-month);
+  @include fd-var-color("color", $fd-calendar-item-color--other-month, --fd-color-text-1);
   opacity: 0.4;
 }
 %fd-calendar-item-disabled {
-  --fd-calendar-item-color: var(--fd-color-action-disabled);
-  @include fd-var-color("color", $fd-calendar-item-color--disabled);
+  @include fd-var-color("color", $fd-calendar-item-color--disabled, --fd-color-action-disabled);
   &:hover {
     cursor: not-allowed;
-    --fd-calendar-item-background-color: var(--fd-color-background-2);
-    @include fd-var-color("background-color", $fd-calendar-item-background-color);
+    @include fd-var-color("background-color", $fd-calendar-item-background-color, --fd-color-background-2);
   }
 }
 %fd-calendar-item-current {
   position: relative;
-  --fd-calendar-item-color: var(--fd-color-action-selected);
-  @include fd-var-color("color", $fd-calendar-item-color--current);
+  @include fd-var-color("color", $fd-calendar-item-color--current, --fd-color-action-selected);
   &::after {
     content: "";
     position: absolute;
@@ -80,7 +75,6 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
     right: 0;
     bottom: 0;
     left: 0;
-    height: $fd-calendar-table-item-width;
     border-style: solid;
     border-width: 2px;
     @include fd-var-color("border-color", $fd-calendar-item-border-color--current, --fd-color-action);
@@ -89,22 +83,18 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
 }
 %fd-calendar-item-blocked {
   text-decoration: line-through;
-  --fd-calendar-item-color: var(--fd-color-text-1);
-  @include fd-var-color("color", $fd-calendar-item-color--blocked);
+  @include fd-var-color("color", $fd-calendar-item-color--blocked, --fd-color-text-1);
   &:hover {
     cursor: not-allowed;
     background-color: $fd-calendar-item-background-color;
   }
 }
 %fd-calendar-item-selected {
-  --fd-calendar-item-background-color: var(--fd-color-action-selected);
-  @include fd-var-color("background-color", $fd-calendar-item-background-color--selected);
-  --fd-calendar-item-color: var(--fd-color-text-5);
-  @include fd-var-color("color", $fd-calendar-item-color--selected);
+  @include fd-var-color("background-color", $fd-calendar-item-background-color--selected, --fd-color-action-selected);
+  @include fd-var-color("color", $fd-calendar-item-color--selected, --fd-color-text-5);
 }
 %fd-calendar-item-selected-range {
-  --fd-calendar-item-background-color: var(--fd-color-background-selected);
-  @include fd-var-color("background-color", $fd-calendar-item-background-color--selected-range);
+  @include fd-var-color("background-color", $fd-calendar-item-background-color--selected-range, --fd-color-background-selected);
   border-radius: 0;
 }
 %fd-calendar-item-selected-range-first {
@@ -114,7 +104,7 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
   border-radius: 0 $fd-border-radius $fd-border-radius 0;
 }
 %fd-calendar-content-hidden {
-  &[aria-hidden="true"], &.is-hidden {
+   &.is-hidden {
     display: none;
   }
 }
@@ -152,6 +142,9 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
     align-items: center;
   }
   &__action {
+    & > * {
+      @include fd-reset-child-spacing();
+    }
     [class*="sap-icon"] {
       @include fd-rtl() {
         transform: scaleX(-1);
@@ -160,6 +153,7 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
   }
   &__content {
     padding: fd-space(xs) 0;
+    @include fd-var-color("background-color", $fd-calendar-content-background-color, --fd-color-background-2);
   }
   &__navigation {
     display: flex;
@@ -188,11 +182,11 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
     vertical-align: middle;
     &:hover {
       cursor: default;
-      --fd-calendar-item-background-color: var(--fd-color-background-2);
-      @include fd-var-color("background-color", $fd-calendar-item-background-color);
+      @include fd-var-color("background-color", $fd-calendar-item-background-color, --fd-color-background-2);
     }
   }
   &__list {
+    @include fd-reset();
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -217,8 +211,7 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
       @extend %fd-calendar-item-current;
     }
     &--disabled,
-    &.is-disabled,
-    &[aria-disabled="true"] {
+    &.is-disabled {
       @extend %fd-calendar-item-disabled;
     }
     &--blocked,

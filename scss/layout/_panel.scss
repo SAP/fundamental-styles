@@ -41,6 +41,8 @@ $block: #{$fd-namespace}-panel;
     @include fd-var-size("border-width", $fd-panel-border-width, --fd-panel-border-width);
     @include fd-var-color("border-color", $fd-panel-border-color, --fd-panel-border-color);
 
+    @include fd-reset();
+
     @if $fd-support-css-var-fallback {
       box-shadow: 0 5px 20px 0 $fd-panel-box-shadow-color;
     }
@@ -57,15 +59,22 @@ $block: #{$fd-namespace}-panel;
         @include fd-var-color("color", fd-color("text", 3), --fd-color-text-3);
     }
     &__title {
+        @include fd-reset();
         @include fd-type("1");
         flex: 1;
         margin-bottom: 0;
         @include fd-var-color("color", $fd-panel-title-color, --fd-panel-title-color);
     }
     &__description {
+        @include fd-reset();
+        @include fd-var-color("color", fd-color("text", 3), --fd-color-text-3);
+        @include fd-type("-1");
         margin-top: fd-space(base);
     }
     &__actions {
+        @include fd-reset();
+        @include fd-var-color("color", fd-color("text", 3), --fd-color-text-3);
+        @include fd-type("-1");
         margin-left: auto;
         margin-top: -#{fd-space(base)};
         margin-bottom: -#{fd-space(base)};
@@ -75,14 +84,14 @@ $block: #{$fd-namespace}-panel;
         }
     }
     &__filters {
+        @include fd-reset();
         padding: $fd-panel-filters-padding;
         //border-bottom: solid 1px $fd-panel-filters-border-color;
         border-bottom-style: solid;
         border-bottom-width: 1px;
         @include fd-var-color("border-bottom-color", $fd-panel-filters-border-color, --fd-panel-divider-color);
         transition: all $fd-panel-fiters-transition-params;
-        &.is-hidden,
-        &[aria-hidden="true"] {
+        &.is-hidden {
           padding-top: 0;
           padding-bottom: 0;
           max-height: 0;
@@ -90,13 +99,22 @@ $block: #{$fd-namespace}-panel;
         }
     }
     &__body {
+        @include fd-reset();
         padding: $fd-panel-padding;
         &--full-bleed,
         &--bleed {
           padding: 0;
         }
+        > :first-child {
+          margin-top: 0;
+        }
+
+        > :last-child {
+          margin-bottom: 0;
+        }
     }
     &__footer {
+        @include fd-reset();
         display: flex;
         justify-content: center;
         padding: $fd-panel-footer-padding;
