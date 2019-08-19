@@ -1,27 +1,26 @@
 @import "./../settings";
 @import "./../mixins";
 @import "./../functions";
-@import "./../icons/mixins";
 
 /*!
 .fd-modal
-    .fd-modal__header
-        .fd-form__title
-    .fd-form__body
-    .fd-form__footer-items
-      .fd-modal__button-primary
-      .fd-modal__button-light
+  .fd-modal__header
+    .fd-form__title
+  .fd-form__body
+  .fd-form__footer-items
+    .fd-modal__button-primary
+    .fd-modal__button-light
 */
 $block: #{$fd-namespace}-modal;
+
 .#{$block} {
   $fd-modal-width: 460px !default;
-  //these are used only to roughly calculate body overflow on compact screens - this can be improved with a flex or grid solution
+  // these are used only to roughly calculate body overflow on compact screens -
+  // this can be improved with a flex or grid solution
   $fd-modal-header-height: 60px !default;
   $fd-modal-footer-height: 68px !default;
-
   --fd-modal-background-color: var(--fd-color-background-2);
   --fd-modal-border-color: var(--fd-color-neutral-2);
-
   $fd-modal-border-color: fd-color("neutral", 2) !default;
   $fd-modal-padding-x: $fd-width--gutter !default;
   --fd-modal-padding-x: var(--fd-width-gutter);
@@ -30,25 +29,31 @@ $block: #{$fd-namespace}-modal;
 
   @include fd-reset();
   max-width: $fd-modal-width;
+
   &__content {
     border-radius: $fd-border-radius;
     @include fd-var-color("background-color", $fd-modal-inner-content-background, --fd-modal-background-color);
   }
+
   &__header,
   &__body,
   &__footer {
+    @include fd-reset();
     @include fd-var-size("padding-left", $fd-modal-padding-x, --fd-modal-padding-x);
     @include fd-var-size("padding-right", $fd-modal-padding-x, --fd-modal-padding-x);
     padding-top: $fd-modal-padding-y;
     padding-bottom: $fd-modal-padding-y;
   }
+
   &__header {
     position: relative;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     @include fd-var-color("border-bottom-color", $fd-modal-border-color, --fd-modal-border-color);
   }
+
   &__title {
+    @include fd-heading();
     @include fd-type("1");
     margin-bottom: 0;
     padding-right: fd-space(9);
@@ -57,6 +62,7 @@ $block: #{$fd-namespace}-modal;
       padding-right: 0;
     }
   }
+
   &__close {
     position: absolute;
     right: fd-space(2);
@@ -65,18 +71,23 @@ $block: #{$fd-namespace}-modal;
       right: auto;
     }
     top: fd-space(2);
-    @include fd-icon("decline", "l");
     width: fd-space(9);
     height: fd-space(9);
-    @include fd-focus();
   }
+
   &__body {
     max-height: calc(100vh - #{$fd-modal-header-height} - #{$fd-modal-footer-height});
     overflow-y: auto;
-    > p {
-      padding: 0;
+
+    > :first-child {
+      margin-top: 0;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
     }
   }
+
   &__footer {
     text-align: right;
     @include fd-rtl() {

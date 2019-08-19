@@ -1,24 +1,15 @@
+## Related Issue
 Closes SAP/fundamental-styles#
 
-{{short description}}
+## Description
+{{ _Enter short description of the change_ }}
 
-<!-- If you've made any style changes, please provide appropriate before and after screenshots to help reviewers. -->
-#### Before and After Screenshots
+## Screenshots
+> **NOTE:** If you've made any style changes, please provide appropriate screenshots (before and after) to help reviewers.
+>
+> To see examples of which screenshots to include, go to [Screenshot Examples](https://github.com/SAP/fundamental-styles/wiki/Pull-Request-Screenshot-Examples).
 
-#### Test
+### Before:
 
-* {{test thing}}
 
-#### Changelog
-
-**New**
-
-* {{new thing}}
-
-**Changed**
-
-* {{change thing}}
-
-**Removed**
-
-* {{removed thing}}
+### After:

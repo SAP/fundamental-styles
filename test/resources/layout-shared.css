@@ -1,19 +1,32 @@
 body {
-    background-color: rgb(243, 244, 245);
-    transition: background-color .25s;
+  background-color: rgb(243, 244, 245);
+  transition: background-color 0.25s;
 }
 
-.btn-playground {
-    border: 1px solid black;
-    border-radius: 4px;
-    padding: 10px;
-    background: beige;
-    font-size: 14px;
+.btn-playground, .btn-playground--emphasized {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  background: beige;
+  font-size: 14px;
+}
+
+.btn-playground--emphasized {
+  background: pink;
+}
+
+.panel-playground {
+  border: 1px solid navy;
+  border-radius: 4px;
+  padding: 10px;
+  background: gold;
+  font-size: 14px;
+  box-shadow: 0 5px 20px 0 blue;
 }
 
 .input-playground {
-    width: 250px;
-    background: beige;
-    padding: 10px;
-    font-size: 14px;
+  width: 250px;
+  background: beige;
+  padding: 10px;
+  font-size: 14px;
 }

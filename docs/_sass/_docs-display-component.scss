@@ -38,8 +38,8 @@
             color: inherit;
         }
     }
-    //implementation libraries will handle this differently as popover will live separately in the dom
-    .fd-combobox-input, .fd-multi-input {
+    //implementation libraries will handle this differently as popper/popover will live separately in the dom
+    .fd-combobox-input, .fd-multi-input, .fd-button-split {
         & .fd-popover {
             display: block;
 
@@ -375,14 +375,6 @@
 
     .fd-panel__description, .fd-action-bar__description {
         padding: 0;
-    }
-
-    .fd-calendar__content {
-        background: white;
-    }
-
-    .fd-toggle input {
-        border-radius: 15px;
     }
 
     &__spacing-example {

@@ -1112,6 +1112,3 @@ pre code{
     overflow-x: scroll;
 }
 
-.fd-toggle input:focus{
-    outline: none;
-}
