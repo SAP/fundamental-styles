@@ -1,0 +1,20 @@
+@import "./../settings";
+@import "./../mixins";
+@import "./../functions";
+/*!
+.fd-textarea
+*/
+$block: #{$fd-namespace}-textarea;
+.#{$block} {
+    @include fd-reset();
+    @include fd-form-text();
+    @include fd-var-size("height", $fd-forms-height * 2);
+    height: calc(var(--fd-forms-height) * 2);
+    width: 100%;
+    padding-top: $fd-forms-padding;
+    &--compact {
+        @include fd-var-size("height", $fd-forms-height--compact);
+        height: calc(var(--fd-forms-height-compact) * 2);
+        padding-top: $fd-forms-padding;
+    }
+}

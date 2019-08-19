@@ -1,0 +1,50 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./component.njk" import formControl %}
+
+{% block content %}
+
+<h2>Default</h2>
+
+{% set example %}
+  {{ formControl() }}
+{% endset %}
+ <br><br>
+{{ format(example) }}
+ <br><br>
+<h2>Compact</h2>
+
+{% set example %}
+  {{ formControl(modifier={block: ["compact"]}) }}
+{% endset %}
+
+{{ format(example) }}
+
+<h2>States</h2>
+
+{% set example %}
+  {{ formControl(modifier={block: ["is-valid"]}) }}
+  <br><br>
+  {{ formControl(modifier={block: ["is-invalid"]}) }}
+  <br><br>
+  {{ formControl(modifier={block: ["is-warning"]}) }}
+  <br><br>
+  {{ formControl(properties="readonly") }}
+  <br><br>
+  {{ formControl(properties="disabled") }}
+{% endset %}
+
+{{ format(example) }}
+
+<h2>Types</h2>
+
+{% set example %}
+  {{ formControl(type="password") }}
+  <br><br>
+  {{ formControl(type="search") }}
+{% endset %}
+
+{{ format(example) }}
+
+
+{% endblock %}

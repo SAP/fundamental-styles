@@ -221,7 +221,7 @@ $block: #{$fd-namespace}-shellbar;
     }
 
     .#{$fd-namespace}-search-input {
-        .fd-input {
+        .fd-form-control {
             border-style: solid;
             border-width: 1px;
             @include fd-var-color("border-color", fd-color("shell", 2), --fd-shellbar-link-color);

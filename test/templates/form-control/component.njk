@@ -1,0 +1,3 @@
+{% macro formControl(properties="", modifier={}, type="text") -%}
+<input class="fd-form-control {{ modifier.block }}" type="{{type}}" placeholder='Placeholder Text' {{properties}} />
+{%- endmacro %}

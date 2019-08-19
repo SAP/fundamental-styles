@@ -1,0 +1,5 @@
+{% macro formItem(properties="", modifier={}) -%}
+<div class="fd-form-item{{ modifier.block | modifier('form-item') }}"{{properties}}>
+{{- caller() | indent -}}
+</div>
+{%- endmacro %}

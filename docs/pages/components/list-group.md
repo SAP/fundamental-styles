@@ -86,7 +86,7 @@ Checkboxes can be include on the left of each line for such purposes as bulk act
     <li class="fd-list-group__item">
         <div class="fd-form__item fd-form__item--check">
             <label class="fd-form__label" for="121Sd939">
-                <input type="checkbox" class="fd-form__control" id="121Sd939">
+                <input type="checkbox" class="fd-form-control" id="121Sd939">
                 List item 1
             </label>
         </div>
@@ -94,7 +94,7 @@ Checkboxes can be include on the left of each line for such purposes as bulk act
     <li class="fd-list-group__item">
         <div class="fd-form__item fd-form__item--check">
             <label class="fd-form__label" for="CndSd399">
-                <input type="checkbox" class="fd-form__control" id="CndSd399">
+                <input type="checkbox" class="fd-form-control" id="CndSd399">
                 List item 2 sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
             </label>
         </div>
@@ -102,7 +102,7 @@ Checkboxes can be include on the left of each line for such purposes as bulk act
     <li class="fd-list-group__item">
         <div class="fd-form__item fd-form__item--check">
             <label class="fd-form__label" for="S8jyH416">
-                <input type="checkbox" class="fd-form__control" id="S8jyH416">
+                <input type="checkbox" class="fd-form-control" id="S8jyH416">
                 List item 3
             </label>
         </div>

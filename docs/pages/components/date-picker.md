@@ -205,7 +205,7 @@ This component mostly relies on the CSS of other components and has very little 
 	<div class="fd-popover">
 		<div class="fd-popover__control">
 			<div class="fd-input-group fd-input-group--after fd-input-group--compact">
-				<input type="text" value="" placeholder="Pick a date" class="fd-input fd-input--compact">
+				<input type="text" value="" placeholder="Pick a date" class="fd-form-control fd-form-control--compact">
 				<span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
 				<button class="fd-popover__control fd-button--light sap-icon--calendar" aria-controls="Itcgq82" aria-expanded="false" aria-haspopup="true" aria-hidden="true"></button>
 				</span>

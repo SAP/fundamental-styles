@@ -1,63 +1,40 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% import "../forms.njk" as forms %}
+{% from "./component.njk" import checkbox %}
 
 {% block content %}
 
-    {% set basic_checkbox %}
+<h2>Default</h2>
 
-{{ forms.checkbox(
-    type="radio",
-    properties={
-    })
-}}
-{{ forms.checkbox(
-    type="radio",
-    properties={
-    },
-    state={
-      checked: true
-    })
-}}
-{{ forms.checkbox(
-    type="radio",
-    properties={
+{% set example %}
+  {{ checkbox() }}
+{% endset %}
+ <br><br>
+{{ format(example) }}
+ <br><br>
 
-    },
-    state={
-      indeterminate:true
-    })
-}}
-{{ forms.checkbox(
-    type="radio",
-    properties={
-    },
-    state={
-      disabled: true
-    })
-}}
-{{ forms.checkbox(
-    type="radio",
-    properties={
-    },
-    state={
-      checked: true,
-      disabled: true
-    })
-}}
-{{ forms.checkbox(
-    type="radio",
-    properties={
+<h2>Checked</h2>
 
-    },
-    state={
-      indeterminate: true,
-      disabled: true
-    })
-}}
+{% set example %}
+  {{ checkbox(properties='checked') }}
+{% endset %}
 
-    {% endset %}
+{{ format(example) }}
 
-    {{ format(basic_checkbox) }}
+
+{% set example %}
+  {{ checkbox(properties='checked') }}
+  {{ checkbox() }}
+  {{ checkbox() }}
+{% endset %}
+
+{{ format(example) }}
+<h2>States</h2>
+
+{% set example %}
+  {{ checkbox(properties='disabled') }}
+{% endset %}
+
+{{ format(example) }}
 
 {% endblock %}

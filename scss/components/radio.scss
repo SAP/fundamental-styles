@@ -1,0 +1,42 @@
+@import "./../settings";
+@import "./../mixins";
+@import "./../functions";
+/*!
+.fd-radio
+*/
+$block: #{$fd-namespace}-radio;
+.#{$block} {
+    @include fd-reset();
+    @extend %form-field-base;
+    @include action-cursor();
+    height: $fd-forms-height--input-check;
+    width: $fd-forms-height--input-check;
+    margin: 0;
+    vertical-align: middle;
+    position: relative;
+    border-radius: 50%;
+    &::after {
+        $check-size_: 8px;
+        content: "";
+        border-radius: 50%;
+        width: $check-size_;
+        height: $check-size_;
+        position: absolute;
+        top: calc(50% - (#{$check-size_}/2));
+        left: calc(50% - (#{$check-size_}/2));
+        transition: background-color $fd-forms-transition-params;
+        background-color: transparent;
+    }
+    &[checked] {
+        @include fd-var-color("border-color", $fd-forms-border-color--check, --fd-forms-border-color--check);
+        &::after {
+            @include fd-var-color("background-color", $fd-forms-border-color--check, --fd-forms-border-color--check);
+        }
+        @include fd-disabled() {
+            @include fd-var-color("border-color", $fd-forms-border-color--disabled, --fd-forms-border-color--disabled);
+            &::after {
+                @include fd-var-color("background-color", $fd-forms-border-color--disabled, --fd-forms-border-color--disabled);
+            }
+        }
+    }
+}

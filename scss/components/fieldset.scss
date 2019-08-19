@@ -1,0 +1,17 @@
+@import "./../settings";
+@import "./../mixins";
+@import "./../functions";
+/*!
+.fd-fieldset
+*/
+$block: #{$fd-namespace}-fieldset;
+.#{$block} {
+    //LOCAL VARS (set all vars used in component, always include !default)
+    $fd-form-item-margin-bottom: fd-space("small") !default;
+
+    @include fd-reset();
+    margin-bottom: $fd-form-item-margin-bottom;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

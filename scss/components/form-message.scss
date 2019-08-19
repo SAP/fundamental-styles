@@ -1,0 +1,72 @@
+@import "./../settings";
+@import "./../mixins";
+@import "./../functions";
+/*!
+.fd-form-message(--help, --error, --warning)
+*/
+$block: #{$fd-namespace}-form-message;
+.#{$block} {
+    //LOCAL VARS (set all vars used in component, always include !default)
+    $fd-form-message-font-size: -1 !default;
+    $fd-form-message-color: fd-color(text, 2) !default;
+
+    @include fd-reset();
+    //adjust for checks
+    @at-root {
+        .fd-form-item--check + & {
+            transform: translateY(-(fd-space(3)));
+            margin-bottom: -(fd-space(3));
+        }
+        .fd-form-item--inline.fd-form-item--check + & {
+            transform: translateY(fd-space(2));
+            margin-bottom: fd-space(2);
+        }
+    }
+    clear: both;
+    display: block;
+    @include fd-type(#{$fd-form-message-font-size});
+    color: $fd-form-message-color;
+    padding: fd-space(2) 0;
+    position: relative;
+    margin-top: fd-space(2);
+    &::before {
+        width: 18px;
+        height: 18px;
+        font-style: normal;
+        font-size: 1.3em;
+        font-family: "SAP-icons";
+        position: absolute;
+        left: 0;
+        color: fd-color("text", 5);
+        text-align: center;
+        line-height: 18px;
+    }
+    &--warning, &--error, &--help {
+        padding-left: fd-space(6);
+        &::before {
+            left: 0;
+            top: 6px;
+        }
+    }
+    &--help {
+        color: fd-color(text);
+        &::before {
+            color: fd-color(text);
+            content: "";
+        }
+    }
+    &--warning {
+        color: $fd-color--warning;
+        &::before {
+            color: $fd-color--warning;
+            content: "";
+        }
+    }
+    &--error {
+        color: $fd-color--error;
+        &::before {
+            content: "";
+            color: $fd-color--error;
+        }
+    }
+}

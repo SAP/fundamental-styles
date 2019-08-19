@@ -1,0 +1,49 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./component.njk" import select %}
+
+{% block content %}
+
+<h2>Default</h2>
+
+{% set example %}
+  {{ select() }}
+{% endset %}
+ <br><br>
+{{ format(example) }}
+ <br><br>
+<h2>Compact</h2>
+
+{% set example %}
+  {{ select(modifier={block: ["compact"]}) }}
+{% endset %}
+
+{{ format(example) }}
+
+<h2>States</h2>
+
+{% set example %}
+  {{ select(properties='disabled') }}
+  <br><br>
+  {{ select(properties='readonly') }}
+  <br><br>
+{% endset %}
+
+{{ format(example) }}
+
+<h2>MultiSelect</h2>
+
+{% set example %}
+  {{ select(properties='multiple') }}
+{% endset %}
+
+{{ format(example) }}
+  <br><br>
+{% set example %}
+  {{ select(properties='multiple', modifier={block: ["compact"]}) }}
+{% endset %}
+
+{{ format(example) }}
+
+
+{% endblock %}

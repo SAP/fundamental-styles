@@ -26,7 +26,7 @@ Multiple instances can be used in the `time-picker` to choose hours, minutes, se
           aria-label="Increase hours" aria-controls="1610C873"></button>
       </div>
       <div class="fd-time__input">
-          <input class="fd-form__control" type="text" placeholder="hh" value="02"
+          <input class="fd-form-control" type="text" placeholder="hh" value="02"
           id="1610C873" aria-label="Hours"/>
       </div>
       <div class="fd-time__control">
@@ -41,7 +41,7 @@ Multiple instances can be used in the `time-picker` to choose hours, minutes, se
           aria-label="Increase minutes" aria-controls="DDlHR199"></button>
       </div>
       <div class="fd-time__input">
-          <input class="fd-form__control" type="text" placeholder="mm" value="34" id="DDlHR199"
+          <input class="fd-form-control" type="text" placeholder="mm" value="34" id="DDlHR199"
           aria-label="Minutes"/>
       </div>
       <div class="fd-time__control">
@@ -55,7 +55,7 @@ Multiple instances can be used in the `time-picker` to choose hours, minutes, se
           aria-label="Increase seconds" aria-controls="8CAnL947"></button>
       </div>
       <div class="fd-time__input">
-          <input class="fd-form__control" type="text" placeholder="ss" value="56" id="8CAnL947"
+          <input class="fd-form-control" type="text" placeholder="ss" value="56" id="8CAnL947"
           aria-label="Seconds"/>
       </div>
       <div class="fd-time__control">
@@ -69,7 +69,7 @@ Multiple instances can be used in the `time-picker` to choose hours, minutes, se
           aria-label="Increase period" aria-controls="sEWOL676"></button>
       </div>
       <div class="fd-time__input">
-          <input class="fd-form__control" type="text" placeholder="am" value="pm" id="sEWOL676"
+          <input class="fd-form-control" type="text" placeholder="am" value="pm" id="sEWOL676"
           aria-label="Period"/>
       </div>
       <div class="fd-time__control">
@@ -92,7 +92,7 @@ Multiple instances can be used in the `time-picker` to choose hours, minutes, se
           aria-label="Increase hours" aria-controls="HgDLk176"></button>
       </div>
       <div class="fd-time__input">
-          <input class="fd-form__control" type="text" placeholder="hh" value="" id="HgDLk176"
+          <input class="fd-form-control" type="text" placeholder="hh" value="" id="HgDLk176"
           aria-label="Hours"/>
       </div>
       <div class="fd-time__control">
@@ -106,7 +106,7 @@ Multiple instances can be used in the `time-picker` to choose hours, minutes, se
           aria-label="Increase minutes" aria-controls="CHeFH472"></button>
       </div>
       <div class="fd-time__input">
-          <input class="fd-form__control" type="text" placeholder="mm" value="" id="CHeFH472"
+          <input class="fd-form-control" type="text" placeholder="mm" value="" id="CHeFH472"
           aria-label="Minutes"/>
       </div>
       <div class="fd-time__control">
@@ -120,7 +120,7 @@ Multiple instances can be used in the `time-picker` to choose hours, minutes, se
           aria-label="Increase seconds" aria-controls="qMPpb855"></button>
       </div>
       <div class="fd-time__input">
-          <input class="fd-form__control" type="text" placeholder="ss" value="" id="qMPpb855"
+          <input class="fd-form-control" type="text" placeholder="ss" value="" id="qMPpb855"
           aria-label="Seconds"/>
       </div>
       <div class="fd-time__control">
@@ -134,7 +134,7 @@ Multiple instances can be used in the `time-picker` to choose hours, minutes, se
           aria-label="Increase period" aria-controls="VpUG6928"></button>
       </div>
       <div class="fd-time__input">
-          <input class="fd-form__control" type="text" placeholder="am" value="" id="VpUG6928"
+          <input class="fd-form-control" type="text" placeholder="am" value="" id="VpUG6928"
           aria-label="Period"/>
       </div>
       <div class="fd-time__control">
@@ -160,7 +160,7 @@ disabled when the first or last values are reached.
           aria-label="Increase hours" aria-controls="Rjap5115"></button>
       </div>
       <div class="fd-time__input">
-          <input class="fd-form__control" type="text" placeholder="hh" value="00" id="Rjap5115"
+          <input class="fd-form-control" type="text" placeholder="hh" value="00" id="Rjap5115"
           aria-label="Hours"/>
       </div>
       <div class="fd-time__control">
@@ -174,7 +174,7 @@ disabled when the first or last values are reached.
           aria-label="Increase minutes" aria-controls="VnVPz732"></button>
       </div>
       <div class="fd-time__input">
-          <input class="fd-form__control" type="text" placeholder="mm" value="59" id="VnVPz732"
+          <input class="fd-form-control" type="text" placeholder="mm" value="59" id="VnVPz732"
           aria-label="Minutes"/>
       </div>
       <div class="fd-time__control">
