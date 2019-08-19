@@ -158,8 +158,8 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 
 <div class="fd-popover">
     <div class="fd-popover__control">
-        <div class="fd-form__item " >
-        <label class="fd-form__label" for="input-1">Input with a Popover:</label>
+        <div class="fd-form-item " >
+        <label class="fd-form-label" for="input-1">Input with a Popover:</label>
         <input class="fd-form-control fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="jhqD01" aria-expanded="false" aria-haspopup="true">
     </div>
     </div>

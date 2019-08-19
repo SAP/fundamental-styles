@@ -53,4 +53,15 @@
 {% endset %}
 {{ format(example) }}
 
+{% set example %}
+
+{% call formLabelWrap() -%}
+  <span>
+    <input type="checkbox">I am a toggle</input>
+  </span>
+{%- endcall %}
+
+{% endset %}
+{{ format(example) }}
+
 {% endblock %}

@@ -84,11 +84,9 @@ This is used for short forms in order to collect information from the user.
             <button class="fd-button--light fd-modal__close sap-icon--decline sap-icon--l" aria-label="close"></button>
         </div>
         <div class="fd-modal__body">
-            <div class="fd-form__group">
-                <div class="fd-form__item">
-                    <label class="fd-form__label" aria-required="true" for="input-2">Email*</label>
-                    <input class="fd-form-control" type="text" id="input-2">
-                </div>
+            <div class="fd-form-item">
+                <label class="fd-form-label" aria-required="true" for="input-2">Email*</label>
+                <input class="fd-form-control" type="text" id="input-2">
             </div>
         </div>
         <footer class="fd-modal__footer">

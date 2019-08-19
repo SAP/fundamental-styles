@@ -7,7 +7,6 @@
 $block: #{$fd-namespace}-checkbox;
 
 .#{$block} {
-    @extend %form-field-base;
     height: $fd-forms-height--input-check;
     width: $fd-forms-height--input-check;
     margin: 0;

@@ -33,7 +33,8 @@ $block: #{$fd-namespace}-form-label;
         padding: $fd-form-label-focus-gutter;
         margin: - $fd-form-label-focus-gutter;
     }
-    & > [type='radio'], [type='checkbox'] {
+    //needs child selector for radio/checkbox, grandchild selector for toggle
+    [type='radio'], [type='checkbox'] {
         box-sizing: content-box;
         @include fd-type(#{$fd-form-label-font-size--check});
         margin-bottom: 0;
@@ -41,6 +42,8 @@ $block: #{$fd-namespace}-form-label;
         display: inline-flex;
         align-items: center;
         line-height: $fd-forms-height--input-check;
+        float: left;
+        margin-right: 8px;
         @include action-cursor();
         &:focus-within {
             outline-width: 1px;
