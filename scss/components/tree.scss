@@ -113,6 +113,7 @@ $block: #{$fd-namespace}-tree;
     }
     $_row_padding: $fd-tree-control-width + $fd-tree-control-margin-right + 4;
     &__col {
+        @include fd-reset();
         flex: 1;
         padding: $fd-tree-cell-padding 0;
         //pad to account for control
