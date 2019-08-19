@@ -15,13 +15,13 @@ $block: #{$fd-namespace}-time;
       &:last-child {
         margin-right: 0;
       }
-    }
 
-    // Spacing and narrower side padding for child inputs
-    &__item > &__input {
-      margin: fd-space(2) 0;
-      padding-left: fd-space(2);
-      padding-right: fd-space(2);
-      text-align: center;
+      // Spacing and narrower side padding for child inputs
+      .#{$block}__input {
+        margin: fd-space(2) 0;
+        padding-left: fd-space(2);
+        padding-right: fd-space(2);
+        text-align: center;
+      }
     }
 }
