@@ -289,12 +289,4 @@ $block-product-menu: #{$fd-namespace}-product-menu;
       margin-right: 8px;
     }
   }
-  .fd-popover__body--right {
-    right: -10px;
-
-    @include fd-rtl() {
-      right: auto;
-      left: -14px;
-    }
-  }
 }
