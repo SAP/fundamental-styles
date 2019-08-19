@@ -23,7 +23,7 @@ summary:
             aria-haspopup="true" placeholder="Enter Label">
             <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
             <button class="fd-button--light"
-            aria-controls="test" aria-expanded="false" aria-haspopup="true">EN*</button>
+            aria-controls="NJvVh542c" aria-expanded="false" aria-haspopup="true">EN*</button>
             </span>
          </div>
       </div>
