@@ -33,8 +33,7 @@ $block: #{$fd-namespace}-form-label;
         padding: $fd-form-label-focus-gutter;
         margin: - $fd-form-label-focus-gutter;
     }
-    //needs child selector for radio/checkbox, grandchild selector for toggle
-    [type='radio'], [type='checkbox'] {
+    & > [type='radio'], [type='checkbox'] {
         box-sizing: content-box;
         @include fd-type(#{$fd-form-label-font-size--check});
         margin-bottom: 0;
@@ -54,3 +53,10 @@ $block: #{$fd-namespace}-form-label;
         }
     }
 }
+
+//TO DO: figure out movement when selecting a checkbox/radio
+// *  self contained components + update tests
+// * fix toggle labels alignment
+// * fix labels moving on click on radio/checkbox
+// * check out form-message @root selector
+// * check label selector that does children + grandchildren

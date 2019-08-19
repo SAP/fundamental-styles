@@ -15,25 +15,51 @@
 {% endset %}
 {{ format(example) }}
 <br><br>
-{% call formItem() -%}
-  <label>Placeholder label</label>
-  <input class="input-playground" placeholder="Placeholder input" />
-  <span>Placeholder form message</span>
-{%- endcall %}
-
+{% set example %}
+  {% call formItem() -%}
+    <label>Placeholder label</label>
+    <input class="input-playground" placeholder="Placeholder input" />
+    <span>Placeholder form message</span>
+  {%- endcall %}
 {% endset %}
 {{ format(example) }}
 
 <h2>Inline</h2>
-{% set example %}
-  
-{% call formItem(modifier={block: ["inline"]}) -%}
-  <label>Placeholder label</label>
-  <input class="input-playground" type="radio" />
-{%- endcall %}
 
+{% set example %}
+  {% call formItem(modifier={block: ["inline"]}) -%}
+    <label>
+      <input type="radio" />
+      Placeholder label
+    </label>
+  {%- endcall %}
+  {% call formItem(modifier={block: ["inline"]}) -%}
+    <label>
+      <input type="radio" />
+      Placeholder label
+    </label>
+  {%- endcall %}
+  {% call formItem(modifier={block: ["inline"]}) -%}
+    <label>
+      <input type="radio" />
+      Placeholder label
+    </label>
+    <span class="fd-form-message">Placeholder form message</span>
+  {%- endcall %}
 {% endset %}
 {{ format(example) }}
 
+
+{% set example %}
+  {% call formItem() -%}
+    <label>
+      <input type="radio" />
+      Placeholder label
+    </label>
+    <span class="fd-form-message">Placeholder form message</span>
+  {%- endcall %}
+{% endset %}
+
+{{ format(example) }}
 
 {% endblock %}
