@@ -49,6 +49,14 @@
         }
     }
 
+    .fd-date-picker {
+        & .fd-popover {
+            &__body {
+                padding: 0 12px;
+            }
+        }
+    }
+
     .fd-identifier--s {
         display: inline-block;
         background: transperant ;
