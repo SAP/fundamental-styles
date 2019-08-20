@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.81"></a>
+# [0.2.0-rc.81](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.80...v0.2.0-rc.81) (2019-08-20)
+
+
+### Bug Fixes
+
+* revert multi input test/new shared layout input class ([#284](https://github.com/SAP/fundamental-styles/issues/284)) ([dcc3303](https://github.com/SAP/fundamental-styles/commit/dcc3303))
+* self contained styles for tree component ([#268](https://github.com/SAP/fundamental-styles/issues/268)) ([14957a2](https://github.com/SAP/fundamental-styles/commit/14957a2))
+
+
+
 <a name="0.2.0-rc.80"></a>
 # [0.2.0-rc.80](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.79...v0.2.0-rc.80) (2019-08-20)
 
