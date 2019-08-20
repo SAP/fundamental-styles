@@ -31,11 +31,15 @@ body {
     font-size: 10px;
 }
 .input-playground {
-  width: 100%;
-  box-sizing: border-box;
+  width: 250px;
   background: beige;
   padding: 10px;
   font-size: 14px;
+}
+
+.input-playground-full-width {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .menu-playground {
