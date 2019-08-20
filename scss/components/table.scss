@@ -97,6 +97,7 @@ $block: #{$fd-namespace}-table;
     }
     &__col {
         @include fd-weight();
+        box-sizing: border-box;
         text-align: left;
         --fd-table-cell-spacing: calc(var(--fd-width-gutter) / 2);
         @include fd-var-size("padding-left", $fd-table-cell-spacing/2, --fd-table-cell-spacing);
@@ -174,7 +175,8 @@ $block: #{$fd-namespace}-table;
     }
 
     &__fixed-col {
-        @include fd-reset();
+        // @include fd-reset();
+
         position: absolute;
         z-index: map-get($fd-z-index-levels, "first");
         @if $fd-support-css-var-fallback {
