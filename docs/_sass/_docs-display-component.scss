@@ -40,7 +40,7 @@
     }
     //implementation libraries will handle this differently as popper/popover will live separately in the dom
     .fd-combobox-input, .fd-multi-input, .fd-button-split {
-        & .fd-popover {
+        .fd-popover {
             display: block;
 
             &__body {
@@ -50,16 +50,22 @@
     }
 
     .fd-date-picker {
-        & .fd-popover {
+        .fd-popover {
             &__body {
                 padding: 0 12px;
             }
         }
     }
 
+    .fd-time-picker {
+        .fd-popover__body {
+            padding: 16px;
+        }
+    }
+
     .fd-product-menu {
-    .fd-popover__body--right {
-        right: -10px;
+        .fd-popover__body--right {
+            right: -10px;
         }
     }
 
