@@ -3,13 +3,9 @@
 {% from "./component.njk" import time %}
 
 {% block content %}
-
-
   <p>The <code>fd-time</code> component is used for a single time value. Multiple components can be used in the
 <a href="time-picker"><code>fd-time-picker</code></a>
      to assemble a clock time. A max of four will account for hours, minutes, seconds and period of the day.</p>
-
-</p>
 
   <p>
 <strong>It will be rare to see this component used outside of the <code>fd-time-picker</code>.
@@ -17,65 +13,11 @@
 
   </p>
 
-
-  <h2>with values</h2>
+  <h2>with values and placeholders</h2>
   {% set example %}
 {{ time(properties=data.properties) }}
   {% endset %}
 
   {{ format(example) }}
-<br><br>
-
-  <h2>with placeholder</h2>
-  {% set example %}
-{{ time(properties={ items: [
-  {
-    "placeholder": "hh",
-    "label": "hours"
-  },
-  {
-    "placeholder": "mm",
-    "label": "minutes"
-  },
-  {
-    "placeholder": "ss",
-    "label": "seconds"
-  },
-  {
-    "placeholder": "am",
-    "label": "period"
-  }]
-}) }}
-  {% endset %}
-
-  {{ format(example) }}
-
-<br><br>
-<h2>with button state</h2>
-
-<p>Since the controls and inputs are standard components, they can take all states available to buttons and forms respectively, e.g., <code>disabled, .is-invalid</code>. In this case, the buttons are disabled when the first or last values are reached.
-</p>
-
-
-  {% set example %}
-  {{ time(properties={ items: [
-    {
-      "value": "00",
-      "placeholder": "hh",
-      "label": "hours",
-      "firstValue": true
-    },
-    {
-      "value": "59",
-      "placeholder": "mm",
-      "label": "minutes",
-      "lastValue": true
-    }
-]
-  }) }}
-  {% endset %}
-
-  {{ format(example) }}
-
 
 {% endblock %}
