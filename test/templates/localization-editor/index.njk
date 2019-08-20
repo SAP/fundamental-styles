@@ -1,93 +1,15 @@
 {% extends "layout.njk" %}
 {% import "./../utils.njk" as utils %}
 {% from "./../format.njk" import format %}
-{% from "./../popover/component.njk" import popover %}
-{% from "./../menu/component.njk" import menu %}
-{% from "../button/component.njk" import button %}
-{% import "../forms.njk" as forms %}
-{% from "./component.njk" import localization_editor %}
+{% from "./component.njk" import localization_editor_language_list %}
 
 {% block content %}
-<h2>with input</h2>
+<h2>languages list</h2>
 
 
 {% set example %}
-{{  localization_editor(
+{{  localization_editor_language_list(
         properties=data.properties
-    )
-}}
-
-{% endset %}
-{{ format(example) }}
-
-<br><br>
-<h3>compact</h3>
-{% set example %}
-{{  localization_editor(
-        properties=data.properties,
-        size="compact"
-    )
-}}
-
-{% endset %}
-{{ format(example) }}
-
-
-<br><br><br>
-<h2>with textarea</h2>
-
-{% set example %}
-{%- set _id = utils.id() %}
-{{  localization_editor(
-         {
-            "type": "textarea",
-            "items": [
-              {
-                  "properties": {
-                    "value": "",
-                    "placeholder": "Enter label",
-                     "label": "EN"
-                  },
-                  "state": {
-                    "status": "",
-                    "required": true
-                  }
-              },
-              {
-                  "properties": {
-                    "value": "",
-                    "placeholder": "",
-                     "label": "ES"
-                  },
-                  "state": {
-                    "status": "",
-                    "required": false
-                  }
-              },
-              {
-                  "properties": {
-                    "value": "",
-                    "placeholder": "",
-                     "label": "CH"
-                  },
-                  "state": {
-                    "status": "",
-                    "required": false
-                  }
-              },
-              {
-                  "properties": {
-                    "value": "",
-                    "placeholder": "",
-                     "label": "PL"
-                  },
-                  "state": {
-                    "status": "",
-                    "required": false
-                  }
-              }
-            ]
-        }
     )
 }}
 

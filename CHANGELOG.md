@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.79"></a>
+# [0.2.0-rc.79](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.78...v0.2.0-rc.79) (2019-08-20)
+
+
+### Features
+
+* remove product menu as a component ([#267](https://github.com/SAP/fundamental-styles/issues/267)) ([32ebb38](https://github.com/SAP/fundamental-styles/commit/32ebb38))
+
+
+
+<a name="0.2.0-rc.78"></a>
+# [0.2.0-rc.78](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.77...v0.2.0-rc.78) (2019-08-20)
+
+
+### Features
+
+* Self-contained styling for localization editor ([#276](https://github.com/SAP/fundamental-styles/issues/276)) ([136f336](https://github.com/SAP/fundamental-styles/commit/136f336))
+
+
+
 <a name="0.2.0-rc.77"></a>
 # [0.2.0-rc.77](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.76...v0.2.0-rc.77) (2019-08-19)
 
