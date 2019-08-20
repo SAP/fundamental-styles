@@ -1,0 +1,13 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./component.njk" import colorpalette %}
+
+{% block content %}
+
+    {% set example %}
+    {{colorpalette()}}
+
+    {% endset %}
+    {{ format(example) }}
+
+{% endblock %}
