@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.82"></a>
+# [0.2.0-rc.82](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.81...v0.2.0-rc.82) (2019-08-20)
+
+
+### Bug Fixes
+
+* add new section playground; section self-contained ([#272](https://github.com/SAP/fundamental-styles/issues/272)) ([85f6178](https://github.com/SAP/fundamental-styles/commit/85f6178))
+
+
+
 <a name="0.2.0-rc.81"></a>
 # [0.2.0-rc.81](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.80...v0.2.0-rc.81) (2019-08-20)
 
