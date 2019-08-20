@@ -10,38 +10,27 @@
       {
         "value": "02",
         "placeholder": "hh",
-        "label": "hours",
-        "firstValue": false,
-        "lastValue": false
+        "label": "hours"
       },
       {
         "value": "34",
         "placeholder": "mm",
-        "label": "minutes",
-        "firstValue": false,
-        "lastValue": false
+        "label": "minutes"
       },
       {
         "value": "56",
         "placeholder": "ss",
-        "label": "seconds",
-        "firstValue": false,
-        "lastValue": false
+        "label": "seconds"
       },
       {
         "value": "pm",
         "placeholder": "am",
-        "label": "period",
-        "firstValue": false,
-        "lastValue": false
+        "label": "period"
       }
     ]
   },
   "modifier": {
     "block": ""
-  },
-  "state": {
-    "disabled": false
   },
   "aria": {}
 }

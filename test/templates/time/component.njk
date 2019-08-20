@@ -1,48 +1,29 @@
 {% import "./../utils.njk" as utils %}
-{% from "../button/component.njk" import button %}
 
 <!--
-menu:
+time:
     properties={},
     modifier={ block: [] },
-    state={},
     aria={}
 -->
 
-
-{%- macro time(properties={}, state={}, modifier=[], classes=[], aria=[]) -%}
-<div class="fd-time{{ modifier | modifier('time') }}{{ classes | classes }}"{{ aria | aria }}>
+{%- macro time(properties={}, modifier=[], aria=[]) -%}
+<div class="fd-time{{ modifier | modifier('time') }}"{{ aria | aria }}>
   {%- for item in properties.items %}
     {{ time_item(item) }}
   {%- endfor %}
 </div>
 {%- endmacro %}
 
-{%- macro time_item(properties={}, state={}, modifier=[], classes=[], aria=[]) -%}
+{%- macro time_item(properties={}) -%}
 {%- set _id = utils.id() %}
   <div class="fd-time__item">
       <div class="fd-time__control">
-          {{  button({
-                  icon: 'navigation-up-arrow' },
-                  modifier={ block: ['standard','light','compact'] },
-                  aria={ label: 'Increase ' + properties.label, controls: _id },
-                  state={
-                    disabled: properties.lastValue
-                  })
-          }}
+          <button class="btn-playground"></button>
       </div>
-      <div class="fd-time__input">
-          <input class="fd-form__control" type="text" placeholder="{{properties.placeholder}}" value="{{properties.value}}" id="{{ _id }}" aria-label="{{properties.label | capitalize }}"/>
-      </div>
+      <input class="fd-time__input input-playground" type="text" placeholder="{{properties.placeholder}}" value="{{properties.value}}" id="{{ _id }}" aria-label="{{properties.label | capitalize }}"/>
       <div class="fd-time__control">
-          {{  button({
-                  icon: 'navigation-down-arrow' },
-                  modifier={ block: ['standard','light','compact'] },
-                  aria={ label: 'Decrease ' + properties.label, controls: _id },
-                  state={
-                    disabled: properties.firstValue
-                  })
-          }}
+          <button class="btn-playground"></button>
       </div>
   </div>
 {%- endmacro %}
