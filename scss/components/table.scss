@@ -66,14 +66,14 @@ $block: #{$fd-namespace}-table;
         @include fd-var-color("color", $fd-table-header-color, --fd-table-header-color);
         @include fd-var-color("background-color", $fd-table-header-background-color, --fd-table-header-background-color);
 
-        &--row {
+        &-row {
             &:hover {
                 background-color: inherit;
             }
         }
 
-        &--col,
-        &--row {
+        &-col,
+        &-row {
             border: none;
             @include fd-weight();
 
@@ -84,14 +84,14 @@ $block: #{$fd-namespace}-table;
         }
     }
     &__body {
-        &--row {
+        &-row {
             border-style: solid;
             border-width: $fd-table-border-width;
             @include fd-var-color("border-color", $fd-table-border-color, --fd-table-border-color);
             border-left: none;
             border-right: none;
         }
-        &--col {
+        &-col {
             word-break: break-word;
         }
     }
@@ -166,7 +166,7 @@ $block: #{$fd-namespace}-table;
         }
     }
 
-    .#{$block}__header--col.fd-table__context-menu {
+    .#{$block}__header-col.fd-table__context-menu {
         &:hover {
             @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
             cursor: pointer;
@@ -198,14 +198,14 @@ $block: #{$fd-namespace}-table;
     &--no-borders {
         border: none;
 
-        .#{$block}__body--row {
+        .#{$block}__body-row {
             border: none;
         }
     }
 
     &--striped {
 
-        .#{$block}__body--row:nth-child(even) {
+        .#{$block}__body-row:nth-child(even) {
             @include fd-var-color("background-color", fd-color-state("hover"), --fd-color-background-hover);
         }
     }
