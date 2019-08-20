@@ -208,4 +208,22 @@ $block: #{$fd-namespace}-table;
             @include fd-var-color("background-color", fd-color-state("hover"), --fd-color-background-hover);
         }
     }
+
+    &.#{$fd-namespace}-has-first-child-text-align-right {
+        .#{$block}__col:first-child {
+          text-align: right !important;
+        }
+    }
+    &.#{$fd-namespace}-has-last-child-text-align-right {
+        .#{$block}__col:last-child {
+            text-align: right !important;
+        }
+    }
+    @each $i in 2,3,4,5,6,7,8,9 {
+        &.#{$fd-namespace}-has-nth-child-#{$i}-text-align-right {
+            .#{$block}__col:nth-child(#{$i}) {
+            text-align: right !important;
+            }
+        }
+    }
 }
