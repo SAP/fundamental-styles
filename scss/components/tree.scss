@@ -98,7 +98,6 @@ $block: #{$fd-namespace}-tree;
           @include fd-var-color("background-color", $fd-tree-row-background-color--hover, --fd-color-background-hover);
         }
         &--header {
-            @include fd-type("-1");
             @include fd-var-color("color", $fd-tree-header-color, --fd-tree-header-color);
             @include fd-var-color("background-color", $fd-tree-header-background-color, --fd-tree-header-background-color);
             text-transform: uppercase;
