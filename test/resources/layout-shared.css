@@ -30,7 +30,7 @@ body {
     background: beige;
     font-size: 10px;
 }
-.input-playground {
+.input-playground, .input-playground-full-width {
   width: 250px;
   background: beige;
   padding: 10px;
