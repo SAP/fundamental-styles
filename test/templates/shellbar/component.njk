@@ -3,7 +3,6 @@
 {% from "./../popover/component.njk" import popover %}
 {% from "./../menu/component.njk" import menu %}
 {% from "./../button/component.njk" import button %}
-{% from "./../product-switcher/component.njk" import product_switcher %}
 {% from "./../search-input/component.njk" import search_input %}
 {% from "./../counter/component.njk" import counter %}
 
@@ -203,7 +202,7 @@ shellbar:
             <div class="fd-popover fd-popover--right">
               <div class="fd-popover__control">
                 <div class="fd-shellbar-collapse--control" aria-controls="{{_id}}" aria-expanded="false" aria-haspopup="true" role="button">
-                  <button class=" fd-button--shell sap-icon--overflow" aria-controls="undefined" aria-haspopup="true" aria-expanded="false">
+                  <button class="fd-button--shell sap-icon--overflow" aria-controls="undefined" aria-haspopup="true" aria-expanded="false">
                   <span class="fd-counter fd-counter--notification" aria-label="Unread count">25</span></button>
                 </div>
               </div>
@@ -236,7 +235,7 @@ shellbar:
         {%- endif %}
         {%- if switcher %}
             <div class="fd-shellbar__action fd-shellbar__action--collapsible">
-              {{ product_switcher() }}
+              <button class=" fd-button--shell sap-icon--grid"></button>
             </div>
         {%- endif %}
     </div>
