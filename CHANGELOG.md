@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.80"></a>
+# [0.2.0-rc.80](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.79...v0.2.0-rc.80) (2019-08-20)
+
+
+### Features
+
+* add self-contained styles for Time component ([#269](https://github.com/SAP/fundamental-styles/issues/269)) ([54b7b1e](https://github.com/SAP/fundamental-styles/commit/54b7b1e))
+
+
+
 <a name="0.2.0-rc.79"></a>
 # [0.2.0-rc.79](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.78...v0.2.0-rc.79) (2019-08-20)
 
