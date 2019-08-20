@@ -30,3 +30,7 @@ body {
   padding: 10px;
   font-size: 14px;
 }
+
+.menu-playground {
+    list-style: none;
+}

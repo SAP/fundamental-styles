@@ -2,48 +2,11 @@
 @import "./../mixins";
 @import "./../functions";
 
-/*!
-.fd-localization-editor+(--no-border)
-    .fd-localization-editor__content+()
-    .fd-localization-editor__title+()
-*/
 $block: #{$fd-namespace}-localization-editor;
 
 .#{$block} {
-    //LOCAL VARS (set all themeable properties, always include !default)
-
-    //BLOCK BASE *******************************************
-    //set all BLOCK reset and baseline styles
-    @include fd-reset();
-
-    //BLOCK MODIFIERS ************
-
-    //ELEMENTS *******************************************
-    &__list li {
+    &__language {
+        @include fd-reset();
         padding: fd-space(2);
-
-        > .fd-input-group {
-            > input, textarea {
-                width: 81%;
-            }
-        }
-    }
-
-    &__button {
-        height: 100% !important;
-        max-height: 100% !important;
-    }
-
-    .fd-popover__body {
-        width: 100%;
-    }
-
-    .fd-menu {
-        display: block;
-    }
-    //STATES *******************************************
-    &.is-disabled,
-    &[disabled] {
-        opacity: 0.5;
     }
 }
