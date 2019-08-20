@@ -47,7 +47,8 @@ $block: #{$fd-namespace}-table;
     border-width: $fd-table-border-width;
     @include fd-var-color("border-color", $fd-table-border-color, --fd-table-border-color);
 
-    tr {
+
+    &__row {
         transition: background-color $fd-table-transition-params;
         @include fd-hover() {
           @include fd-var-color("background-color", $fd-table-row-background-color--hover, --fd-color-background-hover);
@@ -60,19 +61,19 @@ $block: #{$fd-namespace}-table;
         }
     }
 
-    thead {
+    &__header {
         @include fd-type("-1");
         @include fd-var-color("color", $fd-table-header-color, --fd-table-header-color);
         @include fd-var-color("background-color", $fd-table-header-background-color, --fd-table-header-background-color);
 
-        tr {
+        &--row {
             &:hover {
                 background-color: inherit;
             }
         }
 
-        td,
-        th {
+        &--col,
+        &--row {
             border: none;
             @include fd-weight();
 
@@ -82,20 +83,19 @@ $block: #{$fd-namespace}-table;
             }
         }
     }
-    tbody {
-        tr {
+    &__body {
+        &--row {
             border-style: solid;
             border-width: $fd-table-border-width;
             @include fd-var-color("border-color", $fd-table-border-color, --fd-table-border-color);
             border-left: none;
             border-right: none;
         }
-        td {
+        &--col {
             word-break: break-word;
         }
     }
-    td,
-    th {
+    &__col {
         @include fd-weight();
         text-align: left;
         --fd-table-cell-spacing: calc(var(--fd-width-gutter) / 2);
@@ -166,7 +166,7 @@ $block: #{$fd-namespace}-table;
         }
     }
 
-    th.fd-table__context-menu {
+    .#{$block}__header--col.fd-table__context-menu {
         &:hover {
             @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
             cursor: pointer;
@@ -177,9 +177,6 @@ $block: #{$fd-namespace}-table;
         @include fd-reset();
         position: absolute;
         z-index: map-get($fd-z-index-levels, "first");
-    }
-
-    .fd-table__fixed-col {
         @if $fd-support-css-var-fallback {
             box-shadow: 2px 0 0 0 $fd-table-border-color;
         }
@@ -193,20 +190,22 @@ $block: #{$fd-namespace}-table;
         overflow-x: scroll;
         padding-left: 200px;
 
-        td {
+        .#{$block}__col {
             min-width: 200px;
         }
     }
 
     &--no-borders {
         border: none;
-        & tbody tr {
+
+        .#{$block}__body--row {
             border: none;
         }
     }
 
     &--striped {
-        tbody tr:nth-child(even) {
+
+        .#{$block}__body--row:nth-child(even) {
             @include fd-var-color("background-color", fd-color-state("hover"), --fd-color-background-hover);
         }
     }
