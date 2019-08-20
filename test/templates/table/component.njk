@@ -42,28 +42,28 @@ table:
 {% endif %}
 <table  class="fd-table{{ modifier.block | modifier('table') }}{{ state | state }}{{ classes | classes }}"{{ aria | aria }}>
     <thead class="fd-table__header">
-        <tr class="fd-table__header-row fd-table__row">
+        <tr class="fd-table__row">
             {%- for header in properties.headers %}
             {%- if header.context_menu -%}
-            <th class="fd-table__context-menu {{header.classes | classes}} fd-table__header-col fd-table__col " style="left:{{0 if header.fixed_col else header.offset}}; width:{{header.width}}" {{header.aria | aria}}  scope="col" >
+            <th class="fd-table__context-menu {{header.classes | classes}} fd-table__col " style="left:{{0 if header.fixed_col else header.offset}}; width:{{header.width}}" {{header.aria | aria}}  scope="col" >
                 {{ table_contextual_header(header) }}
             </th>
             {%- else -%}
-            {% set sort_class = "fd-table__header-col fd-table__col fd-table__sort-column" if header.sortable else "" %}
-            {% set sort_order_class = "fd-table__header-col fd-table__col fd-table__sort-column--"+header.sort_order if header.sort_order and header.sortable  else "" %}
-            <th class="fd-table__header-col fd-table__col {{sort_class}} {{sort_order_class}}" scope="col">{{header.label}}</th>
+            {% set sort_class = "fd-table__col fd-table__sort-column" if header.sortable else "" %}
+            {% set sort_order_class = "fd-table__col fd-table__sort-column--"+header.sort_order if header.sort_order and header.sortable  else "" %}
+            <th class="fd-table__col {{sort_class}} {{sort_order_class}}" scope="col">{{header.label}}</th>
             {%- endif -%}
             {%- endfor %}
         </tr>
     </thead>
     <tbody class="fd-table__body" >
         {%- for row in properties.rows %}
-        <tr{% if properties.selectedRow === loop.index %} aria-selected="true"{% endif %}  class="fd-table__body-row fd-table__row">
+        <tr{% if properties.selectedRow === loop.index %} aria-selected="true"{% endif %}  class="fd-table__row">
             {%- for item in row %}
             {%- if item.label %}
-            <td class="{{item.class}} fd-table__col fd-table__body-col" style="left:{{0 if item.fixed_col else item.offset }}; width:{{item.width}}">{{ item.label }}</td>
+            <td class="{{item.class}} fd-table__col" style="left:{{0 if item.fixed_col else item.offset }}; width:{{item.width}}">{{ item.label }}</td>
             {%- else %}
-            <td class="fd-table__col fd-table__body-col">{{ item }}</td>
+            <td class="fd-table__col">{{ item }}</td>
             {%- endif %}
             {%- endfor %}
         </tr>
