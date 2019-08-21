@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.86"></a>
+# [0.2.0-rc.86](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.85...v0.2.0-rc.86) (2019-08-21)
+
+
+### Features
+
+* remove Time Picker sass and examples ([#285](https://github.com/SAP/fundamental-styles/issues/285)) ([25d0dea](https://github.com/SAP/fundamental-styles/commit/25d0dea))
+
+
+
 <a name="0.2.0-rc.85"></a>
 # [0.2.0-rc.85](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.84...v0.2.0-rc.85) (2019-08-21)
 
