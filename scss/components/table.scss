@@ -81,6 +81,7 @@ $block: #{$fd-namespace}-table;
 
             &.fd-table__fixed-col {
                 @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
+                left: 0;
                 z-index: map-get($fd-z-index-levels, "second");
             }
         }
@@ -188,6 +189,8 @@ $block: #{$fd-namespace}-table;
     }
 
     &__fixed-col {
+        left: 0;
+        max-width: 200px;
         position: absolute;
         z-index: map-get($fd-z-index-levels, "first");
         @if $fd-support-css-var-fallback {

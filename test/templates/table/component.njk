@@ -18,7 +18,7 @@ table:
         <tr class="fd-table__row">
             {%- for header in properties.headers %}
             {%- if header.context_menu -%}
-            <th class="fd-table__context-menu {{header.classes | classes}} fd-table__cell " style="left:{{0 if header.fixed_col else header.offset}}; width:{{header.width}}" {{header.aria | aria}}  scope="col" >
+            <th class="fd-table__context-menu {{header.classes | classes}} fd-table__cell " {{header.aria | aria}}  scope="col">
                 Header Column ˇ 
             </th>
             {%- else -%}
@@ -34,7 +34,7 @@ table:
         <tr{% if properties.selectedRow === loop.index %} aria-selected="true"{% endif %}  class="fd-table__row">
             {%- for item in row %}
             {%- if item.label %}
-            <td class="{{item.class}} fd-table__cell" style="left:{{0 if item.fixed_col else item.offset }}; width:{{item.width}}">{{ item.label }}</td>
+            <td class="{{item.class}} fd-table__cell">{{ item.label }}</td>
             {%- else %}
             <td class="fd-table__cell">{{ item }}</td>
             {%- endif %}
