@@ -204,12 +204,6 @@
     }
 
     &__page {
-        .fd-page,
-        .fd-page__header,
-        .fd-page__intro,
-        .fd-page__content {
-            padding: 10px;
-        }
 
         .fd-tile__content {
             padding: 20px 20px;
@@ -220,14 +214,6 @@
     }
 
     &__section {
-        .fd-section,
-        .fd-section__header,
-        .fd-section__title,
-        .fd-section__actions,
-        .fd-section__footer,
-        .fd-container {
-            //padding:10px;
-        }
 
         .fd-section {
             background-color: $docs-example-bg-color;

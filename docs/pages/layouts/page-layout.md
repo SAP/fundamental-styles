@@ -31,14 +31,14 @@ The `.fd-page__header` container most often will include the `.fd-breadcrumb` an
 The `.fd-page__content` container should have one or more `.fd-section` containers. The content container does not include padding — allows for full-bleed content — so child sections are necessary.
 
 {% capture page-layout %}
-<article class="fd-page">
+<main class="fd-page">
     <header class="fd-page__header fd-has-background-color-background-2">
         fd-page_header
     </header>
     <div class="fd-page__content fd-has-background-color-neutral-2">
         fd-page_content
     </div>
-</article>
+</main>
 {% endcapture %}
 {% include display-component.html component=page-layout  class="page"%}
 
