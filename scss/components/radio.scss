@@ -6,7 +6,7 @@
 */
 $block: #{$fd-namespace}-radio;
 .#{$block} {
-    @include fd-reset();
+    @include fd-form-base();
     @include action-cursor();
     height: $fd-forms-height--input-check;
     width: $fd-forms-height--input-check;

@@ -6,7 +6,6 @@
 */
 $block: #{$fd-namespace}-form-control;
 .#{$block} {
-    @include fd-reset();
     @include fd-form-base();
     @include fd-form-text();
     @include fd-var-size("height", $fd-forms-height, --fd-forms-height);

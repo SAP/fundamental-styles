@@ -2,9 +2,9 @@
 @import "./../mixins";
 @import "./../functions";
 /*!
-.fd-select
+.fd-form-select
 */
-$block: #{$fd-namespace}-select;
+$block: #{$fd-namespace}-form-select;
 
 .#{$block} {
     @include fd-form-text();

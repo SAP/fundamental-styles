@@ -7,6 +7,7 @@
 $block: #{$fd-namespace}-checkbox;
 
 .#{$block} {
+    @include fd-form-base();
     height: $fd-forms-height--input-check;
     width: $fd-forms-height--input-check;
     margin: 0;
@@ -26,12 +27,12 @@ $block: #{$fd-namespace}-checkbox;
         top: calc(50% - 4px);
         left: calc(50% - 10px/2);
     }
-    &:indeterminate {
+    &[indeterminate] {
         border-width: 3px;
         border-style: solid;
         @include fd-var-color("border-color", $fd-forms-background-color, --fd-forms-background-color);
         @include fd-var-color("background-color", $fd-forms-background-color--indeterminate, --fd-forms-background-color--indeterminate);
-        box-shadow: 0 0 0 1px var(--fd-forms-border-color--check);
+        box-shadow: 0 0 0 1px $fd-forms-border-color--check;
 
         @include fd-hover() {
             border-width: 3px;
@@ -40,11 +41,7 @@ $block: #{$fd-namespace}-checkbox;
         @include fd-disabled() {
             @include fd-var-color("border-color", $fd-forms-background-color, --fd-forms-background-color);
             @include fd-var-color("background-color", $fd-forms-border-color--disabled, --fd-forms-border-color--disabled);
-
-            @if $fd-support-css-var-fallback {
-                box-shadow: 0 0 0 1px $fd-forms-border-color--disabled;
-            }
-            box-shadow: 0 0 0 1px var(--fd-forms-border-color--disabled);
+            box-shadow: 0 0 0 1px $fd-forms-border-color--disabled;
 
             &::before {
                 @include fd-var-color("border-color", $fd-forms-border-color--disabled, --fd-forms-border-color--disabled);

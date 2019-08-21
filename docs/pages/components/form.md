@@ -205,14 +205,14 @@ Do not use the text area if
 
 <br>
 
-## Select
-The Select component is similar to a dropdown but is more commonly used within a form. It can also be set to a disabled state.
+## Form Select
+The Form Select component is similar to a dropdown but is more commonly used within a form. It can also be set to a disabled state.
 
-{% capture select %}
+{% capture form-select %}
 <div class="fd-fieldset">
     <div class="fd-form-item">
         <label class="fd-form-label" for="select-1">Default Select:</label>
-        <select class="fd-select" id="select-1" name="">
+        <select class="fd-form-select" id="select-1" name="">
             <option value="1">Duis malesuada odio volutpat elementum</option>
             <option value="2">Suspendisse ante ligula</option>
             <option value="3">Sed bibendum sapien at posuere interdum</option>
@@ -223,7 +223,7 @@ The Select component is similar to a dropdown but is more commonly used within a
 <div class="fd-fieldset">
     <div class="fd-form-item">
         <label class="fd-form-label" for="select-2">Disabled Select:</label>
-        <select class="fd-select" id="select-2" name="" disabled>
+        <select class="fd-form-select" id="select-2" name="" disabled>
             <option value="1">Duis malesuada odio volutpat elementum</option>
             <option value="2">Suspendisse ante ligula</option>
             <option value="3">Sed bibendum sapien at posuere interdum</option>
@@ -232,7 +232,7 @@ The Select component is similar to a dropdown but is more commonly used within a
 </div>
 {% endcapture %}
 
-{% include display-component.html component=select %}
+{% include display-component.html component=form-select %}
 
 <br/>
 

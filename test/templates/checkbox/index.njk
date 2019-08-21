@@ -24,7 +24,7 @@
 
 {% set example %}
   {{ checkbox(properties='checked') }}
-  {{ checkbox() }}
+  {{ checkbox(properties='indeterminate') }}
   {{ checkbox() }}
 {% endset %}
 
@@ -33,6 +33,8 @@
 
 {% set example %}
   {{ checkbox(properties='disabled') }}
+  {{ checkbox(properties='disabled checked') }}
+  {{ checkbox(properties='disabled indeterminate') }}
 {% endset %}
 
 {{ format(example) }}

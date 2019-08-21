@@ -2,20 +2,29 @@
 {% from "./../format.njk" import format %}
 {% from "./component.njk" import formControl %}
 
+
 {% block content %}
+
+<style>
+{# add space between examples for cleaner screenshots #}
+  .fd-form-control {
+    margin-bottom: 10px;
+  }
+</style>
 
 <h2>Default</h2>
 
 {% set example %}
   {{ formControl() }}
+   
 {% endset %}
- <br><br>
 {{ format(example) }}
- <br><br>
+ 
 <h2>Compact</h2>
 
 {% set example %}
   {{ formControl(modifier={block: ["compact"]}) }}
+   
 {% endset %}
 
 {{ format(example) }}
@@ -23,14 +32,14 @@
 <h2>States</h2>
 
 {% set example %}
-  {{ formControl(modifier={block: ["is-valid"]}) }}
-  <br><br>
-  {{ formControl(modifier={block: ["is-invalid"]}) }}
-  <br><br>
-  {{ formControl(modifier={block: ["is-warning"]}) }}
-  <br><br>
+  {{ formControl(class="is-valid") }}
+  
+  {{ formControl(class="is-invalid") }}
+  
+  {{ formControl(class="is-warning") }}
+  
   {{ formControl(properties="readonly") }}
-  <br><br>
+  
   {{ formControl(properties="disabled") }}
 {% endset %}
 
@@ -40,7 +49,7 @@
 
 {% set example %}
   {{ formControl(type="password") }}
-  <br><br>
+  
   {{ formControl(type="search") }}
 {% endset %}
 

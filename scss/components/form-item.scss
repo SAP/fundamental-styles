@@ -32,14 +32,3 @@ $block: #{$fd-namespace}-form-item;
         }
     }
 }
-// TO DO:
-// affect fd-form-message if input type = checkbox/radio or fd-radio/fd-checkbox? figure out something with toggle if not
-//     .fd-form-item--check + & {
-//         transform: translateY(-(fd-space(3)));
-//         margin-bottom: -(fd-space(3));
-//     }
-//     .fd-form-item--inline.fd-form-item--check + & {
-//         transform: translateY(fd-space(2));
-//         margin-bottom: fd-space(2);
-//     }
-// }
