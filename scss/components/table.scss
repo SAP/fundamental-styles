@@ -209,9 +209,10 @@ $block: #{$fd-namespace}-table;
     }
 
     &--no-borders {
+        @include fd-reset();
         border: none;
 
-        .#{$block}__body.#{$block}__row {
+        .#{$block}__body .#{$block}__row {
             border: none;
         }
     }
