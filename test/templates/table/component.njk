@@ -1,6 +1,3 @@
-{% from "./../popover/component.njk" import popover %}
-{% from "./../menu/component.njk" import menu %}
-{% from "./../input-group/component.njk" import input_group %}
 {% import "./../utils.njk" as utils %}
 
 <!--
@@ -10,30 +7,6 @@ table:
     state={},
     aria={}
 -->
-
-{% macro table_contextual_header_control(properties, aria) %}
-<span class="fd-table__context-menu-label">{{properties.label}}</span>
-{% endmacro %}
-
-{% macro table_contextual_header_body(properties, aria) %}
-{{ menu(properties={
-            items: properties.menu,
-            addon_before: properties.addon_before
-        },
-        modifier=["addon-before"]
-        )
-}}
-{% endmacro %}
-
-{% macro table_contextual_header(properties={}, modifier={}, state={}, aria={}) -%}
-{{  popover(properties={
-    id: properties.id,
-    control: table_contextual_header_control(properties, aria={controls: properties.id}),
-    body: table_contextual_header_body(properties)
-  }, modifier={ block: ['no-arrow']})
-}}
-{%- endmacro %}
-
 
 {% macro table(properties={}, modifier={}, state={}, aria={}, classes=[]) -%}
 {%- if properties.fixed_col_table %}
@@ -46,7 +19,7 @@ table:
             {%- for header in properties.headers %}
             {%- if header.context_menu -%}
             <th class="fd-table__context-menu {{header.classes | classes}} fd-table__cell " style="left:{{0 if header.fixed_col else header.offset}}; width:{{header.width}}" {{header.aria | aria}}  scope="col" >
-                {{ table_contextual_header(header) }}
+                Header Column ˇ 
             </th>
             {%- else -%}
             {% set sort_class = "fd-table__cell fd-table__sort-column" if header.sortable else "" %}
