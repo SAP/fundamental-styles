@@ -73,7 +73,7 @@ $block: #{$fd-namespace}-table;
             }
         }
 
-        .#{$block}__col,
+        .#{$block}__cell,
         .#{$block}__row {
             border: none;
             @include fd-type("-1");
@@ -94,11 +94,11 @@ $block: #{$fd-namespace}-table;
             border-left: none;
             border-right: none;
         }
-        .#{$block}__col {
+        .#{$block}__cell {
             word-break: break-word;
         }
     }
-    &__col {
+    &__cell {
         line-height: $fd-line-height;
         font-size: $fd-font-size;
         -webkit-font-smoothing: antialiased;
@@ -180,7 +180,7 @@ $block: #{$fd-namespace}-table;
         }
     }
 
-    .#{$block}__header .#{$block}__col .fd-table__context-menu {
+    .#{$block}__header .#{$block}__cell .fd-table__context-menu {
         &:hover {
             @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
             cursor: pointer;
@@ -203,7 +203,7 @@ $block: #{$fd-namespace}-table;
         overflow-x: scroll;
         padding-left: 200px;
 
-        .#{$block}__col {
+        .#{$block}__cell {
             min-width: 200px;
         }
     }
@@ -223,18 +223,18 @@ $block: #{$fd-namespace}-table;
     }
 
     &.#{$fd-namespace}-has-first-child-text-align-right {
-        .#{$block}__col:first-child {
+        .#{$block}__cell:first-child {
           text-align: right !important;
         }
     }
     &.#{$fd-namespace}-has-last-child-text-align-right {
-        .#{$block}__col:last-child {
+        .#{$block}__cell:last-child {
             text-align: right !important;
         }
     }
     @each $i in 2,3,4,5,6,7,8,9 {
         &.#{$fd-namespace}-has-nth-child-#{$i}-text-align-right {
-            .#{$block}__col:nth-child(#{$i}) {
+            .#{$block}__cell:nth-child(#{$i}) {
             text-align: right !important;
             }
         }
