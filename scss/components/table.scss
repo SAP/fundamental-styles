@@ -167,7 +167,7 @@ $block: #{$fd-namespace}-table;
         }
     }
 
-    .#{$block}__header.#{$block}__col.fd-table__context-menu {
+    .#{$block}__header .#{$block}__col .fd-table__context-menu {
         &:hover {
             @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
             cursor: pointer;
@@ -206,7 +206,7 @@ $block: #{$fd-namespace}-table;
     }
 
     &--striped {
-        .#{$block}__body.#{$block}__row:nth-child(even) {
+        .#{$block}__body .#{$block}__row:nth-child(even) {
             @include fd-var-color("background-color", fd-color-state("hover"), --fd-color-background-hover);
         }
     }
