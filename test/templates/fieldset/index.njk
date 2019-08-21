@@ -15,4 +15,20 @@
 {% endset %}
 {{ format(example) }}
 
+<h2>With multiple fd-fieldset (testing margin-bottom)</h2>
+
+{% set example %}
+{# do not replace with macro as it doesn't inherit :last-child selector correctly #}
+<fieldset class="fd-fieldset">
+  <label>Placeholder label</label>
+  <input class="input-playground" placeholder="Placeholder input" />
+</fieldset>
+<fieldset class="fd-fieldset">
+  <label>Placeholder label</label>
+  <input class="input-playground" placeholder="Placeholder input" />
+</fieldset>
+
+{% endset %}
+{{ format(example) }}
+
 {% endblock %}

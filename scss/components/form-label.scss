@@ -6,22 +6,15 @@
 */
 $block: #{$fd-namespace}-form-label;
 .#{$block} {
-    //LOCAL VARS (set all vars used in component, always include !default)
-    $fd-form-label-font-size: "0" !default;
     $fd-form-label-color: fd-color(text, 3) !default;
-    $fd-form-label-focus-gutter: fd-space(1) !default;
-    $fd-form-label-font-size--check: "0" !default;
 
     @include fd-reset();
-    @include fd-type(#{$fd-form-label-font-size});
     @include fd-var-color("color", $fd-form-label-color, --fd-color-text-3);
     @include action-cursor();
     box-sizing: content-box;
-    margin-bottom: 0;
     line-height: $fd-forms-height--input-check;
     display: block;
     margin-bottom: fd-space(2);
-    border: 0;
 
     &.is-disabled {
         opacity: 0.4;
@@ -30,27 +23,10 @@ $block: #{$fd-namespace}-form-label;
         @include fd-var-color("outline-color", fd-color-state("hover", "action"), --fd-color-action-focus);
         outline-width: 1px;
         outline-style: dotted;
-        padding: $fd-form-label-focus-gutter;
-        margin: - $fd-form-label-focus-gutter;
     }
+    //should this be .fd-radio and .fd-checkbox?
     & > [type='radio'], [type='checkbox'] {
-        box-sizing: content-box;
-        @include fd-type(#{$fd-form-label-font-size--check});
-        margin-bottom: 0;
-        vertical-align: middle;
-        display: inline-flex;
-        align-items: center;
-        line-height: $fd-forms-height--input-check;
-        float: left;
-        margin-right: 8px;
-        @include action-cursor();
-        &:focus-within {
-            outline-width: 1px;
-            outline-style: dotted;
-            @include fd-var-color("outline-color", fd-color-state("hover", "action"), --fd-color-action-focus);
-            padding: $fd-form-label-focus-gutter;
-            margin: - $fd-form-label-focus-gutter;
-        }
+        margin-right: fd-space(2);
     }
 }
 

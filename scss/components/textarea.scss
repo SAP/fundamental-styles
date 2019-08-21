@@ -6,7 +6,6 @@
 */
 $block: #{$fd-namespace}-textarea;
 .#{$block} {
-    @include fd-reset();
     @include fd-form-text();
     @include fd-var-size("height", $fd-forms-height * 2);
     height: calc(var(--fd-forms-height) * 2);

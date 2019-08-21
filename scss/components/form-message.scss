@@ -14,7 +14,7 @@ $block: #{$fd-namespace}-form-message;
     clear: both;
     display: block;
     @include fd-type(#{$fd-form-message-font-size});
-    color: $fd-form-message-color;
+    color: fd-color(text);
     padding: fd-space(2) 0;
     position: relative;
     margin-top: fd-space(2);
@@ -38,7 +38,6 @@ $block: #{$fd-namespace}-form-message;
         }
     }
     &--help {
-        color: fd-color(text);
         &::before {
             color: fd-color(text);
             content: "";
