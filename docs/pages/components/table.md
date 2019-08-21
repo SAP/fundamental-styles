@@ -493,7 +493,7 @@ a contextual menu can be substituted in order to display all actions in one menu
       <table class="fd-table">
          <thead class="fd-table__header">
             <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__context-menu fd-table__fixed-col" style="left:0; width:200px" aria-controls="col1.2" aria-haspopup="true" scope="col">
+               <th class="fd-table__cell fd-table__context-menu fd-table__fixed-cell" style="left:0; width:200px" aria-controls="col1.2" aria-haspopup="true" scope="col">
                   <div class="fd-popover">
                      <div class="fd-popover__control">
                         <span class="fd-table__context-menu-label">Header Column</span>
@@ -634,7 +634,7 @@ a contextual menu can be substituted in order to display all actions in one menu
          </thead>
          <tbody class="fd-table__body">
             <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__fixed-col" style="left:0; width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
+               <th class="fd-table__cell fd-table__fixed-cell" style="left:0; width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
@@ -644,7 +644,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
             </tr>
             <tr class="fd-table__row">
-               <th class="fd-table__fixed-col" style="left:0; width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
+               <th class="fd-table__fixed-cell" style="left:0; width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
@@ -654,7 +654,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
             </tr>
             <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__fixed-col" style="left:0; width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
+               <th class="fd-table__cell fd-table__fixed-cell" style="left:0; width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>

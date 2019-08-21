@@ -79,7 +79,7 @@ $block: #{$fd-namespace}-table;
             @include fd-type("-1");
             @include fd-weight();
 
-            &.fd-table__fixed-col {
+            &.fd-table__fixed-cell {
                 @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
                 left: 0;
                 z-index: map-get($fd-z-index-levels, "second");
@@ -130,7 +130,7 @@ $block: #{$fd-namespace}-table;
             text-align: left;
         }
 
-        &.fd-table__fixed-col {
+        &.fd-table__fixed-cell {
             @include fd-var-color("background-color", $fd-table-fixed-column-cell-color, --fd-color-background-2);
         }
     }
@@ -188,7 +188,7 @@ $block: #{$fd-namespace}-table;
         }
     }
 
-    &__fixed-col {
+    &__fixed-cell {
         left: 0;
         max-width: 200px;
         position: absolute;
@@ -202,6 +202,7 @@ $block: #{$fd-namespace}-table;
     &--fixed-wrapper {
         position: relative;
     }
+
     &--fixed {
         overflow-x: scroll;
         padding-left: 200px;
