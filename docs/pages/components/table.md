@@ -111,7 +111,7 @@ A table is a set of tabular data. Line items can support data, images and action
 
 <br />
 
-## Table with no stripes
+## Table with stripes
 
 `fd-table--striped` can be applied to render a table with zebra stripes
 
@@ -163,12 +163,12 @@ A table is a set of tabular data. Line items can support data, images and action
 
 ## Table with checkbox
 The checkbox input can be used at the beginning of each row to allow for bulk actions.
-It is recommended to add the parameter `area-selected="true` to the row that is selected.
+It is recommended to add the parameter `aria-selected="true` to the row that is selected.
 
 {% capture table-checkbox %}
 <table class="fd-table">
-    <thead class="fd-table__row">
-        <tr>
+    <thead class="fd-table__header">
+        <tr class="fd-table__row>
             <th class="fd-table__cell" scope="col"><input type="checkbox"></th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -177,7 +177,7 @@ It is recommended to add the parameter `area-selected="true` to the row that is 
         </tr>
     </thead>
     <tbody class="fd-table__body">
-        <tr aria-selected="true">
+        <tr class="fd-table__row" aria-selected="true">
             <td class="fd-table__cell"><input type="checkbox" checked></td>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -634,7 +634,7 @@ a contextual menu can be substituted in order to display all actions in one menu
          </thead>
          <tbody class="fd-table__body">
             <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__fixed-cell" style="left:0; width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
+               <th class="fd-table__cell fd-table__fixed-cell" style="width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
@@ -644,7 +644,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
             </tr>
             <tr class="fd-table__row">
-               <th class="fd-table__fixed-cell" style="left:0; width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
+               <th class="fd-table__cell fd-table__fixed-cell" style="width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
@@ -654,7 +654,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
             </tr>
             <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__fixed-cell" style="left:0; width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
+               <th class="fd-table__cell fd-table__fixed-cell" style="width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>

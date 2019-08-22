@@ -181,7 +181,7 @@ $block: #{$fd-namespace}-table;
         }
     }
 
-    .#{$block}__header .#{$block}__cell .fd-table__context-menu {
+    .#{$block}__header .#{$block}__cell.fd-table__context-menu {
         &:hover {
             @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
             cursor: pointer;

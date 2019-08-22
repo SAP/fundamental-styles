@@ -18,8 +18,8 @@ table:
         <tr class="fd-table__row">
             {%- for header in properties.headers %}
             {%- if header.context_menu -%}
-            <th class="fd-table__context-menu {{header.classes | classes}} fd-table__cell " {{header.aria | aria}}  scope="col">
-                Header Column ˇ 
+            <th class="fd-table__context-menu {{header.classes | classes}} fd-table__cell" {{header.aria | aria}}  scope="col">
+                <span class="fd-table__context-menu-label">Header Column</span>
             </th>
             {%- else -%}
             {% set sort_class = "fd-table__cell fd-table__sort-column" if header.sortable else "" %}

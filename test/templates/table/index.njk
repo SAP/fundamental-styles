@@ -59,6 +59,47 @@
 
 <br><br><br>
 
+<h2>default with selected row</h2>
+{% set example %}
+<table class="fd-table">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell">Lorem Ipsum</td>
+            <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row" aria-selected="true">
+            <td class="fd-table__cell">Lorem Ipsum</td>
+            <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell">Lorem Ipsum</td>
+            <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+    </tbody>
+</table>
+{% endset %}
+{{ format(example) }}
+
+<br><br><br>
+
 <h3>Table with `--no-borders`</h3>
 {% set example %}
 {{  table(properties={
