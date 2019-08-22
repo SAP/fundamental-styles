@@ -14,7 +14,7 @@ $block: #{$fd-namespace}-form-message;
     clear: both;
     display: block;
     @include fd-type(#{$fd-form-message-font-size});
-    color: fd-color(text);
+    @include fd-var-color("color", $fd-form-message-color, --fd-color-text-2);
     padding: fd-space(2) 0;
     position: relative;
     margin-top: fd-space(2);
@@ -26,7 +26,7 @@ $block: #{$fd-namespace}-form-message;
         font-family: "SAP-icons";
         position: absolute;
         left: 0;
-        color: fd-color("text", 5);
+        @include fd-var-color("color", $fd-form-message-color, --fd-color-text-2);
         text-align: center;
         line-height: 18px;
     }
@@ -39,22 +39,22 @@ $block: #{$fd-namespace}-form-message;
     }
     &--help {
         &::before {
-            color: fd-color(text);
+            @include fd-var-color("color", $fd-forms-color, --fd-color-text-1);
             content: "";
         }
     }
     &--warning {
-        color: $fd-color--warning;
+        @include fd-var-color("color", $fd-color--alert, --fd-color-alert);
         &::before {
-            color: $fd-color--warning;
+            @include fd-var-color("color", $fd-color--alert, --fd-color-alert);
             content: "";
         }
     }
     &--error {
-        color: $fd-color--error;
+        @include fd-var-color("color", $fd-color--negative, --fd-color-negative);
         &::before {
             content: "";
-            color: $fd-color--error;
+            @include fd-var-color("color", $fd-color--negative, --fd-color-negative);
         }
     }
 }

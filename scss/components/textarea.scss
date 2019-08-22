@@ -7,13 +7,13 @@
 $block: #{$fd-namespace}-textarea;
 .#{$block} {
     @include fd-form-text();
-    @include fd-var-size("height", $fd-forms-height * 2);
-    height: calc(var(--fd-forms-height) * 2);
+    //could not get this to work with variables - they are stored in core/root?
+    height: 72px;
     width: 100%;
     padding-top: $fd-forms-padding;
     &--compact {
-        @include fd-var-size("height", $fd-forms-height--compact);
-        height: calc(var(--fd-forms-height-compact) * 2);
+        //could not get this to work with variables - they are stored in core/root?
+        height: 56px;
         padding-top: $fd-forms-padding;
     }
 }

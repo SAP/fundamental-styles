@@ -5,49 +5,57 @@
     appearance: none;
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
-    font-size: inherit;
     box-sizing: border-box;
     outline: none;
     border-style: solid;
     border-width: 1px;
-    border-color: $fd-forms-border-color;
+    @include fd-var-color("border-color", $fd-forms-border-color, --fd-forms-border-color);
+    @include fd-var-color("background-color", $fd-forms-background-color, --fd-forms-background-color);
     border-radius: $fd-border-radius;
-    color: $fd-forms-color;
-    background-color: $fd-forms-background-color;
     transition: border-color $fd-animation--speed;
     //states
     @include fd-hover() {
-        border-color: fd-color-state("hover", "action");
+        @include fd-var-color("border-color", fd-color-state("hover", "action"));
+        --fd-forms-border-color: var(--fd-color-action-hover);
     }
     @include fd-focus() {
-      border-color: adjust-color($fd-forms-color--active, $lightness: 30%);
+        --fd-forms-border-color: var(--fd-color-action-focus);
+        @include fd-var-color("border-color", fd-color-state("hover", "action"));
     }
     &.is-invalid {
-        border-color: $fd-color--negative;
+        --fd-forms-border-color: var(--fd-color-negative);
+        @include fd-var-color("border-color", $fd-color--negative, --fd-color-negative);
         border-width: 2px;
     }
     &.is-valid {
-        border-color: $fd-color--positive;
+        --fd-forms-border-color: var(--fd-color-positive);
+        @include fd-var-color("border-color", $fd-color--positive, --fd-color-positive);
         border-width: 2px;
     }
-    &.is-warning {
-        border-color: $fd-color--alert;
+    &.is-warning,
+    &.is-alert {
+        --fd-forms-border-color: var(--fd-color-alert);
+        @include fd-var-color("border-color", $fd-color--alert, --fd-color-alert);
         border-width: 2px;
     }
     @include fd-disabled() {
         cursor: not-allowed;
-        color: $fd-forms-color--disabled;
-        border-color: $fd-forms-border-color--disabled;
-        background-color: $fd-forms-background-color--disabled;
+        --fd-forms-color: var(--fd-color-text-3);
+        --fd-forms-border-color: var(--fd-color-neutral-2);
+        --fd-forms-background-color: var(--fd-color-neutral-1);
+        @include fd-var-color("color", $fd-forms-color--disabled, --fd-color-text-3);
+        @include fd-var-color("border-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
+        @include fd-var-color("background-color", $fd-forms-background-color--disabled, --fd-color-neutral-1);
     }
     &[readonly],
     &.is-readonly {
-        color: $fd-forms-color;
-        border-color: $fd-forms-border-color--disabled;
+        --fd-forms-color: var(--fd-forms-color);
+        --fd-forms-border-color: var(--fd-color-neutral-2);
+        @include fd-var-color("color", $fd-forms-color, --fd-forms-color);
+        @include fd-var-color("border-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
         border-width: 0 0 1px;
         border-radius: 0;
     }
-    @content;
 }
 
 @mixin fd-form-text() {

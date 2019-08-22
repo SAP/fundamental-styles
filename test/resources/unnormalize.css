@@ -9,7 +9,10 @@ a,
 ul,
 li,
 button,
-fieldset {
+fieldset,
+input,
+span,
+textarea {
     font-size: 30px;
     padding: 20px;
     margin: 20px;

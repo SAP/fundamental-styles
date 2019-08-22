@@ -44,22 +44,8 @@
       <input type="radio" />
       Placeholder label
     </label>
-    <span class="fd-form-message">Placeholder form message</span>
   {%- endcall %}
 {% endset %}
-{{ format(example) }}
-
-
-{% set example %}
-  {% call formItem() -%}
-    <label>
-      <input type="radio" />
-      Placeholder label
-    </label>
-    <span class="fd-form-message">Placeholder form message</span>
-  {%- endcall %}
-{% endset %}
-
 {{ format(example) }}
 
 {% endblock %}

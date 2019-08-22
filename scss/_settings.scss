@@ -251,7 +251,6 @@ $fd-forms-color--active: map-get($fd-colors-action, 1) !default;
 $fd-forms-background-color: map-get($fd-colors-background, 2) !default;
 $fd-forms-background-color--disabled: map-get($fd-colors-neutral, 1) !default;
 $fd-forms-background-color--check: map-get($fd-colors-background, 2) !default;
-$fd-forms-background-color--indeterminate: map-get($fd-colors-action, 3) !default;
 $fd-forms-background-color--check-disabled: map-get($fd-colors-action-states, "disabled");
 $fd-forms-border-color: map-get($fd-colors-neutral, 4) !default;
 $fd-forms-border-color--check: map-get($fd-colors-action, 3) !default;
