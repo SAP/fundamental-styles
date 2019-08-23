@@ -3,9 +3,13 @@ body {
   transition: background-color 0.25s;
 }
 
-body.remove-spacing {
-    margin: 0;
-    padding: 0;
+.remove-spacing {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#example-container {
+    padding: 20px;
 }
 
 .btn-playground, .btn-playground--emphasized {

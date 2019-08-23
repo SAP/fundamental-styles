@@ -1,0 +1,29 @@
+{% macro overlay_toggle() %}
+    <script>
+    function overlay_toggle(type, show) {
+        var overlay = document.querySelector('.fd-overlay--' + type);
+        if (overlay) {
+            if (show) {
+                document.body.classList.add('remove-spacing');
+                document.getElementById('example-container').classList.add('remove-spacing');
+                overlay.classList.remove('is-hidden');
+            } else {
+                document.body.classList.remove('remove-spacing');
+                document.getElementById('example-container').classList.remove('remove-spacing');
+                overlay.classList.add('is-hidden');
+            }
+            overlay.setAttribute('aria-hidden', (show ? "false" : "true"));
+        }
+    }
+    </script>
+{% endmacro %}
+
+{% macro overlay(type="") %}
+    <button onclick="overlay_toggle('{{type}}', true)">Show {{type | capitalize}}</button>
+    <div class="fd-overlay fd-overlay--{{type}} is-hidden" aria-hidden="true">
+        <div class="overlay-playground" role="dialog">
+            <h3>Sample {{type | capitalize}}</h3>
+            <button onclick="overlay_toggle('{{type}}', false)">Close</button>
+        </div>
+    </div>
+{% endmacro %}
