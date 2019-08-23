@@ -3,6 +3,11 @@ body {
   transition: background-color 0.25s;
 }
 
+body.remove-spacing {
+    margin: 0;
+    padding: 0;
+}
+
 .btn-playground, .btn-playground--emphasized {
   border: 1px solid black;
   border-radius: 4px;
@@ -44,4 +49,22 @@ body {
 
 .menu-playground {
     list-style: none;
+}
+
+.overlay-playground {
+    width: 400px;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fd-overlay--modal .overlay-playground {
+    background: white;
+}
+
+.fd-overlay--alert .overlay-playground {
+    background: gold;
+    padding: 10px 0;
 }

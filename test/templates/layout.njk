@@ -44,7 +44,7 @@
     </script>
 </head>
 
-<body>
+<body{% if data.empty_layout == true %} class="remove-spacing"{% endif %}>
     <a href="../">Back to Index</a>
     <header class="test-header">
         <h1>{% if selfContained %}Self-Contained Styles Playground{% elif ie11 %}IE11 Playground{% else %}Playground{% endif %}: <code>{{ data.id }}</code></h1>
@@ -78,11 +78,13 @@
         </div>
     </header>
     <main>
+        {% if data.empty_layout != true %}
          <div class="test-datacontainer">
             <h2><code>{{id}}/data.json</code></h2>
             <textarea class="test-textarea" style="">{{ data | dump(2) }}</textarea>
         </div>
-        <div id="example-container" style="padding: 20px;">
+        {% endif %}
+        <div id="example-container"{% if data.empty_layout != true %} style="padding: 20px;"{% endif %}>
             {% block content %}
             {% endblock %}
         </div>
