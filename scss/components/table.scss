@@ -87,7 +87,6 @@ $block: #{$fd-namespace}-table;
             }
         }
 
-        .#{$block}__cell,
         .#{$block}__context-menu {
             &:hover {
                 @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
@@ -183,6 +182,7 @@ $block: #{$fd-namespace}-table;
 
     &__fixed-cell {
         left: 0;
+        max-width: 200px;
         position: absolute;
         z-index: map-get($fd-z-index-levels, "first");
         @if $fd-support-css-var-fallback {
