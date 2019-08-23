@@ -3,11 +3,9 @@
 {% import "./../../button/component.njk" as button %}
 {% from "./../../tabs/component.njk" import tabs %}
 {% from "./../../table/component.njk" import table %}
-{% from "./../../date-picker/component.njk" import date_picker %}
 {% from "./../../button-group/component.njk" import button_group %}
 {% from "./../../toggle/component.njk" import toggle %}
 
-{% from "./../../time-picker/component.njk" import time_picker %}
 {% from "./../../form/component.njk" import form_control, form_item, form_set %}
 {% import "../../forms.njk" as forms %}
 {% set shellbar_product = {
@@ -119,14 +117,6 @@
         {{ form_item("text", { label: "Store name" }) }}
       {%- endcall %}
     {%- endcall %}
-    {%- call layout.col(2) -%}
-      {% call form_set(properties={
-              legend: "Activate"
-          }) %}
-          {{  time_picker()
-          }}
-      {%- endcall %}
-    {%- endcall %}
 
   {%- endcall %}
   {%- call layout.container() -%}
@@ -210,20 +200,8 @@
           { label: "Last Update" },
           { label: "" }
       ] %}
-  {% set picker = date_picker(properties={
-            month: 08,
-            year: 2018,
-            today: 21,
-            dates: {
-              daysOffset: 3,
-              block: [25,29],
-              selected: 15,
-              disablePast: true
-            }
-        },size="compact")
-  %}
   {% set checkbox_row = ['<input type="checkbox">', '<strong>Name of Technical Asset</strong>', '1.3', 'API Packages', 'Lorem ipsum dolor sit amet', 'US Midwest/Chicago', '<span class="fd-has-color-status-1">Deployed</span>', '2018/03/21', [btnedit,btndelete].join('') ] %}
-  {% set checkbox_row_selected = ['<input type="checkbox" checked>', '<strong>Name of Technical Asset</strong>', '1.3', 'API Packages', 'Lorem ipsum dolor sit amet', 'US Midwest/Chicago', '<span class="fd-has-color-status-3">Failed</span>', picker, btndelete] %}
+  {% set checkbox_row_selected = ['<input type="checkbox" checked>', '<strong>Name of Technical Asset</strong>', '1.3', 'API Packages', 'Lorem ipsum dolor sit amet', 'US Midwest/Chicago', '<span class="fd-has-color-status-3">Failed</span>', '2018/04/01', btndelete] %}
   {% call layout.panel() -%}
       {% call layout.panel_header({ title: "Technical Assets (12)" }) -%}
           {% call layout.panel_actions() -%}

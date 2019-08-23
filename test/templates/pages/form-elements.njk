@@ -7,13 +7,10 @@
 {% from "./../dropdown/component.njk" import dropdown %}
 {% from "./../menu/component.njk" import menu %}
 {% from "./../token/component.njk" import token %}
-{% from "./../combobox-input/component.njk" import combobox_input %}
-{% from "./../date-picker/component.njk" import date_picker %}
 {% from "./../input-group/component.njk" import input_group %}
 {% from "./../localization-editor/component.njk" import localization_editor %}
 {% from "./../multi-input/component.njk" import multi_input %}
 {% from "./../search-input/component.njk" import search_input %}
-{% from "./../time-picker/component.njk" import time_picker %}
 {% from "./../button-group/component.njk" import button_group %}
 {% import "./../utils.njk" as utils %}
 {#
@@ -341,17 +338,6 @@
 {% call layout.col(span=6) -%}
 {# ////////////////////////// ------ #}
 
-
-
-<h3>.fd-combobox-input</h3>
-<div class="fd-form__item">
-{{combobox_input()}}
-</div>
-
-<div class="fd-form__item">
-{{combobox_input(size="compact")}}
-</div>
-
 {{  toggle(
         properties=data.properties,
         state=data.state,
@@ -361,35 +347,6 @@
 
 <br><br>
 
-<h3>.fd-date-picker</h3>
-<div class="fd-form__item">
-{{  date_picker(properties={
-      month: 8,
-      year: 2018,
-      today: 6,
-      dates: {
-        daysOffset: 3,
-        block: [25,29],
-        selected: 15,
-        disablePast: true
-      }
-  })
-}}
-</div>
-<div class="fd-form__item">
-{{  date_picker(properties={
-      month: 8,
-      year: 2018,
-      today: 6,
-      dates: {
-        daysOffset: 3,
-        block: [25,29],
-        selected: 15,
-        disablePast: true
-      }
-  },size="compact")
-}}
-</div>
 
 <h3>.fd-search-input</h3>
 <div class="fd-form__item">
@@ -408,16 +365,6 @@
     },size="compact")
 }}
 </div>
-
-
-<h3>.fd-time-picker</h3>
-<div class="fd-form__item">
-{{  time_picker() }}
-</div>
-<div class="fd-form__item">
-{{  time_picker(size="compact") }}
-</div>
-
 
 
 <h3>.fd-localization-editor</h3>
