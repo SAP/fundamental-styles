@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.89"></a>
+# [0.2.0-rc.89](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.88...v0.2.0-rc.89) (2019-08-23)
+
+
+### Bug Fixes
+
+* self contained styles for table ([#278](https://github.com/SAP/fundamental-styles/issues/278)) ([6d698a6](https://github.com/SAP/fundamental-styles/commit/6d698a6))
+
+
+
 <a name="0.2.0-rc.88"></a>
 # [0.2.0-rc.88](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.87...v0.2.0-rc.88) (2019-08-23)
 
