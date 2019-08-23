@@ -32,7 +32,7 @@ $block: #{$fd-namespace}-table;
     --fd-table-background-color: var(--fd-color-background-2);
     --fd-table-link-color: var(--fd-color-action-1);
     --fd-table-header-color: var(--fd-color-text-3);
-    --fd-table-header-background-color: var(--fd-color-neutral-5);
+    --fd-table-header-background-color: var(--fd-color-neutral-1);
 
     //BLOCK BASE *******************************************
     //set all BLOCK reset and baseline styles
@@ -47,7 +47,8 @@ $block: #{$fd-namespace}-table;
     border-width: $fd-table-border-width;
     @include fd-var-color("border-color", $fd-table-border-color, --fd-table-border-color);
 
-    tr {
+
+    &__row {
         transition: background-color $fd-table-transition-params;
         @include fd-hover() {
           @include fd-var-color("background-color", $fd-table-row-background-color--hover, --fd-color-background-hover);
@@ -60,42 +61,55 @@ $block: #{$fd-namespace}-table;
         }
     }
 
-    thead {
+    &__header {
+        @include fd-reset();
         @include fd-type("-1");
         @include fd-var-color("color", $fd-table-header-color, --fd-table-header-color);
         @include fd-var-color("background-color", $fd-table-header-background-color, --fd-table-header-background-color);
 
-        tr {
+        .#{$block}__row {
+            border: none;
             &:hover {
                 background-color: inherit;
             }
         }
 
-        td,
-        th {
+        .#{$block}__cell {
+            @include fd-var-color("color", $fd-table-header-color, --fd-table-header-color);
             border: none;
+            @include fd-type("-1");
             @include fd-weight();
 
-            &.fd-table__fixed-col {
+            &.#{$block}__fixed-cell {
                 @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
+                left: 0;
                 z-index: map-get($fd-z-index-levels, "second");
             }
         }
+
+        .#{$block}__context-menu {
+            &:hover {
+                @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
+                cursor: pointer;
+            }
+        }
     }
-    tbody {
-        tr {
+
+    &__body {
+        @include fd-reset();
+        .#{$block}__row {
             border-style: solid;
             border-width: $fd-table-border-width;
             @include fd-var-color("border-color", $fd-table-border-color, --fd-table-border-color);
             border-left: none;
             border-right: none;
         }
-        td {
+        .#{$block}__cell {
             word-break: break-word;
         }
     }
-    td,
-    th {
+    &__cell {
+        @include fd-reset();
         @include fd-weight();
         text-align: left;
         --fd-table-cell-spacing: calc(var(--fd-width-gutter) / 2);
@@ -115,7 +129,7 @@ $block: #{$fd-namespace}-table;
             text-align: left;
         }
 
-        &.fd-table__fixed-col {
+        &.#{$block}__fixed-cell {
             @include fd-var-color("background-color", $fd-table-fixed-column-cell-color, --fd-color-background-2);
         }
     }
@@ -166,19 +180,11 @@ $block: #{$fd-namespace}-table;
         }
     }
 
-    th.fd-table__context-menu {
-        &:hover {
-            @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
-            cursor: pointer;
-        }
-    }
-
-    &__fixed-col {
+    &__fixed-cell {
+        left: 0;
+        max-width: 200px;
         position: absolute;
         z-index: map-get($fd-z-index-levels, "first");
-    }
-
-    .fd-table__fixed-col {
         @if $fd-support-css-var-fallback {
             box-shadow: 2px 0 0 0 $fd-table-border-color;
         }
@@ -188,25 +194,50 @@ $block: #{$fd-namespace}-table;
     &--fixed-wrapper {
         position: relative;
     }
+
     &--fixed {
         overflow-x: scroll;
         padding-left: 200px;
 
-        td {
+        .#{$block}__cell {
             min-width: 200px;
         }
     }
 
     &--no-borders {
+        @include fd-reset();
         border: none;
-        & tbody tr {
-            border: none;
+
+        .#{$block}__body {
+            .#{$block}__row {
+                border: none;
+            }
         }
     }
 
     &--striped {
-        tbody tr:nth-child(even) {
-            @include fd-var-color("background-color", fd-color-state("hover"), --fd-color-background-hover);
+        .#{$block}__body {
+            .#{$block}__row:nth-child(even) {
+                @include fd-var-color("background-color", fd-color-state("hover"), --fd-color-background-hover);
+            }
+        }
+    }
+
+    &.#{$fd-namespace}-has-first-child-text-align-right {
+        .#{$block}__cell:first-child {
+          text-align: right !important;
+        }
+    }
+    &.#{$fd-namespace}-has-last-child-text-align-right {
+        .#{$block}__cell:last-child {
+            text-align: right !important;
+        }
+    }
+    @each $i in 2,3,4,5,6,7,8,9 {
+        &.#{$fd-namespace}-has-nth-child-#{$i}-text-align-right {
+            .#{$block}__cell:nth-child(#{$i}) {
+            text-align: right !important;
+            }
         }
     }
 }
