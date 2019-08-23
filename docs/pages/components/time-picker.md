@@ -80,7 +80,7 @@ A basic example of a time picker.
     <div class="fd-popover fd-popover--no-arrow">
         <div class="fd-popover__control">
             <div class="fd-input-group fd-input-group--after fd-input-group--compact">
-                <input class="fd-input fd-input--compact" type="text" id="" placeholder="hh:mm am/pm">
+                <input class="fd-form-control fd-form-control--compact" type="text" id="" placeholder="hh:mm am/pm">
                 <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button ">
                     <button class="fd-button--light fd-button--compact sap-icon--history fd-popover__control" aria-controls="bJuyJ846" aria-expanded="false" aria-haspopup="true"></button>
                 </span>

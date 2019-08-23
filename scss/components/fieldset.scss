@@ -6,11 +6,8 @@
 */
 $block: #{$fd-namespace}-fieldset;
 .#{$block} {
-    //LOCAL VARS (set all vars used in component, always include !default)
-    $fd-form-item-margin-bottom: fd-space("small") !default;
-
     @include fd-reset();
-    margin-bottom: $fd-form-item-margin-bottom;
+    margin-bottom: fd-space("small");
     &:last-child {
         margin-bottom: 0;
     }

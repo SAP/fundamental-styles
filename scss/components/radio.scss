@@ -10,7 +10,6 @@ $block: #{$fd-namespace}-radio;
     @include action-cursor();
     height: $fd-forms-height--input-check;
     width: $fd-forms-height--input-check;
-    margin: 0;
     vertical-align: middle;
     position: relative;
     border-radius: 50%;
