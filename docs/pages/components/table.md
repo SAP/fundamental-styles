@@ -163,12 +163,12 @@ A table is a set of tabular data. Line items can support data, images and action
 
 ## Table with checkbox
 The checkbox input can be used at the beginning of each row to allow for bulk actions.
-It is recommended to add the parameter `aria-selected="true` to the row that is selected.
+It is recommended to add the parameter `aria-selected="true"` to the row that is selected.
 
 {% capture table-checkbox %}
 <table class="fd-table">
     <thead class="fd-table__header">
-        <tr class="fd-table__row>
+        <tr class="fd-table__row">
             <th class="fd-table__cell" scope="col"><input type="checkbox"></th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
