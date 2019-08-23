@@ -27,6 +27,18 @@ $block: #{$fd-namespace}-checkbox;
         top: calc(50% - 4px);
         left: calc(50% - 10px/2);
     }
+    &[checked] {
+        @include fd-var-color("border-color", $fd-forms-border-color--check, --fd-color-action-3);
+        &::before {
+            @include fd-var-color("border-color", $fd-forms-border-color--check, --fd-color-action-3);
+          }
+        @include fd-disabled() {
+            @include fd-var-color("border-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
+            &::before {
+                @include fd-var-color("border-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
+              }
+        }
+    }
     &[indeterminate] {
         border-width: 3px;
         border-style: solid;
@@ -40,18 +52,6 @@ $block: #{$fd-namespace}-checkbox;
             @include fd-var-color("background-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
             @include fd-var-color("border-color", $fd-forms-background-color, --fd-color-background-2);
             box-shadow: 0 0 0 1px $fd-forms-border-color--disabled;
-        }
-    }
-    &[checked] {
-        @include fd-var-color("border-color", $fd-forms-border-color--check, --fd-color-action-3);
-        &::before {
-            @include fd-var-color("border-color", $fd-forms-border-color--check, --fd-color-action-3);
-          }
-        @include fd-disabled() {
-            @include fd-var-color("border-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
-            &::before {
-                @include fd-var-color("border-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
-              }
         }
     }
 }

@@ -13,14 +13,6 @@ $block: #{$fd-namespace}-form-control;
         @include fd-reset();
         @include fd-var-color("color", $fd-forms-color--placeholder, --fd-color-neutral-4);
     }
-    float: left;
-    vertical-align: middle;
-    margin-right: fd-space(3);
-    @include fd-rtl() {
-        float: right;
-        margin-left: fd-space(3);
-        margin-right: 0;
-    }
     &--compact {
         @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);
     }

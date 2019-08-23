@@ -31,42 +31,30 @@ Do not use the input field if:
 - The user needs to enter long texts. In this case, use the textarea.
 - The user needs to carry out a search. In this case, use the search field.
 
-{% capture inputs %}
-<div class="fd-fieldset">
+{% capture inputs %} 
     <div class="fd-form-item">
         <label class="fd-form-label" for="input-1">Default Input:</label>
         <input class="fd-form-control" type="text" id="input-1" placeholder="Field placeholder text">
     </div>
-</div>
-
-<div class="fd-fieldset">
     <div class="fd-form-item">
         <label class="fd-form-label" for="input-1">Compact Input:</label>
         <input class="fd-form-control fd-form-control--compact" type="text" id="input-1" placeholder="Field placeholder text">
     </div>
-</div>
-
-<div class="fd-fieldset">
     <div class="fd-form-item">
         <label class="fd-form-label" aria-required="true" for="input-2">Required Input:*</label>
         <input class="fd-form-control" type="text" id="input-2" placeholder="Field placeholder text">
     </div>
-</div>
-
-<div class="fd-fieldset">
     <div class="fd-form-item">
         <label class="fd-form-label" aria-required="true" for="input-3">Password:*</label>
         <input class="fd-form-control" type="password" id="input-3">
     </div>
-</div>
-
 {% endcapture %}
 
 {% include display-component.html component=inputs %}
 
 <br/>
 
-## Inputs help elements
+## Form Items with Help Messaging
 
 Help elements give the user information about the input. Two types of help elements can be used.
 
@@ -74,7 +62,6 @@ Help elements give the user information about the input. Two types of help eleme
 - Help content can also be visible at all times to avoid mistakes. This type of help generally contains validation rules about the data allowed in the input field. An example is "Maximum 20 characters". This is displayed below the input field.
 
 {% capture inputs-help %}
-<div class="fd-fieldset">
     <div class="fd-form-item">
         <label class="fd-form-label" for="input-44">
             Input with inline help:
@@ -86,9 +73,6 @@ Help elements give the user information about the input. Two types of help eleme
         </label>
         <input class="fd-form-control" type="text" id="input-45">
     </div>
-</div>
-
-<div class="fd-fieldset">
     <div class="fd-form-item">
         <label class="fd-form-label" for="input-45">Input with Help Message:</label>
         <input class="fd-form-control" type="text" id="input-45">
@@ -96,7 +80,6 @@ Help elements give the user information about the input. Two types of help eleme
             Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
         </span>
     </div>
-</div>
 {% endcapture %}
 
 {% include display-component.html component=inputs-help %}
@@ -187,18 +170,14 @@ Do not use the text area if
 - Users need to enter formatted text. Use the rich text editor instead.
 
 {% capture inputs %}
-<div class="fd-fieldset">
     <div class="fd-form-item">
         <label class="fd-form-label" for="textarea-1">Text area:</label>
         <textarea class="fd-textarea" id="textarea-1">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc.</textarea>
     </div>
-</div>
-<div class="fd-fieldset">
     <div class="fd-form-item">
         <label class="fd-form-label" for="textarea-2">Compact text area:</label>
         <textarea class="fd-textarea fd-textarea--compact" id="textarea-2">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc.</textarea>
     </div>
-</div>
 {% endcapture %}
 
 {% include display-component.html component=inputs %}
@@ -209,7 +188,6 @@ Do not use the text area if
 The Form Select component is similar to a dropdown but is more commonly used within a form. It can also be set to a disabled state.
 
 {% capture form-select %}
-<div class="fd-fieldset">
     <div class="fd-form-item">
         <label class="fd-form-label" for="select-1">Default Select:</label>
         <select class="fd-form-select" id="select-1" name="">
@@ -218,9 +196,6 @@ The Form Select component is similar to a dropdown but is more commonly used wit
             <option value="3">Sed bibendum sapien at posuere interdum</option>
         </select>
     </div>
-</div>
-
-<div class="fd-fieldset">
     <div class="fd-form-item">
         <label class="fd-form-label" for="select-2">Disabled Select:</label>
         <select class="fd-form-select" id="select-2" name="" disabled>
@@ -229,7 +204,6 @@ The Form Select component is similar to a dropdown but is more commonly used wit
             <option value="3">Sed bibendum sapien at posuere interdum</option>
         </select>
     </div>
-</div>
 {% endcapture %}
 
 {% include display-component.html component=form-select %}
@@ -357,7 +331,7 @@ Do not use the checkbox control if:
     </div>
     <div class="fd-form-item">
         <label class="fd-form-label" for="Ai4ez613">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez613" >
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez613" indeterminate>
             TriState Text
         </label>
     </div>

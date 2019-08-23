@@ -29,7 +29,7 @@ The Input Group supports `--compact` mode
     <label class="fd-form-label" for="">Compact Size </label>
     <div class="fd-input-group fd-input-group--before fd-input-group--compact">
         <span class="fd-input-group__addon fd-input-group__addon--before">$</span>
-        <input class="fd-input fd-input--compact" type="text" id="" name="" value="1234568910 ">
+        <input class="fd-form-control fd-form-control--compact" type="text" id="" name="" value="1234568910 ">
     </div>
 </div>
 {% endcapture %}

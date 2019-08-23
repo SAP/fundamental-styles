@@ -11,11 +11,9 @@ $block: #{$fd-namespace}-form-label;
     @include fd-reset();
     @include fd-var-color("color", $fd-form-label-color, --fd-color-text-3);
     @include action-cursor();
-    box-sizing: content-box;
     line-height: $fd-forms-height--input-check;
-    display: block;
     margin-bottom: fd-space(2);
-
+    display: block;
     &.is-disabled {
         opacity: 0.4;
     }

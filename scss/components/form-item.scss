@@ -7,9 +7,7 @@
 */
 $block: #{$fd-namespace}-form-item;
 .#{$block} {
-
     @include fd-reset();
-    @include fd-last-child();
     margin-bottom: fd-space("small");
 
     &--inline {
