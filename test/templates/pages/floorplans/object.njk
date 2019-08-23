@@ -5,9 +5,7 @@
 {% from "./../../table/component.njk" import table %}
 {% from "./../../button-group/component.njk" import button_group %}
 {% from "./../../toggle/component.njk" import toggle %}
-
-{% from "./../../form/component.njk" import form_control, form_item, form_set %}
-{% import "../../forms.njk" as forms %}
+{# {% from "./../../form/component.njk" import form_control, form_item, form_set %} #}
 {% set shellbar_product = {
   title: "Supplier Portal"
 } %}
@@ -30,30 +28,30 @@
 {# do columns #}
 {%- call layout.container(modifier=["fluid","flex"],classes="has-align-items-flex-end") -%}
   {%- call layout.col(2) %}
-    {% call form_set({ }) %}
+    {# {% call form_set({ }) %}
       {{ form_item("select", { label: "View by", value: "Week ", options: [{
           properties: { label: "Week", value: "1" }
       },{
           properties: { label: "Month", value: "2" }
       }] }, modifier={ item: "" }) }}
-      {% endcall %}
+      {% endcall %} #}
   {% endcall %}
   {%- call layout.col(2) %}
-    {% call form_set({ }) %}
+    {# {% call form_set({ }) %}
       {{ form_item("select", { label: "Inventory type", options: [{
         properties: { label: "Choose" }
     }] }, modifier={ item: "" }) }}
-    {% endcall %}
+    {% endcall %} #}
   {% endcall %}
   {%- call layout.col(2) %}
-    {% call form_set({ }) %}
+    {# {% call form_set({ }) %}
     {{ form_item("select", { label: "Extra data for chart", options: [{
       properties: { label: "None" }
   }] }, modifier={ item: "" }) }}
-    {% endcall %}
+    {% endcall %} #}
   {% endcall %}
   {%- call layout.col(6) %}
-    {% call form_set({ legend: "" }) %}
+    {# {% call form_set({ legend: "" }) %}
     <p class="fd-has-text-align-right">
       <span class="fd-has-margin-right-small">
         <span class="fd-has-color-text-3">
@@ -72,7 +70,7 @@
           aria={ label: 'Next' })
       }}
     </p>
-    {% endcall %}
+    {% endcall %} #}
   {% endcall %}
 {%- endcall %}
 {{  tabs(
@@ -109,65 +107,65 @@
 
   {%- call layout.container() -%}
     {%- call layout.col(5) -%}
-      {% call form_set({ }) %}
+      {# {% call form_set({ }) %}
         {{ form_item("text", { label: "ID" }) }}
-      {%- endcall %}
+      {%- endcall %} #}
     {%- endcall %}
     {%- call layout.col(5) -%}
-      {% call form_set({ }) %}
+      {# {% call form_set({ }) %}
         {{ form_item("text", { label: "Store name" }) }}
-      {%- endcall %}
+      {%- endcall %} #}
     {%- endcall %}
 
   {%- endcall %}
   {%- call layout.container() -%}
     {%- call layout.col(5) -%}
-      {% call form_set({ }) %}
+      {# {% call form_set({ }) %}
         {{ form_item("select", { label: "Default language", options: [{
       properties: { label: "English" }
   }] }, modifier={ item: "" }) }}
-      {%- endcall %}
+      {%- endcall %} #}
     {%- endcall %}
     {%- call layout.col(5) -%}
-      {% call form_set({ }) %}
+      {# {% call form_set({ }) %}
         {{ form_item("select", { label: "Default currency", options: [{
         properties: { label: "US - Dollar" }
     }] }, modifier={ item: "" }) }}
-      {%- endcall %}
+      {%- endcall %} #}
     {%- endcall %}
   {%- endcall %}
   {%- call layout.container() -%}
     {%- call layout.col(5) -%}
-    {% call form_set(properties={
+    {# {% call form_set(properties={
             legend: "Net"
         }) %}
     {{ form_item("radio", { label: "Yes", name: "foo" }, modifier={ item: "inline" }) }}
     {{ form_item("radio", { label: "No", name: "foo" }, modifier={ item: "inline" }, state={ checked: true}) }}
-    {% endcall %}
+    {% endcall %} #}
     {%- endcall %}
     {%- call layout.col(5) -%}
-    {% call form_set(properties={
+    {# {% call form_set(properties={
             legend: "Label"
         }) %}
 {{ form_item("toggle", { label: "Inventory type" }) }}
-    {% endcall %}
+    {% endcall %} #}
     {%- endcall %}
   {%- endcall %}
   {%- call layout.container() -%}
     {%- call layout.col(5) -%}
-    {% call form_set(properties={
+    {# {% call form_set(properties={
             legend: "Net"
         }) %}
     {{ form_item("radio", { label: "Yes", name: "bar" }, modifier={ item: "inline" }, state={ checked: true}) }}
     {{ form_item("radio", { label: "No", name: "bar" }, modifier={ item: "inline" }) }}
-    {% endcall %}
+    {% endcall %} #}
     {%- endcall %}
     {%- call layout.col(5) -%}
-      {% call form_set(properties={
+      {# {% call form_set(properties={
               legend: "Label"
           }) %}
   {{ form_item("toggle", { label: "Inventory type" },state={ checked: true }) }}
-      {% endcall %}
+      {% endcall %} #}
     {%- endcall %}
   {%- endcall %}
 

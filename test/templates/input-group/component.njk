@@ -1,4 +1,3 @@
-{% import "../forms.njk" as forms %}
 {% from "../button/component.njk" import button %}
 {#
     see ./data.json for object structure
@@ -35,9 +34,9 @@
         </span>
     {%- endif %}
     {%- if properties.type == "textarea" %}
-    {{ forms.textarea(input.properties,size=size,state=input.state,aria=input.aria) }}
+        <textarea class="input-playground-full-width" placeholder="{{properties.placeholder}}" value="{{properties.value}}"/> 
     {%- else %}
-    {{ forms.text(type,input.properties,size=size,state=input.state,aria=input.aria) }}
+        <input class="input-playground-full-width" placeholder="{{properties.placeholder}}" value="{{properties.value}}"/> 
     {%- endif %}
     {%- if properties.after %}
         <span class="fd-input-group__addon{{ modifier.after | modifier('input-group__addon') }} {{ 'fd-input-group__addon--readonly' if properties.input.state.readonly}}">
