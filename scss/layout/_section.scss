@@ -1,6 +1,7 @@
 @import "./../settings";
 @import "./../functions";
 @import "./../mixins";
+@import "./../core/root";
 /*!
 .fd-section+(--full-bleed, --no-border)
     .fd-section__header
@@ -23,6 +24,7 @@ $block: #{$fd-namespace}-section;
     $fd-section-title-color: fd-color("text",2) !default;
     --fd-section-title-color: var(--fd-color-text-2);
 
+    @include fd-reset();
     @include fd-clearfix();
     padding: $fd-section-padding--top $fd-section-padding $fd-section-padding--bottom;
     padding: $fd-section-padding--top var(--fd-section-padding-x) $fd-section-padding--bottom;
@@ -36,6 +38,7 @@ $block: #{$fd-namespace}-section;
     }
     &--full-bleed,
     &--bleed {
+        @include fd-reset();
         padding-right: 0;
         padding-left: 0;
         .#{$block}__header, .#{$block}__footer {
@@ -52,6 +55,7 @@ $block: #{$fd-namespace}-section;
         margin-bottom: $fd-section-header-margin--bottom;
     }
     &__title {
+        @include fd-reset();
         @include fd-type("4");
         @include fd-var-color("color", $fd-section-title-color, --fd-section-title-color);
         flex: 1;

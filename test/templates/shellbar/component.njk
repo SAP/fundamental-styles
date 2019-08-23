@@ -2,9 +2,7 @@
 {% from "./../user-menu/component.njk" import user_menu %}
 {% from "./../popover/component.njk" import popover %}
 {% from "./../menu/component.njk" import menu %}
-{% from "./../product-menu/component.njk" import product_menu %}
 {% from "./../button/component.njk" import button %}
-{% from "./../product-switcher/component.njk" import product_switcher %}
 {% from "./../search-input/component.njk" import search_input %}
 {% from "./../counter/component.njk" import counter %}
 
@@ -155,7 +153,11 @@ shellbar:
         {{ shell_logo(logo=brand.logo, name=brand.name) }}
         <div class="fd-shellbar__product">
           {% if product %}
-            {{ product_menu(product=product,brand=brand) }}
+            <div class="fd-product-menu">
+                <button class="fd-product-menu__control" aria-controls="4Gsw5984" aria-haspopup="true" aria-expanded="false">
+                  <span class="fd-shellbar__title fd-product-menu__title">Corporate Portal</span>
+                </button>
+            </div>
           {% endif %}
         </div>
         {% if product.subtitle %}
@@ -200,7 +202,7 @@ shellbar:
             <div class="fd-popover fd-popover--right">
               <div class="fd-popover__control">
                 <div class="fd-shellbar-collapse--control" aria-controls="{{_id}}" aria-expanded="false" aria-haspopup="true" role="button">
-                  <button class=" fd-button--shell sap-icon--overflow" aria-controls="undefined" aria-haspopup="true" aria-expanded="false">
+                  <button class="fd-button--shell sap-icon--overflow" aria-controls="undefined" aria-haspopup="true" aria-expanded="false">
                   <span class="fd-counter fd-counter--notification" aria-label="Unread count">25</span></button>
                 </div>
               </div>
@@ -233,7 +235,7 @@ shellbar:
         {%- endif %}
         {%- if switcher %}
             <div class="fd-shellbar__action fd-shellbar__action--collapsible">
-              {{ product_switcher() }}
+              <button class=" fd-button--shell sap-icon--grid"></button>
             </div>
         {%- endif %}
     </div>

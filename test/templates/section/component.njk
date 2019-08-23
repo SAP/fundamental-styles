@@ -1,0 +1,27 @@
+{% set headlines = ['h2', 'h3', 'h4', 'h5', 'h6'] %}
+
+{%- macro section(title='', footer='', content='', headline='h3', classes='', actions='') %}
+    <section class='fd-section {{classes}}'>
+        {%- if title !== '' %}
+            <div class='fd-section__header'>
+                <{{headline}} class='fd-section__title'>{{title}}</{{headline}}>
+                {%- if actions !== '' %}
+                    <div class='fd-section__actions'>{{actions}}</div>
+                {%- endif %}
+            </div>
+        {%- endif %}
+        {{ content }}
+        {%- if footer !== '' %}
+            <div class='fd-section__footer'>{{footer}}</div>
+        {%- endif %}
+    </section>
+{%- endmacro %}
+
+{%- macro section_headlines(title='', footer='', content='', classes='', actions='') %}
+    {%- for _h in headlines %}
+        <h3>section with
+            {{ _h}}
+            headline</h3>
+        {{ section(title, footer, content, _h, classes, actions) }}
+    {%- endfor %}
+{%- endmacro %}
