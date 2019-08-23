@@ -68,24 +68,34 @@ $block: #{$fd-namespace}-table;
         @include fd-var-color("background-color", $fd-table-header-background-color, --fd-table-header-background-color);
 
         .#{$block}__row {
+            border: none;
             &:hover {
                 background-color: inherit;
             }
         }
 
-        .#{$block}__cell,
-        .#{$block}__row {
+        .#{$block}__cell {
+            @include fd-var-color("color", $fd-table-header-color, --fd-table-header-color);
             border: none;
             @include fd-type("-1");
             @include fd-weight();
 
-            &.fd-table__fixed-cell {
+            &.#{$block}__fixed-cell {
                 @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
                 left: 0;
                 z-index: map-get($fd-z-index-levels, "second");
             }
         }
+
+        .#{$block}__cell,
+        .#{$block}__context-menu {
+            &:hover {
+                @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
+                cursor: pointer;
+            }
+        }
     }
+
     &__body {
         @include fd-reset();
         .#{$block}__row {
@@ -100,17 +110,7 @@ $block: #{$fd-namespace}-table;
         }
     }
     &__cell {
-        line-height: $fd-line-height;
-        font-size: $fd-font-size;
-        -webkit-font-smoothing: antialiased;
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-        border: 0;
-        &::before,
-        &::after {
-            box-sizing: inherit;
-        }
+        @include fd-reset();
         @include fd-weight();
         text-align: left;
         --fd-table-cell-spacing: calc(var(--fd-width-gutter) / 2);
@@ -130,7 +130,7 @@ $block: #{$fd-namespace}-table;
             text-align: left;
         }
 
-        &.fd-table__fixed-cell {
+        &.#{$block}__fixed-cell {
             @include fd-var-color("background-color", $fd-table-fixed-column-cell-color, --fd-color-background-2);
         }
     }
@@ -181,16 +181,8 @@ $block: #{$fd-namespace}-table;
         }
     }
 
-    .#{$block}__header .#{$block}__cell.fd-table__context-menu {
-        &:hover {
-            @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
-            cursor: pointer;
-        }
-    }
-
     &__fixed-cell {
         left: 0;
-        max-width: 200px;
         position: absolute;
         z-index: map-get($fd-z-index-levels, "first");
         @if $fd-support-css-var-fallback {
@@ -216,14 +208,18 @@ $block: #{$fd-namespace}-table;
         @include fd-reset();
         border: none;
 
-        .#{$block}__body .#{$block}__row {
-            border: none;
+        .#{$block}__body {
+            .#{$block}__row {
+                border: none;
+            }
         }
     }
 
     &--striped {
-        .#{$block}__body .#{$block}__row:nth-child(even) {
-            @include fd-var-color("background-color", fd-color-state("hover"), --fd-color-background-hover);
+        .#{$block}__body {
+            .#{$block}__row:nth-child(even) {
+                @include fd-var-color("background-color", fd-color-state("hover"), --fd-color-background-hover);
+            }
         }
     }
 
