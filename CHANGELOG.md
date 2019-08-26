@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.90"></a>
+# [0.2.0-rc.90](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.89...v0.2.0-rc.90) (2019-08-26)
+
+
+### Bug Fixes
+
+* Self-contained styles for overlay ([#291](https://github.com/SAP/fundamental-styles/issues/291)) ([526d92f](https://github.com/SAP/fundamental-styles/commit/526d92f))
+
+
+
 <a name="0.2.0-rc.89"></a>
 # [0.2.0-rc.89](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.88...v0.2.0-rc.89) (2019-08-23)
 
