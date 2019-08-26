@@ -1,0 +1,15 @@
+@import "./../settings";
+@import "./../mixins";
+@import "./../functions";
+/*!
+.fd-form-group
+*/
+
+$block: #{$fd-namespace}-form-group;
+.#{$block} {
+    @include fd-reset();
+    margin-bottom: fd-space("small");
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

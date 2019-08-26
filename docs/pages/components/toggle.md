@@ -18,7 +18,7 @@ It is recommended to always display the toggle with a label above it as well as 
 To clarify the meaning of the toggle, use a label above it (ex. Live).
 
 {% capture default %}
-<div class="fd-fieldset">
+<div class="fd-form-group">
     <div class="fd-form-item">
         <label class="fd-form-label" for="y21YO391">Live:</label>
         <label>

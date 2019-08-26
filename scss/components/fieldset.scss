@@ -1,16 +1,13 @@
 @import "./../settings";
 @import "./../mixins";
 @import "./../functions";
+@import "./form-group";
 /*!
 .fd-fieldset
 */
 $block: #{$fd-namespace}-fieldset;
 .#{$block} {
-    @include fd-reset();
-    margin-bottom: fd-space("small");
-    &:last-child {
-        margin-bottom: 0;
-    }
+    @extend .#{$fd-namespace}-form-group;
     &--legend {
         @include fd-reset();
         @include fd-var-color("color", fd-color(text, 3), --fd-color-text-3);
