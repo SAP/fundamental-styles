@@ -22,8 +22,7 @@ $block: #{$fd-namespace}-form-label;
         outline-width: 1px;
         outline-style: dotted;
     }
-    //should this be .fd-radio and .fd-checkbox?
-    & > [type='radio'], [type='checkbox'] {
+    & > .#{$fd-namespace}-radio, .#{$fd-namespace}-checkbox {
         margin-right: fd-space(2);
     }
 }

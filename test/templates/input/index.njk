@@ -1,13 +1,13 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "./component.njk" import formControl %}
+{% from "./component.njk" import input %}
 
 
 {% block content %}
 
 <style>
 {# add space between examples for cleaner screenshots #}
-  .fd-form-control {
+  .fd-input {
     margin-bottom: 10px;
   }
 </style>
@@ -15,7 +15,7 @@
 <h2>Default</h2>
 
 {% set example %}
-  {{ formControl() }}
+  {{ input() }}
    
 {% endset %}
 {{ format(example) }}
@@ -23,7 +23,7 @@
 <h2>Compact</h2>
 
 {% set example %}
-  {{ formControl(modifier={block: ["compact"]}) }}
+  {{ input(modifier={block: ["compact"]}) }}
    
 {% endset %}
 
@@ -32,15 +32,15 @@
 <h2>States</h2>
 
 {% set example %}
-  {{ formControl(class="is-valid") }}
+  {{ input(class="is-valid") }}
   
-  {{ formControl(class="is-invalid") }}
+  {{ input(class="is-invalid") }}
   
-  {{ formControl(class="is-warning") }}
+  {{ input(class="is-warning") }}
   
-  {{ formControl(properties="readonly") }}
+  {{ input(properties="readonly") }}
   
-  {{ formControl(properties="disabled") }}
+  {{ input(properties="disabled") }}
 {% endset %}
 
 {{ format(example) }}
@@ -48,9 +48,9 @@
 <h2>Types</h2>
 
 {% set example %}
-  {{ formControl(type="password") }}
+  {{ input(type="password") }}
   
-  {{ formControl(type="search") }}
+  {{ input(type="search") }}
 {% endset %}
 
 {{ format(example) }}

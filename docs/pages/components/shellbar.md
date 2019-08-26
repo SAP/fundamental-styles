@@ -139,7 +139,7 @@ This example includes the product menu for navigating to applications within the
               <button class="sap-icon--search fd-button--shell" aria-controls="KSc6J688" aria-expanded="false" aria-haspopup="true"></button>
               <div class="fd-search-input__closedcontrol" id="KSc6J688" aria-hidden="true">
                 <div class="fd-search-input__controlinput" aria-controls="f7erK342" aria-expanded="false" aria-haspopup="true">
-                  <input type="text" class="fd-form-control" id="ngQtE660" placeholder="Search products" value="Sear">
+                  <input type="text" class="fd-input" id="ngQtE660" placeholder="Search products" value="Sear">
                 </div>
               </div>
             </div>
@@ -205,7 +205,7 @@ When a product has multiple links, the product links should collapse into an ove
               <button class="sap-icon--search fd-button--shell" aria-controls="UIO6J688" aria-expanded="false" aria-haspopup="true"></button>
               <div class="fd-search-input__closedcontrol" id="UIO6J688" aria-hidden="true">
                 <div class="fd-search-input__controlinput" aria-controls="QWErK342" aria-expanded="false" aria-haspopup="true">
-                  <input type="text" class="fd-form-control" id="MNBtE660" placeholder="Search products" value="Sear">
+                  <input type="text" class="fd-input" id="MNBtE660" placeholder="Search products" value="Sear">
                 </div>
               </div>
             </div>

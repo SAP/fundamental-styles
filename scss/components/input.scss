@@ -2,9 +2,9 @@
 @import "./../mixins";
 @import "./../functions";
 /*!
-.fd-form-control
+.fd-input
 */
-$block: #{$fd-namespace}-form-control;
+$block: #{$fd-namespace}-input;
 .#{$block} {
     @include fd-form-text();
     @include fd-var-size("height", $fd-forms-height, --fd-forms-height);

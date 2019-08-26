@@ -86,7 +86,7 @@ This is used for short forms in order to collect information from the user.
         <div class="fd-modal__body">
             <div class="fd-form-item">
                 <label class="fd-form-label" aria-required="true" for="input-2">Email*</label>
-                <input class="fd-form-control" type="text" id="input-2">
+                <input class="fd-input" type="text" id="input-2">
             </div>
         </div>
         <footer class="fd-modal__footer">

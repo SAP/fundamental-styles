@@ -1,6 +1,6 @@
 {
-    "id": "form-control",
-    "name": "Form Control",
+    "id": "input",
+    "name": "Input",
     "properties": {},
     "modifier": {
         "block": ""

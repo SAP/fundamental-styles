@@ -11,4 +11,15 @@ $block: #{$fd-namespace}-fieldset;
     &:last-child {
         margin-bottom: 0;
     }
+    &--legend {
+        @include fd-reset();
+        @include fd-var-color("color", fd-color(text, 3), --fd-color-text-3);
+        @include action-cursor();
+        line-height: $fd-forms-height--input-check;
+        margin-bottom: fd-space(2);
+        display: block;
+        &.is-disabled {
+            opacity: 0.4;
+        }
+    }
 }

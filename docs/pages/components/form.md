@@ -34,19 +34,19 @@ Do not use the input field if:
 {% capture inputs %} 
     <div class="fd-form-item">
         <label class="fd-form-label" for="input-1">Default Input:</label>
-        <input class="fd-form-control" type="text" id="input-1" placeholder="Field placeholder text">
+        <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text">
     </div>
     <div class="fd-form-item">
         <label class="fd-form-label" for="input-1">Compact Input:</label>
-        <input class="fd-form-control fd-form-control--compact" type="text" id="input-1" placeholder="Field placeholder text">
+        <input class="fd-input fd-input--compact" type="text" id="input-1" placeholder="Field placeholder text">
     </div>
     <div class="fd-form-item">
         <label class="fd-form-label" aria-required="true" for="input-2">Required Input:*</label>
-        <input class="fd-form-control" type="text" id="input-2" placeholder="Field placeholder text">
+        <input class="fd-input" type="text" id="input-2" placeholder="Field placeholder text">
     </div>
     <div class="fd-form-item">
         <label class="fd-form-label" aria-required="true" for="input-3">Password:*</label>
-        <input class="fd-form-control" type="password" id="input-3">
+        <input class="fd-input" type="password" id="input-3">
     </div>
 {% endcapture %}
 
@@ -71,11 +71,11 @@ Help elements give the user information about the input. Two types of help eleme
                 </span>
             </span>
         </label>
-        <input class="fd-form-control" type="text" id="input-45">
+        <input class="fd-input" type="text" id="input-45">
     </div>
     <div class="fd-form-item">
         <label class="fd-form-label" for="input-45">Input with Help Message:</label>
-        <input class="fd-form-control" type="text" id="input-45">
+        <input class="fd-input" type="text" id="input-45">
         <span class="fd-form-message fd-form-message--help">
             Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
         </span>
@@ -102,7 +102,7 @@ Along with Invalid and Warning, error messages should be displayed below the fie
     <label class="fd-form-label" for="OatmD552">
         Normal Input:
     </label>
-    <input type="text" class="fd-form-control" id="OatmD552" placeholder="Field placeholder text">
+    <input type="text" class="fd-input" id="OatmD552" placeholder="Field placeholder text">
     <span class="fd-form-message">
         Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
     </span>
@@ -112,14 +112,14 @@ Along with Invalid and Warning, error messages should be displayed below the fie
     <label class="fd-form-label" for="input-2">
         Valid Input:
     </label>
-    <input class="fd-form-control is-valid" type="text" id="input-2">
+    <input class="fd-input is-valid" type="text" id="input-2">
 </div>
 
 <div class="fd-form-item">
     <label class="fd-form-label" for="UI7xy545">
         Invalid Input:
     </label>
-    <input type="text" class="fd-form-control is-invalid" id="UI7xy545" placeholder="Field placeholder text">
+    <input type="text" class="fd-input is-invalid" id="UI7xy545" placeholder="Field placeholder text">
     <span class="fd-form-message fd-form-message--error">
         Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
     </span>
@@ -129,7 +129,7 @@ Along with Invalid and Warning, error messages should be displayed below the fie
     <label class="fd-form-label" for="pvsz1273">
         Warning Input:
     </label>
-    <input type="text" class="fd-form-control is-warning" id="pvsz1273" placeholder="Field placeholder text">
+    <input type="text" class="fd-input is-warning" id="pvsz1273" placeholder="Field placeholder text">
     <span class="fd-form-message fd-form-message--warning">
         Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
     </span>
@@ -140,7 +140,7 @@ Along with Invalid and Warning, error messages should be displayed below the fie
     <label class="fd-form-label" for="VmsRZ860">
         Field Label:
     </label>
-    <input type="text" class="fd-form-control" id="VmsRZ860" placeholder="Field placeholder text">
+    <input type="text" class="fd-input" id="VmsRZ860" placeholder="Field placeholder text">
     <span class="fd-form-message fd-form-message--help">
         Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
     </span>
@@ -148,12 +148,12 @@ Along with Invalid and Warning, error messages should be displayed below the fie
 
 <div class="fd-form-item">
     <label class="fd-form-label" for="input-6">Disabled Input:</label>
-    <input class="fd-form-control" type="text" id="input-6" value="Non editable data" disabled>
+    <input class="fd-input" type="text" id="input-6" value="Non editable data" disabled>
 </div>
 
 <div class="fd-form-item">
     <label class="fd-form-label" for="input-7">Read Only Input:</label>
-    <input class="fd-form-control" type="text" id="input-7" value="Read only data" readonly>
+    <input class="fd-input" type="text" id="input-7" value="Read only data" readonly>
 </div>
 {% endcapture %}
 
@@ -187,7 +187,7 @@ Do not use the text area if
 ## Form Select
 The Form Select component is similar to a dropdown but is more commonly used within a form. It can also be set to a disabled state.
 
-{% capture form-select %}
+{% capture select %}
     <div class="fd-form-item">
         <label class="fd-form-label" for="select-1">Default Select:</label>
         <select class="fd-form-select" id="select-1" name="">
@@ -206,7 +206,7 @@ The Form Select component is similar to a dropdown but is more commonly used wit
     </div>
 {% endcapture %}
 
-{% include display-component.html component=form-select %}
+{% include display-component.html component=select %}
 
 <br/>
 
@@ -226,7 +226,7 @@ In special cases, there are only two mutually exclusive options. Combine them in
 
 {% capture radio-buttons%}
 <fieldset class="fd-fieldset">
-    <legend class="fd-form-label">Radio buttons</legend>
+    <legend class="fd-fieldset--legend">Radio buttons</legend>
     <div class="fd-form-item">
         <label class="fd-form-label" for="pDidh761">
             <input type="radio" class="fd-radio" id="pDidh761" name="radio" checked>
@@ -248,7 +248,7 @@ In special cases, there are only two mutually exclusive options. Combine them in
 </fieldset>
 
 <fieldset class="fd-fieldset">
-    <legend class="fd-form-label">Radio buttons Disabled</legend>
+    <legend class="fd-fieldset--legend">Radio buttons Disabled</legend>
     <div class="fd-form-item">
         <label class="fd-form-label" for="pDidh764">
             <input type="radio" class="fd-radio" id="pDidh764" name="radio" disabled>
@@ -270,7 +270,7 @@ In special cases, there are only two mutually exclusive options. Combine them in
 </fieldset>
 
 <fieldset class="fd-fieldset">
-    <legend class="fd-form-label">Inline Radio buttons</legend>
+    <legend class="fd-fieldset--legend">Inline Radio buttons</legend>
     <div class="fd-form-item fd-form-item--inline">
         <label class="fd-form-label" for="pDidh767">
             <input type="radio" class="fd-radio" id="pDidh767" name="radio">
@@ -316,7 +316,7 @@ Do not use the checkbox control if:
 
 {% capture checkbox %}
 <fieldset class="fd-fieldset">
-    <legend class="fd-form-label">Checkboxes</legend>
+    <legend class="fd-fieldset--legend">Checkboxes</legend>
     <div class="fd-form-item">
         <label class="fd-form-label" for="Ai4ez611">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez611">
@@ -324,13 +324,13 @@ Do not use the checkbox control if:
         </label>
     </div>
     <div class="fd-form-item">
-        <label class="fd-form-label" for="Ai4ez612">
+        <label class="fd-fieldset--legend" for="Ai4ez612">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez612" checked>
             Selected State
         </label>
     </div>
     <div class="fd-form-item">
-        <label class="fd-form-label" for="Ai4ez613">
+        <label class="fd-fieldset--legend" for="Ai4ez613">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez613" indeterminate>
             TriState Text
         </label>
@@ -338,7 +338,7 @@ Do not use the checkbox control if:
 </fieldset>
 
 <fieldset class="fd-fieldset">
-    <legend class="fd-form-label">Checkboxes disabled</legend>
+    <legend class="fd-fieldset--legend">Checkboxes disabled</legend>
     <div class="fd-form-item">
         <label class="fd-form-label" for="Ai4ez614">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez614" disabled>
@@ -360,7 +360,7 @@ Do not use the checkbox control if:
 </fieldset>
 
 <fieldset class="fd-fieldset">
-    <legend class="fd-form-label">Checkboxes inline</legend>
+    <legend class="fd-fieldset--legend">Checkboxes inline</legend>
     <div class="fd-form-item fd-form-item--inline">
         <label class="fd-form-label" for="Ai4ez617">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez617">

@@ -3,30 +3,42 @@
 {% from "./../format.njk" import format %}
 
 {% block content %}
-<h2>with Fieldset element</h2>
-{% set example %}
-  
-{% call fieldset() -%}
-  <label>Placeholder label</label>
-  <input class="input-playground" placeholder="Placeholder input" />
-{%- endcall %}
 
-{% endset %}
-{{ format(example) }}
+  <h2>Default</h2>
+  {% set example %}
+    
+  {% call fieldset() -%}
+    <legend class="fd-fieldset--legend">Placeholder legend</legend>
+    <input class="input-playground" placeholder="Placeholder input" />
+  {%- endcall %}
 
-<h2>With multiple fd-fieldset (testing margin-bottom)</h2>
-{% set example %}
-{# do not replace with macro as it doesn't inherit :last-child selector correctly #}
-<fieldset class="fd-fieldset">
-  <label>Placeholder label</label>
-  <input class="input-playground" placeholder="Placeholder input" />
-</fieldset>
-<fieldset class="fd-fieldset">
-  <label>Placeholder label</label>
-  <input class="input-playground" placeholder="Placeholder input" />
-</fieldset>
+  {% endset %}
+  {{ format(example) }}
 
-{% endset %}
-{{ format(example) }}
+  <h2>Legend Disabled</h2>
+  {% set example %}
+    
+  {% call fieldset() -%}
+    <legend class="fd-fieldset--legend is-disabled">Placeholder legend</legend>
+    <input class="input-playground" placeholder="Placeholder input" />
+  {%- endcall %}
+
+  {% endset %}
+  {{ format(example) }}
+
+  <h2>With multiple fd-fieldset (testing margin-bottom)</h2>
+  {% set example %}
+  {# do not replace with macro as it doesn't inherit :last-child selector correctly #}
+    <fieldset class="fd-fieldset">
+      <legend class="fd-fieldset--legend">Placeholder legend</legend>
+      <input class="input-playground" placeholder="Placeholder input" />
+    </fieldset>
+    <fieldset class="fd-fieldset">
+      <legend class="fd-fieldset--legend">Placeholder legend</legend>
+      <input class="input-playground" placeholder="Placeholder input" />
+    </fieldset>
+
+  {% endset %}
+  {{ format(example) }}
 
 {% endblock %}
