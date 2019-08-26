@@ -17,42 +17,42 @@ A table is a set of tabular data. Line items can support data, images and action
 
 {% capture table-icon %}
 <table class="fd-table">
-    <thead>
-        <tr>
-            <th scope="col"></th>
-            <th scope="col">Column Header</th>
-            <th scope="col">Column Header</th>
-            <th scope="col">Column Header</th>
-            <th scope="col">Column Header</th>
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col"></th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
         </tr>
     </thead>
-    <tbody>
-        <tr>
-            <td><span class=" fd-image--s fd-image--circle" aria-label="Image label"
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
             style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
             </span></td>
-            <td><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
-            <td>First Name</td>
-            <td>Last Name</td>
-            <td>01/26/17</td>
+            <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
         </tr>
-        <tr>
-            <td><span class=" fd-image--s fd-image--circle" aria-label="Image label"
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
             style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
             </span></td>
-            <td><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
-            <td>First Name</td>
-            <td>Last Name</td>
-            <td>01/26/17</td>
+            <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
         </tr>
-        <tr>
-            <td><span class=" fd-image--s fd-image--circle" aria-label="Image label"
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
             style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
             </span></td>
-            <td><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
-            <td>First Name</td>
-            <td>Last Name</td>
-            <td>01/26/17</td>
+            <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
         </tr>
     </tbody>
 </table>
@@ -67,42 +67,42 @@ A table is a set of tabular data. Line items can support data, images and action
 
 {% capture table-icon %}
 <table class="fd-table fd-table--no-borders">
-    <thead>
-        <tr>
-            <th scope="col"></th>
-            <th scope="col">Column Header</th>
-            <th scope="col">Column Header</th>
-            <th scope="col">Column Header</th>
-            <th scope="col">Column Header</th>
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col"></th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
         </tr>
     </thead>
-    <tbody>
-        <tr>
-            <td><span class=" fd-image--s fd-image--circle" aria-label="Image label"
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
             style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
             </span></td>
-            <td><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
-            <td>First Name</td>
-            <td>Last Name</td>
-            <td>01/26/17</td>
+            <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
         </tr>
-        <tr>
-            <td><span class=" fd-image--s fd-image--circle" aria-label="Image label"
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
             style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
             </span></td>
-            <td><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
-            <td>First Name</td>
-            <td>Last Name</td>
-            <td>01/26/17</td>
+            <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
         </tr>
-        <tr>
-            <td><span class=" fd-image--s fd-image--circle" aria-label="Image label"
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
             style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
             </span></td>
-            <td><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
-            <td>First Name</td>
-            <td>Last Name</td>
-            <td>01/26/17</td>
+            <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
         </tr>
     </tbody>
 </table>
@@ -111,48 +111,48 @@ A table is a set of tabular data. Line items can support data, images and action
 
 <br />
 
-## Table with no stripes
+## Table with stripes
 
 `fd-table--striped` can be applied to render a table with zebra stripes
 
 {% capture table-icon %}
 <table class="fd-table fd-table--striped">
-    <thead>
-        <tr>
-            <th scope="col"></th>
-            <th scope="col">Column Header</th>
-            <th scope="col">Column Header</th>
-            <th scope="col">Column Header</th>
-            <th scope="col">Column Header</th>
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col"></th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
         </tr>
     </thead>
-    <tbody>
-        <tr>
-            <td><span class=" fd-image--s fd-image--circle" aria-label="Image label"
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
             style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
             </span></td>
-            <td><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
-            <td>First Name</td>
-            <td>Last Name</td>
-            <td>01/26/17</td>
+            <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
         </tr>
-        <tr>
-            <td><span class=" fd-image--s fd-image--circle" aria-label="Image label"
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
             style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
             </span></td>
-            <td><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
-            <td>First Name</td>
-            <td>Last Name</td>
-            <td>01/26/17</td>
+            <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
         </tr>
-        <tr>
-            <td><span class=" fd-image--s fd-image--circle" aria-label="Image label"
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
             style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
             </span></td>
-            <td><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
-            <td>First Name</td>
-            <td>Last Name</td>
-            <td>01/26/17</td>
+            <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
         </tr>
     </tbody>
 </table>
@@ -163,40 +163,40 @@ A table is a set of tabular data. Line items can support data, images and action
 
 ## Table with checkbox
 The checkbox input can be used at the beginning of each row to allow for bulk actions.
-It is recommended to add the parameter `area-selected="true` to the row that is selected.
+It is recommended to add the parameter `aria-selected="true"` to the row that is selected.
 
 {% capture table-checkbox %}
 <table class="fd-table">
-    <thead>
-        <tr>
-            <th scope="col"><input type="checkbox"></th>
-            <th scope="col">Column Header</th>
-            <th scope="col">Column Header</th>
-            <th scope="col">Column Header</th>
-            <th scope="col">Column Header</th>
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col"><input type="checkbox"></th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
         </tr>
     </thead>
-    <tbody>
-        <tr aria-selected="true">
-            <td><input type="checkbox" checked></td>
-            <td><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
-            <td>First Name</td>
-            <td>Last Name</td>
-            <td>01/26/17</td>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row" aria-selected="true">
+            <td class="fd-table__cell"><input type="checkbox" checked></td>
+            <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
         </tr>
-        <tr>
-            <td><input type="checkbox"></td>
-            <td><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
-            <td>First Name</td>
-            <td>Last Name</td>
-            <td>01/26/17</td>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><input type="checkbox"></td>
+            <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
         </tr>
-        <tr>
-            <td><input type="checkbox"></td>
-            <td><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
-            <td>First Name</td>
-            <td>Last Name</td>
-            <td>01/26/17</td>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><input type="checkbox"></td>
+            <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
         </tr>
     </tbody>
 </table>
@@ -211,20 +211,20 @@ a contextual menu can be substituted in order to display all actions in one menu
 
 {% capture table-actions %}
 <table class="fd-table" >
-    <thead>
-        <tr>
-            <th scope="col">Column Header</th>
-            <th scope="col">Column Header</th>
-            <th scope="col">Column Header</th>
-            <th scope="col"></th>
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col"></th>
         </tr>
     </thead>
-    <tbody>
-        <tr>
-            <td><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
-            <td>First Name</td>
-            <td>01/26/17</td>
-            <td>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <button class="fd-button--light sap-icon--overflow" aria-controls="pQqQR213a" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
@@ -242,11 +242,11 @@ a contextual menu can be substituted in order to display all actions in one menu
                 </div>
             </td>
         </tr>
-        <tr>
-            <td><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
-            <td>First Name</td>
-            <td>01/26/17</td>
-            <td>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <button class="fd-button--light sap-icon--overflow" aria-controls="lkjlkj23" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
@@ -264,11 +264,11 @@ a contextual menu can be substituted in order to display all actions in one menu
                 </div>
             </td>
         </tr>
-        <tr>
-            <td><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
-            <td>First Name</td>
-            <td>01/26/17</td>
-            <td>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <button class="fd-button--light sap-icon--overflow" aria-controls="uu4324" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
@@ -296,28 +296,28 @@ a contextual menu can be substituted in order to display all actions in one menu
 ## Table with Sortable Column Headers
 {% capture table-sort %}
 <table class="fd-table">
-   <thead>
-      <tr>
-         <th class="fd-table__sort-column" scope="col">Header Column</th>
-         <th class="fd-table__sort-column" scope="col">Header Column</th>
-         <th class="fd-table__sort-column" scope="col">Header Column</th>
+   <thead class="fd-table__header">
+      <tr class="fd-table__row">
+         <th class="fd-table__cell fd-table__sort-column" scope="col">Header Column</th>
+         <th class="fd_table__cell fd-table__sort-column" scope="col">Header Column</th>
+         <th class="fd-table__cell fd-table__sort-column" scope="col">Header Column</th>
       </tr>
    </thead>
-   <tbody>
-      <tr>
-         <td>Lorem ipsum dolor sit amet ipsum</td>
-         <td>Lorem ipsum dolor sit amet ipsum</td>
-         <td>Lorem ipsum dolor sit amet ipsum</td>
+   <tbody class="fd-table__body">
+      <tr class="fd-table__row">
+         <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+         <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+         <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
       </tr>
-      <tr>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
+      <tr class="fd-table__row">
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
       </tr>
-      <tr>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
+      <tr class="fd-table__row">
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
       </tr>
    </tbody>
 </table>
@@ -329,28 +329,28 @@ a contextual menu can be substituted in order to display all actions in one menu
 ## Table with Sortable Column Headers - Ascending
 {% capture table-sort %}
 <table class="fd-table">
-   <thead>
-      <tr>
-         <th class="fd-table__sort-column fd-table__sort-column--asc" scope="col">Header Column</th>
-         <th class="fd-table__sort-column" scope="col">Header Column</th>
-         <th class="fd-table__sort-column" scope="col">Header Column</th>
+   <thead class="fd-table__header">
+      <tr class="fd-table__row">
+         <th class="fd-table__cell fd-table__sort-column fd-table__sort-column--asc" scope="col">Header Column</th>
+         <th class="fd-table__cell fd-table__sort-column" scope="col">Header Column</th>
+         <th class="fd-table__cell fd-table__sort-column" scope="col">Header Column</th>
       </tr>
    </thead>
-   <tbody>
-      <tr>
-         <td>Lorem ipsum dolor sit amet ipsum</td>
-         <td>Lorem ipsum dolor sit amet ipsum</td>
-         <td>Lorem ipsum dolor sit amet ipsum</td>
+   <tbody class="fd-table__body">
+      <tr class="fd-table__row">
+         <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+         <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+         <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
       </tr>
-      <tr>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
+      <tr class="fd-table__row">
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
       </tr>
-      <tr>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
+      <tr class="fd-table__row">
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
       </tr>
    </tbody>
 </table>
@@ -362,28 +362,28 @@ a contextual menu can be substituted in order to display all actions in one menu
 ## Table with Sortable Column Headers - Descinding
 {% capture table-sort %}
 <table class="fd-table">
-   <thead>
-      <tr>
-         <th class="fd-table__sort-column fd-table__sort-column--dsc" scope="col">Header Column</th>
-         <th class="fd-table__sort-column" scope="col">Header Column</th>
-         <th class="fd-table__sort-column" scope="col">Header Column</th>
+   <thead class="fd-table__header">
+      <tr class="fd-table__row">
+         <th class="fd-table__cell fd-table__sort-column fd-table__sort-column--dsc" scope="col">Header Column</th>
+         <th class="fd-table__cell fd-table__sort-column" scope="col">Header Column</th>
+         <th class="fd-table__cell fd-table__sort-column" scope="col">Header Column</th>
       </tr>
    </thead>
-   <tbody>
-      <tr>
-         <td>Lorem ipsum dolor sit amet ipsum</td>
-         <td>Lorem ipsum dolor sit amet ipsum</td>
-         <td>Lorem ipsum dolor sit amet ipsum</td>
+   <tbody class="fd-table__body">
+      <tr class="fd-table__row">
+         <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+         <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+         <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
       </tr>
-      <tr>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
+      <tr class="fd-table__row">
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
       </tr>
-      <tr>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
+      <tr class="fd-table__row">
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
       </tr>
    </tbody>
 </table>
@@ -395,9 +395,9 @@ a contextual menu can be substituted in order to display all actions in one menu
 ## Table with Column Headers with context menu
 {% capture table-sort %}
 <table class="fd-table">
-   <thead>
-      <tr>
-         <th class="fd-table__context-menu" aria-controls="col1" aria-haspopup="true" scope="col" >
+   <thead class="fd-table__header">
+      <tr class="fd-table__row">
+         <th class="fd-table__cell fd-table__context-menu" aria-controls="col1" aria-haspopup="true" scope="col" >
             <div class="fd-popover">
                <div class="fd-popover__control">
                   <span class="fd-table__context-menu-label">Header Column</span>
@@ -416,7 +416,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                </div>
             </div>
          </th>
-         <th class="fd-table__context-menu" aria-controls="col2" aria-haspopup="true" scope="col" >
+         <th class="fd-table__cell fd-table__context-menu" aria-controls="col2" aria-haspopup="true" scope="col" >
             <div class="fd-popover">
                <div class="fd-popover__control">
                   <span class="fd-table__context-menu-label">Header Column</span>
@@ -435,7 +435,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                </div>
             </div>
          </th>
-         <th class="fd-table__context-menu" aria-controls="col3" aria-haspopup="true" scope="col" >
+         <th class="fd-table__cell fd-table__context-menu" aria-controls="col3" aria-haspopup="true" scope="col" >
             <div class="fd-popover">
                <div class="fd-popover__control">
                   <span class="fd-table__context-menu-label">Header Column</span>
@@ -456,21 +456,21 @@ a contextual menu can be substituted in order to display all actions in one menu
          </th>
       </tr>
    </thead>
-   <tbody>
-      <tr>
-         <td>Lorem ipsum dolor sit amet ipsum</td>
-         <td>Lorem ipsum dolor sit amet ipsum</td>
-         <td>Lorem ipsum dolor sit amet ipsum</td>
+   <tbody class="fd-table__body">
+      <tr class="fd-table__row">
+         <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+         <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+         <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
       </tr>
-      <tr>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
+      <tr class="fd-table__row">
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
       </tr>
-      <tr>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
-          <td>Lorem ipsum dolor sit amet ipsum</td>
+      <tr class="fd-table__row">
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+          <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
       </tr>
    </tbody>
 </table>
@@ -491,9 +491,9 @@ a contextual menu can be substituted in order to display all actions in one menu
 <div class="fd-table--fixed-wrapper" style="width:800px;">
    <div class="fd-table--fixed">
       <table class="fd-table">
-         <thead>
-            <tr>
-               <th class="fd-table__context-menu fd-table__fixed-col" style="left:0; width:200px" aria-controls="col1.2" aria-haspopup="true" scope="col">
+         <thead class="fd-table__header">
+            <tr class="fd-table__row">
+               <th class="fd-table__cell fd-table__context-menu fd-table__fixed-cell" style="left:0; width:200px" aria-controls="col1.2" aria-haspopup="true" scope="col">
                   <div class="fd-popover">
                      <div class="fd-popover__control">
                         <span class="fd-table__context-menu-label">Header Column</span>
@@ -518,7 +518,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                      </div>
                   </div>
                </th>
-               <th class="fd-table__context-menu" aria-controls="col2.2" aria-haspopup="true" scope="col">
+               <th class="fd-table__cell fd-table__context-menu" aria-controls="col2.2" aria-haspopup="true" scope="col">
                   <div class="fd-popover">
                      <div class="fd-popover__control">
                         <span class="fd-table__context-menu-label">Header Column</span>
@@ -534,7 +534,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                      </div>
                   </div>
                </th>
-               <th class="fd-table__context-menu" aria-controls="col3.2" aria-haspopup="true" scope="col">
+               <th class="fd-table__cell fd-table__context-menu" aria-controls="col3.2" aria-haspopup="true" scope="col">
                   <div class="fd-popover">
                      <div class="fd-popover__control">
                         <span class="fd-table__context-menu-label">Header Column</span>
@@ -550,7 +550,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                      </div>
                   </div>
                </th>
-               <th class="fd-table__context-menu" aria-controls="col4.2" aria-haspopup="true" scope="col">
+               <th class="fd-table__cell fd-table__context-menu" aria-controls="col4.2" aria-haspopup="true" scope="col">
                   <div class="fd-popover">
                      <div class="fd-popover__control">
                         <span class="fd-table__context-menu-label">Header Column</span>
@@ -566,7 +566,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                      </div>
                   </div>
                </th>
-               <th class="fd-table__context-menu" aria-controls="col5.2" aria-haspopup="true" scope="col">
+               <th class="fd-table__cell fd-table__context-menu" aria-controls="col5.2" aria-haspopup="true" scope="col">
                   <div class="fd-popover">
                      <div class="fd-popover__control">
                         <span class="fd-table__context-menu-label">Header Column</span>
@@ -582,7 +582,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                      </div>
                   </div>
                </th>
-               <th class="fd-table__context-menu" aria-controls="col6.2" aria-haspopup="true" scope="col">
+               <th class="fd-table__cell fd-table__context-menu" aria-controls="col6.2" aria-haspopup="true" scope="col">
                   <div class="fd-popover">
                      <div class="fd-popover__control">
                         <span class="fd-table__context-menu-label">Header Column</span>
@@ -598,7 +598,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                      </div>
                   </div>
                </th>
-               <th class="fd-table__context-menu" aria-controls="col7.2" aria-haspopup="true" scope="col">
+               <th class="fd-table__cell fd-table__context-menu" aria-controls="col7.2" aria-haspopup="true" scope="col">
                   <div class="fd-popover">
                      <div class="fd-popover__control">
                         <span class="fd-table__context-menu-label">Header Column</span>
@@ -614,7 +614,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                      </div>
                   </div>
                </th>
-               <th class="fd-table__context-menu" aria-controls="col8.2" aria-haspopup="true" scope="col">
+               <th class="fd-table__cell fd-table__context-menu" aria-controls="col8.2" aria-haspopup="true" scope="col">
                   <div class="fd-popover">
                      <div class="fd-popover__control">
                         <span class="fd-table__context-menu-label">Header Column</span>
@@ -632,36 +632,36 @@ a contextual menu can be substituted in order to display all actions in one menu
                </th>
             </tr>
          </thead>
-         <tbody>
-            <tr>
-               <th class="fd-table__fixed-col" style="left:0; width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
+         <tbody class="fd-table__body">
+            <tr class="fd-table__row">
+               <th class="fd-table__cell fd-table__fixed-cell" style="width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
             </tr>
-            <tr>
-               <th class="fd-table__fixed-col" style="left:0; width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
+            <tr class="fd-table__row">
+               <th class="fd-table__cell fd-table__fixed-cell" style="width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
             </tr>
-            <tr>
-               <th class="fd-table__fixed-col" style="left:0; width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
-               <td>Lorem ipsum dolor sit amet ipsum</td>
+            <tr class="fd-table__row">
+               <th class="fd-table__cell fd-table__fixed-cell" style="width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
             </tr>
          </tbody>
       </table>
