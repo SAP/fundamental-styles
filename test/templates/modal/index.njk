@@ -1,12 +1,9 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
 {% from "./component.njk" import modal %}
+{% from "./../overlay.njk" import overlay, overlay_toggle %}
 
 {% block content %}
-
-<p>
-  NOTE: The <code>modal</code> itself does not provide the outer container. Use the <code>.fd-overlay</code> layout component in conjunction with the <code>.fd-ui__overlay</code> template container to hide and show the modal. See <a href="http://localhost:3030/pages/overlay">the overlay example</a>.
-</p>
 
 {% set example %}
 
@@ -101,6 +98,16 @@
 
 {% endset %}
 {{ format(example) }}
+<br><br>
+
+{{ overlay_toggle() }}
+
+<p>
+  NOTE: The <code>modal</code> itself does not provide the outer container. Use the <code>.fd-overlay</code> layout component in conjunction with the <code>.fd-ui__overlay</code> template container to hide and show the modal.
+</p>
+
+{% set overlayType = "modal" %}
+{{ overlay(overlayType) }}
 <br><br>
 
 {% endblock %}
