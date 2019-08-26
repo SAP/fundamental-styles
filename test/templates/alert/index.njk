@@ -2,6 +2,7 @@
 {% from "./../format.njk" import format %}
 {% from "../button/component.njk" import button %}
 {% from "./component.njk" import alert %}
+{% from "./../overlay.njk" import overlay, overlay_toggle %}
 
 
 {% block content %}
@@ -311,5 +312,17 @@
 }}
 {% endset %}
 {{- format(example) -}}
+<br><br>
+
+{{ overlay_toggle() }}
+
+<p>
+  NOTE: The <code>alert</code> itself does not provide the outer container. Use the <code>.fd-overlay</code> layout component in conjunction with the <code>.fd-ui__overlay</code> template container to hide and show the alert.
+</p>
+
+{% set overlayType = "alert" %}
+{{ overlay(overlayType) }}
+<br><br>
+
 
 {% endblock %}
