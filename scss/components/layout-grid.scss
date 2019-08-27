@@ -1,0 +1,37 @@
+@import "./../settings";
+@import "./../mixins";
+@import "./../functions";
+/*!
+.fd-layout-grid
+*/
+
+$block: #{$fd-namespace}-layout-grid;
+.#{$block} {
+  $fd-layout-grid-items-per-row: 3 !default;
+  @include fd-reset();
+  @include fd-var-size("grid-gap", $fd-width--gutter, --fd-width-gutter);
+  display: grid;
+  grid-template-columns: repeat(#{$fd-layout-grid-items-per-row}, 1fr);
+
+  &--has-grid-gap-0 {
+    grid-gap: 0;
+  }
+
+  &--has-grid-gap-1 {
+    grid-gap: 1px;
+  }
+
+  @each $n in 2, 3, 4, 5, 6 {
+    &--col-#{$n} {
+      grid-template-columns: repeat(#{$n}, 1fr);
+    }
+  }
+
+  @each $n in 2,3,4,5,6 {
+    @each $direction in row,column {
+      &__span-#{$direction}-#{$n} {
+        grid-#{$direction}: span #{$n};
+      }
+    }
+  }
+}
