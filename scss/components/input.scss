@@ -12,6 +12,7 @@ $block: #{$fd-namespace}-input;
     &::placeholder {
         @include fd-reset();
         @include fd-var-color("color", $fd-forms-color--placeholder, --fd-color-neutral-4);
+        font-style: italic;
     }
     &--compact {
         @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);
