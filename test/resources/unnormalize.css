@@ -12,7 +12,8 @@ button,
 fieldset,
 input,
 span,
-textarea {
+textarea,
+div {
     font-size: 30px;
     padding: 20px;
     margin: 20px;

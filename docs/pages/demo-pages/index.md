@@ -11,7 +11,7 @@ summary:
 ## Application Layouts
 {:.docs-header-h2}
 
-<div class="fd-tile-grid fd-tile-grid--2col docs-tiles">
+<div class="fd-layout-grid fd-layout-grid--col-2 docs-tiles">
     <a class="fd-tile" role="button" href="full-width-app-demo.html" target="_blank">
         <div class="fd-tile__content">
              <h2 class="fd-tile__header">
@@ -47,7 +47,7 @@ summary:
 ## Content Pages
 {:.docs-header-h2}
 
-<div class="fd-tile-grid fd-tile-grid--2col docs-tiles">
+<div class="fd-layout-grid fd-layout-grid--col-2 docs-tiles">
     <a class="fd-tile" role="button" href="tiles-demo-page.html" target="_blank">
         <div class="fd-tile__content">
              <h2 class="fd-tile__header">

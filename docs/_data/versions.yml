@@ -7,10 +7,6 @@ spacing:
   since: 1.0.0
   updated:
 
-grid:
-  since: 1.0.0
-  updated:
-
 type:
   since: 1.0.0
   updated: 1.3.0
@@ -59,13 +55,6 @@ col:
 panel:
   since: 1.0.0
   updated: 1.1.0
-
-panel-grid:
-  since: 1.0.0
-  updated:
-
-
-
 
 alert:
   since: 1.0.0
@@ -227,10 +216,6 @@ token:
   updated:
 
 tile:
-  since: 1.0.0
-  updated:
-
-tile-grid:
   since: 1.0.0
   updated:
 

@@ -13,15 +13,21 @@ $block: #{$fd-namespace}-layout-grid;
   display: grid;
   grid-template-columns: repeat(#{$fd-layout-grid-items-per-row}, 1fr);
 
-  &--has-grid-gap-0 {
+  &--no-gap {
     grid-gap: 0;
+    & > * {
+      box-shadow: none;
+    }
   }
 
-  &--has-grid-gap-1 {
+  &--gap-1 {
     grid-gap: 1px;
+    & > * {
+      box-shadow: none;
+    }
   }
 
-  @each $n in 2, 3, 4, 5, 6 {
+  @each $n in 1, 2, 3, 4, 5, 6 {
     &--col-#{$n} {
       grid-template-columns: repeat(#{$n}, 1fr);
     }

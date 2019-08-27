@@ -1,6 +1,6 @@
 {% extends "./../layouts/shell.njk" %}
 {% import "../../layout/component.njk" as layout %}
-{% from "./../../panel-grid/component.njk" import panel_grid %}
+{% from "./../../layout-grid/component.njk" import layout_grid %}
 {% from "./../../panel/component.njk" import panel, panel_header, panel_actions, panel_filters, panel_body, panel_footer %}
 
 {% set page_title = "Page Title" %}
@@ -26,17 +26,15 @@
     {% call layout.container(modifier="fluid") -%}
 
 
-    {{  panel_grid(
+    {{  layout_grid(
             properties={
                 items: [
                 panel_item, panel_item, panel_item, panel_item, panel_item, panel_item, panel_item, panel_item
                 ]
             },
             modifier={
-                block: ["4col"]
-            },
-            state={},
-            aria={}
+                block: ["col-4"]
+            }
         )
     }}
 

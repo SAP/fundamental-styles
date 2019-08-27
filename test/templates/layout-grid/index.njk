@@ -25,6 +25,23 @@
 {% endset %}
 {{ format(example) }}
 
+<h2>1 col grid</h2>
+{% set example %}
+    {{ layout_grid(
+            properties={
+                items: [
+                div_playground, div_playground, div_playground, div_playground, div_playground, div_playground
+                ]
+            },
+             modifier={
+                block: ["col-1"]
+            }
+        )
+    }}
+{% endset %}
+{{ format(example) }}
+
+
 
 <h2>2 col grid</h2>
 {% set example %}
@@ -126,6 +143,42 @@
     }}
 {% endset %}
 {{ format(example) }}
+
+
+<h2>3 col grid - gutter helper classes</h2>
+
+{% set example %}
+    {{ layout_grid(
+            properties={
+                items: [
+                div_playground, div_playground, div_playground, div_playground, div_playground, div_playground
+                ]
+            },
+             modifier={
+                block: ["col-3", "no-gap"]
+            }
+        )
+    }}
+{% endset %}
+{{ format(example) }}
+
+<h2>3 col grid - gutter helper classes</h2>
+
+{% set example %}
+    {{ layout_grid(
+            properties={
+                items: [
+                div_playground, div_playground, div_playground, div_playground, div_playground, div_playground
+                ]
+            },
+             modifier={
+                block: ["col-3", "gap-1"]
+            }
+        )
+    }}
+{% endset %}
+{{ format(example) }}
+
 
 
 {% endblock %}

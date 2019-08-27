@@ -9,7 +9,7 @@
 {% from "../button/component.njk" import button %}
 {% from "../label/component.njk" import label %}
 {% from "../tile/component.njk" import tile, tile_content, tile_media, tile_actions %}
-{% from "../tile-grid/component.njk" import tile_grid %}
+{% from "../layout-grid/component.njk" import layout_grid %}
 {% from "../identifier/component.njk" import identifier %}
 {% from "../badge/component.njk" import badge %}
 
@@ -38,8 +38,8 @@
 {% endset %}
 
 
-{% set tiles_grid_content %}
-{{  tile_grid(
+{% set layout_grid_content %}
+{{  layout_grid(
         properties={
             items: [
             tile_icon, tile_icon, tile_icon, tile_icon,
@@ -51,9 +51,7 @@
         },
         modifier={
             block: ["4col"]
-        },
-        state={},
-        aria={}
+        }
     )
 }}
 {% endset %}
@@ -74,7 +72,7 @@
     {%- endcall %}
     {%- endcall %}
     {% call layout.panel_body(modifier=["bleed"]) -%}
-{{tiles_grid_content}}
+{{layout_grid_content}}
     {%- endcall %}
 {%- endcall %}
 {% endset %}
