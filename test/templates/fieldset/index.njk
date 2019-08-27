@@ -8,7 +8,7 @@
   {% set example %}
     
   {% call fieldset() -%}
-    <legend class="fd-fieldset--legend">Placeholder legend</legend>
+    <legend class="fd-fieldset__legend">Placeholder legend</legend>
     <input class="input-playground" placeholder="Placeholder input" />
   {%- endcall %}
 
@@ -19,7 +19,7 @@
   {% set example %}
     
   {% call fieldset() -%}
-    <legend class="fd-fieldset--legend is-disabled">Placeholder legend</legend>
+    <legend class="fd-fieldset__legend is-disabled">Placeholder legend</legend>
     <input class="input-playground" placeholder="Placeholder input" />
   {%- endcall %}
 
@@ -30,11 +30,11 @@
   {% set example %}
   {# do not replace with macro as it doesn't inherit :last-child selector correctly #}
     <fieldset class="fd-fieldset">
-      <legend class="fd-fieldset--legend">Placeholder legend</legend>
+      <legend class="fd-fieldset__legend">Placeholder legend</legend>
       <input class="input-playground" placeholder="Placeholder input" />
     </fieldset>
     <fieldset class="fd-fieldset">
-      <legend class="fd-fieldset--legend">Placeholder legend</legend>
+      <legend class="fd-fieldset__legend">Placeholder legend</legend>
       <input class="input-playground" placeholder="Placeholder input" />
     </fieldset>
 

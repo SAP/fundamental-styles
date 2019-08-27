@@ -226,7 +226,7 @@ In special cases, there are only two mutually exclusive options. Combine them in
 
 {% capture radio-buttons%}
 <fieldset class="fd-fieldset">
-    <legend class="fd-fieldset--legend">Radio buttons</legend>
+    <legend class="fd-fieldset__legend">Radio buttons</legend>
     <div class="fd-form-item">
         <label class="fd-form-label" for="pDidh761">
             <input type="radio" class="fd-radio" id="pDidh761" name="radio" checked>
@@ -248,7 +248,7 @@ In special cases, there are only two mutually exclusive options. Combine them in
 </fieldset>
 
 <fieldset class="fd-fieldset">
-    <legend class="fd-fieldset--legend">Radio buttons Disabled</legend>
+    <legend class="fd-fieldset__legend">Radio buttons Disabled</legend>
     <div class="fd-form-item">
         <label class="fd-form-label" for="pDidh764">
             <input type="radio" class="fd-radio" id="pDidh764" name="radio" disabled>
@@ -270,7 +270,7 @@ In special cases, there are only two mutually exclusive options. Combine them in
 </fieldset>
 
 <fieldset class="fd-fieldset">
-    <legend class="fd-fieldset--legend">Inline Radio buttons</legend>
+    <legend class="fd-fieldset__legend">Inline Radio buttons</legend>
     <div class="fd-form-item fd-form-item--inline">
         <label class="fd-form-label" for="pDidh767">
             <input type="radio" class="fd-radio" id="pDidh767" name="radio">
@@ -316,7 +316,7 @@ Do not use the checkbox control if:
 
 {% capture checkbox %}
 <fieldset class="fd-fieldset">
-    <legend class="fd-fieldset--legend">Checkboxes</legend>
+    <legend class="fd-fieldset__legend">Checkboxes</legend>
     <div class="fd-form-item">
         <label class="fd-form-label" for="Ai4ez611">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez611">
@@ -324,13 +324,13 @@ Do not use the checkbox control if:
         </label>
     </div>
     <div class="fd-form-item">
-        <label class="fd-fieldset--legend" for="Ai4ez612">
+        <label class="fd-fieldset__legend" for="Ai4ez612">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez612" checked>
             Selected State
         </label>
     </div>
     <div class="fd-form-item">
-        <label class="fd-fieldset--legend" for="Ai4ez613">
+        <label class="fd-fieldset__legend" for="Ai4ez613">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez613" indeterminate>
             TriState Text
         </label>
@@ -338,7 +338,7 @@ Do not use the checkbox control if:
 </fieldset>
 
 <fieldset class="fd-fieldset">
-    <legend class="fd-fieldset--legend">Checkboxes disabled</legend>
+    <legend class="fd-fieldset__legend">Checkboxes disabled</legend>
     <div class="fd-form-item">
         <label class="fd-form-label" for="Ai4ez614">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez614" disabled>
@@ -360,7 +360,7 @@ Do not use the checkbox control if:
 </fieldset>
 
 <fieldset class="fd-fieldset">
-    <legend class="fd-fieldset--legend">Checkboxes inline</legend>
+    <legend class="fd-fieldset__legend">Checkboxes inline</legend>
     <div class="fd-form-item fd-form-item--inline">
         <label class="fd-form-label" for="Ai4ez617">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez617">

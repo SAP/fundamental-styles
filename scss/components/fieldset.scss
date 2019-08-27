@@ -8,7 +8,7 @@
 $block: #{$fd-namespace}-fieldset;
 .#{$block} {
     @extend .#{$fd-namespace}-form-group;
-    &--legend {
+    &__legend {
         @include fd-reset();
         @include fd-var-color("color", fd-color(text, 3), --fd-color-text-3);
         @include action-cursor();
