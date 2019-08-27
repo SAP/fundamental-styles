@@ -1,7 +1,5 @@
 {% from "../button/component.njk" import button %}
-{#
-    see ./data.json for object structure
-#}
+
 {% macro input_group(
     type="text",
     properties={
@@ -34,9 +32,9 @@
         </span>
     {%- endif %}
     {%- if properties.type == "textarea" %}
-        <textarea class="input-playground-full-width" placeholder="{{properties.placeholder}}" value="{{properties.value}}"/> 
+        <textarea class="fd-input" placeholder="{{properties.placeholder}}" value="{{properties.value}}"/> 
     {%- else %}
-        <input class="input-playground-full-width" placeholder="{{properties.placeholder}}" value="{{properties.value}}"/> 
+        <input class="fd-input" placeholder="{{properties.placeholder}}" value="{{properties.value}}"/> 
     {%- endif %}
     {%- if properties.after %}
         <span class="fd-input-group__addon{{ modifier.after | modifier('input-group__addon') }} {{ 'fd-input-group__addon--readonly' if properties.input.state.readonly}}">

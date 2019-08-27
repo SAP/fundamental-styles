@@ -10,25 +10,12 @@
 
 $block: #{$fd-namespace}-input-group;
 .#{$block} {
-
-    //BLOCK BASE *******************************************
     @include fd-reset();
     display: flex;
-    vertical-align: bottom;
-
-    //ELEMENTS *******************************************
-    //TO DO: REMOVE WHEN SELF CONTAINING INPUT GROUPS
-    $fd-elements-inputs--text: "input[type=text]", "input[type=password]", "input[type=email]", "input[type=url]", "input[type=search]", "input[type=tel]", "input[type=number]", "input[type=date]", "input[type=time]";
-    #{$fd-elements-inputs--text} {
-        z-index: map-get($fd-z-index-levels, "first");
-    }
 
     @include fd-rtl() {
         > * {
-            & input:read-only {
-              border-right: none;
-            }
-            &:not(:first-child) {
+            &:not(:first-child), &.#{$fd-namespace}-input:read-only {
                 border-right: none;
               }
               &:not(.fd-input-group__addon--readonly):last-child {
@@ -167,16 +154,12 @@ $block: #{$fd-namespace}-input-group;
         }
     }
     &--before {
-        #{$fd-elements-inputs--text} {
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
-        }
     }
     &--after {
-        #{$fd-elements-inputs--text} {
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
-        }
     }
     &__button {
         @include fd-button-reset();
