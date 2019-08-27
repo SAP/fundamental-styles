@@ -10,7 +10,7 @@ $block: #{$fd-namespace}-layout-grid;
   @include fd-reset();
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: var($fd-width--gutter, --fd-width-gutter);
+  grid-gap: var(--fd-width-gutter, $fd-width--gutter);
 
   &--no-gap {
     grid-gap: 0;
