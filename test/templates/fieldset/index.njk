@@ -1,0 +1,44 @@
+{% extends "layout.njk" %}
+{% from "./component.njk" import  fieldset %}
+{% from "./../format.njk" import format %}
+
+{% block content %}
+
+  <h2>Default</h2>
+  {% set example %}
+    
+  {% call fieldset() -%}
+    <legend class="fd-fieldset__legend">Placeholder legend</legend>
+    <input class="input-playground" placeholder="Placeholder input" />
+  {%- endcall %}
+
+  {% endset %}
+  {{ format(example) }}
+
+  <h2>Legend Disabled</h2>
+  {% set example %}
+    
+  {% call fieldset() -%}
+    <legend class="fd-fieldset__legend is-disabled">Placeholder legend</legend>
+    <input class="input-playground" placeholder="Placeholder input" />
+  {%- endcall %}
+
+  {% endset %}
+  {{ format(example) }}
+
+  <h2>With multiple fd-fieldset (testing margin-bottom)</h2>
+  {% set example %}
+  {# do not replace with macro as it doesn't inherit :last-child selector correctly #}
+    <fieldset class="fd-fieldset">
+      <legend class="fd-fieldset__legend">Placeholder legend</legend>
+      <input class="input-playground" placeholder="Placeholder input" />
+    </fieldset>
+    <fieldset class="fd-fieldset">
+      <legend class="fd-fieldset__legend">Placeholder legend</legend>
+      <input class="input-playground" placeholder="Placeholder input" />
+    </fieldset>
+
+  {% endset %}
+  {{ format(example) }}
+
+{% endblock %}

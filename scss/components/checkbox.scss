@@ -1,0 +1,57 @@
+@import "./../settings";
+@import "./../mixins";
+@import "./../functions";
+/*!
+.fd-checkbox
+*/
+$block: #{$fd-namespace}-checkbox;
+
+.#{$block} {
+    @include fd-form-base();
+    height: $fd-forms-height--input-check;
+    width: $fd-forms-height--input-check;
+    margin: 0;
+    vertical-align: middle;
+    position: relative;
+    @include action-cursor();
+    &::before {
+        content: "";
+        width: 10px;
+        height: 5px;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 0 0 2px 2px;
+        transform: rotate(-45deg);
+        position: absolute;
+        z-index: map-get($fd-z-index-levels, "second");
+        top: calc(50% - 4px);
+        left: calc(50% - 10px/2);
+    }
+    &[checked] {
+        @include fd-var-color("border-color", $fd-forms-border-color--check, --fd-color-action-3);
+        &::before {
+            @include fd-var-color("border-color", $fd-forms-border-color--check, --fd-color-action-3);
+          }
+        @include fd-disabled() {
+            @include fd-var-color("border-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
+            &::before {
+                @include fd-var-color("border-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
+              }
+        }
+    }
+    &[indeterminate] {
+        border-width: 3px;
+        border-style: solid;
+        @include fd-var-color("border-color", $fd-forms-background-color, --fd-color-background-2);
+        @include fd-var-color("background-color", $fd-forms-border-color--check, --fd-color-action-3);
+        box-shadow: 0 0 0 1px $fd-forms-border-color--check;
+        @include fd-hover() {
+            border-width: 3px;
+        }
+        @include fd-disabled() {
+            @include fd-var-color("background-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
+            @include fd-var-color("border-color", $fd-forms-background-color, --fd-color-background-2);
+            box-shadow: 0 0 0 1px $fd-forms-border-color--disabled;
+        }
+    }
+}

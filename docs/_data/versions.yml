@@ -134,7 +134,7 @@ radio:
   since: 1.0.0
   updated:
 
-select:
+form-select:
   since: 1.0.0
   updated: 1.3.0
 

@@ -1,0 +1,5 @@
+{% macro formMessage(message="Message text", modifier="")-%}
+<span class="fd-form-message{{ modifier | modifier('form-message')}}">
+    {{message}}
+</span>
+{%- endmacro %}
