@@ -169,7 +169,7 @@ It is recommended to add the parameter `aria-selected="true"` to the row that is
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell" scope="col"><input type="checkbox"></th>
+            <th class="fd-table__cell" scope="col"><input class="fd-checkbox" type="checkbox"></th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -178,21 +178,21 @@ It is recommended to add the parameter `aria-selected="true"` to the row that is
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row" aria-selected="true">
-            <td class="fd-table__cell"><input type="checkbox" checked></td>
+            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox" checked></td>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><input type="checkbox"></td>
+            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><input type="checkbox"></td>
+            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>

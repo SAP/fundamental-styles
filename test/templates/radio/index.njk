@@ -1,43 +1,40 @@
 {% extends "layout.njk" %}
-{% import "../forms.njk" as forms %}
 {% from "./../format.njk" import format %}
+{% from "./component.njk" import radio %}
 
 {% block content %}
 
+<h2>Default</h2>
 
-    {% set basic_radio %}
-{{ forms.radio(
-    type="radio",
-    properties={
-    })
-}}
-{{ forms.radio(
-    type="radio",
-    properties={
-    },
-    state={
-      checked: true
-    })
-}}
-{{ forms.radio(
-    type="radio",
-    properties={
-    },
-    state={
-      disabled: true
-    })
-}}
-{{ forms.radio(
-    type="radio",
-    properties={
-    },
-    state={
-      checked: true,
-      disabled: true
-    })
-}}
-    {% endset %}
+{% set example %}
+  {{ radio() }}
+{% endset %}
+ <br><br>
+{{ format(example) }}
+ <br><br>
 
-    {{ format(basic_radio) }}
+<h2>Checked</h2>
+
+{% set example %}
+  {{ radio(properties='checked') }}
+{% endset %}
+
+{{ format(example) }}
+
+
+{% set example %}
+  {{ radio(properties='checked') }}
+  {{ radio() }}
+  {{ radio() }}
+{% endset %}
+
+{{ format(example) }}
+<h2>States</h2>
+
+{% set example %}
+  {{ radio(properties='disabled') }}
+{% endset %}
+
+{{ format(example) }}
 
 {% endblock %}

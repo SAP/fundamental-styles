@@ -1,0 +1,30 @@
+{% extends "layout.njk" %}
+{% from "./component.njk" import  formGroup %}
+{% from "./../format.njk" import format %}
+
+{% block content %}
+
+  <h2>Default</h2>
+  {% set example %}
+    
+  {% call formGroup() -%}
+    <input class="input-playground" placeholder="Placeholder input" />
+  {%- endcall %}
+
+  {% endset %}
+  {{ format(example) }}
+
+  <h2>With multiple fd-form-group (testing margin-bottom)</h2>
+  {% set example %}
+  {# do not replace with macro as it doesn't inherit :last-child selector correctly #}
+    <div class="fd-form-group">
+      <input class="input-playground" placeholder="Placeholder input" />
+    </div>
+    <div class="fd-form-group">
+      <input class="input-playground" placeholder="Placeholder input" />
+    </div>
+
+  {% endset %}
+  {{ format(example) }}
+
+{% endblock %}

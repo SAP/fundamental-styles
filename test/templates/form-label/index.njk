@@ -1,0 +1,67 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./component.njk" import formLabel, formLabelWrap %}
+
+{% block content %}
+
+<h2>Default</h2>
+
+{% set example %}
+  {{ formLabel() }}
+{% endset %}
+ <br><br>
+{{ format(example) }}
+ <br><br>
+
+<h2>States</h2>
+
+{% set example %}
+  {{ formLabel(required="true") }}
+  <br><br>
+  {{ formLabel(modifier={block: ["is-disabled"]}) }}
+{% endset %}
+
+{{ format(example) }}
+
+<h2>With Legend</h2>
+
+{% set example %}
+  <legend class='fd-form-label'>Form Label Legend</legend>
+  {{ formLabel() }}
+{% endset %}
+ <br><br>
+{{ format(example) }}
+ <br><br>
+
+<h2>Label as Wrapper</h2>
+
+{% set example %}
+  
+{% call formLabelWrap() -%}
+  <input class='fd-checkbox' type="checkbox">Placeholder checkbox</input>
+{%- endcall %}
+
+{% endset %}
+{{ format(example) }}
+
+{% set example %}
+  
+{% call formLabelWrap() -%}
+  <input class='fd-radio' type="radio">Placeholder radio</input>
+{%- endcall %}
+
+{% endset %}
+{{ format(example) }}
+
+{% set example %}
+
+{% call formLabelWrap() -%}
+  <span>
+    <input class='fd-checkbox' type="checkbox">I am a toggle</input>
+  </span>
+{%- endcall %}
+
+{% endset %}
+{{ format(example) }}
+
+{% endblock %}

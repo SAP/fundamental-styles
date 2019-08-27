@@ -8,7 +8,11 @@ p,
 a,
 ul,
 li,
-button {
+button,
+fieldset,
+input,
+span,
+textarea {
     font-size: 30px;
     padding: 20px;
     margin: 20px;

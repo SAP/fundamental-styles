@@ -21,6 +21,7 @@ $search-results-link-hover: docs-color(background, 2);
         background-color: $search-input-bg !important;
         padding-left: 36px !important;
         border-radius: 0 !important;
+        width: 100%;
     }
 
     &__results {

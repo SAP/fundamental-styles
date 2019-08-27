@@ -39,7 +39,7 @@ summary:
                     </li>
                     <li>
                         <label for="b1" class="fd-menu__item">
-                            <input type="checkbox" class="fd-checkbox" id="b1">
+                            <input type="checkbox" class="fd-checkbox" id="b1" checked>
                             Berry
                         </label>
                     </li>
