@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.91"></a>
+# [0.2.0-rc.91](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.90...v0.2.0-rc.91) (2019-08-27)
+
+
+### Features
+
+* self contained styles for forms (+ split out form components) ([#290](https://github.com/SAP/fundamental-styles/issues/290)) ([05d4b78](https://github.com/SAP/fundamental-styles/commit/05d4b78))
+
+
+
 <a name="0.2.0-rc.90"></a>
 # [0.2.0-rc.90](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.89...v0.2.0-rc.90) (2019-08-26)
 
