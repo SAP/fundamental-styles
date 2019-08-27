@@ -7,11 +7,10 @@
 
 $block: #{$fd-namespace}-layout-grid;
 .#{$block} {
-  $fd-layout-grid-items-per-row: 3 !default;
   @include fd-reset();
-  @include fd-var-size("grid-gap", $fd-width--gutter, --fd-width-gutter);
   display: grid;
-  grid-template-columns: repeat(#{$fd-layout-grid-items-per-row}, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: var($fd-width--gutter, --fd-width-gutter);
 
   &--no-gap {
     grid-gap: 0;

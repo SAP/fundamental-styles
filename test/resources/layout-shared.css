@@ -30,7 +30,7 @@ body {
   padding: 10px;
   background: gold;
   font-size: 14px;
-  box-shadow: 0 5px 20px 0 blue;
+  /* box-shadow: 0 5px 20px 0 blue; */
 }
 
 .badge-playground {

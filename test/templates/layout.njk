@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ id }}</title>
     <link rel="stylesheet" href="static/layout-shared.css">
+    <link rel="stylesheet" href="static/layout-grid.css">
     {% if not selfContained %}
         <link rel="stylesheet" href="static/layout.css">
     {% endif %}
     <style>
-        {% if selfContained %}
+        {# {% if selfContained %}
             {% set sass = id + '.scss'  %}
             {{ sass | component_css }}
         {% else %}
@@ -20,7 +21,8 @@
                 {% set sass = 'fundamental-styles.scss' %}
             {% endif %}
             {{ sass | sass_to_css }}
-        {% endif %}
+        {% endif %} #}
+
     </style>
     <script>
         function toggleStylesheet( href, onoff ){
