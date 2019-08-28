@@ -1,9 +1,6 @@
 {
     "id": "badge",
     "name": "Badge",
-    "css_vars": true,
-    "rtl": true,
-    "version": "1.0.0",
     "properties": {
         "label": "Badge Label"
     },
@@ -14,7 +11,5 @@
             "error",
             "pill"
         ]
-    },
-    "state": {},
-    "aria": {}
+    }
 }

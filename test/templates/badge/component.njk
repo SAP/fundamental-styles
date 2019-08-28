@@ -3,7 +3,7 @@ badge:
     properties={},
     modifier={ block: [] }
 -->
-{% macro badge(properties={}, modifier={}, state={}, aria={}, classes=[]) -%}
+{% macro badge(properties={}, modifier={}, classes=[]) -%}
 <span class="fd-badge{{ modifier.block | modifier('badge') }}{{classes|classes}}">
     {{properties.label}}
 </span>
