@@ -4,116 +4,95 @@
 {% from "./component-anchor.njk" import anchor_button %}
 
 {% block content %}
-<style media="screen">
-  button,
-  a {
-    margin-bottom: 4px !important;
-    margin-right: 4px !important;
-  }
-  table textarea.test-textarea {
-    height: 100px;
-  }
-</style>
 
 {% set emphasis = ["emphasized", "", "light" ] %}
 {% set types = ["", "standard", "positive ", "medium", "negative" ] %}
 {% set sizes = ["", "compact" ] %}
 
-<table border="1" cellpadding="10">
-  <tr>
-    <td></td>
-{% for e in emphasis %}
-    <th>{{e}} {{"<em>default</em>" if not e }}</th>
-{% endfor %}
-  </tr>
-  {% for type in types %}
-  <tr>
-      <th>{{type}} {{"<em>default</em>" if not type }}</th>
-      {% for e in emphasis %}
-        <td>
-{% for size in sizes %}
+{%- macro code_display(e, type, size) -%}
+    {{".fd-button--" + e if e}}{{".fd-button--" + type if type}}{{".fd-button--" + size if size}}{{".fd-button" if not type and not size and not e}}
+{%- endmacro -%}
 
-<code>{{".fd-button--" + e if e}}{{".fd-button--" + type if type}}{{".fd-button--" + size if size}}
-{{".fd-button" if not type and not size and not e}}
-</code>
-<br>
-{% set example %}
-{{- button(
-  { label: 'Button' },
-  modifier={ block: [type,size,e] })
-}}
-{{- button(
-  { label: 'Add to Cart',
-    icon: 'cart' },
-    modifier={ block: [type,size,e] })
-}}
-{{-  button(
-  { icon: 'attachment' },
-    modifier={ block: [type,size,e] },
-    aria={ label: 'Add Attachment' })
-}}
-{{- anchor_button(
-  { label: 'Button' },
-  modifier={ block: [type,size,e] })
-}}
-{{- anchor_button(
-  { label: 'Add to Cart',
-    icon: 'cart' },
-    modifier={ block: [type,size,e] })
-}}
-{{-  anchor_button(
-  { icon: 'attachment' },
-    modifier={ block: [type,size,e] },
-    aria={ label: 'Add Attachment' })
-}}
-{% endset %}
-{{ format(example) }}
+{% for type in types %}
+    {% for e in emphasis %}
+        {% for size in sizes %}
+            {% set example %}
+                <h3><code>button: {{code_display(e, type, size)}}</code></h3>
+                {{- button(
+                { label: 'Button' },
+                modifier={ block: [type,size,e] })
+                }}
+                {{- button(
+                { label: 'Add to Cart',
+                    icon: 'cart' },
+                    modifier={ block: [type,size,e] })
+                }}
+                {{-  button(
+                { icon: 'attachment' },
+                    modifier={ block: [type,size,e] },
+                    aria={ label: 'Add Attachment' })
+                }}
+                <h3> <code>anchor: {{code_display(e, type, size)}}</code></h3>
+                {{- anchor_button(
+                { label: 'Button' },
+                modifier={ block: [type,size,e] })
+                }}
+                {{- anchor_button(
+                { label: 'Add to Cart',
+                    icon: 'cart' },
+                    modifier={ block: [type,size,e] })
+                }}
+                {{-  anchor_button(
+                { icon: 'attachment' },
+                    modifier={ block: [type,size,e] },
+                    aria={ label: 'Add Attachment' })
+                }}
+            {% endset %}
+            {{ format(example) }}
 
-<br>
-{% set example %}
-{{-  button(
-  { label: 'Focused',
-    icon: 'cart' },
-    modifier={ block: [type,size,e] },
-    state={ focus: true })
-}}
-{{- button(
-  { label: 'Selected' },
-  modifier={ block: [type,size,e] },
-  aria={ selected: true })
-}}
-{{-  button(
-  { label: 'Disabled',
-    icon: 'cart' },
-    modifier={ block: [type,size,e] },
-    state={ disabled: true })
-}}
-{{-  anchor_button(
-  { label: 'Focused',
-    icon: 'cart' },
-    modifier={ block: [type,size,e] },
-    state={ focus: true })
-}}
-{{- anchor_button(
-  { label: 'Selected' },
-  modifier={ block: [type,size,e] },
-  aria={ selected: true })
-}}
-{{-  anchor_button(
-  { label: 'Disabled',
-    icon: 'cart' },
-    modifier={ block: [type,size,e] },
-    state={ disabled: true })
-}}
-{% endset %}
-{{ format(example) }}
+            {% set example %}
+                <h3><code>button: {{code_display(e, type, size)}}</code></h3>
+                {{-  button(
+                { label: 'Focused',
+                    icon: 'cart' },
+                    modifier={ block: [type,size,e] },
+                    state={ focus: true })
+                }}
+                {{- button(
+                { label: 'Selected' },
+                modifier={ block: [type,size,e] },
+                aria={ selected: true })
+                }}
+                {{-  button(
+                { label: 'Disabled',
+                    icon: 'cart' },
+                    modifier={ block: [type,size,e] },
+                    state={ disabled: true })
+                }}
+                <h3><code>anchor: {{code_display(e, type, size)}}</code></h3>
+                {{-  anchor_button(
+                { label: 'Focused',
+                    icon: 'cart' },
+                    modifier={ block: [type,size,e] },
+                    state={ focus: true })
+                }}
+                {{- anchor_button(
+                { label: 'Selected' },
+                modifier={ block: [type,size,e] },
+                aria={ selected: true })
+                }}
+                {{-  anchor_button(
+                { label: 'Disabled',
+                    icon: 'cart' },
+                    modifier={ block: [type,size,e] },
+                    state={ disabled: true })
+                }}
+            {% endset %}
+            {{ format(example) }}
 
 {% endfor %}
 
-        </td>
       {% endfor %}
   {% endfor %}
-  </tr>
-</table>
 
 {% endblock %}
