@@ -1,9 +1,6 @@
 {
     "id": "tile-grid",
     "name": "Tile Grid",
-    "css_vars": true,
-    "rtl": true,
-    "version": "1.0.0",
     "properties": {
         "items": [
             "#/tile",

@@ -1,9 +1,6 @@
 {
     "id": "panel-grid",
     "name": "Panel Grid",
-    "version": "1.0.0",
-    "css_vars": true,
-    "rtl": true,
     "properties": {
         "title": "Panel Grid Label",
         "description": "Panel Grid Description"
