@@ -6,32 +6,6 @@
 {% from "./../search-input/component.njk" import search_input %}
 {% from "./../counter/component.njk" import counter %}
 
-<!--
-shellbar:
-    properties={
-        "brand": {
-            "name": "",
-            "logo": ""
-        },
-        "product": {
-          "title": "",
-          "items": [],
-          "subtitle": ""
-        },
-        "copilot": true,
-        "actions": [],
-        "search": {
-          "value": "",
-          "placeholder": "",
-          "collapsed": true,
-          "items": []
-        }
-    },
-    modifier={ block: [] },
-    state={},
-    aria={}
--->
-
 {% set search = search_input(properties={
     "id": utils.id(),
     "value": properties.search.value,
@@ -137,7 +111,7 @@ shellbar:
   <a href="#" class="fd-shellbar__logo{{ ' fd-shellbar__logo--image-replaced' if not logo.src and not logo.svg  }}" aria-label="{{ name }}">
     {%- if logo.src %}
     {%- set comma = joiner() %}
-      <img src="{{ logo.src }}"{% if logo.srcset %} srcset="{% for item in logo.srcset %}{{ comma() -}} {{ item }} {{ loop.index }}x
+      <img class="fd-shellbar__logo--image" src="{{ logo.src }}"{% if logo.srcset %} srcset="{% for item in logo.srcset %}{{ comma() -}} {{ item }} {{ loop.index }}x
       {%- endfor %}"{% endif %}{% if logo.width %} width="{{logo.width}}"{% endif %}{% if logo.height %} height="{{logo.height}}"{% endif %} alt="">
     {%- endif %}
     {%- if logo.svg %}

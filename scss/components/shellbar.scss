@@ -23,7 +23,6 @@ $block: #{$fd-namespace}-shellbar;
 
   // Heights
   $fd-shellbar-height: 48px !default;
-
   $fd-shellbar-copilot-height: 30px !default;
   $fd-shellbar-copilot-width: 30px !default;
 
@@ -31,16 +30,12 @@ $block: #{$fd-namespace}-shellbar;
   $fd-shellbar-color: fd-color("text", 5) !default; // White
   $fd-shellbar-background-color: fd-color("shell", 1) !default;
 
-  --fd-shellbar-color: var(--fd-color-text-5);
-  --fd-shellbar-background-color: var(--fd-color-shell-1);
-  --fd-shellbar-link-color: var(--fd-color-shell-2);
-
     @include fd-reset();
-    @include fd-var-color("background-color", $fd-shellbar-background-color, --fd-shellbar-background-color);
+    @include fd-var-color("background-color", $fd-shellbar-background-color, --fd-color-shell-1);
     height: $fd-shellbar-height;
     display: flex;
     align-items: center;
-    @include fd-var-color("color", $fd-shellbar-color, --fd-shellbar-color);
+    @include fd-var-color("color", $fd-shellbar-color, --fd-color-text-5);
     position: relative;
     padding: $fd-shellbar-outer-spacing-tb $fd-shellbar-outer-spacing-lr-large;
     justify-content: space-between;
@@ -72,8 +67,6 @@ $block: #{$fd-namespace}-shellbar;
         vertical-align: middle;
     }
     &__logo {
-      //outline: solid 1px red;
-      //height: $fd-shellbar-logo-height;
       display: flex;
       align-items: center;
       vertical-align: middle;
@@ -95,8 +88,7 @@ $block: #{$fd-namespace}-shellbar;
           display: none !important;
         }
       }
-      img,
-      svg {
+      &--image {
         max-height: fd-space(10);
         width: auto;
         display: block;
@@ -125,7 +117,7 @@ $block: #{$fd-namespace}-shellbar;
         @include fd-type("1");
         @include fd-weight("bold");
         line-height: 1;
-        @include fd-var-color("color", $fd-shellbar-color, --fd-shellbar-color);
+        @include fd-var-color("color", $fd-shellbar-color, --fd-color-text-5);
         white-space: nowrap;
         overflow: hidden;
         max-width: 100%;
@@ -224,9 +216,9 @@ $block: #{$fd-namespace}-shellbar;
         .#{$fd-namespace}-input {
             border-style: solid;
             border-width: 1px;
-            @include fd-var-color("border-color", fd-color("shell", 2), --fd-shellbar-link-color);
-            @include fd-var-color("background-color", fd-color("shell", 1), --fd-shellbar-background-color);
-            @include fd-var-color("color", fd-color("shell",2), --fd-shellbar-link-color);
+            @include fd-var-color("border-color", fd-color("shell", 2), --fd-color-shell-2);
+            @include fd-var-color("background-color", fd-color("shell", 1), --fd-color-shell-1);
+            @include fd-var-color("color", fd-color("shell",2), --fd-color-shell-2);
             &:focus {
               box-shadow: none;
             }
