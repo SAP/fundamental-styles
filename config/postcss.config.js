@@ -9,8 +9,7 @@ module.exports = {
     sourcesContent: true,
     plugins: {
         autoprefixer: {
-            cascade: true,
-            grid: true
+            cascade: true
         },
         'postcss-clean': {
             format: 'beautify',
