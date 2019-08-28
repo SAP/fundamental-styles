@@ -75,7 +75,7 @@ search_input:
 {%- macro search_input_closed_control(properties={}, modifier={}, state={}) -%}
   {%- set interactionId = utils.id() %}
 
-  <button class="sap-icon--search fd-button--shell" aria-controls="{{ interactionId }}" aria-expanded="false" aria-haspopup="true"></button>
+  <button class="sap-icon--search fd-shellbar__button" aria-controls="{{ interactionId }}" aria-expanded="false" aria-haspopup="true"></button>
 
   <div class="fd-search-input__closedcontrol" id="{{interactionId}}" aria-hidden="true">
     <div class="fd-search-input__controlinput" aria-controls="{{ properties.id }}" aria-expanded="false" aria-haspopup="true">

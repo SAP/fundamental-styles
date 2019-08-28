@@ -16,7 +16,7 @@ $fd-search-closed-conrol-transition: all $fd-animation--speed !default;
   &__control {
     position: relative;
 
-    > .fd-button--shell[aria-expanded="true"] {
+    > .fd-shellbar__button[aria-expanded="true"] {
       position: relative;
       z-index: map-get($fd-z-index-levels, "second");
       --fd-button-border-color: transparent;

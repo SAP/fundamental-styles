@@ -6,7 +6,7 @@
 {% block content %}
 
 {% set emphasis = ["emphasized", "", "light" ] %}
-{% set types = ["", "standard", "positive ", "medium", "negative", "shell" ] %}
+{% set types = ["", "standard", "positive ", "medium", "negative" ] %}
 {% set sizes = ["", "compact" ] %}
 
 {%- macro code_display(e, type, size) -%}
@@ -90,11 +90,8 @@
             {% endset %}
             {{ format(example) }}
 
+        {% endfor %}
+    {% endfor %}
 {% endfor %}
-
-      {% endfor %}
-  {% endfor %}
-  </tr>
-</table>
 
 {% endblock %}

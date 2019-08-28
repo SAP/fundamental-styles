@@ -15,21 +15,19 @@
   })
 %}
 
-
-{% set notification = button({ icon: 'bell' }, modifier={ block: ['shell'] }) %}
+{%- macro notification() -%}
+<button class="fd-shellbar__button sap-icon--bell"></button>
+{%- endmacro %}
 
 {% set actions = [
   {
     "label": "Notifications",
-    "action": notification,
+    "action": notification(),
     "collapse": false
   }
 ]
 %}
 {% block content %}
-
-
-<div style="background-color: #f3f4f5; margin:-20px; padding:20px;">
 
   <h2>typical implentation</h2>
     {% set example %}
