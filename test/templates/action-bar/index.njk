@@ -1,262 +1,99 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "../button/component.njk" import button %}
-{% from "./component.njk" import action_bar %}
-{% from "../menu/component.njk" import menu %}
-{% from "./../popover/component.njk" import popover %}
+{% from "./component.njk" import action_bar, action_bar_headlines %}
 {% import "./../utils.njk" as utils %}
 
-
 {% block content %}
-<style media="screen">
-    .fd-action-bar {
-        margin: 0 20px;
-    }
-</style>
-
-{%- set primarybtn %}{{
-    button(
-            { label: 'Button' },
-            modifier={block: [ 'emphasized'] }
-        )
-}}{%- endset %}
-
-{%- set secbtn %}{{
-  button(
-          { label: 'Button' },
-          modifier={ block: [] }
-      )
-}}{%- endset %}
-
-
-{%- set popoverBtn %}
-    {%- set _id = utils.id() %}
-    {%- macro sample_control(properties={}) -%}
-        <button class="fd-button fd-popover__control{{ modifier.control | modifier('popover__control') }}" aria-label="label" aria-expanded="false" aria-haspopup="true" aria-controls="{{ properties.id }}">Popover</button>
+    {%- macro render_txt_button() %}
+        <div class="btn-playground">Button</div>
     {%- endmacro %}
-    {{ popover(properties={
-            id: _id,
-            control: sample_control(properties={id: _id}),
-            body: menu(properties={
-            items: [
-                { "label": "Option 1" },
-                { "label": "Option 2" },
-                { "label": "Option 3" },
-                { "label": "Option 4" }
-                ]
-            })
-        }, modifier={ block: ['left']})
-    }}
-{%- endset %}
-
-{%- set popoverBtn2 %}
-    {%- set _id = utils.id() %}
-    {%- macro sample_control(properties={}) -%}
-        <button class="fd-button fd-popover__control{{ modifier.control | modifier('popover__control') }}" aria-label="label" aria-expanded="false" aria-haspopup="true" aria-controls="{{ properties.id }}">Popover</button>
-    {%- endmacro %}
-    {{ popover(properties={
-            id: _id,
-            control: sample_control(properties={id: _id}),
-            body: menu(properties={
-            items: [
-                { "label": "Option 1" },
-                { "label": "Option 2" },
-                { "label": "Option 3" },
-                { "label": "Option 4" }
-                ]
-            })
-        }, modifier={ block: ['left']})
-    }}
-{%- endset %}
-
-
-{%- set contextmenu %}
-    {%- set _id = utils.id() %}
-
-    {%- macro contextmenu_control(properties={}) -%}
-        {{ button({ icon: "overflow" }, modifier={ block: ["light"] }, aria={ controls: properties.id, haspopup: true, expanded: false, label: "More" }) | indent(4) }}
+    {%- macro render_icon_button() %}
+        <div class="btn-playground"></div>
     {%- endmacro %}
 
-    {{  popover(properties={
-            id: _id,
-            control: contextmenu_control(properties={ id: _id }),
-            body: menu(properties={
-            items: [
-                { "label": "Option 1" },
-                { "label": "Option 2" },
-                { "label": "Option 3" },
-                { "label": "Option 4" }
-              ]
-            })
-        },
-        classes="contextual-menu"
-        ) | indent(4)
-    }}
-{%- endset %}
+    {%- set primarybtn %}{{render_txt_button()}}{%- endset %}
 
-<!-- output the component example and the code snippet -->
+    {%- set contextmenu %}{{render_icon_button()}}{%- endset %}
 
-{% set example %}
-{{  action_bar(
+    <!-- output the component example and the code snippet -->
+
+    {% set example %}
+    {{  action_bar(
         properties={
             title: "Action Bar with description and back button",
             description: data.properties.description,
             actions: {
                 properties: {
-                    items: [secbtn,primarybtn]
+                    items: [primarybtn,primarybtn]
                 }
             },
             back_button: true
-        },
-        modifier={
-            block: []
         },
         state={},
         aria={}
     )
 }}
-{% endset %}
-{{ format(example) }}
+    {% endset %}
+    {{ format(example) }}
 
-{% set example %}
-{{  action_bar(
+    {% set example %}
+    {{  action_bar(
         properties={
             title: "Action Bar with no description",
             actions: {
                 properties: {
-                    items: [secbtn,primarybtn]
+                    items: [primarybtn,primarybtn]
                 }
             },
             back_button: true
-        },
-        modifier={
-            block: []
         },
         state={},
         aria={}
     )
 }}
-{% endset %}
-{{ format(example) }}
+    {% endset %}
+    {{ format(example) }}
 
-{% set example %}
-{{  action_bar(
+    {% set example3 %}
+    {{  action_bar_headlines(
         properties={
-            title: "Action Bar with H2 header",
-            title_size: "h2",
+            title: "Action Bar with header",
+            description: "Description message lorem ipsum",
             actions: {
                 properties: {
-                    items: [secbtn,primarybtn]
+                    items: [primarybtn,primarybtn]
                 }
             },
             back_button: true
         },
-        modifier={
-            block: []
-        },
-        state={},
         aria={}
     )
 }}
+    {% endset %}
+    {{ format(example3) }}
 
-{% endset %}
-{{ format(example) }}
-
-{% set example %}
-{{  action_bar(
-        properties={
-            title: "Action Bar with H4 header",
-            title_size: "h4",
-            actions: {
-                properties: {
-                    items: [secbtn,primarybtn]
-                }
-            },
-            back_button: true
-        },
-        modifier={
-            block: []
-        },
-        state={},
-        aria={}
-    )
-}}
-
-{% endset %}
-{{ format(example) }}
-
-{% set example %}
-{{  action_bar(
-        properties={
-            title: "Action Bar with H5 header",
-            title_size: "h5",
-            actions: {
-                properties: {
-                    items: [secbtn,primarybtn]
-                }
-            },
-            back_button: true
-        },
-        modifier={
-            block: []
-        },
-        state={},
-        aria={}
-    )
-}}
-
-{% endset %}
-{{ format(example) }}
-
-{% set example %}
-{{  action_bar(
-        properties={
-            title: "Action Bar with H6 header",
-            title_size: "h6",
-            actions: {
-                properties: {
-                    items: [secbtn,primarybtn]
-                }
-            },
-            back_button: true
-        },
-        modifier={
-            block: []
-        },
-        state={},
-        aria={}
-    )
-}}
-
-{% endset %}
-{{ format(example) }}
-
-{% set example %}
-{{  action_bar(
+    {% set example %}
+    {{  action_bar(
         properties={
             title: "Action Bar with no back button",
             actions: {
                 properties: {
-                    items: [secbtn,primarybtn]
+                    items: [primarybtn,primarybtn]
                 }
             }
-        },
-        modifier={
-            block: []
         },
         state={},
         aria={}
     )
 }}
+    {% endset %}
+    {{ format(example) }}
+    <br><br>
 
-{% endset %}
-{{ format(example) }}
-<br><br>
-
-<h2>Action bar on mobile screen  (320px)</h2>
-{% set example %}
-<div style="width:319px">
-{{  action_bar(
+    <h2>Action bar on mobile screen (320px)</h2>
+    {% set example %}
+    <div style="width:319px">
+        {{  action_bar(
         properties={
             title: "Action Bar with description and back button",
             actions: {
@@ -266,93 +103,40 @@
             },
             back_button: true
         },
-        modifier={
-            block: []
-        },
         state={},
         aria={}
     )
 }}
-</div>
-{% endset %}
-{{ format(example) }}
+    </div>
+    {% endset %}
+    {{ format(example) }}
 
-<h2>Action bar with Popover Button</h2>
-{% set example %}
-{{  action_bar(
-        properties={
-            title: "Action Bar with buttons with popover",
-            actions: {
-                properties: {
-                    items: [popoverBtn]
-                }
-            },
-            back_button: true
-        },
-        modifier={
-            block: []
-        },
-        state={},
-        aria={}
-    )
-}}
-{% endset %}
-{{ format(example) }}
-
-<h2>Action bar with Button + Popover Button</h2>
-{% set example %}
-{{  action_bar(
-        properties={
-            title: "Action Bar with buttons with button + popover",
-            actions: {
-                properties: {
-                    items: [primarybtn, popoverBtn2]
-                }
-            },
-            back_button: true
-        },
-        modifier={
-            block: []
-        },
-        state={},
-        aria={}
-    )
-}}
-{% endset %}
-{{ format(example) }}
-
-<h2>Actions Hidden</h2>
-<div id="toggles">
-
-<button type="button" id="button">Simulate dirty state</button>
-<br>
-
-    <!-- output the component example and the code snippet -->
-    {% set example %}
-    {{  action_bar(
+    <h2>Actions Hidden</h2>
+    <div id="toggles">
+        <button type="button" id="button">Simulate dirty state</button>
+        <br>
+        <!-- output the component example and the code snippet -->
+        {% set example %}
+        {{  action_bar(
             properties={
                 navigation: backbtn,
                 title: data.properties.title,
                 actions: {
                     properties: {
-                        items: [secbtn,primarybtn]
+                        items: [primarybtn,primarybtn]
                     },
                     aria: {
                         hidden: true
                     }
                 }
             },
-            modifier={
-                block: []
-            },
             state={},
             aria={}
         )
     }}
-
-    {% endset %}
-    {{ format(example) }}
-</div>
+        {% endset %}
+        {{ format(example) }}
+    </div>
     <script type="text/javascript">
         var button = document.getElementById("button");
         var toggles = document.getElementById("toggles");
@@ -360,16 +144,16 @@
         function doDirty() {
             for (var i = 0; i < actions.length; i++) {
                 var item = actions[i];
-                if(item.hasAttribute('aria-hidden')) {
-                    item.setAttribute('aria-hidden',false);
+                if (item.hasAttribute('aria-hidden')) {
+                    item.setAttribute('aria-hidden', false);
                 } else {
                     var classes = item.getAttribute("class");
-                    classes.replace('is-disabled','');
-                    item.setAttribute("class",classes.replace('is-disabled',''));
+                    classes.replace('is-disabled', '');
+                    item.setAttribute("class", classes.replace('is-disabled', ''));
                 }
             }
         }
-        button.addEventListener('click',function() {
+        button.addEventListener('click', function () {
             doDirty();
         })
     </script>

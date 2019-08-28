@@ -1,0 +1,10 @@
+{% import "./../utils.njk" as utils %}
+
+{% macro formSelect(properties="", modifier={}) -%}
+  {%- set _id = utils.id() %}
+    <select class="fd-form-select{{ modifier.block | modifier('form-select') }}" id="{{_id}}" {{properties}}>
+        <option value="1">Duis malesuada odio volutpat elementum</option>
+        <option value="2">Suspendisse ante ligula</option>
+        <option value="3">Sed bibendum sapien at posuere interdum</option>
+    </select>
+{%- endmacro %}

@@ -5,6 +5,7 @@
     <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ id }}</title>
+    <link rel="stylesheet" href="static/layout-shared.css">
     {% if not selfContained %}
         <link rel="stylesheet" href="static/layout.css">
     {% endif %}
@@ -62,26 +63,13 @@
                 <label class="test-label"><input type="checkbox" value="" id="toggleUnNormalize"> Un-Normalize</label>
             </fieldset>
         </form>
-        <div class="status">
-            {% if data.css_vars == true %}
-            <span class="status-label">✅ CSS vars</span>
-            {% else %}
-            <span class="status-label">❌ CSS vars</span>
-            {% endif %}
-
-            {% if data.rtl == true %}
-            <span class="status-label">✅ RTL</span>
-            {% else %}
-            <span class="status-label">❌ RTL</span>
-            {% endif %}
-        </div>
     </header>
     <main>
          <div class="test-datacontainer">
             <h2><code>{{id}}/data.json</code></h2>
             <textarea class="test-textarea" style="">{{ data | dump(2) }}</textarea>
         </div>
-        <div id="example-container" style="padding: 20px;">
+        <div id="example-container">
             {% block content %}
             {% endblock %}
         </div>

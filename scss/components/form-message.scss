@@ -1,0 +1,62 @@
+@import "./../settings";
+@import "./../mixins";
+@import "./../functions";
+/*!
+.fd-form-message(--help, --error, --warning)
+*/
+$block: #{$fd-namespace}-form-message;
+.#{$block} {
+    //LOCAL VARS (set all vars used in component, always include !default)
+    $fd-form-message-font-size: -1 !default;
+    $fd-form-message-color: fd-color(text, 2) !default;
+
+    @include fd-reset();
+    clear: both;
+    display: block;
+    @include fd-type(#{$fd-form-message-font-size});
+    @include fd-var-color("color", $fd-form-message-color, --fd-color-text-2);
+    padding: fd-space(2) 0;
+    position: relative;
+    margin-top: fd-space(2);
+    &::before {
+        width: 18px;
+        height: 18px;
+        font-style: normal;
+        font-size: 1.3em;
+        font-family: "SAP-icons";
+        position: absolute;
+        left: 0;
+        @include fd-var-color("color", $fd-form-message-color, --fd-color-text-2);
+        text-align: center;
+        line-height: 18px;
+    }
+    &--warning,
+    &--error,
+    &--help {
+        padding-left: fd-space(6);
+        &::before {
+            left: 0;
+            top: 6px;
+        }
+    }
+    &--help {
+        &::before {
+            @include fd-var-color("color", $fd-forms-color, --fd-color-text-1);
+            content: "";
+        }
+    }
+    &--warning {
+        @include fd-var-color("color", $fd-color--alert, --fd-color-alert);
+        &::before {
+            @include fd-var-color("color", $fd-color--alert, --fd-color-alert);
+            content: "";
+        }
+    }
+    &--error {
+        @include fd-var-color("color", $fd-color--negative, --fd-color-negative);
+        &::before {
+            content: "";
+            @include fd-var-color("color", $fd-color--negative, --fd-color-negative);
+        }
+    }
+}

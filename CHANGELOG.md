@@ -2,6 +2,453 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.92"></a>
+# [0.2.0-rc.92](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.91...v0.2.0-rc.92) (2019-08-27)
+
+
+
+<a name="0.2.0-rc.91"></a>
+# [0.2.0-rc.91](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.90...v0.2.0-rc.91) (2019-08-27)
+
+
+### Features
+
+* self contained styles for forms (+ split out form components) ([#290](https://github.com/SAP/fundamental-styles/issues/290)) ([05d4b78](https://github.com/SAP/fundamental-styles/commit/05d4b78))
+
+
+
+<a name="0.2.0-rc.90"></a>
+# [0.2.0-rc.90](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.89...v0.2.0-rc.90) (2019-08-26)
+
+
+### Bug Fixes
+
+* Self-contained styles for overlay ([#291](https://github.com/SAP/fundamental-styles/issues/291)) ([526d92f](https://github.com/SAP/fundamental-styles/commit/526d92f))
+
+
+
+<a name="0.2.0-rc.89"></a>
+# [0.2.0-rc.89](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.88...v0.2.0-rc.89) (2019-08-23)
+
+
+### Bug Fixes
+
+* self contained styles for table ([#278](https://github.com/SAP/fundamental-styles/issues/278)) ([6d698a6](https://github.com/SAP/fundamental-styles/commit/6d698a6))
+
+
+
+<a name="0.2.0-rc.88"></a>
+# [0.2.0-rc.88](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.87...v0.2.0-rc.88) (2019-08-23)
+
+
+
+<a name="0.2.0-rc.87"></a>
+# [0.2.0-rc.87](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.86...v0.2.0-rc.87) (2019-08-21)
+
+
+
+<a name="0.2.0-rc.86"></a>
+# [0.2.0-rc.86](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.85...v0.2.0-rc.86) (2019-08-21)
+
+
+### Features
+
+* remove Time Picker sass and examples ([#285](https://github.com/SAP/fundamental-styles/issues/285)) ([25d0dea](https://github.com/SAP/fundamental-styles/commit/25d0dea))
+
+
+
+<a name="0.2.0-rc.85"></a>
+# [0.2.0-rc.85](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.84...v0.2.0-rc.85) (2019-08-21)
+
+
+
+<a name="0.2.0-rc.84"></a>
+# [0.2.0-rc.84](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.83...v0.2.0-rc.84) (2019-08-21)
+
+
+### Features
+
+* remove product switcher component ([#286](https://github.com/SAP/fundamental-styles/issues/286)) ([1b99b16](https://github.com/SAP/fundamental-styles/commit/1b99b16))
+
+
+
+<a name="0.2.0-rc.83"></a>
+# [0.2.0-rc.83](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.82...v0.2.0-rc.83) (2019-08-20)
+
+
+### Bug Fixes
+
+* add page self-contained; add test in the playground ([#274](https://github.com/SAP/fundamental-styles/issues/274)) ([d98a313](https://github.com/SAP/fundamental-styles/commit/d98a313))
+
+
+
+<a name="0.2.0-rc.82"></a>
+# [0.2.0-rc.82](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.81...v0.2.0-rc.82) (2019-08-20)
+
+
+### Bug Fixes
+
+* add new section playground; section self-contained ([#272](https://github.com/SAP/fundamental-styles/issues/272)) ([85f6178](https://github.com/SAP/fundamental-styles/commit/85f6178))
+
+
+
+<a name="0.2.0-rc.81"></a>
+# [0.2.0-rc.81](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.80...v0.2.0-rc.81) (2019-08-20)
+
+
+### Bug Fixes
+
+* revert multi input test/new shared layout input class ([#284](https://github.com/SAP/fundamental-styles/issues/284)) ([dcc3303](https://github.com/SAP/fundamental-styles/commit/dcc3303))
+* self contained styles for tree component ([#268](https://github.com/SAP/fundamental-styles/issues/268)) ([14957a2](https://github.com/SAP/fundamental-styles/commit/14957a2))
+
+
+
+<a name="0.2.0-rc.80"></a>
+# [0.2.0-rc.80](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.79...v0.2.0-rc.80) (2019-08-20)
+
+
+### Features
+
+* add self-contained styles for Time component ([#269](https://github.com/SAP/fundamental-styles/issues/269)) ([54b7b1e](https://github.com/SAP/fundamental-styles/commit/54b7b1e))
+
+
+
+<a name="0.2.0-rc.79"></a>
+# [0.2.0-rc.79](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.78...v0.2.0-rc.79) (2019-08-20)
+
+
+### Features
+
+* remove product menu as a component ([#267](https://github.com/SAP/fundamental-styles/issues/267)) ([32ebb38](https://github.com/SAP/fundamental-styles/commit/32ebb38))
+
+
+
+<a name="0.2.0-rc.78"></a>
+# [0.2.0-rc.78](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.77...v0.2.0-rc.78) (2019-08-20)
+
+
+### Features
+
+* Self-contained styling for localization editor ([#276](https://github.com/SAP/fundamental-styles/issues/276)) ([136f336](https://github.com/SAP/fundamental-styles/commit/136f336))
+
+
+
+<a name="0.2.0-rc.77"></a>
+# [0.2.0-rc.77](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.76...v0.2.0-rc.77) (2019-08-19)
+
+
+### Features
+
+* remove datepicker from scss library ([#260](https://github.com/SAP/fundamental-styles/issues/260)) ([671ca3a](https://github.com/SAP/fundamental-styles/commit/671ca3a))
+
+
+
+<a name="0.2.0-rc.76"></a>
+# [0.2.0-rc.76](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.75...v0.2.0-rc.76) (2019-08-16)
+
+
+### Bug Fixes
+
+* added self-contained styles for action bar ([#246](https://github.com/SAP/fundamental-styles/issues/246)) ([80f37c7](https://github.com/SAP/fundamental-styles/commit/80f37c7))
+
+
+
+<a name="0.2.0-rc.75"></a>
+# [0.2.0-rc.75](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.74...v0.2.0-rc.75) (2019-08-16)
+
+
+### Bug Fixes
+
+* self contained styles for calendar component ([#251](https://github.com/SAP/fundamental-styles/issues/251)) ([f28ab88](https://github.com/SAP/fundamental-styles/commit/f28ab88))
+
+
+
+<a name="0.2.0-rc.74"></a>
+# [0.2.0-rc.74](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.73...v0.2.0-rc.74) (2019-08-16)
+
+
+### Bug Fixes
+
+* add self contained styles to button-split component ([#258](https://github.com/SAP/fundamental-styles/issues/258)) ([4e399e5](https://github.com/SAP/fundamental-styles/commit/4e399e5))
+
+
+
+<a name="0.2.0-rc.73"></a>
+# [0.2.0-rc.73](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.72...v0.2.0-rc.73) (2019-08-16)
+
+
+### Bug Fixes
+
+* add self-contained styles for Modal component ([#256](https://github.com/SAP/fundamental-styles/issues/256)) ([04362c0](https://github.com/SAP/fundamental-styles/commit/04362c0))
+
+
+
+<a name="0.2.0-rc.72"></a>
+# [0.2.0-rc.72](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.71...v0.2.0-rc.72) (2019-08-15)
+
+
+### Bug Fixes
+
+* added self contained styles to panel component ([#250](https://github.com/SAP/fundamental-styles/issues/250)) ([1277618](https://github.com/SAP/fundamental-styles/commit/1277618))
+
+
+
+<a name="0.2.0-rc.71"></a>
+# [0.2.0-rc.71](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.70...v0.2.0-rc.71) (2019-08-15)
+
+
+
+<a name="0.2.0-rc.70"></a>
+# [0.2.0-rc.70](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.69...v0.2.0-rc.70) (2019-08-15)
+
+
+### Bug Fixes
+
+* added self-contained styles for list-group ([#245](https://github.com/SAP/fundamental-styles/issues/245)) ([d77e3f0](https://github.com/SAP/fundamental-styles/commit/d77e3f0))
+
+
+
+<a name="0.2.0-rc.69"></a>
+# [0.2.0-rc.69](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.68...v0.2.0-rc.69) (2019-08-15)
+
+
+
+<a name="0.2.0-rc.68"></a>
+# [0.2.0-rc.68](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.67...v0.2.0-rc.68) (2019-08-15)
+
+
+### Bug Fixes
+
+* Added self-contained style for Counter component ([#219](https://github.com/SAP/fundamental-styles/issues/219)) ([91aac1d](https://github.com/SAP/fundamental-styles/commit/91aac1d))
+
+
+
+<a name="0.2.0-rc.67"></a>
+# [0.2.0-rc.67](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.66...v0.2.0-rc.67) (2019-08-15)
+
+
+### Bug Fixes
+
+* self contained styles for panel grid ([#254](https://github.com/SAP/fundamental-styles/issues/254)) ([14339da](https://github.com/SAP/fundamental-styles/commit/14339da))
+
+
+
+<a name="0.2.0-rc.66"></a>
+# [0.2.0-rc.66](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.65...v0.2.0-rc.66) (2019-08-14)
+
+
+### Features
+
+* remove contextual menu from scss directory ([#259](https://github.com/SAP/fundamental-styles/issues/259)) ([417f106](https://github.com/SAP/fundamental-styles/commit/417f106))
+
+
+
+<a name="0.2.0-rc.65"></a>
+# [0.2.0-rc.65](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.64...v0.2.0-rc.65) (2019-08-14)
+
+
+
+<a name="0.2.0-rc.64"></a>
+# [0.2.0-rc.64](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.63...v0.2.0-rc.64) (2019-08-14)
+
+
+### Bug Fixes
+
+* Self contained combobox-input and multi-input ([#257](https://github.com/SAP/fundamental-styles/issues/257)) ([a403649](https://github.com/SAP/fundamental-styles/commit/a403649))
+
+
+
+<a name="0.2.0-rc.63"></a>
+# [0.2.0-rc.63](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.62...v0.2.0-rc.63) (2019-08-14)
+
+
+
+<a name="0.2.0-rc.62"></a>
+# [0.2.0-rc.62](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.61...v0.2.0-rc.62) (2019-08-14)
+
+
+### Bug Fixes
+
+* added self-contained-style for pagination component ([#225](https://github.com/SAP/fundamental-styles/issues/225)) ([ec01327](https://github.com/SAP/fundamental-styles/commit/ec01327)), closes [#220](https://github.com/SAP/fundamental-styles/issues/220)
+
+
+### Features
+
+* remove user menu component ([#252](https://github.com/SAP/fundamental-styles/issues/252)) ([1611697](https://github.com/SAP/fundamental-styles/commit/1611697))
+
+
+
+<a name="0.2.0-rc.61"></a>
+# [0.2.0-rc.61](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.60...v0.2.0-rc.61) (2019-08-13)
+
+
+### Bug Fixes
+
+* Added self-contained style for Menu component ([#177](https://github.com/SAP/fundamental-styles/issues/177)) ([1c9d952](https://github.com/SAP/fundamental-styles/commit/1c9d952))
+* Added self-contained style for Toggle component  ([#227](https://github.com/SAP/fundamental-styles/issues/227)) ([c4b5759](https://github.com/SAP/fundamental-styles/commit/c4b5759))
+
+
+
+<a name="0.2.0-rc.60"></a>
+# [0.2.0-rc.60](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.59...v0.2.0-rc.60) (2019-08-13)
+
+
+
+<a name="0.2.0-rc.59"></a>
+# [0.2.0-rc.59](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.58...v0.2.0-rc.59) (2019-08-12)
+
+
+### Bug Fixes
+
+* added self-contained style for button-group component ([#163](https://github.com/SAP/fundamental-styles/issues/163)) ([8ffa618](https://github.com/SAP/fundamental-styles/commit/8ffa618))
+
+
+
+<a name="0.2.0-rc.58"></a>
+# [0.2.0-rc.58](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.57...v0.2.0-rc.58) (2019-08-12)
+
+
+### Bug Fixes
+
+* Added self-contained style for Popover component ([#162](https://github.com/SAP/fundamental-styles/issues/162)) ([d38f8c7](https://github.com/SAP/fundamental-styles/commit/d38f8c7))
+
+
+
+<a name="0.2.0-rc.57"></a>
+# [0.2.0-rc.57](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.56...v0.2.0-rc.57) (2019-08-10)
+
+
+
+<a name="0.2.0-rc.56"></a>
+# [0.2.0-rc.56](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.55...v0.2.0-rc.56) (2019-08-09)
+
+
+
+<a name="0.2.0-rc.55"></a>
+# [0.2.0-rc.55](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.54...v0.2.0-rc.55) (2019-08-09)
+
+
+
+<a name="0.2.0-rc.54"></a>
+# [0.2.0-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.53...v0.2.0-rc.54) (2019-08-09)
+
+
+### Bug Fixes
+
+* added self-contained style for tile component ([#159](https://github.com/SAP/fundamental-styles/issues/159)) ([8fee047](https://github.com/SAP/fundamental-styles/commit/8fee047))
+
+
+
+<a name="0.2.0-rc.53"></a>
+# [0.2.0-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.52...v0.2.0-rc.53) (2019-08-06)
+
+
+
+<a name="0.2.0-rc.52"></a>
+# [0.2.0-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.51...v0.2.0-rc.52) (2019-08-06)
+
+
+
+<a name="0.2.0-rc.51"></a>
+# [0.2.0-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.50...v0.2.0-rc.51) (2019-08-06)
+
+
+
+<a name="0.2.0-rc.50"></a>
+# [0.2.0-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.49...v0.2.0-rc.50) (2019-08-05)
+
+
+
+<a name="0.2.0-rc.49"></a>
+# [0.2.0-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.48...v0.2.0-rc.49) (2019-07-30)
+
+
+
+<a name="0.2.0-rc.48"></a>
+# [0.2.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.47...v0.2.0-rc.48) (2019-07-29)
+
+
+### Bug Fixes
+
+* update slack readme link ([#214](https://github.com/SAP/fundamental-styles/issues/214)) ([701e638](https://github.com/SAP/fundamental-styles/commit/701e638))
+
+
+
+<a name="0.2.0-rc.47"></a>
+# [0.2.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.46...v0.2.0-rc.47) (2019-07-25)
+
+
+### Bug Fixes
+
+* replace button: --secendary with --light ([#206](https://github.com/SAP/fundamental-styles/issues/206)) ([89c8b25](https://github.com/SAP/fundamental-styles/commit/89c8b25))
+
+
+
+<a name="0.2.0-rc.46"></a>
+# [0.2.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.45...v0.2.0-rc.46) (2019-07-23)
+
+
+### Bug Fixes
+
+* add asset upload component ([#197](https://github.com/SAP/fundamental-styles/issues/197)) ([c83a3f9](https://github.com/SAP/fundamental-styles/commit/c83a3f9))
+
+
+
+<a name="0.2.0-rc.45"></a>
+# [0.2.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.44...v0.2.0-rc.45) (2019-07-23)
+
+
+### Bug Fixes
+
+* fixed secondary button part ([#193](https://github.com/SAP/fundamental-styles/issues/193)) ([bc0c973](https://github.com/SAP/fundamental-styles/commit/bc0c973))
+
+
+
+<a name="0.2.0-rc.44"></a>
+# [0.2.0-rc.44](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.43...v0.2.0-rc.44) (2019-07-23)
+
+
+### Bug Fixes
+
+* updated light button styling ([#178](https://github.com/SAP/fundamental-styles/issues/178)) ([3aed452](https://github.com/SAP/fundamental-styles/commit/3aed452))
+
+
+
+<a name="0.2.0-rc.43"></a>
+# [0.2.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.42...v0.2.0-rc.43) (2019-07-22)
+
+
+
+<a name="0.2.0-rc.42"></a>
+# [0.2.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.41...v0.2.0-rc.42) (2019-07-19)
+
+
+### Bug Fixes
+
+* added self-contained style for Tabs component ([#184](https://github.com/SAP/fundamental-styles/issues/184)) ([2e2bfab](https://github.com/SAP/fundamental-styles/commit/2e2bfab))
+
+
+
+<a name="0.2.0-rc.41"></a>
+# [0.2.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.40...v0.2.0-rc.41) (2019-07-18)
+
+
+### Bug Fixes
+
+* added self-contained style for product-tile component  ([#161](https://github.com/SAP/fundamental-styles/issues/161)) ([7daf4e7](https://github.com/SAP/fundamental-styles/commit/7daf4e7))
+
+
+
+<a name="0.2.0-rc.40"></a>
+# [0.2.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.39...v0.2.0-rc.40) (2019-07-18)
+
+
+### Bug Fixes
+
+* update XL identifier size ([#190](https://github.com/SAP/fundamental-styles/issues/190)) ([93fe066](https://github.com/SAP/fundamental-styles/commit/93fe066))
+
+
+
 <a name="0.2.0-rc.39"></a>
 # [0.2.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.38...v0.2.0-rc.39) (2019-07-17)
 

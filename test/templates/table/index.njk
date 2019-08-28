@@ -1,6 +1,5 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "../popover/component.njk" import popover %}
 {% from "./component.njk" import table %}
 {% import "./../utils.njk" as utils %}
 
@@ -16,7 +15,7 @@
 %}
 
 {% set class_row = [
-        { label: "Lorem ipsum dolor sit amet ipsum", class: "fd-table__fixed-col", width: "200px", fixed_col: true},
+        { label: "Lorem ipsum dolor sit amet ipsum", class: "fd-table__fixed-cell", width: "200px", fixed_col: true},
         { label: "Lorem ipsum dolor sit amet ipsum",  offset: "200px" },
         { label: "Lorem ipsum dolor sit amet ipsum" },
         { label: "Lorem ipsum dolor sit amet ipsum" },
@@ -30,9 +29,6 @@
 %}
 
 {% set row = ['Lorem', 'Lorem ipsum dolor sit amet ipsum', 'Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet', 'Lorem ipsum', 'Lorem ipsum dolor sit amet'] %}
-{% set image_row = ['<span class=" fd-image--s fd-image--circle" aria-label="Image label" style="background-image: url(./static/nature.jpg);"></span>', '<a href="#" class="fd-has-font-weight-semi">user.name@email.com</a>', 'First Name', 'Last Name', '01/26/17'] %}
-{% set checkbox_row = ['<input type="checkbox">', '<a class="fd-has-font-weight-semi">user.name@email.com</a>', 'First Name', 'Last Name', '01/26/17'] %}
-{% set checkbox_row_selected = ['<input type="checkbox" checked>', '<a class="fd-has-font-weight-semi">user.name@email.com</a>', 'First Name', 'Last Name', '01/26/17'] %}
 
 <!-- output the component example and the code snippet -->
 <h2>default</h2>
@@ -132,6 +128,47 @@
 
 <br><br><br>
 
+<h2>default with selected row</h2>
+{% set example %}
+<table class="fd-table">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell">Lorem Ipsum</td>
+            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row" aria-selected="true">
+            <td class="fd-table__cell">Lorem Ipsum</td>
+            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell">Lorem Ipsum</td>
+            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+    </tbody>
+</table>
+{% endset %}
+{{ format(example) }}
+
+<br><br><br>
+
 <h3>Table with `--no-borders`</h3>
 {% set example %}
 {{  table(properties={
@@ -187,43 +224,6 @@
     },
     modifier={
         block: ['striped']
-    })
-}}
-{% endset %}
-{{ format(example) }}
-
-<br><br><br>
-
-<h3>Table with images</h3>
-
-{% set example %}
-{{  table({
-        headers: headers,
-        rows: [image_row, image_row, image_row],
-        stripedTable: true,
-        noBorders:false
-    })
-}}
-{% endset %}
-{{ format(example) }}
-
-<br><br><br>
-
-<h3>Table with checkbox</h3>
-
-{% set example %}
-{{  table({
-        headers:[
-                {label: '<input type="checkbox">'},
-                {label: "Column Header"},
-                {label: "Column Header"},
-                {label: "Column Header"},
-                {label: "Column Header"}
-                ],
-        rows: [checkbox_row_selected, checkbox_row, checkbox_row],
-        selectedRow: 1,
-        stripedTable: true,
-        noBorders:false
     })
 }}
 {% endset %}
@@ -350,11 +350,6 @@
                 label: "Header Column",
                 id: "col1",
                 context_menu: true,
-                menu: [
-                    { label: "Ascending" },
-                    { label: "Decensing" },
-                    { label: "Fix Column" }
-                ],
                 aria: {
                     controls: "col1",
                     haspopup: true
@@ -364,11 +359,6 @@
                 label: "Header Column",
                 id: "col2",
                 context_menu: true,
-                menu: [
-                    { label: "Ascending" },
-                    { label: "Decensing" },
-                    { label: "Fix Column" }
-                ],
                 aria: {
                     controls: "col2",
                     haspopup: true
@@ -378,11 +368,6 @@
                 label: "Header Column",
                 id: "col3",
                 context_menu: true,
-                menu: [
-                    { label: "Ascending" },
-                    { label: "Decensing" },
-                    { label: "Fix Column" }
-                ],
                 aria: {
                     controls: "col3",
                     haspopup: true
@@ -418,27 +403,17 @@
                 addon_before: true,
                 fixed_col: true,
                 width: "200px",
-                menu: [
-                    { label: "Ascending" },
-                    { label: "Decensing" },
-                    { label: "Fix Column", icon: "accept" }
-                ],
                 aria: {
                     controls: "col1.2",
                     haspopup: true
                 },
-                classes: ["table__fixed-col"]
+                classes: ["fd-table__fixed-cell"]
             },
             {
                 label: "Header Column",
                 id: "col2.2",
                 context_menu: true,
                 offset: "200px",
-                menu: [
-                    { label: "Ascending" },
-                    { label: "Decensing" },
-                    { label: "Fix Column" }
-                ],
                 aria: {
                     controls: "col2.2",
                     haspopup: true
@@ -448,11 +423,6 @@
                 label: "Header Column",
                 id: "col3.2",
                 context_menu: true,
-                menu: [
-                    { label: "Ascending" },
-                    { label: "Decensing" },
-                    { label: "Fix Column" }
-                ],
                 aria: {
                     controls: "col3.2",
                     haspopup: true

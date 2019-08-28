@@ -21,6 +21,7 @@ $block: #{$fd-namespace}-list-group;
   @include fd-reset();
   margin-left: 0;
   &__item {
+    @include fd-reset();
     list-style: none;
     padding: $fd-list-group-item-padding-y $fd-list-group-item-padding-x;
     display: flex;
@@ -29,18 +30,18 @@ $block: #{$fd-namespace}-list-group;
     transition: background-color $fd-list-group-transition-params;
     &:hover {
       --fd-list-group-background-color: var(--fd-color-background-hover);
-      @include fd-var-color("background-color", $fd-list-group-background-color--hover);
+      @include fd-var-color("background-color", $fd-list-group-background-color--hover, --fd-color-background-hover);
     }
   }
   &__action {
     flex: 1;
     text-align: right;
     position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: row-reverse;
     max-height: $fd-list-group-action-height;
     padding-top: 0;
     top: -($fd-list-group-item-padding-y);
     margin-bottom: -($fd-list-group-item-padding-y * 2);
-    right: -$fd-list-group-item-padding-x;
   }
 }

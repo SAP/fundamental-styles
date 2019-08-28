@@ -9,13 +9,14 @@ $block: #{$fd-namespace}-overlay;
   $fd-overlay-background-color: rgba(#4A505C, 0.3) !default;
   --fd-overlay-background-color: #{$fd-overlay-background-color};
   $fd-overlay-alert-top-margin: fd-space(7);
+
   position: fixed;
   display: flex;
   top: 0;
   align-items: center;
   justify-content: center;
   z-index: map-get($fd-z-index-levels, "top");
-  &[aria-hidden="true"] {
+  &.is-hidden {
       display: none;
   }
   &--modal {

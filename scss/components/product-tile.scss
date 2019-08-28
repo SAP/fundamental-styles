@@ -58,9 +58,8 @@ $block: #{$fd-namespace}-product-tile;
     padding: $fd-product-tile-content-padding-x $fd-product-tile-content-padding-x;
   }
   &__title {
+    @include fd-reset-spacing();
     @include fd-type("1");
     @include fd-var-color("color", $fd-product-tile-title-color, --fd-product-tile-title-color);
-    margin-bottom: 0;
-    margin-bottom: 0;
   }
 }

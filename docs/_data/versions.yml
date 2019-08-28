@@ -134,7 +134,7 @@ radio:
   since: 1.0.0
   updated:
 
-select:
+form-select:
   since: 1.0.0
   updated: 1.3.0
 
@@ -203,18 +203,6 @@ search-input:
   updated: 1.4.0
 
 shellbar:
-  since: 1.4.0
-  updated:
-
-product-menu:
-  since: 1.4.0
-  updated:
-
-product-switcher:
-  since: 1.4.0
-  updated:
-
-user-menu:
   since: 1.4.0
   updated:
 

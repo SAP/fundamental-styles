@@ -1,0 +1,7 @@
+@import "../settings";
+
+@mixin fd-heading() {
+  text-rendering: optimizeLegibility;
+  margin-bottom: $fd-margin-bottom;
+  margin-top: 0;
+}

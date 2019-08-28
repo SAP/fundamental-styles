@@ -1,0 +1,14 @@
+{% import "./../utils.njk" as utils %}
+
+{% macro formLabel(modifier={}, required="false", text="Label Placeholder") -%}
+    {%- set _id = utils.id() %}
+    <label class="fd-form-label {{ modifier.block }}" aria-required="{{ required }}" for="{{_id}}">{{ text }}</label>
+    <input class='input-playground' placeholder="Placeholder input" id="{{_id}}" />
+{%- endmacro %}
+
+{% macro formLabelWrap(modifier={}, required="false") -%}
+    {%- set _id = utils.id() %}
+    <label class="fd-form-label {{ modifier.block }}" aria-required="{{ required }}" for="{{_id}}">
+        {{- caller() | indent -}}
+    </label>
+{%- endmacro %}

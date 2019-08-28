@@ -1,12 +1,5 @@
 {% import "./../utils.njk" as utils %}
-{% from "../badge/component.njk" import badge %}
-{% from "../button/component.njk" import button %}
-{% set btn = button(
-        { icon: 'overflow' },
-        modifier={ block: ['secondary'] },
-        aria={ label: 'More' }
-    )
-%}
+
 <!--
 tree:
     properties={},
@@ -67,10 +60,10 @@ tree:
                 Secondary Value
             </div>
             <div class="fd-tree__col">
-                {{ badge({label: item.status}) | indent(16) }}
+                <div class="badge-playground">placeholder</div>
             </div>
             <div class="fd-tree__col fd-tree__col--actions">
-                {{ btn | indent(16) }}
+                <button class="btn-playground">...</button>
             </div>
         </div>
     {%- if item.items %}

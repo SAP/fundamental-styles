@@ -1,27 +1,59 @@
 {% extends "layout.njk" %}
-{% import "../forms.njk" as forms %}
 {% from "./../format.njk" import format %}
+{% from "./component.njk" import input %}
+
 
 {% block content %}
 
+<style>
+{# add space between examples for cleaner screenshots #}
+  .fd-input {
+    margin-bottom: 10px;
+  }
+</style>
 
-    {% set basic_input %}
-{{ forms.text(
-    type="text",
-    properties={
-        placeholder: "Placeholder Text"
-    })
-}}
-{{ forms.text(
-    type="text",
-    properties={
-        placeholder: "Placeholder Text"
-    },
-    size="compact"
-    )
-}}
-    {% endset %}
+<h2>Default</h2>
 
-    {{ format(basic_input) }}
+{% set example %}
+  {{ input() }}
+   
+{% endset %}
+{{ format(example) }}
+ 
+<h2>Compact</h2>
+
+{% set example %}
+  {{ input(modifier={block: ["compact"]}) }}
+   
+{% endset %}
+
+{{ format(example) }}
+
+<h2>States</h2>
+
+{% set example %}
+  {{ input(class="is-valid") }}
+  
+  {{ input(class="is-invalid") }}
+  
+  {{ input(class="is-warning") }}
+  
+  {{ input(properties="readonly") }}
+  
+  {{ input(properties="disabled") }}
+{% endset %}
+
+{{ format(example) }}
+
+<h2>Types</h2>
+
+{% set example %}
+  {{ input(type="password") }}
+  
+  {{ input(type="search") }}
+{% endset %}
+
+{{ format(example) }}
+
 
 {% endblock %}

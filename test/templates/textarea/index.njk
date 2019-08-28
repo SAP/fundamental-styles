@@ -1,0 +1,34 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./component.njk" import textarea %}
+
+{% block content %}
+
+<h2>Default</h2>
+
+{% set example %}
+  {{ textarea() }}
+{% endset %}
+ <br><br>
+{{ format(example) }}
+ <br><br>
+<h2>Compact</h2>
+
+{% set example %}
+  {{ textarea(modifier={block: ["compact"]}) }}
+{% endset %}
+
+{{ format(example) }}
+
+<h2>States</h2>
+
+{% set example %}
+  {{ textarea(properties='disabled') }}
+  <br><br>
+  {{ textarea(properties='readonly') }}
+  <br><br>
+{% endset %}
+
+{{ format(example) }}
+
+{% endblock %}

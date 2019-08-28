@@ -1,6 +1,7 @@
 @import "./../settings";
 @import "./../functions";
 @import "./../mixins";
+@import "./../core/root";
 //$fd-support-css-var-fallback: true;
 $block: #{$fd-namespace}-page;
 .#{$block} {
@@ -15,12 +16,14 @@ $block: #{$fd-namespace}-page;
   $fd-page-header-border-width: 0 !default;
   $fd-page-header-background-color: transparent !default;
   --fd-page-header-background-color: #{$fd-page-header-background-color};
+  @include fd-reset();
   display: flex;
   flex-direction: column;
   min-height: 100%;
   width: 100%;
   @include fd-var-color("background-color", $fd-page-background-color, --fd-page-background-color);
   &__header {
+    @include fd-reset();
     border-style: solid;
     border-width: $fd-page-header-border-width;
     @include fd-var-color("border-color", $fd-page-header-border-color, --fd-page-header-border-color);
@@ -30,6 +33,7 @@ $block: #{$fd-namespace}-page;
     padding: $fd-page-header-padding-y var(--fd-page-header-padding-x);
   }
   &__content {
+    @include fd-reset();
     flex-grow: 1;
     margin-bottom: fd-space(m);
   }
