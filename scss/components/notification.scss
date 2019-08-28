@@ -8,9 +8,9 @@ $block: #{$fd-namespace}-notification;
 .#{$block} {
     // variables
     $fd-notification-max-width: 60rem !default;
-    $fd-notification-background-color:  var(--sapList_Background, $sapList_Background) !default;
-    $fd-notification-box-shadow:  var(--sapContent_Shadow0, $sapContent_Shadow0) !default;
-    $fd-notification-border-radius:  0.25rem !default;
+    $fd-notification-background-color: var(--sapList_Background, $sapList_Background) !default;
+    $fd-notification-box-shadow: var(--sapContent_Shadow0, $sapContent_Shadow0) !default;
+    $fd-notification-border-radius: 0.25rem !default;
 
     // mixins
     @mixin fd-priority-indicator($type) {
@@ -20,7 +20,7 @@ $block: #{$fd-namespace}-notification;
     }
 
 
-    // CONTAINER 
+    // CONTAINER
     @include fd-reset();
     max-width: $fd-notification-max-width;
     background-color: $fd-notification-background-color;
@@ -31,10 +31,10 @@ $block: #{$fd-namespace}-notification;
     margin-bottom: 0.5rem;
 
 
-    // ------------------------ HEADER ------------------------ 
+    // ------------------------ HEADER ------------------------
     &__header {
         @include fd-reset();
-        box-shadow: inset 0 -0.0625rem var(--sapPageHeader_BorderColor, $sapPageHeader_BorderColor); 
+        box-shadow: inset 0 -0.0625rem var(--sapPageHeader_BorderColor, $sapPageHeader_BorderColor);
         display: flex;
     }
 
@@ -63,7 +63,7 @@ $block: #{$fd-namespace}-notification;
     &__title {
         @include fd-reset();
         color: var(--sapGroup_TitleTextColor, $sapGroup_TitleTextColor);
-        padding: 1rem 0; 
+        padding: 1rem 0;
         margin-right: 1rem;
         font-weight: 700;
         width: 100%;
@@ -79,8 +79,8 @@ $block: #{$fd-namespace}-notification;
         right: 0.5rem;
     }
 
-    // ------------------------ BODY ------------------------ 
-    &__body { 
+    // ------------------------ BODY ------------------------
+    &__body {
         @include fd-reset();
         display: flex;
         align-items: flex-end;
@@ -99,24 +99,24 @@ $block: #{$fd-namespace}-notification;
         margin-right: 1rem;
     }
 
-    &__text {  
-        @include fd-reset(); 
+    &__text {
+        @include fd-reset();
         display: flex;
         flex-direction: column;
     }
 
     &__description {
         @include fd-reset();
-        color:  var(--sapContent_LabelColor, $sapContent_LabelColor);
+        color: var(--sapContent_LabelColor, $sapContent_LabelColor);
     }
 
     &__metadata {
         @include fd-reset();
         padding-top: 0.375rem;
-        color:  var(--sapContent_LabelColor, $sapContent_LabelColor);
+        color: var(--sapContent_LabelColor, $sapContent_LabelColor);
     }
 
-    // ------------------------ FOOTER ------------------------ 
+    // ------------------------ FOOTER ------------------------
     &__footer {
         @include fd-reset();
         width: 40%;
@@ -135,7 +135,7 @@ $block: #{$fd-namespace}-notification;
     &__actions {
         @include fd-reset();
         display: flex;
-        
+
         & > * {
             margin: 0.25rem;
         }
@@ -172,14 +172,14 @@ $block: #{$fd-namespace}-notification;
         }
     }
 
-    &--m {  
+    &--m {
         max-width: 640px;
         min-width: 320px;
     }
 
     &--s {
         max-width: 320px;
-    }  
+    }
 
 
     &--group {
@@ -208,7 +208,7 @@ $block: #{$fd-namespace}-notification;
             &:not(:first-child) {
                 background-color: darken($sapList_Background, 2);
                 .#{$block}__header {
-                    box-shadow: none; 
+                    box-shadow: none;
                 }
             }
         }
@@ -219,10 +219,10 @@ $block: #{$fd-namespace}-notification;
             &:first-child {
                 border-radius: 0.25rem 0.25rem 0 0;
             }
-    
+
             &:last-child {
                 border-radius: 0 0 0.25rem 0.25rem;
             }
         }
-    }  
+    }
 }
