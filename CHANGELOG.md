@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.94"></a>
+# [0.2.0-rc.94](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.93...v0.2.0-rc.94) (2019-08-28)
+
+
+### Features
+
+* remove deprecated fd-button--action-bar and fd-button--main ([#298](https://github.com/SAP/fundamental-styles/issues/298)) ([ad7f294](https://github.com/SAP/fundamental-styles/commit/ad7f294))
+
+
+
 <a name="0.2.0-rc.93"></a>
 # [0.2.0-rc.93](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.92...v0.2.0-rc.93) (2019-08-28)
 
