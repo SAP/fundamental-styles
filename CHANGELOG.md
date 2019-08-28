@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.93"></a>
+# [0.2.0-rc.93](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.92...v0.2.0-rc.93) (2019-08-28)
+
+
+### Bug Fixes
+
+* update identifier playground examples ([#302](https://github.com/SAP/fundamental-styles/issues/302)) ([0ce0778](https://github.com/SAP/fundamental-styles/commit/0ce0778))
+
+
+
 <a name="0.2.0-rc.92"></a>
 # [0.2.0-rc.92](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.91...v0.2.0-rc.92) (2019-08-27)
 
