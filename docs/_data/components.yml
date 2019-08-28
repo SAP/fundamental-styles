@@ -45,6 +45,12 @@
     - title: Modal
       meta: modal
 
+    - title: Multi Input
+      meta: multi-input
+
+    - title: Notification
+      meta: notification
+
     - title: Pagination
       meta: pagination
 

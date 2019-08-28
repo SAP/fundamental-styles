@@ -10,9 +10,9 @@
 }
 .docs-content {
     padding: 40px 40px 80px 60px;
-    min-width: 1024px;
-    max-width: 1440px;
-    width: 80%;
+    // min-width: 1024px;
+    // max-width: 1440px;
+    // width: 80%;
     @include media("<=tablet") {
         padding: 10px;
         min-width: auto;
