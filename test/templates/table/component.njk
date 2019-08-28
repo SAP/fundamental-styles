@@ -31,7 +31,7 @@ table:
     </thead>
     <tbody class="fd-table__body" >
         {%- for row in properties.rows %}
-        <tr{% if properties.selectedRow === loop.index %} aria-selected="true"{% endif %}  class="fd-table__row">
+        <tr{% if properties.selectedRow === loop.index %} aria-selected="true"{% endif %}  {% if properties.rowClass.rowIndex === loop.index %} class="{{properties.rowClass.class}}"{% endif %} class="fd-table__row">
             {%- for item in row %}
             {%- if item.label %}
             <td class="{{item.class}} fd-table__cell">{{ item.label }}</td>
