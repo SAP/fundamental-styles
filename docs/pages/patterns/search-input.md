@@ -4,16 +4,19 @@ id: search-input
 keywords: search input
 sidebar: left-navigation-sidebar
 toc: false
-permalink: components/search-input.html
-folder: components
+permalink: patterns/search-input.html
+folder: patterns
 summary:
 ---
 
+The search input component is an opinionated composition of the `input group`, `popover` and `menu` components with the use of a styled button.
+{: .docs-intro}
+
 {% capture default %}
-<div class="fd-search-input">
+<div class="documentation-site-popover-container">
     <div class="fd-popover">
         <div class="fd-popover__control">
-            <div class="fd-combobox-control" aria-label="Image label" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
+            <div aria-label="Image label" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
                 <div class="fd-input-group fd-input-group--after">
                     <input type="text" class="fd-input" id="" value="Ba" placeholder="Select Fruit">
                     <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
@@ -36,10 +39,10 @@ summary:
 
 <br>
 
-<div class="fd-search-input">
+<div class="documentation-site-popover-container">
     <div class="fd-popover">
         <div class="fd-popover__control">
-            <div class="fd-combobox-control" aria-label="Image label" aria-controls="F4GcX34b" aria-expanded="false" aria-haspopup="true">
+            <div aria-label="Image label" aria-controls="F4GcX34b" aria-expanded="false" aria-haspopup="true">
                 <div class="fd-input-group fd-input-group--after fd-input-group--compact">
                     <input type="text" class="fd-input fd-input--compact" id="" value="Ba" placeholder="Select Fruit">
                     <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">

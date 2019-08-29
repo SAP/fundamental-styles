@@ -1,0 +1,53 @@
+@import "./../settings";
+@import "./../mixins";
+@import "./../functions";
+
+/*!
+.fd-search-input
+*/
+$block-search-input: #{$fd-namespace}-search-input;
+$fd-search-closed-control-control-width: 36px !default;
+$fd-search-closed-control-body-width: 300px !default;
+$fd-search-closed-control-body-position: $fd-search-closed-control-body-width - $fd-search-closed-control-control-width !default;
+$fd-search-closed-conrol-transition: all $fd-animation--speed !default;
+
+.#{$block-search-input} {
+        display: inline-block;
+        z-index: map-get($fd-z-index-levels, "first");
+        @include fd-rtl() {
+          right: auto;
+          left: 0;
+        }
+    .#{$fd-namespace}-input-group {
+        .#{$fd-namespace}-input-group__addon {
+            border-color: transparent;
+            @include fd-var-color("background-color", fd-color("shell", 1), --fd-color-shell-1);
+        }
+        .#{$fd-namespace}-input {
+            border-style: solid;
+            border-width: 1px;
+            @include fd-var-color("border-color", fd-color("shell", 2), --fd-color-shell-2);
+            @include fd-var-color("background-color", fd-color("shell", 1), --fd-color-shell-1);
+            @include fd-var-color("color", fd-color("shell",2), --fd-color-shell-2);
+            transition: border-color .125s;
+            padding-left: 12px;
+            padding-right: 12px;
+            &:focus {
+            box-shadow: none;
+            }
+            &[aria-hidden="true"],
+            &.is-hidden {
+            opacity: 0;
+            visibility: hidden;
+            width: $fd-search-closed-control-body-width;
+            }
+            > .fd-shellbar__button[aria-expanded="true"] {
+                position: relative;
+                z-index: map-get($fd-z-index-levels, "second");
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}

@@ -1,74 +1,26 @@
 {% import "./../utils.njk" as utils %}
-{% from "./../search-input/component.njk" import search_input %}
 
-{% set search = search_input(properties={
-    "id": utils.id(),
-    "value": properties.search.value,
-    "placeholder": properties.search.placeholder,
-    "collapsed": properties.search.collapsed,
-    "items": properties.search.items
-  })
-%}
-
-{% macro user_menu() -%}
-    <div class="fd-user-menu">
-      <div class="fd-user-menu__control" aria-expanded="false" aria-haspopup="true" role="button">
-      <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-has-background-color-accent-11" >WW</span>
-    </div>
-{%- endmacro %}
-
-
+{# .fd-shellbar__button #}
 {%- macro shellbar_button(properties={}, aria={}, disabled=false) -%}
 <button class="fd-shellbar__button {{'sap-icon--'+properties.icon if properties.icon }}"{{ aria | aria }}{% if disabled %} disabled {% endif %}>{%- if properties.label %}{{properties.label}}{%- endif %}</button>
 {%- endmacro %}
 
-{# button declarations #}
-{% set button_notification = shellbar_button({ icon: 'bell' }, aria={ label: "Notifications" }) %}
-{% set button_pool = shellbar_button({ icon: 'pool' }) %}
-{% set button_overflow = shellbar_button({ icon: 'overflow' }) %}
-{% set button_grid = shellbar_button({ icon: 'grid' }) %}
+{# .fd-search-input #}
+{% macro search_input(search={aria_hidden: "true"}) -%}
+<div class="fd-search-input">
+    <div class="fd-input-group fd-input-group--after">
+        <input type="text" class="fd-input" id="" value="Ba" placeholder="Select Fruit" aria-hidden="{{search.aria_hidden}}">
+        <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
+            <button class="fd-shellbar__button sap-icon--search"></button>
+        </span>
+    </div>
+</div>
+{%- endmacro %}
 
-
-{% set actions = [
-  {
-    "label": "Notifications",
-    "action": button_notification,
-    "collapse": false,
-    "notifications": 25,
-    "collapse": true
-  },
-  {
-    "label": "Pool",
-    "action": button_pool,
-    "collapse": true
-  }
-]
-%}
-
-{% set collapse_unshift_extras = [
-  {
-    "label": "Search"
-  }
-]
-%}
-
-{% set collapse_push_extras = [
-  {
-    "label": "Product Switcher"
-  }
-]
-%}
-
-{% set brand = {
-    name: "SAP",
-    logo: {}
-  }
-%}
-
+{# .fd-product-switcher #}
 {% set product = {
   title: "Corporate Portal",
   subtitle: "Subtitle",
-  brand: brand,
   items: [
       { "label": "Application A" },
       { "label": "Application B" },
@@ -77,37 +29,15 @@
   ]
 } %}
 
+{# .fd-product-menu #}
 
-{% set search_input_props = {
-  "id": utils.id(),
-  "value": "Sear",
-  "placeholder": "Search products",
-  "closed": true,
-  "items": [
-    {
-      "label": "<strong>Sear</strong>ch Result A",
-      "action": "#"
-    },
-    {
-      "label": "<strong>Sear</strong>ch Result B",
-      "action": "#"
-    },
-    {
-      "label": "<strong>Sear</strong>ch Result C",
-      "action": "#"
-    },
-    {
-      "label": "<strong>Sear</strong>ch Result D",
-      "action": "#"
-    }
-  ]
-} %}
 
-{%- macro shell_logo(logo=brand.logo, name=brand.name) %}
-  <a href="#" class="fd-shellbar__logo{{ ' fd-shellbar__logo--image-replaced' if not logo.src and not logo.svg  }}" aria-label="{{ name }}">
+
+{%- macro shell_logo(logo=logo) %}
+  <a href="#" class="fd-shellbar__logo {{ 'fd-shellbar__logo--image-replaced' if not logo.src and not logo.svg  }}">
     {%- if logo.src %}
     {%- set comma = joiner() %}
-      <img class="fd-shellbar__logo--image" src="{{ logo.src }}"{% if logo.srcset %} srcset="{% for item in logo.srcset %}{{ comma() -}} {{ item }} {{ loop.index }}x
+      <img src="{{ logo.src }}"{% if logo.srcset %} srcset="{% for item in logo.srcset %}{{ comma() -}} {{ item }} {{ loop.index }}x
       {%- endfor %}"{% endif %}{% if logo.width %} width="{{logo.width}}"{% endif %}{% if logo.height %} height="{{logo.height}}"{% endif %} alt="">
     {%- endif %}
     {%- if logo.svg %}
@@ -116,85 +46,43 @@
   </a>
 {% endmacro -%}
 
-{% macro shellbar(brand=brand,product=product,copilot=true,actions=actions,user=true,switcher=true, search=search_input_props, properties={}, modifier={}, state={}, aria={}, styles="") -%}
+
+
+{% macro shellbar(logo=logo, search=search, product=product, properties={}, modifier={}, state={}, aria={}, styles="") -%}
 {%- set _id = utils.id() %}
 <div class="fd-shellbar">
     <div class="fd-shellbar__group fd-shellbar__group--start">
-        {{ shell_logo(logo=brand.logo, name=brand.name) }}
-        {% if product %}
+        {{ shell_logo(logo=logo) }}
           <div class="fd-product-menu">
               <button class="fd-product-menu__control" aria-controls="4Gsw5984" aria-haspopup="true" aria-expanded="false">
                 <span class="fd-product-menu__title">Corporate Portal</span>
               </button>
           </div>
-        {% endif %}
-        {% if product.subtitle %}
           <div class="fd-shellbar__subtitle">
             {{ product.subtitle }}
           </div>
-        {% endif %}
     </div>
-    {% if copilot === true %}
     <div class="fd-shellbar__group fd-shellbar__group--middle">
       <img src="/static/copilot.png" alt="CoPilot" height="30" width="30" />
     </div>
-    {% endif %}
-    {% if actions or user or switcher or search %}
       <div class="fd-shellbar__group fd-shellbar__group--end">
-      {{ shell_actions(actions=actions, user=user, switcher=switcher, search=search,  properties=properties) }}
-    </div>
-    {% endif %}
-  </div>
-{%- endmacro %}
-
-{% macro shell_actions(actions=actions, user=true, switcher=true, search=false, properties={}, modifier={}, state={}, aria={}) -%}
-
-  {%- set _id = utils.id() %}
-
-  {% set collapsed_items = actions | filter_array("collapse",true) %}
-      {%- if actions %}
-        {%- if search %}
           <div class="fd-shellbar__action fd-shellbar__action--collapsible">
-            {{ search_input(properties=search) }}
+            {{ search_input(search=search) }}
           </div>
-        {% endif %}
-        {%- for item in actions %}
-            <div class="fd-shellbar__action fd-shellbar__action--collapsible">
-                {{item.action}}
-            </div>
-        {%- endfor %}
-        <div class="fd-shellbar__action fd-shellbar__action--collapse">
-          <div class="fd-shellbar-collapse">
-            {# popover would live here for fundamental-styles doc site #}
-          </div>
+        <div class="fd-shellbar__action fd-shellbar__action--collapsible">
+            {{ shellbar_button({ icon: 'pool' }) }}
         </div>
-        {%- endif %}
-        {%- if user %}
-            <div class="fd-shellbar__action fd-shellbar__action--show-always">
-              {{ user_menu() }}
-            </div>
-        {%- endif %}
-        {%- if switcher %}
-            <div class="fd-shellbar__action fd-shellbar__action--collapsible">
-              {{button_grid}}
-            </div>
-        {%- endif %}
-{%- endmacro %}
-
-{% macro shell_actions_collapse(actions=[], user=true, switcher=true, properties={}, modifier={}, state={}, aria={}) -%}
-  {%- set _id = utils.id() %}
-
-  {%- set totalNotifications = 0 %}
-
-  {%- for item in actions %}
-    {%- set totalNotifications = totalNotifications + (item.notifications or 0) %}
-  {%- endfor %}
-
-  <div class="fd-shellbar-collapse"></div>
-{%- endmacro %}
-
-{%- macro shellbar_collapse_control(properties={}, modifier={}, state={}) -%}
-  <div class="fd-shellbar-collapse--control" aria-controls="{{properties.id}}" aria-expanded="false" aria-haspopup="true" role="button">
-      {{ button_overflow }}
+        <div class="fd-shellbar__action fd-shellbar__action--collapsible">
+            {{ shellbar_button({ icon: 'bell' }) }}
+        </div>
+        <div class="fd-shellbar__action fd-shellbar__action--show-always">
+          <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail">WW</span>
+          {# popover for user-menu #}
+        </div>
+        <div class="fd-shellbar__action fd-shellbar__action--collapsible">
+          {{ shellbar_button({ icon: 'grid' }) }}
+          {# popover for product-switcher #}
+        </div>
+    </div>
   </div>
-{%- endmacro -%}
+{%- endmacro %}
