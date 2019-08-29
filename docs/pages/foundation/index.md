@@ -13,17 +13,7 @@ summary: Fiori Fundamentals is a unified, flexible design system that solves com
 problems in a meaningful way and creates simple intuitive experience.
 </p>
 
-<div class="fd-tile-grid fd-tile-grid--2col docs-tiles">
-    <a class="fd-tile" role="button" href="grid.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Grid
-             </h2>
-             <p class="fd-tile__description">
-                 Fundamental Styles uses responsive grid system that achieves flexible 12-column flow layout. It is used to create flexible layouts for various screen sizes and device types.
-             </p>
-        </div>
-    </a>
+<div class="fd-layout-grid docs-tiles">
     <a class="fd-tile" role="button" href="spacing.html">
         <div class="fd-tile__content">
              <h2 class="fd-tile__header">

@@ -15,9 +15,6 @@ entries:
     output: web
 
     folderitems:
-    - title: Grid
-      url: /foundation/grid.html
-      output: web
 
     - title: Spacing
       url: /foundation/spacing.html
@@ -36,6 +33,10 @@ entries:
 
     - title: Application Shell
       url: /layouts/shell-layout.html
+      output: web
+
+    - title: Layout Grid
+      url: /layouts/layout-grid.html
       output: web
 
     - title: Page
@@ -186,10 +187,6 @@ entries:
 
     - title: Tile
       url: /components/tile.html
-      output: web
-
-    - title: Tile Grid
-      url: /components/tile-grid.html
       output: web
 
     - title: Time

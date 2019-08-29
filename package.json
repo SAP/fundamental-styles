@@ -92,6 +92,7 @@
     "silent": false
   },
   "browserslist": [
-    "last 2 versions"
+    "last 2 versions",
+    "IE 11"
   ]
 }
