@@ -1,5 +1,102 @@
 {% import "./../utils.njk" as utils %}
-
-{% macro colorpalette() -%}
-<div>Testing Color Palette</div>
+<!--
+color-palette:
+    properties={},
+    modifier={ block: [] },
+    state={},
+    aria={}
+-->
+{% macro default_color(properties={}, modifier={}, state={}, aria={}) -%}
+    <div class="fd-color-palette--compact">
+        <p class="fd-color-palette__link">
+            Default Color
+        </p>
+    </div>
 {%- endmacro %}
+
+{% macro more_colors(properties={}, modifier={}, state={}, aria={}) -%}
+    <div class="fd-color-palette--compact fd-color-palette--compact--more-colors">
+        <p class="fd-color-palette__link">
+            More Colors...
+        </p>
+    </div>
+{%- endmacro %}
+
+{% macro swatch(properties={}, modifier={}, state={}, aria={}) -%}
+    <div class="swatch">
+        <div class="inner-swatch" style="background-color: {{ properties.background_color }};">
+        </div>
+    </div>
+{%- endmacro %}
+
+{% macro swatch_row(properties={}, modifier={}, state={}, aria={}) -%}
+    <div class="fd-color-palette--row ng-star-inserted">
+        {{ swatch(properties={background_color: '#ffd700'}) }}
+        {{ swatch(properties={background_color: '#F08080'}) }}
+        {{ swatch(properties={background_color: '#FF1493'}) }}
+        {{ swatch(properties={background_color: '#c71585'}) }}
+        {{ swatch(properties={background_color: '#7B68EE'}) }}
+    </div>
+{%- endmacro %}
+
+{% macro swatch_container(properties={}, modifier={}, state={}, aria={}) -%}
+    <div class="fd-color-palette--compact upper-lower-border">
+        {% for n in range(properties.nbRows) %}
+            {{ swatch_row() }}
+        {% endfor %}
+    </div>
+{%- endmacro %}
+
+{% macro color_palette(properties={}, modifier={}, state={}, aria={}) -%}
+    <div class="fd-popover">
+        <div class="fd-popover__control">
+            {% if properties.colorPaletteLauncherType == 'split-button' %}
+                <div class="fd-button-split">
+                    <button class="fd-button">A</button>
+                    <button class="fd-popover__control sample-control fd-button sap-icon--slim-arrow-down" aria-controls="{{properties.id}}" aria-expanded="false" aria-haspopup="true">
+                    </button>
+                </div>
+            {% endif %}
+        </div>
+
+        <div class="fd-popover__body"  aria-hidden="true" id="{{properties.id}}">
+            <div class="sample-content">
+            {% if properties.variant == 'full-featured' %} 
+                <div>
+                    {{ default_color() }}
+                </div>
+                <div>
+                    {{ swatch_container(properties={nbRows: 3}) }}
+                </div>
+                <div>
+                    {{ more_colors() }}
+                </div>
+                <div>
+                    {{ swatch_container(properties={nbRows: 1}) }}
+                </div>
+            {% endif %}
+            {% if properties.variant == 'complex' %} 
+                <div>
+                    {{ default_color() }}
+                </div>
+                <div>
+                    {{ swatch_container(properties={nbRows: 3}) }}
+                </div>
+                <div>
+                    {{ more_colors() }}
+                </div>
+            {% endif %}
+            {% if properties.variant == 'simple' %} 
+                <div>
+                    {{ swatch_container(properties={nbRows: 3}) }}
+                </div>
+            {% endif %}
+            </div>
+        </div>
+    </div>
+{%- endmacro %}
+
+
+
+
+

@@ -1,13 +1,33 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "./component.njk" import colorpalette %}
+{% from "./component.njk" import color_palette %}
 
 {% block content %}
 
-    {% set example %}
-    {{colorpalette()}}
+<style media="screen">
+    .calander-info{ background: #f3f4f5;}
+</style>
 
+<div style="background: #f3f4f5; margin:-20px; padding:20px;">
+
+    <h3>Full-Featured (with split-button)</h3>
+    {% set example %}
+    {{ color_palette(properties={colorPaletteLauncherType: 'split-button', variant: 'full-featured', id: 'mkJSZ928'}) }}
     {% endset %}
     {{ format(example) }}
+
+    <h3>Complex (with split-button)</h3>
+    {% set example %}
+    {{ color_palette(properties={colorPaletteLauncherType: 'split-button', variant: 'complex', id: 'mkJSZ929'}) }}
+    {% endset %}
+    {{ format(example) }}
+
+    <h3>Simple (with split-button)</h3>
+    {% set example %}
+    {{ color_palette(properties={colorPaletteLauncherType: 'split-button', variant: 'simple', id: 'mkJSZ930'}) }}
+    {% endset %}
+    {{ format(example) }}
+
+</div>
 
 {% endblock %}
