@@ -1,13 +1,9 @@
 {
     "id": "tile",
     "name": "Tile",
-    "css_vars": true,
-    "rtl": true,
-    "version": "1.0.0",
     "properties": {
         "title": "Tile Title",
         "description": "Tile Description",
-        "status": "TILE_STATUS",
         "media": {
             "url": "./static/nature.jpg",
             "alt": "TILE_MEDIA_ALT"
