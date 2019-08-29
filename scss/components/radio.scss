@@ -19,9 +19,7 @@ $block: #{$fd-namespace}-radio;
         border-radius: 50%;
         width: $check-size_;
         height: $check-size_;
-        position: absolute;
-        top: calc(50% - (#{$check-size_}/2));
-        left: calc(50% - (#{$check-size_}/2));
+		@include absolute-center();
         transition: background-color $fd-forms-transition-params;
         background-color: transparent;
     }

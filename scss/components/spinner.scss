@@ -52,10 +52,8 @@ $block: #{$fd-namespace}-spinner;
                 content: "";
             }
             .#{$block} {
-                position: absolute;
+				@include absolute-center();
                 z-index: map-get($fd-z-index-levels, "second");
-                left: calc(50% - #{$_width}/2);
-                top: calc(50% - #{$_height}/2);
             }
         }
     }
