@@ -19,7 +19,7 @@ $block: #{$fd-namespace}-input-group;
         &:not(:first-child), &.#{$fd-namespace}-input:read-only {
             border-right: none;
         }
-        &:not(.fd-input-group__addon):first-child {
+        &:not(.fd-input-group__addon):not(.fd-textarea):first-child {
             border-top-left-radius: $fd-border-radius;
             border-bottom-left-radius: $fd-border-radius;
             border-top-right-radius: 0;

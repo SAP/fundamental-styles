@@ -32,7 +32,7 @@
         </span>
     {%- endif %}
     {%- if properties.type == "textarea" %}
-        <textarea class="fd-textarea" placeholder="{{properties.placeholder}}" value="{{properties.value}}"></textarea> 
+        <textarea class="fd-textarea" placeholder="{{input.properties.placeholder}}" value="{{input.properties.value}}"></textarea> 
     {%- else %}
         <input class="fd-input{{ size | modifier('input') }}" placeholder="{{input.properties.placeholder}}" value="{{input.properties.value}}"/> 
     {%- endif %}
