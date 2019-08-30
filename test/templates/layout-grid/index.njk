@@ -1,0 +1,184 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./component.njk" import layout_grid %}
+
+{% block content %}
+
+{%- set div_playground %}
+<div class="panel-playground">Placeholder div</div>
+{% endset %}
+
+{% macro layout_item(direction="", number="") -%}
+<div class="panel-playground fd-layout-grid__span-{{direction}}-{{number}}">Placeholder div</div>
+{%- endmacro %}
+
+<h2>3-col grid (default)</h2>
+{% set example %}
+    {{  layout_grid(
+            properties={
+                items: [
+                div_playground, div_playground, div_playground, div_playground, div_playground, div_playground
+                ]
+            }
+        )
+    }}
+{% endset %}
+{{ format(example) }}
+
+<h2>1 col grid</h2>
+{% set example %}
+    {{ layout_grid(
+            properties={
+                items: [
+                div_playground, div_playground, div_playground, div_playground, div_playground, div_playground
+                ]
+            },
+             modifier={
+                block: ["col-1"]
+            }
+        )
+    }}
+{% endset %}
+{{ format(example) }}
+
+
+
+<h2>2 col grid</h2>
+{% set example %}
+    {{ layout_grid(
+            properties={
+                items: [
+                div_playground, div_playground, div_playground, div_playground, div_playground, div_playground
+                ]
+            },
+             modifier={
+                block: ["col-2"]
+            }
+        )
+    }}
+{% endset %}
+{{ format(example) }}
+
+
+<br><br>
+
+<h2>4 col grid</h2>
+{% set example %}
+    {{ layout_grid(
+            properties={
+                items: [
+                div_playground, div_playground, div_playground, div_playground, div_playground, div_playground
+                ]
+            },
+             modifier={
+                block: ["col-4"]
+            }
+        )
+    }}
+{% endset %}
+{{ format(example) }}
+
+<h2>5 col grid</h2>
+{% set example %}
+    {{ layout_grid(
+            properties={
+                items: [
+                div_playground, div_playground, div_playground, div_playground, div_playground, div_playground
+                ]
+            },
+             modifier={
+                block: ["col-5"]
+            }
+        )
+    }}
+{% endset %}
+{{ format(example) }}
+
+<h2>6 col grid</h2>
+{% set example %}
+    {{ layout_grid(
+            properties={
+                items: [
+                div_playground, div_playground, div_playground, div_playground, div_playground, div_playground
+                ]
+            },
+             modifier={
+                block: ["col-6"]
+            }
+        )
+    }}
+{% endset %}
+{{ format(example) }}
+
+<h2>3 col grid - row helper classes</h2>
+
+{% set example %}
+    {{ layout_grid(
+            properties={
+                items: [
+                layout_item(direction="row", number="2"), div_playground, div_playground, div_playground, div_playground, div_playground
+                ]
+            },
+             modifier={
+                block: ["col-3"]
+            }
+        )
+    }}
+{% endset %}
+{{ format(example) }}
+
+<h2>6 col grid - col helper classes</h2>
+
+{% set example %}
+    {{ layout_grid(
+            properties={
+                items: [
+                layout_item(direction="column", number="3"), div_playground, div_playground, div_playground, div_playground, div_playground
+                ]
+            },
+             modifier={
+                block: ["col-6"]
+            }
+        )
+    }}
+{% endset %}
+{{ format(example) }}
+
+
+<h2>3 col grid - gutter helper classes</h2>
+
+{% set example %}
+    {{ layout_grid(
+            properties={
+                items: [
+                div_playground, div_playground, div_playground, div_playground, div_playground, div_playground
+                ]
+            },
+             modifier={
+                block: ["col-3", "no-gap"]
+            }
+        )
+    }}
+{% endset %}
+{{ format(example) }}
+
+<h2>3 col grid - gutter helper classes</h2>
+
+{% set example %}
+    {{ layout_grid(
+            properties={
+                items: [
+                div_playground, div_playground, div_playground, div_playground, div_playground, div_playground
+                ]
+            },
+             modifier={
+                block: ["col-3", "gap-1"]
+            }
+        )
+    }}
+{% endset %}
+{{ format(example) }}
+
+
+
+{% endblock %}

@@ -1,9 +1,6 @@
 {
     "id": "panel",
     "name": "Panel",
-    "version": "1.0.0",
-    "css_vars": true,
-    "rtl": true,
     "properties": {
         "title": "Panel Label",
         "description": "Panel Description"

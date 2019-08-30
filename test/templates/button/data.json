@@ -1,9 +1,6 @@
 {
     "id": "button",
     "name": "Button",
-    "css_vars": true,
-    "rtl": true,
-    "version": "1.0.0",
     "properties": {
         "label": "BUTTON_LABEL",
         "icon": "#/icon"

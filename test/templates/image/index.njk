@@ -1,6 +1,5 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "../button/component.njk" import button %}
 {% from "./component.njk" import image %}
 
 {% block content %}
@@ -87,22 +86,6 @@
     {{ format(example) }}
 <br><br>
 
-    {# <h2>rounded</h2>
-    {%- set example %}
-{% for size in sizes %}
-{{  image(
-        properties=data.properties,
-        modifier={
-            block: [size, "rounded"]
-        },
-        aria=data.aria
-    )
-}}
-{% endfor %}
-    {%- endset %}
-    {{ format(example) }}
-
-<br><br> #}
     <h2>circle</h2>
     {%- set example %}
 {% for size in sizes %}
