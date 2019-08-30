@@ -156,9 +156,10 @@ $block: #{$fd-namespace}-input-group;
         }
         &--button {
           padding: 0;
-        //   [class*="fd-button"] {
-        //     border-radius: 0;
-        //   }
+        //   border-radius: 0;
+          [class*="fd-button"] {
+            border-radius: 0;
+          }
         }
         &--before {
             border-top-right-radius: 0;
@@ -231,7 +232,6 @@ $block: #{$fd-namespace}-input-group;
             background-position: center;
             background-size: fd-space(5);
             position: relative;
-            left: -(fd-space(11));
             z-index: map-get($fd-z-index-levels, "second");
         }
     }
