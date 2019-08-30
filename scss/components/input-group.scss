@@ -135,10 +135,6 @@ $block: #{$fd-namespace}-input-group;
             border-right-color: transparent;
             border-radius: 0 !important;
         }
-        &:hover {
-            border-top-color: transparent;
-            border-bottom-color: transparent;
-        }
         @at-root {
           .#{$block}--compact & {
           @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);
@@ -151,6 +147,8 @@ $block: #{$fd-namespace}-input-group;
           }
         }
         .fd-button--light:hover {
+            border-top-color: transparent;
+            border-bottom-color: transparent;
             box-shadow: none;
         }
         .fd-button--light:focus {
