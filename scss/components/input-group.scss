@@ -13,6 +13,33 @@ $block: #{$fd-namespace}-input-group;
     @include fd-reset();
     display: flex;
 
+    .fd-input, .fd-textarea {
+        @include fd-hover() {
+            @include fd-var-color("border-color", fd-color-state("hover", "action"), --fd-color-action-hover);
+            box-shadow: none;
+        }
+        @include fd-var-color("color", $fd-color, --fd-color-text-1);
+        font-size: $fd-font-size;
+        font-family: $fd-font-family;
+        padding: 0 12px;
+        // @include fd-focus();
+        // &:focus {
+        //     @include fd-var-color("border-color", fd-color-state("hover", "action"), --fd-color-action-focus);
+        //     // --fd-forms-border-color: var(--fd-color-action-focus);
+        //     box-shadow: none;
+        // }
+        // &:focus {
+        //     @include fd-var-color("border-color", fd-color-state("hover", "action"), --fd-color-action-focus);
+        //     box-shadow: none;
+        // }
+    }
+
+    .fd-textarea {
+        border-radius: 4px;
+        height: 72px;
+        padding: 12px 12px 0 12px;
+    }
+
     > * {
         border-color: var(--fd-forms-border-color, #89919a);
         border-width: 1px;
