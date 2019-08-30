@@ -18,6 +18,7 @@ $block-product-menu: #{$fd-namespace}-product-menu;
         padding: 0 0 0 fd-space(2);
     }
   &__title {
+    @include fd-reset();
     @include fd-type("1");
     @include fd-weight("bold");
     line-height: 1;

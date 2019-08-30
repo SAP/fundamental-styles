@@ -2,16 +2,16 @@
 
 {# .fd-shellbar__button #}
 {%- macro shellbar_button(properties={}, disabled=false) -%}
-<button class="fd-button fd-shellbar__button {{'sap-icon--'+properties.icon if properties.icon }}"{% if disabled %} disabled {% endif %}>{%- if properties.label %}{{properties.label}}{%- endif %}</button>
+<button class="btn-playground fd-shellbar__button"{% if disabled %} disabled {% endif %}>&</button>
 {%- endmacro %}
 
 {# .fd-search-input #}
-{% macro search_input(search_class=search_class) -%}
+{% macro search_input() -%}
 <div class="fd-search-input">
-    <div class="fd-input-group fd-input-group--after">
-        <input type="text" class="fd-input {{search_class}}" id="" value="Ba" placeholder="Select Fruit">
-        <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
-            <button class="fd-button fd-shellbar__button sap-icon--search"></button>
+    <div>
+        {# input group here #}
+        <span class="input-group-button-playground">
+            <button class="btn-playground fd-shellbar__button">&&</button>
         </span>
     </div>
 </div>
@@ -65,7 +65,7 @@
 
 
 
-{% macro shellbar(logo=logo, properties={}, modifier={}, search_class='') -%}
+{% macro shellbar(logo=logo, properties={}, modifier={}) -%}
 {%- set _id = utils.id() %}
 <div class="fd-shellbar">
     <div class="fd-shellbar__group fd-shellbar__group--start">
@@ -83,7 +83,7 @@
     </div>
       <div class="fd-shellbar__group fd-shellbar__group--end">
           <div class="fd-shellbar__action fd-shellbar__action--collapsible">
-            {{ search_input(search_class=search_class) }}
+            {{ search_input() }}
           </div>
         <div class="fd-shellbar__action fd-shellbar__action--collapse">
             {# this should only be visible on small screens #}
@@ -93,7 +93,7 @@
             {{ shellbar_button({ icon: 'bell' }) }}
         </div>
         <div class="fd-shellbar__action">
-          <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail">WW</span>
+          <span class="identifier-playground"></span>
           {# popover for user-menu #}
         </div>
         <div class="fd-shellbar__action fd-shellbar__action--collapsible">

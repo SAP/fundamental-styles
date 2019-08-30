@@ -39,6 +39,20 @@ body {
     background: beige;
     font-size: 10px;
 }
+
+.identifier-playground {
+  display: inline-block;
+  background: beige;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  min-width: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
 .input-playground, .input-playground-full-width {
   width: 250px;
   background: beige;

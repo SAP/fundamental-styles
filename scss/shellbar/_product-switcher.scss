@@ -13,13 +13,16 @@ $block-product-switcher: #{$fd-namespace}-product-switcher;
 
 
 .#{$block-product-switcher} {
+  @include fd-reset();
   position: relative;
   display: inline-block;
 
   &__body {
+    @include fd-reset();
     padding: 20px 10px 0 10px;
     color: initial;
     &--list {
+      @include fd-reset();
         margin: 0;
         padding: 0;
         list-style: none;
@@ -28,6 +31,7 @@ $block-product-switcher: #{$fd-namespace}-product-switcher;
     }
 
     &--list-item {
+        @include fd-reset();
         float: left;
         width: $fd-product-switcher-product-width + 10;
         text-align: center;
@@ -41,6 +45,7 @@ $block-product-switcher: #{$fd-namespace}-product-switcher;
 
   &__product {
     &-icon {
+      @include fd-reset();
       display: block;
       height: $fd-product-switcher-product-height;
       margin: 0 0 10px 0;
@@ -52,6 +57,7 @@ $block-product-switcher: #{$fd-namespace}-product-switcher;
       }
     }
     &-title {
+      @include fd-reset();
       display: block;
     }
   }

@@ -5,17 +5,11 @@
 
 {% block content %}
 
-  <h2>default</h2>
-    {% set example %}
-        {{  shellbar() }}
-    {% endset %}
-    {{ format(example) }}
-
-<h2>search input collapsed</h2>
-    {% set example %}
-        {{  shellbar(search_class='is-hidden' ) }}
-    {% endset %}
-    {{ format(example) }}
+<h2>default</h2>
+{% set example %}
+    {{  shellbar() }}
+{% endset %}
+{{ format(example) }}
 
 <h2>Logo variations</h2>
 

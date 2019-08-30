@@ -98,6 +98,7 @@ $block: #{$fd-namespace}-shellbar;
         vertical-align: middle;
     }
     &__logo {
+      @include fd-reset();
       display: flex;
       align-items: center;
       vertical-align: middle;
@@ -114,6 +115,7 @@ $block: #{$fd-namespace}-shellbar;
         }
       }
       > * {
+        line-height: 0;
         max-height: fd-space(10);
         width: auto;
         display: block;
