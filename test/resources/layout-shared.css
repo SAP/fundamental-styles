@@ -12,6 +12,12 @@ body {
     padding: 20px;
 }
 
+.input-group-button-playground, .input-group-playground {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
 .btn-playground, .btn-playground--emphasized {
   border: 1px solid black;
   border-radius: 4px;

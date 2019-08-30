@@ -9,13 +9,14 @@ $block-search-input: #{$fd-namespace}-search-input;
 $fd-search-closed-conrol-transition: all $fd-animation--speed !default;
 
 .#{$block-search-input} {
-        display: inline-block;
-        z-index: map-get($fd-z-index-levels, "first");
-        transition: $fd-search-closed-conrol-transition;
-        @include fd-rtl() {
-          right: auto;
-          left: 0;
-        }
+    @include fd-reset();
+    display: inline-block;
+    z-index: map-get($fd-z-index-levels, "first");
+    transition: $fd-search-closed-conrol-transition;
+    @include fd-rtl() {
+        right: auto;
+        left: 0;
+    }
     .#{$fd-namespace}-input-group {
         .#{$fd-namespace}-input-group__addon {
             border-color: transparent;

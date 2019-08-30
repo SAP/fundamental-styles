@@ -5,6 +5,7 @@
 $block-product-menu: #{$fd-namespace}-product-menu;
 
 .#{$block-product-menu} {
+    @include fd-reset();
     padding: 0 fd-space(2) 0 0;
     text-overflow: ellipsis;
     min-width: 0;

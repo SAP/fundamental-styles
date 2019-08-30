@@ -55,6 +55,7 @@ $block: #{$fd-namespace}-shellbar;
     }
 
     &__group {
+        @include fd-reset();
         &--start {
             display: flex;
             align-items: center;
@@ -91,6 +92,39 @@ $block: #{$fd-namespace}-shellbar;
         }
     }
 
+    &__title,
+    &__subtitle {
+      @include fd-reset();
+      @include fd-type("1");
+      @include fd-weight("bold");
+      line-height: 1;
+      @include fd-var-color("color", $fd-shellbar-color, --fd-color-text-5);
+      white-space: nowrap;
+      overflow: hidden;
+      max-width: 100%;
+      text-overflow: ellipsis;
+      display: none;
+      @include fd-screen(m) {
+        display: inline-block;
+      }
+  }
+
+  &__subtitle {
+      @include fd-type("-1");
+      @include fd-weight("reg");
+      padding: 0 16px;
+      // Show only on desktop, hide on s
+      @include fd-screen(s) {
+          display: none;
+      }
+      @include fd-screen(m) {
+          display: none;
+      }
+      @include fd-screen(l) {
+          display: inline-block;
+      }
+  }
+
     &__logo,
     &__product,
     &__subtitle {
@@ -126,25 +160,8 @@ $block: #{$fd-namespace}-shellbar;
         height: $fd-shellbar-logo-height;
       }
     }
-
-    &__subtitle {
-        @include fd-type("-1");
-        @include fd-weight("reg");
-        line-height: 1;
-        padding: 0 16px;
-
-        // Show only on desktop, hide on s
-        @include fd-screen(s) {
-            display: none;
-        }
-        @include fd-screen(m) {
-            display: none;
-        }
-        @include fd-screen(l) {
-            display: inline-block;
-        }
-    }
     &__action {
+      @include fd-reset();
       display: inline-block;
       position: relative;
       padding-right: 0;

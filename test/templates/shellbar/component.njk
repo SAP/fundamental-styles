@@ -8,7 +8,7 @@
 {# .fd-search-input #}
 {% macro search_input() -%}
 <div class="fd-search-input">
-    <div>
+    <div class="input-group-playground">
         {# input group here #}
         <span class="input-group-button-playground">
             <button class="btn-playground fd-shellbar__button">&&</button>
@@ -65,17 +65,21 @@
 
 
 
-{% macro shellbar(logo=logo, properties={}, modifier={}) -%}
+{% macro shellbar(logo=logo, product=false, properties={}, modifier={}) -%}
 {%- set _id = utils.id() %}
 <div class="fd-shellbar">
     <div class="fd-shellbar__group fd-shellbar__group--start">
         {{ shell_logo(logo=logo) }}
+          {% if product %}
           <div class="fd-product-menu">
               <button class="fd-product-menu__control" aria-controls="4Gsw5984" aria-haspopup="true" aria-expanded="false">
-                <span class="fd-product-menu__title">Corporate Portal</span>
+                <span class="fd-product-menu__title">Title</span>
               </button>
               {# popover for product-menu #}
           </div>
+          {% else %}
+            <span class="fd-shellbar__title">Title</span>
+          {% endif %}
           <div class="fd-shellbar__subtitle">Subtitle</div>
     </div>
     <div class="fd-shellbar__group fd-shellbar__group--middle">
