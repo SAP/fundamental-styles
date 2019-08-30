@@ -133,7 +133,11 @@ $block: #{$fd-namespace}-input-group;
             border: none;
             border-top-color: transparent;
             border-right-color: transparent;
-            border-radius: 0;
+            border-radius: 0 !important;
+        }
+        &:hover {
+            border-top-color: transparent;
+            border-bottom-color: transparent;
         }
         @at-root {
           .#{$block}--compact & {
@@ -145,6 +149,12 @@ $block: #{$fd-namespace}-input-group;
                 }
             }
           }
+        }
+        .fd-button--light:hover {
+            box-shadow: none;
+        }
+        .fd-button--light:focus {
+            box-shadow: 0 0 0 1px var(--fd-color-action-focus);
         }
 
         //ELEMENT MODIFIERS ************
