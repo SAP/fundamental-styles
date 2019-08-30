@@ -35,6 +35,35 @@
 {% set example %}
 {{  table(properties={
         rows: [row, row, row],
+        headers: [
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            }
+        ]
+    })
+}}
+
+{% endset %}
+{{ format(example) }}
+
+<br><br><br>
+
+<h2>Table with semantic row highlighting</h2>
+{% set example %}
+{{  table(properties={
+        rows: [row, row, row],
         rowClass : {"rowIndex": 2, "class": "fd-table__row--valid"},
         headers: [
             {
@@ -133,11 +162,11 @@
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
+            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
+            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
+            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
+            <th class="fd-table__cell  fd-table__cell--header" scope="col">Column Header</th>
         </tr>
     </thead>
     <tbody class="fd-table__body">

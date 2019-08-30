@@ -4,13 +4,6 @@ body {
     overflow: hidden;
 }
 
-a, a:visited {
-    color: docs-color(action, 4);
-    &:hover {
-        color: docs-color(action, 4);
-    }
-}
-
 ul, ol {
     margin-left: 40px;
 }

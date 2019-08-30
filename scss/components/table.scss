@@ -141,11 +141,12 @@ $block: #{$fd-namespace}-table;
 
             text-align: right;
         }
+        &--header {
+            padding-top: $fd-table-header-cell-padding;
+            padding-bottom: $fd-table-header-cell-padding;
+        }
     }
-    th {
-        padding-top: $fd-table-header-cell-padding;
-        padding-bottom: $fd-table-header-cell-padding;
-    }
+
 
     &__sort-column {
         &:hover {
@@ -258,6 +259,7 @@ $block: #{$fd-namespace}-table;
     &__row--warning,
     &__row--error,
     &__row--information {
+        border: none;
         & td:first-child {
             position: relative;
             &::before {
@@ -287,7 +289,7 @@ $block: #{$fd-namespace}-table;
             --fd-color-background-hover: var(--fd-color-background-3);
         }
         @include fd-var-color("background-color", fd-color('background', 3), --fd-color-background-3);
-        & td:first-child {
+        & .fd-table__cell:first-child {
             &::before {
                 @include fd-var-color("border-color", fd-color('status', 1), --fd-color-status-1);
             }
@@ -298,7 +300,7 @@ $block: #{$fd-namespace}-table;
             --fd-color-background-hover: var(--fd-color-background-4);
         }
         @include fd-var-color("background-color", fd-color('background', 4), --fd-color-background-4);
-        & td:first-child {
+        & .fd-table__cell:first-child {
             &::before {
                 @include fd-var-color("border-color", fd-color('status', 2), --fd-color-status-2);
             }
@@ -309,7 +311,7 @@ $block: #{$fd-namespace}-table;
             --fd-color-background-hover: var(--fd-color-background-5);
         }
         @include fd-var-color("background-color", fd-color('background', 5), --fd-color-background-5);
-        & td:first-child {
+        & .fd-table__cell:first-child {
             &::before {
                 @include fd-var-color("border-color", fd-color('status', 3), --fd-color-status-3);
             }
@@ -320,7 +322,7 @@ $block: #{$fd-namespace}-table;
             --fd-color-background-hover: var(--fd-color-background-6);
         }
         @include fd-var-color("background-color", fd-color('background', 6), --fd-color-background-6);
-        & td:first-child {
+        & .fd-table__cell:first-child {
             &::before {
                 @include fd-var-color("border-color", fd-color('status', 5), --fd-color-status-5);
                 border-color: fd-color('status', 5);
