@@ -7,13 +7,8 @@
 {% from "./../../tabs/component.njk" import tabs %}
 
 {% set hide_ui_footer = true %}
-{% set custom_product = shellbar_product or false %}
 {% block ui_header %}
-{%- if custom_product %}
-  {{ shellbar(product=custom_product) }}
-{%- else %}
   {{ shellbar() }}
-{%- endif %}
 {% endblock %}
 
 {% block page_header %}

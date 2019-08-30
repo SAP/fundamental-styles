@@ -76,12 +76,8 @@ $block: #{$fd-namespace}-shellbar;
 
     &__button {
         @include fd-button-reset();
-        @include fd-var-size("height", $fd-forms-height, --fd-forms-height);
-        @include fd-var-size("min-width", $fd-forms-height, --fd-forms-height);
-        @include fd-type("0");
         @include fd-icon-size("m", "before");
         @include fd-icon-size("m", "after");
-        @include fd-var-size("line-height", $fd-button-line-height, --fd-button-line-height);
         @include fd-var-color("color", fd-color("shell", 2), --fd-color-shell-2);
         border-color: transparent;
         @include fd-active-pressed-selected() {
@@ -178,18 +174,6 @@ $block: #{$fd-namespace}-shellbar;
           }
           @include fd-screen(m) {
               display: none;
-          }
-          @include fd-screen(l) {
-              display: inline-block;
-          }
-      }
-
-      &--show-always {
-          @include fd-screen(s) {
-              display: inline-block;
-          }
-          @include fd-screen(m) {
-              display: inline-block;
           }
           @include fd-screen(l) {
               display: inline-block;

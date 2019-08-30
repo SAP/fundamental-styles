@@ -39,12 +39,20 @@
         }
     }
     //implementation libraries will handle this differently as popper/popover will live separately in the dom
-    .fd-multi-input, .fd-button-split, .documentation-site-popover-container {
+    .fd-multi-input, .fd-button-split, .fd-search-input, .documentation-site-popover-container {
         .fd-popover {
             display: block;
 
             &__body {
                 width: 100%;
+            }
+        }
+    }
+
+    .fd-search-input {
+        .fd-popover {
+            &__body {
+                width: 83%;
             }
         }
     }
