@@ -34,7 +34,7 @@
     {%- if properties.type == "textarea" %}
         <textarea class="fd-textarea" placeholder="{{input.properties.placeholder}}" value="{{input.properties.value}}"></textarea> 
     {%- else %}
-        <input class="fd-input{{ size | modifier('input') }}" placeholder="{{input.properties.placeholder}}" value="{{input.properties.value}}"/> 
+        <input class="input-playground{{ size | modifier('input') }}" placeholder="{{input.properties.placeholder}}" value="{{input.properties.value}}"/> 
     {%- endif %}
     {%- if properties.after %}
         <span class="fd-input-group__addon{{ modifier.after | modifier('input-group__addon') }} {{ 'fd-input-group__addon--readonly' if properties.input.state.readonly}}">
