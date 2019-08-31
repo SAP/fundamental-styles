@@ -84,7 +84,7 @@ For an integer value input, a spinner can be added allowing the user to increase
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Quantity Spinner</label>
     <div class="fd-input-group">
-        <input class="fd-input" id="spinner-1" name="" value="100" />
+        <input class="fd-input" id="spinner-1" type="number" value="100" />
         <span class="fd-input-group__addon fd-input-group__addon--button">
             <button class="fd-button--light fd-button--half sap-icon--slim-arrow-up" aria-label="Step up" onclick="document.getElementById('spinner-1').stepUp();"></button>
             <button class="fd-button--light fd-button--half sap-icon--slim-arrow-down" aria-label="Step down" onclick="document.getElementById('spinner-1').stepDown();"></button>
