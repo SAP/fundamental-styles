@@ -1,6 +1,5 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format, code %}
-{% from "../button/component.njk" import button %}
 {% from "./component.njk" import container, col %}
 
 {% block content %}
@@ -28,14 +27,6 @@
 {% call code() -%}
 {%- call container() -%}{%- endcall %}
 {%- endcall %}
-{#
-{% call container(modifier="bleed") -%}
-<code>.fd-container--bleed</code><br>
-<small>No left and right padding</small>
-{%- endcall %}
-{% call code() -%}
-{%- call container(modifier="bleed") -%}{%- endcall %}
-{%- endcall %} #}
 
 {% call container(modifier="fluid") -%}
 <code>.fd-container--fluid</code><br>

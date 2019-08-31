@@ -78,9 +78,6 @@
     - title: Tile
       meta: tile
 
-    - title: Tile Grid
-      meta: tile-grid
-
     - title: Toggle
       meta: toggle
 

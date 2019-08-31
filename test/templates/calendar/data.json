@@ -1,9 +1,6 @@
 {
   "id": "calendar",
   "name": "Calendar",
-  "css_vars": true,
-  "rtl": true,
-  "version": "1.0.0",
   "properties": {
     "month": 1,
     "year": 2018,

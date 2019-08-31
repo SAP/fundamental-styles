@@ -12,7 +12,7 @@ summary:
 
 A tile component can be used to display information in a simple container format.
 {: .docs-intro}
-The component is ideal for displaying collection data when a grid or list layout is preferred. See [`tile-grid`](tile-grid.html).
+The component is ideal for displaying collection data when a grid or list layout is preferred. See [`layout-grid`](layouts/layout-grid.html).
 
 > {{ site.data.strings.headerDisclaimer }}
 

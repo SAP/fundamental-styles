@@ -13,8 +13,17 @@ Layouts in Fundamental Styles are for structuring the main parts of your applica
 
 <br>
 
-<div class="fd-tile-grid fd-tile-grid--2col docs-tiles">
-
+<div class="fd-layout-grid fd-layout-grid--col-2 docs-tiles">
+    <a class="fd-tile" role="button" href="layout-grid.html">
+        <div class="fd-tile__content">
+             <h2 class="fd-tile__header">
+                 Layout Grid
+             </h2>
+             <p class="fd-tile__description">
+                CSS Grid based layout component.
+             </p>
+        </div>
+    </a>
     <a class="fd-tile" role="button" href="shell-layout.html">
         <div class="fd-tile__content">
              <h2 class="fd-tile__header">
@@ -42,16 +51,6 @@ Layouts in Fundamental Styles are for structuring the main parts of your applica
              </h2>
              <p class="fd-tile__description">
                  Wrapper element for dividing a page into different sections
-             </p>
-        </div>
-    </a>
-    <a class="fd-tile" role="button" href="grid.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Grid
-             </h2>
-             <p class="fd-tile__description">
-                 Elements to construct complex layouts.
              </p>
         </div>
     </a>

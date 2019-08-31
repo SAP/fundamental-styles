@@ -4,7 +4,7 @@ asset-upload:
     properties={},
     modifier={ block: [] }
 -->
-{% macro asset_upload(properties={}, modifier={}, state={}, aria={}, classes=[]) -%}
+{% macro asset_upload(properties={}, modifier={}, classes=[]) -%}
 <div class="fd-asset-upload{{ modifier.block | modifier('asset-upload') }}{{classes|classes}}">
     <input type="file" id="asset-upload" class="fd-asset-upload__input"/>
     <label for="asset-upload" class="fd-asset-upload__label">
