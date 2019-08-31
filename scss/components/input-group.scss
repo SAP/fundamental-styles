@@ -5,7 +5,6 @@
 /*!
 .fd-input-group+(--inline)
     .fd-input-group__addon+()
-        .fd-input-group__button
 */
 
 $block: #{$fd-namespace}-input-group;
@@ -14,108 +13,74 @@ $block: #{$fd-namespace}-input-group;
     display: flex;
 
     > * {
-        &:not(:first-child), &.#{$fd-namespace}-input:read-only {
-            border-right: none;
-        }
-        &:not(.fd-input-group__addon):not(.fd-textarea):first-child {
-            border-top-left-radius: $fd-border-radius;
-            border-bottom-left-radius: $fd-border-radius;
+        @include fd-reset-child-spacing();
+        flex: 1 0 auto;
+        z-index: map-get($fd-z-index-levels, "first");
+
+        &:first-child {
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
-            border-left-style: solid;
-            border-left-width: 1px;
-            @include fd-var-color("border-left-color", $fd-forms-border-color, --fd-forms-border-color);
         }
+
         &:last-child {
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
-            border-top-right-radius: $fd-border-radius;
-            border-bottom-right-radius: $fd-border-radius;
-            border-right-style: solid;
-            border-right-width: 1px;
-            @include fd-var-color("border-right-color", $fd-forms-border-color, --fd-forms-border-color);
         }
-        &:not(.fd-input-group__addon) {
-            width: 100%;
+
+        &:not(:first-child):not(:last-child) {
+            border-radius: 0;
         }
     }
 
-    @include fd-rtl() {
-        > * {
-            &:not(:first-child), &.#{$fd-namespace}-input:read-only {
-                border-right: none;
-            }
-            &:last-child {
-                border-top-left-radius: $fd-border-radius;
-                border-bottom-left-radius: $fd-border-radius;
-                border-top-right-radius: 0;
-                border-bottom-right-radius: 0;
-                border-left-style: solid;
-                border-left-width: 1px;
-                @include fd-var-color("border-left-color", $fd-forms-border-color, --fd-forms-border-color);
-            }
-            &:first-child {
-                border-top-left-radius: 0;
-                border-bottom-left-radius: 0;
-                border-top-right-radius: $fd-border-radius;
-                border-bottom-right-radius: $fd-border-radius;
-                border-right-style: solid;
-                border-right-width: 1px;
-                @include fd-var-color("border-right-color", $fd-forms-border-color, --fd-forms-border-color);
-            }
-        }
-    }
+    // @include fd-rtl() {
+    // }
 
-    .#{$block}--compact .fd-input {
-        @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);
-    }
+    // & [type="number"] {
+    //     &::-webkit-outer-spin-button,
+    //     &::-webkit-inner-spin-button {
+    //         -webkit-appearance: none;
+    //         margin: 0;
+    //     }
+    //     -moz-appearance: textfield;
+    // }
+    // & [type="search"] {
+    //     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjNEQ1QTZDIiBkPSJNOS43NTQgMTkuNDk2YTkuNjg0IDkuNjg0IDAgMCAwIDYuMDk3LTIuMTU4bDguMjg5IDguMzRhMS4wODQgMS4wODQgMCAwIDAgMS41MzUtMS41MjlsLTguMy04LjM1YTkuNjg5IDkuNjg5IDAgMCAwIDIuMTItNi4wNTRjMC01LjM3Ny00LjM2OS05Ljc1MS05Ljc0MS05Ljc1MVMuMDEzIDQuMzY4LjAxMyA5Ljc0NXM0LjM2OSA5Ljc1MSA5Ljc0MSA5Ljc1MXptMC0xNy4zMzVjNC4xNzcgMCA3LjU3NyAzLjQwMiA3LjU3NyA3LjU4NCAwIDQuMTgyLTMuNCA3LjU4NC03LjU3NyA3LjU4NC00LjE3OCAwLTcuNTc3LTMuNDAyLTcuNTc3LTcuNTg0IDAtNC4xODIgMy4zOTktNy41ODQgNy41NzctNy41ODR6Ii8+PC9zdmc+');
+    //     background-repeat: no-repeat;
+    //     background-position: fd-space(4) center;
+    //     background-size: fd-space(4);
+    //     padding-left: fd-space(12);
+    //     padding-right: fd-space(15);
+    //     &::-webkit-search-decoration {
+    //         -webkit-appearance: none;
+    //         margin: 0;
+    //     }
+    //     &::-webkit-search-cancel-button {
+    //         -webkit-appearance: none;
+    //         margin: 0;
+    //     }
+    //     -moz-appearance: textfield;
 
-    & [type="number"] {
-        &::-webkit-outer-spin-button,
-        &::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-        -moz-appearance: textfield;
-    }
-    & [type="search"] {
-        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjNEQ1QTZDIiBkPSJNOS43NTQgMTkuNDk2YTkuNjg0IDkuNjg0IDAgMCAwIDYuMDk3LTIuMTU4bDguMjg5IDguMzRhMS4wODQgMS4wODQgMCAwIDAgMS41MzUtMS41MjlsLTguMy04LjM1YTkuNjg5IDkuNjg5IDAgMCAwIDIuMTItNi4wNTRjMC01LjM3Ny00LjM2OS05Ljc1MS05Ljc0MS05Ljc1MVMuMDEzIDQuMzY4LjAxMyA5Ljc0NXM0LjM2OSA5Ljc1MSA5Ljc0MSA5Ljc1MXptMC0xNy4zMzVjNC4xNzcgMCA3LjU3NyAzLjQwMiA3LjU3NyA3LjU4NCAwIDQuMTgyLTMuNCA3LjU4NC03LjU3NyA3LjU4NC00LjE3OCAwLTcuNTc3LTMuNDAyLTcuNTc3LTcuNTg0IDAtNC4xODIgMy4zOTktNy41ODQgNy41NzctNy41ODR6Ii8+PC9zdmc+');
-        background-repeat: no-repeat;
-        background-position: fd-space(4) center;
-        background-size: fd-space(4);
-        padding-left: fd-space(12);
-        padding-right: fd-space(15);
-        &::-webkit-search-decoration {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-        &::-webkit-search-cancel-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-        -moz-appearance: textfield;
+    //     @include fd-rtl() {
+    //         padding-right: fd-space(12);
+    //         padding-left: fd-space(15);
+    //         background-position: right fd-space(4) center;
+    //         border-bottom-left-radius: $fd-border-radius;
+    //         border-top-left-radius: $fd-border-radius;
 
-        @include fd-rtl() {
-            padding-right: fd-space(12);
-            padding-left: fd-space(15);
-            background-position: right fd-space(4) center;
-            border-bottom-left-radius: $fd-border-radius;
-            border-top-left-radius: $fd-border-radius;
-
-            + .fd-input-group__addon {
-                border-left: none;
-            }
-        }
-    }
+    //         + .fd-input-group__addon {
+    //             border-left: none;
+    //         }
+    //     }
+    // }
     &--inline {
         display: inline-flex;
+        vertical-align: bottom;
     }
-    &--no-border {
-        input {
-            border-color: transparent;
-        }
-    }
+
     &__addon {
+        @include fd-reset();
+        flex: 0 0 auto;
+        z-index: unset;
         @include fd-var-color("color", fd-color("text", 3), --fd-color-text-3);
         padding: 0 fd-space(3);
         border-style: solid;
@@ -126,119 +91,61 @@ $block: #{$fd-namespace}-input-group;
         display: flex;
         flex-direction: column;
         border-radius: $fd-border-radius;
-        @include fd-var-size("height", $fd-forms-height, --fd-forms-height);
+
         &--readonly {
-            border: none;
-            border-top-color: transparent;
-            border-right-color: transparent;
-            border-radius: 0 !important;
-        }
-        @at-root {
-          .#{$block}--compact & {
-          @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);
-            .#{$block}__button {
-                &--step-up::before,
-                &--step-down::before {
-                    top: -4px;
-                }
-            }
-          }
-        }
-        .fd-button--light:hover {
-            border-top-color: transparent;
-            border-bottom-color: transparent;
-            box-shadow: none;
-        }
-        .fd-button--light:focus {
-            box-shadow: 0 0 0 1px var(--fd-color-action-focus);
+            opacity: .4;
         }
 
-        //ELEMENT MODIFIERS ************
         &:first-child {
             border-right-width: 0;
         }
+
         &:last-child {
             border-left-width: 0;
         }
-        &--button {
-          padding: 0;
-        //   border-radius: 0;
-          [class*="fd-button"] {
-            border-radius: 0;
-          }
-        }
-        &--before {
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-        }
-        &--after {
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-        }
 
-        &--textarea {
-            height: auto;
-        }
-        @at-root {
-            [readonly] + & {
-                border-top-color: transparent;
-                border-right-color: transparent;
-                border-radius: 0;
+        &--button {
+            border: none;
+            padding: 0;
+
+            > * {
+                @include fd-reset-child-spacing();
+                height: 100%;
             }
-        }
-        @at-root {
-            [type="search"] + & {
-                border: 0;
-                width: 0;
-            }
-        }
-    }
-    &--before {
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-    }
-    &--after {
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-    }
-    &__button {
-        @include fd-button-reset();
-        flex: 1;
-        width: 100%;
-        display: block;
-        min-width: fd-space(12);
-        @include fd-var-color("background-color", fd-color(neutral, 1), --fd-color-neutral-1);
-        &--step-up,
-        &--step-down {
-            @include fd-type("0");
-            @include fd-var-color("color", $fd-color--action, --fd-color-action);
-            position: relative;
-            &::before {
-                position: absolute;
-                transform: translateX(-50%);
-                top: -2px;
-            }
-            @include fd-rtl() {
-                &::before {
-                    transform: translateX(50%);
+
+            &:first-child {
+                > * {
+                    border-right-width: 0;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+
+                    &:first-child:not(:last-child) {
+                        border-bottom-left-radius: 0;
+                    }
+
+                    &:last-child:not(:first-child) {
+                        border-top-left-radius: 0;
+                        border-top-width: 0;
+                    }
                 }
             }
-        }
-        &--step-up {
-            border-bottom-style: solid;
-            border-bottom-width: 1px;
-            @include fd-var-color("border-bottom-color", $fd-forms-border-color, --fd-forms-border-color);
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
-        }
-        &--clear {
-            background-color: transparent;
-            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjMDA5Q0RGIiBkPSJNMTMgMEM1LjgyIDAgMCA1LjgyIDAgMTNzNS44MiAxMyAxMyAxMyAxMy01LjgyIDEzLTEzUzIwLjE4IDAgMTMgMHptNS4xOTUgMTcuMzk2YS41NjQuNTY0IDAgMSAxLS43OTkuNzk5TDEzIDEzLjc5OWwtNC4zOTYgNC4zOTZhLjU2NC41NjQgMCAxIDEtLjc5OS0uNzk5TDEyLjIwMSAxMyA3LjgwNSA4LjYwNGEuNTY0LjU2NCAwIDEgMSAuNzk5LS43OTlMMTMgMTIuMjAxbDQuMzk2LTQuMzk2YS41NjQuNTY0IDAgMSAxIC43OTkuNzk5TDEzLjc5OSAxM2w0LjM5NiA0LjM5NnoiLz48L3N2Zz4=');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: fd-space(5);
-            position: relative;
-            z-index: map-get($fd-z-index-levels, "second");
+
+            &:last-child {
+                > * {
+                    border-left-width: 0;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+
+                    &:first-child:not(:last-child) {
+                        border-bottom-right-radius: 0;
+                    }
+
+                    &:last-child:not(:first-child) {
+                        border-top-right-radius: 0;
+                        border-top-width: 0;
+                    }
+                }
+            }
         }
     }
 }

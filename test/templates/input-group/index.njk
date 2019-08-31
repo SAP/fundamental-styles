@@ -5,266 +5,125 @@
 {% from "./../format.njk" import format %}
 
 {% block content %}
-<style media="screen">
-    .fd-input-group {
-        margin-bottom: 20px;
-    }
-</style>
 
-<h1>w/ text addon</h1>
-{% set example %}
+{% set types = ["text", "textarea"] %}
+{% set addons = [["", "km/h"], ["$", ""], ["$", ".00"]] %}
+{% set readonly = [false, true] %}
 
-    {{ input_group(
-        properties={
-            after: "km/h",
-            input: {
-                properties: {
-                    placeholder: "Field placeholder text"
-                }
-            }
-        },
-        modifier={
-            block: ["after"],
-            after: "after"
-        })
-    }}
-    {{ input_group(
-        properties={
-            after: "km/h",
-            input: {
-                properties: {
-                    value: "19387309"
-                }
-            }
-        },
-        modifier={
-            block: "after",
-            after: "after"
-        })
-    }}
-    {{ input_group(
-        properties={
-            after: "€",
-            input: {
-                properties: {
-                    value: "19387309"
-                }
-            }
-        },
-        modifier={
-            block: "after",
-            after: "after"
-        })
-    }}
-    {{ input_group(
-        properties={
-            after: "$",
-            input: {
-                properties: {
-                    value: "19387309"
-                }
-            }
-        },
-        modifier={
-            block: "after",
-            after: "after"
-        })
-    }}
-    {{ input_group(
-        properties={
-            before: "km/h",
-            input: {
-                properties: {
-                    value: "19387309"
-                }
-            }
-        },
-        modifier={
-            block: "before",
-            before: "before"
-        })
-    }}
-    {{ input_group(
-        properties={
-            before: "€",
-            input: {
-                properties: {
-                    value: "19387309"
-                }
-            }
-        },
-        modifier={
-            block: "before",
-            before: "before"
-        })
-    }}
-    {{ input_group(
-        properties={
-            before: "$",
-            input: {
-                properties: {
-                    value: "19387309"
-                }
-            }
-        },
-        modifier={
-            block: "before",
-            before: "before"
-        })
-    }}
-    {{ input_group(
-        properties={
-            after: "50",
-            input: {
-                properties: {
-                    value: "19387309"
-                }
-            }
-        },
-        modifier={
-            block: "after",
-            after: "after"
-        })
-    }}
+<h2>Input Groups w/ addon text</h2>
 
-{% endset %}
+{%- set example %}
+    {%- for ro in readonly %}
+        <h3>{{ 'Disabled' if ro }}</h3>
+        {%- for type in types %}
+            {%- for before, after in addons %}
+                {{ input_group(
+                    properties={
+                        type: type,
+                        before: before,
+                        after: after,
+                        input: {
+                            state: {
+                                readonly: ro
+                            },
+                            properties: {
+                                value: "19387309"
+                            }
+                        }
+                    })
+                }}
+                <br />
+            {%- endfor %}
+        {%- endfor %}
+    {%- endfor %}
+{%- endset %}
 {{ format(example) }}
 
-<h3>compact</h3>
-{% set example %}
+<br /><br />
+<h2>Input Groups w/ addon buttons</h2>
 
-    {{ input_group(
-        properties={
-            after: "km/h",
-            input: {
-                properties: {
-                    placeholder: "Field placeholder text"
-                }
-            }
-        },
-        modifier={
-            block: ["after"],
-            after: "after"
-        },
-        size="compact")
-    }}
-    {{ input_group(
-        properties={
-            after: "km/h",
-            input: {
-                properties: {
-                    value: "19387309"
-                }
-            }
-        },
-        modifier={
-            block: "after",
-            after: "after"
-        },
-        size="compact")
-    }}
-    {{ input_group(
-        properties={
-            after: "€",
-            input: {
-                properties: {
-                    value: "19387309"
-                }
-            }
-        },
-        modifier={
-            block: "after",
-            after: "after"
-        },
-        size="compact")
-    }}
-    {{ input_group(
-        properties={
-            after: "$",
-            input: {
-                properties: {
-                    value: "19387309"
-                }
-            }
-        },
-        modifier={
-            block: "after",
-            after: "after"
-        },
-        size="compact")
-    }}
-    {{ input_group(
-        properties={
-            before: "km/h",
-            input: {
-                properties: {
-                    value: "19387309"
-                }
-            }
-        },
-        modifier={
-            block: "before",
-            before: "before"
-        },
-        size="compact")
-    }}
-    {{ input_group(
-        properties={
-            before: "€",
-            input: {
-                properties: {
-                    value: "19387309"
-                }
-            }
-        },
-        modifier={
-            block: "before",
-            before: "before"
-        },
-        size="compact")
-    }}
-    {{ input_group(
-        properties={
-            before: "$",
-            input: {
-                properties: {
-                    value: "19387309"
-                }
-            }
-        },
-        modifier={
-            block: "before",
-            before: "before"
-        },
-        size="compact")
-    }}
-    {{ input_group(
-        properties={
-            after: "50",
-            input: {
-                properties: {
-                    value: "19387309"
-                }
-            }
-        },
-        modifier={
-            block: "after",
-            after: "after"
-        },
-        size="compact")
-    }}
-
+{% set btn %}
+    <button class="btn-playground">Click Me</button>
 {% endset %}
+{% set addons = [["", btn], [btn, ""], [btn, btn]] %}
+
+{%- set example %}
+    {%- for ro in readonly %}
+        <h3>{{ 'Disabled' if ro }}</h3>
+        {%- for type in types %}
+            {%- for before, after in addons %}
+                {{ input_group(
+                    properties={
+                        type: type,
+                        before: before,
+                        after: after,
+                        input: {
+                            state: {
+                                readonly: ro
+                            },
+                            properties: {
+                                value: "19387309"
+                            }
+                        }
+                    },
+                    modifier={
+                        before: ["button"],
+                        after: ["button"]
+                    })
+                }}
+                <br />
+            {%- endfor %}
+        {%- endfor %}
+    {%- endfor %}
+{%- endset %}
+{{ format(example) }}
+
+<br /><br />
+
+<h2>Input Groups w/ addon multiple buttons</h2>
+
+{% set btnUpDown %}
+    <button class="btn-playground">Up</button>
+    <button class="btn-playground">Down</button>
+{% endset %}
+{% set addons = [["", btnUpDown], [btnUpDown, ""], [btnUpDown, btnUpDown]] %}
+
+{%- set example %}
+    {%- for ro in readonly %}
+        <h3>{{ 'Disabled' if ro }}</h3>
+        {%- for before, after in addons %}
+            {{ input_group(
+                properties={
+                    before: before,
+                    after: after,
+                    input: {
+                        state: {
+                            readonly: ro
+                        },
+                        properties: {
+                            value: "19387309"
+                        }
+                    }
+                },
+                modifier={
+                    before: ["button"],
+                    after: ["button"]
+                })
+            }}
+            <br />
+        {%- endfor %}
+    {%- endfor %}
+{%- endset %}
 {{ format(example) }}
 
 
-
-<br><br>
+<br /><br />
 <h2>Input Group — Inline</h2>
+
 {% set example %}
 {{ input_group(
     properties={
-        after: "phone",
+        before: "phone",
         input: {
             properties: {
                 placeholder: "Field placeholder text"
@@ -272,8 +131,7 @@
         }
     },
     modifier={
-        block: ["inline", "after"],
-        after: "after"
+        block: ["inline"]
     })
 }}
 {{ input_group(
@@ -286,300 +144,11 @@
         }
     },
     modifier={
-        block: ["inline", "after"],
-        after: "after"
+        block: ["inline"]
     })
 }}
 {% endset %}
 {{ format(example) }}
-
-
-<h1>Input Group — Special addon</h1>
-
-{% set example %}
-
-{{ input_group(
-    type="number",
-    properties={
-        after: "",
-        input: {
-            properties: {
-                value: "1000000", id: "spinner-1"
-            }
-        }
-    },
-    modifier={
-        block: "after",
-        after: "after"
-    })
-}}
-
-{{ input_group(
-    type="number",
-    properties={
-        after: "",
-        input: {
-            properties: {
-                value: "1000000", id: "spinner-1"
-            }
-        }
-    },
-    modifier={
-        block: "after",
-        after: "after"
-    }, size="compact")
-}}
-
-{{ input_group(
-    type="search",
-    properties={
-        input: {
-            properties: {
-                value: "1000008980283748972894732979327592739572394752397594657843657868436029840932840927349236572635876347239875283472893742980", id: "search-1"
-            }
-        }
-    })
-}}
-
-{% endset %}
-
-{{ format(example) }}
-
-<br><br>
-
-<h1>Input Group — Icon addon</h1>
-
-{% set example %}
-{{ input_group(
-    properties={
-        input: {
-            properties: {
-                value: "1000000"
-            }
-        },
-        before: icon("globe")
-    },
-    modifier={
-        block: "before",
-        before: "before"
-    })
-}}
-{{ input_group(
-    properties={
-        input: {
-            properties: {
-                value: "1000000"
-            }
-        },
-        after: icon("hide")
-    },
-    modifier={
-        block: "after",
-        after: "after"
-    })
-}}
-{% endset %}
-{{ format(example) }}
-
-
-<br><br>
-
-<h1>Input Group — Button addon</h1>
-
-{%- set iconbtn %}{{  button(
-        {
-            label: '',
-            icon: 'navigation-down-arrow'
-        },
-        modifier={
-            block: ['light']
-        })
-}}{%- endset %}
-{%- set btn %}{{  button(
-        {
-            label: 'Button'
-        },
-        modifier={
-            block: ['light']
-        })
-}}{%- endset %}
-
-{% set example %}
-
-{{ input_group(
-    modifier={
-        block: "after",
-        after: ['after', 'button']
-    },
-    properties={
-        input: {
-            properties: {
-                value: "1000000"
-            }
-        },
-        after: iconbtn
-    })
-}}
-{{ input_group(
-    modifier={
-        block: "after",
-        after: "button"
-    },
-    properties={
-        input: {
-            state: {
-                readonly: true
-            },
-            properties: {
-                value: "2000000"
-            }
-        },
-        after: iconbtn
-    })
-}}
-{{ input_group(
-    modifier={
-        after: ['after', 'button'],
-        block: "after"
-    },
-    properties={
-        input: {
-            properties: {
-                value: "3000000"
-            }
-        },
-        after: btn
-    })
-}}
-{{ input_group(
-    modifier={
-        after: ['after', 'button'],
-        block: "after"
-    },
-    properties={
-        input: {
-            properties: {
-                value: "4000000"
-            }
-        },
-        after: button({ icon: 'navigation-down-arrow' }, modifier={ block: ['light'] })
-    })
-}}
-{% endset %}
-{{ format(example) }}
-
-
-<h3>compact</h3>
-
-
-{% set example %}
-
-{{ input_group(
-    modifier={
-        block: "after",
-        after: ['after', 'button']
-    },
-    properties={
-        input: {
-            properties: {
-                value: "1000000"
-            }
-        },
-        after: button(
-                {
-                    label: '',
-                    icon: 'navigation-down-arrow'
-                },
-                modifier={
-                    block: ['light']
-                },size="compact")
-    },
-    size="compact")
-}}
-{{ input_group(
-    modifier={
-        block: "after",
-        after: "button"
-    },
-    properties={
-        input: {
-            state: {
-                readonly: true
-            },
-            properties: {
-                value: "2000000"
-            }
-        },
-        after: button(
-                {
-                    label: '',
-                    icon: 'navigation-down-arrow'
-                },
-                modifier={
-                    block: ['light']
-                },size="compact")
-    },
-    size="compact")
-}}
-{{ input_group(
-    modifier={
-        after: ['after', 'button'],
-        block: "after"
-    },
-    properties={
-        input: {
-            properties: {
-                value: "3000000"
-            }
-        },
-        after: btn
-    },
-    size="compact")
-}}
-{{ input_group(
-    modifier={
-        after: ['after', 'button'],
-        block: "after"
-    },
-    properties={
-        input: {
-            properties: {
-                value: "4000000"
-            }
-        },
-        after: button({ icon: 'navigation-down-arrow' }, modifier={ block: ['light'] },size="compact")
-    },
-    size="compact")
-}}
-{% endset %}
-{{ format(example) }}
-
-<br><br>
-
-<h1>Input Group — Textarea</h1>
-
-{% set example %}
-
-{{ input_group(
-    properties={
-        type: "textarea",
-        after: "km/h",
-        input: {
-            properties: {
-                placeholder: "Field placeholder text"
-            }
-        }
-    },
-    modifier={
-        block: ["after"],
-        after: "textarea"
-    })
-}}
-
-{% endset %}
-{{ format(example) }}
-
-
 
 
 {% endblock %}
