@@ -30,48 +30,24 @@ $block: #{$fd-namespace}-input-group;
         &:not(:first-child):not(:last-child) {
             border-radius: 0;
         }
+
+        @include fd-rtl() {
+            &:first-child {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: $fd-border-radius;
+                border-bottom-right-radius: $fd-border-radius;
+            }
+
+            &:last-child {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                border-top-left-radius: $fd-border-radius;
+                border-bottom-left-radius: $fd-border-radius;
+            }
+        }
     }
 
-    // @include fd-rtl() {
-    // }
-
-    // & [type="number"] {
-    //     &::-webkit-outer-spin-button,
-    //     &::-webkit-inner-spin-button {
-    //         -webkit-appearance: none;
-    //         margin: 0;
-    //     }
-    //     -moz-appearance: textfield;
-    // }
-    // & [type="search"] {
-    //     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjNEQ1QTZDIiBkPSJNOS43NTQgMTkuNDk2YTkuNjg0IDkuNjg0IDAgMCAwIDYuMDk3LTIuMTU4bDguMjg5IDguMzRhMS4wODQgMS4wODQgMCAwIDAgMS41MzUtMS41MjlsLTguMy04LjM1YTkuNjg5IDkuNjg5IDAgMCAwIDIuMTItNi4wNTRjMC01LjM3Ny00LjM2OS05Ljc1MS05Ljc0MS05Ljc1MVMuMDEzIDQuMzY4LjAxMyA5Ljc0NXM0LjM2OSA5Ljc1MSA5Ljc0MSA5Ljc1MXptMC0xNy4zMzVjNC4xNzcgMCA3LjU3NyAzLjQwMiA3LjU3NyA3LjU4NCAwIDQuMTgyLTMuNCA3LjU4NC03LjU3NyA3LjU4NC00LjE3OCAwLTcuNTc3LTMuNDAyLTcuNTc3LTcuNTg0IDAtNC4xODIgMy4zOTktNy41ODQgNy41NzctNy41ODR6Ii8+PC9zdmc+');
-    //     background-repeat: no-repeat;
-    //     background-position: fd-space(4) center;
-    //     background-size: fd-space(4);
-    //     padding-left: fd-space(12);
-    //     padding-right: fd-space(15);
-    //     &::-webkit-search-decoration {
-    //         -webkit-appearance: none;
-    //         margin: 0;
-    //     }
-    //     &::-webkit-search-cancel-button {
-    //         -webkit-appearance: none;
-    //         margin: 0;
-    //     }
-    //     -moz-appearance: textfield;
-
-    //     @include fd-rtl() {
-    //         padding-right: fd-space(12);
-    //         padding-left: fd-space(15);
-    //         background-position: right fd-space(4) center;
-    //         border-bottom-left-radius: $fd-border-radius;
-    //         border-top-left-radius: $fd-border-radius;
-
-    //         + .fd-input-group__addon {
-    //             border-left: none;
-    //         }
-    //     }
-    // }
     &--inline {
         display: inline-flex;
         vertical-align: bottom;
@@ -102,6 +78,18 @@ $block: #{$fd-namespace}-input-group;
 
         &:last-child {
             border-left-width: 0;
+        }
+
+        @include fd-rtl() {
+            &:first-child {
+                border-left-width: 0;
+                border-right-width: 1px;
+            }
+
+            &:last-child {
+                border-right-width: 0;
+                border-left-width: 1px;
+            }
         }
 
         &--button {
@@ -143,6 +131,48 @@ $block: #{$fd-namespace}-input-group;
                     &:last-child:not(:first-child) {
                         border-top-right-radius: 0;
                         border-top-width: 0;
+                    }
+                }
+            }
+
+            @include fd-rtl() {
+                &:first-child {
+                    > * {
+                        border-left-width: 0;
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                        border-right-width: 1px;
+                        border-top-right-radius: $fd-border-radius;
+                        border-bottom-right-radius: $fd-border-radius;
+
+                        &:first-child:not(:last-child) {
+                            border-bottom-right-radius: 0;
+                        }
+
+                        &:last-child:not(:first-child) {
+                            border-top-right-radius: 0;
+                            border-top-width: 0;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    > * {
+                        border-right-width: 0;
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                        border-left-width: 1px;
+                        border-top-left-radius: $fd-border-radius;
+                        border-bottom-left-radius: $fd-border-radius;
+
+                        &:first-child:not(:last-child) {
+                            border-bottom-left-radius: 0;
+                        }
+
+                        &:last-child:not(:first-child) {
+                            border-top-left-radius: 0;
+                            border-top-width: 0;
+                        }
                     }
                 }
             }
