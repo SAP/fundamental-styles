@@ -28,6 +28,7 @@
       box-shadow: 0 0 0 1px $shadow-value;
     }
     box-shadow: 0 0 0 1px var(#{$shadow-var}, #{$shadow-value});
+    z-index: map-get($fd-z-index-levels, "focus");
     @content;
   }
 }
