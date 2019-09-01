@@ -123,7 +123,6 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
     @extend %fd-calendar-content-hidden;
   }
   &__months {
-
     display: grid;
     @extend %fd-calendar-content-hidden;
   }
@@ -167,10 +166,6 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
     align-items: center;
   }
 
-  &__text {
-    @include fd-reset();
-  }
-
   //TABLE styles
   &__table {
     display: table;
@@ -188,7 +183,6 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
     display: table-row;
   }
   &__column-header {
-    @include fd-reset();
     @extend %fd-calendar-item;
     display: table-cell;
     vertical-align: middle;
