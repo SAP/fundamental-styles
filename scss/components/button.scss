@@ -116,6 +116,19 @@ a.#{$block} {
       }
     }
   }
+  &--half {
+    --fd-forms-height-half: #{$fd-forms-height/2};
+    @include fd-var-size("height", $fd-forms-height/2, --fd-forms-height-half);
+    @include fd-var-size("max-height", $fd-forms-height/2, --fd-forms-height-half);
+    line-height: 1;
+
+    &.#{$block}--compact {
+      --fd-forms-height-half: #{$fd-forms-height--compact/2};
+      @include fd-var-size("height", $fd-forms-height--compact/2, --fd-forms-height-half);
+      @include fd-var-size("max-height", $fd-forms-height--compact/2, --fd-forms-height-half);
+      line-height: 1;
+    }
+  }
   //compact sizes (see `core/root` for css vars rules)
   &--compact {
     //set metrics
@@ -235,6 +248,7 @@ a.#{$block} {
     @include fd-hover() {
       --fd-button-background-color: var(--fd-color-neutral-1);
       --fd-button-color: var(--fd-color-action-1);
+      --fd-button-border-color: var(--fd-color-action-1);
       @include fd-var-color("color", fd-color("action", 1), --fd-button-color);
       @include fd-var-color("background-color", fd-color("neutral", 1), --fd-button-background-color);
       @include fd-disabled() {
@@ -242,9 +256,8 @@ a.#{$block} {
         --fd-button-color: var(--fd-color-action-1);
         @include fd-var-color("color", fd-color("action", 1), --fd-button-color);
         @include fd-var-color("background-color", transparent, --fd-button-background-color);
-        box-shadow: none;
       }
-      box-shadow: 0 0 0 1px var(--fd-color-action-hover, map-get($fd-colors-action-states, "hover"));
+      @include fd-var-color("border-color", fd-color("action", 1), --fd-button-border-color);
     }
     @include fd-active-pressed-selected() {
       --fd-button-background-color: var(--fd-color-action-selected);
