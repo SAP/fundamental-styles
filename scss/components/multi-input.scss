@@ -8,7 +8,9 @@
 $block: #{$fd-namespace}-multi-input;
 
 .#{$block} {
+  @include fd-reset();
   &-field {
+    @include fd-reset();
     margin: 0 0 10px 0;
   }
 }

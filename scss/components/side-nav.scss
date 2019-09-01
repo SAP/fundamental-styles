@@ -40,6 +40,7 @@ $block: #{$fd-namespace}-side-nav;
 
     //ELEMENTS *******************************************
     &__group {
+        @include fd-reset();
         list-style: none;
         margin-bottom: 0;
     }

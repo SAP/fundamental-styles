@@ -48,6 +48,7 @@ $block: #{$fd-namespace}-panel;
     }
     box-shadow: 0 5px 20px 0 var(--fd-panel-box-shadow-color);
     &__header {
+        @include fd-reset();
         min-height: fd-space(10);
         display: flex;
         align-items: center;

@@ -17,6 +17,7 @@ Place patterns and interactions within panels on your pages to achieve focus and
 
 ## Elements
 
+- `.fd-panel__header`: Panel header container.
 - `.fd-panel__title`: Title of the panel.
 - `.fd-panel__description`: Title of the description.
 - `.fd-panel__actions`: Panel level actions such as add, remove, delete, sort, etc.
@@ -27,14 +28,12 @@ Place patterns and interactions within panels on your pages to achieve focus and
 {% capture default %}
 <div class="fd-panel">
     <div class="fd-panel__header">
-        <div class="fd-panel__head">
-            <h3 class="fd-panel__title">
-                .fd-panel__title
-            </h3>
-            <p class="fd-panel__description">
-                .fd-panel__description
-            </p>
-        </div>
+        <h3 class="fd-panel__title">
+            .fd-panel__title
+        </h3>
+        <p class="fd-panel__description">
+            .fd-panel__description
+        </p>
         <div class="fd-panel__actions">
             .fd-panel__actions
         </div>

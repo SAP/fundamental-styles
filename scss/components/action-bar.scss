@@ -60,6 +60,7 @@ $block: #{$fd-namespace}-action-bar;
     }
 
     &__back {
+        @include fd-reset();
         display: block;
         @include fd-hide-on-mobile();
         position: relative;

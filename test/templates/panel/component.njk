@@ -14,16 +14,14 @@ panel:
 {%- macro panel_header(properties={}, modifier=[], aria={}, classes=[]) %}
 <div class="fd-panel__header{{ classes | classes }}{{ modifier | modifier("panel__header") }}">
     {%- if properties.title %}
-    <div class="fd-panel__head">
         {% set title_size = properties.title_size  if properties.title_size  else "h3" %}
         <{{title_size}} class="fd-panel__title">{{ properties.title }}</{{title_size}}>
     {%- endif %}
-        {%- if properties.description %}
-        <p class="fd-panel__description">
-            {{ properties.description }}
-        </p>
-        {%- endif %}
-    </div>
+    {%- if properties.description %}
+    <p class="fd-panel__description">
+        {{ properties.description }}
+    </p>
+    {%- endif %}
     {{- caller() | indent -}}
 </div>
 {%- endmacro %}

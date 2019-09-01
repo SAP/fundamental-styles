@@ -4,9 +4,11 @@
 
 $block: #{$fd-namespace}-time;
 .#{$block} {
+  @include fd-reset();
   width: 184px; // Quick fix to solve overflow issue
 
     &__item {
+      @include fd-reset();
       display: inline-block;
       max-width: fd-space(10);
       text-align: center;
@@ -23,5 +25,9 @@ $block: #{$fd-namespace}-time;
         padding-right: fd-space(2);
         text-align: center;
       }
+    }
+
+    &__control {
+      @include fd-reset();
     }
 }

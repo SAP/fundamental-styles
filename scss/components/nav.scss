@@ -22,8 +22,11 @@ $block: #{$fd-namespace}-nav;
   &--vertical {
     flex-direction: column;
   }
-  //ELEMENTS *******************************************
+  &__item {
+    @include fd-reset();
+  }
   &__link {
+    @include fd-reset();
     display: block;
     padding: $fd-nav-link-padding-y $fd-nav-link-padding-x;
     @include fd-selected() {
