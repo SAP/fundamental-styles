@@ -11,10 +11,10 @@ folder: components
 The input group includes form inputs with add-ons that allow the user to better understand the information being entered.
 {: .docs-intro}
 
-<br>
 
 ## Sizes
-The Input Group supports `--compact` mode
+
+The Input Group supports **compact** mode (by virtue of the `--compact` modifier on child components).
 
 {% capture text-addon %}
 <div class="fd-form-item">
@@ -36,13 +36,10 @@ The Input Group supports `--compact` mode
 
 {% include display-component.html component=text-addon %}
 
+
 ## Text add-on
 
-The Input Group with text add-on component is typically used to specify the type of the data being entered, such as currency or unit of measure. This add-on can be placed at the left or right of the input element.
-
-
-
-
+The Input Group with text add-on component is typically used to specify the type of the data being entered, such as currency or unit of measure. This add-on can be placed at the left or right (or both) of the input element.
 
 {% capture text-addon %}
 
@@ -55,7 +52,7 @@ The Input Group with text add-on component is typically used to specify the type
 </div>
 
 <div class="fd-form-item">
-    <label class="fd-form-label" for="">Right Aligned Text Addon</label>
+    <label class="fd-form-label" for="">Right Aligned Text Add-on</label>
     <div class="fd-input-group">
         <input class="fd-input" type="text" id="" name="" value="1234568910 ">
         <span class="fd-input-group__addon">€</span>
@@ -74,28 +71,6 @@ The Input Group with text add-on component is typically used to specify the type
 
 {% include display-component.html component=text-addon %}
 
-<br />
-
-## Number input
-
-For an integer value input, a spinner can be added allowing the user to increase or decrease the value.
-
-{% capture input-spinner %}
-<div class="fd-form-item">
-    <label class="fd-form-label" for="">Quantity Spinner</label>
-    <div class="fd-input-group">
-        <input class="fd-input" id="spinner-1" type="number" value="100" />
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-button--light fd-button--half sap-icon--slim-arrow-up" aria-label="Step up" onclick="document.getElementById('spinner-1').stepUp();"></button>
-            <button class="fd-button--light fd-button--half sap-icon--slim-arrow-down" aria-label="Step down" onclick="document.getElementById('spinner-1').stepDown();"></button>
-        </span>
-    </div>
-</div>
-{% endcapture %}
-
-{% include display-component.html component=input-spinner %}
-
-<br/>
 
 ## Input with icons
 
@@ -125,7 +100,6 @@ The Input with add-on supports icons.
 
 {% include display-component.html component=input-action %}
 
-<br>
 
 ## Input with actions
 
@@ -133,7 +107,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
 
 {% capture button-addon %}
 <div class="fd-form-item">
-    <label class="fd-form-label" for="">Input with action</label>
+    <label class="fd-form-label" for="">Input with text add-on</label>
     <div class="fd-input-group">
         <input class="fd-input" type="text" id="" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button">
@@ -169,20 +143,51 @@ The Input with add-on supports actions. Actions can be shown with a text label o
 
 {% include display-component.html component=button-addon %}
 
-<br>
 
-
-## Textarea with input group
+## Textareas
 
 {% capture button-addon %}
-<div class="fd-input-group">
-    <textarea class="fd-textarea" id=""></textarea>
-    <span class="fd-input-group__addon">
-        km/h
-    </span>
+<div class="fd-form-item">
+    <label class="fd-form-label" for="">Textarea with text add-on</label>
+    <div class="fd-input-group">
+        <textarea class="fd-textarea" id=""></textarea>
+        <span class="fd-input-group__addon">
+            km/h
+        </span>
+    </div>
+</div>
+
+<div class="fd-form-item">
+    <label class="fd-form-label" for="">Textarea with action</label>
+    <div class="fd-input-group">
+        <textarea class="fd-textarea" id=""></textarea>
+        <span class="fd-input-group__addon fd-input-group__addon--button">
+            <button class="fd-button--light">
+                Button
+            </button>
+        </span>
+    </div>
 </div>
 {% endcapture %}
 
 {% include display-component.html component=button-addon %}
 
-<br>
+
+## Number input
+
+For an integer value input, a spinner can be added allowing the user to increase or decrease the value.
+
+{% capture input-spinner %}
+<div class="fd-form-item">
+    <label class="fd-form-label" for="">Quantity Spinner</label>
+    <div class="fd-input-group">
+        <input class="fd-input" id="spinner-1" type="number" value="100" />
+        <span class="fd-input-group__addon fd-input-group__addon--button">
+            <button class="fd-button--light fd-button--half sap-icon--slim-arrow-up" aria-label="Step up" onclick="document.getElementById('spinner-1').stepUp();"></button>
+            <button class="fd-button--light fd-button--half sap-icon--slim-arrow-down" aria-label="Step down" onclick="document.getElementById('spinner-1').stepDown();"></button>
+        </span>
+    </div>
+</div>
+{% endcapture %}
+
+{% include display-component.html component=input-spinner %}

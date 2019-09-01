@@ -49,6 +49,15 @@ $block: #{$fd-namespace}-input-group;
         }
     }
 
+    & [type="number"] {
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        -moz-appearance: textfield;
+    }
+
     &--inline {
         display: inline-flex;
         vertical-align: bottom;
@@ -57,7 +66,7 @@ $block: #{$fd-namespace}-input-group;
     &__addon {
         @include fd-reset();
         flex: 0 0 auto;
-        z-index: unset;
+        z-index: auto;
         @include fd-var-color("color", fd-color("text", 3), --fd-color-text-3);
         padding: 0 fd-space(3);
         border-style: solid;
@@ -74,22 +83,22 @@ $block: #{$fd-namespace}-input-group;
         }
 
         &:first-child {
-            border-right-width: 0;
+            margin-right: -1px;
         }
 
         &:last-child {
-            border-left-width: 0;
+            margin-left: -1px;
         }
 
         @include fd-rtl() {
             &:first-child {
-                border-left-width: 0;
-                border-right-width: 1px;
+                margin-left: -1px;
+                margin-right: 0;
             }
 
             &:last-child {
-                border-right-width: 0;
-                border-left-width: 1px;
+                margin-right: -1px;
+                margin-left: 0;
             }
         }
 
@@ -104,11 +113,12 @@ $block: #{$fd-namespace}-input-group;
                 border-style: solid;
                 border-width: 1px;
                 @include fd-var-color("border-color", $fd-forms-border-color, --fd-forms-border-color);
+                @include fd-var-color("background-color", fd-color(neutral, 1), --fd-color-neutral-1);
             }
 
             &:first-child {
                 > * {
-                    border-right-width: 0;
+                    margin-right: -1px;
                     border-top-right-radius: 0;
                     border-bottom-right-radius: 0;
 
@@ -118,14 +128,14 @@ $block: #{$fd-namespace}-input-group;
 
                     &:last-child:not(:first-child) {
                         border-top-left-radius: 0;
-                        border-top-width: 0;
+                        margin-top: -1px;
                     }
                 }
             }
 
             &:last-child {
                 > * {
-                    border-left-width: 0;
+                    margin-left: -1px;
                     border-top-left-radius: 0;
                     border-bottom-left-radius: 0;
 
@@ -135,7 +145,7 @@ $block: #{$fd-namespace}-input-group;
 
                     &:last-child:not(:first-child) {
                         border-top-right-radius: 0;
-                        border-top-width: 0;
+                        margin-top: -1px;
                     }
                 }
             }
@@ -143,10 +153,10 @@ $block: #{$fd-namespace}-input-group;
             @include fd-rtl() {
                 &:first-child {
                     > * {
-                        border-left-width: 0;
+                        margin-left: -1px;
                         border-top-left-radius: 0;
                         border-bottom-left-radius: 0;
-                        border-right-width: 1px;
+                        margin-right: 0;
                         border-top-right-radius: $fd-border-radius;
                         border-bottom-right-radius: $fd-border-radius;
 
@@ -156,17 +166,17 @@ $block: #{$fd-namespace}-input-group;
 
                         &:last-child:not(:first-child) {
                             border-top-right-radius: 0;
-                            border-top-width: 0;
+                            margin-top: -1px;
                         }
                     }
                 }
 
                 &:last-child {
                     > * {
-                        border-right-width: 0;
+                        margin-right: -1px;
                         border-top-right-radius: 0;
                         border-bottom-right-radius: 0;
-                        border-left-width: 1px;
+                        margin-left: 0;
                         border-top-left-radius: $fd-border-radius;
                         border-bottom-left-radius: $fd-border-radius;
 
@@ -176,7 +186,7 @@ $block: #{$fd-namespace}-input-group;
 
                         &:last-child:not(:first-child) {
                             border-top-left-radius: 0;
-                            border-top-width: 0;
+                            margin-top: -1px;
                         }
                     }
                 }
