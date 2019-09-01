@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.98"></a>
+# [0.2.0-rc.98](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.97...v0.2.0-rc.98) (2019-09-01)
+
+
+### Features
+
+* Self-contained styles for input group ([#307](https://github.com/SAP/fundamental-styles/issues/307)) ([fa1dcd6](https://github.com/SAP/fundamental-styles/commit/fa1dcd6))
+
+
+
 <a name="0.2.0-rc.97"></a>
 # [0.2.0-rc.97](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.96...v0.2.0-rc.97) (2019-08-31)
 
