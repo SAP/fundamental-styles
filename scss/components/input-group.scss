@@ -49,15 +49,6 @@ $block: #{$fd-namespace}-input-group;
         }
     }
 
-    & [type="number"] {
-        &::-webkit-outer-spin-button,
-        &::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-        -moz-appearance: textfield;
-    }
-
     &--inline {
         display: inline-flex;
         vertical-align: bottom;
