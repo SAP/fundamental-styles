@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.97"></a>
+# [0.2.0-rc.97](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.96...v0.2.0-rc.97) (2019-08-31)
+
+
+### Bug Fixes
+
+* update visual regression tests ([#306](https://github.com/SAP/fundamental-styles/issues/306)) ([838ee82](https://github.com/SAP/fundamental-styles/commit/838ee82))
+
+
+
 <a name="0.2.0-rc.96"></a>
 # [0.2.0-rc.96](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.95...v0.2.0-rc.96) (2019-08-29)
 
