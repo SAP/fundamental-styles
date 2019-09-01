@@ -27,10 +27,11 @@ $block: #{$fd-namespace}-nav;
   }
   &__link {
     @include fd-reset();
+    @include fd-var-color("color", fd-color(action, 1), --fd-color-action-1);
     display: block;
     padding: $fd-nav-link-padding-y $fd-nav-link-padding-x;
     @include fd-selected() {
-      @include fd-var-color("color", $fd-color, --fd-color-text-1);
+      @include fd-var-color("color", fd-color(text, 1), --fd-color-text-1);
     }
   }
 }

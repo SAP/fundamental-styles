@@ -59,6 +59,9 @@ $block: #{$fd-namespace}-panel;
         @include fd-type("-1");
         @include fd-var-color("color", fd-color("text", 3), --fd-color-text-3);
     }
+    &__head {
+      @include fd-reset();
+    }
     &__title {
         @include fd-reset();
         @include fd-type("1");
