@@ -56,7 +56,7 @@ entries:
       output: web
 
   # Patterns
-  - title: Patterns
+  - title: patterns
     url: /patterns/index.html
     output: web
 

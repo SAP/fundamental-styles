@@ -56,24 +56,22 @@ $block: #{$fd-namespace}-shellbar;
 
     &__group {
         @include fd-reset();
-        &--start {
-            display: flex;
-            align-items: center;
-        }
-        &--start,
-        &--end {
-            flex: 1;
-        }
-        &--middle {
-            width: $fd-shellbar-copilot-width;
-        }
-        &--end {
-            text-align: right;
-            @include fd-rtl() {
-                text-align: left;
-            }
-        }
-    }
+        display: flex;
+        align-items: center;
+        flex: 1;
+      &--product {
+        justify-content: flex-start;
+        order: 1;
+      }
+      &--copilot {
+        justify-content: center;
+        order: 2;
+      }
+      &--actions {
+        justify-content: flex-end;
+        order: 3;
+      }
+  }
 
     &__button {
         @include fd-button-reset();
@@ -162,8 +160,6 @@ $block: #{$fd-namespace}-shellbar;
     }
     &__action {
       @include fd-reset();
-      display: inline-block;
-      position: relative;
       padding-right: 0;
       padding-left: $fd-shellbar-item-spacing;
       @include fd-rtl() {
@@ -173,7 +169,7 @@ $block: #{$fd-namespace}-shellbar;
       > * {
         vertical-align: middle;
       }
-      &--collapse {
+      &--mobile {
           // Show only on s, hide on desktop
           @include fd-screen(s) {
               display: inline-block;
@@ -186,7 +182,7 @@ $block: #{$fd-namespace}-shellbar;
           }
       }
 
-      &--collapsible {
+      &--desktop {
           // Show only on l, hide on s
           @include fd-screen(s) {
               display: none;

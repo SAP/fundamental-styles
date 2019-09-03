@@ -18,21 +18,6 @@ $block-product-menu: #{$fd-namespace}-product-menu;
     @include fd-rtl() {
         padding: 0 0 0 fd-space(2);
     }
-  &__title {
-    @include fd-reset();
-    @include fd-type("1");
-    @include fd-weight("bold");
-    line-height: 1;
-    @include fd-var-color("color", fd-color("text", 5), --fd-color-text-5);
-    white-space: nowrap;
-    overflow: hidden;
-    max-width: 100%;
-    text-overflow: ellipsis;
-    display: none;
-    @include fd-screen(m) {
-      display: inline-block;
-    }
-  }
   &__control {
     @include fd-var-color("background-color", fd-color("shell", 2), --fd-color-shell-2);
     position: relative;

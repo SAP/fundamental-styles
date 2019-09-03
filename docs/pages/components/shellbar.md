@@ -19,7 +19,7 @@ Includes support for branding, product navigation, search, notifications, user s
 
 - The shellbar should be placed inside the shell layout container.
 - The shellbar is fluid and responsive by default with proper margins and padding built in.
-- The shellbar has three primary containers groups — `start` for branding and product elements, `middle` reserved for CoPilot, and `end` for search, product links, and user settings.
+- The shellbar has three primary containers groups — `product` for branding and product elements, `copilot` reserved for CoPilot, and `actions` for search, product links, and user settings.
 - The shellbar actions are duplicated into the overflow menu on mobile screens.
 
 Moving from left to right, the shellbar content will become more variable based on the product needs. See below for more details about child elements.
@@ -34,7 +34,8 @@ The shellbar handles layout and has some built-in elements but relies on standal
 * `.fd-shellbar__subtitle` (optional) displays an application context. _This should be used rarely._
 * `.fd-product-menu` (optional) for navigating to applications within the product.
 * `.fd-shellbar__action` (required) container for each product action and link.
-* `.fd-shellbar__collapse` (optional) for product actions on mobile screens.
+* `..fd-shellbar__action--mobile` (optional) for product actions only visible on mobile screens.
+* `.fd-shellbar__action--desktop` (optional) for product actions only visible on desktop screens.
 * `.fd-search-input` (optional) for searching the product.
 * `.fd-identifier` (required) for user settings and application meta links such as Sign Out. [Accent colors between 11-15]({{site.baseurl}}/foundation/colors.html#accent) can be randomly assigned to the background.
 * `.fd-product-switcher` (optional) for navigating between products.
@@ -48,11 +49,11 @@ This example shows the minimum shellbar for a single application product with on
 
 {% capture app-layout %}
 <div class="fd-shellbar">
-  <div class="fd-shellbar__group fd-shellbar__group--start">
+  <div class="fd-shellbar__group fd-shellbar__group--product">
     <a href="#" class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></a>
   <span class="fd-shellbar__title">Corporate Portal</span>
   </div>
-  <div class="fd-shellbar__group fd-shellbar__group--end">
+  <div class="fd-shellbar__group fd-shellbar__group--actions">
     <div class="fd-shellbar__action">
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
@@ -84,7 +85,7 @@ This example includes the product menu for navigating to applications within the
 
 {% capture app-layout %}
 <div class="fd-shellbar">
-  <div class="fd-shellbar__group fd-shellbar__group--start">
+  <div class="fd-shellbar__group fd-shellbar__group--product">
     <a href="#" class="fd-shellbar__logo">
       <img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP">
     </a>
@@ -92,7 +93,7 @@ This example includes the product menu for navigating to applications within the
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
           <button class="fd-product-menu__control" aria-controls="9GLB2694" aria-haspopup="true" aria-expanded="false">
-            <span class="fd-shellbar__title fd-product-menu__title">Corporate Portal</span>
+            <span class="fd-shellbar__title">Corporate Portal</span>
           </button>
         </div>
         <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="9GLB2694">
@@ -109,15 +110,15 @@ This example includes the product menu for navigating to applications within the
     </div>
 		<div class="fd-shellbar__subtitle">Subtitle</div>
   </div>
-  <div class="fd-shellbar__group fd-shellbar__group--end">
-      <div class="fd-shellbar__action fd-shellbar__action--collapsible">    
+  <div class="fd-shellbar__group fd-shellbar__group--actions">
+      <div class="fd-shellbar__action fd-shellbar__action--desktop">    
         <div class="fd-search-input">
          <div class="fd-popover">
           <div class="fd-popover__control">
               <div aria-label="Image label" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
-                  <div class="fd-input-group fd-input-group--after">
-                      <input type="text" class="fd-input" id="F4GcX348b1" value="Ba" placeholder="Select Fruit" aria-hidden="true">
-                      <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
+                  <div class="fd-input-group">
+                      <input type="text" class="fd-input" id="F4GcX348b1" value="Sear" placeholder="Search..." aria-hidden="true">
+                      <span class="fd-input-group__addon fd-input-group__addon--button">
                           <button class="fd-shellbar__button fd-button sap-icon--search"></button>
                       </span>
                   </div>
@@ -161,22 +162,22 @@ This example includes the product menu for navigating to applications within the
 ## Links with collapsible menu
 {: .docs-header-h2}
 
-When a product has multiple links, the product links should collapse into an overflow menu on mobile screens. All actions, except for the user menu, should be collapsed. See the placement of the `.fd-shellbar__action--collapse` container below.
+When a product has multiple links, the product links should collapse into an overflow menu on mobile screens. All actions, except for the user menu, should be collapsed. See the placement of the `.fd-shellbar__action--mobile` container below.
 
 {% capture app-layout %}
 <div class="fd-shellbar">
-  <div class="fd-shellbar__group fd-shellbar__group--start">
+  <div class="fd-shellbar__group fd-shellbar__group--product">
     <a href="#" class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></a>
   <span class="fd-shellbar__title">Corporate Portal</span>
   </div>
-  <div class="fd-shellbar__group fd-shellbar__group--end">
-    <div class="fd-shellbar__action fd-shellbar__action--collapsible">
+  <div class="fd-shellbar__group fd-shellbar__group--actions">
+    <div class="fd-shellbar__action fd-shellbar__action--desktop">
       <div class="fd-search-input">
          <div class="fd-popover">
           <div class="fd-popover__control">
               <div aria-label="Image label" aria-controls="UIO6J688" aria-expanded="false" aria-haspopup="true">
                   <div class="fd-input-group fd-input-group--after">
-                      <input type="text" class="fd-input" id="UIO6J6881" value="Ba" placeholder="Select Fruit" aria-hidden="true">
+                      <input type="text" class="fd-input" id="UIO6J6881" value="Sear" aria-hidden="true">
                       <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
                           <button class="fd-shellbar__button fd-button sap-icon--search"></button>
                       </span>
@@ -196,14 +197,14 @@ When a product has multiple links, the product links should collapse into an ove
         </div>
       </div>
     </div>
-      <div class="fd-shellbar__action fd-shellbar__action--collapsible">
+      <div class="fd-shellbar__action fd-shellbar__action--desktop">
         <button class="fd-button fd-shellbar__button sap-icon--bell" aria-label="Notifications">
         <span class="fd-counter fd-counter--notification" aria-label="Unread count">25</span></button>
       </div>
-      <div class="fd-shellbar__action fd-shellbar__action--collapsible">
+      <div class="fd-shellbar__action fd-shellbar__action--desktop">
         <button class="fd-button fd-shellbar__button sap-icon--pool" aria-label="Pool"></button>
       </div>
-      <div class="fd-shellbar__action fd-shellbar__action--collapse">
+      <div class="fd-shellbar__action fd-shellbar__action--mobile">
         <div class="fd-shellbar-collapse">
           <div class="fd-popover fd-popover--right">
             <div class="fd-popover__control">
@@ -255,16 +256,16 @@ This example shows an application with CoPilot, integration with other products,
 {% capture app-layout %}
 
 <div class="fd-shellbar">
-  <div class="fd-shellbar__group fd-shellbar__group--start">
+  <div class="fd-shellbar__group fd-shellbar__group--product">
     <a href="#" class="fd-shellbar__logo">
       <svg width="286" height="143" viewBox="0 0 286 143" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="-91.234%" y1="50%" x2="98.574%" y2="50%" id="a"><stop stop-color="#32B79D" stop-opacity=".59" offset="0%"/><stop stop-color="#33EAFF" stop-opacity=".59" offset="35.525%"/><stop stop-color="#7FCAFF" stop-opacity=".59" offset="73.603%"/><stop stop-color="#84A2FF" stop-opacity=".59" offset="100%"/></linearGradient></defs><g transform="translate(-19)" fill="url(#a)" fill-rule="evenodd"><path d="M114.232.963h190.464c0 16.966-13.754 30.72-30.72 30.72H83.512c0-16.966 13.754-30.72 30.72-30.72zM80.44 56.259h116.736c0 16.966-13.754 30.72-30.72 30.72H49.72c0-16.966 13.754-30.72 30.72-30.72zM49.72 111.555h18.432c0 16.966-13.754 30.72-30.72 30.72H19c0-16.966 13.754-30.72 30.72-30.72z"/></g></svg>
     </a>
     <span class="fd-shellbar__title">Corporate Portal</span>
   </div>
-  <div class="fd-shellbar__group fd-shellbar__group--middle">
+  <div class="fd-shellbar__group fd-shellbar__group--copilot">
     <img src="//unpkg.com/fundamental-styles/dist/images/copilot.png" alt="CoPilot" height="30" width="30" />
   </div>
-  <div class="fd-shellbar__group fd-shellbar__group--end">
+  <div class="fd-shellbar__group fd-shellbar__group--actions">
       <div class="fd-shellbar__action">
         <div class="fd-popover fd-popover--right">
           <div class="fd-popover__control">
@@ -282,7 +283,7 @@ This example shows an application with CoPilot, integration with other products,
           </div>
         </div>
       </div>
-      <div class="fd-shellbar__action fd-shellbar__action--collapsible">
+      <div class="fd-shellbar__action fd-shellbar__action--desktop">
         <div class="fd-product-switcher">
           <div class="fd-popover fd-popover--right">
             <div class="fd-popover__control">
