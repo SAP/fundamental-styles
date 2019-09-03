@@ -19,11 +19,11 @@ A table is a set of tabular data. Line items can support data, images and action
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell fd-table__cell--header" scope="col"></th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col"></th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
         </tr>
     </thead>
     <tbody class="fd-table__body">
@@ -69,11 +69,11 @@ A table is a set of tabular data. Line items can support data, images and action
 <table class="fd-table fd-table--no-borders">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell fd-table__cell--header" scope="col"></th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col"></th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
         </tr>
     </thead>
     <tbody class="fd-table__body">
@@ -119,11 +119,11 @@ A table is a set of tabular data. Line items can support data, images and action
 <table class="fd-table fd-table--striped">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell fd-table__cell--header" scope="col"></th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col"></th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
         </tr>
     </thead>
     <tbody class="fd-table__body">
@@ -169,11 +169,11 @@ It is recommended to add the parameter `aria-selected="true"` to the row that is
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell fd-table__cell--header" scope="col"><input class="fd-checkbox" type="checkbox"></th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col"><input class="fd-checkbox" type="checkbox"></th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
         </tr>
     </thead>
     <tbody class="fd-table__body">
@@ -213,11 +213,11 @@ Table rows support semantic row highlighting with the modifiers `fd-table__row--
 <table class="fd-table">
     <thead>
         <tr class="fd-table__row">
-            <th class="fd-table__cell fd-table__cell--header" scope="col"><input class="fd-checkbox" type="checkbox"></th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col"><input class="fd-checkbox" type="checkbox"></th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
         </tr>
     </thead>
     <tbody>
@@ -228,7 +228,7 @@ Table rows support semantic row highlighting with the modifiers `fd-table__row--
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
-        <tr class="fd-table__row--valid">
+        <tr class="fd-table__row fd-table__row--valid">
             <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -242,7 +242,7 @@ Table rows support semantic row highlighting with the modifiers `fd-table__row--
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
-         <tr class="fd-table__row--warning">
+         <tr class="fd-table__row fd-table__row--warning">
             <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -256,7 +256,7 @@ Table rows support semantic row highlighting with the modifiers `fd-table__row--
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
-         <tr class="fd-table__row--error">
+         <tr class="fd-table__row fd-table__row--error">
             <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -270,7 +270,7 @@ Table rows support semantic row highlighting with the modifiers `fd-table__row--
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
-         <tr class="fd-table__row--information">
+         <tr class="fd-table__row fd-table__row--information">
             <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -299,10 +299,10 @@ a contextual menu can be substituted in order to display all actions in one menu
 <table class="fd-table" >
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--header" scope="col"></th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col"></th>
         </tr>
     </thead>
     <tbody class="fd-table__body">
@@ -384,9 +384,9 @@ a contextual menu can be substituted in order to display all actions in one menu
 <table class="fd-table">
    <thead class="fd-table__header">
       <tr class="fd-table__row">
-         <th class="fd-table__cell fd-table__cell--header fd-table__sort-column" scope="col">Header Column</th>
-         <th class="fd-table__cell fd-table__cell--header fd-table__sort-column" scope="col">Header Column</th>
-         <th class="fd-table__cell fd-table__cell--header fd-table__sort-column" scope="col">Header Column</th>
+         <th class="fd-table__cell fd-table__sort-column" scope="col">Header Column</th>
+         <th class="fd-table__cell fd-table__sort-column" scope="col">Header Column</th>
+         <th class="fd-table__cell fd-table__sort-column" scope="col">Header Column</th>
       </tr>
    </thead>
    <tbody class="fd-table__body">
@@ -417,9 +417,9 @@ a contextual menu can be substituted in order to display all actions in one menu
 <table class="fd-table">
    <thead class="fd-table__header">
       <tr class="fd-table__row">
-         <th class="fd-table__cell fd-table__cell--header fd-table__sort-column fd-table__sort-column--asc" scope="col">Header Column</th>
-         <th class="fd-table__cell fd-table__cell--header fd-table__sort-column" scope="col">Header Column</th>
-         <th class="fd-table__cell fd-table__cell--header fd-table__sort-column" scope="col">Header Column</th>
+         <th class="fd-table__cell fd-table__sort-column fd-table__sort-column--asc" scope="col">Header Column</th>
+         <th class="fd-table__cell fd-table__sort-column" scope="col">Header Column</th>
+         <th class="fd-table__cell fd-table__sort-column" scope="col">Header Column</th>
       </tr>
    </thead>
    <tbody class="fd-table__body">
@@ -450,9 +450,9 @@ a contextual menu can be substituted in order to display all actions in one menu
 <table class="fd-table">
    <thead class="fd-table__header">
       <tr class="fd-table__row">
-         <th class="fd-table__cell fd-table__cell--header fd-table__sort-column fd-table__sort-column--dsc" scope="col">Header Column</th>
-         <th class="fd-table__cell fd-table__cell--header fd-table__sort-column" scope="col">Header Column</th>
-         <th class="fd-table__cell fd-table__cell--header fd-table__sort-column" scope="col">Header Column</th>
+         <th class="fd-table__cell fd-table__sort-column fd-table__sort-column--dsc" scope="col">Header Column</th>
+         <th class="fd-table__cell fd-table__sort-column" scope="col">Header Column</th>
+         <th class="fd-table__cell fd-table__sort-column" scope="col">Header Column</th>
       </tr>
    </thead>
    <tbody class="fd-table__body">
@@ -483,7 +483,7 @@ a contextual menu can be substituted in order to display all actions in one menu
 <table class="fd-table">
    <thead class="fd-table__header">
       <tr class="fd-table__row">
-         <th class="fd-table__cell fd-table__cell--header fd-table__context-menu" aria-controls="col1" aria-haspopup="true" scope="col" >
+         <th class="fd-table__cell fd-table__context-menu" aria-controls="col1" aria-haspopup="true" scope="col" >
             <div class="fd-popover">
                <div class="fd-popover__control">
                   <span class="fd-table__context-menu-label">Header Column</span>
@@ -502,7 +502,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                </div>
             </div>
          </th>
-         <th class="fd-table__cell fd-table__cell--header fd-table__context-menu" aria-controls="col2" aria-haspopup="true" scope="col" >
+         <th class="fd-table__cell fd-table__context-menu" aria-controls="col2" aria-haspopup="true" scope="col" >
             <div class="fd-popover">
                <div class="fd-popover__control">
                   <span class="fd-table__context-menu-label">Header Column</span>
@@ -521,7 +521,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                </div>
             </div>
          </th>
-         <th class="fd-table__cell fd-table__cell--header fd-table__context-menu" aria-controls="col3" aria-haspopup="true" scope="col" >
+         <th class="fd-table__cell fd-table__context-menu" aria-controls="col3" aria-haspopup="true" scope="col" >
             <div class="fd-popover">
                <div class="fd-popover__control">
                   <span class="fd-table__context-menu-label">Header Column</span>
@@ -579,7 +579,7 @@ a contextual menu can be substituted in order to display all actions in one menu
       <table class="fd-table">
          <thead class="fd-table__header">
             <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__cell--header fd-table__context-menu fd-table__fixed-cell" style="left:0; width:200px" aria-controls="col1.2" aria-haspopup="true" scope="col">
+               <th class="fd-table__cell fd-table__context-menu fd-table__fixed-cell" style="left:0; width:200px" aria-controls="col1.2" aria-haspopup="true" scope="col">
                   <div class="fd-popover">
                      <div class="fd-popover__control">
                         <span class="fd-table__context-menu-label">Header Column</span>
@@ -604,7 +604,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                      </div>
                   </div>
                </th>
-               <th class="fd-table__cell fd-table__cell--header fd-table__context-menu" aria-controls="col2.2" aria-haspopup="true" scope="col">
+               <th class="fd-table__cell fd-table__context-menu" aria-controls="col2.2" aria-haspopup="true" scope="col">
                   <div class="fd-popover">
                      <div class="fd-popover__control">
                         <span class="fd-table__context-menu-label">Header Column</span>
@@ -620,7 +620,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                      </div>
                   </div>
                </th>
-               <th class="fd-table__cell fd-table__cell--header fd-table__context-menu" aria-controls="col3.2" aria-haspopup="true" scope="col">
+               <th class="fd-table__cell fd-table__context-menu" aria-controls="col3.2" aria-haspopup="true" scope="col">
                   <div class="fd-popover">
                      <div class="fd-popover__control">
                         <span class="fd-table__context-menu-label">Header Column</span>
@@ -636,7 +636,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                      </div>
                   </div>
                </th>
-               <th class="fd-table__cell fd-table__cell--header fd-table__context-menu" aria-controls="col4.2" aria-haspopup="true" scope="col">
+               <th class="fd-table__cell fd-table__context-menu" aria-controls="col4.2" aria-haspopup="true" scope="col">
                   <div class="fd-popover">
                      <div class="fd-popover__control">
                         <span class="fd-table__context-menu-label">Header Column</span>
@@ -652,7 +652,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                      </div>
                   </div>
                </th>
-               <th class="fd-table__cell fd-table__cell--header fd-table__context-menu" aria-controls="col5.2" aria-haspopup="true" scope="col">
+               <th class="fd-table__cell fd-table__context-menu" aria-controls="col5.2" aria-haspopup="true" scope="col">
                   <div class="fd-popover">
                      <div class="fd-popover__control">
                         <span class="fd-table__context-menu-label">Header Column</span>
@@ -668,7 +668,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                      </div>
                   </div>
                </th>
-               <th class="fd-table__cell fd-table__cell--header fd-table__context-menu" aria-controls="col6.2" aria-haspopup="true" scope="col">
+               <th class="fd-table__cell fd-table__context-menu" aria-controls="col6.2" aria-haspopup="true" scope="col">
                   <div class="fd-popover">
                      <div class="fd-popover__control">
                         <span class="fd-table__context-menu-label">Header Column</span>
@@ -684,7 +684,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                      </div>
                   </div>
                </th>
-               <th class="fd-table__cell fd-table__cell--header fd-table__context-menu" aria-controls="col7.2" aria-haspopup="true" scope="col">
+               <th class="fd-table__cell fd-table__context-menu" aria-controls="col7.2" aria-haspopup="true" scope="col">
                   <div class="fd-popover">
                      <div class="fd-popover__control">
                         <span class="fd-table__context-menu-label">Header Column</span>
@@ -700,7 +700,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                      </div>
                   </div>
                </th>
-               <th class="fd-table__cell fd-table__cell--header fd-table__context-menu" aria-controls="col8.2" aria-haspopup="true" scope="col">
+               <th class="fd-table__cell fd-table__context-menu" aria-controls="col8.2" aria-haspopup="true" scope="col">
                   <div class="fd-popover">
                      <div class="fd-popover__control">
                         <span class="fd-table__context-menu-label">Header Column</span>
