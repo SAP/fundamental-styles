@@ -55,6 +55,25 @@ entries:
       url: /layouts/columns.html
       output: web
 
+  # Patterns
+  - title: patterns
+    url: /patterns/index.html
+    output: web
+
+    folderitems:
+  
+    - title: Contextual Menu
+      url: /patterns/contextual-menu.html
+      output: web
+
+    - title: Combobox Input
+      url: /patterns/combobox-input.html
+      output: web
+
+    - title: Search Input
+      url: /patterns/search-input.html
+      output: web
+
   # Components
   - title: components
     url: /components/index.html
@@ -83,14 +102,6 @@ entries:
 
     - title: Calendar
       url: /components/calendar.html
-      output: web
-
-    - title: Combobox Input
-      url: /components/combobox-input.html
-      output: web
-
-    - title: Contextual Menu
-      url: /components/contextual-menu.html
       output: web
 
     - title: Date Picker
@@ -159,10 +170,6 @@ entries:
 
     - title: Popover
       url: /components/popover.html
-      output: web
-
-    - title: Search Input
-      url: /components/search-input.html
       output: web
 
     - title: Shellbar
