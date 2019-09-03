@@ -259,7 +259,8 @@ $block: #{$fd-namespace}-table;
     &__row--warning,
     &__row--error,
     &__row--information {
-        & td:first-child {
+        border: none;
+        & .fd-table__cell:first-child {
             position: relative;
             &::before {
                 position: absolute;
