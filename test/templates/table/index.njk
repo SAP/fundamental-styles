@@ -59,103 +59,6 @@
 
 <br><br><br>
 
-<h2>Table with semantic row highlighting</h2>
-{% set example %}
-{{  table(properties={
-        rows: [row, row, row],
-        rowClass : {"rowIndex": 2, "class": "fd-table__row--valid"},
-        headers: [
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            }
-        ]
-    })
-}}
-{{  table(properties={
-        rows: [row, row, row],
-        rowClass : {"rowIndex": 2, "class": "fd-table__row--warning"},
-        headers: [
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            }
-        ]
-    })
-}}
-
-{{  table(properties={
-        rows: [row, row, row],
-        rowClass : {"rowIndex": 2, "class": "fd-table__row--error"},
-        headers: [
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            }
-        ]
-    })
-}}
-
-{{  table(properties={
-        rows: [row, row, row],
-        rowClass : {"rowIndex": 2, "class": "fd-table__row--information"},
-        headers: [
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            }
-        ]
-    })
-}}
-{% endset %}
-{{ format(example) }}
-
-<br><br><br>
-
 <h2>default with selected row</h2>
 {% set example %}
 <table class="fd-table">
@@ -488,5 +391,98 @@
 {% endset %}
 {{ format(example) }}
 
+<h2>Table with semantic row highlighting</h2>
+{% set example %}
+{{  table(properties={
+        rows: [row, row, row],
+        rowClass : {"rowIndex": 2, "class": "fd-table__row--valid"},
+        headers: [
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            }
+        ]
+    })
+}}
+{{  table(properties={
+        rows: [row, row, row],
+        rowClass : {"rowIndex": 2, "class": "fd-table__row--warning"},
+        headers: [
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            }
+        ]
+    })
+}}
 
+{{  table(properties={
+        rows: [row, row, row],
+        rowClass : {"rowIndex": 2, "class": "fd-table__row--error"},
+        headers: [
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            }
+        ]
+    })
+}}
+
+{{  table(properties={
+        rows: [row, row, row],
+        rowClass : {"rowIndex": 2, "class": "fd-table__row--information"},
+        headers: [
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            },
+            {
+                label: "Header Column"
+            }
+        ]
+    })
+}}
+{% endset %}
+{{ format(example) }}
 {% endblock %}
