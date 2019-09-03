@@ -1,9 +1,6 @@
 {
     "id": "modal",
     "name": "Modal",
-    "css_vars": true,
-    "rtl": true,
-    "version": "1.0.0",
     "type": "text",
     "properties": {
         "header": "",

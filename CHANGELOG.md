@@ -2,6 +2,61 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.98"></a>
+# [0.2.0-rc.98](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.97...v0.2.0-rc.98) (2019-09-01)
+
+
+### Features
+
+* Self-contained styles for input group ([#307](https://github.com/SAP/fundamental-styles/issues/307)) ([fa1dcd6](https://github.com/SAP/fundamental-styles/commit/fa1dcd6))
+
+
+
+<a name="0.2.0-rc.97"></a>
+# [0.2.0-rc.97](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.96...v0.2.0-rc.97) (2019-08-31)
+
+
+### Bug Fixes
+
+* update visual regression tests ([#306](https://github.com/SAP/fundamental-styles/issues/306)) ([838ee82](https://github.com/SAP/fundamental-styles/commit/838ee82))
+
+
+
+<a name="0.2.0-rc.96"></a>
+# [0.2.0-rc.96](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.95...v0.2.0-rc.96) (2019-08-29)
+
+
+### Features
+
+* create layout-grid component, remove tile-grid and panel-grid components ([#295](https://github.com/SAP/fundamental-styles/issues/295)) ([f7d1ccf](https://github.com/SAP/fundamental-styles/commit/f7d1ccf))
+
+
+
+<a name="0.2.0-rc.95"></a>
+# [0.2.0-rc.95](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.94...v0.2.0-rc.95) (2019-08-28)
+
+
+
+<a name="0.2.0-rc.94"></a>
+# [0.2.0-rc.94](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.93...v0.2.0-rc.94) (2019-08-28)
+
+
+### Features
+
+* remove deprecated fd-button--action-bar and fd-button--main ([#298](https://github.com/SAP/fundamental-styles/issues/298)) ([ad7f294](https://github.com/SAP/fundamental-styles/commit/ad7f294))
+
+
+
+<a name="0.2.0-rc.93"></a>
+# [0.2.0-rc.93](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.92...v0.2.0-rc.93) (2019-08-28)
+
+
+### Bug Fixes
+
+* update identifier playground examples ([#302](https://github.com/SAP/fundamental-styles/issues/302)) ([0ce0778](https://github.com/SAP/fundamental-styles/commit/0ce0778))
+
+
+
 <a name="0.2.0-rc.92"></a>
 # [0.2.0-rc.92](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.91...v0.2.0-rc.92) (2019-08-27)
 

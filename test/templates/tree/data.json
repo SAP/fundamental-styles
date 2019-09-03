@@ -1,9 +1,6 @@
 {
     "id": "tree",
     "name": "Tree",
-    "css_vars": true,
-    "rtl": true,
-    "version": "1.0.0",
     "properties": {
         "headers": [
             "Column Header",

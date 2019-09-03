@@ -1,9 +1,6 @@
 {
     "id": "icon",
     "name": "Icons",
-    "version": "1.0.0",
-    "css_vars": false,
-    "rtl": true,
     "properties": {
         "glyphs": [
             "accidental-leave",

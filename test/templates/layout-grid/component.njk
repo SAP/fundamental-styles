@@ -1,0 +1,7 @@
+{% macro layout_grid(properties={}, modifier={}) -%}
+<div class="fd-layout-grid{{ modifier.block | modifier('layout-grid') }}">
+    {% for item in properties.items -%}
+        {{ item | trim | indent(4, true) }}
+    {%- endfor -%}
+</div>
+{%- endmacro %}
