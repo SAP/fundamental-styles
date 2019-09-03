@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.99"></a>
+# [0.2.0-rc.99](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.98...v0.2.0-rc.99) (2019-09-03)
+
+
+### Features
+
+* shellbar refactor and self contained styles ([#305](https://github.com/SAP/fundamental-styles/issues/305)) ([512d0ad](https://github.com/SAP/fundamental-styles/commit/512d0ad))
+
+
+
 <a name="0.2.0-rc.98"></a>
 # [0.2.0-rc.98](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.97...v0.2.0-rc.98) (2019-09-01)
 
