@@ -211,7 +211,7 @@ Table rows support semantic row highlighting with the modifiers `fd-table__row--
 
 {% capture table-checkbox %}
 <table class="fd-table">
-    <thead>
+    <thead class="fd-table__header">
         <tr class="fd-table__row">
             <th class="fd-table__cell" scope="col"><input class="fd-checkbox" type="checkbox"></th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -220,7 +220,7 @@ Table rows support semantic row highlighting with the modifiers `fd-table__row--
             <th class="fd-table__cell" scope="col">Column Header</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="fd-table__body">
         <tr class="fd-table__row">
             <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox" checked></td>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
