@@ -237,4 +237,9 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
       }
     }
   }
+  &__text {
+    @include fd-reset-spacing();
+    font-size: 12px;
+    border: none;
+  }
 }

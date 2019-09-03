@@ -37,7 +37,6 @@ $block: #{$fd-namespace}-panel;
     @include fd-var-color("background-color", $fd-panel-background-color, --fd-panel-background-color);
     border-radius: $fd-border-radius;
     border-style: solid;
-    //border-width: $fd-panel-border-width;
     @include fd-var-size("border-width", $fd-panel-border-width, --fd-panel-border-width);
     @include fd-var-color("border-color", $fd-panel-border-color, --fd-panel-border-color);
 
@@ -90,7 +89,6 @@ $block: #{$fd-namespace}-panel;
     &__filters {
         @include fd-reset();
         padding: $fd-panel-filters-padding;
-        //border-bottom: solid 1px $fd-panel-filters-border-color;
         border-bottom-style: solid;
         border-bottom-width: 1px;
         @include fd-var-color("border-bottom-color", $fd-panel-filters-border-color, --fd-panel-divider-color);

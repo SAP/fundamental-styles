@@ -8,14 +8,14 @@ modal:
         <header class="fd-modal__header">
             {% set title_size = properties.header_size if properties.header_size else "h3" %}
             <{{title_size}} class="fd-modal__title">{{ properties.header }}</{{title_size}}>
-            <button class="fd-modal__close"></button>
+            <button class="btn-playground fd-modal__close"></button>
         </header>
         <div class="fd-modal__body">
             <p>{{properties.body}}</p>
         </div>
         <footer class="fd-modal__footer">
             {%- for action in properties.actions %}
-                <button>{{action.label}}</button>
+                <button class="btn-playground">{{action.label}}</button>
             {%- endfor %}
         </footer>
     </div>
