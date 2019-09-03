@@ -15,13 +15,6 @@ entries:
     output: web
 
     folderitems:
-    - title: Colors
-      url: /foundation/colors.html
-      output: web
-
-    - title: Grid
-      url: /foundation/grid.html
-      output: web
 
     - title: Spacing
       url: /foundation/spacing.html
@@ -40,6 +33,10 @@ entries:
 
     - title: Application Shell
       url: /layouts/shell-layout.html
+      output: web
+
+    - title: Layout Grid
+      url: /layouts/layout-grid.html
       output: web
 
     - title: Page
@@ -70,6 +67,10 @@ entries:
 
     - title: Alert
       url: /components/alert.html
+      output: web
+
+    - title: Asset Upload
+      url: /components/asset-upload.html
       output: web
 
     - title: Button
@@ -188,10 +189,6 @@ entries:
       url: /components/tile.html
       output: web
 
-    - title: Tile Grid
-      url: /components/tile-grid.html
-      output: web
-
     - title: Time
       url: /components/time.html
       output: web
@@ -225,10 +222,6 @@ entries:
 
     - title: Design System Utilities
       url: /resources/design-system-utilities.html
-      output: web
-
-    - title: UI Kit
-      url: /resources/ui-kit.html
       output: web
 
     - title: SAP Fundamental Styles Implementation Libraries

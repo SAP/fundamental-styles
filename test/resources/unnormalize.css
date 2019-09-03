@@ -8,11 +8,27 @@ p,
 a,
 ul,
 li,
-button {
+button,
+fieldset,
+input,
+span,
+textarea,
+div {
     font-size: 30px;
     padding: 20px;
     margin: 20px;
     border: 2px dashed orangered;
+}
+
+thead,
+tbody,
+tr,
+th,
+td {
+    font-size: 30px;
+    padding: 20px;
+    margin: 20px;
+    border: 3px dotted mediumslateblue;
 }
 
 h1,

@@ -1,0 +1,49 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./component.njk" import formSelect %}
+
+{% block content %}
+
+<h2>Default</h2>
+
+{% set example %}
+  {{ formSelect() }}
+{% endset %}
+ <br><br>
+{{ format(example) }}
+ <br><br>
+<h2>Compact</h2>
+
+{% set example %}
+  {{ formSelect(modifier={block: ["compact"]}) }}
+{% endset %}
+
+{{ format(example) }}
+
+<h2>States</h2>
+
+{% set example %}
+  {{ formSelect(properties='disabled') }}
+  <br><br>
+  {{ formSelect(properties='readonly') }}
+  <br><br>
+{% endset %}
+
+{{ format(example) }}
+
+<h2>MultiSelect</h2>
+
+{% set example %}
+  {{ formSelect(properties='multiple') }}
+{% endset %}
+
+{{ format(example) }}
+  <br><br>
+{% set example %}
+  {{ formSelect(properties='multiple', modifier={block: ["compact"]}) }}
+{% endset %}
+
+{{ format(example) }}
+
+
+{% endblock %}

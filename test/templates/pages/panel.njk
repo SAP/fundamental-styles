@@ -110,7 +110,7 @@
 {%- for i in range(0, 5) -%}
 {{  token({label: "Bibendum"}) }}
 {% endfor %}
-{{  button({label: 'Clear All'},modifier={block: ['secondary','s']}) }}
+{{  button({label: 'Clear All'},modifier={block: ['light','s']}) }}
 {% endset %}
 
 {% set panel_filters_items = [
@@ -162,15 +162,6 @@
 
 
 {%- endcall %}
-        {# {{  button_group(
-          properties={
-            label: "Show as",
-            buttons: [
-              { "properties": { "icon": "grid" }, "modifier": { block: ["grouped","s" ] }, "aria": { "pressed": true } },
-              { "properties": { "icon": "list" }, "modifier": { block: ["grouped","s" ] } }
-            ]
-          })
-        }} #}
 
 
         {%- endcall %}

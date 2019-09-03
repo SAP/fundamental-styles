@@ -69,14 +69,11 @@ $block: #{$fd-namespace}-action-bar;
                 width: 0;
                 height: 100%;
                 position: absolute;
-                top: - fd-space(1);
+                top: 0;
                 right: - fd-space(1);
                 border-right-style: solid;
                 border-right-width: 1px;
                 @include fd-var-color("border-right-color", $fd-action-bar-backbtn-separator-color, --fd-action-bar-backbtn-separator-color);
-        }
-        button {
-            margin-top: - fd-space(2);
         }
         @include fd-rtl() {
           transform: scaleX(-1);
@@ -85,12 +82,14 @@ $block: #{$fd-namespace}-action-bar;
         }
     }
     &__title {
+        @include fd-reset();
         @include fd-type("4");
         @include fd-action-bar-responsive();
         margin-bottom: fd-space(base);
     }
 
     &__description {
+        @include fd-reset();
         @include fd-var-color("color", $fd-action-bar-description-color, --fd-color-text-3);
         @include fd-type("0");
         @include fd-hide-on-mobile();
@@ -107,15 +106,18 @@ $block: #{$fd-namespace}-action-bar;
             opacity: 0;
             visibility: hidden;
         }
-        & > *,
-        & > button {
-          margin-left: fd-space(2);
+        & > * {
+          @include fd-children() {
+            margin-left: fd-space(2);
+          }
           &:first-child {
             margin-left: 0;
           }
           @include fd-rtl() {
-            margin-right: fd-space(2);
-            margin-left: 0;
+            @include fd-children() {
+              margin-right: fd-space(2);
+              margin-left: 0;
+            }
             &:first-child {
               margin-right: 0;
             }

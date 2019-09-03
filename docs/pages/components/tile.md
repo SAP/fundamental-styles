@@ -12,7 +12,7 @@ summary:
 
 A tile component can be used to display information in a simple container format.
 {: .docs-intro}
-The component is ideal for displaying collection data when a grid or list layout is preferred. See [`tile-grid`](tile-grid.html).
+The component is ideal for displaying collection data when a grid or list layout is preferred. See [`layout-grid`](layouts/layout-grid.html).
 
 > {{ site.data.strings.headerDisclaimer }}
 
@@ -35,7 +35,7 @@ The component is ideal for displaying collection data when a grid or list layout
 {% capture tile %}
 <div class="fd-tile">
     <div class="fd-tile__media">
-        <span class=" fd-identifier--m fd-identifier--transparent sap-icon--home"></span>
+        <span class="fd-identifier fd-identifier--m fd-identifier--transparent sap-icon--home"></span>
     </div>
     <div class="fd-tile__content">
         <h3 class="fd-tile__title">Tile Title</h3>
@@ -46,7 +46,7 @@ The component is ideal for displaying collection data when a grid or list layout
 
 <div class="fd-tile">
     <div class="fd-tile__media">
-        <span class=" fd-identifier--m sap-icon--home fd-has-background-color-accent-3"></span>
+        <span class="fd-identifier fd-identifier--m sap-icon--home fd-has-background-color-accent-3"></span>
     </div>
     <div class="fd-tile__content">
         <h3 class="fd-tile__title">Tile Title</h3>
@@ -147,10 +147,10 @@ Add `role=button` to rendering a tile as a button
 <br>
 
 ## Disabled state
-Add class `is-disabled` and/or `aria-disabled="true"` attribute
+Add class `is-disabled`
 
 {% capture tile %}
-<div class="fd-tile" aria-disabled="true">
+<div class="fd-tile is-disabled" aria-disabled="true">
     <div class="fd-tile__content">
         <h3 class="fd-tile__title">Tile Title</h3>
     </div>
@@ -158,9 +158,9 @@ Add class `is-disabled` and/or `aria-disabled="true"` attribute
 
 <br>
 
-<div class="fd-tile" aria-disabled="true">
+<div class="fd-tile is-disabled" aria-disabled="true">
     <div class="fd-tile__media">
-        <span class=" fd-identifier--m fd-identifier--transparent sap-icon--home"></span>
+        <span class="fd-identifier fd-identifier--m fd-identifier--transparent sap-icon--home"></span>
     </div>
     <div class="fd-tile__content">
         <h3 class="fd-tile__title">Tile Title</h3>
@@ -169,7 +169,7 @@ Add class `is-disabled` and/or `aria-disabled="true"` attribute
 
 <br>
 
-<div class="fd-product-tile" aria-disabled="true">
+<div class="fd-product-tile is-disabled" aria-disabled="true">
     <div class="fd-product-tile__media" style="background-image: url('https://techne.yaas.io/images/product-thumbnail-wide.png');"></div>
     <div class="fd-product-tile__content">
         <h3 class="fd-product-tile__title">Disabled Product Tile</h3>

@@ -1,5 +1,3 @@
-{% from "./../icon/component.njk" import icon %}
-{% from "./../image/component.njk" import image %}
 <!--
 popover:
     properties={},
@@ -36,4 +34,8 @@ popover:
   {{properties.body}}
   <div class="fd-popover__arrow"></div>
 </div>
+{%- endmacro -%}
+
+{%- macro popover_content(properties={}, modifier={}, state={}, aria={ hidden: true }) -%}
+<div class="sample-content">Here is the popover content!</div>
 {%- endmacro -%}

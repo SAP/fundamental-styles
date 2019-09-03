@@ -1,10 +1,9 @@
 body {
     padding: 20px;
-    background-color: rgb(243, 244, 245);
-    transition: background-color .25s;
 }
 .test-label {
     margin-right: 20px;
+    display: inline-block;
 }
 
 .test-header {
@@ -19,15 +18,6 @@ body {
     border: solid 2px lightgray;
     padding: 10px 15px;
     margin-bottom: 10px;
-}
-
-textarea.test-textarea {
-    font-family: monospace;
-    height: 100px;
-    width: 100%;
-    padding: 10px;
-    font-size: 0.9rem;
-    border: solid 1px rgba(0,0,0,0.1);
 }
 
 .test-datacontainer {

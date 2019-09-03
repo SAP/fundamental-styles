@@ -1,0 +1,5 @@
+{% macro fieldset(modifier={}) -%}
+<fieldset class="fd-fieldset{{ modifier.block | modifier('fieldset') }}">
+    {{- caller() | indent -}}
+</fieldset>
+{%- endmacro %}

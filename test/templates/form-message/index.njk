@@ -1,0 +1,33 @@
+{% extends "layout.njk" %}
+{% from "./component.njk" import formMessage %}
+{% from "./../format.njk" import format %}
+
+{% block content %}
+
+<h3>Default</h3>
+{% set example %}
+    {{ formMessage()}}
+{% endset %}
+{{ format(example) }}
+
+<h3>Error</h3>
+{% set example %}
+    {{ formMessage(modifier="error", message="Error message") }}
+{% endset %}
+{{ format(example) }}
+
+<h3>Warning</h3>
+{% set example %}
+    {{ formMessage(modifier="warning", message="Warning message") }}
+{% endset %}
+{{ format(example) }}
+
+<h3>Help</h3>
+{% set example %}
+    {{ formMessage(modifier="help", message="Help message") }}
+{% endset %}
+{{ format(example) }}
+
+
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./component.njk" import section, section_headlines %}
+
+{% block content %}
+
+    {% set example %}
+    {{section(content='Simple Section')}}
+    {{section(title='Section Title', content='Section Content')}}
+    {{section(title='Title', content='Section Content', actions='action section')}}
+    {{section(title='Title', content='Section Content', actions='action part', footer='footer part')}}
+    {{section(classes='fd-section--full-bleed', title='Title', content='Section Content with Full Bleed', actions='action part', footer='footer part')}}
+    {{section(content='Simple Section')}}
+    {% endset %}
+    {{ format(example) }}
+
+    {% set example %}
+    {{section_headlines(title='Title', content='Section Content', actions='action part', footer='footer part')}}
+    {% endset %}
+    {{ format(example) }}
+
+{% endblock %}

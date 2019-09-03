@@ -3,7 +3,7 @@
 @import "./../functions";
 
 // Required variables:
-$elements__headers: h1, h2, h3, h4, h5, h6;
+$elements__headings: h1, h2, h3, h4, h5, h6;
 $elements__blocks: p, ul, ol, blockquote, table, figure;
 
 /*!
@@ -14,12 +14,14 @@ html {
     box-sizing: border-box;
     min-height: 100%;
 }
+
 html,
 body {
     font-size: $fd-font-size;
     font-family: $fd-font-family;
     line-height: $fd-line-height;
 }
+
 * {
     box-sizing: inherit;
     &::before,
@@ -34,14 +36,12 @@ body {
     @include fd-var-color("color", $fd-color, --fd-color);
 }
 
-/**
-* @section Header Elements
-* Default styles for header elements
+/*!
+* @section Heading Elements
+* Default styles for heading elements
 */
-#{$elements__headers} {
-    text-rendering: optimizeLegibility;
-    margin-bottom: $fd-margin-bottom;
-    margin-top: 0;
+#{$elements__headings} {
+    @include fd-heading();
 }
 
 /*!
@@ -51,6 +51,7 @@ body {
 #{$elements__blocks} {
     margin-top: 0;
     margin-bottom: $fd-margin-bottom;
+
     &:last-child {
         margin-bottom: 0;
     }
@@ -72,6 +73,7 @@ img {
     line-height: 0;
     vertical-align: middle;
 }
+
 a {
     text-decoration: none;
     display: inline-block;
@@ -94,6 +96,7 @@ a {
       cursor: not-allowed;
     }
 }
+
 pre,
 code {
   font-family: $fd-font-family--code;

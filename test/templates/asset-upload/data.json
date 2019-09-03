@@ -1,0 +1,11 @@
+{
+    "id": "file-upload",
+    "name": "File Upload",
+    "properties": {
+        "text": "Upload Link",
+        "message": ""
+    },
+    "modifier": {
+        "block": []
+    }
+}

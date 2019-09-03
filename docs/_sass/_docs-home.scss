@@ -27,13 +27,6 @@
             font-weight: bold;
         }
 
-        &-img {
-            float: right;
-            @include media("<=tablet") {
-                width: 100%;
-            }
-        }
-
         &-content {
             padding: 100px;
             @include media("<=tablet") {

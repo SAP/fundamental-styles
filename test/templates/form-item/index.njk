@@ -1,0 +1,51 @@
+{% extends "layout.njk" %}
+{% from "./component.njk" import  formItem %}
+{% from "./../format.njk" import format %}
+
+{% block content %}
+
+<h2>default</h2>
+{% set example %}
+  
+{% call formItem() -%}
+  <label>Placeholder label</label>
+  <input class="input-playground" placeholder="Placeholder input" />
+{%- endcall %}
+
+{% endset %}
+{{ format(example) }}
+<br><br>
+{% set example %}
+  {% call formItem() -%}
+    <label>Placeholder label</label>
+    <input class="input-playground" placeholder="Placeholder input" />
+    <span class="fd-form-message span-playground">Placeholder form message</span>
+  {%- endcall %}
+{% endset %}
+{{ format(example) }}
+
+<h2>Inline</h2>
+
+{% set example %}
+  {% call formItem(modifier={block: ["inline"]}) -%}
+    <label>
+      <input type="radio" />
+      Placeholder label
+    </label>
+  {%- endcall %}
+  {% call formItem(modifier={block: ["inline"]}) -%}
+    <label>
+      <input type="radio" />
+      Placeholder label
+    </label>
+  {%- endcall %}
+  {% call formItem(modifier={block: ["inline"]}) -%}
+    <label>
+      <input type="radio" />
+      Placeholder label
+    </label>
+  {%- endcall %}
+{% endset %}
+{{ format(example) }}
+
+{% endblock %}

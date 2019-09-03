@@ -1,5 +1,7 @@
 .main-content {
     vertical-align: top;
+    overflow-y: scroll;
+    height: calc(100vh - 27px - 40px - 20px);
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -31,6 +33,8 @@
 .docs-content-full-width {
     padding: 40px 40px 80px 40px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
     @include media("<=tablet") {
         text-align: center;
         padding-top: 20px;

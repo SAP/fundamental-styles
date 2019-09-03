@@ -1,8 +1,3 @@
-{% import "../forms.njk" as forms %}
-{% from "../button/component.njk" import button %}
-{#
-    see ./data.json for object structure
-#}
 {% macro input_group(
     type="text",
     properties={
@@ -28,30 +23,20 @@
     size="")
 %}
 {%- set input = properties.input %}
-<div class="fd-input-group{{ modifier.block | modifier('input-group') }}{{ size | modifier('input-group') }}">
+<div class="fd-input-group{{ modifier.block | modifier('input-group') }}">
     {%- if properties.before %}
-        <span class="fd-input-group__addon{{ modifier.before | modifier('input-group__addon') }}">
+        <span class="fd-input-group__addon{{ modifier.before | modifier('input-group__addon') }} {{ 'fd-input-group__addon--readonly' if properties.input.state.readonly}}">
             {{ properties.before | trim | indent(8, true) }}
         </span>
     {%- endif %}
     {%- if properties.type == "textarea" %}
-    {{ forms.textarea(input.properties,size=size,state=input.state,aria=input.aria) }}
+        <textarea class="input-group-input-playground" placeholder="{{input.properties.placeholder}}" value="{{input.properties.value}}" {{ 'disabled' if properties.input.state.readonly}}></textarea> 
     {%- else %}
-    {{ forms.text(type,input.properties,size=size,state=input.state,aria=input.aria) }}
+        <input class="input-group-input-playground" placeholder="{{input.properties.placeholder}}" value="{{input.properties.value}}" {{ 'disabled' if properties.input.state.readonly}} /> 
     {%- endif %}
     {%- if properties.after %}
         <span class="fd-input-group__addon{{ modifier.after | modifier('input-group__addon') }} {{ 'fd-input-group__addon--readonly' if properties.input.state.readonly}}">
             {{ properties.after | trim | indent(8, true) }}
-        </span>
-    {%- endif %}
-    {%- if type === "number" or type === "search" %}
-        <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon{{ modifier.after | modifier('input-group__addon') }}">
-            {%- if type === "number" %}
-                <button class="fd-input-group__button fd-input-group__button--step-up sap-icon--slim-arrow-up" aria-label="Step up" onclick="document.getElementById('{{input.properties.id}}').stepUp();"></button>
-                <button class="fd-input-group__button fd-input-group__button--step-down sap-icon--slim-arrow-down" aria-label="Step down" onclick="document.getElementById('{{input.properties.id}}').stepDown();"></button>
-            {%- else %}
-                <button class="fd-input-group__button fd-input-group__button--clear" aria-label="Clear" onclick="document.getElementById('{{input.properties.id}}').value = '';"></button>
-            {%- endif %}
         </span>
     {%- endif %}
 </div>

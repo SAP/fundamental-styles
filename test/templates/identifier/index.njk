@@ -1,190 +1,24 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "../button/component.njk" import button %}
 {% from "./component.njk" import identifier %}
 
 {% block content %}
 
-<h1>Specs</h1>
-
-<p>Seven sizes, default matches the base font size (14px)</p>
-
-<table>
-  <tr>
-    <td style="padding-right: 20px;">
-      {{  identifier(
-              properties={ icon: data.properties.icon },
-              modifier={ block: ["xxs"] },
-              classes="has-background-color-accent-12"
-          )
-      }}
-    </td>
-    <td>
-      <span>extra extra small (xxs) - 20px</span>
-    </td>
-    <td>
-      <code>.fd-identifier--xxs</code>
-    </td>
-  </tr>
-  <tr>
-    <td style="padding-right: 20px;">
-      {{  identifier(
-              properties={ icon: data.properties.icon },
-              modifier={ block: ["xs"] },
-              classes="has-background-color-accent-12"
-          )
-      }}
-    </td>
-    <td>
-      <span>extra small (xs) - 28px</span>
-    </td>
-    <td>
-      <code>.fd-identifier--xs</code>
-    </td>
-  </tr>
-  <tr>
-    <td style="padding-right: 20px;">
-      {{  identifier(
-              properties={ icon: data.properties.icon },
-              modifier={ block: ["s"] },
-              classes="has-background-color-accent-12"
-          )
-      }}
-    </td>
-    <td>
-      <span>small (s) - 32px</span>
-    </td>
-    <td>
-      <code>.fd-identifier--s</code>
-    </td>
-  </tr>
-  <tr>
-    <td style="padding-right: 20px;">
-      {{  identifier(
-              properties={ icon: data.properties.icon },
-              modifier={ block: ["m"] },
-              classes="has-background-color-accent-12"
-          )
-      }}
-    </td>
-    <td>
-      <span>medium (m) - 48px</span>
-    </td>
-    <td>
-      <code>.fd-identifier--m</code>
-    </td>
-  </tr>
-  <tr>
-    <td style="padding-right: 20px;">
-      {{  identifier(
-              properties={ icon: data.properties.icon },
-              modifier={ block: ["l"] },
-              classes="has-background-color-accent-12"
-          )
-      }}
-    </td>
-    <td>
-      <span>large (l) - 64px</span>
-    </td>
-    <td>
-      <code>.fd-identifier--l</code>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      {{  identifier(
-              properties={ icon: data.properties.icon },
-              modifier={ block: ["xl"] },
-              classes="has-background-color-accent-12"
-          )
-      }}
-    </td>
-    <td>
-      <span>extra large (xl) - 88px</span>
-    </td>
-    <td>
-      <code>.fd-identifier--xl</code>
-    </td>
-  </tr>
-  <tr>
-    <td style="padding-right: 20px;">
-      {{  identifier(
-              properties={ icon: data.properties.icon },
-              modifier={ block: ["xxl"] },
-              classes="has-background-color-accent-12"
-          )
-      }}
-    </td>
-    <td>
-      <span>extra extra large (xxl) - 112px</span>
-    </td>
-    <td>
-      <code>.fd-identifier--xxl</code>
-    </td>
-  </tr>
-</table>
-
-<br><hr><br>
-
-
 {% set sizes = ["xxs","xs","s","m","l","xl","xxl"] %}
-    <h1>identifier</h1>
 
-    <h2>icon</h2>
-    <p>
-Include <code>role="presentation"</code> when the identifier is only used for illustrative purposes. For example, if the icon sits right next to a label then use the role ... <br>
-{{  identifier(
-        properties={
-          icon: "washing-machine"
-        },
-        modifier={
-            block: ["s"]
-        },
-        aria={
-          role: "presentation"
-        }
-    )
-}} Washing machine. An icon used alone should include the <code>aria-label</code> attribute to give it meaning as in the initials examples.
-    </p>
-    {%- set example %}
-{%- for size in sizes %}
-{{  identifier(
-        properties={
-          icon: "washing-machine"
-        },
-        modifier={
-            block: size
-        },
-        aria={
-          role: "presentation"
-        }
-    )
-}}
-{%- endfor %}
-    {%- endset %}
-    {{ format(example) }}
-<br><br>
-
-<h2>initials</h2>
-<p>Include <code>aria-label</code> when there is no text equivalent of the identifier. It is not necessary if the identfier is illustrative only.</p>
+<h3>sizes</h3>
 {%- set example %}
-{%- for size in sizes %}
-{{  identifier(
-    properties={
-      initials: "WW"
-    },
-    modifier={
-        block: size
-    },
-    aria=data.aria
-)
-}}
-{%- endfor %}
+  {%- for size in sizes %}
+    {{ identifier(
+          properties={ icon: data.properties.icon },
+          modifier={ block: [size] }
+      )
+    }}
+  {%- endfor %}
 {%- endset %}
 {{ format(example) }}
-<br><br>
 
-<h3>thumbnail</h3>
+<h3>--thumbnail</h3>
 {%- set example %}
 {%- for size in sizes %}
 {{  identifier(
@@ -198,79 +32,45 @@ Include <code>role="presentation"</code> when the identifier is only used for il
 {%- endfor %}
 {%- endset %}
 {{ format(example) }}
-<br><br>
 
-
-
-
-
-    <h2>circle</h2>
+<h3>--circle</h3>
 {%- set example %}
-{% for size in sizes %}
-{{  identifier(
-        properties={
-                icon: "money-bills"
-        },
-        modifier={
-            block: [size, "circle"]
-        },
-        aria={
-          role: "presentation"
-        }
-    )
-}}
-{%- endfor %}
-{% for size in sizes %}
-{{  identifier(
-        properties={
-                initials: "WW"
-        },
-        modifier={
-            block: [size, "circle"]
-        },
-        aria=data.aria
-    )
-}}
-{%- endfor %}
-
-    {%- endset %}
-    {{ format(example) }}
+  {% for size in sizes %}
+  {{  identifier(
+          properties={
+                  icon: "money-bills"
+          },
+          modifier={
+              block: [size, "circle"]
+          },
+          aria={
+            role: "presentation"
+          }
+      )
+  }}
+  {%- endfor %}
+  {%- endset %}
+{{ format(example) }}
 
 
-
-    <br><br>
-
-        <h2>transparent</h2>
-    {%- set example %}
-    {% for size in sizes %}
+<h3>--transparent</h3>
+{%- set example %}
+  {% for size in sizes %}
     {{  identifier(
             properties={
                     icon: "money-bills"
             },
             modifier={
-                block: [size, "circle", "transparent"]
+                block: [size, "transparent"]
             },
             aria={
               role: "presentation"
             }
         )
     }}
-    {%- endfor %}
-    {% for size in sizes %}
-    {{  identifier(
-            properties={
-                    initials: "WW"
-            },
-            modifier={
-                block: [size, "circle", "transparent"]
-            },
-            aria=data.aria
-        )
-    }}
-    {%- endfor %}
-
-        {%- endset %}
-        {{ format(example) }}
+  {%- endfor %}
+{%- endset %}
+{{ format(example) }}
 
 <br><br>
 

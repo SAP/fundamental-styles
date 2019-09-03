@@ -1,6 +1,6 @@
 {
   "name": "fundamental-styles",
-  "version": "0.2.0-rc.39",
+  "version": "0.2.0-rc.98",
   "description": "Fundamental Styles is a Design System and HTML/CSS Component Library used to build modern Product User Experiences with the SAP look and feel. Learn more about this project at - http://sap.github.io/fundamental-styles/",
   "main": "dist/fundamental-styles.css",
   "scripts": {
@@ -78,7 +78,9 @@
     "doc": "docs",
     "test": "test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@sap-theming/theming-base-content": "^11.1.10"
+  },
   "engines": {
     "node": ">=8.12.0"
   },
@@ -90,6 +92,7 @@
     "silent": false
   },
   "browserslist": [
-    "last 2 versions"
+    "last 2 versions",
+    "IE 11"
   ]
 }

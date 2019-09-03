@@ -14,12 +14,12 @@ $(document).ready(function () {
     }
 
     $('#mobile-sidenav-btn').click(() => {
-        $("#tg-sb-sidebar").slideToggle('400');
+        $("#tg-sb-sidebar").toggleClass('fd-styles__mobile-list');
     });
 
 });
 
-(function () {
+$(document).ready(function () {
     //dropdown
     var els = document.querySelectorAll("[aria-controls]");
     for (var i = 0; i < els.length; i++) {
@@ -192,5 +192,4 @@ $(document).ready(function () {
         }
     }
 
-
-})();
+});

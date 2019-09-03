@@ -2,7 +2,6 @@
 {% from "./../menu/component.njk" import menu %}
 {% from "./../input-group/component.njk" import input_group %}
 {% from "../button/component.njk" import button %}
-{% import "../forms.njk" as forms %}
 {% import "./../utils.njk" as utils %}
 
 {#
@@ -80,14 +79,7 @@ search_input:
 
   <div class="fd-search-input__closedcontrol" id="{{interactionId}}" aria-hidden="true">
     <div class="fd-search-input__controlinput" aria-controls="{{ properties.id }}" aria-expanded="false" aria-haspopup="true">
-      {{ forms.text(
-          type="text",
-          properties={
-            "id": utils.id(),
-            "value": properties.value,
-            "placeholder": properties.placeholder
-          })
-      }}
+      <input class="input-playground input-playground--full-width" id={{utils.id()}} type="text" placeholder="{{properties.placeholder}}" value="{{properties.value}}" />
     </div>
   </div>
 {%- endmacro -%}

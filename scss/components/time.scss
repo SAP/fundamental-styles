@@ -11,17 +11,17 @@ $block: #{$fd-namespace}-time;
       max-width: fd-space(10);
       text-align: center;
       margin-right: fd-space(1);
+
       &:last-child {
         margin-right: 0;
       }
-    }
 
-    &__input {
+      // Spacing and narrower side padding for child inputs
+      .#{$block}__input {
         margin: fd-space(2) 0;
-        input {
-          padding-left: fd-space(2);
-          padding-right: fd-space(2);
-          text-align: center;
-        }
+        padding-left: fd-space(2);
+        padding-right: fd-space(2);
+        text-align: center;
+      }
     }
 }

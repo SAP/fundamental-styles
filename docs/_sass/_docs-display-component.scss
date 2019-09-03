@@ -38,6 +38,36 @@
             color: inherit;
         }
     }
+    //implementation libraries will handle this differently as popper/popover will live separately in the dom
+    .fd-combobox-input, .fd-multi-input, .fd-button-split {
+        .fd-popover {
+            display: block;
+
+            &__body {
+                width: 100%;
+            }
+        }
+    }
+
+    .fd-date-picker {
+        .fd-popover {
+            &__body {
+                padding: 0 12px;
+            }
+        }
+    }
+
+    .fd-time-picker {
+        .fd-popover__body {
+            padding: 16px;
+        }
+    }
+
+    .fd-product-menu {
+        .fd-popover__body--right {
+            right: -10px;
+        }
+    }
 
     .fd-identifier--s {
         display: inline-block;
@@ -180,12 +210,6 @@
     }
 
     &__page {
-        .fd-page,
-        .fd-page__header,
-        .fd-page__intro,
-        .fd-page__content {
-            padding: 10px;
-        }
 
         .fd-tile__content {
             padding: 20px 20px;
@@ -196,14 +220,6 @@
     }
 
     &__section {
-        .fd-section,
-        .fd-section__header,
-        .fd-section__title,
-        .fd-section__actions,
-        .fd-section__footer,
-        .fd-container {
-            //padding:10px;
-        }
 
         .fd-section {
             background-color: $docs-example-bg-color;
@@ -333,12 +349,6 @@
         margin-right: 20px;
     }
 
-    .fd-tile-grid {
-        .fd-product-tile {
-            margin-right: 0;
-        }
-    }
-
     a[aria-disabled="true"]:hover,
     a[aria-disabled="true"]:visited,
     a[aria-disabled="true"]:active,
@@ -357,14 +367,6 @@
 
     .fd-panel__description, .fd-action-bar__description {
         padding: 0;
-    }
-
-    .fd-calendar__content {
-        background: white;
-    }
-
-    .fd-toggle input {
-        border-radius: 15px;
     }
 
     &__spacing-example {
