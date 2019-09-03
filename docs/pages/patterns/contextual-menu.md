@@ -4,8 +4,8 @@ id: contextual-menu
 keywords: contextual, menu
 sidebar: left-navigation-sidebar
 toc: false
-permalink: components/contextual-menu.html
-folder: components
+permalink: patterns/contextual-menu.html
+folder: patterns
 summary:
 ---
 

@@ -41,7 +41,20 @@ body {
     font-size: 10px;
 }
 
-.input-playground {
+.identifier-playground {
+  display: inline-block;
+  background: beige;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  min-width: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.input-playground, .input-playground-full-width {
   width: 250px;
   background: beige;
   padding: 10px;
@@ -54,6 +67,13 @@ body {
   width: 100%;
 }
 
+.input-group-playground {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .input-group-input-playground {
   box-sizing: border-box;
   background: lightblue;
@@ -61,6 +81,7 @@ body {
   font-size: 14px;
   border-radius: 4px;
   border: 1px solid black;
+  margin: 0;
 }
 
 .input-group-input-playground[disabled] {

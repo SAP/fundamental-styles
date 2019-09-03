@@ -4,20 +4,22 @@ id: combobox-input
 keywords: combobox input
 sidebar: left-navigation-sidebar
 toc: false
-permalink: components/combobox-input.html
-folder: components
+permalink: patterns/combobox-input.html
+folder: patterns
 summary:
 ---
 
+The combobox input component is an opinionated composition of the `input group`, `popover` and `menu` components with the use of a styled button.
+{: .docs-intro}
 
 {% capture default %}
-<div class="fd-combobox-input">
+<div class="documentation-site-popover-container">
   <div class="fd-popover">
       <div class="fd-popover__control">
-          <div class="fd-combobox-control" aria-label="Image label" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="true">
-              <div class="fd-input-group fd-input-group--after">
+          <div aria-label="Image label" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="true">
+              <div class="fd-input-group">
                   <input type="text" class="fd-input" id="" placeholder="Select Fruit">
-                  <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
+                  <span class="fd-input-group__addon fd-input-group__addon--button">
                       <button class=" fd-button--light sap-icon--navigation-down-arrow"></button>
                   </span>
               </div>
@@ -38,14 +40,14 @@ summary:
 
 <br>
 
-<div class="fd-combobox-input">
+<div class="documentation-site-popover-container">
   <div class="fd-popover">
       <div class="fd-popover__control">
-          <div class="fd-combobox-control" aria-label="Image label" aria-controls="F4GcX34" aria-expanded="false" aria-haspopup="true">
-              <div class="fd-input-group fd-input-group--after fd-input-group--compact">
+          <div aria-label="Image label" aria-controls="F4GcX34" aria-expanded="false" aria-haspopup="true">
+              <div class="fd-input-group">
                   <input type="text" class="fd-input fd-input--compact" id="" placeholder="Select Fruit">
-                  <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
-                      <button class=" fd-button--light sap-icon--navigation-down-arrow"></button>
+                  <span class="fd-input-group__addon fd-input-group__addon--button">
+                      <button class="fd-button--compact fd-button--light sap-icon--navigation-down-arrow"></button>
                   </span>
               </div>
           </div>

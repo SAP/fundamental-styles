@@ -1,0 +1,13 @@
+## Data for patterns list display page.
+  items:
+    - title: Combobox Input
+      meta: combobox-input
+
+    - title: Contextual Menu
+      meta: contextual-menu
+
+    - title: Multi Input
+      meta: multi-input
+
+    - title: Search Input
+      meta: search-input
