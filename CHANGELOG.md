@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.100"></a>
+# [0.2.0-rc.100](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.99...v0.2.0-rc.100) (2019-09-04)
+
+
+### Features
+
+* self contained styles asset-upload, nav, additional components with divs/spans ([#308](https://github.com/SAP/fundamental-styles/issues/308)) ([7b36a0c](https://github.com/SAP/fundamental-styles/commit/7b36a0c))
+
+
+
 <a name="0.2.0-rc.99"></a>
 # [0.2.0-rc.99](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.98...v0.2.0-rc.99) (2019-09-03)
 
