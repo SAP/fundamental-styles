@@ -123,10 +123,12 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
     @extend %fd-calendar-content-hidden;
   }
   &__months {
+    @include fd-reset();
     display: grid;
     @extend %fd-calendar-content-hidden;
   }
   &__years {
+    @include fd-reset();
     display: flex;
     flex-wrap: wrap;
     display: grid;
