@@ -1,18 +1,73 @@
-body {
-    font-family: '72', sans-serif;
-    background-color: fd-color(background, 2);
-    overflow: hidden;
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+    box-sizing: inherit;
+    &::before,
+    &::after {
+        box-sizing: inherit;
+    }
 }
 
-a, a:visited {
-    color: docs-color(action, 4);
+body {
+    font-family: '72', sans-serif;
+    overflow: hidden;
+    font-size: $fd-font-size;
+    line-height: $fd-line-height;
+    margin: 0;
+    background-color: fd-color(background, 2);
+    -webkit-font-smoothing: antialiased;
+    color: var(--fd-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizeLegibility;
+    margin-bottom: $fd-margin-bottom;
+    margin-top: 0;
+}
+
+p, ul, ol, blockquote, table, figure {
+    margin-top: 0;
+    margin-bottom: $fd-margin-bottom;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+img {
+    line-height: 0;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    transition: all $fd-animation--speed ease-in;
+    color: --fd-color-action;
     &:hover {
-        color: docs-color(action, 4);
+        color: fd-color-state("hover", "action");
+    }
+    &:active,
+    &.is-active,
+    &[aria-selected="true"] {
+      color: fd-color-state("selected", "action");
+      outline: none;
+    }
+    &:focus {
+      outline-style: dotted;
+      outline-width: 1px;
+      outline-color: fd-color-state("hover", "action");
+    }
+    &[aria-disabled="true"],
+    &.is-disabled,
+    &:disabled {
+      outline-color: fd-color-state("disabled", "action");
+      cursor: not-allowed;
     }
 }
 
 ul, ol {
     margin-left: 40px;
+    padding: 0;
 }
 
 hr {
@@ -85,6 +140,7 @@ pre {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: $fd-font-family--code;
 
     code {
       padding: 0;
@@ -102,6 +158,7 @@ pre {
     color: #c7254e;
     background-color: #f9f2f4;
     border-radius: 4px;
+    font-family: $fd-font-family--code;
 }
 
   blockquote {
