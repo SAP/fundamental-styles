@@ -8,6 +8,15 @@ html {
     }
 }
 
+.docs-container {
+   margin-left: 0;
+    width: 100%;
+    display: flex;
+       @include media("<=tablet") {
+        display: inline;
+       }
+    }
+
 body {
     font-family: '72', sans-serif;
     overflow: hidden;
@@ -170,23 +179,8 @@ pre {
       background: #fffde4;
   }
 
-
-.docs-container {
-    margin-left: 0;
-    width: 100%;
-    display: flex;
-    @include media("<=tablet") {
-        display: inline;
-    }
-}
-
 .docs-headers-h2 {
     flex-shrink: 0;
-}
-
-.docs-landing-page {
-    width: 100%;
-    min-width: 1024px;
 }
 
 .docs-table {

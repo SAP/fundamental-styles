@@ -1,11 +1,19 @@
-<div class="search-box">
-    <span class="sap-icon--search search-box__icon"></span>
-    <input type="text"
-           id="search-input"
-           class=" search-box__input"
-           placeholder="{{site.data.strings.search_placeholder_text}}">
-    <ul id="results-container"
-        class="search-box__results"></ul>
+<div class="search-container">
+    <div class="fd-popover">
+        <div class="fd-popover__control">
+            <div aria-label="Image label" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
+                <div class="fd-input-group">
+                    <input type="text" class="fd-input" id="search-input" placeholder="{{site.data.strings.search_placeholder_text}}">
+                    <span class="fd-input-group__addon fd-input-group__addon--button">
+                        <button class=" fd-button--light sap-icon--search"></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="F4GcX348b">
+            <ul id="results-container" class="fd-menu__list"></ul>
+        </div>
+    </div>
 </div>
 
 <script src="https://unpkg.com/simple-jekyll-search@1.7.2/dest/simple-jekyll-search.min.js"></script>
@@ -14,7 +22,7 @@
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
         json: '{{site.baseurl}}/js/search.json',
-        searchResultTemplate: '<li class="search-box__results-links"><a href="{{site.baseurl}}{url}" title="{{page.title | replace: "\'", "\"}}">{folder} > {title}</a></li>',
+        searchResultTemplate: '<li class="fd-menu__item"><a href="{{site.baseurl}}{url}" title="{{page.title | replace: "\'", "\"}}">{folder} > {title}</a></li>',
         noResultsText: '<li class="no-search-results">{{site.data.strings.search_no_results_text}}</li>',
         limit: 10,
         fuzzy: true,

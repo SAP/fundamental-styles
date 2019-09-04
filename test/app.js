@@ -31,6 +31,7 @@ env.addFilter('component_css', (sassFile) => {
         return sass.renderSync({
             file: scss_filename
         }).css.toString();
+        //TO DO: run postcss config
     } catch (err) {
         signale.error(`component_css: ${err.message}`);
     }
