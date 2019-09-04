@@ -1,12 +1,7 @@
-
-// hybris theme vars
-//@import "./theme/fundamental";
-//@import "./theme/dark";
-//@import "./theme/belize";
-@import "./settings";
-@import "./fonts";
-@import "./icons";
-@import "./core";
-@import "./layout";
 @import "./components";
+@import "./core/root";
+@import "./fonts";
 @import "./helpers";
+@import "./icons/icon";
+@import "./layout";
+@import "./settings";
