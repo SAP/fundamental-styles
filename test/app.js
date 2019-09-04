@@ -9,7 +9,7 @@ const signale = require('signale');
 const TEMPLATE_DIRECTORY = path.join(__dirname, 'templates');
 const MODULES_DIRECTORY = path.join(__dirname, 'modules');
 const PUBLIC_DIRECTORY = path.join(__dirname, 'public');
-const COMPONENTS_DIRECTORY = path.join(__dirname, '..', 'styles');
+const COMPONENTS_DIRECTORY = path.join(__dirname, '..', 'src');
 
 const GLOBALS = {
     namespace: 'fd'
