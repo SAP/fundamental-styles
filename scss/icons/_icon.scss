@@ -2,7 +2,7 @@
 @import "./mixins";
 @import "../mixins";
 
-$fd-scss-icons-path: "" !default;
+$fd-scss-icons-path: "./icons/" !default;
 
 @if variable-exists(fd-icons-path) {
   $fd-scss-icons-path: $fd-icons-path;

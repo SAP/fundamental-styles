@@ -84,6 +84,7 @@ $block: #{$fd-namespace}-action-bar;
     }
     &__title {
         @include fd-reset();
+        @include fd-heading();
         @include fd-type("4");
         @include fd-action-bar-responsive();
         margin-bottom: fd-space(base);
