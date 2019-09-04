@@ -1,5 +1,6 @@
 @import "./settings";
 @import "./mixins";
+@import "../mixins";
 
 $fd-scss-icons-path: "" !default;
 
@@ -26,6 +27,7 @@ $block: sap-icon;
 
 /* class per icon */
 [class*="#{$block}"] {
+  @include fd-reset();
   @include fd-icon-base();
 }
 

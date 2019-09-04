@@ -25,17 +25,18 @@ $block: #{$fd-namespace}-popover;
   $fd-popover-transition-params: $fd-animation--speed !default;
   $fd-popover-transition-distance: -15px !default;
 
-    // Consider removing this reset, look into its use and seeing font-size/line-height/color...
-    // @include fd-reset;
+    @include fd-reset();
     position: relative;
     display: inline-block;
 
     &__control {
+      @include fd-reset();
       position: relative;
       margin-left: 0;
       @include action-cursor();
     }
     &__body {
+      @include fd-reset();
       border: $fd-popover-border;
       position: absolute;
       white-space: nowrap;

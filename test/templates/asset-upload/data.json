@@ -1,6 +1,6 @@
 {
-    "id": "file-upload",
-    "name": "File Upload",
+    "id": "asset-upload",
+    "name": "Asset Upload",
     "properties": {
         "text": "Upload Link",
         "message": ""

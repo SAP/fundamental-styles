@@ -37,7 +37,6 @@ $block: #{$fd-namespace}-panel;
     @include fd-var-color("background-color", $fd-panel-background-color, --fd-panel-background-color);
     border-radius: $fd-border-radius;
     border-style: solid;
-    //border-width: $fd-panel-border-width;
     @include fd-var-size("border-width", $fd-panel-border-width, --fd-panel-border-width);
     @include fd-var-color("border-color", $fd-panel-border-color, --fd-panel-border-color);
 
@@ -48,6 +47,7 @@ $block: #{$fd-namespace}-panel;
     }
     box-shadow: 0 5px 20px 0 var(--fd-panel-box-shadow-color);
     &__header {
+        @include fd-reset();
         min-height: fd-space(10);
         display: flex;
         align-items: center;
@@ -57,6 +57,9 @@ $block: #{$fd-namespace}-panel;
         padding: $fd-panel-padding;
         @include fd-type("-1");
         @include fd-var-color("color", fd-color("text", 3), --fd-color-text-3);
+    }
+    &__head {
+      @include fd-reset();
     }
     &__title {
         @include fd-reset();
@@ -86,7 +89,6 @@ $block: #{$fd-namespace}-panel;
     &__filters {
         @include fd-reset();
         padding: $fd-panel-filters-padding;
-        //border-bottom: solid 1px $fd-panel-filters-border-color;
         border-bottom-style: solid;
         border-bottom-width: 1px;
         @include fd-var-color("border-bottom-color", $fd-panel-filters-border-color, --fd-panel-divider-color);

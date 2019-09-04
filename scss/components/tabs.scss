@@ -80,6 +80,7 @@ $block: #{$fd-namespace}-tabs;
     }
   }
   &__panel {
+    @include fd-reset();
     &[aria-expanded="false"] {
       display: none;
     }

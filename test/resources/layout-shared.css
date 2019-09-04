@@ -18,6 +18,7 @@ body {
   padding: 10px;
   background: beige;
   font-size: 14px;
+  margin: 0;
 }
 
 .btn-playground--emphasized {

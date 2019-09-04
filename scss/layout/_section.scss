@@ -49,6 +49,7 @@ $block: #{$fd-namespace}-section;
         }
     }
     &__header {
+        @include fd-reset();
         min-height: fd-space(10);
         display: flex;
         align-items: center;
@@ -62,9 +63,11 @@ $block: #{$fd-namespace}-section;
         margin-bottom: 0;
     }
     &__actions {
+        @include fd-reset();
         margin-left: auto;
     }
     &__footer {
+        @include fd-reset();
         display: flex;
         justify-content: center;
     }
