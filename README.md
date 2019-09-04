@@ -20,7 +20,7 @@ The library is modular so you can use as little or as much as you need.
 The fully compiled, minified library is available via CDN for inclusion in your application.
 
 ```
-<link href="//unpkg.com/fundamental-styles@latest/dist/fundamental-styles.min.css" rel="stylesheet">
+<link href="//unpkg.com/fundamental-styles@latest/dist/fundamental-styles.css" rel="stylesheet">
 ```
 
 ### NPM Package
@@ -34,7 +34,6 @@ npm install fundamental-styles --save
 ````
 
 > NOTE: We only distribute the fonts, icons and compiled CSS for each component, not the full project or HTML for specific components. 
-
 
 ## Working with the Project
 
@@ -57,20 +56,6 @@ The project has the following prerequisites:
 * [Node LTS](https://nodejs.org/)
 * Ruby (for running the documentation website locally)
 * Docker (for running the visual regression testing framework)
-
-
-## Known Issues
-
-### Configuring icons path when importing SCSS
-
-If you are importing .scss files in your project, the icons path needs to be configured in your project's .scss file before the Fundamental Styles scss import as described below. Please note that the path variable name has to be `$fd-icons-path` in order to override the default value set in `scss/icons/icon.scss`.
-
-<!-- ```
-$fd-icons-path : "../node_modules/fundamental-styles/scss/icons/"; // should be declared before the scss import
-
-@import "../node_modules/fundamental-styles/scss/fundamental-styles.scss";
-
-``` -->
 
 ## Support
 

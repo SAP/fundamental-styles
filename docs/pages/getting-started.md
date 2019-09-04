@@ -29,5 +29,5 @@ npm i fundamental-styles --save
 {:.docs-header-h2}
 
 ```
-https://unpkg.com/fundamental-styles@{{site.library_version}}/dist/fundamental-styles.min.css
+https://unpkg.com/fundamental-styles@{{site.library_version}}/dist/fundamental-styles.css
 ```
