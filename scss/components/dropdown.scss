@@ -127,9 +127,6 @@ $block: #{$fd-namespace}-dropdown;
         &[aria-expanded="true"] {
             @include fd-var-color("color", $fd-forms-color, --fd-color-text-1);
             @include fd-var-color("background-color", $fd-forms-background-color, --fd-color-background-2);
-            @if $fd-support-css-var-fallback {
-              box-shadow: 0 0 0 1px fd-color-state("hover", "action");
-            }
             box-shadow: 0 0 0 1px var(--fd-color-action-hover);
         }
     }

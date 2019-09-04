@@ -2,7 +2,7 @@
 @import "./../functions";
 @import "./../mixins";
 @import "./../core/root";
-//$fd-support-css-var-fallback: true;
+
 $block: #{$fd-namespace}-page;
 .#{$block} {
   $fd-page-background-color: $fd-background-color !default;

@@ -21,7 +21,7 @@ test/visual-regression-tests/backstop_data
 # Generated CSS files
 /docs/_site
 /docs/.*
-docs/css/fundamental-styles-ie11.css
+docs/css/fundamental-styles.css
 test/visual-regression-tests/config/backstopConfigCI.json
 docs/_config-library.yml
 test/visual-regression-tests/resources/reference_images/visual_regression_fundamental_DS_Store_0_example-containerfd-DS_Store_0_desktop.png

@@ -41,10 +41,6 @@ $block: #{$fd-namespace}-panel;
     @include fd-var-color("border-color", $fd-panel-border-color, --fd-panel-border-color);
 
     @include fd-reset();
-
-    @if $fd-support-css-var-fallback {
-      box-shadow: 0 5px 20px 0 $fd-panel-box-shadow-color;
-    }
     box-shadow: 0 5px 20px 0 var(--fd-panel-box-shadow-color);
     &__header {
         @include fd-reset();
