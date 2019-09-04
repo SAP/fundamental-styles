@@ -26,7 +26,6 @@ $block: sap-icon;
 
 /* class per icon */
 [class*="#{$block}"] {
-  @include fd-reset();
   @include fd-icon-base();
 }
 
