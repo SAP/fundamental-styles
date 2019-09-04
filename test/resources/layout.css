@@ -1,6 +1,55 @@
 body {
   background-color: #EDEFF0;
   transition: background-color 0.25s;
+  padding: 20px;
+}
+.test-label {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.test-header {
+  border-bottom: solid 6px lightgray;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.test-fieldset {
+  font-family: monospace;
+  font-size: 14px;
+  border: solid 2px lightgray;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+
+.test-datacontainer {
+  padding: 5px;
+  background-color: rgba(0,0,0,0.1);
+  position: fixed;
+  right: 10px;
+  bottom: 0;
+  text-align: right;
+  width: 500px;
+  max-width: calc(100vw - 15px);
+  z-index: 10;
+}
+.test-datacontainer textarea {
+  height: 50px;
+}
+.test-datacontainer textarea:focus {
+  height: 80vh;
+}
+.test-datacontainer h2 {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.test-datacontainer h2 code {
+  word-wrap: break-word;
+}
+
+.status {
+  margin-top: 10px;
 }
 
 .remove-spacing {
@@ -9,7 +58,7 @@ body {
 }
 
 #example-container {
-    padding: 20px;
+    padding: 60px;
 }
 
 .btn-playground, .btn-playground--emphasized {
