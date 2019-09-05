@@ -16,7 +16,7 @@ $block: #{$fd-namespace}-notification;
     $fd-notification-darken-background-color: $sapList_Background !default;
 
     $fd-notification-box-shadow: var(--sapContent_Shadow0, $sapContent_Shadow0) !default;
-    
+
     $fd-notification-border-radius: 0.25rem !default;
     $fd-notification-group-border-radius-first-child: 0.25rem 0.25rem 0 0 !default;
     $fd-notification-group-border-radius-last-child: 0 0 0.25rem 0.25rem !default;
@@ -28,7 +28,7 @@ $block: #{$fd-namespace}-notification;
 
     $fd-notification-indicator-border-color-error: var(--sapErrorBorderColor, $sapErrorBorderColor) !default;
     $fd-notification-indicator-border-color-warning: var(--sapWarningBorderColor, $sapWarningBorderColor) !default;
-    $fd-notification-indicator-border-color-success: var(--sapSuccessBorderColor, $sapSuccessBorderColor)!default;
+    $fd-notification-indicator-border-color-success: var(--sapSuccessBorderColor, $sapSuccessBorderColor) !default;
     $fd-notification-indicator-border-color-information: var(--sapInformationBorderColor, $sapInformationBorderColor) !default;
 
     $fd-notification-title-color: var(--sapGroup_TitleTextColor, $sapGroup_TitleTextColor) !default;
@@ -195,7 +195,7 @@ $block: #{$fd-namespace}-notification;
 
     &--error {
         border-left-color: $fd-notification-indicator-border-color-error;
-        
+
         @include fd-rtl() {
             border-right-color: $fd-notification-indicator-border-color-error;
         }
@@ -203,7 +203,7 @@ $block: #{$fd-namespace}-notification;
 
     &--success {
         border-left-color: $fd-notification-indicator-border-color-success;
-        
+
         @include fd-rtl() {
             border-right-color: $fd-notification-indicator-border-color-success;
         }
@@ -211,7 +211,7 @@ $block: #{$fd-namespace}-notification;
 
     &--warning {
         border-left-color: $fd-notification-indicator-border-color-warning;
-        
+
         @include fd-rtl() {
             border-right-color: $fd-notification-indicator-border-color-warning;
         }
@@ -219,7 +219,7 @@ $block: #{$fd-namespace}-notification;
 
     &--information {
         border-left-color: $fd-notification-indicator-border-color-information;
-        
+
         @include fd-rtl() {
             border-right-color: $fd-notification-indicator-border-color-information;
         }
