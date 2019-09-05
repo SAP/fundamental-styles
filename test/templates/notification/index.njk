@@ -1,25 +1,15 @@
----
-title: Notification
-id: notification
-keywords: notification
-sidebar: left-navigation-sidebar
-toc: false
-permalink: components/notification.html
-folder: components
-summary:
----
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./../format.njk" import format %}
 
-{: .docs-intro}
-- **Sizes**: Notifications have 3 sizes: Large (width more than 640px), Medium (width from 320px to 640px) and Small (width up to 320px). The default size is Large (L). It takes 100% of the parent container but can't exceed 60rem. 
-- **Types**: default, success, warning, error, and information.
+{% block content %}
 
-
-## Default Notification
-{% capture default-notification %}
+<h1>Notification</h1>
+{% set example %}
 <div class="fd-notification">
     <div class="fd-notification__header">
         <div class="fd-notification__title">Default Notification Title</div>
-        <button class="fd-button--light sap-icon--decline fd-notification__close"></button>
+        <button class="btn-playground fd-notification__close"></button>
     </div>
     <div class="fd-notification__body">
         <div class="fd-notification__content">
@@ -35,33 +25,28 @@ summary:
             </div>
         </div>
         <div class="fd-notification__footer">
-            <button class="fd-button--light">More Info</button>
+            <button class="btn-playground">More Info</button>
             <div class="fd-notification__actions">
-                <button class="fd-button--positive">Approve</button>
-                <button class="fd-button--negative">Reject</button>
+                <button class="btn-playground">Approve</button>
+                <button class="btn-playground">Reject</button>
             </div>
         </div>
     </div>
 </div>
-{% endcapture %}
 
-{% include display-component.html component=default-notification %}
+<br>
+<br>
 
-
-## Success Notification
-Add the modifier class `fd-notification--success` for Success notification.
-
-{% capture success-notification %}
 <div class="fd-notification fd-notification--success">
     <div class="fd-notification__header">
         <div class="fd-notification__indicator--success"></div>
         <div class="fd-notification__title">This is the notifications title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        <button class="fd-button--light sap-icon--decline fd-notification__close"></button>
+        <button class="btn-playground fd-notification__close"></button>
     </div>
     <div class="fd-notification__body">
         <div class="fd-notification__content">
             <div class="fd-notification__avatar">
-                <span class="fd-identifier fd-identifier--s fd-identifier--circle" aria-label="Wendy Wallace">WW</span>
+                <span>WW</span>
             </div>
             <div class="fd-notification__text">
                 <div class="fd-notification__description">
@@ -73,31 +58,28 @@ Add the modifier class `fd-notification--success` for Success notification.
             </div>
         </div>
         <div class="fd-notification__footer">
-            <button class="fd-button--light">More Info</button>
+            <button class="btn-playground">More Info</button>
             <div class="fd-notification__actions">
-                <button class="fd-button--positive">Approve</button>
-                <button class="fd-button--negative">Reject</button>
+                <button class="btn-playground">Approve</button>
+                <button class="btn-playground">Reject</button>
             </div>
         </div>
     </div>
 </div>
-{% endcapture %}
-{% include display-component.html component=success-notification %}
 
-## Warning Notification
-Add the modifier class `fd-notification--warning` for Warning notification.
+<br>
+<br>
 
-{% capture warning-notification %}
 <div class="fd-notification fd-notification--warning">
     <div class="fd-notification__header">
         <div class="fd-notification__indicator--warning"></div>
         <div class="fd-notification__title">This is the notifications title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        <button class="fd-button--light sap-icon--decline fd-notification__close"></button>
+        <button class="btn-playground fd-notification__close"></button>
     </div>
     <div class="fd-notification__body">
         <div class="fd-notification__content">
             <div class="fd-notification__avatar">
-                <span class="fd-identifier fd-identifier--s fd-identifier--circle" aria-label="Wendy Wallace">WW</span>
+                <span>WW</span>
             </div>
             <div class="fd-notification__text">
                 <div class="fd-notification__description">
@@ -109,32 +91,28 @@ Add the modifier class `fd-notification--warning` for Warning notification.
             </div>
         </div>
         <div class="fd-notification__footer">
-            <button class="fd-button--light">More Info</button>
+            <button class="btn-playground">More Info</button>
             <div class="fd-notification__actions">
-                <button class="fd-button--positive">Approve</button>
-                <button class="fd-button--negative">Reject</button>
+                <button class="btn-playground">Approve</button>
+                <button class="btn-playground">Reject</button>
             </div>
         </div>
     </div>
 </div>
-{% endcapture %}
-{% include display-component.html component=warning-notification %}
 
+<br>
+<br>
 
-## Error Notification
-Add the modifier class `fd-notification--error` for Error notification.
-
-{% capture error-notification %}
 <div class="fd-notification fd-notification--error">
     <div class="fd-notification__header">
         <div class="fd-notification__indicator--error"></div>
         <div class="fd-notification__title">This is the notifications title</div>
-        <button class="fd-button--light sap-icon--decline fd-notification__close"></button>
+        <button class="btn-playground fd-notification__close"></button>
     </div>
     <div class="fd-notification__body">
         <div class="fd-notification__content">
             <div class="fd-notification__avatar">
-                <span class="fd-identifier fd-identifier--s fd-has-background-color-accent-9" aria-label="Wendy Wallace">WW</span>
+                <span>WW</span>
             </div>
             <div class="fd-notification__text">
                 <div class="fd-notification__description">
@@ -146,32 +124,28 @@ Add the modifier class `fd-notification--error` for Error notification.
             </div>
         </div>
         <div class="fd-notification__footer">
-            <button class="fd-button--light">More Info</button>
+            <button class="btn-playground">More Info</button>
             <div class="fd-notification__actions">
-                <button class="fd-button--positive">Approve</button>
-                <button class="fd-button--negative">Reject</button>
+                <button class="btn-playground">Approve</button>
+                <button class="btn-playground">Reject</button>
             </div>
         </div>
     </div>
 </div>
-{% endcapture %}
-{% include display-component.html component=error-notification %}
 
+<br>
+<br>
 
-## Information Notification
-Add the modifier class `fd-notification--information` for Information notification.
-
-{% capture information-notification %}
 <div class="fd-notification fd-notification--information">
     <div class="fd-notification__header">
         <div class="fd-notification__indicator--information"></div>
         <div class="fd-notification__title">Information notification title</div>
-        <button class="fd-button--light sap-icon--decline fd-notification__close"></button>
+        <button class="btn-playground fd-notification__close"></button>
     </div>
     <div class="fd-notification__body">
         <div class="fd-notification__content">
             <div class="fd-notification__avatar">
-                <span class="fd-identifier fd-identifier--s" aria-label="Wendy Wallace">WW</span>
+                <span>WW</span>
             </div>
             <div class="fd-notification__text">
                 <div class="fd-notification__description">
@@ -183,32 +157,35 @@ Add the modifier class `fd-notification--information` for Information notificati
             </div>
         </div>
         <div class="fd-notification__footer">
-            <button class="fd-button--light">More Info</button>
+            <button class="btn-playground">More Info</button>
             <div class="fd-notification__actions">
-                <button class="fd-button--positive">Approve</button>
-                <button class="fd-button--negative">Reject</button>
+                <button class="btn-playground">Approve</button>
+                <button class="btn-playground">Reject</button>
             </div>
         </div>
     </div>
 </div>
-{% endcapture %}
-{% include display-component.html component=information-notification %}
 
 
-## Medium Size Notification
-Medium (m) size notifications have width from 320px to 640px. Include the modifier class `fd-notification--m` to achieve medium size notification.
+{% endset %}
+{{- format(example) -}}
 
-{% capture medium-notification %}
+<br><br>
+
+<h1>Medium Size Notification</h1>
+
+<!-- output the component example and the code snippet -->
+{% set example %}
 <div class="fd-notification fd-notification--success fd-notification--m">
     <div class="fd-notification__header">
         <div class="fd-notification__indicator--success"></div>
         <div class="fd-notification__title">This is the notifications title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        <button class="fd-button--light sap-icon--decline fd-notification__close"></button>
+        <button class="btn-playground fd-notification__close"></button>
     </div>
     <div class="fd-notification__body">
         <div class="fd-notification__content">
             <div class="fd-notification__avatar">
-                <span class="fd-identifier fd-identifier--s fd-identifier--circle" aria-label="Wendy Wallace">WW</span>
+                <span>WW</span>
             </div>
             <div class="fd-notification__text">
                 <div class="fd-notification__description">
@@ -220,32 +197,32 @@ Medium (m) size notifications have width from 320px to 640px. Include the modifi
             </div>
         </div>
         <div class="fd-notification__footer">
-            <button class="fd-button--light">More Info</button>
+            <button class="btn-playground">More Info</button>
             <div class="fd-notification__actions">
-                <button class="fd-button--positive">Approve</button>
-                <button class="fd-button--negative">Reject</button>
+                <button class="btn-playground">Approve</button>
+                <button class="btn-playground">Reject</button>
             </div>
         </div>
     </div>
 </div>
-{% endcapture %}
-{% include display-component.html component=medium-notification %}
+{% endset %}
+{{- format(example) -}}
 
+<br><br>
 
-## Small Size Notification
-Small (s) size notifications have width 320px . Include the modifier class `fd-notification--s` to achieve small size notification.
+<h1>Small Size Notification</h1>
 
-{% capture small-notification %}
+{% set example %}
 <div class="fd-notification fd-notification--information fd-notification--s">
     <div class="fd-notification__header">
         <div class="fd-notification__indicator--information"></div>
         <div class="fd-notification__title">This is the notifications title</div>
-        <button class="fd-button--light sap-icon--decline fd-notification__close"></button>
+        <button class="btn-playground fd-notification__close"></button>
     </div>
     <div class="fd-notification__body">
         <div class="fd-notification__content">
             <div class="fd-notification__avatar">
-                <span class="fd-identifier fd-identifier--s" aria-label="Wendy Wallace">WW</span>
+                <span>WW</span>
             </div>
             <div class="fd-notification__text">
                 <div class="fd-notification__description">
@@ -257,33 +234,33 @@ Small (s) size notifications have width 320px . Include the modifier class `fd-n
             </div>
         </div>
         <div class="fd-notification__footer">
-            <button class="fd-button--light">More Info</button>
+            <button class="btn-playground">More Info</button>
             <div class="fd-notification__actions">
-                <button class="fd-button--positive">Approve</button>
-                <button class="fd-button--negative">Reject</button>
+                <button class="btn-playground">Approve</button>
+                <button class="btn-playground">Reject</button>
             </div>
         </div>
     </div>
 </div>
-{% endcapture %}
-{% include display-component.html component=small-notification %}
+{% endset %}
+{{- format(example) -}}
 
+<br><br>
 
-## Notification Group
-Notifications can be grouped together in a container with a class `fd-notification--group`.
+<h1>Notification Group</h1>
 
-{% capture group-notification %}
+{% set example %}
 <div class="fd-notification--group">
     <div class="fd-notification fd-notification--success fd-notification--m">
         <div class="fd-notification__header">
             <div class="fd-notification__indicator--success"></div>
             <div class="fd-notification__title">This is the notifications title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-            <button class="fd-button--light sap-icon--decline fd-notification__close"></button>
+            <button class="btn-playground fd-notification__close"></button>
         </div>
         <div class="fd-notification__body">
             <div class="fd-notification__content">
                 <div class="fd-notification__avatar">
-                    <span class="fd-identifier fd-identifier--s fd-identifier--circle" aria-label="Wendy Wallace">WW</span>
+                    <span>WW</span>
                 </div>
                 <div class="fd-notification__text">
                     <div class="fd-notification__description">
@@ -295,10 +272,10 @@ Notifications can be grouped together in a container with a class `fd-notificati
                 </div>
             </div>
             <div class="fd-notification__footer">
-                <button class="fd-button--light">More Info</button>
+                <button class="btn-playground">More Info</button>
                 <div class="fd-notification__actions">
-                    <button class="fd-button--positive">Approve All</button>
-                    <button class="fd-button--negative">Reject All</button>
+                    <button class="btn-playground">Approve All</button>
+                    <button class="btn-playground">Reject All</button>
                 </div>
             </div>
         </div>
@@ -307,12 +284,12 @@ Notifications can be grouped together in a container with a class `fd-notificati
         <div class="fd-notification__header">
             <div class="fd-notification__indicator--warning"></div>
             <div class="fd-notification__title">This is the notifications title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-            <button class="fd-button--light sap-icon--decline fd-notification__close"></button>
+            <button class="btn-playground fd-notification__close"></button>
         </div>
         <div class="fd-notification__body">
             <div class="fd-notification__content">
                 <div class="fd-notification__avatar">
-                    <span class="fd-identifier fd-identifier--s fd-identifier--circle" aria-label="Wendy Wallace">WW</span>
+                    <span>WW</span>
                 </div>
                 <div class="fd-notification__text">
                     <div class="fd-notification__description">
@@ -324,10 +301,10 @@ Notifications can be grouped together in a container with a class `fd-notificati
                 </div>
             </div>
             <div class="fd-notification__footer">
-                <button class="fd-button--light">More Info</button>
+                <button class="btn-playground">More Info</button>
                 <div class="fd-notification__actions">
-                    <button class="fd-button--positive">Approve</button>
-                    <button class="fd-button--negative">Reject</button>
+                    <button class="btn-playground">Approve</button>
+                    <button class="btn-playground">Reject</button>
                 </div>
             </div>
         </div>
@@ -336,12 +313,12 @@ Notifications can be grouped together in a container with a class `fd-notificati
         <div class="fd-notification__header">
             <div class="fd-notification__indicator--error"></div>
             <div class="fd-notification__title">This is the notifications title</div>
-            <button class="fd-button--light sap-icon--decline fd-notification__close"></button>
+            <button class="btn-playground fd-notification__close"></button>
         </div>
         <div class="fd-notification__body">
             <div class="fd-notification__content">
                 <div class="fd-notification__avatar">
-                    <span class="fd-identifier fd-identifier--s fd-has-background-color-accent-9" aria-label="Wendy Wallace">WW</span>
+                    <span>WW</span>
                 </div>
                 <div class="fd-notification__text">
                     <div class="fd-notification__description">
@@ -353,10 +330,10 @@ Notifications can be grouped together in a container with a class `fd-notificati
                 </div>
             </div>
             <div class="fd-notification__footer">
-                <button class="fd-button--light">More Info</button>
+                <button class="btn-playground">More Info</button>
                 <div class="fd-notification__actions">
-                    <button class="fd-button--positive">Approve</button>
-                    <button class="fd-button--negative">Reject</button>
+                    <button class="btn-playground">Approve</button>
+                    <button class="btn-playground">Reject</button>
                 </div>
             </div>
         </div>
@@ -365,12 +342,12 @@ Notifications can be grouped together in a container with a class `fd-notificati
         <div class="fd-notification__header">
             <div class="fd-notification__indicator--information"></div>
             <div class="fd-notification__title">This is the notifications title</div>
-            <button class="fd-button--light sap-icon--decline fd-notification__close"></button>
+            <button class="btn-playground fd-notification__close"></button>
         </div>
         <div class="fd-notification__body">
             <div class="fd-notification__content">
                 <div class="fd-notification__avatar">
-                    <span class="fd-identifier fd-identifier--s" aria-label="Wendy Wallace">WW</span>
+                    <span>WW</span>
                 </div>
                 <div class="fd-notification__text">
                     <div class="fd-notification__description">
@@ -382,80 +359,16 @@ Notifications can be grouped together in a container with a class `fd-notificati
                 </div>
             </div>
             <div class="fd-notification__footer">
-                <button class="fd-button--light">More Info</button>
+                <button class="btn-playground">More Info</button>
                 <div class="fd-notification__actions">
-                    <button class="fd-button--positive">Approve</button>
-                    <button class="fd-button--negative">Reject</button>
+                    <button class="btn-playground">Approve</button>
+                    <button class="btn-playground">Reject</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
-{% endcapture %}
-{% include display-component.html component=group-notification %}
+{% endset %}
+{{- format(example) -}}
 
-
-# Right to left support
-{% capture rtl-notification %}
-<div class="fd-notification--group" dir="rtl">
-    <div class="fd-notification fd-notification--success fd-notification--m">
-        <div class="fd-notification__header">
-            <div class="fd-notification__indicator--success"></div>
-            <div class="fd-notification__title">حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانيأسي.</div>
-            <button class="fd-button--light sap-icon--decline fd-notification__close"></button>
-        </div>
-        <div class="fd-notification__body">
-            <div class="fd-notification__content">
-                <div class="fd-notification__avatar">
-                    <span class="fd-identifier fd-identifier--s" aria-label="Wendy Wallace">WW</span>
-                </div>
-                <div class="fd-notification__text">
-                    <div class="fd-notification__description">
-                        حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانيأسي.
-                    </div>
-                    <div class="fd-notification__metadata">
-                        حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانيأسي.
-                    </div>
-                </div>
-            </div>
-            <div class="fd-notification__footer">
-                <button class="fd-button--light">المزيد</button>
-                <div class="fd-notification__actions">
-                    <button class="fd-button--positive">موافق</button>
-                    <button class="fd-button--negative">إلغاء</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="fd-notification fd-notification--warning fd-notification--m">
-        <div class="fd-notification__header">
-            <div class="fd-notification__indicator--warning"></div>
-            <div class="fd-notification__title">حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانيأسي.</div>
-            <button class="fd-button--light sap-icon--decline fd-notification__close"></button>
-        </div>
-        <div class="fd-notification__body">
-            <div class="fd-notification__content">
-                <div class="fd-notification__avatar">
-                    <span class="fd-identifier fd-identifier--s fd-identifier--circle" aria-label="Wendy Wallace">WW</span>
-                </div>
-                <div class="fd-notification__text">
-                    <div class="fd-notification__description">
-                       حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانيأسي.
-                    </div>
-                    <div class="fd-notification__metadata">
-                       حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانيأسي.
-                    </div>
-                </div>
-            </div>
-            <div class="fd-notification__footer">
-                <button class="fd-button--light">المزيد</button>
-                <div class="fd-notification__actions">
-                    <button class="fd-button--positive">موافق</button>
-                    <button class="fd-button--negative">إلغاء</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-{% endcapture %}
-{% include display-component.html component=rtl-notification %}
+{% endblock %}

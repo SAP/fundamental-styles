@@ -191,8 +191,8 @@ multi-input:
   updated: 1.2.1
 
 notification:
-  since: 0.0.0
-  updated: 0.0.0
+  since: 1.1.0
+  updated:
 
 pagination:
   since: 1.0.0

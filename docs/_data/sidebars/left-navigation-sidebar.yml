@@ -165,7 +165,7 @@ entries:
       output: web
 
     - title: Notification
-      meta: /components/notification.html
+      url: /components/notification.html
       output: web
 
     - title: Pagination

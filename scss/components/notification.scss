@@ -8,19 +8,41 @@ $block: #{$fd-namespace}-notification;
 .#{$block} {
     // variables
     $fd-notification-max-width: 60rem !default;
+    $fd-notification-max-width-m: 640px !default;
+    $fd-notification-min-width-m: 320px !default;
+    $fd-notification-width-s: 320px !default;
+
     $fd-notification-background-color: var(--sapList_Background, $sapList_Background) !default;
+    $fd-notification-darken-background-color: $sapList_Background !default;
+
     $fd-notification-box-shadow: var(--sapContent_Shadow0, $sapContent_Shadow0) !default;
+    
     $fd-notification-border-radius: 0.25rem !default;
+    $fd-notification-group-border-radius-first-child: 0.25rem 0.25rem 0 0 !default;
+    $fd-notification-group-border-radius-last-child: 0 0 0.25rem 0.25rem !default;
+
+    $fd-notification-indicator-color-error: var(--sapErrorColor, $sapErrorColor) !default;
+    $fd-notification-indicator-color-warning: var(--sapWarningColor, $sapWarningColor) !default;
+    $fd-notification-indicator-color-success: var(--sapSuccessColor, $sapSuccessColor) !default;
+    $fd-notification-indicator-color-information: var(--sapInformationColor, $sapInformationColor) !default;
+
+    $fd-notification-indicator-border-color-error: var(--sapErrorBorderColor, $sapErrorBorderColor) !default;
+    $fd-notification-indicator-border-color-warning: var(--sapWarningBorderColor, $sapWarningBorderColor) !default;
+    $fd-notification-indicator-border-color-success: var(--sapSuccessBorderColor, $sapSuccessBorderColor)!default;
+    $fd-notification-indicator-border-color-information: var(--sapInformationBorderColor, $sapInformationBorderColor) !default;
+
+    $fd-notification-title-color: var(--sapGroup_TitleTextColor, $sapGroup_TitleTextColor) !default;
+    $fd-notification-content-text-color: var(--sapContent_LabelColor, $sapContent_LabelColor) !default;
 
     // mixins
     @mixin fd-priority-indicator($type) {
         margin-top: 1px;
-        padding: 1rem 0.5rem 1rem 1rem;
+        padding: 1rem 0.5rem 0 1rem;
         @include fd-icon("message-#{$type}", "m");
     }
 
 
-    // CONTAINER
+    // ------------------------ CONTAINER ------------------------
     @include fd-reset();
     max-width: $fd-notification-max-width;
     background-color: $fd-notification-background-color;
@@ -30,53 +52,77 @@ $block: #{$fd-namespace}-notification;
     border-left-color: var(--sapNeutralBorderColor, $sapNeutralBorderColor);
     margin-bottom: 0.5rem;
 
+    @include fd-rtl() {
+        border-left: none;
+        border-right: 0.375rem solid;
+        border-right-color: var(--sapNeutralBorderColor, $sapNeutralBorderColor);
+    }
+
 
     // ------------------------ HEADER ------------------------
     &__header {
         @include fd-reset();
-        box-shadow: inset 0 -0.0625rem var(--sapPageHeader_BorderColor, $sapPageHeader_BorderColor);
         display: flex;
+        box-shadow: inset 0 -0.0625rem var(--sapPageHeader_BorderColor, $sapPageHeader_BorderColor);
     }
 
     &__indicator {
         &--error {
             @include fd-priority-indicator('error');
-            color: var(--sapErrorColor, $sapErrorColor);
+            color: $fd-notification-indicator-color-error;
         }
 
         &--success {
             @include fd-priority-indicator('success');
-            color: var(--sapSuccessColor, $sapSuccessColor);
+            color: $fd-notification-indicator-color-success;
         }
 
         &--warning {
             @include fd-priority-indicator('warning');
-            color: var(--sapErrorColor, $sapErrorColor);
+            color: $fd-notification-indicator-color-warning;
         }
 
         &--information {
             @include fd-priority-indicator('information');
-            color: var(--sapInformationColor, $sapInformationColor);
+            color: $fd-notification-indicator-color-information;
         }
     }
 
     &__title {
         @include fd-reset();
-        color: var(--sapGroup_TitleTextColor, $sapGroup_TitleTextColor);
+        color: $fd-notification-title-color;
         padding: 1rem 0;
         margin-right: 1rem;
         font-weight: 700;
         width: 100%;
 
+        @include fd-rtl() {
+            margin-right: 0;
+            margin-left: 1rem;
+        }
+
         &:first-child {
             padding-left: 1rem;
+
+            @include fd-rtl() {
+                padding-left: 0;
+                padding-right: 1rem;
+            }
         }
     }
 
     &__close {
         position: relative;
-        top: 0.5rem;
-        right: 0.5rem;
+        top: 0.35rem;
+        right: 0.35rem;
+        min-width: 36px;
+        min-height: 36px;
+        width: 36px;
+        height: 36px;
+
+        @include fd-rtl() {
+            right: -0.35rem;
+        }
     }
 
     // ------------------------ BODY ------------------------
@@ -97,6 +143,12 @@ $block: #{$fd-namespace}-notification;
     &__avatar {
         @include fd-reset();
         margin-right: 1rem;
+        min-width: 2rem;
+        min-height: 2rem;
+        @include fd-rtl() {
+            margin-right: 0;
+            margin-left: 1rem;
+        }
     }
 
     &__text {
@@ -107,13 +159,13 @@ $block: #{$fd-namespace}-notification;
 
     &__description {
         @include fd-reset();
-        color: var(--sapContent_LabelColor, $sapContent_LabelColor);
+        color: $fd-notification-content-text-color;
     }
 
     &__metadata {
         @include fd-reset();
+        color: $fd-notification-content-text-color;
         padding-top: 0.375rem;
-        color: var(--sapContent_LabelColor, $sapContent_LabelColor);
     }
 
     // ------------------------ FOOTER ------------------------
@@ -121,8 +173,8 @@ $block: #{$fd-namespace}-notification;
         @include fd-reset();
         width: 40%;
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
         padding: 0.5rem 0.5rem 0.5rem 1rem;
 
         & > * {
@@ -142,21 +194,39 @@ $block: #{$fd-namespace}-notification;
     }
 
     &--error {
-        border-left-color: var(--sapErrorBorderColor, $sapErrorBorderColor);
+        border-left-color: $fd-notification-indicator-border-color-error;
+        
+        @include fd-rtl() {
+            border-right-color: $fd-notification-indicator-border-color-error;
+        }
     }
 
     &--success {
-        border-left-color: var(--sapSuccessBorderColor, $sapSuccessBorderColor);
+        border-left-color: $fd-notification-indicator-border-color-success;
+        
+        @include fd-rtl() {
+            border-right-color: $fd-notification-indicator-border-color-success;
+        }
     }
 
     &--warning {
-        border-left-color: var(--sapWarningBorderColor, $sapWarningBorderColor);
+        border-left-color: $fd-notification-indicator-border-color-warning;
+        
+        @include fd-rtl() {
+            border-right-color: $fd-notification-indicator-border-color-warning;
+        }
     }
 
     &--information {
-        border-left-color: var(--sapInformationBorderColor, $sapInformationBorderColor);
+        border-left-color: $fd-notification-indicator-border-color-information;
+        
+        @include fd-rtl() {
+            border-right-color: $fd-notification-indicator-border-color-information;
+        }
     }
 
+
+    // ------------------------ NOTIFICATION SIZES ------------------------
     &--m,
     &--s {
         .#{$block}__body {
@@ -173,40 +243,21 @@ $block: #{$fd-namespace}-notification;
     }
 
     &--m {
-        max-width: 640px;
-        min-width: 320px;
+        max-width: $fd-notification-max-width-m;
+        min-width: $fd-notification-min-width-m;
     }
 
     &--s {
-        max-width: 320px;
+        width: $fd-notification-width-s;
     }
 
-
+    // ------------------------ NOTIFICATION GROUP ------------------------
     &--group {
         & > * {
             border-radius: 0;
 
-            .#{$block}__content {
-                padding-top: 0.75rem;
-                padding-bottom: 0.5rem;
-            }
-
-            .#{$block}__title {
-                padding: 0.75rem 0;
-            }
-
-            .#{$block}__indicator {
-                &--error,
-                &--success,
-                &--warning,
-                &--information {
-                    padding-top: 0.75rem;
-                    padding-bottom: 0.75rem;
-                }
-            }
-
             &:not(:first-child) {
-                background-color: darken($sapList_Background, 2);
+                background-color: darken($fd-notification-darken-background-color, 2);
                 .#{$block}__header {
                     box-shadow: none;
                 }
@@ -217,11 +268,45 @@ $block: #{$fd-namespace}-notification;
             margin-bottom: 0;
 
             &:first-child {
-                border-radius: 0.25rem 0.25rem 0 0;
+                border-radius: $fd-notification-group-border-radius-first-child;
             }
 
             &:last-child {
-                border-radius: 0 0 0.25rem 0.25rem;
+                border-radius: $fd-notification-group-border-radius-last-child;
+            }
+
+            &:only-child {
+                border-radius: $fd-notification-border-radius;
+            }
+        }
+
+        .#{$block}__content {
+            padding-top: 0.75rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .#{$block}__title {
+            padding: 0.75rem 0;
+        }
+
+        .#{$block}__close {
+            top: 0.1875rem;
+            right: 0.1875rem;
+        }
+
+        @include fd-rtl() {
+            .#{$block}__close {
+                right: -0.1875rem;
+            }
+        }
+
+        .#{$block}__indicator {
+            &--error,
+            &--success,
+            &--warning,
+            &--information {
+                padding-top: 0.75rem;
+                padding-bottom: 0.75rem;
             }
         }
     }
