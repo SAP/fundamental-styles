@@ -7,7 +7,7 @@
     "build": "npm run style:remove && npm run style:compile && npm run style:postCSS && npm run style:assets",
     "build:prod": "NODE_ENV=production npm run build",
     "deploy": "gh-pages -d docs/_site",
-    "docs:compile": "npm run build && npm run docs:config && cp scss/icons/SAP-icons.woff docs/css/; cp dist/fundamental-styles.css docs/css",
+    "docs:compile": "npm run build && npm run docs:config; cp dist/fundamental-styles.css docs/css",
     "docs:config": "./scripts/create-library-config.js",
     "docs:prod": "npm run docs:compile && cd docs && bundle install && bundle exec jekyll build --config _config.yml,_config-library.yml,_config-prod.yml && cd ..",
     "docs": "npm run docs:compile && cd docs && bundle install && bundle exec jekyll build --config _config.yml,_config-library.yml && cd ..",
