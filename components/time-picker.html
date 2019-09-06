@@ -27,7 +27,7 @@
 </script>
 <!-- End Google Tag Manager -->
 
-<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1559849572474143358">
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1567795225932373007">
 <link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,9 +43,12 @@
 
 <body>
     
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M953JX6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M953JX6"
+                height="0"
+                width="0"
+                style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     
     <div class="docs-wrapper">
 
@@ -65,7 +68,7 @@
         <div class="docs-top-nav__support fd-has-float-right">
 
             <span class="fd-has-align-items-center fd-has-margin-right-small">
-                <span>v0.1.0</span>
+                <span>v0.2.0</span>
                 <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
                     <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
                         <title>GitHub</title>
@@ -96,23 +99,36 @@
         <div class="docs-container">
             <!-- Sidebar Column -->
             
-                <div class="side-nav" id="tg-sb-sidebar">
-                    
+            <div class="side-nav"
+                 id="tg-sb-sidebar">
+                
 
-<div class="search-box">
-    <span class="sap-icon--search search-box__icon"></span>
-    <input type="text" id="search-input" class=" search-box__input" placeholder="search...">
-    <ul id="results-container" class="search-box__results"></ul>
+<div class="search-container">
+    <div class="fd-popover">
+        <div class="fd-popover__control">
+            <div aria-label="Image label" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
+                <div class="fd-input-group">
+                    <input type="text" class="fd-input" id="docs-search" placeholder="search...">
+                    <span class="fd-input-group__addon fd-input-group__addon--button">
+                        <button class=" fd-button--light sap-icon--search"></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="F4GcX348b">
+            <ul id="results-container" class="fd-menu__list"></ul>
+        </div>
+    </div>
 </div>
 
 <script src="https://unpkg.com/simple-jekyll-search@1.7.2/dest/simple-jekyll-search.min.js"></script>
 <script type="text/javascript">
     SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
+        searchInput: document.getElementById('docs-search'),
         resultsContainer: document.getElementById('results-container'),
         json: '/fundamental-styles/js/search.json',
-        searchResultTemplate: '<li class="search-box__results-links"><a href="/fundamental-styles{url}" title="Time Picker">{folder} > {title}</a></li>',
-        noResultsText: '<li class="no-search-results">No results found</li>',
+        searchResultTemplate: '<li class="fd-menu__item"><a href="/fundamental-styles{url}" title="Time Picker">{folder} > {title}</a></li>',
+        noResultsText: '<li class="fd-menu__item">No results found</li>',
         limit: 10,
         fuzzy: true,
     });
@@ -120,571 +136,610 @@
 
 
 
-
 <ul class="side-nav__links-container">
+    
+    
+    
 
     
-        
 
+    
+    <li class="side-nav__headers">
         
+        <a class="side-nav__headers-link"
+           href="/fundamental-styles/getting-started.html">getting started</a>
+        <ul>
+            
+        </ul>
+        <hr class="side-nav__seperator">
+    </li>
+    
+    
+    
 
+    
+
+    
+    <li class="side-nav__headers">
+        
+        <a class="side-nav__headers-link"
+           href="/fundamental-styles/foundation/index.html">foundation</a>
+        <ul>
             
-            <li class="side-nav__headers">
             
-                <a class="side-nav__headers-link" href="/fundamental-styles/getting-started.html">getting started</a>
-                <ul >
-                    
-                </ul>
-                <hr class="side-nav__seperator">
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/foundation/spacing.html"
+                   class="side-nav__links-link">Spacing</a>
             </li>
-        
-    
-        
-
-        
-
             
-            <li class="side-nav__headers">
             
-                <a class="side-nav__headers-link" href="/fundamental-styles/foundation/index.html">foundation</a>
-                <ul >
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/foundation/colors.html" class="side-nav__links-link">Colors</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/foundation/grid.html" class="side-nav__links-link">Grid</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/foundation/spacing.html" class="side-nav__links-link">Spacing</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/foundation/type.html" class="side-nav__links-link">Type</a>
-                    </li>
-                    
-                    
-                    
-                    
-                </ul>
-                <hr class="side-nav__seperator">
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/foundation/type.html"
+                   class="side-nav__links-link">Type</a>
             </li>
-        
+            
+            
+            
+            
+        </ul>
+        <hr class="side-nav__seperator">
+    </li>
     
-        
+    
+    
 
-        
+    
 
+    
+    <li class="side-nav__headers">
+        
+        <a class="side-nav__headers-link"
+           href="/fundamental-styles/layouts/index.html">layouts</a>
+        <ul>
             
-            <li class="side-nav__headers">
             
-                <a class="side-nav__headers-link" href="/fundamental-styles/layouts/index.html">layouts</a>
-                <ul >
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/layouts/shell-layout.html" class="side-nav__links-link">Application Shell</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/layouts/page-layout.html" class="side-nav__links-link">Page</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/layouts/section.html" class="side-nav__links-link">Section</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/layouts/panel.html" class="side-nav__links-link">Panel</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/layouts/columns.html" class="side-nav__links-link">Columns</a>
-                    </li>
-                    
-                    
-                    
-                    
-                </ul>
-                <hr class="side-nav__seperator">
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/layouts/shell-layout.html"
+                   class="side-nav__links-link">Application Shell</a>
             </li>
-        
-    
-        
-
-        
-
             
-            <li class="side-nav__headers active">
             
-                <a class="side-nav__headers-link" href="/fundamental-styles/components/index.html">components</a>
-                <ul >
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/action-bar.html" class="side-nav__links-link">Action Bar</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/alert.html" class="side-nav__links-link">Alert</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/button.html" class="side-nav__links-link">Button</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/breadcrumb.html" class="side-nav__links-link">Breadcrumb</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/calendar.html" class="side-nav__links-link">Calendar</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/combobox-input.html" class="side-nav__links-link">Combobox Input</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/contextual-menu.html" class="side-nav__links-link">Contextual Menu</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/date-picker.html" class="side-nav__links-link">Date Picker</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/dropdown.html" class="side-nav__links-link">Dropdown</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/form.html" class="side-nav__links-link">Forms</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/identifier.html" class="side-nav__links-link">Identifier</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/icon.html" class="side-nav__links-link">Icon</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/image.html" class="side-nav__links-link">Image</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/input-group.html" class="side-nav__links-link">Input Group</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/inline-help.html" class="side-nav__links-link">Inline Help</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/list-group.html" class="side-nav__links-link">List Group</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/link.html" class="side-nav__links-link">Link</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/loading-spinner.html" class="side-nav__links-link">Loading Spinner</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/localization-editor.html" class="side-nav__links-link">Localization Editor</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/mega-menu.html" class="side-nav__links-link">Mega Menu</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/menu.html" class="side-nav__links-link">Menu</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/modal.html" class="side-nav__links-link">Modal</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/multi-input.html" class="side-nav__links-link">Multi Input</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/pagination.html" class="side-nav__links-link">Pagination</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/popover.html" class="side-nav__links-link">Popover</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/search-input.html" class="side-nav__links-link">Search Input</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/shellbar.html" class="side-nav__links-link">Shellbar</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/side-navigation.html" class="side-nav__links-link">Side Navigation</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/status-indicators.html" class="side-nav__links-link">Status Indicators</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/table.html" class="side-nav__links-link">Table</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/tabs.html" class="side-nav__links-link">Tabs</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/tile.html" class="side-nav__links-link">Tile</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/tile-grid.html" class="side-nav__links-link">Tile Grid</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/time.html" class="side-nav__links-link">Time</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links active">
-                        <a href="/fundamental-styles/components/time-picker.html" class="side-nav__links-link">Time Picker</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/token.html" class="side-nav__links-link">Token</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/toggle.html" class="side-nav__links-link">Toggle</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/components/tree.html" class="side-nav__links-link">Tree</a>
-                    </li>
-                    
-                    
-                    
-                    
-                </ul>
-                <hr class="side-nav__seperator">
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/layouts/layout-grid.html"
+                   class="side-nav__links-link">Layout Grid</a>
             </li>
-        
-    
-        
-
-        
-
             
-            <li class="side-nav__headers">
             
-                <a class="side-nav__headers-link" href="/fundamental-styles/resources/index.html">resources</a>
-                <ul >
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/resources/how-to-use-scss.html" class="side-nav__links-link">How to use SCSS</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/resources/design-system-utilities.html" class="side-nav__links-link">Design System Utilities</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/resources/ui-kit.html" class="side-nav__links-link">UI Kit</a>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li class="side-nav__links">
-                        <a href="/fundamental-styles/resources/fundamentals-libraries.html" class="side-nav__links-link">SAP Fundamental Styles Implementation Libraries</a>
-                    </li>
-                    
-                    
-                    
-                    
-                </ul>
-                <hr class="side-nav__seperator">
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/layouts/page-layout.html"
+                   class="side-nav__links-link">Page</a>
             </li>
-        
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/layouts/section.html"
+                   class="side-nav__links-link">Section</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/layouts/panel.html"
+                   class="side-nav__links-link">Panel</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/layouts/columns.html"
+                   class="side-nav__links-link">Columns</a>
+            </li>
+            
+            
+            
+            
+        </ul>
+        <hr class="side-nav__seperator">
+    </li>
+    
+    
     
 
+    
+
+    
+    <li class="side-nav__headers">
+        
+        <a class="side-nav__headers-link"
+           href="/fundamental-styles/patterns/index.html">patterns</a>
+        <ul>
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/patterns/contextual-menu.html"
+                   class="side-nav__links-link">Contextual Menu</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/patterns/combobox-input.html"
+                   class="side-nav__links-link">Combobox Input</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/patterns/search-input.html"
+                   class="side-nav__links-link">Search Input</a>
+            </li>
+            
+            
+            
+            
+        </ul>
+        <hr class="side-nav__seperator">
+    </li>
+    
+    
+    
+
+    
+
+    
+    <li class="side-nav__headers active">
+        
+        <a class="side-nav__headers-link"
+           href="/fundamental-styles/components/index.html">components</a>
+        <ul>
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/action-bar.html"
+                   class="side-nav__links-link">Action Bar</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/alert.html"
+                   class="side-nav__links-link">Alert</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/asset-upload.html"
+                   class="side-nav__links-link">Asset Upload</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/button.html"
+                   class="side-nav__links-link">Button</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/breadcrumb.html"
+                   class="side-nav__links-link">Breadcrumb</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/calendar.html"
+                   class="side-nav__links-link">Calendar</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/date-picker.html"
+                   class="side-nav__links-link">Date Picker</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/dropdown.html"
+                   class="side-nav__links-link">Dropdown</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/form.html"
+                   class="side-nav__links-link">Forms</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/identifier.html"
+                   class="side-nav__links-link">Identifier</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/icon.html"
+                   class="side-nav__links-link">Icon</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/image.html"
+                   class="side-nav__links-link">Image</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/input-group.html"
+                   class="side-nav__links-link">Input Group</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/inline-help.html"
+                   class="side-nav__links-link">Inline Help</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/list-group.html"
+                   class="side-nav__links-link">List Group</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/link.html"
+                   class="side-nav__links-link">Link</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/loading-spinner.html"
+                   class="side-nav__links-link">Loading Spinner</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/localization-editor.html"
+                   class="side-nav__links-link">Localization Editor</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/menu.html"
+                   class="side-nav__links-link">Menu</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/modal.html"
+                   class="side-nav__links-link">Modal</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/multi-input.html"
+                   class="side-nav__links-link">Multi Input</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/pagination.html"
+                   class="side-nav__links-link">Pagination</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/popover.html"
+                   class="side-nav__links-link">Popover</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/shellbar.html"
+                   class="side-nav__links-link">Shellbar</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/side-navigation.html"
+                   class="side-nav__links-link">Side Navigation</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/status-indicators.html"
+                   class="side-nav__links-link">Status Indicators</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/table.html"
+                   class="side-nav__links-link">Table</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/tabs.html"
+                   class="side-nav__links-link">Tabs</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/tile.html"
+                   class="side-nav__links-link">Tile</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/time.html"
+                   class="side-nav__links-link">Time</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links active">
+                <a href="/fundamental-styles/components/time-picker.html"
+                   class="side-nav__links-link">Time Picker</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/token.html"
+                   class="side-nav__links-link">Token</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/toggle.html"
+                   class="side-nav__links-link">Toggle / Switch</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/tree.html"
+                   class="side-nav__links-link">Tree</a>
+            </li>
+            
+            
+            
+            
+        </ul>
+        <hr class="side-nav__seperator">
+    </li>
+    
+    
+    
+
+    
+
+    
+    <li class="side-nav__headers">
+        
+        <a class="side-nav__headers-link"
+           href="/fundamental-styles/resources/index.html">resources</a>
+        <ul>
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/resources/design-system-utilities.html"
+                   class="side-nav__links-link">Design System Utilities</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/resources/fundamentals-libraries.html"
+                   class="side-nav__links-link">SAP Fundamental Styles Implementation Libraries</a>
+            </li>
+            
+            
+            
+            
+        </ul>
+        <hr class="side-nav__seperator">
+    </li>
+    
+    
+    
 
 </ul>
 
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <!-- <script>$("li.active").parents('li').toggleClass("active");</script> -->
-
-                </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="/fundamental-styles/js/customscripts.js"></script>
+            </div>
             
 
-            <div class="main-content" id="tg-sb-content">
-                <!-- Content Column -->
+            <div class="main-content"
+                 id="tg-sb-content">
+                <!-- Content Column  -->
                 
 
 <div class="docs-content">
 
     <h1 class="docs-header-h1">Time Picker</h1>
 
-   
+    
 
     
 
 
     
 
-  <p class="docs-intro">Timepicker is a component composed of an <code class="highlighter-rouge">input-group</code>, a <code class="highlighter-rouge">popover</code> and the <code class="highlighter-rouge">time</code> component to create a time selection interaction.</p>
+    <p>The Time Picker is an opinionated component composed of an <code class="highlighter-rouge">input-group</code>, <code class="highlighter-rouge">popover</code>, and <code class="highlighter-rouge">time</code> components to create a time selection interaction.</p>
 
+<p class="docs-intro">This component mostly relies on the CSS of other components and has very little CSS of its own.</p>
 <p><br /></p>
 
 <h2 id="basic-time-picker">Basic Time Picker</h2>
@@ -692,9 +747,9 @@
 <p>A basic example of a time picker.</p>
 
 <div class="fd-tile docs-component docs-component__">
-    <label class="fd-form__label docs-component__bg-toggle" for="98127" title="Change Background">
-        <span class="fd-toggle fd-toggle--xs fd-form__control">
-            <input type="checkbox" name="" value="" id="98127" class="toggle-bg" />
+    <label class="fd-form-label docs-component__bg-toggle" for="19818" title="Change Background">
+        <span class="fd-toggle fd-toggle--xs fd-input">
+            <input type="checkbox" name="" value="" id="19818" class="toggle-bg fd-toggle__input" />
             <span class="fd-toggle__switch" role="presentation"></span>
         </span>
 
@@ -706,56 +761,48 @@
     <div class="fd-popover fd-popover--no-arrow">
         <div class="fd-popover__control">
             <div class="fd-input-group fd-input-group--after">
-                <input type="time" class="fd-input " placeholder="hh:mm am/pm" />
+                <input type="text" class="fd-input" placeholder="hh:mm am/pm" />
                 <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
-                                  <button class=" fd-button--light sap-icon--history fd-popover__control" aria-controls="rthHR811" aria-expanded="false" aria-haspopup="true"></button>
-                      </span>
+                    <button class="fd-button--light sap-icon--history fd-popover__control" aria-controls="rthHR811" aria-expanded="false" aria-haspopup="true"></button>
+                </span>
             </div>
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="rthHR811">
             <div class="fd-time">
                 <div class="fd-time__item">
                     <div class="fd-time__control">
-                        <button class=" fd-button--standard fd-button--light sap-icon--navigation-up-arrow" aria-label="Increase hours" aria-controls="BW7dC141"></button>
+                        <button class="fd-button--standard fd-button--light sap-icon--navigation-up-arrow" aria-label="Increase hours" aria-controls="BW7dC141"></button>
                     </div>
-                    <div class="fd-time__input">
-                        <input class="fd-form__control" type="text" placeholder="hh" value="" id="BW7dC141" aria-label="Hours" />
-                    </div>
+                    <input class="fd-time__input fd-input" type="text" placeholder="hh" value="" id="BW7dC141" aria-label="Hours" />
                     <div class="fd-time__control">
-                        <button class=" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow" aria-label="Decrease hours" aria-controls="BW7dC141"></button>
+                        <button class="fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow" aria-label="Decrease hours" aria-controls="BW7dC141"></button>
                     </div>
                 </div>
                 <div class="fd-time__item">
                     <div class="fd-time__control">
-                        <button class=" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow" aria-label="Increase minutes" aria-controls="VyQHq609"></button>
+                        <button class="fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow" aria-label="Increase minutes" aria-controls="VyQHq609"></button>
                     </div>
-                    <div class="fd-time__input">
-                        <input class="fd-form__control" type="text" placeholder="mm" value="" id="VyQHq609" aria-label="Minutes" />
-                    </div>
+                    <input class="fd-time__input fd-input" type="text" placeholder="mm" value="" id="VyQHq609" aria-label="Minutes" />
                     <div class="fd-time__control">
-                        <button class=" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow" aria-label="Decrease minutes" aria-controls="VyQHq609"></button>
+                        <button class="fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow" aria-label="Decrease minutes" aria-controls="VyQHq609"></button>
                     </div>
                 </div>
                 <div class="fd-time__item">
                     <div class="fd-time__control">
-                        <button class=" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow" aria-label="Increase seconds" aria-controls="Tbwlb978"></button>
+                        <button class="fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow" aria-label="Increase seconds" aria-controls="Tbwlb978"></button>
                     </div>
-                    <div class="fd-time__input">
-                        <input class="fd-form__control" type="text" placeholder="ss" value="" id="Tbwlb978" aria-label="Seconds" />
-                    </div>
+                    <input class="fd-time__input fd-input" type="text" placeholder="ss" value="" id="Tbwlb978" aria-label="Seconds" />
                     <div class="fd-time__control">
-                        <button class=" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow" aria-label="Decrease seconds" aria-controls="Tbwlb978"></button>
+                        <button class="fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow" aria-label="Decrease seconds" aria-controls="Tbwlb978"></button>
                     </div>
                 </div>
                 <div class="fd-time__item">
                     <div class="fd-time__control">
-                        <button class=" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow" aria-label="Increase period" aria-controls="UxXMT681"></button>
+                        <button class="fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow" aria-label="Increase period" aria-controls="UxXMT681"></button>
                     </div>
-                    <div class="fd-time__input">
-                        <input class="fd-form__control" type="text" placeholder="am" value="" id="UxXMT681" aria-label="Period" />
-                    </div>
+                    <input class="fd-time__input fd-input" type="text" placeholder="am" value="" id="UxXMT681" aria-label="Period" />
                     <div class="fd-time__control">
-                        <button class=" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow" aria-label="Decrease period" aria-controls="UxXMT681"></button>
+                        <button class="fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow" aria-label="Decrease period" aria-controls="UxXMT681"></button>
                     </div>
                 </div>
             </div>
@@ -769,56 +816,48 @@
     <div class="fd-popover fd-popover--no-arrow">
         <div class="fd-popover__control">
             <div class="fd-input-group fd-input-group--after fd-input-group--compact">
-                <input type="time" class="fd-input  fd-input--compact" placeholder="hh:mm am/pm" />
+                <input class="fd-input fd-input--compact" type="text" placeholder="hh:mm am/pm" />
                 <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button ">
-                                  <button class=" fd-button--light fd-button--compact sap-icon--history fd-popover__control" aria-controls="bJuyJ846" aria-expanded="false" aria-haspopup="true"></button>
-                      </span>
+                    <button class="fd-button--light fd-button--compact sap-icon--history fd-popover__control" aria-controls="bJuyJ846" aria-expanded="false" aria-haspopup="true"></button>
+                </span>
             </div>
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="bJuyJ846">
             <div class="fd-time">
                 <div class="fd-time__item">
                     <div class="fd-time__control">
-                        <button class=" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow" aria-label="Increase hours" aria-controls="BW7dC141a"></button>
+                        <button class="fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow" aria-label="Increase hours" aria-controls="BW7dC141a"></button>
                     </div>
-                    <div class="fd-time__input">
-                        <input class="fd-form__control" type="text" placeholder="hh" value="" id="BW7dC141a" aria-label="Hours" />
-                    </div>
+                    <input class="fd-time__input fd-input" type="text" placeholder="hh" value="" id="BW7dC141a" aria-label="Hours" />
                     <div class="fd-time__control">
-                        <button class=" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow" aria-label="Decrease hours" aria-controls="BW7dC141a"></button>
+                        <button class="fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow" aria-label="Decrease hours" aria-controls="BW7dC141a"></button>
                     </div>
                 </div>
                 <div class="fd-time__item">
                     <div class="fd-time__control">
-                        <button class=" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow" aria-label="Increase minutes" aria-controls="VyQHq609a"></button>
+                        <button class="fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow" aria-label="Increase minutes" aria-controls="VyQHq609a"></button>
                     </div>
-                    <div class="fd-time__input">
-                        <input class="fd-form__control" type="text" placeholder="mm" value="" id="VyQHq609a" aria-label="Minutes" />
-                    </div>
+                    <input class="fd-time__input fd-input" type="text" placeholder="mm" value="" id="VyQHq609a" aria-label="Minutes" />
                     <div class="fd-time__control">
-                        <button class=" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow" aria-label="Decrease minutes" aria-controls="VyQHq609a"></button>
+                        <button class="fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow" aria-label="Decrease minutes" aria-controls="VyQHq609a"></button>
                     </div>
                 </div>
                 <div class="fd-time__item">
                     <div class="fd-time__control">
-                        <button class=" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow" aria-label="Increase seconds" aria-controls="Tbwlb978a"></button>
+                        <button class="fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow" aria-label="Increase seconds" aria-controls="Tbwlb978a"></button>
                     </div>
-                    <div class="fd-time__input">
-                        <input class="fd-form__control" type="text" placeholder="ss" value="" id="Tbwlb978a" aria-label="Seconds" />
-                    </div>
+                    <input class="fd-time__input fd-input" type="text" placeholder="ss" value="" id="Tbwlb978a" aria-label="Seconds" />
                     <div class="fd-time__control">
-                        <button class=" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow" aria-label="Decrease seconds" aria-controls="Tbwlb978a"></button>
+                        <button class="fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow" aria-label="Decrease seconds" aria-controls="Tbwlb978a"></button>
                     </div>
                 </div>
                 <div class="fd-time__item">
                     <div class="fd-time__control">
-                        <button class=" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow" aria-label="Increase period" aria-controls="UxXMT681a"></button>
+                        <button class="fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow" aria-label="Increase period" aria-controls="UxXMT681a"></button>
                     </div>
-                    <div class="fd-time__input">
-                        <input class="fd-form__control" type="text" placeholder="am" value="" id="UxXMT681a" aria-label="Period" />
-                    </div>
+                    <input class="fd-time__input fd-input" type="text" placeholder="am" value="" id="UxXMT681a" aria-label="Period" />
                     <div class="fd-time__control">
-                        <button class=" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow" aria-label="Decrease period" aria-controls="UxXMT681a"></button>
+                        <button class="fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow" aria-label="Decrease period" aria-controls="UxXMT681a"></button>
                     </div>
                 </div>
             </div>
@@ -833,56 +872,48 @@
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover fd-popover--no-arrow"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group fd-input-group--after"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"time"</span> <span class="na">class=</span><span class="s">"fd-input "</span> <span class="na">id=</span><span class="s">""</span> <span class="na">placeholder=</span><span class="s">"hh:mm am/pm"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"fd-input"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">placeholder=</span><span class="s">"hh:mm am/pm"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button"</span><span class="nt">&gt;</span>
-                                  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--light sap-icon--history fd-popover__control"</span> <span class="na">aria-controls=</span><span class="s">"rthHR811"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/button&gt;</span>
-                      <span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light sap-icon--history fd-popover__control"</span> <span class="na">aria-controls=</span><span class="s">"rthHR811"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                <span class="nt">&lt;/span&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"rthHR811"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--standard fd-button--light sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase hours"</span> <span class="na">aria-controls=</span><span class="s">"BW7dC141"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard fd-button--light sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase hours"</span> <span class="na">aria-controls=</span><span class="s">"BW7dC141"</span><span class="nt">&gt;&lt;/button&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__input"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-form__control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"hh"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"BW7dC141"</span> <span class="na">aria-label=</span><span class="s">"Hours"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-time__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"hh"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"BW7dC141"</span> <span class="na">aria-label=</span><span class="s">"Hours"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease hours"</span> <span class="na">aria-controls=</span><span class="s">"BW7dC141"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease hours"</span> <span class="na">aria-controls=</span><span class="s">"BW7dC141"</span><span class="nt">&gt;&lt;/button&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase minutes"</span> <span class="na">aria-controls=</span><span class="s">"VyQHq609"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase minutes"</span> <span class="na">aria-controls=</span><span class="s">"VyQHq609"</span><span class="nt">&gt;&lt;/button&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__input"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-form__control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"mm"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"VyQHq609"</span> <span class="na">aria-label=</span><span class="s">"Minutes"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-time__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"mm"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"VyQHq609"</span> <span class="na">aria-label=</span><span class="s">"Minutes"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease minutes"</span> <span class="na">aria-controls=</span><span class="s">"VyQHq609"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease minutes"</span> <span class="na">aria-controls=</span><span class="s">"VyQHq609"</span><span class="nt">&gt;&lt;/button&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase seconds"</span> <span class="na">aria-controls=</span><span class="s">"Tbwlb978"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase seconds"</span> <span class="na">aria-controls=</span><span class="s">"Tbwlb978"</span><span class="nt">&gt;&lt;/button&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__input"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-form__control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"ss"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"Tbwlb978"</span> <span class="na">aria-label=</span><span class="s">"Seconds"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-time__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"ss"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"Tbwlb978"</span> <span class="na">aria-label=</span><span class="s">"Seconds"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease seconds"</span> <span class="na">aria-controls=</span><span class="s">"Tbwlb978"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease seconds"</span> <span class="na">aria-controls=</span><span class="s">"Tbwlb978"</span><span class="nt">&gt;&lt;/button&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase period"</span> <span class="na">aria-controls=</span><span class="s">"UxXMT681"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase period"</span> <span class="na">aria-controls=</span><span class="s">"UxXMT681"</span><span class="nt">&gt;&lt;/button&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__input"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-form__control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"am"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"UxXMT681"</span> <span class="na">aria-label=</span><span class="s">"Period"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-time__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"am"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"UxXMT681"</span> <span class="na">aria-label=</span><span class="s">"Period"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease period"</span> <span class="na">aria-controls=</span><span class="s">"UxXMT681"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease period"</span> <span class="na">aria-controls=</span><span class="s">"UxXMT681"</span><span class="nt">&gt;&lt;/button&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
@@ -896,56 +927,48 @@
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover fd-popover--no-arrow"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group fd-input-group--after fd-input-group--compact"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"time"</span> <span class="na">class=</span><span class="s">"fd-input  fd-input--compact"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">placeholder=</span><span class="s">"hh:mm am/pm"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input fd-input--compact"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">placeholder=</span><span class="s">"hh:mm am/pm"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button "</span><span class="nt">&gt;</span>
-                                  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--light fd-button--compact sap-icon--history fd-popover__control"</span> <span class="na">aria-controls=</span><span class="s">"bJuyJ846"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/button&gt;</span>
-                      <span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light fd-button--compact sap-icon--history fd-popover__control"</span> <span class="na">aria-controls=</span><span class="s">"bJuyJ846"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                <span class="nt">&lt;/span&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"bJuyJ846"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase hours"</span> <span class="na">aria-controls=</span><span class="s">"BW7dC141a"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase hours"</span> <span class="na">aria-controls=</span><span class="s">"BW7dC141a"</span><span class="nt">&gt;&lt;/button&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__input"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-form__control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"hh"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"BW7dC141a"</span> <span class="na">aria-label=</span><span class="s">"Hours"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-time__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"hh"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"BW7dC141a"</span> <span class="na">aria-label=</span><span class="s">"Hours"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease hours"</span> <span class="na">aria-controls=</span><span class="s">"BW7dC141a"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease hours"</span> <span class="na">aria-controls=</span><span class="s">"BW7dC141a"</span><span class="nt">&gt;&lt;/button&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase minutes"</span> <span class="na">aria-controls=</span><span class="s">"VyQHq609a"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase minutes"</span> <span class="na">aria-controls=</span><span class="s">"VyQHq609a"</span><span class="nt">&gt;&lt;/button&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__input"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-form__control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"mm"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"VyQHq609a"</span> <span class="na">aria-label=</span><span class="s">"Minutes"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-time__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"mm"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"VyQHq609a"</span> <span class="na">aria-label=</span><span class="s">"Minutes"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease minutes"</span> <span class="na">aria-controls=</span><span class="s">"VyQHq609a"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease minutes"</span> <span class="na">aria-controls=</span><span class="s">"VyQHq609a"</span><span class="nt">&gt;&lt;/button&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase seconds"</span> <span class="na">aria-controls=</span><span class="s">"Tbwlb978a"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase seconds"</span> <span class="na">aria-controls=</span><span class="s">"Tbwlb978a"</span><span class="nt">&gt;&lt;/button&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__input"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-form__control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"ss"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"Tbwlb978a"</span> <span class="na">aria-label=</span><span class="s">"Seconds"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-time__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"ss"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"Tbwlb978a"</span> <span class="na">aria-label=</span><span class="s">"Seconds"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease seconds"</span> <span class="na">aria-controls=</span><span class="s">"Tbwlb978a"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease seconds"</span> <span class="na">aria-controls=</span><span class="s">"Tbwlb978a"</span><span class="nt">&gt;&lt;/button&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase period"</span> <span class="na">aria-controls=</span><span class="s">"UxXMT681a"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase period"</span> <span class="na">aria-controls=</span><span class="s">"UxXMT681a"</span><span class="nt">&gt;&lt;/button&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__input"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-form__control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"am"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"UxXMT681a"</span> <span class="na">aria-label=</span><span class="s">"Period"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-time__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"am"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"UxXMT681a"</span> <span class="na">aria-label=</span><span class="s">"Period"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease period"</span> <span class="na">aria-controls=</span><span class="s">"UxXMT681a"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard fd-button--light fd-button--compact sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease period"</span> <span class="na">aria-controls=</span><span class="s">"UxXMT681a"</span><span class="nt">&gt;&lt;/button&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
@@ -960,33 +983,15 @@
     </div>
 
 </div>
-
+                
+                
             </div>
 
         </div>
-        
-            <footer class="docs-footer">
-    <div class="row">
-        <div class="fd-has-float-left">
-            <img src="/fundamental-styles/images/footer-sap-logo.png" alt="" height="24">
-        </div>
-        <div class="fd-has-float-right">
-            <span class="docs-footer__link">Have a question? <a href="mailto:fundamental@sap.com">Email</a> us.</span>
-            <span class="docs-footer__link">&copy; Copyright SAP <span id="copyright-year">2019</span></span>
-        </div>
-    </div>
-</footer>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
-<script src="/fundamental-styles/js/customscripts.js"></script>
-        
     </div>
     
-         <!-- the google_analytics_id gets auto inserted from the config file -->
+     <!-- the google_analytics_id gets auto inserted from the config file -->
 
 
 

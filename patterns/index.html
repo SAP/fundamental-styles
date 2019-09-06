@@ -6,10 +6,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
-<meta name="keywords" content=" layouts">
+<meta name="keywords" content=" patterns">
 <title>
 	
-	Layouts - SAP Fundamental Styles
+	Patterns - SAP Fundamental Styles
 	
 
 </title>
@@ -127,7 +127,7 @@
         searchInput: document.getElementById('docs-search'),
         resultsContainer: document.getElementById('results-container'),
         json: '/fundamental-styles/js/search.json',
-        searchResultTemplate: '<li class="fd-menu__item"><a href="/fundamental-styles{url}" title="Layouts">{folder} > {title}</a></li>',
+        searchResultTemplate: '<li class="fd-menu__item"><a href="/fundamental-styles{url}" title="Patterns">{folder} > {title}</a></li>',
         noResultsText: '<li class="fd-menu__item">No results found</li>',
         limit: 10,
         fuzzy: true,
@@ -196,7 +196,7 @@
     
 
     
-    <li class="side-nav__headers active">
+    <li class="side-nav__headers">
         
         <a class="side-nav__headers-link"
            href="/fundamental-styles/layouts/index.html">layouts</a>
@@ -272,7 +272,7 @@
     
 
     
-    <li class="side-nav__headers">
+    <li class="side-nav__headers active">
         
         <a class="side-nav__headers-link"
            href="/fundamental-styles/patterns/index.html">patterns</a>
@@ -728,7 +728,7 @@
 
 <div class="docs-content">
 
-    <h1 class="docs-header-h1">Layouts</h1>
+    <h1 class="docs-header-h1">Patterns</h1>
 
     
 
@@ -737,71 +737,34 @@
 
     
 
-    <p>Layouts in Fundamental Styles are for structuring the main parts of your application. Organized in three main categories</p>
+    <p>Patterns in Fundamental Styles are completely composed from other components CSS and don’t have any of their own unique class names or styles.</p>
 
-<p><br /></p>
-
-<div class="fd-layout-grid fd-layout-grid--col-2 docs-tiles">
-    <a class="fd-tile" role="button" href="layout-grid.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Layout Grid
-             </h2>
-             <p class="fd-tile__description">
-                CSS Grid based layout component.
-             </p>
-        </div>
-    </a>
-    <a class="fd-tile" role="button" href="shell-layout.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Shell Layout
-             </h2>
-             <p class="fd-tile__description">
-                 Main shell and application template structure, including header, navigation, main content, footer.
-             </p>
-        </div>
-    </a>
-    <a class="fd-tile" role="button" href="page-layout.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Page Layout
-             </h2>
-             <p class="fd-tile__description">
-                 Elements to structure the content your application page.
-             </p>
-        </div>
-    </a>
-    <a class="fd-tile" role="button" href="section.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Section
-             </h2>
-             <p class="fd-tile__description">
-                 Wrapper element for dividing a page into different sections
-             </p>
-        </div>
-    </a>
-    <a class="fd-tile" role="button" href="panel.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Panel
-             </h2>
-             <p class="fd-tile__description">
-                 Elements to organize components.
-             </p>
-        </div>
-    </a>
-    <a class="fd-tile" role="button" href="global-navigation.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Global Nav
-             </h2>
-             <p class="fd-tile__description">
-                 Global Navigation to switch between different Apps
-             </p>
-        </div>
-    </a>
+<div class="docs-component-grid">
+    
+        <a href="combobox-input.html" class="docs-component-grid--item">
+            <img src="/fundamental-styles/images/component-visual/combobox-input.png" alt="Combobox Input" width="60%" class="docs-component-grid--img__combobox-input" />
+            <br />
+            <h3 class="docs-component-grid--label">Combobox Input</h3>
+        </a>
+    
+        <a href="contextual-menu.html" class="docs-component-grid--item">
+            <img src="/fundamental-styles/images/component-visual/contextual-menu.png" alt="Contextual Menu" width="60%" class="docs-component-grid--img__contextual-menu" />
+            <br />
+            <h3 class="docs-component-grid--label">Contextual Menu</h3>
+        </a>
+    
+        <a href="multi-input.html" class="docs-component-grid--item">
+            <img src="/fundamental-styles/images/component-visual/multi-input.png" alt="Multi Input" width="60%" class="docs-component-grid--img__multi-input" />
+            <br />
+            <h3 class="docs-component-grid--label">Multi Input</h3>
+        </a>
+    
+        <a href="search-input.html" class="docs-component-grid--item">
+            <img src="/fundamental-styles/images/component-visual/search-input.png" alt="Search Input" width="60%" class="docs-component-grid--img__search-input" />
+            <br />
+            <h3 class="docs-component-grid--label">Search Input</h3>
+        </a>
+    
 </div>
 
 

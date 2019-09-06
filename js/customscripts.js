@@ -14,12 +14,12 @@ $(document).ready(function () {
     }
 
     $('#mobile-sidenav-btn').click(() => {
-        $("#tg-sb-sidebar").slideToggle('400');
+        $("#tg-sb-sidebar").toggleClass('fd-styles__mobile-list');
     });
 
 });
 
-(function () {
+$(document).ready(function () {
     //dropdown
     var els = document.querySelectorAll("[aria-controls]");
     for (var i = 0; i < els.length; i++) {
@@ -31,7 +31,6 @@ $(document).ready(function () {
             var isAlert = this.parentElement.getAttribute("role") === "alert";
             if (isAlert) {
                 //remove or hide if we want some animation
-                // target.setAttribute("aria-hidden", true);
                 target.remove();
                 return;
             }
@@ -42,8 +41,11 @@ $(document).ready(function () {
                 var isExpanded = this.getAttribute("aria-expanded") === "true";
                 this.setAttribute("aria-expanded", !isExpanded);
                 //target
-                var targetIsHidden = target.getAttribute("aria-hidden") == "true";
                 target.setAttribute("aria-hidden", isExpanded);
+                //searchinput for shellbar
+                if(document.getElementById(`${targetId}1`) !== null) {
+                    document.getElementById(`${targetId}1`).setAttribute("aria-hidden", isExpanded);
+                }
                 return;
             }
             //tree
@@ -163,7 +165,6 @@ $(document).ready(function () {
     const displayControls = document.querySelectorAll('.docs-component--responsive-display__controls');
     displayControls.forEach((displayControl) => {
         const frame = displayControl.parentElement.querySelector('.docs-component--responsive-display__frame');
-        console.log(frame);
         displayControl.addEventListener('click', event => {
             const clickTarget = event.target;
             clearControls(displayControl);
@@ -192,5 +193,4 @@ $(document).ready(function () {
         }
     }
 
-
-})();
+});

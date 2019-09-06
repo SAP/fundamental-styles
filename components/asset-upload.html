@@ -6,10 +6,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
-<meta name="keywords" content=" layouts">
+<meta name="keywords" content=" asset upload, file upload, asset, file, upload">
 <title>
 	
-	Layouts - SAP Fundamental Styles
+	Asset Upload - SAP Fundamental Styles
 	
 
 </title>
@@ -127,7 +127,7 @@
         searchInput: document.getElementById('docs-search'),
         resultsContainer: document.getElementById('results-container'),
         json: '/fundamental-styles/js/search.json',
-        searchResultTemplate: '<li class="fd-menu__item"><a href="/fundamental-styles{url}" title="Layouts">{folder} > {title}</a></li>',
+        searchResultTemplate: '<li class="fd-menu__item"><a href="/fundamental-styles{url}" title="Asset Upload">{folder} > {title}</a></li>',
         noResultsText: '<li class="fd-menu__item">No results found</li>',
         limit: 10,
         fuzzy: true,
@@ -196,7 +196,7 @@
     
 
     
-    <li class="side-nav__headers active">
+    <li class="side-nav__headers">
         
         <a class="side-nav__headers-link"
            href="/fundamental-styles/layouts/index.html">layouts</a>
@@ -318,7 +318,7 @@
     
 
     
-    <li class="side-nav__headers">
+    <li class="side-nav__headers active">
         
         <a class="side-nav__headers-link"
            href="/fundamental-styles/components/index.html">components</a>
@@ -346,7 +346,7 @@
             
             
             
-            <li class="side-nav__links">
+            <li class="side-nav__links active">
                 <a href="/fundamental-styles/components/asset-upload.html"
                    class="side-nav__links-link">Asset Upload</a>
             </li>
@@ -728,7 +728,7 @@
 
 <div class="docs-content">
 
-    <h1 class="docs-header-h1">Layouts</h1>
+    <h1 class="docs-header-h1">Asset Upload</h1>
 
     
 
@@ -737,72 +737,99 @@
 
     
 
-    <p>Layouts in Fundamental Styles are for structuring the main parts of your application. Organized in three main categories</p>
+    <p class="docs-intro">Asset Upload provides a stylized component for file upload button.</p>
 
-<p><br /></p>
+<h2 id="asset-upload-with-icon-and-message">Asset Upload with Icon and Message</h2>
 
-<div class="fd-layout-grid fd-layout-grid--col-2 docs-tiles">
-    <a class="fd-tile" role="button" href="layout-grid.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Layout Grid
-             </h2>
-             <p class="fd-tile__description">
-                CSS Grid based layout component.
-             </p>
-        </div>
-    </a>
-    <a class="fd-tile" role="button" href="shell-layout.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Shell Layout
-             </h2>
-             <p class="fd-tile__description">
-                 Main shell and application template structure, including header, navigation, main content, footer.
-             </p>
-        </div>
-    </a>
-    <a class="fd-tile" role="button" href="page-layout.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Page Layout
-             </h2>
-             <p class="fd-tile__description">
-                 Elements to structure the content your application page.
-             </p>
-        </div>
-    </a>
-    <a class="fd-tile" role="button" href="section.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Section
-             </h2>
-             <p class="fd-tile__description">
-                 Wrapper element for dividing a page into different sections
-             </p>
-        </div>
-    </a>
-    <a class="fd-tile" role="button" href="panel.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Panel
-             </h2>
-             <p class="fd-tile__description">
-                 Elements to organize components.
-             </p>
-        </div>
-    </a>
-    <a class="fd-tile" role="button" href="global-navigation.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Global Nav
-             </h2>
-             <p class="fd-tile__description">
-                 Global Navigation to switch between different Apps
-             </p>
-        </div>
-    </a>
+<div class="fd-tile docs-component docs-component__">
+    <label class="fd-form-label docs-component__bg-toggle" for="82400" title="Change Background">
+        <span class="fd-toggle fd-toggle--xs fd-input">
+            <input type="checkbox" name="" value="" id="82400" class="toggle-bg fd-toggle__input" />
+            <span class="fd-toggle__switch" role="presentation"></span>
+        </span>
+
+    </label>
+    <div class="fd-tile__content">
+		
+<div class="fd-asset-upload">
+    <input type="file" id="asset-upload" class="fd-asset-upload__input" />
+    <label for="asset-upload" class="fd-asset-upload__label">
+        <span class="fd-asset-upload__text">Upload Link</span>
+        <span class="fd-asset-upload__message">Maximum file size is 100MB</span>
+    </label>
 </div>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-asset-upload"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">id=</span><span class="s">"asset-upload"</span> <span class="na">class=</span><span class="s">"fd-asset-upload__input"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"asset-upload"</span> <span class="na">class=</span><span class="s">"fd-asset-upload__label"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-asset-upload__text"</span><span class="nt">&gt;</span>Upload Link<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-asset-upload__message"</span><span class="nt">&gt;</span>Maximum file size is 100MB<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="asset-upload-with-no-message">Asset Upload with no message</h2>
+<p>Optional message can be excluded by removing the span tag containing <code class="highlighter-rouge">fd-asset-upload__message</code> class.</p>
+
+<div class="fd-tile docs-component docs-component__">
+    <label class="fd-form-label docs-component__bg-toggle" for="65088" title="Change Background">
+        <span class="fd-toggle fd-toggle--xs fd-input">
+            <input type="checkbox" name="" value="" id="65088" class="toggle-bg fd-toggle__input" />
+            <span class="fd-toggle__switch" role="presentation"></span>
+        </span>
+
+    </label>
+    <div class="fd-tile__content">
+		
+<div class="fd-asset-upload">
+    <input type="file" id="asset-upload" class="fd-asset-upload__input" />
+    <label for="asset-upload" class="fd-asset-upload__label">
+        <span class="fd-asset-upload__text">Upload Link</span>
+    </label>
+</div>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-asset-upload"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">id=</span><span class="s">"asset-upload"</span> <span class="na">class=</span><span class="s">"fd-asset-upload__input"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"asset-upload"</span> <span class="na">class=</span><span class="s">"fd-asset-upload__label"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-asset-upload__text"</span><span class="nt">&gt;</span>Upload Link<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="asset-upload-with-no-icon">Asset Upload with no icon</h2>
+<p>Add the modifier class <code class="highlighter-rouge">fd-asset-upload--no-icon</code> to supress the upload icon.</p>
+
+<div class="fd-tile docs-component docs-component__">
+    <label class="fd-form-label docs-component__bg-toggle" for="24160" title="Change Background">
+        <span class="fd-toggle fd-toggle--xs fd-input">
+            <input type="checkbox" name="" value="" id="24160" class="toggle-bg fd-toggle__input" />
+            <span class="fd-toggle__switch" role="presentation"></span>
+        </span>
+
+    </label>
+    <div class="fd-tile__content">
+		
+<div class="fd-asset-upload fd-asset-upload--no-icon">
+    <input type="file" id="asset-upload" class="fd-asset-upload__input" />
+    <label for="asset-upload" class="fd-asset-upload__label">
+        <span class="fd-asset-upload__text">Upload Link</span>
+    </label>
+</div>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-asset-upload fd-asset-upload--no-icon"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">id=</span><span class="s">"asset-upload"</span> <span class="na">class=</span><span class="s">"fd-asset-upload__input"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"asset-upload"</span> <span class="na">class=</span><span class="s">"fd-asset-upload__label"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-asset-upload__text"</span><span class="nt">&gt;</span>Upload Link<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
 
 
     <div class="tags">
