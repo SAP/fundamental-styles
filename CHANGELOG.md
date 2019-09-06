@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0-rc.101"></a>
+# [0.2.0-rc.101](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.100...v0.2.0-rc.101) (2019-09-06)
+
+
+### Features
+
+* rebuild distribution pipeline for self contained styles ([#313](https://github.com/SAP/fundamental-styles/issues/313)) ([dd1eaad](https://github.com/SAP/fundamental-styles/commit/dd1eaad))
+
+
+
 <a name="0.2.0-rc.100"></a>
 # [0.2.0-rc.100](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.99...v0.2.0-rc.100) (2019-09-04)
 
