@@ -1,15 +1,16 @@
+//do not change import order
 @import "../scss/core/root";
 @import "../scss/settings";
 @import "../scss/fonts/72";
 
 @import "./icon";
-@import "./helpers";
 @import "./layout";
 
 @import "../scss/components/alert";
 @import "../scss/components/action-bar";
 @import "../scss/components/asset-upload";
 @import "../scss/components/badge";
+@import "../scss/components/popover";
 @import "../scss/components/button";
 @import "../scss/components/button-group";
 @import "../scss/components/button-split";
@@ -28,7 +29,7 @@
 @import "../scss/components/image";
 @import "../scss/components/inline-help";
 @import "../scss/components/input";
-@import "../scss/components/input-group";
+@import "../scss/components/textarea";
 @import "../scss/components/label";
 @import "../scss/components/layout-grid";
 @import "../scss/components/link";
@@ -41,21 +42,20 @@
 @import "../scss/components/page";
 @import "../scss/components/pagination";
 @import "../scss/components/panel";
-@import "../scss/components/popover";
+@import "../scss/components/tile";
 @import "../scss/components/product-tile";
 @import "../scss/components/radio";
 @import "../scss/components/section";
-@import "../scss/components/shellbar";
 @import "../scss/components/side-nav";
 @import "../scss/components/spinner";
 @import "../scss/components/status-label";
 @import "../scss/components/table";
 @import "../scss/components/tabs";
-@import "../scss/components/textarea";
 @import "../scss/components/tree";
 @import "../scss/components/tabs";
-@import "../scss/components/tile";
 @import "../scss/components/time";
 @import "../scss/components/toggle";
 @import "../scss/components/token";
-
+@import "../scss/components/input-group";
+@import "../scss/components/shellbar";
+@import "./helpers";

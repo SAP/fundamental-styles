@@ -17,7 +17,6 @@ Inline help is used to display help text in a popover, often inline with headers
 ## Default Position
 The default positioning of inline help component is bottom right.
 {% capture inline-help %}
-Bottom Right (Default)
 
 <span class="fd-inline-help">
     <span class="fd-inline-help__content fd-inline-help__content--bottom-right">
@@ -31,7 +30,6 @@ Bottom Right (Default)
 
 ## Bottom Left Position
 {% capture inline-help %}
-Bottom Left
 
 <span class="fd-inline-help">
     <span class="fd-inline-help__content fd-inline-help__content--bottom-left">
@@ -45,7 +43,6 @@ Bottom Left
 
 ## Bottom Center Position
 {% capture inline-help %}
-Bottom Center
 
 <span class="fd-inline-help">
     <span class="fd-inline-help__content fd-inline-help__content--bottom-center">
@@ -59,7 +56,6 @@ Bottom Center
 
 ## Right Position
 {% capture inline-help %}
-Right
 
 <span class="fd-inline-help">
     <span class="fd-inline-help__content fd-inline-help__content--right">
@@ -73,7 +69,6 @@ Right
 
 ## Left Position
 {% capture inline-help %}
-Left
 
 <span class="fd-inline-help">
     <span class="fd-inline-help__content fd-inline-help__content--left">
@@ -82,3 +77,10 @@ Left
 </span>
 {% endcapture %}
 {% include display-component.html component=inline-help %}
+
+<style>
+    /* align examples to center for this page only - necessary for left side popover examples */
+    .fd-tile__content {
+        text-align: center;
+    }
+</style>

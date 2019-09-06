@@ -27,8 +27,6 @@ The fully compiled, minified library is available via CDN for inclusion in your 
 
 The compiled CSS for the full library and modules, e.g., core, layout, etc., are distributed via [NPM](https://www.npmjs.com/package/fundamental-styles).
 
-This gives you incredible flexibility to use individual components and enable [advanced customization](https://github.com/SAP/fundamental-styles/wiki/Advanced-Customization) options.
-
 ````
 npm install fundamental-styles --save
 ````

@@ -21,13 +21,12 @@ Can hold two child types:
 
 
 ## Section structure
-Shows an example of a background color applied with a helper class.
 
 {% capture section-layout %}
 <section class="fd-section">
     .fd-section
 </section>
-<section class="fd-section fd-has-background-color-accent-4 fd-has-color-action-2">
+<section class="fd-section">
     .fd-section
 </section>
 <section class="fd-section">

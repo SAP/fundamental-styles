@@ -1,13 +1,8 @@
-
-$search-border-color: docs-color(neturals, 1);
-$search-input-bg: docs-color(background, 1);
-$search-results-link-hover: docs-color(background, 2);
-
 .search-container {
     .fd-popover {
         display: block;
         &__body {
-            width: 100%;
+            min-width: 100%;
         }
     }
 }
