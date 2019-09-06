@@ -42,11 +42,12 @@ $block: #{$fd-namespace}-select;
                 @include fd-var-color("background-color", fd-color("neutral", 1), --fd-color-neutral-1);
             }
         }
-    }
 
-    &.is-expanded {
-        &::after {
-            @include fd-var-color("background-color", $fd-color--action, --fd-color-action-1);
+        &.is-expanded {
+            &::after {
+                @include fd-var-color("background-color", $fd-color--action, --fd-color-action-1);
+                @include fd-var-color("color", fd-color("neutral", 1), --fd-color-neutral-1);
+            }
         }
     }
 
@@ -60,8 +61,42 @@ $block: #{$fd-namespace}-select;
         display: inline-block;
     }
 
-    &__dropdown {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-    }
+    // &__dropdown {
+    //     border-top-left-radius: 0;
+    //     border-top-right-radius: 0;
+    //     list-style: none;
+    // }
+    // &__item {
+    //     @include fd-reset();
+    //     display: block;
+    //     transition: all $fd-animation--speed ease-in;
+    //     @include action-cursor();
+    //     padding: $fd-menu-item-padding-y $fd-menu-item-padding-x;
+    //     @include fd-var-color("background-color", $fd-menu-item-background-color, --fd-menu-item-background-color);
+    //     @include fd-var-color("color", $fd-menu-item-color, --fd-menu-item-color);
+    //     @include fd-weight("normal");
+    //     @include fd-hover() {
+    //         @include fd-var-color("color", $fd-menu-item-color--hover, --fd-color-text-1);
+    //         @include fd-var-color("background-color", $fd-menu-item-background-color--hover, --fd-color-background-hover);
+    //     }
+    //     @include fd-selected() {
+    //         @include fd-var-color("background-color", $fd-menu-item-background-color--selected, --fd-color-background-selected);
+    //         @include fd-hover() {
+    //             @include fd-var-color("background-color", fd-color-state("selected-hover"), --fd-color-background-selected-hover);
+    //         }
+    //     }
+    //     @include fd-active-pressed-selected() {
+    //         @include fd-var-color("color", fd-color-state("selected", "action"), --fd-color-action-selected);
+    //         outline: none;
+    //     }
+    //     &:focus {
+    //         outline-style: dotted;
+    //         outline-width: 1px;
+    //         @include fd-var-color("outline-color", fd-color-state("hover", "action"), --fd-color-action-focus);
+    //     }
+    //     @include fd-disabled() {
+    //         @include fd-var-color("outline-color", fd-color-state("disabled", "action"), --fd-color-action-disabled);
+    //         cursor: not-allowed;
+    //     }
+    // }
 }

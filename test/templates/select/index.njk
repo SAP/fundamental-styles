@@ -17,9 +17,22 @@
 
 {% set example %}
 
-  {{ select(props, modifier={ block: [""] } ) }}
+  {{ select(props) }}
 
-  {{ select(props, modifier={ block: ["compact"] } ) }}
+  {{ select(props, modifier={ block: ["compact"] }) }}
+
+{% endset %}
+{{ format(example) }}
+
+<br><br>
+
+<h2>expanded</h2>
+
+{% set example %}
+
+  {{ select(props, state={ expanded: true } ) }}
+
+  {{ select(props, modifier={ block: ["compact"] }, state={ expanded: true } ) }}
 
 {% endset %}
 {{ format(example) }}
