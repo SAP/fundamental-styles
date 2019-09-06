@@ -1,6 +1,6 @@
 @import "./../settings";
 
-$fd-scss-font-path: "fonts/" !default;
+$fd-scss-font-path: "./fonts/" !default;
 @if variable-exists(fd-fonts-path) {
     $fd-scss-font-path: $fd-fonts-path;
 }

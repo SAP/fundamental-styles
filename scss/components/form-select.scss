@@ -56,4 +56,10 @@ $block: #{$fd-namespace}-form-select;
             height: calc(var(--fd-forms-height-compact) * 3);
         }
     }
+    &[disabled] {
+        &:focus,
+        &:hover {
+        background-image: url($fd-forms-select-background-image--disabled);
+    }
+    }
 }

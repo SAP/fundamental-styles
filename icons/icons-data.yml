@@ -1,3 +1,0 @@
-<% g = _.map(glyphs, function(item, index) {
-    return `  - name: ${item.name} \n`;
-}); %><%= g.join('') %>

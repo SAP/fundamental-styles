@@ -223,10 +223,6 @@ entries:
 
     folderitems:
 
-    - title: How to use SCSS
-      url: /resources/how-to-use-scss.html
-      output: web
-
     - title: Design System Utilities
       url: /resources/design-system-utilities.html
       output: web

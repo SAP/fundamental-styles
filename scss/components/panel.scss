@@ -1,0 +1,123 @@
+@import "./../settings";
+@import "./../functions";
+@import "./../mixins";
+/*!
+.fd-panel
+    .fd-panel__header
+        .fd-panel__title
+        .fd-panel__actions
+    .fd-panel__footer
+*/
+
+$block: #{$fd-namespace}-panel;
+.#{$block} {
+    $fd-panel-background-color: fd-color("background",2) !default;
+    $fd-panel-padding: fd-space("s") fd-space("reg") !default;
+    $fd-panel-border-width: 0 !default;
+    $fd-panel-border-color: transparent !default;
+    $fd-panel-box-shadow-color: rgba(fd-color("text"), 0.08) !default;
+    $fd-panel-border-radius: $fd-border-radius !default;
+    $fd-panel-header-border-color: fd-color("neutral",2) !default;
+    $fd-panel-title-color: fd-color("text") !default;
+    $fd-panel-filters-padding: fd-space(3) fd-space("reg") !default;
+    $fd-panel-filters-border-color: $fd-panel-header-border-color !default;
+    $fd-panel-footer-padding: fd-space(4) fd-space("reg") !default;
+    $fd-panel-footer-border-color: $fd-panel-header-border-color !default;
+    --fd-panel-background-color: var(--fd-color-background-2);
+    --fd-panel-border-color: var(--fd-color-neutral-2);
+    --fd-panel-box-shadow-color: var(--fd-color-neutral-2);
+    --fd-panel-divider-color: var(--fd-panel-border-color);
+    --fd-panel-border-width: 0;
+
+    --fd-panel-title-color: var(--fd-color-text-1);
+    //anim
+    $fd-panel-fiters-transition-params: 0.15s ease-in !default;
+
+    @include fd-clearfix();
+    @include fd-var-color("background-color", $fd-panel-background-color, --fd-panel-background-color);
+    border-radius: $fd-border-radius;
+    border-style: solid;
+    @include fd-var-size("border-width", $fd-panel-border-width, --fd-panel-border-width);
+    @include fd-var-color("border-color", $fd-panel-border-color, --fd-panel-border-color);
+
+    @include fd-reset();
+    box-shadow: 0 5px 20px 0 var(--fd-panel-box-shadow-color);
+    &__header {
+        @include fd-reset();
+        min-height: fd-space(10);
+        display: flex;
+        align-items: center;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        @include fd-var-color("border-bottom-color", $fd-panel-header-border-color, --fd-panel-divider-color);
+        padding: $fd-panel-padding;
+        @include fd-type("-1");
+        @include fd-var-color("color", fd-color("text", 3), --fd-color-text-3);
+    }
+    &__head {
+      @include fd-reset();
+    }
+    &__title {
+        @include fd-reset();
+        @include fd-type("1");
+        flex: 1;
+        margin-bottom: 0;
+        @include fd-var-color("color", $fd-panel-title-color, --fd-panel-title-color);
+    }
+    &__description {
+        @include fd-reset();
+        @include fd-var-color("color", fd-color("text", 3), --fd-color-text-3);
+        @include fd-type("-1");
+        margin-top: fd-space(base);
+    }
+    &__actions {
+        @include fd-reset();
+        @include fd-var-color("color", fd-color("text", 3), --fd-color-text-3);
+        @include fd-type("-1");
+        margin-left: auto;
+        margin-top: -#{fd-space(base)};
+        margin-bottom: -#{fd-space(base)};
+        @include fd-rtl() {
+          margin-right: auto;
+          margin-left: 0;
+        }
+    }
+    &__filters {
+        @include fd-reset();
+        padding: $fd-panel-filters-padding;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        @include fd-var-color("border-bottom-color", $fd-panel-filters-border-color, --fd-panel-divider-color);
+        transition: all $fd-panel-fiters-transition-params;
+        &.is-hidden {
+          padding-top: 0;
+          padding-bottom: 0;
+          max-height: 0;
+          overflow: hidden;
+        }
+    }
+    &__body {
+        @include fd-reset();
+        padding: $fd-panel-padding;
+        &--full-bleed,
+        &--bleed {
+          padding: 0;
+        }
+        > :first-child {
+          margin-top: 0;
+        }
+
+        > :last-child {
+          margin-bottom: 0;
+        }
+    }
+    &__footer {
+        @include fd-reset();
+        display: flex;
+        justify-content: center;
+        padding: $fd-panel-footer-padding;
+        border-top-style: solid;
+        border-top-width: 1px;
+        @include fd-var-color("border-top-color", $fd-panel-footer-border-color, --fd-panel-divider-color);
+    }
+}
