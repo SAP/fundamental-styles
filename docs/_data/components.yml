@@ -48,6 +48,9 @@
     - title: Pagination
       meta: pagination
 
+    - title: Select
+      meta: select
+
     - title: Shellbar
       meta: shellbar
 

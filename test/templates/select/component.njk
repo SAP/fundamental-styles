@@ -1,0 +1,17 @@
+{% import "./../utils.njk" as utils %}
+
+<!--
+select:
+    properties={},
+    modifier={ block: [] },
+    state={},
+    aria={}
+-->
+{%- macro select(properties={}, modifier={}, state={}, aria={}) %}
+    {%- set _id = utils.id() -%}
+    <div class="fd-select{{ modifier.block | modifier('select') }}">
+        <button class="fd-select__control {{ "sap-icon--"+properties.icon if properties.icon }}" aria-controls="{{ properties.id }}" aria-expanded="false" aria-haspopup="true"{{ " disabled" if state.disabled }}{{ aria | aria }}>
+            {{ properties.label }}
+        </button>
+    </div>
+{%- endmacro %}

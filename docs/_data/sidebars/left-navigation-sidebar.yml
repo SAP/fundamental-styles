@@ -176,6 +176,10 @@ entries:
       url: /components/shellbar.html
       output: web
 
+    - title: Select
+      url: /components/select.html
+      output: web
+
     - title: Side Navigation
       url: /components/side-navigation.html
       output: web

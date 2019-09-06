@@ -1,0 +1,67 @@
+@import "./../settings";
+@import "./../mixins";
+@import "./../icons/mixins";
+@import "./../functions";
+
+$block: #{$fd-namespace}-select;
+
+.#{$block} {
+    display: block;
+
+    &__control {
+        @include fd-form-text();
+        @include fd-var-size("height", $fd-forms-height, --fd-forms-height);
+        width: 100%;
+        text-align: left;
+
+        $fd-dropdown-menu-item-transition-params: $fd-animation--speed ease-in !default;
+
+        @include fd-icon-base("after");
+        @include fd-icon-glyph("slim-arrow-down","after") {
+            transition: transform $fd-dropdown-menu-item-transition-params;
+        }
+        position: relative;
+        padding-right: $fd-forms-height + $fd-forms-padding - 2;
+
+        &::after {
+            @include fd-var-color("color", $fd-color--action, --fd-color-action-1);
+            width: $fd-forms-height - 2;
+            border-top-right-radius: $fd-border-radius;
+            border-bottom-right-radius: $fd-border-radius;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        @include fd-hover() {
+            &::after {
+                @include fd-var-color("background-color", fd-color("neutral", 1), --fd-color-neutral-1);
+            }
+        }
+    }
+
+    &.is-expanded {
+        &::after {
+            @include fd-var-color("background-color", $fd-color--action, --fd-color-action-1);
+        }
+    }
+
+    &--compact {
+        .#{$block}__control {
+            @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);
+        }
+    }
+
+    &--inline {
+        display: inline-block;
+    }
+
+    &__dropdown {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
