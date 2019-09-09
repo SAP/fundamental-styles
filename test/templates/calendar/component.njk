@@ -188,7 +188,7 @@ calendar:
     <thead class="fd-calendar__group">
       <tr class="fd-calendar__row">
       {%- for day in data.days %}
-         <th class="fd-calendar__column-header"><span class="fd-calendar__day-of-week">{{day| truncate(1, true, "")}}</span></th>
+         <th class="fd-calendar__column-header"><span class="fd-calendar__text">{{day| truncate(1, true, "")}}</span></th>
       {%- endfor %}
       </tr>
     </thead>

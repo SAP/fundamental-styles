@@ -7,12 +7,9 @@
     .fd-button
 */
 $block: #{$fd-namespace}-button-group;
-$block-alt: #{$fd-namespace}-segmented-button;
 
-.#{$block},
-.#{$block-alt} {
-
-  @include fd-reset-spacing();
+.#{$block} {
+  @include fd-reset();
   display: inline-flex;
   vertical-align: middle;
   & > * {

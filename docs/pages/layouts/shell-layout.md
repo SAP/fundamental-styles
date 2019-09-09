@@ -155,10 +155,8 @@ The container visibility can be toggled with the `aria-hidden` attribute.
                   fd-modal__body
               </div>
               <footer class="fd-modal__footer">
-                <div class="fd-modal__actions">
-                  <button class=" fd-button--light">fd-modal__action</button>
-                  <button class=" fd-button">fd-modal__action</button>
-                </div>
+                <button class=" fd-button--light">Button</button>
+                <button class=" fd-button">Button</button>
                 </footer>
           </div>
         </div>

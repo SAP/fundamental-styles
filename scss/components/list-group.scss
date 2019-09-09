@@ -34,6 +34,7 @@ $block: #{$fd-namespace}-list-group;
     }
   }
   &__action {
+    @include fd-reset();
     flex: 1;
     text-align: right;
     position: relative;

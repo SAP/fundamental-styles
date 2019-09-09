@@ -119,29 +119,30 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
 .#{$block} .#{$block} {
   //ELEMENTS *******************************************
   &__dates {
+    @include fd-reset();
     @extend %fd-calendar-content-hidden;
   }
   &__months {
-
+    @include fd-reset();
     display: grid;
     @extend %fd-calendar-content-hidden;
   }
   &__years {
+    @include fd-reset();
     display: flex;
     flex-wrap: wrap;
     display: grid;
     @extend %fd-calendar-content-hidden;
   }
   &__header {
-    @if $fd-support-css-var-fallback {
-      box-shadow: inset 0 -1px 0 0 fd-color("neutral", 2);
-    }
+    @include fd-reset();
     box-shadow: inset 0 -1px 0 0 var(--fd-color-neutral-2);
     height: fd-space(13);
     display: flex;
     align-items: center;
   }
   &__action {
+    @include fd-reset();
     & > * {
       @include fd-reset-child-spacing();
     }
@@ -152,10 +153,12 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
     }
   }
   &__content {
+    @include fd-reset();
     padding: fd-space(xs) 0;
     @include fd-var-color("background-color", $fd-calendar-content-background-color, --fd-color-background-2);
   }
   &__navigation {
+    @include fd-reset();
     display: flex;
     flex: 1;
     justify-content: space-between;
@@ -171,9 +174,11 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
     }
   }
   &__group {
+    @include fd-reset();
     display: table-row-group;
   }
   &__row {
+    @include fd-reset();
     display: table-row;
   }
   &__column-header {
@@ -230,5 +235,10 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
         @extend %fd-calendar-item-selected-range-last;
       }
     }
+  }
+  &__text {
+    @include fd-reset-spacing();
+    font-size: 12px;
+    border: none;
   }
 }

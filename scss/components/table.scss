@@ -259,9 +259,6 @@ $block: #{$fd-namespace}-table;
         max-width: 200px;
         position: absolute;
         z-index: map-get($fd-z-index-levels, "first");
-        @if $fd-support-css-var-fallback {
-            box-shadow: 2px 0 0 0 $fd-table-border-color;
-        }
         box-shadow: 2px 0 0 0 var(--fd-table-border-color);
     }
 

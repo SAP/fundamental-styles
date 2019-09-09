@@ -52,6 +52,7 @@ $block: #{$fd-namespace}-tile;
 
   //ELEMENTS
   &__media {
+    @include fd-reset();
     padding: $fd-tile-content-padding-y 0 $fd-tile-content-padding-y $fd-tile-content-padding-x;
     @include fd-rtl() {
       padding-right: $fd-tile-content-padding-x;
@@ -59,6 +60,7 @@ $block: #{$fd-namespace}-tile;
     }
   }
   &__content {
+    @include fd-reset();
     flex: 1;
     padding: $fd-tile-content-padding-y $fd-tile-content-padding-x $fd-tile-content-padding-y fd-space(3);
     @include fd-rtl() {
@@ -79,6 +81,7 @@ $block: #{$fd-namespace}-tile;
     @include fd-reset-spacing();
   }
   &__actions {
+    @include fd-reset();
     padding: fd-space(3) $fd-tile-content-padding-x fd-space(3) fd-space(3);
   }
 }

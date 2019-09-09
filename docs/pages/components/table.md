@@ -29,7 +29,7 @@ A table is a set of tabular data. Line items can support data, images and action
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
             <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
             </span></td>
             <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -38,7 +38,7 @@ A table is a set of tabular data. Line items can support data, images and action
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
             </span></td>
             <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -47,7 +47,7 @@ A table is a set of tabular data. Line items can support data, images and action
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
             </span></td>
             <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -79,7 +79,7 @@ A table is a set of tabular data. Line items can support data, images and action
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
             <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
             </span></td>
             <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -88,7 +88,7 @@ A table is a set of tabular data. Line items can support data, images and action
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
             </span></td>
             <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -97,7 +97,7 @@ A table is a set of tabular data. Line items can support data, images and action
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
             </span></td>
             <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -129,7 +129,7 @@ A table is a set of tabular data. Line items can support data, images and action
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
             <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
             </span></td>
             <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -138,7 +138,7 @@ A table is a set of tabular data. Line items can support data, images and action
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
             </span></td>
             <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -147,7 +147,7 @@ A table is a set of tabular data. Line items can support data, images and action
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
             </span></td>
             <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>

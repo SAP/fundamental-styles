@@ -1,7 +1,0 @@
-//if
-@function fd-if($bool, $poss) {
-    @if $bool {
-        @return nth($poss, 1);
-    }
-    @return nth($poss, 2);
-}

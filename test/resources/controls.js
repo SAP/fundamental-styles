@@ -84,7 +84,7 @@
             document.body.style.backgroundColor = "white";
             localStorage.setItem("toggleState", true);
         } else {
-            document.body.style.backgroundColor = "#f3f4f5";
+            document.body.style.backgroundColor = "#EDEFF0";
             localStorage.setItem("toggleState", false);
         }
     });
