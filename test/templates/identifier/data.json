@@ -1,13 +1,10 @@
 {
     "id": "identifier",
     "name": "Identifier",
-    "css_vars": true,
-    "rtl": true,
-    "version": "1.0.0",
     "properties": {
         "initials": "WW",
         "icon": "washing-machine",
-        "thumbnail": "https://www.wealthclinic.com/wp-content/uploads/2016/06/re-perez-branding-for-the-people-square-headshot.jpg"
+        "thumbnail": "/static/nature.jpg"
     },
     "modifier": {
         "block": [

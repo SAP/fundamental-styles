@@ -10,15 +10,11 @@
     {% include topnav.html %}
 
     <!-- Page Content -->
-    <div class="docs-container">
-
-        <div class="main-content" id="tg-sb-content">
-            <!-- Content Column -->
-            {{content}}
-
-            <!-- footer -->
-            {% include footer.html %}
-        </div>
+    <div class="main-content" id="tg-sb-content">
+        <!-- Content Column -->
+        {{content}}
+        <!-- footer -->
+        {% include footer.html %}
     </div>
 </body>
 {% if site.google_analytics %} {% include google_analytics.html %} {% endif %}

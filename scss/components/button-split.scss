@@ -9,8 +9,7 @@
 $block: #{$fd-namespace}-button-split;
 
 .#{$block} {
-
-  @include fd-reset-spacing();
+  @include fd-reset();
   display: inline-flex;
   vertical-align: middle;
   position: relative;

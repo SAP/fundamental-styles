@@ -16,4 +16,12 @@ $block: #{$fd-namespace}-input;
     &--compact {
         @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);
     }
+    &--no-number-spinner {
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        -moz-appearance: textfield;
+    }
 }

@@ -1,9 +1,6 @@
 {
     "id": "multi-input",
     "name": "Multi Input",
-    "version": "1.0.0",
-    "css_vars": true,
-    "rtl": false,
     "type": "text",
     "properties": {
         "placeholder": "Placeholder Text"

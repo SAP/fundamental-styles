@@ -1,6 +1,5 @@
 //library namespace
 $fd-namespace: fd !default;
-$fd-support-css-var-fallback: false !default;
 
 //————————v Fundamental Styles FOUNDATION ————————v
 
@@ -212,6 +211,7 @@ $fd-z-index-levels: map-merge((
   "base": 0,
   "first": 1,
   "second": 2,
+  "focus": 5,
   "top": 1000,
   "default": auto
 ), $fd-z-index-levels);

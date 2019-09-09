@@ -1,6 +1,5 @@
 @import "./../settings";
 @import "./../mixins";
-@import "./../icons/mixins";
 @import "./../functions";
 
 $block: #{$fd-namespace}-popover;
@@ -25,26 +24,24 @@ $block: #{$fd-namespace}-popover;
   $fd-popover-transition-params: $fd-animation--speed !default;
   $fd-popover-transition-distance: -15px !default;
 
-    // Consider removing this reset, look into its use and seeing font-size/line-height/color...
-    // @include fd-reset;
+    @include fd-reset();
     position: relative;
     display: inline-block;
 
     &__control {
+      @include fd-reset();
       position: relative;
       margin-left: 0;
       @include action-cursor();
     }
     &__body {
+      @include fd-reset();
       border: $fd-popover-border;
       position: absolute;
       white-space: nowrap;
       z-index: $fd-popover-z-index;
       border-radius: $fd-border-radius;
       @include fd-var-color("background-color", $fd-popover-background-color, --fd-color-background-2);
-      @if $fd-support-css-var-fallback {
-        box-shadow: 0 5px 20px 0 fd-color("neutral", 3), 0 2px 8px 0 fd-color("neutral", 2);
-      }
       box-shadow: 0 5px 20px 0 var(--fd-color-neutral-3), 0 2px 8px 0 var(--fd-color-neutral-2);
       opacity: 1;
       visibility: visible;
@@ -164,9 +161,6 @@ $block: #{$fd-namespace}-popover;
         z-index: $fd-popover-z-index;
         border-radius: $fd-border-radius;
         @include fd-var-color("background-color", $fd-popover-background-color, --fd-color-background-2);
-        @if $fd-support-css-var-fallback {
-            box-shadow: 0 5px 20px 0 fd-color("neutral", 3), 0 2px 8px 0 fd-color("neutral", 2);
-        }
         box-shadow: 0 5px 20px 0 var(--fd-color-neutral-3), 0 2px 8px 0 var(--fd-color-neutral-2);
         opacity: 1;
 

@@ -1,16 +1,11 @@
 {
-    "id": "file-upload",
-    "name": "File Upload",
-    "css_vars": true,
-    "rtl": true,
-    "version": "1.0.0",
+    "id": "asset-upload",
+    "name": "Asset Upload",
     "properties": {
         "text": "Upload Link",
         "message": ""
     },
     "modifier": {
         "block": []
-    },
-    "state": {},
-    "aria": {}
+    }
 }

@@ -14,20 +14,19 @@ The section is a page-level structure container used to divide a page into stack
 You will generally use a section inside a page container which will give you the appropriate side margins. Since a section is full-width by default it can be used as a well with background colors or images.
 
 Can hold two child types:
-- `.fd-panel` (optionally with `.fd-panel-grid`) is the most common use.
+- `.fd-panel`
 - `.fd-container` and `fd-col--[num]` can be used to organize panels or content when a grid layout is not desired.
 
 > {{ site.data.strings.headerDisclaimer }}
 
 
 ## Section structure
-Shows an example of a background color applied with a helper class.
 
 {% capture section-layout %}
 <section class="fd-section">
     .fd-section
 </section>
-<section class="fd-section fd-has-background-color-accent-4 fd-has-color-action-2">
+<section class="fd-section">
     .fd-section
 </section>
 <section class="fd-section">
@@ -37,13 +36,13 @@ Shows an example of a background color applied with a helper class.
 {% include display-component.html component=section-layout class="section" %}
 
 
-## Section with panel grid
+## Section with layout grid
 {: .docs-header-h3}
 Shows an example with the grid span helper class. This is most appropriate when displaying a collection of content in a linear order.
 {% capture section-layout-example %}
 <section class="fd-section">
-    <div class="fd-panel-grid">
-        <div class="fd-panel fd-has-grid-column-span-2">
+    <div class="fd-layout-grid">
+        <div class="fd-panel fd-layout-grid__span-column-2">
             .fd-panel
         </div>
         <div class="fd-panel">
@@ -109,13 +108,3 @@ Header and title elements are available when necessary to label content groups.
 {% endcapture %}
 {% include display-component.html component=section-layout-example %}
 
-
-
-<style media="screen">
-    .fd-panel{
-        padding: 20px;
-        padding-top:40px;
-        height: 100px;
-        text-align: center;
-    }
-</style>

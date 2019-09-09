@@ -7,9 +7,7 @@
   .fd-modal__header
     .fd-form__title
   .fd-form__body
-  .fd-form__footer-items
-    .fd-modal__button-primary
-    .fd-modal__button-light
+  .fd-form__footer
 */
 $block: #{$fd-namespace}-modal;
 
@@ -31,6 +29,7 @@ $block: #{$fd-namespace}-modal;
   max-width: $fd-modal-width;
 
   &__content {
+    @include fd-reset();
     border-radius: $fd-border-radius;
     @include fd-var-color("background-color", $fd-modal-inner-content-background, --fd-modal-background-color);
   }

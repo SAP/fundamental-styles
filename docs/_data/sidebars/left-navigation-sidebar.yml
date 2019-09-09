@@ -15,9 +15,6 @@ entries:
     output: web
 
     folderitems:
-    - title: Grid
-      url: /foundation/grid.html
-      output: web
 
     - title: Spacing
       url: /foundation/spacing.html
@@ -38,6 +35,10 @@ entries:
       url: /layouts/shell-layout.html
       output: web
 
+    - title: Layout Grid
+      url: /layouts/layout-grid.html
+      output: web
+
     - title: Page
       url: /layouts/page-layout.html
       output: web
@@ -52,6 +53,25 @@ entries:
 
     - title: Columns
       url: /layouts/columns.html
+      output: web
+
+  # Patterns
+  - title: patterns
+    url: /patterns/index.html
+    output: web
+
+    folderitems:
+  
+    - title: Contextual Menu
+      url: /patterns/contextual-menu.html
+      output: web
+
+    - title: Combobox Input
+      url: /patterns/combobox-input.html
+      output: web
+
+    - title: Search Input
+      url: /patterns/search-input.html
       output: web
 
   # Components
@@ -82,14 +102,6 @@ entries:
 
     - title: Calendar
       url: /components/calendar.html
-      output: web
-
-    - title: Combobox Input
-      url: /components/combobox-input.html
-      output: web
-
-    - title: Contextual Menu
-      url: /components/contextual-menu.html
       output: web
 
     - title: Date Picker
@@ -160,10 +172,6 @@ entries:
       url: /components/popover.html
       output: web
 
-    - title: Search Input
-      url: /components/search-input.html
-      output: web
-
     - title: Shellbar
       url: /components/shellbar.html
       output: web
@@ -186,10 +194,6 @@ entries:
 
     - title: Tile
       url: /components/tile.html
-      output: web
-
-    - title: Tile Grid
-      url: /components/tile-grid.html
       output: web
 
     - title: Time
@@ -218,10 +222,6 @@ entries:
     output: web
 
     folderitems:
-
-    - title: How to use SCSS
-      url: /resources/how-to-use-scss.html
-      output: web
 
     - title: Design System Utilities
       url: /resources/design-system-utilities.html

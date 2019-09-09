@@ -1,8 +1,10 @@
-@import "./mixins/mixins";
+@import "./mixins/breakpoints";
 @import "./mixins/elements";
-@import "./mixins/menu";
 @import "./mixins/forms";
+@import "./mixins/icons";
+@import "./mixins/layouts";
+@import "./mixins/menu";
+@import "./mixins/mixins";
 @import "./mixins/states";
 @import "./mixins/type";
 @import "./mixins/vars";
-@import "./mixins/breakpoints";

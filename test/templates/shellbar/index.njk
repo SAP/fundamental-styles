@@ -1,173 +1,76 @@
 {% extends "layout.njk" %}
 {% import "./../utils.njk" as utils %}
 {% from "./../format.njk" import format %}
-{% from "./../button/component.njk" import button %}
-{% from "./../user-menu/component.njk" import user_menu %}
-{% from "./component.njk" import shellbar %}
-{% from "./../search-input/component.njk" import search_input %}
+{% from "./component.njk" import shellbar, product_switcher %}
 
-{% set search = search_input(properties={
-    "id": utils.id(),
-    "value": data.properties.search.value,
-    "placeholder": data.properties.search.placeholder,
-    "collapsed": data.properties.search.collapsed,
-    "items": data.properties.search.items
-  })
-%}
-
-
-{% set notification = button({ icon: 'bell' }, modifier={ block: ['shell'] }) %}
-
-{% set actions = [
-  {
-    "label": "Notifications",
-    "action": notification,
-    "collapse": false
-  }
-]
-%}
 {% block content %}
 
+<h2>default</h2>
+{% set example %}
+    {{  shellbar() }}
+{% endset %}
+{{ format(example) }}
 
-<div style="background-color: #f3f4f5; margin:-20px; padding:20px;">
+<h2>with product menu</h2>
+{% set example %}
+    {{  shellbar(product='true') }}
+{% endset %}
+{{ format(example) }}
 
-  <h2>typical implentation</h2>
-    {% set example %}
-        {{  shellbar(switcher=true) }}
-    {% endset %}
-    {{ format(example) }}
-<br><br>
-<h2>search open</h2>
-    {% set example %}
-        {{  shellbar(switcher=true) }}
-    {% endset %}
-    {{ format(example) }}
+<h2>Logo variations</h2>
 
-    <br><br>
-<h2>no switcher</h2>
-    {% set example %}
-        {{  shellbar(switcher=false) }}
-    {% endset %}
-    {{ format(example) }}
+<h3>Image logo</h3>
 
-<br><br>
-    {% set example %}
-        {{  shellbar(product={ title: "Sales Cloud"}) }}
-    {% endset %}
-    {{ format(example) }}
-
-    {% set example %}
-        {{  shellbar(
-          brand={
-            logo: "http://pngimg.com/uploads/cocacola_logo/cocacola_logo_PNG3.png"},
-            product={ title: "Corporate Portal"})
-        }}
-    {% endset %}
-    {{ format(example) }}
-
-    <br><br><hr><br>
-      <h1>Logo variations</h1>
-
-
-    <h2>CSS logo</h2>
-    {% set example %}
-      {{ shellbar(
-        product={ title: "Aliquam erat nisl, aliquam pretium libero aliquet " },
-        copilot=false,
-        actions=false,
-        user=false,
-        switcher=false,
-        search=false
-      )}}
-    {% endset %}
-    {{ format(example) }}
-
-
-
-  <h2>Image logo</h2>
-
-    {% set airlines = {
-        name: "Airlines",
-        logo: {
-            src: "static/logos/airlines-logo.png",
-            height: 30
+  {% set example %}
+    {{ shellbar(logo={
+          src: "static/logos/airlines-logo.png",
+          height: 30
         }
-    } %}
-    {% set example %}
-      {{ shellbar(
-        product={ title: "Portal" },
-        copilot=false,
-        actions=false,
-        user=false,
-        switcher=false,
-        search=false,
-        brand=airlines
-      )}}
-    {% endset %}
-    {{ format(example) }}
+    )}}
+  {% endset %}
+  {{ format(example) }}
 
-    <h2>Image srcset logo</h2>
-    {% set sap = {
-        name: "SAP",
-        logo: {
-            src: "static/logos/sap-logo.png",
-            srcset: ["static/logos/sap-logo@2x.png","static/logos/sap-logo@3x.png","static/logos/sap-logo@4x.png"],
-            width: 48,
-            height: 24
-        }
-    } %}
-    {% set example %}
-      {{ shellbar(
-        product={ title: "Portal" },
-        copilot=false,
-        actions=false,
-        user=false,
-        switcher=false,
-        search=false,
-        brand=sap
-      )}}
-    {% endset %}
-    {{ format(example) }}
+<h3>Image srcset logo</h3>
+
+{% set example %}
+  {{ shellbar(
+    logo={
+        src: "static/logos/sap-logo.png",
+        srcset: ["static/logos/sap-logo@2x.png","static/logos/sap-logo@3x.png","static/logos/sap-logo@4x.png"],
+        width: 48,
+        height: 24
+    }
+  )}}
+{% endset %}
+{{ format(example) }}
 
 
-    <h2>SVG logo</h2>
-    {% set fiori = {
-        name: "Fiori",
-        logo: {
-            svg: '<svg width="286" height="143" viewBox="0 0 286 143" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="-91.234%" y1="50%" x2="98.574%" y2="50%" id="a"><stop stop-color="#32B79D" stop-opacity=".59" offset="0%"/><stop stop-color="#33EAFF" stop-opacity=".59" offset="35.525%"/><stop stop-color="#7FCAFF" stop-opacity=".59" offset="73.603%"/><stop stop-color="#84A2FF" stop-opacity=".59" offset="100%"/></linearGradient></defs><g transform="translate(-19)" fill="url(#a)" fill-rule="evenodd"><path d="M114.232.963h190.464c0 16.966-13.754 30.72-30.72 30.72H83.512c0-16.966 13.754-30.72 30.72-30.72zM80.44 56.259h116.736c0 16.966-13.754 30.72-30.72 30.72H49.72c0-16.966 13.754-30.72 30.72-30.72zM49.72 111.555h18.432c0 16.966-13.754 30.72-30.72 30.72H19c0-16.966 13.754-30.72 30.72-30.72z"/></g></svg>'
-        }
-    } %}
-    {% set example %}
-      {{ shellbar(
-        product={ title: "Portal" },
-        copilot=false,
-        actions=false,
-        user=false,
-        switcher=false,
-        search=false,
-        brand=fiori
-      )}}
-    {% endset %}
-    {{ format(example) }}
-    {% set fiori = {
-        name: "SAP",
-        logo: {
-            svg: '<svg width="48" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 412.38 204"><defs><style>.cls-1,.cls-2{fill-rule:evenodd}.cls-1{fill:url(#linear-gradient)}.cls-2{fill:#fff}</style><linearGradient id="linear-gradient" x1="206.19" x2="206.19" y2="204" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#00b8f1"/><stop offset=".02" stop-color="#01b6f0"/><stop offset=".31" stop-color="#0d90d9"/><stop offset=".58" stop-color="#1775c8"/><stop offset=".82" stop-color="#1c65bf"/><stop offset="1" stop-color="#1e5fbb"/></linearGradient></defs><title>SAP_grad_R_scrn_Zeichenfläche 1</title><path class="cls-1" d="M0 204h208.41L412.38 0H0v204"/><path class="cls-2" d="M244.73 38.36h-40.6v96.52l-35.46-96.55h-35.16l-30.27 80.72C100 98.7 79 91.67 62.4 86.4 51.46 82.89 39.85 77.72 40 72c.09-4.68 6.23-9 18.38-8.38 8.17.43 15.37 1.09 29.71 8l14.1-24.55C89.06 40.42 71 36.21 56.17 36.19h-.09c-17.28 0-31.68 5.6-40.6 14.83A34.23 34.23 0 0 0 5.77 74.7C5.54 87.15 10.11 96 19.71 103c8.1 5.94 18.46 9.79 27.6 12.62 11.27 3.49 20.47 6.53 20.36 13A9.57 9.57 0 0 1 65 135c-2.81 2.9-7.13 4-13.09 4.1-11.49.24-20-1.56-33.61-9.59L5.77 154.42a93.77 93.77 0 0 0 46 12.22h2.11c14.24-.25 25.74-4.31 34.92-11.71.53-.41 1-.84 1.49-1.28l-4.12 10.85H123l6.19-18.82a67.46 67.46 0 0 0 21.68 3.43 68.33 68.33 0 0 0 21.16-3.25l6 18.64h60.14v-39h13.11c31.71 0 50.46-16.15 50.46-43.2 0-30.11-18.22-43.94-57.01-43.94zM150.91 121a36.93 36.93 0 0 1-13-2.28l12.87-40.59h.22l12.65 40.71a38.5 38.5 0 0 1-12.74 2.16zm96.2-23.33h-8.94V64.91h8.94c11.93 0 21.44 4 21.44 16.14 0 12.6-9.51 16.57-21.44 16.57"/></svg>'
-        }
-    } %}
-    {% set example %}
-      {{ shellbar(
-        product={ title: "Portal" },
-        copilot=false,
-        actions=false,
-        user=false,
-        switcher=false,
-        search=false,
-        brand=fiori
-      )}}
-    {% endset %}
-    {{ format(example) }}
+<h3>SVG logo</h3>
+
+  {% set example %}
+    {{ shellbar(
+      logo={
+          svg: '<svg width="286" height="143" viewBox="0 0 286 143" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="-91.234%" y1="50%" x2="98.574%" y2="50%" id="a"><stop stop-color="#32B79D" stop-opacity=".59" offset="0%"/><stop stop-color="#33EAFF" stop-opacity=".59" offset="35.525%"/><stop stop-color="#7FCAFF" stop-opacity=".59" offset="73.603%"/><stop stop-color="#84A2FF" stop-opacity=".59" offset="100%"/></linearGradient></defs><g transform="translate(-19)" fill="url(#a)" fill-rule="evenodd"><path d="M114.232.963h190.464c0 16.966-13.754 30.72-30.72 30.72H83.512c0-16.966 13.754-30.72 30.72-30.72zM80.44 56.259h116.736c0 16.966-13.754 30.72-30.72 30.72H49.72c0-16.966 13.754-30.72 30.72-30.72zM49.72 111.555h18.432c0 16.966-13.754 30.72-30.72 30.72H19c0-16.966 13.754-30.72 30.72-30.72z"/></g></svg>'
+      }
+    )}}
+  {% endset %}
+  {{ format(example) }}
+
+  {% set example %}
+    {{ shellbar(
+      logo={
+          svg: '<svg width="48" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 412.38 204"><defs><style>.cls-1,.cls-2{fill-rule:evenodd}.cls-1{fill:url(#linear-gradient)}.cls-2{fill:#fff}</style><linearGradient id="linear-gradient" x1="206.19" x2="206.19" y2="204" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#00b8f1"/><stop offset=".02" stop-color="#01b6f0"/><stop offset=".31" stop-color="#0d90d9"/><stop offset=".58" stop-color="#1775c8"/><stop offset=".82" stop-color="#1c65bf"/><stop offset="1" stop-color="#1e5fbb"/></linearGradient></defs><title>SAP_grad_R_scrn_Zeichenfläche 1</title><path class="cls-1" d="M0 204h208.41L412.38 0H0v204"/><path class="cls-2" d="M244.73 38.36h-40.6v96.52l-35.46-96.55h-35.16l-30.27 80.72C100 98.7 79 91.67 62.4 86.4 51.46 82.89 39.85 77.72 40 72c.09-4.68 6.23-9 18.38-8.38 8.17.43 15.37 1.09 29.71 8l14.1-24.55C89.06 40.42 71 36.21 56.17 36.19h-.09c-17.28 0-31.68 5.6-40.6 14.83A34.23 34.23 0 0 0 5.77 74.7C5.54 87.15 10.11 96 19.71 103c8.1 5.94 18.46 9.79 27.6 12.62 11.27 3.49 20.47 6.53 20.36 13A9.57 9.57 0 0 1 65 135c-2.81 2.9-7.13 4-13.09 4.1-11.49.24-20-1.56-33.61-9.59L5.77 154.42a93.77 93.77 0 0 0 46 12.22h2.11c14.24-.25 25.74-4.31 34.92-11.71.53-.41 1-.84 1.49-1.28l-4.12 10.85H123l6.19-18.82a67.46 67.46 0 0 0 21.68 3.43 68.33 68.33 0 0 0 21.16-3.25l6 18.64h60.14v-39h13.11c31.71 0 50.46-16.15 50.46-43.2 0-30.11-18.22-43.94-57.01-43.94zM150.91 121a36.93 36.93 0 0 1-13-2.28l12.87-40.59h.22l12.65 40.71a38.5 38.5 0 0 1-12.74 2.16zm96.2-23.33h-8.94V64.91h8.94c11.93 0 21.44 4 21.44 16.14 0 12.6-9.51 16.57-21.44 16.57"/></svg>'
+      }
+    )}}
+  {% endset %}
+  {{ format(example) }}
 
 
+
+<h2>product-switcher</h2>
+{% set example %}
+    {{  product_switcher() }}
+{% endset %}
+{{ format(example) }}
 
 {% endblock %}

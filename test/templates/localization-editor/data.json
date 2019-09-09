@@ -1,8 +1,6 @@
 {
   "id": "localization-editor",
   "name": "Localization Editor",
-  "css_vars": true,
-  "rtl": true,
   "properties": {
     "id": "test",
     "title": "Localization Editor Label",

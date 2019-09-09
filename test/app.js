@@ -9,8 +9,7 @@ const signale = require('signale');
 const TEMPLATE_DIRECTORY = path.join(__dirname, 'templates');
 const MODULES_DIRECTORY = path.join(__dirname, 'modules');
 const PUBLIC_DIRECTORY = path.join(__dirname, 'public');
-const SASS_DIRECTORY = path.join(__dirname, '..', 'scss');
-const COMPONENTS_DIRECTORY = path.join(__dirname, '..', 'components');
+const COMPONENTS_DIRECTORY = path.join(__dirname, '..', 'src');
 
 const GLOBALS = {
     namespace: 'fd'
@@ -25,17 +24,6 @@ var env = nunjucks.configure([TEMPLATE_DIRECTORY, PUBLIC_DIRECTORY, MODULES_DIRE
     express: app,
     watch: true
 });
-// convert SASS to CSS from the lib source
-env.addFilter('sass_to_css', (sassFile = "app.scss") => {
-    try {
-        const scss_filename = `${SASS_DIRECTORY}/${sassFile}`;
-        return sass.renderSync({
-            file: scss_filename
-        }).css.toString();
-    } catch (err) {
-        signale.error(`sassToCss: ${err.message}`);
-    }
-});
 // convert SASS to CSS from the lib source (for self-contained component styles)
 env.addFilter('component_css', (sassFile) => {
     try {
@@ -43,6 +31,7 @@ env.addFilter('component_css', (sassFile) => {
         return sass.renderSync({
             file: scss_filename
         }).css.toString();
+        //TO DO: run postcss config
     } catch (err) {
         signale.error(`component_css: ${err.message}`);
     }
