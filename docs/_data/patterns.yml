@@ -6,6 +6,9 @@
     - title: Contextual Menu
       meta: contextual-menu
 
+    - title: Date Picker
+      meta: date-picker
+
     - title: Multi Input
       meta: multi-input
 

@@ -6,6 +6,7 @@
 .fd-product-tile+()
   .fd-product-tile__media+()
   .fd-product-tile__title+()
+  .fd-product-tile__text+()
 */
 $block: #{$fd-namespace}-product-tile;
 
@@ -45,6 +46,10 @@ $block: #{$fd-namespace}-product-tile;
   &[aria-disabled="true"],
   &.is-disabled {
     opacity: 0.4;
+  }
+
+  &__text {
+    @include fd-reset();
   }
 
   &__media {

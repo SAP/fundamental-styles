@@ -70,6 +70,10 @@ entries:
       url: /patterns/combobox-input.html
       output: web
 
+    - title: Date Picker
+      url: /patterns/date-picker.html
+      output: web
+
     - title: Search Input
       url: /patterns/search-input.html
       output: web
@@ -102,10 +106,6 @@ entries:
 
     - title: Calendar
       url: /components/calendar.html
-      output: web
-
-    - title: Date Picker
-      url: /components/date-picker.html
       output: web
 
     - title: Dropdown

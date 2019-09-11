@@ -90,6 +90,7 @@ $block: #{$fd-namespace}-menu;
       @include fd-var-color("background-color", $fd-menu-item-background-color, --fd-menu-item-background-color);
       @include fd-var-color("color", $fd-menu-item-color, --fd-menu-item-color);
       @include fd-weight("normal");
+      text-decoration: none;
       > .fd-checkbox {
         margin: 0 10px 0 0;
       }
