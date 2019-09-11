@@ -2,6 +2,46 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.1-rc.0"></a>
+## [0.2.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.2.0...v0.2.1-rc.0) (2019-09-09)
+
+
+
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.101...v0.2.0) (2019-09-06)
+
+
+
+<a name="0.2.0-rc.101"></a>
+# [0.2.0-rc.101](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.100...v0.2.0-rc.101) (2019-09-06)
+
+
+### Features
+
+* rebuild distribution pipeline for self contained styles ([#313](https://github.com/SAP/fundamental-styles/issues/313)) ([dd1eaad](https://github.com/SAP/fundamental-styles/commit/dd1eaad))
+
+
+
+<a name="0.2.0-rc.100"></a>
+# [0.2.0-rc.100](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.99...v0.2.0-rc.100) (2019-09-04)
+
+
+### Features
+
+* self contained styles asset-upload, nav, additional components with divs/spans ([#308](https://github.com/SAP/fundamental-styles/issues/308)) ([7b36a0c](https://github.com/SAP/fundamental-styles/commit/7b36a0c))
+
+
+
+<a name="0.2.0-rc.99"></a>
+# [0.2.0-rc.99](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.98...v0.2.0-rc.99) (2019-09-03)
+
+
+### Features
+
+* shellbar refactor and self contained styles ([#305](https://github.com/SAP/fundamental-styles/issues/305)) ([512d0ad](https://github.com/SAP/fundamental-styles/commit/512d0ad))
+
+
+
 <a name="0.2.0-rc.98"></a>
 # [0.2.0-rc.98](https://github.com/SAP/fundamental-styles/compare/v0.2.0-rc.97...v0.2.0-rc.98) (2019-09-01)
 

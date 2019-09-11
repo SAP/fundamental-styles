@@ -79,6 +79,7 @@ $block: #{$fd-namespace}-spinner;
         animation-delay: -($fd-spinner-animation-speed);
     }
     .fd-spinner__body {
+        @include fd-reset();
         &::before,
         &::after {
             content: "";

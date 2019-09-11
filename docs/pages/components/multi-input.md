@@ -17,8 +17,7 @@ summary:
     <div class="fd-multi-input-field">
         <div class="fd-popover">
             <div class="fd-popover__control">
-                <div class="fd-combobox-control" aria-label="Image label" aria-controls="F4GcX348a"
-                aria-expanded="false" aria-haspopup="true">
+                <div aria-label="Image label" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true">
                     <div class="fd-input-group fd-input-group--after">
                         <input type="text" class="fd-input" id="" placeholder="Select Fruit">
                         <span class="fd-input-group__addon fd-input-group__addon--after
@@ -67,13 +66,12 @@ summary:
     <div class="fd-multi-input-field">
         <div class="fd-popover">
             <div class="fd-popover__control">
-                <div class="fd-combobox-control" aria-label="Image label" aria-controls="F4GcX34a"
-                aria-expanded="false" aria-haspopup="true">
+                <div aria-label="Image label" aria-controls="F4GcX34a" aria-expanded="false" aria-haspopup="true">
                     <div class="fd-input-group fd-input-group--after fd-input-group--compact">
                         <input type="text" class="fd-input fd-input--compact" id="" placeholder="Select Fruit">
                         <span class="fd-input-group__addon fd-input-group__addon--after
                         fd-input-group__addon--button">
-                            <button class=" fd-button--light sap-icon--navigation-down-arrow"></button>
+                            <button class=" fd-button--light fd-button--compact sap-icon--navigation-down-arrow"></button>
                         </span>
                     </div>
                 </div>

@@ -5,22 +5,10 @@
     <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ id }}</title>
-    <link rel="stylesheet" href="static/layout-shared.css">
-    {% if not selfContained %}
-        <link rel="stylesheet" href="static/layout.css">
-    {% endif %}
+    <link rel="stylesheet" href="static/layout.css">
     <style>
-        {% if selfContained %}
-            {% set sass = id + '.scss'  %}
-            {{ sass | component_css }}
-        {% else %}
-            {% if ie11 %}
-                {% set sass = 'fundamental-styles-ie11.scss' %}
-            {% else %}
-                {% set sass = 'fundamental-styles.scss' %}
-            {% endif %}
-            {{ sass | sass_to_css }}
-        {% endif %}
+        {% set sass = id + '.scss'  %}
+        {{ sass | component_css }}
     </style>
     <script>
         function toggleStylesheet( href, onoff ){
@@ -47,7 +35,7 @@
 <body>
     <a href="../">Back to Index</a>
     <header class="test-header">
-        <h1>{% if selfContained %}Self-Contained Styles Playground{% elif ie11 %}IE11 Playground{% else %}Playground{% endif %}: <code>{{ data.id }}</code></h1>
+        <h1>Playground: <code>{{ data.id }}</code></h1>
         <form action="#" method="get">
             <fieldset class="test-fieldset">
                 <legend>Contexts</legend>
@@ -65,10 +53,6 @@
         </form>
     </header>
     <main>
-         <div class="test-datacontainer">
-            <h2><code>{{id}}/data.json</code></h2>
-            <textarea class="test-textarea" style="">{{ data | dump(2) }}</textarea>
-        </div>
         <div id="example-container">
             {% block content %}
             {% endblock %}

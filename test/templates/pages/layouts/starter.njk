@@ -10,7 +10,7 @@
     <title>Fundamental Styles | Starter Page | {{ title }}</title>
     <style media="screen">
     {% set core_sass = 'fundamental-styles.scss' %}
-    {{ core_sass | sass_to_css }}
+    {{ core_sass | component_css }}
     </style>
 </head>
 <body class="fd-ui fd-ui--{{ app.id }}">

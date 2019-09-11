@@ -14,7 +14,7 @@
     <title>{{ id }}</title>
     <style media="screen">
     {% set core_sass = 'fundamental-styles.scss' %}
-    {{ core_sass | sass_to_css }}
+    {{ core_sass | component_css }}
     </style>
 </head>
 <body>

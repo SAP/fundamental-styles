@@ -48,6 +48,7 @@ $block: #{$fd-namespace}-product-tile;
   }
 
   &__media {
+    @include fd-reset();
     width: 100%;
     min-height: $fd-product-tile-media-height;
     background-repeat: no-repeat;
@@ -55,6 +56,7 @@ $block: #{$fd-namespace}-product-tile;
     background-size: cover;
   }
   &__content {
+    @include fd-reset();
     padding: $fd-product-tile-content-padding-x $fd-product-tile-content-padding-x;
   }
   &__title {

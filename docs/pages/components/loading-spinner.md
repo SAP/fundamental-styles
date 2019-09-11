@@ -41,8 +41,6 @@ A loading spinner/busy indicator informs the user of an ongoing operation. Only 
 
 <br>
 
-
-
 ## Spinner (deprecated)
 > Note: `fd-spinner` has been deprecated in favor of `fd-loading-spinner` and `fd-loading-dots`
 The loading element is used to display the loading indicator animation.
