@@ -25,8 +25,8 @@ $block: #{$fd-namespace}-loading-dots;
     height: fd-space(4.5);
     display: block;
     font-size: 0;
-    color: var(--fd-dots-color);
-    @include fd-var-color("color", $fd-dots-color);
+    color: var(--fd-color-action-1);
+    // @include fd-var-color("color", $fd-dots-color);
     margin: fd-space(2.5) auto;
 
     // ELEMENTS
