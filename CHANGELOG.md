@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.1-rc.1"></a>
+## [0.2.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.2.1-rc.0...v0.2.1-rc.1) (2019-09-12)
+
+
+### Bug Fixes
+
+* add css style to disable the specific menu item. ([#299](https://github.com/SAP/fundamental-styles/issues/299)) ([5d219bf](https://github.com/SAP/fundamental-styles/commit/5d219bf))
+
+
+
 <a name="0.2.1-rc.0"></a>
 ## [0.2.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.2.0...v0.2.1-rc.0) (2019-09-09)
 
