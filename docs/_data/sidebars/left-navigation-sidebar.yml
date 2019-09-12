@@ -78,6 +78,10 @@ entries:
       url: /patterns/search-input.html
       output: web
 
+    - title: Time Picker
+      url: /patterns/time-picker.html
+      output: web
+
   # Components
   - title: components
     url: /components/index.html
@@ -198,10 +202,6 @@ entries:
 
     - title: Time
       url: /components/time.html
-      output: web
-
-    - title: Time Picker
-      url: /components/time-picker.html
       output: web
 
     - title: Token
