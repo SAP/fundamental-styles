@@ -114,7 +114,9 @@ $block: #{$fd-namespace}-menu;
       }
       @include fd-disabled() {
         @include fd-var-color("outline-color", fd-color-state("disabled", "action"), --fd-color-action-disabled);
+        @include fd-var-color("color", $fd-forms-color--disabled, --fd-color-text-4);
         cursor: not-allowed;
+        text-decoration: none;
       }
     }
     &--addon-before {
