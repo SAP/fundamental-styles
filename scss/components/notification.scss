@@ -34,7 +34,7 @@ $block: #{$fd-namespace}-notification;
 
     // mixins
     @mixin fd-priority-indicator($type) {
-        margin-top: 1px;
+        margin: 1px 0 0 0;
         padding: 1rem 0.5rem 0 1rem;
         @include fd-icon("message-#{$type}", "m");
     }
@@ -303,6 +303,7 @@ $block: #{$fd-namespace}-notification;
             &--success,
             &--warning,
             &--information {
+                @include fd-reset();
                 padding-top: 0.75rem;
                 padding-bottom: 0.75rem;
             }
