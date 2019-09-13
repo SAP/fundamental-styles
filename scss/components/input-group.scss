@@ -12,8 +12,14 @@ $block: #{$fd-namespace}-input-group;
     @include fd-reset();
     display: flex;
 
-    > *,
-    .#{$fd-namespace}-input {
+    > .#{$fd-namespace}-input {
+        @include fd-reset-child-spacing();
+        flex: 1 0 auto;
+        width: auto;
+        z-index: map-get($fd-z-index-levels, "first");
+    }
+
+    > * {
         @include fd-reset-child-spacing();
         flex: 1 0 auto;
         width: auto;
