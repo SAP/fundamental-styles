@@ -2,7 +2,6 @@
 @import "./../mixins";
 @import "./../functions";
 
-
 /*!
 .fd-tile+()
         .fd-tile__media+()
@@ -12,15 +11,15 @@
 */
 $block: #{$fd-namespace}-tile;
 .#{$block} {
-  //VARS
-  $fd-tile-color: fd-color("text",3) !default;
-  $fd-tile-background-color: fd-color("background",2) !default;
+  // VARS
+  $fd-tile-color: fd-color("text", 3) !default;
+  $fd-tile-background-color: fd-color("background", 2) !default;
   $fd-tile-title-color: fd-color("text", 1) !default;
   $fd-tile-content-padding: fd-space(4) fd-space("reg") !default;
   $fd-tile-content-padding-x: fd-space("small") !default;
   $fd-tile-content-padding-y: fd-space(2) + 2px !default;
   $fd-tile-box-shadow: 0 0 5px 0 rgba($fd-tile-color, 0.4) !default;
-  //anim
+  // anim
   $fd-tile-transition-params: $fd-animation--speed ease-in !default;
   --fd-tile-color: var(--fd-color-text-3);
   --fd-tile-background-color: var(--fd-color-background-2);
@@ -34,7 +33,7 @@ $block: #{$fd-namespace}-tile;
     @include fd-reset();
   }
 
-  //MODIFICATIONS
+  // MODIFICATIONS
   &--button,
   &[role="button"] {
     @include action-cursor();
@@ -45,12 +44,12 @@ $block: #{$fd-namespace}-tile;
       z-index: map-get($fd-z-index-levels, "first");
     }
   }
-  //STATES
+  // STATES
   &.is-disabled {
     opacity: 0.4;
   }
 
-  //ELEMENTS
+  // ELEMENTS
   &__media {
     @include fd-reset();
     padding: $fd-tile-content-padding-y 0 $fd-tile-content-padding-y $fd-tile-content-padding-x;
@@ -62,7 +61,8 @@ $block: #{$fd-namespace}-tile;
   &__content {
     @include fd-reset();
     flex: 1;
-    padding: $fd-tile-content-padding-y $fd-tile-content-padding-x $fd-tile-content-padding-y fd-space(3);
+    padding: $fd-tile-content-padding-y $fd-tile-content-padding-x $fd-tile-content-padding-y
+      fd-space(3);
     @include fd-rtl() {
       padding-right: fd-space(3);
       padding-left: $fd-tile-content-padding-x;

@@ -23,7 +23,6 @@ $block-product-menu: #{$fd-namespace}-product-menu;
     position: relative;
     @include fd-button-reset();
     @include fd-var-size("height", $fd-forms-height, --fd-forms-height);
-    position: relative;
     padding-right: 20px;
     padding-left: 0;
     @include fd-rtl() {

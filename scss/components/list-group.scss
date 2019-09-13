@@ -8,7 +8,7 @@
 */
 $block: #{$fd-namespace}-list-group;
 .#{$block} {
-  //LOCAL VARS (set all vars used in component, always include !default)
+  // LOCAL VARS (set all vars used in component, always include !default)
   $fd-list-group-background-color: transparent !default;
   $fd-list-group-background-color--hover: fd-color-state("hover") !default;
   $fd-list-group-item-padding-x: fd-space(4) !default;
@@ -26,11 +26,19 @@ $block: #{$fd-namespace}-list-group;
     padding: $fd-list-group-item-padding-y $fd-list-group-item-padding-x;
     display: flex;
     position: relative;
-    @include fd-var-color("background-color", $fd-list-group-background-color, --fd-list-group-background-color);
+    @include fd-var-color(
+      "background-color",
+      $fd-list-group-background-color,
+      --fd-list-group-background-color
+    );
     transition: background-color $fd-list-group-transition-params;
     &:hover {
       --fd-list-group-background-color: var(--fd-color-background-hover);
-      @include fd-var-color("background-color", $fd-list-group-background-color--hover, --fd-color-background-hover);
+      @include fd-var-color(
+        "background-color",
+        $fd-list-group-background-color--hover,
+        --fd-color-background-hover
+      );
     }
   }
   &__action {

@@ -2,7 +2,6 @@
 @import "./../mixins";
 @import "./../functions";
 
-
 /*!
 .fd-token+(--no-border)
     .fd-token__content+()
@@ -11,7 +10,7 @@
 $block: #{$fd-namespace}-token;
 
 .#{$block} {
-  //LOCAL VARS (set all themeable properties, always include !default)
+  // LOCAL VARS (set all themeable properties, always include !default)
   $fd-token-border-color: fd-color("neutral", 3) !default;
   $fd-token-color: fd-color("text", 2) !default;
   $fd-token-background-color: fd-color("neutral", 1) !default;
@@ -22,7 +21,11 @@ $block: #{$fd-namespace}-token;
   @include fd-reset();
   @include fd-type("-1");
   @include fd-var-color("color", $fd-token-color, --fd-token-color);
-  @include fd-var-color("background-color", $fd-token-background-color, --fd-token-background-color);
+  @include fd-var-color(
+    "background-color",
+    $fd-token-background-color,
+    --fd-token-background-color
+  );
   line-height: fd-space(6);
   vertical-align: middle;
   display: inline-block;

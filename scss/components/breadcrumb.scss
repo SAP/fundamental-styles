@@ -12,8 +12,7 @@ $fd-breadcrumb-link-margin: fd-space(4);
 
 $block: #{$fd-namespace}-breadcrumb;
 .#{$block} {
-
-  //BLOCK BASE *******************************************
+  // BLOCK BASE *******************************************
   @include fd-reset();
   @include fd-type("-1");
   display: flex;
@@ -22,7 +21,6 @@ $block: #{$fd-namespace}-breadcrumb;
   margin-bottom: 0;
   list-style: none;
   padding-right: fd-space(4);
-
 
   @include fd-rtl() {
     padding: 0 0 0 fd-space(4);
@@ -38,7 +36,7 @@ $block: #{$fd-namespace}-breadcrumb;
     }
   }
 
-  //ELEMENTS *******************************************
+  // ELEMENTS *******************************************
   &__item {
     @include fd-reset();
     &::after {
@@ -76,7 +74,11 @@ $block: #{$fd-namespace}-breadcrumb;
     &:focus {
       outline-style: dotted;
       outline-width: 1px;
-      @include fd-var-color("outline-color", fd-color-state("hover", "action"), --fd-color-action-focus);
+      @include fd-var-color(
+        "outline-color",
+        fd-color-state("hover", "action"),
+        --fd-color-action-focus
+      );
     }
   }
 }

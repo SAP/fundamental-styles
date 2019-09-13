@@ -25,7 +25,7 @@ $block: #{$fd-namespace}-checkbox;
     position: absolute;
     z-index: map-get($fd-z-index-levels, "second");
     top: calc(50% - 4px);
-    left: calc(50% - 10px/2);
+    left: calc(50% - 10px / 2);
   }
   &[checked] {
     @include fd-var-color("border-color", $fd-forms-border-color--check, --fd-color-action-3);
@@ -35,7 +35,11 @@ $block: #{$fd-namespace}-checkbox;
     @include fd-disabled() {
       @include fd-var-color("border-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
       &::before {
-        @include fd-var-color("border-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
+        @include fd-var-color(
+          "border-color",
+          $fd-forms-border-color--disabled,
+          --fd-color-neutral-2
+        );
       }
     }
   }
@@ -49,7 +53,11 @@ $block: #{$fd-namespace}-checkbox;
       border-width: 3px;
     }
     @include fd-disabled() {
-      @include fd-var-color("background-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
+      @include fd-var-color(
+        "background-color",
+        $fd-forms-border-color--disabled,
+        --fd-color-neutral-2
+      );
       @include fd-var-color("border-color", $fd-forms-background-color, --fd-color-background-2);
       box-shadow: 0 0 0 1px $fd-forms-border-color--disabled;
     }

@@ -9,7 +9,7 @@
 */
 $block: #{$fd-namespace}-table;
 .#{$block} {
-  //LOCAL VARS (set all themeable properties, always include !default)
+  // LOCAL VARS (set all themeable properties, always include !default)
   $fd-table-border-color: fd-color("neutral", 2) !default;
   $fd-table-border-width: 1px !default;
   $fd-table-link-color: fd-color(action, 1) !default;
@@ -34,29 +34,44 @@ $block: #{$fd-namespace}-table;
   --fd-table-header-color: var(--fd-color-text-3);
   --fd-table-header-background-color: var(--fd-color-neutral-1);
 
-  //BLOCK BASE *******************************************
-  //set all BLOCK reset and baseline styles
+  // BLOCK BASE *******************************************
+  // set all BLOCK reset and baseline styles
   @include fd-reset();
   @include fd-last-child();
   width: 100%;
   max-width: 100%;
   border-collapse: collapse;
   margin-bottom: $fd-margin-bottom;
-  @include fd-var-color("background-color", $fd-table-background-color, --fd-table-background-color);
+  @include fd-var-color(
+    "background-color",
+    $fd-table-background-color,
+    --fd-table-background-color
+  );
   border-style: solid;
   border-width: $fd-table-border-width;
   @include fd-var-color("border-color", $fd-table-border-color, --fd-table-border-color);
 
-
   &__row {
     transition: background-color $fd-table-transition-params;
     @include fd-hover() {
-      @include fd-var-color("background-color", $fd-table-row-background-color--hover, --fd-color-background-hover);
+      @include fd-var-color(
+        "background-color",
+        $fd-table-row-background-color--hover,
+        --fd-color-background-hover
+      );
     }
     @include fd-selected() {
-      @include fd-var-color("background-color", $fd-table-row-background-color--selected, --fd-color-background-selected);
+      @include fd-var-color(
+        "background-color",
+        $fd-table-row-background-color--selected,
+        --fd-color-background-selected
+      );
       @include fd-hover() {
-        @include fd-var-color("background-color", fd-color-state("selected-hover"), --fd-color-background-selected-hover);
+        @include fd-var-color(
+          "background-color",
+          fd-color-state("selected-hover"),
+          --fd-color-background-selected-hover
+        );
       }
     }
   }
@@ -65,7 +80,11 @@ $block: #{$fd-namespace}-table;
     @include fd-reset();
     @include fd-type("-1");
     @include fd-var-color("color", $fd-table-header-color, --fd-table-header-color);
-    @include fd-var-color("background-color", $fd-table-header-background-color, --fd-table-header-background-color);
+    @include fd-var-color(
+      "background-color",
+      $fd-table-header-background-color,
+      --fd-table-header-background-color
+    );
 
     .#{$block}__row {
       border: none;
@@ -81,7 +100,11 @@ $block: #{$fd-namespace}-table;
       @include fd-weight();
 
       &.#{$block}__fixed-cell {
-        @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
+        @include fd-var-color(
+          "background-color",
+          $fd-table-sort-column-header-background-color,
+          --fd-color-neutral-2
+        );
         left: 0;
         z-index: map-get($fd-z-index-levels, "second");
       }
@@ -89,7 +112,11 @@ $block: #{$fd-namespace}-table;
 
     .#{$block}__context-menu {
       &:hover {
-        @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
+        @include fd-var-color(
+          "background-color",
+          $fd-table-sort-column-header-background-color,
+          --fd-color-neutral-2
+        );
         cursor: pointer;
       }
     }
@@ -130,13 +157,21 @@ $block: #{$fd-namespace}-table;
     }
 
     &.#{$block}__fixed-cell {
-      @include fd-var-color("background-color", $fd-table-fixed-column-cell-color, --fd-color-background-2);
+      @include fd-var-color(
+        "background-color",
+        $fd-table-fixed-column-cell-color,
+        --fd-color-background-2
+      );
     }
   }
 
   &__sort-column {
     &:hover {
-      @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
+      @include fd-var-color(
+        "background-color",
+        $fd-table-sort-column-header-background-color,
+        --fd-color-neutral-2
+      );
       cursor: pointer;
     }
     &::after {
@@ -149,10 +184,14 @@ $block: #{$fd-namespace}-table;
       vertical-align: text-top;
     }
 
-    //these are the selected states, should be .is-selected, aria-selected=true
+    // these are the selected states, should be .is-selected, aria-selected=true
     &--asc,
     &--dsc {
-      @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
+      @include fd-var-color(
+        "background-color",
+        $fd-table-sort-column-header-background-color,
+        --fd-color-neutral-2
+      );
     }
     &--asc {
       &::after {
@@ -215,7 +254,11 @@ $block: #{$fd-namespace}-table;
   &--striped {
     .#{$block}__body {
       .#{$block}__row:nth-child(even) {
-        @include fd-var-color("background-color", fd-color-state("hover"), --fd-color-background-hover);
+        @include fd-var-color(
+          "background-color",
+          fd-color-state("hover"),
+          --fd-color-background-hover
+        );
       }
     }
   }
@@ -230,7 +273,7 @@ $block: #{$fd-namespace}-table;
       text-align: right !important;
     }
   }
-  @each $i in 2,3,4,5,6,7,8,9 {
+  @each $i in 2, 3, 4, 5, 6, 7, 8, 9 {
     &.#{$fd-namespace}-has-nth-child-#{$i}-text-align-right {
       .#{$block}__cell:nth-child(#{$i}) {
         text-align: right !important;

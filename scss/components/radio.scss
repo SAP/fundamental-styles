@@ -20,8 +20,8 @@ $block: #{$fd-namespace}-radio;
     width: $check-size_;
     height: $check-size_;
     position: absolute;
-    top: calc(50% - (#{$check-size_}/2));
-    left: calc(50% - (#{$check-size_}/2));
+    top: calc(50% - (#{$check-size_} / 2));
+    left: calc(50% - (#{$check-size_} / 2));
     transition: background-color $fd-forms-transition-params;
     background-color: transparent;
   }
@@ -33,7 +33,11 @@ $block: #{$fd-namespace}-radio;
     @include fd-disabled() {
       @include fd-var-color("border-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
       &::after {
-        @include fd-var-color("background-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
+        @include fd-var-color(
+          "background-color",
+          $fd-forms-border-color--disabled,
+          --fd-color-neutral-2
+        );
       }
     }
   }

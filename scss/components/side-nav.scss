@@ -17,8 +17,7 @@
 $block: #{$fd-namespace}-side-nav;
 
 .#{$block} {
-
-  //LOCAL VARS
+  // LOCAL VARS
   $fd-side-nav-text-size: fd-type("1");
   $fd-side-nav-background-color: fd-color("background", 2);
   $fd-side-nav-selected-background-color: rgba(fd-color("action", 1), 0.07);
@@ -31,14 +30,13 @@ $block: #{$fd-namespace}-side-nav;
   $fd-side-nav-link-disabled-color: fd-color("text", 3);
   $fd-side-nav-title-background-color: fd-color("neutral", 1);
 
-
-  //BLOCK BASE *******************************************
+  // BLOCK BASE *******************************************
 
   background-color: $fd-side-nav-background-color;
   min-width: $fd-side-nav-max-width;
   @include fd-reset();
 
-  //ELEMENTS *******************************************
+  // ELEMENTS *******************************************
   &__group {
     @include fd-reset();
     list-style: none;
@@ -89,7 +87,7 @@ $block: #{$fd-namespace}-side-nav;
     text-decoration: none;
     @include fd-type("0", "normal");
 
-    //STATES *******************************************
+    // STATES *******************************************
 
     &:hover {
       background-color: $fd-side-nav-hover-background-color;
@@ -104,7 +102,6 @@ $block: #{$fd-namespace}-side-nav;
       @include fd-weight("bold");
     }
 
-
     &.is-disabled,
     &[aria-disabled="true"] {
       color: $fd-side-nav-link-disabled-color;
@@ -112,7 +109,7 @@ $block: #{$fd-namespace}-side-nav;
   }
 
   &__link {
-    //STATES *******************************************
+    // STATES *******************************************
     &.has-child {
       background-image: url(#{$fd-down-arrow-icon});
       background-repeat: no-repeat;

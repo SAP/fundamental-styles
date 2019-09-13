@@ -18,8 +18,8 @@
 */
 $block: #{$fd-namespace}-calendar;
 
-//VARS
-//making these more readily available
+// VARS
+// making these more readily available
 $fd-calendar-item-color: fd-color-state("selected", "action") !default;
 $fd-calendar-content-background-color: fd-color("background", 2) !default;
 $fd-calendar-item-color--other-month: fd-color("text") !default;
@@ -30,7 +30,10 @@ $fd-calendar-item-color--blocked: fd-color("text", 1) !default;
 $fd-calendar-item-background-color: fd-color("background", 2) !default;
 $fd-calendar-item-background-color--hover: fd-color("neutral", 3) !default;
 $fd-calendar-item-background-color--selected: fd-color-state("selected", "action") !default;
-$fd-calendar-item-background-color--selected-range: fd-color-state("selected", "background") !default;
+$fd-calendar-item-background-color--selected-range: fd-color-state(
+  "selected",
+  "background"
+) !default;
 $fd-calendar-item-border-color--current: $fd-color--action !default;
 $fd-calendar-table-item-width: fd-space(9) !default;
 $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
@@ -39,7 +42,11 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
   @include fd-reset();
   @include fd-type("-1");
   @include fd-var-color("color", $fd-calendar-item-color, --fd-color-action-selected);
-  @include fd-var-color("background-color", $fd-calendar-item-background-color, --fd-color-background-2);
+  @include fd-var-color(
+    "background-color",
+    $fd-calendar-item-background-color,
+    --fd-color-background-2
+  );
   height: $fd-calendar-table-item-width;
   min-width: $fd-calendar-table-item-width;
   padding: 0;
@@ -51,7 +58,11 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
   justify-content: center;
   &:hover {
     @include action-cursor();
-    @include fd-var-color("background-color", $fd-calendar-item-background-color--hover, --fd-color-neutral-3);
+    @include fd-var-color(
+      "background-color",
+      $fd-calendar-item-background-color--hover,
+      --fd-color-neutral-3
+    );
   }
 }
 %fd-calendar-item-other-month {
@@ -62,7 +73,11 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
   @include fd-var-color("color", $fd-calendar-item-color--disabled, --fd-color-action-disabled);
   &:hover {
     cursor: not-allowed;
-    @include fd-var-color("background-color", $fd-calendar-item-background-color, --fd-color-background-2);
+    @include fd-var-color(
+      "background-color",
+      $fd-calendar-item-background-color,
+      --fd-color-background-2
+    );
   }
 }
 %fd-calendar-item-current {
@@ -77,7 +92,11 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
     left: 0;
     border-style: solid;
     border-width: 2px;
-    @include fd-var-color("border-color", $fd-calendar-item-border-color--current, --fd-color-action);
+    @include fd-var-color(
+      "border-color",
+      $fd-calendar-item-border-color--current,
+      --fd-color-action
+    );
     border-radius: $fd-border-radius;
   }
 }
@@ -90,11 +109,19 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
   }
 }
 %fd-calendar-item-selected {
-  @include fd-var-color("background-color", $fd-calendar-item-background-color--selected, --fd-color-action-selected);
+  @include fd-var-color(
+    "background-color",
+    $fd-calendar-item-background-color--selected,
+    --fd-color-action-selected
+  );
   @include fd-var-color("color", $fd-calendar-item-color--selected, --fd-color-text-5);
 }
 %fd-calendar-item-selected-range {
-  @include fd-var-color("background-color", $fd-calendar-item-background-color--selected-range, --fd-color-background-selected);
+  @include fd-var-color(
+    "background-color",
+    $fd-calendar-item-background-color--selected-range,
+    --fd-color-background-selected
+  );
   border-radius: 0;
 }
 %fd-calendar-item-selected-range-first {
@@ -110,14 +137,14 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
 }
 
 .#{$block} {
-  //BLOCK BASE *******************************************
-  //set all BLOCK reset and baseline styles
+  // BLOCK BASE *******************************************
+  // set all BLOCK reset and baseline styles
   @include fd-reset();
   width: $fd-calendar-table-width;
 }
 
 .#{$block} .#{$block} {
-  //ELEMENTS *******************************************
+  // ELEMENTS *******************************************
   &__dates {
     @include fd-reset();
     @extend %fd-calendar-content-hidden;
@@ -130,8 +157,8 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
   &__years {
     @include fd-reset();
     display: flex;
-    flex-wrap: wrap;
     display: grid;
+    flex-wrap: wrap;
     @extend %fd-calendar-content-hidden;
   }
   &__header {
@@ -155,7 +182,11 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
   &__content {
     @include fd-reset();
     padding: fd-space(xs) 0;
-    @include fd-var-color("background-color", $fd-calendar-content-background-color, --fd-color-background-2);
+    @include fd-var-color(
+      "background-color",
+      $fd-calendar-content-background-color,
+      --fd-color-background-2
+    );
   }
   &__navigation {
     @include fd-reset();
@@ -165,7 +196,7 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
     align-items: center;
   }
 
-  //TABLE styles
+  // TABLE styles
   &__table {
     display: table;
     border-collapse: collapse;
@@ -187,18 +218,22 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
     vertical-align: middle;
     &:hover {
       cursor: default;
-      @include fd-var-color("background-color", $fd-calendar-item-background-color, --fd-color-background-2);
+      @include fd-var-color(
+        "background-color",
+        $fd-calendar-item-background-color,
+        --fd-color-background-2
+      );
     }
   }
   &__list {
     @include fd-reset();
     width: 100%;
     display: flex;
+    display: grid;
     flex-wrap: wrap;
     & > * {
       min-width: 25%;
     }
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding-left: 0;
     padding-right: 0;

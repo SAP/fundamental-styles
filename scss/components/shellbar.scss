@@ -8,7 +8,6 @@
 $block: #{$fd-namespace}-shellbar;
 
 .#{$block} {
-
   // Brand
   $fd-shellbar-logo-height: 24px !default;
   $fd-shellbar-logo-width: 48px !default;
@@ -136,7 +135,7 @@ $block: #{$fd-namespace}-shellbar;
     max-height: fd-space(10);
     background-repeat: no-repeat;
     background-size: contain;
-    //the logo inside the menu (show only on small screen)
+    // the logo inside the menu (show only on small screen)
     @include fd-screen(m) {
       display: inline-block;
       margin-right: fd-space("tiny");

@@ -11,13 +11,13 @@
 
 $block: #{$fd-namespace}-panel;
 .#{$block} {
-  $fd-panel-background-color: fd-color("background",2) !default;
+  $fd-panel-background-color: fd-color("background", 2) !default;
   $fd-panel-padding: fd-space("s") fd-space("reg") !default;
   $fd-panel-border-width: 0 !default;
   $fd-panel-border-color: transparent !default;
   $fd-panel-box-shadow-color: rgba(fd-color("text"), 0.08) !default;
   $fd-panel-border-radius: $fd-border-radius !default;
-  $fd-panel-header-border-color: fd-color("neutral",2) !default;
+  $fd-panel-header-border-color: fd-color("neutral", 2) !default;
   $fd-panel-title-color: fd-color("text") !default;
   $fd-panel-filters-padding: fd-space(3) fd-space("reg") !default;
   $fd-panel-filters-border-color: $fd-panel-header-border-color !default;
@@ -30,11 +30,15 @@ $block: #{$fd-namespace}-panel;
   --fd-panel-border-width: 0;
 
   --fd-panel-title-color: var(--fd-color-text-1);
-  //anim
+  // anim
   $fd-panel-fiters-transition-params: 0.15s ease-in !default;
 
   @include fd-clearfix();
-  @include fd-var-color("background-color", $fd-panel-background-color, --fd-panel-background-color);
+  @include fd-var-color(
+    "background-color",
+    $fd-panel-background-color,
+    --fd-panel-background-color
+  );
   border-radius: $fd-border-radius;
   border-style: solid;
   @include fd-var-size("border-width", $fd-panel-border-width, --fd-panel-border-width);
@@ -49,7 +53,11 @@ $block: #{$fd-namespace}-panel;
     align-items: center;
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    @include fd-var-color("border-bottom-color", $fd-panel-header-border-color, --fd-panel-divider-color);
+    @include fd-var-color(
+      "border-bottom-color",
+      $fd-panel-header-border-color,
+      --fd-panel-divider-color
+    );
     padding: $fd-panel-padding;
     @include fd-type("-1");
     @include fd-var-color("color", fd-color("text", 3), --fd-color-text-3);
@@ -87,7 +95,11 @@ $block: #{$fd-namespace}-panel;
     padding: $fd-panel-filters-padding;
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    @include fd-var-color("border-bottom-color", $fd-panel-filters-border-color, --fd-panel-divider-color);
+    @include fd-var-color(
+      "border-bottom-color",
+      $fd-panel-filters-border-color,
+      --fd-panel-divider-color
+    );
     transition: all $fd-panel-fiters-transition-params;
     &.is-hidden {
       padding-top: 0;
@@ -118,6 +130,10 @@ $block: #{$fd-namespace}-panel;
     padding: $fd-panel-footer-padding;
     border-top-style: solid;
     border-top-width: 1px;
-    @include fd-var-color("border-top-color", $fd-panel-footer-border-color, --fd-panel-divider-color);
+    @include fd-var-color(
+      "border-top-color",
+      $fd-panel-footer-border-color,
+      --fd-panel-divider-color
+    );
   }
 }

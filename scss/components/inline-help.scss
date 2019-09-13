@@ -7,24 +7,24 @@
 */
 $block: #{$fd-namespace}-inline-help;
 .#{$block} {
-  //LOCAL VARS
+  // LOCAL VARS
   $fd-tooltip-icon-background-color: fd-color("status", 4) !default;
   $fd-tooltip-content-background-color: fd-color("background", 2) !default;
   $fd-tooltip-content-color: fd-color("text", 2) !default;
   $fd-tooltip-padding: fd-space(xs) !default;
-  $fd-tooltip-arrow-offset: fd-space(2) !default ;
+  $fd-tooltip-arrow-offset: fd-space(2) !default;
   $fd-tooltip-arrow-width: $fd-tooltip-arrow-offset !default;
   $fd-tooltip-icon-size: 18px;
   $fd-tooltip-transition-params: $fd-animation--speed ease-in !default;
   $fd-tooltip-min-width: 350px !default;
-  $fd-tooltip-box-shadow: drop-shadow(rgba(0,0,0,0.1) 0 2px 10px) !default;
+  $fd-tooltip-box-shadow: drop-shadow(rgba(0, 0, 0, 0.1) 0 2px 10px) !default;
 
   --fd-inline-help-color: var(--fd-color-text-1);
   --fd-inline-help-background-color: var(--fd-color-background-2);
   --fd-inline-help-icon-color: var(--fd-color-text-5);
   --fd-inline-help-icon-background-color: var(--fd-color-status-4);
 
-  //BLOCK BASE *******************************************
+  // BLOCK BASE *******************************************
   @include fd-reset();
   position: relative;
   display: inline-block;
@@ -41,14 +41,22 @@ $block: #{$fd-namespace}-inline-help;
     left: 0;
     border-radius: 50%;
     @include fd-var-color("color", fd-color("text", 5), --fd-inline-help-icon-color);
-    @include fd-var-color("background-color", $fd-tooltip-icon-background-color, --fd-inline-help-icon-background-color);
+    @include fd-var-color(
+      "background-color",
+      $fd-tooltip-icon-background-color,
+      --fd-inline-help-icon-background-color
+    );
     text-align: center;
   }
 
-  //ELEMENTS *******************************************
+  // ELEMENTS *******************************************
   &__content {
     @include fd-type("-1");
-    @include fd-var-color("background-color", $fd-tooltip-content-background-color, --fd-inline-help-background-color);
+    @include fd-var-color(
+      "background-color",
+      $fd-tooltip-content-background-color,
+      --fd-inline-help-background-color
+    );
     padding: $fd-tooltip-padding;
     display: block;
     position: absolute;
@@ -143,7 +151,7 @@ $block: #{$fd-namespace}-inline-help;
         right: -$fd-tooltip-arrow-offset;
       }
       &::before {
-        top: -($fd-tooltip-arrow-offset) ;
+        top: -($fd-tooltip-arrow-offset);
         left: $fd-tooltip-arrow-offset * 1.4;
       }
       &::after {
@@ -176,7 +184,7 @@ $block: #{$fd-namespace}-inline-help;
     &--bottom-center {
       right: -$fd-tooltip-arrow-offset * 20.25;
       &::before {
-        top: -($fd-tooltip-arrow-offset) ;
+        top: -($fd-tooltip-arrow-offset);
         right: $fd-tooltip-arrow-offset * 20.5;
       }
       &::after {

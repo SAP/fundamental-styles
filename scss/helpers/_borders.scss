@@ -34,7 +34,7 @@
 @each $type, $shades in $fd-colors {
   @each $shade, $value in $shades {
     @if $shade == 1 {
-      //set default selector for convenience
+      // set default selector for convenience
       .#{$fd-namespace}-has-border-color-#{$type},
       .#{$fd-namespace}-has-border-color-#{$type}-#{$shade} {
         @include fd-var-color("border-color", $value, --fd-color-#{$type}-#{$shade}, true);

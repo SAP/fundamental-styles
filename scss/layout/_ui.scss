@@ -10,8 +10,8 @@
 */
 $block: #{$fd-namespace}-ui;
 .#{$block} {
-  //these vars can be set globally to lock all pages
-  //also, --fixed modifiers can be used in the HTML to set per template configurations
+  // these vars can be set globally to lock all pages
+  // also, --fixed modifiers can be used in the HTML to set per template configurations
   $fd-ui-fixed: false !default;
   $fd-ui-background: none !default;
   $fd-ui-header-fixed: false !default;
@@ -19,10 +19,10 @@ $block: #{$fd-namespace}-ui;
 
   $fd-ui-header-height: 50px !default;
   $fd-ui-header-background-color: $fd-background-color--header !default;
-  $fd-ui-header-border-bottom: solid 1px fd-color("neutral",3) !default;
+  $fd-ui-header-border-bottom: solid 1px fd-color("neutral", 3) !default;
   $fd-ui-footer-height: 40px !default;
   $fd-ui-footer-background-color: $fd-background-color--footer !default;
-  $fd-ui-footer-border-top: solid 1px fd-color("neutral",3) !default;
+  $fd-ui-footer-border-top: solid 1px fd-color("neutral", 3) !default;
   $_ui-is-fixed: $fd-ui-fixed or ($fd-ui-header-fixed and $fd-ui-footer-fixed);
   position: absolute;
   min-height: 100vh;

@@ -6,22 +6,22 @@
 */
 $block: #{$fd-namespace}-identifier;
 .#{$block} {
-  //LOCAL VARS (set all themeable properties, always include !default)
+  // LOCAL VARS (set all themeable properties, always include !default)
   $fd-const-ratio: 4px;
   $fd-identifier-sizes: (
-    xxs: $fd-const-ratio * 5, 
-    xs: $fd-const-ratio * 7,  
-    s: $fd-const-ratio * 8,   
-    m: $fd-const-ratio * 12,  
-    l: $fd-const-ratio * 16,  
-    xl: $fd-const-ratio * 20, 
-    xxl: $fd-const-ratio * 28 
+    xxs: $fd-const-ratio * 5,
+    xs: $fd-const-ratio * 7,
+    s: $fd-const-ratio * 8,
+    m: $fd-const-ratio * 12,
+    l: $fd-const-ratio * 16,
+    xl: $fd-const-ratio * 20,
+    xxl: $fd-const-ratio * 28,
   ) !default;
   $fd-identifier-border-radius: $fd-border-radius !default;
   $fd-identifier-color: fd-color("text", 5) !default;
   $fd-identifier-background-color: fd-color("status", 4) !default;
 
-  //BLOCK BASE *******************************************
+  // BLOCK BASE *******************************************
   @at-root {
     [class*="#{$block}"] {
       @include fd-reset();
@@ -35,12 +35,16 @@ $block: #{$fd-namespace}-identifier;
       background-size: cover;
       background-position: 50%;
       border-radius: $fd-identifier-border-radius;
-      @include fd-var-color("background-color", $fd-identifier-background-color, --fd-identifier-background-color);
+      @include fd-var-color(
+        "background-color",
+        $fd-identifier-background-color,
+        --fd-identifier-background-color
+      );
       @include fd-var-color("color", $fd-identifier-color, --fd-identifier-color);
     }
   }
-  //BLOCK MODIFIERS ************
-  //sizes
+  // BLOCK MODIFIERS ************
+  // sizes
   @each $size, $value in $fd-identifier-sizes {
     &.#{$block}--#{$size} {
       @include fd-reset-spacing();
@@ -101,16 +105,16 @@ $block: #{$fd-namespace}-identifier;
       line-height: $value;
     }
   }
-  //borders
+  // borders
   &.#{$block}--circle {
     border-radius: 50%;
   }
-  //thumbnail
+  // thumbnail
   &.#{$block}--thumbnail {
     text-indent: -200%;
     overflow: hidden;
   }
-  //background
+  // background
   &.#{$block}--transparent {
     --fd-identifier-background-color: transparent;
     @include fd-var-color("color", map-get($fd-colors-text, 1), --fd-color-text-1);

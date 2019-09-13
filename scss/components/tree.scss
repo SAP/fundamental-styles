@@ -12,7 +12,7 @@
 */
 $block: #{$fd-namespace}-tree;
 .#{$block} {
-  //LOCAL VARS (set all themeable properties, always include !default)
+  // LOCAL VARS (set all themeable properties, always include !default)
   $fd-tree-background-color: fd-color("background", 2) !default;
   $fd-tree-border-color: fd-color("neutral", 2) !default;
   $fd-tree-border-width: 0 !default;
@@ -57,10 +57,14 @@ $block: #{$fd-namespace}-tree;
     border-top-width: $fd-tree-border-width;
     @include fd-var-color("border-top-color", $fd-tree-border-color, --fd-tree-border-color);
     margin-bottom: 0;
-    @include fd-var-color("background-color", $fd-tree-header-background-color, --fd-tree-header-background-color);
+    @include fd-var-color(
+      "background-color",
+      $fd-tree-header-background-color,
+      --fd-tree-header-background-color
+    );
   }
   &__group {
-    //see addt'l group classes under __col--first below
+    // see addt'l group classes under __col--first below
     @include fd-reset();
     transition: opacity $fd-animation--speed linear;
     max-height: auto;
@@ -94,11 +98,19 @@ $block: #{$fd-namespace}-tree;
     position: relative;
     transition: background-color $fd-tree-transition-params;
     @include fd-hover() {
-      @include fd-var-color("background-color", $fd-tree-row-background-color--hover, --fd-color-background-hover);
+      @include fd-var-color(
+        "background-color",
+        $fd-tree-row-background-color--hover,
+        --fd-color-background-hover
+      );
     }
     &--header {
       @include fd-var-color("color", $fd-tree-header-color, --fd-tree-header-color);
-      @include fd-var-color("background-color", $fd-tree-header-background-color, --fd-tree-header-background-color);
+      @include fd-var-color(
+        "background-color",
+        $fd-tree-header-background-color,
+        --fd-tree-header-background-color
+      );
       text-transform: uppercase;
       @include fd-hover() {
         background-color: initial;
@@ -106,7 +118,11 @@ $block: #{$fd-namespace}-tree;
     }
     @include fd-selected() {
       background-color: fd-color-state("selected");
-      @include fd-var-color("background-color", fd-color-state("selected"), --fd-color-background-selected);
+      @include fd-var-color(
+        "background-color",
+        fd-color-state("selected"),
+        --fd-color-background-selected
+      );
     }
   }
   $_row_padding: $fd-tree-control-width + $fd-tree-control-margin-right + 4;
@@ -114,7 +130,7 @@ $block: #{$fd-namespace}-tree;
     @include fd-reset();
     flex: 1;
     padding: $fd-tree-cell-padding 0;
-    //pad to account for control
+    // pad to account for control
     padding-left: $_row_padding;
     @include fd-rtl() {
       padding-left: 0;
@@ -123,9 +139,9 @@ $block: #{$fd-namespace}-tree;
     &--control {
       flex: auto;
       width: 20%;
-      //sets 8 sublevels of indentation based on __group level
+      // sets 8 sublevels of indentation based on __group level
       @at-root {
-        @each $i in 1,2,3,4,5,6,7,8 {
+        @each $i in 1, 2, 3, 4, 5, 6, 7, 8 {
           .#{$block}__group--sublevel-#{$i} & {
             padding-left: $_row_padding * ($i + 1);
             @include fd-rtl() {
@@ -151,7 +167,7 @@ $block: #{$fd-namespace}-tree;
     @include fd-reset();
     @include fd-button-reset();
     position: absolute;
-    top: calc(50% - #{$fd-tree-control-width}/2);
+    top: calc(50% - #{$fd-tree-control-width} / 2);
     margin: -8px fd-space(3) 0 -36px;
     width: $fd-tree-control-button-width-height;
     height: $fd-tree-control-button-width-height;

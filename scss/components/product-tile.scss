@@ -11,15 +11,15 @@ $block: #{$fd-namespace}-product-tile;
 
 .#{$block} {
   $fd-product-tile-width: 25% !default;
-  $fd-product-tile-color: fd-color("text",3) !default;
-  $fd-product-tile-background-color: fd-color("background",2) !default;
-  $fd-product-tile-title-color: fd-color("text",1) !default;
+  $fd-product-tile-color: fd-color("text", 3) !default;
+  $fd-product-tile-background-color: fd-color("background", 2) !default;
+  $fd-product-tile-title-color: fd-color("text", 1) !default;
   $fd-product-tile-media-height: 210px !default;
   $fd-product-tile-content-padding: fd-space(4) fd-space("reg") !default;
   $fd-product-tile-content-padding-x: fd-space("reg") !default;
   $fd-product-tile-content-padding-y: fd-space(4) !default;
   $fd-product-tile-box-shadow: 0 0 5px 0 rgba($fd-product-tile-color, 0.4) !default;
-  //anim
+  // anim
   $fd-product-tile-transition-params: $fd-animation--speed ease-in !default;
 
   --fd-product-tile-color: var(--fd-color-text-3);
@@ -28,9 +28,13 @@ $block: #{$fd-namespace}-product-tile;
 
   @include fd-reset();
   @include fd-var-color("color", $fd-product-tile-color, --fd-product-tile-color);
-  @include fd-var-color("background-color", $fd-product-tile-background-color, --fd-product-tile-background-color);
+  @include fd-var-color(
+    "background-color",
+    $fd-product-tile-background-color,
+    --fd-product-tile-background-color
+  );
 
-  //MODIFICATIONS
+  // MODIFICATIONS
   &--button,
   &[role="button"] {
     @include action-cursor();
@@ -41,7 +45,7 @@ $block: #{$fd-namespace}-product-tile;
       z-index: map-get($fd-z-index-levels, "first");
     }
   }
-  //STATES
+  // STATES
   &[aria-disabled="true"],
   &.is-disabled {
     opacity: 0.4;

@@ -6,7 +6,7 @@
 */
 $block: #{$fd-namespace}-form-message;
 .#{$block} {
-  //LOCAL VARS (set all vars used in component, always include !default)
+  // LOCAL VARS (set all vars used in component, always include !default)
   $fd-form-message-font-size: -1 !default;
   $fd-form-message-color: fd-color(text, 2) !default;
 

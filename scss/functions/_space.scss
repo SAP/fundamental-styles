@@ -1,7 +1,7 @@
-//accepts size key or increment, modify enables on fd-space-modifier
+// accepts size key or increment, modify enables on fd-space-modifier
 @function fd-space($size: reg, $modifiable: false) {
   $_map: $fd-spacing;
-  //set base
+  // set base
   $_size: map-get($_map, base);
   $_common: false;
   @if map-has-key($fd-spacing-common, $size) {
@@ -9,7 +9,7 @@
     $size: map-get($fd-spacing-common, $size);
   }
   @if type-of($size) == number {
-    //multiply
+    // multiply
     $_size: $_size * $size;
   } @else {
     @if map-has-key($_map, $size) {
@@ -24,7 +24,7 @@
   @return $_size;
 }
 
-//space helper
+// space helper
 @function fd-modify-space_($size) {
   $_size: $size;
   @if $fd-space-modify == compact {

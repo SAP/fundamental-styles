@@ -8,34 +8,28 @@
 */
 $block: #{$fd-namespace}-dropdown;
 .#{$block} {
-  //SETTINGS
-  //SIZES
-  $fd-dropdown-sizes: (
-    "default",
-    "compact",
-    "xs",
-    "s",
-    "l"
-  ) !default;
+  // SETTINGS
+  // SIZES
+  $fd-dropdown-sizes: ("default", "compact", "xs", "s", "l") !default;
 
-  //LOCAL VARS (set all themeable properties, always include !default)
-  //anim
+  // LOCAL VARS (set all themeable properties, always include !default)
+  // anim
   $fd-dropdown-menu-item-transition-params: $fd-animation--speed ease-in !default;
 
-  //BLOCK BASE *******************************************
-  //set all BLOCK reset and baseline styles
+  // BLOCK BASE *******************************************
+  // set all BLOCK reset and baseline styles
   @include fd-reset();
   position: relative;
   display: inline-block;
 
-  //*****
+  // *****
   // WHEN DEPCRECATING THE REST OF THIS FILE MAKE SURE TO KEEP THE CSS FOR THE CONTROL. IT IS USED WHEN COMPOSING TOGETHER POPOVER/MENU FOR A DROPDOWN COMPONENT.
-  //*****
+  // *****
   $fd-button-right-padding: fd-space(8) !default;
 
   &__control {
     @include fd-icon-base("after");
-    @include fd-icon-glyph("navigation-down-arrow","after") {
+    @include fd-icon-glyph("navigation-down-arrow", "after") {
       transition: transform $fd-dropdown-menu-item-transition-params;
     }
     position: relative;
@@ -117,20 +111,31 @@ $block: #{$fd-namespace}-dropdown;
     padding-right: 0;
     @include fd-hover() {
       @include fd-var-color("color", $fd-forms-color, --fd-color-text-1);
-      @include fd-var-color("background-color", $fd-forms-background-color, --fd-color-background-2);
-      @include fd-var-color("border-color", fd-color-state("hover", "action"), --fd-color-action-hover);
+      @include fd-var-color(
+        "background-color",
+        $fd-forms-background-color,
+        --fd-color-background-2
+      );
+      @include fd-var-color(
+        "border-color",
+        fd-color-state("hover", "action"),
+        --fd-color-action-hover
+      );
       box-shadow: none;
     }
     &:active,
     &.is-active,
     &[aria-expanded="true"] {
       @include fd-var-color("color", $fd-forms-color, --fd-color-text-1);
-      @include fd-var-color("background-color", $fd-forms-background-color, --fd-color-background-2);
+      @include fd-var-color(
+        "background-color",
+        $fd-forms-background-color,
+        --fd-color-background-2
+      );
       box-shadow: 0 0 0 1px var(--fd-color-action-hover);
     }
   }
   &__control.fd-button--standard {
-
     &:hover,
     &:active,
     &.is-active {

@@ -1,11 +1,10 @@
-
 // get color from main map
 @function fd-color($type: text, $shade: 1) {
   $_map: $fd-colors;
-  //check type
+  // check type
   @if map-has-key($_map, $type) {
     $_group: map-get($_map, $type);
-    //check shade
+    // check shade
     @if map-has-key($_group, $shade) {
       $_color: map-get($_group, $shade);
       @return $_color;
@@ -19,14 +18,14 @@
   }
 }
 
-//$state: hover, selected, disabled, visited, negative, positive, alert
-//$type: background, action
+// $state: hover, selected, disabled, visited, negative, positive, alert
+// $type: background, action
 @function fd-color-state($state, $type: "background") {
   $_map: $fd-colors-background-states;
   @if $type == "action" {
     $_map: $fd-colors-action-states;
   }
-  //check type
+  // check type
   @if map-has-key($_map, $state) {
     $_color: map-get($_map, $state);
     @return $_color;

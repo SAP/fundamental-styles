@@ -41,7 +41,7 @@ $block: #{$fd-namespace}-form-select;
     position: absolute;
     z-index: map-get($fd-z-index-levels, "second");
     top: calc(50% - 4px);
-    left: calc(50% - 10px/2);
+    left: calc(50% - 10px / 2);
   }
   &--compact {
     @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);

@@ -9,8 +9,7 @@
 */
 $block: #{$fd-namespace}-action-bar;
 .#{$block} {
-
-  //LOCAL VARS (set all themeable properties, always include !default)
+  // LOCAL VARS (set all themeable properties, always include !default)
   $fd-action-bar-background-color: transparent !default;
   $fd-action-bar-description-color: fd-color("text", 3);
   $fd-action-bar-height: fd-space(16) !default;
@@ -18,7 +17,7 @@ $block: #{$fd-namespace}-action-bar;
   --fd-action-bar-backbtn-separator-color: var(--fd-color-neutral-3);
   $fd-action-bar-backbtn-separator-color: fd-color("neutral", 3);
 
-  //LOCAL mixins
+  // LOCAL mixins
   @mixin fd-action-bar-responsive {
     // Changed from deprecated fd-screen(xs)
     @include fd-screen(s) {
@@ -40,7 +39,7 @@ $block: #{$fd-namespace}-action-bar;
     }
   }
 
-  //BLOCK BASE *******************************************
+  // BLOCK BASE *******************************************
   @include fd-reset();
   background-color: $fd-action-bar-background-color;
   min-height: $fd-action-bar-height;
@@ -66,15 +65,19 @@ $block: #{$fd-namespace}-action-bar;
     position: relative;
     margin-right: fd-space(5);
     &::after {
-      content: '';
+      content: "";
       width: 0;
       height: 100%;
       position: absolute;
       top: 0;
-      right: - fd-space(1);
+      right: -fd-space(1);
       border-right-style: solid;
       border-right-width: 1px;
-      @include fd-var-color("border-right-color", $fd-action-bar-backbtn-separator-color, --fd-action-bar-backbtn-separator-color);
+      @include fd-var-color(
+        "border-right-color",
+        $fd-action-bar-backbtn-separator-color,
+        --fd-action-bar-backbtn-separator-color
+      );
     }
     @include fd-rtl() {
       transform: scaleX(-1);

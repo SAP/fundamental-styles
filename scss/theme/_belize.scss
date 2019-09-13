@@ -1,11 +1,11 @@
-//fonts
+// fonts
 $fd-fonts: (
   "body": #{Arial, Helvetica, sans-serif},
   "header": #{Arial, Helvetica, sans-serif},
   "code": #{"Courier", sans-serif},
 );
 
-//colors
+// colors
 $fd-colors: (
   "primary": (
     1: #b4cbe1,
@@ -41,11 +41,11 @@ $fd-colors: (
   )
 );
 
-//BRING IN DEFAULT SETTINGS so you have access to the full system when defining overrides
+// BRING IN DEFAULT SETTINGS so you have access to the full system when defining overrides
 @import "./../functions";
 @import "./../settings";
 
-//NO !default flags
+// NO !default flags
 $fd-background-color: fd-color("primary");
 $fd-border-radius: 0;
 $fd-background-color--header: transparent;

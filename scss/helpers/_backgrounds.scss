@@ -1,6 +1,6 @@
 @import "./../settings";
 @import "../mixins/mixins";
-//set namespace using function to avoid hardcoding it
+// set namespace using function to avoid hardcoding it
 .#{$fd-namespace}-has-background-image {
   background-repeat: no-repeat;
   background-position: center;
@@ -24,7 +24,7 @@
 @each $type, $shades in $fd-colors {
   @each $shade, $value in $shades {
     @if $shade == 1 {
-      //set default selector for convenience
+      // set default selector for convenience
       .#{$fd-namespace}-has-background-color-#{$type},
       .#{$fd-namespace}-has-background-color-#{$type}-#{$shade} {
         @include fd-var-color("background-color", $value, --fd-color-#{$type}-#{$shade}, true);
