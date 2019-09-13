@@ -331,7 +331,7 @@ Do not use the checkbox control if:
     </div>
     <div class="fd-form-item">
         <label class="fd-fieldset__legend" for="Ai4ez613">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez613" indeterminate>
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez613">
             TriState Text
         </label>
     </div>

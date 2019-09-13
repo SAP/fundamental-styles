@@ -18,7 +18,7 @@ This component mostly relies on the CSS of other components and has very little 
 ## Default and Compact sizes
 
 {% capture default-date-picker %}
-<div class="fd-date-picker">
+<div class="fd-docs-date-picker">
 	<div class="fd-popover">
 		<div class="fd-popover__control">
 			<div class="fd-input-group">
@@ -201,7 +201,7 @@ This component mostly relies on the CSS of other components and has very little 
 
 <br>
 
-<div class="fd-date-picker">
+<div class="fd-docs-date-picker">
 	<div class="fd-popover">
 		<div class="fd-popover__control">
 			<div class="fd-input-group">
