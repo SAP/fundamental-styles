@@ -4,7 +4,7 @@
 
 /*!
 .fd-input-group+(--inline)
-    .fd-input-group__addon+()
+    .fd-input-group__addon+(--button)
 */
 
 $block: #{$fd-namespace}-input-group;
@@ -12,7 +12,8 @@ $block: #{$fd-namespace}-input-group;
     @include fd-reset();
     display: flex;
 
-    > * {
+    > *,
+    .#{$fd-namespace}-input {
         @include fd-reset-child-spacing();
         flex: 1 0 auto;
         width: auto;
