@@ -176,9 +176,9 @@ When a product has multiple links, the product links should collapse into an ove
          <div class="fd-popover">
           <div class="fd-popover__control">
               <div aria-label="Image label" aria-controls="UIO6J688" aria-expanded="false" aria-haspopup="true">
-                  <div class="fd-input-group fd-input-group--after">
+                  <div class="fd-input-group">
                       <input type="text" class="fd-input" id="UIO6J6881" value="Sear" aria-hidden="true">
-                      <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
+                      <span class="fd-input-group__addon fd-input-group__addon--button">
                           <button class="fd-shellbar__button fd-button sap-icon--search"></button>
                       </span>
                   </div>
