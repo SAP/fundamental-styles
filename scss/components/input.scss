@@ -6,22 +6,22 @@
 */
 $block: #{$fd-namespace}-input;
 .#{$block} {
-    @include fd-form-text();
-    @include fd-var-size("height", $fd-forms-height, --fd-forms-height);
-    width: 100%;
-    &::placeholder {
-        @include fd-reset();
-        @include fd-var-color("color", $fd-forms-color--placeholder, --fd-color-neutral-4);
+  @include fd-form-text();
+  @include fd-var-size("height", $fd-forms-height, --fd-forms-height);
+  width: 100%;
+  &::placeholder {
+    @include fd-reset();
+    @include fd-var-color("color", $fd-forms-color--placeholder, --fd-color-neutral-4);
+  }
+  &--compact {
+    @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);
+  }
+  &--no-number-spinner {
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
     }
-    &--compact {
-        @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);
-    }
-    &--no-number-spinner {
-        &::-webkit-outer-spin-button,
-        &::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-        -moz-appearance: textfield;
-    }
+    -moz-appearance: textfield;
+  }
 }

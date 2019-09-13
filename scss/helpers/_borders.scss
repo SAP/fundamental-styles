@@ -1,58 +1,58 @@
 @import "./../settings";
 @import "../mixins/mixins";
 .#{$fd-namespace}-has-border-radius-0 {
-    border-radius: 0 !important;
+  border-radius: 0 !important;
 }
 .#{$fd-namespace}-has-border-radius-50percent {
-    border-radius: 50% !important;
+  border-radius: 50% !important;
 }
 .#{$fd-namespace}-has-border-none {
-    border: none !important;
+  border: none !important;
 }
 @each $item in top, right, bottom, left {
-    .#{$fd-namespace}-has-#{$item}-border-none {
-        border: none !important;
-    }
+  .#{$fd-namespace}-has-#{$item}-border-none {
+    border: none !important;
+  }
 }
 @each $item in begin, after {
-    .#{$fd-namespace}-has-border-#{$item}-none {
-        $_side: left;
-        $_opp: right;
-        @if $item == after {
-          $_side: right;
-          $_opp: left;
-        }
-        border-#{$_side}: none !important;
-        @at-root {
-          [direction="rtl"] &,
-          &[direction="rtl"] {
-            border-#{$_opp}: none !important;
-          }
-        }
+  .#{$fd-namespace}-has-border-#{$item}-none {
+    $_side: left;
+    $_opp: right;
+    @if $item == after {
+      $_side: right;
+      $_opp: left;
     }
+    border-#{$_side}: none !important;
+    @at-root {
+      [direction="rtl"] &,
+      &[direction="rtl"] {
+        border-#{$_opp}: none !important;
+      }
+    }
+  }
 }
 @each $type, $shades in $fd-colors {
-    @each $shade, $value in $shades {
-        @if $shade == 1 {
-            //set default selector for convenience
-            .#{$fd-namespace}-has-border-color-#{$type},
-            .#{$fd-namespace}-has-border-color-#{$type}-#{$shade} {
-                @include fd-var-color("border-color", $value, --fd-color-#{$type}-#{$shade}, true);
-            }
-        } @else {
-            .#{$fd-namespace}-has-border-color-#{$type}-#{$shade} {
-                @include fd-var-color("border-color", $value, --fd-color-#{$type}-#{$shade}, true);
-            }
-        }
+  @each $shade, $value in $shades {
+    @if $shade == 1 {
+      //set default selector for convenience
+      .#{$fd-namespace}-has-border-color-#{$type},
+      .#{$fd-namespace}-has-border-color-#{$type}-#{$shade} {
+        @include fd-var-color("border-color", $value, --fd-color-#{$type}-#{$shade}, true);
+      }
+    } @else {
+      .#{$fd-namespace}-has-border-color-#{$type}-#{$shade} {
+        @include fd-var-color("border-color", $value, --fd-color-#{$type}-#{$shade}, true);
+      }
     }
+  }
 }
 @each $state, $value in $fd-colors-action-states {
   .#{$fd-namespace}-has-border-color-action-#{$state} {
-      @include fd-var-color("border-color", $value, --fd-color-action-#{$state}, true);
+    @include fd-var-color("border-color", $value, --fd-color-action-#{$state}, true);
   }
 }
 @each $state, $value in $fd-colors-background-states {
   .#{$fd-namespace}-has-border-color-background-#{$state} {
-      @include fd-var-color("border-color", $value, --fd-color-background-#{$state}, true);
+    @include fd-var-color("border-color", $value, --fd-color-background-#{$state}, true);
   }
 }

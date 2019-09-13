@@ -1,19 +1,19 @@
 @import "vars";
 //utils
 @mixin fd-reset {
-    font-size: $fd-font-size;
-    line-height: $fd-line-height;
-    @include fd-var-color("color", $fd-color, --fd-color-text-1);
-    font-family: $fd-font-family;
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    &::before,
-    &::after {
-        box-sizing: inherit;
-    }
+  font-size: $fd-font-size;
+  line-height: $fd-line-height;
+  @include fd-var-color("color", $fd-color, --fd-color-text-1);
+  font-family: $fd-font-family;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
 }
 @mixin fd-reset-spacing {
   padding: 0;
@@ -33,38 +33,38 @@
 }
 
 @mixin fd-clearfix {
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 @mixin fd-last-child {
-    &:last-child {
-        margin-bottom: 0;
-        margin-right: 0;
-        @content;
-    }
+  &:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+    @content;
+  }
 }
 @mixin fd-first-child {
-    &:first-child {
-        margin-left: 0;
-        @content;
-    }
+  &:first-child {
+    margin-left: 0;
+    @content;
+  }
 }
 @mixin fd-screen($size, $dimension: width) {
   @if map-has-key($fd-breakpoints, $size) {
     @media (min-#{$dimension}: map-get($fd-breakpoints, $size)) {
-        @content;
+      @content;
     }
   } @else {
     @warn "Unknown `#{$size}` in $fd-breakpoints map";
   }
 }
 @mixin fd-print() {
-	@media print {
-		@content;
-	}
+  @media print {
+    @content;
+  }
 }
 //Taken from https://github.com/thoughtbot/bourbon/blob/master/core/bourbon/library/_triangle.scss
 @mixin triangle($size, $color, $direction, $varcolor:null) {
@@ -150,12 +150,12 @@
   }
 }
 @mixin rotate($deg: 90) {
-    $sDeg: #{$deg}deg;
-    -webkit-transform: rotate($sDeg);
-    -moz-transform: rotate($sDeg);
-    -ms-transform: rotate($sDeg);
-    -o-transform: rotate($sDeg);
-    transform: rotate($sDeg);
+  $sDeg: #{$deg}deg;
+  -webkit-transform: rotate($sDeg);
+  -moz-transform: rotate($sDeg);
+  -ms-transform: rotate($sDeg);
+  -o-transform: rotate($sDeg);
+  transform: rotate($sDeg);
 }
 
 @mixin fd-button-reset {
@@ -180,63 +180,63 @@
   @at-root {
     [dir="rtl"] &,
     &[dir="rtl"] {
-        @content;
+      @content;
     }
   }
 }
 
 @mixin fd-hide-on-xs {
-    @include fd-screen(xs) {
-        display: none !important;
-    }
+  @include fd-screen(xs) {
+    display: none !important;
+  }
 }
 @mixin fd-hide-on-s {
-    @include fd-screen(s) {
-        display: none !important;
-    }
+  @include fd-screen(s) {
+    display: none !important;
+  }
 }
 @mixin fd-hide-on-m {
-    @include fd-screen(m) {
-        display: none !important;
-    }
+  @include fd-screen(m) {
+    display: none !important;
+  }
 }
 
 @mixin fd-hide-on-l {
-    @include fd-screen(l) {
-        display: none !important;
-    }
+  @include fd-screen(l) {
+    display: none !important;
+  }
 }
 @mixin fd-hide-on-xl {
-    @include fd-screen(xl) {
-        display: none !important;
-    }
+  @include fd-screen(xl) {
+    display: none !important;
+  }
 }
 
 @mixin fd-show-on-xs {
-    @include fd-screen(xs) {
-        display: block !important;
-    }
+  @include fd-screen(xs) {
+    display: block !important;
+  }
 }
 @mixin fd-show-on-s {
-    @include fd-screen(s) {
-        display: block !important;
-    }
+  @include fd-screen(s) {
+    display: block !important;
+  }
 }
 @mixin fd-show-on-m {
-    @include fd-screen(m) {
-        display: block !important;
-    }
+  @include fd-screen(m) {
+    display: block !important;
+  }
 }
 
 @mixin fd-show-on-l {
-    @include fd-screen(l) {
-        display: block !important;
-    }
+  @include fd-screen(l) {
+    display: block !important;
+  }
 }
 @mixin fd-show-on-xl {
-    @include fd-screen(xl) {
-        display: block !important;
-    }
+  @include fd-screen(xl) {
+    display: block !important;
+  }
 }
 
 @mixin fd-link($color: $fd-color--action) {

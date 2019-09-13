@@ -1,93 +1,93 @@
 @import "./../settings";
 
 @each $key, $value in $fd-spacing {
-    .#{$fd-namespace}-has-height-#{$key} {
-        height: #{$value} !important;
+  .#{$fd-namespace}-has-height-#{$key} {
+    height: #{$value} !important;
+  }
+  .#{$fd-namespace}-has-margin-#{$key} {
+    margin: #{$value} !important;
+  }
+  .#{$fd-namespace}-has-padding-#{$key} {
+    padding: #{$value} !important;
+  }
+  @each $item in top, right, bottom, left {
+    .#{$fd-namespace}-has-margin-#{$item}-#{$key} {
+      margin-#{$item}: #{$value} !important;
     }
-    .#{$fd-namespace}-has-margin-#{$key} {
-        margin: #{$value} !important;
+    .#{$fd-namespace}-has-padding-#{$item}-#{$key} {
+      padding-#{$item}: #{$value} !important;
     }
-    .#{$fd-namespace}-has-padding-#{$key} {
-        padding: #{$value} !important;
-    }
-    @each $item in top, right, bottom, left {
-        .#{$fd-namespace}-has-margin-#{$item}-#{$key} {
-            margin-#{$item}: #{$value} !important;
-        }
-        .#{$fd-namespace}-has-padding-#{$item}-#{$key} {
-            padding-#{$item}: #{$value} !important;
-        }
-    }
+  }
 }
 
 @each $key, $value in $fd-spacing-common {
   $value: map-get($fd-spacing, $value);
   .#{$fd-namespace}-has-height-#{$key} {
-      height: #{$value} !important;
+    height: #{$value} !important;
   }
   .#{$fd-namespace}-has-margin-#{$key} {
-      margin: #{$value} !important;
+    margin: #{$value} !important;
   }
   .#{$fd-namespace}-has-margin-y-#{$key} {
-      margin-top: #{$value} !important;
-      margin-bottom: #{$value} !important;
+    margin-top: #{$value} !important;
+    margin-bottom: #{$value} !important;
   }
   .#{$fd-namespace}-has-margin-x-#{$key} {
-      margin-left: #{$value} !important;
-      margin-right: #{$value} !important;
+    margin-left: #{$value} !important;
+    margin-right: #{$value} !important;
   }
   .#{$fd-namespace}-has-padding-#{$key} {
-      padding: #{$value} !important;
+    padding: #{$value} !important;
   }
   .#{$fd-namespace}-has-padding-y-#{$key} {
-      padding-top: #{$value} !important;
-      padding-bottom: #{$value} !important;
+    padding-top: #{$value} !important;
+    padding-bottom: #{$value} !important;
   }
   .#{$fd-namespace}-has-padding-x-#{$key} {
-      padding-left: #{$value} !important;
-      padding-right: #{$value} !important;
+    padding-left: #{$value} !important;
+    padding-right: #{$value} !important;
   }
 
   @each $item in top, right, bottom, left {
-      .#{$fd-namespace}-has-margin-#{$item}-#{$key} {
-          margin-#{$item}: #{$value} !important;
-      }
-      .#{$fd-namespace}-has-padding-#{$item}-#{$key} {
-          padding-#{$item}: #{$value} !important;
-      }
+    .#{$fd-namespace}-has-margin-#{$item}-#{$key} {
+      margin-#{$item}: #{$value} !important;
+    }
+    .#{$fd-namespace}-has-padding-#{$item}-#{$key} {
+      padding-#{$item}: #{$value} !important;
+    }
   }
   @each $item in begin, after {
-      .#{$fd-namespace}-has-margin-#{$item}-#{$key} {
-          margin-left: #{$value} !important;
-          @at-root {
-            [direction="rtl"] &,
-            &[direction="rtl"] {
-              margin-right: #{$value} !important;
-            }
-          }
+    .#{$fd-namespace}-has-margin-#{$item}-#{$key} {
+      margin-left: #{$value} !important;
+      @at-root {
+        [direction="rtl"] &,
+        &[direction="rtl"] {
+          margin-right: #{$value} !important;
+        }
       }
-      .#{$fd-namespace}-has-padding-#{$item}-#{$key} {
-          padding-left: #{$value} !important;
-          @at-root {
-            [direction="rtl"] &,
-            &[direction="rtl"] {
-              padding-right: #{$value} !important;
-            }
-          }
+    }
+    .#{$fd-namespace}-has-padding-#{$item}-#{$key} {
+      padding-left: #{$value} !important;
+      @at-root {
+        [direction="rtl"] &,
+        &[direction="rtl"] {
+          padding-right: #{$value} !important;
+        }
       }
+    }
   }
   .#{$fd-namespace}-has-margin-none {
-      margin: 0 !important;
+    margin: 0 !important;
   }
   .#{$fd-namespace}-has-padding-none {
-      padding: 0 !important;
+    padding: 0 !important;
   }
   @each $item in top, right, bottom, left {
-      .#{$fd-namespace}-has-margin-#{$item}-none {
-          margin-#{$item}: 0 !important;
-      }
-      .#{$fd-namespace}-has-padding-#{$item}-none {
-          padding-#{$item}: 0 !important;
-      }
+    .#{$fd-namespace}-has-margin-#{$item}-none {
+      margin-#{$item}: 0 !important;
+    }
+    .#{$fd-namespace}-has-padding-#{$item}-none {
+      padding-#{$item}: 0 !important;
+    }
   }
 }

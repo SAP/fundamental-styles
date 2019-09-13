@@ -42,13 +42,13 @@ $block: #{$fd-namespace}-button-split;
   }
   [class*="--emphasized"] {
     &:first-child {
-        margin-right: 1px;
+      margin-right: 1px;
     }
     @include fd-rtl() {
-        &:first-child {
-            margin-right: 0;
-            margin-left: 1px;
-        }
+      &:first-child {
+        margin-right: 0;
+        margin-left: 1px;
+      }
     }
   }
 }

@@ -35,8 +35,8 @@
     }
     &.is-selected,
     &[aria-selected="true"] {
-        color: $fd-menu-item-color;
-        background-color: $fd-menu-item-background-color--selected;
+      color: $fd-menu-item-color;
+      background-color: $fd-menu-item-background-color--selected;
     }
   }
   @content;

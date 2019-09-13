@@ -1,22 +1,22 @@
 @mixin navlist($direction: horizontal) {
-    list-style: none;
-    padding: 0;
-	[aria-selected=true] {
-		cursor: default;
-	}
-	a {
-		color: inherit;
-	}
-	[aria-hidden=true] {
-		display: none;
-	}
-	@if $direction = horizontal {
-	    @include fd-clearfix();
-		margin: 0;
-		li {
-			float: left;
-		}
-	}
+  list-style: none;
+  padding: 0;
+  [aria-selected=true] {
+    cursor: default;
+  }
+  a {
+    color: inherit;
+  }
+  [aria-hidden=true] {
+    display: none;
+  }
+  @if $direction = horizontal {
+    @include fd-clearfix();
+    margin: 0;
+    li {
+      float: left;
+    }
+  }
 }
 
 /*
@@ -108,7 +108,7 @@ $flow_width_of_gutter: map-get($fd-spacing, xxs); // Should match var(--fd-width
     (
       (
         (100% - #{$gutter_width_total})
-          / #{$cols}
+        / #{$cols}
       ) * #{$span}
     ) + #{$gutter_width_spanned}
   );
@@ -116,7 +116,7 @@ $flow_width_of_gutter: map-get($fd-spacing, xxs); // Should match var(--fd-width
     (
       (
         (100% - (#{$num_of_gutters} * var(--fd-width-gutter)))
-          / #{$cols}
+        / #{$cols}
       ) * #{$span}
     ) + (var(--fd-width-gutter) * (#{$span} - 1))
   );
@@ -136,7 +136,7 @@ $flow_width_of_gutter: map-get($fd-spacing, xxs); // Should match var(--fd-width
     (
       (
         (100% - #{$gutter_width_total})
-          / #{$cols}
+        / #{$cols}
       ) * #{$span}
     ) + #{$gutter_width_spanned}
   );
@@ -144,7 +144,7 @@ $flow_width_of_gutter: map-get($fd-spacing, xxs); // Should match var(--fd-width
     (
       (
         (100% - (#{$num_of_gutters} * var(--fd-width-gutter)))
-          / #{$cols}
+        / #{$cols}
       ) * #{$span}
     ) + (var(--fd-width-gutter) * (#{$span}))
   );
@@ -154,7 +154,7 @@ $flow_width_of_gutter: map-get($fd-spacing, xxs); // Should match var(--fd-width
       (
         (
           (100% - #{$gutter_width_total})
-            / #{$cols}
+          / #{$cols}
         ) * #{$span}
       ) + #{$gutter_width_spanned}
     );
@@ -162,7 +162,7 @@ $flow_width_of_gutter: map-get($fd-spacing, xxs); // Should match var(--fd-width
       (
         (
           (100% - (#{$num_of_gutters} * var(--fd-width-gutter)))
-            / #{$cols}
+          / #{$cols}
         ) * #{$span}
       ) + (var(--fd-width-gutter) * (#{$span}))
     );

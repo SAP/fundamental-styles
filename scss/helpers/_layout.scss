@@ -1,10 +1,10 @@
 @import "./../mixins";
 .#{$fd-namespace}-has-clearfix {
-    @include fd-clearfix();
+  @include fd-clearfix();
 }
 .#{$fd-namespace}-has-float-left {
-    float: left !important;
+  float: left !important;
 }
 .#{$fd-namespace}-has-float-right {
-    float: right !important;
+  float: right !important;
 }

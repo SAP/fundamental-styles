@@ -1,63 +1,63 @@
 //fonts
 $fd-fonts: (
-    "body": #{"'Open Sans'", sans-serif},
-    "header": #{"Roboto", sans-serif},
-    "code": #{"'Courier New'", monospace},
+  "body": #{"'Open Sans'", sans-serif},
+  "header": #{"Roboto", sans-serif},
+  "code": #{"'Courier New'", monospace},
 );
 
 //colors
 $fd-colors: (
-    "primary": (
-        1: #006fbb,
-        2: #27394f,
-    ),
-    "action": (
-        1: #009cdf,
-        2: #8D9DBC
-    ),
-    "text": (
-        1: #21262c,
-        2: #7f90a4,
-        3: #63758b,
-        4: #ffffff
-    ),
-    "background": (
-        1: #ffffff,
-        2: #f0f5ff,
-        3: #000000
-    ),
-    "neutral": (
-        1: #f9fbfc,
-        2: #d7d7d7,
-        3: #ccdaeb,
-        4: #8a8fa1,
-    ),
-    "status": (
-        1: #61bf33,
-        2: #e97326,
-        3: #df1919,
-    )
+  "primary": (
+    1: #006fbb,
+    2: #27394f,
+  ),
+  "action": (
+    1: #009cdf,
+    2: #8D9DBC
+  ),
+  "text": (
+    1: #21262c,
+    2: #7f90a4,
+    3: #63758b,
+    4: #ffffff
+  ),
+  "background": (
+    1: #ffffff,
+    2: #f0f5ff,
+    3: #000000
+  ),
+  "neutral": (
+    1: #f9fbfc,
+    2: #d7d7d7,
+    3: #ccdaeb,
+    4: #8a8fa1,
+  ),
+  "status": (
+    1: #61bf33,
+    2: #e97326,
+    3: #df1919,
+  )
 );
 
 //breakpoints
 $fd-breakpoints: (
-    xs: 320px,
-    s: 800px,
-    m: 1024px,
-    l: 1440px,
-    xl: 1580px,
+  xs: 320px,
+  s: 800px,
+  m: 1024px,
+  l: 1440px,
+  xl: 1580px,
 );
 
 //spacing
 $fd-spacing--base: 4px;
 $fd-spacing: (
-    base: $fd-spacing--base,    //4
-    xs: $fd-spacing--base * 2,  //8
-    s: $fd-spacing--base * 3,   //12
-    reg: $fd-spacing--base * 5, //20
-    m: $fd-spacing--base * 10,  //40
-    l: $fd-spacing--base * 25,  //100
-    xl: $fd-spacing--base * 37, //148
+  base: $fd-spacing--base,    
+  xs: $fd-spacing--base * 2,  
+  s: $fd-spacing--base * 3,   
+  reg: $fd-spacing--base * 5, 
+  m: $fd-spacing--base * 10,  
+  l: $fd-spacing--base * 25,  
+  xl: $fd-spacing--base * 37, 
 );
 
 //type
@@ -65,23 +65,23 @@ $fd-font-size: 16px;
 $fd-line-height: 24/16;
 $fd-type--base: 16;
 $fd-type: (
-    "-3": 0.75rem 1.33334 "body" bold uppercase,    //12/16
-    "-2": 0.8125rem 1.53847 "body" reg none,	    //13/20
-    "-1": 0.875rem 1.42858 "body" reg none,	        //14/20
-    "0": 1rem 1.5 "body" reg none,     	            //16/24
-    "1": 1.125rem 1.33334 "body" semi none,   	    //18/24
-    "2": 1.25rem 1.4 "body" semi none,   	        //20/28
-    "3": 1.625rem 1.23077 "header" semi none,	    //26/32
-    "4": 2.1875rem 1.25715 "header" bold none,	    //35/44
-    "5": 2.8125rem 1.15556 "header" med none,       //45/52
+  "-3": 0.75rem 1.33334 "body" bold uppercase,    
+  "-2": 0.8125rem 1.53847 "body" reg none,	    
+  "-1": 0.875rem 1.42858 "body" reg none,	        
+  "0": 1rem 1.5 "body" reg none,     	            
+  "1": 1.125rem 1.33334 "body" semi none,   	    
+  "2": 1.25rem 1.4 "body" semi none,   	        
+  "3": 1.625rem 1.23077 "header" semi none,	    
+  "4": 2.1875rem 1.25715 "header" bold none,	    
+  "5": 2.8125rem 1.15556 "header" med none,       
 );
 
 $fd-weights: (
-    light: 300,
-    reg: 400,
-    med: 500,
-    semi: 600,
-    bold: 700
+  light: 300,
+  reg: 400,
+  med: 500,
+  semi: 600,
+  bold: 700
 );
 
 //BRING IN DEFAULT SETTINGS so you have access to the full system when defining overrides

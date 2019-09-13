@@ -1,44 +1,44 @@
 //fonts
 $fd-fonts: (
-    "body": #{Arial, Helvetica, sans-serif},
-    "header": #{Arial, Helvetica, sans-serif},
-    "code": #{"Courier", sans-serif},
+  "body": #{Arial, Helvetica, sans-serif},
+  "header": #{Arial, Helvetica, sans-serif},
+  "code": #{"Courier", sans-serif},
 );
 
 //colors
 $fd-colors: (
-    "primary": (
-        1: #b4cbe1,
-        2: #27394f,
-    ),
-    "text": (
-        1: #333333,
-        2: #7f90a4,
-        3: #63758b,
-        4: #ffffff
-    ),
-    "background": (
-      1: #f3f4f5,
-      2: #ffffff,
-      3: #427cac,
-    ),
-    "action": (
-        1: #346187,
-        2: #00a5ec,
-        3: #0093d1,
-       	4: #008ac4
-    ),
-    "neutral": (
-        1: #f7f7f7,
-        2: #f3f4f5,
-        3: #ccdaeb,
-        4: #8a8fa1,
-    ),
-    "status": (
-        1: #619b62,
-        2: #e96b1a,
-        3: #df1919,
-    )
+  "primary": (
+    1: #b4cbe1,
+    2: #27394f,
+  ),
+  "text": (
+    1: #333333,
+    2: #7f90a4,
+    3: #63758b,
+    4: #ffffff
+  ),
+  "background": (
+    1: #f3f4f5,
+    2: #ffffff,
+    3: #427cac,
+  ),
+  "action": (
+    1: #346187,
+    2: #00a5ec,
+    3: #0093d1,
+    4: #008ac4
+  ),
+  "neutral": (
+    1: #f7f7f7,
+    2: #f3f4f5,
+    3: #ccdaeb,
+    4: #8a8fa1,
+  ),
+  "status": (
+    1: #619b62,
+    2: #e96b1a,
+    3: #df1919,
+  )
 );
 
 //BRING IN DEFAULT SETTINGS so you have access to the full system when defining overrides

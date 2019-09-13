@@ -4,7 +4,7 @@
 :root {
   @each $type, $shades in $fd-colors {
     @each $shade, $value in $shades {
-    --#{$fd-namespace}-color-#{$type}-#{$shade}: #{$value};
+      --#{$fd-namespace}-color-#{$type}-#{$shade}: #{$value};
     }
   }
 

@@ -23,8 +23,8 @@ $block: #{$fd-namespace}-asset-upload;
     overflow: hidden;
 
     &:focus + .#{$block}__label {
-        border: 1px solid $fd-asset-upload-border-color--focus;
-        box-shadow: 0 0 0 1px $fd-asset-upload-border-color--focus;
+      border: 1px solid $fd-asset-upload-border-color--focus;
+      box-shadow: 0 0 0 1px $fd-asset-upload-border-color--focus;
     }
   }
 

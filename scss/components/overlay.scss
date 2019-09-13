@@ -17,7 +17,7 @@ $block: #{$fd-namespace}-overlay;
   justify-content: center;
   z-index: map-get($fd-z-index-levels, "top");
   &.is-hidden {
-      display: none;
+    display: none;
   }
   &--modal {
     @include fd-var-color("background-color", $fd-overlay-background-color, --fd-overlay-background-color);

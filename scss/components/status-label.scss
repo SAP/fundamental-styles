@@ -63,10 +63,10 @@ $fd-status-label-icon-size: fd-space(4) !default;
 
 
   &::before {
-      vertical-align: -8%;
-      width: fd-space(5);
-      height: $fd-status-label-icon-size;
-      line-height: 1;
+    vertical-align: -8%;
+    width: fd-space(5);
+    height: $fd-status-label-icon-size;
+    line-height: 1;
   }
 
   //BLOCK MODIFIERS ************
@@ -148,11 +148,11 @@ $fd-status-label-icon-size: fd-space(4) !default;
   &.#{$block}--offline {
     @extend %fd-status-icon;
     &::before {
-        width: 8px;
-        height: 8px;
-        top: 4px;
-        left: 4px;
-        background-image: url($fd-status-indicator-offline);
+      width: 8px;
+      height: 8px;
+      top: 4px;
+      left: 4px;
+      background-image: url($fd-status-indicator-offline);
     }
     &::after {
       //default

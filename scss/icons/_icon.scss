@@ -8,10 +8,10 @@ $fd-scss-icons-path: "./icons/" !default;
 }
 
 @font-face {
-    font-family: "SAP-icons";
-    src: url("#{$fd-scss-icons-path}SAP-icons.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "SAP-icons";
+  src: url("#{$fd-scss-icons-path}SAP-icons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 $block: sap-icon;
@@ -47,9 +47,9 @@ $block: sap-icon;
     @include fd-icon-size("xl");
   }
   @each $key, $value in $fd-icons {
-      &--#{$key} {
-        @include fd-icon-glyph($key);
-      }
+    &--#{$key} {
+      @include fd-icon-glyph($key);
+    }
   }
   &--animate-spin {
     @include fd-icon-animate("spin");

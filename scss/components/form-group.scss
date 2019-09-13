@@ -7,9 +7,9 @@
 
 $block: #{$fd-namespace}-form-group;
 .#{$block} {
-    @include fd-reset();
-    margin-bottom: fd-space("small");
-    &:last-child {
-        margin-bottom: 0;
-    }
+  @include fd-reset();
+  margin-bottom: fd-space("small");
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

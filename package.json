@@ -67,6 +67,7 @@
     "standard-version": "4.2.0",
     "start-server-and-test": "^1.7.13",
     "stylelint": "^10.0.1",
+    "stylelint-config-recommended": "^2.2.0",
     "stylelint-scss": "^3.5.4",
     "write-yaml": "^1.0.0"
   },

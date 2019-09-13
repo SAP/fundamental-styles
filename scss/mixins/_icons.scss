@@ -48,7 +48,7 @@
       @if map-has-key($fd-icons-sizes, $size) {
         font-size: map-get($fd-icons-sizes, $size);
       } @else {
-          @warn "Unknown `#{$fd-icons-sizes}` in $fd-icons-sizes map";
+        @warn "Unknown `#{$fd-icons-sizes}` in $fd-icons-sizes map";
       }
       line-height: 1;
     } @else {
@@ -68,6 +68,6 @@
       @content;
     }
   } @else {
-      @warn "Unknown `#{$glyph}` in $fd-icons map";
+    @warn "Unknown `#{$glyph}` in $fd-icons map";
   }
 }

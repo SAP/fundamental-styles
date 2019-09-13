@@ -5,8 +5,8 @@
 $block: #{$fd-namespace}-localization-editor;
 
 .#{$block} {
-    &__language {
-        @include fd-reset();
-        padding: fd-space(2);
-    }
+  &__language {
+    @include fd-reset();
+    padding: fd-space(2);
+  }
 }
