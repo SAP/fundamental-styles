@@ -324,13 +324,13 @@ Do not use the checkbox control if:
         </label>
     </div>
     <div class="fd-form-item">
-        <label class="fd-fieldset__legend" for="Ai4ez612">
+        <label class="fd-form-label" for="Ai4ez612">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez612" checked>
             Selected State
         </label>
     </div>
     <div class="fd-form-item">
-        <label class="fd-fieldset__legend" for="Ai4ez613">
+        <label class="fd-form-label" for="Ai4ez613">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez613">
             TriState Text
         </label>
