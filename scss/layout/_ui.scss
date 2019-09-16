@@ -1,6 +1,7 @@
 @import "./../settings";
 @import "./../functions";
 @import "./../mixins";
+
 /*!
 .fd-ui+(--fixed)
     .fd-ui__header+(--fixed)
@@ -9,6 +10,7 @@
     .fd-ui__overlay
 */
 $block: #{$fd-namespace}-ui;
+
 .#{$block} {
   // these vars can be set globally to lock all pages
   // also, --fixed modifiers can be used in the HTML to set per template configurations
@@ -24,6 +26,7 @@ $block: #{$fd-namespace}-ui;
   $fd-ui-footer-background-color: $fd-background-color--footer !default;
   $fd-ui-footer-border-top: solid 1px fd-color("neutral", 3) !default;
   $_ui-is-fixed: $fd-ui-fixed or ($fd-ui-header-fixed and $fd-ui-footer-fixed);
+
   position: absolute;
   min-height: 100vh;
   width: 100vw;
@@ -36,14 +39,17 @@ $block: #{$fd-namespace}-ui;
     display: flex;
     flex-direction: column;
     max-height: 100vh;
+
     .#{$block}__header {
       flex: 0 0 $fd-ui-header-height;
       position: static;
     }
+
     & .#{$block}__footer {
       flex: 0 0 $fd-ui-footer-height;
       position: static;
     }
+
     & .#{$block}__app {
       overflow: scroll;
       margin-top: 0;
@@ -51,11 +57,13 @@ $block: #{$fd-namespace}-ui;
       min-height: auto;
     }
   }
+
   @if $_ui-is-fixed {
     display: flex;
     flex-direction: column;
     max-height: 100vh;
   }
+
   &__header {
     position: absolute;
     z-index: map-get($fd-z-index-levels, "first");
@@ -64,9 +72,11 @@ $block: #{$fd-namespace}-ui;
     min-height: $fd-ui-header-height;
     height: $fd-ui-header-height;
     border-bottom: $fd-ui-header-border-bottom;
+
     &--fixed {
       position: fixed;
     }
+
     @if $_ui-is-fixed {
       position: static;
       flex: 0 0 $fd-ui-header-height;
@@ -76,16 +86,19 @@ $block: #{$fd-namespace}-ui;
       }
     }
   }
+
   &__footer {
     background: $fd-ui-footer-background-color;
     width: 100%;
     min-height: $fd-ui-footer-height;
     height: $fd-ui-footer-height;
     border-top: $fd-ui-footer-border-top;
+
     &--fixed {
       position: fixed;
       bottom: 0;
     }
+
     @if $_ui-is-fixed {
       position: static;
       flex: 0 0 $fd-ui-footer-height;
@@ -96,12 +109,14 @@ $block: #{$fd-namespace}-ui;
       }
     }
   }
+
   &__app {
     margin-top: $fd-ui-header-height;
     min-height: calc(100vh - #{$fd-ui-footer-height} - #{$fd-ui-header-height});
     width: 100%;
     display: flex;
     position: relative;
+
     @if $_ui-is-fixed {
       overflow: scroll;
       flex: 1;
@@ -110,16 +125,19 @@ $block: #{$fd-namespace}-ui;
       @if $fd-ui-header-fixed {
         min-height: calc(100vh - #{$fd-ui-footer-height});
       }
+
       @if $fd-ui-footer-fixed {
         padding-bottom: $fd-ui-footer-height;
       }
     }
   }
+
   &__main {
     @if $_ui-is-fixed {
       overflow: scroll;
     }
   }
+
   &__overlay {
     position: absolute;
   }
