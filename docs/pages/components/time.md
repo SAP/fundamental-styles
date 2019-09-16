@@ -14,6 +14,9 @@ The time component is used to select a time value.
 
 Multiple instances can be used in the `time-picker` to choose hours, minutes, seconds and period of the day. It will be rare to see this component used alone.
 
+> Looking for Time Picker? From a style perspective, a time-picker is simply a composition of our existing time, input group and popover, but contains no new styles of its own. Therefore, we consider it a pattern. [See the time picker pattern here]({{site.baseurl}}/patterns/time-picker).
+
+
 <br>
 
 ## With Values
