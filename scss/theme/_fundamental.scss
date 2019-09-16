@@ -2,41 +2,41 @@
 $fd-fonts: (
   "body": #{"'Open Sans'", sans-serif},
   "header": #{"Roboto", sans-serif},
-  "code": #{"'Courier New'", monospace},
+  "code": #{"'Courier New'", monospace}
 );
 
 // colors
 $fd-colors: (
   "primary": (
     1: #006fbb,
-    2: #27394f,
+    2: #27394f
   ),
   "action": (
     1: #009cdf,
-    2: #8d9dbc,
+    2: #8d9dbc
   ),
   "text": (
     1: #21262c,
     2: #7f90a4,
     3: #63758b,
-    4: #ffffff,
+    4: #ffffff
   ),
   "background": (
     1: #ffffff,
     2: #f0f5ff,
-    3: #000000,
+    3: #000000
   ),
   "neutral": (
     1: #f9fbfc,
     2: #d7d7d7,
     3: #ccdaeb,
-    4: #8a8fa1,
+    4: #8a8fa1
   ),
   "status": (
     1: #61bf33,
     2: #e97326,
-    3: #df1919,
-  ),
+    3: #df1919
+  )
 );
 
 // breakpoints
@@ -45,7 +45,7 @@ $fd-breakpoints: (
   s: 800px,
   m: 1024px,
   l: 1440px,
-  xl: 1580px,
+  xl: 1580px
 );
 
 // spacing
@@ -57,7 +57,7 @@ $fd-spacing: (
   reg: $fd-spacing--base * 5,
   m: $fd-spacing--base * 10,
   l: $fd-spacing--base * 25,
-  xl: $fd-spacing--base * 37,
+  xl: $fd-spacing--base * 37
 );
 
 // type
@@ -73,7 +73,7 @@ $fd-type: (
   "2": 1.25rem 1.4 "body" semi none,
   "3": 1.625rem 1.23077 "header" semi none,
   "4": 2.1875rem 1.25715 "header" bold none,
-  "5": 2.8125rem 1.15556 "header" med none,
+  "5": 2.8125rem 1.15556 "header" med none
 );
 
 $fd-weights: (
@@ -81,7 +81,7 @@ $fd-weights: (
   reg: 400,
   med: 500,
   semi: 600,
-  bold: 700,
+  bold: 700
 );
 
 // BRING IN DEFAULT SETTINGS so you have access to the full system when defining overrides

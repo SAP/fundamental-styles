@@ -2,14 +2,14 @@
 $fd-fonts: (
   "body": #{Arial, Helvetica, sans-serif},
   "header": #{Arial, Helvetica, sans-serif},
-  "code": #{"Courier", sans-serif},
+  "code": #{"Courier", sans-serif}
 );
 
 // colors
 $fd-colors: (
   "primary": (
     1: #b4cbe1,
-    2: #27394f,
+    2: #27394f
   ),
   "text": (
     1: #333333,
@@ -20,7 +20,7 @@ $fd-colors: (
   "background": (
     1: #f3f4f5,
     2: #ffffff,
-    3: #427cac,
+    3: #427cac
   ),
   "action": (
     1: #346187,
@@ -32,12 +32,12 @@ $fd-colors: (
     1: #f7f7f7,
     2: #f3f4f5,
     3: #ccdaeb,
-    4: #8a8fa1,
+    4: #8a8fa1
   ),
   "status": (
     1: #619b62,
     2: #e96b1a,
-    3: #df1919,
+    3: #df1919
   )
 );
 
@@ -51,7 +51,7 @@ $fd-border-radius: 0;
 $fd-background-color--header: transparent;
 $fd-background-color--sidebar: transparent;
 $fd-background-color--footer: transparent;
-$fd-background: linear-gradient(to bottom,#a9c4df,#e7ecf0);
+$fd-background: linear-gradient(to bottom, #a9c4df, #e7ecf0);
 $fd-section-title-color: $fd-color;
 $fd-forms-background-color: rgba(fd-color("background"), 0.4);
 $fd-list-group-border-color: none;
