@@ -19,7 +19,7 @@ summary:
             <div class="fd-popover__control">
                 <div aria-label="Image label" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true">
                     <div class="fd-input-group">
-                        <input type="text" class="fd-input" id="" placeholder="Select Fruit">
+                        <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Fruit">
                         <span class="fd-input-group__addon fd-input-group__addon--button">
                             <button class=" fd-button--light sap-icon--navigation-down-arrow"></button>
                         </span>
@@ -67,7 +67,7 @@ summary:
             <div class="fd-popover__control">
                 <div aria-label="Image label" aria-controls="F4GcX34a" aria-expanded="false" aria-haspopup="true">
                     <div class="fd-input-group">
-                        <input type="text" class="fd-input fd-input--compact" id="" placeholder="Select Fruit">
+                        <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
                         <span class="fd-input-group__addon fd-input-group__addon--button">
                             <button class=" fd-button--light fd-button--compact sap-icon--navigation-down-arrow"></button>
                         </span>

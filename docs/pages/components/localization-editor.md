@@ -19,7 +19,7 @@ summary:
          Localization Editor Label
          </label>
          <div class="fd-input-group">
-            <input type="text" class="fd-input" id="" aria-controls="NJvVh542c" aria-expanded="false"
+            <input type="text" class="fd-input fd-input-group__input" id="" aria-controls="NJvVh542c" aria-expanded="false"
             aria-haspopup="true" placeholder="Enter Label">
             <span class="fd-input-group__addon fd-input-group__addon--button">
             <button class="fd-button--light"
@@ -32,7 +32,7 @@ summary:
             <ul class="fd-menu__list">
                <li class="fd-localization-editor__language">
                   <div class="fd-input-group">
-                     <input type="text" class="fd-input" id="" placeholder="Enter Label">
+                     <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Enter Label">
                      <span class="fd-input-group__addon">
                      ES
                      </span>
@@ -40,7 +40,7 @@ summary:
                </li>
                <li class="fd-localization-editor__language">
                   <div class="fd-input-group">
-                     <input type="text" class="fd-input"  id="" placeholder="Enter Label">
+                     <input type="text" class="fd-input fd-input-group__input"  id="" placeholder="Enter Label">
                      <span class="fd-input-group__addon">
                      CH
                      </span>
@@ -48,7 +48,7 @@ summary:
                </li>
                <li class="fd-localization-editor__language">
                   <div class="fd-input-group">
-                     <input type="text" class="fd-input" id="" placeholder="Enter Label">
+                     <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Enter Label">
                      <span class="fd-input-group__addon">
                      PL
                      </span>
@@ -69,7 +69,7 @@ summary:
          Localization Editor Compact Mode
          </label>
          <div class="fd-input-group">
-            <input type="text" class="fd-input fd-input--compact" id="" aria-controls="test22" aria-expanded="false"
+            <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" aria-controls="test22" aria-expanded="false"
             aria-haspopup="true" placeholder="Enter Label">
             <span class="fd-input-group__addon fd-input-group__addon--button">
             <button class="fd-button--light fd-button--compact"
@@ -82,7 +82,7 @@ summary:
             <ul class="fd-menu__list">
                <li class="fd-localization-editor__language">
                   <div class="fd-input-group">
-                     <input type="text" class="fd-input fd-input--compact" id="" placeholder="Enter Label">
+                     <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Enter Label">
                      <span class="fd-input-group__addon">
                      ES
                      </span>
@@ -90,7 +90,7 @@ summary:
                </li>
                <li class="fd-localization-editor__language">
                   <div class="fd-input-group">
-                     <input type="text" class="fd-input fd-input--compact" id="" placeholder="Enter Label">
+                     <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Enter Label">
                      <span class="fd-input-group__addon ">
                      CH
                      </span>
@@ -98,7 +98,7 @@ summary:
                </li>
                <li class="fd-localization-editor__language">
                   <div class="fd-input-group">
-                     <input type="text" class="fd-input fd-input--compact" id="" placeholder="Enter Label">
+                     <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Enter Label">
                      <span class="fd-input-group__addon">
                      PL
                      </span>
@@ -124,7 +124,7 @@ summary:
          Localization Editor Label
          </label>
          <div class="fd-input-group ">
-            <textarea class="fd-textarea" id="" aria-controls="NJvVh542" aria-expanded="false"
+            <textarea class="fd-textarea fd-input-group__input" id="" aria-controls="NJvVh542" aria-expanded="false"
             aria-haspopup="true"></textarea>
             <span class="fd-input-group__addon  fd-input-group__addon--textarea fd-input-group__addon--button">
             <button class="fd-button--light"
@@ -137,7 +137,7 @@ summary:
             <ul class="fd-menu__list">
                <li class="fd-localization-editor__language">
                   <div class="fd-input-group ">
-                     <textarea class="fd-textarea" id=""></textarea>
+                     <textarea class="fd-textarea fd-input-group__input" id=""></textarea>
                      <span class="fd-input-group__addon  fd-input-group__addon--textarea">
                      ES
                      </span>
@@ -145,7 +145,7 @@ summary:
                </li>
                <li class="fd-localization-editor__language">
                   <div class="fd-input-group ">
-                     <textarea class="fd-textarea" id=""></textarea>
+                     <textarea class="fd-textarea fd-input-group__input" id=""></textarea>
                      <span class="fd-input-group__addon  fd-input-group__addon--textarea">
                      CH
                      </span>
@@ -153,7 +153,7 @@ summary:
                </li>
                <li class="fd-localization-editor__language">
                   <div class="fd-input-group ">
-                     <textarea class="fd-textarea" id=""></textarea>
+                     <textarea class="fd-textarea fd-input-group__input" id=""></textarea>
                      <span class="fd-input-group__addon  fd-input-group__addon--textarea">
                      PL
                      </span>
