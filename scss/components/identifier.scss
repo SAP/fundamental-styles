@@ -11,13 +11,13 @@ $block: #{$fd-namespace}-identifier;
   // LOCAL VARS (set all themeable properties, always include !default)
   $fd-const-ratio: 4px;
   $fd-identifier-sizes: (
-    xxs: $fd-const-ratio * 5,
-    xs: $fd-const-ratio * 7,
-    s: $fd-const-ratio * 8,
-    m: $fd-const-ratio * 12,
-    l: $fd-const-ratio * 16,
-    xl: $fd-const-ratio * 20,
-    xxl: $fd-const-ratio * 28
+    xxs: $fd-const-ratio * 5, // 20px
+    xs: $fd-const-ratio * 7,  // 28px ~ Matches shellbar/user-menu
+    s: $fd-const-ratio * 8,   // 32px
+    m: $fd-const-ratio * 12,  // 48px
+    l: $fd-const-ratio * 16,  // 64px
+    xl: $fd-const-ratio * 20, // 80px
+    xxl: $fd-const-ratio * 28 // 112px
   ) !default;
   $fd-identifier-border-radius: $fd-border-radius !default;
   $fd-identifier-color: fd-color("text", 5) !default;
