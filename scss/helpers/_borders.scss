@@ -1,28 +1,36 @@
 @import "./../settings";
 @import "../mixins/mixins";
+
 .#{$fd-namespace}-has-border-radius-0 {
   border-radius: 0 !important;
 }
+
 .#{$fd-namespace}-has-border-radius-50percent {
   border-radius: 50% !important;
 }
+
 .#{$fd-namespace}-has-border-none {
   border: none !important;
 }
+
 @each $item in top, right, bottom, left {
   .#{$fd-namespace}-has-#{$item}-border-none {
     border: none !important;
   }
 }
+
 @each $item in begin, after {
   .#{$fd-namespace}-has-border-#{$item}-none {
     $_side: left;
     $_opp: right;
+
     @if $item == after {
       $_side: right;
       $_opp: left;
     }
+
     border-#{$_side}: none !important;
+
     @at-root {
       [direction="rtl"] &,
       &[direction="rtl"] {
@@ -31,6 +39,7 @@
     }
   }
 }
+
 @each $type, $shades in $fd-colors {
   @each $shade, $value in $shades {
     @if $shade == 1 {
@@ -46,11 +55,13 @@
     }
   }
 }
+
 @each $state, $value in $fd-colors-action-states {
   .#{$fd-namespace}-has-border-color-action-#{$state} {
     @include fd-var-color("border-color", $value, --fd-color-action-#{$state}, true);
   }
 }
+
 @each $state, $value in $fd-colors-background-states {
   .#{$fd-namespace}-has-border-color-background-#{$state} {
     @include fd-var-color("border-color", $value, --fd-color-background-#{$state}, true);

@@ -6,6 +6,7 @@
     align-items: #{$type} !important;
   }
 }
+
 .#{$fd-namespace}-has-flex-grow-1 {
   flex-grow: 1 !important;
 }

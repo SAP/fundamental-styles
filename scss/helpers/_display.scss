@@ -17,27 +17,35 @@ $fd-display-types: none block inline-block grid inline-grid flex inline-flex tab
   .#{$fd-namespace}-display#{$infix}-none {
     display: none !important;
   }
+
   .#{$fd-namespace}-display#{$infix}-inline {
     display: inline !important;
   }
+
   .#{$fd-namespace}-display#{$infix}-inline-block {
     display: inline-block !important;
   }
+
   .#{$fd-namespace}-display#{$infix}-block {
     display: block !important;
   }
+
   .#{$fd-namespace}-display#{$infix}-table {
     display: table !important;
   }
+
   .#{$fd-namespace}-display#{$infix}-table-row {
     display: table-row !important;
   }
+
   .#{$fd-namespace}-display#{$infix}-table-cell {
     display: table-cell !important;
   }
+
   .#{$fd-namespace}-display#{$infix}-flex {
     display: flex !important;
   }
+
   .#{$fd-namespace}-display#{$infix}-inline-flex {
     display: inline-flex !important;
   }

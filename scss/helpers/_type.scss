@@ -1,7 +1,9 @@
 @import "./../settings";
 @import "./../mixins";
+
 @each $key, $value in $fd-type {
   $is_minus: str-index($key, "-") == 1;
+
   @if $is_minus == false {
     .#{$fd-namespace}-has-type-#{$key} {
       @include fd-type($key);
@@ -17,31 +19,39 @@
     }
   }
 }
+
 @each $key, $value in $fd-fonts {
   .#{$fd-namespace}-has-font-family-#{$key} {
     font-family: $value !important;
   }
 }
+
 @each $key, $value in $fd-weights {
   .#{$fd-namespace}-has-font-weight-#{$key} {
     font-weight: $value !important;
   }
 }
+
 .#{$fd-namespace}-has-font-style-italic {
   font-style: italic !important;
 }
+
 .#{$fd-namespace}-has-text-transform-none {
   text-transform: none !important;
 }
+
 .#{$fd-namespace}-has-text-transform-uppercase {
   text-transform: uppercase !important;
 }
+
 .#{$fd-namespace}-has-text-transform-lowercase {
   text-transform: lowercase !important;
 }
+
 .#{$fd-namespace}-has-text-align-center {
   text-align: center !important;
 }
+
 .#{$fd-namespace}-has-text-align-right {
   text-align: right !important;
 }

@@ -6,21 +6,26 @@
   background-position: center;
   background-size: contain;
 }
+
 .#{$fd-namespace}-has-background-fixed {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
+
 .#{$fd-namespace}-has-background-size-contain {
   background-size: contain !important;
 }
+
 .#{$fd-namespace}-has-background-size-cover {
   background-size: cover !important;
 }
+
 .#{$fd-namespace}-has-background-color-transparent,
 .#{$fd-namespace}-has-background-color-none {
   background-color: transparent !important;
 }
+
 @each $type, $shades in $fd-colors {
   @each $shade, $value in $shades {
     @if $shade == 1 {
@@ -36,11 +41,13 @@
     }
   }
 }
+
 @each $state, $value in $fd-colors-action-states {
   .#{$fd-namespace}-has-background-color-action-#{$state} {
     @include fd-var-color("background-color", $value, --fd-color-action-#{$state}, true);
   }
 }
+
 @each $state, $value in $fd-colors-background-states {
   .#{$fd-namespace}-has-background-color-background-#{$state} {
     @include fd-var-color("background-color", $value, --fd-color-background-#{$state}, true);
