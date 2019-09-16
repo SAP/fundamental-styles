@@ -58,20 +58,24 @@
     .fd-for-touch {
       --fd-forms-height-compact: #{$fd-forms-height};
     }
+
     .fd-for-compact {
       --fd-forms-height-compact: #{$fd-forms-height--compact};
     }
   }
+
   @include fd-screen(m) {
     --fd-forms-height-compact: #{$fd-forms-height--compact};
   }
   // padding and gutter values used in page, section, and container
   --fd-padding-ui: #{fd-space("tiny")}; // 8px
   --fd-width-gutter: #{fd-space("tiny")}; // 8px
+
   @include fd-screen(m) {
     --fd-padding-ui: #{fd-space("medium")}; // 32px
     --fd-width-gutter: #{fd-space("small")}; // 16px
   }
+
   @include fd-screen(xl) {
     --fd-padding-ui: #{fd-space("large")}; // 48px
   }
