@@ -4,23 +4,10 @@
 
 {% block content %}
 
-
-<style>
-.fd-toggle{
-    margin: 20px 20px 20px 0;
-}
-</style>
-
-<p>Wrap an <code>input[type=checkbox]</code> and an empty <code>.fd-toggle__switch</code>. <i>The empty switch container is necessary for compatibilty with Firefox.</i></p>
-
 <h3>Cozy Toggle (default)</h3>
 {% set example %}
 <label>
-{{  toggle(
-        properties={},
-        state=data.state,
-        aria=data.aria
-    )
+{{  toggle()
 }}
 </label>
 
@@ -30,8 +17,6 @@
             offLabel: 'OFF',
             onLabel: 'ON'
         },
-        state=data.state,
-        aria=data.aria,
         modifier={
             block: ['label']
         }
@@ -42,9 +27,6 @@
 
 <label>
 {{  toggle(
-        properties={},
-        state=data.state,
-        aria=data.aria,
         modifier={
             block: ['semantic']
         }
@@ -61,9 +43,6 @@
 {% set example %}
 <label>
 {{  toggle(
-        properties={},
-        state=data.state,
-        aria=data.aria,
         modifier={
             block: ['compact']
         }
@@ -78,8 +57,6 @@
             offLabel: 'OFF',
             onLabel: 'ON'
         },
-        state=data.state,
-        aria=data.aria,
         modifier={
             block: ['label', 'compact']
         }
@@ -91,8 +68,6 @@
 <label>
 {{  toggle(
         properties={},
-        state=data.state,
-        aria=data.aria,
         modifier={
             block: ['compact', 'semantic']
         }
@@ -112,7 +87,6 @@
 
 <label>
 {{  toggle(
-        properties=data.properties,
         modifier={
             block: ['l']
         }
@@ -127,7 +101,6 @@
 
 <label>
 {{  toggle(
-        properties=data.properties,
         modifier={
             block: ['s']
         }
@@ -141,7 +114,6 @@
 
 <label>
 {{  toggle(
-        properties=data.properties,
         modifier={
             block: ['xs']
         }
@@ -159,7 +131,6 @@
 {% set example %}
 <label>
 {{  toggle(
-        properties=data.properties,
         modifier={
             block: ['xs']
         },
@@ -171,7 +142,6 @@
 </label>
 <label>
 {{  toggle(
-        properties=data.properties,
         modifier={
             block: ['s']
         },
@@ -183,7 +153,6 @@
 </label>
 <label>
 {{  toggle(
-        properties=data.properties,
         state={
             checked: true
         }
@@ -192,7 +161,6 @@
 </label>
 <label>
 {{  toggle(
-        properties=data.properties,
         modifier={
             block: ['l']
         },
@@ -214,7 +182,6 @@
 {% set example %}
 <label>
 {{  toggle(
-        properties=data.properties,
         modifier={
             block: ['xs']
         },
@@ -226,9 +193,8 @@
 </label>
 <label>
 {{  toggle(
-        properties=data.properties,
         modifier={
-            block: ['small']
+            block: ['s']
         },
         state={
             disabled: true
@@ -238,7 +204,6 @@
 </label>
 <label>
 {{  toggle(
-        properties=data.properties,
         state={
             disabled: true,
             checked: true
@@ -248,7 +213,6 @@
 </label>
 <label>
 {{  toggle(
-        properties=data.properties,
         modifier={
             block: ['l']
         },
@@ -261,5 +225,55 @@
 </label>
 {% endset %}
 {{ format(example) }}
+
+<h2>Inline label</h2>
+{% set example %}
+<label>
+{{  toggle(
+        properties={
+            inlineLabel: 'Testing a long label here'
+        },
+        modifier={
+            block: ['xs']
+        }
+
+    )
+}}
+</label>
+<label>
+{{  toggle(
+        properties={
+            inlineLabel: 'Short label'
+        },
+        modifier={
+            block: ['s']
+        }
+
+    )
+}}
+</label>
+<label>
+{{  toggle(
+        properties={
+            inlineLabel: 'Testing a long label here'
+        }
+    )
+}}
+</label>
+<label>
+{{  toggle(
+        properties={
+            inlineLabel: 'Testing a long label here'
+        },
+        modifier={
+            block: ['xl']
+        }
+
+    )
+}}
+</label>
+{% endset %}
+{{ format(example) }}
+
 
 {% endblock %}

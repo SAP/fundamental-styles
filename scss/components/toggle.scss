@@ -31,6 +31,13 @@ $block: #{$fd-namespace}-toggle;
     display: inline-block;
     width: $fd-toggle-width;
     height: $fd-toggle-height;
+    margin-right: 5px;
+    vertical-align: middle;
+
+    @include fd-rtl() {
+        margin-left: 5px;
+        margin-right: 0;
+    }
 
     &__input {
         @include fd-reset();
