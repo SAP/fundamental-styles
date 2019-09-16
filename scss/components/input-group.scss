@@ -13,15 +13,6 @@ $block: #{$fd-namespace}-input-group;
     display: flex;
 
     > * {
-        @include fd-reset-child-spacing();
-        @include fd-children() {
-            &:not(.fd-input-group__addon) {
-                flex: 1 0 auto;
-            }
-            width: auto;
-            z-index: map-get($fd-z-index-levels, "first");
-        }
-
         &:first-child {
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
@@ -51,6 +42,13 @@ $block: #{$fd-namespace}-input-group;
                 border-bottom-left-radius: $fd-border-radius;
             }
         }
+    }
+
+    &__input {
+        @include fd-reset-child-spacing();
+        flex: 1 0 auto;
+        width: auto;
+        z-index: map-get($fd-z-index-levels, "first");
     }
 
     &--inline {
