@@ -1,13 +1,33 @@
 {
-  "extends": ["stylelint-config-recommended"],
+  "extends": ["stylelint-config-standard"],
   "plugins": ["stylelint-scss"],
   "rules": {
     "at-rule-no-unknown": null,
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": ["blockless-after-same-name-blockless", "first-nested"],
+        "ignore": ["after-comment"],
+        "ignoreAtRules": ["else"]
+      }
+    ],
+    "block-closing-brace-newline-after": [
+      "always",
+      {
+        "ignoreAtRules": ["if", "else"]
+      }
+    ],
+    "color-hex-length": null,
     "block-no-empty": true,
     "declaration-colon-space-after": "always-single-line",
     "font-family-no-missing-generic-family-keyword": null,
     "indentation": 2,
     "scss/at-rule-no-unknown": true,
-    "scss/double-slash-comment-whitespace-inside": "always"
+    "scss/double-slash-comment-whitespace-inside": "always",
+    "scss/at-else-closing-brace-newline-after": "always-last-in-chain",
+    "scss/at-else-closing-brace-space-after": "always-intermediate",
+    "scss/at-else-empty-line-before": "never",
+    "scss/at-if-closing-brace-newline-after": "always-last-in-chain",
+    "scss/at-if-closing-brace-space-after": "always-intermediate"
   }
 }
