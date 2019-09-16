@@ -34,26 +34,32 @@ $block: sap-icon;
   &--small {
     @include fd-icon-size("s");
   }
+
   &--m,
   &--medium {
     @include fd-icon-size("m");
   }
+
   &--l,
   &--large {
     @include fd-icon-size("l");
   }
+
   &--xl,
   &--xlarge {
     @include fd-icon-size("xl");
   }
+
   @each $key, $value in $fd-icons {
     &--#{$key} {
       @include fd-icon-glyph($key);
     }
   }
+
   &--animate-spin {
     @include fd-icon-animate("spin");
   }
+
   &--animate-pulse {
     @include fd-icon-animate("pulse");
   }
@@ -63,6 +69,7 @@ $block: sap-icon;
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(359deg);
   }

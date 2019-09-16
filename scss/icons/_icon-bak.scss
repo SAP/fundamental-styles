@@ -8,7 +8,8 @@ $fd-scss-icons-path: "./icons/" !default;
 
 @font-face {
   font-family: "FundamentalIcons";
-  src: url("#{$fd-scss-icons-path}FundamentalIcons.woff2") format("woff2"),
+  src:
+    url("#{$fd-scss-icons-path}FundamentalIcons.woff2") format("woff2"),
     url("#{$fd-scss-icons-path}FundamentalIcons.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -54,7 +55,7 @@ $fd-icons: (
   top: "\ea24",
   visibilityoff: "\ea25",
   visibilityon: "\ea26",
-  warning: "\ea27",
+  warning: "\ea27"
 ) !default;
 
 $block: #{$fd-namespace}-icon;
@@ -79,6 +80,7 @@ $block: #{$fd-namespace}-icon;
   $fd-icon-size: 1.125rem !default; // 18px
   $fd-icon-size--medium: 1.625rem !default; // 26px
   $fd-icon-size--large: 2rem !default; // 32px
+
   font-size: $fd-icon-size;
   font-family: "FundamentalIcons";
   line-height: 1;
@@ -91,12 +93,15 @@ $block: #{$fd-namespace}-icon;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
   &--medium {
     font-size: $fd-icon-size--medium;
   }
+
   &--large {
     font-size: $fd-icon-size--large;
   }
+
   &::before {
     display: inline;
     text-align: center;
