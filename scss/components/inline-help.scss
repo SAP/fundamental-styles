@@ -1,11 +1,13 @@
 @import "./../settings";
 @import "./../functions";
 @import "./../mixins";
+
 /*!
 .fd-tooltip
     .fd-tooltip__content+(left, right, bottom-left, bottom-right)
 */
 $block: #{$fd-namespace}-inline-help;
+
 .#{$block} {
   // LOCAL VARS
   $fd-tooltip-icon-background-color: fd-color("status", 4) !default;
@@ -26,6 +28,7 @@ $block: #{$fd-namespace}-inline-help;
 
   // BLOCK BASE *******************************************
   @include fd-reset();
+
   position: relative;
   display: inline-block;
   width: $fd-tooltip-icon-size;
@@ -40,27 +43,28 @@ $block: #{$fd-namespace}-inline-help;
     position: absolute;
     left: 0;
     border-radius: 50%;
+
     @include fd-var-color("color", fd-color("text", 5), --fd-inline-help-icon-color);
     @include fd-var-color(
       "background-color",
       $fd-tooltip-icon-background-color,
       --fd-inline-help-icon-background-color
     );
+
     text-align: center;
   }
 
   // ELEMENTS *******************************************
   &__content {
     @include fd-type("-1");
-    @include fd-var-color(
-      "background-color",
-      $fd-tooltip-content-background-color,
-      --fd-inline-help-background-color
-    );
+    @include fd-var-color("background-color", $fd-tooltip-content-background-color, --fd-inline-help-background-color);
+
     padding: $fd-tooltip-padding;
     display: block;
     position: absolute;
+
     @include fd-var-color("color", $fd-tooltip-content-color, --fd-inline-help-color);
+
     top: $fd-tooltip-padding * 2.5;
     right: -$fd-tooltip-padding;
     min-width: $fd-tooltip-min-width;
@@ -72,43 +76,55 @@ $block: #{$fd-namespace}-inline-help;
     opacity: 0;
     border-width: 1px;
     border-style: solid;
+
     @include fd-var-color("border-color", fd-color("status", 4), --fd-color-status-4);
+
     filter: $fd-tooltip-box-shadow;
+
     &::before {
       @include triangle(13px 8px, fd-color("status", 4), up, --fd-color-status-4);
+
       content: "";
       position: absolute;
       top: -($fd-tooltip-arrow-offset);
       right: $fd-tooltip-arrow-offset * 1.25;
     }
+
     &::after {
       @include triangle(13px 8px, fd-color("background", 2), up, --fd-color-background-2);
+
       content: "";
       position: absolute;
       top: -($fd-tooltip-arrow-offset - 2);
       right: $fd-tooltip-arrow-offset * 1.25;
     }
+
     &--right {
       top: -$fd-tooltip-padding;
       left: $fd-tooltip-padding * 2.5;
+
       &::before {
         top: $fd-tooltip-arrow-offset + 8;
         left: -($fd-tooltip-arrow-offset + 2);
         transform: rotate(-90deg);
       }
+
       &::after {
         top: $fd-tooltip-arrow-offset + 8;
         left: -($fd-tooltip-arrow-offset + 1);
         transform: rotate(-90deg);
       }
+
       @include fd-rtl() {
         left: auto;
         right: $fd-tooltip-padding * 2.5;
+
         &::before {
           left: auto;
           right: -($fd-tooltip-arrow-offset + 2);
           transform: rotate(-270deg);
         }
+
         &::after {
           left: auto;
           right: -($fd-tooltip-arrow-offset + 1);
@@ -116,27 +132,33 @@ $block: #{$fd-namespace}-inline-help;
         }
       }
     }
+
     &--left {
       top: -$fd-tooltip-padding;
       right: $fd-tooltip-padding * 2.5;
+
       &::before {
         top: $fd-tooltip-arrow-offset + 8;
         right: -($fd-tooltip-arrow-offset + 2);
         transform: rotate(90deg);
       }
+
       &::after {
         top: $fd-tooltip-arrow-offset + 8;
         right: -($fd-tooltip-arrow-offset + 1);
         transform: rotate(90deg);
       }
+
       @include fd-rtl() {
         right: auto;
         left: $fd-tooltip-padding * 2.5;
+
         &::before {
           right: auto;
           left: -($fd-tooltip-arrow-offset + 2);
           transform: rotate(270deg);
         }
+
         &::after {
           right: auto;
           left: -($fd-tooltip-arrow-offset + 1);
@@ -144,55 +166,69 @@ $block: #{$fd-namespace}-inline-help;
         }
       }
     }
+
     &--bottom-right {
       left: -$fd-tooltip-arrow-offset;
+
       @include fd-rtl() {
         left: auto;
         right: -$fd-tooltip-arrow-offset;
       }
+
       &::before {
         top: -($fd-tooltip-arrow-offset);
         left: $fd-tooltip-arrow-offset * 1.4;
       }
+
       &::after {
         top: -($fd-tooltip-arrow-offset - 1);
         left: $fd-tooltip-arrow-offset * 1.375;
       }
     }
+
     &--bottom-left {
       right: -$fd-tooltip-arrow-offset;
+
       &::before {
         top: -($fd-tooltip-arrow-offset);
         right: $fd-tooltip-arrow-offset * 1.25;
       }
+
       &::after {
         top: -($fd-tooltip-arrow-offset - 1);
       }
+
       @include fd-rtl() {
         right: auto;
         left: -$fd-tooltip-arrow-offset;
+
         &::before {
           right: auto;
           left: $fd-tooltip-arrow-offset * 1.25;
         }
+
         &::after {
           right: auto;
           left: $fd-tooltip-arrow-offset * 1.25;
         }
       }
     }
+
     &--bottom-center {
       right: -$fd-tooltip-arrow-offset * 20.25;
+
       &::before {
         top: -($fd-tooltip-arrow-offset);
         right: $fd-tooltip-arrow-offset * 20.5;
       }
+
       &::after {
         top: -($fd-tooltip-arrow-offset - 1);
         right: $fd-tooltip-arrow-offset * 20.5;
       }
     }
   }
+
   &:hover {
     .#{$block}__content {
       visibility: visible;

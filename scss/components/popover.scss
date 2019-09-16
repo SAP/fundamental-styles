@@ -3,8 +3,8 @@
 @import "./../functions";
 
 $block: #{$fd-namespace}-popover;
-.#{$block} {
 
+.#{$block} {
   $fd-popover-top-position: 120% !default;
   $fd-popover-top-position-noarrow: 100% !default;
   $fd-popover-left-position: 0 !default;
@@ -25,23 +25,30 @@ $block: #{$fd-namespace}-popover;
   $fd-popover-transition-distance: -15px !default;
 
   @include fd-reset();
+
   position: relative;
   display: inline-block;
 
   &__control {
     @include fd-reset();
+
     position: relative;
     margin-left: 0;
+
     @include action-cursor();
   }
+
   &__body {
     @include fd-reset();
+
     border: $fd-popover-border;
     position: absolute;
     white-space: nowrap;
     z-index: $fd-popover-z-index;
     border-radius: $fd-border-radius;
+
     @include fd-var-color("background-color", $fd-popover-background-color, --fd-color-background-2);
+
     box-shadow: 0 5px 20px 0 var(--fd-color-neutral-3), 0 2px 8px 0 var(--fd-color-neutral-2);
     opacity: 1;
     visibility: visible;
@@ -57,6 +64,7 @@ $block: #{$fd-namespace}-popover;
       &::before {
         right: $fd-popover-arrow-x-offset;
       }
+
       &::after {
         right: $fd-popover-arrow-x-offset;
       }
@@ -64,14 +72,17 @@ $block: #{$fd-namespace}-popover;
 
     &::before {
       @include triangle(13px 8px, $fd-popover-background-color, up, --fd-color-background-2);
+
       content: "";
       position: absolute;
       top: $fd-popover-arrow-top-front;
       left: $fd-popover-arrow-x-offset;
       z-index: $fd-popover-z-index + 2;
     }
+
     &::after {
       @include triangle(13px 8px, fd-color("neutral", 4), up, --fd-color-neutral-4);
+
       content: "";
       position: absolute;
       top: $fd-popover-arrow-top-back;
@@ -132,6 +143,7 @@ $block: #{$fd-namespace}-popover;
 
       &.fd-popover__body--left {
         left: 0;
+
         @include fd-rtl() {
           right: 0;
         }
@@ -139,6 +151,7 @@ $block: #{$fd-namespace}-popover;
 
       &.fd-popover__body--right {
         right: 0;
+
         @include fd-rtl() {
           left: 0;
         }
@@ -160,7 +173,9 @@ $block: #{$fd-namespace}-popover;
     white-space: nowrap;
     z-index: $fd-popover-z-index;
     border-radius: $fd-border-radius;
+
     @include fd-var-color("background-color", $fd-popover-background-color, --fd-color-background-2);
+
     box-shadow: 0 5px 20px 0 var(--fd-color-neutral-3), 0 2px 8px 0 var(--fd-color-neutral-2);
     opacity: 1;
 
@@ -198,12 +213,14 @@ $block: #{$fd-namespace}-popover;
         bottom: -$fd-popover-arrow-height;
         margin: 0 $fd-popover-arrow-width-half;
         border-width: $fd-popover-arrow-height $fd-popover-arrow-width-half 0 $fd-popover-arrow-width-half;
+
         @include fd-var-color("border-top-color", $fd-forms-border-color, --fd-color-neutral-4);
 
         &::after {
           bottom: 1px;
           margin: 0 (-$fd-popover-arrow-width-half);
           border-width: $fd-popover-arrow-height $fd-popover-arrow-width-half 0 $fd-popover-arrow-width-half;
+
           @include fd-var-color("border-top-color", $fd-popover-background-color, --fd-color-background-2);
         }
       }
@@ -216,12 +233,14 @@ $block: #{$fd-namespace}-popover;
         top: -$fd-popover-arrow-height;
         margin: 0 $fd-popover-arrow-width-half;
         border-width: 0 $fd-popover-arrow-width-half $fd-popover-arrow-height $fd-popover-arrow-width-half;
+
         @include fd-var-color("border-bottom-color", $fd-forms-border-color, --fd-color-neutral-4);
 
         &::after {
           top: 1px;
           margin: 0 (-$fd-popover-arrow-width-half);
           border-width: 0 $fd-popover-arrow-width-half $fd-popover-arrow-height $fd-popover-arrow-width-half;
+
           @include fd-var-color("border-bottom-color", $fd-popover-background-color, --fd-color-background-2);
         }
       }
@@ -234,12 +253,14 @@ $block: #{$fd-namespace}-popover;
         right: -$fd-popover-arrow-height;
         margin: $fd-popover-arrow-width-half 0;
         border-width: $fd-popover-arrow-width-half 0 $fd-popover-arrow-width-half $fd-popover-arrow-height;
+
         @include fd-var-color("border-left-color", $fd-forms-border-color, --fd-color-neutral-4);
 
         &::after {
           right: 1px;
           margin: -$fd-popover-arrow-width-half 0;
           border-width: $fd-popover-arrow-width-half 0 $fd-popover-arrow-width-half $fd-popover-arrow-height;
+
           @include fd-var-color("border-left-color", $fd-popover-background-color, --fd-color-background-2);
         }
       }
@@ -252,12 +273,14 @@ $block: #{$fd-namespace}-popover;
         left: -$fd-popover-arrow-height;
         margin: $fd-popover-arrow-width-half 0;
         border-width: $fd-popover-arrow-width-half $fd-popover-arrow-height $fd-popover-arrow-width-half 0;
+
         @include fd-var-color("border-right-color", $fd-forms-border-color, --fd-color-neutral-4);
 
         &::after {
           left: 1px;
           margin: -$fd-popover-arrow-width-half 0;
           border-width: $fd-popover-arrow-width-half $fd-popover-arrow-height $fd-popover-arrow-width-half 0;
+
           @include fd-var-color("border-right-color", $fd-popover-background-color, --fd-color-background-2);
         }
       }

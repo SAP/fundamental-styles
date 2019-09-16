@@ -34,22 +34,27 @@ $block: #{$fd-namespace}-side-nav;
 
   background-color: $fd-side-nav-background-color;
   min-width: $fd-side-nav-max-width;
+
   @include fd-reset();
 
   // ELEMENTS *******************************************
   &__group {
     @include fd-reset();
+
     list-style: none;
     margin-bottom: 0;
   }
 
   &__title {
     @include fd-reset();
+
     display: block;
     margin-bottom: 0;
     margin-top: 0;
     padding: $fd-side-nav-title-padding;
+
     @include fd-type("-1", "normal");
+
     text-transform: uppercase;
     color: $fd-side-nav-link-disabled-color;
     background: $fd-side-nav-title-background-color;
@@ -59,6 +64,7 @@ $block: #{$fd-namespace}-side-nav;
   &__sublist {
     @include fd-reset();
     @include fd-reset-spacing();
+
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
@@ -81,24 +87,29 @@ $block: #{$fd-namespace}-side-nav;
   &__link,
   &__sublink {
     @include fd-reset();
+
     display: flex;
     padding: $fd-side-nav-link-padding;
     color: $fd-side-nav-link-color;
     text-decoration: none;
+
     @include fd-type("0", "normal");
 
     // STATES *******************************************
 
     &:hover {
       background-color: $fd-side-nav-hover-background-color;
+
       @include fd-var-color("color", fd-color-state("hover", "action"), --fd-color-action-hover);
     }
+
     &.is-selected,
     &.is-expanded,
     &[aria-selected="true"],
     &[aria-expanded="true"] {
       color: $fd-side-nav-link-color;
       background-color: $fd-side-nav-selected-background-color;
+
       @include fd-weight("bold");
     }
 
@@ -125,6 +136,7 @@ $block: #{$fd-namespace}-side-nav;
   &__sublink {
     font-weight: normal;
     padding-left: fd-space(5) * 2;
+
     &[aria-hidden="true"] {
       display: none;
     }

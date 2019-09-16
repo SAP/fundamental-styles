@@ -1,20 +1,25 @@
 @import "./../settings";
 @import "./../mixins";
 @import "./../functions";
+
 /*!
 .fd-radio
 */
 $block: #{$fd-namespace}-radio;
+
 .#{$block} {
   @include fd-form-base();
   @include action-cursor();
+
   height: $fd-forms-height--input-check;
   width: $fd-forms-height--input-check;
   vertical-align: middle;
   position: relative;
   border-radius: 50%;
+
   &::after {
     $check-size_: 8px;
+
     content: "";
     border-radius: 50%;
     width: $check-size_;
@@ -25,19 +30,19 @@ $block: #{$fd-namespace}-radio;
     transition: background-color $fd-forms-transition-params;
     background-color: transparent;
   }
+
   &[checked] {
     @include fd-var-color("border-color", $fd-forms-border-color--check, --fd-color-action-3);
+
     &::after {
       @include fd-var-color("background-color", $fd-forms-border-color--check, --fd-color-action-3);
     }
+
     @include fd-disabled() {
       @include fd-var-color("border-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
+
       &::after {
-        @include fd-var-color(
-          "background-color",
-          $fd-forms-border-color--disabled,
-          --fd-color-neutral-2
-        );
+        @include fd-var-color("background-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
       }
     }
   }

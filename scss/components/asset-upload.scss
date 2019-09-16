@@ -1,6 +1,7 @@
 @import "./../settings";
 @import "./../mixins";
 @import "./../functions";
+
 /*!
 .fd-asset-upload+(--no-icon)
   .fd-asset-upload__label
@@ -8,8 +9,8 @@
     .fd-asset-upload__message
 */
 $block: #{$fd-namespace}-asset-upload;
-.#{$block} {
 
+.#{$block} {
   @include fd-reset();
   @include fd-type("0");
   $fd-asset-upload-padding: fd-space(3);
@@ -18,6 +19,7 @@ $block: #{$fd-namespace}-asset-upload;
 
   &__input {
     @include fd-reset();
+
     height: 0;
     width: 0;
     overflow: hidden;
@@ -30,6 +32,7 @@ $block: #{$fd-namespace}-asset-upload;
 
   &__input + .#{$block}__label {
     @include fd-reset();
+
     background-color: var(--fd-color-neutral-1, fd-color("neutral", 1));
     border: 1px dashed var(--fd-color-neutral-4, fd-color("neutral", 4));
     text-align: center;
@@ -46,10 +49,13 @@ $block: #{$fd-namespace}-asset-upload;
 
   &__text {
     @include fd-reset();
+
     display: block;
     color: var(--fd-color-action-1, fd-color("action", 1));
+
     @include fd-icon("upload-to-cloud", "m");
-    margin-bottom: fd-space(.5);
+
+    margin-bottom: fd-space(0.5);
 
     &::before {
       display: block;

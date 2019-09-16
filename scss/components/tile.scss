@@ -10,6 +10,7 @@
         .fd-tile__actions+()
 */
 $block: #{$fd-namespace}-tile;
+
 .#{$block} {
   // VARS
   $fd-tile-color: fd-color("text", 3) !default;
@@ -21,11 +22,15 @@ $block: #{$fd-namespace}-tile;
   $fd-tile-box-shadow: 0 0 5px 0 rgba($fd-tile-color, 0.4) !default;
   // anim
   $fd-tile-transition-params: $fd-animation--speed ease-in !default;
+
   --fd-tile-color: var(--fd-color-text-3);
   --fd-tile-background-color: var(--fd-color-background-2);
   --fd-tile-title-color: var(--fd-color-text-1);
+
   @include fd-reset();
+
   display: flex;
+
   @include fd-var-color("color", $fd-tile-color, --fd-tile-color);
   @include fd-var-color("background-color", $fd-tile-background-color, --fd-tile-background-color);
 
@@ -37,7 +42,9 @@ $block: #{$fd-namespace}-tile;
   &--button,
   &[role="button"] {
     @include action-cursor();
+
     transition: box-shadow $fd-tile-transition-params;
+
     &:hover {
       box-shadow: $fd-tile-box-shadow;
       position: relative;
@@ -52,36 +59,46 @@ $block: #{$fd-namespace}-tile;
   // ELEMENTS
   &__media {
     @include fd-reset();
+
     padding: $fd-tile-content-padding-y 0 $fd-tile-content-padding-y $fd-tile-content-padding-x;
+
     @include fd-rtl() {
       padding-right: $fd-tile-content-padding-x;
       padding-left: 0;
     }
   }
+
   &__content {
     @include fd-reset();
+
     flex: 1;
-    padding: $fd-tile-content-padding-y $fd-tile-content-padding-x $fd-tile-content-padding-y
-      fd-space(3);
+    padding: $fd-tile-content-padding-y $fd-tile-content-padding-x $fd-tile-content-padding-y fd-space(3);
+
     @include fd-rtl() {
       padding-right: fd-space(3);
       padding-left: $fd-tile-content-padding-x;
     }
+
     align-self: center;
+
     &:first-child {
       padding-left: $fd-tile-content-padding-x;
+
       @include fd-rtl() {
         padding-right: $fd-tile-content-padding-x;
       }
     }
   }
+
   &__title {
     @include fd-type("0");
     @include fd-var-color("color", $fd-tile-title-color, --fd-tile-title-color);
     @include fd-reset-spacing();
   }
+
   &__actions {
     @include fd-reset();
+
     padding: fd-space(3) $fd-tile-content-padding-x fd-space(3) fd-space(3);
   }
 }

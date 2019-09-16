@@ -1,19 +1,23 @@
 @import "./../settings";
 @import "./../mixins";
 @import "./../functions";
+
 /*!
 .fd-layout-grid
 */
 
 $block: #{$fd-namespace}-layout-grid;
+
 .#{$block} {
   @include fd-reset();
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: var(--fd-width-gutter, $fd-width--gutter);
 
   &--no-gap {
     grid-gap: 0;
+
     & > * {
       box-shadow: none;
     }
@@ -21,6 +25,7 @@ $block: #{$fd-namespace}-layout-grid;
 
   &--gap-1 {
     grid-gap: 1px;
+
     & > * {
       box-shadow: none;
     }
@@ -32,8 +37,8 @@ $block: #{$fd-namespace}-layout-grid;
     }
   }
 
-  @each $n in 2,3,4,5,6 {
-    @each $direction in row,column {
+  @each $n in 2, 3, 4, 5, 6 {
+    @each $direction in row, column {
       &__span-#{$direction}-#{$n} {
         grid-#{$direction}: span #{$n};
       }

@@ -1,18 +1,22 @@
 @import "./../settings";
 @import "./../mixins";
 @import "./../functions";
+
 /*!
 
 .fd-form-item+(--inline)
 */
 $block: #{$fd-namespace}-form-item;
+
 .#{$block} {
   @include fd-reset();
+
   margin-bottom: fd-space("small");
 
   &--inline {
     float: left;
     margin-right: fd-space(4);
+
     @include fd-screen(s) {
       margin-bottom: 0;
     }
@@ -22,6 +26,7 @@ $block: #{$fd-namespace}-form-item;
       margin-right: 0;
       margin-left: fd-space(4);
     }
+
     .#{$fd-namespace}-form-message {
       transform: translateY(fd-space(2));
       margin-bottom: fd-space(2);

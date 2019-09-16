@@ -1,6 +1,7 @@
 @import "./../settings";
 @import "./../mixins";
 @import "./../functions";
+
 /*!
 .fd-spinner+(.is-hidden|[aria-hidden=true])
 
@@ -9,9 +10,11 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http://github.danielcar
 * Licensed under MIT
 */
 $block: #{$fd-namespace}-spinner;
+
 .#{$block} {
   // LOCAL VARS (set all themeable properties, always include !default)
   $fd-spinner-background-color: fd-color(action, 1) !default;
+
   --fd-spinner-background-color: var(--fd-color-action-1);
   $fd-spinner-height: 40px !default;
   $fd-spinner-width--bar: 5px !default;
@@ -40,13 +43,12 @@ $block: #{$fd-namespace}-spinner;
     .is-busy {
       position: relative;
       min-height: $_height;
+
       &::before {
         position: absolute;
-        @include fd-var-color(
-          "background-color",
-          fd-color("background", 1),
-          --fd-color-background-1
-        );
+
+        @include fd-var-color("background-color", fd-color("background", 1), --fd-color-background-1);
+
         opacity: $fd-spinner-backdrop-opacity;
         top: 0;
         right: 0;
@@ -55,6 +57,7 @@ $block: #{$fd-namespace}-spinner;
         z-index: map-get($fd-z-index-levels, "first");
         content: "";
       }
+
       .#{$block} {
         position: absolute;
         z-index: map-get($fd-z-index-levels, "second");
@@ -70,30 +73,26 @@ $block: #{$fd-namespace}-spinner;
     position: relative;
     width: $fd-spinner-width--bar;
     height: 100%;
-    @include fd-var-color(
-      "background-color",
-      $fd-spinner-background-color,
-      --fd-spinner-background-color
-    );
+
+    @include fd-var-color("background-color", $fd-spinner-background-color, --fd-spinner-background-color);
   }
   // 1
   &::before {
     animation: line-scale $fd-spinner-animation-speed infinite ease;
     animation-delay: -($fd-spinner-animation-speed);
   }
+
   .fd-spinner__body {
     @include fd-reset();
+
     &::before,
     &::after {
       content: "";
       position: absolute;
       width: $fd-spinner-width--bar;
       height: 100%;
-      @include fd-var-color(
-        "background-color",
-        $fd-spinner-background-color,
-        --fd-spinner-background-color
-      );
+
+      @include fd-var-color("background-color", $fd-spinner-background-color, --fd-spinner-background-color);
     }
     // 2
     &::before {
@@ -121,6 +120,7 @@ $block: #{$fd-namespace}-spinner;
   100% {
     transform: scaleY(0.4);
   }
+
   80% {
     transform: scaleY(1);
   }

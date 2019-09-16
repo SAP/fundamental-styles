@@ -1,16 +1,18 @@
 @import "./../settings";
 @import "./../mixins";
 @import "./../functions";
+
 /*!
 .fd-image+((--circle), (--s|--m|--l))
 */
 $block: #{$fd-namespace}-image;
+
 .#{$block} {
   // LOCAL VARS (set all themeable properties, always include !default)
   $fd-image-sizes: (
     s: 24px,
     m: 36px,
-    l: 48px,
+    l: 48px
   ) !default;
   $fd-image-border-radius: $fd-border-radius !default;
 
@@ -18,6 +20,7 @@ $block: #{$fd-namespace}-image;
   @at-root {
     [class*="#{$block}"] {
       @include fd-reset();
+
       display: inline-block;
       vertical-align: middle;
       background-repeat: no-repeat;

@@ -1,10 +1,12 @@
 @import "./../settings";
 @import "./../mixins";
 @import "./../functions";
+
 /*!
 .fd-identifier+((--circle), (--thumbnail), (--xxs|--xs|--s|--m|--l|--xl|--xxl))
 */
 $block: #{$fd-namespace}-identifier;
+
 .#{$block} {
   // LOCAL VARS (set all themeable properties, always include !default)
   $fd-const-ratio: 4px;
@@ -15,7 +17,7 @@ $block: #{$fd-namespace}-identifier;
     m: $fd-const-ratio * 12,
     l: $fd-const-ratio * 16,
     xl: $fd-const-ratio * 20,
-    xxl: $fd-const-ratio * 28,
+    xxl: $fd-const-ratio * 28
   ) !default;
   $fd-identifier-border-radius: $fd-border-radius !default;
   $fd-identifier-color: fd-color("text", 5) !default;
@@ -25,9 +27,12 @@ $block: #{$fd-namespace}-identifier;
   @at-root {
     [class*="#{$block}"] {
       @include fd-reset();
+
       --fd-identifier-color: var(--fd-color-text-5);
       --fd-identifier-background-color: var(--fd-color-status-4);
+
       @include fd-reset();
+
       display: inline-block;
       vertical-align: middle;
       text-align: center;
@@ -35,11 +40,8 @@ $block: #{$fd-namespace}-identifier;
       background-size: cover;
       background-position: 50%;
       border-radius: $fd-identifier-border-radius;
-      @include fd-var-color(
-        "background-color",
-        $fd-identifier-background-color,
-        --fd-identifier-background-color
-      );
+
+      @include fd-var-color("background-color", $fd-identifier-background-color, --fd-identifier-background-color);
       @include fd-var-color("color", $fd-identifier-color, --fd-identifier-color);
     }
   }
@@ -48,60 +50,79 @@ $block: #{$fd-namespace}-identifier;
   @each $size, $value in $fd-identifier-sizes {
     &.#{$block}--#{$size} {
       @include fd-reset-spacing();
+
       width: $value;
       height: $value;
       max-width: $value;
       max-height: $value;
       min-width: $value;
       min-height: $value;
+
       @if $size == xxs {
         @include fd-type("-1");
         @include fd-weight("normal");
+
         font-stretch: condensed;
+
         @include fd-icon-size("s") {
           line-height: $value;
         }
       }
+
       @if $size == xs {
         @include fd-type("-1");
         @include fd-weight("normal");
+
         font-stretch: condensed;
+
         @include fd-icon-size("s") {
           line-height: $value;
         }
       }
+
       @if $size == s {
         @include fd-type("-1");
         @include fd-weight("normal");
+
         font-stretch: condensed;
+
         @include fd-icon-size("m") {
           line-height: $value;
         }
       }
+
       @if $size == m {
         @include fd-type("0");
+
         @include fd-icon-size("l") {
           line-height: $value;
         }
       }
+
       @if $size == l {
         @include fd-type("2");
+
         @include fd-icon-size("xl") {
           line-height: $value;
         }
       }
+
       @if $size == xl {
         @include fd-type("2");
+
         @include fd-icon-size("xl") {
           line-height: $value;
         }
       }
+
       @if $size == xxl {
         @include fd-type("2");
+
         @include fd-icon-size("xl") {
           line-height: $value;
         }
       }
+
       line-height: $value;
     }
   }
@@ -117,6 +138,7 @@ $block: #{$fd-namespace}-identifier;
   // background
   &.#{$block}--transparent {
     --fd-identifier-background-color: transparent;
+
     @include fd-var-color("color", map-get($fd-colors-text, 1), --fd-color-text-1);
     @include fd-var-color("background-color", transparent);
   }

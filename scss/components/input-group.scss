@@ -8,12 +8,15 @@
 */
 
 $block: #{$fd-namespace}-input-group;
+
 .#{$block} {
   @include fd-reset();
+
   display: flex;
 
   > * {
     @include fd-reset-child-spacing();
+
     flex: 1 0 auto;
     width: auto;
     z-index: map-get($fd-z-index-levels, "first");
@@ -56,21 +59,26 @@ $block: #{$fd-namespace}-input-group;
 
   &__addon {
     @include fd-reset();
+
     flex: 0 0 auto;
     z-index: auto;
+
     @include fd-var-color("color", fd-color("text", 3), --fd-color-text-3);
+
     padding: 0 fd-space(3);
     border-style: solid;
     border-width: 1px;
+
     @include fd-var-color("border-color", $fd-forms-border-color, --fd-forms-border-color);
     @include fd-var-color("background-color", fd-color(neutral, 1), --fd-color-neutral-1);
+
     justify-content: center;
     display: flex;
     flex-direction: column;
     border-radius: $fd-border-radius;
 
     &--readonly {
-      opacity: .4;
+      opacity: 0.4;
     }
 
     &:first-child {
@@ -99,10 +107,12 @@ $block: #{$fd-namespace}-input-group;
 
       > * {
         @include fd-reset-child-spacing();
+
         height: 100%;
         max-height: 100%;
         border-style: solid;
         border-width: 1px;
+
         @include fd-var-color("border-color", $fd-forms-border-color, --fd-forms-border-color);
         @include fd-var-color("background-color", fd-color(neutral, 1), --fd-color-neutral-1);
       }

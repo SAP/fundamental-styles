@@ -1,6 +1,7 @@
 @import "./../settings";
 @import "./../mixins";
 @import "./../functions";
+
 /*!
 .fd-table
     thead
@@ -8,6 +9,7 @@
         tr+([aria-selected])
 */
 $block: #{$fd-namespace}-table;
+
 .#{$block} {
   // LOCAL VARS (set all themeable properties, always include !default)
   $fd-table-border-color: fd-color("neutral", 2) !default;
@@ -20,6 +22,7 @@ $block: #{$fd-namespace}-table;
   $fd-table-row-background-color--selected: fd-color-state("selected") !default;
 
   $fd-table-cell-spacing: $fd-width--gutter !default;
+
   --fd-table-cell-spacing: var(--fd-width-gutter);
 
   $fd-table-cell-padding: fd-space("s") !default;
@@ -38,34 +41,33 @@ $block: #{$fd-namespace}-table;
   // set all BLOCK reset and baseline styles
   @include fd-reset();
   @include fd-last-child();
+
   width: 100%;
   max-width: 100%;
   border-collapse: collapse;
   margin-bottom: $fd-margin-bottom;
-  @include fd-var-color(
-    "background-color",
-    $fd-table-background-color,
-    --fd-table-background-color
-  );
+
+  @include fd-var-color("background-color", $fd-table-background-color, --fd-table-background-color);
+
   border-style: solid;
   border-width: $fd-table-border-width;
+
   @include fd-var-color("border-color", $fd-table-border-color, --fd-table-border-color);
 
   &__row {
     transition: background-color $fd-table-transition-params;
+
     @include fd-hover() {
-      @include fd-var-color(
-        "background-color",
-        $fd-table-row-background-color--hover,
-        --fd-color-background-hover
-      );
+      @include fd-var-color("background-color", $fd-table-row-background-color--hover, --fd-color-background-hover);
     }
+
     @include fd-selected() {
       @include fd-var-color(
         "background-color",
         $fd-table-row-background-color--selected,
         --fd-color-background-selected
       );
+
       @include fd-hover() {
         @include fd-var-color(
           "background-color",
@@ -80,14 +82,11 @@ $block: #{$fd-namespace}-table;
     @include fd-reset();
     @include fd-type("-1");
     @include fd-var-color("color", $fd-table-header-color, --fd-table-header-color);
-    @include fd-var-color(
-      "background-color",
-      $fd-table-header-background-color,
-      --fd-table-header-background-color
-    );
+    @include fd-var-color("background-color", $fd-table-header-background-color, --fd-table-header-background-color);
 
     .#{$block}__row {
       border: none;
+
       &:hover {
         background-color: inherit;
       }
@@ -95,16 +94,15 @@ $block: #{$fd-namespace}-table;
 
     .#{$block}__cell {
       @include fd-var-color("color", $fd-table-header-color, --fd-table-header-color);
+
       border: none;
+
       @include fd-type("-1");
       @include fd-weight();
 
       &.#{$block}__fixed-cell {
-        @include fd-var-color(
-          "background-color",
-          $fd-table-sort-column-header-background-color,
-          --fd-color-neutral-2
-        );
+        @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
+
         left: 0;
         z-index: map-get($fd-z-index-levels, "second");
       }
@@ -112,11 +110,8 @@ $block: #{$fd-namespace}-table;
 
     .#{$block}__context-menu {
       &:hover {
-        @include fd-var-color(
-          "background-color",
-          $fd-table-sort-column-header-background-color,
-          --fd-color-neutral-2
-        );
+        @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
+
         cursor: pointer;
       }
     }
@@ -124,29 +119,40 @@ $block: #{$fd-namespace}-table;
 
   &__body {
     @include fd-reset();
+
     .#{$block}__row {
       border-style: solid;
       border-width: $fd-table-border-width;
+
       @include fd-var-color("border-color", $fd-table-border-color, --fd-table-border-color);
+
       border-left: none;
       border-right: none;
     }
+
     .#{$block}__cell {
       word-break: break-word;
     }
   }
+
   &__cell {
     @include fd-reset();
     @include fd-weight();
+
     text-align: left;
+
     --fd-table-cell-spacing: calc(var(--fd-width-gutter) / 2);
+
     @include fd-var-size("padding-left", $fd-table-cell-spacing/2, --fd-table-cell-spacing);
     @include fd-var-size("padding-right", $fd-table-cell-spacing/2, --fd-table-cell-spacing);
+
     padding-top: $fd-table-cell-padding;
     padding-bottom: $fd-table-cell-padding;
+
     &:first-child {
       @include fd-var-size("padding-left", $fd-width--gutter, --fd-width-gutter);
     }
+
     &:last-child {
       @include fd-var-size("padding-right", $fd-width--gutter, --fd-width-gutter);
     }
@@ -157,23 +163,17 @@ $block: #{$fd-namespace}-table;
     }
 
     &.#{$block}__fixed-cell {
-      @include fd-var-color(
-        "background-color",
-        $fd-table-fixed-column-cell-color,
-        --fd-color-background-2
-      );
+      @include fd-var-color("background-color", $fd-table-fixed-column-cell-color, --fd-color-background-2);
     }
   }
 
   &__sort-column {
     &:hover {
-      @include fd-var-color(
-        "background-color",
-        $fd-table-sort-column-header-background-color,
-        --fd-color-neutral-2
-      );
+      @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
+
       cursor: pointer;
     }
+
     &::after {
       content: "";
       width: $fd-table-sort-icon-size;
@@ -187,12 +187,9 @@ $block: #{$fd-namespace}-table;
     // these are the selected states, should be .is-selected, aria-selected=true
     &--asc,
     &--dsc {
-      @include fd-var-color(
-        "background-color",
-        $fd-table-sort-column-header-background-color,
-        --fd-color-neutral-2
-      );
+      @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
     }
+
     &--asc {
       &::after {
         background-image: url($fd-table-column-sort-icon--asc);
@@ -208,6 +205,7 @@ $block: #{$fd-namespace}-table;
 
   &__context-menu-label {
     display: block;
+
     &::after {
       content: "";
       width: $fd-table-sort-icon-size;
@@ -242,6 +240,7 @@ $block: #{$fd-namespace}-table;
 
   &--no-borders {
     @include fd-reset();
+
     border: none;
 
     .#{$block}__body {
@@ -254,11 +253,7 @@ $block: #{$fd-namespace}-table;
   &--striped {
     .#{$block}__body {
       .#{$block}__row:nth-child(even) {
-        @include fd-var-color(
-          "background-color",
-          fd-color-state("hover"),
-          --fd-color-background-hover
-        );
+        @include fd-var-color("background-color", fd-color-state("hover"), --fd-color-background-hover);
       }
     }
   }
@@ -268,11 +263,13 @@ $block: #{$fd-namespace}-table;
       text-align: right !important;
     }
   }
+
   &.#{$fd-namespace}-has-last-child-text-align-right {
     .#{$block}__cell:last-child {
       text-align: right !important;
     }
   }
+
   @each $i in 2, 3, 4, 5, 6, 7, 8, 9 {
     &.#{$fd-namespace}-has-nth-child-#{$i}-text-align-right {
       .#{$block}__cell:nth-child(#{$i}) {
