@@ -1,11 +1,9 @@
-//do not change import order
+// do not change import order
 @import "../scss/core/root";
 @import "../scss/settings";
 @import "../scss/fonts/72";
-
 @import "./icon";
 @import "./layout";
-
 @import "../scss/components/alert";
 @import "../scss/components/action-bar";
 @import "../scss/components/asset-upload";
@@ -50,7 +48,6 @@
 @import "../scss/components/spinner";
 @import "../scss/components/status-label";
 @import "../scss/components/table";
-@import "../scss/components/tabs";
 @import "../scss/components/tree";
 @import "../scss/components/tabs";
 @import "../scss/components/time";
