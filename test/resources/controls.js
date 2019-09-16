@@ -189,7 +189,7 @@
     });
 
     //indeterminate
-    const indeterminates = document.querySelectorAll("[indeterminate=true]");
+    const indeterminates = document.querySelectorAll("[indeterminate]");
     for (let i = 0; i < indeterminates.length; i++) {
       indeterminates[i].indeterminate = true;
     }

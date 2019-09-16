@@ -23,9 +23,9 @@
 
 
 {% set example %}
-  {{ radio(properties='checked') }}
-  {{ radio() }}
-  {{ radio() }}
+  {{ radio(properties='checked name="radioEx03"') }}
+  {{ radio(properties='name="radioEx03"') }}
+  {{ radio(properties='name="radioEx03"') }}
 {% endset %}
 
 {{ format(example) }}
@@ -33,6 +33,7 @@
 
 {% set example %}
   {{ radio(properties='disabled') }}
+  {{ radio(properties='checked disabled') }}
 {% endset %}
 
 {{ format(example) }}

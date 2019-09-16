@@ -4,8 +4,8 @@ id: date-picker
 keywords: date-picker
 sidebar: left-navigation-sidebar
 toc: false
-permalink: components/date-picker.html
-folder: components
+permalink: patterns/date-picker.html
+folder: patterns
 summary:
 ---
 
@@ -18,12 +18,12 @@ This component mostly relies on the CSS of other components and has very little 
 ## Default and Compact sizes
 
 {% capture default-date-picker %}
-<div class="fd-date-picker">
+<div class="fd-docs-date-picker">
 	<div class="fd-popover">
 		<div class="fd-popover__control">
-			<div class="fd-input-group fd-input-group--after">
-				<input class="fd-input" type="text" value="" placeholder="Pick a date">
-				<span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
+			<div class="fd-input-group">
+				<input class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
+				<span class="fd-input-group__addon fd-input-group__addon--button">
 				<button class="fd-popover__control fd-button--light sap-icon--calendar" aria-controls="Itcgq828" aria-expanded="false" aria-haspopup="true" aria-hidden="true"></button>
 				</span>
 			</div>
@@ -33,7 +33,7 @@ This component mostly relies on the CSS of other components and has very little 
 				<header class="fd-calendar__header">
 				<div class="fd-calendar__navigation">
 					<div class="fd-calendar__action">
-						<button class=" fd-button--light fd-button--standard  sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
+						<button class=" fd-button--light sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
 					</div>
 					<div class="fd-calendar__action">
 						<button class="fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="mGTGe998">September</button>
@@ -42,7 +42,7 @@ This component mostly relies on the CSS of other components and has very little 
 						<button class="fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="D8NDL125">2018</button>
 					</div>
 					<div class="fd-calendar__action">
-						<button class="fd-button--light fd-button--standard  sap-icon--slim-arrow-right" aria-label="Next"></button>
+						<button class="fd-button--light sap-icon--slim-arrow-right" aria-label="Next"></button>
 					</div>
 				</div>
 				</header>
@@ -201,12 +201,12 @@ This component mostly relies on the CSS of other components and has very little 
 
 <br>
 
-<div class="fd-date-picker">
+<div class="fd-docs-date-picker">
 	<div class="fd-popover">
 		<div class="fd-popover__control">
-			<div class="fd-input-group fd-input-group--after fd-input-group--compact">
-				<input type="text" value="" placeholder="Pick a date" class="fd-input fd-input--compact">
-				<span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
+			<div class="fd-input-group">
+				<input type="text" value="" placeholder="Pick a date" class="fd-input fd-input--compact fd-input-group__input">
+				<span class="fd-input-group__addon fd-input-group__addon--button">
 				<button class="fd-popover__control fd-button--light fd-button--compact sap-icon--calendar" aria-controls="Itcgq82" aria-expanded="false" aria-haspopup="true" aria-hidden="true"></button>
 				</span>
 			</div>
@@ -216,7 +216,7 @@ This component mostly relies on the CSS of other components and has very little 
 				<header class="fd-calendar__header">
 				<div class="fd-calendar__navigation">
 					<div class="fd-calendar__action">
-						<button class=" fd-button--light fd-button--standard  sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
+						<button class=" fd-button--light sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
 					</div>
 					<div class="fd-calendar__action">
 						<button class="fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="mGTGe998">September</button>
@@ -225,7 +225,7 @@ This component mostly relies on the CSS of other components and has very little 
 						<button class="fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="D8NDL125">2018</button>
 					</div>
 					<div class="fd-calendar__action">
-						<button class="fd-button--light fd-button--standard  sap-icon--slim-arrow-right" aria-label="Next"></button>
+						<button class="fd-button--light sap-icon--slim-arrow-right" aria-label="Next"></button>
 					</div>
 				</div>
 				</header>

@@ -37,6 +37,7 @@ $block: #{$fd-namespace}-side-nav;
     background-color: $fd-side-nav-background-color;
     min-width: $fd-side-nav-max-width;
     @include fd-reset();
+    overflow: auto;
 
     //ELEMENTS *******************************************
     &__group {
