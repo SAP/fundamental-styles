@@ -7,6 +7,7 @@
 
 @mixin fd-type($size: "0", $weight: "normal") {
   $list: map-get($fd-type, $size);
+
   font-size: fd-font-size($size);
   line-height: fd-line-height($size);
   // set weight

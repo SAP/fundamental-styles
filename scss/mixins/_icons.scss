@@ -6,6 +6,7 @@
   @include fd-icon-base($position);
   @include fd-icon-glyph($key, $position);
   @include fd-icon-size($size, $position);
+
   &::#{$position} {
     @content;
   }
@@ -33,6 +34,7 @@
 // animate mixin
 @mixin fd-icon-animate($type: "spin") {
   display: inline-block;
+
   @if $type == "spin" {
     animation: sap-icon-spin 2s infinite linear;
   } @else if $type == "pulse" {
@@ -50,6 +52,7 @@
       } @else {
         @warn "Unknown `#{$fd-icons-sizes}` in $fd-icons-sizes map";
       }
+
       line-height: 1;
     } @else {
       // implicity

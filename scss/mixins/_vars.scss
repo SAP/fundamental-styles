@@ -1,8 +1,10 @@
 @import "./../settings";
 @import "./../functions";
-@mixin fd-var-color($property, $value, $var:null, $important:false) {
+
+@mixin fd-var-color($property, $value, $var: null, $important: false) {
   #{$property}: var(#{$var}, #{$value});
 }
-@mixin fd-var-size($property, $value, $var:null) {
+
+@mixin fd-var-size($property, $value, $var: null) {
   #{$property}: var(#{$var}, #{$value});
 }

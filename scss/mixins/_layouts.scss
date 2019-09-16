@@ -1,18 +1,24 @@
 @mixin navlist($direction: horizontal) {
   list-style: none;
   padding: 0;
+
   [aria-selected="true"] {
     cursor: default;
   }
+
   a {
     color: inherit;
   }
+
   [aria-hidden="true"] {
     display: none;
   }
+
   @if $direction = horizontal {
     @include fd-clearfix();
+
     margin: 0;
+
     li {
       float: left;
     }
@@ -64,10 +70,7 @@ This will render 4 boxes spanning 2 cols each indented 2 cols
 
 */
 
-$flow_width_of_gutter: map-get(
-  $fd-spacing,
-  xxs
-); // Should match var(--fd-width-gutter) in root.scss
+$flow_width_of_gutter: map-get($fd-spacing, xxs); // Should match var(--fd-width-gutter) in root.scss
 
 // Apply to outer container
 @mixin fd-flow-box {
@@ -80,6 +83,7 @@ $flow_width_of_gutter: map-get(
   // set margin for gutter
   margin-right: $flow_width_of_gutter;
   margin-right: var(--fd-width-gutter);
+
   &:last-child {
     margin-right: 0;
   }
@@ -90,6 +94,7 @@ $flow_width_of_gutter: map-get(
     margin-right: 0;
     margin-left: $flow_width_of_gutter;
     margin-left: var(--fd-width-gutter);
+
     &:last-child {
       margin-left: 0;
     }
@@ -108,10 +113,11 @@ $flow_width_of_gutter: map-get(
   // #3 multiply col width by number of cols to span
   // #4 add back in gutter space for cols spanning multiple cols (e.g., 3 col spans over 2 gutters)
   width: calc((((100% - #{$gutter_width_total}) / #{$cols}) * #{$span}) + #{$gutter_width_spanned});
-  width: calc(
-    (((100% - (#{$num_of_gutters} * var(--fd-width-gutter))) / #{$cols}) * #{$span}) +
-    (var(--fd-width-gutter) * (#{$span} - 1))
-  );
+  width:
+    calc(
+      (((100% - (#{$num_of_gutters} * var(--fd-width-gutter))) / #{$cols}) * #{$span}) +
+      (var(--fd-width-gutter) * (#{$span} - 1))
+    );
 }
 
 // Indents content
@@ -123,21 +129,20 @@ $flow_width_of_gutter: map-get(
   // calc spanned gutter width
   $gutter_width_spanned: $flow_width_of_gutter * ($span);
 
-  margin-left: calc(
-    (((100% - #{$gutter_width_total}) / #{$cols}) * #{$span}) + #{$gutter_width_spanned}
-  );
-  margin-left: calc(
-    (((100% - (#{$num_of_gutters} * var(--fd-width-gutter))) / #{$cols}) * #{$span}) +
-    (var(--fd-width-gutter) * (#{$span}))
-  );
-  @include fd-rtl() {
-    margin-left: 0;
-    margin-right: calc(
-      (((100% - #{$gutter_width_total}) / #{$cols}) * #{$span}) + #{$gutter_width_spanned}
-    );
-    margin-right: calc(
+  margin-left: calc((((100% - #{$gutter_width_total}) / #{$cols}) * #{$span}) + #{$gutter_width_spanned});
+  margin-left:
+    calc(
       (((100% - (#{$num_of_gutters} * var(--fd-width-gutter))) / #{$cols}) * #{$span}) +
       (var(--fd-width-gutter) * (#{$span}))
     );
+
+  @include fd-rtl() {
+    margin-left: 0;
+    margin-right: calc((((100% - #{$gutter_width_total}) / #{$cols}) * #{$span}) + #{$gutter_width_spanned});
+    margin-right:
+      calc(
+        (((100% - (#{$num_of_gutters} * var(--fd-width-gutter))) / #{$cols}) * #{$span}) +
+        (var(--fd-width-gutter) * (#{$span}))
+      );
   }
 }
