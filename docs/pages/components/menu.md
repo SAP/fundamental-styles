@@ -19,13 +19,14 @@ Commonly used as the contents when composing "dropdowns", "contextual menus", et
 The basic stucture of a menu.
 
 {% capture default-menu %}
+
 <nav class="fd-menu">
-    <ul class="fd-menu__list">
-        <li><a href="#" class="fd-menu__item">Option 1 with very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long header</a></li>
-        <li><a href="#" class="fd-menu__item">Option 2</a></li>
-        <li><a href="#" class="fd-menu__item">Option 3</a></li>
-        <li><a href="#" class="fd-menu__item">Option 4</a></li>
-    </ul>
+        <ul class="fd-menu__list">
+            <li><a href="#" class="fd-menu__item">Option 1 with very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long header</a></li>
+            <li><a href="#" class="fd-menu__item">Option 2</a></li>
+            <li><a href="#" class="fd-menu__item">Option 3</a></li>
+            <li><a href="#" class="fd-menu__item">Option 4</a></li>
+        </ul>
 </nav>
 {% endcapture %}
 
