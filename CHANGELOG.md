@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.1-rc.6"></a>
+## [0.2.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.2.1-rc.5...v0.2.1-rc.6) (2019-09-17)
+
+
+### Bug Fixes
+
+* Input sizing in input groups ([#332](https://github.com/SAP/fundamental-styles/issues/332)) ([9ba839c](https://github.com/SAP/fundamental-styles/commit/9ba839c))
+
+
+
 <a name="0.2.1-rc.5"></a>
 ## [0.2.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.2.1-rc.4...v0.2.1-rc.5) (2019-09-17)
 
