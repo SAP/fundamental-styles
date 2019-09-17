@@ -66,7 +66,7 @@ $block: #{$fd-namespace}-table;
         &--error,
         &--information {
             border: none;
-            & .#{$block}__cell:first-child {
+            .#{$block}__cell:first-child {
                 position: relative;
                 &::before {
                     position: absolute;
@@ -92,7 +92,7 @@ $block: #{$fd-namespace}-table;
         }
         &--valid {
             @include fd-var-color("background-color", fd-color('background', 3), --fd-color-background-3);
-            & .#{$block}__cell:first-child {
+            .#{$block}__cell:first-child {
                 &::before {
                     @include fd-var-color("border-color", fd-color('status', 1), --fd-color-status-1);
                 }
@@ -100,7 +100,7 @@ $block: #{$fd-namespace}-table;
         }
         &--warning {
             @include fd-var-color("background-color", fd-color('background', 4), --fd-color-background-4);
-            & .#{$block}__cell:first-child {
+            .#{$block}__cell:first-child {
                 &::before {
                     @include fd-var-color("border-color", fd-color('status', 2), --fd-color-status-2);
                 }
@@ -108,7 +108,7 @@ $block: #{$fd-namespace}-table;
         }
         &--error {
             @include fd-var-color("background-color", fd-color('background', 5), --fd-color-background-5);
-            & .#{$block}__cell:first-child {
+            .#{$block}__cell:first-child {
                 &::before {
                     @include fd-var-color("border-color", fd-color('status', 3), --fd-color-status-3);
                 }
@@ -116,7 +116,7 @@ $block: #{$fd-namespace}-table;
         }
         &--information {
             @include fd-var-color("background-color", fd-color('background', 6), --fd-color-background-6);
-            & .#{$block}__cell:first-child {
+            .#{$block}__cell:first-child {
                 &::before {
                     @include fd-var-color("border-color", fd-color('status', 5), --fd-color-status-5);
                 }
@@ -194,7 +194,7 @@ $block: #{$fd-namespace}-table;
             text-align: left;
         }
 
-        &.#{$block}__fixed-cell {
+        .#{$block}__fixed-cell {
             @include fd-var-color("background-color", $fd-table-fixed-column-cell-color, --fd-color-background-2);
         }
 
