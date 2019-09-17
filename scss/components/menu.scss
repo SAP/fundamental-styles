@@ -1,0 +1,144 @@
+@import "./../settings";
+@import "./../mixins";
+@import "./../functions";
+
+
+$block: #{$fd-namespace}-menu;
+
+.#{$block} {
+    //LOCAL VARS (set all themeable properties, always include !default)
+
+    //group title
+    $fd-menu-title-color: fd-color("text", 3) !default;
+    $fd-menu-title-background-color: fd-color("neutral", 1) !default;
+    $fd-menu-title-padding: fd-space("tiny") !default;
+
+    //items
+    $fd-menu-item-color: fd-color("text", 2) !default;
+    $fd-menu-item-color--hover: $fd-color !default;
+    $fd-menu-item-background-color: map-get($fd-colors-background, 2) !default;
+    $fd-menu-item-background-color--hover: fd-color-state("hover") !default;
+    $fd-menu-item-background-color--selected: fd-color-state("selected") !default;
+
+    $fd-menu-item-padding-x: fd-space("regular") !default;
+    $fd-menu-item-padding-y: fd-space("tiny") + 2px !default;
+
+    $fd-menu-item-separator-color: fd-color("neutral", 2) !default;
+    --fd-menu-item-separator-color: var(--fd-color-neutral-2);
+
+    --fd-menu-item-color: var(--fd-color-text-2);
+    --fd-menu-item-background-color: var(--fd-color-background-2);
+    --fd-menu-title-color: var(--fd-color-text-3);
+    --fd-menu-title-background-color: var(--fd-color-neutral-1);
+
+    //BLOCK BASE *******************************************
+    //set all BLOCK reset and baseline styles
+    @include fd-reset();
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    padding-top: fd-space(base);
+    padding-bottom: fd-space(base);
+    &__group,
+    &__list {
+      @include fd-reset();
+      list-style: none;
+      margin-bottom: 0;
+    }
+    &__group {
+      padding-left: 0;
+    }
+    &__list {
+      @include fd-reset();
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      //modified with separator border
+      @at-root {
+        &--separated {
+          & > *,
+          .#{$block}__list > * {
+            border-top-style: solid;
+            border-top-width: 1px;
+            @include fd-var-color("border-top-color", $fd-menu-item-separator-color, --fd-menu-item-separator-color);
+            &:first-child {
+              border-top-width: 0;
+            }
+          }
+        }
+      }
+    }
+    &__title {
+      display: block;
+      margin-bottom: 0;
+      margin-top: 0;
+      padding: $fd-menu-title-padding $fd-menu-item-padding-x;
+      @include fd-type("-1", "normal");
+      text-transform: uppercase;
+      @include fd-var-color("color", $fd-menu-title-color, --fd-menu-title-color);
+      @include fd-var-color("background-color", $fd-menu-title-background-color, --fd-menu-title-background-color);
+    }
+    &__item { 
+      overflow: hidden;
+      text-overflow: ellipsis;
+      @include fd-reset();
+      display: block;
+      transition: all $fd-animation--speed ease-in;
+      @include action-cursor();
+      padding: $fd-menu-item-padding-y $fd-menu-item-padding-x; 
+      @include fd-var-color("background-color", $fd-menu-item-background-color, --fd-menu-item-background-color);
+      @include fd-var-color("color", $fd-menu-item-color, --fd-menu-item-color);
+      @include fd-weight("normal");
+      text-decoration: none;
+      > .fd-checkbox {
+        margin: 0 10px 0 0;
+      }
+      @include fd-hover() {
+        @include fd-var-color("color", $fd-menu-item-color--hover, --fd-color-text-1);
+        @include fd-var-color("background-color", $fd-menu-item-background-color--hover, --fd-color-background-hover);
+      }
+      @include fd-selected() {
+          @include fd-var-color("background-color", $fd-menu-item-background-color--selected, --fd-color-background-selected);
+          @include fd-hover() {
+            @include fd-var-color("background-color", fd-color-state("selected-hover"), --fd-color-background-selected-hover);
+          }
+      }
+      @include fd-active-pressed-selected() {
+        @include fd-var-color("color", fd-color-state("selected", "action"), --fd-color-action-selected);
+        outline: none;
+      }
+      &:focus {
+        outline-style: dotted;
+        outline-width: 1px;
+        @include fd-var-color("outline-color", fd-color-state("hover", "action"), --fd-color-action-focus);
+      }
+      @include fd-disabled() {
+        @include fd-var-color("outline-color", fd-color-state("disabled", "action"), --fd-color-action-disabled);
+        @include fd-var-color("color", $fd-forms-color--disabled, --fd-color-text-4);
+        cursor: not-allowed;
+        text-decoration: none;
+      }
+    }
+    &--addon-before { 
+        .fd-menu__item { 
+          padding-top: $fd-menu-item-padding-y;
+          padding-bottom: $fd-menu-item-padding-y;
+          padding-left: 2px;
+          padding-right: 0;
+        }
+    }
+    &__addon-before {
+      background-color: white;//added by moi
+        float: left;
+        clear: left;
+        @include fd-rtl() {
+          float: right;
+          clear: right;
+        }
+        height: 39px;//TODO get rid of hardcoded height
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+    }
+}
