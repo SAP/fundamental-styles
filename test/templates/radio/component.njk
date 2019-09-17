@@ -1,3 +1,6 @@
+{% import "./../utils.njk" as utils %}
+
 {% macro radio(properties="") -%}
-    <input type="radio" class="fd-radio" id="foo" name="radio" {{properties}}>
+    {%- set _id = utils.id() %}
+    <input type="radio" class="fd-radio" id="{{_id}}" {{properties}}>
 {%- endmacro %}

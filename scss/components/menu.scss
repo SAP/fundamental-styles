@@ -50,9 +50,6 @@ $block: #{$fd-namespace}-menu;
     }
     &__list {
       @include fd-reset();
-      & > * {
-        @include fd-reset();
-      }
       margin: 0;
       padding: 0;
       list-style: none;
@@ -90,6 +87,7 @@ $block: #{$fd-namespace}-menu;
       @include fd-var-color("background-color", $fd-menu-item-background-color, --fd-menu-item-background-color);
       @include fd-var-color("color", $fd-menu-item-color, --fd-menu-item-color);
       @include fd-weight("normal");
+      text-decoration: none;
       > .fd-checkbox {
         margin: 0 10px 0 0;
       }
@@ -114,7 +112,9 @@ $block: #{$fd-namespace}-menu;
       }
       @include fd-disabled() {
         @include fd-var-color("outline-color", fd-color-state("disabled", "action"), --fd-color-action-disabled);
+        @include fd-var-color("color", $fd-forms-color--disabled, --fd-color-text-4);
         cursor: not-allowed;
+        text-decoration: none;
       }
     }
     &--addon-before {

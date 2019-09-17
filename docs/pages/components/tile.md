@@ -73,7 +73,7 @@ The component is ideal for displaying collection data when a grid or list layout
     </div>
     <div class="fd-tile__content">
         <h3 class="fd-tile__title">Tile Title</h3>
-        <p>Tile Description</p>
+        <p class="fd-tile__text">Tile Description</p>
     </div>
 </div>
 {% endcapture %}
@@ -131,6 +131,7 @@ Add `role=button` to rendering a tile as a button
     <div class="fd-product-tile__media" style="background-image: url('{{site.baseurl}}/images/product-tile.jpg');"></div>
     <div class="fd-product-tile__content">
         <h3 class="fd-product-tile__title">Default Product Tile</h3>
+        <p class="fd-product-tile__text">Tile Description</p>
     </div>
 </div>
 

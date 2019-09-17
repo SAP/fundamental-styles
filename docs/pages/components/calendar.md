@@ -14,6 +14,8 @@ Commonly used as the contents of a popover when composing `date-picker`, rarely 
 The `.fd-calendar__item` container takes the majority of styling. The rest of the markup provides the structure and layout.
 Classes available for `.fd-calendar__item`. All are available to dates, months, and years.
 
+> Looking for Date Picker? From a style perspective, a date-picker is simply a composition of our existing calendar, input group and popover, but contains no new styles of its own. Therefore, we consider it a pattern. [See the date picker pattern here]({{site.baseurl}}/patterns/date-picker).
+
 <br>
 
 ## Modifiers

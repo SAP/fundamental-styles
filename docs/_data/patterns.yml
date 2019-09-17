@@ -6,8 +6,14 @@
     - title: Contextual Menu
       meta: contextual-menu
 
+    - title: Date Picker
+      meta: date-picker
+
     - title: Multi Input
       meta: multi-input
 
     - title: Search Input
       meta: search-input
+
+    - title: Time Picker
+      meta: time-picker

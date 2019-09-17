@@ -25,7 +25,7 @@ $block: #{$fd-namespace}-radio;
         transition: background-color $fd-forms-transition-params;
         background-color: transparent;
     }
-    &[checked] {
+    &:checked {
         @include fd-var-color("border-color", $fd-forms-border-color--check, --fd-color-action-3);
         &::after {
             @include fd-var-color("background-color", $fd-forms-border-color--check, --fd-color-action-3);
