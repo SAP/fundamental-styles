@@ -78,12 +78,14 @@ $block: #{$fd-namespace}-menu;
       @include fd-var-color("color", $fd-menu-title-color, --fd-menu-title-color);
       @include fd-var-color("background-color", $fd-menu-title-background-color, --fd-menu-title-background-color);
     }
-    &__item {
+    &__item { 
+      overflow: hidden;
+      text-overflow: ellipsis;
       @include fd-reset();
       display: block;
       transition: all $fd-animation--speed ease-in;
       @include action-cursor();
-      padding: $fd-menu-item-padding-y $fd-menu-item-padding-x;
+      padding: $fd-menu-item-padding-y $fd-menu-item-padding-x; 
       @include fd-var-color("background-color", $fd-menu-item-background-color, --fd-menu-item-background-color);
       @include fd-var-color("color", $fd-menu-item-color, --fd-menu-item-color);
       @include fd-weight("normal");
@@ -117,12 +119,16 @@ $block: #{$fd-namespace}-menu;
         text-decoration: none;
       }
     }
-    &--addon-before {
-        .fd-menu__item {
-            padding-left: fd-space(8);
+    &--addon-before { 
+        .fd-menu__item { 
+          padding-top: $fd-menu-item-padding-y;
+          padding-bottom: $fd-menu-item-padding-y;
+          padding-left: 2px;
+          padding-right: 0;
         }
     }
     &__addon-before {
+      background-color: white;//added by moi
         float: left;
         clear: left;
         @include fd-rtl() {

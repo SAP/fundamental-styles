@@ -85,7 +85,7 @@ This is an additional container that can be used for an icon or checkbox before 
     <ul class="fd-menu__list">
         <li>
             <div class="fd-menu__addon-before"></div>
-            <a href="#" class="fd-menu__item">Option 1</a>
+            <a href="#" class="fd-menu__item">Option 1 with very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long header</a>
         </li>
         <li>
             <div class="fd-menu__addon-before"><span class="sap-icon--accept"></span></div>
