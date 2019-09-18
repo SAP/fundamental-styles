@@ -24,9 +24,12 @@ toggle:
         <span class="fd-toggle__label fd-toggle__label--off">{{properties.offLabel}}</span>
     {%- endif -%}
     {%- if semantic =='true' -%}
-        <span class="fd-toggle__semantic--off sap-icon--decline"></span>
-        <span class="fd-toggle__semantic--on sap-icon--accept"></span>
+        <span class="fd-toggle__semantic--off">&&</span>
+        <span class="fd-toggle__semantic--on">&&</span>
     {%- endif -%}
     </span>
 </span>
+{%- if properties.inlineLabel -%}
+    <span class="test-label">{{properties.inlineLabel}}</span>
+{%- endif -%}
 {%- endmacro %}

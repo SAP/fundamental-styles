@@ -35,7 +35,6 @@ $block: #{$fd-namespace}-counter;
 
     @include fd-var-color("background-color", map-get($fd-colors-status, 3), --fd-counter-background-color);
 
-    position: absolute;
     transform: translate(-40%, -50%);
 
     @include fd-rtl() {

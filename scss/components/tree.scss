@@ -73,7 +73,6 @@ $block: #{$fd-namespace}-tree;
   }
 
   &__group {
-    // see addt'l group classes under __col--first below
     @include fd-reset();
 
     transition: opacity $fd-animation--speed linear;

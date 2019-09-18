@@ -14,6 +14,9 @@ The time component is used to select a time value.
 
 Multiple instances can be used in the `time-picker` to choose hours, minutes, seconds and period of the day. It will be rare to see this component used alone.
 
+> Looking for Time Picker? From a style perspective, a time-picker is simply a composition of our existing time, input group and popover, but contains no new styles of its own. Therefore, we consider it a pattern. [See the time picker pattern here]({{site.baseurl}}/patterns/time-picker).
+
+
 <br>
 
 ## With Values
@@ -22,46 +25,46 @@ Multiple instances can be used in the `time-picker` to choose hours, minutes, se
 <div class="fd-time">
   <div class="fd-time__item">
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-up-arrow"
+          <button class="fd-button--light sap-icon--navigation-up-arrow"
           aria-label="Increase hours" aria-controls="1610C873"></button>
       </div>
       <input class="fd-time__input fd-input" type="text" placeholder="hh" value="02" id="1610C873" aria-label="Hours"/>
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-down-arrow"
+          <button class="fd-button--light sap-icon--navigation-down-arrow"
           aria-label="Decrease hours" aria-controls="1610C873"></button>
       </div>
   </div>
 
   <div class="fd-time__item">
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-up-arrow"
+          <button class="fd-button--light sap-icon--navigation-up-arrow"
           aria-label="Increase minutes" aria-controls="DDlHR199"></button>
       </div>
       <input class="fd-time__input fd-input" type="text" placeholder="mm" value="34" id="DDlHR199" aria-label="Minutes"/>
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-down-arrow"
+          <button class="fd-button--light sap-icon--navigation-down-arrow"
           aria-label="Decrease minutes" aria-controls="DDlHR199"></button>
       </div>
   </div>
   <div class="fd-time__item">
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-up-arrow"
+          <button class="fd-button--light sap-icon--navigation-up-arrow"
           aria-label="Increase seconds" aria-controls="8CAnL947"></button>
       </div>
       <input class="fd-time__input fd-input" type="text" placeholder="ss" value="56" id="8CAnL947" aria-label="Seconds"/>
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-down-arrow"
+          <button class="fd-button--light sap-icon--navigation-down-arrow"
           aria-label="Decrease seconds" aria-controls="8CAnL947"></button>
       </div>
   </div>
   <div class="fd-time__item">
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-up-arrow"
+          <button class="fd-button--light sap-icon--navigation-up-arrow"
           aria-label="Increase period" aria-controls="sEWOL676"></button>
       </div>
       <input class="fd-time__input fd-input" type="text" placeholder="am" value="pm" id="sEWOL676" aria-label="Period"/>
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-down-arrow"
+          <button class="fd-button--light sap-icon--navigation-down-arrow"
           aria-label="Decrease period" aria-controls="sEWOL676"></button>
       </div>
   </div>
@@ -76,45 +79,45 @@ Multiple instances can be used in the `time-picker` to choose hours, minutes, se
 <div class="fd-time">
   <div class="fd-time__item">
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-up-arrow"
+          <button class="fd-button--light sap-icon--navigation-up-arrow"
           aria-label="Increase hours" aria-controls="HgDLk176"></button>
       </div>
       <input class="fd-time__input fd-input" type="text" placeholder="hh" value="" id="HgDLk176" aria-label="Hours"/>
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-down-arrow"
+          <button class="fd-button--light sap-icon--navigation-down-arrow"
           aria-label="Decrease hours" aria-controls="HgDLk176"></button>
       </div>
   </div>
   <div class="fd-time__item">
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-up-arrow"
+          <button class="fd-button--light sap-icon--navigation-up-arrow"
           aria-label="Increase minutes" aria-controls="CHeFH472"></button>
       </div>
       <input class="fd-time__input fd-input" type="text" placeholder="mm" value="" id="CHeFH472" aria-label="Minutes"/>
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-down-arrow"
+          <button class="fd-button--light sap-icon--navigation-down-arrow"
           aria-label="Decrease minutes" aria-controls="CHeFH472"></button>
       </div>
   </div>
   <div class="fd-time__item">
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-up-arrow"
+          <button class="fd-button--light sap-icon--navigation-up-arrow"
           aria-label="Increase seconds" aria-controls="qMPpb855"></button>
       </div>
       <input class="fd-time__input fd-input" type="text" placeholder="ss" value="" id="qMPpb855" aria-label="Seconds"/>
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-down-arrow"
+          <button class="fd-button--light sap-icon--navigation-down-arrow"
           aria-label="Decrease seconds" aria-controls="qMPpb855"></button>
       </div>
   </div>
   <div class="fd-time__item">
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-up-arrow"
+          <button class="fd-button--light sap-icon--navigation-up-arrow"
           aria-label="Increase period" aria-controls="VpUG6928"></button>
       </div>
       <input class="fd-time__input fd-input" type="text" placeholder="am" value="" id="VpUG6928" aria-label="Period"/>
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-down-arrow"
+          <button class="fd-button--light sap-icon--navigation-down-arrow"
           aria-label="Decrease period" aria-controls="VpUG6928"></button>
       </div>
   </div>
@@ -132,23 +135,23 @@ disabled when the first or last values are reached.
 <div class="fd-time">
   <div class="fd-time__item">
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-up-arrow"
+          <button class="fd-button--light sap-icon--navigation-up-arrow"
           aria-label="Increase hours" aria-controls="Rjap5115"></button>
       </div>
       <input class="fd-time__input fd-input" type="text" placeholder="hh" value="00" id="Rjap5115" aria-label="Hours"/>
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-down-arrow is-disabled"
+          <button class="fd-button--light sap-icon--navigation-down-arrow is-disabled"
           aria-label="Decrease hours" aria-controls="Rjap5115"></button>
       </div>
   </div>
   <div class="fd-time__item">
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-up-arrow is-disabled"
+          <button class="fd-button--light sap-icon--navigation-up-arrow is-disabled"
           aria-label="Increase minutes" aria-controls="VnVPz732"></button>
       </div>
       <input class="fd-time__input fd-input" type="text" placeholder="mm" value="59" id="VnVPz732" aria-label="Minutes"/>
       <div class="fd-time__control">
-          <button class="fd-button--light fd-button--xs sap-icon--navigation-down-arrow"
+          <button class="fd-button--light sap-icon--navigation-down-arrow"
           aria-label="Decrease minutes" aria-controls="VnVPz732"></button>
       </div>
   </div>

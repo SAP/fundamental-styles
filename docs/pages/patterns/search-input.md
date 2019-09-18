@@ -18,7 +18,7 @@ The search input component is an opinionated composition of the `input group`, `
         <div class="fd-popover__control">
             <div aria-label="Image label" aria-controls="F4GcX348bc" aria-expanded="false" aria-haspopup="true">
                 <div class="fd-input-group">
-                    <input type="text" class="fd-input" id="" value="Ba" placeholder="Select Fruit">
+                    <input type="text" class="fd-input fd-input-group__input" id="" value="Ba" placeholder="Select Fruit">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
                         <button class=" fd-button--light sap-icon--search"></button>
                     </span>
@@ -44,7 +44,7 @@ The search input component is an opinionated composition of the `input group`, `
         <div class="fd-popover__control">
             <div aria-label="Image label" aria-controls="F4GcX34b" aria-expanded="false" aria-haspopup="true">
                 <div class="fd-input-group">
-                    <input type="text" class="fd-input fd-input--compact" id="" value="Ba" placeholder="Select Fruit">
+                    <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" value="Ba" placeholder="Select Fruit">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
                         <button class="fd-button--compact fd-button--light sap-icon--search"></button>
                     </span>

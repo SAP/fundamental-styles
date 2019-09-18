@@ -2,6 +2,56 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.1-rc.8"></a>
+## [0.2.1-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.2.1-rc.7...v0.2.1-rc.8) (2019-09-18)
+
+
+
+<a name="0.2.1-rc.7"></a>
+## [0.2.1-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.2.1-rc.6...v0.2.1-rc.7) (2019-09-17)
+
+
+### Bug Fixes
+
+* table updates ([#195](https://github.com/SAP/fundamental-styles/issues/195)) ([19100ba](https://github.com/SAP/fundamental-styles/commit/19100ba))
+
+
+
+<a name="0.2.1-rc.6"></a>
+## [0.2.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.2.1-rc.5...v0.2.1-rc.6) (2019-09-17)
+
+
+### Bug Fixes
+
+* Input sizing in input groups ([#332](https://github.com/SAP/fundamental-styles/issues/332)) ([9ba839c](https://github.com/SAP/fundamental-styles/commit/9ba839c))
+
+
+
+<a name="0.2.1-rc.5"></a>
+## [0.2.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.2.1-rc.4...v0.2.1-rc.5) (2019-09-17)
+
+
+### Bug Fixes
+
+* toggle updates needed for implementation libraries ([#330](https://github.com/SAP/fundamental-styles/issues/330)) ([d675dc3](https://github.com/SAP/fundamental-styles/commit/d675dc3))
+
+
+
+<a name="0.2.1-rc.4"></a>
+## [0.2.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.2.1-rc.3...v0.2.1-rc.4) (2019-09-16)
+
+
+### Bug Fixes
+
+* self contained styles followup bug fixes ([#324](https://github.com/SAP/fundamental-styles/issues/324)) ([8484696](https://github.com/SAP/fundamental-styles/commit/8484696))
+
+
+
+<a name="0.2.1-rc.3"></a>
+## [0.2.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.2.1-rc.2...v0.2.1-rc.3) (2019-09-16)
+
+
+
 <a name="0.2.1-rc.2"></a>
 ## [0.2.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.2.1-rc.1...v0.2.1-rc.2) (2019-09-13)
 

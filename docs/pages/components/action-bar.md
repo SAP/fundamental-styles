@@ -20,7 +20,7 @@ The Action Bar is located at the top of the page and is used for the following:
 {% capture default-action-bar %}
 <div class="fd-action-bar">
     <div class="fd-action-bar__back">
-        <button class="fd-button--light fd-button--compact sap-icon--nav-back"></button>
+        <button class="fd-button fd-button--light fd-button--compact sap-icon--nav-back"></button>
     </div>
     <div class="fd-action-bar__header">
         <h3 class="fd-action-bar__title">
@@ -29,8 +29,8 @@ The Action Bar is located at the top of the page and is used for the following:
         <p class="fd-action-bar__description">Action bar Description </p>
     </div>
     <div class="fd-action-bar__actions">
-        <button class=" fd-button--primary fd-button--l">Button</button>
-        <button class=" fd-button--main fd-button--l">Button</button>
+        <button class="fd-button--primary">Button</button>
+        <button class="fd-button--emphasized">Button</button>
     </div>
 </div>
 {% endcapture %}
@@ -49,8 +49,8 @@ The Action Bar is located at the top of the page and is used for the following:
         <p class="fd-action-bar__description">Action bar Description </p>
     </div>
     <div class="fd-action-bar__actions">
-        <button class=" fd-button--primary fd-button--l">Button</button>
-        <button class=" fd-button--main fd-button--l">Button</button>
+        <button class=" fd-button--primary">Button</button>
+        <button class=" fd-button--emphasized">Button</button>
     </div>
 </div>
 {% endcapture %}

@@ -4,14 +4,14 @@ id: time-picker
 keywords: time picker
 sidebar: left-navigation-sidebar
 toc: false
-permalink: components/time-picker.html
-folder: components
+permalink: patterns/time-picker.html
+folder: patterns
 summary:
 ---
 
 The Time Picker is an opinionated component composed of an `input-group`, `popover`, and `time` components to create a time selection interaction.
 
-This component mostly relies on the CSS of other components and has very little CSS of its own.
+This component mostly relies on the CSS of other components and has no CSS of its own.
 {: .docs-intro}
 <br>
 
@@ -21,12 +21,12 @@ A basic example of a time picker.
 
 {% capture default-timepicker %}
 
-<div class="fd-time-picker">
+<div>
     <div class="fd-popover fd-popover--no-arrow">
         <div class="fd-popover__control">
-            <div class="fd-input-group fd-input-group--after">
-                <input type="text" class="fd-input" id="" placeholder="hh:mm am/pm">
-                <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
+            <div class="fd-input-group">
+                <input type="text" class="fd-input fd-input-group__input" id="" placeholder="hh:mm am/pm">
+                <span class="fd-input-group__addon fd-input-group__addon--button">
                     <button class="fd-button--light sap-icon--history fd-popover__control" aria-controls="rthHR811" aria-expanded="false" aria-haspopup="true"></button>
                 </span>
             </div>
@@ -76,12 +76,12 @@ A basic example of a time picker.
 
 <br>
 
-<div class="fd-time-picker">
+<div>
     <div class="fd-popover fd-popover--no-arrow">
         <div class="fd-popover__control">
-            <div class="fd-input-group fd-input-group--after fd-input-group--compact">
-                <input class="fd-input fd-input--compact" type="text" id="" placeholder="hh:mm am/pm">
-                <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button ">
+            <div class="fd-input-group">
+                <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="" placeholder="hh:mm am/pm">
+                <span class="fd-input-group__addon fd-input-group__addon--button">
                     <button class="fd-button--light fd-button--compact sap-icon--history fd-popover__control" aria-controls="bJuyJ846" aria-expanded="false" aria-haspopup="true"></button>
                 </span>
             </div>
@@ -131,3 +131,9 @@ A basic example of a time picker.
 {% endcapture %}
 
 {% include display-component.html component=default-timepicker %}
+
+<style>
+.fd-popover__body {
+    padding: 16px;
+    }
+</style>

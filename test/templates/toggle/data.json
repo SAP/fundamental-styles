@@ -1,10 +1,4 @@
 {
     "id": "toggle",
-    "name": "Toggle",
-    "properties": {},
-    "modifier": {
-        "block": []
-    },
-    "state": {},
-    "aria": {}
+    "name": "Toggle"
 }

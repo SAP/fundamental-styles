@@ -37,6 +37,8 @@ $block: #{$fd-namespace}-side-nav;
 
   @include fd-reset();
 
+  overflow: auto;
+
   // ELEMENTS *******************************************
   &__group {
     @include fd-reset();

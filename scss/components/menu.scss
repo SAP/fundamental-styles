@@ -55,10 +55,6 @@ $block: #{$fd-namespace}-menu;
   &__list {
     @include fd-reset();
 
-    & > * {
-      @include fd-reset();
-    }
-
     margin: 0;
     padding: 0;
     list-style: none;
@@ -107,6 +103,8 @@ $block: #{$fd-namespace}-menu;
     @include fd-var-color("background-color", $fd-menu-item-background-color, --fd-menu-item-background-color);
     @include fd-var-color("color", $fd-menu-item-color, --fd-menu-item-color);
     @include fd-weight("normal");
+
+    text-decoration: none;
 
     > .fd-checkbox {
       margin: 0 10px 0 0;
