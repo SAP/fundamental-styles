@@ -94,4 +94,19 @@
     {% endfor %}
 {% endfor %}
 
+
+{% set example %}
+
+<button class="fd-button fd-button--dropdown">Dropdown</button>
+<br>
+<button class="fd-button fd-button--compact fd-button--dropdown">Dropdown</button>
+<br>
+<button class="fd-button fd-button--dropdown full-width">Dropdown</button>
+<br>
+<button class="fd-button fd-button--dropdown full-width error">Dropdown</button>
+
+
+{% endset %}
+{{- format(example) -}}
+
 {% endblock %}

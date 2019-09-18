@@ -14,6 +14,7 @@ a.#{$block} {
   $fd-button-padding-x: fd-space("xs") !default;
   // anim
   $fd-button-transition-params: $fd-animation--speed ease-in !default;
+  $fd-dropdown-menu-item-transition-params: $fd-animation--speed ease-in !default;
 
   // BASE
   // set all reset and baseline block styles
@@ -575,6 +576,104 @@ a.#{$block} {
       --fd-button-background-color: var(--fd-color-status-3);
 
       @include fd-var-color("background-color", fd-color("status", 3), --fd-button-background-color);
+    }
+  }
+
+  &--dropdown {
+    @include fd-var-color("color", $fd-forms-color, --fd-color-text-1);
+    @include fd-var-color("border-color", $fd-forms-border-color, --fd-color-neutral-4);
+    @include fd-icon-base("after");
+    @include fd-icon-glyph("navigation-down-arrow","after") {
+      transition: transform $fd-dropdown-menu-item-transition-params;
+    }
+    margin-left: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    @include fd-disabled() {
+      cursor: not-allowed;
+    }
+
+    &::after {
+      @include fd-var-color("color", $fd-color--action, --fd-color-action-1);
+      width: $fd-forms-height;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top-right-radius: $fd-border-radius - 1;
+      border-bottom-right-radius: $fd-border-radius - 1;
+    }
+
+    @include fd-hover() {
+      @include fd-var-color("color", $fd-forms-color, --fd-color-text-1);
+      @include fd-var-color("background-color", $fd-forms-background-color, --fd-color-background-2);
+      @include fd-var-color("border-color", fd-color-state("hover", "action"), --fd-color-action-hover);
+      &::after {
+        @include fd-var-color("background-color", fd-color-state("hover", "background"),--fd-color-background-hover);
+      }
+      box-shadow: none;
+
+      @include fd-disabled() {
+        @include fd-var-color("color", $fd-forms-color, --fd-color-text-1);
+        @include fd-var-color("border-color", $fd-forms-border-color, --fd-color-neutral-4);
+        &::after {
+          @include fd-var-color("background-color", $fd-forms-background-color, --fd-color-background-2);
+        }
+      }
+    }
+
+    &:active,
+    &.is-active,
+    &[aria-expanded="true"] {
+        @include fd-var-color("color", $fd-forms-color, --fd-color-text-1);
+        @include fd-var-color("background-color", fd-color("background", 2), --fd-color-background-2);
+        box-shadow: 0 0 0 1px var(--fd-color-status-5, map-get($fd-colors-status, 5));
+
+        &::after {
+          @include fd-var-color("color",fd-color("background", 2), --fd-color-background-2);
+          @include fd-var-color("background-color", fd-color-state("hover", "action"), --fd-color-action-hover);
+        }
+    }
+
+    @include fd-rtl() {
+      &::after {
+          border-top-left-radius: $fd-border-radius - 1;
+          border-bottom-left-radius: $fd-border-radius - 1;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+      }
+      &:not(.fd-button--standard) {
+          &::after {
+              border-left: none;
+          }
+      }
+      &.fd-button {
+          padding-left: 0;
+          padding-right: fd-space("xs");
+      }
+    }
+
+    &.full-width {
+      width: 100%;
+    }
+
+    &.error {
+      @include fd-var-color("border-color", fd-color("status", 3), --fd-color-status-3);
+      @include fd-disabled() {
+        @include fd-var-color("color", $fd-forms-color, --fd-color-text-1);
+        @include fd-var-color("border-color", fd-color("status", 3), --fd-color-status-3);
+        &::after {
+          @include fd-var-color("background-color", $fd-forms-background-color, --fd-color-background-2);
+        }
+      }
+      &:active,
+      &.is-active,
+      &[aria-expanded="true"],
+      &:focus {
+        box-shadow: 0 0 0 1px var(--fd-color-status-3, map-get($fd-colors-status, 3));
+      }
     }
   }
 }

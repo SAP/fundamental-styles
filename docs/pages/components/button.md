@@ -204,3 +204,35 @@ Button with multiple actions
 </div>
 {% endcapture %}
 {% include display-component.html component=button-group-small %}
+
+
+## Dropdown Button
+
+
+{% capture button-group-small %}
+  <button class="fd-button fd-button--dropdown">Dropdown</button>
+  <br>
+   <button class="fd-button fd-button--compact fd-button--dropdown">Dropdown</button>
+  <br>
+  <button class="fd-button fd-button--dropdown" disabled>Dropdown</button>
+  <br>
+  <button class="fd-button fd-button--dropdown full-width">Dropdown</button>
+  <br>
+  <button class="fd-button fd-button--dropdown full-width error">Dropdown</button>
+  <br>
+  <button class="fd-button fd-button--dropdown full-width error" disabled>Dropdown</button>
+  <br>
+  <div dir="rtl">
+    <button class="fd-button fd-button--dropdown">Dropdown</button>
+  </div>
+  <br>
+  <div dir="rtl">
+    <button class="fd-button fd-button--dropdown full-width">Dropdown</button>
+  </div>
+  <br>
+  <div dir="rtl">
+    <button class="fd-button fd-button--dropdown full-width" disabled>Dropdown</button>
+  </div>
+ 
+{% endcapture %}
+{% include display-component.html component=button-group-small %}
