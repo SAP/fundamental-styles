@@ -49,6 +49,7 @@ $block: #{$fd-namespace}-action-bar;
     display: flex;
     align-items: baseline;
 
+    
     &__header {
         @include fd-reset();
         @include fd-type("0");
