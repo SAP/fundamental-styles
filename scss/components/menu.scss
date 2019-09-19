@@ -6,8 +6,8 @@
 $block: #{$fd-namespace}-menu;
 
 .#{$block} {
-    //LOCAL VARS (set all themeable properties, always include !default)
 
+    //LOCAL VARS (set all themeable properties, always include !default)
     //group title
     $fd-menu-title-color: fd-color("text", 3) !default;
     $fd-menu-title-background-color: fd-color("neutral", 1) !default;
@@ -39,6 +39,9 @@ $block: #{$fd-namespace}-menu;
     white-space: nowrap;
     padding-top: fd-space(base);
     padding-bottom: fd-space(base);
+    width: 100%;
+    display: table;
+    table-layout: fixed;
     &__group,
     &__list {
       @include fd-reset();
@@ -79,6 +82,8 @@ $block: #{$fd-namespace}-menu;
       @include fd-var-color("background-color", $fd-menu-title-background-color, --fd-menu-title-background-color);
     }
     &__item {
+      overflow: hidden;
+      text-overflow: ellipsis;
       @include fd-reset();
       display: block;
       transition: all $fd-animation--speed ease-in;
@@ -119,10 +124,14 @@ $block: #{$fd-namespace}-menu;
     }
     &--addon-before {
         .fd-menu__item {
-            padding-left: fd-space(8);
+          padding-top: $fd-menu-item-padding-y;
+          padding-bottom: $fd-menu-item-padding-y;
+          padding-left: 2px;
+          padding-right: 2px;
         }
     }
     &__addon-before {
+      background-color: white;
         float: left;
         clear: left;
         @include fd-rtl() {
