@@ -1,6 +1,7 @@
 @import "./../settings";
 @import "./../mixins";
 @import "./../functions";
+@import "./../core/root";
 
 $block: #{$fd-namespace}-notification;
 .#{$block} {
@@ -10,27 +11,28 @@ $block: #{$fd-namespace}-notification;
     $fd-notification-min-width-m: 320px !default;
     $fd-notification-width-s: 320px !default;
 
-    $fd-notification-background-color: var(--sapList_Background, $sapList_Background) !default;
-    $fd-notification-darken-background-color: $sapList_Background !default;
+    $fd-notification-background-color: var(--sapList_Background) !default;
 
-    $fd-notification-box-shadow: var(--sapContent_Shadow0, $sapContent_Shadow0) !default;
+    $fd-notification-box-shadow: var(--sapContent_Shadow0) !default;
 
     $fd-notification-border-radius: 0.25rem !default;
     $fd-notification-group-border-radius-first-child: 0.25rem 0.25rem 0 0 !default;
     $fd-notification-group-border-radius-last-child: 0 0 0.25rem 0.25rem !default;
 
-    $fd-notification-indicator-color-error: var(--sapErrorColor, $sapErrorColor) !default;
-    $fd-notification-indicator-color-warning: var(--sapWarningColor, $sapWarningColor) !default;
-    $fd-notification-indicator-color-success: var(--sapSuccessColor, $sapSuccessColor) !default;
-    $fd-notification-indicator-color-information: var(--sapInformationColor, $sapInformationColor) !default;
+    $fd-notification-indicator-color-error: var(--sapErrorColor) !default;
+    $fd-notification-indicator-color-warning: var(--sapWarningColor) !default;
+    $fd-notification-indicator-color-success: var(--sapSuccessColor) !default;
+    $fd-notification-indicator-color-information: var(--sapInformationColor) !default;
 
-    $fd-notification-indicator-border-color-error: var(--sapErrorBorderColor, $sapErrorBorderColor) !default;
-    $fd-notification-indicator-border-color-warning: var(--sapWarningBorderColor, $sapWarningBorderColor) !default;
-    $fd-notification-indicator-border-color-success: var(--sapSuccessBorderColor, $sapSuccessBorderColor) !default;
-    $fd-notification-indicator-border-color-information: var(--sapInformationBorderColor, $sapInformationBorderColor) !default;
+    $fd-notification-indicator-border-color-default: var(--sapNeutralBorderColor) !default;
+    $fd-notification-indicator-border-color-error: var(--sapErrorBorderColor) !default;
+    $fd-notification-indicator-border-color-warning: var(--sapWarningBorderColor) !default;
+    $fd-notification-indicator-border-color-success: var(--sapSuccessBorderColor) !default;
+    $fd-notification-indicator-border-color-information: var(--sapInformationBorderColor) !default;
 
-    $fd-notification-title-color: var(--sapGroup_TitleTextColor, $sapGroup_TitleTextColor) !default;
-    $fd-notification-content-text-color: var(--sapContent_LabelColor, $sapContent_LabelColor) !default;
+    $fd-notification-title-color: var(--sapGroup_TitleTextColor) !default;
+    $fd-notification-header-border-color: var(--sapPageHeader_BorderColor) !default;
+    $fd-notification-content-text-color: var(--sapContent_LabelColor) !default;
 
     // mixins
     @mixin fd-priority-indicator($type) {
@@ -47,13 +49,13 @@ $block: #{$fd-namespace}-notification;
     box-shadow: $fd-notification-box-shadow;
     border-radius: $fd-notification-border-radius;
     border-left: 0.375rem solid;
-    border-left-color: var(--sapNeutralBorderColor, $sapNeutralBorderColor);
+    border-left-color: $fd-notification-indicator-border-color-default;
     margin-bottom: 0.5rem;
 
     @include fd-rtl() {
         border-left: none;
         border-right: 0.375rem solid;
-        border-right-color: var(--sapNeutralBorderColor, $sapNeutralBorderColor);
+        border-right-color: $fd-notification-indicator-border-color-default;
     }
 
 
@@ -61,10 +63,11 @@ $block: #{$fd-namespace}-notification;
     &__header {
         @include fd-reset();
         display: flex;
-        box-shadow: inset 0 -0.0625rem var(--sapPageHeader_BorderColor, $sapPageHeader_BorderColor);
+        box-shadow: inset 0 -0.0625rem $fd-notification-header-border-color;
     }
 
     &__indicator {
+        @include fd-reset();
         &--error {
             @include fd-priority-indicator('error');
             color: $fd-notification-indicator-color-error;
@@ -255,7 +258,7 @@ $block: #{$fd-namespace}-notification;
             border-radius: 0;
 
             &:not(:first-child) {
-                background-color: darken($fd-notification-darken-background-color, 2);
+                // background-color: darken($fd-notification-background-color, 2);
                 .#{$block}__header {
                     box-shadow: none;
                 }
@@ -303,7 +306,6 @@ $block: #{$fd-namespace}-notification;
             &--success,
             &--warning,
             &--information {
-                @include fd-reset();
                 padding-top: 0.75rem;
                 padding-bottom: 0.75rem;
             }

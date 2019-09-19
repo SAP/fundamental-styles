@@ -24,7 +24,7 @@ module.exports = {
     sourcesContent: true,
     plugins: [
         postcssImport(),
-        postcssAddFallback({importFrom: 'dist/root.css'}), //replace with theme-designer variables
+        postcssAddFallback(), //adds backup css var: var(--providedVar, postCssAddFallbackVar)
         autoprefixer({
             cascade: true
         }),
@@ -33,8 +33,7 @@ module.exports = {
             level: 1
         }),
         postcssCustomProperties({
-            preserve: true,
-            importFrom: 'dist/root.css' //replace with theme-designer variables
+            preserve: true //adds ie11 backup for css variables
           }),
         minify,
         postcssBanner({
