@@ -212,8 +212,7 @@ Button with multiple actions
 {% include display-component.html component=button-group-small %}
 
 
-## Dropdown Button
-
+## Menu Button
 
 {% capture button-menu %}
 <button class="fd-button fd-button--menu">Action Button</button>

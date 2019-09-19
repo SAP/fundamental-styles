@@ -14,7 +14,6 @@ a.#{$block} {
   $fd-button-padding-x: fd-space("xs") !default;
   // anim
   $fd-button-transition-params: $fd-animation--speed ease-in !default;
-  $fd-dropdown-menu-item-transition-params: $fd-animation--speed ease-in !default;
 
   // BASE
   // set all reset and baseline block styles
@@ -579,11 +578,8 @@ a.#{$block} {
     }
   }
 
-  &--menu { 
-    @include fd-icon-base("after");
-    @include fd-icon-glyph("navigation-down-arrow","after") {
-      transition: transform $fd-dropdown-menu-item-transition-params;
-    }
+  &--menu {
+    @include fd-icon("navigation-down-arrow", "s", "after");
 
     &:empty {
       &::before {
