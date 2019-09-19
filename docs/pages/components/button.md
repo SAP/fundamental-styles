@@ -185,6 +185,12 @@ Button with multiple actions
   <button class="fd-button--emphasized fd-button--positive sap-icon--accept">Approve</button>
   <button class="fd-button--emphasized fd-button--negative sap-icon--decline">Reject</button>
   <br><br>
+  <button class="fd-button--emphasized fd-button--menu sap-icon--cart">Add to Cart</button>
+  <button class="fd-button fd-button--menu sap-icon--cart">Add to Cart</button>
+  <button class="fd-button--light fd-button--menu sap-icon--cart">Add to Cart</button>
+  <button class="fd-button--emphasized fd-button--positive fd-button--menu sap-icon--accept">Approve</button>
+  <button class="fd-button--emphasized fd-button--negative fd-button--menu sap-icon--decline">Reject</button>
+  <br><br>
   <button class="fd-button sap-icon--cart"></button>
   <button class="fd-button--light sap-icon--cart"></button>
   <button class="fd-button--standard sap-icon--filter"></button>
@@ -209,30 +215,32 @@ Button with multiple actions
 ## Dropdown Button
 
 
-{% capture button-group-small %}
-  <button class="fd-button fd-button--dropdown">Dropdown</button>
-  <br>
-   <button class="fd-button fd-button--compact fd-button--dropdown">Dropdown</button>
-  <br>
-  <button class="fd-button fd-button--dropdown" disabled>Dropdown</button>
-  <br>
-  <button class="fd-button fd-button--dropdown full-width">Dropdown</button>
-  <br>
-  <button class="fd-button fd-button--dropdown full-width error">Dropdown</button>
-  <br>
-  <button class="fd-button fd-button--dropdown full-width error" disabled>Dropdown</button>
-  <br>
-  <div dir="rtl">
-    <button class="fd-button fd-button--dropdown">Dropdown</button>
-  </div>
-  <br>
-  <div dir="rtl">
-    <button class="fd-button fd-button--dropdown full-width">Dropdown</button>
-  </div>
-  <br>
-  <div dir="rtl">
-    <button class="fd-button fd-button--dropdown full-width" disabled>Dropdown</button>
-  </div>
- 
+{% capture button-menu %}
+<button class="fd-button fd-button--menu">Action Button</button>
+<button class="fd-button--standard fd-button--menu">Standard Button</button>
+<button class="fd-button--positive fd-button--menu">Positive Button</button>
+<button class="fd-button--medium fd-button--menu">Medium Button</button>
+<button class="fd-button--negative fd-button--menu">Negative Button</button>
+<br><br>
+<button class="fd-button fd-button--menu" aria-disabled="true">Action Button</button>
+<button class="fd-button--standard fd-button--menu" aria-disabled="true">Standard Button</button>
+<button class="fd-button--positive fd-button--menu" aria-disabled="true">Positive Button</button>
+<button class="fd-button--medium fd-button--menu" aria-disabled="true">Medium Button</button>
+<button class="fd-button--negative fd-button--menu" aria-disabled="true">Negative Button</button>
+<br><br>
+<button class="fd-button--emphasized fd-button--menu sap-icon--cart">Add to Cart</button>
+<button class="fd-button fd-button--menu sap-icon--cart">Add to Cart</button>
+<button class="fd-button--light fd-button--menu sap-icon--cart">Add to Cart</button>
+<button class="fd-button--emphasized fd-button--menu fd-button--positive sap-icon--accept">Approve</button>
+<button class="fd-button--emphasized fd-button--negative fd-button--menu sap-icon--decline">Reject</button>
+<br><br>
+<button class="fd-button fd-button--menu sap-icon--cart"></button>
+<button class="fd-button--light fd-button--menu sap-icon--cart"></button>
+<button class="fd-button--standard fd-button--menu sap-icon--filter"></button>
+<button class="fd-button--emphasized fd-button--menu fd-button--positive sap-icon--accept"></button>
+<button class="fd-button--emphasized fd-button--menu fd-button--negative sap-icon--decline"></button>
+<br><br>
+<button class="fd-button fd-button--menu">Default</button>
+<button class="fd-button--compact fd-button--menu">Compact</button>
 {% endcapture %}
-{% include display-component.html component=button-group-small %}
+{% include display-component.html component=button-menu %}
