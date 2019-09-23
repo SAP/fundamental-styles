@@ -1,2 +1,37 @@
-@import "../scss/components/nav";
-@import "../scss/fonts/72";
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+/*!
+.fd-nav+(--vertical)
+    .fd-nav__item
+    .fd-nav__link+((.is-selected|[aria-selected=true]),(.is-disabled|[aria-disabled=true]))
+*/
+$block: #{$fd-namespace}-nav;
+.#{$block} {
+  $fd-nav-link-padding-x: fd-space("small") !default;
+  $fd-nav-link-padding-y: fd-space(3) !default;
+
+  $fd-nav-margin-bottom: 0 !default;
+  @include fd-reset();
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: $fd-nav-margin-bottom;
+  list-style: none;
+  //MODIFIERS *******************************************
+  &--vertical {
+    flex-direction: column;
+  }
+  &__item {
+    @include fd-reset();
+  }
+  &__link {
+    @include fd-reset();
+    @include fd-var-color("color", fd-color(action, 1), --fd-color-action-1);
+    display: block;
+    padding: $fd-nav-link-padding-y $fd-nav-link-padding-x;
+    @include fd-selected() {
+      @include fd-var-color("color", fd-color(text, 1), --fd-color-text-1);
+    }
+  }
+}

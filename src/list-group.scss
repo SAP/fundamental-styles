@@ -1,2 +1,48 @@
-@import "../scss/components/list-group";
-@import "../scss/fonts/72";
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+/*!
+.fd-list-group
+  .fd-list-group__item
+      .fd-list-group__action
+*/
+$block: #{$fd-namespace}-list-group;
+.#{$block} {
+  //LOCAL VARS (set all vars used in component, always include !default)
+  $fd-list-group-background-color: transparent !default;
+  $fd-list-group-background-color--hover: fd-color-state("hover") !default;
+  $fd-list-group-item-padding-x: fd-space(4) !default;
+  $fd-list-group-item-padding-y: fd-space(2) + 2px !default;
+  $fd-list-group-action-height: fd-space(10) !default;
+  $fd-list-group-transition-params: $fd-animation--speed ease-in !default;
+
+  --fd-list-group-background-color: transparent;
+
+  @include fd-reset();
+  margin-left: 0;
+  &__item {
+    @include fd-reset();
+    list-style: none;
+    padding: $fd-list-group-item-padding-y $fd-list-group-item-padding-x;
+    display: flex;
+    position: relative;
+    @include fd-var-color("background-color", $fd-list-group-background-color, --fd-list-group-background-color);
+    transition: background-color $fd-list-group-transition-params;
+    &:hover {
+      --fd-list-group-background-color: var(--fd-color-background-hover);
+      @include fd-var-color("background-color", $fd-list-group-background-color--hover, --fd-color-background-hover);
+    }
+  }
+  &__action {
+    @include fd-reset();
+    flex: 1;
+    text-align: right;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    max-height: $fd-list-group-action-height;
+    padding-top: 0;
+    top: -($fd-list-group-item-padding-y);
+    margin-bottom: -($fd-list-group-item-padding-y * 2);
+  }
+}

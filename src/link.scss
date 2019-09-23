@@ -1,2 +1,13 @@
-@import "../scss/components/link";
-@import "../scss/fonts/72";
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+/*!
+.fd-link
+*/
+$block: #{$fd-namespace}-link;
+
+.#{$block} {
+  @include fd-reset();
+  @include fd-link();
+}

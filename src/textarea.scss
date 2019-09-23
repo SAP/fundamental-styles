@@ -1,2 +1,17 @@
-@import "../scss/components/textarea";
-@import "../scss/fonts/72";
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+/*!
+.fd-textarea
+*/
+$block: #{$fd-namespace}-textarea;
+.#{$block} {
+    @include fd-form-text();
+    height: 72px;
+    width: 100%;
+    padding-top: $fd-forms-padding;
+    &--compact {
+        height: 56px;
+        padding-top: $fd-forms-padding;
+    }
+}

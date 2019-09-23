@@ -1,3 +1,173 @@
-@import "../scss/components/side-nav";
-@import "../scss/icons/icon";
-@import "../scss/fonts/72";
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+/*!
+.fd-side-nav
+    .fd-side-nav__group
+        .fd-side-nav__title
+        .fd-side-nav__list
+            .fd-side-nav__item
+                .fd-side-nav__link (.has-child, .is-active, .is-expanded)
+                .fd-side-nav__sublist
+                    .fd-side-nav__subitem
+                    .fd-side-nav__sublink (.is-active)
+*/
+
+$block: #{$fd-namespace}-side-nav;
+
+.#{$block} {
+
+    //LOCAL VARS
+    $fd-side-nav-text-size: fd-type("1");
+    $fd-side-nav-background-color: fd-color("background", 2);
+    $fd-side-nav-selected-background-color: rgba(fd-color("action", 1), 0.07);
+    $fd-side-nav-hover-background-color: fd-color("neutral", 1);
+    $fd-side-nav-link-color: fd-color("text", 2);
+    $fd-side-nav-max-width: 249px;
+    $fd-side-nav-link-padding: fd-space(2.5) fd-space(8.75) fd-space(2.5) fd-space(5);
+    $fd-side-nav-title-padding: fd-space(2) fd-space(5);
+    $fd-side-nav-icon-right-padding: fd-space(2.5);
+    $fd-side-nav-link-disabled-color: fd-color("text", 3);
+    $fd-side-nav-title-background-color: fd-color("neutral", 1);
+
+
+    //BLOCK BASE *******************************************
+
+    background-color: $fd-side-nav-background-color;
+    min-width: $fd-side-nav-max-width;
+    @include fd-reset();
+    overflow: auto;
+
+    //ELEMENTS *******************************************
+    &__group {
+        @include fd-reset();
+        list-style: none;
+        margin-bottom: 0;
+    }
+
+    &__title {
+        @include fd-reset();
+        display: block;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: $fd-side-nav-title-padding;
+        @include fd-type("-1", "normal");
+        text-transform: uppercase;
+        color: $fd-side-nav-link-disabled-color;
+        background: $fd-side-nav-title-background-color;
+    }
+
+    &__list,
+    &__sublist {
+        @include fd-reset();
+        @include fd-reset-spacing();
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        flex-direction: column;
+    }
+
+    &__sublist {
+        &[aria-hidden="true"] {
+            display: none;
+        }
+    }
+
+    &__item,
+    &__subitem {
+        @include fd-reset();
+    }
+
+    &__link,
+    &__sublink {
+        @include fd-reset();
+        display: flex;
+        padding: $fd-side-nav-link-padding;
+        color: $fd-side-nav-link-color;
+        text-decoration: none;
+        @include fd-type("0", "normal");
+
+        //STATES *******************************************
+
+        &:hover {
+            background-color: $fd-side-nav-hover-background-color;
+            @include fd-var-color("color", fd-color-state("hover", "action"), --fd-color-action-hover);
+        }
+        &.is-selected,
+        &.is-expanded,
+        &[aria-selected="true"],
+        &[aria-expanded="true"] {
+            color: $fd-side-nav-link-color;
+            background-color: $fd-side-nav-selected-background-color;
+            @include fd-weight("bold");
+        }
+
+
+        &.is-disabled,
+        &[aria-disabled="true"] {
+            color: $fd-side-nav-link-disabled-color;
+        }
+    }
+
+    &__link {
+        //STATES *******************************************
+        &.has-child {
+            background-image: url(#{$fd-down-arrow-icon});
+            background-repeat: no-repeat;
+            background-position: right 14px top 15px;
+        }
+
+        &.is-expanded,
+        &[aria-expanded="true"] {
+            background-image: url(#{$fd-forms-select-background-image--expanded});
+        }
+    }
+
+    &__sublink {
+        font-weight: normal;
+        padding-left: fd-space(5) * 2;
+        &[aria-hidden="true"] {
+            display: none;
+        }
+    }
+
+    &__icon {
+        padding-right: $fd-side-nav-icon-right-padding;
+        margin-top: -1px;
+
+        &.sap-icon--s {
+            margin-top: 0;
+        }
+
+        &.sap-icon--m {
+            margin-top: 0;
+        }
+
+        &.sap-icon--l {
+            margin-top: -2px;
+        }
+
+        &.sap-icon--xl {
+            margin-top: -4px;
+        }
+    }
+
+    &--icons {
+        min-width: auto;
+
+        .#{$block} {
+            &__link,
+            &__sublink {
+                padding: fd-space(2.5) fd-space(5);
+                justify-content: center;
+            }
+
+            &__icon {
+                padding-right: 0;
+            }
+        }
+    }
+}

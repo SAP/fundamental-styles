@@ -1,2 +1,19 @@
-@import "../scss/components/multi-input";
-@import "../scss/fonts/72";
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+/*!
+.fd-multi-input
+*/
+$block: #{$fd-namespace}-multi-input;
+
+.#{$block} {
+  @include fd-reset();
+  &-field {
+    @include fd-reset();
+    margin: 0 0 10px 0;
+  }
+  &-tokens {
+    @include fd-reset();
+  }
+}
