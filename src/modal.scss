@@ -18,20 +18,25 @@ $block: #{$fd-namespace}-modal;
   // this can be improved with a flex or grid solution
   $fd-modal-header-height: 60px !default;
   $fd-modal-footer-height: 68px !default;
+
   --fd-modal-background-color: var(--fd-color-background-2);
   --fd-modal-border-color: var(--fd-color-neutral-2);
   $fd-modal-border-color: fd-color("neutral", 2) !default;
   $fd-modal-padding-x: $fd-width--gutter !default;
+
   --fd-modal-padding-x: var(--fd-width-gutter);
   $fd-modal-padding-y: fd-space(4) !default;
   $fd-modal-inner-content-background: fd-color("background", 2) !default;
 
   @include fd-reset();
+
   max-width: $fd-modal-width;
 
   &__content {
     @include fd-reset();
+
     border-radius: $fd-border-radius;
+
     @include fd-var-color("background-color", $fd-modal-inner-content-background, --fd-modal-background-color);
   }
 
@@ -41,6 +46,7 @@ $block: #{$fd-namespace}-modal;
     @include fd-reset();
     @include fd-var-size("padding-left", $fd-modal-padding-x, --fd-modal-padding-x);
     @include fd-var-size("padding-right", $fd-modal-padding-x, --fd-modal-padding-x);
+
     padding-top: $fd-modal-padding-y;
     padding-bottom: $fd-modal-padding-y;
   }
@@ -49,14 +55,17 @@ $block: #{$fd-namespace}-modal;
     position: relative;
     border-bottom-style: solid;
     border-bottom-width: 1px;
+
     @include fd-var-color("border-bottom-color", $fd-modal-border-color, --fd-modal-border-color);
   }
 
   &__title {
     @include fd-heading();
     @include fd-type("1");
+
     margin-bottom: 0;
     padding-right: fd-space(9);
+
     @include fd-rtl() {
       padding-left: fd-space(9);
       padding-right: 0;
@@ -66,10 +75,12 @@ $block: #{$fd-namespace}-modal;
   &__close {
     position: absolute;
     right: fd-space(2);
+
     @include fd-rtl() {
       left: fd-space(2);
       right: auto;
     }
+
     top: fd-space(2);
     width: fd-space(9);
     height: fd-space(9);
@@ -90,11 +101,14 @@ $block: #{$fd-namespace}-modal;
 
   &__footer {
     text-align: right;
+
     @include fd-rtl() {
       text-align: left;
     }
+
     border-top-style: solid;
     border-top-width: 1px;
+
     @include fd-var-color("border-top-color", $fd-modal-border-color, --fd-modal-border-color);
   }
 }

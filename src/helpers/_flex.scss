@@ -3,9 +3,10 @@
 
 @each $type in (flex-start flex-end center baseline stretch) {
   .#{$fd-namespace}-has-align-items-#{$type} {
-      align-items: #{$type} !important;
+    align-items: #{$type} !important;
   }
 }
+
 .#{$fd-namespace}-has-flex-grow-1 {
-    flex-grow: 1 !important;
+  flex-grow: 1 !important;
 }

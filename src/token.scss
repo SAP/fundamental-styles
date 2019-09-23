@@ -2,7 +2,6 @@
 @import "./mixins";
 @import "./functions";
 
-
 /*!
 .fd-token+(--no-border)
     .fd-token__content+()
@@ -11,50 +10,58 @@
 $block: #{$fd-namespace}-token;
 
 .#{$block} {
-    //LOCAL VARS (set all themeable properties, always include !default)
-    $fd-token-border-color: fd-color("neutral", 3) !default;
-    $fd-token-color: fd-color("text", 2) !default;
-    $fd-token-background-color: fd-color("neutral", 1) !default;
-    --fd-token-color: var(--fd-color-text-2);
-    --fd-token-background-color: var(--fd-color-neutral-1);
-    --fd-token-border-color: var(--fd-color-neutral-3);
+  // LOCAL VARS (set all themeable properties, always include !default)
+  $fd-token-border-color: fd-color("neutral", 3) !default;
+  $fd-token-color: fd-color("text", 2) !default;
+  $fd-token-background-color: fd-color("neutral", 1) !default;
 
-    @include fd-reset();
-    @include fd-type("-1");
-    @include fd-var-color("color", $fd-token-color, --fd-token-color);
-    @include fd-var-color("background-color", $fd-token-background-color, --fd-token-background-color);
+  --fd-token-color: var(--fd-color-text-2);
+  --fd-token-background-color: var(--fd-color-neutral-1);
+  --fd-token-border-color: var(--fd-color-neutral-3);
+
+  @include fd-reset();
+  @include fd-type("-1");
+  @include fd-var-color("color", $fd-token-color, --fd-token-color);
+  @include fd-var-color("background-color", $fd-token-background-color, --fd-token-background-color);
+
+  line-height: fd-space(6);
+  vertical-align: middle;
+  display: inline-block;
+  padding-left: fd-space(2);
+  padding-right: fd-space(2);
+  border-radius: $fd-border-radius;
+  border-width: 1px;
+  border-style: solid;
+
+  @include fd-var-color("border-color", $fd-token-border-color, --fd-token-border-color);
+
+  @include fd-icon("decline", "s", "after") {
+    @include fd-var-color("color", fd-color("action", 1), --fd-color-action-1);
+
+    margin-left: fd-space(tiny);
+    vertical-align: bottom;
     line-height: fd-space(6);
-    vertical-align: middle;
-    display: inline-block;
-    padding-left: fd-space(2);
-    padding-right: fd-space(2);
-    border-radius: $fd-border-radius;
-    border-width: 1px;
-    border-style: solid;
-    @include fd-var-color("border-color", $fd-token-border-color, --fd-token-border-color);
-    @include fd-icon("decline", "s", "after") {
-        @include fd-var-color("color", fd-color("action", 1), --fd-color-action-1);
-        margin-left: fd-space(tiny);
-        vertical-align: bottom;
-        line-height: fd-space(6);
-        cursor: pointer;
-    }
-    @include fd-rtl() {
-        @include fd-icon("decline", "s", "before") {
-            @include fd-var-color("color", fd-color("action", 1), --fd-color-action-1);
-            margin-left: fd-space(tiny);
-            vertical-align: bottom;
-            line-height: fd-space(6);
-            cursor: pointer;
-        }
+    cursor: pointer;
+  }
 
-        &::before {
-            display: inline;
-            margin-left: 0;
-            margin-right: fd-space(tiny);
-        }
-        &::after {
-            content: none;
-        }
+  @include fd-rtl() {
+    @include fd-icon("decline", "s", "before") {
+      @include fd-var-color("color", fd-color("action", 1), --fd-color-action-1);
+
+      margin-left: fd-space(tiny);
+      vertical-align: bottom;
+      line-height: fd-space(6);
+      cursor: pointer;
     }
+
+    &::before {
+      display: inline;
+      margin-left: 0;
+      margin-right: fd-space(tiny);
+    }
+
+    &::after {
+      content: none;
+    }
+  }
 }

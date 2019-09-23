@@ -1,7 +1,6 @@
 @import "../settings";
 
 @mixin fd-menu() {
-
   $fd-menu-item-color: fd-color("text", 2) !default;
   $fd-menu-item-background-color--hover: fd-color-state("hover") !default;
   $fd-menu-item-background-color--selected: fd-color-state("selected") !default;
@@ -16,27 +15,33 @@
     list-style: none;
     margin-bottom: 0;
   }
+
   &__title {
     display: block;
     margin-bottom: 0;
     padding: $fd-menu-title-padding $fd-menu-item-padding-x;
+
     @include fd-type("-1");
+
     text-transform: uppercase;
     color: $fd-menu-title-color;
     background: $fd-menu-title-background-color;
   }
+
   &__item {
     display: block;
     padding: $fd-menu-item-padding-y $fd-menu-item-padding-x;
     color: $fd-menu-item-color;
+
     &:hover {
       color: $fd-menu-item-color;
       background-color: $fd-menu-item-background-color--hover;
     }
+
     &.is-selected,
     &[aria-selected="true"] {
-        color: $fd-menu-item-color;
-        background-color: $fd-menu-item-background-color--selected;
+      color: $fd-menu-item-color;
+      background-color: $fd-menu-item-background-color--selected;
     }
   }
   @content;

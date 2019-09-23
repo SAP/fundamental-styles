@@ -3,104 +3,64 @@
 $fd-scss-icons-path: "./icons/" !default;
 
 @if variable-exists(fd-icons-path) {
-    $fd-scss-icons-path: $fd-icons-path ;
+  $fd-scss-icons-path: $fd-icons-path;
 }
 
 @font-face {
-    font-family: "FundamentalIcons";
-    src: url("#{$fd-scss-icons-path}FundamentalIcons.woff2") format("woff2"),
-        url("#{$fd-scss-icons-path}FundamentalIcons.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "FundamentalIcons";
+  src:
+    url("#{$fd-scss-icons-path}FundamentalIcons.woff2") format("woff2"),
+    url("#{$fd-scss-icons-path}FundamentalIcons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-//icon map
+// icon map
 $fd-icons: (
-
-    add: "\ea01",
-
-    arrow: "\ea02",
-
-    backarrow: "\ea03",
-
-    caution: "\ea04",
-
-    change: "\ea05",
-
-    checked: "\ea06",
-
-    chevron: "\ea07",
-
-    clone: "\ea08",
-
-    close: "\ea09",
-
-    collapse: "\ea0a",
-
-    delete: "\ea0b",
-
-    done: "\ea0c",
-
-    doublechevron: "\ea0d",
-
-    dragdroplist: "\ea0e",
-
-    dragdropobject: "\ea0f",
-
-    edit: "\ea10",
-
-    expand: "\ea11",
-
-    feedback: "\ea12",
-
-    filter: "\ea13",
-
-    filterremove: "\ea14",
-
-    grid: "\ea15",
-
-    help: "\ea16",
-
-    infoon: "\ea17",
-
-    link: "\ea18",
-
-    list: "\ea19",
-
-    localization: "\ea1a",
-
-    lock: "\ea1b",
-
-    maximize: "\ea1c",
-
-    minimize: "\ea1d",
-
-    more: "\ea1e",
-
-    noimage: "\ea1f",
-
-    options: "\ea20",
-
-    search: "\ea21",
-
-    sort: "\ea22",
-
-    sync: "\ea23",
-
-    top: "\ea24",
-
-    visibilityoff: "\ea25",
-
-    visibilityon: "\ea26",
-
-    warning: "\ea27",
-
+  add: "\ea01",
+  arrow: "\ea02",
+  backarrow: "\ea03",
+  caution: "\ea04",
+  change: "\ea05",
+  checked: "\ea06",
+  chevron: "\ea07",
+  clone: "\ea08",
+  close: "\ea09",
+  collapse: "\ea0a",
+  delete: "\ea0b",
+  done: "\ea0c",
+  doublechevron: "\ea0d",
+  dragdroplist: "\ea0e",
+  dragdropobject: "\ea0f",
+  edit: "\ea10",
+  expand: "\ea11",
+  feedback: "\ea12",
+  filter: "\ea13",
+  filterremove: "\ea14",
+  grid: "\ea15",
+  help: "\ea16",
+  infoon: "\ea17",
+  link: "\ea18",
+  list: "\ea19",
+  localization: "\ea1a",
+  lock: "\ea1b",
+  maximize: "\ea1c",
+  minimize: "\ea1d",
+  more: "\ea1e",
+  noimage: "\ea1f",
+  options: "\ea20",
+  search: "\ea21",
+  sort: "\ea22",
+  sync: "\ea23",
+  top: "\ea24",
+  visibilityoff: "\ea25",
+  visibilityon: "\ea26",
+  warning: "\ea27"
 ) !default;
 
 $block: #{$fd-namespace}-icon;
 
-
-//TODO: finish mixin
+// TODO: finish mixin
 // @mixin icon($key, $size) {
 //     @if map-has-key($fd-icons, $size) {
 //         &::before {
@@ -117,37 +77,41 @@ $block: #{$fd-namespace}-icon;
 // }
 
 .#{$block} {
-    $fd-icon-size: 1.125rem !default;         //18px
-    $fd-icon-size--medium: 1.625rem !default; //26px
-    $fd-icon-size--large: 2rem !default;      //32px
-    font-size: $fd-icon-size;
-    font-family: "FundamentalIcons";
-    line-height: 1;
-    font-style: normal;
-    font-weight: normal;
-    text-align: center;
-    display: inline-block;
-    text-decoration: inherit;
-    text-transform: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    &--medium {
-        font-size: $fd-icon-size--medium;
-    }
-    &--large {
-        font-size: $fd-icon-size--large;
-    }
-    &::before {
-        display: inline;
-        text-align: center;
-    }
+  $fd-icon-size: 1.125rem !default; // 18px
+  $fd-icon-size--medium: 1.625rem !default; // 26px
+  $fd-icon-size--large: 2rem !default; // 32px
 
-    @each $key, $value in $fd-icons {
-        &--#{$key} {
-            &::before {
-                content: $value;
-            }
-        }
+  font-size: $fd-icon-size;
+  font-family: "FundamentalIcons";
+  line-height: 1;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  display: inline-block;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &--medium {
+    font-size: $fd-icon-size--medium;
+  }
+
+  &--large {
+    font-size: $fd-icon-size--large;
+  }
+
+  &::before {
+    display: inline;
+    text-align: center;
+  }
+
+  @each $key, $value in $fd-icons {
+    &--#{$key} {
+      &::before {
+        content: $value;
+      }
     }
+  }
 }

@@ -1,48 +1,55 @@
 @import "./../settings";
 @import "../mixins/mixins";
-//set namespace using function to avoid hardcoding it
+// set namespace using function to avoid hardcoding it
 .#{$fd-namespace}-has-background-image {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
+
 .#{$fd-namespace}-has-background-fixed {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
+
 .#{$fd-namespace}-has-background-size-contain {
-    background-size: contain !important;
+  background-size: contain !important;
 }
+
 .#{$fd-namespace}-has-background-size-cover {
-    background-size: cover !important;
+  background-size: cover !important;
 }
+
 .#{$fd-namespace}-has-background-color-transparent,
 .#{$fd-namespace}-has-background-color-none {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
+
 @each $type, $shades in $fd-colors {
-    @each $shade, $value in $shades {
-        @if $shade == 1 {
-            //set default selector for convenience
-            .#{$fd-namespace}-has-background-color-#{$type},
-            .#{$fd-namespace}-has-background-color-#{$type}-#{$shade} {
-                @include fd-var-color("background-color", $value, --fd-color-#{$type}-#{$shade}, true);
-            }
-        } @else {
-            .#{$fd-namespace}-has-background-color-#{$type}-#{$shade} {
-                @include fd-var-color("background-color", $value, --fd-color-#{$type}-#{$shade}, true);
-            }
-        }
+  @each $shade, $value in $shades {
+    @if $shade == 1 {
+      // set default selector for convenience
+      .#{$fd-namespace}-has-background-color-#{$type},
+      .#{$fd-namespace}-has-background-color-#{$type}-#{$shade} {
+        @include fd-var-color("background-color", $value, --fd-color-#{$type}-#{$shade}, true);
+      }
+    } @else {
+      .#{$fd-namespace}-has-background-color-#{$type}-#{$shade} {
+        @include fd-var-color("background-color", $value, --fd-color-#{$type}-#{$shade}, true);
+      }
     }
-}
-@each $state, $value in $fd-colors-action-states {
-  .#{$fd-namespace}-has-background-color-action-#{$state} {
-      @include fd-var-color("background-color", $value, --fd-color-action-#{$state}, true);
   }
 }
+
+@each $state, $value in $fd-colors-action-states {
+  .#{$fd-namespace}-has-background-color-action-#{$state} {
+    @include fd-var-color("background-color", $value, --fd-color-action-#{$state}, true);
+  }
+}
+
 @each $state, $value in $fd-colors-background-states {
   .#{$fd-namespace}-has-background-color-background-#{$state} {
-      @include fd-var-color("background-color", $value, --fd-color-background-#{$state}, true);
+    @include fd-var-color("background-color", $value, --fd-color-background-#{$state}, true);
   }
 }

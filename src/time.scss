@@ -3,31 +3,34 @@
 @import "./functions";
 
 $block: #{$fd-namespace}-time;
+
 .#{$block} {
   @include fd-reset();
+
   width: 184px; // Quick fix to solve overflow issue
 
-    &__item {
-      @include fd-reset();
-      display: inline-block;
-      max-width: fd-space(10);
+  &__item {
+    @include fd-reset();
+
+    display: inline-block;
+    max-width: fd-space(10);
+    text-align: center;
+    margin-right: fd-space(1);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    // Spacing and narrower side padding for child inputs
+    .#{$block}__input {
+      margin: fd-space(2) 0;
+      padding-left: fd-space(2);
+      padding-right: fd-space(2);
       text-align: center;
-      margin-right: fd-space(1);
-
-      &:last-child {
-        margin-right: 0;
-      }
-
-      // Spacing and narrower side padding for child inputs
-      .#{$block}__input {
-        margin: fd-space(2) 0;
-        padding-left: fd-space(2);
-        padding-right: fd-space(2);
-        text-align: center;
-      }
     }
+  }
 
-    &__control {
-      @include fd-reset();
-    }
+  &__control {
+    @include fd-reset();
+  }
 }

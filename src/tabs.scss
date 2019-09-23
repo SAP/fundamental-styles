@@ -1,6 +1,7 @@
 @import "./settings";
 @import "./mixins";
 @import "./functions";
+
 /*!
 .fd-tabs+()
     .fd-tabs__item?
@@ -9,6 +10,7 @@
 */
 
 $block: #{$fd-namespace}-tabs;
+
 .#{$block} {
   $fd-tabs-margin-bottom: $fd-margin-bottom !default;
   $fd-tabs-border-width: 1px !default;
@@ -36,23 +38,31 @@ $block: #{$fd-namespace}-tabs;
   list-style: none;
   border-bottom-style: solid;
   border-bottom-width: $fd-tabs-border-width;
+
   @include fd-var-color("border-bottom-color", $fd-tabs-background-color, --fd-tabs-background-color);
+
   &__item {
     @include fd-reset();
-      padding: 0 $fd-tabs-link-padding-x;
+
+    padding: 0 $fd-tabs-link-padding-x;
   }
+
   &__link {
     @include fd-reset();
+
     display: block;
     position: relative;
     padding: $fd-tabs-link-padding-y 0;
     text-decoration: none;
+
     @include fd-type("0");
     @include action-cursor();
     @include fd-var-color("color", $fd-tabs-link-color, --fd-tabs-link-color);
+
     &:link {
       @include fd-var-color("color", $fd-tabs-link-color, --fd-tabs-link-color);
     }
+
     &::after {
       transition: all $fd-tabs-link-transition-params;
       content: "";
@@ -65,25 +75,33 @@ $block: #{$fd-namespace}-tabs;
       background-color: transparent;
       border-radius: $fd-border-radius $fd-border-radius 0 0;
     }
+
     @include fd-hover() {
       @include fd-var-color("color", fd-color-state("selected", "action"), --fd-color-action-selected);
     }
+
     @include fd-selected() {
       @include fd-var-color("color", $fd-color--action, --fd-color-action-1);
+
       &::after {
         @include fd-var-color("background-color", $fd-tabs-link-border-color, --fd-tabs-link-border-color);
       }
     }
+
     @include fd-disabled() {
       @include fd-var-color("color", fd-color-state("disabled", "action"), --fd-color-action-disabled);
+
       cursor: not-allowed;
     }
   }
+
   &__panel {
     @include fd-reset();
+
     &[aria-expanded="false"] {
       display: none;
     }
+
     &.is-expanded,
     &[aria-expanded="true"] {
       display: block;

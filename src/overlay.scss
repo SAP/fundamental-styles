@@ -1,12 +1,15 @@
 @import "./settings";
 @import "./functions";
 @import "./mixins";
+
 /*!
 .fd-overlay
 */
 $block: #{$fd-namespace}-overlay;
+
 .#{$block} {
-  $fd-overlay-background-color: rgba(#4A505C, 0.3) !default;
+  $fd-overlay-background-color: rgba(#4a505c, 0.3) !default;
+
   --fd-overlay-background-color: #{$fd-overlay-background-color};
   $fd-overlay-alert-top-margin: fd-space(7);
 
@@ -16,14 +19,18 @@ $block: #{$fd-namespace}-overlay;
   align-items: center;
   justify-content: center;
   z-index: map-get($fd-z-index-levels, "top");
+
   &.is-hidden {
-      display: none;
+    display: none;
   }
+
   &--modal {
     @include fd-var-color("background-color", $fd-overlay-background-color, --fd-overlay-background-color);
+
     height: 100vh;
     width: 100vw;
   }
+
   &--alert {
     position: fixed;
     left: 50%;

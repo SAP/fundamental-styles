@@ -1,144 +1,167 @@
-//library namespace
+// stylelint-disable indentation
+// (stylelint struggles with nested paren indentation when lines end with comments)
+
+// library namespace
 $fd-namespace: fd !default;
 
-//————————v Fundamental Styles FOUNDATION ————————v
+// ————————v Fundamental Styles FOUNDATION ————————v
 
-//breakpoints
+// breakpoints
 $fd-breakpoints: (
-    s: 320px,    //phone     <600
-    m: 600px,    //tablet    600-1023
-    l: 1024px,   //desktop   1024-1439
-    xl: 1440px,  //desktop   1440-1919
-    xxl: 1920px, //display   >1920
+  s: 320px,    // phone     <600
+  m: 600px,    // tablet    600-1023
+  l: 1024px,   // desktop   1024-1439
+  xl: 1440px,  // desktop   1440-1919
+  xxl: 1920px, // display   >1920
 ) !default;
 
-//spacing
+// spacing
 $fd-spacing--base: 4px !default;
 $fd-spacing: () !default;
-$fd-spacing: map-merge((
-    base: $fd-spacing--base,    //4
-    xxs: $fd-spacing--base * 2,  //8
-    xs: $fd-spacing--base * 3,  //12
-    s: $fd-spacing--base * 4,   //16
-    reg: $fd-spacing--base * 6, //24** was 20
-    m: $fd-spacing--base * 8,  //32
-    l: $fd-spacing--base * 9,  //36
-    xl: $fd-spacing--base * 10, //40
-    xxl: $fd-spacing--base * 12, //48** new
-), $fd-spacing);
+$fd-spacing: map-merge(
+  (
+    base: $fd-spacing--base,    // 4
+    xxs: $fd-spacing--base * 2,  // 8
+    xs: $fd-spacing--base * 3,  // 12
+    s: $fd-spacing--base * 4,   // 16
+    reg: $fd-spacing--base * 6, // 24** was 20
+    m: $fd-spacing--base * 8,  // 32
+    l: $fd-spacing--base * 9,  // 36
+    xl: $fd-spacing--base * 10, // 40
+    xxl: $fd-spacing--base * 12, // 48** new
+  ),
+  $fd-spacing
+);
 
 $fd-spacing-common: () !default;
-$fd-spacing-common: map-merge((
-    "tiny": "xxs", //8px
-    "small": "s", //16px
-    "regular": "reg", //24px
-    "medium": "m", //32px
-    "large": "xxl" //48
-), $fd-spacing-common);
+$fd-spacing-common: map-merge(
+  (
+    "tiny": "xxs", // 8px
+    "small": "s", // 16px
+    "regular": "reg", // 24px
+    "medium": "m", // 32px
+    "large": "xxl" // 48
+  ),
+  $fd-spacing-common
+);
 
-//fonts
+// fonts
 $fd-fonts: () !default;
-$fd-fonts: map-merge((
+$fd-fonts: map-merge(
+  (
     "body": #{"'72'", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"},
     "header": #{"'72'", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"},
     "code": #{monospace},
-), $fd-fonts);
+  ),
+  $fd-fonts
+);
 
-//type
-//sets HTML el
+// type
+// sets HTML el
 $fd-type--base: 14 !default;
 $fd-type: () !default;
-$fd-type: map-merge((
-  //"key": font-size line-height margin-bottom
-  "-1": 12px 16/12 8px, //12/16 8 btm
-  "0": 14px 20/14 12px, //14/20 12
-  "1": 16px 20/16 12px, //16/20 12
-  "2": 18px 24/18 12px, //18/24 12
-  "3": 20px 28/20 12px, //20/28 12
-  "4": 24px 32/24 16px, //23/32 16
-  "5": 36px 40/36 20px, //36/40 20
-  "6": 48px 52/48 24px, //48/52 24
-  "7": 72px 84/72 32px, //84/72 32
-  "8": 96px 105/96 36px, //105/96 36
-), $fd-type);
+$fd-type: map-merge(
+  (
+    // "key": font-size line-height margin-bottom
+    "-1": 12px 16/12 8px, // 12/16 8 btm
+    "0": 14px 20/14 12px, // 14/20 12
+    "1": 16px 20/16 12px, // 16/20 12
+    "2": 18px 24/18 12px, // 18/24 12
+    "3": 20px 28/20 12px, // 20/28 12
+    "4": 24px 32/24 16px, // 23/32 16
+    "5": 36px 40/36 20px, // 36/40 20
+    "6": 48px 52/48 24px, // 48/52 24
+    "7": 72px 84/72 32px, // 84/72 32
+    "8": 96px 105/96 36px, // 105/96 36
+  ),
+  $fd-type
+);
 
 $fd-font-size: #{$fd-type--base}px !default;
-$fd-line-height: 20/#{$fd-type--base} !default;
+$fd-line-height: 20 / #{$fd-type--base} !default;
 
-//weights
+// weights
 $fd-weights: () !default;
-$fd-weights: map-merge((
+$fd-weights: map-merge(
+  (
     "light": 300,
     "normal": 400,
     "bold": 700
-), $fd-weights);
+  ),
+  $fd-weights
+);
 
-//COLORS — updated Oct.8.18
+// COLORS — updated Oct.8.18
 
 $fd-colors: () !default;
-$fd-colors: map-merge((
-  "action": (
-    1: hsl(210, 91%, 43%), // #0A6ED1 UI brand/ Highlight
-    2: hsl(210, 0%, 100%), // #FFFFFF inverse action
-    3: hsl(210, 90%, 33%) // 0854A1 UI Icon/ Down/ Selected
+$fd-colors: map-merge(
+  (
+    "action": (
+      1: hsl(210, 91%, 43%), // #0A6ED1 UI brand/ Highlight
+      2: hsl(210, 0%, 100%), // #FFFFFF inverse action
+      3: hsl(210, 90%, 33%) // 0854A1 UI Icon/ Down/ Selected
+    ),
+    "text": (
+      1: hsl(210, 7.5%, 21%), // #32363A UI Text 1
+      2: hsl(210, 5%, 33.5%), // #515559 UI Text 2
+      3: hsl(210, 3%, 42.7%), // #6a6d70 UI Text 3
+      4: hsl(210, 2.5%, 46.5%), // #74777A UI Text 4
+      5: hsl(210, 0%, 100%) // #ffffff inverse text
+    ),
+    "background": (
+      1: hsl(210, 9%, 93.7%), // #EDEFF0 UI Shell/ App background
+      2: hsl(210, 0%, 100%),  // #FFFFFF UI content background
+      3: hsl(145, 75%, 96.9%),  // #F1FDF6 Semantic Colors positive background
+      4: hsl(28, 86.7%, 97.1%), // #FEF7F1 Semantic Colors alert background
+      5: hsl(0, 100%, 96.1%),  // #FFEBEB Semantic Colors negative background
+      6: hsl(210, 100%, 98%), // #F5FAFF Semantic Colors info background
+      7: hsl(0, 0, 95.7%) // #F4F4F4 neutral alert background
+    ),
+    "neutral": (
+      1: hsl(210, 3%, 98%), // #FAFAFA UI Neutral UI 1
+      2: hsl(210, 3%, 93.5%), // #EEEEEF UI Neutral UI 2
+      3: hsl(0, 0%, 85%), // #D9D9D9 UI Neutral UI 3
+      4: hsl(212, 8%, 57%), // #89919A UI Neutral UI 4
+      5: hsl(0, 0%, 97%), // #F7F7F7 UI Neutral UI 5
+      6: hsl(0, 0%, 95%) // #F2F2F2 UI Neutral UI 6
+    ),
+    "status": (
+      1: hsl(147, 85.3%, 26.7%), // #107E3E Semantic Colors positive
+      2: hsl(28, 90.2%, 48%), // #E9730C Semantic Colors alert
+      3: hsl(0, 100%, 36.7%), // #BB0000 Semantic Colors negative
+      4: hsl(210, 2.8%, 42.7%), // #6A6d70 Semantic Colors neutral text
+      5: hsl(210, 90.9%, 42.9%) // #6A6D70 Semantic Colors neutral border
+    ),
+    "accent": (
+      1: hsl(34, 90%, 61%), // #D08014 accent 1
+      2: hsl(0, 68%, 50%), // #D04343 accent 2
+      3: hsl(332, 75%, 49%), // #DB1F77 accent 3
+      4: hsl(315, 54%, 49%), // #C0399F accent 4
+      5: hsl(238, 65%, 63%), // #6367DE accent 5
+      6: hsl(210, 78%, 45%), // #286EB4 accent 6
+      7: hsl(186, 90%, 49%), // #0F828F accent 7
+      8: hsl(75, 86%, 34%), // #7CA10C accent 8
+      9: hsl(269, 54%, 58%), // #925ACE accent 9
+      10: hsl(206, 26%, 49%), // #647887 accent 10
+      11: hsl(34, 82%, 45%), // #D17F15 accessible accent 1 B (3:1)
+      12: hsl(0, 60%, 54%), // #D04343 accessible accent 2 B (4.6:1)
+      13: hsl(210, 64.2%, 47.1%), // #2B78C5 accessible accent 6 B (4.6:1)
+      14: hsl(238, 65.1%, 62.9%), // #0F828F accessible accent 7 B (4.6:1)
+      15: hsl(274.2, 60%, 55.9%) // #647887 accessible accent 10 B (4.6:1)
+    ),
+    "shell": (
+      1: hsl(210, 28%, 29%), // #354A5F
+      2: hsl(210, 100%, 91%), // #D1E8FF
+      3: hsl(210, 44%, 23%), // #283848
+      4: hsl(211, 44%, 19%), // #23303E
+      5: hsl(211, 33%, 61%) // #7996B4
+    )
   ),
-  "text": (
-    1: hsl(210, 7.5%, 21%), // #32363A UI Text 1
-    2: hsl(210, 5%, 33.5%), // #515559 UI Text 2
-    3: hsl(210, 3%, 42.7%), // #6a6d70 UI Text 3
-    4: hsl(210, 2.5%, 46.5%), //#74777A UI Text 4
-    5: hsl(210, 0%, 100%) // #ffffff inverse text
-  ),
-  "background": (
-    1: hsl(210, 9%, 93.7%), // #EDEFF0 UI Shell/ App background
-    2: hsl(210, 0%, 100%),  // #FFFFFF UI content background
-    3: hsl(145, 75%, 96.9%),  // #F1FDF6 Semantic Colors positive background
-    4: hsl(28, 86.7%, 97.1%), // #FEF7F1 Semantic Colors alert background
-    5: hsl(0, 100%, 96.1%),  // #FFEBEB Semantic Colors negative background
-    6: hsl(210, 100%, 98%), // #F5FAFF Semantic Colors info background
-    7: hsl(0, 0, 95.7%) // #F4F4F4 neutral alert background
-  ),
-  "neutral": (
-    1: hsl(210, 3%, 98%), // #FAFAFA UI Neutral UI 1
-    2: hsl(210, 3%, 93.5%), // #EEEEEF UI Neutral UI 2
-    3: hsl(0, 0%, 85%), // #D9D9D9 UI Neutral UI 3
-    4: hsl(212, 8%, 57%), // #89919A UI Neutral UI 4
-    5: hsl(0, 0%, 97%), // #F7F7F7 UI Neutral UI 5
-    6: hsl(0, 0%, 95%) // #F2F2F2 UI Neutral UI 6
-  ),
-  "status": (
-    1: hsl(147, 85.3%, 26.7%), // #107E3E Semantic Colors positive
-    2: hsl(28, 90.2%, 48%), // #E9730C Semantic Colors alert
-    3: hsl(0, 100%, 36.7%), // #BB0000 Semantic Colors negative
-    4: hsl(210, 2.8%, 42.7%), // #6A6d70 Semantic Colors neutral text
-    5: hsl(210, 90.9%, 42.9%) // #6A6D70 Semantic Colors neutral border
-  ),
-  "accent": (
-    1: hsl(34, 90%, 61%), // #D08014 accent 1
-    2: hsl(0, 68%, 50%), // #D04343 accent 2
-    3: hsl(332, 75%, 49%), // #DB1F77 accent 3
-    4: hsl(315, 54%, 49%), // #C0399F accent 4
-    5: hsl(238, 65%, 63%), // #6367DE accent 5
-    6: hsl(210, 78%, 45%), // #286EB4 accent 6
-    7: hsl(186, 90%, 49%), // #0F828F accent 7
-    8: hsl(75, 86%, 34%), // #7CA10C accent 8
-    9: hsl(269, 54%, 58%), // #925ACE accent 9
-    10: hsl(206, 26%, 49%), // #647887 accent 10
-    11: hsl(34, 82%, 45%), // #D17F15 accessible accent 1 B (3:1)
-    12: hsl(0, 60%, 54%), // #D04343 accessible accent 2 B (4.6:1)
-    13: hsl(210, 64.2%, 47.1%), // #2B78C5 accessible accent 6 B (4.6:1)
-    14: hsl(238, 65.1%, 62.9%), // #0F828F accessible accent 7 B (4.6:1)
-    15: hsl(274.2, 60%, 55.9%) // #647887 accessible accent 10 B (4.6:1)
-  ),
-  "shell": (
-    1: hsl(210, 28%, 29%), // #354A5F
-    2: hsl(210, 100%, 91%), // #D1E8FF
-    3: hsl(210, 44%, 23%), // #283848
-    4: hsl(211, 44%, 19%), // #23303E
-    5: hsl(211, 33%, 61%) // #7996B4
-  )
-), $fd-colors);
-//set group lists for easier access (used in _root)
+  $fd-colors
+);
+// stylelint-enable indentation
+
+// set group lists for easier access (used in _root)
 $fd-colors-action: map-get($fd-colors, "action") !default;
 $fd-colors-text: map-get($fd-colors, "text") !default;
 $fd-colors-background: map-get($fd-colors, "background") !default;
@@ -147,23 +170,26 @@ $fd-colors-status: map-get($fd-colors, "status") !default;
 $fd-colors-accent: map-get($fd-colors, "accent") !default;
 $fd-colors-shell: map-get($fd-colors, "shell") !default;
 
-//state colors
+// state colors
 $fd-color--action: map-get($fd-colors-action, 1) !default;
 $fd-colors-action-states: () !default;
-$fd-colors-action-states: map-merge((
-  "hover": adjust-color($fd-color--action, $lightness: -7%),
-  "selected": adjust-color($fd-color--action, $lightness: -10%, $saturation: 7%),
-  "disabled": change-color($fd-color--action, $alpha: 0.4),
-  "visited": adjust-hue($fd-color--action, 45deg),
-), $fd-colors-action-states);
+$fd-colors-action-states: map-merge(
+  (
+    "hover": adjust-color($fd-color--action, $lightness: -7%),
+    "selected": adjust-color($fd-color--action, $lightness: -10%, $saturation: 7%),
+    "disabled": change-color($fd-color--action, $alpha: 0.4),
+    "visited": adjust-hue($fd-color--action, 45deg),
+  ),
+  $fd-colors-action-states
+);
 
-//deprecate these by 1.5 ----v
+// deprecate these by 1.5 ----v
 $fd-link-color: map-get($fd-colors-action, 1) !default;
 $fd-link-color--hover: adjust-color($fd-link-color, $lightness: -7%) !default;
 $fd-link-color--active: darken($fd-link-color, 10) !default;
 $fd-link-color--pressed: adjust-color($fd-link-color, $lightness: -10) !default;
 $fd-link-color--disabled: rgba($fd-link-color, 0.4) !default;
-//deprecate these ----^
+// deprecate these ----^
 
 $fd-color--negative: map-get($fd-colors-status, 3) !default;
 $fd-color--error: $fd-color--negative !default;
@@ -173,68 +199,74 @@ $fd-color--positive: map-get($fd-colors-status, 1) !default;
 $fd-color--success: $fd-color--positive !default;
 
 $fd-colors-background-states: () !default;
-$fd-colors-background-states: map-merge((
-  "hover": map-get($fd-colors-neutral, 1),
-  "selected": change-color($fd-color--action, $alpha: 0.07),
-  "selected-hover": change-color($fd-color--action, $alpha: 0.1),
-  "positive": map-get($fd-colors-background, 3),
-  "negative": map-get($fd-colors-background, 5),
-  "alert": map-get($fd-colors-background, 4),
-  "information": map-get($fd-colors-background, 6),
-  "default": map-get($fd-colors-background, 7)
-), $fd-colors-background-states);
+$fd-colors-background-states: map-merge(
+  (
+    "hover": map-get($fd-colors-neutral, 1),
+    "selected": change-color($fd-color--action, $alpha: 0.07),
+    "selected-hover": change-color($fd-color--action, $alpha: 0.1),
+    "positive": map-get($fd-colors-background, 3),
+    "negative": map-get($fd-colors-background, 5),
+    "alert": map-get($fd-colors-background, 4),
+    "information": map-get($fd-colors-background, 6),
+    "default": map-get($fd-colors-background, 7)
+  ),
+  $fd-colors-background-states
+);
 
-//————————^ Fundamental Styles FOUNDATION ————————^
+// ————————^ Fundamental Styles FOUNDATION ————————^
 
-//features
-$fd-space-modify: normal !default; //normal, compact
+// features
+$fd-space-modify: normal !default; // normal, compact
 
-//type
+// type
 $fd-font-family: map-get($fd-fonts, "body") !default;
 $fd-font-family--header: map-get($fd-fonts, "header") !default;
 $fd-font-family--code: map-get($fd-fonts, "code") !default;
 $fd-font-size: nth(map-get($fd-type, "0"), 1) !default;
 $fd-line-height: nth(map-get($fd-type, "0"), 2) !default;
 
-//baseline
+// baseline
 $fd-color: map-get($fd-colors-text, 1) !default;
 $fd-background-color: map-get($fd-colors-background, 1) !default;
 $fd-background-color--header: map-get($fd-colors-background, 2) !default;
 $fd-background-color--sidebar: map-get($fd-colors-background, 2) !default;
 $fd-background-color--footer: map-get($fd-colors-background, 2) !default;
 
-//positioning
+// positioning
 $fd-margin-bottom: map-get($fd-spacing, "xs") !default;
 
 $fd-z-index-levels: () !default;
-$fd-z-index-levels: map-merge((
-  "base": 0,
-  "first": 1,
-  "second": 2,
-  "focus": 5,
-  "top": 1000,
-  "default": auto
-), $fd-z-index-levels);
+$fd-z-index-levels: map-merge(
+  (
+    "base": 0,
+    "first": 1,
+    "second": 2,
+    "focus": 5,
+    "top": 1000,
+    "default": auto
+  ),
+  $fd-z-index-levels
+);
 
-//borders
+// borders
 $fd-border-radius: 4px !default;
 
-//animation speed
+// animation speed
 $fd-animation--speed: 0.125s !default;
 
-//shell
+// shell
 $fd-shell-header-height: 48px !default;
 $fd-shell-header-background-color: map-get($fd-colors-shell, 1) !default;
 $fd-padding--ui: $fd-spacing--base * 8 !default;
 
-//layout
+// layout
 $fd-max-width--ui: 1290px !default;
-$fd-width--gutter: map-get($fd-spacing, s); //desktop default
+$fd-width--gutter: map-get($fd-spacing, s); // desktop default
 
 // Form Configuration
-$fd-forms-height: $fd-spacing--base * 9 !default; //36px
-$fd-forms-height--compact: $fd-spacing--base * 7 !default; //28px
-$fd-forms-height--input-text: $fd-forms-height !default; //deprecate
+$fd-forms-height: $fd-spacing--base * 9 !default; // 36px
+$fd-forms-height--compact: $fd-spacing--base * 7 !default; // 28px
+$fd-forms-height--input-text: $fd-forms-height !default; // deprecate
 $fd-forms-height--input-check: $fd-spacing--base * 4 !default;
 $fd-forms-padding: $fd-spacing--base * 3 !default;
 

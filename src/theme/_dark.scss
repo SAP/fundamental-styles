@@ -1,8 +1,8 @@
-//colors
+// colors
 $fd-colors: (
   "primary": (
     1: #273143,
-    2: darkblue,
+    2: darkblue
   ),
   "action": (
     1: #0a6ed1,
@@ -17,26 +17,26 @@ $fd-colors: (
   "background": (
     1: #1c2433,
     2: #273143,
-    3: darkviolet,
+    3: darkviolet
   ),
   "neutral": (
     1: black,
     2: slategray,
     3: dimgray,
-    4: tomato,
+    4: tomato
   ),
   "status": (
     1: #359c46,
     2: #f59518,
-    3: #ee0000,
+    3: #ee0000
   )
 );
 
-//BRING IN DEFAULT SETTINGS so you have access to the full system when defining overrides
+// BRING IN DEFAULT SETTINGS so you have access to the full system when defining overrides
 @import "./../functions";
 @import "./../settings";
 
-//NO !default flags
+// NO !default flags
 $fd-list-group-border-color: none;
-$fd-link-color: fd-color("action",1);
-$fd-list-group-background-color--hover: fd-color("neutral",1);
+$fd-link-color: fd-color("action", 1);
+$fd-list-group-background-color--hover: fd-color("neutral", 1);

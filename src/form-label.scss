@@ -1,28 +1,36 @@
 @import "./settings";
 @import "./mixins";
 @import "./functions";
+
 /*!
 .fd-form-label
 */
 $block: #{$fd-namespace}-form-label;
-.#{$block} {
-    $fd-form-label-color: fd-color(text, 3) !default;
 
-    @include fd-reset();
-    @include fd-var-color("color", $fd-form-label-color, --fd-color-text-3);
-    @include action-cursor();
-    line-height: $fd-forms-height--input-check;
-    margin-bottom: fd-space(2);
-    display: block;
-    &.is-disabled {
-        opacity: 0.4;
-    }
-    &:focus-within {
-        @include fd-var-color("outline-color", fd-color-state("hover", "action"), --fd-color-action-focus);
-        outline-width: 1px;
-        outline-style: dotted;
-    }
-    & > .#{$fd-namespace}-radio, .#{$fd-namespace}-checkbox {
-        margin-right: fd-space(2);
-    }
+.#{$block} {
+  $fd-form-label-color: fd-color(text, 3) !default;
+
+  @include fd-reset();
+  @include fd-var-color("color", $fd-form-label-color, --fd-color-text-3);
+  @include action-cursor();
+
+  line-height: $fd-forms-height--input-check;
+  margin-bottom: fd-space(2);
+  display: block;
+
+  &.is-disabled {
+    opacity: 0.4;
+  }
+
+  &:focus-within {
+    @include fd-var-color("outline-color", fd-color-state("hover", "action"), --fd-color-action-focus);
+
+    outline-width: 1px;
+    outline-style: dotted;
+  }
+
+  & > .#{$fd-namespace}-radio,
+  .#{$fd-namespace}-checkbox {
+    margin-right: fd-space(2);
+  }
 }
