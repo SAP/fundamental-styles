@@ -12,7 +12,7 @@ script:
 jobs:
   include:
   - stage: Lint and Test
-    script: npm run lint && npm run docs:lint && npm run test:ci-config && npm run test
+    script: npm run lint && npm run test:ci-config && npm run test
   - stage: Pre-release
     if: branch = master
     before_deploy:
@@ -41,6 +41,6 @@ notifications:
   email:
     on_failure: always
     on_success: change
-  slack: 
+  slack:
     rooms:
       - ui-fundamentals:zVRyxlqkYnQFD7p8QHkWM8Fd#styles-automated
