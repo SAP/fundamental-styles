@@ -1,7 +1,7 @@
 @import "./settings";
 @import "./functions";
 @import "./mixins";
-@import "./../core/root";
+@import "./core/root";
 
 $block: #{$fd-namespace}-page;
 .#{$block} {

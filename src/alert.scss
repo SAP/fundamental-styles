@@ -1,6 +1,7 @@
 @import "./settings";
 @import "./mixins";
 @import "./functions";
+@import "./overlay.scss";
 /*!
 .fd-alert+(--information, --success, --warning, --error, --no-icon)
     .fd-alert__close
