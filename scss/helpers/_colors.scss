@@ -1,27 +1,30 @@
 @import "./../settings";
 @import "../mixins/mixins";
+
 @each $type, $shades in $fd-colors {
-    @each $shade, $value in $shades {
-        @if $shade == 1 {
-            //set default selector for convenience
-            .#{$fd-namespace}-has-color-#{$type},
-            .#{$fd-namespace}-has-color-#{$type}-#{$shade} {
-                @include fd-var-color("color", $value, --fd-color-#{$type}-#{$shade}, true);
-            }
-        } @else {
-            .#{$fd-namespace}-has-color-#{$type}-#{$shade} {
-                @include fd-var-color("color", $value, --fd-color-#{$type}-#{$shade}, true);
-            }
-        }
+  @each $shade, $value in $shades {
+    @if $shade == 1 {
+      // set default selector for convenience
+      .#{$fd-namespace}-has-color-#{$type},
+      .#{$fd-namespace}-has-color-#{$type}-#{$shade} {
+        @include fd-var-color("color", $value, --fd-color-#{$type}-#{$shade}, true);
+      }
+    } @else {
+      .#{$fd-namespace}-has-color-#{$type}-#{$shade} {
+        @include fd-var-color("color", $value, --fd-color-#{$type}-#{$shade}, true);
+      }
     }
-}
-@each $state, $value in $fd-colors-action-states {
-  .#{$fd-namespace}-has-color-action-#{$state} {
-      @include fd-var-color("color", $value, --fd-color-action-#{$state}, true);
   }
 }
+
+@each $state, $value in $fd-colors-action-states {
+  .#{$fd-namespace}-has-color-action-#{$state} {
+    @include fd-var-color("color", $value, --fd-color-action-#{$state}, true);
+  }
+}
+
 @each $state, $value in $fd-colors-background-states {
   .#{$fd-namespace}-has-color-background-#{$state} {
-      @include fd-var-color("color", $value, --fd-color-background-#{$state}, true);
+    @include fd-var-color("color", $value, --fd-color-background-#{$state}, true);
   }
 }

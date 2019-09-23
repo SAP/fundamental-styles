@@ -21,7 +21,7 @@
 // FOCUS state (tab onto, click into)
 // override params $shadow-var, $shadow-value
 // `.is-focus` is for demo purposes
-@mixin fd-focus($shadow-var: --fd-color-action-focus, $shadow-value: fd-color-state("hover","action")) {
+@mixin fd-focus($shadow-var: --fd-color-action-focus, $shadow-value: fd-color-state("hover", "action")) {
   &:focus,
   &.is-focus {
     box-shadow: 0 0 0 1px var(#{$shadow-var}, #{$shadow-value});

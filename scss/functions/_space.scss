@@ -1,34 +1,40 @@
-//accepts size key or increment, modify enables on fd-space-modifier
+// accepts size key or increment, modify enables on fd-space-modifier
 @function fd-space($size: reg, $modifiable: false) {
   $_map: $fd-spacing;
-  //set base
+  // set base
   $_size: map-get($_map, base);
   $_common: false;
+
   @if map-has-key($fd-spacing-common, $size) {
     $_common: true;
     $size: map-get($fd-spacing-common, $size);
   }
+
   @if type-of($size) == number {
-      //multiply
-      $_size: $_size * $size;
+    // multiply
+    $_size: $_size * $size;
   } @else {
-      @if map-has-key($_map, $size) {
-          $_size: map-get($_map, $size);
-      } @else {
-          @warn "Invalid $size of `#{$size}`. Valid $size values are #{map-keys($_map)}. Returning default `#{$_size}`.";
-      }
+    @if map-has-key($_map, $size) {
+      $_size: map-get($_map, $size);
+    } @else {
+      @warn "Invalid $size of `#{$size}`. Valid $size values are #{map-keys($_map)}. Returning default `#{$_size}`.";
+    }
   }
+
   @if $modifiable {
-      $_size: fd-modify-space_($_size);
+    $_size: fd-modify-space_($_size);
   }
+
   @return $_size;
 }
 
-//space helper
+// space helper
 @function fd-modify-space_($size) {
-    $_size: $size;
-    @if $fd-space-modify == compact {
-        $_size: $_size / 2;
-    }
-    @return $_size;
+  $_size: $size;
+
+  @if $fd-space-modify == compact {
+    $_size: $_size / 2;
+  }
+
+  @return $_size;
 }

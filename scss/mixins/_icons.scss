@@ -1,17 +1,18 @@
 @import "../settings";
 @import "../icons/settings";
 
-//icon mixin
+// icon mixin
 @mixin fd-icon($key, $size: "default", $position: "before") {
   @include fd-icon-base($position);
   @include fd-icon-glyph($key, $position);
   @include fd-icon-size($size, $position);
+
   &::#{$position} {
     @content;
   }
 }
 
-//icon base mixin
+// icon base mixin
 @mixin fd-icon-base($position: "before") {
   &::#{$position} {
     font-family: "SAP-icons";
@@ -30,9 +31,10 @@
   }
 }
 
-//animate mixin
+// animate mixin
 @mixin fd-icon-animate($type: "spin") {
   display: inline-block;
+
   @if $type == "spin" {
     animation: sap-icon-spin 2s infinite linear;
   } @else if $type == "pulse" {
@@ -40,19 +42,20 @@
   }
 }
 
-//size mixin
+// size mixin
 @mixin fd-icon-size($size: "default", $position: "before") {
   &::#{$position} {
     @if $size != "default" {
-      //explicitly
+      // explicitly
       @if map-has-key($fd-icons-sizes, $size) {
         font-size: map-get($fd-icons-sizes, $size);
       } @else {
-          @warn "Unknown `#{$fd-icons-sizes}` in $fd-icons-sizes map";
+        @warn "Unknown `#{$fd-icons-sizes}` in $fd-icons-sizes map";
       }
+
       line-height: 1;
     } @else {
-      //implicity
+      // implicity
       font-size: map-get($fd-icons-sizes, "default");
       line-height: $fd-line-height;
     }
@@ -60,7 +63,7 @@
   }
 }
 
-//icon glyph mixin
+// icon glyph mixin
 @mixin fd-icon-glyph($glyph, $position: "before") {
   @if map-has-key($fd-icons, $glyph) {
     &::#{$position} {
@@ -68,6 +71,6 @@
       @content;
     }
   } @else {
-      @warn "Unknown `#{$glyph}` in $fd-icons map";
+    @warn "Unknown `#{$glyph}` in $fd-icons map";
   }
 }
