@@ -169,13 +169,13 @@ app.use('/normalize', express.static(path.join(__dirname, '..', 'node_modules', 
 
 //load font files
 router.get('/(*/)?FundamentalIcons:key', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', `scss/icons/FundamentalIcons${req.params.key}`));
+    res.sendFile(path.join(__dirname, '..', `src/icons/FundamentalIcons${req.params.key}`));
 });
 router.get('/(*/)?SAP-icons:key', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', `scss/icons/SAP-icons${req.params.key}`));
+    res.sendFile(path.join(__dirname, '..', `src/icons/SAP-icons${req.params.key}`));
 });
 router.get('/(*/)?72/72-:key', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', `scss/fonts/72/72-${req.params.key}`));
+    res.sendFile(path.join(__dirname, '..', `src/fonts/72/72-${req.params.key}`));
 });
 
 router.all('/', (req, res, next) => {
