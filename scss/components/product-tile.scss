@@ -6,6 +6,7 @@
 .fd-product-tile+()
   .fd-product-tile__media+()
   .fd-product-tile__title+()
+  .fd-product-tile__text+()
 */
 $block: #{$fd-namespace}-product-tile;
 
@@ -47,7 +48,12 @@ $block: #{$fd-namespace}-product-tile;
     opacity: 0.4;
   }
 
+  &__text {
+    @include fd-reset();
+  }
+
   &__media {
+    @include fd-reset();
     width: 100%;
     min-height: $fd-product-tile-media-height;
     background-repeat: no-repeat;
@@ -55,6 +61,7 @@ $block: #{$fd-namespace}-product-tile;
     background-size: cover;
   }
   &__content {
+    @include fd-reset();
     padding: $fd-product-tile-content-padding-x $fd-product-tile-content-padding-x;
   }
   &__title {

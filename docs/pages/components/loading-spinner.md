@@ -22,7 +22,7 @@ The loading element is used to display the loading indicator animation.
 
 {% capture default %}
 <div class="fd-spinner" aria-hidden="false" aria-label="Loading">
-    <div></div>
+    <div class="fd-spinner__body"></div>
 </div>
 {% endcapture %}
 
@@ -38,7 +38,7 @@ The spinner should be included inside the container. Visibility can be toggled i
 {% capture aria %}
 <div class="fd-panel" aria-busy="true">
     <div class="fd-spinner" aria-hidden="false" aria-label="Loading">
-        <div></div>
+        <div class="fd-spinner__body"></div>
     </div>
     <div class="fd-panel__header">
         <h3 class="fd-panel__title">Lorem ipsum</h3>

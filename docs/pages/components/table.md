@@ -29,7 +29,7 @@ A table is a set of tabular data. Line items can support data, images and action
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
             <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
             </span></td>
             <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -38,7 +38,7 @@ A table is a set of tabular data. Line items can support data, images and action
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
             </span></td>
             <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -47,7 +47,7 @@ A table is a set of tabular data. Line items can support data, images and action
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
             </span></td>
             <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -79,7 +79,7 @@ A table is a set of tabular data. Line items can support data, images and action
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
             <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
             </span></td>
             <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -88,7 +88,7 @@ A table is a set of tabular data. Line items can support data, images and action
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
             </span></td>
             <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -97,7 +97,7 @@ A table is a set of tabular data. Line items can support data, images and action
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
             </span></td>
             <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -129,7 +129,7 @@ A table is a set of tabular data. Line items can support data, images and action
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
             <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
             </span></td>
             <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -138,7 +138,7 @@ A table is a set of tabular data. Line items can support data, images and action
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
             </span></td>
             <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -147,7 +147,7 @@ A table is a set of tabular data. Line items can support data, images and action
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
             </span></td>
             <td class="fd-table__cell"><a href="#" class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -198,6 +198,92 @@ It is recommended to add the parameter `aria-selected="true"` to the row that is
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
+    </tbody>
+</table>
+{% endcapture %}
+{% include display-component.html component=table-checkbox %}
+
+<br />
+
+
+## Table with semantic row highlighting 
+Table rows support semantic row highlighting with the modifiers `fd-table__row--valid`, `fd-table__row--warning`, `fd-table__row--error` and `fd-table__row--information` 
+
+{% capture table-checkbox %}
+<table class="fd-table">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col"><input class="fd-checkbox" type="checkbox"></th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox" checked></td>
+            <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--valid">
+            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
+            <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
+            <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+         <tr class="fd-table__row fd-table__row--warning">
+            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
+            <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
+            <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+         <tr class="fd-table__row fd-table__row--error">
+            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
+            <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>  
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
+            <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+         <tr class="fd-table__row fd-table__row--information">
+            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
+            <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>   
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
+            <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>                    
     </tbody>
 </table>
 {% endcapture %}
@@ -299,7 +385,7 @@ a contextual menu can be substituted in order to display all actions in one menu
    <thead class="fd-table__header">
       <tr class="fd-table__row">
          <th class="fd-table__cell fd-table__sort-column" scope="col">Header Column</th>
-         <th class="fd_table__cell fd-table__sort-column" scope="col">Header Column</th>
+         <th class="fd-table__cell fd-table__sort-column" scope="col">Header Column</th>
          <th class="fd-table__cell fd-table__sort-column" scope="col">Header Column</th>
       </tr>
    </thead>
@@ -634,7 +720,7 @@ a contextual menu can be substituted in order to display all actions in one menu
          </thead>
          <tbody class="fd-table__body">
             <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__fixed-cell" style="width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
+               <td class="fd-table__cell fd-table__fixed-cell" style="width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
@@ -644,7 +730,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
             </tr>
             <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__fixed-cell" style="width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
+               <td class="fd-table__cell fd-table__fixed-cell" style="width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
@@ -654,7 +740,7 @@ a contextual menu can be substituted in order to display all actions in one menu
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
             </tr>
             <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__fixed-cell" style="width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</th>
+               <td class="fd-table__cell fd-table__fixed-cell" style="width:200px" scope="row">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>

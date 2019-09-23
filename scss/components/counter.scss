@@ -1,7 +1,6 @@
 @import "./../settings";
 @import "./../mixins";
 @import "./../functions";
-@import "./../icons/mixins";
 /*!
 .fd-counter+(--notification)
 */
@@ -28,7 +27,6 @@ $block: #{$fd-namespace}-counter;
   &--notification {
     --fd-counter-background-color: var(--fd-color-status-3);
     @include fd-var-color("background-color", map-get($fd-colors-status, 3), --fd-counter-background-color);
-    position: absolute;
     transform: translate(-40%, -50%);
     @include fd-rtl() {
       transform: translate(40%, -50%);

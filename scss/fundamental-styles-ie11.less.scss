@@ -1,7 +1,0 @@
-// CUSTOM imports to create the LESS compatible CSS with IE 11 fallbacks
-$fd-support-css-var-fallback: true;
-@import "./settings";
-@import "./core";
-@import "./layout";
-@import "./components";
-@import "./helpers";

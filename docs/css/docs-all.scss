@@ -2,7 +2,7 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 //base component styles - do not import SCSS as the underlying jekyll sass engine does not use LibSass
-@import "./fundamental-styles-ie11.css";
+@import "./fundamental-styles.css";
 //needed for color variables in docs site
 @import "../../scss/functions/_color.scss";
 @import "../../scss/_settings.scss";

@@ -31,8 +31,16 @@ $block: #{$fd-namespace}-toggle;
     display: inline-block;
     width: $fd-toggle-width;
     height: $fd-toggle-height;
+    margin-right: 5px;
+    vertical-align: middle;
+
+    @include fd-rtl() {
+        margin-left: 5px;
+        margin-right: 0;
+    }
 
     &__input {
+        @include fd-reset();
         opacity: 0;
         width: 0;
         height: 0;
@@ -84,6 +92,7 @@ $block: #{$fd-namespace}-toggle;
     }
 
     &__switch {
+        @include fd-reset();
         position: absolute;
         cursor: pointer;
         top: 0;
@@ -122,12 +131,12 @@ $block: #{$fd-namespace}-toggle;
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     }
 
-    input:checked+&__switch {
+    &__input:checked+&__switch {
         background-color: rgba(10, 110, 209, 0.6);
         @include fd-var-color("border-color", fd-color-state("selected", "action"), --fd-color-action-selected);
     }
 
-    input:checked+&__switch::before {
+    &__input:checked+&__switch::before {
         @include fd-var-color("background-color", fd-color-state("selected", "action"), --fd-color-action-selected);
         @include fd-var-color("border-color", fd-color-state("selected", "action"), --fd-color-action-selected);
         pointer-events: none;
@@ -158,6 +167,7 @@ $block: #{$fd-namespace}-toggle;
     // block level modifier for inline lables
     &--label,
     &--semantic {
+        @include fd-reset();
         width: 62px;
         height: 22px;
         .#{$block}__label--on {
@@ -173,8 +183,8 @@ $block: #{$fd-namespace}-toggle;
         }
     }
 
-    &--label input:checked+&__switch,
-    &--semantic input:checked+&__switch {
+    &--label &__input:checked+&__switch,
+    &--semantic &__input:checked+&__switch {
         &::before {
             left: calc(100% - 31px);
         }
@@ -186,8 +196,8 @@ $block: #{$fd-namespace}-toggle;
         }
     }
 
-    &--label.#{$block}--compact input:checked+&__switch,
-    &--semantic.#{$block}--compact input:checked+&__switch {
+    &--label.#{$block}--compact &__input:checked+&__switch,
+    &--semantic.#{$block}--compact &__input:checked+&__switch {
         &::before {
             left: calc(100% - 25px);
         }
@@ -195,6 +205,7 @@ $block: #{$fd-namespace}-toggle;
 
     // label elements
     &__label {
+        @include fd-reset();
         &--off {
             @include fd-type("-1");
             position: absolute;

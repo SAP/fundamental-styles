@@ -19,16 +19,6 @@
     }
 }
 
-// darken for hover states
-@function fd-color-darker($color) {
-    @return darken($color, 7);
-}
-
-// darken for pressed states
-@function fd-color-darkest($color) {
-    @return darken($color, 10);
-}
-
 //$state: hover, selected, disabled, visited, negative, positive, alert
 //$type: background, action
 @function fd-color-state($state, $type: "background") {

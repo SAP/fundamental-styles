@@ -57,17 +57,11 @@
         }
     }
 
-    .fd-date-picker {
+    .fd-docs-date-picker {
         .fd-popover {
             &__body {
                 padding: 0 12px;
             }
-        }
-    }
-
-    .fd-time-picker {
-        .fd-popover__body {
-            padding: 16px;
         }
     }
 
@@ -79,7 +73,6 @@
 
     .fd-identifier--s {
         display: inline-block;
-        background: transparent;
     }
 
     .fd-mega-menu__header-link,
@@ -118,45 +111,6 @@
               max-height: 410px;
               position: relative;
           }
-
-          .fd-shell__app {
-              height: calc(100%  - 48px);
-              margin-top: 0;
-          }
-          .fd-app__navigation {
-              height: calc(100%  - 48px);
-              margin-top: 48px;
-              background-color: fd-color(background, 2);
-              padding: 10px;
-              text-align: center;
-              color: #000;
-          }
-
-        .fd-shell__app,
-          .fd-shell,
-          .fd-app {
-              width: 100%;
-              max-width: 100%;
-              min-height: 410px;
-              max-height: 410px;
-          }
-
-        .fd-shell__header,
-        .fd-shell__footer,
-        .fd-app__main {
-            padding: 10px;
-            text-align: center;
-            color: #000;
-        }
-
-        .fd-shell__header, .fd-shell__footer {
-            background-color: fd-color(neutral, 3);
-        }
-
-        .fd-app__main {
-            background-color: fd-color(neutral, 1);
-            padding-top: 50px;
-        }
 
         .fd-overlay {
             position: absolute;

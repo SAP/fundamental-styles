@@ -1,7 +1,6 @@
 @import "./../settings";
 @import "./../mixins";
 @import "./../functions";
-@import "./../icons/mixins";
 
 /*!
 .fd-button+( (--compact), (--emphasized, --light), (--standard, --positive, --medium, --negative))+( (.is-disabled | [aria-disabled=true]) | (.is-selected | [aria-selected=true] | (.is-pressed | [aria-pressed=true]))

@@ -122,40 +122,6 @@
             float: right;
         }
 
-        &-search-box {
-            margin-bottom: 40px;
-
-            .search-box__input {
-                border-radius: 40px !important;
-                font-size: 22px;
-                padding: 30px;
-                padding-left: 60px !important;
-                border-color: $docs-home-dark-color !important;
-                background-color: transparent !important;
-                color: $docs-home-dark-color !important;
-            }
-            .search-box__icon {
-                font-size: 30px;
-                color: $docs-home-dark-color;
-                padding-left: 10px;
-            }
-            .search-box__results {
-                border: none;
-                top: 65px;
-                padding: 0;
-                margin-left: 50px;
-                width: calc(100% - 100px);
-            }
-            .search-box__results-links a {
-                font-size: 20px;
-            }
-            .search-box__results-links a:hover {
-                color: docs-color(action, 3);
-                background: transparent;
-                text-decoration: none;
-            }
-        }
-
         &-resources-link {
             display: block;
             color: docs-color(action, 4);

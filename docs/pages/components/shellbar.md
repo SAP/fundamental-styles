@@ -92,11 +92,11 @@ This example includes the product menu for navigating to applications within the
     <div class="fd-product-menu">
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
-          <button class="fd-product-menu__control" aria-controls="9GLB2694" aria-haspopup="true" aria-expanded="false">
+          <button class="fd-product-menu__control" aria-controls="9GLB26941" aria-haspopup="true" aria-expanded="false">
             <span class="fd-shellbar__title">Corporate Portal</span>
           </button>
         </div>
-        <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="9GLB2694">
+        <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="9GLB26941">
           <nav class="fd-menu">
             <ul class="fd-menu__list">
               <li><a role="button" class="fd-menu__item">Application A</a></li>
@@ -117,7 +117,7 @@ This example includes the product menu for navigating to applications within the
           <div class="fd-popover__control">
               <div aria-label="Image label" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
                   <div class="fd-input-group">
-                      <input type="text" class="fd-input" id="F4GcX348b1" value="Sear" placeholder="Search..." aria-hidden="true">
+                      <input type="text" class="fd-input fd-input-group__input" id="F4GcX348b1" value="Sear" placeholder="Search..." aria-hidden="true">
                       <span class="fd-input-group__addon fd-input-group__addon--button">
                           <button class="fd-shellbar__button fd-button sap-icon--search"></button>
                       </span>
@@ -176,9 +176,9 @@ When a product has multiple links, the product links should collapse into an ove
          <div class="fd-popover">
           <div class="fd-popover__control">
               <div aria-label="Image label" aria-controls="UIO6J688" aria-expanded="false" aria-haspopup="true">
-                  <div class="fd-input-group fd-input-group--after">
-                      <input type="text" class="fd-input" id="UIO6J6881" value="Sear" aria-hidden="true">
-                      <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
+                  <div class="fd-input-group">
+                      <input type="text" class="fd-input fd-input-group__input" id="UIO6J6881" value="Sear" aria-hidden="true">
+                      <span class="fd-input-group__addon fd-input-group__addon--button">
                           <button class="fd-shellbar__button fd-button sap-icon--search"></button>
                       </span>
                   </div>

@@ -16,7 +16,8 @@ Place patterns and interactions within panels on your pages to achieve focus and
 > {{ site.data.strings.headerDisclaimer }}
 
 ## Elements
-
+- `.fd-panel__header`: Panel header.
+- `.fd-panel__head`: Container for title and description.
 - `.fd-panel__title`: Title of the panel.
 - `.fd-panel__description`: Title of the description.
 - `.fd-panel__actions`: Panel level actions such as add, remove, delete, sort, etc.

@@ -18,10 +18,10 @@ summary:
          <label class="fd-form-label" for="vTshu851">
          Localization Editor Label
          </label>
-         <div class="fd-input-group fd-input-group--after">
-            <input type="text" class="fd-input" id="" aria-controls="NJvVh542c" aria-expanded="false"
+         <div class="fd-input-group">
+            <input type="text" class="fd-input fd-input-group__input" id="" aria-controls="NJvVh542c" aria-expanded="false"
             aria-haspopup="true" placeholder="Enter Label">
-            <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
+            <span class="fd-input-group__addon fd-input-group__addon--button">
             <button class="fd-button--light"
             aria-controls="NJvVh542c" aria-expanded="false" aria-haspopup="true">EN*</button>
             </span>
@@ -31,25 +31,25 @@ summary:
          <nav class="fd-menu">
             <ul class="fd-menu__list">
                <li class="fd-localization-editor__language">
-                  <div class="fd-input-group fd-input-group--after">
-                     <input type="text" class="fd-input" id="" placeholder="Enter Label">
-                     <span class="fd-input-group__addon fd-input-group__addon--after">
+                  <div class="fd-input-group">
+                     <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Enter Label">
+                     <span class="fd-input-group__addon">
                      ES
                      </span>
                   </div>
                </li>
                <li class="fd-localization-editor__language">
-                  <div class="fd-input-group fd-input-group--after">
-                     <input type="text" class="fd-input"  id="" placeholder="Enter Label">
-                     <span class="fd-input-group__addon fd-input-group__addon--after">
+                  <div class="fd-input-group">
+                     <input type="text" class="fd-input fd-input-group__input"  id="" placeholder="Enter Label">
+                     <span class="fd-input-group__addon">
                      CH
                      </span>
                   </div>
                </li>
                <li class="fd-localization-editor__language">
-                  <div class="fd-input-group fd-input-group--after">
-                     <input type="text" class="fd-input" id="" placeholder="Enter Label">
-                     <span class="fd-input-group__addon fd-input-group__addon--after">
+                  <div class="fd-input-group">
+                     <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Enter Label">
+                     <span class="fd-input-group__addon">
                      PL
                      </span>
                   </div>
@@ -68,11 +68,11 @@ summary:
          <label class="fd-form-label" for="vTshu851">
          Localization Editor Compact Mode
          </label>
-         <div class="fd-input-group fd-input-group--compact fd-input-group--after">
-            <input type="text" class="fd-input fd-input--compact" id="" aria-controls="test22" aria-expanded="false"
+         <div class="fd-input-group">
+            <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" aria-controls="test22" aria-expanded="false"
             aria-haspopup="true" placeholder="Enter Label">
-            <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
-            <button class="fd-button--light"
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+            <button class="fd-button--light fd-button--compact"
             aria-controls="test22" aria-expanded="false" aria-haspopup="true">EN*</button>
             </span>
          </div>
@@ -81,25 +81,25 @@ summary:
          <nav class="fd-menu">
             <ul class="fd-menu__list">
                <li class="fd-localization-editor__language">
-                  <div class="fd-input-group fd-input-group--after fd-input-group--compact">
-                     <input type="text" class="fd-input fd-input--compact" id="" placeholder="Enter Label">
-                     <span class="fd-input-group__addon fd-input-group__addon--after">
+                  <div class="fd-input-group">
+                     <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Enter Label">
+                     <span class="fd-input-group__addon">
                      ES
                      </span>
                   </div>
                </li>
                <li class="fd-localization-editor__language">
-                  <div class="fd-input-group fd-input-group--after fd-input-group--compact">
-                     <input type="text" class="fd-input fd-input--compact" id="" placeholder="Enter Label">
-                     <span class="fd-input-group__addon fd-input-group__addon--after">
+                  <div class="fd-input-group">
+                     <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Enter Label">
+                     <span class="fd-input-group__addon ">
                      CH
                      </span>
                   </div>
                </li>
                <li class="fd-localization-editor__language">
-                  <div class="fd-input-group fd-input-group--after fd-input-group--compact">
-                     <input type="text" class="fd-input fd-input--compact" id="" placeholder="Enter Label">
-                     <span class="fd-input-group__addon fd-input-group__addon--after">
+                  <div class="fd-input-group">
+                     <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Enter Label">
+                     <span class="fd-input-group__addon">
                      PL
                      </span>
                   </div>
@@ -123,10 +123,10 @@ summary:
          <label class="fd-form-label" for="vTshu851">
          Localization Editor Label
          </label>
-         <div class="fd-input-group fd-input-group--after">
-            <textarea class="fd-textarea" id="" aria-controls="NJvVh542" aria-expanded="false"
+         <div class="fd-input-group ">
+            <textarea class="fd-textarea fd-input-group__input" id="" aria-controls="NJvVh542" aria-expanded="false"
             aria-haspopup="true"></textarea>
-            <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--textarea fd-input-group__addon--button">
+            <span class="fd-input-group__addon  fd-input-group__addon--textarea fd-input-group__addon--button">
             <button class="fd-button--light"
             aria-controls="NJvVh542" aria-expanded="false" aria-haspopup="true">EN*</button>
             </span>
@@ -136,25 +136,25 @@ summary:
          <nav class="fd-menu">
             <ul class="fd-menu__list">
                <li class="fd-localization-editor__language">
-                  <div class="fd-input-group fd-input-group--after">
-                     <textarea class="fd-textarea" id=""></textarea>
-                     <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--textarea">
+                  <div class="fd-input-group ">
+                     <textarea class="fd-textarea fd-input-group__input" id=""></textarea>
+                     <span class="fd-input-group__addon  fd-input-group__addon--textarea">
                      ES
                      </span>
                   </div>
                </li>
                <li class="fd-localization-editor__language">
-                  <div class="fd-input-group fd-input-group--after">
-                     <textarea class="fd-textarea" id=""></textarea>
-                     <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--textarea">
+                  <div class="fd-input-group ">
+                     <textarea class="fd-textarea fd-input-group__input" id=""></textarea>
+                     <span class="fd-input-group__addon  fd-input-group__addon--textarea">
                      CH
                      </span>
                   </div>
                </li>
                <li class="fd-localization-editor__language">
-                  <div class="fd-input-group fd-input-group--after">
-                     <textarea class="fd-textarea" id=""></textarea>
-                     <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--textarea">
+                  <div class="fd-input-group ">
+                     <textarea class="fd-textarea fd-input-group__input" id=""></textarea>
+                     <span class="fd-input-group__addon  fd-input-group__addon--textarea">
                      PL
                      </span>
                   </div>

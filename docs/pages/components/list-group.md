@@ -84,28 +84,22 @@ Checkboxes can be include on the left of each line for such purposes as bulk act
 {% capture list-group-actions-form %}
 <ul class="fd-list-group">
     <li class="fd-list-group__item">
-        <div class="fd-form-item">
-            <label class="fd-form-label" for="121Sd939">
-                <input type="checkbox" class="fd-checkbox" id="121Sd939">
-                List item 1
-            </label>
-        </div>
+        <label class="fd-form-label" for="121Sd939">
+            <input type="checkbox" class="fd-checkbox" id="121Sd939">
+            List item 1
+        </label>
     </li>
     <li class="fd-list-group__item">
-        <div class="fd-form-item">
-            <label class="fd-form-label" for="CndSd399">
-                <input type="checkbox" class="fd-checkbox" id="CndSd399">
-                List item 2 sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </label>
-        </div>
+        <label class="fd-form-label" for="CndSd399">
+            <input type="checkbox" class="fd-checkbox" id="CndSd399">
+            List item 2 sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        </label>
     </li>
     <li class="fd-list-group__item">
-        <div class="fd-form-item">
-            <label class="fd-form-label" for="S8jyH416">
-                <input type="checkbox" class="fd-checkbox" id="S8jyH416">
-                List item 3
-            </label>
-        </div>
+        <label class="fd-form-label" for="S8jyH416">
+            <input type="checkbox" class="fd-checkbox" id="S8jyH416">
+            List item 3
+        </label>
     </li>
 </ul>
 {% endcapture %}

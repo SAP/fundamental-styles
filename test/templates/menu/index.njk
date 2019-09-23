@@ -46,6 +46,23 @@
   {% endset %}
   {{ format(example) }}
 
+
+<br/><br/><br/>
+  <h2>menu list with disable particular menu item</h2>
+  {% set example %}
+  {{ menu(properties={
+  items: [
+      { "label": "Option 1", "class": "is-disabled"},
+      { "label": "Option 2"},
+      { "label": "Option 3" },
+      { "label": "Option 4" }
+    ],
+    nobutton: true
+   })
+}}
+  {% endset %}
+  {{ format(example) }}
+
   <br/><br/><br/>
   <h2>separated and grouped</h2>
   {% set example %}
@@ -79,7 +96,7 @@
   {% set example %}
   {{ menu(properties={
             items: [
-              { "label": "Option 1", "icon": "accept" },
+              { "label": "Option 1 with very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very  very very very very long menu", "icon": "accept" },
               { "label": "Option 2", "icon": "cart" },
               { "label": "Option 3", "icon": "windows-doors" },
               { "label": "Option 4", "icon": "past" }

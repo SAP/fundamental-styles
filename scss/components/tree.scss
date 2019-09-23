@@ -1,6 +1,5 @@
 @import "./../settings";
 @import "./../mixins";
-@import "./../icons/mixins";
 @import "./../functions";
 
 /*!
@@ -61,7 +60,6 @@ $block: #{$fd-namespace}-tree;
         @include fd-var-color("background-color", $fd-tree-header-background-color, --fd-tree-header-background-color);
     }
     &__group {
-        //see addt'l group classes under __col--first below
         @include fd-reset();
         transition: opacity $fd-animation--speed linear;
         max-height: auto;
