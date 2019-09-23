@@ -14,21 +14,3 @@ mergeable:
         must_exclude:
           regex: \[ \]
           message: There are incomplete TODO task(s) unchecked.
-      - do: approvals
-        or:
-          - required:
-              reviewers: [ 'InnaAtanasova' ] 
-          - required:
-              reviewers: [ 'droshev' ]  
-          - required:
-              reviewers: [ 'jbadan' ]  
-          - required:
-              reviewers: [ 'greg-a-smith' ]  
-          - required:
-              reviewers: [ 'bcullman' ]  
-          - required:
-              reviewers: [ 'hertweckhr1' ]
-          - required:
-              reviewers: [ 'markpalfreeman' ]
-          - min:
-              count: 2
