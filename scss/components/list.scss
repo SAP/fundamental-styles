@@ -1,0 +1,135 @@
+@import "./../settings";
+@import "./../mixins";
+@import "./../functions";
+
+/*!
+.fd-list
+  .fd-list__item
+*/
+$block: #{$fd-namespace}-list;
+
+.#{$block} {
+  @include fd-reset();
+  list-style: none;
+  width: 100%;
+
+  &__item,
+  &__group-header,
+  &__footer {
+    @include fd-reset();
+    background: var(--sapList_Background);
+    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+    padding: 0 1rem;
+    height: 2.75rem;
+    color: var(--sapList_TextColor);
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    @include fd-reset();
+    flex: 1 1 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: var(--sapFontLargeSize);
+
+    &--col1 {
+      flex: 3 3 10%;
+    }
+
+    &--col2 {
+      flex: 2 2 10%;
+      text-align: right;
+      font-size: var(--sapFontSize);
+      margin-left: 1rem;
+    }
+  }
+
+  &__icon {
+    @include fd-reset();
+    flex: 0 0 auto;
+    width: 2.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--sapFontHeader4Size);
+
+    &:first-child {
+      margin-left: -1rem;
+    }
+
+    &:last-child {
+      margin-right: -1rem;
+    }
+  }
+
+  &__item {
+    @include fd-hover() {
+      background: var(--sapList_Hover_Background);
+    }
+  }
+
+  &__group-header {
+    background: var(--sapList_GroupHeaderBackground);
+    border-bottom-color: var(--sapList_GroupHeaderBorderColor);
+    color: var(--sapList_GroupHeaderTextColor);
+    align-items: flex-end;
+    font-size: var(--sapFontSize);
+    font-weight: bold;
+    line-height: 2rem;
+  }
+
+  &__footer {
+    background: var(--sapList_FooterBackground);
+    color: var(--sapList_FooterTextColor);
+    font-size: var(--sapFontSize);
+    height: 2rem;
+    border-bottom: 0;
+  }
+
+  &--compact {
+    .#{$block}__item {
+      height: 2rem;
+    }
+
+    .#{$block}__title {
+      font-size: var(--sapFontSize);
+    }
+
+    .#{$block}__icon {
+      font-size: var(--sapFontLargeSize);
+    }
+  }
+
+  &--no-border {
+    .#{$block}__item {
+      border-bottom: 0;
+    }
+  }
+
+// //LOCAL VARS (set all vars used in component, always include !default)
+// $fd-list-group-background-color: transparent !default;
+// $fd-list-group-background-color--hover: fd-color-state("hover") !default;
+// $fd-list-group-item-padding-x: fd-space(4) !default;
+// $fd-list-group-item-padding-y: fd-space(2) + 2px !default;
+// $fd-list-group-action-height: fd-space(10) !default;
+// $fd-list-group-transition-params: $fd-animation--speed ease-in !default;
+
+// --fd-list-group-background-color: transparent;
+
+// @include fd-reset();
+// &__item {
+//   @include fd-reset();
+//   list-style: none;
+//   padding: $fd-list-group-item-padding-y $fd-list-group-item-padding-x;
+//   display: flex;
+//   position: relative;
+//   @include fd-var-color("background-color", $fd-list-group-background-color, --fd-list-group-background-color);
+//   transition: background-color $fd-list-group-transition-params;
+//   &:hover {
+//     --fd-list-group-background-color: var(--fd-color-background-hover);
+//     @include fd-var-color("background-color", $fd-list-group-background-color--hover, --fd-color-background-hover);
+//   }
+// }
+}

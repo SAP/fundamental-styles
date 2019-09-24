@@ -1,0 +1,29 @@
+{% macro list(properties={}, modifier=[], action={}) %}
+<ul class="fd-list{{ modifier | modifier('list') }}">
+    <li class="fd-list__group-header">
+        Group Header
+    </li>
+    {%- for item in properties.items %}
+    <li class="fd-list__item">
+        <span class="fd-list__icon">X</span>
+        <span class="fd-list__title fd-list__title--col1">{{item}}</span>
+        <span class="fd-list__title fd-list__title--col2">Status</span>
+        <span class="fd-list__icon">X</span>
+    </li>
+    {%- endfor %}
+    <li class="fd-list__group-header">
+        Group Header
+    </li>
+    {%- for item in properties.items %}
+    <li class="fd-list__item">
+        <span class="fd-list__icon">X</span>
+        <span class="fd-list__title fd-list__title--col1">{{item}}</span>
+        <span class="fd-list__title fd-list__title--col2">Status</span>
+        <span class="fd-list__icon">X</span>
+    </li>
+    {%- endfor %}
+    <li class="fd-list__footer">
+        Footer
+    </li>
+</ul>
+{%- endmacro %}

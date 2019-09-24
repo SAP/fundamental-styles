@@ -1,0 +1,25 @@
+{% extends "layout.njk" %}
+{% from "./component.njk" import list %}
+{% from "./../format.njk" import format %}
+
+{% block content %}
+
+    <h2>default</h2>
+    {% set example %}
+    {{  list({ items: data.properties.items }) }}
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>compact</h2>
+    {% set example %}
+    {{  list({ items: data.properties.items }, modifier=['compact']) }}
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>borderless</h2>
+    {% set example %}
+    {{  list({ items: data.properties.items }, modifier=['no-border']) }}
+    {% endset %}
+    {{ format(example) }}
+
+{% endblock %}

@@ -13,11 +13,9 @@ $block: #{$fd-namespace}-select;
         width: 100%;
         text-align: left;
 
-        $fd-dropdown-menu-item-transition-params: $fd-animation--speed ease-in !default;
-
         @include fd-icon-base("after");
         @include fd-icon-glyph("slim-arrow-down","after") {
-            transition: transform $fd-dropdown-menu-item-transition-params;
+            transition: transform $fd-animation--speed ease-in;
         }
         position: relative;
         padding-right: $fd-forms-height + $fd-forms-padding - 2;
