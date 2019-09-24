@@ -1,9 +1,9 @@
 @import "./settings";
 @import "./mixins";
 @import "./functions";
-@import "./shellbar/product-menu";
-@import "./shellbar/product-switcher";
-@import "./shellbar/search-input";
+@import "./product-menu";
+@import "./product-switcher";
+@import "./search-input";
 
 $block: #{$fd-namespace}-shellbar;
 
