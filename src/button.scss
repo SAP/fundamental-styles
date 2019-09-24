@@ -150,7 +150,7 @@ a.#{$block} {
       line-height: 1;
     }
   }
-  // compact sizes (see `core/root` for css vars rules)
+  // compact sizes (see `root` for css vars rules)
   &--compact {
     // set metrics
     @include fd-var-size("height", $fd-forms-height, --fd-forms-height-compact);
