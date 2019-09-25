@@ -1,29 +1,38 @@
-//DEPRECATE 1.6
+// DEPRECATE 1.6
 @import "./../settings";
+
 .#{$fd-namespace}-has-text-transform-none {
-    text-transform: none !important;
+  text-transform: none !important;
 }
+
 .#{$fd-namespace}-has-text-transform-uppercase {
-    text-transform: uppercase !important;
+  text-transform: uppercase !important;
 }
+
 .#{$fd-namespace}-has-text-transform-lowercase {
-    text-transform: lowercase !important;
+  text-transform: lowercase !important;
 }
+
 .#{$fd-namespace}-has-font-weight-bold {
-    font-weight: bold !important;
+  font-weight: bold !important;
 }
+
 .#{$fd-namespace}-has-font-style-italic {
-    font-style: italic !important;
+  font-style: italic !important;
 }
+
 .#{$fd-namespace}-has-text-align-center {
-    text-align: center !important;
+  text-align: center !important;
 }
+
 .#{$fd-namespace}-has-text-align-right {
-    text-align: right !important;
+  text-align: right !important;
 }
+
 .#{$fd-namespace}-has-float-left {
-    float: left !important;
+  float: left !important;
 }
+
 .#{$fd-namespace}-has-float-right {
-    float: right !important;
+  float: right !important;
 }

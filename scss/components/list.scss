@@ -10,6 +10,7 @@ $block: #{$fd-namespace}-list;
 
 .#{$block} {
   @include fd-reset();
+
   list-style: none;
   width: 100%;
 
@@ -17,6 +18,7 @@ $block: #{$fd-namespace}-list;
   &__group-header,
   &__footer {
     @include fd-reset();
+
     background: var(--sapList_Background);
     border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
     padding: 0 1rem;
@@ -28,6 +30,7 @@ $block: #{$fd-namespace}-list;
 
   &__title {
     @include fd-reset();
+
     flex: 1 1 auto;
     white-space: nowrap;
     overflow: hidden;
@@ -48,6 +51,7 @@ $block: #{$fd-namespace}-list;
 
   &__icon {
     @include fd-reset();
+
     flex: 0 0 auto;
     width: 2.75rem;
     display: flex;
@@ -108,28 +112,28 @@ $block: #{$fd-namespace}-list;
     }
   }
 
-// //LOCAL VARS (set all vars used in component, always include !default)
-// $fd-list-group-background-color: transparent !default;
-// $fd-list-group-background-color--hover: fd-color-state("hover") !default;
-// $fd-list-group-item-padding-x: fd-space(4) !default;
-// $fd-list-group-item-padding-y: fd-space(2) + 2px !default;
-// $fd-list-group-action-height: fd-space(10) !default;
-// $fd-list-group-transition-params: $fd-animation--speed ease-in !default;
+  // //LOCAL VARS (set all vars used in component, always include !default)
+  // $fd-list-group-background-color: transparent !default;
+  // $fd-list-group-background-color--hover: fd-color-state("hover") !default;
+  // $fd-list-group-item-padding-x: fd-space(4) !default;
+  // $fd-list-group-item-padding-y: fd-space(2) + 2px !default;
+  // $fd-list-group-action-height: fd-space(10) !default;
+  // $fd-list-group-transition-params: $fd-animation--speed ease-in !default;
 
-// --fd-list-group-background-color: transparent;
+  // --fd-list-group-background-color: transparent;
 
-// @include fd-reset();
-// &__item {
-//   @include fd-reset();
-//   list-style: none;
-//   padding: $fd-list-group-item-padding-y $fd-list-group-item-padding-x;
-//   display: flex;
-//   position: relative;
-//   @include fd-var-color("background-color", $fd-list-group-background-color, --fd-list-group-background-color);
-//   transition: background-color $fd-list-group-transition-params;
-//   &:hover {
-//     --fd-list-group-background-color: var(--fd-color-background-hover);
-//     @include fd-var-color("background-color", $fd-list-group-background-color--hover, --fd-color-background-hover);
-//   }
-// }
+  // @include fd-reset();
+  // &__item {
+  //   @include fd-reset();
+  //   list-style: none;
+  //   padding: $fd-list-group-item-padding-y $fd-list-group-item-padding-x;
+  //   display: flex;
+  //   position: relative;
+  //   @include fd-var-color("background-color", $fd-list-group-background-color, --fd-list-group-background-color);
+  //   transition: background-color $fd-list-group-transition-params;
+  //   &:hover {
+  //     --fd-list-group-background-color: var(--fd-color-background-hover);
+  //     @include fd-var-color("background-color", $fd-list-group-background-color--hover, --fd-color-background-hover);
+  //   }
+  // }
 }

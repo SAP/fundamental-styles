@@ -14,6 +14,7 @@ $fd-shell-header-fixed: true !default;
 $fd-shell-footer-height: 40px !default;
 
 $block: #{$fd-namespace}-shell;
+
 .#{$block} {
   overflow: hidden;
   position: absolute;
@@ -23,18 +24,22 @@ $block: #{$fd-namespace}-shell;
   max-width: 100%;
   background-size: cover;
   background-attachment: fixed;
+
   &--fixed {
     display: flex;
     flex-direction: column;
     max-height: 100vh;
+
     .#{$block}__header {
       flex: 0 0 $fd-shell-header-height;
       position: static;
     }
+
     & .#{$block}__footer {
       flex: 0 0 $fd-shell-footer-height;
       position: static;
     }
+
     & .#{$block}__app {
       overflow: hidden;
       margin-top: 0;
@@ -42,20 +47,25 @@ $block: #{$fd-namespace}-shell;
       min-height: auto;
     }
   }
+
   &__header {
     @include fd-var-color("background-color", $fd-shell-header-background-color, --fd-color-shell-1);
+
     position: absolute;
     z-index: map-get($fd-z-index-levels, "first");
     width: 100%;
     height: $fd-shell-header-height;
+
     &--fixed {
       position: fixed;
     }
   }
+
   &__footer {
     width: 100%;
     min-height: $fd-shell-footer-height;
   }
+
   &__app {
     margin-top: $fd-shell-header-height;
     min-height: calc(100vh - #{$fd-shell-footer-height} - #{$fd-shell-header-height});
@@ -63,6 +73,7 @@ $block: #{$fd-namespace}-shell;
     display: flex;
     position: relative;
   }
+
   &__overlay {
     position: absolute;
   }

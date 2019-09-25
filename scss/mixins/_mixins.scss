@@ -1,119 +1,138 @@
 @import "vars";
-//utils
+// utils
 @mixin fd-reset {
-    font-size: $fd-font-size;
-    line-height: $fd-line-height;
-    @include fd-var-color("color", $fd-color, --fd-color-text-1);
-    font-family: $fd-font-family;
-    font-weight: normal;
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    &::before,
-    &::after {
-        box-sizing: inherit;
-    }
+  font-size: $fd-font-size;
+  line-height: $fd-line-height;
+
+  @include fd-var-color("color", $fd-color, --fd-color-text-1);
+
+  font-family: $fd-font-family;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
 }
+
 @mixin fd-reset-spacing {
   padding: 0;
   margin: 0;
 }
 
 @mixin fd-reset-child-spacing {
-  &:nth-child(n+1) {
+  &:nth-child(n + 1) {
     margin: 0;
   }
 }
 
 @mixin fd-children {
-  &:nth-child(n+1) {
+  &:nth-child(n + 1) {
     @content;
   }
 }
 
 @mixin fd-clearfix {
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
+
 @mixin fd-last-child {
-    &:last-child {
-        margin-bottom: 0;
-        margin-right: 0;
-        @content;
-    }
+  &:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+    @content;
+  }
 }
+
 @mixin fd-first-child {
-    &:first-child {
-        margin-left: 0;
-        @content;
-    }
+  &:first-child {
+    margin-left: 0;
+    @content;
+  }
 }
+
 @mixin fd-screen($size, $dimension: width) {
   @if map-has-key($fd-breakpoints, $size) {
     @media (min-#{$dimension}: map-get($fd-breakpoints, $size)) {
-        @content;
+      @content;
     }
   } @else {
     @warn "Unknown `#{$size}` in $fd-breakpoints map";
   }
 }
+
 @mixin fd-print() {
-	@media print {
-		@content;
-	}
+  @media print {
+    @content;
+  }
 }
-//Taken from https://github.com/thoughtbot/bourbon/blob/master/core/bourbon/library/_triangle.scss
-@mixin triangle($size, $color, $direction, $varcolor:null) {
+// Taken from https://github.com/thoughtbot/bourbon/blob/master/core/bourbon/library/_triangle.scss
+@mixin triangle($size, $color, $direction, $varcolor: null) {
   $width: nth($size, 1);
   $height: nth($size, length($size));
   $foreground-color: nth($color, 1);
   $background-color: if(length($color) == 2, nth($color, 2), transparent);
+
   height: 0;
   width: 0;
   border-style: solid;
+
   @if ($direction == up) or ($direction == down) or ($direction == right) or ($direction == left) {
     $width: $width / 2;
     $height: if(length($size) > 1, $height, $height/2);
+
     @if $direction == up {
       border-width: 0 $width $height $width;
+
       @if $varcolor {
         @include fd-var-color("border-bottom-color", $foreground-color, $varcolor);
       } @else {
         border-bottom-color: $foreground-color;
       }
+
       border-left-color: $background-color;
       border-right-color: $background-color;
     } @else if $direction == right {
       border-width: $width 0 $width $height;
       border-bottom-color: $background-color;
+
       @if $varcolor {
         @include fd-var-color("border-left-color", $foreground-color, $varcolor);
       } @else {
         border-left-color: $foreground-color;
       }
+
       border-top-color: $background-color;
     } @else if $direction == down {
       border-width: $height $width 0 $width;
+
       @if $varcolor {
         @include fd-var-color("border-top-color", $foreground-color, $varcolor);
       } @else {
         border-top-color: $foreground-color;
       }
+
       border-left-color: $background-color;
       border-right-color: $background-color;
     } @else if $direction == left {
       border-width: $width $height $width 0;
       border-bottom-color: $background-color;
+
       @if $varcolor {
         @include fd-var-color("border-right-color", $foreground-color, $varcolor);
       } @else {
         border-right-color: $foreground-color;
       }
+
       border-top-color: $background-color;
     }
   } @else if ($direction == up-right) or ($direction == up-left) {
@@ -150,13 +169,15 @@
     border-width: $width $height;
   }
 }
+
 @mixin rotate($deg: 90) {
-    $sDeg: #{$deg}deg;
-    -webkit-transform: rotate($sDeg);
-    -moz-transform: rotate($sDeg);
-    -ms-transform: rotate($sDeg);
-    -o-transform: rotate($sDeg);
-    transform: rotate($sDeg);
+  $sDeg: #{$deg}deg;
+
+  -webkit-transform: rotate($sDeg);
+  -moz-transform: rotate($sDeg);
+  -ms-transform: rotate($sDeg);
+  -o-transform: rotate($sDeg);
+  transform: rotate($sDeg);
 }
 
 @mixin fd-button-reset {
@@ -166,7 +187,6 @@
   appearance: none;
   outline: 0;
   border: 0;
-  display: inline-block;
   text-decoration: none;
   cursor: pointer;
   user-select: none;
@@ -181,95 +201,123 @@
   @at-root {
     [dir="rtl"] &,
     &[dir="rtl"] {
-        @content;
+      @content;
     }
   }
 }
 
 @mixin fd-hide-on-xs {
-    @include fd-screen(xs) {
-        display: none !important;
-    }
+  @include fd-screen(xs) {
+    display: none !important;
+  }
 }
+
 @mixin fd-hide-on-s {
-    @include fd-screen(s) {
-        display: none !important;
-    }
+  @include fd-screen(s) {
+    display: none !important;
+  }
 }
+
 @mixin fd-hide-on-m {
-    @include fd-screen(m) {
-        display: none !important;
-    }
+  @include fd-screen(m) {
+    display: none !important;
+  }
 }
 
 @mixin fd-hide-on-l {
-    @include fd-screen(l) {
-        display: none !important;
-    }
+  @include fd-screen(l) {
+    display: none !important;
+  }
 }
+
 @mixin fd-hide-on-xl {
-    @include fd-screen(xl) {
-        display: none !important;
-    }
+  @include fd-screen(xl) {
+    display: none !important;
+  }
 }
 
 @mixin fd-show-on-xs {
-    @include fd-screen(xs) {
-        display: block !important;
-    }
+  @include fd-screen(xs) {
+    display: block !important;
+  }
 }
+
 @mixin fd-show-on-s {
-    @include fd-screen(s) {
-        display: block !important;
-    }
+  @include fd-screen(s) {
+    display: block !important;
+  }
 }
+
 @mixin fd-show-on-m {
-    @include fd-screen(m) {
-        display: block !important;
-    }
+  @include fd-screen(m) {
+    display: block !important;
+  }
 }
 
 @mixin fd-show-on-l {
-    @include fd-screen(l) {
-        display: block !important;
-    }
+  @include fd-screen(l) {
+    display: block !important;
+  }
 }
+
 @mixin fd-show-on-xl {
-    @include fd-screen(xl) {
-        display: block !important;
-    }
+  @include fd-screen(xl) {
+    display: block !important;
+  }
 }
 
 @mixin fd-link($color: $fd-color--action) {
   @include fd-var-color("color", $fd-color--action, --fd-color-action-1);
+
   text-decoration: none;
   display: inline-block;
   transition: all $fd-animation--speed ease-in;
   border-bottom-style: solid;
   border-bottom-width: 1px;
+
   @include fd-var-color("border-bottom-color", $fd-color--action, --fd-color-action-1);
+
   @include fd-hover() {
     @include fd-var-color("color", map-get($fd-colors-action-states, "hover"), --fd-color-action-hover);
     @include fd-var-color("border-bottom-color", map-get($fd-colors-action-states, "hover"), --fd-color-action-hover);
   }
+
   &:visited {
     @include fd-var-color("color", map-get($fd-colors-action-states, "visited"), --fd-color-action-visited);
-    @include fd-var-color("border-bottom-color", map-get($fd-colors-action-states, "visited"), --fd-color-action-visited);
+    @include fd-var-color(
+      "border-bottom-color",
+      map-get($fd-colors-action-states, "visited"),
+      --fd-color-action-visited
+    );
   }
+
   @include fd-active-pressed-selected() {
     @include fd-var-color("color", map-get($fd-colors-action-states, "selected"), --fd-color-action-selected);
-    @include fd-var-color("border-bottom-color", map-get($fd-colors-action-states, "selected"), --fd-color-action-selected);
+    @include fd-var-color(
+      "border-bottom-color",
+      map-get($fd-colors-action-states, "selected"),
+      --fd-color-action-selected
+    );
+
     outline: none;
   }
+
   @include fd-disabled() {
     @include fd-var-color("color", map-get($fd-colors-action-states, "disabled"), --fd-color-action-disabled);
-    @include fd-var-color("border-bottom-color", map-get($fd-colors-action-states, "disabled"), --fd-color-action-disabled);
+    @include fd-var-color(
+      "border-bottom-color",
+      map-get($fd-colors-action-states, "disabled"),
+      --fd-color-action-disabled
+    );
     @include fd-var-color("outline-color", fd-color-state("disabled", "action"), --fd-color-action-disabled);
+
     cursor: not-allowed;
   }
+
   &:focus {
     outline-style: dotted;
     outline-width: 1px;
+
     @include fd-var-color("outline-color", fd-color-state("hover", "action"), --fd-color-action-focus);
   }
 }

@@ -3,11 +3,13 @@
   $_map: $fd-type;
   $_size: "0";
   $list: map-get($_map, "0");
+
   @if map-has-key($_map, $size) {
     $list: map-get($_map, $size);
   } @else {
     @warn "Invalid $size of `#{$size}` in the map $fd-type. Valid $size values are #{map-keys($_map)}. Returning `#{$_size}`.";
   }
+
   @return nth($list, 1);
 }
 
@@ -16,11 +18,13 @@
   $_map: $fd-type;
   $_size: "0";
   $list: map-get($_map, "0");
+
   @if map-has-key($_map, $size) {
     $list: map-get($_map, $size);
   } @else {
     @warn "Invalid $size of `#{$size}` in the map $fd-type. Valid $size values are #{map-keys($_map)}. Returning `#{$_size}`.";
   }
+
   @return nth($list, 2);
 }
 
@@ -28,13 +32,16 @@
 @function fd-font-weight($weight: "normal") {
   $_map: $fd-weights;
   $_weight: map-get($_map, "normal");
+
   @if $weight == "reg" {
     $weight: "normal";
   }
+
   @if map-has-key($_map, $weight) {
     $_weight: map-get($_map, $weight);
   } @else {
     @warn "Invalid $weight of `#{$weight}` in the map $fd-weights. Valid $weight values are #{map-keys($_map)}. Returning `#{$_weight}`.";
   }
+
   @return $_weight;
 }

@@ -11,161 +11,200 @@
                 .fd-tree__control+([aria-pressed] | .is-pressed)
 */
 $block: #{$fd-namespace}-tree;
+
 .#{$block} {
-    //LOCAL VARS (set all themeable properties, always include !default)
-    $fd-tree-background-color: fd-color("background", 2) !default;
-    $fd-tree-border-color: fd-color("neutral", 2) !default;
-    $fd-tree-border-width: 0 !default;
-    $fd-tree-link-color: fd-color(action, 1) !default;
-    $fd-tree-cell-spacing: $fd-width--gutter !default;
-    --fd-tree-cell-spacing: var(--fd-width-gutter);
-    $fd-tree-cell-padding: fd-space(3) !default;
-    $fd-tree-header-color: fd-color("text", 3) !default;
-    $fd-tree-header-background-color: fd-color("neutral", 2) !default;
-    $fd-tree-row-background-color--hover: fd-color-state("hover") !default;
+  // LOCAL VARS (set all themeable properties, always include !default)
+  $fd-tree-background-color: fd-color("background", 2) !default;
+  $fd-tree-border-color: fd-color("neutral", 2) !default;
+  $fd-tree-border-width: 0 !default;
+  $fd-tree-link-color: fd-color(action, 1) !default;
+  $fd-tree-cell-spacing: $fd-width--gutter !default;
 
-    $fd-tree-control-width: 18px !default;
-    $fd-tree-control-button-width-height: 34px !default;
-    $fd-tree-control-margin-right: fd-space(2) !default;
-    $fd-tree-transition-params: $fd-animation--speed ease-in !default;
+  --fd-tree-cell-spacing: var(--fd-width-gutter);
+  $fd-tree-cell-padding: fd-space(3) !default;
+  $fd-tree-header-color: fd-color("text", 3) !default;
+  $fd-tree-header-background-color: fd-color("neutral", 2) !default;
+  $fd-tree-row-background-color--hover: fd-color-state("hover") !default;
 
-    --fd-tree-border-color: var(--fd-color-neutral-2);
-    --fd-tree-background-color: var(--fd-color-background-2);
-    --fd-tree-link-color: var(--fd-color-action-1);
-    --fd-tree-header-color: var(--fd-color-text-3);
-    --fd-tree-header-background-color: var(--fd-color-neutral-2);
+  $fd-tree-control-width: 18px !default;
+  $fd-tree-control-button-width-height: 34px !default;
+  $fd-tree-control-margin-right: fd-space(2) !default;
+  $fd-tree-transition-params: $fd-animation--speed ease-in !default;
 
+  --fd-tree-border-color: var(--fd-color-neutral-2);
+  --fd-tree-background-color: var(--fd-color-background-2);
+  --fd-tree-link-color: var(--fd-color-action-1);
+  --fd-tree-header-color: var(--fd-color-text-3);
+  --fd-tree-header-background-color: var(--fd-color-neutral-2);
+
+  @include fd-reset();
+  @include fd-last-child();
+
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+
+  @include fd-var-color("background-color", $fd-tree-background-color, --fd-tree-background-color);
+
+  border-bottom-style: solid;
+  border-bottom-width: $fd-tree-border-width;
+
+  @include fd-var-color("border-bottom-color", $fd-tree-border-color, --fd-tree-border-color);
+
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: $fd-margin-bottom;
+  margin-left: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--header {
+    border-bottom: 0;
+    border-top-style: solid;
+    border-top-width: $fd-tree-border-width;
+
+    @include fd-var-color("border-top-color", $fd-tree-border-color, --fd-tree-border-color);
+
+    margin-bottom: 0;
+
+    @include fd-var-color("background-color", $fd-tree-header-background-color, --fd-tree-header-background-color);
+  }
+
+  &__group {
     @include fd-reset();
-    @include fd-last-child();
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    @include fd-var-color("background-color", $fd-tree-background-color, --fd-tree-background-color);
-    border-bottom-style: solid;
-    border-bottom-width: $fd-tree-border-width;
-    @include fd-var-color("border-bottom-color", $fd-tree-border-color, --fd-tree-border-color);
+
+    transition: opacity $fd-animation--speed linear;
+    max-height: auto;
+    opacity: 1;
+    margin-bottom: 0;
+    margin-left: 0;
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: $fd-margin-bottom;
-    margin-left: 0;
-    &:last-child {
-        margin-bottom: 0;
+
+    &.is-hidden {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
     }
-    &--header {
-        border-bottom: 0;
-        border-top-style: solid;
-        border-top-width: $fd-tree-border-width;
-        @include fd-var-color("border-top-color", $fd-tree-border-color, --fd-tree-border-color);
-        margin-bottom: 0;
-        @include fd-var-color("background-color", $fd-tree-header-background-color, --fd-tree-header-background-color);
-    }
-    &__group {
-        @include fd-reset();
-        transition: opacity $fd-animation--speed linear;
-        max-height: auto;
-        opacity: 1;
-        margin-bottom: 0;
-        margin-left: 0;
-        padding-left: 0;
-        padding-right: 0;
-        &.is-hidden {
-            max-height: 0;
-            opacity: 0;
-            overflow: hidden;
-        }
-    }
-    &__item {
-        @include fd-reset();
-        border-top-style: solid;
-        border-top-width: $fd-tree-border-width;
-        @include fd-var-color("border-top-color", $fd-tree-border-color, --fd-tree-border-color);
-        margin-bottom: 0;
-        list-style: none;
-    }
-    &__row {
-        @include fd-reset();
-        @include fd-var-size("padding-left", $fd-tree-cell-spacing, --fd-tree-cell-spacing);
-        @include fd-var-size("padding-right", $fd-tree-cell-spacing, --fd-tree-cell-spacing);
-        padding-top: 0;
-        padding-bottom: 0;
-        display: flex;
-        align-items: center;
-        position: relative;
-        transition: background-color $fd-tree-transition-params;
-        @include fd-hover() {
-          @include fd-var-color("background-color", $fd-tree-row-background-color--hover, --fd-color-background-hover);
-        }
-        &--header {
-            @include fd-var-color("color", $fd-tree-header-color, --fd-tree-header-color);
-            @include fd-var-color("background-color", $fd-tree-header-background-color, --fd-tree-header-background-color);
-            text-transform: uppercase;
-            @include fd-hover() {
-                background-color: initial;
-            }
-        }
-        @include fd-selected() {
-            background-color: fd-color-state("selected");
-            @include fd-var-color("background-color", fd-color-state("selected"), --fd-color-background-selected);
-        }
-    }
-    $_row_padding: $fd-tree-control-width + $fd-tree-control-margin-right + 4;
-    &__col {
-        @include fd-reset();
-        flex: 1;
-        padding: $fd-tree-cell-padding 0;
-        //pad to account for control
-        padding-left: $_row_padding;
-        @include fd-rtl() {
-          padding-left: 0;
-          padding-right: $_row_padding;
-        }
-        &--control {
-            flex: auto;
-            width: 20%;
-            //sets 8 sublevels of indentation based on __group level
-            @at-root {
-                @each $i in 1,2,3,4,5,6,7,8 {
-                    .#{$block}__group--sublevel-#{$i} & {
-                        padding-left: $_row_padding * ($i + 1);
-                        @include fd-rtl() {
-                          padding-left: 0;
-                          padding-right: $_row_padding * ($i + 1);
-                        }
-                    }
-                }
-            }
-        }
-        &--actions {
-            @include fd-reset();
-            padding-top: 0;
-            padding-bottom: 0;
-            text-align: right;
-            @include fd-rtl() {
-              text-align: left;
-            }
-        }
+  }
+
+  &__item {
+    @include fd-reset();
+
+    border-top-style: solid;
+    border-top-width: $fd-tree-border-width;
+
+    @include fd-var-color("border-top-color", $fd-tree-border-color, --fd-tree-border-color);
+
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  &__row {
+    @include fd-reset();
+    @include fd-var-size("padding-left", $fd-tree-cell-spacing, --fd-tree-cell-spacing);
+    @include fd-var-size("padding-right", $fd-tree-cell-spacing, --fd-tree-cell-spacing);
+
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: background-color $fd-tree-transition-params;
+
+    @include fd-hover() {
+      @include fd-var-color("background-color", $fd-tree-row-background-color--hover, --fd-color-background-hover);
     }
 
-    &__control {
-        @include fd-reset();
-        @include fd-button-reset();
-        position: absolute;
-        top: calc(50% - #{$fd-tree-control-width}/2);
-        margin: -8px fd-space(3) 0 -36px;
-        width: $fd-tree-control-button-width-height;
-        height: $fd-tree-control-button-width-height;
-        transform: rotate(180deg);
-        vertical-align: middle;
-        transition: transform $fd-animation--speed linear;
-        @include fd-icon("nav-back");
-        @include fd-var-color("color", $fd-link-color, --fd-color-action-1);
-        @include fd-focus();
-        @include fd-rtl() {
-          margin-right: -40px;
-          transform: rotate(0deg);
-        }
-        &.is-pressed {
-            transform: rotate(270deg);
-        }
+    &--header {
+      @include fd-var-color("color", $fd-tree-header-color, --fd-tree-header-color);
+      @include fd-var-color("background-color", $fd-tree-header-background-color, --fd-tree-header-background-color);
+
+      text-transform: uppercase;
+
+      @include fd-hover() {
+        background-color: initial;
+      }
     }
+
+    @include fd-selected() {
+      background-color: fd-color-state("selected");
+
+      @include fd-var-color("background-color", fd-color-state("selected"), --fd-color-background-selected);
+    }
+  }
+  $_row_padding: $fd-tree-control-width + $fd-tree-control-margin-right + 4;
+
+  &__col {
+    @include fd-reset();
+
+    flex: 1;
+    padding: $fd-tree-cell-padding 0;
+    // pad to account for control
+    padding-left: $_row_padding;
+
+    @include fd-rtl() {
+      padding-left: 0;
+      padding-right: $_row_padding;
+    }
+
+    &--control {
+      flex: auto;
+      width: 20%;
+      // sets 8 sublevels of indentation based on __group level
+      @at-root {
+        @each $i in 1, 2, 3, 4, 5, 6, 7, 8 {
+          .#{$block}__group--sublevel-#{$i} & {
+            padding-left: $_row_padding * ($i + 1);
+
+            @include fd-rtl() {
+              padding-left: 0;
+              padding-right: $_row_padding * ($i + 1);
+            }
+          }
+        }
+      }
+    }
+
+    &--actions {
+      @include fd-reset();
+
+      padding-top: 0;
+      padding-bottom: 0;
+      text-align: right;
+
+      @include fd-rtl() {
+        text-align: left;
+      }
+    }
+  }
+
+  &__control {
+    @include fd-reset();
+    @include fd-button-reset();
+
+    position: absolute;
+    top: calc(50% - #{$fd-tree-control-width} / 2);
+    margin: -8px fd-space(3) 0 -36px;
+    width: $fd-tree-control-button-width-height;
+    height: $fd-tree-control-button-width-height;
+    transform: rotate(180deg);
+    vertical-align: middle;
+    transition: transform $fd-animation--speed linear;
+
+    @include fd-icon("nav-back");
+    @include fd-var-color("color", $fd-link-color, --fd-color-action-1);
+    @include fd-focus();
+
+    @include fd-rtl() {
+      margin-right: -40px;
+      transform: rotate(0deg);
+    }
+
+    &.is-pressed {
+      transform: rotate(270deg);
+    }
+  }
 }
