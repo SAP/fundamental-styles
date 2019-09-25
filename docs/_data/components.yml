@@ -34,7 +34,7 @@
       meta: link
 
     - title: List
-      meta: list-group
+      meta: list
 
     - title: Loading Spinner
       meta: loading-spinner
