@@ -72,45 +72,4 @@
 {%- endset %}
 {{ format(example) }}
 
-<br><br>
-
-<h2>accent colors</h2>
-<p>Use helpers classes tp change the background colors, e.g., <code>.fd-has-background-color-accent-10</code>
-</p>
-{%- set example %}
-{% for num in range(1,16) %}
-{%- set cls = "has-background-color-accent-"+num %}
-{{  identifier(
-    properties={
-            icon: "money-bills"
-    },
-    modifier={
-        block: ["m"]
-    },
-    aria={
-      role: "presentation"
-    },
-    classes=cls
-)
-}}
-{%- endfor %}
-{% for num in range(1,16) | reverse %}
-{%- set cls = "has-background-color-accent-"+num %}
-{{  identifier(
-    properties={
-            initials: "WW"
-    },
-    modifier={
-        block: ["m", "circle"]
-    },
-    aria=data.aria,
-    classes=cls
-)
-}}
-{%- endfor %}
-{%- endset %}
-{{ format(example) }}
-
-
-
 {% endblock %}

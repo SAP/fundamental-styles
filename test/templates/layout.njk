@@ -7,6 +7,8 @@
     <title>{{ id }}</title>
     <link rel="stylesheet" href="static/layout.css">
     <style>
+        {{ 'fonts.scss' | component_css }}
+        {{ 'icon.scss' | component_css }}
         {% set sass = id + '.scss'  %}
         {{ sass | component_css }}
     </style>

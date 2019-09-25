@@ -1,2 +1,110 @@
-@import "../scss/components/tabs";
-@import "../scss/fonts/72";
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+/*!
+.fd-tabs+()
+    .fd-tabs__item?
+    .fd-tabs__link+((.is-selected|[aria-selected=true]),(.is-disabled|[aria-disabled=true]))
+.fd-tabs__panel+([aria-expanded]|.is-expanded)
+*/
+
+$block: #{$fd-namespace}-tabs;
+
+.#{$block} {
+  $fd-tabs-margin-bottom: $fd-margin-bottom !default;
+  $fd-tabs-border-width: 1px !default;
+  $fd-tabs-border-color: fd-color("neutral", 3) !default;
+  $fd-tabs-background-color: fd-color("background", 2) !default;
+  $fd-tabs-link-color: fd-color("text", 2) !default;
+  $fd-tabs-link-padding-y: fd-space("s") !default;
+  $fd-tabs-link-padding-x: fd-space("s") !default;
+  $fd-tabs-link-border-width: 3px !default;
+  $fd-tabs-link-border-color: fd-color("action", 1) !default;
+  $fd-tabs-link-transition-params: $fd-animation--speed ease-in !default;
+
+  --fd-tabs-border-color: var(--fd-color-neutral-3);
+  --fd-tabs-background-color: var(--fd-color-background-2);
+  --fd-tabs-link-color: var(--fd-color-text-2);
+  --fd-tabs-link-border-color: var(--fd-color-action-1);
+
+  @include fd-reset();
+  @include fd-var-color("background-color", $fd-tabs-background-color, --fd-tabs-background-color);
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: $fd-tabs-margin-bottom;
+  list-style: none;
+  border-bottom-style: solid;
+  border-bottom-width: $fd-tabs-border-width;
+
+  @include fd-var-color("border-bottom-color", $fd-tabs-background-color, --fd-tabs-background-color);
+
+  &__item {
+    @include fd-reset();
+
+    padding: 0 $fd-tabs-link-padding-x;
+  }
+
+  &__link {
+    @include fd-reset();
+
+    display: block;
+    position: relative;
+    padding: $fd-tabs-link-padding-y 0;
+    text-decoration: none;
+
+    @include fd-type("0");
+    @include action-cursor();
+    @include fd-var-color("color", $fd-tabs-link-color, --fd-tabs-link-color);
+
+    &:link {
+      @include fd-var-color("color", $fd-tabs-link-color, --fd-tabs-link-color);
+    }
+
+    &::after {
+      transition: all $fd-tabs-link-transition-params;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: inline-block;
+      height: $fd-tabs-link-border-width;
+      width: 100%;
+      background-color: transparent;
+      border-radius: $fd-border-radius $fd-border-radius 0 0;
+    }
+
+    @include fd-hover() {
+      @include fd-var-color("color", fd-color-state("selected", "action"), --fd-color-action-selected);
+    }
+
+    @include fd-selected() {
+      @include fd-var-color("color", $fd-color--action, --fd-color-action-1);
+
+      &::after {
+        @include fd-var-color("background-color", $fd-tabs-link-border-color, --fd-tabs-link-border-color);
+      }
+    }
+
+    @include fd-disabled() {
+      @include fd-var-color("color", fd-color-state("disabled", "action"), --fd-color-action-disabled);
+
+      cursor: not-allowed;
+    }
+  }
+
+  &__panel {
+    @include fd-reset();
+
+    &[aria-expanded="false"] {
+      display: none;
+    }
+
+    &.is-expanded,
+    &[aria-expanded="true"] {
+      display: block;
+    }
+  }
+}

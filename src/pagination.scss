@@ -1,3 +1,94 @@
-@import "../scss/components/pagination";
-@import "../scss/icons/icon";
-@import "../scss/fonts/72";
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+/*!
+.fd-pagination
+*/
+
+$block: #{$fd-namespace}-pagination;
+
+.#{$block} {
+  $fd-pagination-link-color: $fd-color--action !default;
+  $fd-pagination-link-color--active: fd-color("text", 2) !default;
+  $fd-pagination-total-color: fd-color("text", 2) !default;
+
+  --fd-pagination-link-color: var(--fd-color-action-1);
+  --fd-pagination-link-color-active: var(--fd-color-text-2);
+  --fd-pagination-total-color: var(--fd-color-text-2);
+
+  @include fd-reset();
+  @include fd-type("0");
+
+  &__total {
+    @include fd-reset();
+    @include fd-type("0");
+    @include fd-var-color("color", $fd-pagination-total-color, --fd-pagination-total-color);
+
+    margin-right: fd-space("xxs");
+  }
+
+  &__nav {
+    display: inline-block;
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+  }
+
+  &__link {
+    @include fd-reset();
+    @include fd-type("0");
+    @include fd-var-color("color", $fd-pagination-link-color, --fd-pagination-link-color);
+
+    background-color: transparent;
+    padding-left: fd-space(1);
+    padding-right: fd-space(1);
+    position: relative;
+    text-decoration: none;
+
+    @include fd-selected() {
+      @include fd-var-color("color", $fd-pagination-link-color--active, --fd-pagination-link-color-active);
+
+      text-decoration: none;
+      cursor: default;
+
+      @include fd-weight("bold");
+    }
+
+    &--previous,
+    &--next {
+      @include fd-reset();
+      @include fd-type("0");
+      @include fd-var-color("color", $fd-pagination-link-color, --fd-pagination-link-color);
+
+      padding-left: fd-space(2);
+      padding-right: fd-space(2);
+    }
+
+    &--previous {
+      @include fd-icon("navigation-left-arrow","s");
+
+      @include fd-rtl() {
+        @include fd-icon("navigation-right-arrow","s");
+      }
+    }
+
+    &--next {
+      @include fd-icon("navigation-right-arrow","s");
+
+      @include fd-rtl() {
+        @include fd-icon("navigation-left-arrow","s");
+      }
+    }
+
+    &--more {
+      &::before {
+        content: "...";
+
+        @include fd-var-color("color", $fd-pagination-link-color--active, --fd-pagination-link-color-active);
+        @include fd-weight("bold");
+      }
+    }
+  }
+}
