@@ -1,1 +1,127 @@
-@import "../scss/components/spinner";
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+/*!
+.fd-spinner+(.is-hidden|[aria-hidden=true])
+
+Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielcardoso.net/load-awesome/)
+* Copyright 2015 Daniel Cardoso <@DanielCardoso>
+* Licensed under MIT
+*/
+$block: #{$fd-namespace}-spinner;
+
+.#{$block} {
+  // LOCAL VARS (set all themeable properties, always include !default)
+  $fd-spinner-background-color: fd-color(action, 1) !default;
+
+  --fd-spinner-background-color: var(--fd-color-action-1);
+  $fd-spinner-height: 40px !default;
+  $fd-spinner-width--bar: 5px !default;
+  $fd-spinner-width--gutter: 3px !default;
+  $fd-spinner-animation-speed: 1s !default;
+  $fd-spinner-backdrop-opacity: 0.95 !default;
+
+  // BLOCK BASE *******************************************
+  @include fd-reset();
+  $_width: $fd-spinner-width--bar*4 + $fd-spinner-width--gutter*3;
+  $_height: $fd-spinner-height;
+
+  position: relative;
+  width: $_width;
+  height: $_height;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  &.is-hidden {
+    display: none;
+  }
+
+  // this is the only globally-applied instance of aria and state classes, may want to rethink this, maybe require a class like .fd-spinner-backdrop to be used in conjunction with the state
+  @at-root {
+    .is-busy {
+      position: relative;
+      min-height: $_height;
+
+      &::before {
+        position: absolute;
+
+        @include fd-var-color("background-color", fd-color("background", 1), --fd-color-background-1);
+
+        opacity: $fd-spinner-backdrop-opacity;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: map-get($fd-z-index-levels, "first");
+        content: "";
+      }
+
+      .#{$block} {
+        position: absolute;
+        z-index: map-get($fd-z-index-levels, "second");
+        left: calc(50% - #{$_width} / 2);
+        top: calc(50% - #{$_height} / 2);
+      }
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: relative;
+    width: $fd-spinner-width--bar;
+    height: 100%;
+
+    @include fd-var-color("background-color", $fd-spinner-background-color, --fd-spinner-background-color);
+  }
+  // 1
+  &::before {
+    animation: line-scale $fd-spinner-animation-speed infinite ease;
+    animation-delay: -($fd-spinner-animation-speed);
+  }
+
+  .fd-spinner__body {
+    @include fd-reset();
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: $fd-spinner-width--bar;
+      height: 100%;
+
+      @include fd-var-color("background-color", $fd-spinner-background-color, --fd-spinner-background-color);
+    }
+    // 2
+    &::before {
+      left: $fd-spinner-width--bar + $fd-spinner-width--gutter;
+      animation: line-scale $fd-spinner-animation-speed infinite ease;
+      animation-delay: -($fd-spinner-animation-speed - 0.1s);
+    }
+    // 3
+    &::after {
+      right: $fd-spinner-width--bar + $fd-spinner-width--gutter;
+      animation: line-scale $fd-spinner-animation-speed infinite ease;
+      animation-delay: -($fd-spinner-animation-speed - 0.2s);
+    }
+  }
+  // 4
+  &::after {
+    animation: line-scale $fd-spinner-animation-speed infinite ease;
+    animation-delay: -($fd-spinner-animation-speed - 0.3s);
+  }
+}
+
+@keyframes line-scale {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+  }
+
+  80% {
+    transform: scaleY(1);
+  }
+}

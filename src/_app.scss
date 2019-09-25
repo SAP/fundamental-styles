@@ -1,0 +1,61 @@
+@import "./settings";
+@import "./functions";
+@import "./mixins";
+
+/*!
+.fd-app
+  .fd-app__navigation+(--horizontal|--vertical)
+  .fd-app__sidebar
+  .fd-app__main
+*/
+$block: #{$fd-namespace}-app;
+
+.#{$block} {
+  $fd-app-navigation-background-color: fd-color("background", 2) !default;
+
+  $fd-app-navigation-height: fd-space(13) !default;
+  $fd-app-sidebar-width: 250px !default;
+
+  position: relative;
+  width: 100%;
+
+  @include fd-screen(m) {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+  }
+
+  &__navigation {
+    --fd-background-color: var(--fd-color-background-2);
+
+    @include fd-var-color("background-color", $fd-app-navigation-background-color, --fd-background-color);
+
+    height: $fd-app-navigation-height;
+    max-height: $fd-app-navigation-height;
+    display: flex;
+
+    &--horizontal {
+      flex: 1 100%;
+      padding: 0 $fd-padding--ui;
+      padding: 0 var(--fd-padding-ui);
+    }
+
+    &--vertical {
+      overflow-y: auto;
+      flex: 0;
+
+      @include fd-screen(m) {
+        max-width: $fd-app-sidebar-width;
+        position: relative;
+        height: 100%;
+        max-height: inherit;
+      }
+    }
+  }
+
+  &__main {
+    flex: 1 1;
+    overflow-y: auto;
+    height: 100%;
+  }
+}

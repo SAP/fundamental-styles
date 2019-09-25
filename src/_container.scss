@@ -1,0 +1,29 @@
+@import "./settings";
+@import "./functions";
+@import "./mixins";
+
+$block: #{$fd-namespace}-container;
+
+.#{$block} {
+  @include fd-clearfix();
+
+  margin-bottom: $fd-margin-bottom;
+  max-width: $fd-max-width--ui;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--fluid {
+    max-width: 100%;
+  }
+
+  &--flex {
+    display: flex;
+  }
+
+  &--centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.0-rc.0"></a>
+# [0.3.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.2.1-rc.13...v0.3.0-rc.0) (2019-09-25)
+
+
+### Features
+
+* remove icons and fonts from component styles ([#343](https://github.com/SAP/fundamental-styles/issues/343)) ([9a3db97](https://github.com/SAP/fundamental-styles/commit/9a3db97))
+
+
+
+<a name="0.2.1-rc.13"></a>
+## [0.2.1-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.2.1-rc.12...v0.2.1-rc.13) (2019-09-25)
+
+
+### Bug Fixes
+
+* adds fd-button--menu styling ([#337](https://github.com/SAP/fundamental-styles/issues/337)) ([17067ad](https://github.com/SAP/fundamental-styles/commit/17067ad))
+
+
+
 <a name="0.2.1-rc.12"></a>
 ## [0.2.1-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.2.1-rc.11...v0.2.1-rc.12) (2019-09-24)
 

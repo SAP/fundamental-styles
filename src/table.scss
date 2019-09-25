@@ -1,2 +1,357 @@
-@import "../scss/components/table";
-@import "../scss/fonts/72";
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+/*!
+.fd-table
+    thead
+    tbody
+        tr+([aria-selected])
+*/
+$block: #{$fd-namespace}-table;
+
+.#{$block} {
+  // LOCAL VARS (set all themeable properties, always include !default)
+  $fd-table-border-color: fd-color("neutral", 2) !default;
+  $fd-table-border-width: 1px !default;
+  $fd-table-link-color: fd-color(action, 1) !default;
+  $fd-table-background-color: fd-color("background", 2);
+  $fd-table-header-color: fd-color("text", 3) !default;
+  $fd-table-header-background-color: fd-color("neutral", 1) !default;
+  $fd-table-row-background-color--hover: fd-color-state("hover") !default;
+  $fd-table-row-background-color--selected: fd-color-state("selected") !default;
+
+  $fd-table-cell-spacing: $fd-width--gutter !default;
+
+  --fd-table-cell-spacing: var(--fd-width-gutter);
+
+  $fd-table-cell-padding: fd-space("s") !default;
+  $fd-table-header-cell-padding: fd-space(3) !default;
+  $fd-table-transition-params: $fd-animation--speed ease-in !default;
+  $fd-table-sort-icon-size: fd-space(3);
+  $fd-table-sort-column-header-background-color: fd-color("neutral", 2);
+  $fd-table-fixed-column-cell-color: fd-color("background", 2);
+
+  --fd-table-border-color: var(--fd-color-neutral-2);
+  --fd-table-background-color: var(--fd-color-background-2);
+  --fd-table-link-color: var(--fd-color-action-1);
+  --fd-table-header-color: var(--fd-color-text-3);
+  --fd-table-header-background-color: var(--fd-color-neutral-1);
+
+  // BLOCK BASE *******************************************
+  // set all BLOCK reset and baseline styles
+  @include fd-reset();
+  @include fd-last-child();
+
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin-bottom: $fd-margin-bottom;
+
+  @include fd-var-color("background-color", $fd-table-background-color, --fd-table-background-color);
+
+  border-style: solid;
+  border-width: $fd-table-border-width;
+
+  @include fd-var-color("border-color", $fd-table-border-color, --fd-table-border-color);
+
+  &__row {
+    transition: background-color $fd-table-transition-params;
+
+    @include fd-hover() {
+      @include fd-var-color("background-color", $fd-table-row-background-color--hover, --fd-color-background-hover);
+    }
+
+    @include fd-selected() {
+      @include fd-var-color("background-color", $fd-table-row-background-color--selected, --fd-color-background-selected);
+
+      @include fd-hover() {
+        @include fd-var-color("background-color", fd-color-state("selected-hover"), --fd-color-background-selected-hover);
+      }
+    }
+
+    &--valid,
+    &--warning,
+    &--error,
+    &--information {
+      border: none;
+
+      .#{$block}__cell:first-child {
+        position: relative;
+
+        &::before {
+          position: absolute;
+          left: 0;
+          top: 0;
+          border: fd-space(0.5) solid;
+          border-top-left-radius: fd-space(1);
+          border-bottom-left-radius: fd-space(1);
+          content: "";
+          height: 100%;
+        }
+
+        @include fd-rtl() {
+          &::before {
+            left: auto;
+            right: 0;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: fd-space(1);
+            border-bottom-right-radius: fd-space(1);
+          }
+        }
+      }
+    }
+
+    &--valid {
+      @include fd-var-color("background-color", fd-color('background', 3), --fd-color-background-3);
+
+      .#{$block}__cell:first-child {
+        &::before {
+          @include fd-var-color("border-color", fd-color('status', 1), --fd-color-status-1);
+        }
+      }
+    }
+
+    &--warning {
+      @include fd-var-color("background-color", fd-color('background', 4), --fd-color-background-4);
+
+      .#{$block}__cell:first-child {
+        &::before {
+          @include fd-var-color("border-color", fd-color('status', 2), --fd-color-status-2);
+        }
+      }
+    }
+
+    &--error {
+      @include fd-var-color("background-color", fd-color('background', 5), --fd-color-background-5);
+
+      .#{$block}__cell:first-child {
+        &::before {
+          @include fd-var-color("border-color", fd-color('status', 3), --fd-color-status-3);
+        }
+      }
+    }
+
+    &--information {
+      @include fd-var-color("background-color", fd-color('background', 6), --fd-color-background-6);
+
+      .#{$block}__cell:first-child {
+        &::before {
+          @include fd-var-color("border-color", fd-color('status', 5), --fd-color-status-5);
+        }
+      }
+    }
+  }
+
+  &__header {
+    @include fd-reset();
+    @include fd-type("-1");
+    @include fd-var-color("color", $fd-table-header-color, --fd-table-header-color);
+    @include fd-var-color("background-color", $fd-table-header-background-color, --fd-table-header-background-color);
+
+    .#{$block}__row {
+      border: none;
+
+      &:hover {
+        background-color: inherit;
+      }
+    }
+
+    .#{$block}__cell {
+      @include fd-var-color("color", $fd-table-header-color, --fd-table-header-color);
+
+      border: none;
+
+      @include fd-type("-1");
+      @include fd-weight();
+
+      padding-top: $fd-table-header-cell-padding;
+      padding-bottom: $fd-table-header-cell-padding;
+
+      &.#{$block}__fixed-cell {
+        @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
+
+        left: 0;
+        z-index: map-get($fd-z-index-levels, "second");
+      }
+    }
+
+    .#{$block}__context-menu {
+      &:hover {
+        @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
+
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__body {
+    @include fd-reset();
+
+    .#{$block}__row {
+      border-style: solid;
+      border-width: $fd-table-border-width;
+
+      @include fd-var-color("border-color", $fd-table-border-color, --fd-table-border-color);
+
+      border-left: none;
+      border-right: none;
+    }
+
+    .#{$block}__cell {
+      word-break: break-word;
+    }
+  }
+
+  &__cell {
+    @include fd-reset();
+    @include fd-weight();
+
+    text-align: left;
+
+    --fd-table-cell-spacing: calc(var(--fd-width-gutter) / 2);
+
+    @include fd-var-size("padding-left", $fd-table-cell-spacing/2, --fd-table-cell-spacing);
+    @include fd-var-size("padding-right", $fd-table-cell-spacing/2, --fd-table-cell-spacing);
+
+    padding-top: $fd-table-cell-padding;
+    padding-bottom: $fd-table-cell-padding;
+
+    &:first-child {
+      @include fd-var-size("padding-left", $fd-width--gutter, --fd-width-gutter);
+    }
+
+    &:last-child {
+      @include fd-var-size("padding-right", $fd-width--gutter, --fd-width-gutter);
+    }
+
+    .fd-dropdown__menu {
+      min-width: auto;
+      text-align: left;
+    }
+
+    .#{$block}__fixed-cell {
+      @include fd-var-color("background-color", $fd-table-fixed-column-cell-color, --fd-color-background-2);
+    }
+
+    @include fd-rtl() {
+      &:first-child {
+        @include fd-var-size("padding-right", $fd-width--gutter, --fd-width-gutter);
+      }
+
+      text-align: right;
+    }
+  }
+
+  &__sort-column {
+    &:hover {
+      @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
+
+      cursor: pointer;
+    }
+
+    &::after {
+      content: "";
+      width: $fd-table-sort-icon-size;
+      height: $fd-table-sort-icon-size;
+      display: inline-block;
+      background: url($fd-table-column-sort-icon) no-repeat center center;
+      margin: 0 $fd-table-sort-icon-size;
+      vertical-align: text-top;
+    }
+
+    // these are the selected states, should be .is-selected, aria-selected=true
+    &--asc,
+    &--dsc {
+      @include fd-var-color("background-color", $fd-table-sort-column-header-background-color, --fd-color-neutral-2);
+    }
+
+    &--asc {
+      &::after {
+        background-image: url($fd-table-column-sort-icon--asc);
+      }
+    }
+
+    &--dsc {
+      &::after {
+        background-image: url($fd-table-column-sort-icon--dsc);
+      }
+    }
+  }
+
+  &__context-menu-label {
+    display: block;
+
+    &::after {
+      content: "";
+      width: $fd-table-sort-icon-size;
+      height: $fd-table-sort-icon-size;
+      display: inline-block;
+      background: url($fd-table-context-menu-icon) no-repeat center center;
+      margin: 0 $fd-table-sort-icon-size;
+      vertical-align: text-top;
+    }
+  }
+
+  &__fixed-cell {
+    left: 0;
+    max-width: 200px;
+    position: absolute;
+    z-index: map-get($fd-z-index-levels, "first");
+    box-shadow: 2px 0 0 0 var(--fd-table-border-color);
+  }
+
+  &--fixed-wrapper {
+    position: relative;
+  }
+
+  &--fixed {
+    overflow-x: scroll;
+    padding-left: 200px;
+
+    .#{$block}__cell {
+      min-width: 200px;
+    }
+  }
+
+  &--no-borders {
+    @include fd-reset();
+
+    border: none;
+
+    .#{$block}__body {
+      .#{$block}__row {
+        border: none;
+      }
+    }
+  }
+
+  &--striped {
+    .#{$block}__body {
+      .#{$block}__row:nth-child(even) {
+        @include fd-var-color("background-color", fd-color-state("hover"), --fd-color-background-hover);
+      }
+    }
+  }
+
+  &.#{$fd-namespace}-has-first-child-text-align-right {
+    .#{$block}__cell:first-child {
+      text-align: right !important;
+    }
+  }
+
+  &.#{$fd-namespace}-has-last-child-text-align-right {
+    .#{$block}__cell:last-child {
+      text-align: right !important;
+    }
+  }
+
+  @each $i in 2,3,4,5,6,7,8,9 {
+    &.#{$fd-namespace}-has-nth-child-#{$i}-text-align-right {
+      .#{$block}__cell:nth-child(#{$i}) {
+        text-align: right !important;
+      }
+    }
+  }
+}

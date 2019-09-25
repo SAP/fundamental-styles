@@ -1,3 +1,103 @@
-@import "../scss/components/select";
-@import "../scss/icons/icon";
-@import "../scss/fonts/72";
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+$block: #{$fd-namespace}-select;
+
+.#{$block} {
+  display: block;
+
+  &__control {
+    @include fd-form-text();
+    @include fd-var-size("height", $fd-forms-height, --fd-forms-height);
+
+    width: 100%;
+    text-align: left;
+
+    @include fd-icon-base("after");
+
+    @include fd-icon-glyph("slim-arrow-down","after") {
+      transition: transform $fd-animation--speed ease-in;
+    }
+
+    position: relative;
+    padding-right: $fd-forms-height + $fd-forms-padding - 2;
+
+    &::after {
+      @include fd-var-color("color", $fd-color--action, --fd-color-action-1);
+
+      width: $fd-forms-height - 2;
+      border-top-right-radius: $fd-border-radius;
+      border-bottom-right-radius: $fd-border-radius;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    @include fd-hover() {
+      &::after {
+        @include fd-var-color("background-color", fd-color("neutral", 1), --fd-color-neutral-1);
+      }
+    }
+
+    &.is-expanded {
+      &::after {
+        @include fd-var-color("background-color", $fd-color--action, --fd-color-action-1);
+        @include fd-var-color("color", fd-color("neutral", 1), --fd-color-neutral-1);
+      }
+    }
+  }
+
+  &--compact {
+    .#{$block}__control {
+      @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);
+    }
+  }
+
+  &--inline {
+    display: inline-block;
+  }
+
+  // &__dropdown {
+  //     border-top-left-radius: 0;
+  //     border-top-right-radius: 0;
+  //     list-style: none;
+  // }
+  // &__item {
+  //     @include fd-reset();
+  //     display: block;
+  //     transition: all $fd-animation--speed ease-in;
+  //     @include action-cursor();
+  //     padding: $fd-menu-item-padding-y $fd-menu-item-padding-x;
+  //     @include fd-var-color("background-color", $fd-menu-item-background-color, --fd-menu-item-background-color);
+  //     @include fd-var-color("color", $fd-menu-item-color, --fd-menu-item-color);
+  //     @include fd-weight("normal");
+  //     @include fd-hover() {
+  //         @include fd-var-color("color", $fd-menu-item-color--hover, --fd-color-text-1);
+  //         @include fd-var-color("background-color", $fd-menu-item-background-color--hover, --fd-color-background-hover);
+  //     }
+  //     @include fd-selected() {
+  //         @include fd-var-color("background-color", $fd-menu-item-background-color--selected, --fd-color-background-selected);
+  //         @include fd-hover() {
+  //             @include fd-var-color("background-color", fd-color-state("selected-hover"), --fd-color-background-selected-hover);
+  //         }
+  //     }
+  //     @include fd-active-pressed-selected() {
+  //         @include fd-var-color("color", fd-color-state("selected", "action"), --fd-color-action-selected);
+  //         outline: none;
+  //     }
+  //     &:focus {
+  //         outline-style: dotted;
+  //         outline-width: 1px;
+  //         @include fd-var-color("outline-color", fd-color-state("hover", "action"), --fd-color-action-focus);
+  //     }
+  //     @include fd-disabled() {
+  //         @include fd-var-color("outline-color", fd-color-state("disabled", "action"), --fd-color-action-disabled);
+  //         cursor: not-allowed;
+  //     }
+  // }
+}
