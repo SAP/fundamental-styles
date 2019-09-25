@@ -79,6 +79,12 @@ $block: #{$fd-namespace}-list;
     font-size: var(--sapFontSize);
     text-align: right;
     margin-left: 1rem;
+
+    @include fd-rtl() {
+      text-align: left;
+      margin-right: 1rem;
+      margin-left: 0;
+    }
   }
 
   &__icon {
@@ -98,6 +104,18 @@ $block: #{$fd-namespace}-list;
 
     &:last-child {
       margin-right: -1rem;
+    }
+
+    @include fd-rtl() {
+      &:first-child {
+        margin-right: -1rem;
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-left: -1rem;
+        margin-right: 0;
+      }
     }
   }
 
