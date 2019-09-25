@@ -105,15 +105,15 @@ a.#{$block} {
         --fd-button-background-color: var(--fd-color-action-hover);
         --fd-button-color: var(--fd-color-action-2);
 
-        @include fd-var-color("color", fd-color("action",2), --fd-button-color);
-        @include fd-var-color("background-color", fd-color-state("hover","action"), --fd-button-background-color);
+        @include fd-var-color("color", fd-color("action", 2), --fd-button-color);
+        @include fd-var-color("background-color", fd-color-state("hover", "action"), --fd-button-background-color);
 
         @include fd-disabled() {
           --fd-button-background-color: var(--fd-color-background-2);
           --fd-button-color: var(--fd-color-action-1);
 
-          @include fd-var-color("color", fd-color("action",1), --fd-button-color);
-          @include fd-var-color("background-color", fd-color("background",2), --fd-button-background-color);
+          @include fd-var-color("color", fd-color("action", 1), --fd-button-color);
+          @include fd-var-color("background-color", fd-color("background", 2), --fd-button-background-color);
         }
       }
 
@@ -122,7 +122,7 @@ a.#{$block} {
         --fd-button-color: var(--fd-color-action-2);
 
         @include fd-var-color("color", fd-color("action", 2), --fd-button-color);
-        @include fd-var-color("background-color", fd-color-state("selected","action"), --fd-button-background-color);
+        @include fd-var-color("background-color", fd-color-state("selected", "action"), --fd-button-background-color);
       }
 
       @include fd-disabled() {
@@ -150,7 +150,7 @@ a.#{$block} {
       line-height: 1;
     }
   }
-  // compact sizes (see `root` for css vars rules)
+  // compact sizes (see `core/root` for css vars rules)
   &--compact {
     // set metrics
     @include fd-var-size("height", $fd-forms-height, --fd-forms-height-compact);
@@ -196,7 +196,7 @@ a.#{$block} {
       --fd-button-color: var(--fd-color-action-2);
 
       @include fd-var-color("color", fd-color("action", 2), --fd-button-color);
-      @include fd-var-color("background-color", fd-color-state("hover","action"), --fd-button-background-color);
+      @include fd-var-color("background-color", fd-color-state("hover", "action"), --fd-button-background-color);
 
       @include fd-disabled() {
         --fd-button-background-color: var(--fd-color-action-1);
@@ -320,7 +320,7 @@ a.#{$block} {
       --fd-button-color: var(--fd-color-action-2);
 
       @include fd-var-color("color", fd-color("action", 2), --fd-button-color);
-      @include fd-var-color("background-color", fd-color-state("selected","action"), --fd-button-background-color);
+      @include fd-var-color("background-color", fd-color-state("selected", "action"), --fd-button-background-color);
     }
 
     &.#{$block}--standard,
@@ -485,7 +485,7 @@ a.#{$block} {
       @include fd-disabled() {
         --fd-button-color: var(--fd-color-status-4);
 
-        @include fd-var-color("color", fd-color("status",4), --fd-button-color);
+        @include fd-var-color("color", fd-color("status", 4), --fd-button-color);
       }
     }
 
@@ -513,7 +513,7 @@ a.#{$block} {
       @include fd-disabled() {
         --fd-button-color: var(--fd-color-status-1);
 
-        @include fd-var-color("color", fd-color("status",1), --fd-button-color);
+        @include fd-var-color("color", fd-color("status", 1), --fd-button-color);
       }
     }
 
@@ -540,7 +540,7 @@ a.#{$block} {
       @include fd-disabled() {
         --fd-button-color: var(--fd-color-status-2);
 
-        @include fd-var-color("color", fd-color("status",2), --fd-button-color);
+        @include fd-var-color("color", fd-color("status", 2), --fd-button-color);
       }
     }
 
@@ -567,7 +567,7 @@ a.#{$block} {
       @include fd-disabled() {
         --fd-button-color: var(--fd-color-status-3);
 
-        @include fd-var-color("color", fd-color("status",3), --fd-button-color);
+        @include fd-var-color("color", fd-color("status", 3), --fd-button-color);
       }
     }
 
@@ -575,6 +575,34 @@ a.#{$block} {
       --fd-button-background-color: var(--fd-color-status-3);
 
       @include fd-var-color("background-color", fd-color("status", 3), --fd-button-background-color);
+    }
+  }
+
+  &--menu {
+    @include fd-icon("navigation-down-arrow", "s", "after");
+
+    &:empty {
+      &::before {
+        margin-right: 0;
+        margin-left: fd-space(2);
+      }
+
+      &::after {
+        margin-right: fd-space(2);
+        margin-left: fd-space(2);
+      }
+    }
+
+    @at-root {
+      [dir="rtl"] &,
+      &[dir="rtl"] {
+        &:empty {
+          &::before {
+            margin-right: fd-space(2);
+            margin-left: 0;
+          }
+        }
+      }
     }
   }
 }
