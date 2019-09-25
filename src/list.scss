@@ -42,6 +42,7 @@ $block: #{$fd-namespace}-list;
       background: var(--sapList_Active_Background);
 
       .#{$block}__title,
+      .#{$block}__secondary,
       .#{$block}__icon {
         color: var(--sapList_Active_TextColor);
       }
@@ -58,26 +59,26 @@ $block: #{$fd-namespace}-list;
     }
   }
 
-  &__title {
+  &__title,
+  &__secondary {
     @include fd-reset();
 
     color: var(--sapList_TextColor);
-    flex: 1 1 auto;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  &__title {
+    flex: 3 3 10%;
     font-size: var(--sapFontLargeSize);
+  }
 
-    &--col1 {
-      flex: 3 3 10%;
-    }
-
-    &--col2 {
-      flex: 2 2 10%;
-      text-align: right;
-      font-size: var(--sapFontSize);
-      margin-left: 1rem;
-    }
+  &__secondary {
+    flex: 2 2 10%;
+    font-size: var(--sapFontSize);
+    text-align: right;
+    margin-left: 1rem;
   }
 
   &__icon {

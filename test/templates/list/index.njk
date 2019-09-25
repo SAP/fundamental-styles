@@ -2,23 +2,121 @@
 {% from "./component.njk" import list %}
 {% from "./../format.njk" import format %}
 
+{%- set basic_list = {
+    "groups": [
+        {
+            "items": [
+                { "title": "List item 1", "secondary": "Complete" },
+                { "title": "List item 2", "secondary": "Incomplete" },
+                { "title": "List item 3" },
+                { "title": "List item 4", "secondary": "Complete" }
+            ]
+        }
+    ]
+} %}
+
+{%- set list_with_icons = {
+    "groups": [
+        {
+            "items": [
+                { "title": "List item 1", "iconBefore": "X", "iconAfter": ">" },
+                { "title": "List item 2", "iconAfter": ">" },
+                { "title": "List item 3", "iconBefore": "X" },
+                { "title": "List item 4", "iconBefore": "O", "iconAfter": ">" }
+            ]
+        }
+    ]
+} %}
+
+{% set modifiers = ["", "compact", "no-border"] %}
+
 {% block content %}
 
-    <h2>default</h2>
+    <h2>Basic</h2>
     {% set example %}
-    {{  list(data.properties) }}
+        {%- for modifier in modifiers %}
+            {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+            {{ list(basic_list, modifier=[modifier]) }}
+        {%- endfor %}
     {% endset %}
     {{ format(example) }}
 
-    <h2>compact</h2>
+    <h2>Secondary text</h2>
     {% set example %}
-    {{  list({ items: data.properties.items }, modifier=['compact']) }}
+        {%- for modifier in modifiers %}
+            {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+            {{ list(basic_list, toggles={"useSecondary": true}, modifier=[modifier]) }}
+        {%- endfor %}
     {% endset %}
     {{ format(example) }}
 
-    <h2>borderless</h2>
+    <h2>Icons (Before)</h2>
     {% set example %}
-    {{  list({ items: data.properties.items }, modifier=['no-border']) }}
+        {%- for modifier in modifiers %}
+            {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+            {{ list(list_with_icons, toggles={"useIconBefore": true}, modifier=[modifier]) }}
+        {%- endfor %}
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>Icons (After)</h2>
+    {% set example %}
+        {%- for modifier in modifiers %}
+            {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+            {{ list(list_with_icons, toggles={"useIconAfter": true}, modifier=[modifier]) }}
+        {%- endfor %}
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>Icons (Before & After)</h2>
+    {% set example %}
+        {%- for modifier in modifiers %}
+            {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+            {{ list(list_with_icons, toggles={"useIconBefore": true, "useIconAfter": true}, modifier=[modifier]) }}
+        {%- endfor %}
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>Group Headers and Footer with Selected and Active states</h2>
+    {% set example %}
+        {%- for modifier in modifiers %}
+            {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+            {{ list(data.properties, modifier=[modifier]) }}
+        {%- endfor %}
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>All options</h2>
+    {% set example %}
+        {%- for modifier in modifiers %}
+            {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+            {{ list(data.properties, data.toggles, modifier=[modifier]) }}
+        {%- endfor %}
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>Empty</h2>
+    {% set example %}
+        {%- for modifier in modifiers %}
+            {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+            {{ list({}, modifier=[modifier]) }}
+        {%- endfor %}
     {% endset %}
     {{ format(example) }}
 
