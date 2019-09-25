@@ -577,4 +577,32 @@ a.#{$block} {
       @include fd-var-color("background-color", fd-color("status", 3), --fd-button-background-color);
     }
   }
+
+  &--menu {
+    @include fd-icon("navigation-down-arrow", "s", "after");
+
+    &:empty {
+      &::before {
+        margin-right: 0;
+        margin-left: fd-space(2);
+      }
+
+      &::after {
+        margin-right: fd-space(2);
+        margin-left: fd-space(2);
+      }
+    }
+
+    @at-root {
+      [dir="rtl"] &,
+      &[dir="rtl"] {
+        &:empty {
+          &::before {
+            margin-right: fd-space(2);
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
 }
