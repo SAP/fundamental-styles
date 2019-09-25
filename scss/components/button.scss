@@ -592,5 +592,17 @@ a.#{$block} {
         margin-left: fd-space(2);
       }
     }
+
+    @at-root {
+      [dir="rtl"] &,
+      &[dir="rtl"] {
+        &:empty {
+          &::before {
+            margin-right: fd-space(2);
+            margin-left: 0;
+          }
+        }
+      }
+    }
   }
 }
