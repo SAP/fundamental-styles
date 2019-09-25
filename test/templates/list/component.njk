@@ -1,29 +1,32 @@
-{% macro list(properties={}, modifier=[], action={}) %}
+{% macro list(properties={}, modifier=[]) %}
 <ul class="fd-list{{ modifier | modifier('list') }}">
-    <li class="fd-list__group-header">
-        Group Header
-    </li>
-    {%- for item in properties.items %}
-    <li class="fd-list__item">
-        <span class="fd-list__icon">X</span>
-        <span class="fd-list__title fd-list__title--col1">{{item}}</span>
-        <span class="fd-list__title fd-list__title--col2">Status</span>
-        <span class="fd-list__icon">X</span>
-    </li>
+    {%- for group in properties.groups %}
+        {%- if group.header %}
+            <li class="fd-list__group-header">
+                {{group.header}}
+            </li>
+        {%- endif %}
+        {%- for item in group.items %}
+            {{ list_item(item)| indent(2) }}
+        {%- endfor %}
     {%- endfor %}
-    <li class="fd-list__group-header">
-        Group Header
+    <li class="fd-list__item fd-list__item--no-data">
+        <span class="fd-list__title">No data found.</span>
     </li>
-    {%- for item in properties.items %}
-    <li class="fd-list__item">
-        <span class="fd-list__icon">X</span>
-        <span class="fd-list__title fd-list__title--col1">{{item}}</span>
-        <span class="fd-list__title fd-list__title--col2">Status</span>
-        <span class="fd-list__icon">X</span>
-    </li>
-    {%- endfor %}
     <li class="fd-list__footer">
         Footer
     </li>
 </ul>
+{%- endmacro %}
+
+{% macro list_item(item={}, modifier=[], useIconBefore=false, useIconAfter=false) %}
+<li class="fd-list__item{{ modifier | modifier('list__item') }}">
+    {%- if useIconBefore %}
+        <span class="fd-list__icon">{{item.beforeIcon}}</span>
+    {%- endif %}
+    <span class="fd-list__title">{{item.title}}</span>
+    {%- if useIconAfter %}
+        <span class="fd-list__icon">{{item.afterIcon}}</span>
+    {%- endif %}
+</li>
 {%- endmacro %}

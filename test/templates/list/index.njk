@@ -6,7 +6,7 @@
 
     <h2>default</h2>
     {% set example %}
-    {{  list({ items: data.properties.items }) }}
+    {{  list(data.properties) }}
     {% endset %}
     {{ format(example) }}
 

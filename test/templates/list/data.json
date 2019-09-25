@@ -3,15 +3,35 @@
     "name": "List",
     "type": "text",
     "properties": {
-        "items": [
-            "List item 1",
-            "List item 2",
-            "List item 3 - Lorem ipsum dolor sit amet, consectetur sed do",
-            "List item 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
-        ],
-        "action": {
-            "icon": "edit",
-            "label": "Edit"
-        }
+        "groups": [
+            {
+                "header": "Group Header 1",
+                "items": [
+                    {
+                        "title": "List item 1"
+                    },
+                    {
+                        "title": "List item 2"
+                    },
+                    {
+                        "title": "List item 3 - Lorem ipsum dolor sit amet, consectetur sed do"
+                    },
+                    {
+                        "title": "List item 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
+                    }
+                ]
+            },
+            {
+                "header": "Group Header 2",
+                "items": [
+                    {
+                        "title": "List item 5"
+                    },
+                    {
+                        "title": "List item 6"
+                    }
+                ]
+            }
+        ]
     }
 }
