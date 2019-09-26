@@ -40,6 +40,11 @@ $(document).ready(function () {
                 //trigger
                 var isExpanded = this.getAttribute("aria-expanded") === "true";
                 this.setAttribute("aria-expanded", !isExpanded);
+                if (isExpanded) {
+                    this.classList.remove('is-expanded');
+                } else {
+                    this.classList.add('is-expanded');
+                }
                 //target
                 target.setAttribute("aria-hidden", isExpanded);
                 //searchinput for shellbar
