@@ -1,0 +1,66 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./component.njk" import select %}
+
+{% block content %}
+
+<style>
+.fd-select {
+  margin-bottom: 10px;
+}
+</style>
+
+{% set props = {
+  label: data.properties.label,
+  body: bodyitems
+} %}
+
+{% set example %}
+
+  {{ select(props) }}
+
+  {{ select(props, modifier={ block: ["compact"] }) }}
+
+{% endset %}
+{{ format(example) }}
+
+<br><br>
+
+<h2>expanded</h2>
+
+{% set example %}
+
+  {{ select(props, state={ expanded: true } ) }}
+
+  {{ select(props, modifier={ block: ["compact"] }, state={ expanded: true } ) }}
+
+{% endset %}
+{{ format(example) }}
+
+<br><br>
+
+<h2>inline</h2>
+
+{% set example %}
+
+  {{ select(props, modifier={ block: ["inline"] } ) }}
+
+  {{ select(props, modifier={ block: ["inline", "compact"] } ) }}
+
+{% endset %}
+{{ format(example) }}
+
+<br><br>
+
+<h2>disabled</h2>
+
+{% set example %}
+
+  {{ select(props, state={ disabled: true } ) }}
+
+  {{ select(props, modifier={ block: ["compact"] }, state={ disabled: true } ) }}
+
+{% endset %}
+{{ format(example) }}
+
+{% endblock %}

@@ -19,6 +19,11 @@
                 //trigger
                 const isExpanded = this.getAttribute("aria-expanded") === "true";
                 this.setAttribute("aria-expanded", !isExpanded);
+                if (isExpanded) {
+                    this.classList.remove('is-expanded');
+                } else {
+                    this.classList.add('is-expanded');
+                }
                 //target
                 const targetIsHidden = target.getAttribute("aria-hidden") == "true";
                 target.setAttribute("aria-hidden", isExpanded);

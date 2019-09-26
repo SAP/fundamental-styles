@@ -140,6 +140,10 @@ entries:
       url: /components/inline-help.html
       output: web
 
+    - title: List
+      url: /components/list.html
+      output: web
+
     - title: List Group
       url: /components/list-group.html
       output: web
@@ -178,6 +182,10 @@ entries:
 
     - title: Shellbar
       url: /components/shellbar.html
+      output: web
+
+    - title: Select
+      url: /components/select.html
       output: web
 
     - title: Side Navigation

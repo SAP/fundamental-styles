@@ -166,6 +166,7 @@ app.set('view engine', 'njk');
 app.use(router);
 app.use('/static', express.static(path.join(__dirname, 'resources')));
 app.use('/normalize', express.static(path.join(__dirname, '..', 'node_modules', 'normalize.css')));
+app.use('/sap-theming', express.static(path.join(__dirname, '..', 'node_modules', '@sap-theming', 'theming-base-content', 'content', 'Base', 'baseLib', 'sap_fiori_3')));
 
 //load font files
 router.get('/(*/)?FundamentalIcons:key', (req, res) => {

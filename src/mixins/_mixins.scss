@@ -7,6 +7,7 @@
   @include fd-var-color("color", $fd-color, --fd-color-text-1);
 
   font-family: $fd-font-family;
+  font-weight: normal;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   padding: 0;
@@ -16,6 +17,7 @@
   &::before,
   &::after {
     box-sizing: inherit;
+    font-size: inherit;
   }
 }
 

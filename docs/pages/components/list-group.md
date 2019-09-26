@@ -8,6 +8,9 @@ permalink: components/list-group.html
 folder: components
 ---
 
+> **DEPRECATED**. Use the [List](list.html) component instead.
+{: .docs-deprecated}
+
 Lists and tables are similar as both usually contain a vertical list of data, but lists generally contain basic data and tables tend to hold more complex data.
 {: .docs-intro}
 If the list is a complex hierarchy, it is best to use a tree.

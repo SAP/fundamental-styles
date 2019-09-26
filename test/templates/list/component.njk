@@ -1,0 +1,40 @@
+{% macro list(properties={}, toggles={}, modifier=[]) %}
+<ul class="fd-list{{ modifier | modifier('list') }}">
+    {%- if properties.groups %}
+        {%- for group in properties.groups %}
+            {%- if group.header %}
+                <li class="fd-list__group-header">
+                    {{group.header}}
+                </li>
+            {%- endif %}
+            {%- for item in group.items %}
+                {{ list_item(item, toggles)| indent(2) }}
+            {%- endfor %}
+        {%- endfor %}
+        {%- if properties.footer %}
+            <li class="fd-list__footer">
+                {{properties.footer}}
+            </li>
+        {%- endif %}
+    {%- else %}
+        <li class="fd-list__item fd-list__item--no-data">
+            <span class="fd-list__title">No data found.</span>
+        </li>
+    {%- endif %}
+</ul>
+{%- endmacro %}
+
+{% macro list_item(item={}, toggles={}, modifier=[]) %}
+<li class="fd-list__item{{ modifier | modifier('list__item') }} {{ 'is-selected' if item.selected }} {{ 'is-active' if item.active }}">
+    {%- if toggles.useIconBefore %}
+        <span class="fd-list__icon">{{item.iconBefore}}</span>
+    {%- endif %}
+    <span class="fd-list__title">{{item.title}}</span>
+    {%- if toggles.useSecondary %}
+        <span class="fd-list__secondary">{{item.secondary}}</span>
+    {%- endif %}
+    {%- if toggles.useIconAfter %}
+        <span class="fd-list__icon">{{item.iconAfter}}</span>
+    {%- endif %}
+</li>
+{%- endmacro %}
