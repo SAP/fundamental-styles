@@ -177,6 +177,13 @@ pre {
       border-left-width: 5px;
       border-radius: 5px;
       background: #fffde4;
+      font-size: 1rem;
+
+      &.docs-deprecated {
+          background: var(--fd-color-background-negative);
+          color: var(--fd-color-negative);
+          border-color: var(--fd-color-negative);
+      }
   }
 
 .docs-headers-h2 {

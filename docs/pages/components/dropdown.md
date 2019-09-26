@@ -8,6 +8,9 @@ permalink: components/dropdown.html
 folder: components
 ---
 
+> **DEPRECATED**. Depending on the use case, use either the [Select](select.html) component or the **MenuButton** component (to be built) instead.
+{: .docs-deprecated}
+
 The dropdown allows users to make one selection from a list.
 {: .docs-intro}
 It is an opinionated composition of the `popover` and `menu` components with the use of a styled button. It is more flexible than the normal `select`. Generally, it should be used when there are between 3 to 10 or more options.
