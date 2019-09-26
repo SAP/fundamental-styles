@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.0-rc.1"></a>
+# [0.3.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.3.0-rc.0...v0.3.0-rc.1) (2019-09-26)
+
+
+### Bug Fixes
+
+* Added Select and List components ([#347](https://github.com/SAP/fundamental-styles/issues/347)) ([e1b3e5a](https://github.com/SAP/fundamental-styles/commit/e1b3e5a))
+
+
+
 <a name="0.3.0-rc.0"></a>
 # [0.3.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.2.1-rc.13...v0.3.0-rc.0) (2019-09-25)
 
