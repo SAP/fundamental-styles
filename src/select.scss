@@ -5,6 +5,8 @@
 $block: #{$fd-namespace}-select;
 
 .#{$block} {
+  @include fd-reset();
+
   display: block;
 
   &__control {
