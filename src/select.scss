@@ -11,8 +11,8 @@ $block: #{$fd-namespace}-select;
 
   &__control {
     @include fd-form-text();
-    @include fd-var-size("height", $fd-forms-height, --fd-forms-height);
 
+    height: var(--fd-forms-height);
     width: 100%;
     text-align: left;
 
@@ -26,8 +26,7 @@ $block: #{$fd-namespace}-select;
     padding-right: $fd-forms-height + $fd-forms-padding - 2;
 
     &::after {
-      @include fd-var-color("color", $fd-color--action, --fd-color-action-1);
-
+      color: var(--fd-color-action-1);
       width: $fd-forms-height - 2;
       border-top-right-radius: $fd-border-radius;
       border-bottom-right-radius: $fd-border-radius;
@@ -42,14 +41,14 @@ $block: #{$fd-namespace}-select;
 
     @include fd-hover() {
       &::after {
-        @include fd-var-color("background-color", fd-color("neutral", 1), --fd-color-neutral-1);
+        background-color: var(--fd-color-neutral-1);
       }
     }
 
     &.is-expanded {
       &::after {
-        @include fd-var-color("background-color", $fd-color--action, --fd-color-action-1);
-        @include fd-var-color("color", fd-color("neutral", 1), --fd-color-neutral-1);
+        background-color: var(--fd-color-action-1);
+        color: var(--fd-color-neutral-1);
       }
     }
 
@@ -71,7 +70,7 @@ $block: #{$fd-namespace}-select;
 
   &--compact {
     .#{$block}__control {
-      @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);
+      height: var(--fd-forms-height-compact);
     }
   }
 
