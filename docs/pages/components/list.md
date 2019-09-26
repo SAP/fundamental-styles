@@ -170,3 +170,24 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 {% endcapture %}
 
 {% include display-component.html component=list-with-footer %}
+
+## Borderless
+
+{% capture list-without-borders %}
+<ul class="fd-list fd-list--no-border">
+  <li class="fd-list__item">
+      <span class="fd-list__title">List item 1</span>
+  </li>
+  <li class="fd-list__item">
+      <span class="fd-list__title">List item 2</span>
+  </li>
+  <li class="fd-list__item">
+      <span class="fd-list__title">List item 3</span>
+  </li>
+  <li class="fd-list__item">
+      <span class="fd-list__title">List item 4</span>
+  </li>
+</ul>
+{% endcapture %}
+
+{% include display-component.html component=list-without-borders %}
