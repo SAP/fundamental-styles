@@ -82,7 +82,7 @@ $block: #{$fd-namespace}-breadcrumb;
     text-decoration: none;
     display: inline-block;
     transition: all $fd-animation--speed ease-in;
-    border-style: none;
+    border-bottom-style: none;
 
     &:focus {
       outline-style: dotted;
