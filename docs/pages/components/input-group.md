@@ -111,7 +111,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
     <div class="fd-input-group">
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-button--light">
+            <button class="fd-input-group__button fd-button--light">
                 Button
             </button>
         </span>
@@ -123,7 +123,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
     <div class="fd-input-group">
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-button--icon fd-button--light sap-icon--navigation-down-arrow"></button>
+            <button class="fd-input-group__button fd-button--icon fd-button--light sap-icon--navigation-down-arrow"></button>
         </span>
     </div>
 </div>
@@ -132,7 +132,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
     <label class="fd-form-label" for="">Input with text action on left</label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-button--light">
+            <button class="fd-input-group__button fd-button--light">
                 Button
             </button>
         </span>
@@ -162,7 +162,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
     <div class="fd-input-group">
         <textarea class="fd-textarea fd-input-group__input" id=""></textarea>
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-button--light">
+            <button class="fd-input-group__button fd-button--light">
                 Button
             </button>
         </span>
@@ -183,8 +183,8 @@ For an integer value input, a spinner can be added allowing the user to increase
     <div class="fd-input-group">
         <input class="fd-input fd-input--no-number-spinner fd-input-group__input" id="spinner-1" type="number" value="100" />
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-button--light fd-button--half sap-icon--slim-arrow-up" aria-label="Step up" onclick="document.getElementById('spinner-1').stepUp();"></button>
-            <button class="fd-button--light fd-button--half sap-icon--slim-arrow-down" aria-label="Step down" onclick="document.getElementById('spinner-1').stepDown();"></button>
+            <button class="fd-input-group__button fd-button--light fd-button--half sap-icon--slim-arrow-up" aria-label="Step up" onclick="document.getElementById('spinner-1').stepUp();"></button>
+            <button class="fd-input-group__button fd-button--light fd-button--half sap-icon--slim-arrow-down" aria-label="Step down" onclick="document.getElementById('spinner-1').stepDown();"></button>
         </span>
     </div>
 </div>
