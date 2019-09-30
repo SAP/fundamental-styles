@@ -2,9 +2,17 @@
 @import "./../functions";
 
 @mixin fd-var-color($property, $value, $var: null, $important: false) {
-  #{$property}: var(#{$var}, #{$value});
+  @if $var {
+    #{$property}: var(#{$var}, #{$value});
+  } @else {
+    #{$property}: #{$value};
+  }
 }
 
 @mixin fd-var-size($property, $value, $var: null) {
-  #{$property}: var(#{$var}, #{$value});
+  @if $var {
+    #{$property}: var(#{$var}, #{$value});
+  } @else {
+    #{$property}: #{$value};
+  }
 }
