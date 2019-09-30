@@ -107,7 +107,7 @@ $block: #{$fd-namespace}-input-group;
       border: none;
       padding: 0;
 
-      > * {
+      .#{$block}__button {
         @include fd-reset-child-spacing();
 
         height: 100%;
