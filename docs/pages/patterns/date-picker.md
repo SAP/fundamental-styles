@@ -24,7 +24,7 @@ This component mostly relies on the CSS of other components and has very little 
 			<div class="fd-input-group">
 				<input class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
 				<span class="fd-input-group__addon fd-input-group__addon--button">
-				<button class="fd-popover__control fd-button--light sap-icon--calendar" aria-controls="Itcgq828" aria-expanded="false" aria-haspopup="true" aria-hidden="true"></button>
+				<button class="fd-input-group__button fd-popover__control fd-button--light sap-icon--calendar" aria-controls="Itcgq828" aria-expanded="false" aria-haspopup="true" aria-hidden="true"></button>
 				</span>
 			</div>
 		</div>
@@ -207,7 +207,7 @@ This component mostly relies on the CSS of other components and has very little 
 			<div class="fd-input-group">
 				<input type="text" value="" placeholder="Pick a date" class="fd-input fd-input--compact fd-input-group__input">
 				<span class="fd-input-group__addon fd-input-group__addon--button">
-				<button class="fd-popover__control fd-button--light fd-button--compact sap-icon--calendar" aria-controls="Itcgq82" aria-expanded="false" aria-haspopup="true" aria-hidden="true"></button>
+				<button class="fd-input-group__button fd-popover__control fd-button--light fd-button--compact sap-icon--calendar" aria-controls="Itcgq82" aria-expanded="false" aria-haspopup="true" aria-hidden="true"></button>
 				</span>
 			</div>
 		</div>
