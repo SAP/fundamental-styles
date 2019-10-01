@@ -235,7 +235,7 @@ entries:
       url: /resources/design-system-utilities.html
       output: web
 
-    - title: SAP Fundamental Styles Implementation Libraries
+    - title: Fundamental Styles Implementation Libraries
       url: /resources/fundamentals-libraries.html
       output: web
       

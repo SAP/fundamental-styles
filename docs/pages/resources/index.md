@@ -21,7 +21,7 @@ summary:
     <a class="fd-tile" role="button" href="fundamentals-libraries.html">
         <div class="fd-tile__content">
             <h2 class="fd-tile__header">
-                SAP Fundamental Styles Implementation Libraries
+                Fundamental Styles Implementation Libraries
             </h2>
         </div>
     </a>
