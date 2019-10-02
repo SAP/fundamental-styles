@@ -8,12 +8,12 @@ output: web
 topnav_title: Fundamental Styles
 
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
-site_title: SAP Fundamental Styles
+site_title: Fundamental Styles
 
-site_description: SAP Fundamental Styles is a Fiori 3 component library and SASS toolkit for building SAP user interfaces with any technology.
+site_description: Fundamental Styles is a Fiori 3 component library and SASS toolkit for building SAP user interfaces with any technology.
 
 # this appears in the footer
-company_name: SAP Fundamental Styles
+company_name: Fundamental Styles
 
 # if you have google-analytics ID, put it in. if not, edit this value to blank.
 google_analytics: UA-126805333-1
