@@ -29,8 +29,7 @@ summary:
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </div>
                 <div class="fd-notification__metadata">
-                    Default Notification Metadata <br>
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Default Notification Metadata
                 </div>
             </div>
         </div>
@@ -65,7 +64,7 @@ Add the modifier class `fd-notification--success` for Success notification.
             </div>
             <div class="fd-notification__text">
                 <div class="fd-notification__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </div>
                 <div class="fd-notification__metadata">
                     5 mins ago
@@ -91,7 +90,7 @@ Add the modifier class `fd-notification--warning` for Warning notification.
 <div class="fd-notification fd-notification--warning">
     <div class="fd-notification__header">
         <div class="fd-notification__indicator--warning"></div>
-        <div class="fd-notification__title">This is the notifications title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        <div class="fd-notification__title">This is the notifications title</div>
         <button class="fd-button--light sap-icon--decline fd-notification__close"></button>
     </div>
     <div class="fd-notification__body">
@@ -101,7 +100,7 @@ Add the modifier class `fd-notification--warning` for Warning notification.
             </div>
             <div class="fd-notification__text">
                 <div class="fd-notification__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </div>
                 <div class="fd-notification__metadata">
                     7 hours ago
@@ -141,12 +140,11 @@ Add the modifier class `fd-notification--error` for Error notification.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </div>
                 <div class="fd-notification__metadata">
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Excepteur sint occaecat cupidatat non proident.
                 </div>
             </div>
         </div>
         <div class="fd-notification__footer">
-            <button class="fd-button--light">More Info</button>
             <div class="fd-notification__actions">
                 <button class="fd-button--positive">Approve</button>
                 <button class="fd-button--negative">Reject</button>
@@ -178,7 +176,7 @@ Add the modifier class `fd-notification--information` for Information notificati
                     Lorem ipsum dolor sit amet, consectetur adipiscing.
                 </div>
                 <div class="fd-notification__metadata">
-                    Author | 32 minutes ago
+                    Author | 7 minutes ago
                 </div>
             </div>
         </div>
@@ -202,7 +200,7 @@ Medium (m) size notifications have width from 320px to 640px. Include the modifi
 <div class="fd-notification fd-notification--success fd-notification--m">
     <div class="fd-notification__header">
         <div class="fd-notification__indicator--success"></div>
-        <div class="fd-notification__title">This is the notifications title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        <div class="fd-notification__title">This is the notifications title.</div>
         <button class="fd-button--light sap-icon--decline fd-notification__close"></button>
     </div>
     <div class="fd-notification__body">
@@ -212,7 +210,7 @@ Medium (m) size notifications have width from 320px to 640px. Include the modifi
             </div>
             <div class="fd-notification__text">
                 <div class="fd-notification__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </div>
                 <div class="fd-notification__metadata">
                     1 hour ago
@@ -220,7 +218,6 @@ Medium (m) size notifications have width from 320px to 640px. Include the modifi
             </div>
         </div>
         <div class="fd-notification__footer">
-            <button class="fd-button--light">More Info</button>
             <div class="fd-notification__actions">
                 <button class="fd-button--positive">Approve</button>
                 <button class="fd-button--negative">Reject</button>
@@ -252,15 +249,39 @@ Small (s) size notifications have width 320px . Include the modifier class `fd-n
                     Lorem ipsum dolor sit amet, consectetur adipiscing.
                 </div>
                 <div class="fd-notification__metadata">
-                    Author | 32 minutes ago
+                    Author | 15 minutes ago
                 </div>
             </div>
         </div>
         <div class="fd-notification__footer">
-            <button class="fd-button--light">More Info</button>
             <div class="fd-notification__actions">
                 <button class="fd-button--positive">Approve</button>
                 <button class="fd-button--negative">Reject</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+
+<div class="fd-notification fd-notification--information fd-notification--s">
+    <div class="fd-notification__header">
+        <div class="fd-notification__indicator--information"></div>
+        <div class="fd-notification__title">This is the notifications title</div>
+        <button class="fd-button--light sap-icon--decline fd-notification__close"></button>
+    </div>
+    <div class="fd-notification__body">
+        <div class="fd-notification__content">
+            <div class="fd-notification__avatar">
+                <span class="fd-identifier fd-identifier--s" aria-label="Wendy Wallace">WW</span>
+            </div>
+            <div class="fd-notification__text">
+                <div class="fd-notification__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing.
+                </div>
+                <div class="fd-notification__metadata">
+                    Author | 15 minutes ago
+                </div>
             </div>
         </div>
     </div>
@@ -277,7 +298,7 @@ Notifications can be grouped together in a container with a class `fd-notificati
     <div class="fd-notification fd-notification--success fd-notification--m">
         <div class="fd-notification__header">
             <div class="fd-notification__indicator--success"></div>
-            <div class="fd-notification__title">This is the notifications title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div class="fd-notification__title">This is the notifications title.</div>
             <button class="fd-button--light sap-icon--decline fd-notification__close"></button>
         </div>
         <div class="fd-notification__body">
@@ -287,10 +308,10 @@ Notifications can be grouped together in a container with a class `fd-notificati
                 </div>
                 <div class="fd-notification__text">
                     <div class="fd-notification__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </div>
                     <div class="fd-notification__metadata">
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Author | 2 minutes ago
                     </div>
                 </div>
             </div>
@@ -316,7 +337,7 @@ Notifications can be grouped together in a container with a class `fd-notificati
                 </div>
                 <div class="fd-notification__text">
                     <div class="fd-notification__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </div>
                     <div class="fd-notification__metadata">
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -348,7 +369,7 @@ Notifications can be grouped together in a container with a class `fd-notificati
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </div>
                     <div class="fd-notification__metadata">
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Author | 16 minutes ago
                     </div>
                 </div>
             </div>
@@ -377,12 +398,11 @@ Notifications can be grouped together in a container with a class `fd-notificati
                         Lorem ipsum dolor sit amet, consectetur adipiscing.
                     </div>
                     <div class="fd-notification__metadata">
-                        Author | 32 minutes ago
+                        Author | 5 minutes ago
                     </div>
                 </div>
             </div>
             <div class="fd-notification__footer">
-                <button class="fd-button--light">More Info</button>
                 <div class="fd-notification__actions">
                     <button class="fd-button--positive">Approve</button>
                     <button class="fd-button--negative">Reject</button>

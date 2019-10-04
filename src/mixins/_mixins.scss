@@ -326,3 +326,29 @@
 @mixin action-cursor {
   cursor: pointer;
 }
+
+@mixin multiline-truncate($lineHeight: 1.4em, $lineCount: 1, $backgroundColor: transparent) {
+  position: relative;
+  line-height: $lineHeight;
+  max-height: $lineCount * $lineHeight;
+  overflow: hidden;
+  margin-right: -1em;
+  padding-right: 1em;
+
+  &::before {
+    position: absolute;
+    content: "...";
+    right: 0;
+    bottom: 1px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: $backgroundColor;
+  }
+}
