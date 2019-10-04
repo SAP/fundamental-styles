@@ -16,7 +16,7 @@ $block: #{$fd-namespace}-alert;
   $fd-alert-padding-default: 1rem;
   $fd-alert-padding-dismissible: 2.5rem;
   $fd-alert-padding-status: 2.5rem;
-  $fd-alert-text-color: var(--sapTextColor, $sapTextColor);
+  $fd-alert-text-color: var(--sapTextColor);
 
   @mixin fd-alert-icon-container {
     position: absolute;
@@ -34,24 +34,24 @@ $block: #{$fd-namespace}-alert;
   }
 
   // SUCCESS
-  $fd-alert-background-color--success: var(--sapSuccessBackground, $sapSuccessBackground) !default;
-  $fd-alert-border-color--success: var(--sapSuccessBorderColor, $sapSuccessBorderColor) !default;
+  $fd-alert-background-color--success: var(--sapSuccessBackground) !default;
+  $fd-alert-border-color--success: var(--sapSuccessBorderColor) !default;
 
   // ERROR
-  $fd-alert-background-color--error: var(--sapErrorBackground, $sapErrorBackground) !default;
-  $fd-alert-border-color--error: var(--sapErrorBorderColor, $sapErrorBorderColor) !default;
+  $fd-alert-background-color--error: var(--sapErrorBackground) !default;
+  $fd-alert-border-color--error: var(--sapErrorBorderColor) !default;
 
   // WARNING
-  $fd-alert-background-color--warning: var(--sapWarningBackground, $sapWarningBackground) !default;
-  $fd-alert-border-color--warning: var(--sapWarningBorderColor, $sapWarningBorderColor) !default;
+  $fd-alert-background-color--warning: var(--sapWarningBackground) !default;
+  $fd-alert-border-color--warning: var(--sapWarningBorderColor) !default;
 
   // INFORMATION
-  $fd-alert-background-color--information: var(--sapInformationBackground, $sapInformationBackground) !default;
-  $fd-alert-border-color--information: var(--sapInformationBorderColor, $sapInformationBorderColor) !default;
+  $fd-alert-background-color--information: var(--sapInformationBackground) !default;
+  $fd-alert-border-color--information: var(--sapInformationBorderColor) !default;
 
   // NEUTRAL
-  $fd-alert-background-color: var(--sapNeutralBackground, $sapNeutralBackground) !default;
-  $fd-alert-border-color: var(--sapNeutralBorderColor, $sapNeutralBorderColor) !default;
+  $fd-alert-background-color: var(--sapNeutralBackground) !default;
+  $fd-alert-border-color: var(--sapNeutralBorderColor) !default;
 
   // ---------------------------------------------------------------------------
 
