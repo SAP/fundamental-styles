@@ -219,6 +219,10 @@ $block: #{$fd-namespace}-notification;
     & > * {
       margin: 0.25rem;
     }
+
+    @include fd-rtl() {
+      margin-left: 0;
+    }
   }
 
   &--error {
