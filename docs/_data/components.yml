@@ -45,6 +45,9 @@
     - title: Modal
       meta: modal
 
+    - title: Notification
+      meta: notification
+
     - title: Pagination
       meta: pagination
 
