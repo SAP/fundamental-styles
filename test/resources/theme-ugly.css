@@ -55,4 +55,16 @@
   --fd-counter-background-color: Chocolate;
   --fd-padding-ui: 100px;
   --fd-color-shell-1: orange;
+
+  /* SAP-THEMING UGLY */
+  --sapSuccessBackground: rgb(205, 102, 119);
+  --sapSuccessBorderColor: rgb(84%, 13%, 91%);
+  --sapErrorBackground: #e3ba20;
+  --sapErrorBorderColor: #d17f15;
+  --sapWarningBackground: rgb(13%, 71%, 90%);
+  --sapWarningBorderColor: teal;
+  --sapInformationBackground: #6367de;
+  --sapInformationBorderColor: #984bd2;
+  --sapNeutralBackground: powderblue;
+  --sapNeutralBorderColor: #2b78c5;
 }
