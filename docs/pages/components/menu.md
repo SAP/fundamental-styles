@@ -83,22 +83,31 @@ This is an additional container that can be used for an icon or checkbox before 
 
 {% capture default-menuwgroup %}
 <nav class="fd-menu fd-menu--addon-before">
-    <ul class="fd-menu__list">
+    <ul class="fd-menu__list fd-menu__list--seperated">
         <li>
-            <div class="fd-menu__addon-before"></div>
-            <a href="#" class="fd-menu__item">Option 1 with very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long header</a>
+            <a href="#" class="fd-menu__item">
+                <span class="fd-menu__addon-before"></span>
+                Option 1 with very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long header
+            </a>
         </li>
         <li>
-            <div class="fd-menu__addon-before"><span class="sap-icon--accept"></span></div>
-            <a href="#" class="fd-menu__item">Option 2</a>
+        <div class="container" href="#">
+            <a href="#" class="fd-menu__item">
+                <span class="fd-menu__addon-before sap-icon--accept"></span>Option 2
+            </a>
+        </div>    
         </li>
         <li>
-            <div class="fd-menu__addon-before"></div>
-            <a href="#" class="fd-menu__item">Option 3</a>
+            <a href="#" class="fd-menu__item">
+                <span class="fd-menu__addon-before"></span>
+                Option 3
+            </a>
         </li>
         <li>
-            <div class="fd-menu__addon-before"></div>
-            <a href="#" class="fd-menu__item">Option 4</a>
+            <a href="#" class="fd-menu__item">
+                <span class="fd-menu__addon-before"></span>
+                Option 4
+                </a>
         </li>
     </ul>
 </nav>

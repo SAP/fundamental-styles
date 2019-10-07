@@ -169,7 +169,8 @@ $block: #{$fd-namespace}-menu;
       clear: right;
     }
 
-    height: 39px;// TODO get rid of hardcoded height
+    height: 14px;
+    line-height: 1.42857;
     display: flex;
     justify-content: center;
     align-items: center;

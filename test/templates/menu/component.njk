@@ -7,7 +7,6 @@
     {%- for item in properties.items %}
       {%- if item.items %}
         {%- if not loop.first %}
-      </ul>
     {%- endif %}
     {{ optgroup(item, properties.separator, header_size )| indent(2) }}
   {%- else %}
@@ -34,14 +33,13 @@
 
 {%- macro option(item={}, properties={}) -%}
 <li>
+<a role="button" class="fd-menu__item {{item.class if item.class}}">
 {%- if properties.addon_before -%}
-  <div class="fd-menu__addon-before">
-    {%- if item.icon -%}
-      <span>i</span>
-    {%- endif -%}
-  </div>
+  <span class="fd-menu__addon-before">
+    {%- if item.icon -%}i{%- endif -%}
+  </span>
 {%- endif -%}
-<a role="button" class="fd-menu__item {{item.class if item.class}}">{{ item.label }}</a>
+{{ item.label }}</a>
 </li>
 {%- endmacro %}
 
