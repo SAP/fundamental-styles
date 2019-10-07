@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.0-rc.10"></a>
+# [0.3.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.3.0-rc.9...v0.3.0-rc.10) (2019-10-07)
+
+
+### Features
+
+* menu hover ([#364](https://github.com/SAP/fundamental-styles/issues/364)) ([c44bc9f](https://github.com/SAP/fundamental-styles/commit/c44bc9f))
+
+
+
 <a name="0.3.0-rc.9"></a>
 # [0.3.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.3.0-rc.8...v0.3.0-rc.9) (2019-10-07)
 
