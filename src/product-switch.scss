@@ -69,6 +69,7 @@ $block: #{$fd-namespace}-product-switch;
     }
 
     .#{$block}__item {
+      @include fd-reset();
       @include fd-flex();
 
       max-width: 100%;
@@ -212,6 +213,8 @@ $block: #{$fd-namespace}-product-switch;
   }
 
   &__text {
+    @include fd-reset();
+
     width: 100%;
     overflow: hidden;
     max-height: 2.5rem;
