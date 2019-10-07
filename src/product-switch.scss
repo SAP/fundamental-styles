@@ -1,0 +1,111 @@
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+/*!
+.fd-product-switch
+*/
+$block: #{$fd-namespace}-product-switch;
+
+.#{$block} {
+  @include fd-reset();
+
+  position: relative;
+  display: inline-block;
+
+  &__body {
+    @include fd-reset();
+
+    border: 1px solid #e5e5e5; // Only during development
+    width: fit-content;
+    padding: 1.5rem 0.5rem 1rem 1rem;
+    background-color: var(--sapList_Background);
+  }
+
+  &__list {
+    @include fd-reset();
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 47rem;
+
+    &--3col {
+      width: 35.25rem;
+    }
+  }
+
+  &__item {
+    @include fd-reset();
+
+    border: 1px solid #e5f0fa; // Only during development
+    flex: 1 0 25%;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--sapList_Background);
+    border-radius: var(--sapElement_BorderCornerRadius);
+    max-width: 11.25rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &:hover {
+      background-color: var(--sapList_Hover_Background);
+    }
+
+    &:active {
+      background-color: var(--sapList_Active_Background);
+
+      .#{$block}__icon,
+      .#{$block}__title,
+      .#{$block}__subtitle {
+        color: var(--sapList_Active_TextColor);
+      }
+    }
+
+    &.selected {
+      background-color: var(--sapList_SelectionBackgroundColor);
+      border: 0.125rem solid var(--sapList_SelectionBorderColor);
+
+      &:hover {
+        background-color: var(--sapList_Hover_SelectionBackground);
+      }
+
+      &:active {
+        background-color: var(--sapList_Active_Background);
+      }
+    }
+  }
+
+  &__icon {
+    @include fd-reset();
+
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--sapContent_IconColor);
+  }
+
+  //   &__text{
+
+  //   }
+
+  &__title {
+    @include fd-reset();
+
+    font-size: var(--sapFontHeader6Size);
+    line-height: 1.25rem;
+    color: var(--sapGroup_TitleTextColor);
+  }
+
+  &__subtitle {
+    @include fd-reset();
+
+    font-size: var(--sapFontSmallSize);
+    line-height: 1.25rem;
+    color: var(--sapContent_LabelColor);
+  }
+}
