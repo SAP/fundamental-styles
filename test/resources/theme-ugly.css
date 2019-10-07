@@ -58,7 +58,6 @@
 
   /* SAP-THEMING UGLY */
   --sapSuccessBackground: rgb(205, 102, 119);
-  --sapSuccessBorderColor: rgb(84%, 13%, 91%);
   --sapErrorBackground: #e3ba20;
   --sapErrorBorderColor: #d17f15;
   --sapWarningBackground: rgb(13%, 71%, 90%);
@@ -67,4 +66,12 @@
   --sapInformationBorderColor: #984bd2;
   --sapNeutralBackground: powderblue;
   --sapNeutralBorderColor: #2b78c5;
+  --sapList_Background: #e3ba20;
+  --sapErrorColor: #945ef7;
+  --sapWarningColor: #a8fac7;
+  --sapSuccessColor: #bc3f8c;
+  --sapSuccessBorderColor: #bc3f8c;
+  --sapInformationColor: #0cd06b;
+  --sapGroup_TitleTextColor: rgb(93%, 2%, 45%);
+  --sapContent_LabelColor: rgb(205, 102, 119);
 }

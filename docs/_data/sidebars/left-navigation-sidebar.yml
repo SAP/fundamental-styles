@@ -172,6 +172,10 @@ entries:
       url: /components/multi-input.html
       output: web
 
+    - title: Notification
+      url: /components/notification.html
+      output: web
+
     - title: Pagination
       url: /components/pagination.html
       output: web
