@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.0-rc.12"></a>
+# [0.3.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.3.0-rc.11...v0.3.0-rc.12) (2019-10-09)
+
+
+
 <a name="0.3.0-rc.11"></a>
 # [0.3.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.3.0-rc.10...v0.3.0-rc.11) (2019-10-08)
 
