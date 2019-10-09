@@ -69,7 +69,10 @@ $block: #{$fd-namespace}-product-switch;
     }
 
     .#{$block}__item {
+<<<<<<< HEAD
       @include fd-reset();
+=======
+>>>>>>> adds mobile design and control
       @include fd-flex();
 
       max-width: 100%;
@@ -165,6 +168,7 @@ $block: #{$fd-namespace}-product-switch;
       outline: 0.0625rem dotted;
       outline-color: var(--sapContent_FocusColor);
     }
+<<<<<<< HEAD
 
     &.dragged {
       @include dragged () {
@@ -195,6 +199,8 @@ $block: #{$fd-namespace}-product-switch;
         }
       }
     }
+=======
+>>>>>>> adds mobile design and control
   }
 
   &__icon {
@@ -213,8 +219,11 @@ $block: #{$fd-namespace}-product-switch;
   }
 
   &__text {
+<<<<<<< HEAD
     @include fd-reset();
 
+=======
+>>>>>>> adds mobile design and control
     width: 100%;
     overflow: hidden;
     max-height: 2.5rem;

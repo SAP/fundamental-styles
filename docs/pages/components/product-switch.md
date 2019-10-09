@@ -9,6 +9,7 @@ folder: components
 ---
 
 {: .docs-intro}
+<<<<<<< HEAD
 Product Switch provides a role based access to all products or LoBs. It shows only one level of navigation.
 
 ## Product Switch in Shellbar
@@ -128,6 +129,9 @@ Product Switch provides a role based access to all products or LoBs. It shows on
 </div>
 {% endcapture %}
 {% include display-component.html component=product-switch-body-control %}
+=======
+Intro about the Product Switch ...
+>>>>>>> adds mobile design and control
 
 <br>
 
@@ -388,3 +392,128 @@ Add the modifier class `fd-product-switch__body--mobile` for a list layout.
 </div>
 {% endcapture %}
 {% include display-component.html component=product-switch-body-mobile %}
+<<<<<<< HEAD
+=======
+
+<br>
+
+## Product Switch - Control
+Product Switch uses the `Popover` Component
+
+<div class="product-switch-documentation">
+{% capture product-switch-body-control %}
+<div style="background-color: #354A5F;text-align: right;padding: 5px;">
+    <div class="fd-product-switch">
+        <div class="fd-popover fd-popover--right">
+            <div class="fd-popover__control">
+                <button class="fd-button--light fd-popover__control fd-product-switch__control sap-icon--grid" 
+                    aria-label="Image label" 
+                    aria-controls="product-switch-body" 
+                    aria-expanded="false" 
+                    aria-haspopup="true">
+                </button>
+            </div>
+            <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="product-switch-body">
+                <div class="fd-product-switch__body">
+                    <ul class="fd-product-switch__list">
+                        <li class="fd-product-switch__item">
+                            <div class="fd-product-switch__icon sap-icon--home"></div>
+                            <div class="fd-product-switch__text">
+                                <div class="fd-product-switch__title">Home</div>
+                                <div class="fd-product-switch__subtitle">Central Home</div>
+                            </div>
+                        </li>
+                        <li class="fd-product-switch__item selected">
+                            <div class="fd-product-switch__icon sap-icon--business-objects-experience"></div>
+                            <div class="fd-product-switch__text">
+                                <div class="fd-product-switch__title">Analytics Cloud</div>
+                                <div class="fd-product-switch__subtitle">Analytics Cloud</div>
+                            </div>
+                        </li>
+                        <li class="fd-product-switch__item">
+                            <div class="fd-product-switch__icon sap-icon--contacts"></div>
+                            <div class="fd-product-switch__text">
+                                <div class="fd-product-switch__title">Catalog</div>
+                                <div class="fd-product-switch__subtitle">Ariba</div>
+                            </div>
+                        </li>
+                        <li class="fd-product-switch__item">
+                            <div class="fd-product-switch__icon sap-icon--credit-card"></div>
+                            <div class="fd-product-switch__text">
+                                <div class="fd-product-switch__title">Guided Buying</div>
+                            </div>
+                        </li>
+                        <li class="fd-product-switch__item">
+                            <div class="fd-product-switch__icon sap-icon--cart-3"></div>
+                            <div class="fd-product-switch__text">
+                                <div class="fd-product-switch__title">Strategic Procurement</div>
+                            </div>
+                        </li>
+                        <li class="fd-product-switch__item">
+                            <div class="fd-product-switch__icon sap-icon--flight"></div>
+                            <div class="fd-product-switch__text">
+                                <div class="fd-product-switch__title">Travel & Expense</div>
+                                <div class="fd-product-switch__subtitle">Concur</div>
+                            </div>
+                        </li>
+                        <li class="fd-product-switch__item">
+                            <div class="fd-product-switch__icon sap-icon--shipping-status"></div>
+                            <div class="fd-product-switch__text">
+                                <div class="fd-product-switch__title">Vendor Management</div>
+                                <div class="fd-product-switch__subtitle">Fieldglass</div>
+                            </div>
+                        </li>
+                        <li class="fd-product-switch__item">
+                            <div class="fd-product-switch__icon sap-icon--customer"></div>
+                            <div class="fd-product-switch__text">
+                                <div class="fd-product-switch__title">Human Capital Management</div>
+                            </div>
+                        </li>
+                        <li class="fd-product-switch__item">
+                            <div class="fd-product-switch__icon sap-icon--sales-notification"></div>
+                            <div class="fd-product-switch__text">
+                                <div class="fd-product-switch__title">Sales Cloud</div>
+                                <div class="fd-product-switch__subtitle">Sales Cloud</div>
+                            </div>
+                        </li>
+                        <li class="fd-product-switch__item">
+                            <div class="fd-product-switch__icon sap-icon--retail-store"></div>
+                            <div class="fd-product-switch__text">
+                                <div class="fd-product-switch__title">Commerce Cloud</div>
+                                <div class="fd-product-switch__subtitle">Commerce Cloud</div>
+                            </div>
+                        </li>
+                        <li class="fd-product-switch__item">
+                            <div class="fd-product-switch__icon sap-icon--marketing-campaign"></div>
+                            <div class="fd-product-switch__text">
+                                <div class="fd-product-switch__title">Marketing Cloud</div>
+                                <div class="fd-product-switch__subtitle">Marketing Cloud</div>
+                            </div>
+                        </li>
+                        <li class="fd-product-switch__item">
+                            <div class="fd-product-switch__icon sap-icon--family-care"></div>
+                            <div class="fd-product-switch__text">
+                                <div class="fd-product-switch__title">Service Cloud</div>
+                            </div>
+                        </li>
+                        <li class="fd-product-switch__item">
+                            <div class="fd-product-switch__icon sap-icon--customer-briefing"></div>
+                            <div class="fd-product-switch__text">
+                                <div class="fd-product-switch__title">Customer Data Cloud</div>
+                            </div>
+                        </li>
+                        <li class="fd-product-switch__item">
+                            <div class="fd-product-switch__icon sap-icon--batch-payments"></div>
+                            <div class="fd-product-switch__text">
+                                <div class="fd-product-switch__title">S/4HANA</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=product-switch-body-control %}
+>>>>>>> adds mobile design and control
