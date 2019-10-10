@@ -49,8 +49,7 @@ $block: #{$fd-namespace}-input-group;
   .#{$block}__input {
     @include fd-reset-child-spacing();
 
-    flex: 1 0 auto;
-    width: auto;
+    width: 100%;
     z-index: map-get($fd-z-index-levels, "first");
   }
 
