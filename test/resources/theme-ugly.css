@@ -74,4 +74,10 @@
   --sapInformationColor: #0cd06b;
   --sapGroup_TitleTextColor: rgb(93%, 2%, 45%);
   --sapContent_LabelColor: rgb(205, 102, 119);
+  --sapList_Hover_Background: #4f9344;
+  --sapList_Active_Background: pink;
+  --sapList_SelectionBorderColor: orange;
+  --sapList_SelectionBackgroundColor: #32c71c;
+  --sapList_Hover_SelectionBackground: rgb(93%, 2%, 45%);
+  --sapContent_IconColor: purple;
 }

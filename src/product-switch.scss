@@ -1,6 +1,7 @@
 @import "./settings";
 @import "./mixins";
 @import "./functions";
+@import "./drag-and-drop";
 
 /*!
 .fd-product-switch
@@ -162,6 +163,36 @@ $block: #{$fd-namespace}-product-switch;
     &:focus {
       outline: 0.0625rem dotted;
       outline-color: var(--sapContent_FocusColor);
+    }
+
+    &.dragged {
+      @include dragged () {
+        &:hover,
+        &:active {
+          background-color: fade(var(--sapList_Background), 90);
+
+          .#{$block}__icon {
+            color: var(--sapContent_IconColor);
+          }
+
+          .#{$block}__title {
+            color: var(--sapGroup_TitleTextColor);
+          }
+
+          .#{$block}__subtitle {
+            color: var(--sapContent_LabelColor);
+          }
+        }
+
+        &.selected {
+          border: none;
+          box-shadow: var(--sapContent_Shadow2);
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
     }
   }
 
