@@ -252,6 +252,7 @@ When a product has multiple links, the product links should collapse into an ove
 {: .docs-header-h2}
 
 This example shows an application with CoPilot, integration with other products, and a customized logo.
+For more information about the Product Switch, see [Product Switch](product-switch.html) component.
 
 {% capture app-layout %}
 
