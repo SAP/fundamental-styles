@@ -9,7 +9,7 @@
 <meta name="keywords" content=" shell shellbar global navigation">
 <title>
 	
-	Shellbar - SAP Fundamental Styles
+	Shellbar - Fundamental Styles
 	
 
 </title>
@@ -27,7 +27,7 @@
 </script>
 <!-- End Google Tag Manager -->
 
-<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1567795225932373007">
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1571353636321983077">
 <link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -59,7 +59,7 @@
 
         <!-- logo -->
         <a class="docs-top-nav__logo" href="/fundamental-styles/index.html">
-            SAP Fundamental <span class="docs-top-nav__logo__accent">Styles</span>
+            Fundamental <span class="docs-top-nav__logo__accent">Styles</span>
         </a>
 
         <button id="mobile-sidenav-btn" class="fd-button--light sap-icon--menu2" aria-haspopup="true" aria-expanded="false" aria-label="Menu"></button>
@@ -68,7 +68,7 @@
         <div class="docs-top-nav__support fd-has-float-right">
 
             <span class="fd-has-align-items-center fd-has-margin-right-small">
-                <span>v0.2.0</span>
+                <span>v0.3.0</span>
                 <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
                     <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
                         <title>GitHub</title>
@@ -108,9 +108,9 @@
         <div class="fd-popover__control">
             <div aria-label="Image label" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
                 <div class="fd-input-group">
-                    <input type="text" class="fd-input" id="docs-search" placeholder="search...">
+                    <input type="text" class="fd-input fd-input-group__input" id="docs-search" placeholder="search...">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
-                        <button class=" fd-button--light sap-icon--search"></button>
+                        <button class="fd-input-group__button fd-button--light sap-icon--search"></button>
                     </span>
                 </div>
             </div>
@@ -301,8 +301,28 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/patterns/date-picker.html"
+                   class="side-nav__links-link">Date Picker</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/patterns/search-input.html"
                    class="side-nav__links-link">Search Input</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/patterns/time-picker.html"
+                   class="side-nav__links-link">Time Picker</a>
             </li>
             
             
@@ -387,16 +407,6 @@
             
             
             <li class="side-nav__links">
-                <a href="/fundamental-styles/components/date-picker.html"
-                   class="side-nav__links-link">Date Picker</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/dropdown.html"
                    class="side-nav__links-link">Dropdown</a>
             </li>
@@ -459,6 +469,16 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/inline-help.html"
                    class="side-nav__links-link">Inline Help</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/list.html"
+                   class="side-nav__links-link">List</a>
             </li>
             
             
@@ -537,6 +557,16 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/components/notification.html"
+                   class="side-nav__links-link">Notification</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/pagination.html"
                    class="side-nav__links-link">Pagination</a>
             </li>
@@ -556,9 +586,29 @@
             
             
             
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/product-switch.html"
+                   class="side-nav__links-link">Product Switch</a>
+            </li>
+            
+            
+            
+            
+            
+            
             <li class="side-nav__links active">
                 <a href="/fundamental-styles/components/shellbar.html"
                    class="side-nav__links-link">Shellbar</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/select.html"
+                   class="side-nav__links-link">Select</a>
             </li>
             
             
@@ -627,16 +677,6 @@
             
             
             <li class="side-nav__links">
-                <a href="/fundamental-styles/components/time-picker.html"
-                   class="side-nav__links-link">Time Picker</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/token.html"
                    class="side-nav__links-link">Token</a>
             </li>
@@ -694,7 +734,7 @@
             
             <li class="side-nav__links">
                 <a href="/fundamental-styles/resources/fundamentals-libraries.html"
-                   class="side-nav__links-link">SAP Fundamental Styles Implementation Libraries</a>
+                   class="side-nav__links-link">Fundamental Styles Implementation Libraries</a>
             </li>
             
             
@@ -765,7 +805,7 @@
   <li><code class="highlighter-rouge">.fd-shellbar__action--desktop</code> (optional) for product actions only visible on desktop screens.</li>
   <li><code class="highlighter-rouge">.fd-search-input</code> (optional) for searching the product.</li>
   <li><code class="highlighter-rouge">.fd-identifier</code> (required) for user settings and application meta links such as Sign Out. <a href="/fundamental-styles/foundation/colors.html#accent">Accent colors between 11-15</a> can be randomly assigned to the background.</li>
-  <li><code class="highlighter-rouge">.fd-product-switcher</code> (optional) for navigating between products.</li>
+  <li><code class="highlighter-rouge">.fd-product-switch</code> (optional) for navigating between products.</li>
 </ul>
 
 <p>Here are examples of various configurations.</p>
@@ -775,9 +815,9 @@
 <p>This example shows the minimum shellbar for a single application product with only user settings. If no user thumbnail is available then display initials.</p>
 
 <div class="fd-tile docs-component docs-component__">
-    <label class="fd-form-label docs-component__bg-toggle" for="70279" title="Change Background">
+    <label class="fd-form-label docs-component__bg-toggle" for="88743" title="Change Background">
         <span class="fd-toggle fd-toggle--xs fd-input">
-            <input type="checkbox" name="" value="" id="70279" class="toggle-bg fd-toggle__input" />
+            <input type="checkbox" name="" value="" id="88743" class="toggle-bg fd-toggle__input" />
             <span class="fd-toggle__switch" role="presentation"></span>
         </span>
 
@@ -844,9 +884,9 @@
 <p>This example includes the product menu for navigating to applications within the product and shows a search box.</p>
 
 <div class="fd-tile docs-component docs-component__">
-    <label class="fd-form-label docs-component__bg-toggle" for="39031" title="Change Background">
+    <label class="fd-form-label docs-component__bg-toggle" for="99335" title="Change Background">
         <span class="fd-toggle fd-toggle--xs fd-input">
-            <input type="checkbox" name="" value="" id="39031" class="toggle-bg fd-toggle__input" />
+            <input type="checkbox" name="" value="" id="99335" class="toggle-bg fd-toggle__input" />
             <span class="fd-toggle__switch" role="presentation"></span>
         </span>
 
@@ -861,11 +901,11 @@
     <div class="fd-product-menu">
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
-          <button class="fd-product-menu__control" aria-controls="9GLB2694" aria-haspopup="true" aria-expanded="false">
+          <button class="fd-product-menu__control" aria-controls="9GLB26941" aria-haspopup="true" aria-expanded="false">
             <span class="fd-shellbar__title">Corporate Portal</span>
           </button>
         </div>
-        <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="9GLB2694">
+        <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="9GLB26941">
           <nav class="fd-menu">
             <ul class="fd-menu__list">
               <li><a role="button" class="fd-menu__item">Application A</a></li>
@@ -886,7 +926,7 @@
           <div class="fd-popover__control">
               <div aria-label="Image label" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
                   <div class="fd-input-group">
-                      <input type="text" class="fd-input" id="F4GcX348b1" value="Sear" placeholder="Search..." aria-hidden="true" />
+                      <input type="text" class="fd-input fd-input-group__input" id="F4GcX348b1" value="Sear" placeholder="Search..." aria-hidden="true" />
                       <span class="fd-input-group__addon fd-input-group__addon--button">
                           <button class="fd-shellbar__button fd-button sap-icon--search"></button>
                       </span>
@@ -937,11 +977,11 @@
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-menu"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover fd-popover--right"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-product-menu__control"</span> <span class="na">aria-controls=</span><span class="s">"9GLB2694"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-product-menu__control"</span> <span class="na">aria-controls=</span><span class="s">"9GLB26941"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-shellbar__title"</span><span class="nt">&gt;</span>Corporate Portal<span class="nt">&lt;/span&gt;</span>
           <span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"9GLB2694"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"9GLB26941"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"fd-menu"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Application A<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -962,7 +1002,7 @@
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;div</span> <span class="na">aria-label=</span><span class="s">"Image label"</span> <span class="na">aria-controls=</span><span class="s">"F4GcX348b"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;</span>
                   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"fd-input"</span> <span class="na">id=</span><span class="s">"F4GcX348b1"</span> <span class="na">value=</span><span class="s">"Sear"</span> <span class="na">placeholder=</span><span class="s">"Search..."</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"fd-input fd-input-group__input"</span> <span class="na">id=</span><span class="s">"F4GcX348b1"</span> <span class="na">value=</span><span class="s">"Sear"</span> <span class="na">placeholder=</span><span class="s">"Search..."</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon fd-input-group__addon--button"</span><span class="nt">&gt;</span>
                           <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-shellbar__button fd-button sap-icon--search"</span><span class="nt">&gt;&lt;/button&gt;</span>
                       <span class="nt">&lt;/span&gt;</span>
@@ -1007,9 +1047,9 @@
 <p>When a product has multiple links, the product links should collapse into an overflow menu on mobile screens. All actions, except for the user menu, should be collapsed. See the placement of the <code class="highlighter-rouge">.fd-shellbar__action--mobile</code> container below.</p>
 
 <div class="fd-tile docs-component docs-component__">
-    <label class="fd-form-label docs-component__bg-toggle" for="78109" title="Change Background">
+    <label class="fd-form-label docs-component__bg-toggle" for="16291" title="Change Background">
         <span class="fd-toggle fd-toggle--xs fd-input">
-            <input type="checkbox" name="" value="" id="78109" class="toggle-bg fd-toggle__input" />
+            <input type="checkbox" name="" value="" id="16291" class="toggle-bg fd-toggle__input" />
             <span class="fd-toggle__switch" role="presentation"></span>
         </span>
 
@@ -1027,9 +1067,9 @@
          <div class="fd-popover">
           <div class="fd-popover__control">
               <div aria-label="Image label" aria-controls="UIO6J688" aria-expanded="false" aria-haspopup="true">
-                  <div class="fd-input-group fd-input-group--after">
-                      <input type="text" class="fd-input" id="UIO6J6881" value="Sear" aria-hidden="true" />
-                      <span class="fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button">
+                  <div class="fd-input-group">
+                      <input type="text" class="fd-input fd-input-group__input" id="UIO6J6881" value="Sear" aria-hidden="true" />
+                      <span class="fd-input-group__addon fd-input-group__addon--button">
                           <button class="fd-shellbar__button fd-button sap-icon--search"></button>
                       </span>
                   </div>
@@ -1111,9 +1151,9 @@
          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;div</span> <span class="na">aria-label=</span><span class="s">"Image label"</span> <span class="na">aria-controls=</span><span class="s">"UIO6J688"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group fd-input-group--after"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"fd-input"</span> <span class="na">id=</span><span class="s">"UIO6J6881"</span> <span class="na">value=</span><span class="s">"Sear"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon fd-input-group__addon--after fd-input-group__addon--button"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"fd-input fd-input-group__input"</span> <span class="na">id=</span><span class="s">"UIO6J6881"</span> <span class="na">value=</span><span class="s">"Sear"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon fd-input-group__addon--button"</span><span class="nt">&gt;</span>
                           <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-shellbar__button fd-button sap-icon--search"</span><span class="nt">&gt;&lt;/button&gt;</span>
                       <span class="nt">&lt;/span&gt;</span>
                   <span class="nt">&lt;/div&gt;</span>
@@ -1181,14 +1221,15 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h2 class="docs-header-h2" id="product-switcher-and-copilot">Product Switcher and CoPilot</h2>
+<h2 class="docs-header-h2" id="product-switch-and-copilot">Product Switch and CoPilot</h2>
 
-<p>This example shows an application with CoPilot, integration with other products, and a customized logo.</p>
+<p>This example shows an application with CoPilot, integration with other products, and a customized logo.
+For more information about the Product Switch, see <a href="product-switch.html">Product Switch</a> component.</p>
 
 <div class="fd-tile docs-component docs-component__">
-    <label class="fd-form-label docs-component__bg-toggle" for="81739" title="Change Background">
+    <label class="fd-form-label docs-component__bg-toggle" for="35282" title="Change Background">
         <span class="fd-toggle fd-toggle--xs fd-input">
-            <input type="checkbox" name="" value="" id="81739" class="toggle-bg fd-toggle__input" />
+            <input type="checkbox" name="" value="" id="35282" class="toggle-bg fd-toggle__input" />
             <span class="fd-toggle__switch" role="presentation"></span>
         </span>
 
@@ -1225,68 +1266,111 @@
         </div>
       </div>
       <div class="fd-shellbar__action fd-shellbar__action--desktop">
-        <div class="fd-product-switcher">
-          <div class="fd-popover fd-popover--right">
-            <div class="fd-popover__control">
-              <button class="fd-shellbar__button fd-button sap-icon--grid" aria-controls="FAVDA565" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="fd-product-switch">
+            <div class="fd-popover fd-popover--right">
+                <div class="fd-popover__control">
+                    <button class="fd-button--light fd-popover__control fd-product-switch__control sap-icon--grid" aria-label="Image label" aria-controls="product-switch-body" aria-expanded="false" aria-haspopup="true">
+                    </button>
+                </div>
+                <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="product-switch-body">
+                    <div class="fd-product-switch__body">
+                        <ul class="fd-product-switch__list">
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--home"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Home</div>
+                                    <div class="fd-product-switch__subtitle">Central Home</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item selected">
+                                <div class="fd-product-switch__icon sap-icon--business-objects-experience"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Analytics Cloud</div>
+                                    <div class="fd-product-switch__subtitle">Analytics Cloud</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--contacts"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Catalog</div>
+                                    <div class="fd-product-switch__subtitle">Ariba</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--credit-card"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Guided Buying</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--cart-3"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Strategic Procurement</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--flight"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Travel &amp; Expense</div>
+                                    <div class="fd-product-switch__subtitle">Concur</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--shipping-status"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Vendor Management</div>
+                                    <div class="fd-product-switch__subtitle">Fieldglass</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--customer"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Human Capital Management</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--sales-notification"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Sales Cloud</div>
+                                    <div class="fd-product-switch__subtitle">Sales Cloud</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--retail-store"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Commerce Cloud</div>
+                                    <div class="fd-product-switch__subtitle">Commerce Cloud</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--marketing-campaign"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Marketing Cloud</div>
+                                    <div class="fd-product-switch__subtitle">Marketing Cloud</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--family-care"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Service Cloud</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--customer-briefing"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Customer Data Cloud</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--batch-payments"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">S/4HANA</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="FAVDA565">
-              <div class="fd-product-switcher__body">
-                <nav>
-                  <ul class="fd-product-switcher__body--list">
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="/fundamental-styles/images/products/01.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Fiori Home</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="/fundamental-styles/images/products/02.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">S/4 HANA Cloud</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="/fundamental-styles/images/products/03.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Analytics Cloud</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="/fundamental-styles/images/products/04.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Ariba</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="/fundamental-styles/images/products/05.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">SuccessFactors</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="/fundamental-styles/images/products/06.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Commerce Cloud</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="/fundamental-styles/images/products/07.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Gigya</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="/fundamental-styles/images/products/08.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Callidus Cloud</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="/fundamental-styles/images/products/09.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Fieldglass</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="/fundamental-styles/images/products/10.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Concur</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="/fundamental-styles/images/products/11.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Cloud for Customer</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="/fundamental-styles/images/products/12.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Cloud Portal</span>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
   </div>
@@ -1324,68 +1408,115 @@
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__action fd-shellbar__action--desktop"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switcher"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover fd-popover--right"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-shellbar__button fd-button sap-icon--grid"</span> <span class="na">aria-controls=</span><span class="s">"FAVDA565"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover fd-popover--right"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light fd-popover__control fd-product-switch__control sap-icon--grid"</span> 
+                        <span class="na">aria-label=</span><span class="s">"Image label"</span> 
+                        <span class="na">aria-controls=</span><span class="s">"product-switch-body"</span> 
+                        <span class="na">aria-expanded=</span><span class="s">"false"</span> 
+                        <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"product-switch-body"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__body"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-product-switch__list"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switch__item"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__icon sap-icon--home"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__text"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__title"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__subtitle"</span><span class="nt">&gt;</span>Central Home<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switch__item selected"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__icon sap-icon--business-objects-experience"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__text"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__title"</span><span class="nt">&gt;</span>Analytics Cloud<span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__subtitle"</span><span class="nt">&gt;</span>Analytics Cloud<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switch__item"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__icon sap-icon--contacts"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__text"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__title"</span><span class="nt">&gt;</span>Catalog<span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__subtitle"</span><span class="nt">&gt;</span>Ariba<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switch__item"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__icon sap-icon--credit-card"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__text"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__title"</span><span class="nt">&gt;</span>Guided Buying<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switch__item"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__icon sap-icon--cart-3"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__text"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__title"</span><span class="nt">&gt;</span>Strategic Procurement<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switch__item"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__icon sap-icon--flight"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__text"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__title"</span><span class="nt">&gt;</span>Travel <span class="err">&amp;</span> Expense<span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__subtitle"</span><span class="nt">&gt;</span>Concur<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switch__item"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__icon sap-icon--shipping-status"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__text"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__title"</span><span class="nt">&gt;</span>Vendor Management<span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__subtitle"</span><span class="nt">&gt;</span>Fieldglass<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switch__item"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__icon sap-icon--customer"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__text"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__title"</span><span class="nt">&gt;</span>Human Capital Management<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switch__item"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__icon sap-icon--sales-notification"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__text"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__title"</span><span class="nt">&gt;</span>Sales Cloud<span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__subtitle"</span><span class="nt">&gt;</span>Sales Cloud<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switch__item"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__icon sap-icon--retail-store"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__text"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__title"</span><span class="nt">&gt;</span>Commerce Cloud<span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__subtitle"</span><span class="nt">&gt;</span>Commerce Cloud<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switch__item"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__icon sap-icon--marketing-campaign"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__text"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__title"</span><span class="nt">&gt;</span>Marketing Cloud<span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__subtitle"</span><span class="nt">&gt;</span>Marketing Cloud<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switch__item"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__icon sap-icon--family-care"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__text"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__title"</span><span class="nt">&gt;</span>Service Cloud<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switch__item"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__icon sap-icon--customer-briefing"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__text"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__title"</span><span class="nt">&gt;</span>Customer Data Cloud<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switch__item"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__icon sap-icon--batch-payments"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__text"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switch__title"</span><span class="nt">&gt;</span>S/4HANA<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                        <span class="nt">&lt;/ul&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--right"</span>  <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"FAVDA565"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-switcher__body"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;nav&gt;</span>
-                  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-product-switcher__body--list"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switcher__body--list-item"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/fundamental-styles/images/products/01.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;&lt;/span&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-title"</span><span class="nt">&gt;</span>Fiori Home<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;/li&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switcher__body--list-item"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/fundamental-styles/images/products/02.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;&lt;/span&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-title"</span><span class="nt">&gt;</span>S/4 HANA Cloud<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;/li&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switcher__body--list-item"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/fundamental-styles/images/products/03.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;&lt;/span&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-title"</span><span class="nt">&gt;</span>Analytics Cloud<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;/li&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switcher__body--list-item"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/fundamental-styles/images/products/04.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;&lt;/span&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-title"</span><span class="nt">&gt;</span>Ariba<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;/li&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switcher__body--list-item"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/fundamental-styles/images/products/05.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;&lt;/span&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-title"</span><span class="nt">&gt;</span>SuccessFactors<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;/li&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switcher__body--list-item"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/fundamental-styles/images/products/06.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;&lt;/span&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-title"</span><span class="nt">&gt;</span>Commerce Cloud<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;/li&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switcher__body--list-item"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/fundamental-styles/images/products/07.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;&lt;/span&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-title"</span><span class="nt">&gt;</span>Gigya<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;/li&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switcher__body--list-item"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/fundamental-styles/images/products/08.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;&lt;/span&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-title"</span><span class="nt">&gt;</span>Callidus Cloud<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;/li&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switcher__body--list-item"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/fundamental-styles/images/products/09.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;&lt;/span&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-title"</span><span class="nt">&gt;</span>Fieldglass<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;/li&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switcher__body--list-item"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/fundamental-styles/images/products/10.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;&lt;/span&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-title"</span><span class="nt">&gt;</span>Concur<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;/li&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switcher__body--list-item"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/fundamental-styles/images/products/11.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;&lt;/span&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-title"</span><span class="nt">&gt;</span>Cloud for Customer<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;/li&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-product-switcher__body--list-item"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/fundamental-styles/images/products/12.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;&lt;/span&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-product-switcher__product-title"</span><span class="nt">&gt;</span>Cloud Portal<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;/li&gt;</span>
-                  <span class="nt">&lt;/ul&gt;</span>
-                <span class="nt">&lt;/nav&gt;</span>
-              <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>

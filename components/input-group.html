@@ -9,7 +9,7 @@
 <meta name="keywords" content=" input group, input groups, input, groups">
 <title>
 	
-	Input Group - SAP Fundamental Styles
+	Input Group - Fundamental Styles
 	
 
 </title>
@@ -27,7 +27,7 @@
 </script>
 <!-- End Google Tag Manager -->
 
-<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1567795225932373007">
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1571353636321983077">
 <link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -59,7 +59,7 @@
 
         <!-- logo -->
         <a class="docs-top-nav__logo" href="/fundamental-styles/index.html">
-            SAP Fundamental <span class="docs-top-nav__logo__accent">Styles</span>
+            Fundamental <span class="docs-top-nav__logo__accent">Styles</span>
         </a>
 
         <button id="mobile-sidenav-btn" class="fd-button--light sap-icon--menu2" aria-haspopup="true" aria-expanded="false" aria-label="Menu"></button>
@@ -68,7 +68,7 @@
         <div class="docs-top-nav__support fd-has-float-right">
 
             <span class="fd-has-align-items-center fd-has-margin-right-small">
-                <span>v0.2.0</span>
+                <span>v0.3.0</span>
                 <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
                     <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
                         <title>GitHub</title>
@@ -108,9 +108,9 @@
         <div class="fd-popover__control">
             <div aria-label="Image label" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
                 <div class="fd-input-group">
-                    <input type="text" class="fd-input" id="docs-search" placeholder="search...">
+                    <input type="text" class="fd-input fd-input-group__input" id="docs-search" placeholder="search...">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
-                        <button class=" fd-button--light sap-icon--search"></button>
+                        <button class="fd-input-group__button fd-button--light sap-icon--search"></button>
                     </span>
                 </div>
             </div>
@@ -301,8 +301,28 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/patterns/date-picker.html"
+                   class="side-nav__links-link">Date Picker</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/patterns/search-input.html"
                    class="side-nav__links-link">Search Input</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/patterns/time-picker.html"
+                   class="side-nav__links-link">Time Picker</a>
             </li>
             
             
@@ -387,16 +407,6 @@
             
             
             <li class="side-nav__links">
-                <a href="/fundamental-styles/components/date-picker.html"
-                   class="side-nav__links-link">Date Picker</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/dropdown.html"
                    class="side-nav__links-link">Dropdown</a>
             </li>
@@ -459,6 +469,16 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/inline-help.html"
                    class="side-nav__links-link">Inline Help</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/list.html"
+                   class="side-nav__links-link">List</a>
             </li>
             
             
@@ -537,6 +557,16 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/components/notification.html"
+                   class="side-nav__links-link">Notification</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/pagination.html"
                    class="side-nav__links-link">Pagination</a>
             </li>
@@ -557,8 +587,28 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/components/product-switch.html"
+                   class="side-nav__links-link">Product Switch</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/shellbar.html"
                    class="side-nav__links-link">Shellbar</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/select.html"
+                   class="side-nav__links-link">Select</a>
             </li>
             
             
@@ -627,16 +677,6 @@
             
             
             <li class="side-nav__links">
-                <a href="/fundamental-styles/components/time-picker.html"
-                   class="side-nav__links-link">Time Picker</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/token.html"
                    class="side-nav__links-link">Token</a>
             </li>
@@ -694,7 +734,7 @@
             
             <li class="side-nav__links">
                 <a href="/fundamental-styles/resources/fundamentals-libraries.html"
-                   class="side-nav__links-link">SAP Fundamental Styles Implementation Libraries</a>
+                   class="side-nav__links-link">Fundamental Styles Implementation Libraries</a>
             </li>
             
             
@@ -744,9 +784,9 @@
 <p>The Input Group supports <strong>compact</strong> mode (by virtue of the <code class="highlighter-rouge">--compact</code> modifier on child components).</p>
 
 <div class="fd-tile docs-component docs-component__">
-    <label class="fd-form-label docs-component__bg-toggle" for="45291" title="Change Background">
+    <label class="fd-form-label docs-component__bg-toggle" for="81999" title="Change Background">
         <span class="fd-toggle fd-toggle--xs fd-input">
-            <input type="checkbox" name="" value="" id="45291" class="toggle-bg fd-toggle__input" />
+            <input type="checkbox" name="" value="" id="81999" class="toggle-bg fd-toggle__input" />
             <span class="fd-toggle__switch" role="presentation"></span>
         </span>
 
@@ -757,7 +797,7 @@
     <label class="fd-form-label" for="">Default Size </label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon">$</span>
-        <input class="fd-input" type="text" name="" value="1234568910 " />
+        <input class="fd-input fd-input-group__input" type="text" name="" value="1234568910 " />
     </div>
 </div>
 
@@ -765,7 +805,7 @@
     <label class="fd-form-label" for="">Compact Size </label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input--compact" type="text" name="" value="1234568910 " />
+        <input class="fd-input fd-input--compact fd-input-group__input" type="text" name="" value="1234568910 " />
     </div>
 </div>
 
@@ -776,7 +816,7 @@
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span> <span class="na">for=</span><span class="s">""</span><span class="nt">&gt;</span>Default Size <span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon"</span><span class="nt">&gt;</span>$<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">"1234568910 "</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input fd-input-group__input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">"1234568910 "</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
@@ -784,7 +824,7 @@
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span> <span class="na">for=</span><span class="s">""</span><span class="nt">&gt;</span>Compact Size <span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon"</span><span class="nt">&gt;</span>$<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input fd-input--compact"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">"1234568910 "</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input fd-input--compact fd-input-group__input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">"1234568910 "</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
@@ -793,9 +833,9 @@
 <p>The Input Group with text add-on component is typically used to specify the type of the data being entered, such as currency or unit of measure. This add-on can be placed at the left or right (or both) of the input element.</p>
 
 <div class="fd-tile docs-component docs-component__">
-    <label class="fd-form-label docs-component__bg-toggle" for="3533" title="Change Background">
+    <label class="fd-form-label docs-component__bg-toggle" for="82832" title="Change Background">
         <span class="fd-toggle fd-toggle--xs fd-input">
-            <input type="checkbox" name="" value="" id="3533" class="toggle-bg fd-toggle__input" />
+            <input type="checkbox" name="" value="" id="82832" class="toggle-bg fd-toggle__input" />
             <span class="fd-toggle__switch" role="presentation"></span>
         </span>
 
@@ -807,14 +847,14 @@
     <label class="fd-form-label" for="">Left Aligned Text Add-on</label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon">$</span>
-        <input class="fd-input" type="text" name="" value="1234568910 " />
+        <input class="fd-input-group__input fd-input" type="text" name="" value="1234568910 " />
     </div>
 </div>
 
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Right Aligned Text Add-on</label>
     <div class="fd-input-group">
-        <input class="fd-input" type="text" name="" value="1234568910 " />
+        <input class="fd-input-group__input fd-input" type="text" name="" value="1234568910 " />
         <span class="fd-input-group__addon">€</span>
     </div>
 </div>
@@ -835,14 +875,14 @@
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span> <span class="na">for=</span><span class="s">""</span><span class="nt">&gt;</span>Left Aligned Text Add-on<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon"</span><span class="nt">&gt;</span>$<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">"1234568910 "</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input-group__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">"1234568910 "</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-item"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span> <span class="na">for=</span><span class="s">""</span><span class="nt">&gt;</span>Right Aligned Text Add-on<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">"1234568910 "</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input-group__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">"1234568910 "</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon"</span><span class="nt">&gt;</span>€<span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -861,9 +901,9 @@
 <p>The Input with add-on supports icons.</p>
 
 <div class="fd-tile docs-component docs-component__">
-    <label class="fd-form-label docs-component__bg-toggle" for="38054" title="Change Background">
+    <label class="fd-form-label docs-component__bg-toggle" for="98934" title="Change Background">
         <span class="fd-toggle fd-toggle--xs fd-input">
-            <input type="checkbox" name="" value="" id="38054" class="toggle-bg fd-toggle__input" />
+            <input type="checkbox" name="" value="" id="98934" class="toggle-bg fd-toggle__input" />
             <span class="fd-toggle__switch" role="presentation"></span>
         </span>
 
@@ -876,14 +916,14 @@
         <span class="fd-input-group__addon">
             <span class="sap-icon--globe" role="presentation"></span>
         </span>
-        <input class="fd-input" type="text" name="" value="1000000" />
+        <input class="fd-input fd-input-group__input" type="text" name="" value="1000000" />
     </div>
 </div>
 
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Input with icon on the right</label>
     <div class="fd-input-group">
-        <input class="fd-input" type="text" name="" value="1000000" />
+        <input class="fd-input fd-input-group__input" type="text" name="" value="1000000" />
         <span class="fd-input-group__addon">
             <span class="sap-icon--hide" role="presentation"></span>
         </span>
@@ -899,14 +939,14 @@
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sap-icon--globe"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;/span&gt;</span>
         <span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">"1000000"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input fd-input-group__input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">"1000000"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-item"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span> <span class="na">for=</span><span class="s">""</span><span class="nt">&gt;</span>Input with icon on the right<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">"1000000"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input fd-input-group__input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">"1000000"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sap-icon--hide"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;/span&gt;</span>
         <span class="nt">&lt;/span&gt;</span>
@@ -918,9 +958,9 @@
 <p>The Input with add-on supports actions. Actions can be shown with a text label or icon.</p>
 
 <div class="fd-tile docs-component docs-component__">
-    <label class="fd-form-label docs-component__bg-toggle" for="78547" title="Change Background">
+    <label class="fd-form-label docs-component__bg-toggle" for="21224" title="Change Background">
         <span class="fd-toggle fd-toggle--xs fd-input">
-            <input type="checkbox" name="" value="" id="78547" class="toggle-bg fd-toggle__input" />
+            <input type="checkbox" name="" value="" id="21224" class="toggle-bg fd-toggle__input" />
             <span class="fd-toggle__switch" role="presentation"></span>
         </span>
 
@@ -930,9 +970,9 @@
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Input with text add-on</label>
     <div class="fd-input-group">
-        <input class="fd-input" type="text" name="" value="1000000" />
+        <input class="fd-input fd-input-group__input" type="text" name="" value="1000000" />
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-button--light">
+            <button class="fd-input-group__button fd-button--light">
                 Button
             </button>
         </span>
@@ -942,9 +982,9 @@
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Input with icon action</label>
     <div class="fd-input-group">
-        <input class="fd-input" type="text" name="" value="1000000" />
+        <input class="fd-input fd-input-group__input" type="text" name="" value="1000000" />
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-button--icon fd-button--light sap-icon--navigation-down-arrow"></button>
+            <button class="fd-input-group__button fd-button--icon fd-button--light sap-icon--navigation-down-arrow"></button>
         </span>
     </div>
 </div>
@@ -953,11 +993,11 @@
     <label class="fd-form-label" for="">Input with text action on left</label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-button--light">
+            <button class="fd-input-group__button fd-button--light">
                 Button
             </button>
         </span>
-        <input class="fd-input" type="text" name="" value="1000000" />
+        <input class="fd-input fd-input-group__input" type="text" name="" value="1000000" />
     </div>
 </div>
 
@@ -967,9 +1007,9 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-item"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span> <span class="na">for=</span><span class="s">""</span><span class="nt">&gt;</span>Input with text add-on<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">"1000000"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input fd-input-group__input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">"1000000"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon fd-input-group__addon--button"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-input-group__button fd-button--light"</span><span class="nt">&gt;</span>
                 Button
             <span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/span&gt;</span>
@@ -979,9 +1019,9 @@
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-item"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span> <span class="na">for=</span><span class="s">""</span><span class="nt">&gt;</span>Input with icon action<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">"1000000"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input fd-input-group__input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">"1000000"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon fd-input-group__addon--button"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--icon fd-button--light sap-icon--navigation-down-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-input-group__button fd-button--icon fd-button--light sap-icon--navigation-down-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -990,20 +1030,20 @@
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span> <span class="na">for=</span><span class="s">""</span><span class="nt">&gt;</span>Input with text action on left<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon fd-input-group__addon--button"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-input-group__button fd-button--light"</span><span class="nt">&gt;</span>
                 Button
             <span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">"1000000"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input fd-input-group__input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">"1000000"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <h2 id="textareas">Textareas</h2>
 
 <div class="fd-tile docs-component docs-component__">
-    <label class="fd-form-label docs-component__bg-toggle" for="79582" title="Change Background">
+    <label class="fd-form-label docs-component__bg-toggle" for="12294" title="Change Background">
         <span class="fd-toggle fd-toggle--xs fd-input">
-            <input type="checkbox" name="" value="" id="79582" class="toggle-bg fd-toggle__input" />
+            <input type="checkbox" name="" value="" id="12294" class="toggle-bg fd-toggle__input" />
             <span class="fd-toggle__switch" role="presentation"></span>
         </span>
 
@@ -1013,7 +1053,7 @@
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Textarea with text add-on</label>
     <div class="fd-input-group">
-        <textarea class="fd-textarea"></textarea>
+        <textarea class="fd-textarea fd-input-group__input"></textarea>
         <span class="fd-input-group__addon">
             km/h
         </span>
@@ -1023,9 +1063,9 @@
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Textarea with action</label>
     <div class="fd-input-group">
-        <textarea class="fd-textarea"></textarea>
+        <textarea class="fd-textarea fd-input-group__input"></textarea>
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-button--light">
+            <button class="fd-input-group__button fd-button--light">
                 Button
             </button>
         </span>
@@ -1038,7 +1078,7 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-item"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span> <span class="na">for=</span><span class="s">""</span><span class="nt">&gt;</span>Textarea with text add-on<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"fd-textarea"</span> <span class="na">id=</span><span class="s">""</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+        <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"fd-textarea fd-input-group__input"</span> <span class="na">id=</span><span class="s">""</span><span class="nt">&gt;&lt;/textarea&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon"</span><span class="nt">&gt;</span>
             km/h
         <span class="nt">&lt;/span&gt;</span>
@@ -1048,9 +1088,9 @@
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-item"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span> <span class="na">for=</span><span class="s">""</span><span class="nt">&gt;</span>Textarea with action<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"fd-textarea"</span> <span class="na">id=</span><span class="s">""</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+        <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"fd-textarea fd-input-group__input"</span> <span class="na">id=</span><span class="s">""</span><span class="nt">&gt;&lt;/textarea&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon fd-input-group__addon--button"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-input-group__button fd-button--light"</span><span class="nt">&gt;</span>
                 Button
             <span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/span&gt;</span>
@@ -1062,9 +1102,9 @@
 <p>For an integer value input, a spinner can be added allowing the user to increase or decrease the value.</p>
 
 <div class="fd-tile docs-component docs-component__">
-    <label class="fd-form-label docs-component__bg-toggle" for="60027" title="Change Background">
+    <label class="fd-form-label docs-component__bg-toggle" for="96945" title="Change Background">
         <span class="fd-toggle fd-toggle--xs fd-input">
-            <input type="checkbox" name="" value="" id="60027" class="toggle-bg fd-toggle__input" />
+            <input type="checkbox" name="" value="" id="96945" class="toggle-bg fd-toggle__input" />
             <span class="fd-toggle__switch" role="presentation"></span>
         </span>
 
@@ -1074,10 +1114,10 @@
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Quantity Spinner</label>
     <div class="fd-input-group">
-        <input class="fd-input fd-input--no-number-spinner" id="spinner-1" type="number" value="100" />
+        <input class="fd-input fd-input--no-number-spinner fd-input-group__input" id="spinner-1" type="number" value="100" />
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-button--light fd-button--half sap-icon--slim-arrow-up" aria-label="Step up" onclick="document.getElementById('spinner-1').stepUp();"></button>
-            <button class="fd-button--light fd-button--half sap-icon--slim-arrow-down" aria-label="Step down" onclick="document.getElementById('spinner-1').stepDown();"></button>
+            <button class="fd-input-group__button fd-button--light fd-button--half sap-icon--slim-arrow-up" aria-label="Step up" onclick="document.getElementById('spinner-1').stepUp();"></button>
+            <button class="fd-input-group__button fd-button--light fd-button--half sap-icon--slim-arrow-down" aria-label="Step down" onclick="document.getElementById('spinner-1').stepDown();"></button>
         </span>
     </div>
 </div>
@@ -1088,10 +1128,10 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-item"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span> <span class="na">for=</span><span class="s">""</span><span class="nt">&gt;</span>Quantity Spinner<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input fd-input--no-number-spinner"</span> <span class="na">id=</span><span class="s">"spinner-1"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">value=</span><span class="s">"100"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input fd-input--no-number-spinner fd-input-group__input"</span> <span class="na">id=</span><span class="s">"spinner-1"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">value=</span><span class="s">"100"</span> <span class="nt">/&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon fd-input-group__addon--button"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light fd-button--half sap-icon--slim-arrow-up"</span> <span class="na">aria-label=</span><span class="s">"Step up"</span> <span class="na">onclick=</span><span class="s">"document.getElementById('spinner-1').stepUp();"</span><span class="nt">&gt;&lt;/button&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light fd-button--half sap-icon--slim-arrow-down"</span> <span class="na">aria-label=</span><span class="s">"Step down"</span> <span class="na">onclick=</span><span class="s">"document.getElementById('spinner-1').stepDown();"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-input-group__button fd-button--light fd-button--half sap-icon--slim-arrow-up"</span> <span class="na">aria-label=</span><span class="s">"Step up"</span> <span class="na">onclick=</span><span class="s">"document.getElementById('spinner-1').stepUp();"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-input-group__button fd-button--light fd-button--half sap-icon--slim-arrow-down"</span> <span class="na">aria-label=</span><span class="s">"Step down"</span> <span class="na">onclick=</span><span class="s">"document.getElementById('spinner-1').stepDown();"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>

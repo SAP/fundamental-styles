@@ -6,10 +6,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
-<meta name="keywords" content=" layouts">
+<meta name="keywords" content=" select, dropdown, dropdowns">
 <title>
 	
-	Layouts - Fundamental Styles
+	Select - Fundamental Styles
 	
 
 </title>
@@ -127,7 +127,7 @@
         searchInput: document.getElementById('docs-search'),
         resultsContainer: document.getElementById('results-container'),
         json: '/fundamental-styles/js/search.json',
-        searchResultTemplate: '<li class="fd-menu__item"><a href="/fundamental-styles{url}" title="Layouts">{folder} > {title}</a></li>',
+        searchResultTemplate: '<li class="fd-menu__item"><a href="/fundamental-styles{url}" title="Select">{folder} > {title}</a></li>',
         noResultsText: '<li class="fd-menu__item">No results found</li>',
         limit: 10,
         fuzzy: true,
@@ -196,7 +196,7 @@
     
 
     
-    <li class="side-nav__headers active">
+    <li class="side-nav__headers">
         
         <a class="side-nav__headers-link"
            href="/fundamental-styles/layouts/index.html">layouts</a>
@@ -338,7 +338,7 @@
     
 
     
-    <li class="side-nav__headers">
+    <li class="side-nav__headers active">
         
         <a class="side-nav__headers-link"
            href="/fundamental-styles/components/index.html">components</a>
@@ -606,7 +606,7 @@
             
             
             
-            <li class="side-nav__links">
+            <li class="side-nav__links active">
                 <a href="/fundamental-styles/components/select.html"
                    class="side-nav__links-link">Select</a>
             </li>
@@ -768,7 +768,7 @@
 
 <div class="docs-content">
 
-    <h1 class="docs-header-h1">Layouts</h1>
+    <h1 class="docs-header-h1">Select</h1>
 
     
 
@@ -777,72 +777,289 @@
 
     
 
-    <p>Layouts in Fundamental Styles are for structuring the main parts of your application. Organized in three main categories</p>
+    <p class="docs-intro">The select control (also known as a dropdown) is commonly used to enable users to select an item from a predefined list.</p>
 
-<p><br /></p>
+<h2 id="sizes">Sizes</h2>
 
-<div class="fd-layout-grid fd-layout-grid--col-2 docs-tiles">
-    <a class="fd-tile" role="button" href="layout-grid.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Layout Grid
-             </h2>
-             <p class="fd-tile__description">
-                CSS Grid based layout component.
-             </p>
-        </div>
-    </a>
-    <a class="fd-tile" role="button" href="shell-layout.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Shell Layout
-             </h2>
-             <p class="fd-tile__description">
-                 Main shell and application template structure, including header, navigation, main content, footer.
-             </p>
-        </div>
-    </a>
-    <a class="fd-tile" role="button" href="page-layout.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Page Layout
-             </h2>
-             <p class="fd-tile__description">
-                 Elements to structure the content your application page.
-             </p>
-        </div>
-    </a>
-    <a class="fd-tile" role="button" href="section.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Section
-             </h2>
-             <p class="fd-tile__description">
-                 Wrapper element for dividing a page into different sections
-             </p>
-        </div>
-    </a>
-    <a class="fd-tile" role="button" href="panel.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Panel
-             </h2>
-             <p class="fd-tile__description">
-                 Elements to organize components.
-             </p>
-        </div>
-    </a>
-    <a class="fd-tile" role="button" href="global-navigation.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Global Nav
-             </h2>
-             <p class="fd-tile__description">
-                 Global Navigation to switch between different Apps
-             </p>
-        </div>
-    </a>
+<div class="fd-tile docs-component docs-component__">
+    <label class="fd-form-label docs-component__bg-toggle" for="10690" title="Change Background">
+        <span class="fd-toggle fd-toggle--xs fd-input">
+            <input type="checkbox" name="" value="" id="10690" class="toggle-bg fd-toggle__input" />
+            <span class="fd-toggle__switch" role="presentation"></span>
+        </span>
+
+    </label>
+    <div class="fd-tile__content">
+		
+<div class="documentation-site-popover-container">
+   <div class="fd-popover">
+      <div class="fd-popover__control">
+         <div class="fd-select">
+            <button class="fd-select__control" aria-controls="h0C6A325" aria-expanded="false" aria-haspopup="true">
+               Select
+            </button>
+         </div>
+      </div>
+      <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="h0C6A325">
+         <ul class="fd-list fd-list--no-border" role="listbox">
+            <li class="fd-list__item" role="option">
+               <span class="fd-list__title">List item 1</span>
+            </li>
+            <li class="fd-list__item" role="option">
+               <span class="fd-list__title">List item 2</span>
+            </li>
+            <li class="fd-list__item" role="option">
+               <span class="fd-list__title">List item 3</span>
+            </li>
+            <li class="fd-list__item" role="option">
+               <span class="fd-list__title">List item 4</span>
+            </li>
+         </ul>
+      </div>
+   </div>
 </div>
+
+<br />
+
+<h4>Compact Size</h4>
+<div class="documentation-site-popover-container">
+   <div class="fd-popover">
+      <div class="fd-popover__control">
+         <div class="fd-select fd-select--compact">
+            <button class="fd-select__control" aria-controls="h0C6A326" aria-expanded="false" aria-haspopup="true">
+               Select
+            </button>
+         </div>
+      </div>
+      <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="h0C6A326">
+         <ul class="fd-list fd-list--no-border fd-list--compact" role="listbox">
+            <li class="fd-list__item" role="option">
+               <span class="fd-list__title">List item 1</span>
+            </li>
+            <li class="fd-list__item" role="option">
+               <span class="fd-list__title">List item 2</span>
+            </li>
+            <li class="fd-list__item" role="option">
+               <span class="fd-list__title">List item 3</span>
+            </li>
+            <li class="fd-list__item" role="option">
+               <span class="fd-list__title">List item 4</span>
+            </li>
+         </ul>
+      </div>
+   </div>
+</div>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"documentation-site-popover-container"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-select"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-select__control"</span> <span class="na">aria-controls=</span><span class="s">"h0C6A325"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+               Select
+            <span class="nt">&lt;/button&gt;</span>
+         <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"h0C6A325"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-list fd-list--no-border"</span> <span class="na">role=</span><span class="s">"listbox"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-list__item"</span> <span class="na">role=</span><span class="s">"option"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-list__title"</span><span class="nt">&gt;</span>List item 1<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-list__item"</span> <span class="na">role=</span><span class="s">"option"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-list__title"</span><span class="nt">&gt;</span>List item 2<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-list__item"</span> <span class="na">role=</span><span class="s">"option"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-list__title"</span><span class="nt">&gt;</span>List item 3<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-list__item"</span> <span class="na">role=</span><span class="s">"option"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-list__title"</span><span class="nt">&gt;</span>List item 4<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+         <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;h4&gt;</span>Compact Size<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"documentation-site-popover-container"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-select fd-select--compact"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-select__control"</span> <span class="na">aria-controls=</span><span class="s">"h0C6A326"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+               Select
+            <span class="nt">&lt;/button&gt;</span>
+         <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"h0C6A326"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-list fd-list--no-border fd-list--compact"</span> <span class="na">role=</span><span class="s">"listbox"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-list__item"</span> <span class="na">role=</span><span class="s">"option"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-list__title"</span><span class="nt">&gt;</span>List item 1<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-list__item"</span> <span class="na">role=</span><span class="s">"option"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-list__title"</span><span class="nt">&gt;</span>List item 2<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-list__item"</span> <span class="na">role=</span><span class="s">"option"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-list__title"</span><span class="nt">&gt;</span>List item 3<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-list__item"</span> <span class="na">role=</span><span class="s">"option"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-list__title"</span><span class="nt">&gt;</span>List item 4<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+         <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="inline">Inline</h2>
+
+<div class="fd-tile docs-component docs-component__">
+    <label class="fd-form-label docs-component__bg-toggle" for="89775" title="Change Background">
+        <span class="fd-toggle fd-toggle--xs fd-input">
+            <input type="checkbox" name="" value="" id="89775" class="toggle-bg fd-toggle__input" />
+            <span class="fd-toggle__switch" role="presentation"></span>
+        </span>
+
+    </label>
+    <div class="fd-tile__content">
+		
+<div class="fd-popover">
+   <div class="fd-popover__control">
+      <div class="fd-select fd-select--inline">
+         <button class="fd-select__control" aria-controls="h0C6A335" aria-expanded="false" aria-haspopup="true">
+            Select
+         </button>
+      </div>
+   </div>
+   <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="h0C6A335">
+      <ul class="fd-list fd-list--no-border" role="listbox">
+         <li class="fd-list__item" role="option">
+            <span class="fd-list__title">List item 1</span>
+         </li>
+         <li class="fd-list__item" role="option">
+            <span class="fd-list__title">List item 2</span>
+         </li>
+         <li class="fd-list__item" role="option">
+            <span class="fd-list__title">List item 3</span>
+         </li>
+         <li class="fd-list__item" role="option">
+            <span class="fd-list__title">List item 4</span>
+         </li>
+      </ul>
+   </div>
+</div>
+
+<div class="fd-popover">
+   <div class="fd-popover__control">
+      <div class="fd-select fd-select--inline fd-select--compact">
+         <button class="fd-select__control" aria-controls="h0C6A336" aria-expanded="false" aria-haspopup="true">
+            Select
+         </button>
+      </div>
+   </div>
+   <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="h0C6A336">
+      <ul class="fd-list fd-list--no-border fd-list--compact" role="listbox">
+         <li class="fd-list__item" role="option">
+            <span class="fd-list__title">List item 1</span>
+         </li>
+         <li class="fd-list__item" role="option">
+            <span class="fd-list__title">List item 2</span>
+         </li>
+         <li class="fd-list__item" role="option">
+            <span class="fd-list__title">List item 3</span>
+         </li>
+         <li class="fd-list__item" role="option">
+            <span class="fd-list__title">List item 4</span>
+         </li>
+      </ul>
+   </div>
+</div>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-select fd-select--inline"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-select__control"</span> <span class="na">aria-controls=</span><span class="s">"h0C6A335"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+            Select
+         <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"h0C6A335"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-list fd-list--no-border"</span> <span class="na">role=</span><span class="s">"listbox"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-list__item"</span> <span class="na">role=</span><span class="s">"option"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-list__title"</span><span class="nt">&gt;</span>List item 1<span class="nt">&lt;/span&gt;</span>
+         <span class="nt">&lt;/li&gt;</span>
+         <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-list__item"</span> <span class="na">role=</span><span class="s">"option"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-list__title"</span><span class="nt">&gt;</span>List item 2<span class="nt">&lt;/span&gt;</span>
+         <span class="nt">&lt;/li&gt;</span>
+         <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-list__item"</span> <span class="na">role=</span><span class="s">"option"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-list__title"</span><span class="nt">&gt;</span>List item 3<span class="nt">&lt;/span&gt;</span>
+         <span class="nt">&lt;/li&gt;</span>
+         <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-list__item"</span> <span class="na">role=</span><span class="s">"option"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-list__title"</span><span class="nt">&gt;</span>List item 4<span class="nt">&lt;/span&gt;</span>
+         <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-select fd-select--inline fd-select--compact"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-select__control"</span> <span class="na">aria-controls=</span><span class="s">"h0C6A336"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+            Select
+         <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"h0C6A336"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-list fd-list--no-border fd-list--compact"</span> <span class="na">role=</span><span class="s">"listbox"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-list__item"</span> <span class="na">role=</span><span class="s">"option"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-list__title"</span><span class="nt">&gt;</span>List item 1<span class="nt">&lt;/span&gt;</span>
+         <span class="nt">&lt;/li&gt;</span>
+         <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-list__item"</span> <span class="na">role=</span><span class="s">"option"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-list__title"</span><span class="nt">&gt;</span>List item 2<span class="nt">&lt;/span&gt;</span>
+         <span class="nt">&lt;/li&gt;</span>
+         <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-list__item"</span> <span class="na">role=</span><span class="s">"option"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-list__title"</span><span class="nt">&gt;</span>List item 3<span class="nt">&lt;/span&gt;</span>
+         <span class="nt">&lt;/li&gt;</span>
+         <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-list__item"</span> <span class="na">role=</span><span class="s">"option"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-list__title"</span><span class="nt">&gt;</span>List item 4<span class="nt">&lt;/span&gt;</span>
+         <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="disabled-state">Disabled State</h2>
+
+<p>Disabled state can be rendered with a <code class="highlighter-rouge">disabled</code> attribute.</p>
+
+<div class="fd-tile docs-component docs-component__">
+    <label class="fd-form-label docs-component__bg-toggle" for="24090" title="Change Background">
+        <span class="fd-toggle fd-toggle--xs fd-input">
+            <input type="checkbox" name="" value="" id="24090" class="toggle-bg fd-toggle__input" />
+            <span class="fd-toggle__switch" role="presentation"></span>
+        </span>
+
+    </label>
+    <div class="fd-tile__content">
+		
+<div class="fd-select">
+   <button class="fd-select__control" aria-controls="" aria-expanded="false" aria-haspopup="true" disabled="">
+      Select
+   </button>
+</div>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-select"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-select__control"</span> <span class="na">aria-controls=</span><span class="s">""</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+      Select
+   <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
 
 
     <div class="tags">

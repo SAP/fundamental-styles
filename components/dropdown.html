@@ -9,7 +9,7 @@
 <meta name="keywords" content=" dropdown, dropdowns">
 <title>
 	
-	Dropdown - SAP Fundamental Styles
+	Dropdown - Fundamental Styles
 	
 
 </title>
@@ -27,7 +27,7 @@
 </script>
 <!-- End Google Tag Manager -->
 
-<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1567795225932373007">
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1571353636321983077">
 <link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -59,7 +59,7 @@
 
         <!-- logo -->
         <a class="docs-top-nav__logo" href="/fundamental-styles/index.html">
-            SAP Fundamental <span class="docs-top-nav__logo__accent">Styles</span>
+            Fundamental <span class="docs-top-nav__logo__accent">Styles</span>
         </a>
 
         <button id="mobile-sidenav-btn" class="fd-button--light sap-icon--menu2" aria-haspopup="true" aria-expanded="false" aria-label="Menu"></button>
@@ -68,7 +68,7 @@
         <div class="docs-top-nav__support fd-has-float-right">
 
             <span class="fd-has-align-items-center fd-has-margin-right-small">
-                <span>v0.2.0</span>
+                <span>v0.3.0</span>
                 <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
                     <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
                         <title>GitHub</title>
@@ -108,9 +108,9 @@
         <div class="fd-popover__control">
             <div aria-label="Image label" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
                 <div class="fd-input-group">
-                    <input type="text" class="fd-input" id="docs-search" placeholder="search...">
+                    <input type="text" class="fd-input fd-input-group__input" id="docs-search" placeholder="search...">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
-                        <button class=" fd-button--light sap-icon--search"></button>
+                        <button class="fd-input-group__button fd-button--light sap-icon--search"></button>
                     </span>
                 </div>
             </div>
@@ -301,8 +301,28 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/patterns/date-picker.html"
+                   class="side-nav__links-link">Date Picker</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/patterns/search-input.html"
                    class="side-nav__links-link">Search Input</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/patterns/time-picker.html"
+                   class="side-nav__links-link">Time Picker</a>
             </li>
             
             
@@ -386,16 +406,6 @@
             
             
             
-            <li class="side-nav__links">
-                <a href="/fundamental-styles/components/date-picker.html"
-                   class="side-nav__links-link">Date Picker</a>
-            </li>
-            
-            
-            
-            
-            
-            
             <li class="side-nav__links active">
                 <a href="/fundamental-styles/components/dropdown.html"
                    class="side-nav__links-link">Dropdown</a>
@@ -459,6 +469,16 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/inline-help.html"
                    class="side-nav__links-link">Inline Help</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/list.html"
+                   class="side-nav__links-link">List</a>
             </li>
             
             
@@ -537,6 +557,16 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/components/notification.html"
+                   class="side-nav__links-link">Notification</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/pagination.html"
                    class="side-nav__links-link">Pagination</a>
             </li>
@@ -557,8 +587,28 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/components/product-switch.html"
+                   class="side-nav__links-link">Product Switch</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/shellbar.html"
                    class="side-nav__links-link">Shellbar</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/select.html"
+                   class="side-nav__links-link">Select</a>
             </li>
             
             
@@ -627,16 +677,6 @@
             
             
             <li class="side-nav__links">
-                <a href="/fundamental-styles/components/time-picker.html"
-                   class="side-nav__links-link">Time Picker</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/token.html"
                    class="side-nav__links-link">Token</a>
             </li>
@@ -694,7 +734,7 @@
             
             <li class="side-nav__links">
                 <a href="/fundamental-styles/resources/fundamentals-libraries.html"
-                   class="side-nav__links-link">SAP Fundamental Styles Implementation Libraries</a>
+                   class="side-nav__links-link">Fundamental Styles Implementation Libraries</a>
             </li>
             
             
@@ -737,7 +777,11 @@
 
     
 
-    <p class="docs-intro">The dropdown allows users to make one selection from a list.</p>
+    <blockquote class="docs-deprecated">
+  <p><strong>DEPRECATED</strong>. Depending on the use case, use either the <a href="select.html">Select</a> component or the <strong>MenuButton</strong> component (to be built) instead.</p>
+</blockquote>
+
+<p class="docs-intro">The dropdown allows users to make one selection from a list.</p>
 <p>It is an opinionated composition of the <code class="highlighter-rouge">popover</code> and <code class="highlighter-rouge">menu</code> components with the use of a styled button. It is more flexible than the normal <code class="highlighter-rouge">select</code>. Generally, it should be used when there are between 3 to 10 or more options.</p>
 
 <p><br /></p>
@@ -756,9 +800,9 @@
 </style>
 
 <div class="fd-tile docs-component docs-component__">
-    <label class="fd-form-label docs-component__bg-toggle" for="29425" title="Change Background">
+    <label class="fd-form-label docs-component__bg-toggle" for="71185" title="Change Background">
         <span class="fd-toggle fd-toggle--xs fd-input">
-            <input type="checkbox" name="" value="" id="29425" class="toggle-bg fd-toggle__input" />
+            <input type="checkbox" name="" value="" id="71185" class="toggle-bg fd-toggle__input" />
             <span class="fd-toggle__switch" role="presentation"></span>
         </span>
 
@@ -858,9 +902,9 @@
 <p>It can also include complementary information like an icon.</p>
 
 <div class="fd-tile docs-component docs-component__">
-    <label class="fd-form-label docs-component__bg-toggle" for="48214" title="Change Background">
+    <label class="fd-form-label docs-component__bg-toggle" for="10282" title="Change Background">
         <span class="fd-toggle fd-toggle--xs fd-input">
-            <input type="checkbox" name="" value="" id="48214" class="toggle-bg fd-toggle__input" />
+            <input type="checkbox" name="" value="" id="10282" class="toggle-bg fd-toggle__input" />
             <span class="fd-toggle__switch" role="presentation"></span>
         </span>
 
@@ -959,9 +1003,9 @@
 <p>Disabled state can be rendered with a <code class="highlighter-rouge">is-disabled</code> class and/or <code class="highlighter-rouge">aria-disabled="true"</code> attribute.</p>
 
 <div class="fd-tile docs-component docs-component__">
-    <label class="fd-form-label docs-component__bg-toggle" for="81575" title="Change Background">
+    <label class="fd-form-label docs-component__bg-toggle" for="73943" title="Change Background">
         <span class="fd-toggle fd-toggle--xs fd-input">
-            <input type="checkbox" name="" value="" id="81575" class="toggle-bg fd-toggle__input" />
+            <input type="checkbox" name="" value="" id="73943" class="toggle-bg fd-toggle__input" />
             <span class="fd-toggle__switch" role="presentation"></span>
         </span>
 
@@ -1060,9 +1104,9 @@
 <p>Disabled state can be rendered with a <code class="highlighter-rouge">is-disabled</code> class and/or <code class="highlighter-rouge">aria-disabled="true"</code> attribute.</p>
 
 <div class="fd-tile docs-component docs-component__">
-    <label class="fd-form-label docs-component__bg-toggle" for="71781" title="Change Background">
+    <label class="fd-form-label docs-component__bg-toggle" for="15698" title="Change Background">
         <span class="fd-toggle fd-toggle--xs fd-input">
-            <input type="checkbox" name="" value="" id="71781" class="toggle-bg fd-toggle__input" />
+            <input type="checkbox" name="" value="" id="15698" class="toggle-bg fd-toggle__input" />
             <span class="fd-toggle__switch" role="presentation"></span>
         </span>
 

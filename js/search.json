@@ -108,8 +108,8 @@
 "title": "Date Picker",
 "tags": "",
 "keywords": "date-picker",
-"url": "/components/date-picker.html",
-"folder": "components"
+"url": "/patterns/date-picker.html",
+"folder": "patterns"
 }
 ,
 
@@ -166,7 +166,7 @@
 
 
 {
-"title": "SAP Fundamental Styles Implementation Libraries",
+"title": "Fundamental Styles Implementation Libraries",
 "tags": "",
 "keywords": "libraries frameworks angular vue react",
 "url": "/resources/fundamentals-libraries.html",
@@ -377,6 +377,17 @@
 
 
 {
+"title": "List",
+"tags": "",
+"keywords": "list, lists, groups",
+"url": "/components/list.html",
+"folder": "components"
+}
+,
+
+
+
+{
 "title": "Loading Spinner",
 "tags": "",
 "keywords": "loading, spinner",
@@ -438,6 +449,17 @@
 
 
 {
+"title": "Notification",
+"tags": "",
+"keywords": "notification",
+"url": "/components/notification.html",
+"folder": "components"
+}
+,
+
+
+
+{
 "title": "Page",
 "tags": "",
 "keywords": "page layout",
@@ -482,6 +504,17 @@
 
 
 {
+"title": "Product Switch",
+"tags": "",
+"keywords": "product-switch, shellbar",
+"url": "/components/product-switch.html",
+"folder": "components"
+}
+,
+
+
+
+{
 "title": "Responsive Demo",
 "tags": "",
 "keywords": "",
@@ -511,6 +544,17 @@
 "keywords": "section layout",
 "url": "/layouts/section.html",
 "folder": "layouts"
+}
+,
+
+
+
+{
+"title": "Select",
+"tags": "",
+"keywords": "select, dropdown, dropdowns",
+"url": "/components/select.html",
+"folder": "components"
 }
 ,
 
@@ -616,8 +660,8 @@
 "title": "Time Picker",
 "tags": "",
 "keywords": "time picker",
-"url": "/components/time-picker.html",
-"folder": "components"
+"url": "/patterns/time-picker.html",
+"folder": "patterns"
 }
 ,
 
