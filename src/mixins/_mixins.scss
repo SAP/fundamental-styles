@@ -352,3 +352,15 @@
     background: $backgroundColor;
   }
 }
+
+@mixin fd-flex($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  @content;
+}
+
+@mixin fd-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

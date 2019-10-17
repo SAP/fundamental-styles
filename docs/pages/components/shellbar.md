@@ -38,7 +38,7 @@ The shellbar handles layout and has some built-in elements but relies on standal
 * `.fd-shellbar__action--desktop` (optional) for product actions only visible on desktop screens.
 * `.fd-search-input` (optional) for searching the product.
 * `.fd-identifier` (required) for user settings and application meta links such as Sign Out. [Accent colors between 11-15]({{site.baseurl}}/foundation/colors.html#accent) can be randomly assigned to the background.
-* `.fd-product-switcher` (optional) for navigating between products.
+* `.fd-product-switch` (optional) for navigating between products.
 
 Here are examples of various configurations.
 
@@ -248,10 +248,11 @@ When a product has multiple links, the product links should collapse into an ove
 {% endcapture %}
 {% include display-component.html component=app-layout class="" %}
 
-## Product Switcher and CoPilot
+## Product Switch and CoPilot
 {: .docs-header-h2}
 
 This example shows an application with CoPilot, integration with other products, and a customized logo.
+For more information about the Product Switch, see [Product Switch](product-switch.html) component.
 
 {% capture app-layout %}
 
@@ -284,68 +285,115 @@ This example shows an application with CoPilot, integration with other products,
         </div>
       </div>
       <div class="fd-shellbar__action fd-shellbar__action--desktop">
-        <div class="fd-product-switcher">
-          <div class="fd-popover fd-popover--right">
-            <div class="fd-popover__control">
-              <button class="fd-shellbar__button fd-button sap-icon--grid" aria-controls="FAVDA565" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="fd-product-switch">
+            <div class="fd-popover fd-popover--right">
+                <div class="fd-popover__control">
+                    <button class="fd-button--light fd-popover__control fd-product-switch__control sap-icon--grid" 
+                        aria-label="Image label" 
+                        aria-controls="product-switch-body" 
+                        aria-expanded="false" 
+                        aria-haspopup="true">
+                    </button>
+                </div>
+                <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="product-switch-body">
+                    <div class="fd-product-switch__body">
+                        <ul class="fd-product-switch__list">
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--home"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Home</div>
+                                    <div class="fd-product-switch__subtitle">Central Home</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item selected">
+                                <div class="fd-product-switch__icon sap-icon--business-objects-experience"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Analytics Cloud</div>
+                                    <div class="fd-product-switch__subtitle">Analytics Cloud</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--contacts"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Catalog</div>
+                                    <div class="fd-product-switch__subtitle">Ariba</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--credit-card"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Guided Buying</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--cart-3"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Strategic Procurement</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--flight"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Travel & Expense</div>
+                                    <div class="fd-product-switch__subtitle">Concur</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--shipping-status"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Vendor Management</div>
+                                    <div class="fd-product-switch__subtitle">Fieldglass</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--customer"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Human Capital Management</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--sales-notification"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Sales Cloud</div>
+                                    <div class="fd-product-switch__subtitle">Sales Cloud</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--retail-store"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Commerce Cloud</div>
+                                    <div class="fd-product-switch__subtitle">Commerce Cloud</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--marketing-campaign"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Marketing Cloud</div>
+                                    <div class="fd-product-switch__subtitle">Marketing Cloud</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--family-care"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Service Cloud</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--customer-briefing"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">Customer Data Cloud</div>
+                                </div>
+                            </li>
+                            <li class="fd-product-switch__item">
+                                <div class="fd-product-switch__icon sap-icon--batch-payments"></div>
+                                <div class="fd-product-switch__text">
+                                    <div class="fd-product-switch__title">S/4HANA</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="fd-popover__body fd-popover__body--right"  aria-hidden="true" id="FAVDA565">
-              <div class="fd-product-switcher__body">
-                <nav>
-                  <ul class="fd-product-switcher__body--list">
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="{{site.baseurl}}/images/products/01.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Fiori Home</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="{{site.baseurl}}/images/products/02.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">S/4 HANA Cloud</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="{{site.baseurl}}/images/products/03.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Analytics Cloud</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="{{site.baseurl}}/images/products/04.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Ariba</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="{{site.baseurl}}/images/products/05.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">SuccessFactors</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="{{site.baseurl}}/images/products/06.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Commerce Cloud</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="{{site.baseurl}}/images/products/07.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Gigya</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="{{site.baseurl}}/images/products/08.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Callidus Cloud</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="{{site.baseurl}}/images/products/09.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Fieldglass</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="{{site.baseurl}}/images/products/10.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Concur</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="{{site.baseurl}}/images/products/11.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Cloud for Customer</span>
-                    </li>
-                    <li class="fd-product-switcher__body--list-item">
-                      <span class="fd-product-switcher__product-icon"><img src="{{site.baseurl}}/images/products/12.png" alt="" /></span>
-                      <span class="fd-product-switcher__product-title">Cloud Portal</span>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
   </div>

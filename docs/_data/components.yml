@@ -51,6 +51,9 @@
     - title: Pagination
       meta: pagination
 
+    - title: Product Switch
+      meta: product-switch
+
     - title: Select
       meta: select
 

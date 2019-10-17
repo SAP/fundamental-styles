@@ -184,6 +184,10 @@ entries:
       url: /components/popover.html
       output: web
 
+    - title: Product Switch
+      url: /components/product-switch.html
+      output: web
+
     - title: Shellbar
       url: /components/shellbar.html
       output: web
