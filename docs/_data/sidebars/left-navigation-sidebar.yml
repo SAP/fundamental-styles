@@ -172,6 +172,10 @@ entries:
       url: /components/multi-input.html
       output: web
 
+    - title: Nested List
+      url: /components/nested-list.html
+      output: web
+
     - title: Notification
       url: /components/notification.html
       output: web

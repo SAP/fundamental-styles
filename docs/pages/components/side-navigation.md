@@ -9,236 +9,53 @@ folder: components
 summary:
 ---
 
-The left navigation can always display or expand/collapse using the menu icon within the global navigation.
+The left navigation area can be used to display navigation structures with links that change the content in the main area. 
+
+The side navigation consists of two container section:  the Main Navigation Section (top-aligned) with links used to navigate within the user’s current work context, and Utility Section (bottom-aligned) that contains links to additional information.
+
 {: .docs-intro}
 
 > {{ site.data.strings.headerDisclaimer }}
 
-## Side Navigation with one level
-{% capture default %}
-<nav class="fd-side-nav">
-    <ul class="fd-side-nav__list">
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link" href="#">
-                Link Item
-            </a>
-        </li>
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link is-selected" aira-selected="true" href="#">
-               Link Item
-            </a>
-        </li>
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link" href="#">
-                Link Item
-            </a>
-        </li>
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link" href="#">
-                Link Item
-            </a>
-        </li>
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link" href="#">
-                Link Item
-            </a>
-        </li>
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link" href="#">
-                Link Item
-            </a>
-        </li>
-    </ul>
-</nav>
-{% endcapture %}
-{% include display-component.html component=default %}
-
-<br>
-
-## Side navigation with titles
-Use this to group navigation. Titles are not clickable.
+## Side Navigation with one level - text-only, cozy mode
+There is only one level of navigation; all further navigation is shown in the content area.
 
 {% capture default %}
 <nav class="fd-side-nav">
-    <div class="fd-side-nav__group">
-        <h3 class="fd-side-nav__title">Group Title</h3>
-        <ul class="fd-side-nav__list">
-            <li class="fd-side-nav__item">
-                <a class="fd-side-nav__link" href="#">
-                   icon link
+    <div class="fd-side-nav__main-navigation">
+        <ul class="fd-nested-list fd-nested-list--text-only">
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
-            <li class="fd-side-nav__item">
-                <a class="fd-side-nav__link" href="#">
-                   item link
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link is-selected" href="#">
+                    <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
-            <li class="fd-side-nav__item">
-                <a class="fd-side-nav__link" href="#">
-                    icon link
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
-            <li class="fd-side-nav__item">
-                <a class="fd-side-nav__link" href="#">
-                    item link
-                </a>
-            </li>
-            <li class="fd-side-nav__item">
-                <a class="fd-side-nav__link" href="#">
-                    item link
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
         </ul>
     </div>
-    <div class="fd-side-nav__group">
-        <h3 class="fd-side-nav__title">Group Title</h3>
-        <ul class="fd-side-nav__list">
-            <li class="fd-side-nav__item">
-                <a class="fd-side-nav__link" href="#">
-                    item link
+    <div class="fd-side-nav__utility">
+        <ul class="fd-nested-list fd-nested-list--text-only">
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
-            <li class="fd-side-nav__item">
-                <a class="fd-side-nav__link" href="#">
-                    item link
-                </a>
-            </li>
-            <li class="fd-side-nav__item">
-                <a class="fd-side-nav__link" href="#">
-                    item link
-                </a>
-            </li>
-            <li class="fd-side-nav__item">
-                <a class="fd-side-nav__link" href="#">
-                    item link
-                </a>
-            </li>
-            <li class="fd-side-nav__item">
-                <a class="fd-side-nav__link" href="#">
-                    item link
-                </a>
-            </li>
-        </ul>
-    </div>
-</nav>
-{% endcapture %}
-{% include display-component.html component=default %}
-
-
-## Side navigation with multiple levels
-Use this when there is more than one level of hierarchy in the left navigation. Each level can be expanded and collapsed.
-
-{% capture default %}
-<nav class="fd-side-nav">
-    <div class="fd-side-nav__group">
-        <h3 class="fd-side-nav__title">Group Name</h3>
-        <ul class="fd-side-nav__list">
-            <li class="fd-side-nav__item">
-                <a class="fd-side-nav__link" href="#">
-                    item link
-                </a>
-            </li>
-            <li class="fd-side-nav__item">
-                <a class="fd-side-nav__link has-child" href="#" aria-controls="Rk65C501"
-                aria-haspopup="true">
-                    item link
-            </a>
-            <ul class="fd-side-nav__sublist" id="Rk65C501" aria-hidden="true">
-                <li class="fd-side-nav__subitem">
-                    <a class="fd-side-nav__sublink" href="#">
-                        Link
-                    </a>
-                </li>
-                <li class="fd-side-nav__subitem">
-                    <a class="fd-side-nav__sublink" href="#">
-                        Link
-                    </a>
-                </li>
-                <li class="fd-side-nav__subitem">
-                    <a class="fd-side-nav__sublink" href="#">
-                        Link
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link has-child" href="#" aria-controls="mM3Zf660"
-            aria-haspopup="true">
-            item link
-        </a>
-        <ul class="fd-side-nav__sublist" id="mM3Zf660" aria-hidden="true">
-            <li class="fd-side-nav__subitem">
-                <a class="fd-side-nav__sublink" href="#">
-                    Link
-                </a>
-            </li>
-            <li class="fd-side-nav__subitem">
-                <a class="fd-side-nav__sublink" href="#">
-                    Link
-                </a>
-            </li>
-            <li class="fd-side-nav__subitem">
-                <a class="fd-side-nav__sublink" href="#">
-                    Link
-                </a>
-            </li>
-        </ul>
-    </li>
-    <li class="fd-side-nav__item">
-        <a class="fd-side-nav__link has-child" href="#" aria-controls="8t8RN919"
-        aria-haspopup="true">
-        item link
-    </a>
-    <ul class="fd-side-nav__sublist" id="8t8RN919" aria-hidden="true">
-        <li class="fd-side-nav__subitem">
-            <a class="fd-side-nav__sublink" href="#">
-                Link
-            </a>
-        </li>
-        <li class="fd-side-nav__subitem">
-            <a class="fd-side-nav__sublink" href="#">
-                Link
-            </a>
-        </li>
-        <li class="fd-side-nav__subitem">
-            <a class="fd-side-nav__sublink" href="#">
-                Link
-            </a>
-        </li>
-    </ul>
-</li>
-<li class="fd-side-nav__item">
-    <a class="fd-side-nav__link" href="#">
-        item link
-    </a>
-</li>
-</ul>
-</div>
-<div class="fd-side-nav__group">
-    <h3 class="fd-side-nav__title">Group Name</h3>
-    <ul class="fd-side-nav__list">
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link" href="#">
-                item link
-            </a>
-        </li>
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link" href="#">
-                item link
-            </a></li>
-            <li class="fd-side-nav__item">
-                <a class="fd-side-nav__link" href="#">
-                    item link
-                </a>
-            </li>
-            <li class="fd-side-nav__item">
-                <a class="fd-side-nav__link" href="#">
-                    item link
-                </a>
-            </li>
-            <li class="fd-side-nav__item">
-                <a class="fd-side-nav__link" href="#">
-                    item link
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
         </ul>
@@ -249,90 +66,470 @@ Use this when there is more than one level of hierarchy in the left navigation. 
 
 <br>
 
-## Side navigation with icons
+## Side Navigation with one level - with icons, cozy mode
+
 {% capture default %}
 <nav class="fd-side-nav">
-    <ul class="fd-side-nav__list">
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link" href="#">
-                <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                Link icon
-            </a>
-        </li>
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link" href="#">
-                <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                Link icon
-            </a>
-        </li>
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link" href="#">
-                <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                Link icon
-            </a>
-        </li>
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link" href="#">
-                <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                Link icon with two row text to test wrapping 
-            </a>
-        </li>
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link" href="#">
-                <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                Link icon with two row text to test wrapping  
-            </a>
-        </li>
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link" href="#">
-                <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                Link icon with two row text to test wrapping  
-            </a>
-        </li>
-    </ul>
+    <div class="fd-side-nav__main-navigation">
+        <ul class="fd-nested-list">
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--home"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link is-selected" href="#">
+                    <span class="fd-nested-list__icon sap-icon--calendar"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--employee"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--activities"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="fd-side-nav__utility">
+        <ul class="fd-nested-list">
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--compare"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--chain-link"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 </nav>
 {% endcapture %}
 {% include display-component.html component=default %}
 
 <br>
 
-## Side navigation collapsed with icons
-The user can identify which level they are on based on the icon displayed as selected when the navigation is collapsed. Note that the suggested use is when there is only one level of navigation as the user can only see one level of navigation when collapsed.
+## Side navigation with multiple levels - cozy mode
+Use this when there is more than one level of hierarchy in the left navigation. The entries on the first level are just group headers(don't trigger navigation themselves). It's recommended to use up to two levels of navigation. For more levels of navigation, use the content area. 
 
 {% capture default %}
-<nav class="fd-side-nav fd-side-nav--icons">
-    <ul class="fd-side-nav__list">
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link" href="#">
-                <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-            </a>
-        </li>
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link" href="#">
-                <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-            </a>
-        </li>
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link" href="#">
-                <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-            </a>
-        </li>
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link" href="#">
-                <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-            </a>
-        </li>
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link" href="#">
-                <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-            </a>
-        </li>
-        <li class="fd-side-nav__item">
-            <a class="fd-side-nav__link" href="#">
-                <span class="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-            </a>
-        </li>
-    </ul>
+<nav class="fd-side-nav">
+    <div class="fd-side-nav__main-navigation">
+        <ul class="fd-nested-list fd-nested-list--text-only">
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link is-selected" href="#">
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link has-child" href="#" aria-controls="EX100L2" aria-haspopup="true">
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+                <ul class="fd-nested-list level-2" id="EX100L2" aria-hidden="true">
+                    <li class="fd-nested-list__item">
+                        <a class="fd-nested-list__link" href="#">
+                            <span class="fd-nested-list__title">Level 2 Item</span>
+                        </a>
+                    </li>
+                    <li class="fd-nested-list__item">
+                        <a class="fd-nested-list__link" href="#">
+                            <span class="fd-nested-list__title">Level 2 Item</span>
+                        </a>
+                    </li>
+                    <li class="fd-nested-list__item">
+                        <a class="fd-nested-list__link" href="#">
+                            <span class="fd-nested-list__title">Level 2 Item</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="fd-side-nav__utility">
+        <ul class="fd-nested-list fd-nested-list--text-only">
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+{% endcapture %}
+{% include display-component.html component=default %}
+
+<br>
+
+## Side navigation with multiple levels - with icons, group headers, 3 levels of navigation, cozy mode
+
+{% capture default %}
+<nav class="fd-side-nav">
+    <div class="fd-side-nav__main-navigation">
+        <ul class="fd-nested-list">
+            <li class="fd-nested-list__group-header">
+                Group Header 1
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--home"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link is-selected" href="#">
+                    <span class="fd-nested-list__icon sap-icon--calendar"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link has-child" href="#" aria-controls="EX400L2" aria-haspopup="true">
+                    <span class="fd-nested-list__icon sap-icon--employee"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+                <ul class="fd-nested-list fd-nested-list--text-only level-2" id="EX400L2" aria-hidden="true">
+                    <li class="fd-nested-list__item">
+                        <a class="fd-nested-list__link" href="#">
+                            <span class="fd-nested-list__title">Level 2 Item</span>
+                        </a>
+                    </li>
+                    <li class="fd-nested-list__item">
+                        <a class="fd-nested-list__link has-child" 
+                            href="#" aria-controls="EX400L3" aria-haspopup="true">
+                            <span class="fd-nested-list__title">Level 2 Item</span>
+                        </a>
+                        <ul class="fd-nested-list fd-nested-list--text-only level-3" id="EX400L3" aria-hidden="true">
+                            <li class="fd-nested-list__item">
+                                <a class="fd-nested-list__link" href="#">
+                                    <span class="fd-nested-list__title">Level 3 Item</span>
+                                </a>
+                            </li>
+                            <li class="fd-nested-list__item">
+                                <a class="fd-nested-list__link" href="#">
+                                    <span class="fd-nested-list__title">Level 3 Item</span>
+                                </a>
+                            </li>
+                            <li class="fd-nested-list__item">
+                                <a class="fd-nested-list__link" href="#">
+                                    <span class="fd-nested-list__title">Level 3 Item</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="fd-nested-list__item">
+                        <a class="fd-nested-list__link" href="#">
+                            <span class="fd-nested-list__title">Level 2 Item</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--activities"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__group-header">
+                Group Header 2
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--bar-chart"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="fd-side-nav__utility">
+        <ul class="fd-nested-list">
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--compare"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--chain-link"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+{% endcapture %}
+{% include display-component.html component=default %}
+
+<br>
+
+## Side navigation with multiple levels - compact mode
+In compact mode the dimensions of the controls are reduced, allowing more information to be displayed. This mode is suggested for devices operated by mouse and keyboard.
+
+{% capture default %}
+<nav class="fd-side-nav">
+    <div class="fd-side-nav__main-navigation">
+        <ul class="fd-nested-list fd-nested-list--compact">
+            <li class="fd-nested-list__group-header">
+                Group Header 1
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--home"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link is-selected" href="#">
+                    <span class="fd-nested-list__icon sap-icon--calendar"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link has-child" href="#" aria-controls="EX500L2" aria-haspopup="true">
+                    <span class="fd-nested-list__icon sap-icon--employee"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+                <ul class="fd-nested-list fd-nested-list--text-only level-2" id="EX500L2" aria-hidden="true">
+                    <li class="fd-nested-list__item">
+                        <a class="fd-nested-list__link" href="#">
+                            <span class="fd-nested-list__title">Level 2 Item</span>
+                        </a>
+                    </li>
+                    <li class="fd-nested-list__item">
+                        <a class="fd-nested-list__link has-child" 
+                            href="#" aria-controls="EX500L3" aria-haspopup="true">
+                            <span class="fd-nested-list__title">Level 2 Item</span>
+                        </a>
+                        <ul class="fd-nested-list fd-nested-list--text-only level-3" id="EX500L3" aria-hidden="true">
+                            <li class="fd-nested-list__item">
+                                <a class="fd-nested-list__link" href="#">
+                                    <span class="fd-nested-list__title">Level 3 Item</span>
+                                </a>
+                            </li>
+                            <li class="fd-nested-list__item">
+                                <a class="fd-nested-list__link" href="#">
+                                    <span class="fd-nested-list__title">Level 3 Item</span>
+                                </a>
+                            </li>
+                            <li class="fd-nested-list__item">
+                                <a class="fd-nested-list__link" href="#">
+                                    <span class="fd-nested-list__title">Level 3 Item</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="fd-nested-list__item">
+                        <a class="fd-nested-list__link" href="#">
+                            <span class="fd-nested-list__title">Level 2 Item</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--activities"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__group-header">
+                Group Header 2
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--bar-chart"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="fd-side-nav__utility">
+        <ul class="fd-nested-list fd-nested-list--compact">
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--compare"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--chain-link"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+{% endcapture %}
+{% include display-component.html component=default %}
+
+<br>
+
+## Side navigation with icons - condensed state
+
+{% capture default %}
+<nav class="fd-side-nav fd-side-nav--condensed">
+    <div class="fd-side-nav__main-navigation">
+        <ul class="fd-nested-list">
+            <li class="fd-nested-list__group-header">
+                Group Header 1
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--home"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--calendar"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link is-selected has-child" href="#">
+                    <span class="fd-nested-list__icon sap-icon--employee"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--activities"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__group-header">
+                Group Header 2
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--bar-chart"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="fd-side-nav__utility">
+        <ul class="fd-nested-list">
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--compare"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--chain-link"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+{% endcapture %}
+{% include display-component.html component=default %}
+
+<br>
+
+## Side navigation with icons - condensed state, compact mode
+
+{% capture default %}
+<nav class="fd-side-nav fd-side-nav--condensed">
+    <div class="fd-side-nav__main-navigation">
+        <ul class="fd-nested-list fd-nested-list--compact">
+            <li class="fd-nested-list__group-header">
+                Group Header 1
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--home"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--calendar"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link is-selected has-child" href="#">
+                    <span class="fd-nested-list__icon sap-icon--employee"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--activities"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__group-header">
+                Group Header 2
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--bar-chart"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="fd-side-nav__utility">
+        <ul class="fd-nested-list fd-nested-list--compact">
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--compare"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link" href="#">
+                    <span class="fd-nested-list__icon sap-icon--chain-link"></span>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 </nav>
 {% endcapture %}
 {% include display-component.html component=default %}
