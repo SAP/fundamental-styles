@@ -1,5 +1,4 @@
 {% extends "./page.njk" %}
-{% from "./../../side-nav/component.njk" import side_nav %}
 {% from "./../../action-bar/component.njk" import action_bar %}
 {% from "./../../button/component.njk" import button %}
 {% from "./../../breadcrumb/component.njk" import breadcrumb %}
@@ -83,7 +82,7 @@
 }}
 
 {% endblock %}
-
+{# 
 {% block app_sidebar %}
 {{ side_nav(properties = {
   navgroups: [{
@@ -117,4 +116,4 @@
   }]
 
 }) }}
-{% endblock %}
+{% endblock %} #}

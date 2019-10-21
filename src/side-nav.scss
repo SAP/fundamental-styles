@@ -54,6 +54,10 @@ $block: #{$fd-namespace}-side-nav;
         display: none;
       }
 
+      &__item {
+        border-bottom: none;
+      }
+
       &__link {
         &.has-child {
           position: relative;
