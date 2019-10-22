@@ -104,6 +104,17 @@ $block: #{$fd-namespace}-product-switch;
       margin-bottom: 0;
       margin-right: 0.75rem;
     }
+
+    @include fd-rtl() {
+      .#{$block}__icon {
+        margin-right: 0;
+        margin-left: 0.75rem;
+      }
+
+      .#{$block}__text {
+        align-items: flex-start;
+      }
+    }
   }
 
   &__list {
