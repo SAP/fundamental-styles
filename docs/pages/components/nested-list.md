@@ -12,7 +12,9 @@ summary:
 {: .docs-intro}
 Nested List represents a nested structure with up to 10 levels.
 
-# Nested List Without Icons
+## Nested List Without Icons
+Use the `fd-nested-list--text-only` modifier class for a nested list with items that have only title.
+
 {% capture example-1 %}
 <ul class="fd-nested-list fd-nested-list--text-only">
     <li class="fd-nested-list__item">
@@ -135,7 +137,10 @@ Nested List represents a nested structure with up to 10 levels.
 
 <br /><br />
 
-# Nested List With Icons
+## Nested List With Icons and Borderless Design
+For a nested list with icon (default) you don't need to add a modifier class. 
+For a Borderless Design use the `fd-nested-list--no-border` modifier class.
+
 {% capture example-2 %}
 <ul class="fd-nested-list fd-nested-list--no-border">
     <li class="fd-nested-list__item">
@@ -240,7 +245,7 @@ Nested List represents a nested structure with up to 10 levels.
 
 <br /><br /> 
 
-# Nested List With Icons Only in First-Level Items
+## Nested List With Icons Only in First-Level Items
 {% capture example-3 %}
 <ul class="fd-nested-list">
     <li class="fd-nested-list__item">
@@ -337,7 +342,7 @@ Nested List represents a nested structure with up to 10 levels.
 
 <br /><br />
 
-# Nested List With Group Headers
+## Nested List With Group Headers
 {% capture example-4 %}
 <ul class="fd-nested-list">
     <li class="fd-nested-list__group-header">
@@ -440,7 +445,9 @@ Nested List represents a nested structure with up to 10 levels.
 
 <br /><br />
 
-# Nested List With Group Headers Compact Mode
+## Nested List With Group Headers Compact Mode
+For compact mode use the `fd-nested-list--compact` modifier class.
+
 {% capture example-5 %}
 <ul class="fd-nested-list fd-nested-list--compact">
     <li class="fd-nested-list__group-header">
@@ -543,7 +550,9 @@ Nested List represents a nested structure with up to 10 levels.
 
 <br /><br />
 
-# Nested List Without Links
+## Nested List Without Links
+For a nested list with items without links, the icon and the title are wrapped in a container with `fd-nested-list__content` class.
+
 {% capture example-6 %}
 <ul class="fd-nested-list fd-nested-list--compact">
     <li class="fd-nested-list__group-header">
@@ -646,7 +655,7 @@ Nested List represents a nested structure with up to 10 levels.
 
 <br /><br />
 
-# Right To Left Support
+## Right To Left Support
 {% capture example-7 %}
 <ul class="fd-nested-list fd-nested-list--no-border" dir="rtl">
     <li class="fd-nested-list__item">

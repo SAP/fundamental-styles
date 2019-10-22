@@ -9,16 +9,16 @@ folder: components
 summary:
 ---
 
-The left navigation area can be used to display navigation structures with links that change the content in the main area. 
-
-The side navigation consists of two container section:  the Main Navigation Section (top-aligned) with links used to navigate within the user’s current work context, and Utility Section (bottom-aligned) that contains links to additional information.
-
+The left navigation area can be used to display navigation structures with links that change the content in the main area. The side navigation consists of two container section:  the Main Navigation Section (top-aligned) with links used to navigate within the user’s current work context, and Utility Section (bottom-aligned) that contains links to additional information.
+Each of the sections uses a Nested List to display the navigation items.
 {: .docs-intro}
 
 > {{ site.data.strings.headerDisclaimer }}
 
 ## Side Navigation with one level - text-only, cozy mode
 There is only one level of navigation; all further navigation is shown in the content area.
+<br>
+The lists in both sections (Main and Utility) should have the `fd-nested-list--text-only` modifier class.
 
 {% capture default %}
 <nav class="fd-side-nav">
@@ -298,7 +298,8 @@ Use this when there is more than one level of hierarchy in the left navigation. 
 <br>
 
 ## Side navigation with multiple levels - compact mode
-In compact mode the dimensions of the controls are reduced, allowing more information to be displayed. This mode is suggested for devices operated by mouse and keyboard.
+In compact mode the dimensions of the controls are reduced, allowing more information to be displayed. This mode is suggested for devices operated by mouse and keyboard. <br>
+The lists in both sections (Main and Utility) should have the `fd-nested-list--compact` modifier class.
 
 {% capture default %}
 <nav class="fd-side-nav">
@@ -405,7 +406,7 @@ In compact mode the dimensions of the controls are reduced, allowing more inform
 <br>
 
 ## Side navigation with icons - condensed state
-
+Use the `fd-side-nav--condensed` modifier class for `condensed` state.
 {% capture default %}
 <nav class="fd-side-nav fd-side-nav--condensed">
     <div class="fd-side-nav__main-navigation">
