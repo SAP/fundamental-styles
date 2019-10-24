@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.1-rc.3"></a>
+## [0.3.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.3.1-rc.2...v0.3.1-rc.3) (2019-10-24)
+
+
+### Bug Fixes
+
+* add rtl support for mobile mode ([#382](https://github.com/SAP/fundamental-styles/issues/382)) ([707b989](https://github.com/SAP/fundamental-styles/commit/707b989))
+
+
+
 <a name="0.3.1-rc.2"></a>
 ## [0.3.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.3.1-rc.1...v0.3.1-rc.2) (2019-10-24)
 
