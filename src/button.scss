@@ -60,6 +60,10 @@
     background-color: var(--sapButton_Active_Background);
     border-color: var(--sapButton_BorderColor);
 
+    &:focus {
+      outline-color: var(--sapContent_ContrastFocusColor);
+    }
+
     @include fd-disabled() {
       @include isDisabled();
       @include standard();
@@ -99,6 +103,10 @@
     background-color: var(--sapButton_Reject_Active_Background);
     border-color: var(--sapButton_Reject_BorderColor);
 
+    &:focus {
+      outline-color: var(--sapContent_ContrastFocusColor);
+    }
+
     @include fd-disabled() {
       @include isDisabled();
       @include negative();
@@ -137,6 +145,10 @@
     color: var(--sapButton_Selected_TextColor);
     background-color: var(--sapButton_Accept_Active_Background);
     border-color: var(--sapButton_Accept_BorderColor);
+
+    &:focus {
+      outline-color: var(--sapContent_ContrastFocusColor);
+    }
 
     @include fd-disabled() {
       @include isDisabled();
