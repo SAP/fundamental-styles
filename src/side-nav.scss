@@ -1,6 +1,7 @@
 @import "./settings";
 @import "./mixins";
 @import "./functions";
+@import "./nested-list";
 
 /*!
 .fd-side-nav
@@ -54,11 +55,14 @@ $block: #{$fd-namespace}-side-nav;
         display: none;
       }
 
-      &__item {
-        border-bottom: none;
-      }
-
       &__link {
+        border-bottom: none;
+
+        @include fd-selected() {
+          border-bottom: var(--sapList_BorderWidth) solid;
+          border-bottom-color: var(--sapList_SelectionBorderColor);
+        }
+
         &.has-child {
           position: relative;
 

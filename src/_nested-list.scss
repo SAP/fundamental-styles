@@ -15,12 +15,6 @@ $block: #{$fd-namespace}-nested-list;
   speak: none;
 }
 
-@mixin fd-flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .#{$block} {
   @include fd-reset();
 
@@ -34,10 +28,12 @@ $block: #{$fd-namespace}-nested-list;
       .#{$block}__link,
       .#{$block}__content {
         padding-left: $paddingLeft;
-      }
-
-      .#{$block}__item {
         border-bottom: none;
+
+        @include fd-selected() {
+          border-bottom: var(--sapList_BorderWidth) solid;
+          border-bottom-color: var(--sapList_SelectionBorderColor);
+        }
       }
     }
   }
@@ -55,6 +51,11 @@ $block: #{$fd-namespace}-nested-list;
 
         .#{$block}__item {
           border-bottom: none;
+
+          @include fd-selected() {
+            border-bottom: var(--sapList_BorderWidth) solid;
+            border-bottom-color: var(--sapList_SelectionBorderColor);
+          }
         }
       }
     }
@@ -68,7 +69,6 @@ $block: #{$fd-namespace}-nested-list;
     @include fd-reset();
 
     background: var(--sapList_Background);
-    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
   }
 
   &__link,
@@ -79,6 +79,7 @@ $block: #{$fd-namespace}-nested-list;
     height: 2.75rem;
     display: flex;
     align-items: center;
+    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
 
     @include fd-hover() {
       background: var(--sapList_Hover_Background);
@@ -131,6 +132,11 @@ $block: #{$fd-namespace}-nested-list;
 
         &::after {
           content: "\e1e2";
+        }
+
+        @include fd-selected() {
+          border-bottom: var(--sapList_BorderWidth) solid;
+          border-bottom-color: var(--sapList_SelectionBorderColor);
         }
       }
 
@@ -222,6 +228,12 @@ $block: #{$fd-namespace}-nested-list;
         .#{$block}__link,
         .#{$block}__content {
           padding-left: $paddingLeft;
+          border-bottom: none;
+
+          @include fd-selected() {
+            border-bottom: var(--sapList_BorderWidth) solid;
+            border-bottom-color: var(--sapList_SelectionBorderColor);
+          }
         }
       }
 

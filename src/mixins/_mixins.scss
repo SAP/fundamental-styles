@@ -341,3 +341,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+@mixin fd-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

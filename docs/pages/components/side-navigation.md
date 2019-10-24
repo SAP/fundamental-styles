@@ -207,13 +207,13 @@ Use this when there is more than one level of hierarchy in the left navigation. 
                 </a>
             </li>
             <li class="fd-nested-list__item">
-                <a class="fd-nested-list__link is-selected" href="#">
+                <a class="fd-nested-list__link" href="#">
                     <span class="fd-nested-list__icon sap-icon--calendar"></span>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
-                <a class="fd-nested-list__link has-child" href="#" aria-controls="EX400L2" aria-haspopup="true">
+                <a class="fd-nested-list__link is-selected has-child" href="#" aria-controls="EX400L2" aria-haspopup="true">
                     <span class="fd-nested-list__icon sap-icon--employee"></span>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
@@ -224,7 +224,7 @@ Use this when there is more than one level of hierarchy in the left navigation. 
                         </a>
                     </li>
                     <li class="fd-nested-list__item">
-                        <a class="fd-nested-list__link has-child" 
+                        <a class="fd-nested-list__link is-selected has-child" 
                             href="#" aria-controls="EX400L3" aria-haspopup="true">
                             <span class="fd-nested-list__title">Level 2 Item</span>
                         </a>
@@ -235,7 +235,7 @@ Use this when there is more than one level of hierarchy in the left navigation. 
                                 </a>
                             </li>
                             <li class="fd-nested-list__item">
-                                <a class="fd-nested-list__link" href="#">
+                                <a class="fd-nested-list__link is-selected" href="#">
                                     <span class="fd-nested-list__title">Level 3 Item</span>
                                 </a>
                             </li>
