@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.1-rc.2"></a>
+## [0.3.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.3.1-rc.1...v0.3.1-rc.2) (2019-10-24)
+
+
+### Bug Fixes
+
+* refactored link mixin using theme parameters ([#379](https://github.com/SAP/fundamental-styles/issues/379)) ([0d4c30f](https://github.com/SAP/fundamental-styles/commit/0d4c30f))
+
+
+
 <a name="0.3.1-rc.1"></a>
 ## [0.3.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.3.1-rc.0...v0.3.1-rc.1) (2019-10-23)
 
