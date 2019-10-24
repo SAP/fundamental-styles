@@ -5,12 +5,37 @@
 @mixin isDisabled() {
   opacity: 0.4;
   cursor: not-allowed;
+
+  &:focus {
+    outline: none;
+  }
 }
 
-@mixin isStandard() {
+@mixin focus() {
+  outline: var(--sapContent_FocusWidth) dotted var(--sapContent_FocusColor);
+  outline-offset: -0.1875rem;
+}
+
+@mixin standard() {
   color: var(--sapButton_TextColor);
   border-color: var(--sapButton_BorderColor);
   background-color: var(--sapButton_Background);
+}
+
+@mixin positive() {
+  color: var(--sapButton_Accept_TextColor);
+  border-color: var(--sapButton_Accept_BorderColor);
+  background-color: var(--sapButton_Accept_Background);
+}
+
+@mixin negative() {
+  color: var(--sapButton_Reject_TextColor);
+  border-color: var(--sapButton_Reject_BorderColor);
+  background-color: var(--sapButton_Reject_Background);
+}
+
+@mixin isStandard() {
+  @include standard();
 
   @include fd-hover() {
     color: var(--sapButton_Hover_TextColor);
@@ -20,10 +45,12 @@
 
   @include fd-disabled() {
     @include isDisabled();
+    @include standard();
 
-    color: var(--sapButton_TextColor);
-    border-color: var(--sapButton_BorderColor);
-    background-color: var(--sapButton_Background);
+    &:focus {
+      outline: none;
+    }
+
     box-shadow: none;
   }
 
@@ -32,13 +59,26 @@
     color: var(--sapButton_Selected_TextColor);
     background-color: var(--sapButton_Active_Background);
     border-color: var(--sapButton_BorderColor);
+
+    @include fd-disabled() {
+      @include isDisabled();
+      @include standard();
+
+      &:focus {
+        outline: none;
+      }
+
+      box-shadow: none;
+    }
+  }
+
+  &:focus {
+    @include focus();
   }
 }
 
 @mixin isNegative() {
-  color: var(--sapButton_Reject_TextColor);
-  border-color: var(--sapButton_Reject_BorderColor);
-  background-color: var(--sapButton_Reject_Background);
+  @include negative();
 
   @include fd-hover() {
     color: var(--sapButton_Reject_Hover_TextColor);
@@ -48,10 +88,8 @@
 
   @include fd-disabled() {
     @include isDisabled();
+    @include negative();
 
-    color: var(--sapButton_Reject_TextColor);
-    border-color: var(--sapButton_Reject_BorderColor);
-    background-color: var(--sapButton_Reject_Background);
     box-shadow: none;
   }
 
@@ -60,13 +98,22 @@
     color: var(--sapButton_Selected_TextColor);
     background-color: var(--sapButton_Reject_Active_Background);
     border-color: var(--sapButton_Reject_BorderColor);
+
+    @include fd-disabled() {
+      @include isDisabled();
+      @include negative();
+
+      box-shadow: none;
+    }
+  }
+
+  &:focus {
+    @include focus();
   }
 }
 
 @mixin isPositive() {
-  color: var(--sapButton_Accept_TextColor);
-  border-color: var(--sapButton_Accept_BorderColor);
-  background-color: var(--sapButton_Accept_Background);
+  @include positive();
 
   @include fd-hover() {
     color: var(--sapButton_Accept_Hover_TextColor);
@@ -76,10 +123,12 @@
 
   @include fd-disabled() {
     @include isDisabled();
+    @include positive();
 
-    color: var(--sapButton_Accept_TextColor);
-    border-color: var(--sapButton_Accept_BorderColor);
-    background-color: var(--sapButton_Accept_Background);
+    &:focus {
+      outline: none;
+    }
+
     box-shadow: none;
   }
 
@@ -88,6 +137,21 @@
     color: var(--sapButton_Selected_TextColor);
     background-color: var(--sapButton_Accept_Active_Background);
     border-color: var(--sapButton_Accept_BorderColor);
+
+    @include fd-disabled() {
+      @include isDisabled();
+      @include positive();
+
+      box-shadow: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &:focus {
+    @include focus();
   }
 }
 
@@ -284,6 +348,11 @@ a.#{$block} {
     @include fd-active-pressed-selected() {
       background-color: var(--sapButton_Emphasized_Hover_Background);
       border-color: var(--sapButton_Emphasized_Hover_BorderColor);
+
+      @include fd-disabled() {
+        @include isEmphasized();
+        @include isDisabled();
+      }
     }
 
     @include fd-hover() {
@@ -315,6 +384,10 @@ a.#{$block} {
 
     color: var(--sapButton_Lite_TextColor);
 
+    &:focus {
+      @include focus();
+    }
+
     @include fd-hover() {
       background-color: var(--sapButton_Lite_Hover_Background);
       border-color: var(--sapButton_Lite_Hover_BorderColor);
@@ -324,12 +397,25 @@ a.#{$block} {
     @include fd-disabled() {
       @include isLight();
       @include isDisabled();
+
+      &:focus {
+        @include isLight();
+      }
+
+      box-shadow: none;
     }
 
     @include fd-active-pressed-selected() {
       color: var(--sapButton_Selected_TextColor);
       border-color: var(--sapButton_Lite_Active_BorderColor);
       background-color: var(--sapButton_Lite_Active_Background);
+
+      @include fd-disabled() {
+        @include isDisabled();
+        @include isLight();
+
+        box-shadow: none;
+      }
     }
 
     &.#{$block}--standard {
@@ -364,6 +450,4 @@ a.#{$block} {
       }
     }
   }
-
-  @include isStandard();
 }
