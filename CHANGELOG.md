@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.1-rc.5"></a>
+## [0.3.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.3.1-rc.4...v0.3.1-rc.5) (2019-10-25)
+
+
+### Bug Fixes
+
+* update the focus and body border-radius ([#396](https://github.com/SAP/fundamental-styles/issues/396)) ([f4f75aa](https://github.com/SAP/fundamental-styles/commit/f4f75aa))
+
+
+
 <a name="0.3.1-rc.4"></a>
 ## [0.3.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.3.1-rc.3...v0.3.1-rc.4) (2019-10-25)
 
