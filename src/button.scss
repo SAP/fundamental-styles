@@ -355,6 +355,12 @@ a.#{$block} {
   &--emphasized {
     font-weight: fd-font-weight("bold");
 
+    &:focus {
+      @include focus();
+
+      outline-color: var(--sapContent_ContrastFocusColor);
+    }
+
     @include isEmphasized();
 
     @include fd-active-pressed-selected() {
@@ -375,18 +381,6 @@ a.#{$block} {
     @include fd-disabled() {
       @include isEmphasized();
       @include isDisabled();
-    }
-
-    &.#{$block}--standard {
-      @include isStandard();
-    }
-
-    &.#{$block}--negative {
-      @include isNegative();
-    }
-
-    &.#{$block}--positive {
-      @include isPositive();
     }
   }
 
