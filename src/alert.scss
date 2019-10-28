@@ -80,7 +80,7 @@ $block: #{$fd-namespace}-alert;
   // Elements
   &__close {
     @include fd-alert-close-btn-container();
-    @include fd-icon("decline", "l");
+    @include fd-icon("decline", "m");
     @include fd-button-reset();
     @include fd-focus();
 
