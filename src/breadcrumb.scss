@@ -8,7 +8,14 @@
     .fd-breadcrump__link
 */
 
-$fd-breadcrumb-link-margin: fd-space(4);
+$fd-breadcrumb-margin-bottom: 0.5rem;
+$fd-breadcrumb-spacing: 0.25rem;
+
+$fd-breadcrumb-font-size: var(--sapFontSize);
+$fd-breadcrumb-font-family: var(--sapFontFamily);
+
+$fd-breadcrumb-separator-color: var(--sapContent_LabelColor);
+$fd-breadcrumb-item-color: var(--sapContent_LabelColor);
 
 $block: #{$fd-namespace}-breadcrumb;
 
@@ -16,23 +23,22 @@ $block: #{$fd-namespace}-breadcrumb;
 
   // BLOCK BASE *******************************************
   @include fd-reset();
-  @include fd-type("-1");
 
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-bottom: 0;
+  margin-bottom: $fd-breadcrumb-margin-bottom;
   list-style: none;
-  padding-right: fd-space(4);
+  padding-right: $fd-breadcrumb-spacing;
 
   @include fd-rtl() {
-    padding: 0 0 0 fd-space(4);
+    padding: 0 0 0 $fd-breadcrumb-spacing;
 
     &__item {
       &::after {
         content: "/";
         margin-right: initial;
-        margin-left: $fd-breadcrumb-link-margin;
+        margin-left: $fd-breadcrumb-spacing;
       }
 
       &:last-child::after {
@@ -47,7 +53,8 @@ $block: #{$fd-namespace}-breadcrumb;
 
     &::after {
       content: "/";
-      margin-right: $fd-breadcrumb-link-margin;
+      color: $fd-breadcrumb-separator-color;
+      margin-right: $fd-breadcrumb-spacing;
     }
 
     &:last-child::after {
@@ -58,7 +65,7 @@ $block: #{$fd-namespace}-breadcrumb;
       &::after {
         content: "/";
         margin-right: initial;
-        margin-left: $fd-breadcrumb-link-margin;
+        margin-left: $fd-breadcrumb-spacing;
       }
 
       &:last-child::after {
@@ -70,11 +77,11 @@ $block: #{$fd-namespace}-breadcrumb;
   &__link {
     @include fd-reset();
 
-    margin-right: $fd-breadcrumb-link-margin;
+    margin-right: $fd-breadcrumb-spacing;
 
     @include fd-rtl() {
       margin-right: initial;
-      margin-left: $fd-breadcrumb-link-margin;
+      margin-left: $fd-breadcrumb-spacing;
     }
 
     @include fd-link();
@@ -83,12 +90,7 @@ $block: #{$fd-namespace}-breadcrumb;
     display: inline-block;
     transition: all $fd-animation--speed ease-in;
     border-bottom-style: none;
-
-    &:focus {
-      outline-style: dotted;
-      outline-width: 1px;
-
-      @include fd-var-color("outline-color", fd-color-state("hover", "action"), --fd-color-action-focus);
-    }
+    font-size: $fd-breadcrumb-font-size;
+    font-family: $fd-breadcrumb-font-family;
   }
 }

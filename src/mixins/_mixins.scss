@@ -274,7 +274,7 @@
   transition: all $fd-animation--speed ease-in;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: var (--sapLinkColor);
+  border-bottom-color: var(--sapLinkColor);
 
   @include fd-hover() {
     color: var(--sapLink_Hover_Color);
@@ -296,7 +296,7 @@
   &:focus {
     outline-style: dotted;
     outline-width: 1px;
-    outline-color: var(--sapLinkColor);
+    outline-color: var(--sapContent_FocusColor);
   }
 }
 
