@@ -10,16 +10,17 @@ $block: #{$fd-namespace}-input;
 .#{$block} {
   @include fd-form-text();
   @include fd-var-size("height", $fd-forms-height, --fd-forms-height);
+  @include fd-var-size("line-height", $fd-forms-height, --fd-forms-height);
 
   width: 100%;
 
   &::placeholder {
-    @include fd-reset();
     @include fd-var-color("color", $fd-forms-color--placeholder, --fd-color-neutral-4);
   }
 
   &--compact {
     @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);
+    @include fd-var-size("line-height", $fd-forms-height--compact, --fd-forms-height-compact);
   }
 
   &--no-number-spinner {
