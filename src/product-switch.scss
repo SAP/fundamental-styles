@@ -48,7 +48,6 @@ $block: #{$fd-namespace}-product-switch;
     overflow-y: auto;
     padding: 1.5rem 0.5rem 1rem 1rem;
     background-color: var(--sapList_Background);
-    border-radius: var(--sapElement_BorderCornerRadius);
   }
 
   &__body--col-3 {
@@ -62,7 +61,6 @@ $block: #{$fd-namespace}-product-switch;
     width: 100%;
     max-width: 100vw;
     overflow-x: hidden;
-    border-radius: 0;
 
     .#{$block}__list {
       @include fd-flex(column);
@@ -88,10 +86,28 @@ $block: #{$fd-namespace}-product-switch;
       }
 
       &:focus {
-        outline: none;
-        border: 0.0625rem dotted;
-        border-color: var(--sapContent_FocusColor);
-        border-radius: 0;
+        outline-style: dotted;
+        outline-width: 0.0625rem;
+        outline-color: var(--sapContent_FocusColor);
+      }
+
+      .#{$block}__title {
+        &::after,
+        &::before {
+          background-color: var(--sapTile_Background);
+        }
+
+        &::before {
+          left: 24.7em;
+          width: 1em;
+          z-index: 2;
+        }
+
+        &::after {
+          width: 1em;
+          left: 24.7em;
+          z-index: 3;
+        }
       }
     }
 
@@ -116,6 +132,25 @@ $block: #{$fd-namespace}-product-switch;
 
       .#{$block}__text {
         align-items: flex-start;
+
+        .#{$block}__title {
+          &::before {
+            right: 25.8em;
+          }
+
+          &::after {
+            // bottom: -0.23em;
+          }
+        }
+
+        .#{$block}__title:not(:last-child) {
+          @include fd-ellipsis();
+
+          &::after,
+          &::before {
+            display: inline-flex;
+          }
+        }
       }
     }
   }
@@ -128,7 +163,43 @@ $block: #{$fd-namespace}-product-switch;
     }
 
     width: 47rem;
-    list-style-type: none;
+  }
+
+  &__item:hover {
+    background-color: var(--sapList_Hover_Background);
+
+    .#{$block}__title {
+      &::after,
+      &::before {
+        background-color: var(--sapList_Hover_Background);
+      }
+    }
+  }
+
+  &__item:active {
+    background-color: var(--sapList_Active_Background);
+
+    .#{$block}__icon,
+    .#{$block}__title,
+    .#{$block}__subtitle {
+      color: var(--sapList_Active_TextColor);
+    }
+
+    .#{$block}__title {
+      &::after,
+      &::before {
+        background-color: var(--sapList_Active_Background);
+      }
+    }
+
+    &:hover {
+      .#{$block}__title {
+        &::after,
+        &::before {
+          background-color: var(--sapList_Active_Background);
+        }
+      }
+    }
   }
 
   &__item {
@@ -148,17 +219,19 @@ $block: #{$fd-namespace}-product-switch;
     background-color: var(--sapList_Background);
     border-radius: var(--sapElement_BorderCornerRadius);
 
-    &:hover {
-      background-color: var(--sapList_Hover_Background);
+    .#{$block}__title:not(:last-child) {
+      @include fd-ellipsis();
+
+      &::after,
+      &::before {
+        display: none;
+      }
     }
 
-    &:active {
-      background-color: var(--sapList_Active_Background);
-
-      .#{$block}__icon,
-      .#{$block}__title,
-      .#{$block}__subtitle {
-        color: var(--sapList_Active_TextColor);
+    .#{$block}__title {
+      &::after,
+      &::before {
+        background-color: var(--sapTile_Background);
       }
     }
 
@@ -167,20 +240,39 @@ $block: #{$fd-namespace}-product-switch;
       border: 0.125rem solid;
       border-color: var(--sapList_SelectionBorderColor);
 
+      .#{$block}__title {
+        &::after,
+        &::before {
+          background-color: var(--sapList_SelectionBackgroundColor);
+        }
+      }
+
       &:hover {
         background-color: var(--sapList_Hover_SelectionBackground);
+
+        .#{$block}__title {
+          &::after,
+          &::before {
+            background-color: var(--sapList_Hover_SelectionBackground);
+          }
+        }
       }
 
       &:active {
         background-color: var(--sapList_Active_Background);
+
+        .#{$block}__title {
+          &::after,
+          &::before {
+            background-color: var(--sapList_Active_Background);
+          }
+        }
       }
     }
 
     &:focus {
-      outline: none;
-      border: 0.0625rem dotted;
-      border-color: var(--sapContent_FocusColor);
-      border-radius: var(--sapElement_BorderCornerRadius);
+      outline: 0.0625rem dotted;
+      outline-color: var(--sapContent_FocusColor);
     }
 
     &.dragged {
@@ -244,9 +336,21 @@ $block: #{$fd-namespace}-product-switch;
     line-height: 1.25rem;
     font-size: var(--sapFontHeader6Size);
     color: var(--sapGroup_TitleTextColor);
+    white-space: normal;
+    z-index: 1;
 
-    &:not(:last-child) {
-      @include fd-ellipsis();
+    @include multiline-truncate($lineHeight: 1.25em, $lineCount: 2);
+
+    &::before {
+      left: 10.9em;
+      width: 1em;
+      z-index: 2;
+    }
+
+    &::after {
+      width: 1em;
+      left: 10.9em;
+      z-index: 3;
     }
   }
 
