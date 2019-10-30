@@ -12,7 +12,6 @@
       .fd-calendar__months(+[aria-hidden])
       .fd-calendar__years(+[aria-hidden])
         .fd-calendar__table
-        .fd-calendar__list
           .fd-calendar__item(+[--other-month,--current,--disabled,--blocked],[is-selected,is-selected-range, is-selected-range-first,is-selected-range-last])
             .fd-calendar__text
 */
@@ -241,23 +240,6 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
 
       @include fd-var-color("background-color", $fd-calendar-item-background-color, --fd-color-background-2);
     }
-  }
-
-  &__list {
-    @include fd-reset();
-
-    width: 100%;
-    display: flex;
-    display: grid;
-    flex-wrap: wrap;
-
-    & > * {
-      min-width: 25%;
-    }
-
-    grid-template-columns: repeat(4, 1fr);
-    padding-left: 0;
-    padding-right: 0;
   }
 
   &__day-of-week {
