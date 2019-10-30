@@ -174,3 +174,19 @@ body {
   border: none;
   font-size: 14px;
 }
+
+.test-sidenav-list {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.test-sidenav-list-icon {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}

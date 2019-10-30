@@ -1,0 +1,307 @@
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+$block: #{$fd-namespace}-nested-list;
+
+@mixin fd-nested-list-arrow {
+  font-family: "SAP-icons";
+  font-style: normal;
+  font-weight: normal;
+  color: var(--sapList_TextColor);
+  font-size: var(--sapFontHeader4Size);
+  text-decoration: inherit;
+  text-transform: none;
+  speak: none;
+}
+
+.#{$block} {
+  @include fd-reset();
+
+  list-style: none;
+  width: 100%;
+
+  @for $i from 2 through 10 {
+    .level-#{$i} {
+      $paddingLeft: ($i - 2) + 2.75rem;
+
+      .#{$block}__link,
+      .#{$block}__content {
+        padding-left: $paddingLeft;
+        border-bottom: none;
+
+        @include fd-selected() {
+          border-bottom: var(--sapList_BorderWidth) solid;
+          border-bottom-color: var(--sapList_SelectionBorderColor);
+        }
+      }
+    }
+  }
+
+  @include fd-rtl() {
+    @for $i from 2 through 10 {
+      .level-#{$i} {
+        $paddingRight: ($i - 2) + 2.75rem;
+
+        .#{$block}__link,
+        .#{$block}__content {
+          padding-right: $paddingRight;
+          padding-left: 0;
+        }
+
+        .#{$block}__item {
+          border-bottom: none;
+
+          @include fd-selected() {
+            border-bottom: var(--sapList_BorderWidth) solid;
+            border-bottom-color: var(--sapList_SelectionBorderColor);
+          }
+        }
+      }
+    }
+  }
+
+  &[aria-hidden="true"] {
+    display: none;
+  }
+
+  &__item {
+    @include fd-reset();
+
+    background: var(--sapList_Background);
+  }
+
+  &__link,
+  &__content {
+    @include fd-reset();
+
+    text-decoration: none;
+    height: 2.75rem;
+    display: flex;
+    align-items: center;
+    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+
+    @include fd-hover() {
+      background: var(--sapList_Hover_Background);
+    }
+
+    @include fd-selected() {
+      background: var(--sapList_SelectionBackgroundColor);
+      border-bottom: var(--sapList_BorderWidth) solid;
+      border-bottom-color: var(--sapList_SelectionBorderColor);
+
+      @include fd-hover() {
+        background: var(--sapList_Hover_SelectionBackground);
+      }
+    }
+
+    @include fd-active() {
+      background: var(--sapList_Active_Background);
+
+      @include fd-selected() {
+        background: var(--sapList_Active_Background);
+      }
+
+      .#{$block}__title,
+      .#{$block}__icon {
+        color: var(--sapList_Active_TextColor);
+      }
+    }
+
+    &.has-child {
+      &::after {
+        @include fd-flex-center();
+        @include fd-nested-list-arrow();
+
+        min-height: 100%;
+        min-width: 2.75rem;
+        color: var(--sapList_TextColor);
+        font-size: var(--sapFontHeader4Size);
+        content: "\e066";
+      }
+
+      @include fd-rtl() {
+        &::after {
+          content: "\e067";
+        }
+      }
+
+      &.is-expanded,
+      &[aria-expanded="true"] {
+        border-bottom: none;
+
+        &::after {
+          content: "\e1e2";
+        }
+
+        @include fd-selected() {
+          border-bottom: var(--sapList_BorderWidth) solid;
+          border-bottom-color: var(--sapList_SelectionBorderColor);
+        }
+      }
+
+      &:active::after {
+        color: var(--sapList_Active_TextColor);
+      }
+    }
+  }
+
+  &__icon {
+    @include fd-reset();
+    @include fd-flex-center();
+
+    height: 100%;
+    min-width: 2.75rem;
+    color: var(--sapList_TextColor);
+    font-size: var(--sapFontHeader4Size);
+  }
+
+  &__title {
+    @include fd-reset();
+
+    width: 100%;
+    font-size: var(--sapFontLargeSize);
+    color: var(--sapList_TextColor);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 1rem;
+
+    &:first-child {
+      padding-left: 2.75rem;
+    }
+
+    @include fd-rtl() {
+      text-align: right;
+      padding-right: 0;
+      padding-left: 1rem;
+
+      &:first-child {
+        padding-right: 2.75rem;
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__group-header {
+    @include fd-reset();
+
+    height: 2.75rem;
+    background: var(--sapList_GroupHeaderBackground);
+    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_GroupHeaderBorderColor);
+    color: var(--sapList_GroupHeaderTextColor);
+    display: flex;
+    align-items: flex-end;
+    font-size: var(--sapFontSize);
+    font-weight: bold;
+    line-height: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &--no-border {
+    .#{$block}__item,
+    .#{$block}__group-header {
+      border-bottom: none;
+    }
+  }
+
+  &--text-only {
+    .#{$block}__link,
+    .#{$block}__content {
+      padding-left: 1rem;
+    }
+
+    .#{$block}__title {
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+
+    @for $i from 2 through 10 {
+      .level-#{$i} {
+        $paddingLeft: 1rem * $i;
+
+        .#{$block}__link,
+        .#{$block}__content {
+          padding-left: $paddingLeft;
+          border-bottom: none;
+
+          @include fd-selected() {
+            border-bottom: var(--sapList_BorderWidth) solid;
+            border-bottom-color: var(--sapList_SelectionBorderColor);
+          }
+        }
+      }
+
+      &.level-#{$i} {
+        $paddingLeft: ($i - 2) + 2.75rem;
+
+        .#{$block}__link,
+        .#{$block}__content {
+          padding-left: $paddingLeft;
+        }
+      }
+    }
+
+    @include fd-rtl() {
+      .#{$block}__link,
+      .#{$block}__content {
+        padding-right: 1rem;
+        padding-left: 0;
+      }
+
+      .#{$block}__title {
+        &:first-child {
+          padding-right: 0;
+        }
+      }
+
+      @for $i from 2 through 10 {
+        .level-#{$i} {
+          $paddingRight: 1rem * $i;
+
+          .#{$block}__link,
+          .#{$block}__content {
+            padding-right: $paddingRight;
+            padding-left: 0;
+          }
+        }
+
+        &.level-#{$i} {
+          $paddingRight: ($i - 2) + 2.75rem;
+
+          .#{$block}__link,
+          .#{$block}__content {
+            padding-right: $paddingRight;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &--compact {
+    .#{$block}__link,
+    .#{$block}__content {
+      height: 2rem;
+
+      &.has-child {
+        &::after {
+          font-size: var(--sapFontSize);
+        }
+      }
+    }
+
+    .#{$block}__title {
+      font-size: var(--sapFontSize);
+    }
+
+    .#{$block}__icon {
+      font-size: var(--sapFontLargeSize);
+    }
+  }
+}
