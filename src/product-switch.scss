@@ -130,16 +130,100 @@ $block: #{$fd-namespace}-product-switch;
         margin-left: 0.75rem;
       }
 
+      .#{$block}__item {
+        &:hover {
+          .#{$block}__subtitle {
+            &::after,
+            &::before {
+              background-color: var(--sapList_Hover_Background);
+            }
+          }
+        }
+
+        &:active {
+          .#{$block}__subtitle {
+            color: var(--sapList_Active_TextColor);
+
+            &::after,
+            &::before {
+              background-color: var(--sapList_Active_Background);
+            }
+          }
+
+          &:hover {
+            .#{$block}__subtitle {
+              &::after,
+              &::before {
+                background-color: var(--sapList_Active_Background);
+              }
+            }
+          }
+        }
+
+        &.selected {
+          .#{$block}__subtitle {
+            &::after,
+            &::before {
+              background-color: var(--sapList_SelectionBackgroundColor);
+            }
+          }
+
+          &:hover {
+            .#{$block}__subtitle {
+              &::after,
+              &::before {
+                background-color: var(--sapList_Hover_SelectionBackground);
+              }
+            }
+          }
+
+          &:active {
+            .#{$block}__subtitle {
+              &::after,
+              &::before {
+                background-color: var(--sapList_Active_Background);
+              }
+            }
+
+            &:hover {
+              .#{$block}__subtitle {
+                &::after,
+                &::before {
+                  background-color: var(--sapList_Active_Background);
+                }
+              }
+            }
+          }
+        }
+
+        .#{$block}__subtitle {
+          @include multiline-truncate($lineHeight: 1.25em, $lineCount: 1);
+
+          &::before {
+            background-color: var(--sapTile_Background);
+            right: 29.7em;
+            width: 1.5em;
+            text-align: right;
+            z-index: 2;
+          }
+
+          &::after {
+            background-color: var(--sapTile_Background);
+            z-index: 3;
+          }
+        }
+      }
+
       .#{$block}__text {
         align-items: flex-start;
 
         .#{$block}__title {
           &::before {
-            right: 25.8em;
+            right: 25.7em;
           }
 
           &::after {
-            // bottom: -0.23em;
+            // right: 25.7em;
           }
         }
 

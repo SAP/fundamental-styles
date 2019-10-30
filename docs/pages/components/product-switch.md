@@ -402,14 +402,14 @@ Add the modifier class `fd-product-switch__body--mobile` for a list layout.
                 <div class="fd-product-switch__icon sap-icon--home"></div>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين</div>
-                    <div class="fd-product-switch__subtitle">Central Home</div>
+                    <div class="fd-product-switch__subtitle">، ولكن بفضل هؤلاء الأشخاص الذينحقيقة وأسولكن بفضل هؤلاء الأشخاص الذينحقيقة وأساس</div>
                 </div>
             </li>
             <li class="fd-product-switch__item selected" tabindex="0">
                 <div class="fd-product-switch__icon sap-icon--business-objects-experience"></div>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذينحقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين</div>
-                    <div class="fd-product-switch__subtitle">ة، ولكن بفضل هؤلاء الأشخاص الذينحقيقة وأساس ت</div>
+                    <div class="fd-product-switch__subtitle">ة، ولكن بفضل هؤلاء الأشخاص الذينحقيقة وأسولكن بفضل هؤلاء الأشخاص الذينحقيقة وأساس ت</div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
