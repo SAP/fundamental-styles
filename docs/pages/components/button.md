@@ -42,7 +42,6 @@ There are five button types that can be combined with the emphasis styles.
 <button class="fd-button">Action Button</button>
 <button class="fd-button--standard">Standard Button</button>
 <button class="fd-button--positive">Positive Button</button>
-<button class="fd-button--medium">Medium Button</button>
 <button class="fd-button--negative">Negative Button</button>
 {% endcapture %}
 {% include display-component.html component=button %}
@@ -218,13 +217,11 @@ Button with multiple actions
 <button class="fd-button fd-button--menu">Action Button</button>
 <button class="fd-button--standard fd-button--menu">Standard Button</button>
 <button class="fd-button--positive fd-button--menu">Positive Button</button>
-<button class="fd-button--medium fd-button--menu">Medium Button</button>
 <button class="fd-button--negative fd-button--menu">Negative Button</button>
 <br><br>
 <button class="fd-button fd-button--menu" aria-disabled="true">Action Button</button>
 <button class="fd-button--standard fd-button--menu" aria-disabled="true">Standard Button</button>
 <button class="fd-button--positive fd-button--menu" aria-disabled="true">Positive Button</button>
-<button class="fd-button--medium fd-button--menu" aria-disabled="true">Medium Button</button>
 <button class="fd-button--negative fd-button--menu" aria-disabled="true">Negative Button</button>
 <br><br>
 <button class="fd-button--emphasized fd-button--menu sap-icon--cart">Add to Cart</button>

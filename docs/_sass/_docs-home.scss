@@ -12,7 +12,6 @@
             padding-top: 0;
         }
 
-
         &-heading {
             font-size: 70px;
             font-weight: 100;
@@ -42,11 +41,9 @@
             max-width: 520px;
         }
 
-        &-btn {
+        &-btn.fd-button--emphasized {
             font-size: 16px;
             font-weight: bold;
-            background-color: docs-color(action, 3);
-            color: fd-color(text, 5) !important;
             display: inline-block;
             margin-top: 36px;
             margin-bottom: 32px;
@@ -59,7 +56,6 @@
             }
 
             &:hover {
-                background-color: docs-color(action, 4);
                 text-decoration: none;
                 box-shadow: none;
             }
