@@ -14,6 +14,7 @@
   &[aria-disabled="true"],
   &.is-disabled,
   &:disabled {
+
     @content;
   }
 }
