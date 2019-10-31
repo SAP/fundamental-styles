@@ -150,7 +150,7 @@ calendar:
         {%-endif %}
         {%- set _is_current = properties.month === loop.index0 %}
         {%- set _is_selected = properties.months.selected === loop.index0 %}
-          {{ calendar_item(month.name | truncate(3, true, "."),modifier={ 'item': ['current' if _is_current else '' ] },state={ blocked: _is_blocked, selected: _is_selected },aria={ selected: _is_selected }) }}
+          {{ calendar_item(month.name | truncate(3, true, "."),modifier={ 'item': ['current' if _is_current else '' ] },state={ blocked: _is_blocked, selected: _is_selected }) }}
         {%- endfor %}
         </tr>
       </tbody>
@@ -173,7 +173,7 @@ calendar:
         {%- set year = properties.year + loop.index0 %}
         {%- set _is_current = properties.year === year %}
         {%- set _is_selected = properties.years.selected === loop.index0 %}
-          {{ calendar_item(properties.year + loop.index0,modifier={ 'item': ['current' if _is_current else '' ] },state={ blocked: _is_blocked, selected: _is_selected },aria={ selected: true }) }}
+          {{ calendar_item(properties.year + loop.index0,modifier={ 'item': ['current' if _is_current else '' ] },state={ blocked: _is_blocked, selected: _is_selected }) }}
         {%- endfor %}
         </tr>
       </tbody>
