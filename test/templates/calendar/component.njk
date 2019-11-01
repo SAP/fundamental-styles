@@ -212,5 +212,5 @@ calendar:
 
 {% macro calendar_item(text, properties={}, modifier={}, state={}, aria={}, el="td") -%}
       <{{el}} class="fd-calendar__item{{ modifier.item | modifier('calendar__item')}}{{ state | state}}"{{ { selected: true } | aria if state.selected }}>
-      <span class="fd-calendar__text">{{ text }}</span></{{el}}>
+      <span class="fd-calendar__text" role="button">{{ text }}</span></{{el}}>
 {%- endmacro %}
