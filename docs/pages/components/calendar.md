@@ -242,8 +242,8 @@ These are dynamic classes which are affected by user selections
 						<td class="fd-calendar__item" role="gridcell">
 							<span class="fd-calendar__text" role="button">4</span>
 						</td>
-						<td class="fd-calendar__item is-selected is-selected-range-first" aria-selected="true" role="gridcell">
-							<span class="fd-calendar__text" role="button">5</span>
+						<td class="fd-calendar__item is-selected is-selected-range-first" role="gridcell">
+							<span class="fd-calendar__text" role="button" aria-selected="true">5</span>
 						</td>
 					</tr>
 					<tr class="fd-calendar__row">
@@ -293,8 +293,8 @@ These are dynamic classes which are affected by user selections
 						</td>
 					</tr>
 					<tr class="fd-calendar__row">
-						<td class="fd-calendar__item is-selected is-selected-range-last" aria-selected="true" role="gridcell">
-							<span class="fd-calendar__text" role="button">20</span>
+						<td class="fd-calendar__item is-selected is-selected-range-last" role="gridcell">
+							<span class="fd-calendar__text" role="button" aria-selected="true">20</span>
 						</td>
 						<td class="fd-calendar__item" role="gridcell">
 							<span class="fd-calendar__text" role="button">21</span>
@@ -351,8 +351,8 @@ These are dynamic classes which are affected by user selections
 						<td class="fd-calendar__item">
 							<span class="fd-calendar__text" role="button">Feb.</span>
 						</td>
-						<td class="fd-calendar__item is-selected" aria-selected="true">
-							<span class="fd-calendar__text" role="button">Mar.</span>
+						<td class="fd-calendar__item is-selected">
+							<span class="fd-calendar__text" role="button" aria-selected="true">Mar.</span>
 						</td>
 						<td class="fd-calendar__item">
 							<span class="fd-calendar__text" role="button">Apr.</span>
@@ -402,8 +402,8 @@ These are dynamic classes which are affected by user selections
 						<td class="fd-calendar__item">
 							<span class="fd-calendar__text" role="button">2020</span>
 						</td>
-						<td class="fd-calendar__item is-selected" aria-selected="true">
-							<span class="fd-calendar__text" role="button">2021</span>
+						<td class="fd-calendar__item is-selected">
+							<span class="fd-calendar__text" role="button" aria-selected="true">2021</span>
 						</td>
 					</tr>
 					<tr class="fd-calendar__row">
@@ -548,8 +548,8 @@ The previous and next controls are standard buttons with all available states. F
 				<td class="fd-calendar__item" role="gridcell">
 					<span class="fd-calendar__text" role="button">14</span>
 				</td>
-				<td class="fd-calendar__item is-selected" aria-selected="true" role="gridcell">
-					<span class="fd-calendar__text" role="button">15</span>
+				<td class="fd-calendar__item is-selected" role="gridcell">
+					<span class="fd-calendar__text" role="button" aria-selected="true">15</span>
 				</td>
 				<td class="fd-calendar__item" role="gridcell">
 					<span class="fd-calendar__text" role="button">16</span>
@@ -646,8 +646,8 @@ The previous and next controls are standard buttons with all available states. F
 						<td class="fd-calendar__item">
 							<span class="fd-calendar__text" role="button">Feb.</span>
 						</td>
-						<td class="fd-calendar__item is-selected" aria-selected="true">
-							<span class="fd-calendar__text" role="button">Mar.</span>
+						<td class="fd-calendar__item is-selected">
+							<span class="fd-calendar__text" role="button" aria-selected="true">Mar.</span>
 						</td>
 						<td class="fd-calendar__item">
 							<span class="fd-calendar__text" role="button">Apr.</span>
@@ -723,8 +723,8 @@ The previous and next controls are standard buttons with all available states. F
 						<td class="fd-calendar__item">
 							<span class="fd-calendar__text" role="button">2020</span>
 						</td>
-						<td class="fd-calendar__item is-selected" aria-selected="true">
-							<span class="fd-calendar__text" role="button">2021</span>
+						<td class="fd-calendar__item is-selected">
+							<span class="fd-calendar__text" role="button" aria-selected="true">2021</span>
 						</td>
 					</tr>
 					<tr class="fd-calendar__row">
