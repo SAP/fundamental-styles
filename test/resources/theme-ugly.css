@@ -37,6 +37,7 @@
   --fd-color-neutral-1: rgb(117, 7, 7);
   --fd-color-neutral-2: yellow;
   --fd-color-neutral-3: green;
+  --fd-color-neutral-4: orange;
   --fd-color-accent-1: #bc3f8c;
   --fd-color-accent-2: #6a68a8;
   --fd-color-accent-3: #4f9344;
@@ -81,4 +82,7 @@
   --sapList_Hover_SelectionBackground: rgb(93%, 2%, 45%);
   --sapContent_IconColor: purple;
   --sapList_TextColor: #00D1B2;
+  --sapElement_Height: 50px;
+  --sapElement_Compact_Height: 25px;
+  --sapField_PlaceholderTextColor: orange;
 }
