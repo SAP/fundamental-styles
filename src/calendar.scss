@@ -281,15 +281,21 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
   }
 
   &__text {
+    @include fd-reset-spacing();
+
     display: flex;
-    height: 100%;
-    width: 100%;
-    border-radius: 4px;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
 
     &:focus {
       @include fd-var-color("background-color", $fd-calendar-item-background-color--hover, --fd-color-neutral-3);
+
+      outline: none;
     }
   }
 }
