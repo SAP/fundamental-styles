@@ -152,17 +152,11 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
   &__months {
     @include fd-reset();
 
-    display: grid;
-
     @extend %fd-calendar-content-hidden;
   }
 
   &__years {
     @include fd-reset();
-
-    display: flex;
-    display: grid;
-    flex-wrap: wrap;
 
     @extend %fd-calendar-content-hidden;
   }
@@ -211,6 +205,7 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
   &__table {
     display: table;
     border-collapse: collapse;
+    width: 100%;
 
     .#{$block}__item {
       display: table-cell;
@@ -286,9 +281,15 @@ $fd-calendar-table-width: $fd-calendar-table-item-width * 7 !default;
   }
 
   &__text {
-    @include fd-reset-spacing();
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
 
-    font-size: 12px;
-    border: none;
+    &:focus {
+      @include fd-var-color("background-color", $fd-calendar-item-background-color--hover, --fd-color-neutral-3);
+    }
   }
 }
