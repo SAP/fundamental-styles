@@ -13,6 +13,7 @@ Patterns in Fundamental Styles are completely composed from other components CSS
 
 <div class="docs-component-grid">
     {% for component in site.data.patterns.items %}
+    <div>{{component.meta}}</div>
         <a href="{{component.meta}}.html" class="docs-component-grid--item">
             <img src="{{site.baseurl}}/images/component-visual/{{component.meta}}.png" alt="{{component.title}}" width="60%" class="docs-component-grid--img__{{component.meta}}">
             <br>

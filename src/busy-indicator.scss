@@ -1,0 +1,105 @@
+
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+$block: #{$fd-namespace}-busy-indicator;
+$fd-dots-color: var(--sapContent_IconColor);
+$fd-dots-color-contrast: var(--sapContent_ContrastIconColor);
+// default sizes
+$fd-dots-size: 0.125rem;
+$fd-dots-margin: 0 0.2rem;
+
+// medium sizes
+$fd-dots-size-m: 0.5rem;
+$fd-dots-margin-m: 0 0.4rem;
+
+// large sizes
+$fd-dots-size-l: 1rem;
+$fd-dots-margin-l: 0 0.75rem;
+
+.#{$block},
+.#{$block}--m,
+.#{$block}--l {
+  @include fd-reset();
+
+  position: relative;
+  display: block;
+  font-size: 0;
+  color: $fd-dots-color;
+}
+
+.#{$block}.contrast,
+.#{$block}--m.contrast,
+.#{$block}--l.contrast {
+  color: $fd-dots-color-contrast;
+
+  .#{$block}--circle-0,
+  .#{$block}--circle-1,
+  .#{$block}--circle-2 {
+    color: $fd-dots-color-contrast;
+  }
+}
+
+.#{$block}--circle-0,
+.#{$block}--circle-1,
+.#{$block}--circle-2 {
+  @include fd-reset();
+
+  color: $fd-dots-color;
+  position: relative;
+  width: $fd-dots-size;
+  height: $fd-dots-size;
+  margin: $fd-dots-margin;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.#{$block}--circle-0 {
+  animation: grow 1.6s infinite cubic-bezier(0.32, 0.06, 0.85, 1.11);
+}
+
+.#{$block}--circle-1 {
+  animation: grow 1.6s infinite cubic-bezier(0.32, 0.06, 0.85, 1.11);
+  animation-delay: 200ms;
+}
+
+.#{$block}--circle-2 {
+  animation: grow 1.6s infinite cubic-bezier(0.32, 0.06, 0.85, 1.11);
+  animation-delay: 400ms;
+}
+
+.#{$block}--m .#{$block}--circle-0,
+.#{$block}--m .#{$block}--circle-1,
+.#{$block}--m .#{$block}--circle-2 {
+  width: $fd-dots-size-m;
+  height: $fd-dots-size-m;
+  margin: $fd-dots-margin-m;
+}
+
+.#{$block}--l .#{$block}--circle-0,
+.#{$block}--l .#{$block}--circle-1,
+.#{$block}--l .#{$block}--circle-2 {
+  width: $fd-dots-size-l;
+  height: $fd-dots-size-l;
+  margin: $fd-dots-margin-l;
+}
+
+@keyframes grow {
+  0%,
+  50%,
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  25% {
+    -webkit-transform: scale(2.5);
+    -moz-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    transform: scale(2.5);
+  }
+}

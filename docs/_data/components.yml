@@ -6,6 +6,9 @@
     - title: Alert
       meta: alert
 
+    - title: Busy Indicator
+      meta: busy-indicator
+
     - title: Button
       meta: button
 

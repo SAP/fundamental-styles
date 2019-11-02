@@ -97,17 +97,17 @@
     const uglyThemeCss = "static/theme-ugly.css";
     const toggleTheme = document.getElementById("toggleTheme");
     const toggleThemeState = localStorage.getItem('toggleThemeState');
-    if (toggleThemeState == "true") {
-        toggleTheme.checked = true;
-        toggleStylesheet(uglyThemeCss, true);
+    if (toggleThemeState == "false") {
+        toggleTheme.checked = false;
+        toggleStylesheet(uglyThemeCss, false);
     }
     toggleTheme.addEventListener('change', function () {
         if (this.checked) {
-            toggleStylesheet(uglyThemeCss, true);
-            localStorage.setItem("toggleThemeState", true);
-        } else {
             toggleStylesheet(uglyThemeCss, false);
             localStorage.setItem("toggleThemeState", false);
+        } else {
+            toggleStylesheet(uglyThemeCss, true);
+            localStorage.setItem("toggleThemeState", true);
         }
     });
 
@@ -142,6 +142,23 @@
         } else {
             toggleStylesheet(normalizeCss, false);
             localStorage.setItem("toggleNormalizeState", false);
+        }
+    });
+
+    const toggleAnimationCss = "static/animation.css";
+    const toggleAnimation = document.getElementById("toggleAnimation");
+    const toggleAnimationState = localStorage.getItem('toggleAnimationState');
+    if (toggleAnimationState == "true") {
+        toggleAnimation.checked = true;
+        toggleStylesheet(toggleAnimationCss, true);
+    }
+    toggleAnimation.addEventListener('change', function () {
+        if (this.checked) {
+            toggleStylesheet(toggleAnimationCss, true);
+            localStorage.setItem("toggleAnimationState", true);
+        } else {
+            toggleStylesheet(toggleAnimationCss, false);
+            localStorage.setItem("toggleAnimationState", false);
         }
     });
 
@@ -196,7 +213,7 @@
     //indeterminate
     const indeterminates = document.querySelectorAll("[indeterminate]");
     for (let i = 0; i < indeterminates.length; i++) {
-      indeterminates[i].indeterminate = true;
+        indeterminates[i].indeterminate = true;
     }
 
 

@@ -1,0 +1,56 @@
+
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+
+{% block content %}
+<div style="background: #f3f4f5; margin:-20px; padding:20px;">
+
+    <!-- output the component example and the code snippet -->
+    {% set example %}
+
+    <div class="fd-busy-indicator" aria-hidden="false" aria-label="Loading">
+        <div class="fd-busy-indicator--circle-0"></div>
+        <div class="fd-busy-indicator--circle-1"></div>
+        <div class="fd-busy-indicator--circle-2"></div>
+    </div>
+    <br />
+    <div class="fd-busy-indicator--m" aria-hidden="false" aria-label="Loading">
+        <div class="fd-busy-indicator--circle-0"></div>
+        <div class="fd-busy-indicator--circle-1"></div>
+        <div class="fd-busy-indicator--circle-2"></div>
+    </div>
+    <br />
+    <div class="fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
+        <div class="fd-busy-indicator--circle-0"></div>
+        <div class="fd-busy-indicator--circle-1"></div>
+        <div class="fd-busy-indicator--circle-2"></div>
+    </div>
+    {% endset %}
+    {{ format(example) }}
+
+        <!-- output the component example and the code snippet -->
+    {% set example1 %}
+    <div style="background: cadetblue; padding: 20px 0 20px 20px">
+        <div class="fd-busy-indicator contrast" aria-hidden="false" aria-label="Loading">
+            <div class="fd-busy-indicator--circle-0"></div>
+            <div class="fd-busy-indicator--circle-1"></div>
+            <div class="fd-busy-indicator--circle-2"></div>
+        </div>
+        <br />
+        <div class="fd-busy-indicator--m contrast" aria-hidden="false" aria-label="Loading">
+            <div class="fd-busy-indicator--circle-0"></div>
+            <div class="fd-busy-indicator--circle-1"></div>
+            <div class="fd-busy-indicator--circle-2"></div>
+        </div>
+        <br />
+        <div class="fd-busy-indicator--l contrast" aria-hidden="false" aria-label="Loading">
+            <div class="fd-busy-indicator--circle-0"></div>
+            <div class="fd-busy-indicator--circle-1"></div>
+            <div class="fd-busy-indicator--circle-2"></div>
+        </div>
+    </div>
+    {% endset %}
+    {{ format(example1) }}
+
+</div>
+{% endblock %}
