@@ -86,9 +86,10 @@ $block: #{$fd-namespace}-product-switch;
       }
 
       &:focus {
-        outline-style: dotted;
-        outline-width: 0.0625rem;
-        outline-color: var(--sapContent_FocusColor);
+        outline: none;
+        border: 0.0625rem dotted;
+        border-color: var(--sapContent_FocusColor);
+        border-radius: 0;
       }
 
       .#{$block}__title {
@@ -98,14 +99,14 @@ $block: #{$fd-namespace}-product-switch;
         }
 
         &::before {
-          left: 24.7em;
-          width: 1em;
+          left: 21.7rem;
+          width: 1rem;
           z-index: 2;
         }
 
         &::after {
-          width: 1em;
-          left: 24.7em;
+          width: 1rem;
+          left: 21.7rem;
           z-index: 3;
         }
       }
@@ -197,12 +198,12 @@ $block: #{$fd-namespace}-product-switch;
         }
 
         .#{$block}__subtitle {
-          @include multiline-truncate($lineHeight: 1.25em, $lineCount: 1);
+          @include multiline-truncate($lineHeight: 1.25rem, $lineCount: 1);
 
           &::before {
             background-color: var(--sapTile_Background);
-            right: 29.7em;
-            width: 1.5em;
+            right: 22.4rem;
+            width: 1.5rem;
             text-align: right;
             z-index: 2;
           }
@@ -219,11 +220,7 @@ $block: #{$fd-namespace}-product-switch;
 
         .#{$block}__title {
           &::before {
-            right: 25.7em;
-          }
-
-          &::after {
-            // right: 25.7em;
+            right: 22.4rem;
           }
         }
 
@@ -315,7 +312,7 @@ $block: #{$fd-namespace}-product-switch;
     .#{$block}__title {
       &::after,
       &::before {
-        background-color: var(--sapTile_Background);
+        background-color: var(--sapList_Active_TextColor);
       }
     }
 
@@ -355,8 +352,10 @@ $block: #{$fd-namespace}-product-switch;
     }
 
     &:focus {
-      outline: 0.0625rem dotted;
-      outline-color: var(--sapContent_FocusColor);
+      outline: none;
+      border: 0.0625rem dotted;
+      border-color: var(--sapContent_FocusColor);
+      border-radius: var(--sapElement_BorderCornerRadius);
     }
 
     &.dragged {
@@ -423,17 +422,17 @@ $block: #{$fd-namespace}-product-switch;
     white-space: normal;
     z-index: 1;
 
-    @include multiline-truncate($lineHeight: 1.25em, $lineCount: 2);
+    @include multiline-truncate($lineHeight: 1.25rem, $lineCount: 2);
 
     &::before {
-      left: 10.9em;
-      width: 1em;
+      left: 9.4rem;
+      width: 1rem;
       z-index: 2;
     }
 
     &::after {
-      width: 1em;
-      left: 10.9em;
+      width: 1rem;
+      left: 9.4rem;
       z-index: 3;
     }
   }
