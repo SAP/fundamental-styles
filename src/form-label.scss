@@ -8,29 +8,66 @@
 $block: #{$fd-namespace}-form-label;
 
 .#{$block} {
-  $fd-form-label-color: fd-color(text, 3) !default;
-
   @include fd-reset();
-  @include fd-var-color("color", $fd-form-label-color, --fd-color-text-3);
-  @include action-cursor();
+  @include fd-ellipsis();
 
-  line-height: $fd-forms-height--input-check;
-  margin-bottom: fd-space(2);
-  display: block;
+  width: fit-content;
+  max-width: 100%;
+  display: inline-block;
+  position: relative;
+  font-size: var(--sapFontSize);
+  color: var(--sapContent_LabelColor);
+  // padding-bottom: 0.125rem;
+  padding-right: 6px;
+  margin-right: 8px;
+  cursor: text;
+
+  @include fd-rtl() {
+    padding-left: 6px;
+    margin-left: 8px;
+  }
 
   &.is-disabled {
     opacity: 0.4;
   }
 
   &:focus-within {
-    @include fd-var-color("outline-color", fd-color-state("hover", "action"), --fd-color-action-focus);
-
-    outline-width: 1px;
-    outline-style: dotted;
+    outline-width: var(--sapContent_FocusWidth);
+    outline-style: var(--sapContent_FocusStyle);
+    outline-color: var(--sapContent_FocusColor);
+    // outline-offset: -0.5rem;
   }
 
-  & > .#{$fd-namespace}-radio,
-  .#{$fd-namespace}-checkbox {
-    margin-right: fd-space(2);
+  &--required,
+  &[aria-required="true"] {
+    &::after {
+      content: "*";
+      font-size: var(--sapFontSize);
+      font-weight: bold;
+      color: var(--sapField_RequiredColor);
+      margin-left: 0.125rem;
+      position: absolute;
+      right: 0;
+    }
+
+    @include fd-rtl() {
+      &::after {
+        margin-left: 0;
+        position: absolute;
+        right: auto;
+        left: 0;
+      }
+    }
+  }
+
+  &--inline-help {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .#{$fd-namespace}-inline-help {
+      top: 0;
+    }
   }
 }

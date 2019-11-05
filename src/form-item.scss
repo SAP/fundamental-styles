@@ -11,25 +11,62 @@ $block: #{$fd-namespace}-form-item;
 .#{$block} {
   @include fd-reset();
 
-  margin-bottom: fd-space("small");
+  display: flex;
+  flex-direction: column;
+
+  // &--inline {
+  //   float: left;
+  //   margin-right: fd-space(4);
+
+  //   @include fd-screen(s) {
+  //     margin-bottom: 0;
+  //   }
+
+  //   @include fd-rtl() {
+  //     float: right;
+  //     margin-right: 0;
+  //     margin-left: fd-space(4);
+  //   }
+
+  //   .#{$fd-namespace}-form-message {
+  //     transform: translateY(fd-space(2));
+  //     margin-bottom: fd-space(2);
+  //   }
+  // }
+
+  // &--horizontal {
+  //   display: flex;
+  //   align-items: center;
+
+  //   .#{$fd-namespace}-form-label {
+  //     text-align: end;
+  //     margin-bottom: 0;
+  //     width: 33.33%;
+  //   }
+
+  //   .#{$fd-namespace}-input {
+  //     width: 58.33%;
+  //   }
+  // }
 
   &--inline {
-    float: left;
-    margin-right: fd-space(4);
+    flex-direction: row;
+    align-items: center;
 
-    @include fd-screen(s) {
-      margin-bottom: 0;
+    .#{$fd-namespace}-form-label {
+      padding-bottom: 0;
     }
 
-    @include fd-rtl() {
-      float: right;
-      margin-right: 0;
-      margin-left: fd-space(4);
+    .#{$fd-namespace}-input {
+      flex: 1;
     }
+  }
 
-    .#{$fd-namespace}-form-message {
-      transform: translateY(fd-space(2));
-      margin-bottom: fd-space(2);
+  &--checkbox,
+  &--radio {
+    .#{$fd-namespace}-form-label {
+      display: flex;
+      align-items: center;
     }
   }
 }

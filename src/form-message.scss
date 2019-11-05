@@ -15,66 +15,40 @@ $block: #{$fd-namespace}-form-message;
   @include fd-reset();
 
   clear: both;
-  display: block;
+  // display: block;
+  // position: relative;
+  height: auto;
+  width: fit-content;
+  min-width: 6rem;
+  max-width: 22rem;
+  padding: 0.5rem;
+  margin-left: 1px;
+  font-size: var(--sapFontSmallSize);
+  font-weight: normal;
+  line-height: normal;
+  color: var(--sapTextColor);
+  white-space: pre-line;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: var(--sapContent_Shadow1);
 
-  @include fd-type(#{$fd-form-message-font-size});
-  @include fd-var-color("color", $fd-form-message-color, --fd-color-text-2);
-
-  padding: fd-space(2) 0;
-  position: relative;
-  margin-top: fd-space(2);
-
-  &::before {
-    width: 18px;
-    height: 18px;
-    font-style: normal;
-    font-size: 1.3em;
-    font-family: "SAP-icons";
-    position: absolute;
-    left: 0;
-
-    @include fd-var-color("color", $fd-form-message-color, --fd-color-text-2);
-
-    text-align: center;
-    line-height: 18px;
-  }
-
-  &--warning,
-  &--error,
-  &--help {
-    padding-left: fd-space(6);
-
-    &::before {
-      left: 0;
-      top: 6px;
-    }
-  }
-
-  &--help {
-    &::before {
-      @include fd-var-color("color", $fd-forms-color, --fd-color-text-1);
-
-      content: "";
-    }
+  &--error {
+    background-color: var(--sapErrorBackground);
   }
 
   &--warning {
-    @include fd-var-color("color", $fd-color--alert, --fd-color-alert);
-
-    &::before {
-      @include fd-var-color("color", $fd-color--alert, --fd-color-alert);
-
-      content: "";
-    }
+    background-color: var(--sapWarningBackground);
   }
 
-  &--error {
-    @include fd-var-color("color", $fd-color--negative, --fd-color-negative);
+  &--success {
+    background-color: var(--sapSuccessBackground);
+  }
 
-    &::before {
-      content: "";
+  &--information {
+    background-color: var(--sapInformationBackground);
+  }
 
-      @include fd-var-color("color", $fd-color--negative, --fd-color-negative);
-    }
+  & + .#{$fd-namespace}-input {
+    margin-top: 0;
   }
 }
