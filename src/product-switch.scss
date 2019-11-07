@@ -48,6 +48,7 @@ $block: #{$fd-namespace}-product-switch;
     overflow-y: auto;
     padding: 1.5rem 0.5rem 1rem 1rem;
     background-color: var(--sapList_Background);
+    border-radius: var(--sapElement_BorderCornerRadius);
   }
 
   &__body--col-3 {
