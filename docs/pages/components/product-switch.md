@@ -31,14 +31,14 @@ Product Switch provides a role based access to all products or LoBs. It shows on
                         <li class="fd-product-switch__item" tabindex="0">
                             <div class="fd-product-switch__icon sap-icon--home"></div>
                             <div class="fd-product-switch__text">
-                                <div class="fd-product-switch__title">HomeHomeHomeHomeHomeHomeHomeHomeHomeHome</div>
+                                <div class="fd-product-switch__title">Home</div>
                                 <div class="fd-product-switch__subtitle">Central Home</div>
                             </div>
                         </li>
                         <li class="fd-product-switch__item" tabindex="0" selected>
                             <div class="fd-product-switch__icon sap-icon--business-objects-experience"></div>
                             <div class="fd-product-switch__text">
-                                <div class="fd-product-switch__title">Analytics CloudAnalytics CloudAnalytics CloudAnalytics CloudAnalytics Cloud</div>
+                                <div class="fd-product-switch__title">Analytics Cloud</div>
                                 <div class="fd-product-switch__subtitle">Analytics Cloud</div>
                             </div>
                         </li>
@@ -78,7 +78,7 @@ Product Switch provides a role based access to all products or LoBs. It shows on
                         <li class="fd-product-switch__item" tabindex="0">
                             <div class="fd-product-switch__icon sap-icon--customer"></div>
                             <div class="fd-product-switch__text">
-                                <div class="fd-product-switch__title">Human Capital Management Human Capital Management</div>
+                                <div class="fd-product-switch__title">Human Capital Management</div>
                             </div>
                         </li>
                         <li class="fd-product-switch__item" tabindex="0">
@@ -301,7 +301,7 @@ Add the modifier class `fd-product-switch__body--mobile` for a list layout.
             <li class="fd-product-switch__item selected" tabindex="0">
                 <div class="fd-product-switch__icon sap-icon--business-objects-experience"></div>
                 <div class="fd-product-switch__text">
-                    <div class="fd-product-switch__title">Analytics CloudAnalytics CloudAnalytics CloudAnalytics CloudAnalytics CloudAnalytics CloudAnalytics Cloud</div>
+                    <div class="fd-product-switch__title">Analytics Cloud</div>
                     <div class="fd-product-switch__subtitle">Analytics Cloud</div>
                 </div>
             </li>
@@ -315,7 +315,7 @@ Add the modifier class `fd-product-switch__body--mobile` for a list layout.
             <li class="fd-product-switch__item" tabindex="0">
                 <div class="fd-product-switch__icon sap-icon--credit-card"></div>
                 <div class="fd-product-switch__text">
-                    <div class="fd-product-switch__title">Guided BuyingGuided BuyingGuided BuyingGuided BuyingGuided BuyingGuided BuyingGuided BuyingGuided Buying</div>
+                    <div class="fd-product-switch__title">Guided Buying</div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
