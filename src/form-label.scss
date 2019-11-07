@@ -17,7 +17,6 @@ $block: #{$fd-namespace}-form-label;
   position: relative;
   font-size: var(--sapFontSize);
   color: var(--sapContent_LabelColor);
-  // padding-bottom: 0.125rem;
   padding-right: 6px;
   margin-right: 8px;
   cursor: text;
@@ -57,17 +56,6 @@ $block: #{$fd-namespace}-form-label;
         right: auto;
         left: 0;
       }
-    }
-  }
-
-  &--inline-help {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .#{$fd-namespace}-inline-help {
-      top: 0;
     }
   }
 }

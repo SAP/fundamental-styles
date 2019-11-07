@@ -14,41 +14,6 @@ $block: #{$fd-namespace}-form-item;
   display: flex;
   flex-direction: column;
 
-  // &--inline {
-  //   float: left;
-  //   margin-right: fd-space(4);
-
-  //   @include fd-screen(s) {
-  //     margin-bottom: 0;
-  //   }
-
-  //   @include fd-rtl() {
-  //     float: right;
-  //     margin-right: 0;
-  //     margin-left: fd-space(4);
-  //   }
-
-  //   .#{$fd-namespace}-form-message {
-  //     transform: translateY(fd-space(2));
-  //     margin-bottom: fd-space(2);
-  //   }
-  // }
-
-  // &--horizontal {
-  //   display: flex;
-  //   align-items: center;
-
-  //   .#{$fd-namespace}-form-label {
-  //     text-align: end;
-  //     margin-bottom: 0;
-  //     width: 33.33%;
-  //   }
-
-  //   .#{$fd-namespace}-input {
-  //     width: 58.33%;
-  //   }
-  // }
-
   &--inline {
     flex-direction: row;
     align-items: center;
@@ -62,11 +27,34 @@ $block: #{$fd-namespace}-form-item;
     }
   }
 
+  &--inline-help {
+    .#{$fd-namespace}-form-label {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .#{$fd-namespace}-inline-help {
+        top: 0;
+      }
+    }
+  }
+
   &--checkbox,
   &--radio {
     .#{$fd-namespace}-form-label {
       display: flex;
       align-items: center;
+
+      &:focus-within {
+        outline-offset: -0.25rem;
+      }
+    }
+
+    &.#{$block}--inline {
+      display: block;
+      float: left;
+      margin-right: fd-space(4);
     }
   }
 }

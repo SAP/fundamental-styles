@@ -128,8 +128,8 @@ Help elements give the user information about the input. Two types of help eleme
 - Help content can also be visible at all times to avoid mistakes. This type of help generally contains validation rules about the data allowed in the input field. An example is "Maximum 20 characters". This is displayed below the input field.
 
 {% capture inputs-help %}
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--inline-help" for="input-44">
+    <div class="fd-form-item fd-form-item--inline-help">
+        <label class="fd-form-label" for="input-44">
             Input with inline help:
             <span class="fd-inline-help">
                 <span class="fd-inline-help__content fd-inline-help__content--bottom-left">
@@ -138,13 +138,6 @@ Help elements give the user information about the input. Two types of help eleme
             </span>
         </label>
         <input class="fd-input" type="text" id="input-45">
-    </div>
-    <br />
-    <br />
-    <div class="fd-form-item">
-        <label class="fd-form-label" for="input-45">Input with Help Message:</label>
-        <input class="fd-input" type="text" id="input-45">
-        <span class="fd-form-message fd-form-message--help">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc</span>
     </div>
 {% endcapture %}
 
@@ -231,6 +224,28 @@ Along with Invalid and Warning, error messages should be displayed below the fie
     <label class="fd-form-label" for="input-7">Read Only Input:</label>
     <input class="fd-input" type="text" id="input-7" value="Read only data" readonly>
 </div>
+
+<br />
+<br />
+
+<div class="fd-form-item" dir="rtl">
+    <label class="fd-form-label fd-form-label--required" for="input-2">
+        Valid Input:
+    </label>
+    <input class="fd-input is-valid" type="text" id="input-2">
+    <span class="fd-form-message fd-form-message--success">Success message</span>
+</div>
+
+<br />
+<br />
+
+<div class="fd-form-item" dir="rtl">
+    <label class="fd-form-label" for="UI7xy545">
+        Invalid Input:
+    </label>
+    <input type="text" class="fd-input is-invalid" id="UI7xy545" placeholder="Field placeholder text">
+    <span class="fd-form-message fd-form-message--error">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc metus lacus commodo eget justo ut rutrum varius nunc acus commodo eget justo ut rutrum varius nunc commodo</span>
+</div>
 {% endcapture %}
 
 {% include display-component.html component=inputs %}
@@ -247,11 +262,51 @@ Do not use the text area if
 {% capture inputs %}
     <div class="fd-form-item">
         <label class="fd-form-label" for="textarea-1">Text area:</label>
-        <textarea class="fd-textarea" id="textarea-1">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc.</textarea>
+        <textarea class="fd-textarea" id="textarea-1" placeholder="Write something here"></textarea>
+        <div class="fd-textarea-counter">150 characters left</div>
     </div>
+    <br/>
     <div class="fd-form-item">
         <label class="fd-form-label" for="textarea-2">Compact text area:</label>
         <textarea class="fd-textarea fd-textarea--compact" id="textarea-2">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc.</textarea>
+        <div class="fd-textarea-counter">150 characters left</div>
+    </div>
+    <br/>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="textarea-1">Text area:</label>
+        <textarea class="fd-textarea is-valid" id="textarea-1" placeholder="Write something here"></textarea>
+        <div class="fd-textarea-counter">150 characters left</div>
+    </div>
+    <br/>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="textarea-1">Text area:</label>
+        <textarea class="fd-textarea is-invalid" id="textarea-1" placeholder="Write something here"></textarea>
+    </div>
+    <br/>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="textarea-1">Text area:</label>
+        <textarea class="fd-textarea is-warning" id="textarea-1" placeholder="Write something here"></textarea>
+    </div>
+    <br/>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="textarea-1">Text area:</label>
+        <textarea class="fd-textarea is-information" id="textarea-1" placeholder="Write something here"></textarea>
+    </div>
+    <br/>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="textarea-1">Text area:</label>
+        <textarea class="fd-textarea" id="textarea-1" placeholder="Write something here" disabled></textarea>
+    </div>
+    <br/>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="textarea-1">Text area:</label>
+        <textarea class="fd-textarea" id="textarea-1" placeholder="Write something here" readonly></textarea>
+    </div>
+    <br/>
+    <div class="fd-form-item" dir="rtl">
+        <label class="fd-form-label" for="textarea-1">Text area:</label>
+        <textarea class="fd-textarea" id="textarea-1" placeholder="Write something here"></textarea>
+        <div class="fd-textarea-counter">150 characters left</div>
     </div>
 {% endcapture %}
 
@@ -359,17 +414,17 @@ In special cases, there are only two mutually exclusive options. Combine them in
 <br /><br />
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Inline Radio buttons</legend>
-    <div class="fd-form-item fd-form-item--horizontal fd-form-item--radio">
+    <div class="fd-form-item fd-form-item--inline fd-form-item--radio">
         <label class="fd-form-label" for="pDidh767">
             <input type="radio" class="fd-radio" id="pDidh767" name="radio">Field label
         </label>
     </div>
-    <div class="fd-form-item fd-form-item--horizontal fd-form-item--radio">
+    <div class="fd-form-item fd-form-item--inline fd-form-item--radio">
         <label class="fd-form-label" for="pDidh7618">
             <input type="radio" class="fd-radio" id="pDidh7618" name="radio" >Field label
         </label>
     </div>
-    <div class="fd-form-item fd-form-item--horizontal fd-form-item--radio">
+    <div class="fd-form-item fd-form-item--inline fd-form-item--radio">
         <label class="fd-form-label" for="pDidh7619">
             <input type="radio" class="fd-radio" id="pDidh7619" name="radio">Field label
         </label>
@@ -527,22 +582,157 @@ Do not use the checkbox control if:
 
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Checkboxes inline</legend>
-    <div class="fd-form-item fd-form-item--horizontal fd-form-item--checkbox">
+    <div class="fd-form-item fd-form-item--inline fd-form-item--checkbox">
         <label class="fd-form-label" for="Ai4ez617">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez617">Field label
         </label>
     </div>
-    <div class="fd-form-item fd-form-item--horizontal fd-form-item--checkbox">
+    <div class="fd-form-item fd-form-item--inline fd-form-item--checkbox">
         <label class="fd-form-label" for="Ai4ez618">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez618">Field label
         </label>
     </div>
-    <div class="fd-form-item fd-form-item--horizontal fd-form-item--checkbox">
+    <div class="fd-form-item fd-form-item--inline fd-form-item--checkbox">
         <label class="fd-form-label" for="Ai4ez619">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez619">Field label
         </label>
     </div>
-</fieldset>{% endcapture %}
+</fieldset>
+
+<fieldset class="fd-fieldset">
+    <legend class="fd-fieldset__legend">Checkboxes Compact Mode</legend>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez6171">
+            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6171">Field label
+        </label>
+    </div>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez6181">
+            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6181">Field label
+        </label>
+    </div>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez6191">
+            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6191">Field label
+        </label>
+    </div>
+</fieldset>
+
+
+<fieldset class="fd-fieldset">
+    <legend class="fd-fieldset__legend">Checkboxes Error</legend>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez6119">
+            <input type="checkbox" class="fd-checkbox is-invalid" id="Ai4ez6119">Text Option
+        </label>
+    </div>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez6129">
+            <input type="checkbox" class="fd-checkbox is-invalid" id="Ai4ez6129" checked>Selected State
+        </label>
+    </div>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez613i1">
+            <input type="checkbox" class="fd-checkbox is-invalid" id="Ai4ez613i1">TriState Text
+        </label>
+    </div>
+</fieldset>
+
+<fieldset class="fd-fieldset">
+    <legend class="fd-fieldset__legend">Checkboxes Success</legend>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez61192">
+            <input type="checkbox" class="fd-checkbox is-valid" id="Ai4ez61192">Text Option
+        </label>
+    </div>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez61292">
+            <input type="checkbox" class="fd-checkbox is-valid" id="Ai4ez61292" checked>Selected State
+        </label>
+    </div>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez613i2">
+            <input type="checkbox" class="fd-checkbox is-valid" id="Ai4ez613i2">TriState Text
+        </label>
+    </div>
+</fieldset>
+
+<fieldset class="fd-fieldset">
+    <legend class="fd-fieldset__legend">Checkboxes Warning</legend>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez61193">
+            <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez61193">Text Option
+        </label>
+    </div>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez61293">
+            <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez61293" checked>Selected State
+        </label>
+    </div>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez613i3">
+            <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez613i3">TriState Text
+        </label>
+    </div>
+</fieldset>
+
+<fieldset class="fd-fieldset">
+    <legend class="fd-fieldset__legend">Checkboxes Information</legend>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez61194">
+            <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez61194">Text Option
+        </label>
+    </div>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez61294">
+            <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez61294" checked>Selected State
+        </label>
+    </div>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez613i4">
+            <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez613i4">TriState Text
+        </label>
+    </div>
+</fieldset>
+
+<fieldset class="fd-fieldset">
+    <legend class="fd-fieldset__legend">Checkboxes Disabled</legend>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez61196">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez61196" disabled>Text Option
+        </label>
+    </div>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez61296">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez61296" checked disabled>Selected State
+        </label>
+    </div>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez613i6">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez613i6" disabled>TriState Text
+        </label>
+    </div>
+</fieldset>
+
+<fieldset class="fd-fieldset" dir="rtl">
+    <legend class="fd-fieldset__legend">Checkboxes RTL Support</legend>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez611tt">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez611tt">Text Option
+        </label>
+    </div>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez612tt">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez612tt" checked>Selected State
+        </label>
+    </div>
+    <div class="fd-form-item fd-form-item--checkbox">
+        <label class="fd-form-label" for="Ai4ez613i7">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez613i7">TriState Text
+        </label>
+    </div>
+</fieldset>
+{% endcapture %}
 
 {% include display-component.html component=checkbox %}
 
