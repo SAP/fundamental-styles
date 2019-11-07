@@ -1,6 +1,6 @@
 {% import "./../utils.njk" as utils %}
 
-{% macro textarea(properties="", modifier={}, message="Pellentesque metus lacus commodo eget justo ut rutrum varius nunc.") -%}
+{% macro textarea(properties="", modifier={}, state="", compact=false, message="Pellentesque metus lacus commodo eget justo ut rutrum varius nunc.") -%}
   {%- set _id = utils.id() %}
-    <textarea class="fd-textarea{{ modifier.block | modifier('textarea') }}" id="{{_id}}" {{properties}}>{{message}}</textarea>
+    <textarea class="fd-textarea{{ modifier.block | modifier('textarea') }}{{ ' is-'+state if state }}{{ ' fd-textarea--compact' if compact }}" id="{{_id}}" {{properties}} placeholder="Textarea placeholder">{{message}}</textarea>
 {%- endmacro %}

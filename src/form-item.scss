@@ -14,7 +14,7 @@ $block: #{$fd-namespace}-form-item;
   display: flex;
   flex-direction: column;
 
-  &--inline {
+  &--horizontal {
     flex-direction: row;
     align-items: center;
 
@@ -27,34 +27,9 @@ $block: #{$fd-namespace}-form-item;
     }
   }
 
-  &--inline-help {
-    .#{$fd-namespace}-form-label {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .#{$fd-namespace}-inline-help {
-        top: 0;
-      }
-    }
-  }
-
-  &--checkbox,
-  &--radio {
-    .#{$fd-namespace}-form-label {
-      display: flex;
-      align-items: center;
-
-      &:focus-within {
-        outline-offset: -0.25rem;
-      }
-    }
-
-    &.#{$block}--inline {
-      display: block;
-      float: left;
-      margin-right: fd-space(4);
-    }
+  &--inline {
+    display: block;
+    float: left;
+    margin-right: fd-space(4);
   }
 }

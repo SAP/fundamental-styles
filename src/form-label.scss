@@ -34,7 +34,6 @@ $block: #{$fd-namespace}-form-label;
     outline-width: var(--sapContent_FocusWidth);
     outline-style: var(--sapContent_FocusStyle);
     outline-color: var(--sapContent_FocusColor);
-    // outline-offset: -0.5rem;
   }
 
   &--required,
@@ -56,6 +55,27 @@ $block: #{$fd-namespace}-form-label;
         right: auto;
         left: 0;
       }
+    }
+  }
+
+  &--inline-help {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .#{$fd-namespace}-inline-help {
+      top: 0;
+    }
+  }
+
+  &--checkbox,
+  &--radio {
+    display: flex;
+    align-items: center;
+
+    &:focus-within {
+      outline-offset: -0.25rem;
     }
   }
 }

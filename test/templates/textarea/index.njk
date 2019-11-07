@@ -31,4 +31,26 @@
 
 {{ format(example) }}
 
+<h2>Interaction States</h2>
+
+{% set example %}
+  {{ textarea(state='valid') }}
+  <br><br>
+  {{ textarea(state='invalid') }}
+  <br><br>
+  {{ textarea(state='warning') }}
+  <br><br>
+  {{ textarea(state='information') }}
+{% endset %}
+
+{{ format(example) }}
+
+<h2>Compact</h2>
+
+{% set example %}
+  {{ textarea(compact=true) }}
+{% endset %}
+
+{{ format(example) }}
+
 {% endblock %}
