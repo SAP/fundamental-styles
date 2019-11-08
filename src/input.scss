@@ -22,7 +22,9 @@ $block: #{$fd-namespace}-input;
 
   &::placeholder {
     @include fd-reset();
-    @include fd-var-color("color", $fd-forms-color--placeholder, --fd-color-neutral-4);
+
+    font-style: italic;
+    color: var(--sapField_PlaceholderTextColor);
   }
 
   &--compact {

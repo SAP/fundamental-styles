@@ -1,11 +1,9 @@
 @import "vars";
 // utils
 @mixin fd-reset {
-  font-size: $fd-font-size;
+  font-size: var(--sapFontSize);
   line-height: $fd-line-height;
-
-  @include fd-var-color("color", $fd-color, --fd-color-text-1);
-
+  color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
