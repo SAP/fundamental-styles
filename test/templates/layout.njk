@@ -14,6 +14,7 @@
         {% set sass = id + '.scss'  %}
         {{ sass | component_css }}
     </style>
+    <link rel="stylesheet" href="static/animation.css">
     <script>
         function toggleStylesheet( href, onoff ){
             var existingNode=0; //get existing stylesheet node if it already exists:
@@ -53,6 +54,7 @@
                 <label class="test-label"><input type="checkbox" value="" id="toggleTheme"> Theme</label>
                 <label class="test-label"><input type="checkbox" value="" id="toggleNormalize"> Normalize</label>
                 <label class="test-label"><input type="checkbox" value="" id="toggleUnNormalize"> Un-Normalize</label>
+                <label class="test-label"><input type="checkbox" value="" checked id="toggleAnimation"> Animation</label>
             </fieldset>
         </form>
     </header>
