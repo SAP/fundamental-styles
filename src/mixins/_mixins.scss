@@ -194,7 +194,7 @@
   vertical-align: middle;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: $fd-border-radius;
+  border-radius: var(--sapButton_BorderCornerRadius);
   @content;
 }
 

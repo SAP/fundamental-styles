@@ -216,7 +216,7 @@ a.#{$block} {
 
       // look
       border-style: solid;
-      border-width: 1px;
+      border-width: var(--sapButton_BorderWidth);
 
       // animation
       transition: all $fd-button-transition-params;

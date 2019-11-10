@@ -41,8 +41,8 @@ $block: #{$fd-namespace}-button-group;
       }
 
       &:last-child {
-        border-top-left-radius: $fd-border-radius;
-        border-bottom-left-radius: $fd-border-radius;
+        border-top-left-radius: var(--sapButton_BorderCornerRadius);
+        border-bottom-left-radius: var(--sapButton_BorderCornerRadius);
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
       }
@@ -50,8 +50,8 @@ $block: #{$fd-namespace}-button-group;
       &:first-child {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        border-top-right-radius: $fd-border-radius;
-        border-bottom-right-radius: $fd-border-radius;
+        border-top-right-radius: var(--sapButton_BorderCornerRadius);
+        border-bottom-right-radius: var(--sapButton_BorderCornerRadius);
         border-right-width: 1px;
       }
     }
