@@ -2,7 +2,7 @@
 // utils
 @mixin fd-reset {
   font-size: var(--sapFontSize);
-  line-height: $fd-line-height;
+  line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
   font-weight: normal;

@@ -15,7 +15,7 @@ $fd-breakpoints: (
   xxl: 1920px, // display   >1920
 ) !default;
 
-// spacing
+// spacing OLD; DO NOT USE IT
 $fd-spacing--base: 4px !default;
 $fd-spacing: () !default;
 $fd-spacing: map-merge(
@@ -33,6 +33,7 @@ $fd-spacing: map-merge(
   $fd-spacing
 );
 
+// OLD; DO NOT USE IT
 $fd-spacing-common: () !default;
 $fd-spacing-common: map-merge(
   (

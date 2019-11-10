@@ -25,18 +25,16 @@ $block: #{$fd-namespace}-shellbar;
   $fd-shellbar-copilot-width: 30px !default;
 
   // Colors
-  $fd-shellbar-color: fd-color("text", 5) !default; // White
-  $fd-shellbar-background-color: fd-color("shell", 1) !default;
+  $fd-shellbar-color: var(--sapShell_TextColor);
+  $fd-shellbar-background-color: var(--sapShellColor);
 
   @include fd-reset();
-  @include fd-var-color("background-color", $fd-shellbar-background-color, --fd-color-shell-1);
 
+  background-color: $fd-shellbar-background-color;
+  color: $fd-shellbar-color;
   height: $fd-shellbar-height;
   display: flex;
   align-items: center;
-
-  @include fd-var-color("color", $fd-shellbar-color, --fd-color-text-5);
-
   position: relative;
   justify-content: space-between;
 
@@ -90,13 +88,14 @@ $block: #{$fd-namespace}-shellbar;
     @include fd-var-color("color", fd-color("shell", 2), --fd-color-shell-2);
 
     border-color: transparent;
+    background-color: transparent;
 
     @include fd-active-pressed-selected() {
       background-color: hsl(217, 21%, 21%);
     }
 
     @include fd-hover() {
-      background-color: hsl(217, 21%, 25%);
+      background-color: var(--sapShell_Hover_Background);
 
       @include fd-disabled() {
         background-color: transparent;
