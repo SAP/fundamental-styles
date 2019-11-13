@@ -33,14 +33,13 @@ $block: #{$fd-namespace}-menu;
   // BLOCK BASE *******************************************
   // set all BLOCK reset and baseline styles
   @include fd-reset();
+  @include fd-ellipsis();
 
   position: relative;
-  white-space: nowrap;
   padding-top: fd-space(base);
   padding-bottom: fd-space(base);
   width: 100%;
-  display: table;
-  table-layout: fixed;
+  display: inline-block;
 
   &__group,
   &__list {
@@ -93,10 +92,8 @@ $block: #{$fd-namespace}-menu;
   }
 
   &__item {
-    overflow: hidden;
-    text-overflow: ellipsis;
-
     @include fd-reset();
+    @include fd-ellipsis();
 
     display: block;
     transition: all $fd-animation--speed ease-in;
