@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.0-rc.10"></a>
+# [0.4.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.9...v0.4.0-rc.10) (2019-11-13)
+
+
+### Features
+
+* forms refactoring ([#419](https://github.com/SAP/fundamental-styles/issues/419)) ([e4e719c](https://github.com/SAP/fundamental-styles/commit/e4e719c))
+
+
+
 <a name="0.4.0-rc.9"></a>
 # [0.4.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.8...v0.4.0-rc.9) (2019-11-13)
 
