@@ -38,4 +38,27 @@
 
 {{ format(example) }}
 
+<h2>Interaction States</h2>
+
+{% set example %}
+  {{ radio(state='valid') }}
+  {{ radio(state='invalid') }}
+  {{ radio(state='warning') }}
+  {{ radio(state='information') }}
+  {{ radio(state='valid', properties='checked') }}
+  {{ radio(state='invalid', properties='checked') }}
+  {{ radio(state='warning', properties='checked') }}
+  {{ radio(state='information', properties='checked') }}
+{% endset %}
+
+{{ format(example) }}
+
+<h2>Compact</h2>
+
+{% set example %}
+  {{ radio(compact=true) }}
+  {{ radio(compact=true, properties='checked') }}
+{% endset %}
+
+{{ format(example) }}
 {% endblock %}

@@ -81,4 +81,10 @@
   --sapContent_IconColor: FloralWhite;
   --sapList_TextColor: #00D1B2;
   --sapContent_ContrastIconColor: DarkRed;
+  --sapField_InvalidColor: #945ef7;
+  --sapField_SuccessColor: #a8fac7;
+  --sapField_WarningColor: pink;
+  --sapField_InformationColor: #bc3f8c;
+  --sapField_ReadOnly_BorderColor: teal;
+  --sapField_RequiredColor: #32c71c;
 }

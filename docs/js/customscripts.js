@@ -166,6 +166,41 @@ $(document).ready(function () {
         triStateCheckbox.indeterminate = true;
     }
 
+    const triStateCheckboxI1 = document.getElementById('Ai4ez613i1');
+    if (triStateCheckboxI1) {
+        triStateCheckboxI1.indeterminate = true;
+    }
+
+    const triStateCheckboxI2 = document.getElementById('Ai4ez613i2');
+    if (triStateCheckboxI2) {
+        triStateCheckboxI2.indeterminate = true;
+    }
+
+    const triStateCheckboxI3 = document.getElementById('Ai4ez613i3');
+    if (triStateCheckboxI3) {
+        triStateCheckboxI3.indeterminate = true;
+    }
+
+    const triStateCheckboxI4 = document.getElementById('Ai4ez613i4');
+    if (triStateCheckboxI4) {
+        triStateCheckboxI4.indeterminate = true;
+    }
+
+    const triStateCheckboxI5 = document.getElementById('Ai4ez613i5');
+    if (triStateCheckboxI5) {
+        triStateCheckboxI5.indeterminate = true;
+    }
+
+    const triStateCheckboxI6 = document.getElementById('Ai4ez613i6');
+    if (triStateCheckboxI6) {
+        triStateCheckboxI6.indeterminate = true;
+    }
+
+    const triStateCheckboxI7 = document.getElementById('Ai4ez613i7');
+    if (triStateCheckboxI7) {
+        triStateCheckboxI7.indeterminate = true;
+    }
+
     // display responsive component controls
     const displayControls = document.querySelectorAll('.docs-component--responsive-display__controls');
     displayControls.forEach((displayControl) => {

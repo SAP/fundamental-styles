@@ -39,4 +39,31 @@
 
 {{ format(example) }}
 
+<h2>Interaction States</h2>
+
+{% set example %}
+  {{ checkbox(state='valid') }}
+  {{ checkbox(state='invalid') }}
+  {{ checkbox(state='warning') }}
+  {{ checkbox(state='information') }}
+  {{ checkbox(state='valid', properties='checked') }}
+  {{ checkbox(state='invalid', properties='checked') }}
+  {{ checkbox(state='warning', properties='checked') }}
+  {{ checkbox(state='information', properties='checked') }}
+  {{ checkbox(state='valid', properties='indeterminate') }}
+  {{ checkbox(state='invalid', properties='indeterminate') }}
+  {{ checkbox(state='warning', properties='indeterminate') }}
+  {{ checkbox(state='information', properties='indeterminate') }}
+{% endset %}
+
+{{ format(example) }}
+
+<h2>Compact</h2>
+
+{% set example %}
+  {{ checkbox(compact=true) }}
+  {{ checkbox(compact=true, properties='checked') }}
+{% endset %}
+
+{{ format(example) }}
 {% endblock %}

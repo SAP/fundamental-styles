@@ -10,12 +10,38 @@ $block: #{$fd-namespace}-textarea;
 .#{$block} {
   @include fd-form-text();
 
-  height: 72px;
   width: 100%;
-  padding-top: $fd-forms-padding;
+  min-width: 6rem;
+  min-height: 2.25rem;
+  margin: 0.25rem 0;
+  padding: 0.5rem 0.625rem;
+  white-space: initial;
+  overflow: auto;
 
   &--compact {
-    height: 56px;
-    padding-top: $fd-forms-padding;
+    min-height: 1.625rem;
+    margin: 0.1875rem;
+    padding: 0.1875rem 0.5rem;
+  }
+
+  &-counter {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    font-family: var(--sapFontFamily);
+    font-size: var(--sapFontSize);
+    font-weight: normal;
+    color: var(--sapContent_LabelColor);
+    padding: 0.125rem 0.125rem 0.5rem;
+    text-align: end;
+
+    @include fd-disabled() {
+      display: none;
+    }
+
+    &[readonly],
+    &.is-readonly {
+      display: none;
+    }
   }
 }

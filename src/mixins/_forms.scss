@@ -1,64 +1,86 @@
 // Form Mixins
+@import "./mixins";
+
 @mixin fd-form-base {
   @include fd-reset();
-  @include fd-type("0");
+  @include fd-ellipsis();
 
+  font-family: var(--sapFontFamily);
+  font-size: var(--sapFontSize);
+  line-height: 1.4;
+  color: var(--sapField_TextColor);
+  background-color: var(--sapField_Background);
   appearance: none;
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
   box-sizing: border-box;
   outline: none;
   border-style: solid;
-  border-width: 1px;
-
-  @include fd-var-color("border-color", $fd-forms-border-color, --fd-forms-border-color);
-  @include fd-var-color("background-color", $fd-forms-background-color, --fd-forms-background-color);
-
-  border-radius: $fd-border-radius;
+  border-width: var(--sapField_BorderWidth);
+  border-color: var(--sapField_BorderColor);
+  border-radius: var(--sapField_BorderCornerRadius);
   transition: border-color $fd-animation--speed;
-  // states
-  @include fd-hover() {
-    @include fd-var-color("border-color", fd-color-state("hover", "action"), --fd-color-action-hover);
+
+  &::placeholder {
+    font-style: italic;
+    color: var(--sapField_PlaceholderTextColor);
   }
 
-  @include fd-focus() {
-    @include fd-var-color("border-color", fd-color-state("hover", "action"), --fd-color-action-focus);
+  &::selection {
+    color: var(--sapContent_ContrastTextColor);
+    background-color: var(--sapSelectedColor);
+  }
+
+  // states
+  @include fd-hover() {
+    background-color: var(--sapField_Hover_Background);
+    border-color: var(--sapField_Hover_BorderColor);
   }
 
   &.is-invalid {
-    @include fd-var-color("border-color", $fd-color--negative, --fd-color-negative);
-
-    border-width: 2px;
+    background-color: var(--sapField_InvalidBackground);
+    border-color: var(--sapField_InvalidColor);
+    border-width: 0.125rem;
   }
 
   &.is-valid {
-    @include fd-var-color("border-color", $fd-color--positive, --fd-color-positive);
-
-    border-width: 2px;
+    background-color: var(--sapField_SuccessBackground);
+    border-color: var(--sapField_SuccessColor);
+    border-width: 0.125rem;
   }
 
   &.is-warning,
   &.is-alert {
-    @include fd-var-color("border-color", $fd-color--alert, --fd-color-alert);
+    background-color: var(--sapField_WarningBackground);
+    border-color: var(--sapField_WarningColor);
+    border-width: 0.125rem;
+  }
 
-    border-width: 2px;
+  &.is-information {
+    background-color: var(--sapField_InformationBackground);
+    border-color: var(--sapField_InformationColor);
+    border-width: 0.125rem;
+  }
+
+  @include fd-focus() {
+    box-shadow: none;
+    background-color: var();
+    border-color: var();
+    outline-offset: -0.1875rem;
+    outline-width: var(--sapContent_FocusWidth);
+    outline-color: var(--sapContent_FocusColor);
+    outline-style: var(--sapContent_FocusStyle);
   }
 
   @include fd-disabled() {
-    cursor: not-allowed;
-
-    @include fd-var-color("color", $fd-forms-color--disabled, --fd-color-text-3);
-    @include fd-var-color("border-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
-    @include fd-var-color("background-color", $fd-forms-background-color--disabled, --fd-color-neutral-1);
+    pointer-events: none;
+    opacity: 0.4;
   }
 
   &[readonly],
   &.is-readonly {
-    @include fd-var-color("color", $fd-forms-color, --fd-forms-color);
-    @include fd-var-color("border-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
-
-    border-width: 0 0 1px;
-    border-radius: 0;
+    background-color: var(--sapField_ReadOnly_Background);
+    border-color: var(--sapField_ReadOnly_BorderColor);
   }
 }
 

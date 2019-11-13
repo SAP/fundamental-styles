@@ -1,3 +1,3 @@
-{% macro checkbox(properties="") -%}
-    <input type="checkbox" class="fd-checkbox" id="foo" name="checkbox" {{properties}}>
+{% macro checkbox(properties="", state="", compact=false) -%}
+    <input type="checkbox" class="{{'fd-checkbox'}}{{ ' is-'+state if state }}{{ ' fd-checkbox--compact' if compact }}" id="foo" name="checkbox" {{properties}}> <br/>
 {%- endmacro %}

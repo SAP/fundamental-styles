@@ -9,17 +9,31 @@ $block: #{$fd-namespace}-input;
 
 .#{$block} {
   @include fd-form-text();
-  @include fd-var-size("height", $fd-forms-height, --fd-forms-height);
 
-  width: 100%;
+  min-width: 2.75rem;
+  height: 2.25rem;
+  margin-top: 0.25rem;
+  padding: 0 0.625rem;
+  margin-bottom: 0;
+
+  &:last-child {
+    margin-bottom: 0.25rem;
+  }
 
   &::placeholder {
     @include fd-reset();
-    @include fd-var-color("color", $fd-forms-color--placeholder, --fd-color-neutral-4);
+
+    font-style: italic;
+    color: var(--sapField_PlaceholderTextColor);
   }
 
   &--compact {
-    @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);
+    min-width: 2rem;
+    height: 1.625rem;
+    margin-top: 0.1875rem;
+    margin-bottom: 0.1875rem;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
   }
 
   &--no-number-spinner {

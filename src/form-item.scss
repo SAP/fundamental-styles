@@ -11,25 +11,25 @@ $block: #{$fd-namespace}-form-item;
 .#{$block} {
   @include fd-reset();
 
-  margin-bottom: fd-space("small");
+  display: flex;
+  flex-direction: column;
+
+  &--horizontal {
+    flex-direction: row;
+    align-items: center;
+
+    .#{$fd-namespace}-form-label {
+      padding-bottom: 0;
+    }
+
+    .#{$fd-namespace}-input {
+      flex: 1;
+    }
+  }
 
   &--inline {
+    display: block;
     float: left;
     margin-right: fd-space(4);
-
-    @include fd-screen(s) {
-      margin-bottom: 0;
-    }
-
-    @include fd-rtl() {
-      float: right;
-      margin-right: 0;
-      margin-left: fd-space(4);
-    }
-
-    .#{$fd-namespace}-form-message {
-      transform: translateY(fd-space(2));
-      margin-bottom: fd-space(2);
-    }
   }
 }

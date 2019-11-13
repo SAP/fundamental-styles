@@ -7,65 +7,196 @@
 */
 $block: #{$fd-namespace}-checkbox;
 
+$fd-checkbox-dimensions: 1.375rem;
+$fd-checkbox-dimensions-compact: 1rem;
+$fd-checkbox-margin: 0.6875rem;
+$fd-checkbox-margin-compact: 0.5rem;
+
 .#{$block} {
   @include fd-form-base();
-
-  height: $fd-forms-height--input-check;
-  width: $fd-forms-height--input-check;
-  margin: 0;
-  vertical-align: middle;
-  position: relative;
-
   @include action-cursor();
 
+  height: $fd-checkbox-dimensions;
+  width: $fd-checkbox-dimensions;
+  margin: $fd-checkbox-margin;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sapField_Background);
+  border: var(--sapField_BorderWidth) solid var(--sapField_BorderColor);
+  border-radius: var(--sapField_BorderCornerRadius);
+  color: var(--sapSelectedColor);
+
   &::before {
+    font-family: "SAP-icons";
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--sapFontLargeSize);
     content: "";
-    width: 10px;
-    height: 5px;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 0 0 2px 2px;
-    transform: rotate(-45deg);
-    position: absolute;
-    z-index: map-get($fd-z-index-levels, "second");
-    top: calc(50% - 4px);
-    left: calc(50% - 10px / 2);
   }
 
   &:checked {
-    @include fd-var-color("border-color", $fd-forms-border-color--check, --fd-color-action-3);
-
     &::before {
-      @include fd-var-color("border-color", $fd-forms-border-color--check, --fd-color-action-3);
-    }
-
-    @include fd-disabled() {
-      @include fd-var-color("border-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
-
-      &::before {
-        @include fd-var-color("border-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
-      }
+      content: "\e05b";
     }
   }
 
   &:indeterminate {
-    border-width: 3px;
-    border-style: solid;
-
-    @include fd-var-color("border-color", $fd-forms-background-color, --fd-color-background-2);
-    @include fd-var-color("background-color", $fd-forms-border-color--check, --fd-color-action-3);
-
-    box-shadow: 0 0 0 1px $fd-forms-border-color--check;
-
-    @include fd-hover() {
-      border-width: 3px;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 0.75rem;
+      height: 0.75rem;
+      background-color: var(--sapSelectedColor);
     }
+  }
+
+  &--compact {
+    height: $fd-checkbox-dimensions-compact;
+    width: $fd-checkbox-dimensions-compact;
+    margin: $fd-checkbox-margin-compact;
+
+    &::before {
+      font-size: 0.625rem;
+    }
+
+    &:indeterminate {
+      &::before {
+        width: 0.5rem;
+        height: 0.5rem;
+      }
+    }
+  }
+
+  // states
+  @include fd-hover() {
+    background-color: var(--sapField_Hover_Background);
+    border-color: var(--sapField_Hover_BorderColor);
 
     @include fd-disabled() {
-      @include fd-var-color("background-color", $fd-forms-border-color--disabled, --fd-color-neutral-2);
-      @include fd-var-color("border-color", $fd-forms-background-color, --fd-color-background-2);
-
-      box-shadow: 0 0 0 1px $fd-forms-border-color--disabled;
+      border-color: var(--sapField_BorderColor);
     }
+  }
+
+  &.is-invalid {
+    background-color: var(--sapField_InvalidBackground);
+    border: 0.125rem solid var(--sapField_InvalidColor);
+
+    &:checked {
+      &::before {
+        color: var(--sapField_InvalidColor);
+      }
+    }
+
+    &:indeterminate {
+      &::before {
+        background-color: var(--sapField_InvalidColor);
+      }
+    }
+
+    @include fd-hover() {
+      @include fd-disabled() {
+        border-color: var(--sapField_InvalidColor);
+      }
+    }
+  }
+
+  &.is-valid {
+    background-color: var(--sapField_SuccessBackground);
+    border: var(--sapField_BorderWidth) solid var(--sapField_SuccessColor);
+
+    &:checked {
+      &::before {
+        color: var(--sapField_SuccessColor);
+      }
+    }
+
+    &:indeterminate {
+      &::before {
+        background-color: var(--sapField_SuccessColor);
+      }
+    }
+
+    @include fd-hover() {
+      @include fd-disabled() {
+        border-color: var(--sapField_SuccessColor);
+      }
+    }
+  }
+
+  &.is-warning,
+  &.is-alert {
+    background-color: var(--sapField_WarningBackground);
+    border: 0.125rem solid var(--sapField_WarningColor);
+
+    &:checked {
+      &::before {
+        color: var(--sapField_WarningColor);
+      }
+    }
+
+    &:indeterminate {
+      &::before {
+        background-color: var(--sapField_WarningColor);
+      }
+    }
+
+    @include fd-hover() {
+      @include fd-disabled() {
+        border-color: var(--sapField_WarningColor);
+      }
+    }
+  }
+
+  &.is-information {
+    background-color: var(--sapField_InformationBackground);
+    border: 0.125rem solid var(--sapField_InformationColor);
+
+    &:checked {
+      &::before {
+        color: var(--sapField_InformationColor);
+      }
+    }
+
+    &:indeterminate {
+      &::before {
+        background-color: var(--sapField_InformationColor);
+      }
+    }
+
+    @include fd-hover() {
+      @include fd-disabled() {
+        border-color: var(--sapField_InformationColor);
+      }
+    }
+  }
+
+  &[readonly],
+  &.is-readonly {
+    background-color: var(--sapField_ReadOnly_Background);
+    border-color: var(--sapField_ReadOnly_BorderColor);
+    pointer-events: none;
+
+    &:checked {
+      &::before {
+        color: var(--sapContent_NonInteractiveIconColor);
+      }
+    }
+
+    &:indeterminate {
+      &::before {
+        background-color: var(--sapContent_NonInteractiveIconColor);
+      }
+    }
+  }
+
+  @include fd-focus() {
+    outline: none;
+    box-shadow: none;
+  }
+
+  @include fd-disabled() {
+    pointer-events: none;
+    opacity: 0.4;
   }
 }
