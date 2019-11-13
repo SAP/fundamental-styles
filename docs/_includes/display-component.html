@@ -3,12 +3,11 @@
 {% assign diff = max | minus: min %}
 {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
 <div class="fd-tile docs-component docs-component__{{include.class}}">
-    <label class="fd-form-label docs-component__bg-toggle" for="{{ randomNumber }}" title="Change Background">
-        <span class="fd-toggle fd-toggle--xs fd-input">
-            <input type="checkbox" name="" value="" id="{{ randomNumber }}" class="toggle-bg fd-toggle__input">
+    <label class="fd-form-label fd-form-label--toggle docs-component__bg-toggle" for="{{ randomNumber }}" title="Change Background">
+        <span class="fd-toggle fd-toggle--xs">
+            <input class="toggle-bg fd-toggle__input" type="checkbox" name="" value="" id="{{ randomNumber }}">
             <span class="fd-toggle__switch" role="presentation"></span>
         </span>
-
     </label>
     <div class="fd-tile__content">
 		{{ include.component }}

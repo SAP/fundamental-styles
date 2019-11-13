@@ -78,4 +78,10 @@ $block: #{$fd-namespace}-form-label;
       outline-offset: -0.25rem;
     }
   }
+
+  &--toggle {
+    overflow: initial;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
