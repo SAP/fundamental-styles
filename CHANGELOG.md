@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.0-rc.12"></a>
+# [0.4.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.11...v0.4.0-rc.12) (2019-11-14)
+
+
+### Bug Fixes
+
+* Fixed cursor of checkboxes/radio—buttons with label ([#423](https://github.com/SAP/fundamental-styles/issues/423)) ([68398b3](https://github.com/SAP/fundamental-styles/commit/68398b3))
+
+
+
 <a name="0.4.0-rc.11"></a>
 # [0.4.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.10...v0.4.0-rc.11) (2019-11-14)
 
