@@ -73,6 +73,7 @@ $block: #{$fd-namespace}-form-label;
   &--radio {
     display: flex;
     align-items: center;
+    cursor: pointer;
 
     &:focus-within {
       outline-offset: -0.25rem;
