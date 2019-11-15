@@ -15,6 +15,121 @@ These components can be used alone. For example, the `form__item` element with t
 
 <br>
 
+## Grid Layouts
+### 4-7-1
+
+{% capture inputs-layout-471 %} 
+<div class="fd-form-layout fd-form-layout_horizontal--4-7-1">
+    <div class="fd-form-item">
+            <span class=" fd-form-message fd-form-message--above">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc</span>
+        <label class="fd-form-label" for="input-1a">Default Input:</label>
+        <input class="fd-input" type="text" id="input-1a" placeholder="Field placeholder text">
+    </div>
+    <div class="fd-form-item">
+        <label class="fd-form-label fd-form-label--compact" for="input-1b">Compact Input:</label>
+        <input class="fd-input fd-input--compact" type="text" id="input-1b" placeholder="Field placeholder text">
+        <span class="fd-form-message">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc</span>
+    </div>
+    <div class="fd-form-item ">
+        <label class="fd-form-label fd-form-label--required" for="input-1c">Required InputRequired InputRequired InputRequired InputRequired InputRequired InputRequired InputRequired InputRequired InputRequired Input:</label>
+        <input class="fd-input" type="text" id="input-1c" placeholder="Field placeholder text">
+    </div>
+    <div class="fd-form-item">
+        <label class="fd-form-label fd-form-label--compact" aria-required="true" for="input-1d">Password:</label>
+        <div class="fd-form-form-layout fd-form-layout--double">
+            <input class="fd-input" type="password" id="input-1d">
+            <input class="fd-input" type="password" id="input-1d">
+        </div>
+        <span class="fd-form-message">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc</span>
+    </div>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="input-01">Invalid (Error) Input:</label>
+        <input class="fd-input is-invalid" type="text" id="input-01" placeholder="Field placeholder text">
+    </div>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="input-02">Valid (Success) Input:</label>
+        <input class="fd-input is-valid" type="text" id="input-02" placeholder="Field placeholder text">
+    </div>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="input-03">Warning (Alert) Input:</label>
+        <input class="fd-input is-warning" type="text" id="input-03" placeholder="Field placeholder text">
+    </div>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="input-04">Information Input:</label>
+        <input class="fd-input is-information" type="text" id="input-04">
+    </div>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="input-05">Disabled Input:</label>
+        <input class="fd-input is-disabled" type="text" id="input-05">
+    </div>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="input-06">Read-Only Input:</label>
+        <input class="fd-input" type="text" id="input-06" value="Read Only" readonly>
+    </div>
+</div>    
+{% endcapture %}
+
+{% include display-component.html component=inputs-layout-471 %}
+
+</br>
+
+### 12 Columns
+
+{% capture inputs-layout-12 %} 
+<div class="fd-form-layout  fd-form-layout_vertical--12">
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="input-1a">Default Input:</label>
+        <input class="fd-input" type="text" id="input-1a" placeholder="Field placeholder text">
+        <span class="fd-form-message">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc</span>
+    </div>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="input-1b">Compact Input:</label>
+        <input class="fd-input" type="text" id="input-1b" placeholder="Field placeholder text">
+        <span class="fd-form-message">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc</span>
+    </div>
+    <div class="fd-form-item ">
+        <label class="fd-form-label fd-form-label--required" for="input-1c">Required InputRequired InputRequired InputRequired InputRequired InputRequired  InputRequired InputRequired InputRequired InputRequired InputRequired InputRequired InputRequired InputRequired InputRequired Input:</label>
+        <input class="fd-input" type="text" id="input-1c" placeholder="Field placeholder text">
+        <!-- <span class="fd-form-message">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc</span> -->
+    </div>
+    <div class="fd-form-item">
+        <label class="fd-form-label" aria-required="true" for="input-1d">Password/Repeat Password</label>
+        <div class="fd-form-layout fd-form-layout--double">
+            <input class="fd-input" type="password" id="input-1d">
+            <input class="fd-input" type="password" id="input-1d">
+        </div>
+    </div>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="input-01">Invalid (Error) Input:</label>
+        <input class="fd-input is-invalid" type="text" id="input-01" placeholder="Field placeholder text">
+    </div>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="input-02">Valid (Success) Input:</label>
+        <input class="fd-input is-valid" type="text" id="input-02" placeholder="Field placeholder text">
+    </div>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="input-03">Warning (Alert) Input:</label>
+        <input class="fd-input is-warning" type="text" id="input-03" placeholder="Field placeholder text">
+    </div>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="input-04">Information Input:</label>
+        <input class="fd-input is-information" type="text" id="input-04">
+    </div>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="input-05">Disabled Input:</label>
+        <input class="fd-input is-disabled" type="text" id="input-05">
+    </div>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="input-06">Read-Only Input:</label>
+        <input class="fd-input" type="text" id="input-06" value="Read Only" readonly>
+    </div>
+</div>    
+{% endcapture %}
+
+{% include display-component.html component=inputs-layout-12 %}
+
+</br>
+
 ## Inputs
 Inputs are used to collect data from the user and should always be paired with a label. When a field is required, the label should include an asterisk (*).
 
