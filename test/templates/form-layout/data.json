@@ -1,0 +1,11 @@
+{
+    "id": "form-layout",
+    "name": "Form Layout",
+    "modifier": {
+        "block": ""
+    },
+    "size":{
+        "compact": "compact"
+    },
+    "horizontal": "horizontal--4-7-1"
+}
