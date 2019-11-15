@@ -24,7 +24,7 @@ host: 127.0.0.1
 # the port where the preview is rendered. You can leave this as is unless you have other Jekyll builds using this same port that might cause conflicts. in that case, use another port such as 4006.
 port: 4000
 
-feedback_subject_line: Fundamental Styles Documentation Feedback
+feedback_subject_line: Fundamental Library Styles Documentation Feedback
 
 # used as a contact email for the Feedback link in the top navigation bar
 feedback_email: fundamental@sap.com

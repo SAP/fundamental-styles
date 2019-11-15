@@ -22,7 +22,7 @@ A clear and concise description of what the bug is.
 
 > Is this issue related to a specific component?
 
-> What version of the Fundamental Styles are you using?
+> What version of the Fundamental Library Styles are you using?
 
 > What offering/product do you work on? Any pressing ship or release dates we should be aware of?
 

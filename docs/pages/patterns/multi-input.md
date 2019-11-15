@@ -4,8 +4,8 @@ id: multi-input
 keywords: multi input
 sidebar: left-navigation-sidebar
 toc: false
-permalink: components/multi-input.html
-folder: components
+permalink: patterns/multi-input.html
+folder: patterns
 summary:
 ---
 

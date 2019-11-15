@@ -8,7 +8,7 @@ folder: layouts
 summary:
 ---
 
-Layouts in Fundamental Styles are for structuring the main parts of your application. Organized in three main categories
+Layouts in Fundamental Library Styles are for structuring the main parts of your application. Organized in three main categories
 
 
 <br>

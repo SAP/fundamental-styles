@@ -5,8 +5,15 @@ sidebar: left-navigation-sidebar
 toc: false
 permalink: resources/design-system-utilities.html
 folder: resources
-summary: The following guide covers all the major utility features of the Fundamental Styles (FDUI) design system toolkit. We recommend that you utilize these functions, mixins and helper classes to maintain consistency throughout your application. Using the toolkit features will ensure that you application will remain compatible and easy to upgrade with the future versions of FDUI, transition between themes and customization.
+summary: The following guide covers some major utility features of the Fundamental Library Styles design system toolkit.
 ---
+
+
+<div class="fd-alert fd-alert--warning fd-alert--dismissible" role="alert">
+  <p class="fd-alert__text">
+    This page is under construction and the utility features may change. We are migrating those features towards the Fiori 3 Design System, so you may expect some breaking changes(e.g. the color system)
+  </p>
+</div>
 
 ## Text Utilities
 {: .docs-header-h2}
@@ -50,18 +57,6 @@ Use these CSS classes to control the text size. Used mainly for content text, al
 {% endcapture %}
 {% include display-component.html component=type-util %}
 
-## Type Face
-{: .docs-header-h2}
-
-`fd-has-font-family-body` renders Open-Sans font.
-`fd-has-font-family-header` renders Roboto font.
-{% capture type-face %}
-<p class="fd-has-font-family-body">This is body text</p>
-<p class="fd-has-font-family-header">This is header text</p>
-<p class="fd-has-font-family-code">This is code text</p>
-{% endcapture %}
-{% include display-component.html component=type-face %}
-
 ## Type Weights
 {: .docs-header-h2}
 
@@ -71,87 +66,6 @@ Use these CSS classes to control the text size. Used mainly for content text, al
 <p class="fd-has-font-weight-bold">This is font with weight bold</p>
 {% endcapture %}
 {% include display-component.html component=type-weight %}
-
-## Colors
-{: .docs-header-h2}
-
-All colors on the [color palette]({{site.baseurl}}/foundation/colors.html). Can be accessed via SCSS function and respective CSS classes.
-
-### Color Function
-{: .docs-header-h3}
-
-Colors can be accessed via color function [`fd-color({group}, {shade})`](how-to-use-scss.html#core-functions-and-mixins)
-
-### Color Helper classes
-{: .docs-header-h3}
-
-Helper classes are available as a foreground color class `fd-has-color-{group}-{shade}` or as a background color `fd-has-background-color-{group}-{shade}`.
-A foreground color class applies the color property to the element for example `.fd-has-color-primary` results in `color: ##006fbb !important`
-
-{: .docs-table}
-| Class structure                 | {group}-{shade} options |
-| ------------------------------- | ----------------------- |
-| Foreground Class: <br> `.fd-has-color-{group}-{shade}` <br><br> Background Class:<br>`.fd-has-background-color-{group}-{shade}` | `action` - `1`, `2`, `3` <br> `shell` - `1`, `2` <br> `text` - `1`, `2`, `3`, `4` <br> `background` - `1`, `2`, `3`, `4`, `5`, `6` <br> `neutral` - `1`, `2`, `3`, `4`  <br> `status` - `1`, `2`, `3`, `4`, `5` <br> `accent` - `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `11`, `12`, `13`, `14`, `15`, `16`|
-
-Please check the [colors page]({{site.baseurl}}/foundation/colors.html) to see full color palette.
-
-Some examples of color helper classes.
-{% capture color %}
-
-<h3>Action Color Group</h3>
-<p class="fd-has-color-action-1">.fd-has-color-action-1</p>
-<p class="fd-has-color-action-2 fd-has-background-color-action-1">.fd-has-color-action-2</p>
-
-<h3>Shell Color Group</h3>
-<p class="fd-has-background-color-shell-1 fd-has-color-text-5">.fd-has-background-color-shell-1</p>
-<p class="fd-has-background-color-shell-1 fd-has-color-shell-2">.fd-has-color-shell-2</p>
-
-<h3>Text Color Group</h3>
-<p class="fd-has-color-text-1">.fd-has-color-text-1</p>
-<p class="fd-has-color-text-2">.fd-has-color-text-2</p>
-<p class="fd-has-color-text-3">.fd-has-color-text-3</p>
-<p class="fd-has-color-text-4">.fd-has-color-text-4</p>
-
-<h3>Background Color Group</h3>
-<p class="fd-has-background-color-background-1 fd-has-color-text-1">.fd-has-color-background-1</p>
-<p class="fd-has-background-color-background-2 fd-has-color-text-1">.fd-has-color-background-2</p>
-<p class="fd-has-background-color-background-3 fd-has-color-text-1">.fd-has-color-background-3</p>
-<p class="fd-has-background-color-background-4 fd-has-color-text-1">.fd-has-color-background-4</p>
-<p class="fd-has-background-color-background-5 fd-has-color-text-1">.fd-has-color-background-5</p>
-<p class="fd-has-background-color-background-6 fd-has-color-text-1">.fd-has-color-background-6</p>
-
-<h3>Neutral Color Group</h3>
-<p class="fd-has-background-color-neutral-1 fd-has-color-text-1">.fd-has-background-color-netural-1</p>
-<p class="fd-has-background-color-neutral-2 fd-has-color-text-1">.fd-has-background-color-netural-2</p>
-<p class="fd-has-background-color-neutral-3 fd-has-color-text-1">.fd-has-background-color-netural-3</p>
-<p class="fd-has-background-color-neutral-4 fd-has-color-text-1">.fd-has-background-color-netural-4</p>
-
-<h3>Status Color Group</h3>
-<p class="fd-has-background-color-status-1 fd-has-color-text-5">.fd-has-background-color-status-1</p>
-<p class="fd-has-background-color-status-2 fd-has-color-text-5">.fd-has-background-color-status-2</p>
-<p class="fd-has-background-color-status-3 fd-has-color-text-5">.fd-has-background-color-status-3</p>
-<p class="fd-has-background-color-status-4 fd-has-color-text-5">.fd-has-background-color-status-4</p>
-<p class="fd-has-background-color-status-5 fd-has-color-text-5">.fd-has-background-color-status-5</p>
-
-<h3>Accent Color Group</h3>
-<p class="fd-has-background-color-accent-1 fd-has-color-text-5">.fd-has-background-color-accent-1</p>
-<p class="fd-has-background-color-accent-2 fd-has-color-text-5">.fd-has-background-color-accent-2</p>
-<p class="fd-has-background-color-accent-3 fd-has-color-text-5">.fd-has-background-color-accent-3</p>
-<p class="fd-has-background-color-accent-4 fd-has-color-text-5">.fd-has-background-color-accent-4</p>
-<p class="fd-has-background-color-accent-5 fd-has-color-text-5">.fd-has-background-color-accent-5</p>
-<p class="fd-has-background-color-accent-6 fd-has-color-text-5">.fd-has-background-color-accent-6</p>
-<p class="fd-has-background-color-accent-7 fd-has-color-text-5">.fd-has-background-color-accent-7</p>
-<p class="fd-has-background-color-accent-8 fd-has-color-text-5">.fd-has-background-color-accent-8</p>
-<p class="fd-has-background-color-accent-9 fd-has-color-text-5">.fd-has-background-color-accent-9</p>
-<p class="fd-has-background-color-accent-10 fd-has-color-text-5">.fd-has-background-color-accent-10</p>
-<p class="fd-has-background-color-accent-11 fd-has-color-text-5">.fd-has-background-color-accent-11</p>
-<p class="fd-has-background-color-accent-12 fd-has-color-text-5">.fd-has-background-color-accent-12</p>
-<p class="fd-has-background-color-accent-13 fd-has-color-text-5">.fd-has-background-color-accent-13</p>
-<p class="fd-has-background-color-accent-14 fd-has-color-text-5">.fd-has-background-color-accent-14</p>
-<p class="fd-has-background-color-accent-15 fd-has-color-text-5">.fd-has-background-color-accent-15</p>
-<p class="fd-has-background-color-accent-16 fd-has-color-text-5">.fd-has-background-color-accent-16</p>
-{% endcapture %}
-{% include display-component.html component=color class="color-examples"%}
 
 ## Margin and Padding
 {: .docs-header-h2}

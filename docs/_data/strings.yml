@@ -1,4 +1,4 @@
 # placed here for translation purposes
-headerDisclaimer: Although the following examples use the `<h3>` tag for the title element, the styling provided by Fundamental Styles will remain consistent for any heading level used. `<h1>` should be reserved for the page title.
+headerDisclaimer: Although the following examples use the `<h3>` tag for the title element, the styling provided by Fundamental Library Styles will remain consistent for any heading level used. `<h1>` should be reserved for the page title.
 search_placeholder_text: search...
 search_no_results_text: No results found

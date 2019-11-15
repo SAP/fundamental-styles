@@ -5,13 +5,9 @@ toc: false
 sidebar: left-navigation-sidebar
 permalink: foundation/index.html
 folder: foundation
-summary: Fiori Fundamentals is a unified, flexible design system that solves complex
+summary: Fundamental Library Styles is a unified, flexible design system that solves complex
         problems in a meaningful way and creates simple intuitive experience.
 ---
-
-<p>Fundamental Styles is a unified, flexible design system that solves complex
-problems in a meaningful way and creates simple intuitive experience.
-</p>
 
 <div class="fd-layout-grid docs-tiles">
     <a class="fd-tile" role="button" href="spacing.html">
@@ -30,7 +26,7 @@ problems in a meaningful way and creates simple intuitive experience.
                  Type
              </h2>
              <p class="fd-tile__description">
-                 Fundamental Styles uses a set of sans-serif system fonts.
+                 Fundamental Library Styles uses a set of sans-serif system fonts.
              </p>
         </div>
     </a>

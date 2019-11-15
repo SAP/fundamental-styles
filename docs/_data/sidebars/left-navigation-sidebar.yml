@@ -61,17 +61,21 @@ entries:
     output: web
 
     folderitems:
+
+    - title: Combobox Input
+      url: /patterns/combobox-input.html
+      output: web
   
     - title: Contextual Menu
       url: /patterns/contextual-menu.html
       output: web
 
-    - title: Combobox Input
-      url: /patterns/combobox-input.html
-      output: web
-
     - title: Date Picker
       url: /patterns/date-picker.html
+      output: web
+
+    - title: Multi Input
+      url: /patterns/multi-input.html
       output: web
 
     - title: Search Input
@@ -247,7 +251,7 @@ entries:
       url: /resources/design-system-utilities.html
       output: web
 
-    - title: Fundamental Styles Implementation Libraries
+    - title: Fundamental Libraries
       url: /resources/fundamentals-libraries.html
       output: web
       
