@@ -16,7 +16,7 @@ The input group includes form inputs with add-ons that allow the user to better 
 
 The Input Group supports **compact** mode (by virtue of the `--compact` modifier on child components).
 
-{% capture text-addon %}
+{% capture sizes %}
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Default Size </label>
     <div class="fd-input-group">
@@ -24,18 +24,17 @@ The Input Group supports **compact** mode (by virtue of the `--compact` modifier
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1234568910 ">
     </div>
 </div>
-
+<br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Compact Size </label>
-    <div class="fd-input-group">
+    <div class="fd-input-group fd-input-group--compact">
         <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="" name="" value="1234568910 ">
+        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1234568910 ">
     </div>
 </div>
 {% endcapture %}
 
-{% include display-component.html component=text-addon %}
-
+{% include display-component.html component=sizes %}
 
 ## Text add-on
 
@@ -47,23 +46,31 @@ The Input Group with text add-on component is typically used to specify the type
     <label class="fd-form-label" for="">Left Aligned Text Add-on</label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon">$</span>
-        <input class="fd-input-group__input fd-input" type="text" id="" name="" value="1234568910 ">
+        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1234568910 ">
     </div>
 </div>
-
+<br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Right Aligned Text Add-on</label>
     <div class="fd-input-group">
-        <input class="fd-input-group__input fd-input" type="text" id="" name="" value="1234568910 ">
+        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1234568910 ">
         <span class="fd-input-group__addon">€</span>
     </div>
 </div>
-
+<br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="">Right Aligned Text Add-on With Right Aligned Input Text</label>
+    <div class="fd-input-group">
+        <input class="fd-input fd-input-group__input right-align" type="text" id="" name="" value="1234568910 ">
+        <span class="fd-input-group__addon">€</span>
+    </div>
+</div>
+<br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Left and Right Aligned Text Add-ons</label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon">$</span>
-        <input class="fd-input" type="text" id="" name="" value="This is a test">
+        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="This is a test">
         <span class="fd-input-group__addon">.00</span>
     </div>
 </div>
@@ -86,11 +93,21 @@ The Input with add-on supports icons.
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
     </div>
 </div>
-
+<br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Input with icon on the right</label>
     <div class="fd-input-group">
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
+        <span class="fd-input-group__addon">
+            <span class="sap-icon--hide" role="presentation"></span>
+        </span>
+    </div>
+</div>
+<br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="">Input with icon on the right and right aligned input text</label>
+    <div class="fd-input-group">
+        <input class="fd-input fd-input-group__input right-align" type="text" id="" name="" value="1000000">
         <span class="fd-input-group__addon">
             <span class="sap-icon--hide" role="presentation"></span>
         </span>
@@ -143,6 +160,58 @@ The Input with add-on supports actions. Actions can be shown with a text label o
 
 {% include display-component.html component=button-addon %}
 
+## States
+
+{% capture states %}
+<div class="fd-form-item">
+    <label class="fd-form-label" for="">Valid (Success)</label>
+    <div class="fd-input-group is-valid">
+        <span class="fd-input-group__addon">$</span>
+        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1234568910">
+    </div>
+</div>
+<br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="">Invalid (Error)</label>
+    <div class="fd-input-group is-invalid">
+        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
+        <span class="fd-input-group__addon">
+            <span class="sap-icon--hide" role="presentation"></span>
+        </span>
+    </div>
+</div>
+<br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="">Warning (Alert)</label>
+    <div class="fd-input-group is-warning">
+        <span class="fd-input-group__addon">$</span>
+        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1234568910">
+    </div>
+</div>
+<br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="">Information</label>
+    <div class="fd-input-group is-information">
+        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
+        <span class="fd-input-group__addon fd-input-group__addon--button">
+            <button class="fd-input-group__button fd-button--light">
+                Button
+            </button>
+        </span>
+    </div>
+</div>
+<br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="">Disabled</label>
+    <div class="fd-input-group is-disabled">
+        <span class="fd-input-group__addon">$</span>
+        <input class="fd-input fd-input-group__input" type="text" id="" name="" placeholder="Enter a value">
+    </div>
+</div>
+{% endcapture %}
+
+{% include display-component.html component=states %}
+
 
 ## Textareas
 
@@ -156,10 +225,34 @@ The Input with add-on supports actions. Actions can be shown with a text label o
         </span>
     </div>
 </div>
-
+<br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Textarea with action</label>
     <div class="fd-input-group">
+        <textarea class="fd-textarea fd-input-group__input" id=""></textarea>
+        <span class="fd-input-group__addon fd-input-group__addon--button">
+            <button class="fd-input-group__button fd-button--light">
+                Button
+            </button>
+        </span>
+    </div>
+</div>
+<br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="">Textarea with action</label>
+    <div class="fd-input-group is-valid">
+        <textarea class="fd-textarea fd-input-group__input" id=""></textarea>
+        <span class="fd-input-group__addon fd-input-group__addon--button">
+            <button class="fd-input-group__button fd-button--light">
+                Button
+            </button>
+        </span>
+    </div>
+</div>
+<br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="">Textarea with action</label>
+    <div class="fd-input-group is-invalid">
         <textarea class="fd-textarea fd-input-group__input" id=""></textarea>
         <span class="fd-input-group__addon fd-input-group__addon--button">
             <button class="fd-input-group__button fd-button--light">

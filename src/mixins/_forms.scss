@@ -1,36 +1,7 @@
 // Form Mixins
 @import "./mixins";
 
-@mixin fd-form-base {
-  @include fd-reset();
-  @include fd-ellipsis();
-
-  font-family: var(--sapFontFamily);
-  font-size: var(--sapFontSize);
-  line-height: 1.4;
-  color: var(--sapField_TextColor);
-  background-color: var(--sapField_Background);
-  appearance: none;
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
-  box-sizing: border-box;
-  outline: none;
-  border-style: solid;
-  border-width: var(--sapField_BorderWidth);
-  border-color: var(--sapField_BorderColor);
-  border-radius: var(--sapField_BorderCornerRadius);
-  transition: border-color $fd-animation--speed;
-
-  &::placeholder {
-    font-style: italic;
-    color: var(--sapField_PlaceholderTextColor);
-  }
-
-  &::selection {
-    color: var(--sapContent_ContrastTextColor);
-    background-color: var(--sapSelectedColor);
-  }
-
+@mixin fd-form-states {
   // states
   @include fd-hover() {
     background-color: var(--sapField_Hover_Background);
@@ -64,8 +35,6 @@
 
   @include fd-focus() {
     box-shadow: none;
-    background-color: var();
-    border-color: var();
     outline-offset: -0.1875rem;
     outline-width: var(--sapContent_FocusWidth);
     outline-color: var(--sapContent_FocusColor);
@@ -82,6 +51,39 @@
     background-color: var(--sapField_ReadOnly_Background);
     border-color: var(--sapField_ReadOnly_BorderColor);
   }
+}
+
+@mixin fd-form-base {
+  @include fd-reset();
+  @include fd-ellipsis();
+
+  font-family: var(--sapFontFamily);
+  font-size: var(--sapFontSize);
+  line-height: 1.4;
+  color: var(--sapField_TextColor);
+  background-color: var(--sapField_Background);
+  appearance: none;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  box-sizing: border-box;
+  outline: none;
+  border-style: solid;
+  border-width: var(--sapField_BorderWidth);
+  border-color: var(--sapField_BorderColor);
+  border-radius: var(--sapField_BorderCornerRadius);
+  transition: border-color $fd-animation--speed;
+
+  &::placeholder {
+    font-style: italic;
+    color: var(--sapField_PlaceholderTextColor);
+  }
+
+  &::selection {
+    color: var(--sapContent_ContrastTextColor);
+    background-color: var(--sapSelectedColor);
+  }
+  // states
+  @include fd-form-states();
 }
 
 @mixin fd-form-text() {
