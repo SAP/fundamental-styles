@@ -69,6 +69,11 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
       box-shadow: none;
     }
 
+    @include fd-disabled() {
+      pointer-events: none;
+      opacity: 0.4;
+    }
+
     &:nth-child(1) {
       padding-left: 0.625rem;
       padding-right: 0.25rem;
@@ -88,6 +93,12 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
         padding-right: 0.25rem;
       }
     }
+  }
+
+  &--inline {
+    display: inline-flex;
+    vertical-align: bottom;
+    width: auto;
   }
 
   &__addon {

@@ -12,12 +12,22 @@
     background-color: var(--sapField_InvalidBackground);
     border-color: var(--sapField_InvalidColor);
     border-width: 0.125rem;
+
+    @include fd-hover() {
+      background-color: var(--sapField_InvalidBackground);
+      border-color: var(--sapField_InvalidColor);
+    }
   }
 
   &.is-valid {
     background-color: var(--sapField_SuccessBackground);
     border-color: var(--sapField_SuccessColor);
     border-width: 0.125rem;
+
+    @include fd-hover() {
+      background-color: var(--sapField_SuccessBackground);
+      border-color: var(--sapField_SuccessColor);
+    }
   }
 
   &.is-warning,
@@ -25,12 +35,22 @@
     background-color: var(--sapField_WarningBackground);
     border-color: var(--sapField_WarningColor);
     border-width: 0.125rem;
+
+    @include fd-hover() {
+      background-color: var(--sapField_WarningBackground);
+      border-color: var(--sapField_WarningColor);
+    }
   }
 
   &.is-information {
     background-color: var(--sapField_InformationBackground);
     border-color: var(--sapField_InformationColor);
     border-width: 0.125rem;
+
+    @include fd-hover() {
+      background-color: var(--sapField_InformationBackground);
+      border-color: var(--sapField_InformationColor);
+    }
   }
 
   @include fd-focus() {

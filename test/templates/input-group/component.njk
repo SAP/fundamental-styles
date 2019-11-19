@@ -4,12 +4,10 @@
         type: "",
         input: {
             properties: {},
-            state: {},
             aria: {}
         },
         textarea: {
             properties: {},
-            state: {},
             aria: {}
         },
         before: "",
@@ -17,25 +15,30 @@
     },
     modifier={
         block: [],
+        state: "",
         before: [],
-        after: []
+        after: [],
+        disabled: false
     },
     size="")
 %}
 {%- set input = properties.input %}
-<div class="fd-input-group{{ modifier.block | modifier('input-group') }}">
+<div class="fd-input-group{{ modifier.block | modifier('input-group') }} {{ ' is-' + modifier.state if modifier.state }} {{ ' is-disabled' if modifier.disabled }}">
+    
     {%- if properties.before %}
         <span class="fd-input-group__addon{{ modifier.before | modifier('input-group__addon') }} {{ 'fd-input-group__addon--readonly' if properties.input.state.readonly}}">
             {{ properties.before | trim | indent(8, true) }}
         </span>
     {%- endif %}
+    
     {%- if properties.type == "textarea" %}
-        <textarea class="input-group-input-playground fd-input-group__input" placeholder="{{input.properties.placeholder}}" value="{{input.properties.value}}" {{ 'disabled' if properties.input.state.readonly}}></textarea> 
+        <textarea class="input-group-input-playground fd-input-group__input" placeholder="{{input.properties.placeholder}}" value="{{input.properties.value}}"></textarea> 
     {%- else %}
-        <input class="input-group-input-playground fd-input-group__input" placeholder="{{input.properties.placeholder}}" value="{{input.properties.value}}" {{ 'disabled' if properties.input.state.readonly}} /> 
+        <input class="input-group-input-playground fd-input-group__input" placeholder="{{input.properties.placeholder}}" value="{{input.properties.value}}" /> 
     {%- endif %}
+    
     {%- if properties.after %}
-        <span class="fd-input-group__addon{{ modifier.after | modifier('input-group__addon') }} {{ 'fd-input-group__addon--readonly' if properties.input.state.readonly}}">
+        <span class="fd-input-group__addon{{ modifier.after | modifier('input-group__addon') }}">
             {{ properties.after | trim | indent(8, true) }}
         </span>
     {%- endif %}
