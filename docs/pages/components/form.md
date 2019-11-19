@@ -114,6 +114,12 @@ Do not use the input field if:
         <label class="fd-form-label" aria-required="true" for="input-1d">Password:</label>
         <input class="fd-input" type="password" id="input-1d">
     </div>
+    <br />
+    <br />
+    <div class="fd-form-item fd-form-item--horizontal">
+        <label class="fd-form-label" aria-required="true" for="input-1ee">Input:</label>
+        <input class="fd-input" type="text" id="input-1ee">
+    </div>
 {% endcapture %}
 
 {% include display-component.html component=inputs %}

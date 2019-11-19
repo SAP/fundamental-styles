@@ -60,7 +60,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     @include fd-reset-child-spacing();
 
     border: none;
-    width: 100%;
+    flex: 1;
     padding-right: 0.25rem;
     padding-left: 0.25rem;
 
@@ -93,6 +93,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   &__addon {
     @include fd-reset();
     @include fd-flex-center();
+    @include fd-ellipsis();
 
     background-color: var(--sapField_Background);
     font-size: var(--sapFontLargeSize);
@@ -151,6 +152,12 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
         }
       }
 
+      &:not(:first-child):not(:last-child) {
+        .#{$block}__button {
+          border-radius: 0;
+        }
+      }
+
       @include fd-rtl() {
         &:first-child {
           > * {
@@ -194,6 +201,8 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   }
 
   &__button {
+    @include fd-ellipsis();
+
     border: none;
     width: 100%;
   }
