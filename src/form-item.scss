@@ -27,9 +27,9 @@ $block: #{$fd-namespace}-form-item;
     }
   }
 
-  &--inline {
-    display: block;
-    float: left;
-    margin-right: fd-space(4);
-  }
+  // &--inline {
+  //   display: block;
+  //   float: left;
+  //   margin-right: fd-space(4);
+  // }
 }

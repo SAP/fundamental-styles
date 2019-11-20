@@ -17,3 +17,7 @@ $block: #{$fd-namespace}-form-group;
     margin-bottom: 0;
   }
 }
+
+.#{$block}--inline {
+  display: flex;
+}
