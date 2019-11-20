@@ -191,7 +191,7 @@ Use this when there is more than one level of hierarchy in the left navigation. 
 
 <br>
 
-## Side navigation with multiple levels - with icons, group headers, 3 levels of navigation, cozy mode
+## Side navigation with 2 levels - with icons and group headers, cozy mode
 
 {% capture default %}
 <nav class="fd-side-nav">
@@ -224,27 +224,10 @@ Use this when there is more than one level of hierarchy in the left navigation. 
                         </a>
                     </li>
                     <li class="fd-nested-list__item">
-                        <a class="fd-nested-list__link is-selected has-child" 
+                        <a class="fd-nested-list__link is-selected" 
                             href="#" aria-controls="EX400L3" aria-haspopup="true">
                             <span class="fd-nested-list__title">Level 2 Item</span>
                         </a>
-                        <ul class="fd-nested-list fd-nested-list--text-only level-3" id="EX400L3" aria-hidden="true">
-                            <li class="fd-nested-list__item">
-                                <a class="fd-nested-list__link" href="#">
-                                    <span class="fd-nested-list__title">Level 3 Item</span>
-                                </a>
-                            </li>
-                            <li class="fd-nested-list__item">
-                                <a class="fd-nested-list__link is-selected" href="#">
-                                    <span class="fd-nested-list__title">Level 3 Item</span>
-                                </a>
-                            </li>
-                            <li class="fd-nested-list__item">
-                                <a class="fd-nested-list__link" href="#">
-                                    <span class="fd-nested-list__title">Level 3 Item</span>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="fd-nested-list__item">
                         <a class="fd-nested-list__link" href="#">
@@ -297,7 +280,7 @@ Use this when there is more than one level of hierarchy in the left navigation. 
 
 <br>
 
-## Side navigation with multiple levels - compact mode
+## Side navigation with 2 levels - compact mode
 In compact mode the dimensions of the controls are reduced, allowing more information to be displayed. This mode is suggested for devices operated by mouse and keyboard. <br>
 The lists in both sections (Main and Utility) should have the `fd-nested-list--compact` modifier class.
 
@@ -332,27 +315,10 @@ The lists in both sections (Main and Utility) should have the `fd-nested-list--c
                         </a>
                     </li>
                     <li class="fd-nested-list__item">
-                        <a class="fd-nested-list__link has-child" 
+                        <a class="fd-nested-list__link" 
                             href="#" aria-controls="EX500L3" aria-haspopup="true">
                             <span class="fd-nested-list__title">Level 2 Item</span>
                         </a>
-                        <ul class="fd-nested-list fd-nested-list--text-only level-3" id="EX500L3" aria-hidden="true">
-                            <li class="fd-nested-list__item">
-                                <a class="fd-nested-list__link" href="#">
-                                    <span class="fd-nested-list__title">Level 3 Item</span>
-                                </a>
-                            </li>
-                            <li class="fd-nested-list__item">
-                                <a class="fd-nested-list__link" href="#">
-                                    <span class="fd-nested-list__title">Level 3 Item</span>
-                                </a>
-                            </li>
-                            <li class="fd-nested-list__item">
-                                <a class="fd-nested-list__link" href="#">
-                                    <span class="fd-nested-list__title">Level 3 Item</span>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="fd-nested-list__item">
                         <a class="fd-nested-list__link" href="#">
