@@ -66,14 +66,14 @@ Full list of all the available icons can be found on the <a href="icon.html">ico
 <button class="fd-button--emphasized sap-icon--cart">Add to Cart</button>
 <button class="fd-button sap-icon--cart">Add to Cart</button>
 <button class="fd-button--light sap-icon--cart">Add to Cart</button>
-<button class="fd-button--emphasized fd-button--positive sap-icon--accept">Approve</button>
-<button class="fd-button--emphasized fd-button--negative sap-icon--decline">Reject</button>
+<button class="fd-button--positive sap-icon--accept">Approve</button>
+<button class="fd-button--negative sap-icon--decline">Reject</button>
 <br><br>
 <button class="fd-button sap-icon--cart"></button>
 <button class="fd-button--light sap-icon--cart"></button>
 <button class="fd-button--standard sap-icon--filter"></button>
-<button class="fd-button--emphasized fd-button--positive sap-icon--accept"></button>
-<button class="fd-button--emphasized fd-button--negative sap-icon--decline"></button>
+<button class="fd-button--positive sap-icon--accept"></button>
+<button class="fd-button--negative sap-icon--decline"></button>
 {% endcapture %}
 {% include display-component.html component=button %}
 
@@ -181,8 +181,8 @@ Button with multiple actions
   <button class="fd-button--emphasized sap-icon--cart">Add to Cart</button>
   <button class="fd-button sap-icon--cart">Add to Cart</button>
   <button class="fd-button--light sap-icon--cart">Add to Cart</button>
-  <button class="fd-button--emphasized fd-button--positive sap-icon--accept">Approve</button>
-  <button class="fd-button--emphasized fd-button--negative sap-icon--decline">Reject</button>
+  <button class="fd-button--positive sap-icon--accept">Approve</button>
+  <button class="fd-button--negative sap-icon--decline">Reject</button>
   <br><br>
   <button class="fd-button--emphasized fd-button--menu sap-icon--cart">Add to Cart</button>
   <button class="fd-button fd-button--menu sap-icon--cart">Add to Cart</button>
@@ -193,8 +193,8 @@ Button with multiple actions
   <button class="fd-button sap-icon--cart"></button>
   <button class="fd-button--light sap-icon--cart"></button>
   <button class="fd-button--standard sap-icon--filter"></button>
-  <button class="fd-button--emphasized fd-button--positive sap-icon--accept"></button>
-  <button class="fd-button--emphasized fd-button--negative sap-icon--decline"></button>
+  <button class="fd-button--positive sap-icon--accept"></button>
+  <button class="fd-button--negative sap-icon--decline"></button>
   <div class="fd-button-group" role="group" aria-label="Group label">
     <button class="fd-button sap-icon--survey"></button>
     <button class="fd-button sap-icon--pie-chart" aria-pressed="true"></button>
@@ -228,13 +228,13 @@ Button with multiple actions
 <button class="fd-button fd-button--menu sap-icon--cart">Add to Cart</button>
 <button class="fd-button--light fd-button--menu sap-icon--cart">Add to Cart</button>
 <button class="fd-button--emphasized fd-button--menu fd-button--positive sap-icon--accept">Approve</button>
-<button class="fd-button--emphasized fd-button--negative fd-button--menu sap-icon--decline">Reject</button>
+<button class="fd-button--negative fd-button--menu sap-icon--decline">Reject</button>
 <br><br>
 <button class="fd-button fd-button--menu sap-icon--cart"></button>
 <button class="fd-button--light fd-button--menu sap-icon--cart"></button>
 <button class="fd-button--standard fd-button--menu sap-icon--filter"></button>
-<button class="fd-button--emphasized fd-button--menu fd-button--positive sap-icon--accept"></button>
-<button class="fd-button--emphasized fd-button--menu fd-button--negative sap-icon--decline"></button>
+<button class="fd-button--menu fd-button--positive sap-icon--accept"></button>
+<button class="fd-button--menu fd-button--negative sap-icon--decline"></button>
 <br><br>
 <button class="fd-button fd-button--menu">Default</button>
 <button class="fd-button--compact fd-button--menu">Compact</button>
