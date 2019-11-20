@@ -11,7 +11,9 @@ $block: #{$fd-namespace}-popover;
   $fd-popover-left-position: 0 !default;
   $fd-popover-border: solid 1px $fd-forms-border-color !default;
   $fd-popover-z-index: map-get($fd-z-index-levels, "top") !default;
-  $fd-popover-background-color: fd-color(background, 2) !default;
+  $fd-popover-background-color: var(--sapGroup_ContentBackground) !default;
+  $fd-popover-border-radius: var(--sapElement_BorderCornerRadius) !default;
+  $fd-popover-box-shadow: var(--sapContent_Shadow2) !default;
 
   $fd-popover-arrow-top-back: -9px !default;
   $fd-popover-arrow-top-front: -8px !default;
@@ -42,15 +44,13 @@ $block: #{$fd-namespace}-popover;
   &__body {
     @include fd-reset();
 
-    border: $fd-popover-border;
+    border: none;
     position: absolute;
     white-space: nowrap;
+    box-shadow: $fd-popover-box-shadow;
     z-index: $fd-popover-z-index;
-    border-radius: $fd-border-radius;
-
-    @include fd-var-color("background-color", $fd-popover-background-color, --fd-color-background-2);
-
-    box-shadow: 0 5px 20px 0 var(--fd-color-neutral-3), 0 2px 8px 0 var(--fd-color-neutral-2);
+    border-radius: $fd-popover-border-radius;
+    background: $fd-popover-background-color;
     opacity: 1;
     visibility: visible;
     transition: all $fd-popover-transition-params;
@@ -169,15 +169,13 @@ $block: #{$fd-namespace}-popover;
   }
 
   &__popper {
-    border: $fd-popover-border;
+    border: none;
     position: absolute;
     white-space: nowrap;
+    box-shadow: $fd-popover-box-shadow;
     z-index: $fd-popover-z-index;
-    border-radius: $fd-border-radius;
-
-    @include fd-var-color("background-color", $fd-popover-background-color, --fd-color-background-2);
-
-    box-shadow: 0 5px 20px 0 var(--fd-color-neutral-3), 0 2px 8px 0 var(--fd-color-neutral-2);
+    border-radius: $fd-popover-border-radius;
+    background: $fd-popover-background-color;
     opacity: 1;
 
     &--no-arrow {
