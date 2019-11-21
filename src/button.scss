@@ -55,7 +55,6 @@
   }
 
   @include fd-active-pressed-selected() {
-    box-shadow: 0 0 0 1px var(--sapButton_Active_BorderColor);
     color: var(--sapButton_Selected_TextColor);
     background-color: var(--sapButton_Active_Background);
     border-color: var(--sapButton_BorderColor);
@@ -98,10 +97,9 @@
   }
 
   @include fd-active-pressed-selected() {
-    box-shadow: 0 0 0 1px var(--sapButton_Reject_Active_BorderColor);
     color: var(--sapButton_Selected_TextColor);
     background-color: var(--sapButton_Reject_Active_Background);
-    border-color: var(--sapButton_Reject_BorderColor);
+    border-color: var(--sapButton_Reject_Active_BorderColor);
 
     &:focus {
       outline-color: var(--sapContent_ContrastFocusColor);
@@ -141,10 +139,9 @@
   }
 
   @include fd-active-pressed-selected() {
-    box-shadow: 0 0 0 1px var(--sapButton_Accept_Active_BorderColor);
     color: var(--sapButton_Selected_TextColor);
     background-color: var(--sapButton_Accept_Active_Background);
-    border-color: var(--sapButton_Accept_BorderColor);
+    border-color: var(--sapButton_Accept_Active_BorderColor);
 
     &:focus {
       outline-color: var(--sapContent_ContrastFocusColor);
@@ -364,8 +361,8 @@ a.#{$block} {
     @include isEmphasized();
 
     @include fd-active-pressed-selected() {
-      background-color: var(--sapButton_Emphasized_Hover_Background);
-      border-color: var(--sapButton_Emphasized_Hover_BorderColor);
+      background-color: var(--sapButton_Emphasized_Active_Background);
+      border-color: var(--sapButton_Emphasized_Active_BorderColor);
 
       @include fd-disabled() {
         @include isEmphasized();
@@ -376,6 +373,16 @@ a.#{$block} {
     @include fd-hover() {
       color: var(--sapButton_Emphasized_Hover_TextColor);
       background-color: var(--sapButton_Emphasized_Hover_Background);
+
+      @include fd-active-pressed-selected() {
+        background-color: var(--sapButton_Emphasized_Active_Background);
+        border-color: var(--sapButton_Emphasized_Active_BorderColor);
+
+        @include fd-disabled() {
+          @include isEmphasized();
+          @include isDisabled();
+        }
+      }
     }
 
     @include fd-disabled() {
