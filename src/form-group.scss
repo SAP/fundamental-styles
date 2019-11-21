@@ -20,4 +20,9 @@ $block: #{$fd-namespace}-form-group;
 
 .#{$block}--inline {
   display: flex;
+
+  .fd-form-item {
+    float: left;
+    margin-right: fd-space(4);
+  }
 }
