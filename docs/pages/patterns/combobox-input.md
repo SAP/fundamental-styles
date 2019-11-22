@@ -44,8 +44,8 @@ The combobox input component is an opinionated composition of the `input group`,
   <div class="fd-popover">
       <div class="fd-popover__control">
           <div aria-label="Image label" aria-controls="F4GcX34" aria-expanded="false" aria-haspopup="true">
-              <div class="fd-input-group">
-                  <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
+              <div class="fd-input-group fd-input-group--compact">
+                  <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Fruit">
                   <span class="fd-input-group__addon fd-input-group__addon--button">
                       <button class="fd-input-group__button fd-button--compact fd-button--light sap-icon--navigation-down-arrow"></button>
                   </span>
