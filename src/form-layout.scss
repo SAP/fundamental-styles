@@ -5,121 +5,18 @@
 /*!
 .fd-form-horizontal
 */
-
+$compact-margin-vertical: 0.1875rem;
+$cozy-margin-vertical: 0.25rem;
 $block: #{$fd-namespace}-form-layout;
 
-.#{$block} {
-  @include fd-reset();
-
-  background-color: transparent;
-  background-color: var(--sapGroup_ContentBackground);
+@mixin form-layout {
+  background-color: var(--sapGroup_ContentBackground, transparent);
   padding: 0.5rem 1rem 1rem;
   grid-gap: var(0.5rem, 0.5rem);
   width: 100%;
+}
 
-  &_horizontal--4-7-1 {
-    padding-right: 8.33%;
-
-    .fd-form-item {
-      margin-top: 0;
-      margin-bottom: 0;
-      display: grid;
-      grid-template-columns: minmax(0, 4fr) minmax(0, 7fr);
-      min-width: 0;
-
-      .fd-input {
-        align-self: center;
-        align-items: center;
-        margin-top: 0.25rem;
-        margin-bottom: 0.25rem;
-        height: 2.25rem;
-
-        &--compact {
-          margin-top: 0.1875rem;
-          margin-bottom: 0.1875rem;
-          height: 1.625rem;
-        }
-      }
-
-      .fd-form-message {
-        grid-column-start: 2;
-        margin-top: 0.75rem;
-        position: relative;
-        bottom: 1rem;
-
-        &--above {
-          bottom: 0 !important;
-          top: 0.25rem;
-        }
-      }
-
-      .fd-form-label {
-        align-self: center;
-        justify-self: right;
-        padding-left: 0.75rem;
-        margin-right: 0.75rem;
-
-        &--compact {
-          margin-top: 0.1875rem;
-          margin-bottom: 0.1875rem;
-          height: 1.625rem;
-        }
-      }
-
-      &--compact {
-        margin-top: 0.1875rem;
-        margin-bottom: 0.1875rem;
-        height: 2rem;
-
-        .fd-input {
-          height: 1.625rem;
-        }
-      }
-    }
-  }
-
-  &_vertical--12 {
-    .fd-form-item {
-      margin-top: 0;
-      margin-bottom: 0;
-      display: grid;
-      grid-template-columns: minmax(0, 12fr);
-      min-width: 0;
-
-      .fd-input {
-        margin-top: 0.25rem;
-        margin-bottom: 0.25rem;
-        height: 2.25rem;
-
-        &--compact {
-          margin-top: 0.1875rem;
-          margin-bottom: 0.1875rem;
-          height: 1.625rem;
-        }
-      }
-
-      .fd-form-label {
-        padding-top: 0.125rem;
-        padding-bottom: 0.125rem;
-        margin-right: 0.75rem;
-        justify-self: left;
-      }
-
-      .fd-form-message {
-        position: relative;
-        bottom: 1rem;
-      }
-    }
-
-    .fd-form-message {
-      margin-top: 0.75rem;
-
-      &--above {
-        margin-top: 0;
-      }
-    }
-  }
-
+.#{$block} {
   &--double {
     display: inline-grid;
     grid-template-columns: 1fr 1fr;
@@ -127,13 +24,125 @@ $block: #{$fd-namespace}-form-layout;
     padding: 0;
 
     .fd-input {
-      padding: 0;
       align-self: center;
       margin: 0;
     }
 
     .fd-input:last-child {
-      margin-bottom: 0.25rem;
+      margin-bottom: $cozy-margin-vertical;
     }
+  }
+}
+
+.#{$block}-horizontal {
+  @include fd-reset();
+  @include form-layout();
+
+  padding-right: 8.33%;
+
+  .fd-form-item {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 4fr) minmax(0, 7fr);
+    min-width: 0;
+
+    .fd-input {
+      align-self: center;
+      align-items: center;
+      margin-top: $cozy-margin-vertical;
+      margin-bottom: $cozy-margin-vertical;
+      height: 2.25rem;
+
+      &--compact {
+        margin-top: $compact-margin-vertical;
+        margin-bottom: $compact-margin-vertical;
+        height: 1.625rem;
+      }
+    }
+
+    .fd-form-message {
+      grid-column-start: 2;
+      margin-top: 0.75rem;
+      position: relative;
+      bottom: 1rem;
+
+      &--above {
+        bottom: 0 !important;
+        top: 0.25rem;
+      }
+    }
+
+    .fd-form-label {
+      align-self: center;
+      justify-self: right;
+      padding-left: 0.75rem;
+      margin-right: 0.75rem;
+
+      &--compact {
+        margin-top: $compact-margin-vertical;
+        margin-bottom: $compact-margin-vertical;
+      }
+    }
+
+    &--compact {
+      margin-top: $compact-margin-vertical;
+      margin-bottom: $compact-margin-vertical;
+      height: 2rem;
+
+      .fd-input {
+        height: 1.625rem;
+      }
+    }
+  }
+
+  &--4-7-1 {
+    @extend .#{$block}-horizontal;
+  }
+}
+
+.#{$block}-vertical {
+  .fd-form-item {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 12fr);
+    min-width: 0;
+
+    .fd-input {
+      margin-top: $cozy-margin-vertical;
+      margin-bottom: $cozy-margin-vertical;
+      height: 2.25rem;
+
+      &--compact {
+        margin-top: $compact-margin-vertical;
+        margin-bottom: $compact-margin-vertical;
+        height: 1.625rem;
+      }
+    }
+
+    .fd-form-label {
+      padding-top: 0.125rem;
+      padding-bottom: 0.125rem;
+      margin-right: 0.75rem;
+      justify-self: left;
+    }
+
+    .fd-form-message {
+      position: relative;
+      bottom: 1rem;
+    }
+  }
+
+  .fd-form-message {
+    margin-top: 0.75rem;
+
+    &--above {
+      margin-top: 0;
+    }
+  }
+
+  &--12 {
+    @extend .#{$block}-vertical;
   }
 }
