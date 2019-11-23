@@ -26,18 +26,16 @@ $block: #{$fd-namespace}-breadcrumb;
 
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0;
   margin-bottom: $fd-breadcrumb-margin-bottom;
   list-style: none;
-  padding-right: $fd-breadcrumb-spacing;
 
   @include fd-rtl() {
-    padding: 0 0 0 $fd-breadcrumb-spacing;
+    padding: 0;
 
     &__item {
       &::after {
         content: "/";
-        margin-right: initial;
+        margin-right: $fd-breadcrumb-spacing;
         margin-left: $fd-breadcrumb-spacing;
       }
 
@@ -55,6 +53,7 @@ $block: #{$fd-namespace}-breadcrumb;
       content: "/";
       color: $fd-breadcrumb-separator-color;
       margin-right: $fd-breadcrumb-spacing;
+      margin-left: $fd-breadcrumb-spacing;
     }
 
     &:last-child::after {
@@ -64,7 +63,7 @@ $block: #{$fd-namespace}-breadcrumb;
     @include fd-rtl() {
       &::after {
         content: "/";
-        margin-right: initial;
+        margin-right: $fd-breadcrumb-spacing;
         margin-left: $fd-breadcrumb-spacing;
       }
 
@@ -77,10 +76,8 @@ $block: #{$fd-namespace}-breadcrumb;
   &__link {
     @include fd-reset();
 
-    margin-right: $fd-breadcrumb-spacing;
-
     @include fd-rtl() {
-      margin-right: initial;
+      margin-right: $fd-breadcrumb-spacing;
       margin-left: $fd-breadcrumb-spacing;
     }
 
