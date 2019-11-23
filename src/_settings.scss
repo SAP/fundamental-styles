@@ -4,7 +4,7 @@
 // library namespace
 $fd-namespace: fd !default;
 
-// ————————v Fundamental Styles FOUNDATION ————————v
+// ————————v Fundamental Library Styles FOUNDATION ————————v
 
 // breakpoints
 $fd-breakpoints: (
@@ -213,7 +213,7 @@ $fd-colors-background-states: map-merge(
   $fd-colors-background-states
 );
 
-// ————————^ Fundamental Styles FOUNDATION ————————^
+// ————————^ Fundamental Library Styles FOUNDATION ————————^
 
 // features
 $fd-space-modify: normal !default; // normal, compact

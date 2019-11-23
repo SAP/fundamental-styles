@@ -23,7 +23,7 @@ A clear and concise description of what the problem is. Ex. I'm always frustrate
 
 > What browser are you working in?
 
-> What version of Fundamental Styles are you using?
+> What version of Fundamental Library Styles are you using?
 
 > What offering/product do you work on? Any pressing ship or release dates we should be aware of?
 

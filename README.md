@@ -1,12 +1,12 @@
-# Fundamental Styles
+# Fundamental Library Styles
 
 [![npm version](https://badge.fury.io/js/fundamental-styles.svg)](https://badge.fury.io/js/fundamental-styles)
 [![Build Status](https://travis-ci.com/SAP/fundamental-styles.svg?branch=master)](https://travis-ci.com/SAP/fundamental-styles)
 [![Slack](https://img.shields.io/badge/slack-ui--fundamentals-blue.svg?logo=slack)](https://join.slack.com/t/ui-fundamentals/shared_invite/enQtNTIzOTU0Mzc2NTc5LWQzZWI5MWFhYjE5OTc4YzliN2JhOTc1ZjQxZTg1YjZiMWZiYzRkNjMwYzgyMmFkYmNhZDVjMWE5MDIzOWEzMmM)
 
-## What is Fundamental Styles?
+## What is Fundamental Library Styles?
 
-Fundamental Styles is a light-weight presentation layer that can be used with your UI framework of choice (e.g. Angular, React, Vue, etc.). With Fundamental Styles’ library of stylesheets and HTML tags, developers can build consistent Fiori apps in any web-based technology.
+Fundamental Library Styles is a light-weight presentation layer that can be used with your UI framework of choice (e.g. Angular, React, Vue, etc.). With Fundamental Library Styles’ library of stylesheets and HTML tags, developers can build consistent Fiori apps in any web-based technology.
 
 **Learn more at http://sap.github.io/fundamental-styles/**
 

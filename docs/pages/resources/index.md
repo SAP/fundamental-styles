@@ -9,7 +9,6 @@ summary:
 ---
 
 <br>
-
 <div class="fd-layout-grid fd-layout-grid--col-2 docs-tiles">
     <a class="fd-tile" role="button" href="design-system-utilities.html">
         <div class="fd-tile__content">
@@ -21,7 +20,7 @@ summary:
     <a class="fd-tile" role="button" href="fundamentals-libraries.html">
         <div class="fd-tile__content">
             <h2 class="fd-tile__header">
-                Fundamental Styles Implementation Libraries
+                Fundamental Library Styles Implementation Libraries
             </h2>
         </div>
     </a>
