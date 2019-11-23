@@ -55,6 +55,20 @@ The project has the following prerequisites:
 * Ruby (for running the documentation website locally)
 * Docker (for running the visual regression testing framework)
 
+### Few differences between Fundamental Library Styles and [Fundamental](https://github.com/SAP/fundamental)
+
+Fundamental Library Styles is aiming to deliver:
+* [Fiori 3.0](https://www.sap.com/products/fiori.html) compliant components
+* themable components built on top of [SAP Theming Base Content](https://github.com/SAP/theming-base-content) by consuming the CSS Custom Properties delivered by the theming library
+* self-contained components(each component style file contains all the styling needed to be rendered properly and at the same time avoid external styling bleeding in and bleading out. `Bleading in` means that global reset wouldn't affect the component and `bleading out` means that the component styling should not affect other HTML elements) 
+* An html reference specification that consuming libraries must adhere to.
+* Accessibility support
+  * Accessibility - Color contrast support for WCAG 2.0 level AA (4.5:1 for typical text)
+  * Accessibility - Semantic HTML reference
+  * Accessibility - Aria attributes noted when possible in HTML reference
+
+This library is also being consumed by [Fundamental Library for Angular](https://github.com/SAP/fundamental-ngx), [Fundamental Library for React](https://github.com/SAP/fundamental-react), and [Fundamental Library for Vue](https://github.com/SAP/fundamental-vue).
+
 ## Support
 
 If you encounter an issue, you can create a [ticket](https://github.com/SAP/fundamental-styles/issues/new/choose) or post on the [Fundamentals Slack channel](https://join.slack.com/t/ui-fundamentals/shared_invite/enQtNTIzOTU0Mzc2NTc5LThlOTYxOGE3NGIzZDY3MGYyNjRiYWFlM2U0OGFjMGQ5YTA1MWU0ZjRjOTZmMGIzYWU1MmMyNzNjMjJhNzZhYzY).
