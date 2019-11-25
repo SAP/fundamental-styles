@@ -102,6 +102,9 @@ $block: #{$fd-namespace}-form-layout;
 }
 
 .#{$block}-vertical {
+  @include fd-reset();
+  @include form-layout();
+
   .fd-form-item {
     margin-top: 0;
     margin-bottom: 0;
