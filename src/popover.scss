@@ -9,7 +9,6 @@ $block: #{$fd-namespace}-popover;
   $fd-popover-top-position: calc(100% + 0.5rem) !default;
   $fd-popover-top-position-noarrow: 100% !default;
   $fd-popover-left-position: 0 !default;
-  $fd-popover-border: solid 1px $fd-forms-border-color !default;
   $fd-popover-z-index: map-get($fd-z-index-levels, "top") !default;
   $fd-popover-background-color: var(--sapGroup_ContentBackground) !default;
   $fd-popover-border-radius: var(--sapElement_BorderCornerRadius) !default;
@@ -26,7 +25,6 @@ $block: #{$fd-namespace}-popover;
   $fd-popover-arrow-color: var(--sapGroup_ContentBorderColor) !default;
 
   $fd-popover-transition-params: $fd-animation--speed !default;
-  $fd-popover-transition-distance: -1rem !default;
 
   @include fd-reset();
 
@@ -54,9 +52,9 @@ $block: #{$fd-namespace}-popover;
     background: $fd-popover-background-color;
     opacity: 1;
     visibility: visible;
-    transition: all $fd-popover-transition-params;
     left: $fd-popover-left-position;
     top: $fd-popover-top-position;
+    transition: all $fd-popover-transition-params;
     transform: translateY(0);
 
     @include fd-rtl() {
@@ -146,17 +144,21 @@ $block: #{$fd-namespace}-popover;
 
       &.fd-popover__body--left {
         left: 0;
+        right: auto;
 
         @include fd-rtl() {
           right: 0;
+          left: auto;
         }
       }
 
       &.fd-popover__body--right {
         right: 0;
+        left: auto;
 
         @include fd-rtl() {
           left: 0;
+          right: auto;
         }
       }
     }
@@ -166,7 +168,6 @@ $block: #{$fd-namespace}-popover;
       z-index: 1;
       opacity: 0;
       visibility: hidden;
-      transform: translateY($fd-popover-transition-distance);
     }
   }
 
