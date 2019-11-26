@@ -6,5 +6,8 @@ token:
     aria={}
 -->
 {% macro token(properties={}, modifier={}, state={}, aria={}) -%}
-<span class="fd-token{{ modifier.block | modifier('token') }}{{ state | state }}"{{ aria | aria }} role="button">{{ properties.label }}</span>
+<span class="fd-token{{ modifier.block | modifier('token') }}{{ state | state }}"{{ aria | aria }} role="button">
+    {{ properties.label }}
+    <button class="fd-token__close"></button>
+</span>
 {%- endmacro %}

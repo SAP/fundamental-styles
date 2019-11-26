@@ -1,0 +1,43 @@
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+$block: #{$fd-namespace}-tokenizer;
+
+.#{$block} {
+
+  $fd-tokenizer-compact-spacing: 0.25rem;
+  $fd-tokenizer-spacing: 0.3125rem;
+
+  background-color: var(--sapField_Background);
+  padding-left: $fd-tokenizer-spacing;
+  padding-right: $fd-tokenizer-spacing;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+
+  .fd-token {
+    margin-right: $fd-tokenizer-spacing;
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    min-width: 3rem;
+  }
+
+  &--compact {
+    padding-left: $fd-tokenizer-compact-spacing;
+    padding-right: $fd-tokenizer-compact-spacing;
+
+    .#{$block}__input {
+      min-width: 2rem;
+    }
+
+    .fd-token {
+      margin-right: $fd-tokenizer-compact-spacing;
+      display: flex;
+    }
+  }
+}
