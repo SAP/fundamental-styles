@@ -12,16 +12,56 @@
 $block: #{$fd-namespace}-tabs;
 
 .#{$block} {
+  @mixin tabs-semantic($color) {
+    .#{$block}__icon {
+      color: $color;
+      border-color: $color;
+    }
+
+    .#{$block}__link {
+      color: $color;
+
+      @include fd-selected() {
+        color: $color;
+
+        &::after {
+          background-color: $color;
+        }
+
+        .#{$block}__icon {
+          color: var(--sapContent_ContrastIconColor);
+          background-color: $color;
+        }
+      }
+
+      @include fd-hover() {
+        color: $color;
+      }
+
+      &:link {
+        color: $color;
+      }
+    }
+  }
+
   $fd-tabs-margin-bottom: $fd-margin-bottom !default;
   $fd-tabs-border-width: 1px !default;
   $fd-tabs-border-color: fd-color("neutral", 3) !default;
   $fd-tabs-background-color: fd-color("background", 2) !default;
   $fd-tabs-link-color: fd-color("text", 2) !default;
-  $fd-tabs-link-padding-y: fd-space("s") !default;
+  $fd-tabs-selected-color: var(--sapSelectedColor);
+  $fd-tabs-link-padding-y: 0.875rem !default;
+  $fd-tabs-icon-link-padding-y: 1rem !default;
   $fd-tabs-link-padding-x: fd-space("s") !default;
   $fd-tabs-link-border-width: 3px !default;
   $fd-tabs-link-border-color: fd-color("action", 1) !default;
   $fd-tabs-link-transition-params: $fd-animation--speed ease-in !default;
+  $fd-tabs-icon-size: 1.125rem;
+  $fd-tabs-icon-selection-height: 2.625rem;
+  $fd-tabs-compact-icon-selection-height: 1.875rem;
+  $fd-tabs-selection-padding-x: 0.188rem;
+  $fd-tabs-compact-icon-size: 1rem;
+  $fd-tabs-label-color: var(--sapContent_LabelColor);
 
   --fd-tabs-border-color: var(--fd-color-neutral-3);
   --fd-tabs-background-color: var(--fd-color-background-2);
@@ -41,10 +81,56 @@ $block: #{$fd-namespace}-tabs;
 
   @include fd-var-color("border-bottom-color", $fd-tabs-background-color, --fd-tabs-background-color);
 
+  &__count {
+    @include fd-reset();
+
+    line-height: 1rem;
+    padding-bottom: 0.125rem;
+    color: $fd-tabs-label-color;
+  }
+
   &__item {
     @include fd-reset();
 
-    padding: 0 $fd-tabs-link-padding-x;
+    position: relative;
+    padding: $fd-tabs-link-padding-y $fd-tabs-link-padding-x;
+
+    &--error {
+      @include tabs-semantic(var(--sapErrorColor));
+    }
+
+    &--warning {
+      @include tabs-semantic(var(--sapWarningColor));
+    }
+
+    &--success {
+      @include tabs-semantic(var(--sapSuccessColor));
+    }
+
+    &--information {
+      @include tabs-semantic(var(--sapInformationColor));
+    }
+
+    &--neutral {
+      @include tabs-semantic(var(--sapNeutralColor));
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $fd-tabs-icon-selection-height;
+    height: $fd-tabs-icon-selection-height;
+    border: $fd-tabs-border-width solid $fd-tabs-selected-color;
+    color: $fd-tabs-selected-color;
+    border-radius: 50%;
+    background-color: transparent;
+    position: relative;
+
+    &::before {
+      font-size: $fd-tabs-icon-size;
+    }
   }
 
   &__link {
@@ -52,12 +138,14 @@ $block: #{$fd-namespace}-tabs;
 
     display: block;
     position: relative;
-    padding: $fd-tabs-link-padding-y 0;
+    padding: 0 $fd-tabs-selection-padding-x;
     text-decoration: none;
 
     @include fd-type("0");
     @include action-cursor();
     @include fd-var-color("color", $fd-tabs-link-color, --fd-tabs-link-color);
+
+    line-height: 1rem;
 
     &:link {
       @include fd-var-color("color", $fd-tabs-link-color, --fd-tabs-link-color);
@@ -67,7 +155,7 @@ $block: #{$fd-namespace}-tabs;
       transition: all $fd-tabs-link-transition-params;
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: -$fd-tabs-link-padding-y;
       left: 0;
       display: inline-block;
       height: $fd-tabs-link-border-width;
@@ -85,6 +173,11 @@ $block: #{$fd-namespace}-tabs;
 
       &::after {
         @include fd-var-color("background-color", $fd-tabs-link-border-color, --fd-tabs-link-border-color);
+      }
+
+      .#{$block}__icon {
+        color: var(--sapContent_ContrastIconColor);
+        background-color: $fd-tabs-selected-color;
       }
     }
 
@@ -105,6 +198,153 @@ $block: #{$fd-namespace}-tabs;
     &.is-expanded,
     &[aria-expanded="true"] {
       display: block;
+    }
+  }
+
+  &__counter-header {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: $fd-tabs-label-color;
+    padding-right: 0.5rem;
+  }
+
+  &__process {
+    padding: 0 0.375rem 0.25rem 0.25rem;
+  }
+
+  &__process-icon {
+    color: var(--sapContent_NonInteractiveIconColor);
+    padding: 0 0.5rem;
+
+    @include fd-icon("process", "m");
+  }
+
+  &__label {
+    display: block;
+    padding-left: 0.125rem;
+    font-size: var(--sapFontSmallSize);
+    color: $fd-tabs-label-color;
+
+    &:first-child {
+      padding-bottom: 0.375rem;
+    }
+  }
+
+  &__separator {
+    height: 2rem;
+    border-right: solid var(--sapGroup_TitleBorderColor);
+    border-right-width: 1px;
+    line-height: 2rem;
+  }
+
+  &--icon-only,
+  &--process,
+  &--filter {
+    .#{$block}__count {
+      font-size: var(--sapFontSmallSize);
+    }
+  }
+
+  &--icon-only,
+  &--process {
+    .#{$block}__link {
+      &::after {
+        bottom: -$fd-tabs-icon-link-padding-y;
+      }
+    }
+
+    .#{$block}__item {
+      padding: $fd-tabs-icon-link-padding-y 0.25rem;
+    }
+  }
+
+  &--icon-only {
+    .#{$block}__count {
+      position: absolute;
+      left: calc(100% - 1px);
+      top: 0;
+    }
+
+    .#{$block}__item {
+      margin: 0 0.75rem;
+    }
+  }
+
+  &--icon-only,
+  &--filter {
+    .#{$block}__count {
+      position: absolute;
+      left: calc(100% + 3px);
+      top: 0;
+    }
+  }
+
+  &--process {
+    .#{$block}__item {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &--filter {
+    display: flex;
+    align-items: center;
+
+    .#{$block}__item {
+      padding: 0 0.5rem;
+    }
+
+    .#{$block}__icon {
+      margin-bottom: 0.375rem;
+    }
+
+    .#{$block}__label {
+      line-height: 0.875rem;
+    }
+
+    .#{$block}__link {
+      padding: 0.875rem $fd-tabs-selection-padding-x 0.625rem $fd-tabs-selection-padding-x;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      &--header {
+        padding: 1.625rem $fd-tabs-selection-padding-x 1.875rem $fd-tabs-selection-padding-x;
+        flex-direction: row;
+        height: 5.5rem;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+    }
+  }
+
+  &--compact {
+    .#{$block}__icon {
+      font-size: $fd-tabs-compact-icon-size;
+      width: $fd-tabs-compact-icon-selection-height;
+      height: $fd-tabs-compact-icon-selection-height;
+
+      &::before {
+        font-size: $fd-tabs-compact-icon-size;
+      }
+    }
+
+    .#{$block}__process {
+      padding: 0;
+    }
+
+    .#{$block}__label {
+      &:first-child {
+        padding-bottom: 0.25rem;
+      }
+    }
+
+    .#{$block}__link--header {
+      padding: 1.375rem $fd-tabs-selection-padding-x;
+      height: 4.75rem;
     }
   }
 }
