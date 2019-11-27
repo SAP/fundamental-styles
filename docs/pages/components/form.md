@@ -82,13 +82,13 @@ Do not use the input field if:
     <br />
     <div class="fd-form-item">
         <label class="fd-form-label" for="input-05">Disabled Input:</label>
-        <input class="fd-input is-disabled" type="text" id="input-05">
+        <input class="fd-input is-disabled" type="text" id="input-05" placeholder="Field placeholder text">
     </div>
     <br />
     <br />
     <div class="fd-form-item">
         <label class="fd-form-label" for="input-06">Read-Only Input:</label>
-        <input class="fd-input" type="text" id="input-06" value="Read Only" readonly>
+        <input class="fd-input" type="text" id="input-06" readonly placeholder="Field placeholder text">
     </div>
     <br />
     <br />

@@ -64,12 +64,20 @@
   @include fd-disabled() {
     pointer-events: none;
     opacity: 0.4;
+
+    &::placeholder {
+      color: transparent;
+    }
   }
 
   &[readonly],
   &.is-readonly {
     background-color: var(--sapField_ReadOnly_Background);
     border-color: var(--sapField_ReadOnly_BorderColor);
+
+    &::placeholder {
+      color: transparent;
+    }
   }
 }
 
@@ -79,19 +87,16 @@
 
   font-family: var(--sapFontFamily);
   font-size: var(--sapFontSize);
-  line-height: 1.4;
+  font-weight: normal;
   color: var(--sapField_TextColor);
   background-color: var(--sapField_Background);
-  appearance: none;
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
   box-sizing: border-box;
-  outline: none;
   border-style: solid;
   border-width: var(--sapField_BorderWidth);
   border-color: var(--sapField_BorderColor);
   border-radius: var(--sapField_BorderCornerRadius);
-  transition: border-color $fd-animation--speed;
+  outline: none;
+  appearance: none;
 
   &::placeholder {
     font-style: italic;
