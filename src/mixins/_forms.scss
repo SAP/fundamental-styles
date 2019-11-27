@@ -97,6 +97,8 @@
   border-radius: var(--sapField_BorderCornerRadius);
   outline: none;
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 
   &::placeholder {
     font-style: italic;
