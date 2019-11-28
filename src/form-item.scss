@@ -27,6 +27,25 @@ $block: #{$fd-namespace}-form-item;
     }
   }
 
+  &--compact {
+    .fd-form-label {
+      margin-top: 0.5rem;
+    }
+
+    .fd-input {
+      min-width: 2rem;
+      height: 1.625rem;
+      margin-top: 0.1875rem;
+      margin-bottom: 0.1875rem;
+      padding: 0 0.5rem;
+      box-sizing: border-box;
+
+      &::placeholder {
+        line-height: 1.7rem;
+      }
+    }
+  }
+
   &--inline {
     display: block;
     float: left;
