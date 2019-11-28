@@ -225,6 +225,7 @@ $block: #{$fd-namespace}-alert;
 
   &__text {
     @include fd-reset();
+
     line-height: 1rem;
   }
 }
