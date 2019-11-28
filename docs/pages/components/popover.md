@@ -44,7 +44,7 @@ There are four placement options:
 * No Arrow & Right Aligned - Modifier classes `--right` at the block level wrapper `fd-popover`, `--right` and `--no-arrow` calss on the `fd-popover_body`
 
 <style media="screen">
-    .fd-popover{ margin-right: 30px;}
+    .fd-popover{ margin-right: 100px;}
 </style>
 {% capture default-popoverwmenu %}
 <div class="fd-popover">
@@ -52,7 +52,6 @@ There are four placement options:
         <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverA1" aria-expanded="false" aria-haspopup="true">Left Aligned (default)</button>
     </div>
     <div class="fd-popover__body" aria-hidden="true" id="popoverA1">
-        <div class="fd-popover__body-header">Popover Header</div>
         <nav class="fd-menu" id="">
             <ul class="fd-menu__list">
                 <li><a href="#" class="fd-menu__item">Option 1</a></li>
@@ -72,7 +71,6 @@ There are four placement options:
         <div style="margin: 20px;">
             <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('/images/product-tile.jpg');" role="presentation" aria-label="Nature"></span>
         </div>
-        <div class="fd-popover__body-footer">Popover Footer</div>
     </div>
 </div>
 
@@ -97,6 +95,37 @@ There are four placement options:
         <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverA4" aria-expanded="false" aria-haspopup="true">No Arrow & Right Aligned</button>
     </div>
     <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverA4">
+        <nav class="fd-menu" id="">
+            <ul class="fd-menu__list">
+                <li><a href="#" class="fd-menu__item">Option 1</a></li>
+                <li><a href="#" class="fd-menu__item">Option 2</a></li>
+                <li><a href="#" class="fd-menu__item">Option 3</a></li>
+                <li><a href="#" class="fd-menu__item">Option 4</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=default-popoverwmenu %}
+
+<br>
+
+## Popover with Header, Subheader and Footer
+
+* Header (without a subheader): `fd-popover__body-header`
+* Header with subheader: `fd-popover__body-header--with-subheader` should be applied if the header is followed by a subheader
+* Header in compact mode: `--compact` modifier class on the `fd-popover__body-header`
+* Subheader: `fd-popover__body-subheader`
+* Subheader in compact mode: `--compact` modifier class on the `fd-popover__body-subheader`
+* Footer: `fd-popover__body-footer`
+* Footer in compact mode: `--compact` modifier class on the `fd-popover__body-footer`
+
+{% capture default-header-footer %}
+<div class="fd-popover">
+    <div class="fd-popover__control">
+        <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverHSF1" aria-expanded="false" aria-haspopup="true">Header Only</button>
+    </div>
+    <div class="fd-popover__body" aria-hidden="true" id="popoverHSF1">
         <div class="fd-popover__body-header">Popover Header</div>
         <nav class="fd-menu" id="">
             <ul class="fd-menu__list">
@@ -106,93 +135,55 @@ There are four placement options:
                 <li><a href="#" class="fd-menu__item">Option 4</a></li>
             </ul>
         </nav>
+    </div>
+</div>
+
+<div class="fd-popover fd-popover--right">
+    <div class="fd-popover__control">
+        <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverHSF2" aria-expanded="false" aria-haspopup="true">Footer Only</button>
+    </div>
+    <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="popoverHSF2">
+        <div style="margin: 20px;">
+            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('/images/product-tile.jpg');" role="presentation" aria-label="Nature"></span>
+        </div>
         <div class="fd-popover__body-footer">Popover Footer</div>
     </div>
 </div>
-{% endcapture %}
-{% include display-component.html component=default-popoverwmenu %}
 
-<br>
-
-## Placement Options RTL 
-
-<style media="screen">
-    .fd-popover{ margin-right: 30px;}
-</style>
-{% capture default-popoverwmenu %}
-<div class="fd-popover" dir="rtl">
+<div class="fd-popover">
     <div class="fd-popover__control">
-        <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverA11" aria-expanded="false" aria-haspopup="true">Left Aligned (default)</button>
+        <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverHSF3" aria-expanded="false" aria-haspopup="true">With Header, Subheader and Footer</button>
     </div>
-    <div class="fd-popover__body" aria-hidden="true" id="popoverA11">
-        <nav class="fd-menu" id="">
-            <ul class="fd-menu__list">
-                <li><a href="#" class="fd-menu__item">Option 1</a></li>
-                <li><a href="#" class="fd-menu__item">Option 2</a></li>
-                <li><a href="#" class="fd-menu__item">Option 3</a></li>
-                <li><a href="#" class="fd-menu__item">Option 4</a></li>
-            </ul>
-        </nav>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverHSF3">
+        <div class="fd-popover__body-header fd-popover__body-header--with-subheader">Popover Header</div>
+        <div class="fd-popover__body-subheader">Popover Subheader</div>
+        <div style="margin: 20px;">
+            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('/images/product-tile.jpg');" role="presentation" aria-label="Nature"></span>
+        </div>
+        <div class="fd-popover__body-footer">Popover Footer</div>
     </div>
 </div>
 
-<div class="fd-popover fd-popover--right" dir="rtl">
+<div class="fd-popover fd-popover--right">
     <div class="fd-popover__control">
-        <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverA21" aria-expanded="false" aria-haspopup="true">Right Aligned</button>
+        <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverHSF4" aria-expanded="false" aria-haspopup="true">All Compact Mode</button>
     </div>
-    <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="popoverA21">
-        <nav class="fd-menu" id="">
-            <ul class="fd-menu__list">
-                <li><a href="#" class="fd-menu__item">Option 1</a></li>
-                <li><a href="#" class="fd-menu__item">Option 2</a></li>
-                <li><a href="#" class="fd-menu__item">Option 3</a></li>
-                <li><a href="#" class="fd-menu__item">Option 4</a></li>
-            </ul>
-        </nav>
-    </div>
-</div>
-
-<div class="fd-popover" dir="rtl">
-    <div class="fd-popover__control">
-        <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverA31" aria-expanded="false" aria-haspopup="true">No Arrow & Left Aligned</button>
-    </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverA31">
-        <nav class="fd-menu" id="">
-            <ul class="fd-menu__list">
-                <li><a href="#" class="fd-menu__item">Option 1</a></li>
-                <li><a href="#" class="fd-menu__item">Option 2</a></li>
-                <li><a href="#" class="fd-menu__item">Option 3</a></li>
-                <li><a href="#" class="fd-menu__item">Option 4</a></li>
-            </ul>
-        </nav>
-    </div>
-</div>
-
-<div class="fd-popover fd-popover--right" dir="rtl">
-    <div class="fd-popover__control">
-        <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverA41" aria-expanded="false" aria-haspopup="true">No Arrow & Right Aligned</button>
-    </div>
-    <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverA41">
-        <nav class="fd-menu" id="">
-            <ul class="fd-menu__list">
-                <li><a href="#" class="fd-menu__item">Option 1</a></li>
-                <li><a href="#" class="fd-menu__item">Option 2</a></li>
-                <li><a href="#" class="fd-menu__item">Option 3</a></li>
-                <li><a href="#" class="fd-menu__item">Option 4</a></li>
-            </ul>
-        </nav>
+    <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverHSF4">
+        <div class="fd-popover__body-header fd-popover__body-header--compact fd-popover__body-header--with-subheader">Popover Header Compact</div>
+        <div class="fd-popover__body-subheader fd-popover__body-subheader--compact">Popover Subheader Compact</div>
+        <div style="margin: 20px;">
+            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('/images/product-tile.jpg');" role="presentation" aria-label="Nature"></span>
+        </div>
+        <div class="fd-popover__body-footer fd-popover__body-footer--compact">Popover Footer Compact</div>
     </div>
 </div>
 {% endcapture %}
-{% include display-component.html component=default-popoverwmenu %}
+{% include display-component.html component=default-header-footer %}
 
 <br>
 
 ## Popover Control Examples
 Virtually any component can be used as a `fd-popover__control` to control the display of `fd-popover__body`
-<style media="screen">
-    .fd-popover{ margin-right: 30px;}
-</style>
 {% capture default-popoverwmenu %}
 <div class="fd-popover">
     <div class="fd-popover__control">
