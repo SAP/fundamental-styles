@@ -52,6 +52,7 @@ There are four placement options:
         <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverA1" aria-expanded="false" aria-haspopup="true">Left Aligned (default)</button>
     </div>
     <div class="fd-popover__body" aria-hidden="true" id="popoverA1">
+        <div class="fd-popover__body-header">Popover Header</div>
         <nav class="fd-menu" id="">
             <ul class="fd-menu__list">
                 <li><a href="#" class="fd-menu__item">Option 1</a></li>
@@ -68,14 +69,10 @@ There are four placement options:
         <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverA2" aria-expanded="false" aria-haspopup="true">Right Aligned</button>
     </div>
     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="popoverA2">
-        <nav class="fd-menu" id="">
-            <ul class="fd-menu__list">
-                <li><a href="#" class="fd-menu__item">Option 1</a></li>
-                <li><a href="#" class="fd-menu__item">Option 2</a></li>
-                <li><a href="#" class="fd-menu__item">Option 3</a></li>
-                <li><a href="#" class="fd-menu__item">Option 4</a></li>
-            </ul>
-        </nav>
+        <div style="margin: 20px;">
+            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('/images/product-tile.jpg');" role="presentation" aria-label="Nature"></span>
+        </div>
+        <div class="fd-popover__body-footer">Popover Footer</div>
     </div>
 </div>
 
@@ -100,6 +97,7 @@ There are four placement options:
         <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverA4" aria-expanded="false" aria-haspopup="true">No Arrow & Right Aligned</button>
     </div>
     <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverA4">
+        <div class="fd-popover__body-header">Popover Header</div>
         <nav class="fd-menu" id="">
             <ul class="fd-menu__list">
                 <li><a href="#" class="fd-menu__item">Option 1</a></li>
@@ -108,6 +106,7 @@ There are four placement options:
                 <li><a href="#" class="fd-menu__item">Option 4</a></li>
             </ul>
         </nav>
+        <div class="fd-popover__body-footer">Popover Footer</div>
     </div>
 </div>
 {% endcapture %}
