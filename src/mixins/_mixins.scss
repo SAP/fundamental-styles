@@ -274,31 +274,32 @@
   text-decoration: none;
   display: inline-block;
   transition: all $fd-animation--speed ease-in;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: var(--sapLinkColor);
+
+  &--emphasized {
+    font-weight: bold;
+  }
 
   @include fd-hover() {
     color: var(--sapLink_Hover_Color);
-    border-bottom-color: var(--sapLink_Hover_Color);
+    text-decoration: underline;
   }
 
   &:visited {
     color: var(--sapLink_Visited_Color);
-    border-bottom-color: var(--sapLink_Visited_Color);
   }
 
   @include fd-disabled() {
     opacity: 0.4;
     color: var(--sapLinkColor);
-    border-bottom-color: var(--sapLinkColor);
-    cursor: not-allowed;
+    pointer-events: none;
   }
 
-  &:focus {
-    outline-style: dotted;
-    outline-width: 1px;
-    outline-color: var(--sapLinkColor);
+  @include fd-focus() {
+    box-shadow: none;
+    outline-offset: -0.1875rem;
+    outline-width: var(--sapContent_FocusWidth);
+    outline-color: var(--sapContent_FocusColor);
+    outline-style: var(--sapContent_FocusStyle);
   }
 }
 

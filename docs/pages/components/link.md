@@ -15,18 +15,18 @@ Used when extra emphasis is needed especially when a link needs to standout from
 <br>
 
 {% capture default %}
-<a href="#" class="fd-link">Standard Link</a>
+<a href="#" class="fd-link" tabindex="0">Standard Link</a>
 <br><br>
-<a href="#" class="fd-link"><strong>Emphasized Link</strong></a>
+<a href="#" class="fd-link fd-link--emphasized" tabindex="0">Emphasized Link</a>
 <br><br>
-<a href="#" class="fd-link" aria-disabled="true">Disabled Link</a>
+<a class="fd-link" aria-disabled="true">Disabled Link</a>
 <br><br>
-<a href="#" class="fd-link">
+<a href="#" class="fd-link" tabindex="0">
     Icon Left Link 
     <span class="sap-icon--slim-arrow-right sap-icon--s"></span>
 </a>
 <br><br>
-<a href="#" class="fd-link">
+<a href="#" class="fd-link" tabindex="0">
     <span class="sap-icon--slim-arrow-left sap-icon--s"></span> 
     Icon Right Link
 </a>

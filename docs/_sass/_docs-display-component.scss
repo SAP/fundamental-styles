@@ -69,7 +69,6 @@
     .fd-mega-menu__link,
     .fd-mega-menu__sublink,
     .fd-dropdown__item,
-    .fd-breadcrumb__link,
     .fd-side-nav__link {
         color: inherit;
         &:hover {
@@ -263,14 +262,6 @@
         top: 10px;
     }
 
-    .fd-breadcrumb__link {
-        color: #0a6ed1;
-        &:hover {
-            color: #0a6ed1;
-            text-decoration: none;
-        }
-    }
-
     .fd-side-nav {
         max-width: 250px;
     }
@@ -304,12 +295,6 @@
     a.is-disabled {
         color: rgba(10, 110, 209, 0.4);
         cursor: not-allowed;
-        text-decoration: none;
-    }
-
-    .fd-link:hover,
-    .fd-link:active,
-    .fd-link:focus {
         text-decoration: none;
     }
 
