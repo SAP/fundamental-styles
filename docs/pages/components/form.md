@@ -34,10 +34,7 @@ Do not use the input field if:
 {% capture inputs %} 
     <div class="fd-form-item fd-has-margin-none fd-popover">
         <label class="fd-form-label" for="input-1">Default input:</label>
-        <div class="fd-form-input-message-group">
-                <input class="fd-input fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverA2" aria-expanded="false" aria-haspopup="true">
-            <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--success" aria-hidden="true" id="popoverA2">Success message</span>
-        </div>
+            <input class="fd-input fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text">
     </div>
     <br><br>
     <div class="fd-form-item">
