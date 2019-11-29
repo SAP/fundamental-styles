@@ -13,15 +13,11 @@ $block: #{$fd-namespace}-form-label;
 
   width: fit-content;
   max-width: 100%;
-  display: inline-block;
-  position: relative;
   font-size: var(--sapFontSize);
   color: var(--sapContent_LabelColor);
   padding-right: 6px;
   margin-right: 8px;
   cursor: text;
-  margin-top: 0.875rem;
-  align-self: flex-start;
 
   @include fd-rtl() {
     padding-left: 6px;

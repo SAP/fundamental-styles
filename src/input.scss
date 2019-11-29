@@ -13,8 +13,11 @@ $block: #{$fd-namespace}-input;
   min-width: 2.75rem;
   height: $fd-form-input-height;
   margin-top: $fd-form-input-margin;
+  height: 2.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
   padding: 0 0.625rem;
-  margin-bottom: 0;
+  cursor: text;
 
   &:last-child {
     margin-bottom: $fd-form-input-margin;
@@ -35,6 +38,19 @@ $block: #{$fd-namespace}-input;
     line-height: 2.4;
     font-style: italic;
     color: var(--sapField_PlaceholderTextColor);
+  }
+
+  &--compact {
+    margin-top: 0.1875rem;
+    margin-bottom: 0.1875rem;
+    min-width: 2rem;
+    height: 1.625rem;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+
+    &::placeholder {
+      line-height: 1.7rem;
+    }
   }
 
   &--no-number-spinner {

@@ -40,9 +40,9 @@ Do not use the input field if:
         </div>
     </div>
     <br><br>
-    <div class="fd-form-item fd-form-item--compact">
+    <div class="fd-form-item">
         <label class="fd-form-label" for="input-1b">Compact Input:</label>
-        <input class="fd-input" type="text" id="input-1b" placeholder="Field placeholder text">
+        <input class="fd-input fd-input--compact" type="text" id="input-1b" placeholder="Field placeholder text">
     </div>
     <br />
     <br />
@@ -102,15 +102,14 @@ Do not use the input field if:
         </div>
     </div>
     <br><br>
-    <div class="fd-form-item fd-form-item--compact fd-form-item--horizontal fd-has-margin-none fd-popover">
+    <div class="fd-form-item fd-form-item--horizontal fd-has-margin-none fd-popover">
         <label class="fd-form-label" for="input-1">Compact input:</label>
-        <div class="fd-form-input-message-group">
-                <input class="fd-input fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD2" aria-expanded="false" aria-haspopup="true">
+        <div class="fd-form-input-message-group fd-form-input-message-group--compact">
+                <input class="fd-input fd-input--compact fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD2" aria-expanded="false" aria-haspopup="true">
             <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message" aria-hidden="true" id="popoverD2">Normal message</span>
         </div>
     </div>
-    <br />
-    <br />
+    <br /><br />
     <div class="fd-form-item fd-form-item--horizontal">
         <label class="fd-form-label fd-form-label--required" for="input-1c">Required Input:</label>
         <input class="fd-input" type="text" id="input-1c" placeholder="Field placeholder text">

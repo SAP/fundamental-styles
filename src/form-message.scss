@@ -17,6 +17,7 @@ $block: #{$fd-namespace}-form-message;
   max-width: 22rem;
   padding: 0.5rem;
   margin-left: 1px;
+  margin-top: -0.25rem;
   font-size: var(--sapFontSmallSize);
   font-weight: normal;
   line-height: normal;
@@ -25,6 +26,10 @@ $block: #{$fd-namespace}-form-message;
   text-overflow: ellipsis;
   border-radius: 0 !important;
   white-space: normal !important;
+
+  @include fd-rtl() {
+    right: 0;
+  }
 
   &--error {
     background-color: var(--sapErrorBackground);
