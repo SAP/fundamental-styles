@@ -12,7 +12,7 @@ $block: #{$fd-namespace}-alert;
 .#{$block} {
   $fd-alert-border: 1px solid;
   $fd-alert-border-radius: 0.25rem;
-  $fd-alert-padding: 0.375rem 1rem;
+  $fd-alert-padding: 0.4375rem 1rem;
   $fd-alert-padding-default: 1rem;
   $fd-alert-padding-dismissible: 2.5rem;
   $fd-alert-padding-status: 2.5rem;
@@ -27,13 +27,8 @@ $block: #{$fd-namespace}-alert;
 
   @mixin fd-alert-close-btn-container {
     position: absolute;
-    top: 0.125rem;
-    right: 0.125rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 2rem;
-    height: 1.625rem;
+    top: 0.0625rem;
+    right: 0.0625rem;
   }
 
   // SUCCESS
