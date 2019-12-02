@@ -150,13 +150,6 @@ Tabs are based on a folder metaphor and used to separate content into different 
             </span>
         </a>
     </li>
-    <li class="fd-tabs__item fd-tabs__item--icon-only">
-        <a class="fd-tabs__link" aria-controls="t8oU9X" aria-disabled="true" role="tab">
-            <span class="fd-tabs__icon sap-icon--cart">
-                <p class="fd-tabs__count">100</p>
-            </span>
-        </a>
-    </li>
 </ul>
 <div class="fd-tabs__panel" aria-expanded="false" id="pliA92" role="tabpanel">
     Lorem ipsum
@@ -166,9 +159,6 @@ Tabs are based on a folder metaphor and used to separate content into different 
 </div>
 <div class="fd-tabs__panel" aria-expanded="false" id="QrQ5Cl" role="tabpanel">
     Nullam ut
-</div>
-<div class="fd-tabs__panel" aria-expanded="false" id="t8oU9X" role="tabpanel">
-    Tincidunt nunc
 </div>
 {% endcapture %}
 {% include display-component.html component=icon-only-tab %}

@@ -5,7 +5,7 @@
 /*!
 .fd-tabs+()
     .fd-tabs__item?
-    .fd-tabs__link+((.is-selected|[aria-selected=true]),(.is-disabled|[aria-disabled=true]))
+    .fd-tabs__link+((.is-selected|[aria-selected=true]),)
 .fd-tabs__panel+([aria-expanded]|.is-expanded)
 */
 
@@ -180,12 +180,6 @@ $block: #{$fd-namespace}-tabs;
         background-color: $fd-tabs-selected-color;
       }
     }
-
-    @include fd-disabled() {
-      @include fd-var-color("color", fd-color-state("disabled", "action"), --fd-color-action-disabled);
-
-      cursor: not-allowed;
-    }
   }
 
   &__panel {
@@ -346,5 +340,19 @@ $block: #{$fd-namespace}-tabs;
       padding: 1.375rem $fd-tabs-selection-padding-x;
       height: 4.75rem;
     }
+  }
+
+  &--s {
+    margin: 0 1rem;
+  }
+
+  &--m,
+  &--l {
+    margin: 0 2rem;
+  }
+
+  &--xl,
+  &--xxl {
+    margin: 0 3rem;
   }
 }
