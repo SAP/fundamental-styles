@@ -17,6 +17,7 @@ $block: #{$fd-namespace}-input;
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
   padding: 0 0.625rem;
+  z-index: 1;
   cursor: text;
 
   &:last-child {
