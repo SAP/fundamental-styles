@@ -22,7 +22,9 @@ $block: #{$fd-namespace}-form-label;
 
   @include fd-rtl() {
     padding-left: 6px;
+    padding-right: 0;
     margin-left: 8px;
+    margin-right: 0;
   }
 
   &.is-disabled {

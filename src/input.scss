@@ -13,8 +13,6 @@ $block: #{$fd-namespace}-input;
   min-width: 2.75rem;
   height: $fd-form-input-height;
   margin-top: $fd-form-input-margin;
-  height: 2.25rem;
-  margin-top: 0.25rem;
   margin-bottom: 0.25rem;
   padding: 0 0.625rem;
   z-index: 1;
@@ -22,15 +20,6 @@ $block: #{$fd-namespace}-input;
 
   &:last-child {
     margin-bottom: $fd-form-input-margin;
-  }
-
-  &--compact {
-    min-width: 2rem;
-    height: $fd-form-input-height--compact;
-    margin-top: $fd-form-input-margin--compact;
-    margin-bottom: $fd-form-input-margin--compact;
-    padding: 0 0.5rem;
-    box-sizing: border-box;
   }
 
   &::placeholder {
@@ -42,10 +31,10 @@ $block: #{$fd-namespace}-input;
   }
 
   &--compact {
-    margin-top: 0.1875rem;
-    margin-bottom: 0.1875rem;
     min-width: 2rem;
-    height: 1.625rem;
+    height: $fd-form-input-height--compact;
+    margin-top: $fd-form-input-margin--compact;
+    margin-bottom: $fd-form-input-margin--compact;
     padding: 0 0.5rem;
     box-sizing: border-box;
 
