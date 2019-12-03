@@ -101,9 +101,9 @@ Do not use the input field if:
     <br><br>
     <div class="fd-form-item fd-form-item--horizontal fd-has-margin-none fd-popover">
         <label class="fd-form-label" for="input-1">Compact input:</label>
-        <div class="fd-form-input-message-group fd-form-input-message-group--compact">
+        <div class="fd-form-input-message-group">
             <input class="fd-input fd-input--compact fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD2" aria-expanded="false" aria-haspopup="true">
-            <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message" aria-hidden="true" id="popoverD2">Normal message</span>
+            <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--compact" aria-hidden="true" id="popoverD2">Normal message</span>
         </div>
     </div>
     <br /><br />

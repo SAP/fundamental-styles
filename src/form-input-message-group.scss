@@ -10,15 +10,6 @@ $block: #{$fd-namespace}-form-input-message-group;
 
 .#{$block} {
   flex: 1;
+  z-index: 2;
   position: relative;
-
-  .fd-input {
-    width: 100%;
-  }
-
-  &--compact {
-    .fd-form-message {
-      margin-top: -0.1875rem;
-    }
-  }
 }

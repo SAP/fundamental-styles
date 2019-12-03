@@ -11,6 +11,7 @@ $block: #{$fd-namespace}-input;
   @include fd-form-text();
 
   min-width: 2.75rem;
+  width: 100%;
   height: $fd-form-input-height;
   margin-top: $fd-form-input-margin;
   margin-bottom: 0.25rem;
