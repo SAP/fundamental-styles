@@ -131,13 +131,13 @@ $fd-checkbox-margin-compact: 0.5rem;
 
     &:checked {
       &::before {
-        color: var(--sapField_WarningColor);
+        color: var(--sapField_TextColor);
       }
     }
 
     &:indeterminate {
       &::before {
-        background-color: var(--sapField_WarningColor);
+        background-color: var(--sapField_TextColor);
       }
     }
 

@@ -87,4 +87,12 @@
   --sapField_InformationColor: #bc3f8c;
   --sapField_ReadOnly_BorderColor: teal;
   --sapField_RequiredColor: #32c71c;
+  --sapField_Hover_Background: #945ef7;
+  --sapField_Hover_BorderColor: pink;
+  --sapField_InvalidBackground: rgb(205, 102, 119);
+  --sapField_SuccessBackground: DarkRed;
+  --sapField_WarningBackground: #a8fac7;
+  --sapField_TextColor: orange;
+  --sapField_InformationBackground: #bc3f8c;
+  --sapField_ReadOnly_Background: #4f9344;
 }
