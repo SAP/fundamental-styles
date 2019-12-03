@@ -7,12 +7,12 @@
 {% set types = ["text", "textarea"] %}
 {% set addons = [["", "km/h"], ["$", ""], ["$", ".00"]] %}
 {% set readonly = [false, true] %}
+{% set states = ["valid", "invalid", "warning", "information"] %}
 
 <h2>Input Groups w/ addon text</h2>
 
 {%- set example %}
     {%- for ro in readonly %}
-        <h3>{{ 'Disabled' if ro }}</h3>
         {%- for type in types %}
             {%- for before, after in addons %}
                 {{ input_group(
@@ -21,13 +21,13 @@
                         before: before,
                         after: after,
                         input: {
-                            state: {
-                                readonly: ro
-                            },
                             properties: {
                                 value: "19387309"
                             }
                         }
+                    },
+                    modifier={
+                        disabled: ro
                     })
                 }}
                 <br />
@@ -36,6 +36,41 @@
     {%- endfor %}
 {%- endset %}
 {{ format(example) }}
+
+<br /><br />
+<h2>Input Groups w/ states</h2>
+{% set addons = [["$", ""]] %}
+{%- set example %}
+{%- for st in states %}
+    {%- for ro in readonly  %}
+        {%- for type in types %}
+            {%- for before, after in addons %}
+                {{ input_group(
+                    properties={
+                        type: type,
+                        before: before,
+                        after: after,
+                        input: {
+                            properties: {
+                                value: "19387309"
+                            }
+                        }
+                    },
+                    modifier={
+                        disabled: ro,
+                        state: st
+                    })
+                }}
+                <br />
+            {%- endfor %}
+        {%- endfor %}
+    {%- endfor %}
+{%- endfor %}
+{%- endset %}
+{{ format(example) }}
+
+
+
 
 <br /><br />
 <h2>Input Groups w/ addon buttons</h2>
@@ -56,9 +91,6 @@
                         before: before,
                         after: after,
                         input: {
-                            state: {
-                                readonly: ro
-                            },
                             properties: {
                                 value: "19387309"
                             }
@@ -66,7 +98,8 @@
                     },
                     modifier={
                         before: ["button"],
-                        after: ["button"]
+                        after: ["button"],
+                        disabled: ro
                     })
                 }}
                 <br />
@@ -95,9 +128,6 @@
                     before: before,
                     after: after,
                     input: {
-                        state: {
-                            readonly: ro
-                        },
                         properties: {
                             value: "19387309"
                         }
@@ -105,7 +135,8 @@
                 },
                 modifier={
                     before: ["button"],
-                    after: ["button"]
+                    after: ["button"],
+                    disabled: ro
                 })
             }}
             <br />

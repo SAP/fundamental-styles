@@ -22,7 +22,6 @@ $fd-radio-inner-circle-diameter-compact: 0.375rem;
   height: $fd-radio-outer-circle-diameter;
   width: $fd-radio-outer-circle-diameter;
   margin: $fd-radio-outer-circle-margin;
-  // vertical-align: middle;
   border-radius: 50%;
   display: inline-flex;
   justify-content: center;
@@ -106,7 +105,7 @@ $fd-radio-inner-circle-diameter-compact: 0.375rem;
 
     &:checked {
       &::after {
-        background-color: var(--sapField_WarningColor);
+        background-color: var(--sapField_TextColor);
       }
     }
 

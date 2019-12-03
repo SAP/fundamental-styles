@@ -9,18 +9,30 @@
 
 $block: #{$fd-namespace}-input-group;
 
+$fd-input-border-radius: var(--sapField_BorderCornerRadius);
+
 .#{$block} {
   @include fd-reset();
 
   display: flex;
+  border-style: solid;
+  border-width: var(--sapField_BorderWidth);
+  border-color: var(--sapField_BorderColor);
+  border-radius: var(--sapField_BorderCornerRadius);
+  width: 100%;
+
+  // states
+  @include fd-form-states();
 
   > * {
     &:first-child {
+      border-radius: $fd-input-border-radius;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
 
     &:last-child {
+      border-radius: $fd-input-border-radius;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
@@ -31,17 +43,15 @@ $block: #{$fd-namespace}-input-group;
 
     @include fd-rtl() {
       &:first-child {
+        border-radius: $fd-input-border-radius;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        border-top-right-radius: $fd-border-radius;
-        border-bottom-right-radius: $fd-border-radius;
       }
 
       &:last-child {
+        border-radius: $fd-input-border-radius;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
-        border-top-left-radius: $fd-border-radius;
-        border-bottom-left-radius: $fd-border-radius;
       }
     }
   }
@@ -49,78 +59,81 @@ $block: #{$fd-namespace}-input-group;
   .#{$block}__input {
     @include fd-reset-child-spacing();
 
-    width: 100%;
-    z-index: map-get($fd-z-index-levels, "first");
+    border: none;
+    flex: 1;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+
+    @include fd-focus() {
+      outline: none;
+      box-shadow: none;
+    }
+
+    @include fd-disabled() {
+      pointer-events: none;
+      opacity: 0.4;
+    }
+
+    &:nth-child(1) {
+      padding-left: 0.625rem;
+      padding-right: 0.25rem;
+
+      @include fd-rtl() {
+        padding-left: 0.25rem;
+        padding-right: 0.625rem;
+      }
+    }
+
+    &:nth-last-child(1) {
+      padding-left: 0.25rem;
+      padding-right: 0.625rem;
+
+      @include fd-rtl() {
+        padding-left: 0.625rem;
+        padding-right: 0.25rem;
+      }
+    }
   }
 
   &--inline {
     display: inline-flex;
     vertical-align: bottom;
+    width: auto;
   }
 
   &__addon {
     @include fd-reset();
+    @include fd-flex-center();
+    @include fd-ellipsis();
 
-    flex: 0 0 auto;
-    z-index: auto;
-
-    @include fd-var-color("color", fd-color("text", 3), --fd-color-text-3);
-
-    padding: 0 fd-space(3);
-    border-style: solid;
-    border-width: 1px;
-
-    @include fd-var-color("border-color", $fd-forms-border-color, --fd-forms-border-color);
-    @include fd-var-color("background-color", fd-color(neutral, 1), --fd-color-neutral-1);
-
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    border-radius: $fd-border-radius;
+    background-color: var(--sapField_Background);
+    font-size: var(--sapFontLargeSize);
+    min-width: 2.25rem;
+    min-height: $fd-form-input-height;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
 
     &--readonly {
       opacity: 0.4;
     }
 
-    &:first-child {
-      margin-right: -1px;
-    }
-
-    &:last-child {
-      margin-left: -1px;
-    }
-
-    @include fd-rtl() {
-      &:first-child {
-        margin-left: -1px;
-        margin-right: 0;
-      }
-
-      &:last-child {
-        margin-right: -1px;
-        margin-left: 0;
-      }
-    }
-
     &--button {
-      border: none;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      border: none;
+      border-radius: $fd-input-border-radius;
 
       .#{$block}__button {
         @include fd-reset-child-spacing();
 
         height: 100%;
         max-height: 100%;
-        border-style: solid;
-        border-width: 1px;
-
-        @include fd-var-color("border-color", $fd-forms-border-color, --fd-forms-border-color);
-        @include fd-var-color("background-color", fd-color(neutral, 1), --fd-color-neutral-1);
       }
 
       &:first-child {
         > * {
-          margin-right: -1px;
+          border-radius: $fd-input-border-radius;
           border-top-right-radius: 0;
           border-bottom-right-radius: 0;
 
@@ -130,14 +143,13 @@ $block: #{$fd-namespace}-input-group;
 
           &:last-child:not(:first-child) {
             border-top-left-radius: 0;
-            margin-top: -1px;
           }
         }
       }
 
       &:last-child {
         > * {
-          margin-left: -1px;
+          border-radius: $fd-input-border-radius;
           border-top-left-radius: 0;
           border-bottom-left-radius: 0;
 
@@ -147,20 +159,25 @@ $block: #{$fd-namespace}-input-group;
 
           &:last-child:not(:first-child) {
             border-top-right-radius: 0;
-            margin-top: -1px;
           }
+        }
+      }
+
+      &:not(:first-child):not(:last-child) {
+        .#{$block}__button {
+          border-radius: 0;
         }
       }
 
       @include fd-rtl() {
         &:first-child {
           > * {
-            margin-left: -1px;
+            border-radius: $fd-input-border-radius;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
             margin-right: 0;
-            border-top-right-radius: $fd-border-radius;
-            border-bottom-right-radius: $fd-border-radius;
+            border-top-right-radius: $fd-input-border-radius;
+            border-bottom-right-radius: $fd-input-border-radius;
 
             &:first-child:not(:last-child) {
               border-bottom-right-radius: 0;
@@ -168,19 +185,18 @@ $block: #{$fd-namespace}-input-group;
 
             &:last-child:not(:first-child) {
               border-top-right-radius: 0;
-              margin-top: -1px;
             }
           }
         }
 
         &:last-child {
           > * {
-            margin-right: -1px;
+            border-radius: $fd-input-border-radius;
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
             margin-left: 0;
-            border-top-left-radius: $fd-border-radius;
-            border-bottom-left-radius: $fd-border-radius;
+            border-top-left-radius: $fd-input-border-radius;
+            border-bottom-left-radius: $fd-input-border-radius;
 
             &:first-child:not(:last-child) {
               border-bottom-left-radius: 0;
@@ -188,11 +204,29 @@ $block: #{$fd-namespace}-input-group;
 
             &:last-child:not(:first-child) {
               border-top-left-radius: 0;
-              margin-top: -1px;
             }
           }
         }
       }
     }
+  }
+
+  &__button {
+    @include fd-ellipsis();
+
+    border: none;
+    width: 100%;
+  }
+
+  &--compact {
+    .#{$block}__input,
+    .#{$block}__addon {
+      min-height: $fd-form-input-height--compact;
+      height: $fd-form-input-height--compact;
+    }
+  }
+
+  .#{$fd-namespace}-textarea {
+    resize: vertical;
   }
 }

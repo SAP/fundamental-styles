@@ -11,27 +11,20 @@ $block: #{$fd-namespace}-input;
   @include fd-form-text();
 
   min-width: 2.75rem;
-  height: 2.25rem;
-  margin-top: 0.25rem;
+  height: $fd-form-input-height;
+  margin-top: $fd-form-input-margin;
   padding: 0 0.625rem;
   margin-bottom: 0;
 
   &:last-child {
-    margin-bottom: 0.25rem;
-  }
-
-  &::placeholder {
-    @include fd-reset();
-
-    font-style: italic;
-    color: var(--sapField_PlaceholderTextColor);
+    margin-bottom: $fd-form-input-margin;
   }
 
   &--compact {
     min-width: 2rem;
-    height: 1.625rem;
-    margin-top: 0.1875rem;
-    margin-bottom: 0.1875rem;
+    height: $fd-form-input-height--compact;
+    margin-top: $fd-form-input-margin--compact;
+    margin-bottom: $fd-form-input-margin--compact;
     padding: 0 0.5rem;
     box-sizing: border-box;
   }
@@ -44,5 +37,9 @@ $block: #{$fd-namespace}-input;
     }
 
     -moz-appearance: textfield;
+  }
+
+  &.right-align {
+    text-align: right;
   }
 }

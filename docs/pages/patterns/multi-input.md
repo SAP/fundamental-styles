@@ -29,22 +29,19 @@ summary:
             <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="F4GcX348a">
                 <nav class="fd-menu">
                 <ul class="fd-menu__list">
-                    <li>
-                        <label for="a1" class="fd-menu__item">
-                            <input type="checkbox" class="fd-checkbox" id="a1">
-                            Apple
+                    <li class="fd-form-item">
+                        <label class="fd-form-label fd-form-label--checkbox" for="a1">
+                            <input type="checkbox" class="fd-checkbox" id="a1">Apple
                         </label>
                     </li>
-                    <li>
-                        <label for="b1" class="fd-menu__item">
-                            <input type="checkbox" class="fd-checkbox" id="b1" checked>
-                            Berry
+                    <li class="fd-form-item">
+                        <label class="fd-form-label fd-form-label--checkbox" for="b1">
+                            <input type="checkbox" class="fd-checkbox" id="b1">Berry
                         </label>
                     </li>
-                    <li>
-                        <label for="c1" class="fd-menu__item">
-                            <input type="checkbox" class="fd-checkbox" id="c1">
-                            Banana
+                    <li class="fd-form-item">
+                        <label class="fd-form-label fd-form-label--checkbox" for="c1">
+                            <input type="checkbox" class="fd-checkbox" id="c1">Banana
                         </label>
                     </li>
                 </ul>
@@ -66,8 +63,8 @@ summary:
         <div class="fd-popover">
             <div class="fd-popover__control">
                 <div aria-label="Image label" aria-controls="F4GcX34a" aria-expanded="false" aria-haspopup="true">
-                    <div class="fd-input-group">
-                        <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
+                    <div class="fd-input-group fd-input-group--compact">
+                        <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Fruit">
                         <span class="fd-input-group__addon fd-input-group__addon--button">
                             <button class="fd-input-group__button fd-button--light fd-button--compact sap-icon--navigation-down-arrow"></button>
                         </span>
@@ -77,22 +74,19 @@ summary:
             <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="F4GcX34a">
                 <nav class="fd-menu">
                 <ul class="fd-menu__list">
-                    <li>
-                        <label for="a2" class="fd-menu__item">
-                            <input type="checkbox" class="fd-checkbox" id="a2">
-                            Apple
+                    <li class="fd-form-item">
+                        <label class="fd-form-label fd-form-label--checkbox" for="a2">
+                            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="a2">Apple
                         </label>
                     </li>
-                    <li>
-                        <label for="b2" class="fd-menu__item">
-                            <input type="checkbox" class="fd-checkbox" id="b2">
-                            Berry
+                    <li class="fd-form-item">
+                        <label class="fd-form-label fd-form-label--checkbox" for="b2">
+                            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="b2">Berry
                         </label>
                     </li>
-                    <li>
-                        <label for="c2" class="fd-menu__item">
-                            <input type="checkbox" class="fd-checkbox" id="c2">
-                            Banana
+                    <li class="fd-form-item">
+                        <label class="fd-form-label fd-form-label--checkbox" for="c2">
+                            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="c2">Banana
                         </label>
                     </li>
                 </ul>

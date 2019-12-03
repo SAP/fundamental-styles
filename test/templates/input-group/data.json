@@ -9,11 +9,13 @@
     },
     "modifier": {
         "block": [],
+        "state": "",
         "before": [
             "button"
         ],
         "after": [
             "button"
-        ]
+        ],
+        "disabled": false
     }
 }
