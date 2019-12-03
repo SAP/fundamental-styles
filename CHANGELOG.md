@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.0-rc.21"></a>
+# [0.4.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.20...v0.4.0-rc.21) (2019-12-03)
+
+
+### Features
+
+* input group refactoring ([#442](https://github.com/SAP/fundamental-styles/issues/442)) ([57aff0d](https://github.com/SAP/fundamental-styles/commit/57aff0d))
+
+
+
 <a name="0.4.0-rc.20"></a>
 # [0.4.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.19...v0.4.0-rc.20) (2019-11-26)
 
