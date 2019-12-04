@@ -9,25 +9,37 @@ toggle:
 {% macro toggle(properties={}, modifier={}, state={}, aria={}, classes=[]) -%}
 {%- set _id = properties.id or utils.id() -%}
 {%- set semantic = 'false' -%}
+{%- set noLabel = 'false' -%}
 {%- for m in modifier.block -%}
     {%- if m == 'semantic' -%}
         {%- set semantic = 'true' -%}
     {%- endif -%}
+    {%- if m == 'no-label' -%}
+        {%- set noLabel = 'true' -%}
+    {%- endif -%}
 {%- endfor -%}
-<span class="fd-toggle{{ modifier.block | modifier('toggle') }}{{ classes | classes }}"{{ aria | aria }}>
+{%- if semantic == 'true' -%}
+    {%- set noLabel = 'true' -%}
+{%- endif -%}
+<span class="fd-toggle{{ modifier.block | modifier('toggle') }}{{ ' is-disabled' if state.disabled }}{{ classes | classes }}"{{ aria | aria }}>
     <input class="fd-toggle__input" type="checkbox" name="" value="" id="{{ _id }}"{{ ' disabled' if state.disabled }}{{ ' checked' if state.checked }}>
-    <span class="fd-toggle__switch" role="presentation">
-    {%- if properties.onLabel -%}
-        <span class="fd-toggle__label fd-toggle__label--on">{{properties.onLabel}}</span>
-    {%- endif -%}
-    {%- if properties.offLabel -%}
-        <span class="fd-toggle__label fd-toggle__label--off">{{properties.offLabel}}</span>
-    {%- endif -%}
-    {%- if semantic =='true' -%}
-        <span class="fd-toggle__semantic--off">&&</span>
-        <span class="fd-toggle__semantic--on">&&</span>
-    {%- endif -%}
-    </span>
+    <div class="fd-toggle__wrapper">
+        <div class="fd-toggle__inner">
+            {%- if noLabel =='false' -%}
+                <span class="fd-toggle__label">on</span>
+            {%- endif -%}
+            {%- if semantic =='true' -%}
+                <span class="fd-toggle__label fd-toggle__icon-on sap-icon--accept"></span>
+            {%- endif -%}
+            <span class="fd-toggle__switch" role="presentation"></span>
+            {%- if noLabel =='false' -%}
+                <span class="fd-toggle__label">off</span>
+            {%- endif -%}
+            {%- if semantic =='true' -%}
+                <span class="fd-toggle__label fd-toggle__icon-off sap-icon--decline"></span>
+            {%- endif -%}
+        </div>
+    </div>
 </span>
 {%- if properties.inlineLabel -%}
     <span class="test-label">{{properties.inlineLabel}}</span>

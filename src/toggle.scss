@@ -11,35 +11,89 @@ $block: #{$fd-namespace}-toggle;
 
 .#{$block} {
 
-  $fd-toggle-sizes: ("default": fd-space(13) fd-space(5.5) 20px -5px -5px,
-  "xs": fd-space(9) fd-space(5) 14px -4.5px 15px,
-  "s": fd-space(10) fd-space(6) 17px -5px 15px,
-  "compact": fd-space(10) fd-space(6.5) 16px -6px 13px,
-  "l": fd-space(14) fd-space(8) 22px -6px 23px,
-) !default;
-  $_defaults: map-get($fd-toggle-sizes, "default");
-  $fd-toggle-width: nth($_defaults, 1);
-  $fd-toggle-height: nth($_defaults, 2);
-  $fd-toggle-background-color: fd-color("neutral", 4) !default;
-  $fd-toggle-on-background-color--disabled: #c5dcf2;
-  $fd-toggle-switch-width: nth($_defaults, 2);
-  $fd-toggle-switch-background-color--disabled: hsla(240, 2%, 93%, 1) !default;
-  $fd-toggle-switch-border-color--disabled: hsla(212, 8%, 57%, 0.4) !default;
-  $fd-toggle-switch-on-background-color--disabled: #9ebbd8 !default;
-  $fd-toggle-switch-hover-background-color: #ebf5fe;
+  $fd-toggle-active-border-color: var(--sapButton_Selected_BorderColor);
+  $fd-toggle-active-background-color: var(--sapButton_Selected_Background);
+  $fd-toggle-inactive-border-color: var(--sapContent_ForegroundBorderColor);
+  $fd-toggle-inactive-switch-background: var(--sapButton_Background);
+
+  $fd-toggle-hover-border-color: var(--sapButton_Hover_BorderColor);
+  $fd-toggle-hover-selected-border-color: var(--sapButton_Selected_Hover_BorderColor);
+  $fd-toggle-hover-background: var(--sapButton_Hover_Background);
+  $fd-toggle-hover-selected-background: var(--sapButton_Selected_Hover_Background);
+  $fd-toggle-success-border-color: var(--sapSuccessBorderColor);
+  $fd-toggle-error-border-color: var(--sapErrorBorderColor);
+  $fd-toggle-border-width: var(--sapButton_BorderWidth);
+
+  $fd-toggle-label-width: 1.75rem;
+
+  $fd-toggle-transition: all 0.1s;
+
+  $fd-toggle-container-padding-y: 0.375rem;
+  $fd-toggle-size-x: 3.75rem;
+  $fd-toggle-size-y: 1.25rem;
+  $fd-toggle-switch-size: 1.875rem;
+  $fd-toggle-border-radius: 0.75rem;
+  $fd-toggle-switch-border-radius: 1rem;
+
+  $fd-toggle-container-compact-padding-y: 0.1875rem;
+  $fd-toggle-container-compact-no-label-padding-y: 0.25rem;
+  $fd-toggle-size-compact-x: 3.375rem;
+  $fd-toggle-size-compact-y: 1.25rem;
+  $fd-toggle-switch-compact-size: 1.5rem;
+
+  $fd-toggle-track-no-label-width: 3.125rem;
+  $fd-toggle-track-no-label-height: 1.25rem;
+
+  $fd-toggle-track-no-label-compact-width: 2.375rem;
+  $fd-toggle-track-no-label-compact-height: 1rem;
 
   @include fd-reset();
 
-  position: relative;
+  cursor: pointer;
   display: inline-block;
-  width: $fd-toggle-width;
-  height: $fd-toggle-height;
-  margin-right: 5px;
-  vertical-align: middle;
+  padding: $fd-toggle-container-padding-y 0;
+  overflow: hidden;
 
-  @include fd-rtl() {
-    margin-left: 5px;
-    margin-right: 0;
+  &__wrapper {
+    // background: darken(@sapUiButtonBackground,7);
+    background-color: #ededed;
+    position: relative;
+    width: $fd-toggle-size-x;
+    height: $fd-toggle-size-y;
+    border: $fd-toggle-border-width solid $fd-toggle-inactive-border-color;
+    transition: $fd-toggle-transition;
+    border-radius: $fd-toggle-border-radius;
+  }
+
+  &__inner {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(1.9375rem - 100%);
+    transition: $fd-toggle-transition;
+    min-width: 4.25rem;
+  }
+
+  &__label {
+    @include fd-reset();
+
+    font-size: var(--sapFontSmallSize);
+    line-height: 1.375rem;
+    display: block;
+    width: $fd-toggle-label-width;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__switch {
+    border: $fd-toggle-border-width solid $fd-toggle-inactive-border-color;
+    background-color: $fd-toggle-inactive-switch-background;
+    width: $fd-toggle-switch-size;
+    height: $fd-toggle-switch-size;
+    border-radius: $fd-toggle-switch-border-radius;
   }
 
   &__input {
@@ -48,6 +102,7 @@ $block: #{$fd-namespace}-toggle;
     opacity: 0;
     width: 0;
     height: 0;
+    position: absolute;
 
     &::before,
     &::after {
@@ -62,242 +117,163 @@ $block: #{$fd-namespace}-toggle;
     &:focus {
       border-color: transparent;
     }
-
-    &[disabled],
-    &.is-disabled {
-      opacity: 0;
-      background-color: $fd-toggle-switch-background-color--disabled;
-      border-color: $fd-toggle-switch-border-color--disabled;
-
-      & + .#{$block}__switch {
-        opacity: 1;
-        border-color: $fd-toggle-switch-border-color--disabled;
-        box-shadow: none;
-        background-color: $fd-toggle-switch-background-color--disabled;
-        pointer-events: none;
-      }
-
-      & + .#{$block}__switch::before {
-        border-color: $fd-toggle-switch-border-color--disabled;
-      }
-    }
-
-    &:checked {
-      &[disabled],
-      &.is-disabled {
-        & + .#{$block}__switch {
-          border-color: transparent;
-          background-color: $fd-toggle-on-background-color--disabled;
-          pointer-events: none;
-        }
-
-        & + .#{$block}__switch::before {
-          border-color: transparent;
-          background-color: $fd-toggle-switch-on-background-color--disabled;
-        }
-      }
-    }
   }
 
-  &__switch {
-    @include fd-reset();
-
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-style: solid;
-    border-width: 1px;
-
-    @include fd-var-color("border-color", $fd-toggle-background-color, --fd-color-neutral-4);
-    @include fd-var-color("background-color", fd-color("neutral", 3), --fd-color-neutral-3);
-
-    transition: all 0.4s;
-    border-radius: 34px;
-
-    &:hover {
-      @include fd-var-color("border-color", fd-color-state("selected", "action"), --fd-color-action-selected);
-
-      &::before {
-        @include fd-var-color("border-color", fd-color-state("selected", "action"), --fd-color-action-selected);
-
-        background-color: $fd-toggle-switch-hover-background-color;
-      }
-    }
-  }
-
-  &__switch::before {
-    position: absolute;
-    content: "";
-    height: fd-space(8);
-    width: fd-space(8);
-    left: -1px;
-    top: -6px;
-
-    @include fd-var-color("background-color", fd-color("background", 2), --fd-color-background-2);
-
-    border-style: solid;
-    border-width: 1px;
-
-    @include fd-var-color("border-color", $fd-toggle-background-color, --fd-color-neutral-4);
-
-    transition: all 0.4s;
-    border-radius: 50%;
-    z-index: 1;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  &__input:checked + &__switch {
-    background-color: rgba(10, 110, 209, 0.6);
-
-    @include fd-var-color("border-color", fd-color-state("selected", "action"), --fd-color-action-selected);
-  }
-
-  &__input:checked + &__switch::before {
-    @include fd-var-color("background-color", fd-color-state("selected", "action"), --fd-color-action-selected);
-    @include fd-var-color("border-color", fd-color-state("selected", "action"), --fd-color-action-selected);
-
+  @include fd-disabled() {
     pointer-events: none;
-    left: calc(100% - 31px);
+    opacity: 0.4;
   }
 
-  // SIZES
-  @each $key,
-    $list in $fd-toggle-sizes {
-    @if $key !="default" {
-      &--#{$key} {
-        height: nth($list, 3);
-        width: nth($list, 1);
+  &__input:checked + &__wrapper {
+    // background-color: lighten(var(--sapButton_Selected_Background), 63);
+    background-color: #ebf5fe; // To be changed later
+    border-color: $fd-toggle-active-border-color;
 
-        .#{$block}__switch::before {
-          height: nth($list, 2);
-          width: nth($list, 2);
-          top: nth($list, 4);
-        }
+    .#{$block}__switch {
+      background-color: $fd-toggle-active-background-color;
+      border-color: $fd-toggle-active-border-color;
+    }
 
-        input:checked + .#{$block}__switch::before {
-          left: nth($list, 5);
+    .#{$block}__inner {
+      right: -1.8125rem;
+      left: 1px;
+    }
+  }
+
+  @include fd-rtl() {
+    .#{$block}__inner {
+      left: 1px;
+    }
+
+    .#{$block}__input:checked + .#{$block}__wrapper {
+      .#{$block}__inner {
+        left: calc(1.9375rem - 100%);
+      }
+    }
+  }
+
+  @include fd-hover() {
+    .#{$block}__wrapper {
+      border-color: $fd-toggle-hover-border-color;
+    }
+
+    .#{$block}__switch {
+      border-color: $fd-toggle-hover-border-color;
+      background-color: $fd-toggle-hover-background;
+    }
+
+    .#{$block}:checked + .#{$block}__wrapper {
+      border-color: $fd-toggle-hover-selected-border-color;
+
+      .#{$block}__switch {
+        border-color: $fd-toggle-hover-selected-border-color;
+        background-color: $fd-toggle-hover-selected-background;
+      }
+    }
+  }
+
+  &--compact {
+    padding: $fd-toggle-container-compact-padding-y 0;
+
+    .#{$block}__switch {
+      width: $fd-toggle-switch-compact-size;
+      height: $fd-toggle-switch-compact-size;
+    }
+
+    .#{$block}__wrapper {
+      width: $fd-toggle-size-compact-x;
+      height: $fd-toggle-size-compact-y;
+    }
+
+    .#{$block}__inner {
+      left: calc(1.5625rem - 100%);
+      min-width: 3.125rem;
+    }
+
+    @include fd-rtl() {
+      .#{$block}__inner {
+        left: 1px;
+      }
+
+      .#{$block}__input:checked + .#{$block}__wrapper {
+        .#{$block}__inner {
+          left: calc(1.5625rem - 100%);
         }
       }
     }
   }
 
-  //  block level modifier for inline lables
-  &--label,
-  &--semantic {
-    @include fd-reset();
+  &--no-label {
+    .#{$block}__wrapper {
+      width: $fd-toggle-track-no-label-width;
+      height: $fd-toggle-track-no-label-height;
+    }
 
-    width: 62px;
-    height: 22px;
-
-    .#{$block}__label--on {
-      visibility: hidden;
+    .#{$block}__input:checked + .#{$block}__wrapper {
+      .#{$block}__inner {
+        right: auto;
+      }
     }
 
     &.#{$block}--compact {
-      width: 56px;
+      padding: $fd-toggle-container-compact-no-label-padding-y 0;
 
-      .#{$block}__switch::before {
-        top: -3px;
+      .#{$block}__wrapper {
+        width: $fd-toggle-track-no-label-compact-width;
+        height: $fd-toggle-track-no-label-compact-height;
       }
     }
   }
 
-  &--label &__input:checked + &__switch,
-  &--semantic &__input:checked + &__switch {
-    &::before {
-      left: calc(100% - 31px);
-    }
-
-    .#{$block}__label--off {
-      visibility: hidden;
-    }
-
-    .#{$block}__label--on {
-      visibility: visible;
-    }
-  }
-
-  &--label.#{$block}--compact &__input:checked + &__switch,
-  &--semantic.#{$block}--compact &__input:checked + &__switch {
-    &::before {
-      left: calc(100% - 25px);
-    }
-  }
-
-  //  label elements
-  &__label {
+  &__icon-on {
     @include fd-reset();
 
-    &--off {
-      @include fd-type("-1");
-
-      position: absolute;
-      right: 6px;
-      top: 3px;
-    }
-
-    &--on {
-      @include fd-type("-1");
-
-      position: absolute;
-      left: 8px;
-      top: 3px;
-    }
+    font-size: 0.75rem;
+    color: var(--sapPositiveElementColor);
   }
 
-  //  semantic modifier
+  &__icon-off {
+    @include fd-reset();
+
+    font-size: 0.75rem;
+    color: var(--sapNegativeElementColor);
+  }
+
   &--semantic {
+    .#{$block}__wrapper {
+      border-color: $fd-toggle-error-border-color;
+      background-color: var(--sapErrorBackground);
+    }
+
     .#{$block}__switch {
-      @include fd-var-color("background-color", fd-color("background", 5), --fd-color-background-5);
-      @include fd-var-color("border-color", fd-color("status", 3), --fd-color-status-3);
+      background-color: $fd-toggle-inactive-switch-background;
+      border-color: $fd-toggle-error-border-color;
     }
 
-    .#{$block}__switch::before {
-      @include fd-var-color("background-color", fd-color("status", 3), --fd-color-status-3);
-      @include fd-var-color("border-color", fd-color("status", 3), --fd-color-status-3);
-    }
+    .#{$block}__input:checked + .#{$block}__wrapper {
+      background-color: var(--sapSuccessBackground);
+      border-color: $fd-toggle-success-border-color;
 
-    input:checked + .#{$block}__switch {
-      @include fd-var-color("background-color", fd-color("background", 3), --fd-color-background-3);
-      @include fd-var-color("border-color", fd-color("status", 1), --fd-color-status-1);
-    }
-
-    input:checked + .#{$block}__switch::before {
-      @include fd-var-color("background-color", fd-color("status", 1), --fd-color-status-1);
-      @include fd-var-color("border-color", fd-color("status", 1), --fd-color-status-1);
-    }
-  }
-
-  //  semantic elements
-  &__semantic {
-    &--off {
-      @include fd-type("-1");
-
-      position: absolute;
-      right: 12px;
-      top: 2px;
-
-      @include fd-var-color("color", fd-color("status", 3), --fd-color-status-3);
-
-      &::before {
-        @include fd-type("-1");
+      .#{$block}__switch {
+        border-color: $fd-toggle-success-border-color;
+        background-color: $fd-toggle-inactive-switch-background;
       }
     }
 
-    &--on {
-      @include fd-type("-1");
+    @include fd-hover() {
+      .#{$block}__wrapper {
+        border-color: $fd-toggle-error-border-color;
+      }
 
-      position: absolute;
-      left: 12px;
-      top: 2px;
+      .#{$block}__switch {
+        background-color: var(--sapErrorBackground);
+        border-color: $fd-toggle-error-border-color;
+      }
 
-      @include fd-var-color("color", fd-color("status", 1), --fd-color-status-1);
-
-      &::before {
-        @include fd-type("-1");
+      .#{$block}__input:checked + .#{$block}__wrapper {
+        .#{$block}__switch {
+          background-color: var(--sapSuccessBackground);
+        }
       }
     }
   }
