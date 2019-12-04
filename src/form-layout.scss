@@ -1,0 +1,28 @@
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+/*!
+.fd-form-layout(--horizontal, --vetical)
+*/
+$block: #{$fd-namespace}-form-layout;
+
+.#{$block}-horizontal {
+  @include fd-reset();
+
+  :first-child { // for the label
+    display: flex;
+    flex: 4;
+    justify-content: flex-end;
+  }
+
+  :not(:first-child) { // for the input and message
+    flex: 7;
+    margin-right: 8.3%;
+  }
+}
+
+.#{$block}-wrapper {
+  background-color: white;
+  padding: 1rem 2rem;
+}
