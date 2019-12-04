@@ -7,22 +7,35 @@
 */
 $block: #{$fd-namespace}-form-layout;
 
-.#{$block}-horizontal {
+.#{$block} {
+  display: flex;
+  flex-direction: column;
+
   @include fd-reset();
 
-  :first-child { // for the label
-    display: flex;
-    flex: 4;
-    justify-content: flex-end;
+  > :first-child { // for the label
+    text-align: left;
   }
 
-  :not(:first-child) { // for the input and message
-    flex: 7;
-    margin-right: 8.3%;
+  &--horizontal {
+    @include fd-reset();
+
+    flex-direction: row;
+    padding-right: 8.3%;
+
+    > :first-child { // for the label
+      text-align: right;
+      width: 33.3%;
+    }
+
+    > :not(:first-child) { // for the input and message
+      width: 58.3%;
+      margin-left: 0.5rem;
+    }
   }
 }
 
 .#{$block}-wrapper {
-  background-color: white;
-  padding: 1rem 2rem;
+  background-color: var(--sapGroup_ContentBackground, transparent);
+  padding: 0.5rem 1rem 1rem;
 }

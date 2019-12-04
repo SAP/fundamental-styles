@@ -15,49 +15,6 @@ These components can be used alone. For example, the `form__item` element with t
 
 <br>
 
-## Layouts
-
-{% capture inputs %} 
-    <div class="fd-form-layout-wrapper">
-        <div class="fd-form-item fd-form-item--horizontal fd-has-margin-none fd-popover fd-form-layout-horizontal">
-            <label class="fd-form-label" for="input-1">Default inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault input:</label>
-            <div class="fd-form-input-message-group">
-                <input class="fd-input fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
-                <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message" aria-hidden="true" id="popoverD1">Normal message</span>
-            </div>
-        </div>
-        <br><br>
-        <div class="fd-form-item fd-form-item--horizontal fd-form-layout-horizontal fd-has-margin-none fd-popover">
-            <label class="fd-form-label" for="input-1">Compact input:</label>
-            <div class="fd-form-input-message-group">
-                <input class="fd-input fd-input--compact fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD2" aria-expanded="false" aria-haspopup="true">
-                <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--compact" aria-hidden="true" id="popoverD2">Normal message</span>
-            </div>
-        </div>
-        <br /><br />
-        <div class="fd-form-item fd-form-item--horizontal fd-form-layout-horizontal">
-            <label class="fd-form-label fd-form-label--required" for="input-1c">Required Input:</label>
-            <input class="fd-input" type="text" id="input-1c" placeholder="Field placeholder text">
-        </div>
-        <br />
-        <br />
-        <div class="fd-form-item fd-form-item--horizontal fd-form-layout-horizontal">
-            <label class="fd-form-label" aria-required="true" for="input-1d">Password:</label>
-            <input class="fd-input" type="password" id="input-1d">
-        </div>
-        <br />
-        <br />
-        <div class="fd-form-item fd-form-item--horizontal fd-form-layout-horizontal">
-            <label class="fd-form-label" aria-required="true" for="input-1ee">Input:</label>
-            <input class="fd-input" type="text" id="input-1ee">
-        </div>
-    </div>
-{% endcapture %}
-
-{% include display-component.html component=inputs %}
-
-
-<br>
 
 ## Inputs
 Inputs are used to collect data from the user and should always be paired with a label. When a field is required, the label should include an asterisk (*).
@@ -800,4 +757,44 @@ Do not use the checkbox control if:
 
 {% include display-component.html component=checkbox %}
 
+<br>
+
+## Layouts
+
+{% capture inputs-layout-horizontal %} 
+    <h1>Horizontal 4-7-1</h1>
+    <div class="fd-form-layout-wrapper">
+        <div class="fd-form-layout fd-form-layout--horizontal">
+            <label  for="input-1">Default inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault input:</label>
+            <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+        </div>
+        <br>
+        <div class="fd-form-layout fd-form-layout--horizontal">
+            <label  for="input-1">Second Input:</label>
+            <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+        </div>
+    </div>
+{% endcapture %}
+
+{% include display-component.html component=inputs-layout-horizontal %}
+
+<br>
+
+
+{% capture inputs-layout-vertical %} 
+    <h1>Vertical 12</h1>
+    <div class="fd-form-layout-wrapper">
+        <div class="fd-form-layout">
+            <label  for="input-1">Default inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault input:</label>
+            <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+        </div>
+        <br>
+        <div class="fd-form-layout">
+            <label  for="input-1">Second Input:</label>
+            <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+        </div>
+    </div>
+{% endcapture %}
+
+{% include display-component.html component=inputs-layout-vertical %}
 <br>
