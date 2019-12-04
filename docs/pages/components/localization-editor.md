@@ -67,10 +67,10 @@ summary:
       <div class="fd-popover__control">
          <div class="fd-form-item">
             <label class="fd-form-label" for="vTshu851">Localization Editor Compact Mode</label>
-            <div class="fd-input-group fd-input-group--compact">
-               <input type="text" class="fd-input fd-input-group__input" id="" aria-controls="test22" aria-expanded="false"
+            <div class="fd-input-group">
+               <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" aria-controls="test22" aria-expanded="false"
                aria-haspopup="true" placeholder="Enter Label">
-               <span class="fd-input-group__addon fd-input-group__addon--button">
+               <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
                   <button class="fd-input-group__button fd-button--light fd-button--compact"
                   aria-controls="test22" aria-expanded="false" aria-haspopup="true">EN*</button>
                </span>
@@ -81,25 +81,25 @@ summary:
          <nav class="fd-menu">
             <ul class="fd-menu__list">
                <li class="fd-localization-editor__language">
-                  <div class="fd-input-group fd-input-group--compact">
-                     <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Enter Label">
-                     <span class="fd-input-group__addon">
+                  <div class="fd-input-group">
+                     <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Enter Label">
+                     <span class="fd-input-group__addon fd-input-group__addon--compact">
                      ES
                      </span>
                   </div>
                </li>
                <li class="fd-localization-editor__language">
-                  <div class="fd-input-group fd-input-group--compact">
-                     <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Enter Label">
-                     <span class="fd-input-group__addon ">
+                  <div class="fd-input-group">
+                     <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Enter Label">
+                     <span class="fd-input-group__addon fd-input-group__addon--compact">
                      CH
                      </span>
                   </div>
                </li>
                <li class="fd-localization-editor__language">
-                  <div class="fd-input-group fd-input-group--compact">
-                     <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Enter Label">
-                     <span class="fd-input-group__addon">
+                  <div class="fd-input-group">
+                     <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Enter Label">
+                     <span class="fd-input-group__addon fd-input-group__addon--compact">
                      PL
                      </span>
                   </div>

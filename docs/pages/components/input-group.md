@@ -27,9 +27,9 @@ The Input Group supports **compact** mode (by virtue of the `--compact` modifier
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Compact Size </label>
-    <div class="fd-input-group fd-input-group--compact">
-        <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1234568910 ">
+    <div class="fd-input-group">
+        <span class="fd-input-group__addon fd-input-group__addon--compact">$</span>
+        <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="" name="" value="1234568910 ">
     </div>
 </div>
 {% endcapture %}
@@ -162,9 +162,9 @@ The Input with add-on supports actions. Actions can be shown with a text label o
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Compact Input with icon action</label>
-    <div class="fd-input-group fd-input-group--compact">
-        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
+    <div class="fd-input-group">
+        <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="" name="" value="1000000">
+        <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
             <button class="fd-input-group__button fd-button--icon fd-button--light fd-button--compact sap-icon--navigation-down-arrow"></button>
         </span>
     </div>
@@ -183,7 +183,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
 </div>
 <br />
 <div class="fd-form-item">
-    <label class="fd-form-label" for="">Input with text action on left and on right</label>
+    <label class="fd-form-label" for="">Input with actions on left and on right</label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon fd-input-group__addon--button">
              <button class="fd-input-group__button fd-button--icon fd-button--light sap-icon--search"></button>
@@ -202,17 +202,17 @@ The Input with add-on supports actions. Actions can be shown with a text label o
 </div>
 <br />
 <div class="fd-form-item">
-    <label class="fd-form-label" for="">Input with text action on left and on right</label>
-    <div class="fd-input-group fd-input-group--compact">
+    <label class="fd-form-label" for="">Input with mixed actions on left and on right</label>
+    <div class="fd-input-group">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-             <button class="fd-input-group__button fd-button--icon fd-button--light fd-button--compact sap-icon--search"></button>
+             <button class="fd-input-group__button fd-button--icon fd-button--light sap-icon--search"></button>
         </span>
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--icon fd-button--light fd-button--compact sap-icon--cart"></button>
+            <button class="fd-input-group__button fd-button--icon fd-button--light sap-icon--cart"></button>
         </span>
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--light fd-button--compact">Button</button>
+            <button class="fd-input-group__button fd-button--light">Button</button>
         </span>
         <span class="fd-input-group__addon">
             <span class="sap-icon--employee" role="presentation"></span>
@@ -254,9 +254,9 @@ The Input with add-on supports actions. Actions can be shown with a text label o
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Information</label>
-    <div class="fd-input-group fd-input-group--compact is-information">
-        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
+    <div class="fd-input-group is-information">
+        <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="" name="" value="1000000">
+        <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
             <button class="fd-input-group__button fd-button--light fd-button--compact">
                 Button
             </button>
@@ -300,9 +300,9 @@ The Input with add-on supports actions. Actions can be shown with a text label o
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Disabled Information</label>
-    <div class="fd-input-group fd-input-group--compact is-information is-disabled">
-        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
+    <div class="fd-input-group is-information is-disabled">
+        <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="" name="" value="1000000">
+        <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
             <button class="fd-input-group__button fd-button--light fd-button--compact">
                 Button
             </button>

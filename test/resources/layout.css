@@ -134,6 +134,10 @@ body {
   margin: 0;
 }
 
+.input-group-input-playground--compact {
+  height: 1.625rem;
+}
+
 .input-group-input-playground[disabled] {
   opacity: .4;
   cursor: not-allowed;

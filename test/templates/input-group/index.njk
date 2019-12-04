@@ -8,6 +8,7 @@
 {% set addons = [["", "km/h"], ["$", ""], ["$", ".00"]] %}
 {% set readonly = [false, true] %}
 {% set states = ["valid", "invalid", "warning", "information"] %}
+{% set compact = [true] %}
 
 <h2>Input Groups w/ addon text</h2>
 
@@ -38,6 +39,36 @@
 {{ format(example) }}
 
 <br /><br />
+
+<h2>Input Groups w/ addon text compact mode</h2>
+
+{%- set example %}
+    {%- for co in compact %}
+            {%- for before, after in addons %}
+                {{ input_group(
+                    properties={
+                        type: text,
+                        before: before,
+                        after: after,
+                        input: {
+                            properties: {
+                                value: "19387309"
+                            }
+                        }
+                    },
+                    modifier={
+                        disabled: ro,
+                        compact: co
+                    })
+                }}
+                <br />
+            {%- endfor %}
+    {%- endfor %}
+{%- endset %}
+{{ format(example) }}
+
+<br /><br />
+
 <h2>Input Groups w/ states</h2>
 {% set addons = [["$", ""]] %}
 {%- set example %}
