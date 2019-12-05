@@ -4,7 +4,7 @@ const backstopCIConfigLocation = 'test/visual-regression-tests/config/backstopCo
 
 
 console.log(process.argv);
-let origin = process.argv.find(arg => arg.includes('linux')) ? 'localhost' : 'docker.host.internal';
+let origin = process.argv.find(arg => arg.includes('linux')) ? 'localhost' : 'host.docker.internal';
 
 process.argv.push(process.platform);
 
