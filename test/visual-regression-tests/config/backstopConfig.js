@@ -1,7 +1,12 @@
 const fs = require('fs');
+const process = require('process');
 const backstopCIConfigLocation = 'test/visual-regression-tests/config/backstopConfigCI.json';
 
-let origin = 'localhost';
+
+console.log(process.argv);
+let origin = process.argv.find(arg => arg.includes('linux')) ? 'localhost' : 'docker.host.internal';
+
+process.argv.push(process.platform);
 
 if (fs.existsSync(backstopCIConfigLocation)) {
   const ciConfig = JSON.parse(fs.readFileSync(backstopCIConfigLocation));
