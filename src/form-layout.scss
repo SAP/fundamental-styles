@@ -3,7 +3,7 @@
 @import "./functions";
 
 /*!
-.fd-form-layout(--horizontal, --vetical)
+.fd-form-layout(--horizontal, --vetical, --several, --container)
 */
 $block: #{$fd-namespace}-form-layout;
 $form-layout-padding: 0.25rem;
@@ -14,22 +14,28 @@ $form-layout-padding--compact: 0.1875rem;
 
   display: flex;
   flex-direction: column;
-  height: 2.75rem;
+  max-height: 2.75rem;
   padding-top: $form-layout-padding;
   padding-bottom: $form-layout-padding;
 
-  > :first-child { // for the label
+  > :first-child {
     text-align: left;
     margin-bottom: 0.125rem;
   }
 
-  > :not(:first-child) { // for the input
-    height: 100%; // maybe because of self contained
+  > :not(:first-child) {
     box-sizing: border-box;
   }
 
+  @include fd-rtl() {
+    > :first-child {
+      text-align: right;
+      padding-right: 0;
+    }
+  }
+
   &--compact {
-    height: 2rem;
+    max-height: 2rem;
     padding-top: $form-layout-padding--compact;
     padding-bottom: $form-layout-padding--compact;
   }
@@ -41,14 +47,27 @@ $form-layout-padding--compact: 0.1875rem;
     padding-right: 8.3%;
     margin-bottom: 0 !important;
 
-    > :first-child { // for the label
+    > :first-child {
       text-align: right;
       margin-right: 0.25rem;
+      padding-right: 1rem;
       width: 33.3%;
     }
 
-    > :not(:first-child) { // for the input and message
+    > :not(:first-child) {
       width: 58.3%;
+    }
+
+    @include fd-rtl() {
+      flex-direction: row;
+      padding-right: 0;
+      padding-left: 8.3%;
+
+      > :first-child {
+        text-align: left;
+        margin-right: 0;
+        margin-left: 0.25rem;
+      }
     }
   }
 }
@@ -65,9 +84,16 @@ $form-layout-padding--compact: 0.1875rem;
     margin-right: 0.5rem;
     flex: 1;
   }
+
+  @include fd-rtl() {
+    > :not(:last-child) {
+      margin-right: 0;
+      margin-left: 0.5rem;
+    }
+  }
 }
 
-.#{$block}-wrapper {
+.#{$block}-container {
   background-color: var(--sapGroup_ContentBackground, transparent);
   padding: 1rem;
 
