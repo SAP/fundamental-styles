@@ -22,8 +22,8 @@ module.exports.runDocker = (config, backstopCommand) => {
       }
       configArgs = configArgs.replace(/--docker/, '--moby');
     }
-
-    const DOCKER_COMMAND = `docker run --rm -it --mount type=bind,source="${process.cwd()}",target=/src --network host backstopjs/backstopjs:${version} ${backstopCommand}${configArgs} "${passAlongArgs}"`;
+    const network = args.find(x => x.includes('linux')) ? '--network host' : '';
+    const DOCKER_COMMAND = `docker run --rm -it --mount type=bind,source="${process.cwd()}",target=/src ${network} backstopjs/backstopjs:${version} ${backstopCommand}${configArgs} "${passAlongArgs}"`;
     console.log('Delegating command to Docker...', DOCKER_COMMAND);
 
     return new Promise((resolve, reject) => {
