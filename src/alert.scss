@@ -12,7 +12,7 @@ $block: #{$fd-namespace}-alert;
 .#{$block} {
   $fd-alert-border: 1px solid;
   $fd-alert-border-radius: 0.25rem;
-  $fd-alert-padding: 0.5rem 1rem;
+  $fd-alert-padding: 0.4375rem 1rem;
   $fd-alert-padding-default: 1rem;
   $fd-alert-padding-dismissible: 2.5rem;
   $fd-alert-padding-status: 2.5rem;
@@ -21,16 +21,14 @@ $block: #{$fd-namespace}-alert;
   @mixin fd-alert-icon-container {
     position: absolute;
     width: 2.5rem;
-    top: 0.625rem;
+    top: 0.4375rem;
     left: 0;
   }
 
   @mixin fd-alert-close-btn-container {
     position: absolute;
-    width: 2rem;
-    height: 1.625rem;
-    top: 0.375rem;
-    right: 0.125rem;
+    top: 0.0625rem;
+    right: 0.0625rem;
   }
 
   // SUCCESS
@@ -58,6 +56,7 @@ $block: #{$fd-namespace}-alert;
   // Block
   @include fd-reset();
 
+  font-size: var(--sapFontSize);
   position: relative;
   color: $fd-alert-text-color;
   background-color: $fd-alert-background-color;
@@ -65,9 +64,9 @@ $block: #{$fd-namespace}-alert;
   border-color: $fd-alert-border-color;
   border-radius: $fd-alert-border-radius;
   padding: $fd-alert-padding;
-  min-height: 2.5rem;
   display: flex;
   align-items: center;
+  min-height: 2rem;
 
   // DEPRECATE v1.6 (brute force embedded solution to adopt new styles)
   .sap-icon--message-error,
@@ -79,9 +78,9 @@ $block: #{$fd-namespace}-alert;
 
   // Elements
   &__close {
+    @include fd-button-reset();
     @include fd-alert-close-btn-container();
     @include fd-icon("decline", "m");
-    @include fd-button-reset();
     @include fd-focus();
 
     @include fd-rtl() {
@@ -222,5 +221,7 @@ $block: #{$fd-namespace}-alert;
 
   &__text {
     @include fd-reset();
+
+    line-height: 1rem;
   }
 }
