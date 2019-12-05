@@ -1,0 +1,57 @@
+{% extends "layout.njk" %}
+{% from "./component.njk" import  formLayout %}
+{% from "./../format.njk" import format %}
+
+{% block content %}
+
+  <h2>Default (Vertical)</h2>
+  {% set example %}
+    
+    <div class="fd-form-layout-wrapper">
+        <div class="fd-form-layout">
+            <label  for="input-1">Default input:</label>
+            <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+        </div>
+        <div class="fd-form-layout">
+            <label  for="input-1">Second Input:</label>
+            <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+        </div>
+        <div class="fd-form-layout">
+            <label  for="input-1">Double Input:</label>
+            <div class="fd-form-layout-several">
+                <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+                <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+                <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+            </div>
+        </div>
+    </div>
+
+  {% endset %}
+  {{ format(example) }}
+
+    <h2>Horizontal</h2>
+  {% set example %}
+    
+    <div class="fd-form-layout-wrapper">
+        <div class="fd-form-layout fd-form-layout--horizontal">
+            <label  for="input-1">Default input:</label>
+            <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+        </div>
+        <div class="fd-form-layout fd-form-layout--horizontal">
+            <label  for="input-1">Second Input:</label>
+            <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+        </div>
+        <div class="fd-form-layout fd-form-layout--horizontal">
+            <label  for="input-1">Double Input:</label>
+            <div class="fd-form-layout-several">
+                <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+                <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+                <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+            </div>
+        </div>
+    </div>
+
+  {% endset %}
+  {{ format(example) }}
+
+{% endblock %}

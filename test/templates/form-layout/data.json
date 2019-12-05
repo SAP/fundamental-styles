@@ -1,0 +1,7 @@
+{
+    "id": "form-layout",
+    "name": "Form Layout",
+    "modifier": {
+        "block": "horizontal"
+    }
+}

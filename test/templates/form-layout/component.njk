@@ -1,0 +1,5 @@
+{% macro formLayout(modifier={}) -%}
+<div class="fd-form-layout{{ modifier.block | modifier('form-layout') }}">
+    {{- caller() | indent -}}
+</div>
+{%- endmacro %}

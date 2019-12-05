@@ -765,13 +765,20 @@ Do not use the checkbox control if:
     <h1>Horizontal 4-7-1</h1>
     <div class="fd-form-layout-wrapper">
         <div class="fd-form-layout fd-form-layout--horizontal">
-            <label  for="input-1">Default inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault input:</label>
+            <label  for="input-1">Default input:</label>
             <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
         </div>
-        <br>
         <div class="fd-form-layout fd-form-layout--horizontal">
             <label  for="input-1">Second Input:</label>
             <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+        </div>
+        <div class="fd-form-layout fd-form-layout--horizontal">
+            <label  for="input-1">Double Input:</label>
+            <div class="fd-form-layout-several">
+                <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+                <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+                                <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+            </div>
         </div>
     </div>
 {% endcapture %}
@@ -785,13 +792,20 @@ Do not use the checkbox control if:
     <h1>Vertical 12</h1>
     <div class="fd-form-layout-wrapper">
         <div class="fd-form-layout">
-            <label  for="input-1">Default inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault inputDefault input:</label>
+            <label  for="input-1">Default input:</label>
             <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
         </div>
-        <br>
         <div class="fd-form-layout">
             <label  for="input-1">Second Input:</label>
             <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+        </div>
+        <div class="fd-form-layout">
+            <label  for="input-1">Double Input:</label>
+            <div class="fd-form-layout-several">
+                <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+                <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+                <input type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+            </div>
         </div>
     </div>
 {% endcapture %}

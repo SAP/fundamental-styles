@@ -6,36 +6,72 @@
 .fd-form-layout(--horizontal, --vetical)
 */
 $block: #{$fd-namespace}-form-layout;
+$form-layout-padding: 0.25rem;
+$form-layout-padding--compact: 0.1875rem;
 
 .#{$block} {
+  @include fd-reset();
+
   display: flex;
   flex-direction: column;
-
-  @include fd-reset();
+  height: 2.75rem;
+  padding-top: $form-layout-padding;
+  padding-bottom: $form-layout-padding;
 
   > :first-child { // for the label
     text-align: left;
+    margin-bottom: 0.125rem;
+  }
+
+  > :not(:first-child) { // for the input
+    height: 100%; // maybe because of self contained
+    box-sizing: border-box;
+  }
+
+  &--compact {
+    height: 2rem;
+    padding-top: $form-layout-padding--compact;
+    padding-bottom: $form-layout-padding--compact;
   }
 
   &--horizontal {
-    @include fd-reset();
-
+    display: flex;
+    align-items: center;
     flex-direction: row;
     padding-right: 8.3%;
+    margin-bottom: 0 !important;
 
     > :first-child { // for the label
       text-align: right;
+      margin-right: 0.25rem;
       width: 33.3%;
     }
 
     > :not(:first-child) { // for the input and message
       width: 58.3%;
-      margin-left: 0.5rem;
     }
+  }
+}
+
+.#{$block}-several {
+  box-sizing: border-box;
+  display: flex;
+
+  > :last-child {
+    flex: 1;
+  }
+
+  > :not(:last-child) {
+    margin-right: 0.5rem;
+    flex: 1;
   }
 }
 
 .#{$block}-wrapper {
   background-color: var(--sapGroup_ContentBackground, transparent);
-  padding: 0.5rem 1rem 1rem;
+  padding: 1rem;
+
+  > :not(:last-child) {
+    margin-bottom: 0.625rem;
+  }
 }
