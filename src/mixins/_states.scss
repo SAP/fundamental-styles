@@ -34,7 +34,7 @@
 // `.is-hover` is for demo purposes
 @mixin fd-hover {
   &:hover,
-  .is-hover {
+  &.is-hover {
     @content;
   }
 }

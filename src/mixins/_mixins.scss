@@ -296,7 +296,7 @@
 
   @include fd-focus() {
     box-shadow: none;
-    outline-offset: -0.1875rem;
+    outline-offset: -0.0625rem;
     outline-width: var(--sapContent_FocusWidth);
     outline-color: var(--sapContent_FocusColor);
     outline-style: var(--sapContent_FocusStyle);
