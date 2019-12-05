@@ -24,10 +24,12 @@
     "style:compile": "node-sass -q --output-style expanded --precision 5 src/ --output dist/",
     "style:postCSS": "postcss --config config/postcss.config.js  --replace dist/*.css",
     "style:remove": "if [ -d dist/ ]; then rm -rf dist/; fi",
-    "test": "server-test start:playground http-get://localhost:3030 test:visual",
+    "test": "npm run test:linux-fix && server-test start:playground http-get://localhost:3030 test:visual",
+    "test:linux-fix":"cp -rf backstopJsFix/runDocker.js node_modules/backstopjs/core/util/",
     "test:ci-config": "./ci-scripts/generateBackstopConfig.js",
     "test:reference": "backstop reference --config ./test/visual-regression-tests/config/backstopConfig.js --docker",
-    "test:update": "server-test start:playground http-get://localhost:3030 test:reference && backstop approve --config ./test/visual-regression-tests/config/backstopConfig.js",
+    "test:update": "npm run test:linux-fix && server-test start:playground http-get://localhost:3030 test:reference && backstop approve --config ./test/visual-regression-tests/config/backstopConfig.js",
+    "test:update-linux": "npm run test:update && sudo chown -R ${USER}:${USER} .",
     "test:visual": "backstop test --config ./test/visual-regression-tests/config/backstopConfig.js --docker"
   },
   "repository": {
