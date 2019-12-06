@@ -25,7 +25,7 @@ $block: #{$fd-namespace}-form-message;
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 0 !important;
-  white-space: normal !important;
+  white-space: pre-line !important;
 
   @include fd-rtl() {
     right: 0;

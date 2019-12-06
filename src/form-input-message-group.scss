@@ -10,10 +10,5 @@ $block: #{$fd-namespace}-form-input-message-group;
 
 .#{$block} {
   flex: 1;
-  // z-index: 2;
   position: relative;
-
-  // &:active {
-  //   z-index: 4;
-  // }
 }

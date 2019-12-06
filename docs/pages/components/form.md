@@ -32,9 +32,9 @@ Do not use the input field if:
 - The user needs to carry out a search. In this case, use the search field.
 
 {% capture inputs %} 
-    <div class="fd-form-item fd-has-margin-none fd-popover">
+    <div class="fd-form-item fd-has-margin-none">
         <label class="fd-form-label" for="input-1">Default input:</label>
-        <input class="fd-input fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text">
+        <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text">
     </div>
     <br><br>
     <div class="fd-form-item">
