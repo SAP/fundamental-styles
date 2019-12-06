@@ -1,7 +1,12 @@
 const fs = require('fs');
+const process = require('process');
 const backstopCIConfigLocation = 'test/visual-regression-tests/config/backstopConfigCI.json';
 
-let origin = 'host.docker.internal';
+
+console.log(process.argv);
+let origin = process.argv.find(arg => arg.includes('linux')) ? 'localhost' : 'host.docker.internal';
+
+process.argv.push(process.platform);
 
 if (fs.existsSync(backstopCIConfigLocation)) {
   const ciConfig = JSON.parse(fs.readFileSync(backstopCIConfigLocation));
@@ -20,30 +25,39 @@ const defaultScenario = {
   "postInteractionWait": 0,
   "selectorExpansion": false,
   "expect": 0,
-  "misMatchThreshold" : 0.1,
-  "requireSameDimensions": true  
+  "misMatchThreshold": 0.1,
+  "requireSameDimensions": true
+}
+
+let prepareComponentScenario = (component) => {
+
+  let componentScenario = {
+    "label": component,
+    "urlSuffix": `/${component}`,
+    "selectors": [
+      `.backstop`,
+    ],
+    "selectorExpansion": true
+  }
+  const scenario = { ...defaultScenario, ...componentScenario };
+  // Ensure each config file has a urlSuffix, label and selectors defined.
+  if (!scenario.urlSuffix || !scenario.label || !scenario.selectors) {
+    throw "Error with backstop config file '" + configFile + "', must include urlSuffix, label and selectors";
+  }
+  scenario.url = scenario.urlPrefix + scenario.urlSuffix;
+  scenarios.push(scenario);
 }
 
 // Specific visual test component configurations.  Read the associated component configuration directory and merge the json.
-fs.readdirSync("test/templates").forEach(function(component) {
-  if(!component.includes('.njk') && component != 'spinner'){
-    let componentScenario = {
-      "label": component,
-      "urlSuffix": `/${component}`,
-      "selectors": [
-          `.backstop`,
-        ],
-      "selectorExpansion": true
+let prepareAllTestScenarios = () => {
+  fs.readdirSync('test/templates').forEach((component) => {
+    if (!component.includes('.njk') && component != 'spinner') {
+      prepareComponentScenario(component);
     }
-    const scenario = {...defaultScenario, ...componentScenario};
-    // Ensure each config file has a urlSuffix, label and selectors defined.
-    if (!scenario.urlSuffix || !scenario.label || !scenario.selectors) {
-      throw "Error with backstop config file '" + configFile + "', must include urlSuffix, label and selectors";
-    }
-    scenario.url = scenario.urlPrefix + scenario.urlSuffix;
-    scenarios.push(scenario);
-  }
-});
+  })
+};
+
+prepareAllTestScenarios();
 
 console.log('Found ' + scenarios.length + ' Visual test scenarios to execute');
 
