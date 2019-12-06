@@ -34,7 +34,7 @@ $block: #{$fd-namespace}-input;
   &::placeholder {
     @include fd-reset();
 
-    line-height: 2.4;
+    line-height: $fd-form-input-height;
     font-style: italic;
     color: var(--sapField_PlaceholderTextColor);
   }
@@ -48,7 +48,7 @@ $block: #{$fd-namespace}-input;
     box-sizing: border-box;
 
     &::placeholder {
-      line-height: 1.7rem;
+      line-height: $fd-form-input-height--compact;
     }
   }
 
