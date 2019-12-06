@@ -13,10 +13,9 @@ $(document).ready(function () {
         $('#mobile-sidenav-btn').hide();
     }
 
-    $('#mobile-sidenav-btn').click(() => {
+    $('#mobile-sidenav-btn').click(function () {
         $("#tg-sb-sidebar").toggleClass('fd-styles__mobile-list');
     });
-
 });
 
 $(document).ready(function () {
@@ -48,8 +47,8 @@ $(document).ready(function () {
                 //target
                 target.setAttribute("aria-hidden", isExpanded);
                 //searchinput for shellbar
-                if(document.getElementById(`${targetId}1`) !== null) {
-                    document.getElementById(`${targetId}1`).setAttribute("aria-hidden", isExpanded);
+                if (document.getElementById('' + targetId + '1') !== null) {
+                    document.getElementById('' + targetId + '1').setAttribute("aria-hidden", isExpanded);
                 }
                 return;
             }
@@ -203,20 +202,22 @@ $(document).ready(function () {
 
     // display responsive component controls
     const displayControls = document.querySelectorAll('.docs-component--responsive-display__controls');
-    displayControls.forEach((displayControl) => {
-        const frame = displayControl.parentElement.querySelector('.docs-component--responsive-display__frame');
-        displayControl.addEventListener('click', event => {
+
+    for (var i = 0; i < displayControls.length; i++) {
+        const frame = displayControls[i].parentElement.querySelector('.docs-component--responsive-display__frame');
+        displayControls[i].addEventListener('click', function (event) {
             const clickTarget = event.target;
-            clearControls(displayControl);
+            clearControls(displayControls[i]);
             resizeFrame(clickTarget, frame);
             clickTarget.setAttribute('aria-pressed', true);
         })
-    });
+    }
 
     function clearControls(displayControl) {
-        Array.from(displayControl.children).forEach(button => {
-            button.setAttribute('aria-pressed', false);
-        });
+        let childrens = Array.from(displayControl.children)
+        for (var i = 0; i < childrens.length; i++) {
+            childrens[i].setAttribute('aria-pressed', false);
+        }
     }
 
     function resizeFrame(target, frame) {
