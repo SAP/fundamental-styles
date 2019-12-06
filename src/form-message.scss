@@ -10,7 +10,7 @@ $block: #{$fd-namespace}-form-message;
 .#{$block} {
   @include fd-reset();
 
-  z-index: 10;
+  z-index: 3;
   clear: both;
   height: auto;
   width: fit-content;

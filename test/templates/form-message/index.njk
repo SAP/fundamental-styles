@@ -6,25 +6,25 @@
 
 <h3>Default</h3>
 {% set example %}
-    {{ formMessage()}}
+    <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message" aria-hidden="true" id="popoverD1">Normal message</span>
 {% endset %}
 {{ format(example) }}
 
 <h3>Error</h3>
 {% set example %}
-    {{ formMessage(modifier="error", message="Error message") }}
+    <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--error" aria-hidden="true" id="popoverD1">Normal message</span>
 {% endset %}
 {{ format(example) }}
 
 <h3>Warning</h3>
 {% set example %}
-    {{ formMessage(modifier="warning", message="Warning message") }}
+    <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--warning" aria-hidden="true" id="popoverD1">Normal message</span>
 {% endset %}
 {{ format(example) }}
 
 <h3>Information </h3>
 {% set example %}
-    {{ formMessage(modifier="information", message="Information message") }}
+    <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--information" aria-hidden="true" id="popoverD1">Normal message</span>
 {% endset %}
 {{ format(example) }}
 

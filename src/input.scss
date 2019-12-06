@@ -19,6 +19,14 @@ $block: #{$fd-namespace}-input;
   z-index: 1;
   cursor: text;
 
+  &[aria-expanded="false"] {
+    z-index: 0;
+  }
+
+  &[aria-expanded="true"] {
+    z-index: 4;
+  }
+
   &:last-child {
     margin-bottom: $fd-form-input-margin;
   }
