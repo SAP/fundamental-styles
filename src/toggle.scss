@@ -136,18 +136,20 @@ $block: #{$fd-namespace}-toggle;
 
     .#{$block}__inner {
       right: -1.8125rem;
-      left: 1px;
+      left: 0.0625rem;
     }
   }
 
   @include fd-rtl() {
     .#{$block}__inner {
-      left: 1px;
+      left: 0.0625rem;
+      right: -1.8125rem;
     }
 
     .#{$block}__input:checked + .#{$block}__wrapper {
       .#{$block}__inner {
         left: calc(1.9375rem - 100%);
+        right: 0.0625rem;
       }
     }
   }
@@ -192,7 +194,7 @@ $block: #{$fd-namespace}-toggle;
 
     @include fd-rtl() {
       .#{$block}__inner {
-        left: 1px;
+        left: 0.0625rem;
       }
 
       .#{$block}__input:checked + .#{$block}__wrapper {
