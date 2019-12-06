@@ -1,6 +1,6 @@
 {
   "name": "fundamental-styles",
-  "version": "0.4.0-rc.22",
+  "version": "0.4.0-rc.23",
   "description": "Fundamental Styles is a Design System and HTML/CSS Component Library used to build modern Product User Experiences with the SAP look and feel. Learn more about this project at - http://sap.github.io/fundamental-styles/",
   "main": "dist/fundamental-styles.css",
   "scripts": {
@@ -25,7 +25,7 @@
     "style:postCSS": "postcss --config config/postcss.config.js  --replace dist/*.css",
     "style:remove": "if [ -d dist/ ]; then rm -rf dist/; fi",
     "test": "npm run test:linux-fix && server-test start:playground http-get://localhost:3030 test:visual",
-    "test:linux-fix":"cp -rf scripts/runDocker.js node_modules/backstopjs/core/util/",
+    "test:linux-fix": "cp -rf scripts/runDocker.js node_modules/backstopjs/core/util/",
     "test:ci-config": "./ci-scripts/generateBackstopConfig.js",
     "test:reference": "backstop reference --config ./test/visual-regression-tests/config/backstopConfig.js --docker",
     "test:update": "npm run test:linux-fix && server-test start:playground http-get://localhost:3030 test:reference && backstop approve --config ./test/visual-regression-tests/config/backstopConfig.js",
