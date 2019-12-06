@@ -1,0 +1,14 @@
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+/*!
+
+.fd-form-input-message-group
+*/
+$block: #{$fd-namespace}-form-input-message-group;
+
+.#{$block} {
+  flex: 1;
+  position: relative;
+}

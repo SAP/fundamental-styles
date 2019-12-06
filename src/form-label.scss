@@ -12,9 +12,8 @@ $block: #{$fd-namespace}-form-label;
   @include fd-ellipsis();
 
   width: fit-content;
-  max-width: 100%;
-  display: inline-block;
   position: relative;
+  max-width: 100%;
   font-size: var(--sapFontSize);
   color: var(--sapContent_LabelColor);
   padding-right: 6px;
@@ -23,7 +22,9 @@ $block: #{$fd-namespace}-form-label;
 
   @include fd-rtl() {
     padding-left: 6px;
+    padding-right: 0;
     margin-left: 8px;
+    margin-right: 0;
   }
 
   &.is-disabled {

@@ -11,7 +11,9 @@ $block: #{$fd-namespace}-form-item;
 .#{$block} {
   @include fd-reset();
 
+  position: relative;
   display: flex;
+  align-content: center;
   flex-direction: column;
 
   &--horizontal {

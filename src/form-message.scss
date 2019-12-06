@@ -10,20 +10,30 @@ $block: #{$fd-namespace}-form-message;
 .#{$block} {
   @include fd-reset();
 
+  z-index: 3;
   clear: both;
   height: auto;
   width: fit-content;
   min-width: 6rem;
   max-width: 22rem;
   padding: 0.5rem;
-  margin-left: 1px;
+  margin-top: -0.25rem;
   font-size: var(--sapFontSmallSize);
   font-weight: normal;
   line-height: normal;
   color: var(--sapTextColor);
   overflow: hidden;
   text-overflow: ellipsis;
-  box-shadow: var(--sapContent_Shadow1);
+  border-radius: 0 !important;
+  white-space: pre-line !important;
+
+  @include fd-rtl() {
+    right: 0;
+  }
+
+  &--compact {
+    margin-top: -0.1875rem;
+  }
 
   &--error {
     background-color: var(--sapErrorBackground);

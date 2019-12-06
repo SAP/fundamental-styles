@@ -32,12 +32,11 @@ Do not use the input field if:
 - The user needs to carry out a search. In this case, use the search field.
 
 {% capture inputs %} 
-    <div class="fd-form-item">
-        <label class="fd-form-label" for="input-1a">Default Input:</label>
-        <input class="fd-input" type="text" id="input-1a" placeholder="Field placeholder text">
+    <div class="fd-form-item fd-has-margin-none">
+        <label class="fd-form-label" for="input-1">Default input:</label>
+        <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text">
     </div>
-    <br />
-    <br />
+    <br><br>
     <div class="fd-form-item">
         <label class="fd-form-label" for="input-1b">Compact Input:</label>
         <input class="fd-input fd-input--compact" type="text" id="input-1b" placeholder="Field placeholder text">
@@ -92,18 +91,22 @@ Do not use the input field if:
     </div>
     <br />
     <br />
-    <div class="fd-form-item fd-form-item--horizontal">
-        <label class="fd-form-label" for="input-1a">Default Input:</label>
-        <input class="fd-input" type="text" id="input-1a" placeholder="Field placeholder text">
+    <div class="fd-form-item fd-form-item--horizontal fd-has-margin-none fd-popover">
+        <label class="fd-form-label" for="input-1">Default input:</label>
+        <div class="fd-form-input-message-group">
+            <input class="fd-input fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
+            <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message" aria-hidden="true" id="popoverD1">Normal message</span>
+        </div>
     </div>
-    <br />
-    <br />
-    <div class="fd-form-item fd-form-item--horizontal">
-        <label class="fd-form-label" for="input-1b">Compact Input:</label>
-        <input class="fd-input fd-input--compact" type="text" id="input-1b" placeholder="Field placeholder text">
+    <br><br>
+    <div class="fd-form-item fd-form-item--horizontal fd-has-margin-none fd-popover">
+        <label class="fd-form-label" for="input-1">Compact input:</label>
+        <div class="fd-form-input-message-group">
+            <input class="fd-input fd-input--compact fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD2" aria-expanded="false" aria-haspopup="true">
+            <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--compact" aria-hidden="true" id="popoverD2">Normal message</span>
+        </div>
     </div>
-    <br />
-    <br />
+    <br /><br />
     <div class="fd-form-item fd-form-item--horizontal">
         <label class="fd-form-label fd-form-label--required" for="input-1c">Required Input:</label>
         <input class="fd-input" type="text" id="input-1c" placeholder="Field placeholder text">
@@ -163,56 +166,55 @@ The state of the input field can reflect validity of the data entered, whether t
 Along with Invalid and Warning, error messages should be displayed below the field so the user can correct the error and move forward.
 
 {% capture inputs %}
-<div class="fd-form-item">
-    <label class="fd-form-label" for="OatmD552">
-        Normal Input:
-    </label>
-    <input type="text" class="fd-input" id="OatmD552" placeholder="Field placeholder text">
-    <span class="fd-form-message">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc</span>
+<div class="fd-form-item fd-has-margin-none fd-popover">
+    <label class="fd-form-label" for="input-1">Normal input:</label>
+    <div class="fd-form-input-message-group">
+        <input class="fd-input fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverB1" aria-expanded="false" aria-haspopup="true">
+        <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message" aria-hidden="true" id="popoverB1">Normal message</span>
+    </div>
+</div>
+<br />
+<br />
+
+<div class="fd-form-item fd-has-margin-none fd-popover">
+    <label class="fd-form-label" for="input-1">Valid input:</label>
+    <div class="fd-form-input-message-group">
+        <input class="fd-input is-valid fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverB2" aria-expanded="false" aria-haspopup="true">
+        <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--success" aria-hidden="true" id="popoverB2">Success message</span>
+    </div>
 </div>
 
 <br />
 <br />
 
-<div class="fd-form-item">
-    <label class="fd-form-label" for="input-2">
-        Valid Input:
-    </label>
-    <input class="fd-input is-valid" type="text" id="input-2">
-    <span class="fd-form-message fd-form-message--success">Success message</span>
+<div class="fd-form-item fd-has-margin-none fd-popover">
+    <label class="fd-form-label" for="input-1">Error input:</label>
+    <div class="fd-form-input-message-group">
+        <input class="fd-input is-invalid fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverB3" aria-expanded="false" aria-haspopup="true">
+        <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--error" aria-hidden="true" id="popoverB3">Error message</span>
+    </div>
 </div>
 
 <br />
 <br />
 
-<div class="fd-form-item">
-    <label class="fd-form-label" for="UI7xy545">
-        Invalid Input:
-    </label>
-    <input type="text" class="fd-input is-invalid" id="UI7xy545" placeholder="Field placeholder text">
-    <span class="fd-form-message fd-form-message--error">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc metus lacus commodo eget justo ut rutrum varius nunc acus commodo eget justo ut rutrum varius nunc commodo</span>
+<div class="fd-form-item fd-has-margin-none fd-popover">
+    <label class="fd-form-label" for="input-1">Warning input:</label>
+    <div class="fd-form-input-message-group">
+        <input class="fd-input is-warning fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverB4" aria-expanded="false" aria-haspopup="true">
+        <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--warning" aria-hidden="true" id="popoverB4">Warning message</span>
+    </div>
 </div>
 
 <br />
 <br />
 
-<div class="fd-form-item">
-    <label class="fd-form-label" for="pvsz1273">
-        Warning Input:
-    </label>
-    <span class="fd-form-message fd-form-message--warning">Pellentesque metus lacus commodo justo nunc</span>
-    <input type="text" class="fd-input is-warning" id="pvsz1273" placeholder="Field placeholder text">
-</div>
-
-<br />
-<br />
-
-<div class="fd-form-item">
-    <label class="fd-form-label" for="VmsRZ860">
-        Field Label:
-    </label>
-    <span class="fd-form-message fd-form-message--information">Information message</span>
-    <input type="text" class="fd-input is-information" id="VmsRZ860" placeholder="Field placeholder text">
+<div class="fd-form-item fd-has-margin-none fd-popover">
+    <label class="fd-form-label" for="input-1">Information input:</label>
+    <div class="fd-form-input-message-group">
+        <input class="fd-input is-information fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverB5" aria-expanded="false" aria-haspopup="true">
+        <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--information" aria-hidden="true" id="popoverB5">Information message</span>
+    </div>
 </div>
 
 <br />
@@ -234,24 +236,36 @@ Along with Invalid and Warning, error messages should be displayed below the fie
 <br />
 <br />
 
-<div class="fd-form-item" dir="rtl">
-    <label class="fd-form-label fd-form-label--required" for="input-2">
-        Valid Input:
-    </label>
-    <input class="fd-input is-valid" type="text" id="input-2">
-    <span class="fd-form-message fd-form-message--success">Success message</span>
+<div class="fd-form-item fd-has-margin-none fd-popover" dir="rtl">
+    <label class="fd-form-label" for="input-1">Normal input:</label>
+    <div class="fd-form-input-message-group">
+        <input class="fd-input fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverC1" aria-expanded="false" aria-haspopup="true">
+        <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message" aria-hidden="true" id="popoverC1">Normal message</span>
+    </div>
+</div>
+<br />
+<br />
+
+<div class="fd-form-item fd-has-margin-none fd-popover" dir="rtl">
+    <label class="fd-form-label" for="input-1">Valid input:</label>
+    <div class="fd-form-input-message-group">
+        <input class="fd-input is-valid fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverC2" aria-expanded="false" aria-haspopup="true">
+        <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--success" aria-hidden="true" id="popoverC2">Success message</span>
+    </div>
 </div>
 
 <br />
 <br />
 
-<div class="fd-form-item" dir="rtl">
-    <label class="fd-form-label" for="UI7xy545">
-        Invalid Input:
-    </label>
-    <input type="text" class="fd-input is-invalid" id="UI7xy545" placeholder="Field placeholder text">
-    <span class="fd-form-message fd-form-message--error">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc metus lacus commodo eget justo ut rutrum varius nunc acus commodo eget justo ut rutrum varius nunc commodo</span>
+<div class="fd-form-item fd-form-item--horizontal fd-has-margin-none fd-popover" dir="rtl">
+    <label class="fd-form-label" for="input-1">Normal input:</label>
+    <div class="fd-form-input-message-group">
+        <input class="fd-input fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverC3" aria-expanded="false" aria-haspopup="true">
+        <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message" aria-hidden="true" id="popoverC3">Normal message</span>
+    </div>
 </div>
+<br />
+<br />
 {% endcapture %}
 
 {% include display-component.html component=inputs %}

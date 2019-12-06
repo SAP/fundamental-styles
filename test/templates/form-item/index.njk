@@ -15,14 +15,6 @@
 {% endset %}
 {{ format(example) }}
 <br><br>
-{% set example %}
-  {% call formItem() -%}
-    <label>Placeholder label</label>
-    <input class="input-playground" placeholder="Placeholder input" />
-    <span class="fd-form-message span-playground">Placeholder form message</span>
-  {%- endcall %}
-{% endset %}
-{{ format(example) }}
 
 <h2>Inline</h2>
 
