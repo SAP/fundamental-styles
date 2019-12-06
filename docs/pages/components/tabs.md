@@ -105,11 +105,6 @@ Tabs are based on a folder metaphor and used to separate content into different 
             Link
         </a>
     </span>
-    <span class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="98q398" aria-disabled="true" role="tab">
-            Disabled
-        </a>
-    </span>
     <button class="fd-button fd-button--light fd-tabs__overflow"></button>
 </nav>
 <div class="fd-tabs__panel" aria-expanded="false" id="kf8369" role="tabpanel">
@@ -120,9 +115,6 @@ Tabs are based on a folder metaphor and used to separate content into different 
 </div>
 <div class="fd-tabs__panel" aria-expanded="false" id="DGl707" role="tabpanel">
     Nullam ut
-</div>
-<div class="fd-tabs__panel" aria-expanded="false" id="98q398" role="tabpanel">
-    Tincidunt nunc
 </div>
 {% endcapture %}
 {% include display-component.html component=nav-tab %}
