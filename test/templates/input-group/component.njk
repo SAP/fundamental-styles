@@ -18,7 +18,8 @@
         state: "",
         before: [],
         after: [],
-        disabled: false
+        disabled: false,
+        compact: false
     },
     size="")
 %}
@@ -26,19 +27,19 @@
 <div class="fd-input-group{{ modifier.block | modifier('input-group') }} {{ ' is-' + modifier.state if modifier.state }} {{ ' is-disabled' if modifier.disabled }}">
     
     {%- if properties.before %}
-        <span class="fd-input-group__addon{{ modifier.before | modifier('input-group__addon') }} {{ 'fd-input-group__addon--readonly' if properties.input.state.readonly}}">
+        <span class="fd-input-group__addon{{ modifier.before | modifier('input-group__addon') }} {{ 'fd-input-group__addon--readonly' if properties.input.state.readonly}} {{ 'fd-input-group__addon--compact' if modifier.compact}}">
             {{ properties.before | trim | indent(8, true) }}
         </span>
     {%- endif %}
     
     {%- if properties.type == "textarea" %}
-        <textarea class="input-group-input-playground fd-input-group__input" placeholder="{{input.properties.placeholder}}" value="{{input.properties.value}}"></textarea> 
+        <textarea class="input-group-input-playground {{ 'input-group-input-playground--compact' if modifier.compact}} fd-input-group__input" placeholder="{{input.properties.placeholder}}" value="{{input.properties.value}}"></textarea> 
     {%- else %}
-        <input class="input-group-input-playground fd-input-group__input" placeholder="{{input.properties.placeholder}}" value="{{input.properties.value}}" /> 
+        <input class="input-group-input-playground {{ 'input-group-input-playground--compact' if modifier.compact}} fd-input-group__input" placeholder="{{input.properties.placeholder}}" value="{{input.properties.value}}" /> 
     {%- endif %}
     
     {%- if properties.after %}
-        <span class="fd-input-group__addon{{ modifier.after | modifier('input-group__addon') }}">
+        <span class="fd-input-group__addon{{ modifier.after | modifier('input-group__addon') }} {{ 'fd-input-group__addon--compact' if modifier.compact}}">
             {{ properties.after | trim | indent(8, true) }}
         </span>
     {%- endif %}

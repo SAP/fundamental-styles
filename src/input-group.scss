@@ -113,6 +113,17 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     padding-left: 0.625rem;
     padding-right: 0.625rem;
 
+    span[class*='sap-icon--'] {
+      &::before {
+        font-size: var(--sapFontLargeSize);
+      }
+    }
+
+    &--compact {
+      min-width: 2rem;
+      min-height: $fd-form-input-height--compact;
+    }
+
     &--readonly {
       opacity: 0.4;
     }
@@ -216,14 +227,6 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
     border: none;
     width: 100%;
-  }
-
-  &--compact {
-    .#{$block}__input,
-    .#{$block}__addon {
-      min-height: $fd-form-input-height--compact;
-      height: $fd-form-input-height--compact;
-    }
   }
 
   .#{$fd-namespace}-textarea {

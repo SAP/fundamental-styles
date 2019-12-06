@@ -103,11 +103,11 @@
     }
     toggleTheme.addEventListener('change', function () {
         if (this.checked) {
-            toggleStylesheet(uglyThemeCss, false);
-            localStorage.setItem("toggleThemeState", false);
-        } else {
             toggleStylesheet(uglyThemeCss, true);
             localStorage.setItem("toggleThemeState", true);
+        } else {
+            toggleStylesheet(uglyThemeCss, false);
+            localStorage.setItem("toggleThemeState", false);
         }
     });
 
