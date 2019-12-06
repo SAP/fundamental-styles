@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.0-rc.25"></a>
+# [0.4.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.24...v0.4.0-rc.25) (2019-12-06)
+
+
+### Features
+
+* input message to popover and add inline ([#472](https://github.com/SAP/fundamental-styles/issues/472)) ([df1b632](https://github.com/SAP/fundamental-styles/commit/df1b632))
+
+
+
 <a name="0.4.0-rc.24"></a>
 # [0.4.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.23...v0.4.0-rc.24) (2019-12-06)
 
