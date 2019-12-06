@@ -20,9 +20,9 @@ $block: #{$fd-namespace}-form-group;
 
 .#{$block}--inline {
   display: flex;
+  justify-content: flex-start;
 
-  .fd-form-item {
-    float: left;
+  > :not(:last-child) {
     margin-right: fd-space(4);
   }
 }

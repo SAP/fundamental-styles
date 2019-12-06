@@ -92,25 +92,25 @@ Do not use the input field if:
     </div>
     <br />
     <br />
-    <div class="fd-form-item--horizontal">
+    <div class="fd-form-item fd-form-item--horizontal">
         <label class="fd-form-label" for="input-1a">Default Input:</label>
         <input class="fd-input" type="text" id="input-1a" placeholder="Field placeholder text">
     </div>
     <br />
     <br />
-    <div class="fd-form-item--horizontal">
+    <div class="fd-form-item fd-form-item--horizontal">
         <label class="fd-form-label" for="input-1b">Compact Input:</label>
         <input class="fd-input fd-input--compact" type="text" id="input-1b" placeholder="Field placeholder text">
     </div>
     <br />
     <br />
-    <div class="fd-form-item--horizontal">
+    <div class="fd-form-item fd-form-item--horizontal">
         <label class="fd-form-label fd-form-label--required" for="input-1c">Required Input:</label>
         <input class="fd-input" type="text" id="input-1c" placeholder="Field placeholder text">
     </div>
     <br />
     <br />
-    <div class="fd-form-item--horizontal">
+    <div class="fd-form-item fd-form-item--horizontal">
         <label class="fd-form-label" aria-required="true" for="input-1d">Password:</label>
         <input class="fd-input" type="password" id="input-1d">
     </div>
