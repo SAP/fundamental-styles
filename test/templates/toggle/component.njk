@@ -26,17 +26,17 @@ toggle:
     <div class="fd-toggle__wrapper">
         <div class="fd-toggle__inner">
             {%- if noLabel =='false' -%}
-                <span class="fd-toggle__label">on</span>
+                <span class="fd-toggle__label fd-toggle__label--on">on</span>
             {%- endif -%}
             {%- if semantic =='true' -%}
-                <span class="fd-toggle__label fd-toggle__icon-on sap-icon--accept"></span>
+                <span class="fd-toggle__label fd-toggle__icon--on sap-icon--accept"></span>
             {%- endif -%}
             <span class="fd-toggle__switch" role="presentation"></span>
             {%- if noLabel =='false' -%}
-                <span class="fd-toggle__label">off</span>
+                <span class="fd-toggle__label fd-toggle__label--off">off</span>
             {%- endif -%}
             {%- if semantic =='true' -%}
-                <span class="fd-toggle__label fd-toggle__icon-off sap-icon--decline"></span>
+                <span class="fd-toggle__label fd-toggle__icon--off sap-icon--decline"></span>
             {%- endif -%}
         </div>
     </div>

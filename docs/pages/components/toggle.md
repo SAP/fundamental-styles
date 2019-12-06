@@ -26,9 +26,9 @@ To clarify the meaning of the toggle, use a label above it (ex. Live).
                 <input class="fd-toggle__input" type="checkbox" name="" value="" id="y21YO3911">
                 <div class="fd-toggle__wrapper">
                     <div class="fd-toggle__inner">
-                        <span class="fd-toggle__label">on</span>
+                        <span class="fd-toggle__label fd-toggle__label--on">on</span>
                         <span class="fd-toggle__switch" role="presentation"></span>
-                        <span class="fd-toggle__label">off</span>
+                        <span class="fd-toggle__label fd-toggle__label--off">off</span>
                     </div>
                 </div>
             </span>
@@ -41,9 +41,9 @@ To clarify the meaning of the toggle, use a label above it (ex. Live).
                 <input class="fd-toggle__input" type="checkbox" name="" value="" id="y21YO3911">
                 <div class="fd-toggle__wrapper">
                     <div class="fd-toggle__inner">
-                        <span class="fd-toggle__label">on</span>
+                        <span class="fd-toggle__label fd-toggle__label--on">on</span>
                         <span class="fd-toggle__switch" role="presentation"></span>
-                        <span class="fd-toggle__label">off</span>
+                        <span class="fd-toggle__label fd-toggle__label--off">off</span>
                     </div>
                 </div>
             </span>
@@ -104,9 +104,9 @@ When the value of the toggle requires translation, it is suggested to display th
                 <input class="fd-toggle__input" type="checkbox" name="" value="" id="y21YO3251">
                 <div class="fd-toggle__wrapper">
                     <div class="fd-toggle__inner">
-                        <span class="fd-toggle__label fd-toggle__icon-on sap-icon--accept"></span>
+                        <span class="fd-toggle__label fd-toggle__icon--on fd-toggle__icon sap-icon--accept"></span>
                         <span class="fd-toggle__switch" role="presentation"></span>
-                        <span class="fd-toggle__label fd-toggle__icon-off sap-icon--decline"></span>
+                        <span class="fd-toggle__label fd-toggle__icon--off fd-toggle__icon sap-icon--decline"></span>
                     </div>
                 </div>
             </span>
@@ -119,9 +119,9 @@ When the value of the toggle requires translation, it is suggested to display th
                 <input class="fd-toggle__input" type="checkbox" name="" value="" id="y21YO3431">
                 <div class="fd-toggle__wrapper">
                     <div class="fd-toggle__inner">
-                        <span class="fd-toggle__label fd-toggle__icon-on sap-icon--accept"></span>
+                        <span class="fd-toggle__label fd-toggle__icon--on fd-toggle__icon sap-icon--accept"></span>
                         <span class="fd-toggle__switch" role="presentation"></span>
-                        <span class="fd-toggle__label fd-toggle__icon-off sap-icon--decline"></span>
+                        <span class="fd-toggle__label fd-toggle__icon--off fd-toggle__icon sap-icon--decline"></span>
                     </div>
                 </div>
             </span>
@@ -140,9 +140,9 @@ When the value of the toggle requires translation, it is suggested to display th
             <input class="fd-toggle__input" type="checkbox" name="" value="" id="y21YO3911">
             <div class="fd-toggle__wrapper">
                 <div class="fd-toggle__inner">
-                    <span class="fd-toggle__label fd-toggle__icon-on sap-icon--accept"></span>
+                    <span class="fd-toggle__label fd-toggle__icon--on fd-toggle__icon sap-icon--accept"></span>
                     <span class="fd-toggle__switch" role="presentation"></span>
-                    <span class="fd-toggle__label fd-toggle__icon-off sap-icon--decline"></span>
+                    <span class="fd-toggle__label fd-toggle__icon--off fd-toggle__icon sap-icon--decline"></span>
                 </div>
             </div>
         </span>
@@ -152,10 +152,30 @@ When the value of the toggle requires translation, it is suggested to display th
             <input class="fd-toggle__input" type="checkbox" name="" value="" id="y21YO3911">
             <div class="fd-toggle__wrapper">
                 <div class="fd-toggle__inner">
-                    <span class="fd-toggle__label fd-toggle__icon-on sap-icon--accept"></span>
-                    <span class="fd-toggle__switch" role="presentation"></span>
-                    <span class="fd-toggle__label fd-toggle__icon-off sap-icon--decline"></span>
-                </div>
+                   <span class="fd-toggle__label fd-toggle__icon--on fd-toggle__icon sap-icon--accept"></span>
+                   <span class="fd-toggle__switch" role="presentation"></span>
+                   <span class="fd-toggle__label fd-toggle__icon--off fd-toggle__icon sap-icon--decline"></span>
+               </div>
+            </div>
+        </span>
+    </label>
+    <label class="fd-form-label fd-form-label--toggle">
+        <span class="fd-toggle fd-toggle--no-label fd-toggle--compact" >
+            <input class="fd-toggle__input" type="checkbox" name="" value="" id="y21YO3911">
+            <div class="fd-toggle__wrapper">
+                <div class="fd-toggle__inner">
+                   <span class="fd-toggle__switch" role="presentation"></span>
+               </div>
+            </div>
+        </span>
+    </label>
+    <label class="fd-form-label fd-form-label--toggle">
+        <span class="fd-toggle fd-toggle--no-label" >
+            <input class="fd-toggle__input" type="checkbox" name="" value="" id="y21YO3911">
+            <div class="fd-toggle__wrapper">
+                <div class="fd-toggle__inner">
+                   <span class="fd-toggle__switch" role="presentation"></span>
+               </div>
             </div>
         </span>
     </label>

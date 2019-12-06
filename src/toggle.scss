@@ -72,7 +72,7 @@ $block: #{$fd-namespace}-toggle;
     align-items: center;
     top: 50%;
     transform: translateY(-50%);
-    left: calc(1.9375rem - 100%);
+    left: calc(1.8125rem - 100%);
     transition: $fd-toggle-transition;
     min-width: 4.25rem;
   }
@@ -86,6 +86,31 @@ $block: #{$fd-namespace}-toggle;
     width: $fd-toggle-label-width;
     text-transform: uppercase;
     text-align: center;
+  }
+
+  &__icon {
+    @include fd-reset();
+
+    font-size: 0.75rem;
+
+    &--off {
+      color: var(--sapNegativeElementColor);
+    }
+
+    &--on {
+      color: var(--sapPositiveElementColor);
+    }
+  }
+
+  &__icon,
+  &__label {
+    &--on {
+      margin: 0 0 0 0.125rem;
+    }
+
+    &--off {
+      margin: 0 0.125rem 0 0;
+    }
   }
 
   &__switch {
@@ -135,21 +160,32 @@ $block: #{$fd-namespace}-toggle;
     }
 
     .#{$block}__inner {
-      right: -1.8125rem;
-      left: 0.0625rem;
+      right: -2rem;
+      left: -0.1875rem;
     }
   }
 
   @include fd-rtl() {
+    .#{$block}__icon,
+    .#{$block}__label {
+      &--on {
+        margin: 0 0.125rem 0 0;
+      }
+
+      &--off {
+        margin: 0 0 0 0.125rem;
+      }
+    }
+
     .#{$block}__inner {
-      left: 0.0625rem;
-      right: -1.8125rem;
+      left: -0.1875rem;
+      right: -2rem;
     }
 
     .#{$block}__input:checked + .#{$block}__wrapper {
       .#{$block}__inner {
-        left: calc(1.9375rem - 100%);
-        right: 0.0625rem;
+        left: calc(1.688rem - 100%);
+        right: -0.1875rem;
       }
     }
   }
@@ -188,18 +224,14 @@ $block: #{$fd-namespace}-toggle;
     }
 
     .#{$block}__inner {
-      left: calc(1.5625rem - 100%);
+      left: calc(1.438rem - 100%);
       min-width: 3.125rem;
     }
 
     @include fd-rtl() {
-      .#{$block}__inner {
-        left: 0.0625rem;
-      }
-
       .#{$block}__input:checked + .#{$block}__wrapper {
         .#{$block}__inner {
-          left: calc(1.5625rem - 100%);
+          left: calc(1.3125rem - 100%);
         }
       }
     }
@@ -211,9 +243,14 @@ $block: #{$fd-namespace}-toggle;
       height: $fd-toggle-track-no-label-height;
     }
 
+    .#{$block}__inner {
+      right: 0;
+    }
+
     .#{$block}__input:checked + .#{$block}__wrapper {
       .#{$block}__inner {
-        right: auto;
+        left: 0.0625rem;
+        right: 1rem;
       }
     }
 
@@ -224,21 +261,26 @@ $block: #{$fd-namespace}-toggle;
         width: $fd-toggle-track-no-label-compact-width;
         height: $fd-toggle-track-no-label-compact-height;
       }
+
+      @include fd-rtl() {
+        .#{$block}__inner {
+          right: -1rem;
+        }
+      }
     }
-  }
 
-  &__icon-on {
-    @include fd-reset();
+    @include fd-rtl() {
+      .#{$block}__inner {
+        right: -1.4375rem;
+      }
 
-    font-size: 0.75rem;
-    color: var(--sapPositiveElementColor);
-  }
-
-  &__icon-off {
-    @include fd-reset();
-
-    font-size: 0.75rem;
-    color: var(--sapNegativeElementColor);
+      .#{$block}__input:checked + .#{$block}__wrapper {
+        .#{$block}__inner {
+          right: 0.0625rem;
+          left: 0;
+        }
+      }
+    }
   }
 
   &--semantic {
