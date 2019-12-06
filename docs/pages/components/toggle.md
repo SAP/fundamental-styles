@@ -14,8 +14,8 @@ The toggle/switch is meant to resemble a physical switch and allow a user to tur
 It is recommended to always display the toggle with a label above it as well as the label of the selected state. For example, the label above would be Active, the toggle state would be “on” and the selected state label displayed to the right of the toggle would be “Yes”.
 
 
-## Toggle with Label on top
-To clarify the meaning of the toggle, use a label above it (ex. Live).
+## Toggle with Labels on Sides
+This is basic usage of toggle
 
 {% capture default %}
 <div class="fd-form-group">
@@ -53,8 +53,8 @@ To clarify the meaning of the toggle, use a label above it (ex. Live).
 {% endcapture %}
 {% include display-component.html component=default %}
 
-## Toggle with label on the side
-When the value of the toggle requires translation, it is suggested to display the text value (ex. On/Off) outside and to the right of of the toggle to allow for longer translations.  (ex. French translation of “On” is “Allumez”)
+## Toggle without Labels on Sides
+When there is no need to put any label on toggle sides, it's mandatory to add `fd-toggle--no-label` modifier.
 
 {% capture default %}
 <div class="fd-form-group">
