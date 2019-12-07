@@ -8,7 +8,7 @@ calendar:
 -->
 {% set data = {
     "days": [
-      "Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
+      "", "Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
     ],
     "months": [
       {
@@ -67,7 +67,7 @@ calendar:
   {%- set _grid_id = utils.id() %}
   {%- set _months_id = utils.id() %}
   {%- set _years_id = utils.id() %}
-<div class="fd-calendar">{{properties.header.show}}
+<div class="fd-calendar{{ modifier.block | modifier('calendar')}}">{{properties.header.show}}
   {%- if not properties.header.hide %}
       {{ calendar_header({ months: _months_id, years: _years_id }, properties) }}
   {%- endif %}
@@ -100,10 +100,16 @@ calendar:
     {{ calendar_header_group() }}
     <tbody class="fd-calendar__group">
       <tr class="fd-calendar__row">
+        <td class="fd-calendar__week-number" role="gridcell">
+            <span class="fd-calendar__text" role="button">27</span>
+        </td>
       {%- for cell in range(0,totalCells) %}
       {%- if (loop.index0) % 7 == 0 and not loop.first%}
       </tr>
       <tr class="fd-calendar__row">
+        <td class="fd-calendar__week-number" role="gridcell">
+            <span class="fd-calendar__text" role="button">27</span>
+        </td>
       {%-endif %}
   {%- set date = loop.index - daysOffset %}
   {%- set _is_other_month = date < 1 or date > monthTotalDays %}

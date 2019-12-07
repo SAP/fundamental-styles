@@ -129,6 +129,15 @@
             aria=data.aria
         )
     }}
+    {{  calendar(
+            properties=data.properties,
+            modifier={
+                block: ['compact']
+            },
+            state=data.state,
+            aria=data.aria
+        )
+    }}
 
         {% endset %}
         {{ format(example) }}
@@ -151,6 +160,21 @@
     }
     })
   }}
+  {{  calendar({
+    "month": 8,
+    "year": 2018,
+    "today": 6,
+    "dates": {
+      "daysOffset": 3,
+      "block": [25,29],
+      "selected": 15,
+      "disablePast": true
+    }
+    },
+     modifier={
+      block: ['compact']
+    })
+  }}
   {% endset %}
   {{ format(example) }}
 
@@ -169,6 +193,18 @@
     }
   })
 }}
+{{  calendar({
+    "month": 0,
+    "year": 2018,
+    "today": 3,
+    "months": {
+      "selected": 2,
+      "show": true
+    }
+  }, modifier={
+     block: ['compact']
+ })
+}}
 {% endset %}
 {{ format(example) }}
 
@@ -184,6 +220,19 @@
       "show": true
     }
   })
+}}
+{{  calendar({
+    "month": 0,
+    "year": 2018,
+    "today": 3,
+    "years": {
+      "selected": 3,
+      "show": true
+    }
+  },
+    modifier={
+        block: ['compact']
+    })
 }}
 {% endset %}
 {{ format(example) }}
