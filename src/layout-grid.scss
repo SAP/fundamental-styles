@@ -64,6 +64,17 @@ $col-xl: 16;
   }
 }
 
+// for new row
+
+.#{$block}-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+// for columns
+
 .#{$block} {
   @include fd-reset();
 
