@@ -12,7 +12,7 @@ summary:
 ## With input
 
 {% capture default %}
-<div class="fd-localization-editor">
+<div class="fd-localization-editor break break--single">
    <div class="fd-popover">
       <div class="fd-popover__control">
          <div class="fd-form-item">
@@ -59,9 +59,6 @@ summary:
       </div>
    </div>
 </div>
-
-<br>
-
 <div class="fd-localization-editor">
    <div class="fd-popover">
       <div class="fd-popover__control">

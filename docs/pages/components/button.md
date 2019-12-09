@@ -86,29 +86,36 @@ The buttons can also be set to a state:
 * **Disabled**: It cannot be clicked/tapped. This state can be rendered using `is-disabled` class or `aria-disabled="true"` attribute for accessibility.
 
 {% capture button-standard-state %}
+<div class ="break break--single">
 <button class="fd-button--emphasized">Normal State</button>
 <button class="fd-button--emphasized" aria-selected="true">Selected State</button>
 <button class="fd-button--emphasized" aria-disabled="true">Disabled State</button>
-<br><br>
+</div>
+<div class ="break break--single">
 <button class="fd-button">Normal State</button>
 <button class="fd-button" aria-selected="true">Selected State</button>
 <button class="fd-button" aria-disabled="true">Disabled State</button>
-<br><br>
+</div>
+<div class ="break break--single">
 <button class="fd-button--light">Normal State</button>
 <button class="fd-button--light" aria-selected="true">Selected State</button>
 <button class="fd-button--light" aria-disabled="true">Disabled State</button>
-<br><br>
+</div>
+<div class ="break break--single">
 <button class="fd-button--standard">Normal State</button>
 <button class="fd-button--standard" aria-selected="true">Selected State</button>
 <button class="fd-button--standard" aria-disabled="true">Disabled State</button>
-<br><br>
+</div>
+<div class ="break break--single">
 <button class="fd-button--positive">Normal State</button>
 <button class="fd-button--positive" aria-selected="true">Selected State</button>
 <button class="fd-button--positive" aria-disabled="true">Disabled State</button>
-<br><br>
+</div>
+<div class ="break break--single">
 <button class=" fd-button--negative">Normal State</button>
 <button class=" fd-button--negative" aria-selected="true">Selected State</button>
 <button class=" fd-button--negative" aria-disabled="true">Disabled State</button>
+</div>
 {% endcapture %}
 
 {% include display-component.html component=button-standard-state %}
@@ -177,34 +184,37 @@ Button with multiple actions
 
 
 {% capture button-group-small %}
-<div dir="rtl">
-  <button class="fd-button--emphasized sap-icon--cart">Add to Cart</button>
-  <button class="fd-button sap-icon--cart">Add to Cart</button>
-  <button class="fd-button--light sap-icon--cart">Add to Cart</button>
-  <button class="fd-button--positive sap-icon--accept">Approve</button>
-  <button class="fd-button--negative sap-icon--decline">Reject</button>
-  <br><br>
-  <button class="fd-button--emphasized fd-button--menu sap-icon--cart">Add to Cart</button>
-  <button class="fd-button fd-button--menu sap-icon--cart">Add to Cart</button>
-  <button class="fd-button--light fd-button--menu sap-icon--cart">Add to Cart</button>
-  <button class="fd-button--emphasized fd-button--positive fd-button--menu sap-icon--accept">Approve</button>
-  <button class="fd-button--emphasized fd-button--negative fd-button--menu sap-icon--decline">Reject</button>
-  <br><br>
-  <button class="fd-button sap-icon--cart"></button>
-  <button class="fd-button--light sap-icon--cart"></button>
-  <button class="fd-button--standard sap-icon--filter"></button>
-  <button class="fd-button--positive sap-icon--accept"></button>
-  <button class="fd-button--negative sap-icon--decline"></button>
-  <div class="fd-button-group" role="group" aria-label="Group label">
-    <button class="fd-button sap-icon--survey"></button>
-    <button class="fd-button sap-icon--pie-chart" aria-pressed="true"></button>
-    <button class="fd-button sap-icon--pool"></button>
+<div  dir="rtl">
+  <div class ="break break--single">
+    <button class="fd-button--emphasized sap-icon--cart">Add to Cart</button>
+    <button class="fd-button sap-icon--cart">Add to Cart</button>
+    <button class="fd-button--light sap-icon--cart">Add to Cart</button>
+    <button class="fd-button--positive sap-icon--accept">Approve</button>
+    <button class="fd-button--negative sap-icon--decline">Reject</button>
   </div>
-
-  <div class="fd-button-group" role="group" aria-label="Group label">
-    <button class="fd-button fd-button--compact" aria-pressed="true">Left</button>
-    <button class="fd-button fd-button--compact">Middle</button>
-    <button class="fd-button fd-button--compact">Right</button>
+  <div class ="break break--single">
+    <button class="fd-button--emphasized fd-button--menu sap-icon--cart">Add to Cart</button>
+    <button class="fd-button fd-button--menu sap-icon--cart">Add to Cart</button>
+    <button class="fd-button--light fd-button--menu sap-icon--cart">Add to Cart</button>
+    <button class="fd-button--emphasized fd-button--positive fd-button--menu sap-icon--accept">Approve</button>
+    <button class="fd-button--emphasized fd-button--negative fd-button--menu sap-icon--decline">Reject</button>
+  </div>
+  <div class ="break break--single">
+    <button class="fd-button sap-icon--cart"></button>
+    <button class="fd-button--light sap-icon--cart"></button>
+    <button class="fd-button--standard sap-icon--filter"></button>
+    <button class="fd-button--positive sap-icon--accept"></button>
+    <button class="fd-button--negative sap-icon--decline"></button>
+    <div class="fd-button-group" role="group" aria-label="Group label">
+      <button class="fd-button sap-icon--survey"></button>
+      <button class="fd-button sap-icon--pie-chart" aria-pressed="true"></button>
+      <button class="fd-button sap-icon--pool"></button>
+    </div>
+    <div class="fd-button-group" role="group" aria-label="Group label">
+      <button class="fd-button fd-button--compact" aria-pressed="true">Left</button>
+      <button class="fd-button fd-button--compact">Middle</button>
+      <button class="fd-button fd-button--compact">Right</button>
+    </div>
   </div>
 </div>
 {% endcapture %}
@@ -214,28 +224,32 @@ Button with multiple actions
 ## Menu Button
 
 {% capture button-menu %}
+<div class ="break break--single">
 <button class="fd-button fd-button--menu">Action Button</button>
 <button class="fd-button--standard fd-button--menu">Standard Button</button>
 <button class="fd-button--positive fd-button--menu">Positive Button</button>
 <button class="fd-button--negative fd-button--menu">Negative Button</button>
-<br><br>
+</div>
+<div class ="break break--single">
 <button class="fd-button fd-button--menu" aria-disabled="true">Action Button</button>
 <button class="fd-button--standard fd-button--menu" aria-disabled="true">Standard Button</button>
 <button class="fd-button--positive fd-button--menu" aria-disabled="true">Positive Button</button>
 <button class="fd-button--negative fd-button--menu" aria-disabled="true">Negative Button</button>
-<br><br>
+</div>
+<div class ="break break--single">
 <button class="fd-button--emphasized fd-button--menu sap-icon--cart">Add to Cart</button>
 <button class="fd-button fd-button--menu sap-icon--cart">Add to Cart</button>
 <button class="fd-button--light fd-button--menu sap-icon--cart">Add to Cart</button>
 <button class="fd-button--emphasized fd-button--menu fd-button--positive sap-icon--accept">Approve</button>
 <button class="fd-button--negative fd-button--menu sap-icon--decline">Reject</button>
-<br><br>
+</div>
+<div class ="break break--single">
 <button class="fd-button fd-button--menu sap-icon--cart"></button>
 <button class="fd-button--light fd-button--menu sap-icon--cart"></button>
 <button class="fd-button--standard fd-button--menu sap-icon--filter"></button>
 <button class="fd-button--menu fd-button--positive sap-icon--accept"></button>
 <button class="fd-button--menu fd-button--negative sap-icon--decline"></button>
-<br><br>
+</div>
 <button class="fd-button fd-button--menu">Default</button>
 <button class="fd-button--compact fd-button--menu">Compact</button>
 {% endcapture %}

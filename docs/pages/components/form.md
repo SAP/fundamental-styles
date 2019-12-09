@@ -32,93 +32,68 @@ Do not use the input field if:
 - The user needs to carry out a search. In this case, use the search field.
 
 {% capture inputs %} 
-    <div class="fd-form-item fd-has-margin-none">
+    <div class="fd-form-item fd-has-margin-none break">
         <label class="fd-form-label" for="input-1">Default input:</label>
         <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text">
     </div>
-    <br><br>
-    <div class="fd-form-item">
+    <div class="fd-form-item break">
         <label class="fd-form-label" for="input-1b">Compact Input:</label>
         <input class="fd-input fd-input--compact" type="text" id="input-1b" placeholder="Field placeholder text">
     </div>
-    <br />
-    <br />
-    <div class="fd-form-item">
+    <div class="fd-form-item break">
         <label class="fd-form-label fd-form-label--required" for="input-1c">Required Input:</label>
         <input class="fd-input" type="text" id="input-1c" placeholder="Field placeholder text">
     </div>
-    <br />
-    <br />
-    <div class="fd-form-item">
+    <div class="fd-form-item break">
         <label class="fd-form-label" aria-required="true" for="input-1d">Password:</label>
         <input class="fd-input" type="password" id="input-1d">
     </div>
-    <br />
-    <br />
-    <div class="fd-form-item">
+    <div class="fd-form-item break">
         <label class="fd-form-label" for="input-01">Invalid (Error) Input:</label>
         <input class="fd-input is-invalid" type="text" id="input-01" placeholder="Field placeholder text">
     </div>
-    <br />
-    <br />
-    <div class="fd-form-item">
+    <div class="fd-form-item break">
         <label class="fd-form-label" for="input-02">Valid (Success) Input:</label>
         <input class="fd-input is-valid" type="text" id="input-02" placeholder="Field placeholder text">
     </div>
-    <br />
-    <br />
-    <div class="fd-form-item">
+    <div class="fd-form-item break">
         <label class="fd-form-label" for="input-03">Warning (Alert) Input:</label>
         <input class="fd-input is-warning" type="text" id="input-03" placeholder="Field placeholder text">
     </div>
-    <br />
-    <br />
-    <div class="fd-form-item">
+    <div class="fd-form-item break">
         <label class="fd-form-label" for="input-04">Information Input:</label>
         <input class="fd-input is-information" type="text" id="input-04">
     </div>
-    <br />
-    <br />
-    <div class="fd-form-item">
+    <div class="fd-form-item break">
         <label class="fd-form-label" for="input-05">Disabled Input:</label>
         <input class="fd-input is-disabled" type="text" id="input-05" placeholder="Field placeholder text">
     </div>
-    <br />
-    <br />
-    <div class="fd-form-item">
+    <div class="fd-form-item break">
         <label class="fd-form-label" for="input-06">Read-Only Input:</label>
         <input class="fd-input" type="text" id="input-06" readonly placeholder="Field placeholder text">
     </div>
-    <br />
-    <br />
-    <div class="fd-form-item fd-form-item--horizontal fd-has-margin-none fd-popover">
+    <div class="fd-form-item fd-form-item--horizontal fd-has-margin-none fd-popover break">
         <label class="fd-form-label" for="input-1">Default input:</label>
         <div class="fd-form-input-message-group">
             <input class="fd-input fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
             <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message" aria-hidden="true" id="popoverD1">Normal message</span>
         </div>
     </div>
-    <br><br>
-    <div class="fd-form-item fd-form-item--horizontal fd-has-margin-none fd-popover">
+    <div class="fd-form-item fd-form-item--horizontal fd-has-margin-none fd-popover break">
         <label class="fd-form-label" for="input-1">Compact input:</label>
         <div class="fd-form-input-message-group">
             <input class="fd-input fd-input--compact fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD2" aria-expanded="false" aria-haspopup="true">
             <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--compact" aria-hidden="true" id="popoverD2">Normal message</span>
         </div>
     </div>
-    <br /><br />
     <div class="fd-form-item fd-form-item--horizontal">
         <label class="fd-form-label fd-form-label--required" for="input-1c">Required Input:</label>
         <input class="fd-input" type="text" id="input-1c" placeholder="Field placeholder text">
     </div>
-    <br />
-    <br />
-    <div class="fd-form-item fd-form-item--horizontal">
+    <div class="fd-form-item fd-form-item--horizontal break">
         <label class="fd-form-label" aria-required="true" for="input-1d">Password:</label>
         <input class="fd-input" type="password" id="input-1d">
     </div>
-    <br />
-    <br />
     <div class="fd-form-item fd-form-item--horizontal">
         <label class="fd-form-label" aria-required="true" for="input-1ee">Input:</label>
         <input class="fd-input" type="text" id="input-1ee">
@@ -166,87 +141,57 @@ The state of the input field can reflect validity of the data entered, whether t
 Along with Invalid and Warning, error messages should be displayed below the field so the user can correct the error and move forward.
 
 {% capture inputs %}
-<div class="fd-form-item fd-has-margin-none fd-popover">
+<div class="fd-form-item fd-has-margin-none fd-popover break">
     <label class="fd-form-label" for="input-1">Normal input:</label>
     <div class="fd-form-input-message-group">
         <input class="fd-input fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverB1" aria-expanded="false" aria-haspopup="true">
         <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message" aria-hidden="true" id="popoverB1">Normal message</span>
     </div>
 </div>
-<br />
-<br />
-
-<div class="fd-form-item fd-has-margin-none fd-popover">
+<div class="fd-form-item fd-has-margin-none fd-popover break">
     <label class="fd-form-label" for="input-1">Valid input:</label>
     <div class="fd-form-input-message-group">
         <input class="fd-input is-valid fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverB2" aria-expanded="false" aria-haspopup="true">
         <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--success" aria-hidden="true" id="popoverB2">Success message</span>
     </div>
 </div>
-
-<br />
-<br />
-
-<div class="fd-form-item fd-has-margin-none fd-popover">
+<div class="fd-form-item fd-has-margin-none fd-popover break">
     <label class="fd-form-label" for="input-1">Error input:</label>
     <div class="fd-form-input-message-group">
         <input class="fd-input is-invalid fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverB3" aria-expanded="false" aria-haspopup="true">
         <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--error" aria-hidden="true" id="popoverB3">Error message</span>
     </div>
 </div>
-
-<br />
-<br />
-
-<div class="fd-form-item fd-has-margin-none fd-popover">
+<div class="fd-form-item fd-has-margin-none fd-popover break">
     <label class="fd-form-label" for="input-1">Warning input:</label>
     <div class="fd-form-input-message-group">
         <input class="fd-input is-warning fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverB4" aria-expanded="false" aria-haspopup="true">
         <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--warning" aria-hidden="true" id="popoverB4">Warning message</span>
     </div>
 </div>
-
-<br />
-<br />
-
-<div class="fd-form-item fd-has-margin-none fd-popover">
+<div class="fd-form-item fd-has-margin-none fd-popover break">
     <label class="fd-form-label" for="input-1">Information input:</label>
     <div class="fd-form-input-message-group">
         <input class="fd-input is-information fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverB5" aria-expanded="false" aria-haspopup="true">
         <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--information" aria-hidden="true" id="popoverB5">Information message</span>
     </div>
 </div>
-
-<br />
-<br />
-
-<div class="fd-form-item">
+<div class="fd-form-item break">
     <label class="fd-form-label" for="input-6">Disabled Input:</label>
     <input class="fd-input" type="text" id="input-6" value="Non editable data" disabled>
 </div>
-
-<br />
-<br />
-
-<div class="fd-form-item">
+<div class="fd-form-item break">
     <label class="fd-form-label" for="input-7">Read Only Input:</label>
     <input class="fd-input" type="text" id="input-7" value="Read only data" readonly>
 </div>
-
-<br />
-<br />
-
-<div class="fd-form-item fd-has-margin-none fd-popover" dir="rtl">
+<div class="fd-form-item fd-has-margin-none fd-popover break" dir="rtl">
     <label class="fd-form-label" for="input-1">Normal input:</label>
     <div class="fd-form-input-message-group">
         <input class="fd-input fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverC1" aria-expanded="false" aria-haspopup="true">
         <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message" aria-hidden="true" id="popoverC1">Normal message</span>
     </div>
 </div>
-<br />
-<br />
-
-<div class="fd-form-item fd-has-margin-none fd-popover" dir="rtl">
+<div class="fd-form-item fd-has-margin-none fd-popover break" dir="rtl">
     <label class="fd-form-label" for="input-1">Valid input:</label>
     <div class="fd-form-input-message-group">
         <input class="fd-input is-valid fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverC2" aria-expanded="false" aria-haspopup="true">
@@ -254,19 +199,13 @@ Along with Invalid and Warning, error messages should be displayed below the fie
     </div>
 </div>
 
-<br />
-<br />
-
 <div class="fd-form-item fd-form-item--horizontal fd-has-margin-none fd-popover" dir="rtl">
     <label class="fd-form-label" for="input-1">Normal input:</label>
     <div class="fd-form-input-message-group">
         <input class="fd-input fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverC3" aria-expanded="false" aria-haspopup="true">
         <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message" aria-hidden="true" id="popoverC3">Normal message</span>
     </div>
-</div>
-<br />
-<br />
-{% endcapture %}
+</div>{% endcapture %}
 
 {% include display-component.html component=inputs %}
 
@@ -280,49 +219,41 @@ Do not use the text area if
 - Users need to enter formatted text. Use the rich text editor instead.
 
 {% capture inputs %}
-    <div class="fd-form-item">
+    <div class="fd-form-item break">
         <label class="fd-form-label" for="textarea-1">Text area:</label>
         <textarea class="fd-textarea" id="textarea-1" placeholder="Write something here"></textarea>
         <div class="fd-textarea-counter">150 characters left</div>
     </div>
-    <br/>
-    <div class="fd-form-item">
+    <div class="fd-form-item break">
         <label class="fd-form-label" for="textarea-2">Compact text area:</label>
         <textarea class="fd-textarea fd-textarea--compact" id="textarea-2">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc.</textarea>
         <div class="fd-textarea-counter">150 characters left</div>
     </div>
-    <br/>
-    <div class="fd-form-item">
+    <div class="fd-form-item break">
         <label class="fd-form-label" for="textarea-1">Text area:</label>
         <textarea class="fd-textarea is-valid" id="textarea-1" placeholder="Write something here"></textarea>
         <div class="fd-textarea-counter">150 characters left</div>
     </div>
-    <br/>
-    <div class="fd-form-item">
+    <div class="fd-form-item break">
         <label class="fd-form-label" for="textarea-1">Text area:</label>
         <textarea class="fd-textarea is-invalid" id="textarea-1" placeholder="Write something here"></textarea>
     </div>
-    <br/>
-    <div class="fd-form-item">
+    <div class="fd-form-item break">
         <label class="fd-form-label" for="textarea-1">Text area:</label>
         <textarea class="fd-textarea is-warning" id="textarea-1" placeholder="Write something here"></textarea>
     </div>
-    <br/>
-    <div class="fd-form-item">
+    <div class="fd-form-item break">
         <label class="fd-form-label" for="textarea-1">Text area:</label>
         <textarea class="fd-textarea is-information" id="textarea-1" placeholder="Write something here"></textarea>
     </div>
-    <br/>
-    <div class="fd-form-item">
+    <div class="fd-form-item break">
         <label class="fd-form-label" for="textarea-1">Text area:</label>
         <textarea class="fd-textarea" id="textarea-1" placeholder="Write something here" disabled></textarea>
     </div>
-    <br/>
-    <div class="fd-form-item">
+    <div class="fd-form-item break">
         <label class="fd-form-label" for="textarea-1">Text area:</label>
         <textarea class="fd-textarea" id="textarea-1" placeholder="Write something here" readonly></textarea>
     </div>
-    <br/>
     <div class="fd-form-item" dir="rtl">
         <label class="fd-form-label" for="textarea-1">Text area:</label>
         <textarea class="fd-textarea" id="textarea-1" placeholder="Write something here"></textarea>
@@ -375,7 +306,7 @@ In special cases, there are only two mutually exclusive options. Combine them in
 - The options are numbers with fixed steps. Use a slider control.
 
 {% capture radio-buttons%}
-<fieldset class="fd-fieldset">
+<fieldset class="fd-fieldset break">
     <legend class="fd-fieldset__legend">Radio Buttons Cozy Mode</legend>
     <div class="fd-form-item">
         <label class="fd-form-label fd-form-label--radio" for="pDidh761">
@@ -393,8 +324,7 @@ In special cases, there are only two mutually exclusive options. Combine them in
         </label>
     </div>
 </fieldset>
-<br /><br />
-<fieldset class="fd-fieldset">
+<fieldset class="fd-fieldset break">
     <legend class="fd-fieldset__legend">Radio Buttons Compact Mode</legend>
     <div class="fd-form-item">
         <label class="fd-form-label fd-form-label--radio" for="pDidh76111">
@@ -412,8 +342,7 @@ In special cases, there are only two mutually exclusive options. Combine them in
         </label>
     </div>
 </fieldset>
-<br /><br />
-<fieldset class="fd-fieldset">
+<fieldset class="fd-fieldset break">
     <legend class="fd-fieldset__legend">Radio buttons Disabled</legend>
     <div class="fd-form-item">
         <label class="fd-form-label fd-form-label--radio" for="pDidh764">
@@ -431,8 +360,7 @@ In special cases, there are only two mutually exclusive options. Combine them in
         </label>
     </div>
 </fieldset>
-<br /><br />
-<fieldset class="fd-fieldset">
+<fieldset class="fd-fieldset break">
     <legend class="fd-fieldset__legend">Inline Radio buttons</legend>
     <div class="fd-form-item fd-form-item--inline">
         <label class="fd-form-label fd-form-label--radio" for="pDidh767">
@@ -450,8 +378,7 @@ In special cases, there are only two mutually exclusive options. Combine them in
         </label>
     </div>
 </fieldset>
-<br /><br />
-<fieldset class="fd-fieldset">
+<fieldset class="fd-fieldset break">
     <legend class="fd-fieldset__legend">Interaction States</legend>
     <div class="fd-form-item">
         <label class="fd-form-label fd-form-label--radio" for="iSpDidh761">
@@ -479,8 +406,7 @@ In special cases, there are only two mutually exclusive options. Combine them in
         </label>
     </div>
 </fieldset>
-<br /><br />
-<fieldset class="fd-fieldset">
+<fieldset class="fd-fieldset break">
     <legend class="fd-fieldset__legend">Interaction States Compact Mode</legend>
     <div class="fd-form-item">
         <label class="fd-form-label fd-form-label--radio" for="iSpDidh7619">
@@ -508,7 +434,6 @@ In special cases, there are only two mutually exclusive options. Combine them in
         </label>
     </div>
 </fieldset>
-<br /><br />
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Interaction States Compact Mode Disabled</legend>
     <div class="fd-form-item">

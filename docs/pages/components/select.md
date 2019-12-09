@@ -14,7 +14,7 @@ The select control (also known as a dropdown) is commonly used to enable users t
 ## Sizes
 
 {% capture select-sizes %}
-<div class="documentation-site-popover-container">
+<div class="documentation-site-popover-container break break--single">
    <div class="fd-popover">
       <div class="fd-popover__control">
          <div class="fd-select">
@@ -41,9 +41,6 @@ The select control (also known as a dropdown) is commonly used to enable users t
       </div>
    </div>
 </div>
-
-<br />
-
 <h4>Compact Size</h4>
 <div class="documentation-site-popover-container">
    <div class="fd-popover">

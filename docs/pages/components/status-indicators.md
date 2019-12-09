@@ -31,17 +31,19 @@ Status indicators are used to easily highlight the state of an object. `badge`, 
 ### Badge Color Options
 In addition the the default grey, there are three additional Semantic color options available: `--success`, `--warning` and `-error`
 {% capture badge %}
-<span class="fd-badge fd-badge--success">Label</span>
-<span class="fd-badge fd-badge--warning">Label</span>
-<span class="fd-badge fd-badge--error">Label</span>
-<br><br>
-<span class="fd-badge fd-badge--success fd-badge--pill">Label</span>
-<span class="fd-badge fd-badge--warning fd-badge--pill">Label</span>
-<span class="fd-badge fd-badge--error fd-badge--pill">Label</span>
-<br><br>
-<span class="fd-badge fd-badge--success fd-badge--filled">Label</span>
-<span class="fd-badge fd-badge--warning fd-badge--filled">Label</span>
-<span class="fd-badge fd-badge--error fd-badge--filled">Label</span>
+<div class="break">
+    <span class="fd-badge fd-badge--success">Label</span>
+    <span class="fd-badge fd-badge--warning">Label</span>
+    <span class="fd-badge fd-badge--error">Label</span>
+</div>
+<div class="break">
+    <span class="fd-badge fd-badge--success fd-badge--pill">Label</span>
+    <span class="fd-badge fd-badge--warning fd-badge--pill">Label</span>
+    <span class="fd-badge fd-badge--error fd-badge--pill">Label</span>
+</div>
+    <span class="fd-badge fd-badge--success fd-badge--filled">Label</span>
+    <span class="fd-badge fd-badge--warning fd-badge--filled">Label</span>
+    <span class="fd-badge fd-badge--error fd-badge--filled">Label</span>
 
 {% endcapture %}
 {% include display-component.html component=badge %}

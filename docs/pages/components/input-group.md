@@ -17,14 +17,13 @@ The input group includes form inputs with add-ons that allow the user to better 
 The Input Group supports **compact** mode (by virtue of the `--compact` modifier on child components).
 
 {% capture sizes %}
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Default Size </label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon">$</span>
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1234568910 ">
     </div>
 </div>
-<br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Compact Size </label>
     <div class="fd-input-group">
@@ -42,31 +41,28 @@ The Input Group with text add-on component is typically used to specify the type
 
 {% capture text-addon %}
 
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Left Aligned Text Add-on</label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon">$</span>
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1234568910 ">
     </div>
 </div>
-<br />
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Right Aligned Text Add-on</label>
     <div class="fd-input-group">
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1234568910 ">
         <span class="fd-input-group__addon">€</span>
     </div>
 </div>
-<br />
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Right Aligned Text Add-on With Right Aligned Input Text</label>
     <div class="fd-input-group">
         <input class="fd-input fd-input-group__input right-align" type="text" id="" name="" value="1234568910 ">
         <span class="fd-input-group__addon">€</span>
     </div>
 </div>
-<br />
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Left and Right Aligned Text Add-ons</label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon">$</span>
@@ -74,7 +70,6 @@ The Input Group with text add-on component is typically used to specify the type
         <span class="fd-input-group__addon">.00</span>
     </div>
 </div>
-<br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Multiple Left and Right Aligned Text Add-ons</label>
     <div class="fd-input-group">
@@ -99,7 +94,7 @@ The Input Group with text add-on component is typically used to specify the type
 The Input with add-on supports icons.
 
 {% capture input-action %}
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Input with icon on the left</label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon">
@@ -108,8 +103,7 @@ The Input with add-on supports icons.
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
     </div>
 </div>
-<br />
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Input with icon on the right</label>
     <div class="fd-input-group">
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
@@ -118,7 +112,6 @@ The Input with add-on supports icons.
         </span>
     </div>
 </div>
-<br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Input with icon on the right and right aligned input text</label>
     <div class="fd-input-group">
@@ -138,7 +131,7 @@ The Input with add-on supports icons.
 The Input with add-on supports actions. Actions can be shown with a text label or icon.
 
 {% capture button-addon %}
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Input with text add-on</label>
     <div class="fd-input-group">
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
@@ -149,8 +142,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
         </span>
     </div>
 </div>
-<br />
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Input with icon action</label>
     <div class="fd-input-group">
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
@@ -159,8 +151,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
         </span>
     </div>
 </div>
-<br />
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Compact Input with icon action</label>
     <div class="fd-input-group">
         <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="" name="" value="1000000">
@@ -169,8 +160,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
         </span>
     </div>
 </div>
-<br />
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Input with text action on left</label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon fd-input-group__addon--button">
@@ -181,8 +171,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
     </div>
 </div>
-<br />
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Input with actions on left and on right</label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon fd-input-group__addon--button">
@@ -200,7 +189,6 @@ The Input with add-on supports actions. Actions can be shown with a text label o
         </span>
     </div>
 </div>
-<br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Input with mixed actions on left and on right</label>
     <div class="fd-input-group">
@@ -226,15 +214,14 @@ The Input with add-on supports actions. Actions can be shown with a text label o
 ## States
 
 {% capture states %}
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Valid (Success)</label>
     <div class="fd-input-group is-valid">
         <span class="fd-input-group__addon">$</span>
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1234568910">
     </div>
 </div>
-<br />
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Invalid (Error)</label>
     <div class="fd-input-group is-invalid">
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
@@ -243,16 +230,14 @@ The Input with add-on supports actions. Actions can be shown with a text label o
         </span>
     </div>
 </div>
-<br />
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Warning (Alert)</label>
     <div class="fd-input-group is-warning">
         <span class="fd-input-group__addon">$</span>
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1234568910">
     </div>
 </div>
-<br />
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Information</label>
     <div class="fd-input-group is-information">
         <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="" name="" value="1000000">
@@ -263,24 +248,21 @@ The Input with add-on supports actions. Actions can be shown with a text label o
         </span>
     </div>
 </div>
-<br />
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Disabled</label>
     <div class="fd-input-group is-disabled">
         <span class="fd-input-group__addon">$</span>
         <input class="fd-input fd-input-group__input" type="text" id="" name="" placeholder="Enter a value">
     </div>
 </div>
-<br />
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Disabled Valid (Success)</label>
     <div class="fd-input-group is-valid is-disabled">
         <span class="fd-input-group__addon">$</span>
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1234568910">
     </div>
 </div>
-<br />
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Disabled Invalid (Error)</label>
     <div class="fd-input-group is-invalid is-disabled">
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
@@ -289,15 +271,13 @@ The Input with add-on supports actions. Actions can be shown with a text label o
         </span>
     </div>
 </div>
-<br />
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Disabled Warning (Alert)</label>
     <div class="fd-input-group is-warning is-disabled">
         <span class="fd-input-group__addon">$</span>
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1234568910">
     </div>
 </div>
-<br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Disabled Information</label>
     <div class="fd-input-group is-information is-disabled">
@@ -317,7 +297,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
 ## Textareas
 
 {% capture button-addon %}
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Textarea with text add-on</label>
     <div class="fd-input-group">
         <textarea class="fd-textarea fd-input-group__input" id=""></textarea>
@@ -326,8 +306,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
         </span>
     </div>
 </div>
-<br />
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Textarea with action</label>
     <div class="fd-input-group">
         <textarea class="fd-textarea fd-input-group__input" id=""></textarea>
@@ -338,8 +317,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
         </span>
     </div>
 </div>
-<br />
-<div class="fd-form-item">
+<div class="fd-form-item break break--single">
     <label class="fd-form-label" for="">Compact textarea with action</label>
     <div class="fd-input-group is-valid">
         <textarea class="fd-textarea fd-textarea--compact fd-input-group__input" id=""></textarea>
@@ -350,7 +328,6 @@ The Input with add-on supports actions. Actions can be shown with a text label o
         </span>
     </div>
 </div>
-<br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Compact textarea with action</label>
     <div class="fd-input-group is-invalid">

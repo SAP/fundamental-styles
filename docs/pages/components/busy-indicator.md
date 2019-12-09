@@ -17,17 +17,17 @@ Busy indicators are not visible all the time, only when needed.
 ## Busy indicator usage and size options
 {% capture busy-indicator %}
 <div style="display:flex;justify-content:center;flex-direction:column;align-items:center">
-    <div class="fd-busy-indicator--l" aria-hidden="false" aria-label="Loading"  style="margin-bottom:2rem">
+    <div class="fd-busy-indicator--l break" aria-hidden="false" aria-label="Loading">
         <div class="fd-busy-indicator--circle-0"></div>
         <div class="fd-busy-indicator--circle-1"></div>
         <div class="fd-busy-indicator--circle-2"></div>
     </div>
-    <div class="fd-busy-indicator--m" aria-hidden="false" aria-label="Loading"  style="margin-bottom:2rem">
+    <div class="fd-busy-indicator--m break" aria-hidden="false" aria-label="Loading">
         <div class="fd-busy-indicator--circle-0"></div>
         <div class="fd-busy-indicator--circle-1"></div>
         <div class="fd-busy-indicator--circle-2"></div>
     </div>
-    <div class="fd-busy-indicator" aria-hidden="false" aria-label="Loading">
+    <div class="fd-busy-indicator break" aria-hidden="false" aria-label="Loading">
         <div class="fd-busy-indicator--circle-0"></div>
         <div class="fd-busy-indicator--circle-1"></div>
         <div class="fd-busy-indicator--circle-2"></div>

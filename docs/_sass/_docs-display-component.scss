@@ -16,6 +16,14 @@
     > .fd-tile__content {
         padding: 60px 20px;
         width: 100%;
+
+        .break {
+            margin-bottom: 2rem;
+
+            &--single {
+                margin-bottom: 1rem; 
+            }
+        }
     }
 
     > p {
