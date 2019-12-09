@@ -15,7 +15,7 @@ summary:
 
 Use a layout grid to arrange components evenly in a grid layout.
 
-## Default Layout Grid (3 columns)
+## Default Layout Grid (12 columns)
 {% capture default %}
 <div class="fd-layout-grid">
     <div class="fd-panel">
@@ -49,7 +49,73 @@ Use a layout grid to arrange components evenly in a grid layout.
 
 <br/>
 
-## Layout Grid with `--no-gap`
+## Layout Grid with sizing (6 columns for all)
+{% capture size %}
+<div class="fd-layout-grid-row">
+    <div class="fd-layout-grid fd-layout-grid--col-6">
+        <div class="fd-panel">
+            <div class="fd-panel__body">
+                <p>.fd-panel</p>
+            </div>
+        </div>
+        <div class="fd-panel">
+            <div class="fd-panel__body">
+                <p>.fd-panel</p>
+            </div>
+        </div>
+    </div>
+    <div class="fd-layout-grid fd-layout-grid--col-6">
+        <div class="fd-panel">
+            <div class="fd-panel__body">
+                <p>.fd-panel</p>
+            </div>
+        </div>
+        <div class="fd-panel">
+            <div class="fd-panel__body">
+                <p>.fd-panel</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=size %}
+
+<br/>
+
+##  Layout Grid with sizing and responsiveness
+{% capture breakpoints %}
+<div class="fd-layout-grid-row">
+    <div class="fd-layout-grid fd-layout-grid--col-12 fd-layout-grid-l--col-6">
+        <div class="fd-panel">
+            <div class="fd-panel__body">
+                <p>.fd-panel</p>
+            </div>
+        </div>
+        <div class="fd-panel">
+            <div class="fd-panel__body">
+                <p>.fd-panel</p>
+            </div>
+        </div>
+    </div>
+    <div class="fd-layout-grid fd-layout-grid--col-12 fd-layout-grid-l--col-6">
+        <div class="fd-panel">
+            <div class="fd-panel__body">
+                <p>.fd-panel</p>
+            </div>
+        </div>
+        <div class="fd-panel">
+            <div class="fd-panel__body">
+                <p>.fd-panel</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=breakpoints %}
+
+<br/>
+
+<!-- ## Layout Grid with `--no-gap`
 The `.fd-layout-grid-no-gap` modifier will remove margins between the panels.
 {% capture default %}
 <div class="fd-layout-grid fd-layout-grid--no-gap">
@@ -441,4 +507,4 @@ The `.fd-layout-grid__span-column-[num]`. `[num]` option ranges from 2 to 6.
     </div>
 </div>
 {% endcapture %}
-{% include display-component.html component=default %}
+{% include display-component.html component=default %} -->

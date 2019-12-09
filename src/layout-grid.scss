@@ -8,39 +8,73 @@
 
 $block: #{$fd-namespace}-layout-grid;
 
+// for new row
+
+.#{$block}-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+// for columns
+
 .#{$block} {
   @include fd-reset();
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: var(--fd-width-gutter, $fd-width--gutter);
+  // default
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  padding-right: 0.5rem;
 
-  &--no-gap {
-    grid-gap: 0;
-
-    & > * {
-      box-shadow: none;
-    }
+  &--no-gutter {
+    padding-right: 0;
   }
 
-  &--gap-1 {
-    grid-gap: 1px;
-
-    & > * {
-      box-shadow: none;
-    }
-  }
-
-  @each $n in 1, 2, 3, 4, 5, 6 {
+  // with just column no matter what the size
+  @each $n in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
     &--col-#{$n} {
-      grid-template-columns: repeat(#{$n}, 1fr);
+      width: ( ( $n / 12 ) *100%);
+      flex-direction: row;
+
+      * {
+        flex-basis: 100%;
+      }
     }
   }
 
-  @each $n in 2,3,4,5,6 {
-    @each $direction in row,column {
-      &__span-#{$direction}-#{$n} {
-        grid-#{$direction}: span #{$n};
+  // with modified sizing
+
+  @media (min-width: 576px) {
+    @each $n in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
+      &-s--col-#{$n} {
+        width: ( ( $n / 12 ) *100%);
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    @each $n in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
+      &-m--col-#{$n} {
+        width: ( ( $n / 12 ) *100%);
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    @each $n in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
+      &-l--col-#{$n} {
+        width: ( ( $n / 12 ) *100%);
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    @each $n in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
+      &-l--col-#{$n} {
+        width: ( ( $n / 12 ) *100%);
       }
     }
   }
