@@ -1,451 +1,321 @@
-import '../../dist/layout-panel.css';
-import '../../dist/layout.css';
-import '../../dist/section.css';
 import '../../dist/layout-grid.css';
 
 export default {
     title: 'Layouts/Layout Grid',
     parameters: {
-        description: 'Use a layout grid to arrange components evenly in a grid layout.'
+        description: `The layout grid is made to seperate data into both data and rows. If there is not enough space on the current line of the same row, the item will go to the next line without the margin at the top.
+To use the grid, the user must use all of the <code class="docs-code">fd-container</code>,<code class="docs-code>fd-row</code> and <code class="docs-code>fd-col</code> tags.
+- Use the <code class="docs-code">fd-container</code> class to wrap the whole grid and help apply the proper row margin
+
+- Use the <code class="docs-code>fd-container--no-gap</code> modifier to remove the gutter spacing between all columns.
+
+- Use the <code class="docs-code>fd-row</code> to seperate rows
+
+- Use the <code class="docs-code>fd-col</code> to create a column of a certain width. The default value will create a column the full width, being 12 columns of the parent at size small and above unless specified another size 
+
+- Use the <code class="docs-code>fd-col--x</code> modifier will make the column spread x-rows/12
+<h2>Breakpoints</h2>
+- Small 600px <br>
+<code class="docs-code">fd-col--x</code> will be used until the next specified minimum breakpoint, column takes x/12 space of the row
+- Medium 600px<br>
+<code class="docs-code">fd-col--x--m</code> will be used from 600px to the next specified minimum breakpoint, column takes x/12 space of the row
+- Large 1024px<br>
+<code class="docs-code">fd-col--x--l</code> will be used from 1024px to the next specified minimum breakpoint, column takes x/12 space of the row
+- Extra-large 1440px<br>
+<code class="docs-code">fd-col--x--xl</code> will be used from 1440px and larger, column takes x/16 space of the row`
+
     }
 };
 
-export const defaultLayoutGrid3Columns = () => `
-<div class="fd-layout-grid">
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
+export const default12Columns = () =>
+    `
+<div class="fd-container">
+  <div class="fd-row">
+      <div class="fd-col">
+          <div class="docs-layout-grid-bg">
+          Default 12 column
+          </div>
+      </div>
+  </div>
 </div>
 `;
 
-defaultLayoutGrid3Columns.parameters = {
+default12Columns.parameters = {
     docs: {
         iframeHeight: 200
     }
 };
 
-export const oneColumnGrid = () => `
-<div class="fd-layout-grid fd-layout-grid--col-1">
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
+export const sixColumns = () =>
+    `
+<div class="fd-container">
+  <div class="fd-row">
+    <div class="fd-col fd-col--6">
+      <div class="docs-layout-grid-bg">
+      (1) 6 col at each size
+      </div>
     </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
+    <div class="fd-col fd-col--6">
+      <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
+        (2) 6 col at each size
+      </div>
     </div>
+    <div class="fd-col fd-col--6">
+      <div class="docs-layout-grid-bg docs-layout-grid-bg--color-2">
+        (2) 6 col at each size
+      </div>
+    </div>
+    <div class="fd-col fd-col--6">
+      <div class="docs-layout-grid-bg docs-layout-grid-bg--color-3">
+        (2) 6 col at each size
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
-oneColumnGrid.parameters = {
-    docs: {
-        iframeHeight: 200
-    }
-};
-
-export const twoColumnGrid = () => `
-<div class="fd-layout-grid fd-layout-grid--col-2">
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-</div>
-`;
-
-twoColumnGrid.parameters = {
-    docs: {
-        iframeHeight: 200
-    }
-};
-
-export const fourColumnGrid = () => `
-<div class="fd-layout-grid fd-layout-grid--col-4">
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-</div>
-`;
-
-fourColumnGrid.parameters = {
-    docs: {
-        iframeHeight: 200
-    }
-};
-
-export const fiveColumnGrid = () => `
-<div class="fd-layout-grid fd-layout-grid--col-5">
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-</div>
-`;
-
-fiveColumnGrid.parameters = {
-    docs: {
-        iframeHeight: 200
-    }
-};
-
-export const sixColumnGrid = () => `
-<div class="fd-layout-grid fd-layout-grid--col-6">
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-</div>
-`;
-
-sixColumnGrid.parameters = {
-    docs: {
-        iframeHeight: 200
-    }
-};
-
-export const layoutGridNoGap = () => `
-<div class="fd-layout-grid fd-layout-grid--no-gap">
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-</div>
-`;
-
-layoutGridNoGap.parameters = {
+sixColumns.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'The <code>.fd-layout-grid-no-gap</code> modifier will remove margins between the panels.'
+        storyDescription: 'To define the size of that column use the <code class="docs-code">fd-col--x</code> modifier, where x can go from 1-12, or 1-16 with the extra large size modifier. All columns which do not fit in the space available will be placed in the next line with no top margin.'
     }
 };
 
-export const layoutGridGrap1 = () => `
-<div class="fd-layout-grid fd-layout-grid--gap-1">
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
+export const fourColumns = () =>
+    `
+<div class="fd-container">
+  <div class="fd-row">
+    <div class="fd-col fd-col--3">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg">
+        (1) 3 col
         </div>
     </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
+    <div class="fd-col fd-col--3">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg">
+        (2) 3 col
         </div>
     </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
+    <div class="fd-col fd-col--3">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg">
+        (3) 3 col
         </div>
     </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
+    <div class="fd-col fd-col--3">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg">
+        (4) 3 col
         </div>
     </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
+  </div>
 </div>
 `;
 
-layoutGridGrap1.parameters = {
+fourColumns.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'The <code>.fd-layout-grid-gap-1</code> modifier will leave <code>1px</code> margins between the panels.'
+        storyDescription: 'To seperate the grid into 4 equal columns apply <code class="docs-code>fd-col--3</code> to each column.'
     }
 };
 
-export const layoutGridWithColumnSpan = () => `
-<div class="fd-layout-grid fd-layout-grid--col-6">
-    <div class="fd-layout-panel fd-layout-grid__span-column-2">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-grid__span-column-2 </p>
+export const unequalColumns = () =>
+    `
+<div class="fd-container">
+  <div class="fd-row">
+    <div class="fd-col fd-col--12">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg">
+        (1) 12 col
         </div>
     </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
+    <div class="fd-col fd-col--12">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
+        (2) 12 col
         </div>
     </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
+    <div class="fd-col fd-col--6">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-2">
+        (1) 6 col
         </div>
     </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
+    <div class="fd-col fd-col--6">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-3">
+        (2) 6 col
         </div>
     </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel fd-layout-grid__span-column-3">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-grid__span-column-3</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel fd-layout-grid__span-column-4">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-grid__span-column-4</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel fd-layout-grid__span-column-5">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-grid__span-column-5</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel">
-        <div class="fd-layout-panel__body">
-            <p>.fd-layout-panel</p>
-        </div>
-    </div>
-    <div class="fd-layout-panel fd-layout-grid__span-column-6">
-        <div class="fd-layout-panel__body">
-            <p>fd-layout-grid__span-column-6</p>
-        </div>
-    </div>
+  </div>
 </div>
 `;
 
-layoutGridWithColumnSpan.parameters = {
+unequalColumns.parameters = {
     docs: {
-        iframeHeight: 350,
-        storyDescription: 'The <code>.fd-layout-grid__span-column-[num]</code>. <code>[num]</code> option ranges from 2 to 6.'
+        iframeHeight: 200,
+        storyDescription: 'Achieving more than one size per row is possible. To do so specify the column width on each block.'
     }
 };
 
-export const threeGridRowHelperColumnGrid = () => `
-<div class="fd-layout-grid fd-layout-grid--col-3">
-     <div class="fdsb-layout-panel-playground fd-layout-grid__span-row-2">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
+export const responsiveness = () =>
+    `
+<div class="fd-container">
+  <div class="fd-row">
+    <div class="fd-col fd-col--6--m">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
+            6 col at medium and above, 12 otherwise
+        </div>
+    </div>
+    <div class="fd-col fd-col--6--m">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-2">
+            6 col at medium and above, 12 otherwise
+        </div>
+    </div>
+  </div>
 </div>
 `;
 
-threeGridRowHelperColumnGrid.parameters = {
+responsiveness.parameters = {
     docs: {
-        disable: true
+        iframeHeight: 300,
+        storyDescription: 'Add the <code class="docs-code">fd-col--col-x--size</code> to define that column size only for a certain screen size and above.'
     }
 };
 
-export const sixGridRowHelperColumnGrid = () => `
-<div class="fd-layout-grid fd-layout-grid--col-6">
-    <div class="fdsb-layout-panel-playground fd-layout-grid__span-column-3">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
+export const nesting = () =>
+    `
+<div class="fd-container">
+  <div class="fd-row">
+    <div class="fd-col fd-col--6">
+        <div class="docs-layout-grid-bg">
+            6 col
+        </div>
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
+            6 col
+        </div>
+    </div>
+    <div class="fd-col fd-col--6">
+        <div class="fd-row">
+            <div class="fd-col fd-col--4">
+                <div class="docs-layout-grid-bg docs-layout-grid-bg--color-2"> 
+                    4 col outer
+                </div> 
+            </div>
+            <div class="fd-col fd-col--8">
+                <div class="fd-row">
+                    <div class="fd-col fd-col--12">
+                        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-3">
+                            12 out of 8 col
+                        </div>
+                    </div>      
+                    <div class="fd-col fd-col--12">
+                        <div class="fd-row">
+                            <div class="fd-col fd-col--6">
+                                <div class="docs-layout-grid-bg docs-layout-grid-bg--color-4">
+                                6 out of 12 out of 8 col
+                                </div>
+                            </div>
+                            <div class="fd-col fd-col--6">
+                                <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
+                                6 out of 12 out of 8 col 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
 </div>
 `;
 
-sixGridRowHelperColumnGrid.parameters = {
+nesting.parameters = {
     docs: {
-        disable: true
+        iframeHeight: 300,
+        storyDescription: 'Add an extra <code class="docs-code">fd-row</code> class in between inner rows when using nesting. It will add a gutter in between rows.'
     }
 };
 
-export const threeGridGutterHelperColumnGrid = () => `
-<div class="fd-layout-grid fd-layout-grid--col-3 fd-layout-grid--no-gap">
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
+
+export const offset = () =>
+    `
+<div class="fd-container">
+  <div class="fd-row">
+    <div class="fd-col fd-col--6">
+        <div class="docs-layout-grid-bg">
+            6 col
+        </div>
+    </div>
+    <div class="fd-col fd-col--4 fd-col--offset-1">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1"> 
+            4 col with offset of 1
+        </div>
+    </div>
+  </div>
 </div>
 `;
 
-threeGridGutterHelperColumnGrid.parameters = {
+offset.parameters = {
     docs: {
-        disable: true
+        iframeHeight: 300,
+        storyDescription: 'To add an offset ot the left of the column use the <code class="docs-code">--offset-x</code> modifier. X will be the size of your choice. If the column after the offset col no longer fits in parent container it will switch to the next page'
     }
 };
 
-export const threeGridGutterHelperGapColumnGrid = () => `
-<div class="fd-layout-grid fd-layout-grid--col-3 fd-layout-grid--gap-1">
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
-    <div class="fdsb-layout-panel-playground">Placeholder div</div>
+export const multipleRows = () =>
+    `
+<div class="fd-container">
+  <div class="fd-row">
+    <div class="fd-col fd-col--12">
+        <div class="docs-layout-grid-bg">
+            12 col row 1
+        </div>
+    </div>
+    <div class="fd-col fd-col--4">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
+            4 col row 1
+        </div>
+    </div>
+</div>
+<div class="fd-row">
+    <div class="fd-col fd-col--6">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-2">
+            6 col row 2
+        </div>
+    </div>
+    <div class="fd-col fd-col--6">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-2">
+            6 col row 2
+        </div>
+    </div>
+  </div>
 </div>
 `;
 
-threeGridGutterHelperGapColumnGrid.parameters = {
+multipleRows.parameters = {
     docs: {
-        disable: true
+        iframeHeight: 300,
+        storyDescription: 'To use multiple rows, make <code class="docs-code">fd-row</code> siblings with each other. This will cause a line break for the new row.'
+    }
+};
+
+
+export const noGap = () =>
+    `
+<div class="fd-container fd-container--no-gap">
+  <div class="fd-row">
+    <div class="fd-col fd-col--6">
+        <div class="docs-layout-grid-bg">
+            6 col no gap
+        </div>
+    </div>
+    <div class="fd-col fd-col--6">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
+            6 col no gap
+        </div>
+    </div>
+  </div>
+</div>
+`;
+
+noGap.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: 'To remove gutters between columns apply the <code class="docs-code">fd-container--no-gap</code> modifier for the container and the <code class="docs-code">fd-col--no-gap</code> modifier with the column.'
     }
 };
