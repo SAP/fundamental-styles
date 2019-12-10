@@ -59,7 +59,7 @@ Token are used to represent contextualizing information. They can be useful to s
 
 ## Readonly Token
 `fd-token--readonly` modifier different color of token. Readonly token shouldn't contain close button
-{% capture selected-token %}
+{% capture readonly-token %}
 <span class="fd-token fd-token--readonly" role="button">
     Bibendum
 </span>
@@ -73,7 +73,7 @@ Token are used to represent contextualizing information. They can be useful to s
     Filter
 </span>
 {% endcapture %}
-{% include display-component.html component=selected-token %}
+{% include display-component.html component=readonly-token %}
 
 ## Compact Token
 `fd-token--compact` modifier adds compact mode
