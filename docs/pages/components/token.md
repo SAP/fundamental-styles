@@ -57,6 +57,24 @@ Token are used to represent contextualizing information. They can be useful to s
 {% endcapture %}
 {% include display-component.html component=selected-token %}
 
+## Readonly Token
+`fd-token--readonly` modifier different color of token. Readonly token shouldn't contain close button
+{% capture selected-token %}
+<span class="fd-token fd-token--readonly" role="button">
+    Bibendum
+</span>
+<span class="fd-token fd-token--readonly" role="button">
+    Lorem
+</span>
+<span class="fd-token fd-token--readonly" role="button">
+    Dolor
+</span>
+<span class="fd-token fd-token--readonly" role="button">
+    Filter
+</span>
+{% endcapture %}
+{% include display-component.html component=selected-token %}
+
 ## Compact Token
 `fd-token--compact` modifier adds compact mode
 {% capture compact-token %}
@@ -102,6 +120,9 @@ To show focus on whole element, it's needed to add `.is-focus` into container.
         Filter
         <button class="fd-token__close"></button>
     </span>
+    <span class="fd-token fd-token--readonly">
+        Lorem
+    </span>
     <input class="fd-input fd-tokenizer__input" />
 </div>
 <br/><br/>
@@ -145,6 +166,9 @@ To show focus on whole element, it's needed to add `.is-focus` into container.
     <span class="fd-token fd-token--compact" role="button">
         Filter
         <button class="fd-token__close"></button>
+    </span>
+    <span class="fd-token fd-token--readonly fd-token--compact">
+        Lorem
     </span>
     <input class="fd-input fd-input--compact fd-tokenizer__input" />
 </div>

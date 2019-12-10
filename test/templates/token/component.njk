@@ -6,8 +6,16 @@ token:
     aria={}
 -->
 {% macro token(properties={}, modifier={}, state={}, aria={}) -%}
+{%- set readonly = 'false' -%}
+{%- for m in modifier.block -%}
+    {%- if m == 'readonly' -%}
+        {%- set readonly = 'true' -%}
+    {%- endif -%}
+{%- endfor -%}
 <span class="fd-token{{ modifier.block | modifier('token') }}{{ state | state }}"{{ aria | aria }} role="button">
     {{ properties.label }}
-    <button class="fd-token__close"></button>
+    {%- if readonly =='false' -%}
+        <button class="fd-token__close"></button>
+    {%- endif -%}
 </span>
 {%- endmacro %}
