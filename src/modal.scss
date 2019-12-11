@@ -4,92 +4,114 @@
 @import "./overlay.scss";
 
 /*!
-.fd-modal
-  .fd-modal__header
-    .fd-form__title
-  .fd-form__body
-  .fd-form__footer
+.fd-modal-overlay
+  .fd-modal
+    .fd-modal__header
+      .fd-modal__title
+      .fd-modal__close
+    .fd-modal__body
+    .fd-modal__footer
 */
 $block: #{$fd-namespace}-modal;
 
 .#{$block} {
-  $fd-modal-width: 460px !default;
-  // these are used only to roughly calculate body overflow on compact screens -
-  // this can be improved with a flex or grid solution
-  $fd-modal-header-height: 60px !default;
-  $fd-modal-footer-height: 68px !default;
 
-  --fd-modal-background-color: var(--fd-color-background-2);
-  --fd-modal-border-color: var(--fd-color-neutral-2);
-  $fd-modal-border-color: fd-color("neutral", 2) !default;
-  $fd-modal-padding-x: $fd-width--gutter !default;
+  // OVERLAY
+  $fd-modal-overlay-color: fade(var(--sapBlockLayer_Background), 60);
 
-  --fd-modal-padding-x: var(--fd-width-gutter);
-  $fd-modal-padding-y: fd-space(4) !default;
-  $fd-modal-inner-content-background: fd-color("background", 2) !default;
+  // MODAL
+  $fd-modal-margin-y: 6%;
+  $fd-modal-margin-x: 10%;
+  $fd-modal-margin-y-mobile: 0;
+  $fd-modal-margin-x-mobile: 0;
+  $fd-modal-padding-x: 1rem;
+  $fd-modal-min-width: 20rem;
+  $fd-modal-box-shadow: var(--sapContent_Shadow3);
+  $fd-modal-border-radius: var(--sapElement_BorderCornerRadius);
+
+  // HEADER
+  $fd-modal-header-height: 2.75rem;
+  $fd-modal-header-color: var(--sapPageHeader_Background);
+  $fd-modal-header-shadow-color-1: var(--sapContent_ShadowColor);
+  $fd-modal-header-shadow-color-2: var(--sapPageHeader_BorderColor);
+  // TODO use fade
+  // $fd-modal-header-box-shadow: 0 0 0.25rem 0 fade($fd-modal-header-shadow-color-1, 15), inset 0 -0.0625rem 0 0 $fd-modal-header-shadow-color-2;
+  $fd-modal-header-box-shadow: 0 0 0.25rem 0 $fd-modal-header-shadow-color-1, inset 0 -0.0625rem 0 0 $fd-modal-header-shadow-color-2;
+
+  // BODY
+  $fd-modal-body-padding-y: 1rem;
+  $fd-modal-body-color: var(--sapGroup_ContentBackground);
+
+  // FOOTER
+  $fd-modal-footer-height: 2.75rem;
+  $fd-modal-footer-background: var(--sapPageFooter_Background);
+  $fd-modal-footer-border-color: var(--sapPageFooter_BorderColor);
+  $fd-modal-footer-border: 0.0625rem solid $fd-modal-footer-border-color;
 
   @include fd-reset();
 
-  max-width: $fd-modal-width;
+  min-width: $fd-modal-min-width;
+  margin: $fd-modal-margin-y $fd-modal-margin-x;
+
+  @include media-breakpoint-down(l) {
+    margin: $fd-modal-margin-y-mobile $fd-modal-margin-x-mobile;
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $fd-modal-overlay-color;
+  }
 
   &__content {
-    @include fd-reset();
-
-    border-radius: $fd-border-radius;
-
-    @include fd-var-color("background-color", $fd-modal-inner-content-background, --fd-modal-background-color);
+    overflow: hidden;
+    box-shadow: $fd-modal-box-shadow;
+    border-radius: $fd-modal-border-radius;
   }
 
   &__header,
   &__body,
   &__footer {
-    @include fd-reset();
-    @include fd-var-size("padding-left", $fd-modal-padding-x, --fd-modal-padding-x);
-    @include fd-var-size("padding-right", $fd-modal-padding-x, --fd-modal-padding-x);
-
-    padding-top: $fd-modal-padding-y;
-    padding-bottom: $fd-modal-padding-y;
+    padding-left: $fd-modal-padding-x;
+    padding-right: $fd-modal-padding-x;
   }
 
   &__header {
     position: relative;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $fd-modal-header-height;
+    box-shadow: $fd-modal-header-box-shadow;
+    background-color: $fd-modal-header-color;
 
-    @include fd-var-color("border-bottom-color", $fd-modal-border-color, --fd-modal-border-color);
-  }
+    .#{$block}__title {
+      @include fd-heading();
+      @include fd-type("1");
+      @include fd-ellipsis();
 
-  &__title {
-    @include fd-heading();
-    @include fd-type("1");
-
-    margin-bottom: 0;
-    padding-right: fd-space(9);
-
-    @include fd-rtl() {
-      padding-left: fd-space(9);
-      padding-right: 0;
-    }
-  }
-
-  &__close {
-    position: absolute;
-    right: fd-space(2);
-
-    @include fd-rtl() {
-      left: fd-space(2);
-      right: auto;
+      margin-bottom: 0;
     }
 
-    top: fd-space(2);
-    width: fd-space(9);
-    height: fd-space(9);
+    .#{$block}__close {
+      margin-left: fd-space(reg);
+
+      @include fd-rtl() {
+        margin-right: fd-space(reg);
+        margin-left: 0;
+      }
+    }
   }
 
   &__body {
-    max-height: calc(100vh - #{$fd-modal-header-height} - #{$fd-modal-footer-height});
     overflow-y: auto;
+    padding: $fd-modal-body-padding-y;
+    background-color: $fd-modal-body-color;
 
+    // TODO SHOULD BE HERE?
     > :first-child {
       margin-top: 0;
     }
@@ -100,15 +122,20 @@ $block: #{$fd-namespace}-modal;
   }
 
   &__footer {
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: $fd-modal-footer-height;
+    border-top: $fd-modal-footer-border;
+    background-color: $fd-modal-footer-background;
 
-    @include fd-rtl() {
-      text-align: left;
+    & > :not(:first-child) {
+      margin-left: fd-space(base);
+
+      @include fd-rtl() {
+        margin-right: fd-space(base);
+        margin-left: 0;
+      }
     }
-
-    border-top-style: solid;
-    border-top-width: 1px;
-
-    @include fd-var-color("border-top-color", $fd-modal-border-color, --fd-modal-border-color);
   }
 }
