@@ -3,9 +3,12 @@
 @import "./functions";
 @import "./overlay.scss";
 
+// TODO UPDATE CLASS Hierarchy
+
 /*!
-.fd-modal-overlay
+.fd-modal__overlay
   .fd-modal
+  .fd-modal--resizable
     .fd-modal__header
       .fd-modal__title
       .fd-modal__close
@@ -28,6 +31,9 @@ $block: #{$fd-namespace}-modal;
   $fd-modal-min-width: 20rem;
   $fd-modal-box-shadow: var(--sapContent_Shadow3);
   $fd-modal-border-radius: var(--sapElement_BorderCornerRadius);
+
+  // RESIZE HANDLE
+  $fd-modal-resize-handle-color: var(--sapButton_Lite_TextColor);
 
   // HEADER
   $fd-modal-header-height: 2.75rem;
@@ -70,6 +76,38 @@ $block: #{$fd-namespace}-modal;
     overflow: hidden;
     box-shadow: $fd-modal-box-shadow;
     border-radius: $fd-modal-border-radius;
+
+    &--resizable {
+      display: flex;
+      min-height: 120px;
+      flex-direction: column;
+      position: relative;
+
+      .#{$block}__body {
+        flex-grow: 1;
+      }
+
+      .#{$block}__header,
+      .#{$block}__footer {
+        flex-shrink: 0;
+      }
+
+      @include media-breakpoint-up(l) {
+        resize: both;
+
+        ::-webkit-resizer,
+        ::-moz-resizer {
+          color: transparent;
+        }
+
+        @include fd-icon-glyph("resize-corner", "after") {
+          color: $fd-modal-resize-handle-color;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+      }
+    }
   }
 
   &__header,
