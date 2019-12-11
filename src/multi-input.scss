@@ -16,7 +16,34 @@ $block: #{$fd-namespace}-multi-input;
     margin: 0 0 10px 0;
   }
 
+  &__element {
+    @include fd-reset();
+  }
+
+  &__label {
+    width: 100%;
+    font-size: var(--sapFontSize);
+
+    @include fd-focus() {
+      box-shadow: none;
+      outline-offset: -0.1875rem;
+      outline-width: var(--sapContent_FocusWidth);
+      outline-color: var(--sapContent_FocusColor);
+      outline-style: var(--sapContent_FocusStyle);
+    }
+  }
+
+  &__text {
+    font-size: var(--sapFontSize);
+  }
+
   &-tokens {
     @include fd-reset();
+  }
+
+  &__input {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
