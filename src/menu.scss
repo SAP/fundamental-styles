@@ -41,15 +41,11 @@ $block: #{$fd-namespace}-menu;
   width: 100%;
   display: inline-block;
 
-  &__group,
-  &__list {
+  &__group {
     @include fd-reset();
 
     list-style: none;
     margin-bottom: 0;
-  }
-
-  &__group {
     padding-left: 0;
   }
 
@@ -157,20 +153,17 @@ $block: #{$fd-namespace}-menu;
   }
 
   &__addon-before {
-    background-color: white;
-    float: left;
-    clear: left;
+    @include fd-flex-center();
 
     @include fd-rtl() {
       float: right;
       clear: right;
     }
 
-    height: 14px;
-    line-height: 1.42857;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: transparent;
+    float: left;
+    clear: left;
+    min-height: 1px;
     width: 30px;
   }
 }
