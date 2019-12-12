@@ -3,6 +3,13 @@
     "name": "Modal",
     "type": "text",
     "properties": {
+        "id": "example-modal",
+        "toggleable": false,
+        "modal_content": {
+            "is_compact": false,
+            "is_resizable": false,
+            "modal_content_size": ""
+        },
         "header": "",
         "body": "",
         "footerActions": [
