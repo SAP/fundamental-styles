@@ -1,78 +1,150 @@
 @import "./mixins";
 
 /*!
-.fd-layout-grid
+.fd-col
 */
 
-$block: #{$fd-namespace}-layout-grid;
+$block: #{$fd-namespace}-col;
+$blockContainer: #{$fd-namespace}-container;
+$blockRow: #{$fd-namespace}-row;
+$size: (12: "l", 16: "xl");
+$col-until-xl: 12;
+$col-xl: 16;
 
-// for new row
+.#{$blockContainer} {
+  @include fd-reset();
 
-.#{$block}-row {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
+  flex: 0 0 100%;
+  position: relative;
+  margin: 0 -0.25rem;
+
+  &--no-gap {
+    margin: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .#{$blockRow} {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
-// for columns
+.#{$blockRow} {
+  @include fd-reset();
+
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+  position: relative;
+  margin: 0 -0.25rem 0.5rem -0.25rem;
+  min-width: 100%;
+
+  &--inner-flex {
+    display: flex;
+  }
+
+  .#{$block} {
+    .#{$blockRow} + .#{$blockRow} {
+      margin-top: 0.5rem;
+    }
+  }
+}
 
 .#{$block} {
   @include fd-reset();
 
-  // default
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 100%;
-  padding-right: 0.5rem;
+  padding: 0 0.25rem;
+  min-width: 100%;
+  max-width: 100%;
 
-  &--no-gutter {
-    padding-right: 0;
+  @for $n from 1 through $col-until-xl {
+    &--#{$n} {
+      min-width: ( ( $n / $col-until-xl ) *100%);
+      max-width: ( ( $n / $col-until-xl ) *100%);
+    }
   }
 
-  // with just column no matter what the size
-  @each $n in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-    &--col-#{$n} {
-      width: ( ( $n / 12 ) *100%);
-      flex-direction: row;
+  @for $n from 1 through $col-until-xl {
+    &--offset-#{$n} {
+      margin-left: ( ( $n / $col-until-xl ) *100%);
+    }
+  }
 
-      * {
-        flex-basis: 100%;
+  &--no-gap {
+    padding: 0;
+  }
+
+  .#{$blockRow} {
+    margin: -0.25rem 0;
+  }
+}
+
+@media (min-width: 600px) {
+  .#{$blockContainer} {
+    margin: 0 -0.5rem;
+
+    .#{$blockRow} {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &--no-gap {
+      margin: 0;
+    }
+  }
+
+  .#{$blockRow} {
+    margin-bottom: 1rem;
+
+    .#{$block} {
+      .#{$blockRow} + .#{$blockRow} {
+        margin-top: 1rem;
       }
     }
   }
 
-  // with modified sizing
+  .#{$block} {
+    padding: 0 0.5rem;
 
-  @media (min-width: 576px) {
-    @each $n in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-      &-s--col-#{$n} {
-        width: ( ( $n / 12 ) *100%);
+    @for $n from 1 through $col-until-xl {
+      &--#{$n}--m {
+        min-width: ( ( $n / $col-until-xl ) *100%);
+        max-width: ( ( $n / $col-until-xl ) *100%);
+      }
+    }
+
+    &--no-gap {
+      padding: 0;
+    }
+
+    .#{$blockRow} {
+      margin: 0 -0.5rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .#{$block} {
+    @for $n from 1 through $col-until-xl {
+      &--#{$n}--#{map-get($size,$col-until-xl)} {
+        min-width: ( ( $n / $col-until-xl ) *100%);
+        max-width: ( ( $n / $col-until-xl ) *100%);
       }
     }
   }
+}
 
-  @media (min-width: 768px) {
-    @each $n in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-      &-m--col-#{$n} {
-        width: ( ( $n / 12 ) *100%);
-      }
-    }
-  }
-
-  @media (min-width: 992px) {
-    @each $n in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-      &-l--col-#{$n} {
-        width: ( ( $n / 12 ) *100%);
-      }
-    }
-  }
-
-  @media (min-width: 1200px) {
-    @each $n in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-      &-l--col-#{$n} {
-        width: ( ( $n / 12 ) *100%);
+@media (min-width: 1440px) {
+  .#{$block} {
+    @for $n from 1 through 16 {
+      &--#{$n}--#{map-get($size,$col-xl)} {
+        min-width: ( ( $n / $col-xl ) *100%);
+        max-width: ( ( $n / $col-xl ) *100%);
       }
     }
   }

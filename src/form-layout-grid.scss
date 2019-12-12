@@ -1,0 +1,49 @@
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+@import "./layout-grid.scss";
+
+$block: #{$fd-namespace}-form-layout-grid;
+
+.#{$block}-flex {
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  justify-content: flex-start;
+
+  &--right {
+    justify-content: flex-end;
+  }
+}
+
+.#{$block}-container {
+  padding: 1rem;
+  margin: 0 -0.25rem;
+
+  .fd-row {
+    margin-bottom: 0;
+    align-items: center;
+
+    .fd-col {
+      padding: 0 0.25rem;
+
+      .fd-form-label {
+        margin-right: 0;
+      }
+
+      .fd-row {
+        margin: 0 -0.25rem;
+      }
+    }
+  }
+
+  &--vertical {
+    > *:not(:last-child) {
+      margin-bottom: 0.625rem;
+    }
+
+    .fd-form-label {
+      padding-bottom: 0.125rem;
+    }
+  }
+}
