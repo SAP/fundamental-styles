@@ -64,18 +64,30 @@ $col-xl: 16;
   }
 }
 
-// for new row
+.#{$blockContainer} {
+  @include fd-reset();
 
-.#{$block}-row {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
+  flex: 0 0 100%;
+  position: relative;
+  margin: 0 -0.25rem;
+
+  &--no-gap {
+    margin: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .#{$blockRow} {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
-// for columns
-
-.#{$block} {
+.#{$blockRow} {
   @include fd-reset();
 
   padding: 0.5rem 0.25rem 0 0.25rem;
@@ -161,6 +173,14 @@ $col-xl: 16;
     .#{$blockRow} {
       margin-left: -0.5rem;
       margin-right: -0.5rem;
+    }
+
+    &--no-gap {
+      padding: 0;
+    }
+
+    .#{$blockRow} {
+      margin: 0 -0.5rem;
     }
   }
 }
