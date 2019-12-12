@@ -31,12 +31,6 @@ $block: #{$fd-namespace}-form-label;
     opacity: 0.4;
   }
 
-  &:focus-within {
-    outline-width: var(--sapContent_FocusWidth);
-    outline-style: var(--sapContent_FocusStyle);
-    outline-color: var(--sapContent_FocusColor);
-  }
-
   &--required,
   &[aria-required="true"] {
     &::after {
@@ -75,10 +69,6 @@ $block: #{$fd-namespace}-form-label;
     display: flex;
     align-items: center;
     cursor: pointer;
-
-    &:focus-within {
-      outline-offset: -0.25rem;
-    }
   }
 
   &--toggle {

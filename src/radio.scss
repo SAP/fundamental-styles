@@ -37,6 +37,8 @@ $fd-radio-inner-circle-diameter-compact: 0.375rem;
     background-color: transparent;
   }
 
+  @include fd-form-radio-focus($fd-radio-outer-circle-margin);
+
   &--compact {
     height: $fd-radio-outer-circle-diameter-compact;
     width: $fd-radio-outer-circle-diameter-compact;
@@ -46,6 +48,8 @@ $fd-radio-inner-circle-diameter-compact: 0.375rem;
       width: $fd-radio-inner-circle-diameter-compact;
       height: $fd-radio-inner-circle-diameter-compact;
     }
+
+    @include fd-form-radio-focus($fd-radio-outer-circle-margin-compact);
   }
 
   &:checked {
