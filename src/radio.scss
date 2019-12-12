@@ -109,7 +109,7 @@ $fd-radio-inner-circle-diameter-compact: 0.375rem;
 
     &:checked {
       &::after {
-        background-color: var(--sapField_WarningBackground);
+        background-color: var(--sapField_TextColor);
       }
     }
 
