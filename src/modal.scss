@@ -3,17 +3,23 @@
 @import "./functions";
 @import "./overlay.scss";
 
-// TODO UPDATE CLASS Hierarchy
-
 /*!
-.fd-modal__overlay
   .fd-modal
-  .fd-modal--resizable
-    .fd-modal__header
-      .fd-modal__title
-      .fd-modal__close
-    .fd-modal__body
-    .fd-modal__footer
+  .fd-modal--active
+    .fd-modal__overlay
+    .fd-modal__content
+    .fd-modal__content--s
+    .fd-modal__content--m
+    .fd-modal__content--l
+    .fd-modal__content--xl
+    .fd-modal__content--xxl
+    .fd-modal__content--compact
+    .fd-modal__content--resizable
+      .fd-modal__header
+        .fd-modal__title
+        .fd-modal__close
+      .fd-modal__body
+      .fd-modal__footer
 */
 $block: #{$fd-namespace}-modal;
 
@@ -22,27 +28,27 @@ $block: #{$fd-namespace}-modal;
   // OVERLAY
   $fd-modal-overlay-color: fade(var(--sapBlockLayer_Background), 60);
 
-  // MODAL
-  $fd-modal-margin-y: 6%;
-  $fd-modal-margin-x: 10%;
-  $fd-modal-margin-y-mobile: 0;
-  $fd-modal-margin-x-mobile: 0;
-  $fd-modal-padding-x: 1rem;
-  $fd-modal-min-width: 20rem;
-  $fd-modal-box-shadow: var(--sapContent_Shadow3);
-  $fd-modal-border-radius: var(--sapElement_BorderCornerRadius);
+  // CONTENT
+  $fd-modal-content-margin-y: 6%;
+  $fd-modal-content-margin-x: 10%;
+  $fd-modal-content-margin-y-mobile: 0;
+  $fd-modal-content-margin-x-mobile: 0;
+  $fd-modal-content-min-width: 20rem;
+  $fd-modal-content-min-height: 7.5rem;
+  $fd-modal-content-box-shadow: var(--sapContent_Shadow3);
+  $fd-modal-content-border-radius: var(--sapElement_BorderCornerRadius);
+  $fd-modal-content-padding-x: (def: 1rem, s: 1rem, m: 2rem, l: 2rem, xl: 3rem, xxl: 3rem);
 
   // RESIZE HANDLE
   $fd-modal-resize-handle-color: var(--sapButton_Lite_TextColor);
 
   // HEADER
   $fd-modal-header-height: 2.75rem;
+  $fd-modal-header-compact-height: 2.5rem;
   $fd-modal-header-color: var(--sapPageHeader_Background);
   $fd-modal-header-shadow-color-1: var(--sapContent_ShadowColor);
   $fd-modal-header-shadow-color-2: var(--sapPageHeader_BorderColor);
-  // TODO use fade
-  // $fd-modal-header-box-shadow: 0 0 0.25rem 0 fade($fd-modal-header-shadow-color-1, 15), inset 0 -0.0625rem 0 0 $fd-modal-header-shadow-color-2;
-  $fd-modal-header-box-shadow: 0 0 0.25rem 0 $fd-modal-header-shadow-color-1, inset 0 -0.0625rem 0 0 $fd-modal-header-shadow-color-2;
+  $fd-modal-header-box-shadow: 0 0 0.25rem 0 fade($fd-modal-header-shadow-color-1, 15), inset 0 -0.0625rem 0 0 $fd-modal-header-shadow-color-2;
 
   // BODY
   $fd-modal-body-padding-y: 1rem;
@@ -50,36 +56,63 @@ $block: #{$fd-namespace}-modal;
 
   // FOOTER
   $fd-modal-footer-height: 2.75rem;
+  $fd-modal-footer-compact-height: 2.5rem;
   $fd-modal-footer-background: var(--sapPageFooter_Background);
   $fd-modal-footer-border-color: var(--sapPageFooter_BorderColor);
   $fd-modal-footer-border: 0.0625rem solid $fd-modal-footer-border-color;
 
-  @include fd-reset();
+  display: none;
 
-  min-width: $fd-modal-min-width;
-  margin: $fd-modal-margin-y $fd-modal-margin-x;
-
-  @include media-breakpoint-down(l) {
-    margin: $fd-modal-margin-y-mobile $fd-modal-margin-x-mobile;
+  &--active {
+    display: block;
   }
 
   &__overlay {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: $fd-modal-overlay-color;
   }
 
   &__content {
+    @include fd-reset();
+
+    @include media-breakpoint-down(l) {
+      margin: $fd-modal-content-margin-y-mobile $fd-modal-content-margin-x-mobile;
+    }
+
     overflow: hidden;
-    box-shadow: $fd-modal-box-shadow;
-    border-radius: $fd-modal-border-radius;
+    min-width: $fd-modal-content-min-width;
+    min-height: $fd-modal-content-min-height;
+    box-shadow: $fd-modal-content-box-shadow;
+    border-radius: $fd-modal-content-border-radius;
+    margin: $fd-modal-content-margin-y $fd-modal-content-margin-x;
+
+    @each $size-label, $size in $fd-modal-content-padding-x {
+      &--#{$size-label} {
+        .#{$block}__header,
+        .#{$block}__body,
+        .#{$block}__footer {
+          padding-left: map_get($fd-modal-content-padding-x, $size-label);
+          padding-right: map_get($fd-modal-content-padding-x, $size-label);
+        }
+      }
+    }
+
+    &--compact {
+      .#{$block}__header {
+        height: $fd-modal-header-compact-height;
+      }
+
+      .#{$block}__footer {
+        height: $fd-modal-footer-compact-height;
+      }
+    }
 
     &--resizable {
       display: flex;
-      min-height: 120px;
       flex-direction: column;
       position: relative;
 
@@ -95,12 +128,7 @@ $block: #{$fd-namespace}-modal;
       @include media-breakpoint-up(l) {
         resize: both;
 
-        ::-webkit-resizer,
-        ::-moz-resizer {
-          color: transparent;
-        }
-
-        @include fd-icon-glyph("resize-corner", "after") {
+        @include fd-icon("resize-corner", "m", "after") {
           color: $fd-modal-resize-handle-color;
           position: absolute;
           right: 0;
@@ -113,8 +141,8 @@ $block: #{$fd-namespace}-modal;
   &__header,
   &__body,
   &__footer {
-    padding-left: $fd-modal-padding-x;
-    padding-right: $fd-modal-padding-x;
+    padding-left: map_get($fd-modal-content-padding-x, "def");
+    padding-right: map_get($fd-modal-content-padding-x, "def");
   }
 
   &__header {
@@ -127,7 +155,7 @@ $block: #{$fd-namespace}-modal;
     background-color: $fd-modal-header-color;
 
     .#{$block}__title {
-      @include fd-heading();
+      @include fd-reset();
       @include fd-type("1");
       @include fd-ellipsis();
 
@@ -146,17 +174,11 @@ $block: #{$fd-namespace}-modal;
 
   &__body {
     overflow-y: auto;
-    padding: $fd-modal-body-padding-y;
+    box-sizing: border-box;
+    padding-top: $fd-modal-body-padding-y;
+    padding-bottom: $fd-modal-body-padding-y;
     background-color: $fd-modal-body-color;
-
-    // TODO SHOULD BE HERE?
-    > :first-child {
-      margin-top: 0;
-    }
-
-    > :last-child {
-      margin-bottom: 0;
-    }
+    max-height: calc(100vh - #{$fd-modal-header-height} - #{$fd-modal-footer-height});
   }
 
   &__footer {
