@@ -17,30 +17,17 @@ Use a layout grid to arrange components evenly in a grid layout.
 
 ## Default Layout Grid (12 columns)
 {% capture default %}
-<div class="fd-layout-grid">
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+<div class="fd-layout-grid-row">
+    <div class="fd-layout-grid fd-layout-grid--col-12">
+        <div class="fd-panel">
+            <div class="fd-panel__body">
+                <p>.fd-panel</p>
+            </div>
         </div>
-    </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
-        </div>
-    </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
-        </div>
-    </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
-        </div>
-    </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+        <div class="fd-panel">
+            <div class="fd-panel__body">
+                <p>.fd-panel</p>
+            </div>
         </div>
     </div>
 </div>
@@ -98,14 +85,28 @@ Use a layout grid to arrange components evenly in a grid layout.
         </div>
     </div>
     <div class="fd-layout-grid fd-layout-grid--col-12 fd-layout-grid-l--col-6">
-        <div class="fd-panel">
-            <div class="fd-panel__body">
-                <p>.fd-panel</p>
+        <div class="fd-layout-grid fd-layout-grid--col-3 fd-layout-grid-l--col-4">
+            <div class="fd-panel">
+                <div class="fd-panel__body">
+                    <p>.fd-panel</p>
+                </div>
             </div>
         </div>
-        <div class="fd-panel">
-            <div class="fd-panel__body">
-                <p>.fd-panel</p>
+        <div class="fd-layout-grid fd-layout-grid--col-9 fd-layout-grid-l--col-8">
+            <div class="fd-panel">
+                <div class="fd-panel__body">
+                    <p>.fd-panel</p>
+                </div>
+            </div>
+            <div class="fd-panel">
+                <div class="fd-panel__body">
+                    <p>.fd-panel</p>
+                </div>
+            </div>
+            <div class="fd-panel">
+                <div class="fd-panel__body">
+                    <p>.fd-panel</p>
+                </div>
             </div>
         </div>
     </div>
