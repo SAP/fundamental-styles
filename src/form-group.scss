@@ -16,13 +16,17 @@ $block: #{$fd-namespace}-form-group;
   &:last-child {
     margin-bottom: 0;
   }
-}
 
-.#{$block}--inline {
-  display: flex;
-  justify-content: flex-start;
+  &--inline {
+    display: flex;
+    justify-content: flex-start;
 
-  :not(:last-child) {
-    margin-right: fd-space(4);
+    :not(:last-child) {
+      margin-right: fd-space(4);
+    }
+  }
+
+  &__item {
+    @include fd-reset();
   }
 }

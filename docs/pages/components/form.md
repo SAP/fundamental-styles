@@ -427,17 +427,17 @@ In special cases, there are only two mutually exclusive options. Combine them in
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Inline Radio buttons</legend>
         <div class="fd-form-group fd-form-group--inline">
-            <div class="fd-form-item">
+            <div class="fd-form-group__item fd-form-item">
                 <label class="fd-form-label fd-form-label--radio" for="pDidh767">
                     <input type="radio" class="fd-radio" id="pDidh767" name="radio">Field label
                 </label>
             </div>
-            <div class="fd-form-item">
+            <div class="fd-form-group__item fd-form-item">
                 <label class="fd-form-label fd-form-label--radio" for="pDidh7618">
                     <input type="radio" class="fd-radio" id="pDidh7618" name="radio" >Field label
                 </label>
             </div>
-            <div class="fd-form-item">
+            <div class="fd-form-group__item fd-form-item">
                 <label class="fd-form-label fd-form-label--radio" for="pDidh7619">
                     <input type="radio" class="fd-radio" id="pDidh7619" name="radio">Field label
                 </label>
@@ -607,17 +607,17 @@ Do not use the checkbox control if:
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Checkboxes inline</legend>
     <div class="fd-form-group fd-form-group--inline">
-        <div class="fd-form-item">
+        <div class="fd-form-group__item fd-form-item">
             <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez617">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez617">Field label
             </label>
         </div>
-        <div class="fd-form-item">
+        <div class="fd-form-group__item fd-form-item">
             <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez618">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez618">Field label
             </label>
         </div>
-        <div class="fd-form-item">
+        <div class="fd-form-group__item fd-form-item">
             <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez619">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez619">Field label
             </label>

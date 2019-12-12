@@ -117,6 +117,25 @@ body {
   width: 100%;
 }
 
+.label-playground {
+  margin: 0;
+  padding: 0;
+  color: orange;
+}
+
+.radio-playground {
+  margin: 0;
+  padding: 0;
+  border: 2px solid #3A5FCD;
+
+}
+
+.checkbox-playground {
+  margin: 0;
+  padding: 0;
+  border: 2px solid #3A5FCD;
+}
+
 .input-group-playground {
   font-size: 14px;
   margin: 0;
