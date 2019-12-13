@@ -49,7 +49,7 @@ Modal consists of following elements:
 </table>
 
 {% capture modal-anatomy %}
-    <div class="fd-modal fd-modal--active" style="position: static">
+    <div class="fd-modal fd-modal--active" style="position: static; background-color: transparent;">
         <div class="fd-modal__content">
             <header class="fd-modal__header">
                 <h3 class="fd-modal__title">Modal title</h3>
@@ -84,7 +84,7 @@ Compact mode - modifying header/footer height (default 2.75rem):
 
 ### Modal header/footer horizontal paddings
 {% capture modal-size %}
-    <div class="fd-modal fd-modal--active" style="position: static">
+    <div class="fd-modal fd-modal--active" style="position: static; background-color: transparent;">
         <div class="fd-modal__content fd-modal__content--s">
             <header class="fd-modal__header">
                 <h3 class="fd-modal__title">Lorem ipsum</h3>
@@ -100,7 +100,7 @@ Compact mode - modifying header/footer height (default 2.75rem):
         </div>
     </div>
     
-    <div class="fd-modal fd-modal--active" style="position: static">
+    <div class="fd-modal fd-modal--active" style="position: static; background-color: transparent;">
             <div class="fd-modal__content fd-modal__content--m">
                 <header class="fd-modal__header">
                     <h3 class="fd-modal__title">Lorem ipsum</h3>
@@ -116,7 +116,7 @@ Compact mode - modifying header/footer height (default 2.75rem):
             </div>
     </div>
     
-    <div class="fd-modal fd-modal--active" style="position: static">
+    <div class="fd-modal fd-modal--active" style="position: static; background-color: transparent;">
             <div class="fd-modal__content fd-modal__content--xl">
                 <header class="fd-modal__header">
                     <h3 class="fd-modal__title">Lorem ipsum</h3>
@@ -137,7 +137,7 @@ Compact mode - modifying header/footer height (default 2.75rem):
 
 ### Modal compact
 {% capture modal-size-compact %}
-    <div class="fd-modal fd-modal--active" style="position: static">
+    <div class="fd-modal fd-modal--active" style="position: static; background-color: transparent;">
         <div class="fd-modal__content fd-modal__content--compact">
             <header class="fd-modal__header">
                 <h3 class="fd-modal__title">Lorem ipsum</h3>
@@ -159,7 +159,7 @@ Compact mode - modifying header/footer height (default 2.75rem):
 Modal can be opened in resizable mode, enabling to horizontally and vertically resize modals dialog (only for <b>desktop</b>).
 
 {% capture modal-resize %}
-    <div class="fd-modal fd-modal--active" style="position: static">
+    <div class="fd-modal fd-modal--active" style="position: static; background-color: transparent;">
         <div class="fd-modal__content fd-modal__content--resizable">
             <header class="fd-modal__header">
                 <h3 class="fd-modal__title">Lorem ipsum</h3>
@@ -184,7 +184,7 @@ Modal can be opened in resizable mode, enabling to horizontally and vertically r
 This is used to present information to the user but the Alert Component doesn’t fit all the information.
 
 {% capture modal-information %}
-    <div class="fd-modal fd-modal--active" style="position: static">
+    <div class="fd-modal fd-modal--active" style="position: static; background-color: transparent;">
         <div class="fd-modal__content">
             <header class="fd-modal__header">
                 <h3 class="fd-modal__title">Product Added</h3>
@@ -207,7 +207,7 @@ This is used to present information to the user but the Alert Component doesn’
 This is used to confirm with the user before continuing with a destructive or complex action. In this case, the modal has action buttons at the bottom.
 
 {% capture modal-confirmation %}
-    <div class="fd-modal fd-modal--active" style="position: static">
+    <div class="fd-modal fd-modal--active" style="position: static; background-color: transparent;">
         <div class="fd-modal__content fd-modal__content">
             <header class="fd-modal__header">
             <h3 class="fd-modal__title">Delete</h3>
@@ -229,7 +229,7 @@ This is used to confirm with the user before continuing with a destructive or co
 This is used for short forms in order to collect information from the user.
 
 {% capture modal-form %}
-    <div class="fd-modal fd-modal--active" style="position: static">
+    <div class="fd-modal fd-modal--active" style="position: static; background-color: transparent;">
         <div class="fd-modal__content fd-modal__content">
             <header class="fd-modal__header">
             <h3 class="fd-modal__title">Invite user</h3>
