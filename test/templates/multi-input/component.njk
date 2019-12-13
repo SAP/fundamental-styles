@@ -8,17 +8,28 @@
     properties={},
     state={},
     aria={},
+    modifier={},
     classes=[]
     ,size="")
 -%}
-    <div class="fd-multi-input">
-        <div class="fd-multi-input-field">
-            <input class="input-playground" placeholder="placeholder input" />
-        </div>
-        <div class="fd-multi-input-tokens">
-            <button class="btn-playground">placeholder</button>
-            <button class="btn-playground">placeholder</button>
-            <button class="btn-playground">placeholder</button>
-        </div>
-    </div>
+	<ul class="fd-multi-input{{ ' fd-multi-input--compact' if modifier.compact }}">
+	  <li class="fd-multi-input__item is-selected" role="option">
+		 <input type="checkbox" checked class="input-playground fd-multi-input__input" id="Ab4ez611">
+		 <label class="fd-multi-input__label" for="Ab4ez611">
+			<span class="fd-multi-input__title">Text Option</span>
+		 </label>
+	 </li>
+	  <li class="fd-multi-input__item" role="option">
+		 <input type="checkbox" class="input-playground fd-multi-input__input" id="Ab4ez612">
+		 <label class="fd-multi-input__label" for="Ab4ez612">
+			<span class="fd-multi-input__title">Text Option</span>
+		 </label>
+	 </li>
+	  <li class="fd-multi-input__item" role="option">
+		 <input type="checkbox" class="input-playground fd-multi-input__input" id="Ab4ez614">
+		 <label class="fd-multi-input__label" for="Ab4ez614">
+			<span class="fd-multi-input__title">Text Option</span>
+		 </label>
+	 </li>
+	</ul>
 {%- endmacro %}

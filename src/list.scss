@@ -6,148 +6,14 @@ $block: #{$fd-namespace}-list;
 
 .#{$block} {
   @include fd-reset();
-
-  list-style: none;
-  width: 100%;
-
-  &__item,
-  &__group-header,
-  &__footer {
-    @include fd-reset();
-
-    padding: 0 1rem;
-    height: 2.75rem;
-    display: flex;
-    align-items: center;
-  }
+  @include list($block);
 
   &__item {
-    background: var(--sapList_Background);
     border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
-
-    @include fd-hover() {
-      background: var(--sapList_Hover_Background);
-    }
-
-    @include fd-selected() {
-      background: var(--sapList_SelectionBackgroundColor);
-      border-bottom-color: var(--sapList_SelectionBorderColor);
-
-      @include fd-hover() {
-        background: var(--sapList_Hover_SelectionBackground);
-      }
-    }
-
-    @include fd-active() {
-      background: var(--sapList_Active_Background);
-
-      .#{$block}__title,
-      .#{$block}__secondary,
-      .#{$block}__icon {
-        color: var(--sapList_Active_TextColor);
-      }
-    }
-
-    &--no-data {
-      .#{$block}__title {
-        text-align: center;
-      }
-
-      @include fd-hover() {
-        background: var(--sapList_Background);
-      }
-    }
-  }
-
-  &__title,
-  &__secondary {
-    @include fd-reset();
-
-    color: var(--sapList_TextColor);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   &__title {
-    flex: 3 3 10%;
     font-size: var(--sapFontLargeSize);
-  }
-
-  &__secondary {
-    flex: 2 2 10%;
-    font-size: var(--sapFontSize);
-    text-align: right;
-    margin-left: 1rem;
-
-    @include fd-rtl() {
-      text-align: left;
-      margin-right: 1rem;
-      margin-left: 0;
-    }
-  }
-
-  &__icon {
-    @include fd-reset();
-
-    color: var(--sapList_TextColor);
-    flex: 0 0 auto;
-    width: 2.75rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--sapFontHeader4Size);
-
-    &:first-child {
-      margin-left: -1rem;
-    }
-
-    &:last-child {
-      margin-right: -1rem;
-    }
-
-    @include fd-rtl() {
-      &:first-child {
-        margin-right: -1rem;
-        margin-left: 0;
-      }
-
-      &:last-child {
-        margin-left: -1rem;
-        margin-right: 0;
-      }
-    }
-  }
-
-  &__group-header {
-    background: var(--sapList_GroupHeaderBackground);
-    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_GroupHeaderBorderColor);
-    color: var(--sapList_GroupHeaderTextColor);
-    align-items: flex-end;
-    font-size: var(--sapFontSize);
-    font-weight: bold;
-    line-height: 2rem;
-  }
-
-  &__footer {
-    background: var(--sapList_FooterBackground);
-    color: var(--sapList_FooterTextColor);
-    font-size: var(--sapFontSize);
-    height: 2rem;
-  }
-
-  &--compact {
-    .#{$block}__item {
-      height: 2rem;
-    }
-
-    .#{$block}__title {
-      font-size: var(--sapFontSize);
-    }
-
-    .#{$block}__icon {
-      font-size: var(--sapFontLargeSize);
-    }
   }
 
   &--no-border {

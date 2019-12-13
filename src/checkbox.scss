@@ -51,6 +51,7 @@ $block: #{$fd-namespace}-checkbox;
       content: "";
       height: $fd-checkbox-dimensions;
       width: $fd-checkbox-dimensions;
+      min-width: $fd-checkbox-dimensions;
       font-size: var(--sapFontLargeSize);
       display: inline-flex;
       justify-content: center;
@@ -129,6 +130,7 @@ $block: #{$fd-namespace}-checkbox;
         font-size: 0.625rem;
         height: $fd-checkbox-dimensions-compact;
         width: $fd-checkbox-dimensions-compact;
+        min-width: $fd-checkbox-dimensions-compact;
         margin: $fd-checkbox-margin-compact;
       }
     }

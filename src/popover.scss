@@ -61,6 +61,10 @@ $block: #{$fd-namespace}-popover;
     }
 
     @include action-cursor();
+
+    @include fd-disabled() {
+      pointer-events: none;
+    }
   }
 
   &__body {

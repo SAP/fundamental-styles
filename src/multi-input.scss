@@ -8,33 +8,31 @@
 $block: #{$fd-namespace}-multi-input;
 
 .#{$block} {
+  $fd-checkbox-dimensions: 1.375rem;
+
   @include fd-reset();
+  @include list($block);
 
-  &-field {
-    @include fd-reset();
-
-    margin: 0 0 10px 0;
-  }
-
-  &__element {
-    @include fd-reset();
+  &__item {
+    padding: 0;
   }
 
   &__label {
+    @include fd-reset();
+
+    color: inherit;
     width: 100%;
-    font-size: var(--sapFontSize);
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: $fd-list-vertical-padding $fd-list-horizontal-padding;
+    margin-right: 0;
 
-    @include fd-focus() {
-      box-shadow: none;
-      outline-offset: -0.1875rem;
-      outline-width: var(--sapContent_FocusWidth);
-      outline-color: var(--sapContent_FocusColor);
-      outline-style: var(--sapContent_FocusStyle);
+    &::before {
+      margin-left: 0;
+      margin-top: (1rem - $fd-checkbox-dimensions) / 2;
+      margin-bottom: (1rem - $fd-checkbox-dimensions) / 2;
     }
-  }
-
-  &__text {
-    font-size: var(--sapFontSize);
   }
 
   &-tokens {
@@ -42,8 +40,48 @@ $block: #{$fd-namespace}-multi-input;
   }
 
   &__input {
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    @include fd-focus() {
+      box-shadow: none;
+
+      + .#{$block}__label {
+        &::after {
+          $fd-multi-input-focus-offset: 0.0625rem;
+
+          top: $fd-multi-input-focus-offset;
+          bottom: $fd-multi-input-focus-offset;
+          left: $fd-multi-input-focus-offset;
+          right: $fd-multi-input-focus-offset;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    height: auto;
+    padding: $fd-list-vertical-padding $fd-list-horizontal-padding;
+    text-align: right;
+    justify-content: flex-end;
+    line-height: 1rem;
+    background-color: var(--sapList_Background);
+  }
+
+  &--compact {
+    .#{$block}__item {
+      padding: 0;
+    }
+
+    .#{$block}__label {
+      padding: $fd-list-vertical-compact-padding $fd-list-horizontal-padding;
+
+      &::before {
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    .#{$block}__footer {
+      padding: $fd-list-vertical-compact-padding $fd-list-horizontal-padding;
+    }
   }
 }
