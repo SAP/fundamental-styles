@@ -6,7 +6,6 @@
 /*!
   .fd-modal
   .fd-modal--active
-    .fd-modal__overlay
     .fd-modal__content
     .fd-modal__content--s
     .fd-modal__content--m
@@ -62,18 +61,15 @@ $block: #{$fd-namespace}-modal;
   $fd-modal-footer-border: 0.0625rem solid $fd-modal-footer-border-color;
 
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $fd-modal-overlay-color;
 
   &--active {
     display: block;
-  }
-
-  &__overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $fd-modal-overlay-color;
   }
 
   &__content {
