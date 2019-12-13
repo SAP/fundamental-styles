@@ -58,6 +58,17 @@ These are static classes set at load time, not affected by any user selections i
         </tr>
         <tr>
             <td>
+                <code>.fd-calendar__item--weekend</code>
+            </td>
+            <td>
+                Used to mark weekend days.
+            </td>
+            <td>
+                <div class="fd-calendar__item fd-calendar__item--weekend">20</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <code>.fd-calendar__item--disabled</code>
             </td>
             <td>
@@ -135,32 +146,6 @@ These are dynamic classes which are affected by user selections
             </td>
             <td>
                 <div class="fd-calendar__item is-selected-range">
-                    20
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <code>.is-selected-range-first</code>*
-            </td>
-            <td>
-                The first date in a selected range
-            </td>
-            <td>
-                <div class="fd-calendar__item is-selected is-selected-range-first">
-                    20
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <code>.is-selected-range-last</code>*
-            </td>
-            <td>
-                The last date in a selected range
-            </td>
-            <td>
-                <div class="fd-calendar__item is-selected is-selected-range-last">
                     20
                 </div>
             </td>
@@ -248,7 +233,7 @@ These are dynamic classes which are affected by user selections
 						<td class="fd-calendar__item" role="gridcell">
 							<span class="fd-calendar__text" role="button">4</span>
 						</td>
-						<td class="fd-calendar__item fd-calendar__item--weekend is-selected is-selected-range-first" role="gridcell">
+						<td class="fd-calendar__item fd-calendar__item--weekend is-selected" role="gridcell">
 							<span class="fd-calendar__text" role="button" aria-selected="true">5</span>
 						</td>
 					</tr>
@@ -308,7 +293,7 @@ These are dynamic classes which are affected by user selections
 						<td class="fd-calendar__week-number" role="gridcell">
 							<span class="fd-calendar__text" role="button">23</span>
 						</td>
-						<td class="fd-calendar__item fd-calendar__item--weekend is-selected is-selected-range-last" role="gridcell">
+						<td class="fd-calendar__item fd-calendar__item--weekend is-selected" role="gridcell">
 							<span class="fd-calendar__text" role="button" aria-selected="true">20</span>
 						</td>
 						<td class="fd-calendar__item" role="gridcell">
@@ -535,7 +520,7 @@ These are dynamic classes which are affected by user selections
 						<td class="fd-calendar__item" role="gridcell">
 							<span class="fd-calendar__text" role="button">4</span>
 						</td>
-						<td class="fd-calendar__item fd-calendar__item--weekend is-selected is-selected-range-first" role="gridcell">
+						<td class="fd-calendar__item fd-calendar__item--weekend is-selected" role="gridcell">
 							<span class="fd-calendar__text" role="button" aria-selected="true">5</span>
 						</td>
 					</tr>
@@ -595,7 +580,7 @@ These are dynamic classes which are affected by user selections
 						<td class="fd-calendar__week-number" role="gridcell">
 							<span class="fd-calendar__text" role="button">23</span>
 						</td>
-						<td class="fd-calendar__item fd-calendar__item--weekend is-selected is-selected-range-last" role="gridcell">
+						<td class="fd-calendar__item fd-calendar__item--weekend is-selected" role="gridcell">
 							<span class="fd-calendar__text" role="button" aria-selected="true">20</span>
 						</td>
 						<td class="fd-calendar__item" role="gridcell">
