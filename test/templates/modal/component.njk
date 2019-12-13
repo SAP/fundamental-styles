@@ -4,7 +4,7 @@ modal:
 -->
 {% macro modal(properties={}) %}
     <div class="fd-modal {% if not properties.toggleable %} fd-modal--active {% endif %}"
-            {% if not properties.toggleable %} style="position: static" {% endif %}
+            {% if not properties.toggleable %} style="position: static; background-color: transparent;"{% endif %}
          id="{% if properties.id %}{{ properties.id }}{% else %}example-modal{% endif %}"
          role="dialog">
         <div role="document"

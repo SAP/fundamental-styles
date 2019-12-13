@@ -25,7 +25,9 @@ $block: #{$fd-namespace}-modal;
 .#{$block} {
 
   // OVERLAY
-  $fd-modal-overlay-color: fade(var(--sapBlockLayer_Background), 60);
+  // TODO PROVIDE CORRECT COLOR AFTER RESOLVING CSS VARIABLES ISSUE
+  // $fd-modal-overlay-color: fade(var(--sapBlockLayer_Background), 60);
+  $fd-modal-overlay-color: var(--sapBlockLayer_Background);
 
   // CONTENT
   $fd-modal-content-margin-y: 6%;
@@ -47,7 +49,9 @@ $block: #{$fd-namespace}-modal;
   $fd-modal-header-color: var(--sapPageHeader_Background);
   $fd-modal-header-shadow-color-1: var(--sapContent_ShadowColor);
   $fd-modal-header-shadow-color-2: var(--sapPageHeader_BorderColor);
-  $fd-modal-header-box-shadow: 0 0 0.25rem 0 fade($fd-modal-header-shadow-color-1, 15), inset 0 -0.0625rem 0 0 $fd-modal-header-shadow-color-2;
+  // TODO PROVIDE CORRECT COLOR AFTER RESOLVING CSS VARIABLES ISSUE
+  // $fd-modal-header-box-shadow: 0 0 0.25rem 0 fade($fd-modal-header-shadow-color-1, 15), inset 0 -0.0625rem 0 0 $fd-modal-header-shadow-color-2;
+  $fd-modal-header-box-shadow: 0 0 0.25rem 0 $fd-modal-header-shadow-color-1, inset 0 -0.0625rem 0 0 $fd-modal-header-shadow-color-2;
 
   // BODY
   $fd-modal-body-padding-y: 1rem;
