@@ -33,7 +33,6 @@ $block: #{$fd-namespace}-token;
   border-radius: $fd-border-radius;
   white-space: nowrap;
   max-width: 100%;
-  overflow: hidden;
   text-overflow: clip;
   height: 1.625rem;
   line-height: 1.5rem;
@@ -49,6 +48,7 @@ $block: #{$fd-namespace}-token;
     height: 1.625rem;
     background-color: transparent;
     line-height: 1.25rem;
+    cursor: pointer;
 
     @include fd-icon("decline", "s");
 
