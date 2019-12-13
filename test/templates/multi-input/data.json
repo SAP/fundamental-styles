@@ -4,5 +4,8 @@
     "type": "text",
     "properties": {
         "placeholder": "Placeholder Text"
+    },
+    "modifier": {
+      "compact": false
     }
 }

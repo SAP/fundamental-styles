@@ -5,14 +5,29 @@
 {% block content %}
 
 
-    {% set basic_multi_input %}
-        {{ multi_input(
-            properties={
-                placeholder: "Select Fruit"
-            })
-        }}
-    {% endset %}
+{% set basic_multi_input %}
+	{{ multi_input(
+		properties={
+			placeholder: "Select Fruit"
+		})
+	}}
+{% endset %}
 
-    {{ format(basic_multi_input) }}
+{{ format(basic_multi_input) }}
+
+
+{% set compact_multi_input %}
+
+	{{ multi_input(
+		properties={
+			placeholder: "Select Fruit"
+		},
+		modifier={
+			compact: true
+		})
+	}}
+{% endset %}
+
+{{ format(compact_multi_input) }}
 
 {% endblock %}
