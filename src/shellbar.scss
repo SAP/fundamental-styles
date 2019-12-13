@@ -110,7 +110,7 @@ $block: #{$fd-namespace}-shellbar;
     @include fd-type("1");
     @include fd-weight("bold");
 
-    line-height: 1;
+    line-height: 1.1;
 
     @include fd-var-color("color", $fd-shellbar-color, --fd-color-text-5);
 
