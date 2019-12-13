@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.0-rc.30"></a>
+# [0.4.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.29...v0.4.0-rc.30) (2019-12-13)
+
+
+### Features
+
+* input group for checkbox/radio inline ([#451](https://github.com/SAP/fundamental-styles/issues/451)) ([fae280a](https://github.com/SAP/fundamental-styles/commit/fae280a))
+
+
+
 <a name="0.4.0-rc.29"></a>
 # [0.4.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.28...v0.4.0-rc.29) (2019-12-13)
 
