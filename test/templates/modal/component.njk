@@ -4,35 +4,34 @@ modal:
 -->
 {% macro modal(properties={}) %}
     <div class="fd-modal {% if not properties.toggleable %} fd-modal--active {% endif %}"
+            {% if not properties.toggleable %} style="position: static" {% endif %}
          id="{% if properties.id %}{{ properties.id }}{% else %}example-modal{% endif %}"
          role="dialog">
-        <div {% if properties.toggleable %}class="fd-modal__overlay{% endif %}">
-            <div role="document"
-                 class="fd-modal__content
+        <div role="document"
+             class="fd-modal__content
              {% set modal = properties.modal_content %}
              {% if modal.is_compact %}fd-modal__content--compact{% endif %}
              {% if modal.is_resizable %}fd-modal__content--resizable{% endif %}
              {% if modal.modal_content_size %}fd-modal__content--{{ modal.modal_content_size }}{% endif %}
         ">
 
-                <header class="fd-modal__header">
-                    <h1 class="fd-modal__title">{{ properties.header }}</h1>
-                    <button class="btn-playground fd-modal__close"
-                            onclick="modal_toggle('{{ properties.id }}', false)">
-                    </button>
-                </header>
+            <header class="fd-modal__header">
+                <h1 class="fd-modal__title">{{ properties.header }}</h1>
+                <button class="btn-playground fd-modal__close"
+                        onclick="modal_toggle('{{ properties.id }}', false)">
+                </button>
+            </header>
 
-                <div class="fd-modal__body">
-                    <p>{{ properties.body }}</p>
-                </div>
-
-                <footer class="fd-modal__footer">
-                    {%- for action in properties.actions %}
-                        <button class="btn-playground">{{ action.label }}</button>
-                    {%- endfor %}
-                </footer>
-
+            <div class="fd-modal__body">
+                <p>{{ properties.body }}</p>
             </div>
+
+            <footer class="fd-modal__footer">
+                {%- for action in properties.actions %}
+                    <button class="btn-playground">{{ action.label }}</button>
+                {%- endfor %}
+            </footer>
+
         </div>
     </div>
 
