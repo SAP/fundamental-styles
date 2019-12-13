@@ -377,164 +377,178 @@ In special cases, there are only two mutually exclusive options. Combine them in
 {% capture radio-buttons%}
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Radio Buttons Cozy Mode</legend>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="pDidh761">
-            <input type="radio" class="fd-radio" id="pDidh761" name="radio" checked>Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="pDidh7612">
-            <input type="radio" class="fd-radio" id="pDidh7612" name="radio">Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="pDidh7613">
-            <input type="radio" class="fd-radio" id="pDidh7613" name="radio">Field label
-        </label>
+    <div class="fd-form__group">
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="pDidh761">
+                <input type="radio" class="fd-radio" id="pDidh761" name="radio" checked>Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="pDidh7612">
+                <input type="radio" class="fd-radio" id="pDidh7612" name="radio">Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="pDidh7613">
+                <input type="radio" class="fd-radio" id="pDidh7613" name="radio">Field label
+            </label>
+        </div>
     </div>
 </fieldset>
 <br /><br />
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Radio Buttons Compact Mode</legend>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="pDidh76111">
-            <input type="radio" class="fd-radio fd-radio--compact" id="pDidh76111" name="radio2" checked>Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="pDidh761211">
-            <input type="radio" class="fd-radio fd-radio--compact" id="pDidh761211" name="radio2">Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="pDidh761311">
-            <input type="radio" class="fd-radio fd-radio--compact" id="pDidh761311" name="radio2">Field label
-        </label>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="pDidh76111">
+                <input type="radio" class="fd-radio fd-radio--compact" id="pDidh76111" name="radio" checked>Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="pDidh761211">
+                <input type="radio" class="fd-radio fd-radio--compact" id="pDidh761211" name="radio">Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="pDidh761311">
+                <input type="radio" class="fd-radio fd-radio--compact" id="pDidh761311" name="radio">Field label
+            </label>
+        </div>
     </div>
 </fieldset>
 <br /><br />
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Radio buttons Disabled</legend>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="pDidh764">
-            <input type="radio" class="fd-radio" id="pDidh764" name="radio3" disabled>Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="pDidh7615">
-            <input type="radio" class="fd-radio" id="pDidh7615" name="radio3" disabled>Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="pDidh7616">
-            <input type="radio" class="fd-radio" id="pDidh7616" name="radio3" disabled>Field label
-        </label>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="pDidh764">
+                <input type="radio" class="fd-radio" id="pDidh764" name="radio" disabled>Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="pDidh7615">
+                <input type="radio" class="fd-radio" id="pDidh7615" name="radio" disabled>Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="pDidh7616">
+                <input type="radio" class="fd-radio" id="pDidh7616" name="radio" disabled>Field label
+            </label>
+        </div>
     </div>
 </fieldset>
 <br /><br />
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Inline Radio buttons</legend>
-    <div class="fd-form-item fd-form-item--inline">
-        <label class="fd-form-label fd-form-label--radio" for="pDidh767">
-            <input type="radio" class="fd-radio" id="pDidh767" name="radio4">Field label
-        </label>
-    </div>
-    <div class="fd-form-item fd-form-item--inline">
-        <label class="fd-form-label fd-form-label--radio" for="pDidh7618">
-            <input type="radio" class="fd-radio" id="pDidh7618" name="radio4" >Field label
-        </label>
-    </div>
-    <div class="fd-form-item fd-form-item--inline">
-        <label class="fd-form-label fd-form-label--radio" for="pDidh7619">
-            <input type="radio" class="fd-radio" id="pDidh7619" name="radio4">Field label
-        </label>
-    </div>
+        <div class="fd-form-group fd-form-group--inline">
+            <div class="fd-form-group__item fd-form-item">
+                <label class="fd-form-label fd-form-label--radio" for="pDidh767">
+                    <input type="radio" class="fd-radio" id="pDidh767" name="radio">Field label
+                </label>
+            </div>
+            <div class="fd-form-group__item fd-form-item">
+                <label class="fd-form-label fd-form-label--radio" for="pDidh7618">
+                    <input type="radio" class="fd-radio" id="pDidh7618" name="radio" >Field label
+                </label>
+            </div>
+            <div class="fd-form-group__item fd-form-item">
+                <label class="fd-form-label fd-form-label--radio" for="pDidh7619">
+                    <input type="radio" class="fd-radio" id="pDidh7619" name="radio">Field label
+                </label>
+            </div>
+        </div>
 </fieldset>
 <br /><br />
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Interaction States</legend>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="iSpDidh761">
-            <input type="radio" class="fd-radio" id="iSpDidh761" name="radio5" checked>Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="iSpDidh7612">
-            <input type="radio" class="fd-radio is-valid" id="iSpDidh7612" name="radio5">Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="iSpDidh7613">
-            <input type="radio" class="fd-radio is-invalid" id="iSpDidh7613" name="radio5">Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="iSpDidh7614">
-            <input type="radio" class="fd-radio is-warning" id="iSpDidh7614" name="radio5">Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="iSpDidh7615">
-            <input type="radio" class="fd-radio is-information" id="iSpDidh7615" name="radio5">Field label
-        </label>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="iSpDidh761">
+                <input type="radio" class="fd-radio" id="iSpDidh761" name="radio" checked>Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="iSpDidh7612">
+                <input type="radio" class="fd-radio is-valid" id="iSpDidh7612" name="radio">Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="iSpDidh7613">
+                <input type="radio" class="fd-radio is-invalid" id="iSpDidh7613" name="radio">Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="iSpDidh7614">
+                <input type="radio" class="fd-radio is-warning" id="iSpDidh7614" name="radio">Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="iSpDidh7615">
+                <input type="radio" class="fd-radio is-information" id="iSpDidh7615" name="radio">Field label
+            </label>
+        </div>
     </div>
 </fieldset>
 <br /><br />
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Interaction States Compact Mode</legend>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="iSpDidh7619">
-            <input type="radio" class="fd-radio fd-radio--compact" id="iSpDidh7619" name="radio6" checked>Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="iSpDidh76129">
-            <input type="radio" class="fd-radio fd-radio--compact is-valid" id="iSpDidh76129" name="radio6">Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="iSpDidh76139">
-            <input type="radio" class="fd-radio fd-radio--compact is-invalid" id="iSpDidh76139" name="radio6">Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="iSpDidh76149">
-            <input type="radio" class="fd-radio fd-radio--compact is-warning" id="iSpDidh76149" name="radio6">Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="iSpDidh76159">
-            <input type="radio" class="fd-radio fd-radio--compact is-information" id="iSpDidh76159" name="radio6">Field label
-        </label>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="iSpDidh7619">
+                <input type="radio" class="fd-radio fd-radio--compact" id="iSpDidh7619" name="radio" checked>Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="iSpDidh76129">
+                <input type="radio" class="fd-radio fd-radio--compact is-valid" id="iSpDidh76129" name="radio">Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="iSpDidh76139">
+                <input type="radio" class="fd-radio fd-radio--compact is-invalid" id="iSpDidh76139" name="radio">Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="iSpDidh76149">
+                <input type="radio" class="fd-radio fd-radio--compact is-warning" id="iSpDidh76149" name="radio">Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="iSpDidh76159">
+                <input type="radio" class="fd-radio fd-radio--compact is-information" id="iSpDidh76159" name="radio">Field label
+            </label>
+        </div>
     </div>
 </fieldset>
 <br /><br />
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Interaction States Compact Mode Disabled</legend>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="iSpDidh7619d">
-            <input type="radio" class="fd-radio fd-radio--compact" id="iSpDidh7619d" name="radio7" disabled>Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="iSpDidh76129d">
-            <input type="radio" class="fd-radio fd-radio--compact is-valid" id="iSpDidh76129d" name="radio7" disabled>Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="iSpDidh76139d">
-            <input type="radio" class="fd-radio fd-radio--compact is-invalid" id="iSpDidh76139d" name="radio7" disabled>Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="iSpDidh76149d">
-            <input type="radio" class="fd-radio fd-radio--compact is-warning" id="iSpDidh76149d" name="radio7" disabled>Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--radio" for="iSpDidh76159d">
-            <input type="radio" class="fd-radio fd-radio--compact is-information" id="iSpDidh76159d" name="radio7" disabled>Field label
-        </label>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="iSpDidh7619d">
+                <input type="radio" class="fd-radio fd-radio--compact" id="iSpDidh7619d" name="radio" disabled>Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="iSpDidh76129d">
+                <input type="radio" class="fd-radio fd-radio--compact is-valid" id="iSpDidh76129d" name="radio" disabled>Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="iSpDidh76139d">
+                <input type="radio" class="fd-radio fd-radio--compact is-invalid" id="iSpDidh76139d" name="radio" disabled>Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="iSpDidh76149d">
+                <input type="radio" class="fd-radio fd-radio--compact is-warning" id="iSpDidh76149d" name="radio" disabled>Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--radio" for="iSpDidh76159d">
+                <input type="radio" class="fd-radio fd-radio--compact is-information" id="iSpDidh76159d" name="radio" disabled>Field label
+            </label>
+        </div>
     </div>
 </fieldset>
 {% endcapture %}
@@ -564,192 +578,212 @@ Do not use the checkbox control if:
 {% capture checkbox %}
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Checkboxes</legend>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez611">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez611">Text Option
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez612">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez612" checked>Selected State
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez613">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez613">TriState Text
-        </label>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez611">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez611">Text Option
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez612">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez612" checked>Selected State
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez613">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez613">TriState Text
+            </label>
+        </div>
     </div>
 </fieldset>
 
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Checkboxes disabled</legend>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez614">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez614" disabled>Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez615">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez615" disabled>Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez616">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez616" disabled>Field label
-        </label>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez614">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez614" disabled>Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez615">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez615" disabled>Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez616">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez616" disabled>Field label
+            </label>
+        </div>
     </div>
 </fieldset>
 
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Checkboxes inline</legend>
-    <div class="fd-form-item fd-form-item--inline">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez617">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez617">Field label
-        </label>
-    </div>
-    <div class="fd-form-item fd-form-item--inline">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez618">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez618">Field label
-        </label>
-    </div>
-    <div class="fd-form-item fd-form-item--inline">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez619">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez619">Field label
-        </label>
+    <div class="fd-form-group fd-form-group--inline">
+        <div class="fd-form-group__item fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez617">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez617">Field label
+            </label>
+        </div>
+        <div class="fd-form-group__item fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez618">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez618">Field label
+            </label>
+        </div>
+        <div class="fd-form-group__item fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez619">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez619">Field label
+            </label>
+        </div>
     </div>
 </fieldset>
 
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Checkboxes Compact Mode</legend>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez6171">
-            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6171">Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez6181">
-            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6181">Field label
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez6191">
-            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6191">Field label
-        </label>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez6171">
+                <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6171">Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez6181">
+                <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6181">Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez6191">
+                <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6191">Field label
+            </label>
+        </div>
     </div>
 </fieldset>
 
 
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Checkboxes Error</legend>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez6119">
-            <input type="checkbox" class="fd-checkbox is-invalid" id="Ai4ez6119">Text Option
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez6129">
-            <input type="checkbox" class="fd-checkbox is-invalid" id="Ai4ez6129" checked>Selected State
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez613i1">
-            <input type="checkbox" class="fd-checkbox is-invalid" id="Ai4ez613i1">TriState Text
-        </label>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez6119">
+                <input type="checkbox" class="fd-checkbox is-invalid" id="Ai4ez6119">Text Option
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez6129">
+                <input type="checkbox" class="fd-checkbox is-invalid" id="Ai4ez6129" checked>Selected State
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez613i1">
+                <input type="checkbox" class="fd-checkbox is-invalid" id="Ai4ez613i1">TriState Text
+            </label>
+        </div>
     </div>
 </fieldset>
 
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Checkboxes Success</legend>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez61192">
-            <input type="checkbox" class="fd-checkbox is-valid" id="Ai4ez61192">Text Option
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez61292">
-            <input type="checkbox" class="fd-checkbox is-valid" id="Ai4ez61292" checked>Selected State
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez613i2">
-            <input type="checkbox" class="fd-checkbox is-valid" id="Ai4ez613i2">TriState Text
-        </label>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez61192">
+                <input type="checkbox" class="fd-checkbox is-valid" id="Ai4ez61192">Text Option
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez61292">
+                <input type="checkbox" class="fd-checkbox is-valid" id="Ai4ez61292" checked>Selected State
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez613i2">
+                <input type="checkbox" class="fd-checkbox is-valid" id="Ai4ez613i2">TriState Text
+            </label>
+        </div>
     </div>
 </fieldset>
 
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Checkboxes Warning</legend>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez61193">
-            <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez61193">Text Option
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez61293">
-            <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez61293" checked>Selected State
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez613i3">
-            <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez613i3">TriState Text
-        </label>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez61193">
+                <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez61193">Text Option
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez61293">
+                <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez61293" checked>Selected State
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez613i3">
+                <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez613i3">TriState Text
+            </label>
+        </div>
     </div>
 </fieldset>
 
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Checkboxes Information</legend>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez61194">
-            <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez61194">Text Option
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez61294">
-            <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez61294" checked>Selected State
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez613i4">
-            <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez613i4">TriState Text
-        </label>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez61194">
+                <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez61194">Text Option
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez61294">
+                <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez61294" checked>Selected State
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez613i4">
+                <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez613i4">TriState Text
+            </label>
+        </div>
     </div>
 </fieldset>
 
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Checkboxes Disabled</legend>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez61196">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez61196" disabled>Text Option
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez61296">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez61296" checked disabled>Selected State
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez613i6">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez613i6" disabled>TriState Text
-        </label>
+        <div class="fd-form-group">
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez61196">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez61196" disabled>Text Option
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez61296">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez61296" checked disabled>Selected State
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez613i6">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez613i6" disabled>TriState Text
+            </label>
+        </div>
     </div>
 </fieldset>
 
 <fieldset class="fd-fieldset" dir="rtl">
     <legend class="fd-fieldset__legend">Checkboxes RTL Support</legend>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez611tt">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez611tt">Text Option
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez612tt">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez612tt" checked>Selected State
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez613i7">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez613i7">TriState Text
-        </label>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez611tt">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez611tt">Text Option
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez612tt">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez612tt" checked>Selected State
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <label class="fd-form-label fd-form-label--checkbox" for="Ai4ez613i7">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez613i7">TriState Text
+            </label>
+        </div>
     </div>
 </fieldset>
 {% endcapture %}

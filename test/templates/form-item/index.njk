@@ -16,28 +16,4 @@
 {{ format(example) }}
 <br><br>
 
-<h2>Inline</h2>
-
-{% set example %}
-  {% call formItem(modifier={block: ["inline"]}) -%}
-    <label>
-      <input type="radio" />
-      Placeholder label
-    </label>
-  {%- endcall %}
-  {% call formItem(modifier={block: ["inline"]}) -%}
-    <label>
-      <input type="radio" />
-      Placeholder label
-    </label>
-  {%- endcall %}
-  {% call formItem(modifier={block: ["inline"]}) -%}
-    <label>
-      <input type="radio" />
-      Placeholder label
-    </label>
-  {%- endcall %}
-{% endset %}
-{{ format(example) }}
-
 {% endblock %}

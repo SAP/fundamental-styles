@@ -27,4 +27,56 @@
   {% endset %}
   {{ format(example) }}
 
+  <h2>Inline radio</h2>
+
+  {% set example %}
+    <fieldset class="fd-fieldset">
+      <legend class="fd-fieldset__legend">Inline Radio buttons</legend>
+      <div class="fd-form-group fd-form-group--inline">
+          <div class="fd-form-group__item">
+            <label class="fd-form-group__label label-playground" label-playground" for="pDidh767">
+              <input class="radio-playground"  type="radio" id="pDidh767" name="radio">Field label
+            </label>
+          </div>
+          <div class="fd-form-group__item">
+              <label class="fd-form-group__label label-playground" for="pDidh7618">
+                <input class="radio-playground" type="radio" id="pDidh7618" name="radio" >Field label
+              </label>
+          </div>
+          <div class="fd-form-group__item">
+              <label class="fd-form-group__label label-playground" for="pDidh7619">
+                <input class="radio-playground" type="radio" id="pDidh7619" name="radio">Field label
+              </label>
+          </div>
+      </div>
+  </fieldset>
+{% endset %}
+{{ format(example) }}
+<br>
+
+  <h2>Checkbox inline </h2>
+
+  {% set example %}
+    <fieldset class="fd-fieldset">
+        <legend class="fd-fieldset__legend">Checkboxes inline</legend>
+        <div class="fd-form-group fd-form-group--inline">
+            <div class="fd-form-group__item">
+                <label class="fd-form-group__label label-playground" for="Ai4ez617">
+                  <input class="checkbox-playground" type="checkbox" id="Ai4ez617">Field label
+                </label>
+            </div>
+            <div class="fd-form-group__item">
+                <label class="fd-form-group__label label-playground" for="Ai4ez618">
+                  <input class="checkbox-playground" type="checkbox" id="Ai4ez618">Field label
+                </label>
+            </div>
+            <div class="fd-form-group__item">
+                <label class="fd-form-group__label label-playground" for="Ai4ez619">
+                  <input class="checkbox-playground" type="checkbox" id="Ai4ez619">Field label
+                </label>
+            </div>
+        </div>
+    </fieldset>
+  {% endset %}
+  {{ format(example) }}
 {% endblock %}
