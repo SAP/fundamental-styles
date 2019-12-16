@@ -33,8 +33,6 @@ $block: #{$fd-namespace}-input;
 
   &::placeholder {
     line-height: $fd-form-input-height;
-    font-style: italic;
-    color: var(--sapField_PlaceholderTextColor);
   }
 
   &::-webkit-input-placeholder {
