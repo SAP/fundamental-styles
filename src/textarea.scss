@@ -10,13 +10,14 @@ $block: #{$fd-namespace}-textarea;
 .#{$block} {
   @include fd-form-text();
 
-  width: 100%;
   min-width: 6rem;
+  width: 100%;
   min-height: 2.25rem;
   margin: 0.25rem 0;
   padding: 0.5rem 0.625rem;
   white-space: initial;
   overflow: auto;
+  resize: none;
 
   &--compact {
     min-height: 1.625rem;

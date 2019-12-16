@@ -74,21 +74,6 @@ The Input Group with text add-on component is typically used to specify the type
         <span class="fd-input-group__addon">.00</span>
     </div>
 </div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="">Multiple Left and Right Aligned Text Add-ons</label>
-    <div class="fd-input-group">
-        <span class="fd-input-group__addon">
-            <span class="sap-icon--hide" role="presentation"></span>
-        </span>
-        <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="This is a test">
-        <span class="fd-input-group__addon">.00</span>
-        <span class="fd-input-group__addon">
-            <span class="sap-icon--product" role="presentation"></span>
-        </span>
-    </div>
-</div>
 {% endcapture %}
 
 {% include display-component.html component=text-addon %}
@@ -179,44 +164,6 @@ The Input with add-on supports actions. Actions can be shown with a text label o
             </button>
         </span>
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="">Input with actions on left and on right</label>
-    <div class="fd-input-group">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-             <button class="fd-input-group__button fd-button--icon fd-button--light sap-icon--search"></button>
-        </span>
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--icon fd-button--light sap-icon--cart"></button>
-        </span>
-        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--light">Button</button>
-        </span>
-         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--icon fd-button--light sap-icon--decline"></button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="">Input with mixed actions on left and on right</label>
-    <div class="fd-input-group">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-             <button class="fd-input-group__button fd-button--icon fd-button--light sap-icon--search"></button>
-        </span>
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--icon fd-button--light sap-icon--cart"></button>
-        </span>
-        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--light">Button</button>
-        </span>
-        <span class="fd-input-group__addon">
-            <span class="sap-icon--employee" role="presentation"></span>
-        </span>
     </div>
 </div>
 {% endcapture %}
@@ -312,61 +259,6 @@ The Input with add-on supports actions. Actions can be shown with a text label o
 {% endcapture %}
 
 {% include display-component.html component=states %}
-
-
-## Textareas
-
-{% capture button-addon %}
-<div class="fd-form-item">
-    <label class="fd-form-label" for="">Textarea with text add-on</label>
-    <div class="fd-input-group">
-        <textarea class="fd-textarea fd-input-group__input" id=""></textarea>
-        <span class="fd-input-group__addon">
-            km/h
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="">Textarea with action</label>
-    <div class="fd-input-group">
-        <textarea class="fd-textarea fd-input-group__input" id=""></textarea>
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--light">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="">Compact textarea with action</label>
-    <div class="fd-input-group is-valid">
-        <textarea class="fd-textarea fd-textarea--compact fd-input-group__input" id=""></textarea>
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--light">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="">Compact textarea with action</label>
-    <div class="fd-input-group is-invalid">
-        <textarea class="fd-textarea fd-textarea--compact fd-input-group__input" id=""></textarea>
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--light">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-{% endcapture %}
-
-{% include display-component.html component=button-addon %}
-
-
 ## Number input
 
 For an integer value input, a spinner can be added allowing the user to increase or decrease the value.
