@@ -176,10 +176,6 @@ entries:
       url: /components/modal.html
       output: web
 
-    - title: Multi Input
-      url: /components/multi-input.html
-      output: web
-
     - title: Notification
       url: /components/notification.html
       output: web
