@@ -31,14 +31,6 @@ $block: #{$fd-namespace}-input;
     margin-bottom: $fd-form-input-margin;
   }
 
-  &::placeholder {
-    @include fd-reset();
-
-    line-height: $fd-form-input-height;
-    font-style: italic;
-    color: var(--sapField_PlaceholderTextColor);
-  }
-
   &--compact {
     min-width: 2rem;
     height: $fd-form-input-height--compact;
@@ -46,10 +38,6 @@ $block: #{$fd-namespace}-input;
     margin-bottom: $fd-form-input-margin--compact;
     padding: 0 0.5rem;
     box-sizing: border-box;
-
-    &::placeholder {
-      line-height: $fd-form-input-height--compact;
-    }
   }
 
   &--no-number-spinner {
