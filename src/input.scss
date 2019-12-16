@@ -32,8 +32,6 @@ $block: #{$fd-namespace}-input;
   }
 
   &::placeholder {
-    @include fd-reset();
-
     line-height: $fd-form-input-height;
     font-style: italic;
   }
