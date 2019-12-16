@@ -188,8 +188,8 @@ The container visibility can be toggled with the `aria-hidden` attribute.
     </div>
     <div class="fd-shell__overlay fd-overlay fd-overlay--alert" aria-hidden="false">
         <div class="fd-alert fd-alert--warning fd-alert--dismissible" role="alert" id="4Nolz351">
-          <button class="fd-alert__close" aria-controls="4Nolz351" aria-label="Close"></button>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit
+          <button class="fd-button fd-button--light fd-button--compact fd-alert__close" aria-controls="4Nolz351" aria-label="Close"></button>
+          <span class="fd-alert__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
         </div>
     </div>
 </div>
