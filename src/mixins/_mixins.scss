@@ -193,6 +193,10 @@
   white-space: nowrap;
   background-color: transparent;
   border-radius: var(--sapButton_BorderCornerRadius);
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
   @content;
 }
 

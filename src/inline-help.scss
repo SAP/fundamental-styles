@@ -39,6 +39,7 @@ $block: #{$fd-namespace}-inline-help;
     content: "?";
     width: $fd-tooltip-icon-size;
     height: $fd-tooltip-icon-size;
+    line-height: $fd-tooltip-icon-size;
     font-style: normal;
     position: absolute;
     left: 0;
