@@ -60,7 +60,9 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     @include fd-reset-child-spacing();
 
     border: none;
-    flex: 1;
+    flex: 0;
+    flex-grow: 1;
+    width: auto;
     padding-right: 0.25rem;
     padding-left: 0.25rem;
 
