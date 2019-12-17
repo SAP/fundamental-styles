@@ -1,8 +1,11 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "./component.njk" import modal %}
+{% from "./component.njk" import modal, modal_toggle_setup %}
+
 
 {% block content %}
+    {{ modal_toggle_setup() }}
+
     <h1>Modal in default mode</h1>
     {% set example %}
 

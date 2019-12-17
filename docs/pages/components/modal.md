@@ -17,36 +17,26 @@ It is used for short forms, confirmation messages or to display contextual infor
 
 ## Modal structure
 Modal consists of following elements:
-<table class="docs-table">
-    <tbody>
-        <tr>
-            <td>Modal</td>
-            <td><code style="white-space:nowrap;">.fd-modal</code></td>
-            <td>Wraps modal and displays it with <code style="white-space:nowrap;">position: fixed</code>. By default modal is hidden by <code style="white-space:nowrap;">display: none</code>. Modal can be made visible by applying <code style="white-space:nowrap;">.fd-modal--active</code> class.</td>
-        </tr>
-        <tr>
-            <td>Dialog</td>
-            <td><code style="white-space:nowrap;">.fd-modal__content</code></td>
-            <td>Element representing modals dialog window.</td>
-        </tr>
-        <tr>
-            <td>Header</td>
-            <td><code style="white-space:nowrap;">.fd-modal__header</code></td>
-            <td>Header placed at the top of the component includes title of the modal styled with <code style="white-space:nowrap;">.fd-modal__title</code>
-                and a button styled with <code style="white-space:nowrap;">.fd-modal__close</code> used for closing the modal.</td>
-        </tr>
-        <tr>
-            <td>Body</td>
-            <td><code style="white-space:nowrap;">.fd-modal__body</code></td>
-            <td>Main container holding modals content</td>
-        </tr>
-        <tr>
-            <td>Footer</td>
-            <td><code style="white-space:nowrap;">.fd-modal__footer</code></td>
-            <td>Footer placed at the bottom of the component. Contains modals buttons.</td>
-        </tr>
-    </tbody>
-</table>
+<ul>
+    <li><code>.fd-modal</code>: Wraps modal and displays it with <code>position: fixed</code>. Modal can be made visible by applying <code style="white-space:nowrap;">.fd-modal--active</code> class
+        <ul>
+            <li><code>.fd-modal__content</code>: Modal dialog window
+                <ul>
+                    <li><code>.fd-modal__header</code>: Header
+                        <ul>
+                            <li><code>.fd-modal__title</code>: Modal title</li>
+                            <li><code>.fd-modal__close</code>: Modal close button</li> 
+                        </ul>
+                    </li>
+                    <li><code>.fd-modal__body</code>: Modal content</li>
+                    <li><code>.fd-modal__footer</code>: Modal footer</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<br>
 
 {% capture modal-anatomy %}
     <div class="fd-modal fd-modal--active" style="position: static; background-color: transparent;">
