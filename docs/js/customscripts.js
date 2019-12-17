@@ -30,7 +30,7 @@ $(document).ready(function () {
             var isAlert = this.parentElement.getAttribute("role") === "alert";
             if (isAlert) {
                 //remove or hide if we want some animation
-                target.remove();
+                $(target).remove();
                 return;
             }
             //dropdown
