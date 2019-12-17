@@ -4,16 +4,8 @@
 @import "./overlay.scss";
 
 /*!
-  .fd-modal
-  .fd-modal--active
-    .fd-modal__content
-    .fd-modal__content--s
-    .fd-modal__content--m
-    .fd-modal__content--l
-    .fd-modal__content--xl
-    .fd-modal__content--xxl
-    .fd-modal__content--compact
-    .fd-modal__content--resizable
+  .fd-modal+(--active)
+    .fd-modal__content+(--s, --m, --l, --xl, --xxl, --compact, --resizable)
       .fd-modal__header
         .fd-modal__title
         .fd-modal__close

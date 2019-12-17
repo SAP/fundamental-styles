@@ -2,8 +2,22 @@
 modal:
     properties={},
 -->
+
+{%- macro modal_toggle_setup()%}
+    <script>
+        function modal_toggle(baseId, show) {
+            const modal = document.getElementById(baseId);
+            if (show) {
+                modal.classList.add("fd-modal--active");
+            } else {
+                modal.classList.remove("fd-modal--active");
+            }
+        }
+    </script>
+{%- endmacro %}
+
 {% macro modal(properties={}) %}
-    <div class="fd-modal {% if not properties.toggleable %} fd-modal--active {% endif %}"
+    <div class="fd-modal{% if not properties.toggleable %} fd-modal--active{% endif %}"
             {% if not properties.toggleable %} style="position: static; background-color: transparent;"{% endif %}
          id="{% if properties.id %}{{ properties.id }}{% else %}example-modal{% endif %}"
          role="dialog">
@@ -17,8 +31,7 @@ modal:
 
             <header class="fd-modal__header">
                 <h1 class="fd-modal__title">{{ properties.header }}</h1>
-                <button class="btn-playground fd-modal__close"
-                        onclick="modal_toggle('{{ properties.id }}', false)">
+                <button class="btn-playground fd-modal__close" {% if properties.toggleable %}onclick="modal_toggle('{{ properties.id }}', false)"{% endif %}>
                 </button>
             </header>
 
@@ -36,18 +49,6 @@ modal:
     </div>
 
     {% if properties.toggleable %}
-        <script>
-            function modal_toggle(baseId, show) {
-                console.log(baseId, show);
-                const modal = document.getElementById(baseId);
-                if (show) {
-                    modal.classList.add("fd-modal--active");
-                } else {
-                    modal.classList.remove("fd-modal--active");
-                }
-            }
-        </script>
-
         <button type="button"
                 onclick="modal_toggle('{{ properties.id }}', true)">
             Open modal
