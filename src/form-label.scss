@@ -8,24 +8,7 @@
 $block: #{$fd-namespace}-form-label;
 
 .#{$block} {
-  @include fd-reset();
-  @include fd-ellipsis();
-
-  width: fit-content;
-  position: relative;
-  max-width: 100%;
-  font-size: var(--sapFontSize);
-  color: var(--sapContent_LabelColor);
-  padding-right: 6px;
-  margin-right: 8px;
-  cursor: text;
-
-  @include fd-rtl() {
-    padding-left: 6px;
-    padding-right: 0;
-    margin-left: 8px;
-    margin-right: 0;
-  }
+  @include fd-form-label();
 
   &.is-disabled {
     opacity: 0.4;
@@ -62,13 +45,6 @@ $block: #{$fd-namespace}-form-label;
     .#{$fd-namespace}-inline-help {
       top: 0;
     }
-  }
-
-  &--checkbox,
-  &--radio {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
   }
 
   &--toggle {

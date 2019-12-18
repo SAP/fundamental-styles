@@ -12,195 +12,134 @@ $fd-checkbox-dimensions-compact: 1rem;
 $fd-checkbox-margin: 0.6875rem;
 $fd-checkbox-margin-compact: 0.5rem;
 
+%fd-checkbox-input-hidden {
+  position: absolute;
+  opacity: 0.0001;
+}
+
 .#{$block} {
+  @mixin fd-checkbox-state($background-color, $text-color, $border-color, $border-size) {
+    + .#{$block}__label {
+      &::before {
+        background-color: $background-color;
+        border: $border-size solid $border-color;
+        color: $text-color;
+      }
+
+      @include fd-hover() {
+        @include fd-disabled() {
+          border-color: $border-color;
+        }
+      }
+    }
+  }
+
   @include fd-form-base();
   @include action-cursor();
 
-  height: $fd-checkbox-dimensions;
-  width: $fd-checkbox-dimensions;
-  margin: $fd-checkbox-margin;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--sapField_Background);
-  border: var(--sapField_BorderWidth) solid var(--sapField_BorderColor);
-  border-radius: var(--sapField_BorderCornerRadius);
-  color: var(--sapSelectedColor);
+  @extend %fd-checkbox-input-hidden;
 
-  &::after {
-    font-family: "SAP-icons";
-    font-style: normal;
-    font-weight: normal;
-    font-size: var(--sapFontLargeSize);
-    content: "";
-  }
+  &__label {
+    @include fd-form-label();
 
-  &:checked {
-    &::after {
-      content: "\e05b";
-    }
-  }
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 
-  &:indeterminate {
-    &::after {
+    &::before {
       content: "";
-      display: inline-block;
-      width: 0.75rem;
-      height: 0.75rem;
-      background-color: var(--sapSelectedColor);
-    }
-  }
-
-  @include fd-form-radio-focus($fd-checkbox-margin);
-
-  &--compact {
-    height: $fd-checkbox-dimensions-compact;
-    width: $fd-checkbox-dimensions-compact;
-    margin: $fd-checkbox-margin-compact;
-
-    &::after {
-      font-size: 0.625rem;
+      height: $fd-checkbox-dimensions;
+      width: $fd-checkbox-dimensions;
+      font-size: var(--sapFontLargeSize);
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "SAP-icons";
+      background-color: var(--sapField_Background);
+      margin: $fd-checkbox-margin;
+      color: var(--sapSelectedColor);
+      border: var(--sapField_BorderWidth) solid var(--sapField_BorderColor);
+      border-radius: var(--sapField_BorderCornerRadius);
+      font-style: normal;
+      font-weight: normal;
     }
 
-    &:indeterminate {
-      &::after {
-        width: 0.5rem;
-        height: 0.5rem;
+    @include fd-hover() {
+      &::before {
+        background-color: var(--sapField_Hover_Background);
+        border-color: var(--sapField_Hover_BorderColor);
       }
     }
+  }
 
-    @include fd-form-radio-focus($fd-checkbox-margin-compact);
+  &:checked + .#{$block}__label::before {
+    content: "\e05b";
+  }
+
+  &:indeterminate + .#{$block}__label::before {
+    padding-bottom: 0.0625rem;
+    content: "\e17b";
+    font-size: 0.75rem;
+  }
+
+  &:indeterminate + .#{$block}__label--compact::before {
+    content: "\e17b";
+    padding-bottom: 0;
+    font-size: 0.5rem;
   }
 
   // states
-  @include fd-hover() {
-    background-color: var(--sapField_Hover_Background);
-    border-color: var(--sapField_Hover_BorderColor);
-
-    @include fd-disabled() {
-      border-color: var(--sapField_BorderColor);
-    }
+  &.is-warning,
+  &.is-alert {
+    @include fd-checkbox-state(var(--sapField_WarningBackground), var(--sapField_TextColor), var(--sapField_WarningColor), 0.125rem);
   }
 
   &.is-invalid {
-    background-color: var(--sapField_InvalidBackground);
-    border: 0.125rem solid var(--sapField_InvalidColor);
-
-    &:checked {
-      &::after {
-        color: var(--sapField_InvalidColor);
-      }
-    }
-
-    &:indeterminate {
-      &::after {
-        background-color: var(--sapField_InvalidColor);
-      }
-    }
-
-    @include fd-hover() {
-      @include fd-disabled() {
-        border-color: var(--sapField_InvalidColor);
-      }
-    }
+    @include fd-checkbox-state(var(--sapField_InvalidBackground), var(--sapField_InvalidColor), var(--sapField_InvalidColor), 0.125rem);
   }
 
   &.is-valid {
-    background-color: var(--sapField_SuccessBackground);
-    border: var(--sapField_BorderWidth) solid var(--sapField_SuccessColor);
-
-    &:checked {
-      &::after {
-        color: var(--sapField_SuccessColor);
-      }
-    }
-
-    &:indeterminate {
-      &::after {
-        background-color: var(--sapField_SuccessColor);
-      }
-    }
-
-    @include fd-hover() {
-      @include fd-disabled() {
-        border-color: var(--sapField_SuccessColor);
-      }
-    }
-  }
-
-  &.is-warning,
-  &.is-alert {
-    background-color: var(--sapField_WarningBackground);
-    border: 0.125rem solid var(--sapField_WarningColor);
-
-    &:checked {
-      &::after {
-        color: var(--sapField_TextColor);
-      }
-    }
-
-    &:indeterminate {
-      &::after {
-        background-color: var(--sapField_TextColor);
-      }
-    }
-
-    @include fd-hover() {
-      @include fd-disabled() {
-        border-color: var(--sapField_WarningColor);
-      }
-    }
+    @include fd-checkbox-state(var(--sapField_SuccessBackground), var(--sapField_SuccessColor), var(--sapField_SuccessColor), var(--sapField_BorderWidth));
   }
 
   &.is-information {
-    background-color: var(--sapField_InformationBackground);
-    border: 0.125rem solid var(--sapField_InformationColor);
-
-    &:checked {
-      &::after {
-        color: var(--sapField_InformationColor);
-      }
-    }
-
-    &:indeterminate {
-      &::after {
-        background-color: var(--sapField_InformationColor);
-      }
-    }
-
-    @include fd-hover() {
-      @include fd-disabled() {
-        border-color: var(--sapField_InformationColor);
-      }
-    }
+    @include fd-checkbox-state(var(--sapField_InformationBackground), var(--sapField_InformationColor), var(--sapField_InformationColor), 0.125rem);
   }
 
   &[readonly],
   &.is-readonly {
-    background-color: var(--sapField_ReadOnly_Background);
-    border-color: var(--sapField_ReadOnly_BorderColor);
-    pointer-events: none;
-
-    &:checked {
-      &::after {
-        color: var(--sapContent_NonInteractiveIconColor);
-      }
-    }
-
-    &:indeterminate {
-      &::after {
-        background-color: var(--sapContent_NonInteractiveIconColor);
-      }
-    }
+    @include fd-checkbox-state(var(--sapField_ReadOnly_Background), var(--sapContent_NonInteractiveIconColor), var(--sapField_ReadOnly_BorderColor), var(--sapField_BorderWidth));
   }
 
   @include fd-focus() {
-    outline: none;
-    box-shadow: none;
+    + .#{$block}__label {
+      @include fd-form-radio-focus($fd-checkbox-margin);
+    }
   }
 
   @include fd-disabled() {
-    pointer-events: none;
-    opacity: 0.4;
+    opacity: 0.0001;
+
+    + .#{$block}__label {
+      pointer-events: none;
+      opacity: 0.4;
+    }
+  }
+
+  &--compact {
+    + .#{$block}__label {
+      &::before {
+        font-size: 0.625rem;
+        height: $fd-checkbox-dimensions-compact;
+        width: $fd-checkbox-dimensions-compact;
+        margin: $fd-checkbox-margin-compact;
+      }
+    }
+
+    @include fd-focus() {
+      + .#{$block}__label {
+        @include fd-form-radio-focus($fd-checkbox-margin-compact);
+      }
+    }
   }
 }
