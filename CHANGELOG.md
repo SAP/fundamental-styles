@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.0-rc.35"></a>
+# [0.4.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.34...v0.4.0-rc.35) (2019-12-18)
+
+
+### Bug Fixes
+
+* change addon color, remove textareas with addons ([#522](https://github.com/SAP/fundamental-styles/issues/522)) ([e805b15](https://github.com/SAP/fundamental-styles/commit/e805b15))
+
+
+
 <a name="0.4.0-rc.34"></a>
 # [0.4.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.33...v0.4.0-rc.34) (2019-12-18)
 
