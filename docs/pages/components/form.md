@@ -81,7 +81,7 @@ Do not use the input field if:
     <br />
     <div class="fd-form-item">
         <label class="fd-form-label" for="input-05">Disabled Input:</label>
-        <input class="fd-input is-disabled" type="text" id="input-05" disabled placeholder="Field placeholder text">
+        <input class="fd-input" type="text" id="input-05" disabled placeholder="Field placeholder text">
     </div>
     <br />
     <br />
