@@ -86,6 +86,7 @@
 
   &[readonly],
   &.is-readonly {
+    background-color: rgba(242, 242, 242, 0.5); // Hardcoded for IE11 Purposes, there is not callback for RGBA.
     background-color: var(--sapField_ReadOnly_Background);
     border-color: var(--sapField_ReadOnly_BorderColor);
 
