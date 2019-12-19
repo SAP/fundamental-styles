@@ -9,6 +9,6 @@
 $block: #{$fd-namespace}-form-input-message-group;
 
 .#{$block} {
-  flex: 1;
+  display: flex;
   position: relative;
 }
