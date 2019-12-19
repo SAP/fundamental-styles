@@ -21,7 +21,7 @@ $fd-radio-inner-circle-diameter-compact: 0.375rem;
 }
 
 .#{$block} {
-  @mixin fd-checkbox-state($background-color, $text-color, $border-color, $border-size) {
+  @mixin fd-radio-state($background-color, $text-color, $border-color, $border-size) {
     + .#{$block}__label {
       &::before {
         background-color: $background-color;
@@ -53,7 +53,7 @@ $fd-radio-inner-circle-diameter-compact: 0.375rem;
       content: "";
       height: $fd-radio-outer-circle-diameter;
       width: $fd-radio-outer-circle-diameter;
-      font-size: 0.625rem;
+      font-size: 0.6875rem;
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -82,24 +82,24 @@ $fd-radio-inner-circle-diameter-compact: 0.375rem;
   // states
   &.is-warning,
   &.is-alert {
-    @include fd-checkbox-state(var(--sapField_WarningBackground), var(--sapField_TextColor), var(--sapField_WarningColor), 0.125rem);
+    @include fd-radio-state(var(--sapField_WarningBackground), var(--sapField_TextColor), var(--sapField_WarningColor), 0.125rem);
   }
 
   &.is-invalid {
-    @include fd-checkbox-state(var(--sapField_InvalidBackground), var(--sapField_InvalidColor), var(--sapField_InvalidColor), 0.125rem);
+    @include fd-radio-state(var(--sapField_InvalidBackground), var(--sapField_InvalidColor), var(--sapField_InvalidColor), 0.125rem);
   }
 
   &.is-valid {
-    @include fd-checkbox-state(var(--sapField_SuccessBackground), var(--sapField_SuccessColor), var(--sapField_SuccessColor), var(--sapField_BorderWidth));
+    @include fd-radio-state(var(--sapField_SuccessBackground), var(--sapField_SuccessColor), var(--sapField_SuccessColor), var(--sapField_BorderWidth));
   }
 
   &.is-information {
-    @include fd-checkbox-state(var(--sapField_InformationBackground), var(--sapField_InformationColor), var(--sapField_InformationColor), 0.125rem);
+    @include fd-radio-state(var(--sapField_InformationBackground), var(--sapField_InformationColor), var(--sapField_InformationColor), 0.125rem);
   }
 
   &[readonly],
   &.is-readonly {
-    @include fd-checkbox-state(var(--sapField_ReadOnly_Background), var(--sapContent_NonInteractiveIconColor), var(--sapField_ReadOnly_BorderColor), var(--sapField_BorderWidth));
+    @include fd-radio-state(var(--sapField_ReadOnly_Background), var(--sapContent_NonInteractiveIconColor), var(--sapField_ReadOnly_BorderColor), var(--sapField_BorderWidth));
   }
 
   @include fd-focus() {
@@ -120,7 +120,7 @@ $fd-radio-inner-circle-diameter-compact: 0.375rem;
   &--compact {
     + .#{$block}__label {
       &::before {
-        font-size: 0.375rem;
+        font-size: 0.4375rem;
         height: $fd-radio-outer-circle-diameter-compact;
         width: $fd-radio-outer-circle-diameter-compact;
         margin: $fd-radio-outer-circle-margin-compact;

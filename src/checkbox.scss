@@ -79,13 +79,13 @@ $fd-checkbox-margin-compact: 0.5rem;
   &:indeterminate + .#{$block}__label::before {
     padding-bottom: 0.0625rem;
     content: "\e17b";
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
 
   &:indeterminate + .#{$block}__label--compact::before {
     content: "\e17b";
     padding-bottom: 0;
-    font-size: 0.5rem;
+    font-size: 0.5625rem;
   }
 
   // states
