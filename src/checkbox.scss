@@ -7,11 +7,6 @@
 */
 $block: #{$fd-namespace}-checkbox;
 
-$fd-checkbox-dimensions: 1.375rem;
-$fd-checkbox-dimensions-compact: 1rem;
-$fd-checkbox-margin: 0.6875rem;
-$fd-checkbox-margin-compact: 0.5rem;
-
 %fd-checkbox-input-hidden {
   position: absolute;
   opacity: 0.0001;
@@ -34,17 +29,21 @@ $fd-checkbox-margin-compact: 0.5rem;
     }
   }
 
+  $fd-checkbox-dimensions: 1.375rem;
+  $fd-checkbox-dimensions-compact: 1rem;
+  $fd-checkbox-margin: 0.6875rem;
+  $fd-checkbox-margin-compact: 0.5rem;
+
   @include fd-form-base();
-  @include action-cursor();
 
   @extend %fd-checkbox-input-hidden;
 
   &__label {
     @include fd-form-label();
+    @include action-cursor();
 
     display: flex;
     align-items: center;
-    cursor: pointer;
 
     &::before {
       content: "";
@@ -60,8 +59,6 @@ $fd-checkbox-margin-compact: 0.5rem;
       color: var(--sapSelectedColor);
       border: var(--sapField_BorderWidth) solid var(--sapField_BorderColor);
       border-radius: var(--sapField_BorderCornerRadius);
-      font-style: normal;
-      font-weight: normal;
     }
 
     @include fd-hover() {
