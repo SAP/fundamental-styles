@@ -233,5 +233,19 @@ $(document).ready(function () {
                 break;
         }
     }
-
 });
+
+function stepInputValue(inputId, stepDirection) {
+    let inputRef = document.getElementById(inputId);
+
+    if (inputRef) {
+        if(stepDirection === "up") {
+            ++inputRef.value;
+        } else if (stepDirection === "down") {
+            --inputRef.value;
+        }
+    } else {
+        console.warn("No element with id='" + inputId + "' found");
+    }
+}
+
