@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.0-rc.36"></a>
+# [0.4.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.35...v0.4.0-rc.36) (2019-12-19)
+
+
+### Bug Fixes
+
+* input-group-pickers ([#539](https://github.com/SAP/fundamental-styles/issues/539)) ([6872819](https://github.com/SAP/fundamental-styles/commit/6872819))
+
+
+
 <a name="0.4.0-rc.35"></a>
 # [0.4.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.34...v0.4.0-rc.35) (2019-12-18)
 
