@@ -11,10 +11,13 @@ $block: #{$fd-namespace}-input-group;
 
 $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
-%fd-input-group-focus {
-  box-shadow: none;
-  outline-offset: -0.1875rem;
-  outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+@mixin fd-input-group-focus() {
+  @include fd-focus() {
+    box-shadow: none;
+    outline-offset: -0.1875rem;
+    outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+    @content;
+  }
 }
 
 .#{$block} {
@@ -30,12 +33,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
   // states
   @include fd-form-states();
-
-  @include fd-focus() {
-    box-shadow: none;
-
-    @extend %fd-input-group-focus;
-  }
+  @include fd-input-group-focus();
 
   > * {
     &:first-child {

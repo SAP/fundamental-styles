@@ -263,6 +263,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
 ## Focus
 
 The Input Group supports **focus** state, it can be added by putting `.is-focus` class to component.
+{% capture focus %}
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Default</label>
     <div class="fd-input-group is-focus">
@@ -280,60 +281,9 @@ The Input Group supports **focus** state, it can be added by putting `.is-focus`
         </span>
     </div>
 </div>
-
-
-## Textareas
-
-{% capture button-addon %}
-<div class="fd-form-item">
-    <label class="fd-form-label" for="">Textarea with text add-on</label>
-    <div class="fd-input-group">
-        <textarea class="fd-textarea fd-input-group__input" id=""></textarea>
-        <span class="fd-input-group__addon">
-            km/h
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="">Textarea with action</label>
-    <div class="fd-input-group">
-        <textarea class="fd-textarea fd-input-group__input" id=""></textarea>
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--light">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="">Compact textarea with action</label>
-    <div class="fd-input-group is-valid">
-        <textarea class="fd-textarea fd-textarea--compact fd-input-group__input" id=""></textarea>
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--light">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="">Compact textarea with action</label>
-    <div class="fd-input-group is-invalid">
-        <textarea class="fd-textarea fd-textarea--compact fd-input-group__input" id=""></textarea>
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--light">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
 {% endcapture %}
 
-{% include display-component.html component=button-addon %}
-
+{% include display-component.html component=focus %}
 
 ## Number input
 
