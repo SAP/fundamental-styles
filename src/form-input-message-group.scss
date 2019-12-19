@@ -10,5 +10,6 @@ $block: #{$fd-namespace}-form-input-message-group;
 
 .#{$block} {
   display: flex;
+  flex-grow: 1;
   position: relative;
 }
