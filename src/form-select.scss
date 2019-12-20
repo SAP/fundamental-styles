@@ -28,6 +28,10 @@ $block: #{$fd-namespace}-form-select;
     padding-left: $fd-forms-padding + $fd-forms-select-width--background-image;
   }
 
+  &::-ms-expand {
+    display: none;
+  }
+
   &:focus,
   &:hover {
     background-image: url(#{$fd-forms-select-background-image});
