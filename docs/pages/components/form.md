@@ -93,18 +93,12 @@ Do not use the input field if:
     <br />
     <div class="fd-form-item fd-form-item--horizontal fd-has-margin-none fd-popover">
         <label class="fd-form-label" for="input-1">Default input:</label>
-        <div class="fd-form-input-message-group">
-            <input class="fd-input fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD1" aria-expanded="false" aria-haspopup="true">
-            <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message" aria-hidden="true" id="popoverD1">Normal message</span>
-        </div>
+            <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label">
     </div>
     <br><br>
     <div class="fd-form-item fd-form-item--horizontal fd-has-margin-none fd-popover">
         <label class="fd-form-label" for="input-1">Compact input:</label>
-        <div class="fd-form-input-message-group">
-            <input class="fd-input fd-input--compact fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverD2" aria-expanded="false" aria-haspopup="true">
-            <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--compact" aria-hidden="true" id="popoverD2">Normal message</span>
-        </div>
+            <input class="fd-input fd-input--compact" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label">
     </div>
     <br /><br />
     <div class="fd-form-item fd-form-item--horizontal">
@@ -168,10 +162,7 @@ Along with Invalid and Warning, error messages should be displayed below the fie
 {% capture inputs %}
 <div class="fd-form-item fd-has-margin-none fd-popover">
     <label class="fd-form-label" for="input-1">Normal input:</label>
-    <div class="fd-form-input-message-group">
-        <input class="fd-input fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverB1" aria-expanded="false" aria-haspopup="true">
-        <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message" aria-hidden="true" id="popoverB1">Normal message</span>
-    </div>
+    <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label">
 </div>
 <br />
 <br />
@@ -232,40 +223,6 @@ Along with Invalid and Warning, error messages should be displayed below the fie
     <label class="fd-form-label" for="input-7">Read Only Input:</label>
     <input class="fd-input" type="text" id="input-7" value="Read only data" readonly>
 </div>
-
-<br />
-<br />
-
-<div class="fd-form-item fd-has-margin-none fd-popover" dir="rtl">
-    <label class="fd-form-label" for="input-1">Normal input:</label>
-    <div class="fd-form-input-message-group">
-        <input class="fd-input fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverC1" aria-expanded="false" aria-haspopup="true">
-        <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message" aria-hidden="true" id="popoverC1">Normal message</span>
-    </div>
-</div>
-<br />
-<br />
-
-<div class="fd-form-item fd-has-margin-none fd-popover" dir="rtl">
-    <label class="fd-form-label" for="input-1">Valid input:</label>
-    <div class="fd-form-input-message-group">
-        <input class="fd-input is-valid fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverC2" aria-expanded="false" aria-haspopup="true">
-        <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--success" aria-hidden="true" id="popoverC2">Success message</span>
-    </div>
-</div>
-
-<br />
-<br />
-
-<div class="fd-form-item fd-form-item--horizontal fd-has-margin-none fd-popover" dir="rtl">
-    <label class="fd-form-label" for="input-1">Normal input:</label>
-    <div class="fd-form-input-message-group">
-        <input class="fd-input fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverC3" aria-expanded="false" aria-haspopup="true">
-        <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message" aria-hidden="true" id="popoverC3">Normal message</span>
-    </div>
-</div>
-<br />
-<br />
 {% endcapture %}
 
 {% include display-component.html component=inputs %}

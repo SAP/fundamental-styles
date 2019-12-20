@@ -4,27 +4,27 @@
 
 {% block content %}
 
-<h3>Default</h3>
+<h3>Success</h3>
 {% set example %}
-    <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message" aria-hidden="true" id="popoverD1">Normal message</span>
+    <span class="fd-form-message fd-form-message--success">Success message</span>
 {% endset %}
 {{ format(example) }}
 
 <h3>Error</h3>
 {% set example %}
-    <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--error" aria-hidden="true" id="popoverD1">Normal message</span>
+    <span class="fd-form-message fd-form-message--error" >Error message</span>
 {% endset %}
 {{ format(example) }}
 
 <h3>Warning</h3>
 {% set example %}
-    <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--warning" aria-hidden="true" id="popoverD1">Normal message</span>
+    <span class="fd-form-message fd-form-message--warning">Warning message</span>
 {% endset %}
 {{ format(example) }}
 
 <h3>Information </h3>
 {% set example %}
-    <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--information" aria-hidden="true" id="popoverD1">Normal message</span>
+    <span class="fd-form-message fd-form-message--information">Information message</span>
 {% endset %}
 {{ format(example) }}
 
