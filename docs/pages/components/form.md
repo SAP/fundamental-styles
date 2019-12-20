@@ -375,23 +375,23 @@ In special cases, there are only two mutually exclusive options. Combine them in
 - The options are numbers with fixed steps. Use a slider control.
 
 {% capture radio-buttons%}
-<fieldset class="fd-fieldset">
+<fieldset class="fd-fieldset" id="radio1">
     <legend class="fd-fieldset__legend">Radio Buttons Cozy Mode</legend>
     <div class="fd-form__group">
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio" id="pDidh761" name="radio" checked>
+            <input type="radio" class="fd-radio" id="pDidh761" name="radio1" checked>
             <label class="fd-radio__label" for="pDidh761">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio" id="pDidh7612" name="radio">
+            <input type="radio" class="fd-radio" id="pDidh7612" name="radio1">
             <label class="fd-radio__label" for="pDidh7612">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio" id="pDidh7613" name="radio">
+            <input type="radio" class="fd-radio" id="pDidh7613" name="radio1">
             <label class="fd-radio__label" for="pDidh7613">
                 Field label
             </label>
@@ -399,23 +399,23 @@ In special cases, there are only two mutually exclusive options. Combine them in
     </div>
 </fieldset>
 <br /><br />
-<fieldset class="fd-fieldset">
+<fieldset class="fd-fieldset" id="radio2">
     <legend class="fd-fieldset__legend">Radio Buttons Compact Mode</legend>
     <div class="fd-form-group">
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio fd-radio--compact" id="pDidh76111" name="radio" checked>
+            <input type="radio" class="fd-radio fd-radio--compact" id="pDidh76111" name="radio2" checked>
             <label class="fd-radio__label" for="pDidh76111">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio fd-radio--compact" id="pDidh761211" name="radio">
+            <input type="radio" class="fd-radio fd-radio--compact" id="pDidh761211" name="radio2">
             <label class="fd-radio__label" for="pDidh761211">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio fd-radio--compact" id="pDidh761311" name="radio">
+            <input type="radio" class="fd-radio fd-radio--compact" id="pDidh761311" name="radio2">
             <label class="fd-radio__label" for="pDidh761311">
                 Field label
             </label>
@@ -423,23 +423,23 @@ In special cases, there are only two mutually exclusive options. Combine them in
     </div>
 </fieldset>
 <br /><br />
-<fieldset class="fd-fieldset">
+<fieldset class="fd-fieldset" id="radio3">
     <legend class="fd-fieldset__legend">Radio buttons Disabled</legend>
     <div class="fd-form-group">
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio" id="pDidh764" name="radio" disabled>
+            <input type="radio" class="fd-radio" id="pDidh764" name="radio3" disabled>
             <label class="fd-radio__label" for="pDidh764">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio" id="pDidh7615" name="radio" disabled>
+            <input type="radio" class="fd-radio" id="pDidh7615" name="radio3" disabled>
             <label class="fd-radio__label" for="pDidh7615">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio" id="pDidh7616" name="radio" disabled>
+            <input type="radio" class="fd-radio" id="pDidh7616" name="radio3" disabled>
             <label class="fd-radio__label" for="pDidh7616">
                 Field label
             </label>
@@ -447,23 +447,23 @@ In special cases, there are only two mutually exclusive options. Combine them in
     </div>
 </fieldset>
 <br /><br />
-<fieldset class="fd-fieldset">
+<fieldset class="fd-fieldset" id="radio4">
     <legend class="fd-fieldset__legend">Inline Radio buttons</legend>
         <div class="fd-form-group fd-form-group--inline">
             <div class="fd-form-group__item fd-form-item">
-                <input type="radio" class="fd-radio" id="pDidh767" name="radio">
+                <input type="radio" class="fd-radio" id="pDidh767" name="radio4" checked>
                 <label class="fd-radio__label" for="pDidh767">
                     Field label
                 </label>
             </div>
             <div class="fd-form-group__item fd-form-item">
-                <input type="radio" class="fd-radio" id="pDidh7618" name="radio" >
+                <input type="radio" class="fd-radio" id="pDidh7618" name="radio4" >
                 <label class="fd-radio__label" for="pDidh7618">
                     Field label
                 </label>
             </div>
             <div class="fd-form-group__item fd-form-item">
-                <input type="radio" class="fd-radio" id="pDidh7619" name="radio">
+                <input type="radio" class="fd-radio" id="pDidh7619" name="radio4">
                 <label class="fd-radio__label" for="pDidh7619">
                     Field label
                 </label>
@@ -471,35 +471,35 @@ In special cases, there are only two mutually exclusive options. Combine them in
         </div>
 </fieldset>
 <br /><br />
-<fieldset class="fd-fieldset">
+<fieldset class="fd-fieldset" id="radio5">
     <legend class="fd-fieldset__legend">Interaction States</legend>
     <div class="fd-form-group">
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio" id="iSpDidh761" name="radio" checked>
+            <input type="radio" class="fd-radio" id="iSpDidh761" name="radio5" checked>
             <label class="fd-radio__label" for="iSpDidh761">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio is-valid" id="iSpDidh7612" name="radio">
+            <input type="radio" class="fd-radio is-valid" id="iSpDidh7612" name="radio5">
             <label class="fd-radio__label" for="iSpDidh7612">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio is-invalid" id="iSpDidh7613" name="radio">
+            <input type="radio" class="fd-radio is-invalid" id="iSpDidh7613" name="radio5">
             <label class="fd-radio__label" for="iSpDidh7613">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio is-warning" id="iSpDidh7614" name="radio">
+            <input type="radio" class="fd-radio is-warning" id="iSpDidh7614" name="radio5">
             <label class="fd-radio__label" for="iSpDidh7614">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio is-information" id="iSpDidh7615" name="radio">
+            <input type="radio" class="fd-radio is-information" id="iSpDidh7615" name="radio5">
             <label class="fd-radio__label" for="iSpDidh7615">
                 Field label
             </label>
@@ -507,35 +507,35 @@ In special cases, there are only two mutually exclusive options. Combine them in
     </div>
 </fieldset>
 <br /><br />
-<fieldset class="fd-fieldset">
+<fieldset class="fd-fieldset" id="radio6">
     <legend class="fd-fieldset__legend">Interaction States Compact Mode</legend>
     <div class="fd-form-group">
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio fd-radio--compact" id="iSpDidh7619" name="radio" checked>
+            <input type="radio" class="fd-radio fd-radio--compact" id="iSpDidh7619" name="radio6" checked>
             <label class="fd-radio__label" for="iSpDidh7619">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio fd-radio--compact is-valid" id="iSpDidh76129" name="radio">
+            <input type="radio" class="fd-radio fd-radio--compact is-valid" id="iSpDidh76129" name="radio6">
             <label class="fd-radio__label" for="iSpDidh76129">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio fd-radio--compact is-invalid" id="iSpDidh76139" name="radio">
+            <input type="radio" class="fd-radio fd-radio--compact is-invalid" id="iSpDidh76139" name="radio6">
             <label class="fd-radio__label" for="iSpDidh76139">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio fd-radio--compact is-warning" id="iSpDidh76149" name="radio">
+            <input type="radio" class="fd-radio fd-radio--compact is-warning" id="iSpDidh76149" name="radio6">
             <label class="fd-radio__label" for="iSpDidh76149">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio fd-radio--compact is-information" id="iSpDidh76159" name="radio">
+            <input type="radio" class="fd-radio fd-radio--compact is-information" id="iSpDidh76159" name="radio6">
             <label class="fd-radio__label" for="iSpDidh76159">
                 Field label
             </label>
@@ -543,33 +543,33 @@ In special cases, there are only two mutually exclusive options. Combine them in
     </div>
 </fieldset>
 <br /><br />
-<fieldset class="fd-fieldset">
+<fieldset class="fd-fieldset" id="radio7">
     <legend class="fd-fieldset__legend">Interaction States Compact Mode Disabled</legend>
     <div class="fd-form-group">
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio fd-radio--compact" id="iSpDidh7619d" name="radio" disabled>
+            <input type="radio" class="fd-radio fd-radio--compact" id="iSpDidh7619d" name="radio7" disabled>
             <label class="fd-radio__label" for="iSpDidh7619d">Field label</label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio fd-radio--compact is-valid" id="iSpDidh76129d" name="radio" disabled>
+            <input type="radio" class="fd-radio fd-radio--compact is-valid" id="iSpDidh76129d" name="radio7" disabled>
             <label class="fd-radio__label" for="iSpDidh76129d">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio fd-radio--compact is-invalid" id="iSpDidh76139d" name="radio" disabled>
+            <input type="radio" class="fd-radio fd-radio--compact is-invalid" id="iSpDidh76139d" name="radio7" disabled>
             <label class="fd-radio__label" for="iSpDidh76139d">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio fd-radio--compact is-warning" id="iSpDidh76149d" name="radio" disabled>
+            <input type="radio" class="fd-radio fd-radio--compact is-warning" id="iSpDidh76149d" name="radio7" disabled>
             <label class="fd-radio__label" for="iSpDidh76149d">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio fd-radio--compact is-information" id="iSpDidh76159d" name="radio" disabled>
+            <input type="radio" class="fd-radio fd-radio--compact is-information" id="iSpDidh76159d" name="radio7" disabled>
             <label class="fd-radio__label" for="iSpDidh76159d">
                 Field label
             </label>
