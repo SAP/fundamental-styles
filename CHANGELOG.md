@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.0-rc.39"></a>
+# [0.4.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.38...v0.4.0-rc.39) (2019-12-20)
+
+
+### Bug Fixes
+
+* Remove flex property from input-message-group IE11 ([#542](https://github.com/SAP/fundamental-styles/issues/542)) ([faf875b](https://github.com/SAP/fundamental-styles/commit/faf875b))
+
+
+
 <a name="0.4.0-rc.38"></a>
 # [0.4.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.37...v0.4.0-rc.38) (2019-12-20)
 
