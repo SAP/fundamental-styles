@@ -79,6 +79,7 @@ $block: #{$fd-namespace}-product-switch;
       padding: 1rem;
       text-align: left;
       border-radius: 0;
+      flex-basis: auto;
 
       &.selected {
         border: none;
@@ -394,6 +395,7 @@ $block: #{$fd-namespace}-product-switch;
     @include fd-reset();
 
     @include fd-flex() {
+      align-self: stretch;
       align-items: center;
       justify-content: center;
     }
