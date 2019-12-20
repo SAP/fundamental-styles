@@ -150,6 +150,13 @@
     right: $fd-radio-label-padding - $fd-radio-focus-offset;
     @content;
   }
+
+  @include fd-rtl() {
+    &::after {
+      left: $fd-radio-label-padding - $fd-radio-focus-offset;
+      right: $margin - $fd-radio-focus-offset;
+    }
+  }
 }
 
 @mixin fd-form-label() {
