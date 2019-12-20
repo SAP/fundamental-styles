@@ -155,7 +155,7 @@
   @include fd-reset();
   @include fd-ellipsis();
 
-  align-self: flex-start;
+  width: fit-content;
   position: relative;
   max-width: 100%;
   font-size: var(--sapFontSize);
