@@ -136,7 +136,7 @@
 }
 
 @mixin fd-form-radio-focus($margin) {
-  $fd-radio-label-padding: 0.3125rem;
+  $fd-radio-label-padding: 0;
   $fd-radio-focus-offset: 0.125rem;
 
   &::after {
@@ -155,7 +155,7 @@
   @include fd-reset();
   @include fd-ellipsis();
 
-  width: fit-content;
+  align-self: flex-start;
   position: relative;
   max-width: 100%;
   font-size: var(--sapFontSize);

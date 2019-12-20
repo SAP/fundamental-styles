@@ -42,6 +42,8 @@ $block: #{$fd-namespace}-checkbox;
     @include fd-form-label();
     @include action-cursor();
 
+    padding-right: 0;
+    overflow: visible;
     display: flex;
     align-items: center;
 
@@ -74,14 +76,12 @@ $block: #{$fd-namespace}-checkbox;
   }
 
   &:indeterminate + .#{$block}__label::before {
-    padding-bottom: 0.0625rem;
     content: "\e17b";
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
   }
 
   &:indeterminate + .#{$block}__label--compact::before {
     content: "\e17b";
-    padding-bottom: 0;
     font-size: 0.5625rem;
   }
 
