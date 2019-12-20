@@ -269,8 +269,8 @@ For an integer value input, a spinner can be added allowing the user to increase
     <div class="fd-input-group">
         <input class="fd-input fd-input--no-number-spinner fd-input-group__input" id="spinner-1" type="number" value="100" />
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--light fd-button--half sap-icon--slim-arrow-up" aria-label="Step up" onclick="document.getElementById('spinner-1').stepUp();"></button>
-            <button class="fd-input-group__button fd-button--light fd-button--half sap-icon--slim-arrow-down" aria-label="Step down" onclick="document.getElementById('spinner-1').stepDown();"></button>
+            <button class="fd-input-group__button fd-button--light fd-button--half sap-icon--slim-arrow-up" aria-label="Step up" onclick="stepInputValue('spinner-1', 'up');"></button>
+            <button class="fd-input-group__button fd-button--light fd-button--half sap-icon--slim-arrow-down" aria-label="Step down" onclick="stepInputValue('spinner-1', 'down');"></button>
         </span>
     </div>
 </div>
