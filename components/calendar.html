@@ -27,7 +27,7 @@
 </script>
 <!-- End Google Tag Manager -->
 
-<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1571353636321983077">
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1576884666480104010">
 <link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -59,7 +59,7 @@
 
         <!-- logo -->
         <a class="docs-top-nav__logo" href="/fundamental-styles/index.html">
-            Fundamental <span class="docs-top-nav__logo__accent">Styles</span>
+            Fundamental Library<span class="docs-top-nav__logo__accent"> Styles</span>
         </a>
 
         <button id="mobile-sidenav-btn" class="fd-button--light sap-icon--menu2" aria-haspopup="true" aria-expanded="false" aria-label="Menu"></button>
@@ -68,7 +68,7 @@
         <div class="docs-top-nav__support fd-has-float-right">
 
             <span class="fd-has-align-items-center fd-has-margin-right-small">
-                <span>v0.3.0</span>
+                <span>v0.4.0</span>
                 <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
                     <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
                         <title>GitHub</title>
@@ -281,16 +281,6 @@
             
             
             <li class="side-nav__links">
-                <a href="/fundamental-styles/patterns/contextual-menu.html"
-                   class="side-nav__links-link">Contextual Menu</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
                 <a href="/fundamental-styles/patterns/combobox-input.html"
                    class="side-nav__links-link">Combobox Input</a>
             </li>
@@ -301,8 +291,28 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/patterns/contextual-menu.html"
+                   class="side-nav__links-link">Contextual Menu</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/patterns/date-picker.html"
                    class="side-nav__links-link">Date Picker</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/patterns/multi-input.html"
+                   class="side-nav__links-link">Multi Input</a>
             </li>
             
             
@@ -369,6 +379,16 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/asset-upload.html"
                    class="side-nav__links-link">Asset Upload</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/busy-indicator.html"
+                   class="side-nav__links-link">Busy Indicator</a>
             </li>
             
             
@@ -539,16 +559,6 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/modal.html"
                    class="side-nav__links-link">Modal</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
-                <a href="/fundamental-styles/components/multi-input.html"
-                   class="side-nav__links-link">Multi Input</a>
             </li>
             
             
@@ -734,7 +744,7 @@
             
             <li class="side-nav__links">
                 <a href="/fundamental-styles/resources/fundamentals-libraries.html"
-                   class="side-nav__links-link">Fundamental Styles Implementation Libraries</a>
+                   class="side-nav__links-link">Fundamental Libraries</a>
             </li>
             
             
@@ -946,13 +956,6 @@ Classes available for <code class="highlighter-rouge">.fd-calendar__item</code>.
 <h2 id="example-dates-months-years">Example: Dates, Months, Years</h2>
 
 <div class="fd-tile docs-component docs-component__">
-    <label class="fd-form-label docs-component__bg-toggle" for="64815" title="Change Background">
-        <span class="fd-toggle fd-toggle--xs fd-input">
-            <input type="checkbox" name="" value="" id="64815" class="toggle-bg fd-toggle__input" />
-            <span class="fd-toggle__switch" role="presentation"></span>
-        </span>
-
-    </label>
     <div class="fd-tile__content">
 		
 <div class="fd-calendar">
@@ -975,205 +978,245 @@ Classes available for <code class="highlighter-rouge">.fd-calendar__item</code>.
 	<div class="fd-calendar__content">
 		<div class="fd-calendar__dates" id="XVXTR263" aria-hidden="false">
 			<table class="fd-calendar__table" role="grid">
-			<thead class="fd-calendar__group">
-			<tr class="fd-calendar__row">
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">S</span>
-				</th>
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">M</span>
-				</th>
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">T</span>
-				</th>
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">W</span>
-				</th>
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">T</span>
-				</th>
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">F</span>
-				</th>
-				<th class="fd-calendar__column-header">
-					<span class="fd-calendar__day-of-week">S</span>
-				</th>
-			</tr>
-			</thead>
-			<tbody class="fd-calendar__group">
-			<tr class="fd-calendar__row">
-				<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
-					<span class="fd-calendar__text">30</span>
-				</td>
-				<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
-					<span class="fd-calendar__text">31</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">1</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">2</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">3</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">4</span>
-				</td>
-				<td class="fd-calendar__item is-selected is-selected-range-first" role="gridcell">
-					<span class="fd-calendar__text">5</span>
-				</td>
-			</tr>
-			<tr class="fd-calendar__row">
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">6</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">7</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">8</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">9</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">10</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">11</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">12</span>
-				</td>
-			</tr>
-			<tr class="fd-calendar__row">
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">13</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">14</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">15</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">16</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">17</span>
-				</td>
-				<td class="fd-calendar__item is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">18</span>
-				</td>
-				<td class="fd-calendar__item fd-calendar__item--current is-selected-range" role="gridcell">
-					<span class="fd-calendar__text">19</span>
-				</td>
-			</tr>
-			<tr class="fd-calendar__row">
-				<td class="fd-calendar__item is-selected is-selected-range-last" role="gridcell">
-					<span class="fd-calendar__text">20</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">21</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">22</span>
-				</td>
-				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">23</span>
-				</td>
-				<td class="fd-calendar__item is-blocked" role="gridcell">
-					<span class="fd-calendar__text">24</span>
-				</td>
-				<td class="fd-calendar__item is-blocked" role="gridcell">
-					<span class="fd-calendar__text">25</span>
-				</td>
-				<td class="fd-calendar__item is-blocked" role="gridcell">
-					<span class="fd-calendar__text">26</span>
-				</td>
-			</tr>
-			<tr class="fd-calendar__row">
-				<td class="fd-calendar__item is-blocked" role="gridcell">
-					<span class="fd-calendar__text">27</span>
-				</td>
-				<td class="fd-calendar__item is-blocked" role="gridcell">
-					<span class="fd-calendar__text">28</span>
-				</td>
-				<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
-					<span class="fd-calendar__text">1</span>
-				</td>
-				<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
-					<span class="fd-calendar__text">2</span>
-				</td>
-				<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
-					<span class="fd-calendar__text">3</span>
-				</td>
-				<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
-					<span class="fd-calendar__text">4</span>
-				</td>
-				<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
-					<span class="fd-calendar__text">5</span>
-				</td>
-			</tr>
-			</tbody>
+				<thead class="fd-calendar__group">
+					<tr class="fd-calendar__row">
+						<th class="fd-calendar__column-header">
+							<span class="fd-calendar__day-of-week">S</span>
+						</th>
+						<th class="fd-calendar__column-header">
+							<span class="fd-calendar__day-of-week">M</span>
+						</th>
+						<th class="fd-calendar__column-header">
+							<span class="fd-calendar__day-of-week">T</span>
+						</th>
+						<th class="fd-calendar__column-header">
+							<span class="fd-calendar__day-of-week">W</span>
+						</th>
+						<th class="fd-calendar__column-header">
+							<span class="fd-calendar__day-of-week">T</span>
+						</th>
+						<th class="fd-calendar__column-header">
+							<span class="fd-calendar__day-of-week">F</span>
+						</th>
+						<th class="fd-calendar__column-header">
+							<span class="fd-calendar__day-of-week">S</span>
+						</th>
+					</tr>
+				</thead>
+				<tbody class="fd-calendar__group">
+					<tr class="fd-calendar__row">
+						<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
+							<span class="fd-calendar__text" role="button">30</span>
+						</td>
+						<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
+							<span class="fd-calendar__text" role="button">31</span>
+						</td>
+						<td class="fd-calendar__item" role="gridcell">
+							<span class="fd-calendar__text" role="button">1</span>
+						</td>
+						<td class="fd-calendar__item" role="gridcell">
+							<span class="fd-calendar__text" role="button">2</span>
+						</td>
+						<td class="fd-calendar__item" role="gridcell">
+							<span class="fd-calendar__text" role="button">3</span>
+						</td>
+						<td class="fd-calendar__item" role="gridcell">
+							<span class="fd-calendar__text" role="button">4</span>
+						</td>
+						<td class="fd-calendar__item is-selected is-selected-range-first" role="gridcell">
+							<span class="fd-calendar__text" role="button" aria-selected="true">5</span>
+						</td>
+					</tr>
+					<tr class="fd-calendar__row">
+						<td class="fd-calendar__item is-selected-range" role="gridcell">
+							<span class="fd-calendar__text" role="button">6</span>
+						</td>
+						<td class="fd-calendar__item is-selected-range" role="gridcell">
+							<span class="fd-calendar__text" role="button">7</span>
+						</td>
+						<td class="fd-calendar__item is-selected-range" role="gridcell">
+							<span class="fd-calendar__text" role="button">8</span>
+						</td>
+						<td class="fd-calendar__item is-selected-range" role="gridcell">
+							<span class="fd-calendar__text" role="button">9</span>
+						</td>
+						<td class="fd-calendar__item is-selected-range" role="gridcell">
+							<span class="fd-calendar__text" role="button">10</span>
+						</td>
+						<td class="fd-calendar__item is-selected-range" role="gridcell">
+							<span class="fd-calendar__text" role="button">11</span>
+						</td>
+						<td class="fd-calendar__item is-selected-range" role="gridcell">
+							<span class="fd-calendar__text" role="button">12</span>
+						</td>
+					</tr>
+					<tr class="fd-calendar__row">
+						<td class="fd-calendar__item is-selected-range" role="gridcell">
+							<span class="fd-calendar__text" role="button">13</span>
+						</td>
+						<td class="fd-calendar__item is-selected-range" role="gridcell">
+							<span class="fd-calendar__text" role="button">14</span>
+						</td>
+						<td class="fd-calendar__item is-selected-range" role="gridcell">
+							<span class="fd-calendar__text" role="button">15</span>
+						</td>
+						<td class="fd-calendar__item is-selected-range" role="gridcell">
+							<span class="fd-calendar__text" role="button">16</span>
+						</td>
+						<td class="fd-calendar__item is-selected-range" role="gridcell">
+							<span class="fd-calendar__text" role="button">17</span>
+						</td>
+						<td class="fd-calendar__item is-selected-range" role="gridcell">
+							<span class="fd-calendar__text" role="button">18</span>
+						</td>
+						<td class="fd-calendar__item fd-calendar__item--current is-selected-range" role="gridcell">
+							<span class="fd-calendar__text" role="button">19</span>
+						</td>
+					</tr>
+					<tr class="fd-calendar__row">
+						<td class="fd-calendar__item is-selected is-selected-range-last" role="gridcell">
+							<span class="fd-calendar__text" role="button" aria-selected="true">20</span>
+						</td>
+						<td class="fd-calendar__item" role="gridcell">
+							<span class="fd-calendar__text" role="button">21</span>
+						</td>
+						<td class="fd-calendar__item" role="gridcell">
+							<span class="fd-calendar__text" role="button">22</span>
+						</td>
+						<td class="fd-calendar__item" role="gridcell">
+							<span class="fd-calendar__text" role="button">23</span>
+						</td>
+						<td class="fd-calendar__item is-blocked" role="gridcell">
+							<span class="fd-calendar__text" role="button">24</span>
+						</td>
+						<td class="fd-calendar__item is-blocked" role="gridcell">
+							<span class="fd-calendar__text" role="button">25</span>
+						</td>
+						<td class="fd-calendar__item is-blocked" role="gridcell">
+							<span class="fd-calendar__text" role="button">26</span>
+						</td>
+					</tr>
+					<tr class="fd-calendar__row">
+						<td class="fd-calendar__item is-blocked" role="gridcell">
+							<span class="fd-calendar__text" role="button">27</span>
+						</td>
+						<td class="fd-calendar__item is-blocked" role="gridcell">
+							<span class="fd-calendar__text" role="button">28</span>
+						</td>
+						<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
+							<span class="fd-calendar__text" role="button">1</span>
+						</td>
+						<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
+							<span class="fd-calendar__text" role="button">2</span>
+						</td>
+						<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
+							<span class="fd-calendar__text" role="button">3</span>
+						</td>
+						<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
+							<span class="fd-calendar__text" role="button">4</span>
+						</td>
+						<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
+							<span class="fd-calendar__text" role="button">5</span>
+						</td>
+					</tr>
+				</tbody>
 			</table>
 		</div>
 		<div class="fd-calendar__months is-hidden" id="crM8l491" aria-hidden="true">
-			<ul class="fd-calendar__list">
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Jan.</span></li>
-				<li class="fd-calendar__item fd-calendar__item--current">
-				<span class="fd-calendar__text">Feb.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Mar.</span></li>
-				<li class="fd-calendar__item is-selected">
-				<span class="fd-calendar__text">Apr.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">May</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Jun.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Jul.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Aug.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Sep.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Oct.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Nov.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Dec.</span></li>
-			</ul>
+			<table class="fd-calendar__table" role="grid">
+				<tbody class="fd-calendar__group">
+					<tr class="fd-calendar__row">
+						<td class="fd-calendar__item fd-calendar__item--current">
+							<span class="fd-calendar__text" role="button">Jan.</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">Feb.</span>
+						</td>
+						<td class="fd-calendar__item is-selected">
+							<span class="fd-calendar__text" role="button" aria-selected="true">Mar.</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">Apr.</span>
+						</td>
+					</tr>
+					<tr class="fd-calendar__row">
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">May</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">Jun.</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">Jul.</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">Aug.</span>
+						</td>
+					</tr>
+					<tr class="fd-calendar__row">
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">Sep.</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">Oct.</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">Nov.</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">Dec.</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 		<div class="fd-calendar__years is-hidden" aria-hidden="true" id="FTXrD591">
-			<ul class="fd-calendar__list">
-				<li class="fd-calendar__item fd-calendar__item--current">
-				<span class="fd-calendar__text">2018</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2019</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2020</span></li>
-				<li class="fd-calendar__item is-selected">
-				<span class="fd-calendar__text">2021</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2022</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2023</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2024</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2025</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2026</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2027</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2028</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2029</span></li>
-			</ul>
+			<table class="fd-calendar__table" role="grid">
+				<tbody class="fd-calendar__group">
+					<tr class="fd-calendar__row">
+						<td class="fd-calendar__item fd-calendar__item--current">
+							<span class="fd-calendar__text" role="button">2018</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2019</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2020</span>
+						</td>
+						<td class="fd-calendar__item is-selected">
+							<span class="fd-calendar__text" role="button" aria-selected="true">2021</span>
+						</td>
+					</tr>
+					<tr class="fd-calendar__row">
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2022</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2023</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2024</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2025</span>
+						</td>
+					</tr>
+					<tr class="fd-calendar__row">
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2026</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2027</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2028</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2029</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 </div>
@@ -1201,205 +1244,245 @@ Classes available for <code class="highlighter-rouge">.fd-calendar__item</code>.
 	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-calendar__content"</span><span class="nt">&gt;</span>
 		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-calendar__dates"</span> <span class="na">id=</span><span class="s">"XVXTR263"</span> <span class="na">aria-hidden=</span><span class="s">"false"</span><span class="nt">&gt;</span>
 			<span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"fd-calendar__table"</span> <span class="na">role=</span><span class="s">"grid"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;thead</span> <span class="na">class=</span><span class="s">"fd-calendar__group"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">"fd-calendar__column-header"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__day-of-week"</span><span class="nt">&gt;</span>S<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/th&gt;</span>
-				<span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">"fd-calendar__column-header"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__day-of-week"</span><span class="nt">&gt;</span>M<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/th&gt;</span>
-				<span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">"fd-calendar__column-header"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__day-of-week"</span><span class="nt">&gt;</span>T<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/th&gt;</span>
-				<span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">"fd-calendar__column-header"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__day-of-week"</span><span class="nt">&gt;</span>W<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/th&gt;</span>
-				<span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">"fd-calendar__column-header"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__day-of-week"</span><span class="nt">&gt;</span>T<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/th&gt;</span>
-				<span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">"fd-calendar__column-header"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__day-of-week"</span><span class="nt">&gt;</span>F<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/th&gt;</span>
-				<span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">"fd-calendar__column-header"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__day-of-week"</span><span class="nt">&gt;</span>S<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/th&gt;</span>
-			<span class="nt">&lt;/tr&gt;</span>
-			<span class="nt">&lt;/thead&gt;</span>
-			<span class="nt">&lt;tbody</span> <span class="na">class=</span><span class="s">"fd-calendar__group"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--other-month"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>30<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--other-month"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>31<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected is-selected-range-first"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-			<span class="nt">&lt;/tr&gt;</span>
-			<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>7<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>8<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>9<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>11<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>12<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-			<span class="nt">&lt;/tr&gt;</span>
-			<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>13<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>14<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>15<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>16<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>17<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>18<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--current is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>19<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-			<span class="nt">&lt;/tr&gt;</span>
-			<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected is-selected-range-last"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>20<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>21<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>22<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>23<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-blocked"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>24<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-blocked"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-blocked"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>26<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-			<span class="nt">&lt;/tr&gt;</span>
-			<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-blocked"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>27<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-blocked"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>28<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--other-month"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--other-month"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--other-month"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--other-month"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--other-month"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;/td&gt;</span>
-			<span class="nt">&lt;/tr&gt;</span>
-			<span class="nt">&lt;/tbody&gt;</span>
+				<span class="nt">&lt;thead</span> <span class="na">class=</span><span class="s">"fd-calendar__group"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">"fd-calendar__column-header"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__day-of-week"</span><span class="nt">&gt;</span>S<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/th&gt;</span>
+						<span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">"fd-calendar__column-header"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__day-of-week"</span><span class="nt">&gt;</span>M<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/th&gt;</span>
+						<span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">"fd-calendar__column-header"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__day-of-week"</span><span class="nt">&gt;</span>T<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/th&gt;</span>
+						<span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">"fd-calendar__column-header"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__day-of-week"</span><span class="nt">&gt;</span>W<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/th&gt;</span>
+						<span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">"fd-calendar__column-header"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__day-of-week"</span><span class="nt">&gt;</span>T<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/th&gt;</span>
+						<span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">"fd-calendar__column-header"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__day-of-week"</span><span class="nt">&gt;</span>F<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/th&gt;</span>
+						<span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">"fd-calendar__column-header"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__day-of-week"</span><span class="nt">&gt;</span>S<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/th&gt;</span>
+					<span class="nt">&lt;/tr&gt;</span>
+				<span class="nt">&lt;/thead&gt;</span>
+				<span class="nt">&lt;tbody</span> <span class="na">class=</span><span class="s">"fd-calendar__group"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--other-month"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>30<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--other-month"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>31<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected is-selected-range-first"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+					<span class="nt">&lt;/tr&gt;</span>
+					<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>7<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>8<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>9<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>11<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>12<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+					<span class="nt">&lt;/tr&gt;</span>
+					<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>13<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>14<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>15<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>16<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>17<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>18<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--current is-selected-range"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>19<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+					<span class="nt">&lt;/tr&gt;</span>
+					<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected is-selected-range-last"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>20<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>21<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>22<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>23<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-blocked"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>24<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-blocked"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-blocked"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>26<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+					<span class="nt">&lt;/tr&gt;</span>
+					<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-blocked"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>27<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-blocked"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>28<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--other-month"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--other-month"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--other-month"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--other-month"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--other-month"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+					<span class="nt">&lt;/tr&gt;</span>
+				<span class="nt">&lt;/tbody&gt;</span>
 			<span class="nt">&lt;/table&gt;</span>
 		<span class="nt">&lt;/div&gt;</span>
 		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-calendar__months is-hidden"</span> <span class="na">id=</span><span class="s">"crM8l491"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-calendar__list"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Jan.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--current"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Feb.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Mar.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Apr.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>May<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Jun.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Jul.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Aug.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Sep.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Oct.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Nov.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Dec.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-			<span class="nt">&lt;/ul&gt;</span>
+			<span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"fd-calendar__table"</span> <span class="na">role=</span><span class="s">"grid"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;tbody</span> <span class="na">class=</span><span class="s">"fd-calendar__group"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--current"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Jan.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Feb.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>Mar.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Apr.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+					<span class="nt">&lt;/tr&gt;</span>
+					<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>May<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Jun.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Jul.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Aug.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+					<span class="nt">&lt;/tr&gt;</span>
+					<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Sep.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Oct.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Nov.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Dec.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+					<span class="nt">&lt;/tr&gt;</span>
+				<span class="nt">&lt;/tbody&gt;</span>
+			<span class="nt">&lt;/table&gt;</span>
 		<span class="nt">&lt;/div&gt;</span>
 		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-calendar__years is-hidden"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"FTXrD591"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-calendar__list"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--current"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2018<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2019<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2020<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2021<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2022<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2023<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2024<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2025<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2026<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2027<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2028<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2029<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-			<span class="nt">&lt;/ul&gt;</span>
+			<span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"fd-calendar__table"</span> <span class="na">role=</span><span class="s">"grid"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;tbody</span> <span class="na">class=</span><span class="s">"fd-calendar__group"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--current"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2018<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2019<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2020<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>2021<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+					<span class="nt">&lt;/tr&gt;</span>
+					<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2022<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2023<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2024<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2025<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+					<span class="nt">&lt;/tr&gt;</span>
+					<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2026<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2027<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2028<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2029<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+					<span class="nt">&lt;/tr&gt;</span>
+				<span class="nt">&lt;/tbody&gt;</span>
+			<span class="nt">&lt;/table&gt;</span>
 		<span class="nt">&lt;/div&gt;</span>
 	<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
@@ -1408,13 +1491,6 @@ Classes available for <code class="highlighter-rouge">.fd-calendar__item</code>.
 <p>The previous and next controls are standard buttons with all available states. For example, add disabled or <code>aria-disabled="true"</code> to gray out the previous button when past dates are not allowed.</p>
 
 <div class="fd-tile docs-component docs-component__">
-    <label class="fd-form-label docs-component__bg-toggle" for="72817" title="Change Background">
-        <span class="fd-toggle fd-toggle--xs fd-input">
-            <input type="checkbox" name="" value="" id="72817" class="toggle-bg fd-toggle__input" />
-            <span class="fd-toggle__switch" role="presentation"></span>
-        </span>
-
-    </label>
     <div class="fd-tile__content">
 		
 <div class="fd-calendar">
@@ -1465,117 +1541,117 @@ Classes available for <code class="highlighter-rouge">.fd-calendar__item</code>.
 			<tbody class="fd-calendar__group">
 			<tr class="fd-calendar__row">
 				<td class="fd-calendar__item fd-calendar__item--other-month is-disabled" role="gridcell">
-					<span class="fd-calendar__text">29</span>
+					<span class="fd-calendar__text" role="button">29</span>
 				</td>
 				<td class="fd-calendar__item fd-calendar__item--other-month is-disabled" role="gridcell">
-					<span class="fd-calendar__text">30</span>
+					<span class="fd-calendar__text" role="button">30</span>
 				</td>
 				<td class="fd-calendar__item fd-calendar__item--other-month is-disabled" role="gridcell">
-					<span class="fd-calendar__text">31</span>
+					<span class="fd-calendar__text" role="button">31</span>
 				</td>
 				<td class="fd-calendar__item is-disabled" role="gridcell">
-					<span class="fd-calendar__text">1</span>
+					<span class="fd-calendar__text" role="button">1</span>
 				</td>
 				<td class="fd-calendar__item is-disabled" role="gridcell">
-					<span class="fd-calendar__text">2</span>
+					<span class="fd-calendar__text" role="button">2</span>
 				</td>
 				<td class="fd-calendar__item is-disabled" role="gridcell">
-					<span class="fd-calendar__text">3</span>
+					<span class="fd-calendar__text" role="button">3</span>
 				</td>
 				<td class="fd-calendar__item is-disabled" role="gridcell">
-					<span class="fd-calendar__text">4</span>
+					<span class="fd-calendar__text" role="button">4</span>
 				</td>
 			</tr>
 			<tr class="fd-calendar__row">
 				<td class="fd-calendar__item is-disabled" role="gridcell">
-					<span class="fd-calendar__text">5</span>
+					<span class="fd-calendar__text" role="button">5</span>
 				</td>
 				<td class="fd-calendar__item fd-calendar__item--current" role="gridcell">
-					<span class="fd-calendar__text">6</span>
+					<span class="fd-calendar__text" role="button">6</span>
 				</td>
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">7</span>
+					<span class="fd-calendar__text" role="button">7</span>
 				</td>
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">8</span>
+					<span class="fd-calendar__text" role="button">8</span>
 				</td>
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">9</span>
+					<span class="fd-calendar__text" role="button">9</span>
 				</td>
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">10</span>
+					<span class="fd-calendar__text" role="button">10</span>
 				</td>
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">11</span>
+					<span class="fd-calendar__text" role="button">11</span>
 				</td>
 			</tr>
 			<tr class="fd-calendar__row">
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">12</span>
+					<span class="fd-calendar__text" role="button">12</span>
 				</td>
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">13</span>
+					<span class="fd-calendar__text" role="button">13</span>
 				</td>
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">14</span>
+					<span class="fd-calendar__text" role="button">14</span>
 				</td>
 				<td class="fd-calendar__item is-selected" role="gridcell">
-					<span class="fd-calendar__text">15</span>
+					<span class="fd-calendar__text" role="button" aria-selected="true">15</span>
 				</td>
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">16</span>
+					<span class="fd-calendar__text" role="button">16</span>
 				</td>
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">17</span>
+					<span class="fd-calendar__text" role="button">17</span>
 				</td>
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">18</span>
+					<span class="fd-calendar__text" role="button">18</span>
 				</td>
 			</tr>
 			<tr class="fd-calendar__row">
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">19</span>
+					<span class="fd-calendar__text" role="button">19</span>
 				</td>
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">20</span>
+					<span class="fd-calendar__text" role="button">20</span>
 				</td>
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">21</span>
+					<span class="fd-calendar__text" role="button">21</span>
 				</td>
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">22</span>
+					<span class="fd-calendar__text" role="button">22</span>
 				</td>
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">23</span>
+					<span class="fd-calendar__text" role="button">23</span>
 				</td>
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">24</span>
+					<span class="fd-calendar__text" role="button">24</span>
 				</td>
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">25</span>
+					<span class="fd-calendar__text" role="button">25</span>
 				</td>
 			</tr>
 			<tr class="fd-calendar__row">
 				<td class="fd-calendar__item is-blocked" role="gridcell">
-					<span class="fd-calendar__text">26</span>
+					<span class="fd-calendar__text" role="button">26</span>
 				</td>
 				<td class="fd-calendar__item is-blocked" role="gridcell">
-					<span class="fd-calendar__text">27</span>
+					<span class="fd-calendar__text" role="button">27</span>
 				</td>
 				<td class="fd-calendar__item is-blocked" role="gridcell">
-					<span class="fd-calendar__text">28</span>
+					<span class="fd-calendar__text" role="button">28</span>
 				</td>
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">29</span>
+					<span class="fd-calendar__text" role="button">29</span>
 				</td>
 				<td class="fd-calendar__item" role="gridcell">
-					<span class="fd-calendar__text">30</span>
+					<span class="fd-calendar__text" role="button">30</span>
 				</td>
 				<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
-					<span class="fd-calendar__text">1</span>
+					<span class="fd-calendar__text" role="button">1</span>
 				</td>
 				<td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
-					<span class="fd-calendar__text">2</span>
+					<span class="fd-calendar__text" role="button">2</span>
 				</td>
 			</tr>
 			</tbody>
@@ -1635,117 +1711,117 @@ Classes available for <code class="highlighter-rouge">.fd-calendar__item</code>.
 			<span class="nt">&lt;tbody</span> <span class="na">class=</span><span class="s">"fd-calendar__group"</span><span class="nt">&gt;</span>
 			<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--other-month is-disabled"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>29<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>29<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--other-month is-disabled"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>30<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>30<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--other-month is-disabled"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>31<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>31<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-disabled"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-disabled"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-disabled"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-disabled"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 			<span class="nt">&lt;/tr&gt;</span>
 			<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-disabled"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--current"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>7<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>7<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>8<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>8<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>9<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>9<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>11<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>11<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 			<span class="nt">&lt;/tr&gt;</span>
 			<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>12<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>12<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>13<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>13<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>14<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>14<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>15<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>15<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>16<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>16<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>17<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>17<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>18<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>18<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 			<span class="nt">&lt;/tr&gt;</span>
 			<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>19<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>19<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>20<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>20<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>21<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>21<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>22<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>22<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>23<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>23<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>24<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>24<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 			<span class="nt">&lt;/tr&gt;</span>
 			<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-blocked"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>26<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>26<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-blocked"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>27<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>27<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-blocked"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>28<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>28<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>29<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>29<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>30<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>30<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--other-month"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 				<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--other-month"</span> <span class="na">role=</span><span class="s">"gridcell"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>
 				<span class="nt">&lt;/td&gt;</span>
 			<span class="nt">&lt;/tr&gt;</span>
 			<span class="nt">&lt;/tbody&gt;</span>
@@ -1757,13 +1833,6 @@ Classes available for <code class="highlighter-rouge">.fd-calendar__item</code>.
 <h2 id="example-months">Example: Months</h2>
 
 <div class="fd-tile docs-component docs-component__">
-    <label class="fd-form-label docs-component__bg-toggle" for="45200" title="Change Background">
-        <span class="fd-toggle fd-toggle--xs fd-input">
-            <input type="checkbox" name="" value="" id="45200" class="toggle-bg fd-toggle__input" />
-            <span class="fd-toggle__switch" role="presentation"></span>
-        </span>
-
-    </label>
     <div class="fd-tile__content">
 		
 <div class="fd-calendar">
@@ -1785,32 +1854,52 @@ Classes available for <code class="highlighter-rouge">.fd-calendar__item</code>.
 	</header>
 	<div class="fd-calendar__content">
 		<div class="fd-calendar__months" id="Eo94h672" aria-hidden="false">
-			<ul class="fd-calendar__list">
-				<li class="fd-calendar__item fd-calendar__item--current">
-				<span class="fd-calendar__text">Jan.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Feb.</span></li>
-				<li class="fd-calendar__item is-selected">
-				<span class="fd-calendar__text">Mar.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Apr.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">May</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Jun.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Jul.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Aug.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Sep.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Oct.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Nov.</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">Dec.</span></li>
-			</ul>
+			<table class="fd-calendar__table" role="grid">
+				<tbody class="fd-calendar__group">
+					<tr class="fd-calendar__row">
+						<td class="fd-calendar__item fd-calendar__item--current">
+							<span class="fd-calendar__text" role="button">Jan.</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">Feb.</span>
+						</td>
+						<td class="fd-calendar__item is-selected">
+							<span class="fd-calendar__text" role="button" aria-selected="true">Mar.</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">Apr.</span>
+						</td>
+					</tr>
+					<tr class="fd-calendar__row">
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">May</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">Jun.</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">Jul.</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">Aug.</span>
+						</td>
+					</tr>
+					<tr class="fd-calendar__row">
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">Sep.</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">Oct.</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">Nov.</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">Dec.</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 </div>
@@ -1837,32 +1926,52 @@ Classes available for <code class="highlighter-rouge">.fd-calendar__item</code>.
 	<span class="nt">&lt;/header&gt;</span>
 	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-calendar__content"</span><span class="nt">&gt;</span>
 		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-calendar__months"</span> <span class="na">id=</span><span class="s">"Eo94h672"</span> <span class="na">aria-hidden=</span><span class="s">"false"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-calendar__list"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--current"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Jan.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Feb.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Mar.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Apr.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>May<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Jun.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Jul.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Aug.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Sep.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Oct.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Nov.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>Dec.<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-			<span class="nt">&lt;/ul&gt;</span>
+			<span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"fd-calendar__table"</span> <span class="na">role=</span><span class="s">"grid"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;tbody</span> <span class="na">class=</span><span class="s">"fd-calendar__group"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--current"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Jan.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Feb.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>Mar.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Apr.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+					<span class="nt">&lt;/tr&gt;</span>
+					<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>May<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Jun.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Jul.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Aug.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+					<span class="nt">&lt;/tr&gt;</span>
+					<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Sep.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Oct.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Nov.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Dec.<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+					<span class="nt">&lt;/tr&gt;</span>
+				<span class="nt">&lt;/tbody&gt;</span>
+			<span class="nt">&lt;/table&gt;</span>
 		<span class="nt">&lt;/div&gt;</span>
 	<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
@@ -1870,13 +1979,6 @@ Classes available for <code class="highlighter-rouge">.fd-calendar__item</code>.
 <h2 id="example-years">Example: Years</h2>
 
 <div class="fd-tile docs-component docs-component__">
-    <label class="fd-form-label docs-component__bg-toggle" for="51527" title="Change Background">
-        <span class="fd-toggle fd-toggle--xs fd-input">
-            <input type="checkbox" name="" value="" id="51527" class="toggle-bg fd-toggle__input" />
-            <span class="fd-toggle__switch" role="presentation"></span>
-        </span>
-
-    </label>
     <div class="fd-tile__content">
 		
 <div class="fd-calendar">
@@ -1898,32 +2000,52 @@ Classes available for <code class="highlighter-rouge">.fd-calendar__item</code>.
 	</header>
 	<div class="fd-calendar__content">
 		<div class="fd-calendar__years" aria-hidden="false" id="bufLe361">
-			<ul class="fd-calendar__list">
-				<li class="fd-calendar__item fd-calendar__item--current">
-				<span class="fd-calendar__text">2018</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2019</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2020</span></li>
-				<li class="fd-calendar__item is-selected">
-				<span class="fd-calendar__text">2021</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2022</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2023</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2024</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2025</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2026</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2027</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2028</span></li>
-				<li class="fd-calendar__item">
-				<span class="fd-calendar__text">2029</span></li>
-			</ul>
+			<table class="fd-calendar__table" role="grid">
+				<tbody class="fd-calendar__group">
+					<tr class="fd-calendar__row">
+						<td class="fd-calendar__item fd-calendar__item--current">
+							<span class="fd-calendar__text" role="button">2018</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2019</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2020</span>
+						</td>
+						<td class="fd-calendar__item is-selected">
+							<span class="fd-calendar__text" role="button" aria-selected="true">2021</span>
+						</td>
+					</tr>
+					<tr class="fd-calendar__row">
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2022</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2023</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2024</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2025</span>
+						</td>
+					</tr>
+					<tr class="fd-calendar__row">
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2026</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2027</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2028</span>
+						</td>
+						<td class="fd-calendar__item">
+							<span class="fd-calendar__text" role="button">2029</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 </div>
@@ -1950,32 +2072,52 @@ Classes available for <code class="highlighter-rouge">.fd-calendar__item</code>.
 	<span class="nt">&lt;/header&gt;</span>
 	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-calendar__content"</span><span class="nt">&gt;</span>
 		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-calendar__years"</span> <span class="na">aria-hidden=</span><span class="s">"false"</span> <span class="na">id=</span><span class="s">"bufLe361"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-calendar__list"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--current"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2018<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2019<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2020<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2021<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2022<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2023<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2024<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2025<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2026<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2027<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2028<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-				<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span><span class="nt">&gt;</span>2029<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-			<span class="nt">&lt;/ul&gt;</span>
+			<span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"fd-calendar__table"</span> <span class="na">role=</span><span class="s">"grid"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;tbody</span> <span class="na">class=</span><span class="s">"fd-calendar__group"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item fd-calendar__item--current"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2018<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2019<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2020<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item is-selected"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>2021<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+					<span class="nt">&lt;/tr&gt;</span>
+					<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2022<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2023<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2024<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2025<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+					<span class="nt">&lt;/tr&gt;</span>
+					<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"fd-calendar__row"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2026<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2027<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2028<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+						<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"fd-calendar__item"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-calendar__text"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>2029<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/td&gt;</span>
+					<span class="nt">&lt;/tr&gt;</span>
+				<span class="nt">&lt;/tbody&gt;</span>
+			<span class="nt">&lt;/table&gt;</span>
 		<span class="nt">&lt;/div&gt;</span>
 	<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>

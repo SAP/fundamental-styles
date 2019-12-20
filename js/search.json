@@ -50,6 +50,17 @@
 
 
 {
+"title": "Busy Indicator",
+"tags": "",
+"keywords": "busy indicator, busy, spinner, loader",
+"url": "/components/busy-indicator.html",
+"folder": "components"
+}
+,
+
+
+
+{
 "title": "Button",
 "tags": "",
 "keywords": "button, buttons",
@@ -166,7 +177,7 @@
 
 
 {
-"title": "Fundamental Styles Implementation Libraries",
+"title": "Fundamental Libraries",
 "tags": "",
 "keywords": "libraries frameworks angular vue react",
 "url": "/resources/fundamentals-libraries.html",
@@ -437,8 +448,8 @@
 "title": "Multi Input",
 "tags": "",
 "keywords": "multi input",
-"url": "/components/multi-input.html",
-"folder": "components"
+"url": "/patterns/multi-input.html",
+"folder": "patterns"
 }
 ,
 

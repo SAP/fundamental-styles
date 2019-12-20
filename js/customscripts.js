@@ -13,10 +13,9 @@ $(document).ready(function () {
         $('#mobile-sidenav-btn').hide();
     }
 
-    $('#mobile-sidenav-btn').click(() => {
+    $('#mobile-sidenav-btn').click(function () {
         $("#tg-sb-sidebar").toggleClass('fd-styles__mobile-list');
     });
-
 });
 
 $(document).ready(function () {
@@ -31,7 +30,7 @@ $(document).ready(function () {
             var isAlert = this.parentElement.getAttribute("role") === "alert";
             if (isAlert) {
                 //remove or hide if we want some animation
-                target.remove();
+                $(target).remove();
                 return;
             }
             //dropdown
@@ -48,8 +47,8 @@ $(document).ready(function () {
                 //target
                 target.setAttribute("aria-hidden", isExpanded);
                 //searchinput for shellbar
-                if(document.getElementById(`${targetId}1`) !== null) {
-                    document.getElementById(`${targetId}1`).setAttribute("aria-hidden", isExpanded);
+                if (document.getElementById('' + targetId + '1') !== null) {
+                    document.getElementById('' + targetId + '1').setAttribute("aria-hidden", isExpanded);
                 }
                 return;
             }
@@ -166,22 +165,64 @@ $(document).ready(function () {
         triStateCheckbox.indeterminate = true;
     }
 
+    const triStateCheckboxI1 = document.getElementById('Ai4ez613i1');
+    if (triStateCheckboxI1) {
+        triStateCheckboxI1.indeterminate = true;
+    }
+
+    const triStateCheckboxI2 = document.getElementById('Ai4ez613i2');
+    if (triStateCheckboxI2) {
+        triStateCheckboxI2.indeterminate = true;
+    }
+
+    const triStateCheckboxI3 = document.getElementById('Ai4ez613i3');
+    if (triStateCheckboxI3) {
+        triStateCheckboxI3.indeterminate = true;
+    }
+
+    const triStateCheckboxI4 = document.getElementById('Ai4ez613i4');
+    if (triStateCheckboxI4) {
+        triStateCheckboxI4.indeterminate = true;
+    }
+
+    const triStateCheckboxI5 = document.getElementById('Ai4ez613i5');
+    if (triStateCheckboxI5) {
+        triStateCheckboxI5.indeterminate = true;
+    }
+
+    const triStateCheckboxI6 = document.getElementById('Ai4ez613i6');
+    if (triStateCheckboxI6) {
+        triStateCheckboxI6.indeterminate = true;
+    }
+
+    const triStateCheckboxI7 = document.getElementById('Ai4ez613i7');
+    if (triStateCheckboxI7) {
+        triStateCheckboxI7.indeterminate = true;
+    }
+
+    const triStateCheckboxI8 = document.getElementById('Ai4ez6191');
+    if (triStateCheckboxI8) {
+      triStateCheckboxI8.indeterminate = true;
+    }
+
     // display responsive component controls
     const displayControls = document.querySelectorAll('.docs-component--responsive-display__controls');
-    displayControls.forEach((displayControl) => {
-        const frame = displayControl.parentElement.querySelector('.docs-component--responsive-display__frame');
-        displayControl.addEventListener('click', event => {
+
+    for (var i = 0; i < displayControls.length; i++) {
+        const frame = displayControls[i].parentElement.querySelector('.docs-component--responsive-display__frame');
+        displayControls[i].addEventListener('click', function (event) {
             const clickTarget = event.target;
-            clearControls(displayControl);
+            clearControls(displayControls[i]);
             resizeFrame(clickTarget, frame);
             clickTarget.setAttribute('aria-pressed', true);
         })
-    });
+    }
 
     function clearControls(displayControl) {
-        Array.from(displayControl.children).forEach(button => {
-            button.setAttribute('aria-pressed', false);
-        });
+        let childrens = Array.from(displayControl.children)
+        for (var i = 0; i < childrens.length; i++) {
+            childrens[i].setAttribute('aria-pressed', false);
+        }
     }
 
     function resizeFrame(target, frame) {
@@ -197,5 +238,19 @@ $(document).ready(function () {
                 break;
         }
     }
-
 });
+
+function stepInputValue(inputId, stepDirection) {
+    let inputRef = document.getElementById(inputId);
+
+    if (inputRef) {
+        if(stepDirection === "up") {
+            ++inputRef.value;
+        } else if (stepDirection === "down") {
+            --inputRef.value;
+        }
+    } else {
+        console.warn("No element with id='" + inputId + "' found");
+    }
+}
+
