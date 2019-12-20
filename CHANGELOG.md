@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.0-rc.38"></a>
+# [0.4.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.37...v0.4.0-rc.38) (2019-12-20)
+
+
+### Bug Fixes
+
+* Add focus state to input group ([#540](https://github.com/SAP/fundamental-styles/issues/540)) ([d48ba72](https://github.com/SAP/fundamental-styles/commit/d48ba72))
+
+
+
 <a name="0.4.0-rc.37"></a>
 # [0.4.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.36...v0.4.0-rc.37) (2019-12-20)
 
