@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.0-rc.43"></a>
+# [0.4.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.42...v0.4.0-rc.43) (2019-12-20)
+
+
+### Features
+
+* checkbox and radio pseudo elements ([#546](https://github.com/SAP/fundamental-styles/issues/546)) ([65a123c](https://github.com/SAP/fundamental-styles/commit/65a123c))
+
+
+
 <a name="0.4.0-rc.42"></a>
 # [0.4.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.41...v0.4.0-rc.42) (2019-12-20)
 
