@@ -93,16 +93,12 @@ Do not use the input field if:
     <br />
     <div class="fd-form-item fd-form-item--horizontal fd-has-margin-none fd-popover">
         <label class="fd-form-label" for="input-1">Default input:</label>
-        <div class="fd-form-input-message-group">
             <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label">
-        </div>
     </div>
     <br><br>
     <div class="fd-form-item fd-form-item--horizontal fd-has-margin-none fd-popover">
         <label class="fd-form-label" for="input-1">Compact input:</label>
-        <div class="fd-form-input-message-group">
             <input class="fd-input fd-input--compact" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label">
-        </div>
     </div>
     <br /><br />
     <div class="fd-form-item fd-form-item--horizontal">
@@ -166,9 +162,7 @@ Along with Invalid and Warning, error messages should be displayed below the fie
 {% capture inputs %}
 <div class="fd-form-item fd-has-margin-none fd-popover">
     <label class="fd-form-label" for="input-1">Normal input:</label>
-    <div class="fd-form-input-message-group">
-        <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label">
-    </div>
+    <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label">
 </div>
 <br />
 <br />
