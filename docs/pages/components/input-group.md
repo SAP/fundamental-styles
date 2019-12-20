@@ -259,6 +259,32 @@ The Input with add-on supports actions. Actions can be shown with a text label o
 {% endcapture %}
 
 {% include display-component.html component=states %}
+
+## Focus
+
+The Input Group supports **focus** state, it can be added by putting `.is-focus` class to component.
+{% capture focus %}
+<div class="fd-form-item">
+    <label class="fd-form-label" for="">Default</label>
+    <div class="fd-input-group is-focus">
+        <span class="fd-input-group__addon">$</span>
+        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1234568910">
+    </div>
+</div>
+<br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="">Error State</label>
+    <div class="fd-input-group is-invalid is-focus">
+        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
+        <span class="fd-input-group__addon">
+            <span class="sap-icon--hide" role="presentation"></span>
+        </span>
+    </div>
+</div>
+{% endcapture %}
+
+{% include display-component.html component=focus %}
+
 ## Number input
 
 For an integer value input, a spinner can be added allowing the user to increase or decrease the value.
