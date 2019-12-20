@@ -137,22 +137,38 @@
 }
 
 @mixin fd-form-radio-focus($margin) {
-  $fd-radio-label-padding: 0.3125rem;
+  $fd-radio-label-padding: 0;
   $fd-radio-focus-offset: 0.125rem;
 
-  @include fd-focus() {
-    &::before {
-      content: "";
-      position: absolute;
-      border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
-      top: $margin - $fd-radio-focus-offset;
-      left: $margin - $fd-radio-focus-offset;
-      bottom: $margin - $fd-radio-focus-offset;
-      right: $fd-radio-label-padding - $fd-radio-focus-offset;
-      @content;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+    top: $margin - $fd-radio-focus-offset;
+    left: $margin - $fd-radio-focus-offset;
+    bottom: $margin - $fd-radio-focus-offset;
+    right: $fd-radio-label-padding - $fd-radio-focus-offset;
+    @content;
+  }
+}
 
-    box-shadow: none;
-    outline: none;
+@mixin fd-form-label() {
+  @include fd-reset();
+  @include fd-ellipsis();
+
+  width: fit-content;
+  position: relative;
+  max-width: 100%;
+  font-size: var(--sapFontSize);
+  color: var(--sapContent_LabelColor);
+  padding-right: 6px;
+  margin-right: 8px;
+  cursor: text;
+
+  @include fd-rtl() {
+    padding-left: 6px;
+    padding-right: 0;
+    margin-left: 8px;
+    margin-right: 0;
   }
 }

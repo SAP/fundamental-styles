@@ -22,22 +22,3 @@
 {% endset %}
 
 {{ format(example) }}
-
- <br><br>
-
-<h2>Label as Wrapper</h2>
-
-{% set example %}
-<label class="fd-form-label fd-form-label--radio" for="pDidh761">
-  <input type="radio" class="fd-radio" id="pDidh761" name="radio" checked>Field label
-</label>
-{% endset %}
-{{ format(example) }}
-
-{% set example %}
-<label class="fd-form-label fd-form-label--checkbox" for="Ai4ez611">
-  <input type="checkbox" class="fd-checkbox" id="Ai4ez611">Field label
-</label>
-{% endset %}
-{{ format(example) }}
-{% endblock %}

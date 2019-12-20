@@ -200,6 +200,11 @@ $(document).ready(function () {
         triStateCheckboxI7.indeterminate = true;
     }
 
+    const triStateCheckboxI8 = document.getElementById('Ai4ez6191');
+    if (triStateCheckboxI8) {
+      triStateCheckboxI8.indeterminate = true;
+    }
+
     // display responsive component controls
     const displayControls = document.querySelectorAll('.docs-component--responsive-display__controls');
 

@@ -2,5 +2,6 @@
 
 {% macro radio(properties="", state="", compact=false) -%}
     {%- set _id = utils.id() %}
-    <input type="radio" class="{{'fd-radio'}}{{ ' is-'+state if state }}{{ ' fd-radio--compact' if compact }}" id="{{_id}}" {{properties}}> <br/>
+    <input type="radio" class="{{'fd-radio'}}{{ ' is-'+state if state }}{{ ' fd-radio--compact' if compact }}" id="{{_id}}" {{properties}}>
+	<label class="fd-radio__label" for="{{_id}}">Label</label>
 {%- endmacro %}
