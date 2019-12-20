@@ -215,7 +215,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
     <label class="fd-form-label" for="">Disabled</label>
     <div class="fd-input-group is-disabled">
         <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" type="text" id="" name="" placeholder="Enter a value">
+        <input class="fd-input fd-input-group__input" disabled type="text" id="" name="" placeholder="Enter a value">
     </div>
 </div>
 <br />
@@ -223,14 +223,14 @@ The Input with add-on supports actions. Actions can be shown with a text label o
     <label class="fd-form-label" for="">Disabled Valid (Success)</label>
     <div class="fd-input-group is-valid is-disabled">
         <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1234568910">
+        <input class="fd-input fd-input-group__input" disabled type="text" id="" name="" value="1234568910">
     </div>
 </div>
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Disabled Invalid (Error)</label>
     <div class="fd-input-group is-invalid is-disabled">
-        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
+        <input class="fd-input fd-input-group__input" disabled type="text" id="" name="" value="1000000">
         <span class="fd-input-group__addon">
             <span class="sap-icon--hide" role="presentation"></span>
         </span>
@@ -241,16 +241,16 @@ The Input with add-on supports actions. Actions can be shown with a text label o
     <label class="fd-form-label" for="">Disabled Warning (Alert)</label>
     <div class="fd-input-group is-warning is-disabled">
         <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1234568910">
+        <input class="fd-input fd-input-group__input" disabled type="text" id="" name="" value="1234568910">
     </div>
 </div>
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Disabled Information</label>
     <div class="fd-input-group is-information is-disabled">
-        <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="" name="" value="1000000">
+        <input class="fd-input fd-input--compact fd-input-group__input" disabled type="text" id="" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--light fd-button--compact">
+            <button class="fd-input-group__button fd-button--light fd-button--compact" disabled>
                 Button
             </button>
         </span>

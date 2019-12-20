@@ -134,11 +134,7 @@ Help elements give the user information about the input. Two types of help eleme
     <div class="fd-form-item">
         <label class="fd-form-label fd-form-label--inline-help" for="input-44">
             Input with inline help:
-            <span class="fd-inline-help">
-                <span class="fd-inline-help__content fd-inline-help__content--bottom-left">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing.
-                </span>
-            </span>
+            <span class="fd-inline-help"></span>
         </label>
         <input class="fd-input" type="text" id="input-45">
     </div>
@@ -532,7 +528,43 @@ In special cases, there are only two mutually exclusive options. Combine them in
             </label>
         </div>
     </div>
+</fieldset><br /><br />
+<fieldset class="fd-fieldset" id="radiortl" dir="rtl">
+    <legend class="fd-fieldset__legend">Interaction States</legend>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio" id="iSpDidh761" name="radiortl" checked>
+            <label class="fd-radio__label" for="iSpDidh761">
+                Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio is-valid" id="iSpDidh7612" name="radiortl">
+            <label class="fd-radio__label" for="iSpDidh7612">
+                Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio is-invalid" id="iSpDidh7613" name="radiortl">
+            <label class="fd-radio__label" for="iSpDidh7613">
+                Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio is-warning" id="iSpDidh7614" name="radiortl">
+            <label class="fd-radio__label" for="iSpDidh7614">
+                Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio is-information" id="iSpDidh7615" name="radiortl">
+            <label class="fd-radio__label" for="iSpDidh7615">
+                Field label
+            </label>
+        </div>
+    </div>
 </fieldset>
+<br /><br />
 {% endcapture %}
 
 {% include display-component.html component=radio-buttons %}
