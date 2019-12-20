@@ -588,16 +588,22 @@ a contextual menu can be substituted in order to display all actions in one menu
                         <nav class="fd-menu fd-menu--addon-before">
                            <ul class="fd-menu__list">
                               <li>
-                                 <div class="fd-menu__addon-before"></div>
-                                 <a href="#" class="fd-menu__item">Ascending</a>
+                                 <a href="#" class="fd-menu__item">
+                                    <span class="fd-menu__addon-before"></span>
+                                    Ascending
+                                 </a>
                               </li>
                               <li>
-                                 <div class="fd-menu__addon-before"></div>
-                                 <a href="#" class="fd-menu__item">Decensing</a>
+                                 <a href="#" class="fd-menu__item">
+                                    <span class="fd-menu__addon-before"></span>
+                                    Decensing
+                                 </a>
                               </li>
                               <li>
-                                 <div class="fd-menu__addon-before"><span class="sap-icon--accept"></span></div>
-                                 <a href="#" class="fd-menu__item">Fix Column</a>
+                                 <a href="#" class="fd-menu__item">
+                                    <span class="fd-menu__addon-before sap-icon--accept"></span>
+                                    Fix Column
+                                 </a>
                               </li>
                            </ul>
                         </nav>
