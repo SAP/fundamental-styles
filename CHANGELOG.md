@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.0-rc.37"></a>
+# [0.4.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.36...v0.4.0-rc.37) (2019-12-20)
+
+
+### Bug Fixes
+
+* Can write inside disabled input ([#537](https://github.com/SAP/fundamental-styles/issues/537)) ([ff433d7](https://github.com/SAP/fundamental-styles/commit/ff433d7))
+
+
+
 <a name="0.4.0-rc.36"></a>
 # [0.4.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.4.0-rc.35...v0.4.0-rc.36) (2019-12-19)
 
