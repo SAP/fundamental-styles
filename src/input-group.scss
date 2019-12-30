@@ -72,7 +72,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
     background-color: transparent;
     border: none;
-    flex: 1 1 auto;
+    flex: 1;
     padding-right: 0.25rem;
     padding-left: 0.25rem;
 
@@ -104,6 +104,11 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
         padding-left: 0.625rem;
         padding-right: 0.25rem;
       }
+    }
+
+    /** Behaviour only for IE10+ */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      min-width: 160px;
     }
   }
 
