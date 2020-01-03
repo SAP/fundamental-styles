@@ -70,7 +70,7 @@ body {
 }
 
 .intro-section {
-    padding: 120px;
+    padding: 100px 120px;
     background-image: radial-gradient(circle at 3% 38%, #c9e6ee, #7bd2eb 78%);
 
     &__text {
@@ -104,7 +104,12 @@ body {
         border-radius: 8px;
         border: solid 1px #d3d3d3;
         background-color: #fff;
-        box-shadow: 0 0 10px 0 rgba(211, 211, 211, 0.9);
+        transition: all .2s ease-in-out;
+        
+        &:hover {
+            box-shadow: 0 0 10px 0 rgba(211, 211, 211, 0.9);
+            transform: scale(1.005);
+        }
     }
 
     &__item-title {
@@ -167,7 +172,6 @@ body {
         @extend %text;
         font-size: 20px;
         line-height: 1.4;
-        text-align: center;
     }
    
 }
@@ -237,8 +241,8 @@ body {
     
 }
 
-.footer {
-    margin: 16px 120px;
+.footer-section {
+    margin: 16px 120px 0;
     padding: 16px 0;
     @extend %text; 
     font-size: 12px;
@@ -336,7 +340,7 @@ body {
 }
 
 
-@media (max-width: 1024px){
+@media (max-width: 1224px){
     .intro-section {
         &__text {
             width: 100%;
@@ -361,15 +365,15 @@ body {
 
 @media (max-width: 900px){
     .libraries-section {
-        padding: 64px 44px;
+        padding: 80px 120px;
         &__container {
             grid-template-columns: auto;
         }
     }
 }
-@media (max-width: 640px){
+@media (max-width: 768px){
     .libraries-section {
-        padding: 64px 0;
+        padding: 64px 44px;
 
         &__container {
             grid-template-columns: auto;
@@ -377,15 +381,11 @@ body {
 
         &__title {
             @include title-mobile();
-            margin-bottom: 16px;
+            margin-bottom: 44px;
         }
-    
+
         &__item {
-            min-height: auto;
-            border: none;
-            box-shadow: none;
-            border-radius: 0;
-            border-bottom: solid 1px #d3d3d3;
+            min-height: 260px;
         }
 
         &__item-title {
@@ -400,6 +400,35 @@ body {
         &__more {
             font-size: 14px;
             line-height: 1.43;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .libraries-section {
+        padding: 64px 0;
+
+        &__container {
+            grid-gap: 0;
+        }
+
+        &__title {
+            @include title-mobile();
+            margin-bottom: 20px;
+        }
+
+        &__item {
+            min-height: auto;
+            border: none;
+            box-shadow: none;
+            border-radius: 0;
+            border-bottom: solid 1px #d3d3d3;
+            transition: none;
+
+            &:hover {
+                box-shadow: none;
+                transform: none;
+            }
         }
     }
 }
@@ -422,7 +451,7 @@ body {
 
         &__title {
             @include title-mobile();
-            margin-bottom: 16px;
+            margin-bottom: 44px;
         }
 
         &__item-title {
@@ -457,11 +486,6 @@ body {
 
 @media (max-width: 1024px){
     .community-section {
-        &__container {
-            grid-template-columns: auto auto;
-            grid-gap: 44px;
-        }
-
         &__text {
             width: 100%;
         }
@@ -471,10 +495,6 @@ body {
 @media (max-width: 768px){
     .community-section {
         padding: 44px;
-
-        &__container {
-            grid-template-columns: auto;
-        } 
 
         &__title {
             @include title-mobile();
@@ -487,18 +507,28 @@ body {
         &__text {
             @include text-mobile();
         }
-    
-        &__item {
-            margin-bottom: 44px;
-        }
 
     }
 }
 
+@media (max-width: 600px){
+    .community-section {
+        padding-bottom: 0;
+
+        &__container {
+            grid-template-columns: auto;
+        }
+
+        &__item {
+            margin-bottom: 44px;
+        }
+    }
+}
+
 @media (max-width: 768px) { 
-    .footer {
+    .footer-section {
         margin: 0;
-        padding: 44px;
+        padding: 16px 44px;
         flex-direction: column;
 
         &__container--left {
@@ -508,8 +538,8 @@ body {
 }
 
 
-@media (max-width: 640px) { 
-    .footer {
+@media (max-width: 600px) { 
+    .footer-section {
         margin: 0;
         padding: 44px;
         flex-direction: column;
