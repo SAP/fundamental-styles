@@ -7,14 +7,18 @@
 
 <body>
 
-    {% include topnav.html %}
+    {% if page.topnavhidden != true %}
+      {% include topnav.html %}
+    {%  endif %}
 
     <!-- Page Content -->
     <div class="main-content" id="tg-sb-content">
         <!-- Content Column -->
         {{content}}
         <!-- footer -->
-        {% include footer.html %}
+        {% if page.footerhidden != true %}
+            {% include footer.html %}
+        {%  endif %}
     </div>
 </body>
 {% if site.google_analytics %} {% include google_analytics.html %} {% endif %}
