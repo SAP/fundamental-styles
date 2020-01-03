@@ -17,17 +17,17 @@ footerhidden: true
     }
 </style>
 
-<div class="header" id="header">
-    <div class="header__hamburger">
+<div class="header-section" id="headerSection">
+    <div class="header-section__hamburger">
         <i id="hamburgerToggle" class="sap-icon--menu2" onclick="toggleHamburger()"></i>
     </div>
-    <div class="header__logo">
+    <div class="header-section__logo">
         <img 
             src="{{site.baseurl}}/images/land-page-assets/logo_text.png" 
             alt="logo with text"
             height="35" />
     </div>
-    <div id="headerLinks" class="header__links">
+    <div id="headerLinks" class="header-section__links">
         <a href="#libraries">Libraries</a>
         <a href="#features">Key Features</a>
         <a href="#about">About</a>
@@ -60,7 +60,7 @@ footerhidden: true
                 <p class="libraries-section__text">Delivers a Fiori 3.0 component library for building SAP user interfaces with any web technology, including artifacts like a UI kit, SAP icons, SAP font and component specifications.</p>
             </div>
             <div class="libraries-section__links">
-                <a class="libraries-section__more" href="./getting-started.html" target="_blank">Learn More</a>
+                <a class="libraries-section__more" href="{{site.baseurl}}/getting-started.html" target="_blank">Learn More</a>
                 <a class="libraries-section__more" href="https://github.com/SAP/fundamental-styles" target="_blank">GitHub</a>
             </div>
         </div>
@@ -232,7 +232,7 @@ footerhidden: true
     </div>
 </div>
 
-<a id="back2Top" href="#header" class="backToTopHidden">&#8593;</a>
+<a id="back2Top" href="#headerSection" class="backToTopHidden">&#8593;</a>
 
 <div id="responsiveMenu" class="responsive-menu">
     <a href="#libraries">Libraries</a>

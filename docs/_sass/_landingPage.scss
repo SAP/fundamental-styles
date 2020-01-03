@@ -35,6 +35,8 @@
     font-weight: 300;
 }
 
+$home-page-action-color: #007ea3;
+
 
 body {
     font-family: '72', sans-serif;
@@ -44,7 +46,7 @@ body {
     margin: 0;
 }
 
-.header {
+.header-section {
     min-height: 64px;
     padding: 0 44px;
     display: flex;
@@ -128,7 +130,7 @@ body {
         line-height: 1.75;
         font-weight: normal;
         margin-top: 16px;
-        color: #007EA3;
+        color: $home-page-action-color;
         text-decoration: none;
         padding-right: 20px;
     }
@@ -221,7 +223,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: #007EA3;
+        color: $home-page-action-color;
     }
 
     &__logo {
@@ -229,7 +231,7 @@ body {
     }
 
     a {
-        color: #007EA3;
+        color: $home-page-action-color;
         text-decoration: none;
     }
     
@@ -297,7 +299,7 @@ body {
     bottom: 100px;
     right: 30px;
     border-radius: 50%;
-    color: #007EA3;
+    color: $home-page-action-color;
     text-align: center;
     font-size: 20px;
     text-decoration: none;
@@ -307,7 +309,7 @@ body {
 // TABLET AND MOBILE
 
 @media (max-width: 1024px) { 
-    .header {
+    .header-section {
         &__links a{
             margin: 0 6px;  
         }
@@ -315,7 +317,7 @@ body {
 }
 
 @media (max-width: 768px) { 
-    .header {
+    .header-section {
         padding: 0 20px;
         justify-content: space-between;
         &__links {
@@ -544,20 +546,23 @@ body {
 
 
 // HAMBURGER MENU
-.header__hamburger {
-    min-width: 20px;
+.header-section__hamburger {
+    min-width: 25px;
     -moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
 
 .sap-icon--menu2::before {
+    font-size: 20px;
     transition: opacity .3s, transform .3s;
+    color: $home-page-action-color;
 }
 
 .sap-icon--decline::before {
-    font-size: 18px;
+    font-size: 20px;
     transition: opacity .3s, transform .3s;
     transform: rotate(-180deg);
+    color: $home-page-action-color;
 }
 
 .responsive-menu {
