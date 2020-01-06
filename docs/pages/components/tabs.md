@@ -17,7 +17,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
 ## Tabs in standard mode
 
 {% capture default-tab %}
-<ul class="fd-tabs" role="tablist">
+<ul class="fd-tabs fd-tabs--l" role="tablist">
     <li class="fd-tabs__item">
         <a class="fd-tabs__link" aria-controls="fuCwV550" href="#fuCwV550" role="tab">
             Link
@@ -52,22 +52,22 @@ Tabs are based on a folder metaphor and used to separate content into different 
 ## Tabs with Counters
 
 {% capture counter-tab %}
-<ul class="fd-tabs fd-tabs--compact" role="tablist">
+<ul class="fd-tabs fd-tabs--s fd-tabs--compact" role="tablist">
     <li class="fd-tabs__item">
+        <p class="fd-tabs__count">13</p>
         <a class="fd-tabs__link" aria-controls="d9vOir" href="#d9vOir" role="tab">
-            <p class="fd-tabs__count">13</p>
             Link
         </a>
     </li>
     <li class="fd-tabs__item">
+      <p class="fd-tabs__count">1</p>
       <a class="fd-tabs__link" aria-controls="bSj6ft" aria-selected="true" href="#bSj6ft" role="tab">
-          <p class="fd-tabs__count">1</p>
             Selected
         </a>
     </li>
     <li class="fd-tabs__item">
+        <p class="fd-tabs__count">97</p>
         <a class="fd-tabs__link" aria-controls="VrHfHi" href="#VrHfHi" role="tab">
-            <p class="fd-tabs__count">97</p>
             Link
         </a>
     </li>
@@ -89,7 +89,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
 
 ## Standard Tabs with `nav` element
 {% capture nav-tab %}
-<nav class="fd-tabs" role="tablist">
+<nav class="fd-tabs fd-tabs--l" role="tablist">
     <span class="fd-tabs__item">
         <a class="fd-tabs__link" aria-controls="kf8369" href="#kf8369" role="tab">
             Link
@@ -123,7 +123,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
 
 ## Icon Only Cozy Mode
 {% capture icon-only-tab %}
-<ul class="fd-tabs fd-tabs--icon-only" role="tablist">
+<ul class="fd-tabs fd-tabs--l fd-tabs--icon-only" role="tablist">
     <li class="fd-tabs__item fd-tabs__item--icon-only">
         <a class="fd-tabs__link" aria-controls="pliA92" href="#pliA92" role="tab">
             <span class="fd-tabs__icon sap-icon--cart">
@@ -161,7 +161,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
 
 ## Icon Only Compact Mode
 {% capture icon-only-compact-tab %}
-<ul class="fd-tabs fd-tabs--icon-only fd-tabs--compact" role="tablist">
+<ul class="fd-tabs fd-tabs--s fd-tabs--icon-only fd-tabs--compact" role="tablist">
     <li class="fd-tabs__item fd-tabs__item--icon-only">
         <a class="fd-tabs__link" aria-controls="0bT4aB" href="#0bT4aB" role="tab">
             <span class="fd-tabs__icon sap-icon--cart">
@@ -201,7 +201,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
 
 ## Cozy Process Mode
 {% capture process-tab %}
-<ul class="fd-tabs fd-tabs--process" role="tablist">
+<ul class="fd-tabs fd-tabs--l fd-tabs--process" role="tablist">
     <li class="fd-tabs__item">
         <a class="fd-tabs__link" aria-controls="NoQLy6" href="#NoQLy6" role="tab">
             <span class="fd-tabs__icon sap-icon--cart"></span>
@@ -249,7 +249,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
 
 ## Compact Process Mode
 {% capture compact-process-tab %}
-<ul class="fd-tabs fd-tabs--process fd-tabs--compact" role="tablist">
+<ul class="fd-tabs fd-tabs--s fd-tabs--process fd-tabs--compact" role="tablist">
     <li class="fd-tabs__item">
         <a class="fd-tabs__link" aria-controls="LHsxsZ" href="#LHsxsZ" role="tab">
             <span class="fd-tabs__icon sap-icon--cart"></span>
@@ -297,11 +297,13 @@ Tabs are based on a folder metaphor and used to separate content into different 
 
 ## Filter Cozy Mode
 {% capture filter-tab %}
-<ul class="fd-tabs fd-tabs--filter" role="tablist">
-    <li class="fd-tabs__item">
-        <a class="fd-tabs__link fd-tabs__link--header" aria-controls="5ZkDVE" href="#5ZkDVE" role="tab">
-            <span class="fd-tabs__counter-header">100</span>
-            <span class="fd-tabs__label">products</span>
+<ul class="fd-tabs fd-tabs--l fd-tabs--filter" role="tablist">
+    <li class="fd-tabs__item fd-tabs__item--header">
+        <a class="fd-tabs__link" aria-controls="5ZkDVE" href="#5ZkDVE" role="tab">
+            <span class="fd-tabs__header">
+                <span class="fd-tabs__counter-header">100</span>
+                <span class="fd-tabs__label">products</span>
+            </span>
         </a>
     </li>
     <div class="fd-tabs__separator"></div>
@@ -350,11 +352,13 @@ Tabs are based on a folder metaphor and used to separate content into different 
 
 ## Filter Compact Tabs
 {% capture filter-compact-tab %}
-<ul class="fd-tabs fd-tabs--filter fd-tabs--compact" role="tablist">
-    <li class="fd-tabs__item">
-        <a class="fd-tabs__link fd-tabs__link--header" aria-controls="YETAv8" href="#YETAv8" role="tab">
-            <span class="fd-tabs__counter-header">150</span>
-            <span class="fd-tabs__label">products</span>
+<ul class="fd-tabs fd-tabs--s fd-tabs--filter fd-tabs--compact" role="tablist">
+    <li class="fd-tabs__item fd-tabs__item--header">
+        <a class="fd-tabs__link" aria-controls="YETAv8" href="#YETAv8" role="tab">
+            <span class="fd-tabs__header">
+                <span class="fd-tabs__counter-header">150</span>
+                <span class="fd-tabs__label">products</span>
+            </span>
         </a>
     </li>
     <div class="fd-tabs__separator"></div>
@@ -401,7 +405,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
 
 
 {% capture semantic-tab %}
-<ul class="fd-tabs fd-tabs--icon-only fd-tabs--compact" role="tablist">
+<ul class="fd-tabs fd-tabs--s fd-tabs--icon-only fd-tabs--compact" role="tablist">
     <li class="fd-tabs__item fd-tabs__item--success">
         <a class="fd-tabs__link" aria-controls="XTsSDD" href="#XTsSDD" role="tab">
             <span class="fd-tabs__icon sap-icon--cart">
@@ -460,7 +464,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
 
 
 {% capture semantic-inline-tab %}
-<ul class="fd-tabs" role="tablist">
+<ul class="fd-tabs fd-tabs--l" role="tablist">
     <li class="fd-tabs__item fd-tabs__item--error">
         <a class="fd-tabs__link" aria-controls="5abyKZ" href="#5abyKZ" role="tab">
             <p class="fd-tabs__count">15</p>

@@ -44,43 +44,37 @@ $block: #{$fd-namespace}-tabs;
     }
   }
 
-  $fd-tabs-margin-bottom: $fd-margin-bottom !default;
-  $fd-tabs-border-width: 1px !default;
-  $fd-tabs-border-color: fd-color("neutral", 3) !default;
-  $fd-tabs-background-color: fd-color("background", 2) !default;
-  $fd-tabs-link-color: fd-color("text", 2) !default;
   $fd-tabs-selected-color: var(--sapSelectedColor);
-  $fd-tabs-link-padding-y: 0.875rem !default;
-  $fd-tabs-icon-link-padding-y: 1rem !default;
-  $fd-tabs-link-padding-x: fd-space("s") !default;
-  $fd-tabs-link-border-width: 3px !default;
-  $fd-tabs-link-border-color: fd-color("action", 1) !default;
+  $fd-tabs-border-width: 0.0625rem !default;
+  $fd-tabs-icon-link-padding-y: 0.875rem !default;
+  $fd-tabs-link-border-width: 0.1875rem !default;
   $fd-tabs-link-transition-params: $fd-animation--speed ease-in !default;
   $fd-tabs-icon-size: 1.125rem;
   $fd-tabs-icon-selection-height: 2.625rem;
   $fd-tabs-compact-icon-selection-height: 1.875rem;
   $fd-tabs-selection-padding-x: 0.188rem;
+
+  $fd-tabs-item-spacing-x: 0.25rem;
+
+  $fd-tabs-link-padding-y: 0.875rem !default;
+  $fd-tabs-item-padding-x: 0.75rem;
+
   $fd-tabs-compact-icon-size: 1rem;
   $fd-tabs-label-color: var(--sapContent_LabelColor);
-
-  --fd-tabs-border-color: var(--fd-color-neutral-3);
-  --fd-tabs-background-color: var(--fd-color-background-2);
-  --fd-tabs-link-color: var(--fd-color-text-2);
-  --fd-tabs-link-border-color: var(--fd-color-action-1);
+  $fd-tabs-active-link-line-offset-x: 0.1875rem;
 
   @include fd-reset();
-  @include fd-var-color("background-color", $fd-tabs-background-color, --fd-tabs-background-color);
 
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-bottom: $fd-tabs-margin-bottom;
   list-style: none;
   border-bottom-style: solid;
   border-bottom-width: $fd-tabs-border-width;
-
-  @include fd-var-color("border-bottom-color", $fd-tabs-background-color, --fd-tabs-background-color);
+  background-color: var(--sapObjectHeader_Background);
+  color: $fd-tabs-label-color;
+  border-color: var(--sapObjectHeader_BorderColor);
 
   &__count {
     @include fd-reset();
@@ -94,7 +88,8 @@ $block: #{$fd-namespace}-tabs;
     @include fd-reset();
 
     position: relative;
-    padding: $fd-tabs-link-padding-y $fd-tabs-link-padding-x;
+    padding: $fd-tabs-link-padding-y $fd-tabs-item-padding-x;
+    margin: 0 $fd-tabs-item-spacing-x;
 
     &--error {
       @include tabs-semantic(var(--sapErrorColor));
@@ -114,6 +109,16 @@ $block: #{$fd-namespace}-tabs;
 
     &--neutral {
       @include tabs-semantic(var(--sapNeutralColor));
+    }
+
+    &:last-child {
+      margin-right: 0;
+      padding-right: 0;
+    }
+
+    &:first-child {
+      margin-left: 0;
+      padding-left: 0;
     }
   }
 
@@ -136,20 +141,16 @@ $block: #{$fd-namespace}-tabs;
 
   &__link {
     @include fd-reset();
+    @include action-cursor();
 
     display: block;
     position: relative;
-    padding: 0 $fd-tabs-selection-padding-x;
     text-decoration: none;
-
-    @include fd-type("0");
-    @include action-cursor();
-    @include fd-var-color("color", $fd-tabs-link-color, --fd-tabs-link-color);
-
+    color: var(--sapSelectedColor);
     line-height: 1rem;
 
     &:link {
-      @include fd-var-color("color", $fd-tabs-link-color, --fd-tabs-link-color);
+      color: var(--sapSelectedColor);
     }
 
     &::after {
@@ -157,10 +158,10 @@ $block: #{$fd-namespace}-tabs;
       content: "";
       position: absolute;
       bottom: -$fd-tabs-link-padding-y;
-      left: 0;
+      left: -$fd-tabs-active-link-line-offset-x;
       display: inline-block;
       height: $fd-tabs-link-border-width;
-      width: 100%;
+      width: calc(100% + #{2 * $fd-tabs-active-link-line-offset-x});
       background-color: transparent;
       border-radius: $fd-border-radius $fd-border-radius 0 0;
     }
@@ -173,7 +174,7 @@ $block: #{$fd-namespace}-tabs;
       @include fd-var-color("color", $fd-color--action, --fd-color-action-1);
 
       &::after {
-        @include fd-var-color("background-color", $fd-tabs-link-border-color, --fd-tabs-link-border-color);
+        background-color: var(--sapSelectedColor);
       }
 
       .#{$block}__icon {
@@ -204,7 +205,9 @@ $block: #{$fd-namespace}-tabs;
   }
 
   &__process {
-    padding: 0 0.375rem 0.25rem 0.25rem;
+    white-space: nowrap;
+    max-width: 7.5rem;
+    line-height: 0.875rem;
   }
 
   &__overflow {
@@ -216,6 +219,7 @@ $block: #{$fd-namespace}-tabs;
   &__process-icon {
     color: var(--sapContent_NonInteractiveIconColor);
     padding: 0 0.5rem;
+    display: flex;
 
     @include fd-icon("process", "m");
   }
@@ -236,6 +240,12 @@ $block: #{$fd-namespace}-tabs;
     border-right: solid var(--sapGroup_TitleBorderColor);
     border-right-width: 1px;
     line-height: 2rem;
+    margin: 0 $fd-tabs-item-spacing-x;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
   }
 
   &--icon-only,
@@ -249,25 +259,11 @@ $block: #{$fd-namespace}-tabs;
   &--icon-only,
   &--process {
     .#{$block}__link {
+      margin: 0 $fd-tabs-selection-padding-x;
+
       &::after {
         bottom: -$fd-tabs-icon-link-padding-y;
       }
-    }
-
-    .#{$block}__item {
-      padding: $fd-tabs-icon-link-padding-y 0.25rem;
-    }
-  }
-
-  &--icon-only {
-    .#{$block}__count {
-      position: absolute;
-      left: calc(100% - 1px);
-      top: 0;
-    }
-
-    .#{$block}__item {
-      margin: 0 0.75rem;
     }
   }
 
@@ -275,7 +271,7 @@ $block: #{$fd-namespace}-tabs;
   &--filter {
     .#{$block}__count {
       position: absolute;
-      left: calc(100% + 3px);
+      left: calc(100% + 0.1875rem);
       top: 0;
     }
   }
@@ -284,6 +280,9 @@ $block: #{$fd-namespace}-tabs;
     .#{$block}__item {
       display: flex;
       align-items: center;
+      margin: 0 $fd-tabs-item-spacing-x 0 0;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -292,7 +291,13 @@ $block: #{$fd-namespace}-tabs;
     align-items: center;
 
     .#{$block}__item {
-      padding: 0 0.5rem;
+      width: 5.375rem;
+      padding: 0 $fd-tabs-item-spacing-x;
+      margin: 0;
+
+      &--header {
+        width: auto;
+      }
     }
 
     .#{$block}__icon {
@@ -301,23 +306,32 @@ $block: #{$fd-namespace}-tabs;
 
     .#{$block}__label {
       line-height: 0.875rem;
+      white-space: nowrap;
+      overflow: hidden;
     }
 
     .#{$block}__link {
+      height: 5.5rem;
       padding: 0.875rem $fd-tabs-selection-padding-x 0.625rem $fd-tabs-selection-padding-x;
       text-align: center;
       display: flex;
+      justify-content: center;
       align-items: center;
       flex-direction: column;
 
-      &--header {
-        padding: 1.625rem $fd-tabs-selection-padding-x 1.875rem $fd-tabs-selection-padding-x;
-        flex-direction: row;
-        height: 5.5rem;
-      }
-
       &::after {
         bottom: 0;
+      }
+
+      @include fd-focus() {
+        box-shadow: none;
+        outline: none;
+
+        .#{$block}__icon,
+        .#{$block}__header {
+          outline-offset: 0;
+          outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+        }
       }
     }
   }
@@ -343,23 +357,24 @@ $block: #{$fd-namespace}-tabs;
       }
     }
 
-    .#{$block}__link--header {
-      padding: 1.375rem $fd-tabs-selection-padding-x;
-      height: 4.75rem;
+    &.#{$block}--filter {
+      .#{$block}__link {
+        height: 4.75rem;
+      }
     }
   }
 
   &--s {
-    margin: 0 1rem;
+    padding: 0 1rem;
   }
 
   &--m,
   &--l {
-    margin: 0 2rem;
+    padding: 0 2rem;
   }
 
   &--xl,
   &--xxl {
-    margin: 0 3rem;
+    padding: 0 3rem;
   }
 }
