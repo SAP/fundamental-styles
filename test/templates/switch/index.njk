@@ -1,13 +1,13 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "./component.njk" import toggle %}
+{% from "./component.njk" import switch %}
 
 {% block content %}
 
-<h3>Cozy Toggle (default)</h3>
+<h3>Cozy Switch (default)</h3>
 {% set example %}
 <label>
-{{  toggle(
+{{  switch(
       modifier={
           block: []
       }
@@ -16,16 +16,16 @@
 </label>
 
 <label>
-{{  toggle(
+{{  switch(
         modifier={
-            block: ['no-label']
+            block: ['no-text']
         }
     )
 }}
 </label>
 
 <label>
-{{  toggle(
+{{  switch(
         modifier={
             block: ['semantic']
         }
@@ -37,10 +37,10 @@
 
 <br><br><br>
 
-<h3>Compact Toggle</h3>
+<h3>Compact Switch</h3>
 {% set example %}
 <label>
-{{  toggle(
+{{  switch(
         modifier={
             block: ['compact']
         }
@@ -50,13 +50,13 @@
 </label>
 
 <label>
-{{  toggle(
+{{  switch(
         properties={
             offLabel: 'OFF',
             onLabel: 'ON'
         },
         modifier={
-            block: ['compact', 'no-label']
+            block: ['compact', 'no-text']
         }
 
     )
@@ -64,7 +64,7 @@
 </label>
 
 <label>
-{{  toggle(
+{{  switch(
         properties={},
         modifier={
             block: ['compact', 'semantic']
@@ -82,7 +82,7 @@
 {% set example %}
 </label>
 <label>
-{{  toggle(
+{{  switch(
         modifier={
             block: ['compact']
         },
@@ -93,9 +93,9 @@
 }}
 </label>
 <label>
-{{  toggle(
+{{  switch(
         modifier={
-            block: ['compact', 'no-label']
+            block: ['compact', 'no-text']
         },
         state={
             checked: true
@@ -104,7 +104,7 @@
 }}
 </label>
 <label>
-{{  toggle(
+{{  switch(
         modifier={
             block: ['compact', 'semantic']
         },
@@ -125,7 +125,7 @@
 <h2>disabled</h2>
 {% set example %}
 <label>
-{{  toggle(
+{{  switch(
         modifier={
             block: ['compact', 'semantic']
         },
@@ -136,7 +136,7 @@
 }}
 </label>
 <label>
-{{  toggle(
+{{  switch(
         modifier={
             block: ['compact']
         },
@@ -147,7 +147,7 @@
 }}
 </label>
 <label>
-{{  toggle(
+{{  switch(
         modifier={
             block: ['compact', 'semantic']
         },
@@ -159,7 +159,7 @@
 }}
 </label>
 <label>
-{{  toggle(
+{{  switch(
         modifier={
             block: ['compact']
         },
@@ -176,7 +176,7 @@
 <h2>Inline label</h2>
 {% set example %}
 <label>
-{{  toggle(
+{{  switch(
         properties={
             inlineLabel: 'Testing a long label here'
         },
@@ -188,7 +188,7 @@
 }}
 </label>
 <label>
-{{  toggle(
+{{  switch(
         properties={
             inlineLabel: 'Short label'
         },
@@ -200,7 +200,7 @@
 }}
 </label>
 <label>
-{{  toggle(
+{{  switch(
         properties={
             inlineLabel: 'Testing a long label here'
         }
@@ -208,7 +208,7 @@
 }}
 </label>
 <label>
-{{  toggle(
+{{  switch(
         properties={
             inlineLabel: 'Testing a long label here'
         },

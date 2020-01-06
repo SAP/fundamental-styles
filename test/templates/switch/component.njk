@@ -1,12 +1,12 @@
 {% import "./../utils.njk" as utils %}
 <!--
-toggle:
+switch:
     properties={},
     modifier={ block: [] },
     state={},
     aria={}
 -->
-{% macro toggle(properties={}, modifier={}, state={}, aria={}, classes=[]) -%}
+{% macro switch(properties={}, modifier={}, state={}, aria={}, classes=[]) -%}
 {%- set _id = properties.id or utils.id() -%}
 {%- set semantic = 'false' -%}
 {%- set noLabel = 'false' -%}
@@ -14,29 +14,29 @@ toggle:
     {%- if m == 'semantic' -%}
         {%- set semantic = 'true' -%}
     {%- endif -%}
-    {%- if m == 'no-label' -%}
+    {%- if m == 'no-text' -%}
         {%- set noLabel = 'true' -%}
     {%- endif -%}
 {%- endfor -%}
 {%- if semantic == 'true' -%}
     {%- set noLabel = 'true' -%}
 {%- endif -%}
-<span class="fd-toggle{{ modifier.block | modifier('toggle') }}{{ ' is-disabled' if state.disabled }}{{ classes | classes }}"{{ aria | aria }}>
-    <input class="fd-toggle__input" type="checkbox" name="" value="" id="{{ _id }}"{{ ' disabled' if state.disabled }}{{ ' checked' if state.checked }}>
-    <div class="fd-toggle__wrapper">
-        <div class="fd-toggle__inner">
+<span class="fd-switch{{ modifier.block | modifier('switch') }}{{ ' is-disabled' if state.disabled }}{{ classes | classes }}"{{ aria | aria }}>
+    <input class="fd-switch__input" type="checkbox" name="" value="" id="{{ _id }}"{{ ' disabled' if state.disabled }}{{ ' checked' if state.checked }}>
+    <div class="fd-switch__wrapper">
+        <div class="fd-switch__track">
             {%- if noLabel =='false' -%}
-                <span class="fd-toggle__label fd-toggle__label--on">on</span>
+                <span class="fd-switch__text fd-switch__text--on">on</span>
             {%- endif -%}
             {%- if semantic =='true' -%}
-                <span class="fd-toggle__label fd-toggle__icon--on sap-icon--accept"></span>
+                <span class="fd-switch__text fd-switch__icon--on sap-icon--accept"></span>
             {%- endif -%}
-            <span class="fd-toggle__switch" role="presentation"></span>
+            <span class="fd-switch__handle" role="presentation"></span>
             {%- if noLabel =='false' -%}
-                <span class="fd-toggle__label fd-toggle__label--off">off</span>
+                <span class="fd-switch__text fd-switch__text--off">off</span>
             {%- endif -%}
             {%- if semantic =='true' -%}
-                <span class="fd-toggle__label fd-toggle__icon--off sap-icon--decline"></span>
+                <span class="fd-switch__text fd-switch__icon--off sap-icon--decline"></span>
             {%- endif -%}
         </div>
     </div>

@@ -21,14 +21,14 @@ This is basic usage of toggle
 <div class="fd-form-group">
     <div class="fd-form-item">
         <label class="fd-form-label">Toggle with label</label>
-        <label class="fd-form-label fd-form-label--toggle">
+        <label class="fd-switch__label">
             <span class="fd-switch">
                 <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3911">
                 <div class="fd-switch__wrapper">
                     <div class="fd-switch__track">
-                        <span class="fd-switch__label fd-switch__label--on">on</span>
+                        <span class="fd-switch__text fd-switch__text--on">on</span>
                         <span class="fd-switch__handle" role="presentation"></span>
-                        <span class="fd-switch__label fd-switch__label--off">off</span>
+                        <span class="fd-switch__text fd-switch__text--off">off</span>
                     </div>
                 </div>
             </span>
@@ -36,14 +36,14 @@ This is basic usage of toggle
     </div>
     <div class="fd-form-item">
         <label class="fd-form-label">Compact Toggle with label</label>
-        <label class="fd-form-label fd-form-label--toggle">
+        <label class="fd-switch__label">
             <span class="fd-switch fd-switch--compact">
                 <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3911">
                 <div class="fd-switch__wrapper">
                     <div class="fd-switch__track">
-                        <span class="fd-switch__label fd-switch__label--on">on</span>
+                        <span class="fd-switch__text fd-switch__text--on">on</span>
                         <span class="fd-switch__handle" role="presentation"></span>
-                        <span class="fd-switch__label fd-switch__label--off">off</span>
+                        <span class="fd-switch__text fd-switch__text--off">off</span>
                     </div>
                 </div>
             </span>
@@ -54,14 +54,14 @@ This is basic usage of toggle
 {% include display-component.html component=default %}
 
 ## Toggle without Labels on Sides
-When there is no need to put any label on toggle sides, it's mandatory to add `fd-switch--no-label` modifier.
+When there is no need to put any label on toggle sides, it's mandatory to add `fd-switch--no-text` modifier.
 
 {% capture default %}
 <div class="fd-form-group">
     <div class="fd-form-item">
         <label class="fd-form-label">Toggle without label</label>
-        <label class="fd-form-label fd-form-label--toggle">
-            <span class="fd-switch fd-switch--no-label">
+        <label class="fd-switch__label">
+            <span class="fd-switch fd-switch--no-text">
                 <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3251">
                 <div class="fd-switch__wrapper">
                     <div class="fd-switch__track">
@@ -73,8 +73,8 @@ When there is no need to put any label on toggle sides, it's mandatory to add `f
     </div>
     <div class="fd-form-item">
         <label class="fd-form-label">Compact Toggle without label</label>
-        <label class="fd-form-label fd-form-label--toggle">
-            <span class="fd-switch fd-switch--no-label fd-switch--compact">
+        <label class="fd-switch__label">
+            <span class="fd-switch fd-switch--no-text fd-switch--compact">
                 <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3431">
                 <div class="fd-switch__wrapper">
                     <div class="fd-switch__track">
@@ -99,14 +99,14 @@ When there is no need to put any label on toggle sides, it's mandatory to add `f
 <div class="fd-form-group">
     <div class="fd-form-item">
         <label class="fd-form-label">Semantic Toggle</label>
-        <label class="fd-form-label fd-form-label--toggle">
+        <label class="fd-switch__label">
             <span class="fd-switch fd-switch--semantic">
                 <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3251">
                 <div class="fd-switch__wrapper">
                     <div class="fd-switch__track">
-                        <span class="fd-switch__label fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
+                        <span class="fd-switch__text fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
                         <span class="fd-switch__handle" role="presentation"></span>
-                        <span class="fd-switch__label fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
+                        <span class="fd-switch__text fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
                     </div>
                 </div>
             </span>
@@ -114,14 +114,14 @@ When there is no need to put any label on toggle sides, it's mandatory to add `f
     </div>
     <div class="fd-form-item">
         <label class="fd-form-label">Semantic Compact Toggle</label>
-        <label class="fd-form-label fd-form-label--toggle">
+        <label class="fd-switch__label">
             <span class="fd-switch fd-switch--semantic fd-switch--compact">
                 <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3431">
                 <div class="fd-switch__wrapper">
                     <div class="fd-switch__track">
-                        <span class="fd-switch__label fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
+                        <span class="fd-switch__text fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
                         <span class="fd-switch__handle" role="presentation"></span>
-                        <span class="fd-switch__label fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
+                        <span class="fd-switch__text fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
                     </div>
                 </div>
             </span>
@@ -135,32 +135,32 @@ When there is no need to put any label on toggle sides, it's mandatory to add `f
 
 {% capture default %}
 <div dir="rtl">
-    <label class="fd-form-label fd-form-label--toggle" >
+    <label class="fd-switch__label">
         <span class="fd-switch fd-switch--semantic" >
             <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3911">
             <div class="fd-switch__wrapper">
                 <div class="fd-switch__track">
-                    <span class="fd-switch__label fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
+                    <span class="fd-switch__text fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
                     <span class="fd-switch__handle" role="presentation"></span>
-                    <span class="fd-switch__label fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
+                    <span class="fd-switch__text fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
                 </div>
             </div>
         </span>
     </label>
-    <label class="fd-form-label fd-form-label--toggle">
+    <label class="fd-switch__label">
         <span class="fd-switch fd-switch--semantic fd-switch--compact" >
             <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3911">
             <div class="fd-switch__wrapper">
                 <div class="fd-switch__track">
-                   <span class="fd-switch__label fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
+                   <span class="fd-switch__text fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
                    <span class="fd-switch__handle" role="presentation"></span>
-                   <span class="fd-switch__label fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
+                   <span class="fd-switch__text fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
                </div>
             </div>
         </span>
     </label>
-    <label class="fd-form-label fd-form-label--toggle">
-        <span class="fd-switch fd-switch--no-label fd-switch--compact" >
+    <label class="fd-switch__label">
+        <span class="fd-switch fd-switch--no-text fd-switch--compact" >
             <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3911">
             <div class="fd-switch__wrapper">
                 <div class="fd-switch__track">
@@ -169,8 +169,8 @@ When there is no need to put any label on toggle sides, it's mandatory to add `f
             </div>
         </span>
     </label>
-    <label class="fd-form-label fd-form-label--toggle">
-        <span class="fd-switch fd-switch--no-label" >
+    <label class="fd-switch__label">
+        <span class="fd-switch fd-switch--no-text" >
             <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3911">
             <div class="fd-switch__wrapper">
                 <div class="fd-switch__track">

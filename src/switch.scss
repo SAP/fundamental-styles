@@ -54,6 +54,19 @@ $block: #{$fd-namespace}-switch;
   padding: $fd-switch-container-padding-y 0;
   overflow: hidden;
 
+  &__label {
+    @include fd-form-label();
+
+    overflow: initial;
+    display: flex;
+    align-items: center;
+    padding: 0;
+
+    &.is-disabled {
+      opacity: 0.4;
+    }
+  }
+
   &__wrapper {
     // background: darken(@sapUiButtonBackground,7);
     background-color: #ededed;
@@ -77,7 +90,7 @@ $block: #{$fd-namespace}-switch;
     min-width: 4.25rem;
   }
 
-  &__label {
+  &__text {
     @include fd-reset();
 
     font-size: var(--sapFontSmallSize);
@@ -103,7 +116,7 @@ $block: #{$fd-namespace}-switch;
   }
 
   &__icon,
-  &__label {
+  &__text {
     &--on {
       margin: 0 0 0 0.125rem;
     }
@@ -168,7 +181,7 @@ $block: #{$fd-namespace}-switch;
 
   @include fd-rtl() {
     .#{$block}__icon,
-    .#{$block}__label {
+    .#{$block}__text {
       &--on {
         margin: 0 0.125rem 0 0;
       }
@@ -238,7 +251,7 @@ $block: #{$fd-namespace}-switch;
     }
   }
 
-  &--no-label {
+  &--no-text {
     .#{$block}__wrapper {
       width: $fd-switch-track-no-label-width;
       height: $fd-switch-track-no-label-height;
