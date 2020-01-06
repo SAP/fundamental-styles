@@ -466,32 +466,32 @@ Tabs are based on a folder metaphor and used to separate content into different 
 {% capture semantic-inline-tab %}
 <ul class="fd-tabs fd-tabs--l" role="tablist">
     <li class="fd-tabs__item fd-tabs__item--error">
+        <p class="fd-tabs__count">15</p>
         <a class="fd-tabs__link" aria-controls="5abyKZ" href="#5abyKZ" role="tab">
-            <p class="fd-tabs__count">15</p>
             Error
         </a>
     </li>
     <li class="fd-tabs__item fd-tabs__item--information">
+      <p class="fd-tabs__count">9</p>
       <a class="fd-tabs__link" aria-controls="wupC7s" aria-selected="true" href="#wupC7s" role="tab">
-          <p class="fd-tabs__count">9</p>
             Information
         </a>
     </li>
     <li class="fd-tabs__item fd-tabs__item--warning">
+        <p class="fd-tabs__count">31</p>
         <a class="fd-tabs__link" aria-controls="XlKpQM" href="#XlKpQM" role="tab">
-            <p class="fd-tabs__count">31</p>
             Warning
         </a>
     </li>
     <li class="fd-tabs__item fd-tabs__item--success">
+        <p class="fd-tabs__count">65</p>
         <a class="fd-tabs__link" aria-controls="3dUJAI" href="#3dUJAI" role="tab">
-            <p class="fd-tabs__count">65</p>
             Success
         </a>
     </li>
     <li class="fd-tabs__item fd-tabs__item--neutral">
+        <p class="fd-tabs__count">159</p>
         <a class="fd-tabs__link" aria-controls="TWlAup" href="#TWlAup" role="tab">
-            <p class="fd-tabs__count">159</p>
             Neutral
         </a>
     </li>

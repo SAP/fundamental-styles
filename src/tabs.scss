@@ -143,15 +143,12 @@ $block: #{$fd-namespace}-tabs;
     @include fd-reset();
     @include action-cursor();
 
+    transition: 0s;
     display: block;
     position: relative;
     text-decoration: none;
-    color: var(--sapSelectedColor);
+    color: var(--sapContent_LabelColor);
     line-height: 1rem;
-
-    &:link {
-      color: var(--sapSelectedColor);
-    }
 
     &::after {
       transition: all $fd-tabs-link-transition-params;
@@ -163,15 +160,11 @@ $block: #{$fd-namespace}-tabs;
       height: $fd-tabs-link-border-width;
       width: calc(100% + #{2 * $fd-tabs-active-link-line-offset-x});
       background-color: transparent;
-      border-radius: $fd-border-radius $fd-border-radius 0 0;
-    }
-
-    @include fd-hover() {
-      @include fd-var-color("color", fd-color-state("selected", "action"), --fd-color-action-selected);
+      border-radius: 0.125rem 0.125rem 0 0;
     }
 
     @include fd-selected() {
-      @include fd-var-color("color", $fd-color--action, --fd-color-action-1);
+      color: var(--sapSelectedColor);
 
       &::after {
         background-color: var(--sapSelectedColor);
@@ -181,6 +174,14 @@ $block: #{$fd-namespace}-tabs;
         color: var(--sapContent_ContrastIconColor);
         background-color: $fd-tabs-selected-color;
       }
+    }
+
+    @include fd-focus() {
+      box-shadow: none;
+      outline-offset: -0.0625rem;
+      outline-style: var(--sapContent_FocusStyle);
+      outline-width: var(--sapContent_FocusWidth);
+      outline-color: var(--sapContent_FocusColor);
     }
   }
 
