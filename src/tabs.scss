@@ -214,7 +214,7 @@ $block: #{$fd-namespace}-tabs;
   &__overflow {
     margin-left: auto;
 
-    @include fd-icon('navigation-down-arrow', 'm');
+    @include fd-icon('slim-arrow-down', 'm');
   }
 
   &__process-icon {
@@ -287,6 +287,10 @@ $block: #{$fd-namespace}-tabs;
       margin: 0 $fd-tabs-item-spacing-x 0 0;
       padding-left: 0;
       padding-right: 0;
+    }
+
+    .#{$block}__overflow {
+      @include fd-icon('slim-arrow-right', 'm');
     }
   }
 
