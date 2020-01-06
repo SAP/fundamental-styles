@@ -248,8 +248,9 @@ body {
     font-size: 12px;
     line-height: 1.33;
     font-weight: normal;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto;
+
     align-items: center;
     border-top: 2px solid #eeeeee;
     color: #404040;
@@ -257,26 +258,32 @@ body {
     &__slogan-logo {
         display: flex;
         align-items: center;
+        width: 100%;
     }
 
     &__slogan{
         font-size: 14px;
         color: #767676;
         margin-right: 16px;
+        min-width: 120px;
     }
 
     &__copyright {
         margin-left: 24px;
         color: #404040;
+        width: 100%;
     }
 
     &__container--left {
         display: flex;
         align-items: center;
+        justify-self: start;
     }
 
     &__container--right {
+        justify-self: end;
         display: flex;
+        justify-content: space-between;
         a {
             text-decoration: none;
             margin-left: 24px;
@@ -525,22 +532,32 @@ body {
     }
 }
 
+@media (max-width: 990px) { 
+    .footer-section {
+        grid-template-columns: auto;
+
+        &__container--left {
+            margin-bottom: 16px;
+            justify-self: center;
+        }
+
+        &__container--right {
+            justify-self: center;
+        }
+    }
+    
+}
+
 @media (max-width: 768px) { 
     .footer-section {
         margin: 0;
         padding: 16px 44px;
-        flex-direction: column;
-
-        &__container--left {
-            margin-bottom: 16px;
-        }
     }
 }
 
 
 @media (max-width: 600px) { 
     .footer-section {
-        margin: 0;
         padding: 44px;
         flex-direction: column;
         align-items: center;
@@ -559,11 +576,21 @@ body {
         &__container--right {
             flex-direction: column;
             align-items: center;
+            margin-bottom: 70px;
 
             a {
                 margin-top: 24px;
                 margin-left: 0;
             }
+        }
+
+        &__slogan-logo {
+            width: 100%;
+            justify-content: center;
+        }
+
+        &__copyright {
+            text-align: center;
         }
     }
 }
