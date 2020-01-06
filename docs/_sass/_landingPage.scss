@@ -71,7 +71,9 @@ body {
 
 .intro-section {
     padding: 100px 120px;
-    background-image: radial-gradient(circle at 3% 38%, #c9e6ee, #7bd2eb 78%);
+    background-image: url('../images/land-page-assets/hero_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &__text {
         width: 70%;
@@ -178,7 +180,9 @@ body {
 
 .about-section {
     padding: 140px 120px;
-    background-image: radial-gradient(circle at 3% 38%, #c9e6ee, #7bd2eb 80%);
+    background-image: url('../images/land-page-assets/about_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &__title {
         @extend %text;
