@@ -222,6 +222,9 @@ $block: #{$fd-namespace}-tabs;
     display: flex;
 
     @include fd-icon("process", "m");
+
+    font-size: 1rem;
+    line-height: 1;
   }
 
   &__label {
@@ -238,7 +241,7 @@ $block: #{$fd-namespace}-tabs;
   &__separator {
     height: 2rem;
     border-right: solid var(--sapGroup_TitleBorderColor);
-    border-right-width: 1px;
+    border-right-width: 0.0625rem;
     line-height: 2rem;
     margin: 0 $fd-tabs-item-spacing-x;
   }
