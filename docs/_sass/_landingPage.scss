@@ -75,6 +75,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
+    &__container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
     &__text {
         width: 70%;
         margin-top: 16px;
@@ -84,6 +89,8 @@ body {
 
 .libraries-section {
     padding: 140px 120px 64px 120px;
+    max-width: 1440px;
+    margin: 0 auto;
 
     &__title {
         @extend %text;
@@ -145,6 +152,8 @@ body {
 
 .features-section {
     padding: 80px 120px 140px 120px;
+    max-width: 1440px;
+    margin: 0 auto;
 
     &__title {
         @extend %text;
@@ -191,6 +200,8 @@ body {
     }
 
     &__container {
+        max-width: 1440px;
+        margin: 0 auto;
         display: grid;
         grid-gap: 24px;
         grid-template-columns: auto auto auto;
@@ -205,6 +216,7 @@ body {
 
 .community-section {
     padding: 140px 120px;
+    max-width: 1440px;
     margin: 0 auto;
 
     &__title {
@@ -452,7 +464,7 @@ body {
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 600px){
     .features-section {
         padding: 0 44px 44px 44px;
 
