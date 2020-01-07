@@ -5,65 +5,271 @@ sidebar:
 toc: false
 permalink: index.html
 layout: default-no-sidebar
+topnavhidden: true
+footerhidden: true 
 ---
 
-<div class="docs-home_hero">
-    <div class="fd-container fd-container--fluid">
-        <div class="fd-col--12 docs-home_hero-content">
-            <h1 class="docs-home_hero-heading"><span class="docs-home_hero-bold">Develop</span> with Fundamental Library
-                <br>Styles.</h1>
-            <p class="docs-home_hero-description">
-                An open source library to consistent user interface across web applications.
-            </p>
-            <a class="fd-button--emphasized docs-home_hero-btn"
-               href="components/index.html">
-                EXPLORE COMPONENTS
-            </a>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <a class="fd-button--emphasized docs-home_hero-btn"
-               href="getting-started.html">
-                GETTING STARTED
-            </a>
-            <br>
-            CURRENT VERSION v{{site.library_version}}
-        </div>
+<style>
+    .main-content {
+        height: 100vh !important;
+        background-color: #ffffff !important;
+        position: relative;
+    }
+</style>
+
+<div class="header-section" id="headerSection">
+    <div class="header-section__hamburger">
+        <i id="hamburgerToggle" class="sap-icon--menu2" onclick="toggleHamburger()"></i>
+    </div>
+    <div class="header-section__logo">
+        <img 
+            src="{{site.baseurl}}/images/land-page-assets/logo_text.png" 
+            alt="logo with text"
+            height="35" />
+    </div>
+    <div id="headerLinks" class="header-section__links">
+        <a href="#libraries">Libraries</a>
+        <a href="#features">Key Features</a>
+        <a href="#about">About</a>
+        <a href="#community">Community</a>
+        <a href="mailto:fundamental@sap.com" target="_blank">Email Us</a>
     </div>
 </div>
 
-<div class="docs-home_panel">
-    <h1 class="docs-home_panel-title"><a href="foundation/index.html">foundation.</a></h1>
-    <div class="fd-container fd-container--fluid">
-        <div class="fd-col--6">
-                    <h2 class="docs-home_panel-heading">Spacing.</h2>
-                    <p class="docs-home_panel-description">Spacing helps content to breathe as well as create hierarchy
-                        and depth. It ensures optimal readability and space efficiency, all heights and widths are
-                        calculated from a base unit or 4.</p>
-                    <a href="foundation/spacing.html"
-                       class="docs-home_panel-action">READ MORE</a>
-        </div>
-        <div class="fd-col--6">
-            <h2 class="docs-home_panel-heading">Type.</h2>
-            <p class="docs-home_panel-description">Fundamental Library Styles uses a set of sans-serif system fonts.
-                They are timeless fonts ensures that the fresh, clean, and minimalist style. It works well
-                across all browsers, devices, and platforms for customization to be easy.</p>
-            <a href="foundation/type.html"
-                class="docs-home_panel-action">READ MORE</a>
-        </div>
+<div class="intro-section" id="intro-section">
+    <div class="intro-section__container">
+        <img 
+        class="intro-section__logo"
+        src="{{site.baseurl}}/images/land-page-assets/logo.svg" 
+        alt="css and html logo"
+        height="120" />
+        <p class="intro-section__text">An open source and community driven project to provide a consistent user interface across web applications.</p>
     </div>
 </div>
 
-<div class="docs-home_panel docs-home_panel--alt">
-    <div class="fd-container fd-container--fluid">
-        <h1 class="docs-home_panel-title"><a href="components/index.html">library.</a></h1>
-        <div class="fd-col--6">
-            <div class="docs-home_panel-search-box">
-                {% include search-box.html %}
+<div class="libraries-section" id="libraries">
+    <p class="libraries-section__title">Fundamental Library</p>
+    <div class="libraries-section__container">
+        <div class="libraries-section__item">
+            <div>
+                <div class="libraries-section__logo">
+                    <img 
+                        src="{{site.baseurl}}/images/land-page-assets/css_html.png" 
+                        alt="css and html logo"
+                        height="75" />
+                </div>
+                <p class="libraries-section__item-title">Fundamental Library Styles</p>
+                <p class="libraries-section__text">Delivers a Fiori 3.0 component library for building SAP user interfaces with any web technology, including artifacts like a UI kit, SAP icons, SAP font and component specifications.</p>
+            </div>
+            <div class="libraries-section__links">
+                <a class="libraries-section__more" href="{{site.baseurl}}/getting-started.html" target="_blank">Learn More</a>
+                <a class="libraries-section__more" href="https://github.com/SAP/fundamental-styles" target="_blank">GitHub</a>
             </div>
         </div>
-        <div class="fd-col--6">
-            <a href="https://sap.github.io/fundamental-ngx" target="_blank" class="docs-home_panel-resources-link">Fundamental Library for Angular <span class="sap-icon--navigation-right-arrow"></span> </a>
-            <a href="https://sap.github.io/fundamental-react" target="_blank" class="docs-home_panel-resources-link">Fundamental Library for React <span class="sap-icon--navigation-right-arrow"></span> </a>
-            <a href="https://github.com/SAP/fundamental-vue" target="_blank" class="docs-home_panel-resources-link">Fundamental Library for Vue <span class="sap-icon--navigation-right-arrow"></span> </a>
+        <div class="libraries-section__item">
+            <div>
+                <div class="libraries-section__logo">
+                    <img 
+                        src="{{site.baseurl}}/images/land-page-assets/angular.png" 
+                        alt="angular logo"
+                        height="75" />
+                </div>
+                <p class="libraries-section__item-title">Fundamental Library for Angular</p>
+                <p class="libraries-section__text">Provides an Angular implementation of the components designed in Fundamental-Styles.</p>
+            </div>
+            <div class="libraries-section__links">
+                <a class="libraries-section__more" href="https://sap.github.io/fundamental-ngx/" target="_blank">Learn More</a>
+                <a class="libraries-section__more" href="https://github.com/SAP/fundamental-ngx" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="libraries-section__item">
+            <div>
+                <div class="libraries-section__logo">
+                    <img 
+                        src="{{site.baseurl}}/images/land-page-assets/react.png" 
+                        alt="react logo"
+                        height="80" />
+                </div>
+                <p class="libraries-section__item-title">Fundamental Library for React</p>
+                <p class="libraries-section__text">Offers a React implementation of the components designed in Fundamental Styles.</p>
+            </div>
+            <div class="libraries-section__links">
+                <a class="libraries-section__more" href="https://sap.github.io/fundamental-react/" target="_blank">Learn More</a>
+                <a class="libraries-section__more" href="https://github.com/SAP/fundamental-react" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="libraries-section__item">
+            <div>
+                <div class="libraries-section__logo">
+                    <img 
+                        src="{{site.baseurl}}/images/land-page-assets/vue.png" 
+                        alt="vue logo"
+                        height="75" />
+                </div>
+                <p class="libraries-section__item-title">Fundamental Library for Vue</p>
+                <p class="libraries-section__text">Supplies a Vue implementation of the components designed in Fundamental Styles.</p>
+            </div>
+            <div class="libraries-section__links">
+                <a class="libraries-section__more" href="https://sap.github.io/fundamental-vue/" target="_blank">Learn More</a>
+                <a class="libraries-section__more" href="https://github.com/SAP/fundamental-vue" target="_blank">GitHub</a>
+            </div> 
         </div>
     </div>
 </div>
+
+<div class="features-section" id="features">
+    <p class="features-section__title">Key Features</p>
+    <div class="features-section__container">
+        <div class="features-section__item">
+            <div class="features-section__logo">
+                <img 
+                    src="{{site.baseurl}}/images/land-page-assets/foundational.png" 
+                    alt="foundational logo"
+                    height="60" />
+            </div>
+            <p class="features-section__item-title">Foundational</p>
+            <p class="features-section__text">Focuses on web standards; basic elements and simple patterns.</p>
+        </div>
+        <div class="features-section__item">
+            <div class="features-section__logo">
+                <img 
+                    src="{{site.baseurl}}/images/land-page-assets/modular.png" 
+                    alt="modular logo"
+                    height="60" />
+            </div>
+            <p class="features-section__item-title">Modular</p>
+            <p class="features-section__text">Revolves around self-contained components, while encapsulating styles and behaviours.</p>
+        </div>
+        <div class="features-section__item">
+            <div class="features-section__logo">
+                <img 
+                    src="{{site.baseurl}}/images/land-page-assets/flexible.png" 
+                    alt="flexible logo"
+                    height="60" />
+            </div>
+            <p class="features-section__item-title">Flexible</p>
+            <p class="features-section__text">Encompasses theming capabilities and combines basic blocks to create complex components.</p>
+        </div>
+        <div class="features-section__item">
+            <div class="features-section__logo">
+                <img 
+                    src="{{site.baseurl}}/images/land-page-assets/collaborative.png" 
+                    alt="collaborative logo"
+                    height="60" />
+            </div>
+            <p class="features-section__item-title">Collaborative</p>
+            <p class="features-section__text">Welcomes multiple contributors within its community and allows for fast release cycles.</p>
+        </div>
+    </div>
+</div>
+
+<div class="about-section" id="about">
+    <p class="about-section__title">More about Fundamental Library</p>
+    <div class="about-section__container">
+        <p class="about-section__item">Ensuring a consistent look and feel, while harmonizing multiple products and applications, is a demanding and expensive task. It entails rebuilding them from the ground up and accommodating them to SAP UX standards. The Fundamental Libraries grew out of a need to address just that.</p>
+        <p class="about-section__item">Fundamentals is comprised of a set of libraries that cover the most common UI components, patterns and layouts. It offers a design system and component library that allows teams the flexibility to quickly implement consistent UX with Fiori 3, without needing to change the frontend framework or library.</p>
+        <p class="about-section__item">Fundamentals also tackles accessibility by using the proper semantic html tags such as buttons or anchor tags. By using the right html tag, the browsers cover about 80% of the accessibility requirements and the Fundamental Libraries team aims to cover the rest.</p>
+    </div>
+</div>
+
+<div class="community-section" id="community">
+    <p class="community-section__title">Community</p>
+    <p class="community-section__text">Join our vibrant community of developers and help drive the Fundamental Libraries forward! Take part in the conversation via our various channels.</p>
+    <div class="community-section__container">
+        <div class="community-section__item">
+            <a href="https://github.com/SAP/fundamental-styles" target="_blank" class="community-section__logo">
+                <img 
+                src="{{site.baseurl}}/images/land-page-assets/github.png" 
+                alt="github logo"
+                height="80" />
+            </a>
+            <p>GitHub</p>
+        </div>
+        <div class="community-section__item">
+            <a href="https://twitter.com/fundamental_lib" target="_blank" class="community-section__logo">
+                <img 
+                src="{{site.baseurl}}/images/land-page-assets/twitter.png" 
+                alt="twitter logo"
+                height="80" />
+            </a>
+            <p>Twitter</p>
+        </div>
+        <div class="community-section__item">
+            <a href="https://ui-fundamentals.slack.com" target="_blank" class="community-section__logo">
+                <img 
+                src="{{site.baseurl}}/images/land-page-assets/slack.png" 
+                alt="slack logo"
+                height="80" />
+            </a>
+            <p>Slack</p>
+        </div>
+        <div class="community-section__item">
+            <a href="https://www.youtube.com/channel/UCkq8zSSBngKze-rUypz0t2w" target="_blank" class="community-section__logo">
+                <img 
+                    src="{{site.baseurl}}/images/land-page-assets/youtube.png" 
+                    alt="youtube logo"
+                    height="80" />
+            </a>
+            <p>YouTube</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer-section">
+    <div class="footer-section__container--left">
+        <div class="footer-section__slogan-logo">
+            <span class="footer-section__slogan">THE BEST RUN</span>
+            <img 
+                src="{{site.baseurl}}/images/land-page-assets/sap.png" 
+                alt="SAP logo"
+                height="16" /> 
+        </div>
+        <p class="footer-section__copyright">&copy;Copyright SAP 2020</p>
+    </div>
+    <div class="footer-section__container--right">
+        <a href="https://www.sap.com/about/legal/privacy.html" target="_blank">Privacy</a>
+        <a href="https://www.sap.com/about/legal/impressum.html" target="_blank">Legal Disclosure</a>
+        <a href="https://www.sap.com/about/legal/copyright.html" target="_blank">Copyright and Trademarks</a>
+        <a href="https://www.sap.com/corporate/en/legal/terms-of-use.html" target="_blank">Terms of Use</a>
+    </div>
+</div>
+
+<a id="back2Top" href="#headerSection" class="backToTopHidden">&#8593;</a>
+
+<div id="responsiveMenu" class="responsive-menu">
+    <a href="#libraries">Libraries</a>
+    <a href="#features">Key Features</a>
+    <a href="#about">About</a>
+    <a href="#community">Community</a>
+    <a href="mailto:fundamental@sap.com" target="_blank">Send us an email</a>
+</div>  
+    
+<script>
+    document.getElementById("tg-sb-content").onscroll = function() {
+        const mainContent = document.getElementById("tg-sb-content");
+
+        if (mainContent.scrollTop > 200 ) {
+            document.getElementById("back2Top").className = "backToTopVisible";
+          } else {
+            document.getElementById("back2Top").className = "backToTopHidden";
+          }
+    };
+    
+    function toggleHamburger() {
+        const toggle = document.getElementById("hamburgerToggle");
+        const menu = document.getElementById("responsiveMenu");
+    
+        if (toggle.className === "sap-icon--menu2") {
+            toggle.className = "sap-icon--decline";
+            menu.classList += " show";
+        } else {
+            toggle.className = "sap-icon--menu2";
+            menu.classList = "responsive-menu hide";
+    
+            setTimeout(function(){
+                menu.classList = "responsive-menu";
+            }, 500);
+        }
+    }
+</script>
+

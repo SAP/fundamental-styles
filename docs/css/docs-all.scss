@@ -6,6 +6,10 @@
 //needed for color variables in docs site
 @import "../../src/functions/_color.scss";
 @import "../../src/_settings.scss";
+
+// landing page styling
+@import "landingPage";
+
 //docs site specific styles
 @import "include-media.scss";
 @import "docs-settings";
