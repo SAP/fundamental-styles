@@ -221,11 +221,8 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 </div>
 
 <div class="fd-popover">
-    <div class="fd-popover__control">
-        <div class="fd-form-item fd-has-margin-none">
-        <label class="fd-form-label" for="input-1">Input with a Popover:</label>
+    <div class="fd-form-item fd-has-margin-none">
         <input class="fd-input fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverB3" aria-expanded="false" aria-haspopup="true">
-    </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB3">
         <nav class="fd-menu" id="">
