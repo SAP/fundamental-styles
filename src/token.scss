@@ -38,6 +38,12 @@ $block: #{$fd-namespace}-token;
   line-height: 1.5rem;
   border: var(--sapButton_BorderWidth) solid $fd-token-border-color;
 
+  &__text {
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
+  }
+
   &__close {
     @include fd-reset();
 

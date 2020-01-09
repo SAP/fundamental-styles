@@ -13,7 +13,9 @@ token:
     {%- endif -%}
 {%- endfor -%}
 <span class="fd-token{{ modifier.block | modifier('token') }}{{ state | state }}"{{ aria | aria }} role="button">
-    {{ properties.label }}
+	<span class="fd-token__text">
+    	{{ properties.label }}
+	</span>
     {%- if readonly =='false' -%}
         <button class="fd-token__close"></button>
     {%- endif -%}
