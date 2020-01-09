@@ -254,6 +254,8 @@ $block: #{$fd-namespace}-popover;
   }
 
   &__popper {
+    @include fd-reset();
+
     border: none;
     position: absolute;
     white-space: nowrap;
@@ -272,6 +274,8 @@ $block: #{$fd-namespace}-popover;
     }
 
     .#{$block}__arrow {
+      @include fd-reset();
+
       position: absolute;
       width: 0;
       height: 0;

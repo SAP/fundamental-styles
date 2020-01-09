@@ -96,4 +96,9 @@
   --sapField_InformationBackground: #bc3f8c;
   --sapField_ReadOnly_Background: #4f9344;
   --sapTextColor: white;
+  --sapGroup_ContentBackground: #945ef7;
+  --sapElement_BorderCornerRadius: 10px;
+  --sapGroup_ContentBorderColor: #00D1B2;
+  --sapPageHeader_Background: #bc3f8c;
+  --sapPageFooter_Background: powderblue;
 }
