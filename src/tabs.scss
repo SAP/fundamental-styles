@@ -12,6 +12,30 @@
 $block: #{$fd-namespace}-tabs;
 
 .#{$block} {
+  %fd-tabs-focus {
+    outline-offset: -0.0625rem;
+    outline-style: var(--sapContent_FocusStyle);
+    outline-width: var(--sapContent_FocusWidth);
+    outline-color: var(--sapContent_FocusColor);
+  }
+
+  @mixin tabs-selection() {
+    position: relative;
+
+    &::after {
+      transition: all $fd-tabs-link-transition-params;
+      content: "";
+      position: absolute;
+      bottom: -$fd-tabs-link-padding-y;
+      left: -$fd-tabs-active-link-line-offset-x;
+      display: inline-block;
+      height: $fd-tabs-link-border-width;
+      width: calc(100% + #{2 * $fd-tabs-active-link-line-offset-x});
+      border-radius: 0.125rem 0.125rem 0 0;
+      @content;
+    }
+  }
+
   @mixin tabs-semantic($color) {
     .#{$block}__icon {
       color: $color;
@@ -19,34 +43,30 @@ $block: #{$fd-namespace}-tabs;
     }
 
     .#{$block}__link {
-      color: $color;
+      .#{$block}__tag {
+        color: $color;
+      }
 
       @include fd-selected() {
-        color: $color;
-
-        &::after {
-          background-color: $color;
-        }
-
         .#{$block}__icon {
           color: var(--sapContent_ContrastIconColor);
           background-color: $color;
         }
-      }
 
-      @include fd-hover() {
-        color: $color;
-      }
-
-      &:link {
-        color: $color;
+        .#{$block}__icon,
+        .#{$block}__tag,
+        & {
+          &::after {
+            background-color: $color;
+          }
+        }
       }
     }
   }
 
   $fd-tabs-selected-color: var(--sapSelectedColor);
   $fd-tabs-border-width: 0.0625rem !default;
-  $fd-tabs-icon-link-padding-y: 0.875rem !default;
+  $fd-tabs-icon-link-padding-y: 1rem !default;
   $fd-tabs-link-border-width: 0.1875rem !default;
   $fd-tabs-link-transition-params: $fd-animation--speed ease-in !default;
   $fd-tabs-icon-size: 1.125rem;
@@ -84,11 +104,53 @@ $block: #{$fd-namespace}-tabs;
     color: $fd-tabs-label-color;
   }
 
+  &__link {
+    @include fd-reset();
+    @include action-cursor();
+
+    transition: 0s;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: var(--sapContent_LabelColor);
+    line-height: 1rem;
+    padding: $fd-tabs-link-padding-y $fd-tabs-item-padding-x;
+
+    @include fd-selected() {
+      .#{$block}__tag {
+        color: var(--sapSelectedColor);
+      }
+
+      .#{$block}__icon {
+        color: var(--sapContent_ContrastIconColor);
+        background-color: $fd-tabs-selected-color;
+      }
+
+      .#{$block}__icon,
+      .#{$block}__tag,
+      & {
+        &::after {
+          background-color: var(--sapSelectedColor);
+        }
+      }
+    }
+
+    @include fd-focus() {
+      box-shadow: none;
+      outline: none;
+
+      .#{$block}__tag,
+      .#{$block}__icon {
+        @extend %fd-tabs-focus;
+      }
+    }
+  }
+
   &__item {
     @include fd-reset();
 
     position: relative;
-    padding: $fd-tabs-link-padding-y $fd-tabs-item-padding-x;
+    padding: 0;
     margin: 0 $fd-tabs-item-spacing-x;
 
     &--error {
@@ -113,12 +175,18 @@ $block: #{$fd-namespace}-tabs;
 
     &:last-child {
       margin-right: 0;
-      padding-right: 0;
+
+      .#{$block}__link {
+        padding-right: 0;
+      }
     }
 
     &:first-child {
       margin-left: 0;
-      padding-left: 0;
+
+      .#{$block}__link {
+        padding-left: 0;
+      }
     }
   }
 
@@ -133,56 +201,20 @@ $block: #{$fd-namespace}-tabs;
     border-radius: 50%;
     background-color: transparent;
     position: relative;
+    margin: 0 $fd-tabs-selection-padding-x;
 
     &::before {
       font-size: $fd-tabs-icon-size;
     }
+
+    @include tabs-selection();
   }
 
-  &__link {
+  &__tag {
     @include fd-reset();
-    @include action-cursor();
+    @include tabs-selection();
 
-    transition: 0s;
-    display: block;
-    position: relative;
-    text-decoration: none;
-    color: var(--sapContent_LabelColor);
     line-height: 1rem;
-
-    &::after {
-      transition: all $fd-tabs-link-transition-params;
-      content: "";
-      position: absolute;
-      bottom: -$fd-tabs-link-padding-y;
-      left: -$fd-tabs-active-link-line-offset-x;
-      display: inline-block;
-      height: $fd-tabs-link-border-width;
-      width: calc(100% + #{2 * $fd-tabs-active-link-line-offset-x});
-      background-color: transparent;
-      border-radius: 0.125rem 0.125rem 0 0;
-    }
-
-    @include fd-selected() {
-      color: var(--sapSelectedColor);
-
-      &::after {
-        background-color: var(--sapSelectedColor);
-      }
-
-      .#{$block}__icon {
-        color: var(--sapContent_ContrastIconColor);
-        background-color: $fd-tabs-selected-color;
-      }
-    }
-
-    @include fd-focus() {
-      box-shadow: none;
-      outline-offset: -0.0625rem;
-      outline-style: var(--sapContent_FocusStyle);
-      outline-width: var(--sapContent_FocusWidth);
-      outline-color: var(--sapContent_FocusColor);
-    }
   }
 
   &__panel {
@@ -263,10 +295,13 @@ $block: #{$fd-namespace}-tabs;
   &--icon-only,
   &--process {
     .#{$block}__link {
-      margin: 0 $fd-tabs-selection-padding-x;
+      padding-top: $fd-tabs-icon-link-padding-y;
+      padding-bottom: $fd-tabs-icon-link-padding-y;
+    }
 
+    .#{$block}__icon {
       &::after {
-        bottom: -$fd-tabs-icon-link-padding-y;
+        bottom: -$fd-tabs-icon-link-padding-y - 0.0625rem;
       }
     }
   }
@@ -282,11 +317,20 @@ $block: #{$fd-namespace}-tabs;
 
   &--process {
     .#{$block}__item {
+      margin: 0 $fd-tabs-item-spacing-x 0 0;
       display: flex;
       align-items: center;
-      margin: 0 $fd-tabs-item-spacing-x 0 0;
+    }
+
+    .#{$block}__link {
       padding-left: 0;
       padding-right: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .#{$block}__icon {
+      margin: 0 $fd-tabs-active-link-line-offset-x;
     }
 
     .#{$block}__overflow {
@@ -310,6 +354,10 @@ $block: #{$fd-namespace}-tabs;
 
     .#{$block}__icon {
       margin-bottom: 0.375rem;
+
+      &::after {
+        content: none;
+      }
     }
 
     .#{$block}__label {
@@ -327,7 +375,7 @@ $block: #{$fd-namespace}-tabs;
       align-items: center;
       flex-direction: column;
 
-      &::after {
+      @include tabs-selection() {
         bottom: 0;
       }
 
