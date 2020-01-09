@@ -58,7 +58,7 @@ This example shows the minimum shellbar for a single application product with on
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
           <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="WV3AY276" aria-expanded="false" aria-haspopup="true" role="button">
-            <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-has-background-color-accent-11">WW</span>
+            <span class="fd-identifier fd-identifier--xs fd-identifier--circle">WW</span>
           </div>
         </div>
         <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="WV3AY276">
@@ -111,31 +111,20 @@ This example includes the product menu for navigating to applications within the
 		<div class="fd-shellbar__subtitle">Subtitle</div>
   </div>
   <div class="fd-shellbar__group fd-shellbar__group--actions">
-      <div class="fd-shellbar__action fd-shellbar__action--desktop">    
-        <div class="fd-search-input">
-         <div class="fd-popover">
-          <div class="fd-popover__control">
-              <div aria-label="Image label" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
-                  <div class="fd-input-group">
-                      <input type="text" class="fd-input fd-input-group__input" id="F4GcX348b1" value="Sear" placeholder="Search..." aria-hidden="true">
-                      <span class="fd-input-group__addon fd-input-group__addon--button">
-                          <button class="fd-shellbar__button fd-button sap-icon--search"></button>
-                      </span>
-                  </div>
-              </div>
-          </div>
-          <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="F4GcX348b">
-              <nav class="fd-menu">
-                <ul class="fd-menu__list">
-                    <li><a href="#" class="fd-menu__item"><strong>Sear</strong>ch Result A</a></li>
-                    <li><a href="#" class="fd-menu__item"><strong>Sear</strong>ch Result B</a></li>
-                    <li><a href="#" class="fd-menu__item"><strong>Sear</strong>ch Result C</a></li>
-                    <li><a href="#" class="fd-menu__item"><strong>Sear</strong>ch Result D</a></li>
-                </ul>
-              </nav>
+    <div class="fd-shellbar__action fd-shellbar__action--desktop">    
+      <div class="fd-popover__control">
+        <div aria-label="Image label" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
+          <div class="fd-input-group">
+            <input type="text" class="fd-input fd-input-group__input" id="F4GcX348b1" value="Sear" placeholder="Search...">
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+              <button class="fd-shellbar__button fd-button sap-icon--decline"></button>
+            </span>
           </div>
         </div>
       </div>
+    </div>
+    <div class="fd-shellbar__action fd-shellbar__action--desktop">
+      <button class="fd-button fd-shellbar__button sap-icon--search" aria-label="Search"></button>
     </div>
     <div class="fd-shellbar__action">
       <div class="fd-popover fd-popover--right">
@@ -171,31 +160,20 @@ When a product has multiple links, the product links should collapse into an ove
   <span class="fd-shellbar__title">Corporate Portal</span>
   </div>
   <div class="fd-shellbar__group fd-shellbar__group--actions">
-    <div class="fd-shellbar__action fd-shellbar__action--desktop">
-      <div class="fd-search-input">
-         <div class="fd-popover">
-          <div class="fd-popover__control">
-              <div aria-label="Image label" aria-controls="UIO6J688" aria-expanded="false" aria-haspopup="true">
-                  <div class="fd-input-group">
-                      <input type="text" class="fd-input fd-input-group__input" id="UIO6J6881" value="Sear" aria-hidden="true">
-                      <span class="fd-input-group__addon fd-input-group__addon--button">
-                          <button class="fd-shellbar__button fd-button sap-icon--search"></button>
-                      </span>
-                  </div>
-              </div>
-          </div>
-          <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="UIO6J688">
-              <nav class="fd-menu">
-                <ul class="fd-menu__list">
-                    <li><a href="#" class="fd-menu__item"><strong>Sear</strong>ch Result A</a></li>
-                    <li><a href="#" class="fd-menu__item"><strong>Sear</strong>ch Result B</a></li>
-                    <li><a href="#" class="fd-menu__item"><strong>Sear</strong>ch Result C</a></li>
-                    <li><a href="#" class="fd-menu__item"><strong>Sear</strong>ch Result D</a></li>
-                </ul>
-              </nav>
+    <div class="fd-shellbar__action fd-shellbar__action--desktop">    
+      <div class="fd-popover__control">
+        <div aria-label="Image label" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
+          <div class="fd-input-group">
+            <input type="text" class="fd-input fd-input-group__input" id="F4GcX348b1" value="Sear" placeholder="Search...">
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+              <button class="fd-shellbar__button fd-button sap-icon--decline"></button>
+            </span>
           </div>
         </div>
       </div>
+    </div>
+    <div class="fd-shellbar__action fd-shellbar__action--desktop">
+      <button class="fd-button fd-shellbar__button sap-icon--search" aria-label="Search"></button>
     </div>
       <div class="fd-shellbar__action fd-shellbar__action--desktop">
         <button class="fd-button fd-shellbar__button sap-icon--bell" aria-label="Notifications">
@@ -229,7 +207,7 @@ When a product has multiple links, the product links should collapse into an ove
         <div class="fd-popover fd-popover--right">
           <div class="fd-popover__control">
             <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="DD35G276" aria-expanded="false" aria-haspopup="true" role="button">
-              <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-has-background-color-accent-11">WW</span>
+              <span class="fd-identifier fd-identifier--xs fd-identifier--circle">WW</span>
             </div>
           </div>
           <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="DD35G276">

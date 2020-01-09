@@ -631,13 +631,6 @@ body {
     color: $home-page-action-color;
 }
 
-.sap-icon--decline::before {
-    font-size: 20px;
-    transition: opacity .3s, transform .3s;
-    transform: rotate(-180deg);
-    color: $home-page-action-color;
-}
-
 .responsive-menu {
     display: none;
 

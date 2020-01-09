@@ -4,28 +4,7 @@
 @import "./product-menu";
 @import "./search-input";
 
-$fd-shell-text-color: var(--sapShell_TextColor);
-$fd-shell-hover-background: var(--sapShell_Hover_Background);
-$fd-shell-active-background: var(--sapShell_Active_Background);
-$fd-shell-active-text-color: var(--sapShell_Active_TextColor);
-
 $block: #{$fd-namespace}-shellbar;
-
-.fd-product-menu {
-  cursor: pointer;
-  color: $fd-shell-text-color;
-  background-color: transparent;
-
-  &:hover {
-    background: $fd-shell-hover-background;
-  }
-
-  &:active,
-  &:focus {
-    background: $fd-shell-active-background;
-    color: $fd-shell-active-text-color;
-  }
-}
 
 .#{$block} {
 
@@ -44,11 +23,16 @@ $block: #{$fd-namespace}-shellbar;
   $fd-shellbar-copilot-width: 30px !default;
 
   // Colors
-  $fd-shellbar-color: fd-color("text", 5) !default; // White
-  $fd-shellbar-background-color: fd-color("shell", 1) !default;
+  $fd-shellbar-color: var(--sapShell_TextColor); // White
+  $fd-shellbar-background-color: transparent;
+  $fd-field-border-color: var(--sapField_BorderColor);
+  $fd-shell-active-text-color: var(--sapShell_Active_TextColor);
 
   // Background
   $fd-shellbar-background: var(--sapShellColor);
+  $fd-shell-hover-background: var(--sapShell_Hover_Background);
+  $fd-shell-active-background: var(--sapShell_Active_Background);
+  $fd-content-badge-background: var(--sapContent_BadgeBackground);
 
   // Box shadow
   $fd-shellbar-box-shadow: inset 0 -0.0625rem 0 0 var(--sapShellBorderColor);
@@ -112,6 +96,26 @@ $block: #{$fd-namespace}-shellbar;
       justify-content: flex-end;
       order: 3;
     }
+
+    .fd-product-menu {
+      cursor: pointer;
+      color: $fd-shellbar-color;
+      background: $fd-shellbar-background-color;
+
+      &:hover {
+        background: $fd-shell-hover-background;
+      }
+
+      &:active,
+      &:focus {
+        background: $fd-shell-active-background;
+        color: $fd-shell-active-text-color;
+      }
+    }
+
+    .fd-identifier--circle {
+      background-color: var(--sapAccentColor6);
+    }
   }
 
   &__button {
@@ -121,9 +125,9 @@ $block: #{$fd-namespace}-shellbar;
     @include fd-var-color("color", fd-color("shell", 2), --fd-color-shell-2);
 
     border-color: transparent;
-    background-color: transparent;
+    background: $fd-shellbar-background-color;
     outline: none !important;
-    color: $fd-shell-text-color;
+    color: $fd-shellbar-color;
 
     &:hover {
       background: $fd-shell-hover-background;
@@ -140,7 +144,13 @@ $block: #{$fd-namespace}-shellbar;
 
     @include fd-hover() {
       @include fd-disabled() {
-        background-color: transparent;
+        background: $fd-shellbar-background-color;
+      }
+    }
+
+    &.sap-icon--bell {
+      &::before {
+        margin-right: 0;
       }
     }
   }
@@ -274,6 +284,38 @@ $block: #{$fd-namespace}-shellbar;
 
       @include fd-screen(l) {
         display: inline-block;
+      }
+    }
+
+    .fd-counter--notification {
+      max-width: 2.5rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      position: absolute;
+      background: $fd-content-badge-background;
+      border: $fd-content-badge-background;
+      color: $fd-shellbar-color;
+    }
+
+    .fd-popover__control {
+      cursor: text;
+
+      .fd-input-group__addon {
+        background-color: transparent;
+      }
+
+      .fd-input-group {
+        background-color: transparent;
+
+        &:hover {
+          background-color: $fd-shell-hover-background;
+          border-color: $fd-field-border-color;
+        }
+
+        .fd-input-group__input {
+          border: none;
+          color: $fd-shellbar-color;
+        }
       }
     }
   }
