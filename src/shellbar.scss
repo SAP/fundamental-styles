@@ -14,7 +14,7 @@ $block: #{$fd-namespace}-shellbar;
 .fd-product-menu {
   cursor: pointer;
   color: $fd-shell-text-color;
-  background: transparent;
+  background-color: transparent;
 
   &:hover {
     background: $fd-shell-hover-background;
@@ -102,6 +102,10 @@ $block: #{$fd-namespace}-shellbar;
     &--copilot {
       justify-content: center;
       order: 2;
+
+      .fd-shellbar__button {
+        padding-left: 0;
+      }
     }
 
     &--actions {
@@ -117,14 +121,24 @@ $block: #{$fd-namespace}-shellbar;
     @include fd-var-color("color", fd-color("shell", 2), --fd-color-shell-2);
 
     border-color: transparent;
+    background-color: transparent;
+    outline: none !important;
+    color: $fd-shell-text-color;
 
-    @include fd-active-pressed-selected() {
-      background-color: hsl(217, 21%, 21%);
+    &:hover {
+      background: $fd-shell-hover-background;
+    }
+
+    &:active {
+      background: $fd-shell-active-background;
+    }
+
+    &:hover,
+    &:active {
+      color: $fd-shell-active-text-color;
     }
 
     @include fd-hover() {
-      background-color: hsl(217, 21%, 25%);
-
       @include fd-disabled() {
         background-color: transparent;
       }

@@ -57,7 +57,7 @@ This example shows the minimum shellbar for a single application product with on
     <div class="fd-shellbar__action">
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
-          <div aria-controls="WV3AY276" aria-expanded="false" aria-haspopup="true" role="button">
+          <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="WV3AY276" aria-expanded="false" aria-haspopup="true" role="button">
             <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-has-background-color-accent-11">WW</span>
           </div>
         </div>
@@ -140,7 +140,7 @@ This example includes the product menu for navigating to applications within the
     <div class="fd-shellbar__action">
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
-          <div aria-controls="ZY3AY276" aria-expanded="false" aria-haspopup="true" role="button">
+          <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="ZY3AY276" aria-expanded="false" aria-haspopup="true" role="button">
             <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url({{site.baseurl}}/images/thumbs/headshot-male.jpg);" aria-label="William Wallingham">WW</span>
           </div>
         </div>
@@ -228,7 +228,7 @@ When a product has multiple links, the product links should collapse into an ove
       <div class="fd-shellbar__action">
         <div class="fd-popover fd-popover--right">
           <div class="fd-popover__control">
-            <div aria-controls="DD35G276" aria-expanded="false" aria-haspopup="true" role="button">
+            <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="DD35G276" aria-expanded="false" aria-haspopup="true" role="button">
               <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-has-background-color-accent-11">WW</span>
             </div>
           </div>
@@ -264,13 +264,13 @@ For more information about the Product Switch, see [Product Switch](product-swit
     <span class="fd-shellbar__title">Corporate Portal</span>
   </div>
   <div class="fd-shellbar__group fd-shellbar__group--copilot">
-    <img src="//unpkg.com/fundamental-styles/dist/images/copilot.png" alt="CoPilot" height="30" width="30" />
+    <button class="fd-button fd-shellbar__button"><img src="//unpkg.com/fundamental-styles/dist/images/copilot.png" alt="CoPilot" height="30" width="30" /></button>
   </div>
   <div class="fd-shellbar__group fd-shellbar__group--actions">
       <div class="fd-shellbar__action">
         <div class="fd-popover fd-popover--right">
           <div class="fd-popover__control">
-            <div class="fd-user-menu__control" aria-controls="MKFAY276" aria-expanded="false" aria-haspopup="true" role="button">
+            <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="MKFAY276" aria-expanded="false" aria-haspopup="true" role="button">
               <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url({{site.baseurl}}/images/thumbs/headshot-male.jpg);" aria-label="William Wallingham">WW</span>
             </div>
           </div>
