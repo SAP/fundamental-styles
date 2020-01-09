@@ -90,8 +90,7 @@ $block: #{$fd-namespace}-tabs;
   flex-wrap: wrap;
   padding-left: 0;
   list-style: none;
-  border-bottom-style: solid;
-  border-bottom-width: $fd-tabs-border-width;
+  box-shadow: 0 0 0.25rem 0 fade(var(--sapContent_ShadowColor), 15), inset 0 -0.0625rem 0 0 var(--sapObjectHeader_BorderColor);
   background-color: var(--sapObjectHeader_Background);
   color: $fd-tabs-label-color;
   border-color: var(--sapObjectHeader_BorderColor);
@@ -237,12 +236,6 @@ $block: #{$fd-namespace}-tabs;
     padding-right: 0.5rem;
   }
 
-  &__process {
-    white-space: nowrap;
-    max-width: 7.5rem;
-    line-height: 0.875rem;
-  }
-
   &__overflow {
     margin-left: auto;
 
@@ -336,6 +329,13 @@ $block: #{$fd-namespace}-tabs;
     .#{$block}__overflow {
       @include fd-icon('slim-arrow-right', 'm');
     }
+
+    .#{$block}__label {
+      white-space: nowrap;
+      max-width: 7.5rem;
+      line-height: 0.875rem;
+      overflow: hidden;
+    }
   }
 
   &--filter {
@@ -401,10 +401,6 @@ $block: #{$fd-namespace}-tabs;
       &::before {
         font-size: $fd-tabs-compact-icon-size;
       }
-    }
-
-    .#{$block}__process {
-      padding: 0;
     }
 
     .#{$block}__label {

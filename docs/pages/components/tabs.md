@@ -489,34 +489,42 @@ Tabs are based on a folder metaphor and used to separate content into different 
     <li class="fd-tabs__item fd-tabs__item--header">
         <a class="fd-tabs__link" aria-controls="5ZkDVE" href="#5ZkDVE" role="tab">
             <span class="fd-tabs__header">
-                <span class="fd-tabs__counter-header">100</span>
+                <span class="fd-tabs__counter-header">150</span>
                 <span class="fd-tabs__label">products</span>
             </span>
         </a>
     </li>
     <div class="fd-tabs__separator"></div>
-    <li class="fd-tabs__item">
+    <li class="fd-tabs__item fd-tabs__item--success">
         <a class="fd-tabs__link" aria-controls="znvnwr" href="#znvnwr" role="tab">
             <span class="fd-tabs__icon sap-icon--cart">
                 <p class="fd-tabs__count">35</p>
             </span>
-            <span class="fd-tabs__label">Description</span>
+            <span class="fd-tabs__label">Success</span>
         </a>
     </li>
-    <li class="fd-tabs__item">
+    <li class="fd-tabs__item fd-tabs__item--warning">
         <a class="fd-tabs__link" aria-controls="oyYpL7" href="#oyYpL7" role="tab">
             <span class="fd-tabs__icon sap-icon--cart">
                 <p class="fd-tabs__count">5</p>
             </span>
-            <span class="fd-tabs__label">Description</span>
+            <span class="fd-tabs__label">Warning</span>
         </a>
     </li>
-    <li class="fd-tabs__item">
+    <li class="fd-tabs__item fd-tabs__item--information">
         <a class="fd-tabs__link" aria-controls="gRpu9H" href="#gRpu9H" role="tab">
             <span class="fd-tabs__icon sap-icon--cart">
                 <p class="fd-tabs__count">60</p>
             </span>
-            <span class="fd-tabs__label">Description</span>
+            <span class="fd-tabs__label">Information</span>
+        </a>
+    </li>
+    <li class="fd-tabs__item fd-tabs__item--error">
+        <a class="fd-tabs__link" aria-controls="gRpu1A" href="#gRpu1A" role="tab">
+            <span class="fd-tabs__icon sap-icon--cart">
+                <p class="fd-tabs__count">50</p>
+            </span>
+            <span class="fd-tabs__label">Error</span>
         </a>
     </li>
     <button class="fd-button fd-button--light fd-tabs__overflow"></button>
@@ -532,6 +540,9 @@ Tabs are based on a folder metaphor and used to separate content into different 
 </div>
 <div class="fd-tabs__panel" aria-expanded="false" id="gRpu9H" role="tabpanel">
     Occaecat cupidatat
+</div>
+<div class="fd-tabs__panel" aria-expanded="false" id="gRpu1A" role="tabpanel">
+    Nullam sit
 </div>
 {% endcapture %}
 {% include display-component.html component=semantic-filter-tab %}
