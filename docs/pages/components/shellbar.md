@@ -89,7 +89,7 @@ This example includes the product menu for navigating to applications within the
     <a href="#" class="fd-shellbar__logo">
       <img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP">
     </a>
-    <div class="fd-product-menu">
+    <div class="fd-product-menu fd-button">
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
           <button class="fd-product-menu__control" aria-controls="9GLB26941" aria-haspopup="true" aria-expanded="false">

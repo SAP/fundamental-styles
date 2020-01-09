@@ -4,7 +4,28 @@
 @import "./product-menu";
 @import "./search-input";
 
+$fd-shell-text-color: var(--sapShell_TextColor);
+$fd-shell-hover-background: var(--sapShell_Hover_Background);
+$fd-shell-active-background: var(--sapShell_Active_Background);
+$fd-shell-active-text-color: var(--sapShell_Active_TextColor);
+
 $block: #{$fd-namespace}-shellbar;
+
+.fd-product-menu {
+  cursor: pointer;
+  color: $fd-shell-text-color;
+  background: transparent;
+
+  &:hover {
+    background: $fd-shell-hover-background;
+  }
+
+  &:active,
+  &:focus {
+    background: $fd-shell-active-background;
+    color: $fd-shell-active-text-color;
+  }
+}
 
 .#{$block} {
 
@@ -157,6 +178,10 @@ $block: #{$fd-namespace}-shellbar;
   &__subtitle {
     display: inline-block;
     vertical-align: middle;
+  }
+
+  &__title {
+    padding-left: 0.5rem;
   }
 
   &__logo {
