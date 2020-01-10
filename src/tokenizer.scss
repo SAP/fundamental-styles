@@ -9,13 +9,19 @@ $block: #{$fd-namespace}-tokenizer;
   $fd-tokenizer-compact-spacing: 0.25rem;
   $fd-tokenizer-spacing: 0.3125rem;
 
+  width: 100%;
   background-color: var(--sapField_Background);
   padding-left: $fd-tokenizer-spacing;
   padding-right: $fd-tokenizer-spacing;
+  overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  overflow: hidden;
+
+  &__inner {
+    float: right;
+    white-space: nowrap;
+    width: 100%;
+  }
 
   .fd-token {
     margin-right: $fd-tokenizer-spacing;
@@ -54,7 +60,6 @@ $block: #{$fd-namespace}-tokenizer;
 
     .fd-token {
       margin-right: $fd-tokenizer-compact-spacing;
-      display: flex;
     }
   }
 }

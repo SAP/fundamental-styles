@@ -19,7 +19,40 @@ summary:
             <div class="fd-popover__control">
                 <div aria-label="Image label" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true">
                     <div class="fd-input-group">
-                        <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Fruit">
+                        <div class="fd-tokenizer">
+                            <div class="fd-tokenizer__inner">
+                                <span class="fd-token fd-token--compact" role="button">
+                                    <span class="fd-token__text">
+                                        Bibendum
+                                    </span>
+                                    <button class="fd-token__close"></button>
+                                </span>
+                                <span class="fd-token fd-token--compact" role="button">
+                                    <span class="fd-token__text">
+                                        Lorem
+                                    </span>
+                                    <button class="fd-token__close"></button>
+                                </span>
+                                <span class="fd-token fd-token--compact" role="button">
+                                    <span class="fd-token__text">
+                                        Dolor
+                                    </span>
+                                    <button class="fd-token__close"></button>
+                                </span>
+                                <span class="fd-token fd-token--compact" role="button">
+                                    <span class="fd-token__text">
+                                        Filter
+                                    </span>
+                                    <button class="fd-token__close"></button>
+                                </span>
+                                <span class="fd-token fd-token--readonly fd-token--compact">
+                                    <span class="fd-token__text">
+                                        Lorem
+                                    </span>
+                                </span>
+                                <input class="fd-input fd-input-group__input fd-tokenizer__input" />
+                            </div>
+                        </div>
                         <span class="fd-input-group__addon fd-input-group__addon--button">
                             <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow"></button>
                         </span>
@@ -52,11 +85,6 @@ summary:
             </div>
         </div>
     </div>
-    <div class="fd-multi-input-tags">
-        <span class="fd-token" role="button">Apple</span>
-        <span class="fd-token" role="button">Berry</span>
-        <span class="fd-token" role="button">Banana</span>
-    </div>
 </div>
 
 <br>
@@ -67,7 +95,40 @@ summary:
             <div class="fd-popover__control">
                 <div aria-label="Image label" aria-controls="F4GcX34a" aria-expanded="false" aria-haspopup="true">
                     <div class="fd-input-group">
-                        <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
+                        <div class="fd-tokenizer fd-tokenizer--compact">
+                            <div class="fd-tokenizer__inner">
+                                <span class="fd-token fd-token--compact" role="button">
+                                    <span class="fd-token__text">
+                                        Bibendum
+                                    </span>
+                                    <button class="fd-token__close"></button>
+                                </span>
+                                <span class="fd-token fd-token--compact" role="button">
+                                    <span class="fd-token__text">
+                                        Lorem
+                                    </span>
+                                    <button class="fd-token__close"></button>
+                                </span>
+                                <span class="fd-token fd-token--compact" role="button">
+                                    <span class="fd-token__text">
+                                        Dolor
+                                    </span>
+                                    <button class="fd-token__close"></button>
+                                </span>
+                                <span class="fd-token fd-token--compact" role="button">
+                                    <span class="fd-token__text">
+                                        Filter
+                                    </span>
+                                    <button class="fd-token__close"></button>
+                                </span>
+                                <span class="fd-token fd-token--readonly fd-token--compact">
+                                    <span class="fd-token__text">
+                                        Lorem
+                                    </span>
+                                </span>
+                                <input class="fd-input fd-input-group__input fd-input--compact fd-tokenizer__input" />
+                            </div>
+                        </div>
                         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
                             <button class="fd-input-group__button fd-button--light fd-button--compact sap-icon--navigation-down-arrow"></button>
                         </span>
@@ -99,11 +160,6 @@ summary:
                 </nav>
             </div>
         </div>
-    </div>
-    <div class="fd-multi-input-tags">
-        <span class="fd-token" role="button">Apple</span>
-        <span class="fd-token" role="button">Berry</span>
-        <span class="fd-token" role="button">Banana</span>
     </div>
 </div>
 {% endcapture %}
