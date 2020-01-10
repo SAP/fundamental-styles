@@ -258,6 +258,7 @@ $block: #{$fd-namespace}-tabs;
     padding-left: 0.125rem;
     font-size: var(--sapFontSmallSize);
     color: $fd-tabs-label-color;
+    max-width: 100%;
 
     &:first-child {
       padding-bottom: 0.375rem;
@@ -275,6 +276,10 @@ $block: #{$fd-namespace}-tabs;
   &__header {
     display: flex;
     align-items: center;
+
+    .#{$block}__label {
+      max-width: 4rem;
+    }
   }
 
   &--icon-only,
@@ -364,6 +369,7 @@ $block: #{$fd-namespace}-tabs;
       line-height: 0.875rem;
       white-space: nowrap;
       overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .#{$block}__link {
