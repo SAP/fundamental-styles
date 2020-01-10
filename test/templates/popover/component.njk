@@ -5,14 +5,14 @@ popover:
     state={},
     aria={}
 -->
-{%- macro popover(properties={}, modifier={}, state={}, aria={ hidden: true }) -%}
+{%- macro popover(properties={}, modifier={}, state={}, aria={ hidden: false }) -%}
 <div class="fd-popover{{ modifier.block | modifier('popover') }}">
   {{ popover_control({ control: properties.control }) | indent(2) }}
   {{ popover_body(properties={ body: properties.body, id: properties.id }, modifier={ block: modifier.block }) }}
 </div>
 {%- endmacro -%}
 
-{%- macro popover_popperjs(properties={}, modifier={}, state={}, aria={ hidden: true }) -%}
+{%- macro popover_popperjs(properties={}, modifier={}, state={}, aria={ hidden: false }) -%}
 <div class="fd-popover{{ modifier.block | modifier('popover') }}">
   {{ popover_control({ control: properties.control }) | indent(2) }}
   {{ popover_popper(properties={ body: properties.body, id: properties.id }, modifier={ block: modifier.block }) }}
@@ -23,19 +23,19 @@ popover:
 <div class="fd-popover__control"{{ aria | aria }}>{{properties.control}}</div>
 {%- endmacro -%}
 
-{%- macro popover_body(properties={}, modifier={}, state={}, aria={ hidden: true }) -%}
+{%- macro popover_body(properties={}, modifier={}, state={}, aria={ hidden: false }) -%}
 <div class="fd-popover__body{{ modifier.block | modifier('popover__body') }}" {{ aria | aria }} id="{{ properties.id }}">
   {{properties.body}}
 </div>
 {%- endmacro -%}
 
-{%- macro popover_popper(properties={}, modifier={}, state={}, aria={ hidden: true }) -%}
+{%- macro popover_popper(properties={}, modifier={}, state={}, aria={ hidden: false }) -%}
 <div class="fd-popover__popper{{ modifier.block | modifier('popover__popper') }}" {{ aria | aria }} id="{{ properties.id }}" x-placement="bottom">
   {{properties.body}}
   <div class="fd-popover__arrow"></div>
 </div>
 {%- endmacro -%}
 
-{%- macro popover_content(properties={}, modifier={}, state={}, aria={ hidden: true }) -%}
+{%- macro popover_content(properties={}, modifier={}, state={}, aria={ hidden: false }) -%}
 <div class="sample-content">Here is the popover content!</div>
 {%- endmacro -%}

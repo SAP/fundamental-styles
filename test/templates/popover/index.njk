@@ -46,6 +46,7 @@
     body: popover_content()
   })
 }}
+<br><br><br><br><br><br><br><br>
 {% endset %}
 {{ format(example) }}
 
@@ -59,6 +60,7 @@
     body: popover_content()
   }, modifier={ block: ['left']})
 }}
+<br><br><br><br><br><br><br><br>
 {% endset %}
 {{ format(example) }}
 
@@ -72,7 +74,7 @@
     body: popover_content()
   }, modifier={ block: ['right']})
 }}
-
+<br><br><br><br><br><br><br><br>
 {% endset %}
 {{ format(example) }}
 <br><br>
@@ -86,7 +88,7 @@
     body: popover_content()
   }, modifier={ block: ['no-arrow']})
 }}
-
+<br><br><br><br><br><br><br><br>
 {% endset %}
 {{ format(example) }}
 
@@ -101,7 +103,7 @@
     body: popover_content()
   }, modifier={ block: ['no-arrow', 'right']})
 }}
-
+<br><br><br><br><br><br><br><br>
 {% endset %}
 {{ format(example) }}
 
@@ -118,7 +120,7 @@ is simply a styling example.</p>
     body: popover_content()
   }, modifier={ block: []})
 }}
-
+<br><br><br><br><br><br><br><br>
 {% endset %}
 {{ format(example) }}
 
@@ -135,9 +137,67 @@ is simply a styling example.</p>
     body: popover_content()
   }, modifier={ block: ['no-arrow']})
 }}
-
+<br><br><br><br><br><br><br><br>
 {% endset %}
 {{ format(example) }}
 
+
+<br><br><br><br>
+
+<h2>Popover with Header and Footer</h2>
+
+{% set example %}
+
+<div class="fd-popover">
+    <div class="fd-popover__control">
+      <button class="fd-popover__control sample-control" aria-controls="popoverHSF1" aria-expanded="false" aria-haspopup="true">With Header, Subheader and Footer</button>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false" id="popoverHSF1">
+        <div class="fd-popover__body-header fd-popover__body-header--with-subheader">Popover Header</div>
+        <div class="fd-popover__body-subheader">Popover Subheader</div>
+        <div class="sample-content">
+          Here is the popover content! <br>
+          Here is the popover content! <br>
+          Here is the popover content! <br>
+          Here is the popover content! <br>
+          Here is the popover content! <br>
+          Here is the popover content! <br>
+        </div>
+        <div class="fd-popover__body-footer">Popover Footer</div>
+    </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{% endset %}
+{{ format(example) }}
+
+<br><br><br><br>
+
+<h2>Popover with Header and Footer Compact Mode</h2>
+
+{% set example %}
+
+<div class="fd-popover">
+    <div class="fd-popover__control">
+      <button class="fd-popover__control sample-control" aria-controls="popoverHSF2" aria-expanded="false" aria-haspopup="true">With Header, Subheader and Footer Compact Mode</button>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false" id="popoverHSF2">
+        <div class="fd-popover__body-header fd-popover__body-header--compact fd-popover__body-header--with-subheader">Popover Header</div>
+        <div class="fd-popover__body-subheader fd-popover__body-subheader--compact">Popover Subheader</div>
+        <div class="sample-content">
+          Here is the popover content! <br>
+          Here is the popover content! <br>
+          Here is the popover content! <br>
+          Here is the popover content! <br>
+          Here is the popover content! <br>
+          Here is the popover content! <br>
+        </div>
+        <div class="fd-popover__body-footer fd-popover__body-footer--compact">Popover Footer</div>
+    </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{% endset %}
+{{ format(example) }}
 
 {% endblock %}
