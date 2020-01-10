@@ -8,12 +8,28 @@
 
 $block: #{$fd-namespace}-layout-grid;
 
+.#{$block}-row {
+  margin-top: 1rem;
+
+  @media only screen and (max-width: 599px) {
+    margin-top: 0.5rem;
+  }
+}
+
 .#{$block} {
   @include fd-reset();
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: var(--fd-width-gutter, $fd-width--gutter);
+  grid-template-columns: 100%;
+  grid-gap: 1rem;
+
+  @media only screen and (max-width: 599px) {
+    grid-gap: 0.5rem;
+  }
+
+  * {
+    height: fit-content;
+  }
 
   &--no-gap {
     grid-gap: 0;
@@ -23,24 +39,52 @@ $block: #{$fd-namespace}-layout-grid;
     }
   }
 
-  &--gap-1 {
-    grid-gap: 1px;
+  // grid-gap-1 removed
 
-    & > * {
-      box-shadow: none;
-    }
+  &--secondary-row {
+    margin-top: 0.5rem;
   }
 
-  @each $n in 1, 2, 3, 4, 5, 6 {
-    &--col-#{$n} {
-      grid-template-columns: repeat(#{$n}, 1fr);
-    }
-  }
-
-  @each $n in 2,3,4,5,6 {
+  @each $a in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ,16 {
     @each $direction in row,column {
-      &__span-#{$direction}-#{$n} {
-        grid-#{$direction}: span #{$n};
+      &__span-#{$direction}-#{$a} {
+        grid-#{$direction}: span #{$a};
+      }
+    }
+
+    &--#{$a} {
+      $max: ($a/12) *100%;
+
+      grid-template-columns: repeat(#{$a}, minmax(0, 12fr));
+    }
+
+    @each $b in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ,16 {
+      $max: ($a/12) *100%;
+      $maxb: ($b/12) *100%;
+
+      &--#{$a}-#{$b} {
+        grid-template-columns: minmax(0, $max) minmax(0, $maxb);
+      }
+
+      @each $c in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ,16 {
+        &--#{$a}-#{$b}-#{$c} {
+          $max: ($a/12) *100%;
+          $maxb: ($b/12) *100%;
+          $maxc: ($c/12) *100%;
+
+          grid-template-columns: minmax(0, $max) minmax(0, $maxb)  minmax(0, $maxc);
+        }
+
+        @each $d in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ,16 {
+          &--#{$a}-#{$b}-#{$c}-#{$d} {
+            $max: ($a/12) *100%;
+            $maxb: ($b/12) *100%;
+            $maxc: ($c/12) *100%;
+            $maxd: ($d/12) *100%;
+
+            grid-template-columns: minmax(0, $max) minmax(0, $maxb)  minmax(0, $maxc) minmax(0, $maxd);
+          }
+        }
       }
     }
   }
