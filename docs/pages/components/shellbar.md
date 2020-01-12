@@ -162,9 +162,9 @@ When a product has multiple links, the product links should collapse into an ove
   <div class="fd-shellbar__group fd-shellbar__group--actions">
     <div class="fd-shellbar__action fd-shellbar__action--desktop">    
       <div class="fd-popover__control">
-        <div aria-label="Image label" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
+        <div aria-label="Image label" aria-controls="UIO6J688" aria-expanded="false" aria-haspopup="true">
           <div class="fd-input-group">
-            <input type="text" class="fd-input fd-input-group__input" id="F4GcX348b1" value="Sear" placeholder="Search...">
+            <input type="text" class="fd-input fd-input-group__input" id="UIO6J6881" value="Sear" placeholder="Search...">
             <span class="fd-input-group__addon fd-input-group__addon--button">
               <button class="fd-shellbar__button fd-button sap-icon--decline"></button>
             </span>
