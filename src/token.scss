@@ -5,6 +5,17 @@
 $block: #{$fd-namespace}-token;
 
 .#{$block} {
+  @mixin fd-token-focus() {
+    @include fd-focus() {
+      box-shadow: none;
+      outline-offset: -0.1875rem;
+      outline-width: var(--sapContent_FocusWidth);
+      outline-color: var(--sapContent_FocusColor);
+      outline-style: var(--sapContent_FocusStyle);
+      @content;
+    }
+  }
+
   $fd-token-compact-height: 1.25rem;
   $fd-token-compact-close-width: 1.25rem;
   $fd-token-close-width: 1.75rem;
@@ -75,6 +86,8 @@ $block: #{$fd-namespace}-token;
     border-color: var(--sapButton_Hover_BorderColor);
   }
 
+  @include fd-token-focus();
+
   &--compact {
     padding-top: $fd-token-compact-padding-vertical;
     padding-left: $fd-token-compact-padding-horizontal;
@@ -103,6 +116,10 @@ $block: #{$fd-namespace}-token;
     &:hover {
       background-color: var(--sapButton_Selected_Hover_Background);
       border-color: var(--sapButton_Selected_Hover_BorderColor);
+    }
+
+    @include fd-token-focus() {
+      outline-color: var(--sapContent_ContrastFocusColor);
     }
   }
 

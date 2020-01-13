@@ -16,25 +16,25 @@ Token are used to represent contextualizing information. They can be useful to s
 
 ## Default Token
 {% capture default-token %}
-<span class="fd-token" role="button">
+<span class="fd-token" role="button" tabindex="0">
     <span class="fd-token__text">
         Bibendum
     </span>
     <button class="fd-token__close"></button>
 </span>
-<span class="fd-token" role="button">
+<span class="fd-token" role="button" tabindex="0">
     <span class="fd-token__text">
         Lorem
     </span>
     <button class="fd-token__close"></button>
 </span>
-<span class="fd-token" role="button">
+<span class="fd-token" role="button" tabindex="0">
     <span class="fd-token__text">
         Dolor
     </span>
     <button class="fd-token__close"></button>
 </span>
-<span class="fd-token" role="button">
+<span class="fd-token" role="button" tabindex="0">
     <span class="fd-token__text">
         Filter
     </span>
@@ -46,25 +46,25 @@ Token are used to represent contextualizing information. They can be useful to s
 ## Selected Token
 `fd-token--selected` modifier different color of token
 {% capture selected-token %}
-<span class="fd-token fd-token--selected" role="button">
+<span class="fd-token fd-token--selected" role="button" tabindex="0">
     <span class="fd-token__text">
         Bibendum
     </span>
     <button class="fd-token__close"></button>
 </span>
-<span class="fd-token fd-token--selected" role="button">
+<span class="fd-token fd-token--selected" role="button" tabindex="0">
     <span class="fd-token__text">
         Lorem
     </span>
     <button class="fd-token__close"></button>
 </span>
-<span class="fd-token fd-token--selected" role="button">
+<span class="fd-token fd-token--selected" role="button" tabindex="0">
     <span class="fd-token__text">
         Dolor
     </span>
     <button class="fd-token__close"></button>
 </span>
-<span class="fd-token fd-token--selected" role="button">
+<span class="fd-token fd-token--selected" role="button" tabindex="0">
     <span class="fd-token__text">
         Filter
     </span>
@@ -76,22 +76,22 @@ Token are used to represent contextualizing information. They can be useful to s
 ## Readonly Token
 `fd-token--readonly` modifier different color of token. Readonly token shouldn't contain close button
 {% capture readonly-token %}
-<span class="fd-token fd-token--readonly" role="button">
+<span class="fd-token fd-token--readonly" role="button" tabindex="0">
     <span class="fd-token__text">
         Bibendum
     </span>
 </span>
-<span class="fd-token fd-token--readonly" role="button">
+<span class="fd-token fd-token--readonly" role="button" tabindex="0">
     <span class="fd-token__text">
         Lorem
     </span>
 </span>
-<span class="fd-token fd-token--readonly" role="button">
+<span class="fd-token fd-token--readonly" role="button" tabindex="0">
     <span class="fd-token__text">
         Dolor
     </span>
 </span>
-<span class="fd-token fd-token--readonly" role="button">
+<span class="fd-token fd-token--readonly" role="button" tabindex="0">
     <span class="fd-token__text">
         Filter
     </span>
@@ -102,25 +102,25 @@ Token are used to represent contextualizing information. They can be useful to s
 ## Compact Token
 `fd-token--compact` modifier adds compact mode
 {% capture compact-token %}
-<span class="fd-token fd-token--compact" role="button">
+<span class="fd-token fd-token--compact" role="button" tabindex="0">
     <span class="fd-token__text">
         Bibendum
     </span>
     <button class="fd-token__close"></button>
 </span>
-<span class="fd-token fd-token--compact" role="button">
+<span class="fd-token fd-token--compact" role="button" tabindex="0">
     <span class="fd-token__text">
         Lorem
     </span>
     <button class="fd-token__close"></button>
 </span>
-<span class="fd-token fd-token--compact" role="button">
+<span class="fd-token fd-token--compact" role="button" tabindex="0">
     <span class="fd-token__text">
         Dolor
     </span>
     <button class="fd-token__close"></button>
 </span>
-<span class="fd-token fd-token--compact" role="button">
+<span class="fd-token fd-token--compact" role="button" tabindex="0">
     <span class="fd-token__text">
         Filter
     </span>
@@ -137,25 +137,25 @@ To show focus on whole element, it's needed to add `.is-focus` into container.
 {% capture tokenizer %}
 <div class="fd-tokenizer">
     <div class="fd-tokenizer__inner">
-        <span class="fd-token" role="button">
+        <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Bibendum
             </span>
             <button class="fd-token__close"></button>
         </span>
-        <span class="fd-token" role="button">
+        <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Lorem
             </span>
             <button class="fd-token__close"></button>
         </span>
-        <span class="fd-token" role="button">
+        <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Dolor
             </span>
             <button class="fd-token__close"></button>
         </span>
-        <span class="fd-token" role="button">
+        <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Filter
             </span>
@@ -172,25 +172,25 @@ To show focus on whole element, it's needed to add `.is-focus` into container.
 <br/><br/>
 <div class="fd-tokenizer is-focus">
     <div class="fd-tokenizer__inner">
-        <span class="fd-token" role="button">
+        <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Bibendum
             </span>
             <button class="fd-token__close"></button>
         </span>
-        <span class="fd-token" role="button">
+        <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Lorem
             </span>
             <button class="fd-token__close"></button>
         </span>
-        <span class="fd-token" role="button">
+        <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Dolor
             </span>
             <button class="fd-token__close"></button>
         </span>
-        <span class="fd-token" role="button">
+        <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Filter
             </span>
@@ -211,25 +211,25 @@ To show focus on whole element, it's needed to add `.is-focus` into container.
 {% capture compact-tokenizer %}
 <div class="fd-tokenizer fd-tokenizer--compact">
     <div class="fd-tokenizer__inner">
-        <span class="fd-token fd-token--compact" role="button">
+        <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Bibendum
             </span>
             <button class="fd-token__close"></button>
         </span>
-        <span class="fd-token fd-token--compact" role="button">
+        <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Lorem
             </span>
             <button class="fd-token__close"></button>
         </span>
-        <span class="fd-token fd-token--compact" role="button">
+        <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Dolor
             </span>
             <button class="fd-token__close"></button>
         </span>
-        <span class="fd-token fd-token--compact" role="button">
+        <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Filter
             </span>
@@ -246,25 +246,25 @@ To show focus on whole element, it's needed to add `.is-focus` into container.
 <br/><br/>
 <div class="fd-tokenizer fd-tokenizer--compact is-focus">
     <div class="fd-tokenizer__inner">
-        <span class="fd-token fd-token--compact" role="button">
+        <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Bibendum
             </span>
             <button class="fd-token__close"></button>
         </span>
-        <span class="fd-token fd-token--compact" role="button">
+        <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Lorem
             </span>
             <button class="fd-token__close"></button>
         </span>
-        <span class="fd-token fd-token--compact" role="button">
+        <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Dolor
             </span>
             <button class="fd-token__close"></button>
         </span>
-        <span class="fd-token fd-token--compact" role="button">
+        <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Filter
             </span>
