@@ -21,6 +21,9 @@ $block: #{$fd-namespace}-tokenizer;
     float: right;
     white-space: nowrap;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   .fd-token {
