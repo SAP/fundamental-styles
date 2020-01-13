@@ -12,7 +12,6 @@ $block: #{$fd-namespace}-tokenizer;
   width: 100%;
   background-color: var(--sapField_Background);
   padding-left: $fd-tokenizer-spacing;
-  padding-right: $fd-tokenizer-spacing;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -54,7 +53,6 @@ $block: #{$fd-namespace}-tokenizer;
 
   &--compact {
     padding-left: $fd-tokenizer-compact-spacing;
-    padding-right: $fd-tokenizer-compact-spacing;
 
     .#{$block}__input {
       min-width: 2rem;
