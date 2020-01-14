@@ -89,7 +89,7 @@ This example includes the product menu for navigating to applications within the
     <a href="#" class="fd-shellbar__logo">
       <img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP">
     </a>
-    <div class="fd-product-menu fd-button">
+    <div class="fd-product-menu fd-shellbar__product-menu fd-button">
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
           <button class="fd-product-menu__control" aria-controls="9GLB26941" aria-haspopup="true" aria-expanded="false">
@@ -114,9 +114,9 @@ This example includes the product menu for navigating to applications within the
     <div class="fd-shellbar__action fd-shellbar__action--desktop">    
       <div class="fd-popover__control">
         <div aria-label="Image label" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
-          <div class="fd-input-group">
-            <input type="text" class="fd-input fd-input-group__input" id="F4GcX348b1" value="Sear" placeholder="Search...">
-            <span class="fd-input-group__addon fd-input-group__addon--button">
+          <div class="fd-input-group fd-shellbar__input-group">
+            <input type="text" class="fd-input fd-input-group__input fd-shellbar__input-group__input" id="F4GcX348b1" value="Sear" placeholder="Search...">
+            <span class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button">
               <button class="fd-shellbar__button fd-button sap-icon--decline"></button>
             </span>
           </div>
@@ -163,9 +163,9 @@ When a product has multiple links, the product links should collapse into an ove
     <div class="fd-shellbar__action fd-shellbar__action--desktop">    
       <div class="fd-popover__control">
         <div aria-label="Image label" aria-controls="UIO6J688" aria-expanded="false" aria-haspopup="true">
-          <div class="fd-input-group">
-            <input type="text" class="fd-input fd-input-group__input" id="UIO6J6881" value="Sear" placeholder="Search...">
-            <span class="fd-input-group__addon fd-input-group__addon--button">
+          <div class="fd-input-group fd-shellbar__input-group">
+            <input type="text" class="fd-input fd-input-group__input fd-shellbar__input-group__input" id="UIO6J6881" value="Sear" placeholder="Search...">
+            <span class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button">
               <button class="fd-shellbar__button fd-button sap-icon--decline"></button>
             </span>
           </div>
@@ -177,7 +177,7 @@ When a product has multiple links, the product links should collapse into an ove
     </div>
       <div class="fd-shellbar__action fd-shellbar__action--desktop">
         <button class="fd-button fd-shellbar__button sap-icon--bell" aria-label="Notifications">
-        <span class="fd-counter fd-counter--notification" aria-label="Unread count">25</span></button>
+        <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification" aria-label="Unread count">25</span></button>
       </div>
       <div class="fd-shellbar__action fd-shellbar__action--desktop">
         <button class="fd-button fd-shellbar__button sap-icon--pool" aria-label="Pool"></button>
@@ -188,7 +188,7 @@ When a product has multiple links, the product links should collapse into an ove
             <div class="fd-popover__control">
               <div class="fd-shellbar-collapse--control" aria-controls="CWaGX278" aria-expanded="false" aria-haspopup="true" role="button">
                 <button class="fd-button fd-shellbar__button sap-icon--overflow" aria-controls="undefined" aria-haspopup="true" aria-expanded="false">
-                <span class="fd-counter fd-counter--notification" aria-label="Unread count">25</span></button>
+                <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification" aria-label="Unread count">25</span></button>
               </div>
             </div>
             <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="CWaGX278">
@@ -207,7 +207,7 @@ When a product has multiple links, the product links should collapse into an ove
         <div class="fd-popover fd-popover--right">
           <div class="fd-popover__control">
             <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="DD35G276" aria-expanded="false" aria-haspopup="true" role="button">
-              <span class="fd-identifier fd-identifier--xs fd-identifier--circle">WW</span>
+              <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-shellbar__identifier--circle">WW</span>
             </div>
           </div>
           <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="DD35G276">
