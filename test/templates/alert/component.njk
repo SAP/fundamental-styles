@@ -7,7 +7,7 @@
 {%- set _id = utils.id() %}
 <div class="fd-alert{{ modifier.block | modifier('alert') }}{{ 'dismissible' | modifier('alert') if properties.dismissible }}" role="alert" {{ ' id="'+_id+'"' if properties.dismissible }} {{ ' dir="rtl"' if properties.rtl }}>
   {%- if properties.dismissible %}
-  <button class="fd-button fd-button--light fd-button--compact fd-alert__close" aria-controls="{{ _id }}" aria-label="Close"></button>
+  <button class="btn-playground fd-alert__close" aria-controls="{{ _id }}" aria-label="Close"></button>
   {%- endif %}
   {{ properties.text }}
 </div>

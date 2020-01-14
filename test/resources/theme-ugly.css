@@ -101,4 +101,6 @@
   --sapGroup_ContentBorderColor: #00D1B2;
   --sapPageHeader_Background: #bc3f8c;
   --sapPageFooter_Background: powderblue;
+  --sapSelectedColor: #4f9344;
+  --sapField_BorderColor: rgb(13%, 71%, 90%);
 }
