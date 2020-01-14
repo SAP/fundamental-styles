@@ -20,9 +20,7 @@ $block: #{$fd-namespace}-token;
   $fd-token-compact-close-width: 1.25rem;
   $fd-token-close-width: 1.75rem;
   $fd-token-close-height: 1.625rem;
-  $fd-token-padding-vertical: 0.25rem;
   $fd-token-padding-horizontal: 0.3125rem;
-  $fd-token-compact-padding-vertical: 0.1rem;
   $fd-token-compact-padding-horizontal: 0.25rem;
   $fd-token-color: var(--sapTextColor) !default;
   // $fd-token-background-color: darken(var(--sapButton_Background), 2);
@@ -40,9 +38,7 @@ $block: #{$fd-namespace}-token;
   font-size: var(--sapFontSize);
   display: inline-flex;
   align-items: center;
-  padding-top: $fd-token-padding-vertical;
   padding-left: $fd-token-padding-horizontal;
-  padding-bottom: $fd-token-padding-vertical;
   border-radius: $fd-border-radius;
   white-space: nowrap;
   max-width: 100%;
@@ -65,13 +61,16 @@ $block: #{$fd-namespace}-token;
 
     font-size: var(--sapFontSmallSize);
     color: var(--sapContent_IconColor);
-    padding: $fd-token-padding-vertical 0.5rem;
+    padding: 0 0.5rem;
     width: $fd-token-close-width;
     min-width: $fd-token-close-width;
     height: $fd-token-close-height;
     background-color: transparent;
     line-height: 1.25rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @include fd-icon("decline", "s");
 
@@ -89,14 +88,12 @@ $block: #{$fd-namespace}-token;
   @include fd-token-focus();
 
   &--compact {
-    padding-top: $fd-token-compact-padding-vertical;
     padding-left: $fd-token-compact-padding-horizontal;
-    padding-bottom: $fd-token-compact-padding-vertical;
     height: $fd-token-compact-height;
     line-height: 1.125rem;
 
     .#{$block}__close {
-      padding: $fd-token-compact-padding-vertical $fd-token-compact-padding-horizontal;
+      padding: 0 $fd-token-compact-padding-horizontal;
       vertical-align: baseline;
       width: $fd-token-compact-close-width;
       min-width: $fd-token-compact-close-width;
@@ -125,10 +122,10 @@ $block: #{$fd-namespace}-token;
 
   &--readonly {
     color: var(--sapContent_LabelColor);
-    padding: $fd-token-padding-vertical $fd-token-padding-horizontal;
+    padding: 0 $fd-token-padding-horizontal;
 
     &.#{$block}--compact {
-      padding: $fd-token-compact-padding-vertical $fd-token-compact-padding-horizontal;
+      padding: 0 $fd-token-compact-padding-horizontal;
     }
   }
 }
