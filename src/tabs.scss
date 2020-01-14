@@ -190,6 +190,8 @@ $block: #{$fd-namespace}-tabs;
   }
 
   &__icon {
+    @include fd-reset();
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -230,6 +232,8 @@ $block: #{$fd-namespace}-tabs;
   }
 
   &__counter-header {
+    @include fd-reset();
+
     font-size: 1.5rem;
     line-height: 1.5rem;
     color: $fd-tabs-label-color;
@@ -237,12 +241,16 @@ $block: #{$fd-namespace}-tabs;
   }
 
   &__overflow {
+    @include fd-reset();
+
     margin-left: auto;
 
     @include fd-icon('slim-arrow-down', 'm');
   }
 
   &__process-icon {
+    @include fd-reset();
+
     color: var(--sapContent_NonInteractiveIconColor);
     padding: 0 0.5rem;
     display: flex;
@@ -254,6 +262,8 @@ $block: #{$fd-namespace}-tabs;
   }
 
   &__label {
+    @include fd-reset();
+
     display: block;
     padding-left: 0.125rem;
     font-size: var(--sapFontSmallSize);
@@ -266,6 +276,8 @@ $block: #{$fd-namespace}-tabs;
   }
 
   &__separator {
+    @include fd-reset();
+
     height: 2rem;
     border-right: solid var(--sapGroup_TitleBorderColor);
     border-right-width: 0.0625rem;
@@ -274,6 +286,8 @@ $block: #{$fd-namespace}-tabs;
   }
 
   &__header {
+    @include fd-reset();
+
     display: flex;
     align-items: center;
 
@@ -435,4 +449,8 @@ $block: #{$fd-namespace}-tabs;
   &--xxl {
     padding: 0 3rem;
   }
+}
+
+.fd-tabs__process {
+  @include fd-reset();
 }
