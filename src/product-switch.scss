@@ -345,12 +345,6 @@ $block: #{$fd-namespace}-product-switch;
       .#{$block}__text {
         align-items: flex-start;
 
-        .#{$block}__title {
-          &::before {
-            right: 21.5rem;
-          }
-        }
-
         .#{$block}__title:not(:last-child) {
           @include fd-ellipsis();
 
@@ -365,6 +359,34 @@ $block: #{$fd-namespace}-product-switch;
       }
 
       .#{$block}__item {
+        $before-right: 21.8rem;
+        $before-width: 2rem;
+
+        .#{$block}__title {
+          &::before {
+            right: $before-right;
+            width: $before-width;
+          }
+        }
+
+        .#{$block}__subtitle {
+          @include multiline-truncate($lineHeight: 1.25rem, $lineCount: 1);
+
+          &::before {
+            background-color: var(--sapTile_Background);
+            right: $before-right;
+            width: $before-width;
+            text-align: right;
+            z-index: 2;
+          }
+
+          &::after {
+            background-color: var(--sapTile_Background);
+            z-index: 3;
+            display: none;
+          }
+        }
+
         &:hover {
           .#{$block}__subtitle {
             &::after,
@@ -396,24 +418,6 @@ $block: #{$fd-namespace}-product-switch;
             &::before {
               background-color: var(--sapList_Active_Background);
             }
-          }
-        }
-
-        .#{$block}__subtitle {
-          @include multiline-truncate($lineHeight: 1.25rem, $lineCount: 1);
-
-          &::before {
-            background-color: var(--sapTile_Background);
-            right: 21.5rem;
-            width: 1.5rem;
-            text-align: right;
-            z-index: 2;
-          }
-
-          &::after {
-            background-color: var(--sapTile_Background);
-            z-index: 3;
-            display: none;
           }
         }
 
