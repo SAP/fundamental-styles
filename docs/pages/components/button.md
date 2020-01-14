@@ -74,6 +74,7 @@ Full list of all the available icons can be found on the <a href="icon.html">ico
 <button class="fd-button--standard sap-icon--filter"></button>
 <button class="fd-button--positive sap-icon--accept"></button>
 <button class="fd-button--negative sap-icon--decline"></button>
+<button class="fd-button--standard fd-button--rounded sap-icon--add-product"></button> 
 {% endcapture %}
 {% include display-component.html component=button %}
 

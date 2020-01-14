@@ -5,21 +5,24 @@
 
 {% block content %}
 
-{% set emphasis = ["emphasized", "", "light" ] %}
-{% set types = ["", "standard", "positive ", "medium", "negative" ] %}
-{% set sizes = ["", "compact" ] %}
-{% set menus = ["", "menu"] %}
+    {% set emphasis = ["emphasized", "", "light"] %}
+    {% set types = ["", "standard", "positive ", "medium", "negative"] %}
+    {% set sizes = ["", "compact"] %}
+    {% set menus = ["", "menu"] %}
 
-{%- macro code_display(e, type, size, menu) -%}
-    {{".fd-button--" + e if e}}{{".fd-button--" + type if type}}{{".fd-button--" + size if size}}{{".fd-button--" + menu if menu}}{{".fd-button" if not type and not size and not e and not menu}}
-{%- endmacro -%}
+    {%- macro code_display(e, type, size, menu, rounded) -%}
+        {{".fd-button--" + e if e}}{{".fd-button--" + type if type}}{{".fd-button--" + size if size}}{{".fd-button--" + menu if menu}}{{".fd-button" if not type and not size and not e and not menu}}{{'.fd-button--'+ rounded if rounded}}
+    {%- endmacro -%}
 
-{% for type in types %}
-    {% for e in emphasis %}
-        {% for size in sizes %}
-            {% for menu in menus %}
-                {% set example %}
-                    <h3><code>button: {{code_display(e, type, size, menu)}}</code></h3>
+    {% for type in types %}
+        {% for e in emphasis %}
+            {% for size in sizes %}
+                {% for menu in menus %}
+                    {% set example %}
+                    <h3>
+                        <code>button:
+                            {{code_display(e, type, size, menu)}}</code>
+                    </h3>
                     {{- button(
                     { label: 'Button' },
                     modifier={ block: [type,size,e,menu] })
@@ -34,7 +37,10 @@
                         modifier={ block: [type,size,e,menu] },
                         aria={ label: 'Add Attachment' })
                     }}
-                    <h3> <code>anchor: {{code_display(e, type, size, menu)}}</code></h3>
+                    <h3>
+                        <code>anchor:
+                            {{code_display(e, type, size, menu)}}</code>
+                    </h3>
                     {{- anchor_button(
                     { label: 'Button' },
                     modifier={ block: [type,size,e,menu] })
@@ -49,11 +55,14 @@
                         modifier={ block: [type,size,e,menu] },
                         aria={ label: 'Add Attachment' })
                     }}
-                {% endset %}
-                {{ format(example) }}
+                    {% endset %}
+                    {{ format(example) }}
 
-                {% set example %}
-                    <h3><code>button: {{code_display(e, type, size, menu)}}</code></h3>
+                    {% set example %}
+                    <h3>
+                        <code>button:
+                            {{code_display(e, type, size, menu)}}</code>
+                    </h3>
                     {{-  button(
                     { label: 'Focused',
                         icon: 'cart' },
@@ -71,7 +80,10 @@
                         modifier={ block: [type,size,e,menu] },
                         state={ disabled: true })
                     }}
-                    <h3><code>anchor: {{code_display(e, type, size, menu)}}</code></h3>
+                    <h3>
+                        <code>anchor:
+                            {{code_display(e, type, size, menu)}}</code>
+                    </h3>
                     {{-  anchor_button(
                     { label: 'Focused',
                         icon: 'cart' },
@@ -89,12 +101,25 @@
                         modifier={ block: [type,size,e,menu] },
                         state={ disabled: true })
                     }}
-                {% endset %}
-                {{ format(example) }}
+                    {% endset %}
+                    {{ format(example) }}
 
+                {% endfor %}
             {% endfor %}
         {% endfor %}
     {% endfor %}
-{% endfor %}
+
+    {% set example %}
+    <h3>
+        <code>rounded button:
+            {{code_display('', 'standard', 'compact', '', 'rounded')}}</code>
+    </h3>
+    {{- button(
+        { label: '', icon: 'cart' },
+        classes='fd-button--rounded',
+        modifier={ block: ['standard','compact','',''] })
+    }}
+    {% endset %}
+    {{ format(example) }}
 
 {% endblock %}

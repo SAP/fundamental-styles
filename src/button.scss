@@ -463,4 +463,8 @@ a.#{$block} {
       }
     }
   }
+
+  &--rounded {
+    border-radius: 50%;
+  }
 }
