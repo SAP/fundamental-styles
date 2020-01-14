@@ -166,7 +166,7 @@ When a product has multiple links, the product links should collapse into an ove
           <div class="fd-input-group fd-shellbar__input-group">
             <input type="text" class="fd-input fd-input-group__input fd-shellbar__input-group__input" id="UIO6J6881" value="Sear" placeholder="Search...">
             <span class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button">
-              <button class="fd-shellbar__button fd-button sap-icon--decline"></button>
+              <button class="fd-shellbar__button fd-button sap-icon--navigation-down-arrow"></button>
             </span>
           </div>
         </div>

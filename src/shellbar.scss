@@ -303,21 +303,24 @@ $block: #{$fd-namespace}-shellbar;
     }
 
     .#{$block}__input-group__addon {
-      background-color: transparent;
+      background-color: $fd-shellbar-background-color;
     }
 
     .#{$block}__input-group {
-      background-color: transparent;
+      background-color: $fd-shellbar-background-color;
       cursor: text;
 
       &:hover {
-        background-color: $fd-shell-hover-background;
         border-color: $fd-field-border-color;
       }
 
       .#{$block}__input-group__input {
         border: none;
         color: $fd-shellbar-color;
+
+        &:hover {
+          background-color: $fd-shell-hover-background;
+        }
       }
     }
   }
