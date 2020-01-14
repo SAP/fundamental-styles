@@ -63,4 +63,11 @@ $block: #{$fd-namespace}-tokenizer;
       margin-right: $fd-tokenizer-compact-spacing;
     }
   }
+
+  /** To avoid overwriting from fd-input-group__input on multi-input component */
+  .#{$block}__input {
+    &:last-child {
+      flex-basis: 100%;
+    }
+  }
 }
