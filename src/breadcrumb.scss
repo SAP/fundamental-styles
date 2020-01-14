@@ -26,6 +26,7 @@ $block: #{$fd-namespace}-breadcrumb;
 
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin-bottom: $fd-breadcrumb-margin-bottom;
   list-style: none;
 
@@ -87,5 +88,11 @@ $block: #{$fd-namespace}-breadcrumb;
     transition: all $fd-animation--speed ease-in;
     font-size: $fd-breadcrumb-font-size;
     font-family: $fd-breadcrumb-font-family;
+  }
+
+  &__dropdown-icon {
+    @include fd-icon('slim-arrow-down');
+
+    color: var(--sapLinkColor);
   }
 }
