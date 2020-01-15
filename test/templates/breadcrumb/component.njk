@@ -15,5 +15,6 @@ breadcrumb:
     {%- for item in properties.items %}
     <li class="fd-breadcrumb__item{{ modifier.content | modifier('breadcrumb__content') }}"><a class="fd-breadcrumb__link{{ modifier.content | modifier('breadcrumb__content') }}" href="{{ item.href or '#' }}">{{ item.label }}</a></li>
     {% endfor %}
+	<li class="fd-breadcrumb__item">Current Link</li>
 </ul>
 {%- endmacro %}

@@ -19,7 +19,7 @@ Users can navigate to previous levels in the path. When clicking on the current 
 <ul class="fd-breadcrumb">
     <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Link Text</a></li>
     <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Link Text</a></li>
-    <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Link Text</a></li>
+    <li class="fd-breadcrumb__item">Link Text</li>
 </ul>
 {% endcapture %}
 
@@ -61,7 +61,7 @@ there should be popover with missing options.
     </li>
     <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Link Text</a></li>
     <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Link Text</a></li>
-    <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Link Text</a></li>
+    <li class="fd-breadcrumb__item">Link Text</li>
 </ul>
 {% endcapture %}
 

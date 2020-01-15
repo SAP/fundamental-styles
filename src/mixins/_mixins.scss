@@ -1,4 +1,6 @@
 @import "vars";
+@import "states";
+
 // utils
 @mixin fd-reset {
   font-size: var(--sapFontSize);
@@ -279,19 +281,13 @@
     font-weight: bold;
   }
 
-  @include fd-hover() {
-    color: var(--sapLink_Hover_Color);
-    text-decoration: underline;
-  }
-
   &:visited {
     color: var(--sapLink_Visited_Color);
   }
 
-  @include fd-disabled() {
-    opacity: 0.4;
-    color: var(--sapLinkColor);
-    pointer-events: none;
+  @include fd-hover() {
+    color: var(--sapLink_Hover_Color);
+    text-decoration: underline;
   }
 
   @include fd-focus() {
@@ -300,6 +296,20 @@
     outline-width: var(--sapContent_FocusWidth);
     outline-color: var(--sapContent_FocusColor);
     outline-style: var(--sapContent_FocusStyle);
+  }
+
+  @include fd-active() {
+    color: var(--sapLink_Active_Color);
+  }
+
+  &--inverted {
+    color: var(--sapLink_InvertedColor);
+  }
+
+  @include fd-disabled() {
+    opacity: var(--sapContent_DisabledOpacity);
+    color: var(--sapLinkColor);
+    pointer-events: none;
   }
 }
 

@@ -50,6 +50,8 @@ $block: #{$fd-namespace}-breadcrumb;
   &__item {
     @include fd-reset();
 
+    color: $fd-breadcrumb-item-color;
+
     &::after {
       content: "/";
       color: $fd-breadcrumb-separator-color;
@@ -91,8 +93,10 @@ $block: #{$fd-namespace}-breadcrumb;
   }
 
   &__dropdown-icon {
+    @include fd-reset();
     @include fd-icon('slim-arrow-down');
 
+    text-decoration: inherit;
     color: var(--sapLinkColor);
   }
 }

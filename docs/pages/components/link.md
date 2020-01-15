@@ -21,6 +21,8 @@ Used when extra emphasis is needed especially when a link needs to standout from
 <br><br>
 <a class="fd-link" aria-disabled="true">Disabled Link</a>
 <br><br>
+<a href="#" class="fd-link fd-link--inverted">Inverted Link</a>
+<br><br>
 <a href="#" class="fd-link" tabindex="0">
     Icon Left Link 
     <span class="sap-icon--slim-arrow-right sap-icon--s"></span>
