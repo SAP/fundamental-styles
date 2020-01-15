@@ -112,7 +112,9 @@ $block: #{$fd-namespace}-nested-list;
       &::after {
         @include fd-flex-center();
         @include fd-nested-list-arrow();
-
+        // `height: 0` is set to prevent breaking `align-items: center` on IE11
+        // Read more https://github.com/philipwalton/flexbugs/issues/231
+        height: 0;
         min-height: 100%;
         min-width: 2.75rem;
         color: var(--sapList_TextColor);

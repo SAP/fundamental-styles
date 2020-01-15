@@ -105,4 +105,11 @@
   --sapShell_Active_Background: #99cc00;
   --sapContent_BadgeBackground: #004d1a;
   --sapShellBorderColor: #993300;
+  --sapGroup_ContentBackground: #945ef7;
+  --sapElement_BorderCornerRadius: 10px;
+  --sapGroup_ContentBorderColor: #00D1B2;
+  --sapPageHeader_Background: #bc3f8c;
+  --sapPageFooter_Background: powderblue;
+  --sapSelectedColor: #4f9344;
+  --sapField_BorderColor: rgb(13%, 71%, 90%);
 }

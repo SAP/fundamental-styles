@@ -2,6 +2,46 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.1-rc.10"></a>
+## [0.4.1-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.4.1-rc.9...v0.4.1-rc.10) (2020-01-15)
+
+
+
+<a name="0.4.1-rc.9"></a>
+## [0.4.1-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.4.1-rc.8...v0.4.1-rc.9) (2020-01-15)
+
+
+### Bug Fixes
+
+* Align side-nav navigation arrow on IE11 ([#490](https://github.com/SAP/fundamental-styles/issues/490)) ([4011bab](https://github.com/SAP/fundamental-styles/commit/4011bab))
+
+
+
+<a name="0.4.1-rc.8"></a>
+## [0.4.1-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.4.1-rc.7...v0.4.1-rc.8) (2020-01-15)
+
+
+
+<a name="0.4.1-rc.7"></a>
+## [0.4.1-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.4.1-rc.6...v0.4.1-rc.7) (2020-01-11)
+
+
+
+<a name="0.4.1-rc.6"></a>
+## [0.4.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.4.1-rc.5...v0.4.1-rc.6) (2020-01-11)
+
+
+
+<a name="0.4.1-rc.5"></a>
+## [0.4.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.4.1-rc.4...v0.4.1-rc.5) (2020-01-10)
+
+
+
+<a name="0.4.1-rc.4"></a>
+## [0.4.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.4.1-rc.3...v0.4.1-rc.4) (2020-01-09)
+
+
+
 <a name="0.4.1-rc.3"></a>
 ## [0.4.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.4.1-rc.2...v0.4.1-rc.3) (2020-01-07)
 

@@ -6,24 +6,44 @@ $block: #{$fd-namespace}-popover;
 
 .#{$block} {
 
-  $fd-popover-top-position: 120% !default;
+  $fd-popover-top-position: calc(100% + 0.5rem) !default;
   $fd-popover-top-position-noarrow: 100% !default;
-  $fd-popover-left-position: 0 !default;
-  $fd-popover-border: solid 1px $fd-forms-border-color !default;
   $fd-popover-z-index: map-get($fd-z-index-levels, "top") !default;
-  $fd-popover-background-color: fd-color(background, 2) !default;
+  $fd-popover-background-color: var(--sapGroup_ContentBackground) !default;
+  $fd-popover-border-radius: var(--sapElement_BorderCornerRadius) !default;
+  $fd-popover-box-shadow: var(--sapContent_Shadow2) !default;
+  $fd-popover-box-shadow-no-arrow: var(--sapContent_Shadow1) !default;
 
-  $fd-popover-arrow-top-back: -9px !default;
-  $fd-popover-arrow-top-front: -8px !default;
-  $fd-popover-arrow-right: 14px !default;
-  $fd-popover-arrow-x-offset: fd-space(2.5) !default;
+  $fd-popover-arrow-top-back: -0.5rem !default;
+  $fd-popover-arrow-top-front: calc(-0.5rem + 1px) !default;
 
-  $fd-popover-arrow-width: 13px;
-  $fd-popover-arrow-height: 8px;
-  $fd-popover-arrow-width-half: $fd-popover-arrow-width/2;
+  $fd-popover-arrow-width: 1rem !default;
+  $fd-popover-arrow-height: 0.5rem !default;
+  $fd-popover-arrow-width-half: $fd-popover-arrow-width/2 !default;
+  $fd-popover-arrow-offset: 0.5rem !default;
+  $fd-popover-arrow-color: var(--sapGroup_ContentBorderColor) !default;
 
   $fd-popover-transition-params: $fd-animation--speed !default;
-  $fd-popover-transition-distance: -15px !default;
+
+  $fd-popover-body-shadow-offset: var(--sapGroup_BorderWidth) !default;
+
+  // POPOVER HEADER
+  $fd-popover-header-height: 2.75rem !default;
+  $fd-popover-header-height--compact: 2.5rem !default;
+  $fd-popover-header-background: var(--sapPageHeader_Background);
+  $fd-popover-header-box-shadow: var(--sapContent_HeaderShadow);
+  $fd-popover-header-padding: 0 0.5rem !default;
+
+  // POPOVER SUBHEADER
+  $fd-popover-subheader-height: 2.75rem !default;
+  $fd-popover-subheader-height--compact: 2rem !default;
+
+  // POPOVER FOOTER
+  $fd-popover-footer-height: 2.75rem !default;
+  $fd-popover-footer-height--compact: 2.5rem !default;
+  $fd-popover-footer-background: var(--sapPageFooter_Background);
+  $fd-popover-footer-border-top: 0.0625rem solid var(--sapPageFooter_BorderColor);
+  $fd-popover-footer-padding: 0 0.5rem !default;
 
   @include fd-reset();
 
@@ -36,93 +56,154 @@ $block: #{$fd-namespace}-popover;
     position: relative;
     margin-left: 0;
 
+    &.#{$fd-namespace}-input:last-child {
+      margin-bottom: 0;
+    }
+
     @include action-cursor();
   }
 
   &__body {
     @include fd-reset();
 
-    border: $fd-popover-border;
+    border: none;
     position: absolute;
     white-space: nowrap;
+    box-shadow: $fd-popover-box-shadow;
     z-index: $fd-popover-z-index;
-    border-radius: $fd-border-radius;
-
-    @include fd-var-color("background-color", $fd-popover-background-color, --fd-color-background-2);
-
-    box-shadow: 0 5px 20px 0 var(--fd-color-neutral-3), 0 2px 8px 0 var(--fd-color-neutral-2);
+    border-radius: $fd-popover-border-radius;
+    background: $fd-popover-background-color;
     opacity: 1;
     visibility: visible;
-    transition: all $fd-popover-transition-params;
-    left: $fd-popover-left-position;
+    left: $fd-popover-body-shadow-offset;
     top: $fd-popover-top-position;
+    transition: all $fd-popover-transition-params;
     transform: translateY(0);
 
     @include fd-rtl() {
       left: auto;
-      right: -3px;
+      right: $fd-popover-body-shadow-offset;
 
       &::before {
-        right: $fd-popover-arrow-x-offset;
+        right: $fd-popover-arrow-offset;
       }
 
       &::after {
-        right: $fd-popover-arrow-x-offset;
+        right: $fd-popover-arrow-offset;
       }
     }
 
     &::before {
-      @include triangle(13px 8px, $fd-popover-background-color, up, --fd-color-background-2);
+      @include triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-background-color, up);
 
       content: "";
       position: absolute;
       top: $fd-popover-arrow-top-front;
-      left: $fd-popover-arrow-x-offset;
+      left: $fd-popover-arrow-offset;
       z-index: $fd-popover-z-index + 2;
     }
 
     &::after {
-      @include triangle(13px 8px, fd-color("neutral", 4), up, --fd-color-neutral-4);
+      @include triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-arrow-color, up);
 
       content: "";
       position: absolute;
       top: $fd-popover-arrow-top-back;
-      left: $fd-popover-arrow-x-offset;
+      left: $fd-popover-arrow-offset;
       z-index: $fd-popover-z-index + 1;
+    }
+
+    &-header {
+      @include fd-reset();
+      @include fd-ellipsis();
+
+      height: $fd-popover-header-height;
+      line-height: $fd-popover-header-height;
+      width: auto;
+      background-color: $fd-popover-header-background;
+      padding: $fd-popover-header-padding;
+      box-shadow: $fd-popover-header-box-shadow;
+      border-radius: $fd-popover-border-radius $fd-popover-border-radius 0 0;
+
+      &--compact {
+        height: $fd-popover-header-height--compact;
+        line-height: $fd-popover-header-height--compact;
+      }
+
+      &--with-subheader {
+        box-shadow: none;
+      }
+    }
+
+    &-subheader {
+      @include fd-reset();
+      @include fd-ellipsis();
+
+      height: $fd-popover-subheader-height;
+      line-height: $fd-popover-subheader-height;
+      width: auto;
+      background-color: $fd-popover-header-background;
+      padding: $fd-popover-header-padding;
+      box-shadow: $fd-popover-header-box-shadow;
+      border-radius: 0;
+
+      &--compact {
+        height: $fd-popover-subheader-height--compact;
+        line-height: $fd-popover-subheader-height--compact;
+      }
+    }
+
+    &-footer {
+      @include fd-reset();
+      @include fd-ellipsis();
+
+      height: $fd-popover-footer-height;
+      line-height: $fd-popover-footer-height;
+      width: auto;
+      min-width: 4rem;
+      background-color: $fd-popover-footer-background;
+      padding: $fd-popover-footer-padding;
+      border-top: $fd-popover-footer-border-top;
+      border-radius: 0 0 $fd-popover-border-radius $fd-popover-border-radius;
+
+      &--compact {
+        height: $fd-popover-footer-height--compact;
+        line-height: $fd-popover-footer-height--compact;
+      }
     }
 
     &--left {
       right: auto;
-      left: -3px;
+      left: $fd-popover-body-shadow-offset;
 
       @include fd-rtl() {
-        right: -3px;
+        right: $fd-popover-body-shadow-offset;
         left: auto;
 
         &::before,
         &::after {
-          right: $fd-popover-arrow-right;
+          right: $fd-popover-arrow-offset;
           left: unset;
         }
       }
 
       &::before,
       &::after {
-        left: $fd-popover-arrow-x-offset;
+        left: $fd-popover-arrow-offset;
       }
     }
 
     &--right {
       left: auto;
-      right: -3px;
+      right: $fd-popover-body-shadow-offset;
 
       @include fd-rtl() {
         right: auto;
-        left: -3px;
+        left: $fd-popover-body-shadow-offset;
 
         &::before,
         &::after {
-          left: $fd-popover-arrow-right;
+          left: $fd-popover-arrow-offset;
           right: unset;
         }
       }
@@ -130,11 +211,12 @@ $block: #{$fd-namespace}-popover;
       &::before,
       &::after {
         left: auto;
-        right: $fd-popover-arrow-x-offset;
+        right: $fd-popover-arrow-offset;
       }
     }
 
     &--no-arrow {
+      box-shadow: $fd-popover-box-shadow-no-arrow;
       top: $fd-popover-top-position-noarrow;
 
       &::before,
@@ -142,19 +224,23 @@ $block: #{$fd-namespace}-popover;
         display: none;
       }
 
-      &.fd-popover__body--left {
-        left: 0;
+      &.#{$block}__body--left {
+        left: $fd-popover-body-shadow-offset;
+        right: auto;
 
         @include fd-rtl() {
-          right: 0;
+          right: $fd-popover-body-shadow-offset;
+          left: auto;
         }
       }
 
-      &.fd-popover__body--right {
-        right: 0;
+      &.#{$block}__body--right {
+        right: $fd-popover-body-shadow-offset;
+        left: auto;
 
         @include fd-rtl() {
-          left: 0;
+          left: $fd-popover-body-shadow-offset;
+          right: auto;
         }
       }
     }
@@ -164,31 +250,32 @@ $block: #{$fd-namespace}-popover;
       z-index: 1;
       opacity: 0;
       visibility: hidden;
-      transform: translateY($fd-popover-transition-distance);
     }
   }
 
   &__popper {
-    border: $fd-popover-border;
+    @include fd-reset();
+
+    border: none;
     position: absolute;
     white-space: nowrap;
+    box-shadow: $fd-popover-box-shadow;
     z-index: $fd-popover-z-index;
-    border-radius: $fd-border-radius;
-
-    @include fd-var-color("background-color", $fd-popover-background-color, --fd-color-background-2);
-
-    box-shadow: 0 5px 20px 0 var(--fd-color-neutral-3), 0 2px 8px 0 var(--fd-color-neutral-2);
+    border-radius: $fd-popover-border-radius;
+    background: $fd-popover-background-color;
     opacity: 1;
 
     &--no-arrow {
       margin: 0 !important;
 
-      .fd-popover__arrow {
+      .#{$block}__arrow {
         display: none;
       }
     }
 
-    .fd-popover__arrow {
+    .#{$block}__arrow {
+      @include fd-reset();
+
       position: absolute;
       width: 0;
       height: 0;
@@ -210,19 +297,17 @@ $block: #{$fd-namespace}-popover;
     &[x-placement^="top"] {
       margin-bottom: $fd-popover-arrow-height;
 
-      .fd-popover__arrow {
+      .#{$block}__arrow {
         bottom: -$fd-popover-arrow-height;
         margin: 0 $fd-popover-arrow-width-half;
         border-width: $fd-popover-arrow-height $fd-popover-arrow-width-half 0 $fd-popover-arrow-width-half;
-
-        @include fd-var-color("border-top-color", $fd-forms-border-color, --fd-color-neutral-4);
+        border-top-color: $fd-popover-arrow-color;
 
         &::after {
           bottom: 1px;
           margin: 0 (-$fd-popover-arrow-width-half);
           border-width: $fd-popover-arrow-height $fd-popover-arrow-width-half 0 $fd-popover-arrow-width-half;
-
-          @include fd-var-color("border-top-color", $fd-popover-background-color, --fd-color-background-2);
+          border-top-color: $fd-popover-background-color;
         }
       }
     }
@@ -230,19 +315,17 @@ $block: #{$fd-namespace}-popover;
     &[x-placement^="bottom"] {
       margin-top: $fd-popover-arrow-height;
 
-      .fd-popover__arrow {
+      .#{$block}__arrow {
         top: -$fd-popover-arrow-height;
         margin: 0 $fd-popover-arrow-width-half;
         border-width: 0 $fd-popover-arrow-width-half $fd-popover-arrow-height $fd-popover-arrow-width-half;
-
-        @include fd-var-color("border-bottom-color", $fd-forms-border-color, --fd-color-neutral-4);
+        border-bottom-color: $fd-popover-arrow-color;
 
         &::after {
           top: 1px;
           margin: 0 (-$fd-popover-arrow-width-half);
           border-width: 0 $fd-popover-arrow-width-half $fd-popover-arrow-height $fd-popover-arrow-width-half;
-
-          @include fd-var-color("border-bottom-color", $fd-popover-background-color, --fd-color-background-2);
+          border-bottom-color: $fd-popover-background-color;
         }
       }
     }
@@ -250,19 +333,17 @@ $block: #{$fd-namespace}-popover;
     &[x-placement^="left"] {
       margin-right: $fd-popover-arrow-height;
 
-      .fd-popover__arrow {
+      .#{$block}__arrow {
         right: -$fd-popover-arrow-height;
         margin: $fd-popover-arrow-width-half 0;
         border-width: $fd-popover-arrow-width-half 0 $fd-popover-arrow-width-half $fd-popover-arrow-height;
-
-        @include fd-var-color("border-left-color", $fd-forms-border-color, --fd-color-neutral-4);
+        border-left-color: $fd-popover-arrow-color;
 
         &::after {
           right: 1px;
           margin: -$fd-popover-arrow-width-half 0;
           border-width: $fd-popover-arrow-width-half 0 $fd-popover-arrow-width-half $fd-popover-arrow-height;
-
-          @include fd-var-color("border-left-color", $fd-popover-background-color, --fd-color-background-2);
+          border-left-color: $fd-popover-background-color;
         }
       }
     }
@@ -270,19 +351,17 @@ $block: #{$fd-namespace}-popover;
     &[x-placement^="right"] {
       margin-left: $fd-popover-arrow-height;
 
-      .fd-popover__arrow {
+      .#{$block}__arrow {
         left: -$fd-popover-arrow-height;
         margin: $fd-popover-arrow-width-half 0;
         border-width: $fd-popover-arrow-width-half $fd-popover-arrow-height $fd-popover-arrow-width-half 0;
-
-        @include fd-var-color("border-right-color", $fd-forms-border-color, --fd-color-neutral-4);
+        border-right-color: $fd-popover-arrow-color;
 
         &::after {
           left: 1px;
           margin: -$fd-popover-arrow-width-half 0;
           border-width: $fd-popover-arrow-width-half $fd-popover-arrow-height $fd-popover-arrow-width-half 0;
-
-          @include fd-var-color("border-right-color", $fd-popover-background-color, --fd-color-background-2);
+          border-right-color: $fd-popover-background-color;
         }
       }
     }
