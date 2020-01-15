@@ -19,11 +19,11 @@ footerhidden: true
 
 <div class="header-section" id="headerSection">
     <div class="header-section__hamburger">
-        <i id="hamburgerToggle" class="header-section__sap-icon--menu2" onclick="toggleHamburger()"></i>
+        <i id="hamburgerToggle" class="sap-icon--menu2 header-section__sap-icon--menu2" onclick="toggleHamburger()"></i>
     </div>
     <div class="header-section__logo">
-        <img 
-            src="{{site.baseurl}}/images/land-page-assets/logo_text.png" 
+        <img
+            src="{{site.baseurl}}/images/land-page-assets/logo_text.png"
             alt="logo with text"
             height="35" />
     </div>
@@ -259,11 +259,11 @@ footerhidden: true
         const toggle = document.getElementById("hamburgerToggle");
         const menu = document.getElementById("responsiveMenu");
 
-        if (toggle.className === "header-section__sap-icon--menu2") {
-            toggle.className = "header-section__sap-icon--decline";
+        if (toggle.className === "sap-icon--menu2 header-section__sap-icon--menu2") {
+            toggle.className = "sap-icon--decline header-section__sap-icon--decline";
             menu.classList += " show";
         } else {
-            toggle.className = "header-section__sap-icon--menu2";
+            toggle.className = "sap-icon--menu2 header-section__sap-icon--menu2";
             menu.classList = "responsive-menu hide";
     
             setTimeout(function(){
