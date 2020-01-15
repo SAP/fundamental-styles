@@ -63,12 +63,10 @@
     <div class="fd-shellbar__group fd-shellbar__group--product">
         {{ shell_logo(logo=logo) }}
           {% if product %}
-          <div class="fd-product-menu fd-shellbar__product-menu">
-              <button class="fd-product-menu__control" aria-controls="4Gsw5984" aria-haspopup="true" aria-expanded="false">
-                <span class="fd-shellbar__title">Title</span>
-              </button>
-              {# popover for product-menu #}
-          </div>
+          <button class="fd-button--light fd-button--menu fd-shellbar__button--menu" aria-controls="4Gsw5984" aria-haspopup="true" aria-expanded="false">
+            <span class="fd-shellbar__title">Title</span>
+          </button>
+          {# popover for product-menu #}
           {% else %}
             <span class="fd-shellbar__title">Title</span>
           {% endif %}

@@ -120,7 +120,6 @@ $block: #{$fd-namespace}-shellbar;
 
     border-color: transparent;
     background: $fd-shellbar-background-color;
-    outline: none !important;
     color: $fd-shellbar-color;
 
     &:hover {
@@ -199,7 +198,6 @@ $block: #{$fd-namespace}-shellbar;
   &__title {
     font-weight: bold;
     padding-right: 0;
-    padding-left: $fd-shellbar-item-spacing;
     vertical-align: middle;
 
     @include fd-rtl() {
@@ -322,6 +320,30 @@ $block: #{$fd-namespace}-shellbar;
           background-color: $fd-shell-hover-background;
         }
       }
+    }
+  }
+
+  &__button--menu {
+    &::after {
+      color: $fd-shellbar-color;
+    }
+
+    &:hover {
+      background: $fd-shell-hover-background;
+      border-color: transparent;
+    }
+
+    &:active,
+    &:focus {
+      background: $fd-shell-active-background;
+      color: $fd-shell-active-text-color;
+    }
+  }
+
+  &__popover__body--right {
+    &::before,
+    &::after {
+      right: 14px; // needed to place the popover body arrow under the button arrow icon
     }
   }
 }

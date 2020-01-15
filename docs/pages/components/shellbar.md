@@ -89,26 +89,24 @@ This example includes the product menu for navigating to applications within the
     <a href="#" class="fd-shellbar__logo">
       <img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP">
     </a>
-    <div class="fd-product-menu fd-shellbar__product-menu fd-button">
-      <div class="fd-popover fd-popover--right">
-        <div class="fd-popover__control">
-          <button class="fd-product-menu__control" aria-controls="9GLB26941" aria-haspopup="true" aria-expanded="false">
-            <span class="fd-shellbar__title">Corporate Portal</span>
-          </button>
-        </div>
-        <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="9GLB26941">
-          <nav class="fd-menu">
-            <ul class="fd-menu__list">
-              <li><a role="button" class="fd-menu__item">Application A</a></li>
-              <li><a role="button" class="fd-menu__item">Application B</a></li>
-              <li><a role="button" class="fd-menu__item">Application C</a></li>
-              <li><a role="button" class="fd-menu__item">Application D</a></li>
-            </ul>
-          </nav>
-        </div>
+    <div class="fd-popover fd-popover--right">
+      <div class="fd-popover__control">
+        <button class="fd-button--light fd-button--menu fd-shellbar__button--menu" aria-controls="9GLB26941" aria-haspopup="true" aria-expanded="false">
+          <span class="fd-shellbar__title">Corporate Portal</span>
+        </button>
+      </div>
+      <div class="fd-popover__body fd-popover__body--right fd-shellbar__popover__body--right" aria-hidden="true" id="9GLB26941">
+        <nav class="fd-menu">
+          <ul class="fd-menu__list">
+            <li><a role="button" class="fd-menu__item">Application A</a></li>
+            <li><a role="button" class="fd-menu__item">Application B</a></li>
+            <li><a role="button" class="fd-menu__item">Application C</a></li>
+            <li><a role="button" class="fd-menu__item">Application D</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
-		<div class="fd-shellbar__subtitle">Subtitle</div>
+	<div class="fd-shellbar__subtitle">Subtitle</div>
   </div>
   <div class="fd-shellbar__group fd-shellbar__group--actions">
     <div class="fd-shellbar__action fd-shellbar__action--desktop">    
