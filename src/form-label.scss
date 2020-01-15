@@ -24,6 +24,7 @@ $block: #{$fd-namespace}-form-label;
       margin-left: 0.125rem;
       position: absolute;
       right: 0;
+      top: 0;
     }
 
     @include fd-rtl() {
