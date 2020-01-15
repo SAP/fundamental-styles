@@ -68,6 +68,8 @@ $block: #{$fd-namespace}-switch;
   }
 
   &__wrapper {
+    @include fd-reset();
+
     // background: darken(@sapUiButtonBackground,7);
     background-color: #ededed;
     position: relative;
@@ -79,6 +81,8 @@ $block: #{$fd-namespace}-switch;
   }
 
   &__track {
+    @include fd-reset();
+
     position: absolute;
     display: flex;
     justify-content: center;
@@ -127,6 +131,8 @@ $block: #{$fd-namespace}-switch;
   }
 
   &__handle {
+    @include fd-reset();
+
     border: $fd-switch-border-width solid $fd-switch-inactive-border-color;
     background-color: $fd-switch-inactive-handle-background;
     width: $fd-switch-handle-size;
@@ -148,12 +154,8 @@ $block: #{$fd-namespace}-switch;
       display: none;
     }
 
-    &:hover {
-      border-color: transparent;
-    }
-
-    &:active,
-    &:focus {
+    &:hover,
+    &:active {
       border-color: transparent;
     }
   }
@@ -161,6 +163,22 @@ $block: #{$fd-namespace}-switch;
   @include fd-disabled() {
     pointer-events: none;
     opacity: 0.4;
+  }
+
+  &__input:focus + .#{$block}__wrapper {
+    &::before {
+      position: absolute;
+      display: block;
+      outline-offset: -0.0625rem;
+      outline-width: var(--sapContent_FocusWidth);
+      outline-color: var(--sapContent_FocusColor);
+      outline-style: var(--sapContent_FocusStyle);
+      content: '';
+      top: -$fd-switch-container-padding-y;
+      bottom: -$fd-switch-container-padding-y;
+      left: -0.0625rem;
+      right: -0.0625rem;
+    }
   }
 
   &__input:checked + &__wrapper {
@@ -242,6 +260,13 @@ $block: #{$fd-namespace}-switch;
       min-width: 3.125rem;
     }
 
+    .#{$block}__input:focus + .#{$block}__wrapper {
+      &::before {
+        top: -$fd-switch-container-compact-padding-y;
+        bottom: -$fd-switch-container-compact-padding-y;
+      }
+    }
+
     @include fd-rtl() {
       .#{$block}__input:checked + .#{$block}__wrapper {
         .#{$block}__track {
@@ -274,6 +299,13 @@ $block: #{$fd-namespace}-switch;
       .#{$block}__wrapper {
         width: $fd-switch-track-no-label-compact-width;
         height: $fd-switch-track-no-label-compact-height;
+      }
+
+      .#{$block}__input:focus + .#{$block}__wrapper {
+        &::before {
+          top: -0.3125rem;
+          bottom: -0.3125rem;
+        }
       }
 
       @include fd-rtl() {
