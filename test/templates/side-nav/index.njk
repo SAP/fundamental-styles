@@ -2,47 +2,47 @@
 {% from "./../format.njk" import format %}
 
 {% block content %}
-<!-- output the component example and the code snippet -->
-<h2>Side Navigation with one level - text-only, cozy mode</h2>
-{% set example %}
-<nav class="fd-side-nav">
-    <div class="fd-side-nav__main-navigation">
-      <ul class="test-sidenav-list">
-        <li>Item 1</li>
-        <li>Item 1</li>
-        <li>Item 1</li>
-        <li>Item 1</li>
-      </ul>
-    </div>
-    <div class="fd-side-nav__utility">
-       <ul class="test-sidenav-list">
-        <li>Item 1</li>
-        <li>Item 1</li>
-       </ul>
-    </div>
-</nav>
-{% endset %}
-{{ format(example) }}
+    <!-- output the component example and the code snippet -->
+    <h2>Side Navigation with one level - text-only, cozy mode</h2>
+    {% set example %}
+        <nav class="fd-side-nav">
+            <div class="fd-side-nav__main-navigation">
+                <ul class="test-sidenav-list">
+                    <li>Item 1</li>
+                    <li>Item 1</li>
+                    <li>Item 1</li>
+                    <li>Item 1</li>
+                </ul>
+            </div>
+            <div class="fd-side-nav__utility">
+                <ul class="test-sidenav-list">
+                    <li>Item 1</li>
+                    <li>Item 1</li>
+                </ul>
+            </div>
+        </nav>
+    {% endset %}
+    {{ format(example) }}
 
-<br><br><br>
-<h2>Side navigation with icons - condensed state</h2>
-{% set example %}
-<nav class="fd-side-nav fd-side-nav--condensed">
-   <div class="fd-side-nav__main-navigation">
-      <ul class="test-sidenav-list">
-        <li class="test-sidenav-list-icon sap-icon--home"></li>
-        <li class="test-sidenav-list-icon sap-icon--calendar"></li>
-        <li class="test-sidenav-list-icon sap-icon--employee"></li>
-        <li class="test-sidenav-list-icon sap-icon--activities"></li>
-      </ul>
-    </div>
-    <div class="fd-side-nav__utility">
-       <ul class="test-sidenav-list">
-        <li class="test-sidenav-list-icon sap-icon--bar-chart"></li>
-        <li class="test-sidenav-list-icon sap-icon--video"></li>
-       </ul>
-    </div>
-</nav>
-{% endset %}
-{{ format(example) }}
+    <br><br><br>
+    <h2>Side navigation with icons - condensed state</h2>
+    {% set example %}
+        <nav class="fd-side-nav fd-side-nav--condensed">
+            <div class="fd-side-nav__main-navigation">
+                <ul class="test-sidenav-list">
+                    <li class="test-sidenav-list-icon sap-icon--home"></li>
+                    <li class="test-sidenav-list-icon sap-icon--calendar"></li>
+                    <li class="test-sidenav-list-icon sap-icon--employee"></li>
+                    <li class="test-sidenav-list-icon sap-icon--activities"></li>
+                </ul>
+            </div>
+            <div class="fd-side-nav__utility">
+                <ul class="test-sidenav-list">
+                    <li class="test-sidenav-list-icon sap-icon--bar-chart"></li>
+                    <li class="test-sidenav-list-icon sap-icon--video"></li>
+                </ul>
+            </div>
+        </nav>
+    {% endset %}
+    {{ format(example) }}
 {% endblock %}
