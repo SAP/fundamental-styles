@@ -27,7 +27,7 @@
 </script>
 <!-- End Google Tag Manager -->
 
-<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1576884666480104010">
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1579195560396576230">
 <link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -68,7 +68,7 @@
         <div class="docs-top-nav__support fd-has-float-right">
 
             <span class="fd-has-align-items-center fd-has-margin-right-small">
-                <span>v0.4.0</span>
+                <span>v0.4.1</span>
                 <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
                     <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
                         <title>GitHub</title>
@@ -826,7 +826,7 @@
 </ul>
 
 <style media="screen">
-    .fd-popover{ margin-right: 30px;}
+    .fd-popover{ margin-right: 100px;}
 </style>
 
 <div class="fd-tile docs-component docs-component__">
@@ -853,14 +853,9 @@
         <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverA2" aria-expanded="false" aria-haspopup="true">Right Aligned</button>
     </div>
     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="popoverA2">
-        <nav class="fd-menu">
-            <ul class="fd-menu__list">
-                <li><a href="#" class="fd-menu__item">Option 1</a></li>
-                <li><a href="#" class="fd-menu__item">Option 2</a></li>
-                <li><a href="#" class="fd-menu__item">Option 3</a></li>
-                <li><a href="#" class="fd-menu__item">Option 4</a></li>
-            </ul>
-        </nav>
+        <div style="margin: 20px;">
+            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('/images/product-tile.jpg');" role="presentation" aria-label="Nature"></span>
+        </div>
     </div>
 </div>
 
@@ -920,14 +915,9 @@
         <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-popover__control"</span> <span class="na">aria-label=</span><span class="s">"Image label"</span> <span class="na">aria-controls=</span><span class="s">"popoverA2"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;</span>Right Aligned<span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"popoverA2"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"fd-menu"</span> <span class="na">id=</span><span class="s">""</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Option 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Option 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Option 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Option 4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;/ul&gt;</span>
-        <span class="nt">&lt;/nav&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"margin: 20px;"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail"</span> <span class="na">style=</span><span class="s">"background-image: url('/images/product-tile.jpg');"</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">aria-label=</span><span class="s">"Nature"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
@@ -965,11 +955,142 @@
 
 <p><br /></p>
 
+<h2 id="popover-with-header-subheader-and-footer">Popover with Header, Subheader and Footer</h2>
+
+<ul>
+  <li>Header (without a subheader): <code class="highlighter-rouge">fd-popover__body-header</code></li>
+  <li>Header with subheader: <code class="highlighter-rouge">fd-popover__body-header--with-subheader</code> should be applied if the header is followed by a subheader</li>
+  <li>Header in compact mode: <code class="highlighter-rouge">--compact</code> modifier class on the <code class="highlighter-rouge">fd-popover__body-header</code></li>
+  <li>Subheader: <code class="highlighter-rouge">fd-popover__body-subheader</code></li>
+  <li>Subheader in compact mode: <code class="highlighter-rouge">--compact</code> modifier class on the <code class="highlighter-rouge">fd-popover__body-subheader</code></li>
+  <li>Footer: <code class="highlighter-rouge">fd-popover__body-footer</code></li>
+  <li>Footer in compact mode: <code class="highlighter-rouge">--compact</code> modifier class on the <code class="highlighter-rouge">fd-popover__body-footer</code></li>
+</ul>
+
+<div class="fd-tile docs-component docs-component__">
+    <div class="fd-tile__content">
+		
+<div class="fd-popover">
+    <div class="fd-popover__control">
+        <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverHSF1" aria-expanded="false" aria-haspopup="true">Header Only</button>
+    </div>
+    <div class="fd-popover__body" aria-hidden="true" id="popoverHSF1">
+        <div class="fd-popover__body-header">Popover Header</div>
+        <nav class="fd-menu">
+            <ul class="fd-menu__list">
+                <li><a href="#" class="fd-menu__item">Option 1</a></li>
+                <li><a href="#" class="fd-menu__item">Option 2</a></li>
+                <li><a href="#" class="fd-menu__item">Option 3</a></li>
+                <li><a href="#" class="fd-menu__item">Option 4</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="fd-popover fd-popover--right">
+    <div class="fd-popover__control">
+        <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverHSF2" aria-expanded="false" aria-haspopup="true">Footer Only</button>
+    </div>
+    <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="popoverHSF2">
+        <div style="margin: 20px;">
+            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('/images/product-tile.jpg');" role="presentation" aria-label="Nature"></span>
+        </div>
+        <div class="fd-popover__body-footer">Popover Footer</div>
+    </div>
+</div>
+
+<div class="fd-popover">
+    <div class="fd-popover__control">
+        <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverHSF3" aria-expanded="false" aria-haspopup="true">With Header, Subheader and Footer</button>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverHSF3">
+        <div class="fd-popover__body-header fd-popover__body-header--with-subheader">Popover Header</div>
+        <div class="fd-popover__body-subheader">Popover Subheader</div>
+        <div style="margin: 20px;">
+            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('/images/product-tile.jpg');" role="presentation" aria-label="Nature"></span>
+        </div>
+        <div class="fd-popover__body-footer">Popover Footer</div>
+    </div>
+</div>
+
+<div class="fd-popover fd-popover--right">
+    <div class="fd-popover__control">
+        <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverHSF4" aria-expanded="false" aria-haspopup="true">All Compact Mode</button>
+    </div>
+    <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverHSF4">
+        <div class="fd-popover__body-header fd-popover__body-header--compact fd-popover__body-header--with-subheader">Popover Header Compact</div>
+        <div class="fd-popover__body-subheader fd-popover__body-subheader--compact">Popover Subheader Compact</div>
+        <div style="margin: 20px;">
+            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('/images/product-tile.jpg');" role="presentation" aria-label="Nature"></span>
+        </div>
+        <div class="fd-popover__body-footer fd-popover__body-footer--compact">Popover Footer Compact</div>
+    </div>
+</div>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-popover__control"</span> <span class="na">aria-label=</span><span class="s">"Image label"</span> <span class="na">aria-controls=</span><span class="s">"popoverHSF1"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;</span>Header Only<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"popoverHSF1"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body-header"</span><span class="nt">&gt;</span>Popover Header<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"fd-menu"</span> <span class="na">id=</span><span class="s">""</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Option 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Option 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Option 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Option 4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/nav&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover fd-popover--right"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-popover__control"</span> <span class="na">aria-label=</span><span class="s">"Image label"</span> <span class="na">aria-controls=</span><span class="s">"popoverHSF2"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;</span>Footer Only<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"popoverHSF2"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"margin: 20px;"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail"</span> <span class="na">style=</span><span class="s">"background-image: url('/images/product-tile.jpg');"</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">aria-label=</span><span class="s">"Nature"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body-footer"</span><span class="nt">&gt;</span>Popover Footer<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-popover__control"</span> <span class="na">aria-label=</span><span class="s">"Image label"</span> <span class="na">aria-controls=</span><span class="s">"popoverHSF3"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;</span>With Header, Subheader and Footer<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"popoverHSF3"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body-header fd-popover__body-header--with-subheader"</span><span class="nt">&gt;</span>Popover Header<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body-subheader"</span><span class="nt">&gt;</span>Popover Subheader<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"margin: 20px;"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail"</span> <span class="na">style=</span><span class="s">"background-image: url('/images/product-tile.jpg');"</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">aria-label=</span><span class="s">"Nature"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body-footer"</span><span class="nt">&gt;</span>Popover Footer<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover fd-popover--right"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-popover__control"</span> <span class="na">aria-label=</span><span class="s">"Image label"</span> <span class="na">aria-controls=</span><span class="s">"popoverHSF4"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;</span>All Compact Mode<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"popoverHSF4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body-header fd-popover__body-header--compact fd-popover__body-header--with-subheader"</span><span class="nt">&gt;</span>Popover Header Compact<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body-subheader fd-popover__body-subheader--compact"</span><span class="nt">&gt;</span>Popover Subheader Compact<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"margin: 20px;"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail"</span> <span class="na">style=</span><span class="s">"background-image: url('/images/product-tile.jpg');"</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">aria-label=</span><span class="s">"Nature"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body-footer fd-popover__body-footer--compact"</span><span class="nt">&gt;</span>Popover Footer Compact<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p><br /></p>
+
 <h2 id="popover-control-examples">Popover Control Examples</h2>
 <p>Virtually any component can be used as a <code class="highlighter-rouge">fd-popover__control</code> to control the display of <code class="highlighter-rouge">fd-popover__body</code></p>
-<style media="screen">
-    .fd-popover{ margin-right: 30px;}
-</style>
 
 <div class="fd-tile docs-component docs-component__">
     <div class="fd-tile__content">
@@ -1009,11 +1130,8 @@
 </div>
 
 <div class="fd-popover">
-    <div class="fd-popover__control">
-        <div class="fd-form-item fd-has-margin-none">
-        <label class="fd-form-label" for="input-1">Input with a Popover:</label>
+    <div class="fd-form-item fd-has-margin-none">
         <input class="fd-input fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverB3" aria-expanded="false" aria-haspopup="true" />
-    </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB3">
         <nav class="fd-menu">
@@ -1084,11 +1202,8 @@
 <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-item fd-has-margin-none"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span> <span class="na">for=</span><span class="s">"input-1"</span><span class="nt">&gt;</span>Input with a Popover:<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-item fd-has-margin-none"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input fd-popover__control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"input-1"</span> <span class="na">placeholder=</span><span class="s">"Field placeholder text"</span> <span class="na">aria-label=</span><span class="s">"Image label"</span> <span class="na">aria-controls=</span><span class="s">"popoverB3"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"popoverB3"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"fd-menu"</span> <span class="na">id=</span><span class="s">""</span><span class="nt">&gt;</span>

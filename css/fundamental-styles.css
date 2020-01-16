@@ -1,6 +1,6 @@
 /*!
- * Fundamental Library Styles v0.4.0
- * Copyright (c) 2019 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.4.1
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
 @charset "UTF-8";
@@ -3926,6 +3926,9 @@
   box-sizing: inherit;
   font-size: inherit
 }
+.fd-popover__control.fd-input:last-child {
+  margin-bottom: 0
+}
 .fd-popover__body {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -3941,23 +3944,25 @@
   padding: 0;
   margin: 0;
   border: 0;
-  border: solid 1px #89919a;
+  border: none;
   position: absolute;
   white-space: nowrap;
+  -webkit-box-shadow: 0 0 0 .0625rem rgba(0,0,0,.15),0 .625rem 1.875rem 0 rgba(0,0,0,.3);
+  -webkit-box-shadow: var(--sapContent_Shadow2,0 0 0 .0625rem rgba(0,0,0,.15),0 .625rem 1.875rem 0 rgba(0,0,0,.3));
+  box-shadow: 0 0 0 .0625rem rgba(0,0,0,.15),0 .625rem 1.875rem 0 rgba(0,0,0,.3);
+  box-shadow: var(--sapContent_Shadow2,0 0 0 .0625rem rgba(0,0,0,.15),0 .625rem 1.875rem 0 rgba(0,0,0,.3));
   z-index: 1000;
-  border-radius: 4px;
-  background-color: white;
-  background-color: var(--fd-color-background-2,#fff);
-  -webkit-box-shadow: 0 5px 20px 0 #d9d9d9,0 2px 8px 0 #eeeeef;
-  -webkit-box-shadow: 0 5px 20px 0 var(--fd-color-neutral-3,#d9d9d9),0 2px 8px 0 var(--fd-color-neutral-2,#eeeeef);
-  box-shadow: 0 5px 20px 0 #d9d9d9,0 2px 8px 0 #eeeeef;
-  box-shadow: 0 5px 20px 0 var(--fd-color-neutral-3,#d9d9d9),0 2px 8px 0 var(--fd-color-neutral-2,#eeeeef);
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  background: #fff;
+  background: var(--sapGroup_ContentBackground,#fff);
   opacity: 1;
   visibility: visible;
+  left: .0625rem;
+  left: var(--sapGroup_BorderWidth,.0625rem);
+  top: calc(100% + .5rem);
   -webkit-transition: all 125ms;
   transition: all 125ms;
-  left: 0;
-  top: 120%;
   -webkit-transform: translateY(0);
   transform: translateY(0)
 }
@@ -3970,88 +3975,222 @@
 .fd-popover__body[dir=rtl],
 [dir=rtl] .fd-popover__body {
   left: auto;
-  right: -3px
+  right: .0625rem;
+  right: var(--sapGroup_BorderWidth,.0625rem)
 }
 .fd-popover__body[dir=rtl]::before,
 [dir=rtl] .fd-popover__body::before {
-  right: 10px
+  right: .5rem
 }
 .fd-popover__body[dir=rtl]::after,
 [dir=rtl] .fd-popover__body::after {
-  right: 10px
+  right: .5rem
 }
 .fd-popover__body::before {
   height: 0;
   width: 0;
   border-style: solid;
-  border-width: 0 6.5px 8px 6.5px;
-  border-bottom-color: white;
-  border-bottom-color: var(--fd-color-background-2,#fff);
+  border-width: 0 .5rem .5rem .5rem;
+  border-bottom-color: #fff;
+  border-bottom-color: var(--sapGroup_ContentBackground,#fff);
   border-left-color: transparent;
   border-right-color: transparent;
   content: "";
   position: absolute;
-  top: -8px;
-  left: 10px;
+  top: calc(-.5rem + 1px);
+  left: .5rem;
   z-index: 1002
 }
 .fd-popover__body::after {
   height: 0;
   width: 0;
   border-style: solid;
-  border-width: 0 6.5px 8px 6.5px;
-  border-bottom-color: #89919a;
-  border-bottom-color: var(--fd-color-neutral-4,#89919a);
+  border-width: 0 .5rem .5rem .5rem;
+  border-bottom-color: #d9d9d9;
+  border-bottom-color: var(--sapGroup_ContentBorderColor,#d9d9d9);
   border-left-color: transparent;
   border-right-color: transparent;
   content: "";
   position: absolute;
-  top: -9px;
-  left: 10px;
+  top: -.5rem;
+  left: .5rem;
   z-index: 1001
+}
+.fd-popover__body-header {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 2.75rem;
+  line-height: 2.75rem;
+  width: auto;
+  background-color: #fff;
+  background-color: var(--sapPageHeader_Background,#fff);
+  padding: 0 .5rem;
+  -webkit-box-shadow: 0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9;
+  -webkit-box-shadow: var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9);
+  box-shadow: 0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9;
+  box-shadow: var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9);
+  border-radius: .25rem .25rem 0 0;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem) var(--sapElement_BorderCornerRadius,.25rem) 0 0
+}
+.fd-popover__body-header::after,
+.fd-popover__body-header::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-popover__body-header--compact {
+  height: 2.5rem;
+  line-height: 2.5rem
+}
+.fd-popover__body-header--with-subheader {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fd-popover__body-subheader {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 2.75rem;
+  line-height: 2.75rem;
+  width: auto;
+  background-color: #fff;
+  background-color: var(--sapPageHeader_Background,#fff);
+  padding: 0 .5rem;
+  -webkit-box-shadow: 0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9;
+  -webkit-box-shadow: var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9);
+  box-shadow: 0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9;
+  box-shadow: var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9);
+  border-radius: 0
+}
+.fd-popover__body-subheader::after,
+.fd-popover__body-subheader::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-popover__body-subheader--compact {
+  height: 2rem;
+  line-height: 2rem
+}
+.fd-popover__body-footer {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 2.75rem;
+  line-height: 2.75rem;
+  width: auto;
+  min-width: 4rem;
+  background-color: #fff;
+  background-color: var(--sapPageFooter_Background,#fff);
+  padding: 0 .5rem;
+  border-top: .0625rem solid #d9d9d9;
+  border-top: .0625rem solid var(--sapPageFooter_BorderColor,#d9d9d9);
+  border-radius: 0 0 .25rem .25rem;
+  border-radius: 0 0 var(--sapElement_BorderCornerRadius,.25rem) var(--sapElement_BorderCornerRadius,.25rem)
+}
+.fd-popover__body-footer::after,
+.fd-popover__body-footer::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-popover__body-footer--compact {
+  height: 2.5rem;
+  line-height: 2.5rem
 }
 .fd-popover__body--left {
   right: auto;
-  left: -3px
+  left: .0625rem;
+  left: var(--sapGroup_BorderWidth,.0625rem)
 }
 .fd-popover__body--left[dir=rtl],
 [dir=rtl] .fd-popover__body--left {
-  right: -3px;
+  right: .0625rem;
+  right: var(--sapGroup_BorderWidth,.0625rem);
   left: auto
 }
 .fd-popover__body--left[dir=rtl]::after,
 .fd-popover__body--left[dir=rtl]::before,
 [dir=rtl] .fd-popover__body--left::after,
 [dir=rtl] .fd-popover__body--left::before {
-  right: 14px;
+  right: .5rem;
   left: unset
 }
 .fd-popover__body--left::after,
 .fd-popover__body--left::before {
-  left: 10px
+  left: .5rem
 }
 .fd-popover__body--right {
   left: auto;
-  right: -3px
+  right: .0625rem;
+  right: var(--sapGroup_BorderWidth,.0625rem)
 }
 .fd-popover__body--right[dir=rtl],
 [dir=rtl] .fd-popover__body--right {
   right: auto;
-  left: -3px
+  left: .0625rem;
+  left: var(--sapGroup_BorderWidth,.0625rem)
 }
 .fd-popover__body--right[dir=rtl]::after,
 .fd-popover__body--right[dir=rtl]::before,
 [dir=rtl] .fd-popover__body--right::after,
 [dir=rtl] .fd-popover__body--right::before {
-  left: 14px;
+  left: .5rem;
   right: unset
 }
 .fd-popover__body--right::after,
 .fd-popover__body--right::before {
   left: auto;
-  right: 10px
+  right: .5rem
 }
 .fd-popover__body--no-arrow {
+  -webkit-box-shadow: 0 0 0 .0625rem rgba(0,0,0,.15),0 .125rem .5rem 0 rgba(0,0,0,.3);
+  -webkit-box-shadow: var(--sapContent_Shadow1,0 0 0 .0625rem rgba(0,0,0,.15),0 .125rem .5rem 0 rgba(0,0,0,.3));
+  box-shadow: 0 0 0 .0625rem rgba(0,0,0,.15),0 .125rem .5rem 0 rgba(0,0,0,.3);
+  box-shadow: var(--sapContent_Shadow1,0 0 0 .0625rem rgba(0,0,0,.15),0 .125rem .5rem 0 rgba(0,0,0,.3));
   top: 100%
 }
 .fd-popover__body--no-arrow::after,
@@ -4059,40 +4198,67 @@
   display: none
 }
 .fd-popover__body--no-arrow.fd-popover__body--left {
-  left: 0
+  left: .0625rem;
+  left: var(--sapGroup_BorderWidth,.0625rem);
+  right: auto
 }
 .fd-popover__body--no-arrow.fd-popover__body--left[dir=rtl],
 [dir=rtl] .fd-popover__body--no-arrow.fd-popover__body--left {
-  right: 0
+  right: .0625rem;
+  right: var(--sapGroup_BorderWidth,.0625rem);
+  left: auto
 }
 .fd-popover__body--no-arrow.fd-popover__body--right {
-  right: 0
+  right: .0625rem;
+  right: var(--sapGroup_BorderWidth,.0625rem);
+  left: auto
 }
 .fd-popover__body--no-arrow.fd-popover__body--right[dir=rtl],
 [dir=rtl] .fd-popover__body--no-arrow.fd-popover__body--right {
-  left: 0
+  left: .0625rem;
+  left: var(--sapGroup_BorderWidth,.0625rem);
+  right: auto
 }
 .fd-popover__body.is-hidden,
 .fd-popover__body[aria-hidden=true] {
   z-index: 1;
   opacity: 0;
-  visibility: hidden;
-  -webkit-transform: translateY(-15px);
-  transform: translateY(-15px)
+  visibility: hidden
 }
 .fd-popover__popper {
-  border: solid 1px #89919a;
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border: none;
   position: absolute;
   white-space: nowrap;
+  -webkit-box-shadow: 0 0 0 .0625rem rgba(0,0,0,.15),0 .625rem 1.875rem 0 rgba(0,0,0,.3);
+  -webkit-box-shadow: var(--sapContent_Shadow2,0 0 0 .0625rem rgba(0,0,0,.15),0 .625rem 1.875rem 0 rgba(0,0,0,.3));
+  box-shadow: 0 0 0 .0625rem rgba(0,0,0,.15),0 .625rem 1.875rem 0 rgba(0,0,0,.3);
+  box-shadow: var(--sapContent_Shadow2,0 0 0 .0625rem rgba(0,0,0,.15),0 .625rem 1.875rem 0 rgba(0,0,0,.3));
   z-index: 1000;
-  border-radius: 4px;
-  background-color: white;
-  background-color: var(--fd-color-background-2,#fff);
-  -webkit-box-shadow: 0 5px 20px 0 #d9d9d9,0 2px 8px 0 #eeeeef;
-  -webkit-box-shadow: 0 5px 20px 0 var(--fd-color-neutral-3,#d9d9d9),0 2px 8px 0 var(--fd-color-neutral-2,#eeeeef);
-  box-shadow: 0 5px 20px 0 #d9d9d9,0 2px 8px 0 #eeeeef;
-  box-shadow: 0 5px 20px 0 var(--fd-color-neutral-3,#d9d9d9),0 2px 8px 0 var(--fd-color-neutral-2,#eeeeef);
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  background: #fff;
+  background: var(--sapGroup_ContentBackground,#fff);
   opacity: 1
+}
+.fd-popover__popper::after,
+.fd-popover__popper::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
 }
 .fd-popover__popper--no-arrow {
   margin: 0!important
@@ -4101,11 +4267,31 @@
   display: none
 }
 .fd-popover__popper .fd-popover__arrow {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
   position: absolute;
   width: 0;
   height: 0;
   border-style: solid;
   border-color: transparent
+}
+.fd-popover__popper .fd-popover__arrow::after,
+.fd-popover__popper .fd-popover__arrow::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
 }
 .fd-popover__popper .fd-popover__arrow::after {
   position: absolute;
@@ -4117,72 +4303,72 @@
   display: none
 }
 .fd-popover__popper[x-placement^=top] {
-  margin-bottom: 8px
+  margin-bottom: .5rem
 }
 .fd-popover__popper[x-placement^=top] .fd-popover__arrow {
-  bottom: -8px;
-  margin: 0 6.5px;
-  border-width: 8px 6.5px 0 6.5px;
-  border-top-color: #89919a;
-  border-top-color: var(--fd-color-neutral-4,#89919a)
+  bottom: -.5rem;
+  margin: 0 .5rem;
+  border-width: .5rem .5rem 0 .5rem;
+  border-top-color: #d9d9d9;
+  border-top-color: var(--sapGroup_ContentBorderColor,#d9d9d9)
 }
 .fd-popover__popper[x-placement^=top] .fd-popover__arrow::after {
   bottom: 1px;
-  margin: 0 -6.5px;
-  border-width: 8px 6.5px 0 6.5px;
-  border-top-color: white;
-  border-top-color: var(--fd-color-background-2,#fff)
+  margin: 0 -.5rem;
+  border-width: .5rem .5rem 0 .5rem;
+  border-top-color: #fff;
+  border-top-color: var(--sapGroup_ContentBackground,#fff)
 }
 .fd-popover__popper[x-placement^=bottom] {
-  margin-top: 8px
+  margin-top: .5rem
 }
 .fd-popover__popper[x-placement^=bottom] .fd-popover__arrow {
-  top: -8px;
-  margin: 0 6.5px;
-  border-width: 0 6.5px 8px 6.5px;
-  border-bottom-color: #89919a;
-  border-bottom-color: var(--fd-color-neutral-4,#89919a)
+  top: -.5rem;
+  margin: 0 .5rem;
+  border-width: 0 .5rem .5rem .5rem;
+  border-bottom-color: #d9d9d9;
+  border-bottom-color: var(--sapGroup_ContentBorderColor,#d9d9d9)
 }
 .fd-popover__popper[x-placement^=bottom] .fd-popover__arrow::after {
   top: 1px;
-  margin: 0 -6.5px;
-  border-width: 0 6.5px 8px 6.5px;
-  border-bottom-color: white;
-  border-bottom-color: var(--fd-color-background-2,#fff)
+  margin: 0 -.5rem;
+  border-width: 0 .5rem .5rem .5rem;
+  border-bottom-color: #fff;
+  border-bottom-color: var(--sapGroup_ContentBackground,#fff)
 }
 .fd-popover__popper[x-placement^=left] {
-  margin-right: 8px
+  margin-right: .5rem
 }
 .fd-popover__popper[x-placement^=left] .fd-popover__arrow {
-  right: -8px;
-  margin: 6.5px 0;
-  border-width: 6.5px 0 6.5px 8px;
-  border-left-color: #89919a;
-  border-left-color: var(--fd-color-neutral-4,#89919a)
+  right: -.5rem;
+  margin: .5rem 0;
+  border-width: .5rem 0 .5rem .5rem;
+  border-left-color: #d9d9d9;
+  border-left-color: var(--sapGroup_ContentBorderColor,#d9d9d9)
 }
 .fd-popover__popper[x-placement^=left] .fd-popover__arrow::after {
   right: 1px;
-  margin: -6.5px 0;
-  border-width: 6.5px 0 6.5px 8px;
-  border-left-color: white;
-  border-left-color: var(--fd-color-background-2,#fff)
+  margin: -.5rem 0;
+  border-width: .5rem 0 .5rem .5rem;
+  border-left-color: #fff;
+  border-left-color: var(--sapGroup_ContentBackground,#fff)
 }
 .fd-popover__popper[x-placement^=right] {
-  margin-left: 8px
+  margin-left: .5rem
 }
 .fd-popover__popper[x-placement^=right] .fd-popover__arrow {
-  left: -8px;
-  margin: 6.5px 0;
-  border-width: 6.5px 8px 6.5px 0;
-  border-right-color: #89919a;
-  border-right-color: var(--fd-color-neutral-4,#89919a)
+  left: -.5rem;
+  margin: .5rem 0;
+  border-width: .5rem .5rem .5rem 0;
+  border-right-color: #d9d9d9;
+  border-right-color: var(--sapGroup_ContentBorderColor,#d9d9d9)
 }
 .fd-popover__popper[x-placement^=right] .fd-popover__arrow::after {
   left: 1px;
-  margin: -6.5px 0;
-  border-width: 6.5px 8px 6.5px 0;
-  border-right-color: white;
-  border-right-color: var(--fd-color-background-2,#fff)
+  margin: -.5rem 0;
+  border-width: .5rem .5rem .5rem 0;
+  border-right-color: #fff;
+  border-right-color: var(--sapGroup_ContentBackground,#fff)
 }
 .fd-busy-indicator,
 .fd-busy-indicator--l,
@@ -9144,7 +9330,8 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   color: var(--sapField_RequiredColor,#ce3b3b);
   margin-left: .125rem;
   position: absolute;
-  right: 0
+  right: 0;
+  top: 0
 }
 .fd-form-label--required[dir=rtl]::after,
 .fd-form-label[aria-required=true][dir=rtl]::after,
@@ -13641,7 +13828,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   margin: .0625rem;
   padding: 1rem;
   text-align: left;
-  border-radius: 0
+  border-radius: 0;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto
 }
 .fd-product-switch__body--mobile .fd-product-switch__item::after,
 .fd-product-switch__body--mobile .fd-product-switch__item::before {
@@ -14038,6 +14227,8 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -15296,6 +15487,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   text-decoration: inherit;
   text-transform: none;
   speak: none;
+  height: 0;
   min-height: 100%;
   min-width: 2.75rem;
   color: #32363a;
@@ -18054,32 +18246,33 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   outline: .0625rem dotted #000;
   outline: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#000)
 }
-.fd-input-group > :first-child {
+.fd-input-group > * {
   border-radius: .125rem;
-  border-radius: var(--sapField_BorderCornerRadius,.125rem);
+  border-radius: var(--sapField_BorderCornerRadius,.125rem)
+}
+.fd-input-group > :first-child {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0
 }
 .fd-input-group > :last-child {
-  border-radius: .125rem;
-  border-radius: var(--sapField_BorderCornerRadius,.125rem);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0
 }
 .fd-input-group > :not(:first-child):not(:last-child) {
   border-radius: 0
 }
+.fd-input-group > [dir=rtl],
+[dir=rtl] .fd-input-group > * {
+  border-radius: .125rem;
+  border-radius: var(--sapField_BorderCornerRadius,.125rem)
+}
 .fd-input-group > [dir=rtl]:first-child,
 [dir=rtl] .fd-input-group > :first-child {
-  border-radius: .125rem;
-  border-radius: var(--sapField_BorderCornerRadius,.125rem);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0
 }
 .fd-input-group > [dir=rtl]:last-child,
 [dir=rtl] .fd-input-group > :last-child {
-  border-radius: .125rem;
-  border-radius: var(--sapField_BorderCornerRadius,.125rem);
   border-top-right-radius: 0;
   border-bottom-right-radius: 0
 }
@@ -18087,8 +18280,8 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   background-color: transparent;
   border: none;
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
+  -ms-flex: 1;
+  flex: 1;
   padding-right: .25rem;
   padding-left: .25rem
 }
@@ -18129,6 +18322,12 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
 [dir=rtl] .fd-input-group .fd-input-group__input:nth-last-child(1) {
   padding-left: .625rem;
   padding-right: .25rem
+}
+@media all and (-ms-high-contrast:none),
+(-ms-high-contrast:active) {
+  .fd-input-group .fd-input-group__input {
+    min-width: 160px
+  }
 }
 .fd-input-group--inline {
   display: -webkit-inline-box;
@@ -18202,82 +18401,37 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   -ms-flex-direction: column;
   flex-direction: column;
   border: none;
-  border-radius: .125rem;
-  border-radius: var(--sapField_BorderCornerRadius,.125rem)
+  border-radius: .0625rem
 }
 .fd-input-group__addon--button .fd-input-group__button {
+  border-radius: 0;
   height: 100%;
   max-height: 100%
 }
 .fd-input-group__addon--button .fd-input-group__button:nth-child(n+1) {
   margin: 0
 }
-.fd-input-group__addon--button:first-child > * {
-  border-radius: .125rem;
-  border-radius: var(--sapField_BorderCornerRadius,.125rem);
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0
+.fd-input-group__addon--button > * {
+  border-radius: 0
 }
-.fd-input-group__addon--button:first-child > :first-child:not(:last-child) {
-  border-bottom-left-radius: 0
+.fd-input-group__addon--button:first-child {
+  border-radius: .0625rem 0 0 .0625rem
 }
-.fd-input-group__addon--button:first-child > :last-child:not(:first-child) {
-  border-top-left-radius: 0
-}
-.fd-input-group__addon--button:last-child > * {
-  border-radius: .125rem;
-  border-radius: var(--sapField_BorderCornerRadius,.125rem);
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0
-}
-.fd-input-group__addon--button:last-child > :first-child:not(:last-child) {
-  border-bottom-right-radius: 0
-}
-.fd-input-group__addon--button:last-child > :last-child:not(:first-child) {
-  border-top-right-radius: 0
+.fd-input-group__addon--button:last-child {
+  border-radius: 0 .0625rem .0625rem 0
 }
 .fd-input-group__addon--button:not(:first-child):not(:last-child) .fd-input-group__button {
   border-radius: 0
 }
-.fd-input-group__addon--button[dir=rtl]:first-child > *,
-[dir=rtl] .fd-input-group__addon--button:first-child > * {
-  border-radius: .125rem;
-  border-radius: var(--sapField_BorderCornerRadius,.125rem);
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin-right: 0;
-  border-top-right-radius: .125rem;
-  border-top-right-radius: var(--sapField_BorderCornerRadius,.125rem);
-  border-bottom-right-radius: .125rem;
-  border-bottom-right-radius: var(--sapField_BorderCornerRadius,.125rem)
+.fd-input-group__addon--button[dir=rtl]:first-child,
+[dir=rtl] .fd-input-group__addon--button:first-child {
+  border-radius: 0 .0625rem .0625rem 0;
+  margin-right: 0
 }
-.fd-input-group__addon--button[dir=rtl]:first-child > :first-child:not(:last-child),
-[dir=rtl] .fd-input-group__addon--button:first-child > :first-child:not(:last-child) {
-  border-bottom-right-radius: 0
-}
-.fd-input-group__addon--button[dir=rtl]:first-child > :last-child:not(:first-child),
-[dir=rtl] .fd-input-group__addon--button:first-child > :last-child:not(:first-child) {
-  border-top-right-radius: 0
-}
-.fd-input-group__addon--button[dir=rtl]:last-child > *,
-[dir=rtl] .fd-input-group__addon--button:last-child > * {
-  border-radius: .125rem;
-  border-radius: var(--sapField_BorderCornerRadius,.125rem);
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin-left: 0;
-  border-top-left-radius: .125rem;
-  border-top-left-radius: var(--sapField_BorderCornerRadius,.125rem);
-  border-bottom-left-radius: .125rem;
-  border-bottom-left-radius: var(--sapField_BorderCornerRadius,.125rem)
-}
-.fd-input-group__addon--button[dir=rtl]:last-child > :first-child:not(:last-child),
-[dir=rtl] .fd-input-group__addon--button:last-child > :first-child:not(:last-child) {
-  border-bottom-left-radius: 0
-}
-.fd-input-group__addon--button[dir=rtl]:last-child > :last-child:not(:first-child),
-[dir=rtl] .fd-input-group__addon--button:last-child > :last-child:not(:first-child) {
-  border-top-left-radius: 0
+.fd-input-group__addon--button[dir=rtl]:last-child,
+[dir=rtl] .fd-input-group__addon--button:last-child {
+  border-radius: .0625rem 0 0 .0625rem;
+  margin-left: 0
 }
 .fd-input-group__button {
   white-space: nowrap;
