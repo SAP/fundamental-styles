@@ -73,6 +73,7 @@ $block: #{$fd-namespace}-switch;
     // background: darken(@sapUiButtonBackground,7);
     background-color: #ededed;
     position: relative;
+    box-sizing: content-box;
     width: $fd-switch-size-x;
     height: $fd-switch-size-y;
     border: $fd-switch-border-width solid $fd-switch-inactive-border-color;
@@ -133,6 +134,7 @@ $block: #{$fd-namespace}-switch;
   &__handle {
     @include fd-reset();
 
+    box-sizing: content-box;
     border: $fd-switch-border-width solid $fd-switch-inactive-border-color;
     background-color: $fd-switch-inactive-handle-background;
     width: $fd-switch-handle-size;
