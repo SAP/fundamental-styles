@@ -13,11 +13,20 @@ $block: #{$fd-namespace}-textarea;
   min-width: 6rem;
   width: 100%;
   min-height: 2.25rem;
-  margin: 0.25rem 0;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
   padding: 0.5rem 0.625rem;
   white-space: initial;
   overflow: auto;
   resize: none;
+
+  &[aria-expanded="false"] {
+    z-index: 0;
+  }
+
+  &[aria-expanded="true"] {
+    z-index: 4;
+  }
 
   &--compact {
     min-height: 1.625rem;
