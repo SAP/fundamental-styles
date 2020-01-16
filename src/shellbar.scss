@@ -298,6 +298,9 @@ $block: #{$fd-namespace}-shellbar;
       background: $fd-content-badge-background;
       border: $fd-content-badge-background;
       color: $fd-shellbar-color;
+      line-height: 0.8;
+      top: 10px;
+      max-height: 16px;
     }
 
     .#{$block}__input-group__addon {
