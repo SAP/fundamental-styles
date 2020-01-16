@@ -21,6 +21,9 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 }
 
 .#{$block} {
+
+  $fd-input-group-add-on-border: 0.0625rem;
+
   @include fd-reset();
 
   display: flex;
@@ -36,14 +39,14 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   @include fd-input-group-focus();
 
   > * {
+    border-radius: $fd-input-border-radius;
+
     &:first-child {
-      border-radius: $fd-input-border-radius;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
 
     &:last-child {
-      border-radius: $fd-input-border-radius;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
@@ -53,14 +56,14 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     }
 
     @include fd-rtl() {
+      border-radius: $fd-input-border-radius;
+
       &:first-child {
-        border-radius: $fd-input-border-radius;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
       }
 
       &:last-child {
-        border-radius: $fd-input-border-radius;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
       }
@@ -151,45 +154,26 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
       display: flex;
       flex-direction: column;
       border: none;
-      border-radius: $fd-input-border-radius;
+      border-radius: $fd-input-group-add-on-border;
 
       .#{$block}__button {
         @include fd-reset-child-spacing();
 
+        border-radius: 0;
         height: 100%;
         max-height: 100%;
       }
 
+      > * {
+        border-radius: 0;
+      }
+
       &:first-child {
-        > * {
-          border-radius: $fd-input-border-radius;
-          border-top-right-radius: 0;
-          border-bottom-right-radius: 0;
-
-          &:first-child:not(:last-child) {
-            border-bottom-left-radius: 0;
-          }
-
-          &:last-child:not(:first-child) {
-            border-top-left-radius: 0;
-          }
-        }
+        border-radius: $fd-input-group-add-on-border 0 0 $fd-input-group-add-on-border;
       }
 
       &:last-child {
-        > * {
-          border-radius: $fd-input-border-radius;
-          border-top-left-radius: 0;
-          border-bottom-left-radius: 0;
-
-          &:first-child:not(:last-child) {
-            border-bottom-right-radius: 0;
-          }
-
-          &:last-child:not(:first-child) {
-            border-top-right-radius: 0;
-          }
-        }
+        border-radius: 0 $fd-input-group-add-on-border $fd-input-group-add-on-border 0;
       }
 
       &:not(:first-child):not(:last-child) {
@@ -200,41 +184,13 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
       @include fd-rtl() {
         &:first-child {
-          > * {
-            border-radius: $fd-input-border-radius;
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-            margin-right: 0;
-            border-top-right-radius: $fd-input-border-radius;
-            border-bottom-right-radius: $fd-input-border-radius;
-
-            &:first-child:not(:last-child) {
-              border-bottom-right-radius: 0;
-            }
-
-            &:last-child:not(:first-child) {
-              border-top-right-radius: 0;
-            }
-          }
+          border-radius: 0 $fd-input-group-add-on-border $fd-input-group-add-on-border 0;
+          margin-right: 0;
         }
 
         &:last-child {
-          > * {
-            border-radius: $fd-input-border-radius;
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-            margin-left: 0;
-            border-top-left-radius: $fd-input-border-radius;
-            border-bottom-left-radius: $fd-input-border-radius;
-
-            &:first-child:not(:last-child) {
-              border-bottom-left-radius: 0;
-            }
-
-            &:last-child:not(:first-child) {
-              border-top-left-radius: 0;
-            }
-          }
+          border-radius: $fd-input-group-add-on-border 0 0 $fd-input-group-add-on-border;
+          margin-left: 0;
         }
       }
     }
