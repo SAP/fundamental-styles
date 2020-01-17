@@ -287,8 +287,74 @@ $block: #{$fd-namespace}-product-switch;
       border-bottom: 0.0625rem solid;
       border-bottom-color: var(--sapList_GroupHeaderBorderColor);
 
+      .#{$block}__title,
+      .#{$block}__subtitle {
+        &::after,
+        &::before {
+          background-color: var(--sapTile_Background);
+        }
+      }
+
+      &:hover {
+        .#{$block}__subtitle,
+        .#{$block}__title {
+          &::after,
+          &::before {
+            background-color: var(--sapList_Hover_Background);
+          }
+        }
+      }
+
+      &:active {
+        .#{$block}__subtitle,
+        .#{$block}__title {
+          &::after,
+          &::before {
+            background-color: var(--sapList_SelectionBorderColor);
+          }
+        }
+      }
+
       &.selected {
         border-bottom-color: var(--sapList_SelectionBorderColor);
+
+        .#{$block}__subtitle,
+        .#{$block}__title {
+          &::after,
+          &::before {
+            background-color: var(--sapList_SelectionBackgroundColor);
+          }
+        }
+
+        &:hover {
+          .#{$block}__subtitle,
+          .#{$block}__title {
+            &::after,
+            &::before {
+              background-color: var(--sapList_Hover_SelectionBackground);
+            }
+          }
+        }
+
+        &:active {
+          .#{$block}__subtitle,
+          .#{$block}__title {
+            &::after,
+            &::before {
+              background-color: var(--sapList_Active_Background);
+            }
+          }
+
+          &:hover {
+            .#{$block}__subtitle,
+            .#{$block}__title {
+              &::after,
+              &::before {
+                background-color: var(--sapList_Active_Background);
+              }
+            }
+          }
+        }
       }
 
       &:focus {
@@ -301,7 +367,6 @@ $block: #{$fd-namespace}-product-switch;
       .#{$block}__title {
         &::before,
         &::after {
-          display: none;
           left: 21.7rem;
           width: 1rem;
           z-index: 2;
@@ -359,7 +424,6 @@ $block: #{$fd-namespace}-product-switch;
           @include multiline-truncate($lineHeight: 1.25rem, $lineCount: 1);
 
           &::before {
-            background-color: var(--sapTile_Background);
             right: $before-right;
             width: $before-width;
             text-align: right;
@@ -367,100 +431,14 @@ $block: #{$fd-namespace}-product-switch;
           }
 
           &::after {
-            background-color: var(--sapTile_Background);
             z-index: 3;
             display: none;
-          }
-        }
-
-        &:hover {
-          .#{$block}__subtitle {
-            &::after,
-            &::before {
-              background-color: var(--sapList_Hover_Background);
-            }
-          }
-
-          .#{$block}__title {
-            &::after,
-            &::before {
-              background-color: var(--sapList_Hover_Background);
-            }
           }
         }
 
         &:active {
           .#{$block}__subtitle {
             color: var(--sapList_Active_TextColor);
-
-            &::after,
-            &::before {
-              background-color: var(--sapList_Active_Background);
-            }
-          }
-
-          .#{$block}__title {
-            &::after,
-            &::before {
-              background-color: var(--sapList_Active_Background);
-            }
-          }
-        }
-
-        &.selected {
-          .#{$block}__subtitle {
-            &::after,
-            &::before {
-              background-color: var(--sapList_SelectionBackgroundColor);
-            }
-          }
-
-          .#{$block}__title {
-            &::after,
-            &::before {
-              background-color: var(--sapList_SelectionBackgroundColor);
-            }
-          }
-
-          &:hover {
-            .#{$block}__subtitle {
-              &::after,
-              &::before {
-                background-color: var(--sapList_Hover_SelectionBackground);
-              }
-            }
-
-            .#{$block}__title {
-              &::after,
-              &::before {
-                background-color: var(--sapList_Hover_SelectionBackground);
-              }
-            }
-          }
-
-          &:active {
-            .#{$block}__subtitle {
-              &::after,
-              &::before {
-                background-color: var(--sapList_Active_Background);
-              }
-            }
-
-            .#{$block}__title {
-              &::after,
-              &::before {
-                background-color: var(--sapList_Active_Background);
-              }
-            }
-
-            &:hover {
-              .#{$block}__subtitle {
-                &::after,
-                &::before {
-                  background-color: var(--sapList_Active_Background);
-                }
-              }
-            }
           }
         }
       }
