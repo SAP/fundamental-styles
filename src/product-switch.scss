@@ -69,11 +69,6 @@ $block: #{$fd-namespace}-product-switch;
 
     .#{$block}__title:not(:last-child) {
       @include fd-ellipsis();
-
-      &::after,
-      &::before {
-        display: none;
-      }
     }
 
     .#{$block}__title {
@@ -304,21 +299,12 @@ $block: #{$fd-namespace}-product-switch;
       }
 
       .#{$block}__title {
-        &::after,
-        &::before {
-          background-color: var(--sapTile_Background);
-        }
-
-        &::before {
+        &::before,
+        &::after {
+          display: none;
           left: 21.7rem;
           width: 1rem;
           z-index: 2;
-        }
-
-        &::after {
-          width: 1rem;
-          left: 21.7rem;
-          z-index: 3;
         }
       }
     }
