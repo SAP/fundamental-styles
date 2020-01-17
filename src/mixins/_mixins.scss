@@ -276,6 +276,7 @@
   text-decoration: none;
   display: inline-block;
   transition: all $fd-animation--speed ease-in;
+  line-height: inherit;
 
   &--emphasized {
     font-weight: bold;
