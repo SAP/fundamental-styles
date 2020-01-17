@@ -19,6 +19,7 @@ $block: #{$fd-namespace}-textarea;
   overflow: auto;
   resize: none;
   display: block;
+  cursor: text;
 
   &[aria-expanded="false"] {
     z-index: 0;
