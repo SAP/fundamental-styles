@@ -20,25 +20,25 @@ Token are used to represent contextualizing information. They can be useful to s
     <span class="fd-token__text">
         Bibendum
     </span>
-    <button class="fd-token__close"></button>
+    <button class="fd-token__close" tabindex="-1"></button>
 </span>
 <span class="fd-token" role="button" tabindex="0">
     <span class="fd-token__text">
         Lorem
     </span>
-    <button class="fd-token__close"></button>
+    <button class="fd-token__close" tabindex="-1"></button>
 </span>
 <span class="fd-token" role="button" tabindex="0">
     <span class="fd-token__text">
         Dolor
     </span>
-    <button class="fd-token__close"></button>
+    <button class="fd-token__close" tabindex="-1"></button>
 </span>
 <span class="fd-token" role="button" tabindex="0">
     <span class="fd-token__text">
         Filter
     </span>
-    <button class="fd-token__close"></button>
+    <button class="fd-token__close" tabindex="-1"></button>
 </span>
 {% endcapture %}
 {% include display-component.html component=default-token %}
@@ -50,25 +50,25 @@ Token are used to represent contextualizing information. They can be useful to s
     <span class="fd-token__text">
         Bibendum
     </span>
-    <button class="fd-token__close"></button>
+    <button class="fd-token__close" tabindex="-1"></button>
 </span>
 <span class="fd-token fd-token--selected" role="button" tabindex="0">
     <span class="fd-token__text">
         Lorem
     </span>
-    <button class="fd-token__close"></button>
+    <button class="fd-token__close" tabindex="-1"></button>
 </span>
 <span class="fd-token fd-token--selected" role="button" tabindex="0">
     <span class="fd-token__text">
         Dolor
     </span>
-    <button class="fd-token__close"></button>
+    <button class="fd-token__close" tabindex="-1"></button>
 </span>
 <span class="fd-token fd-token--selected" role="button" tabindex="0">
     <span class="fd-token__text">
         Filter
     </span>
-    <button class="fd-token__close"></button>
+    <button class="fd-token__close" tabindex="-1"></button>
 </span>
 {% endcapture %}
 {% include display-component.html component=selected-token %}
@@ -106,25 +106,25 @@ Token are used to represent contextualizing information. They can be useful to s
     <span class="fd-token__text">
         Bibendum
     </span>
-    <button class="fd-token__close"></button>
+    <button class="fd-token__close" tabindex="-1"></button>
 </span>
 <span class="fd-token fd-token--compact" role="button" tabindex="0">
     <span class="fd-token__text">
         Lorem
     </span>
-    <button class="fd-token__close"></button>
+    <button class="fd-token__close" tabindex="-1"></button>
 </span>
 <span class="fd-token fd-token--compact" role="button" tabindex="0">
     <span class="fd-token__text">
         Dolor
     </span>
-    <button class="fd-token__close"></button>
+    <button class="fd-token__close" tabindex="-1"></button>
 </span>
 <span class="fd-token fd-token--compact" role="button" tabindex="0">
     <span class="fd-token__text">
         Filter
     </span>
-    <button class="fd-token__close"></button>
+    <button class="fd-token__close" tabindex="-1"></button>
 </span>
 {% endcapture %}
 {% include display-component.html component=compact-token %}
@@ -141,25 +141,25 @@ To show focus on whole element, it's needed to add `.is-focus` into container.
             <span class="fd-token__text">
                 Bibendum
             </span>
-            <button class="fd-token__close"></button>
+            <button class="fd-token__close" tabindex="-1"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Lorem
             </span>
-            <button class="fd-token__close"></button>
+            <button class="fd-token__close" tabindex="-1"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Dolor
             </span>
-            <button class="fd-token__close"></button>
+            <button class="fd-token__close" tabindex="-1"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Filter
             </span>
-            <button class="fd-token__close"></button>
+            <button class="fd-token__close" tabindex="-1"></button>
         </span>
         <span class="fd-token fd-token--readonly">
             <span class="fd-token__text">
@@ -176,25 +176,25 @@ To show focus on whole element, it's needed to add `.is-focus` into container.
             <span class="fd-token__text">
                 Bibendum
             </span>
-            <button class="fd-token__close"></button>
+            <button class="fd-token__close" tabindex="-1"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Lorem
             </span>
-            <button class="fd-token__close"></button>
+            <button class="fd-token__close" tabindex="-1"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Dolor
             </span>
-            <button class="fd-token__close"></button>
+            <button class="fd-token__close" tabindex="-1"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Filter
             </span>
-            <button class="fd-token__close"></button>
+            <button class="fd-token__close" tabindex="-1"></button>
         </span>
         <span class="fd-token fd-token--readonly">
             <span class="fd-token__text">
@@ -215,25 +215,25 @@ To show focus on whole element, it's needed to add `.is-focus` into container.
             <span class="fd-token__text">
                 Bibendum
             </span>
-            <button class="fd-token__close"></button>
+            <button class="fd-token__close" tabindex="-1"></button>
         </span>
         <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Lorem
             </span>
-            <button class="fd-token__close"></button>
+            <button class="fd-token__close" tabindex="-1"></button>
         </span>
         <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Dolor
             </span>
-            <button class="fd-token__close"></button>
+            <button class="fd-token__close" tabindex="-1"></button>
         </span>
         <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Filter
             </span>
-            <button class="fd-token__close"></button>
+            <button class="fd-token__close" tabindex="-1"></button>
         </span>
         <span class="fd-token fd-token--readonly fd-token--compact">
             <span class="fd-token__text">
@@ -250,25 +250,25 @@ To show focus on whole element, it's needed to add `.is-focus` into container.
             <span class="fd-token__text">
                 Bibendum
             </span>
-            <button class="fd-token__close"></button>
+            <button class="fd-token__close" tabindex="-1"></button>
         </span>
         <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Lorem
             </span>
-            <button class="fd-token__close"></button>
+            <button class="fd-token__close" tabindex="-1"></button>
         </span>
         <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Dolor
             </span>
-            <button class="fd-token__close"></button>
+            <button class="fd-token__close" tabindex="-1"></button>
         </span>
         <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Filter
             </span>
-            <button class="fd-token__close"></button>
+            <button class="fd-token__close" tabindex="-1"></button>
         </span>
         <span class="fd-token fd-token--readonly fd-token--compact">
             <span class="fd-token__text">
