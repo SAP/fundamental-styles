@@ -1,36 +1,34 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "./component.njk" import toggle %}
+{% from "./component.njk" import switch %}
 
 {% block content %}
 
-<h3>Cozy Toggle (default)</h3>
+<h3>Cozy Switch (default)</h3>
 {% set example %}
 <label>
-{{  toggle()
-}}
-</label>
-
-<label>
-{{  toggle(
-        properties={
-            offLabel: 'OFF',
-            onLabel: 'ON'
-        },
-        modifier={
-            block: ['label']
-        }
-
+{{  switch(
+      modifier={
+          block: []
+      }
     )
 }}
 </label>
 
 <label>
-{{  toggle(
+{{  switch(
+        modifier={
+            block: ['no-text']
+        }
+    )
+}}
+</label>
+
+<label>
+{{  switch(
         modifier={
             block: ['semantic']
         }
-
     )
 }}
 </label>
@@ -39,10 +37,10 @@
 
 <br><br><br>
 
-<h3>Compact Toggle</h3>
+<h3>Compact Switch</h3>
 {% set example %}
 <label>
-{{  toggle(
+{{  switch(
         modifier={
             block: ['compact']
         }
@@ -52,13 +50,13 @@
 </label>
 
 <label>
-{{  toggle(
+{{  switch(
         properties={
             offLabel: 'OFF',
             onLabel: 'ON'
         },
         modifier={
-            block: ['label', 'compact']
+            block: ['compact', 'no-text']
         }
 
     )
@@ -66,7 +64,7 @@
 </label>
 
 <label>
-{{  toggle(
+{{  switch(
         properties={},
         modifier={
             block: ['compact', 'semantic']
@@ -80,59 +78,13 @@
 
 <hr>
 
-<h2>Other Sizes</h2>
-{% set example %}
-
-<h3>Large</h3>
-
-<label>
-{{  toggle(
-        modifier={
-            block: ['l']
-        }
-    )
-}}
-
-</label>
-
-<br><br><br>
-
-<h3>Small</h3>
-
-<label>
-{{  toggle(
-        modifier={
-            block: ['s']
-        }
-    )
-}}
-</label>
-
-<br><br><br>
-
-<h3>Extra small</h3>
-
-<label>
-{{  toggle(
-        modifier={
-            block: ['xs']
-        }
-    )
-}}
-</label>
-{% endset %}
-{{ format(example) }}
-
-<br><br><br>
-
-<hr> 
-
 <h2>checked</h2>
 {% set example %}
+</label>
 <label>
-{{  toggle(
+{{  switch(
         modifier={
-            block: ['xs']
+            block: ['compact']
         },
         state={
             checked: true
@@ -141,9 +93,9 @@
 }}
 </label>
 <label>
-{{  toggle(
+{{  switch(
         modifier={
-            block: ['s']
+            block: ['compact', 'no-text']
         },
         state={
             checked: true
@@ -152,17 +104,9 @@
 }}
 </label>
 <label>
-{{  toggle(
-        state={
-            checked: true
-        }
-    )
-}}
-</label>
-<label>
-{{  toggle(
+{{  switch(
         modifier={
-            block: ['l']
+            block: ['compact', 'semantic']
         },
         state={
             checked: true
@@ -181,9 +125,9 @@
 <h2>disabled</h2>
 {% set example %}
 <label>
-{{  toggle(
+{{  switch(
         modifier={
-            block: ['xs']
+            block: ['compact', 'semantic']
         },
         state={
             disabled: true
@@ -192,9 +136,9 @@
 }}
 </label>
 <label>
-{{  toggle(
+{{  switch(
         modifier={
-            block: ['s']
+            block: ['compact']
         },
         state={
             disabled: true
@@ -203,7 +147,10 @@
 }}
 </label>
 <label>
-{{  toggle(
+{{  switch(
+        modifier={
+            block: ['compact', 'semantic']
+        },
         state={
             disabled: true,
             checked: true
@@ -212,9 +159,9 @@
 }}
 </label>
 <label>
-{{  toggle(
+{{  switch(
         modifier={
-            block: ['l']
+            block: ['compact']
         },
         state={
             disabled: true,
@@ -229,7 +176,7 @@
 <h2>Inline label</h2>
 {% set example %}
 <label>
-{{  toggle(
+{{  switch(
         properties={
             inlineLabel: 'Testing a long label here'
         },
@@ -241,7 +188,7 @@
 }}
 </label>
 <label>
-{{  toggle(
+{{  switch(
         properties={
             inlineLabel: 'Short label'
         },
@@ -253,7 +200,7 @@
 }}
 </label>
 <label>
-{{  toggle(
+{{  switch(
         properties={
             inlineLabel: 'Testing a long label here'
         }
@@ -261,7 +208,7 @@
 }}
 </label>
 <label>
-{{  toggle(
+{{  switch(
         properties={
             inlineLabel: 'Testing a long label here'
         },
