@@ -1102,11 +1102,6 @@ h4.panel-title {
   text-align: center;
 }
 
-.modal-demo-bg{
-    background-color:rgba(0, 0, 0, 0.5);
-    padding: 40px;
-}
-
 pre code{
     white-space:pre-wrap
     overflow-x: scroll;
