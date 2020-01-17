@@ -4,8 +4,17 @@ breadcrumb:
 -->
 {% macro breadcrumb(properties={}, modifier={}, state={}, aria={}) -%}
 <ul class="fd-breadcrumb{{ modifier.block | modifier('breadcrumb') }}{{ state | state }}"{{ aria | aria }}>
+	{%- if properties.overflow -%}
+    <li class="fd-breadcrumb__item{{ modifier.content | modifier('breadcrumb__content') }}">
+		<a class="fd-breadcrumb__link" href="#" aria-controls="breadcrumb1" aria-expanded="false" aria-haspopup="true">
+			...
+			<span class="fd-breadcrumb__dropdown-icon"></span>
+		</a>
+	</li>
+    {%- endif -%}
     {%- for item in properties.items %}
     <li class="fd-breadcrumb__item{{ modifier.content | modifier('breadcrumb__content') }}"><a class="fd-breadcrumb__link{{ modifier.content | modifier('breadcrumb__content') }}" href="{{ item.href or '#' }}">{{ item.label }}</a></li>
     {% endfor %}
+	<li class="fd-breadcrumb__item">Current Link</li>
 </ul>
 {%- endmacro %}

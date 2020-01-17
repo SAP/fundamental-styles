@@ -19,10 +19,20 @@
         modifier={
 
         },
-        state=data.state,
+        state={'hover': true},
         aria={
           selected: true
         }
+    )
+}}
+<br>
+{{  link(
+        properties=data.properties,
+        modifier={
+            block: 'emphasized'
+        },
+        state=data.state,
+        aria={}
     )
 }}
 <br>
