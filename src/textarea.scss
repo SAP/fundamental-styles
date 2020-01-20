@@ -18,6 +18,16 @@ $block: #{$fd-namespace}-textarea;
   white-space: initial;
   overflow: auto;
   resize: none;
+  display: block;
+  cursor: text;
+
+  &[aria-expanded="false"] {
+    z-index: 0;
+  }
+
+  &[aria-expanded="true"] {
+    z-index: 4;
+  }
 
   &--compact {
     min-height: 1.625rem;
