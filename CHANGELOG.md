@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.0-rc.2"></a>
+# [0.5.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.5.0-rc.1...v0.5.0-rc.2) (2020-01-20)
+
+
+### Features
+
+* token and tokenizer ([#500](https://github.com/SAP/fundamental-styles/issues/500)) ([9eb0c7e](https://github.com/SAP/fundamental-styles/commit/9eb0c7e))
+
+
+
 <a name="0.5.0-rc.1"></a>
 # [0.5.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.4.1...v0.5.0-rc.1) (2020-01-20)
 
