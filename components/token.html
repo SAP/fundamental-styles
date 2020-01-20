@@ -27,7 +27,7 @@
 </script>
 <!-- End Google Tag Manager -->
 
-<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1579195560396576230">
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1579537972013046485">
 <link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -68,7 +68,7 @@
         <div class="docs-top-nav__support fd-has-float-right">
 
             <span class="fd-has-align-items-center fd-has-margin-right-small">
-                <span>v0.4.1</span>
+                <span>v0.5.0</span>
                 <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
                     <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
                         <title>GitHub</title>
@@ -791,21 +791,530 @@
 
 <p><br /></p>
 
+<h2 id="default-token">Default Token</h2>
+
 <div class="fd-tile docs-component docs-component__">
     <div class="fd-tile__content">
 		
-<span class="fd-token" role="button">Bibendum</span>
-<span class="fd-token" role="button">Lorem</span>
-<span class="fd-token" role="button">Dolor</span>
-<span class="fd-token" role="button">Filter</span>
+<span class="fd-token" role="button" tabindex="0">
+    <span class="fd-token__text">
+        Bibendum
+    </span>
+    <button class="fd-token__close" tabindex="-1"></button>
+</span>
+<span class="fd-token" role="button" tabindex="0">
+    <span class="fd-token__text">
+        Lorem
+    </span>
+    <button class="fd-token__close" tabindex="-1"></button>
+</span>
+<span class="fd-token" role="button" tabindex="0">
+    <span class="fd-token__text">
+        Dolor
+    </span>
+    <button class="fd-token__close" tabindex="-1"></button>
+</span>
+<span class="fd-token" role="button" tabindex="0">
+    <span class="fd-token__text">
+        Filter
+    </span>
+    <button class="fd-token__close" tabindex="-1"></button>
+</span>
 
 	</div>
 </div>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Bibendum<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Lorem<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Dolor<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Filter<span class="nt">&lt;/span&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+        Bibendum
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+        Lorem
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+        Dolor
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+        Filter
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/span&gt;</span></code></pre></figure>
+
+<h2 id="selected-token">Selected Token</h2>
+<p><code class="highlighter-rouge">fd-token--selected</code> modifier different color of token</p>
+
+<div class="fd-tile docs-component docs-component__">
+    <div class="fd-tile__content">
+		
+<span class="fd-token fd-token--selected" role="button" tabindex="0">
+    <span class="fd-token__text">
+        Bibendum
+    </span>
+    <button class="fd-token__close" tabindex="-1"></button>
+</span>
+<span class="fd-token fd-token--selected" role="button" tabindex="0">
+    <span class="fd-token__text">
+        Lorem
+    </span>
+    <button class="fd-token__close" tabindex="-1"></button>
+</span>
+<span class="fd-token fd-token--selected" role="button" tabindex="0">
+    <span class="fd-token__text">
+        Dolor
+    </span>
+    <button class="fd-token__close" tabindex="-1"></button>
+</span>
+<span class="fd-token fd-token--selected" role="button" tabindex="0">
+    <span class="fd-token__text">
+        Filter
+    </span>
+    <button class="fd-token__close" tabindex="-1"></button>
+</span>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--selected"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+        Bibendum
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--selected"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+        Lorem
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--selected"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+        Dolor
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--selected"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+        Filter
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/span&gt;</span></code></pre></figure>
+
+<h2 id="readonly-token">Readonly Token</h2>
+<p><code class="highlighter-rouge">fd-token--readonly</code> modifier different color of token. Readonly token shouldn’t contain close button</p>
+
+<div class="fd-tile docs-component docs-component__">
+    <div class="fd-tile__content">
+		
+<span class="fd-token fd-token--readonly" role="button" tabindex="0">
+    <span class="fd-token__text">
+        Bibendum
+    </span>
+</span>
+<span class="fd-token fd-token--readonly" role="button" tabindex="0">
+    <span class="fd-token__text">
+        Lorem
+    </span>
+</span>
+<span class="fd-token fd-token--readonly" role="button" tabindex="0">
+    <span class="fd-token__text">
+        Dolor
+    </span>
+</span>
+<span class="fd-token fd-token--readonly" role="button" tabindex="0">
+    <span class="fd-token__text">
+        Filter
+    </span>
+</span>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--readonly"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+        Bibendum
+    <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--readonly"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+        Lorem
+    <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--readonly"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+        Dolor
+    <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--readonly"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+        Filter
+    <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/span&gt;</span></code></pre></figure>
+
+<h2 id="compact-token">Compact Token</h2>
+<p><code class="highlighter-rouge">fd-token--compact</code> modifier adds compact mode</p>
+
+<div class="fd-tile docs-component docs-component__">
+    <div class="fd-tile__content">
+		
+<span class="fd-token fd-token--compact" role="button" tabindex="0">
+    <span class="fd-token__text">
+        Bibendum
+    </span>
+    <button class="fd-token__close" tabindex="-1"></button>
+</span>
+<span class="fd-token fd-token--compact" role="button" tabindex="0">
+    <span class="fd-token__text">
+        Lorem
+    </span>
+    <button class="fd-token__close" tabindex="-1"></button>
+</span>
+<span class="fd-token fd-token--compact" role="button" tabindex="0">
+    <span class="fd-token__text">
+        Dolor
+    </span>
+    <button class="fd-token__close" tabindex="-1"></button>
+</span>
+<span class="fd-token fd-token--compact" role="button" tabindex="0">
+    <span class="fd-token__text">
+        Filter
+    </span>
+    <button class="fd-token__close" tabindex="-1"></button>
+</span>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--compact"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+        Bibendum
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--compact"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+        Lorem
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--compact"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+        Dolor
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--compact"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+        Filter
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/span&gt;</span></code></pre></figure>
+
+<h2 id="tokenizer">Tokenizer</h2>
+<p>Tokenizer is container for tokens, can be placed inside multi input components. 
+To show focus on whole element, it’s needed to add <code class="highlighter-rouge">.is-focus</code> into container.</p>
+
+<div class="fd-tile docs-component docs-component__">
+    <div class="fd-tile__content">
+		
+<div class="fd-tokenizer">
+    <div class="fd-tokenizer__inner">
+        <span class="fd-token" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Bibendum
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Lorem
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Dolor
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Filter
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token fd-token--readonly">
+            <span class="fd-token__text">
+                Lorem
+            </span>
+        </span>
+        <input class="fd-input fd-tokenizer__input" />
+    </div>
+</div>
+<br /><br />
+<div class="fd-tokenizer is-focus">
+    <div class="fd-tokenizer__inner">
+        <span class="fd-token" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Bibendum
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Lorem
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Dolor
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Filter
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token fd-token--readonly">
+            <span class="fd-token__text">
+                Lorem
+            </span>
+        </span>
+        <input class="fd-input fd-tokenizer__input" />
+    </div>
+</div>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-tokenizer"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-tokenizer__inner"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Bibendum
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Lorem
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Dolor
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Filter
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--readonly"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Lorem
+            <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input fd-tokenizer__input"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;br/&gt;&lt;br/&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-tokenizer is-focus"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-tokenizer__inner"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Bibendum
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Lorem
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Dolor
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Filter
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--readonly"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Lorem
+            <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input fd-tokenizer__input"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="compact-tokenizer">Compact Tokenizer</h2>
+
+<div class="fd-tile docs-component docs-component__">
+    <div class="fd-tile__content">
+		
+<div class="fd-tokenizer fd-tokenizer--compact">
+    <div class="fd-tokenizer__inner">
+        <span class="fd-token fd-token--compact" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Bibendum
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token fd-token--compact" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Lorem
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token fd-token--compact" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Dolor
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token fd-token--compact" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Filter
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token fd-token--readonly fd-token--compact">
+            <span class="fd-token__text">
+                Lorem
+            </span>
+        </span>
+        <input class="fd-input fd-input--compact fd-tokenizer__input" />
+    </div>
+</div>
+<br /><br />
+<div class="fd-tokenizer fd-tokenizer--compact is-focus">
+    <div class="fd-tokenizer__inner">
+        <span class="fd-token fd-token--compact" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Bibendum
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token fd-token--compact" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Lorem
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token fd-token--compact" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Dolor
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token fd-token--compact" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Filter
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token fd-token--readonly fd-token--compact">
+            <span class="fd-token__text">
+                Lorem
+            </span>
+        </span>
+        <input class="fd-input fd-input--compact fd-tokenizer__input" />
+    </div>
+</div>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-tokenizer fd-tokenizer--compact"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-tokenizer__inner"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--compact"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Bibendum
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--compact"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Lorem
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--compact"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Dolor
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--compact"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Filter
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--readonly fd-token--compact"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Lorem
+            <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input fd-input--compact fd-tokenizer__input"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;br/&gt;&lt;br/&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-tokenizer fd-tokenizer--compact is-focus"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-tokenizer__inner"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--compact"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Bibendum
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--compact"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Lorem
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--compact"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Dolor
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--compact"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Filter
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--readonly fd-token--compact"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Lorem
+            <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input fd-input--compact fd-tokenizer__input"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 
 

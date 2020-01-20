@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.4.1
+ * Fundamental Library Styles v0.5.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -4524,9 +4524,9 @@ a.fd-button {
   background-color: #fff;
   background-color: var(--sapButton_Background,#fff)
 }
-.fd-button .is-hover,
+.fd-button.is-hover,
 .fd-button:hover,
-a.fd-button .is-hover,
+a.fd-button.is-hover,
 a.fd-button:hover {
   color: #0854a0;
   color: var(--sapButton_Hover_TextColor,#0854a0);
@@ -4808,11 +4808,11 @@ a[class*=fd-button--]::before {
 a[class*=fd-button--]::-moz-focus-inner {
   border: 0
 }
-.fd-button .is-hover,
+.fd-button.is-hover,
 .fd-button:hover,
-[class*=fd-button--] .is-hover,
+[class*=fd-button--].is-hover,
 [class*=fd-button--]:hover,
-a[class*=fd-button--] .is-hover,
+a[class*=fd-button--].is-hover,
 a[class*=fd-button--]:hover {
   color: #0854a0;
   color: var(--sapButton_Hover_TextColor,#0854a0);
@@ -5216,9 +5216,9 @@ a.fd-button--standard {
   background-color: #fff;
   background-color: var(--sapButton_Background,#fff)
 }
-.fd-button--standard .is-hover,
+.fd-button--standard.is-hover,
 .fd-button--standard:hover,
-a.fd-button--standard .is-hover,
+a.fd-button--standard.is-hover,
 a.fd-button--standard:hover {
   color: #0854a0;
   color: var(--sapButton_Hover_TextColor,#0854a0);
@@ -5432,9 +5432,9 @@ a.fd-button--positive {
   background-color: #fff;
   background-color: var(--sapButton_Accept_Background,#fff)
 }
-.fd-button--positive .is-hover,
+.fd-button--positive.is-hover,
 .fd-button--positive:hover,
-a.fd-button--positive .is-hover,
+a.fd-button--positive.is-hover,
 a.fd-button--positive:hover {
   color: #107e3e;
   color: var(--sapButton_Accept_Hover_TextColor,#107e3e);
@@ -5648,9 +5648,9 @@ a.fd-button--negative {
   background-color: #fff;
   background-color: var(--sapButton_Reject_Background,#fff)
 }
-.fd-button--negative .is-hover,
+.fd-button--negative.is-hover,
 .fd-button--negative:hover,
-a.fd-button--negative .is-hover,
+a.fd-button--negative.is-hover,
 a.fd-button--negative:hover {
   color: #b00;
   color: var(--sapButton_Reject_Hover_TextColor,#b00);
@@ -5968,33 +5968,33 @@ a.fd-button--emphasized[aria-selected=true]:disabled:focus,
 a.fd-button--emphasized[aria-selected=true][aria-disabled=true]:focus {
   outline: 0
 }
-.fd-button--emphasized .is-hover,
+.fd-button--emphasized.is-hover,
 .fd-button--emphasized:hover,
-a.fd-button--emphasized .is-hover,
+a.fd-button--emphasized.is-hover,
 a.fd-button--emphasized:hover {
   color: #fff;
   color: var(--sapButton_Emphasized_Hover_TextColor,#fff);
   background-color: #085caf;
   background-color: var(--sapButton_Emphasized_Hover_Background,#085caf)
 }
-.fd-button--emphasized .is-hover.is-active,
-.fd-button--emphasized .is-hover.is-pressed,
-.fd-button--emphasized .is-hover.is-selected,
-.fd-button--emphasized .is-hover:active,
-.fd-button--emphasized .is-hover[aria-pressed=true],
-.fd-button--emphasized .is-hover[aria-selected=true],
+.fd-button--emphasized.is-hover.is-active,
+.fd-button--emphasized.is-hover.is-pressed,
+.fd-button--emphasized.is-hover.is-selected,
+.fd-button--emphasized.is-hover:active,
+.fd-button--emphasized.is-hover[aria-pressed=true],
+.fd-button--emphasized.is-hover[aria-selected=true],
 .fd-button--emphasized:hover.is-active,
 .fd-button--emphasized:hover.is-pressed,
 .fd-button--emphasized:hover.is-selected,
 .fd-button--emphasized:hover:active,
 .fd-button--emphasized:hover[aria-pressed=true],
 .fd-button--emphasized:hover[aria-selected=true],
-a.fd-button--emphasized .is-hover.is-active,
-a.fd-button--emphasized .is-hover.is-pressed,
-a.fd-button--emphasized .is-hover.is-selected,
-a.fd-button--emphasized .is-hover:active,
-a.fd-button--emphasized .is-hover[aria-pressed=true],
-a.fd-button--emphasized .is-hover[aria-selected=true],
+a.fd-button--emphasized.is-hover.is-active,
+a.fd-button--emphasized.is-hover.is-pressed,
+a.fd-button--emphasized.is-hover.is-selected,
+a.fd-button--emphasized.is-hover:active,
+a.fd-button--emphasized.is-hover[aria-pressed=true],
+a.fd-button--emphasized.is-hover[aria-selected=true],
 a.fd-button--emphasized:hover.is-active,
 a.fd-button--emphasized:hover.is-pressed,
 a.fd-button--emphasized:hover.is-selected,
@@ -6006,24 +6006,24 @@ a.fd-button--emphasized:hover[aria-selected=true] {
   border-color: #0854a0;
   border-color: var(--sapButton_Emphasized_Active_BorderColor,#0854a0)
 }
-.fd-button--emphasized .is-hover.is-active.is-disabled,
-.fd-button--emphasized .is-hover.is-active:disabled,
-.fd-button--emphasized .is-hover.is-active[aria-disabled=true],
-.fd-button--emphasized .is-hover.is-pressed.is-disabled,
-.fd-button--emphasized .is-hover.is-pressed:disabled,
-.fd-button--emphasized .is-hover.is-pressed[aria-disabled=true],
-.fd-button--emphasized .is-hover.is-selected.is-disabled,
-.fd-button--emphasized .is-hover.is-selected:disabled,
-.fd-button--emphasized .is-hover.is-selected[aria-disabled=true],
-.fd-button--emphasized .is-hover:active.is-disabled,
-.fd-button--emphasized .is-hover:active:disabled,
-.fd-button--emphasized .is-hover:active[aria-disabled=true],
-.fd-button--emphasized .is-hover[aria-pressed=true].is-disabled,
-.fd-button--emphasized .is-hover[aria-pressed=true]:disabled,
-.fd-button--emphasized .is-hover[aria-pressed=true][aria-disabled=true],
-.fd-button--emphasized .is-hover[aria-selected=true].is-disabled,
-.fd-button--emphasized .is-hover[aria-selected=true]:disabled,
-.fd-button--emphasized .is-hover[aria-selected=true][aria-disabled=true],
+.fd-button--emphasized.is-hover.is-active.is-disabled,
+.fd-button--emphasized.is-hover.is-active:disabled,
+.fd-button--emphasized.is-hover.is-active[aria-disabled=true],
+.fd-button--emphasized.is-hover.is-pressed.is-disabled,
+.fd-button--emphasized.is-hover.is-pressed:disabled,
+.fd-button--emphasized.is-hover.is-pressed[aria-disabled=true],
+.fd-button--emphasized.is-hover.is-selected.is-disabled,
+.fd-button--emphasized.is-hover.is-selected:disabled,
+.fd-button--emphasized.is-hover.is-selected[aria-disabled=true],
+.fd-button--emphasized.is-hover:active.is-disabled,
+.fd-button--emphasized.is-hover:active:disabled,
+.fd-button--emphasized.is-hover:active[aria-disabled=true],
+.fd-button--emphasized.is-hover[aria-pressed=true].is-disabled,
+.fd-button--emphasized.is-hover[aria-pressed=true]:disabled,
+.fd-button--emphasized.is-hover[aria-pressed=true][aria-disabled=true],
+.fd-button--emphasized.is-hover[aria-selected=true].is-disabled,
+.fd-button--emphasized.is-hover[aria-selected=true]:disabled,
+.fd-button--emphasized.is-hover[aria-selected=true][aria-disabled=true],
 .fd-button--emphasized:hover.is-active.is-disabled,
 .fd-button--emphasized:hover.is-active:disabled,
 .fd-button--emphasized:hover.is-active[aria-disabled=true],
@@ -6042,24 +6042,24 @@ a.fd-button--emphasized:hover[aria-selected=true] {
 .fd-button--emphasized:hover[aria-selected=true].is-disabled,
 .fd-button--emphasized:hover[aria-selected=true]:disabled,
 .fd-button--emphasized:hover[aria-selected=true][aria-disabled=true],
-a.fd-button--emphasized .is-hover.is-active.is-disabled,
-a.fd-button--emphasized .is-hover.is-active:disabled,
-a.fd-button--emphasized .is-hover.is-active[aria-disabled=true],
-a.fd-button--emphasized .is-hover.is-pressed.is-disabled,
-a.fd-button--emphasized .is-hover.is-pressed:disabled,
-a.fd-button--emphasized .is-hover.is-pressed[aria-disabled=true],
-a.fd-button--emphasized .is-hover.is-selected.is-disabled,
-a.fd-button--emphasized .is-hover.is-selected:disabled,
-a.fd-button--emphasized .is-hover.is-selected[aria-disabled=true],
-a.fd-button--emphasized .is-hover:active.is-disabled,
-a.fd-button--emphasized .is-hover:active:disabled,
-a.fd-button--emphasized .is-hover:active[aria-disabled=true],
-a.fd-button--emphasized .is-hover[aria-pressed=true].is-disabled,
-a.fd-button--emphasized .is-hover[aria-pressed=true]:disabled,
-a.fd-button--emphasized .is-hover[aria-pressed=true][aria-disabled=true],
-a.fd-button--emphasized .is-hover[aria-selected=true].is-disabled,
-a.fd-button--emphasized .is-hover[aria-selected=true]:disabled,
-a.fd-button--emphasized .is-hover[aria-selected=true][aria-disabled=true],
+a.fd-button--emphasized.is-hover.is-active.is-disabled,
+a.fd-button--emphasized.is-hover.is-active:disabled,
+a.fd-button--emphasized.is-hover.is-active[aria-disabled=true],
+a.fd-button--emphasized.is-hover.is-pressed.is-disabled,
+a.fd-button--emphasized.is-hover.is-pressed:disabled,
+a.fd-button--emphasized.is-hover.is-pressed[aria-disabled=true],
+a.fd-button--emphasized.is-hover.is-selected.is-disabled,
+a.fd-button--emphasized.is-hover.is-selected:disabled,
+a.fd-button--emphasized.is-hover.is-selected[aria-disabled=true],
+a.fd-button--emphasized.is-hover:active.is-disabled,
+a.fd-button--emphasized.is-hover:active:disabled,
+a.fd-button--emphasized.is-hover:active[aria-disabled=true],
+a.fd-button--emphasized.is-hover[aria-pressed=true].is-disabled,
+a.fd-button--emphasized.is-hover[aria-pressed=true]:disabled,
+a.fd-button--emphasized.is-hover[aria-pressed=true][aria-disabled=true],
+a.fd-button--emphasized.is-hover[aria-selected=true].is-disabled,
+a.fd-button--emphasized.is-hover[aria-selected=true]:disabled,
+a.fd-button--emphasized.is-hover[aria-selected=true][aria-disabled=true],
 a.fd-button--emphasized:hover.is-active.is-disabled,
 a.fd-button--emphasized:hover.is-active:disabled,
 a.fd-button--emphasized:hover.is-active[aria-disabled=true],
@@ -6087,24 +6087,24 @@ a.fd-button--emphasized:hover[aria-selected=true][aria-disabled=true] {
   opacity: .4;
   cursor: not-allowed
 }
-.fd-button--emphasized .is-hover.is-active.is-disabled:focus,
-.fd-button--emphasized .is-hover.is-active:disabled:focus,
-.fd-button--emphasized .is-hover.is-active[aria-disabled=true]:focus,
-.fd-button--emphasized .is-hover.is-pressed.is-disabled:focus,
-.fd-button--emphasized .is-hover.is-pressed:disabled:focus,
-.fd-button--emphasized .is-hover.is-pressed[aria-disabled=true]:focus,
-.fd-button--emphasized .is-hover.is-selected.is-disabled:focus,
-.fd-button--emphasized .is-hover.is-selected:disabled:focus,
-.fd-button--emphasized .is-hover.is-selected[aria-disabled=true]:focus,
-.fd-button--emphasized .is-hover:active.is-disabled:focus,
-.fd-button--emphasized .is-hover:active:disabled:focus,
-.fd-button--emphasized .is-hover:active[aria-disabled=true]:focus,
-.fd-button--emphasized .is-hover[aria-pressed=true].is-disabled:focus,
-.fd-button--emphasized .is-hover[aria-pressed=true]:disabled:focus,
-.fd-button--emphasized .is-hover[aria-pressed=true][aria-disabled=true]:focus,
-.fd-button--emphasized .is-hover[aria-selected=true].is-disabled:focus,
-.fd-button--emphasized .is-hover[aria-selected=true]:disabled:focus,
-.fd-button--emphasized .is-hover[aria-selected=true][aria-disabled=true]:focus,
+.fd-button--emphasized.is-hover.is-active.is-disabled:focus,
+.fd-button--emphasized.is-hover.is-active:disabled:focus,
+.fd-button--emphasized.is-hover.is-active[aria-disabled=true]:focus,
+.fd-button--emphasized.is-hover.is-pressed.is-disabled:focus,
+.fd-button--emphasized.is-hover.is-pressed:disabled:focus,
+.fd-button--emphasized.is-hover.is-pressed[aria-disabled=true]:focus,
+.fd-button--emphasized.is-hover.is-selected.is-disabled:focus,
+.fd-button--emphasized.is-hover.is-selected:disabled:focus,
+.fd-button--emphasized.is-hover.is-selected[aria-disabled=true]:focus,
+.fd-button--emphasized.is-hover:active.is-disabled:focus,
+.fd-button--emphasized.is-hover:active:disabled:focus,
+.fd-button--emphasized.is-hover:active[aria-disabled=true]:focus,
+.fd-button--emphasized.is-hover[aria-pressed=true].is-disabled:focus,
+.fd-button--emphasized.is-hover[aria-pressed=true]:disabled:focus,
+.fd-button--emphasized.is-hover[aria-pressed=true][aria-disabled=true]:focus,
+.fd-button--emphasized.is-hover[aria-selected=true].is-disabled:focus,
+.fd-button--emphasized.is-hover[aria-selected=true]:disabled:focus,
+.fd-button--emphasized.is-hover[aria-selected=true][aria-disabled=true]:focus,
 .fd-button--emphasized:hover.is-active.is-disabled:focus,
 .fd-button--emphasized:hover.is-active:disabled:focus,
 .fd-button--emphasized:hover.is-active[aria-disabled=true]:focus,
@@ -6123,24 +6123,24 @@ a.fd-button--emphasized:hover[aria-selected=true][aria-disabled=true] {
 .fd-button--emphasized:hover[aria-selected=true].is-disabled:focus,
 .fd-button--emphasized:hover[aria-selected=true]:disabled:focus,
 .fd-button--emphasized:hover[aria-selected=true][aria-disabled=true]:focus,
-a.fd-button--emphasized .is-hover.is-active.is-disabled:focus,
-a.fd-button--emphasized .is-hover.is-active:disabled:focus,
-a.fd-button--emphasized .is-hover.is-active[aria-disabled=true]:focus,
-a.fd-button--emphasized .is-hover.is-pressed.is-disabled:focus,
-a.fd-button--emphasized .is-hover.is-pressed:disabled:focus,
-a.fd-button--emphasized .is-hover.is-pressed[aria-disabled=true]:focus,
-a.fd-button--emphasized .is-hover.is-selected.is-disabled:focus,
-a.fd-button--emphasized .is-hover.is-selected:disabled:focus,
-a.fd-button--emphasized .is-hover.is-selected[aria-disabled=true]:focus,
-a.fd-button--emphasized .is-hover:active.is-disabled:focus,
-a.fd-button--emphasized .is-hover:active:disabled:focus,
-a.fd-button--emphasized .is-hover:active[aria-disabled=true]:focus,
-a.fd-button--emphasized .is-hover[aria-pressed=true].is-disabled:focus,
-a.fd-button--emphasized .is-hover[aria-pressed=true]:disabled:focus,
-a.fd-button--emphasized .is-hover[aria-pressed=true][aria-disabled=true]:focus,
-a.fd-button--emphasized .is-hover[aria-selected=true].is-disabled:focus,
-a.fd-button--emphasized .is-hover[aria-selected=true]:disabled:focus,
-a.fd-button--emphasized .is-hover[aria-selected=true][aria-disabled=true]:focus,
+a.fd-button--emphasized.is-hover.is-active.is-disabled:focus,
+a.fd-button--emphasized.is-hover.is-active:disabled:focus,
+a.fd-button--emphasized.is-hover.is-active[aria-disabled=true]:focus,
+a.fd-button--emphasized.is-hover.is-pressed.is-disabled:focus,
+a.fd-button--emphasized.is-hover.is-pressed:disabled:focus,
+a.fd-button--emphasized.is-hover.is-pressed[aria-disabled=true]:focus,
+a.fd-button--emphasized.is-hover.is-selected.is-disabled:focus,
+a.fd-button--emphasized.is-hover.is-selected:disabled:focus,
+a.fd-button--emphasized.is-hover.is-selected[aria-disabled=true]:focus,
+a.fd-button--emphasized.is-hover:active.is-disabled:focus,
+a.fd-button--emphasized.is-hover:active:disabled:focus,
+a.fd-button--emphasized.is-hover:active[aria-disabled=true]:focus,
+a.fd-button--emphasized.is-hover[aria-pressed=true].is-disabled:focus,
+a.fd-button--emphasized.is-hover[aria-pressed=true]:disabled:focus,
+a.fd-button--emphasized.is-hover[aria-pressed=true][aria-disabled=true]:focus,
+a.fd-button--emphasized.is-hover[aria-selected=true].is-disabled:focus,
+a.fd-button--emphasized.is-hover[aria-selected=true]:disabled:focus,
+a.fd-button--emphasized.is-hover[aria-selected=true][aria-disabled=true]:focus,
 a.fd-button--emphasized:hover.is-active.is-disabled:focus,
 a.fd-button--emphasized:hover.is-active:disabled:focus,
 a.fd-button--emphasized:hover.is-active[aria-disabled=true]:focus,
@@ -6199,9 +6199,9 @@ a.fd-button--light:focus {
   outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
   outline-offset: -.1875rem
 }
-.fd-button--light .is-hover,
+.fd-button--light.is-hover,
 .fd-button--light:hover,
-a.fd-button--light .is-hover,
+a.fd-button--light.is-hover,
 a.fd-button--light:hover {
   background-color: #ebf5fe;
   background-color: var(--sapButton_Lite_Hover_Background,#ebf5fe);
@@ -6359,9 +6359,9 @@ a.fd-button--light.fd-button--standard {
   background-color: transparent;
   background-color: var(--sapButton_Lite_Background,transparent)
 }
-.fd-button--light.fd-button--standard .is-hover,
+.fd-button--light.fd-button--standard.is-hover,
 .fd-button--light.fd-button--standard:hover,
-a.fd-button--light.fd-button--standard .is-hover,
+a.fd-button--light.fd-button--standard.is-hover,
 a.fd-button--light.fd-button--standard:hover {
   color: #0854a0;
   color: var(--sapButton_Hover_TextColor,#0854a0);
@@ -6602,9 +6602,9 @@ a.fd-button--light.fd-button--negative {
   background-color: transparent;
   background-color: var(--sapButton_Lite_Background,transparent)
 }
-.fd-button--light.fd-button--negative .is-hover,
+.fd-button--light.fd-button--negative.is-hover,
 .fd-button--light.fd-button--negative:hover,
-a.fd-button--light.fd-button--negative .is-hover,
+a.fd-button--light.fd-button--negative.is-hover,
 a.fd-button--light.fd-button--negative:hover {
   color: #b00;
   color: var(--sapButton_Reject_Hover_TextColor,#b00);
@@ -6797,9 +6797,9 @@ a.fd-button--light.fd-button--positive {
   background-color: transparent;
   background-color: var(--sapButton_Lite_Background,transparent)
 }
-.fd-button--light.fd-button--positive .is-hover,
+.fd-button--light.fd-button--positive.is-hover,
 .fd-button--light.fd-button--positive:hover,
-a.fd-button--light.fd-button--positive .is-hover,
+a.fd-button--light.fd-button--positive.is-hover,
 a.fd-button--light.fd-button--positive:hover {
   color: #107e3e;
   color: var(--sapButton_Accept_Hover_TextColor,#107e3e);
@@ -7191,6 +7191,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: .5rem;
   list-style: none
 }
@@ -7228,7 +7231,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: 0
+  border: 0;
+  color: #6a6d70;
+  color: var(--sapContent_LabelColor,#6a6d70)
 }
 .fd-breadcrumb__item::after,
 .fd-breadcrumb__item::before {
@@ -7277,14 +7282,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   display: inline-block;
   -webkit-transition: all 125ms ease-in;
   transition: all 125ms ease-in;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #0a6ed1;
-  border-bottom-color: var(--sapLinkColor,#0a6ed1);
-  text-decoration: none;
+  line-height: inherit;
   display: inline-block;
   transition: all 125ms ease-in;
-  border-bottom-style: none;
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
@@ -7301,34 +7301,99 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   margin-right: .25rem;
   margin-left: .25rem
 }
-.fd-breadcrumb__link .is-hover,
-.fd-breadcrumb__link:hover {
-  color: #0854a0;
-  color: var(--sapLink_Hover_Color,#0854a0);
-  border-bottom-color: #0854a0;
-  border-bottom-color: var(--sapLink_Hover_Color,#0854a0)
+.fd-breadcrumb__link--emphasized {
+  font-weight: 700
 }
 .fd-breadcrumb__link:visited {
   color: #0a6ed1;
-  color: var(--sapLink_Visited_Color,#0a6ed1);
-  border-bottom-color: #0a6ed1;
-  border-bottom-color: var(--sapLink_Visited_Color,#0a6ed1)
+  color: var(--sapLink_Visited_Color,#0a6ed1)
+}
+.fd-breadcrumb__link.is-hover,
+.fd-breadcrumb__link:hover {
+  color: #0854a0;
+  color: var(--sapLink_Hover_Color,#0854a0);
+  text-decoration: underline
+}
+.fd-breadcrumb__link.is-focus,
+.fd-breadcrumb__link:focus {
+  -webkit-box-shadow: 0 0 0 1px #085caf;
+  -webkit-box-shadow: 0 0 0 1px var(--fd-color-action-focus,#085caf);
+  box-shadow: 0 0 0 1px #085caf;
+  box-shadow: 0 0 0 1px var(--fd-color-action-focus,#085caf);
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.0625rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-breadcrumb__link.is-active,
+.fd-breadcrumb__link:active {
+  color: #0a6ed1;
+  color: var(--sapLink_Active_Color,#0a6ed1)
+}
+.fd-breadcrumb__link--inverted {
+  color: #d3e8fd;
+  color: var(--sapLink_InvertedColor,#d3e8fd)
 }
 .fd-breadcrumb__link.is-disabled,
 .fd-breadcrumb__link:disabled,
 .fd-breadcrumb__link[aria-disabled=true] {
   opacity: .4;
+  opacity: var(--sapContent_DisabledOpacity,.4);
   color: #0a6ed1;
   color: var(--sapLinkColor,#0a6ed1);
-  border-bottom-color: #0a6ed1;
-  border-bottom-color: var(--sapLinkColor,#0a6ed1);
-  cursor: not-allowed
+  pointer-events: none
 }
-.fd-breadcrumb__link:focus {
-  outline-style: dotted;
-  outline-width: 1px;
-  outline-color: #0a6ed1;
-  outline-color: var(--sapLinkColor,#0a6ed1)
+.fd-breadcrumb__dropdown-icon {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  text-decoration: inherit;
+  color: #0a6ed1;
+  color: var(--sapLinkColor,#0a6ed1)
+}
+.fd-breadcrumb__dropdown-icon::after,
+.fd-breadcrumb__dropdown-icon::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-breadcrumb__dropdown-icon::before {
+  font-family: SAP-icons;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none
+}
+.fd-breadcrumb__dropdown-icon::before {
+  content: ""
+}
+.fd-breadcrumb__dropdown-icon::before {
+  font-size: 14px;
+  line-height: 1.42857
 }
 /*!
 .fd-calendar+()
@@ -7855,7 +7920,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   background-color: #0854a0;
   background-color: var(--sapSelectedColor,#0854a0)
 }
-.fd-checkbox .is-hover,
+.fd-checkbox.is-hover,
 .fd-checkbox:hover {
   background-color: #fff;
   background-color: var(--sapField_Hover_Background,#fff);
@@ -7869,7 +7934,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: var(--sapField_SuccessColor,#107e3e);
   border-width: .0625rem
 }
-.fd-checkbox.is-valid .is-hover,
+.fd-checkbox.is-valid.is-hover,
 .fd-checkbox.is-valid:hover {
   background-color: #fff;
   background-color: var(--sapField_SuccessBackground,#fff);
@@ -7882,7 +7947,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: #b00;
   border-color: var(--sapField_InvalidColor,#b00)
 }
-.fd-checkbox.is-invalid .is-hover,
+.fd-checkbox.is-invalid.is-hover,
 .fd-checkbox.is-invalid:hover {
   background-color: #fff;
   background-color: var(--sapField_InvalidBackground,#fff);
@@ -7896,9 +7961,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: #e9730c;
   border-color: var(--sapField_WarningColor,#e9730c)
 }
-.fd-checkbox.is-alert .is-hover,
+.fd-checkbox.is-alert.is-hover,
 .fd-checkbox.is-alert:hover,
-.fd-checkbox.is-warning .is-hover,
+.fd-checkbox.is-warning.is-hover,
 .fd-checkbox.is-warning:hover {
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
@@ -7911,7 +7976,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: #0a6ed1;
   border-color: var(--sapField_InformationColor,#0a6ed1)
 }
-.fd-checkbox.is-information .is-hover,
+.fd-checkbox.is-information.is-hover,
 .fd-checkbox.is-information:hover {
   background-color: #fff;
   background-color: var(--sapField_InformationBackground,#fff);
@@ -8095,7 +8160,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-radius: .125rem;
   border-radius: var(--sapField_BorderCornerRadius,.125rem)
 }
-.fd-checkbox__label .is-hover::before,
+.fd-checkbox__label.is-hover::before,
 .fd-checkbox__label:hover::before {
   background-color: #fff;
   background-color: var(--sapField_Hover_Background,#fff);
@@ -8122,15 +8187,15 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   color: #32363a;
   color: var(--sapField_TextColor,#32363a)
 }
-.fd-checkbox.is-alert + .fd-checkbox__label .is-hover.is-disabled,
-.fd-checkbox.is-alert + .fd-checkbox__label .is-hover:disabled,
-.fd-checkbox.is-alert + .fd-checkbox__label .is-hover[aria-disabled=true],
+.fd-checkbox.is-alert + .fd-checkbox__label.is-hover.is-disabled,
+.fd-checkbox.is-alert + .fd-checkbox__label.is-hover:disabled,
+.fd-checkbox.is-alert + .fd-checkbox__label.is-hover[aria-disabled=true],
 .fd-checkbox.is-alert + .fd-checkbox__label:hover.is-disabled,
 .fd-checkbox.is-alert + .fd-checkbox__label:hover:disabled,
 .fd-checkbox.is-alert + .fd-checkbox__label:hover[aria-disabled=true],
-.fd-checkbox.is-warning + .fd-checkbox__label .is-hover.is-disabled,
-.fd-checkbox.is-warning + .fd-checkbox__label .is-hover:disabled,
-.fd-checkbox.is-warning + .fd-checkbox__label .is-hover[aria-disabled=true],
+.fd-checkbox.is-warning + .fd-checkbox__label.is-hover.is-disabled,
+.fd-checkbox.is-warning + .fd-checkbox__label.is-hover:disabled,
+.fd-checkbox.is-warning + .fd-checkbox__label.is-hover[aria-disabled=true],
 .fd-checkbox.is-warning + .fd-checkbox__label:hover.is-disabled,
 .fd-checkbox.is-warning + .fd-checkbox__label:hover:disabled,
 .fd-checkbox.is-warning + .fd-checkbox__label:hover[aria-disabled=true] {
@@ -8145,9 +8210,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   color: #b00;
   color: var(--sapField_InvalidColor,#b00)
 }
-.fd-checkbox.is-invalid + .fd-checkbox__label .is-hover.is-disabled,
-.fd-checkbox.is-invalid + .fd-checkbox__label .is-hover:disabled,
-.fd-checkbox.is-invalid + .fd-checkbox__label .is-hover[aria-disabled=true],
+.fd-checkbox.is-invalid + .fd-checkbox__label.is-hover.is-disabled,
+.fd-checkbox.is-invalid + .fd-checkbox__label.is-hover:disabled,
+.fd-checkbox.is-invalid + .fd-checkbox__label.is-hover[aria-disabled=true],
 .fd-checkbox.is-invalid + .fd-checkbox__label:hover.is-disabled,
 .fd-checkbox.is-invalid + .fd-checkbox__label:hover:disabled,
 .fd-checkbox.is-invalid + .fd-checkbox__label:hover[aria-disabled=true] {
@@ -8162,9 +8227,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   color: #107e3e;
   color: var(--sapField_SuccessColor,#107e3e)
 }
-.fd-checkbox.is-valid + .fd-checkbox__label .is-hover.is-disabled,
-.fd-checkbox.is-valid + .fd-checkbox__label .is-hover:disabled,
-.fd-checkbox.is-valid + .fd-checkbox__label .is-hover[aria-disabled=true],
+.fd-checkbox.is-valid + .fd-checkbox__label.is-hover.is-disabled,
+.fd-checkbox.is-valid + .fd-checkbox__label.is-hover:disabled,
+.fd-checkbox.is-valid + .fd-checkbox__label.is-hover[aria-disabled=true],
 .fd-checkbox.is-valid + .fd-checkbox__label:hover.is-disabled,
 .fd-checkbox.is-valid + .fd-checkbox__label:hover:disabled,
 .fd-checkbox.is-valid + .fd-checkbox__label:hover[aria-disabled=true] {
@@ -8179,9 +8244,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   color: #0a6ed1;
   color: var(--sapField_InformationColor,#0a6ed1)
 }
-.fd-checkbox.is-information + .fd-checkbox__label .is-hover.is-disabled,
-.fd-checkbox.is-information + .fd-checkbox__label .is-hover:disabled,
-.fd-checkbox.is-information + .fd-checkbox__label .is-hover[aria-disabled=true],
+.fd-checkbox.is-information + .fd-checkbox__label.is-hover.is-disabled,
+.fd-checkbox.is-information + .fd-checkbox__label.is-hover:disabled,
+.fd-checkbox.is-information + .fd-checkbox__label.is-hover[aria-disabled=true],
 .fd-checkbox.is-information + .fd-checkbox__label:hover.is-disabled,
 .fd-checkbox.is-information + .fd-checkbox__label:hover:disabled,
 .fd-checkbox.is-information + .fd-checkbox__label:hover[aria-disabled=true] {
@@ -8196,15 +8261,15 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   color: #6a6d70;
   color: var(--sapContent_NonInteractiveIconColor,#6a6d70)
 }
-.fd-checkbox.is-readonly + .fd-checkbox__label .is-hover.is-disabled,
-.fd-checkbox.is-readonly + .fd-checkbox__label .is-hover:disabled,
-.fd-checkbox.is-readonly + .fd-checkbox__label .is-hover[aria-disabled=true],
+.fd-checkbox.is-readonly + .fd-checkbox__label.is-hover.is-disabled,
+.fd-checkbox.is-readonly + .fd-checkbox__label.is-hover:disabled,
+.fd-checkbox.is-readonly + .fd-checkbox__label.is-hover[aria-disabled=true],
 .fd-checkbox.is-readonly + .fd-checkbox__label:hover.is-disabled,
 .fd-checkbox.is-readonly + .fd-checkbox__label:hover:disabled,
 .fd-checkbox.is-readonly + .fd-checkbox__label:hover[aria-disabled=true],
-.fd-checkbox[readonly] + .fd-checkbox__label .is-hover.is-disabled,
-.fd-checkbox[readonly] + .fd-checkbox__label .is-hover:disabled,
-.fd-checkbox[readonly] + .fd-checkbox__label .is-hover[aria-disabled=true],
+.fd-checkbox[readonly] + .fd-checkbox__label.is-hover.is-disabled,
+.fd-checkbox[readonly] + .fd-checkbox__label.is-hover:disabled,
+.fd-checkbox[readonly] + .fd-checkbox__label.is-hover[aria-disabled=true],
 .fd-checkbox[readonly] + .fd-checkbox__label:hover.is-disabled,
 .fd-checkbox[readonly] + .fd-checkbox__label:hover:disabled,
 .fd-checkbox[readonly] + .fd-checkbox__label:hover[aria-disabled=true] {
@@ -8370,7 +8435,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   background-color: #0854a0;
   background-color: var(--sapSelectedColor,#0854a0)
 }
-.fd-radio .is-hover,
+.fd-radio.is-hover,
 .fd-radio:hover {
   background-color: #fff;
   background-color: var(--sapField_Hover_Background,#fff);
@@ -8384,7 +8449,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: var(--sapField_SuccessColor,#107e3e);
   border-width: .0625rem
 }
-.fd-radio.is-valid .is-hover,
+.fd-radio.is-valid.is-hover,
 .fd-radio.is-valid:hover {
   background-color: #fff;
   background-color: var(--sapField_SuccessBackground,#fff);
@@ -8397,7 +8462,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: #b00;
   border-color: var(--sapField_InvalidColor,#b00)
 }
-.fd-radio.is-invalid .is-hover,
+.fd-radio.is-invalid.is-hover,
 .fd-radio.is-invalid:hover {
   background-color: #fff;
   background-color: var(--sapField_InvalidBackground,#fff);
@@ -8411,9 +8476,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: #e9730c;
   border-color: var(--sapField_WarningColor,#e9730c)
 }
-.fd-radio.is-alert .is-hover,
+.fd-radio.is-alert.is-hover,
 .fd-radio.is-alert:hover,
-.fd-radio.is-warning .is-hover,
+.fd-radio.is-warning.is-hover,
 .fd-radio.is-warning:hover {
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
@@ -8426,7 +8491,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: #0a6ed1;
   border-color: var(--sapField_InformationColor,#0a6ed1)
 }
-.fd-radio.is-information .is-hover,
+.fd-radio.is-information.is-hover,
 .fd-radio.is-information:hover {
   background-color: #fff;
   background-color: var(--sapField_InformationBackground,#fff);
@@ -8608,7 +8673,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border: var(--sapField_BorderWidth,.0625rem) solid var(--sapField_BorderColor,#89919a);
   border-radius: 50%
 }
-.fd-radio__label .is-hover::before,
+.fd-radio__label.is-hover::before,
 .fd-radio__label:hover::before {
   background-color: #fff;
   background-color: var(--sapField_Hover_Background,#fff);
@@ -8627,15 +8692,15 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   color: #32363a;
   color: var(--sapField_TextColor,#32363a)
 }
-.fd-radio.is-alert + .fd-radio__label .is-hover.is-disabled,
-.fd-radio.is-alert + .fd-radio__label .is-hover:disabled,
-.fd-radio.is-alert + .fd-radio__label .is-hover[aria-disabled=true],
+.fd-radio.is-alert + .fd-radio__label.is-hover.is-disabled,
+.fd-radio.is-alert + .fd-radio__label.is-hover:disabled,
+.fd-radio.is-alert + .fd-radio__label.is-hover[aria-disabled=true],
 .fd-radio.is-alert + .fd-radio__label:hover.is-disabled,
 .fd-radio.is-alert + .fd-radio__label:hover:disabled,
 .fd-radio.is-alert + .fd-radio__label:hover[aria-disabled=true],
-.fd-radio.is-warning + .fd-radio__label .is-hover.is-disabled,
-.fd-radio.is-warning + .fd-radio__label .is-hover:disabled,
-.fd-radio.is-warning + .fd-radio__label .is-hover[aria-disabled=true],
+.fd-radio.is-warning + .fd-radio__label.is-hover.is-disabled,
+.fd-radio.is-warning + .fd-radio__label.is-hover:disabled,
+.fd-radio.is-warning + .fd-radio__label.is-hover[aria-disabled=true],
 .fd-radio.is-warning + .fd-radio__label:hover.is-disabled,
 .fd-radio.is-warning + .fd-radio__label:hover:disabled,
 .fd-radio.is-warning + .fd-radio__label:hover[aria-disabled=true] {
@@ -8650,9 +8715,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   color: #b00;
   color: var(--sapField_InvalidColor,#b00)
 }
-.fd-radio.is-invalid + .fd-radio__label .is-hover.is-disabled,
-.fd-radio.is-invalid + .fd-radio__label .is-hover:disabled,
-.fd-radio.is-invalid + .fd-radio__label .is-hover[aria-disabled=true],
+.fd-radio.is-invalid + .fd-radio__label.is-hover.is-disabled,
+.fd-radio.is-invalid + .fd-radio__label.is-hover:disabled,
+.fd-radio.is-invalid + .fd-radio__label.is-hover[aria-disabled=true],
 .fd-radio.is-invalid + .fd-radio__label:hover.is-disabled,
 .fd-radio.is-invalid + .fd-radio__label:hover:disabled,
 .fd-radio.is-invalid + .fd-radio__label:hover[aria-disabled=true] {
@@ -8667,9 +8732,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   color: #107e3e;
   color: var(--sapField_SuccessColor,#107e3e)
 }
-.fd-radio.is-valid + .fd-radio__label .is-hover.is-disabled,
-.fd-radio.is-valid + .fd-radio__label .is-hover:disabled,
-.fd-radio.is-valid + .fd-radio__label .is-hover[aria-disabled=true],
+.fd-radio.is-valid + .fd-radio__label.is-hover.is-disabled,
+.fd-radio.is-valid + .fd-radio__label.is-hover:disabled,
+.fd-radio.is-valid + .fd-radio__label.is-hover[aria-disabled=true],
 .fd-radio.is-valid + .fd-radio__label:hover.is-disabled,
 .fd-radio.is-valid + .fd-radio__label:hover:disabled,
 .fd-radio.is-valid + .fd-radio__label:hover[aria-disabled=true] {
@@ -8684,9 +8749,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   color: #0a6ed1;
   color: var(--sapField_InformationColor,#0a6ed1)
 }
-.fd-radio.is-information + .fd-radio__label .is-hover.is-disabled,
-.fd-radio.is-information + .fd-radio__label .is-hover:disabled,
-.fd-radio.is-information + .fd-radio__label .is-hover[aria-disabled=true],
+.fd-radio.is-information + .fd-radio__label.is-hover.is-disabled,
+.fd-radio.is-information + .fd-radio__label.is-hover:disabled,
+.fd-radio.is-information + .fd-radio__label.is-hover[aria-disabled=true],
 .fd-radio.is-information + .fd-radio__label:hover.is-disabled,
 .fd-radio.is-information + .fd-radio__label:hover:disabled,
 .fd-radio.is-information + .fd-radio__label:hover[aria-disabled=true] {
@@ -8701,15 +8766,15 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   color: #6a6d70;
   color: var(--sapContent_NonInteractiveIconColor,#6a6d70)
 }
-.fd-radio.is-readonly + .fd-radio__label .is-hover.is-disabled,
-.fd-radio.is-readonly + .fd-radio__label .is-hover:disabled,
-.fd-radio.is-readonly + .fd-radio__label .is-hover[aria-disabled=true],
+.fd-radio.is-readonly + .fd-radio__label.is-hover.is-disabled,
+.fd-radio.is-readonly + .fd-radio__label.is-hover:disabled,
+.fd-radio.is-readonly + .fd-radio__label.is-hover[aria-disabled=true],
 .fd-radio.is-readonly + .fd-radio__label:hover.is-disabled,
 .fd-radio.is-readonly + .fd-radio__label:hover:disabled,
 .fd-radio.is-readonly + .fd-radio__label:hover[aria-disabled=true],
-.fd-radio[readonly] + .fd-radio__label .is-hover.is-disabled,
-.fd-radio[readonly] + .fd-radio__label .is-hover:disabled,
-.fd-radio[readonly] + .fd-radio__label .is-hover[aria-disabled=true],
+.fd-radio[readonly] + .fd-radio__label.is-hover.is-disabled,
+.fd-radio[readonly] + .fd-radio__label.is-hover:disabled,
+.fd-radio[readonly] + .fd-radio__label.is-hover[aria-disabled=true],
 .fd-radio[readonly] + .fd-radio__label:hover.is-disabled,
 .fd-radio[readonly] + .fd-radio__label:hover:disabled,
 .fd-radio[readonly] + .fd-radio__label:hover[aria-disabled=true] {
@@ -8962,7 +9027,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: var(--fd-color-neutral-4,#89919a);
   padding-right: 0
 }
-.fd-dropdown__control.fd-button .is-hover,
+.fd-dropdown__control.fd-button.is-hover,
 .fd-dropdown__control.fd-button:hover {
   color: #32363a;
   color: var(--fd-color-text-1,#32363a);
@@ -9357,11 +9422,6 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
 .fd-form-label--inline-help .fd-inline-help {
   top: 0
 }
-.fd-form-label--toggle {
-  overflow: initial;
-  margin-top: 5px;
-  margin-bottom: 5px
-}
 /*!
 .fd-form-message(--help, --error, --warning)
 */
@@ -9529,7 +9589,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   background-color: #0854a0;
   background-color: var(--sapSelectedColor,#0854a0)
 }
-.fd-form-select .is-hover,
+.fd-form-select.is-hover,
 .fd-form-select:hover {
   background-color: #fff;
   background-color: var(--sapField_Hover_Background,#fff);
@@ -9543,7 +9603,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: var(--sapField_SuccessColor,#107e3e);
   border-width: .0625rem
 }
-.fd-form-select.is-valid .is-hover,
+.fd-form-select.is-valid.is-hover,
 .fd-form-select.is-valid:hover {
   background-color: #fff;
   background-color: var(--sapField_SuccessBackground,#fff);
@@ -9556,7 +9616,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: #b00;
   border-color: var(--sapField_InvalidColor,#b00)
 }
-.fd-form-select.is-invalid .is-hover,
+.fd-form-select.is-invalid.is-hover,
 .fd-form-select.is-invalid:hover {
   background-color: #fff;
   background-color: var(--sapField_InvalidBackground,#fff);
@@ -9570,9 +9630,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: #e9730c;
   border-color: var(--sapField_WarningColor,#e9730c)
 }
-.fd-form-select.is-alert .is-hover,
+.fd-form-select.is-alert.is-hover,
 .fd-form-select.is-alert:hover,
-.fd-form-select.is-warning .is-hover,
+.fd-form-select.is-warning.is-hover,
 .fd-form-select.is-warning:hover {
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
@@ -9585,7 +9645,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: #0a6ed1;
   border-color: var(--sapField_InformationColor,#0a6ed1)
 }
-.fd-form-select.is-information .is-hover,
+.fd-form-select.is-information.is-hover,
 .fd-form-select.is-information:hover {
   background-color: #fff;
   background-color: var(--sapField_InformationBackground,#fff);
@@ -10341,7 +10401,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   background-color: #0854a0;
   background-color: var(--sapSelectedColor,#0854a0)
 }
-.fd-input .is-hover,
+.fd-input.is-hover,
 .fd-input:hover {
   background-color: #fff;
   background-color: var(--sapField_Hover_Background,#fff);
@@ -10355,7 +10415,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: var(--sapField_SuccessColor,#107e3e);
   border-width: .0625rem
 }
-.fd-input.is-valid .is-hover,
+.fd-input.is-valid.is-hover,
 .fd-input.is-valid:hover {
   background-color: #fff;
   background-color: var(--sapField_SuccessBackground,#fff);
@@ -10368,7 +10428,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: #b00;
   border-color: var(--sapField_InvalidColor,#b00)
 }
-.fd-input.is-invalid .is-hover,
+.fd-input.is-invalid.is-hover,
 .fd-input.is-invalid:hover {
   background-color: #fff;
   background-color: var(--sapField_InvalidBackground,#fff);
@@ -10382,9 +10442,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: #e9730c;
   border-color: var(--sapField_WarningColor,#e9730c)
 }
-.fd-input.is-alert .is-hover,
+.fd-input.is-alert.is-hover,
 .fd-input.is-alert:hover,
-.fd-input.is-warning .is-hover,
+.fd-input.is-warning.is-hover,
 .fd-input.is-warning:hover {
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
@@ -10397,7 +10457,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: #0a6ed1;
   border-color: var(--sapField_InformationColor,#0a6ed1)
 }
-.fd-input.is-information .is-hover,
+.fd-input.is-information.is-hover,
 .fd-input.is-information:hover {
   background-color: #fff;
   background-color: var(--sapField_InformationBackground,#fff);
@@ -10582,7 +10642,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   padding: .5rem .625rem;
   white-space: initial;
   overflow: auto;
-  resize: none
+  resize: none;
+  display: block;
+  cursor: text
 }
 .fd-textarea::after,
 .fd-textarea::before {
@@ -10627,7 +10689,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   background-color: #0854a0;
   background-color: var(--sapSelectedColor,#0854a0)
 }
-.fd-textarea .is-hover,
+.fd-textarea.is-hover,
 .fd-textarea:hover {
   background-color: #fff;
   background-color: var(--sapField_Hover_Background,#fff);
@@ -10641,7 +10703,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: var(--sapField_SuccessColor,#107e3e);
   border-width: .0625rem
 }
-.fd-textarea.is-valid .is-hover,
+.fd-textarea.is-valid.is-hover,
 .fd-textarea.is-valid:hover {
   background-color: #fff;
   background-color: var(--sapField_SuccessBackground,#fff);
@@ -10654,7 +10716,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: #b00;
   border-color: var(--sapField_InvalidColor,#b00)
 }
-.fd-textarea.is-invalid .is-hover,
+.fd-textarea.is-invalid.is-hover,
 .fd-textarea.is-invalid:hover {
   background-color: #fff;
   background-color: var(--sapField_InvalidBackground,#fff);
@@ -10668,9 +10730,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: #e9730c;
   border-color: var(--sapField_WarningColor,#e9730c)
 }
-.fd-textarea.is-alert .is-hover,
+.fd-textarea.is-alert.is-hover,
 .fd-textarea.is-alert:hover,
-.fd-textarea.is-warning .is-hover,
+.fd-textarea.is-warning.is-hover,
 .fd-textarea.is-warning:hover {
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
@@ -10683,7 +10745,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: #0a6ed1;
   border-color: var(--sapField_InformationColor,#0a6ed1)
 }
-.fd-textarea.is-information .is-hover,
+.fd-textarea.is-information.is-hover,
 .fd-textarea.is-information:hover {
   background-color: #fff;
   background-color: var(--sapField_InformationBackground,#fff);
@@ -10787,6 +10849,12 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
 .fd-textarea.is-readonly::placeholder,
 .fd-textarea[readonly]::placeholder {
   color: transparent
+}
+.fd-textarea[aria-expanded=false] {
+  z-index: 0
+}
+.fd-textarea[aria-expanded=true] {
+  z-index: 4
 }
 .fd-textarea--compact {
   min-height: 1.625rem;
@@ -10998,10 +11066,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   display: inline-block;
   -webkit-transition: all 125ms ease-in;
   transition: all 125ms ease-in;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #0a6ed1;
-  border-bottom-color: var(--sapLinkColor,#0a6ed1)
+  line-height: inherit
 }
 .fd-link::after,
 .fd-link::before {
@@ -11009,34 +11074,53 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-link .is-hover,
-.fd-link:hover {
-  color: #0854a0;
-  color: var(--sapLink_Hover_Color,#0854a0);
-  border-bottom-color: #0854a0;
-  border-bottom-color: var(--sapLink_Hover_Color,#0854a0)
+.fd-link--emphasized {
+  font-weight: 700
 }
 .fd-link:visited {
   color: #0a6ed1;
-  color: var(--sapLink_Visited_Color,#0a6ed1);
-  border-bottom-color: #0a6ed1;
-  border-bottom-color: var(--sapLink_Visited_Color,#0a6ed1)
+  color: var(--sapLink_Visited_Color,#0a6ed1)
+}
+.fd-link.is-hover,
+.fd-link:hover {
+  color: #0854a0;
+  color: var(--sapLink_Hover_Color,#0854a0);
+  text-decoration: underline
+}
+.fd-link.is-focus,
+.fd-link:focus {
+  -webkit-box-shadow: 0 0 0 1px #085caf;
+  -webkit-box-shadow: 0 0 0 1px var(--fd-color-action-focus,#085caf);
+  box-shadow: 0 0 0 1px #085caf;
+  box-shadow: 0 0 0 1px var(--fd-color-action-focus,#085caf);
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.0625rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-link.is-active,
+.fd-link:active {
+  color: #0a6ed1;
+  color: var(--sapLink_Active_Color,#0a6ed1)
+}
+.fd-link--inverted {
+  color: #d3e8fd;
+  color: var(--sapLink_InvertedColor,#d3e8fd)
 }
 .fd-link.is-disabled,
 .fd-link:disabled,
 .fd-link[aria-disabled=true] {
   opacity: .4;
+  opacity: var(--sapContent_DisabledOpacity,.4);
   color: #0a6ed1;
   color: var(--sapLinkColor,#0a6ed1);
-  border-bottom-color: #0a6ed1;
-  border-bottom-color: var(--sapLinkColor,#0a6ed1);
-  cursor: not-allowed
-}
-.fd-link:focus {
-  outline-style: dotted;
-  outline-width: 1px;
-  outline-color: #0a6ed1;
-  outline-color: var(--sapLinkColor,#0a6ed1)
+  pointer-events: none
 }
 .fd-list {
   font-size: .875rem;
@@ -11104,7 +11188,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-bottom: .0625rem solid #e4e4e4;
   border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
 }
-.fd-list__item .is-hover,
+.fd-list__item.is-hover,
 .fd-list__item:hover {
   background: #f5f5f5;
   background: var(--sapList_Hover_Background,#f5f5f5)
@@ -11116,9 +11200,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-bottom-color: #0854a0;
   border-bottom-color: var(--sapList_SelectionBorderColor,#0854a0)
 }
-.fd-list__item.is-selected .is-hover,
+.fd-list__item.is-selected.is-hover,
 .fd-list__item.is-selected:hover,
-.fd-list__item[aria-selected=true] .is-hover,
+.fd-list__item[aria-selected=true].is-hover,
 .fd-list__item[aria-selected=true]:hover {
   background: #d8e9f8;
   background: var(--sapList_Hover_SelectionBackground,#d8e9f8)
@@ -11140,7 +11224,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
 .fd-list__item--no-data .fd-list__title {
   text-align: center
 }
-.fd-list__item--no-data .is-hover,
+.fd-list__item--no-data.is-hover,
 .fd-list__item--no-data:hover {
   background: #fff;
   background: var(--sapList_Background,#fff)
@@ -11567,7 +11651,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
 .fd-menu__item > .fd-checkbox {
   margin: 0 10px 0 0
 }
-.fd-menu__item .is-hover,
+.fd-menu__item.is-hover,
 .fd-menu__item:hover {
   color: #32363a;
   color: var(--fd-color-text-1,#32363a);
@@ -11578,9 +11662,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
 .fd-menu__item[aria-selected=true] {
   background-color: var(--fd-color-background-selected,rgba(10,110,209,.07))
 }
-.fd-menu__item.is-selected .is-hover,
+.fd-menu__item.is-selected.is-hover,
 .fd-menu__item.is-selected:hover,
-.fd-menu__item[aria-selected=true] .is-hover,
+.fd-menu__item[aria-selected=true].is-hover,
 .fd-menu__item[aria-selected=true]:hover {
   background-color: var(--fd-color-background-selected-hover,rgba(10,110,209,.1))
 }
@@ -13717,16 +13801,16 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
 .fd-product-switch__control::before {
   margin-right: 0
 }
-.fd-product-switch__control .is-hover,
+.fd-product-switch__control.is-hover,
 .fd-product-switch__control:hover {
   color: #fff;
   color: var(--sapShell_TextColor,#fff);
   background-color: #283848;
   background-color: var(--sapShell_Hover_Background,#283848)
 }
-.fd-product-switch__control .is-hover.is-disabled,
-.fd-product-switch__control .is-hover:disabled,
-.fd-product-switch__control .is-hover[aria-disabled=true],
+.fd-product-switch__control.is-hover.is-disabled,
+.fd-product-switch__control.is-hover:disabled,
+.fd-product-switch__control.is-hover[aria-disabled=true],
 .fd-product-switch__control:hover.is-disabled,
 .fd-product-switch__control:hover:disabled,
 .fd-product-switch__control:hover[aria-disabled=true] {
@@ -13749,263 +13833,6 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   color: var(--sapShell_Active_TextColor,#fff);
   background-color: #23303e;
   background-color: var(--sapShell_Active_Background,#23303e)
-}
-.fd-product-switch__body {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.42857;
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  max-height: calc(100vh - 76px);
-  overflow-y: auto;
-  padding: 1.5rem .5rem 1rem 1rem;
-  background-color: #fff;
-  background-color: var(--sapList_Background,#fff);
-  border-radius: .25rem;
-  border-radius: var(--sapElement_BorderCornerRadius,.25rem)
-}
-.fd-product-switch__body::after,
-.fd-product-switch__body::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
-}
-.fd-product-switch__body--col-3 .fd-product-switch__list {
-  width: 35.25rem
-}
-.fd-product-switch__body--mobile {
-  padding: 0;
-  width: 100%;
-  max-width: 100vw;
-  overflow-x: hidden
-}
-.fd-product-switch__body--mobile .fd-product-switch__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%
-}
-.fd-product-switch__body--mobile .fd-product-switch__item {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.42857;
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  max-width: 100%;
-  max-height: 5rem;
-  margin: .0625rem;
-  padding: 1rem;
-  text-align: left;
-  border-radius: 0;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto
-}
-.fd-product-switch__body--mobile .fd-product-switch__item::after,
-.fd-product-switch__body--mobile .fd-product-switch__item::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
-}
-.fd-product-switch__body--mobile .fd-product-switch__item.selected {
-  border: none;
-  border-bottom: .0625rem solid;
-  border-bottom-color: #0854a0;
-  border-bottom-color: var(--sapList_SelectionBorderColor,#0854a0)
-}
-.fd-product-switch__body--mobile .fd-product-switch__item:focus {
-  outline: 0;
-  border: .0625rem dotted;
-  border-color: #000;
-  border-color: var(--sapContent_FocusColor,#000);
-  border-radius: 0
-}
-.fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__title::after,
-.fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__title::before {
-  background-color: #fff;
-  background-color: var(--sapTile_Background,#fff)
-}
-.fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__title::before {
-  left: 21.7rem;
-  width: 1rem;
-  z-index: 2
-}
-.fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__title::after {
-  width: 1rem;
-  left: 21.7rem;
-  z-index: 3
-}
-.fd-product-switch__body--mobile .fd-product-switch__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  height: 100%
-}
-.fd-product-switch__body--mobile .fd-product-switch__icon {
-  margin-bottom: 0;
-  margin-right: .75rem
-}
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__icon,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__icon {
-  margin-right: 0;
-  margin-left: .75rem
-}
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item:hover .fd-product-switch__subtitle::after,
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item:hover .fd-product-switch__subtitle::before,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item:hover .fd-product-switch__subtitle::after,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item:hover .fd-product-switch__subtitle::before {
-  background-color: #f5f5f5;
-  background-color: var(--sapList_Hover_Background,#f5f5f5)
-}
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item:active .fd-product-switch__subtitle,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item:active .fd-product-switch__subtitle {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
-}
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item:active .fd-product-switch__subtitle::after,
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item:active .fd-product-switch__subtitle::before,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item:active .fd-product-switch__subtitle::after,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item:active .fd-product-switch__subtitle::before {
-  background-color: #0854a0;
-  background-color: var(--sapList_Active_Background,#0854a0)
-}
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item:active:hover .fd-product-switch__subtitle::after,
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item:active:hover .fd-product-switch__subtitle::before,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item:active:hover .fd-product-switch__subtitle::after,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item:active:hover .fd-product-switch__subtitle::before {
-  background-color: #0854a0;
-  background-color: var(--sapList_Active_Background,#0854a0)
-}
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item.selected .fd-product-switch__subtitle::after,
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item.selected .fd-product-switch__subtitle::before,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item.selected .fd-product-switch__subtitle::after,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item.selected .fd-product-switch__subtitle::before {
-  background-color: #e5f0fa;
-  background-color: var(--sapList_SelectionBackgroundColor,#e5f0fa)
-}
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item.selected:hover .fd-product-switch__subtitle::after,
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item.selected:hover .fd-product-switch__subtitle::before,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item.selected:hover .fd-product-switch__subtitle::after,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item.selected:hover .fd-product-switch__subtitle::before {
-  background-color: #d8e9f8;
-  background-color: var(--sapList_Hover_SelectionBackground,#d8e9f8)
-}
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item.selected:active .fd-product-switch__subtitle::after,
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item.selected:active .fd-product-switch__subtitle::before,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item.selected:active .fd-product-switch__subtitle::after,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item.selected:active .fd-product-switch__subtitle::before {
-  background-color: #0854a0;
-  background-color: var(--sapList_Active_Background,#0854a0)
-}
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item.selected:active:hover .fd-product-switch__subtitle::after,
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item.selected:active:hover .fd-product-switch__subtitle::before,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item.selected:active:hover .fd-product-switch__subtitle::after,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item.selected:active:hover .fd-product-switch__subtitle::before {
-  background-color: #0854a0;
-  background-color: var(--sapList_Active_Background,#0854a0)
-}
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item .fd-product-switch__subtitle,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__subtitle {
-  position: relative;
-  line-height: 1.25rem;
-  max-height: 1.25rem;
-  overflow: hidden;
-  margin-right: -1em;
-  padding-right: 1em
-}
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item .fd-product-switch__subtitle::before,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__subtitle::before {
-  position: absolute;
-  content: "...";
-  right: 0;
-  bottom: 1px
-}
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item .fd-product-switch__subtitle::after,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__subtitle::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  width: 1em;
-  height: 1em;
-  margin-top: .2em;
-  background: 0 0
-}
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item .fd-product-switch__subtitle::before,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__subtitle::before {
-  background-color: #fff;
-  background-color: var(--sapTile_Background,#fff);
-  right: 22.4rem;
-  width: 1.5rem;
-  text-align: right;
-  z-index: 2
-}
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item .fd-product-switch__subtitle::after,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__subtitle::after {
-  background-color: #fff;
-  background-color: var(--sapTile_Background,#fff);
-  z-index: 3
-}
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__text,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__text {
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start
-}
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__text .fd-product-switch__title::before,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__text .fd-product-switch__title::before {
-  right: 22.4rem
-}
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__text .fd-product-switch__title:not(:last-child),
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__text .fd-product-switch__title:not(:last-child) {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis
-}
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__text .fd-product-switch__title:not(:last-child)::after,
-.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__text .fd-product-switch__title:not(:last-child)::before,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__text .fd-product-switch__title:not(:last-child)::after,
-[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__text .fd-product-switch__title:not(:last-child)::before {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex
 }
 .fd-product-switch__list {
   font-size: .875rem;
@@ -14038,35 +13865,6 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
-}
-.fd-product-switch__item:hover {
-  background-color: #f5f5f5;
-  background-color: var(--sapList_Hover_Background,#f5f5f5)
-}
-.fd-product-switch__item:hover .fd-product-switch__title::after,
-.fd-product-switch__item:hover .fd-product-switch__title::before {
-  background-color: #f5f5f5;
-  background-color: var(--sapList_Hover_Background,#f5f5f5)
-}
-.fd-product-switch__item:active {
-  background-color: #0854a0;
-  background-color: var(--sapList_Active_Background,#0854a0)
-}
-.fd-product-switch__item:active .fd-product-switch__icon,
-.fd-product-switch__item:active .fd-product-switch__subtitle,
-.fd-product-switch__item:active .fd-product-switch__title {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
-}
-.fd-product-switch__item:active .fd-product-switch__title::after,
-.fd-product-switch__item:active .fd-product-switch__title::before {
-  background-color: #0854a0;
-  background-color: var(--sapList_Active_Background,#0854a0)
-}
-.fd-product-switch__item:active:hover .fd-product-switch__title::after,
-.fd-product-switch__item:active:hover .fd-product-switch__title::before {
-  background-color: #0854a0;
-  background-color: var(--sapList_Active_Background,#0854a0)
 }
 .fd-product-switch__item {
   font-size: .875rem;
@@ -14117,10 +13915,6 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis
-}
-.fd-product-switch__item .fd-product-switch__title:not(:last-child)::after,
-.fd-product-switch__item .fd-product-switch__title:not(:last-child)::before {
-  display: none
 }
 .fd-product-switch__item .fd-product-switch__title::after,
 .fd-product-switch__item .fd-product-switch__title::before {
@@ -14205,6 +13999,35 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
 .fd-product-switch__item.dragged:focus {
   outline: 0
 }
+.fd-product-switch__item:hover {
+  background-color: #f5f5f5;
+  background-color: var(--sapList_Hover_Background,#f5f5f5)
+}
+.fd-product-switch__item:hover .fd-product-switch__title::after,
+.fd-product-switch__item:hover .fd-product-switch__title::before {
+  background-color: #f5f5f5;
+  background-color: var(--sapList_Hover_Background,#f5f5f5)
+}
+.fd-product-switch__item:active {
+  background-color: #0854a0;
+  background-color: var(--sapList_Active_Background,#0854a0)
+}
+.fd-product-switch__item:active .fd-product-switch__icon,
+.fd-product-switch__item:active .fd-product-switch__subtitle,
+.fd-product-switch__item:active .fd-product-switch__title {
+  color: #fff;
+  color: var(--sapList_Active_TextColor,#fff)
+}
+.fd-product-switch__item:active .fd-product-switch__title::after,
+.fd-product-switch__item:active .fd-product-switch__title::before {
+  background-color: #0854a0;
+  background-color: var(--sapList_Active_Background,#0854a0)
+}
+.fd-product-switch__item:active:hover .fd-product-switch__title::after,
+.fd-product-switch__item:active:hover .fd-product-switch__title::before {
+  background-color: #0854a0;
+  background-color: var(--sapList_Active_Background,#0854a0)
+}
 .fd-product-switch__icon {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -14227,8 +14050,6 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -14363,6 +14184,253 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
+}
+.fd-product-switch__body {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-height: calc(100vh - 76px);
+  overflow-y: auto;
+  padding: 1.5rem .5rem 1rem 1rem;
+  background-color: #fff;
+  background-color: var(--sapList_Background,#fff);
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem)
+}
+.fd-product-switch__body::after,
+.fd-product-switch__body::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-product-switch__body--col-3 .fd-product-switch__list {
+  width: 35.25rem
+}
+.fd-product-switch__body--mobile {
+  padding: 0;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden
+}
+.fd-product-switch__body--mobile .fd-product-switch__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%
+}
+.fd-product-switch__body--mobile .fd-product-switch__item {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  max-width: 100%;
+  max-height: 5rem;
+  padding: 1rem;
+  text-align: left;
+  border-radius: 0;
+  border: none;
+  border-bottom: .0625rem solid;
+  border-bottom-color: #d8d8d8;
+  border-bottom-color: var(--sapList_GroupHeaderBorderColor,#d8d8d8)
+}
+.fd-product-switch__body--mobile .fd-product-switch__item::after,
+.fd-product-switch__body--mobile .fd-product-switch__item::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__subtitle::after,
+.fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__subtitle::before,
+.fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__title::before {
+  background-color: #fff;
+  background-color: var(--sapTile_Background,#fff)
+}
+.fd-product-switch__body--mobile .fd-product-switch__item:hover .fd-product-switch__subtitle::after,
+.fd-product-switch__body--mobile .fd-product-switch__item:hover .fd-product-switch__subtitle::before,
+.fd-product-switch__body--mobile .fd-product-switch__item:hover .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item:hover .fd-product-switch__title::before {
+  background-color: #f5f5f5;
+  background-color: var(--sapList_Hover_Background,#f5f5f5)
+}
+.fd-product-switch__body--mobile .fd-product-switch__item:active .fd-product-switch__subtitle::after,
+.fd-product-switch__body--mobile .fd-product-switch__item:active .fd-product-switch__subtitle::before,
+.fd-product-switch__body--mobile .fd-product-switch__item:active .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item:active .fd-product-switch__title::before {
+  background-color: #0854a0;
+  background-color: var(--sapList_SelectionBorderColor,#0854a0)
+}
+.fd-product-switch__body--mobile .fd-product-switch__item.selected {
+  border-bottom-color: #0854a0;
+  border-bottom-color: var(--sapList_SelectionBorderColor,#0854a0)
+}
+.fd-product-switch__body--mobile .fd-product-switch__item.selected .fd-product-switch__subtitle::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected .fd-product-switch__subtitle::before,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected .fd-product-switch__title::before {
+  background-color: #e5f0fa;
+  background-color: var(--sapList_SelectionBackgroundColor,#e5f0fa)
+}
+.fd-product-switch__body--mobile .fd-product-switch__item.selected:hover .fd-product-switch__subtitle::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected:hover .fd-product-switch__subtitle::before,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected:hover .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected:hover .fd-product-switch__title::before {
+  background-color: #d8e9f8;
+  background-color: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+}
+.fd-product-switch__body--mobile .fd-product-switch__item.selected:active .fd-product-switch__subtitle::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected:active .fd-product-switch__subtitle::before,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected:active .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected:active .fd-product-switch__title::before {
+  background-color: #0854a0;
+  background-color: var(--sapList_Active_Background,#0854a0)
+}
+.fd-product-switch__body--mobile .fd-product-switch__item.selected:active:hover .fd-product-switch__subtitle::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected:active:hover .fd-product-switch__subtitle::before,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected:active:hover .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected:active:hover .fd-product-switch__title::before {
+  background-color: #0854a0;
+  background-color: var(--sapList_Active_Background,#0854a0)
+}
+.fd-product-switch__body--mobile .fd-product-switch__item:focus {
+  outline: 0;
+  border: .0625rem dotted;
+  border-color: #000;
+  border-color: var(--sapContent_FocusColor,#000);
+  border-radius: 0
+}
+.fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__title::before {
+  left: 21.7rem;
+  width: 1rem;
+  z-index: 2
+}
+.fd-product-switch__body--mobile .fd-product-switch__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%
+}
+.fd-product-switch__body--mobile .fd-product-switch__icon {
+  margin-bottom: 0;
+  margin-right: .75rem
+}
+.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__icon,
+[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__icon {
+  margin-right: 0;
+  margin-left: .75rem
+}
+.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__text,
+[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__text {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start
+}
+.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__text .fd-product-switch__title:not(:last-child),
+[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__text .fd-product-switch__title:not(:last-child) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__text .fd-product-switch__title:not(:last-child)::after,
+[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__text .fd-product-switch__title:not(:last-child)::after {
+  display: none
+}
+.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__text .fd-product-switch__title:not(:last-child)::before,
+[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__text .fd-product-switch__title:not(:last-child)::before {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex
+}
+.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item .fd-product-switch__title::before,
+[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__title::before {
+  right: 21.8rem;
+  width: 2rem
+}
+.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item .fd-product-switch__subtitle,
+[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__subtitle {
+  position: relative;
+  line-height: 1.25rem;
+  max-height: 1.25rem;
+  overflow: hidden;
+  margin-right: -1em;
+  padding-right: 1em
+}
+.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item .fd-product-switch__subtitle::before,
+[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__subtitle::before {
+  position: absolute;
+  content: "...";
+  right: 0;
+  bottom: 1px
+}
+.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item .fd-product-switch__subtitle::after,
+[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__subtitle::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: .2em;
+  background: 0 0
+}
+.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item .fd-product-switch__subtitle::before,
+[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__subtitle::before {
+  right: 21.8rem;
+  width: 2rem;
+  text-align: right;
+  z-index: 2
+}
+.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item .fd-product-switch__subtitle::after,
+[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__subtitle::after {
+  z-index: 3;
+  display: none
+}
+.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item:active .fd-product-switch__subtitle,
+[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item:active .fd-product-switch__subtitle {
+  color: #fff;
+  color: var(--sapList_Active_TextColor,#fff)
 }
 :root {
   --fd-color-action-1: #0a6ed1;
@@ -14780,7 +14848,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   background-color: #0854a0;
   background-color: var(--sapSelectedColor,#0854a0)
 }
-.fd-select__control .is-hover,
+.fd-select__control.is-hover,
 .fd-select__control:hover {
   background-color: #fff;
   background-color: var(--sapField_Hover_Background,#fff);
@@ -14794,7 +14862,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: var(--sapField_SuccessColor,#107e3e);
   border-width: .0625rem
 }
-.fd-select__control.is-valid .is-hover,
+.fd-select__control.is-valid.is-hover,
 .fd-select__control.is-valid:hover {
   background-color: #fff;
   background-color: var(--sapField_SuccessBackground,#fff);
@@ -14807,7 +14875,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: #b00;
   border-color: var(--sapField_InvalidColor,#b00)
 }
-.fd-select__control.is-invalid .is-hover,
+.fd-select__control.is-invalid.is-hover,
 .fd-select__control.is-invalid:hover {
   background-color: #fff;
   background-color: var(--sapField_InvalidBackground,#fff);
@@ -14821,9 +14889,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: #e9730c;
   border-color: var(--sapField_WarningColor,#e9730c)
 }
-.fd-select__control.is-alert .is-hover,
+.fd-select__control.is-alert.is-hover,
 .fd-select__control.is-alert:hover,
-.fd-select__control.is-warning .is-hover,
+.fd-select__control.is-warning.is-hover,
 .fd-select__control.is-warning:hover {
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
@@ -14836,7 +14904,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-color: #0a6ed1;
   border-color: var(--sapField_InformationColor,#0a6ed1)
 }
-.fd-select__control.is-information .is-hover,
+.fd-select__control.is-information.is-hover,
 .fd-select__control.is-information:hover {
   background-color: #fff;
   background-color: var(--sapField_InformationBackground,#fff);
@@ -14983,7 +15051,7 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   -ms-flex-direction: column;
   flex-direction: column
 }
-.fd-select__control .is-hover::after,
+.fd-select__control.is-hover::after,
 .fd-select__control:hover::after {
   background-color: #fafafa;
   background-color: var(--fd-color-neutral-1,#fafafa)
@@ -15408,9 +15476,9 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-nested-list__content .is-hover,
+.fd-nested-list__content.is-hover,
 .fd-nested-list__content:hover,
-.fd-nested-list__link .is-hover,
+.fd-nested-list__link.is-hover,
 .fd-nested-list__link:hover {
   background: #f5f5f5;
   background: var(--sapList_Hover_Background,#f5f5f5)
@@ -15426,13 +15494,13 @@ a.fd-button--light.fd-button--positive[aria-disabled=true]:focus {
   border-bottom-color: #0854a0;
   border-bottom-color: var(--sapList_SelectionBorderColor,#0854a0)
 }
-.fd-nested-list__content.is-selected .is-hover,
+.fd-nested-list__content.is-selected.is-hover,
 .fd-nested-list__content.is-selected:hover,
-.fd-nested-list__content[aria-selected=true] .is-hover,
+.fd-nested-list__content[aria-selected=true].is-hover,
 .fd-nested-list__content[aria-selected=true]:hover,
-.fd-nested-list__link.is-selected .is-hover,
+.fd-nested-list__link.is-selected.is-hover,
 .fd-nested-list__link.is-selected:hover,
-.fd-nested-list__link[aria-selected=true] .is-hover,
+.fd-nested-list__link[aria-selected=true].is-hover,
 .fd-nested-list__link[aria-selected=true]:hover {
   background: #d8e9f8;
   background: var(--sapList_Hover_SelectionBackground,#d8e9f8)
@@ -16524,7 +16592,7 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   -webkit-transition: background-color 125ms ease-in;
   transition: background-color 125ms ease-in
 }
-.fd-table__row .is-hover,
+.fd-table__row.is-hover,
 .fd-table__row:hover {
   background-color: #fafafa;
   background-color: var(--fd-color-background-hover,#fafafa)
@@ -16533,9 +16601,9 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
 .fd-table__row[aria-selected=true] {
   background-color: var(--fd-color-background-selected,rgba(10,110,209,.07))
 }
-.fd-table__row.is-selected .is-hover,
+.fd-table__row.is-selected.is-hover,
 .fd-table__row.is-selected:hover,
-.fd-table__row[aria-selected=true] .is-hover,
+.fd-table__row[aria-selected=true].is-hover,
 .fd-table__row[aria-selected=true]:hover {
   background-color: var(--fd-color-background-selected-hover,rgba(10,110,209,.1))
 }
@@ -17038,7 +17106,7 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-tree__row .is-hover,
+.fd-tree__row.is-hover,
 .fd-tree__row:hover {
   background-color: #fafafa;
   background-color: var(--fd-color-background-hover,#fafafa)
@@ -17050,7 +17118,7 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   background-color: var(--fd-tree-header-background-color,#eeeeef);
   text-transform: uppercase
 }
-.fd-tree__row--header .is-hover,
+.fd-tree__row--header.is-hover,
 .fd-tree__row--header:hover {
   background-color: initial
 }
@@ -17290,14 +17358,10 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
 /*!
 .fd-tabs+()
     .fd-tabs__item?
-    .fd-tabs__link+((.is-selected|[aria-selected=true]),(.is-disabled|[aria-disabled=true]))
+    .fd-tabs__link+((.is-selected|[aria-selected=true]),)
 .fd-tabs__panel+([aria-expanded]|.is-expanded)
 */
 .fd-tabs {
-  --fd-tabs-border-color: var(--fd-color-neutral-3, #d9d9d9);
-  --fd-tabs-background-color: var(--fd-color-background-2, white);
-  --fd-tabs-link-color: var(--fd-color-text-2, #51555a);
-  --fd-tabs-link-border-color: var(--fd-color-action-1, #0a6ed1);
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
   line-height: 1.42857;
@@ -17312,20 +17376,42 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   padding: 0;
   margin: 0;
   border: 0;
-  background-color: #fff;
-  background-color: var(--fd-tabs-background-color,#fff);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-bottom: 12px;
   list-style: none;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #fff;
-  border-bottom-color: var(--fd-tabs-background-color,#fff)
+  -webkit-box-shadow: 0 0 .25rem 0 fade(#000,15),inset 0 -.0625rem 0 0 #d9d9d9;
+  -webkit-box-shadow: 0 0 .25rem 0 fade(var(--sapContent_ShadowColor,#000),15),inset 0 -.0625rem 0 0 var(--sapObjectHeader_BorderColor,#d9d9d9);
+  box-shadow: 0 0 .25rem 0 fade(#000,15),inset 0 -.0625rem 0 0 #d9d9d9;
+  box-shadow: 0 0 .25rem 0 fade(var(--sapContent_ShadowColor,#000),15),inset 0 -.0625rem 0 0 var(--sapObjectHeader_BorderColor,#d9d9d9);
+  background-color: #fff;
+  background-color: var(--sapObjectHeader_Background,#fff);
+  color: #6a6d70;
+  color: var(--sapContent_LabelColor,#6a6d70);
+  border-color: #d9d9d9;
+  border-color: var(--sapObjectHeader_BorderColor,#d9d9d9)
+}
+.fd-tabs .fd-tabs__link.is-focus .fd-tabs__icon,
+.fd-tabs .fd-tabs__link.is-focus .fd-tabs__tag,
+.fd-tabs .fd-tabs__link:focus .fd-tabs__icon,
+.fd-tabs .fd-tabs__link:focus .fd-tabs__tag,
+.fd-tabs__link.is-focus .fd-tabs .fd-tabs__icon,
+.fd-tabs__link.is-focus .fd-tabs .fd-tabs__tag,
+.fd-tabs__link:focus .fd-tabs .fd-tabs__icon,
+.fd-tabs__link:focus .fd-tabs .fd-tabs__tag {
+  outline-offset: -.0625rem;
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted);
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000)
 }
 .fd-tabs::after,
 .fd-tabs::before {
@@ -17333,7 +17419,7 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-tabs__item {
+.fd-tabs__count {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
   line-height: 1.42857;
@@ -17348,10 +17434,13 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   padding: 0;
   margin: 0;
   border: 0;
-  padding: 0 16px
+  line-height: 1rem;
+  padding-bottom: .125rem;
+  color: #6a6d70;
+  color: var(--sapContent_LabelColor,#6a6d70)
 }
-.fd-tabs__item::after,
-.fd-tabs__item::before {
+.fd-tabs__count::after,
+.fd-tabs__count::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
@@ -17371,16 +17460,16 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   padding: 0;
   margin: 0;
   border: 0;
+  cursor: pointer;
+  -webkit-transition: 0s;
+  transition: 0s;
   display: block;
   position: relative;
-  padding: 16px 0;
   text-decoration: none;
-  font-size: 14px;
-  line-height: 1.42857;
-  font-weight: 400;
-  cursor: pointer;
-  color: #51555a;
-  color: var(--fd-tabs-link-color,#51555a)
+  color: #6a6d70;
+  color: var(--sapContent_LabelColor,#6a6d70);
+  line-height: 1rem;
+  padding: .875rem .75rem
 }
 .fd-tabs__link::after,
 .fd-tabs__link::before {
@@ -17388,43 +17477,297 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-tabs__link:link {
-  color: #51555a;
-  color: var(--fd-tabs-link-color,#51555a)
+.fd-tabs__link.is-selected .fd-tabs__tag,
+.fd-tabs__link[aria-selected=true] .fd-tabs__tag {
+  color: #0854a0;
+  color: var(--sapSelectedColor,#0854a0)
 }
-.fd-tabs__link::after {
+.fd-tabs__link.is-selected .fd-tabs__icon,
+.fd-tabs__link[aria-selected=true] .fd-tabs__icon {
+  color: #fff;
+  color: var(--sapContent_ContrastIconColor,#fff);
+  background-color: #0854a0;
+  background-color: var(--sapSelectedColor,#0854a0)
+}
+.fd-tabs__link.is-selected .fd-tabs__icon::after,
+.fd-tabs__link.is-selected .fd-tabs__tag::after,
+.fd-tabs__link.is-selected::after,
+.fd-tabs__link[aria-selected=true] .fd-tabs__icon::after,
+.fd-tabs__link[aria-selected=true] .fd-tabs__tag::after,
+.fd-tabs__link[aria-selected=true]::after {
+  background-color: #0854a0;
+  background-color: var(--sapSelectedColor,#0854a0)
+}
+.fd-tabs__link.is-focus,
+.fd-tabs__link:focus {
+  -webkit-box-shadow: 0 0 0 1px #085caf;
+  -webkit-box-shadow: 0 0 0 1px var(--fd-color-action-focus,#085caf);
+  box-shadow: 0 0 0 1px #085caf;
+  box-shadow: 0 0 0 1px var(--fd-color-action-focus,#085caf);
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0
+}
+.fd-tabs__item {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: relative;
+  padding: 0;
+  margin: 0 .25rem
+}
+.fd-tabs__item::after,
+.fd-tabs__item::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tabs__item--error .fd-tabs__icon {
+  color: #b00;
+  color: var(--sapErrorColor,#b00);
+  border-color: #b00;
+  border-color: var(--sapErrorColor,#b00)
+}
+.fd-tabs__item--error .fd-tabs__link .fd-tabs__tag {
+  color: #b00;
+  color: var(--sapErrorColor,#b00)
+}
+.fd-tabs__item--error .fd-tabs__link.is-selected .fd-tabs__icon,
+.fd-tabs__item--error .fd-tabs__link[aria-selected=true] .fd-tabs__icon {
+  color: #fff;
+  color: var(--sapContent_ContrastIconColor,#fff);
+  background-color: #b00;
+  background-color: var(--sapErrorColor,#b00)
+}
+.fd-tabs__item--error .fd-tabs__link.is-selected .fd-tabs__icon::after,
+.fd-tabs__item--error .fd-tabs__link.is-selected .fd-tabs__tag::after,
+.fd-tabs__item--error .fd-tabs__link.is-selected::after,
+.fd-tabs__item--error .fd-tabs__link[aria-selected=true] .fd-tabs__icon::after,
+.fd-tabs__item--error .fd-tabs__link[aria-selected=true] .fd-tabs__tag::after,
+.fd-tabs__item--error .fd-tabs__link[aria-selected=true]::after {
+  background-color: #b00;
+  background-color: var(--sapErrorColor,#b00)
+}
+.fd-tabs__item--warning .fd-tabs__icon {
+  color: #e9730c;
+  color: var(--sapWarningColor,#e9730c);
+  border-color: #e9730c;
+  border-color: var(--sapWarningColor,#e9730c)
+}
+.fd-tabs__item--warning .fd-tabs__link .fd-tabs__tag {
+  color: #e9730c;
+  color: var(--sapWarningColor,#e9730c)
+}
+.fd-tabs__item--warning .fd-tabs__link.is-selected .fd-tabs__icon,
+.fd-tabs__item--warning .fd-tabs__link[aria-selected=true] .fd-tabs__icon {
+  color: #fff;
+  color: var(--sapContent_ContrastIconColor,#fff);
+  background-color: #e9730c;
+  background-color: var(--sapWarningColor,#e9730c)
+}
+.fd-tabs__item--warning .fd-tabs__link.is-selected .fd-tabs__icon::after,
+.fd-tabs__item--warning .fd-tabs__link.is-selected .fd-tabs__tag::after,
+.fd-tabs__item--warning .fd-tabs__link.is-selected::after,
+.fd-tabs__item--warning .fd-tabs__link[aria-selected=true] .fd-tabs__icon::after,
+.fd-tabs__item--warning .fd-tabs__link[aria-selected=true] .fd-tabs__tag::after,
+.fd-tabs__item--warning .fd-tabs__link[aria-selected=true]::after {
+  background-color: #e9730c;
+  background-color: var(--sapWarningColor,#e9730c)
+}
+.fd-tabs__item--success .fd-tabs__icon {
+  color: #107e3e;
+  color: var(--sapSuccessColor,#107e3e);
+  border-color: #107e3e;
+  border-color: var(--sapSuccessColor,#107e3e)
+}
+.fd-tabs__item--success .fd-tabs__link .fd-tabs__tag {
+  color: #107e3e;
+  color: var(--sapSuccessColor,#107e3e)
+}
+.fd-tabs__item--success .fd-tabs__link.is-selected .fd-tabs__icon,
+.fd-tabs__item--success .fd-tabs__link[aria-selected=true] .fd-tabs__icon {
+  color: #fff;
+  color: var(--sapContent_ContrastIconColor,#fff);
+  background-color: #107e3e;
+  background-color: var(--sapSuccessColor,#107e3e)
+}
+.fd-tabs__item--success .fd-tabs__link.is-selected .fd-tabs__icon::after,
+.fd-tabs__item--success .fd-tabs__link.is-selected .fd-tabs__tag::after,
+.fd-tabs__item--success .fd-tabs__link.is-selected::after,
+.fd-tabs__item--success .fd-tabs__link[aria-selected=true] .fd-tabs__icon::after,
+.fd-tabs__item--success .fd-tabs__link[aria-selected=true] .fd-tabs__tag::after,
+.fd-tabs__item--success .fd-tabs__link[aria-selected=true]::after {
+  background-color: #107e3e;
+  background-color: var(--sapSuccessColor,#107e3e)
+}
+.fd-tabs__item--information .fd-tabs__icon {
+  color: #0a6ed1;
+  color: var(--sapInformationColor,#0a6ed1);
+  border-color: #0a6ed1;
+  border-color: var(--sapInformationColor,#0a6ed1)
+}
+.fd-tabs__item--information .fd-tabs__link .fd-tabs__tag {
+  color: #0a6ed1;
+  color: var(--sapInformationColor,#0a6ed1)
+}
+.fd-tabs__item--information .fd-tabs__link.is-selected .fd-tabs__icon,
+.fd-tabs__item--information .fd-tabs__link[aria-selected=true] .fd-tabs__icon {
+  color: #fff;
+  color: var(--sapContent_ContrastIconColor,#fff);
+  background-color: #0a6ed1;
+  background-color: var(--sapInformationColor,#0a6ed1)
+}
+.fd-tabs__item--information .fd-tabs__link.is-selected .fd-tabs__icon::after,
+.fd-tabs__item--information .fd-tabs__link.is-selected .fd-tabs__tag::after,
+.fd-tabs__item--information .fd-tabs__link.is-selected::after,
+.fd-tabs__item--information .fd-tabs__link[aria-selected=true] .fd-tabs__icon::after,
+.fd-tabs__item--information .fd-tabs__link[aria-selected=true] .fd-tabs__tag::after,
+.fd-tabs__item--information .fd-tabs__link[aria-selected=true]::after {
+  background-color: #0a6ed1;
+  background-color: var(--sapInformationColor,#0a6ed1)
+}
+.fd-tabs__item--neutral .fd-tabs__icon {
+  color: #6a6d70;
+  color: var(--sapNeutralColor,#6a6d70);
+  border-color: #6a6d70;
+  border-color: var(--sapNeutralColor,#6a6d70)
+}
+.fd-tabs__item--neutral .fd-tabs__link .fd-tabs__tag {
+  color: #6a6d70;
+  color: var(--sapNeutralColor,#6a6d70)
+}
+.fd-tabs__item--neutral .fd-tabs__link.is-selected .fd-tabs__icon,
+.fd-tabs__item--neutral .fd-tabs__link[aria-selected=true] .fd-tabs__icon {
+  color: #fff;
+  color: var(--sapContent_ContrastIconColor,#fff);
+  background-color: #6a6d70;
+  background-color: var(--sapNeutralColor,#6a6d70)
+}
+.fd-tabs__item--neutral .fd-tabs__link.is-selected .fd-tabs__icon::after,
+.fd-tabs__item--neutral .fd-tabs__link.is-selected .fd-tabs__tag::after,
+.fd-tabs__item--neutral .fd-tabs__link.is-selected::after,
+.fd-tabs__item--neutral .fd-tabs__link[aria-selected=true] .fd-tabs__icon::after,
+.fd-tabs__item--neutral .fd-tabs__link[aria-selected=true] .fd-tabs__tag::after,
+.fd-tabs__item--neutral .fd-tabs__link[aria-selected=true]::after {
+  background-color: #6a6d70;
+  background-color: var(--sapNeutralColor,#6a6d70)
+}
+.fd-tabs__item:last-child {
+  margin-right: 0
+}
+.fd-tabs__item:last-child .fd-tabs__link {
+  padding-right: 0
+}
+.fd-tabs__item:first-child {
+  margin-left: 0
+}
+.fd-tabs__item:first-child .fd-tabs__link {
+  padding-left: 0
+}
+.fd-tabs__icon {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 2.625rem;
+  height: 2.625rem;
+  border: .0625rem solid #0854a0;
+  border: .0625rem solid var(--sapSelectedColor,#0854a0);
+  color: #0854a0;
+  color: var(--sapSelectedColor,#0854a0);
+  border-radius: 50%;
+  background-color: transparent;
+  position: relative;
+  margin: 0 .188rem;
+  position: relative
+}
+.fd-tabs__icon::after,
+.fd-tabs__icon::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tabs__icon::before {
+  font-size: 1.125rem
+}
+.fd-tabs__icon::after {
   -webkit-transition: all 125ms ease-in;
   transition: all 125ms ease-in;
   content: "";
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: -.875rem;
+  left: -.1875rem;
   display: inline-block;
-  height: 3px;
-  width: 100%;
-  background-color: transparent;
-  border-radius: 4px 4px 0 0
+  height: .1875rem;
+  width: calc(100% + .375rem);
+  border-radius: .125rem .125rem 0 0
 }
-.fd-tabs__link .is-hover,
-.fd-tabs__link:hover {
-  color: #0254a7;
-  color: var(--fd-color-action-selected,#0254a7)
+.fd-tabs__tag {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: relative;
+  line-height: 1rem
 }
-.fd-tabs__link.is-selected,
-.fd-tabs__link[aria-selected=true] {
-  color: #0a6ed1;
-  color: var(--fd-color-action-1,#0a6ed1)
+.fd-tabs__tag::after,
+.fd-tabs__tag::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
 }
-.fd-tabs__link.is-selected::after,
-.fd-tabs__link[aria-selected=true]::after {
-  background-color: #0a6ed1;
-  background-color: var(--fd-tabs-link-border-color,#0a6ed1)
-}
-.fd-tabs__link.is-disabled,
-.fd-tabs__link:disabled,
-.fd-tabs__link[aria-disabled=true] {
-  color: var(--fd-color-action-disabled,rgba(10,110,209,.4));
-  cursor: not-allowed
+.fd-tabs__tag::after {
+  -webkit-transition: all 125ms ease-in;
+  transition: all 125ms ease-in;
+  content: "";
+  position: absolute;
+  bottom: -.875rem;
+  left: -.1875rem;
+  display: inline-block;
+  height: .1875rem;
+  width: calc(100% + .375rem);
+  border-radius: .125rem .125rem 0 0
 }
 .fd-tabs__panel {
   font-size: .875rem;
@@ -17454,6 +17797,415 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
 .fd-tabs__panel.is-expanded,
 .fd-tabs__panel[aria-expanded=true] {
   display: block
+}
+.fd-tabs__counter-header {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #6a6d70;
+  color: var(--sapContent_LabelColor,#6a6d70);
+  padding-right: .5rem
+}
+.fd-tabs__counter-header::after,
+.fd-tabs__counter-header::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tabs__overflow {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin-left: auto
+}
+.fd-tabs__overflow::after,
+.fd-tabs__overflow::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tabs__overflow::before {
+  font-family: SAP-icons;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none
+}
+.fd-tabs__overflow::before {
+  content: ""
+}
+.fd-tabs__overflow::before {
+  font-size: 16px;
+  line-height: 1
+}
+.fd-tabs__process-icon {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: #6a6d70;
+  color: var(--sapContent_NonInteractiveIconColor,#6a6d70);
+  padding: 0 .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+  line-height: 1
+}
+.fd-tabs__process-icon::after,
+.fd-tabs__process-icon::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tabs__process-icon::before {
+  font-family: SAP-icons;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none
+}
+.fd-tabs__process-icon::before {
+  content: ""
+}
+.fd-tabs__process-icon::before {
+  font-size: 16px;
+  line-height: 1
+}
+.fd-tabs__label {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: block;
+  padding-left: .125rem;
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem);
+  color: #6a6d70;
+  color: var(--sapContent_LabelColor,#6a6d70);
+  max-width: 100%
+}
+.fd-tabs__label::after,
+.fd-tabs__label::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tabs__label:first-child {
+  padding-bottom: .375rem
+}
+.fd-tabs__separator {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 2rem;
+  border-right: solid #d9d9d9;
+  border-right: solid var(--sapGroup_TitleBorderColor,#d9d9d9);
+  border-right-width: .0625rem;
+  line-height: 2rem;
+  margin: 0 .25rem
+}
+.fd-tabs__separator::after,
+.fd-tabs__separator::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tabs__header {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-tabs__header::after,
+.fd-tabs__header::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tabs__header .fd-tabs__label {
+  max-width: 4rem
+}
+.fd-tabs--filter .fd-tabs__count,
+.fd-tabs--icon-only .fd-tabs__count,
+.fd-tabs--process .fd-tabs__count {
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem)
+}
+.fd-tabs--icon-only .fd-tabs__link,
+.fd-tabs--process .fd-tabs__link {
+  padding-top: 1rem;
+  padding-bottom: 1rem
+}
+.fd-tabs--icon-only .fd-tabs__icon::after,
+.fd-tabs--process .fd-tabs__icon::after {
+  bottom: -1.0625rem
+}
+.fd-tabs--filter .fd-tabs__count,
+.fd-tabs--icon-only .fd-tabs__count {
+  position: absolute;
+  left: calc(100% + .1875rem);
+  top: 0
+}
+.fd-tabs--process .fd-tabs__item {
+  margin: 0 .25rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-tabs--process .fd-tabs__link {
+  padding-left: 0;
+  padding-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-tabs--process .fd-tabs__icon {
+  margin: 0 .1875rem
+}
+.fd-tabs--process .fd-tabs__overflow::before {
+  font-family: SAP-icons;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none
+}
+.fd-tabs--process .fd-tabs__overflow::before {
+  content: ""
+}
+.fd-tabs--process .fd-tabs__overflow::before {
+  font-size: 16px;
+  line-height: 1
+}
+.fd-tabs--process .fd-tabs__label {
+  white-space: nowrap;
+  max-width: 7.5rem;
+  line-height: .875rem;
+  overflow: hidden
+}
+.fd-tabs--filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-tabs--filter .fd-tabs__item {
+  width: 5.375rem;
+  padding: 0 .25rem;
+  margin: 0
+}
+.fd-tabs--filter .fd-tabs__item--header {
+  width: auto
+}
+.fd-tabs--filter .fd-tabs__icon {
+  margin-bottom: .375rem
+}
+.fd-tabs--filter .fd-tabs__icon::after {
+  content: none
+}
+.fd-tabs--filter .fd-tabs__label {
+  line-height: .875rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+.fd-tabs--filter .fd-tabs__link {
+  height: 5.5rem;
+  padding: .875rem .188rem .625rem .188rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative
+}
+.fd-tabs--filter .fd-tabs__link::after {
+  -webkit-transition: all 125ms ease-in;
+  transition: all 125ms ease-in;
+  content: "";
+  position: absolute;
+  bottom: -.875rem;
+  left: -.1875rem;
+  display: inline-block;
+  height: .1875rem;
+  width: calc(100% + .375rem);
+  border-radius: .125rem .125rem 0 0;
+  bottom: 0
+}
+.fd-tabs--filter .fd-tabs__link.is-focus,
+.fd-tabs--filter .fd-tabs__link:focus {
+  -webkit-box-shadow: 0 0 0 1px #085caf;
+  -webkit-box-shadow: 0 0 0 1px var(--fd-color-action-focus,#085caf);
+  box-shadow: 0 0 0 1px #085caf;
+  box-shadow: 0 0 0 1px var(--fd-color-action-focus,#085caf);
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0
+}
+.fd-tabs--filter .fd-tabs__link.is-focus .fd-tabs__header,
+.fd-tabs--filter .fd-tabs__link.is-focus .fd-tabs__icon,
+.fd-tabs--filter .fd-tabs__link:focus .fd-tabs__header,
+.fd-tabs--filter .fd-tabs__link:focus .fd-tabs__icon {
+  outline-offset: 0;
+  outline: .0625rem dotted #000;
+  outline: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#000)
+}
+.fd-tabs--compact .fd-tabs__icon {
+  font-size: 1rem;
+  width: 1.875rem;
+  height: 1.875rem
+}
+.fd-tabs--compact .fd-tabs__icon::before {
+  font-size: 1rem
+}
+.fd-tabs--compact .fd-tabs__label:first-child {
+  padding-bottom: .25rem
+}
+.fd-tabs--compact.fd-tabs--filter .fd-tabs__link {
+  height: 4.75rem
+}
+.fd-tabs--s {
+  padding: 0 1rem
+}
+.fd-tabs--l,
+.fd-tabs--m {
+  padding: 0 2rem
+}
+.fd-tabs--xl,
+.fd-tabs--xxl {
+  padding: 0 3rem
+}
+.fd-tabs__process {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+.fd-tabs__process::after,
+.fd-tabs__process::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
 }
 .fd-time {
   font-size: .875rem;
@@ -17537,11 +18289,11 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   font-size: inherit
 }
 /*!
-.fd-toggle+(--no-border)
-    .fd-toggle__content+()
-    .fd-toggle__title+()
+.fd-switch+(--no-border)
+    .fd-switch__content+()
+    .fd-switch__title+()
 */
-.fd-toggle {
+.fd-switch {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
   line-height: 1.42857;
@@ -17556,25 +18308,245 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   padding: 0;
   margin: 0;
   border: 0;
-  position: relative;
+  cursor: pointer;
   display: inline-block;
-  width: 52px;
-  height: 22px;
-  margin-right: 5px;
-  vertical-align: middle
+  padding: .375rem 0;
+  overflow: hidden
 }
-.fd-toggle::after,
-.fd-toggle::before {
+.fd-switch::after,
+.fd-switch::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-toggle[dir=rtl],
-[dir=rtl] .fd-toggle {
-  margin-left: 5px;
+.fd-switch__label {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  max-width: 100%;
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  color: #6a6d70;
+  color: var(--sapContent_LabelColor,#6a6d70);
+  padding-right: 6px;
+  margin-right: 8px;
+  cursor: text;
+  overflow: initial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0
+}
+.fd-switch__label::after,
+.fd-switch__label::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-switch__label[dir=rtl],
+[dir=rtl] .fd-switch__label {
+  padding-left: 6px;
+  padding-right: 0;
+  margin-left: 8px;
   margin-right: 0
 }
-.fd-toggle__input {
+.fd-switch__label.is-disabled {
+  opacity: .4
+}
+.fd-switch__wrapper {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: #ededed;
+  position: relative;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 3.75rem;
+  height: 1.25rem;
+  border: .0625rem solid #89919a;
+  border: var(--sapButton_BorderWidth,.0625rem) solid var(--sapContent_ForegroundBorderColor,#89919a);
+  -webkit-transition: all .1s;
+  transition: all .1s;
+  border-radius: .75rem
+}
+.fd-switch__wrapper::after,
+.fd-switch__wrapper::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-switch__track {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: calc(1.8125rem - 100%);
+  -webkit-transition: all .1s;
+  transition: all .1s;
+  min-width: 4.25rem
+}
+.fd-switch__track::after,
+.fd-switch__track::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-switch__text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem);
+  line-height: 1.375rem;
+  display: block;
+  width: 1.75rem;
+  text-transform: uppercase;
+  text-align: center
+}
+.fd-switch__text::after,
+.fd-switch__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-switch__icon {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: .75rem
+}
+.fd-switch__icon::after,
+.fd-switch__icon::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-switch__icon--off {
+  color: #b00;
+  color: var(--sapNegativeElementColor,#b00)
+}
+.fd-switch__icon--on {
+  color: #107e3e;
+  color: var(--sapPositiveElementColor,#107e3e)
+}
+.fd-switch__icon--on,
+.fd-switch__text--on {
+  margin: 0 0 0 .125rem
+}
+.fd-switch__icon--off,
+.fd-switch__text--off {
+  margin: 0 .125rem 0 0
+}
+.fd-switch__handle {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  border: .0625rem solid #89919a;
+  border: var(--sapButton_BorderWidth,.0625rem) solid var(--sapContent_ForegroundBorderColor,#89919a);
+  background-color: #fff;
+  background-color: var(--sapButton_Background,#fff);
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 1rem;
+  background-clip: padding-box
+}
+.fd-switch__handle::after,
+.fd-switch__handle::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-switch__input {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
   line-height: 1.42857;
@@ -17591,338 +18563,206 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   border: 0;
   opacity: 0;
   width: 0;
-  height: 0
+  height: 0;
+  position: absolute
 }
-.fd-toggle__input::after,
-.fd-toggle__input::before {
+.fd-switch__input::after,
+.fd-switch__input::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-toggle__input::after,
-.fd-toggle__input::before {
+.fd-switch__input::after,
+.fd-switch__input::before {
   display: none
 }
-.fd-toggle__input:hover {
+.fd-switch__input:active,
+.fd-switch__input:hover {
   border-color: transparent
 }
-.fd-toggle__input:active,
-.fd-toggle__input:focus {
-  border-color: transparent
-}
-.fd-toggle__input.is-disabled,
-.fd-toggle__input[disabled] {
-  opacity: 0;
-  background-color: #ededee;
-  border-color: rgba(137,145,154,.4)
-}
-.fd-toggle__input.is-disabled + .fd-toggle__switch,
-.fd-toggle__input[disabled] + .fd-toggle__switch {
-  opacity: 1;
-  border-color: rgba(137,145,154,.4);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  background-color: #ededee;
-  pointer-events: none
-}
-.fd-toggle__input.is-disabled + .fd-toggle__switch::before,
-.fd-toggle__input[disabled] + .fd-toggle__switch::before {
-  border-color: rgba(137,145,154,.4)
-}
-.fd-toggle__input:checked.is-disabled + .fd-toggle__switch,
-.fd-toggle__input:checked[disabled] + .fd-toggle__switch {
-  border-color: transparent;
-  background-color: #c5dcf2;
-  pointer-events: none
-}
-.fd-toggle__input:checked.is-disabled + .fd-toggle__switch::before,
-.fd-toggle__input:checked[disabled] + .fd-toggle__switch::before {
-  border-color: transparent;
-  background-color: #9ebbd8
-}
-.fd-toggle__switch {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.42857;
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #89919a;
-  border-color: var(--fd-color-neutral-4,#89919a);
-  background-color: #d9d9d9;
-  background-color: var(--fd-color-neutral-3,#d9d9d9);
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  border-radius: 34px
-}
-.fd-toggle__switch::after,
-.fd-toggle__switch::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
-}
-.fd-toggle__switch:hover {
-  border-color: #0254a7;
-  border-color: var(--fd-color-action-selected,#0254a7)
-}
-.fd-toggle__switch:hover::before {
-  border-color: #0254a7;
-  border-color: var(--fd-color-action-selected,#0254a7);
-  background-color: #ebf5fe
-}
-.fd-toggle__switch::before {
-  position: absolute;
-  content: "";
-  height: 32px;
-  width: 32px;
-  left: -1px;
-  top: -6px;
-  background-color: white;
-  background-color: var(--fd-color-background-2,#fff);
-  border-style: solid;
-  border-width: 1px;
-  border-color: #89919a;
-  border-color: var(--fd-color-neutral-4,#89919a);
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  border-radius: 50%;
-  z-index: 1;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2)
-}
-.fd-toggle__input:checked + .fd-toggle__switch {
-  background-color: rgba(10,110,209,.6);
-  border-color: #0254a7;
-  border-color: var(--fd-color-action-selected,#0254a7)
-}
-.fd-toggle__input:checked + .fd-toggle__switch::before {
-  background-color: #0254a7;
-  background-color: var(--fd-color-action-selected,#0254a7);
-  border-color: #0254a7;
-  border-color: var(--fd-color-action-selected,#0254a7);
+.fd-switch.is-disabled,
+.fd-switch:disabled,
+.fd-switch[aria-disabled=true] {
   pointer-events: none;
-  left: calc(100% - 31px)
+  opacity: .4
 }
-.fd-toggle--xs {
-  height: 14px;
-  width: 36px
-}
-.fd-toggle--xs .fd-toggle__switch::before {
-  height: 20px;
-  width: 20px;
-  top: -4.5px
-}
-.fd-toggle--xs input:checked + .fd-toggle__switch::before {
-  left: 15px
-}
-.fd-toggle--s {
-  height: 17px;
-  width: 40px
-}
-.fd-toggle--s .fd-toggle__switch::before {
-  height: 24px;
-  width: 24px;
-  top: -5px
-}
-.fd-toggle--s input:checked + .fd-toggle__switch::before {
-  left: 15px
-}
-.fd-toggle--compact {
-  height: 16px;
-  width: 40px
-}
-.fd-toggle--compact .fd-toggle__switch::before {
-  height: 26px;
-  width: 26px;
-  top: -6px
-}
-.fd-toggle--compact input:checked + .fd-toggle__switch::before {
-  left: 13px
-}
-.fd-toggle--l {
-  height: 22px;
-  width: 56px
-}
-.fd-toggle--l .fd-toggle__switch::before {
-  height: 32px;
-  width: 32px;
-  top: -6px
-}
-.fd-toggle--l input:checked + .fd-toggle__switch::before {
-  left: 23px
-}
-.fd-toggle--label,
-.fd-toggle--semantic {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.42857;
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  width: 62px;
-  height: 22px
-}
-.fd-toggle--label::after,
-.fd-toggle--label::before,
-.fd-toggle--semantic::after,
-.fd-toggle--semantic::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
-}
-.fd-toggle--label .fd-toggle__label--on,
-.fd-toggle--semantic .fd-toggle__label--on {
-  visibility: hidden
-}
-.fd-toggle--label.fd-toggle--compact,
-.fd-toggle--semantic.fd-toggle--compact {
-  width: 56px
-}
-.fd-toggle--label.fd-toggle--compact .fd-toggle__switch::before,
-.fd-toggle--semantic.fd-toggle--compact .fd-toggle__switch::before {
-  top: -3px
-}
-.fd-toggle--label .fd-toggle__input:checked + .fd-toggle__switch::before,
-.fd-toggle--semantic .fd-toggle__input:checked + .fd-toggle__switch::before {
-  left: calc(100% - 31px)
-}
-.fd-toggle--label .fd-toggle__input:checked + .fd-toggle__switch .fd-toggle__label--off,
-.fd-toggle--semantic .fd-toggle__input:checked + .fd-toggle__switch .fd-toggle__label--off {
-  visibility: hidden
-}
-.fd-toggle--label .fd-toggle__input:checked + .fd-toggle__switch .fd-toggle__label--on,
-.fd-toggle--semantic .fd-toggle__input:checked + .fd-toggle__switch .fd-toggle__label--on {
-  visibility: visible
-}
-.fd-toggle--label.fd-toggle--compact .fd-toggle__input:checked + .fd-toggle__switch::before,
-.fd-toggle--semantic.fd-toggle--compact .fd-toggle__input:checked + .fd-toggle__switch::before {
-  left: calc(100% - 25px)
-}
-.fd-toggle__label {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.42857;
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0
-}
-.fd-toggle__label::after,
-.fd-toggle__label::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
-}
-.fd-toggle__label--off {
-  font-size: 12px;
-  line-height: 1.33333;
-  font-weight: 400;
+.fd-switch__input:focus + .fd-switch__wrapper::before {
   position: absolute;
-  right: 6px;
-  top: 3px
+  display: block;
+  outline-offset: -.0625rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted);
+  content: '';
+  top: -.375rem;
+  bottom: -.375rem;
+  left: -.0625rem;
+  right: -.0625rem
 }
-.fd-toggle__label--on {
-  font-size: 12px;
-  line-height: 1.33333;
-  font-weight: 400;
-  position: absolute;
-  left: 8px;
-  top: 3px
+.fd-switch__input:checked + .fd-switch__wrapper {
+  background-color: #ebf5fe;
+  border-color: #0854a0;
+  border-color: var(--sapButton_Selected_BorderColor,#0854a0)
 }
-.fd-toggle--semantic .fd-toggle__switch {
+.fd-switch__input:checked + .fd-switch__wrapper .fd-switch__handle {
+  background-color: #0854a0;
+  background-color: var(--sapButton_Selected_Background,#0854a0);
+  border-color: #0854a0;
+  border-color: var(--sapButton_Selected_BorderColor,#0854a0)
+}
+.fd-switch__input:checked + .fd-switch__wrapper .fd-switch__track {
+  right: -2rem;
+  left: -.1875rem
+}
+.fd-switch[dir=rtl] .fd-switch__icon--on,
+.fd-switch[dir=rtl] .fd-switch__text--on,
+[dir=rtl] .fd-switch .fd-switch__icon--on,
+[dir=rtl] .fd-switch .fd-switch__text--on {
+  margin: 0 .125rem 0 0
+}
+.fd-switch[dir=rtl] .fd-switch__icon--off,
+.fd-switch[dir=rtl] .fd-switch__text--off,
+[dir=rtl] .fd-switch .fd-switch__icon--off,
+[dir=rtl] .fd-switch .fd-switch__text--off {
+  margin: 0 0 0 .125rem
+}
+.fd-switch[dir=rtl] .fd-switch__track,
+[dir=rtl] .fd-switch .fd-switch__track {
+  left: -.1875rem;
+  right: -2rem
+}
+.fd-switch[dir=rtl] .fd-switch__input:checked + .fd-switch__wrapper .fd-switch__track,
+[dir=rtl] .fd-switch .fd-switch__input:checked + .fd-switch__wrapper .fd-switch__track {
+  left: calc(1.688rem - 100%);
+  right: -.1875rem
+}
+.fd-switch.is-hover .fd-switch__wrapper,
+.fd-switch:hover .fd-switch__wrapper {
+  border-color: #0854a0;
+  border-color: var(--sapButton_Hover_BorderColor,#0854a0)
+}
+.fd-switch.is-hover .fd-switch__handle,
+.fd-switch:hover .fd-switch__handle {
+  border-color: #0854a0;
+  border-color: var(--sapButton_Hover_BorderColor,#0854a0);
+  background-color: #ebf5fe;
+  background-color: var(--sapButton_Hover_Background,#ebf5fe)
+}
+.fd-switch.is-hover .fd-switch:checked + .fd-switch__wrapper,
+.fd-switch:hover .fd-switch:checked + .fd-switch__wrapper {
+  border-color: #095caf;
+  border-color: var(--sapButton_Selected_Hover_BorderColor,#095caf)
+}
+.fd-switch.is-hover .fd-switch:checked + .fd-switch__wrapper .fd-switch__handle,
+.fd-switch:hover .fd-switch:checked + .fd-switch__wrapper .fd-switch__handle {
+  border-color: #095caf;
+  border-color: var(--sapButton_Selected_Hover_BorderColor,#095caf);
+  background-color: #095caf;
+  background-color: var(--sapButton_Selected_Hover_Background,#095caf)
+}
+.fd-switch--compact {
+  padding: .1875rem 0
+}
+.fd-switch--compact .fd-switch__handle {
+  width: 1.5rem;
+  height: 1.5rem
+}
+.fd-switch--compact .fd-switch__wrapper {
+  width: 3.375rem;
+  height: 1.25rem
+}
+.fd-switch--compact .fd-switch__track {
+  left: calc(1.438rem - 100%);
+  min-width: 3.125rem
+}
+.fd-switch--compact .fd-switch__input:focus + .fd-switch__wrapper::before {
+  top: -.1875rem;
+  bottom: -.1875rem
+}
+.fd-switch--compact[dir=rtl] .fd-switch__input:checked + .fd-switch__wrapper .fd-switch__track,
+[dir=rtl] .fd-switch--compact .fd-switch__input:checked + .fd-switch__wrapper .fd-switch__track {
+  left: calc(1.3125rem - 100%)
+}
+.fd-switch--no-text .fd-switch__wrapper {
+  width: 3.125rem;
+  height: 1.25rem
+}
+.fd-switch--no-text .fd-switch__track {
+  right: 0
+}
+.fd-switch--no-text .fd-switch__input:checked + .fd-switch__wrapper .fd-switch__track {
+  left: .0625rem;
+  right: 1rem
+}
+.fd-switch--no-text.fd-switch--compact {
+  padding: .25rem 0
+}
+.fd-switch--no-text.fd-switch--compact .fd-switch__wrapper {
+  width: 2.375rem;
+  height: 1rem
+}
+.fd-switch--no-text.fd-switch--compact .fd-switch__input:focus + .fd-switch__wrapper::before {
+  top: -.3125rem;
+  bottom: -.3125rem
+}
+.fd-switch--no-text.fd-switch--compact[dir=rtl] .fd-switch__track,
+[dir=rtl] .fd-switch--no-text.fd-switch--compact .fd-switch__track {
+  right: -1rem
+}
+.fd-switch--no-text[dir=rtl] .fd-switch__track,
+[dir=rtl] .fd-switch--no-text .fd-switch__track {
+  right: -1.4375rem
+}
+.fd-switch--no-text[dir=rtl] .fd-switch__input:checked + .fd-switch__wrapper .fd-switch__track,
+[dir=rtl] .fd-switch--no-text .fd-switch__input:checked + .fd-switch__wrapper .fd-switch__track {
+  right: .0625rem;
+  left: 0
+}
+.fd-switch--semantic .fd-switch__wrapper {
+  border-color: #b00;
+  border-color: var(--sapErrorBorderColor,#b00);
   background-color: #ffebeb;
-  background-color: var(--fd-color-background-5,#ffebeb);
-  border-color: #bb0000;
-  border-color: var(--fd-color-status-3,#b00)
+  background-color: var(--sapErrorBackground,#ffebeb)
 }
-.fd-toggle--semantic .fd-toggle__switch::before {
-  background-color: #bb0000;
-  background-color: var(--fd-color-status-3,#b00);
-  border-color: #bb0000;
-  border-color: var(--fd-color-status-3,#b00)
+.fd-switch--semantic .fd-switch__handle {
+  background-color: #fff;
+  background-color: var(--sapButton_Background,#fff);
+  border-color: #b00;
+  border-color: var(--sapErrorBorderColor,#b00)
 }
-.fd-toggle--semantic input:checked + .fd-toggle__switch {
+.fd-switch--semantic .fd-switch__input:checked + .fd-switch__wrapper {
   background-color: #f1fdf6;
-  background-color: var(--fd-color-background-3,#f1fdf6);
-  border-color: #0a7e3e;
-  border-color: var(--fd-color-status-1,#0a7e3e)
+  background-color: var(--sapSuccessBackground,#f1fdf6);
+  border-color: #107e3e;
+  border-color: var(--sapSuccessBorderColor,#107e3e)
 }
-.fd-toggle--semantic input:checked + .fd-toggle__switch::before {
-  background-color: #0a7e3e;
-  background-color: var(--fd-color-status-1,#0a7e3e);
-  border-color: #0a7e3e;
-  border-color: var(--fd-color-status-1,#0a7e3e)
+.fd-switch--semantic .fd-switch__input:checked + .fd-switch__wrapper .fd-switch__handle {
+  border-color: #107e3e;
+  border-color: var(--sapSuccessBorderColor,#107e3e);
+  background-color: #fff;
+  background-color: var(--sapButton_Background,#fff)
 }
-.fd-toggle__semantic--off {
-  font-size: 12px;
-  line-height: 1.33333;
-  font-weight: 400;
-  position: absolute;
-  right: 12px;
-  top: 2px;
-  color: #bb0000;
-  color: var(--fd-color-status-3,#b00)
+.fd-switch--semantic.is-hover .fd-switch__wrapper,
+.fd-switch--semantic:hover .fd-switch__wrapper {
+  border-color: #b00;
+  border-color: var(--sapErrorBorderColor,#b00)
 }
-.fd-toggle__semantic--off::before {
-  font-size: 12px;
-  line-height: 1.33333;
-  font-weight: 400
+.fd-switch--semantic.is-hover .fd-switch__handle,
+.fd-switch--semantic:hover .fd-switch__handle {
+  background-color: #ffebeb;
+  background-color: var(--sapErrorBackground,#ffebeb);
+  border-color: #b00;
+  border-color: var(--sapErrorBorderColor,#b00)
 }
-.fd-toggle__semantic--on {
-  font-size: 12px;
-  line-height: 1.33333;
-  font-weight: 400;
-  position: absolute;
-  left: 12px;
-  top: 2px;
-  color: #0a7e3e;
-  color: var(--fd-color-status-1,#0a7e3e)
+.fd-switch--semantic.is-hover .fd-switch__input:checked + .fd-switch__wrapper .fd-switch__handle,
+.fd-switch--semantic:hover .fd-switch__input:checked + .fd-switch__wrapper .fd-switch__handle {
+  background-color: #f1fdf6;
+  background-color: var(--sapSuccessBackground,#f1fdf6)
 }
-.fd-toggle__semantic--on::before {
-  font-size: 12px;
-  line-height: 1.33333;
-  font-weight: 400
-}
-/*!
-.fd-token+(--no-border)
-    .fd-token__content+()
-    .fd-token__title+()
-*/
 .fd-token {
-  --fd-token-color: var(--fd-color-text-2, #51555a);
-  --fd-token-background-color: var(--fd-color-neutral-1, #fafafa);
-  --fd-token-border-color: var(--fd-color-neutral-3, #d9d9d9);
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
   line-height: 1.42857;
@@ -17937,23 +18777,30 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   padding: 0;
   margin: 0;
   border: 0;
-  font-size: 12px;
-  line-height: 1.33333;
-  font-weight: 400;
-  color: #51555a;
-  color: var(--fd-token-color,#51555a);
-  background-color: #fafafa;
-  background-color: var(--fd-token-background-color,#fafafa);
-  line-height: 24px;
-  vertical-align: middle;
-  display: inline-block;
-  padding-left: 8px;
-  padding-right: 8px;
+  background-color: #fff;
+  background-color: var(--sapButton_Background,#fff);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: .3125rem;
   border-radius: 4px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #d9d9d9;
-  border-color: var(--fd-token-border-color,#d9d9d9)
+  white-space: nowrap;
+  max-width: 100%;
+  text-overflow: clip;
+  height: 1.625rem;
+  line-height: 1.5rem;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  border: .0625rem solid #0854a0;
+  border: var(--sapButton_BorderWidth,.0625rem) solid var(--sapButton_BorderColor,#0854a0)
 }
 .fd-token::after,
 .fd-token::before {
@@ -17961,7 +18808,56 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-token::after {
+.fd-token__text {
+  overflow: hidden;
+  max-width: 100%;
+  min-width: auto;
+  width: 100%;
+  text-overflow: ellipsis
+}
+.fd-token__close {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.42857;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem);
+  color: #0854a0;
+  color: var(--sapContent_IconColor,#0854a0);
+  padding: 0 .5rem;
+  width: 1.75rem;
+  min-width: 1.75rem;
+  height: 1.625rem;
+  background-color: transparent;
+  line-height: 1.25rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.fd-token__close::after,
+.fd-token__close::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-token__close::before {
   font-family: SAP-icons;
   font-style: normal;
   font-weight: 400;
@@ -17975,63 +18871,183 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   -moz-osx-font-smoothing: grayscale;
   speak: none
 }
-.fd-token::after {
+.fd-token__close::before {
   content: ""
 }
-.fd-token::after {
+.fd-token__close::before {
   font-size: 12px;
   line-height: 1
 }
-.fd-token::after {
-  color: #0a6ed1;
-  color: var(--fd-color-action-1,#0a6ed1);
-  margin-left: 8px;
-  vertical-align: bottom;
-  line-height: 24px;
-  cursor: pointer
+.fd-token__close.is-focus,
+.fd-token__close:focus {
+  -webkit-box-shadow: 0 0 0 1px #085caf;
+  -webkit-box-shadow: 0 0 0 1px var(--fd-color-action-focus,#085caf);
+  box-shadow: 0 0 0 1px #085caf;
+  box-shadow: 0 0 0 1px var(--fd-color-action-focus,#085caf);
+  z-index: 5;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
 }
-.fd-token[dir=rtl]::before,
-[dir=rtl] .fd-token::before {
-  font-family: SAP-icons;
-  font-style: normal;
-  font-weight: 400;
-  text-align: center;
-  font-size: 14px;
-  display: inline-block;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  speak: none
+.fd-token:hover {
+  background-color: #ebf5fe;
+  background-color: var(--sapButton_Hover_Background,#ebf5fe);
+  border-color: #0854a0;
+  border-color: var(--sapButton_Hover_BorderColor,#0854a0)
 }
-.fd-token[dir=rtl]::before,
-[dir=rtl] .fd-token::before {
-  content: ""
+.fd-token.is-focus,
+.fd-token:focus {
+  -webkit-box-shadow: 0 0 0 1px #085caf;
+  -webkit-box-shadow: 0 0 0 1px var(--fd-color-action-focus,#085caf);
+  box-shadow: 0 0 0 1px #085caf;
+  box-shadow: 0 0 0 1px var(--fd-color-action-focus,#085caf);
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.1875rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
 }
-.fd-token[dir=rtl]::before,
-[dir=rtl] .fd-token::before {
-  font-size: 12px;
-  line-height: 1
+.fd-token--compact {
+  padding-left: .25rem;
+  height: 1.25rem;
+  line-height: 1.125rem
 }
-.fd-token[dir=rtl]::before,
-[dir=rtl] .fd-token::before {
-  color: #0a6ed1;
-  color: var(--fd-color-action-1,#0a6ed1);
-  margin-left: 8px;
-  vertical-align: bottom;
-  line-height: 24px;
-  cursor: pointer
+.fd-token--compact .fd-token__close {
+  padding: 0 .25rem;
+  vertical-align: baseline;
+  width: 1.25rem;
+  min-width: 1.25rem;
+  height: 1.25rem
 }
-.fd-token[dir=rtl]::before,
-[dir=rtl] .fd-token::before {
-  display: inline;
-  margin-left: 0;
-  margin-right: 8px
+.fd-token--selected {
+  color: #fff;
+  color: var(--sapButton_Selected_TextColor,#fff);
+  background-color: #0854a0;
+  background-color: var(--sapButton_Selected_Background,#0854a0);
+  border-color: #0854a0;
+  border-color: var(--sapButton_Selected_BorderColor,#0854a0)
 }
-.fd-token[dir=rtl]::after,
-[dir=rtl] .fd-token::after {
-  content: none
+.fd-token--selected .fd-token__close {
+  color: #fff;
+  color: var(--sapButton_Selected_TextColor,#fff)
+}
+.fd-token--selected:hover {
+  background-color: #095caf;
+  background-color: var(--sapButton_Selected_Hover_Background,#095caf);
+  border-color: #095caf;
+  border-color: var(--sapButton_Selected_Hover_BorderColor,#095caf)
+}
+.fd-token--selected.is-focus,
+.fd-token--selected:focus {
+  -webkit-box-shadow: 0 0 0 1px #085caf;
+  -webkit-box-shadow: 0 0 0 1px var(--fd-color-action-focus,#085caf);
+  box-shadow: 0 0 0 1px #085caf;
+  box-shadow: 0 0 0 1px var(--fd-color-action-focus,#085caf);
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.1875rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted);
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+}
+.fd-token--readonly {
+  color: #6a6d70;
+  color: var(--sapContent_LabelColor,#6a6d70);
+  padding: 0 .3125rem
+}
+.fd-token--readonly.fd-token--compact {
+  padding: 0 .25rem
+}
+.fd-tokenizer {
+  width: 100%;
+  background-color: #fff;
+  background-color: var(--sapField_Background,#fff);
+  padding-left: .3125rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-tokenizer__inner {
+  float: right;
+  white-space: nowrap;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end
+}
+.fd-tokenizer .fd-token {
+  margin-right: .3125rem
+}
+.fd-tokenizer__input {
+  width: 100%;
+  border: none;
+  min-width: 3rem;
+  padding: 0 .3125rem 0 0
+}
+.fd-tokenizer__input.is-focus,
+.fd-tokenizer__input:focus {
+  -webkit-box-shadow: 0 0 0 1px #085caf;
+  -webkit-box-shadow: 0 0 0 1px var(--fd-color-action-focus,#085caf);
+  box-shadow: 0 0 0 1px #085caf;
+  box-shadow: 0 0 0 1px var(--fd-color-action-focus,#085caf);
+  z-index: 5;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none
+}
+.fd-tokenizer.is-focus,
+.fd-tokenizer:focus {
+  -webkit-box-shadow: 0 0 0 1px #085caf;
+  -webkit-box-shadow: 0 0 0 1px var(--fd-color-action-focus,#085caf);
+  box-shadow: 0 0 0 1px #085caf;
+  box-shadow: 0 0 0 1px var(--fd-color-action-focus,#085caf);
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  outline-offset: -.0625rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-tokenizer--compact {
+  padding-left: .25rem
+}
+.fd-tokenizer--compact .fd-tokenizer__input {
+  min-width: 2rem;
+  padding: 0 .25rem 0 0
+}
+.fd-tokenizer--compact .fd-token {
+  margin-right: .25rem
+}
+.fd-tokenizer .fd-tokenizer__input:last-child {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%
 }
 /*!
 .fd-input-group+(--inline)
@@ -18072,7 +19088,7 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-input-group .is-hover,
+.fd-input-group.is-hover,
 .fd-input-group:hover {
   background-color: #fff;
   background-color: var(--sapField_Hover_Background,#fff);
@@ -18086,7 +19102,7 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   border-color: var(--sapField_SuccessColor,#107e3e);
   border-width: .0625rem
 }
-.fd-input-group.is-valid .is-hover,
+.fd-input-group.is-valid.is-hover,
 .fd-input-group.is-valid:hover {
   background-color: #fff;
   background-color: var(--sapField_SuccessBackground,#fff);
@@ -18099,7 +19115,7 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   border-color: #b00;
   border-color: var(--sapField_InvalidColor,#b00)
 }
-.fd-input-group.is-invalid .is-hover,
+.fd-input-group.is-invalid.is-hover,
 .fd-input-group.is-invalid:hover {
   background-color: #fff;
   background-color: var(--sapField_InvalidBackground,#fff);
@@ -18113,9 +19129,9 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   border-color: #e9730c;
   border-color: var(--sapField_WarningColor,#e9730c)
 }
-.fd-input-group.is-alert .is-hover,
+.fd-input-group.is-alert.is-hover,
 .fd-input-group.is-alert:hover,
-.fd-input-group.is-warning .is-hover,
+.fd-input-group.is-warning.is-hover,
 .fd-input-group.is-warning:hover {
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
@@ -18128,7 +19144,7 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
   border-color: #0a6ed1;
   border-color: var(--sapField_InformationColor,#0a6ed1)
 }
-.fd-input-group.is-information .is-hover,
+.fd-input-group.is-information.is-hover,
 .fd-input-group.is-information:hover {
   background-color: #fff;
   background-color: var(--sapField_InformationBackground,#fff);
@@ -18743,13 +19759,13 @@ Inspired by line scale spinner from Load Awesome v1.1.0 (http:// github.danielca
 .fd-shellbar__button[aria-selected=true] {
   background-color: #2a3341
 }
-.fd-shellbar__button .is-hover,
+.fd-shellbar__button.is-hover,
 .fd-shellbar__button:hover {
   background-color: #323d4d
 }
-.fd-shellbar__button .is-hover.is-disabled,
-.fd-shellbar__button .is-hover:disabled,
-.fd-shellbar__button .is-hover[aria-disabled=true],
+.fd-shellbar__button.is-hover.is-disabled,
+.fd-shellbar__button.is-hover:disabled,
+.fd-shellbar__button.is-hover[aria-disabled=true],
 .fd-shellbar__button:hover.is-disabled,
 .fd-shellbar__button:hover:disabled,
 .fd-shellbar__button:hover[aria-disabled=true] {
