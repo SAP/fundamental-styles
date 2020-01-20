@@ -4,7 +4,9 @@
   "properties": {
     "text": "lorem ipsum"
   },
-  "modifier": {},
+  "modifier": {
+    "block": ""
+  },
   "state": {
     "selected": false,
     "pressed": false,

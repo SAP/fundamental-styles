@@ -1,0 +1,47 @@
+{% import "./../utils.njk" as utils %}
+<!--
+switch:
+    properties={},
+    modifier={ block: [] },
+    state={},
+    aria={}
+-->
+{% macro switch(properties={}, modifier={}, state={}, aria={}, classes=[]) -%}
+{%- set _id = properties.id or utils.id() -%}
+{%- set semantic = 'false' -%}
+{%- set noLabel = 'false' -%}
+{%- for m in modifier.block -%}
+    {%- if m == 'semantic' -%}
+        {%- set semantic = 'true' -%}
+    {%- endif -%}
+    {%- if m == 'no-text' -%}
+        {%- set noLabel = 'true' -%}
+    {%- endif -%}
+{%- endfor -%}
+{%- if semantic == 'true' -%}
+    {%- set noLabel = 'true' -%}
+{%- endif -%}
+<span class="fd-switch{{ modifier.block | modifier('switch') }}{{ ' is-disabled' if state.disabled }}{{ classes | classes }}"{{ aria | aria }}>
+    <input class="fd-switch__input" type="checkbox" name="" value="" id="{{ _id }}"{{ ' disabled' if state.disabled }}{{ ' checked' if state.checked }}>
+    <div class="fd-switch__wrapper">
+        <div class="fd-switch__track">
+            {%- if noLabel =='false' -%}
+                <span class="fd-switch__text fd-switch__text--on">on</span>
+            {%- endif -%}
+            {%- if semantic =='true' -%}
+                <span class="fd-switch__text fd-switch__icon--on sap-icon--accept"></span>
+            {%- endif -%}
+            <span class="fd-switch__handle" role="presentation"></span>
+            {%- if noLabel =='false' -%}
+                <span class="fd-switch__text fd-switch__text--off">off</span>
+            {%- endif -%}
+            {%- if semantic =='true' -%}
+                <span class="fd-switch__text fd-switch__icon--off sap-icon--decline"></span>
+            {%- endif -%}
+        </div>
+    </div>
+</span>
+{%- if properties.inlineLabel -%}
+    <span class="test-label">{{properties.inlineLabel}}</span>
+{%- endif -%}
+{%- endmacro %}

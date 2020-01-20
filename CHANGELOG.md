@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.0-rc.0"></a>
+# [0.5.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.4.1...v0.5.0-rc.0) (2020-01-18)
+
+
+### Bug Fixes
+
+* Match link and breadcrumb to fiori3 ([#475](https://github.com/SAP/fundamental-styles/issues/475)) ([1e8be78](https://github.com/SAP/fundamental-styles/commit/1e8be78))
+* section lines added according to Fiori 3  ([#488](https://github.com/SAP/fundamental-styles/issues/488)) ([a04d6eb](https://github.com/SAP/fundamental-styles/commit/a04d6eb))
+* update modal docs to remove .modal-demo-bg ([#593](https://github.com/SAP/fundamental-styles/issues/593)) ([11b7208](https://github.com/SAP/fundamental-styles/commit/11b7208))
+
+
+### Features
+
+* Adjust tabs to fiori3 specification ([#471](https://github.com/SAP/fundamental-styles/issues/471)) ([f79aa7c](https://github.com/SAP/fundamental-styles/commit/f79aa7c))
+* toggle follow fiori3 ([#492](https://github.com/SAP/fundamental-styles/issues/492)) ([a4c40a3](https://github.com/SAP/fundamental-styles/commit/a4c40a3))
+
+
+
 <a name="0.4.1"></a>
 ## [0.4.1](https://github.com/SAP/fundamental-styles/compare/v0.4.1-rc.11...v0.4.1) (2020-01-16)
 

@@ -20,6 +20,33 @@
     {% endset %}
     {{ format(example) }}
 
+    {% set example %}
+
+    {{  breadcrumb(
+            properties={
+              "items": [
+					{
+						"label": "Link Text"
+					},
+					{
+						"label": "Link Text"
+					},
+					{
+						"label": "Link Text"
+					}
+				],
+				"overflow": "true"
+			},
+            modifier={
+                block: data.modifier.block
+            },
+            state=data.state,
+            aria=data.aria
+        )
+    }}
+    {% endset %}
+    {{ format(example) }}
+
 </div>
 
 {% endblock %}

@@ -625,13 +625,13 @@ body {
 	transition: all 0.3s ease;
 }
 
-.sap-icon--menu2::before {
+.header-section__sap-icon--menu2::before {
     font-size: 20px;
     transition: opacity .3s, transform .3s;
     color: $home-page-action-color;
 }
 
-.sap-icon--decline::before {
+.header-section__sap-icon--decline::before {
     font-size: 20px;
     transition: opacity .3s, transform .3s;
     transform: rotate(-180deg);
