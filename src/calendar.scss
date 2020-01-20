@@ -324,7 +324,7 @@ $fd-calendar-item-color--disabled: fd-color-state("disabled", "action") !default
     }
   }
 
-  //&__item {
+  // &__item {
   //  &--disabled,
   //  &.is-disabled {
   //    @extend %fd-calendar-item-disabled;
@@ -334,5 +334,5 @@ $fd-calendar-item-color--disabled: fd-color-state("disabled", "action") !default
   //  &.is-blocked {
   //    @extend %fd-calendar-item-blocked;
   //  }
-  //}
+  // }
 }
