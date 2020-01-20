@@ -55,13 +55,12 @@ $fd-calendar-item-range-background: var(--sapList_SelectionBackgroundColor) !def
 $fd-calendar-item-range-background-hover: var(--sapList_Hover_SelectionBackground) !default;
 $fd-calendar-item-range-border: solid 0.0625rem var(--sapList_SelectionBorderColor) !default;
 
-$fd-calendar-item-current-border: solid 0.125rem var(--sapAccentColor4) !default;
+$fd-calendar-item-current-border: solid medium var(--sapAccentColor4) !default;
 
 // TODO ?
 $fd-calendar-item-color--disabled: fd-color-state("disabled", "action") !default;
 
 %fd-calendar-item {
-  position: relative;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -191,7 +190,7 @@ $fd-calendar-item-color--disabled: fd-color-state("disabled", "action") !default
       justify-content: space-between;
 
       .#{$block}__action {
-        width: 100%;
+        flex-grow: 1;
         margin-left: $fd-calendar-action-padding / 2;
         margin-right: $fd-calendar-action-padding / 2;
 
@@ -200,11 +199,13 @@ $fd-calendar-item-color--disabled: fd-color-state("disabled", "action") !default
         }
 
         &--arrow-left {
+          flex-grow: 0;
           margin-left: 0;
           width: $fd-calendar-item-width;
         }
 
         &--arrow-right {
+          flex-grow: 0;
           margin-right: 0;
           width: $fd-calendar-item-width;
         }

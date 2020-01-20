@@ -4,7 +4,7 @@
   "properties": {
     "month": 1,
     "year": 2018,
-    "today": 19,
+    "today": 20,
     "daysOffset": 2,
     "header": {
       "hide": false
