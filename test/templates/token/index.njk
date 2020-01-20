@@ -26,12 +26,135 @@
         }
     )
 }}
+    {% endset %}
+    {{ format(example) }}
+
+    {% set example %}
+
 {{  token(
-        properties=data.properties
+        properties={
+            label: "Bibendum"
+        },
+        modifier= {
+            block: ["compact"]
+        }
+    )
+}}
+{{  token(
+        properties={
+            label: "Lorem"
+        },
+        modifier= {
+            block: ["compact"]
+        }
+    )
+}}
+{{  token(
+        properties={
+            label: "Dolor"
+        },
+        modifier= {
+            block: ["compact"]
+        }
+    )
+}}
+{% endset %}
+{{ format(example) }}
+
+    {% set example %}
+
+{{  token(
+        properties={
+            label: "Bibendum"
+        },
+        modifier= {
+            block: ["readonly"]
+        }
+    )
+}}
+{{  token(
+        properties={
+            label: "Lorem"
+        },
+        modifier= {
+            block: ["readonly"]
+        }
+    )
+}}
+{{  token(
+        properties={
+            label: "Dolor"
+        },
+        modifier= {
+            block: ["readonly"]
+        }
+    )
+}}
+{% endset %}
+{{ format(example) }}
+
+    {% set example %}
+
+{{  token(
+        properties={
+            label: "Bibendum"
+        },
+        modifier= {
+            block: ["readonly", "compact"]
+        }
+    )
+}}
+{{  token(
+        properties={
+            label: "Lorem"
+        },
+        modifier= {
+            block: ["readonly", "compact"]
+        }
+    )
+}}
+{{  token(
+        properties={
+            label: "Dolor"
+        },
+        modifier= {
+            block: ["readonly", "compact"]
+        }
+    )
+}}
+{% endset %}
+{{ format(example) }}
+
+    {% set example %}
+{{  token(
+        properties={
+            label: "Bibendum"
+        },
+        modifier= {
+          block: ["selected"]
+        }
+    )
+}}
+{{  token(
+        properties={
+            label: "Lorem"
+        },
+        modifier= {
+          block: ["selected"]
+        }
+    )
+}}
+{{  token(
+        properties={
+            label: "Dolor"
+        },
+        modifier= {
+            block: ["selected"]
+        }
     )
 }}
     {% endset %}
     {{ format(example) }}
-
-
 {% endblock %}
+
+

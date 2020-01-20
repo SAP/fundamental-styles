@@ -1,4 +1,6 @@
 @import "vars";
+@import "states";
+
 // utils
 @mixin fd-reset {
   font-size: var(--sapFontSize);
@@ -274,31 +276,41 @@
   text-decoration: none;
   display: inline-block;
   transition: all $fd-animation--speed ease-in;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: var(--sapLinkColor);
+  line-height: inherit;
 
-  @include fd-hover() {
-    color: var(--sapLink_Hover_Color);
-    border-bottom-color: var(--sapLink_Hover_Color);
+  &--emphasized {
+    font-weight: bold;
   }
 
   &:visited {
     color: var(--sapLink_Visited_Color);
-    border-bottom-color: var(--sapLink_Visited_Color);
+  }
+
+  @include fd-hover() {
+    color: var(--sapLink_Hover_Color);
+    text-decoration: underline;
+  }
+
+  @include fd-focus() {
+    box-shadow: none;
+    outline-offset: -0.0625rem;
+    outline-width: var(--sapContent_FocusWidth);
+    outline-color: var(--sapContent_FocusColor);
+    outline-style: var(--sapContent_FocusStyle);
+  }
+
+  @include fd-active() {
+    color: var(--sapLink_Active_Color);
+  }
+
+  &--inverted {
+    color: var(--sapLink_InvertedColor);
   }
 
   @include fd-disabled() {
-    opacity: 0.4;
+    opacity: var(--sapContent_DisabledOpacity);
     color: var(--sapLinkColor);
-    border-bottom-color: var(--sapLinkColor);
-    cursor: not-allowed;
-  }
-
-  &:focus {
-    outline-style: dotted;
-    outline-width: 1px;
-    outline-color: var(--sapLinkColor);
+    pointer-events: none;
   }
 }
 

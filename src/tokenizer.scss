@@ -1,0 +1,73 @@
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+$block: #{$fd-namespace}-tokenizer;
+
+.#{$block} {
+
+  $fd-tokenizer-compact-spacing: 0.25rem;
+  $fd-tokenizer-spacing: 0.3125rem;
+
+  width: 100%;
+  background-color: var(--sapField_Background);
+  padding-left: $fd-tokenizer-spacing;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  &__inner {
+    float: right;
+    white-space: nowrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .fd-token {
+    margin-right: $fd-tokenizer-spacing;
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    min-width: 3rem;
+    padding: 0 $fd-tokenizer-spacing 0 0;
+
+    @include fd-focus() {
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+  @include fd-focus() {
+    box-shadow: none;
+    border: none;
+    outline-offset: -0.0625rem;
+    outline-width: var(--sapContent_FocusWidth);
+    outline-color: var(--sapContent_FocusColor);
+    outline-style: var(--sapContent_FocusStyle);
+  }
+
+  &--compact {
+    padding-left: $fd-tokenizer-compact-spacing;
+
+    .#{$block}__input {
+      min-width: 2rem;
+      padding: 0 $fd-tokenizer-compact-spacing 0 0;
+    }
+
+    .fd-token {
+      margin-right: $fd-tokenizer-compact-spacing;
+    }
+  }
+
+  /** To avoid overwriting from fd-input-group__input on multi-input component */
+  .#{$block}__input {
+    &:last-child {
+      flex-basis: 100%;
+    }
+  }
+}

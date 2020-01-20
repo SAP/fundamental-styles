@@ -19,7 +19,6 @@ It is used for short forms, confirmation messages or to display contextual infor
 This is used to present information to the user but the Alert Component doesn’t fit all the information.
 
 {% capture default-modal %}
-<div class="modal-demo-bg">
 <div class="fd-modal">
     <div class="fd-modal__content" role="document">
         <div class="fd-modal__header">
@@ -36,7 +35,6 @@ This is used to present information to the user but the Alert Component doesn’
         </div>
     </div>
 </div>
-</div>
 {% endcapture %}
 
 {% include display-component.html component=default-modal %}
@@ -47,7 +45,6 @@ This is used to present information to the user but the Alert Component doesn’
 This is used to confirm with the user before continuing with a destructive or complex action. In this case, the modal has action buttons at the bottom.
 
 {% capture default-confirmation %}
-<div class="modal-demo-bg">
 <div class="fd-modal">
     <div class="fd-modal__content" role="document">
         <div class="fd-modal__header">
@@ -63,7 +60,6 @@ This is used to confirm with the user before continuing with a destructive or co
         </footer>
     </div>
 </div>
-</div>
 {% endcapture %}
 
 {% include display-component.html component=default-confirmation %}
@@ -74,7 +70,6 @@ This is used to confirm with the user before continuing with a destructive or co
 This is used for short forms in order to collect information from the user.
 
 {% capture default-form %}
-<div class="modal-demo-bg">
 <div class="fd-modal">
     <div class="fd-modal__content" role="document">
         <div class="fd-modal__header">
@@ -92,7 +87,6 @@ This is used for short forms in order to collect information from the user.
             <button class="fd-button--light">Cancel</button>
         </footer>
     </div>
-</div>
 </div>
 {% endcapture %}
 

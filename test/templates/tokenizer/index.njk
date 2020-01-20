@@ -1,0 +1,51 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./component.njk" import tokenizer %}
+
+{% block content %}
+
+    <h1>Tokenizer</h1>
+
+    <!-- output the component example and the code snippet -->
+{% set example %}
+{{  tokenizer(
+        properties={
+        }
+    )
+}}
+{{  tokenizer(
+        properties={
+        },
+        state={
+            "focus": true
+        }
+    )
+}}
+{% endset %}
+{{ format(example) }}
+
+{% set example %}
+{{  tokenizer(
+        properties={
+        },
+        modifier= {
+            block: "compact"
+        }
+    )
+}}
+{{  tokenizer(
+        properties={
+        },
+        modifier= {
+            block: "compact"
+        },
+        state={
+            "focus": true
+        }
+    )
+}}
+{% endset %}
+    {{ format(example) }}
+{% endblock %}
+
+

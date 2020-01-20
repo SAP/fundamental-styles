@@ -1,0 +1,10 @@
+{
+    "id": "tokenizer",
+    "name": "Tokenizer",
+    "properties": {
+        "label": "Filter"
+    },
+    "modifier": {},
+    "state": {},
+    "aria": {}
+}

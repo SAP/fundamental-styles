@@ -26,6 +26,7 @@ $block: #{$fd-namespace}-breadcrumb;
 
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin-bottom: $fd-breadcrumb-margin-bottom;
   list-style: none;
 
@@ -48,6 +49,8 @@ $block: #{$fd-namespace}-breadcrumb;
   // ELEMENTS *******************************************
   &__item {
     @include fd-reset();
+
+    color: $fd-breadcrumb-item-color;
 
     &::after {
       content: "/";
@@ -83,11 +86,17 @@ $block: #{$fd-namespace}-breadcrumb;
 
     @include fd-link();
 
-    text-decoration: none;
     display: inline-block;
     transition: all $fd-animation--speed ease-in;
-    border-bottom-style: none;
     font-size: $fd-breadcrumb-font-size;
     font-family: $fd-breadcrumb-font-family;
+  }
+
+  &__dropdown-icon {
+    @include fd-reset();
+    @include fd-icon('slim-arrow-down');
+
+    text-decoration: inherit;
+    color: var(--sapLinkColor);
   }
 }
