@@ -1,0 +1,33 @@
+<!--
+tokenizer:
+    properties={},
+    modifier={ block: [] },
+    state={},
+    aria={}
+-->
+{% macro tokenizer(properties={}, modifier={}, state={}, aria={}) -%}
+
+<div class="fd-tokenizer{{ modifier.block | modifier('token') }}{{ state | state }}"{{ aria | aria }}">
+	<div class="fd-tokenizer__inner">
+		<span role="button">
+			<span>
+				Lorem
+			</span>
+			<button class="btn-playground"></button>
+		</span>
+		<span role="button">
+			<span>
+				Bibendum
+			</span>
+			<button class="btn-playground"></button>
+		</span>
+		<span role="button">
+			<span>
+				Dolor
+			</span>
+			<button class="btn-playground"></button>
+		</span>
+		<input class="input-playground" />
+    </div>
+</div>
+{%- endmacro %}
