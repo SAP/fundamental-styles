@@ -238,6 +238,27 @@
 {% endset %}
 {{ format(example) }}
 
+<br><br>
+<h2>Calendar on mobile devices (change device orientation for another layout)</h2>
+{% set example %}
+    {{  calendar({
+        "mobile": true,
+        "month": 8,
+        "year": 2018,
+        "today": 6,
+        "dates": {
+            "daysOffset": 3,
+            "block": [25,29],
+            "selected": 15,
+            "disablePast": true
+        }
+    },
+        modifier={
+            block: ['mobile']
+        })
+    }}
+{% endset %}
+{{ format(example) }}
 
 <script>
 (function() {

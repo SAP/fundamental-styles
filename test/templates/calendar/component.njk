@@ -67,7 +67,7 @@ calendar:
   {%- set _grid_id = utils.id() %}
   {%- set _months_id = utils.id() %}
   {%- set _years_id = utils.id() %}
-<div class="fd-calendar{{ modifier.block | modifier('calendar')}}">{{properties.header.show}}
+<div class="fd-calendar{{ modifier.block | modifier('calendar')}}" style="{%- if properties.mobile%}position: static;{%- endif %}">{{properties.header.show}}
 
   {# CALENDAR HEADER #}
   {%- if not properties.header.hide %}
@@ -82,6 +82,10 @@ calendar:
   {%- elif properties.years %}
     {{ calendar_years(_years_id, properties) }}
   {%- endif %}
+
+  {% if properties.mobile %}
+    <button class="btn-playground fd-calendar__close-button--portrait">Cancel</button>
+  {% endif %}
   </div>
 </div>
 {%- endmacro %}
@@ -208,6 +212,10 @@ calendar:
         <button class="btn-playground">></button>
       </div>
     </div>
+    {% if properties.mobile %}
+      <button class="btn-playground fd-calendar__close-button--landscape">Cancel</button>
+    {% endif %}
+    {{ modifier.block }}
   </header>
 {%- endmacro %}
 
