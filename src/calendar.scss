@@ -3,7 +3,7 @@
 @import "./functions";
 
 /*!
-.fd-calendar+(--compact)
+.fd-calendar+(--compact, --mobile)
     .fd-calendar__header
       .fd-calendar__navigation
         .fd-calendar__action(+[--arrow-left, --arrow-right])
@@ -301,6 +301,13 @@ $fd-calendar-item-color--disabled: fd-color-state("disabled", "action") !default
     }
   }
 
+  &__close-button {
+    &--portrait,
+    &--landscape {
+      display: none;
+    }
+  }
+
   &--compact {
     width: $fd-calendar-width-compact;
     padding: $fd-calendar-padding-compact;
@@ -321,6 +328,40 @@ $fd-calendar-item-color--disabled: fd-color-state("disabled", "action") !default
         .#{$block}--years {
           padding-top: $fd-calendar-item-height-compact;
         }
+      }
+    }
+  }
+
+  &--mobile {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    .#{$block} {
+      @media (orientation: landscape) {
+        &__header {
+          .#{$block}__navigation {
+            justify-content: space-between;
+          }
+
+          .#{$block}__close-button--landscape {
+            margin-left: 10%;
+            display: block;
+          }
+        }
+      }
+    }
+
+    @media (orientation: portrait) {
+      display: flex;
+      flex-direction: column;
+
+      .#{$block}__close-button--portrait {
+        display: block;
+        margin: auto auto 0 auto;
       }
     }
   }
