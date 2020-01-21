@@ -61,7 +61,7 @@ This example shows the minimum shellbar for a single application product with on
             <span class="fd-identifier fd-identifier--xs fd-identifier--circle">WW</span>
           </div>
         </div>
-        <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="WV3AY276">
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="WV3AY276">
           <nav class="fd-menu">
             <ul class="fd-menu__list">
               <li><a role="button" class="fd-menu__item">Settings</a></li>
@@ -89,13 +89,13 @@ This example includes the product menu for navigating to applications within the
     <a href="#" class="fd-shellbar__logo">
       <img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP">
     </a>
-    <div class="fd-popover fd-popover--right">
+    <div class="fd-popover">
       <div class="fd-popover__control">
         <button class="fd-button--light fd-button--menu fd-shellbar__button--menu" aria-controls="9GLB26941" aria-haspopup="true" aria-expanded="false">
           <span class="fd-shellbar__title">Corporate Portal</span>
         </button>
       </div>
-      <div class="fd-popover__body fd-popover__body--right fd-shellbar__popover__body--right" aria-hidden="true" id="9GLB26941">
+      <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="9GLB26941">
         <nav class="fd-menu">
           <ul class="fd-menu__list">
             <li><a role="button" class="fd-menu__item">Application A</a></li>
@@ -131,7 +131,7 @@ This example includes the product menu for navigating to applications within the
             <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url({{site.baseurl}}/images/thumbs/headshot-male.jpg);" aria-label="William Wallingham">WW</span>
           </div>
         </div>
-        <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="ZY3AY276">
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="ZY3AY276">
           <nav class="fd-menu">
             <ul class="fd-menu__list">
               <li><a role="button" class="fd-menu__item">Settings</a></li>
@@ -189,7 +189,7 @@ When a product has multiple links, the product links should collapse into an ove
                 <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification" aria-label="Unread count">25</span></button>
               </div>
             </div>
-            <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="CWaGX278">
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="CWaGX278">
               <nav class="fd-menu">
                 <ul class="fd-menu__list">
                   <li><a role="button" class="fd-menu__item">Search</a></li>
@@ -208,7 +208,7 @@ When a product has multiple links, the product links should collapse into an ove
               <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-shellbar__identifier--circle">WW</span>
             </div>
           </div>
-          <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="DD35G276">
+          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="DD35G276">
             <nav class="fd-menu">
               <ul class="fd-menu__list">
                 <li><a role="button" class="fd-menu__item">Settings</a></li>
@@ -250,7 +250,7 @@ For more information about the Product Switch, see [Product Switch](product-swit
               <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url({{site.baseurl}}/images/thumbs/headshot-male.jpg);" aria-label="William Wallingham">WW</span>
             </div>
           </div>
-          <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="MKFAY276">
+          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="MKFAY276">
             <nav class="fd-menu">
               <ul class="fd-menu__list">
                 <li><a role="button" class="fd-menu__item">Settings</a></li>

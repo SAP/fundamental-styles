@@ -45,26 +45,7 @@ $block: #{$fd-namespace}-shellbar;
   color: $fd-shellbar-color;
   position: relative;
   justify-content: space-between;
-
-  @include fd-screen(s) {
-    padding: 0 1rem;
-  }
-
-  @include fd-screen(m) {
-    padding: 0 1rem;
-  }
-
-  @include fd-screen(l) {
-    padding: 0 1rem;
-  }
-
-  @include fd-screen(xl) {
-    padding: 0 1rem;
-  }
-
-  @include fd-screen(xxl) {
-    padding: 0 1rem;
-  }
+  padding: 0 1rem;
 
   &__group {
     @include fd-reset();
@@ -152,7 +133,6 @@ $block: #{$fd-namespace}-shellbar;
   &__subtitle {
     @include fd-reset();
 
-    font-size: var(--sapFontSmallSize);
     color: var(--sapShell_TextColor);
     white-space: nowrap;
     overflow: hidden;
@@ -167,6 +147,8 @@ $block: #{$fd-namespace}-shellbar;
 
   &__subtitle {
     padding: 0 16px;
+    font-size: var(--sapFontSmallSize);
+
     // Show only on desktop, hide on s
     @include fd-screen(s) {
       display: none;
@@ -210,10 +192,8 @@ $block: #{$fd-namespace}-shellbar;
     @include fd-reset();
 
     padding-right: 0;
-    padding-left: $fd-shellbar-item-spacing;
 
     @include fd-rtl() {
-      padding-right: $fd-shellbar-item-spacing;
       padding-left: 0;
     }
 
@@ -305,6 +285,10 @@ $block: #{$fd-namespace}-shellbar;
 
     .#{$block}__input-group__addon {
       background-color: $fd-shellbar-background-color;
+
+      .#{$block}__button {
+        border-radius: 0;
+      }
     }
 
     .#{$block}__input-group {
@@ -327,6 +311,8 @@ $block: #{$fd-namespace}-shellbar;
   }
 
   &__button--menu {
+    font-size: var(--sapFontSize);
+
     &::after {
       color: $fd-shellbar-color;
     }
