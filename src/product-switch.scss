@@ -43,6 +43,8 @@ $block: #{$fd-namespace}-product-switch;
   &__list {
     @include fd-reset();
 
+    list-style-type: none;
+
     @include fd-flex() {
       flex-wrap: wrap;
     }
