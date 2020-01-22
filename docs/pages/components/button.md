@@ -240,3 +240,14 @@ Button with multiple actions
 <button class="fd-button--compact fd-button--menu">Compact</button>
 {% endcapture %}
 {% include display-component.html component=button-menu %}
+
+## Button With Text Overflow
+
+Content overflow in the button will be shown with ellipsis
+
+{% capture button %}
+<div style="width:319px;">
+<button class="fd-button--compact fd-button--positive">Compact button with looooooooooooooooooooooooooooooooooooooooooooooonger text</button>
+</div>
+{% endcapture %}
+{% include display-component.html component=button %}

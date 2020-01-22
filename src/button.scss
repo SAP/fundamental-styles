@@ -2,9 +2,18 @@
 @import "./mixins";
 @import "./functions";
 
+@mixin fd-button-responsive() {
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 @mixin isDisabled() {
   opacity: 0.4;
   cursor: not-allowed;
+
+  @include fd-button-responsive();
 
   &:focus {
     outline: none;
@@ -20,18 +29,24 @@
   color: var(--sapButton_TextColor);
   border-color: var(--sapButton_BorderColor);
   background-color: var(--sapButton_Background);
+
+  @include fd-button-responsive();
 }
 
 @mixin positive() {
   color: var(--sapButton_Accept_TextColor);
   border-color: var(--sapButton_Accept_BorderColor);
   background-color: var(--sapButton_Accept_Background);
+
+  @include fd-button-responsive();
 }
 
 @mixin negative() {
   color: var(--sapButton_Reject_TextColor);
   border-color: var(--sapButton_Reject_BorderColor);
   background-color: var(--sapButton_Reject_Background);
+
+  @include fd-button-responsive();
 }
 
 @mixin isStandard() {
@@ -167,12 +182,16 @@
 @mixin isLight() {
   border-color: var(--sapButton_Lite_BorderColor);
   background-color: var(--sapButton_Lite_Background);
+
+  @include fd-button-responsive();
 }
 
 @mixin isEmphasized() {
   color: var(--sapButton_Emphasized_TextColor);
   border-color: var(--sapButton_Emphasized_BorderColor);
   background-color: var(--sapButton_Emphasized_Background);
+
+  @include fd-button-responsive();
 }
 
 /*!
@@ -266,6 +285,7 @@ a.#{$block} {
 
     @include fd-var-size("height", $fd-forms-height/2, --fd-forms-height-half);
     @include fd-var-size("max-height", $fd-forms-height/2, --fd-forms-height-half);
+    @include fd-button-responsive();
 
     line-height: 1;
 
@@ -285,6 +305,7 @@ a.#{$block} {
     @include fd-var-size("max-height", $fd-forms-height, --fd-forms-height-compact);
     @include fd-var-size("min-width", $fd-forms-height, --fd-forms-height-compact);
     @include fd-var-size("line-height", $fd-button-line-height--compact, --fd-button-line-height-compact);
+    @include fd-button-responsive();
 
     @at-root {
       .fd-for-touch & {
