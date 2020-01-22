@@ -100,7 +100,7 @@ calendar:
   {%- endif %}
   {%- set _predate = 31 %}
   {%- set _enddate = 0 %}
-<div class="fd-calendar__content fd-calendar__content--dates" id="{{id}}">
+<div class="fd-calendar__content" id="{{id}}">
   <table class="fd-calendar__table"{{ { role: 'grid'} | aria }}>
     {{ calendar_header_group() }}
     <tbody class="fd-calendar__group">
@@ -139,8 +139,9 @@ calendar:
           'current' if _is_today else '',
           'weekend' if _is_weekend else '',
           'active' if _is_selected else '',
+          'disabled' if _is_disabled else '',
           'range' if _is_selected_range else ''
-        ] },state={ blocked: _is_blocked, disabled: _is_disabled },aria={ role: 'gridcell' }) }}
+        ] },state={},aria={ role: 'gridcell' }) }}
       {%- endfor %}
       </tr>
     </tbody>
@@ -164,7 +165,7 @@ calendar:
         {%-endif %}
         {%- set _is_current = properties.month === loop.index0 %}
         {%- set _is_selected = properties.months.selected === loop.index0 %}
-          {{ calendar_item(month.name | truncate(3, true, "."),modifier={ 'item': ['current' if _is_current else '' ] },state={ blocked: _is_blocked, selected: _is_selected }) }}
+          {{ calendar_item(month.name | truncate(3, true, "."),modifier={ 'item': ['current' if _is_current else '' ] },state={}) }}
         {%- endfor %}
         </tr>
       </tbody>
