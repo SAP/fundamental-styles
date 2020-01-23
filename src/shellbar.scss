@@ -281,6 +281,7 @@ $block: #{$fd-namespace}-shellbar;
       line-height: 0.8;
       top: 10px;
       max-height: 16px;
+      overflow: hidden;
     }
 
     .#{$block}__input-group__addon {
