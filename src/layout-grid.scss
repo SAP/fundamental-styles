@@ -9,6 +9,8 @@
 $block: #{$fd-namespace}-layout-grid;
 
 .#{$block}-container {
+  @include fd-reset();
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -18,6 +20,10 @@ $block: #{$fd-namespace}-layout-grid;
   @media (min-width: 0) {
     margin: 0 -0.25rem;
 
+    &--no-gap {
+      margin: 0;
+    }
+
     :last-child {
       margin-bottom: 0;
     }
@@ -26,6 +32,10 @@ $block: #{$fd-namespace}-layout-grid;
   @media (min-width: 600px) {
     margin: 0 -0.5rem;
 
+    &--no-gap {
+      margin: 0;
+    }
+
     :last-child {
       margin-bottom: 0;
     }
@@ -33,6 +43,8 @@ $block: #{$fd-namespace}-layout-grid;
 }
 
 .#{$block}-row {
+  @include fd-reset();
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -64,14 +76,6 @@ $block: #{$fd-namespace}-layout-grid;
   align-content: flex-start;
   width: 100%;
 
-  &--no-gutter {
-    padding: 0;
-  }
-
-  &--nested {
-    padding: 0;
-  }
-
   &--offset {
     @for $n from 1 through 12 {
       &-#{$n} {
@@ -92,6 +96,10 @@ $block: #{$fd-namespace}-layout-grid;
   @media (min-width: 0) {
     padding: 0 0.25rem;
 
+    &--no-gap {
+      padding: 0;
+    }
+
     &--nested {
       padding: 0;
     }
@@ -105,6 +113,14 @@ $block: #{$fd-namespace}-layout-grid;
 
   @media (min-width: 600px) {
     padding: 0 0.5rem;
+
+    &--nested {
+      padding: 0;
+    }
+
+    &--no-gap {
+      padding: 0;
+    }
 
     @for $n from 1 through 12 {
       &-m--col-#{$n} {
