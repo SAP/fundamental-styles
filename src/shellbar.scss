@@ -138,7 +138,7 @@ $block: #{$fd-namespace}-shellbar;
     overflow: hidden;
     text-overflow: ellipsis;
     display: none;
-    max-width: 220px;
+    max-width: 15rem;
 
     @include fd-screen(m) {
       display: inline-block;
