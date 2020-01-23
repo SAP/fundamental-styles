@@ -11,7 +11,8 @@
         .fd-calendar__table
           .fd-calendar__group
             .fd-calendar__row
-              .fd-calendar__item(+[--other-month, --current, --side-helper, --weekend, --active, --range, --disabled])
+              .fd-calendar__item(+[--other-month, --current, --side-helper, --weekend, --range],
+                                 +[(.is-disabled | [aria-disabled=true]), (.is-focus | [aria-focus=true]), (.is-active | [aria-active=true])])
               .fd-calendar__special-day(+[--1, --2, ..., --19, --20])
                 .fd-calendar__text
 */
@@ -59,6 +60,11 @@ $fd-calendar-item-inactive-color: var(--sapContent_LabelColor) !default;
 $fd-calendar-item-inactive-background: var(--sapList_Background) !default;
 $fd-calendar-item-inactive-background-hover: #e6e6e6 !default; // Should be darken(var(--sapList_Background), 10)
 
+$fd-calendar-item-focused-outline-offset: -0.1875rem !default;
+$fd-calendar-item-focused-outline-color: var(--sapContent_FocusColor) !default;
+$fd-calendar-item-focused-outline-width: var(--sapContent_FocusWidth) !default;
+$fd-calendar-item-focused-outline-style: var(--sapContent_FocusStyle) !default;
+
 $fd-calendar-item-weekend-background: #dedede !default; // darken(--sapList_Background, 13)
 $fd-calendar-item-weekend-background-hover: #cccccc !default; // darken(--sapList_Background, 20)
 
@@ -103,7 +109,7 @@ $fd-calendar-special-days: (
         box-shadow: inset 0 0 -$fd-special-day-marker-height $color;
       }
 
-      &.#{$block}__item--active,
+      &.is-active,
       &.#{$block}__item--current {
         .#{$block}__text {
           box-shadow: inset 0 0 -$fd-special-day-marker-height $color, inset 0 0 -$fd-special-day-marker-top-border-width $fd-calendar-item-active-inner-border-color;
@@ -128,14 +134,6 @@ $fd-calendar-special-days: (
     @include action-cursor();
 
     background-color: $fd-calendar-item-background-hover;
-  }
-
-  @include fd-focus() {
-    box-shadow: none;
-    outline-offset: -0.1875rem;
-    outline-width: var(--sapContent_FocusWidth);
-    outline-color: var(--sapContent_FocusColor);
-    outline-style: var(--sapContent_FocusStyle);
   }
 }
 
@@ -204,6 +202,14 @@ $fd-calendar-special-days: (
   &:hover {
     cursor: not-allowed;
   }
+}
+
+%fd-calendar-item-focus {
+  box-shadow: none;
+  outline-offset: $fd-calendar-item-focused-outline-offset;
+  outline-width: $fd-calendar-item-focused-outline-width;
+  outline-color: $fd-calendar-item-focused-outline-color;
+  outline-style: $fd-calendar-item-focused-outline-style;
 }
 
 .#{$block} {
@@ -289,10 +295,6 @@ $fd-calendar-special-days: (
               @extend %fd-calendar-item-weekend;
             }
 
-            &--active {
-              @extend %fd-calendar-item-active;
-            }
-
             &--current {
               @extend %fd-calendar-item-current;
 
@@ -309,7 +311,15 @@ $fd-calendar-special-days: (
               }
             }
 
-            &--disabled {
+            @include fd-active() {
+              @extend %fd-calendar-item-active;
+            }
+
+            @include fd-focus() {
+              @extend %fd-calendar-item-focus;
+            }
+
+            @include fd-disabled() {
               @extend %fd-calendar-item-disabled;
             }
 
