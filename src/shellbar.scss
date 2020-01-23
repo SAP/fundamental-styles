@@ -136,9 +136,9 @@ $block: #{$fd-namespace}-shellbar;
     color: var(--sapShell_TextColor);
     white-space: nowrap;
     overflow: hidden;
-    max-width: 100%;
     text-overflow: ellipsis;
     display: none;
+    max-width: 220px;
 
     @include fd-screen(m) {
       display: inline-block;
