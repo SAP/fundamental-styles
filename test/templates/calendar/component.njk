@@ -82,10 +82,6 @@ calendar:
   {%- elif properties.years %}
     {{ calendar_years(_years_id, properties) }}
   {%- endif %}
-
-  {% if properties.mobile %}
-    <button class="btn-playground fd-calendar__close-button--portrait">Cancel</button>
-  {% endif %}
   </div>
 </div>
 {%- endmacro %}
@@ -201,20 +197,20 @@ calendar:
   <header class="fd-calendar__header{{ state | state}}"{{ aria | aria }}>
     <div class="fd-calendar__navigation">
       <div class="fd-calendar__action fd-calendar__action--arrow-left">
-        <button class="btn-playground"><</button>
+        <button class="btn-playground" type="button"><</button>
       </div>
       <div class="fd-calendar__action">
-        <button class="btn-playground">XXXX</button>
+        <button class="btn-playground" type="button">XXXX</button>
       </div>
       <div class="fd-calendar__action">
-        <button class="btn-playground">XXXX</button>
+        <button class="btn-playground" type="button">XXXX</button>
       </div>
       <div class="fd-calendar__action fd-calendar__action--arrow-right">
-        <button class="btn-playground">></button>
+        <button class="btn-playground" type="button">></button>
       </div>
     </div>
     {% if properties.mobile %}
-      <button class="btn-playground fd-calendar__close-button--landscape">Cancel</button>
+      <button class="btn-playground fd-calendar__close-button"></button>
     {% endif %}
     {{ modifier.block }}
   </header>

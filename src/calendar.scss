@@ -12,6 +12,7 @@
           .fd-calendar__group
             .fd-calendar__row
               .fd-calendar__item(+[--other-month, --current, --side-helper, --weekend, --active, --range, --disabled])
+              .fd-calendar__special-day(+[--1, --2, ..., --19, --20])
                 .fd-calendar__text
 */
 $block: #{$fd-namespace}-calendar;
@@ -20,16 +21,22 @@ $block: #{$fd-namespace}-calendar;
 $fd-calendar-padding: 1rem !default;
 $fd-calendar-item-width: 2.25rem !default;
 $fd-calendar-item-height: 2.75rem !default;
+$fd-calendar-action-padding: 0.5rem !default;
 $fd-calendar-border-radius: 0.25rem !default;
 $fd-calendar-background: var(--sapList_Background) !default;
 $fd-calendar-width: $fd-calendar-item-width * 8 + 2 * $fd-calendar-padding !default;
 
 // Compact dimensions
-$fd-calendar-action-padding: 0.5rem !default;
 $fd-calendar-padding-compact: 0.5rem !default;
 $fd-calendar-item-width-compact: 2rem !default;
 $fd-calendar-item-height-compact: 2rem !default;
 $fd-calendar-width-compact: $fd-calendar-item-width-compact * 8 + 2 * $fd-calendar-padding-compact !default;
+
+// Mobile dimensions
+$fd-calendar-button-height-mobile: 2.75rem !default;
+$fd-calendar-padding-mobile-landscape: 0 !default;
+$fd-calendar-padding-mobile-portrait: 1rem 0 0 0 !default;
+$fd-calendar-item-helper-height-landscape: 1.625rem !default;
 
 // Calendar items variations
 $fd-calendar-item-color: var(--sapTextColor) !default;
@@ -114,8 +121,8 @@ $fd-calendar-special-days: (
   justify-content: center;
   color: $fd-calendar-item-color;
   height: $fd-calendar-item-height;
-  background-color: $fd-calendar-item-background;
   border-radius: $fd-calendar-border-radius;
+  background-color: $fd-calendar-item-background;
 
   @include fd-hover() {
     @include action-cursor();
@@ -123,7 +130,6 @@ $fd-calendar-special-days: (
     background-color: $fd-calendar-item-background-hover;
   }
 
-  // TODO ?
   @include fd-focus() {
     box-shadow: none;
     outline-offset: -0.1875rem;
@@ -222,7 +228,7 @@ $fd-calendar-special-days: (
         margin-left: $fd-calendar-action-padding / 2;
         margin-right: $fd-calendar-action-padding / 2;
 
-        > * {
+        > [type="button"] {
           width: 100%;
         }
 
@@ -362,16 +368,50 @@ $fd-calendar-special-days: (
     left: 0;
     z-index: 1;
 
-    .#{$block} {
-      @media (orientation: landscape) {
-        &__header {
-          .#{$block}__navigation {
-            justify-content: space-between;
-          }
+    .#{$block}__header {
+      .#{$block}__navigation {
+        justify-content: space-between;
 
-          .#{$block}__close-button {
-            margin-left: 10%;
-            display: block;
+        .#{$block}__action {
+          > [type="button"] {
+            height: $fd-calendar-button-height-mobile;
+            max-height: $fd-calendar-button-height-mobile;
+          }
+        }
+      }
+    }
+
+    @media (orientation: portrait) {
+      padding: $fd-calendar-padding-mobile-portrait;
+    }
+
+    @media (orientation: landscape) {
+      padding: $fd-calendar-padding-mobile-landscape;
+
+      .#{$block}__header {
+        .#{$block}__navigation {
+          justify-content: space-between;
+        }
+
+        .#{$block}__close-button {
+          display: block;
+          margin-left: 10%;
+          width: $fd-calendar-button-height-mobile;
+          height: $fd-calendar-button-height-mobile;
+          max-height: $fd-calendar-button-height-mobile;
+        }
+      }
+
+      .#{$block}__content {
+        .#{$block}__table {
+          .#{$block}__group {
+            .#{$block}__row {
+              .#{$block}__item {
+                &--side-helper {
+                  height: $fd-calendar-item-helper-height-landscape;
+                }
+              }
+            }
           }
         }
       }
