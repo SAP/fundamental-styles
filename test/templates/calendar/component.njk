@@ -134,10 +134,8 @@ calendar:
           'other-month' if _is_other_month else '',
           'current' if _is_today else '',
           'weekend' if _is_weekend else '',
-          'active' if _is_selected else '',
-          'disabled' if _is_disabled else '',
           'range' if _is_selected_range else ''
-        ] },state={},aria={ role: 'gridcell' }) }}
+        ] },state={disabled: _is_disabled, active: _is_selected},aria={ role: 'gridcell' }) }}
       {%- endfor %}
       </tr>
     </tbody>
