@@ -11,7 +11,7 @@ summary:
 
 Alerts provide messages within the application that are color-coded to emphasize the level of urgency.
 {: .docs-intro}
-For Alert placement guidelines within the application, see [Application Layout page]({{site.baseurl}}/layouts/shell-layout.html#application-with-ui-overlay) and [Application Alerts overlay Demo Page]({{site.baseurl}}/demo-pages/alert-overlay-demo-page.html)
+For Alert placement guidelines within the application, see [Application Layout page]({{site.baseurl}}/layouts/shell-layout.html#application-overlay-alert-example) and [Application Alerts overlay Demo Page]({{site.baseurl}}/demo-pages/alert-overlay-demo-page.html)
 
 <br>
 
