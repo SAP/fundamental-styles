@@ -8,6 +8,9 @@
 $block: #{$fd-namespace}-badge;
 
 .#{$block} {
+
+  $fd-infolabel-border-radius: 1.125rem;
+
   @include fd-reset();
   @include fd-type("-1");
   @include fd-var-color("border-color", $fd-color--action, --fd-color-action);
@@ -20,7 +23,7 @@ $block: #{$fd-namespace}-badge;
   padding-bottom: fd-space(1)/4;
   padding-left: fd-space(2);
   padding-right: fd-space(2);
-  border-radius: $fd-border-radius;
+  border-radius: $fd-infolabel-border-radius;
   border-width: 1px;
   border-style: solid;
 
