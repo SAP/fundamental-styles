@@ -172,6 +172,10 @@ entries:
       url: /components/menu.html
       output: web
 
+    - title: Message Strip
+      url: /components/message-strip.html
+      output: web
+
     - title: Modal
       url: /components/modal.html
       output: web

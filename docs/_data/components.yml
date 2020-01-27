@@ -3,9 +3,6 @@
     - title: Action Bar
       meta: action-bar
 
-    - title: Alert
-      meta: alert
-
     - title: Busy Indicator
       meta: busy-indicator
 
@@ -44,6 +41,9 @@
 
     - title: Localization Editor
       meta: localization-editor
+
+    - title: Message Strip
+      meta: message-strip
 
     - title: Modal
       meta: modal

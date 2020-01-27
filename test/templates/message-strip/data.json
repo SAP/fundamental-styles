@@ -1,0 +1,17 @@
+{
+    "id": "message-strip",
+    "name": "Message Strip",
+    "properties": {
+        "text": "Message Strip Text",
+        "dismissible": true
+    },
+    "modifier": {
+        "block": [
+            "information",
+            "success",
+            "warning",
+            "error",
+            "dismissible"
+        ]
+    }
+}

@@ -121,7 +121,7 @@ The overlay container is meant to accommodate any content that needs to be posit
 There are two options for Application overlay.
 
 - `.fd-overlay--modal`: Dims background and position the modal in the center of the viewport.
-- `.fd-overlay--alert`: Does not dim the background and positions the alert component near the top of the viewport.
+- `.fd-overlay--message-strip`: Does not dim the background and positions the message strip component near the top of the viewport.
 Commonly the `fd-overlay` class will be added to the overlay to dim the background and center the content, as with a modal. However, the container is generic enough to accommodate any full-UI takeover.
 
 The container visibility can be toggled with the `aria-hidden` attribute.
@@ -168,7 +168,7 @@ The container visibility can be toggled with the `aria-hidden` attribute.
 {% endcapture %}
 {% include display-component.html component=app-layout-no-sidebar class="app" %}
 
-### Application Overlay Alert example
+### Application Overlay Message Strip example
 {: .docs-header-h3}
 
 {% capture app-layout-no-sidebar %}
@@ -186,10 +186,10 @@ The container visibility can be toggled with the `aria-hidden` attribute.
     <div class="fd-shell__footer">
         fd-shell__footer
     </div>
-    <div class="fd-shell__overlay fd-overlay fd-overlay--alert" aria-hidden="false">
-        <div class="fd-alert fd-alert--warning fd-alert--dismissible" role="alert" id="4Nolz351">
-          <button class="fd-button fd-button--light fd-button--compact fd-alert__close" aria-controls="4Nolz351" aria-label="Close"></button>
-          <span class="fd-alert__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+    <div class="fd-shell__overlay fd-overlay fd-overlay--message-strip" aria-hidden="false">
+        <div class="fd-message-strip fd-message-strip--warning fd-message-strip--dismissible" role="alert" id="4Nolz351">
+          <button class="fd-button fd-button--light fd-button--compact fd-message-strip__close" aria-controls="4Nolz351" aria-label="Close"></button>
+          <span class="fd-message-strip__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
         </div>
     </div>
 </div>

@@ -184,6 +184,11 @@ body {
     padding: 10px 0;
 }
 
+.fd-overlay--message-strip .overlay-playground {
+    background: gold;
+    padding: 10px 0;
+}
+
 .test-textarea {
   padding: 10px;
   margin: 0;
