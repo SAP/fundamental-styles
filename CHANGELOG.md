@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.0-rc.0"></a>
+# [0.6.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.5.1-rc.1...v0.6.0-rc.0) (2020-01-27)
+
+
+### Features
+
+* refactor Shellbar component to match Fiori 3 specs ([#586](https://github.com/SAP/fundamental-styles/issues/586)) ([83a3a60](https://github.com/SAP/fundamental-styles/commit/83a3a60))
+
+
+
 <a name="0.5.1-rc.1"></a>
 ## [0.5.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.5.1-rc.0...v0.5.1-rc.1) (2020-01-27)
 
