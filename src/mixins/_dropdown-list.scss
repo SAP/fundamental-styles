@@ -1,0 +1,70 @@
+@import "./mixins";
+@import "./list";
+@import "./forms";
+
+$fd-dropdown-list-vertical-padding: 0.75rem;
+$fd-dropdown-list-vertical-compact-padding: 0.5rem;
+
+@mixin dropdown-list($block) {
+  @include list($block);
+
+  &__popover {
+    min-width: 5rem;
+    max-width: 37.5rem;
+  }
+
+  &__item {
+    height: auto;
+    padding: $fd-dropdown-list-vertical-padding $fd-list-horizontal-padding;
+  }
+
+  &__title,
+  &__secondary {
+    white-space: normal;
+
+    &--no-wrap {
+      white-space: nowrap;
+    }
+  }
+
+  &--compact {
+    .#{$block}__item {
+      height: auto;
+      padding: $fd-dropdown-list-vertical-compact-padding $fd-list-horizontal-padding;
+    }
+  }
+
+  &--has-message {
+    padding-top: 2rem;
+  }
+
+  &__message {
+    @include fd-reset();
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    padding-left: 1rem;
+    font-size: var(--sapFontSmallSize);
+
+    &--error {
+      background-color: var(--sapErrorBackground);
+    }
+
+    &--warning {
+      background-color: var(--sapWarningBackground);
+    }
+
+    &--success {
+      background-color: var(--sapSuccessBackground);
+    }
+
+    &--information {
+      background-color: var(--sapInformationBackground);
+    }
+  }
+}

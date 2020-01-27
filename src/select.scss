@@ -23,6 +23,7 @@ $block: #{$fd-namespace}-select;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 0.25rem;
     padding-right: 0;
     padding-left: $fd-select-padding-x;
 
@@ -32,6 +33,7 @@ $block: #{$fd-namespace}-select;
     }
 
     @include fd-fiori-focus();
+    @include fd-form-states();
 
     @include fd-rtl() {
       text-align: right;
@@ -48,10 +50,6 @@ $block: #{$fd-namespace}-select;
 
   &__text {
     font-size: var(--sapFontSize);
-  }
-
-  &--inline {
-    display: inline-block;
   }
 
   &--compact {
