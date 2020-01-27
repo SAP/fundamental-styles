@@ -96,6 +96,15 @@
   --sapField_InformationBackground: #bc3f8c;
   --sapField_ReadOnly_Background: #4f9344;
   --sapTextColor: white;
+  --sapShellInteractiveTextColor: orange;
+  --sapShell_TextColor: #cc33ff;
+  --sapField_BorderColor: #996600;
+  --sapShell_Active_TextColor: #66ffff;
+  --sapShellColor: #ff1a66;
+  --sapShell_Hover_Background: #00cc99;
+  --sapShell_Active_Background: #99cc00;
+  --sapContent_BadgeBackground: #004d1a;
+  --sapShellBorderColor: #993300;
   --sapGroup_ContentBackground: #945ef7;
   --sapElement_BorderCornerRadius: 10px;
   --sapGroup_ContentBorderColor: #00D1B2;
