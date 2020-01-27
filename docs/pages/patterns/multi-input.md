@@ -57,7 +57,7 @@ summary:
                 </span>
             </div>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="F4GcX348a">
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-dropdown-list__popover" aria-hidden="true" id="F4GcX348a">
             <ul class="fd-multi-input">
                  <li class="fd-multi-input__item is-selected" role="option">
                     <input type="checkbox" checked class="fd-checkbox fd-multi-input__input" id="Ai4ez611">
@@ -150,7 +150,7 @@ summary:
                 </span>
             </div>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="F4GcX34a">
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-dropdown-list__popover" aria-hidden="true" id="F4GcX34a">
              <ul class="fd-multi-input fd-multi-input--compact">
                   <li class="fd-multi-input__item is-selected" role="option">
                      <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-multi-input__input" id="Ab4ez611">
@@ -303,3 +303,106 @@ summary:
 </div>
 {% endcapture %}
 {% include display-component.html component=readonly %}
+
+
+## Semantic Multi Input
+Whole list of states for MultiInput can be found on `form` and `select` documentation.
+
+{% capture semantic-input %}
+<div class="documentation-site-popover-container">
+    <div class="fd-popover">
+        <div class="fd-popover__control fd-input-group__control" aria-controls="F4GcKJH8a" aria-expanded="false" aria-haspopup="true">
+            <div class="fd-input-group is-valid">
+                <div class="fd-tokenizer">
+                    <div class="fd-tokenizer__inner">
+                        <span class="fd-token" role="button">
+                            <span class="fd-token__text">
+                                Bibendum
+                            </span>
+                            <button class="fd-token__close"></button>
+                        </span>
+                        <span class="fd-token" role="button">
+                            <span class="fd-token__text">
+                                Lorem
+                            </span>
+                            <button class="fd-token__close"></button>
+                        </span>
+                        <span class="fd-token" role="button">
+                            <span class="fd-token__text">
+                                Dolor
+                            </span>
+                            <button class="fd-token__close"></button>
+                        </span>
+                        <span class="fd-token" role="button">
+                            <span class="fd-token__text">
+                                Filter
+                            </span>
+                            <button class="fd-token__close"></button>
+                        </span>
+                        <span class="fd-token fd-token--readonly">
+                            <span class="fd-token__text">
+                                Lorem
+                            </span>
+                        </span>
+                        <span class="fd-tokenizer__indicator">4 more</span>
+                        <input class="fd-input fd-input-group__input fd-tokenizer__input" />
+                    </div>
+                </div>
+                <span class="fd-input-group__addon fd-input-group__addon--button">
+                    <button class="fd-input-group__button fd-button--light sap-icon--value-help"></button>
+                </span>
+            </div>
+        </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-dropdown-list__popover" aria-hidden="true" id="F4GcKJH8a">
+            <ul class="fd-multi-input fd-multi-input--has-message">
+                <li class="fd-multi-input__message fd-multi-input__message--success">Success Message</li>
+                 <li class="fd-multi-input__item is-selected" role="option">
+                    <input type="checkbox" checked class="fd-checkbox fd-multi-input__input" id="AGi4ez611">
+                    <label class="fd-checkbox__label fd-multi-input__label" for="AGi4ez611">
+                        <span class="fd-multi-input__title">
+                            Long Text
+                            Long Text
+                            Long Text
+                            Long Text
+                            Long Text
+                            Long Text
+                            Long Text
+                            Long Text
+                            Long Text
+                            Long Text
+                            Long Text
+                            Long Text
+                            Long Text
+                            Long Text
+                            Long Text
+                            Long Text
+                            Long Text
+                            Long Text
+                            Long Text
+                        </span>
+                    </label>
+                </li>
+                 <li class="fd-multi-input__item" role="option">
+                    <input type="checkbox" class="fd-checkbox fd-multi-input__input" id="Ai4Fez612">
+                    <label class="fd-checkbox__label fd-multi-input__label" for="Ai4Fez612">
+                        <span class="fd-multi-input__title">Text Option</span>
+                    </label>
+                </li>
+                 <li class="fd-multi-input__item" role="option">
+                    <input type="checkbox" class="fd-checkbox fd-multi-input__input" id="Ai4eGz614">
+                    <label class="fd-checkbox__label fd-multi-input__label" for="Ai4eGz614">
+                        <span class="fd-multi-input__title">Text Option</span>
+                    </label>
+                </li>
+                 <li class="fd-multi-input__footer">
+                    <a class="fd-link" href="#">Show All</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<span class="fd-form-message fd-form-message--success">Success message</span>
+<br>
+
+{% endcapture %}
+{% include display-component.html component=semantic-input %}

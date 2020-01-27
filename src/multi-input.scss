@@ -11,7 +11,7 @@ $block: #{$fd-namespace}-multi-input;
   $fd-checkbox-dimensions: 1.375rem;
 
   @include fd-reset();
-  @include list($block);
+  @include dropdown-list($block);
 
   &__item {
     padding: 0;
@@ -25,7 +25,6 @@ $block: #{$fd-namespace}-multi-input;
     position: relative;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: $fd-list-vertical-padding $fd-list-horizontal-padding;
     margin-right: 0;
 
     &::before {
@@ -58,11 +57,15 @@ $block: #{$fd-namespace}-multi-input;
 
   &__footer {
     height: auto;
-    padding: $fd-list-vertical-padding $fd-list-horizontal-padding;
     text-align: right;
     justify-content: flex-end;
     line-height: 1rem;
     background-color: var(--sapList_Background);
+  }
+
+  &__footer,
+  &__label {
+    padding: $fd-dropdown-list-vertical-padding $fd-list-horizontal-padding;
   }
 
   &--compact {
@@ -71,8 +74,6 @@ $block: #{$fd-namespace}-multi-input;
     }
 
     .#{$block}__label {
-      padding: $fd-list-vertical-compact-padding $fd-list-horizontal-padding;
-
       &::before {
         margin-left: 0;
         margin-top: 0;
@@ -80,8 +81,9 @@ $block: #{$fd-namespace}-multi-input;
       }
     }
 
-    .#{$block}__footer {
-      padding: $fd-list-vertical-compact-padding $fd-list-horizontal-padding;
+    .#{$block}__footer,
+    .#{$block}__label {
+      padding: $fd-dropdown-list-vertical-compact-padding $fd-list-horizontal-padding;
     }
   }
 }

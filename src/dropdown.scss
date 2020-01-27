@@ -182,7 +182,7 @@ $block2: #{$fd-namespace}-dropdown-list;
 
 .#{$block2} {
   @include fd-reset();
-  @include list($block2);
+  @include dropdown-list($block2);
 
   &__item {
     cursor: pointer;

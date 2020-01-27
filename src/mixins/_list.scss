@@ -1,9 +1,7 @@
 @import "./states";
 @import "./mixins";
 
-$fd-list-vertical-padding: 0.75rem;
 $fd-list-horizontal-padding: 1rem;
-$fd-list-vertical-compact-padding: 0.5rem;
 
 @mixin list($block) {
   list-style: none;
@@ -16,11 +14,12 @@ $fd-list-vertical-compact-padding: 0.5rem;
 
     display: flex;
     align-items: center;
+    padding: 0 $fd-list-horizontal-padding;
+    height: 2.75rem;
   }
 
   &__item {
     background: var(--sapList_Background);
-    padding: $fd-list-vertical-padding $fd-list-horizontal-padding;
 
     @include fd-hover() {
       background: var(--sapList_Hover_Background);
@@ -86,13 +85,9 @@ $fd-list-vertical-compact-padding: 0.5rem;
 
     line-height: 1rem;
     color: var(--sapList_TextColor);
-    white-space: normal;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
-    &--no-wrap {
-      white-space: nowrap;
-    }
   }
 
   &__title {
@@ -164,7 +159,7 @@ $fd-list-vertical-compact-padding: 0.5rem;
 
   &--compact {
     .#{$block}__item {
-      padding: $fd-list-vertical-compact-padding $fd-list-horizontal-padding;
+      height: 2rem;
     }
 
     .#{$block}__title {
