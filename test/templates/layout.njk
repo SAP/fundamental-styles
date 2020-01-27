@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="static/layout.css">
     <link rel="stylesheet" href="sap-theming/css_variables.css">
     <style>
+        body{
+            overflow: hidden;
+        }
+        main{
+            overflow-y: scroll;
+            height: calc(100vh - 300px);
+        }
         {{ 'root.scss' | component_css }}
         {{ 'fonts.scss' | component_css }}
         {{ 'icon.scss' | component_css }}
