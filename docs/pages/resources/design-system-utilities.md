@@ -9,8 +9,8 @@ summary: The following guide covers some major utility features of the Fundament
 ---
 
 
-<div class="fd-alert fd-alert--warning fd-alert--dismissible" role="alert">
-  <p class="fd-alert__text">
+<div class="fd-message-strip fd-message-strip--warning fd-message-strip--dismissible" role="alert">
+  <p class="fd-message-strip__text">
     This page is under construction and the utility features may change. We are migrating those features towards the Fiori 3 Design System, so you may expect some breaking changes(e.g. the color system)
   </p>
 </div>

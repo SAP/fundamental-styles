@@ -5,9 +5,9 @@
         el.addEventListener('click', function (e) {
             let targetId = this.getAttribute("aria-controls");
             let target = document.getElementById(targetId);
-            //alert
-            const isAlert = this.parentElement.getAttribute("role") === "alert";
-            if (isAlert) {
+            //message strip
+            const isMessageStrip = this.parentElement.getAttribute("role") === "alert";
+            if (isMessageStrip) {
                 //remove or hide if we want some animation
                 // target.setAttribute("aria-hidden", true);
                 target.remove();

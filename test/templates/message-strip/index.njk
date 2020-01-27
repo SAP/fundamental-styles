@@ -1,0 +1,336 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./component.njk" import messageStrip %}
+{% from "./../overlay.njk" import overlay, overlay_toggle %}
+
+
+{% block content %}
+
+<style>
+    body {
+        margin: 0;
+        padding: 20px;
+        font-size: initial;
+        line-height: initial;
+    }
+</style>
+
+<h1>Message Strip</h1>
+
+<!-- output the component example and the code snippet -->
+{% set example %}
+{{  messageStrip(
+        properties={
+            text: '<p class="fd-message-strip__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.</p>',
+            dismissible: false
+        },
+        modifier={
+            block: []
+        }
+    )
+}}
+<br>
+{{  messageStrip(
+        properties={
+            text: '<p class="fd-message-strip__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.</p>',
+            dismissible: false
+        },
+        modifier={
+            block: ["information"]
+        }
+    )
+}}
+<br>
+{{  messageStrip(
+        properties={
+            text: '<p class="fd-message-strip__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.',
+            dismissible: false
+        },
+        modifier={
+            block: ["success"]
+        }
+    )
+}}
+<br>
+{{  messageStrip(
+        properties={
+            text: '<p class="fd-message-strip__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.',
+            dismissible: false
+        },
+        modifier={
+            block: ["warning"]
+        }
+    )
+}}
+<br>
+{{  messageStrip(
+        properties={
+            text: '<p class="fd-message-strip__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.',
+            dismissible: false
+        },
+        modifier={
+            block: ["error"]
+        }
+    )
+}}
+<br>
+
+{% endset %}
+{{- format(example) -}}
+
+<br><br>
+
+<h1>Message Strip --no-icon</h1>
+
+<!-- output the component example and the code snippet -->
+{% set example %}
+{{  messageStrip(
+        properties={
+            text: '<p class="fd-message-strip__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.</p>',
+            dismissible: false
+        },
+        modifier={
+            block: []
+        }
+    )
+}}
+<br>
+{{  messageStrip(
+        properties={
+            text: '<p class="fd-message-strip__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.</p>',
+            dismissible: false
+        },
+        modifier={
+            block: ["information", "no-icon"]
+        }
+    )
+}}
+<br>
+{{  messageStrip(
+        properties={
+            text: '<p class="fd-message-strip__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.',
+            dismissible: false
+        },
+        modifier={
+            block: ["success", "no-icon"]
+        }
+    )
+}}
+<br>
+{{  messageStrip(
+        properties={
+            text: '<p class="fd-message-strip__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.',
+            dismissible: false
+        },
+        modifier={
+            block: ["warning", "no-icon"]
+        }
+    )
+}}
+<br>
+{{  messageStrip(
+        properties={
+            text: '<p class="fd-message-strip__text">Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu.',
+            dismissible: false
+        },
+        modifier={
+            block: ["error", "no-icon"]
+        }
+    )
+}}
+<br>
+
+{% endset %}
+{{- format(example) -}}
+
+<br><br>
+
+<h1>dismissible</h1>
+
+{% set example %}
+{{  messageStrip(
+        properties={
+            text: '<p class="fd-message-strip__text">Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et mattis erat vel aliquet in sem urna et sagittis diam in vehicula.</p>',
+            dismissible: true
+        },
+        modifier={
+            block: []
+        }
+    )
+}}
+<br>
+{{  messageStrip(
+        properties={
+            text: '<p class="fd-message-strip__text">Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.</p>',
+            dismissible: true
+        },
+        modifier={
+            block: ["information"]
+        }
+    )
+}}
+<br>
+{{  messageStrip(
+        properties={
+            text: '<p class="fd-message-strip__text">Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.</p>',
+            dismissible: true
+        },
+        modifier={
+            block: ["success"]
+        }
+    )
+}}
+<br>
+{{  messageStrip(
+        properties={
+            text: '<p class="fd-message-strip__text">Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.</p>',
+            dismissible: true
+        },
+        modifier={
+            block: ["warning"]
+        }
+    )
+}}
+<br>
+{{  messageStrip(
+        properties={
+            text: '<p class="fd-message-strip__text">Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et. Pellentesque metus in sem lacus commodo eget justo ut rutrum varius nunc. Sed non rhoncus risus.</p>',
+            dismissible: true
+        },
+        modifier={
+            block: ["error"]
+        }
+    )
+}}
+{% endset %}
+{{- format(example) -}}
+
+<br><br>
+
+<h1>dismissible + no-icon</h1>
+
+{% set example %}
+{{  messageStrip(
+        properties={
+            text: 'Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et mattis erat vel aliquet in sem urna et sagittis diam in vehicula.',
+            dismissible: true
+        },
+        modifier={
+            block: []
+        }
+    )
+}}
+<br>
+{{  messageStrip(
+        properties={
+            text: 'Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.',
+            dismissible: true
+        },
+        modifier={
+            block: ["information", "no-icon"]
+        }
+    )
+}}
+<br>
+{{  messageStrip(
+        properties={
+            text: 'Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.',
+            dismissible: true
+        },
+        modifier={
+            block: ["success", "no-icon"]
+        }
+    )
+}}
+<br>
+{{  messageStrip(
+        properties={
+            text: 'Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.',
+            dismissible: true
+        },
+        modifier={
+            block: ["warning", "no-icon"]
+        }
+    )
+}}
+<br>
+{{  messageStrip(
+        properties={
+            text: 'Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et. Pellentesque metus in sem lacus commodo eget justo ut rutrum varius nunc. Sed non rhoncus risus.',
+            dismissible: true
+        },
+        modifier={
+            block: ["error", "no-icon"]
+        }
+    )
+}}
+{% endset %}
+{{- format(example) -}}
+
+<br><br>
+<h1>dismissible right to left</h1>
+{% set example %}
+{{  messageStrip(
+        properties={
+            text: '<p class="fd-message-strip__text"> حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد وأسي.',
+            dismissible: true,
+            rtl: true
+        },
+        modifier={
+            block: []
+        }
+    )
+}}
+<br>
+{{  messageStrip(
+        properties={
+            text: '<p class="fd-message-strip__text"> حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد وأسي.',
+            dismissible: true,
+            rtl: true
+        },
+        modifier={
+            block: ["warning"]
+        }
+    )
+}}
+<br>
+{{  messageStrip(
+        properties={
+            text: '<p class="fd-message-strip__text"> حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد وأسي.',
+            dismissible: true,
+            rtl: true
+        },
+        modifier={
+            block: ["success"]
+        }
+    )
+}}
+
+<br>
+{{  messageStrip(
+        properties={
+            text: '<p class="fd-message-strip__text"> حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد وأسي.',
+            dismissible: true,
+            rtl: true
+        },
+        modifier={
+            block: ["error"]
+        }
+    )
+}}
+{% endset %}
+{{- format(example) -}}
+<br><br>
+
+{{ overlay_toggle() }}
+
+<p>
+  NOTE: The <code>Message Strip</code> itself does not provide the outer container. Use the <code>.fd-overlay</code> layout component in conjunction with the <code>.fd-ui__overlay</code> template container to hide and show the Message Strip.
+</p>
+
+{% set overlayType = "message-strip" %}
+{{ overlay(overlayType) }}
+<br><br>
+
+
+{% endblock %}
