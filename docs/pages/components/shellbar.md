@@ -51,7 +51,7 @@ This example shows the minimum shellbar for a single application product with on
 <div class="fd-shellbar">
   <div class="fd-shellbar__group fd-shellbar__group--product">
     <span class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></span>
-  <span class="fd-shellbar__title">Corporate PortalCorporate PortalCorporate PortalCorporate PortalCorporate PortalCorporate Portal</span>
+  <span class="fd-shellbar__title">Corporate Portal</span>
   </div>
   <div class="fd-shellbar__group fd-shellbar__group--actions">
     <div class="fd-shellbar__action">
