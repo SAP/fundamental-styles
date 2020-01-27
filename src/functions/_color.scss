@@ -21,7 +21,7 @@
   }
 }
 
-// $state: hover, selected, disabled, visited, negative, positive, alert
+// $state: hover, selected, disabled, visited, negative, positive, message strip
 // $type: background, action
 @function fd-color-state($state, $type: "background") {
   $_map: $fd-colors-background-states;
