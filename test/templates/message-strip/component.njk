@@ -9,6 +9,6 @@
   {%- if properties.dismissible %}
   <button class="btn-playground fd-message-strip__close" aria-controls="{{ _id }}" aria-label="Close"></button>
   {%- endif %}
-  {{ properties.text }}
+  <p class="fd-message-strip__text">{{ properties.text }}</p>
 </div>
 {%- endmacro %}

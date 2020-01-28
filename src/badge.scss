@@ -54,7 +54,7 @@ $block: #{$fd-namespace}-badge;
   }
 
   &--warning {
-    @include fd-var-color("background-color", fd-color-state("message-strip"), --fd-color-background-4);
+    @include fd-var-color("background-color", fd-color-state("alert"), --fd-color-background-4);
     @include fd-var-color("border-color", $fd-color--warning, --fd-color-alert);
   }
 
