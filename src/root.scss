@@ -16,7 +16,7 @@
   --fd-color-background-selected-hover: #{map-get($fd-colors-background-states, "selected-hover")};
   --fd-color-background-information: #{map-get($fd-colors-background-states, "information")};
   --fd-color-background-positive: #{map-get($fd-colors-background-states, "positive")};
-  --fd-color-background-alert: #{map-get($fd-colors-background-states, "message-strip")};
+  --fd-color-background-alert: #{map-get($fd-colors-background-states, "alert")};
   --fd-color-background-negative: #{map-get($fd-colors-background-states, "negative")};
   --fd-color-background-default: #{map-get($fd-colors-background-states, "default")};
 
@@ -31,7 +31,7 @@
   // status colors
   --fd-color-positive: #{$fd-color--positive};
   --fd-color-negative: #{$fd-color--negative};
-  --fd-color-alert: #{$fd-color--message-strip};
+  --fd-color-alert: #{$fd-color--alert};
 
   // form colors
   --fd-forms-color--focus: #{$fd-forms-color--focus};
