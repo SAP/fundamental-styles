@@ -104,7 +104,7 @@ $fd-calendar-special-days: (
 
 @mixin special-days($nameColorMap) {
   @each $name, $color in $nameColorMap {
-    .#{$block}__special-day--#{$name} {
+    &__special-day--#{$name} {
       .#{$block}__text {
         box-shadow: inset 0 0 -$fd-special-day-marker-height $color;
       }
@@ -219,126 +219,128 @@ $fd-calendar-special-days: (
   padding: $fd-calendar-padding;
   background-color: $fd-calendar-background;
 
+  // CALENDAR HEADER
   &__header {
     display: flex;
     align-items: center;
+  }
 
-    .#{$block}__navigation {
-      display: flex;
-      flex-grow: 1;
-      align-items: center;
-      justify-content: space-between;
+  &__navigation {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-      .#{$block}__action {
-        flex-grow: 1;
-        margin-left: $fd-calendar-action-padding / 2;
-        margin-right: $fd-calendar-action-padding / 2;
+  &__action {
+    flex-grow: 1;
+    margin-left: $fd-calendar-action-padding / 2;
+    margin-right: $fd-calendar-action-padding / 2;
 
-        > [type="button"] {
-          width: 100%;
-        }
+    > [type="button"] {
+      width: 100%;
+    }
 
-        &--arrow-left {
-          flex-grow: 0;
-          margin-left: 0;
-          width: $fd-calendar-item-width;
-        }
+    &--arrow-left {
+      flex-grow: 0;
+      margin-left: 0;
+      width: $fd-calendar-item-width;
+    }
 
-        &--arrow-right {
-          flex-grow: 0;
-          margin-right: 0;
-          width: $fd-calendar-item-width;
-        }
+    &--arrow-right {
+      flex-grow: 0;
+      margin-right: 0;
+      width: $fd-calendar-item-width;
+    }
 
-        [class*="sap-icon"] {
-          @include fd-rtl() {
-            transform: scaleX(-1);
-          }
-        }
+    [class*="sap-icon"] {
+      @include fd-rtl() {
+        transform: scaleX(-1);
       }
     }
   }
 
+  // CALENDAR CONTENT
   &__content {
     &--years,
     &--months {
       padding-top: $fd-calendar-item-helper-height;
     }
+  }
 
-    .#{$block}__table {
-      width: 100%;
-      display: table;
-      border-collapse: separate;
+  &__table {
+    width: 100%;
+    display: table;
+    border-collapse: separate;
+  }
 
-      .#{$block}__group {
-        display: table-row-group;
+  &__group {
+    display: table-row-group;
+  }
 
-        .#{$block}__row {
-          display: table-row;
+  &__row {
+    display: table-row;
+  }
 
-          .#{$block}__item {
-            @include fd-reset-spacing();
+  &__item {
+    @include fd-reset-spacing();
 
-            @extend %fd-calendar-item;
+    @extend %fd-calendar-item;
 
-            display: table-cell;
+    display: table-cell;
 
-            &--side-helper {
-              @extend %fd-calendar-item-side-helper;
-            }
+    &--side-helper {
+      @extend %fd-calendar-item-side-helper;
+    }
 
-            &--other-month {
-              @extend %fd-calendar-item-other-month;
-            }
+    &--other-month {
+      @extend %fd-calendar-item-other-month;
+    }
 
-            &--weekend {
-              @extend %fd-calendar-item-weekend;
-            }
+    &--weekend {
+      @extend %fd-calendar-item-weekend;
+    }
 
-            &--current {
-              @extend %fd-calendar-item-current;
+    &--current {
+      @extend %fd-calendar-item-current;
 
-              .#{$block}__text {
-                border: $fd-calendar-item-active-inner-border;
-              }
-            }
-
-            &--range {
-              @extend %fd-calendar-item-range;
-
-              &.#{$block}__item--current {
-                @extend %fd-calendar-item-current;
-              }
-            }
-
-            @include fd-active() {
-              @extend %fd-calendar-item-active;
-            }
-
-            @include fd-focus() {
-              @extend %fd-calendar-item-focus;
-            }
-
-            @include fd-disabled() {
-              @extend %fd-calendar-item-disabled;
-            }
-
-            .#{$block}__text {
-              @include fd-reset-spacing();
-
-              height: 100%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              border-radius: $fd-calendar-item-active-inner-border-radius;
-            }
-          }
-
-          @include special-days($fd-calendar-special-days);
-        }
+      .#{$block}__text {
+        border: $fd-calendar-item-active-inner-border;
       }
     }
+
+    &--range {
+      @extend %fd-calendar-item-range;
+
+      &.#{$block}__item--current {
+        @extend %fd-calendar-item-current;
+      }
+    }
+
+    @include fd-active() {
+      @extend %fd-calendar-item-active;
+    }
+
+    @include fd-focus() {
+      @extend %fd-calendar-item-focus;
+    }
+
+    @include fd-disabled() {
+      @extend %fd-calendar-item-disabled;
+    }
+
+    .#{$block}__text {
+      @include fd-reset-spacing();
+
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: $fd-calendar-item-active-inner-border-radius;
+    }
   }
+
+  @include special-days($fd-calendar-special-days);
 
   &__close-button {
     @include fd-icon("decline", "m");
@@ -346,30 +348,17 @@ $fd-calendar-special-days: (
     display: none;
   }
 
+  // CALENDAR COMPACT
   &--compact {
     width: $fd-calendar-width-compact;
     padding: $fd-calendar-padding-compact;
 
-    .#{$block} {
-      &__content {
-        .#{$block}__table {
-          .#{$block}__group {
-            .#{$block}__row {
-              .#{$block}__item {
-                height: $fd-calendar-item-height-compact;
-              }
-            }
-          }
-        }
-
-        .#{$block}--months,
-        .#{$block}--years {
-          padding-top: $fd-calendar-item-height-compact;
-        }
-      }
+    .#{$block}__item {
+      height: $fd-calendar-item-height-compact;
     }
   }
 
+  // CALENDAR MOBILE
   &--mobile {
     position: fixed;
     width: 100%;
@@ -378,16 +367,14 @@ $fd-calendar-special-days: (
     left: 0;
     z-index: 1;
 
-    .#{$block}__header {
-      .#{$block}__navigation {
+    .#{$block} {
+      &__navigation {
         justify-content: space-between;
+      }
 
-        .#{$block}__action {
-          > [type="button"] {
-            height: $fd-calendar-button-height-mobile;
-            max-height: $fd-calendar-button-height-mobile;
-          }
-        }
+      &__action > [type="button"] {
+        height: $fd-calendar-button-height-mobile;
+        max-height: $fd-calendar-button-height-mobile;
       }
     }
 
@@ -398,31 +385,17 @@ $fd-calendar-special-days: (
     @media (orientation: landscape) {
       padding: $fd-calendar-padding-mobile-landscape;
 
-      .#{$block}__header {
-        .#{$block}__navigation {
-          justify-content: space-between;
-        }
-
-        .#{$block}__close-button {
+      .#{$block} {
+        &__close-button {
           display: block;
           margin-left: 10%;
           width: $fd-calendar-button-height-mobile;
           height: $fd-calendar-button-height-mobile;
           max-height: $fd-calendar-button-height-mobile;
         }
-      }
 
-      .#{$block}__content {
-        .#{$block}__table {
-          .#{$block}__group {
-            .#{$block}__row {
-              .#{$block}__item {
-                &--side-helper {
-                  height: $fd-calendar-item-helper-height-landscape;
-                }
-              }
-            }
-          }
+        &__item--side-helper {
+          height: $fd-calendar-item-helper-height-landscape;
         }
       }
     }
