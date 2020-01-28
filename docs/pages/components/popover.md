@@ -155,12 +155,17 @@ There are four placement options:
         <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverHSF3" aria-expanded="false" aria-haspopup="true">With Header, Subheader and Footer</button>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverHSF3">
-        <div class="fd-popover__body-header fd-popover__body-header--with-subheader">Popover Header</div>
+        <div class="fd-popover__body-header fd-popover__body-header--with-subheader">
+            <button class="fd-button--light sap-icon--navigation-right-arrow"></button>
+            <div>Popover Header</div>
+        </div>
         <div class="fd-popover__body-subheader">Popover Subheader</div>
         <div style="margin: 20px;">
             <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('/images/product-tile.jpg');" role="presentation" aria-label="Nature"></span>
         </div>
-        <div class="fd-popover__body-footer">Popover Footer</div>
+        <div class="fd-popover__body-footer">
+            <button class="fd-button--light">Email</button>
+        </div>
     </div>
 </div>
 

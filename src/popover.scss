@@ -27,24 +27,6 @@ $block: #{$fd-namespace}-popover;
 
   $fd-popover-body-shadow-offset: var(--sapGroup_BorderWidth) !default;
 
-  // POPOVER HEADER
-  $fd-popover-header-height: 2.75rem !default;
-  $fd-popover-header-height--compact: 2.5rem !default;
-  $fd-popover-header-background: var(--sapPageHeader_Background);
-  $fd-popover-header-box-shadow: var(--sapContent_HeaderShadow);
-  $fd-popover-header-padding: 0 0.5rem !default;
-
-  // POPOVER SUBHEADER
-  $fd-popover-subheader-height: 2.75rem !default;
-  $fd-popover-subheader-height--compact: 2rem !default;
-
-  // POPOVER FOOTER
-  $fd-popover-footer-height: 2.75rem !default;
-  $fd-popover-footer-height--compact: 2.5rem !default;
-  $fd-popover-footer-background: var(--sapPageFooter_Background);
-  $fd-popover-footer-border-top: 0.0625rem solid var(--sapPageFooter_BorderColor);
-  $fd-popover-footer-padding: 0 0.5rem !default;
-
   @include fd-reset();
 
   position: relative;
@@ -115,60 +97,37 @@ $block: #{$fd-namespace}-popover;
 
     &-header {
       @include fd-reset();
-      @include fd-ellipsis();
+      @include header();
 
-      height: $fd-popover-header-height;
-      line-height: $fd-popover-header-height;
-      width: auto;
-      background-color: $fd-popover-header-background;
-      padding: $fd-popover-header-padding;
-      box-shadow: $fd-popover-header-box-shadow;
       border-radius: $fd-popover-border-radius $fd-popover-border-radius 0 0;
 
       &--compact {
-        height: $fd-popover-header-height--compact;
-        line-height: $fd-popover-header-height--compact;
+        @include header-compact();
       }
 
       &--with-subheader {
-        box-shadow: none;
+        @include header-with-subheader();
       }
     }
 
     &-subheader {
       @include fd-reset();
-      @include fd-ellipsis();
-
-      height: $fd-popover-subheader-height;
-      line-height: $fd-popover-subheader-height;
-      width: auto;
-      background-color: $fd-popover-header-background;
-      padding: $fd-popover-header-padding;
-      box-shadow: $fd-popover-header-box-shadow;
-      border-radius: 0;
+      @include header();
 
       &--compact {
-        height: $fd-popover-subheader-height--compact;
-        line-height: $fd-popover-subheader-height--compact;
+        @include subheader-compact();
       }
     }
 
     &-footer {
       @include fd-reset();
-      @include fd-ellipsis();
+      @include footer();
 
-      height: $fd-popover-footer-height;
-      line-height: $fd-popover-footer-height;
-      width: auto;
       min-width: 4rem;
-      background-color: $fd-popover-footer-background;
-      padding: $fd-popover-footer-padding;
-      border-top: $fd-popover-footer-border-top;
       border-radius: 0 0 $fd-popover-border-radius $fd-popover-border-radius;
 
       &--compact {
-        height: $fd-popover-footer-height--compact;
-        line-height: $fd-popover-footer-height--compact;
+        @include footer-compact();
       }
     }
 
@@ -267,6 +226,7 @@ $block: #{$fd-namespace}-popover;
 
     &--no-arrow {
       margin: 0 !important;
+      box-shadow: $fd-popover-box-shadow-no-arrow;
 
       .#{$block}__arrow {
         display: none;
