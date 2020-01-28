@@ -112,10 +112,10 @@ $fd-colors: map-merge(
       1: hsl(210, 9%, 93.7%), // #EDEFF0 UI Shell/ App background
       2: hsl(210, 0%, 100%),  // #FFFFFF UI content background
       3: hsl(145, 75%, 96.9%),  // #F1FDF6 Semantic Colors positive background
-      4: hsl(28, 86.7%, 97.1%), // #FEF7F1 Semantic Colors message strip background
+      4: hsl(28, 86.7%, 97.1%), // #FEF7F1 Semantic Colors alert background
       5: hsl(0, 100%, 96.1%),  // #FFEBEB Semantic Colors negative background
       6: hsl(210, 100%, 98%), // #F5FAFF Semantic Colors info background
-      7: hsl(0, 0, 95.7%) // #F4F4F4 neutral message strip background
+      7: hsl(0, 0, 95.7%) // #F4F4F4 neutral alert background
     ),
     "neutral": (
       1: hsl(210, 3%, 98%), // #FAFAFA UI Neutral UI 1
@@ -127,7 +127,7 @@ $fd-colors: map-merge(
     ),
     "status": (
       1: hsl(147, 85.3%, 26.7%), // #107E3E Semantic Colors positive
-      2: hsl(28, 90.2%, 48%), // #E9730C Semantic Colors message strip
+      2: hsl(28, 90.2%, 48%), // #E9730C Semantic Colors alert
       3: hsl(0, 100%, 36.7%), // #BB0000 Semantic Colors negative
       4: hsl(210, 2.8%, 42.7%), // #6A6d70 Semantic Colors neutral text
       5: hsl(210, 90.9%, 42.9%) // #6A6D70 Semantic Colors neutral border
@@ -193,8 +193,8 @@ $fd-link-color--disabled: rgba($fd-link-color, 0.4) !default;
 
 $fd-color--negative: map-get($fd-colors-status, 3) !default;
 $fd-color--error: $fd-color--negative !default;
-$fd-color--message-strip: map-get($fd-colors-status, 2) !default;
-$fd-color--warning: $fd-color--message-strip !default;
+$fd-color--alert: map-get($fd-colors-status, 2) !default;
+$fd-color--warning: $fd-color--alert !default;
 $fd-color--positive: map-get($fd-colors-status, 1) !default;
 $fd-color--success: $fd-color--positive !default;
 
@@ -206,7 +206,7 @@ $fd-colors-background-states: map-merge(
     "selected-hover": change-color($fd-color--action, $alpha: 0.1),
     "positive": map-get($fd-colors-background, 3),
     "negative": map-get($fd-colors-background, 5),
-    "message-strip": map-get($fd-colors-background, 4),
+    "alert": map-get($fd-colors-background, 4),
     "information": map-get($fd-colors-background, 6),
     "default": map-get($fd-colors-background, 7)
   ),
