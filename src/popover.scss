@@ -73,6 +73,11 @@ $block: #{$fd-namespace}-popover;
       &::after {
         right: $fd-popover-arrow-offset;
       }
+
+      // -------------------------- TO CONFIRM WHETHER WE NEED THIS --------------------------
+      &--footer {
+        justify-content: flex-start;
+      }
     }
 
     &::before {
@@ -123,8 +128,14 @@ $block: #{$fd-namespace}-popover;
       @include fd-reset();
       @include footer();
 
-      min-width: 4rem;
       border-radius: 0 0 $fd-popover-border-radius $fd-popover-border-radius;
+
+      // -------------------------- TO CONFIRM WHETHER WE NEED THIS --------------------------
+      justify-content: flex-end;
+
+      button {
+        min-width: 4rem;
+      }
 
       &--compact {
         @include footer-compact();
