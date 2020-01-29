@@ -9,10 +9,8 @@ $block: #{$fd-namespace}-overlay;
 
 .#{$block} {
   $fd-overlay-background-color: rgba(#4a505c, 0.3) !default;
-
-  --fd-overlay-background-color: #{$fd-overlay-background-color};
-  $fd-overlay-message-strip-top-margin: fd-space(7);
-  $fd-overlay-alert-top-margin: fd-space(7);
+  $fd-overlay-message-strip-top-margin: 1.75rem !default;
+  $fd-overlay-alert-top-margin: 1.75rem !default;
 
   position: fixed;
   display: flex;
@@ -26,8 +24,7 @@ $block: #{$fd-namespace}-overlay;
   }
 
   &--modal {
-    @include fd-var-color("background-color", $fd-overlay-background-color, --fd-overlay-background-color);
-
+    background-color: $fd-overlay-background-color;
     height: 100vh;
     width: 100vw;
   }
