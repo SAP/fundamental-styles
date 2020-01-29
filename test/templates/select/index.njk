@@ -39,6 +39,19 @@
 
 <br><br>
 
+<h2>hover</h2>
+
+{% set example %}
+
+  {{ select(props, state={ hover: true } ) }}
+
+  {{ select(props, modifier={ block: ["compact"] }, state={ hover: true } ) }}
+
+{% endset %}
+{{ format(example) }}
+
+<br><br>
+
 <h2>Readonly</h2>
 
 {% set example %}

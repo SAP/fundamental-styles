@@ -9,7 +9,7 @@ $block: #{$fd-namespace}-select;
   $fd-select-padding-compact-x: 0.5rem;
 
   @include fd-reset();
-  @include fd-dropdown($block);
+  @include fd-dropdown-control($block);
 
   display: block;
   padding-right: 0;
