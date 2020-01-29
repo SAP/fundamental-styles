@@ -1,6 +1,6 @@
 @import "./states";
 
-@mixin fd-dropdown($block) {
+@mixin fd-dropdown-control($block) {
   &__control {
     .#{$block}__button {
       color: var(--sapContent_IconColor);

@@ -44,7 +44,8 @@
         ]
     },
     "state": {
-        "disabled": false
+        "disabled": false,
+        "hover": false
     },
     "aria": {}
 }
