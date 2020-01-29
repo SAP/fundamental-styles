@@ -21,9 +21,10 @@ $block: #{$fd-namespace}-calendar;
 // Calendar default
 $fd-calendar-padding: 1rem !default;
 $fd-calendar-item-width: 2.25rem !default;
-$fd-calendar-item-height: 2.75rem !default;
+$fd-calendar-item-height: 2.875rem !default;
 $fd-calendar-action-padding: 0.5rem !default;
 $fd-calendar-border-radius: 0.25rem !default;
+$fd-calendar-border-spacing: 0.125rem !default;
 $fd-calendar-background: var(--sapList_Background) !default;
 $fd-calendar-width: $fd-calendar-item-width * 8 + 2 * $fd-calendar-padding !default;
 
@@ -122,11 +123,9 @@ $fd-calendar-special-days: (
 %fd-calendar-item {
   position: relative;
   box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: $fd-calendar-item-color;
-  height: $fd-calendar-item-height;
+  height: $fd-calendar-item-height - $fd-calendar-border-spacing;
+  min-width: $fd-calendar-item-width - $fd-calendar-border-spacing;
   border-radius: $fd-calendar-border-radius;
   background-color: $fd-calendar-item-background;
 
@@ -145,10 +144,10 @@ $fd-calendar-special-days: (
   text-align: center;
   pointer-events: none;
   color: $fd-calendar-item-helper-color;
-  width: $fd-calendar-item-width-compact;
-  height: $fd-calendar-item-helper-height;
   font-size: $fd-calendar-item-helper-font;
   background-color: $fd-calendar-background;
+  width: $fd-calendar-item-width-compact - $fd-calendar-border-spacing;
+  height: $fd-calendar-item-helper-height - $fd-calendar-border-spacing;
 }
 
 %fd-calendar-item-other-month {
@@ -272,6 +271,7 @@ $fd-calendar-special-days: (
     width: 100%;
     display: table;
     border-collapse: separate;
+    border-spacing: $fd-calendar-border-spacing;
   }
 
   &__group {
@@ -353,8 +353,18 @@ $fd-calendar-special-days: (
     width: $fd-calendar-width-compact;
     padding: $fd-calendar-padding-compact;
 
-    .#{$block}__item {
-      height: $fd-calendar-item-height-compact;
+    .#{$block} {
+      &__action {
+        &--arrow-left,
+        &--arrow-right {
+          width: $fd-calendar-item-width-compact;
+        }
+      }
+
+      &__item {
+        height: $fd-calendar-item-height-compact - $fd-calendar-border-spacing;
+        min-width: $fd-calendar-item-width-compact - $fd-calendar-border-spacing;
+      }
     }
   }
 
@@ -395,7 +405,7 @@ $fd-calendar-special-days: (
         }
 
         &__item--side-helper {
-          height: $fd-calendar-item-helper-height-landscape;
+          height: $fd-calendar-item-helper-height-landscape - $fd-calendar-border-spacing;
         }
       }
     }
