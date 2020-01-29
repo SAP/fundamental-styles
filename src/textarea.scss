@@ -15,7 +15,7 @@ $block: #{$fd-namespace}-textarea;
   min-height: 2.25rem;
   margin: 0.25rem 0;
   padding: 0.5rem 0.625rem;
-  white-space: initial;
+  white-space: pre-wrap;
   overflow: auto;
   resize: none;
   display: block;

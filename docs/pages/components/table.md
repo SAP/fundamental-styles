@@ -169,7 +169,10 @@ It is recommended to add the parameter `aria-selected="true"` to the row that is
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell" scope="col"><input class="fd-checkbox" type="checkbox"></th>
+            <th class="fd-table__cell" scope="col">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez611">
+                <label class="fd-checkbox__label" for="Ai4ez611"></label>
+            </th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -178,21 +181,30 @@ It is recommended to add the parameter `aria-selected="true"` to the row that is
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row" aria-selected="true">
-            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox" checked></td>
+            <th class="fd-table__cell" scope="col">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez612">
+                <label class="fd-checkbox__label" for="Ai4ez612"></label>
+            </th>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
+            <th class="fd-table__cell" scope="col">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez6130">
+                <label class="fd-checkbox__label" for="Ai4ez6130"></label>
+            </th>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
+            <th class="fd-table__cell" scope="col">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez614">
+                <label class="fd-checkbox__label" for="Ai4ez614"></label>
+            </th>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
@@ -213,7 +225,10 @@ Table rows support semantic row highlighting with the modifiers `fd-table__row--
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell" scope="col"><input class="fd-checkbox" type="checkbox"></th>
+            <th class="fd-table__cell" scope="col">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez615">
+                <label class="fd-checkbox__label" for="Ai4ez615"></label>
+            </th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -222,63 +237,90 @@ Table rows support semantic row highlighting with the modifiers `fd-table__row--
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox" checked></td>
+            <th class="fd-table__cell" scope="col">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez616">
+                <label class="fd-checkbox__label" for="Ai4ez616"></label>
+            </th>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row fd-table__row--valid">
-            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
+            <th class="fd-table__cell" scope="col">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez617">
+                <label class="fd-checkbox__label" for="Ai4ez617"></label>
+            </th>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
+            <th class="fd-table__cell" scope="col">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez618">
+                <label class="fd-checkbox__label" for="Ai4ez618"></label>
+            </th>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
          <tr class="fd-table__row fd-table__row--warning">
-            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
+            <th class="fd-table__cell" scope="col">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez619">
+                <label class="fd-checkbox__label" for="Ai4ez619"></label>
+            </th>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
+            <th class="fd-table__cell" scope="col">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez610">
+                <label class="fd-checkbox__label" for="Ai4ez610"></label>
+            </th>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
          <tr class="fd-table__row fd-table__row--error">
-            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
+            <th class="fd-table__cell" scope="col">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez6111">
+                <label class="fd-checkbox__label" for="Ai4ez6111"></label>
+            </th>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>  
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
+            <th class="fd-table__cell" scope="col">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez6112">
+                <label class="fd-checkbox__label" for="Ai4ez6112"></label>
+            </th>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
          <tr class="fd-table__row fd-table__row--information">
-            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
+            <th class="fd-table__cell" scope="col">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez6113">
+                <label class="fd-checkbox__label" for="Ai4ez6113"></label>
+            </th>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>   
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><input class="fd-checkbox" type="checkbox"></td>
+            <th class="fd-table__cell" scope="col">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez6114">
+                <label class="fd-checkbox__label" for="Ai4ez6114"></label>
+            </th>
             <td class="fd-table__cell"><a class="fd-has-font-weight-semi">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
