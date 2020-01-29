@@ -401,7 +401,7 @@ Whole list of states for MultiInput can be found on `form` and `select` document
         </div>
     </div>
 </div>
-<span class="fd-form-message fd-form-message--success">Success message</span>
+<span class="fd-form-message fd-form-message--static fd-form-message--success">Success message</span>
 <br>
 
 {% endcapture %}

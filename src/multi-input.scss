@@ -34,10 +34,6 @@ $block: #{$fd-namespace}-multi-input;
     }
   }
 
-  &-tokens {
-    @include fd-reset();
-  }
-
   &__input {
     @include fd-focus() {
       box-shadow: none;

@@ -25,6 +25,11 @@ $block: #{$fd-namespace}-form-message;
     right: 0;
   }
 
+  &--static {
+    margin-top: 0;
+    display: block;
+  }
+
   &--error {
     background-color: var(--sapErrorBackground);
   }
