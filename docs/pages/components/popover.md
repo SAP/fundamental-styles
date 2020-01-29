@@ -179,7 +179,10 @@ There are four placement options:
         <div style="margin: 20px;">
             <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('/images/product-tile.jpg');" role="presentation" aria-label="Nature"></span>
         </div>
-        <div class="fd-popover__body-footer fd-popover__body-footer--compact">Popover Footer Compact</div>
+        <div class="fd-popover__body-footer fd-popover__body-footer--compact">
+            <button class="fd-button--emphasized fd-button--compact">Confirm</button>
+            <button class="fd-button--light fd-button--compact">Cancel</button>
+        </div>
     </div>
 </div>
 {% endcapture %}
