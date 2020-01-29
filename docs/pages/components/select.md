@@ -238,7 +238,7 @@ Disabled state can be rendered with a `readonly` attribute.
     </div>
 </div>
 </div>
-<span class="fd-form-message fd-form-message--success">Success message</span>
+<span class="fd-form-message fd-form-message--static fd-form-message--success">Success message</span>
 
 <br/>
 <br/>
@@ -279,7 +279,7 @@ Disabled state can be rendered with a `readonly` attribute.
        </div>
     </div>
 </div>
-<span class="fd-form-message fd-form-message--error">Error message</span>
+<span class="fd-form-message fd-form-message--static fd-form-message--error">Error message</span>
 
 <br/>
 <br/>
@@ -320,7 +320,7 @@ Disabled state can be rendered with a `readonly` attribute.
         </div>
     </div>
 </div>
-<span class="fd-form-message fd-form-message--warning">Warning message</span>
+<span class="fd-form-message fd-form-message--static fd-form-message--warning">Warning message</span>
 
 <br/>
 <br/>
@@ -361,7 +361,7 @@ Disabled state can be rendered with a `readonly` attribute.
         </div>
     </div>
 </div>
-<span class="fd-form-message fd-form-message--information">Information message</span>
+<span class="fd-form-message fd-form-message--static fd-form-message--information">Information message</span>
 
 {% endcapture %}
 

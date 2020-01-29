@@ -39,13 +39,13 @@
 
 <br><br>
 
-<h2>inline</h2>
+<h2>Readonly</h2>
 
 {% set example %}
 
-  {{ select(props, modifier={ block: ["inline"] } ) }}
+  {{ select(props, state={ readonly: true } ) }}
 
-  {{ select(props, modifier={ block: ["inline", "compact"] } ) }}
+  {{ select(props, modifier={ block: ["compact"] }, state={ readonly: true } ) }}
 
 {% endset %}
 {{ format(example) }}

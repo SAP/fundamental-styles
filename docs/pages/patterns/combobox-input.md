@@ -18,9 +18,9 @@ The combobox input component is an opinionated composition of the `input group`,
       <div class="fd-popover__control fd-input-group__control" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="true">
           <div class="fd-input-group">
               <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Fruit">
-              <a class="fd-input-group__addon fd-input-group__addon--button">
+              <span class="fd-input-group__addon fd-input-group__addon--button">
                   <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow fd-select__button"></button>
-              </a>
+              </span>
           </div>
       </div>
       <div class="fd-popover__body fd-popover__body--no-arrow fd-dropdown-list__popover" aria-hidden="true" id="F4GcX348">
@@ -57,9 +57,9 @@ The combobox input component is an opinionated composition of the `input group`,
       <div class="fd-popover__control fd-input-group__control" aria-controls="F4GcX34" aria-expanded="false" aria-haspopup="true">
                 <div class="fd-input-group">
                     <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
-                    <a class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
+                    <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
                         <button class="fd-input-group__button fd-button--compact fd-button--light sap-icon--navigation-down-arrow fd-select__button"></button>
-                    </a>
+                    </span>
                 </div>
             </div>
       <div class="fd-popover__body fd-popover__body--no-arrow fd-dropdown-list__popover" aria-hidden="true" id="F4GcX34">
@@ -99,9 +99,9 @@ The combobox input component is an opinionated composition of the `input group`,
   <div class="fd-popover__control fd-input-group__control" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="true" aria-disabled="true" disabled>
       <div class="fd-input-group" aria-disabled="true" disabled>
           <input type="text" class="fd-input fd-input-group__input" id="" value="Orange" placeholder="Select Fruit">
-          <a class="fd-input-group__addon fd-input-group__addon--button">
+          <span class="fd-input-group__addon fd-input-group__addon--button">
               <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow fd-select__button"></button>
-          </a>
+          </span>
       </div>
   </div>
 </div>
@@ -121,6 +121,8 @@ The combobox input component is an opinionated composition of the `input group`,
 {% include display-component.html component=readonly %}
 
 
+## Semantic Mode
+Whole list of states for Combobox can be found on `form` and `select` documentation.
 
 {% capture semantic %}
 <div class="documentation-site-popover-container">
@@ -128,9 +130,9 @@ The combobox input component is an opinionated composition of the `input group`,
       <div class="fd-popover__control fd-input-group__control" aria-controls="F4GcEX34" aria-expanded="false" aria-haspopup="true">
                 <div class="fd-input-group is-valid">
                     <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
-                    <a class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
+                    <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
                         <button class="fd-input-group__button fd-button--compact fd-button--light sap-icon--navigation-down-arrow fd-select__button"></button>
-                    </a>
+                    </span>
                 </div>
             </div>
       <div class="fd-popover__body fd-popover__body--no-arrow fd-dropdown-list__popover" aria-hidden="true" id="F4GcEX34">
@@ -160,6 +162,6 @@ The combobox input component is an opinionated composition of the `input group`,
       </div>
   </div>
 </div>
-<span class="fd-form-message fd-form-message--success">Success message</span>
+<span class="fd-form-message fd-form-message--static fd-form-message--success">Success message</span>
 {% endcapture %}
 {% include display-component.html component=semantic %}
