@@ -43,11 +43,11 @@ $(document).ready(function () {
                 var isExpanded = this.getAttribute("aria-expanded") === "true";
                 this.setAttribute("aria-expanded", !isExpanded);
                 if (isExpanded) {
-                    for (let i = 0; i < elements.length - 1; i ++) {
+                    for (let i = 0; i < elements.length; i ++) {
                       elements[i].classList.remove('is-expanded')
                     }
                 } else {
-                  for (let i = 0; i < elements.length - 1; i ++) {
+                  for (let i = 0; i < elements.length; i ++) {
                     elements[i].classList.add('is-expanded')
                   }
                 }

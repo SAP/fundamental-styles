@@ -28,6 +28,61 @@
     ]
 } %}
 
+{%- set multi_input_list = {
+
+    "groups": [
+      {
+        "items": [
+          {
+            "title": "List item 1"
+          },
+          {
+            "title": "List item 2 (Selected)",
+            "selected": true
+          },
+          {
+            "title": "List item 3 - Lorem ipsum dolor sit amet, consectetur sed do",
+            "active": true
+          },
+          {
+            "title": "List item 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+            "hover": true
+          }
+        ]
+      }
+    ]
+  } %}
+
+{%- set dropdown_list = {
+
+    "groups": [
+      {
+        "items": [
+          {
+            "title": "List item 1",
+			"secondary": "More information needed"
+          },
+          {
+            "title": "List item 2 (Selected)",
+            "selected": true,
+			"secondary": "More"
+          },
+          {
+            "title": "List item 3 - Lorem ipsum dolor sit amet, consectetur sed do",
+            "active": true,
+			"secondary": "Information"
+          },
+          {
+            "title": "List item 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+            "hover": true,
+			"secondary": "Very long text for information Very long text for information Very long text for information Very long text for information "
+          }
+        ]
+      }
+    ],
+    "footer": "Footer"
+  } %}
+
 {% set modifiers = ["", "compact", "no-border"] %}
 
 {% block content %}
@@ -119,5 +174,95 @@
         {%- endfor %}
     {% endset %}
     {{ format(example) }}
+
+	{% set modifiers = ["", "compact"] %}
+
+	<h2>Basic Multi Input</h2>
+	{% set example %}
+		{%- for modifier in modifiers %}
+			{%- if modifier %}
+				<h3>{{ modifier }}</h3>
+			{%- endif %}
+			{{ list(basic_list, toggles={"multiInput": true}, modifier=[modifier]) }}
+		{%- endfor %}
+	{% endset %}
+	{{ format(example) }}
+
+	<h2>Multi Input with active and selected state, plus footer</h2>
+	{% set example %}
+		{%- for modifier in modifiers %}
+			{%- if modifier %}
+				<h3>{{ modifier }}</h3>
+			{%- endif %}
+			{{ list(multi_input_list, toggles={"multiInput": true}, modifier=[modifier]) }}
+		{%- endfor %}
+	{% endset %}
+	{{ format(example) }}
+
+	<h2>Multi Input with active and selected state, plus footer and message</h2>
+	{% set example %}
+		{%- for modifier in modifiers %}
+			{%- if modifier %}
+				<h3>{{ modifier }}</h3>
+			{%- endif %}
+			{{ list(multi_input_list, toggles={"multiInput": true, "hasMessage": true}, modifier=[modifier]) }}
+		{%- endfor %}
+	{% endset %}
+	{{ format(example) }}
+
+	<h2>Basic Dropdown</h2>
+	{% set example %}
+		{%- for modifier in modifiers %}
+			{%- if modifier %}
+				<h3>{{ modifier }}</h3>
+			{%- endif %}
+			{{ list(basic_list, toggles={"dropdown": true}, modifier=[modifier]) }}
+		{%- endfor %}
+	{% endset %}
+	{{ format(example) }}
+
+	<h2>Dropdown with active and selected state</h2>
+	{% set example %}
+		{%- for modifier in modifiers %}
+			{%- if modifier %}
+				<h3>{{ modifier }}</h3>
+			{%- endif %}
+			{{ list(dropdown_list, toggles={"dropdown": true}, modifier=[modifier]) }}
+		{%- endfor %}
+	{% endset %}
+	{{ format(example) }}
+
+	<h2>Dropdown with active and selected state, plus message</h2>
+	{% set example %}
+		{%- for modifier in modifiers %}
+			{%- if modifier %}
+				<h3>{{ modifier }}</h3>
+			{%- endif %}
+			{{ list(dropdown_list, toggles={"dropdown": true, "hasMessage": true}, modifier=[modifier]) }}
+		{%- endfor %}
+	{% endset %}
+	{{ format(example) }}
+
+	<h2>Dropdown with active and selected state, plus message and 2 columns</h2>
+	{% set example %}
+		{%- for modifier in modifiers %}
+			{%- if modifier %}
+				<h3>{{ modifier }}</h3>
+			{%- endif %}
+			{{ list(dropdown_list, toggles={"dropdown": true, "useSecondary": true, "hasMessage": true}, modifier=[modifier]) }}
+		{%- endfor %}
+	{% endset %}
+	{{ format(example) }}
+
+	<h2>Dropdown with active and selected state, plus message and 2 columns, overflow no wrap</h2>
+	{% set example %}
+		{%- for modifier in modifiers %}
+			{%- if modifier %}
+				<h3>{{ modifier }}</h3>
+			{%- endif %}
+			{{ list(dropdown_list, toggles={"dropdown": true, "useSecondary": true, "hasMessage": true, "noWrap": true}, modifier=[modifier]) }}
+		{%- endfor %}
+	{% endset %}
+	{{ format(example) }}
 
 {% endblock %}

@@ -9,7 +9,6 @@ $block: #{$fd-namespace}-select;
   $fd-select-padding-compact-x: 0.5rem;
 
   @include fd-reset();
-  @include fd-dropdown-control($block);
 
   display: block;
   padding-right: 0;
@@ -29,6 +28,12 @@ $block: #{$fd-namespace}-select;
     .#{$block}__button {
       border-radius: 0;
       margin-left: 0.5rem;
+      color: var(--sapContent_IconColor);
+      border: none;
+
+      @include fd-hover() {
+        border: none;
+      }
     }
 
     @include fd-fiori-focus();
@@ -38,6 +43,26 @@ $block: #{$fd-namespace}-select;
       text-align: right;
       padding-right: $fd-select-padding-x;
       padding-left: 0;
+    }
+
+    @include fd-hover() {
+      .#{$block}__button {
+        background-color: var(--sapButton_Lite_Hover_Background);
+      }
+    }
+
+    &.is-expanded {
+      .#{$block}__button {
+        background-color: var(--sapButton_Active_Background);
+        color: var(--sapButton_Active_TextColor);
+      }
+    }
+
+    @include fd-active() {
+      .#{$block}__button {
+        background-color: var(--sapButton_Active_Background);
+        color: var(--sapButton_Active_TextColor);
+      }
     }
 
     &[readonly],

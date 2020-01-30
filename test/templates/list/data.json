@@ -1,60 +1,61 @@
 {
-    "id": "list",
-    "name": "List",
-    "type": "text",
-    "properties": {
-        "groups": [
-            {
-                "header": "Group Header 1",
-                "items": [
-                    {
-                        "title": "List item 1",
-                        "secondary": "Some status",
-                        "iconBefore": "X",
-                        "iconAfter": ">"
-                    },
-                    {
-                        "title": "List item 2 (Selected)",
-                        "secondary": "A different status",
-                        "iconBefore": "X",
-                        "iconAfter": ">",
-                        "selected": true
-                    },
-                    {
-                        "title": "List item 3 - Lorem ipsum dolor sit amet, consectetur sed do",
-                        "secondary": "Some status",
-                        "iconAfter": ">"
-                    },
-                    {
-                        "title": "List item 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
-                        "secondary": "More information needed",
-                        "iconBefore": "O"                    }
-                ]
-            },
-            {
-                "header": "Group Header 2",
-                "items": [
-                    {
-                        "title": "List item 5 (Active)",
-                        "secondary": "Status 1",
-                        "iconBefore": "O",
-                        "iconAfter": ">",
-                        "active": true
-                    },
-                    {
-                        "title": "List item 6",
-                        "secondary": "Status 2",
-                        "iconBefore": "X",
-                        "iconAfter": ">"
-                    }
-                ]
-            }
-        ],
-        "footer": "Footer"
-    },
-    "toggles": {
-        "useIconBefore": true,
-        "useIconAfter": true,
-        "useSecondary": true
-    }
+  "id": "list",
+  "name": "List",
+  "type": "text",
+  "properties": {
+    "groups": [
+      {
+        "header": "Group Header 1",
+        "items": [
+          {
+            "title": "List item 1",
+            "secondary": "Some status",
+            "iconBefore": "X",
+            "iconAfter": ">"
+          },
+          {
+            "title": "List item 2 (Selected)",
+            "secondary": "A different status",
+            "iconBefore": "X",
+            "iconAfter": ">",
+            "selected": true
+          },
+          {
+            "title": "List item 3 - Lorem ipsum dolor sit amet, consectetur sed do",
+            "secondary": "Some status",
+            "iconAfter": ">"
+          },
+          {
+            "title": "List item 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+            "secondary": "More information needed",
+            "iconBefore": "O"
+          }
+        ]
+      },
+      {
+        "header": "Group Header 2",
+        "items": [
+          {
+            "title": "List item 5 (Active)",
+            "secondary": "Status 1",
+            "iconBefore": "O",
+            "iconAfter": ">",
+            "active": true
+          },
+          {
+            "title": "List item 6",
+            "secondary": "Status 2",
+            "iconBefore": "X",
+            "iconAfter": ">"
+          }
+        ]
+      }
+    ],
+    "footer": "Footer"
+  },
+  "toggles": {
+    "useIconBefore": true,
+    "useIconAfter": true,
+    "useSecondary": true
+  }
 }

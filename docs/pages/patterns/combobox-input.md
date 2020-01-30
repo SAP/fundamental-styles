@@ -24,18 +24,18 @@ The combobox input component is an opinionated composition of the `input group`,
           </div>
       </div>
       <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcX348">
-            <ul class="fd-dropdown" role="listbox">
-                <li role="option" tabindex="0" class="fd-dropdown__item is-selected">
-                    <span class="fd-dropdown__title">List item 1</span>
+            <ul class="fd-list fd-list--dropdown" role="listbox">
+                <li role="option" tabindex="0" class="fd-list__item is-selected">
+                    <span class="fd-list__title">List item 1</span>
                 </li>
-                <li role="option" tabindex="0" class="fd-dropdown__item">
-                    <span class="fd-dropdown__title">List item 2</span>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">List item 2</span>
                 </li>
-                <li role="option" tabindex="0" class="fd-dropdown__item">
-                    <span class="fd-dropdown__title">List item 3</span>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">List item 3</span>
                 </li>
-                <li role="option" tabindex="0" class="fd-dropdown__item">
-                    <span class="fd-dropdown__title">List item 4</span>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">List item 4</span>
                 </li>
             </ul>
       </div>
@@ -55,18 +55,18 @@ The combobox input component is an opinionated composition of the `input group`,
                 </div>
             </div>
       <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcX34">
-            <ul class="fd-dropdown fd-dropdown--compact" role="listbox">
-                <li role="option" tabindex="0" class="fd-dropdown__item is-selected">
-                    <span class="fd-dropdown__title">List item 1</span>
+            <ul class="fd-list fd-list--dropdown fd-list--compact" role="listbox">
+                <li role="option" tabindex="0" class="fd-list__item is-selected">
+                    <span class="fd-list__title">List item 1</span>
                 </li>
-                <li role="option" tabindex="0" class="fd-dropdown__item">
-                    <span class="fd-dropdown__title">List item 2</span>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">List item 2</span>
                 </li>
-                <li role="option" tabindex="0" class="fd-dropdown__item">
-                    <span class="fd-dropdown__title">List item 3</span>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">List item 3</span>
                 </li>
-                <li role="option" tabindex="0" class="fd-dropdown__item">
-                    <span class="fd-dropdown__title">List item 4</span>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">List item 4</span>
                 </li>
             </ul>
       </div>
@@ -121,19 +121,19 @@ Whole list of states for Combobox can be found on `form` and `select` documentat
                 </div>
             </div>
       <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcEX34">
-            <ul class="fd-dropdown fd-dropdown--has-message fd-dropdown--compact" role="listbox">
-                <li class="fd-dropdown__message fd-dropdown__message--success">Success message</li>
-                <li role="option" tabindex="0" class="fd-dropdown__item is-selected">
-                    <span class="fd-dropdown__title">List item 1</span>
+            <ul class="fd-list fd-list--has-message fd-list--compact" role="listbox">
+                <li class="fd-list__message fd-list__message--success">Success message</li>
+                <li role="option" tabindex="0" class="fd-list__item is-selected">
+                    <span class="fd-list__title">List item 1</span>
                 </li>
-                <li role="option" tabindex="0" class="fd-dropdown__item">
-                    <span class="fd-dropdown__title">List item 2</span>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">List item 2</span>
                 </li>
-                <li role="option" tabindex="0" class="fd-dropdown__item">
-                    <span class="fd-dropdown__title">List item 3</span>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">List item 3</span>
                 </li>
-                <li role="option" tabindex="0" class="fd-dropdown__item">
-                    <span class="fd-dropdown__title">List item 4</span>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">List item 4</span>
                 </li>
             </ul>
       </div>

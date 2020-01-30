@@ -36,7 +36,6 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
   // states
   @include fd-form-states();
-  @include fd-dropdown-control($block);
   @include fd-input-group-focus();
 
   > * {
