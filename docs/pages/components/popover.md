@@ -69,7 +69,7 @@ There are four placement options:
     </div>
     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="popoverA2">
         <div style="margin: 20px;">
-            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('/images/product-tile.jpg');" role="presentation" aria-label="Nature"></span>
+            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" role="presentation" aria-label="Nature"></span>
         </div>
     </div>
 </div>
@@ -144,7 +144,7 @@ There are four placement options:
     </div>
     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="popoverHSF2">
         <div style="margin: 20px;">
-            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('/images/product-tile.jpg');" role="presentation" aria-label="Nature"></span>
+            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" role="presentation" aria-label="Nature"></span>
         </div>
         <div class="fd-popover__body-footer">Popover Footer</div>
     </div>
@@ -158,7 +158,7 @@ There are four placement options:
         <div class="fd-popover__body-header fd-popover__body-header--with-subheader">Popover Header</div>
         <div class="fd-popover__body-subheader">Popover Subheader</div>
         <div style="margin: 20px;">
-            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('/images/product-tile.jpg');" role="presentation" aria-label="Nature"></span>
+            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" role="presentation" aria-label="Nature"></span>
         </div>
         <div class="fd-popover__body-footer">Popover Footer</div>
     </div>
@@ -172,7 +172,7 @@ There are four placement options:
         <div class="fd-popover__body-header fd-popover__body-header--compact fd-popover__body-header--with-subheader">Popover Header Compact</div>
         <div class="fd-popover__body-subheader fd-popover__body-subheader--compact">Popover Subheader Compact</div>
         <div style="margin: 20px;">
-            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('/images/product-tile.jpg');" role="presentation" aria-label="Nature"></span>
+            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" role="presentation" aria-label="Nature"></span>
         </div>
         <div class="fd-popover__body-footer fd-popover__body-footer--compact">Popover Footer Compact</div>
     </div>
