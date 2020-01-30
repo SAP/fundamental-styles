@@ -43,9 +43,13 @@ $(document).ready(function () {
                 var isExpanded = this.getAttribute("aria-expanded") === "true";
                 this.setAttribute("aria-expanded", !isExpanded);
                 if (isExpanded) {
-                    elements.forEach(element => element.classList.remove('is-expanded'));
+                    elements.forEach(function(element) {
+                      element.classList.remove('is-expanded')
+                    });
                 } else {
-                    elements.forEach(element => element.classList.add('is-expanded'));
+                  elements.forEach( function(element) {
+                    element.classList.add('is-expanded')
+                  });
                 }
                 //target
                 target.setAttribute("aria-hidden", isExpanded);
