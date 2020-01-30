@@ -531,32 +531,32 @@ In special cases, there are only two mutually exclusive options. Combine them in
     <legend class="fd-fieldset__legend">Interaction States</legend>
     <div class="fd-form-group">
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio" id="iSpDidh761" name="radiortl" checked>
-            <label class="fd-radio__label" for="iSpDidh761">
+            <input type="radio" class="fd-radio" id="radioRtl1" name="radiortl" checked>
+            <label class="fd-radio__label" for="radioRtl1">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio is-valid" id="iSpDidh7612" name="radiortl">
-            <label class="fd-radio__label" for="iSpDidh7612">
+            <input type="radio" class="fd-radio is-valid" id="radioRtl2" name="radiortl">
+            <label class="fd-radio__label" for="radioRtl2">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio is-invalid" id="iSpDidh7613" name="radiortl">
-            <label class="fd-radio__label" for="iSpDidh7613">
+            <input type="radio" class="fd-radio is-invalid" id="radioRtl3" name="radiortl">
+            <label class="fd-radio__label" for="radioRtl3">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio is-warning" id="iSpDidh7614" name="radiortl">
-            <label class="fd-radio__label" for="iSpDidh7614">
+            <input type="radio" class="fd-radio is-warning" id="radioRtl4" name="radiortl">
+            <label class="fd-radio__label" for="radioRtl4">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio is-information" id="iSpDidh7615" name="radiortl">
-            <label class="fd-radio__label" for="iSpDidh7615">
+            <input type="radio" class="fd-radio is-information" id="radioRtl5" name="radiortl">
+            <label class="fd-radio__label" for="radioRtl5">
                 Field label
             </label>
         </div>
