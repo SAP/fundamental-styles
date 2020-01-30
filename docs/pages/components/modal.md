@@ -71,6 +71,11 @@ Compact mode - modifying header/footer height (default 2.75rem):
     <li><code>.fd-modal__content--compact</code>: 2.5rem</li>
 </ul>
 
+No stretch on mobile devices - adds margins around modal content (by default modal on mobile devices takes full height and width of the screen):
+<ul>
+    <li><code>.fd-modal__content--no-mobile-stretch</code> margin: 6% 10%</li>
+</ul>
+
 
 ### Modal header/footer horizontal paddings
 {% capture modal-size %}
@@ -84,7 +89,7 @@ Compact mode - modifying header/footer height (default 2.75rem):
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             </div>
             <footer class="fd-modal__footer">
-                <button class="fd-button">Yes</button>
+                <button class="fd-button--emphasized">Yes</button>
                 <button class="fd-button--light">No</button>
             </footer>
         </div>
@@ -100,7 +105,7 @@ Compact mode - modifying header/footer height (default 2.75rem):
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                 </div>
                 <footer class="fd-modal__footer">
-                    <button class="fd-button">Yes</button>
+                    <button class="fd-button--emphasized">Yes</button>
                     <button class="fd-button--light">No</button>
                 </footer>
             </div>
@@ -116,7 +121,7 @@ Compact mode - modifying header/footer height (default 2.75rem):
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                 </div>
                 <footer class="fd-modal__footer">
-                    <button class="fd-button">Yes</button>
+                    <button class="fd-button--emphasized">Yes</button>
                     <button class="fd-button--light">No</button>
                 </footer>
             </div>
@@ -137,7 +142,7 @@ Compact mode - modifying header/footer height (default 2.75rem):
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             </div>
             <footer class="fd-modal__footer">
-                <button class="fd-button">Yes</button>
+                <button class="fd-button--emphasized">Yes</button>
                 <button class="fd-button--light">No</button>
             </footer>
         </div>
@@ -159,7 +164,7 @@ Modal can be opened in resizable mode, enabling to horizontally and vertically r
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
             <footer class="fd-modal__footer">
-                <button class="fd-button">Yes</button>
+                <button class="fd-button--emphasized">Yes</button>
                 <button class="fd-button--light">No</button>
             </footer>
         </div>
@@ -207,7 +212,7 @@ This is used to confirm with the user before continuing with a destructive or co
                 Do you want to delete item <b>X</b>?
             </div>
             <footer class="fd-modal__footer">
-                <button class="fd-button">Yes</button>
+                <button class="fd-button--emphasized">Yes</button>
                 <button class="fd-button--light">No</button>
             </footer>
         </div>
@@ -232,7 +237,7 @@ This is used for short forms in order to collect information from the user.
                 </div>            
             </div>
             <footer class="fd-modal__footer">
-                <button class="fd-button">Invite</button>
+                <button class="fd-button--emphasized">Invite</button>
                 <button class="fd-button--light">Cancel</button>
             </footer>
         </div>
