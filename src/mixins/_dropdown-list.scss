@@ -2,20 +2,15 @@
 @import "./list";
 @import "./forms";
 
-$fd-dropdown-list-vertical-padding: 0.75rem;
-$fd-dropdown-list-vertical-compact-padding: 0.5rem;
+$fd-dropdown-vertical-padding: 0.75rem;
+$fd-dropdown-vertical-compact-padding: 0.5rem;
 
 @mixin dropdown-list($block) {
   @include list($block);
 
-  &__popover {
-    min-width: 5rem;
-    max-width: 37.5rem;
-  }
-
   &__item {
     height: auto;
-    padding: $fd-dropdown-list-vertical-padding $fd-list-horizontal-padding;
+    padding: $fd-dropdown-vertical-padding $fd-list-horizontal-padding;
   }
 
   &__title,
@@ -30,7 +25,7 @@ $fd-dropdown-list-vertical-compact-padding: 0.5rem;
   &--compact {
     .#{$block}__item {
       height: auto;
-      padding: $fd-dropdown-list-vertical-compact-padding $fd-list-horizontal-padding;
+      padding: $fd-dropdown-vertical-compact-padding $fd-list-horizontal-padding;
     }
   }
 

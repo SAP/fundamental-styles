@@ -61,7 +61,7 @@ $block: #{$fd-namespace}-multi-input;
 
   &__footer,
   &__label {
-    padding: $fd-dropdown-list-vertical-padding $fd-list-horizontal-padding;
+    padding: $fd-dropdown-vertical-padding $fd-list-horizontal-padding;
   }
 
   &--compact {
@@ -79,7 +79,7 @@ $block: #{$fd-namespace}-multi-input;
 
     .#{$block}__footer,
     .#{$block}__label {
-      padding: $fd-dropdown-list-vertical-compact-padding $fd-list-horizontal-padding;
+      padding: $fd-dropdown-vertical-compact-padding $fd-list-horizontal-padding;
     }
   }
 }

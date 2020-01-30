@@ -15,8 +15,8 @@ summary:
 {% capture default %}
 <div class="documentation-site-popover-container">
     <div class="fd-popover">
-        <div class="fd-popover__control fd-input-group__control" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true">
-            <div class="fd-input-group">
+        <div class="fd-popover__control" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true">
+            <div class="fd-input-group fd-input-group--control">
                 <div class="fd-tokenizer">
                     <div class="fd-tokenizer__inner">
                         <span class="fd-token" role="button">
@@ -53,11 +53,11 @@ summary:
                     </div>
                 </div>
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button--light sap-icon--value-help"></button>
+                    <button class="fd-input-group__button fd-button--light sap-icon--value-help" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true"></button>
                 </span>
             </div>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow fd-dropdown-list__popover" aria-hidden="true" id="F4GcX348a">
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcX348a">
             <ul class="fd-multi-input">
                  <li class="fd-multi-input__item is-selected" role="option">
                     <input type="checkbox" checked class="fd-checkbox fd-multi-input__input" id="Ai4ez611">
@@ -109,7 +109,7 @@ summary:
 <div class="documentation-site-popover-container">
     <div class="fd-popover">
         <div class="fd-popover__control" aria-controls="F4GcX34a" aria-expanded="false" aria-haspopup="true">
-            <div class="fd-input-group">
+            <div class="fd-input-group fd-input-group--control">
                 <div class="fd-tokenizer fd-tokenizer--compact">
                     <div class="fd-tokenizer__inner">
                         <span class="fd-token fd-token--compact" role="button">
@@ -146,11 +146,11 @@ summary:
                     </div>
                 </div>
                 <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                    <button class="fd-input-group__button fd-button--light fd-button--compact sap-icon--value-help"></button>
+                    <button class="fd-input-group__button fd-button--light fd-button--compact sap-icon--value-help" aria-controls="F4GcX34a" aria-expanded="false" aria-haspopup="true"></button>
                 </span>
             </div>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow fd-dropdown-list__popover" aria-hidden="true" id="F4GcX34a">
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcX34a">
              <ul class="fd-multi-input fd-multi-input--compact">
                   <li class="fd-multi-input__item is-selected" role="option">
                      <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-multi-input__input" id="Ab4ez611">
@@ -183,8 +183,8 @@ summary:
 
 {% capture disabled %}
 <div class="fd-popover">
-    <div class="fd-popover__control fd-input-group__control" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="false">
-        <div class="fd-input-group" readonly aria-readonly="true">
+    <div class="fd-popover__control" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="false">
+        <div class="fd-input-group fd-input-group--control" readonly aria-readonly="true">
             <div class="fd-tokenizer fd-tokenizer--readonly">
                 <div class="fd-tokenizer__inner">
                     <span class="fd-token fd-token--readonly" role="button">
@@ -245,8 +245,8 @@ summary:
 {% capture readonly %}
 <div class="documentation-site-popover-container">
     <div class="fd-popover">
-        <div class="fd-popover__control fd-input-group__control" aria-expanded="false" aria-haspopup="true" aria-disabled="true" disabled>
-            <div class="fd-input-group"  aria-disabled="true" disabled>
+        <div class="fd-popover__control" aria-expanded="false" aria-haspopup="true" aria-disabled="true" disabled>
+            <div class="fd-input-group fd-input-group--control"  aria-disabled="true" disabled>
                 <div class="fd-tokenizer">
                     <div class="fd-tokenizer__inner">
                         <span class="fd-token fd-token--readonly" role="button">
@@ -312,7 +312,7 @@ Whole list of states for MultiInput can be found on `form` and `select` document
 <div class="documentation-site-popover-container">
     <div class="fd-popover">
         <div class="fd-popover__control fd-input-group__control" aria-controls="F4GcKJH8a" aria-expanded="false" aria-haspopup="true">
-            <div class="fd-input-group is-valid">
+            <div class="fd-input-group fd-input-group--control is-valid">
                 <div class="fd-tokenizer">
                     <div class="fd-tokenizer__inner">
                         <span class="fd-token" role="button">
@@ -349,11 +349,11 @@ Whole list of states for MultiInput can be found on `form` and `select` document
                     </div>
                 </div>
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button--light sap-icon--value-help"></button>
+                    <button class="fd-input-group__button fd-button--light sap-icon--value-help" aria-controls="F4GcKJH8a" aria-expanded="false" aria-haspopup="true"></button>
                 </span>
             </div>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow fd-dropdown-list__popover" aria-hidden="true" id="F4GcKJH8a">
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcKJH8a">
             <ul class="fd-multi-input fd-multi-input--has-message">
                 <li class="fd-multi-input__message fd-multi-input__message--success">Success Message</li>
                  <li class="fd-multi-input__item is-selected" role="option">
