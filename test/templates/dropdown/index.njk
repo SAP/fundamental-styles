@@ -6,165 +6,77 @@
 
 {% block content %}
 
-  <style media="screen">
-      .fd-dropdown {
-          margin-right: 10px;
-          margin-bottom: 10px;
-      }
-  </style>
 
-  {% set modifiers = ["default", "compact"
-  ] %}
-  {% set types = ["", "standard" ] %}
-
-
-  <p><strong>onclick</strong>: change aria-expanded boolean on the control and change aria-hidden boolean on the menu </p>
-  <p>Shows default and <code>compact</code> modifiers. Include modifier button.</p>
-
-{% set bodyitems = menu(properties={
-  items: [
-      { "label": "Option 1" },
-      { "label": "Option 2" },
-      { "label": "Option 3" },
-      { "label": "Option 4" }
-    ]
-  })
-%}
-{% set props = {
-  label: data.properties.label,
-  body: bodyitems
-} %}
-
-  {% set example %}
-
-  {{ dropdown(props) }}
-
-  {{ dropdown(props, modifier={ block: ["compact"]} ) }}
-
+{% set basic_dropdown %}
+	{{ dropdown(
+		properties={
+			text: "Text"
+		})
+	}}
 {% endset %}
-{{ format(example) }}
 
-<br><br>
-<h3>toolbar</h3>
-{% set example %}
+{{ format(basic_dropdown) }}
 
 
-{{ dropdown(props, modifier={ block: ["standard"]} ) }}
-{{ dropdown(props, modifier={ block: ["compact", "standard"]} ) }}
+{% set compact_dropdown %}
 
+	{{ dropdown(
+		properties={
+			text: "Text"
+		},
+		modifier={
+			compact: true
+		})
+	}}
 {% endset %}
-{{ format(example) }}
 
+{{ format(compact_dropdown) }}
 
-<br><br>
+{% set two_lines_dropdown %}
 
-  {% set example %}
-
-
-
-
-
-    {%- for modifier in modifiers %}
-      {% if modifier === "default" %}
-        {{ dropdown(properties={
-          label: "Select",
-          body: menu(properties={
-            items: [
-                { "label": "Option 1" },
-                { "label": "Option 2" },
-                { "label": "Option 3" },
-                { "label": "Option 4" }
-              ]
-            })
-          })
-        }}
-      {% else %}
-        {{ dropdown(properties={
-          label: "Select",
-          body: menu(properties={
-            items: [
-                { "label": "Option 1" },
-                { "label": "Option 2" },
-                { "label": "Option 3" },
-                { "label": "Option 4" }
-              ]
-            })
-        },modifier={ block: modifier, button: btn })
-        }}
-      {% endif %}
-    {%- endfor %}
-  {% endset %}
-  {{ format(example) }}
-
-<br><br>
-
-<h2>icon</h2>
-
-{% set example %}
-  {%- for modifier in modifiers %}
-    {% if modifier === "default" %}
-        {{ dropdown(properties={
-          icon: "filter",
-          label: "Select",
-          body: menu(properties={
-            items: [
-                { "label": "Option 1" },
-                { "label": "Option 2" },
-                { "label": "Option 3" },
-                { "label": "Option 4" }
-              ]
-            })
-          })
-        }}
-      {% else %}
-        {{ dropdown(properties={
-          icon: "filter",
-          label: "Select",
-          body: menu(properties={
-            items: [
-                { "label": "Option 1" },
-                { "label": "Option 2" },
-                { "label": "Option 3" },
-                { "label": "Option 4" }
-              ]
-            })
-        },modifier={ block: modifier })
-        }}
-      {% endif %}
-  {%- endfor %}
+	{{ dropdown(
+		properties={
+			text: "Text",
+			twoLabels: "true"
+		},
+		modifier={
+			compact: true
+		})
+	}}
 {% endset %}
-{{ format(example) }}
 
+{{ format(two_lines_dropdown) }}
 
-<br><br>
+{% set long_dropdown %}
 
-<h2>disabled</h2>
-
-{%- for modifier in modifiers %}
-  {% if modifier === "default" %}
-    {{  dropdown(properties=data.properties, aria={ disabled: true }) }}
-  {% else %}
-   {{  dropdown(properties=data.properties,modifier={ block: modifier }, aria={ disabled: true }) }}
-  {% endif %}
-{%- endfor %}
-
-<br>
-
-{% set example %}
-  {%- for modifier in modifiers %}
-    {% if modifier === "default" %}
-      {{  dropdown(properties={
-        icon: "filter",
-        label: "Select" }, aria={ disabled: true })
-      }}
-    {% else %}
-      {{  dropdown(properties={
-        icon: "filter",
-        label: "Select" },modifier={ block: modifier }, aria={ disabled: true }) }}
-    {% endif %}
-  {%- endfor %}
+	{{ dropdown(
+		properties={
+			text: "Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text ",
+			twoLabels: "true"
+		},
+		modifier={
+			compact: true
+		})
+	}}
 {% endset %}
-{{ format(example) }}
 
+{{ format(long_dropdown) }}
+
+{% set long_nowrap_dropdown %}
+
+	{{ dropdown(
+		properties={
+			text: "Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text ",
+			twoLabels: "true",
+			noWrap: "true"
+		},
+		modifier={
+			compact: true
+		})
+	}}
+{% endset %}
+
+{{ format(long_nowrap_dropdown) }}
 
 {% endblock %}
+

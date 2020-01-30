@@ -2,27 +2,37 @@
 {% from "./../icon/component.njk" import icon %}
 {% from "./../popover/component.njk" import popover %}
 
-<!--
-dropdown:
+{#
+    see ./data.json for object structure
+#}
+
+{% macro dropdown(
     properties={},
-    modifier={ block: [] },
     state={},
-    aria={}
--->
-{%- macro dropdown(properties={}, modifier={}, state={}, aria={}, size="") %}
-    {%- set _id = utils.id() -%}
-    <div class="fd-dropdown{{ modifier.block | modifier('dropdown') }}">
-        {%- macro dropdown_control(properties={}, modifier={}, state={}, aria={}) -%}
-            {%- set btn_modifier_class = " fd-button--"+modifier.block if modifier.block and modifier.block !== "default" else "" %}
-            <button class="fd-dropdown__control{{ modifier.control | modifier('dropdown__control') }} fd-button {{ "sap-icon--"+properties.icon if properties.icon }} {{ size | modifier('button') }} {{ modifier.block | modifier('button') }}" aria-controls="{{ properties.id }}" aria-expanded="false" aria-haspopup="true"{{ " disabled" if state.disabled }}{{ aria | aria }}>
-                {{ properties.label }}
-            </button>
-        {%- endmacro %}
-        {{  popover(properties={
-                id: _id,
-                control: dropdown_control(properties={label: properties.label, id: _id, icon: properties.icon}, modifier={ block: modifier.block }, state={ disabled: aria.disabled }),
-                body: properties.body
-            })
-        }}
-    </div>
+    aria={},
+    twoLabels='false',
+    modifier={},
+    classes=[]
+    ,size="")
+-%}
+	<ul class="fd-dropdown{{ ' fd-dropdown--compact' if modifier.compact }}">
+	  <li class="fd-dropdown__item is-selected" role="option">
+		<span class="fd-dropdown__title {{ ' fd-dropdown__title--no-wrap' if properties.noWrap =='true' }}">{{properties.text}}</span>
+		{%- if properties.twoLabels =='true' -%}
+			<span class="fd-dropdown__secondary">A1</span>
+		{%- endif -%}
+	 </li>
+	  <li class="fd-dropdown__item" role="option">
+		<span class="fd-dropdown__title">Text Option</span>
+		{%- if properties.twoLabels =='true' -%}
+			<span class="fd-dropdown__secondary">A1</span>
+		{%- endif -%}
+	 </li>
+	  <li class="fd-dropdown__item is-active" role="option">
+		<span class="fd-dropdown__title">Text Option</span>
+		{%- if properties.twoLabels =='true' -%}
+			<span class="fd-dropdown__secondary">A1</span>
+		{%- endif -%}
+	 </li>
+	</ul>
 {%- endmacro %}
