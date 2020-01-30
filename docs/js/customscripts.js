@@ -43,13 +43,13 @@ $(document).ready(function () {
                 var isExpanded = this.getAttribute("aria-expanded") === "true";
                 this.setAttribute("aria-expanded", !isExpanded);
                 if (isExpanded) {
-                    elements.forEach(function(element) {
-                      element.classList.remove('is-expanded')
-                    });
+                    for (let i = 0; i < elements.length - 1; i ++) {
+                      elements[i].classList.remove('is-expanded')
+                    }
                 } else {
-                  elements.forEach( function(element) {
-                    element.classList.add('is-expanded')
-                  });
+                  for (let i = 0; i < elements.length - 1; i ++) {
+                    elements[i].classList.add('is-expanded')
+                  }
                 }
                 //target
                 target.setAttribute("aria-hidden", isExpanded);
