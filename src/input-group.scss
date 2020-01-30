@@ -202,6 +202,31 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
     border: none;
     width: 100%;
+
+    &.is-expanded {
+      background-color: var(--sapButton_Active_Background);
+      color: var(--sapButton_Active_TextColor);
+    }
+  }
+
+  &--control {
+    @include fd-hover() {
+      .#{$block}__button {
+        background-color: var(--sapButton_Lite_Hover_Background);
+
+        &.is-expanded {
+          background-color: var(--sapButton_Active_Background);
+          color: var(--sapButton_Active_TextColor);
+        }
+      }
+    }
+
+    @include fd-active() {
+      .#{$block}__button {
+        background-color: var(--sapButton_Active_Background);
+        color: var(--sapButton_Active_TextColor);
+      }
+    }
   }
 
   .#{$fd-namespace}-textarea {
