@@ -213,15 +213,6 @@ pre {
     font-weight: 400;
 }
 
-.docs-alert {
-  margin: 0 0 30px 0;
-}
-
-.docs-message-strip {
-  margin: 0 0 30px 0;
-}
-
-
 #mobile-sidenav-btn {
     display: none;
     @include media("<=tablet") {
