@@ -327,6 +327,7 @@ $block: #{$fd-namespace}-list;
 
   &--dropdown,
   &--multi-input {
+    display: block;
     min-width: 5rem;
     max-width: 37.5rem;
 

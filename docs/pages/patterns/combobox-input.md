@@ -135,7 +135,7 @@ Also the `fd-list--has-message` modifier should be added to `ul` element.
             </div>
         </div>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcEX34">
-        <ul class="fd-list fd-list--has-message fd-list--compact" role="listbox">
+        <ul class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
             <li class="fd-list__message fd-list__message--success">Success message</li>
             <li role="option" tabindex="0" class="fd-list__item is-selected">
                 <span class="fd-list__title">List item 1</span>
