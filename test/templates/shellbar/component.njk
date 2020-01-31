@@ -8,7 +8,7 @@
 {# .fd-search-input #}
 {% macro search_input() -%}
     <div class="fd-search-input input-group-playground">
-    <input class="input-group-input-playground" type="text" placeholder="search input" /> 
+    <input class="input-group-input-playground fd-shellbar__input-group__input" type="text" placeholder="search input" />
     <button class="btn-playground fd-shellbar__button">%%</button>
     </div>
 {%- endmacro %}
@@ -63,19 +63,17 @@
     <div class="fd-shellbar__group fd-shellbar__group--product">
         {{ shell_logo(logo=logo) }}
           {% if product %}
-          <div class="fd-product-menu">
-              <button class="fd-product-menu__control" aria-controls="4Gsw5984" aria-haspopup="true" aria-expanded="false">
-                <span class="fd-shellbar__title">Title</span>
-              </button>
-              {# popover for product-menu #}
-          </div>
+          <button class="fd-shellbar__button--menu" aria-controls="4Gsw5984" aria-haspopup="true" aria-expanded="false">
+            <span class="fd-shellbar__title">Title</span>
+          </button>
+          {# popover for product-menu #}
           {% else %}
             <span class="fd-shellbar__title">Title</span>
           {% endif %}
           <div class="fd-shellbar__subtitle">Subtitle</div>
     </div>
     <div class="fd-shellbar__group fd-shellbar__group--copilot">
-      <img src="/static/copilot.png" alt="CoPilot" height="30" width="30" />
+      <button class="fd-shellbar__button"><img src="/static/copilot.png" alt="CoPilot" height="30" width="30" /></button>
     </div>
       <div class="fd-shellbar__group fd-shellbar__group--actions">
           <div class="fd-shellbar__action fd-shellbar__action--desktop">

@@ -40,7 +40,7 @@ $block-product-menu: #{$fd-namespace}-product-menu;
     }
 
     &::after {
-      @include triangle(10px 5px, fd-color("shell", 2), down, --fd-color-shell-2);
+      @include triangle(10px 5px, var(--sapShellInteractiveTextColor), down, --fd-color-shell-2);
 
       content: "";
       position: absolute;
