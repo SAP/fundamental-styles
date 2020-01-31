@@ -82,13 +82,13 @@ A circle style can be rendered using the `--circle` modifier.
 A background image can be applied to any style using the `--thumbnail` modifier.
 
 {% capture identifier-thumbnail %}
-<span class="fd-identifier fd-identifier--xxs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('{{site.baseurl}}/images/thumbs/headshot-male.jpg')" role="presentation" aria-label="John Doe"></span>
-<span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('{{site.baseurl}}/images/thumbs/headshot-male.jpg')" role="presentation" aria-label="John Doe"></span>
-<span class="fd-identifier fd-identifier--s fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('{{site.baseurl}}/images/thumbs/headshot-male.jpg')" role="presentation" aria-label="John Doe"></span>
-<span class="fd-identifier fd-identifier--m fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('{{site.baseurl}}/images/thumbs/headshot-male.jpg')" role="presentation" aria-label="John Doe"></span>
-<span class="fd-identifier fd-identifier--l fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('{{site.baseurl}}/images/thumbs/headshot-male.jpg')" role="presentation" aria-label="John Doe"></span>
-<span class="fd-identifier fd-identifier--xl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('{{site.baseurl}}/images/thumbs/headshot-male.jpg')" role="presentation" aria-label="John Doe"></span>
-<span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('{{site.baseurl}}/images/thumbs/headshot-male.jpg')" role="presentation" aria-label="John Doe"></span>
+<span class="fd-identifier fd-identifier--xxs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature')" role="presentation" aria-label="John Doe"></span>
+<span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature')" role="presentation" aria-label="John Doe"></span>
+<span class="fd-identifier fd-identifier--s fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature')" role="presentation" aria-label="John Doe"></span>
+<span class="fd-identifier fd-identifier--m fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature')" role="presentation" aria-label="John Doe"></span>
+<span class="fd-identifier fd-identifier--l fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature')" role="presentation" aria-label="John Doe"></span>
+<span class="fd-identifier fd-identifier--xl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature')" role="presentation" aria-label="John Doe"></span>
+<span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature')" role="presentation" aria-label="John Doe"></span>
 
 
 {% endcapture %}
