@@ -1,0 +1,91 @@
+@mixin light() {
+  border-color: var(--sapButton_Lite_BorderColor);
+  background-color: var(--sapButton_Lite_Background);
+}
+
+@mixin lightHover {
+  // the hover color should be taken fron standard positive negative button
+  // @include applyColors(
+  //   var(--sapButton_Lite_Hover_Background),
+  //   var(--sapButton_Lite_Hover_BorderColor),
+  //   var(--sapButton_Lite_Hover_TextColor)
+  // );
+}
+
+@mixin lightPressed() {
+  // the pressed color should be taken fron standard positive negative button
+  // @include applyColors(
+  //   var(--sapButton_Selected_TextColor),
+  //   var(--sapButton_Lite_Active_BorderColor),
+  //   var(--sapButton_Lite_Active_Background)
+  // );
+
+  @include fd-disabled() {
+    @include lightDisabled();
+  }
+}
+
+@mixin lightDisabled() {
+  @include light();
+  @include isDisabled();
+
+  &:focus {
+    @include light();
+  }
+
+  box-shadow: none;
+}
+
+@mixin isLight() {
+  @include light();
+
+  color: var(--sapButton_Lite_TextColor);
+
+  &:focus {
+    @include focus();
+  }
+
+  @include fd-hover() {
+    @include lightHover();
+  }
+
+  @include fd-disabled() {
+    @include lightDisabled();
+  }
+
+  @include fd-active-pressed-selected() {
+    @include lightPressed();
+  }
+
+  &.#{$block}--standard {
+    @include isStandard();
+    @include light();
+
+    @include fd-disabled() {
+      @include light();
+      @include isDisabled();
+
+      box-shadow: none;
+    }
+  }
+
+  &.#{$block}--negative {
+    @include isNegative();
+    @include light();
+
+    @include fd-disabled() {
+      @include light();
+      @include isDisabled();
+    }
+  }
+
+  &.#{$block}--positive {
+    @include isPositive();
+    @include light();
+
+    @include fd-disabled() {
+      @include light();
+      @include isDisabled();
+    }
+  }
+}

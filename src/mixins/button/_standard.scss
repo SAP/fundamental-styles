@@ -1,0 +1,62 @@
+@mixin standard() {
+  @include applyColors(var(--sapButton_TextColor), var(--sapButton_BorderColor), var(--sapButton_Background));
+}
+
+@mixin standardHover {
+  @include applyColors(
+    var(--sapButton_Hover_TextColor),
+    var(--sapButton_Hover_BorderColor),
+    var(--sapButton_Hover_Background)
+  );
+
+  &:active {
+    @include standardPressed();
+  }
+}
+
+@mixin standardPressed {
+  @include applyColors(
+    var(--sapButton_Selected_TextColor),
+    var(--sapButton_Active_Background),
+    var(--sapButton_BorderColor)
+  );
+
+  &:focus {
+    outline-color: var(--sapContent_ContrastFocusColor);
+  }
+
+  @include fd-disabled() {
+    @include standardDisabled();
+  }
+}
+
+@mixin standardDisabled() {
+  @include isDisabled();
+  @include standard();
+
+  &:focus {
+    outline: none;
+  }
+
+  box-shadow: none;
+}
+
+@mixin isStandard() {
+  @include standard();
+
+  @include fd-hover() {
+    @include standardHover();
+  }
+
+  @include fd-disabled() {
+    @include standardDisabled();
+  }
+
+  @include fd-active-pressed-selected() {
+    @include standardPressed();
+  }
+
+  &:focus {
+    @include focus();
+  }
+}

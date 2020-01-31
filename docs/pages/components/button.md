@@ -153,12 +153,29 @@ Button with multiple actions
   </div>
 </div>
 
-<div class="fd-button-split" role="group" aria-label="button-split">
+<div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
   <button class="fd-button--emphasized sap-icon--cart" aria-label="button">Button with text</button>
   <button class="fd-button--emphasized sap-icon--slim-arrow-down" aria-controls="t4c0o2732" 
   aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
     id="t4c0o2732">
+    <nav class="fd-menu">
+        <ul class="fd-menu__list">
+          <li><a role="button" class="fd-menu__item">Add to list</a>
+        </li>
+          <li><a role="button" class="fd-menu__item">Save for later</a>
+        </li>
+        </ul>
+    </nav>
+  </div>
+</div>
+
+<div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
+  <button class="fd-button fd-button--compact sap-icon--cart" aria-label="button">Button with text</button>
+  <button class="fd-button fd-button--compact sap-icon--slim-arrow-down" aria-controls="t4c0o273" aria-haspopup="true" 
+  aria-expanded="false" aria-label="More"></button>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
+  id="t4c0o273">
     <nav class="fd-menu">
         <ul class="fd-menu__list">
           <li><a role="button" class="fd-menu__item">Add to list</a>

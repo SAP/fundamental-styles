@@ -1,5 +1,5 @@
 // accepts size key or increment, modify enables on fd-space-modifier
-@function fd-space($size: reg, $modifiable: false) {
+@function fd-space($size: reg) {
   $_map: $fd-spacing;
   // set base
   $_size: map-get($_map, base);
@@ -19,10 +19,6 @@
     } @else {
       @warn "Invalid $size of `#{$size}`. Valid $size values are #{map-keys($_map)}. Returning default `#{$_size}`.";
     }
-  }
-
-  @if $modifiable {
-    $_size: fd-modify-space_($_size);
   }
 
   @return $_size;
