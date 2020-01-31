@@ -14,6 +14,10 @@ The select control (also known as a dropdown) is commonly used to enable users t
 ## Sizes
 
 {% capture select-sizes %}
+<label class="fd-form-label">
+    Select Cozy Mode
+</label>
+<br>
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
@@ -41,8 +45,12 @@ The select control (also known as a dropdown) is commonly used to enable users t
   </div>
 </div>
 <br />
+<br />
 
-<h4>Compact Size</h4>
+<label class="fd-form-label">
+    Select Compact Mode
+</label>
+<br>
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select fd-select--compact">
@@ -79,6 +87,10 @@ The select control (also known as a dropdown) is commonly used to enable users t
 ## Two Columns
 
 {% capture two-col %}
+<label class="fd-form-label">
+    Select Cozy Mode With 2 Columns
+</label>
+<br>
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
@@ -110,8 +122,13 @@ The select control (also known as a dropdown) is commonly used to enable users t
   </div>
 </div>
 <br />
+<br />
 
-<h4>Compact Size</h4>
+
+<label class="fd-form-label">
+    Select Compact Mode With 2 Columns
+</label>
+<br>
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select fd-select--compact">
@@ -151,8 +168,8 @@ The select control (also known as a dropdown) is commonly used to enable users t
 
 
 ## Disabled State
-
-Disabled state can be rendered with a `disabled` attribute.
+To add disabled state, it is mandatory to add `disabled` attribute to `fd-popover__control` and `fd-select__control` element
+Disabled state can be enabled also by adding `.is-disabled` class, or `aria-disabled="true"` 
 
 {% capture disabled-select %}
 <div class="fd-popover">
@@ -171,12 +188,12 @@ Disabled state can be rendered with a `disabled` attribute.
 
 
 ## Readonly State
-
-Disabled state can be rendered with a `readonly` attribute.
+To add readonly state, it is mandatory to add `readonly` attribute to `fd-select__control` element
+Readonly state can be enabled also by adding `.is-readonly` class, or `aria-readonly="true"` 
 
 {% capture disabled-select %}
 <div class="fd-popover">
-    <div class="fd-popover__control"  aria-disabled="true" disabled>
+    <div class="fd-popover__control">
         <div class="fd-select">
             <div class="fd-select__control" aria-expanded="false" aria-haspopup="false" aria-readonly="true" readonly>
                 Select
@@ -189,6 +206,10 @@ Disabled state can be rendered with a `readonly` attribute.
 {% include display-component.html component=disabled-select %}
 
 ## Semantic States
+To add `semantic` mode into `select`, it's mandatory to add one of `is-invalid` | `is-valid` | `is-warning` | `is-information` class into `fd-select__control` element
+To add message inside `body`, it's needed to put element with `fd-list__message` class.
+Also the `fd-list--has-message` modifier should be added to `ul` element.
+
 
 {% capture semantic-select %}
 <div class="fd-popover">
@@ -201,7 +222,7 @@ Disabled state can be rendered with a `readonly` attribute.
         </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h07jjhYH">
-         <ul class="fd-list fd-list--has-message fd-list--compact" role="listbox">
+         <ul class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
             <li class="fd-list__message fd-list__message--success">Success message</li>
             <li class="fd-list__item is-selected" role="option" tabindex="0">
                <span class="fd-list__title">
@@ -240,7 +261,7 @@ Disabled state can be rendered with a `readonly` attribute.
        </div>
    </div>
    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h07j9978H">
-        <ul class="fd-list fd-list--has-message fd-list--compact" role="listbox">
+        <ul class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
            <li class="fd-list__message fd-list__message--error">Error message</li>
            <li class="fd-list__item is-selected" role="option" tabindex="0">
               <span class="fd-list__title">
@@ -279,7 +300,7 @@ Disabled state can be rendered with a `readonly` attribute.
        </div>
    </div>
    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h07j998hhH">
-        <ul class="fd-list fd-list--has-message fd-list--compact" role="listbox">
+        <ul class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
            <li class="fd-list__message fd-list__message--warning">Warning message</li>
            <li class="fd-list__item is-selected" role="option" tabindex="0">
               <span class="fd-list__title">
@@ -318,7 +339,7 @@ Disabled state can be rendered with a `readonly` attribute.
        </div>
    </div>
    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="hkhh998hhH">
-        <ul class="fd-list fd-list--has-message fd-list--compact" role="listbox">
+        <ul class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
            <li class="fd-list__message fd-list__message--information">Information message</li>
            <li class="fd-list__item is-selected" role="option" tabindex="0">
               <span class="fd-list__title">

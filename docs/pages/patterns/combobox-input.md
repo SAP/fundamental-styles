@@ -13,6 +13,11 @@ The combobox input component is an opinionated composition of the `input group`,
 {: .docs-intro}
 
 {% capture default %}
+
+<label class="fd-form-label">
+    Combobox Cozy Mode
+</label>
+<br/>
 <div class="fd-popover">
   <div class="fd-popover__control" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="true">
       <div class="fd-input-group fd-input-group--control">
@@ -40,8 +45,13 @@ The combobox input component is an opinionated composition of the `input group`,
   </div>
 </div>
 
+<br/>
 <br>
 
+<label class="fd-form-label">
+    Combobox Compact Mode
+</label>
+<br>
 <div class="fd-popover">
   <div class="fd-popover__control" aria-controls="F4GcX34" aria-expanded="false" aria-haspopup="true">
             <div class="fd-input-group fd-input-group--control">
@@ -74,6 +84,9 @@ The combobox input component is an opinionated composition of the `input group`,
 
 
 ## Disabled Mode
+To add disabled state, it is mandatory to add `disabled` attribute to `fd-popover__control` and `fd-nput-group` element
+Disabled state can be enabled also by adding `.is-disabled` class, or `aria-disabled="true"` 
+
 {% capture disabled %}
 <div class="fd-popover">
   <div class="fd-popover__control" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="true" aria-disabled="true" disabled>
@@ -91,6 +104,9 @@ The combobox input component is an opinionated composition of the `input group`,
 
 
 ## Readonly Mode
+To add readonly state, it is mandatory to add `readonly` attribute to `fd-nput-group` element
+Readonly state can be enabled also by adding `.is-readonly` class, or `aria-readonly="true"` 
+
 {% capture readonly %}
 <div class="fd-popover">
   <div class="fd-popover__control" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="false" aria-readonly="true" readonly>
@@ -103,6 +119,9 @@ The combobox input component is an opinionated composition of the `input group`,
 
 ## Semantic Mode
 Whole list of states for Combobox can be found on `form` and `select` documentation.
+To add `semantic` mode into `combobox`, it's mandatory to add one of `is-invalid` | `is-valid` | `is-warning` | `is-information` class into `fd-input-group`
+To add message inside `body`, it's needed to put element with `fd-list__message` class.
+Also the `fd-list--has-message` modifier should be added to `ul` element.
 
 {% capture semantic %}
 <div class="fd-popover">

@@ -106,20 +106,20 @@ $block: #{$fd-namespace}-list;
   }
 
   &__title {
-    width: 100%;
+    flex: 3 3 10%;
     font-size: var(--sapFontLargeSize);
   }
 
   &__secondary {
-    width: 66%;
     font-size: var(--sapFontSize);
+    flex: 2 2 10%;
     text-align: right;
-    margin-left: 1rem;
+    padding-left: 1rem;
 
     @include fd-rtl() {
       text-align: left;
-      margin-right: 1rem;
-      margin-left: 0;
+      padding-right: 1rem;
+      padding-left: 0;
     }
   }
 
@@ -334,14 +334,25 @@ $block: #{$fd-namespace}-list;
     .#{$block}__secondary {
       font-size: var(--sapFontSize);
       white-space: normal;
+      flex: auto;
 
       &--no-wrap {
         white-space: nowrap;
       }
     }
 
-    .#{$block}__item {
-      cursor: pointer;
+    .#{$block}__title {
+      width: auto;
+      max-width: 22.5rem;
+
+      &:first-child:last-child {
+        max-width: 37.5rem;
+      }
+    }
+
+    .#{$block}__secondary {
+      width: auto;
+      max-width: 15rem;
     }
   }
 }

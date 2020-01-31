@@ -13,6 +13,10 @@ summary:
 ## Default and Compact sizes
 
 {% capture default %}
+<label class="fd-form-label">
+    Multi Input Cozy Mode
+</label>
+<br/>
 <div class="fd-popover">
     <div class="fd-popover__control" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true">
         <div class="fd-input-group fd-input-group--control">
@@ -103,7 +107,12 @@ summary:
     </div>
 </div>
 <br>
+<br/>
 
+<label class="fd-form-label">
+    Multi Input Compact Mode
+</label>
+<br/>
 <div class="fd-popover">
     <div class="fd-popover__control" aria-controls="F4GcX34a" aria-expanded="false" aria-haspopup="true">
         <div class="fd-input-group fd-input-group--control">
@@ -176,6 +185,8 @@ summary:
 
 
 ## Readonly Multi Input
+To add readonly state, it is mandatory to add `readonly` attribute to `fd-nput-group` element
+Readonly state can be enabled also by adding `.is-readonly` class, or `aria-readonly="true"` 
 
 {% capture disabled %}
 <div class="fd-popover">
@@ -237,6 +248,8 @@ summary:
 
 
 ## Disabled Multi Input
+To add disabled state, it is mandatory to add `disabled` attribute to `fd-popover__control` and `fd-nput-group` element
+Disabled state can be enabled also by adding `.is-disabled` class, or `aria-disabled="true"` 
 
 {% capture readonly %}
 <div class="fd-popover">
@@ -290,7 +303,7 @@ summary:
                 </div>
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button class="fd-input-group__button fd-button--light sap-icon--value-help"></button>
+                <button tabindex="-1" class="fd-input-group__button fd-button--light sap-icon--value-help"></button>
             </span>
         </div>
     </div>
@@ -301,6 +314,9 @@ summary:
 
 ## Semantic Multi Input
 Whole list of states for MultiInput can be found on `form` and `select` documentation.
+To add `semantic` mode into `multi-input`, it's mandatory to add one of `is-invalid` | `is-valid` | `is-warning` | `is-information` class into `fd-input-group`
+To add message inside `body`, it's needed to put element with `fd-list__message` class.
+Also the `fd-list--has-message` modifier should be added to `ul` element.
 
 {% capture semantic-input %}
 <div class="fd-popover">
