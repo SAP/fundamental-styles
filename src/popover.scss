@@ -202,8 +202,9 @@ $block: #{$fd-namespace}-popover;
     }
 
     &--dropdown {
-      min-width: 5rem;
-      max-width: 37.5rem;
+      display: -ms-grid;
+      -ms-grid-columns: max-content;
+      width: max-content;
     }
 
     &[aria-hidden="true"],

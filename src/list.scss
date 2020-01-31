@@ -106,12 +106,12 @@ $block: #{$fd-namespace}-list;
   }
 
   &__title {
-    flex: 3 3 10%;
+    width: 100%;
     font-size: var(--sapFontLargeSize);
   }
 
   &__secondary {
-    flex: 2 2 10%;
+    width: 66%;
     font-size: var(--sapFontSize);
     text-align: right;
     margin-left: 1rem;
@@ -327,6 +327,9 @@ $block: #{$fd-namespace}-list;
 
   &--dropdown,
   &--multi-input {
+    min-width: 5rem;
+    max-width: 37.5rem;
+
     .#{$block}__title,
     .#{$block}__secondary {
       font-size: var(--sapFontSize);
@@ -335,6 +338,10 @@ $block: #{$fd-namespace}-list;
       &--no-wrap {
         white-space: nowrap;
       }
+    }
+
+    .#{$block}__item {
+      cursor: pointer;
     }
   }
 }

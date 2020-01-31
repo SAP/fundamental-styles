@@ -13,63 +13,59 @@ The combobox input component is an opinionated composition of the `input group`,
 {: .docs-intro}
 
 {% capture default %}
-<div class="documentation-site-popover-container">
-  <div class="fd-popover">
-      <div class="fd-popover__control" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="true">
-          <div class="fd-input-group fd-input-group--control">
-              <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Fruit">
-              <span class="fd-input-group__addon fd-input-group__addon--button">
-                  <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="true"></button>
-              </span>
-          </div>
+<div class="fd-popover">
+  <div class="fd-popover__control" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="true">
+      <div class="fd-input-group fd-input-group--control">
+          <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Fruit">
+          <span class="fd-input-group__addon fd-input-group__addon--button">
+              <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="true"></button>
+          </span>
       </div>
-      <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcX348">
-            <ul class="fd-list fd-list--dropdown" role="listbox">
-                <li role="option" tabindex="0" class="fd-list__item is-selected">
-                    <span class="fd-list__title">List item 1</span>
-                </li>
-                <li role="option" tabindex="0" class="fd-list__item">
-                    <span class="fd-list__title">List item 2</span>
-                </li>
-                <li role="option" tabindex="0" class="fd-list__item">
-                    <span class="fd-list__title">List item 3</span>
-                </li>
-                <li role="option" tabindex="0" class="fd-list__item">
-                    <span class="fd-list__title">List item 4</span>
-                </li>
-            </ul>
-      </div>
+  </div>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcX348">
+        <ul class="fd-list fd-list--dropdown" role="listbox">
+            <li role="option" tabindex="0" class="fd-list__item is-selected">
+                <span class="fd-list__title">List item 1</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">List item 2</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">List item 3</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">List item 4</span>
+            </li>
+        </ul>
   </div>
 </div>
 
 <br>
 
-<div class="documentation-site-popover-container">
-  <div class="fd-popover">
-      <div class="fd-popover__control" aria-controls="F4GcX34" aria-expanded="false" aria-haspopup="true">
-                <div class="fd-input-group fd-input-group--control">
-                    <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
-                    <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
-                        <button class="fd-input-group__button fd-button--compact fd-button--light sap-icon--navigation-down-arrow fd-select__button" aria-controls="F4GcX34" aria-expanded="false" aria-haspopup="true"></button>
-                    </span>
-                </div>
+<div class="fd-popover">
+  <div class="fd-popover__control" aria-controls="F4GcX34" aria-expanded="false" aria-haspopup="true">
+            <div class="fd-input-group fd-input-group--control">
+                <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
+                <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
+                    <button class="fd-input-group__button fd-button--compact fd-button--light sap-icon--navigation-down-arrow fd-select__button" aria-controls="F4GcX34" aria-expanded="false" aria-haspopup="true"></button>
+                </span>
             </div>
-      <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcX34">
-            <ul class="fd-list fd-list--dropdown fd-list--compact" role="listbox">
-                <li role="option" tabindex="0" class="fd-list__item is-selected">
-                    <span class="fd-list__title">List item 1</span>
-                </li>
-                <li role="option" tabindex="0" class="fd-list__item">
-                    <span class="fd-list__title">List item 2</span>
-                </li>
-                <li role="option" tabindex="0" class="fd-list__item">
-                    <span class="fd-list__title">List item 3</span>
-                </li>
-                <li role="option" tabindex="0" class="fd-list__item">
-                    <span class="fd-list__title">List item 4</span>
-                </li>
-            </ul>
-      </div>
+        </div>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcX34">
+        <ul class="fd-list fd-list--dropdown fd-list--compact" role="listbox">
+            <li role="option" tabindex="0" class="fd-list__item is-selected">
+                <span class="fd-list__title">List item 1</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">List item 2</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">List item 3</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">List item 4</span>
+            </li>
+        </ul>
   </div>
 </div>
 {% endcapture %}
@@ -109,34 +105,32 @@ The combobox input component is an opinionated composition of the `input group`,
 Whole list of states for Combobox can be found on `form` and `select` documentation.
 
 {% capture semantic %}
-<div class="documentation-site-popover-container">
-  <div class="fd-popover">
-      <div class="fd-popover__control" aria-controls="F4GcEX34" aria-expanded="false" aria-haspopup="true">
-                <div class="fd-input-group fd-input-group--control is-valid">
-                    <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
-                    <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
-                        <button class="fd-input-group__button fd-button--compact fd-button--light sap-icon--navigation-down-arrow fd-select__button" 
-                        aria-controls="F4GcEX34" aria-expanded="false" aria-haspopup="true"></button>
-                    </span>
-                </div>
+<div class="fd-popover">
+  <div class="fd-popover__control" aria-controls="F4GcEX34" aria-expanded="false" aria-haspopup="true">
+            <div class="fd-input-group fd-input-group--control is-valid">
+                <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
+                <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
+                    <button class="fd-input-group__button fd-button--compact fd-button--light sap-icon--navigation-down-arrow fd-select__button" 
+                    aria-controls="F4GcEX34" aria-expanded="false" aria-haspopup="true"></button>
+                </span>
             </div>
-      <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcEX34">
-            <ul class="fd-list fd-list--has-message fd-list--compact" role="listbox">
-                <li class="fd-list__message fd-list__message--success">Success message</li>
-                <li role="option" tabindex="0" class="fd-list__item is-selected">
-                    <span class="fd-list__title">List item 1</span>
-                </li>
-                <li role="option" tabindex="0" class="fd-list__item">
-                    <span class="fd-list__title">List item 2</span>
-                </li>
-                <li role="option" tabindex="0" class="fd-list__item">
-                    <span class="fd-list__title">List item 3</span>
-                </li>
-                <li role="option" tabindex="0" class="fd-list__item">
-                    <span class="fd-list__title">List item 4</span>
-                </li>
-            </ul>
-      </div>
+        </div>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcEX34">
+        <ul class="fd-list fd-list--has-message fd-list--compact" role="listbox">
+            <li class="fd-list__message fd-list__message--success">Success message</li>
+            <li role="option" tabindex="0" class="fd-list__item is-selected">
+                <span class="fd-list__title">List item 1</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">List item 2</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">List item 3</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">List item 4</span>
+            </li>
+        </ul>
   </div>
 </div>
 <span class="fd-form-message fd-form-message--static fd-form-message--success">Success message</span>
