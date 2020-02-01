@@ -124,10 +124,6 @@ entries:
       url: /components/calendar.html
       output: web
 
-    - title: Dropdown
-      url: /components/dropdown.html
-      output: web
-
     - title: Forms
       url: /components/form.html
       output: web

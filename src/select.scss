@@ -7,6 +7,8 @@ $block: #{$fd-namespace}-select;
 .#{$block} {
   $fd-select-padding-x: 0.625rem;
   $fd-select-padding-compact-x: 0.5rem;
+  $fd-select-button-active-text-color: var(--sapButton_Active_TextColor);
+  $fd-select-button-active-background: var(--sapButton_Active_Background);
 
   @include fd-reset();
 
@@ -53,15 +55,15 @@ $block: #{$fd-namespace}-select;
 
     &.is-expanded {
       .#{$block}__button {
-        background-color: var(--sapButton_Active_Background);
-        color: var(--sapButton_Active_TextColor);
+        background-color: $fd-select-button-active-background;
+        color: $fd-select-button-active-text-color;
       }
     }
 
     @include fd-active() {
       .#{$block}__button {
-        background-color: var(--sapButton_Active_Background);
-        color: var(--sapButton_Active_TextColor);
+        background-color: $fd-select-button-active-background;
+        color: $fd-select-button-active-text-color;
       }
     }
 
