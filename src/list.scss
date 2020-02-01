@@ -2,6 +2,15 @@
 @import "./mixins";
 @import "./functions";
 
+/*!
+.fd-list+(--compact)
+    .fd-list+(__item, __title, __secondary, __icon, __group-header, __footer)
+.fd-list--dropdown
+    .fd-list+(__item, __title, __secondary, __message)+(--no-wrap)
+.fd-list--multi-input
+    .fd-list+(__item, __label, _input,  __title, __message, __footer)+(--no-wrap)
+*/
+
 $block: #{$fd-namespace}-list;
 
 .#{$block} {
