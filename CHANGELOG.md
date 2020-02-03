@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.0-rc.8"></a>
+# [0.6.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.6.0-rc.7...v0.6.0-rc.8) (2020-02-03)
+
+
+### Bug Fixes
+
+* Rename Alert to Message Strip | Mark Alert as deprecated ([#622](https://github.com/SAP/fundamental-styles/issues/622)) ([c193fcc](https://github.com/SAP/fundamental-styles/commit/c193fcc))
+
+
+
 <a name="0.6.0-rc.7"></a>
 # [0.6.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.6.0-rc.6...v0.6.0-rc.7) (2020-01-30)
 
