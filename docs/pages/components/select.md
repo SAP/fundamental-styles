@@ -126,7 +126,7 @@ The select control (also known as a dropdown) is commonly used to enable users t
 
 
 <label class="fd-form-label">
-    Select Compact Mode With 2 Columns
+    Select Compact Mode With 2 Columns 
 </label>
 <br>
 <div class="fd-popover">
@@ -142,8 +142,7 @@ The select control (also known as a dropdown) is commonly used to enable users t
      <ul class="fd-list fd-list--dropdown fd-popover__body--dropdown fd-list--compact" role="listbox">
         <li class="fd-list__item is-selected" role="option" tabindex="0">
            <span class="fd-list__title">
-               Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text
-               Very long text, Very long text, Very long text
+               List item 1
            </span>
            <span class="fd-list__secondary">A1</span>
         </li>
@@ -165,6 +164,89 @@ The select control (also known as a dropdown) is commonly used to enable users t
 {% endcapture %}
 
 {% include display-component.html component=two-col %}
+
+## Text Wrapping
+By default text is wrapped, to prevent from wrapping, there is a need to use `--no-wrap` modifier for 
+`fd-list__title`, or `fd-list__secondary` element.
+
+{% capture select-wrap %}
+<label class="fd-form-label">
+    Select with more text
+</label>
+<br>
+<div class="fd-popover">
+  <div class="fd-popover__control">
+     <div class="fd-select">
+         <div class="fd-select__control" tabindex="0" aria-controls="h0GFF2325" aria-expanded="false" aria-haspopup="true">
+             Select
+             <button class="fd-button fd-button--light sap-icon--slim-arrow-down fd-select__button"></button>
+         </div>
+      </div>
+  </div>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h0GFF2325">
+     <ul class="fd-list fd-list--dropdown" role="listbox">
+        <li class="fd-list__item is-selected" role="option" tabindex="0">
+           <span class="fd-list__title">Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text </span>
+           <span class="fd-list__secondary">A1</span>
+        </li>
+        <li class="fd-list__item" role="option" tabindex="0">
+           <span class="fd-list__title">List item 2</span>
+           <span class="fd-list__secondary">A2</span>
+       </li>
+        <li class="fd-list__item" role="option" tabindex="0">
+           <span class="fd-list__title">List item 3</span>
+           <span class="fd-list__secondary">A3</span>
+        </li>
+        <li class="fd-list__item" role="option" tabindex="0">
+           <span class="fd-list__title">List item 4</span>
+           <span class="fd-list__secondary">A4</span>
+        </li>
+     </ul>
+  </div>
+</div>
+<br />
+<br />
+
+
+<label class="fd-form-label">
+    Select with more text and removed wrapping
+</label>
+<br>
+<div class="fd-popover">
+  <div class="fd-popover__control">
+     <div class="fd-select fd-select--compact">
+        <div class="fd-select__control" tabindex="0" aria-controls="h0GZH2325" aria-expanded="false" aria-haspopup="true">
+            Select
+            <button class="fd-button fd-button--light sap-icon--slim-arrow-down fd-select__button"></button>
+        </div>
+     </div>
+  </div>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h0GZH2325">
+     <ul class="fd-list fd-list--dropdown fd-popover__body--dropdown fd-list--compact" role="listbox">
+        <li class="fd-list__item is-selected" role="option" tabindex="0">
+           <span class="fd-list__title fd-list__title--no-wrap">
+               Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text 
+           </span>
+           <span class="fd-list__secondary">A1</span>
+        </li>
+        <li class="fd-list__item" role="option" tabindex="0">
+           <span class="fd-list__title">List item 2</span>
+           <span class="fd-list__secondary">A2</span>
+        </li>
+        <li class="fd-list__item" role="option" tabindex="0">
+           <span class="fd-list__title">List item 3</span>
+           <span class="fd-list__secondary">A3</span>
+        </li>
+        <li class="fd-list__item" role="option" tabindex="0">
+           <span class="fd-list__title">List item 4</span>
+           <span class="fd-list__secondary">A4</span>
+        </li>
+     </ul>
+  </div>
+</div>
+{% endcapture %}
+
+{% include display-component.html component=select-wrap %}
 
 
 ## Disabled State

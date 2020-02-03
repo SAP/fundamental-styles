@@ -340,6 +340,10 @@ $block: #{$fd-namespace}-list;
     min-width: 5rem;
     max-width: 37.5rem;
 
+    .#{$block}__item {
+      cursor: pointer;
+    }
+
     .#{$block}__title,
     .#{$block}__secondary {
       font-size: var(--sapFontSize);
