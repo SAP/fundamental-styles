@@ -11,6 +11,7 @@ $block: #{$fd-namespace}-overlay;
   $fd-overlay-background-color: rgba(#4a505c, 0.3) !default;
 
   --fd-overlay-background-color: #{$fd-overlay-background-color};
+  $fd-overlay-message-strip-top-margin: fd-space(7);
   $fd-overlay-alert-top-margin: fd-space(7);
 
   position: fixed;
@@ -36,5 +37,12 @@ $block: #{$fd-namespace}-overlay;
     left: 50%;
     transform: translate(-50%, 0);
     margin-top: $fd-overlay-alert-top-margin;
+  }
+
+  &--message-strip {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: $fd-overlay-message-strip-top-margin;
   }
 }

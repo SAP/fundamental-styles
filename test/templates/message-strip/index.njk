@@ -1,0 +1,53 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./component.njk" import messageStrip %}
+{% from "./../overlay.njk" import overlay, overlay_toggle %}
+
+{% block content %}
+
+    {% set messageStripKinds = ["information", "success", "warning", "error" ] %}
+    {% set messageStripDissmisable = [true, false] %}
+    {% set messageStripWithIcon = [true, false] %}
+    {% set messageStripRTL = [false, true] %}
+    {% set titleIndex = 0 %}
+    {% set sectionTitles = ["Closeable with icon", "Closeable without icon", "Uncloseable with icon", "Uncloseable without icon", "RTL closeable with icon", "RTL closeable without icon", "TRL uncloseable with icon", "RTL uncloseable without icon"] %}
+    {% set messageStripText = "Integer turpis augue, tincidunt dignissim mauris id, rhoncus dapibus purus. Maecenas et enim odio. Nullam massa metus, varius quis vehicula sed, pharetra mollis erat. Sed bibendum, sapien at posuere interdum, libero est sollicitudin magna, ac gravida tellus purus eu ipsum. Proin ut quam arcu." %}
+
+    {% for withRTL in messageStripRTL %}
+        {% for dissmisable in messageStripDissmisable %}
+            {% for withIcon in messageStripWithIcon %}
+                <h1>{{ sectionTitles[titleIndex] }}</h1>
+                {% set example %}
+                    {% for messageStripKind in messageStripKinds %}
+                        {{ messageStrip(
+                            properties={
+                                text: messageStripText,
+                                dismissible: dissmisable,
+                                rtl: withRTL
+                            },
+                            modifier={
+                                block: ['no-icon' if not withIcon, messageStripKind]
+                            }
+                        ) }}
+                    {% endfor %}
+                {% endset %}
+                {% set titleIndex = titleIndex + 1 %}
+                {{- format(example) -}}
+            {% endfor %}
+        {% endfor %}
+    {% endfor %}
+
+    {{ overlay_toggle() }}
+
+    <p>
+        NOTE: The <code>Message Strip</code> itself does not provide the outer container. Use the
+        <code>.fd-overlay</code> layout component in conjunction with the <code>.fd-ui__overlay</code> template
+        container to hide and show the Message Strip.
+    </p>
+
+    {% set overlayType = "message-strip" %}
+    {{ overlay(overlayType) }}
+    <br><br>
+
+
+{% endblock %}

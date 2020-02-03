@@ -34,7 +34,7 @@ There are five button types that can be combined with the emphasis styles.
 - **Action Button**: The default button
 - **Standard Button**: Neutral or informative color
 - **Positive Button**: Used for positive actions such as approved, ok, yes.
-- **Medium Button**: Used for warnings or alert
+- **Medium Button**: Used for warnings or inside message strips
 - **Negative Button**:Used for negative actions such as decline, cancel, no.
 
 

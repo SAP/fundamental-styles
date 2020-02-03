@@ -26,9 +26,9 @@ $(document).ready(function () {
         el.addEventListener('click', function (e) {
             var targetId = this.getAttribute("aria-controls");
             var target = document.getElementById(targetId);
-            //alert
-            var isAlert = this.parentElement.getAttribute("role") === "alert";
-            if (isAlert) {
+            //message strip
+            var isMessageStrip = this.parentElement.getAttribute("role") === "alert";
+            if (isMessageStrip) {
                 //remove or hide if we want some animation
                 $(target).remove();
                 return;

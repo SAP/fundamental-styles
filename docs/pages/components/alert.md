@@ -8,10 +8,11 @@ permalink: components/alert.html
 folder: components
 summary:
 ---
-
+> **DEPRECATED**. This component is deprecated and replaced by [Message Strip component]({{site.baseurl}}/components/message-strip.html)
+{: .docs-deprecated}
+>
 Alerts provide messages within the application that are color-coded to emphasize the level of urgency.
 {: .docs-intro}
-For Alert placement guidelines within the application, see [Application Layout page]({{site.baseurl}}/layouts/shell-layout.html#application-overlay-alert-example) and [Application Alerts overlay Demo Page]({{site.baseurl}}/demo-pages/alert-overlay-demo-page.html)
 
 <br>
 

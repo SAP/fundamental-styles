@@ -1,5 +1,5 @@
 {% extends "./layouts/app.njk" %}
-{% from "./../alert/component.njk" import alert %}
+{% from "./../message-strip/component.njk" import messageStrip %}
 {# ui-level settings #}
 {% set fix_ui_header = true %}
 {% set hide_ui_footer = true %}
@@ -11,11 +11,11 @@
 .fd-shell__footer
 {%- endblock %}
 {% set show_ui_overlay = true %}
-{% set overlay_modifier = "fd-overlay--alert" %}
+{% set overlay_modifier = "fd-overlay--message-strip" %}
 {% block ui_overlay %}
 {# ui_overlay #}
 
-{{  alert(
+{{  messageStrip(
         properties={
             text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
             dismissible: true
