@@ -48,6 +48,11 @@ $block: #{$fd-namespace}-token;
   flex: 1 0 auto;
   border: var(--sapButton_BorderWidth) solid $fd-token-border-color;
 
+  @include fd-rtl() {
+    padding-left: 0;
+    padding-right: $fd-token-padding-horizontal;
+  }
+
   &__text {
     overflow: hidden;
     max-width: 100%;
@@ -98,6 +103,11 @@ $block: #{$fd-namespace}-token;
       width: $fd-token-compact-close-width;
       min-width: $fd-token-compact-close-width;
       height: $fd-token-compact-height;
+    }
+
+    @include fd-rtl() {
+      padding-left: 0;
+      padding-right: $fd-token-compact-padding-horizontal;
     }
   }
 
