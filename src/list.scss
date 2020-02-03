@@ -17,56 +17,6 @@ $block: #{$fd-namespace}-list;
   $fd-list-horizontal-padding: 1rem;
   $fd-dropdown-vertical-padding: 0.75rem;
   $fd-dropdown-vertical-compact-padding: 0.5rem;
-
-  @mixin fd-list-item-states() {
-    @include fd-hover() {
-      background: var(--sapList_Hover_Background);
-    }
-
-    > * {
-      &:focus {
-        outline: 0;
-      }
-    }
-
-    @include fd-focus() {
-      box-shadow: none;
-      outline-offset: -0.1875rem;
-      outline-width: var(--sapContent_FocusWidth);
-      outline-color: var(--sapContent_FocusColor);
-      outline-style: var(--sapContent_FocusStyle);
-    }
-
-    @include fd-selected() {
-      background: var(--sapList_SelectionBackgroundColor);
-      border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
-
-      @include fd-hover() {
-        background: var(--sapList_Hover_SelectionBackground);
-      }
-    }
-
-    @include fd-active() {
-      background: var(--sapList_Active_Background);
-
-      @include fd-hover() {
-        background: var(--sapList_Active_Background);
-      }
-
-      @include fd-focus() {
-        box-shadow: none;
-        outline-color: var(--sapContent_ContrastFocusColor);
-      }
-
-      .#{$block}__title,
-      .#{$block}__secondary,
-      .#{$block}__icon,
-      & {
-        color: var(--sapList_Active_TextColor);
-      }
-    }
-  }
-
   $fd-checkbox-dimensions: 1.375rem;
 
   @include fd-reset();
@@ -87,10 +37,42 @@ $block: #{$fd-namespace}-list;
   }
 
   &__item {
-    @include fd-list-item-states();
-
     border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
     background: var(--sapList_Background);
+
+    @include fd-hover() {
+      background: var(--sapList_Hover_Background);
+    }
+
+    @include fd-fiori-focus();
+
+    @include fd-selected() {
+      background: var(--sapList_SelectionBackgroundColor);
+      border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+
+      @include fd-hover() {
+        background: var(--sapList_Hover_SelectionBackground);
+      }
+    }
+
+    @include fd-active() {
+      background: var(--sapList_Active_Background);
+
+      @include fd-hover() {
+        background: var(--sapList_Active_Background);
+      }
+
+      @include fd-fiori-focus() {
+        outline-color: var(--sapContent_ContrastFocusColor);
+      }
+
+      .#{$block}__title,
+      .#{$block}__secondary,
+      .#{$block}__icon,
+      & {
+        color: var(--sapList_Active_TextColor);
+      }
+    }
 
     &--no-data {
       .#{$block}__title {
@@ -240,10 +222,6 @@ $block: #{$fd-namespace}-list;
 
   &--dropdown {
     .#{$block}__item {
-      border: none;
-
-      @include fd-list-item-states();
-
       height: auto;
       padding: $fd-dropdown-vertical-padding $fd-list-horizontal-padding;
     }
@@ -258,10 +236,6 @@ $block: #{$fd-namespace}-list;
 
   &--multi-input {
     .#{$block}__item {
-      border: none;
-
-      @include fd-list-item-states();
-
       padding: 0;
       height: auto;
     }
@@ -342,6 +316,11 @@ $block: #{$fd-namespace}-list;
 
     .#{$block}__item {
       cursor: pointer;
+      border: none;
+
+      @include fd-selected() {
+        border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+      }
     }
 
     .#{$block}__title,

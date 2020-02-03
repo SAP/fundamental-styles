@@ -275,7 +275,7 @@ Readonly state can be enabled also by adding `.is-readonly` class, or `aria-read
 
 {% capture disabled-select %}
 <div class="fd-popover">
-    <div class="fd-popover__control">
+    <div class="fd-popover__control" aria-expanded="false" aria-haspopup="false" aria-readonly="true" readonly>
         <div class="fd-select">
             <div class="fd-select__control" aria-expanded="false" aria-haspopup="false" aria-readonly="true" readonly>
                 Select
