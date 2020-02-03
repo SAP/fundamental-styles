@@ -8,7 +8,7 @@ permalink: components/alert.html
 folder: components
 summary:
 ---
-> **DEPRECATED**. This component is soon going to be deprecated and it is already replaced by [Message Strip component]({{site.baseurl}}/components/message-strip.html)
+> **DEPRECATED**. This component is deprecated and replaced by [Message Strip component]({{site.baseurl}}/components/message-strip.html)
 {: .docs-deprecated}
 >
 Alerts provide messages within the application that are color-coded to emphasize the level of urgency.
