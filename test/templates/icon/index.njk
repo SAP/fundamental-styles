@@ -130,25 +130,10 @@ medium (m) - 16px
 
 <div class="demo-icons">
 
-
-
-{% for glyph in data.properties.glyphs %}
-<div class="demo-icon-wrapper">
-
-    <h2>.sap-icon--{{glyph}}</h2>
 {% set example %}
+<div class="demo-icon-wrapper">{% for glyph in data.properties.glyphs %}<h6>.sap-icon--{{glyph}}</h6>
 {{ icon(glyph) }}
-{% for size in data.modifier.block %}
-{{ icon(glyph, size) }}
-{% endfor %}
-{% endset %}
-{{ format(example) }}
-
-
-</div>
-
-{% endfor %}
-
-</div>
+{% for size in data.modifier.block %}{{ icon(glyph, size) }}{% endfor %}
+{% endfor %}{% endset %}</div>{{ format(example) }}</div>
 
 {% endblock %}
