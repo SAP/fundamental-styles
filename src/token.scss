@@ -5,6 +5,8 @@
 $block: #{$fd-namespace}-token;
 
 .#{$block} {
+  cursor: default;
+
   @mixin fd-token-focus() {
     @include fd-focus() {
       box-shadow: none;
@@ -136,6 +138,14 @@ $block: #{$fd-namespace}-token;
 
     &.#{$block}--compact {
       padding: 0 $fd-token-compact-padding-horizontal;
+
+      @include fd-rtl() {
+        padding-left: $fd-token-compact-padding-horizontal;
+      }
+    }
+
+    @include fd-rtl() {
+      padding-left: $fd-token-padding-horizontal;
     }
   }
 }
