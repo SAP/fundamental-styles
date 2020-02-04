@@ -208,28 +208,6 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
         }
       }
     }
-
-    @include fd-hover() {
-      .#{$block}__button {
-        background-color: var(--sapButton_Lite_Hover_Background);
-
-        &.is-expanded {
-          background-color: $fd-input-group-button-active-background;
-          color: $fd-input-group-button-active-text-color;
-        }
-      }
-    }
-
-    @include fd-active() {
-      .#{$block}__button {
-        background-color: $fd-input-group-button-active-text-color;
-        color: $fd-input-group-button-active-text-color;
-
-        @include fd-fiori-focus() {
-          outline-color: $fd-input-group-button-active-focus-color;
-        }
-      }
-    }
   }
 
   .#{$fd-namespace}-textarea {

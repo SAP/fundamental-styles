@@ -207,6 +207,11 @@ $block: #{$fd-namespace}-popover;
       width: max-content;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
+
+      &-fill {
+        max-width: 37.5rem;
+        width: calc(100% - #{$fd-popover-body-shadow-offset} * 2);
+      }
     }
 
     &[aria-hidden="true"],
