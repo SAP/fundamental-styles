@@ -3,6 +3,4 @@
     FOR simplicity, this component has standalone params
     instead of more complex modifier.block options
 #}
-{%- macro icon(glyph="", size="", classes="") -%}
-<span class="{{ (glyph if size == "" else [glyph, size]) | modifier('icon','sap') }}{{ classes | classes }}" role="presentation"></span>
-{%- endmacro %}
+{%- macro icon(glyph="", size="", classes="") -%}<span class="{{ (glyph if size == "" else [glyph, size]) | modifier('icon','sap') }}{{ classes | classes }}" role="presentation"></span>{%- endmacro %}
