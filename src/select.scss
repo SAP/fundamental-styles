@@ -9,6 +9,7 @@ $block: #{$fd-namespace}-select;
   $fd-select-padding-compact-x: 0.5rem;
   $fd-select-button-active-text-color: var(--sapButton_Active_TextColor);
   $fd-select-button-active-background: var(--sapButton_Active_Background);
+  $fd-select-button-active-focus-color: var(--sapContent_ContrastFocusColor);
 
   @include fd-reset();
 
@@ -57,6 +58,10 @@ $block: #{$fd-namespace}-select;
       .#{$block}__button {
         background-color: $fd-select-button-active-background;
         color: $fd-select-button-active-text-color;
+
+        @include fd-fiori-focus() {
+          outline-color: $fd-select-button-active-focus-color;
+        }
       }
     }
 
@@ -64,6 +69,10 @@ $block: #{$fd-namespace}-select;
       .#{$block}__button {
         background-color: $fd-select-button-active-background;
         color: $fd-select-button-active-text-color;
+
+        @include fd-fiori-focus() {
+          outline-color: $fd-select-button-active-focus-color;
+        }
       }
     }
 

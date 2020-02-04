@@ -18,6 +18,7 @@ $block: #{$fd-namespace}-list;
   $fd-dropdown-vertical-padding: 0.75rem;
   $fd-dropdown-vertical-compact-padding: 0.5rem;
   $fd-checkbox-dimensions: 1.375rem;
+  $fd-list-last-item-bottom-border-radius: var(--sapElement_BorderCornerRadius) !default;
 
   @include fd-reset();
 
@@ -346,6 +347,13 @@ $block: #{$fd-namespace}-list;
     .#{$block}__secondary {
       width: auto;
       max-width: 15rem;
+    }
+
+    > * {
+      &:last-child {
+        border-bottom-left-radius: $fd-list-last-item-bottom-border-radius;
+        border-bottom-right-radius: $fd-list-last-item-bottom-border-radius;
+      }
     }
   }
 }
