@@ -101,12 +101,16 @@ calendar:
     {{ calendar_header_group() }}
     <tbody class="fd-calendar__group">
       <tr class="fd-calendar__row">
-        <td class="fd-calendar__item fd-calendar__item--side-helper" role="gridcell">1</td>
+        <td class="fd-calendar__item fd-calendar__item--side-helper" role="gridcell">
+          <span class="fd-calendar__text">1</span>
+        </td>
       {%- for cell in range(0,totalCells) %}
         {%- if (loop.index0) % 7 == 0 and not loop.first%}
       </tr>
       <tr class="fd-calendar__row">
-        <td class="fd-calendar__item fd-calendar__item--side-helper" role="gridcell">{{ (loop.index0 / 7) | round() + 1 }}</td>
+        <td class="fd-calendar__item fd-calendar__item--side-helper" role="gridcell">
+          <span class="fd-calendar__text">{{ (loop.index0 / 7) | round() + 1 }}</span>
+        </td>
       {%-endif %}
   {%- set date = loop.index - daysOffset %}
   {%- set _is_other_month = date < 1 or date > monthTotalDays %}
@@ -218,7 +222,9 @@ calendar:
     <thead class="fd-calendar__group">
       <tr class="fd-calendar__row">
       {%- for day in data.days %}
-         <th class="fd-calendar__item fd-calendar__item--side-helper">{{day| truncate(1, true, "")}}</th>
+         <th class="fd-calendar__item fd-calendar__item--side-helper">
+           <span class="fd-calendar__text">{{day| truncate(1, true, "")}}</span>
+         </th>
       {%- endfor %}
       </tr>
     </thead>
