@@ -1,7 +1,6 @@
 @import "./settings";
 @import "./mixins";
 @import "./functions";
-
 $block: #{$fd-namespace}-action-bar;
 
 .#{$block} {
@@ -69,11 +68,8 @@ $block: #{$fd-namespace}-action-bar;
 
   &__back {
     @include fd-reset();
-
     display: block;
-
     @include fd-hide-on-mobile();
-
     position: relative;
     margin-right: 0.5rem;
 
@@ -102,7 +98,7 @@ $block: #{$fd-namespace}-action-bar;
     @include fd-action-bar-description();
   }
 
-  &__description__with___backbutton {
+  &__description--with-backBtn {
     @include fd-action-bar-description();
 
     padding-left: 2.25rem;
@@ -110,7 +106,6 @@ $block: #{$fd-namespace}-action-bar;
 
   &__actions {
     @include fd-reset();
-
     display: flex;
     align-items: center;
     transition: opacity $fd-action-bar-transition-params;

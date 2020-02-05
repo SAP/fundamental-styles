@@ -13,8 +13,6 @@ The Action Bar is located at the top of the page and is used for the following:
 - Page title
 - Main Actions for the page
  
-> {{ site.data.strings.headerDisclaimer }}
- 
 
 ## Action bar with back button, description and action buttons.
 {% capture default-action-bar %}
@@ -33,7 +31,7 @@ The Action Bar is located at the top of the page and is used for the following:
     </div>
        
     </div>
-    <p class="fd-action-bar__description__with___backbutton">Action bar Description </p>
+    <p class="fd-action-bar__description--with-backBtn">Action bar Description </p>
 </div>
 {% endcapture %}
 {% include display-component.html component=default-action-bar %}
@@ -102,7 +100,7 @@ The Action Bar is located at the top of the page and is used for the following:
         <button class="fd-button--compact fd-button--emphasized">Button</button>
     </div>
     </div>
-     <p class="fd-action-bar__description__with___backbutton">
+     <p class="fd-action-bar__description--with-backBtn">
      Action bar Description Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long
      </p>
 </div>
@@ -151,7 +149,7 @@ When there are several main actions for a page, consider displaying them under a
 
 ## Action bar with back button, description, action buttons and Responsive Behaviour - M_L .
 {% capture default-action-bar %}
-<div class="fd-action-bar fd-action-bar__m_l">
+<div class="fd-action-bar fd-action-bar--m_l">
     
     <div class="fd-action-bar__header">
     <div class="fd-action-bar__back">
@@ -166,7 +164,7 @@ When there are several main actions for a page, consider displaying them under a
     </div>
        
     </div>
-    <p class="fd-action-bar__description__with___backbutton">Action bar Description </p>
+    <p class="fd-action-bar__description--with-backBtn">Action bar Description </p>
 </div>
 {% endcapture %}
 {% include display-component.html component=default-action-bar %}
@@ -175,7 +173,7 @@ When there are several main actions for a page, consider displaying them under a
  
 ## Action bar with back button, description, action buttons and Responsive Behaviour - XL .
 {% capture default-action-bar %}
-<div class=" fd-action-bar fd-action-bar__xl">
+<div class=" fd-action-bar fd-action-bar--xl">
     
     <div class="fd-action-bar__header">
     <div class="fd-action-bar__back">
@@ -190,18 +188,18 @@ When there are several main actions for a page, consider displaying them under a
     </div>
        
     </div>
-    <p class="fd-action-bar__description__with___backbutton">Action bar Description </p>
+    <p class="fd-action-bar__description--with-backBtn">Action bar Description </p>
 </div>
 {% endcapture %}
 {% include display-component.html component=default-action-bar %}
  
 <br/>
-
+ 
 ## Action bar mobile view
  
 {% capture default-action-bar-multi %}
 <div style="width:319px;">
-    <div class="fd-action-bar fd-action-bar__s">
+    <div class="fd-action-bar fd-action-bar--s">
         
         <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
