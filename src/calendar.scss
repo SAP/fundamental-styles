@@ -37,6 +37,9 @@ $fd-calendar-width-compact: $fd-calendar-item-width-compact * 8 + 2 * $fd-calend
 
 // Mobile dimensions
 $fd-calendar-button-height-mobile: 2.75rem !default;
+
+$fd-calendar-button-height: 2.75rem !default;
+$fd-calendar-button-height-compact: 2rem !default;
 $fd-calendar-padding-mobile-landscape: 0 !default;
 $fd-calendar-padding-mobile-portrait: 1rem 0 0 0 !default;
 $fd-calendar-item-helper-height-landscape: 1.625rem !default;
@@ -268,6 +271,7 @@ $fd-calendar-special-days: (
 
     > [type="button"] {
       width: 100%;
+      height: $fd-calendar-button-height;
     }
 
     &--arrow-left {
@@ -396,6 +400,10 @@ $fd-calendar-special-days: (
 
     .#{$block} {
       &__action {
+        > [type="button"] {
+          height: $fd-calendar-button-height-compact;
+        }
+
         &--arrow-left,
         &--arrow-right {
           width: $fd-calendar-item-width-compact;
