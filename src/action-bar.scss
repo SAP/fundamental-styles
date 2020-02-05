@@ -57,6 +57,8 @@ $block: #{$fd-namespace}-action-bar;
   @include responsive-action-bar($padding-x: 2rem);
 
   &__header {
+    flex-grow: 1;
+
     @include fd-reset();
 
     min-height: 2rem;
@@ -68,8 +70,11 @@ $block: #{$fd-namespace}-action-bar;
 
   &__back {
     @include fd-reset();
+
     display: block;
+
     @include fd-hide-on-mobile();
+
     position: relative;
     margin-right: 0.5rem;
 
@@ -106,6 +111,7 @@ $block: #{$fd-namespace}-action-bar;
 
   &__actions {
     @include fd-reset();
+
     display: flex;
     align-items: center;
     transition: opacity $fd-action-bar-transition-params;
@@ -140,15 +146,15 @@ $block: #{$fd-namespace}-action-bar;
     }
   }
 
-  &__s {
+  &--s {
     @include responsive-action-bar();
   }
 
-  &__m_l {
+  &--m_l {
     @include responsive-action-bar($padding-x: 2rem);
   }
 
-  &__xl {
+  &--xl {
     @include responsive-action-bar($padding-x: 3rem);
   }
 }
