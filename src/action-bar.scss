@@ -1,26 +1,24 @@
 @import "./settings";
 @import "./mixins";
 @import "./functions";
- 
-/*!
-.fd-action-bar
-  .fd-action-bar__title
-  .fd-action-bar__actions+(.is-disabled | aria-hidden)?
-        .fd-action-bar__action-item
-*/
+
 $block: #{$fd-namespace}-action-bar;
- 
+
 .#{$block} {
- 
   // LOCAL VARS (set all themeable properties, always include !default)
-  $fd-action-bar-background-color: var(--sapPageHeader_Background)!default;
-  $fd-action-bar-description-color:var(--sapContent_LabelColor)!default;
-  $fd-action-bar-title-color:var(--sapGroup_TitleTextColor)!default;
+  $fd-action-bar-background-color: var(--sapPageHeader_Background) !default;
+  $fd-action-bar-description-color: var(--sapContent_LabelColor) !default;
+  $fd-action-bar-title-color: var(--sapGroup_TitleTextColor) !default;
   $fd-action-bar-height: 3rem;
-  $fd-action-bar-padding-x: (def: 1rem, s: 1rem, m: 2rem, l: 2rem, xl: 3rem, xxl: 3rem);
+  $fd-action-bar-padding-x: (
+    def: 1rem,
+    s: 1rem,
+    m: 2rem,
+    l: 2rem,
+    xl: 3rem,
+    xxl: 3rem
+  );
   $fd-action-bar-transition-params: 0.25s ease-in !default;
-
-
 
   // LOCAL mixins
   @mixin fd-action-bar-responsive {
@@ -31,41 +29,44 @@ $block: #{$fd-namespace}-action-bar;
       text-overflow: ellipsis;
     }
   }
- 
+
   @mixin fd-hide-on-mobile {
     // Changed from deprecated fd-screen(xs)
     @include fd-screen(s) {
       display: none !important;
     }
- 
+
     @include fd-screen(m) {
       display: inline-block !important;
     }
   }
- 
+
   @include media-breakpoint-down(m) {
     padding-left: map_get($fd-action-bar-padding-x, "m");
     padding-right: map_get($fd-action-bar-padding-x, "m");
   }
+
   @include media-breakpoint-down(l) {
     padding-left: map_get($fd-action-bar-padding-x, "l");
     padding-right: map_get($fd-action-bar-padding-x, "l");
   }
+
   @include media-breakpoint-down(xl) {
     padding-left: map_get($fd-action-bar-padding-x, "xl");
     padding-right: map_get($fd-action-bar-padding-x, "xl");
   }
+
   @include media-breakpoint-down(s) {
     padding-left: map_get($fd-action-bar-padding-x, "s");
     padding-right: map_get($fd-action-bar-padding-x, "s");
   }
   // BLOCK BASE *******************************************
   @include fd-reset();
- 
+
   background-color: $fd-action-bar-background-color;
   min-height: $fd-action-bar-height;
-  padding-top:0.5rem;
-  padding-bottom:0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
@@ -74,83 +75,94 @@ $block: #{$fd-namespace}-action-bar;
   justify-content: space-between;
   padding-left: map_get($fd-action-bar-padding-x, "m");
   padding-right: map_get($fd-action-bar-padding-x, "m");
- 
+
   &__header {
+    flex-grow: 1;
+
     @include fd-reset();
     @include fd-action-bar-responsive();
-    flex-grow: 1;
   }
- 
+
   &__back {
     @include fd-reset();
+
     display: block;
+
     @include fd-hide-on-mobile();
+
     position: relative;
-    margin-right:0.5rem;
+    margin-right: 0.5rem;
+
     @include fd-rtl() {
       transform: scaleX(-1);
       margin-left: 0.5rem;
       margin-right: 0;
     }
   }
- 
+
   &__title {
     @include fd-reset();
     @include fd-heading();
+
     font-size: var(--sapFontHeader3Size);
     font-family: var(--sapFontHeaderFamily);
     font-weight: normal;
-    color:$fd-action-bar-title-color;
+    color: $fd-action-bar-title-color;
+
     @include fd-action-bar-responsive();
-    height:2rem;
+
+    height: 2rem;
     padding-right: 0.75rem;
     vertical-align: middle;
-    margin:0rem;
-   
+    margin: 0;
   }
- 
 
   &__description {
     @include fd-reset();
     @include fd-var-color("color", $fd-action-bar-description-color, --fd-color-text-3);
+
     font-size: var(--sapFontSize);
     font-family: var(--sapFontFamily);
     font-weight: normal;
-    color:var(--sapContent_LabelColor);
+    color: var(--sapContent_LabelColor);
+
     @include fd-hide-on-mobile();
-    margin-top:0.25rem;
-    height:1.25rem;
+
+    margin-top: 0.25rem;
+    height: 1.25rem;
     vertical-align: middle;
   }
- 
+
   &__actions {
     @include fd-reset();
+
     display: flex;
     align-items: center;
     transition: opacity $fd-action-bar-transition-params;
     visibility: visible;
-    height:2rem;
+    height: 2rem;
+
     &.is-disabled,
     &[aria-hidden="true"] {
       opacity: 0;
       visibility: hidden;
     }
- 
+
     & > * {
       @include fd-children() {
-      margin-left: 0.5rem;
+        margin-left: 0.5rem;
       }
- 
+
       &:first-child {
         margin-left: 0;
       }
- 
+
       @include fd-rtl() {
         @include fd-children() {
           margin-right: 0.5rem;
           margin-left: 0;
         }
- 
+
         &:first-child {
           margin-right: 0;
         }
@@ -158,5 +170,3 @@ $block: #{$fd-namespace}-action-bar;
     }
   }
 }
- 
- 
