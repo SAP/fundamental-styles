@@ -26,6 +26,7 @@ $block-product-menu: #{$fd-namespace}-product-menu;
   &__control {
     @include fd-var-color("background-color", fd-color("shell", 2), --fd-color-shell-2);
 
+    background-image: none;
     position: relative;
 
     @include fd-button-reset();
