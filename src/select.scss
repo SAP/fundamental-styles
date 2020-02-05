@@ -80,6 +80,7 @@ $block: #{$fd-namespace}-select;
     &.is-readonly {
       padding-right: $fd-select-padding-x;
       padding-left: $fd-select-padding-x;
+      cursor: text;
     }
   }
 
