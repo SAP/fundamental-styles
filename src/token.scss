@@ -5,6 +5,8 @@
 $block: #{$fd-namespace}-token;
 
 .#{$block} {
+  cursor: default;
+
   @mixin fd-token-focus() {
     @include fd-focus() {
       box-shadow: none;
@@ -47,6 +49,11 @@ $block: #{$fd-namespace}-token;
   line-height: 1.5rem;
   flex: 1 0 auto;
   border: var(--sapButton_BorderWidth) solid $fd-token-border-color;
+
+  @include fd-rtl() {
+    padding-left: 0;
+    padding-right: $fd-token-padding-horizontal;
+  }
 
   &__text {
     overflow: hidden;
@@ -99,6 +106,11 @@ $block: #{$fd-namespace}-token;
       min-width: $fd-token-compact-close-width;
       height: $fd-token-compact-height;
     }
+
+    @include fd-rtl() {
+      padding-left: 0;
+      padding-right: $fd-token-compact-padding-horizontal;
+    }
   }
 
   &--selected {
@@ -126,6 +138,14 @@ $block: #{$fd-namespace}-token;
 
     &.#{$block}--compact {
       padding: 0 $fd-token-compact-padding-horizontal;
+
+      @include fd-rtl() {
+        padding-left: $fd-token-compact-padding-horizontal;
+      }
+    }
+
+    @include fd-rtl() {
+      padding-left: $fd-token-padding-horizontal;
     }
   }
 }
