@@ -145,7 +145,6 @@ $fd-calendar-special-days: (
   align-self: center;
   pointer-events: none;
   height: $fd-calendar-item-helper-height;
-  font-size: $fd-calendar-item-helper-font;
   background-color: $fd-calendar-background;
 }
 
@@ -337,6 +336,7 @@ $fd-calendar-special-days: (
 
       .#{$block}__text {
         color: $fd-calendar-item-helper-color;
+        font-size: $fd-calendar-item-helper-font;
       }
     }
 
