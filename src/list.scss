@@ -165,6 +165,10 @@ $block: #{$fd-namespace}-list;
     height: 2rem;
   }
 
+  &__bold {
+    font-weight: bold;
+  }
+
   &__message {
     @include fd-reset();
 

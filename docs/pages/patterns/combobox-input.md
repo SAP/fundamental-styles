@@ -9,7 +9,9 @@ folder: patterns
 summary:
 ---
 
-The combobox input component is an opinionated composition of the `input group`, `popover` and `list` components with the use of a styled button.
+The combobox input component is an opinionated composition of the `input group`, `popover` and `list` components.
+The `popover` is shared between `multi-input` and `select` component. In `Select` there are much more examples of 
+modifications that can be provided also to combobox component.
 {: .docs-intro}
 
 {% capture default %}
@@ -30,7 +32,9 @@ The combobox input component is an opinionated composition of the `input group`,
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcX348">
         <ul class="fd-list fd-list--dropdown" role="listbox">
             <li role="option" tabindex="0" class="fd-list__item is-selected">
-                <span class="fd-list__title">List item 1</span>
+                <span class="fd-list__title">
+                    <span class="fd-list__bold">List</span> item 1
+                </span>
             </li>
             <li role="option" tabindex="0" class="fd-list__item">
                 <span class="fd-list__title">List item 2</span>
@@ -64,7 +68,9 @@ The combobox input component is an opinionated composition of the `input group`,
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcX34">
         <ul class="fd-list fd-list--dropdown fd-list--compact" role="listbox">
             <li role="option" tabindex="0" class="fd-list__item is-selected">
-                <span class="fd-list__title">List item 1</span>
+                <span class="fd-list__title">
+                    <span class="fd-list__bold">List</span> item 1
+                </span>
             </li>
             <li role="option" tabindex="0" class="fd-list__item">
                 <span class="fd-list__title">List item 2</span>

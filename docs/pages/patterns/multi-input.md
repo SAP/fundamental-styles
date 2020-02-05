@@ -9,6 +9,10 @@ folder: patterns
 summary:
 ---
 
+The multi-input component is an opinionated composition of the `input group`, `popover`, `checkbox` and `list` components.
+The `popover` is shared between `combobox` and `select` component. In `Select` there are much more examples of 
+modifications that can be provided also to combobox component
+{: .docs-intro}
 
 ## Default and Compact sizes
 

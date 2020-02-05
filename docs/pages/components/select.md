@@ -139,7 +139,7 @@ The select control (also known as a dropdown) is commonly used to enable users t
      </div>
   </div>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h07jj326">
-     <ul class="fd-list fd-list--dropdown fd-popover__body--dropdown fd-list--compact" role="listbox">
+     <ul class="fd-list fd-list--dropdown fd-list--compact" role="listbox">
         <li class="fd-list__item is-selected" role="option" tabindex="0">
            <span class="fd-list__title">
                List item 1
@@ -222,7 +222,7 @@ By default text is wrapped, to prevent from wrapping, there is a need to use `--
      </div>
   </div>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h0GZH2325">
-     <ul class="fd-list fd-list--dropdown fd-popover__body--dropdown fd-list--compact" role="listbox">
+     <ul class="fd-list fd-list--dropdown fd-list--compact" role="listbox">
         <li class="fd-list__item is-selected" role="option" tabindex="0">
            <span class="fd-list__title fd-list__title--no-wrap">
                Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text 
@@ -247,6 +247,49 @@ By default text is wrapped, to prevent from wrapping, there is a need to use `--
 {% endcapture %}
 
 {% include display-component.html component=select-wrap %}
+
+
+## Match Select Popover Body Size
+By default popover body takes as much width as it needs, of course with some limits. In general it's not dependent on
+control element. There is way to change it, by adding `fd-popover__body--dropdown-fill` class to `fd-popover__body`.
+{% capture select-fill %}
+<label class="fd-form-label">
+    Fill Control Element
+</label>
+<br>
+<div class="fd-popover">
+  <div class="fd-popover__control">
+     <div class="fd-select">
+         <div class="fd-select__control" tabindex="0" aria-controls="h0GTKE325" aria-expanded="false" aria-haspopup="true">
+             Select Title Much Longer Than Usually
+             <button class="fd-button fd-button--light sap-icon--slim-arrow-down fd-select__button"></button>
+         </div>
+      </div>
+  </div>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="h0GTKE325">
+     <ul class="fd-list fd-list--dropdown" role="listbox">
+        <li class="fd-list__item is-selected" role="option" tabindex="0">
+           <span class="fd-list__title">List item 1</span>
+           <span class="fd-list__secondary">A1</span>
+        </li>
+        <li class="fd-list__item" role="option" tabindex="0">
+           <span class="fd-list__title">List item 2</span>
+           <span class="fd-list__secondary">A2</span>
+       </li>
+        <li class="fd-list__item" role="option" tabindex="0">
+           <span class="fd-list__title">List item 3</span>
+           <span class="fd-list__secondary">A3</span>
+        </li>
+        <li class="fd-list__item" role="option" tabindex="0">
+           <span class="fd-list__title">List item 4</span>
+           <span class="fd-list__secondary">A4</span>
+        </li>
+     </ul>
+  </div>
+</div>
+{% endcapture %}
+
+{% include display-component.html component=select-fill %}
 
 
 ## Disabled State
