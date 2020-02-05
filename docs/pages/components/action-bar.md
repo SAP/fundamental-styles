@@ -7,14 +7,14 @@ toc: false
 permalink: components/action-bar.html
 folder: components
 ---
-
+ 
 The Action Bar is located at the top of the page and is used for the following:
 {: .docs-intro}
 - Page title
 - Main Actions for the page
-
+ 
 > {{ site.data.strings.headerDisclaimer }}
-
+ 
 
 ## Action bar with back button, description and action buttons.
 {% capture default-action-bar %}
@@ -29,17 +29,17 @@ The Action Bar is located at the top of the page and is used for the following:
         <p class="fd-action-bar__description">Action bar Description </p>
     </div>
     <div class="fd-action-bar__actions">
-        <button class="fd-button--primary">Button</button>
-        <button class="fd-button--emphasized">Button</button>
+        <button class="fd-button--compact fd-button--primary">Button</button>
+        <button class="fd-button--compact fd-button--emphasized">Button</button>
     </div>
 </div>
 {% endcapture %}
 {% include display-component.html component=default-action-bar %}
-
+ 
 <br/>
-
+ 
 ## Action bar with no Back button
-
+ 
 {% capture default-action-bar-multi %}
 <div class="fd-action-bar">
     <div class="fd-action-bar__header">
@@ -49,20 +49,20 @@ The Action Bar is located at the top of the page and is used for the following:
         <p class="fd-action-bar__description">Action bar Description </p>
     </div>
     <div class="fd-action-bar__actions">
-        <button class=" fd-button--primary">Button</button>
-        <button class=" fd-button--emphasized">Button</button>
+        <button class="fd-button--compact fd-button--primary">Button</button>
+        <button class="fd-button--compact fd-button--emphasized">Button</button>
     </div>
 </div>
 {% endcapture %}
-
+ 
 {% include display-component.html component=default-action-bar-multi %}
-
+ 
 <br/>
-
+ 
 ## Several Main Actions in a Contextual Menu
-
+ 
 When there are several main actions for a page, consider displaying them under a contextual menu. This allows the user to look in the same position they are used to but avoids cluttering the action bar with more than 3-4 actions. This also works well for a responsive/adaptive application.
-
+ 
 {% capture default-action-bar-menu %}
 <div class="fd-action-bar">
     <div class="fd-action-bar__header">
@@ -73,7 +73,7 @@ When there are several main actions for a page, consider displaying them under a
     <div class="fd-action-bar__actions">
             <div class="fd-popover">
                 <div class="fd-popover__control">
-                    <button class="fd-button--light sap-icon--overflow"
+                    <button class="fd-button--light fd-button--compact sap-icon--overflow"
                     aria-controls="wgxzK859" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                 </div>
                 <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="wgxzK859">
@@ -86,18 +86,18 @@ When there are several main actions for a page, consider displaying them under a
                             <li><a href="#" class="fd-menu__item">Archive</a></li>
                         </ul>
                     </nav>
-                </div>
+               </div>
             </div>
         </div>
 </div>
 {% endcapture %}
-
+ 
 {% include display-component.html component=default-action-bar-menu %}
-
+ 
 <br/>
-
+ 
 ## Action bar mobile view
-
+ 
 {% capture default-action-bar-multi %}
 <div style="width:319px;">
     <div class="fd-action-bar">
@@ -112,7 +112,7 @@ When there are several main actions for a page, consider displaying them under a
         <div class="fd-action-bar__actions">
             <div class="fd-popover">
                 <div class="fd-popover__control">
-                    <button class="fd-button--light sap-icon--overflow"
+                    <button class="fd-button--light fd-button--compact sap-icon--overflow"
                     aria-controls="wgxzK85" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                 </div>
                 <div class="fd-popover__body" aria-hidden="true" id="wgxzK85">
@@ -130,5 +130,7 @@ When there are several main actions for a page, consider displaying them under a
     </div>
 </div>
 {% endcapture %}
-
+ 
 {% include display-component.html component=default-action-bar-multi %}
+ 
+ 
