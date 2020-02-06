@@ -67,7 +67,7 @@ calendar:
   {%- set _grid_id = utils.id() %}
   {%- set _months_id = utils.id() %}
   {%- set _years_id = utils.id() %}
-<div class="fd-calendar{{ modifier.block | modifier('calendar')}}" style="{%- if properties.mobile%}position: static;{%- endif %}">{{properties.header.show}}
+<div class="fd-calendar{{ modifier.block | modifier('calendar')}}" style="{%- if properties.mobile%}width: 400px;{%- endif %}">{{properties.header.show}}
 
   {# CALENDAR HEADER #}
   {%- if not properties.header.hide %}
