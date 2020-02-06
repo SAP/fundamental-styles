@@ -14,18 +14,11 @@
 
 <h2>1-col grid (default)</h2>
 {% set example %}
-<div class="fd-layout-grid-container">
-    <div class="fd-layout-grid">
-        <div class="panel-playground">Placeholder div</div>
-        <div class="panel-playground">Placeholder div</div>
-        <div class="panel-playground">Placeholder div</div>
-        <div class="panel-playground">Placeholder div</div>
-        <div class="panel-playground">Placeholder div</div>
-        <div class="panel-playground">Placeholder div</div>
-        <div class="panel-playground">Placeholder div</div>
-        <div class="panel-playground">Placeholder div</div>
-        <div class="panel-playground">Placeholder div</div>
-        <div class="panel-playground">Placeholder div</div>
+<div class="fd-container">
+    <div class="fd-row">
+        <div class="fd-col">
+            <div class="panel-playground">Placeholder div</div>
+        </div>
     </div>
 </div>
 {% endset %}
@@ -33,18 +26,11 @@
 
 <h2>6 col grid</h2>
 {% set example %}
-    <div class="fd-layout-grid-container">
-        <div class="fd-layout-grid fd-layout-grid--col-6">
-            <div class="panel-playground">Placeholder div</div>
-            <div class="panel-playground">Placeholder div</div>
-            <div class="panel-playground">Placeholder div</div>
-            <div class="panel-playground">Placeholder div</div>
-            <div class="panel-playground">Placeholder div</div>
-            <div class="panel-playground">Placeholder div</div>
-            <div class="panel-playground">Placeholder div</div>
-            <div class="panel-playground">Placeholder div</div>
-            <div class="panel-playground">Placeholder div</div>
-            <div class="panel-playground">Placeholder div</div>
+    <div class="fd-container">
+        <div class="fd-row">
+            <div class="fd-col fd-col--6">
+                <div class="panel-playground">Placeholder div</div>
+            </div>
         </div>
     </div>
 {% endset %}
@@ -54,16 +40,14 @@
 
 <h2>Multi row grid</h2>
 {% set example %}
-    <div class="fd-layout-grid-container">
-        <div class="fd-layout-grid-row">
-            <div class="fd-layout-grid fd-layout-grid--col-2">
-                <div class="panel-playground">Placeholder div</div>
+    <div class="fd-container">
+        <div class="fd-row">
+            <div class="fd-col">
                 <div class="panel-playground">Placeholder div</div>
             </div>
         </div>
-        <div class="fd-layout-grid-row">
-            <div class="fd-layout-grid fd-layout-grid--col-2">
-                <div class="panel-playground">Placeholder div</div>
+        <div class="fd-row">
+            <div class="fd-col">
                 <div class="panel-playground">Placeholder div</div>
             </div>
         </div>
@@ -75,18 +59,16 @@
 
 <h2>Nested grid</h2>
 {% set example %}
-    <div class="fd-layout-grid-container">
-        <div class="fd-layout-grid-row">
-            <div class="fd-layout-grid fd-layout-grid--col-6 fd-layout-grid--nested">
-                <div class="fd-layout-grid fd-layout-grid--col-6">
-                    <div class="panel-playground">Placeholder div</div>
-                </div>
-                <div class="fd-layout-grid fd-layout-grid--col-6">
-                    <div class="panel-playground">Placeholder div</div>
-                </div>
-                <div class="fd-layout-grid fd-layout-grid--col-6">
-                    <div class="panel-playground">Placeholder div</div>
-                </div>
+    <div class="fd-container fd-container--no-gap">
+        <div class="fd-row">
+            <div class="fd-col fd-col--6 fd-col--no-gap">
+                <div class="panel-playground">Placeholder div</div>
+            </div>
+            <div class="fd-col fd-col--6 fd-col--no-gap">
+                <div class="panel-playground">Placeholder div</div>
+            </div>
+            <div class="fd-col fd-col--6 fd-col--no-gap">
+                <div class="panel-playground">Placeholder div</div>
             </div>
         </div>
     </div>
@@ -97,18 +79,13 @@
 
 <h2>Grid without gap</h2>
 {% set example %}
-    <div class="fd-layout-grid-container fd-layout-grid-container--no-gap">
-        <div class="fd-layout-grid-row">
-            <div class="fd-layout-grid fd-layout-grid--col-6 fd-layout-grid--nested">
-                <div class="fd-layout-grid fd-layout-grid--col-6 fd-layout-grid--no-gap">
-                    <div class="panel-playground">Placeholder div</div>
-                </div>
-                <div class="fd-layout-grid fd-layout-grid--col-6 fd-layout-grid--no-gap">
-                    <div class="panel-playground">Placeholder div</div>
-                </div>
-                <div class="fd-layout-grid fd-layout-grid--col-6 fd-layout-grid--no-gap">
-                    <div class="panel-playground">Placeholder div</div>
-                </div>
+    <div class="fd-container fd-container--no-gap">
+        <div class="fd-row">
+            <div class="fd-col fd-col--6 fd-col--no-gap">
+                <div class="panel-playground">Placeholder div</div>
+            </div>
+            <div class="fd-col fd-col--6 fd-col--no-gap">
+                <div class="panel-playground">Placeholder div</div>
             </div>
         </div>
     </div>
