@@ -187,6 +187,15 @@ $block: #{$fd-namespace}-tabs;
         padding-left: 0;
       }
     }
+
+    @include fd-rtl() {
+      &:first-child {
+        .#{$block}__link {
+          padding-right: 0;
+          padding-left: 0.875rem;
+        }
+      }
+    }
   }
 
   &__icon {
@@ -215,6 +224,7 @@ $block: #{$fd-namespace}-tabs;
     @include fd-reset();
     @include tabs-selection();
 
+    display: inline-block;
     line-height: 1rem;
   }
 
@@ -355,6 +365,23 @@ $block: #{$fd-namespace}-tabs;
       line-height: 0.875rem;
       overflow: hidden;
     }
+
+    @include fd-rtl() {
+      .#{$block}__item {
+        margin: 0 0 0 $fd-tabs-item-spacing-x;
+
+        &:first-child {
+          .#{$block}__link {
+            padding-right: 0;
+            padding-left: 0;
+          }
+        }
+      }
+
+      .#{$block}__overflow {
+        transform: rotate(180deg);
+      }
+    }
   }
 
   &--filter {
@@ -410,6 +437,17 @@ $block: #{$fd-namespace}-tabs;
         }
       }
     }
+
+    @include fd-rtl() {
+      .#{$block}__item {
+        &:first-child {
+          .#{$block}__link {
+            padding-right: $fd-tabs-selection-padding-x;
+            padding-left: $fd-tabs-selection-padding-x;
+          }
+        }
+      }
+    }
   }
 
   &--compact {
@@ -448,6 +486,22 @@ $block: #{$fd-namespace}-tabs;
   &--xl,
   &--xxl {
     padding: 0 3rem;
+  }
+
+  @include fd-rtl() {
+    .#{$block}__process-icon {
+      transform: rotate(180deg);
+    }
+
+    .#{$block}__counter-header {
+      padding-right: 0;
+      padding-left: 0.5rem;
+    }
+
+    .#{$block}__overflow {
+      margin-left: 0;
+      margin-right: auto;
+    }
   }
 }
 
