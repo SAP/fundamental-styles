@@ -9,9 +9,8 @@ folder: components
 summary:
 ---
 
-Message Strip provide messages within the application that are color-coded to emphasize the level of urgency.
+Message Strip provide inline messages within the application that are color-coded to emphasize the level of urgency.
 {: .docs-intro}
-For Message Strip placement guidelines within the application, see [Application Layout page]({{site.baseurl}}/layouts/shell-layout.html#application-overlay-message-strip-example) and [Application Message Strip overlay Demo Page]({{site.baseurl}}/demo-pages/message-strip-overlay-demo-page.html)
 
 <br>
 

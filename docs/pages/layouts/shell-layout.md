@@ -167,34 +167,3 @@ The container visibility can be toggled with the `aria-hidden` attribute.
 
 {% endcapture %}
 {% include display-component.html component=app-layout-no-sidebar class="app" %}
-
-### Application Overlay Message Strip example
-{: .docs-header-h3}
-
-{% capture app-layout-no-sidebar %}
-<div class="fd-shell fd-shell--fundamentals">
-    <div class="fd-shell__header">
-        fd-shell__header
-    </div>
-    <div class="fd-shell__app">
-        <div class="fd-app">
-            <main class="fd-app__main">
-                fd-app__main
-            </main>
-        </div>
-    </div>
-    <div class="fd-shell__footer">
-        fd-shell__footer
-    </div>
-    <div class="fd-shell__overlay fd-overlay fd-overlay--message-strip" aria-hidden="false">
-        <div class="fd-message-strip fd-message-strip--warning fd-message-strip--dismissible" role="alert" id="4Nolz351">
-          <button class="fd-button fd-button--light fd-button--compact fd-message-strip__close" aria-controls="4Nolz351" aria-label="Close"></button>
-          <span class="fd-message-strip__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
-        </div>
-    </div>
-</div>
-
-
-
-{% endcapture %}
-{% include display-component.html component=app-layout-no-sidebar class="app" %}

@@ -8,11 +8,11 @@ permalink: components/alert.html
 folder: components
 summary:
 ---
-> **DEPRECATED**. This component is deprecated and replaced by [Message Strip component]({{site.baseurl}}/components/message-strip.html)
-{: .docs-deprecated}
->
-Alerts provide messages within the application that are color-coded to emphasize the level of urgency.
+
+Alerts provide inline messages within the application that are color-coded to emphasize the level of urgency.
 {: .docs-intro}
+> **DEPRECATED**. Alert does not exist as a Fiori 3 component so it has been deprecated. The inline version successor of the alert is [Message Strip component]({{site.baseurl}}/components/message-strip.html). There is no overlay version of Alert in Fiori 3.
+{: .docs-deprecated}
 
 <br>
 
