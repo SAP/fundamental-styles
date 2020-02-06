@@ -144,6 +144,10 @@ entries:
       url: /components/image.html
       output: web
 
+    - title: Info Label
+      url: /components/info-label.html
+      output: web
+
     - title: Input Group
       url: /components/input-group.html
       output: web
