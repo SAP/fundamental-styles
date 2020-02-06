@@ -7,33 +7,33 @@
 */
 $block: #{$fd-namespace}-col;
 
-.#{$block} {
-  @include fd-screen(m) {
-    @for $i from 1 through 12 {
-      &--#{$i} {
-        @include fd-flow($i, 12);
-      }
-    }
+// .#{$block} {
+//   @include fd-screen(m) {
+//     @for $i from 1 through 12 {
+//       &--#{$i} {
+//         @include fd-flow($i, 12);
+//       }
+//     }
 
-    @for $i from 1 through 11 {
-      &--shift-#{$i} {
-        @include fd-flow-shift($i);
-      }
-    }
-  }
+//     @for $i from 1 through 11 {
+//       &--shift-#{$i} {
+//         @include fd-flow-shift($i);
+//       }
+//     }
+//   }
 
-  @at-root {
-    [class^="#{$block}"] {
-      flex: 1;
-      margin-bottom: $fd-margin-bottom;
+//   @at-root {
+//     [class^="#{$block}"] {
+//       flex: 1;
+//       margin-bottom: $fd-margin-bottom;
 
-      &:last-child {
-        margin-bottom: 0;
-      }
+//       &:last-child {
+//         margin-bottom: 0;
+//       }
 
-      @include fd-screen(s) {
-        margin-bottom: 0;
-      }
-    }
-  }
-}
+//       @include fd-screen(s) {
+//         margin-bottom: 0;
+//       }
+//     }
+//   }
+// }

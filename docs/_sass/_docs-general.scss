@@ -98,14 +98,9 @@ hr {
 
 .docs-tiles {
     $docs-tiles-color: docs-color(action, 4);
-    margin: 0 -20px;
-     grid-auto-rows: 1fr;
 
     .fd-tile[role="button"] {
         border: 1px solid docs-color(neturals, 1);
-        margin: 20px;
-        padding-top: 10px;
-        padding-bottom: 20px;
         text-decoration: none;
 
         &:hover {

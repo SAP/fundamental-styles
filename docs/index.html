@@ -9,22 +9,42 @@ topnavhidden: true
 footerhidden: true
 ---
 
-<style>
-    .main-content {
-        height: 100vh !important;
-        background-color: #ffffff !important;
-        position: relative;
-    }
-</style>
-<header>
-    <div class="header-section" id="headerSection">
-        <div class="header-section__hamburger">
-            <button id="hamburgerToggle" class="sap-icon--menu2 header-section__sap-icon--menu2" onclick="toggleHamburger()" aria-label="Open/Close Main Navigation"></button>
+<div class="docs-home_hero">
+    <div class="fd-container">
+        <div class="fd-row">
+            <div class="fd-col--12 docs-home_hero-content">
+                <h1 class="docs-home_hero-heading"><span class="docs-home_hero-bold">Develop</span> with Fundamental Library
+                    <br>Styles.</h1>
+                <p class="docs-home_hero-description">
+                    An open source library to consistent user interface across web applications.
+                </p>
+                <a class="fd-button--emphasized docs-home_hero-btn"
+                   href="components/index.html">
+                    EXPLORE COMPONENTS
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="fd-button--emphasized docs-home_hero-btn"
+                   href="getting-started.html">
+                    GETTING STARTED
+                </a>
+                <br>
+                CURRENT VERSION v{{site.library_version}}
+            </div>
         </div>
-        <div class="header-section__logo">
-            <img
-                src="{{site.baseurl}}/images/land-page-assets/logo_text.png"
-                alt="Fundamental Library Styles Logo and Text" />
+    </div>
+</div>
+
+<div class="docs-home_panel">
+    <h1 class="docs-home_panel-title"><a href="foundation/index.html">foundation.</a></h1>
+    <div class="fd-container">
+        <div class="fd-row">
+            <div class="fd-col--6">
+                <h2 class="docs-home_panel-heading">Spacing.</h2>
+                <p class="docs-home_panel-description">Spacing helps content to breathe as well as create hierarchy
+                    and depth. It ensures optimal readability and space efficiency, all heights and widths are
+                    calculated from a base unit or 4.</p>
+                <a href="foundation/spacing.html"
+                   class="docs-home_panel-action">READ MORE</a>
         </div>
         <!-- id="headerLinks" -->
         <nav id="responsiveMenu" class="header-section__links">
@@ -49,121 +69,23 @@ footerhidden: true
             />
             <h1 class="intro-section__text"><span class="vh">Fundamental Library - </span>An open source and community driven project to provide a consistent user interface across web applications.</h1>
         </div>
-    </div>
-</header>
-<main>
-    <section class="libraries-section" id="libraries">
-        <h2 class="libraries-section__title">Fundamental Library</h2>
-        <div class="libraries-section__container">
-            <div class="libraries-section__item">
-                <div>
-
-                    <img
-                        src="{{site.baseurl}}/images/land-page-assets/css_html.svg"
-                        alt="Logos of the official W3C HTML5 and CSS specifications"
-                        class="libraries-section__logo" />
-
-                    <h3 class="libraries-section__item-title">Fundamental Library Styles</h3>
-                    <p class="libraries-section__text">Delivers a Fiori 3.0 component library for building SAP user interfaces with any web technology, including artifacts like a UI kit, SAP icons, SAP font and component specifications.</p>
-                </div>
-                <div class="libraries-section__links">
-                    <a class="libraries-section__more" href="{{site.baseurl}}/getting-started.html" target="_blank">Learn More <span class="vh">about Fundamental Library Styles</span></a>
-                    <a class="libraries-section__more" href="https://github.com/SAP/fundamental-styles" target="_blank">GitHub</a>
-                </div>
-            </div>
-            <div class="libraries-section__item">
-                <div>
-
-                    <img
-                        src="{{site.baseurl}}/images/land-page-assets/angular.svg"
-                        alt="Logo of the AngularJS Framework"
-                        class="libraries-section__logo" />
-
-                    <h3 class="libraries-section__item-title">Fundamental Library for Angular</h3>
-                    <p class="libraries-section__text">Provides an Angular implementation of the components designed in Fundamental-Styles.</p>
-                </div>
-                <div class="libraries-section__links">
-                    <a class="libraries-section__more" href="https://sap.github.io/fundamental-ngx/" target="_blank">Learn More <span class="vh">about Fundamental Library for Angular</span></a>
-                    <a class="libraries-section__more" href="https://github.com/SAP/fundamental-ngx" target="_blank">GitHub</a>
-                </div>
-            </div>
-            <div class="libraries-section__item">
-                <div>
-
-                    <img
-                        src="{{site.baseurl}}/images/land-page-assets/react.svg"
-                        alt="Logo of the React Framework"
-                        class="libraries-section__logo" />
-
-                    <h3 class="libraries-section__item-title">Fundamental Library for React</h3>
-                    <p class="libraries-section__text">Offers a React implementation of the components designed in Fundamental Styles.</p>
-                </div>
-                <div class="libraries-section__links">
-                    <a class="libraries-section__more" href="https://sap.github.io/fundamental-react/" target="_blank">Learn More <span class="vh">about Fundamental Library for React</span></a>
-                    <a class="libraries-section__more" href="https://github.com/SAP/fundamental-react" target="_blank">GitHub</a>
-                </div>
-            </div>
-            <div class="libraries-section__item">
-                <div>
-
-                    <img
-                        src="{{site.baseurl}}/images/land-page-assets/vue.svg"
-                        alt="Logo of the Vue.js Framework"
-                        class="libraries-section__logo" />
-
-                    <h3 class="libraries-section__item-title">Fundamental Library for Vue</h3>
-                    <p class="libraries-section__text">Supplies a Vue implementation of the components designed in Fundamental Styles.</p>
-                </div>
-                <div class="libraries-section__links">
-                    <a class="libraries-section__more" href="https://sap.github.io/fundamental-vue/" target="_blank">Learn More <span class="vh">about Fundamental Library for Vue</span></a>
-                    <a class="libraries-section__more" href="https://github.com/SAP/fundamental-vue" target="_blank">GitHub</a>
-                </div>
-            </div>
         </div>
-    </section>
+    </div>
+</div>
 
-    <section class="features-section" id="features">
-        <h2 class="features-section__title">Key Features</h2>
-        <div class="features-section__container">
-            <div class="features-section__item">
-
-                <img
-                    src="{{site.baseurl}}/images/land-page-assets/foundational.png"
-                    alt="Pictogram of a stone wall"
-                    class="features-section__logo" />
-
-                <h3 class="features-section__item-title">Foundational</h3>
-                <p class="features-section__text">Focuses on web standards; basic elements and simple patterns.</p>
+<div class="docs-home_panel docs-home_panel--alt">
+    <div class="fd-container">
+        <div class="fd-row">
+            <h1 class="docs-home_panel-title"><a href="components/index.html">library.</a></h1>
+            <div class="fd-col--6">
+                <div class="docs-home_panel-search-box">
+                    {% include search-box.html %}
+                </div>
             </div>
-            <div class="features-section__item">
-
-                <img
-                    src="{{site.baseurl}}/images/land-page-assets/modular.png"
-                    alt="Pictogram of stacked boxes"
-                    class="features-section__logo" />
-
-                <h3 class="features-section__item-title">Modular</h3>
-                <p class="features-section__text">Revolves around self-contained components, while encapsulating styles and behaviours.</p>
-            </div>
-            <div class="features-section__item">
-
-                <img
-                    src="{{site.baseurl}}/images/land-page-assets/flexible.png"
-                    alt="Pictogram of Arrows"
-                    class="features-section__logo" />
-
-                <h3 class="features-section__item-title">Flexible</h3>
-                <p class="features-section__text">Encompasses theming capabilities and combines basic blocks to create complex components.</p>
-            </div>
-            <div class="features-section__item">
-
-                <img
-                    src="{{site.baseurl}}/images/land-page-assets/collaborative.png"
-                    alt="Pictorgram of people speaking"
-                    class="features-section__logo" />
-
-                <h3 class="features-section__item-title">Collaborative</h3>
-                <p class="features-section__text">Welcomes multiple contributors within its community and allows for fast release cycles.</p>
+            <div class="fd-col--6">
+                <a href="https://sap.github.io/fundamental-ngx" target="_blank" class="docs-home_panel-resources-link">Fundamental Library for Angular <span class="sap-icon--navigation-right-arrow"></span> </a>
+                <a href="https://sap.github.io/fundamental-react" target="_blank" class="docs-home_panel-resources-link">Fundamental Library for React <span class="sap-icon--navigation-right-arrow"></span> </a>
+                <a href="https://github.com/SAP/fundamental-vue" target="_blank" class="docs-home_panel-resources-link">Fundamental Library for Vue <span class="sap-icon--navigation-right-arrow"></span> </a>
             </div>
         </div>
     </section>
