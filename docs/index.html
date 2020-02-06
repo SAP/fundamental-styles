@@ -8,38 +8,41 @@ layout: default-no-sidebar
 ---
 
 <div class="docs-home_hero">
-    <div class="fd-container fd-container--fluid">
-        <div class="fd-col--12 docs-home_hero-content">
-            <h1 class="docs-home_hero-heading"><span class="docs-home_hero-bold">Develop</span> with Fundamental Library
-                <br>Styles.</h1>
-            <p class="docs-home_hero-description">
-                An open source library to consistent user interface across web applications.
-            </p>
-            <a class="fd-button--emphasized docs-home_hero-btn"
-               href="components/index.html">
-                EXPLORE COMPONENTS
-            </a>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <a class="fd-button--emphasized docs-home_hero-btn"
-               href="getting-started.html">
-                GETTING STARTED
-            </a>
-            <br>
-            CURRENT VERSION v{{site.library_version}}
+    <div class="fd-container">
+        <div class="fd-row">
+            <div class="fd-col--12 docs-home_hero-content">
+                <h1 class="docs-home_hero-heading"><span class="docs-home_hero-bold">Develop</span> with Fundamental Library
+                    <br>Styles.</h1>
+                <p class="docs-home_hero-description">
+                    An open source library to consistent user interface across web applications.
+                </p>
+                <a class="fd-button--emphasized docs-home_hero-btn"
+                   href="components/index.html">
+                    EXPLORE COMPONENTS
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="fd-button--emphasized docs-home_hero-btn"
+                   href="getting-started.html">
+                    GETTING STARTED
+                </a>
+                <br>
+                CURRENT VERSION v{{site.library_version}}
+            </div>
         </div>
     </div>
 </div>
 
 <div class="docs-home_panel">
     <h1 class="docs-home_panel-title"><a href="foundation/index.html">foundation.</a></h1>
-    <div class="fd-container fd-container--fluid">
-        <div class="fd-col--6">
-                    <h2 class="docs-home_panel-heading">Spacing.</h2>
-                    <p class="docs-home_panel-description">Spacing helps content to breathe as well as create hierarchy
-                        and depth. It ensures optimal readability and space efficiency, all heights and widths are
-                        calculated from a base unit or 4.</p>
-                    <a href="foundation/spacing.html"
-                       class="docs-home_panel-action">READ MORE</a>
+    <div class="fd-container">
+        <div class="fd-row">
+            <div class="fd-col--6">
+                <h2 class="docs-home_panel-heading">Spacing.</h2>
+                <p class="docs-home_panel-description">Spacing helps content to breathe as well as create hierarchy
+                    and depth. It ensures optimal readability and space efficiency, all heights and widths are
+                    calculated from a base unit or 4.</p>
+                <a href="foundation/spacing.html"
+                   class="docs-home_panel-action">READ MORE</a>
         </div>
         <div class="fd-col--6">
             <h2 class="docs-home_panel-heading">Type.</h2>
@@ -49,21 +52,24 @@ layout: default-no-sidebar
             <a href="foundation/type.html"
                 class="docs-home_panel-action">READ MORE</a>
         </div>
+        </div>
     </div>
 </div>
 
 <div class="docs-home_panel docs-home_panel--alt">
-    <div class="fd-container fd-container--fluid">
-        <h1 class="docs-home_panel-title"><a href="components/index.html">library.</a></h1>
-        <div class="fd-col--6">
-            <div class="docs-home_panel-search-box">
-                {% include search-box.html %}
+    <div class="fd-container">
+        <div class="fd-row">
+            <h1 class="docs-home_panel-title"><a href="components/index.html">library.</a></h1>
+            <div class="fd-col--6">
+                <div class="docs-home_panel-search-box">
+                    {% include search-box.html %}
+                </div>
             </div>
-        </div>
-        <div class="fd-col--6">
-            <a href="https://sap.github.io/fundamental-ngx" target="_blank" class="docs-home_panel-resources-link">Fundamental Library for Angular <span class="sap-icon--navigation-right-arrow"></span> </a>
-            <a href="https://sap.github.io/fundamental-react" target="_blank" class="docs-home_panel-resources-link">Fundamental Library for React <span class="sap-icon--navigation-right-arrow"></span> </a>
-            <a href="https://github.com/SAP/fundamental-vue" target="_blank" class="docs-home_panel-resources-link">Fundamental Library for Vue <span class="sap-icon--navigation-right-arrow"></span> </a>
+            <div class="fd-col--6">
+                <a href="https://sap.github.io/fundamental-ngx" target="_blank" class="docs-home_panel-resources-link">Fundamental Library for Angular <span class="sap-icon--navigation-right-arrow"></span> </a>
+                <a href="https://sap.github.io/fundamental-react" target="_blank" class="docs-home_panel-resources-link">Fundamental Library for React <span class="sap-icon--navigation-right-arrow"></span> </a>
+                <a href="https://github.com/SAP/fundamental-vue" target="_blank" class="docs-home_panel-resources-link">Fundamental Library for Vue <span class="sap-icon--navigation-right-arrow"></span> </a>
+            </div>
         </div>
     </div>
 </div>

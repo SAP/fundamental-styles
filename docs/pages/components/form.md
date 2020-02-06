@@ -757,3 +757,127 @@ Do not use the checkbox control if:
 {% include display-component.html component=checkbox %}
 
 <br>
+
+## Form with 4-7-1 Layout
+
+{% capture form-edit %}
+<div class="fd-edit-mode-container">
+    <div class="fd-form-edit-mode-row">
+        <div class="fd-form-edit-mode fd-form-edit-mode--4 fd-form-edit-mode--label">
+            <label class="fd-form-label" for="input-1">Default Input:</label>
+        </div>
+        <div class="fd-form-edit-mode fd-form-edit-mode--7">
+            <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text">
+        </div>
+    </div>
+    <div class="fd-form-edit-mode-row">
+        <div class="fd-form-edit-mode fd-form-edit-mode--4 fd-form-edit-mode--label">
+            <label class="fd-form-label fd-form-label--required" for="input-1c">Required Input:</label>
+        </div>
+        <div class="fd-form-edit-mode fd-form-edit-mode--7">
+            <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text">
+        </div>
+    </div>
+    <div class="fd-form-edit-mode-row">
+        <div class="fd-form-edit-mode fd-form-edit-mode--4 fd-form-edit-mode--label">
+            <label class="fd-form-label" for="input-2">2 Inputs:</label>
+        </div>
+        <div class="fd-form-edit-mode fd-form-edit-mode--7">
+            <div class="fd-form-edit-mode-row">
+                <div class="fd-form-edit-mode fd-form-edit-mode--6">
+                    <input class="fd-input" type="text" id="input-2" placeholder="Field placeholder text">
+                </div>
+                <div class="fd-form-edit-mode fd-form-edit-mode--6">
+                    <input class="fd-input" type="text" id="input-3" placeholder="Field placeholder text">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=form-edit %}
+
+<br>
+
+
+## Form with 4-7-1 Layout
+
+{% capture form-edit %}
+<div class="fd-edit-mode-container">
+    <div class="fd-form-edit-mode-row">
+        <div class="fd-form-edit-mode fd-form-edit-mode--4 fd-form-edit-mode--label">
+            <label class="fd-form-label" for="input-1">Default Input:</label>
+        </div>
+        <div class="fd-form-edit-mode fd-form-edit-mode--7">
+            <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text">
+        </div>
+    </div>
+    <div class="fd-form-edit-mode-row">
+        <div class="fd-form-edit-mode fd-form-edit-mode--4 fd-form-edit-mode--label">
+            <label class="fd-form-label fd-form-label--required" for="input-1c">Required Input:</label>
+        </div>
+        <div class="fd-form-edit-mode fd-form-edit-mode--7">
+            <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text">
+        </div>
+    </div>
+    <div class="fd-form-edit-mode-row">
+        <div class="fd-form-edit-mode fd-form-edit-mode--4 fd-form-edit-mode--label">
+            <label class="fd-form-label" for="input-2">2 Inputs:</label>
+        </div>
+        <div class="fd-form-edit-mode fd-form-edit-mode--7">
+            <div class="fd-form-edit-mode-row">
+                <div class="fd-form-edit-mode fd-form-edit-mode--6">
+                    <input class="fd-input" type="text" id="input-2" placeholder="Field placeholder text">
+                </div>
+                <div class="fd-form-edit-mode fd-form-edit-mode--6">
+                    <input class="fd-input" type="text" id="input-3" placeholder="Field placeholder text">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=form-edit %}
+
+<br>
+
+## Form with 12 column Layout
+
+{% capture form-edit %}
+<div class="fd-edit-mode-container">
+    <div class="fd-form-edit-mode-row fd-form-edit-mode-row--vertical">
+        <div class="fd-form-edit-mode fd-form-edit-mode--12">
+            <label class="fd-form-label" for="input-1">Default Input:</label>
+        </div>
+        <div class="fd-form-edit-mode fd-form-edit-mode--12">
+            <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text">
+        </div>
+    </div>
+    <div class="fd-form-edit-mode-row fd-form-edit-mode-row--vertical">
+        <div class="fd-form-edit-mode fd-form-edit-mode--12">
+            <label class="fd-form-label fd-form-label--required" for="input-1c">Required Input:</label>
+        </div>
+        <div class="fd-form-edit-mode fd-form-edit-mode--12">
+            <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text">
+        </div>
+    </div>
+    <div class="fd-form-edit-mode-row fd-form-edit-mode-row--vertical">
+        <div class="fd-form-edit-mode fd-form-edit-mode--12">
+            <label class="fd-form-label" for="input-2">2 Inputs:</label>
+        </div>
+        <div class="fd-form-edit-mode fd-form-edit-mode--12">
+            <div class="fd-form-edit-mode-row fd-form-edit-mode-row--vertical">
+                <div class="fd-form-edit-mode fd-form-edit-mode--6">
+                    <input class="fd-input" type="text" id="input-2" placeholder="Field placeholder text">
+                </div>
+                <div class="fd-form-edit-mode fd-form-edit-mode--6">
+                    <input class="fd-input" type="text" id="input-3" placeholder="Field placeholder text">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=form-edit %}
+
+<br>

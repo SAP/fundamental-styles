@@ -1,0 +1,98 @@
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+$blockContainer: #{$fd-namespace}-form-edit-mode-container;
+$blockRow: #{$fd-namespace}-form-edit-mode-row;
+$block: #{$fd-namespace}-form-edit-mode;
+
+.#{$blockContainer} {
+  @include fd-reset();
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: 0 0 100%;
+  position: relative;
+  padding: 1rem;
+  margin: 0 -0.25rem;
+
+  &--no-gap {
+    margin: 0;
+  }
+
+  :last-child {
+    margin-bottom: 0;
+  }
+
+  .#{$blockRow} {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.#{$blockRow} {
+  @include fd-reset();
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: 0 0 100%;
+  position: relative;
+  align-items: center;
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+  height: 2.75rem;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+
+  &--inner-flex {
+    display: flex;
+  }
+
+  &--compact {
+    height: 2rem;
+  }
+
+  &--vertical {
+    height: 100%;
+  }
+}
+
+.#{$block} {
+  @include fd-reset();
+
+  flex: 0 0 100%;
+  padding: 0 0.25rem;
+
+  @for $n from 1 through 12 {
+    &--#{$n} {
+      flex: 0 0 ( ( $n / 12 ) *100%);
+    }
+  }
+
+  @for $n from 1 through 12 {
+    &--offset-#{$n} {
+      margin-left: ( ( $n / 12 ) *100%);
+    }
+  }
+
+  &--no-gap {
+    padding: 0;
+  }
+
+  &--label {
+    text-align: right;
+
+    .fd-form-label {
+      margin-right: 0;
+    }
+  }
+
+  .#{$blockRow} {
+    margin-left: -0.25rem;
+    margin-right: -0.25rem;
+  }
+}
