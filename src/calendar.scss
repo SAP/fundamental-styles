@@ -42,7 +42,7 @@ $fd-calendar-button-height: 2.75rem !default;
 $fd-calendar-button-height-compact: 2rem !default;
 $fd-calendar-padding-mobile-landscape: 0 !default;
 $fd-calendar-padding-mobile-portrait: 1rem 0 0 0 !default;
-$fd-calendar-item-helper-height-landscape: 1.625rem !default;
+$fd-calendar-item-helper-height-landscape: 1.5rem !default;
 
 // Calendar items variations
 $fd-calendar-item-color: var(--sapTextColor) !default;
@@ -419,12 +419,8 @@ $fd-calendar-special-days: (
 
   // CALENDAR MOBILE
   &--mobile {
-    position: fixed;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
 
     .#{$block} {
       &__navigation {

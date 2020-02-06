@@ -650,7 +650,7 @@ This are classes used to describe the look of calendar grid element.
 Calendar should be opened inside dialog component.
 
 {% capture default-calendar-mobile %}
-<div class="fd-calendar fd-calendar--mobile" style="position: static;">
+<div class="fd-calendar fd-calendar--mobile" style="width: 400px;">
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
             <div class="fd-calendar__action fd-calendar__action--arrow-left">
