@@ -875,13 +875,13 @@ Do not use the checkbox control if:
         </div>
         <div class="fd-form-edit-mode fd-form-edit-mode--7">
             <div class="fd-form-edit-mode-row">
-                <div class="fd-form-edit-mode fd-form-edit-mode--6">
-                    <input class="fd-input" type="text" id="input-2" placeholder="Field placeholder text">
+                    <div class="fd-form-edit-mode fd-form-edit-mode--6">
+                        <input class="fd-input" type="text" id="input-2" placeholder="Field placeholder text">
+                    </div>
+                    <div class="fd-form-edit-mode fd-form-edit-mode--6">
+                        <input class="fd-input" type="text" id="input-3" placeholder="Field placeholder text">
+                    </div>
                 </div>
-                <div class="fd-form-edit-mode fd-form-edit-mode--6">
-                    <input class="fd-input" type="text" id="input-3" placeholder="Field placeholder text">
-                </div>
-            </div>
         </div>
     </div>
 </div>

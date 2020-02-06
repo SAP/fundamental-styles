@@ -48,10 +48,6 @@ $block: #{$fd-namespace}-form-edit-mode;
     margin-bottom: 0;
   }
 
-  &--inner-flex {
-    display: flex;
-  }
-
   &--compact {
     height: 2rem;
   }
@@ -84,6 +80,7 @@ $block: #{$fd-namespace}-form-edit-mode;
   }
 
   &--label {
+    padding-right: 0;
     text-align: right;
 
     .fd-form-label {
@@ -92,7 +89,6 @@ $block: #{$fd-namespace}-form-edit-mode;
   }
 
   .#{$blockRow} {
-    margin-left: -0.25rem;
-    margin-right: -0.25rem;
+    margin: 0 -0.25rem;
   }
 }
