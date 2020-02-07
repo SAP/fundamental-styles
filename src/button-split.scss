@@ -8,6 +8,57 @@
 */
 $block: #{$fd-namespace}-button-split;
 
+@mixin styleContent() {
+  & > * {
+    @content;
+  }
+}
+
+@mixin ltrMode() {
+  > * {
+    &:first-child {
+      @include styleContent() {
+        margin: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+
+    &:nth-child(2) {
+      @include styleContent() {
+        margin: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left-width: 0;
+      }
+    }
+  }
+}
+
+@mixin rtlMode() {
+  > * {
+    &:first-child {
+      @include styleContent() {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: var(--sapButton_BorderCornerRadius);
+        border-bottom-right-radius: var(--sapButton_BorderCornerRadius);
+      }
+    }
+
+    &:nth-child(2) {
+      @include styleContent() {
+        border-top-left-radius: var(--sapButton_BorderCornerRadius);
+        border-bottom-left-radius: var(--sapButton_BorderCornerRadius);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-left-width: var(--sapButton_BorderWidth);
+        border-right-width: 0;
+      }
+    }
+  }
+}
+
 .#{$block} {
   @include fd-reset();
 
@@ -15,46 +66,25 @@ $block: #{$fd-namespace}-button-split;
   vertical-align: middle;
   position: relative;
 
-  :first-child {
-    margin: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  :nth-child(2) {
-    margin: 0;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-left-width: 0;
-  }
+  @include ltrMode();
 
   @include fd-rtl() {
-    :first-child {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      border-top-right-radius: var(--sapButton_BorderCornerRadius);
-      border-bottom-right-radius: var(--sapButton_BorderCornerRadius);
-    }
-
-    :nth-child(2) {
-      border-top-left-radius: var(--sapButton_BorderCornerRadius);
-      border-bottom-left-radius: var(--sapButton_BorderCornerRadius);
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      border-left-width: var(--sapButton_BorderWidth);
-      border-right-width: 0;
-    }
+    @include rtlMode();
   }
 
-  [class*="--emphasized"] {
+  > [class*="--emphasized"] {
     &:first-child {
-      margin-right: 1px;
+      @include styleContent() {
+        margin-right: 1px;
+      }
     }
 
     @include fd-rtl() {
       &:first-child {
-        margin-right: 0;
-        margin-left: 1px;
+        @include styleContent() {
+          margin-right: 0;
+          margin-left: 1px;
+        }
       }
     }
   }

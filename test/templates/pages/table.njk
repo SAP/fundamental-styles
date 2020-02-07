@@ -8,7 +8,7 @@
 {% import "../layout/component.njk" as layout %}
 {% from "../dropdown/component.njk" import dropdown %}
 {% from "../button/component.njk" import button %}
-{% from "../button-group/component.njk" import button_group %}
+{% from "../segmented-button/component.njk" import segmented_button %}
 {% from "../table/component.njk" import table %}
 {% from "../token/component.njk" import token %}
 {% from "../menu/component.njk" import menu %}
@@ -80,7 +80,7 @@
 
       {{  button({label: 'Filter',icon: 'add-filter' },modifier={block: ['standard','compact']}) }}
 
-{% call button_group() -%}
+{% call segmented_button() -%}
 
         {{button({ icon: "grid" },size="compact",modifier={block: []},aria={  })}}
         {{button({ icon: "list" },size="compact",modifier={block: []},aria={ "pressed": true })}}

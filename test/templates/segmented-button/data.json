@@ -1,0 +1,30 @@
+{
+    "id": "segmented-button",
+    "name": "Segmented button",
+    "properties": {
+        "label": "Group label",
+        "buttons": [
+            {
+                "properties": {
+                    "label": "Left"
+                },
+                "aria": {
+                    "pressed": true
+                }
+            },
+            {
+                "properties": {
+                    "label": "Middle"
+                }
+            },
+            {
+                "properties": {
+                    "label": "Right"
+                }
+            }
+        ]
+    },
+    "modifier": {},
+    "state": {},
+    "aria": {}
+}

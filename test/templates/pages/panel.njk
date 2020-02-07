@@ -6,7 +6,7 @@
 {% from "../table/component.njk" import table %}
 {% from "../token/component.njk" import token %}
 {% from "../button/component.njk" import button %}
-{% from "../button-group/component.njk" import button_group %}
+{% from "../segmented-button/component.njk" import segmented_button %}
 {% from "../pagination/component.njk" import pagination %}
 {% from "../dropdown/component.njk" import dropdown %}
 {% from "../menu/component.njk" import menu %}
@@ -156,7 +156,7 @@
           }}
 
         {{  button({label: 'Filter',icon: 'filter' }, modifier={block: ['standard','compact']}, aria={ controls: _id, haspopup: true, expanded: false, label: "Filter" }) }}
-{% call button_group() -%}
+{% call segmented_button() -%}
 {{button({ icon: "grid" },size="compact",modifier={block: []},aria={  })}}
 {{button({ icon: "list" },size="compact",modifier={block: []},aria={ "pressed": true })}}
 

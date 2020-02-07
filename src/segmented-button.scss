@@ -1,0 +1,79 @@
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+/*!
+.fd-segmented-button+()
+    .fd-button
+*/
+$block: #{$fd-namespace}-segmented-button;
+
+@mixin styleButtonContent() {
+  & > * {
+    @content;
+  }
+}
+
+.#{$block} {
+  @include fd-reset();
+
+  display: inline-flex;
+  vertical-align: middle;
+
+  & > * {
+    margin: 0;
+
+    &:not(:first-child):not(:last-child) {
+      @include styleButtonContent() {
+        border-radius: 0;
+      }
+    }
+
+    &:not(:last-child) {
+      @include styleButtonContent() {
+        border-right-width: 0;
+      }
+    }
+
+    &:first-child {
+      @include styleButtonContent() {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+
+    &:last-child {
+      @include styleButtonContent() {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+
+    @include fd-rtl() {
+      &:not(:first-child) {
+        @include styleButtonContent() {
+          border-right: none;
+        }
+      }
+
+      &:last-child {
+        @include styleButtonContent() {
+          border-top-left-radius: var(--sapButton_BorderCornerRadius);
+          border-bottom-left-radius: var(--sapButton_BorderCornerRadius);
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+
+      &:first-child {
+        @include styleButtonContent() {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          border-top-right-radius: var(--sapButton_BorderCornerRadius);
+          border-bottom-right-radius: var(--sapButton_BorderCornerRadius);
+          border-right-width: 1px;
+        }
+      }
+    }
+  }
+}

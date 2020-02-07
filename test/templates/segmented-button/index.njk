@@ -1,0 +1,33 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./component.njk" import segmented_button %}
+
+
+{% block content %}
+<style media="screen">
+  .fd-segmented-button {
+    margin-bottom: 10px;
+  }
+</style>
+
+<h2>default</h2>
+
+{% set example %}
+
+    {% call segmented_button() -%}
+     <span><span class="btn-playground">First</span></span>
+     <span><span class="btn-playground">Second</span></span>
+     <span><span class="btn-playground">Third</span></span>
+  {%- endcall %}
+
+  {% call segmented_button() -%}
+     <span><span class="btn-playground">First</span></span>
+     <span><span class="btn-playground">Second</span></span>
+     <span><span class="btn-playground">Third</span></span>
+     <span><span class="btn-playground">Fourth</span></span>
+  {%- endcall %}
+
+    {% endset %}
+    {{ format(example) }}
+
+{% endblock %}
