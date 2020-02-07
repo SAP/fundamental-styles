@@ -112,13 +112,8 @@ There are four placement options:
 
 ## Popover with Header, Subheader and Footer
 
-* Header (without a subheader): `fd-popover__body-header`
-* Header with subheader: `fd-popover__body-header--with-subheader` should be applied if the header is followed by a subheader
-* Header in compact mode: `--compact` modifier class on the `fd-popover__body-header`
-* Subheader: `fd-popover__body-subheader`
-* Subheader in compact mode: `--compact` modifier class on the `fd-popover__body-subheader`
+* Header (with/without a subheader): `fd-popover__body-header`
 * Footer: `fd-popover__body-footer`
-* Footer in compact mode: `--compact` modifier class on the `fd-popover__body-footer`
 
 {% capture default-header-footer %}
 <div class="fd-popover">
@@ -126,7 +121,18 @@ There are four placement options:
         <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverHSF1" aria-expanded="false" aria-haspopup="true">Header Only</button>
     </div>
     <div class="fd-popover__body" aria-hidden="true" id="popoverHSF1">
-        <div class="fd-popover__body-header">Popover Header</div>
+        <div class="fd-popover__body-header">
+            <div class="fd-bar fd-bar--header">
+                <div class="fd-bar__left">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+                    </div>
+                    <div class="fd-bar__element">
+                        Header
+                    </div>
+                </div>
+            </div>
+        </div>
         <nav class="fd-menu" id="">
             <ul class="fd-menu__list">
                 <li><a href="#" class="fd-menu__item">Option 1</a></li>
@@ -146,7 +152,18 @@ There are four placement options:
         <div style="margin: 20px;">
             <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" role="presentation" aria-label="Nature"></span>
         </div>
-        <div class="fd-popover__body-footer">Popover Footer</div>
+        <div class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--compact fd-button--emphasized">Save</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--compact fd-button--light">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -155,28 +172,97 @@ There are four placement options:
         <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverHSF3" aria-expanded="false" aria-haspopup="true">With Header, Subheader and Footer</button>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverHSF3">
-        <div class="fd-popover__body-header fd-popover__body-header--with-subheader">Popover Header</div>
-        <div class="fd-popover__body-subheader">Popover Subheader</div>
-        <div style="margin: 20px;">
+        <div class="fd-popover__body-header">
+            <div class="fd-bar fd-bar--header-with-subheader">
+                <div class="fd-bar__left">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+                    </div>
+                    <div class="fd-bar__element">
+                        Header
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fd-bar fd-bar--subheader">
+            <div class="fd-bar__middle">
+                <div class="fd-bar__element">
+                    <div class="fd-form-item">
+                        <div class="fd-button-group" role="group" aria-label="Group label">
+                            <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
+                            <button class="fd-button fd-button--compact sap-icon--iphone"></button>
+                            <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin: 20px 80px;">
             <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" role="presentation" aria-label="Nature"></span>
         </div>
-        <div class="fd-popover__body-footer">Popover Footer</div>
+        <div class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--compact fd-button--emphasized">Save</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--compact fd-button--light">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="fd-popover fd-popover--right">
+<div class="fd-popover">
     <div class="fd-popover__control">
-        <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverHSF4" aria-expanded="false" aria-haspopup="true">All Compact Mode</button>
+        <button class="fd-button fd-popover__control" aria-label="Image label" aria-controls="popoverHSF345" aria-expanded="false" aria-haspopup="true">All Cosy Mode</button>
     </div>
-    <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverHSF4">
-        <div class="fd-popover__body-header fd-popover__body-header--compact fd-popover__body-header--with-subheader">Popover Header Compact</div>
-        <div class="fd-popover__body-subheader fd-popover__body-subheader--compact">Popover Subheader Compact</div>
-        <div style="margin: 20px;">
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverHSF345">
+        <div class="fd-popover__body-header">
+            <div class="fd-bar fd-bar--cosy fd-bar--header-with-subheader">
+                <div class="fd-bar__left">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+                    </div>
+                    <div class="fd-bar__element">
+                        Header
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fd-bar fd-bar--cosy fd-bar--subheader">
+                <div class="fd-bar__middle">
+                    <div class="fd-bar__element">
+                        <div class="fd-form-item">
+                            <div class="fd-button-group" role="group" aria-label="Group label">
+                                <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
+                                <button class="fd-button fd-button--compact sap-icon--iphone"></button>
+                                <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div style="margin: 20px 80px;">
             <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" role="presentation" aria-label="Nature"></span>
         </div>
-        <div class="fd-popover__body-footer fd-popover__body-footer--compact">Popover Footer Compact</div>
+        <div class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--cosy fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--compact fd-button--emphasized">Save</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--compact fd-button--light">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
 {% endcapture %}
 {% include display-component.html component=default-header-footer %}
 

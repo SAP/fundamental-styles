@@ -114,61 +114,14 @@ $block: #{$fd-namespace}-popover;
     }
 
     &-header {
-      @include fd-reset();
-      @include fd-ellipsis();
-
-      height: $fd-popover-header-height;
-      line-height: $fd-popover-header-height;
-      width: auto;
-      background-color: $fd-popover-header-background;
-      padding: $fd-popover-header-padding;
-      box-shadow: $fd-popover-header-box-shadow;
-      border-radius: $fd-popover-border-radius $fd-popover-border-radius 0 0;
-
-      &--compact {
-        height: $fd-popover-header-height--compact;
-        line-height: $fd-popover-header-height--compact;
-      }
-
-      &--with-subheader {
-        box-shadow: none;
-      }
-    }
-
-    &-subheader {
-      @include fd-reset();
-      @include fd-ellipsis();
-
-      height: $fd-popover-subheader-height;
-      line-height: $fd-popover-subheader-height;
-      width: auto;
-      background-color: $fd-popover-header-background;
-      padding: $fd-popover-header-padding;
-      box-shadow: $fd-popover-header-box-shadow;
-      border-radius: 0;
-
-      &--compact {
-        height: $fd-popover-subheader-height--compact;
-        line-height: $fd-popover-subheader-height--compact;
+      .#{$fd-namespace}-bar {
+        border-radius: $fd-popover-border-radius $fd-popover-border-radius 0 0;
       }
     }
 
     &-footer {
-      @include fd-reset();
-      @include fd-ellipsis();
-
-      height: $fd-popover-footer-height;
-      line-height: $fd-popover-footer-height;
-      width: auto;
-      min-width: 4rem;
-      background-color: $fd-popover-footer-background;
-      padding: $fd-popover-footer-padding;
-      border-top: $fd-popover-footer-border-top;
-      border-radius: 0 0 $fd-popover-border-radius $fd-popover-border-radius;
-
-      &--compact {
-        height: $fd-popover-footer-height--compact;
-        line-height: $fd-popover-footer-height--compact;
+      .#{$fd-namespace}-bar {
+        border-radius: 0 0 $fd-popover-border-radius $fd-popover-border-radius;
       }
     }
 
