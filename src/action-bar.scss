@@ -119,7 +119,6 @@ $block: #{$fd-namespace}-action-bar;
 
   &__description {
     @include fd-reset();
-    @include fd-var-color("color", $fd-action-bar-description-color, --fd-color-text-3);
 
     font-size: var(--sapFontSize);
     font-family: var(--sapFontFamily);
