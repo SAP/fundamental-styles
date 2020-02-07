@@ -1,0 +1,177 @@
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+$block: #{$fd-namespace}-bar;
+
+.#{$block} {
+  // ------------------------------- VARIABLES ------------------------------
+  $fd-bar-padding-x: 0.5rem !default;
+  $fd-bar-element-spacing: 0.5rem !default;
+
+  // --------------------------------- MIXINS -------------------------------
+  @mixin bar-design($height: 2.5rem, $background: var(--sapPageHeader_Background), $shadow: var(--sapContent_HeaderShadow)) {
+    height: $height;
+    background: $background;
+    box-shadow: $shadow;
+
+    @content;
+  }
+
+  @mixin responsive-page($padding-x: 1rem) {
+    padding: 0 $padding-x;
+  }
+
+  @mixin responsive-floating-footer($margin-x: 1rem) {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: $margin-x;
+    margin-right: $margin-x;
+  }
+
+  // ---------------------------------- BLOCK -------------------------------
+  @include fd-reset();
+  @include bar-design();
+
+  @include fd-flex () {
+    justify-content: space-between;
+  }
+
+  padding: 0 $fd-bar-padding-x;
+
+  // -------------------------------- ELEMENTS ------------------------------
+  &__left,
+  &__middle,
+  &__right {
+    @include fd-reset();
+
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+
+  &__middle {
+    padding: 0 $fd-bar-padding-x;
+    justify-content: center;
+  }
+
+  &__middle:only-child {
+    padding: 0;
+  }
+
+  &__right {
+    justify-content: flex-end;
+  }
+
+  &__element {
+    @include fd-reset();
+
+    display: flex;
+    align-items: center;
+    margin-right: $fd-bar-element-spacing;
+
+    @include fd-rtl() {
+      margin-right: 0;
+      margin-left: $fd-bar-element-spacing;
+    }
+  }
+
+  &__element--full-width {
+    width: 100%;
+  }
+
+  &__element:last-child {
+    margin-right: 0;
+
+    @include fd-rtl() {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  // -------------------------------- MODIFIERS ------------------------------
+  &--header {
+    @include bar-design();
+  }
+
+  &--subheader {
+    @include bar-design($height: 2.25rem) {
+      padding-bottom: 0.25rem;
+    }
+  }
+
+  &--header-with-subheader {
+    @include bar-design($shadow: none);
+  }
+
+  &--footer {
+    @include bar-design($background: var(--sapPageFooter_Background), $shadow: none) {
+      border-top: 0.0625rem solid var(--sapPageFooter_BorderColor);
+    }
+  }
+
+  &--floating-footer {
+    @include bar-design($background: var(--sapPageFooter_Background), $shadow: var(--sapContent_Shadow1)) {
+      border-radius: var(--sapElement_BorderCornerRadius);
+      border: none;
+      opacity: 1;
+    }
+  }
+
+  &--cosy {
+    height: 2.75rem;
+
+    &.#{$block}--header,
+    &.#{$block}--footer,
+    &.#{$block}--floating-footer {
+      height: 2.75rem;
+    }
+
+    &.#{$block}--subheader {
+      height: 3rem;
+      padding-bottom: 0.25rem;
+    }
+  }
+
+  &--page,
+  &--home-page {
+    @include responsive-page();
+    &.#{$block}--floating-footer {
+      @include responsive-floating-footer($margin-x: 0.5rem);
+    }
+  }
+
+  &--page-S {
+    @include responsive-page();
+
+    &.#{$block}--floating-footer {
+      @include responsive-floating-footer();
+    }
+  }
+
+  &--home-page-S {
+    @include responsive-page($padding-x: 0.5rem);
+
+    &.#{$block}--floating-footer {
+      @include responsive-floating-footer();
+    }
+  }
+
+  &--page-M_L,
+  &--home-page-M_L {
+    @include responsive-page($padding-x: 2rem);
+
+    &.#{$block}--floating-footer {
+      @include responsive-floating-footer($margin-x: 2rem);
+    }
+  }
+
+  &--page-XL,
+  &--home-page-XL {
+    @include responsive-page($padding-x: 3rem);
+
+    &.#{$block}--floating-footer {
+      @include responsive-floating-footer($margin-x: 3rem);
+    }
+  }
+}

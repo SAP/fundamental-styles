@@ -104,6 +104,10 @@ entries:
       url: /components/asset-upload.html
       output: web
 
+    - title: Bar
+      url: /components/bar.html
+      output: web
+
     - title: Busy Indicator
       url: /components/busy-indicator.html
       output: web
