@@ -4,7 +4,5 @@ infolabel:
     modifier={ block: [] }
 -->
 {% macro infolabel(properties={}, modifier={}, classes=[]) -%}
-<span class="fd-info-label{{ modifier.block | modifier('info-label') }}{{ ' sap-icon--'+properties.icon if properties.icon }}{{classes|classes}}" style="margin-right: 20px;">
-    {{properties.label}}
-</span>
+<span class="fd-info-label{{ modifier.block | modifier('info-label') }}{{ ' sap-icon--'+properties.icon if properties.icon }}{{classes|classes}}" style="margin-top: 10px;">{{properties.label}}</span><br>
 {%- endmacro %}
