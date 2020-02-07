@@ -335,6 +335,13 @@ $block: #{$fd-namespace}-tabs;
       left: calc(100% + 0.1875rem);
       top: 0;
     }
+
+    @include fd-rtl() {
+      .#{$block}__count {
+        left: initial;
+        right: calc(100% + 0.1875rem);
+      }
+    }
   }
 
   &--process {
