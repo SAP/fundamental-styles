@@ -41,25 +41,27 @@ $block: #{$fd-namespace}-action-bar;
     }
   }
 
-  @include media-breakpoint-down(m) {
-    padding-left: map_get($fd-action-bar-padding-x, "m");
-    padding-right: map_get($fd-action-bar-padding-x, "m");
+  @include fd-screen(s) {
+    padding-left: map_get($fd-action-bar-padding-x, "s");
+    padding-right: map_get($fd-action-bar-padding-x, "s");
   }
 
-  @include media-breakpoint-down(l) {
+  @include fd-screen(m) {
+    padding-left: map_get($fd-action-bar-padding-x, "s");
+    padding-right: map_get($fd-action-bar-padding-x, "s");
+  }
+
+  @include fd-screen(l) {
     padding-left: map_get($fd-action-bar-padding-x, "l");
     padding-right: map_get($fd-action-bar-padding-x, "l");
   }
 
-  @include media-breakpoint-down(xl) {
+  @include fd-screen(xl) {
     padding-left: map_get($fd-action-bar-padding-x, "xl");
     padding-right: map_get($fd-action-bar-padding-x, "xl");
   }
 
-  @include media-breakpoint-down(s) {
-    padding-left: map_get($fd-action-bar-padding-x, "s");
-    padding-right: map_get($fd-action-bar-padding-x, "s");
-  }
+  
   // BLOCK BASE *******************************************
   @include fd-reset();
 
