@@ -66,8 +66,8 @@ $block: #{$fd-namespace}-bar;
   &__element {
     @include fd-reset();
 
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     margin-right: $fd-bar-element-spacing;
 
     @include fd-rtl() {
@@ -102,6 +102,9 @@ $block: #{$fd-namespace}-bar;
 
   &--header-with-subheader {
     @include bar-design($shadow: none);
+
+    position: relative;
+    z-index: 2;
   }
 
   &--footer {
