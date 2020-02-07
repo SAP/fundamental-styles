@@ -74,6 +74,15 @@ body {
   background: pink;
 }
 
+.el-playground {
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background-color: beige;
+  border: 1px solid black;
+}
+
 .panel-playground {
   border: 1px solid navy;
   border-radius: 4px;

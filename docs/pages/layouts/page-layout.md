@@ -106,7 +106,7 @@ The left and right spacings of the Bar and the Content could be adjusted accordi
             </div>
         </div>
     </header>
-    <div class="fd-bar fd-bar--subheader">
+    <div class="fd-bar fd-bar--page-M_L fd-bar--subheader">
         <div class="fd-bar__middle">
             <div class="fd-bar__element fd-bar__element--full-width">
                 <div class="fd-form-item">

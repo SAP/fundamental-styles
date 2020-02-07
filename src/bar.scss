@@ -5,11 +5,9 @@
 $block: #{$fd-namespace}-bar;
 
 .#{$block} {
-  // ------------------------------- VARIABLES ------------------------------
   $fd-bar-padding-x: 0.5rem !default;
   $fd-bar-element-spacing: 0.5rem !default;
 
-  // --------------------------------- MIXINS -------------------------------
   @mixin bar-design($height: 2.5rem, $background: var(--sapPageHeader_Background), $shadow: var(--sapContent_HeaderShadow)) {
     height: $height;
     background: $background;
@@ -29,7 +27,6 @@ $block: #{$fd-namespace}-bar;
     margin-right: $margin-x;
   }
 
-  // ---------------------------------- BLOCK -------------------------------
   @include fd-reset();
   @include bar-design();
 
@@ -39,7 +36,6 @@ $block: #{$fd-namespace}-bar;
 
   padding: 0 $fd-bar-padding-x;
 
-  // -------------------------------- ELEMENTS ------------------------------
   &__left,
   &__middle,
   &__right {
@@ -66,8 +62,9 @@ $block: #{$fd-namespace}-bar;
   &__element {
     @include fd-reset();
 
-    // display: flex;
-    // align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: $fd-bar-element-spacing;
 
     @include fd-rtl() {
@@ -89,7 +86,6 @@ $block: #{$fd-namespace}-bar;
     }
   }
 
-  // -------------------------------- MODIFIERS ------------------------------
   &--header {
     @include bar-design();
   }

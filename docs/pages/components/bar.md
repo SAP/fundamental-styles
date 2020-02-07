@@ -298,9 +298,7 @@ SubHeader in Bar Design is achieved by adding the `fd-bar--subheader` class to t
 <div class="fd-bar fd-bar--subheader fd-bar--cosy">
     <div class="fd-bar__middle">
         <div class="fd-bar__element fd-bar__element--full-width">
-            <div class="fd-form-item">
-                <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text">
-            </div>
+            <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="" name="" value="1234568910 ">
         </div>
     </div>
 </div>
@@ -310,10 +308,10 @@ SubHeader in Bar Design is achieved by adding the `fd-bar--subheader` class to t
 <div class="fd-bar fd-bar--subheader" dir="rtl">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--compact fd-button--light sap-icon--navigation-left-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--home"></button>
+            <button class="fd-button fd-button--compact fd-button--light sap-icon--home"></button>
         </div>
     </div>
     <div class="fd-bar__right">
@@ -323,7 +321,7 @@ SubHeader in Bar Design is achieved by adding the `fd-bar--subheader` class to t
             </span>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--grid"></button>
+            <button class="fd-button fd-button--compact fd-button--light sap-icon--grid"></button>
         </div>
     </div>
 </div>
@@ -334,7 +332,7 @@ SubHeader in Bar Design is achieved by adding the `fd-bar--subheader` class to t
 <br>
 
 ## Header with SubHeader
-If a Header is followed by a SubHeader, the Header container should have the  `fd-bar--header-with-subheader` modifier class.
+If a Header is followed by a SubHeader, the Header container should have the  `fd-bar--header-with-subheader` modifier class which is removing the element's box-shadow.
 
 {% capture bar-default-header-subheader %}
 <div><b>Desktop</b></div>
@@ -374,9 +372,7 @@ If a Header is followed by a SubHeader, the Header container should have the  `f
 <div class="fd-bar fd-bar--subheader">
     <div class="fd-bar__middle">
         <div class="fd-bar__element fd-bar__element--full-width">
-            <div class="fd-form-item">
-                <input class="fd-input fd-input--compact" type="text" id="input-1" placeholder="Field placeholder text">
-            </div>
+            <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="" name="" value="1234568910 ">
         </div>
     </div>
 </div>
