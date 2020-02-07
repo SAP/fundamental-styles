@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.2"></a>
+## [0.5.2](https://github.com/SAP/fundamental-styles/compare/v0.5.0...v0.5.2) (2020-02-07)
+
+
+### Bug Fixes
+
+* add rtl for tokens ([#627](https://github.com/SAP/fundamental-styles/issues/627)) ([d905104](https://github.com/SAP/fundamental-styles/commit/d905104))
+* Add RTL support for tabs ([#642](https://github.com/SAP/fundamental-styles/issues/642)) ([2e36e88](https://github.com/SAP/fundamental-styles/commit/2e36e88))
+* tabs Remove invalid last-child code ([#643](https://github.com/SAP/fundamental-styles/issues/643)) ([71db412](https://github.com/SAP/fundamental-styles/commit/71db412))
+
+
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/SAP/fundamental-styles/compare/v0.5.0-rc.2...v0.5.0) (2020-01-20)
 
