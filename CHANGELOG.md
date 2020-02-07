@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.0-rc.13"></a>
+# [0.6.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.6.0-rc.12...v0.6.0-rc.13) (2020-02-07)
+
+
+### Bug Fixes
+
+* tabs Remove invalid last-child code ([#643](https://github.com/SAP/fundamental-styles/issues/643)) ([4356b49](https://github.com/SAP/fundamental-styles/commit/4356b49))
+
+
+
 <a name="0.6.0-rc.12"></a>
 # [0.6.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.6.0-rc.11...v0.6.0-rc.12) (2020-02-07)
 
