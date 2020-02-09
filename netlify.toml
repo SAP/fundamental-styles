@@ -6,6 +6,7 @@
 #  that is where we will look for package.json/.nvmrc/etc not repo root!
 
 [build]
+  ignore = 'git log -1 --pretty=%B | grep dependabot'
   publish = "docs/_site"
   command = "npm run docs"
 
