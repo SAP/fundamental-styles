@@ -61,7 +61,6 @@ $block: #{$fd-namespace}-action-bar;
     padding-right: map_get($fd-action-bar-padding-x, "xl");
   }
 
-  
   // BLOCK BASE *******************************************
   @include fd-reset();
 
@@ -110,12 +109,12 @@ $block: #{$fd-namespace}-action-bar;
     font-family: var(--sapFontHeaderFamily);
     font-weight: normal;
     color: $fd-action-bar-title-color;
-
     @include fd-action-bar-responsive();
-
-    height: 2rem;
-    padding-right: 0.75rem;
+    min-height: 2rem;
+    padding-right: 0.5rem;
     vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin: 0;
   }
 
@@ -129,9 +128,13 @@ $block: #{$fd-namespace}-action-bar;
 
     @include fd-hide-on-mobile();
 
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin-top: 0.25rem;
     height: 1.25rem;
+    width:100%;
     vertical-align: middle;
+
   }
 
   &__actions {
