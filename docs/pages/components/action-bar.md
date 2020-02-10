@@ -58,6 +58,51 @@ The Action Bar is located at the top of the page and is used for the following:
 {% include display-component.html component=default-action-bar-multi %}
  
 <br/>
+
+## Action bar with Back button and No description.
+ 
+{% capture default-action-bar-multi %}
+<div class="fd-action-bar">
+    <div class="fd-action-bar__back">
+        <button class="fd-button fd-button--light fd-button--compact sap-icon--nav-back"></button>
+    </div>
+    <div class="fd-action-bar__header">
+        <h3 class="fd-action-bar__title">
+            Page Title
+        </h3>
+    </div>
+    <div class="fd-action-bar__actions">
+        <button class="fd-button--compact fd-button--primary">Button</button>
+        <button class="fd-button--compact fd-button--emphasized">Button</button>
+    </div>
+</div>
+{% endcapture %}
+ 
+{% include display-component.html component=default-action-bar-multi %}
+ 
+<br/>
+
+## Action bar with Long page title and description.
+{% capture default-action-bar %}
+<div class="fd-action-bar">
+    <div class="fd-action-bar__back">
+        <button class="fd-button fd-button--light fd-button--compact sap-icon--nav-back"></button>
+    </div>
+    <div class="fd-action-bar__header">
+        <h3 class="fd-action-bar__title">
+        Page Title Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long.
+        </h3>
+        <p class="fd-action-bar__description">Action bar Description Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long</p>
+    </div>
+    <div class="fd-action-bar__actions">
+        <button class="fd-button--compact fd-button--primary">Button</button>
+        <button class="fd-button--compact fd-button--emphasized">Button</button>
+    </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=default-action-bar %}
+ 
+<br/>
  
 ## Several Main Actions in a Contextual Menu
  
