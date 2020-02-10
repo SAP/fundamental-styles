@@ -1,14 +1,55 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
 
+
 {% block content %}
+    <style>
+        .fd-page__content {
+            height: 300px;
+        }
+    </style>
+
+    <h2>Page - default</h2>
+
     {% set example %}
-    <div style="border: 1px solid">
         <main class="fd-page">
-            <header class="fd-page__header">Header</header>
-            <div class="fd-page__content">content</div>
+            <header>Header</header>
+            <div class="fd-page__content">Page Content</div>
+            <footer>Footer</footer>
         </main>
-    </div>
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>Page - transparent</h2>
+
+    {% set example %}
+        <main class="fd-page fd-page--transparent">
+            <header>Header</header>
+            <div class="fd-page__content">Page Content</div>
+            <footer>Footer</footer>
+        </main>
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>Page - list</h2>
+
+    {% set example %}
+        <main class="fd-page fd-page--list">
+            <header>Header</header>
+            <div class="fd-page__content">Page Content</div>
+            <footer>Footer</footer>
+        </main>
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>Page - solid</h2>
+
+    {% set example %}
+        <main class="fd-page fd-page--solid">
+            <header>Header</header>
+            <div class="fd-page__content">Page Content</div>
+            <footer>Footer</footer>
+        </main>
     {% endset %}
     {{ format(example) }}
 {% endblock %}

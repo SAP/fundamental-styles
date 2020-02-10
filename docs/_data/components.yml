@@ -3,6 +3,9 @@
     - title: Action Bar
       meta: action-bar
 
+    - title: Bar
+      meta: bar
+
     - title: Busy Indicator
       meta: busy-indicator
 
