@@ -9,9 +9,11 @@ folder: patterns
 summary:
 ---
 
-The multi-input component is an opinionated composition of the `input group`, `popover`, `checkbox` and `list` components.
-The `popover` is shared between `combobox` and `select` component. In `Select` there are much more examples of 
-modifications that can be provided also to combobox component
+The multi-input component is an opinionated composition of the `input group`, `popover`, `checkbox`,`list` and `token` 
+components. The `popover` is shared between `combobox` and `select` component. In `Select` there are much more examples of 
+modifications that can be provided also to combobox component. <br/><br/>
+Multi Input pattern allows user to enter multiple values, which are displayed as a tokens. There is also provided editable
+input field fo help user with finding correct value, or adding custom value.
 {: .docs-intro}
 
 ## Default and Compact sizes
@@ -28,31 +30,31 @@ modifications that can be provided also to combobox component
                 <div class="fd-tokenizer__inner">
                     <span class="fd-token" role="button">
                         <span class="fd-token__text">
-                            Bibendum
+                            Apple
                         </span>
                         <button class="fd-token__close"></button>
                     </span>
                     <span class="fd-token" role="button">
                         <span class="fd-token__text">
-                            Lorem
+                            Orange
                         </span>
                         <button class="fd-token__close"></button>
                     </span>
                     <span class="fd-token" role="button">
                         <span class="fd-token__text">
-                            Dolor
+                            Kiwi
                         </span>
                         <button class="fd-token__close"></button>
                     </span>
                     <span class="fd-token" role="button">
                         <span class="fd-token__text">
-                            Filter
+                            Banana
                         </span>
                         <button class="fd-token__close"></button>
                     </span>
                     <span class="fd-token fd-token--readonly">
                         <span class="fd-token__text">
-                            Lorem
+                            Lemon
                         </span>
                     </span>
                     <span class="fd-tokenizer__indicator">4 more</span>
@@ -64,46 +66,48 @@ modifications that can be provided also to combobox component
             </span>
         </div>
     </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcX348a">
+    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcX348a">
         <ul class="fd-list fd-list--multi-input">
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez611">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4ez611">
                     <span class="fd-list__title">
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
+                        Apple
                     </span>
                 </label>
             </li>
              <li class="fd-list__item" role="option">
                 <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai4ez612">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4ez612">
-                    <span class="fd-list__title">Text Option</span>
+                    <span class="fd-list__title">
+                        Orange
+                    </span>
                 </label>
             </li>
              <li class="fd-list__item" role="option">
                 <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai4ez614">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4ez614">
-                    <span class="fd-list__title">Text Option</span>
+                    <span class="fd-list__title">
+                        Banana
+                    </span>
                 </label>
             </li>
+             <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai4ez615">
+                <label class="fd-checkbox__label fd-list__label" for="Ai4ez615">
+                    <span class="fd-list__title">
+                        Kiwi
+                    </span>
+                </label>
+            </li>
+             <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai4ez617">
+                <label class="fd-checkbox__label fd-list__label" for="Ai4ez617">
+                    <span class="fd-list__title">
+                        Lemon
+                    </span>
+                </label>
+             </li>
              <li class="fd-list__footer">
                 <a class="fd-link" href="#">Show All</a>
             </li>
@@ -124,31 +128,31 @@ modifications that can be provided also to combobox component
                 <div class="fd-tokenizer__inner">
                     <span class="fd-token fd-token--compact" role="button">
                         <span class="fd-token__text">
-                            Bibendum
+                            Apple
                         </span>
                         <button class="fd-token__close"></button>
                     </span>
                     <span class="fd-token fd-token--compact" role="button">
                         <span class="fd-token__text">
-                            Lorem
+                            Orange
                         </span>
                         <button class="fd-token__close"></button>
                     </span>
                     <span class="fd-token fd-token--compact" role="button">
                         <span class="fd-token__text">
-                            Dolor
+                            Kiwi
                         </span>
                         <button class="fd-token__close"></button>
                     </span>
                     <span class="fd-token fd-token--compact" role="button">
                         <span class="fd-token__text">
-                            Filter
+                            Banana
                         </span>
                         <button class="fd-token__close"></button>
                     </span>
-                    <span class="fd-token fd-token--readonly fd-token--compact">
+                    <span class="fd-token fd-token--compact fd-token--readonly">
                         <span class="fd-token__text">
-                            Lorem
+                            Lemon
                         </span>
                     </span>
                     <span class="fd-tokenizer__indicator">4 more</span> 
@@ -160,32 +164,177 @@ modifications that can be provided also to combobox component
             </span>
         </div>
     </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcX34a">
+    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcX34a">
          <ul class="fd-list fd-list--multi-input fd-list--compact">
-              <li class="fd-list__item is-selected" role="option">
-                 <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ab4ez611">
-                 <label class="fd-checkbox__label fd-list__label" for="Ab4ez611">
-                    <span class="fd-list__title">Text Option</span>
-                 </label>
+             <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai1ez611">
+                <label class="fd-checkbox__label fd-list__label" for="Ai1ez611">
+                    <span class="fd-list__title">
+                        Apple
+                    </span>
+                </label>
+            </li>
+             <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai2ez612">
+                <label class="fd-checkbox__label fd-list__label" for="Ai2ez612">
+                    <span class="fd-list__title">
+                        Orange
+                    </span>
+                </label>
+            </li>
+             <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai3ez614">
+                <label class="fd-checkbox__label fd-list__label" for="Ai3ez614">
+                    <span class="fd-list__title">
+                        Banana
+                    </span>
+                </label>
+            </li>
+             <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai8ez615">
+                <label class="fd-checkbox__label fd-list__label" for="Ai8ez615">
+                    <span class="fd-list__title">
+                        Kiwi
+                    </span>
+                </label>
+            </li>
+             <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-list__input" id="AiHez617">
+                <label class="fd-checkbox__label fd-list__label" for="AiHez617">
+                    <span class="fd-list__title">
+                        Lemon
+                    </span>
+                </label>
              </li>
-              <li class="fd-list__item" role="option">
-                 <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ab4ez612">
-                 <label class="fd-checkbox__label fd-list__label" for="Ab4ez612">
-                    <span class="fd-list__title">Text Option</span>
-                 </label>
-             </li>
-              <li class="fd-list__item" role="option">
-                 <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ab4ez614">
-                 <label class="fd-checkbox__label fd-list__label" for="Ab4ez614">
-                    <span class="fd-list__title">Text Option</span>
-                 </label>
-             </li>
+             <li class="fd-list__footer">
+                <a class="fd-link" href="#">Show All</a>
+            </li>
          </ul>
      </div>
 </div>
 {% endcapture %}
 {% include display-component.html component=default %}
 
+
+## Multi Input with Items Grouping
+Item group headers can be used, to categorize certain types of elements.
+
+{% capture multi-input-group %}
+<div class="fd-popover">
+    <div class="fd-popover__control" aria-controls="F4H8X34a" aria-expanded="false" aria-haspopup="true">
+        <div class="fd-input-group fd-input-group--control">
+            <div class="fd-tokenizer">
+                <div class="fd-tokenizer__inner">
+                    <span class="fd-token" role="button">
+                        <span class="fd-token__text">
+                            Apple
+                        </span>
+                        <button class="fd-token__close"></button>
+                    </span>
+                    <span class="fd-token" role="button">
+                        <span class="fd-token__text">
+                            Orange
+                        </span>
+                        <button class="fd-token__close"></button>
+                    </span>
+                    <span class="fd-token" role="button">
+                        <span class="fd-token__text">
+                            Kiwi
+                        </span>
+                        <button class="fd-token__close"></button>
+                    </span>
+                    <span class="fd-token" role="button">
+                        <span class="fd-token__text">
+                            Banana
+                        </span>
+                        <button class="fd-token__close"></button>
+                    </span>
+                    <span class="fd-token fd-token--readonly">
+                        <span class="fd-token__text">
+                            Lemon
+                        </span>
+                    </span>
+                    <span class="fd-tokenizer__indicator">4 more</span> 
+                    <input class="fd-input fd-input-group__input fd-tokenizer__input" />
+                </div>
+            </div>
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+                <button class="fd-input-group__button fd-button--light sap-icon--value-help" aria-controls="F4H8X34a" aria-expanded="false" aria-haspopup="true"></button>
+            </span>
+        </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4H8X34a">
+         <ul class="fd-list fd-list--multi-input">
+            <li class="fd-list__group-header">
+                Fruits
+            </li>
+             <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai1ez651">
+                <label class="fd-checkbox__label fd-list__label" for="Ai1ez651">
+                    <span class="fd-list__title">
+                        Apple
+                    </span>
+                </label>
+            </li>
+             <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai2ez652">
+                <label class="fd-checkbox__label fd-list__label" for="Ai2ez652">
+                    <span class="fd-list__title">
+                        Orange
+                    </span>
+                </label>
+            </li>
+             <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai3ez654">
+                <label class="fd-checkbox__label fd-list__label" for="Ai3ez654">
+                    <span class="fd-list__title">
+                        Banana
+                    </span>
+                </label>
+            </li>
+             <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai8ez655">
+                <label class="fd-checkbox__label fd-list__label" for="Ai8ez655">
+                    <span class="fd-list__title">
+                        Kiwi
+                    </span>
+                </label>
+            </li>
+             <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-list__input" id="AiHez657">
+                <label class="fd-checkbox__label fd-list__label" for="AiHez657">
+                    <span class="fd-list__title">
+                        Lemon
+                    </span>
+                </label>
+             </li>
+            <li class="fd-list__group-header">
+                Vegetables
+            </li>
+            <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai8ez689">
+                <label class="fd-checkbox__label fd-list__label" for="Ai8ez689">
+                    <span class="fd-list__title">
+                        Onion
+                    </span>
+                </label>
+            </li>
+             <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai8ez685">
+                <label class="fd-checkbox__label fd-list__label" for="Ai8ez685">
+                    <span class="fd-list__title">
+                        Tomato
+                    </span>
+                </label>
+            </li>
+            <li class="fd-list__footer">
+                <a class="fd-link" href="#">Show All</a>
+            </li>
+         </ul>
+     </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=multi-input-group %}
 
 
 ## Readonly Multi Input
@@ -327,84 +476,78 @@ Also the `fd-list--has-message` modifier should be added to `ul` element.
     <div class="fd-popover__control fd-input-group__control" aria-controls="F4GcKJH8a" aria-expanded="false" aria-haspopup="true">
         <div class="fd-input-group fd-input-group--control is-valid">
             <div class="fd-tokenizer">
-                <div class="fd-tokenizer__inner">
-                    <span class="fd-token" role="button">
-                        <span class="fd-token__text">
-                            Bibendum
-                        </span>
-                        <button class="fd-token__close"></button>
-                    </span>
-                    <span class="fd-token" role="button">
-                        <span class="fd-token__text">
-                            Lorem
-                        </span>
-                        <button class="fd-token__close"></button>
-                    </span>
-                    <span class="fd-token" role="button">
-                        <span class="fd-token__text">
-                            Dolor
-                        </span>
-                        <button class="fd-token__close"></button>
-                    </span>
-                    <span class="fd-token" role="button">
-                        <span class="fd-token__text">
-                            Filter
-                        </span>
-                        <button class="fd-token__close"></button>
-                    </span>
-                    <span class="fd-token fd-token--readonly">
-                        <span class="fd-token__text">
-                            Lorem
-                        </span>
-                    </span>
-                    <span class="fd-tokenizer__indicator">4 more</span>
-                    <input class="fd-input fd-input-group__input fd-tokenizer__input" />
-                </div>
+                 <div class="fd-tokenizer__inner">
+                     <span class="fd-token" role="button">
+                         <span class="fd-token__text">
+                             Apple
+                         </span>
+                         <button class="fd-token__close"></button>
+                     </span>
+                     <span class="fd-token" role="button">
+                         <span class="fd-token__text">
+                             Orange
+                         </span>
+                         <button class="fd-token__close"></button>
+                     </span>
+                     <span class="fd-token" role="button">
+                         <span class="fd-token__text">
+                             Kiwi
+                         </span>
+                         <button class="fd-token__close"></button>
+                     </span>
+                     <span class="fd-token" role="button">
+                         <span class="fd-token__text">
+                             Banana
+                         </span>
+                         <button class="fd-token__close"></button>
+                     </span>
+                     <span class="fd-token fd-token--readonly">
+                         <span class="fd-token__text">
+                             Lemon
+                         </span>
+                     </span>
+                     <span class="fd-tokenizer__indicator">4 more</span> 
+                     <input class="fd-input fd-input-group__input fd-tokenizer__input" />
+                 </div>
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button">
                 <button class="fd-input-group__button fd-button--light sap-icon--value-help" aria-controls="F4GcKJH8a" aria-expanded="false" aria-haspopup="true"></button>
             </span>
         </div>
     </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcKJH8a">
+    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcKJH8a">
         <ul class="fd-list fd-list--multi-input fd-list--has-message">
             <li class="fd-list__message fd-list__message--success">Success Message</li>
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="AGi4ez611">
                 <label class="fd-checkbox__label fd-list__label" for="AGi4ez611">
                     <span class="fd-list__title">
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
-                        Long Text
+                        Apple
                     </span>
                 </label>
             </li>
              <li class="fd-list__item" role="option">
                 <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai4Fez612">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4Fez612">
-                    <span class="fd-list__title">Text Option</span>
+                    <span class="fd-list__title">Orange</span>
                 </label>
             </li>
              <li class="fd-list__item" role="option">
                 <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai4eGz614">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4eGz614">
-                    <span class="fd-list__title">Text Option</span>
+                    <span class="fd-list__title">Kiwi</span>
+                </label>
+            </li>
+             <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai4egh614">
+                <label class="fd-checkbox__label fd-list__label" for="Ai4egh614">
+                    <span class="fd-list__title">Banana</span>
+                </label>
+            </li>
+             <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-list__input" id="jdFffsd3">
+                <label class="fd-checkbox__label fd-list__label" for="jdFffsd3">
+                    <span class="fd-list__title">Lemon</span>
                 </label>
             </li>
              <li class="fd-list__footer">

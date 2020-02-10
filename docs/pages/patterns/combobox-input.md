@@ -11,7 +11,10 @@ summary:
 
 The combobox input component is an opinionated composition of the `input group`, `popover` and `list` components.
 The `popover` is shared between `multi-input` and `select` component. In `Select` there are much more examples of 
-modifications that can be provided also to combobox component.
+modifications that can be provided also to combobox component. <br/><br/>
+Combobox allows users to select an item from a predefined list and it provides an editable input field for filtering 
+the list, and a dropdown menu with a list of the available options. If the entries are not validated by the application,
+users can also enter custom values.
 {: .docs-intro}
 
 {% capture default %}
@@ -29,21 +32,21 @@ modifications that can be provided also to combobox component.
           </span>
       </div>
   </div>
-  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcX348">
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcX348">
         <ul class="fd-list fd-list--dropdown" role="listbox">
             <li role="option" tabindex="0" class="fd-list__item is-selected">
                 <span class="fd-list__title">
-                    <span class="fd-list__bold">List</span> item 1
+                    <span class="fd-list__bold">App</span>le
                 </span>
             </li>
             <li role="option" tabindex="0" class="fd-list__item">
-                <span class="fd-list__title">List item 2</span>
+                <span class="fd-list__title">Orange</span>
             </li>
             <li role="option" tabindex="0" class="fd-list__item">
-                <span class="fd-list__title">List item 3</span>
+                <span class="fd-list__title">Banana</span>
             </li>
             <li role="option" tabindex="0" class="fd-list__item">
-                <span class="fd-list__title">List item 4</span>
+                <span class="fd-list__title">Kiwi</span>
             </li>
         </ul>
   </div>
@@ -58,28 +61,28 @@ modifications that can be provided also to combobox component.
 <br>
 <div class="fd-popover">
   <div class="fd-popover__control" aria-controls="F4GcX34" aria-expanded="false" aria-haspopup="true">
-            <div class="fd-input-group fd-input-group--control">
-                <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
-                <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button--compact fd-button--light sap-icon--navigation-down-arrow fd-select__button" aria-controls="F4GcX34" aria-expanded="false" aria-haspopup="true"></button>
-                </span>
-            </div>
+        <div class="fd-input-group fd-input-group--control">
+            <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
+            <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
+                <button class="fd-input-group__button fd-button--compact fd-button--light sap-icon--navigation-down-arrow fd-select__button" aria-controls="F4GcX34" aria-expanded="false" aria-haspopup="true"></button>
+            </span>
         </div>
-  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcX34">
+    </div>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcX34">
         <ul class="fd-list fd-list--dropdown fd-list--compact" role="listbox">
             <li role="option" tabindex="0" class="fd-list__item is-selected">
                 <span class="fd-list__title">
-                    <span class="fd-list__bold">List</span> item 1
+                    <span class="fd-list__bold">App</span>le
                 </span>
             </li>
             <li role="option" tabindex="0" class="fd-list__item">
-                <span class="fd-list__title">List item 2</span>
+                <span class="fd-list__title">Orange</span>
             </li>
             <li role="option" tabindex="0" class="fd-list__item">
-                <span class="fd-list__title">List item 3</span>
+                <span class="fd-list__title">Banana</span>
             </li>
             <li role="option" tabindex="0" class="fd-list__item">
-                <span class="fd-list__title">List item 4</span>
+                <span class="fd-list__title">Kiwi</span>
             </li>
         </ul>
   </div>
@@ -87,7 +90,93 @@ modifications that can be provided also to combobox component.
 {% endcapture %}
 {% include display-component.html component=default %}
 
+## Combobox with 2 Columns
+Second column can be used, to add some general information about item, or shortcuts. 
 
+{% capture default %}
+<div class="fd-popover">
+  <div class="fd-popover__control" aria-controls="F4GRTGLK6" aria-expanded="false" aria-haspopup="true">
+      <div class="fd-input-group fd-input-group--control">
+          <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Product">
+          <span class="fd-input-group__addon fd-input-group__addon--button">
+              <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow" aria-controls="F4GRTGLK6" aria-expanded="false" aria-haspopup="true"></button>
+          </span>
+      </div>
+  </div>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GRTGLK6">
+        <ul class="fd-list fd-list--dropdown" role="listbox">
+           <li class="fd-list__item is-selected" role="option" tabindex="0">
+               <span class="fd-list__title">Product 1</span>
+               <span class="fd-list__secondary">1000 EUR</span>
+            </li>
+            <li class="fd-list__item" role="option" tabindex="0">
+               <span class="fd-list__title">Product 2</span>
+               <span class="fd-list__secondary">750 EUR</span>
+           </li>
+            <li class="fd-list__item" role="option" tabindex="0">
+               <span class="fd-list__title">Product 3</span>
+               <span class="fd-list__secondary">780 EUR</span>
+            </li>
+            <li class="fd-list__item" role="option" tabindex="0">
+               <span class="fd-list__title">Product 4</span>
+               <span class="fd-list__secondary">40 EUR</span>
+            </li>
+        </ul>
+  </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=default %}
+
+## Combobox with Items Grouping
+Item group headers can be used, to categorize certain types of elements.
+
+{% capture combobox-group %}
+<div class="fd-popover">
+  <div class="fd-popover__control" aria-controls="F4GcXLK6" aria-expanded="false" aria-haspopup="true">
+      <div class="fd-input-group fd-input-group--control">
+          <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Ingredient">
+          <span class="fd-input-group__addon fd-input-group__addon--button">
+              <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow" aria-controls="F4GcXLK6" aria-expanded="false" aria-haspopup="true"></button>
+          </span>
+      </div>
+  </div>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcXLK6">
+        <ul class="fd-list fd-list--dropdown" role="listbox">
+            <li class="fd-list__group-header">
+                Fruits
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item is-selected">
+                <span class="fd-list__title">Apple</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Orange</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Banana</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Kiwi</span>
+            </li>
+            <li class="fd-list__group-header">
+                Vegetables
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Tomato</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Onion</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Spinach</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Potato</span>
+            </li>
+        </ul>
+  </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=combobox-group %}
 
 ## Disabled Mode
 To add disabled state, it is mandatory to add `disabled` attribute to `fd-popover__control` and `fd-nput-group` element
@@ -140,20 +229,22 @@ Also the `fd-list--has-message` modifier should be added to `ul` element.
                 </span>
             </div>
         </div>
-  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4GcEX34">
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcEX34">
         <ul class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
             <li class="fd-list__message fd-list__message--success">Success message</li>
             <li role="option" tabindex="0" class="fd-list__item is-selected">
-                <span class="fd-list__title">List item 1</span>
+                <span class="fd-list__title">
+                    <span class="fd-list__bold">App</span>le
+                </span>
             </li>
             <li role="option" tabindex="0" class="fd-list__item">
-                <span class="fd-list__title">List item 2</span>
+                <span class="fd-list__title">Orange</span>
             </li>
             <li role="option" tabindex="0" class="fd-list__item">
-                <span class="fd-list__title">List item 3</span>
+                <span class="fd-list__title">Banana</span>
             </li>
             <li role="option" tabindex="0" class="fd-list__item">
-                <span class="fd-list__title">List item 4</span>
+                <span class="fd-list__title">Kiwi</span>
             </li>
         </ul>
   </div>

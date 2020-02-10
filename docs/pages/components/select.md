@@ -8,7 +8,9 @@ permalink: components/select.html
 folder: components
 ---
 
-The select control (also known as a dropdown) is commonly used to enable users to select an item from a predefined list.
+The select control (also known as a dropdown) is commonly used to enable users to select an item from a predefined list. 
+It should be used, when there is not a lot of items to choose. Otherwise  <a href="/patterns/combobox-input.html">
+Combobox Input</a> should be used.
 {: .docs-intro}
 
 ## Sizes
@@ -85,6 +87,7 @@ The select control (also known as a dropdown) is commonly used to enable users t
 {% include display-component.html component=select-sizes %}
 
 ## Two Columns
+Second column can be used, to add some general information about item, or shortcuts. 
 
 {% capture two-col %}
 <label class="fd-form-label">
@@ -95,7 +98,7 @@ The select control (also known as a dropdown) is commonly used to enable users t
   <div class="fd-popover__control">
      <div class="fd-select">
          <div class="fd-select__control" tabindex="0" aria-controls="h0C62325" aria-expanded="false" aria-haspopup="true">
-             Select
+             Select Product
              <button class="fd-button fd-button--light sap-icon--slim-arrow-down fd-select__button"></button>
          </div>
       </div>
@@ -103,20 +106,20 @@ The select control (also known as a dropdown) is commonly used to enable users t
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h0C62325">
      <ul class="fd-list fd-list--dropdown" role="listbox">
         <li class="fd-list__item is-selected" role="option" tabindex="0">
-           <span class="fd-list__title">List item 1</span>
-           <span class="fd-list__secondary">A1</span>
+           <span class="fd-list__title">Product 1</span>
+           <span class="fd-list__secondary">1000 EUR</span>
         </li>
         <li class="fd-list__item" role="option" tabindex="0">
-           <span class="fd-list__title">List item 2</span>
-           <span class="fd-list__secondary">A2</span>
+           <span class="fd-list__title">Product 2</span>
+           <span class="fd-list__secondary">750 EUR</span>
        </li>
         <li class="fd-list__item" role="option" tabindex="0">
-           <span class="fd-list__title">List item 3</span>
-           <span class="fd-list__secondary">A3</span>
+           <span class="fd-list__title">Product 3</span>
+           <span class="fd-list__secondary">780 EUR</span>
         </li>
         <li class="fd-list__item" role="option" tabindex="0">
-           <span class="fd-list__title">List item 4</span>
-           <span class="fd-list__secondary">A4</span>
+           <span class="fd-list__title">Product 4</span>
+           <span class="fd-list__secondary">40 EUR</span>
         </li>
      </ul>
   </div>
@@ -133,7 +136,7 @@ The select control (also known as a dropdown) is commonly used to enable users t
   <div class="fd-popover__control">
      <div class="fd-select fd-select--compact">
         <div class="fd-select__control" tabindex="0" aria-controls="h07jj326" aria-expanded="false" aria-haspopup="true">
-            Select
+            Select Product
             <button class="fd-button fd-button--light sap-icon--slim-arrow-down fd-select__button"></button>
         </div>
      </div>
@@ -141,22 +144,64 @@ The select control (also known as a dropdown) is commonly used to enable users t
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h07jj326">
      <ul class="fd-list fd-list--dropdown fd-list--compact" role="listbox">
         <li class="fd-list__item is-selected" role="option" tabindex="0">
-           <span class="fd-list__title">
-               List item 1
-           </span>
-           <span class="fd-list__secondary">A1</span>
+           <span class="fd-list__title">Product 1</span>
+           <span class="fd-list__secondary">1000 EUR</span>
         </li>
         <li class="fd-list__item" role="option" tabindex="0">
-           <span class="fd-list__title">List item 2</span>
-           <span class="fd-list__secondary">A2</span>
+           <span class="fd-list__title">Product 2</span>
+           <span class="fd-list__secondary">750 EUR</span>
+       </li>
+        <li class="fd-list__item" role="option" tabindex="0">
+           <span class="fd-list__title">Product 3</span>
+           <span class="fd-list__secondary">780 EUR</span>
         </li>
         <li class="fd-list__item" role="option" tabindex="0">
-           <span class="fd-list__title">List item 3</span>
-           <span class="fd-list__secondary">A3</span>
+           <span class="fd-list__title">Product 4</span>
+           <span class="fd-list__secondary">40 EUR</span>
+        </li>
+     </ul>
+  </div>
+</div>
+
+
+<br />
+<br />
+
+
+<label class="fd-form-label">
+    Select Cozy Mode With 2 Columns and Icons
+</label>
+<br>
+<div class="fd-popover">
+  <div class="fd-popover__control">
+     <div class="fd-select">
+         <div class="fd-select__control" tabindex="0" aria-controls="h090G325" aria-expanded="false" aria-haspopup="true">
+             Select Product
+             <button class="fd-button fd-button--light sap-icon--slim-arrow-down fd-select__button"></button>
+         </div>
+      </div>
+  </div>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h090G325">
+     <ul class="fd-list fd-list--dropdown" role="listbox">
+        <li class="fd-list__item is-selected" role="option" tabindex="0">
+           <span class="fd-list__icon sap-icon--marketing-campaign"></span>
+           <span class="fd-list__title">Marketing</span>
+           <span class="fd-list__secondary">1000 EUR</span>
         </li>
         <li class="fd-list__item" role="option" tabindex="0">
-           <span class="fd-list__title">List item 4</span>
-           <span class="fd-list__secondary">A4</span>
+           <span class="fd-list__icon sap-icon--save"></span>
+           <span class="fd-list__title">Backups</span>
+           <span class="fd-list__secondary">500 EUR</span>
+       </li>
+        <li class="fd-list__item" role="option" tabindex="0">
+           <span class="fd-list__icon sap-icon--shipping-status"></span>
+           <span class="fd-list__title">Shipping</span>
+           <span class="fd-list__secondary">125 EUR</span>
+        </li>
+        <li class="fd-list__item" role="option" tabindex="0">
+           <span class="fd-list__icon sap-icon--headset"></span>
+           <span class="fd-list__title">Consulting</span>
+           <span class="fd-list__secondary">200 EUR</span>
         </li>
      </ul>
   </div>
@@ -164,6 +209,59 @@ The select control (also known as a dropdown) is commonly used to enable users t
 {% endcapture %}
 
 {% include display-component.html component=two-col %}
+
+
+
+## Select with Items Grouping
+Item group headers can be used, to categorize certain types of elements.
+
+{% capture select-group %}
+<div class="fd-popover">
+  <div class="fd-popover__control">
+     <div class="fd-select">
+         <div class="fd-select__control" tabindex="0" aria-controls="h09GDGG325" aria-expanded="false" aria-haspopup="true">
+             Select Ingredient
+             <button class="fd-button fd-button--light sap-icon--slim-arrow-down fd-select__button"></button>
+         </div>
+      </div>
+  </div>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="h09GDGG325">
+        <ul class="fd-list fd-list--dropdown" role="listbox">
+            <li class="fd-list__group-header">
+                Fruits
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item is-selected">
+                <span class="fd-list__title">Apple</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Orange</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Banana</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Kiwi</span>
+            </li>
+            <li class="fd-list__group-header">
+                Vegetables
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Tomato</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Onion</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Spinach</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Potato</span>
+            </li>
+        </ul>
+  </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=select-group %}
 
 ## Text Wrapping
 By default text is wrapped, to prevent from wrapping, there is a need to use `--no-wrap` modifier for 
