@@ -52,12 +52,6 @@ input field fo help user with finding correct value, or adding custom value.
                         </span>
                         <button class="fd-token__close"></button>
                     </span>
-                    <span class="fd-token fd-token--readonly">
-                        <span class="fd-token__text">
-                            Lemon
-                        </span>
-                    </span>
-                    <span class="fd-tokenizer__indicator">4 more</span>
                     <input class="fd-input fd-input-group__input fd-tokenizer__input" />
                 </div>
             </div>
@@ -76,24 +70,24 @@ input field fo help user with finding correct value, or adding custom value.
                     </span>
                 </label>
             </li>
-             <li class="fd-list__item" role="option">
-                <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai4ez612">
+             <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez612">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4ez612">
                     <span class="fd-list__title">
                         Orange
                     </span>
                 </label>
             </li>
-             <li class="fd-list__item" role="option">
-                <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai4ez614">
+             <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez614">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4ez614">
                     <span class="fd-list__title">
                         Banana
                     </span>
                 </label>
             </li>
-             <li class="fd-list__item" role="option">
-                <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai4ez615">
+             <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez615">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4ez615">
                     <span class="fd-list__title">
                         Kiwi
@@ -140,22 +134,10 @@ input field fo help user with finding correct value, or adding custom value.
                     </span>
                     <span class="fd-token fd-token--compact" role="button">
                         <span class="fd-token__text">
-                            Kiwi
-                        </span>
-                        <button class="fd-token__close"></button>
-                    </span>
-                    <span class="fd-token fd-token--compact" role="button">
-                        <span class="fd-token__text">
                             Banana
                         </span>
                         <button class="fd-token__close"></button>
                     </span>
-                    <span class="fd-token fd-token--compact fd-token--readonly">
-                        <span class="fd-token__text">
-                            Lemon
-                        </span>
-                    </span>
-                    <span class="fd-tokenizer__indicator">4 more</span> 
                     <input class="fd-input fd-input-group__input fd-input--compact fd-tokenizer__input" />
                 </div>
             </div>
@@ -174,16 +156,16 @@ input field fo help user with finding correct value, or adding custom value.
                     </span>
                 </label>
             </li>
-             <li class="fd-list__item" role="option">
-                <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai2ez612">
+             <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai2ez612">
                 <label class="fd-checkbox__label fd-list__label" for="Ai2ez612">
                     <span class="fd-list__title">
                         Orange
                     </span>
                 </label>
             </li>
-             <li class="fd-list__item" role="option">
-                <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai3ez614">
+             <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai3ez614">
                 <label class="fd-checkbox__label fd-list__label" for="Ai3ez614">
                     <span class="fd-list__title">
                         Banana
@@ -243,18 +225,7 @@ Item group headers can be used, to categorize certain types of elements.
                         </span>
                         <button class="fd-token__close"></button>
                     </span>
-                    <span class="fd-token" role="button">
-                        <span class="fd-token__text">
-                            Banana
-                        </span>
-                        <button class="fd-token__close"></button>
-                    </span>
-                    <span class="fd-token fd-token--readonly">
-                        <span class="fd-token__text">
-                            Lemon
-                        </span>
-                    </span>
-                    <span class="fd-tokenizer__indicator">4 more</span> 
+                    <span class="fd-tokenizer__indicator">2 more</span> 
                     <input class="fd-input fd-input-group__input fd-tokenizer__input" />
                 </div>
             </div>
@@ -276,19 +247,19 @@ Item group headers can be used, to categorize certain types of elements.
                     </span>
                 </label>
             </li>
-             <li class="fd-list__item" role="option">
-                <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai2ez652">
+             <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai2ez652">
                 <label class="fd-checkbox__label fd-list__label" for="Ai2ez652">
                     <span class="fd-list__title">
                         Orange
                     </span>
                 </label>
             </li>
-             <li class="fd-list__item" role="option">
-                <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai3ez654">
+             <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai3ez654">
                 <label class="fd-checkbox__label fd-list__label" for="Ai3ez654">
                     <span class="fd-list__title">
-                        Banana
+                        Kiwi
                     </span>
                 </label>
             </li>
@@ -296,7 +267,7 @@ Item group headers can be used, to categorize certain types of elements.
                 <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai8ez655">
                 <label class="fd-checkbox__label fd-list__label" for="Ai8ez655">
                     <span class="fd-list__title">
-                        Kiwi
+                        Banana
                     </span>
                 </label>
             </li>
@@ -311,22 +282,113 @@ Item group headers can be used, to categorize certain types of elements.
             <li class="fd-list__group-header">
                 Vegetables
             </li>
-            <li class="fd-list__item" role="option">
-                <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai8ez689">
+            <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai8ez689">
                 <label class="fd-checkbox__label fd-list__label" for="Ai8ez689">
                     <span class="fd-list__title">
                         Onion
                     </span>
                 </label>
             </li>
-             <li class="fd-list__item" role="option">
-                <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai8ez685">
+             <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai8ez685">
                 <label class="fd-checkbox__label fd-list__label" for="Ai8ez685">
                     <span class="fd-list__title">
                         Tomato
                     </span>
                 </label>
             </li>
+            <li class="fd-list__footer">
+                <a class="fd-link" href="#">Show All</a>
+            </li>
+         </ul>
+     </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=multi-input-group %}
+
+
+## Match Popover Body Size
+By default popover body takes as much width as it needs, of course with some limits. 
+In general it’s not dependent on control element.
+I can be changed, by adding `fd-popover__body--dropdown-fill` class to `fd-popover__body`.
+For all of Multi Input examples this class is added. There is example below how does it look without 
+`fd-popover__body--dropdown-fill`
+{% capture multi-input-group %}
+<div class="fd-popover">
+    <div class="fd-popover__control" aria-controls="F4HGFHX34a" aria-expanded="false" aria-haspopup="true">
+        <div class="fd-input-group fd-input-group--control">
+            <div class="fd-tokenizer">
+                <div class="fd-tokenizer__inner">
+                    <span class="fd-token" role="button">
+                        <span class="fd-token__text">
+                            Apple
+                        </span>
+                        <button class="fd-token__close"></button>
+                    </span>
+                    <span class="fd-token" role="button">
+                        <span class="fd-token__text">
+                            Orange
+                        </span>
+                        <button class="fd-token__close"></button>
+                    </span>
+                    <span class="fd-token" role="button">
+                        <span class="fd-token__text">
+                            Kiwi
+                        </span>
+                        <button class="fd-token__close"></button>
+                    </span>
+                    <span class="fd-tokenizer__indicator">2 more</span> 
+                    <input class="fd-input fd-input-group__input fd-tokenizer__input" />
+                </div>
+            </div>
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+                <button class="fd-input-group__button fd-button--light sap-icon--value-help" aria-controls="F4HGFHX34a" aria-expanded="false" aria-haspopup="true"></button>
+            </span>
+        </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4HGFHX34a">
+         <ul class="fd-list fd-list--multi-input">
+             <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai124z651">
+                <label class="fd-checkbox__label fd-list__label" for="Ai124z651">
+                    <span class="fd-list__title">
+                        Apple
+                    </span>
+                </label>
+            </li>
+             <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai134z651">
+                <label class="fd-checkbox__label fd-list__label" for="Ai134z651">
+                    <span class="fd-list__title">
+                        Orange
+                    </span>
+                </label>
+            </li>
+             <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai1366z651">
+                <label class="fd-checkbox__label fd-list__label" for="Ai1366z651">
+                    <span class="fd-list__title">
+                        Kiwi
+                    </span>
+                </label>
+            </li>
+             <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai136gf51">
+                <label class="fd-checkbox__label fd-list__label" for="Ai136gf51">
+                    <span class="fd-list__title">
+                        Banana
+                    </span>
+                </label>
+            </li>
+             <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai136ggfd">
+                <label class="fd-checkbox__label fd-list__label" for="Ai136ggfd">
+                    <span class="fd-list__title">
+                        Lemon
+                    </span>
+                </label>
+             </li>
             <li class="fd-list__footer">
                 <a class="fd-link" href="#">Show All</a>
             </li>
@@ -495,17 +557,6 @@ Also the `fd-list--has-message` modifier should be added to `ul` element.
                          </span>
                          <button class="fd-token__close"></button>
                      </span>
-                     <span class="fd-token" role="button">
-                         <span class="fd-token__text">
-                             Banana
-                         </span>
-                         <button class="fd-token__close"></button>
-                     </span>
-                     <span class="fd-token fd-token--readonly">
-                         <span class="fd-token__text">
-                             Lemon
-                         </span>
-                     </span>
                      <span class="fd-tokenizer__indicator">4 more</span> 
                      <input class="fd-input fd-input-group__input fd-tokenizer__input" />
                  </div>
@@ -526,14 +577,14 @@ Also the `fd-list--has-message` modifier should be added to `ul` element.
                     </span>
                 </label>
             </li>
-             <li class="fd-list__item" role="option">
-                <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai4Fez612">
+             <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4Fez612">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4Fez612">
                     <span class="fd-list__title">Orange</span>
                 </label>
             </li>
-             <li class="fd-list__item" role="option">
-                <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai4eGz614">
+             <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4eGz614">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4eGz614">
                     <span class="fd-list__title">Kiwi</span>
                 </label>

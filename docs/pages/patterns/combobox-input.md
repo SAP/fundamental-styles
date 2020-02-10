@@ -178,6 +178,43 @@ Item group headers can be used, to categorize certain types of elements.
 {% endcapture %}
 {% include display-component.html component=combobox-group %}
 
+
+## Match Popover Body Size
+By default popover body takes as much width as it needs, of course with some limits. 
+In general it’s not dependent on control element.
+I can be changed, by adding `fd-popover__body--dropdown-fill` class to `fd-popover__body`.
+For all of Combobox examples this class is added. There is example below how does it look without 
+`fd-popover__body--dropdown-fill`
+{% capture combobox-fill %}
+<div class="fd-popover">
+  <div class="fd-popover__control" aria-controls="F4HTFDLK6" aria-expanded="false" aria-haspopup="true">
+      <div class="fd-input-group fd-input-group--control">
+          <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Ingredient">
+          <span class="fd-input-group__addon fd-input-group__addon--button">
+              <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow" aria-controls="F4HTFDLK6" aria-expanded="false" aria-haspopup="true"></button>
+          </span>
+      </div>
+  </div>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4HTFDLK6">
+        <ul class="fd-list fd-list--dropdown" role="listbox">
+            <li role="option" tabindex="0" class="fd-list__item is-selected">
+                <span class="fd-list__title">Apple</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Orange</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Banana</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Kiwi</span>
+            </li>
+        </ul>
+  </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=combobox-fill %}
+
 ## Disabled Mode
 To add disabled state, it is mandatory to add `disabled` attribute to `fd-popover__control` and `fd-nput-group` element
 Disabled state can be enabled also by adding `.is-disabled` class, or `aria-disabled="true"` 
