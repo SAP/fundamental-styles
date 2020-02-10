@@ -32,7 +32,7 @@ $fd-menu-button-icon-size: 0.75rem;
 $fd-menu-button-icon-position-top: 0.67rem;
 
 // anim
-$fd-button-transition-params: $fd-animation--speed ease-in !default;
+$fd-button-transition-params: $fd-animation-speed ease-in !default;
 
 $block: #{$fd-namespace}-button;
 
@@ -83,23 +83,15 @@ $block: #{$fd-namespace}-button;
     vertical-align: middle;
   }
 
-  @at-root {
-    [dir="rtl"] &,
-    &[dir="rtl"] {
-      &::before {
-        margin-right: 0;
-        margin-left: $fd-button-icon-margin;
-      }
+  &[dir="rtl"] {
+    &::before {
+      margin-right: 0;
+      margin-left: $fd-button-icon-margin;
     }
-  }
 
-  @at-root {
-    [dir="rtl"] &,
-    &[dir="rtl"] {
-      &::after {
-        margin-left: 0;
-        margin-right: $fd-button-icon-margin;
-      }
+    &::after {
+      margin-left: 0;
+      margin-right: $fd-button-icon-margin;
     }
   }
 
@@ -210,19 +202,13 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin half() {
-  --fd-forms-height-half: #{$fd-forms-height/2};
-
-  @include fd-var-size("height", $fd-forms-height/2, --fd-forms-height-half);
-  @include fd-var-size("max-height", $fd-forms-height/2, --fd-forms-height-half);
-
+  height: $fd-button-height / 2;
+  max-height: $fd-button-height / 2;
   line-height: 1;
 
   &.#{$block}--compact {
-    --fd-forms-height-half: #{$fd-forms-height--compact/2};
-
-    @include fd-var-size("height", $fd-forms-height--compact/2, --fd-forms-height-half);
-    @include fd-var-size("max-height", $fd-forms-height--compact/2, --fd-forms-height-half);
-
+    height: $fd-button-compact-height / 2;
+    max-height: $fd-button-compact-height / 2;
     line-height: 1;
   }
 }

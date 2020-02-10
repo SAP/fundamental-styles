@@ -19,7 +19,7 @@ $block: #{$fd-namespace}-select;
     @include fd-icon-base("after");
 
     @include fd-icon-glyph("slim-arrow-down","after") {
-      transition: transform $fd-animation--speed ease-in;
+      transition: transform $fd-animation-speed ease-in;
     }
 
     position: relative;

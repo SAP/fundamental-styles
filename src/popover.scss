@@ -23,7 +23,7 @@ $block: #{$fd-namespace}-popover;
   $fd-popover-arrow-offset: 0.5rem !default;
   $fd-popover-arrow-color: var(--sapGroup_ContentBorderColor) !default;
 
-  $fd-popover-transition-params: $fd-animation--speed !default;
+  $fd-popover-transition-params: $fd-animation-speed !default;
 
   $fd-popover-body-shadow-offset: var(--sapGroup_BorderWidth) !default;
 

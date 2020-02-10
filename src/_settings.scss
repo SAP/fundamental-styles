@@ -252,7 +252,7 @@ $fd-z-index-levels: map-merge(
 $fd-border-radius: 4px !default;
 
 // animation speed
-$fd-animation--speed: 0.125s !default;
+$fd-animation-speed: 0.125s !default;
 
 // shell
 $fd-shell-header-height: 48px !default;
@@ -293,7 +293,7 @@ $fd-forms-border-color--check: map-get($fd-colors-action, 3) !default;
 $fd-forms-border-color--focus: map-get($fd-colors-action, 3) !default;
 $fd-forms-border-color--disabled: map-get($fd-colors-neutral, 2) !default;
 
-$fd-forms-transition-params: $fd-animation--speed ease-in !default;
+$fd-forms-transition-params: $fd-animation-speed ease-in !default;
 
 $fd-forms-select-width--background-image: 36px !default;
 $fd-down-arrow-icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI5Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiMyMTI2MkMiIGQ9Ik0xMS45MzUgMS40NzVMNi4xODggNy45MjdhLjI2NC4yNjQgMCAwIDEtLjM3OCAwTC4wNjUgMS40NzVhLjIzNi4yMzYgMCAwIDEgLjAyNi0uMzQzTDEuMzgxLjA1OGEuMjUzLjI1MyAwIDAgMSAuMTYzLS4wNTlMMS41NjMgMGEuMjUyLjI1MiAwIDAgMSAuMTcxLjA4NWw0LjI2NSA0Ljg4IDQuMjY3LTQuODhhLjI1Mi4yNTIgMCAwIDEgLjM1Mi0uMDI3bDEuMjkxIDEuMDc0Yy4wNS4wNDIuMDgxLjEwMi4wODYuMTY2YS4yMzYuMjM2IDAgMCAxLS4wNi4xNzd6Ii8+PC9zdmc+" !default;

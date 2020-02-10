@@ -15,7 +15,7 @@ $block: #{$fd-namespace}-dropdown;
 
   // LOCAL VARS (set all themeable properties, always include !default)
   // anim
-  $fd-dropdown-menu-item-transition-params: $fd-animation--speed ease-in !default;
+  $fd-dropdown-menu-item-transition-params: $fd-animation-speed ease-in !default;
 
   // BLOCK BASE *******************************************
   // set all BLOCK reset and baseline styles

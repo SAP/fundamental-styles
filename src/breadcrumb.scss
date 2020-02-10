@@ -87,7 +87,7 @@ $block: #{$fd-namespace}-breadcrumb;
     @include fd-link();
 
     display: inline-block;
-    transition: all $fd-animation--speed ease-in;
+    transition: all $fd-animation-speed ease-in;
     font-size: $fd-breadcrumb-font-size;
     font-family: $fd-breadcrumb-font-family;
   }

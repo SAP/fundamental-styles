@@ -7,6 +7,9 @@
     .fd-button
 */
 $block: #{$fd-namespace}-button-split;
+$fd-button-split-corner-radius: var(--sapButton_BorderCornerRadius);
+$fd-button-split-border-width: var(--sapButton_BorderWidth);
+$fd-button-split-margin: 0.125 / 2;
 
 @mixin styleContent() {
   & > * {
@@ -41,18 +44,18 @@ $block: #{$fd-namespace}-button-split;
       @include styleContent() {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        border-top-right-radius: var(--sapButton_BorderCornerRadius);
-        border-bottom-right-radius: var(--sapButton_BorderCornerRadius);
+        border-top-right-radius: $fd-button-split-corner-radius;
+        border-bottom-right-radius: $fd-button-split-corner-radius;
       }
     }
 
     &:nth-child(2) {
       @include styleContent() {
-        border-top-left-radius: var(--sapButton_BorderCornerRadius);
-        border-bottom-left-radius: var(--sapButton_BorderCornerRadius);
+        border-top-left-radius: $fd-button-split-corner-radius;
+        border-bottom-left-radius: $fd-button-split-corner-radius;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
-        border-left-width: var(--sapButton_BorderWidth);
+        border-left-width: $fd-button-split-border-width;
         border-right-width: 0;
       }
     }
@@ -75,7 +78,7 @@ $block: #{$fd-namespace}-button-split;
   > [class*="--emphasized"] {
     &:first-child {
       @include styleContent() {
-        margin-right: 1px;
+        margin-right: $fd-button-split-margin;
       }
     }
 
@@ -83,7 +86,7 @@ $block: #{$fd-namespace}-button-split;
       &:first-child {
         @include styleContent() {
           margin-right: 0;
-          margin-left: 1px;
+          margin-left: $fd-button-split-margin;
         }
       }
     }

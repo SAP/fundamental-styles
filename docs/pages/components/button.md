@@ -272,12 +272,12 @@ Button with multiple actions
   <button class="fd-button fd-button--compact" aria-label="button">
     <span class="fd-button--content sap-icon--cart">Button with text</span>
   </button>
-  <button class="fd-button fd-button--compact" aria-controls="t4c0o273" aria-haspopup="true" 
+  <button class="fd-button fd-button--compact" aria-controls="t4c0o273010101" aria-haspopup="true" 
   aria-expanded="false" aria-label="More">
     <span class="fd-button--content sap-icon--slim-arrow-down"></span>
   </button>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
-  id="t4c0o273">
+  id="t4c0o273010101">
     <nav class="fd-menu">
         <ul class="fd-menu__list">
           <li><a role="button" class="fd-menu__item">Add to list</a>
