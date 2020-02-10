@@ -11,6 +11,7 @@ $fd-icons-sizes: (
 ) !default;
 
 // icon map
+/* stylelint-disable */
 $fd-icons: (
   accidental-leave: "\e000",
   account: "\e001",
@@ -665,3 +666,4 @@ $fd-icons: (
   combine: "\e285",
   split: "\e286"
 ) !default;
+/* stylelint-enable */
