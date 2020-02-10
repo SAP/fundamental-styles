@@ -96,6 +96,8 @@ $block: #{$fd-namespace}-action-bar;
     flex-grow: 1;
     padding-right: 0.5rem;
     vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin: 0;
   }
 

@@ -63,6 +63,7 @@ The Action Bar is located at the top of the page and is used for the following:
  
 {% capture default-action-bar-multi %}
 <div class="fd-action-bar">
+<<<<<<< HEAD
    
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
@@ -75,6 +76,19 @@ The Action Bar is located at the top of the page and is used for the following:
             <button class="fd-button--compact fd-button--primary">Button</button>
             <button class="fd-button--compact fd-button--emphasized">Button</button>
         </div>
+=======
+    <div class="fd-action-bar__back">
+        <button class="fd-button fd-button--light fd-button--compact sap-icon--nav-back"></button>
+    </div>
+    <div class="fd-action-bar__header">
+        <h3 class="fd-action-bar__title">
+            Page Title
+        </h3>
+    </div>
+    <div class="fd-action-bar__actions">
+        <button class="fd-button--compact fd-button--primary">Button</button>
+        <button class="fd-button--compact fd-button--emphasized">Button</button>
+>>>>>>> docs(action bar):adding the example for truncation of long page title and description scenario.
     </div>
 </div>
 {% endcapture %}
@@ -86,6 +100,7 @@ The Action Bar is located at the top of the page and is used for the following:
 ## Action bar with Long page title and description.
 {% capture default-action-bar %}
 <div class="fd-action-bar">
+<<<<<<< HEAD
     
     <div class="fd-action-bar__header">
     <div class="fd-action-bar__back">
@@ -103,6 +118,21 @@ The Action Bar is located at the top of the page and is used for the following:
      <p class="fd-action-bar__description--with-backBtn">
      Action bar Description Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long
      </p>
+=======
+    <div class="fd-action-bar__back">
+        <button class="fd-button fd-button--light fd-button--compact sap-icon--nav-back"></button>
+    </div>
+    <div class="fd-action-bar__header">
+        <h3 class="fd-action-bar__title">
+        Page Title Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long.
+        </h3>
+        <p class="fd-action-bar__description">Action bar Description Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long</p>
+    </div>
+    <div class="fd-action-bar__actions">
+        <button class="fd-button--compact fd-button--primary">Button</button>
+        <button class="fd-button--compact fd-button--emphasized">Button</button>
+    </div>
+>>>>>>> docs(action bar):adding the example for truncation of long page title and description scenario.
 </div>
 {% endcapture %}
 {% include display-component.html component=default-action-bar %}
