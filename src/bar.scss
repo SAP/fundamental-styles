@@ -140,7 +140,7 @@ $block: #{$fd-namespace}-bar;
     }
   }
 
-  &--page-S {
+  &--page-s {
     @include responsive-page();
 
     &.#{$block}--floating-footer {
@@ -148,7 +148,7 @@ $block: #{$fd-namespace}-bar;
     }
   }
 
-  &--home-page-S {
+  &--home-page-s {
     @include responsive-page($padding-x: 0.5rem);
 
     &.#{$block}--floating-footer {
@@ -156,8 +156,8 @@ $block: #{$fd-namespace}-bar;
     }
   }
 
-  &--page-M_L,
-  &--home-page-M_L {
+  &--page-m_l,
+  &--home-page-m_l {
     @include responsive-page($padding-x: 2rem);
 
     &.#{$block}--floating-footer {
@@ -165,8 +165,8 @@ $block: #{$fd-namespace}-bar;
     }
   }
 
-  &--page-XL,
-  &--home-page-XL {
+  &--page-xl,
+  &--home-page-xl {
     @include responsive-page($padding-x: 3rem);
 
     &.#{$block}--floating-footer {

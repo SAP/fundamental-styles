@@ -57,7 +57,7 @@ The Bar has 2 modes - `Desktop` (default) and `Tablet/Mobile` (cosy).
 <div class="fd-bar" dir="rtl">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--light sap-icon--navigation-right-arrow"></button>
         </div>
         <div class="fd-bar__element">
             <button class="fd-button fd-button--light sap-icon--home"></button>
@@ -215,7 +215,7 @@ For Header in Bar Design apply the `fd-bar--header` class to the container eleme
 <div class="fd-bar fd-bar--header" dir="rtl">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--light sap-icon--navigation-right-arrow"></button>
         </div>
         <div class="fd-bar__element">
             <button class="fd-button fd-button--light sap-icon--home"></button>
@@ -308,7 +308,7 @@ SubHeader in Bar Design is achieved by adding the `fd-bar--subheader` class to t
 <div class="fd-bar fd-bar--subheader" dir="rtl">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--compact fd-button--light sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--compact fd-button--light sap-icon--navigation-right-arrow"></button>
         </div>
         <div class="fd-bar__element">
             <button class="fd-button fd-button--compact fd-button--light sap-icon--home"></button>

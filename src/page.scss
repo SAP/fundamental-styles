@@ -18,19 +18,19 @@ $block: #{$fd-namespace}-page;
     padding: 0;
   }
 
-  &__content--S {
+  &__content--s {
     @include fd-reset();
 
     padding: 0 1rem;
   }
 
-  &__content--M_L {
+  &__content--m_l {
     @include fd-reset();
 
     padding: 0 2rem;
   }
 
-  &__content--XL {
+  &__content--xl {
     @include fd-reset();
 
     padding: 0 3rem;

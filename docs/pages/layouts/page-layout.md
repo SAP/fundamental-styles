@@ -33,9 +33,9 @@ The elements used to construct a page are:
 ### Page Responsive Behaviour
 The left and right spacings of the Bar and the Content could be adjusted according to the container width.
   * `default`: Bar component with `fd-bar--page` modifier class and `fd-page__content` class for the content
-  * `Size S`: Bar component with additional `fd-bar--page-S` modifier class and `fd-page__content--S`  modifier class for the content
-  * `Size M & L`: Bar component with additional `fd-bar--page-M_L` modifier class and `fd-page__content--M_L` modifier class for the content
-  * `Size XL`: Bar component with additional `fd-bar--page-XL` modifier class and `fd-page__content--XL` modifier class for the content
+  * `Size S`: Bar component with additional `fd-bar--page-s` modifier class and `fd-page__content--s`  modifier class for the content
+  * `Size M & L`: Bar component with additional `fd-bar--page-m_l` modifier class and `fd-page__content--m_l` modifier class for the content
+  * `Size XL`: Bar component with additional `fd-bar--page-xl` modifier class and `fd-page__content--xl` modifier class for the content
 <br/>
 
 ## Basic page
@@ -90,7 +90,7 @@ The left and right spacings of the Bar and the Content could be adjusted accordi
 {% capture page-layout-2 %}
 <main class="fd-page fd-page--transparent">
     <header>
-        <div class="fd-bar fd-bar--page-M_L fd-bar--header-with-subheader">
+        <div class="fd-bar fd-bar--page-m_l fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
                     <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
@@ -106,7 +106,7 @@ The left and right spacings of the Bar and the Content could be adjusted accordi
             </div>
         </div>
     </header>
-    <div class="fd-bar fd-bar--page-M_L fd-bar--subheader">
+    <div class="fd-bar fd-bar--page-m_l fd-bar--subheader">
         <div class="fd-bar__middle">
             <div class="fd-bar__element fd-bar__element--full-width">
                 <div class="fd-form-item">
@@ -115,11 +115,11 @@ The left and right spacings of the Bar and the Content could be adjusted accordi
             </div>
         </div>
     </div>
-    <div class="fd-page__content--M_L">
+    <div class="fd-page__content--m_l">
         Page Content
     </div>
     <footer>
-        <div class="fd-bar fd-bar--page-M_L fd-bar--footer">
+        <div class="fd-bar fd-bar--page-m_l fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
@@ -142,7 +142,7 @@ The left and right spacings of the Bar and the Content could be adjusted accordi
 {% capture page-layout-3 %}
 <main class="fd-page fd-page--home fd-page--list">
     <header>
-        <div class="fd-bar fd-bar--home-page-XL fd-bar--header-with-subheader">
+        <div class="fd-bar fd-bar--home-page-xl fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
                     <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
@@ -158,11 +158,11 @@ The left and right spacings of the Bar and the Content could be adjusted accordi
             </div>
         </div>
     </header>
-    <div class="fd-page__content--XL">
+    <div class="fd-page__content--xl">
         Page Content
     </div>
     <footer>
-        <div class="fd-bar fd-bar--home-page-XL fd-bar--floating-footer">
+        <div class="fd-bar fd-bar--home-page-xl fd-bar--floating-footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
@@ -178,7 +178,7 @@ The left and right spacings of the Bar and the Content could be adjusted accordi
 {% include display-component.html component=page-layout-3  class="page"%}
 
 <style media="screen">
-    .fd-page__content, .fd-page__content--M_L, .fd-page__content--XL{
+    .fd-page__content, .fd-page__content--m_l, .fd-page__content--xl{
         height: 300px;
     }
 </style>
