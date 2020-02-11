@@ -26,13 +26,6 @@ summary:
              </h2>
          </div>
     </a>
-    <a class="fd-tile" role="button" href="message-strip-overlay-demo-page.html" target="_blank">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Application Message Strip Overlay
-             </h2>
-         </div>
-    </a>
     <a class="fd-tile" role="button" href="modal-overlay-demo-page.html" target="_blank">
         <div class="fd-tile__content">
              <h2 class="fd-tile__header">
