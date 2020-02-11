@@ -220,7 +220,7 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin styleButtonContent() {
-  > .#{$block}--content {
+  .#{$block}--content {
     @content;
   }
 }
@@ -251,6 +251,8 @@ $block: #{$fd-namespace}-button;
 
   &.#{$block}--emphasized {
     @include styleButtonContent() {
+      font-weight: bold;
+
       @include emphasized();
     }
   }
@@ -407,8 +409,7 @@ $block: #{$fd-namespace}-button;
   }
 }
 
-.#{$block},
-a.#{$block} {
+.#{$block} {
   @include fd-button-reset();
 
   overflow: visible;
