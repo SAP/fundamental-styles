@@ -65,24 +65,29 @@ $block: #{$fd-namespace}-modal;
   &__content {
     @include fd-reset();
 
-    @include media-breakpoint-down(l) {
-      margin: 0;
-      height: 100vh;
-
-      &--no-mobile-stretch {
-        height: calc(100vh - #{$fd-modal-content-margin-y} * 2);
-        margin: $fd-modal-content-margin-y $fd-modal-content-margin-x;
-      }
-    }
-
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     min-width: $fd-modal-content-min-width;
     min-height: $fd-modal-content-min-height;
+    max-width: calc(100vw - #{$fd-modal-content-margin-x});
+    max-height: calc(100vh - #{$fd-modal-content-margin-y});
     box-shadow: $fd-modal-content-box-shadow;
     border-radius: $fd-modal-content-border-radius;
-    margin: $fd-modal-content-margin-y $fd-modal-content-margin-x;
+
+    @include media-breakpoint-down(m) {
+      width: 100vw;
+      height: 100vh;
+
+      &:not(&--no-mobile-stretch) {
+        max-width: 100vw;
+        max-height: 100vh;
+      }
+    }
 
     @each $size-label, $size in $fd-modal-content-padding-x {
       &--#{$size-label} {
@@ -106,16 +111,11 @@ $block: #{$fd-namespace}-modal;
     }
 
     &--resizable {
-      position: relative;
-      max-width: 100vw;
-      max-height: 100vh;
-
       @include media-breakpoint-up(l) {
-        resize: both;
-
         @include fd-icon("resize-corner", "m", "after") {
           color: $fd-modal-resize-handle-color;
           position: absolute;
+          cursor: nwse-resize;
           right: 0;
           bottom: 0;
         }
@@ -156,13 +156,11 @@ $block: #{$fd-namespace}-modal;
   }
 
   &__body {
+    @include fd-reset();
+
     flex-grow: 1;
-    overflow-y: auto;
-    box-sizing: border-box;
-    padding-top: $fd-modal-body-padding-y;
-    padding-bottom: $fd-modal-body-padding-y;
     background-color: $fd-modal-body-color;
-    max-height: calc(100vh - #{$fd-modal-header-height} - #{$fd-modal-footer-height});
+    padding: $fd-modal-body-padding-y map_get($fd-modal-content-padding-x, "def");
   }
 
   &__footer {
