@@ -1,4 +1,8 @@
 @mixin emphasized() {
+  // variable not defined
+  // font-weight: var(--sapButton_Emphasized_FontWeight);
+  font-weight: 700;
+
   @include applyColors(
     var(--sapButton_Emphasized_TextColor),
     var(--sapButton_Emphasized_BorderColor),

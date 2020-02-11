@@ -29,7 +29,8 @@ $fd-button-compact-line-height: calc(#{$fd-button-compact-height} - 2 * #{$fd-bu
 
 $fd-menu-button-max-width: 12rem;
 $fd-menu-button-icon-size: 0.75rem;
-$fd-menu-button-icon-position-top: 0.67rem;
+$fd-menu-button-icon-position-top: 0.716rem;
+$fd-menu-button-icon-position-top-compact: 0.403rem;
 
 // anim
 $fd-button-transition-params: $fd-animation-speed ease-in !default;
@@ -69,9 +70,6 @@ $block: #{$fd-namespace}-button;
   border-style: solid;
   border-width: $fd-button-border-width;
 
-  // animation
-  transition: all $fd-button-transition-params;
-
   // placements
   &::before {
     margin-right: $fd-button-icon-margin;
@@ -83,7 +81,7 @@ $block: #{$fd-namespace}-button;
     vertical-align: middle;
   }
 
-  &[dir="rtl"] {
+  @include fd-rtl() {
     &::before {
       margin-right: 0;
       margin-left: $fd-button-icon-margin;
@@ -121,21 +119,23 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin menuCompact() {
-  $fd-button-menu-button-padding: calc(
-    #{$fd-button-compact-padding-x} + #{$fd-button-icon-margin} + #{$fd-menu-button-icon-size} + #{$fd-button-border-width}
-  );
+  $fd-button-menu-button-padding: 1.469rem;
+  $fd-menu-button-icon-position-horizontal: 0.125rem / 2;
 
   padding-right: $fd-button-menu-button-padding;
 
   &::after {
-    top: $fd-menu-button-icon-position-top / 2;
+    top: $fd-menu-button-icon-position-top-compact;
+    right: $fd-menu-button-icon-position-horizontal;
   }
 
-  @at-root {
-    [dir="rtl"] &,
-    &[dir="rtl"] {
-      padding-left: $fd-button-menu-button-padding;
-      padding-right: $fd-button-compact-padding-x;
+  @include fd-rtl() {
+    padding-left: $fd-button-menu-button-padding;
+    padding-right: $fd-button-compact-padding-x;
+
+    &::after {
+      right: auto;
+      left: $fd-menu-button-icon-position-horizontal;
     }
   }
 }
@@ -143,9 +143,8 @@ $block: #{$fd-namespace}-button;
 @mixin menu() {
   @include fd-icon("navigation-down-arrow", "s", "after");
 
-  $fd-button-menu-button-padding: calc(
-    #{$fd-button-padding-x} + #{$fd-button-icon-margin} + #{$fd-menu-button-icon-size} + #{$fd-button-border-width}
-  );
+  $fd-button-menu-button-padding: 1.594rem;
+  $fd-menu-button-icon-position-horizontal: 0.1875rem;
 
   max-width: $fd-menu-button-max-width;
   position: relative;
@@ -158,6 +157,9 @@ $block: #{$fd-namespace}-button;
     font-size: $fd-menu-button-icon-size;
     position: absolute;
     top: $fd-menu-button-icon-position-top;
+    right: $fd-menu-button-icon-position-horizontal;
+    margin-right: $fd-button-icon-margin;
+    margin-left: $fd-button-icon-margin;
   }
 
   &:empty {
@@ -172,16 +174,20 @@ $block: #{$fd-namespace}-button;
     }
   }
 
-  @at-root {
-    [dir="rtl"] &,
-    &[dir="rtl"] {
-      padding-left: $fd-button-menu-button-padding;
-      padding-right: $fd-button-padding-x;
+  @include fd-rtl() {
+    padding-left: $fd-button-menu-button-padding;
+    padding-right: $fd-button-padding-x;
 
-      &:empty {
-        &::before {
-          margin-left: 0;
-        }
+    &::after {
+      left: $fd-menu-button-icon-position-horizontal;
+      right: auto;
+      margin-right: $fd-button-icon-margin;
+      margin-left: $fd-button-icon-margin;
+    }
+
+    &:empty {
+      &::before {
+        margin-left: 0;
       }
     }
   }
@@ -401,7 +407,8 @@ $block: #{$fd-namespace}-button;
   }
 }
 
-.#{$block} {
+.#{$block},
+a.#{$block} {
   @include fd-button-reset();
 
   padding-top: $fd-button-touchable-area;

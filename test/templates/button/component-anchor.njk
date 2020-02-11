@@ -5,7 +5,7 @@
 {%- macro anchor_button(properties={}, modifier={}, state={}, aria={}, classes="", size="") -%}
 {%- set is_default = modifier.block and modifier.block.length and not (modifier.block | join("")) %}
 
-<a class="fd-button {{ modifier.block | modifier('button') }}{{ ' fd-button--'+size if size }} {{ state | state }} {{ classes | classes }}" {{ aria | aria }}{% if disabled %} disabled {% endif %}>
+<a role="button" tabindex="0" class="fd-button {{ modifier.block | modifier('button') }}{{ ' fd-button--'+size if size }} {{ state | state }} {{ classes | classes }}" {{ aria | aria }}{% if disabled %} disabled {% endif %}>
     <span class="fd-button--content {{ ' sap-icon--'+properties.icon if properties.icon }}">{%- if properties.label %}{{properties.label}}{%- endif %}</span>
 </a>
 {%- endmacro %}
