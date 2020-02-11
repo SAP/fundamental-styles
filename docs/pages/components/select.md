@@ -8,8 +8,8 @@ permalink: components/select.html
 folder: components
 ---
 
-The select control (also known as a dropdown) is commonly used to enable users to select an item from a predefined list. 
-It should be used, when there is not a lot of items to choose. Otherwise  <a href="/patterns/combobox-input.html">
+The select control (also known as a dropdown) is commonly used to enable users, to select an item from a predefined list. 
+It should be used, when there is less than 12 items to choose. Otherwise  <a href="/patterns/combobox-input.html">
 Combobox Input</a> should be used.
 {: .docs-intro}
 
