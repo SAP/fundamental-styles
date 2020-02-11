@@ -7,7 +7,9 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin buttonFocus() {
-  outline: var(--sapContent_FocusWidth) dotted var(--sapContent_FocusColor);
+  outline-style: dotted;
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
   outline-offset: -0.1875rem;
 }
 

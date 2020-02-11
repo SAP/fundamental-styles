@@ -411,6 +411,7 @@ $block: #{$fd-namespace}-button;
 a.#{$block} {
   @include fd-button-reset();
 
+  overflow: visible;
   padding-top: $fd-button-touchable-area;
   padding-bottom: $fd-button-touchable-area;
   background-color: transparent;
