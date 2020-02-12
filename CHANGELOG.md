@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.0-rc.21"></a>
+# [0.6.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.6.0-rc.20...v0.6.0-rc.21) (2020-02-12)
+
+
+### Bug Fixes
+
+* add popover documentation and playground improvements, add universal selector for first child inside header and footer ([#651](https://github.com/SAP/fundamental-styles/issues/651)) ([a778824](https://github.com/SAP/fundamental-styles/commit/a778824))
+
+
+
 <a name="0.6.0-rc.20"></a>
 # [0.6.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.6.0-rc.19...v0.6.0-rc.20) (2020-02-12)
 
