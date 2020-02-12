@@ -87,6 +87,21 @@
         text-decoration: none;
     }
 
+    .fd-modal {
+        position: static;
+        background-color: transparent;
+    }
+
+    .fd-modal__content {
+        position: static;
+        transform: translate(0%, 0%);
+        width: 30rem;
+        margin: auto;
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
     &__app {
         height: 500px;
         color: fd-color(text, 5);

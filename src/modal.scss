@@ -5,11 +5,12 @@
 
 /*!
   .fd-modal+(--active)
-    .fd-modal__content+(--s, --m, --l, --xl, --xxl, --compact, --resizable, --no-mobile-stretch)
+    .fd-modal__content+(--s, --m, --l, --xl, --resizable, --draggable, --no-mobile-stretch)
       .fd-modal__header
         .fd-modal__title
-        .fd-modal__close
-      .fd-modal__body
+      .fd-modal__subheader
+      .fd-modal__body+(--no-vertical-padding, --loader)
+      .fd-modal__laoder
       .fd-modal__footer
 */
 $block: #{$fd-namespace}-modal;
@@ -26,29 +27,17 @@ $block: #{$fd-namespace}-modal;
   $fd-modal-content-min-height: 7.5rem;
   $fd-modal-content-box-shadow: var(--sapContent_Shadow3);
   $fd-modal-content-border-radius: var(--sapElement_BorderCornerRadius);
-  $fd-modal-content-padding-x: (def: 1rem, s: 1rem, m: 2rem, l: 2rem, xl: 3rem, xxl: 3rem);
+  $fd-modal-content-padding-x: (def: 1rem, s: 1rem, m: 2rem, l: 2rem, xl: 3rem);
 
   // RESIZE HANDLE
   $fd-modal-resize-handle-color: var(--sapButton_Lite_TextColor);
-
-  // HEADER
-  $fd-modal-header-height: 2.75rem;
-  $fd-modal-header-compact-height: 2.5rem;
-  $fd-modal-header-color: var(--sapPageHeader_Background);
-  $fd-modal-header-box-shadow: var(--sapContent_HeaderShadow);
-  $fd-modal-header-shadow-color-1: var(--sapContent_ShadowColor);
-  $fd-modal-header-shadow-color-2: var(--sapPageHeader_BorderColor);
 
   // BODY
   $fd-modal-body-padding-y: 1rem;
   $fd-modal-body-color: var(--sapGroup_ContentBackground);
 
-  // FOOTER
-  $fd-modal-footer-height: 2.75rem;
-  $fd-modal-footer-compact-height: 2.5rem;
-  $fd-modal-footer-background: var(--sapPageFooter_Background);
-  $fd-modal-footer-border-color: var(--sapPageFooter_BorderColor);
-  $fd-modal-footer-border: 0.0625rem solid $fd-modal-footer-border-color;
+  // LOADER
+  $fd-modal-loader-margin-y: 1.5rem;
 
   display: none;
   position: fixed;
@@ -92,21 +81,12 @@ $block: #{$fd-namespace}-modal;
     @each $size-label, $size in $fd-modal-content-padding-x {
       &--#{$size-label} {
         .#{$block}__header,
+        .#{$block}__subheader,
         .#{$block}__body,
         .#{$block}__footer {
           padding-left: map_get($fd-modal-content-padding-x, $size-label);
           padding-right: map_get($fd-modal-content-padding-x, $size-label);
         }
-      }
-    }
-
-    &--compact {
-      .#{$block}__header {
-        height: $fd-modal-header-compact-height;
-      }
-
-      .#{$block}__footer {
-        height: $fd-modal-footer-compact-height;
       }
     }
 
@@ -121,37 +101,42 @@ $block: #{$fd-namespace}-modal;
         }
       }
     }
+
+    &--draggable {
+      &-grab {
+        @include media-breakpoint-up(l) {
+          @include fd-hover() {
+            .#{$block}__header {
+              cursor: grab;
+            }
+          }
+        }
+      }
+
+      &-grabbing {
+        @include media-breakpoint-up(l) {
+          @include fd-hover() {
+            .#{$block}__header {
+              cursor: grabbing;
+            }
+          }
+        }
+      }
+    }
   }
 
   &__header,
-  &__body,
+  &__subheader,
   &__footer {
-    padding-left: map_get($fd-modal-content-padding-x, "def");
-    padding-right: map_get($fd-modal-content-padding-x, "def");
+    padding-left: map_get($fd-modal-content-padding-x, def);
+    padding-right: map_get($fd-modal-content-padding-x, def);
+    flex-shrink: 0;
   }
 
   &__header {
-    position: relative;
-    display: flex;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: space-between;
-    height: $fd-modal-header-height;
-    box-shadow: $fd-modal-header-box-shadow;
-    background-color: $fd-modal-header-color;
-
     .#{$block}__title {
       @include fd-reset();
       @include fd-ellipsis();
-    }
-
-    .#{$block}__close {
-      margin-left: fd-space(reg);
-
-      @include fd-rtl() {
-        margin-right: fd-space(reg);
-        margin-left: 0;
-      }
     }
   }
 
@@ -160,25 +145,18 @@ $block: #{$fd-namespace}-modal;
 
     flex-grow: 1;
     background-color: $fd-modal-body-color;
-    padding: $fd-modal-body-padding-y map_get($fd-modal-content-padding-x, "def");
+    padding-top: $fd-modal-body-padding-y;
+    padding-bottom: $fd-modal-body-padding-y;
+
+    &--no-vertical-padding {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 
-  &__footer {
-    display: flex;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: flex-end;
-    height: $fd-modal-footer-height;
-    border-top: $fd-modal-footer-border;
-    background-color: $fd-modal-footer-background;
-
-    & > :not(:first-child) {
-      margin-left: fd-space(base);
-
-      @include fd-rtl() {
-        margin-right: fd-space(base);
-        margin-left: 0;
-      }
-    }
+  &__loader {
+    text-align: center;
+    margin-top: $fd-modal-loader-margin-y;
+    margin-bottom: $fd-modal-loader-margin-y - $fd-modal-body-padding-y;
   }
 }

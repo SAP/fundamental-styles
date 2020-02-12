@@ -9,11 +9,26 @@ folder: components
 summary:
 ---
 
-The modal is a container generally displayed in response to an action.
+The modal is a container displayed in response to an action.
 {: .docs-intro}
-It is used for short forms, confirmation messages or to display contextual information that does not require a page.
 
-> {{ site.data.strings.headerDisclaimer }}
+## Introduction
+The dialog control interrupts the current app process to prompt the user for information or for a response. It forces a decision or a confirmation that needs to be signed off by the user.
+
+Use the dialog if:
+<ul>
+    <li>You want to display complex content, but don’t want the user to navigate away from the current page.</li>
+    <li>You want to display an additional step or process that needs to be confirmed by a user action.</li>
+    <li>You want to enable the user to create an object with a small number of fields (up to 8 fields).</li>
+</ul>
+
+Do not use the dialog if:
+<ul>
+    <li>You want to display a simple message. Use the message box instead.</li>
+    <li>You just want to confirm a successful action.</li>
+    <li>You do not want to interrupt the user.</li>
+    <li>You want to enable users to create an object with more than 8 fields. Use an object page instead.</li>
+</ul>
 
 ## Modal structure
 Modal consists of following elements:
@@ -25,10 +40,11 @@ Modal consists of following elements:
                     <li><code>.fd-modal__header</code>: Header
                         <ul>
                             <li><code>.fd-modal__title</code>: Modal title</li>
-                            <li><code>.fd-modal__close</code>: Modal close button</li> 
                         </ul>
                     </li>
+                    <li><code>.fd-modal__subheader</code>: Subheader</li>
                     <li><code>.fd-modal__body</code>: Modal content</li>
+                    <li><code>.fd-modal__loader</code>: Modal loader</li>
                     <li><code>.fd-modal__footer</code>: Modal footer</li>
                 </ul>
             </li>
@@ -36,20 +52,44 @@ Modal consists of following elements:
     </li>
 </ul>
 
+Modals header, subheader and footer elements are composed out of [Bar Component]({{site.baseurl}}/components/bar.html).
+CSS classes provided by Modal component are used to slightly override Bar behaviour in favour of Modal styling, but
+Modal headers and footer can be customized using Bar component features. 
+
 <br>
 
 {% capture modal-anatomy %}
-    <div class="fd-modal fd-modal--active" style="position: static; background-color: transparent;">
+    <div class="fd-modal fd-modal--active">
         <div class="fd-modal__content">
-            <header class="fd-modal__header">
-                <h3 class="fd-modal__title">Modal title</h3>
-                <button class="fd-button--light fd-modal__close sap-icon--decline sap-icon--l" aria-label="close"></button>
+            <header class="fd-modal__header fd-bar fd-bar--header-with-subheader">
+                <div class="fd-bar__left">
+                    <div class="fd-bar__element">
+                        Modal header
+                    </div>
+                    <div class="fd-bar__element fd-modal__title">
+                        Modal title
+                    </div>
+                </div>
             </header>
+            <div class="fd-modal__subheader fd-bar fd-bar--subheader">
+                <div class="fd-bar__left">
+                    <div class="fd-bar__element">
+                        Modal subheader
+                    </div>
+                </div>
+            </div>
             <div class="fd-modal__body">
                 Modal body
+                <div class="fd-modal__loader">
+                    Modal loader
+                </div>
             </div>
-            <footer class="fd-modal__footer">
-                Modal footer
+            <footer class="fd-modal__footer fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        Modal footer
+                    </div>
+                </div>
             </footer>
         </div>
     </div>
@@ -59,189 +99,259 @@ Modal consists of following elements:
 
 
 ## Modal size modifiers
-Modifying header/footer horizontal paddings (default 1rem):
+Header subheader and footer by default uses padding values determined by [Bar Component]({{site.baseurl}}/components/bar.html). By default modal body has no horizontal paddings.
+Horizontal paddings should be applied depending on dialog width.
+<br>
+Modifying header/body/footer horizontal paddings:
 <ul>
-    <li><code>.fd-modal__content--s</code>: 1rem</li>
-    <li><code>.fd-modal__content--m</code>, <code>.fd-modal__content--l</code>: 2rem</li>
-    <li><code>.fd-modal__content--xl</code>, <code>.fd-modal__content--xxl</code>: 3rem</li>
+    <li><code>.fd-modal__content--s</code>: 1rem - max-width: 599px</li>
+    <li><code>.fd-modal__content--m</code>: 2rem - min-width: 600px and max-width: 1023px</li>
+    <li><code>.fd-modal__content--l</code>: 2rem - min-width: 1024px and max-width: 1439px</li>
+    <li><code>.fd-modal__content--xl</code>: 3rem - min-width: 1440px</li>
 </ul>
 
-Compact mode - modifying header/footer height (default 2.75rem):
+By default modal on mobile devices takes full height and width of the screen. This behaviour can be changed using following class, which will add additional spacing around modal.
 <ul>
-    <li><code>.fd-modal__content--compact</code>: 2.5rem</li>
+    <li><code>.fd-modal__content--no-mobile-stretch</code>: margin: 6% 10%</li>
 </ul>
 
-No stretch on mobile devices - adds margins around modal content (by default modal on mobile devices takes full height and width of the screen):
+By default modal body has horizontal padding. This behavior might be changed using 
 <ul>
-    <li><code>.fd-modal__content--no-mobile-stretch</code> margin: 6% 10%</li>
+    <li><code>.fd-modal__body--no-vertical-padding</code>: padding-top: 0, padding-bottom: 0</li>
 </ul>
 
 
 ### Modal header/footer horizontal paddings
 {% capture modal-size %}
-    <div class="fd-modal fd-modal--active" style="position: static; background-color: transparent;">
-        <div class="fd-modal__content fd-modal__content--s">
-            <header class="fd-modal__header">
-                <h3 class="fd-modal__title">Lorem ipsum</h3>
-                <button class="fd-button--light fd-modal__close sap-icon--decline sap-icon--l" aria-label="close"></button>
-            </header>
-            <div class="fd-modal__body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+    <div class="fd-modal__content fd-modal__content--s">
+        <header class="fd-modal__header fd-bar">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element fd-modal__title">
+                    Lorem ipsum
+                </div>
             </div>
-            <footer class="fd-modal__footer">
-                <button class="fd-button--emphasized">Yes</button>
-                <button class="fd-button--light">No</button>
-            </footer>
+        </header>
+        <div class="fd-modal__body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         </div>
-    </div>
-    
-    <div class="fd-modal fd-modal--active" style="position: static; background-color: transparent;">
-            <div class="fd-modal__content fd-modal__content--m">
-                <header class="fd-modal__header">
-                    <h3 class="fd-modal__title">Lorem ipsum</h3>
-                    <button class="fd-button--light fd-modal__close sap-icon--decline sap-icon--l" aria-label="close"></button>
-                </header>
-                <div class="fd-modal__body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        <footer class="fd-modal__footer fd-bar fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
                 </div>
-                <footer class="fd-modal__footer">
-                    <button class="fd-button--emphasized">Yes</button>
-                    <button class="fd-button--light">No</button>
-                </footer>
-            </div>
-    </div>
-    
-    <div class="fd-modal fd-modal--active" style="position: static; background-color: transparent;">
-            <div class="fd-modal__content fd-modal__content--xl">
-                <header class="fd-modal__header">
-                    <h3 class="fd-modal__title">Lorem ipsum</h3>
-                    <button class="fd-button--light fd-modal__close sap-icon--decline sap-icon--l" aria-label="close"></button>
-                </header>
-                <div class="fd-modal__body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
                 </div>
-                <footer class="fd-modal__footer">
-                    <button class="fd-button--emphasized">Yes</button>
-                    <button class="fd-button--light">No</button>
-                </footer>
             </div>
+        </footer>
     </div>
-        
+    <div class="fd-modal__content fd-modal__content--m">
+        <header class="fd-modal__header fd-bar">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element fd-modal__title">
+                    Lorem ipsum
+                </div>
+            </div>
+        </header>
+        <div class="fd-modal__body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        </div>
+        <footer class="fd-modal__footer fd-bar fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </div> 
+    <div class="fd-modal__content fd-modal__content--xl">
+        <header class="fd-modal__header fd-bar">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element fd-modal__title">
+                    Lorem ipsum
+                </div>
+            </div>
+        </header>
+        <div class="fd-modal__body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        </div>
+        <footer class="fd-modal__footer fd-bar fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </div>
 {% endcapture %}
 {% include display-component.html component=modal-size %}
 
-### Modal compact
-{% capture modal-size-compact %}
-    <div class="fd-modal fd-modal--active" style="position: static; background-color: transparent;">
-        <div class="fd-modal__content fd-modal__content--compact">
-            <header class="fd-modal__header">
-                <h3 class="fd-modal__title">Lorem ipsum</h3>
-                <button class="fd-button--light fd-modal__close sap-icon--decline sap-icon--l" aria-label="close"></button>
+## Modal resizable mode
+Modal can be opened in resizable mode using <code>.fd-modal__content--resizable</code>, enabling to horizontally and vertically resize modals dialog (only for <b>desktop</b>).
+{% capture modal-resize %}
+    <div class="fd-modal fd-modal--active">
+        <div class="fd-modal__content fd-modal__content--resizable fd-modal__content--s">
+            <header class="fd-modal__header fd-bar">
+                <div class="fd-bar__left">
+                    <div class="fd-bar__element fd-modal__title">
+                        Lorem ipsum
+                    </div>
+                </div>
             </header>
             <div class="fd-modal__body">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             </div>
-            <footer class="fd-modal__footer">
-                <button class="fd-button--emphasized">Yes</button>
-                <button class="fd-button--light">No</button>
-            </footer>
-        </div>
-    </div>
-{% endcapture %}
-{% include display-component.html component=modal-size-compact %}
-
-## Modal resizable mode
-Modal can be opened in resizable mode, enabling to horizontally and vertically resize modals dialog (only for <b>desktop</b>).
-
-{% capture modal-resize %}
-    <div class="fd-modal fd-modal--active" style="position: static; background-color: transparent;">
-        <div class="fd-modal__content fd-modal__content--resizable">
-            <header class="fd-modal__header">
-                <h3 class="fd-modal__title">Lorem ipsum</h3>
-                <button class="fd-button--light fd-modal__close sap-icon--decline sap-icon--l" aria-label="close"></button>
-            </header>
-            <div class="fd-modal__body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-            <footer class="fd-modal__footer">
-                <button class="fd-button--emphasized">Yes</button>
-                <button class="fd-button--light">No</button>
+            <footer class="fd-modal__footer fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+                    </div>
+                </div>
             </footer>
         </div>
     </div>
 {% endcapture %}
 {% include display-component.html component=modal-resize %}
 
-
-
-## Examples
-## Informational Modal
-This is used to present information to the user but the Alert Component doesn’t fit all the information.
-
-{% capture modal-information %}
-    <div class="fd-modal fd-modal--active" style="position: static; background-color: transparent;">
-        <div class="fd-modal__content" role="document">
-            <header class="fd-modal__header">
-                <h3 class="fd-modal__title">Product Added</h3>
-                <button class="fd-button--light fd-modal__close sap-icon--decline sap-icon--l" aria-label="close"></button>
+## Modal draggable mode
+Modal can be opened in draggable mode, enabling drag dialog over browser view-port area (only for <b>desktop</b>).
+Draggable mode can be visualized using following classes:
+<ul>
+    <li><code>.fd-modal__content--draggable-grab</code>: element can be dragged</li>
+    <li><code>.fd-modal__content--draggable-grabbing</code>: element is being dragged</li>
+</ul>
+{% capture modal-drag %}
+    <div class="fd-modal fd-modal--active">
+        <div class="fd-modal__content fd-modal__content--draggable-grab fd-modal__content--s">
+            <header class="fd-modal__header fd-bar">
+                <div class="fd-bar__left">
+                    <div class="fd-bar__element fd-modal__title">
+                        Lorem ipsum
+                    </div>
+                </div>
             </header>
             <div class="fd-modal__body">
-                <b>Thew new product have been added to your catalog.</b><br/>
-                <br/>
-                Automatic Product ID: <b>PD-3465334</b><br/>
-                <br/>
-                Expiration date: <b>13/03/2018</b><br/>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             </div>
+            <footer class="fd-modal__footer fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+{% endcapture %}
+{% include display-component.html component=modal-drag %}
+
+## Examples
+## Select Dialog
+{% capture modal-information %}
+    <div class="fd-modal fd-modal--active">
+        <div class="fd-modal__content">
+            <header class="fd-modal__header fd-bar fd-bar--header-with-subheader">
+                <div class="fd-bar__left">
+                    <div class="fd-bar__element fd-modal__title">
+                        Select dialog
+                    </div>
+                </div>
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-input-group__button fd-button--light fd-button--compact">Clear</button>
+                    </div>
+                </div>
+            </header>
+            <div class="fd-modal__subheader fd-bar fd-bar--subheader">
+                <div class="fd-bar__middle">
+                    <div class="fd-input-group">
+                        <input class="fd-input fd-input-group__input fd-input--compact" type="text" placeholder="Search...">
+                        <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
+                            <button class="fd-input-group__button fd-button--icon fd-button--light fd-button--compact sap-icon--search"></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="fd-modal__body fd-modal__body--no-vertical-padding">
+                <ul class="fd-list fd-list--compact">
+                  <li class="fd-list__item">
+                      <span class="fd-list__title">List item 1</span>
+                  </li>
+                  <li class="fd-list__item">
+                      <span class="fd-list__title">List item 2</span>
+                  </li>
+                  <li class="fd-list__item is-active">
+                      <span class="fd-list__title">List item 3</span>
+                  </li>
+                  <li class="fd-list__item is-active">
+                      <span class="fd-list__title">List item 4</span>
+                  </li>
+                  <li class="fd-list__item">
+                      <span class="fd-list__title">List item 5</span>
+                  </li>
+                  <li class="fd-list__item">
+                      <span class="fd-list__title">List item 6</span>
+                  </li>
+                  <li class="fd-list__footer">
+                      2 items selected
+                  </li>
+                </ul>
+            </div>
+            <footer class="fd-modal__footer fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--emphasized fd-button--compact">Select</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
 {% endcapture %}
 
 {% include display-component.html component=modal-information %}
 
-## Confirmation Modal
-This is used to confirm with the user before continuing with a destructive or complex action. In this case, the modal has action buttons at the bottom.
-
-{% capture modal-confirmation %}
-    <div class="fd-modal fd-modal--active" style="position: static; background-color: transparent;">
-        <div class="fd-modal__content" role="document">
-            <header class="fd-modal__header">
-            <h3 class="fd-modal__title">Delete</h3>
-                <button class="fd-button--light fd-modal__close sap-icon--decline sap-icon--l" aria-label="close"></button>
+## Loading Modal
+{% capture modal-loading %}
+    <div class="fd-modal fd-modal--active">
+        <div class="fd-modal__content fd-modal__content--s">
+            <header class="fd-modal__header fd-bar">
+                <div class="fd-bar__left">
+                    <div class="fd-bar__element fd-modal__title">
+                        Loading Data...
+                    </div>
+                </div>
             </header>
             <div class="fd-modal__body">
-                Do you want to delete item <b>X</b>?
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                <div class="fd-modal__loader fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
+                    <div class="fd-busy-indicator--circle-0"></div>
+                    <div class="fd-busy-indicator--circle-1"></div>
+                    <div class="fd-busy-indicator--circle-2"></div>
+                </div>
             </div>
-            <footer class="fd-modal__footer">
-                <button class="fd-button--emphasized">Yes</button>
-                <button class="fd-button--light">No</button>
+            <footer class="fd-modal__footer fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+                    </div>
+                </div>
             </footer>
         </div>
     </div>
 {% endcapture %}
-{% include display-component.html component=modal-confirmation %}
-
-## Form Modal
-This is used for short forms in order to collect information from the user.
-
-{% capture modal-form %}
-    <div class="fd-modal fd-modal--active" style="position: static; background-color: transparent;">
-        <div class="fd-modal__content" role="document">
-            <header class="fd-modal__header">
-            <h3 class="fd-modal__title">Invite user</h3>
-                <button class="fd-button--light fd-modal__close sap-icon--decline sap-icon--l" aria-label="close"></button>
-            </header>
-            <div class="fd-modal__body">
-                <div class="fd-form-item">
-                    <label class="fd-form-label" aria-required="true" for="input-2">Email</label>
-                    <input class="fd-input" type="text" id="input-2">
-                </div>            
-            </div>
-            <footer class="fd-modal__footer">
-                <button class="fd-button--emphasized">Invite</button>
-                <button class="fd-button--light">Cancel</button>
-            </footer>
-        </div>
-    </div>
-{% endcapture %}
-
-{% include display-component.html component=modal-form %}
+{% include display-component.html component=modal-loading %}
