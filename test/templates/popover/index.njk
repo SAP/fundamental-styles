@@ -33,7 +33,7 @@
 {%- set _id7 = utils.id() %}
 
 {%- macro sample_control(properties={}) -%}
-  <button class="fd-popover__control sample-control" aria-controls="{{ properties.id }}" aria-expanded="false" aria-haspopup="true"{{ " disabled" if state.disabled }}{{ aria | aria }}>
+  <button class="sample-control" aria-controls="{{ properties.id }}" aria-expanded="false" aria-haspopup="true"{{ " disabled" if state.disabled }}{{ aria | aria }}>
     Click Here
   </button>
 {%- endmacro %}
