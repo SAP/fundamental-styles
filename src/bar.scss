@@ -88,6 +88,8 @@ $block: #{$fd-namespace}-bar;
 
   &--header {
     @include bar-design();
+
+    z-index: 1;
   }
 
   &--subheader {
@@ -100,7 +102,6 @@ $block: #{$fd-namespace}-bar;
     @include bar-design($shadow: none);
 
     position: relative;
-    z-index: 2;
   }
 
   &--footer {
