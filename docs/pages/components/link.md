@@ -9,7 +9,7 @@ folder: components
 summary:
 ---
 
-Used when extra emphasis is needed especially when a link needs to standout from the surrounding text.
+The `fd-link` component supports the use of modifiers, as well as the `is-visited` flag, which allows for optimal customization of your hyperlink. There are currently no restrictions as to which content can be included in this component.
 {: .docs-intro}
 
 <br>
