@@ -182,6 +182,7 @@
 }
 
 @mixin fd-button-reset {
+  background-image: none;
   display: inline-block;
   margin: 0;
   padding: 0;
