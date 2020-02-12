@@ -19,6 +19,9 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+    //modal
+    draggableModal();
+
     //dropdown
     var els = document.querySelectorAll("[aria-controls]");
     for (var i = 0; i < els.length; i++) {
@@ -83,6 +86,7 @@ $(document).ready(function () {
                     group.classList.remove('is-hidden');
                 }
             }
+
             var isPressed;
             //handle the primary trigger
             if (isTree || isTreeItem) {
@@ -116,6 +120,7 @@ $(document).ready(function () {
         }
         return block;
     }
+
     //get all tablists
     var tablists = document.querySelectorAll('[role="tablist"]');
     //handle each tablist
@@ -209,7 +214,7 @@ $(document).ready(function () {
 
     const triStateCheckboxI8 = document.getElementById('Ai4ez6191');
     if (triStateCheckboxI8) {
-      triStateCheckboxI8.indeterminate = true;
+        triStateCheckboxI8.indeterminate = true;
     }
 
     // display responsive component controls
@@ -251,13 +256,38 @@ function stepInputValue(inputId, stepDirection) {
     let inputRef = document.getElementById(inputId);
 
     if (inputRef) {
-        if(stepDirection === "up") {
+        if (stepDirection === "up") {
             ++inputRef.value;
         } else if (stepDirection === "down") {
             --inputRef.value;
         }
     } else {
         console.warn("No element with id='" + inputId + "' found");
+    }
+}
+
+function toggleModal(modalId, show) {
+    let modal = document.getElementById(modalId);
+    if (show) {
+        modal.classList.add("fd-modal--active");
+    } else {
+        modal.classList.remove("fd-modal--active");
+    }
+}
+
+function draggableModal() {
+    let draggableModals = document.getElementsByClassName('fd-modal__content--draggable-grab');
+
+    for (let modal of draggableModals) {
+        let modalHeader = modal.getElementsByClassName('fd-modal__header')[0];
+        if (modalHeader) {
+            modalHeader.onmousedown = function () {
+                modal.classList.add('fd-modal__content--draggable-grabbing');
+            };
+            modalHeader.onmouseup = function () {
+                modal.classList.remove('fd-modal__content--draggable-grabbing');
+            };
+        }
     }
 }
 

@@ -59,7 +59,7 @@ Modal headers and footer can be customized using Bar component features.
 <br>
 
 {% capture modal-anatomy %}
-    <div class="fd-modal fd-modal--active">
+    <div class="fd-modal-docs-static fd-modal fd-modal--active">
         <div class="fd-modal__content">
             <header class="fd-modal__header fd-bar fd-bar--header-with-subheader">
                 <div class="fd-bar__left">
@@ -123,7 +123,7 @@ By default modal body has horizontal padding. This behavior might be changed usi
 
 ### Modal header/footer horizontal paddings
 {% capture modal-size %}
-    <div class="fd-modal__content fd-modal__content--s">
+    <div class="fd-modal-docs-static fd-modal__content fd-modal__content--s">
         <header class="fd-modal__header fd-bar">
             <div class="fd-bar__left">
                 <div class="fd-bar__element fd-modal__title">
@@ -145,7 +145,7 @@ By default modal body has horizontal padding. This behavior might be changed usi
             </div>
         </footer>
     </div>
-    <div class="fd-modal__content fd-modal__content--m">
+    <div class="fd-modal-docs-static fd-modal__content fd-modal__content--m">
         <header class="fd-modal__header fd-bar">
             <div class="fd-bar__left">
                 <div class="fd-bar__element fd-modal__title">
@@ -167,7 +167,7 @@ By default modal body has horizontal padding. This behavior might be changed usi
             </div>
         </footer>
     </div> 
-    <div class="fd-modal__content fd-modal__content--xl">
+    <div class="fd-modal-docs-static fd-modal__content fd-modal__content--xl">
         <header class="fd-modal__header fd-bar">
             <div class="fd-bar__left">
                 <div class="fd-bar__element fd-modal__title">
@@ -195,7 +195,7 @@ By default modal body has horizontal padding. This behavior might be changed usi
 ## Modal resizable mode
 Modal can be opened in resizable mode using <code>.fd-modal__content--resizable</code>, enabling to horizontally and vertically resize modals dialog (only for <b>desktop</b>).
 {% capture modal-resize %}
-    <div class="fd-modal fd-modal--active">
+    <div class="fd-modal-docs-static fd-modal fd-modal--active">
         <div class="fd-modal__content fd-modal__content--resizable fd-modal__content--s">
             <header class="fd-modal__header fd-bar">
                 <div class="fd-bar__left">
@@ -230,7 +230,7 @@ Draggable mode can be visualized using following classes:
     <li><code>.fd-modal__content--draggable-grabbing</code>: element is being dragged</li>
 </ul>
 {% capture modal-drag %}
-    <div class="fd-modal fd-modal--active">
+    <div class="fd-modal-docs-static fd-modal fd-modal--active">
         <div class="fd-modal__content fd-modal__content--draggable-grab fd-modal__content--s">
             <header class="fd-modal__header fd-bar">
                 <div class="fd-bar__left">
@@ -259,8 +259,9 @@ Draggable mode can be visualized using following classes:
 
 ## Examples
 ## Select Dialog
-{% capture modal-information %}
-    <div class="fd-modal fd-modal--active">
+{% capture modal-select %}
+    <button class="fd-button--primary" onclick="toggleModal('select-dialog-example', true)">Open example</button>
+    <div class="fd-modal" id="select-dialog-example">
         <div class="fd-modal__content">
             <header class="fd-modal__header fd-bar fd-bar--header-with-subheader">
                 <div class="fd-bar__left">
@@ -315,7 +316,7 @@ Draggable mode can be visualized using following classes:
                         <button class="fd-button fd-button--emphasized fd-button--compact">Select</button>
                     </div>
                     <div class="fd-bar__element">
-                        <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+                        <button class="fd-button fd-button--light fd-button--compact" onclick="toggleModal('select-dialog-example', false)">Cancel</button>
                     </div>
                 </div>
             </footer>
@@ -323,11 +324,12 @@ Draggable mode can be visualized using following classes:
     </div>
 {% endcapture %}
 
-{% include display-component.html component=modal-information %}
+{% include display-component.html component=modal-select %}
 
 ## Loading Modal
 {% capture modal-loading %}
-    <div class="fd-modal fd-modal--active">
+    <button class="fd-button--primary" onclick="toggleModal('loading-dialog-example', true)">Open example</button>
+    <div class="fd-modal" id="loading-dialog-example">
         <div class="fd-modal__content fd-modal__content--s">
             <header class="fd-modal__header fd-bar">
                 <div class="fd-bar__left">
@@ -337,7 +339,7 @@ Draggable mode can be visualized using following classes:
                 </div>
             </header>
             <div class="fd-modal__body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                <strong>Status:</strong> Connecting 127.0.0.1
                 <div class="fd-modal__loader fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
                     <div class="fd-busy-indicator--circle-0"></div>
                     <div class="fd-busy-indicator--circle-1"></div>
@@ -347,7 +349,7 @@ Draggable mode can be visualized using following classes:
             <footer class="fd-modal__footer fd-bar fd-bar--footer">
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
-                        <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+                        <button class="fd-button fd-button--light fd-button--compact" onclick="toggleModal('loading-dialog-example', false)">Cancel</button>
                     </div>
                 </div>
             </footer>

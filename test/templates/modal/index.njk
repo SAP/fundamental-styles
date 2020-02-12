@@ -1,18 +1,37 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "./component.njk" import modal, modal_toggle_setup %}
+{% from "./component.njk" import modal %}
+
 
 
 {% block content %}
-    {{ modal_toggle_setup() }}
+
+    <style>
+        .fd-modal {
+            position: static;
+            background-color: transparent;
+        }
+
+        .fd-modal__content {
+            position: static;
+            transform: translate(0%, 0%);
+            width: 30rem;
+            margin: auto;
+        }
+
+        .fd-modal__content:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    </style>
+
+    {% set body_content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." %}
 
     <h1>Modal in default mode</h1>
     {% set example %}
 
         {{ modal(
             properties={
-                header: "Modal Header",
-                body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                body: body_content,
                 actions: [
                     { label: 'Confirm'},
                     { type: 'light', label: 'Cancel' }
@@ -25,18 +44,16 @@
 
     <br><br>
 
-    <h1>Modal in compact mode</h1>
+    <h1>Modal with loader</h1>
     {% set example %}
 
         {{ modal(
             properties={
                 modal_content: {
-                    is_compact: true
+                    has_loader: true
                 },
-                header: "Modal Header",
-                body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                body: body_content,
                 actions: [
-                    { label: 'Confirm'},
                     { type: 'light', label: 'Cancel' }
                 ]
             }
@@ -44,18 +61,34 @@
 
     {% endset %}
     {{ format(example) }}
+
     <br><br>
 
-    <h1>Modal in resizable mode</h1>
     {% set example %}
+
+        <h1>Modal in resizable mode</h1>
 
         {{ modal(
             properties={
                 modal_content: {
                     is_resizable: true
                 },
-                header: "Modal Header",
-                body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                body: body_content,
+                actions: [
+                    { label: 'Confirm'},
+                    { type: 'light', label: 'Cancel' }
+                ]
+            }
+        ) }}
+
+        <h1>Modal in draggable mode</h1>
+
+        {{ modal(
+            properties={
+                modal_content: {
+                    is_draggable: true
+                },
+                body: body_content,
                 actions: [
                     { label: 'Confirm'},
                     { type: 'light', label: 'Cancel' }
@@ -67,50 +100,39 @@
     {{ format(example) }}
     <br><br>
 
-    {% for size in ["s", "m", "l", "xl", "xxl"] %}
 
-        <h1>Modal size {{ size }}</h1>
-        {% set example %}
-
+    {% set example %}
+        {% for size in ["s", "m", "l", "xl"] %}
+            <h1>Modal size {{ size }}</h1>
             {{ modal(
                 properties={
                     modal_content: {
-                        modal_content_size: size
+                        modal_content_size: size,
+                        has_subheader: true
                     },
-                    header: "Modal Header",
-                    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    body: body_content,
                     actions: [
                         { label: 'Confirm'},
                         { type: 'light', label: 'Cancel' }
                     ]
                 }
             ) }}
+        {% endfor %}
 
-        {% endset %}
-        {{ format(example) }}
-
-        <br><br>
-    {% endfor %}
-
-    <h1>Toggleable modal</h1>
-    {% set example %}
-
+        <h1>Modal with no vertical paddings</h1>
         {{ modal(
             properties={
-                toggleable: true,
-                id: "toggleable-modal-example",
-                header: "Modal Header",
-                body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                modal_content: {
+                    has_no_vertical_paddings: true
+                },
+                body: body_content,
                 actions: [
                     { label: 'Confirm'},
                     { type: 'light', label: 'Cancel' }
                 ]
             }
         ) }}
-
     {% endset %}
     {{ format(example) }}
-
-    <br><br>
 
 {% endblock %}

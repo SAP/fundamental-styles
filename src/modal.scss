@@ -5,11 +5,11 @@
 
 /*!
   .fd-modal+(--active)
-    .fd-modal__content+(--s, --m, --l, --xl, --resizable, --draggable, --no-mobile-stretch)
+    .fd-modal__content+(--s, --m, --l, --xl, --resizable, --draggable-grab, --draggable-grabbing, --no-mobile-stretch)
       .fd-modal__header
         .fd-modal__title
       .fd-modal__subheader
-      .fd-modal__body+(--no-vertical-padding, --loader)
+      .fd-modal__body+(--no-vertical-padding)
       .fd-modal__laoder
       .fd-modal__footer
 */
@@ -155,6 +155,8 @@ $block: #{$fd-namespace}-modal;
   }
 
   &__loader {
+    @include fd-reset();
+
     text-align: center;
     margin-top: $fd-modal-loader-margin-y;
     margin-bottom: $fd-modal-loader-margin-y - $fd-modal-body-padding-y;

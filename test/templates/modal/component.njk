@@ -3,56 +3,55 @@ modal:
     properties={},
 -->
 
-{%- macro modal_toggle_setup()%}
-    <script>
-        function modal_toggle(baseId, show) {
-            const modal = document.getElementById(baseId);
-            if (show) {
-                modal.classList.add("fd-modal--active");
-            } else {
-                modal.classList.remove("fd-modal--active");
-            }
-        }
-    </script>
-{%- endmacro %}
-
 {% macro modal(properties={}) %}
-    <div class="fd-modal{% if not properties.toggleable %} fd-modal--active{% endif %}"
-            {% if not properties.toggleable %} style="position: static; background-color: transparent;"{% endif %}
-         id="{% if properties.id %}{{ properties.id }}{% else %}example-modal{% endif %}"
-         role="dialog">
+    <div class="fd-modal fd-modal--active"
+         id="{% if properties.id %}{{ properties.id }}{% else %}example-modal{% endif %}" role="dialog">
         <div role="document"
              class="fd-modal__content
              {% set modal = properties.modal_content %}
-             {% if modal.is_compact %}fd-modal__content--compact{% endif %}
              {% if modal.is_resizable %}fd-modal__content--resizable{% endif %}
+             {% if modal.is_draggable %}fd-modal__content--draggable-grab{% endif %}
              {% if modal.modal_content_size %}fd-modal__content--{{ modal.modal_content_size }}{% endif %}
         ">
 
-            <header class="fd-modal__header">
-                <h1 class="fd-modal__title">{{ properties.header }}</h1>
-                <button class="btn-playground fd-modal__close" {% if properties.toggleable %}onclick="modal_toggle('{{ properties.id }}', false)"{% endif %}>
-                </button>
+            <header class="fd-modal__header fd-bar {% if modal.has_subheader %}fd-bar--subheader{% endif %}">
+                <div class="fd-bar__left">
+                    <div class="fd-bar__element">
+                        <h1 class="fd-modal__title">
+                            Modal header
+                        </h1>
+                    </div>
+                </div>
             </header>
-
-            <div class="fd-modal__body">
-                <p>{{ properties.body }}</p>
+            {% if modal.has_subheader %}
+                <div class="fd-modal__subheader fd-bar fd-bar--subheader">
+                    <div class="fd-bar__left">
+                        <div class="fd-bar__element">
+                            Modal subheader
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+            <div class="fd-modal__body {% if modal.has_no_vertical_paddings %}fd-modal__body--no-vertical-padding{% endif %}">
+                {{ properties.body }}
+                {% if modal.has_loader %}
+                    <div class="fd-modal__loader fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
+                        Loader
+                    </div>
+                {% endif %}
             </div>
 
-            <footer class="fd-modal__footer">
-                {%- for action in properties.actions %}
-                    <button class="btn-playground">{{ action.label }}</button>
-                {%- endfor %}
+            <footer class="fd-modal__footer fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        {%- for action in properties.actions %}
+                            <button class="btn-playground">{{ action.label }}</button>
+                        {%- endfor %}
+                    </div>
+                </div>
             </footer>
 
         </div>
     </div>
-
-    {% if properties.toggleable %}
-        <button type="button"
-                onclick="modal_toggle('{{ properties.id }}', true)">
-            Open modal
-        </button>
-    {% endif %}
 
 {%- endmacro %}
