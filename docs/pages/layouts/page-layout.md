@@ -109,9 +109,7 @@ The left and right spacings of the Bar and the Content could be adjusted accordi
     <div class="fd-bar fd-bar--page-m_l fd-bar--subheader">
         <div class="fd-bar__middle">
             <div class="fd-bar__element fd-bar__element--full-width">
-                <div class="fd-form-item">
-                    <input class="fd-input fd-input--compact" type="text" id="input-1" placeholder="Field placeholder text">
-                </div>
+                <input class="fd-input fd-input--compact" type="text" id="input-1" placeholder="Field placeholder text">
             </div>
         </div>
     </div>
