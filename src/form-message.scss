@@ -9,30 +9,20 @@ $block: #{$fd-namespace}-form-message;
 
 .#{$block} {
   @include fd-reset();
+  @include fd-ellipsis();
 
-  z-index: 3;
-  clear: both;
-  height: auto;
-  width: fit-content;
+  padding: 0.5rem;
   min-width: 6rem;
   max-width: 22rem;
-  padding: 0.5rem;
-  margin-top: -0.25rem;
+  width: 100%;
   font-size: var(--sapFontSmallSize);
   font-weight: normal;
   line-height: normal;
   color: var(--sapTextColor);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border-radius: 0 !important;
   white-space: pre-line !important;
 
   @include fd-rtl() {
     right: 0;
-  }
-
-  &--compact {
-    margin-top: -0.1875rem;
   }
 
   &--error {
@@ -49,9 +39,5 @@ $block: #{$fd-namespace}-form-message;
 
   &--information {
     background-color: var(--sapInformationBackground);
-  }
-
-  & + .#{$fd-namespace}-input {
-    margin-top: 0;
   }
 }

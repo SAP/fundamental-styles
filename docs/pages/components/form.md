@@ -165,9 +165,13 @@ Along with Invalid and Warning, error messages should be displayed below the fie
 
 <div class="fd-form-item">
     <label class="fd-form-label" for="input-1">Valid input:</label>
-    <div class="fd-form-input-message-group fd-popover">
-        <input class="fd-input is-valid fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverB2" aria-expanded="false" aria-haspopup="true">
-        <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--success" aria-hidden="true" id="popoverB2">Success message</span>
+    <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
+        <div class="fd-popover__control" aria-controls="popoverB2" aria-expanded="false" aria-haspopup="true">
+            <input class="fd-input is-valid" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label">
+        </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB2">
+            <div class="fd-form-message fd-form-message--success">Success message</div>
+        </div>
     </div>
 </div>
 
@@ -175,9 +179,13 @@ Along with Invalid and Warning, error messages should be displayed below the fie
 
 <div class="fd-form-item">
     <label class="fd-form-label" for="input-1">Error input:</label>
-    <div class="fd-form-input-message-group fd-popover">
-        <input class="fd-input is-invalid fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverB3" aria-expanded="false" aria-haspopup="true">
-        <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--error" aria-hidden="true" id="popoverB3">Error message</span>
+    <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
+        <div class="fd-popover__control" aria-controls="popoverB3" aria-expanded="false" aria-haspopup="true">
+            <input class="fd-input is-invalid" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label">
+        </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB3">
+            <div class="fd-form-message fd-form-message--error" >Error message</div>
+        </div>
     </div>
 </div>
 
@@ -185,9 +193,13 @@ Along with Invalid and Warning, error messages should be displayed below the fie
 
 <div class="fd-form-item">
     <label class="fd-form-label" for="input-1">Warning input:</label>
-    <div class="fd-form-input-message-group fd-popover">
-        <input class="fd-input is-warning fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverB4" aria-expanded="false" aria-haspopup="true">
-        <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--warning" aria-hidden="true" id="popoverB4">Warning message</span>
+    <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
+        <div class="fd-popover__control" aria-controls="popoverB4" aria-expanded="false" aria-haspopup="true">
+            <input class="fd-input is-warning" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label">
+        </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB4">
+            <div class="fd-form-message fd-form-message--warning">Warning message</div>
+        </div>
     </div>
 </div>
 
@@ -195,9 +207,13 @@ Along with Invalid and Warning, error messages should be displayed below the fie
 
 <div class="fd-form-item">
     <label class="fd-form-label" for="input-1">Information input:</label>
-    <div class="fd-form-input-message-group fd-popover">
-        <input class="fd-input is-information fd-popover__control" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverB5" aria-expanded="false" aria-haspopup="true">
-        <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--information" aria-hidden="true" id="popoverB5">Information message</span>
+    <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
+        <div class="fd-popover__control" aria-controls="popoverB5" aria-expanded="false" aria-haspopup="true">
+            <input class="fd-input fd-input--compact is-information" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label">
+        </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB5">
+            <div class="fd-form-message fd-form-message--information">Information message</div>
+        </div>
     </div>
 </div>
 
