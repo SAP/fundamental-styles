@@ -234,3 +234,11 @@ body {
   margin: 0;
   border: 0;
 }
+
+.bar-popover-playground {
+  margin: 0;
+  padding: 0;
+  color: black;
+  background-color: blanchedalmond;
+  height: 3rem;
+}
