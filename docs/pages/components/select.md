@@ -8,9 +8,9 @@ permalink: components/select.html
 folder: components
 ---
 
-The select control (also known as a dropdown) is commonly used to enable users, to select an item from a predefined list. 
-It should be used, when there is less than 12 items to choose. Otherwise  <a href="/patterns/combobox-input.html">
-Combobox Input</a> should be used.
+The select component is commonly used to enable users to select an item from a predefined list.
+It should be used when there are less than 12 items to choose from. 
+For lists that require more than 12 options, the <a href="/patterns/combobox-input.html">Combobox Input</a> should be used.
 {: .docs-intro}
 
 ## Sizes
@@ -87,7 +87,7 @@ Combobox Input</a> should be used.
 {% include display-component.html component=select-sizes %}
 
 ## Two Columns
-Second column can be used, to add some general information about item, or shortcuts. 
+The `Select` component can be customized by adding additional information in additional columns.
 
 {% capture two-col %}
 <label class="fd-form-label">
@@ -213,7 +213,7 @@ Second column can be used, to add some general information about item, or shortc
 
 
 ## Select with Items Grouping
-Item group headers can be used, to categorize certain types of elements.
+In cases where the list items need to be categorized into groups, it is possible to add headers for each category.
 
 {% capture select-group %}
 <div class="fd-popover">
@@ -264,8 +264,8 @@ Item group headers can be used, to categorize certain types of elements.
 {% include display-component.html component=select-group %}
 
 ## Text Wrapping
-By default text is wrapped, to prevent from wrapping, there is a need to use `--no-wrap` modifier for 
-`fd-list__title`, or `fd-list__secondary` element.
+In the `Select` component, the text is wrapped by default. In order to prevent the text from wrapping, 
+the `--no-wrap` modifier can be added to the `fd-list__title`, or `fd-list__secondary` elements.
 
 {% capture select-wrap %}
 <label class="fd-form-label">
@@ -348,8 +348,8 @@ By default text is wrapped, to prevent from wrapping, there is a need to use `--
 
 
 ## Match Select Popover Body Size
-By default popover body takes as much width as it needs, of course with some limits. In general it's not dependent on
-control element. There is way to change it, by adding `fd-popover__body--dropdown-fill` class to `fd-popover__body`.
+The default size for the popover body is often longer than the text length. 
+The length can be adjusted to match the text length by adding the `fd-popover__body--dropdown-fill` class to `fd-popover__body`.
 {% capture select-fill %}
 <label class="fd-form-label">
     Fill Control Element
@@ -359,7 +359,7 @@ control element. There is way to change it, by adding `fd-popover__body--dropdow
   <div class="fd-popover__control">
      <div class="fd-select">
          <div class="fd-select__control" tabindex="0" aria-controls="h0GTKE325" aria-expanded="false" aria-haspopup="true">
-             Select Title Much Longer Than Usually
+             Much Longer than Usual
              <button class="fd-button fd-button--light sap-icon--slim-arrow-down fd-select__button"></button>
          </div>
       </div>
@@ -391,8 +391,8 @@ control element. There is way to change it, by adding `fd-popover__body--dropdow
 
 
 ## Disabled State
-To add disabled state, it is mandatory to add `disabled` attribute to `fd-popover__control` and `fd-select__control` element
-Disabled state can be enabled also by adding `.is-disabled` class, or `aria-disabled="true"` 
+To disable a `Select` component, the disabled attribute needs to be added to the `fd-popover__control` and the `fd-select__control` elements.
+The disabled state can also be achieved by adding the `.is-disabled` class or the `aria-disabled="true"` attribute.
 
 {% capture disabled-select %}
 <div class="fd-popover">
@@ -411,8 +411,8 @@ Disabled state can be enabled also by adding `.is-disabled` class, or `aria-disa
 
 
 ## Readonly State
-To add readonly state, it is mandatory to add `readonly` attribute to `fd-select__control` element
-Readonly state can be enabled also by adding `.is-readonly` class, or `aria-readonly="true"` 
+To make the `Select` component read-only, the readonly attribute needs to be added to the `fd-select__control` element. 
+This can also be done by adding the `.is-readonly` class or the `aria-readonly="true"` attribute.
 
 {% capture disabled-select %}
 <div class="fd-popover">
@@ -429,10 +429,9 @@ Readonly state can be enabled also by adding `.is-readonly` class, or `aria-read
 {% include display-component.html component=disabled-select %}
 
 ## Semantic States
-To add `semantic` mode into `select`, it's mandatory to add one of `is-invalid` | `is-valid` | `is-warning` | `is-information` class into `fd-select__control` element
-To add message inside `body`, it's needed to put element with `fd-list__message` class.
-Also the `fd-list--has-message` modifier should be added to `ul` element.
-
+The semantic mode can be used to modify the  select component by adding one of the 
+`is-invalid` | `is-valid` | `is-warning` | `is-information` classes into the `fd-select__control` element.
+To add text in the body of the component, simply include your text in the `fd-list__message` under the `ul` element. 
 
 {% capture semantic-select %}
 <div class="fd-popover">
