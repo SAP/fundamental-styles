@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.0-rc.24"></a>
+# [0.6.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.6.0-rc.23...v0.6.0-rc.24) (2020-02-13)
+
+
+### Bug Fixes
+
+* add z-index:1 to the bar header ([#653](https://github.com/SAP/fundamental-styles/issues/653)) ([e2762ee](https://github.com/SAP/fundamental-styles/commit/e2762ee))
+
+
+
 <a name="0.6.0-rc.23"></a>
 # [0.6.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.6.0-rc.22...v0.6.0-rc.23) (2020-02-13)
 
