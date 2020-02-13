@@ -78,7 +78,7 @@ $block: #{$fd-namespace}-action-bar;
 
   &__header {
     flex-grow: 1;
-    width: 100%;
+    width: 85%;
 
     @include fd-reset();
     @include fd-action-bar-responsive();
@@ -130,7 +130,7 @@ $block: #{$fd-namespace}-action-bar;
     text-overflow: ellipsis;
     margin-top: 0.25rem;
     height: 1.25rem;
-    width: 85%;
+    width: 100%;
     vertical-align: middle;
   }
 
