@@ -52,15 +52,10 @@ $block: #{$fd-namespace}-popover;
 
   &__control {
     @include fd-reset();
+    @include action-cursor();
 
     position: relative;
     margin-left: 0;
-
-    .#{$fd-namespace}-input:last-child {
-      margin-bottom: 0;
-    }
-
-    @include action-cursor();
   }
 
   &__body {
