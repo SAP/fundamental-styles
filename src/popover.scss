@@ -52,11 +52,10 @@ $block: #{$fd-namespace}-popover;
 
   &__control {
     @include fd-reset();
+    @include action-cursor();
 
     position: relative;
     margin-left: 0;
-
-    @include action-cursor();
   }
 
   &__body {
