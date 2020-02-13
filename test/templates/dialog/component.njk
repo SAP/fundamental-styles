@@ -14,12 +14,12 @@ dialog:
              {% if dialog.dialog_content_size %}fd-dialog__content--{{ dialog.dialog_content_size }}{% endif %}
         ">
 
-            <header class="fd-dialog__header fd-bar {% if dialog.has_subheader %}fd-bar--subheader{% endif %}">
+            <header class="fd-dialog__header fd-bar {% if dialog.has_subheader %}fd-bar--subheader{% else %}fd-bar--header{% endif %}">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
-                        <h1 class="fd-dialog__title">
+                        <h3 class="fd-dialog__title">
                             Dialog header
-                        </h1>
+                        </h3>
                     </div>
                 </div>
             </header>
@@ -45,7 +45,7 @@ dialog:
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
                         {%- for action in properties.actions %}
-                            <button class="btn-playground">{{ action.label }}</button>
+                            <button class="btn-playground fd-dialog__decisive-button">{{ action.label }}</button>
                         {%- endfor %}
                     </div>
                 </div>

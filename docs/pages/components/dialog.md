@@ -45,7 +45,11 @@ Dialog consists of following elements:
                     <li><code>.fd-dialog__subheader</code>: Subheader</li>
                     <li><code>.fd-dialog__body</code>: Dialog content</li>
                     <li><code>.fd-dialog__loader</code>: Dialog loader</li>
-                    <li><code>.fd-dialog__footer</code>: Dialog footer</li>
+                    <li><code>.fd-dialog__footer</code>: Dialog footer
+                        <ul>
+                            <li><code>.fd-dialog__decisive-button</code>: Footer begin/end button </li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
         </ul>
@@ -66,8 +70,10 @@ Dialog headers and footer can be customized using Bar component features.
                     <div class="fd-bar__element">
                         Dialog header
                     </div>
-                    <div class="fd-bar__element fd-dialog__title">
-                        Dialog title
+                    <div class="fd-bar__element">
+                        <h3 class="fd-dialog__title">
+                            Dialog title
+                        </h3>
                     </div>
                 </div>
             </header>
@@ -88,6 +94,12 @@ Dialog headers and footer can be customized using Bar component features.
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
                         Dialog footer
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-dialog__decisive-button">Begin button</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-dialog__decisive-button">End button</button>
                     </div>
                 </div>
             </footer>
@@ -124,10 +136,12 @@ By default dialog body has horizontal padding. This behavior might be changed us
 ### Dialog header/footer horizontal paddings
 {% capture dialog-size %}
     <div class="fd-dialog-docs-static fd-dialog__content fd-dialog__content--s">
-        <header class="fd-dialog__header fd-bar">
+        <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
-                <div class="fd-bar__element fd-dialog__title">
-                    Lorem ipsum
+                <div class="fd-bar__element">
+                    <h3 class="fd-dialog__title">
+                        Lorem ipsum
+                    </h3>
                 </div>
             </div>
         </header>
@@ -137,19 +151,21 @@ By default dialog body has horizontal padding. This behavior might be changed us
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--light fd-button--compact">Cancel</button>
                 </div>
             </div>
         </footer>
     </div>
     <div class="fd-dialog-docs-static fd-dialog__content fd-dialog__content--m">
-        <header class="fd-dialog__header fd-bar">
+        <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
-                <div class="fd-bar__element fd-dialog__title">
-                    Lorem ipsum
+                <div class="fd-bar__element">
+                    <h3 class="fd-dialog__title">
+                        Lorem ipsum
+                    </h3>
                 </div>
             </div>
         </header>
@@ -159,19 +175,21 @@ By default dialog body has horizontal padding. This behavior might be changed us
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--light fd-button--compact">Cancel</button>
                 </div>
             </div>
         </footer>
     </div> 
     <div class="fd-dialog-docs-static fd-dialog__content fd-dialog__content--xl">
-        <header class="fd-dialog__header fd-bar">
+        <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
-                <div class="fd-bar__element fd-dialog__title">
-                    Lorem ipsum
+                <div class="fd-bar__element">
+                    <h3 class="fd-dialog__title">
+                        Lorem ipsum
+                    </h3>
                 </div>
             </div>
         </header>
@@ -181,10 +199,10 @@ By default dialog body has horizontal padding. This behavior might be changed us
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--light fd-button--compact">Cancel</button>
                 </div>
             </div>
         </footer>
@@ -197,10 +215,12 @@ Dialog can be opened in resizable mode using <code>.fd-dialog__content--resizabl
 {% capture dialog-resize %}
     <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
         <div class="fd-dialog__content fd-dialog__content--resizable fd-dialog__content--s">
-            <header class="fd-dialog__header fd-bar">
+            <header class="fd-dialog__header fd-bar fd-bar--header">
                 <div class="fd-bar__left">
-                    <div class="fd-bar__element fd-dialog__title">
-                        Lorem ipsum
+                    <div class="fd-bar__element">
+                        <h3 class="fd-dialog__title">
+                            Lorem ipsum
+                        </h3>
                     </div>
                 </div>
             </header>
@@ -210,10 +230,10 @@ Dialog can be opened in resizable mode using <code>.fd-dialog__content--resizabl
             <footer class="fd-dialog__footer fd-bar fd-bar--footer">
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
-                        <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+                        <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
                     </div>
                     <div class="fd-bar__element">
-                        <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+                        <button class="fd-dialog__decisive-button fd-button fd-button--light fd-button--compact">Cancel</button>
                     </div>
                 </div>
             </footer>
@@ -232,10 +252,12 @@ Draggable mode can be visualized using following classes:
 {% capture dialog-drag %}
     <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
         <div class="fd-dialog__content fd-dialog__content--draggable-grab fd-dialog__content--s">
-            <header class="fd-dialog__header fd-bar">
+            <header class="fd-dialog__header fd-bar fd-bar--header">
                 <div class="fd-bar__left">
-                    <div class="fd-bar__element fd-dialog__title">
-                        Lorem ipsum
+                    <div class="fd-bar__element">
+                        <h3 class="fd-dialog__title">
+                            Lorem ipsum
+                        </h3>
                     </div>
                 </div>
             </header>
@@ -245,10 +267,10 @@ Draggable mode can be visualized using following classes:
             <footer class="fd-dialog__footer fd-bar fd-bar--footer">
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
-                        <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+                        <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
                     </div>
                     <div class="fd-bar__element">
-                        <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+                        <button class="fd-dialog__decisive-button fd-button fd-button--light fd-button--compact">Cancel</button>
                     </div>
                 </div>
             </footer>
@@ -265,8 +287,10 @@ Draggable mode can be visualized using following classes:
         <div class="fd-dialog__content">
             <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
                 <div class="fd-bar__left">
-                    <div class="fd-bar__element fd-dialog__title">
-                        Select dialog
+                    <div class="fd-bar__element">
+                        <h3 class="fd-dialog__title">
+                            Select Dialog
+                        </h3>
                     </div>
                 </div>
                 <div class="fd-bar__right">
@@ -313,10 +337,10 @@ Draggable mode can be visualized using following classes:
             <footer class="fd-dialog__footer fd-bar fd-bar--footer">
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
-                        <button class="fd-button fd-button--emphasized fd-button--compact">Select</button>
+                        <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Select</button>
                     </div>
                     <div class="fd-bar__element">
-                        <button class="fd-button fd-button--light fd-button--compact" onclick="toggleDialog('select-dialog-example', false)">Cancel</button>
+                        <button class="fd-dialog__decisive-button fd-button fd-button--light fd-button--compact" onclick="toggleDialog('select-dialog-example', false)">Cancel</button>
                     </div>
                 </div>
             </footer>
@@ -331,10 +355,12 @@ Draggable mode can be visualized using following classes:
     <button class="fd-button--primary" onclick="toggleDialog('loading-dialog-example', true)">Open example</button>
     <div class="fd-dialog" id="loading-dialog-example">
         <div class="fd-dialog__content fd-dialog__content--s">
-            <header class="fd-dialog__header fd-bar">
+            <header class="fd-dialog__header fd-bar fd-bar--header">
                 <div class="fd-bar__left">
-                    <div class="fd-bar__element fd-dialog__title">
-                        Loading Data...
+                    <div class="fd-bar__element">
+                        <h1 class="fd-dialog__title">
+                            Loading Data...
+                        </h1>
                     </div>
                 </div>
             </header>
@@ -349,7 +375,7 @@ Draggable mode can be visualized using following classes:
             <footer class="fd-dialog__footer fd-bar fd-bar--footer">
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
-                        <button class="fd-button fd-button--light fd-button--compact" onclick="toggleDialog('loading-dialog-example', false)">Cancel</button>
+                        <button class="fd-dialog__decisive-button fd-button fd-button--light fd-button--compact" onclick="toggleDialog('loading-dialog-example', false)">Cancel</button>
                     </div>
                 </div>
             </footer>

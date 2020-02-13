@@ -12,6 +12,7 @@
       .fd-dialog__body+(--no-vertical-padding)
       .fd-dialog__laoder
       .fd-dialog__footer
+        .fd-dialog__decisive-button
 */
 $block: #{$fd-namespace}-dialog;
 
@@ -38,6 +39,9 @@ $block: #{$fd-namespace}-dialog;
 
   // LOADER
   $fd-dialog-loader-margin-y: 1.5rem;
+
+  // Footer
+  $fd-dialog-footer-button-min-width: 4rem;
 
   display: none;
   position: fixed;
@@ -97,7 +101,7 @@ $block: #{$fd-namespace}-dialog;
           position: absolute;
           cursor: nwse-resize;
           right: 0;
-          bottom: 0;
+          bottom: -1px;
         }
       }
     }
@@ -151,6 +155,12 @@ $block: #{$fd-namespace}-dialog;
     &--no-vertical-padding {
       padding-top: 0;
       padding-bottom: 0;
+    }
+  }
+
+  &__footer {
+    .#{$block}__decisive-button {
+      min-width: $fd-dialog-footer-button-min-width;
     }
   }
 
