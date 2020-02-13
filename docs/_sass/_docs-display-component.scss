@@ -87,15 +87,15 @@
         text-decoration: none;
     }
 
-    .fd-modal-docs-static {
-        &.fd-modal,
-        .fd-modal {
+    .fd-dialog-docs-static {
+        &.fd-dialog,
+        .fd-dialog {
             position: static;
             background-color: transparent;
         }
 
-        &.fd-modal__content,
-        .fd-modal__content{
+        &.fd-dialog__content,
+        .fd-dialog__content{
             position: static;
             transform: translate(0%, 0%);
             width: 30rem;

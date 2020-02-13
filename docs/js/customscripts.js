@@ -19,8 +19,8 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    //modal
-    draggableModal();
+    //dialog
+    draggableDialog();
 
     //dropdown
     var els = document.querySelectorAll("[aria-controls]");
@@ -266,26 +266,26 @@ function stepInputValue(inputId, stepDirection) {
     }
 }
 
-function toggleModal(modalId, show) {
-    let modal = document.getElementById(modalId);
+function toggleDialog(dialogId, show) {
+    let dialog = document.getElementById(dialogId);
     if (show) {
-        modal.classList.add("fd-modal--active");
+        dialog.classList.add("fd-dialog--active");
     } else {
-        modal.classList.remove("fd-modal--active");
+        dialog.classList.remove("fd-dialog--active");
     }
 }
 
-function draggableModal() {
-    let draggableModals = document.getElementsByClassName('fd-modal__content--draggable-grab');
+function draggableDialog() {
+    let draggableDialogs = document.getElementsByClassName('fd-dialog__content--draggable-grab');
 
-    for (let modal of draggableModals) {
-        let modalHeader = modal.getElementsByClassName('fd-modal__header')[0];
-        if (modalHeader) {
-            modalHeader.onmousedown = function () {
-                modal.classList.add('fd-modal__content--draggable-grabbing');
+    for (let dialog of draggableDialogs) {
+        let dialogHeader = dialog.getElementsByClassName('fd-dialog__header')[0];
+        if (dialogHeader) {
+            dialogHeader.onmousedown = function () {
+                dialog.classList.add('fd-dialog__content--draggable-grabbing');
             };
-            modalHeader.onmouseup = function () {
-                modal.classList.remove('fd-modal__content--draggable-grabbing');
+            dialogHeader.onmouseup = function () {
+                dialog.classList.remove('fd-dialog__content--draggable-grabbing');
             };
         }
     }

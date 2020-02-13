@@ -1,14 +1,14 @@
 {
-    "id": "modal",
-    "name": "Modal",
+    "id": "dialog",
+    "name": "Dialog",
     "type": "text",
     "properties": {
-        "id": "example-modal",
+        "id": "example-dialog",
         "toggleable": false,
-        "modal_content": {
+        "dialog_content": {
             "is_compact": false,
             "is_resizable": false,
-            "modal_content_size": ""
+            "dialog_content_size": ""
         },
         "header": "",
         "body": "",

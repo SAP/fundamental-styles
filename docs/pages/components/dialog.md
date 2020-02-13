@@ -1,15 +1,15 @@
 ---
-title: Modal
-id: modal
-keywords: modal, modals
+title: Dialog
+id: dialog
+keywords: dialog, dialogs, modal, modals
 sidebar: left-navigation-sidebar
 toc: false
-permalink: components/modal.html
+permalink: components/dialog.html
 folder: components
 summary:
 ---
 
-The modal is a container displayed in response to an action.
+The dialog is a container displayed in response to an action.
 {: .docs-intro}
 
 ## Introduction
@@ -30,64 +30,64 @@ Do not use the dialog if:
     <li>You want to enable users to create an object with more than 8 fields. Use an object page instead.</li>
 </ul>
 
-## Modal structure
-Modal consists of following elements:
+## Dialog structure
+Dialog consists of following elements:
 <ul>
-    <li><code>.fd-modal</code>: Wraps modal and displays it with <code>position: fixed</code>. Modal can be made visible by applying <code style="white-space:nowrap;">.fd-modal--active</code> class
+    <li><code>.fd-dialog</code>: Wraps dialog and displays it with <code>position: fixed</code>. Dialog can be made visible by applying <code style="white-space:nowrap;">.fd-dialog--active</code> class
         <ul>
-            <li><code>.fd-modal__content</code>: Modal dialog window
+            <li><code>.fd-dialog__content</code>: Dialog dialog window
                 <ul>
-                    <li><code>.fd-modal__header</code>: Header
+                    <li><code>.fd-dialog__header</code>: Header
                         <ul>
-                            <li><code>.fd-modal__title</code>: Modal title</li>
+                            <li><code>.fd-dialog__title</code>: Dialog title</li>
                         </ul>
                     </li>
-                    <li><code>.fd-modal__subheader</code>: Subheader</li>
-                    <li><code>.fd-modal__body</code>: Modal content</li>
-                    <li><code>.fd-modal__loader</code>: Modal loader</li>
-                    <li><code>.fd-modal__footer</code>: Modal footer</li>
+                    <li><code>.fd-dialog__subheader</code>: Subheader</li>
+                    <li><code>.fd-dialog__body</code>: Dialog content</li>
+                    <li><code>.fd-dialog__loader</code>: Dialog loader</li>
+                    <li><code>.fd-dialog__footer</code>: Dialog footer</li>
                 </ul>
             </li>
         </ul>
     </li>
 </ul>
 
-Modals header, subheader and footer elements are composed out of [Bar Component]({{site.baseurl}}/components/bar.html).
-CSS classes provided by Modal component are used to slightly override Bar behaviour in favour of Modal styling, but
-Modal headers and footer can be customized using Bar component features. 
+Dialogs header, subheader and footer elements are composed out of [Bar Component]({{site.baseurl}}/components/bar.html).
+CSS classes provided by Dialog component are used to slightly override Bar behaviour in favour of Dialog styling, but
+Dialog headers and footer can be customized using Bar component features. 
 
 <br>
 
-{% capture modal-anatomy %}
-    <div class="fd-modal-docs-static fd-modal fd-modal--active">
-        <div class="fd-modal__content">
-            <header class="fd-modal__header fd-bar fd-bar--header-with-subheader">
+{% capture dialog-anatomy %}
+    <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+        <div class="fd-dialog__content">
+            <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
-                        Modal header
+                        Dialog header
                     </div>
-                    <div class="fd-bar__element fd-modal__title">
-                        Modal title
+                    <div class="fd-bar__element fd-dialog__title">
+                        Dialog title
                     </div>
                 </div>
             </header>
-            <div class="fd-modal__subheader fd-bar fd-bar--subheader">
+            <div class="fd-dialog__subheader fd-bar fd-bar--subheader">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
-                        Modal subheader
+                        Dialog subheader
                     </div>
                 </div>
             </div>
-            <div class="fd-modal__body">
-                Modal body
-                <div class="fd-modal__loader">
-                    Modal loader
+            <div class="fd-dialog__body">
+                Dialog body
+                <div class="fd-dialog__loader">
+                    Dialog loader
                 </div>
             </div>
-            <footer class="fd-modal__footer fd-bar fd-bar--footer">
+            <footer class="fd-dialog__footer fd-bar fd-bar--footer">
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
-                        Modal footer
+                        Dialog footer
                     </div>
                 </div>
             </footer>
@@ -95,46 +95,46 @@ Modal headers and footer can be customized using Bar component features.
     </div>
 {% endcapture %}
 
-{% include display-component.html component=modal-anatomy %}
+{% include display-component.html component=dialog-anatomy %}
 
 
-## Modal size modifiers
-Header subheader and footer by default uses padding values determined by [Bar Component]({{site.baseurl}}/components/bar.html). By default modal body has no horizontal paddings.
+## Dialog size modifiers
+Header subheader and footer by default uses padding values determined by [Bar Component]({{site.baseurl}}/components/bar.html). By default dialog body has no horizontal paddings.
 Horizontal paddings should be applied depending on dialog width.
 <br>
 Modifying header/body/footer horizontal paddings:
 <ul>
-    <li><code>.fd-modal__content--s</code>: 1rem - max-width: 599px</li>
-    <li><code>.fd-modal__content--m</code>: 2rem - min-width: 600px and max-width: 1023px</li>
-    <li><code>.fd-modal__content--l</code>: 2rem - min-width: 1024px and max-width: 1439px</li>
-    <li><code>.fd-modal__content--xl</code>: 3rem - min-width: 1440px</li>
+    <li><code>.fd-dialog__content--s</code>: 1rem - max-width: 599px</li>
+    <li><code>.fd-dialog__content--m</code>: 2rem - min-width: 600px and max-width: 1023px</li>
+    <li><code>.fd-dialog__content--l</code>: 2rem - min-width: 1024px and max-width: 1439px</li>
+    <li><code>.fd-dialog__content--xl</code>: 3rem - min-width: 1440px</li>
 </ul>
 
-By default modal on mobile devices takes full height and width of the screen. This behaviour can be changed using following class, which will add additional spacing around modal.
+By default dialog on mobile devices takes full height and width of the screen. This behaviour can be changed using following class, which will add additional spacing around dialog.
 <ul>
-    <li><code>.fd-modal__content--no-mobile-stretch</code>: margin: 6% 10%</li>
+    <li><code>.fd-dialog__content--no-mobile-stretch</code>: margin: 6% 10%</li>
 </ul>
 
-By default modal body has horizontal padding. This behavior might be changed using 
+By default dialog body has horizontal padding. This behavior might be changed using 
 <ul>
-    <li><code>.fd-modal__body--no-vertical-padding</code>: padding-top: 0, padding-bottom: 0</li>
+    <li><code>.fd-dialog__body--no-vertical-padding</code>: padding-top: 0, padding-bottom: 0</li>
 </ul>
 
 
-### Modal header/footer horizontal paddings
-{% capture modal-size %}
-    <div class="fd-modal-docs-static fd-modal__content fd-modal__content--s">
-        <header class="fd-modal__header fd-bar">
+### Dialog header/footer horizontal paddings
+{% capture dialog-size %}
+    <div class="fd-dialog-docs-static fd-dialog__content fd-dialog__content--s">
+        <header class="fd-dialog__header fd-bar">
             <div class="fd-bar__left">
-                <div class="fd-bar__element fd-modal__title">
+                <div class="fd-bar__element fd-dialog__title">
                     Lorem ipsum
                 </div>
             </div>
         </header>
-        <div class="fd-modal__body">
+        <div class="fd-dialog__body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         </div>
-        <footer class="fd-modal__footer fd-bar fd-bar--footer">
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
@@ -145,18 +145,18 @@ By default modal body has horizontal padding. This behavior might be changed usi
             </div>
         </footer>
     </div>
-    <div class="fd-modal-docs-static fd-modal__content fd-modal__content--m">
-        <header class="fd-modal__header fd-bar">
+    <div class="fd-dialog-docs-static fd-dialog__content fd-dialog__content--m">
+        <header class="fd-dialog__header fd-bar">
             <div class="fd-bar__left">
-                <div class="fd-bar__element fd-modal__title">
+                <div class="fd-bar__element fd-dialog__title">
                     Lorem ipsum
                 </div>
             </div>
         </header>
-        <div class="fd-modal__body">
+        <div class="fd-dialog__body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         </div>
-        <footer class="fd-modal__footer fd-bar fd-bar--footer">
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
@@ -167,18 +167,18 @@ By default modal body has horizontal padding. This behavior might be changed usi
             </div>
         </footer>
     </div> 
-    <div class="fd-modal-docs-static fd-modal__content fd-modal__content--xl">
-        <header class="fd-modal__header fd-bar">
+    <div class="fd-dialog-docs-static fd-dialog__content fd-dialog__content--xl">
+        <header class="fd-dialog__header fd-bar">
             <div class="fd-bar__left">
-                <div class="fd-bar__element fd-modal__title">
+                <div class="fd-bar__element fd-dialog__title">
                     Lorem ipsum
                 </div>
             </div>
         </header>
-        <div class="fd-modal__body">
+        <div class="fd-dialog__body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         </div>
-        <footer class="fd-modal__footer fd-bar fd-bar--footer">
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
@@ -190,24 +190,24 @@ By default modal body has horizontal padding. This behavior might be changed usi
         </footer>
     </div>
 {% endcapture %}
-{% include display-component.html component=modal-size %}
+{% include display-component.html component=dialog-size %}
 
-## Modal resizable mode
-Modal can be opened in resizable mode using <code>.fd-modal__content--resizable</code>, enabling to horizontally and vertically resize modals dialog (only for <b>desktop</b>).
-{% capture modal-resize %}
-    <div class="fd-modal-docs-static fd-modal fd-modal--active">
-        <div class="fd-modal__content fd-modal__content--resizable fd-modal__content--s">
-            <header class="fd-modal__header fd-bar">
+## Dialog resizable mode
+Dialog can be opened in resizable mode using <code>.fd-dialog__content--resizable</code>, enabling to horizontally and vertically resize dialogs dialog (only for <b>desktop</b>).
+{% capture dialog-resize %}
+    <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+        <div class="fd-dialog__content fd-dialog__content--resizable fd-dialog__content--s">
+            <header class="fd-dialog__header fd-bar">
                 <div class="fd-bar__left">
-                    <div class="fd-bar__element fd-modal__title">
+                    <div class="fd-bar__element fd-dialog__title">
                         Lorem ipsum
                     </div>
                 </div>
             </header>
-            <div class="fd-modal__body">
+            <div class="fd-dialog__body">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             </div>
-            <footer class="fd-modal__footer fd-bar fd-bar--footer">
+            <footer class="fd-dialog__footer fd-bar fd-bar--footer">
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
                         <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
@@ -220,29 +220,29 @@ Modal can be opened in resizable mode using <code>.fd-modal__content--resizable<
         </div>
     </div>
 {% endcapture %}
-{% include display-component.html component=modal-resize %}
+{% include display-component.html component=dialog-resize %}
 
-## Modal draggable mode
-Modal can be opened in draggable mode, enabling drag dialog over browser view-port area (only for <b>desktop</b>).
+## Dialog draggable mode
+Dialog can be opened in draggable mode, enabling drag dialog over browser view-port area (only for <b>desktop</b>).
 Draggable mode can be visualized using following classes:
 <ul>
-    <li><code>.fd-modal__content--draggable-grab</code>: element can be dragged</li>
-    <li><code>.fd-modal__content--draggable-grabbing</code>: element is being dragged</li>
+    <li><code>.fd-dialog__content--draggable-grab</code>: element can be dragged</li>
+    <li><code>.fd-dialog__content--draggable-grabbing</code>: element is being dragged</li>
 </ul>
-{% capture modal-drag %}
-    <div class="fd-modal-docs-static fd-modal fd-modal--active">
-        <div class="fd-modal__content fd-modal__content--draggable-grab fd-modal__content--s">
-            <header class="fd-modal__header fd-bar">
+{% capture dialog-drag %}
+    <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+        <div class="fd-dialog__content fd-dialog__content--draggable-grab fd-dialog__content--s">
+            <header class="fd-dialog__header fd-bar">
                 <div class="fd-bar__left">
-                    <div class="fd-bar__element fd-modal__title">
+                    <div class="fd-bar__element fd-dialog__title">
                         Lorem ipsum
                     </div>
                 </div>
             </header>
-            <div class="fd-modal__body">
+            <div class="fd-dialog__body">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             </div>
-            <footer class="fd-modal__footer fd-bar fd-bar--footer">
+            <footer class="fd-dialog__footer fd-bar fd-bar--footer">
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
                         <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
@@ -255,17 +255,17 @@ Draggable mode can be visualized using following classes:
         </div>
     </div>
 {% endcapture %}
-{% include display-component.html component=modal-drag %}
+{% include display-component.html component=dialog-drag %}
 
 ## Examples
 ## Select Dialog
-{% capture modal-select %}
-    <button class="fd-button--primary" onclick="toggleModal('select-dialog-example', true)">Open example</button>
-    <div class="fd-modal" id="select-dialog-example">
-        <div class="fd-modal__content">
-            <header class="fd-modal__header fd-bar fd-bar--header-with-subheader">
+{% capture dialog-select %}
+    <button class="fd-button--primary" onclick="toggleDialog('select-dialog-example', true)">Open example</button>
+    <div class="fd-dialog" id="select-dialog-example">
+        <div class="fd-dialog__content">
+            <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
                 <div class="fd-bar__left">
-                    <div class="fd-bar__element fd-modal__title">
+                    <div class="fd-bar__element fd-dialog__title">
                         Select dialog
                     </div>
                 </div>
@@ -275,7 +275,7 @@ Draggable mode can be visualized using following classes:
                     </div>
                 </div>
             </header>
-            <div class="fd-modal__subheader fd-bar fd-bar--subheader">
+            <div class="fd-dialog__subheader fd-bar fd-bar--subheader">
                 <div class="fd-bar__middle">
                     <div class="fd-input-group">
                         <input class="fd-input fd-input-group__input fd-input--compact" type="text" placeholder="Search...">
@@ -285,7 +285,7 @@ Draggable mode can be visualized using following classes:
                     </div>
                 </div>
             </div>
-            <div class="fd-modal__body fd-modal__body--no-vertical-padding">
+            <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
                 <ul class="fd-list fd-list--compact">
                   <li class="fd-list__item">
                       <span class="fd-list__title">List item 1</span>
@@ -310,13 +310,13 @@ Draggable mode can be visualized using following classes:
                   </li>
                 </ul>
             </div>
-            <footer class="fd-modal__footer fd-bar fd-bar--footer">
+            <footer class="fd-dialog__footer fd-bar fd-bar--footer">
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
                         <button class="fd-button fd-button--emphasized fd-button--compact">Select</button>
                     </div>
                     <div class="fd-bar__element">
-                        <button class="fd-button fd-button--light fd-button--compact" onclick="toggleModal('select-dialog-example', false)">Cancel</button>
+                        <button class="fd-button fd-button--light fd-button--compact" onclick="toggleDialog('select-dialog-example', false)">Cancel</button>
                     </div>
                 </div>
             </footer>
@@ -324,36 +324,36 @@ Draggable mode can be visualized using following classes:
     </div>
 {% endcapture %}
 
-{% include display-component.html component=modal-select %}
+{% include display-component.html component=dialog-select %}
 
-## Loading Modal
-{% capture modal-loading %}
-    <button class="fd-button--primary" onclick="toggleModal('loading-dialog-example', true)">Open example</button>
-    <div class="fd-modal" id="loading-dialog-example">
-        <div class="fd-modal__content fd-modal__content--s">
-            <header class="fd-modal__header fd-bar">
+## Loading Dialog
+{% capture dialog-loading %}
+    <button class="fd-button--primary" onclick="toggleDialog('loading-dialog-example', true)">Open example</button>
+    <div class="fd-dialog" id="loading-dialog-example">
+        <div class="fd-dialog__content fd-dialog__content--s">
+            <header class="fd-dialog__header fd-bar">
                 <div class="fd-bar__left">
-                    <div class="fd-bar__element fd-modal__title">
+                    <div class="fd-bar__element fd-dialog__title">
                         Loading Data...
                     </div>
                 </div>
             </header>
-            <div class="fd-modal__body">
+            <div class="fd-dialog__body">
                 <strong>Status:</strong> Connecting 127.0.0.1
-                <div class="fd-modal__loader fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
+                <div class="fd-dialog__loader fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
                     <div class="fd-busy-indicator--circle-0"></div>
                     <div class="fd-busy-indicator--circle-1"></div>
                     <div class="fd-busy-indicator--circle-2"></div>
                 </div>
             </div>
-            <footer class="fd-modal__footer fd-bar fd-bar--footer">
+            <footer class="fd-dialog__footer fd-bar fd-bar--footer">
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
-                        <button class="fd-button fd-button--light fd-button--compact" onclick="toggleModal('loading-dialog-example', false)">Cancel</button>
+                        <button class="fd-button fd-button--light fd-button--compact" onclick="toggleDialog('loading-dialog-example', false)">Cancel</button>
                     </div>
                 </div>
             </footer>
         </div>
     </div>
 {% endcapture %}
-{% include display-component.html component=modal-loading %}
+{% include display-component.html component=dialog-loading %}

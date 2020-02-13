@@ -1,35 +1,35 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "./component.njk" import modal %}
+{% from "./component.njk" import dialog %}
 
 
 
 {% block content %}
 
     <style>
-        .fd-modal {
+        .fd-dialog {
             position: static;
             background-color: transparent;
         }
 
-        .fd-modal__content {
+        .fd-dialog__content {
             position: static;
             transform: translate(0%, 0%);
             width: 30rem;
             margin: auto;
         }
 
-        .fd-modal__content:not(:last-child) {
+        .fd-dialog__content:not(:last-child) {
             margin-bottom: 2rem;
         }
     </style>
 
     {% set body_content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." %}
 
-    <h1>Modal in default mode</h1>
+    <h1>Dialog in default mode</h1>
     {% set example %}
 
-        {{ modal(
+        {{ dialog(
             properties={
                 body: body_content,
                 actions: [
@@ -44,12 +44,12 @@
 
     <br><br>
 
-    <h1>Modal with loader</h1>
+    <h1>Dialog with loader</h1>
     {% set example %}
 
-        {{ modal(
+        {{ dialog(
             properties={
-                modal_content: {
+                dialog_content: {
                     has_loader: true
                 },
                 body: body_content,
@@ -66,11 +66,11 @@
 
     {% set example %}
 
-        <h1>Modal in resizable mode</h1>
+        <h1>Dialog in resizable mode</h1>
 
-        {{ modal(
+        {{ dialog(
             properties={
-                modal_content: {
+                dialog_content: {
                     is_resizable: true
                 },
                 body: body_content,
@@ -81,11 +81,11 @@
             }
         ) }}
 
-        <h1>Modal in draggable mode</h1>
+        <h1>Dialog in draggable mode</h1>
 
-        {{ modal(
+        {{ dialog(
             properties={
-                modal_content: {
+                dialog_content: {
                     is_draggable: true
                 },
                 body: body_content,
@@ -103,11 +103,11 @@
 
     {% set example %}
         {% for size in ["s", "m", "l", "xl"] %}
-            <h1>Modal size {{ size }}</h1>
-            {{ modal(
+            <h1>Dialog size {{ size }}</h1>
+            {{ dialog(
                 properties={
-                    modal_content: {
-                        modal_content_size: size,
+                    dialog_content: {
+                        dialog_content_size: size,
                         has_subheader: true
                     },
                     body: body_content,
@@ -119,10 +119,10 @@
             ) }}
         {% endfor %}
 
-        <h1>Modal with no vertical paddings</h1>
-        {{ modal(
+        <h1>Dialog with no vertical paddings</h1>
+        {{ dialog(
             properties={
-                modal_content: {
+                dialog_content: {
                     has_no_vertical_paddings: true
                 },
                 body: body_content,

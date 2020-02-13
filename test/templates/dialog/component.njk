@@ -1,0 +1,57 @@
+<!--
+dialog:
+    properties={},
+-->
+
+{% macro dialog(properties={}) %}
+    <div class="fd-dialog fd-dialog--active"
+         id="{% if properties.id %}{{ properties.id }}{% else %}example-dialog{% endif %}" role="dialog">
+        <div role="document"
+             class="fd-dialog__content
+             {% set dialog = properties.dialog_content %}
+             {% if dialog.is_resizable %}fd-dialog__content--resizable{% endif %}
+             {% if dialog.is_draggable %}fd-dialog__content--draggable-grab{% endif %}
+             {% if dialog.dialog_content_size %}fd-dialog__content--{{ dialog.dialog_content_size }}{% endif %}
+        ">
+
+            <header class="fd-dialog__header fd-bar {% if dialog.has_subheader %}fd-bar--subheader{% endif %}">
+                <div class="fd-bar__left">
+                    <div class="fd-bar__element">
+                        <h1 class="fd-dialog__title">
+                            Dialog header
+                        </h1>
+                    </div>
+                </div>
+            </header>
+            {% if dialog.has_subheader %}
+                <div class="fd-dialog__subheader fd-bar fd-bar--subheader">
+                    <div class="fd-bar__left">
+                        <div class="fd-bar__element">
+                            Dialog subheader
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+            <div class="fd-dialog__body {% if dialog.has_no_vertical_paddings %}fd-dialog__body--no-vertical-padding{% endif %}">
+                {{ properties.body }}
+                {% if dialog.has_loader %}
+                    <div class="fd-dialog__loader fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
+                        Loader
+                    </div>
+                {% endif %}
+            </div>
+
+            <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        {%- for action in properties.actions %}
+                            <button class="btn-playground">{{ action.label }}</button>
+                        {%- endfor %}
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+{%- endmacro %}

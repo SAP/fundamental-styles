@@ -1,0 +1,164 @@
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+@import "./overlay.scss";
+
+/*!
+  .fd-dialog+(--active)
+    .fd-dialog__content+(--s, --m, --l, --xl, --resizable, --draggable-grab, --draggable-grabbing, --no-mobile-stretch)
+      .fd-dialog__header
+        .fd-dialog__title
+      .fd-dialog__subheader
+      .fd-dialog__body+(--no-vertical-padding)
+      .fd-dialog__laoder
+      .fd-dialog__footer
+*/
+$block: #{$fd-namespace}-dialog;
+
+.#{$block} {
+
+  // OVERLAY
+  $fd-dialog-overlay-color: rgba(0, 0, 0, 0.6); // Should be fade(var(--sapBlockLayer_Background), 60)
+
+  // CONTENT
+  $fd-dialog-content-margin-y: 6%;
+  $fd-dialog-content-margin-x: 10%;
+  $fd-dialog-content-min-width: 20rem;
+  $fd-dialog-content-min-height: 7.5rem;
+  $fd-dialog-content-box-shadow: var(--sapContent_Shadow3);
+  $fd-dialog-content-border-radius: var(--sapElement_BorderCornerRadius);
+  $fd-dialog-content-padding-x: (def: 1rem, s: 1rem, m: 2rem, l: 2rem, xl: 3rem);
+
+  // RESIZE HANDLE
+  $fd-dialog-resize-handle-color: var(--sapButton_Lite_TextColor);
+
+  // BODY
+  $fd-dialog-body-padding-y: 1rem;
+  $fd-dialog-body-color: var(--sapGroup_ContentBackground);
+
+  // LOADER
+  $fd-dialog-loader-margin-y: 1.5rem;
+
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $fd-dialog-overlay-color;
+
+  &--active {
+    display: block;
+  }
+
+  &__content {
+    @include fd-reset();
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: $fd-dialog-content-min-width;
+    min-height: $fd-dialog-content-min-height;
+    max-width: calc(100vw - #{$fd-dialog-content-margin-x});
+    max-height: calc(100vh - #{$fd-dialog-content-margin-y});
+    box-shadow: $fd-dialog-content-box-shadow;
+    border-radius: $fd-dialog-content-border-radius;
+
+    @include media-breakpoint-down(m) {
+      width: 100vw;
+      height: 100vh;
+
+      &:not(&--no-mobile-stretch) {
+        max-width: 100vw;
+        max-height: 100vh;
+      }
+    }
+
+    @each $size-label, $size in $fd-dialog-content-padding-x {
+      &--#{$size-label} {
+        .#{$block}__header,
+        .#{$block}__subheader,
+        .#{$block}__body,
+        .#{$block}__footer {
+          padding-left: map_get($fd-dialog-content-padding-x, $size-label);
+          padding-right: map_get($fd-dialog-content-padding-x, $size-label);
+        }
+      }
+    }
+
+    &--resizable {
+      @include media-breakpoint-up(l) {
+        @include fd-icon("resize-corner", "m", "after") {
+          color: $fd-dialog-resize-handle-color;
+          position: absolute;
+          cursor: nwse-resize;
+          right: 0;
+          bottom: 0;
+        }
+      }
+    }
+
+    &--draggable {
+      &-grab {
+        @include media-breakpoint-up(l) {
+          @include fd-hover() {
+            .#{$block}__header {
+              cursor: grab;
+            }
+          }
+        }
+      }
+
+      &-grabbing {
+        @include media-breakpoint-up(l) {
+          @include fd-hover() {
+            .#{$block}__header {
+              cursor: grabbing;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__header,
+  &__subheader,
+  &__footer {
+    padding-left: map_get($fd-dialog-content-padding-x, def);
+    padding-right: map_get($fd-dialog-content-padding-x, def);
+    flex-shrink: 0;
+  }
+
+  &__header {
+    .#{$block}__title {
+      @include fd-reset();
+      @include fd-ellipsis();
+    }
+  }
+
+  &__body {
+    @include fd-reset();
+
+    flex-grow: 1;
+    background-color: $fd-dialog-body-color;
+    padding-top: $fd-dialog-body-padding-y;
+    padding-bottom: $fd-dialog-body-padding-y;
+
+    &--no-vertical-padding {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &__loader {
+    @include fd-reset();
+
+    text-align: center;
+    margin-top: $fd-dialog-loader-margin-y;
+    margin-bottom: $fd-dialog-loader-margin-y - $fd-dialog-body-padding-y;
+  }
+}
