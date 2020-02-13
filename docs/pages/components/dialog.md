@@ -111,10 +111,9 @@ Dialog headers and footer can be customized using Bar component features.
 
 
 ## Dialog size modifiers
-Header subheader and footer by default uses padding values determined by [Bar Component]({{site.baseurl}}/components/bar.html). By default dialog body has no horizontal paddings.
-Horizontal paddings should be applied depending on dialog width.
+By default dialog body has no horizontal paddings. Header, subheader, body and footer paddings should be applied responsively based on dialogs window width.
 <br>
-Modifying header/body/footer horizontal paddings:
+Modifying header/subheader/body/footer horizontal paddings:
 <ul>
     <li><code>.fd-dialog__content--s</code>: 1rem - max-width: 599px</li>
     <li><code>.fd-dialog__content--m</code>: 2rem - min-width: 600px and max-width: 1023px</li>
@@ -122,18 +121,19 @@ Modifying header/body/footer horizontal paddings:
     <li><code>.fd-dialog__content--xl</code>: 3rem - min-width: 1440px</li>
 </ul>
 
-By default dialog on mobile devices takes full height and width of the screen. This behaviour can be changed using following class, which will add additional spacing around dialog.
+By default dialog on mobile devices should take full height and width of the screen. This behaviour can be changed using <code>.fd-dialog__content--no-mobile-stretch</code> class, which will add additional spacing around dialog.
 <ul>
+    <li><code>.fd-dialog__content--mobile</code>: dialog takes full height and width</li>
     <li><code>.fd-dialog__content--no-mobile-stretch</code>: margin: 6% 10%</li>
 </ul>
 
-By default dialog body has horizontal padding. This behavior might be changed using 
+By default dialog body has horizontal padding. This behavior might be changed using:
 <ul>
     <li><code>.fd-dialog__body--no-vertical-padding</code>: padding-top: 0, padding-bottom: 0</li>
 </ul>
 
 
-### Dialog header/footer horizontal paddings
+### Dialog header/body/footer horizontal paddings
 {% capture dialog-size %}
     <div class="fd-dialog-docs-static fd-dialog__content fd-dialog__content--s">
         <header class="fd-dialog__header fd-bar fd-bar--header">
@@ -212,6 +212,7 @@ By default dialog body has horizontal padding. This behavior might be changed us
 
 ## Dialog resizable mode
 Dialog can be opened in resizable mode using <code>.fd-dialog__content--resizable</code>, enabling to horizontally and vertically resize dialogs dialog (only for <b>desktop</b>).
+Resizable Dialog should be desktop only feature. 
 {% capture dialog-resize %}
     <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
         <div class="fd-dialog__content fd-dialog__content--resizable fd-dialog__content--s">

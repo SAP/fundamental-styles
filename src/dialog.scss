@@ -5,7 +5,7 @@
 
 /*!
   .fd-dialog+(--active)
-    .fd-dialog__content+(--s, --m, --l, --xl, --resizable, --draggable-grab, --draggable-grabbing, --no-mobile-stretch)
+    .fd-dialog__content+(--s, --m, --l, --xl, --resizable, --draggable-grab, --draggable-grabbing, --mobile, --no-mobile-stretch)
       .fd-dialog__header
         .fd-dialog__title
       .fd-dialog__subheader
@@ -72,16 +72,6 @@ $block: #{$fd-namespace}-dialog;
     box-shadow: $fd-dialog-content-box-shadow;
     border-radius: $fd-dialog-content-border-radius;
 
-    @include media-breakpoint-down(m) {
-      width: 100vw;
-      height: 100vh;
-
-      &:not(&--no-mobile-stretch) {
-        max-width: 100vw;
-        max-height: 100vh;
-      }
-    }
-
     @each $size-label, $size in $fd-dialog-content-padding-x {
       &--#{$size-label} {
         .#{$block}__header,
@@ -94,35 +84,41 @@ $block: #{$fd-namespace}-dialog;
       }
     }
 
+    &--mobile {
+      width: 100vw;
+      height: 100vh;
+      max-width: 100vw;
+      max-height: 100vh;
+    }
+
+    &--no-mobile-stretch {
+      max-width: calc(100vw - #{$fd-dialog-content-margin-x});
+      max-height: calc(100vh - #{$fd-dialog-content-margin-y});
+    }
+
     &--resizable {
-      @include media-breakpoint-up(l) {
-        @include fd-icon("resize-corner", "m", "after") {
-          color: $fd-dialog-resize-handle-color;
-          position: absolute;
-          cursor: nwse-resize;
-          right: 0;
-          bottom: -1px;
-        }
+      @include fd-icon("resize-corner", "m", "after") {
+        color: $fd-dialog-resize-handle-color;
+        position: absolute;
+        cursor: nwse-resize;
+        right: 0;
+        bottom: -1px;
       }
     }
 
     &--draggable {
       &-grab {
-        @include media-breakpoint-up(l) {
-          @include fd-hover() {
-            .#{$block}__header {
-              cursor: grab;
-            }
+        @include fd-hover() {
+          .#{$block}__header {
+            cursor: grab;
           }
         }
       }
 
       &-grabbing {
-        @include media-breakpoint-up(l) {
-          @include fd-hover() {
-            .#{$block}__header {
-              cursor: grabbing;
-            }
+        @include fd-hover() {
+          .#{$block}__header {
+            cursor: grabbing;
           }
         }
       }
