@@ -11,6 +11,8 @@ $block: #{$fd-namespace}-fieldset;
 .#{$block} {
   @extend .#{$fd-namespace}-form-group;
 
+  min-inline-size: auto;
+
   &__legend {
     @include fd-reset();
     @include fd-var-color("color", fd-color(text, 3), --fd-color-text-3);
