@@ -96,12 +96,15 @@ $block: #{$fd-namespace}-bar;
     @include bar-design($height: 2.25rem) {
       padding-bottom: 0.25rem;
     }
+
+    z-index: 1;
   }
 
   &--header-with-subheader {
     @include bar-design($shadow: none);
 
     position: relative;
+    z-index: 2;
   }
 
   &--footer {
