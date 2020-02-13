@@ -206,6 +206,15 @@ $block: #{$fd-namespace}-popover;
     }
   }
 
+  &--input-message-group {
+    .#{$block}__body,
+    .#{$block}__body--no-arrow {
+      box-shadow: none;
+      border: none;
+      margin-top: -0.25rem;
+    }
+  }
+
   &__popper {
     @include fd-reset();
 
@@ -224,6 +233,12 @@ $block: #{$fd-namespace}-popover;
       .#{$block}__arrow {
         display: none;
       }
+    }
+
+    &--input-message-group {
+      box-shadow: none;
+      border: none;
+      margin-top: -0.25rem !important;
     }
 
     .#{$block}__arrow {
