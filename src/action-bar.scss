@@ -58,7 +58,7 @@ $block: #{$fd-namespace}-action-bar;
 
   &__header {
     flex-grow: 1;
-    width: 100%;
+    width: 85%;
 
     @include fd-reset();
 
