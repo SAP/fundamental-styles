@@ -121,17 +121,18 @@ Modifying header/subheader/body/footer horizontal paddings:
     <li><code>.fd-dialog__content--xl</code>: 3rem - min-width: 1440px</li>
 </ul>
 
-By default dialog on mobile devices should take full height and width of the screen. This behaviour can be changed using <code>.fd-dialog__content--no-mobile-stretch</code> class, which will add additional spacing around dialog.
-<ul>
-    <li><code>.fd-dialog__content--mobile</code>: dialog takes full height and width</li>
-    <li><code>.fd-dialog__content--no-mobile-stretch</code>: margin: 6% 10%</li>
-</ul>
-
 By default dialog body has horizontal padding. This behavior might be changed using:
 <ul>
     <li><code>.fd-dialog__body--no-vertical-padding</code>: padding-top: 0, padding-bottom: 0</li>
 </ul>
 
+By default dialog on mobile devices should take full height and width of the screen.
+This behaviour can be changed using <code>.fd-dialog__content--no-mobile-stretch</code> class, which will add additional spacing around dialog.
+<ul>
+    <li><code>.fd-dialog__content--mobile</code>: dialog takes full height and width</li>
+    <li><code>.fd-dialog__content--no-mobile-stretch</code>: margin: 6% 10%</li>
+</ul>
+Please remember that on mobile devices Bar component should be used with <code>.fd-bar--cosy</code> class.
 
 ### Dialog header/body/footer horizontal paddings
 {% capture dialog-size %}
