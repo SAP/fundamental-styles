@@ -89,12 +89,16 @@ $block: #{$fd-namespace}-bar;
 
   &--header {
     @include bar-design();
+
+    z-index: 1;
   }
 
   &--subheader {
     @include bar-design($height: 2.25rem) {
       padding-bottom: 0.25rem;
     }
+
+    z-index: 1;
   }
 
   &--header-with-subheader {
