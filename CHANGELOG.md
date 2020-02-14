@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.0-rc.26"></a>
+# [0.6.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.6.0-rc.25...v0.6.0-rc.26) (2020-02-14)
+
+
+### Features
+
+* Combobox, MultiInput, Select fiori3 ([#609](https://github.com/SAP/fundamental-styles/issues/609)) ([36136ad](https://github.com/SAP/fundamental-styles/commit/36136ad))
+
+
+
 <a name="0.6.0-rc.25"></a>
 # [0.6.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.6.0-rc.24...v0.6.0-rc.25) (2020-02-13)
 
