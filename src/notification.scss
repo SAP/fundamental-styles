@@ -39,6 +39,10 @@ $block: #{$fd-namespace}-notification;
     margin: 1px 0 0 0;
     padding: 1rem 0.5rem 0 1rem;
 
+    @include fd-rtl() {
+      padding: 1rem 1rem 0 0.5rem;
+    }
+
     @include fd-icon("message-#{$type}", "m");
   }
 
