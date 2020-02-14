@@ -69,6 +69,9 @@
     - title: Status Indicators
       meta: status-indicators
 
+    - title: Switch
+      meta: switch
+
     - title: Table
       meta: table
 
@@ -77,9 +80,6 @@
 
     - title: Tile
       meta: tile
-
-    - title: Toggle
-      meta: toggle
 
     - title: Tree
       meta: tree

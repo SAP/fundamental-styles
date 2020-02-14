@@ -338,7 +338,7 @@ Do not use the radio button if:
 
 - You need to offer the user the option of multiple selection. In this case, use checkboxes instead because radio buttons are for single-selection contexts only.
 - You need to present more than 8 options. Use a dropdown box or list view.
-In special cases, there are only two mutually exclusive options. Combine them into a single checkbox or toggle switch. For example, use a checkbox for “I agree” (for example, to terms and conditions) instead of two radio buttons for “I agree” and “I don’t agree”.
+In special cases, there are only two mutually exclusive options. Combine them into a single checkbox or switch. For example, use a checkbox for “I agree” (for example, to terms and conditions) instead of two radio buttons for “I agree” and “I don’t agree”.
 - The options are numbers with fixed steps. Use a slider control.
 
 {% capture radio-buttons%}

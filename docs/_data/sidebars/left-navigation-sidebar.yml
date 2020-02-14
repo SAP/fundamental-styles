@@ -211,6 +211,10 @@ entries:
     - title: Status Indicators
       url: /components/status-indicators.html
       output: web
+    
+    - title: Switch
+      url: /components/switch.html
+      output: web
 
     - title: Table
       url: /components/table.html
@@ -230,10 +234,6 @@ entries:
 
     - title: Token
       url: /components/token.html
-      output: web
-
-    - title: Toggle / Switch
-      url: /components/toggle.html
       output: web
 
     - title: Tree

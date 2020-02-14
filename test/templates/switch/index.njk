@@ -4,223 +4,62 @@
 
 {% block content %}
 
-<h3>Cozy Switch (default)</h3>
+<h3>Default Switch</h3>
 {% set example %}
-<label>
-{{  switch(
-      modifier={
-          block: []
-      }
-    )
-}}
-</label>
+    <label class="fd-switch__label">
+        <span class="fd-switch">
+            <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3251">
+            <div class="fd-switch__wrapper">
+                <div class="fd-switch__track">
+                    <span class="fd-switch__handle" role="presentation"></span>
+                </div>
+            </div>
+        </span>
+    </label>
 
-<label>
-{{  switch(
-        modifier={
-            block: ['no-text']
-        }
-    )
-}}
-</label>
-
-<label>
-{{  switch(
-        modifier={
-            block: ['semantic']
-        }
-    )
-}}
-</label>
+    <label class="fd-switch__label">
+        <span class="fd-switch fd-switch--compact">
+            <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3431">
+            <div class="fd-switch__wrapper">
+                <div class="fd-switch__track">
+                    <span class="fd-switch__handle" role="presentation"></span>
+                </div>
+            </div>
+        </span>
+    </label>
 {% endset %}
 {{ format(example) }}
 
-<br><br><br>
-
-<h3>Compact Switch</h3>
+<h3>Semantic Switch</h3>
 {% set example %}
-<label>
-{{  switch(
-        modifier={
-            block: ['compact']
-        }
+    <label class="fd-switch__label">
+        <span class="fd-switch fd-switch--semantic">
+            <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3251">
+            <div class="fd-switch__wrapper">
+                <div class="fd-switch__track">
+                    <span class="fd-switch__text fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
+                    <span class="fd-switch__handle" role="presentation"></span>
+                    <span class="fd-switch__text fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
+                </div>
+            </div>
+        </span>
+    </label>
 
-    )
-}}
-</label>
-
-<label>
-{{  switch(
-        properties={
-            offLabel: 'OFF',
-            onLabel: 'ON'
-        },
-        modifier={
-            block: ['compact', 'no-text']
-        }
-
-    )
-}}
-</label>
-
-<label>
-{{  switch(
-        properties={},
-        modifier={
-            block: ['compact', 'semantic']
-        }
-
-    )
-}}
-</label>
+    <label class="fd-switch__label">
+        <span class="fd-switch fd-switch--semantic fd-switch--compact">
+            <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3431">
+            <div class="fd-switch__wrapper">
+                <div class="fd-switch__track">
+                    <span class="fd-switch__text fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
+                    <span class="fd-switch__handle" role="presentation"></span>
+                    <span class="fd-switch__text fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
+                </div>
+            </div>
+        </span>
+    </label>
 {% endset %}
 {{ format(example) }}
 
-<hr>
-
-<h2>checked</h2>
-{% set example %}
-</label>
-<label>
-{{  switch(
-        modifier={
-            block: ['compact']
-        },
-        state={
-            checked: true
-        }
-    )
-}}
-</label>
-<label>
-{{  switch(
-        modifier={
-            block: ['compact', 'no-text']
-        },
-        state={
-            checked: true
-        }
-    )
-}}
-</label>
-<label>
-{{  switch(
-        modifier={
-            block: ['compact', 'semantic']
-        },
-        state={
-            checked: true
-        }
-    )
-}}
-</label>
-{% endset %}
-{{ format(example) }}
-
-
-<br><br><br>
-
-<hr>
-
-<h2>disabled</h2>
-{% set example %}
-<label>
-{{  switch(
-        modifier={
-            block: ['compact', 'semantic']
-        },
-        state={
-            disabled: true
-        }
-    )
-}}
-</label>
-<label>
-{{  switch(
-        modifier={
-            block: ['compact']
-        },
-        state={
-            disabled: true
-        }
-    )
-}}
-</label>
-<label>
-{{  switch(
-        modifier={
-            block: ['compact', 'semantic']
-        },
-        state={
-            disabled: true,
-            checked: true
-        }
-    )
-}}
-</label>
-<label>
-{{  switch(
-        modifier={
-            block: ['compact']
-        },
-        state={
-            disabled: true,
-            checked: true
-        }
-    )
-}}
-</label>
-{% endset %}
-{{ format(example) }}
-
-<h2>Inline label</h2>
-{% set example %}
-<label>
-{{  switch(
-        properties={
-            inlineLabel: 'Testing a long label here'
-        },
-        modifier={
-            block: ['xs']
-        }
-
-    )
-}}
-</label>
-<label>
-{{  switch(
-        properties={
-            inlineLabel: 'Short label'
-        },
-        modifier={
-            block: ['s']
-        }
-
-    )
-}}
-</label>
-<label>
-{{  switch(
-        properties={
-            inlineLabel: 'Testing a long label here'
-        }
-    )
-}}
-</label>
-<label>
-{{  switch(
-        properties={
-            inlineLabel: 'Testing a long label here'
-        },
-        modifier={
-            block: ['xl']
-        }
-
-    )
-}}
-</label>
-{% endset %}
-{{ format(example) }}
 
 
 {% endblock %}
