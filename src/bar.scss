@@ -140,6 +140,7 @@ $block: #{$fd-namespace}-bar;
   &--page,
   &--home-page {
     @include responsive-page();
+
     &.#{$block}--floating-footer {
       @include responsive-floating-footer($margin-x: 0.5rem);
     }
