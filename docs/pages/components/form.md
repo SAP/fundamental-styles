@@ -92,55 +92,34 @@ Do not use the input field if:
     <br />
     <br />
     <div class="fd-form-item fd-form-item--horizontal">
-        <label class="fd-form-label" for="input-1">Default input:</label>
-            <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label">
+        <label class="fd-form-label" for="input-07">Default input:</label>
+            <input class="fd-input" type="text" id="input-07" placeholder="Field placeholder text" aria-label="Image label">
     </div>
     <br><br>
     <div class="fd-form-item fd-form-item--horizontal">
-        <label class="fd-form-label" for="input-1">Compact input:</label>
-            <input class="fd-input fd-input--compact" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label">
+        <label class="fd-form-label" for="input-08">Compact input:</label>
+            <input class="fd-input fd-input--compact" type="text" id="input-08" placeholder="Field placeholder text" aria-label="Image label">
     </div>
     <br /><br />
     <div class="fd-form-item fd-form-item--horizontal">
-        <label class="fd-form-label fd-form-label--required" for="input-1c">Required Input:</label>
-        <input class="fd-input" type="text" id="input-1c" placeholder="Field placeholder text">
+        <label class="fd-form-label fd-form-label--required" for="input-09">Required Input:</label>
+        <input class="fd-input" type="text" id="input-09" placeholder="Field placeholder text">
     </div>
     <br />
     <br />
     <div class="fd-form-item fd-form-item--horizontal">
-        <label class="fd-form-label" aria-required="true" for="input-1d">Password:</label>
-        <input class="fd-input" type="password" id="input-1d">
+        <label class="fd-form-label" aria-required="true" for="input-10">Password:</label>
+        <input class="fd-input" type="password" id="input-10">
     </div>
     <br />
     <br />
     <div class="fd-form-item fd-form-item--horizontal">
-        <label class="fd-form-label" aria-required="true" for="input-1ee">Input:</label>
-        <input class="fd-input" type="text" id="input-1ee">
+        <label class="fd-form-label" aria-required="true" for="input-11">Input:</label>
+        <input class="fd-input" type="text" id="input-11">
     </div>
 {% endcapture %}
 
 {% include display-component.html component=inputs %}
-
-<br/>
-
-## Form Items with Help Messaging
-
-Help elements give the user information about the input. Two types of help elements can be used.
-
-- The inline help element is displayed as a ? Icon. On hover or click, help content is displayed.
-- Help content can also be visible at all times to avoid mistakes. This type of help generally contains validation rules about the data allowed in the input field. An example is "Maximum 20 characters". This is displayed below the input field.
-
-{% capture inputs-help %}
-    <div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--inline-help" for="input-44">
-            Input with inline help:
-            <span class="fd-inline-help"></span>
-        </label>
-        <input class="fd-input" type="text" id="input-45">
-    </div>
-{% endcapture %}
-
-{% include display-component.html component=inputs-help %}
 
 <br/>
 
@@ -157,17 +136,17 @@ Along with Invalid and Warning, error messages should be displayed below the fie
 
 {% capture inputs %}
 <div class="fd-form-item">
-    <label class="fd-form-label" for="input-1">Normal input:</label>
-    <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label">
+    <label class="fd-form-label" for="input-1aa">Normal input:</label>
+    <input class="fd-input" type="text" id="input-1aa" placeholder="Field placeholder text" aria-label="Image label">
 </div>
 
 <br /><br />
 
 <div class="fd-form-item">
-    <label class="fd-form-label" for="input-1">Valid input:</label>
+    <label class="fd-form-label" for="input-1bb">Valid input:</label>
     <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
         <div class="fd-popover__control" aria-controls="popoverB2" aria-expanded="false" aria-haspopup="true">
-            <input class="fd-input is-valid" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label">
+            <input class="fd-input is-valid" type="text" id="input-1bb" placeholder="Field placeholder text" aria-label="Image label">
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB2">
             <div class="fd-form-message fd-form-message--success">Success message</div>
@@ -178,10 +157,10 @@ Along with Invalid and Warning, error messages should be displayed below the fie
 <br /><br />
 
 <div class="fd-form-item">
-    <label class="fd-form-label" for="input-1">Error input:</label>
+    <label class="fd-form-label" for="input-1cc">Error input:</label>
     <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
         <div class="fd-popover__control" aria-controls="popoverB3" aria-expanded="false" aria-haspopup="true">
-            <input class="fd-input is-invalid" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label">
+            <input class="fd-input is-invalid" type="text" id="input-1cc" placeholder="Field placeholder text" aria-label="Image label">
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB3">
             <div class="fd-form-message fd-form-message--error" >Error message</div>
@@ -192,10 +171,10 @@ Along with Invalid and Warning, error messages should be displayed below the fie
 <br /><br />
 
 <div class="fd-form-item">
-    <label class="fd-form-label" for="input-1">Warning input:</label>
+    <label class="fd-form-label" for="input-1dd">Warning input:</label>
     <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
         <div class="fd-popover__control" aria-controls="popoverB4" aria-expanded="false" aria-haspopup="true">
-            <input class="fd-input is-warning" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label">
+            <input class="fd-input is-warning" type="text" id="input-1dd" placeholder="Field placeholder text" aria-label="Image label">
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB4">
             <div class="fd-form-message fd-form-message--warning">Warning message</div>
@@ -206,10 +185,10 @@ Along with Invalid and Warning, error messages should be displayed below the fie
 <br /><br />
 
 <div class="fd-form-item">
-    <label class="fd-form-label" for="input-1">Information input:</label>
+    <label class="fd-form-label" for="input-1ee">Information input:</label>
     <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
         <div class="fd-popover__control" aria-controls="popoverB5" aria-expanded="false" aria-haspopup="true">
-            <input class="fd-input fd-input--compact is-information" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label">
+            <input class="fd-input fd-input--compact is-information" type="text" id="input-1ee" placeholder="Field placeholder text" aria-label="Image label">
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB5">
             <div class="fd-form-message fd-form-message--information">Information message</div>
@@ -220,15 +199,15 @@ Along with Invalid and Warning, error messages should be displayed below the fie
 <br /><br />
 
 <div class="fd-form-item">
-    <label class="fd-form-label" for="input-6">Disabled Input:</label>
-    <input class="fd-input" type="text" id="input-6" value="Non editable data" disabled>
+    <label class="fd-form-label" for="input-1ff">Disabled Input:</label>
+    <input class="fd-input" type="text" id="input-1ff" value="Non editable data" disabled>
 </div>
 
 <br /><br />
 
 <div class="fd-form-item">
-    <label class="fd-form-label" for="input-7">Read Only Input:</label>
-    <input class="fd-input" type="text" id="input-7" value="Read only data" readonly>
+    <label class="fd-form-label" for="input-1gg">Read Only Input:</label>
+    <input class="fd-input" type="text" id="input-1gg" value="Read only data" readonly>
 </div>
 {% endcapture %}
 
@@ -247,7 +226,6 @@ Do not use the text area if
     <div class="fd-form-item">
         <label class="fd-form-label" for="textarea-1">Text area:</label>
         <textarea class="fd-textarea" id="textarea-1" placeholder="Write something here"></textarea>
-        <div class="fd-textarea-counter">150 characters left</div>
     </div>
     <br/>
     <div class="fd-form-item">
@@ -257,42 +235,67 @@ Do not use the text area if
     </div>
     <br/>
     <div class="fd-form-item">
-        <label class="fd-form-label" for="textarea-1">Text area:</label>
-        <textarea class="fd-textarea is-valid" id="textarea-1" placeholder="Write something here"></textarea>
+        <label class="fd-form-label" for="textarea-3">Success (valid) text area:</label>
+        <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
+            <div class="fd-popover__control" aria-controls="popoverT51" aria-expanded="false" aria-haspopup="true">
+                <textarea class="fd-textarea is-valid" id="textarea-3" placeholder="Write something here"></textarea>
+            </div>
+            <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="popoverT51">
+                <div class="fd-form-message fd-form-message--success">Valid message</div>
+            </div>
+        </div>
         <div class="fd-textarea-counter">150 characters left</div>
     </div>
     <br/>
     <div class="fd-form-item">
-        <label class="fd-form-label" for="textarea-1">Text area:</label>
-        <textarea class="fd-textarea is-invalid" id="textarea-1" placeholder="Write something here"></textarea>
-    </div>
-    <br/>
-    <div class="fd-form-item">
-        <label class="fd-form-label" for="textarea-1">Text area:</label>
-        <textarea class="fd-textarea is-warning" id="textarea-1" placeholder="Write something here"></textarea>
-    </div>
-    <br/>
-    <div class="fd-form-item">
-        <label class="fd-form-label" for="textarea-1">Information input:</label>
-        <div class="fd-form-input-message-group fd-popover">
-            <textarea class="fd-textarea is-information fd-popover__control" id="textarea-1" placeholder="Write something here" aria-controls="popoverT5" aria-expanded="false" aria-haspopup="true"></textarea>
-            <span class="fd-popover__body fd-popover__body--no-arrow fd-form-message fd-form-message--information" aria-hidden="true" id="popoverT5">Information message</span>
+        <label class="fd-form-label" for="textarea-4">Error(invalid) text area:</label>
+        <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
+            <div class="fd-popover__control" aria-controls="popoverT52" aria-expanded="false" aria-haspopup="true">
+                <textarea class="fd-textarea is-invalid" id="textarea-4" placeholder="Write something here"></textarea>
+            </div>
+            <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="popoverT52">
+                <div class="fd-form-message fd-form-message--error">Invalid message</div>
+            </div>
         </div>
     </div>
     <br/>
     <div class="fd-form-item">
-        <label class="fd-form-label" for="textarea-1">Text area:</label>
-        <textarea class="fd-textarea" id="textarea-1" placeholder="Write something here" disabled></textarea>
+        <label class="fd-form-label" for="textarea-5">Warning text area:</label>
+        <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
+            <div class="fd-popover__control" aria-controls="popoverT53" aria-expanded="false" aria-haspopup="true">
+                <textarea class="fd-textarea is-warning" id="textarea-5" placeholder="Write something here"></textarea>
+            </div>
+            <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="popoverT53">
+                <div class="fd-form-message fd-form-message--warning">Warning message</div>
+            </div>
+        </div>
     </div>
     <br/>
     <div class="fd-form-item">
-        <label class="fd-form-label" for="textarea-1">Text area:</label>
-        <textarea class="fd-textarea" id="textarea-1" placeholder="Write something here" readonly></textarea>
+        <label class="fd-form-label" for="textarea-6">Information text area:</label>
+        <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
+            <div class="fd-popover__control" aria-controls="popoverT54" aria-expanded="false" aria-haspopup="true">
+                <textarea class="fd-textarea is-information" id="textarea-6" placeholder="Write something here"></textarea>
+            </div>
+            <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="popoverT54">
+                <div class="fd-form-message fd-form-message--information">Information message</div>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="textarea-7">Text area:</label>
+        <textarea class="fd-textarea" id="textarea-7" placeholder="Write something here" disabled></textarea>
+    </div>
+    <br/>
+    <div class="fd-form-item">
+        <label class="fd-form-label" for="textarea-8">Text area:</label>
+        <textarea class="fd-textarea" id="textarea-8" placeholder="Write something here" readonly></textarea>
     </div>
     <br/>
     <div class="fd-form-item" dir="rtl">
-        <label class="fd-form-label" for="textarea-1">Text area:</label>
-        <textarea class="fd-textarea" id="textarea-1" placeholder="Write something here"></textarea>
+        <label class="fd-form-label" for="textarea-9">Text area:</label>
+        <textarea class="fd-textarea" id="textarea-9" placeholder="Write something here"></textarea>
         <div class="fd-textarea-counter">150 characters left</div>
     </div>
 {% endcapture %}
