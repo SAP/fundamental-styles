@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.0-rc.28"></a>
+# [0.6.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.6.0-rc.27...v0.6.0-rc.28) (2020-02-14)
+
+
+### Bug Fixes
+
+* add rtl support for Notification indicator ([#662](https://github.com/SAP/fundamental-styles/issues/662)) ([27d162e](https://github.com/SAP/fundamental-styles/commit/27d162e))
+
+
+
 <a name="0.6.0-rc.27"></a>
 # [0.6.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.6.0-rc.26...v0.6.0-rc.27) (2020-02-14)
 
