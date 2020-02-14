@@ -3,7 +3,7 @@
 @import "./functions";
 
 /*!
-.fd-input-group+(--inline)
+.fd-input-group+(--inline, --control)
     .fd-input-group__addon+(--button)
 */
 
@@ -11,18 +11,12 @@ $block: #{$fd-namespace}-input-group;
 
 $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
-@mixin fd-input-group-focus() {
-  @include fd-focus() {
-    box-shadow: none;
-    outline-offset: -0.1875rem;
-    outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
-    @content;
-  }
-}
-
 .#{$block} {
 
   $fd-input-group-add-on-border: 0.0625rem;
+  $fd-input-group-button-active-text-color: var(--sapButton_Active_TextColor);
+  $fd-input-group-button-active-background: var(--sapButton_Active_Background);
+  $fd-input-group-button-active-focus-color: var(--sapContent_ContrastFocusColor);
 
   @include fd-reset();
 
@@ -36,7 +30,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
   // states
   @include fd-form-states();
-  @include fd-input-group-focus();
+  @include fd-fiori-focus();
 
   > * {
     border-radius: $fd-input-border-radius;
@@ -201,6 +195,19 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
     border: none;
     width: 100%;
+  }
+
+  &--control {
+    .#{$block}__button {
+      &.is-expanded {
+        background-color: $fd-input-group-button-active-background;
+        color: $fd-input-group-button-active-text-color;
+
+        @include fd-fiori-focus() {
+          outline-color: $fd-input-group-button-active-focus-color;
+        }
+      }
+    }
   }
 
   .#{$fd-namespace}-textarea {

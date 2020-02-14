@@ -56,6 +56,14 @@ $block: #{$fd-namespace}-popover;
 
     position: relative;
     margin-left: 0;
+
+    &.#{$fd-namespace}-input:last-child {
+      margin-bottom: 0;
+    }
+
+    @include fd-disabled() {
+      pointer-events: none;
+    }
   }
 
   &__body {
@@ -190,6 +198,19 @@ $block: #{$fd-namespace}-popover;
           left: $fd-popover-body-shadow-offset;
           right: auto;
         }
+      }
+    }
+
+    &--dropdown {
+      display: -ms-grid;
+      -ms-grid-columns: max-content;
+      width: max-content;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+
+      &-fill {
+        max-width: 37.5rem;
+        width: calc(100% - #{$fd-popover-body-shadow-offset} * 2);
       }
     }
 

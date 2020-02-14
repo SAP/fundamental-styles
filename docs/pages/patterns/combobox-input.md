@@ -9,60 +9,287 @@ folder: patterns
 summary:
 ---
 
-The combobox input component is an opinionated composition of the `input group`, `popover` and `menu` components with the use of a styled button.
+The Combobox Input component is an opinionated composition of the input group, popover and list components. 
+The popover and `dropdown list` is shared between the multi-input and select components.
+Please see the `select` documentation for the complete list of modifiers that are also  supported by the combobox component.
+<br/><br/>
+`Combobox` allows users to select an item from a predefined list. 
+It provides an editable input field for filtering the list, and a dropdown menu with a list of the available options. 
+If the entries are not validated by the application, users can also enter custom values.
 {: .docs-intro}
 
 {% capture default %}
-<div class="documentation-site-popover-container">
-  <div class="fd-popover">
-      <div class="fd-popover__control">
-          <div aria-label="Image label" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="true">
-              <div class="fd-input-group">
-                  <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Fruit">
-                  <span class="fd-input-group__addon fd-input-group__addon--button">
-                      <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow"></button>
-                  </span>
-              </div>
-          </div>
+
+<label class="fd-form-label">
+    Combobox Cozy Mode
+</label>
+<br/>
+<div class="fd-popover">
+  <div class="fd-popover__control" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="true">
+      <div class="fd-input-group fd-input-group--control">
+          <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Fruit">
+          <span class="fd-input-group__addon fd-input-group__addon--button">
+              <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="true"></button>
+          </span>
       </div>
-      <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="F4GcX348">
-          <nav class="fd-menu">
-          <ul class="fd-menu__list">
-              <li><a href="#" class="fd-menu__item">Pear</a></li>
-              <li><a href="#" class="fd-menu__item">Strawberry</a></li>
-              <li><a href="#" class="fd-menu__item">Raspberry</a></li>
-              <li><a href="#" class="fd-menu__item fd-menu__link">+ New Item</a></li>
-          </ul>
-          </nav>
-      </div>
+  </div>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcX348">
+        <ul class="fd-list fd-list--dropdown" role="listbox">
+            <li role="option" tabindex="0" class="fd-list__item is-selected">
+                <span class="fd-list__title">
+                    <span class="fd-list__bold">App</span>le
+                </span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Orange</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Banana</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Kiwi</span>
+            </li>
+        </ul>
   </div>
 </div>
 
+<br/>
 <br>
 
-<div class="documentation-site-popover-container">
-  <div class="fd-popover">
-      <div class="fd-popover__control">
-          <div aria-label="Image label" aria-controls="F4GcX34" aria-expanded="false" aria-haspopup="true">
-              <div class="fd-input-group">
-                  <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
-                  <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                      <button class="fd-input-group__button fd-button--compact fd-button--light sap-icon--navigation-down-arrow"></button>
-                  </span>
-              </div>
-          </div>
-      </div>
-      <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="F4GcX34">
-          <nav class="fd-menu">
-          <ul class="fd-menu__list">
-              <li><a href="#" class="fd-menu__item">Pear</a></li>
-              <li><a href="#" class="fd-menu__item">Strawberry</a></li>
-              <li><a href="#" class="fd-menu__item">Raspberry</a></li>
-              <li><a href="#" class="fd-menu__item fd-menu__link">+ New Item</a></li>
-          </ul>
-          </nav>
-      </div>
+<label class="fd-form-label">
+    Combobox Compact Mode
+</label>
+<br>
+<div class="fd-popover">
+  <div class="fd-popover__control" aria-controls="F4GcX34" aria-expanded="false" aria-haspopup="true">
+        <div class="fd-input-group fd-input-group--control">
+            <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
+            <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
+                <button class="fd-input-group__button fd-button--compact fd-button--light sap-icon--navigation-down-arrow fd-select__button" aria-controls="F4GcX34" aria-expanded="false" aria-haspopup="true"></button>
+            </span>
+        </div>
+    </div>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcX34">
+        <ul class="fd-list fd-list--dropdown fd-list--compact" role="listbox">
+            <li role="option" tabindex="0" class="fd-list__item is-selected">
+                <span class="fd-list__title">
+                    <span class="fd-list__bold">App</span>le
+                </span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Orange</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Banana</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Kiwi</span>
+            </li>
+        </ul>
   </div>
 </div>
 {% endcapture %}
 {% include display-component.html component=default %}
+
+## Two Columns
+The `ComboBox` component can be customized by adding additional information in additional columns as seen below.
+
+{% capture default %}
+<div class="fd-popover">
+  <div class="fd-popover__control" aria-controls="F4GRTGLK6" aria-expanded="false" aria-haspopup="true">
+      <div class="fd-input-group fd-input-group--control">
+          <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Product">
+          <span class="fd-input-group__addon fd-input-group__addon--button">
+              <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow" aria-controls="F4GRTGLK6" aria-expanded="false" aria-haspopup="true"></button>
+          </span>
+      </div>
+  </div>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GRTGLK6">
+        <ul class="fd-list fd-list--dropdown" role="listbox">
+           <li class="fd-list__item is-selected" role="option" tabindex="0">
+               <span class="fd-list__title">Product 1</span>
+               <span class="fd-list__secondary">1000 EUR</span>
+            </li>
+            <li class="fd-list__item" role="option" tabindex="0">
+               <span class="fd-list__title">Product 2</span>
+               <span class="fd-list__secondary">750 EUR</span>
+           </li>
+            <li class="fd-list__item" role="option" tabindex="0">
+               <span class="fd-list__title">Product 3</span>
+               <span class="fd-list__secondary">780 EUR</span>
+            </li>
+            <li class="fd-list__item" role="option" tabindex="0">
+               <span class="fd-list__title">Product 4</span>
+               <span class="fd-list__secondary">40 EUR</span>
+            </li>
+        </ul>
+  </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=default %}
+
+## Combobox with Items Grouping
+In cases where the list items need to be categorized into groups, it is possible to add headers for each category.
+ 
+{% capture combobox-group %}
+<div class="fd-popover">
+  <div class="fd-popover__control" aria-controls="F4GcXLK6" aria-expanded="false" aria-haspopup="true">
+      <div class="fd-input-group fd-input-group--control">
+          <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Ingredient">
+          <span class="fd-input-group__addon fd-input-group__addon--button">
+              <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow" aria-controls="F4GcXLK6" aria-expanded="false" aria-haspopup="true"></button>
+          </span>
+      </div>
+  </div>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcXLK6">
+        <ul class="fd-list fd-list--dropdown" role="listbox">
+            <li class="fd-list__group-header">
+                Fruits
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item is-selected">
+                <span class="fd-list__title">Apple</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Orange</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Banana</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Kiwi</span>
+            </li>
+            <li class="fd-list__group-header">
+                Vegetables
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Tomato</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Onion</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Spinach</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Potato</span>
+            </li>
+        </ul>
+  </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=combobox-group %}
+
+
+## Match Popover Body Size
+The default length size of the popover body is often different from the text length.
+The body length can be adjusted to match the text length by adding the `fd-popover__body--dropdown-fill` 
+class to the `fd-popover__body`. 
+This class has been added to all the `Combobox` examples above.
+In the example you can see how the `Combobox` component looks without the `fd-popover__body--dropdown-fill` modifier.
+
+{% capture combobox-fill %}
+<div class="fd-popover">
+  <div class="fd-popover__control" aria-controls="F4HTFDLK6" aria-expanded="false" aria-haspopup="true">
+      <div class="fd-input-group fd-input-group--control">
+          <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Ingredient">
+          <span class="fd-input-group__addon fd-input-group__addon--button">
+              <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow" aria-controls="F4HTFDLK6" aria-expanded="false" aria-haspopup="true"></button>
+          </span>
+      </div>
+  </div>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4HTFDLK6">
+        <ul class="fd-list fd-list--dropdown" role="listbox">
+            <li role="option" tabindex="0" class="fd-list__item is-selected">
+                <span class="fd-list__title">Apple</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Orange</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Banana</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Kiwi</span>
+            </li>
+        </ul>
+  </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=combobox-fill %}
+
+## Disabled Mode
+To disable a `Combobox` component, the disabled attribute needs to be added to the `fd-popover__control` and the `fd-input__control` elements.
+The disabled state can also be achieved by adding the `.is-disabled` class or the `aria-disabled="true"` attribute.
+
+{% capture disabled %}
+<div class="fd-popover">
+  <div class="fd-popover__control" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="true" aria-disabled="true" disabled>
+      <div class="fd-input-group fd-input-group--control" aria-disabled="true" disabled>
+          <input type="text" class="fd-input fd-input-group__input" id="" value="Orange" placeholder="Select Fruit">
+          <span class="fd-input-group__addon fd-input-group__addon--button">
+              <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow fd-select__button"></button>
+          </span>
+      </div>
+  </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=disabled %}
+
+
+
+## Readonly Mode
+To make the `Combobox` component read-only, the readonly attribute needs to be added to the `fd-nput-group` element.
+This can also be done by using the `.is-readonly` class or `aria-readonly="true"` attribute.
+
+{% capture readonly %}
+<div class="fd-popover">
+  <div class="fd-popover__control" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="false" aria-readonly="true" readonly>
+      <input type="text" class="fd-input fd-input-group__input" id="" value="Orange" aria-readonly="true" readonly>
+  </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=readonly %}
+
+
+## Semantic Mode
+For a complete list of states supported by the `combobox` component, please see the documentation for the form or select components.
+<br/><br/> 
+The semantic mode can be used to modify the combobox component by adding one of 
+`is-invalid` | `is-valid` | `is-warning` | `is-information` classes into fd-input-group element. 
+To add text in the `body` of the component, simply include your text in the `fd-list__message` under the `ul` element.
+
+
+{% capture semantic %}
+<div class="fd-popover">
+  <div class="fd-popover__control" aria-controls="F4GcEX34" aria-expanded="false" aria-haspopup="true">
+            <div class="fd-input-group fd-input-group--control is-valid">
+                <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
+                <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
+                    <button class="fd-input-group__button fd-button--compact fd-button--light sap-icon--navigation-down-arrow fd-select__button" 
+                    aria-controls="F4GcEX34" aria-expanded="false" aria-haspopup="true"></button>
+                </span>
+            </div>
+        </div>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcEX34">
+        <ul class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
+            <li class="fd-list__message fd-list__message--success">Success message</li>
+            <li role="option" tabindex="0" class="fd-list__item is-selected">
+                <span class="fd-list__title">
+                    <span class="fd-list__bold">App</span>le
+                </span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Orange</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Banana</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <span class="fd-list__title">Kiwi</span>
+            </li>
+        </ul>
+  </div>
+</div>
+<span class="fd-form-message fd-form-message--static fd-form-message--success">Success message</span>
+{% endcapture %}
+{% include display-component.html component=semantic %}

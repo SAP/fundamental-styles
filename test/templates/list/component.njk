@@ -1,6 +1,9 @@
 {% macro list(properties={}, toggles={}, modifier=[]) %}
-<ul class="fd-list{{ modifier | modifier('list') }}">
+<ul class="fd-list{{ modifier | modifier('list') }}  {{ 'fd-list--multi-input' if toggles.multiInput }} {{ 'fd-list--dropdown' if toggles.dropdown }} {{'fd-list--has-message' if toggles.hasMessage }}">
     {%- if properties.groups %}
+		{%- if toggles.hasMessage %}
+			<li class="fd-list__message fd-list__message--success">Message</li>
+		{%- endif %}
         {%- for group in properties.groups %}
             {%- if group.header %}
                 <li class="fd-list__group-header">
@@ -25,16 +28,22 @@
 {%- endmacro %}
 
 {% macro list_item(item={}, toggles={}, modifier=[]) %}
-<li class="fd-list__item{{ modifier | modifier('list__item') }} {{ 'is-selected' if item.selected }} {{ 'is-active' if item.active }}">
-    {%- if toggles.useIconBefore %}
+<li class="fd-list__item{{ modifier | modifier('list__item') }} {{ 'is-selected' if item.selected }} {{ 'is-active' if item.active }} {{ 'is-hover' if item.hover }}">
+    {%- if toggles.multiInput %}
+    	<label class="fd-list__label">
+	{%- endif %}
+	{%- if toggles.useIconBefore %}
         <span class="fd-list__icon">{{item.iconBefore}}</span>
     {%- endif %}
-    <span class="fd-list__title">{{item.title}}</span>
+    	<span class="fd-list__title {{ 'fd-list__title--no-wrap' if toggles.noWrap }}">{{item.title}}</span>
     {%- if toggles.useSecondary %}
-        <span class="fd-list__secondary">{{item.secondary}}</span>
+        <span class="fd-list__secondary  {{ 'fd-list__secondary--no-wrap' if toggles.noWrap }}">{{item.secondary}}</span>
     {%- endif %}
     {%- if toggles.useIconAfter %}
         <span class="fd-list__icon">{{item.iconAfter}}</span>
     {%- endif %}
+    {%- if toggles.multiInput %}
+    	</label>
+	{%- endif %}
 </li>
 {%- endmacro %}

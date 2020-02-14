@@ -1,8 +1,0 @@
-{
-    "id": "multi-input",
-    "name": "Multi Input",
-    "type": "text",
-    "properties": {
-        "placeholder": "Placeholder Text"
-    }
-}

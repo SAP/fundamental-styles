@@ -39,13 +39,26 @@
 
 <br><br>
 
-<h2>inline</h2>
+<h2>hover</h2>
 
 {% set example %}
 
-  {{ select(props, modifier={ block: ["inline"] } ) }}
+  {{ select(props, state={ hover: true } ) }}
 
-  {{ select(props, modifier={ block: ["inline", "compact"] } ) }}
+  {{ select(props, modifier={ block: ["compact"] }, state={ hover: true } ) }}
+
+{% endset %}
+{{ format(example) }}
+
+<br><br>
+
+<h2>Readonly</h2>
+
+{% set example %}
+
+  {{ select(props, state={ readonly: true } ) }}
+
+  {{ select(props, modifier={ block: ["compact"] }, state={ readonly: true } ) }}
 
 {% endset %}
 {{ format(example) }}

@@ -36,13 +36,20 @@ $(document).ready(function () {
             //dropdown
             var isDropdown = this.getAttribute("aria-haspopup") === "true";
             if (isDropdown) {
+                // Get all of elements with same aria controls ID
+                const elements = document.querySelectorAll('[aria-controls="' + targetId + '"]');
+
                 //trigger
                 var isExpanded = this.getAttribute("aria-expanded") === "true";
                 this.setAttribute("aria-expanded", !isExpanded);
                 if (isExpanded) {
-                    this.classList.remove('is-expanded');
+                    for (let i = 0; i < elements.length; i ++) {
+                      elements[i].classList.remove('is-expanded')
+                    }
                 } else {
-                    this.classList.add('is-expanded');
+                  for (let i = 0; i < elements.length; i ++) {
+                    elements[i].classList.add('is-expanded')
+                  }
                 }
                 //target
                 target.setAttribute("aria-hidden", isExpanded);
