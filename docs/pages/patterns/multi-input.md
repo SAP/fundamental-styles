@@ -9,11 +9,13 @@ folder: patterns
 summary:
 ---
 
-The multi-input component is an opinionated composition of the `input group`, `popover`, `checkbox`,`list` and `token` 
-components. The `popover` is shared between `combobox` and `select` component. In `Select` there are much more examples of 
-modifications that can be provided also to combobox component. <br/><br/>
-Multi Input pattern allows user to enter multiple values, which are displayed as a tokens. There is also provided editable
-input field fo help user with finding correct value, or adding custom value.
+The multi-input component is an opinionated composition of the `input group`, `popover`, `checkbox`, `list` and `token` components.
+The `popover` is shared between the combobox and select components. Please see the `select` documentation for the complete list of modifiers,
+That are also  supported by the `combobox` component.
+<br/><br/>
+`Multi Input` allows users to enter multiple values which are displayed as a tokens. 
+It provides an editable input field for filtering the list, and a dropdown menu with a list of the available options. 
+If the entries are not validated by the application, users can also enter custom values.    
 {: .docs-intro}
 
 ## Default and Compact sizes
@@ -199,8 +201,7 @@ input field fo help user with finding correct value, or adding custom value.
 
 
 ## Multi Input with Items Grouping
-Item group headers can be used, to categorize certain types of elements.
-
+In cases where the list items need to be categorized into groups, it is possible to add headers for each category as seen below. 
 {% capture multi-input-group %}
 <div class="fd-popover">
     <div class="fd-popover__control" aria-controls="F4H8X34a" aria-expanded="false" aria-haspopup="true">
@@ -309,11 +310,12 @@ Item group headers can be used, to categorize certain types of elements.
 
 
 ## Match Popover Body Size
-By default popover body takes as much width as it needs, of course with some limits. 
-In general it’s not dependent on control element.
-I can be changed, by adding `fd-popover__body--dropdown-fill` class to `fd-popover__body`.
-For all of Multi Input examples this class is added. There is example below how does it look without 
-`fd-popover__body--dropdown-fill`
+The default length size of the popover body is often different from the text length. 
+The body length can be adjusted to match the text length by adding the `fd-popover__body--dropdown-fill` class to the `fd-popover__body`.
+<br/><br/> 
+This class has been added to all the `Multi Input` examples above. 
+In the example you can see how the `Multi Input` component looks without the `fd-popover__body--dropdown-fill` modifier.
+
 {% capture multi-input-group %}
 <div class="fd-popover">
     <div class="fd-popover__control" aria-controls="F4HGFHX34a" aria-expanded="false" aria-haspopup="true">
@@ -400,8 +402,8 @@ For all of Multi Input examples this class is added. There is example below how 
 
 
 ## Readonly Multi Input
-To add readonly state, it is mandatory to add `readonly` attribute to `fd-nput-group` element
-Readonly state can be enabled also by adding `.is-readonly` class, or `aria-readonly="true"` 
+To make the `Multi Input` component read-only, the readonly attribute needs to be added to the `fd-nput-group` element.
+This can also be done by using the `.is-readonly` class or `aria-readonly="true"` attribute.
 
 {% capture disabled %}
 <div class="fd-popover">
@@ -463,8 +465,8 @@ Readonly state can be enabled also by adding `.is-readonly` class, or `aria-read
 
 
 ## Disabled Multi Input
-To add disabled state, it is mandatory to add `disabled` attribute to `fd-popover__control` and `fd-nput-group` element
-Disabled state can be enabled also by adding `.is-disabled` class, or `aria-disabled="true"` 
+To disable a `Multi Input` component, the disabled attribute needs to be added to the `fd-popover__control` and the `fd-input__control` elements.
+The disabled state can also be achieved by adding the `.is-disabled` class or the `aria-disabled="true"` attribute.
 
 {% capture readonly %}
 <div class="fd-popover">
@@ -528,10 +530,11 @@ Disabled state can be enabled also by adding `.is-disabled` class, or `aria-disa
 
 
 ## Semantic Multi Input
-Whole list of states for MultiInput can be found on `form` and `select` documentation.
-To add `semantic` mode into `multi-input`, it's mandatory to add one of `is-invalid` | `is-valid` | `is-warning` | `is-information` class into `fd-input-group`
-To add message inside `body`, it's needed to put element with `fd-list__message` class.
-Also the `fd-list--has-message` modifier should be added to `ul` element.
+For a complete list of states supported by the `Multi Input` component, please see the documentation for the form or select components.
+<br/><br/> 
+The semantic mode can be used to modify the combobox component by adding one of 
+`is-invalid` | `is-valid` | `is-warning` | `is-information` classes into fd-input-group element. 
+To add text in the `body` of the component, simply include your text in the `fd-list__message` under the `ul` element.
 
 {% capture semantic-input %}
 <div class="fd-popover">

@@ -9,12 +9,13 @@ folder: patterns
 summary:
 ---
 
-The combobox input component is an opinionated composition of the `input group`, `popover` and `list` components.
-The `popover` is shared between `multi-input` and `select` component. In `Select` there are much more examples of 
-modifications that can be provided also to combobox component. <br/><br/>
-Combobox allows users to select an item from a predefined list and it provides an editable input field for filtering 
-the list, and a dropdown menu with a list of the available options. If the entries are not validated by the application,
-users can also enter custom values.
+The Combobox Input component is an opinionated composition of the input group, popover and list components. 
+The popover and `dropdown list` is shared between the multi-input and select components.
+Please see the `select` documentation for the complete list of modifiers that are also  supported by the combobox component.
+<br/><br/>
+`Combobox` allows users to select an item from a predefined list. 
+It provides an editable input field for filtering the list, and a dropdown menu with a list of the available options. 
+If the entries are not validated by the application, users can also enter custom values.
 {: .docs-intro}
 
 {% capture default %}
@@ -90,8 +91,8 @@ users can also enter custom values.
 {% endcapture %}
 {% include display-component.html component=default %}
 
-## Combobox with 2 Columns
-Second column can be used, to add some general information about item, or shortcuts. 
+## Two Columns
+The `ComboBox` component can be customized by adding additional information in additional columns as seen below.
 
 {% capture default %}
 <div class="fd-popover">
@@ -128,8 +129,8 @@ Second column can be used, to add some general information about item, or shortc
 {% include display-component.html component=default %}
 
 ## Combobox with Items Grouping
-Item group headers can be used, to categorize certain types of elements.
-
+In cases where the list items need to be categorized into groups, it is possible to add headers for each category.
+ 
 {% capture combobox-group %}
 <div class="fd-popover">
   <div class="fd-popover__control" aria-controls="F4GcXLK6" aria-expanded="false" aria-haspopup="true">
@@ -180,11 +181,12 @@ Item group headers can be used, to categorize certain types of elements.
 
 
 ## Match Popover Body Size
-By default popover body takes as much width as it needs, of course with some limits. 
-In general it’s not dependent on control element.
-I can be changed, by adding `fd-popover__body--dropdown-fill` class to `fd-popover__body`.
-For all of Combobox examples this class is added. There is example below how does it look without 
-`fd-popover__body--dropdown-fill`
+The default length size of the popover body is often different from the text length.
+The body length can be adjusted to match the text length by adding the `fd-popover__body--dropdown-fill` 
+class to the `fd-popover__body`. 
+This class has been added to all the `Combobox` examples above.
+In the example you can see how the `Combobox` component looks without the `fd-popover__body--dropdown-fill` modifier.
+
 {% capture combobox-fill %}
 <div class="fd-popover">
   <div class="fd-popover__control" aria-controls="F4HTFDLK6" aria-expanded="false" aria-haspopup="true">
@@ -216,8 +218,8 @@ For all of Combobox examples this class is added. There is example below how doe
 {% include display-component.html component=combobox-fill %}
 
 ## Disabled Mode
-To add disabled state, it is mandatory to add `disabled` attribute to `fd-popover__control` and `fd-nput-group` element
-Disabled state can be enabled also by adding `.is-disabled` class, or `aria-disabled="true"` 
+To disable a `Combobox` component, the disabled attribute needs to be added to the `fd-popover__control` and the `fd-input__control` elements.
+The disabled state can also be achieved by adding the `.is-disabled` class or the `aria-disabled="true"` attribute.
 
 {% capture disabled %}
 <div class="fd-popover">
@@ -236,8 +238,8 @@ Disabled state can be enabled also by adding `.is-disabled` class, or `aria-disa
 
 
 ## Readonly Mode
-To add readonly state, it is mandatory to add `readonly` attribute to `fd-nput-group` element
-Readonly state can be enabled also by adding `.is-readonly` class, or `aria-readonly="true"` 
+To make the `Combobox` component read-only, the readonly attribute needs to be added to the `fd-nput-group` element.
+This can also be done by using the `.is-readonly` class or `aria-readonly="true"` attribute.
 
 {% capture readonly %}
 <div class="fd-popover">
@@ -250,10 +252,12 @@ Readonly state can be enabled also by adding `.is-readonly` class, or `aria-read
 
 
 ## Semantic Mode
-Whole list of states for Combobox can be found on `form` and `select` documentation.
-To add `semantic` mode into `combobox`, it's mandatory to add one of `is-invalid` | `is-valid` | `is-warning` | `is-information` class into `fd-input-group`
-To add message inside `body`, it's needed to put element with `fd-list__message` class.
-Also the `fd-list--has-message` modifier should be added to `ul` element.
+For a complete list of states supported by the `combobox` component, please see the documentation for the form or select components.
+<br/><br/> 
+The semantic mode can be used to modify the combobox component by adding one of 
+`is-invalid` | `is-valid` | `is-warning` | `is-information` classes into fd-input-group element. 
+To add text in the `body` of the component, simply include your text in the `fd-list__message` under the `ul` element.
+
 
 {% capture semantic %}
 <div class="fd-popover">
