@@ -1,7 +1,7 @@
 ---
 title: Switch
 id: switch
-keywords: switch
+keywords: toggle, switch
 sidebar: left-navigation-sidebar
 toc: false
 permalink: components/switch.html
