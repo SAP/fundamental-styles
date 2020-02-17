@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.0-rc.30"></a>
+# [0.6.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.6.0-rc.29...v0.6.0-rc.30) (2020-02-17)
+
+
+### Features
+
+* update switch component ([#663](https://github.com/SAP/fundamental-styles/issues/663)) ([949f50a](https://github.com/SAP/fundamental-styles/commit/949f50a))
+
+
+
 <a name="0.6.0-rc.29"></a>
 # [0.6.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.6.0-rc.28...v0.6.0-rc.29) (2020-02-15)
 
