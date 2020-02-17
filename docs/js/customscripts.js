@@ -269,25 +269,25 @@ function stepInputValue(inputId, stepDirection) {
 function toggleDialog(dialogId, show) {
     let dialog = document.getElementById(dialogId);
     if (show) {
-        dialog.classList.add("fd-dialog--active");
+        $(dialog).addClass("fd-dialog--active")
     } else {
-        dialog.classList.remove("fd-dialog--active");
+        $(dialog).removeClass("fd-dialog--active")
     }
 }
+
 
 function draggableDialog() {
     let draggableDialogs = document.getElementsByClassName('fd-dialog__content--draggable-grab');
 
-    for (let dialog of draggableDialogs) {
-        let dialogHeader = dialog.getElementsByClassName('fd-dialog__header')[0];
+    for (let i = 0; i < draggableDialogs.length; i++) {
+        let dialogHeader = draggableDialogs[i].getElementsByClassName('fd-dialog__header')[0];
         if (dialogHeader) {
             dialogHeader.onmousedown = function () {
-                dialog.classList.add('fd-dialog__content--draggable-grabbing');
+                $(draggableDialogs[i]).addClass('fd-dialog__content--draggable-grabbing');
             };
             dialogHeader.onmouseup = function () {
-                dialog.classList.remove('fd-dialog__content--draggable-grabbing');
+                $(draggableDialogs[i]).removeClass('fd-dialog__content--draggable-grabbing');
             };
         }
     }
 }
-
