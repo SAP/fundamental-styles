@@ -27,7 +27,7 @@
 </script>
 <!-- End Google Tag Manager -->
 
-<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1579537972013046485">
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1581959122328612407">
 <link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -62,13 +62,13 @@
             Fundamental Library<span class="docs-top-nav__logo__accent"> Styles</span>
         </a>
 
-        <button id="mobile-sidenav-btn" class="fd-button--light sap-icon--menu2" aria-haspopup="true" aria-expanded="false" aria-label="Menu"></button>
+        <button id="mobile-sidenav-btn" class="fd-button--light sap-icon--menu2 header-section__sap-icon--menu2" aria-haspopup="true" aria-expanded="false" aria-label="Menu"></button>
 
         <!-- support links -->
         <div class="docs-top-nav__support fd-has-float-right">
 
             <span class="fd-has-align-items-center fd-has-margin-right-small">
-                <span>v0.5.0</span>
+                <span>v0.6.0</span>
                 <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
                     <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
                         <title>GitHub</title>
@@ -387,6 +387,16 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/components/bar.html"
+                   class="side-nav__links-link">Bar</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/busy-indicator.html"
                    class="side-nav__links-link">Busy Indicator</a>
             </li>
@@ -419,16 +429,6 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/calendar.html"
                    class="side-nav__links-link">Calendar</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
-                <a href="/fundamental-styles/components/dropdown.html"
-                   class="side-nav__links-link">Dropdown</a>
             </li>
             
             
@@ -557,6 +557,16 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/components/message-strip.html"
+                   class="side-nav__links-link">Message Strip</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/modal.html"
                    class="side-nav__links-link">Modal</a>
             </li>
@@ -647,6 +657,16 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/components/switch.html"
+                   class="side-nav__links-link">Switch</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/table.html"
                    class="side-nav__links-link">Table</a>
             </li>
@@ -689,16 +709,6 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/token.html"
                    class="side-nav__links-link">Token</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
-                <a href="/fundamental-styles/components/toggle.html"
-                   class="side-nav__links-link">Toggle / Switch</a>
             </li>
             
             
@@ -829,18 +839,18 @@
 		
 <div class="fd-shellbar">
   <div class="fd-shellbar__group fd-shellbar__group--product">
-    <a href="#" class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP" /></a>
+    <span class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP" /></span>
   <span class="fd-shellbar__title">Corporate Portal</span>
   </div>
   <div class="fd-shellbar__group fd-shellbar__group--actions">
     <div class="fd-shellbar__action">
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
-          <div aria-controls="WV3AY276" aria-expanded="false" aria-haspopup="true" role="button">
-            <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-has-background-color-accent-11">WW</span>
+          <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="WV3AY276" aria-expanded="false" aria-haspopup="true" role="button">
+            <span class="fd-identifier fd-identifier--xs fd-identifier--circle">WW</span>
           </div>
         </div>
-        <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="WV3AY276">
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="WV3AY276">
           <nav class="fd-menu">
             <ul class="fd-menu__list">
               <li><a role="button" class="fd-menu__item">Settings</a></li>
@@ -858,18 +868,18 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__group fd-shellbar__group--product"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-shellbar__logo"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"//unpkg.com/fundamental-styles/dist/images/sap-logo.png"</span> <span class="na">srcset=</span><span class="s">"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x"</span> <span class="na">width=</span><span class="s">"48"</span> <span class="na">height=</span><span class="s">"24"</span> <span class="na">alt=</span><span class="s">"SAP"</span><span class="nt">&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-shellbar__logo"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"//unpkg.com/fundamental-styles/dist/images/sap-logo.png"</span> <span class="na">srcset=</span><span class="s">"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x"</span> <span class="na">width=</span><span class="s">"48"</span> <span class="na">height=</span><span class="s">"24"</span> <span class="na">alt=</span><span class="s">"SAP"</span><span class="nt">&gt;&lt;/span&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-shellbar__title"</span><span class="nt">&gt;</span>Corporate Portal<span class="nt">&lt;/span&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__group fd-shellbar__group--actions"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__action"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover fd-popover--right"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">aria-controls=</span><span class="s">"WV3AY276"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-identifier fd-identifier--xs fd-identifier--circle fd-has-background-color-accent-11"</span><span class="nt">&gt;</span>WW<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button fd-shellbar__button fd-user-menu__control"</span> <span class="na">aria-controls=</span><span class="s">"WV3AY276"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-identifier fd-identifier--xs fd-identifier--circle"</span><span class="nt">&gt;</span>WW<span class="nt">&lt;/span&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"WV3AY276"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"WV3AY276"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"fd-menu"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -891,65 +901,52 @@
 		
 <div class="fd-shellbar">
   <div class="fd-shellbar__group fd-shellbar__group--product">
-    <a href="#" class="fd-shellbar__logo">
+    <span class="fd-shellbar__logo">
       <img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP" />
-    </a>
-    <div class="fd-product-menu">
-      <div class="fd-popover fd-popover--right">
-        <div class="fd-popover__control">
-          <button class="fd-product-menu__control" aria-controls="9GLB26941" aria-haspopup="true" aria-expanded="false">
-            <span class="fd-shellbar__title">Corporate Portal</span>
-          </button>
-        </div>
-        <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="9GLB26941">
-          <nav class="fd-menu">
-            <ul class="fd-menu__list">
-              <li><a role="button" class="fd-menu__item">Application A</a></li>
-              <li><a role="button" class="fd-menu__item">Application B</a></li>
-              <li><a role="button" class="fd-menu__item">Application C</a></li>
-              <li><a role="button" class="fd-menu__item">Application D</a></li>
-            </ul>
-          </nav>
+    </span>
+    <div class="fd-popover">
+      <div class="fd-popover__control">
+        <button class="fd-button--light fd-button--menu fd-shellbar__button--menu" aria-controls="9GLB26941" aria-haspopup="true" aria-expanded="false">
+          <span class="fd-shellbar__title">Corporate Portal</span>
+        </button>
+      </div>
+      <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="9GLB26941">
+        <nav class="fd-menu">
+          <ul class="fd-menu__list">
+            <li><a role="button" class="fd-menu__item">Application A</a></li>
+            <li><a role="button" class="fd-menu__item">Application B</a></li>
+            <li><a role="button" class="fd-menu__item">Application C</a></li>
+            <li><a role="button" class="fd-menu__item">Application D</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+	<div class="fd-shellbar__subtitle">Subtitle</div>
+  </div>
+  <div class="fd-shellbar__group fd-shellbar__group--actions">
+    <div class="fd-shellbar__action fd-shellbar__action--desktop">    
+      <div class="fd-popover__control">
+        <div aria-label="Image label" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
+          <div class="fd-input-group fd-shellbar__input-group">
+            <input type="text" class="fd-input fd-input-group__input fd-shellbar__input-group__input" id="F4GcX348b1" value="Sear" placeholder="Search..." />
+            <span class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button">
+              <button class="fd-shellbar__button fd-button sap-icon--decline"></button>
+            </span>
+          </div>
         </div>
       </div>
     </div>
-		<div class="fd-shellbar__subtitle">Subtitle</div>
-  </div>
-  <div class="fd-shellbar__group fd-shellbar__group--actions">
-      <div class="fd-shellbar__action fd-shellbar__action--desktop">    
-        <div class="fd-search-input">
-         <div class="fd-popover">
-          <div class="fd-popover__control">
-              <div aria-label="Image label" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
-                  <div class="fd-input-group">
-                      <input type="text" class="fd-input fd-input-group__input" id="F4GcX348b1" value="Sear" placeholder="Search..." aria-hidden="true" />
-                      <span class="fd-input-group__addon fd-input-group__addon--button">
-                          <button class="fd-shellbar__button fd-button sap-icon--search"></button>
-                      </span>
-                  </div>
-              </div>
-          </div>
-          <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="F4GcX348b">
-              <nav class="fd-menu">
-                <ul class="fd-menu__list">
-                    <li><a href="#" class="fd-menu__item"><strong>Sear</strong>ch Result A</a></li>
-                    <li><a href="#" class="fd-menu__item"><strong>Sear</strong>ch Result B</a></li>
-                    <li><a href="#" class="fd-menu__item"><strong>Sear</strong>ch Result C</a></li>
-                    <li><a href="#" class="fd-menu__item"><strong>Sear</strong>ch Result D</a></li>
-                </ul>
-              </nav>
-          </div>
-        </div>
-      </div>
+    <div class="fd-shellbar__action fd-shellbar__action--desktop">
+      <button class="fd-button fd-shellbar__button sap-icon--search" aria-label="Search"></button>
     </div>
     <div class="fd-shellbar__action">
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
-          <div aria-controls="ZY3AY276" aria-expanded="false" aria-haspopup="true" role="button">
-            <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url(/fundamental-styles/images/thumbs/headshot-male.jpg);" aria-label="William Wallingham">WW</span>
+          <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="ZY3AY276" aria-expanded="false" aria-haspopup="true" role="button">
+            <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" aria-label="William Wallingham">WW</span>
           </div>
         </div>
-        <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="ZY3AY276">
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="ZY3AY276">
           <nav class="fd-menu">
             <ul class="fd-menu__list">
               <li><a role="button" class="fd-menu__item">Settings</a></li>
@@ -967,65 +964,52 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__group fd-shellbar__group--product"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-shellbar__logo"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-shellbar__logo"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"//unpkg.com/fundamental-styles/dist/images/sap-logo.png"</span> <span class="na">srcset=</span><span class="s">"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x"</span> <span class="na">width=</span><span class="s">"48"</span> <span class="na">height=</span><span class="s">"24"</span> <span class="na">alt=</span><span class="s">"SAP"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-product-menu"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover fd-popover--right"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-product-menu__control"</span> <span class="na">aria-controls=</span><span class="s">"9GLB26941"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-shellbar__title"</span><span class="nt">&gt;</span>Corporate Portal<span class="nt">&lt;/span&gt;</span>
-          <span class="nt">&lt;/button&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"9GLB26941"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"fd-menu"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Application A<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-              <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Application B<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-              <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Application C<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-              <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Application D<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;/ul&gt;</span>
-          <span class="nt">&lt;/nav&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light fd-button--menu fd-shellbar__button--menu"</span> <span class="na">aria-controls=</span><span class="s">"9GLB26941"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-shellbar__title"</span><span class="nt">&gt;</span>Corporate Portal<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"9GLB26941"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"fd-menu"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Application A<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Application B<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Application C<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Application D<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/nav&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__subtitle"</span><span class="nt">&gt;</span>Subtitle<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__group fd-shellbar__group--actions"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__action fd-shellbar__action--desktop"</span><span class="nt">&gt;</span>    
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">aria-label=</span><span class="s">"Image label"</span> <span class="na">aria-controls=</span><span class="s">"F4GcX348b"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group fd-shellbar__input-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"fd-input fd-input-group__input fd-shellbar__input-group__input"</span> <span class="na">id=</span><span class="s">"F4GcX348b1"</span> <span class="na">value=</span><span class="s">"Sear"</span> <span class="na">placeholder=</span><span class="s">"Search..."</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-shellbar__button fd-button sap-icon--decline"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__subtitle"</span><span class="nt">&gt;</span>Subtitle<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__group fd-shellbar__group--actions"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__action fd-shellbar__action--desktop"</span><span class="nt">&gt;</span>    
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-search-input"</span><span class="nt">&gt;</span>
-         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;div</span> <span class="na">aria-label=</span><span class="s">"Image label"</span> <span class="na">aria-controls=</span><span class="s">"F4GcX348b"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"fd-input fd-input-group__input"</span> <span class="na">id=</span><span class="s">"F4GcX348b1"</span> <span class="na">value=</span><span class="s">"Sear"</span> <span class="na">placeholder=</span><span class="s">"Search..."</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon fd-input-group__addon--button"</span><span class="nt">&gt;</span>
-                          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-shellbar__button fd-button sap-icon--search"</span><span class="nt">&gt;&lt;/button&gt;</span>
-                      <span class="nt">&lt;/span&gt;</span>
-                  <span class="nt">&lt;/div&gt;</span>
-              <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"F4GcX348b"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"fd-menu"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;&lt;strong&gt;</span>Sear<span class="nt">&lt;/strong&gt;</span>ch Result A<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;&lt;strong&gt;</span>Sear<span class="nt">&lt;/strong&gt;</span>ch Result B<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;&lt;strong&gt;</span>Sear<span class="nt">&lt;/strong&gt;</span>ch Result C<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;&lt;strong&gt;</span>Sear<span class="nt">&lt;/strong&gt;</span>ch Result D<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;/ul&gt;</span>
-              <span class="nt">&lt;/nav&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__action fd-shellbar__action--desktop"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-shellbar__button sap-icon--search"</span> <span class="na">aria-label=</span><span class="s">"Search"</span><span class="nt">&gt;&lt;/button&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__action"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover fd-popover--right"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">aria-controls=</span><span class="s">"ZY3AY276"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail"</span> <span class="na">style=</span><span class="s">"background-image: url(/fundamental-styles/images/thumbs/headshot-male.jpg);"</span> <span class="na">aria-label=</span><span class="s">"William Wallingham"</span><span class="nt">&gt;</span>WW<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button fd-shellbar__button fd-user-menu__control"</span> <span class="na">aria-controls=</span><span class="s">"ZY3AY276"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail"</span> <span class="na">style=</span><span class="s">"background-image: url('https://placeimg.com/400/400/nature');"</span> <span class="na">aria-label=</span><span class="s">"William Wallingham"</span><span class="nt">&gt;</span>WW<span class="nt">&lt;/span&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"ZY3AY276"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"ZY3AY276"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"fd-menu"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -1047,39 +1031,28 @@
 		
 <div class="fd-shellbar">
   <div class="fd-shellbar__group fd-shellbar__group--product">
-    <a href="#" class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP" /></a>
+    <span class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP" /></span>
   <span class="fd-shellbar__title">Corporate Portal</span>
   </div>
   <div class="fd-shellbar__group fd-shellbar__group--actions">
-    <div class="fd-shellbar__action fd-shellbar__action--desktop">
-      <div class="fd-search-input">
-         <div class="fd-popover">
-          <div class="fd-popover__control">
-              <div aria-label="Image label" aria-controls="UIO6J688" aria-expanded="false" aria-haspopup="true">
-                  <div class="fd-input-group">
-                      <input type="text" class="fd-input fd-input-group__input" id="UIO6J6881" value="Sear" aria-hidden="true" />
-                      <span class="fd-input-group__addon fd-input-group__addon--button">
-                          <button class="fd-shellbar__button fd-button sap-icon--search"></button>
-                      </span>
-                  </div>
-              </div>
-          </div>
-          <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="UIO6J688">
-              <nav class="fd-menu">
-                <ul class="fd-menu__list">
-                    <li><a href="#" class="fd-menu__item"><strong>Sear</strong>ch Result A</a></li>
-                    <li><a href="#" class="fd-menu__item"><strong>Sear</strong>ch Result B</a></li>
-                    <li><a href="#" class="fd-menu__item"><strong>Sear</strong>ch Result C</a></li>
-                    <li><a href="#" class="fd-menu__item"><strong>Sear</strong>ch Result D</a></li>
-                </ul>
-              </nav>
+    <div class="fd-shellbar__action fd-shellbar__action--desktop">    
+      <div class="fd-popover__control">
+        <div aria-label="Image label" aria-controls="UIO6J688" aria-expanded="false" aria-haspopup="true">
+          <div class="fd-input-group fd-shellbar__input-group">
+            <input type="text" class="fd-input fd-input-group__input fd-shellbar__input-group__input" id="UIO6J6881" value="Sear" placeholder="Search..." />
+            <span class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button">
+              <button class="fd-shellbar__button fd-button sap-icon--navigation-down-arrow"></button>
+            </span>
           </div>
         </div>
       </div>
     </div>
+    <div class="fd-shellbar__action fd-shellbar__action--desktop">
+      <button class="fd-button fd-shellbar__button sap-icon--search" aria-label="Search"></button>
+    </div>
       <div class="fd-shellbar__action fd-shellbar__action--desktop">
         <button class="fd-button fd-shellbar__button sap-icon--bell" aria-label="Notifications">
-        <span class="fd-counter fd-counter--notification" aria-label="Unread count">25</span></button>
+        <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification" aria-label="Unread count">251234</span></button>
       </div>
       <div class="fd-shellbar__action fd-shellbar__action--desktop">
         <button class="fd-button fd-shellbar__button sap-icon--pool" aria-label="Pool"></button>
@@ -1090,10 +1063,10 @@
             <div class="fd-popover__control">
               <div class="fd-shellbar-collapse--control" aria-controls="CWaGX278" aria-expanded="false" aria-haspopup="true" role="button">
                 <button class="fd-button fd-shellbar__button sap-icon--overflow" aria-controls="undefined" aria-haspopup="true" aria-expanded="false">
-                <span class="fd-counter fd-counter--notification" aria-label="Unread count">25</span></button>
+                <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification" aria-label="Unread count">25</span></button>
               </div>
             </div>
-            <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="CWaGX278">
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="CWaGX278">
               <nav class="fd-menu">
                 <ul class="fd-menu__list">
                   <li><a role="button" class="fd-menu__item">Search</a></li>
@@ -1108,11 +1081,11 @@
       <div class="fd-shellbar__action">
         <div class="fd-popover fd-popover--right">
           <div class="fd-popover__control">
-            <div aria-controls="DD35G276" aria-expanded="false" aria-haspopup="true" role="button">
-              <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-has-background-color-accent-11">WW</span>
+            <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="DD35G276" aria-expanded="false" aria-haspopup="true" role="button">
+              <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-shellbar__identifier--circle">WW</span>
             </div>
           </div>
-          <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="DD35G276">
+          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="DD35G276">
             <nav class="fd-menu">
               <ul class="fd-menu__list">
                 <li><a role="button" class="fd-menu__item">Settings</a></li>
@@ -1131,39 +1104,28 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__group fd-shellbar__group--product"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-shellbar__logo"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"//unpkg.com/fundamental-styles/dist/images/sap-logo.png"</span> <span class="na">srcset=</span><span class="s">"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x"</span> <span class="na">width=</span><span class="s">"48"</span> <span class="na">height=</span><span class="s">"24"</span> <span class="na">alt=</span><span class="s">"SAP"</span><span class="nt">&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-shellbar__logo"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"//unpkg.com/fundamental-styles/dist/images/sap-logo.png"</span> <span class="na">srcset=</span><span class="s">"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x"</span> <span class="na">width=</span><span class="s">"48"</span> <span class="na">height=</span><span class="s">"24"</span> <span class="na">alt=</span><span class="s">"SAP"</span><span class="nt">&gt;&lt;/span&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-shellbar__title"</span><span class="nt">&gt;</span>Corporate Portal<span class="nt">&lt;/span&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__group fd-shellbar__group--actions"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__action fd-shellbar__action--desktop"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-search-input"</span><span class="nt">&gt;</span>
-         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;div</span> <span class="na">aria-label=</span><span class="s">"Image label"</span> <span class="na">aria-controls=</span><span class="s">"UIO6J688"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"fd-input fd-input-group__input"</span> <span class="na">id=</span><span class="s">"UIO6J6881"</span> <span class="na">value=</span><span class="s">"Sear"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon fd-input-group__addon--button"</span><span class="nt">&gt;</span>
-                          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-shellbar__button fd-button sap-icon--search"</span><span class="nt">&gt;&lt;/button&gt;</span>
-                      <span class="nt">&lt;/span&gt;</span>
-                  <span class="nt">&lt;/div&gt;</span>
-              <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"UIO6J688"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"fd-menu"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;&lt;strong&gt;</span>Sear<span class="nt">&lt;/strong&gt;</span>ch Result A<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;&lt;strong&gt;</span>Sear<span class="nt">&lt;/strong&gt;</span>ch Result B<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;&lt;strong&gt;</span>Sear<span class="nt">&lt;/strong&gt;</span>ch Result C<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;&lt;strong&gt;</span>Sear<span class="nt">&lt;/strong&gt;</span>ch Result D<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;/ul&gt;</span>
-              <span class="nt">&lt;/nav&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__action fd-shellbar__action--desktop"</span><span class="nt">&gt;</span>    
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">aria-label=</span><span class="s">"Image label"</span> <span class="na">aria-controls=</span><span class="s">"UIO6J688"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-input-group fd-shellbar__input-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"fd-input fd-input-group__input fd-shellbar__input-group__input"</span> <span class="na">id=</span><span class="s">"UIO6J6881"</span> <span class="na">value=</span><span class="s">"Sear"</span> <span class="na">placeholder=</span><span class="s">"Search..."</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-shellbar__button fd-button sap-icon--navigation-down-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;/span&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__action fd-shellbar__action--desktop"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-shellbar__button sap-icon--search"</span> <span class="na">aria-label=</span><span class="s">"Search"</span><span class="nt">&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__action fd-shellbar__action--desktop"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-shellbar__button sap-icon--bell"</span> <span class="na">aria-label=</span><span class="s">"Notifications"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-counter fd-counter--notification"</span> <span class="na">aria-label=</span><span class="s">"Unread count"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-counter fd-counter--notification fd-shellbar__counter--notification"</span> <span class="na">aria-label=</span><span class="s">"Unread count"</span><span class="nt">&gt;</span>251234<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__action fd-shellbar__action--desktop"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-shellbar__button sap-icon--pool"</span> <span class="na">aria-label=</span><span class="s">"Pool"</span><span class="nt">&gt;&lt;/button&gt;</span>
@@ -1174,10 +1136,10 @@
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar-collapse--control"</span> <span class="na">aria-controls=</span><span class="s">"CWaGX278"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-shellbar__button sap-icon--overflow"</span> <span class="na">aria-controls=</span><span class="s">"undefined"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-counter fd-counter--notification"</span> <span class="na">aria-label=</span><span class="s">"Unread count"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-counter fd-counter--notification fd-shellbar__counter--notification"</span> <span class="na">aria-label=</span><span class="s">"Unread count"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
               <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"CWaGX278"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"CWaGX278"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"fd-menu"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list"</span><span class="nt">&gt;</span>
                   <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -1192,11 +1154,11 @@
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__action"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover fd-popover--right"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">aria-controls=</span><span class="s">"DD35G276"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-identifier fd-identifier--xs fd-identifier--circle fd-has-background-color-accent-11"</span><span class="nt">&gt;</span>WW<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button fd-shellbar__button fd-user-menu__control"</span> <span class="na">aria-controls=</span><span class="s">"DD35G276"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-identifier fd-identifier--xs fd-identifier--circle fd-shellbar__identifier--circle"</span><span class="nt">&gt;</span>WW<span class="nt">&lt;/span&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"DD35G276"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"DD35G276"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"fd-menu"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -1221,23 +1183,23 @@ For more information about the Product Switch, see <a href="product-switch.html"
 
 <div class="fd-shellbar">
   <div class="fd-shellbar__group fd-shellbar__group--product">
-    <a href="#" class="fd-shellbar__logo">
-      <svg width="286" height="143" viewBox="0 0 286 143" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="-91.234%" y1="50%" x2="98.574%" y2="50%" id="a"><stop stop-color="#32B79D" stop-opacity=".59" offset="0%" /><stop stop-color="#33EAFF" stop-opacity=".59" offset="35.525%" /><stop stop-color="#7FCAFF" stop-opacity=".59" offset="73.603%" /><stop stop-color="#84A2FF" stop-opacity=".59" offset="100%" /></linearGradient></defs><g transform="translate(-19)" fill="url(#a)" fill-rule="evenodd"><path d="M114.232.963h190.464c0 16.966-13.754 30.72-30.72 30.72H83.512c0-16.966 13.754-30.72 30.72-30.72zM80.44 56.259h116.736c0 16.966-13.754 30.72-30.72 30.72H49.72c0-16.966 13.754-30.72 30.72-30.72zM49.72 111.555h18.432c0 16.966-13.754 30.72-30.72 30.72H19c0-16.966 13.754-30.72 30.72-30.72z" /></g></svg>
-    </a>
+    <span class="fd-shellbar__logo">
+      <svg style="height: 32px;" width="286" height="143" viewBox="0 0 286 143" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="-91.234%" y1="50%" x2="98.574%" y2="50%" id="a"><stop stop-color="#32B79D" stop-opacity=".59" offset="0%" /><stop stop-color="#33EAFF" stop-opacity=".59" offset="35.525%" /><stop stop-color="#7FCAFF" stop-opacity=".59" offset="73.603%" /><stop stop-color="#84A2FF" stop-opacity=".59" offset="100%" /></linearGradient></defs><g transform="translate(-19)" fill="url(#a)" fill-rule="evenodd"><path d="M114.232.963h190.464c0 16.966-13.754 30.72-30.72 30.72H83.512c0-16.966 13.754-30.72 30.72-30.72zM80.44 56.259h116.736c0 16.966-13.754 30.72-30.72 30.72H49.72c0-16.966 13.754-30.72 30.72-30.72zM49.72 111.555h18.432c0 16.966-13.754 30.72-30.72 30.72H19c0-16.966 13.754-30.72 30.72-30.72z" /></g></svg>
+    </span>
     <span class="fd-shellbar__title">Corporate Portal</span>
   </div>
   <div class="fd-shellbar__group fd-shellbar__group--copilot">
-    <img src="//unpkg.com/fundamental-styles/dist/images/copilot.png" alt="CoPilot" height="30" width="30" />
+    <button class="fd-button fd-shellbar__button"><img src="//unpkg.com/fundamental-styles/dist/images/copilot.png" alt="CoPilot" height="30" width="30" /></button>
   </div>
   <div class="fd-shellbar__group fd-shellbar__group--actions">
       <div class="fd-shellbar__action">
         <div class="fd-popover fd-popover--right">
           <div class="fd-popover__control">
-            <div class="fd-user-menu__control" aria-controls="MKFAY276" aria-expanded="false" aria-haspopup="true" role="button">
-              <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url(/fundamental-styles/images/thumbs/headshot-male.jpg);" aria-label="William Wallingham">WW</span>
+            <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="MKFAY276" aria-expanded="false" aria-haspopup="true" role="button">
+              <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" aria-label="William Wallingham">WW</span>
             </div>
           </div>
-          <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="MKFAY276">
+          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="MKFAY276">
             <nav class="fd-menu">
               <ul class="fd-menu__list">
                 <li><a role="button" class="fd-menu__item">Settings</a></li>
@@ -1363,23 +1325,23 @@ For more information about the Product Switch, see <a href="product-switch.html"
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__group fd-shellbar__group--product"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-shellbar__logo"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;svg</span> <span class="na">width=</span><span class="s">"286"</span> <span class="na">height=</span><span class="s">"143"</span> <span class="na">viewBox=</span><span class="s">"0 0 286 143"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span><span class="nt">&gt;&lt;defs&gt;&lt;linearGradient</span> <span class="na">x1=</span><span class="s">"-91.234%"</span> <span class="na">y1=</span><span class="s">"50%"</span> <span class="na">x2=</span><span class="s">"98.574%"</span> <span class="na">y2=</span><span class="s">"50%"</span> <span class="na">id=</span><span class="s">"a"</span><span class="nt">&gt;&lt;stop</span> <span class="na">stop-color=</span><span class="s">"#32B79D"</span> <span class="na">stop-opacity=</span><span class="s">".59"</span> <span class="na">offset=</span><span class="s">"0%"</span><span class="nt">/&gt;&lt;stop</span> <span class="na">stop-color=</span><span class="s">"#33EAFF"</span> <span class="na">stop-opacity=</span><span class="s">".59"</span> <span class="na">offset=</span><span class="s">"35.525%"</span><span class="nt">/&gt;&lt;stop</span> <span class="na">stop-color=</span><span class="s">"#7FCAFF"</span> <span class="na">stop-opacity=</span><span class="s">".59"</span> <span class="na">offset=</span><span class="s">"73.603%"</span><span class="nt">/&gt;&lt;stop</span> <span class="na">stop-color=</span><span class="s">"#84A2FF"</span> <span class="na">stop-opacity=</span><span class="s">".59"</span> <span class="na">offset=</span><span class="s">"100%"</span><span class="nt">/&gt;&lt;/linearGradient&gt;&lt;/defs&gt;&lt;g</span> <span class="na">transform=</span><span class="s">"translate(-19)"</span> <span class="na">fill=</span><span class="s">"url(#a)"</span> <span class="na">fill-rule=</span><span class="s">"evenodd"</span><span class="nt">&gt;&lt;path</span> <span class="na">d=</span><span class="s">"M114.232.963h190.464c0 16.966-13.754 30.72-30.72 30.72H83.512c0-16.966 13.754-30.72 30.72-30.72zM80.44 56.259h116.736c0 16.966-13.754 30.72-30.72 30.72H49.72c0-16.966 13.754-30.72 30.72-30.72zM49.72 111.555h18.432c0 16.966-13.754 30.72-30.72 30.72H19c0-16.966 13.754-30.72 30.72-30.72z"</span><span class="nt">/&gt;&lt;/g&gt;&lt;/svg&gt;</span>
-    <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-shellbar__logo"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;svg</span> <span class="na">style=</span><span class="s">"height: 32px;"</span> <span class="na">width=</span><span class="s">"286"</span> <span class="na">height=</span><span class="s">"143"</span> <span class="na">viewBox=</span><span class="s">"0 0 286 143"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span><span class="nt">&gt;&lt;defs&gt;&lt;linearGradient</span> <span class="na">x1=</span><span class="s">"-91.234%"</span> <span class="na">y1=</span><span class="s">"50%"</span> <span class="na">x2=</span><span class="s">"98.574%"</span> <span class="na">y2=</span><span class="s">"50%"</span> <span class="na">id=</span><span class="s">"a"</span><span class="nt">&gt;&lt;stop</span> <span class="na">stop-color=</span><span class="s">"#32B79D"</span> <span class="na">stop-opacity=</span><span class="s">".59"</span> <span class="na">offset=</span><span class="s">"0%"</span><span class="nt">/&gt;&lt;stop</span> <span class="na">stop-color=</span><span class="s">"#33EAFF"</span> <span class="na">stop-opacity=</span><span class="s">".59"</span> <span class="na">offset=</span><span class="s">"35.525%"</span><span class="nt">/&gt;&lt;stop</span> <span class="na">stop-color=</span><span class="s">"#7FCAFF"</span> <span class="na">stop-opacity=</span><span class="s">".59"</span> <span class="na">offset=</span><span class="s">"73.603%"</span><span class="nt">/&gt;&lt;stop</span> <span class="na">stop-color=</span><span class="s">"#84A2FF"</span> <span class="na">stop-opacity=</span><span class="s">".59"</span> <span class="na">offset=</span><span class="s">"100%"</span><span class="nt">/&gt;&lt;/linearGradient&gt;&lt;/defs&gt;&lt;g</span> <span class="na">transform=</span><span class="s">"translate(-19)"</span> <span class="na">fill=</span><span class="s">"url(#a)"</span> <span class="na">fill-rule=</span><span class="s">"evenodd"</span><span class="nt">&gt;&lt;path</span> <span class="na">d=</span><span class="s">"M114.232.963h190.464c0 16.966-13.754 30.72-30.72 30.72H83.512c0-16.966 13.754-30.72 30.72-30.72zM80.44 56.259h116.736c0 16.966-13.754 30.72-30.72 30.72H49.72c0-16.966 13.754-30.72 30.72-30.72zM49.72 111.555h18.432c0 16.966-13.754 30.72-30.72 30.72H19c0-16.966 13.754-30.72 30.72-30.72z"</span><span class="nt">/&gt;&lt;/g&gt;&lt;/svg&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-shellbar__title"</span><span class="nt">&gt;</span>Corporate Portal<span class="nt">&lt;/span&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__group fd-shellbar__group--copilot"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"//unpkg.com/fundamental-styles/dist/images/copilot.png"</span> <span class="na">alt=</span><span class="s">"CoPilot"</span> <span class="na">height=</span><span class="s">"30"</span> <span class="na">width=</span><span class="s">"30"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-shellbar__button"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"//unpkg.com/fundamental-styles/dist/images/copilot.png"</span> <span class="na">alt=</span><span class="s">"CoPilot"</span> <span class="na">height=</span><span class="s">"30"</span> <span class="na">width=</span><span class="s">"30"</span> <span class="nt">/&gt;&lt;/button&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__group fd-shellbar__group--actions"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__action"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover fd-popover--right"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-user-menu__control"</span> <span class="na">aria-controls=</span><span class="s">"MKFAY276"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail"</span> <span class="na">style=</span><span class="s">"background-image: url(/fundamental-styles/images/thumbs/headshot-male.jpg);"</span> <span class="na">aria-label=</span><span class="s">"William Wallingham"</span><span class="nt">&gt;</span>WW<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button fd-shellbar__button fd-user-menu__control"</span> <span class="na">aria-controls=</span><span class="s">"MKFAY276"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail"</span> <span class="na">style=</span><span class="s">"background-image: url('https://placeimg.com/400/400/nature');"</span> <span class="na">aria-label=</span><span class="s">"William Wallingham"</span><span class="nt">&gt;</span>WW<span class="nt">&lt;/span&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"MKFAY276"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"MKFAY276"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"fd-menu"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>

@@ -14,8 +14,6 @@
 
 
 
-
-
 {
 "title": "Alert",
 "tags": "",
@@ -32,6 +30,17 @@
 "tags": "",
 "keywords": "asset upload, file upload, asset, file, upload",
 "url": "/components/asset-upload.html",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Bar",
+"tags": "",
+"keywords": "bar, header, subheader, footer, floating-footer",
+"url": "/components/bar.html",
 "folder": "components"
 }
 ,
@@ -143,17 +152,6 @@
 "keywords": "",
 "url": "/css/docs-all.css",
 "folder": ""
-}
-,
-
-
-
-{
-"title": "Dropdown",
-"tags": "",
-"keywords": "dropdown, dropdowns",
-"url": "/components/dropdown.html",
-"folder": "components"
 }
 ,
 
@@ -431,6 +429,17 @@
 
 
 
+{
+"title": "Message Strip",
+"tags": "",
+"keywords": "message alert message-strip",
+"url": "/components/message-strip.html",
+"folder": "components"
+}
+,
+
+
+
 
 
 {
@@ -630,6 +639,17 @@
 
 
 
+{
+"title": "Switch",
+"tags": "",
+"keywords": "toggle, switch",
+"url": "/components/switch.html",
+"folder": "components"
+}
+,
+
+
+
 
 
 {
@@ -683,17 +703,6 @@
 "tags": "",
 "keywords": "time",
 "url": "/components/time.html",
-"folder": "components"
-}
-,
-
-
-
-{
-"title": "Toggle / Switch",
-"tags": "",
-"keywords": "toggle, swtich",
-"url": "/components/toggle.html",
 "folder": "components"
 }
 ,

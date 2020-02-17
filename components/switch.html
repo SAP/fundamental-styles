@@ -6,10 +6,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
-<meta name="keywords" content=" toggle, swtich">
+<meta name="keywords" content=" toggle, switch">
 <title>
 	
-	Toggle / Switch - Fundamental Styles
+	Switch - Fundamental Styles
 	
 
 </title>
@@ -27,7 +27,7 @@
 </script>
 <!-- End Google Tag Manager -->
 
-<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1579537972013046485">
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1581959122328612407">
 <link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -62,13 +62,13 @@
             Fundamental Library<span class="docs-top-nav__logo__accent"> Styles</span>
         </a>
 
-        <button id="mobile-sidenav-btn" class="fd-button--light sap-icon--menu2" aria-haspopup="true" aria-expanded="false" aria-label="Menu"></button>
+        <button id="mobile-sidenav-btn" class="fd-button--light sap-icon--menu2 header-section__sap-icon--menu2" aria-haspopup="true" aria-expanded="false" aria-label="Menu"></button>
 
         <!-- support links -->
         <div class="docs-top-nav__support fd-has-float-right">
 
             <span class="fd-has-align-items-center fd-has-margin-right-small">
-                <span>v0.5.0</span>
+                <span>v0.6.0</span>
                 <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
                     <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
                         <title>GitHub</title>
@@ -127,7 +127,7 @@
         searchInput: document.getElementById('docs-search'),
         resultsContainer: document.getElementById('results-container'),
         json: '/fundamental-styles/js/search.json',
-        searchResultTemplate: '<li class="fd-menu__item"><a href="/fundamental-styles{url}" title="Toggle / Switch">{folder} > {title}</a></li>',
+        searchResultTemplate: '<li class="fd-menu__item"><a href="/fundamental-styles{url}" title="Switch">{folder} > {title}</a></li>',
         noResultsText: '<li class="fd-menu__item">No results found</li>',
         limit: 10,
         fuzzy: true,
@@ -387,6 +387,16 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/components/bar.html"
+                   class="side-nav__links-link">Bar</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/busy-indicator.html"
                    class="side-nav__links-link">Busy Indicator</a>
             </li>
@@ -419,16 +429,6 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/calendar.html"
                    class="side-nav__links-link">Calendar</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
-                <a href="/fundamental-styles/components/dropdown.html"
-                   class="side-nav__links-link">Dropdown</a>
             </li>
             
             
@@ -557,6 +557,16 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/components/message-strip.html"
+                   class="side-nav__links-link">Message Strip</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/modal.html"
                    class="side-nav__links-link">Modal</a>
             </li>
@@ -646,6 +656,16 @@
             
             
             
+            <li class="side-nav__links active">
+                <a href="/fundamental-styles/components/switch.html"
+                   class="side-nav__links-link">Switch</a>
+            </li>
+            
+            
+            
+            
+            
+            
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/table.html"
                    class="side-nav__links-link">Table</a>
@@ -689,16 +709,6 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/token.html"
                    class="side-nav__links-link">Token</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links active">
-                <a href="/fundamental-styles/components/toggle.html"
-                   class="side-nav__links-link">Toggle / Switch</a>
             </li>
             
             
@@ -778,7 +788,7 @@
 
 <div class="docs-content">
 
-    <h1 class="docs-header-h1">Toggle / Switch</h1>
+    <h1 class="docs-header-h1">Switch</h1>
 
     
 
@@ -787,96 +797,18 @@
 
     
 
-    <p class="docs-intro">The toggle/switch is meant to resemble a physical switch and allow a user to turn a setting “on” or “off”. It should be used to switch between two states/modes: active or inactive.</p>
+    <p class="docs-intro">The Switch is meant to resemble a physical switch and allow a user to turn a setting “on” or “off”. It should be used to switch between two states/modes: active or inactive.</p>
 
-<p>It is recommended to always display the toggle with a label above it as well as the label of the selected state. For example, the label above would be Active, the toggle state would be “on” and the selected state label displayed to the right of the toggle would be “Yes”.</p>
-
-<h2 id="toggle-with-labels-on-sides">Toggle with Labels on Sides</h2>
-<p>This is basic usage of toggle</p>
+<h2 id="default-switch">Default Switch</h2>
 
 <div class="fd-tile docs-component docs-component__">
     <div class="fd-tile__content">
 		
 <div class="fd-form-group">
     <div class="fd-form-item">
-        <label class="fd-form-label">Toggle with label</label>
+        <label class="fd-form-label">Default (Cosy) Switch</label>
         <label class="fd-switch__label">
             <span class="fd-switch">
-                <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3911" />
-                <div class="fd-switch__wrapper">
-                    <div class="fd-switch__track">
-                        <span class="fd-switch__text fd-switch__text--on">on</span>
-                        <span class="fd-switch__handle" role="presentation"></span>
-                        <span class="fd-switch__text fd-switch__text--off">off</span>
-                    </div>
-                </div>
-            </span>
-        </label>
-    </div>
-    <div class="fd-form-item">
-        <label class="fd-form-label">Compact Toggle with label</label>
-        <label class="fd-switch__label">
-            <span class="fd-switch fd-switch--compact">
-                <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3911" />
-                <div class="fd-switch__wrapper">
-                    <div class="fd-switch__track">
-                        <span class="fd-switch__text fd-switch__text--on">on</span>
-                        <span class="fd-switch__handle" role="presentation"></span>
-                        <span class="fd-switch__text fd-switch__text--off">off</span>
-                    </div>
-                </div>
-            </span>
-        </label>
-    </div>
-</div>
-
-	</div>
-</div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-item"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span><span class="nt">&gt;</span>Toggle with label<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-switch__label"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-switch"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-switch__input"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"y21YO3911"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-switch__wrapper"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-switch__track"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-switch__text fd-switch__text--on"</span><span class="nt">&gt;</span>on<span class="nt">&lt;/span&gt;</span>
-                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-switch__handle"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-switch__text fd-switch__text--off"</span><span class="nt">&gt;</span>off<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-item"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span><span class="nt">&gt;</span>Compact Toggle with label<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-switch__label"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-switch fd-switch--compact"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-switch__input"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"y21YO3911"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-switch__wrapper"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-switch__track"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-switch__text fd-switch__text--on"</span><span class="nt">&gt;</span>on<span class="nt">&lt;/span&gt;</span>
-                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-switch__handle"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-switch__text fd-switch__text--off"</span><span class="nt">&gt;</span>off<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<h2 id="toggle-without-labels-on-sides">Toggle without Labels on Sides</h2>
-<p>When there is no need to put any label on toggle sides, it’s mandatory to add <code class="highlighter-rouge">fd-switch--no-text</code> modifier.</p>
-
-<div class="fd-tile docs-component docs-component__">
-    <div class="fd-tile__content">
-		
-<div class="fd-form-group">
-    <div class="fd-form-item">
-        <label class="fd-form-label">Toggle without label</label>
-        <label class="fd-switch__label">
-            <span class="fd-switch fd-switch--no-text">
                 <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3251" />
                 <div class="fd-switch__wrapper">
                     <div class="fd-switch__track">
@@ -887,9 +819,9 @@
         </label>
     </div>
     <div class="fd-form-item">
-        <label class="fd-form-label">Compact Toggle without label</label>
+        <label class="fd-form-label">Compact Switch</label>
         <label class="fd-switch__label">
-            <span class="fd-switch fd-switch--no-text fd-switch--compact">
+            <span class="fd-switch fd-switch--compact">
                 <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3431" />
                 <div class="fd-switch__wrapper">
                     <div class="fd-switch__track">
@@ -907,9 +839,9 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-item"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span><span class="nt">&gt;</span>Toggle without label<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span><span class="nt">&gt;</span>Default (Cosy) Switch<span class="nt">&lt;/label&gt;</span>
         <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-switch__label"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-switch fd-switch--no-text"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-switch"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-switch__input"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"y21YO3251"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-switch__wrapper"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-switch__track"</span><span class="nt">&gt;</span>
@@ -920,9 +852,9 @@
         <span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-item"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span><span class="nt">&gt;</span>Compact Toggle without label<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span><span class="nt">&gt;</span>Compact Switch<span class="nt">&lt;/label&gt;</span>
         <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-switch__label"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-switch fd-switch--no-text fd-switch--compact"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-switch fd-switch--compact"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-switch__input"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"y21YO3431"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-switch__wrapper"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-switch__track"</span><span class="nt">&gt;</span>
@@ -942,15 +874,15 @@
   </ul>
 </blockquote>
 
-<h2 id="semantic-toggle">Semantic Toggle</h2>
-<p><code class="highlighter-rouge">fd-switch--semantic</code> modifier renders semnatic colors and icons inside the toggle switch</p>
+<h2 id="semantic-switch">Semantic Switch</h2>
+<p><code class="highlighter-rouge">fd-switch--semantic</code> modifier renders semnatic colors and icons inside the switch</p>
 
 <div class="fd-tile docs-component docs-component__">
     <div class="fd-tile__content">
 		
 <div class="fd-form-group">
     <div class="fd-form-item">
-        <label class="fd-form-label">Semantic Toggle</label>
+        <label class="fd-form-label">Semantic Switch</label>
         <label class="fd-switch__label">
             <span class="fd-switch fd-switch--semantic">
                 <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3251" />
@@ -965,7 +897,7 @@
         </label>
     </div>
     <div class="fd-form-item">
-        <label class="fd-form-label">Semantic Compact Toggle</label>
+        <label class="fd-form-label">Semantic Compact Switch</label>
         <label class="fd-switch__label">
             <span class="fd-switch fd-switch--semantic fd-switch--compact">
                 <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3431" />
@@ -986,7 +918,7 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-item"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span><span class="nt">&gt;</span>Semantic Toggle<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span><span class="nt">&gt;</span>Semantic Switch<span class="nt">&lt;/label&gt;</span>
         <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-switch__label"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-switch fd-switch--semantic"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-switch__input"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"y21YO3251"</span><span class="nt">&gt;</span>
@@ -1001,7 +933,7 @@
         <span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-item"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span><span class="nt">&gt;</span>Semantic Compact Toggle<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span><span class="nt">&gt;</span>Semantic Compact Switch<span class="nt">&lt;/label&gt;</span>
         <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-switch__label"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-switch fd-switch--semantic fd-switch--compact"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-switch__input"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"y21YO3431"</span><span class="nt">&gt;</span>
@@ -1048,7 +980,7 @@
         </span>
     </label>
     <label class="fd-switch__label">
-        <span class="fd-switch fd-switch--no-text fd-switch--compact">
+        <span class="fd-switch fd-switch--compact">
             <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3911" />
             <div class="fd-switch__wrapper">
                 <div class="fd-switch__track">
@@ -1058,7 +990,7 @@
         </span>
     </label>
     <label class="fd-switch__label">
-        <span class="fd-switch fd-switch--no-text">
+        <span class="fd-switch">
             <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3911" />
             <div class="fd-switch__wrapper">
                 <div class="fd-switch__track">
@@ -1098,7 +1030,7 @@
         <span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-switch__label"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-switch fd-switch--no-text fd-switch--compact"</span> <span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-switch fd-switch--compact"</span> <span class="nt">&gt;</span>
             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-switch__input"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"y21YO3911"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-switch__wrapper"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-switch__track"</span><span class="nt">&gt;</span>
@@ -1108,7 +1040,7 @@
         <span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-switch__label"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-switch fd-switch--no-text"</span> <span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-switch"</span> <span class="nt">&gt;</span>
             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-switch__input"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"y21YO3911"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-switch__wrapper"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-switch__track"</span><span class="nt">&gt;</span>
