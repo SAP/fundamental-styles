@@ -76,7 +76,7 @@
     "test": "test"
   },
   "dependencies": {
-    "@sap-theming/theming-base-content": "~11.1.16"
+    "@sap-theming/theming-base-content": "~11.1.17"
   },
   "engines": {
     "node": ">=8.12.0"
