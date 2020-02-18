@@ -182,6 +182,9 @@ $block: #{$fd-namespace}-tabs;
 
     @include fd-rtl() {
       &:first-child {
+        margin-right: 0;
+        margin-left: $fd-tabs-item-spacing-x;
+
         .#{$block}__link {
           padding-right: 0;
           padding-left: 0.875rem;
@@ -391,6 +394,10 @@ $block: #{$fd-namespace}-tabs;
       width: 5.375rem;
       padding: 0 $fd-tabs-item-spacing-x;
       margin: 0;
+
+      @include fd-rtl() {
+        margin: 0;
+      }
 
       &--header {
         width: auto;
