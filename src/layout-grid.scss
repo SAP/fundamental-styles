@@ -57,13 +57,12 @@ $blockRow: #{$fd-namespace}-row;
   .#{$block} {
     @include fd-reset();
 
-    flex: 0 0 100%;
     padding: 0 0.25rem;
 
     @for $n from 1 through 12 {
       &--#{$n} {
-        min-width: 0 0 ( ( $n / 12 ) *100%);
-        max-width: 0 0 ( ( $n / 12 ) *100%);
+        min-width: ( ( $n / 12 ) *100%);
+        max-width: ( ( $n / 12 ) *100%);
       }
     }
 
@@ -106,8 +105,8 @@ $blockRow: #{$fd-namespace}-row;
 
     @for $n from 1 through 12 {
       &--#{$n}--m {
-        min-width: 0 0 ( ( $n / 12 ) *100%);
-        max-width: 0 0 ( ( $n / 12 ) *100%);
+        min-width: ( ( $n / 12 ) *100%);
+        max-width: ( ( $n / 12 ) *100%);
       }
     }
 
@@ -126,8 +125,8 @@ $blockRow: #{$fd-namespace}-row;
   .#{$block} {
     @for $n from 1 through 12 {
       &--#{$n}--l {
-        min-width: 0 0 ( ( $n / 12 ) *100%);
-        max-width: 0 0 ( ( $n / 12 ) *100%);
+        min-width: ( ( $n / 12 ) *100%);
+        max-width: ( ( $n / 12 ) *100%);
       }
     }
   }
@@ -137,8 +136,8 @@ $blockRow: #{$fd-namespace}-row;
   .#{$block} {
     @for $n from 1 through 16 {
       &--#{$n}--xl {
-        min-width: 0 0 ( ( $n / 16 ) *100%);
-        max-width: 0 0 ( ( $n / 16 ) *100%);
+        min-width: ( ( $n / 16 ) *100%);
+        max-width: ( ( $n / 16 ) *100%);
       }
     }
   }
