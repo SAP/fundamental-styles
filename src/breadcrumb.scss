@@ -30,22 +30,6 @@ $block: #{$fd-namespace}-breadcrumb;
   margin-bottom: $fd-breadcrumb-margin-bottom;
   list-style: none;
 
-  @include fd-rtl() {
-    padding: 0;
-
-    &__item {
-      &::after {
-        content: "/";
-        margin-right: $fd-breadcrumb-spacing;
-        margin-left: $fd-breadcrumb-spacing;
-      }
-
-      &:last-child::after {
-        content: none;
-      }
-    }
-  }
-
   // ELEMENTS *******************************************
   &__item {
     @include fd-reset();
@@ -62,28 +46,10 @@ $block: #{$fd-namespace}-breadcrumb;
     &:last-child::after {
       content: none;
     }
-
-    @include fd-rtl() {
-      &::after {
-        content: "/";
-        margin-right: $fd-breadcrumb-spacing;
-        margin-left: $fd-breadcrumb-spacing;
-      }
-
-      &:last-child::after {
-        content: none;
-      }
-    }
   }
 
   &__link {
     @include fd-reset();
-
-    @include fd-rtl() {
-      margin-right: $fd-breadcrumb-spacing;
-      margin-left: $fd-breadcrumb-spacing;
-    }
-
     @include fd-link();
 
     display: inline-block;
