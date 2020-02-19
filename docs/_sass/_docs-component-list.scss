@@ -2,6 +2,7 @@
 $gird-border-color: #cfdbe7;
 $grid-item-bg-color: fd-color(background, 2);
 $grid-transition-delay: 100ms;
+
 .docs-component-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -162,6 +163,11 @@ $grid-transition-delay: 100ms;
             margin-top: 50px;
         }
 
+        &__switch {
+            width: 60px;
+            margin-top: 30px;
+        }
+
         &__table {
             width: 300px;
             margin-top: 0;
@@ -175,11 +181,6 @@ $grid-transition-delay: 100ms;
         &__tile {
             width: 300px;
             margin-top: 40px;
-        }
-
-        &__toggle {
-            width: 40px;
-            margin-top: 30px;
         }
 
         &__toolbar {
