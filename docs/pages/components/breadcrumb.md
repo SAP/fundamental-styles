@@ -42,7 +42,7 @@ there should be popover with missing options.
                 </a>
             </div>
             <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="breadcrumb1">
-                <ul class="fd-list fd-list--compact">
+                <ul class="fd-list fd-list--in-popover fd-list--compact">
                     <li class="fd-list__item">
                       <a class="fd-list__title" href="#">Link Text</a>
                     </li>

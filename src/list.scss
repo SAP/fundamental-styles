@@ -86,6 +86,19 @@ $block: #{$fd-namespace}-list;
     }
   }
 
+  &--in-popover {
+    :first-child {
+      border-top-left-radius: var(--sapElement_BorderCornerRadius);
+      border-top-right-radius: var(--sapElement_BorderCornerRadius);
+    }
+
+    :last-child {
+      border-bottom: none;
+      border-bottom-left-radius: var(--sapElement_BorderCornerRadius);
+      border-bottom-right-radius: var(--sapElement_BorderCornerRadius);
+    }
+  }
+
   &__title,
   &__secondary {
     @include fd-reset();
