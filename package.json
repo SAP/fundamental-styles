@@ -75,7 +75,7 @@
     "doc": "docs",
     "test": "test"
   },
-  "dependencies": {
+  "peerDependencies": {
     "@sap-theming/theming-base-content": "~11.1.17"
   },
   "engines": {
