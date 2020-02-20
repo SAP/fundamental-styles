@@ -30,6 +30,22 @@ $block: #{$fd-namespace}-action-bar;
     }
   }
 
+  @mixin fd-action-bar-description {
+    @include fd-reset();
+
+    color: var(--sapContent_LabelColor);
+
+    @include fd-hide-on-mobile();
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0.25rem;
+    height: 1.25rem;
+    width: 100%;
+    vertical-align: middle;
+  }
+
   @mixin fd-hide-on-mobile {
     // Changed from deprecated fd-screen(xs)
     @include fd-screen(s) {
@@ -68,20 +84,20 @@ $block: #{$fd-namespace}-action-bar;
   min-height: $fd-action-bar-height;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
   word-wrap: break-word;
   justify-content: space-between;
   padding-left: map_get($fd-action-bar-padding-x, "m");
   padding-right: map_get($fd-action-bar-padding-x, "m");
 
   &__header {
-    flex-grow: 1;
-    width: 75%;
-
     @include fd-reset();
     @include fd-action-bar-responsive();
+
+    min-height: 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
   &__back {
@@ -105,33 +121,28 @@ $block: #{$fd-namespace}-action-bar;
     @include fd-reset();
     @include fd-heading();
 
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: var(--sapFontHeader3Size);
     font-family: var(--sapFontHeaderFamily);
     color: $fd-action-bar-title-color;
 
     @include fd-action-bar-responsive();
 
-    min-height: 2rem;
+    flex-grow: 1;
     padding-right: 0.5rem;
     vertical-align: middle;
-    overflow: hidden;
-    text-overflow: ellipsis;
     margin: 0;
   }
 
   &__description {
-    @include fd-reset();
+    @include fd-action-bar-description();
+  }
 
-    color: var(--sapContent_LabelColor);
+  &__description__with___backbutton {
+    @include fd-action-bar-description();
 
-    @include fd-hide-on-mobile();
-
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-top: 0.25rem;
-    height: 1.25rem;
-    width: 100%;
-    vertical-align: middle;
+    padding-left: 2.25rem;
   }
 
   &__actions {
