@@ -96,10 +96,14 @@ Dialog headers and footer can be customized using Bar component features.
                         Dialog footer
                     </div>
                     <div class="fd-bar__element">
-                        <button class="fd-dialog__decisive-button">Begin button</button>
+                        <button class="fd-dialog__decisive-button fd-button fd-button--compact">
+                            Begin button
+                        </button>
                     </div>
                     <div class="fd-bar__element">
-                        <button class="fd-dialog__decisive-button">End button</button>
+                        <button class="fd-dialog__decisive-button fd-button fd-button--compact">
+                            End button
+                        </button>
                     </div>
                 </div>
             </footer>

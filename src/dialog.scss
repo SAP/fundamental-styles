@@ -100,7 +100,7 @@ $block: #{$fd-namespace}-dialog;
       @include fd-icon("resize-corner", "m", "after") {
         color: $fd-dialog-resize-handle-color;
         position: absolute;
-        cursor: nwse-resize;
+        cursor: se-resize;
         right: 0;
         bottom: -1px;
       }
@@ -110,6 +110,7 @@ $block: #{$fd-namespace}-dialog;
       &-grab {
         @include fd-hover() {
           .#{$block}__header {
+            cursor: move;
             cursor: grab;
           }
         }
@@ -118,6 +119,7 @@ $block: #{$fd-namespace}-dialog;
       &-grabbing {
         @include fd-hover() {
           .#{$block}__header {
+            cursor: move;
             cursor: grabbing;
           }
         }
