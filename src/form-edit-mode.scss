@@ -39,6 +39,10 @@ $block: #{$fd-namespace}-form-edit-mode;
     margin-left: 0;
     margin-right: 0;
   }
+
+  &--compact {
+    height: 2rem;
+  }
 }
 
 .#{$blockRow} {

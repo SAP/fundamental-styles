@@ -938,6 +938,53 @@ Do not use the checkbox control if:
 
 <br>
 
+## Form with 4-7-1 compact Layout
+
+{% capture form-edit %}
+<div class="fd-edit-mode-container">
+    <div class="fd-form-edit-mode-row fd-form-edit-mode-row--compact">
+        <div class="fd-form-edit-mode fd-form-edit-mode--4 fd-form-edit-mode--label">
+            <div class="fd-form-edit-mode-flex fd-form-edit-mode-flex--right">
+                <label class="fd-form-label" for="input-1">Default Input:</label>
+            </div>
+        </div>
+        <div class="fd-form-edit-mode fd-form-edit-mode--7">
+            <input class="fd-input fd-input--compact" type="text" id="input-1" placeholder="Field placeholder text">
+        </div>
+    </div>
+    <div class="fd-form-edit-mode-row fd-form-edit-mode-row--compact">
+        <div class="fd-form-edit-mode fd-form-edit-mode--4 fd-form-edit-mode--label">
+            <div class="fd-form-edit-mode-flex fd-form-edit-mode-flex--right">
+                <label class="fd-form-label fd-form-label--required" for="input-1c">Required Input:</label>
+            </div>
+        </div>
+        <div class="fd-form-edit-mode fd-form-edit-mode--7">
+            <input class="fd-input fd-input--compact" type="text" id="input-1" placeholder="Field placeholder text">
+        </div>
+    </div>
+    <div class="fd-form-edit-mode-row fd-form-edit-mode-row--compact">
+        <div class="fd-form-edit-mode fd-form-edit-mode--4 fd-form-edit-mode--label">
+            <div class="fd-form-edit-mode-flex fd-form-edit-mode-flex--right">
+                <label class="fd-form-label" for="input-2">2 Inputs:</label>
+            </div>
+        </div>
+        <div class="fd-form-edit-mode fd-form-edit-mode--7">
+            <div class="fd-form-edit-mode-row fd-form-edit-mode-row--compact">
+                    <div class="fd-form-edit-mode fd-form-edit-mode--6">
+                        <input class="fd-input fd-input--compact" type="text" id="input-2" placeholder="Field placeholder text">
+                    </div>
+                    <div class="fd-form-edit-mode fd-form-edit-mode--6">
+                        <input class="fd-input fd-input--compact" type="text" id="input-3" placeholder="Field placeholder text">
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=form-edit %}
+
+<br>
+
 ## Form with 12 column Layout
 
 {% capture form-edit %}
