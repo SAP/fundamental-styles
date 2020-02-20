@@ -5,7 +5,7 @@
 
 /*!
   .fd-dialog+(--active)
-    .fd-dialog__content+(--s, --m, --l, --xl, --resizable, --draggable-grab, --draggable-grabbing, --mobile, --no-mobile-stretch)
+    .fd-dialog__content+(--s, --m, --l, --xl, --draggable-grab, --draggable-grabbing, --mobile, --no-mobile-stretch)
       .fd-dialog__header
         .fd-dialog__title
       .fd-dialog__subheader
@@ -13,6 +13,7 @@
       .fd-dialog__laoder
       .fd-dialog__footer
         .fd-dialog__decisive-button
+      .fd-dialog__resize-handle
 */
 $block: #{$fd-namespace}-dialog;
 
@@ -96,16 +97,6 @@ $block: #{$fd-namespace}-dialog;
       max-height: calc(100vh - #{$fd-dialog-content-margin-y});
     }
 
-    &--resizable {
-      @include fd-icon("resize-corner", "m", "after") {
-        color: $fd-dialog-resize-handle-color;
-        position: absolute;
-        cursor: se-resize;
-        right: 0;
-        bottom: -1px;
-      }
-    }
-
     &--draggable {
       &-grab {
         @include fd-hover() {
@@ -135,13 +126,6 @@ $block: #{$fd-namespace}-dialog;
     flex-shrink: 0;
   }
 
-  &__header {
-    .#{$block}__title {
-      @include fd-reset();
-      @include fd-ellipsis();
-    }
-  }
-
   &__body {
     @include fd-reset();
 
@@ -168,5 +152,22 @@ $block: #{$fd-namespace}-dialog;
     text-align: center;
     margin-top: $fd-dialog-loader-margin-y;
     margin-bottom: $fd-dialog-loader-margin-y - $fd-dialog-body-padding-y;
+  }
+
+  &__resize-handle {
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    cursor: se-resize;
+
+    @include fd-icon("resize-corner", "m", "after") {
+      display: flex;
+      color: $fd-dialog-resize-handle-color;
+    }
+  }
+
+  &__title {
+    @include fd-reset();
+    @include fd-ellipsis();
   }
 }

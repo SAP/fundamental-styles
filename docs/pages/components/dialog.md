@@ -50,6 +50,7 @@ Dialog consists of following elements:
                             <li><code>.fd-dialog__decisive-button</code>: Footer begin/end button </li>
                         </ul>
                     </li>
+                    <li><code>.fd-dialog__resize-handle</code>: Handle for resizing modal</li>
                 </ul>
             </li>
         </ul>
@@ -65,6 +66,7 @@ Dialog headers and footer can be customized using Bar component features.
 {% capture dialog-anatomy %}
     <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
         <div class="fd-dialog__content">
+            <span class="fd-dialog__resize-handle"></span>
             <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
@@ -215,12 +217,14 @@ Please remember that on mobile devices Bar component should be used with <code>.
 {% endcapture %}
 {% include display-component.html component=dialog-size %}
 
-## Dialog resizable mode
-Dialog can be opened in resizable mode using <code>.fd-dialog__content--resizable</code>, enabling to horizontally and vertically resize dialogs dialog (only for <b>desktop</b>).
+## Dialog with resize handle
+To open Dialog with resize handle add span element with <code>.fd-dialog__resize-handle</code> class inside <code>.fd-dialog__content</code> container.
+Horizontal and vertical resize should be enabled only for <b>desktop</b> devices.
 Resizable Dialog should be desktop only feature. 
 {% capture dialog-resize %}
     <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-        <div class="fd-dialog__content fd-dialog__content--resizable fd-dialog__content--s">
+        <div class="fd-dialog__content fd-dialog__content--s">
+            <span class="fd-dialog__resize-handle"></span>
             <header class="fd-dialog__header fd-bar fd-bar--header">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
