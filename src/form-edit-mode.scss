@@ -6,7 +6,9 @@ $blockContainer: #{$fd-namespace}-form-edit-mode-container;
 $blockRow: #{$fd-namespace}-form-edit-mode-row;
 $block: #{$fd-namespace}-form-edit-mode;
 
-.fd-form-edit-mode-flex {
+.#{$fd-namespace}-flex {
+  min-width: 100%;
+  max-width: 100%;
   display: flex;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -68,6 +70,66 @@ $block: #{$fd-namespace}-form-edit-mode;
   &--vertical {
     margin-bottom: 0.625rem;
     height: 100%;
+  }
+
+  .#{$blockRow} {
+    margin: 0 -0.25rem;
+  }
+
+  &--471 {
+    .#{$block}:nth-child(odd) {
+      @include fd-reset();
+
+      display: block;
+      min-width: ( ( 4 / 12 ) *100%);
+      max-width: ( ( 4 / 12 ) *100%);
+      padding: 0 0.25rem;
+      padding-right: 0.625rem;
+      text-align: right;
+
+      .fd-form-label {
+        margin-right: 0;
+        width: 100%;
+      }
+
+      .#{$block}-flex {
+        min-width: 100%;
+        max-width: 100%;
+        display: flex;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        justify-content: flex-start;
+
+        &--right {
+          justify-content: flex-end;
+        }
+      }
+    }
+
+    .#{$block}:nth-child(even) {
+      @include fd-reset();
+
+      display: block;
+      padding: 0 0.25rem;
+      min-width: ( ( 7 / 12 ) *100%);
+      max-width: ( ( 7 / 12 ) *100%);
+
+      .#{$blockRow} {
+        margin: 0 -0.25rem;
+        min-width: 100%;
+        max-width: 100%;
+
+        @for $n from 1 through 12 {
+          &--#{$n} {
+            .#{$block} {
+              padding: 0 0.25rem;
+              min-width: (((12/$n)/12) *100%);
+              max-width: (((12/$n)/12) *100%);
+            }
+          }
+        }
+      }
+    }
   }
 }
 

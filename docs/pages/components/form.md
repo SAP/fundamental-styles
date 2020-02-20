@@ -849,6 +849,53 @@ Do not use the checkbox control if:
 
 <br>
 
+## Form with 4-7-1 Layout singleton
+
+{% capture form-edit %}
+<div class="fd-edit-mode-container">
+    <div class="fd-form-edit-mode-row fd-form-edit-mode-row--471">
+        <div class="fd-form-edit-mode">
+            <div class="fd-form-edit-mode-flex fd-form-edit-mode-flex--right">
+                <label class="fd-form-label" for="input-1">Default Input:</label>
+            </div>
+        </div>
+        <div class="fd-form-edit-mode">
+            <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text">
+        </div>
+    </div>
+    <div class="fd-form-edit-mode-row fd-form-edit-mode-row--471">
+        <div class="fd-form-edit-mode">
+            <div class="fd-form-edit-mode-flex fd-form-edit-mode-flex--right">
+                <label class="fd-form-label fd-form-label--required" for="input-1c">Required Input:</label>
+            </div>
+        </div>
+        <div class="fd-form-edit-mode">
+            <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text">
+        </div>
+    </div>
+    <div class="fd-form-edit-mode-row fd-form-edit-mode-row--471">
+        <div class="fd-form-edit-mode">
+            <div class="fd-form-edit-mode-flex fd-form-edit-mode-flex--right">
+                <label class="fd-form-label" for="input-2">2 Inputs:</label>
+            </div>
+        </div>
+        <div class="fd-form-edit-mode">
+            <div class="fd-form-edit-mode-row fd-form-edit-mode-row--2">
+                    <div class="fd-form-edit-mode">
+                        <input class="fd-input" type="text" id="input-2" placeholder="Field placeholder text">
+                    </div>
+                    <div class="fd-form-edit-mode">
+                        <input class="fd-input" type="text" id="input-3" placeholder="Field placeholder text">
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=form-edit %}
+
+<br>
+
 ## Form with 4-7-1 Layout
 
 {% capture form-edit %}
@@ -903,31 +950,37 @@ Do not use the checkbox control if:
 <div class="fd-edit-mode-container">
     <div class="fd-form-edit-mode-row">
         <div class="fd-form-edit-mode fd-form-edit-mode--4 fd-form-edit-mode--label">
-            <label class="fd-form-label" for="input-1">Default Input:</label>
+            <div class="fd-form-edit-mode-flex fd-form-edit-mode-flex--right">
+                <label class="fd-form-label" for="input-2a">Default Input:</label>
+            </div>
         </div>
         <div class="fd-form-edit-mode fd-form-edit-mode--7">
-            <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text">
+            <input class="fd-input" type="text" id="input-2a" placeholder="Field placeholder text">
         </div>
     </div>
     <div class="fd-form-edit-mode-row">
         <div class="fd-form-edit-mode fd-form-edit-mode--4 fd-form-edit-mode--label">
-            <label class="fd-form-label fd-form-label--required" for="input-1c">Required Input:</label>
+            <div class="fd-form-edit-mode-flex fd-form-edit-mode-flex--right">
+                <label class="fd-form-label fd-form-label--required" for="input-2b">Required Input:</label>
+            </div>
         </div>
         <div class="fd-form-edit-mode fd-form-edit-mode--7">
-            <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text">
+            <input class="fd-input" type="text" id="input-2b" placeholder="Field placeholder text">
         </div>
     </div>
     <div class="fd-form-edit-mode-row">
         <div class="fd-form-edit-mode fd-form-edit-mode--4 fd-form-edit-mode--label">
-            <label class="fd-form-label" for="input-2">2 Inputs:</label>
+            <div class="fd-form-edit-mode-flex fd-form-edit-mode-flex--right">
+                <label class="fd-form-label" for="input-2c">2 Inputs:</label>
+            </div>
         </div>
         <div class="fd-form-edit-mode fd-form-edit-mode--7">
             <div class="fd-form-edit-mode-row">
                 <div class="fd-form-edit-mode fd-form-edit-mode--6">
-                    <input class="fd-input" type="text" id="input-2" placeholder="Field placeholder text">
+                    <input class="fd-input" type="text" id="input-2c" placeholder="Field placeholder text">
                 </div>
                 <div class="fd-form-edit-mode fd-form-edit-mode--6">
-                    <input class="fd-input" type="text" id="input-3" placeholder="Field placeholder text">
+                    <input class="fd-input" type="text" id="input-2cc" placeholder="Field placeholder text">
                 </div>
             </div>
         </div>
