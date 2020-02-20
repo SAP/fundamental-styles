@@ -172,6 +172,10 @@ entries:
       url: /components/notification.html
       output: web
 
+    - title: Object Status
+      url: /components/object-status.html
+      output: web
+
     - title: Pagination
       url: /components/pagination.html
       output: web

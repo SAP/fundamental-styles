@@ -54,6 +54,9 @@
     - title: Notification
       meta: notification
 
+    - title: Object Status
+      meta: object-status
+
     - title: Pagination
       meta: pagination
 

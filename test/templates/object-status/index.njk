@@ -1,0 +1,94 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./component.njk" import objectstatus %}
+
+{% block content %}
+
+
+<h2>Icon</h2>
+    <!-- output the component example and the code snippet -->
+    {% set example %}
+{{  objectstatus({icon: 'status-negative'},
+        modifier={block: ["error","icon"]})
+}}
+    {% endset %}
+    {{ format(example) }}
+<br><br>
+
+<h2>Label</h2>
+    <!-- output the component example and the code snippet -->
+    {% set example %}
+{{  objectstatus({label: "ERROR"},
+        modifier={block: ["error"]})
+}}
+{{  objectstatus({label: "WARNING"},
+        modifier={block: ["warning"]})
+}}
+{{  objectstatus({label: "SUCCESS"},
+        modifier={block: ["success"]})
+}}
+{{  objectstatus({label: "INFORMATIVE"},
+        modifier={block: ["info"]})
+}} 
+{{  objectstatus({label: "Default"},
+        modifier={block: [""]})
+}} 
+    {% endset %}
+    {{ format(example) }}
+<br><br>
+
+    <h2>Status Object with Generic Colour Indication </h2>
+
+    {% set example %}
+{{  objectstatus({label: "Dark Red"},
+        modifier={block: ["indication-color-1"]})
+}}
+{{  objectstatus({label: "Red"},
+        modifier={block: ["indication-color-2"]})
+}}
+{{  objectstatus({label: "Yellow"},
+        modifier={block: ["indication-color-3"]})
+}}
+{{  objectstatus({label: "Green"},
+        modifier={block: ["indication-color-4"]})
+}}
+{{  objectstatus({label: "Blue"},
+        modifier={block: ["indication-color-5"]})
+}}
+{{  objectstatus({label: "Teal"},
+        modifier={block: ["indication-color-6"]})
+}}
+{{  objectstatus({label: "Purple"},
+        modifier={block: ["indication-color-7"]})
+}}
+{{  objectstatus({label: "Pink"},
+        modifier={block: ["indication-color-8"]})
+}}
+
+    {% endset %}
+    {{ format(example) }}
+
+<br><br>
+    <h2>Status Object With Icons</h2>
+
+    {% set example %}
+{{  objectstatus({label: "Info Label",icon: 'status-negative'},
+        modifier={block: ["indication-color-1"]})
+}}
+{{  objectstatus({label: "Info Label",icon: 'status-critical'},
+        modifier={block: ["indication-color-2"]})
+}}
+{{  objectstatus({label: "Info Label",icon: 'status-positive'},
+        modifier={block: ["indication-color-3"]})
+}}
+{{  objectstatus({label: "Info Label",icon: 'hint'},
+        modifier={block: ["indication-color-4"]})
+}}
+{{  objectstatus({label: "Info Label",icon: 'to-be-reviewed'},
+        modifier={block: ["indication-color-5"]})
+}}
+
+    {% endset %}
+    {{ format(example) }}
+
+{% endblock %}

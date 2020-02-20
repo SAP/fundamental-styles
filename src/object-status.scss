@@ -1,0 +1,115 @@
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+/*!
+.fd-object-status+(--success | --warning | --error)
+*/
+$block: #{$fd-namespace}-object-status;
+
+.#{$block} {
+
+  $fd-object-status-font: var(--sapFontFamily);
+  $fd-object-status-font-size: var(--sapFontLargeSize);
+  $fd-object-status-font-weight: normal !default;
+  $fd-object-status-padding: 0.5rem !default;
+
+  $fd-object-status-negative: var(--sapNegativeColor);
+  $fd-object-status-critical: var(--sapCriticalColor);
+  $fd-object-status-positive: var(--sapPositiveColor);
+  $fd-object-status-informative: var(--sapInformativeColor);
+  $fd-object-status-neutral: var(--sapNeutralColor);
+
+  $color-accents: (
+    "1": ("color": var(--sapIndicationColor_1), "hover": #ff2222, "active": #6f0000, "visited": var(--sapIndicationColor_1)),
+    "2": ("color": var(--sapIndicationColor_2), "hover": #ff5555, "active": #a20000, "visited": var(--sapIndicationColor_2)),
+    "3": ("color": var(--sapIndicationColor_3), "hover": #fac494, "active": #d1670b, "visited": var(--sapIndicationColor_3)),
+    "4": ("color": var(--sapIndicationColor_4), "hover": #40e786, "active": #107e3e, "visited": var(--sapIndicationColor_4)),
+    "5": ("color": var(--sapIndicationColor_5), "hover": #7bbaf9, "active": #0961b9, "visited": var(--sapIndicationColor_5)),
+    "6": ("color": var(--sapAccentColor7), "hover": #4bdcec, "active": #0d6d78, "visited": var(--sapAccentColor7)),
+    "7": ("color": var(--sapAccentColor9), "hover": #e0d0f1, "active": #8546c8, "visited": var(--sapAccentColor9)),
+    "8": ("color": var(--sapAccentColor4), "hover": #e6acd8, "active": #ac338f, "visited": var(--sapAccentColor4))
+  );
+
+  @include fd-reset();
+
+  font: $fd-object-status-font;
+  font-size: $fd-object-status-font-size;
+  font-weight: $fd-object-status-font-weight;
+  color: $fd-object-status-neutral;
+
+  @include fd-rtl() {
+    &::before {
+      padding-right: 0;
+      padding-left: $fd-object-status-padding;
+    }
+  }
+
+  &::before {
+    padding-right: $fd-object-status-padding;
+    font-size: $fd-object-status-font-size;
+  }
+
+  &:empty {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &--icon {
+    &::before {
+      padding-right: 0;
+    }
+
+    @include fd-rtl() {
+      &::before {
+        padding-left: 0;
+      }
+    }
+  }
+
+  &--success {
+    color: $fd-object-status-positive;
+  }
+
+  &--warning {
+    color: $fd-object-status-critical;
+  }
+
+  &--error {
+    color: $fd-object-status-negative;
+  }
+
+  &--info {
+    color: $fd-object-status-informative;
+  }
+
+  &--click-able {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:visited {
+      text-decoration: none;
+    }
+  }
+
+  @each $set-name, $color-set in $color-accents {
+    &--indication-color-#{$set-name} {
+      color: map_get($color-set, "color");
+
+      &:hover {
+        color: map_get($color-set, "hover");
+      }
+
+      &:active {
+        color: map_get($color-set, "active");
+      }
+
+      &:visited {
+        color: map_get($color-set, "visited");
+      }
+    }
+  }
+}
