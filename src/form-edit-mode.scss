@@ -6,6 +6,17 @@ $blockContainer: #{$fd-namespace}-form-edit-mode-container;
 $blockRow: #{$fd-namespace}-form-edit-mode-row;
 $block: #{$fd-namespace}-form-edit-mode;
 
+.fd-form-edit-mode-flex {
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  justify-content: flex-start;
+
+  &--right {
+    justify-content: flex-end;
+  }
+}
+
 .#{$blockContainer} {
   @include fd-reset();
 
@@ -59,7 +70,9 @@ $block: #{$fd-namespace}-form-edit-mode;
 .#{$block} {
   @include fd-reset();
 
-  flex: 0 0 100%;
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
   padding: 0 0.25rem;
 
   @for $n from 1 through 12 {
