@@ -69,6 +69,8 @@ $block: #{$fd-namespace}-bar;
     justify-content: center;
     margin-right: $fd-bar-element-spacing;
     max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
 
     @include fd-rtl() {
       margin-right: 0;
@@ -78,6 +80,10 @@ $block: #{$fd-namespace}-bar;
 
   &__element--full-width {
     width: 100%;
+
+    & > *:first-child {
+      flex-grow: 1;
+    }
   }
 
   &__element:last-child {
