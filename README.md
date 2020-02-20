@@ -31,7 +31,11 @@ The compiled CSS for the full library and modules, e.g., core, layout, etc., are
 npm install fundamental-styles --save
 ````
 
-> NOTE: We only distribute the fonts, icons and compiled CSS for each component, not the full project or HTML for specific components. 
+> NOTE: We only distribute compiled CSS for each component, not the full project or HTML for specific components. 
+
+### Fonts & Icons
+
+This project does not contain fonts and icons - those must be added to your project separately. Fonts and icons can be found at [`@sap-theming/theming-base-content`](https://github.com/SAP/theming-base-content).
 
 ## Working with the Project
 
