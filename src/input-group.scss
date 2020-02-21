@@ -105,7 +105,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
     /** Behaviour only for IE10+ */
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      min-width: 160px;
+      flex-basis: 160px;
     }
   }
 
