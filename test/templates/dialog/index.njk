@@ -9,7 +9,7 @@
     <style>
         .fd-dialog {
             position: static;
-            background-color: transparent;
+            /*background-color: transparent;*/
         }
 
         .fd-dialog__content {
@@ -101,8 +101,8 @@
     <br><br>
 
 
-    {% set example %}
-        {% for size in ["s", "m", "l", "xl"] %}
+    {% for size in ["s", "m", "l", "xl"] %}
+        {% set example %}
             <h1>Dialog size {{ size }}</h1>
             {{ dialog(
                 properties={
@@ -117,8 +117,12 @@
                     ]
                 }
             ) }}
-        {% endfor %}
+        {% endset %}
+        {{ format(example) }}
+    {% endfor %}
 
+
+    {% set example %}
         <h1>Dialog with no vertical paddings</h1>
         {{ dialog(
             properties={

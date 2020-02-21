@@ -9,10 +9,12 @@ dialog:
         <div role="document"
              class="fd-dialog__content
              {% set dialog = properties.dialog_content %}
-             {% if dialog.is_resizable %}fd-dialog__content--resizable{% endif %}
              {% if dialog.is_draggable %}fd-dialog__content--draggable-grab{% endif %}
              {% if dialog.dialog_content_size %}fd-dialog__content--{{ dialog.dialog_content_size }}{% endif %}
         ">
+            {% if dialog.is_resizable %}
+            <span class="fd-dialog__resize-handle"></span>
+            {% endif %}
 
             <header class="fd-dialog__header fd-bar {% if dialog.has_subheader %}fd-bar--subheader{% else %}fd-bar--header{% endif %}">
                 <div class="fd-bar__left">
