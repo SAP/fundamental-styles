@@ -19,6 +19,9 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+    //dialog
+    draggableDialog();
+
     //dropdown
     var els = document.querySelectorAll("[aria-controls]");
     for (var i = 0; i < els.length; i++) {
@@ -83,6 +86,7 @@ $(document).ready(function () {
                     group.classList.remove('is-hidden');
                 }
             }
+
             var isPressed;
             //handle the primary trigger
             if (isTree || isTreeItem) {
@@ -116,6 +120,7 @@ $(document).ready(function () {
         }
         return block;
     }
+
     //get all tablists
     var tablists = document.querySelectorAll('[role="tablist"]');
     //handle each tablist
@@ -209,7 +214,7 @@ $(document).ready(function () {
 
     const triStateCheckboxI8 = document.getElementById('Ai4ez6191');
     if (triStateCheckboxI8) {
-      triStateCheckboxI8.indeterminate = true;
+        triStateCheckboxI8.indeterminate = true;
     }
 
     // display responsive component controls
@@ -251,7 +256,7 @@ function stepInputValue(inputId, stepDirection) {
     let inputRef = document.getElementById(inputId);
 
     if (inputRef) {
-        if(stepDirection === "up") {
+        if (stepDirection === "up") {
             ++inputRef.value;
         } else if (stepDirection === "down") {
             --inputRef.value;
@@ -261,3 +266,28 @@ function stepInputValue(inputId, stepDirection) {
     }
 }
 
+function toggleDialog(dialogId, show) {
+    let dialog = document.getElementById(dialogId);
+    if (show) {
+        $(dialog).addClass("fd-dialog--active")
+    } else {
+        $(dialog).removeClass("fd-dialog--active")
+    }
+}
+
+
+function draggableDialog() {
+    let draggableDialogs = document.getElementsByClassName('fd-dialog__content--draggable-grab');
+
+    for (let i = 0; i < draggableDialogs.length; i++) {
+        let dialogHeader = draggableDialogs[i].getElementsByClassName('fd-dialog__header')[0];
+        if (dialogHeader) {
+            dialogHeader.onmousedown = function () {
+                $(draggableDialogs[i]).addClass('fd-dialog__content--draggable-grabbing');
+            };
+            dialogHeader.onmouseup = function () {
+                $(draggableDialogs[i]).removeClass('fd-dialog__content--draggable-grabbing');
+            };
+        }
+    }
+}

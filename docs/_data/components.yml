@@ -12,6 +12,9 @@
     - title: Button
       meta: button
 
+    - title: Dialog
+      meta: dialog
+
     - title: Forms
       meta: form
 
@@ -44,9 +47,6 @@
 
     - title: Message Strip
       meta: message-strip
-
-    - title: Modal
-      meta: modal
 
     - title: Notification
       meta: notification
