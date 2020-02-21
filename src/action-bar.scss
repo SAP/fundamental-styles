@@ -37,10 +37,8 @@ $block: #{$fd-namespace}-action-bar;
     color: var(--sapContent_LabelColor);
 
     @include fd-hide-on-mobile();
+    @include fd-truncate-text();
 
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     margin-top: 0.25rem;
     height: 1.25rem;
     width: 100%;
@@ -104,8 +102,6 @@ $block: #{$fd-namespace}-action-bar;
     @include fd-heading();
     @include fd-truncate-text();
 
-    overflow: hidden;
-    text-overflow: ellipsis;
     font-size: var(--sapFontHeader3Size);
     font-family: var(--sapFontHeaderFamily);
     color: $fd-action-bar-title-color;

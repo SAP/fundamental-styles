@@ -195,6 +195,30 @@ When there are several main actions for a page, consider displaying them under a
  
 <br/>
  
+## Action bar with back button, description, action buttons and Responsive Behaviour - XL .
+{% capture default-action-bar %}
+<div class=" fd-action-bar fd-action-bar__xl">
+    
+    <div class="fd-action-bar__header">
+    <div class="fd-action-bar__back">
+        <button class="fd-button fd-button--light fd-button--compact sap-icon--nav-back"></button>
+    </div>
+        <h3 class="fd-action-bar__title">
+        Page Title
+        </h3>
+         <div class="fd-action-bar__actions">
+        <button class="fd-button--compact fd-button--primary">Button</button>
+        <button class="fd-button--compact fd-button--emphasized">Button</button>
+    </div>
+       
+    </div>
+    <p class="fd-action-bar__description__with___backbutton">Action bar Description </p>
+</div>
+{% endcapture %}
+{% include display-component.html component=default-action-bar %}
+ 
+<br/>
+
 ## Action bar mobile view
  
 {% capture default-action-bar-multi %}
