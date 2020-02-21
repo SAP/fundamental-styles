@@ -10,24 +10,12 @@ $block: #{$fd-namespace}-action-bar;
   $fd-action-bar-description-color: var(--sapContent_LabelColor) !default;
   $fd-action-bar-title-color: var(--sapGroup_TitleTextColor) !default;
   $fd-action-bar-height: 3rem;
-  $fd-action-bar-padding-x: (
-    def: 1rem,
-    s: 1rem,
-    m: 2rem,
-    l: 2rem,
-    xl: 3rem,
-    xxl: 3rem
-  );
   $fd-action-bar-transition-params: 0.25s ease-in !default;
 
-  // LOCAL mixins
-  @mixin fd-action-bar-responsive {
-    // Changed from deprecated fd-screen(xs)
-    @include fd-screen(s) {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
+  @mixin fd-truncate-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   @mixin fd-action-bar-description {
@@ -36,10 +24,8 @@ $block: #{$fd-namespace}-action-bar;
     color: var(--sapContent_LabelColor);
 
     @include fd-hide-on-mobile();
+    @include fd-truncate-text();
 
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     margin-top: 0.25rem;
     height: 1.25rem;
     width: 100%;
@@ -57,24 +43,8 @@ $block: #{$fd-namespace}-action-bar;
     }
   }
 
-  @include fd-screen(s) {
-    padding-left: map_get($fd-action-bar-padding-x, "s");
-    padding-right: map_get($fd-action-bar-padding-x, "s");
-  }
-
-  @include fd-screen(m) {
-    padding-left: map_get($fd-action-bar-padding-x, "s");
-    padding-right: map_get($fd-action-bar-padding-x, "s");
-  }
-
-  @include fd-screen(l) {
-    padding-left: map_get($fd-action-bar-padding-x, "l");
-    padding-right: map_get($fd-action-bar-padding-x, "l");
-  }
-
-  @include fd-screen(xl) {
-    padding-left: map_get($fd-action-bar-padding-x, "xl");
-    padding-right: map_get($fd-action-bar-padding-x, "xl");
+  @mixin responsive-action-bar($padding-x: 1rem) {
+    padding: 0.5rem $padding-x;
   }
 
   // BLOCK BASE *******************************************
@@ -82,16 +52,13 @@ $block: #{$fd-namespace}-action-bar;
 
   background-color: $fd-action-bar-background-color;
   min-height: $fd-action-bar-height;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   word-wrap: break-word;
   justify-content: space-between;
-  padding-left: map_get($fd-action-bar-padding-x, "m");
-  padding-right: map_get($fd-action-bar-padding-x, "m");
+
+  @include responsive-action-bar($padding-x: 2rem);
 
   &__header {
     @include fd-reset();
-    @include fd-action-bar-responsive();
 
     min-height: 2rem;
     flex-grow: 1;
@@ -120,15 +87,11 @@ $block: #{$fd-namespace}-action-bar;
   &__title {
     @include fd-reset();
     @include fd-heading();
+    @include fd-truncate-text();
 
-    overflow: hidden;
-    text-overflow: ellipsis;
     font-size: var(--sapFontHeader3Size);
     font-family: var(--sapFontHeaderFamily);
     color: $fd-action-bar-title-color;
-
-    @include fd-action-bar-responsive();
-
     flex-grow: 1;
     padding-right: 0.5rem;
     vertical-align: middle;
@@ -180,5 +143,17 @@ $block: #{$fd-namespace}-action-bar;
         }
       }
     }
+  }
+
+  &__s {
+    @include responsive-action-bar();
+  }
+
+  &__m_l {
+    @include responsive-action-bar($padding-x: 2rem);
+  }
+
+  &__xl {
+    @include responsive-action-bar($padding-x: 3rem);
   }
 }
