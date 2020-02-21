@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.7.0-rc.0"></a>
+# [0.7.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.6.1-rc.2...v0.7.0-rc.0) (2020-02-21)
+
+
+### Features
+
+* Introduce Dialog as successor for Modal - Fiori 3 refactor ([#687](https://github.com/SAP/fundamental-styles/issues/687)) ([704de9b](https://github.com/SAP/fundamental-styles/commit/704de9b))
+
+
+
 <a name="0.6.1-rc.2"></a>
 ## [0.6.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.6.1-rc.1...v0.6.1-rc.2) (2020-02-20)
 
