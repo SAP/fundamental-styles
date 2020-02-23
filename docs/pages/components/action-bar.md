@@ -197,7 +197,7 @@ When there are several main actions for a page, consider displaying them under a
  
 ## Action bar with back button, description, action buttons and Responsive Behaviour - XL .
 {% capture default-action-bar %}
-<div class=" fd-action-bar fd-action-bar__xl">
+<div class=" fd-action-bar fd-action-bar--xl">
     
     <div class="fd-action-bar__header">
     <div class="fd-action-bar__back">
@@ -212,7 +212,7 @@ When there are several main actions for a page, consider displaying them under a
     </div>
        
     </div>
-    <p class="fd-action-bar__description__with___backbutton">Action bar Description </p>
+    <p class="fd-action-bar__description__with--backBtn">Action bar Description </p>
 </div>
 {% endcapture %}
 {% include display-component.html component=default-action-bar %}
