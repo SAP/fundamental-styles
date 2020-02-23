@@ -102,7 +102,7 @@ $block: #{$fd-namespace}-action-bar;
     @include fd-action-bar-description();
   }
 
-  &__description__with___backbutton {
+  &__description__with--backBtn {
     @include fd-action-bar-description();
 
     padding-left: 2.25rem;
@@ -145,15 +145,15 @@ $block: #{$fd-namespace}-action-bar;
     }
   }
 
-  &__s {
+  &--s {
     @include responsive-action-bar();
   }
 
-  &__m_l {
+  &--m_l {
     @include responsive-action-bar($padding-x: 2rem);
   }
 
-  &__xl {
+  &--xl {
     @include responsive-action-bar($padding-x: 3rem);
   }
 }
