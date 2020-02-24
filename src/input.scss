@@ -18,6 +18,7 @@ $block: #{$fd-namespace}-input;
   padding: 0 0.625rem;
   z-index: 1;
   cursor: text;
+  overflow: hidden;
 
   &[aria-expanded="false"] {
     z-index: 0;

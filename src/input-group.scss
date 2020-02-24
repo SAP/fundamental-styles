@@ -27,6 +27,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   border-radius: var(--sapField_BorderCornerRadius);
   background-color: var(--sapField_Background);
   width: 100%;
+  overflow: hidden;
 
   // states
   @include fd-form-states();
