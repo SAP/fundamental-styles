@@ -11,9 +11,6 @@
 $fd-breadcrumb-margin-bottom: 0.5rem;
 $fd-breadcrumb-spacing: 0.25rem;
 
-$fd-breadcrumb-font-size: var(--sapFontSize);
-$fd-breadcrumb-font-family: var(--sapFontFamily);
-
 $fd-breadcrumb-separator-color: var(--sapContent_LabelColor);
 $fd-breadcrumb-item-color: var(--sapContent_LabelColor);
 
@@ -54,8 +51,6 @@ $block: #{$fd-namespace}-breadcrumb;
 
     display: inline-block;
     transition: all $fd-animation--speed ease-in;
-    font-size: $fd-breadcrumb-font-size;
-    font-family: $fd-breadcrumb-font-family;
   }
 
   &__dropdown-icon {

@@ -100,20 +100,14 @@
   @include fd-reset();
   @include fd-ellipsis();
 
-  font-family: var(--sapFontFamily);
-  font-size: var(--sapFontSize);
-  font-weight: normal;
   color: var(--sapField_TextColor);
   background-color: var(--sapField_Background);
-  box-sizing: border-box;
   border-style: solid;
   border-width: var(--sapField_BorderWidth);
   border-color: var(--sapField_BorderColor);
   border-radius: var(--sapField_BorderCornerRadius);
   outline: none;
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 
   &::placeholder {
     font-style: italic;

@@ -15,7 +15,6 @@ body {
 }
 
 .test-fieldset {
-  font-family: monospace;
   font-size: 14px;
   border: solid 2px lightgray;
   padding: 10px 15px;
