@@ -43,6 +43,7 @@ $block: #{$fd-namespace}-radio;
     @include fd-form-label();
     @include action-cursor();
 
+    line-height: 1rem;
     display: flex;
     align-items: center;
     overflow: hidden;

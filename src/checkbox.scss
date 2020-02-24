@@ -42,6 +42,7 @@ $block: #{$fd-namespace}-checkbox;
     @include fd-form-label();
     @include action-cursor();
 
+    line-height: 1rem;
     padding: $fd-checkbox-margin 0 $fd-checkbox-margin $fd-checkbox-margin;
     overflow: hidden;
     display: flex;
