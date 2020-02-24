@@ -351,7 +351,7 @@ In special cases, there are only two mutually exclusive options. Combine them in
         <div class="fd-form-item">
             <input type="radio" class="fd-radio" id="pDidh761" name="radio1" checked>
             <label class="fd-radio__label" for="pDidh761">
-Text OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText Option
+                Field label
             </label>
         </div>
         <div class="fd-form-item">
@@ -612,7 +612,9 @@ Do not use the checkbox control if:
     <div class="fd-form-group">
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez611">
-            <label class="fd-checkbox__label" for="Ai4ez611">Text OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText OptionText Option</label>
+            <label class="fd-checkbox__label" for="Ai4ez611">
+                Field label
+            </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez612" checked>
