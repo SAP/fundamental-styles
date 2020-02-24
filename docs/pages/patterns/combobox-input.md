@@ -293,3 +293,80 @@ To add text in the `body` of the component, simply include your text in the `fd-
 <span class="fd-form-message fd-form-message--static fd-form-message--success">Success message</span>
 {% endcapture %}
 {% include display-component.html component=semantic %}
+
+## Combobox Mobile Mode
+For mobile devices, or tablets, combobox component should be displayed in fullscreen mode.
+So instead of using popover and dropdown, it should be wrapped in `dialog` and `bar` components.
+{% capture mobile-combobox %}
+<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
+    <div class="fd-dialog__content">
+        <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h3 class="fd-dialog__title">
+                        Ingredients
+                    </h3>
+                </div>
+            </div>
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class=" fd-button--light sap-icon--decline" aria-label="close"></button>
+                </div>
+            </div>
+        </header>
+        <div class="fd-dialog__subheader fd-bar fd-bar--cosy fd-bar--subheader">
+            <div class="fd-bar__middle">
+                <div class="fd-input-group fd-input-group--control">
+                     <input type="text" class="fd-input fd-input-group__input" value="Apple" id="" placeholder="Select Ingredient">
+                     <span class="fd-input-group__addon fd-input-group__addon--button">
+                         <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow"></button>
+                     </span>
+                 </div>
+            </div>
+        </div>
+        <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
+              <ul class="fd-list fd-list--dropdown" role="listbox">
+                 <li class="fd-list__group-header">
+                     Fruits
+                 </li>
+                 <li role="option" tabindex="0" class="fd-list__item is-selected">
+                     <span class="fd-list__title">Apple</span>
+                 </li>
+                 <li role="option" tabindex="0" class="fd-list__item">
+                     <span class="fd-list__title">Orange</span>
+                 </li>
+                 <li role="option" tabindex="0" class="fd-list__item">
+                     <span class="fd-list__title">Banana</span>
+                 </li>
+                 <li role="option" tabindex="0" class="fd-list__item">
+                     <span class="fd-list__title">Kiwi</span>
+                 </li>
+                 <li class="fd-list__group-header">
+                     Vegetables
+                 </li>
+                 <li role="option" tabindex="0" class="fd-list__item">
+                     <span class="fd-list__title">Tomato</span>
+                 </li>
+                 <li role="option" tabindex="0" class="fd-list__item">
+                     <span class="fd-list__title">Onion</span>
+                 </li>
+                 <li role="option" tabindex="0" class="fd-list__item">
+                     <span class="fd-list__title">Spinach</span>
+                 </li>
+                 <li role="option" tabindex="0" class="fd-list__item">
+                     <span class="fd-list__title">Potato</span>
+                 </li>
+             </ul>
+        </div>
+       <footer class="fd-dialog__footer fd-bar fd-bar--cosy fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--emphasized fd-dialog__decisive-button">OK</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+{% endcapture %}
+
+{% include display-component.html component=mobile-combobox %}
