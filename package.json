@@ -72,6 +72,9 @@
     "stylelint-scss": "^3.5.4",
     "write-yaml": "^1.0.0"
   },
+  "peerDependencies": {
+    "@sap-theming/theming-base-content": "~11.1.17"
+  },
   "directories": {
     "doc": "docs",
     "test": "test"
