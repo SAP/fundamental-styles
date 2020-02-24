@@ -10,11 +10,14 @@ const data = {
 
 yaml.sync('docs/_config-library.yml', data);
 
+const fontPath = require.resolve('@sap-theming/theming-base-content/content/Base/baseLib/sap_base_fiori/fonts/72-Regular.woff');
+const iconPath = require.resolve('@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/fonts/SAP-icons.woff');
+
 // copy fonts and icons for docs site
-fs.copyFile('./node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_base_fiori/fonts/72-Regular.woff', 'docs/css/fonts/72-Regular.woff', (err) => {
+fs.copyFile(fontPath, 'docs/css/72-Regular.woff', (err) => {
     if (err) throw err;
 });
 
-fs.copyFile('./node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/fonts/SAP-icons.woff', 'docs/css/fonts/SAP-icons.woff', (err) => {
+fs.copyFile(iconPath, 'docs/css/fonts/SAP-icons.woff', (err) => {
     if (err) throw err;
 });

@@ -76,9 +76,6 @@
     "doc": "docs",
     "test": "test"
   },
-  "peerDependencies": {
-    "@sap-theming/theming-base-content": "~11.1.17"
-  },
   "pre-commit": {
     "colors": true,
     "run": [
