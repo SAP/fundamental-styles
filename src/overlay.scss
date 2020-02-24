@@ -25,13 +25,6 @@ $block: #{$fd-namespace}-overlay;
     display: none;
   }
 
-  &--modal {
-    @include fd-var-color("background-color", $fd-overlay-background-color, --fd-overlay-background-color);
-
-    height: 100vh;
-    width: 100vw;
-  }
-
   &--alert {
     position: fixed;
     left: 50%;

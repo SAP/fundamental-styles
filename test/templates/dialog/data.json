@@ -1,0 +1,22 @@
+{
+    "id": "dialog",
+    "name": "Dialog",
+    "type": "text",
+    "properties": {
+        "id": "example-dialog",
+        "toggleable": false,
+        "dialog_content": {
+            "is_compact": false,
+            "is_resizable": false,
+            "dialog_content_size": ""
+        },
+        "header": "",
+        "body": "",
+        "footerActions": [
+            {
+                "type": "",
+                "label": ""
+            }
+        ]
+    }
+}

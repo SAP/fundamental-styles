@@ -191,10 +191,6 @@ body {
     align-items: center;
 }
 
-.fd-overlay--modal .overlay-playground {
-    background: white;
-}
-
 .fd-overlay--alert .overlay-playground {
     background: gold;
     padding: 10px 0;
