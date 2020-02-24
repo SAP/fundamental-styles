@@ -24,7 +24,10 @@ $block: #{$fd-namespace}-info-label;
   $fd-info-label-default-display: inline-block !default;
   $fd-info-label-default-text-padding-right: 0.1875rem !default;
   $fd-info-label-default-text-padding-left: 0.3125rem !default;
-
+  $fd-info-label-default-overflow: hidden !default;
+  $fd-info-label-default-max-width: 100% !default;
+  $fd-info-label-default-white-space: nowrap !default;
+  $fd-info-label-default-text-overflow: ellipsis !default;
   // INFOLABEL ICON
   $fd-info-label-icon-size: 0.75rem !default;
   $fd-info-label-icon-padding-left: 0.3125rem !default;
@@ -65,6 +68,10 @@ $block: #{$fd-namespace}-info-label;
   font-size: $fd-info-label-fontsize;
   letter-spacing: $fd-info-label-default-letter-spacing;
   display: $fd-info-label-default-display;
+  max-width: $fd-info-label-default-max-width;
+  overflow: $fd-info-label-default-overflow;
+  white-space: $fd-info-label-default-white-space;
+  text-overflow: $fd-info-label-default-text-overflow;
 
   &--numeric {
     padding: $fd-info-label-numeric-padding;
@@ -73,6 +80,7 @@ $block: #{$fd-namespace}-info-label;
   &--icon {
     size: $fd-info-label-icon-size;
     padding: 0 $fd-info-label-icon-padding-right 0 $fd-info-label-icon-padding-right;
+    line-height: 1.1;
 
     @include fd-rtl() {
       &:empty {
