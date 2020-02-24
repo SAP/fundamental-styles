@@ -35,25 +35,7 @@ npm install fundamental-styles --save
 
 ### Fonts & Icons
 
-This project does not contain fonts and icons - those must be added to your project separately. Fonts and icons can be found at [`@sap-theming/theming-base-content`](https://github.com/SAP/theming-base-content). After importing fonts and icons from [`@sap-theming/theming-base-content`](https://github.com/SAP/theming-base-content), add the following to your css:
-
-```
-@font-face {
-    font-family: "72";
-    src: url("path/to/fonts") format("woff"); // Bold, Light, Regular available in woff and woff2
-    font-weight: normal;
-    font-style: normal;
-};
-
-@font-face {
-  font-family: "SAP-icons";
-  src: url("path/to/icons") format("woff"); // available in woff, woff2 and ttf
-  font-weight: normal;
-  font-style: normal;
-}
-```
-
-If you are not supporting IE11, the recommended format is `woff2`. If supporting IE11, use `woff`.
+This project does not contain fonts and icons. See our [Getting Started Guide](https://sap.github.io/fundamental-styles/getting-started.html) for more information.
 
 ## Working with the Project
 

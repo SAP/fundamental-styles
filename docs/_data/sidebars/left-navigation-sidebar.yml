@@ -4,25 +4,9 @@ entries:
 
   folders:
 
-  # foundation
   - title: getting started
     url: /getting-started.html
     output: web
-
-  # foundation
-  - title: foundation
-    url: /foundation/index.html
-    output: web
-
-    folderitems:
-
-    - title: Spacing
-      url: /foundation/spacing.html
-      output: web
-
-    - title: Type
-      url: /foundation/type.html
-      output: web
 
   # Layout
   - title: layouts
