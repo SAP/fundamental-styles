@@ -615,3 +615,107 @@ To add text in the `body` of the component, simply include your text in the `fd-
 
 {% endcapture %}
 {% include display-component.html component=semantic-input %}
+
+## Multi Input Mobile Mode
+For mobile devices, or tablets, multi input component should be displayed in fullscreen mode.
+So instead of using popover and dropdown, it should be wrapped in `dialog` and `bar` components.
+{% capture mobile-multi-input %}
+<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
+    <div class="fd-dialog__content">
+        <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h3 class="fd-dialog__title">
+                        Select Ingredient
+                    </h3>
+                </div>
+            </div>
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class=" fd-button--light sap-icon--decline" aria-label="close"></button>
+                </div>
+            </div>
+        </header>
+        <div class="fd-dialog__subheader fd-bar fd-bar--cosy fd-bar--subheader">
+            <div class="fd-bar__middle">
+                <div class="fd-bar__element">
+                    <div class="fd-input-group">
+                        <div class="fd-tokenizer">
+                             <div class="fd-tokenizer__inner">
+                                 <span class="fd-token" role="button">
+                                     <span class="fd-token__text">
+                                         Apple
+                                     </span>
+                                     <button class="fd-token__close"></button>
+                                 </span>
+                                 <span class="fd-token" role="button">
+                                     <span class="fd-token__text">
+                                         Orange
+                                     </span>
+                                     <button class="fd-token__close"></button>
+                                 </span>
+                                 <span class="fd-token" role="button">
+                                     <span class="fd-token__text">
+                                         Kiwi
+                                     </span>
+                                     <button class="fd-token__close"></button>
+                                 </span>
+                                 <span class="fd-tokenizer__indicator">4 more</span> 
+                                 <input class="fd-input fd-input-group__input fd-tokenizer__input" />
+                             </div>
+                         </div>
+                        <span class="fd-input-group__addon fd-input-group__addon--button">
+                            <button class="fd-input-group__button fd-button--light sap-icon--value-help"></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--light sap-icon--multiselect-all"></button>
+                </div>
+            </div>
+        </div>
+        <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
+             <ul class="fd-list fd-list--multi-input fd-list--has-message">
+                <li class="fd-list__message fd-list__message--success">Success Message</li>
+                <li class="fd-list__item is-selected" role="option">
+                     <input type="checkbox" checked class="fd-checkbox  fd-list__input" id="GGi4ez641">
+                     <label class="fd-checkbox__label fd-list__label" for="GGi4ez641">
+                         <span class="fd-list__title">
+                             Apple
+                         </span>
+                     </label>
+                 </li>
+                  <li class="fd-list__item is-selected" role="option">
+                     <input type="checkbox" checked class="fd-checkbox  fd-list__input" id="Ai4FGFG612">
+                     <label class="fd-checkbox__label fd-list__label" for="Ai4FGFG612">
+                         <span class="fd-list__title">Orange</span>
+                     </label>
+                 </li>
+                  <li class="fd-list__item is-selected" role="option">
+                     <input type="checkbox" checked class="fd-checkbox  fd-list__input" id="Ai4e88614">
+                     <label class="fd-checkbox__label fd-list__label" for="Ai4e88614">
+                         <span class="fd-list__title">Kiwi</span>
+                     </label>
+                 </li>
+                  <li class="fd-list__item" role="option">
+                     <input type="checkbox" class="fd-checkbox  fd-list__input" id="Ai4egh6024">
+                     <label class="fd-checkbox__label fd-list__label" for="Ai4egh6024">
+                         <span class="fd-list__title">Banana</span>
+                     </label>
+                 </li>
+                  <li class="fd-list__item" role="option">
+                     <input type="checkbox" class="fd-checkbox  fd-list__input" id="7gJHdsad">
+                     <label class="fd-checkbox__label fd-list__label" for="7gJHdsad">
+                         <span class="fd-list__title">Lemon</span>
+                     </label>
+                 </li>
+                  <li class="fd-list__footer">
+                     <a class="fd-link" href="#">Show All</a>
+                 </li>
+             </ul>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+
+{% include display-component.html component=mobile-multi-input %}
