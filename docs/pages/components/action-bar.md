@@ -212,7 +212,7 @@ When there are several main actions for a page, consider displaying them under a
     </div>
        
     </div>
-    <p class="fd-action-bar__description__with--backBtn">Action bar Description </p>
+    <p class="fd-action-bar__description--with-backBtn">Action bar Description </p>
 </div>
 {% endcapture %}
 {% include display-component.html component=default-action-bar %}
