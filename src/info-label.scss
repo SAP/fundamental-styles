@@ -95,6 +95,8 @@ $block: #{$fd-namespace}-info-label;
 
     &::before {
       padding-right: $fd-info-label-default-text-padding-right;
+      position: relative;
+      top: 0.0625rem;
     }
 
     &:empty {
