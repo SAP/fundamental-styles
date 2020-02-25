@@ -197,7 +197,15 @@ calendar:
 
 {% macro calendar_header(ids={},properties={}, modifier={}, state={}, aria={}) -%}
   <header class="fd-calendar__header{{ state | state}}"{{ aria | aria }}>
+    {% if properties.mobile == 'portrait'%}
     <div class="fd-calendar__navigation">
+      <div class="fd-button-group" role="group">
+        <button class="btn-playground">Date</button>
+        <button class="btn-playground">Time</button>
+      </div>
+    </div>
+    {% endif %}
+    <div class="fd-calendar__navigation {% if properties.mobile == 'landscape'%}fd-calendar__navigation--close-button-space{% endif %}">
       <div class="fd-calendar__action fd-calendar__action--arrow-left">
         <button class="btn-playground" type="button"><</button>
       </div>
@@ -210,10 +218,10 @@ calendar:
       <div class="fd-calendar__action fd-calendar__action--arrow-right">
         <button class="btn-playground" type="button">></button>
       </div>
+      {% if properties.mobile == 'landscape' %}
+        <button class="btn-playground fd-calendar__close-button"></button>
+      {% endif %}
     </div>
-    {% if properties.mobile %}
-      <button class="btn-playground fd-calendar__close-button"></button>
-    {% endif %}
     {{ modifier.block }}
   </header>
 {%- endmacro %}
