@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.7.0-rc.8"></a>
+# [0.7.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.7.0-rc.7...v0.7.0-rc.8) (2020-02-25)
+
+
+### Bug Fixes
+
+* (combobox) Add mobile mode for combobox ([#697](https://github.com/SAP/fundamental-styles/issues/697)) ([d233d1d](https://github.com/SAP/fundamental-styles/commit/d233d1d))
+
+
+
 <a name="0.7.0-rc.7"></a>
 # [0.7.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.7.0-rc.6...v0.7.0-rc.7) (2020-02-25)
 
