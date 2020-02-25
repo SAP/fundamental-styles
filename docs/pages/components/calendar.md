@@ -10,13 +10,60 @@ summary:
 ---
 
 Commonly used as the contents of a popover when composing `date-picker`, rarely used on its own as a standalone component.
-{: .docs-intro}
-The `.fd-calendar__item` container takes the majority of styling. The rest of the markup provides the structure and layout.
-Classes available for `.fd-calendar__item`. All are available to dates, months, and years.
 
 > Looking for Date Picker? From a style perspective, a date-picker is simply a composition of our existing calendar, input group and popover, but contains no new styles of its own. Therefore, we consider it a pattern. [See the date picker pattern here]({{site.baseurl}}/patterns/date-picker).
 
 <br>
+
+## Calendar structure
+Following classes describe block structure of calendar component.
+<ul>
+    <li>
+        <code>.fd-calendar</code> - calendar main container, defines width of calendar
+        <ul>
+            <li>
+                <code>.fd-calendar__header</code> - header section of calendar
+                <ul>
+                    <li>
+                        <code>.fd-calendar__navigation</code> - container used for grouping row of navigation controls
+                        <ul>
+                            <li><code>.fd-calendar__action</code> - action buttons of calendar</li>
+                            <li><code>.fd-calendar__close-button</code> - close button for calendar on mobile devices </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <code>.fd-calendar__content</code> - calendar body container
+                <ul>
+                    <li>
+                        <code>.fd-calendar__table</code> - groups table elements representing calendar items
+                        <ul>
+                            <li>
+                                <code>.fd-calendar__group</code> - groups calendar rows with the same destination
+                                <ul>
+                                    <li>
+                                        <code>.fd-calendar__row</code> - groups calendar grid items in one row
+                                        <ul>
+                                            <li>
+                                                <code>.fd-calendar__item</code> - represents calendar grid item
+                                                <ul>
+                                                    <li><code>.fd-calendar__text</code> - represents content of calendar grid item</li>
+                                                </ul>
+                                            </li>
+                                            <li><code>.fd-calendar__special-day</code> - represents calendar grid item with special marker</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
 
 ## Calendar modifiers
 This are classes used to describe the look general look of calendar.
@@ -28,9 +75,13 @@ This are classes used to describe the look general look of calendar.
             <td>Class used to style calendar in compact mode</td>
         </tr>
         <tr>
-            <td><code>.fd-calendar--mobile</code></td>
-            <td>Class used to style calendar for mobile devices. Calendar uses different layout for different device
-                orientation.
+            <td><code>.fd-calendar--mobile-landscape</code></td>
+            <td>Class used to style calendar for mobile devices in landscape orientation.
+            </td>
+        </tr>
+        <tr>
+            <td><code>.fd-calendar--mobile-portrait</code></td>
+            <td>Class used to style calendar for mobile devices in portrait orientation.
             </td>
         </tr>
         <tr>
@@ -44,7 +95,27 @@ This are classes used to describe the look general look of calendar.
     </table>
 </div>
 
-## Calendar elements modifiers
+## Calendar navigation modifiers
+This are classes used to describe the look of calendar action buttons.
+
+<div class="fd-calendar" style="width: 100%;">
+    <table style="width: 100%;">
+        <tr>
+            <td><code>.fd-calendar__navigation--close-button-space</code></td>
+            <td>Class used to create additional space for close button, on the right side of navigation bar</td>
+        </tr>
+        <tr>
+            <td><code>.fd-calendar__action--arrow-left</code></td>
+            <td>Class used to style "Previous" navigation button</td>
+        </tr>
+        <tr>
+            <td><code>.fd-calendar__action--arrow-right</code></td>
+            <td>Class used to style "Next" navigation button</td>
+        </tr>
+    </table>
+</div>
+
+## Calendar grid elements modifiers
 This are classes used to describe the look of calendar grid element.
 
 <div class="fd-calendar" style="width: 100%;">
@@ -86,7 +157,7 @@ This are classes used to describe the look of calendar grid element.
         <tr>
             <td><code style="white-space: nowrap;">.fd-calendar__item--side-helper</code></td>
             <td style="width: 100%;">Class used for styling calendar grid side-helpers like week number or day shortcut</td>
-            <td class="fd-calendar__item fd-calendar__item--side-helper">
+            <td style="height: 2.75rem;" class="fd-calendar__item fd-calendar__item--side-helper">
                 <span class="fd-calendar__text" role="button">30</span>
             </td>
         </tr>
