@@ -1,0 +1,21 @@
+$block: #{$fd-namespace}-button;
+
+@mixin applyColors($color, $borderColor, $backgroundColor) {
+  color: $color;
+  border-color: $borderColor;
+  background-color: $backgroundColor;
+}
+
+@mixin buttonFocus() {
+  outline-style: dotted;
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-offset: -0.1875rem;
+}
+
+@mixin styleContent() {
+  > .#{$block}--content {
+    @include buttonReset();
+    @content;
+  }
+}

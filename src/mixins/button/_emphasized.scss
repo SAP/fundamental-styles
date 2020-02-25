@@ -1,0 +1,42 @@
+@mixin emphasized() {
+  @include applyColors(
+    var(--sapButton_Emphasized_TextColor),
+    var(--sapButton_Emphasized_BorderColor),
+    var(--sapButton_Emphasized_Background)
+  );
+}
+
+@mixin emphasizedHover {
+  @include applyColors(
+    var(--sapButton_Emphasized_Hover_TextColor),
+    var(--sapButton_Emphasized_Hover_Background),
+    var(--sapButton_Emphasized_Hover_Background)
+  );
+}
+
+@mixin emphasizedPressed() {
+  @include applyColors(
+    var(--sapButton_Emphasized_TextColor),
+    var(--sapButton_Emphasized_Active_BorderColor),
+    var(--sapButton_Emphasized_Active_Background)
+  );
+}
+
+@mixin emphasizedPressedFocus() {
+  outline-color: var(--sapContent_ContrastFocusColor);
+}
+
+@mixin emphasizedFocus() {
+  @include buttonFocus();
+}
+
+@mixin emphasizedDisabled {
+  @include isDisabled();
+  @include emphasized();
+
+  box-shadow: none;
+
+  &:focus {
+    outline: none;
+  }
+}

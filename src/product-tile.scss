@@ -21,7 +21,7 @@ $block: #{$fd-namespace}-product-tile;
   $fd-product-tile-content-padding-y: fd-space(4) !default;
   $fd-product-tile-box-shadow: 0 0 5px 0 rgba($fd-product-tile-color, 0.4) !default;
   // anim
-  $fd-product-tile-transition-params: $fd-animation--speed ease-in !default;
+  $fd-product-tile-transition-params: $fd-animation-speed ease-in !default;
 
   --fd-product-tile-color: var(--fd-color-text-3);
   --fd-product-tile-background-color: var(--fd-color-background-2);

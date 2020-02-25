@@ -29,7 +29,7 @@
     "test:ci-config": "./ci-scripts/generateBackstopConfig.js",
     "test:reference": "backstop reference --config ./test/visual-regression-tests/config/backstopConfig.js --docker",
     "test:update": "npm run test:linux-fix && server-test start:playground http-get://localhost:3030 test:reference && backstop approve --config ./test/visual-regression-tests/config/backstopConfig.js",
-    "test:update-linux": "npm run test:update && sudo chown -R ${USER}:${USER} .",
+    "test:update-linux": "npm run test:linux-fix && server-test start:playground http-get://localhost:3030 test:reference && sudo chown -R ${USER}:${USER} . && backstop approve --config ./test/visual-regression-tests/config/backstopConfig.js",
     "test:visual": "backstop test --config ./test/visual-regression-tests/config/backstopConfig.js --docker"
   },
   "repository": {

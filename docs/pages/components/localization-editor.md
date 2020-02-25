@@ -21,7 +21,7 @@ summary:
                <input type="text" class="fd-input fd-input-group__input" id="" aria-controls="NJvVh542c" aria-expanded="false"
                aria-haspopup="true" placeholder="Enter Label">
                <span class="fd-input-group__addon fd-input-group__addon--button">
-                  <button class="fd-input-group__button fd-button--light"
+                  <button class="fd-input-group__button fd-button  fd-button--light"
                   aria-controls="NJvVh542c" aria-expanded="false" aria-haspopup="true">EN*</button>
                </span>
             </div>
@@ -71,7 +71,7 @@ summary:
                <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" aria-controls="test22" aria-expanded="false"
                aria-haspopup="true" placeholder="Enter Label">
                <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                  <button class="fd-input-group__button fd-button--light fd-button--compact"
+                  <button class="fd-input-group__button fd-button fd-button--light fd-button--compact"
                   aria-controls="test22" aria-expanded="false" aria-haspopup="true">EN*</button>
                </span>
             </div>
@@ -127,7 +127,7 @@ summary:
             <textarea class="fd-textarea fd-input-group__input" id="" aria-controls="NJvVh542" aria-expanded="false"
             aria-haspopup="true"></textarea>
             <span class="fd-input-group__addon  fd-input-group__addon--textarea fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--light"
+            <button class="fd-input-group__button fd-button fd-button--light"
             aria-controls="NJvVh542" aria-expanded="false" aria-haspopup="true">EN*</button>
             </span>
          </div>
