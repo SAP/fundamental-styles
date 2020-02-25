@@ -5,8 +5,9 @@
 /*!
 .fd-calendar+(--compact, --mobile-landscape, --mobile-portrait)
     .fd-calendar__header
-      .fd-calendar__navigation
+      .fd-calendar__navigation(--close-button-space)
         .fd-calendar__action(+[--arrow-left, --arrow-right])
+        .fd-calendar__close-button
     .fd-calendar__content(+[--months, --years])
         .fd-calendar__table
           .fd-calendar__group
