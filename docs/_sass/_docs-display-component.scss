@@ -87,7 +87,7 @@
         }
 
         &.fd-dialog__content,
-        .fd-dialog__content{
+        .fd-dialog__content {
             position: static;
             transform: translate(0%, 0%);
             width: 30rem;
@@ -95,6 +95,21 @@
 
             &:not(:last-child) {
                 margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .fd-calendar-mobile-docs-static {
+        &--landscape {
+            .fd-dialog__content {
+                width: 640px;
+                height: 360px;
+            }
+        }
+        &--portrait {
+            .fd-dialog__content {
+                height: 640px;
+                width: 360px;
             }
         }
     }

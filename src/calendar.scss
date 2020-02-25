@@ -3,7 +3,7 @@
 @import "./functions";
 
 /*!
-.fd-calendar+(--compact, --mobile)
+.fd-calendar+(--compact, --mobile-landscape, --mobile-portrait)
     .fd-calendar__header
       .fd-calendar__navigation
         .fd-calendar__action(+[--arrow-left, --arrow-right])
@@ -108,6 +108,10 @@ $fd-calendar-special-days: (
     &__special-day--#{$name} {
       .#{$block}__text::after {
         content: "";
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
         height: $fd-special-day-marker-height;
         box-shadow: inset 0 $fd-special-day-marker-height * -1 0 $color;
       }
@@ -225,26 +229,6 @@ $fd-calendar-special-days: (
   height: 100%;
   color: $fd-calendar-item-color;
   font-size: $fd-calendar-item-font-size;
-
-  &::before {
-    content: none;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    border: $fd-calendar-item-current-inner-border;
-    border-radius: $fd-calendar-item-current-inner-border-radius;
-  }
-
-  &::after {
-    content: none;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
 }
 
 .#{$block} {
@@ -259,16 +243,19 @@ $fd-calendar-special-days: (
     @include fd-reset();
 
     display: flex;
-    align-items: center;
+    flex-direction: column;
   }
 
   &__navigation {
     @include fd-reset();
 
-    @include fd-flex() {
-      flex-grow: 1;
-      align-items: center;
-      justify-content: space-between;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    &--close-button-space {
+      padding-right: 20%;
     }
   }
 
@@ -282,6 +269,7 @@ $fd-calendar-special-days: (
     > [type="button"] {
       width: 100%;
       height: $fd-calendar-button-height;
+      max-height: $fd-calendar-button-height;
     }
 
     &--arrow-left {
@@ -336,7 +324,7 @@ $fd-calendar-special-days: (
   &__item {
     @extend %fd-calendar-item;
 
-    display: table-cell;
+    display: inline-block;
 
     &--weekend {
       @extend %fd-calendar-item-weekend;
@@ -364,6 +352,14 @@ $fd-calendar-special-days: (
 
       .#{$block}__text::before {
         content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        border: $fd-calendar-item-current-inner-border;
+        border-radius: $fd-calendar-item-current-inner-border-radius;
       }
     }
 
@@ -401,7 +397,10 @@ $fd-calendar-special-days: (
   &__close-button {
     @include fd-icon("decline", "m");
 
-    display: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   // CALENDAR COMPACT
@@ -429,41 +428,30 @@ $fd-calendar-special-days: (
   }
 
   // CALENDAR MOBILE
-  &--mobile {
+  &--mobile-landscape,
+  &--mobile-portrait {
     width: 100%;
     height: 100%;
 
     .#{$block} {
-      &__navigation {
-        justify-content: space-between;
-      }
-
       &__action > [type="button"] {
         height: $fd-calendar-button-height-mobile;
         max-height: $fd-calendar-button-height-mobile;
       }
     }
+  }
 
-    @media (orientation: portrait) {
-      padding: $fd-calendar-padding-mobile-portrait;
-    }
+  &--mobile-landscape {
+    padding: $fd-calendar-padding-mobile-landscape;
 
-    @media (orientation: landscape) {
-      padding: $fd-calendar-padding-mobile-landscape;
-
-      .#{$block} {
-        &__close-button {
-          display: block;
-          margin-left: 10%;
-          width: $fd-calendar-button-height-mobile;
-          height: $fd-calendar-button-height-mobile;
-          max-height: $fd-calendar-button-height-mobile;
-        }
-
-        &__item--side-helper {
-          height: $fd-calendar-item-helper-height-landscape;
-        }
+    .#{$block} {
+      &__item--side-helper {
+        height: $fd-calendar-item-helper-height-landscape;
       }
     }
+  }
+
+  &--mobile-portrait {
+    padding: $fd-calendar-padding-mobile-portrait;
   }
 }
