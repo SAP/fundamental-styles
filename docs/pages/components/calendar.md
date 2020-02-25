@@ -483,7 +483,7 @@ This are classes used to describe the look of calendar grid element.
             <tr class="fd-calendar__row">
                 <td role="gridcell" class="fd-calendar__item">
                     <span class="fd-calendar__text" role="button">Jul.</span></td>
-                <td role="gridcell" class="fd-calendar__item is-active">
+                <td role="gridcell" class="fd-calendar__item">
                     <span class="fd-calendar__text" role="button">Aug.</span></td>
                 <td role="gridcell" class="fd-calendar__item">
                     <span class="fd-calendar__text" role="button">Sep.</span></td>

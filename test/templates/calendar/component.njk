@@ -8,237 +8,236 @@ calendar:
 -->
 {% set data = {
     "days": [
-      "", "Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
+        "", "Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
     ],
     "months": [
-      {
-        "name": "January",
-        "days": 31
-      },
-      {
-        "name": "February",
-        "days": 28
-      },
-      {
-        "name": "March",
-        "days": 31
-      },
-      {
-        "name": "April",
-        "days": 30
-      },
-      {
-        "name": "May",
-        "days": 31
-      },
-      {
-        "name": "June",
-        "days": 30
-      },
-      {
-        "name": "July",
-        "days": 31
-      },
-      {
-        "name": "August",
-        "days": 31
-      },
-      {
-        "name": "September",
-        "days": 30
-      },
-      {
-        "name": "October",
-        "days": 31
-      },
-      {
-        "name": "November",
-        "days": 30
-      },
-      {
-        "name": "December",
-        "days": 31
-      }
+        {
+            "name": "January",
+            "days": 31
+        },
+        {
+            "name": "February",
+            "days": 28
+        },
+        {
+            "name": "March",
+            "days": 31
+        },
+        {
+            "name": "April",
+            "days": 30
+        },
+        {
+            "name": "May",
+            "days": 31
+        },
+        {
+            "name": "June",
+            "days": 30
+        },
+        {
+            "name": "July",
+            "days": 31
+        },
+        {
+            "name": "August",
+            "days": 31
+        },
+        {
+            "name": "September",
+            "days": 30
+        },
+        {
+            "name": "October",
+            "days": 31
+        },
+        {
+            "name": "November",
+            "days": 30
+        },
+        {
+            "name": "December",
+            "days": 31
+        }
     ]
-  }
-%}
+} %}
 {% macro calendar(properties={}, modifier={}, state={}, aria={}) -%}
-  {%- set month = data.months[properties.month] %}
-  {%- set _grid_id = utils.id() %}
-  {%- set _months_id = utils.id() %}
-  {%- set _years_id = utils.id() %}
-<div class="fd-calendar{{ modifier.block | modifier('calendar')}}" style="{%- if properties.mobile%}width: 400px;{%- endif %}">{{properties.header.show}}
+    {%- set month = data.months[properties.month] %}
+    {%- set _grid_id = utils.id() %}
+    {%- set _months_id = utils.id() %}
+    {%- set _years_id = utils.id() %}
+    <div class="fd-calendar{{ modifier.block | modifier('calendar') }}"
+         style="{%- if properties.mobile%}width: 400px;{%- endif %}">{{ properties.header.show }}
 
-  {# CALENDAR HEADER #}
-  {%- if not properties.header.hide %}
-      {{ calendar_header({ months: _months_id, years: _years_id }, properties) }}
-  {%- endif %}
+        {# CALENDAR HEADER #}
+        {%- if not properties.header.hide %}
+            {{ calendar_header({ months: _months_id, years: _years_id }, properties) }}
+        {%- endif %}
 
-  {# CALENDAR CONTENT #}
-  {%- if properties.dates %}
-    {{ calendar_days(_grid_id, properties, aria={ hidden: properties.dates.show === false } ) | indent(2) }}
-  {%- elif properties.months %}
-    {{ calendar_months(_months_id, properties)}}
-  {%- elif properties.years %}
-    {{ calendar_years(_years_id, properties) }}
-  {%- endif %}
-  </div>
-</div>
+        {# CALENDAR CONTENT #}
+        {%- if properties.dates %}
+            {{ calendar_days(_grid_id, properties, aria={ hidden: properties.dates.show === false } ) | indent(2) }}
+            {%- elif properties.months %}
+            {{ calendar_months(_months_id, properties) }}
+            {%- elif properties.years %}
+            {{ calendar_years(_years_id, properties) }}
+        {%- endif %}
+    </div>
 {%- endmacro %}
 
 {% macro calendar_days(id, properties={}, modifier={}, state={}, aria={}) -%}
-  {%- set month = data.months[properties.month] %}
-  {%- set monthTotalDays = month.days %}
-  {%- set daysOffset = properties.dates.daysOffset %}
-  {%- set totalCells = 7 * 5 %}
-  {%- if monthTotalDays + daysOffset > totalCells %}
-    {%- set totalCells = 7 * 6 %}
-  {%- endif %}
-  {%- set _predate = 31 %}
-  {%- set _enddate = 0 %}
-<div class="fd-calendar__content" id="{{id}}">
-  <table class="fd-calendar__table"{{ { role: 'grid'} | aria }}>
-    {{ calendar_header_group() }}
-    <tbody class="fd-calendar__group">
-      <tr class="fd-calendar__row">
-        <td class="fd-calendar__item fd-calendar__item--side-helper" role="gridcell">
-          <span class="fd-calendar__text">1</span>
-        </td>
-      {%- for cell in range(0,totalCells) %}
-        {%- if (loop.index0) % 7 == 0 and not loop.first%}
-      </tr>
-      <tr class="fd-calendar__row">
-        <td class="fd-calendar__item fd-calendar__item--side-helper" role="gridcell">
-          <span class="fd-calendar__text">{{ (loop.index0 / 7) | round() + 1 }}</span>
-        </td>
-      {%-endif %}
-  {%- set date = loop.index - daysOffset %}
-  {%- set _is_other_month = date < 1 or date > monthTotalDays %}
-  {%- set _is_disabled = properties.dates.disablePast and date < properties.today and not _is_other_month %}
-  {%- if _is_other_month %}
-    {%- if date < 1 %}
-      {%- set _is_disabled = properties.dates.disablePast %}
-      {%- set date = _predate + date %}
-    {%- else %}
-      {%- set _enddate = _enddate + 1 %}
-      {%- set date = _enddate %}
+    {%- set month = data.months[properties.month] %}
+    {%- set monthTotalDays = month.days %}
+    {%- set daysOffset = properties.dates.daysOffset %}
+    {%- set totalCells = 7 * 5 %}
+    {%- if monthTotalDays + daysOffset > totalCells %}
+        {%- set totalCells = 7 * 6 %}
     {%- endif %}
-  {%- endif %}
-  {%- set _is_today = date === properties.today and _is_other_month == false %}
-  {%- set _is_weekend = (loop.index % 7 == 6 or loop.index % 7 == 0) and not _is_other_month %}
-  {%- set _is_blocked = (date > properties.dates.block[0] and date < properties.dates.block[1]) and not _is_other_month %}
-  {%- set _is_selected = date === properties.dates.selected and not _is_other_month %}
-  {%- if properties.dates.selectedRange and not _is_other_month %}
-    {%- set _is_selected = date === properties.dates.selectedRange[0] or date === properties.dates.selectedRange[1] %}
-    {%- set _is_selected_range = date > properties.dates.selectedRange[0] and date < properties.dates.selectedRange[1] %}
-    {%- set _is_selected_range_first = date == properties.dates.selectedRange[0] %}
-    {%- set _is_selected_range_last = date == properties.dates.selectedRange[1] %}
-  {%- endif %}
-        {{ calendar_item(date,modifier={ 'item': [
-          'other-month' if _is_other_month else '',
-          'current' if _is_today else '',
-          'weekend' if _is_weekend else '',
-          'range' if _is_selected_range else ''
-        ] },state={disabled: _is_disabled, active: _is_selected},aria={ role: 'gridcell' }) }}
-      {%- endfor %}
-      </tr>
-    </tbody>
-  </table>
-</div>
+    {%- set _predate = 31 %}
+    {%- set _enddate = 0 %}
+    <div class="fd-calendar__content" id="{{ id }}">
+        <table class="fd-calendar__table"{{ { role: 'grid'} | aria }}>
+            {{ calendar_header_group() }}
+            <tbody class="fd-calendar__group">
+                <tr class="fd-calendar__row">
+                    <td class="fd-calendar__item fd-calendar__item--side-helper" role="gridcell">
+                        <span class="fd-calendar__text">1</span>
+                    </td>
+                    {%- for cell in range(0,totalCells) %}
+                    {%- if (loop.index0) % 7 == 0 and not loop.first %}
+                </tr>
+                <tr class="fd-calendar__row">
+                    <td class="fd-calendar__item fd-calendar__item--side-helper" role="gridcell">
+                        <span class="fd-calendar__text">{{ (loop.index0 / 7) | round() + 1 }}</span>
+                    </td>
+                    {%- endif %}
+                    {%- set date = loop.index - daysOffset %}
+                    {%- set _is_other_month = date < 1 or date > monthTotalDays %}
+                    {%- set _is_disabled = properties.dates.disablePast and date < properties.today and not _is_other_month %}
+                    {%- if _is_other_month %}
+                        {%- if date < 1 %}
+                            {%- set _is_disabled = properties.dates.disablePast %}
+                            {%- set date = _predate + date %}
+                        {%- else %}
+                            {%- set _enddate = _enddate + 1 %}
+                            {%- set date = _enddate %}
+                        {%- endif %}
+                    {%- endif %}
+                    {%- set _is_today = date === properties.today and _is_other_month == false %}
+                    {%- set _is_weekend = (loop.index % 7 == 6 or loop.index % 7 == 0) and not _is_other_month %}
+                    {%- set _is_blocked = (date > properties.dates.block[0] and date < properties.dates.block[1]) and not _is_other_month %}
+                    {%- set _is_selected = date === properties.dates.selected and not _is_other_month %}
+                    {%- if properties.dates.selectedRange and not _is_other_month %}
+                        {%- set _is_selected = date === properties.dates.selectedRange[0] or date === properties.dates.selectedRange[1] %}
+                        {%- set _is_selected_range = date > properties.dates.selectedRange[0] and date < properties.dates.selectedRange[1] %}
+                        {%- set _is_selected_range_first = date == properties.dates.selectedRange[0] %}
+                        {%- set _is_selected_range_last = date == properties.dates.selectedRange[1] %}
+                    {%- endif %}
+                    {{ calendar_item(date,modifier={ 'item': [
+                        'other-month' if _is_other_month else '',
+                        'current' if _is_today else '',
+                        'weekend' if _is_weekend else '',
+                        'range' if _is_selected_range else ''
+                    ] },state={disabled: _is_disabled, active: _is_selected},aria={ role: 'gridcell' }) }}
+                    {%- endfor %}
+                </tr>
+            </tbody>
+        </table>
+    </div>
 {%- endmacro %}
 
 {% macro calendar_months(id, properties={}, modifier={}, state={}) -%}
-  {% if not properties.months.show === true %}
-      {% set is_hidden = 'is-hidden' %}
-  {% endif %}
-  {%- set month = data.months[properties.month] %}
-  <div class="fd-calendar__content fd-calendar__content--months{{ state | state}} {{ is_hidden }}" id="{{id}}">
-    <table class="fd-calendar__table"{{ { role: 'grid' } | aria }}>
-      <tbody class="fd-calendar__group">
-        <tr class="fd-calendar__row">
-        {%- for month in data.months %}
-        {%- if (loop.index0) % 3 == 0 and not loop.first%}
-        </tr>
-        <tr class="fd-calendar__row">
-        {%-endif %}
-        {%- set _is_current = properties.month === loop.index0 %}
-        {%- set _is_selected = properties.months.selected === loop.index0 %}
-          {{ calendar_item(month.name | truncate(3, true, "."),modifier={ 'item': ['current' if _is_current else '' ] },state={}) }}
-        {%- endfor %}
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    {% if not properties.months.show === true %}
+        {% set is_hidden = 'is-hidden' %}
+    {% endif %}
+    {%- set month = data.months[properties.month] %}
+    <div class="fd-calendar__content fd-calendar__content--months{{ state | state }} {{ is_hidden }}" id="{{ id }}">
+        <table class="fd-calendar__table"{{ { role: 'grid' } | aria }}>
+            <tbody class="fd-calendar__group">
+                <tr class="fd-calendar__row">
+                    {%- for month in data.months %}
+                    {%- if (loop.index0) % 3 == 0 and not loop.first %}
+                </tr>
+                <tr class="fd-calendar__row">
+                    {%- endif %}
+                    {%- set _is_current = properties.month === loop.index0 %}
+                    {%- set _is_selected = properties.months.selected === loop.index0 %}
+                    {{ calendar_item(month.name | truncate(3, true, "."),modifier={ 'item': ['current' if _is_current else '' ] },state={}) }}
+                    {%- endfor %}
+                </tr>
+            </tbody>
+        </table>
+    </div>
 {%- endmacro %}
 
 {% macro calendar_years(id, properties={}, modifier={}, state={}) -%}
-  {% if not properties.years.show === true %}
-      {% set is_hidden = 'is-hidden' %}
-  {% endif %}
-  <div class="fd-calendar__content fd-calendar__content--years{{ state | state}} {{is_hidden}}" id="{{id}}">
-    <table class="fd-calendar__table"{{ { role: 'grid' } | aria }}>
-      <tbody class="fd-calendar__group">
-        <tr class="fd-calendar__row">
-        {%- for i in range(0,16) %}
-        {%- if (loop.index0) % 4 == 0 and not loop.first%}
-        </tr>
-        <tr class="fd-calendar__row">
-        {%-endif %}
-        {%- set year = properties.year + loop.index0 %}
-        {%- set _is_current = properties.year === year %}
-        {%- set _is_selected = properties.years.selected === loop.index0 %}
-          {{ calendar_item(properties.year + loop.index0,modifier={ 'item': ['current' if _is_current else '' ] },state={ blocked: _is_blocked, selected: _is_selected }) }}
-        {%- endfor %}
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    {% if not properties.years.show === true %}
+        {% set is_hidden = 'is-hidden' %}
+    {% endif %}
+    <div class="fd-calendar__content fd-calendar__content--years{{ state | state }} {{ is_hidden }}" id="{{ id }}">
+        <table class="fd-calendar__table"{{ { role: 'grid' } | aria }}>
+            <tbody class="fd-calendar__group">
+                <tr class="fd-calendar__row">
+                    {%- for i in range(0,16) %}
+                    {%- if (loop.index0) % 4 == 0 and not loop.first %}
+                </tr>
+                <tr class="fd-calendar__row">
+                    {%- endif %}
+                    {%- set year = properties.year + loop.index0 %}
+                    {%- set _is_current = properties.year === year %}
+                    {%- set _is_selected = properties.years.selected === loop.index0 %}
+                    {{ calendar_item(properties.year + loop.index0,modifier={ 'item': ['current' if _is_current else '' ] },state={ blocked: _is_blocked, selected: _is_selected }) }}
+                    {%- endfor %}
+                </tr>
+            </tbody>
+        </table>
+    </div>
 {%- endmacro %}
 
 {% macro calendar_header(ids={},properties={}, modifier={}, state={}, aria={}) -%}
-  <header class="fd-calendar__header{{ state | state}}"{{ aria | aria }}>
-    {% if properties.mobile == 'portrait'%}
-    <div class="fd-calendar__navigation">
-      <div class="fd-button-group" role="group">
-        <button class="btn-playground">Date</button>
-        <button class="btn-playground">Time</button>
-      </div>
-    </div>
-    {% endif %}
-    <div class="fd-calendar__navigation {% if properties.mobile == 'landscape'%}fd-calendar__navigation--close-button-space{% endif %}">
-      <div class="fd-calendar__action fd-calendar__action--arrow-left">
-        <button class="btn-playground" type="button"><</button>
-      </div>
-      <div class="fd-calendar__action">
-        <button class="btn-playground" type="button">XXXX</button>
-      </div>
-      <div class="fd-calendar__action">
-        <button class="btn-playground" type="button">XXXX</button>
-      </div>
-      <div class="fd-calendar__action fd-calendar__action--arrow-right">
-        <button class="btn-playground" type="button">></button>
-      </div>
-      {% if properties.mobile == 'landscape' %}
-        <button class="btn-playground fd-calendar__close-button"></button>
-      {% endif %}
-    </div>
-    {{ modifier.block }}
-  </header>
+    <header class="fd-calendar__header{{ state | state }}"{{ aria | aria }}>
+        {% if properties.mobile == 'portrait' %}
+            <div class="fd-calendar__navigation">
+                <div class="fd-button-group" role="group">
+                    <button class="btn-playground">Date</button>
+                    <button class="btn-playground">Time</button>
+                </div>
+            </div>
+        {% endif %}
+        <div class="fd-calendar__navigation {% if properties.mobile == 'landscape' %}fd-calendar__navigation--close-button-space{% endif %}">
+            <div class="fd-calendar__action fd-calendar__action--arrow-left">
+                <button class="btn-playground" type="button">x</button>
+            </div>
+            <div class="fd-calendar__action">
+                <button class="btn-playground" type="button">XXXX</button>
+            </div>
+            <div class="fd-calendar__action">
+                <button class="btn-playground" type="button">XXXX</button>
+            </div>
+            <div class="fd-calendar__action fd-calendar__action--arrow-right">
+                <button class="btn-playground" type="button">x</button>
+            </div>
+            {% if properties.mobile == 'landscape' %}
+                <button class="btn-playground fd-calendar__close-button"></button>
+            {% endif %}
+        </div>
+        {{ modifier.block }}
+    </header>
 {%- endmacro %}
 
 {% macro calendar_header_group(date, properties={}, modifier={}, state={}, aria={}) -%}
     <thead class="fd-calendar__group">
-      <tr class="fd-calendar__row">
-      {%- for day in data.days %}
-         <th class="fd-calendar__item fd-calendar__item--side-helper">
-           <span class="fd-calendar__text">{{day| truncate(1, true, "")}}</span>
-         </th>
-      {%- endfor %}
-      </tr>
+        <tr class="fd-calendar__row">
+            {%- for day in data.days %}
+                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                    <span class="fd-calendar__text">{{ day| truncate(1, true, "") }}</span>
+                </th>
+            {%- endfor %}
+        </tr>
     </thead>
 {%- endmacro %}
 
 {% macro calendar_item(text, properties={}, modifier={}, state={}, aria={}, el="td") -%}
-      <{{el}} class="fd-calendar__item{{ modifier.item | modifier('calendar__item')}}{{ state | state}}"{{ { selected: true } | aria if state.selected }}>
-      <span class="fd-calendar__text" role="button">{{ text }}</span></{{el}}>
+    <{{ el }} class="fd-calendar__item{{ modifier.item | modifier('calendar__item') }}{{ state | state }}"{{ { selected: true } | aria if state.selected }}>
+    <span class="fd-calendar__text" role="button">{{ text }}</span></{{ el }}>
 {%- endmacro %}

@@ -391,6 +391,12 @@ $fd-calendar-special-days: (
 
   &__text {
     @extend %fd-calendar-item-text;
+
+    // Active behaviour is doubled for text element because of IE11 issue
+    &:active {
+      background-color: $fd-calendar-item-active-background;
+      color: $fd-calendar-item-active-color;
+    }
   }
 
   @include special-days($fd-calendar-special-days);
