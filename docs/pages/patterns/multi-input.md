@@ -533,13 +533,13 @@ The disabled state can also be achieved by adding the `.is-disabled` class or th
 For a complete list of states supported by the `Multi Input` component, please see the documentation for the form or select components.
 <br/><br/> 
 The semantic mode can be used to modify the combobox component by adding one of 
-`is-invalid` | `is-valid` | `is-warning` | `is-information` classes into fd-input-group element. 
+`is-error` | `is-success` | `is-warning` | `is-information` classes into fd-input-group element. 
 To add text in the `body` of the component, simply include your text in the `fd-list__message` under the `ul` element.
 
 {% capture semantic-input %}
 <div class="fd-popover">
     <div class="fd-popover__control fd-input-group__control" aria-controls="F4GcKJH8a" aria-expanded="false" aria-haspopup="true">
-        <div class="fd-input-group fd-input-group--control is-valid">
+        <div class="fd-input-group fd-input-group--control is-success">
             <div class="fd-tokenizer">
                  <div class="fd-tokenizer__inner">
                      <span class="fd-token" role="button">

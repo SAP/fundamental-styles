@@ -255,14 +255,14 @@ This can also be done by using the `.is-readonly` class or `aria-readonly="true"
 For a complete list of states supported by the `combobox` component, please see the documentation for the form or select components.
 <br/><br/> 
 The semantic mode can be used to modify the combobox component by adding one of 
-`is-invalid` | `is-valid` | `is-warning` | `is-information` classes into fd-input-group element. 
+`is-error` | `is-success` | `is-warning` | `is-information` classes into fd-input-group element. 
 To add text in the `body` of the component, simply include your text in the `fd-list__message` under the `ul` element.
 
 
 {% capture semantic %}
 <div class="fd-popover">
   <div class="fd-popover__control" aria-controls="F4GcEX34" aria-expanded="false" aria-haspopup="true">
-            <div class="fd-input-group fd-input-group--control is-valid">
+            <div class="fd-input-group fd-input-group--control is-success">
                 <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
                 <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
                     <button class="fd-input-group__button fd-button--compact fd-button--light sap-icon--navigation-down-arrow fd-select__button" 
