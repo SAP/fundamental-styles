@@ -41,12 +41,12 @@
 <h2>Interaction States</h2>
 
 {% set example %}
-  {{ radio(state='valid') }}
-  {{ radio(state='invalid') }}
+  {{ radio(state='success') }}
+  {{ radio(state='error') }}
   {{ radio(state='warning') }}
   {{ radio(state='information') }}
-  {{ radio(state='valid', properties='checked') }}
-  {{ radio(state='invalid', properties='checked') }}
+  {{ radio(state='success', properties='checked') }}
+  {{ radio(state='error', properties='checked') }}
   {{ radio(state='warning', properties='checked') }}
   {{ radio(state='information', properties='checked') }}
 {% endset %}

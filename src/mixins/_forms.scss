@@ -13,7 +13,7 @@
     border-color: var(--sapField_Hover_BorderColor);
   }
 
-  &.is-valid {
+  &.is-success {
     background-color: var(--sapField_SuccessBackground);
     border-color: var(--sapField_SuccessColor);
     border-width: $fd-form-border-thin-width;
@@ -24,7 +24,7 @@
     }
   }
 
-  &.is-invalid {
+  &.is-error {
     background-color: var(--sapField_InvalidBackground);
     border-color: var(--sapField_InvalidColor);
 
@@ -66,7 +66,7 @@
   &.is-warning,
   &.is-alert,
   &.is-information,
-  &.is-invalid {
+  &.is-error {
     border-width: $fd-form-border-thick-width;
 
     @include fd-focus() {

@@ -70,7 +70,7 @@ $block: #{$fd-namespace}-table;
       }
     }
 
-    &--valid,
+    &--success,
     &--warning,
     &--error,
     &--information {
@@ -103,7 +103,7 @@ $block: #{$fd-namespace}-table;
       }
     }
 
-    &--valid {
+    &--success {
       @include fd-var-color("background-color", fd-color('background', 3), --fd-color-background-3);
 
       .#{$block}__cell:first-child {

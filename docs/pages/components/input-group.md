@@ -174,16 +174,16 @@ The Input with add-on supports actions. Actions can be shown with a text label o
 
 {% capture states %}
 <div class="fd-form-item">
-    <label class="fd-form-label" for="">Valid (Success)</label>
-    <div class="fd-input-group is-valid">
+    <label class="fd-form-label" for="">Success</label>
+    <div class="fd-input-group is-success">
         <span class="fd-input-group__addon">$</span>
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1234568910">
     </div>
 </div>
 <br />
 <div class="fd-form-item">
-    <label class="fd-form-label" for="">Invalid (Error)</label>
-    <div class="fd-input-group is-invalid">
+    <label class="fd-form-label" for="">Error</label>
+    <div class="fd-input-group is-error">
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
         <span class="fd-input-group__addon">
             <span class="sap-icon--hide" role="presentation"></span>
@@ -220,16 +220,16 @@ The Input with add-on supports actions. Actions can be shown with a text label o
 </div>
 <br />
 <div class="fd-form-item">
-    <label class="fd-form-label" for="">Disabled Valid (Success)</label>
-    <div class="fd-input-group is-valid is-disabled">
+    <label class="fd-form-label" for="">Disabled Success</label>
+    <div class="fd-input-group is-success is-disabled">
         <span class="fd-input-group__addon">$</span>
         <input class="fd-input fd-input-group__input" disabled type="text" id="" name="" value="1234568910">
     </div>
 </div>
 <br />
 <div class="fd-form-item">
-    <label class="fd-form-label" for="">Disabled Invalid (Error)</label>
-    <div class="fd-input-group is-invalid is-disabled">
+    <label class="fd-form-label" for="">Disabled Error</label>
+    <div class="fd-input-group is-error is-disabled">
         <input class="fd-input fd-input-group__input" disabled type="text" id="" name="" value="1000000">
         <span class="fd-input-group__addon">
             <span class="sap-icon--hide" role="presentation"></span>
@@ -274,7 +274,7 @@ The Input Group supports **focus** state, it can be added by putting `.is-focus`
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Error State</label>
-    <div class="fd-input-group is-invalid is-focus">
+    <div class="fd-input-group is-error is-focus">
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
         <span class="fd-input-group__addon">
             <span class="sap-icon--hide" role="presentation"></span>

@@ -93,11 +93,11 @@ $block: #{$fd-namespace}-checkbox;
     @include fd-checkbox-state(var(--sapField_WarningBackground), var(--sapField_TextColor), var(--sapField_WarningColor), 0.125rem);
   }
 
-  &.is-invalid {
+  &.is-error {
     @include fd-checkbox-state(var(--sapField_InvalidBackground), var(--sapField_InvalidColor), var(--sapField_InvalidColor), 0.125rem);
   }
 
-  &.is-valid {
+  &.is-success {
     @include fd-checkbox-state(var(--sapField_SuccessBackground), var(--sapField_SuccessColor), var(--sapField_SuccessColor), var(--sapField_BorderWidth));
   }
 

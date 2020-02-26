@@ -128,7 +128,7 @@ Multiple instances can be used in the `time-picker` to choose hours, minutes, se
 
 ## With Button State
 Since the controls and inputs are standard components, they can take all states available to
-buttons and forms respectively, e.g., disabled, .is-invalid. In this case, the buttons are
+buttons and forms respectively, e.g., disabled, .is-error. In this case, the buttons are
 disabled when the first or last values are reached.
 
 {% capture default-timewplaceholder %}

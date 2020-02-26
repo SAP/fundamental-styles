@@ -430,15 +430,15 @@ This can also be done by adding the `.is-readonly` class or the `aria-readonly="
 
 ## Semantic States
 The semantic mode can be used to modify the  select component by adding one of the 
-`is-invalid` | `is-valid` | `is-warning` | `is-information` classes into the `fd-select__control` element.
+`is-error` | `is-success` | `is-warning` | `is-information` classes into the `fd-select__control` element.
 To add text in the body of the component, simply include your text in the `fd-list__message` under the `ul` element. 
 
 {% capture semantic-select %}
 <div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select">
-            <div class="fd-select__control is-valid" tabindex="0" aria-controls="h07jjhYH"  aria-expanded="false" aria-haspopup="true">
-                Valid
+            <div class="fd-select__control is-success" tabindex="0" aria-controls="h07jjhYH"  aria-expanded="false" aria-haspopup="true">
+                Success
                 <button class="fd-button sap-icon--slim-arrow-down fd-select__button"></button>
             </div>
         </div>
@@ -476,7 +476,7 @@ To add text in the body of the component, simply include your text in the `fd-li
 <div class="fd-popover">
    <div class="fd-popover__control">
        <div class="fd-select">
-           <div class="fd-select__control is-invalid" tabindex="0" aria-controls="h07j9978H"  aria-expanded="false" aria-haspopup="true">
+           <div class="fd-select__control is-error" tabindex="0" aria-controls="h07j9978H"  aria-expanded="false" aria-haspopup="true">
                Error
                <button class="fd-button sap-icon--slim-arrow-down fd-select__button"></button>
            </div>

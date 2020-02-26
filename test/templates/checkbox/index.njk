@@ -42,16 +42,16 @@
 <h2>Interaction States</h2>
 
 {% set example %}
-  {{ checkbox(state='valid') }}
-  {{ checkbox(state='invalid') }}
+  {{ checkbox(state='success') }}
+  {{ checkbox(state='error') }}
   {{ checkbox(state='warning') }}
   {{ checkbox(state='information') }}
-  {{ checkbox(state='valid', properties='checked') }}
-  {{ checkbox(state='invalid', properties='checked') }}
+  {{ checkbox(state='success', properties='checked') }}
+  {{ checkbox(state='error', properties='checked') }}
   {{ checkbox(state='warning', properties='checked') }}
   {{ checkbox(state='information', properties='checked') }}
-  {{ checkbox(state='valid', properties='indeterminate') }}
-  {{ checkbox(state='invalid', properties='indeterminate') }}
+  {{ checkbox(state='success', properties='indeterminate') }}
+  {{ checkbox(state='error', properties='indeterminate') }}
   {{ checkbox(state='warning', properties='indeterminate') }}
   {{ checkbox(state='information', properties='indeterminate') }}
 {% endset %}
