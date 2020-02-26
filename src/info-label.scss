@@ -11,7 +11,7 @@ $block: #{$fd-namespace}-info-label;
 
   // info-label DEFAULT
   $fd-info-label-border-radius: 1.125rem !default;
-  $fd-info-label-color: var(--sapTextColor);
+  $fd-info-label-color: var(--sapTextColor) !default;
   $fd-info-label-fontsize: var(--sapFontSmallSize);
   $fd-info-label-default-padding: 0 0.625rem !default;
   $fd-info-label-default-vertical-align: middle !default;
