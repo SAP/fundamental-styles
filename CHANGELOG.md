@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.7.0-rc.9"></a>
+# [0.7.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.7.0-rc.8...v0.7.0-rc.9) (2020-02-26)
+
+
+### Bug Fixes
+
+* Add overflow hidden for checkbox and radio buttons  ([#688](https://github.com/SAP/fundamental-styles/issues/688)) ([0271593](https://github.com/SAP/fundamental-styles/commit/0271593))
+
+
+
 <a name="0.7.0-rc.8"></a>
 # [0.7.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.7.0-rc.7...v0.7.0-rc.8) (2020-02-25)
 
