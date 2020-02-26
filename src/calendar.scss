@@ -5,7 +5,7 @@
 /*!
 .fd-calendar+(--compact, --mobile-landscape, --mobile-portrait)
     .fd-calendar__header
-      .fd-calendar__navigation(--close-button-space)
+      .fd-calendar__navigation(--main-navigation)
         .fd-calendar__action(+[--arrow-left, --arrow-right])
         .fd-calendar__close-button
     .fd-calendar__content(+[--months, --years])
@@ -254,10 +254,6 @@ $fd-calendar-special-days: (
     display: flex;
     position: relative;
     justify-content: center;
-
-    &--close-button-space {
-      padding-right: 20%;
-    }
   }
 
   &__action {
@@ -454,6 +450,10 @@ $fd-calendar-special-days: (
     .#{$block} {
       &__item--side-helper {
         height: $fd-calendar-item-helper-height-landscape;
+      }
+
+      &__navigation--main-navigation {
+        padding-right: calc(100vw - 100vh - 2rem);
       }
     }
   }

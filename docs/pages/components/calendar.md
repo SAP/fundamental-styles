@@ -101,8 +101,8 @@ This are classes used to describe the look of calendar action buttons.
 <div class="fd-calendar" style="width: 100%;">
     <table style="width: 100%;">
         <tr>
-            <td><code>.fd-calendar__navigation--close-button-space</code></td>
-            <td>Class used to create additional space for close button, on the right side of navigation bar</td>
+            <td><code>.fd-calendar__navigation--main-navigation</code></td>
+            <td>Class used to limit main navigation width on mobile devices in landscape orientation and create space for optional close button</td>
         </tr>
         <tr>
             <td><code>.fd-calendar__action--arrow-left</code></td>
@@ -734,7 +734,7 @@ On mobile devices calendar is composed into Dialog window taking full width and 
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
             <div class="fd-calendar fd-calendar--mobile-landscape">
                 <header class="fd-calendar__header">
-                    <div class="fd-calendar__navigation fd-calendar__navigation--close-button-space">
+                    <div class="fd-calendar__navigation fd-calendar__navigation--main-navigation">
                         <div class="fd-calendar__action fd-calendar__action--arrow-left">
                             <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
                         </div>
