@@ -8,11 +8,13 @@
 $block: #{$fd-namespace}-object-status;
 
 .#{$block} {
+  @include fd-reset();
 
   $fd-object-status-font: var(--sapFontFamily);
-  $fd-object-status-font-size: var(--sapFontLargeSize);
+  $fd-object-status-font-size: var(--sapFontSize) !default;
   $fd-object-status-font-weight: normal !default;
   $fd-object-status-padding: 0.5rem !default;
+  $fd-object-status-icon-size: 1rem !default;
 
   $fd-object-status-negative: var(--sapNegativeColor);
   $fd-object-status-critical: var(--sapCriticalColor);
@@ -47,7 +49,9 @@ $block: #{$fd-namespace}-object-status;
 
   &::before {
     padding-right: $fd-object-status-padding;
-    font-size: $fd-object-status-font-size;
+    font-size: $fd-object-status-icon-size;
+    position: relative;
+    top: 0.133rem;
   }
 
   &:empty {
@@ -58,6 +62,7 @@ $block: #{$fd-namespace}-object-status;
   &--icon {
     &::before {
       padding-right: 0;
+      font-size: $fd-object-status-icon-size;
     }
 
     @include fd-rtl() {
