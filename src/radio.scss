@@ -43,22 +43,24 @@ $block: #{$fd-namespace}-radio;
     @include fd-form-label();
     @include action-cursor();
 
-    padding-right: 0;
+    line-height: 1rem;
     display: flex;
     align-items: center;
-    overflow: visible;
+    overflow: hidden;
+    padding: $fd-radio-outer-circle-margin 0 $fd-radio-outer-circle-margin $fd-radio-outer-circle-margin;
 
     &::before {
       content: "";
       height: $fd-radio-inner-circle-diameter;
       width: $fd-radio-inner-circle-diameter;
+      min-width: $fd-radio-inner-circle-diameter;
       font-size: 0.6875rem;
       display: inline-flex;
       justify-content: center;
       align-items: center;
       font-family: "SAP-icons";
       background-color: var(--sapField_Background);
-      margin: $fd-radio-outer-circle-margin;
+      margin-right: $fd-radio-outer-circle-margin;
       color: var(--sapSelectedColor);
       border: var(--sapField_BorderWidth) solid var(--sapField_BorderColor);
       border-radius: 50%;
@@ -116,11 +118,14 @@ $block: #{$fd-namespace}-radio;
 
   &--compact {
     + .#{$block}__label {
+      padding: $fd-radio-outer-circle-margin-compact 0 $fd-radio-outer-circle-margin-compact $fd-radio-outer-circle-margin-compact;
+
       &::before {
         font-size: 0.4375rem;
         height: $fd-radio-inner-circle-diameter-compact;
         width: $fd-radio-inner-circle-diameter-compact;
-        margin: $fd-radio-outer-circle-margin-compact;
+        min-width: $fd-radio-inner-circle-diameter-compact;
+        margin-right: $fd-radio-outer-circle-margin-compact;
       }
     }
 

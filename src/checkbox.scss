@@ -42,8 +42,9 @@ $block: #{$fd-namespace}-checkbox;
     @include fd-form-label();
     @include action-cursor();
 
-    padding-right: 0;
-    overflow: visible;
+    line-height: 1rem;
+    padding: $fd-checkbox-margin 0 $fd-checkbox-margin $fd-checkbox-margin;
+    overflow: hidden;
     display: flex;
     align-items: center;
 
@@ -58,7 +59,7 @@ $block: #{$fd-namespace}-checkbox;
       align-items: center;
       font-family: "SAP-icons";
       background-color: var(--sapField_Background);
-      margin: $fd-checkbox-margin;
+      margin-right: $fd-checkbox-margin;
       color: var(--sapSelectedColor);
       border: var(--sapField_BorderWidth) solid var(--sapField_BorderColor);
       border-radius: var(--sapField_BorderCornerRadius);
@@ -126,12 +127,14 @@ $block: #{$fd-namespace}-checkbox;
 
   &--compact {
     + .#{$block}__label {
+      padding: $fd-checkbox-margin-compact 0 $fd-checkbox-margin-compact $fd-checkbox-margin-compact;
+
       &::before {
         font-size: 0.625rem;
         height: $fd-checkbox-dimensions-compact;
         width: $fd-checkbox-dimensions-compact;
         min-width: $fd-checkbox-dimensions-compact;
-        margin: $fd-checkbox-margin-compact;
+        margin-right: $fd-checkbox-margin-compact;
       }
     }
 

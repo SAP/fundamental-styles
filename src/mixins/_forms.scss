@@ -147,7 +147,7 @@
     top: $margin - $fd-radio-focus-offset;
     left: $margin - $fd-radio-focus-offset;
     bottom: $margin - $fd-radio-focus-offset;
-    right: $fd-radio-label-padding - $fd-radio-focus-offset;
+    right: $fd-radio-label-padding;
     @content;
   }
 

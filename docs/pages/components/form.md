@@ -612,7 +612,9 @@ Do not use the checkbox control if:
     <div class="fd-form-group">
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez611">
-            <label class="fd-checkbox__label" for="Ai4ez611">Text Option</label>
+            <label class="fd-checkbox__label" for="Ai4ez611">
+                Field label
+            </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez612" checked>
