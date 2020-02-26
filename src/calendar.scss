@@ -73,7 +73,8 @@ $fd-calendar-item-range-background: var(--sapList_SelectionBackgroundColor) !def
 $fd-calendar-item-range-background-hover: var(--sapList_Hover_SelectionBackground) !default;
 $fd-calendar-item-range-border: solid 0.0625rem var(--sapList_SelectionBorderColor) !default;
 
-$fd-calendar-item-current-border: solid medium var(--sapLegend_CurrentDateTime) !default;
+$fd-calendar-item-current-border-width: 0.125rem !default;
+$fd-calendar-item-current-border: solid medium var(--sapLegend_CurrentDateTime) !default; // 'medium' value is used to support browser rendering precision
 $fd-calendar-item-current-inner-border-width: 0.0625rem !default;
 $fd-calendar-item-current-inner-border-color: var(--sapList_Background) !default;
 $fd-calendar-item-current-inner-border-radius: calc(var(--sapElement_BorderCornerRadius) / 2) !default;
@@ -146,7 +147,7 @@ $fd-calendar-special-days: (
   min-width: $fd-calendar-item-width;
   border-radius: $fd-calendar-border-radius;
   background-color: $fd-calendar-item-background;
-  flex: 1 1 auto;
+  flex: 1 1 $fd-calendar-item-current-border-width * 2;
 
   @include fd-hover() {
     @include action-cursor();
