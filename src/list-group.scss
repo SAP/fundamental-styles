@@ -16,7 +16,7 @@ $block: #{$fd-namespace}-list-group;
   $fd-list-group-item-padding-x: fd-space(4) !default;
   $fd-list-group-item-padding-y: fd-space(2) + 2px !default;
   $fd-list-group-action-height: fd-space(10) !default;
-  $fd-list-group-transition-params: $fd-animation--speed ease-in !default;
+  $fd-list-group-transition-params: $fd-animation-speed ease-in !default;
 
   --fd-list-group-background-color: transparent;
 

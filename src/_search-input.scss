@@ -6,7 +6,7 @@
 .fd-search-input
 */
 $block-search-input: #{$fd-namespace}-search-input;
-$fd-search-closed-conrol-transition: all $fd-animation--speed !default;
+$fd-search-closed-conrol-transition: all $fd-animation-speed !default;
 
 .#{$block-search-input} {
   display: inline-block;

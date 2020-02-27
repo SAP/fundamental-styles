@@ -50,10 +50,6 @@
   --fd-forms-height: #{$fd-forms-height};
   --fd-forms-height-compact: #{$fd-forms-height--compact};
 
-  // form metrics
-  --fd-button-line-height: #{$fd-button-line-height};
-  --fd-button-line-height-compact: #{$fd-button-line-height--compact};
-
   @at-root {
     .fd-for-touch {
       --fd-forms-height-compact: #{$fd-forms-height};

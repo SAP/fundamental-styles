@@ -12,6 +12,7 @@ $block: #{$fd-namespace}-form-group;
   @include fd-reset();
 
   margin-bottom: fd-space("small");
+  min-inline-size: auto;
 
   &:last-child {
     margin-bottom: 0;

@@ -430,15 +430,15 @@ This can also be done by adding the `.is-readonly` class or the `aria-readonly="
 
 ## Semantic States
 The semantic mode can be used to modify the  select component by adding one of the 
-`is-invalid` | `is-valid` | `is-warning` | `is-information` classes into the `fd-select__control` element.
+`is-error` | `is-success` | `is-warning` | `is-information` classes into the `fd-select__control` element.
 To add text in the body of the component, simply include your text in the `fd-list__message` under the `ul` element. 
 
 {% capture semantic-select %}
 <div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select">
-            <div class="fd-select__control is-valid" tabindex="0" aria-controls="h07jjhYH"  aria-expanded="false" aria-haspopup="true">
-                Valid
+            <div class="fd-select__control is-success" tabindex="0" aria-controls="h07jjhYH"  aria-expanded="false" aria-haspopup="true">
+                Success
                 <button class="fd-button sap-icon--slim-arrow-down fd-select__button"></button>
             </div>
         </div>
@@ -476,7 +476,7 @@ To add text in the body of the component, simply include your text in the `fd-li
 <div class="fd-popover">
    <div class="fd-popover__control">
        <div class="fd-select">
-           <div class="fd-select__control is-invalid" tabindex="0" aria-controls="h07j9978H"  aria-expanded="false" aria-haspopup="true">
+           <div class="fd-select__control is-error" tabindex="0" aria-controls="h07j9978H"  aria-expanded="false" aria-haspopup="true">
                Error
                <button class="fd-button sap-icon--slim-arrow-down fd-select__button"></button>
            </div>
@@ -589,3 +589,58 @@ To add text in the body of the component, simply include your text in the `fd-li
 {% endcapture %}
 
 {% include display-component.html component=semantic-select %}
+
+## Select Mobile Mode
+For mobile devices, or tablets, select component should be displayed in fullscreen mode. It can be achieved by wrapping
+select component in `dialog` and `bar` components. 
+{% capture disabled-select %}
+<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
+    <div class="fd-dialog__content">
+        <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h3 class="fd-dialog__title">
+                        Select Ingredient
+                    </h3>
+                </div>
+            </div>
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class=" fd-button--light sap-icon--decline" aria-label="close"></button>
+                </div>
+            </div>
+        </header>
+        <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
+            <ul class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
+                <li class="fd-list__message fd-list__message--information">Choose one item</li>
+                <li role="option" tabindex="0" class="fd-list__item is-selected">
+                   <span class="fd-list__title">Apple</span>
+               </li>
+               <li role="option" tabindex="0" class="fd-list__item">
+                   <span class="fd-list__title">Orange</span>
+               </li>
+               <li role="option" tabindex="0" class="fd-list__item">
+                   <span class="fd-list__title">Banana</span>
+               </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                   <span class="fd-list__title">Kiwi</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Tomato</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Onion</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Spinach</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Potato</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+
+{% include display-component.html component=disabled-select %}

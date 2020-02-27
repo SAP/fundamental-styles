@@ -56,14 +56,14 @@ Do not use the input field if:
     <br />
     <br />
     <div class="fd-form-item">
-        <label class="fd-form-label" for="input-01">Invalid (Error) Input:</label>
-        <input class="fd-input is-invalid" type="text" id="input-01" placeholder="Field placeholder text">
+        <label class="fd-form-label" for="input-01">Error Input:</label>
+        <input class="fd-input is-error" type="text" id="input-01" placeholder="Field placeholder text">
     </div>
     <br />
     <br />
     <div class="fd-form-item">
-        <label class="fd-form-label" for="input-02">Valid (Success) Input:</label>
-        <input class="fd-input is-valid" type="text" id="input-02" placeholder="Field placeholder text">
+        <label class="fd-form-label" for="input-02">Success Input:</label>
+        <input class="fd-input is-success" type="text" id="input-02" placeholder="Field placeholder text">
     </div>
     <br />
     <br />
@@ -125,14 +125,14 @@ Do not use the input field if:
 
 ## Input States
 The state of the input field can reflect validity of the data entered, whether the input data is editable or disabled.
-* **Normal**: The field is editable but no validation has occurred
-* **Valid**: The data format entered has been validated and it's correct, such as an email address.
-* **Invalid**: The data entered is not valid and must be corrected.
+* **Default**: The field is editable but no validation has occurred
+* **Success**: The data format entered has been validated and it's correct, such as an email address.
+* **Error**: The data entered is not valid and must be corrected.
 * **Warning**: The data entered is formatted correctly but there are other issues are problematic but will not stop the user from moving forward.
 * **Disabled**: This indicates the field is not editable. A common use case is that this field is dependent on a previous entry or selection within the form.
 * **Read Only**: Used to display static information in the context of a form.
 
-Along with Invalid and Warning, error messages should be displayed below the field so the user can correct the error and move forward.
+Along with Error and Warning, error messages should be displayed below the field so the user can correct the error and move forward.
 
 {% capture inputs %}
 <div class="fd-form-item">
@@ -143,10 +143,10 @@ Along with Invalid and Warning, error messages should be displayed below the fie
 <br /><br />
 
 <div class="fd-form-item">
-    <label class="fd-form-label" for="input-1bb">Valid input:</label>
+    <label class="fd-form-label" for="input-1bb">Success input:</label>
     <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
         <div class="fd-popover__control" aria-controls="popoverB2" aria-expanded="false" aria-haspopup="true">
-            <input class="fd-input is-valid" type="text" id="input-1bb" placeholder="Field placeholder text" aria-label="Image label">
+            <input class="fd-input is-success" type="text" id="input-1bb" placeholder="Field placeholder text" aria-label="Image label">
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB2">
             <div class="fd-form-message fd-form-message--success">Success message</div>
@@ -160,7 +160,7 @@ Along with Invalid and Warning, error messages should be displayed below the fie
     <label class="fd-form-label" for="input-1cc">Error input:</label>
     <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
         <div class="fd-popover__control" aria-controls="popoverB3" aria-expanded="false" aria-haspopup="true">
-            <input class="fd-input is-invalid" type="text" id="input-1cc" placeholder="Field placeholder text" aria-label="Image label">
+            <input class="fd-input is-error" type="text" id="input-1cc" placeholder="Field placeholder text" aria-label="Image label">
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB3">
             <div class="fd-form-message fd-form-message--error" >Error message</div>
@@ -235,26 +235,26 @@ Do not use the text area if
     </div>
     <br/>
     <div class="fd-form-item">
-        <label class="fd-form-label" for="textarea-3">Success (valid) text area:</label>
+        <label class="fd-form-label" for="textarea-3">Success text area:</label>
         <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
             <div class="fd-popover__control" aria-controls="popoverT51" aria-expanded="false" aria-haspopup="true">
-                <textarea class="fd-textarea is-valid" id="textarea-3" placeholder="Write something here"></textarea>
+                <textarea class="fd-textarea is-success" id="textarea-3" placeholder="Write something here"></textarea>
             </div>
             <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="popoverT51">
-                <div class="fd-form-message fd-form-message--success">Valid message</div>
+                <div class="fd-form-message fd-form-message--success">Success message</div>
             </div>
         </div>
         <div class="fd-textarea-counter">150 characters left</div>
     </div>
     <br/>
     <div class="fd-form-item">
-        <label class="fd-form-label" for="textarea-4">Error(invalid) text area:</label>
+        <label class="fd-form-label" for="textarea-4">Error text area:</label>
         <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
             <div class="fd-popover__control" aria-controls="popoverT52" aria-expanded="false" aria-haspopup="true">
-                <textarea class="fd-textarea is-invalid" id="textarea-4" placeholder="Write something here"></textarea>
+                <textarea class="fd-textarea is-error" id="textarea-4" placeholder="Write something here"></textarea>
             </div>
             <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="popoverT52">
-                <div class="fd-form-message fd-form-message--error">Invalid message</div>
+                <div class="fd-form-message fd-form-message--error">Error message</div>
             </div>
         </div>
     </div>
@@ -451,13 +451,13 @@ In special cases, there are only two mutually exclusive options. Combine them in
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio is-valid" id="iSpDidh7612" name="radio5">
+            <input type="radio" class="fd-radio is-success" id="iSpDidh7612" name="radio5">
             <label class="fd-radio__label" for="iSpDidh7612">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio is-invalid" id="iSpDidh7613" name="radio5">
+            <input type="radio" class="fd-radio is-error" id="iSpDidh7613" name="radio5">
             <label class="fd-radio__label" for="iSpDidh7613">
                 Field label
             </label>
@@ -487,13 +487,13 @@ In special cases, there are only two mutually exclusive options. Combine them in
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio fd-radio--compact is-valid" id="iSpDidh76129" name="radio6">
+            <input type="radio" class="fd-radio fd-radio--compact is-success" id="iSpDidh76129" name="radio6">
             <label class="fd-radio__label" for="iSpDidh76129">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio fd-radio--compact is-invalid" id="iSpDidh76139" name="radio6">
+            <input type="radio" class="fd-radio fd-radio--compact is-error" id="iSpDidh76139" name="radio6">
             <label class="fd-radio__label" for="iSpDidh76139">
                 Field label
             </label>
@@ -521,13 +521,13 @@ In special cases, there are only two mutually exclusive options. Combine them in
             <label class="fd-radio__label" for="iSpDidh7619d">Field label</label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio fd-radio--compact is-valid" id="iSpDidh76129d" name="radio7" disabled>
+            <input type="radio" class="fd-radio fd-radio--compact is-success" id="iSpDidh76129d" name="radio7" disabled>
             <label class="fd-radio__label" for="iSpDidh76129d">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio fd-radio--compact is-invalid" id="iSpDidh76139d" name="radio7" disabled>
+            <input type="radio" class="fd-radio fd-radio--compact is-error" id="iSpDidh76139d" name="radio7" disabled>
             <label class="fd-radio__label" for="iSpDidh76139d">
                 Field label
             </label>
@@ -556,13 +556,13 @@ In special cases, there are only two mutually exclusive options. Combine them in
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio is-valid" id="radioRtl2" name="radiortl">
+            <input type="radio" class="fd-radio is-success" id="radioRtl2" name="radiortl">
             <label class="fd-radio__label" for="radioRtl2">
                 Field label
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="radio" class="fd-radio is-invalid" id="radioRtl3" name="radiortl">
+            <input type="radio" class="fd-radio is-error" id="radioRtl3" name="radiortl">
             <label class="fd-radio__label" for="radioRtl3">
                 Field label
             </label>
@@ -612,7 +612,9 @@ Do not use the checkbox control if:
     <div class="fd-form-group">
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez611">
-            <label class="fd-checkbox__label" for="Ai4ez611">Text Option</label>
+            <label class="fd-checkbox__label" for="Ai4ez611">
+                Field label
+            </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez612" checked>
@@ -704,19 +706,19 @@ Do not use the checkbox control if:
     <legend class="fd-fieldset__legend">Checkboxes Error</legend>
     <div class="fd-form-group">
         <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox is-invalid" id="Ai4ez6119">
+            <input type="checkbox" class="fd-checkbox is-error" id="Ai4ez6119">
             <label class="fd-checkbox__label" for="Ai4ez6119">
                 Text Option
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox is-invalid" id="Ai4ez6129" checked>
+            <input type="checkbox" class="fd-checkbox is-error" id="Ai4ez6129" checked>
             <label class="fd-checkbox__label" for="Ai4ez6129">
                 Selected State
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox is-invalid" id="Ai4ez613i1">
+            <input type="checkbox" class="fd-checkbox is-error" id="Ai4ez613i1">
             <label class="fd-checkbox__label" for="Ai4ez613i1">
                 TriState Text
             </label>
@@ -728,19 +730,19 @@ Do not use the checkbox control if:
     <legend class="fd-fieldset__legend">Checkboxes Success</legend>
     <div class="fd-form-group">
         <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox is-valid" id="Ai4ez61192">
+            <input type="checkbox" class="fd-checkbox is-success" id="Ai4ez61192">
             <label class="fd-checkbox__label" for="Ai4ez61192">
                 Text Option
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox is-valid" id="Ai4ez61292" checked>
+            <input type="checkbox" class="fd-checkbox is-success" id="Ai4ez61292" checked>
             <label class="fd-checkbox__label" for="Ai4ez61292">
                 Selected State
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox is-valid" id="Ai4ez613i2">
+            <input type="checkbox" class="fd-checkbox is-success" id="Ai4ez613i2">
             <label class="fd-checkbox__label" for="Ai4ez613i2">
                 TriState Text
             </label>

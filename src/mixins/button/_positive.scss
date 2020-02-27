@@ -1,0 +1,39 @@
+@mixin positive() {
+  @include applyColors(
+    var(--sapButton_Accept_TextColor),
+    var(--sapButton_Accept_BorderColor),
+    var(--sapButton_Accept_Background)
+  );
+}
+
+@mixin positiveHover {
+  @include applyColors(
+    var(--sapButton_Accept_Hover_TextColor),
+    var(--sapButton_Accept_Hover_BorderColor),
+    var(--sapButton_Accept_Hover_Background)
+  );
+}
+
+@mixin positivePressed {
+  @include applyColors(
+    var(--sapButton_Selected_TextColor),
+    var(--sapButton_Accept_Active_Background),
+    var(--sapButton_Accept_Active_BorderColor)
+  );
+}
+
+@mixin positivePressedFocus() {
+  outline-color: var(--sapContent_ContrastFocusColor);
+}
+
+@mixin positiveFocus() {
+  @include buttonFocus();
+}
+
+@mixin positiveDisabled {
+  @include isDisabled();
+  @include positive();
+
+  box-shadow: none;
+  outline: none;
+}

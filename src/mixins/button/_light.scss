@@ -1,0 +1,17 @@
+@mixin light() {
+  border-color: var(--sapButton_Lite_BorderColor);
+  background-color: var(--sapButton_Lite_Background);
+}
+
+@mixin lightPressed() {
+  @include fd-disabled() {
+    @include lightDisabled();
+  }
+}
+
+@mixin lightDisabled() {
+  @include light();
+  @include isDisabled();
+
+  box-shadow: none;
+}

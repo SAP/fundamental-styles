@@ -17,7 +17,7 @@ $block: #{$fd-namespace}-inline-help;
   $fd-tooltip-arrow-offset: fd-space(2) !default;
   $fd-tooltip-arrow-width: $fd-tooltip-arrow-offset !default;
   $fd-tooltip-icon-size: 18px;
-  $fd-tooltip-transition-params: $fd-animation--speed ease-in !default;
+  $fd-tooltip-transition-params: $fd-animation-speed ease-in !default;
   $fd-tooltip-min-width: 350px !default;
   $fd-tooltip-box-shadow: drop-shadow(rgba(0, 0, 0, 0.1) 0 2px 10px) !default;
 

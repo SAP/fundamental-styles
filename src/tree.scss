@@ -29,7 +29,7 @@ $block: #{$fd-namespace}-tree;
   $fd-tree-control-width: 18px !default;
   $fd-tree-control-button-width-height: 34px !default;
   $fd-tree-control-margin-right: fd-space(2) !default;
-  $fd-tree-transition-params: $fd-animation--speed ease-in !default;
+  $fd-tree-transition-params: $fd-animation-speed ease-in !default;
 
   --fd-tree-border-color: var(--fd-color-neutral-2);
   --fd-tree-background-color: var(--fd-color-background-2);
@@ -75,7 +75,7 @@ $block: #{$fd-namespace}-tree;
   &__group {
     @include fd-reset();
 
-    transition: opacity $fd-animation--speed linear;
+    transition: opacity $fd-animation-speed linear;
     max-height: auto;
     opacity: 1;
     margin-bottom: 0;
@@ -192,7 +192,7 @@ $block: #{$fd-namespace}-tree;
     height: $fd-tree-control-button-width-height;
     transform: rotate(180deg);
     vertical-align: middle;
-    transition: transform $fd-animation--speed linear;
+    transition: transform $fd-animation-speed linear;
 
     @include fd-icon("nav-back");
     @include fd-var-color("color", $fd-link-color, --fd-color-action-1);

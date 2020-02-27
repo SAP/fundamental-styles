@@ -51,25 +51,25 @@ The List item can contain quick actions.
     <li class="fd-list-group__item">
         List item 1
         <span class="fd-list-group__action">
-            <button class=" fd-button--light sap-icon--edit" aria-label="Edit"></button>
+            <button class="fd-button  fd-button--light sap-icon--edit" aria-label="Edit"></button>
         </span>
     </li>
     <li class="fd-list-group__item">
         List item 2
         <span class="fd-list-group__action">
-            <button class=" fd-button--light sap-icon--edit" aria-label="Edit"></button>
+            <button class="fd-button  fd-button--light sap-icon--edit" aria-label="Edit"></button>
         </span>
     </li>
     <li class="fd-list-group__item">
         List item 3 - Lorem ipsum dolor sit amet, consectetur sed do
         <span class="fd-list-group__action">
-            <button class=" fd-button--light sap-icon--edit" aria-label="Edit"></button>
+            <button class="fd-button  fd-button--light sap-icon--edit" aria-label="Edit"></button>
         </span>
     </li>
     <li class="fd-list-group__item">
         List item 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
         <span class="fd-list-group__action">
-            <button class=" fd-button--light sap-icon--edit" aria-label="Edit"></button>
+            <button class="fd-button  fd-button--light sap-icon--edit" aria-label="Edit"></button>
         </span>
     </li>
 </ul>

@@ -19,7 +19,7 @@ $block: #{$fd-namespace}-tile;
   $fd-tile-content-padding-x: fd-space("small") !default;
   $fd-tile-content-padding-y: fd-space(2) + 2px !default;
   // anim
-  $fd-tile-transition-params: $fd-animation--speed ease-in !default;
+  $fd-tile-transition-params: $fd-animation-speed ease-in !default;
 
   @include fd-reset();
 

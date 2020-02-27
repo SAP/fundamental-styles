@@ -219,7 +219,7 @@ It is recommended to add the parameter `aria-selected="true"` to the row that is
 
 
 ## Table with semantic row highlighting 
-Table rows support semantic row highlighting with the modifiers `fd-table__row--valid`, `fd-table__row--warning`, `fd-table__row--error` and `fd-table__row--information` 
+Table rows support semantic row highlighting with the modifiers `fd-table__row--success`, `fd-table__row--warning`, `fd-table__row--error` and `fd-table__row--information` 
 
 {% capture table-checkbox %}
 <table class="fd-table">
@@ -246,7 +246,7 @@ Table rows support semantic row highlighting with the modifiers `fd-table__row--
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
-        <tr class="fd-table__row fd-table__row--valid">
+        <tr class="fd-table__row fd-table__row--success">
             <th class="fd-table__cell" scope="col">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez617">
                 <label class="fd-checkbox__label" for="Ai4ez617"></label>
@@ -355,7 +355,7 @@ a contextual menu can be substituted in order to display all actions in one menu
             <td class="fd-table__cell">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button class="fd-button--light sap-icon--overflow" aria-controls="pQqQR213a" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                        <button class="fd-button fd-button--light sap-icon--overflow" aria-controls="pQqQR213a" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
                     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="pQqQR213a">
                         <nav class="fd-menu">
@@ -377,7 +377,7 @@ a contextual menu can be substituted in order to display all actions in one menu
             <td class="fd-table__cell">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button class="fd-button--light sap-icon--overflow" aria-controls="lkjlkj23" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                        <button class="fd-button fd-button--light sap-icon--overflow" aria-controls="lkjlkj23" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
                     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="lkjlkj23">
                         <nav class="fd-menu">
@@ -399,7 +399,7 @@ a contextual menu can be substituted in order to display all actions in one menu
             <td class="fd-table__cell">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button class="fd-button--light sap-icon--overflow" aria-controls="uu4324" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                        <button class="fd-button fd-button--light sap-icon--overflow" aria-controls="uu4324" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
                     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="uu4324">
                         <nav class="fd-menu">

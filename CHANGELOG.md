@@ -2,6 +2,71 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.7.0-rc.11"></a>
+# [0.7.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.7.0-rc.10...v0.7.0-rc.11) (2020-02-27)
+
+
+### Features
+
+* button refactor standard markup ([#699](https://github.com/SAP/fundamental-styles/issues/699)) ([24a770a](https://github.com/SAP/fundamental-styles/commit/24a770a))
+
+
+
+<a name="0.7.0-rc.10"></a>
+# [0.7.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.7.0-rc.9...v0.7.0-rc.10) (2020-02-26)
+
+
+### Features
+
+* normalize validation states ([#704](https://github.com/SAP/fundamental-styles/issues/704)) ([fdba361](https://github.com/SAP/fundamental-styles/commit/fdba361))
+
+
+
+<a name="0.7.0-rc.9"></a>
+# [0.7.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.7.0-rc.8...v0.7.0-rc.9) (2020-02-26)
+
+
+### Bug Fixes
+
+* Add overflow hidden for checkbox and radio buttons  ([#688](https://github.com/SAP/fundamental-styles/issues/688)) ([0271593](https://github.com/SAP/fundamental-styles/commit/0271593))
+
+
+
+<a name="0.7.0-rc.8"></a>
+# [0.7.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.7.0-rc.7...v0.7.0-rc.8) (2020-02-25)
+
+
+### Bug Fixes
+
+* (combobox) Add mobile mode for combobox ([#697](https://github.com/SAP/fundamental-styles/issues/697)) ([d233d1d](https://github.com/SAP/fundamental-styles/commit/d233d1d))
+
+
+
+<a name="0.7.0-rc.7"></a>
+# [0.7.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.7.0-rc.6...v0.7.0-rc.7) (2020-02-25)
+
+
+### Bug Fixes
+
+* (select) Add Mobile mode ([#695](https://github.com/SAP/fundamental-styles/issues/695)) ([b4517aa](https://github.com/SAP/fundamental-styles/commit/b4517aa))
+
+
+
+<a name="0.7.0-rc.6"></a>
+# [0.7.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.7.0-rc.5...v0.7.0-rc.6) (2020-02-25)
+
+
+
+<a name="0.7.0-rc.5"></a>
+# [0.7.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.7.0-rc.4...v0.7.0-rc.5) (2020-02-25)
+
+
+### Bug Fixes
+
+* (multi input) Add MultiInput mobile mode ([#696](https://github.com/SAP/fundamental-styles/issues/696)) ([6eea225](https://github.com/SAP/fundamental-styles/commit/6eea225))
+
+
+
 <a name="0.7.0-rc.4"></a>
 # [0.7.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.7.0-rc.3...v0.7.0-rc.4) (2020-02-24)
 
