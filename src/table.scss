@@ -27,7 +27,7 @@ $block: #{$fd-namespace}-table;
 
   $fd-table-cell-padding: fd-space("s") !default;
   $fd-table-header-cell-padding: fd-space(3) !default;
-  $fd-table-transition-params: $fd-animation--speed ease-in !default;
+  $fd-table-transition-params: $fd-animation-speed ease-in !default;
   $fd-table-sort-icon-size: fd-space(3);
   $fd-table-sort-column-header-background-color: fd-color("neutral", 2);
   $fd-table-fixed-column-cell-color: fd-color("background", 2);

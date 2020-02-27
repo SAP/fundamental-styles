@@ -1,0 +1,13 @@
+{% from "../button/component.njk" import button %}
+<!--
+segmented_button:
+    properties={},
+    modifier={ block: [] },
+    state={},
+    aria={}
+-->
+{% macro segmented_button(properties={}, modifier={}, state={}, aria={}) -%}
+<div class="fd-segmented-button{{ modifier.block | modifier('segmented-button') }}{{ state | state }}"{{ aria | aria }} role="group" aria-label="{{properties.label}}">
+  {{- caller() | indent -}}
+</div>
+{%- endmacro %}

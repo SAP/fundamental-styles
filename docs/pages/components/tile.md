@@ -89,7 +89,7 @@ The component is ideal for displaying collection data when a grid or list layout
     <div class="fd-tile__actions">
         <div class="fd-popover fd-popover--right">
             <div class="fd-popover__control">
-                <button class="fd-button--light sap-icon--overflow" aria-label="More" aria-expanded="false"
+                <button class="fd-button fd-button--light sap-icon--overflow" aria-label="More" aria-expanded="false"
                     aria-controls="WQIDD179" aria-haspopup="true"></button>
             </div>
             <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="WQIDD179">

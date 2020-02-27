@@ -1,0 +1,38 @@
+@mixin negative() {
+  @include applyColors(
+    var(--sapButton_Reject_TextColor),
+    var(--sapButton_Reject_BorderColor),
+    var(--sapButton_Reject_Background)
+  );
+}
+
+@mixin negativeHover() {
+  @include applyColors(
+    var(--sapButton_Reject_Hover_TextColor),
+    var(--sapButton_Reject_Hover_BorderColor),
+    var(--sapButton_Reject_Hover_Background)
+  );
+}
+
+@mixin negativePressed() {
+  @include applyColors(
+    var(--sapButton_Selected_TextColor),
+    var(--sapButton_Reject_Active_Background),
+    var(--sapButton_Reject_Active_BorderColor)
+  );
+}
+
+@mixin negativePressedFocus() {
+  outline-color: var(--sapContent_ContrastFocusColor);
+}
+
+@mixin negativeFocus() {
+  @include buttonFocus();
+}
+
+@mixin negativeDisabled {
+  @include isDisabled();
+  @include negative();
+
+  box-shadow: none;
+}

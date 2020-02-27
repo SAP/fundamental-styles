@@ -27,7 +27,7 @@ Implementation Guidelines:
 {% capture default-contextualmenu %}
 <div class="fd-popover">
     <div class="fd-popover__control">
-        <button class="fd-button--light sap-icon--overflow" aria-controls="pQqQR213" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+        <button class="fd-button fd-button--light sap-icon--overflow" aria-controls="pQqQR213" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
     </div>
     <div class="fd-popover__body" aria-hidden="true" id="pQqQR213">
         <nav class="fd-menu">

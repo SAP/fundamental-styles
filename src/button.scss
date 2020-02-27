@@ -1,6 +1,41 @@
 @import "./settings";
 @import "./mixins";
 @import "./functions";
+@import "./mixins/button/button-helper";
+@import "./mixins/button/standard";
+@import "./mixins/button/negative";
+@import "./mixins/button/positive";
+@import "./mixins/button/emphasized";
+@import "./mixins/button/light";
+
+$fd-button-border-width: var(--sapButton_BorderWidth);
+$fd-button-font-size: var(--sapFontMediumSize);
+$fd-button-icon-font-size: 1rem;
+
+$fd-button-clickable-height: 2.75rem;
+$fd-button-height: 2.25rem;
+$fd-button-touchable-area: ($fd-button-clickable-height - $fd-button-height) / 2;
+$fd-button-padding-x: calc(0.625rem - #{$fd-button-border-width});
+$fd-button-min-width: 2.25rem;
+$fd-button-icon-margin: 0.375rem;
+$fd-button-line-height: calc(#{$fd-button-height} - 2 * #{$fd-button-border-width});
+
+$fd-button-compact-clickable-height: 2rem;
+$fd-button-compact-height: 1.625rem;
+$fd-button-compact-touchable-area: ($fd-button-compact-clickable-height - $fd-button-compact-height) / 2;
+$fd-button-compact-padding-x: calc(0.5rem - #{$fd-button-border-width});
+$fd-button-compact-min-width: 2rem;
+$fd-button-compact-line-height: calc(#{$fd-button-compact-height} - 2 * #{$fd-button-border-width});
+
+$fd-menu-button-max-width: 12rem;
+$fd-menu-button-icon-size: 0.75rem;
+$fd-menu-button-icon-position-top: 0.716rem;
+$fd-menu-button-icon-position-top-compact: 0.403rem;
+
+// anim
+$fd-button-transition-params: $fd-animation-speed ease-in !default;
+
+$block: #{$fd-namespace}-button;
 
 @mixin isDisabled() {
   opacity: 0.4;
@@ -11,456 +46,382 @@
   }
 }
 
-@mixin focus() {
-  outline: var(--sapContent_FocusWidth) dotted var(--sapContent_FocusColor);
-  outline-offset: -0.1875rem;
-}
-
-@mixin standard() {
-  color: var(--sapButton_TextColor);
-  border-color: var(--sapButton_BorderColor);
-  background-color: var(--sapButton_Background);
-}
-
-@mixin positive() {
-  color: var(--sapButton_Accept_TextColor);
-  border-color: var(--sapButton_Accept_BorderColor);
-  background-color: var(--sapButton_Accept_Background);
-}
-
-@mixin negative() {
-  color: var(--sapButton_Reject_TextColor);
-  border-color: var(--sapButton_Reject_BorderColor);
-  background-color: var(--sapButton_Reject_Background);
-}
-
-@mixin isStandard() {
-  @include standard();
-
-  @include fd-hover() {
-    color: var(--sapButton_Hover_TextColor);
-    border-color: var(--sapButton_Hover_BorderColor);
-    background-color: var(--sapButton_Hover_Background);
-  }
-
-  @include fd-disabled() {
-    @include isDisabled();
-    @include standard();
-
-    &:focus {
-      outline: none;
-    }
-
-    box-shadow: none;
-  }
-
-  @include fd-active-pressed-selected() {
-    color: var(--sapButton_Selected_TextColor);
-    background-color: var(--sapButton_Active_Background);
-    border-color: var(--sapButton_BorderColor);
-
-    &:focus {
-      outline-color: var(--sapContent_ContrastFocusColor);
-    }
-
-    @include fd-disabled() {
-      @include isDisabled();
-      @include standard();
-
-      &:focus {
-        outline: none;
-      }
-
-      box-shadow: none;
-    }
-  }
-
-  &:focus {
-    @include focus();
+@mixin iconSize($size) {
+  &::before,
+  &::after {
+    font-size: $size;
+    line-height: $size;
   }
 }
 
-@mixin isNegative() {
-  @include negative();
+@mixin buttonBase() {
+  height: $fd-button-height;
+  max-height: $fd-button-height;
+  min-width: $fd-button-min-width;
+  line-height: $fd-button-line-height;
 
-  @include fd-hover() {
-    color: var(--sapButton_Reject_Hover_TextColor);
-    border-color: var(--sapButton_Reject_Hover_BorderColor);
-    background-color: var(--sapButton_Reject_Hover_Background);
+  @include iconSize($fd-button-icon-font-size);
+
+  padding-left: $fd-button-padding-x;
+  padding-right: $fd-button-padding-x;
+  text-align: center;
+
+  // look
+  border-style: solid;
+  border-width: $fd-button-border-width;
+
+  // placements
+  &::before {
+    margin-right: $fd-button-icon-margin;
+    vertical-align: text-bottom;
   }
 
-  @include fd-disabled() {
-    @include isDisabled();
-    @include negative();
-
-    box-shadow: none;
+  &::after {
+    margin-left: $fd-button-icon-margin;
+    vertical-align: middle;
   }
 
-  @include fd-active-pressed-selected() {
-    color: var(--sapButton_Selected_TextColor);
-    background-color: var(--sapButton_Reject_Active_Background);
-    border-color: var(--sapButton_Reject_Active_BorderColor);
-
-    &:focus {
-      outline-color: var(--sapContent_ContrastFocusColor);
+  @include fd-rtl() {
+    &::before {
+      margin-right: 0;
+      margin-left: $fd-button-icon-margin;
     }
 
-    @include fd-disabled() {
-      @include isDisabled();
-      @include negative();
-
-      box-shadow: none;
+    &::after {
+      margin-left: 0;
+      margin-right: $fd-button-icon-margin;
     }
   }
 
-  &:focus {
-    @include focus();
+  &:empty {
+    &::before,
+    &::after {
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
 }
 
-@mixin isPositive() {
-  @include positive();
+@mixin buttonReset() {
+  @include fd-reset();
+  @include fd-button-reset();
+  @include buttonBase();
+}
 
-  @include fd-hover() {
-    color: var(--sapButton_Accept_Hover_TextColor);
-    border-color: var(--sapButton_Accept_Hover_BorderColor);
-    background-color: var(--sapButton_Accept_Hover_Background);
+@mixin compact() {
+  // set metrics
+  height: $fd-button-compact-height;
+  max-height: $fd-button-compact-height;
+  min-width: $fd-button-compact-min-width;
+  padding-left: $fd-button-compact-padding-x;
+  padding-right: $fd-button-compact-padding-x;
+  line-height: $fd-button-compact-line-height;
+}
+
+@mixin menuCompact() {
+  $fd-button-menu-button-padding: 1.469rem;
+  $fd-menu-button-icon-position-horizontal: 0.125rem / 2;
+
+  padding-right: $fd-button-menu-button-padding;
+
+  &::after {
+    top: $fd-menu-button-icon-position-top-compact;
+    right: $fd-menu-button-icon-position-horizontal;
   }
 
-  @include fd-disabled() {
-    @include isDisabled();
-    @include positive();
+  @include fd-rtl() {
+    padding-left: $fd-button-menu-button-padding;
+    padding-right: $fd-button-compact-padding-x;
 
-    &:focus {
-      outline: none;
+    &::after {
+      right: auto;
+      left: $fd-menu-button-icon-position-horizontal;
     }
-
-    box-shadow: none;
-  }
-
-  @include fd-active-pressed-selected() {
-    color: var(--sapButton_Selected_TextColor);
-    background-color: var(--sapButton_Accept_Active_Background);
-    border-color: var(--sapButton_Accept_Active_BorderColor);
-
-    &:focus {
-      outline-color: var(--sapContent_ContrastFocusColor);
-    }
-
-    @include fd-disabled() {
-      @include isDisabled();
-      @include positive();
-
-      box-shadow: none;
-
-      &:focus {
-        outline: none;
-      }
-    }
-  }
-
-  &:focus {
-    @include focus();
   }
 }
 
-@mixin isLight() {
-  border-color: var(--sapButton_Lite_BorderColor);
-  background-color: var(--sapButton_Lite_Background);
-}
+@mixin menu() {
+  @include fd-icon("navigation-down-arrow", "s", "after");
 
-@mixin isEmphasized() {
-  color: var(--sapButton_Emphasized_TextColor);
-  border-color: var(--sapButton_Emphasized_BorderColor);
-  background-color: var(--sapButton_Emphasized_Background);
-}
+  $fd-button-menu-button-padding: 1.594rem;
+  $fd-menu-button-icon-position-horizontal: 0.1875rem;
 
-/*!
-.fd-button+( (--compact), (--emphasized, --light), (--standard, --positive, --medium, --negative))+( (.is-disabled | [aria-disabled=true]) | (.is-selected | [aria-selected=true] | (.is-pressed | [aria-pressed=true]))
-*/
+  max-width: $fd-menu-button-max-width;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: $fd-button-menu-button-padding;
 
-$block: #{$fd-namespace}-button;
+  &::after {
+    font-size: $fd-menu-button-icon-size;
+    position: absolute;
+    top: $fd-menu-button-icon-position-top;
+    right: $fd-menu-button-icon-position-horizontal;
+    margin-right: $fd-button-icon-margin;
+    margin-left: $fd-button-icon-margin;
+  }
 
-.#{$block},
-a.#{$block} {
-  @include isStandard();
-  // spacing
-  $fd-button-padding-x: fd-space("xs") !default;
-  // anim
-  $fd-button-transition-params: $fd-animation--speed ease-in !default;
+  &:empty {
+    &::before {
+      margin-right: 0;
+      margin-left: 0;
+    }
 
-  // BASE
-  // set all reset and baseline block styles
-  @at-root {
-    .#{$block},
-    [class*="#{$block}--"],
-    a[class*="#{$block}--"] {
-      @include fd-reset();
-      @include fd-button-reset();
-      @include isStandard();
-      // set metrics
-      @include fd-var-size("height", $fd-forms-height, --fd-forms-height);
-      @include fd-var-size("max-height", $fd-forms-height, --fd-forms-height);
-      @include fd-var-size("min-width", $fd-forms-height, --fd-forms-height);
-      @include fd-type("0");
-      @include fd-icon-size("m", "before");
-      @include fd-icon-size("m", "after");
-      @include fd-var-size("line-height", $fd-button-line-height, --fd-button-line-height);
-
-      padding-left: $fd-button-padding-x;
-      padding-right: $fd-button-padding-x;
-      text-align: center;
-
-      // look
-      border-style: solid;
-      border-width: var(--sapButton_BorderWidth);
-
-      // animation
-      transition: all $fd-button-transition-params;
-
-      // placements
-      &::before {
-        margin-right: fd-space(2);
-        vertical-align: text-bottom;
-      }
-
-      @at-root {
-        [dir="rtl"] &,
-        &[dir="rtl"] {
-          &::before {
-            margin-right: 0;
-            margin-left: fd-space(2);
-          }
-        }
-      }
-
-      &::after {
-        margin-left: fd-space(2);
-        vertical-align: middle;
-      }
-
-      @at-root {
-        [dir="rtl"] &,
-        &[dir="rtl"] {
-          &::after {
-            margin-left: 0;
-            margin-right: fd-space(2);
-          }
-        }
-      }
-
-      &:empty {
-        padding: 0;
-
-        &::before,
-        &::after {
-          margin-right: 0;
-          margin-left: 0;
-        }
-      }
+    &::after {
+      margin-right: $fd-button-icon-margin;
+      margin-left: $fd-button-icon-margin;
     }
   }
 
-  &--half {
-    --fd-forms-height-half: #{$fd-forms-height/2};
+  @include fd-rtl() {
+    padding-left: $fd-button-menu-button-padding;
+    padding-right: $fd-button-padding-x;
 
-    @include fd-var-size("height", $fd-forms-height/2, --fd-forms-height-half);
-    @include fd-var-size("max-height", $fd-forms-height/2, --fd-forms-height-half);
-
-    line-height: 1;
-
-    &.#{$block}--compact {
-      --fd-forms-height-half: #{$fd-forms-height--compact/2};
-
-      @include fd-var-size("height", $fd-forms-height--compact/2, --fd-forms-height-half);
-      @include fd-var-size("max-height", $fd-forms-height--compact/2, --fd-forms-height-half);
-
-      line-height: 1;
+    &::after {
+      left: $fd-menu-button-icon-position-horizontal;
+      right: auto;
+      margin-right: $fd-button-icon-margin;
+      margin-left: $fd-button-icon-margin;
     }
-  }
-  // compact sizes (see `core/root` for css vars rules)
-  &--compact {
-    // set metrics
-    @include fd-var-size("height", $fd-forms-height, --fd-forms-height-compact);
-    @include fd-var-size("max-height", $fd-forms-height, --fd-forms-height-compact);
-    @include fd-var-size("min-width", $fd-forms-height, --fd-forms-height-compact);
-    @include fd-var-size("line-height", $fd-button-line-height--compact, --fd-button-line-height-compact);
-
-    @at-root {
-      .fd-for-touch & {
-        @include fd-var-size("height", $fd-forms-height, --fd-forms-height);
-        @include fd-var-size("min-width", $fd-forms-height, --fd-forms-height);
-        @include fd-var-size("line-height", $fd-button-line-height, --fd-button-line-height);
-      }
-
-      .fd-for-compact & {
-        @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);
-        @include fd-var-size("min-width", $fd-forms-height--compact, --fd-forms-height-compact);
-        @include fd-var-size("line-height", $fd-button-line-height--compact, --fd-button-line-height-compact);
-      }
-    }
-
-    @include fd-screen(m) {
-      @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);
-      @include fd-var-size("min-width", $fd-forms-height--compact, --fd-forms-height-compact);
-      @include fd-var-size("line-height", $fd-button-line-height--compact, --fd-button-line-height-compact);
-    }
-  }
-
-  &--standard {
-    @include isStandard();
-  }
-
-  &--positive {
-    @include isPositive();
-  }
-
-  &--negative {
-    @include isNegative();
-  }
-
-  &--menu {
-    @include fd-icon("navigation-down-arrow", "s", "after");
 
     &:empty {
       &::before {
-        margin-right: 0;
-        margin-left: fd-space(2);
-      }
-
-      &::after {
-        margin-right: fd-space(2);
-        margin-left: fd-space(2);
-      }
-    }
-
-    @at-root {
-      [dir="rtl"] &,
-      &[dir="rtl"] {
-        &:empty {
-          &::before {
-            margin-right: fd-space(2);
-            margin-left: 0;
-          }
-        }
+        margin-left: 0;
       }
     }
   }
+}
 
-  // BUTTON emphasis variations
-  // .fd-button--emphasized
-  &--emphasized {
-    font-weight: fd-font-weight("bold");
+@mixin textAlignment() {
+  &-left {
+    text-align: left;
+  }
 
-    &:focus {
-      @include focus();
+  &-right {
+    text-align: right;
+  }
 
-      outline-color: var(--sapContent_ContrastFocusColor);
-    }
+  &-center {
+    text-align: center;
+  }
+}
 
-    @include isEmphasized();
+@mixin half() {
+  height: $fd-button-height / 2;
+  max-height: $fd-button-height / 2;
+  line-height: 1;
 
-    @include fd-active-pressed-selected() {
-      background-color: var(--sapButton_Emphasized_Active_Background);
-      border-color: var(--sapButton_Emphasized_Active_BorderColor);
+  &.#{$block}--compact {
+    height: $fd-button-compact-height / 2;
+    max-height: $fd-button-compact-height / 2;
+    line-height: 1;
+  }
+}
 
-      @include fd-disabled() {
-        @include isEmphasized();
-        @include isDisabled();
-      }
-    }
+@mixin styleButtonContent() {
+  .#{$block}--content {
+    @content;
+  }
+}
 
-    @include fd-hover() {
-      color: var(--sapButton_Emphasized_Hover_TextColor);
-      background-color: var(--sapButton_Emphasized_Hover_Background);
+@mixin buttonContainer() {
+  @include buttonReset();
+  @include standard();
 
-      @include fd-active-pressed-selected() {
-        background-color: var(--sapButton_Emphasized_Active_Background);
-        border-color: var(--sapButton_Emphasized_Active_BorderColor);
+  &.#{$block}--standard {
+    @include standard();
+  }
 
-        @include fd-disabled() {
-          @include isEmphasized();
-          @include isDisabled();
-        }
-      }
-    }
+  &.#{$block}--positive {
+    @include positive();
+  }
 
-    @include fd-disabled() {
-      @include isEmphasized();
-      @include isDisabled();
+  &.#{$block}--negative {
+    @include negative();
+  }
+
+  &.#{$block}--emphasized {
+    font-weight: bold;
+
+    @include emphasized();
+  }
+
+  &.#{$block}--light {
+    @include light();
+  }
+}
+
+@mixin buttonContainerDisabled() {
+  @include standardDisabled();
+
+  &.#{$block}--standard {
+    @include standardDisabled();
+  }
+
+  &.#{$block}--positive {
+    @include positiveDisabled();
+  }
+
+  &.#{$block}--negative {
+    @include negativeDisabled();
+  }
+
+  &.#{$block}--emphasized {
+    @include emphasizedDisabled();
+  }
+
+  &.#{$block}--light {
+    @include lightDisabled();
+  }
+}
+
+@mixin buttonContainerFocus() {
+  box-shadow: none;
+
+  @include standardFocus();
+
+  &.#{$block}--standard {
+    @include standardFocus();
+  }
+
+  &.#{$block}--positive {
+    @include positiveFocus();
+  }
+
+  &.#{$block}--negative {
+    @include negativeFocus();
+  }
+
+  &.#{$block}--emphasized {
+    @include negativeFocus();
+  }
+}
+
+@mixin buttonContainerPressedFocus() {
+  box-shadow: none;
+
+  @include standardPressedFocus();
+
+  &.#{$block}--standard {
+    @include standardPressedFocus();
+  }
+
+  &.#{$block}--positive {
+    @include positivePressedFocus();
+  }
+
+  &.#{$block}--negative {
+    @include negativePressedFocus();
+  }
+
+  &.#{$block}--emphasized {
+    @include emphasizedPressedFocus();
+  }
+}
+
+@mixin buttonContainerPressed() {
+  @include standardPressed();
+
+  &.#{$block}--standard {
+    @include standardPressed();
+  }
+
+  &.#{$block}--positive {
+    @include positivePressed();
+  }
+
+  &.#{$block}--negative {
+    @include negativePressed();
+  }
+
+  &.#{$block}--emphasized {
+    @include emphasizedPressed();
+  }
+}
+
+@mixin buttonContainerHover() {
+  @include standardHover();
+
+  &.#{$block}--standard {
+    @include standardHover();
+  }
+
+  &.#{$block}--positive {
+    @include positiveHover();
+  }
+
+  &.#{$block}--negative {
+    @include negativeHover();
+  }
+
+  &.#{$block}--emphasized {
+    @include emphasizedHover();
+  }
+}
+
+.#{$block} {
+  @include fd-button-reset();
+
+  overflow: visible;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include buttonContainer();
+
+  min-width: $fd-button-min-width;
+
+  &--compact {
+    @include compact();
+  }
+
+  &--menu {
+    @include menu();
+
+    &.#{$block}--compact {
+      @include menuCompact();
     }
   }
 
-  // .fd-button--light
-  &--light {
-    @include isLight();
+  &--text-alignment {
+    @include textAlignment();
+  }
 
-    color: var(--sapButton_Lite_TextColor);
+  &--half {
+    @include half();
+  }
 
-    &:focus {
-      @include focus();
+  @include fd-hover() {
+    @include buttonContainerHover();
+  }
+
+  @include fd-active-pressed-selected() {
+    outline: none;
+
+    @include buttonContainerPressed();
+
+    @include fd-disabled() {
+      @include buttonContainerDisabled();
     }
+  }
 
-    @include fd-hover() {
-      background-color: var(--sapButton_Lite_Hover_Background);
-      border-color: var(--sapButton_Lite_Hover_BorderColor);
-      color: var(--sapButton_Lite_Hover_TextColor);
+  @include fd-focus() {
+    box-shadow: none;
+
+    @include buttonContainerFocus();
+
+    @include fd-active-pressed-selected() {
+      @include buttonContainerPressedFocus();
     }
 
     @include fd-disabled() {
-      @include isLight();
-      @include isDisabled();
-
-      &:focus {
-        @include isLight();
-      }
-
-      box-shadow: none;
+      @include buttonContainerDisabled();
     }
+  }
 
-    @include fd-active-pressed-selected() {
-      color: var(--sapButton_Selected_TextColor);
-      border-color: var(--sapButton_Lite_Active_BorderColor);
-      background-color: var(--sapButton_Lite_Active_Background);
+  @include fd-disabled() {
+    cursor: not-allowed;
 
-      @include fd-disabled() {
-        @include isDisabled();
-        @include isLight();
-
-        box-shadow: none;
-      }
-    }
-
-    &.#{$block}--standard {
-      @include isStandard();
-      @include isLight();
-
-      @include fd-disabled() {
-        @include isLight();
-        @include isDisabled();
-
-        box-shadow: none;
-      }
-    }
-
-    &.#{$block}--negative {
-      @include isNegative();
-      @include isLight();
-
-      @include fd-disabled() {
-        @include isLight();
-        @include isDisabled();
-      }
-    }
-
-    &.#{$block}--positive {
-      @include isPositive();
-      @include isLight();
-
-      @include fd-disabled() {
-        @include isLight();
-        @include isDisabled();
-      }
-    }
+    @include buttonContainerDisabled();
   }
 }

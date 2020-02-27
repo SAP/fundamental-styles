@@ -92,7 +92,7 @@ $block: #{$fd-namespace}-menu;
     @include fd-ellipsis();
 
     display: block;
-    transition: all $fd-animation--speed ease-in;
+    transition: all $fd-animation-speed ease-in;
 
     @include action-cursor();
 

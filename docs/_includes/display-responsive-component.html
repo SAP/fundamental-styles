@@ -22,10 +22,16 @@
 
 <div class="fd-tile docs-component docs-component__{{include.cssclass}}">
     {% if include.controls == "true" %}
-    <div class="fd-button-group docs-component--responsive-display__controls" role="group" aria-label="Group label" id="docs-responsive-controls">
-      <button class="fd-button--compact sap-icon--iphone" aria-pressed="false" data-size="mobile"></button>
-      <button class="fd-button--compact sap-icon--ipad"  aria-pressed="false" data-size="tablet"></button>
-      <a class="fd-button--compact docs-component--responsive-display__full-screen"  aria-pressed="false" data-size="fullscreen" href="{{site.baseurl}}{{include.component}}" target="_blank"><span class="sap-icon--popup-window"></span></a>
+    <div class="fd-segmented-button docs-component--responsive-display__controls" role="group" aria-label="Group label" id="docs-responsive-controls">
+      <button class="fd-button fd-button--compact" aria-pressed="false" data-size="mobile">
+        <span class="fd-button--content sap-icon--iphone"></span>
+      </button>
+      <button class="fd-button fd-button--compact"  aria-pressed="false" data-size="tablet">
+          <span class="fd-button--content sap-icon--ipad"></span>
+      </button>
+      <a class="fd-button fd-button--compact"  aria-pressed="false" data-size="fullscreen" href="{{site.baseurl}}{{include.component}}" target="_blank">
+        <span class="fd-button--content sap-icon--popup-window"></span>
+      </a>
     </div>
     {% endif %}
     <div class="fd-tile__content fd-tile__content--responsive-display">

@@ -91,7 +91,7 @@ This example includes the product menu for navigating to applications within the
     </span>
     <div class="fd-popover">
       <div class="fd-popover__control">
-        <button class="fd-button--light fd-button--menu fd-shellbar__button--menu" aria-controls="9GLB26941" aria-haspopup="true" aria-expanded="false">
+        <button class="fd-button fd-button--light fd-button--menu fd-shellbar__button--menu" aria-controls="9GLB26941" aria-haspopup="true" aria-expanded="false">
           <span class="fd-shellbar__title">Corporate Portal</span>
         </button>
       </div>
@@ -264,7 +264,7 @@ For more information about the Product Switch, see [Product Switch](product-swit
         <div class="fd-product-switch">
             <div class="fd-popover fd-popover--right">
                 <div class="fd-popover__control">
-                    <button class="fd-button--light fd-popover__control fd-product-switch__control sap-icon--grid" 
+                    <button class="fd-button fd-button--light fd-popover__control fd-product-switch__control sap-icon--grid" 
                         aria-label="Image label" 
                         aria-controls="product-switch-body" 
                         aria-expanded="false" 

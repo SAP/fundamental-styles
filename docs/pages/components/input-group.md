@@ -11,12 +11,12 @@ folder: components
 The input group includes form inputs with add-ons that allow the user to better understand the information being entered.
 {: .docs-intro}
 
-
 ## Sizes
 
 The Input Group supports **compact** mode (by virtue of the `--compact` modifier on child components).
 
 {% capture sizes %}
+
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Default Size </label>
     <div class="fd-input-group">
@@ -78,12 +78,12 @@ The Input Group with text add-on component is typically used to specify the type
 
 {% include display-component.html component=text-addon %}
 
-
 ## Input with icons
 
 The Input with add-on supports icons.
 
 {% capture input-action %}
+
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Input with icon on the left</label>
     <div class="fd-input-group">
@@ -117,18 +117,18 @@ The Input with add-on supports icons.
 
 {% include display-component.html component=input-action %}
 
-
 ## Input with actions
 
 The Input with add-on supports actions. Actions can be shown with a text label or icon.
 
 {% capture button-addon %}
+
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Input with text add-on</label>
     <div class="fd-input-group">
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--light">
+            <button class="fd-input-group__button fd-button fd-button--light">
                 Button
             </button>
         </span>
@@ -140,7 +140,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
     <div class="fd-input-group">
         <input class="fd-input fd-input-group__input" type="text" id="" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--icon fd-button--light sap-icon--navigation-down-arrow"></button>
+            <button class="fd-input-group__button fd-button fd-button--icon fd-button--light sap-icon--navigation-down-arrow"></button>
         </span>
     </div>
 </div>
@@ -150,7 +150,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
     <div class="fd-input-group">
         <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-            <button class="fd-input-group__button fd-button--icon fd-button--light fd-button--compact sap-icon--navigation-down-arrow"></button>
+            <button class="fd-input-group__button fd-button fd-button--icon fd-button--light fd-button--compact sap-icon--navigation-down-arrow"></button>
         </span>
     </div>
 </div>
@@ -159,7 +159,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
     <label class="fd-form-label" for="">Input with text action on left</label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--light">
+            <button class="fd-input-group__button fd-button fd-button--light">
                 Button
             </button>
         </span>
@@ -173,6 +173,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
 ## States
 
 {% capture states %}
+
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Success</label>
     <div class="fd-input-group is-success">
@@ -204,7 +205,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
     <div class="fd-input-group is-information">
         <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-            <button class="fd-input-group__button fd-button--light fd-button--compact">
+            <button class="fd-input-group__button fd-button fd-button--light fd-button--compact">
                 Button
             </button>
         </span>
@@ -250,7 +251,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
     <div class="fd-input-group is-information is-disabled">
         <input class="fd-input fd-input--compact fd-input-group__input" disabled type="text" id="" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--light fd-button--compact" disabled>
+            <button class="fd-input-group__button fd-button fd-button--light fd-button--compact" disabled>
                 Button
             </button>
         </span>
@@ -264,6 +265,7 @@ The Input with add-on supports actions. Actions can be shown with a text label o
 
 The Input Group supports **focus** state, it can be added by putting `.is-focus` class to component.
 {% capture focus %}
+
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Default</label>
     <div class="fd-input-group is-focus">
@@ -290,13 +292,14 @@ The Input Group supports **focus** state, it can be added by putting `.is-focus`
 For an integer value input, a spinner can be added allowing the user to increase or decrease the value.
 
 {% capture input-spinner %}
+
 <div class="fd-form-item">
     <label class="fd-form-label" for="">Quantity Spinner</label>
     <div class="fd-input-group">
         <input class="fd-input fd-input--no-number-spinner fd-input-group__input" id="spinner-1" type="number" value="100" />
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button--light fd-button--half sap-icon--slim-arrow-up" aria-label="Step up" onclick="stepInputValue('spinner-1', 'up');"></button>
-            <button class="fd-input-group__button fd-button--light fd-button--half sap-icon--slim-arrow-down" aria-label="Step down" onclick="stepInputValue('spinner-1', 'down');"></button>
+            <button class="fd-input-group__button fd-button fd-button--light fd-button--half sap-icon--slim-arrow-up" aria-label="Step up" onclick="stepInputValue('spinner-1', 'up');"></button>
+            <button class="fd-input-group__button fd-button fd-button--light fd-button--half sap-icon--slim-arrow-down" aria-label="Step down" onclick="stepInputValue('spinner-1', 'down');"></button>
         </span>
     </div>
 </div>
