@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.7.0-rc.11"></a>
+# [0.7.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.7.0-rc.10...v0.7.0-rc.11) (2020-02-27)
+
+
+### Features
+
+* button refactor standard markup ([#699](https://github.com/SAP/fundamental-styles/issues/699)) ([24a770a](https://github.com/SAP/fundamental-styles/commit/24a770a))
+
+
+
 <a name="0.7.0-rc.10"></a>
 # [0.7.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.7.0-rc.9...v0.7.0-rc.10) (2020-02-26)
 
