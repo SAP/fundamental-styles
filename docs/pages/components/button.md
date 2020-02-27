@@ -114,8 +114,8 @@ The buttons can also be set to a state:
 {% include display-component.html component=button-standard-state %}
 
 
-# Button Group
-Group a series of buttons together on a single line with the button group.
+# Segmented Button
+Group a series of buttons together on a single line with the segmented button.
 
 {% capture button-group-small %}
 <div class="fd-segmented-button" role="group" aria-label="Group label">
