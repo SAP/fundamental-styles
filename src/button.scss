@@ -227,8 +227,8 @@ $block: #{$fd-namespace}-button;
 
 @mixin buttonContainer() {
   @include buttonReset();
+  @include standard();
 
-  &.#{$block},
   &.#{$block}--standard {
     @include standard();
   }
@@ -253,7 +253,8 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin buttonContainerDisabled() {
-  &.#{$block},
+  @include standardDisabled();
+
   &.#{$block}--standard {
     @include standardDisabled();
   }
@@ -278,7 +279,8 @@ $block: #{$fd-namespace}-button;
 @mixin buttonContainerFocus() {
   box-shadow: none;
 
-  &.#{$block},
+  @include standardFocus();
+
   &.#{$block}--standard {
     @include standardFocus();
   }
@@ -299,7 +301,8 @@ $block: #{$fd-namespace}-button;
 @mixin buttonContainerPressedFocus() {
   box-shadow: none;
 
-  &.#{$block},
+  @include standardPressedFocus();
+
   &.#{$block}--standard {
     @include standardPressedFocus();
   }
@@ -318,7 +321,8 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin buttonContainerPressed() {
-  &.#{$block},
+  @include standardPressed();
+
   &.#{$block}--standard {
     @include standardPressed();
   }
@@ -337,7 +341,8 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin buttonContainerHover() {
-  &.#{$block},
+  @include standardHover();
+
   &.#{$block}--standard {
     @include standardHover();
   }

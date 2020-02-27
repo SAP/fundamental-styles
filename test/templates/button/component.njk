@@ -6,7 +6,6 @@
 {%- set is_default = modifier.block and modifier.block.length and not (modifier.block | join("")) %}
 
 <button class="fd-button {{ modifier.block | modifier('button') }} {{ ' fd-button--'+size if size }} {{ state | state }} {{ ' sap-icon--'+properties.icon if properties.icon }} {{ classes | classes }}" {{ aria | aria }}{% if disabled %} disabled {% endif %}>
-    {%- if properties.label %}{{properties.label}}{%- endif %}
-</button>
+{%- if properties.label %}{{properties.label}}{%- endif %}</button>
 
 {%- endmacro %}
