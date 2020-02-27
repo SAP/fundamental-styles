@@ -9,6 +9,15 @@
 $block: #{$fd-namespace}-product-switch;
 
 .#{$block} {
+  @mixin fd-product-pseudo-element-background($background) {
+    .#{$block}__title {
+      &::after,
+      &::before {
+        background-color: $background;
+      }
+    }
+  }
+
   @include fd-reset();
 
   &__control {
@@ -71,45 +80,25 @@ $block: #{$fd-namespace}-product-switch;
       @include fd-ellipsis();
     }
 
-    .#{$block}__title {
-      &::after,
-      &::before {
-        background-color: var(--sapList_Active_TextColor);
-      }
-    }
+    @include fd-product-pseudo-element-background(var(--sapList_Background));
 
     &.selected {
       background-color: var(--sapList_SelectionBackgroundColor);
       border: 0.125rem solid;
       border-color: var(--sapList_SelectionBorderColor);
 
-      .#{$block}__title {
-        &::after,
-        &::before {
-          background-color: var(--sapList_SelectionBackgroundColor);
-        }
-      }
+      @include fd-product-pseudo-element-background(var(--sapList_SelectionBackgroundColor));
 
       &:hover {
         background-color: var(--sapList_Hover_SelectionBackground);
 
-        .#{$block}__title {
-          &::after,
-          &::before {
-            background-color: var(--sapList_Hover_SelectionBackground);
-          }
-        }
+        @include fd-product-pseudo-element-background(var(--sapList_Hover_SelectionBackground));
       }
 
       &:active {
         background-color: var(--sapList_Active_Background);
 
-        .#{$block}__title {
-          &::after,
-          &::before {
-            background-color: var(--sapList_Active_Background);
-          }
-        }
+        @include fd-product-pseudo-element-background(var(--sapList_Active_Background));
       }
     }
 
@@ -154,12 +143,7 @@ $block: #{$fd-namespace}-product-switch;
   &__item:hover {
     background-color: var(--sapList_Hover_Background);
 
-    .#{$block}__title {
-      &::after,
-      &::before {
-        background-color: var(--sapList_Hover_Background);
-      }
-    }
+    @include fd-product-pseudo-element-background(var(--sapList_Hover_Background));
   }
 
   &__item:active {
@@ -171,20 +155,10 @@ $block: #{$fd-namespace}-product-switch;
       color: var(--sapList_Active_TextColor);
     }
 
-    .#{$block}__title {
-      &::after,
-      &::before {
-        background-color: var(--sapList_Active_Background);
-      }
-    }
+    @include fd-product-pseudo-element-background(var(--sapList_Active_Background));
 
     &:hover {
-      .#{$block}__title {
-        &::after,
-        &::before {
-          background-color: var(--sapList_Active_Background);
-        }
-      }
+      @include fd-product-pseudo-element-background(var(--sapList_Active_Background));
     }
   }
 
@@ -222,6 +196,21 @@ $block: #{$fd-namespace}-product-switch;
     z-index: 1;
 
     @include multiline-truncate($lineHeight: 1.25rem, $lineCount: 2);
+
+    &::after,
+    &::before {
+      content: none;
+    }
+
+    &:last-child {
+      &::after {
+        content: "";
+      }
+
+      &::before {
+        content: "...";
+      }
+    }
 
     &::before {
       left: 9.4rem;
@@ -287,72 +276,30 @@ $block: #{$fd-namespace}-product-switch;
       border-bottom: 0.0625rem solid;
       border-bottom-color: var(--sapList_GroupHeaderBorderColor);
 
-      .#{$block}__title,
-      .#{$block}__subtitle {
-        &::after,
-        &::before {
-          background-color: var(--sapTile_Background);
-        }
-      }
+      @include fd-product-pseudo-element-background(var(--sapTile_Background));
 
       &:hover {
-        .#{$block}__subtitle,
-        .#{$block}__title {
-          &::after,
-          &::before {
-            background-color: var(--sapList_Hover_Background);
-          }
-        }
+        @include fd-product-pseudo-element-background(var(--sapList_Hover_Background));
       }
 
       &:active {
-        .#{$block}__subtitle,
-        .#{$block}__title {
-          &::after,
-          &::before {
-            background-color: var(--sapList_SelectionBorderColor);
-          }
-        }
+        @include fd-product-pseudo-element-background(var(--sapList_SelectionBorderColor));
       }
 
       &.selected {
         border-bottom-color: var(--sapList_SelectionBorderColor);
 
-        .#{$block}__subtitle,
-        .#{$block}__title {
-          &::after,
-          &::before {
-            background-color: var(--sapList_SelectionBackgroundColor);
-          }
-        }
+        @include fd-product-pseudo-element-background(var(--sapList_SelectionBorderColor));
 
         &:hover {
-          .#{$block}__subtitle,
-          .#{$block}__title {
-            &::after,
-            &::before {
-              background-color: var(--sapList_Hover_SelectionBackground);
-            }
-          }
+          @include fd-product-pseudo-element-background(var(--sapList_Hover_SelectionBackground));
         }
 
         &:active {
-          .#{$block}__subtitle,
-          .#{$block}__title {
-            &::after,
-            &::before {
-              background-color: var(--sapList_Active_Background);
-            }
-          }
+          @include fd-product-pseudo-element-background(var(--sapList_Active_Background));
 
           &:hover {
-            .#{$block}__subtitle,
-            .#{$block}__title {
-              &::after,
-              &::before {
-                background-color: var(--sapList_Active_Background);
-              }
-            }
+            @include fd-product-pseudo-element-background(var(--sapList_Active_Background));
           }
         }
       }
