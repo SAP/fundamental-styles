@@ -26,7 +26,7 @@
           </span>
         {%- endif -%}
       {%- endif -%}
-      <span class="fd-menu__option-name">{{ item.label }}</span>
+      <span class="fd-menu__title">{{ item.label }}</span>
       {%- if properties.addon_after -%}
         {%- if item.secondaryIcon -%}
           <span class="fd-menu__addon-after">></span>
@@ -47,7 +47,7 @@
                   </span>
                 {%- endif -%}
               {%- endif -%} 
-              <span class="fd-menu__option-name">{{ subitem.label }}</span>
+              <span class="fd-menu__title">{{ subitem.label }}</span>
               </a>
             </li>
           {%- if loop.last %}

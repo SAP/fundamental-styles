@@ -26,6 +26,7 @@ $block: #{$fd-namespace}-menu;
   @include fd-reset();
 
   width: 100%;
+  max-width: 20rem;
 
   &__list,
   &__sublist {
@@ -34,7 +35,6 @@ $block: #{$fd-namespace}-menu;
     margin: 0;
     padding: 0;
     list-style: none;
-    max-width: 20rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -57,30 +57,82 @@ $block: #{$fd-namespace}-menu;
       left: initial;
       margin: 0.25rem -0.25rem 0 0;
     }
+
+    width: 100%;  // to fix IE issue
   }
 
   &__list > li {
     position: relative; // submenu's positioning relative to parent item
+    width: 100%;  // to ensure in mobile mode the width of parent is taken fully
   }
 
-  // adjust padding of item for varying screens
-  @mixin fd-item-responsive-padding {
-    @include fd-screen(s) {
-      padding: 0.75rem 1rem 0.75rem 1rem; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each
-      height: 2.75rem;
-    }
-
-    @include fd-screen(m) {
-      padding: 0.75rem 1rem 0.75rem 0.75rem; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each
-      height: 2.75rem;
-    }
-
-    @include fd-screen(l) {
+  &--compact-desktop {
+    .#{$block}__item {
+      // for desktop mode
       padding: 0.375rem 0.75rem 0.375rem 0.5rem; // line-height=20px so 2rem or 32px-20px=12px/2= 6px or 0.375rem each
       height: 2rem;
     }
 
-    @content;
+    .#{$block}__addon-before {
+      width: 2rem; // to account for item right padding of 12px or 0.75rem so 2rem-0.75rem = 1.25rem
+      height: 1.25rem; // to account for item top padding of 6px or 0.375rem so 2rem-0.375rem-0.375rem = 1.25rem
+      margin: 0 0 0 -0.5rem;
+    }
+
+    .#{$block}__addon-after {
+      width: 2rem; // to account for item right padding of 12px or 0.75rem so 2rem-0.75rem = 1.25rem
+      height: 1.25rem; // to account for item top padding of 6px or 0.375rem so 2rem-0.375rem-0.375rem = 1.25rem
+      margin: 0 -0.75rem 0 0;
+    }
+
+    // handle icons rtl modes
+    @include fd-rtl() {
+      .#{$block}__addon-before {
+        margin: 0 -0.75rem 0 0; // since before and after icons switch places, their margins also switch
+      }
+
+      .#{$block}__addon-after {
+        margin: 0 0 0 -0.5rem; // since before and after icons switch places, their margins also switch
+      }
+    }
+  }
+
+  &--mobile {      // for mobile mode
+    width: inherit;
+    max-width: none;
+
+    .#{$block}__item {
+      padding: 0.75rem 1rem 0.75rem 1rem; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each
+      height: 2.75rem;
+      width: inherit;
+      max-width: none;
+
+      .#{$block}__title {
+        max-width: 100%;
+      }
+    }
+
+    .#{$block}__addon-before {
+      width: 2.75rem; // to account for item right padding of 16px or 1rem so 2.75rem-1rem = 1.75rem
+      height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
+      margin: 0 0 0 -1rem;
+    }
+
+    .#{$block}__addon-after {
+      width: 2.75rem; // to account for item right padding of 16px or 1rem so 2.75rem-1rem = 1.75rem
+      height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
+      margin: 0 -1rem 0 0;
+    }
+
+    @include fd-rtl() {
+      .#{$block}__addon-before {
+        margin: 0 -1rem 0 0; // since before and after icons switch places, their margins also switch
+      }
+
+      .#{$block}__addon-after {
+        margin: 0 0 0 -1rem; // since before and after icons switch places, their margins also switch
+      }
+    }
   }
 
   &__item {
@@ -94,6 +146,9 @@ $block: #{$fd-namespace}-menu;
 
     max-width: 20rem;
     background-color: $fd-menu-item-background-color;
+    // tablet cozy - will be default
+    padding: 0.75rem 1rem 0.75rem 0.75rem; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each
+    height: 2.75rem;
 
     &--separated {
       border-bottom-style: solid;
@@ -102,7 +157,7 @@ $block: #{$fd-namespace}-menu;
     }
 
     @include fd-hover() {
-      .#{$block}__option-name {
+      .#{$block}__title {
         color: $fd-menu-item-color;
       }
 
@@ -110,7 +165,7 @@ $block: #{$fd-namespace}-menu;
     }
 
     @include fd-active() {
-      .#{$block}__option-name {
+      .#{$block}__title {
         color: $fd-menu-item-color--active;
       }
 
@@ -122,12 +177,13 @@ $block: #{$fd-namespace}-menu;
       }
 
       .#{$block}__addon-after {
-        border-bottom-color: var(--sapList_BorderColor); // TODO change this when fade() evaluates to a value
+        // border-bottom-color: var(--sapList_BorderColor); // TODO change this when fade() evaluates to a value
+        border-bottom-color: transparent;
       }
     }
 
     @include fd-selected() {
-      .#{$block}__option-name {
+      .#{$block}__title {
         color: $fd-menu-item-color;
       }
 
@@ -159,12 +215,10 @@ $block: #{$fd-namespace}-menu;
       text-decoration: none;
     }
 
-    @include fd-item-responsive-padding();
-
-    .#{$block}__option-name {
+    .#{$block}__title {
       @include fd-reset();
 
-      flex: 3 3 10%;
+      flex: 3 3 10%;  // needed to keep the icons aligned
       color: $fd-menu-item-color;
 
       @include fd-weight("normal");
@@ -177,77 +231,17 @@ $block: #{$fd-namespace}-menu;
     }
   }
 
-  @mixin icon-before-size-responsive() {
-    @include fd-screen(s) {
-      width: 2.75rem; // to account for item right padding of 16px or 1rem so 2.75rem-1rem = 1.75rem
-      height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
-      margin: 0 0 0 -1rem;
-
-      @include fd-rtl() {
-        margin: 0 -1rem 0 0; // since before and after icons switch places, their margins also switch
-      }
-    }
-
-    @include fd-screen(m) {
-      width: 2.25rem; // to account for item right padding of 16px or 1rem so 2.25rem-1rem = 1.25rem
-      height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
-      margin: 0 0 0 -0.75rem;
-
-      @include fd-rtl() {
-        margin: 0 -0.1rem 0 0; // since before and after icons switch places, their margins also switch
-      }
-    }
-
-    @include fd-screen(l) {
-      width: 2rem; // to account for item right padding of 12px or 0.75rem so 2rem-0.75rem = 1.25rem
-      height: 1.25rem; // to account for item top padding of 6px or 0.375rem so 2rem-0.375rem-0.375rem = 1.25rem
-      margin: 0 0 0 -0.5rem;
-
-      @include fd-rtl() {
-        margin: 0 -0.75rem 0 0; // since before and after icons switch places, their margins also switch
-      }
-    }
-  }
-
-  @mixin icon-after-size-responsive() {
-    @include fd-screen(s) {
-      width: 2.75rem; // to account for item right padding of 16px or 1rem so 2.75rem-1rem = 1.75rem
-      height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
-      margin: 0 -1rem 0 0;
-
-      @include fd-rtl() {
-        margin: 0 0 0 -1rem; // since before and after icons switch places, their margins also switch
-      }
-    }
-
-    @include fd-screen(m) {
-      width: 2.25rem; // to account for item right padding of 16px or 1rem so 2.25rem-1rem = 1.25rem
-      height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
-      margin: 0 -1rem 0 0;
-
-      @include fd-rtl() {
-        margin: 0 0 0 -0.75rem; // since before and after icons switch places, their margins also switch
-      }
-    }
-
-    @include fd-screen(l) {
-      width: 2rem; // to account for item right padding of 12px or 0.75rem so 2rem-0.75rem = 1.25rem
-      height: 1.25rem; // to account for item top padding of 6px or 0.375rem so 2rem-0.375rem-0.375rem = 1.25rem
-      margin: 0 -0.75rem 0 0;
-
-      @include fd-rtl() {
-        margin: 0 0 0 -0.5rem; // since before and after icons switch places, their margins also switch
-      }
-    }
-  }
-
   &__addon-before {
     @include fd-reset();
     @include fd-flex-center();
 
+    // cozy tablet icon size
+    width: 2.25rem; // to account for item right padding of 16px or 1rem so 2.25rem-1rem = 1.25rem
+    height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
+    margin: 0 0 0 -0.75rem;
+
     @include fd-rtl() {
-      float: right;
-      clear: right;
+      margin: 0 -1rem 0 0; // since before and after icons switch places, their margins also switch
     }
 
     color: $fd-menu-primary-icon-color;
@@ -264,15 +258,11 @@ $block: #{$fd-namespace}-menu;
       }
     }
 
-    flex: 0 0 auto;
     display: flex;
     background-color: transparent;
-    float: left;
-    clear: left;
 
     @include fd-icon-size("m", "before");
     @include fd-icon-size("m", "after");
-    @include icon-before-size-responsive();
   }
 
   // for affordance icon to be used with submenu
@@ -283,6 +273,14 @@ $block: #{$fd-namespace}-menu;
     flex: 0 0 auto;
     display: flex;
     color: $fd-menu-primary-icon-color;
+    // cozy tablet icon size
+    width: 2.25rem; // to account for item right padding of 16px or 1rem so 2.25rem-1rem = 1.25rem
+    height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
+    margin: 0 -1rem 0 0;
+
+    @include fd-rtl() {
+      margin: 0 0 0 -0.75rem; // since before and after icons switch places, their margins also switch
+    }
 
     @include fd-active() {
       color: $fd-menu-item-color--active;
@@ -297,11 +295,8 @@ $block: #{$fd-namespace}-menu;
     }
 
     background-color: transparent;
-    float: right;
-    clear: right;
 
     @include fd-icon-size("s", "before");
     @include fd-icon-size("s", "after");
-    @include icon-after-size-responsive();
   }
 }
