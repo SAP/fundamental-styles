@@ -33,7 +33,7 @@ The Action Bar is located at the top of the page and is used for the following:
 <div class="fd-action-bar" dir="rtl">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"></button>
         </div>
         <h3 class="fd-action-bar__title">Page Title</h3>
         <div class="fd-action-bar__actions">
@@ -95,7 +95,7 @@ The Action Bar is located at the top of the page and is used for the following:
 <div class="fd-action-bar" dir="rtl">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"></button>
         </div>
         <h3 class="fd-action-bar__title">Page Title</h3>
         <div class="fd-action-bar__actions">
@@ -132,7 +132,7 @@ The Action Bar is located at the top of the page and is used for the following:
 <div class="fd-action-bar" dir="rtl">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"></button>
         </div>
         <div class="fd-action-bar__title">Page Title Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long.
         </div>
@@ -203,7 +203,7 @@ When there are several main actions for a page, consider displaying them under a
 <div class="fd-action-bar fd-action-bar--m_l" dir="rtl">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"></button>
         </div>
         <h3 class="fd-action-bar__title">Page Title</h3>
         <div class="fd-action-bar__actions">
@@ -237,7 +237,7 @@ When there are several main actions for a page, consider displaying them under a
 <div class=" fd-action-bar fd-action-bar--xl" dir="rtl">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"></button>
         </div>
         <h3 class="fd-action-bar__title">Page Title</h3>
         <div class="fd-action-bar__actions">
@@ -271,7 +271,7 @@ When there are several main actions for a page, consider displaying them under a
 <div class=" fd-action-bar fd-action-bar--xl" dir="rtl">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"></button>
         </div>
         <h3 class="fd-action-bar__title">Page Title</h3>
         <div class="fd-action-bar__actions">
@@ -297,7 +297,7 @@ When there are several main actions for a page, consider displaying them under a
             <div class="fd-action-bar__actions">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button class="fd-button sap-icon--overflow"
+                        <button class="fd-button fd-button--transparent sap-icon--overflow"
                         aria-controls="wgxzK85" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="wgxzK85">
@@ -322,13 +322,13 @@ When there are several main actions for a page, consider displaying them under a
     <div class="fd-action-bar fd-action-bar--s"> 
         <div class="fd-action-bar__header">
             <div class="fd-action-bar__back">
-                <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow" aria-label="Back"></button>
+                <button class="fd-button fd-button--transparent sap-icon--navigation-right-arrow" aria-label="Back"></button>
             </div>
             <h3 class="fd-action-bar__title">Action Bar with description and back button</h3>
             <div class="fd-action-bar__actions">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button class="fd-button sap-icon--overflow"
+                        <button class="fd-button fd-button--transparent sap-icon--overflow"
                         aria-controls="wgxzK85" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="wgxzK85">

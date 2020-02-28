@@ -8,7 +8,8 @@ $block: #{$fd-namespace}-action-bar;
   $fd-action-bar-background-color: var(--sapPageHeader_Background) !default;
   $fd-action-bar-description-color: var(--sapContent_LabelColor) !default;
   $fd-action-bar-title-color: var(--sapGroup_TitleTextColor) !default;
-  $fd-action-bar-height: 3rem;
+  $fd-action-bar-min-height: 3rem;
+  $fd-action-bar-max-height: 4.25rem;
   $fd-action-bar-transition-params: 0.25s ease-in !default;
 
   @mixin fd-truncate-text {
@@ -48,7 +49,8 @@ $block: #{$fd-namespace}-action-bar;
   @include fd-reset();
 
   background-color: $fd-action-bar-background-color;
-  min-height: $fd-action-bar-height;
+  min-height: $fd-action-bar-min-height;
+  max-height: $fd-action-bar-max-height;
   word-wrap: break-word;
   justify-content: space-between;
 
@@ -57,7 +59,7 @@ $block: #{$fd-namespace}-action-bar;
   &__header {
     @include fd-reset();
 
-    min-height: 2rem;
+    height: 2rem;
     flex-grow: 1;
     display: flex;
     flex-direction: row;
@@ -75,9 +77,8 @@ $block: #{$fd-namespace}-action-bar;
     margin-right: 0.5rem;
 
     @include fd-rtl() {
-      transform: scaleX(-1);
-      margin-left: 0.5rem;
       margin-right: 0;
+      margin-left: 0.5rem;
     }
   }
 
@@ -94,6 +95,11 @@ $block: #{$fd-namespace}-action-bar;
     padding-right: 0.5rem;
     vertical-align: middle;
     margin: 0;
+
+    @include fd-rtl() {
+      padding-right: 0;
+      padding-left: 0.5rem;
+    }
   }
 
   &__description {
@@ -103,7 +109,12 @@ $block: #{$fd-namespace}-action-bar;
   &__description--with-backBtn {
     @include fd-action-bar-description();
 
-    padding-left: 2.25rem;
+    padding-left: 2.5rem;
+
+    @include fd-rtl() {
+      padding-left: 0;
+      padding-right: 2.5rem;
+    }
   }
 
   &__actions {
