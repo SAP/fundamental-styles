@@ -1,16 +1,16 @@
-@mixin light() {
+@mixin transparent() {
   border-color: var(--sapButton_Lite_BorderColor);
   background-color: var(--sapButton_Lite_Background);
 }
 
-@mixin lightPressed() {
+@mixin transparentPressed() {
   @include fd-disabled() {
-    @include lightDisabled();
+    @include transparentDisabled();
   }
 }
 
-@mixin lightDisabled() {
-  @include light();
+@mixin transparentDisabled() {
+  @include transparent();
   @include isDisabled();
 
   box-shadow: none;

@@ -1,0 +1,38 @@
+@mixin attention() {
+  @include applyColors(
+    var(--sapButton_Attention_TextColor),
+    var(--sapButton_Attention_BorderColor),
+    var(--sapButton_Attention_Background)
+  );
+}
+
+@mixin attentionHover() {
+  @include applyColors(
+    var(--sapButton_Attention_Hover_TextColor),
+    var(--sapButton_Attention_Hover_BorderColor),
+    var(--sapButton_Attention_Hover_Background)
+  );
+}
+
+@mixin attentionPressed() {
+  @include applyColors(
+    var(--sapButton_Selected_TextColor),
+    var(--sapButton_Attention_Active_Background),
+    var(--sapButton_Attention_Active_BorderColor)
+  );
+}
+
+@mixin attentionPressedFocus() {
+  outline-color: var(--sapContent_ContrastFocusColor);
+}
+
+@mixin attentionFocus() {
+  @include buttonFocus();
+}
+
+@mixin attentionDisabled {
+  @include isDisabled();
+  @include attention();
+
+  box-shadow: none;
+}

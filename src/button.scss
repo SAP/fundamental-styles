@@ -4,9 +4,11 @@
 @import "./mixins/button/button-helper";
 @import "./mixins/button/standard";
 @import "./mixins/button/negative";
+@import "./mixins/button/attention";
+@import "./mixins/button/ghost";
 @import "./mixins/button/positive";
 @import "./mixins/button/emphasized";
-@import "./mixins/button/light";
+@import "./mixins/button/button-transparent";
 
 $fd-button-border-width: var(--sapButton_BorderWidth);
 $fd-button-font-size: var(--sapFontMediumSize);
@@ -29,8 +31,8 @@ $fd-button-compact-line-height: calc(#{$fd-button-compact-height} - 2 * #{$fd-bu
 
 $fd-menu-button-max-width: 12rem;
 $fd-menu-button-icon-size: 0.75rem;
-$fd-menu-button-icon-position-top: 0.716rem;
-$fd-menu-button-icon-position-top-compact: 0.403rem;
+$fd-menu-button-icon-position-top: 0.6rem;
+$fd-menu-button-icon-position-top-compact: 0.235rem;
 
 // anim
 $fd-button-transition-params: $fd-animation-speed ease-in !default;
@@ -141,8 +143,6 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin menu() {
-  @include fd-icon("navigation-down-arrow", "s", "after");
-
   $fd-button-menu-button-padding: 1.594rem;
   $fd-menu-button-icon-position-horizontal: 0.1875rem;
 
@@ -154,7 +154,10 @@ $block: #{$fd-namespace}-button;
   padding-right: $fd-button-menu-button-padding;
 
   &::after {
+    font-family: "SAP-icons";
+    font-weight: normal;
     font-size: $fd-menu-button-icon-size;
+    content: "\e1ef";
     position: absolute;
     top: $fd-menu-button-icon-position-top;
     right: $fd-menu-button-icon-position-horizontal;
@@ -219,18 +222,12 @@ $block: #{$fd-namespace}-button;
   }
 }
 
-@mixin styleButtonContent() {
-  .#{$block}--content {
-    @content;
-  }
-}
-
 @mixin buttonContainer() {
   @include buttonReset();
   @include standard();
 
-  &.#{$block}--standard {
-    @include standard();
+  &.#{$block}--ghost {
+    @include ghost();
   }
 
   &.#{$block}--positive {
@@ -241,22 +238,26 @@ $block: #{$fd-namespace}-button;
     @include negative();
   }
 
+  &.#{$block}--attention {
+    @include attention();
+  }
+
   &.#{$block}--emphasized {
     font-weight: bold;
 
     @include emphasized();
   }
 
-  &.#{$block}--light {
-    @include light();
+  &.#{$block}--transparent {
+    @include transparent();
   }
 }
 
 @mixin buttonContainerDisabled() {
   @include standardDisabled();
 
-  &.#{$block}--standard {
-    @include standardDisabled();
+  &.#{$block}--ghost {
+    @include ghostDisabled();
   }
 
   &.#{$block}--positive {
@@ -267,12 +268,16 @@ $block: #{$fd-namespace}-button;
     @include negativeDisabled();
   }
 
+  &.#{$block}--attention {
+    @include attentionDisabled();
+  }
+
   &.#{$block}--emphasized {
     @include emphasizedDisabled();
   }
 
-  &.#{$block}--light {
-    @include lightDisabled();
+  &.#{$block}--transparent {
+    @include transparentDisabled();
   }
 }
 
@@ -281,8 +286,8 @@ $block: #{$fd-namespace}-button;
 
   @include standardFocus();
 
-  &.#{$block}--standard {
-    @include standardFocus();
+  &.#{$block}--ghost {
+    @include ghostFocus();
   }
 
   &.#{$block}--positive {
@@ -291,6 +296,10 @@ $block: #{$fd-namespace}-button;
 
   &.#{$block}--negative {
     @include negativeFocus();
+  }
+
+  &.#{$block}--attention {
+    @include attentionFocus();
   }
 
   &.#{$block}--emphasized {
@@ -303,8 +312,8 @@ $block: #{$fd-namespace}-button;
 
   @include standardPressedFocus();
 
-  &.#{$block}--standard {
-    @include standardPressedFocus();
+  &.#{$block}--ghost {
+    @include ghostPressedFocus();
   }
 
   &.#{$block}--positive {
@@ -315,6 +324,10 @@ $block: #{$fd-namespace}-button;
     @include negativePressedFocus();
   }
 
+  &.#{$block}--attention {
+    @include attentionPressedFocus();
+  }
+
   &.#{$block}--emphasized {
     @include emphasizedPressedFocus();
   }
@@ -323,8 +336,8 @@ $block: #{$fd-namespace}-button;
 @mixin buttonContainerPressed() {
   @include standardPressed();
 
-  &.#{$block}--standard {
-    @include standardPressed();
+  &.#{$block}--ghost {
+    @include ghostPressed();
   }
 
   &.#{$block}--positive {
@@ -335,6 +348,10 @@ $block: #{$fd-namespace}-button;
     @include negativePressed();
   }
 
+  &.#{$block}--attention {
+    @include attentionPressed();
+  }
+
   &.#{$block}--emphasized {
     @include emphasizedPressed();
   }
@@ -343,8 +360,8 @@ $block: #{$fd-namespace}-button;
 @mixin buttonContainerHover() {
   @include standardHover();
 
-  &.#{$block}--standard {
-    @include standardHover();
+  &.#{$block}--ghost {
+    @include ghostHover();
   }
 
   &.#{$block}--positive {
@@ -353,6 +370,10 @@ $block: #{$fd-namespace}-button;
 
   &.#{$block}--negative {
     @include negativeHover();
+  }
+
+  &.#{$block}--attention {
+    @include attentionHover();
   }
 
   &.#{$block}--emphasized {

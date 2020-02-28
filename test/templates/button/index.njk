@@ -6,105 +6,87 @@
 {% block content %}
 
 {% set
-    scenarios = [
-        { emphasize : "", type: "", size: "", menu: "" },
-        { emphasize : "light", type: "", size: "", menu: "" },
-        { emphasize : "", type: "standard", size: "", menu: "menu" },
-        { emphasize : "emphasized", type: "", size: "", menu: "" },
-        { emphasize : "", type: "positive", size: "", menu: "" },
-        { emphasize : "", type: "positive", size: "compact", menu: "" },
-        { emphasize : "", type: "positive", size: "compact", menu: "menu" },
-        { emphasize : "", type: "negative", size: "", menu: "menu" }
+    types = [
+        "",
+        "ghost",
+        "emphasized",
+        "transparent",
+        "positive",
+        "negative",
+        "attention"
     ]
 %}
 
-{# {% set emphasis = ["emphasized", "", "light" ] %}
-{% set types = ["", "standard", "positive ", "medium", "negative" ] %}
-{% set sizes = ["", "compact" ] %}
-{% set menus = ["", "menu"] %} #}
-
-{%- macro code_display(e, type, size, menu) -%}
-    {{".fd-button--" + e if e}}{{".fd-button--" + type if type}}{{".fd-button--" + size if size}}{{".fd-button--" + menu if menu}}{{".fd-button" if not type and not size and not e and not menu}}
+{%- macro buttonFactory(label, icon, type, size, menu, aria, state) -%}
+        {{- button(
+        { label: label,
+           icon:icon },
+            modifier={ block: [type,size,menu] },
+            aria=aria,
+            state=state
+        )}}
 {%- endmacro -%}
 
-{% for scenario in scenarios %}
-    
-    {% set e = scenario.emphasize %}
-    {% set type = scenario.type %}
-    {% set size = scenario.size %}
-    {% set menu = scenario.menu %}
+{%- macro anchorFactory(label, icon, type, size, menu, aria, state) -%}
+        {{- anchor_button(
+        { label: label,
+           icon:icon },
+            modifier={ block: [type,size,menu] },
+            aria=aria,
+            state=state
+        )}}
+{%- endmacro -%}
 
-    {% set example %}
-        <h3><code>button: {{code_display(e, type, size, menu)}}</code></h3>
-        {{- button(
-        { label: 'Button' },
-        modifier={ block: [type,size,e,menu] })
-        }}
-        {{- button(
-        { label: 'Add to Cart',
-            icon: 'cart' },
-            modifier={ block: [type,size,e,menu] })
-        }}
-        {{-  button(
-        { icon: 'attachment' },
-            modifier={ block: [type,size,e,menu] },
-            aria={ label: 'Add Attachment' })
-        }}
-        <h3> <code>anchor: {{code_display(e, type, size, menu)}}</code></h3>
-        {{- anchor_button(
-        { label: 'Button' },
-        modifier={ block: [type,size,e,menu] })
-        }}
-        {{- anchor_button(
-        { label: 'Add to Cart',
-            icon: 'cart' },
-            modifier={ block: [type,size,e,menu] })
-        }}
-        {{-  anchor_button(
-        { icon: 'attachment' },
-            modifier={ block: [type,size,e,menu] },
-            aria={ label: 'Add Attachment' })
-        }}
-    {% endset %}
-    {{ format(example) }}
+{%- macro buttonExamples(type) -%}
+        <h3><code>button: {{code_display(type)}}</code></h3>
+        {{buttonFactory('Button','', type, '', '', {},{})}}
+        {{buttonFactory('Button','', type, '', 'menu', {},{})}}
+        {{buttonFactory('Button','', type, 'compact', '', {},{})}}
+        {{buttonFactory('Button','', type, 'compact', 'menu', {},{})}}
+        {{buttonFactory('Add to Cart','cart', type, '', '', {},{})}}
+        {{buttonFactory('Add to Cart','cart', type, '', 'menu', {},{})}}
+        {{buttonFactory('Add to Cart','cart', type, 'compact', '', {},{})}}
+        {{buttonFactory('Add to Cart','cart', type, 'compact', 'menu', {},{})}}
+        {{buttonFactory('','attachment', type, '', '', { label: 'Add Attachment' },{})}}
+        {{buttonFactory('','attachment', type, '', 'menu', { label: 'Add Attachment' },{})}}
+        {{buttonFactory('','attachment', type, 'compact', '', { label: 'Add Attachment' },{})}}
+        {{buttonFactory('','attachment', type, 'compact', 'menu', { label: 'Add Attachment' },{})}}
 
+        <h3><code>button states: {{code_display(type)}}</code></h3>
+        {{buttonFactory('Focused','', type, '', '', {},{ focus: true })}}
+        {{buttonFactory('Selected','', type, '', '', {selected:true},{})}}
+        {{buttonFactory('Disabled','', type, '', '',{}, {disabled:true})}}
+{%- endmacro -%}
+
+{%- macro anchorExamples(type) -%}
+        <h3> <code>anchor: {{code_display(type)}}</code></h3>
+        {{anchorFactory('Button','', type, '', '', {},{})}}
+        {{anchorFactory('Button','', type, '', 'menu', {},{})}}
+        {{anchorFactory('Button','', type, 'compact', '', {},{})}}
+        {{anchorFactory('Button','', type, 'compact', 'menu', {},{})}}
+        {{anchorFactory('Add to Cart','cart', type, '', '', {},{})}}
+        {{anchorFactory('Add to Cart','cart', type, '', 'menu', {},{})}}
+        {{anchorFactory('Add to Cart','cart', type, 'compact', '', {},{})}}
+        {{anchorFactory('Add to Cart','cart', type, 'compact', 'menu', {},{})}}
+        {{anchorFactory('','attachment', type, '', '', { label: 'Add Attachment' },{})}}
+        {{anchorFactory('','attachment', type, '', 'menu', { label: 'Add Attachment' },{})}}
+        {{anchorFactory('','attachment', type, 'compact', '', { label: 'Add Attachment' },{})}}
+        {{anchorFactory('','attachment', type, 'compact', 'menu', { label: 'Add Attachment' },{})}}
+
+        <h3><code>anchor states: {{code_display(type)}}</code></h3>
+        {{anchorFactory('Focused','', type, '', '', {},{ focus: true })}}
+        {{anchorFactory('Selected','', type, '', '', {selected:true},{})}}
+        {{anchorFactory('Disabled','', type, '', '',{}, {disabled:true})}}
+{%- endmacro -%}
+
+{%- macro code_display(type) -%}
+    {{".fd-button--" + type if type}}
+{%- endmacro -%}
+
+{% for type in types %}
     {% set example %}
-        <h3><code>button: {{code_display(e, type, size, menu)}}</code></h3>
-        {{-  button(
-        { label: 'Focused',
-            icon: 'cart' },
-            modifier={ block: [type,size,e,menu] },
-            state={ focus: true })
-        }}
-        {{- button(
-        { label: 'Selected' },
-        modifier={ block: [type,size,e,menu] },
-        aria={ selected: true })
-        }}
-        {{-  button(
-        { label: 'Disabled',
-            icon: 'cart' },
-            modifier={ block: [type,size,e,menu] },
-            state={ disabled: true })
-        }}
-        <h3><code>anchor: {{code_display(e, type, size, menu)}}</code></h3>
-        {{-  anchor_button(
-        { label: 'Focused',
-            icon: 'cart' },
-            modifier={ block: [type,size,e,menu] },
-            state={ focus: true })
-        }}
-        {{- anchor_button(
-        { label: 'Selected' },
-        modifier={ block: [type,size,e,menu] },
-        aria={ selected: true })
-        }}
-        {{-  anchor_button(
-        { label: 'Disabled',
-            icon: 'cart' },
-            modifier={ block: [type,size,e,menu] },
-            state={ disabled: true })
-        }}
+        {{buttonExamples(type)}}
+        {{anchorExamples(type)}}
     {% endset %}
     {{ format(example) }}
 {% endfor %}
