@@ -33,7 +33,7 @@ The Bar has 2 modes - `Desktop` (default) and `Tablet/Mobile` (cosy).
     </div>
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
-            <div class="fd-button-group" role="group" aria-label="Group label">
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
                 <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
                 <button class="fd-button fd-button--compact sap-icon--iphone"></button>
                 <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
@@ -68,7 +68,7 @@ The Bar has 2 modes - `Desktop` (default) and `Tablet/Mobile` (cosy).
     </div>
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
-            <div class="fd-button-group" role="group" aria-label="Group label">
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
                 <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
                 <button class="fd-button fd-button--compact sap-icon--iphone"></button>
                 <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
@@ -111,7 +111,7 @@ For Tablet and Mobile (Cosy mode) apply the `fd-bar--cosy` class to the containe
     </div>
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
-            <div class="fd-button-group" role="group" aria-label="Group label">
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
                 <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
                 <button class="fd-button fd-button--compact sap-icon--iphone"></button>
                 <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
@@ -156,7 +156,7 @@ For Header in Bar Design apply the `fd-bar--header` class to the container eleme
     </div>
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
-            <div class="fd-button-group" role="group" aria-label="Group label">
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
                 <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
                 <button class="fd-button fd-button--compact sap-icon--iphone"></button>
                 <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
@@ -191,7 +191,7 @@ For Header in Bar Design apply the `fd-bar--header` class to the container eleme
     </div>
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
-            <div class="fd-button-group" role="group" aria-label="Group label">
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
                 <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
                 <button class="fd-button fd-button--compact sap-icon--iphone"></button>
                 <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
@@ -226,7 +226,7 @@ For Header in Bar Design apply the `fd-bar--header` class to the container eleme
     </div>
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
-            <div class="fd-button-group" role="group" aria-label="Group label">
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
                 <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
                 <button class="fd-button fd-button--compact sap-icon--iphone"></button>
                 <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
@@ -283,7 +283,7 @@ SubHeader in Bar Design is achieved by adding the `fd-bar--subheader` class to t
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
             <div class="fd-form-item">
-                <div class="fd-button-group" role="group" aria-label="Group label">
+                <div class="fd-segmented-button" role="group" aria-label="Group label">
                     <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
                     <button class="fd-button fd-button--compact sap-icon--iphone"></button>
                     <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
@@ -351,7 +351,7 @@ If a Header is followed by a SubHeader, the Header container should have the  `f
     </div>
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
-            <div class="fd-button-group" role="group" aria-label="Group label">
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
                 <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
                 <button class="fd-button fd-button--compact sap-icon--iphone"></button>
                 <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
