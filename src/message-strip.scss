@@ -78,10 +78,8 @@ $block: #{$fd-namespace}-message-strip;
 
   // Elements
   &__close {
-    @include fd-button-reset();
     @include fd-message-strip-close-btn-container();
     @include fd-icon("decline", "m");
-    @include fd-focus();
 
     @include fd-rtl() {
       left: 0.125rem;
