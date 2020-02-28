@@ -5,6 +5,7 @@
 @import "./mixins/button/standard";
 @import "./mixins/button/negative";
 @import "./mixins/button/attention";
+@import "./mixins/button/ghost";
 @import "./mixins/button/positive";
 @import "./mixins/button/emphasized";
 @import "./mixins/button/button-transparent";
@@ -30,8 +31,8 @@ $fd-button-compact-line-height: calc(#{$fd-button-compact-height} - 2 * #{$fd-bu
 
 $fd-menu-button-max-width: 12rem;
 $fd-menu-button-icon-size: 0.75rem;
-$fd-menu-button-icon-position-top: 0.716rem;
-$fd-menu-button-icon-position-top-compact: 0.403rem;
+$fd-menu-button-icon-position-top: 0.6rem;
+$fd-menu-button-icon-position-top-compact: 0.235rem;
 
 // anim
 $fd-button-transition-params: $fd-animation-speed ease-in !default;
@@ -142,8 +143,6 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin menu() {
-  @include fd-icon("navigation-down-arrow", "s", "after");
-
   $fd-button-menu-button-padding: 1.594rem;
   $fd-menu-button-icon-position-horizontal: 0.1875rem;
 
@@ -155,7 +154,10 @@ $block: #{$fd-namespace}-button;
   padding-right: $fd-button-menu-button-padding;
 
   &::after {
+    font-family: "SAP-icons";
+    font-weight: normal;
     font-size: $fd-menu-button-icon-size;
+    content: "\e1ef";
     position: absolute;
     top: $fd-menu-button-icon-position-top;
     right: $fd-menu-button-icon-position-horizontal;
@@ -220,18 +222,16 @@ $block: #{$fd-namespace}-button;
   }
 }
 
-@mixin styleButtonContent() {
-  .#{$block}--content {
-    @content;
-  }
-}
-
 @mixin buttonContainer() {
   @include buttonReset();
   @include standard();
 
   &.#{$block}--standard {
     @include standard();
+  }
+
+  &.#{$block}--ghost {
+    @include ghost();
   }
 
   &.#{$block}--positive {
@@ -264,6 +264,10 @@ $block: #{$fd-namespace}-button;
     @include standardDisabled();
   }
 
+  &.#{$block}--ghost {
+    @include ghostDisabled();
+  }
+
   &.#{$block}--positive {
     @include positiveDisabled();
   }
@@ -294,6 +298,10 @@ $block: #{$fd-namespace}-button;
     @include standardFocus();
   }
 
+  &.#{$block}--ghost {
+    @include ghostFocus();
+  }
+
   &.#{$block}--positive {
     @include positiveFocus();
   }
@@ -320,6 +328,10 @@ $block: #{$fd-namespace}-button;
     @include standardPressedFocus();
   }
 
+  &.#{$block}--ghost {
+    @include ghostPressedFocus();
+  }
+
   &.#{$block}--positive {
     @include positivePressedFocus();
   }
@@ -344,6 +356,10 @@ $block: #{$fd-namespace}-button;
     @include standardPressed();
   }
 
+  &.#{$block}--ghost {
+    @include ghostPressed();
+  }
+
   &.#{$block}--positive {
     @include positivePressed();
   }
@@ -366,6 +382,10 @@ $block: #{$fd-namespace}-button;
 
   &.#{$block}--standard {
     @include standardHover();
+  }
+
+  &.#{$block}--ghost {
+    @include ghostHover();
   }
 
   &.#{$block}--positive {
