@@ -226,10 +226,6 @@ $block: #{$fd-namespace}-button;
   @include buttonReset();
   @include standard();
 
-  &.#{$block}--standard {
-    @include standard();
-  }
-
   &.#{$block}--ghost {
     @include ghost();
   }
@@ -259,10 +255,6 @@ $block: #{$fd-namespace}-button;
 
 @mixin buttonContainerDisabled() {
   @include standardDisabled();
-
-  &.#{$block}--standard {
-    @include standardDisabled();
-  }
 
   &.#{$block}--ghost {
     @include ghostDisabled();
@@ -294,10 +286,6 @@ $block: #{$fd-namespace}-button;
 
   @include standardFocus();
 
-  &.#{$block}--standard {
-    @include standardFocus();
-  }
-
   &.#{$block}--ghost {
     @include ghostFocus();
   }
@@ -324,10 +312,6 @@ $block: #{$fd-namespace}-button;
 
   @include standardPressedFocus();
 
-  &.#{$block}--standard {
-    @include standardPressedFocus();
-  }
-
   &.#{$block}--ghost {
     @include ghostPressedFocus();
   }
@@ -352,10 +336,6 @@ $block: #{$fd-namespace}-button;
 @mixin buttonContainerPressed() {
   @include standardPressed();
 
-  &.#{$block}--standard {
-    @include standardPressed();
-  }
-
   &.#{$block}--ghost {
     @include ghostPressed();
   }
@@ -379,10 +359,6 @@ $block: #{$fd-namespace}-button;
 
 @mixin buttonContainerHover() {
   @include standardHover();
-
-  &.#{$block}--standard {
-    @include standardHover();
-  }
 
   &.#{$block}--ghost {
     @include ghostHover();
