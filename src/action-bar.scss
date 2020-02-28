@@ -25,23 +25,8 @@ $block: #{$fd-namespace}-action-bar;
     @include fd-hide-on-mobile();
     @include fd-truncate-text();
 
-    margin-top: 0.25rem;
-    height: 1.25rem;
     width: 100%;
-    vertical-align: middle;
-  }
-
-  @mixin fd-action-bar-description {
-    @include fd-reset();
-
-    color: var(--sapContent_LabelColor);
-
-    @include fd-hide-on-mobile();
-    @include fd-truncate-text();
-
-    margin-top: 0.25rem;
     height: 1.25rem;
-    width: 100%;
     vertical-align: middle;
   }
 
@@ -60,7 +45,6 @@ $block: #{$fd-namespace}-action-bar;
     padding: 0.5rem $padding-x;
   }
 
-  // BLOCK BASE *******************************************
   @include fd-reset();
 
   background-color: $fd-action-bar-background-color;
@@ -106,6 +90,7 @@ $block: #{$fd-namespace}-action-bar;
     font-family: var(--sapFontHeaderFamily);
     color: $fd-action-bar-title-color;
     flex-grow: 1;
+    line-height: 1.375rem;
     padding-right: 0.5rem;
     vertical-align: middle;
     margin: 0;
