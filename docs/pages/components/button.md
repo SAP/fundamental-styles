@@ -95,12 +95,14 @@ When the user activates the button, the menu opens. This is the default type.
 {% capture button-menu %}
 <button class="fd-button fd-button--menu">Action Button</button>
 <button class="fd-button fd-button--standard fd-button--menu">Standard Button</button>
+<button class="fd-button fd-button--ghost fd-button--menu">Ghost Button</button>
 <button class="fd-button fd-button--positive fd-button--menu">Positive Button</button>
 <button class="fd-button fd-button--negative fd-button--menu">Negative Button</button>
 <button class="fd-button fd-button--attention fd-button--menu">Attention Button</button>
 <br><br>
 <button class="fd-button fd-button--menu" aria-disabled="true" disabled>Action Button</button>
 <button class="fd-button fd-button--standard fd-button--menu" aria-disabled="true" disabled>Standard Button</button>
+<button class="fd-button fd-button--ghost fd-button--menu" aria-disabled="true" disabled>Ghost Button</button>
 <button class="fd-button fd-button--positive fd-button--menu" aria-disabled="true" disabled>Positive Button</button>
 <button class="fd-button fd-button--negative fd-button--menu" aria-disabled="true" disabled>Negative Button</button>
 <button class="fd-button fd-button--attention fd-button--menu" aria-disabled="true" disabled>Attention Button</button>

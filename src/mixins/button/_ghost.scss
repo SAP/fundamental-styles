@@ -1,5 +1,5 @@
 @mixin ghost() {
-  @include applyColors(var(--sapButton_TextColor), var(--sapButton_BorderColor), var(--sapButton_Background));
+  @include applyColors(var(--sapButton_TextColor), var(--sapButton_BorderColor), var(--sapButton_Lite_Background));
 }
 
 @mixin ghostHover {
