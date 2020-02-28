@@ -46,7 +46,7 @@ The left and right spacings of the Bar and the Content could be adjusted accordi
         <div class="fd-bar fd-bar--page fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+                    <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
                 </div>
                 <div class="fd-bar__element">
                      Header Title
@@ -59,7 +59,7 @@ The left and right spacings of the Bar and the Content could be adjusted accordi
                     </span>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--light sap-icon--grid"></button>
+                    <button class="fd-button fd-button--transparent sap-icon--grid"></button>
                 </div>
             </div>
         </div>
@@ -74,7 +74,7 @@ The left and right spacings of the Bar and the Content could be adjusted accordi
                     <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+                    <button class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
                 </div>
             </div>
         </div>
@@ -93,7 +93,7 @@ The left and right spacings of the Bar and the Content could be adjusted accordi
         <div class="fd-bar fd-bar--page-m_l fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+                    <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
                 </div>
                 <div class="fd-bar__element">
                      Header Title
@@ -101,7 +101,7 @@ The left and right spacings of the Bar and the Content could be adjusted accordi
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--light sap-icon--overflow"></button>
+                    <button class="fd-button fd-button--transparent sap-icon--overflow"></button>
                 </div>
             </div>
         </div>
@@ -123,7 +123,7 @@ The left and right spacings of the Bar and the Content could be adjusted accordi
                     <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+                    <button class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
                 </div>
             </div>
         </div>
@@ -143,7 +143,7 @@ The left and right spacings of the Bar and the Content could be adjusted accordi
         <div class="fd-bar fd-bar--home-page-xl fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+                    <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
                 </div>
                 <div class="fd-bar__element">
                      Header Title
@@ -151,7 +151,7 @@ The left and right spacings of the Bar and the Content could be adjusted accordi
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--light sap-icon--overflow"></button>
+                    <button class="fd-button fd-button--transparent sap-icon--overflow"></button>
                 </div>
             </div>
         </div>
@@ -166,7 +166,7 @@ The left and right spacings of the Bar and the Content could be adjusted accordi
                     <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+                    <button class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
                 </div>
             </div>
         </div>

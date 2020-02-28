@@ -39,7 +39,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
             </span>
         </a>
     </li>
-    <button class="fd-button fd-button--light fd-tabs__overflow"></button>
+    <button class="fd-button fd-button--transparent fd-tabs__overflow"></button>
 </ul>
 <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV550" role="tabpanel">
     Lorem ipsum
@@ -83,7 +83,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
             </span>
         </a>
     </li>
-    <button class="fd-button fd-button--light fd-button--compact fd-tabs__overflow"></button>
+    <button class="fd-button fd-button--transparent fd-button--compact fd-tabs__overflow"></button>
 </ul>
 <div class="fd-tabs__panel" aria-expanded="false" id="d9vOir" role="tabpanel">
     Lorem ipsum
@@ -123,7 +123,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
             </span>
         </a>
     </span>
-    <button class="fd-button fd-button--light fd-tabs__overflow"></button>
+    <button class="fd-button fd-button--transparent fd-tabs__overflow"></button>
 </nav>
 <div class="fd-tabs__panel" aria-expanded="false" id="kf8369" role="tabpanel">
     Lorem ipsum
@@ -163,7 +163,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
             </span>
         </a>
     </li>
-    <button class="fd-button fd-button--light fd-tabs__overflow"></button>
+    <button class="fd-button fd-button--transparent fd-tabs__overflow"></button>
 </ul>
 <div class="fd-tabs__panel" aria-expanded="false" id="pliA92" role="tabpanel">
     Lorem ipsum
@@ -201,7 +201,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
             </span>
         </a>
     </li>
-    <button class="fd-button fd-button--light fd-button--compact fd-tabs__overflow"></button>
+    <button class="fd-button fd-button--transparent fd-button--compact fd-tabs__overflow"></button>
 </ul>
 <div class="fd-tabs__panel" aria-expanded="false" id="0bT4aB" role="tabpanel">
     Lorem ipsum
@@ -249,7 +249,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
             </div>
         </a>
     </li>
-    <button class="fd-button fd-button--light fd-tabs__overflow"></button>
+    <button class="fd-button fd-button--transparent fd-tabs__overflow"></button>
 </ul>
 <div class="fd-tabs__panel" aria-expanded="false" id="NoQLy6" role="tabpanel">
     Lorem ipsum
@@ -297,7 +297,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
             </div>
         </a>
     </li>
-    <button class="fd-button fd-button--light fd-button--compact fd-tabs__overflow"></button>
+    <button class="fd-button fd-button--transparent fd-button--compact fd-tabs__overflow"></button>
 </ul>
 <div class="fd-tabs__panel" aria-expanded="false" id="LHsxsZ" role="tabpanel">
     Lorem ipsum
@@ -349,7 +349,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
             <span class="fd-tabs__label">Description</span>
         </a>
     </li>
-    <button class="fd-button fd-button--light fd-tabs__overflow"></button>
+    <button class="fd-button fd-button--transparent fd-tabs__overflow"></button>
 </ul>
 <div class="fd-tabs__panel" aria-expanded="false" id="5ZkDVE" role="tabpanel">
     Lorem ipsum
@@ -404,7 +404,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
             <span class="fd-tabs__label">Description</span>
         </a>
     </li>
-    <button class="fd-button fd-button--light fd-button--compact fd-tabs__overflow"></button>
+    <button class="fd-button fd-button--transparent fd-button--compact fd-tabs__overflow"></button>
 </ul>
 <div class="fd-tabs__panel" aria-expanded="false" id="YETAv8" role="tabpanel">
     Lorem ipsum
@@ -461,7 +461,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
             </span>
         </a>
     </li>
-    <button class="fd-button fd-button--light fd-tabs__overflow"></button>
+    <button class="fd-button fd-button--transparent fd-tabs__overflow"></button>
 </ul>
 <div class="fd-tabs__panel" aria-expanded="false" id="XTsSDD" role="tabpanel">
     Lorem ipsum
@@ -527,7 +527,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
             <span class="fd-tabs__label">Error</span>
         </a>
     </li>
-    <button class="fd-button fd-button--light fd-tabs__overflow"></button>
+    <button class="fd-button fd-button--transparent fd-tabs__overflow"></button>
 </ul>
 <div class="fd-tabs__panel" aria-expanded="false" id="5ZkDVE" role="tabpanel">
     Lorem ipsum
@@ -592,7 +592,7 @@ Tabs are based on a folder metaphor and used to separate content into different 
             </span>
         </a>
     </li>
-    <button class="fd-button fd-button--light fd-tabs__overflow"></button>
+    <button class="fd-button fd-button--transparent fd-tabs__overflow"></button>
 </ul>
 <div class="fd-tabs__panel" aria-expanded="false" id="5abyKZ" role="tabpanel">
     Lorem ipsum

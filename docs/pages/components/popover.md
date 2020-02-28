@@ -125,7 +125,7 @@ There are four placement options:
             <div class="fd-bar fd-bar--header">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
-                        <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+                        <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
                     </div>
                     <div class="fd-bar__element">
                         Header
@@ -159,7 +159,7 @@ There are four placement options:
                         <button class="fd-button fd-button--compact fd-button--emphasized">Save</button>
                     </div>
                     <div class="fd-bar__element">
-                        <button class="fd-button fd-button--compact fd-button--light">Cancel</button>
+                        <button class="fd-button fd-button--compact fd-button--transparent">Cancel</button>
                     </div>
                 </div>
             </div>
@@ -176,7 +176,7 @@ There are four placement options:
             <div class="fd-bar fd-bar--header-with-subheader">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
-                        <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+                        <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
                     </div>
                     <div class="fd-bar__element">
                         Header
@@ -207,7 +207,7 @@ There are four placement options:
                         <button class="fd-button fd-button--compact fd-button--emphasized">Save</button>
                     </div>
                     <div class="fd-bar__element">
-                        <button class="fd-button fd-button--compact fd-button--light">Cancel</button>
+                        <button class="fd-button fd-button--compact fd-button--transparent">Cancel</button>
                     </div>
                 </div>
             </div>
@@ -224,7 +224,7 @@ There are four placement options:
             <div class="fd-bar fd-bar--cosy fd-bar--header-with-subheader">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
-                        <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+                        <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
                     </div>
                     <div class="fd-bar__element">
                         Header
@@ -255,7 +255,7 @@ There are four placement options:
                         <button class="fd-button fd-button--compact fd-button--emphasized">Save</button>
                     </div>
                     <div class="fd-bar__element">
-                        <button class="fd-button fd-button--compact fd-button--light">Cancel</button>
+                        <button class="fd-button fd-button--compact fd-button--transparent">Cancel</button>
                     </div>
                 </div>
             </div>

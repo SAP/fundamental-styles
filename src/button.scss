@@ -7,7 +7,7 @@
 @import "./mixins/button/attention";
 @import "./mixins/button/positive";
 @import "./mixins/button/emphasized";
-@import "./mixins/button/light";
+@import "./mixins/button/button-transparent";
 
 $fd-button-border-width: var(--sapButton_BorderWidth);
 $fd-button-font-size: var(--sapFontMediumSize);
@@ -252,8 +252,8 @@ $block: #{$fd-namespace}-button;
     @include emphasized();
   }
 
-  &.#{$block}--light {
-    @include light();
+  &.#{$block}--transparent  {
+    @include transparent();
   }
 }
 
@@ -280,8 +280,8 @@ $block: #{$fd-namespace}-button;
     @include emphasizedDisabled();
   }
 
-  &.#{$block}--light {
-    @include lightDisabled();
+  &.#{$block}--transparent  {
+    @include transparentDisabled();
   }
 }
 

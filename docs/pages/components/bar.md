@@ -22,13 +22,13 @@ The Bar has 2 modes - `Desktop` (default) and `Tablet/Mobile` (cosy).
 <div class="fd-bar">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--home"></button>
+            <button class="fd-button fd-button--transparent sap-icon--home"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--account"></button>
+            <button class="fd-button fd-button--transparent sap-icon--account"></button>
         </div>
     </div>
     <div class="fd-bar__middle">
@@ -47,7 +47,7 @@ The Bar has 2 modes - `Desktop` (default) and `Tablet/Mobile` (cosy).
             </span>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--grid"></button>
+            <button class="fd-button fd-button--transparent sap-icon--grid"></button>
         </div>
     </div>
 </div>
@@ -57,13 +57,13 @@ The Bar has 2 modes - `Desktop` (default) and `Tablet/Mobile` (cosy).
 <div class="fd-bar" dir="rtl">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--navigation-right-arrow"></button>
+            <button class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--home"></button>
+            <button class="fd-button fd-button--transparent sap-icon--home"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--account"></button>
+            <button class="fd-button fd-button--transparent sap-icon--account"></button>
         </div>
     </div>
     <div class="fd-bar__middle">
@@ -82,7 +82,7 @@ The Bar has 2 modes - `Desktop` (default) and `Tablet/Mobile` (cosy).
             </span>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--grid"></button>
+            <button class="fd-button fd-button--transparent sap-icon--grid"></button>
         </div>
     </div>
 </div>
@@ -100,13 +100,13 @@ For Tablet and Mobile (Cosy mode) apply the `fd-bar--cosy` class to the containe
 <div class="fd-bar fd-bar--cosy">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--home"></button>
+            <button class="fd-button fd-button--transparent sap-icon--home"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--account"></button>
+            <button class="fd-button fd-button--transparent sap-icon--account"></button>
         </div>
     </div>
     <div class="fd-bar__middle">
@@ -125,7 +125,7 @@ For Tablet and Mobile (Cosy mode) apply the `fd-bar--cosy` class to the containe
             </span>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--grid"></button>
+            <button class="fd-button fd-button--transparent sap-icon--grid"></button>
         </div>
     </div>
 </div>
@@ -145,13 +145,13 @@ For Header in Bar Design apply the `fd-bar--header` class to the container eleme
 <div class="fd-bar fd-bar--header">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--home"></button>
+            <button class="fd-button fd-button--transparent sap-icon--home"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--account"></button>
+            <button class="fd-button fd-button--transparent sap-icon--account"></button>
         </div>
     </div>
     <div class="fd-bar__middle">
@@ -170,7 +170,7 @@ For Header in Bar Design apply the `fd-bar--header` class to the container eleme
             </span>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--grid"></button>
+            <button class="fd-button fd-button--transparent sap-icon--grid"></button>
         </div>
     </div>
 </div>
@@ -180,13 +180,13 @@ For Header in Bar Design apply the `fd-bar--header` class to the container eleme
 <div class="fd-bar fd-bar--header fd-bar--cosy">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--home"></button>
+            <button class="fd-button fd-button--transparent sap-icon--home"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--account"></button>
+            <button class="fd-button fd-button--transparent sap-icon--account"></button>
         </div>
     </div>
     <div class="fd-bar__middle">
@@ -205,7 +205,7 @@ For Header in Bar Design apply the `fd-bar--header` class to the container eleme
             </span>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--grid"></button>
+            <button class="fd-button fd-button--transparent sap-icon--grid"></button>
         </div>
     </div>
 </div>
@@ -215,13 +215,13 @@ For Header in Bar Design apply the `fd-bar--header` class to the container eleme
 <div class="fd-bar fd-bar--header" dir="rtl">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--navigation-right-arrow"></button>
+            <button class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--home"></button>
+            <button class="fd-button fd-button--transparent sap-icon--home"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--account"></button>
+            <button class="fd-button fd-button--transparent sap-icon--account"></button>
         </div>
     </div>
     <div class="fd-bar__middle">
@@ -240,7 +240,7 @@ For Header in Bar Design apply the `fd-bar--header` class to the container eleme
             </span>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--grid"></button>
+            <button class="fd-button fd-button--transparent sap-icon--grid"></button>
         </div>
     </div>
 </div>
@@ -259,10 +259,10 @@ SubHeader in Bar Design is achieved by adding the `fd-bar--subheader` class to t
 <div class="fd-bar fd-bar--subheader">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light fd-button--compact sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light fd-button--compact sap-icon--home"></button>
+            <button class="fd-button fd-button--transparent fd-button--compact sap-icon--home"></button>
         </div>
     </div>
     <div class="fd-bar__right">
@@ -272,7 +272,7 @@ SubHeader in Bar Design is achieved by adding the `fd-bar--subheader` class to t
             </span>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light fd-button--compact sap-icon--grid"></button>
+            <button class="fd-button fd-button--transparent fd-button--compact sap-icon--grid"></button>
         </div>
     </div>
 </div>
@@ -308,10 +308,10 @@ SubHeader in Bar Design is achieved by adding the `fd-bar--subheader` class to t
 <div class="fd-bar fd-bar--subheader" dir="rtl">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--compact fd-button--light sap-icon--navigation-right-arrow"></button>
+            <button class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-right-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--compact fd-button--light sap-icon--home"></button>
+            <button class="fd-button fd-button--compact fd-button--transparent sap-icon--home"></button>
         </div>
     </div>
     <div class="fd-bar__right">
@@ -321,7 +321,7 @@ SubHeader in Bar Design is achieved by adding the `fd-bar--subheader` class to t
             </span>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--compact fd-button--light sap-icon--grid"></button>
+            <button class="fd-button fd-button--compact fd-button--transparent sap-icon--grid"></button>
         </div>
     </div>
 </div>
@@ -340,13 +340,13 @@ If a Header is followed by a SubHeader, the Header container should have the  `f
 <div class="fd-bar fd-bar--header-with-subheader">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--home"></button>
+            <button class="fd-button fd-button--transparent sap-icon--home"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--account"></button>
+            <button class="fd-button fd-button--transparent sap-icon--account"></button>
         </div>
     </div>
     <div class="fd-bar__middle">
@@ -365,7 +365,7 @@ If a Header is followed by a SubHeader, the Header container should have the  `f
             </span>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--grid"></button>
+            <button class="fd-button fd-button--transparent sap-icon--grid"></button>
         </div>
     </div>
 </div>
@@ -394,7 +394,7 @@ If a Header is followed by a SubHeader, the Header container should have the  `f
             <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+            <button class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
         </div>
     </div>
 </div>
@@ -407,7 +407,7 @@ If a Header is followed by a SubHeader, the Header container should have the  `f
             <button class="fd-button fd-button--emphasized">Save</button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light">Cancel</button>
+            <button class="fd-button fd-button--transparent">Cancel</button>
         </div>
     </div>
 </div>
@@ -420,7 +420,7 @@ If a Header is followed by a SubHeader, the Header container should have the  `f
             <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+            <button class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
         </div>
     </div>
 </div>
@@ -441,7 +441,7 @@ If a Header is followed by a SubHeader, the Header container should have the  `f
             <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+            <button class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
         </div>
     </div>
 </div>
@@ -454,7 +454,7 @@ If a Header is followed by a SubHeader, the Header container should have the  `f
             <button class="fd-button fd-button--emphasized">Save</button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light">Cancel</button>
+            <button class="fd-button fd-button--transparent">Cancel</button>
         </div>
     </div>
 </div>
@@ -467,7 +467,7 @@ If a Header is followed by a SubHeader, the Header container should have the  `f
             <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+            <button class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
         </div>
     </div>
 </div>

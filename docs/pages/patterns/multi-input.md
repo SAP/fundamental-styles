@@ -58,7 +58,7 @@ If the entries are not validated by the application, users can also enter custom
                 </div>
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button class="fd-input-group__button fd-button--light sap-icon--value-help" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true"></button>
+                <button class="fd-input-group__button fd-button--transparent sap-icon--value-help" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true"></button>
             </span>
         </div>
     </div>
@@ -144,7 +144,7 @@ If the entries are not validated by the application, users can also enter custom
                 </div>
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                <button class="fd-input-group__button fd-button--light fd-button--compact sap-icon--value-help" aria-controls="F4GcX34a" aria-expanded="false" aria-haspopup="true"></button>
+                <button class="fd-input-group__button fd-button--transparent fd-button--compact sap-icon--value-help" aria-controls="F4GcX34a" aria-expanded="false" aria-haspopup="true"></button>
             </span>
         </div>
     </div>
@@ -231,7 +231,7 @@ In cases where the list items need to be categorized into groups, it is possible
                 </div>
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button class="fd-input-group__button fd-button--light sap-icon--value-help" aria-controls="F4H8X34a" aria-expanded="false" aria-haspopup="true"></button>
+                <button class="fd-input-group__button fd-button--transparent sap-icon--value-help" aria-controls="F4H8X34a" aria-expanded="false" aria-haspopup="true"></button>
             </span>
         </div>
     </div>
@@ -345,7 +345,7 @@ In the example you can see how the `Multi Input` component looks without the `fd
                 </div>
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button class="fd-input-group__button fd-button--light sap-icon--value-help" aria-controls="F4HGFHX34a" aria-expanded="false" aria-haspopup="true"></button>
+                <button class="fd-input-group__button fd-button--transparent sap-icon--value-help" aria-controls="F4HGFHX34a" aria-expanded="false" aria-haspopup="true"></button>
             </span>
         </div>
     </div>
@@ -520,7 +520,7 @@ The disabled state can also be achieved by adding the `.is-disabled` class or th
                 </div>
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button tabindex="-1" class="fd-input-group__button fd-button--light sap-icon--value-help"></button>
+                <button tabindex="-1" class="fd-input-group__button fd-button--transparent sap-icon--value-help"></button>
             </span>
         </div>
     </div>
@@ -565,7 +565,7 @@ To add text in the `body` of the component, simply include your text in the `fd-
                  </div>
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button class="fd-input-group__button fd-button--light sap-icon--value-help" aria-controls="F4GcKJH8a" aria-expanded="false" aria-haspopup="true"></button>
+                <button class="fd-input-group__button fd-button--transparent sap-icon--value-help" aria-controls="F4GcKJH8a" aria-expanded="false" aria-haspopup="true"></button>
             </span>
         </div>
     </div>
@@ -632,7 +632,7 @@ So instead of using popover and dropdown, it should be wrapped in `dialog` and `
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class=" fd-button--light sap-icon--decline" aria-label="close"></button>
+                    <button class=" fd-button--transparent sap-icon--decline" aria-label="close"></button>
                 </div>
             </div>
         </header>
@@ -665,12 +665,12 @@ So instead of using popover and dropdown, it should be wrapped in `dialog` and `
                              </div>
                          </div>
                         <span class="fd-input-group__addon fd-input-group__addon--button">
-                            <button class="fd-input-group__button fd-button--light sap-icon--value-help"></button>
+                            <button class="fd-input-group__button fd-button--transparent sap-icon--value-help"></button>
                         </span>
                     </div>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--light sap-icon--multiselect-all"></button>
+                    <button class="fd-button fd-button--transparent sap-icon--multiselect-all"></button>
                 </div>
             </div>
         </div>

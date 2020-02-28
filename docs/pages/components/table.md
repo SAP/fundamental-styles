@@ -355,7 +355,7 @@ a contextual menu can be substituted in order to display all actions in one menu
             <td class="fd-table__cell">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button class="fd-button fd-button--light sap-icon--overflow" aria-controls="pQqQR213a" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                        <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="pQqQR213a" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
                     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="pQqQR213a">
                         <nav class="fd-menu">
@@ -377,7 +377,7 @@ a contextual menu can be substituted in order to display all actions in one menu
             <td class="fd-table__cell">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button class="fd-button fd-button--light sap-icon--overflow" aria-controls="lkjlkj23" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                        <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="lkjlkj23" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
                     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="lkjlkj23">
                         <nav class="fd-menu">
@@ -399,7 +399,7 @@ a contextual menu can be substituted in order to display all actions in one menu
             <td class="fd-table__cell">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button class="fd-button fd-button--light sap-icon--overflow" aria-controls="uu4324" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                        <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="uu4324" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
                     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="uu4324">
                         <nav class="fd-menu">
