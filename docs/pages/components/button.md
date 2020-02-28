@@ -183,21 +183,21 @@ All the buttons support the cozy and compact form factors.
 
 {% capture button %}
 <button class="fd-button">Save</button>
-<button class="fd-button fd-button--compact">Edit</button>
-
+<button class="fd-button fd-button--standard sap-icon--cart">Add to Cart</button>
+<button class="fd-button fd-button--ghost sap-icon--cart">Add to Cart</button>
 <button class="fd-button fd-button--emphasized sap-icon--cart">Add to Cart</button>
-<button class="fd-button fd-button--emphasized fd-button--compact sap-icon--cart">Add to Cart</button>
-
 <button class="fd-button fd-button--transparent sap-icon--cart">Add to Cart</button>
-<button class="fd-button fd-button--transparent fd-button--compact sap-icon--cart">Add to Cart</button>
-
 <button class="fd-button fd-button--positive sap-icon--accept">Approve</button>
-<button class="fd-button fd-button--positive fd-button--compact sap-icon--accept">Approve</button>
-
 <button class="fd-button fd-button--negative sap-icon--decline">Reject</button>
-<button class="fd-button fd-button--negative fd-button--compact sap-icon--decline">Reject</button>
-
 <button class="fd-button fd-button--attention sap-icon--warning">Attention</button>
+<br><br>
+<button class="fd-button fd-button--compact">Edit</button>
+<button class="fd-button fd-button--standard fd-button--compact">Edit</button>
+<button class="fd-button fd-button--ghost fd-button--compact">Edit</button>
+<button class="fd-button fd-button--emphasized fd-button--compact sap-icon--cart">Add to Cart</button>
+<button class="fd-button fd-button--transparent fd-button--compact sap-icon--cart">Add to Cart</button>
+<button class="fd-button fd-button--positive fd-button--compact sap-icon--accept">Approve</button>
+<button class="fd-button fd-button--negative fd-button--compact sap-icon--decline">Reject</button>
 <button class="fd-button fd-button--attention fd-button--compact sap-icon--warning">Attention</button>
 {% endcapture %}
 {% include display-component.html component=button %}
@@ -214,6 +214,8 @@ Full list of all the available icons can be found on the <a href="icon.html">ico
 <button class="fd-button fd-button--emphasized sap-icon--cart">Add to Cart</button>
 <button class="fd-button sap-icon--cart">Add to Cart</button>
 <button class="fd-button fd-button--transparent sap-icon--cart">Add to Cart</button>
+<button class="fd-button fd-button--standard sap-icon--cart">Add to Cart</button>
+<button class="fd-button fd-button--ghost sap-icon--cart">Add to Cart</button>
 <button class="fd-button fd-button--positive sap-icon--accept">Approve</button>
 <button class="fd-button fd-button--negative sap-icon--decline">Reject</button>
 <button class="fd-button fd-button--attention sap-icon--warning">Attention</button>
@@ -221,6 +223,7 @@ Full list of all the available icons can be found on the <a href="icon.html">ico
 <button class="fd-button sap-icon--cart"></button>
 <button class="fd-button fd-button--transparent sap-icon--cart"></button>
 <button class="fd-button fd-button--standard sap-icon--filter"></button>
+<button class="fd-button fd-button--ghost sap-icon--filter"></button>
 <button class="fd-button fd-button--positive sap-icon--accept"></button>
 <button class="fd-button fd-button--negative sap-icon--decline"></button>
 <button class="fd-button fd-button--attention sap-icon--decline"></button>
@@ -252,6 +255,10 @@ The buttons can also be set to a state:
 <button class="fd-button fd-button--standard" aria-selected="true">Selected State</button>
 <button class="fd-button fd-button--standard" aria-disabled="true" disabled>Disabled State</button>
 <br><br>
+<button class="fd-button fd-button--ghost">Normal State</button>
+<button class="fd-button fd-button--ghost" aria-selected="true">Selected State</button>
+<button class="fd-button fd-button--ghost" aria-disabled="true" disabled>Disabled State</button>
+<br><br>
 <button class="fd-button fd-button--positive">Normal State</button>
 <button class="fd-button fd-button--positive" aria-selected="true">Selected State</button>
 <button class="fd-button fd-button--positive" aria-disabled="true" disabled>Disabled State</button>
@@ -280,6 +287,8 @@ Color is also important. For instance, the most important button has a blue back
   <button class="fd-button fd-button--emphasized sap-icon--cart">Add to Cart</button>
   <button class="fd-button sap-icon--cart">Add to Cart</button>
   <button class="fd-button fd-button--transparent sap-icon--cart">Add to Cart</button>
+  <button class="fd-button fd-button--standard sap-icon--cart">Add to Cart</button>
+  <button class="fd-button fd-button--ghost sap-icon--cart">Add to Cart</button>
   <button class="fd-button fd-button--positive sap-icon--accept">Approve</button>
   <button class="fd-button fd-button--negative sap-icon--decline">Reject</button>
   <button class="fd-button fd-button--attention sap-icon--warning">Attention</button>
@@ -291,6 +300,7 @@ Color is also important. For instance, the most important button has a blue back
   <button class="fd-button sap-icon--cart"></button>
   <button class="fd-button fd-button--transparent sap-icon--cart"></button>
   <button class="fd-button fd-button--standard sap-icon--filter"></button>
+  <button class="fd-button fd-button--ghost sap-icon--filter"></button>
   <button class="fd-button fd-button--positive sap-icon--accept"></button>
   <button class="fd-button fd-button--negative sap-icon--decline"></button>
   <button class="fd-button fd-button--attention sap-icon--decline"></button>
