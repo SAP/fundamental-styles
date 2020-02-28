@@ -54,7 +54,7 @@ there are few types of object status to be used as shown below
 {% include display-component.html component=badge %}
 
 
-<hr>
+<br>
 
 ## Clickable Object Status
 Clickable object status on clicking on the object status the underline property appears.
@@ -83,8 +83,54 @@ Generic indication of the object to define the status of the object and also inc
 
 <br>
 
+# Object Status Only Label
+
+{% capture badge %}
+<span class="fd-inverted-status fd-inverted-status--error">Inverted Negative</span>
+<span class="fd-inverted-status fd-inverted-status--warning">Inverted Warning</span>
+<span class="fd-inverted-status fd-inverted-status--success">Inverted Success</span>
+<span class="fd-inverted-status fd-inverted-status--info">Inverted informative</span>
+<span class="fd-inverted-status fd-inverted-status--success">3</span>
+<span class="fd-inverted-status fd-inverted-status--info">2.99</span>
+<span class="fd-inverted-status">Inverted Default</span>
+<span class="fd-inverted-status fd-inverted-status--icon fd-inverted-status--error sap-icon--status-negative"></span>
+{% endcapture %}
+{% include display-component.html component=badge %}
+
+<br>
+
+## Object Status Label and Icon
+
+{% capture badge %}
+<span class="fd-inverted-status fd-inverted-status--icon fd-inverted-status--error sap-icon--status-negative">Negative</span>
+<span class="fd-inverted-status fd-inverted-status--icon fd-inverted-status--warning sap-icon--status-critical">Critical</span>
+<span class="fd-inverted-status fd-inverted-status--icon fd-inverted-status--success sap-icon--status-positive">Success</span>
+<span class="fd-inverted-status fd-inverted-status--icon fd-inverted-status--info sap-icon--hint">Informative</span>
+<span class="fd-inverted-status fd-inverted-status--icon sap-icon--to-be-reviewed">Default</span>
+{% endcapture %}
+{% include display-component.html component=badge %}
+
+## Object Status with Generic Indication Colors
+
+Generic indication of the object to define the status of the object and also includes the `:hover`, `:active` and `:visited` properties to improve the visuals.
+
+{% capture badge %}
+<span class="fd-inverted-status fd-inverted-status--indication-color-1">Indication1</span>
+<span class="fd-inverted-status fd-inverted-status--indication-color-2">Indication2</span>
+<span class="fd-inverted-status fd-inverted-status--indication-color-3">Indication3</span>
+<span class="fd-inverted-status fd-inverted-status--indication-color-4">Indication4</span>
+<span class="fd-inverted-status fd-inverted-status--indication-color-5">Indication5</span>
+<span class="fd-inverted-status fd-inverted-status--indication-color-6">Indication6</span>
+<span class="fd-inverted-status fd-inverted-status--indication-color-7">Indication7</span>
+<span class="fd-inverted-status fd-object-status--indication-color-8">Indication8</span>
+{% endcapture %}
+{% include display-component.html component=badge %}
+
+<br>
+
+
 <style>
-.fd-badge, .fd-object-status, .fd-status-object-status {
+.fd-object-status, .fd-inverted-status {
     margin-right: 20px;
 }
 </style>

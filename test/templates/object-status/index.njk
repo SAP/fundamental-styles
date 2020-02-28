@@ -1,6 +1,7 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
 {% from "./component.njk" import objectstatus %}
+{% from "./component_inverted.njk" import invertedstatus %}
 
 {% block content %}
 
@@ -90,5 +91,92 @@
 
     {% endset %}
     {{ format(example) }}
+
+<h2>Inverted Object status Icon</h2>
+    <!-- output the component example and the code snippet -->
+    {% set example %}
+{{  invertedstatus({icon: 'status-negative'},
+        modifier={block: ["error","icon"]})
+}}
+    {% endset %}
+    {{ format(example) }}
+<br><br>
+
+<h2>Label</h2>
+    <!-- output the component example and the code snippet -->
+    {% set example %}
+{{  invertedstatus({label: "Negative Status"},
+        modifier={block: ["error"]})
+}}
+{{  invertedstatus({label: "Critical Status"},
+        modifier={block: ["warning"]})
+}}
+{{  invertedstatus({label: "Success Status"},
+        modifier={block: ["success"]})
+}}
+{{  invertedstatus({label: "Informative Status"},
+        modifier={block: ["info"]})
+}} 
+{{  invertedstatus({label: "Default"},
+        modifier={block: [""]})
+}} 
+    {% endset %}
+    {{ format(example) }}
+<br><br>
+
+    <h2>Status Object with Generic Colour Indication </h2>
+
+    {% set example %}
+{{  invertedstatus({label: "Indication1"},
+        modifier={block: ["indication-color-1"]})
+}}
+{{  invertedstatus({label: "Indication2"},
+        modifier={block: ["indication-color-2"]})
+}}
+{{  invertedstatus({label: "Indication3"},
+        modifier={block: ["indication-color-3"]})
+}}
+{{  invertedstatus({label: "Indication4"},
+        modifier={block: ["indication-color-4"]})
+}}
+{{  invertedstatus({label: "Indication5"},
+        modifier={block: ["indication-color-5"]})
+}}
+{{  invertedstatus({label: "Indication6"},
+        modifier={block: ["indication-color-6"]})
+}}
+{{  invertedstatus({label: "Indication7"},
+        modifier={block: ["indication-color-7"]})
+}}
+{{  invertedstatus({label: "Indication8"},
+        modifier={block: ["indication-color-8"]})
+}}
+
+    {% endset %}
+    {{ format(example) }}
+
+<br><br>
+    <h2>Status Object With Icons</h2>
+
+    {% set example %}
+{{  invertedstatus({label: "Info Label",icon: 'status-negative'},
+        modifier={block: ["indication-color-1","icon"]})
+}}
+{{  invertedstatus({label: "Info Label",icon: 'status-critical'},
+        modifier={block: ["indication-color-2","icon"]})
+}}
+{{  invertedstatus({label: "Info Label",icon: 'status-positive'},
+        modifier={block: ["indication-color-3","icon"]})
+}}
+{{  invertedstatus({label: "Info Label",icon: 'hint'},
+        modifier={block: ["indication-color-4","icon"]})
+}}
+{{  invertedstatus({label: "Info Label",icon: 'to-be-reviewed'},
+        modifier={block: ["indication-color-5","icon"]})
+}}
+
+    {% endset %}
+    {{ format(example) }}
+
 
 {% endblock %}

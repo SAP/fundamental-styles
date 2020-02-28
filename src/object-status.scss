@@ -7,12 +7,22 @@
 */
 $block: #{$fd-namespace}-object-status;
 
+$color-accents: (
+  "1": ("color": var(--sapIndicationColor_1), "hover": #6f0000, "active": #550000, "visited": var(--sapIndicationColor_1)),
+  "2": ("color": var(--sapIndicationColor_2), "hover": #a20000, "active": #880000, "visited": var(--sapIndicationColor_2)),
+  "3": ("color": var(--sapIndicationColor_3), "hover": #da6c0b, "active": #cc650b, "visited": var(--sapIndicationColor_3)),
+  "4": ("color": var(--sapIndicationColor_4), "hover": #40e786, "active": #107e3e, "visited": var(--sapIndicationColor_4)),
+  "5": ("color": var(--sapIndicationColor_5), "hover": #7bbaf9, "active": #0961b9, "visited": var(--sapIndicationColor_5)),
+  "6": ("color": var(--sapAccentColor7), "hover": #4bdcec, "active": #0d6d78, "visited": var(--sapAccentColor7)),
+  "7": ("color": var(--sapAccentColor9), "hover": #e0d0f1, "active": #8546c8, "visited": var(--sapAccentColor9)),
+  "8": ("color": var(--sapAccentColor4), "hover": #e6acd8, "active": #ac338f, "visited": var(--sapAccentColor4))
+);
+
 .#{$block} {
   @include fd-reset();
 
   $fd-object-status-font: var(--sapFontFamily);
   $fd-object-status-font-size: var(--sapFontSize) !default;
-  $fd-object-status-font-weight: normal !default;
   $fd-object-status-padding: 0.5rem !default;
   $fd-object-status-icon-size: 1rem !default;
 
@@ -22,22 +32,10 @@ $block: #{$fd-namespace}-object-status;
   $fd-object-status-informative: var(--sapInformativeColor);
   $fd-object-status-neutral: var(--sapNeutralColor);
 
-  $color-accents: (
-    "1": ("color": var(--sapIndicationColor_1), "hover": #ff2222, "active": #6f0000, "visited": var(--sapIndicationColor_1)),
-    "2": ("color": var(--sapIndicationColor_2), "hover": #ff5555, "active": #a20000, "visited": var(--sapIndicationColor_2)),
-    "3": ("color": var(--sapIndicationColor_3), "hover": #fac494, "active": #d1670b, "visited": var(--sapIndicationColor_3)),
-    "4": ("color": var(--sapIndicationColor_4), "hover": #40e786, "active": #107e3e, "visited": var(--sapIndicationColor_4)),
-    "5": ("color": var(--sapIndicationColor_5), "hover": #7bbaf9, "active": #0961b9, "visited": var(--sapIndicationColor_5)),
-    "6": ("color": var(--sapAccentColor7), "hover": #4bdcec, "active": #0d6d78, "visited": var(--sapAccentColor7)),
-    "7": ("color": var(--sapAccentColor9), "hover": #e0d0f1, "active": #8546c8, "visited": var(--sapAccentColor9)),
-    "8": ("color": var(--sapAccentColor4), "hover": #e6acd8, "active": #ac338f, "visited": var(--sapAccentColor4))
-  );
-
   @include fd-reset();
 
   font: $fd-object-status-font;
   font-size: $fd-object-status-font-size;
-  font-weight: $fd-object-status-font-weight;
   color: $fd-object-status-neutral;
 
   @include fd-rtl() {
@@ -114,6 +112,117 @@ $block: #{$fd-namespace}-object-status;
 
       &:visited {
         color: map_get($color-set, "visited");
+      }
+    }
+  }
+}
+$block1: #{$fd-namespace}-inverted-status;
+
+.#{$block1} {
+  @include fd-reset();
+
+  $fd-inverted-status-font: var(--sapFontFamily);
+  $fd-inverted-status-font-size: var(--sapFontSize) !default;
+  $fd-inverted-status-font-weight: normal !default;
+  $fd-inverted-status-text-color: var(--sapContent_ContrastTextColor);
+  $fd-inverted-status-background: var(--sapButton_Neutral_Background);
+  $fd-inverted-status-height: auto !default;
+  $fd-inverted-status-width: auto !default;
+  $fd-inverted-status-min-height: 1rem !default;
+  $fd-inverted-status-border-radius: 0.125rem !default;
+  $fd-inverted-status-font-weight: bold !default;
+  $fd-inverted-status-default-padding: 0.0625rem 0.25rem !default;
+  $fd-inverted-status-error-background: var(--sapButton_Negative_Background);
+  $fd-inverted-status-success-background: var(--sapButton_Success_Background);
+  $fd-inverted-status-warning-background: var(--sapButton_Critical_Background);
+  $fd-inverted-status-info-background: var(--sapInformativeElementColor);
+  $fd-inverted-status-error-font-color: var(--sapButton_Negative_TextColor);
+  $fd-inverted-status-success-font-color: var(--sapButton_Success_TextColor);
+  $fd-inverted-status-warning-font-color: var(--sapButton_Critical_TextColor);
+  $fd-inverted-status-info-font-color: var(--sapInformativeTextColor);
+  $fd-inverted-status-icon-size: 0.75rem !default;
+  $fd-inverted-status-icon-padding-right: 0.25rem !default;
+  $fd-inverted-status-default-overflow: hidden !default;
+  $fd-inverted-status-max-width: 100% !default;
+  $fd-inverted-status-default-white-space: nowrap !default;
+  $fd-inverted-status-default-text-overflow: ellipsis !default;
+  $fd-inverted-status-default-max-width: fit-content !default;
+  $fd-inverted-status-default-inline: inline !default;
+  $fd-inverted-status-default-inline-block: inline-block !default;
+  $fd-inverted-status-default-position: relative !default;
+
+  padding: $fd-inverted-status-default-padding;
+  height: $fd-inverted-status-height;
+  width: $fd-inverted-status-width;
+  min-height: $fd-inverted-status-min-height;
+  border-radius: $fd-inverted-status-border-radius;
+  font-family: $fd-inverted-status-font;
+  font-size: $fd-inverted-status-font-size;
+  font-weight: $fd-inverted-status-font-weight;
+  color: $fd-inverted-status-text-color;
+  background: $fd-inverted-status-background;
+  display: $fd-inverted-status-default-inline-block;
+
+  &--error {
+    background: $fd-inverted-status-error-background;
+    color: $fd-inverted-status-error-font-color;
+  }
+
+  &--success {
+    background: $fd-inverted-status-success-background;
+    color: $fd-inverted-status-success-font-color;
+  }
+
+  &--warning {
+    background: $fd-inverted-status-warning-background;
+    color: $fd-inverted-status-warning-font-color;
+  }
+
+  &--info {
+    background: $fd-inverted-status-info-background;
+    color: $fd-inverted-status-text-color;
+  }
+
+  &:empty {
+    padding-right: 0;
+    display: $fd-inverted-status-default-inline;
+  }
+
+  &--icon {
+    display: $fd-inverted-status-default-inline-block;
+    width: $fd-inverted-status-max-width;
+    white-space: $fd-inverted-status-default-white-space;
+    overflow: $fd-inverted-status-default-overflow;
+    text-overflow: $fd-inverted-status-default-text-overflow;
+    max-width: $fd-inverted-status-default-max-width;
+
+    &::before {
+      padding-right: $fd-inverted-status-icon-padding-right;
+      position: $fd-inverted-status-default-position;
+      font-size: $fd-inverted-status-icon-size;
+    }
+
+    @include fd-rtl() {
+      &::before {
+        padding-left: 0;
+      }
+    }
+  }
+
+  @each $set-name, $color-set in $color-accents {
+    &--indication-color-#{$set-name} {
+      background: map_get($color-set, "color");
+
+      &:hover {
+        background: map_get($color-set, "hover");
+      }
+
+      &:active {
+        background: map_get($color-set, "active");
+      }
+
+      &:visited {
+        background: map_get($color-set, "visited");
       }
     }
   }
