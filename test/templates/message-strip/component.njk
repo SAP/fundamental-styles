@@ -6,9 +6,7 @@
 {% macro messageStrip(properties={}, modifier={}) -%}
 {%- set _id = utils.id() %}
 <div class="fd-message-strip{{ modifier.block | modifier('message-strip') }}{{ 'dismissible' | modifier('message-strip') if properties.dismissible }}" role="alert" {{ ' id="'+_id+'"' if properties.dismissible }} {{ ' dir="rtl"' if properties.rtl }}>
-  {%- if properties.dismissible %}
-  <button class="btn-playground fd-message-strip__close" aria-controls="{{ _id }}" aria-label="Close"></button>
-  {%- endif %}
   <p class="fd-message-strip__text">{{ properties.text }}</p>
+  {%- if properties.dismissible %}<button class="btn-playground--compact fd-message-strip__close" aria-controls="{{ _id }}" aria-label="Close"></button>{%- endif %}
 </div>
 {%- endmacro %}

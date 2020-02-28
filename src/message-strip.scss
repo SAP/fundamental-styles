@@ -27,8 +27,8 @@ $block: #{$fd-namespace}-message-strip;
 
   @mixin fd-message-strip-close-btn-container {
     position: absolute;
-    top: 0.0625rem;
-    right: 0.0625rem;
+    top: 0.125rem;
+    right: 0.125rem;
   }
 
   // SUCCESS
@@ -68,20 +68,10 @@ $block: #{$fd-namespace}-message-strip;
   align-items: center;
   min-height: 2rem;
 
-  // DEPRECATE v1.6 (brute force embedded solution to adopt new styles)
-  .sap-icon--message-strip-error,
-  .sap-icon--message-strip-warning,
-  .sap-icon--message-strip-success,
-  .sap-icon--message-strip-information {
-    display: none;
-  }
-
   // Elements
   &__close {
-    @include fd-button-reset();
     @include fd-message-strip-close-btn-container();
     @include fd-icon("decline", "m");
-    @include fd-focus();
 
     @include fd-rtl() {
       left: 0.125rem;
