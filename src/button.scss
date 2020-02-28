@@ -252,7 +252,7 @@ $block: #{$fd-namespace}-button;
     @include emphasized();
   }
 
-  &.#{$block}--transparent  {
+  &.#{$block}--transparent {
     @include transparent();
   }
 }
@@ -280,7 +280,7 @@ $block: #{$fd-namespace}-button;
     @include emphasizedDisabled();
   }
 
-  &.#{$block}--transparent  {
+  &.#{$block}--transparent {
     @include transparentDisabled();
   }
 }
