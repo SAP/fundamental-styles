@@ -1,6 +1,7 @@
 @import "./settings";
 @import "./mixins";
 @import "./functions";
+@import './root';
 
 $block: #{$fd-namespace}-select;
 
