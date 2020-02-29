@@ -124,23 +124,12 @@ $block: #{$fd-namespace}-notification;
   }
 
   &__close {
-    color: $fd-notification-title-color;
     position: relative;
     top: 0.45rem;
-    right: 0.35rem;
-    min-width: 36px;
-    min-height: 36px;
-    width: 36px;
-    height: 36px;
-
-    &:hover {
-      color: $fd-notification-title-color;
-      border: none;
-      background-color: $fd-notification-background-color;
-    }
+    right: 0.45rem;
 
     @include fd-rtl() {
-      right: -0.35rem;
+      right: -0.45rem;
     }
   }
 
