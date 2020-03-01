@@ -6,10 +6,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
-<meta name="keywords" content=" modal, modals">
+<meta name="keywords" content=" info label, info, label, info-label, counter">
 <title>
 	
-	Modal - Fundamental Styles
+	Info Label - Fundamental Styles
 	
 
 </title>
@@ -27,7 +27,7 @@
 </script>
 <!-- End Google Tag Manager -->
 
-<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1581959122328612407">
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1583092772907683073">
 <link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -62,13 +62,13 @@
             Fundamental Library<span class="docs-top-nav__logo__accent"> Styles</span>
         </a>
 
-        <button id="mobile-sidenav-btn" class="fd-button--light sap-icon--menu2 header-section__sap-icon--menu2" aria-haspopup="true" aria-expanded="false" aria-label="Menu"></button>
+        <button id="mobile-sidenav-btn" class="fd-button--transparent sap-icon--menu2 header-section__sap-icon--menu2" aria-haspopup="true" aria-expanded="false" aria-label="Menu"></button>
 
         <!-- support links -->
         <div class="docs-top-nav__support fd-has-float-right">
 
             <span class="fd-has-align-items-center fd-has-margin-right-small">
-                <span>v0.6.0</span>
+                <span>v0.7.0</span>
                 <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
                     <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
                         <title>GitHub</title>
@@ -110,7 +110,9 @@
                 <div class="fd-input-group">
                     <input type="text" class="fd-input fd-input-group__input" id="docs-search" placeholder="search...">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
-                        <button class="fd-input-group__button fd-button--light sap-icon--search"></button>
+                        <button class="fd-button fd-button--transparent">
+                            <span class="fd-button--content sap-icon--search"></span>
+                        </button>
                     </span>
                 </div>
             </div>
@@ -127,7 +129,7 @@
         searchInput: document.getElementById('docs-search'),
         resultsContainer: document.getElementById('results-container'),
         json: '/fundamental-styles/js/search.json',
-        searchResultTemplate: '<li class="fd-menu__item"><a href="/fundamental-styles{url}" title="Modal">{folder} > {title}</a></li>',
+        searchResultTemplate: '<li class="fd-menu__item"><a href="/fundamental-styles{url}" title="Info Label">{folder} > {title}</a></li>',
         noResultsText: '<li class="fd-menu__item">No results found</li>',
         limit: 10,
         fuzzy: true,
@@ -437,6 +439,16 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/components/dialog.html"
+                   class="side-nav__links-link">Dialog</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/form.html"
                    class="side-nav__links-link">Forms</a>
             </li>
@@ -469,6 +481,16 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/image.html"
                    class="side-nav__links-link">Image</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links active">
+                <a href="/fundamental-styles/components/info-label.html"
+                   class="side-nav__links-link">Info Label</a>
             </li>
             
             
@@ -559,16 +581,6 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/message-strip.html"
                    class="side-nav__links-link">Message Strip</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links active">
-                <a href="/fundamental-styles/components/modal.html"
-                   class="side-nav__links-link">Modal</a>
             </li>
             
             
@@ -788,7 +800,7 @@
 
 <div class="docs-content">
 
-    <h1 class="docs-header-h1">Modal</h1>
+    <h1 class="docs-header-h1">Info Label</h1>
 
     
 
@@ -797,147 +809,150 @@
 
     
 
-    <p class="docs-intro">The modal is a container generally displayed in response to an action.</p>
-<p>It is used for short forms, confirmation messages or to display contextual information that does not require a page. The modal should always be used in conjunction with the <a href="/fundamental-styles/layouts/shell-layout.html#application-with-ui-overlay">Application Layout Containers</a>. See an example <a href="/fundamental-styles/demo-pages/modal-overlay-demo-page.html">App layout page with Modal</a></p>
-
-<blockquote>
-  <p>Although the following examples use the <code class="highlighter-rouge">&lt;h3&gt;</code> tag for the title element, the styling provided by Fundamental Library Styles will remain consistent for any heading level used. <code class="highlighter-rouge">&lt;h1&gt;</code> should be reserved for the page title.</p>
-</blockquote>
-
-<h2 id="informational-modal">Informational Modal</h2>
-<p>This is used to present information to the user but the Alert Component doesn’t fit all the information.</p>
-
-<div class="fd-tile docs-component docs-component__">
-    <div class="fd-tile__content">
-		
-<div class="fd-modal">
-    <div class="fd-modal__content" role="document">
-        <div class="fd-modal__header">
-            <h3 class="fd-modal__title">Product Added</h3>
-            <button class="fd-button--light fd-modal__close sap-icon--decline sap-icon--l" aria-label="close"></button>
-        </div>
-        <div class="fd-modal__body">
-            <b>Thew new product have been added to your catalog.</b><br />
-            <br />
-            Automatic Product ID: <b>PD-3465334</b><br />
-            <br />
-            Expiration date: <b>13/03/2018</b><br />
-            <br />
-        </div>
-    </div>
-</div>
-
-	</div>
-</div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-modal"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-modal__content"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-modal__header"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"fd-modal__title"</span><span class="nt">&gt;</span>Product Added<span class="nt">&lt;/h3&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light fd-modal__close sap-icon--decline sap-icon--l"</span> <span class="na">aria-label=</span><span class="s">"close"</span><span class="nt">&gt;&lt;/button&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-modal__body"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;b&gt;</span>Thew new product have been added to your catalog.<span class="nt">&lt;/b&gt;&lt;br/&gt;</span>
-            <span class="nt">&lt;br/&gt;</span>
-            Automatic Product ID: <span class="nt">&lt;b&gt;</span>PD-3465334<span class="nt">&lt;/b&gt;&lt;br/&gt;</span>
-            <span class="nt">&lt;br/&gt;</span>
-            Expiration date: <span class="nt">&lt;b&gt;</span>13/03/2018<span class="nt">&lt;/b&gt;&lt;br/&gt;</span>
-            <span class="nt">&lt;br/&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    <p class="docs-intro">Info Label is a small non-interactive numeric or text-based control. Its primary use is to add user-defined characteristic to an object. <code class="highlighter-rouge">fd-info-label</code>, <code class="highlighter-rouge">fd-info-label--numeric</code>, <code class="highlighter-rouge">fd-info-label--accent-color-1</code> and <code class="highlighter-rouge">fd-info-label--icon</code></p>
 
 <p><br /></p>
 
-<h2 id="confirmation-modal">Confirmation Modal</h2>
-<p>This is used to confirm with the user before continuing with a destructive or complex action. In this case, the modal has action buttons at the bottom.</p>
+<h1 id="info-label">info-label</h1>
+
+<h2 id="info-label-style-options">info-label Style Options</h2>
+<p><code class="highlighter-rouge">info-label</code> Info Label has three options: <code class="highlighter-rouge">--accent-color-1,accent-color-2...</code>, <code class="highlighter-rouge">--icon</code> and <code class="highlighter-rouge">--numeric</code></p>
 
 <div class="fd-tile docs-component docs-component__">
     <div class="fd-tile__content">
 		
-<div class="fd-modal">
-    <div class="fd-modal__content" role="document">
-        <div class="fd-modal__header">
-            <h3 class="fd-modal__title">Delete</h3>
-            <button class="fd-button--light fd-modal__close sap-icon--decline sap-icon--l" aria-label="close"></button>
-        </div>
-        <div class="fd-modal__body">
-            Do you want to delete item <b>X</b>?
-        </div>
-        <footer class="fd-modal__footer">
-            <button class="fd-button">Yes</button>
-            <button class="fd-button--light">No</button>
-        </footer>
-    </div>
-</div>
+<span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-1">6</span>
+<span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-2">6.2</span>
+<span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-3">42k</span>
+<span class="fd-info-label fd-info-label--accent-color-3">Info Label </span>
+<span class="fd-info-label fd-info-label--accent-color-4">Missing Item</span>
+<span class="fd-info-label fd-info-label--accent-color-5 fd-info-label--icon sap-icon--photo-voltaic">Delivered</span>
+
 
 	</div>
 </div>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-modal"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-modal__content"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-modal__header"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"fd-modal__title"</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/h3&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light fd-modal__close sap-icon--decline sap-icon--l"</span> <span class="na">aria-label=</span><span class="s">"close"</span><span class="nt">&gt;&lt;/button&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-modal__body"</span><span class="nt">&gt;</span>
-            Do you want to delete item <span class="nt">&lt;b&gt;</span>X<span class="nt">&lt;/b&gt;</span>?
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"fd-modal__footer"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button"</span><span class="nt">&gt;</span>Yes<span class="nt">&lt;/button&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light"</span><span class="nt">&gt;</span>No<span class="nt">&lt;/button&gt;</span>
-        <span class="nt">&lt;/footer&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--numeric fd-info-label--accent-color-1"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--numeric fd-info-label--accent-color-2"</span><span class="nt">&gt;</span>6.2<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--numeric fd-info-label--accent-color-3"</span><span class="nt">&gt;</span>42k<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-3"</span><span class="nt">&gt;</span>Info Label <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-4"</span><span class="nt">&gt;</span>Missing Item<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-5 fd-info-label--icon sap-icon--photo-voltaic"</span><span class="nt">&gt;</span>Delivered<span class="nt">&lt;/span&gt;</span></code></pre></figure>
 
 <p><br /></p>
 
-<h2 id="form-modal">Form Modal</h2>
-<p>This is used for short forms in order to collect information from the user.</p>
+<h3 id="info-label-color-options">info-label Color Options</h3>
+<p>In addition the the default grey, there are additional Semantic color options available <code class="highlighter-rouge">--accent-color-1,accent-color-2...</code>.</p>
 
 <div class="fd-tile docs-component docs-component__">
     <div class="fd-tile__content">
 		
-<div class="fd-modal">
-    <div class="fd-modal__content" role="document">
-        <div class="fd-modal__header">
-            <h3 class="fd-modal__title">Invite user</h3>
-            <button class="fd-button--light fd-modal__close sap-icon--decline sap-icon--l" aria-label="close"></button>
-        </div>
-        <div class="fd-modal__body">
-            <div class="fd-form-item">
-                <label class="fd-form-label" aria-required="true" for="input-2">Email*</label>
-                <input class="fd-input" type="text" id="input-2" />
-            </div>
-        </div>
-        <footer class="fd-modal__footer">
-            <button class="fd-button">Invite</button>
-            <button class="fd-button--light">Cancel</button>
-        </footer>
-    </div>
-</div>
+
+<span class="fd-info-label fd-info-label--accent-color-1">Info Label</span>
+<br /><br />
+<span class="fd-info-label fd-info-label--accent-color-2">Info Label</span>
+<br /><br />
+<span class="fd-info-label fd-info-label--accent-color-3">Info Label</span>
+<br /><br />
+<span class="fd-info-label fd-info-label--accent-color-4">Info Label</span>
+<br /><br />
+<span class="fd-info-label fd-info-label--accent-color-5">Info Label</span>
+<br /><br />
+<span class="fd-info-label fd-info-label--accent-color-6">Info Label</span>
+<br /><br />
+<span class="fd-info-label fd-info-label--accent-color-7">Info Label</span>
+<br /><br />
+<span class="fd-info-label fd-info-label--accent-color-8">Info Label</span>
+<br /><br />
+<span class="fd-info-label fd-info-label--accent-color-9">Info Label</span>
+<br /><br />
+<span class="fd-info-label fd-info-label--accent-color-10">Info Label</span>
+
 
 	</div>
 </div>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-modal"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-modal__content"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-modal__header"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"fd-modal__title"</span><span class="nt">&gt;</span>Invite user<span class="nt">&lt;/h3&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light fd-modal__close sap-icon--decline sap-icon--l"</span> <span class="na">aria-label=</span><span class="s">"close"</span><span class="nt">&gt;&lt;/button&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-modal__body"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-item"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label"</span> <span class="na">aria-required=</span><span class="s">"true"</span> <span class="na">for=</span><span class="s">"input-2"</span><span class="nt">&gt;</span>Email*<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"input-2"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"fd-modal__footer"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button"</span><span class="nt">&gt;</span>Invite<span class="nt">&lt;/button&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
-        <span class="nt">&lt;/footer&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-1"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-2"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-3"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-4"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-5"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-6"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-7"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-8"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-9"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-10"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span></code></pre></figure>
+
+<hr />
+
+<h2 id="status-indicator-label-with-any-icons">Status Indicator Label with any icons</h2>
+
+<p>In addition the the default grey, there are additional Semantic color options available <code class="highlighter-rouge">--icon</code>, and Icons placeholder with sap Icon <code class="highlighter-rouge">sap-icon--</code>.</p>
+
+<div class="fd-tile docs-component docs-component__">
+    <div class="fd-tile__content">
+		
+
+<span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon sap-icon--future">Info Label</span>
+<br /><br />
+<span class="fd-info-label fd-info-label--accent-color-2 fd-info-label--icon sap-icon--add-activity-2">Info Label</span>
+<br /><br />
+<span class="fd-info-label fd-info-label--accent-color-3 fd-info-label--icon sap-icon--bar-code">Info Label</span>
+<br /><br />
+<span class="fd-info-label fd-info-label--accent-color-4 fd-info-label--icon sap-icon--time-entry-request">Info Label</span>
+<br /><br />
+<span class="fd-info-label fd-info-label--accent-color-5 fd-info-label--icon sap-icon--bubble-chart">Info Label</span>
+<br /><br />
+<span class="fd-info-label fd-info-label--accent-color-6 fd-info-label--icon sap-icon--hide">Info Label</span>
+<br /><br />
+<span class="fd-info-label fd-info-label--accent-color-7 fd-info-label--icon sap-icon--key">Info Label</span>
+<br /><br />
+<span class="fd-info-label fd-info-label--accent-color-8 fd-info-label--icon sap-icon--technical-object">Info Label</span>
+<br /><br />
+<span class="fd-info-label fd-info-label--accent-color-9 fd-info-label--icon sap-icon--upload-to-cloud">Info Label</span>
+<br /><br />
+<span class="fd-info-label fd-info-label--accent-color-10 fd-info-label--only-icon sap-icon--upload-to-cloud"></span>
+
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-1 fd-info-label--icon sap-icon--future"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-2 fd-info-label--icon sap-icon--add-activity-2"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-3 fd-info-label--icon sap-icon--bar-code"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-4 fd-info-label--icon sap-icon--time-entry-request"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-5 fd-info-label--icon sap-icon--bubble-chart"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-6 fd-info-label--icon sap-icon--hide"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-7 fd-info-label--icon sap-icon--key"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-8 fd-info-label--icon sap-icon--technical-object"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-9 fd-info-label--icon sap-icon--upload-to-cloud"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-info-label fd-info-label--accent-color-10 fd-info-label--only-icon sap-icon--upload-to-cloud"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></figure>
+
+<p><br /></p>
+
+<style>
+.fd-info-label{
+    margin-right: 20px;
+}
+</style>
 
 
 

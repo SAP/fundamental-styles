@@ -27,7 +27,7 @@
 </script>
 <!-- End Google Tag Manager -->
 
-<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1581959122328612407">
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1583092772907683073">
 <link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -62,13 +62,13 @@
             Fundamental Library<span class="docs-top-nav__logo__accent"> Styles</span>
         </a>
 
-        <button id="mobile-sidenav-btn" class="fd-button--light sap-icon--menu2 header-section__sap-icon--menu2" aria-haspopup="true" aria-expanded="false" aria-label="Menu"></button>
+        <button id="mobile-sidenav-btn" class="fd-button--transparent sap-icon--menu2 header-section__sap-icon--menu2" aria-haspopup="true" aria-expanded="false" aria-label="Menu"></button>
 
         <!-- support links -->
         <div class="docs-top-nav__support fd-has-float-right">
 
             <span class="fd-has-align-items-center fd-has-margin-right-small">
-                <span>v0.6.0</span>
+                <span>v0.7.0</span>
                 <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
                     <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
                         <title>GitHub</title>
@@ -110,7 +110,9 @@
                 <div class="fd-input-group">
                     <input type="text" class="fd-input fd-input-group__input" id="docs-search" placeholder="search...">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
-                        <button class="fd-input-group__button fd-button--light sap-icon--search"></button>
+                        <button class="fd-button fd-button--transparent">
+                            <span class="fd-button--content sap-icon--search"></span>
+                        </button>
                     </span>
                 </div>
             </div>
@@ -437,6 +439,16 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/components/dialog.html"
+                   class="side-nav__links-link">Dialog</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/form.html"
                    class="side-nav__links-link">Forms</a>
             </li>
@@ -469,6 +481,16 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/image.html"
                    class="side-nav__links-link">Image</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/info-label.html"
+                   class="side-nav__links-link">Info Label</a>
             </li>
             
             
@@ -559,16 +581,6 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/message-strip.html"
                    class="side-nav__links-link">Message Strip</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
-                <a href="/fundamental-styles/components/modal.html"
-                   class="side-nav__links-link">Modal</a>
             </li>
             
             
@@ -811,18 +823,18 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
 <div class="fd-bar">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--home"></button>
+            <button class="fd-button fd-button--transparent sap-icon--home"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--account"></button>
+            <button class="fd-button fd-button--transparent sap-icon--account"></button>
         </div>
     </div>
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
-            <div class="fd-button-group" role="group" aria-label="Group label">
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
                 <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
                 <button class="fd-button fd-button--compact sap-icon--iphone"></button>
                 <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
@@ -835,7 +847,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             </span>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--grid"></button>
+            <button class="fd-button fd-button--transparent sap-icon--grid"></button>
         </div>
     </div>
 </div>
@@ -845,18 +857,18 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
 <div class="fd-bar" dir="rtl">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--navigation-right-arrow"></button>
+            <button class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--home"></button>
+            <button class="fd-button fd-button--transparent sap-icon--home"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--account"></button>
+            <button class="fd-button fd-button--transparent sap-icon--account"></button>
         </div>
     </div>
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
-            <div class="fd-button-group" role="group" aria-label="Group label">
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
                 <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
                 <button class="fd-button fd-button--compact sap-icon--iphone"></button>
                 <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
@@ -869,7 +881,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             </span>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--grid"></button>
+            <button class="fd-button fd-button--transparent sap-icon--grid"></button>
         </div>
     </div>
 </div>
@@ -880,18 +892,18 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__left"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--navigation-left-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-left-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--home"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--home"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--account"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--account"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__middle"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-segmented-button"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--email"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/button&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--iphone"</span><span class="nt">&gt;&lt;/button&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--notification-2"</span><span class="nt">&gt;&lt;/button&gt;</span>
@@ -905,7 +917,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--grid"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--grid"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -915,18 +927,18 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar"</span> <span class="na">dir=</span><span class="s">"rtl"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__left"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--navigation-right-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-right-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--home"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--home"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--account"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--account"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__middle"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-segmented-button"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--email"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/button&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--iphone"</span><span class="nt">&gt;&lt;/button&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--notification-2"</span><span class="nt">&gt;&lt;/button&gt;</span>
@@ -940,7 +952,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--grid"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--grid"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
@@ -957,18 +969,18 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
 <div class="fd-bar fd-bar--cosy">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--home"></button>
+            <button class="fd-button fd-button--transparent sap-icon--home"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--account"></button>
+            <button class="fd-button fd-button--transparent sap-icon--account"></button>
         </div>
     </div>
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
-            <div class="fd-button-group" role="group" aria-label="Group label">
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
                 <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
                 <button class="fd-button fd-button--compact sap-icon--iphone"></button>
                 <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
@@ -981,7 +993,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             </span>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--grid"></button>
+            <button class="fd-button fd-button--transparent sap-icon--grid"></button>
         </div>
     </div>
 </div>
@@ -993,18 +1005,18 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar fd-bar--cosy"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__left"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--navigation-left-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-left-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--home"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--home"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--account"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--account"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__middle"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-segmented-button"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--email"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/button&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--iphone"</span><span class="nt">&gt;&lt;/button&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--notification-2"</span><span class="nt">&gt;&lt;/button&gt;</span>
@@ -1018,7 +1030,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--grid"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--grid"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -1037,18 +1049,18 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
 <div class="fd-bar fd-bar--header">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--home"></button>
+            <button class="fd-button fd-button--transparent sap-icon--home"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--account"></button>
+            <button class="fd-button fd-button--transparent sap-icon--account"></button>
         </div>
     </div>
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
-            <div class="fd-button-group" role="group" aria-label="Group label">
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
                 <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
                 <button class="fd-button fd-button--compact sap-icon--iphone"></button>
                 <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
@@ -1061,7 +1073,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             </span>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--grid"></button>
+            <button class="fd-button fd-button--transparent sap-icon--grid"></button>
         </div>
     </div>
 </div>
@@ -1071,18 +1083,18 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
 <div class="fd-bar fd-bar--header fd-bar--cosy">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--home"></button>
+            <button class="fd-button fd-button--transparent sap-icon--home"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--account"></button>
+            <button class="fd-button fd-button--transparent sap-icon--account"></button>
         </div>
     </div>
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
-            <div class="fd-button-group" role="group" aria-label="Group label">
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
                 <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
                 <button class="fd-button fd-button--compact sap-icon--iphone"></button>
                 <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
@@ -1095,7 +1107,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             </span>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--grid"></button>
+            <button class="fd-button fd-button--transparent sap-icon--grid"></button>
         </div>
     </div>
 </div>
@@ -1105,18 +1117,18 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
 <div class="fd-bar fd-bar--header" dir="rtl">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--navigation-right-arrow"></button>
+            <button class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--home"></button>
+            <button class="fd-button fd-button--transparent sap-icon--home"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--account"></button>
+            <button class="fd-button fd-button--transparent sap-icon--account"></button>
         </div>
     </div>
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
-            <div class="fd-button-group" role="group" aria-label="Group label">
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
                 <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
                 <button class="fd-button fd-button--compact sap-icon--iphone"></button>
                 <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
@@ -1129,7 +1141,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             </span>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--grid"></button>
+            <button class="fd-button fd-button--transparent sap-icon--grid"></button>
         </div>
     </div>
 </div>
@@ -1142,18 +1154,18 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar fd-bar--header"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__left"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--navigation-left-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-left-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--home"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--home"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--account"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--account"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__middle"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-segmented-button"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--email"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/button&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--iphone"</span><span class="nt">&gt;&lt;/button&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--notification-2"</span><span class="nt">&gt;&lt;/button&gt;</span>
@@ -1167,7 +1179,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--grid"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--grid"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -1177,18 +1189,18 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar fd-bar--header fd-bar--cosy"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__left"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--navigation-left-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-left-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--home"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--home"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--account"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--account"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__middle"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-segmented-button"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--email"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/button&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--iphone"</span><span class="nt">&gt;&lt;/button&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--notification-2"</span><span class="nt">&gt;&lt;/button&gt;</span>
@@ -1202,7 +1214,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--grid"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--grid"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -1212,18 +1224,18 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar fd-bar--header"</span> <span class="na">dir=</span><span class="s">"rtl"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__left"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--navigation-right-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-right-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--home"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--home"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--account"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--account"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__middle"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-segmented-button"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--email"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/button&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--iphone"</span><span class="nt">&gt;&lt;/button&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--notification-2"</span><span class="nt">&gt;&lt;/button&gt;</span>
@@ -1237,7 +1249,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--grid"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--grid"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
@@ -1255,10 +1267,10 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
 <div class="fd-bar fd-bar--subheader">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light fd-button--compact sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light fd-button--compact sap-icon--home"></button>
+            <button class="fd-button fd-button--transparent fd-button--compact sap-icon--home"></button>
         </div>
     </div>
     <div class="fd-bar__right">
@@ -1267,7 +1279,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             </span>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light fd-button--compact sap-icon--grid"></button>
+            <button class="fd-button fd-button--transparent fd-button--compact sap-icon--grid"></button>
         </div>
     </div>
 </div>
@@ -1278,7 +1290,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
             <div class="fd-form-item">
-                <div class="fd-button-group" role="group" aria-label="Group label">
+                <div class="fd-segmented-button" role="group" aria-label="Group label">
                     <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
                     <button class="fd-button fd-button--compact sap-icon--iphone"></button>
                     <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
@@ -1303,10 +1315,10 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
 <div class="fd-bar fd-bar--subheader" dir="rtl">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--compact fd-button--light sap-icon--navigation-right-arrow"></button>
+            <button class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-right-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--compact fd-button--light sap-icon--home"></button>
+            <button class="fd-button fd-button--compact fd-button--transparent sap-icon--home"></button>
         </div>
     </div>
     <div class="fd-bar__right">
@@ -1315,7 +1327,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             </span>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--compact fd-button--light sap-icon--grid"></button>
+            <button class="fd-button fd-button--compact fd-button--transparent sap-icon--grid"></button>
         </div>
     </div>
 </div>
@@ -1328,10 +1340,10 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar fd-bar--subheader"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__left"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light fd-button--compact sap-icon--navigation-left-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light fd-button--compact sap-icon--home"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--compact sap-icon--home"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__right"</span><span class="nt">&gt;</span>
@@ -1341,7 +1353,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light fd-button--compact sap-icon--grid"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--compact sap-icon--grid"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -1352,7 +1364,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__middle"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-form-item"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-segmented-button"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--email"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/button&gt;</span>
                     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--iphone"</span><span class="nt">&gt;&lt;/button&gt;</span>
                     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--notification-2"</span><span class="nt">&gt;&lt;/button&gt;</span>
@@ -1377,10 +1389,10 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar fd-bar--subheader"</span> <span class="na">dir=</span><span class="s">"rtl"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__left"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--light sap-icon--navigation-right-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--navigation-right-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--light sap-icon--home"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--home"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__right"</span><span class="nt">&gt;</span>
@@ -1390,7 +1402,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--light sap-icon--grid"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--grid"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
@@ -1408,18 +1420,18 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
 <div class="fd-bar fd-bar--header-with-subheader">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--navigation-left-arrow"></button>
+            <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--home"></button>
+            <button class="fd-button fd-button--transparent sap-icon--home"></button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--account"></button>
+            <button class="fd-button fd-button--transparent sap-icon--account"></button>
         </div>
     </div>
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
-            <div class="fd-button-group" role="group" aria-label="Group label">
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
                 <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
                 <button class="fd-button fd-button--compact sap-icon--iphone"></button>
                 <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
@@ -1432,7 +1444,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             </span>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light sap-icon--grid"></button>
+            <button class="fd-button fd-button--transparent sap-icon--grid"></button>
         </div>
     </div>
 </div>
@@ -1453,18 +1465,18 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar fd-bar--header-with-subheader"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__left"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--navigation-left-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-left-arrow"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--home"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--home"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--account"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--account"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__middle"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-segmented-button"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--email"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/button&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--iphone"</span><span class="nt">&gt;&lt;/button&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact sap-icon--notification-2"</span><span class="nt">&gt;&lt;/button&gt;</span>
@@ -1478,7 +1490,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light sap-icon--grid"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--grid"</span><span class="nt">&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -1505,7 +1517,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+            <button class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
         </div>
     </div>
 </div>
@@ -1518,7 +1530,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <button class="fd-button fd-button--emphasized">Save</button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light">Cancel</button>
+            <button class="fd-button fd-button--transparent">Cancel</button>
         </div>
     </div>
 </div>
@@ -1531,7 +1543,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+            <button class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
         </div>
     </div>
 </div>
@@ -1548,7 +1560,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized fd-button--compact"</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light fd-button--compact"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--compact"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -1561,7 +1573,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized"</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -1574,7 +1586,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized fd-button--compact"</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light fd-button--compact"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--compact"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -1595,7 +1607,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+            <button class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
         </div>
     </div>
 </div>
@@ -1608,7 +1620,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <button class="fd-button fd-button--emphasized">Save</button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light">Cancel</button>
+            <button class="fd-button fd-button--transparent">Cancel</button>
         </div>
     </div>
 </div>
@@ -1621,7 +1633,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <button class="fd-button fd-button--emphasized fd-button--compact">Save</button>
         </div>
         <div class="fd-bar__element">
-            <button class="fd-button fd-button--light fd-button--compact">Cancel</button>
+            <button class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
         </div>
     </div>
 </div>
@@ -1637,7 +1649,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized fd-button--compact"</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light fd-button--compact"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--compact"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -1650,7 +1662,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized"</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -1663,7 +1675,7 @@ The Bar has 2 modes - <code class="highlighter-rouge">Desktop</code> (default) a
             <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized fd-button--compact"</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-bar__element"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--light fd-button--compact"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--compact"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>

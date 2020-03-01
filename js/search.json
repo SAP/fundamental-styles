@@ -147,6 +147,17 @@
 
 
 {
+"title": "Dialog",
+"tags": "",
+"keywords": "dialog, dialogs, modal, modals",
+"url": "/components/dialog.html",
+"folder": "components"
+}
+,
+
+
+
+{
 "title": "",
 "tags": "",
 "keywords": "",
@@ -331,6 +342,17 @@
 
 
 {
+"title": "Info Label",
+"tags": "",
+"keywords": "info label, info, label, info-label, counter",
+"url": "/components/info-label.html",
+"folder": "components"
+}
+,
+
+
+
+{
 "title": "Inline Help",
 "tags": "",
 "keywords": "inline, help",
@@ -434,19 +456,6 @@
 "tags": "",
 "keywords": "message alert message-strip",
 "url": "/components/message-strip.html",
-"folder": "components"
-}
-,
-
-
-
-
-
-{
-"title": "Modal",
-"tags": "",
-"keywords": "modal, modals",
-"url": "/components/modal.html",
 "folder": "components"
 }
 ,

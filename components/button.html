@@ -27,7 +27,7 @@
 </script>
 <!-- End Google Tag Manager -->
 
-<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1581959122328612407">
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1583092772907683073">
 <link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -62,13 +62,13 @@
             Fundamental Library<span class="docs-top-nav__logo__accent"> Styles</span>
         </a>
 
-        <button id="mobile-sidenav-btn" class="fd-button--light sap-icon--menu2 header-section__sap-icon--menu2" aria-haspopup="true" aria-expanded="false" aria-label="Menu"></button>
+        <button id="mobile-sidenav-btn" class="fd-button--transparent sap-icon--menu2 header-section__sap-icon--menu2" aria-haspopup="true" aria-expanded="false" aria-label="Menu"></button>
 
         <!-- support links -->
         <div class="docs-top-nav__support fd-has-float-right">
 
             <span class="fd-has-align-items-center fd-has-margin-right-small">
-                <span>v0.6.0</span>
+                <span>v0.7.0</span>
                 <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
                     <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
                         <title>GitHub</title>
@@ -110,7 +110,9 @@
                 <div class="fd-input-group">
                     <input type="text" class="fd-input fd-input-group__input" id="docs-search" placeholder="search...">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
-                        <button class="fd-input-group__button fd-button--light sap-icon--search"></button>
+                        <button class="fd-button fd-button--transparent">
+                            <span class="fd-button--content sap-icon--search"></span>
+                        </button>
                     </span>
                 </div>
             </div>
@@ -437,6 +439,16 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/components/dialog.html"
+                   class="side-nav__links-link">Dialog</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/form.html"
                    class="side-nav__links-link">Forms</a>
             </li>
@@ -469,6 +481,16 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/image.html"
                    class="side-nav__links-link">Image</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/info-label.html"
+                   class="side-nav__links-link">Info Label</a>
             </li>
             
             
@@ -559,16 +581,6 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/message-strip.html"
                    class="side-nav__links-link">Message Strip</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
-                <a href="/fundamental-styles/components/modal.html"
-                   class="side-nav__links-link">Modal</a>
             </li>
             
             
@@ -797,191 +809,114 @@
 
     
 
-    <p class="docs-intro">Buttons allow users to perform actions.</p>
-<p>The priority of buttons within a page should be considered. For instance, only use the main button once within a page or modal.
-Color is also important. For instance, the most important button has a blue background where as a red button should only be used if the action it performs is potentially destructive.</p>
+    <p class="docs-intro">Buttons allow users to perform actions. All the buttons require the fd-buttonbase class and an additional modifier for each of the flavours.</p>
+
+<div class="fd-tile docs-component docs-component__">
+    <div class="fd-tile__content">
+		
+<button class="fd-button">Create</button>
+<button class="fd-button sap-icon--cart"></button>
+<button class="fd-button fd-button--emphasized ">Save</button>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button"</span><span class="nt">&gt;</span>Create<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button sap-icon--cart"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized "</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+<p>There are 3 button types:</p>
+
+<ul>
+  <li><strong>Simple button</strong> for one action
+<!-- - **Toggle button** for switching between different states --></li>
+  <li><strong>Segmented button</strong> for a group of options</li>
+  <li><strong>Menu button</strong> for a group of actions</li>
+</ul>
 
 <p><br /></p>
 
-<h2 id="button-options">Button Options</h2>
-<p>There are three emphasis styles used to indicate the importance of the button on the page.</p>
+<h2 id="design-types">Design Types</h2>
+
 <ul>
-  <li><strong>Emphasized Button</strong>: There should only be one highlighted button on the page. This is the primary call to action.</li>
-  <li><strong>Regular Button</strong>: The default button style and the most common button. There may be more than one on a page.</li>
-  <li><strong>Light Button</strong>: This is the lowest priority button and most often used with page content like appearing in a table or list. There may be more than one on the page.</li>
+  <li><strong>Default Button</strong> or Standard Button for neutral or informative (secondary) actions</li>
+  <li><strong>Emphasized Button</strong> Used for primary action</li>
+  <li><strong>Ghost Button</strong>  Used for secondary actions or primary button in cases where there is already a primary button on the page</li>
+  <li><strong>Positive Button</strong> Used for positive (secondary) actions</li>
+  <li><strong>Negative Button</strong> Used for negative (secondary) actions</li>
+  <li><strong>Attention Button</strong></li>
+  <li><strong>Transparent Button</strong> Used for secondary or negative path actions</li>
 </ul>
 
 <div class="fd-tile docs-component docs-component__">
     <div class="fd-tile__content">
 		
-<button class="fd-button--emphasized">Emphasized Button</button>
-<button class="fd-button">Regular Button</button>
-<button class="fd-button--light">Light Button</button>
+<button class="fd-button">Default Button</button>
+<button class="fd-button fd-button--emphasized">Emphasized Button</button>
+<button class="fd-button fd-button--ghost">Ghost Button</button>
+<button class="fd-button fd-button--positive">Positive Button</button>
+<button class="fd-button fd-button--negative">Negative Button</button>
+<button class="fd-button fd-button--attention">Attention Button</button>
+<button class="fd-button fd-button--transparent">Transparent Button</button>
 
 	</div>
 </div>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--emphasized"</span><span class="nt">&gt;</span>Emphasized Button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button"</span><span class="nt">&gt;</span>Regular Button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light"</span><span class="nt">&gt;</span>Light Button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button"</span><span class="nt">&gt;</span>Default Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized"</span><span class="nt">&gt;</span>Emphasized Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--ghost"</span><span class="nt">&gt;</span>Ghost Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--positive"</span><span class="nt">&gt;</span>Positive Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--negative"</span><span class="nt">&gt;</span>Negative Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--attention"</span><span class="nt">&gt;</span>Attention Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent"</span><span class="nt">&gt;</span>Transparent Button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+<p><br /></p>
 
 <h2 id="button-types">Button Types</h2>
 
-<p>There are five button types that can be combined with the emphasis styles.</p>
-<ul>
-  <li><strong>Action Button</strong>: The default button</li>
-  <li><strong>Standard Button</strong>: Neutral or informative color</li>
-  <li><strong>Positive Button</strong>: Used for positive actions such as approved, ok, yes.</li>
-  <li><strong>Medium Button</strong>: Used for warnings or inside message strips</li>
-  <li><strong>Negative Button</strong>:Used for negative actions such as decline, cancel, no.</li>
-</ul>
+<h3 id="simple-button">Simple Button</h3>
+
+<p>It is recommended to use simple button for specific actions, such as <em>Create, Edit, Save, Approve, Reject, Accept, Decline, OK, Cancel</em>.
+All the Design type buttons can be used as simple buttons.</p>
+
+<!-- ### Toggle Button
+
+Use the toggle button in a toolbar to activate/deactivate an item or element. It can also be used to switch between different states.
+
+
 
 <div class="fd-tile docs-component docs-component__">
     <div class="fd-tile__content">
 		
-<button class="fd-button">Action Button</button>
-<button class="fd-button--standard">Standard Button</button>
-<button class="fd-button--positive">Positive Button</button>
-<button class="fd-button--negative">Negative Button</button>
+<button class="fd-button is-selected">Default Button</button>
+<button class="fd-button fd-button--negative is-selected">Negative Toggled Button</button>
+<button class="fd-button fd-button--attention is-selected">Attention Button</button>
 
 	</div>
 </div>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button"</span><span class="nt">&gt;</span>Action Button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard"</span><span class="nt">&gt;</span>Standard Button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--positive"</span><span class="nt">&gt;</span>Positive Button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--negative"</span><span class="nt">&gt;</span>Negative Button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button is-selected"</span><span class="nt">&gt;</span>Default Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--negative is-selected"</span><span class="nt">&gt;</span>Negative Toggled Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--attention is-selected"</span><span class="nt">&gt;</span>Attention Button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
-<h2 id="button-sizes">Button Sizes</h2>
-<p>There are two sizes.</p>
+ -->
 
-<blockquote>
-  <p>The compact size is only used on desktop and it is full size when used on a touch device.</p>
-</blockquote>
+<h3 id="segmented-button-previously-known-as-button-group">Segmented Button (previously known as Button Group)</h3>
+
+<p>Group a series of buttons together on a single line with the segmented button. Only one of the options can be active at a time, the others remain or become inactive. The option can be activated by clicking on it. This type of button is comparable to a radio button group.</p>
 
 <div class="fd-tile docs-component docs-component__">
     <div class="fd-tile__content">
 		
-<button class="fd-button">Default</button>
-<button class="fd-button--compact">Compact</button>
 
-	</div>
-</div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--compact"</span><span class="nt">&gt;</span>Compact<span class="nt">&lt;/button&gt;</span></code></pre></figure>
-
-<h2 id="buttons-with-icon">Buttons with Icon</h2>
-<p>All buttons styles can be used with an icon. You can use the <code class="highlighter-rouge">sap-icon--{icon-name}</code> class to attach an icon to the button.
-Full list of all the available icons can be found on the <a href="icon.html">icons page</a>.</p>
-
-<div class="fd-tile docs-component docs-component__">
-    <div class="fd-tile__content">
-		
-<button class="fd-button--emphasized sap-icon--cart">Add to Cart</button>
-<button class="fd-button sap-icon--cart">Add to Cart</button>
-<button class="fd-button--light sap-icon--cart">Add to Cart</button>
-<button class="fd-button--positive sap-icon--accept">Approve</button>
-<button class="fd-button--negative sap-icon--decline">Reject</button>
-<br /><br />
-<button class="fd-button sap-icon--cart"></button>
-<button class="fd-button--light sap-icon--cart"></button>
-<button class="fd-button--standard sap-icon--filter"></button>
-<button class="fd-button--positive sap-icon--accept"></button>
-<button class="fd-button--negative sap-icon--decline"></button>
-
-	</div>
-</div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--emphasized sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--positive sap-icon--accept"</span><span class="nt">&gt;</span>Approve<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--negative sap-icon--decline"</span><span class="nt">&gt;</span>Reject<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;br&gt;&lt;br&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button sap-icon--cart"</span><span class="nt">&gt;&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light sap-icon--cart"</span><span class="nt">&gt;&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard sap-icon--filter"</span><span class="nt">&gt;&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--positive sap-icon--accept"</span><span class="nt">&gt;&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--negative sap-icon--decline"</span><span class="nt">&gt;&lt;/button&gt;</span></code></pre></figure>
-
-<h2 id="standard-button-state">Standard button state</h2>
-<p>The buttons can also be set to a state:</p>
-
-<ul>
-  <li><strong>Normal</strong>: The default state of the button. It can be clicked/tapped to perform the corresponding action.</li>
-  <li><strong>Selected</strong>: Used to signal this button is selected among other buttons. This state can be rendered using <code class="highlighter-rouge">is-selected</code> class or <code class="highlighter-rouge">aria-selected="true"</code> attribute for accessibility.</li>
-  <li><strong>Disabled</strong>: It cannot be clicked/tapped. This state can be rendered using <code class="highlighter-rouge">is-disabled</code> class or <code class="highlighter-rouge">aria-disabled="true"</code> attribute for accessibility.</li>
-</ul>
-
-<div class="fd-tile docs-component docs-component__">
-    <div class="fd-tile__content">
-		
-<button class="fd-button--emphasized">Normal State</button>
-<button class="fd-button--emphasized" aria-selected="true">Selected State</button>
-<button class="fd-button--emphasized" aria-disabled="true">Disabled State</button>
-<br /><br />
-<button class="fd-button">Normal State</button>
-<button class="fd-button" aria-selected="true">Selected State</button>
-<button class="fd-button" aria-disabled="true">Disabled State</button>
-<br /><br />
-<button class="fd-button--light">Normal State</button>
-<button class="fd-button--light" aria-selected="true">Selected State</button>
-<button class="fd-button--light" aria-disabled="true">Disabled State</button>
-<br /><br />
-<button class="fd-button--standard">Normal State</button>
-<button class="fd-button--standard" aria-selected="true">Selected State</button>
-<button class="fd-button--standard" aria-disabled="true">Disabled State</button>
-<br /><br />
-<button class="fd-button--positive">Normal State</button>
-<button class="fd-button--positive" aria-selected="true">Selected State</button>
-<button class="fd-button--positive" aria-disabled="true">Disabled State</button>
-<br /><br />
-<button class=" fd-button--negative">Normal State</button>
-<button class=" fd-button--negative" aria-selected="true">Selected State</button>
-<button class=" fd-button--negative" aria-disabled="true">Disabled State</button>
-
-	</div>
-</div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--emphasized"</span><span class="nt">&gt;</span>Normal State<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--emphasized"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>Selected State<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--emphasized"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>Disabled State<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;br&gt;&lt;br&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button"</span><span class="nt">&gt;</span>Normal State<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>Selected State<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>Disabled State<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;br&gt;&lt;br&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light"</span><span class="nt">&gt;</span>Normal State<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>Selected State<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>Disabled State<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;br&gt;&lt;br&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard"</span><span class="nt">&gt;</span>Normal State<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>Selected State<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>Disabled State<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;br&gt;&lt;br&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--positive"</span><span class="nt">&gt;</span>Normal State<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--positive"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>Selected State<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--positive"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>Disabled State<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;br&gt;&lt;br&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--negative"</span><span class="nt">&gt;</span>Normal State<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--negative"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>Selected State<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">" fd-button--negative"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>Disabled State<span class="nt">&lt;/button&gt;</span></code></pre></figure>
-
-<h1 id="button-group">Button Group</h1>
-<p>Group a series of buttons together on a single line with the button group.</p>
-
-<div class="fd-tile docs-component docs-component__">
-    <div class="fd-tile__content">
-		
-<div class="fd-button-group" role="group" aria-label="Group label">
+<div class="fd-segmented-button" role="group" aria-label="Group label">
   <button class="fd-button sap-icon--survey"></button>
-  <button class="fd-button sap-icon--pie-chart" aria-pressed="true"></button>
+  <button class="fd-button sap-icon--pie-chart is-selected" aria-pressed="true"></button>
   <button class="fd-button sap-icon--pool"></button>
 </div>
 
-<div class="fd-button-group" role="group" aria-label="Group label">
-  <button class="fd-button fd-button--compact" aria-pressed="true">Left</button>
+<div class="fd-segmented-button" role="group" aria-label="Group label">
+  <button class="fd-button fd-button--compact is-selected" aria-pressed="true">Left</button>
   <button class="fd-button fd-button--compact">Middle</button>
   <button class="fd-button fd-button--compact">Right</button>
 </div>
@@ -989,24 +924,107 @@ Full list of all the available icons can be found on the <a href="icon.html">ico
 	</div>
 </div>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-segmented-button"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button sap-icon--survey"</span><span class="nt">&gt;&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button sap-icon--pie-chart"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button sap-icon--pie-chart is-selected"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/button&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button sap-icon--pool"</span><span class="nt">&gt;&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-segmented-button"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact is-selected"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact"</span><span class="nt">&gt;</span>Middle<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h1 id="split-button">Split Button</h1>
-<p>Button with multiple actions</p>
+<h2 id="menu-button">Menu Button</h2>
+
+<p>The Menu Button allows for multiple actions.
+There are two different types of menu buttons. Both can contain items with submenus.</p>
+
+<h3 id="regular-menu-button">Regular Menu Button</h3>
+
+<p>When the user activates the button, the menu opens. This is the default type.</p>
 
 <div class="fd-tile docs-component docs-component__">
     <div class="fd-tile__content">
 		
+<button class="fd-button fd-button--menu">Action Button</button>
+<button class="fd-button fd-button--ghost fd-button--menu">Ghost Button</button>
+<button class="fd-button fd-button--positive fd-button--menu">Positive Button</button>
+<button class="fd-button fd-button--negative fd-button--menu">Negative Button</button>
+<button class="fd-button fd-button--attention fd-button--menu">Attention Button</button>
+<br /><br />
+<button class="fd-button fd-button--menu" aria-disabled="true" disabled="">Action Button</button>
+<button class="fd-button fd-button--ghost fd-button--menu" aria-disabled="true" disabled="">Ghost Button</button>
+<button class="fd-button fd-button--positive fd-button--menu" aria-disabled="true" disabled="">Positive Button</button>
+<button class="fd-button fd-button--negative fd-button--menu" aria-disabled="true" disabled="">Negative Button</button>
+<button class="fd-button fd-button--attention fd-button--menu" aria-disabled="true" disabled="">Attention Button</button>
+<br /><br />
+<button class="fd-button fd-button--emphasized fd-button--menu sap-icon--cart">Add to Cart</button>
+<button class="fd-button fd-button--menu sap-icon--cart">Add to Cart</button>
+<button class="fd-button fd-button--transparent fd-button--menu sap-icon--cart">Add to Cart</button>
+<button class="fd-button fd-button--emphasized fd-button--menu fd-button--positive sap-icon--accept">Approve</button>
+<button class="fd-button fd-button--negative fd-button--menu sap-icon--decline">Reject</button>
+<button class="fd-button fd-button--attention fd-button--menu sap-icon--warning">Attention</button>
+<br /><br />
+<button class="fd-button fd-button--menu sap-icon--cart"></button>
+<button class="fd-button fd-button--transparent fd-button--menu sap-icon--cart"></button>
+<button class="fd-button fd-button fd-button--menu sap-icon--filter"></button>
+<button class="fd-button fd-button--menu fd-button--positive sap-icon--accept"></button>
+<button class="fd-button fd-button--menu fd-button--negative sap-icon--decline"></button>
+<button class="fd-button fd-button--menu fd-button--attention sap-icon--warning"></button>
+<br /><br />
+<button class="fd-button fd-button--menu">Default</button>
+<button class="fd-button fd-button--compact fd-button--menu">Compact</button>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--menu"</span><span class="nt">&gt;</span>Action Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--ghost fd-button--menu"</span><span class="nt">&gt;</span>Ghost Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--positive fd-button--menu"</span><span class="nt">&gt;</span>Positive Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--negative fd-button--menu"</span><span class="nt">&gt;</span>Negative Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--attention fd-button--menu"</span><span class="nt">&gt;</span>Attention Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--menu"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Action Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--ghost fd-button--menu"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Ghost Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--positive fd-button--menu"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Positive Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--negative fd-button--menu"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Negative Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--attention fd-button--menu"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Attention Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized fd-button--menu sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--menu sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--menu sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized fd-button--menu fd-button--positive sap-icon--accept"</span><span class="nt">&gt;</span>Approve<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--negative fd-button--menu sap-icon--decline"</span><span class="nt">&gt;</span>Reject<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--attention fd-button--menu sap-icon--warning"</span><span class="nt">&gt;</span>Attention<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--menu sap-icon--cart"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--menu sap-icon--cart"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--menu sap-icon--filter"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--menu fd-button--positive sap-icon--accept"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--menu fd-button--negative sap-icon--decline"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--menu fd-button--attention sap-icon--warning"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--menu"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--menu"</span><span class="nt">&gt;</span>Compact<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+<h3 id="split-menu-button">Split Menu Button</h3>
+
+<p>The menu button can also be split into 2 areas: the text label and the icon. The separator between them signals that the two areas result in different actions. The user has two choices: 1- activating the text label on the button triggers the action or 2- activating the arrow opens the menu. The split button consolidates a variety of commands, especially when one of the commands is used more often.</p>
+
+<p>In split mode, the text label depends on the default action. If the default action is displayed as an icon only, all the menu items must contain icons.</p>
+
+<p><strong>Split Menu Button Behaviors</strong>
+The split menu button can have two different behaviors:</p>
+
+<p>The button always triggers the default action set by the app developer. If no default action has been defined, the first item in the menu list becomes the default.
+The button triggers the last action chosen by the user. Initially, it also triggers the default action. However, when the user selects a different action, this user action becomes the default, and the button text label changes accordingly. The button has a fixed size and the text truncates if the menu item exceeds the available width (as with the combo box).</p>
+
+<div class="fd-tile docs-component docs-component__">
+    <div class="fd-tile__content">
+		
+
 <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
   <button class="fd-button sap-icon--cart" aria-label="button">Button with text</button>
   <button class="fd-button sap-icon--slim-arrow-down" aria-controls="t4c0o273" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
@@ -1023,8 +1041,8 @@ Full list of all the available icons can be found on the <a href="icon.html">ico
 </div>
 
 <div class="fd-button-split" role="group" aria-label="button-split">
-  <button class="fd-button--emphasized sap-icon--cart" aria-label="button">Button with text</button>
-  <button class="fd-button--emphasized sap-icon--slim-arrow-down" aria-controls="t4c0o2732" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+  <button class="fd-button fd-button--emphasized sap-icon--cart" aria-label="button">Button with text</button>
+  <button class="fd-button fd-button--emphasized sap-icon--slim-arrow-down" aria-controls="t4c0o2732" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="t4c0o2732">
     <nav class="fd-menu">
         <ul class="fd-menu__list">
@@ -1059,8 +1077,8 @@ Full list of all the available icons can be found on the <a href="icon.html">ico
 <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button-split"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"button-split"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--emphasized sap-icon--cart"</span> <span class="na">aria-label=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button with text<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--emphasized sap-icon--slim-arrow-down"</span> <span class="na">aria-controls=</span><span class="s">"t4c0o2732"</span> 
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized sap-icon--cart"</span> <span class="na">aria-label=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button with text<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized sap-icon--slim-arrow-down"</span> <span class="na">aria-controls=</span><span class="s">"t4c0o2732"</span> 
   <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"More"</span><span class="nt">&gt;&lt;/button&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"</span>  <span class="na">aria-hidden=</span><span class="s">"true"</span> 
     <span class="na">id=</span><span class="s">"t4c0o2732"</span><span class="nt">&gt;</span>
@@ -1075,36 +1093,222 @@ Full list of all the available icons can be found on the <a href="icon.html">ico
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
+<p><br /></p>
+
+<h2 id="content-density---button-sizes">Content Density - Button Sizes</h2>
+
+<p>All the buttons support the cozy and compact form factors.</p>
+
+<div class="fd-tile docs-component docs-component__">
+    <div class="fd-tile__content">
+		
+<button class="fd-button">Save</button>
+<button class="fd-button fd-button sap-icon--cart">Add to Cart</button>
+<button class="fd-button fd-button--ghost sap-icon--cart">Add to Cart</button>
+<button class="fd-button fd-button--emphasized sap-icon--cart">Add to Cart</button>
+<button class="fd-button fd-button--transparent sap-icon--cart">Add to Cart</button>
+<button class="fd-button fd-button--positive sap-icon--accept">Approve</button>
+<button class="fd-button fd-button--negative sap-icon--decline">Reject</button>
+<button class="fd-button fd-button--attention sap-icon--warning">Attention</button>
+<br /><br />
+<button class="fd-button fd-button--compact">Edit</button>
+<button class="fd-button fd-button fd-button--compact">Edit</button>
+<button class="fd-button fd-button--ghost fd-button--compact">Edit</button>
+<button class="fd-button fd-button--emphasized fd-button--compact sap-icon--cart">Add to Cart</button>
+<button class="fd-button fd-button--transparent fd-button--compact sap-icon--cart">Add to Cart</button>
+<button class="fd-button fd-button--positive fd-button--compact sap-icon--accept">Approve</button>
+<button class="fd-button fd-button--negative fd-button--compact sap-icon--decline">Reject</button>
+<button class="fd-button fd-button--attention fd-button--compact sap-icon--warning">Attention</button>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button"</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--ghost sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--positive sap-icon--accept"</span><span class="nt">&gt;</span>Approve<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--negative sap-icon--decline"</span><span class="nt">&gt;</span>Reject<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--attention sap-icon--warning"</span><span class="nt">&gt;</span>Attention<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact"</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--compact"</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--ghost fd-button--compact"</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized fd-button--compact sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--compact sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--positive fd-button--compact sap-icon--accept"</span><span class="nt">&gt;</span>Approve<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--negative fd-button--compact sap-icon--decline"</span><span class="nt">&gt;</span>Reject<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--attention fd-button--compact sap-icon--warning"</span><span class="nt">&gt;</span>Attention<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+<p><br /></p>
+
+<h2 id="icon-and-text">Icon and Text</h2>
+
+<p>The buttons can contain icons and/or text. The recommendation is to use either one or the other, not both. Use icon for buttons that contain very basic standard icon metaphors (e.g. <em>Back to previous screen, Create a new item, Remove from list, Edit, …</em>)</p>
+
+<p>All button styles can be used with an icon. You can use the <code class="highlighter-rouge">sap-icon--{icon-name}</code> class to attach an icon to the button.
+The full list of all the available icons can be found on the <a href="icon.html">icons page</a>.</p>
+
+<div class="fd-tile docs-component docs-component__">
+    <div class="fd-tile__content">
+		
+<button class="fd-button fd-button--emphasized sap-icon--cart">Add to Cart</button>
+<button class="fd-button sap-icon--cart">Add to Cart</button>
+<button class="fd-button fd-button--transparent sap-icon--cart">Add to Cart</button>
+<button class="fd-button fd-button sap-icon--cart">Add to Cart</button>
+<button class="fd-button fd-button--ghost sap-icon--cart">Add to Cart</button>
+<button class="fd-button fd-button--positive sap-icon--accept">Approve</button>
+<button class="fd-button fd-button--negative sap-icon--decline">Reject</button>
+<button class="fd-button fd-button--attention sap-icon--warning">Attention</button>
+<br /><br />
+<button class="fd-button sap-icon--cart"></button>
+<button class="fd-button fd-button--transparent sap-icon--cart"></button>
+<button class="fd-button fd-button sap-icon--filter"></button>
+<button class="fd-button fd-button--ghost sap-icon--filter"></button>
+<button class="fd-button fd-button--positive sap-icon--accept"></button>
+<button class="fd-button fd-button--negative sap-icon--decline"></button>
+<button class="fd-button fd-button--attention sap-icon--decline"></button>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--ghost sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--positive sap-icon--accept"</span><span class="nt">&gt;</span>Approve<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--negative sap-icon--decline"</span><span class="nt">&gt;</span>Reject<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--attention sap-icon--warning"</span><span class="nt">&gt;</span>Attention<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button sap-icon--cart"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--cart"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button sap-icon--filter"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--ghost sap-icon--filter"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--positive sap-icon--accept"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--negative sap-icon--decline"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--attention sap-icon--decline"</span><span class="nt">&gt;&lt;/button&gt;</span></code></pre></figure>
+
+<h2 id="standard-button-state">Standard button state</h2>
+
+<p>The button provides feedback for “normal”, “hover”, “selected”, “focus” and “disabled” states:</p>
+
+<ul>
+  <li><strong>Normal</strong>: The default state of the button. It can be clicked/tapped to perform the corresponding action.</li>
+  <li><strong>Selected</strong>: Used to signal that this button is selected among other buttons. This state can be rendered using the <code class="highlighter-rouge">is-selected</code> class or the <code class="highlighter-rouge">aria-selected="true"</code> attribute for accessibility.</li>
+  <li><strong>Disabled</strong>: It cannot be clicked/tapped. This state can be rendered using the <code class="highlighter-rouge">is-disabled</code> class and the <code class="highlighter-rouge">aria-disabled="true"</code> attribute for accessibility.</li>
+</ul>
+
+<div class="fd-tile docs-component docs-component__">
+    <div class="fd-tile__content">
+		
+<button class="fd-button fd-button--emphasized">Normal State</button>
+<button class="fd-button fd-button--emphasized is-selected" aria-selected="true">Selected State</button>
+<button class="fd-button fd-button--emphasized" aria-disabled="true" disabled="">Disabled State</button>
+<br /><br />
+<button class="fd-button">Normal State</button>
+<button class="fd-button is-selected" aria-selected="true">Selected State</button>
+<button class="fd-button is-disabled" aria-disabled="true" disabled="">Disabled State</button>
+<br /><br />
+<button class="fd-button fd-button--transparent">Normal State</button>
+<button class="fd-button fd-button--transparent is-selected" aria-selected="true">Selected State</button>
+<button class="fd-button fd-button--transparent is-disabled" aria-disabled="true" disabled="">Disabled State</button>
+<br /><br />
+<button class="fd-button fd-button">Normal State</button>
+<button class="fd-button fd-button is-selected" aria-selected="true">Selected State</button>
+<button class="fd-button fd-button " aria-disabled="true" disabled="">Disabled State</button>
+<br /><br />
+<button class="fd-button fd-button--ghost">Normal State</button>
+<button class="fd-button fd-button--ghost is-selected" aria-selected="true">Selected State</button>
+<button class="fd-button fd-button--ghost" aria-disabled="true" disabled="">Disabled State</button>
+<br /><br />
+<button class="fd-button fd-button--positive">Normal State</button>
+<button class="fd-button fd-button--positive is-selected" aria-selected="true">Selected State</button>
+<button class="fd-button fd-button--positive" aria-disabled="true" disabled="">Disabled State</button>
+<br /><br />
+<button class="fd-button fd-button--negative">Normal State</button>
+<button class="fd-button fd-button--negative is-selected" aria-selected="true">Selected State</button>
+<button class="fd-button fd-button--negative" aria-disabled="true" disabled="">Disabled State</button>
+<br /><br />
+<button class="fd-button fd-button--attention">Normal State</button>
+<button class="fd-button fd-button--attention is-selected" aria-selected="true">Selected State</button>
+<button class="fd-button fd-button--attention" aria-disabled="true" disabled="">Disabled State</button>
+
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized"</span><span class="nt">&gt;</span>Normal State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized is-selected"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>Selected State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button"</span><span class="nt">&gt;</span>Normal State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button is-selected"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>Selected State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button is-disabled"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent"</span><span class="nt">&gt;</span>Normal State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent is-selected"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>Selected State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent is-disabled"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button"</span><span class="nt">&gt;</span>Normal State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button is-selected"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>Selected State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button "</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--ghost"</span><span class="nt">&gt;</span>Normal State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--ghost is-selected"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>Selected State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--ghost"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--positive"</span><span class="nt">&gt;</span>Normal State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--positive is-selected"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>Selected State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--positive"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--negative"</span><span class="nt">&gt;</span>Normal State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--negative is-selected"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>Selected State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--negative"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--attention"</span><span class="nt">&gt;</span>Normal State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--attention is-selected"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>Selected State<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--attention"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled State<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+<p>The priority of buttons within a page should be considered. For instance, only use the main button once within a page or dialog.
+Color is also important. For instance, the most important button has a blue background whereas a red button should only be used if the action it performs is potentially destructive.</p>
+
+<p><br /></p>
+
 <h2 id="button-rtl-support">Button RTL support</h2>
 
 <div class="fd-tile docs-component docs-component__">
     <div class="fd-tile__content">
 		
+
 <div dir="rtl">
-  <button class="fd-button--emphasized sap-icon--cart">Add to Cart</button>
+  <button class="fd-button fd-button--emphasized sap-icon--cart">Add to Cart</button>
   <button class="fd-button sap-icon--cart">Add to Cart</button>
-  <button class="fd-button--light sap-icon--cart">Add to Cart</button>
-  <button class="fd-button--positive sap-icon--accept">Approve</button>
-  <button class="fd-button--negative sap-icon--decline">Reject</button>
+  <button class="fd-button fd-button--transparent sap-icon--cart">Add to Cart</button>
+  <button class="fd-button fd-button sap-icon--cart">Add to Cart</button>
+  <button class="fd-button fd-button--ghost sap-icon--cart">Add to Cart</button>
+  <button class="fd-button fd-button--positive sap-icon--accept">Approve</button>
+  <button class="fd-button fd-button--negative sap-icon--decline">Reject</button>
+  <button class="fd-button fd-button--attention sap-icon--warning">Attention</button>
   <br /><br />
-  <button class="fd-button--emphasized fd-button--menu sap-icon--cart">Add to Cart</button>
+  <button class="fd-button fd-button--emphasized fd-button--menu sap-icon--cart">Add to Cart</button>
   <button class="fd-button fd-button--menu sap-icon--cart">Add to Cart</button>
-  <button class="fd-button--light fd-button--menu sap-icon--cart">Add to Cart</button>
-  <button class="fd-button--emphasized fd-button--positive fd-button--menu sap-icon--accept">Approve</button>
-  <button class="fd-button--emphasized fd-button--negative fd-button--menu sap-icon--decline">Reject</button>
+  <button class="fd-button fd-button--transparent fd-button--menu sap-icon--cart">Add to Cart</button>
   <br /><br />
   <button class="fd-button sap-icon--cart"></button>
-  <button class="fd-button--light sap-icon--cart"></button>
-  <button class="fd-button--standard sap-icon--filter"></button>
-  <button class="fd-button--positive sap-icon--accept"></button>
-  <button class="fd-button--negative sap-icon--decline"></button>
-  <div class="fd-button-group" role="group" aria-label="Group label">
+  <button class="fd-button fd-button--transparent sap-icon--cart"></button>
+  <button class="fd-button fd-button sap-icon--filter"></button>
+  <button class="fd-button fd-button--ghost sap-icon--filter"></button>
+  <button class="fd-button fd-button--positive sap-icon--accept"></button>
+  <button class="fd-button fd-button--negative sap-icon--decline"></button>
+  <button class="fd-button fd-button--attention sap-icon--decline"></button>
+  <div class="fd-segmented-button" role="group" aria-label="Group label">
     <button class="fd-button sap-icon--survey"></button>
     <button class="fd-button sap-icon--pie-chart" aria-pressed="true"></button>
     <button class="fd-button sap-icon--pool"></button>
   </div>
 
-  <div class="fd-button-group" role="group" aria-label="Group label">
+  <div class="fd-segmented-button" role="group" aria-label="Group label">
     <button class="fd-button fd-button--compact" aria-pressed="true">Left</button>
     <button class="fd-button fd-button--compact">Middle</button>
     <button class="fd-button fd-button--compact">Right</button>
@@ -1115,93 +1319,38 @@ Full list of all the available icons can be found on the <a href="icon.html">ico
 </div>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">dir=</span><span class="s">"rtl"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--emphasized sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--positive sap-icon--accept"</span><span class="nt">&gt;</span>Approve<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--negative sap-icon--decline"</span><span class="nt">&gt;</span>Reject<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--ghost sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--positive sap-icon--accept"</span><span class="nt">&gt;</span>Approve<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--negative sap-icon--decline"</span><span class="nt">&gt;</span>Reject<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--attention sap-icon--warning"</span><span class="nt">&gt;</span>Attention<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;br&gt;&lt;br&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--emphasized fd-button--menu sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--emphasized fd-button--menu sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--menu sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light fd-button--menu sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--emphasized fd-button--positive fd-button--menu sap-icon--accept"</span><span class="nt">&gt;</span>Approve<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--emphasized fd-button--negative fd-button--menu sap-icon--decline"</span><span class="nt">&gt;</span>Reject<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--menu sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;br&gt;&lt;br&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button sap-icon--cart"</span><span class="nt">&gt;&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light sap-icon--cart"</span><span class="nt">&gt;&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard sap-icon--filter"</span><span class="nt">&gt;&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--positive sap-icon--accept"</span><span class="nt">&gt;&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--negative sap-icon--decline"</span><span class="nt">&gt;&lt;/button&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--cart"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button sap-icon--filter"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--ghost sap-icon--filter"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--positive sap-icon--accept"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--negative sap-icon--decline"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--attention sap-icon--decline"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-segmented-button"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button sap-icon--survey"</span><span class="nt">&gt;&lt;/button&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button sap-icon--pie-chart"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/button&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button sap-icon--pool"</span><span class="nt">&gt;&lt;/button&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-segmented-button"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact"</span><span class="nt">&gt;</span>Middle<span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<h2 id="menu-button">Menu Button</h2>
-
-<div class="fd-tile docs-component docs-component__">
-    <div class="fd-tile__content">
-		
-<button class="fd-button fd-button--menu">Action Button</button>
-<button class="fd-button--standard fd-button--menu">Standard Button</button>
-<button class="fd-button--positive fd-button--menu">Positive Button</button>
-<button class="fd-button--negative fd-button--menu">Negative Button</button>
-<br /><br />
-<button class="fd-button fd-button--menu" aria-disabled="true">Action Button</button>
-<button class="fd-button--standard fd-button--menu" aria-disabled="true">Standard Button</button>
-<button class="fd-button--positive fd-button--menu" aria-disabled="true">Positive Button</button>
-<button class="fd-button--negative fd-button--menu" aria-disabled="true">Negative Button</button>
-<br /><br />
-<button class="fd-button--emphasized fd-button--menu sap-icon--cart">Add to Cart</button>
-<button class="fd-button fd-button--menu sap-icon--cart">Add to Cart</button>
-<button class="fd-button--light fd-button--menu sap-icon--cart">Add to Cart</button>
-<button class="fd-button--emphasized fd-button--menu fd-button--positive sap-icon--accept">Approve</button>
-<button class="fd-button--negative fd-button--menu sap-icon--decline">Reject</button>
-<br /><br />
-<button class="fd-button fd-button--menu sap-icon--cart"></button>
-<button class="fd-button--light fd-button--menu sap-icon--cart"></button>
-<button class="fd-button--standard fd-button--menu sap-icon--filter"></button>
-<button class="fd-button--menu fd-button--positive sap-icon--accept"></button>
-<button class="fd-button--menu fd-button--negative sap-icon--decline"></button>
-<br /><br />
-<button class="fd-button fd-button--menu">Default</button>
-<button class="fd-button--compact fd-button--menu">Compact</button>
-
-	</div>
-</div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--menu"</span><span class="nt">&gt;</span>Action Button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard fd-button--menu"</span><span class="nt">&gt;</span>Standard Button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--positive fd-button--menu"</span><span class="nt">&gt;</span>Positive Button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--negative fd-button--menu"</span><span class="nt">&gt;</span>Negative Button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;br&gt;&lt;br&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--menu"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>Action Button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard fd-button--menu"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>Standard Button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--positive fd-button--menu"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>Positive Button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--negative fd-button--menu"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>Negative Button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;br&gt;&lt;br&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--emphasized fd-button--menu sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--menu sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light fd-button--menu sap-icon--cart"</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--emphasized fd-button--menu fd-button--positive sap-icon--accept"</span><span class="nt">&gt;</span>Approve<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--negative fd-button--menu sap-icon--decline"</span><span class="nt">&gt;</span>Reject<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;br&gt;&lt;br&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--menu sap-icon--cart"</span><span class="nt">&gt;&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--light fd-button--menu sap-icon--cart"</span><span class="nt">&gt;&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--standard fd-button--menu sap-icon--filter"</span><span class="nt">&gt;&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--menu fd-button--positive sap-icon--accept"</span><span class="nt">&gt;&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--menu fd-button--negative sap-icon--decline"</span><span class="nt">&gt;&lt;/button&gt;</span>
-<span class="nt">&lt;br&gt;&lt;br&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--menu"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button--compact fd-button--menu"</span><span class="nt">&gt;</span>Compact<span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
 
 
