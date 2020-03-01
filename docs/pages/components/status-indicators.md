@@ -7,6 +7,8 @@ toc: false
 permalink: components/status-indicators.html
 folder: components
 ---
+> **DEPRECATED**. Depending on the use case, use either the [InfoLabel](info-label.html) component or the **ObjectStatusCoponent** component 
+{: .docs-deprecated}
 
 Status indicators are used to easily highlight the state of an object. `badge`, `label`, `status-label` and `counter`
 {: .docs-intro}

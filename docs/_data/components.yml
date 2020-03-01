@@ -27,6 +27,9 @@
     - title: Image
       meta: image
 
+    - title: Info Label
+      meta: info-label
+
     - title: Inline Help
       meta: inline-help
 
