@@ -292,7 +292,7 @@ Draggable mode can be visualized using following classes:
 ## Examples
 ## Select Dialog
 {% capture dialog-select %}
-    <button class="fd-button--primary" onclick="toggleDialog('select-dialog-example', true)">Open example</button>
+    <button class="fd-button" onclick="toggleDialog('select-dialog-example', true)">Open example</button>
     <div class="fd-dialog" id="select-dialog-example">
         <div class="fd-dialog__content">
             <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
@@ -362,7 +362,7 @@ Draggable mode can be visualized using following classes:
 
 ## Loading Dialog
 {% capture dialog-loading %}
-    <button class="fd-button--primary" onclick="toggleDialog('loading-dialog-example', true)">Open example</button>
+    <button class="fd-button" onclick="toggleDialog('loading-dialog-example', true)">Open example</button>
     <div class="fd-dialog" id="loading-dialog-example">
         <div class="fd-dialog__content fd-dialog__content--s">
             <header class="fd-dialog__header fd-bar fd-bar--header">
