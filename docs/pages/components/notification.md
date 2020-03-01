@@ -19,7 +19,7 @@ summary:
 <div class="fd-notification">
     <div class="fd-notification__header">
         <div class="fd-notification__title">Default Notification Title</div>
-        <button class="fd-button fd-button--transparent sap-icon--decline fd-notification__close"></button>
+        <button class="fd-button fd-button--compact fd-button--transparent sap-icon--decline fd-notification__close"></button>
     </div>
     <div class="fd-notification__body">
         <div class="fd-notification__content">
