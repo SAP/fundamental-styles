@@ -1,35 +1,34 @@
 @import "./settings";
 @import "./mixins";
 @import "./functions";
-
-/*!
-.fd-action-bar
-	.fd-action-bar__title
-	.fd-action-bar__actions+(.is-disabled | aria-hidden)?
-        .fd-action-bar__action-item
-*/
 $block: #{$fd-namespace}-action-bar;
 
 .#{$block} {
-
   // LOCAL VARS (set all themeable properties, always include !default)
-  $fd-action-bar-background-color: transparent !default;
-  $fd-action-bar-description-color: fd-color("text", 3);
-  $fd-action-bar-height: fd-space(16) !default;
+  $fd-action-bar-background-color: var(--sapPageHeader_Background) !default;
+  $fd-action-bar-description-color: var(--sapContent_LabelColor) !default;
+  $fd-action-bar-title-color: var(--sapGroup_TitleTextColor) !default;
+  $fd-action-bar-min-height: 3rem;
+  $fd-action-bar-max-height: 4.25rem;
   $fd-action-bar-transition-params: 0.25s ease-in !default;
 
-  --fd-action-bar-backbtn-separator-color: var(--fd-color-neutral-3);
-  $fd-action-bar-backbtn-separator-color: fd-color("neutral", 3);
+  @mixin fd-truncate-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
-  // LOCAL mixins
-  @mixin fd-action-bar-responsive {
-    // Changed from deprecated fd-screen(xs)
-    @include fd-screen(s) {
-      white-space: nowrap;
-      width: calc(100% - 10px);
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
+  @mixin fd-action-bar-description {
+    @include fd-reset();
+
+    color: var(--sapContent_LabelColor);
+
+    @include fd-hide-on-mobile();
+    @include fd-truncate-text();
+
+    width: 100%;
+    height: 1.25rem;
+    vertical-align: middle;
   }
 
   @mixin fd-hide-on-mobile {
@@ -43,25 +42,28 @@ $block: #{$fd-namespace}-action-bar;
     }
   }
 
-  // BLOCK BASE *******************************************
+  @mixin responsive-action-bar($padding-x: 1rem) {
+    padding: 0.5rem $padding-x;
+  }
+
   @include fd-reset();
 
   background-color: $fd-action-bar-background-color;
-  min-height: $fd-action-bar-height;
-  padding-right: 0;
-  padding-left: 0;
-  display: flex;
-  align-items: baseline;
+  min-height: $fd-action-bar-min-height;
+  max-height: $fd-action-bar-max-height;
+  word-wrap: break-word;
+  justify-content: space-between;
+
+  @include responsive-action-bar($padding-x: 2rem);
 
   &__header {
     @include fd-reset();
-    @include fd-type("0");
-    @include fd-action-bar-responsive();
 
-    margin-bottom: 0;
-    padding-top: fd-space("s");
-    padding-bottom: fd-space("s");
+    height: 2rem;
     flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
   &__back {
@@ -72,42 +74,47 @@ $block: #{$fd-namespace}-action-bar;
     @include fd-hide-on-mobile();
 
     position: relative;
-    margin-right: fd-space(5);
-
-    &::after {
-      content: '';
-      width: 0;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      right: - fd-space(1);
-      border-right-style: solid;
-      border-right-width: 1px;
-
-      @include fd-var-color("border-right-color", $fd-action-bar-backbtn-separator-color, --fd-action-bar-backbtn-separator-color);
-    }
+    margin-right: 0.5rem;
 
     @include fd-rtl() {
-      transform: scaleX(-1);
-      margin-left: fd-space(5);
       margin-right: 0;
+      margin-left: 0.5rem;
     }
   }
 
   &__title {
     @include fd-reset();
     @include fd-heading();
-    @include fd-type("4");
-    @include fd-action-bar-responsive();
+    @include fd-truncate-text();
 
-    margin-bottom: fd-space(base);
+    font-size: var(--sapFontHeader3Size);
+    font-family: var(--sapFontHeaderFamily);
+    color: $fd-action-bar-title-color;
+    flex-grow: 1;
+    line-height: 1.375rem;
+    padding-right: 0.5rem;
+    vertical-align: middle;
+    margin: 0;
+
+    @include fd-rtl() {
+      padding-right: 0;
+      padding-left: 0.5rem;
+    }
   }
 
   &__description {
-    @include fd-reset();
-    @include fd-var-color("color", $fd-action-bar-description-color, --fd-color-text-3);
-    @include fd-type("0");
-    @include fd-hide-on-mobile();
+    @include fd-action-bar-description();
+  }
+
+  &__description--with-backBtn {
+    @include fd-action-bar-description();
+
+    padding-left: 2.5rem;
+
+    @include fd-rtl() {
+      padding-left: 0;
+      padding-right: 2.5rem;
+    }
   }
 
   &__actions {
@@ -117,6 +124,7 @@ $block: #{$fd-namespace}-action-bar;
     align-items: center;
     transition: opacity $fd-action-bar-transition-params;
     visibility: visible;
+    height: 2rem;
 
     &.is-disabled,
     &[aria-hidden="true"] {
@@ -126,7 +134,7 @@ $block: #{$fd-namespace}-action-bar;
 
     & > * {
       @include fd-children() {
-        margin-left: fd-space(2);
+        margin-left: 0.5rem;
       }
 
       &:first-child {
@@ -135,7 +143,7 @@ $block: #{$fd-namespace}-action-bar;
 
       @include fd-rtl() {
         @include fd-children() {
-          margin-right: fd-space(2);
+          margin-right: 0.5rem;
           margin-left: 0;
         }
 
@@ -144,5 +152,17 @@ $block: #{$fd-namespace}-action-bar;
         }
       }
     }
+  }
+
+  &--s {
+    @include responsive-action-bar();
+  }
+
+  &--m_l {
+    @include responsive-action-bar($padding-x: 2rem);
+  }
+
+  &--xl {
+    @include responsive-action-bar($padding-x: 3rem);
   }
 }
