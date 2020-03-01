@@ -62,6 +62,7 @@ body {
 }
 
 .btn-playground,
+.btn-playground--compact,
 .btn-playground--emphasized {
   border: 1px solid black;
   border-radius: 4px;
@@ -69,6 +70,10 @@ body {
   background: beige;
   font-size: 14px;
   margin: 0;
+}
+
+.btn-playground--compact{
+  padding: 4px;
 }
 
 .btn-playground--emphasized {
