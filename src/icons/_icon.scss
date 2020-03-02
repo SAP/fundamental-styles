@@ -1,19 +1,6 @@
 @import "./settings";
 @import "../mixins";
 
-$fd-scss-icons-path: "./icons/" !default;
-
-@if variable-exists(fd-icons-path) {
-  $fd-scss-icons-path: $fd-icons-path;
-}
-
-@font-face {
-  font-family: "SAP-icons";
-  src: url("#{$fd-scss-icons-path}SAP-icons.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 $block: sap-icon;
 
 /* data attributes for inserting icons
