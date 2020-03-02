@@ -25,6 +25,7 @@ $fd-calendar-item-width: 2.125rem !default;
 $fd-calendar-item-height: 2.75rem !default;
 $fd-calendar-action-padding: 0.5rem !default;
 $fd-calendar-item-spacing: 0.0625rem !default;
+$fd-calendar-button-horizontal-space: 0.25rem !default; // This value is used to create additional vertical space on the button which should be created by currently not implemented "Touchable Area" of the button.
 $fd-calendar-background: var(--sapList_Background) !default;
 $fd-calendar-item-font-size: var(--sapFontMediumSize) !default;
 $fd-calendar-border-radius: var(--sapElement_BorderCornerRadius) !default;
@@ -35,7 +36,7 @@ $fd-calendar-padding-compact: 0.5rem !default;
 $fd-calendar-item-width-compact: 1.875rem !default;
 $fd-calendar-item-height-compact: 1.875rem !default;
 $fd-calendar-width-compact: $fd-calendar-item-width-compact * 8 + 2 * $fd-calendar-padding-compact + $fd-calendar-item-spacing * 16 !default;
-
+$fd-calendar-button-horizontal-space-compact: 0.1875rem !default; // This value is used to create additional vertical space on the button which should be created by currently not implemented "Touchable Area" of the button.
 $fd-calendar-button-height-compact: 2rem !default;
 $fd-calendar-padding-mobile-landscape: 0 !default;
 $fd-calendar-padding-mobile-portrait: 1rem 0 0 0 !default;
@@ -253,6 +254,8 @@ $fd-calendar-special-days: (
     display: flex;
     position: relative;
     justify-content: center;
+    padding-top: $fd-calendar-button-horizontal-space;
+    padding-bottom: $fd-calendar-button-horizontal-space;
   }
 
   &__action {
@@ -420,6 +423,11 @@ $fd-calendar-special-days: (
     padding: $fd-calendar-padding-compact;
 
     .#{$block} {
+      &__navigation {
+        padding-top: $fd-calendar-button-horizontal-space-compact;
+        padding-bottom: $fd-calendar-button-horizontal-space-compact;
+      }
+
       &__action {
         &--arrow-left,
         &--arrow-right {
