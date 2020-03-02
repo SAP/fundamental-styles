@@ -127,7 +127,7 @@ Modifying header/subheader/body/footer horizontal paddings:
     <li><code>.fd-dialog__content--xl</code>: 3rem - min-width: 1440px</li>
 </ul>
 
-By default dialog body has horizontal padding. This behavior might be changed using:
+By default dialog body has vertical padding. This behavior might be changed using:
 <ul>
     <li><code>.fd-dialog__body--no-vertical-padding</code>: padding-top: 0, padding-bottom: 0</li>
 </ul>
@@ -142,77 +142,112 @@ Please remember that on mobile devices Bar component should be used with <code>.
 
 ### Dialog header/body/footer horizontal paddings
 {% capture dialog-size %}
-    <div class="fd-dialog-docs-static fd-dialog__content fd-dialog__content--s">
-        <header class="fd-dialog__header fd-bar fd-bar--header">
-            <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <h3 class="fd-dialog__title">
-                        Lorem ipsum
-                    </h3>
+    <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+        <div class="fd-dialog__content fd-dialog__content--s">
+            <header class="fd-dialog__header fd-bar fd-bar--header">
+                <div class="fd-bar__left">
+                    <div class="fd-bar__element">
+                        <h3 class="fd-dialog__title">
+                            Small Dialog
+                        </h3>
+                    </div>
                 </div>
+            </header>
+            <div class="fd-dialog__body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             </div>
-        </header>
-        <div class="fd-dialog__body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                    </div>
+                </div>
+            </footer>
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
-                </div>
-                <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
-                </div>
-            </div>
-        </footer>
     </div>
-    <div class="fd-dialog-docs-static fd-dialog__content fd-dialog__content--m">
-        <header class="fd-dialog__header fd-bar fd-bar--header">
-            <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <h3 class="fd-dialog__title">
-                        Lorem ipsum
-                    </h3>
+    <br />
+    <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+        <div class="fd-dialog__content fd-dialog__content--m">
+            <header class="fd-dialog__header fd-bar fd-bar--header">
+                <div class="fd-bar__left">
+                    <div class="fd-bar__element">
+                        <h3 class="fd-dialog__title">
+                            Medium Dialog
+                        </h3>
+                    </div>
                 </div>
+            </header>
+            <div class="fd-dialog__body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             </div>
-        </header>
-        <div class="fd-dialog__body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                    </div>
+                </div>
+            </footer>
+        </div> 
+    </div>
+    <br />
+    <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+        <div class="fd-dialog__content fd-dialog__content--l">
+            <header class="fd-dialog__header fd-bar fd-bar--header">
+                <div class="fd-bar__left">
+                    <div class="fd-bar__element">
+                        <h3 class="fd-dialog__title">
+                            Large Dialog
+                        </h3>
+                    </div>
+                </div>
+            </header>
+            <div class="fd-dialog__body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            </div>
+            <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                    </div>
+                </div>
+            </footer>
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+    </div>
+    <br />
+    <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+        <div class="fd-dialog__content fd-dialog__content--xl">
+            <header class="fd-dialog__header fd-bar fd-bar--header">
+                <div class="fd-bar__left">
+                    <div class="fd-bar__element">
+                        <h3 class="fd-dialog__title">
+                            Extra Large Dialog
+                        </h3>
+                    </div>
                 </div>
-                <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
-                </div>
+            </header>
+            <div class="fd-dialog__body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             </div>
-        </footer>
-    </div> 
-    <div class="fd-dialog-docs-static fd-dialog__content fd-dialog__content--xl">
-        <header class="fd-dialog__header fd-bar fd-bar--header">
-            <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <h3 class="fd-dialog__title">
-                        Lorem ipsum
-                    </h3>
+            <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                    </div>
                 </div>
-            </div>
-        </header>
-        <div class="fd-dialog__body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            </footer>
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
-                </div>
-                <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
-                </div>
-            </div>
-        </footer>
     </div>
 {% endcapture %}
 {% include display-component.html component=dialog-size %}
