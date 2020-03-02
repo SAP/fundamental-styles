@@ -1,4 +1,4 @@
-@import "./settings";
+@import "./new-settings";
 @import "./mixins";
 @import "./functions";
 
@@ -19,7 +19,7 @@ $block: #{$fd-namespace}-select;
   &__control {
     @include fd-form-base();
 
-    height: var(--fd-forms-height);
+    height: $fd-form-input-height;
     width: 100%;
     text-align: left;
     display: flex;
@@ -90,7 +90,7 @@ $block: #{$fd-namespace}-select;
 
   &--compact {
     .#{$block}__control {
-      height: var(--fd-forms-height-compact);
+      height: $fd-form-input-height--compact;
       padding-left: $fd-select-padding-compact-x;
 
       @include fd-rtl() {
