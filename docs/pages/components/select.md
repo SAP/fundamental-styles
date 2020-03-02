@@ -606,7 +606,7 @@ select component in `dialog` and `bar` components.
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class=" fd-button--transparent sap-icon--decline" aria-label="close"></button>
+                    <button class="fd-button fd-button--transparent sap-icon--decline" aria-label="close"></button>
                 </div>
             </div>
         </header>
