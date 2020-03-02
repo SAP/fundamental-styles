@@ -187,7 +187,7 @@ There are four placement options:
                 <div class="fd-bar__middle">
                     <div class="fd-bar__element">
                         <div class="fd-form-item">
-                            <div class="fd-button-group" role="group" aria-label="Group label">
+                            <div class="fd-segmented-button" role="group" aria-label="Group label">
                                 <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
                                 <button class="fd-button fd-button--compact sap-icon--iphone"></button>
                                 <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
@@ -236,7 +236,7 @@ There are four placement options:
                 <div class="fd-bar__middle">
                     <div class="fd-bar__element">
                         <div class="fd-form-item">
-                            <div class="fd-button-group" role="group" aria-label="Group label">
+                            <div class="fd-segmented-button" role="group" aria-label="Group label">
                                 <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
                                 <button class="fd-button fd-button--compact sap-icon--iphone"></button>
                                 <button class="fd-button fd-button--compact sap-icon--notification-2"></button>

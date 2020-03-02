@@ -345,7 +345,7 @@ Notifications can be grouped together in a container with a class `fd-notificati
                 </div>
             </div>
             <div class="fd-notification__footer">
-                <button class="fd-button--transparent">More Info</button>
+                <button class="fd-button fd-button--transparent">More Info</button>
                 <div class="fd-notification__actions">
                     <button class="fd-button fd-button--positive">Approve</button>
                     <button class="fd-button fd-button--negative">Reject</button>
