@@ -61,13 +61,13 @@ calendar:
         }
     ]
 } %}
+
 {% macro calendar(properties={}, modifier={}, state={}, aria={}) -%}
     {%- set month = data.months[properties.month] %}
     {%- set _grid_id = utils.id() %}
     {%- set _months_id = utils.id() %}
     {%- set _years_id = utils.id() %}
-    <div class="fd-calendar{{ modifier.block | modifier('calendar') }}"
-         style="{%- if properties.mobile%}width: 400px;{%- endif %}">{{ properties.header.show }}
+    <div class="fd-calendar{{ modifier.block | modifier('calendar') }}">{{ properties.header.show }}
 
         {# CALENDAR HEADER #}
         {%- if not properties.header.hide %}
@@ -204,7 +204,7 @@ calendar:
                 </div>
             </div>
         {% endif %}
-        <div class="fd-calendar__navigation {% if properties.mobile == 'landscape' %}fd-calendar__navigation--main-navigation{% endif %}">
+        <div class="fd-calendar__navigation {% if properties.mobile == 'landscape' %}fd-calendar__navigation--main{% endif %}">
             <div class="fd-calendar__action fd-calendar__action--arrow-left">
                 <button class="btn-playground" type="button">x</button>
             </div>
@@ -218,7 +218,7 @@ calendar:
                 <button class="btn-playground" type="button">x</button>
             </div>
             {% if properties.mobile == 'landscape' %}
-                <button class="btn-playground fd-calendar__close-button"></button>
+                <button class="btn-playground fd-calendar__close-button fd-calendar__close-button--navigation"></button>
             {% endif %}
         </div>
         {{ modifier.block }}
