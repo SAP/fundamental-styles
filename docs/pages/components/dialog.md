@@ -305,7 +305,7 @@ Draggable mode can be visualized using following classes:
                 </div>
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
-                        <button class="fd-input-group__button fd-button--transparent fd-button--compact">Clear</button>
+                        <button class="fd-button fd-button--transparent fd-button--compact">Clear</button>
                     </div>
                 </div>
             </header>
@@ -314,7 +314,7 @@ Draggable mode can be visualized using following classes:
                     <div class="fd-input-group">
                         <input class="fd-input fd-input-group__input fd-input--compact" type="text" placeholder="Search...">
                         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                            <button class="fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact sap-icon--search"></button>
+                            <button class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact sap-icon--search"></button>
                         </span>
                     </div>
                 </div>
