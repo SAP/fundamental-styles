@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0-rc.0"></a>
+# [0.8.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.7.1-rc.2...v0.8.0-rc.0) (2020-03-02)
+
+
+### Features
+
+* remove fonts and icons from distribution package ([#683](https://github.com/SAP/fundamental-styles/issues/683)) ([d20ef10](https://github.com/SAP/fundamental-styles/commit/d20ef10))
+
+
+
 <a name="0.7.1-rc.2"></a>
 ## [0.7.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.7.1-rc.1...v0.7.1-rc.2) (2020-03-02)
 
