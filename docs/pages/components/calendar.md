@@ -28,9 +28,10 @@ Following classes describe block structure of calendar component.
                         <code>.fd-calendar__navigation</code> - container used for grouping row of navigation controls
                         <ul>
                             <li><code>.fd-calendar__action</code> - action buttons of calendar</li>
-                            <li><code>.fd-calendar__close-button</code> - close button for calendar on mobile devices </li>
+                            <li><code>.fd-calendar__close-button--navigation</code> - close button inside navigation for calendar on mobile devices without dialog header</li>
                         </ul>
                     </li>
+                    <li><code>.fd-calendar__close-button</code> - close button inside dialog header for calendar on mobile devices</li>
                 </ul>
             </li>
             <li>
@@ -101,7 +102,7 @@ This are classes used to describe the look of calendar action buttons.
 <div class="fd-calendar" style="width: 100%;">
     <table style="width: 100%;">
         <tr>
-            <td><code style="white-space: nowrap;">.fd-calendar__navigation--main-navigation</code></td>
+            <td><code style="white-space: nowrap;">.fd-calendar__navigation--main</code></td>
             <td>Class used to limit main navigation width on mobile devices in landscape orientation and create space for optional close button</td>
         </tr>
         <tr>
@@ -111,6 +112,10 @@ This are classes used to describe the look of calendar action buttons.
         <tr>
             <td><code style="white-space: nowrap;">.fd-calendar__action--arrow-right</code></td>
             <td>Class used to style "Next" navigation button</td>
+        </tr>
+        <tr>
+            <td><code style="white-space: nowrap;">.fd-calendar__close-button--navigation</code></td>
+            <td>Class used to correctly place close button inside calendar navigation panel</td>
         </tr>
     </table>
 </div>
@@ -296,16 +301,16 @@ This are classes used to describe the look of calendar grid element.
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-selected="false"></button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false" aria-controls="fm3cr569">January</button>
+    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">January</button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--transparent" aria-selected="true" aria-expanded="true" aria-controls="bufLe361">2018</button>
+    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">2018</button>
     		</div>
     		<div class="fd-calendar__action fd-calendar__action--arrow-right">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next" aria-selected="false"></button>
     		</div>
         </div>
     </header>
@@ -448,16 +453,16 @@ This are classes used to describe the look of calendar grid element.
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
             <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
+                <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-selected="false"></button>
             </div>
             <div class="fd-calendar__action">
-                <button type="button" class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false" aria-controls="fm3cr569">January</button>
+                <button type="button" class="fd-button fd-button--transparent" aria-selected="false">January</button>
             </div>
             <div class="fd-calendar__action">
-                <button type="button" class="fd-button fd-button--transparent" aria-selected="true" aria-expanded="true" aria-controls="bufLe361">2018</button>
+                <button type="button" class="fd-button fd-button--transparent" aria-selected="false">2018</button>
             </div>
             <div class="fd-calendar__action fd-calendar__action--arrow-right">
-                <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+                <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next" aria-selected="false"></button>
             </div>
         </div>
     </header>
@@ -511,16 +516,16 @@ This are classes used to describe the look of calendar grid element.
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-selected="false"></button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false" aria-controls="fm3cr569">January</button>
+    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">January</button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--transparent" aria-selected="true" aria-expanded="true" aria-controls="bufLe361">2018</button>
+    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">2018</button>
     		</div>
     		<div class="fd-calendar__action fd-calendar__action--arrow-right">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next" aria-selected="false"></button>
     		</div>
         </div>
     </header>
@@ -575,16 +580,16 @@ This are classes used to describe the look of calendar grid element.
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
-    			<button type="button" class="fd-button fd-button--light sap-icon--slim-arrow-left" aria-label="Previous"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-selected="false"></button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--light" aria-selected="false" aria-expanded="false" aria-controls="fm3cr569">January</button>
+    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">January</button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--light" aria-expanded="true" aria-controls="bufLe361">2018</button>
+    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">2018</button>
     		</div>
     		<div class="fd-calendar__action fd-calendar__action--arrow-right">
-    			<button type="button" class="fd-button fd-button--light sap-icon--slim-arrow-right" aria-label="Next"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next" aria-selected="false"></button>
     		</div>
         </div>
     </header>
@@ -634,16 +639,16 @@ This are classes used to describe the look of calendar grid element.
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
-    			<button type="button" class="fd-button fd-button--light sap-icon--slim-arrow-left" aria-label="Previous"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-selected="false"></button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--light" aria-selected="false" aria-expanded="false" aria-controls="fm3cr569">January</button>
+    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">January</button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--light" aria-expanded="true" aria-controls="bufLe361">2018</button>
+    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">2018</button>
     		</div>
     		<div class="fd-calendar__action fd-calendar__action--arrow-right">
-    			<button type="button" class="fd-button fd-button--light sap-icon--slim-arrow-right" aria-label="Next"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next" aria-selected="false"></button>
     		</div>
         </div>
     </header>
@@ -682,16 +687,16 @@ This are classes used to describe the look of calendar grid element.
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
-    			<button type="button" class="fd-button fd-button--light sap-icon--slim-arrow-left" aria-label="Previous"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-selected="false"></button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--light" aria-selected="false" aria-expanded="false" aria-controls="fm3cr569">January</button>
+    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">January</button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--light" aria-expanded="true" aria-controls="bufLe361">2018</button>
+    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">2018</button>
     		</div>
     		<div class="fd-calendar__action fd-calendar__action--arrow-right">
-    			<button type="button" class="fd-button fd-button--light sap-icon--slim-arrow-right" aria-label="Next"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next" aria-selected="false"></button>
     		</div>
         </div>
     </header>
@@ -876,6 +881,11 @@ This are classes used to describe the look of calendar grid element.
 ## Example calendar in mobile mode lanscape orientation
 On mobile devices calendar is composed into Dialog window taking full width and height of the device.
 <b>For landscape orientation no [Dialog]({{site.baseurl}}/components/dialog) header element should be used. Dialog footer element is optional.</b>
+Remember that if <code>.fd-calendar__close-button</code> is placed inside navigation section of the calendar then:
+ <ul>
+    <li><code>.fd-calendar__navigation</code> - requires <code>.fd-calendar__navigation--main</code> modifier</li>
+    <li><code>.fd-calendar__close-button</code> - requires <code>.fd-calendar__close-button--navigation</code> modifier</li>
+ </ul>
 
 {% capture default-calendar-mobile %}
 <div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--landscape fd-dialog fd-dialog--active">
@@ -883,20 +893,20 @@ On mobile devices calendar is composed into Dialog window taking full width and 
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
             <div class="fd-calendar fd-calendar--mobile-landscape">
                 <header class="fd-calendar__header">
-                    <div class="fd-calendar__navigation fd-calendar__navigation--main-navigation">
+                    <div class="fd-calendar__navigation fd-calendar__navigation--main">
                         <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
+                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-selected="false"></button>
                         </div>
                         <div class="fd-calendar__action">
-                            <button type="button" class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false" aria-controls="fm3cr569">January</button>
+                            <button type="button" class="fd-button fd-button--transparent" aria-selected="false">January</button>
                         </div>
                         <div class="fd-calendar__action">
-                            <button type="button" class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false" aria-controls="bufLe361">2018</button>
+                            <button type="button" class="fd-button fd-button--transparent" aria-selected="false">2018</button>
                         </div>
                         <div class="fd-calendar__action fd-calendar__action--arrow-right">
-                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next" aria-selected="false"></button>
                         </div>
-                        <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button"></button>
+                        <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button fd-calendar__close-button--navigation" aria-label="Close" aria-selected="false"></button>
                     </div>
                 </header>
                 <div class="fd-calendar__content fd-calendar__content--dates" id="Xh8Gr283">
@@ -1031,7 +1041,7 @@ On mobile devices calendar is composed into Dialog window taking full width and 
         <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized" aria-selected="false">
                         OK
                     </button>
                 </div>
@@ -1044,7 +1054,7 @@ On mobile devices calendar is composed into Dialog window taking full width and 
 
 ## Example calendar in mobile mode portrait orientation
 On mobile devices calendar is composed into Dialog window taking full width and height of the device.
-<b>For portrait orientation [Dialog]({{site.baseurl}}/components/dialog) header and footer elements should be always used.</b>
+<b>For portrait orientation [Dialog]({{site.baseurl}}/components/dialog) header should always be used, but footer remains optional.</b>
 
 {% capture default-calendar-mobile %}
 <div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--portrait fd-dialog fd-dialog--active">
@@ -1057,28 +1067,33 @@ On mobile devices calendar is composed into Dialog window taking full width and 
                     </h3>
                 </div>
             </div>
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button" aria-label="Close" aria-selected="false"></button>
+                </div>
+            </div>
         </header>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
             <div class="fd-calendar fd-calendar--mobile-portrait">
                 <header class="fd-calendar__header">
                     <div class="fd-calendar__navigation">
-                        <div class="fd-button-group" role="group">
-                            <button class="fd-button is-active">Date</button>
-                            <button class="fd-button">Time</button>
+                        <div class="fd-segmented-button" role="group" aria-label="Switch Date/Time picker">
+                            <button class="fd-button is-active" aria-selected="true">Date</button>
+                            <button class="fd-button" aria-selected="false">Time</button>
                         </div>
                     </div>
                     <div class="fd-calendar__navigation">
                         <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
+                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-selected="false"></button>
                         </div>
                         <div class="fd-calendar__action">
-                            <button type="button" class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false" aria-controls="fm3cr569">January</button>
+                            <button type="button" class="fd-button fd-button--transparent" aria-selected="false">January</button>
                         </div>
                         <div class="fd-calendar__action">
-                            <button type="button" class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false" aria-controls="bufLe361">2018</button>
+                            <button type="button" class="fd-button fd-button--transparent" aria-selected="false">2018</button>
                         </div>
                         <div class="fd-calendar__action fd-calendar__action--arrow-right">
-                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next" aria-selected="false"></button>
                         </div>
                     </div>
                 </header>
@@ -1214,7 +1229,7 @@ On mobile devices calendar is composed into Dialog window taking full width and 
         <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized" aria-selected="false">
                         OK
                     </button>
                 </div>
