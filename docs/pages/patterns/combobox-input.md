@@ -29,7 +29,7 @@ If the entries are not validated by the application, users can also enter custom
       <div class="fd-input-group fd-input-group--control">
           <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Fruit">
           <span class="fd-input-group__addon fd-input-group__addon--button">
-              <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="true"></button>
+              <button class="fd-input-group__button fd-button--transparent sap-icon--navigation-down-arrow" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="true"></button>
           </span>
       </div>
   </div>
@@ -65,7 +65,7 @@ If the entries are not validated by the application, users can also enter custom
         <div class="fd-input-group fd-input-group--control">
             <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
             <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
-                <button class="fd-input-group__button fd-button--compact fd-button--light sap-icon--navigation-down-arrow fd-select__button" aria-controls="F4GcX34" aria-expanded="false" aria-haspopup="true"></button>
+                <button class="fd-input-group__button fd-button--compact fd-button--transparent sap-icon--navigation-down-arrow fd-select__button" aria-controls="F4GcX34" aria-expanded="false" aria-haspopup="true"></button>
             </span>
         </div>
     </div>
@@ -100,7 +100,7 @@ The `ComboBox` component can be customized by adding additional information in a
       <div class="fd-input-group fd-input-group--control">
           <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Product">
           <span class="fd-input-group__addon fd-input-group__addon--button">
-              <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow" aria-controls="F4GRTGLK6" aria-expanded="false" aria-haspopup="true"></button>
+              <button class="fd-input-group__button fd-button--transparent sap-icon--navigation-down-arrow" aria-controls="F4GRTGLK6" aria-expanded="false" aria-haspopup="true"></button>
           </span>
       </div>
   </div>
@@ -137,7 +137,7 @@ In cases where the list items need to be categorized into groups, it is possible
       <div class="fd-input-group fd-input-group--control">
           <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Ingredient">
           <span class="fd-input-group__addon fd-input-group__addon--button">
-              <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow" aria-controls="F4GcXLK6" aria-expanded="false" aria-haspopup="true"></button>
+              <button class="fd-input-group__button fd-button--transparent sap-icon--navigation-down-arrow" aria-controls="F4GcXLK6" aria-expanded="false" aria-haspopup="true"></button>
           </span>
       </div>
   </div>
@@ -193,7 +193,7 @@ In the example you can see how the `Combobox` component looks without the `fd-po
       <div class="fd-input-group fd-input-group--control">
           <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Ingredient">
           <span class="fd-input-group__addon fd-input-group__addon--button">
-              <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow" aria-controls="F4HTFDLK6" aria-expanded="false" aria-haspopup="true"></button>
+              <button class="fd-input-group__button fd-button--transparent sap-icon--navigation-down-arrow" aria-controls="F4HTFDLK6" aria-expanded="false" aria-haspopup="true"></button>
           </span>
       </div>
   </div>
@@ -227,7 +227,7 @@ The disabled state can also be achieved by adding the `.is-disabled` class or th
       <div class="fd-input-group fd-input-group--control" aria-disabled="true" disabled>
           <input type="text" class="fd-input fd-input-group__input" id="" value="Orange" placeholder="Select Fruit">
           <span class="fd-input-group__addon fd-input-group__addon--button">
-              <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow fd-select__button"></button>
+              <button class="fd-input-group__button fd-button--transparent sap-icon--navigation-down-arrow fd-select__button"></button>
           </span>
       </div>
   </div>
@@ -265,7 +265,7 @@ To add text in the `body` of the component, simply include your text in the `fd-
             <div class="fd-input-group fd-input-group--control is-success">
                 <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
                 <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button--compact fd-button--light sap-icon--navigation-down-arrow fd-select__button" 
+                    <button class="fd-input-group__button fd-button--compact fd-button--transparent sap-icon--navigation-down-arrow fd-select__button" 
                     aria-controls="F4GcEX34" aria-expanded="false" aria-haspopup="true"></button>
                 </span>
             </div>
@@ -310,7 +310,7 @@ So instead of using popover and dropdown, it should be wrapped in `dialog` and `
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class=" fd-button--light sap-icon--decline" aria-label="close"></button>
+                    <button class=" fd-button--transparent sap-icon--decline" aria-label="close"></button>
                 </div>
             </div>
         </header>
@@ -319,7 +319,7 @@ So instead of using popover and dropdown, it should be wrapped in `dialog` and `
                 <div class="fd-input-group fd-input-group--control">
                      <input type="text" class="fd-input fd-input-group__input" value="Apple" id="" placeholder="Select Ingredient">
                      <span class="fd-input-group__addon fd-input-group__addon--button">
-                         <button class="fd-input-group__button fd-button--light sap-icon--navigation-down-arrow"></button>
+                         <button class="fd-input-group__button fd-button--transparent sap-icon--navigation-down-arrow"></button>
                      </span>
                  </div>
             </div>

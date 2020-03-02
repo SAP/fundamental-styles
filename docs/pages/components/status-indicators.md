@@ -7,6 +7,8 @@ toc: false
 permalink: components/status-indicators.html
 folder: components
 ---
+> **DEPRECATED**. Depending on the use case, use either the [InfoLabel](info-label.html) component or the **ObjectStatusCoponent** component 
+{: .docs-deprecated}
 
 Status indicators are used to easily highlight the state of an object. `badge`, `label`, `status-label` and `counter`
 {: .docs-intro}
@@ -148,19 +150,19 @@ Counter has a minimum value 1. Maximum display is 999+
 ## Counter with `--notification` modifier
 
 {% capture badge %}
-<button class="fd-button fd-button--light sap-icon--bell" aria-label="Notifications">
+<button class="fd-button fd-button--transparent sap-icon--bell" aria-label="Notifications">
     <span class="fd-counter fd-counter--notification" aria-label="Unread count">1</span>
 </button>
 
-<button class="fd-button fd-button--light sap-icon--bell" aria-label="Notifications">
+<button class="fd-button fd-button--transparent sap-icon--bell" aria-label="Notifications">
     <span class="fd-counter fd-counter--notification" aria-label="Unread count">20</span>
 </button>
 
-<button class="fd-button fd-button--light sap-icon--bell" aria-label="Notifications">
+<button class="fd-button fd-button--transparent sap-icon--bell" aria-label="Notifications">
     <span class="fd-counter fd-counter--notification" aria-label="Unread count">300</span>
 </button>
 
-<button class="fd-button fd-button--light sap-icon--bell" aria-label="Notifications">
+<button class="fd-button fd-button--transparent sap-icon--bell" aria-label="Notifications">
     <span class="fd-counter fd-counter--notification" aria-label="Unread count">999+</span>
 </button>
 

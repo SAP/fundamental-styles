@@ -27,8 +27,8 @@ $block: #{$fd-namespace}-alert;
 
   @mixin fd-alert-close-btn-container {
     position: absolute;
-    top: 0.0625rem;
-    right: 0.0625rem;
+    top: 0.125rem;
+    right: 0.125rem;
   }
 
   // SUCCESS
@@ -78,10 +78,8 @@ $block: #{$fd-namespace}-alert;
 
   // Elements
   &__close {
-    @include fd-button-reset();
     @include fd-alert-close-btn-container();
     @include fd-icon("decline", "m");
-    @include fd-focus();
 
     @include fd-rtl() {
       left: 0.125rem;

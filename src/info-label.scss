@@ -1,0 +1,125 @@
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+/*!
+.fd-badge+(( --numeric | --icon ), ( --cozy | --compact ))
+*/
+$block: #{$fd-namespace}-info-label;
+
+.#{$block} {
+
+  // info-label DEFAULT
+  $fd-info-label-border-radius: 1.125rem !default;
+  $fd-info-label-color: var(--sapTextColor) !default;
+  $fd-info-label-fontsize: var(--sapFontSmallSize);
+  $fd-info-label-default-padding: 0 0.625rem !default;
+  $fd-info-label-default-vertical-align: middle !default;
+  $fd-info-label-default-border-width: 0.063rem !default;
+  $fd-info-label-default-border-style: solid !default;
+  $fd-info-label-default-height: 1.125rem !default;
+  $fd-info-label-default-text-transform: uppercase !default;
+  $fd-info-label-default-text-align: center !default;
+  $fd-info-label-default-letter-spacing: 0.0125rem !default;
+  $fd-info-label-default-display: inline-block !default;
+  $fd-info-label-default-text-padding-right: 0.1875rem !default;
+  $fd-info-label-default-text-padding-left: 0.3125rem !default;
+  $fd-info-label-default-overflow: hidden !default;
+  $fd-info-label-default-max-width: 100% !default;
+  $fd-info-label-default-white-space: nowrap !default;
+  $fd-info-label-default-text-overflow: ellipsis !default;
+  // INFOLABEL ICON
+  $fd-info-label-icon-size: 0.75rem !default;
+  $fd-info-label-icon-padding-left: 0.3125rem !default;
+  $fd-info-label-icon-padding-right: 0.3125rem !default;
+  $fd-info-label-icon-padding: 0 0.5rem !default;
+
+  // INFOLABEL NUMERIC PADDING
+  $fd-info-label-numeric-padding: 0 0.3125rem !default;
+
+  // COZY AND COMPACT MARGIN
+  $fd-info-label-margin-compact: 0.4375rem 0 !default;
+  $fd-info-lable-margin-cozy: 0.8125rem 0 !default;
+
+  $color-accents: (
+    "1": ("background": var(--sapLegendBackgroundColor1), "border": var(--sapAccentColor1)),
+    "2": ("background": var(--sapLegendBackgroundColor2), "border": var(--sapAccentColor2)),
+    "3": ("background": var(--sapLegendBackgroundColor3), "border": var(--sapAccentColor3)),
+    "4": ("background": var(--sapLegendBackgroundColor5), "border": var(--sapAccentColor4)),
+    "5": ("background": var(--sapLegendBackgroundColor20), "border": var(--sapAccentColor5)),
+    "6": ("background": var(--sapLegendBackgroundColor6), "border": var(--sapAccentColor6)),
+    "7": ("background": var(--sapLegendBackgroundColor7), "border": var(--sapAccentColor7)),
+    "8": ("background": var(--sapLegendBackgroundColor8), "border": var(--sapAccentColor8)),
+    "9": ("background": var(--sapLegendBackgroundColor10), "border": var(--sapAccentColor9)),
+    "10": ("background": var(--sapLegendBackgroundColor9), "border": var(--sapAccentColor10))
+  );
+
+  @include fd-reset();
+
+  vertical-align: $fd-info-label-default-vertical-align;
+  padding: $fd-info-label-default-padding;
+  border-radius: $fd-info-label-border-radius;
+  border-width: $fd-info-label-default-border-width;
+  border-style: $fd-info-label-default-border-style;
+  height: $fd-info-label-default-height;
+  text-transform: $fd-info-label-default-text-transform;
+  text-align: $fd-info-label-default-text-align;
+  color: $fd-info-label-color;
+  font-size: $fd-info-label-fontsize;
+  letter-spacing: $fd-info-label-default-letter-spacing;
+  display: $fd-info-label-default-display;
+  max-width: $fd-info-label-default-max-width;
+  overflow: $fd-info-label-default-overflow;
+  white-space: $fd-info-label-default-white-space;
+  text-overflow: $fd-info-label-default-text-overflow;
+
+  &--numeric {
+    padding: $fd-info-label-numeric-padding;
+  }
+
+  &--icon {
+    size: $fd-info-label-icon-size;
+    padding: 0 $fd-info-label-icon-padding-right 0 $fd-info-label-icon-padding-right;
+    line-height: 1.1;
+
+    @include fd-rtl() {
+      &:empty {
+        padding: 0 $fd-info-label-icon-padding-right 0 $fd-info-label-icon-padding-right;
+      }
+
+      &::before {
+        padding-left: $fd-info-label-default-text-padding-right;
+        padding-right: 0;
+      }
+    }
+
+    &::before {
+      padding-right: $fd-info-label-default-text-padding-right;
+      position: relative;
+      top: 0.0625rem;
+    }
+
+    &:empty {
+      padding: 0 $fd-info-label-icon-padding-right 0 $fd-info-label-icon-padding-right;
+    }
+  }
+
+  &--only-icon {
+    padding: 0 $fd-info-label-icon-padding-right 0 $fd-info-label-icon-padding-left;
+  }
+
+  &--compact {
+    margin: $fd-info-label-margin-compact;
+  }
+
+  &--cozy {
+    margin: $fd-info-lable-margin-cozy;
+  }
+
+  @each $set-name, $color-set in $color-accents {
+    &--accent-color-#{$set-name} {
+      background-color: map_get($color-set, "background");
+      border-color: map_get($color-set, "border");
+    }
+  }
+}

@@ -161,7 +161,7 @@ Please remember that on mobile devices Bar component should be used with <code>.
                     <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--light fd-button--compact">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
                 </div>
             </div>
         </footer>
@@ -185,7 +185,7 @@ Please remember that on mobile devices Bar component should be used with <code>.
                     <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--light fd-button--compact">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
                 </div>
             </div>
         </footer>
@@ -209,7 +209,7 @@ Please remember that on mobile devices Bar component should be used with <code>.
                     <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--light fd-button--compact">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
                 </div>
             </div>
         </footer>
@@ -243,7 +243,7 @@ Resizable Dialog should be desktop only feature.
                         <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
                     </div>
                     <div class="fd-bar__element">
-                        <button class="fd-dialog__decisive-button fd-button fd-button--light fd-button--compact">Cancel</button>
+                        <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
                     </div>
                 </div>
             </footer>
@@ -280,7 +280,7 @@ Draggable mode can be visualized using following classes:
                         <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
                     </div>
                     <div class="fd-bar__element">
-                        <button class="fd-dialog__decisive-button fd-button fd-button--light fd-button--compact">Cancel</button>
+                        <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
                     </div>
                 </div>
             </footer>
@@ -292,7 +292,7 @@ Draggable mode can be visualized using following classes:
 ## Examples
 ## Select Dialog
 {% capture dialog-select %}
-    <button class="fd-button--primary" onclick="toggleDialog('select-dialog-example', true)">Open example</button>
+    <button class="fd-button" onclick="toggleDialog('select-dialog-example', true)">Open example</button>
     <div class="fd-dialog" id="select-dialog-example">
         <div class="fd-dialog__content">
             <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
@@ -305,7 +305,7 @@ Draggable mode can be visualized using following classes:
                 </div>
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
-                        <button class="fd-input-group__button fd-button--light fd-button--compact">Clear</button>
+                        <button class="fd-button fd-button--transparent fd-button--compact">Clear</button>
                     </div>
                 </div>
             </header>
@@ -314,7 +314,7 @@ Draggable mode can be visualized using following classes:
                     <div class="fd-input-group">
                         <input class="fd-input fd-input-group__input fd-input--compact" type="text" placeholder="Search...">
                         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                            <button class="fd-input-group__button fd-button--icon fd-button--light fd-button--compact sap-icon--search"></button>
+                            <button class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact sap-icon--search"></button>
                         </span>
                     </div>
                 </div>
@@ -350,7 +350,7 @@ Draggable mode can be visualized using following classes:
                         <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Select</button>
                     </div>
                     <div class="fd-bar__element">
-                        <button class="fd-dialog__decisive-button fd-button fd-button--light fd-button--compact" onclick="toggleDialog('select-dialog-example', false)">Cancel</button>
+                        <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact" onclick="toggleDialog('select-dialog-example', false)">Cancel</button>
                     </div>
                 </div>
             </footer>
@@ -362,7 +362,7 @@ Draggable mode can be visualized using following classes:
 
 ## Loading Dialog
 {% capture dialog-loading %}
-    <button class="fd-button--primary" onclick="toggleDialog('loading-dialog-example', true)">Open example</button>
+    <button class="fd-button" onclick="toggleDialog('loading-dialog-example', true)">Open example</button>
     <div class="fd-dialog" id="loading-dialog-example">
         <div class="fd-dialog__content fd-dialog__content--s">
             <header class="fd-dialog__header fd-bar fd-bar--header">
@@ -385,7 +385,7 @@ Draggable mode can be visualized using following classes:
             <footer class="fd-dialog__footer fd-bar fd-bar--footer">
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
-                        <button class="fd-dialog__decisive-button fd-button fd-button--light fd-button--compact" onclick="toggleDialog('loading-dialog-example', false)">Cancel</button>
+                        <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact" onclick="toggleDialog('loading-dialog-example', false)">Cancel</button>
                     </div>
                 </div>
             </footer>

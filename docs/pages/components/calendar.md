@@ -181,16 +181,16 @@ These are dynamic classes which are affected by user selections
 	<header class="fd-calendar__header">
 	<div class="fd-calendar__navigation">
 		<div class="fd-calendar__action">
-			<button class="fd-button fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="false"></button>
+			<button class="fd-button fd-button fd-button--transparent fd-button--compact sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="false"></button>
 		</div>
 		<div class="fd-calendar__action">
-  			<button class="fd-button fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="crM8l491">February</button>
+  			<button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="crM8l491">February</button>
 		</div>
 		<div class="fd-calendar__action">
-			<button class="fd-button fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="FTXrD591">2018</button>
+			<button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="FTXrD591">2018</button>
 		</div>
 		<div class="fd-calendar__action">
-			<button class="fd-button fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-right" aria-label="Next"></button>
+			<button class="fd-button fd-button fd-button--transparent fd-button--compact sap-icon--slim-arrow-right" aria-label="Next"></button>
 		</div>
 	</div>
 	</header>
@@ -450,16 +450,16 @@ The previous and next controls are standard buttons with all available states. F
 	<header class="fd-calendar__header">
 	<div class="fd-calendar__navigation">
 		<div class="fd-calendar__action">
-			<button class="fd-button fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
+			<button class="fd-button fd-button fd-button--transparent fd-button--compact sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
 		</div>
 		<div class="fd-calendar__action">
-			<button class="fd-button fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="xB1D3835">September</button>
+			<button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="xB1D3835">September</button>
 		</div>
 		<div class="fd-calendar__action">
-			<button class="fd-button fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="8bZhe525">2018</button>
+			<button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="8bZhe525">2018</button>
 		</div>
 		<div class="fd-calendar__action">
-			<button class="fd-button fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-right" aria-label="Next"></button>
+			<button class="fd-button fd-button fd-button--transparent fd-button--compact sap-icon--slim-arrow-right" aria-label="Next"></button>
 		</div>
 	</div>
 	</header>
@@ -622,16 +622,16 @@ The previous and next controls are standard buttons with all available states. F
 	<header class="fd-calendar__header">
 	<div class="fd-calendar__navigation">
 		<div class="fd-calendar__action">
-			<button class="fd-button fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="undefined"></button>
+			<button class="fd-button fd-button fd-button--transparent fd-button--compact sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="undefined"></button>
 		</div>
 		<div class="fd-calendar__action">
-			<button class="fd-button fd-button--light fd-button--compact" aria-selected="true" aria-expanded="true" aria-controls="Eo94h672">January</button>
+			<button class="fd-button fd-button--transparent fd-button--compact" aria-selected="true" aria-expanded="true" aria-controls="Eo94h672">January</button>
 		</div>
 		<div class="fd-calendar__action">
-			<button class="fd-button fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="GMnxs122">2018</button>
+			<button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="GMnxs122">2018</button>
 		</div>
 		<div class="fd-calendar__action">
-			<button class="fd-button fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-right" aria-label="Next"></button>
+			<button class="fd-button fd-button fd-button--transparent fd-button--compact sap-icon--slim-arrow-right" aria-label="Next"></button>
 		</div>
 	</div>
 	</header>
@@ -696,16 +696,16 @@ The previous and next controls are standard buttons with all available states. F
 	<header class="fd-calendar__header">
 	<div class="fd-calendar__navigation">
 		<div class="fd-calendar__action">
-			<button class="fd-button fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="undefined"></button>
+			<button class="fd-button fd-button fd-button--transparent fd-button--compact sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="undefined"></button>
 		</div>
 		<div class="fd-calendar__action">
-			<button class="fd-button fd-button--light fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="fm3cr569">January</button>
+			<button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="fm3cr569">January</button>
 		</div>
 		<div class="fd-calendar__action">
-			<button class="fd-button fd-button--light fd-button--compact" aria-selected="true" aria-expanded="true" aria-controls="bufLe361">2018</button>
+			<button class="fd-button fd-button--transparent fd-button--compact" aria-selected="true" aria-expanded="true" aria-controls="bufLe361">2018</button>
 		</div>
 		<div class="fd-calendar__action">
-			<button class="fd-button fd-button--standard fd-button--light fd-button--compact sap-icon--slim-arrow-right" aria-label="Next"></button>
+			<button class="fd-button fd-button fd-button--transparent fd-button--compact sap-icon--slim-arrow-right" aria-label="Next"></button>
 		</div>
 	</div>
 	</header>

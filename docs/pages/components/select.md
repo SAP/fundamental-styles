@@ -25,7 +25,7 @@ For lists that require more than 12 options, the <a href="/patterns/combobox-inp
      <div class="fd-select">
          <div class="fd-select__control" tabindex="0" aria-controls="h0C6A325" aria-expanded="false" aria-haspopup="true">
              Select
-             <button class="fd-button fd-button--light sap-icon--slim-arrow-down fd-select__button"></button>
+             <button class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></button>
          </div>
       </div>
   </div>
@@ -58,7 +58,7 @@ For lists that require more than 12 options, the <a href="/patterns/combobox-inp
      <div class="fd-select fd-select--compact">
         <div class="fd-select__control" tabindex="0" aria-controls="h0C6A326" aria-expanded="false" aria-haspopup="true">
             Select
-            <button class="fd-button fd-button--light sap-icon--slim-arrow-down fd-select__button"></button>
+            <button class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></button>
         </div>
      </div>
   </div>
@@ -99,7 +99,7 @@ The `Select` component can be customized by adding additional information in add
      <div class="fd-select">
          <div class="fd-select__control" tabindex="0" aria-controls="h0C62325" aria-expanded="false" aria-haspopup="true">
              Select Product
-             <button class="fd-button fd-button--light sap-icon--slim-arrow-down fd-select__button"></button>
+             <button class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></button>
          </div>
       </div>
   </div>
@@ -137,7 +137,7 @@ The `Select` component can be customized by adding additional information in add
      <div class="fd-select fd-select--compact">
         <div class="fd-select__control" tabindex="0" aria-controls="h07jj326" aria-expanded="false" aria-haspopup="true">
             Select Product
-            <button class="fd-button fd-button--light sap-icon--slim-arrow-down fd-select__button"></button>
+            <button class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></button>
         </div>
      </div>
   </div>
@@ -177,7 +177,7 @@ The `Select` component can be customized by adding additional information in add
      <div class="fd-select">
          <div class="fd-select__control" tabindex="0" aria-controls="h090G325" aria-expanded="false" aria-haspopup="true">
              Select Product
-             <button class="fd-button fd-button--light sap-icon--slim-arrow-down fd-select__button"></button>
+             <button class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></button>
          </div>
       </div>
   </div>
@@ -221,7 +221,7 @@ In cases where the list items need to be categorized into groups, it is possible
      <div class="fd-select">
          <div class="fd-select__control" tabindex="0" aria-controls="h09GDGG325" aria-expanded="false" aria-haspopup="true">
              Select Ingredient
-             <button class="fd-button fd-button--light sap-icon--slim-arrow-down fd-select__button"></button>
+             <button class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></button>
          </div>
       </div>
   </div>
@@ -277,7 +277,7 @@ the `--no-wrap` modifier can be added to the `fd-list__title`, or `fd-list__seco
      <div class="fd-select">
          <div class="fd-select__control" tabindex="0" aria-controls="h0GFF2325" aria-expanded="false" aria-haspopup="true">
              Select
-             <button class="fd-button fd-button--light sap-icon--slim-arrow-down fd-select__button"></button>
+             <button class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></button>
          </div>
       </div>
   </div>
@@ -315,7 +315,7 @@ the `--no-wrap` modifier can be added to the `fd-list__title`, or `fd-list__seco
      <div class="fd-select fd-select--compact">
         <div class="fd-select__control" tabindex="0" aria-controls="h0GZH2325" aria-expanded="false" aria-haspopup="true">
             Select
-            <button class="fd-button fd-button--light sap-icon--slim-arrow-down fd-select__button"></button>
+            <button class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></button>
         </div>
      </div>
   </div>
@@ -360,7 +360,7 @@ The length can be adjusted to match the text length by adding the `fd-popover__b
      <div class="fd-select">
          <div class="fd-select__control" tabindex="0" aria-controls="h0GTKE325" aria-expanded="false" aria-haspopup="true">
              Much Longer than Usual
-             <button class="fd-button fd-button--light sap-icon--slim-arrow-down fd-select__button"></button>
+             <button class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></button>
          </div>
       </div>
   </div>
@@ -606,7 +606,7 @@ select component in `dialog` and `bar` components.
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class=" fd-button--light sap-icon--decline" aria-label="close"></button>
+                    <button class=" fd-button--transparent sap-icon--decline" aria-label="close"></button>
                 </div>
             </div>
         </header>

@@ -18,7 +18,7 @@ Product Switch provides a role based access to all products or LoBs. It shows on
     <div class="fd-product-switch">
         <div class="fd-popover fd-popover--right">
             <div class="fd-popover__control">
-                <button class="fd-button fd-button--light fd-popover__control fd-product-switch__control sap-icon--grid" 
+                <button class="fd-button fd-button--transparent fd-popover__control fd-product-switch__control sap-icon--grid" 
                     aria-label="Image label" 
                     aria-controls="product-switch-body" 
                     aria-expanded="false" 

@@ -1,0 +1,35 @@
+@mixin ghost() {
+  @include applyColors(var(--sapButton_TextColor), var(--sapButton_BorderColor), var(--sapButton_Lite_Background));
+}
+
+@mixin ghostHover {
+  @include applyColors(
+    var(--sapButton_Hover_TextColor),
+    var(--sapButton_Hover_BorderColor),
+    var(--sapButton_Hover_Background)
+  );
+}
+
+@mixin ghostPressed {
+  @include applyColors(
+    var(--sapButton_Selected_TextColor),
+    var(--sapButton_Active_Background),
+    var(--sapButton_BorderColor)
+  );
+}
+
+@mixin ghostPressedFocus() {
+  outline-color: var(--sapContent_ContrastFocusColor);
+}
+
+@mixin ghostFocus() {
+  @include buttonFocus();
+}
+
+@mixin ghostDisabled() {
+  @include isDisabled();
+  @include ghost();
+
+  outline: none;
+  box-shadow: none;
+}
