@@ -1,8 +1,0 @@
-<!--
-invertedstatus:
-    properties={},
-    modifier={ block: [] }
--->
-{% macro invertedstatus(properties={}, modifier={}, classes=[]) -%}
-<span class="fd-inverted-status{{ modifier.block | modifier('inverted-status') }}{{ ' sap-icon--'+properties.icon if properties.icon }}{{classes|classes}}">{{properties.label}}</span>
-{%- endmacro %}

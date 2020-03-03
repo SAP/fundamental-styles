@@ -1,8 +1,0 @@
-<!--
-objectstatus:
-    properties={},
-    modifier={ block: [] }
--->
-{% macro objectstatus(properties={}, modifier={}, classes=[]) -%}
-<span class="fd-object-status{{ modifier.block | modifier('object-status') }}{{ ' sap-icon--'+properties.icon if properties.icon }}{{classes|classes}}" style="line-height: 30px;">{{properties.label}}</span><br>
-{%- endmacro %}

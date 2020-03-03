@@ -1,182 +1,106 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "./component.njk" import objectstatus %}
-{% from "./component_inverted.njk" import invertedstatus %}
 
 {% block content %}
 
+<h2>Object Status</h2>
+{% set example %}
+<span class="fd-object-status fd-object-status--negative">Negative</span>
+<span class="fd-object-status fd-object-status--critical">Critical</span>
+<span class="fd-object-status fd-object-status--positive">Positive</span>
+<span class="fd-object-status fd-object-status--informative">informative</span>
+<span class="fd-object-status">Default</span>
+<br><br>
+<span class="fd-object-status fd-object-status--negative sap-icon--status-negative">Negative</span>
+<span class="fd-object-status fd-object-status--critical sap-icon--status-critical">Critical</span>
+<span class="fd-object-status fd-object-status--positive sap-icon--status-positive">Positive</span>
+<span class="fd-object-status fd-object-status--informative sap-icon--hint">Informative</span>
+<span class="fd-object-status sap-icon--to-be-reviewed">Default</span>
+<br><br>
+<span class="fd-object-status fd-object-status--indication-1">Dark Red</span>
+<span class="fd-object-status fd-object-status--indication-2">Red</span>
+<span class="fd-object-status fd-object-status--indication-3">Yellow</span>
+<span class="fd-object-status fd-object-status--indication-4">Green</span>
+<span class="fd-object-status fd-object-status--indication-5">Blue</span>
+<span class="fd-object-status fd-object-status--indication-6">Teal</span>
+<span class="fd-object-status fd-object-status--indication-7">Purple</span>
+<span class="fd-object-status fd-object-status--indication-8">Pink</span>
+{% endset %}
+{{ format(example) }}
 
-<h2>Icon</h2>
-    <!-- output the component example and the code snippet -->
-    {% set example %}
-{{  objectstatus({icon: 'status-negative'},
-        modifier={block: ["error","icon"]})
-}}
-    {% endset %}
-    {{ format(example) }}
 <br><br>
 
-<h2>Label</h2>
-    <!-- output the component example and the code snippet -->
-    {% set example %}
-{{  objectstatus({label: "ERROR"},
-        modifier={block: ["error"]})
-}}
-{{  objectstatus({label: "WARNING"},
-        modifier={block: ["warning"]})
-}}
-{{  objectstatus({label: "SUCCESS"},
-        modifier={block: ["success"]})
-}}
-{{  objectstatus({label: "INFORMATIVE"},
-        modifier={block: ["info"]})
-}} 
-{{  objectstatus({label: "Default"},
-        modifier={block: [""]})
-}} 
-    {% endset %}
-    {{ format(example) }}
+<h2>Inverted Object Status</h2>
+{% set example %}
+<span class="fd-object-status fd-object-status--inverted fd-object-status--negative">Inverted Negative</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--critical">Inverted Warning</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--positive">Inverted Success</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--informative">Inverted informative</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--positive">3</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--informative">2.99</span>
+<br><br>
+<span class="fd-object-status fd-object-status--inverted">Inverted Default</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"></span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative">Negative</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--critical sap-icon--status-critical">Critical</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--positive sap-icon--status-positive">Positive</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--informative sap-icon--hint">Informative</span>
+<span class="fd-object-status fd-object-status--inverted sap-icon--to-be-reviewed">Neutral</span>
+<br><br>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-1">Indication1</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-2">Indication2</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-3">Indication3</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-4">Indication4</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-5">Indication5</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-6">Indication6</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-7">Indication7</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-8">Indication8</span>
+
+{% endset %}
+{{ format(example) }}
+
+<h2>Large Design</h2>
+{% set example %}
+<span class="fd-object-status fd-object-status--large fd-object-status--negative sap-icon--status-negative"></span>
+<span class="fd-object-status fd-object-status--large fd-object-status--critical sap-icon--status-critical"></span>
+<span class="fd-object-status fd-object-status--large fd-object-status--positive">Success</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--informative">Informative</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--negative sap-icon--status-negative">Negative</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--critical sap-icon--status-critical">Critical</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--positive sap-icon--status-positive">Positive</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--informative sap-icon--hint">Informative</span>
+<span class="fd-object-status fd-object-status--large sap-icon--to-be-reviewed">Default</span>
+
 <br><br>
 
-    <h2>Status Object with Generic Colour Indication </h2>
-
-    {% set example %}
-{{  objectstatus({label: "Dark Red"},
-        modifier={block: ["indication-color-1"]})
-}}
-{{  objectstatus({label: "Red"},
-        modifier={block: ["indication-color-2"]})
-}}
-{{  objectstatus({label: "Yellow"},
-        modifier={block: ["indication-color-3"]})
-}}
-{{  objectstatus({label: "Green"},
-        modifier={block: ["indication-color-4"]})
-}}
-{{  objectstatus({label: "Blue"},
-        modifier={block: ["indication-color-5"]})
-}}
-{{  objectstatus({label: "Teal"},
-        modifier={block: ["indication-color-6"]})
-}}
-{{  objectstatus({label: "Purple"},
-        modifier={block: ["indication-color-7"]})
-}}
-{{  objectstatus({label: "Pink"},
-        modifier={block: ["indication-color-8"]})
-}}
-
-    {% endset %}
-    {{ format(example) }}
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--negative">Inverted Negative</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--critical">Inverted Warning</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--positive">Inverted Success</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--informative">Inverted informative</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--positive">3</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--informative">2.99</span>
 
 <br><br>
-    <h2>Status Object With Icons</h2>
 
-    {% set example %}
-{{  objectstatus({label: "Info Label",icon: 'status-negative'},
-        modifier={block: ["indication-color-1"]})
-}}
-{{  objectstatus({label: "Info Label",icon: 'status-critical'},
-        modifier={block: ["indication-color-2"]})
-}}
-{{  objectstatus({label: "Info Label",icon: 'status-positive'},
-        modifier={block: ["indication-color-3"]})
-}}
-{{  objectstatus({label: "Info Label",icon: 'hint'},
-        modifier={block: ["indication-color-4"]})
-}}
-{{  objectstatus({label: "Info Label",icon: 'to-be-reviewed'},
-        modifier={block: ["indication-color-5"]})
-}}
-
-    {% endset %}
-    {{ format(example) }}
-
-<h2>Inverted Object status Icon</h2>
-    <!-- output the component example and the code snippet -->
-    {% set example %}
-{{  invertedstatus({icon: 'status-negative'},
-        modifier={block: ["error","icon"]})
-}}
-    {% endset %}
-    {{ format(example) }}
-<br><br>
-
-<h2>Label</h2>
-    <!-- output the component example and the code snippet -->
-    {% set example %}
-{{  invertedstatus({label: "Negative Status"},
-        modifier={block: ["error"]})
-}}
-{{  invertedstatus({label: "Critical Status"},
-        modifier={block: ["warning"]})
-}}
-{{  invertedstatus({label: "Success Status"},
-        modifier={block: ["success"]})
-}}
-{{  invertedstatus({label: "Informative Status"},
-        modifier={block: ["info"]})
-}} 
-{{  invertedstatus({label: "Default"},
-        modifier={block: [""]})
-}} 
-    {% endset %}
-    {{ format(example) }}
-<br><br>
-
-    <h2>Status Object with Generic Colour Indication </h2>
-
-    {% set example %}
-{{  invertedstatus({label: "Indication1"},
-        modifier={block: ["indication-color-1"]})
-}}
-{{  invertedstatus({label: "Indication2"},
-        modifier={block: ["indication-color-2"]})
-}}
-{{  invertedstatus({label: "Indication3"},
-        modifier={block: ["indication-color-3"]})
-}}
-{{  invertedstatus({label: "Indication4"},
-        modifier={block: ["indication-color-4"]})
-}}
-{{  invertedstatus({label: "Indication5"},
-        modifier={block: ["indication-color-5"]})
-}}
-{{  invertedstatus({label: "Indication6"},
-        modifier={block: ["indication-color-6"]})
-}}
-{{  invertedstatus({label: "Indication7"},
-        modifier={block: ["indication-color-7"]})
-}}
-{{  invertedstatus({label: "Indication8"},
-        modifier={block: ["indication-color-8"]})
-}}
-
-    {% endset %}
-    {{ format(example) }}
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted">Inverted Default</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"></span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--negative sap-icon--status-negative">Negative</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--critical sap-icon--status-critical">Critical</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--positive sap-icon--status-positive">Positive</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--informative sap-icon--hint">Informative</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted sap-icon--to-be-reviewed">Neutral</span>
 
 <br><br>
-    <h2>Status Object With Icons</h2>
 
-    {% set example %}
-{{  invertedstatus({label: "Info Label",icon: 'status-negative'},
-        modifier={block: ["indication-color-1","icon"]})
-}}
-{{  invertedstatus({label: "Info Label",icon: 'status-critical'},
-        modifier={block: ["indication-color-2","icon"]})
-}}
-{{  invertedstatus({label: "Info Label",icon: 'status-positive'},
-        modifier={block: ["indication-color-3","icon"]})
-}}
-{{  invertedstatus({label: "Info Label",icon: 'hint'},
-        modifier={block: ["indication-color-4","icon"]})
-}}
-{{  invertedstatus({label: "Info Label",icon: 'to-be-reviewed'},
-        modifier={block: ["indication-color-5","icon"]})
-}}
-
-    {% endset %}
-    {{ format(example) }}
-
+<a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-1">Indication1</a>
+<a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-2">Indication2</a>
+<a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-3">Indication3</a>
+<a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-4">Indication4</a>
+<a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-5">Indication5</a>
+<a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-6">Indication6</a>
+<a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-7">Indication7</a>
+<a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-8">Indication8</a>
+{% endset %}
+{{ format(example) }}
 
 {% endblock %}

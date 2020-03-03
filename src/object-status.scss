@@ -7,6 +7,13 @@
 */
 $block: #{$fd-namespace}-object-status;
 
+$color-states: (
+  "positive": ("color": var(--sapPositiveTextColor), "iconColor": var(--sapPositiveElementColor)),
+  "critical": ("color": var(--sapCriticalTextColor), "iconColor": var(--sapCriticalElementColor)),
+  "negative": ("color": var(--sapNegativeTextColor), "iconColor": var(--sapNegativeElementColor)),
+  "informative": ("color": var(--sapInformativeTextColor), "iconColor": var(--sapInformativeElementColor))
+);
+
 $color-accents: (
   "1": ("color": var(--sapIndicationColor_1), "hover": #6f0000, "active": #550000, "visited": var(--sapIndicationColor_1)),
   "2": ("color": var(--sapIndicationColor_2), "hover": #a20000, "active": #880000, "visited": var(--sapIndicationColor_2)),
@@ -18,79 +25,132 @@ $color-accents: (
   "8": ("color": var(--sapAccentColor4), "hover": #e6acd8, "active": #ac338f, "visited": var(--sapAccentColor4))
 );
 
-.#{$block} {
-  @include fd-reset();
+// INTERACTION STATES FOR INVERTED OBJECT STATUS
+@mixin interaction-states($bg, $color, $hoverBg, $hoverColor, $activeBg, $activeColor, $visitedBg, $visitedColor) {
+  background-color: $bg;
+  color: $color;
 
-  $fd-object-status-font: var(--sapFontFamily);
-  $fd-object-status-font-size: var(--sapFontSize) !default;
-  $fd-object-status-padding: 0.5rem !default;
-  $fd-object-status-icon-size: 1rem !default;
+  &::before {
+    color: $color;
+  }
 
-  $fd-object-status-negative: var(--sapNegativeColor);
-  $fd-object-status-critical: var(--sapCriticalColor);
-  $fd-object-status-positive: var(--sapPositiveColor);
-  $fd-object-status-informative: var(--sapInformativeColor);
-  $fd-object-status-neutral: var(--sapNeutralColor);
+  &:hover {
+    background-color: $hoverBg;
+    color: $hoverColor;
 
-  @include fd-reset();
-
-  font: $fd-object-status-font;
-  font-size: $fd-object-status-font-size;
-  color: $fd-object-status-neutral;
-
-  @include fd-rtl() {
     &::before {
-      padding-right: 0;
-      padding-left: $fd-object-status-padding;
+      color: $hoverColor;
     }
   }
 
+  &:active {
+    background-color: $activeBg;
+    color: $activeColor;
+
+    &::before {
+      color: $activeColor;
+    }
+  }
+
+  &:visited {
+    background-color: $visitedBg;
+    color: $visitedColor;
+
+    &::before {
+      color: $visitedColor;
+    }
+  }
+}
+
+.#{$block} {
+  // ICON
+  $fd-object-status-icon-font-size: 1rem;
+  $fd-object-status-icon-padding: 0.5rem !default;
+  $fd-object-status-icon-neutral: var(--sapNeutralElementColor);
+
+  // TEXT
+  $fd-object-status-text-font-family: var(--sapFontFamily) !default;
+  $fd-object-status-text-font-size: var(--sapFontSize) !default;
+  $fd-object-status-text-neutral: var(--sapNeutralTextColor);
+
+  // INVERTED OBJECT STATUS
+  $fd-object-status-inverted-border-radius: 0.125rem !default;
+  $fd-object-status-inverted-padding: 0.0625rem 0.25rem !default;
+  $fd-object-status-inverted-min-height: 1rem !default;
+  $fd-object-status-inverted-text-font-weight: bold !default;
+  $fd-object-status-inverted-text-color: var(--sapContent_ContrastTextColor) !default;
+  $fd-object-status-inverted-icon-color: var(--sapContent_ContrastTextColor) !default;
+  $fd-object-status-inverted-icon-font-size: 0.75rem !default;
+  $fd-object-status-inverted-icon-spacing: 0.25rem !default;
+
+  // LARGE DESIGN
+  $fd-object-status-icon-text-font-size-large: 1.5rem;
+  $fd-object-status-icon-text-font-size-large-inverted: 1.25rem;
+
+  @include fd-reset();
+
+  font-family: $fd-object-status-text-font-family;
+  font-size: $fd-object-status-text-font-size;
+  color: $fd-object-status-text-neutral;
+  display: inline-block;
+  max-width: 100%;
+  word-break: break-word;
+  line-height: 1.4;
+
   &::before {
-    padding-right: $fd-object-status-padding;
-    font-size: $fd-object-status-icon-size;
+    font-size: $fd-object-status-icon-font-size;
+    padding-right: $fd-object-status-icon-padding;
+    color: $fd-object-status-icon-neutral;
     position: relative;
-    top: 0.133rem;
+    top: 0.125rem;
+  }
+
+  &:visited,
+  &:hover,
+  &:active {
+    color: $fd-object-status-text-neutral;
+  }
+
+  &:visited::before,
+  &:hover::before,
+  &:active::before {
+    color: $fd-object-status-icon-neutral;
   }
 
   &:empty {
     padding-right: 0;
     padding-left: 0;
-  }
 
-  &--icon {
     &::before {
       padding-right: 0;
-      font-size: $fd-object-status-icon-size;
+      padding-left: 0;
+    }
+  }
+
+  @include fd-rtl() {
+    &::before {
+      padding-right: 0;
+      padding-left: $fd-object-status-icon-padding;
     }
 
-    @include fd-rtl() {
+    &:empty {
       &::before {
+        padding-right: 0;
         padding-left: 0;
       }
     }
   }
 
-  &--success {
-    color: $fd-object-status-positive;
-  }
-
-  &--warning {
-    color: $fd-object-status-critical;
-  }
-
-  &--error {
-    color: $fd-object-status-negative;
-  }
-
-  &--info {
-    color: $fd-object-status-informative;
-  }
-
-  &--click-able {
+  &--link {
     text-decoration: none;
+    cursor: pointer;
 
     &:hover {
       text-decoration: underline;
+
+      &::before {
+        text-decoration: none;
+      }
     }
 
     &:visited {
@@ -98,131 +158,125 @@ $color-accents: (
     }
   }
 
-  @each $set-name, $color-set in $color-accents {
-    &--indication-color-#{$set-name} {
+  &--large {
+    font-size: $fd-object-status-icon-text-font-size-large;
+
+    &::before {
+      font-size: $fd-object-status-icon-text-font-size-large;
+    }
+  }
+
+  @each $set-name, $color-set in $color-states {
+    &--#{$set-name} {
       color: map_get($color-set, "color");
 
-      &:hover {
-        color: map_get($color-set, "hover");
+      &::before {
+        color: map_get($color-set, "iconColor");
       }
 
+      &:visited,
+      &:hover,
       &:active {
-        color: map_get($color-set, "active");
+        color: map_get($color-set, "color");
       }
 
-      &:visited {
-        color: map_get($color-set, "visited");
+      &:visited::before,
+      &:hover::before,
+      &:active::before {
+        color: map_get($color-set, "iconColor");
       }
     }
   }
-}
-$block1: #{$fd-namespace}-inverted-status;
 
-.#{$block1} {
-  @include fd-reset();
+  @each $set-name, $color-set in $color-accents {
+    &--indication-#{$set-name} {
+      color: map_get($color-set, "color");
 
-  $fd-inverted-status-font: var(--sapFontFamily);
-  $fd-inverted-status-font-size: var(--sapFontSize) !default;
-  $fd-inverted-status-font-weight: normal !default;
-  $fd-inverted-status-text-color: var(--sapContent_ContrastTextColor);
-  $fd-inverted-status-background: var(--sapButton_Neutral_Background);
-  $fd-inverted-status-height: auto !default;
-  $fd-inverted-status-width: auto !default;
-  $fd-inverted-status-min-height: 1rem !default;
-  $fd-inverted-status-border-radius: 0.125rem !default;
-  $fd-inverted-status-font-weight: bold !default;
-  $fd-inverted-status-default-padding: 0.0625rem 0.25rem !default;
-  $fd-inverted-status-error-background: var(--sapButton_Negative_Background);
-  $fd-inverted-status-success-background: var(--sapButton_Success_Background);
-  $fd-inverted-status-warning-background: var(--sapButton_Critical_Background);
-  $fd-inverted-status-info-background: var(--sapInformativeElementColor);
-  $fd-inverted-status-error-font-color: var(--sapButton_Negative_TextColor);
-  $fd-inverted-status-success-font-color: var(--sapButton_Success_TextColor);
-  $fd-inverted-status-warning-font-color: var(--sapButton_Critical_TextColor);
-  $fd-inverted-status-info-font-color: var(--sapInformativeTextColor);
-  $fd-inverted-status-icon-size: 0.75rem !default;
-  $fd-inverted-status-icon-padding-right: 0.25rem !default;
-  $fd-inverted-status-default-overflow: hidden !default;
-  $fd-inverted-status-max-width: 100% !default;
-  $fd-inverted-status-default-white-space: nowrap !default;
-  $fd-inverted-status-default-text-overflow: ellipsis !default;
-  $fd-inverted-status-default-max-width: fit-content !default;
-  $fd-inverted-status-default-inline: inline !default;
-  $fd-inverted-status-default-inline-block: inline-block !default;
-  $fd-inverted-status-default-position: relative !default;
-
-  padding: $fd-inverted-status-default-padding;
-  height: $fd-inverted-status-height;
-  width: $fd-inverted-status-width;
-  min-height: $fd-inverted-status-min-height;
-  border-radius: $fd-inverted-status-border-radius;
-  font-family: $fd-inverted-status-font;
-  font-size: $fd-inverted-status-font-size;
-  font-weight: $fd-inverted-status-font-weight;
-  color: $fd-inverted-status-text-color;
-  background: $fd-inverted-status-background;
-  display: $fd-inverted-status-default-inline-block;
-
-  &--error {
-    background: $fd-inverted-status-error-background;
-    color: $fd-inverted-status-error-font-color;
+      &:visited,
+      &:hover,
+      &:active {
+        color: map_get($color-set, "color");
+      }
+    }
   }
 
-  &--success {
-    background: $fd-inverted-status-success-background;
-    color: $fd-inverted-status-success-font-color;
-  }
-
-  &--warning {
-    background: $fd-inverted-status-warning-background;
-    color: $fd-inverted-status-warning-font-color;
-  }
-
-  &--info {
-    background: $fd-inverted-status-info-background;
-    color: $fd-inverted-status-text-color;
-  }
-
-  &:empty {
-    padding-right: 0;
-    display: $fd-inverted-status-default-inline;
-  }
-
-  &--icon {
-    display: $fd-inverted-status-default-inline-block;
-    width: $fd-inverted-status-max-width;
-    white-space: $fd-inverted-status-default-white-space;
-    overflow: $fd-inverted-status-default-overflow;
-    text-overflow: $fd-inverted-status-default-text-overflow;
-    max-width: $fd-inverted-status-default-max-width;
+  &--inverted {
+    font-size: var(--sapFontSmallSize);
+    min-height: $fd-object-status-inverted-min-height;
+    height: auto;
+    padding: $fd-object-status-inverted-padding;
+    border-radius: $fd-object-status-inverted-border-radius;
+    font-weight: $fd-object-status-inverted-text-font-weight;
+    color: $fd-object-status-inverted-text-color;
+    max-width: 100%;
 
     &::before {
-      padding-right: $fd-inverted-status-icon-padding-right;
-      position: $fd-inverted-status-default-position;
-      font-size: $fd-inverted-status-icon-size;
+      font-size: $fd-object-status-inverted-icon-font-size;
+      padding-right: $fd-object-status-inverted-icon-spacing;
+      color: $fd-object-status-inverted-icon-color;
+      top: 0.0625rem;
     }
 
     @include fd-rtl() {
       &::before {
-        padding-left: 0;
+        padding-right: 0;
+        padding-left: $fd-object-status-inverted-icon-spacing;
       }
     }
-  }
 
-  @each $set-name, $color-set in $color-accents {
-    &--indication-color-#{$set-name} {
-      background: map_get($color-set, "color");
+    &:empty {
+      height: 1rem;
+      width: 1.25rem;
+      padding: 0;
+      text-align: center;
+    }
 
-      &:hover {
-        background: map_get($color-set, "hover");
+    @include interaction-states(var(--sapButton_Neutral_Background), var(--sapButton_Neutral_TextColor), var(--sapButton_Neutral_Hover_Background), var(--sapButton_Neutral_Hover_TextColor), var(--sapButton_Neutral_Active_Background), var(--sapButton_Neutral_TextColor), var(--sapButton_Neutral_Background), var(--sapButton_Neutral_TextColor));
+
+    &.#{$block}--negative {
+      @include interaction-states(var(--sapButton_Negative_Background), var(--sapButton_Negative_TextColor), var(--sapButton_Negative_Hover_Background), var(--sapButton_Negative_Hover_TextColor), var(--sapButton_Negative_Active_Background), var(--sapButton_Negative_TextColor), var(--sapButton_Negative_Background), var(--sapButton_Negative_TextColor));
+    }
+
+    &.#{$block}--critical {
+      @include interaction-states(var(--sapButton_Critical_Background), var(--sapButton_Critical_TextColor), var(--sapButton_Critical_Hover_Background), var(--sapButton_Critical_Hover_TextColor), var(--sapButton_Critical_Active_Background), var(--sapButton_Critical_TextColor), var(--sapButton_Critical_Background), var(--sapButton_Critical_TextColor));
+    }
+
+    &.#{$block}--positive {
+      @include interaction-states(var(--sapButton_Success_Background), var(--sapButton_Success_TextColor), var(--sapButton_Success_Hover_Background), var(--sapButton_Success_Hover_TextColor), var(--sapButton_Success_Active_Background), var(--sapButton_Success_TextColor), var(--sapButton_Success_Background), var(--sapButton_Success_TextColor));
+    }
+
+    &.#{$block}--informative {
+      @include interaction-states(var(--sapInformativeElementColor), var(--sapContent_ContrastTextColor), #0961b9, var(--sapContent_ContrastTextColor), #0854a0, var(--sapContent_ContrastTextColor), #0a6ed1, var(--sapContent_ContrastTextColor));
+    }
+
+    &.#{$block}--large {
+      font-size: $fd-object-status-icon-text-font-size-large-inverted;
+
+      &::before {
+        font-size: $fd-object-status-icon-text-font-size-large-inverted;
       }
 
-      &:active {
-        background: map_get($color-set, "active");
+      &:empty {
+        height: auto;
+        width: auto;
       }
+    }
 
-      &:visited {
-        background: map_get($color-set, "visited");
+    @each $set-name, $color-set in $color-accents {
+      &.#{$block}--indication-#{$set-name} {
+        background: map_get($color-set, "color");
+
+        &:hover {
+          background: map_get($color-set, "hover");
+        }
+
+        &:active {
+          background: map_get($color-set, "active");
+        }
+
+        &:visited {
+          background: map_get($color-set, "visited");
+        }
       }
     }
   }
