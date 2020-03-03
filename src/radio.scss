@@ -65,23 +65,22 @@ $block: #{$fd-namespace}-radio;
       font-family: "SAP-icons";
       background-color: var(--sapField_Background);
       margin-right: $fd-radio-outer-circle-margin;
-      margin-left: 0;
       color: var(--sapSelectedColor);
       border: var(--sapField_BorderWidth) solid var(--sapField_BorderColor);
       border-radius: 50%;
-    }
-
-    @include fd-rtl() {
-      &::before {
-        margin-left: $fd-radio-outer-circle-margin;
-        margin-right: 0;
-      }
     }
 
     @include fd-hover() {
       &::before {
         background-color: var(--sapField_Hover_Background);
         border-color: var(--sapField_Hover_BorderColor);
+      }
+    }
+
+    @include fd-rtl() {
+      &::before {
+        margin-left: $fd-radio-outer-circle-margin;
+        margin-right: 0;
       }
     }
   }

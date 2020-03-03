@@ -164,10 +164,6 @@
         .fd-breadcrumb {
             margin-left: 0;
         }
-
-        .fd-action-bar__description {
-            padding: 0;
-        }
     }
 
     &__page {
@@ -312,7 +308,7 @@
         text-decoration: none;
     }
 
-    .fd-panel__description, .fd-action-bar__description {
+    .fd-panel__description {
         padding: 0;
     }
 
