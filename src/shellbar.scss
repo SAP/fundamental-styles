@@ -99,26 +99,26 @@ $block: #{$fd-namespace}-shellbar;
     @include fd-icon-size("m", "before");
     @include fd-icon-size("m", "after");
 
-    border-color: transparent;
-    background: $fd-shellbar-background-color;
-    color: $fd-shellbar-color;
+    border-color: transparent !important;
+    background: $fd-shellbar-background-color !important;
+    color: $fd-shellbar-color !important;
 
     &:hover {
-      background: $fd-shell-hover-background;
+      background: $fd-shell-hover-background !important;
     }
 
     &:active {
-      background: $fd-shell-active-background;
+      background: $fd-shell-active-background !important;
     }
 
     &:hover,
     &:active {
-      color: $fd-shell-active-text-color;
+      color: $fd-shell-active-text-color !important;
     }
 
     @include fd-hover() {
       @include fd-disabled() {
-        background: $fd-shellbar-background-color;
+        background: $fd-shellbar-background-color !important;
       }
     }
 
