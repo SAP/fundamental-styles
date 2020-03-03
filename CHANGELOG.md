@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0-rc.8"></a>
+# [0.8.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.7...v0.8.0-rc.8) (2020-03-03)
+
+
+### Bug Fixes
+
+* Tokenizer Input + Shellbar button improve specificity ([#754](https://github.com/SAP/fundamental-styles/issues/754)) ([aed04cd](https://github.com/SAP/fundamental-styles/commit/aed04cd))
+
+
+
 <a name="0.8.0-rc.7"></a>
 # [0.8.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.6...v0.8.0-rc.7) (2020-03-03)
 
