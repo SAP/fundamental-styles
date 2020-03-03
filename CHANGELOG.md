@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0-rc.10"></a>
+# [0.8.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.9...v0.8.0-rc.10) (2020-03-03)
+
+
+### Bug Fixes
+
+* postcss plugin to remove fonts from sap-theming css variables ([#750](https://github.com/SAP/fundamental-styles/issues/750)) ([7219a9b](https://github.com/SAP/fundamental-styles/commit/7219a9b))
+
+
+
 <a name="0.8.0-rc.9"></a>
 # [0.8.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.8...v0.8.0-rc.9) (2020-03-03)
 
