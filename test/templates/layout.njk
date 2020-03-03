@@ -6,10 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ id }}</title>
     <link rel="stylesheet" href="static/layout.css">
-    <link rel="stylesheet" href="sap-theming/css_variables.css">
+    <link rel="stylesheet" href="sap-theming/sap_fiori_3/css_variables.css">
+    <style>
+        @font-face {
+            font-family: "72";
+            src: url("sap-theming/sap_base_fiori/fonts/72-Regular.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+        };
+    </style>
+    <style>
+        @font-face {
+            font-family: "SAP-icons";
+            src: url("sap-theming/sap_fiori_3/fonts/SAP-icons.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+        };
+    </style>
     <style>
         {{ 'root.scss' | component_css }}
-        {{ 'fonts.scss' | component_css }}
         {{ 'icon.scss' | component_css }}
         {% set sass = id + '.scss'  %}
         {{ sass | component_css }}

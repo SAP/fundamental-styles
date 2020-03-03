@@ -129,6 +129,7 @@ $block: #{$fd-namespace}-dialog;
   &__body {
     @include fd-reset();
 
+    overflow: auto;
     flex-grow: 1;
     background-color: $fd-dialog-body-color;
     padding-top: $fd-dialog-body-padding-y;

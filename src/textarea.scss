@@ -39,9 +39,6 @@ $block: #{$fd-namespace}-textarea;
     @include fd-reset();
     @include fd-ellipsis();
 
-    font-family: var(--sapFontFamily);
-    font-size: var(--sapFontSize);
-    font-weight: normal;
     color: var(--sapContent_LabelColor);
     padding: 0.125rem 0.125rem 0.5rem;
     text-align: end;

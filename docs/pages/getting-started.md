@@ -31,3 +31,49 @@ npm i fundamental-styles --save
 ```
 https://unpkg.com/fundamental-styles@{{site.library_version}}/dist/fundamental-styles.css
 ```
+
+## Fonts
+
+
+SAP 72 font family was designed from the ground up and made it possible to meet SAP Fiori’s typographic requirements, including - legibility enhancements, font styles, brand voice, character set and language support.
+
+<br>
+<p class="docs-type_SAP">
+<span class="docs-type_drop-cap">72</span>
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z <br>
+a b c d e f g h i j k l m n o p q r s t u v w x y z <br>
+1 2 3 4 5 6 7 8 9 0 <br>
+​‘ ? ’ “ ! ” ( % ) [ # ] { @ } / &amp; \ &lt; - + ÷ × = &gt; ® © $ € £ ¥ ¢ : ; , . *
+</p>
+<br>
+<br>
+<a href="https://experience.sap.com/72/" target="_blank">Learn More about the SAP 72 Font Family</a>
+<br>
+
+
+## Icons
+
+See the [Icon Component]({{site.baseurl}}/components/icon.html) for a list of icon class names. See [Project Configuration](#Project-configuration) below for instructions to include SAP Fiori 3 icons in your project.
+
+## Project Configuration
+
+This project does not contain fonts and icons - they must be added to your project separately. Fonts and icons can be found at [`@sap-theming/theming-base-content`](https://github.com/SAP/theming-base-content){:target="_blank"}. After importing fonts and icons from [`@sap-theming/theming-base-content`](https://github.com/SAP/theming-base-content){:target="_blank"}, add the following to your css:
+
+```
+    @font-face {
+        font-family: "72";
+        src: url("path/to/fonts") format("woff"); // Bold, Light, Regular available in woff and woff2
+        font-weight: normal;
+        font-style: normal;
+    };
+
+    @font-face {
+        font-family: "SAP-icons";
+        src: url("path/to/icons") format("woff"); // available in woff, woff2 and ttf
+        font-weight: normal;
+        font-style: normal;
+    }
+```
+<br>
+If you are not supporting IE11, the recommended format is `woff2`. If supporting IE11, use `woff`.
+
