@@ -147,7 +147,7 @@ $fd-calendar-special-days: (
   min-width: $fd-calendar-item-width;
   border-radius: $fd-calendar-border-radius;
   background-color: $fd-calendar-item-background;
-  flex: 1 1 $fd-calendar-item-current-border-width * 2;
+  flex: 1 1 $fd-calendar-item-current-border-width * 2 + $fd-calendar-item-spacing * 2;
 
   @include fd-hover() {
     cursor: default;
