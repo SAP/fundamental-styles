@@ -104,16 +104,14 @@ $block: #{$fd-namespace}-action-bar;
 
   &__description {
     @include fd-action-bar-description();
-  }
 
-  &__description--with-backBtn {
-    @include fd-action-bar-description();
+    &--back {
+      padding-left: 2.5rem;
 
-    padding-left: 2.5rem;
-
-    @include fd-rtl() {
-      padding-left: 0;
-      padding-right: 2.5rem;
+      @include fd-rtl() {
+        padding-left: 0;
+        padding-right: 2.5rem;
+      }
     }
   }
 

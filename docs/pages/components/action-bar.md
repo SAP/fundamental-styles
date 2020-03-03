@@ -25,7 +25,7 @@ The Action Bar is located at the top of the page and is used for the following:
             <button class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
-    <p class="fd-action-bar__description--with-backBtn">Action bar Description </p>
+    <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description </p>
 </div>
 <br><br>
 <h3>RTL Support</h3>
@@ -41,7 +41,7 @@ The Action Bar is located at the top of the page and is used for the following:
             <button class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
-    <p class="fd-action-bar__description--with-backBtn">Action bar Description </p>
+    <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description </p>
 </div>
 {% endcapture %}
 {% include display-component.html component=default-action-bar %}
@@ -123,7 +123,7 @@ The Action Bar is located at the top of the page and is used for the following:
             <button class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
-    <p class="fd-action-bar__description--with-backBtn">Action bar Description Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long
+    <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long
     </p>
 </div>
 <br><br>
@@ -142,7 +142,7 @@ The Action Bar is located at the top of the page and is used for the following:
             <button class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
-     <p class="fd-action-bar__description--with-backBtn">Action bar Description Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long
+     <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long
      </p>
 </div>
 {% endcapture %}
@@ -195,7 +195,7 @@ When there are several main actions for a page, consider displaying them under a
             <button class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
-    <p class="fd-action-bar__description--with-backBtn">Action bar Description</p>
+    <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description</p>
 </div>
 <br><br>
 <h3>RTL Support</h3>
@@ -211,7 +211,7 @@ When there are several main actions for a page, consider displaying them under a
             <button class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
-    <p class="fd-action-bar__description--with-backBtn">Action bar Description</p>
+    <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description</p>
 </div>
 {% endcapture %}
 {% include display-component.html component=default-action-bar %}
@@ -229,7 +229,7 @@ When there are several main actions for a page, consider displaying them under a
             <button class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
-    <p class="fd-action-bar__description--with-backBtn">Action bar Description </p>
+    <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description </p>
 </div>
 <br><br>
 <h3>RTL Support</h3>
@@ -245,7 +245,7 @@ When there are several main actions for a page, consider displaying them under a
             <button class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
-    <p class="fd-action-bar__description--with-backBtn">Action bar Description </p>
+    <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description </p>
 </div>
 {% endcapture %}
 {% include display-component.html component=default-action-bar %}
@@ -263,7 +263,7 @@ When there are several main actions for a page, consider displaying them under a
             <button class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div> 
     </div>
-    <p class="fd-action-bar__description--with-backBtn">Action bar Description </p>
+    <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description </p>
 </div>
 <br><br>
 <h3>RTL Support</h3>
@@ -279,7 +279,7 @@ When there are several main actions for a page, consider displaying them under a
             <button class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div> 
     </div>
-    <p class="fd-action-bar__description--with-backBtn">Action bar Description </p>
+    <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description </p>
 </div>
 {% endcapture %}
 {% include display-component.html component=default-action-bar %}
