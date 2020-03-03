@@ -48,7 +48,7 @@ $block: #{$fd-namespace}-radio;
     align-items: center;
     overflow: hidden;
     padding: $fd-radio-outer-circle-margin 0 $fd-radio-outer-circle-margin $fd-radio-outer-circle-margin;
-    
+
     @include fd-rtl() {
       padding: $fd-radio-outer-circle-margin $fd-radio-outer-circle-margin $fd-radio-outer-circle-margin 0;
     }
@@ -135,13 +135,14 @@ $block: #{$fd-namespace}-radio;
       @include fd-rtl() {
         padding: $fd-radio-outer-circle-margin-compact $fd-radio-outer-circle-margin-compact $fd-radio-outer-circle-margin-compact 0;
       }
+
       &::before {
         font-size: 0.4375rem;
         height: $fd-radio-inner-circle-diameter-compact;
         width: $fd-radio-inner-circle-diameter-compact;
         min-width: $fd-radio-inner-circle-diameter-compact;
         margin-right: $fd-radio-outer-circle-margin-compact;
-        margin-left: 0
+        margin-left: 0;
       }
 
       @include fd-rtl() {

@@ -61,4 +61,17 @@
 {% endset %}
 
 {{ format(example) }}
+
+<h2>RTL</h2>
+
+{% set example %}
+  <div dir="RTL">
+  {{ radio(compact=true) }}
+  {{ radio(compact=true, properties='checked') }}
+  {{ radio(compact=false) }}
+  {{ radio(compact=false, properties='checked') }}
+  </div>
+{% endset %}
+
+{{ format(example) }}
 {% endblock %}
