@@ -180,3 +180,12 @@ Similar to adding margin or padding on all sides of an element, you can use the 
 {% endcapture %}
 
 {% include display-component.html component=block %}
+
+### Screen reader only
+{: .docs-header-h3}
+
+{% capture block %}
+<span class="fd-screen-reader-only">This element can only be read by screen readers</span>
+{% endcapture %}
+
+{% include display-component.html component=block %}
