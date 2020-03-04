@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0-rc.11"></a>
+# [0.8.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.10...v0.8.0-rc.11) (2020-03-04)
+
+
+### Features
+
+* refactor Calendar component to match Fiori 3 specs ([#506](https://github.com/SAP/fundamental-styles/issues/506)) ([fce05c4](https://github.com/SAP/fundamental-styles/commit/fce05c4))
+
+
+
 <a name="0.8.0-rc.10"></a>
 # [0.8.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.9...v0.8.0-rc.10) (2020-03-03)
 
