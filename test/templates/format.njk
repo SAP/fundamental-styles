@@ -1,6 +1,11 @@
 {% macro format(content="",bgcolor="transparent") %}
 <div class="backstop">
-{{ content }}
+    <div>
+        {{ content }}
+    </div>
+    <div dir="rtl">
+        {{ content }}
+    </div>
 </div>
 <br><br>
 <textarea readonly rows="10" cols="100" class="test-textarea">{{ content | e | trim }}</textarea>
