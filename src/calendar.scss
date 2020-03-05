@@ -300,6 +300,10 @@ $fd-calendar-special-days: (
     &--months {
       padding-top: $fd-calendar-item-helper-height;
     }
+
+    &--screen-reader-only {
+      @include fd-screen-reader-only();
+    }
   }
 
   &__table {

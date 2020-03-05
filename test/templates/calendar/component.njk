@@ -144,6 +144,7 @@ calendar:
             </tbody>
         </table>
     </div>
+    <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
 {%- endmacro %}
 
 {% macro calendar_months(id, properties={}, modifier={}, state={}) -%}
@@ -162,12 +163,13 @@ calendar:
                     {%- endif %}
                     {%- set _is_current = properties.month === loop.index0 %}
                     {%- set _is_selected = properties.months.selected === loop.index0 %}
-                    {{ calendar_item(month.name | truncate(3, true, "."),modifier={ 'item': ['current' if _is_current else '' ] },state={}) }}
+                    {{ calendar_item(month.name | truncate(3, true, "."),modifier={ 'item': ['current' if _is_current else '' ] },state={ active: _is_selected }) }}
                     {%- endfor %}
                 </tr>
             </tbody>
         </table>
     </div>
+    <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
 {%- endmacro %}
 
 {% macro calendar_years(id, properties={}, modifier={}, state={}) -%}
@@ -186,12 +188,13 @@ calendar:
                     {%- set year = properties.year + loop.index0 %}
                     {%- set _is_current = properties.year === year %}
                     {%- set _is_selected = properties.years.selected === loop.index0 %}
-                    {{ calendar_item(properties.year + loop.index0,modifier={ 'item': ['current' if _is_current else '' ] },state={ blocked: _is_blocked, selected: _is_selected }) }}
+                    {{ calendar_item(properties.year + loop.index0,modifier={ 'item': ['current' if _is_current else '' ] },state={ blocked: _is_blocked, active: _is_selected }) }}
                     {%- endfor %}
                 </tr>
             </tbody>
         </table>
     </div>
+    <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
 {%- endmacro %}
 
 {% macro calendar_header(ids={},properties={}, modifier={}, state={}, aria={}) -%}
@@ -238,6 +241,6 @@ calendar:
 {%- endmacro %}
 
 {% macro calendar_item(text, properties={}, modifier={}, state={}, aria={}, el="td") -%}
-    <{{ el }} class="fd-calendar__item{{ modifier.item | modifier('calendar__item') }}{{ state | state }}"{{ { selected: true } | aria if state.selected }}>
+    <{{ el }} class="fd-calendar__item{{ modifier.item | modifier('calendar__item') }}{{ state | state }}"{{ { selected: true } | aria if state.active }}>
     <span class="fd-calendar__text" role="button">{{ text }}</span></{{ el }}>
 {%- endmacro %}
