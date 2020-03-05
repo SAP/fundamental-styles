@@ -231,7 +231,7 @@ Do not use the text area if
     <div class="fd-form-item">
         <label class="fd-form-label" for="textarea-2">Compact text area:</label>
         <textarea class="fd-textarea fd-textarea--compact" id="textarea-2">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc.</textarea>
-        <div class="fd-textarea-counter">150 characters left</div>
+        <div class="fd-textarea__counter">150 characters left</div>
     </div>
     <br/>
     <div class="fd-form-item">
@@ -244,7 +244,7 @@ Do not use the text area if
                 <div class="fd-form-message fd-form-message--success">Success message</div>
             </div>
         </div>
-        <div class="fd-textarea-counter">150 characters left</div>
+        <div class="fd-textarea__counter">150 characters left</div>
     </div>
     <br/>
     <div class="fd-form-item">
@@ -296,7 +296,7 @@ Do not use the text area if
     <div class="fd-form-item" dir="rtl">
         <label class="fd-form-label" for="textarea-9">Text area:</label>
         <textarea class="fd-textarea" id="textarea-9" placeholder="Write something here"></textarea>
-        <div class="fd-textarea-counter">150 characters left</div>
+        <div class="fd-textarea__counter">150 characters left</div>
     </div>
 {% endcapture %}
 

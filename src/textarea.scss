@@ -35,7 +35,7 @@ $block: #{$fd-namespace}-textarea;
     padding: 0.1875rem 0.5rem;
   }
 
-  &-counter {
+  &__counter {
     @include fd-reset();
     @include fd-ellipsis();
 
