@@ -209,6 +209,7 @@ $block: #{$fd-namespace}-menu;
       opacity: var(--sapContent_DisabledOpacity);
       cursor: not-allowed;
       text-decoration: none;
+      pointer-events: none;
     }
 
     .#{$block}__title {
