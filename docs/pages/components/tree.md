@@ -57,11 +57,11 @@ Items that contain additional items are called nodes, while items that do not co
                 </span>
             </div>
             <div class="fd-tree__col fd-tree__col--actions">
-               <div class="fd-popover">
+               <div class="fd-popover fd-popover--right">
                     <div class="fd-popover__control">
                         <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="j2lk3j" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
-                    <div class="fd-popover__body" aria-hidden="true" id="j2lk3j">
+                    <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="j2lk3j">
                         <nav class="fd-menu">
                             <ul class="fd-menu__list">
                                 <li><a href="#" class="fd-menu__item">Edit</a></li>
@@ -94,11 +94,11 @@ Items that contain additional items are called nodes, while items that do not co
                         </span>
                     </div>
                     <div class="fd-tree__col fd-tree__col--actions">
-                        <div class="fd-popover">
+                        <div class="fd-popover fd-popover--right">
                             <div class="fd-popover__control">
                                 <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="lklkj3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                             </div>
-                            <div class="fd-popover__body" aria-hidden="true" id="lklkj3">
+                            <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="lklkj3">
                                 <nav class="fd-menu">
                                     <ul class="fd-menu__list">
                                         <li><a href="#" class="fd-menu__item">Edit</a></li>
@@ -131,11 +131,11 @@ Items that contain additional items are called nodes, while items that do not co
                                 </span>
                             </div>
                             <div class="fd-tree__col fd-tree__col--actions">
-                                <div class="fd-popover">
+                                <div class="fd-popover fd-popover--right">
                                     <div class="fd-popover__control">
                                         <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="asofjh3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                                     </div>
-                                    <div class="fd-popover__body" aria-hidden="true" id="asofjh3">
+                                    <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="asofjh3">
                                         <nav class="fd-menu">
                                             <ul class="fd-menu__list">
                                                 <li><a href="#" class="fd-menu__item">Edit</a></li>
@@ -167,11 +167,11 @@ Items that contain additional items are called nodes, while items that do not co
                                         </span>
                                     </div>
                                     <div class="fd-tree__col fd-tree__col--actions">
-                                       <div class="fd-popover">
+                                       <div class="fd-popover fd-popover--right">
                                             <div class="fd-popover__control">
                                                 <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="iouh3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                                             </div>
-                                            <div class="fd-popover__body" aria-hidden="true" id="iouh3">
+                                            <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="iouh3">
                                                 <nav class="fd-menu">
                                                     <ul class="fd-menu__list">
                                                         <li><a href="#" class="fd-menu__item">Edit</a></li>
@@ -206,11 +206,11 @@ Items that contain additional items are called nodes, while items that do not co
                         </span>
                     </div>
                     <div class="fd-tree__col fd-tree__col--actions">
-                        <div class="fd-popover">
+                        <div class="fd-popover fd-popover--right">
                             <div class="fd-popover__control">
                                 <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="jk3333" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                             </div>
-                            <div class="fd-popover__body" aria-hidden="true" id="jk3333">
+                            <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="jk3333">
                                 <nav class="fd-menu">
                                     <ul class="fd-menu__list">
                                         <li><a href="#" class="fd-menu__item">Edit</a></li>
@@ -245,11 +245,11 @@ Items that contain additional items are called nodes, while items that do not co
                 </span>
             </div>
             <div class="fd-tree__col fd-tree__col--actions">
-                <div class="fd-popover">
+                <div class="fd-popover fd-popover--right">
                     <div class="fd-popover__control">
                         <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="asdhjb3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
-                    <div class="fd-popover__body" aria-hidden="true" id="asdhjb3">
+                    <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="asdhjb3">
                         <nav class="fd-menu">
                             <ul class="fd-menu__list">
                                 <li><a href="#" class="fd-menu__item">Edit</a></li>
@@ -280,11 +280,11 @@ Items that contain additional items are called nodes, while items that do not co
                         </span>
                     </div>
                     <div class="fd-tree__col fd-tree__col--actions">
-                        <div class="fd-popover">
+                        <div class="fd-popover fd-popover--right">
                             <div class="fd-popover__control">
                                 <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="hkjhkjh3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                             </div>
-                            <div class="fd-popover__body" aria-hidden="true" id="hkjhkjh3">
+                            <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="hkjhkjh3">
                                 <nav class="fd-menu">
                                     <ul class="fd-menu__list">
                                         <li><a href="#" class="fd-menu__item">Edit</a></li>
@@ -317,11 +317,11 @@ Items that contain additional items are called nodes, while items that do not co
                 </span>
             </div>
             <div class="fd-tree__col fd-tree__col--actions">
-                <div class="fd-popover">
+                <div class="fd-popover fd-popover--right">
                     <div class="fd-popover__control">
                         <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="ggiuhwer" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
-                    <div class="fd-popover__body" aria-hidden="true" id="ggiuhwer">
+                    <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="ggiuhwer">
                         <nav class="fd-menu">
                             <ul class="fd-menu__list">
                                 <li><a href="#" class="fd-menu__item">Edit</a></li>
