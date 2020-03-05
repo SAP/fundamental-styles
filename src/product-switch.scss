@@ -57,6 +57,10 @@ $block: #{$fd-namespace}-product-switch;
     }
 
     width: 47rem;
+
+    > li {
+      list-style-type: none;
+    }
   }
 
   &__item {
