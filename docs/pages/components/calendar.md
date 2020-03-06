@@ -67,7 +67,7 @@ Following classes describe block structure of calendar component.
 
 
 ## Calendar modifiers
-This are classes used to describe the look general look of calendar.
+These are classes used to describe the general look of calendar.
 
 <div class="fd-calendar" style="width: 100%;">
     <table style="width: 100%;">
@@ -93,11 +93,15 @@ This are classes used to describe the look general look of calendar.
             <td><code style="white-space: nowrap;">.fd-calendar__content--years</code></td>
             <td>Class used to style calendar content when calendar displays years</td>
         </tr>
+        <tr>
+            <td><code style="white-space: nowrap;">.fd-calendar__content--screen-reader-only</code></td>
+            <td>Class used to style calendar content when only readable to screen readers</td>
+        </tr>
     </table>
 </div>
 
 ## Calendar navigation modifiers
-This are classes used to describe the look of calendar action buttons.
+These are classes used to describe the look of calendar action buttons.
 
 <div class="fd-calendar" style="width: 100%;">
     <table style="width: 100%;">
@@ -121,7 +125,7 @@ This are classes used to describe the look of calendar action buttons.
 </div>
 
 ## Calendar grid elements modifiers
-This are classes used to describe the look of calendar grid element.
+These are classes used to describe the look of calendar grid element.
 
 <div class="fd-calendar" style="width: 100%;">
     <table style="width: 100%;">
@@ -170,7 +174,7 @@ This are classes used to describe the look of calendar grid element.
 </div>
 
 ## Calendar elements state modifiers
-This are classes used to describe state of calendar grid element.
+These are classes used to describe state of calendar grid element.
 
 <div class="fd-calendar" style="width: 100%;">
     <table style="width: 100%;">
@@ -199,7 +203,7 @@ This are classes used to describe state of calendar grid element.
 </div>
 
 ## Calendar special days
-This are classes used to describe the look of calendar grid element.
+These are classes used to describe the look of calendar grid element.
 
 <div class="fd-calendar" style="width: 100%;">
     <table style="width: 100%;">
@@ -301,16 +305,16 @@ This are classes used to describe the look of calendar grid element.
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-selected="false"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">January</button>
+    			<button type="button" class="fd-button fd-button--transparent">January</button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">2018</button>
+    			<button type="button" class="fd-button fd-button--transparent">2018</button>
     		</div>
     		<div class="fd-calendar__action fd-calendar__action--arrow-right">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next" aria-selected="false"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
     		</div>
         </div>
     </header>
@@ -385,7 +389,7 @@ This are classes used to describe the look of calendar grid element.
                 <td class="fd-calendar__item fd-calendar__item--side-helper">
                     <span class="fd-calendar__text" role="button">3</span>
                 </td>
-                <td role="gridcell" class="fd-calendar__item is-active fd-calendar__item--range">
+                <td aria-selected="true" role="gridcell" class="fd-calendar__item is-active fd-calendar__item--range">
                     <span class="fd-calendar__text" role="button">13</span></td>
                 <td role="gridcell" class="fd-calendar__item fd-calendar__item--range">
                     <span class="fd-calendar__text" role="button">14</span></td>
@@ -395,7 +399,7 @@ This are classes used to describe the look of calendar grid element.
                     <span class="fd-calendar__text" role="button">16</span></td>
                 <td role="gridcell" class="fd-calendar__item fd-calendar__item--range">
                     <span class="fd-calendar__text" role="button">17</span></td>
-                <td role="gridcell" class="fd-calendar__item fd-calendar__item--weekend fd-calendar__item--current is-active fd-calendar__special-day--1">
+                <td aria-selected="true" role="gridcell" class="fd-calendar__item fd-calendar__item--weekend fd-calendar__item--current is-active fd-calendar__special-day--1">
                     <span class="fd-calendar__text" role="button">18</span></td>
                 <td role="gridcell" class="fd-calendar__item fd-calendar__item--weekend fd-calendar__special-day--1">
                     <span class="fd-calendar__text" role="button">19</span></td>
@@ -441,6 +445,7 @@ This are classes used to describe the look of calendar grid element.
             </tbody>
         </table>
     </div>
+    <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
 </div>
 {% endcapture %}
 
@@ -453,16 +458,16 @@ This are classes used to describe the look of calendar grid element.
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
             <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-selected="false"></button>
+                <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
             </div>
             <div class="fd-calendar__action">
-                <button type="button" class="fd-button fd-button--transparent" aria-selected="false">January</button>
+                <button type="button" class="fd-button fd-button--transparent">January</button>
             </div>
             <div class="fd-calendar__action">
-                <button type="button" class="fd-button fd-button--transparent" aria-selected="false">2018</button>
+                <button type="button" class="fd-button fd-button--transparent">2018</button>
             </div>
             <div class="fd-calendar__action fd-calendar__action--arrow-right">
-                <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next" aria-selected="false"></button>
+                <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
             </div>
         </div>
     </header>
@@ -474,7 +479,7 @@ This are classes used to describe the look of calendar grid element.
                     <span class="fd-calendar__text" role="button">January</span></td>
                 <td role="gridcell" class="fd-calendar__item">
                     <span class="fd-calendar__text" role="button">February</span></td>
-                <td role="gridcell" class="fd-calendar__item is-active">
+                <td aria-selected="true" role="gridcell" class="fd-calendar__item is-active">
                     <span class="fd-calendar__text" role="button">March</span></td>
             </tr>
             <tr class="fd-calendar__row">
@@ -504,6 +509,7 @@ This are classes used to describe the look of calendar grid element.
             </tbody>
         </table>
     </div>
+    <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
 </div>
 {% endcapture %}
 {% include display-component.html component=default-calendar-months %}
@@ -516,16 +522,16 @@ This are classes used to describe the look of calendar grid element.
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-selected="false"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">January</button>
+    			<button type="button" class="fd-button fd-button--transparent">January</button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">2018</button>
+    			<button type="button" class="fd-button fd-button--transparent">2018</button>
     		</div>
     		<div class="fd-calendar__action fd-calendar__action--arrow-right">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next" aria-selected="false"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
     		</div>
         </div>
     </header>
@@ -553,7 +559,7 @@ This are classes used to describe the look of calendar grid element.
                         <span class="fd-calendar__text" role="button">2025</span></td>
                     <td role="gridcell" class="fd-calendar__item">
                         <span class="fd-calendar__text" role="button">2026</span></td>
-                    <td role="gridcell" class="fd-calendar__item is-active">
+                    <td aria-selected="true" role="gridcell" class="fd-calendar__item is-active">
                         <span class="fd-calendar__text" role="button">2027</span></td>
                 </tr>
                 <tr class="fd-calendar__row">
@@ -583,21 +589,22 @@ This are classes used to describe the look of calendar grid element.
             </tbody>
         </table>
     </div>
+    <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
 </div>
     <div class="fd-calendar">
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-selected="false"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">January</button>
+    			<button type="button" class="fd-button fd-button--transparent">January</button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">2018</button>
+    			<button type="button" class="fd-button fd-button--transparent">2018</button>
     		</div>
     		<div class="fd-calendar__action fd-calendar__action--arrow-right">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next" aria-selected="false"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
     		</div>
         </div>
     </header>
@@ -633,12 +640,13 @@ This are classes used to describe the look of calendar grid element.
                         <span class="fd-calendar__text" role="button">2109 - 2119</span></td>
                     <td role="gridcell" class="fd-calendar__item">
                         <span class="fd-calendar__text" role="button">2120 - 2130</span></td>
-                    <td role="gridcell" class="fd-calendar__item is-active">
+                    <td aria-selected="true" role="gridcell" class="fd-calendar__item is-active">
                         <span class="fd-calendar__text" role="button">2131 - 2141</span></td>
                 </tr>
             </tbody>
         </table>
     </div>
+    <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
 </div>
 </div>
 
@@ -647,16 +655,16 @@ This are classes used to describe the look of calendar grid element.
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-selected="false"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">January</button>
+    			<button type="button" class="fd-button fd-button--transparent">January</button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">2018</button>
+    			<button type="button" class="fd-button fd-button--transparent">2018</button>
     		</div>
     		<div class="fd-calendar__action fd-calendar__action--arrow-right">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next" aria-selected="false"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
     		</div>
         </div>
     </header>
@@ -670,7 +678,7 @@ This are classes used to describe the look of calendar grid element.
                         <span class="fd-calendar__text" role="button">2021 BC - 2031 BC</span></td>
                 </tr>
                 <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__item is-active">
+                    <td aria-selected="true" role="gridcell" class="fd-calendar__item is-active">
                         <span class="fd-calendar__text" role="button">2032 BC - 2042 BC</span></td>
                     <td role="gridcell" class="fd-calendar__item">
                         <span class="fd-calendar__text" role="button">2043 BC - 2053 BC</span></td>
@@ -690,21 +698,22 @@ This are classes used to describe the look of calendar grid element.
             </tbody>
         </table>
     </div>
+    <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
 </div>
     <div class="fd-calendar">
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-selected="false"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">January</button>
+    			<button type="button" class="fd-button fd-button--transparent">January</button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--transparent" aria-selected="false">2018</button>
+    			<button type="button" class="fd-button fd-button--transparent">2018</button>
     		</div>
     		<div class="fd-calendar__action fd-calendar__action--arrow-right">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next" aria-selected="false"></button>
+    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
     		</div>
         </div>
     </header>
@@ -716,7 +725,7 @@ This are classes used to describe the look of calendar grid element.
                         <span class="fd-calendar__text" role="button">2010 Showa - 2020 Showa</span></td>
                 </tr>
                 <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--current is-active">
+                    <td aria-selected="true" role="gridcell" class="fd-calendar__item fd-calendar__item--current is-active">
                         <span class="fd-calendar__text" role="button">2021 Showa - 2031 Showa</span></td>
                 </tr>
                 <tr class="fd-calendar__row is-active">
@@ -730,6 +739,7 @@ This are classes used to describe the look of calendar grid element.
             </tbody>
         </table>
     </div>
+    <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
 </div>
 </div>
 {% endcapture %}
@@ -745,10 +755,10 @@ This are classes used to describe the look of calendar grid element.
     			<button type="button" class="fd-button fd-button--compact fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--compact fd-button--transparent" aria-selected="false" aria-expanded="false" aria-controls="fm3cr569">January</button>
+    			<button type="button" class="fd-button fd-button--compact fd-button--transparent" aria-expanded="false" aria-controls="fm3cr569">January</button>
     		</div>
     		<div class="fd-calendar__action">
-    			<button type="button" class="fd-button fd-button--compact fd-button--transparent" aria-selected="true" aria-expanded="true" aria-controls="bufLe361">2018</button>
+    			<button type="button" class="fd-button fd-button--compact fd-button--transparent" aria-expanded="true" aria-controls="bufLe361">2018</button>
     		</div>
     		<div class="fd-calendar__action fd-calendar__action--arrow-right">
     			<button type="button" class="fd-button fd-button--compact fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
@@ -826,7 +836,7 @@ This are classes used to describe the look of calendar grid element.
                 <td class="fd-calendar__item fd-calendar__item--side-helper">
                     <span class="fd-calendar__text" role="button">3</span>
                 </td>
-                <td role="gridcell" class="fd-calendar__item is-active fd-calendar__item--range">
+                <td aria-selected="true" role="gridcell" class="fd-calendar__item is-active fd-calendar__item--range">
                     <span class="fd-calendar__text" role="button">13</span></td>
                 <td role="gridcell" class="fd-calendar__item fd-calendar__item--range">
                     <span class="fd-calendar__text" role="button">14</span></td>
@@ -836,7 +846,7 @@ This are classes used to describe the look of calendar grid element.
                     <span class="fd-calendar__text" role="button">16</span></td>
                 <td role="gridcell" class="fd-calendar__item fd-calendar__item--range">
                     <span class="fd-calendar__text" role="button">17</span></td>
-                <td role="gridcell" class="fd-calendar__item fd-calendar__item--weekend fd-calendar__item--current is-active fd-calendar__special-day--1">
+                <td aria-selected="true" role="gridcell" class="fd-calendar__item fd-calendar__item--weekend fd-calendar__item--current is-active fd-calendar__special-day--1">
                     <span class="fd-calendar__text" role="button">18</span></td>
                 <td role="gridcell" class="fd-calendar__item fd-calendar__item--weekend fd-calendar__special-day--1">
                     <span class="fd-calendar__text" role="button">19</span></td>
@@ -882,6 +892,7 @@ This are classes used to describe the look of calendar grid element.
             </tbody>
         </table>
     </div>
+    <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
 </div>
 {% endcapture %}
 {% include display-component.html component=default-calendar-compact %}
@@ -903,18 +914,18 @@ Remember that if <code>.fd-calendar__close-button</code> is placed inside naviga
                 <header class="fd-calendar__header">
                     <div class="fd-calendar__navigation fd-calendar__navigation--main">
                         <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-selected="false"></button>
+                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
                         </div>
                         <div class="fd-calendar__action">
-                            <button type="button" class="fd-button fd-button--transparent" aria-selected="false">January</button>
+                            <button type="button" class="fd-button fd-button--transparent">January</button>
                         </div>
                         <div class="fd-calendar__action">
-                            <button type="button" class="fd-button fd-button--transparent" aria-selected="false">2018</button>
+                            <button type="button" class="fd-button fd-button--transparent">2018</button>
                         </div>
                         <div class="fd-calendar__action fd-calendar__action--arrow-right">
-                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next" aria-selected="false"></button>
+                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
                         </div>
-                        <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button fd-calendar__close-button--navigation" aria-label="Close" aria-selected="false"></button>
+                        <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button fd-calendar__close-button--navigation" aria-label="Close"></button>
                     </div>
                 </header>
                 <div class="fd-calendar__content fd-calendar__content--dates" id="Xh8Gr283">
@@ -994,7 +1005,7 @@ Remember that if <code>.fd-calendar__close-button</code> is placed inside naviga
                                 <span class="fd-calendar__text" role="button">13</span></td>
                             <td role="gridcell" class="fd-calendar__item">
                                 <span class="fd-calendar__text" role="button">14</span></td>
-                            <td role="gridcell" class="fd-calendar__item is-active">
+                            <td aria-selected="true" role="gridcell" class="fd-calendar__item is-active">
                                 <span class="fd-calendar__text" role="button">15</span></td>
                             <td role="gridcell" class="fd-calendar__item">
                                 <span class="fd-calendar__text" role="button">16</span></td>
@@ -1049,7 +1060,7 @@ Remember that if <code>.fd-calendar__close-button</code> is placed inside naviga
         <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized" aria-selected="false">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">
                         OK
                     </button>
                 </div>
@@ -1077,7 +1088,7 @@ On mobile devices calendar is composed into Dialog window taking full width and 
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button" aria-label="Close" aria-selected="false"></button>
+                    <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button" aria-label="Close"></button>
                 </div>
             </div>
         </header>
@@ -1086,22 +1097,22 @@ On mobile devices calendar is composed into Dialog window taking full width and 
                 <header class="fd-calendar__header">
                     <div class="fd-calendar__navigation">
                         <div class="fd-segmented-button" role="group" aria-label="Switch Date/Time picker">
-                            <button class="fd-button is-active" aria-selected="true">Date</button>
-                            <button class="fd-button" aria-selected="false">Time</button>
+                            <button class="fd-button is-active">Date</button>
+                            <button class="fd-button">Time</button>
                         </div>
                     </div>
                     <div class="fd-calendar__navigation">
                         <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-selected="false"></button>
+                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
                         </div>
                         <div class="fd-calendar__action">
-                            <button type="button" class="fd-button fd-button--transparent" aria-selected="false">January</button>
+                            <button type="button" class="fd-button fd-button--transparent">January</button>
                         </div>
                         <div class="fd-calendar__action">
-                            <button type="button" class="fd-button fd-button--transparent" aria-selected="false">2018</button>
+                            <button type="button" class="fd-button fd-button--transparent">2018</button>
                         </div>
                         <div class="fd-calendar__action fd-calendar__action--arrow-right">
-                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next" aria-selected="false"></button>
+                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
                         </div>
                     </div>
                 </header>
@@ -1182,7 +1193,7 @@ On mobile devices calendar is composed into Dialog window taking full width and 
                                 <span class="fd-calendar__text" role="button">13</span></td>
                             <td role="gridcell" class="fd-calendar__item">
                                 <span class="fd-calendar__text" role="button">14</span></td>
-                            <td role="gridcell" class="fd-calendar__item is-active">
+                            <td aria-selected="true" role="gridcell" class="fd-calendar__item is-active">
                                 <span class="fd-calendar__text" role="button">15</span></td>
                             <td role="gridcell" class="fd-calendar__item">
                                 <span class="fd-calendar__text" role="button">16</span></td>
@@ -1232,12 +1243,13 @@ On mobile devices calendar is composed into Dialog window taking full width and 
                         </tbody>
                     </table>
                 </div>
+                <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
             </div>
         </div>
         <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized" aria-selected="false">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">
                         OK
                     </button>
                 </div>
