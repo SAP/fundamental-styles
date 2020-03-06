@@ -10,7 +10,7 @@ summary:
 ---
 
 The Step Input component is an opinionated composition of the InputGroup, Button and FormInput compponents.
-The StepInput is typically used to enter numbers.The value can be increased or reduced with the provided controls.
+It is typically used to enter numbers.The value can be increased or reduced with the provided controls.
 {: .docs-intro}
 
 {% capture default %}
