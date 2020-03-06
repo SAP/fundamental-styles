@@ -112,4 +112,25 @@
   --sapPageFooter_Background: powderblue;
   --sapSelectedColor: #4f9344;
   --sapField_BorderColor: rgb(13%, 71%, 90%);
+  --sapPositiveTextColor:#4f9344;
+  --sapPositiveElementColor: #00D1B2;
+  --sapCriticalTextColor: #993300;
+  --sapCriticalElementColor: #66ffff;
+  --sapNegativeTextColor: #cc33ff;
+  --sapNegativeElementColor: orange;
+  --sapInformativeTextColor: pink;
+  --sapInformativeElementColor: green;
+  --sapIndicationColor_1: #945ef7;
+  --sapIndicationColor_2: #4f9344;
+  --sapIndicationColor_3: yellow;
+  --sapIndicationColor_4: brown;
+  --sapIndicationColor_5: red;
+  --sapAccentColor4: purple;
+  --sapAccentColor7: plum;
+  --sapAccentColor9: powderblue;
+  --sapButton_Neutral_Background: darkblue;
+  --sapButton_Negative_Background: palegoldenrod;
+  --sapButton_Critical_Background: chocolate;
+  --sapButton_Success_Background: teal;
+  --sapInformativeElementColor: #e3ba20;
 }
