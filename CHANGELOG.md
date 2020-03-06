@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0-rc.15"></a>
+# [0.8.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.14...v0.8.0-rc.15) (2020-03-06)
+
+
+### Bug Fixes
+
+* add input-message-group popover specific rules to popper elements ([#767](https://github.com/SAP/fundamental-styles/issues/767)) ([fd6d4cc](https://github.com/SAP/fundamental-styles/commit/fd6d4cc))
+
+
+
 <a name="0.8.0-rc.14"></a>
 # [0.8.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.13...v0.8.0-rc.14) (2020-03-05)
 
