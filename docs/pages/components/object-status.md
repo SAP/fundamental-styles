@@ -220,6 +220,7 @@ For Object Status in Large Design use the `fd-object-status--large` modifier cla
 <a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-2">Indication2</a>
 <a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-3">Indication3</a>
 <a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-4">Indication4</a>
+<br><br>
 <a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-5">Indication5</a>
 <a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-6">Indication6</a>
 <a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-7">Indication7</a>

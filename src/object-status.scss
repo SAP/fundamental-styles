@@ -259,6 +259,7 @@ $color-accents: (
       &:empty {
         height: auto;
         width: auto;
+        padding: $fd-object-status-inverted-padding;
       }
     }
 
