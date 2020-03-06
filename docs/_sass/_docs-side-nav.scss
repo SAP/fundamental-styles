@@ -15,7 +15,7 @@ $side-nav-links-color: $docs-home-white-color;
         display: none;
         &.fd-styles__mobile-list {
             width: auto;
-            display: block;
+            display: flex;
         }
     }
 
@@ -50,6 +50,7 @@ $side-nav-links-color: $docs-home-white-color;
 
     &__links-container {
         padding-left: 20px;
+        padding-bottom: 7rem;
         margin: 0;
         overflow-y: auto;
     }
