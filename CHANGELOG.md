@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0-rc.17"></a>
+# [0.8.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.16...v0.8.0-rc.17) (2020-03-06)
+
+
+### Bug Fixes
+
+* status indicator refactoring to object status ([#694](https://github.com/SAP/fundamental-styles/issues/694)) ([a680edd](https://github.com/SAP/fundamental-styles/commit/a680edd))
+
+
+
 <a name="0.8.0-rc.16"></a>
 # [0.8.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.15...v0.8.0-rc.16) (2020-03-06)
 
