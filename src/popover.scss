@@ -224,7 +224,9 @@ $block: #{$fd-namespace}-popover;
 
   &--input-message-group {
     .#{$block}__body,
-    .#{$block}__body--no-arrow {
+    .#{$block}__body--no-arrow,
+    .#{$block}__popper,
+    .#{$block}__popper--no-arrow {
       box-shadow: none;
       border: none;
       margin-top: -0.25rem;
