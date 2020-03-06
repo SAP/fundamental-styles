@@ -66,6 +66,10 @@ entries:
       url: /patterns/search-input.html
       output: web
 
+    - title: Step Input
+      url: /patterns/step-input.html
+      output: web
+
     - title: Time Picker
       url: /patterns/time-picker.html
       output: web
