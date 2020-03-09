@@ -3,6 +3,7 @@
 @import "./functions";
 @import "./product-menu";
 @import "./search-input";
+@import "./button";
 
 $block: #{$fd-namespace}-shellbar;
 
@@ -65,6 +66,7 @@ $block: #{$fd-namespace}-shellbar;
 
       .#{$block}__button {
         padding-left: 0;
+        padding-right: 0;
       }
     }
 
@@ -95,30 +97,30 @@ $block: #{$fd-namespace}-shellbar;
   }
 
   &__button {
-    @include fd-button-reset();
+    @include buttonReset();
     @include fd-icon-size("m", "before");
     @include fd-icon-size("m", "after");
 
-    border-color: transparent !important;
-    background: $fd-shellbar-background-color !important;
-    color: $fd-shellbar-color !important;
+    border-color: transparent;
+    background: $fd-shellbar-background-color;
+    color: $fd-shellbar-color;
 
     &:hover {
-      background: $fd-shell-hover-background !important;
+      background: $fd-shell-hover-background;
     }
 
     &:active {
-      background: $fd-shell-active-background !important;
+      background: $fd-shell-active-background;
     }
 
     &:hover,
     &:active {
-      color: $fd-shell-active-text-color !important;
+      color: $fd-shell-active-text-color;
     }
 
     @include fd-hover() {
       @include fd-disabled() {
-        background: $fd-shellbar-background-color !important;
+        background: $fd-shellbar-background-color;
       }
     }
 
@@ -126,6 +128,18 @@ $block: #{$fd-namespace}-shellbar;
       &::before {
         margin-right: 0;
       }
+    }
+  }
+
+  .#{$block}__button.#{$fd-namespace}-user-menu__control {
+    padding-left: 0;
+    padding-right: 0;
+    border-color: transparent;
+  }
+
+  .#{$block}__button.#{$fd-namespace}-product-switch__control {
+    &::before {
+      margin-right: 0;
     }
   }
 

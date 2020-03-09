@@ -57,7 +57,7 @@ This example shows the minimum shellbar for a single application product with on
     <div class="fd-shellbar__action">
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
-          <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="WV3AY276" aria-expanded="false" aria-haspopup="true" role="button">
+          <div class="fd-shellbar__button fd-user-menu__control" aria-controls="WV3AY276" aria-expanded="false" aria-haspopup="true" role="button">
             <span class="fd-identifier fd-identifier--xs fd-identifier--circle">WW</span>
           </div>
         </div>
@@ -115,19 +115,19 @@ This example includes the product menu for navigating to applications within the
           <div class="fd-input-group fd-shellbar__input-group">
             <input type="text" class="fd-input fd-input-group__input fd-shellbar__input-group__input" id="F4GcX348b1" value="Sear" placeholder="Search...">
             <span class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button">
-              <button class="fd-shellbar__button fd-button sap-icon--decline"></button>
+              <button class="fd-shellbar__button sap-icon--decline"></button>
             </span>
           </div>
         </div>
       </div>
     </div>
     <div class="fd-shellbar__action fd-shellbar__action--desktop">
-      <button class="fd-button fd-shellbar__button sap-icon--search" aria-label="Search"></button>
+      <button class="fd-shellbar__button sap-icon--search" aria-label="Search"></button>
     </div>
     <div class="fd-shellbar__action">
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
-          <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="ZY3AY276" aria-expanded="false" aria-haspopup="true" role="button">
+          <div class="fd-shellbar__button fd-user-menu__control" aria-controls="ZY3AY276" aria-expanded="false" aria-haspopup="true" role="button">
             <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" aria-label="William Wallingham">WW</span>
           </div>
         </div>
@@ -164,28 +164,28 @@ When a product has multiple links, the product links should collapse into an ove
           <div class="fd-input-group fd-shellbar__input-group">
             <input type="text" class="fd-input fd-input-group__input fd-shellbar__input-group__input" id="UIO6J6881" value="Sear" placeholder="Search...">
             <span class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button">
-              <button class="fd-shellbar__button fd-button sap-icon--navigation-down-arrow"></button>
+              <button class="fd-shellbar__button sap-icon--navigation-down-arrow"></button>
             </span>
           </div>
         </div>
       </div>
     </div>
     <div class="fd-shellbar__action fd-shellbar__action--desktop">
-      <button class="fd-button fd-shellbar__button sap-icon--search" aria-label="Search"></button>
+      <button class="fd-shellbar__button sap-icon--search" aria-label="Search"></button>
     </div>
       <div class="fd-shellbar__action fd-shellbar__action--desktop">
-        <button class="fd-button fd-shellbar__button sap-icon--bell" aria-label="Notifications">
+        <button class="fd-shellbar__button sap-icon--bell" aria-label="Notifications">
         <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification" aria-label="Unread count">251234</span></button>
       </div>
       <div class="fd-shellbar__action fd-shellbar__action--desktop">
-        <button class="fd-button fd-shellbar__button sap-icon--pool" aria-label="Pool"></button>
+        <button class="fd-shellbar__button sap-icon--pool" aria-label="Pool"></button>
       </div>
       <div class="fd-shellbar__action fd-shellbar__action--mobile">
         <div class="fd-shellbar-collapse">
           <div class="fd-popover fd-popover--right">
             <div class="fd-popover__control">
               <div class="fd-shellbar-collapse--control" aria-controls="CWaGX278" aria-expanded="false" aria-haspopup="true" role="button">
-                <button class="fd-button fd-shellbar__button sap-icon--overflow" aria-controls="undefined" aria-haspopup="true" aria-expanded="false">
+                <button class="fd-shellbar__button sap-icon--overflow" aria-controls="undefined" aria-haspopup="true" aria-expanded="false">
                 <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification" aria-label="Unread count">25</span></button>
               </div>
             </div>
@@ -204,7 +204,7 @@ When a product has multiple links, the product links should collapse into an ove
       <div class="fd-shellbar__action">
         <div class="fd-popover fd-popover--right">
           <div class="fd-popover__control">
-            <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="DD35G276" aria-expanded="false" aria-haspopup="true" role="button">
+            <div class="fd-shellbar__button fd-user-menu__control" aria-controls="DD35G276" aria-expanded="false" aria-haspopup="true" role="button">
               <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-shellbar__identifier--circle">WW</span>
             </div>
           </div>
@@ -240,13 +240,13 @@ For more information about the Product Switch, see [Product Switch](product-swit
     <span class="fd-shellbar__title">Corporate Portal</span>
   </div>
   <div class="fd-shellbar__group fd-shellbar__group--copilot">
-    <button class="fd-button fd-shellbar__button"><img src="//unpkg.com/fundamental-styles/dist/images/copilot.png" alt="CoPilot" height="30" width="30" /></button>
+    <button class="fd-shellbar__button"><img src="//unpkg.com/fundamental-styles/dist/images/copilot.png" alt="CoPilot" height="30" width="30" /></button>
   </div>
   <div class="fd-shellbar__group fd-shellbar__group--actions">
       <div class="fd-shellbar__action">
         <div class="fd-popover fd-popover--right">
           <div class="fd-popover__control">
-            <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="MKFAY276" aria-expanded="false" aria-haspopup="true" role="button">
+            <div class="fd-shellbar__button fd-user-menu__control" aria-controls="MKFAY276" aria-expanded="false" aria-haspopup="true" role="button">
               <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" aria-label="William Wallingham">WW</span>
             </div>
           </div>
@@ -264,7 +264,7 @@ For more information about the Product Switch, see [Product Switch](product-swit
         <div class="fd-product-switch">
             <div class="fd-popover fd-popover--right">
                 <div class="fd-popover__control">
-                    <button class="fd-button fd-button--transparent fd-popover__control fd-product-switch__control sap-icon--grid" 
+                    <button class="fd-shellbar__button fd-popover__control fd-product-switch__control sap-icon--grid" 
                         aria-label="Image label" 
                         aria-controls="product-switch-body" 
                         aria-expanded="false" 
