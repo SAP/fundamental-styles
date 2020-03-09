@@ -13,6 +13,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
 .#{$block} {
 
+  $fd-input-width-basis: 10rem;
   $fd-input-group-add-on-border: 0.0625rem;
   $fd-input-group-button-active-text-color: var(--sapButton_Active_TextColor);
   $fd-input-group-button-active-background: var(--sapButton_Active_Background);
@@ -70,7 +71,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
     background-color: transparent;
     border: none;
-    flex: 1;
+    flex: 1 1 $fd-input-width-basis;
     padding-right: 0.25rem;
     padding-left: 0.25rem;
 
@@ -102,11 +103,6 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
         padding-left: 0.625rem;
         padding-right: 0.25rem;
       }
-    }
-
-    /** Behaviour only for IE10+ */
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      min-width: 160px;
     }
   }
 
