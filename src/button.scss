@@ -61,6 +61,9 @@ $block: #{$fd-namespace}-button;
   max-height: $fd-button-height;
   min-width: $fd-button-min-width;
   line-height: $fd-button-line-height;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 
   @include iconSize($fd-button-icon-font-size);
 
