@@ -1,0 +1,47 @@
+{
+  "name": "github-assistant",
+  "version": "0.3.0",
+  "description": "Scripts to programmatically help with GitHub tasks",
+  "bin": {
+    "create-release": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "start": "npm run build && node dist/index.js",
+    "release": "./scripts/publish-release.sh",
+    "release:create": "./dist/index.js",
+    "std-version": "standard-version -m \"chore(release): version %s build ${TRAVIS_BUILD_NUMBER} [ci skip]\"",
+    "test": "echo \"No tests defined\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greg-a-smith/github-assistant.git"
+  },
+  "author": "Greg Smith <greg@joeboo.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/greg-a-smith/github-assistant/issues"
+  },
+  "homepage": "https://github.com/greg-a-smith/github-assistant#readme",
+  "dependencies": {
+    "github-api": "3.3.0",
+    "yargs": "15.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.7",
+    "@typescript-eslint/eslint-plugin": "^2.22.0",
+    "@typescript-eslint/parser": "^2.22.0",
+    "eslint": "^6.8.0",
+    "pre-commit": "1.2.2",
+    "standard-version": "4.4.0",
+    "typescript": "^3.8.3"
+  },
+  "pre-commit": {
+    "colors": true,
+    "run": [
+      "lint"
+    ],
+    "silent": false
+  }
+}

@@ -13,15 +13,21 @@ release_tag=$(echo "$std_ver" | grep "tagging release" | awk '{print $4}')
 
 echo "$std_ver"
 
-git push --follow-tags "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" master > /dev/null 2>&1;
+git push --follow-tags "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" master
 
 # build dist and component folders
 npm run build:prod
 
-npm publish
+# npm publish
+
+cd github-assistant
+
+npm i
+npm run build
+node dist/index.js --repo $TRAVIS_REPO_SLUG --tag $release_tag --branch master
 
 # run this after publish to make sure GitHub finishes updating from the push
-npm run release:create -- --repo $TRAVIS_REPO_SLUG --tag $release_tag --branch master
+# npm run release:create -- --repo $TRAVIS_REPO_SLUG --tag $release_tag --branch master
 
 npm run docs:prod
 npm run deploy -- --repo "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG"

@@ -1,0 +1,6 @@
+node-modules
+scripts
+src
+ci-scripts
+.github
+.vscode
