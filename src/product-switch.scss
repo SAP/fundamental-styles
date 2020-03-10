@@ -25,6 +25,10 @@ $block: #{$fd-namespace}-product-switch;
 
     color: var(--sapShell_TextColor);
 
+    &::before {
+      margin-right: 0;
+    }
+
     @include fd-hover() {
       color: var(--sapShell_TextColor);
       background-color: var(--sapShell_Hover_Background);
