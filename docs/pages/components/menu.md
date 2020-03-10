@@ -26,7 +26,7 @@ Combobox Desktop Compact Mode
 <br/>
 <br/>
 
-<nav class="fd-menu fd-menu--compact-desktop">
+<nav class="fd-menu fd-menu--compact">
         <ul class="fd-menu__list">
             <li class="fd-menu__item" role="option" tabindex="0"><span class="fd-menu__title">Option 1 with very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long header</span></li>
             <li class="fd-menu__item" role="option" tabindex="0"><span class="fd-menu__title">Option 2</span></li>
@@ -77,20 +77,20 @@ The basic stucture of a menu in mobile where it opens as a dialog.
                     <li class="fd-menu__item" role="option" tabindex="0">                        
                             <span class="fd-menu__addon-before sap-icon--grid"></span>
                             <span class="fd-menu__title">Option 1 with two icons and very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long header</span>
-                            <span class="fd-menu__addon-after sap-icon--navigation-right-arrow"></span>                        
+                            <span class="fd-menu__addon-after sap-icon--cart"></span>                        
                     </li>
                     <li class="fd-menu__item" role="option" tabindex="0">                        
                             <span class="fd-menu__addon-before sap-icon--accept"></span>
                             <span class="fd-menu__title">Option 2 with one icon</span>                        
                     </li>
                     <li class="fd-menu__item" role="option" tabindex="0">                        
-                            <span class="fd-menu__title">Option 3 with one icon and very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long header</span>
-                            <span class="fd-menu__addon-after sap-icon--navigation-right-arrow"></span>                        
+                            <span class="fd-menu__title">Option 3 with no icon and very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long header</span>
+                            <span class="fd-menu__addon-after sap-icon--lightbulb"></span>                        
                     </li>
                     <li class="fd-menu__item" role="option" tabindex="0">                        
                             <span class="fd-menu__addon-before sap-icon--grid"></span>
                             <span class="fd-menu__title">Option 4 with two icons</span>
-                            <span class="fd-menu__addon-after sap-icon--navigation-right-arrow"></span>                         
+                            <span class="fd-menu__addon-after sap-icon--history"></span>                        
                     </li>
                 </ul>
             </nav>
@@ -116,16 +116,18 @@ Use a modifier on the list element to add separators between the items.
 
 <nav class="fd-menu">
     <ul class="fd-menu__list">
-      <li class="fd-menu__item" role="option" tabindex="0"><span class="fd-menu__title">Option 1</span>
-    </li>
-      <li class="fd-menu__item fd-menu__item--separated" role="option" tabindex="0"><span class="fd-menu__title">Option 2</span>
-    </li>
-      <li class="fd-menu__item" role="option" tabindex="0"><span class="fd-menu__title">Option 3</span>
-    </li>
-      <li class="fd-menu__item fd-menu__item--separated" role="option" tabindex="0"><span class="fd-menu__title">Option 4</span>
-    </li>
-    <li class="fd-menu__item" role="option" tabindex="0"><span class="fd-menu__title">Option 5</span>
-    </li>
+        <li class="fd-menu__item" role="option" tabindex="0"><span class="fd-menu__title">Option 1</span>
+        </li>
+        <li class="fd-menu__item" role="option" tabindex="0"><span class="fd-menu__title">Option 2</span>
+        </li>
+        <span class="fd-menu__item--separated"></span>
+        <li class="fd-menu__item" role="option" tabindex="0"><span class="fd-menu__title">Option 3</span>
+        </li>
+        <li class="fd-menu__item" role="option" tabindex="0"><span class="fd-menu__title">Option 4</span>
+        </li>
+        <span class="fd-menu__item--separated"></span>
+        <li class="fd-menu__item" role="option" tabindex="0"><span class="fd-menu__title">Option 5</span>
+        </li>
     </ul>
 </nav>
 {% endcapture %}
@@ -158,9 +160,9 @@ Simulate different states to show state behaviour between the items.
 
 {% include display-component.html component=default-menuwgroup %}
 
-## Menu with an addon container
+## Menu with addon containers
 
-This is an additional container that can be used for an icon or checkbox before the meni item text.
+This is an additional container that can be used for an icon before or/and after the menu item text.
 
 {% capture default-menuwgroup %}
 
@@ -169,7 +171,7 @@ This is an additional container that can be used for an icon or checkbox before 
         <li class="fd-menu__item" role="option" tabindex="0">
                 <span class="fd-menu__addon-before sap-icon--grid"></span>
                 <span class="fd-menu__title">Option 1 with two icons and very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long header</span>
-                <span class="fd-menu__addon-after sap-icon--navigation-right-arrow"></span>
+                <span class="fd-menu__addon-after sap-icon--wrench"></span>
         </li>
         <li class="fd-menu__item" role="option" tabindex="0">
                 <span class="fd-menu__addon-before sap-icon--accept"></span>
@@ -177,12 +179,12 @@ This is an additional container that can be used for an icon or checkbox before 
         </li>
         <li class="fd-menu__item" role="option" tabindex="0">
                 <span class="fd-menu__title">Option 3 with one icon and very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long header</span>
-                <span class="fd-menu__addon-after sap-icon--navigation-right-arrow"></span>            
+                <span class="fd-menu__addon-after sap-icon--lightbulb"></span>
         </li>
         <li class="fd-menu__item" role="option" tabindex="0">            
-                <span class="fd-menu__addon-before sap-icon--grid"></span>
+                <span class="fd-menu__addon-before sap-icon--cart"></span>
                 <span class="fd-menu__title">Option 4 with two icons</span>
-                <span class="fd-menu__addon-after sap-icon--navigation-right-arrow"></span>             
+                <span class="fd-menu__addon-after sap-icon--history"></span>             
         </li>
     </ul>
 </nav>
@@ -207,7 +209,7 @@ Menu with an additional submenu that can be used for items that can be further g
             <span class="fd-menu__item is-selected" role="option" tabindex="0">
                 <span class="fd-menu__addon-before sap-icon--grid"></span>
                 <span class="fd-menu__title">Option 2 with submenu</span>
-                <span class="fd-menu__addon-after sap-icon--navigation-right-arrow"></span>        
+                <span class="fd-menu__addon-after fd-menu__addon-after--submenu sap-icon--navigation-right-arrow"></span>        
             </span>    
             <ul class="fd-menu__sublist">
                 <li class="fd-menu__item" role="option" tabindex="0">
@@ -225,6 +227,7 @@ Menu with an additional submenu that can be used for items that can be further g
                 </li>
             </ul>
         </li>
+        <span class="fd-menu__item--separated"></span>
         <li class="fd-menu__item" role="option" tabindex="0">            
                 <span class="fd-menu__title">Option 3</span>
         </li>
@@ -243,12 +246,12 @@ The basic stucture of a menu in RTL simulated mode.
 
 {% capture default-menu %}
 
-<nav class="fd-menu fd-menu--addon-before fd-menu--compact-desktop" dir="rtl">
+<nav class="fd-menu fd-menu--addon-before fd-menu--compact" dir="rtl">
     <ul class="fd-menu__list">
         <li class="fd-menu__item" role="option" tabindex="0">
                 <span class="fd-menu__addon-before sap-icon--grid"></span>
                 <span class="fd-menu__title">Option 1 with two icons and very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long header</span>
-                <span class="fd-menu__addon-after sap-icon--navigation-left-arrow"></span>
+                <span class="fd-menu__addon-after sap-icon--history"></span>
         </li>
         <li class="fd-menu__item" role="option" tabindex="0">
                 <span class="fd-menu__addon-before sap-icon--accept"></span>
@@ -256,12 +259,12 @@ The basic stucture of a menu in RTL simulated mode.
         </li>
         <li class="fd-menu__item" role="option" tabindex="0">
                 <span class="fd-menu__title">Option 3 with one icon and very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long header</span>
-                <span class="fd-menu__addon-after sap-icon--navigation-left-arrow"></span>
+                <span class="fd-menu__addon-after sap-icon--cart"></span>
         </li>
         <li class="fd-menu__item" role="option" tabindex="0">
                 <span class="fd-menu__addon-before sap-icon--grid"></span>
                 <span class="fd-menu__title">Option 4 with two icons</span>
-                <span class="fd-menu__addon-after sap-icon--navigation-left-arrow"></span>
+                <span class="fd-menu__addon-after sap-icon--lightbulb"></span>
         </li>
     </ul>
 </nav>

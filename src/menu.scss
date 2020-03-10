@@ -66,7 +66,7 @@ $block: #{$fd-namespace}-menu;
     width: 100%;  // to ensure in mobile mode the width of parent is taken fully
   }
 
-  &--compact-desktop {
+  &--compact {
     @include fd-reset();
 
     .#{$block}__item {
@@ -138,12 +138,17 @@ $block: #{$fd-namespace}-menu;
     }
   }
 
+  &__item--separated {
+    height: 0.0625rem;
+    width: 100%;
+    background-color: $fd-menu-item-separator-color;
+  }
+
   &__item {
     @include fd-reset();
 
     display: flex;
     align-items: center;
-    transition: all $fd-animation-speed ease-in;
 
     @include action-cursor();
 
@@ -152,12 +157,6 @@ $block: #{$fd-namespace}-menu;
     // tablet cozy - will be default
     padding: 0.75rem 1rem 0.75rem 0.75rem; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each
     height: 2.75rem;
-
-    &--separated {
-      border-bottom-style: solid;
-      border-bottom-width: 0.0625rem;
-      border-bottom-color: $fd-menu-item-separator-color;
-    }
 
     @include fd-hover() {
       .#{$block}__title {
@@ -257,9 +256,7 @@ $block: #{$fd-namespace}-menu;
 
     display: flex;
     background-color: transparent;
-
-    @include fd-icon-size("m", "before");
-    @include fd-icon-size("m", "after");
+    font-size: var(--sapFontLargeSize);
   }
 
   // for affordance icon to be used with submenu
@@ -292,8 +289,10 @@ $block: #{$fd-namespace}-menu;
     }
 
     background-color: transparent;
+    font-size: var(--sapFontLargeSize);
 
-    @include fd-icon-size("s", "before");
-    @include fd-icon-size("s", "after");
+    &--submenu {
+      font-size: var(--sapFontSmallSize);
+    }
   }
 }

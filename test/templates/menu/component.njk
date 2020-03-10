@@ -17,7 +17,7 @@
 {%- endmacro %}
 
 {%- macro option(item={}, properties={}) -%}
-  <li role="button" class="fd-menu__item {{item.class if item.class}}{{'separated' | modifier('menu__item') if item.separator }}">
+  <li role="button" class="fd-menu__item {{item.class if item.class}}">
       {%- if properties.addon_before -%}
         {%- if item.icon -%}
           <span class="fd-menu__addon-before">
@@ -28,7 +28,11 @@
       <span class="fd-menu__title">{{ item.label }}</span>
       {%- if properties.addon_after -%}
         {%- if item.secondaryIcon -%}
-          <span class="fd-menu__addon-after">></span>
+          {%- if item.submenu -%}
+            <span class="fd-menu__addon-after fd-menu__addon-after--submenu">></span>
+          {%- else %}
+          <span class="fd-menu__addon-after">O</span>
+          {%- endif -%}
         {%- endif -%}
       {%- endif -%}
       {%- if item.submenu -%}
@@ -52,4 +56,5 @@
         {%- endfor %}
       {%- endif -%}
   </li>
+  <span class="{{'separated' | modifier('menu__item') if item.separator }}"></span>
 {%- endmacro %}
