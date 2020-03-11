@@ -245,6 +245,14 @@ $block: #{$fd-namespace}-popover;
     }
   }
 
+  &--no-overflow {
+    overflow: hidden;
+
+    :last-child {
+      border-bottom: 0;
+    }
+  }
+
   &__popper {
     @include fd-reset();
 

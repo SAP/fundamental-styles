@@ -8,7 +8,6 @@
     .fd-breadcrump__link
 */
 
-$fd-breadcrumb-margin-bottom: 0.5rem;
 $fd-breadcrumb-spacing: 0.25rem;
 
 $fd-breadcrumb-separator-color: var(--sapContent_LabelColor);
@@ -24,7 +23,6 @@ $block: #{$fd-namespace}-breadcrumb;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: $fd-breadcrumb-margin-bottom;
   list-style: none;
 
   // ELEMENTS *******************************************

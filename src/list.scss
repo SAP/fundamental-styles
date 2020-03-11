@@ -117,6 +117,12 @@ $block: #{$fd-namespace}-list;
   &__title {
     flex: 3 3 10%;
     font-size: var(--sapFontLargeSize);
+
+    &--anchor {
+      &:focus {
+        outline: none;
+      }
+    }
   }
 
   &__secondary {
@@ -380,11 +386,11 @@ $block: #{$fd-namespace}-list;
       line-height: 1rem;
     }
 
-    > * {
-      &:last-child {
-        border-bottom-left-radius: $fd-list-last-item-bottom-border-radius;
-        border-bottom-right-radius: $fd-list-last-item-bottom-border-radius;
-      }
-    }
+    // > * {
+    //   &:last-child {
+    //     border-bottom-left-radius: $fd-list-last-item-bottom-border-radius;
+    //     border-bottom-right-radius: $fd-list-last-item-bottom-border-radius;
+    //   }
+    // }
   }
 }
