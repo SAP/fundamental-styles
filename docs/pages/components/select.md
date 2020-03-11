@@ -29,7 +29,7 @@ For lists that require more than 12 options, the <a href="/patterns/combobox-inp
          </div>
       </div>
   </div>
-  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h0C6A325">
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--no-overflow fd-popover__body--dropdown" aria-hidden="true" id="h0C6A325">
      <ul class="fd-list fd-list--dropdown" role="listbox">
         <li class="fd-list__item is-selected" role="option" tabindex="0">
            <span class="fd-list__title">List item 1</span>

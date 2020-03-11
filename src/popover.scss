@@ -116,6 +116,14 @@ $block: #{$fd-namespace}-popover;
       z-index: $fd-popover-z-index + 1;
     }
 
+    &--no-overflow {
+      overflow: hidden;
+
+      :last-child {
+        border-bottom: 0;
+      }
+    }
+
     &-header {
       & > *:first-child {
         border-radius: $fd-popover-border-radius $fd-popover-border-radius 0 0;
