@@ -120,12 +120,12 @@ Use a modifier on the list element to add separators between the items.
         </li>
         <li class="fd-menu__item" role="option" tabindex="0"><span class="fd-menu__title">Option 2</span>
         </li>
-        <span class="fd-menu__item--separated"></span>
+        <span class="fd-menu__separator"></span>
         <li class="fd-menu__item" role="option" tabindex="0"><span class="fd-menu__title">Option 3</span>
         </li>
         <li class="fd-menu__item" role="option" tabindex="0"><span class="fd-menu__title">Option 4</span>
         </li>
-        <span class="fd-menu__item--separated"></span>
+        <span class="fd-menu__separator"></span>
         <li class="fd-menu__item" role="option" tabindex="0"><span class="fd-menu__title">Option 5</span>
         </li>
     </ul>
@@ -227,7 +227,7 @@ Menu with an additional submenu that can be used for items that can be further g
                 </li>
             </ul>
         </li>
-        <span class="fd-menu__item--separated"></span>
+        <span class="fd-menu__separator"></span>
         <li class="fd-menu__item" role="option" tabindex="0">            
                 <span class="fd-menu__title">Option 3</span>
         </li>

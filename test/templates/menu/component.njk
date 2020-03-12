@@ -56,5 +56,7 @@
         {%- endfor %}
       {%- endif -%}
   </li>
-  <span class="{{'separated' | modifier('menu__item') if item.separator }}"></span>
+  {%- if item.separator -%}
+    <span class="fd-menu__separator"></span>
+  {%- endif -%}
 {%- endmacro %}

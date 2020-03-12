@@ -16,7 +16,7 @@ $block: #{$fd-namespace}-menu;
   $fd-menu-item-background-color--selected: var(--sapList_SelectionBackgroundColor) !default;
   $fd-menu-item-background-color--selected-hover: var(--sapList_Hover_SelectionBackground) !default;
 
-  $fd-menu-item-separator-color: var(--sapGroup_ContentBorderColor) !default;
+  $fd-menu-separator-color: var(--sapGroup_ContentBorderColor) !default;
 
   $fd-menu-primary-icon-color: var(--sapContent_NonInteractiveIconColor) !default;
   $fd-menu-primary-icon-color-active-selected: var(--sapList_Active_TextColor) !default;
@@ -138,10 +138,10 @@ $block: #{$fd-namespace}-menu;
     }
   }
 
-  &__item--separated {
+  &__separator {
     height: 0.0625rem;
     width: 100%;
-    background-color: $fd-menu-item-separator-color;
+    background-color: $fd-menu-separator-color;
   }
 
   &__item {
