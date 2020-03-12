@@ -724,12 +724,7 @@ body {
 .header-section__sap-icon--menu2::before {
   transition: opacity 0.3s, transform 0.3s;
   color: $home-page-action-color;
-  @media only screen and (max-width: 1024px) {
    font-size: 14px;
-  }
-  @media only screen and (min-width: 1024px) {
-    font-size: 20px;
-  }
 }
 
 .header-section__sap-icon--decline::before {
