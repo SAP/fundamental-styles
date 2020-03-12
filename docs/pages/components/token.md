@@ -166,8 +166,8 @@ To show focus on whole element, it's needed to add `.is-focus` into container.
                 Lorem
             </span>
         </span>
-        <input class="fd-input fd-tokenizer__input" />
     </div>
+    <input class="fd-input fd-tokenizer__input" />
 </div>
 <br/><br/>
 <div class="fd-tokenizer is-focus">
@@ -201,8 +201,8 @@ To show focus on whole element, it's needed to add `.is-focus` into container.
                 Lorem
             </span>
         </span>
-        <input class="fd-input fd-tokenizer__input" />
     </div>
+    <input class="fd-input fd-tokenizer__input" />
 </div>
 {% endcapture %}
 {% include display-component.html component=tokenizer %}
@@ -240,8 +240,8 @@ To show focus on whole element, it's needed to add `.is-focus` into container.
                 Lorem
             </span>
         </span>
-        <input class="fd-input fd-input--compact fd-tokenizer__input" />
     </div>
+    <input class="fd-input fd-input--compact fd-tokenizer__input" />
 </div>
 <br/><br/>
 <div class="fd-tokenizer fd-tokenizer--compact is-focus">
@@ -275,8 +275,8 @@ To show focus on whole element, it's needed to add `.is-focus` into container.
                 Lorem
             </span>
         </span>
-        <input class="fd-input fd-input--compact fd-tokenizer__input" />
     </div>
+    <input class="fd-input fd-input--compact fd-tokenizer__input" />
 </div>
 {% endcapture %}
 {% include display-component.html component=compact-tokenizer %}
