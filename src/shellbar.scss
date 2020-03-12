@@ -282,6 +282,11 @@ $block: #{$fd-namespace}-shellbar;
     }
   }
 
+  /*
+   It is necessary to specify fd-button here to avoid issues with the ordering of how the classes are applied to
+   the shellbar button elements. While specifying fd-button here breaks the rule of self-contained styles in a way, it
+   is a better option than using the buttonBase() mixin from the button.scss file or using !important.
+   */
   .#{$fd-namespace}-button.#{$block}__button {
     @include fd-button-reset();
     @include fd-icon-size("m", "before");
