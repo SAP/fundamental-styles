@@ -296,13 +296,6 @@ $block: #{$fd-namespace}-switch;
         width: $fd-switch-size-compact-x;
         height: $fd-switch-size-compact-y;
       }
-
-      .#{$block}__input:focus + .#{$block}__wrapper {
-        &::before {
-          top: -$fd-switch-container-compact-padding-y;
-          bottom: -$fd-switch-container-compact-padding-y;
-        }
-      }
     }
 
     @include fd-hover() {
