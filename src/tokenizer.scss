@@ -11,17 +11,22 @@ $block: #{$fd-namespace}-tokenizer;
   width: 100%;
   background-color: var(--sapField_Background);
   padding-left: $fd-tokenizer-spacing;
-  overflow: hidden;
   display: flex;
   align-items: center;
 
   &__inner {
+    &::-webkit-scrollbar {
+      display: none; // hide scrollbar but keep element scrollable for Chrome/Safari/Opera
+    }
+
+    overflow-x: scroll;
     float: right;
     white-space: nowrap;
-    width: auto;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    -ms-overflow-style: none; // hide scrollbar but keep element scrollable for IE/Edge
   }
 
   .fd-token {
@@ -62,6 +67,11 @@ $block: #{$fd-namespace}-tokenizer;
 
   &--compact {
     padding-left: $fd-tokenizer-compact-spacing;
+
+    .#{$block}__inner {
+      overflow-x: initial;
+      width: auto;
+    }
 
     .#{$block}__input {
       min-width: 2rem;
