@@ -103,7 +103,7 @@ The Switch is meant to resemble a physical switch and allow a user to turn a set
                 <span class="fd-object-status fd-object-status--negative">Negative</span>
             </span> 
             <span class="fd-switch fd-switch--semantic">
-                <input class="fd-switch__input" checked type="checkbox" name="" value="" id="y21653431">
+                <input class="fd-switch__input" type="checkbox" name="" value="" id="y21653431">
                 <div class="fd-switch__wrapper">
                     <div class="fd-switch__track">
                         <span class="fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>

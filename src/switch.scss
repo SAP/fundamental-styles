@@ -56,6 +56,7 @@ $block: #{$fd-namespace}-switch;
 
   cursor: pointer;
   display: inline-block;
+  position: relative;
   padding: $fd-switch-container-padding-y 0;
   overflow: hidden;
 
@@ -121,7 +122,6 @@ $block: #{$fd-namespace}-switch;
     &--on {
       color: var(--sapPositiveElementColor);
       margin: 0 0 0 0.125rem;
-      visibility: hidden;
     }
   }
 
@@ -172,8 +172,8 @@ $block: #{$fd-namespace}-switch;
       content: '';
       top: 0;
       bottom: 0;
-      left: -0.0625rem;
-      right: -0.0625rem;
+      left: 0;
+      right: 0;
     }
   }
 
@@ -188,15 +188,6 @@ $block: #{$fd-namespace}-switch;
 
     .#{$block}__track {
       transform: translate($fd-switch-track-border-offset, -50%);
-    }
-
-    .#{$block}__icon--off {
-      visibility: hidden;
-      transition: 0s;
-    }
-
-    .#{$block}__icon--on {
-      visibility: visible;
     }
   }
 
