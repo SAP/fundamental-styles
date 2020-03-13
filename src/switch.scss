@@ -47,6 +47,11 @@ $block: #{$fd-namespace}-switch;
   $fd-switch-track-no-label-compact-width: 2.375rem;
   $fd-switch-track-no-label-compact-height: 1rem;
 
+  $fd-switch-track-compact-offset: 0.8125rem;
+  $fd-switch-track-offset: 1.1875rem;
+  $fd-switch-track-semantic-offset: 1.9375rem;
+  $fd-switch-track-border-offset: 0.0625rem;
+
   @include fd-reset();
 
   cursor: pointer;
@@ -60,6 +65,7 @@ $block: #{$fd-namespace}-switch;
     overflow: initial;
     display: flex;
     align-items: center;
+    cursor: pointer;
     padding: 0;
 
     &.is-disabled {
@@ -71,7 +77,6 @@ $block: #{$fd-namespace}-switch;
     @include fd-reset();
 
     background-color: var(--sapButton_Track_Background);
-    position: relative;
     box-sizing: content-box;
     width: $fd-switch-track-no-label-width;
     height: $fd-switch-track-no-label-height;
@@ -88,46 +93,35 @@ $block: #{$fd-namespace}-switch;
     justify-content: center;
     align-items: center;
     top: 50%;
-    transform: translateY(-50%);
-    left: calc(1.8125rem - 100%);
+    transform: translate(-$fd-switch-track-offset, -50%);
     transition: $fd-switch-transition;
     min-width: 4.25rem;
-    right: 0;
   }
 
   &__text {
-    @include fd-reset();
+    @include fd-form-label();
 
-    font-size: var(--sapFontSmallSize);
-    line-height: 1.375rem;
-    display: block;
-    width: $fd-switch-label-width;
-    text-transform: uppercase;
-    text-align: center;
+    cursor: pointer;
   }
 
   &__icon {
     @include fd-reset();
 
+    width: $fd-switch-label-width;
+    min-width: $fd-switch-label-width;
     font-size: 0.75rem;
+    line-height: 1.375rem;
+    text-align: center;
 
     &--off {
       color: var(--sapNegativeElementColor);
+      margin: 0 0.125rem 0 0;
     }
 
     &--on {
       color: var(--sapPositiveElementColor);
-    }
-  }
-
-  &__icon,
-  &__text {
-    &--on {
       margin: 0 0 0 0.125rem;
-    }
-
-    &--off {
-      margin: 0 0.125rem 0 0;
+      visibility: hidden;
     }
   }
 
@@ -172,12 +166,12 @@ $block: #{$fd-namespace}-switch;
       position: absolute;
       display: block;
       outline-offset: -0.0625rem;
-      outline-width: var(--sapContent_FocusWidth);
-      outline-color: var(--sapContent_FocusColor);
-      outline-style: var(--sapContent_FocusStyle);
+      border-width: var(--sapContent_FocusWidth);
+      border-color: var(--sapContent_FocusColor);
+      border-style: var(--sapContent_FocusStyle);
       content: '';
-      top: -$fd-switch-container-padding-y;
-      bottom: -$fd-switch-container-padding-y;
+      top: 0;
+      bottom: 0;
       left: -0.0625rem;
       right: -0.0625rem;
     }
@@ -193,14 +187,21 @@ $block: #{$fd-namespace}-switch;
     }
 
     .#{$block}__track {
-      left: 0.0625rem;
-      right: 1rem;
+      transform: translate($fd-switch-track-border-offset, -50%);
+    }
+
+    .#{$block}__icon--off {
+      visibility: hidden;
+      transition: 0s;
+    }
+
+    .#{$block}__icon--on {
+      visibility: visible;
     }
   }
 
   @include fd-rtl() {
-    .#{$block}__icon,
-    .#{$block}__text {
+    .#{$block}__icon {
       &--on {
         margin: 0 0.125rem 0 0;
       }
@@ -211,13 +212,12 @@ $block: #{$fd-namespace}-switch;
     }
 
     .#{$block}__track {
-      right: calc(0.625rem - 100%);
+      transform: translate($fd-switch-track-offset, -50%);
     }
 
     .#{$block}__input:checked + .#{$block}__wrapper {
       .#{$block}__track {
-        right: 0.0625rem;
-        left: 0;
+        transform: translate(-$fd-switch-track-border-offset, -50%);
       }
     }
   }
@@ -256,23 +256,13 @@ $block: #{$fd-namespace}-switch;
     }
 
     .#{$block}__track {
-      left: calc(1.438rem - 100%);
+      transform: translate(-$fd-switch-track-compact-offset, -50%);
       min-width: 3.125rem;
     }
 
-    .#{$block}__input:focus + .#{$block}__wrapper {
-      &::before {
-        top: -0.3125rem;
-        bottom: -0.3125rem;
-      }
-    }
-
     @include fd-rtl() {
-      .#{$block}__input:checked + .#{$block}__wrapper {
-        .#{$block}__track {
-          right: 0.0625rem;
-          left: 0;
-        }
+      .#{$block}__track {
+        transform: translate($fd-switch-track-compact-offset, -50%);
       }
     }
   }
@@ -285,6 +275,10 @@ $block: #{$fd-namespace}-switch;
       background-color: var(--sapErrorBackground);
     }
 
+    .#{$block}__track {
+      transform: translate(-$fd-switch-track-semantic-offset, -50%);
+    }
+
     .#{$block}__handle {
       background-color: $fd-switch-inactive-handle-background;
       border-color: $fd-switch-error-border-color;
@@ -295,8 +289,7 @@ $block: #{$fd-namespace}-switch;
       border-color: $fd-switch-success-border-color;
 
       .#{$block}__track {
-        right: -2rem;
-        left: -0.1875rem;
+        transform: translate(-$fd-switch-track-border-offset, -50%);
       }
 
       .#{$block}__handle {
@@ -317,14 +310,6 @@ $block: #{$fd-namespace}-switch;
         &::before {
           top: -$fd-switch-container-compact-padding-y;
           bottom: -$fd-switch-container-compact-padding-y;
-        }
-      }
-
-      @include fd-rtl() {
-        .#{$block}__input:checked + .#{$block}__wrapper {
-          .#{$block}__track {
-            left: calc(1.3125rem - 100%);
-          }
         }
       }
     }
@@ -348,14 +333,12 @@ $block: #{$fd-namespace}-switch;
 
     @include fd-rtl() {
       .#{$block}__track {
-        left: -0.1875rem;
-        right: -2rem;
+        transform: translate($fd-switch-track-semantic-offset, -50%);
       }
 
       .#{$block}__input:checked + .#{$block}__wrapper {
         .#{$block}__track {
-          left: calc(1.688rem - 100%);
-          right: -0.1875rem;
+          transform: translate($fd-switch-track-border-offset, -50%);
         }
       }
     }
