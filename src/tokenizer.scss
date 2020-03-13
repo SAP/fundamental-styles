@@ -42,8 +42,8 @@ $block: #{$fd-namespace}-tokenizer;
   &__input {
     border: none !important;
     min-width: 3rem !important;
-    padding: 0 !important;
-    margin-right: $fd-tokenizer-spacing !important;
+    padding: 0 $fd-tokenizer-spacing 0 0 !important;
+    margin-right: 1px !important; // so the input does not cover the tokenizer outline
 
     &:last-child {
       flex-basis: 100%;
