@@ -54,8 +54,8 @@ If the entries are not validated by the application, users can also enter custom
                         </span>
                         <button class="fd-token__close"></button>
                     </span>
+                    <input class="fd-input fd-input-group__input fd-tokenizer__input" />
                 </div>
-                <input class="fd-input fd-input-group__input fd-tokenizer__input" />
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button">
                 <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--value-help" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true"></button>
@@ -140,8 +140,8 @@ If the entries are not validated by the application, users can also enter custom
                         </span>
                         <button class="fd-token__close"></button>
                     </span>
+                    <input class="fd-input fd-input-group__input fd-input--compact fd-tokenizer__input" />
                 </div>
-                <input class="fd-input fd-input-group__input fd-input--compact fd-tokenizer__input" />
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
                 <button class="fd-input-group__button fd-button fd-button--transparent fd-button--compact sap-icon--value-help" aria-controls="F4GcX34a" aria-expanded="false" aria-haspopup="true"></button>
@@ -227,8 +227,8 @@ In cases where the list items need to be categorized into groups, it is possible
                         <button class="fd-token__close"></button>
                     </span>
                     <span class="fd-tokenizer__indicator">2 more</span> 
+                    <input class="fd-input fd-input-group__input fd-tokenizer__input" />
                 </div>
-                <input class="fd-input fd-input-group__input fd-tokenizer__input" />
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button">
                 <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--value-help" aria-controls="F4H8X34a" aria-expanded="false" aria-haspopup="true"></button>
@@ -341,8 +341,8 @@ In the example you can see how the `Multi Input` component looks without the `fd
                         <button class="fd-token__close"></button>
                     </span>
                     <span class="fd-tokenizer__indicator">2 more</span> 
+                    <input class="fd-input fd-input-group__input fd-tokenizer__input" />
                 </div>
-                <input class="fd-input fd-input-group__input fd-tokenizer__input" />
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button">
                 <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--value-help" aria-controls="F4HGFHX34a" aria-expanded="false" aria-haspopup="true"></button>
@@ -453,8 +453,8 @@ This can also be done by using the `.is-readonly` class or `aria-readonly="true"
                             </div>
                         </div>
                     </span>
+                    <input class="fd-input fd-input-group__input fd-tokenizer__input" readonly aria-readonly="true" />
                 </div>
-                <input class="fd-input fd-input-group__input fd-tokenizer__input" readonly aria-readonly="true" />
             </div>
         </div>
     </div>
@@ -516,8 +516,8 @@ The disabled state can also be achieved by adding the `.is-disabled` class or th
                             </div>
                         </div>
                     </span>
+                    <input class="fd-input fd-input-group__input fd-tokenizer__input" />
                 </div>
-                <input class="fd-input fd-input-group__input fd-tokenizer__input" />
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button">
                 <button tabindex="-1" class="fd-input-group__button fd-button fd-button--transparent sap-icon--value-help"></button>
@@ -561,8 +561,8 @@ To add text in the `body` of the component, simply include your text in the `fd-
                          <button class="fd-token__close"></button>
                      </span>
                      <span class="fd-tokenizer__indicator">4 more</span> 
+                     <input class="fd-input fd-input-group__input fd-tokenizer__input" />
                  </div>
-                 <input class="fd-input fd-input-group__input fd-tokenizer__input" />
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button">
                 <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--value-help" aria-controls="F4GcKJH8a" aria-expanded="false" aria-haspopup="true"></button>
@@ -661,8 +661,8 @@ So instead of using popover and dropdown, it should be wrapped in `dialog` and `
                                      <button class="fd-token__close"></button>
                                  </span>
                                  <span class="fd-tokenizer__indicator">4 more</span> 
+                                 <input class="fd-input fd-input-group__input fd-tokenizer__input" />
                              </div>
-                             <input class="fd-input fd-input-group__input fd-tokenizer__input" />
                          </div>
                         <span class="fd-input-group__addon fd-input-group__addon--button">
                             <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--value-help"></button>

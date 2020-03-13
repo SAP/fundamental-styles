@@ -168,8 +168,8 @@ The user can review the tokens by swiping them to the left or right.
                 Lorem
             </span>
         </span>
+        <input class="fd-input fd-tokenizer__input" />
     </div>
-    <input class="fd-input fd-tokenizer__input" />
 </div>
 <br/><br/>
 <div class="fd-tokenizer is-focus">
@@ -203,8 +203,8 @@ The user can review the tokens by swiping them to the left or right.
                 Lorem
             </span>
         </span>
+        <input class="fd-input fd-tokenizer__input" />
     </div>
-    <input class="fd-input fd-tokenizer__input" />
 </div>
 {% endcapture %}
 {% include display-component.html component=tokenizer %}
@@ -245,8 +245,8 @@ The user can review tokens by pressing the right or left arrows on the keyboard.
                 Lorem
             </span>
         </span>
+        <input class="fd-input fd-input--compact fd-tokenizer__input" />
     </div>
-    <input class="fd-input fd-input--compact fd-tokenizer__input" />
 </div>
 <br/><br/>
 <div class="fd-tokenizer fd-tokenizer--compact is-focus">
@@ -280,8 +280,8 @@ The user can review tokens by pressing the right or left arrows on the keyboard.
                 Lorem
             </span>
         </span>
+        <input class="fd-input fd-input--compact fd-tokenizer__input" />
     </div>
-    <input class="fd-input fd-input--compact fd-tokenizer__input" />
 </div>
 {% endcapture %}
 {% include display-component.html component=compact-tokenizer %}
