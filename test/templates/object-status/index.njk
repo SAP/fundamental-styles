@@ -1,0 +1,106 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+
+{% block content %}
+
+<h2>Object Status</h2>
+{% set example %}
+<span class="fd-object-status fd-object-status--negative">Negative</span>
+<span class="fd-object-status fd-object-status--critical">Critical</span>
+<span class="fd-object-status fd-object-status--positive">Positive</span>
+<span class="fd-object-status fd-object-status--informative">informative</span>
+<span class="fd-object-status">Default</span>
+<br><br>
+<span class="fd-object-status fd-object-status--negative sap-icon--status-negative">Negative</span>
+<span class="fd-object-status fd-object-status--critical sap-icon--status-critical">Critical</span>
+<span class="fd-object-status fd-object-status--positive sap-icon--status-positive">Positive</span>
+<span class="fd-object-status fd-object-status--informative sap-icon--hint">Informative</span>
+<span class="fd-object-status sap-icon--to-be-reviewed">Default</span>
+<br><br>
+<span class="fd-object-status fd-object-status--indication-1">Dark Red</span>
+<span class="fd-object-status fd-object-status--indication-2">Red</span>
+<span class="fd-object-status fd-object-status--indication-3">Yellow</span>
+<span class="fd-object-status fd-object-status--indication-4">Green</span>
+<span class="fd-object-status fd-object-status--indication-5">Blue</span>
+<span class="fd-object-status fd-object-status--indication-6">Teal</span>
+<span class="fd-object-status fd-object-status--indication-7">Purple</span>
+<span class="fd-object-status fd-object-status--indication-8">Pink</span>
+{% endset %}
+{{ format(example) }}
+
+<br><br>
+
+<h2>Inverted Object Status</h2>
+{% set example %}
+<span class="fd-object-status fd-object-status--inverted fd-object-status--negative">Inverted Negative</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--critical">Inverted Warning</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--positive">Inverted Success</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--informative">Inverted informative</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--positive">3</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--informative">2.99</span>
+<br><br>
+<span class="fd-object-status fd-object-status--inverted">Inverted Default</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"></span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative">Negative</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--critical sap-icon--status-critical">Critical</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--positive sap-icon--status-positive">Positive</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--informative sap-icon--hint">Informative</span>
+<span class="fd-object-status fd-object-status--inverted sap-icon--to-be-reviewed">Neutral</span>
+<br><br>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-1">Indication1</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-2">Indication2</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-3">Indication3</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-4">Indication4</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-5">Indication5</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-6">Indication6</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-7">Indication7</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-8">Indication8</span>
+
+{% endset %}
+{{ format(example) }}
+
+<h2>Large Design</h2>
+{% set example %}
+<span class="fd-object-status fd-object-status--large fd-object-status--negative sap-icon--status-negative"></span>
+<span class="fd-object-status fd-object-status--large fd-object-status--critical sap-icon--status-critical"></span>
+<span class="fd-object-status fd-object-status--large fd-object-status--positive">Success</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--informative">Informative</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--negative sap-icon--status-negative">Negative</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--critical sap-icon--status-critical">Critical</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--positive sap-icon--status-positive">Positive</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--informative sap-icon--hint">Informative</span>
+<span class="fd-object-status fd-object-status--large sap-icon--to-be-reviewed">Default</span>
+
+<br><br>
+
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--negative">Inverted Negative</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--critical">Inverted Warning</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--positive">Inverted Success</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--informative">Inverted informative</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--positive">3</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--informative">2.99</span>
+
+<br><br>
+
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted">Inverted Default</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"></span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--negative sap-icon--status-negative">Negative</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--critical sap-icon--status-critical">Critical</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--positive sap-icon--status-positive">Positive</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--informative sap-icon--hint">Informative</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted sap-icon--to-be-reviewed">Neutral</span>
+
+<br><br>
+
+<a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-1">Indication1</a>
+<a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-2">Indication2</a>
+<a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-3">Indication3</a>
+<a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-4">Indication4</a>
+<a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-5">Indication5</a>
+<a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-6">Indication6</a>
+<a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-7">Indication7</a>
+<a href="#" class="fd-object-status fd-object-status--large fd-object-status--link fd-object-status--inverted fd-object-status--indication-8">Indication8</a>
+{% endset %}
+{{ format(example) }}
+
+{% endblock %}

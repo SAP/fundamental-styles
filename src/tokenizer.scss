@@ -1,11 +1,10 @@
-@import "./settings";
+@import "./new-settings";
 @import "./mixins";
 @import "./functions";
 
 $block: #{$fd-namespace}-tokenizer;
 
 .#{$block} {
-
   $fd-tokenizer-compact-spacing: 0.25rem;
   $fd-tokenizer-spacing: 0.3125rem;
 
@@ -37,10 +36,13 @@ $block: #{$fd-namespace}-tokenizer;
   }
 
   &__input {
-    width: 100%;
-    border: none;
-    min-width: 3rem;
-    padding: 0 $fd-tokenizer-spacing 0 0;
+    border: none !important;
+    min-width: 3rem !important;
+    padding: 0 $fd-tokenizer-spacing 0 0 !important;
+
+    &:last-child {
+      flex-basis: 100%;
+    }
 
     @include fd-focus() {
       outline: none;
@@ -74,12 +76,5 @@ $block: #{$fd-namespace}-tokenizer;
   &--readonly {
     overflow: visible;
     background-color: var(--sapField_ReadOnly_Background);
-  }
-
-  /** To avoid overwriting from fd-input-group__input on multi-input component */
-  .#{$block}__input {
-    &:last-child {
-      flex-basis: 100%;
-    }
   }
 }

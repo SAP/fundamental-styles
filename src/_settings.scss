@@ -269,15 +269,6 @@ $fd-forms-height--compact: $fd-spacing--base * 7 !default; // 28px
 $fd-forms-height--input-check: $fd-spacing--base * 4 !default;
 $fd-forms-padding: $fd-spacing--base * 3 !default;
 
-$fd-form-input-height: 2.25rem;
-$fd-form-input-height--compact: 1.625rem;
-$fd-form-input-margin: 0.25rem;
-$fd-form-input-margin--compact: 0.1875rem;
-
-// Button Configuration
-$fd-button-line-height: $fd-forms-height - 2;
-$fd-button-line-height--compact: $fd-forms-height--compact - 4;
-
 $fd-forms-color: $fd-color !default;
 $fd-forms-color--placeholder: adjust-color(map-get($fd-colors-text, 3), $lightness: 14) !default;
 

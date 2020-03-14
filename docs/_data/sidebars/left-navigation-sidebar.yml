@@ -66,6 +66,10 @@ entries:
       url: /patterns/search-input.html
       output: web
 
+    - title: Step Input
+      url: /patterns/step-input.html
+      output: web
+
     - title: Time Picker
       url: /patterns/time-picker.html
       output: web
@@ -170,6 +174,10 @@ entries:
 
     - title: Notification
       url: /components/notification.html
+      output: web
+
+    - title: Object Status
+      url: /components/object-status.html
       output: web
 
     - title: Pagination

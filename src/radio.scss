@@ -1,4 +1,4 @@
-@import "./settings";
+@import "./new-settings";
 @import "./mixins";
 @import "./functions";
 
@@ -49,6 +49,10 @@ $block: #{$fd-namespace}-radio;
     overflow: hidden;
     padding: $fd-radio-outer-circle-margin 0 $fd-radio-outer-circle-margin $fd-radio-outer-circle-margin;
 
+    @include fd-rtl() {
+      padding: $fd-radio-outer-circle-margin $fd-radio-outer-circle-margin $fd-radio-outer-circle-margin 0;
+    }
+
     &::before {
       content: "";
       height: $fd-radio-inner-circle-diameter;
@@ -70,6 +74,13 @@ $block: #{$fd-namespace}-radio;
       &::before {
         background-color: var(--sapField_Hover_Background);
         border-color: var(--sapField_Hover_BorderColor);
+      }
+    }
+
+    @include fd-rtl() {
+      &::before {
+        margin-left: $fd-radio-outer-circle-margin;
+        margin-right: 0;
       }
     }
   }
@@ -120,12 +131,24 @@ $block: #{$fd-namespace}-radio;
     + .#{$block}__label {
       padding: $fd-radio-outer-circle-margin-compact 0 $fd-radio-outer-circle-margin-compact $fd-radio-outer-circle-margin-compact;
 
+      @include fd-rtl() {
+        padding: $fd-radio-outer-circle-margin-compact $fd-radio-outer-circle-margin-compact $fd-radio-outer-circle-margin-compact 0;
+      }
+
       &::before {
         font-size: 0.4375rem;
         height: $fd-radio-inner-circle-diameter-compact;
         width: $fd-radio-inner-circle-diameter-compact;
         min-width: $fd-radio-inner-circle-diameter-compact;
         margin-right: $fd-radio-outer-circle-margin-compact;
+        margin-left: 0;
+      }
+
+      @include fd-rtl() {
+        &::before {
+          margin-left: $fd-radio-outer-circle-margin-compact;
+          margin-right: 0;
+        }
       }
     }
 

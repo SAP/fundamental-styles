@@ -25,6 +25,6 @@ fs.copyFile(fontPathLight, 'docs/css/72-Light.woff', (err) => {
 fs.copyFile(fontPathBold, 'docs/css/72-Bold.woff', (err) => {
     if (err) throw err;
 });
-fs.copyFile(iconPath, 'docs/css/fonts/SAP-icons.woff', (err) => {
+fs.copyFile(iconPath, 'docs/css/SAP-icons.woff', (err) => {
     if (err) throw err;
 });

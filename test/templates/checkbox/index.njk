@@ -66,4 +66,16 @@
 {% endset %}
 
 {{ format(example) }}
+
+<h2>RTL mode</h2>
+{% set example %}
+  <div dir="RTL">
+  {{ checkbox(compact=true) }}
+  {{ checkbox(compact=true, properties='checked') }}
+  {{ checkbox(compact=false) }}
+  {{ checkbox(compact=false, properties='checked') }}
+  </div>
+{% endset %}
+
+{{ format(example) }}
 {% endblock %}

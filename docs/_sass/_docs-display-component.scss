@@ -47,14 +47,6 @@
         }
     }
 
-    .fd-docs-date-picker {
-        .fd-popover {
-            &__body {
-                padding: 0 12px;
-            }
-        }
-    }
-
     .fd-product-menu {
         .fd-popover__body--right {
             right: -10px;
@@ -95,7 +87,7 @@
         }
 
         &.fd-dialog__content,
-        .fd-dialog__content{
+        .fd-dialog__content {
             position: static;
             transform: translate(0%, 0%);
             width: 30rem;
@@ -103,6 +95,24 @@
 
             &:not(:last-child) {
                 margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .fd-calendar-mobile-docs-static {
+        &--landscape {
+            .fd-dialog__content {
+                width: 640px;
+                height: 360px;
+            }
+            .fd-calendar__navigation--main {
+                padding-right: calc(640px - 360px - 2rem);
+            }
+        }
+        &--portrait {
+            .fd-dialog__content {
+                height: 500px;
+                width: 360px;
             }
         }
     }
@@ -163,10 +173,6 @@
         .fd-side-nav__sublist,
         .fd-breadcrumb {
             margin-left: 0;
-        }
-
-        .fd-action-bar__description {
-            padding: 0;
         }
     }
 
@@ -312,7 +318,7 @@
         text-decoration: none;
     }
 
-    .fd-panel__description, .fd-action-bar__description {
+    .fd-panel__description {
         padding: 0;
     }
 
