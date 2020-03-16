@@ -179,7 +179,6 @@ $block: #{$fd-namespace}-menu;
       }
 
       .#{$block}__addon-after {
-        // border-bottom-color: var(--sapList_BorderColor); // TODO change this when fade() evaluates to a value
         border-bottom-color: transparent;
       }
     }
