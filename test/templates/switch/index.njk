@@ -37,9 +37,9 @@
             <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3251">
             <div class="fd-switch__wrapper">
                 <div class="fd-switch__track">
-                    <span class="fd-switch__text fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
+                    <span class="fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
                     <span class="fd-switch__handle" role="presentation"></span>
-                    <span class="fd-switch__text fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
+                    <span class="fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
                 </div>
             </div>
         </span>
@@ -50,13 +50,44 @@
             <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3431">
             <div class="fd-switch__wrapper">
                 <div class="fd-switch__track">
-                    <span class="fd-switch__text fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
+                    <span class="fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
                     <span class="fd-switch__handle" role="presentation"></span>
-                    <span class="fd-switch__text fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
+                    <span class="fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
                 </div>
             </div>
         </span>
     </label>
+{% endset %}
+{{ format(example) }}
+
+<h3>Switch with Text</h3>
+{% set example %}
+<label class="fd-switch__label">
+	<span class="fd-switch__text">
+		<span class="fd-object-status fd-object-status--negative">Negative</span>
+	</span>
+	<span class="fd-switch fd-switch--semantic">
+		<input class="fd-switch__input" type="checkbox" name="" value="" id="y21653431">
+		<div class="fd-switch__wrapper">
+			<div class="fd-switch__track">
+				<span class="fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
+				<span class="fd-switch__handle" role="presentation"></span>
+				<span class="fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
+			</div>
+		</div>
+	</span>
+</label>
+<label class="fd-switch__label">
+	<span class="fd-switch__text">Off</span>
+	<span class="fd-switch">
+		<input class="fd-switch__input" type="checkbox" name="" value="" id="y21Y677251">
+		<div class="fd-switch__wrapper">
+			<div class="fd-switch__track">
+				<span class="fd-switch__handle" role="presentation"></span>
+			</div>
+		</div>
+	</span>
+</label>
 {% endset %}
 {{ format(example) }}
 
