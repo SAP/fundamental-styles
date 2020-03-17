@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0-rc.22"></a>
+# [0.8.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.21...v0.8.0-rc.22) (2020-03-17)
+
+
+### Features
+
+* add internal label to switch component ([#777](https://github.com/SAP/fundamental-styles/issues/777)) ([c0e5c1a](https://github.com/SAP/fundamental-styles/commit/c0e5c1a))
+
+
+
 <a name="0.8.0-rc.21"></a>
 # [0.8.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.20...v0.8.0-rc.21) (2020-03-09)
 
