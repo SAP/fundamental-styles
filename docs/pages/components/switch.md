@@ -79,24 +79,6 @@ The Switch is meant to resemble a physical switch and allow a user to turn a set
         </label>
     </div>
     <div class="fd-form-item">
-        <label class="fd-form-label">With Positive</label>
-        <label class="fd-switch__label">
-            <span class="fd-switch__text">
-                <span class="fd-object-status fd-object-status--positive">Positive</span>
-            </span> 
-            <span class="fd-switch fd-switch--semantic">
-                <input class="fd-switch__input" checked type="checkbox" name="" value="" id="y21653431">
-                <div class="fd-switch__wrapper">
-                    <div class="fd-switch__track">
-                        <span class="fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
-                        <span class="fd-switch__handle" role="presentation"></span>
-                        <span class="fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
-                    </div>
-                </div>
-            </span>
-        </label>
-    </div>
-    <div class="fd-form-item">
         <label class="fd-form-label">With Negative</label>
         <label class="fd-switch__label">
             <span class="fd-switch__text">
