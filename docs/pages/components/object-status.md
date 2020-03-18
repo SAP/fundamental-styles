@@ -206,8 +206,15 @@ For Object Status in Large Design use the `fd-object-status--large` modifier cla
 
 <br><br>
 
-<span class="fd-object-status fd-object-status--large fd-object-status--inverted">Inverted Default</span>
+
 <span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"></span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--critical sap-icon--status-critical"></span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--positive sap-icon--status-positive"></span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--informative sap-icon--hint"></span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted sap-icon--to-be-reviewed"></span>
+
+<br><br>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted">Inverted Default</span>
 <span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--negative sap-icon--status-negative">Negative</span>
 <span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--critical sap-icon--status-critical">Critical</span>
 <span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--positive sap-icon--status-positive">Positive</span>

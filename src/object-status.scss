@@ -25,8 +25,8 @@ $color-accents: (
   "8": ("color": var(--sapAccentColor4), "hover": #e6acd8, "active": #ac338f, "visited": var(--sapAccentColor4))
 );
 
-// INTERACTION STATES FOR INVERTED OBJECT STATUS
-@mixin interaction-states($bg, $color, $hoverBg, $hoverColor, $activeBg, $activeColor, $visitedBg, $visitedColor) {
+// STATES FOR INVERTED OBJECT STATUS
+@mixin inverted-object-states($bg, $color) {
   background-color: $bg;
   color: $color;
 
@@ -34,6 +34,20 @@ $color-accents: (
     color: $color;
   }
 
+  &:hover,
+  &:active,
+  &:visited {
+    background-color: $bg;
+    color: $color;
+
+    &::before {
+      color: $color;
+    }
+  }
+}
+
+// INTERACTION STATES FOR INVERTED OBJECT STATUS
+@mixin inverted-object-interaction-states($hoverBg, $hoverColor, $activeBg, $activeColor, $visitedBg, $visitedColor) {
   &:hover {
     background-color: $hoverBg;
     color: $hoverColor;
@@ -63,29 +77,34 @@ $color-accents: (
 }
 
 .#{$block} {
-  // ICON
+  // ICON VARIABLES
   $fd-object-status-icon-font-size: 1rem;
   $fd-object-status-icon-padding: 0.5rem !default;
   $fd-object-status-icon-neutral: var(--sapNeutralElementColor);
 
-  // TEXT
+  // TEXT VARIABLES
   $fd-object-status-text-font-family: var(--sapFontFamily) !default;
   $fd-object-status-text-font-size: var(--sapFontSize) !default;
   $fd-object-status-text-neutral: var(--sapNeutralTextColor);
 
-  // INVERTED OBJECT STATUS
+  // INVERTED OBJECT STATUS VARIABLES
   $fd-object-status-inverted-border-radius: 0.125rem !default;
   $fd-object-status-inverted-padding: 0.0625rem 0.25rem !default;
+  $fd-object-status-inverted-padding-empty: 0 0.25rem !default;
   $fd-object-status-inverted-min-height: 1rem !default;
+  $fd-object-status-inverted-height-empty: 1rem !default;
+  $fd-object-status-inverted-min-width: 1.25rem !default;
   $fd-object-status-inverted-text-font-weight: bold !default;
-  $fd-object-status-inverted-text-color: var(--sapContent_ContrastTextColor) !default;
-  $fd-object-status-inverted-icon-color: var(--sapContent_ContrastTextColor) !default;
   $fd-object-status-inverted-icon-font-size: 0.75rem !default;
   $fd-object-status-inverted-icon-spacing: 0.25rem !default;
 
-  // LARGE DESIGN
+  // LARGE DESIGN VARIABLES
   $fd-object-status-icon-text-font-size-large: 1.5rem;
   $fd-object-status-icon-text-font-size-large-inverted: 1.25rem;
+  $fd-object-status-padding-large-inverted: 0.125rem 0.25rem !default;
+  $fd-object-status-padding-large-inverted-empty: 0 0.25rem !default;
+  $fd-object-status-min-width-large-inverted-empty: 1.75rem !default;
+  $fd-object-status-min-height-large-inverted-empty: 1.5rem !default;
 
   @include fd-reset();
 
@@ -117,6 +136,7 @@ $color-accents: (
     color: $fd-object-status-icon-neutral;
   }
 
+  // ICON ONLY MODE
   &:empty {
     padding-right: 0;
     padding-left: 0;
@@ -141,6 +161,7 @@ $color-accents: (
     }
   }
 
+  // CLICKABLE OBJECT STATUS
   &--link {
     text-decoration: none;
     cursor: pointer;
@@ -158,6 +179,7 @@ $color-accents: (
     }
   }
 
+  // LARGE DESIGN
   &--large {
     font-size: $fd-object-status-icon-text-font-size-large;
 
@@ -200,20 +222,20 @@ $color-accents: (
     }
   }
 
+  // INVERTED OBJECT STATUS
   &--inverted {
-    font-size: var(--sapFontSmallSize);
-    min-height: $fd-object-status-inverted-min-height;
     height: auto;
+    min-height: $fd-object-status-inverted-min-height;
+    width: auto;
+    max-width: 100%;
     padding: $fd-object-status-inverted-padding;
     border-radius: $fd-object-status-inverted-border-radius;
+    font-size: var(--sapFontSmallSize);
     font-weight: $fd-object-status-inverted-text-font-weight;
-    color: $fd-object-status-inverted-text-color;
-    max-width: 100%;
 
     &::before {
       font-size: $fd-object-status-inverted-icon-font-size;
       padding-right: $fd-object-status-inverted-icon-spacing;
-      color: $fd-object-status-inverted-icon-color;
       top: 0.0625rem;
     }
 
@@ -224,59 +246,124 @@ $color-accents: (
       }
     }
 
+    // ICON ONLY MODE
     &:empty {
-      height: 1rem;
-      width: 1.25rem;
-      padding: 0;
+      height: $fd-object-status-inverted-height-empty;
+      width: auto;
+      min-width: $fd-object-status-inverted-min-width;
+      max-width: 100%;
+      padding: $fd-object-status-inverted-padding-empty;
       text-align: center;
+
+      &::before {
+        top: 0;
+      }
     }
 
-    @include interaction-states(var(--sapButton_Neutral_Background), var(--sapButton_Neutral_TextColor), var(--sapButton_Neutral_Hover_Background), var(--sapButton_Neutral_Hover_TextColor), var(--sapButton_Neutral_Active_Background), var(--sapButton_Neutral_TextColor), var(--sapButton_Neutral_Background), var(--sapButton_Neutral_TextColor));
+    // TEXT AND BACKGROUND COLOR FOR INVERTED OBJECT STATUS STATES
+    @include inverted-object-states(var(--sapButton_Neutral_Background), var(--sapButton_Neutral_TextColor));
 
     &.#{$block}--negative {
-      @include interaction-states(var(--sapButton_Negative_Background), var(--sapButton_Negative_TextColor), var(--sapButton_Negative_Hover_Background), var(--sapButton_Negative_Hover_TextColor), var(--sapButton_Negative_Active_Background), var(--sapButton_Negative_TextColor), var(--sapButton_Negative_Background), var(--sapButton_Negative_TextColor));
+      @include inverted-object-states(var(--sapButton_Negative_Background), var(--sapButton_Negative_TextColor));
     }
 
     &.#{$block}--critical {
-      @include interaction-states(var(--sapButton_Critical_Background), var(--sapButton_Critical_TextColor), var(--sapButton_Critical_Hover_Background), var(--sapButton_Critical_Hover_TextColor), var(--sapButton_Critical_Active_Background), var(--sapButton_Critical_TextColor), var(--sapButton_Critical_Background), var(--sapButton_Critical_TextColor));
+      @include inverted-object-states(var(--sapButton_Critical_Background), var(--sapButton_Critical_TextColor));
     }
 
     &.#{$block}--positive {
-      @include interaction-states(var(--sapButton_Success_Background), var(--sapButton_Success_TextColor), var(--sapButton_Success_Hover_Background), var(--sapButton_Success_Hover_TextColor), var(--sapButton_Success_Active_Background), var(--sapButton_Success_TextColor), var(--sapButton_Success_Background), var(--sapButton_Success_TextColor));
+      @include inverted-object-states(var(--sapButton_Success_Background), var(--sapButton_Success_TextColor));
     }
 
     &.#{$block}--informative {
-      @include interaction-states(var(--sapInformativeElementColor), var(--sapContent_ContrastTextColor), #0961b9, var(--sapContent_ContrastTextColor), #0854a0, var(--sapContent_ContrastTextColor), #0a6ed1, var(--sapContent_ContrastTextColor));
+      @include inverted-object-states(var(--sapInformativeElementColor), var(--sapContent_ContrastTextColor));
     }
 
+    // BACKGROUND COLOR FOR INVERTED OBJECT STATUS STATES - GENERIC INDICATION COLORS
+    @each $set-name, $color-set in $color-accents {
+      &.#{$block}--indication-#{$set-name} {
+        background: map_get($color-set, "color");
+
+        &:hover,
+        &:active,
+        &:visited {
+          background: map_get($color-set, "color");
+        }
+      }
+    }
+
+    // LARGE DESIGN FOR INVERTED OBJECT STATUS
     &.#{$block}--large {
       font-size: $fd-object-status-icon-text-font-size-large-inverted;
+      padding: $fd-object-status-padding-large-inverted;
 
       &::before {
         font-size: $fd-object-status-icon-text-font-size-large-inverted;
       }
 
+      // ICON ONLY MODE
       &:empty {
-        height: auto;
         width: auto;
-        padding: $fd-object-status-inverted-padding;
+        height: $fd-object-status-min-height-large-inverted-empty;
+        min-width: $fd-object-status-min-width-large-inverted-empty;
+        padding: $fd-object-status-padding-large-inverted-empty;
+
+        &::before {
+          top: -0.125rem;
+        }
       }
     }
 
-    @each $set-name, $color-set in $color-accents {
-      &.#{$block}--indication-#{$set-name} {
-        background: map_get($color-set, "color");
+    // CLICKABLE INVERTED OBJECT STATUS
+    &.#{$block}--link {
+      text-decoration: none;
+      cursor: pointer;
 
-        &:hover {
-          background: map_get($color-set, "hover");
+      &:hover,
+      &:active,
+      &:visited {
+        text-decoration: none;
+
+        &::before {
+          text-decoration: none;
         }
+      }
 
-        &:active {
-          background: map_get($color-set, "active");
-        }
+      // INTERACTION STATES FOR CLICKABLE INVERTED OBJECT STATUS
+      @include inverted-object-interaction-states(var(--sapButton_Neutral_Hover_Background), var(--sapButton_Neutral_Hover_TextColor), var(--sapButton_Neutral_Active_Background), var(--sapButton_Neutral_TextColor), var(--sapButton_Neutral_Background), var(--sapButton_Neutral_TextColor));
 
-        &:visited {
-          background: map_get($color-set, "visited");
+      &.#{$block}--negative {
+        @include inverted-object-interaction-states(var(--sapButton_Negative_Hover_Background), var(--sapButton_Negative_Hover_TextColor), var(--sapButton_Negative_Active_Background), var(--sapButton_Negative_TextColor), var(--sapButton_Negative_Background), var(--sapButton_Negative_TextColor));
+      }
+
+      &.#{$block}--critical {
+        @include inverted-object-interaction-states(var(--sapButton_Critical_Hover_Background), var(--sapButton_Critical_Hover_TextColor), var(--sapButton_Critical_Active_Background), var(--sapButton_Critical_TextColor), var(--sapButton_Critical_Background), var(--sapButton_Critical_TextColor));
+      }
+
+      &.#{$block}--positive {
+        @include inverted-object-interaction-states(var(--sapButton_Success_Hover_Background), var(--sapButton_Success_Hover_TextColor), var(--sapButton_Success_Active_Background), var(--sapButton_Success_TextColor), var(--sapButton_Success_Background), var(--sapButton_Success_TextColor));
+      }
+
+      &.#{$block}--informative {
+        @include inverted-object-interaction-states(#0961b9, var(--sapContent_ContrastTextColor), #0854a0, var(--sapContent_ContrastTextColor), #0a6ed1, var(--sapContent_ContrastTextColor));
+      }
+
+      // GENERIC INDICATION COLORS FOR CLICKABLE INVERTED OBJECT STATUS
+      @each $set-name, $color-set in $color-accents {
+        &.#{$block}--indication-#{$set-name} {
+          background: map_get($color-set, "color");
+
+          &:hover {
+            background: map_get($color-set, "hover");
+          }
+
+          &:active {
+            background: map_get($color-set, "active");
+          }
+
+          &:visited {
+            background: map_get($color-set, "visited");
+          }
         }
       }
     }
