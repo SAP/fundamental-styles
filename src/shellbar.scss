@@ -94,41 +94,6 @@ $block: #{$fd-namespace}-shellbar;
     }
   }
 
-  &__button {
-    @include fd-button-reset();
-    @include fd-icon-size("m", "before");
-    @include fd-icon-size("m", "after");
-
-    border-color: transparent !important;
-    background: $fd-shellbar-background-color !important;
-    color: $fd-shellbar-color !important;
-
-    &:hover {
-      background: $fd-shell-hover-background !important;
-    }
-
-    &:active {
-      background: $fd-shell-active-background !important;
-    }
-
-    &:hover,
-    &:active {
-      color: $fd-shell-active-text-color !important;
-    }
-
-    @include fd-hover() {
-      @include fd-disabled() {
-        background: $fd-shellbar-background-color !important;
-      }
-    }
-
-    &.sap-icon--bell {
-      &::before {
-        margin-right: 0;
-      }
-    }
-  }
-
   &__title,
   &__subtitle {
     @include fd-reset();
@@ -310,7 +275,54 @@ $block: #{$fd-namespace}-shellbar;
     }
   }
 
-  &__button--menu {
+  &__popover__body--right {
+    &::before,
+    &::after {
+      right: 14px; // needed to place the popover body arrow under the button arrow icon
+    }
+  }
+
+  /*
+   It is necessary to specify fd-button here to avoid issues with the ordering of how the classes are applied to
+   the shellbar button elements. While specifying fd-button here breaks the rule of self-contained styles in a way, it
+   is a better option than using the buttonBase() mixin from the button.scss file or using !important.
+   */
+  .#{$fd-namespace}-button.#{$block}__button {
+    @include fd-button-reset();
+    @include fd-icon-size("m", "before");
+    @include fd-icon-size("m", "after");
+
+    border-color: transparent;
+    background: $fd-shellbar-background-color;
+    color: $fd-shellbar-color;
+
+    &:hover {
+      background: $fd-shell-hover-background;
+    }
+
+    &:active {
+      background: $fd-shell-active-background;
+    }
+
+    &:hover,
+    &:active {
+      color: $fd-shell-active-text-color;
+    }
+
+    @include fd-hover() {
+      @include fd-disabled() {
+        background: $fd-shellbar-background-color;
+      }
+    }
+
+    &.sap-icon--bell {
+      &::before {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .#{$fd-namespace}-button.#{$block}__button--menu {
     font-size: var(--sapFontSize);
 
     &::after {
@@ -326,13 +338,6 @@ $block: #{$fd-namespace}-shellbar;
     &:focus {
       background: $fd-shell-active-background;
       color: $fd-shell-active-text-color;
-    }
-  }
-
-  &__popover__body--right {
-    &::before,
-    &::after {
-      right: 14px; // needed to place the popover body arrow under the button arrow icon
     }
   }
 }
