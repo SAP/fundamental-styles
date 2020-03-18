@@ -11,6 +11,8 @@ summary:
 
 A loading spinner informs the user of an ongoing operation. Only one busy indicator should be shown at a time.
 {: .docs-intro}
+> **DEPRECATED**. Loading Spinner has been deprecated in Fiori 3. The successor of the loading spinner is [Busy Indicator component]({{site.baseurl}}/components/busy-indicator.html). There is no overlay version of Alert in Fiori 3.
+{: .docs-deprecated}
 The aria-hidden attribute is used to hide and show the element.
 Loading indicators are not visible all the time, only when needed. To show and hide the loading indicator the `aria-hidden` attribute is used to hide/show the element.
 
