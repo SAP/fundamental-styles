@@ -10,18 +10,24 @@ $block: #{$fd-namespace}-tokenizer;
 
   width: 100%;
   background-color: var(--sapField_Background);
-  padding-left: $fd-tokenizer-spacing;
-  overflow: hidden;
   display: flex;
   align-items: center;
 
   &__inner {
+    &::-webkit-scrollbar {
+      display: none; // hide scrollbar but keep element scrollable for Chrome/Safari/Opera
+    }
+
+    padding: 0 $fd-tokenizer-spacing;
+    overflow: hidden;
     float: right;
     white-space: nowrap;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    -ms-overflow-style: none; // hide scrollbar but keep element scrollable for IE/Edge
+    scrollbar-width: none; // hide scrollbar on firefox
   }
 
   .fd-token {
@@ -36,9 +42,11 @@ $block: #{$fd-namespace}-tokenizer;
   }
 
   &__input {
-    border: none !important;
-    min-width: 3rem !important;
-    padding: 0 $fd-tokenizer-spacing 0 0 !important;
+    &.#{$fd-namespace}-input {
+      border: none;
+      padding: 0;
+      min-width: 3rem;
+    }
 
     &:last-child {
       flex-basis: 100%;
@@ -61,11 +69,12 @@ $block: #{$fd-namespace}-tokenizer;
   }
 
   &--compact {
-    padding-left: $fd-tokenizer-compact-spacing;
+    .#{$block}__inner {
+      padding: 0 $fd-tokenizer-compact-spacing;
+    }
 
-    .#{$block}__input {
+    .#{$block}__input.#{$fd-namespace}-input {
       min-width: 2rem;
-      padding: 0 $fd-tokenizer-compact-spacing 0 0;
     }
 
     .fd-token {
@@ -76,5 +85,12 @@ $block: #{$fd-namespace}-tokenizer;
   &--readonly {
     overflow: visible;
     background-color: var(--sapField_ReadOnly_Background);
+  }
+
+  &--scrollable {
+    .#{$block}__inner {
+      justify-content: initial;
+      overflow: scroll;
+    }
   }
 }

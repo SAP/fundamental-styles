@@ -19,6 +19,9 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+    //scrollable tokenizer
+    tokenizerScrollToEnd();
+
     //dialog
     draggableDialog();
 
@@ -289,5 +292,12 @@ function draggableDialog() {
                 $(draggableDialogs[i]).removeClass('fd-dialog__content--draggable-grabbing');
             };
         }
+    }
+}
+
+function tokenizerScrollToEnd() {
+    const tokenizerElement = $('#tokenizer-scrollable');
+    if (tokenizerElement) {
+      tokenizerElement.scrollLeft(10000);
     }
 }
