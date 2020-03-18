@@ -42,9 +42,11 @@ $block: #{$fd-namespace}-tokenizer;
   }
 
   &__input {
-    border: none !important;
-    min-width: 3rem !important;
-    padding: 0 !important;
+    &.#{$fd-namespace}-input {
+      border: none;
+      padding: 0;
+      min-width: 3rem;
+    }
 
     &:last-child {
       flex-basis: 100%;
@@ -71,7 +73,7 @@ $block: #{$fd-namespace}-tokenizer;
       padding: 0 $fd-tokenizer-compact-spacing;
     }
 
-    .#{$block}__input {
+    .#{$block}__input.#{$fd-namespace}-input {
       min-width: 2rem;
     }
 
