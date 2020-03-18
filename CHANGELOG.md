@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0-rc.24"></a>
+# [0.8.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.23...v0.8.0-rc.24) (2020-03-18)
+
+
+### Bug Fixes
+
+* make compact tokenizer inner width: auto and make cozy mode horizontally scrollable ([#775](https://github.com/SAP/fundamental-styles/issues/775)) ([e34bf0b](https://github.com/SAP/fundamental-styles/commit/e34bf0b))
+
+
+
 <a name="0.8.0-rc.23"></a>
 # [0.8.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.22...v0.8.0-rc.23) (2020-03-18)
 
