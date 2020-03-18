@@ -720,11 +720,17 @@ body {
   transition: all 0.3s ease;
 }
 
+.header-section__sap-icon--menu2 {
+  
+  height: 50px;
+  background-color: white;
+  border: none;
+}
 
 .header-section__sap-icon--menu2::before {
   transition: opacity 0.3s, transform 0.3s;
   color: $home-page-action-color;
-   font-size: 14px;
+   font-size: 20px;
 }
 
 .header-section__sap-icon--decline::before {
