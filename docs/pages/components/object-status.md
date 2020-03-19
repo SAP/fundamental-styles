@@ -7,8 +7,22 @@ toc: false
 permalink: components/object-status.html
 folder: components
 ---
-Object Status is replacing the Label Status Indicator and Badges (now Inverted Object Status). It's used for representing a status. 
+Object Status is a short text that represents the semantic status of an object. It has a semantic color and an optional icon. Typically, the object status is used in the dynamic page header and as a status attribute of a line item in a table. 
 {: .docs-intro}
+<br>
+
+# Object Status Semantics
+Object Status can display the semantic status of an object: negative (class: `fd-object-status--negative`), critical (class: `fd-object-status--critical`), positive (class: `fd-object-status--positive`), informative (class: `fd-object-status--informative`), or none.
+
+{% capture badge %}
+<span class="fd-object-status fd-object-status--negative sap-icon--status-negative">Negative</span>
+<span class="fd-object-status fd-object-status--critical sap-icon--status-critical">Critical</span>
+<span class="fd-object-status fd-object-status--positive sap-icon--status-positive">Positive</span>
+<span class="fd-object-status fd-object-status--informative sap-icon--hint">Info</span>
+<span class="fd-object-status sap-icon--to-be-reviewed">Neutral</span>
+
+{% endcapture %}
+{% include display-component.html component=badge %}
 
 <br>
 
@@ -76,7 +90,9 @@ Object Status is replacing the Label Status Indicator and Badges (now Inverted O
 <br>
 
 # Clickable Object Status
-For clickable Object Status add the `fd-object-status--link` modifier class. 
+If the object status is used as a link, a hover effect is shown on non-touch devices.
+If the object status is shown using a combination of icon and text, there is no hover effect for the icon.
+If Object Status has to be clicked/tabbed by the user add the `fd-object-status--link` modifier class. 
 {% capture badge %}
 <a href="#" class="fd-object-status fd-object-status--link">Default</a>
 <a href="#" class="fd-object-status fd-object-status--negative fd-object-status--link">Negative</a>
@@ -100,6 +116,7 @@ For clickable Object Status add the `fd-object-status--link` modifier class.
 <br>
 
 # Inverted Object Status
+Inverted Object Status(optional inverted visualization) determines whether the background color reflects the set state instead of the control's text. Use the inverted object status if the information is crucial for the user’s actions and needs to stand out visually.
 Inverted Object Status is achieved by adding the `fd-object-status--inverted` modifier class. 
 {% capture badge %}
 <span class="fd-object-status fd-object-status--inverted fd-object-status--negative">Inverted Negative</span>
@@ -183,6 +200,7 @@ Inverted Object Status is achieved by adding the `fd-object-status--inverted` mo
 <br>
 
 # Object Status Large Design
+Use this feature if the object status is important in the business context and needs to stand out visually in the page header.
 For Object Status in Large Design use the `fd-object-status--large` modifier class.
 {% capture badge %}
 <span class="fd-object-status fd-object-status--large fd-object-status--negative sap-icon--status-negative"></span>
