@@ -59,6 +59,10 @@ $block: #{$fd-namespace}-menu;
     }
 
     width: 100%;  // to fix IE issue
+
+    &[aria-hidden='true'] {
+      display: none;
+    }
   }
 
   &__list > li {
@@ -69,7 +73,7 @@ $block: #{$fd-namespace}-menu;
   &--compact {
     @include fd-reset();
 
-    .#{$block}__item {
+    .#{$block}__link {
       // for desktop mode
       padding: 0.375rem 0.75rem 0.375rem 0.5rem; // line-height=20px so 2rem or 32px-20px=12px/2= 6px or 0.375rem each
       height: 2rem;
@@ -104,7 +108,7 @@ $block: #{$fd-namespace}-menu;
 
     max-width: none;
 
-    .#{$block}__item {
+    .#{$block}__link {
       padding: 0.75rem 1rem 0.75rem 1rem; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each
       height: 2.75rem;
       width: 100%;
@@ -146,14 +150,18 @@ $block: #{$fd-namespace}-menu;
 
   &__item {
     @include fd-reset();
+    @include action-cursor();
+
+    background-color: $fd-menu-item-background-color;
+  }
+
+  &__link {
+    @include fd-reset();
 
     display: flex;
     align-items: center;
-
-    @include action-cursor();
-
     max-width: 20rem;
-    background-color: $fd-menu-item-background-color;
+
     // tablet cozy - will be default
     padding: 0.75rem 1rem 0.75rem 0.75rem; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each
     height: 2.75rem;
@@ -201,6 +209,12 @@ $block: #{$fd-namespace}-menu;
       }
     }
 
+    &.is-expanded,
+    &[aria-selected='true'],
+    &[aria-expanded='true'] {
+      @include fd-selected();
+    }
+
     @include fd-fiori-focus();
 
     @include fd-disabled() {
@@ -208,6 +222,10 @@ $block: #{$fd-namespace}-menu;
       cursor: not-allowed;
       text-decoration: none;
       pointer-events: none;
+    }
+
+    &[aria-disabled='true'] {
+      @include fd-disabled();
     }
 
     .#{$block}__title {
