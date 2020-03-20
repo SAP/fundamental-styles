@@ -19,143 +19,517 @@ Multiple instances can be used in the `time-picker` to choose hours, minutes, se
 
 <br>
 
-## With Values
 
+## Cozy Mode
 {% capture default-time %}
-<div class="fd-time">
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow"
-          aria-label="Increase hours" aria-controls="1610C873"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="hh" value="02" id="1610C873" aria-label="Hours"/>
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow"
-          aria-label="Decrease hours" aria-controls="1610C873"></button>
-      </div>
-  </div>
 
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow"
-          aria-label="Increase minutes" aria-controls="DDlHR199"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="mm" value="34" id="DDlHR199" aria-label="Minutes"/>
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow"
-          aria-label="Decrease minutes" aria-controls="DDlHR199"></button>
-      </div>
-  </div>
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow"
-          aria-label="Increase seconds" aria-controls="8CAnL947"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="ss" value="56" id="8CAnL947" aria-label="Seconds"/>
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow"
-          aria-label="Decrease seconds" aria-controls="8CAnL947"></button>
-      </div>
-  </div>
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow"
-          aria-label="Increase period" aria-controls="sEWOL676"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="am" value="pm" id="sEWOL676" aria-label="Period"/>
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow"
-          aria-label="Decrease period" aria-controls="sEWOL676"></button>
-      </div>
-  </div>
+<div class="fd-popover fd-popover--no-arrow">
+    <div class="fd-popover__control">
+        <div class="fd-input-group">
+            <input type="text" class="fd-input fd-input-group__input" id="" value="4:25" placeholder="hh:mm">
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--history fd-popover__control" aria-controls="rthHR811" aria-expanded="false" aria-haspopup="true"></button>
+            </span>
+        </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="rthHR811">
+        <div class="fd-time">
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Hrs</label>
+                <div class="fd-time__wrapper">
+                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+                    <span class="fd-time__item">01</span>
+                    <span class="fd-time__item">02</span>
+                    <span class="fd-time__item">03</span>
+                    <span class="fd-time__item fd-time__item--current">04</span>
+                    <span class="fd-time__item">05</span>
+                    <span class="fd-time__item">06</span>
+                    <span class="fd-time__item">07</span>
+                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+                </div>
+            </div>                    
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Min</label>
+                <div class="fd-time__wrapper">
+                    <span class="fd-time__item fd-time__item--collapsed">25</span>
+                </div>
+            </div>
+        </div>
+       <div class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--cosy fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--emphasized">OK</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--transparent">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="fd-popover fd-popover--no-arrow">
+    <div class="fd-popover__control">
+        <div class="fd-input-group">
+            <input type="text" class="fd-input fd-input-group__input" id="" value="4:25:10" placeholder="hh:mm:ss">
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--history fd-popover__control" aria-controls="rthHHK11" aria-expanded="false" aria-haspopup="true"></button>
+            </span>
+        </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="rthHHK11">
+        <div class="fd-time">
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Hrs</label>
+                <div class="fd-time__wrapper">
+                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+                    <span class="fd-time__item">01</span>
+                    <span class="fd-time__item">02</span>
+                    <span class="fd-time__item">03</span>
+                    <span class="fd-time__item fd-time__item--current">04</span>
+                    <span class="fd-time__item">05</span>
+                    <span class="fd-time__item">06</span>
+                    <span class="fd-time__item">07</span>
+                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+                </div>
+            </div>                    
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Min</label>
+                <div class="fd-time__wrapper">
+                    <span class="fd-time__item fd-time__item--collapsed">25</span>
+                </div>
+            </div>
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Sec</label>
+                <div class="fd-time__wrapper">
+                    <span class="fd-time__item fd-time__item--collapsed">10</span>
+                </div>
+            </div>
+        </div>
+       <div class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--cosy fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--emphasized">OK</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--transparent">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="fd-popover fd-popover--no-arrow">
+    <div class="fd-popover__control">
+        <div class="fd-input-group">
+            <input type="text" class="fd-input fd-input-group__input" id="" value="4:25:10 PM" placeholder="hh:mm:ss am/pm">
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--history fd-popover__control" aria-controls="rKLOR811" aria-expanded="false" aria-haspopup="true"></button>
+            </span>
+        </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="rKLOR811">
+        <div class="fd-time">
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Hrs</label>
+                <div class="fd-time__wrapper">
+                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+                    <span class="fd-time__item">01</span>
+                    <span class="fd-time__item">02</span>
+                    <span class="fd-time__item">03</span>
+                    <span class="fd-time__item fd-time__item--current">04</span>
+                    <span class="fd-time__item">05</span>
+                    <span class="fd-time__item">06</span>
+                    <span class="fd-time__item">07</span>
+                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+                </div>
+            </div>                    
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Min</label>
+                <div class="fd-time__wrapper">
+                    <span class="fd-time__item fd-time__item--collapsed">25</span>
+                </div>
+            </div>
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Sec</label>
+                <div class="fd-time__wrapper">
+                    <span class="fd-time__item fd-time__item--collapsed">10</span>
+                </div>
+            </div>
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label"></label>
+                <div class="fd-time__wrapper">
+                    <span class="fd-time__item fd-time__item--collapsed">PM</span>
+                </div>
+            </div>
+        </div>
+       <div class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--cosy fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--emphasized">OK</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--transparent">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endcapture %}
 
-{% include display-component.html component=default-time %}
 
-## With Placeholder
 
-{% capture default-timewplaceholder %}
-<div class="fd-time">
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow"
-          aria-label="Increase hours" aria-controls="HgDLk176"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="hh" value="" id="HgDLk176" aria-label="Hours"/>
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow"
-          aria-label="Decrease hours" aria-controls="HgDLk176"></button>
-      </div>
-  </div>
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow"
-          aria-label="Increase minutes" aria-controls="CHeFH472"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="mm" value="" id="CHeFH472" aria-label="Minutes"/>
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow"
-          aria-label="Decrease minutes" aria-controls="CHeFH472"></button>
-      </div>
-  </div>
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow"
-          aria-label="Increase seconds" aria-controls="qMPpb855"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="ss" value="" id="qMPpb855" aria-label="Seconds"/>
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow"
-          aria-label="Decrease seconds" aria-controls="qMPpb855"></button>
-      </div>
-  </div>
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow"
-          aria-label="Increase period" aria-controls="VpUG6928"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="am" value="" id="VpUG6928" aria-label="Period"/>
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow"
-          aria-label="Decrease period" aria-controls="VpUG6928"></button>
-      </div>
-  </div>
+
+## Tablet Mode
+{% capture tablet-time %}
+
+<div class="fd-popover fd-popover--no-arrow">
+    <div class="fd-popover__control">
+        <div class="fd-input-group">
+            <input type="text" class="fd-input fd-input-group__input" id="" value="4:25" placeholder="hh:mm">
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--history fd-popover__control" aria-controls="rthHR811" aria-expanded="false" aria-haspopup="true"></button>
+            </span>
+        </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="rthHR811">
+        <div class="fd-time fd-time--tablet">
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Hrs</label>
+                <div class="fd-time__wrapper">
+                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+                    <span class="fd-time__item">01</span>
+                    <span class="fd-time__item">02</span>
+                    <span class="fd-time__item">03</span>
+                    <span class="fd-time__item fd-time__item--current">04</span>
+                    <span class="fd-time__item">05</span>
+                    <span class="fd-time__item">06</span>
+                    <span class="fd-time__item">07</span>
+                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+                </div>
+            </div>                    
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Min</label>
+                <div class="fd-time__wrapper">
+                    <span class="fd-time__item fd-time__item--collapsed">25</span>
+                </div>
+            </div>
+        </div>
+       <div class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--cosy fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--emphasized">OK</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--transparent">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="fd-popover fd-popover--no-arrow">
+    <div class="fd-popover__control">
+        <div class="fd-input-group">
+            <input type="text" class="fd-input fd-input-group__input" id="" value="4:25:10" placeholder="hh:mm:ss">
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--history fd-popover__control" aria-controls="rthHHK11" aria-expanded="false" aria-haspopup="true"></button>
+            </span>
+        </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="rthHHK11">
+        <div class="fd-time fd-time--tablet">
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Hrs</label>
+                <div class="fd-time__wrapper">
+                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+                    <span class="fd-time__item">01</span>
+                    <span class="fd-time__item">02</span>
+                    <span class="fd-time__item">03</span>
+                    <span class="fd-time__item fd-time__item--current">04</span>
+                    <span class="fd-time__item">05</span>
+                    <span class="fd-time__item">06</span>
+                    <span class="fd-time__item">07</span>
+                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+                </div>
+            </div>                    
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Min</label>
+                <div class="fd-time__wrapper">
+                    <span class="fd-time__item fd-time__item--collapsed">25</span>
+                </div>
+            </div>
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Sec</label>
+                <div class="fd-time__wrapper">
+                    <span class="fd-time__item fd-time__item--collapsed">10</span>
+                </div>
+            </div>
+        </div>
+       <div class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--cosy fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--emphasized">OK</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--transparent">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="fd-popover fd-popover--no-arrow">
+    <div class="fd-popover__control">
+        <div class="fd-input-group">
+            <input type="text" class="fd-input fd-input-group__input" id="" value="4:25:10 PM" placeholder="hh:mm:ss am/pm">
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--history fd-popover__control" aria-controls="rKLOR811" aria-expanded="false" aria-haspopup="true"></button>
+            </span>
+        </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="rKLOR811">
+        <div class="fd-time fd-time--tablet">
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Hrs</label>
+                <div class="fd-time__wrapper">
+                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+                    <span class="fd-time__item">01</span>
+                    <span class="fd-time__item">02</span>
+                    <span class="fd-time__item">03</span>
+                    <span class="fd-time__item fd-time__item--current">04</span>
+                    <span class="fd-time__item">05</span>
+                    <span class="fd-time__item">06</span>
+                    <span class="fd-time__item">07</span>
+                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+                </div>
+            </div>                    
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Min</label>
+                <div class="fd-time__wrapper">
+                    <span class="fd-time__item fd-time__item--collapsed">25</span>
+                </div>
+            </div>
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Sec</label>
+                <div class="fd-time__wrapper">
+                    <span class="fd-time__item fd-time__item--collapsed">10</span>
+                </div>
+            </div>
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label"></label>
+                <div class="fd-time__wrapper">
+                    <span class="fd-time__item fd-time__item--collapsed">PM</span>
+                </div>
+            </div>
+        </div>
+       <div class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--cosy fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--emphasized">OK</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--transparent">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endcapture %}
 
-{% include display-component.html component=default-timewplaceholder %}
+{% include display-component.html component=tablet-time %}
 
-## With Button State
-Since the controls and inputs are standard components, they can take all states available to
-buttons and forms respectively, e.g., disabled, .is-error. In this case, the buttons are
-disabled when the first or last values are reached.
+## Compact Mode
 
-{% capture default-timewplaceholder %}
-<div class="fd-time">
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow"
-          aria-label="Increase hours" aria-controls="Rjap5115"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="hh" value="00" id="Rjap5115" aria-label="Hours"/>
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow is-disabled"
-          aria-label="Decrease hours" aria-controls="Rjap5115"></button>
-      </div>
-  </div>
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow is-disabled"
-          aria-label="Increase minutes" aria-controls="VnVPz732"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="mm" value="59" id="VnVPz732" aria-label="Minutes"/>
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow"
-          aria-label="Decrease minutes" aria-controls="VnVPz732"></button>
-      </div>
-  </div>
+{% capture compact-time %}
+<div class="fd-popover fd-popover--no-arrow">
+    <div class="fd-popover__control">
+        <div class="fd-input-group">
+            <input type="text" class="fd-input fd-input-group__input" value="4:25" id="" placeholder="hh:mm">
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--history fd-popover__control" aria-controls="rthHR875" aria-expanded="false" aria-haspopup="true"></button>
+            </span>
+        </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="rthHR875">
+        <div class="fd-time fd-time--compact">
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Hrs</label>
+                <div class="fd-time__wrapper">
+                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+                    <span class="fd-time__item">01</span>
+                    <span class="fd-time__item">02</span>
+                    <span class="fd-time__item">03</span>
+                    <span class="fd-time__item fd-time__item--current">04</span>
+                    <span class="fd-time__item">05</span>
+                    <span class="fd-time__item">06</span>
+                    <span class="fd-time__item">07</span>
+                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+                </div>
+            </div>                    
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Min</label>
+                <div class="fd-time__wrapper">
+                    <span class="fd-time__item fd-time__item--collapsed">20</span>
+                </div>
+            </div>
+        </div>
+       <div class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--cosy fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--compact fd-button--emphasized">OK</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--compact fd-button--transparent">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="fd-popover fd-popover--no-arrow">
+    <div class="fd-popover__control">
+        <div class="fd-input-group">
+            <input type="text" class="fd-input fd-input-group__input" id="" value="4:25:10" placeholder="hh:mm:ss">
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--history fd-popover__control" aria-controls="rthHHK11" aria-expanded="false" aria-haspopup="true"></button>
+            </span>
+        </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="rthHHK11">
+        <div class="fd-time fd-time--compact">
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Hrs</label>
+                <div class="fd-time__wrapper">
+                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+                    <span class="fd-time__item">01</span>
+                    <span class="fd-time__item">02</span>
+                    <span class="fd-time__item">03</span>
+                    <span class="fd-time__item fd-time__item--current">04</span>
+                    <span class="fd-time__item">05</span>
+                    <span class="fd-time__item">06</span>
+                    <span class="fd-time__item">07</span>
+                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+                </div>
+            </div>                    
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Min</label>
+                <div class="fd-time__wrapper">
+                    <span class="fd-time__item fd-time__item--collapsed">25</span>
+                </div>
+            </div>
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Sec</label>
+                <div class="fd-time__wrapper">
+                    <span class="fd-time__item fd-time__item--collapsed">10</span>
+                </div>
+            </div>
+        </div>
+       <div class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--cosy fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--compact fd-button--emphasized">OK</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--compact fd-button--transparent">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="fd-popover fd-popover--no-arrow">
+    <div class="fd-popover__control">
+        <div class="fd-input-group">
+            <input type="text" class="fd-input fd-input-group__input" id="" value="4:25:10 PM" placeholder="hh:mm:ss am/pm">
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--history fd-popover__control" aria-controls="rKLOR811" aria-expanded="false" aria-haspopup="true"></button>
+            </span>
+        </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="rKLOR811">
+        <div class="fd-time fd-time--compact">
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Hrs</label>
+                <div class="fd-time__wrapper">
+                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+                    <span class="fd-time__item">01</span>
+                    <span class="fd-time__item">02</span>
+                    <span class="fd-time__item">03</span>
+                    <span class="fd-time__item fd-time__item--current">04</span>
+                    <span class="fd-time__item">05</span>
+                    <span class="fd-time__item">06</span>
+                    <span class="fd-time__item">07</span>
+                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+                </div>
+            </div>                    
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Min</label>
+                <div class="fd-time__wrapper">
+                    <span class="fd-time__item fd-time__item--collapsed">25</span>
+                </div>
+            </div>
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label">Sec</label>
+                <div class="fd-time__wrapper">
+                    <span class="fd-time__item fd-time__item--collapsed">10</span>
+                </div>
+            </div>
+            <div class="fd-time__col">
+                <label class="fd-time__slider-label fd-form-label"></label>
+                <div class="fd-time__wrapper">
+                    <span class="fd-time__item fd-time__item--collapsed">PM</span>
+                </div>
+            </div>
+        </div>
+       <div class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--cosy fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--compact fd-button--emphasized">OK</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--compact fd-button--transparent">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endcapture %}
 
-{% include display-component.html component=default-timewplaceholder %}
+{% include display-component.html component=compact-time %}
