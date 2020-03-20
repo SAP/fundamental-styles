@@ -119,6 +119,8 @@ $block: #{$fd-namespace}-list;
     font-size: var(--sapFontLargeSize);
 
     &--anchor {
+      pointer-events: none;
+
       &:focus {
         outline: none;
       }
@@ -385,12 +387,5 @@ $block: #{$fd-namespace}-list;
     .#{$block}__icon {
       line-height: 1rem;
     }
-
-    // > * {
-    //   &:last-child {
-    //     border-bottom-left-radius: $fd-list-last-item-bottom-border-radius;
-    //     border-bottom-right-radius: $fd-list-last-item-bottom-border-radius;
-    //   }
-    // }
   }
 }
