@@ -113,8 +113,30 @@ The basic stucture of a menu in mobile where it opens as a dialog. Use class `fd
                         <a class="fd-menu__link" href="#">
                             <span class="fd-menu__addon-before sap-icon--grid"></span>
                             <span class="fd-menu__title">Option 1</span>
-                            <span class="fd-menu__addon-after sap-icon--cart"></span>
+                            <span class="fd-menu__addon-after fd-menu__addon-after--submenu sap-icon--navigation-right-arrow"></span> 
                         </a>
+                        <ul class="fd-menu__sublist" id="EX100M20" aria-hidden="true">
+                            <li class="fd-menu__item">
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Sub-option 1</span>
+                                </a>                    
+                            </li>
+                            <li class="fd-menu__item">                    
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Sub-option 2</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item">                    
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Sub-option 3</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item">                    
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Sub-option 4</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="fd-menu__item">
                         <a class="fd-menu__link" href="#">
@@ -171,7 +193,7 @@ To add separators between the items, use the class `fd-menu__separator` in its o
                 <span class="fd-menu__title">Option 2</span>
             </a>
         </li>
-        <span class="fd-menu fd-menu__separator"></span>
+        <span class="fd-menu__separator"></span>
         <li class="fd-menu__item">
             <a class="fd-menu__link" href="#">
                 <span class="fd-menu__title">Option 3</span>
@@ -182,7 +204,7 @@ To add separators between the items, use the class `fd-menu__separator` in its o
                 <span class="fd-menu__title">Option 4</span>
             </a>
         </li>
-        <span class="fd-menu fd-menu__separator"></span>
+        <span class="fd-menu__separator"></span>
         <li class="fd-menu__item">
             <a class="fd-menu__link" href="#">
                 <span class="fd-menu__title">Option 5</span>
@@ -331,7 +353,7 @@ For a submenu, do the following:
                 </li>
             </ul>
         </li>
-        <span class="fd-menu fd-menu__separator"></span>
+        <span class="fd-menu__separator"></span>
         <li class="fd-menu__item">            
             <a class="fd-menu__link" href="#">
                 <span class="fd-menu__title">Option 3</span>

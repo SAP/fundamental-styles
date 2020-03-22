@@ -143,6 +143,8 @@ $block: #{$fd-namespace}-menu;
   }
 
   &__separator {
+    @include fd-reset();
+
     height: 0.0625rem;
     width: 100%;
     background-color: $fd-menu-separator-color;
