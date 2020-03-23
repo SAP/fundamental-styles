@@ -39,6 +39,10 @@ entries:
       url: /layouts/columns.html
       output: web
 
+    - title: Responsive Grid Layout
+      url: /layouts/responsive-grid-layout.html
+      output: web
+
   # Patterns
   - title: patterns
     url: /patterns/index.html

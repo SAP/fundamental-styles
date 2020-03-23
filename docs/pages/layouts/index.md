@@ -74,4 +74,14 @@ Layouts in Fundamental Library Styles are for structuring the main parts of your
              </p>
         </div>
     </a>
+     <a class="fd-tile" role="button" href="responsive-grid-layout.html">
+        <div class="fd-tile__content">
+             <h2 class="fd-tile__header">
+                 Responsive Grid Layout
+             </h2>
+             <p class="fd-tile__description">
+                Grid Layout which is responsive.
+             </p>
+        </div>
+    </a>
 </div>

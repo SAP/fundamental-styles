@@ -1,0 +1,131 @@
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+/*!
+.fd-responsive-grid-layout
+*/
+$block: #{$fd-namespace}-responsive-grid-layout;
+$fd-counter: 0;
+// takes value entered from user
+$fd-col-span: 4;
+
+$breakpoints: (
+  s: 599px,
+  m: 1023px,
+  l: 1439px,
+  xl: 1440px
+);
+
+&.#{$block} {
+  @include fd-reset();
+
+  @mixin fd-col-span($cols) {
+    @for $i from 1 through $cols {
+      grid-template-columns: repeat(auto-fit, minmax(calc((100% - #{$fd-counter} * 0.5rem - 0.1px) / #{$i}), 1fr));
+      > :nth-of-type(#{$i}) {
+        width: calc((100% - #{$fd-counter}* 0.5rem - 0.1px) / #{$i});
+      }
+    }
+  }
+
+  @mixin respond-below($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+
+      $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+      @media (max-width: $breakpoint-value) {
+        @content;
+      }
+    } @else {
+      @warn 'Invalid breakpoint: #{$breakpoint}.';
+    }
+  }
+
+  @mixin respond-above($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+      $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+      @media (min-width: $breakpoint-value) {
+        @content;
+      }
+    } @else {
+      @warn 'Invalid breakpoint: #{$breakpoint}.';
+    }
+  }
+
+  @mixin respond-between($lower, $upper) {
+    @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
+      $lower-breakpoint: map-get($breakpoints, $lower);
+      $upper-breakpoint: map-get($breakpoints, $upper);
+
+      @media (min-width: $lower-breakpoint + 1) and (max-width: ($upper-breakpoint)) {
+        @content;
+      }
+    } @else {
+      @if (map-has-key($breakpoints, $lower) == false) {
+        @warn 'Your lower breakpoint was invalid: #{$lower}.';
+      }
+
+      @if (map-has-key($breakpoints, $upper) == false) {
+        @warn 'Your upper breakpoint was invalid: #{$upper}.';
+      }
+    }
+  }
+
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-gap: 0.5rem 0.5rem;
+
+  @include respond-below(s) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 0.5rem 0.5rem;
+  }
+
+  @include respond-between(s, m) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 0.5rem 0.5rem;
+  }
+
+  @include respond-between(m, l) {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-gap: 1rem 1rem;
+  }
+
+  @include respond-above(xl) {
+    grid-template-columns: repeat(16, minmax(0, 1fr));
+    grid-gap: 1rem 1rem;
+  }
+  // can be used for content in full size of form, singleContainerFullSize
+  &--small {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 0.5rem 0.5rem;
+  }
+
+  &--medium {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    grid-gap: 1rem 1rem;
+  }
+
+  &--large {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-gap: 1rem 1rem;
+  }
+
+  &--extraLarge {
+    grid-template-columns: repeat(16, minmax(0, 1fr));
+    grid-gap: 1rem 1rem;
+  }
+
+  &--labelCol {
+    @include fd-col-span($fd-col-span);
+  }
+
+  &--valueCol {
+    @include fd-col-span($fd-col-span);
+  }
+
+  &--emptyCol {
+    @include fd-col-span($fd-col-span);
+  }
+}

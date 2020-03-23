@@ -1,0 +1,130 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./component.njk" import responsive_grid_layout %}
+
+{% block content %}
+
+{%- set div_playground %}
+<div class="panel-playground">item</div>
+{% endset %}
+
+<h2>smaller breakpoint</h2>
+{% set example %}
+    {{ responsive_grid_layout(
+            properties={
+                items: [
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground
+                ]
+            },
+             modifier={
+                block: ["small"]
+            }
+        )
+    }}
+{% endset %}
+{{ format(example) }}
+
+
+<br><br>
+<h2>Medium breakpoint</h2>
+{% set example %}
+    {{ responsive_grid_layout(
+            properties={
+                items: [
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground
+                ]
+            },
+             modifier={
+                block: ["medium"]
+            }
+        )
+    }}
+{% endset %}
+{{ format(example) }}
+
+
+
+<br><br>
+<h2>Large breakpoint</h2>
+{% set example %}
+    {{ responsive_grid_layout(
+            properties={
+                items: [
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground
+                ]
+            },
+             modifier={
+                block: ["large"]
+            }
+        )
+    }}
+{% endset %}
+{{ format(example) }}
+
+
+
+<br><br>
+<h2>Extra Large breakpoint</h2>
+{% set example %}
+    {{ responsive_grid_layout(
+            properties={
+                items: [
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground
+                ]
+            },
+             modifier={
+                block: ["extraLarge"]
+            }
+        )
+    }}
+{% endset %}
+{{ format(example) }}
+
+<br><br>
+<h2>Default layout</h2>
+{% set example %}
+    {{  responsive_grid_layout(
+            properties={
+                items: [
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground,
+                div_playground
+                ]
+            }
+        )
+    }}
+{% endset %}
+{{ format(example) }}
+
+
+<br><br>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% macro responsive_grid_layout(properties={}, modifier={}) -%}
+<div class="fd-responsive-grid-layout{{ modifier.block | modifier('responsive-grid-layout') }}">
+    {% for item in properties.items -%}
+        {{ item | trim | indent(4, true) }}
+    {%- endfor -%}
+</div>
+{%- endmacro %}
