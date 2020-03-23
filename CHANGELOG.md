@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0-rc.29"></a>
+# [0.8.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.28...v0.8.0-rc.29) (2020-03-23)
+
+
+### Bug Fixes
+
+* update the line-height of the Object Status ([#795](https://github.com/SAP/fundamental-styles/issues/795)) ([e2514ea](https://github.com/SAP/fundamental-styles/commit/e2514ea))
+
+
+
 <a name="0.8.0-rc.28"></a>
 # [0.8.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.27...v0.8.0-rc.28) (2020-03-19)
 
