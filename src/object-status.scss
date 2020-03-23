@@ -111,17 +111,16 @@ $color-accents: (
   font-family: $fd-object-status-text-font-family;
   font-size: $fd-object-status-text-font-size;
   color: $fd-object-status-text-neutral;
-  display: inline-block;
   max-width: 100%;
   word-break: break-word;
-  line-height: 1.4;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
 
   &::before {
     font-size: $fd-object-status-icon-font-size;
     padding-right: $fd-object-status-icon-padding;
     color: $fd-object-status-icon-neutral;
-    position: relative;
-    top: 0.125rem;
   }
 
   &:visited,
@@ -138,6 +137,7 @@ $color-accents: (
 
   // ICON ONLY MODE
   &:empty {
+    justify-content: center;
     padding-right: 0;
     padding-left: 0;
 
@@ -163,8 +163,14 @@ $color-accents: (
 
   // CLICKABLE OBJECT STATUS
   &--link {
+    display: inline-block;
     text-decoration: none;
     cursor: pointer;
+
+    &::before {
+      position: relative;
+      top: 0.125rem;
+    }
 
     &:hover {
       text-decoration: underline;
@@ -236,7 +242,6 @@ $color-accents: (
     &::before {
       font-size: $fd-object-status-inverted-icon-font-size;
       padding-right: $fd-object-status-inverted-icon-spacing;
-      top: 0.0625rem;
     }
 
     @include fd-rtl() {
@@ -253,11 +258,6 @@ $color-accents: (
       min-width: $fd-object-status-inverted-min-width;
       max-width: 100%;
       padding: $fd-object-status-inverted-padding-empty;
-      text-align: center;
-
-      &::before {
-        top: 0;
-      }
     }
 
     // TEXT AND BACKGROUND COLOR FOR INVERTED OBJECT STATUS STATES
@@ -307,17 +307,20 @@ $color-accents: (
         height: $fd-object-status-min-height-large-inverted-empty;
         min-width: $fd-object-status-min-width-large-inverted-empty;
         padding: $fd-object-status-padding-large-inverted-empty;
-
-        &::before {
-          top: -0.125rem;
-        }
       }
     }
 
     // CLICKABLE INVERTED OBJECT STATUS
     &.#{$block}--link {
       text-decoration: none;
+      display: inline-flex;
+      align-items: center;
       cursor: pointer;
+
+      &::before {
+        position: initial;
+        top: initial;
+      }
 
       &:hover,
       &:active,

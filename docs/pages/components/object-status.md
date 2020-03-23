@@ -44,8 +44,8 @@ Object Status can display the semantic status of an object: negative (class: `fd
 <span class="fd-object-status fd-object-status--negative">Negative</span>
 <span class="fd-object-status fd-object-status--critical">Critical</span>
 <span class="fd-object-status fd-object-status--positive">Positive</span>
-<span class="fd-object-status fd-object-status--informative">informative</span>
-<span class="fd-object-status">Default</span>
+<span class="fd-object-status fd-object-status--informative">Informative</span>
+<span class="fd-object-status">Neutral</span>
 {% endcapture %}
 {% include display-component.html component=badge %}
 
@@ -57,7 +57,7 @@ Object Status can display the semantic status of an object: negative (class: `fd
 <span class="fd-object-status fd-object-status--critical sap-icon--status-critical">Critical</span>
 <span class="fd-object-status fd-object-status--positive sap-icon--status-positive">Positive</span>
 <span class="fd-object-status fd-object-status--informative sap-icon--hint">Informative</span>
-<span class="fd-object-status sap-icon--to-be-reviewed">Default</span>
+<span class="fd-object-status sap-icon--to-be-reviewed">Neutral</span>
 
 <br><br>
 
@@ -67,7 +67,7 @@ Object Status can display the semantic status of an object: negative (class: `fd
     <span class="fd-object-status fd-object-status--critical sap-icon--status-critical">Critical</span>
     <span class="fd-object-status fd-object-status--positive sap-icon--status-positive">Positive</span>
     <span class="fd-object-status fd-object-status--informative sap-icon--hint">Informative</span>
-    <span class="fd-object-status sap-icon--to-be-reviewed">Default</span>
+    <span class="fd-object-status sap-icon--to-be-reviewed">Neutral</span>
 </div>
 {% endcapture %}
 {% include display-component.html component=badge %}
@@ -94,7 +94,7 @@ If the object status is used as a link, a hover effect is shown on non-touch dev
 If the object status is shown using a combination of icon and text, there is no hover effect for the icon.
 If Object Status has to be clicked/tabbed by the user add the `fd-object-status--link` modifier class. 
 {% capture badge %}
-<a href="#" class="fd-object-status fd-object-status--link">Default</a>
+<a href="#" class="fd-object-status fd-object-status--link">Neutral</a>
 <a href="#" class="fd-object-status fd-object-status--negative fd-object-status--link">Negative</a>
 <a href="#" class="fd-object-status fd-object-status--positive fd-object-status--link">Positive</a>
 <span role="button" class="fd-object-status fd-object-status--critical fd-object-status--link sap-icon--status-critical">Critical</span>
@@ -128,7 +128,7 @@ Inverted Object Status is achieved by adding the `fd-object-status--inverted` mo
 
 <br><br>
 
-<span class="fd-object-status fd-object-status--inverted">Inverted Default</span>
+<span class="fd-object-status fd-object-status--inverted">Inverted Neutral</span>
 <span class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"></span>
 <span class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative">Negative</span>
 <span class="fd-object-status fd-object-status--inverted fd-object-status--critical sap-icon--status-critical">Critical</span>
@@ -158,7 +158,7 @@ Inverted Object Status is achieved by adding the `fd-object-status--inverted` mo
 
 <br><br>
 
-<span class="fd-object-status fd-object-status--inverted">Inverted Default</span>
+<span class="fd-object-status fd-object-status--inverted">Inverted Neutral</span>
 <span class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"></span>
 <span class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative">Negative</span>
 <span class="fd-object-status fd-object-status--inverted fd-object-status--critical sap-icon--status-critical">Critical</span>
@@ -211,7 +211,7 @@ For Object Status in Large Design use the `fd-object-status--large` modifier cla
 <span class="fd-object-status fd-object-status--large fd-object-status--critical sap-icon--status-critical">Critical</span>
 <span class="fd-object-status fd-object-status--large fd-object-status--positive sap-icon--status-positive">Positive</span>
 <span class="fd-object-status fd-object-status--large fd-object-status--informative sap-icon--hint">Informative</span>
-<span class="fd-object-status fd-object-status--large sap-icon--to-be-reviewed">Default</span>
+<span class="fd-object-status fd-object-status--large sap-icon--to-be-reviewed">Neutral</span>
 
 <br><br>
 
@@ -232,7 +232,7 @@ For Object Status in Large Design use the `fd-object-status--large` modifier cla
 <span class="fd-object-status fd-object-status--large fd-object-status--inverted sap-icon--to-be-reviewed"></span>
 
 <br><br>
-<span class="fd-object-status fd-object-status--large fd-object-status--inverted">Inverted Default</span>
+<span class="fd-object-status fd-object-status--large fd-object-status--inverted">Inverted Neutral</span>
 <span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--negative sap-icon--status-negative">Negative</span>
 <span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--critical sap-icon--status-critical">Critical</span>
 <span class="fd-object-status fd-object-status--large fd-object-status--inverted fd-object-status--positive sap-icon--status-positive">Positive</span>
