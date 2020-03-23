@@ -37,6 +37,7 @@ $block: #{$fd-namespace}-time;
     align-items: center;
     justify-content: center;
     height: 100%;
+    flex: 1;
   }
 
   &__item {
@@ -88,6 +89,10 @@ $block: #{$fd-namespace}-time;
         // lighten(@sapUiListActiveBackground, 3);
         background-color: var(--sapList_Active_Background);
       }
+    }
+
+    &--hidden {
+      visibility: hidden;
     }
   }
 
