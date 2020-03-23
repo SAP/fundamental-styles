@@ -43,7 +43,7 @@
   "license": "Apache-2.0",
   "homepage": "https://sap.github.io/fundamental-styles/",
   "devDependencies": {
-    "@sap-theming/theming-base-content": "~11.1.17",
+    "@sap-theming/theming-base-content": "~11.1.18",
     "backstopjs": "3.9.2",
     "browser-sync": "^2.26.7",
     "clean-css-cli": "^4.3.0",
