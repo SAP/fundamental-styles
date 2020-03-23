@@ -43,6 +43,7 @@ $block: #{$fd-namespace}-time;
   &__item {
     @include fd-reset();
 
+    cursor: default;
     display: flex;
     align-items: center;
     justify-content: center;
