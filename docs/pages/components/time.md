@@ -54,19 +54,26 @@ In those examples it's hour or meridian. The rest should be marked as collapsed
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
             <div class="fd-time__wrapper fd-time__wrapper--active">
                 <ul class="fd-time__list">
-                    <span class="fd-time__item">01</span>
-                    <span class="fd-time__item">02</span>
-                    <span class="fd-time__item">03</span>
-                    <span class="fd-time__item">
+                    <li class="fd-time__item">01</li>
+                    <li class="fd-time__item">02</li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">03</span>
+                    </li>
+                    <li class="fd-time__item">
                         <div class="fd-time__current-indicator"></div>
-                        04
-                    </span>
-                    <span class="fd-time__item">05</span>
-                    <span class="fd-time__item">06</span>
-                    <span class="fd-time__item">07</span>
-                    <span class="fd-time__item">08</span>
-                    <span class="fd-time__item">09</span>
-                    <span class="fd-time__item">10</span>
+                        <span class="fd-time__unit">
+                            04
+                        </span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">05</span>
+                    </li>
+                    <li class="fd-time__item">06</li>
+                    <li class="fd-time__item">07</li>
+                    <li class="fd-time__item">08</li>
+                    <li class="fd-time__item">09</li>
+                    <li class="fd-time__item">10</li>
+                    <li class="fd-time__item">11</li>
                 </ul>
             </div>
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
@@ -130,13 +137,17 @@ In those examples it's hour or meridian. The rest should be marked as collapsed
         <div class="fd-time__col fd-time__col--period">
             <label class="fd-time__slider-label fd-form-label">AM/PM</label>
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Change Meridian"></button>
-            <div class="fd-time__wrapper fd-time__wrapper--meridian">
-                <span class="fd-time__item fd-time__item--hidden">AM</span>
-                <span class="fd-time__item">
-                    PM
-                    <div class="fd-time__current-indicator"></div>
-                </span>
-                <span class="fd-time__item">AM</span>
+            <div class="fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian">
+                <div class="fd-time__list" style="height: 9rem;">
+                    <ul class="fd-time__list" style="height: 6rem;">
+                        <span class="fd-time__item fd-time__item--hidden">PM</span>
+                        <span class="fd-time__item">
+                            PM
+                            <div class="fd-time__current-indicator"></div>
+                        </span>
+                        <span class="fd-time__item">AM</span>
+                    </ul>
+                </div>
             </div>
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Change Meridian"></button>
         </div>

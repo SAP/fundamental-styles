@@ -68,12 +68,12 @@ $block: #{$fd-namespace}-time;
     @include fd-reset();
 
     cursor: default;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 3rem;
     height: $fd-time-item-height;
     min-height: $fd-time-item-height;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: var(--sapButton_BorderCornerRadius);
     // color: var(--sapTextColor);
     // font-size: var(--sapFontSize);
@@ -122,8 +122,18 @@ $block: #{$fd-namespace}-time;
     }
   }
 
+  &__unit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
   &__list {
     @include fd-reset();
+    @include fd-remove-scrollbar();
 
     overflow: auto;
   }
