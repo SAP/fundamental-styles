@@ -46,14 +46,22 @@ $block: #{$fd-namespace}-time;
     @include fd-reset();
 
     overflow: hidden;
-    max-height: $fd-time-wrapper-height;
-    height: $fd-time-wrapper-height;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
+
+    &--active {
+      max-height: $fd-time-wrapper-height;
+      height: $fd-time-wrapper-height;
+      justify-content: initial;
+    }
+
+    &--meridian {
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -114,6 +122,12 @@ $block: #{$fd-namespace}-time;
     }
   }
 
+  &__list {
+    @include fd-reset();
+
+    overflow: auto;
+  }
+
   &__slider-label {
     @include fd-reset();
 
@@ -147,8 +161,15 @@ $block: #{$fd-namespace}-time;
     }
 
     .#{$block}__wrapper {
-      max-height: $fd-time-wrapper-compact-height;
-      height: $fd-time-wrapper-compact-height;
+      &.#{$block}__wrapper--active {
+        max-height: $fd-time-wrapper-compact-height;
+        height: $fd-time-wrapper-compact-height;
+        justify-content: initial;
+      }
+
+      &.#{$block}__wrapper--meridian {
+        justify-content: center;
+      }
     }
   }
 }
