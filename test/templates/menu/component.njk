@@ -28,13 +28,11 @@
       {%- endif -%}
       <span class="fd-menu__title">{{ item.label }}</span>
       {%- if properties.addon_after -%}
-        {%- if item.secondaryIcon -%}
           {%- if item.submenu -%}
-            <span class="fd-menu__addon-after fd-menu__addon-after--submenu">></span>
-          {%- else %}
-          <span class="fd-menu__addon-after">O</span>
+            <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
+          {%- elseif item.secondaryIcon%}
+            <span class="fd-menu__addon-after">O</span>
           {%- endif -%}
-        {%- endif -%}
       {%- endif -%}
     </a>
       {%- if item.submenu -%}

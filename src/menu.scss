@@ -142,6 +142,24 @@ $block: #{$fd-namespace}-menu;
     }
   }
 
+  @mixin selected-menu() {
+    .#{$block}__title {
+      color: $fd-menu-item-color;
+    }
+
+    background-color: $fd-menu-item-background-color--selected;
+    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+
+    .#{$block}__addon-before,
+    .#{$block}__addon-after {
+      color: $fd-menu-primary-icon-color;
+    }
+
+    @include fd-hover() {
+      background-color: $fd-menu-item-background-color--selected-hover;
+    }
+  }
+
   &__separator {
     @include fd-reset();
 
@@ -155,6 +173,7 @@ $block: #{$fd-namespace}-menu;
     @include action-cursor();
 
     background-color: $fd-menu-item-background-color;
+    position: relative;   // so that sub-menus align relatively to parent menu item
   }
 
   &__link {
@@ -194,21 +213,7 @@ $block: #{$fd-namespace}-menu;
     }
 
     @include fd-selected() {
-      .#{$block}__title {
-        color: $fd-menu-item-color;
-      }
-
-      background-color: $fd-menu-item-background-color--selected;
-      border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
-
-      .#{$block}__addon-before,
-      .#{$block}__addon-after {
-        color: $fd-menu-primary-icon-color;
-      }
-
-      @include fd-hover() {
-        background-color: $fd-menu-item-background-color--selected-hover;
-      }
+      @include selected-menu();
     }
 
     &.is-expanded,
@@ -243,6 +248,17 @@ $block: #{$fd-namespace}-menu;
       text-decoration: none;
 
       @include fd-ellipsis();
+    }
+
+    &.has-child {
+      @include selected-menu();
+
+      &.is-expanded,
+      &[aria-expanded="true"] {
+        @include fd-selected() {
+          @include selected-menu();
+        }
+      }
     }
   }
 
@@ -312,6 +328,12 @@ $block: #{$fd-namespace}-menu;
 
     &--submenu {
       font-size: var(--sapFontSmallSize);
+      // for submenu modifier, we add the right(and left for rtl) arrow
+      @include fd-icon("navigation-right-arrow","s");
+
+      @include fd-rtl() {
+        @include fd-icon("navigation-left-arrow","s");
+      }
     }
   }
 }

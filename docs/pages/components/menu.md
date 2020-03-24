@@ -92,57 +92,36 @@ Combobox Desktop Compact Mode
 ## Menu - Mobile Cozy Mode
 
 The basic stucture of a menu in mobile where it opens as a dialog. Use class `fd-menu--mobile` on menu container level.
+Example shows the parent menu's item in active state to simulate a pressed/touched event. 
 
 {% capture default-menuwgroup %}
 
 <div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
-    <div class="fd-dialog__content">
+    <div class="fd-dialog__content fd-dialog__content--mobile">
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
                     <h3 class="fd-dialog__title">
-                        Area 51
+                        Example Submenu
                     </h3>
                 </div>
             </div>
         </header>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
-             <nav class="fd-menu fd-menu--mobile">
+             <nav class="fd-menu fd-menu--mobile" aria-hidden="true" id="parent-menu">
                 <ul class="fd-menu__list">
                     <li class="fd-menu__item">
                         <a class="fd-menu__link" href="#">
                             <span class="fd-menu__addon-before sap-icon--grid"></span>
                             <span class="fd-menu__title">Option 1</span>
-                            <span class="fd-menu__addon-after fd-menu__addon-after--submenu sap-icon--navigation-right-arrow"></span> 
+                            <span class="fd-menu__addon-after sap-icon--wrench"></span> 
                         </a>
-                        <ul class="fd-menu__sublist" id="EX100M20" aria-hidden="true">
-                            <li class="fd-menu__item">
-                                <a class="fd-menu__link" href="#">
-                                    <span class="fd-menu__title">Sub-option 1</span>
-                                </a>                    
-                            </li>
-                            <li class="fd-menu__item">                    
-                                <a class="fd-menu__link" href="#">
-                                    <span class="fd-menu__title">Sub-option 2</span>
-                                </a>
-                            </li>
-                            <li class="fd-menu__item">                    
-                                <a class="fd-menu__link" href="#">
-                                    <span class="fd-menu__title">Sub-option 3</span>
-                                </a>
-                            </li>
-                            <li class="fd-menu__item">                    
-                                <a class="fd-menu__link" href="#">
-                                    <span class="fd-menu__title">Sub-option 4</span>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="fd-menu__item">
-                        <a class="fd-menu__link" href="#">
+                        <a class="fd-menu__link is-active" href="#">
                             <span class="fd-menu__addon-before sap-icon--accept"></span>
                             <span class="fd-menu__title">Option 2</span>
-                            <span class="fd-menu__addon-after sap-icon--wrench"></span>
+                            <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
                         </a>
                     </li>
                     <li class="fd-menu__item">
@@ -171,6 +150,62 @@ The basic stucture of a menu in mobile where it opens as a dialog. Use class `fd
         </footer>
     </div>
 </div>
+
+<br />
+<br />
+<h4> Submenu appears in its own fullscreen dialog in mobile devices. The device's back button takes one back to the parent menu fullscreen dialog.
+</h4>
+<br />
+<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
+    <div class="fd-dialog__content fd-dialog__content--mobile">
+        <header class="fd-dialog__header fd-bar fd-bar--header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+            </div>
+            <div class="fd-bar__element">
+                    <h3 class="fd-dialog__title">
+                        Option 2
+                    </h3>
+                </div>
+            </div>
+        </header>
+        <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
+             <nav class="fd-menu fd-menu--mobile">
+                <ul class="fd-menu__sublist" style="position:relative; left:0; margin:0;">
+                            <li class="fd-menu__item">
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Sub-option 1</span>
+                                </a>                    
+                            </li>
+                            <li class="fd-menu__item">                    
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Sub-option 2</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item">                    
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Sub-option 3</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item">                    
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Sub-option 4</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+        </div>
+       <footer class="fd-dialog__footer fd-bar fd-bar--cosy fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--light fd-dialog__decisive-button">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
 {% endcapture %}
 
 {% include display-component.html component=default-menuwgroup %}
@@ -311,7 +346,8 @@ Wrap these the same way `fd-menu__title` is wrapped, inside `fd-menu__link` and 
 
 Menu with an additional submenu that can be used for items that can be further grouped under a level but not necessarily visible to user always.
 For a submenu, do the following:
-- Specify `fd-menu__link` class normally like other items.
+- Specify `fd-menu__link` class normally like other items. Use `has-child` class to apply styles for parent containing the submenu.
+- Also specify class `fd-menu__addon-after--submenu` for default right navigation arrow icon. If you want a custom icon, leave out this class and give your custom SAP icon name instead.
 - After the end of the `fd-menu__link` container, use `fd-menu__sublist` class in its own `<ul>` 
 - Follow the same template for submenu as you would for a normal menu. The same `fd-menu__item` and `fd-menu__link` works for the subitems too.
 
@@ -326,9 +362,9 @@ For a submenu, do the following:
         </li>
         <li class="fd-menu__item">
         <!-- For submenu, have the parent menu item in its own span so that its states do not override the submenu states -->
-            <a class="fd-menu__link is-selected" href="#" aria-controls="EX100M2" aria-haspopup="true">
+            <a class="fd-menu__link has-child" href="#" aria-controls="EX100M2" aria-haspopup="true">
                 <span class="fd-menu__title">Option 2 with submenu</span>
-                <span class="fd-menu__addon-after fd-menu__addon-after--submenu sap-icon--navigation-right-arrow"></span> 
+                <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span> 
             </a>       
             <ul class="fd-menu__sublist" id="EX100M2" aria-hidden="true">
                 <li class="fd-menu__item">
