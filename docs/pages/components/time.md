@@ -44,23 +44,32 @@ These are classes used to describe slider items.
 
 
 ## Default Cozy Mode
-Default cozy mode implemented mostly to be used mobile devices. 
+Default cozy mode implemented mostly to be used mobile devices. There should be at most 1 active column. 
+In those examples it's hour or meridian. The rest should be marked as collapsed
 {% capture default-time %}
 <div class="docs-time-wrapper">
     <div class="fd-time">
         <div class="fd-time__col">
             <label class="fd-time__slider-label fd-form-label">Hrs</label>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
             <div class="fd-time__wrapper">
-                <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
-                <span class="fd-time__item">01</span>
-                <span class="fd-time__item">02</span>
-                <span class="fd-time__item">03</span>
-                <span class="fd-time__item fd-time__item--current">04</span>
-                <span class="fd-time__item">05</span>
-                <span class="fd-time__item">06</span>
-                <span class="fd-time__item">07</span>
-                <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+                <ul>
+                    <span class="fd-time__item">01</span>
+                    <span class="fd-time__item">02</span>
+                    <span class="fd-time__item">03</span>
+                    <span class="fd-time__item">
+                        <div class="fd-time__current-indicator"></div>
+                        04
+                    </span>
+                    <span class="fd-time__item">05</span>
+                    <span class="fd-time__item">06</span>
+                    <span class="fd-time__item">07</span>
+                    <span class="fd-time__item">08</span>
+                    <span class="fd-time__item">09</span>
+                    <span class="fd-time__item">10</span>
+                </ul>
             </div>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
         </div>
         <div class="fd-time__col">
             <label class="fd-time__slider-label fd-form-label">Min</label>
@@ -73,8 +82,8 @@ Default cozy mode implemented mostly to be used mobile devices.
     <div class="fd-time">
         <div class="fd-time__col">
             <label class="fd-time__slider-label fd-form-label">Hrs</label>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
             <div class="fd-time__wrapper">
-                <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
                 <span class="fd-time__item">01</span>
                 <span class="fd-time__item">02</span>
                 <span class="fd-time__item">03</span>
@@ -82,8 +91,8 @@ Default cozy mode implemented mostly to be used mobile devices.
                 <span class="fd-time__item">05</span>
                 <span class="fd-time__item">06</span>
                 <span class="fd-time__item">07</span>
-                <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
             </div>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
         </div>                    
         <div class="fd-time__col">
             <label class="fd-time__slider-label fd-form-label">Min</label>

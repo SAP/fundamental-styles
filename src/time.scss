@@ -8,7 +8,9 @@ $block: #{$fd-namespace}-time;
   @include fd-reset();
 
   $fd-time-item-height: 2.875rem;
+  $fd-time-wrapper-height: 7 * $fd-time-item-height;
   $fd-time-item-compact-height: 2rem;
+  $fd-time-wrapper-compact-height: 7 * $fd-time-item-compact-height;
   $fd-time-dropdown-padding: 1rem;
   $fd-time-dropdown-compact-padding: 0.5rem;
 
@@ -29,15 +31,29 @@ $block: #{$fd-namespace}-time;
     }
   }
 
+  &__current-indicator {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    width: 3rem;
+    height: $fd-time-item-height;
+    border: 0.0625rem solid var(--sapList_SelectionBorderColor);
+    border-radius: var(--sapButton_BorderCornerRadius);
+  }
+
   &__wrapper {
     @include fd-reset();
 
+    overflow: hidden;
+    max-height: $fd-time-wrapper-height;
+    height: $fd-time-wrapper-height;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    flex: 1;
+    flex: 1 0 auto;
   }
 
   &__item {
@@ -49,6 +65,7 @@ $block: #{$fd-namespace}-time;
     justify-content: center;
     width: 3rem;
     height: $fd-time-item-height;
+    min-height: $fd-time-item-height;
     border-radius: var(--sapButton_BorderCornerRadius);
     // color: var(--sapTextColor);
     // font-size: var(--sapFontSize);
@@ -117,6 +134,7 @@ $block: #{$fd-namespace}-time;
 
     .#{$block}__item {
       height: $fd-time-item-height;
+      min-height: $fd-time-item-height;
     }
   }
 
@@ -125,6 +143,12 @@ $block: #{$fd-namespace}-time;
 
     .#{$block}__item {
       height: $fd-time-item-compact-height;
+      min-height: $fd-time-item-compact-height;
+    }
+
+    .#{$block}__wrapper {
+      max-height: $fd-time-wrapper-compact-height;
+      height: $fd-time-wrapper-compact-height;
     }
   }
 }
