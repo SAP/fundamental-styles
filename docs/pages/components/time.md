@@ -519,3 +519,163 @@ In those examples it's hour or meridian. The rest should be marked as collapsed
 {% endcapture %}
 
 {% include display-component.html component=compact-time %}
+
+## Scrollable Mode
+
+
+{% capture scrollable-time %}
+<div class="docs-time-wrapper">
+    <div class="fd-time fd-time--scrollable">
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label fd-form-label">Hrs</label>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+            <div class="fd-time__wrapper fd-time__wrapper--active">
+                <ul class="fd-time__list">
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">01</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">02</span>                    
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">03</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <div class="fd-time__current-indicator"></div>
+                        <span class="fd-time__unit">
+                            04
+                        </span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">05</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">06</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">07</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">08</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">09</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">10</span>
+                    </li>
+                </ul>
+            </div>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label fd-form-label">Min</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">25</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="fd-time fd-time--scrollable">
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label fd-form-label">Hrs</label>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+            <div class="fd-time__wrapper fd-time__wrapper--active">
+               <ul class="fd-time__list">
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">01</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">02</span>                    
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">03</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <div class="fd-time__current-indicator"></div>
+                       <span class="fd-time__unit">
+                           04
+                       </span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">05</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">06</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">07</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">08</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">09</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">10</span>
+                   </li>
+               </ul>
+            </div>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label fd-form-label">Min</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">25</span>
+            </div>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label fd-form-label">Sec</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">10</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="fd-time fd-time--scrollable">
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label fd-form-label">Hrs</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">04</span>
+            </div>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label fd-form-label">Min</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">25</span>
+            </div>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label fd-form-label">Sec</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">10</span>
+            </div>
+        </div>
+        <div class="fd-time__col fd-time__col--period">
+            <label class="fd-time__slider-label fd-form-label">AM/PM</label>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Change Meridian"></button>
+            <div class="fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian">
+                    <ul class="fd-time__list">
+                        <span class="fd-time__item">
+                            <span class="fd-time__unit">
+                                AM
+                            </span>
+                            <div class="fd-time__current-indicator"></div>
+                        </span>
+                        <span class="fd-time__item">
+                            <span class="fd-time__unit">
+                                PM
+                            </span>
+                        </span>
+                    </ul>
+                </div>
+                <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Change Meridian"></button>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endcapture %}
+
+{% include display-component.html component=scrollable-time %}

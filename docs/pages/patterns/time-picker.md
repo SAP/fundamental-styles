@@ -27,46 +27,60 @@ This component mostly relies on the CSS of other components and has no CSS of it
         </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="rKLOR811">
-        <div class="fd-time">
+        <div class="fd-time fd-time--scrollable">
             <div class="fd-time__col">
                 <label class="fd-time__slider-label fd-form-label">Hrs</label>
                 <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
-                <div class="fd-time__wrapper">
-                    <span class="fd-time__item">01</span>
-                    <span class="fd-time__item">02</span>
-                    <span class="fd-time__item">03</span>
-                    <span class="fd-time__item fd-time__item--current">04</span>
-                    <span class="fd-time__item">05</span>
-                    <span class="fd-time__item">06</span>
-                    <span class="fd-time__item">07</span>
+                <div class="fd-time__wrapper fd-time__wrapper--active">
+                   <ul class="fd-time__list">
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">01</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">02</span>                    
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">03</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <div class="fd-time__current-indicator"></div>
+                           <span class="fd-time__unit">
+                               04
+                           </span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">05</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">06</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">07</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">08</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">09</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">10</span>
+                       </li>
+                   </ul>
                 </div>
                 <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
             </div>
             <div class="fd-time__col">
                 <label class="fd-time__slider-label fd-form-label">Min</label>
-                <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase minutes"></button>
                 <div class="fd-time__wrapper">
                     <span class="fd-time__item fd-time__item--collapsed">25</span>
                 </div>
-                <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease minutes"></button>
             </div>
             <div class="fd-time__col">
                 <label class="fd-time__slider-label fd-form-label">Sec</label>
-                <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase seconds"></button>
                 <div class="fd-time__wrapper">
                     <span class="fd-time__item fd-time__item--collapsed">10</span>
                 </div>
-                <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease seconds"></button>
-            </div>
-            <div class="fd-time__col fd-time__col--period">
-                <label class="fd-time__slider-label fd-form-label">AM/PM</label>
-                <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow"></button>
-                <div class="fd-time__wrapper">
-                    <span class="fd-time__item fd-time__item--hidden">AM</span>
-                    <span class="fd-time__item fd-time__item--current">PM</span>
-                    <span class="fd-time__item">AM</span>
-                </div>
-                <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow"></button>
             </div>
         </div>
        <div class="fd-popover__body-footer">
@@ -102,21 +116,49 @@ This component mostly relies on the CSS of other components and has no CSS of it
         </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="rKLHJ5311">
-        <div class="fd-time fd-time--tablet">
+        <div class="fd-time fd-time--scrollable fd-time--tablet">
             <div class="fd-time__col">
                 <label class="fd-time__slider-label fd-form-label">Hrs</label>
-                <div class="fd-time__wrapper">
-                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
-                    <span class="fd-time__item">01</span>
-                    <span class="fd-time__item">02</span>
-                    <span class="fd-time__item">03</span>
-                    <span class="fd-time__item fd-time__item--current">04</span>
-                    <span class="fd-time__item">05</span>
-                    <span class="fd-time__item">06</span>
-                    <span class="fd-time__item">07</span>
-                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+                <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+                <div class="fd-time__wrapper fd-time__wrapper--active">
+                   <ul class="fd-time__list">
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">01</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">02</span>                    
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">03</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <div class="fd-time__current-indicator"></div>
+                           <span class="fd-time__unit">
+                               04
+                           </span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">05</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">06</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">07</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">08</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">09</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">10</span>
+                       </li>
+                   </ul>
                 </div>
-            </div>                    
+                <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+            </div>
             <div class="fd-time__col">
                 <label class="fd-time__slider-label fd-form-label">Min</label>
                 <div class="fd-time__wrapper">
@@ -130,9 +172,9 @@ This component mostly relies on the CSS of other components and has no CSS of it
                 </div>
             </div>
             <div class="fd-time__col">
-                <label class="fd-time__slider-label fd-form-label"></label>
-                <div class="fd-time__wrapper">
-                    <span class="fd-time__item fd-time__item--collapsed">PM</span>
+                <label class="fd-time__slider-label fd-form-label">AM/PM</label>
+                <div class="fd-time__wrapper fd-time__wrapper--meridian">
+                    <span class="fd-time__item fd-time__item--collapsed">AM</span>
                 </div>
             </div>
         </div>
@@ -168,21 +210,49 @@ This component mostly relies on the CSS of other components and has no CSS of it
         </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="rKGNR811">
-        <div class="fd-time fd-time--compact">
+        <div class="fd-time fd-time--scrollable fd-time--compact">
             <div class="fd-time__col">
                 <label class="fd-time__slider-label fd-form-label">Hrs</label>
-                <div class="fd-time__wrapper">
-                    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
-                    <span class="fd-time__item">01</span>
-                    <span class="fd-time__item">02</span>
-                    <span class="fd-time__item">03</span>
-                    <span class="fd-time__item fd-time__item--current">04</span>
-                    <span class="fd-time__item">05</span>
-                    <span class="fd-time__item">06</span>
-                    <span class="fd-time__item">07</span>
-                    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+                <button class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+                <div class="fd-time__wrapper fd-time__wrapper--active">
+                   <ul class="fd-time__list">
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">01</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">02</span>                    
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">03</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <div class="fd-time__current-indicator"></div>
+                           <span class="fd-time__unit">
+                               04
+                           </span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">05</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">06</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">07</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">08</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">09</span>
+                       </li>
+                       <li class="fd-time__item">
+                           <span class="fd-time__unit">10</span>
+                       </li>
+                   </ul>
                 </div>
-            </div>                    
+                <button class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+            </div>
             <div class="fd-time__col">
                 <label class="fd-time__slider-label fd-form-label">Min</label>
                 <div class="fd-time__wrapper">
@@ -196,9 +266,9 @@ This component mostly relies on the CSS of other components and has no CSS of it
                 </div>
             </div>
             <div class="fd-time__col">
-                <label class="fd-time__slider-label fd-form-label"></label>
-                <div class="fd-time__wrapper">
-                    <span class="fd-time__item fd-time__item--collapsed">PM</span>
+                <label class="fd-time__slider-label fd-form-label">AM/PM</label>
+                <div class="fd-time__wrapper fd-time__wrapper--meridian">
+                    <span class="fd-time__item fd-time__item--collapsed">AM</span>
                 </div>
             </div>
         </div>
