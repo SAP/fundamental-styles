@@ -7,16 +7,13 @@ $block: #{$fd-namespace}-busy-indicator;
 $fd-dots-color: var(--sapContent_IconColor);
 $fd-dots-color-contrast: var(--sapContent_ContrastIconColor);
 // default sizes
-$fd-dots-size: 0.125rem;
-$fd-dots-margin: 0 0.2rem;
+$fd-dots-size: 0.5rem;
 
 // medium sizes
-$fd-dots-size-m: 0.5rem;
-$fd-dots-margin-m: 0 0.4rem;
+$fd-dots-size-m: 1rem;
 
 // large sizes
-$fd-dots-size-l: 1rem;
-$fd-dots-margin-l: 0 0.75rem;
+$fd-dots-size-l: 2rem;
 
 .#{$block},
 .#{$block}--m,
@@ -50,7 +47,6 @@ $fd-dots-margin-l: 0 0.75rem;
   position: relative;
   width: $fd-dots-size;
   height: $fd-dots-size;
-  margin: $fd-dots-margin;
   display: inline-block;
   border-radius: 50%;
   background-color: currentColor;
@@ -75,7 +71,6 @@ $fd-dots-margin-l: 0 0.75rem;
 .#{$block}--m .#{$block}--circle-2 {
   width: $fd-dots-size-m;
   height: $fd-dots-size-m;
-  margin: $fd-dots-margin-m;
 }
 
 .#{$block}--l .#{$block}--circle-0,
@@ -83,23 +78,22 @@ $fd-dots-margin-l: 0 0.75rem;
 .#{$block}--l .#{$block}--circle-2 {
   width: $fd-dots-size-l;
   height: $fd-dots-size-l;
-  margin: $fd-dots-margin-l;
 }
 
 @keyframes grow {
   0%,
   50%,
   100% {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  25% {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-  }
-
-  25% {
-    -webkit-transform: scale(2.5);
-    -moz-transform: scale(2.5);
-    -ms-transform: scale(2.5);
-    transform: scale(2.5);
   }
 }
