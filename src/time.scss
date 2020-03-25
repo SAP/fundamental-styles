@@ -34,6 +34,7 @@ $block: #{$fd-namespace}-time;
   &__current-indicator {
     position: absolute;
     top: 50%;
+    left: 0;
     transform: translateY(-50%);
     box-sizing: border-box;
     width: 3rem;
@@ -52,6 +53,7 @@ $block: #{$fd-namespace}-time;
     align-items: center;
     justify-content: center;
     flex: 1 1 auto;
+    width: 3rem;
 
     &--active {
       max-height: $fd-time-wrapper-height;
@@ -60,7 +62,19 @@ $block: #{$fd-namespace}-time;
     }
 
     &--meridian {
-      justify-content: center;
+      .#{$block}__item {
+        &:first-child {
+          margin-top: $fd-time-item-height * 3;
+        }
+
+        &:last-child {
+          margin-bottom: $fd-time-item-height * 3;
+        }
+      }
+
+      .#{$block}__list {
+        height: $fd-time-wrapper-height;
+      }
     }
   }
 
@@ -135,7 +149,7 @@ $block: #{$fd-namespace}-time;
     @include fd-reset();
     @include fd-remove-scrollbar();
 
-    overflow: auto;
+    overflow: hidden;
   }
 
   &__slider-label {
@@ -171,15 +185,36 @@ $block: #{$fd-namespace}-time;
     }
 
     .#{$block}__wrapper {
+      .#{$block}__current-indicator {
+        height: $fd-time-item-compact-height;
+      }
+
       &.#{$block}__wrapper--active {
         max-height: $fd-time-wrapper-compact-height;
         height: $fd-time-wrapper-compact-height;
-        justify-content: initial;
       }
 
       &.#{$block}__wrapper--meridian {
-        justify-content: center;
+        .#{$block}__item {
+          &:first-child {
+            margin-top: $fd-time-item-compact-height * 3;
+          }
+
+          &:last-child {
+            margin-bottom: $fd-time-item-compact-height * 3;
+          }
+        }
+
+        .#{$block}__list {
+          height: $fd-time-wrapper-compact-height;
+        }
       }
+    }
+  }
+
+  &--scrollable {
+    .#{$block}__list {
+      overflow: auto;
     }
   }
 }
