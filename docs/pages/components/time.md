@@ -25,17 +25,29 @@ These are classes used to describe slider items.
         <tr>
             <td><code style="white-space: nowrap;">.fd-time__item</code></td>
             <td>Class used to style default time slider item</td>
-            <td><span class="fd-time__item">10</span></td>
+            <td>
+                <li class="fd-time__item">
+                    <span class="fd-time__unit">01</span>
+                </li>
+            </td>
         </tr>
         <tr>
             <td><code style="white-space: nowrap;">.fd-time__item--collapsed</code></td>
             <td>Class used to style collapsed time slider item</td>
-            <td><span class="fd-time__item fd-time__item--collapsed">10</span></td>
+            <td>
+                <li class="fd-time__item fd-time__item--collapsed">
+                    <span class="fd-time__unit">01</span>
+                </li>
+            </td>
         </tr>
         <tr>
             <td><code style="white-space: nowrap;">.fd-time__item--current</code></td>
             <td>Class used to style current time slider item</td>
-            <td><span class="fd-time__item fd-time__item--current">10</span></td>
+            <td>
+                <li class="fd-time__item fd-time__item--current">
+                    <span class="fd-time__unit">01</span>
+                </li>
+            </td>
         </tr>
     </table>
 </div>
@@ -44,8 +56,10 @@ These are classes used to describe slider items.
 
 
 ## Default Cozy Mode
-Default cozy mode implemented mostly to be used mobile devices. There should be at most 1 active column. 
-In those examples it's hour or meridian. The rest of items should be marked as collapsed `fd-time__item--collapsed`.
+Default cozy mode implemented mostly to be used mobile devices. There should be at most 1 active wrapper, marked with 
+`fd-time__wrapper--active` modifier. In those examples it's hour or meridian. The rest of items should be marked as collapsed 
+`fd-time__item--collapsed`. Also meridian (AM/PM) wrapper has to contain `fd-time__wrapper--meridian` modifier.
+
 {% capture default-time %}
 <div class="docs-time-wrapper">
     <div class="fd-time">
@@ -179,21 +193,21 @@ In those examples it's hour or meridian. The rest of items should be marked as c
             <label class="fd-time__slider-label fd-form-label">AM/PM</label>
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Change Meridian"></button>
             <div class="fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian">
-                    <ul class="fd-time__list">
-                        <span class="fd-time__item">
-                            <span class="fd-time__unit">
-                                AM
-                            </span>
-                            <div class="fd-time__current-indicator"></div>
+                <ul class="fd-time__list">
+                    <span class="fd-time__item">
+                        <span class="fd-time__unit">
+                            AM
                         </span>
-                        <span class="fd-time__item">
-                            <span class="fd-time__unit">
-                                PM
-                            </span>
+                        <div class="fd-time__current-indicator"></div>
+                    </span>
+                    <span class="fd-time__item">
+                        <span class="fd-time__unit">
+                            PM
                         </span>
-                    </ul>
-                </div>
-                <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Change Meridian"></button>
+                    </span>
+                </ul>
+            </div>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Change Meridian"></button>
             </div>
         </div>
     </div>
@@ -260,7 +274,7 @@ Tablet Mode can be added by using `fd-time--tablet` modifier. IT provides lower 
         </div>
     </div>
     
-    <div class="fd-time">
+    <div class="fd-time fd-time--tablet">
         <div class="fd-time__col">
             <label class="fd-time__slider-label fd-form-label">Hrs</label>
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
@@ -317,7 +331,7 @@ Tablet Mode can be added by using `fd-time--tablet` modifier. IT provides lower 
         </div>
     </div>
     
-    <div class="fd-time">
+    <div class="fd-time fd-time--tablet">
         <div class="fd-time__col">
             <label class="fd-time__slider-label fd-form-label">Hrs</label>
             <div class="fd-time__wrapper">
