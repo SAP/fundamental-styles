@@ -45,7 +45,7 @@ These are classes used to describe slider items.
 
 ## Default Cozy Mode
 Default cozy mode implemented mostly to be used mobile devices. There should be at most 1 active column. 
-In those examples it's hour or meridian. The rest should be marked as collapsed
+In those examples it's hour or meridian. The rest of items should be marked as collapsed `fd-time__item--collapsed`.
 {% capture default-time %}
 <div class="docs-time-wrapper">
     <div class="fd-time">
@@ -206,6 +206,7 @@ In those examples it's hour or meridian. The rest should be marked as collapsed
 
 
 ## Tablet Mode
+Tablet Mode can be added by using `fd-time--tablet` modifier. IT provides lower padding on sides.
 {% capture tablet-time %}
 <div class="docs-time-wrapper">
     <div class="fd-time fd-time--tablet">
@@ -363,7 +364,7 @@ In those examples it's hour or meridian. The rest should be marked as collapsed
 {% include display-component.html component=tablet-time %}
 
 ## Compact Mode
-
+Compact Mode can be added, by using `fd-time--compact` modifier. It's mostly implemented, to be used on desktop devices.
 {% capture compact-time %}
 <div class="docs-time-wrapper"> 
     <div class="fd-time fd-time--compact">
@@ -521,8 +522,9 @@ In those examples it's hour or meridian. The rest should be marked as collapsed
 {% include display-component.html component=compact-time %}
 
 ## Scrollable Mode
-
-
+Scrollable Mode can be added by using `fd-time--scrollable` modifier. It provides possibility to scroll up and down on 
+active columns. So the unit can be chosen by mouse scroll or mobile tap and release. Current indicator element is vertically centered, 
+but functionality to fit it inside indicator frames should be implemented no application level.
 {% capture scrollable-time %}
 <div class="docs-time-wrapper">
     <div class="fd-time fd-time--scrollable">
