@@ -217,4 +217,15 @@ $block: #{$fd-namespace}-time;
       overflow: auto;
     }
   }
+
+  @include fd-rtl() {
+    .#{$block}__col {
+      margin-right: 0;
+      margin-left: 0.5rem;
+
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+  }
 }
