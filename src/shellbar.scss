@@ -327,6 +327,7 @@ $block: #{$fd-namespace}-shellbar;
 
     &::after {
       color: $fd-shellbar-color;
+      content: "\e287";
     }
 
     &:hover {
