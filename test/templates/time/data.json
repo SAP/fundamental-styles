@@ -1,28 +1,155 @@
 {
   "id": "time",
   "name": "Time",
+  "propertiesMinutes": {
+    "id": "",
+    "items": [
+      {
+        "label": "Hrs",
+        "values": [
+          { "item": "10" }
+        ]
+      },
+      {
+        "active": true,
+        "label": "Min",
+        "values": [
+          { "item": "1" },
+          { "item": "2" },
+          { "item": "3" },
+          { "item": "4", "current": true },
+          { "item": "5" },
+          { "item": "6" },
+          { "item": "7" },
+          { "item": "8" },
+          { "item": "9" },
+          { "item": "10" }
+        ]
+      },
+      {
+        "label": "Sec",
+        "values": [
+          { "item": "40" }
+        ]
+      },
+      {
+        "label": "AM/PM",
+        "meridian": true,
+        "values": [
+          { "item": "pm" }
+        ]
+      }
+    ]
+  },
+  "propertiesSeconds": {
+    "id": "",
+    "items": [
+      {
+        "label": "Hrs",
+        "values": [
+          { "item": "10" }
+        ]
+      },
+      {
+        "label": "Min",
+        "values": [
+          { "item": "40" }
+        ]
+      },
+      {
+        "active": true,
+        "label": "Sec",
+        "values": [
+          { "item": "1" },
+          { "item": "2" },
+          { "item": "3" },
+          { "item": "4", "current": true },
+          { "item": "5" },
+          { "item": "6" },
+          { "item": "7" },
+          { "item": "8" },
+          { "item": "9" },
+          { "item": "10" }
+        ]
+      },
+      {
+        "label": "AM/PM",
+        "meridian": true,
+        "values": [
+          { "item": "pm" }
+        ]
+      }
+    ]
+  },
   "properties": {
     "id": "",
     "items": [
       {
-        "value": "02",
-        "placeholder": "hh",
-        "label": "hours"
+        "active": true,
+        "label": "Hrs",
+        "values": [
+          { "item": "1" },
+          { "item": "2" },
+          { "item": "3" },
+          { "item": "4", "current": true },
+          { "item": "5" },
+          { "item": "6" },
+          { "item": "7" },
+          { "item": "8" },
+          { "item": "9" },
+          { "item": "10" }
+        ]
       },
       {
-        "value": "34",
-        "placeholder": "mm",
-        "label": "minutes"
+        "label": "Min",
+        "values": [
+          { "item": "10" }
+        ]
       },
       {
-        "value": "56",
-        "placeholder": "ss",
-        "label": "seconds"
+        "label": "Sec",
+        "values": [
+          { "item": "40" }
+        ]
       },
       {
-        "value": "pm",
-        "placeholder": "am",
-        "label": "period"
+        "label": "AM/PM",
+        "meridian": true,
+        "values": [
+          { "item": "pm" }
+        ]
+      }
+    ]
+  },
+  "meridianProperties": {
+    "id": "",
+    "items": [
+      {
+        "label": "Hrs",
+        "values": [
+          { "item": "5" }
+        ]
+      },
+      {
+        "label": "Min",
+        "values": [
+          { "item": "10" }
+        ]
+      },
+      {
+        "label": "Sec",
+        "values": [
+          { "item": "40" }
+        ]
+      },
+      {
+        "label": "AM/PM",
+        "meridian": true,
+        "active": true,
+        "values": [
+          { "item": "am", "current": true },
+          { "item": "pm" }
+        ]
       }
     ]
   },

@@ -11,9 +11,86 @@
 
   </p>
 
-  <h2>with values and placeholders</h2>
+  <h2>Basic with active hours</h2>
   {% set example %}
 {{ time(properties=data.properties) }}
+  {% endset %}
+
+  {{ format(example) }}
+
+  <h2>Basic with active minutes</h2>
+  {% set example %}
+{{ time(properties=data.propertiesMinutes) }}
+  {% endset %}
+
+  {{ format(example) }}
+
+  <h2>Basic with active seconds</h2>
+  {% set example %}
+{{ time(properties=data.propertiesSeconds) }}
+  {% endset %}
+
+  {{ format(example) }}
+
+  <h2>Basic with active meridian</h2>
+  {% set example %}
+{{ time(properties=data.meridianProperties) }}
+  {% endset %}
+
+  {{ format(example) }}
+
+  <h2>Compact with active hours</h2>
+  {% set example %}
+{{ time(properties=data.properties, modifier=['compact']) }}
+  {% endset %}
+
+  {{ format(example) }}
+
+  <h2>Compact with active minutes</h2>
+  {% set example %}
+{{ time(properties=data.propertiesMinutes, modifier=['compact']) }}
+  {% endset %}
+
+  {{ format(example) }}
+
+  <h2>Compact with active Seconds</h2>
+  {% set example %}
+{{ time(properties=data.propertiesSeconds, modifier=['compact']) }}
+  {% endset %}
+
+  {{ format(example) }}
+
+  <h2>Compact with active meridian</h2>
+  {% set example %}
+{{ time(properties=data.meridianProperties, modifier=['compact']) }}
+  {% endset %}
+
+  {{ format(example) }}
+
+  <h2>Tablet with active hours</h2>
+  {% set example %}
+{{ time(properties=data.properties, modifier=['tablet']) }}
+  {% endset %}
+
+  {{ format(example) }}
+
+  <h2>Tablet with active minutes</h2>
+  {% set example %}
+{{ time(properties=data.propertiesMinutes, modifier=['tablet']) }}
+  {% endset %}
+
+  {{ format(example) }}
+
+  <h2>Tablet with active Seconds</h2>
+  {% set example %}
+{{ time(properties=data.propertiesSeconds, modifier=['tablet']) }}
+  {% endset %}
+
+  {{ format(example) }}
+
+  <h2>Tablet with active meridian</h2>
+  {% set example %}
+{{ time(properties=data.meridianProperties, modifier=['tablet']) }}
   {% endset %}
 
   {{ format(example) }}
