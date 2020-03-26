@@ -89,11 +89,7 @@ $block: #{$fd-namespace}-time;
     align-items: center;
     justify-content: center;
     border-radius: var(--sapButton_BorderCornerRadius);
-    // color: var(--sapTextColor);
-    // font-size: var(--sapFontSize);
-
-    // darken(@sapUiListBackground, 2);
-    background-color: var(--sapList_Background);
+    background-color: var(--sapLegend_WorkingBackground);
     border: 0.0625rem solid var(--sapList_Background);
 
     &:hover {
@@ -101,33 +97,33 @@ $block: #{$fd-namespace}-time;
     }
 
     &:active {
-      background-color: var(--sapList_Active_Background);
+      background-color: var(--sapContent_Selected_Background);
       border-color: transparent;
-      color: var(--sapContent_ContrastTextColor);
+      color: var(--sapContent_Selected_TextColor);
     }
 
     &--current {
       border-color: var(--sapList_SelectionBorderColor);
+      background-color: var(--sapList_Background);
 
       &:hover {
         background-color: var(--sapList_Hover_Background);
       }
 
       &:active {
-        background-color: var(--sapList_Active_Background);
+        background-color: var(--sapContent_Selected_Background);
         border-color: transparent;
-        color: var(--sapContent_ContrastTextColor);
+        color: var(--sapContent_Selected_TextColor);
       }
     }
 
     &--collapsed {
-      background-color: var(--sapList_Active_Background);
+      background-color: var(--sapContent_Selected_Background);
+      color: var(--sapContent_Selected_TextColor);
       border-color: transparent;
-      color: var(--sapContent_ContrastTextColor);
 
       &:hover {
-        // lighten(@sapUiListActiveBackground, 3);
-        background-color: var(--sapList_Active_Background);
+        background-color: var(--sapContent_Selected_Hover_Background);
       }
     }
 
