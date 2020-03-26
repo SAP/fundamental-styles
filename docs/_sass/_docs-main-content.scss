@@ -11,6 +11,7 @@
 }
 .docs-content {
     padding: 40px 40px 80px 60px;
+    box-sizing: border-box;
     width: 100%;
     @include media("<=tablet") {
         padding: 10px;

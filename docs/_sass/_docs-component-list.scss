@@ -16,23 +16,6 @@ $grid-transition-delay: 100ms;
         box-sizing: border-box;
     }
 
-    // @include media("<=tablet") {
-    //     > * {
-    //         width: 100%;
-    //     }
-    // }
-    // @include media(">=tablet") {
-    //     > * {
-    //         width: 50%;
-    //     }    
-    // }
-    // @include media(">=desktop") {
-    //     > * {
-    //         width: (4/12)*100%;
-    //         padding: 1% 1rem;
-    //     }    
-    // }
-
     &--item {
         background: $grid-item-bg-color;
         position: relative;
