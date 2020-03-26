@@ -22,7 +22,7 @@ This component mostly relies on the CSS of other components and has no CSS of it
         <div class="fd-input-group">
             <input type="text" class="fd-input fd-input-group__input" id="" value="4:25:10 PM" placeholder="hh:mm:ss am/pm">
             <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--history fd-popover__control" aria-controls="rKLOR811" aria-expanded="false" aria-haspopup="true"></button>
+                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--time-entry-request fd-popover__control" aria-controls="rKLOR811" aria-expanded="false" aria-haspopup="true"></button>
             </span>
         </div>
     </div>
@@ -111,7 +111,7 @@ This component mostly relies on the CSS of other components and has no CSS of it
         <div class="fd-input-group">
             <input type="text" class="fd-input fd-input-group__input" id="" value="4:25:10 PM" placeholder="hh:mm:ss am/pm">
             <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--history fd-popover__control" aria-controls="rKLHJ5311" aria-expanded="false" aria-haspopup="true"></button>
+                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--time-entry-request fd-popover__control" aria-controls="rKLHJ5311" aria-expanded="false" aria-haspopup="true"></button>
             </span>
         </div>
     </div>
@@ -205,7 +205,7 @@ This component mostly relies on the CSS of other components and has no CSS of it
         <div class="fd-input-group">
             <input type="text" class="fd-input fd-input-group__input" id="" value="4:25:10 PM" placeholder="hh:mm:ss am/pm">
             <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--history fd-popover__control" aria-controls="rKGNR811" aria-expanded="false" aria-haspopup="true"></button>
+                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--time-entry-request fd-popover__control" aria-controls="rKGNR811" aria-expanded="false" aria-haspopup="true"></button>
             </span>
         </div>
     </div>
