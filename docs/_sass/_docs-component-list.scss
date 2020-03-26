@@ -4,27 +4,71 @@ $grid-item-bg-color: fd-color(background, 2);
 $grid-transition-delay: 100ms;
 
 .docs-component-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1px;
     border: 1px solid $gird-border-color;
     border-left: none;
     border-right: none;
     margin: 0 -40px -80px -40px;
+    display: flex;
+    flex-wrap: wrap;
 
-    @include media("<=tablet") {
-        grid-template-columns: auto;
+    > * {
+        border: 1px solid $gird-border-color;
+        box-sizing: border-box;
     }
+
+    // @include media("<=tablet") {
+    //     > * {
+    //         width: 100%;
+    //     }
+    // }
+    // @include media(">=tablet") {
+    //     > * {
+    //         width: 50%;
+    //     }    
+    // }
+    // @include media(">=desktop") {
+    //     > * {
+    //         width: (4/12)*100%;
+    //         padding: 1% 1rem;
+    //     }    
+    // }
 
     &--item {
         background: $grid-item-bg-color;
-        padding: 40px 10px;
-        display: block;
-        text-align: center;
         position: relative;
         height: 280px;
         z-index: 1;
         transition: all ease-in-out $grid-transition-delay;
+
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 1rem;
+        align-items: center;
+        justify-content: flex-end;
+
+        @include media("<=tablet") {
+            
+                width: 100%;
+            
+        }
+        @include media(">=tablet") {
+            
+                width: 50%;
+                padding: 5rem 1rem;
+
+        }
+        @include media(">=desktop") {
+            
+                width: (4/12)*100%;
+              
+        }
+
+        @include media(">=display") {
+            
+            width: (2/12)*100%;
+            padding: 5rem 1rem;
+        }
+        
 
         &:hover {
             background-color: $grid-item-bg-color;
@@ -32,6 +76,12 @@ $grid-transition-delay: 100ms;
             text-decoration: none;
             z-index: 2;
             transition: all ease-in-out $grid-transition-delay;
+        }
+
+        h3 {
+            margin-top: 0;
+            position: relative;
+            bottom: 0;
         }
     }
 
@@ -52,150 +102,347 @@ $grid-transition-delay: 100ms;
     &--img {
 
         &__action-bar {
-            width: 300px;
-            margin-top: 60px;
+            width: 95%;
+
+            @include media("<=tablet") {
+                width: 80%;
+            }
+
+            @include media(">=desktop") {
+                width: 50%;
+            }
+        }
+
+        &__bar {
+            width: 95%;
+
+            @include media("<=tablet") {
+                width: 80%;
+            }
+
+            @include media(">=desktop") {
+                width: 80%;
+            }
+        }
+
+        &__busy-indicator {
+            width: 100%;
+
+            @include media("<=tablet") {
+                width: 40%;
+            }
+
+            @include media(">=desktop") {
+                width: 40%;
+            }
         }
 
         &__message-strip {
-            width: 250px;
-            margin-top: 20px;
+            width: 70%;
+
+            @include media("<=tablet") {
+                width: 40%;
+            }
+
+            @include media(">=desktop") {
+                width: 30%;
+            }
         }
 
         &__status-indicators {
-            width: 250px;
-            margin-top: 60px;
+            width: 70%;
         }
 
 	    &__info-label {
-            width: 250px;
-            margin-top: 60px;
+            width: 70%;
         }
 
         &__button {
-            width: 150px;
-            margin-top: 40px;
+            width: 40%;
+
+            @include media("<=tablet") {
+                width: 30%;
+            }
+
+            @include media(">=desktop") {
+                width: 25%;
+            }
         }
 
         &__combobox-input {
-            margin-top: 10px;
+
+            @include media("<=tablet") {
+                width: 30%;
+            }
+
+            @include media(">=desktop") {
+                width: 45%;
+            }
         }
 
         &__contextual-menu {
-            width: 100px;
-            margin-top: 10px;
+            width: 40%;
+
+            @include media("<=tablet") {
+                width: 20%;
+            }
+
+            @include media(">=desktop") {
+                width: 25%;
+            }
+
+            @include media(">=display") {
+                width: 20%;
+            }
         }
 
         &__dropdown {
-            width: 250px;
-            margin-top: 20px;
+            width: 70%;
         }
 
         &__icons {
-            width: 250px;
-            margin-top: 70px;
+            width: 70%;
         }
 
         &__identifier {
-            width: 200px;
-            margin-top: 50px;
+            width: 65%;
+
+            @include media("<=tablet") {
+                width: 40%;
+            }
+
+            @include media(">=desktop") {
+                width: 40%;
+            }
         }
 
         &__image {
-            width: 100px;
-            margin-top: 20px;
+            width: 30%;
+
+            @include media("<=tablet") {
+                width: 15%;
+            }
+
+            @include media(">=desktop") {
+                width: 10%;
+            }
         }
 
         &__inline-help {
-            width: 250px;
-            margin-top: 30px;
+            width: 70%;
+
+            @include media("<=tablet") {
+                width: 40%;
+            }
+
+            @include media(">=desktop") {
+                width: 30%;
+            }
         }
 
         &__link {
-            width: 100px;
-            margin-top: 60px;
+            width: 55%;
+
+            @include media("<=tablet") {
+                width: 25%;
+            }
+
+            @include media(">=desktop") {
+                width: 25%;
+            }
+        }
+
+        &__list {
+            width: 75%;
+
+            @include media("<=tablet") {
+                width: 30%;
+            }
+
+            @include media(">=desktop") {
+                width: 30%;
+            }
         }
 
         &__localization-editor {
-            margin-top: 60px;
         }
 
         &__form {
-            width: 250px;
-            margin-top: 30px;
+            width: 70%;
+
+            @include media("<=tablet") {
+                width: 35%;
+            }
+
+            @include media(">=desktop") {
+                width: 25%;
+            }
         }
 
         &__input-group {
-            width: 250px;
-            margin-top: 30px;
+            width: 70%;
+
+            @include media("<=tablet") {
+                width: 40%;
+            }
+
+            @include media(">=desktop") {
+                width: 40%;
+            }
         }
 
         &__list-group {
-            width: 300px;
-            margin-top: 40px;
+            width: 90%;
         }
 
         &__loading-spinner {
-            width: 50px;
-            margin-top: 50px;
+            width: 25%;
+
+            @include media("<=tablet") {
+                width: 12%;
+            }
+
+            @include media(">=desktop") {
+                width: 12%;
+            }
+        }
+
+        &__product-switch {
+            @include media("<=tablet") {
+                width: 40%;
+            }
+
+            @include media(">=desktop") {
+                width:30%;
+            }
         }
 
         &__dialog {
-            width: 230px;
-            margin-top: 0;
+            width: 50%;
+
+            @include media("<=tablet") {
+                width: 25%;
+            }
+
+            @include media(">=desktop") {
+                width: 20%;
+            }
         }
 
         &__multi-input {
-            width: 230px;
-            margin-top: 50px;
+            width: 75%;
         }
 
         &__pagination {
-            width: 300px;
-            margin-top: 60px;
+            width: 90%;
+
+            @include media("<=tablet") {
+                width: 80%;
+            }
+
+            @include media(">=desktop") {
+                width: 80%;
+            }
         }
 
-        &__search-input {
-            margin-top: 50px;
+        &__select {
+            width: 40%;
+
+            @include media("<=tablet") {
+                width: 20%;
+            }
+
+            @include media(">=desktop") {
+                width: 20%;
+            }
         }
 
         &__side-navigation {
-            width: 100px;
-            margin-top: 0;
+            width: 30%;
+
+            @include media("<=tablet") {
+                width: 12%;
+            }
+
+            @include media(">=desktop") {
+                width: 12%;
+            }
         }
 
         &__shellbar {
-            width: 300px;
-            margin-top: 50px;
+            width: 90%;
+
+            @include media("<=tablet") {
+                width: 80%;
+            }
+
+            @include media(">=desktop") {
+                width: 80%;
+            }
         }
 
         &__switch {
-            width: 60px;
-            margin-top: 30px;
+            width: 20%;
+
+            @include media("<=tablet") {
+                width: 10%;
+            }
+
+            @include media(">=desktop") {
+                width: 10%;
+            }
         }
 
         &__table {
-            width: 300px;
-            margin-top: 0;
+            width: 90%;
+
+            @include media("<=tablet") {
+                width: 45%;
+            }
+
+            @include media(">=desktop") {
+                width: 45%;
+            }
         }
 
         &__tabs {
-            width: 300px;
-            margin-top: 60px;
+            width: 90%;
+
+            @include media("<=tablet") {
+                width: 50%;
+            }
+
+            @include media(">=desktop") {
+                width: 50%;
+            }
         }
 
         &__tile {
-            width: 300px;
-            margin-top: 40px;
+            width: 90%;
+
+            @include media("<=tablet") {
+                width: 50%;
+            }
+
+            @include media(">=desktop") {
+                width: 50%;
+            }
         }
 
         &__toolbar {
-            width: 320px;
-            margin-top: 60px;
+            width: 95%;
         }
 
         &__tree {
-            width: 300px;
-            margin-top: 0;
+            width: 90%;
+
+            @include media("<=tablet") {
+                width: 50%;
+            }
+
+            @include media(">=desktop") {
+                width: 50%;
+            }
         }
     }
 }
