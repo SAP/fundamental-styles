@@ -42,31 +42,27 @@ The Message Box follows the [Dialog]({{site.baseurl}}/components/dialog.html) st
 {% capture default-message-box %}
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--active">
     <div class="fd-message-box__content">
-        <header class="fd-message-box__header">
-            <div class="fd-bar fd-bar--header">
-                <div class="fd-bar__left">
-                    <div class="fd-bar__element">
-                        <h2 class="fd-message-box__title">Title</h2>
-                    </div>
+        <header class="fd-bar fd-bar--header fd-message-box__header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-message-box__title">Title</h2>
                 </div>
             </div>
         </header>
         <div class="fd-message-box__body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         </div>
-        <footer class="fd-message-box__footer">
-            <div class="fd-bar fd-bar--footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button class="fd-button fd-button--compact">
-                            Begin button
-                        </button>
-                    </div>
-                    <div class="fd-bar__element">
-                        <button class="fd-button fd-button--compact">
-                            End button
-                        </button>
-                    </div>
+        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
+                        Begin button
+                    </button>
+                </div>
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--transparent fd-button--compact fd-message-box__decisive-button">
+                        End button
+                    </button>
                 </div>
             </div>
         </footer>
@@ -85,29 +81,23 @@ Available options are `standard | confirmation | error | success | warning | inf
 {% capture default-message-box %}
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--active">
     <div class="fd-message-box__content">
-        <header class="fd-message-box__header">
-            <div class="fd-bar fd-bar--header">
-                <div class="fd-bar__left">
-                    <div class="fd-bar__element">
-                        <h2 class="fd-message-box__title">Standard</h2>
-                    </div>
+        <header class="fd-bar fd-bar--header fd-message-box__header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-message-box__title">Standard</h2>
                 </div>
             </div>
         </header>
         <div class="fd-message-box__body">
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            <div class="fd-message-box__more">
-                <a href="#" class="fd-link" tabindex="0">Show more</a>
-            </div>
+            <a href="#" class="fd-link fd-message-box__link" tabindex="0">Show more</a>
         </div>
-        <footer class="fd-message-box__footer">
-            <div class="fd-bar fd-bar--footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button class="fd-button fd-button--compact">
-                            Close
-                        </button>
-                    </div>
+        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
+                        Close
+                    </button>
                 </div>
             </div>
         </footer>
@@ -118,26 +108,27 @@ Available options are `standard | confirmation | error | success | warning | inf
 
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--confirmation fd-message-box--active">
     <div class="fd-message-box__content">
-        <header class="fd-message-box__header">
-            <div class="fd-bar fd-bar--header">
-                <div class="fd-bar__left">
-                    <div class="fd-bar__element">
-                        <h2 class="fd-message-box__title">Confirmation</h2>
-                    </div>
+        <header class="fd-bar fd-bar--header fd-message-box__header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-message-box__title">Confirmation</h2>
                 </div>
             </div>
         </header>
         <div class="fd-message-box__body">
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </div>
-        <footer class="fd-message-box__footer">
-            <div class="fd-bar fd-bar--footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button class="fd-button fd-button--compact">
-                            Close
-                        </button>
-                    </div>
+        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
+                        OK
+                    </button>
+                </div>
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--transparent fd-button--compact fd-message-box__decisive-button">
+                        Cancel
+                    </button>
                 </div>
             </div>
         </footer>
@@ -148,26 +139,22 @@ Available options are `standard | confirmation | error | success | warning | inf
 
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--error fd-message-box--active">
     <div class="fd-message-box__content">
-        <header class="fd-message-box__header">
-            <div class="fd-bar fd-bar--header">
-                <div class="fd-bar__left">
-                    <div class="fd-bar__element">
-                        <h2 class="fd-message-box__title">Error</h2>
-                    </div>
+        <header class="fd-bar fd-bar--header fd-message-box__header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-message-box__title">Error</h2>
                 </div>
             </div>
         </header>
         <div class="fd-message-box__body">
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <footer class="fd-message-box__footer">
-            <div class="fd-bar fd-bar--footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button class="fd-button fd-button--compact">
-                            Close
-                        </button>
-                    </div>
+        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
+                        Close
+                    </button>
                 </div>
             </div>
         </footer>
@@ -178,26 +165,22 @@ Available options are `standard | confirmation | error | success | warning | inf
 
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--success fd-message-box--active">
     <div class="fd-message-box__content">
-        <header class="fd-message-box__header">
-            <div class="fd-bar fd-bar--header">
-                <div class="fd-bar__left">
-                    <div class="fd-bar__element">
-                        <h2 class="fd-message-box__title">Success</h2>
-                    </div>
+        <header class="fd-bar fd-bar--header fd-message-box__header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-message-box__title">Success</h2>
                 </div>
             </div>
         </header>
         <div class="fd-message-box__body">
             Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et mattis erat vel aliquet in sem urna et sagittis diam in vehicula.
         </div>
-        <footer class="fd-message-box__footer">
-            <div class="fd-bar fd-bar--footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button class="fd-button fd-button--compact">
-                            Close
-                        </button>
-                    </div>
+        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
+                        Close
+                    </button>
                 </div>
             </div>
         </footer>
@@ -208,26 +191,22 @@ Available options are `standard | confirmation | error | success | warning | inf
 
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--warning fd-message-box--active">
     <div class="fd-message-box__content">
-        <header class="fd-message-box__header">
-            <div class="fd-bar fd-bar--header">
-                <div class="fd-bar__left">
-                    <div class="fd-bar__element">
-                        <h2 class="fd-message-box__title">Warning</h2>
-                    </div>
+        <header class="fd-bar fd-bar--header fd-message-box__header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-message-box__title">Warning</h2>
                 </div>
             </div>
         </header>
         <div class="fd-message-box__body">
             Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et. 
         </div>
-        <footer class="fd-message-box__footer">
-            <div class="fd-bar fd-bar--footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button class="fd-button fd-button--compact">
-                            Close
-                        </button>
-                    </div>
+        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
+                        Close
+                    </button>
                 </div>
             </div>
         </footer>
@@ -238,26 +217,22 @@ Available options are `standard | confirmation | error | success | warning | inf
 
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--information fd-message-box--active">
     <div class="fd-message-box__content">
-        <header class="fd-message-box__header">
-            <div class="fd-bar fd-bar--header">
-                <div class="fd-bar__left">
-                    <div class="fd-bar__element">
-                        <h2 class="fd-message-box__title">Information</h2>
-                    </div>
+        <header class="fd-bar fd-bar--header fd-message-box__header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-message-box__title">Information</h2>
                 </div>
             </div>
         </header>
         <div class="fd-message-box__body">
             Vivamus sagittis diam in vehicula lobortis. 
         </div>
-        <footer class="fd-message-box__footer">
-            <div class="fd-bar fd-bar--footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button class="fd-button fd-button--compact">
-                            Close
-                        </button>
-                    </div>
+        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
+                        Close
+                    </button>
                 </div>
             </div>
         </footer>
@@ -277,29 +252,23 @@ To remove the semantic icon from the title of the Message Box apply the `fd-mess
 {% capture default-message-box %}
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--no-icon fd-message-box--success fd-message-box--active">
     <div class="fd-message-box__content">
-        <header class="fd-message-box__header">
-            <div class="fd-bar fd-bar--header">
-                <div class="fd-bar__left">
-                    <div class="fd-bar__element">
-                        <h2 class="fd-message-box__title">Success</h2>
-                    </div>
+        <header class="fd-bar fd-bar--header fd-message-box__header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-message-box__title">Success</h2>
                 </div>
             </div>
         </header>
         <div class="fd-message-box__body">
             Success Message Box with no status icon in the title and "Show more" link in the body
-            <div class="fd-message-box__more">
-                <a href="#" class="fd-link" tabindex="0">Show more</a>
-            </div>
+            <a href="#" class="fd-link fd-message-box__link" tabindex="0">Show more</a>
         </div>
-        <footer class="fd-message-box__footer">
-            <div class="fd-bar fd-bar--footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button class="fd-button fd-button--compact">
-                            Close
-                        </button>
-                    </div>
+        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
+                        Close
+                    </button>
                 </div>
             </div>
         </footer>
@@ -310,26 +279,22 @@ To remove the semantic icon from the title of the Message Box apply the `fd-mess
 
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--error fd-message-box--no-icon fd-message-box--active">
     <div class="fd-message-box__content">
-        <header class="fd-message-box__header">
-            <div class="fd-bar fd-bar--header">
-                <div class="fd-bar__left">
-                    <div class="fd-bar__element">
-                        <h2 class="fd-message-box__title">Error</h2>
-                    </div>
+        <header class="fd-bar fd-bar--header fd-message-box__header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-message-box__title">Error</h2>
                 </div>
             </div>
         </header>
         <div class="fd-message-box__body">
             Error Message Box with no status icon in the title
         </div>
-        <footer class="fd-message-box__footer">
-            <div class="fd-bar fd-bar--footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button class="fd-button fd-button--compact">
-                            Close
-                        </button>
-                    </div>
+        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
+                        Close
+                    </button>
                 </div>
             </div>
         </footer>
@@ -363,29 +328,23 @@ On phone devices the content container takes 100vh and 100vw. It's achieved by a
 {% capture default-message-box %}
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--no-icon fd-message-box--information fd-message-box--active">
     <div class="fd-message-box__content fd-message-box__content--s">
-        <header class="fd-message-box__header">
-            <div class="fd-bar fd-bar--cosy fd-bar--header">
-                <div class="fd-bar__left">
-                    <div class="fd-bar__element">
-                        <h2 class="fd-message-box__title">Information</h2>
-                    </div>
+        <header class="fd-bar fd-bar--cosy fd-bar--header fd-message-box__header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-message-box__title">Information</h2>
                 </div>
             </div>
         </header>
         <div class="fd-message-box__body">
             Information Message Box on small screen in Cosy mode 
-            <div class="fd-message-box__more">
-                <a href="#" class="fd-link" tabindex="0">Show more</a>
-            </div>
+            <a href="#" class="fd-link fd-message-box__link" tabindex="0">Show more</a>
         </div>
-        <footer class="fd-message-box__footer">
-            <div class="fd-bar fd-bar--cosy fd-bar--footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button class="fd-button">
-                            Close
-                        </button>
-                    </div>
+        <footer class="fd-bar fd-bar--cosy fd-bar--footer fd-message-box__footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
+                        Close
+                    </button>
                 </div>
             </div>
         </footer>
@@ -396,26 +355,22 @@ On phone devices the content container takes 100vh and 100vw. It's achieved by a
 
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--error fd-message-box--no-icon fd-message-box--active">
     <div class="fd-message-box__content fd-message-box__content--m">
-        <header class="fd-message-box__header">
-            <div class="fd-bar fd-bar--cosy fd-bar--header">
-                <div class="fd-bar__left">
-                    <div class="fd-bar__element">
-                        <h2 class="fd-message-box__title">Error</h2>
-                    </div>
+        <header class="fd-bar fd-bar--cosy fd-bar--header fd-message-box__header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-message-box__title">Error</h2>
                 </div>
             </div>
         </header>
         <div class="fd-message-box__body">
             Error Message Box on medium screen in Cosy mode  
         </div>
-        <footer class="fd-message-box__footer">
-            <div class="fd-bar fd-bar--cosy fd-bar--footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button class="fd-button">
-                            Close
-                        </button>
-                    </div>
+        <footer class="fd-bar fd-bar--cosy fd-bar--footer fd-message-box__footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
+                        Close
+                    </button>
                 </div>
             </div>
         </footer>
@@ -427,26 +382,22 @@ On phone devices the content container takes 100vh and 100vw. It's achieved by a
 
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--success fd-message-box--active">
     <div class="fd-message-box__content fd-message-box__content--l">
-        <header class="fd-message-box__header">
-            <div class="fd-bar fd-bar--header">
-                <div class="fd-bar__left">
-                    <div class="fd-bar__element">
-                        <h2 class="fd-message-box__title">Success</h2>
-                    </div>
+        <header class="fd-bar fd-bar--header fd-message-box__header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-message-box__title">Success</h2>
                 </div>
             </div>
         </header>
         <div class="fd-message-box__body">
             Success Message Box on large screen in compact (desktop) mode  
         </div>
-        <footer class="fd-message-box__footer">
-            <div class="fd-bar fd-bar--footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button class="fd-button fd-button--compact">
-                            Close
-                        </button>
-                    </div>
+        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
+                        Close
+                    </button>
                 </div>
             </div>
         </footer>
@@ -457,26 +408,22 @@ On phone devices the content container takes 100vh and 100vw. It's achieved by a
 
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--warning fd-message-box--active">
     <div class="fd-message-box__content fd-message-box__content--xl">
-        <header class="fd-message-box__header">
-            <div class="fd-bar fd-bar--header">
-                <div class="fd-bar__left">
-                    <div class="fd-bar__element">
-                        <h2 class="fd-message-box__title">Warning</h2>
-                    </div>
+        <header class="fd-bar fd-bar--header fd-message-box__header">
+             <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-message-box__title">Warning</h2>
                 </div>
             </div>
         </header>
         <div class="fd-message-box__body">
            Warning Message Box on extra large screen in compact (desktop) mode 
         </div>
-        <footer class="fd-message-box__footer">
-            <div class="fd-bar fd-bar--footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button class="fd-button fd-button--compact">
-                            Close
-                        </button>
-                    </div>
+        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
+                        Close
+                    </button>
                 </div>
             </div>
         </footer>

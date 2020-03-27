@@ -7,6 +7,7 @@ $block: #{$fd-namespace}-message-box;
 
 $fd-message-box-icon-text-spacing: 0.5rem;
 $fd-message-box-title-icon-text-size: 1rem;
+$fd-message-box-footer-button-min-width: 4rem;
 $fd-message-box-content-padding-x: (def: 1rem, s: 1rem, m: 2rem, l: 2rem, xl: 3rem);
 $defaultBoxShadow: var(--sapContent_HeaderShadow);
 $errorBoxShadow: inset 0 -0.0625rem var(--sapErrorBorderColor), var(--sapContent_HeaderShadow);
@@ -15,11 +16,11 @@ $warningBoxShadow: inset 0 -0.0625rem var(--sapWarningBorderColor), var(--sapCon
 $informationBoxShadow: inset 0 -0.0625rem var(--sapInformationBorderColor), var(--sapContent_HeaderShadow);
 
 $message-box-states: (
-  "confirmation": ("iconColor": var(--sapNeutralElementColor), "icon": "\e090", "boxShadow": var(--sapContent_HeaderShadow)),
+  "confirmation": ("iconColor": var(--sapNeutralElementColor), "icon": "\e1c4", "boxShadow": var(--sapContent_HeaderShadow)),
   "error": ("iconColor": var(--sapNegativeElementColor), "icon": "\e0b1", "boxShadow": $errorBoxShadow),
   "success": ("iconColor": var(--sapPositiveElementColor), "icon": "\e203", "boxShadow": $successBoxShadow),
   "warning": ("iconColor": var(--sapCriticalElementColor), "icon": "\e201", "boxShadow": $warningBoxShadow),
-  "information": ("iconColor": var(--sapInformativeElementColor), "icon": "\e202", "boxShadow": $informationBoxShadow)
+  "information": ("iconColor": var(--sapInformativeElementColor), "icon": "\e05c", "boxShadow": $informationBoxShadow)
 );
 
 .#{$block} {
@@ -33,17 +34,11 @@ $message-box-states: (
 
     @each $size-label, $size in $fd-message-box-content-padding-x {
       &--#{$size-label} {
-        .#{$block}__body {
+        .#{$block}__header,
+        .#{$block}__body,
+        .#{$block}__footer {
           padding-left: map_get($fd-message-box-content-padding-x, $size-label);
           padding-right: map_get($fd-message-box-content-padding-x, $size-label);
-        }
-
-        .#{$block}__header,
-        .#{$block}__footer {
-          & > *:first-child {
-            padding-left: map_get($fd-message-box-content-padding-x, $size-label);
-            padding-right: map_get($fd-message-box-content-padding-x, $size-label);
-          }
         }
       }
     }
@@ -53,25 +48,14 @@ $message-box-states: (
     }
   }
 
-  &__header {
-    @include fd-reset();
-
-    & > *:first-child {
-      @extend %dialog-paddings;
-
-      box-shadow: $defaultBoxShadow;
-    }
+  &__header,
+  &__footer {
+    @extend %dialog-paddings;
   }
 
   &__footer {
-    @include fd-reset();
-
-    & > *:first-child {
-      @extend %dialog-paddings;
-    }
-
-    button {
-      min-width: 4rem;
+    .#{$block}__decisive-button {
+      min-width: $fd-message-box-footer-button-min-width;
     }
   }
 
@@ -90,9 +74,10 @@ $message-box-states: (
     font-size: $fd-message-box-title-icon-text-size;
   }
 
-  &__more {
+  &__link {
     @include fd-reset();
 
+    display: block;
     margin-top: 1rem;
   }
 
@@ -104,9 +89,7 @@ $message-box-states: (
   @each $set-name, $state-set in $message-box-states {
     &--#{$set-name} {
       .#{$block}__header {
-        & > *:first-child {
-          box-shadow: map_get($state-set, "boxShadow");
-        }
+        box-shadow: map_get($state-set, "boxShadow");
       }
 
       .#{$block}__title {
