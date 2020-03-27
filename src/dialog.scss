@@ -135,6 +135,8 @@ $block: #{$fd-namespace}-dialog;
   }
 
   &__resize-handle {
+    @include fd-reset();
+
     position: absolute;
     right: 0;
     bottom: -1px;

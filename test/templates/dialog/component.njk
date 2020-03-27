@@ -16,36 +16,28 @@ dialog:
             <span class="fd-dialog__resize-handle"></span>
             {% endif %}
 
-            <header class="fd-dialog__header fd-bar {% if dialog.has_subheader %}fd-bar--subheader{% else %}fd-bar--header{% endif %}">
-                <div class="fd-bar__left">
-                    <div class="fd-bar__element">
+            <header class="bar-playground fd-dialog__header">
+                <div class="bar-left-playground">
+                    <div class="bar-element-playground">
                         <h3 class="fd-dialog__title">
                             Dialog header
                         </h3>
                     </div>
                 </div>
             </header>
-            {% if dialog.has_subheader %}
-                <div class="fd-dialog__subheader fd-bar fd-bar--subheader">
-                    <div class="fd-bar__left">
-                        <div class="fd-bar__element">
-                            Dialog subheader
-                        </div>
-                    </div>
-                </div>
-            {% endif %}
+            
             <div class="fd-dialog__body {% if dialog.has_no_vertical_paddings %}fd-dialog__body--no-vertical-padding{% endif %}">
                 {{ properties.body }}
                 {% if dialog.has_loader %}
-                    <div class="fd-dialog__loader fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
+                    <div class="busy-indicator-playground fd-dialog__loader" aria-hidden="false" aria-label="Loading">
                         Loader
                     </div>
                 {% endif %}
             </div>
 
-            <footer class="fd-dialog__footer fd-bar fd-bar--footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
+            <footer class="bar-playground fd-dialog__footer">
+                <div class="bar-right-playground">
+                    <div class="bar-element-playground">
                         {%- for action in properties.actions %}
                             <button class="btn-playground fd-dialog__decisive-button">{{ action.label }}</button>
                         {%- endfor %}
