@@ -257,3 +257,37 @@ body {
   background-color: blanchedalmond;
   height: 3rem;
 }
+
+.bar-playground {
+  margin: 0;
+  padding: 0;
+  min-height: 2.5rem;
+  background-color: blanchedalmond;
+}
+
+.bar-playground,
+.bar-left-playground,
+.bar-right-playground,
+.bar-element-playground {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.bar-playground {
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  background-color: blanchedalmond;
+}
+
+.bar-left-playground {
+  width: 100%;
+}
+
+.bar-right-playground {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+

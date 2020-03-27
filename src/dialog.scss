@@ -2,6 +2,7 @@
 @import "./mixins";
 @import "./functions";
 @import "./overlay.scss";
+@import "./dialog-placeholders";
 
 /*!
   .fd-dialog+(--active)
@@ -44,13 +45,9 @@ $block: #{$fd-namespace}-dialog;
   // Footer
   $fd-dialog-footer-button-min-width: 4rem;
 
+  @extend %dialog;
+
   display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: $fd-dialog-overlay-color;
 
   &--active {
     display: block;
@@ -59,19 +56,7 @@ $block: #{$fd-namespace}-dialog;
   &__content {
     @include fd-reset();
 
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: $fd-dialog-content-min-width;
-    min-height: $fd-dialog-content-min-height;
-    max-width: calc(100vw - #{$fd-dialog-content-margin-x});
-    max-height: calc(100vh - #{$fd-dialog-content-margin-y});
-    box-shadow: $fd-dialog-content-box-shadow;
-    border-radius: $fd-dialog-content-border-radius;
+    @extend %dialog-content;
 
     @each $size-label, $size in $fd-dialog-content-padding-x {
       &--#{$size-label} {
@@ -86,10 +71,7 @@ $block: #{$fd-namespace}-dialog;
     }
 
     &--mobile {
-      width: 100vw;
-      height: 100vh;
-      max-width: 100vw;
-      max-height: 100vh;
+      @extend %dialog-mobile;
     }
 
     &--no-mobile-stretch {
@@ -121,17 +103,14 @@ $block: #{$fd-namespace}-dialog;
   &__header,
   &__subheader,
   &__footer {
-    padding-left: map_get($fd-dialog-content-padding-x, def);
-    padding-right: map_get($fd-dialog-content-padding-x, def);
-    flex-shrink: 0;
+    @extend %dialog-paddings;
   }
 
   &__body {
     @include fd-reset();
 
-    overflow: auto;
-    flex-grow: 1;
-    background-color: $fd-dialog-body-color;
+    @extend %dialog-body;
+
     padding-top: $fd-dialog-body-padding-y;
     padding-bottom: $fd-dialog-body-padding-y;
 
