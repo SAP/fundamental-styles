@@ -51,6 +51,8 @@ $block: #{$fd-namespace}-button;
 @mixin iconSize($size) {
   &::before,
   &::after {
+    width: $size;
+    height: $size;
     font-size: $size;
     line-height: $size;
   }
