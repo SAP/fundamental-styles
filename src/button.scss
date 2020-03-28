@@ -126,8 +126,8 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin menuCompact() {
-  $fd-button-menu-button-padding: 1.469rem;
-  $fd-menu-button-icon-position-horizontal: 0.125rem / 2;
+  $fd-button-menu-button-padding: 1.812rem;
+  $fd-menu-button-icon-position-horizontal: 0.438rem;
 
   padding-right: $fd-button-menu-button-padding;
 
@@ -148,8 +148,8 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin menu() {
-  $fd-button-menu-button-padding: 1.594rem;
-  $fd-menu-button-icon-position-horizontal: 0.1875rem;
+  $fd-button-menu-button-padding: 1.937rem;
+  $fd-menu-button-icon-position-horizontal: 0.562rem;
 
   max-width: $fd-menu-button-max-width;
   position: relative;
@@ -166,20 +166,8 @@ $block: #{$fd-namespace}-button;
     position: absolute;
     top: $fd-menu-button-icon-position-top;
     right: $fd-menu-button-icon-position-horizontal;
-    margin-right: $fd-button-icon-margin;
-    margin-left: $fd-button-icon-margin;
-  }
-
-  &:empty {
-    &::before {
-      margin-right: 0;
-      margin-left: 0;
-    }
-
-    &::after {
-      margin-right: $fd-button-icon-margin;
-      margin-left: $fd-button-icon-margin;
-    }
+    margin-right: 0;
+    margin-left: 0;
   }
 
   @include fd-rtl() {
@@ -189,8 +177,6 @@ $block: #{$fd-namespace}-button;
     &::after {
       left: $fd-menu-button-icon-position-horizontal;
       right: auto;
-      margin-right: $fd-button-icon-margin;
-      margin-left: $fd-button-icon-margin;
     }
 
     &:empty {
