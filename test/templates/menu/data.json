@@ -11,7 +11,8 @@
                 "label": "Option 2"
             },
             {
-                "label": "Option 3"
+                "label": "Option 3",
+                "selected": true
             },
             {
                 "label": "Option 4"

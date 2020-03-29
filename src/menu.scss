@@ -5,165 +5,335 @@
 $block: #{$fd-namespace}-menu;
 
 .#{$block} {
-
   // LOCAL VARS (set all themeable properties, always include !default)
-  // group title
-  $fd-menu-title-color: fd-color("text", 3) !default;
-  $fd-menu-title-background-color: fd-color("neutral", 1) !default;
-  $fd-menu-title-padding: fd-space("tiny") !default;
-
   // items
-  $fd-menu-item-color: fd-color("text", 2) !default;
-  $fd-menu-item-color--hover: $fd-color !default;
-  $fd-menu-item-background-color: map-get($fd-colors-background, 2) !default;
-  $fd-menu-item-background-color--hover: fd-color-state("hover") !default;
-  $fd-menu-item-background-color--selected: fd-color-state("selected") !default;
+  $fd-menu-item-color: var(--sapList_TextColor) !default;
+  $fd-menu-item-color--active: var(--sapList_Active_TextColor) !default;
 
-  $fd-menu-item-padding-x: fd-space("regular") !default;
-  $fd-menu-item-padding-y: fd-space("tiny") + 2px !default;
+  $fd-menu-item-background-color: var(--sapList_Background) !default;
+  $fd-menu-item-background-color--hover: var(--sapList_Hover_Background) !default;
+  $fd-menu-item-background-color--active: var(--sapList_Active_Background) !default;
+  $fd-menu-item-background-color--selected: var(--sapList_SelectionBackgroundColor) !default;
+  $fd-menu-item-background-color--selected-hover: var(--sapList_Hover_SelectionBackground) !default;
 
-  $fd-menu-item-separator-color: fd-color("neutral", 2) !default;
+  $fd-menu-separator-color: var(--sapGroup_ContentBorderColor) !default;
 
-  --fd-menu-item-separator-color: var(--fd-color-neutral-2);
-  --fd-menu-item-color: var(--fd-color-text-2);
-  --fd-menu-item-background-color: var(--fd-color-background-2);
-  --fd-menu-title-color: var(--fd-color-text-3);
-  --fd-menu-title-background-color: var(--fd-color-neutral-1);
+  $fd-menu-primary-icon-color: var(--sapContent_NonInteractiveIconColor) !default;
+  $fd-menu-primary-icon-color-active-selected: var(--sapList_Active_TextColor) !default;
 
   // BLOCK BASE *******************************************
   // set all BLOCK reset and baseline styles
   @include fd-reset();
-  @include fd-ellipsis();
 
-  position: relative;
-  padding-top: fd-space(base);
-  padding-bottom: fd-space(base);
   width: 100%;
-  display: inline-block;
+  max-width: 20rem;
 
-  &__group {
-    @include fd-reset();
-
-    list-style: none;
-    margin-bottom: 0;
-    padding-left: 0;
-  }
-
-  &__list {
+  &__list,
+  &__sublist {
     @include fd-reset();
 
     margin: 0;
     padding: 0;
     list-style: none;
-    // modified with separator border
-    @at-root {
-      &--separated {
-        & > *,
-        .#{$block}__list > * {
-          border-top-style: solid;
-          border-top-width: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+  }
 
-          @include fd-var-color("border-top-color", $fd-menu-item-separator-color, --fd-menu-item-separator-color);
+  &__sublist {
+    @include fd-reset();
 
-          &:first-child {
-            border-top-width: 0;
-          }
+    left: 100%;
+    right: initial;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    margin: 0.25rem 0 0 -0.25rem; // offset of submenu
+
+    @include fd-rtl() {
+      right: 100%;
+      left: initial;
+      margin: 0.25rem -0.25rem 0 0;
+    }
+
+    width: 100%;  // to fix IE issue
+
+    &[aria-hidden='true'] {
+      display: none;
+    }
+  }
+
+  &__list > li {
+    position: relative; // submenu's positioning relative to parent item
+    width: 100%;  // to ensure in mobile mode the width of parent is taken fully
+  }
+
+  &--compact {
+    @include fd-reset();
+
+    .#{$block}__link {
+      // for desktop mode
+      padding: 0.375rem 0.75rem 0.375rem 0.5rem; // line-height=20px so 2rem or 32px-20px=12px/2= 6px or 0.375rem each
+      height: 2rem;
+    }
+
+    .#{$block}__addon-before {
+      width: 2rem; // to account for item right padding of 12px or 0.75rem so 2rem-0.75rem = 1.25rem
+      height: 1.25rem; // to account for item top padding of 6px or 0.375rem so 2rem-0.375rem-0.375rem = 1.25rem
+      margin: 0 0 0 -0.5rem;
+    }
+
+    .#{$block}__addon-after {
+      width: 2rem; // to account for item right padding of 12px or 0.75rem so 2rem-0.75rem = 1.25rem
+      height: 1.25rem; // to account for item top padding of 6px or 0.375rem so 2rem-0.375rem-0.375rem = 1.25rem
+      margin: 0 -0.75rem 0 0;
+    }
+
+    // handle icons rtl modes
+    @include fd-rtl() {
+      .#{$block}__addon-before {
+        margin: 0 -0.75rem 0 0; // since before and after icons switch places, their margins also switch
+      }
+
+      .#{$block}__addon-after {
+        margin: 0 0 0 -0.5rem; // since before and after icons switch places, their margins also switch
+      }
+    }
+  }
+
+  &--mobile {      // for mobile mode
+    @include fd-reset();
+
+    max-width: none;
+
+    .#{$block}__link {
+      padding: 0.75rem 1rem 0.75rem 1rem; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each
+      height: 2.75rem;
+      width: 100%;
+      max-width: none;
+
+      .#{$block}__title {
+        max-width: 100%;
+      }
+    }
+
+    .#{$block}__addon-before {
+      width: 2.75rem; // to account for item right padding of 16px or 1rem so 2.75rem-1rem = 1.75rem
+      height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
+      margin: 0 0 0 -1rem;
+    }
+
+    .#{$block}__addon-after {
+      width: 2.75rem; // to account for item right padding of 16px or 1rem so 2.75rem-1rem = 1.75rem
+      height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
+      margin: 0 -1rem 0 0;
+    }
+
+    @include fd-rtl() {
+      .#{$block}__addon-before {
+        margin: 0 -1rem 0 0; // since before and after icons switch places, their margins also switch
+      }
+
+      .#{$block}__addon-after {
+        margin: 0 0 0 -1rem; // since before and after icons switch places, their margins also switch
+      }
+    }
+  }
+
+  @mixin selected-menu() {
+    .#{$block}__title {
+      color: $fd-menu-item-color;
+    }
+
+    background-color: $fd-menu-item-background-color--selected;
+    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+
+    .#{$block}__addon-before,
+    .#{$block}__addon-after {
+      color: $fd-menu-primary-icon-color;
+    }
+
+    @include fd-hover() {
+      background-color: $fd-menu-item-background-color--selected-hover;
+    }
+  }
+
+  &__separator {
+    @include fd-reset();
+
+    height: 0.0625rem;
+    width: 100%;
+    background-color: $fd-menu-separator-color;
+  }
+
+  &__item {
+    @include fd-reset();
+    @include action-cursor();
+
+    background-color: $fd-menu-item-background-color;
+    position: relative;   // so that sub-menus align relatively to parent menu item
+  }
+
+  &__link {
+    @include fd-reset();
+
+    display: flex;
+    align-items: center;
+    max-width: 20rem;
+
+    // tablet cozy - will be default
+    padding: 0.75rem 1rem 0.75rem 0.75rem; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each
+    height: 2.75rem;
+
+    @include fd-hover() {
+      .#{$block}__title {
+        color: $fd-menu-item-color;
+      }
+
+      background-color: $fd-menu-item-background-color--hover;
+    }
+
+    @include fd-active() {
+      .#{$block}__title {
+        color: $fd-menu-item-color--active;
+      }
+
+      background-color: $fd-menu-item-background-color--active;
+
+      .#{$block}__addon-before,
+      .#{$block}__addon-after {
+        color: $fd-menu-primary-icon-color-active-selected;
+      }
+
+      .#{$block}__addon-after {
+        border-bottom-color: transparent;
+      }
+    }
+
+    @include fd-selected() {
+      @include selected-menu();
+    }
+
+    &.is-expanded,
+    &[aria-selected='true'],
+    &[aria-expanded='true'] {
+      @include fd-selected();
+    }
+
+    @include fd-fiori-focus();
+
+    @include fd-disabled() {
+      opacity: var(--sapContent_DisabledOpacity);
+      cursor: not-allowed;
+      text-decoration: none;
+      pointer-events: none;
+    }
+
+    &[aria-disabled='true'] {
+      @include fd-disabled();
+    }
+
+    .#{$block}__title {
+      @include fd-reset();
+
+      flex: 3 3 10%;  // needed to keep the icons aligned
+      color: $fd-menu-item-color;
+
+      @include fd-weight("normal");
+
+      font-size: var(--sapFontSize);
+      font-family: var(--sapFontFamily);
+      text-decoration: none;
+
+      @include fd-ellipsis();
+    }
+
+    &.has-child {
+      @include selected-menu();
+
+      &.is-expanded,
+      &[aria-expanded="true"] {
+        @include fd-selected() {
+          @include selected-menu();
         }
       }
     }
   }
 
-  &__title {
-    display: block;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding: $fd-menu-title-padding $fd-menu-item-padding-x;
-
-    @include fd-type("-1", "normal");
-
-    text-transform: uppercase;
-
-    @include fd-var-color("color", $fd-menu-title-color, --fd-menu-title-color);
-    @include fd-var-color("background-color", $fd-menu-title-background-color, --fd-menu-title-background-color);
-  }
-
-  &__item {
+  &__addon-before {
     @include fd-reset();
-    @include fd-ellipsis();
+    @include fd-flex-center();
 
-    display: block;
-    transition: all $fd-animation-speed ease-in;
+    // cozy tablet icon size
+    width: 2.25rem; // to account for item right padding of 16px or 1rem so 2.25rem-1rem = 1.25rem
+    height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
+    margin: 0 0 0 -0.75rem;
 
-    @include action-cursor();
-
-    padding: $fd-menu-item-padding-y $fd-menu-item-padding-x;
-
-    @include fd-var-color("background-color", $fd-menu-item-background-color, --fd-menu-item-background-color);
-    @include fd-var-color("color", $fd-menu-item-color, --fd-menu-item-color);
-    @include fd-weight("normal");
-
-    text-decoration: none;
-
-    > .fd-checkbox {
-      margin: 0 10px 0 0;
+    @include fd-rtl() {
+      margin: 0 -1rem 0 0; // since before and after icons switch places, their margins also switch
     }
 
-    @include fd-hover() {
-      @include fd-var-color("color", $fd-menu-item-color--hover, --fd-color-text-1);
-      @include fd-var-color("background-color", $fd-menu-item-background-color--hover, --fd-color-background-hover);
+    color: $fd-menu-primary-icon-color;
+
+    @include fd-active() {
+      color: $fd-menu-item-color--active;
     }
 
     @include fd-selected() {
-      @include fd-var-color("background-color", $fd-menu-item-background-color--selected, --fd-color-background-selected);
+      color: $fd-menu-primary-icon-color;
 
       @include fd-hover() {
-        @include fd-var-color("background-color", fd-color-state("selected-hover"), --fd-color-background-selected-hover);
+        color: $fd-menu-item-color--active;
       }
     }
 
-    @include fd-active-pressed-selected() {
-      @include fd-var-color("color", fd-color-state("selected", "action"), --fd-color-action-selected);
-
-      outline: none;
-    }
-
-    &:focus {
-      outline-style: dotted;
-      outline-width: 1px;
-
-      @include fd-var-color("outline-color", fd-color-state("hover", "action"), --fd-color-action-focus);
-    }
-
-    @include fd-disabled() {
-      @include fd-var-color("outline-color", fd-color-state("disabled", "action"), --fd-color-action-disabled);
-      @include fd-var-color("color", $fd-forms-color--disabled, --fd-color-text-4);
-
-      cursor: not-allowed;
-      text-decoration: none;
-    }
+    display: flex;
+    background-color: transparent;
+    font-size: var(--sapFontLargeSize);
   }
 
-  &--addon-before {
-    .fd-menu__item {
-      padding-top: $fd-menu-item-padding-y;
-      padding-bottom: $fd-menu-item-padding-y;
-      padding-left: 2px;
-      padding-right: 2px;
-    }
-  }
-
-  &__addon-before {
+  // for affordance icon to be used with submenu
+  &__addon-after {
+    @include fd-reset();
     @include fd-flex-center();
 
+    flex: 0 0 auto;
+    display: flex;
+    color: $fd-menu-primary-icon-color;
+    // cozy tablet icon size
+    width: 2.25rem; // to account for item right padding of 16px or 1rem so 2.25rem-1rem = 1.25rem
+    height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
+    margin: 0 -1rem 0 0;
+
     @include fd-rtl() {
-      float: right;
-      clear: right;
+      margin: 0 0 0 -0.75rem; // since before and after icons switch places, their margins also switch
+    }
+
+    @include fd-active() {
+      color: $fd-menu-item-color--active;
+    }
+
+    @include fd-selected() {
+      color: $fd-menu-primary-icon-color;
+
+      @include fd-hover() {
+        color: $fd-menu-item-color--active;
+      }
     }
 
     background-color: transparent;
-    float: left;
-    clear: left;
-    min-height: 1px;
-    width: 30px;
+    font-size: var(--sapFontLargeSize);
+
+    &--submenu {
+      font-size: var(--sapFontSmallSize);
+      // for submenu modifier, we add the right(and left for rtl) arrow
+      @include fd-icon("navigation-right-arrow","s");
+
+      @include fd-rtl() {
+        @include fd-icon("navigation-left-arrow","s");
+      }
+    }
   }
 }

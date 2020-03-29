@@ -1,6 +1,6 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "./component.njk" import menu, menuWithAllHeadlines %}
+{% from "./component.njk" import menu %}
 
 {% block content %}
   <h2>default</h2>
@@ -10,20 +10,14 @@
   {{ format(example) }}
 
   <br/><br/><br/>
-  <h2>grouped</h2>
+  <h2>menu list with separators</h2>
   {% set example %}
   {{ menu(properties={
   items: [
       { "label": "Option 1" },
-      { "label": "Option 2"},
-      { "label": "Option 3" },
-      {  "label": "Group Header",
-        "items": [
-            { "label": "Option 4" },
-            { "label": "Option 5" },
-            { "label": "Option 6" }
-        ]
-      }
+      { "label": "Option 2 selected and separated", "class": "is-selected", "separator":"true"},
+      { "label": "Option 3 regular separated", "separator":"true" },
+      { "label": "Option 4" }
     ]
   })
 }}
@@ -31,21 +25,20 @@
   {{ format(example) }}
 
   <br/><br/><br/>
-  <h2>menu list with separators</h2>
+  <h2>menu list with different states</h2>
   {% set example %}
   {{ menu(properties={
   items: [
-      { "label": "Option 1" },
-      { "label": "Option 2"},
-      { "label": "Option 3" },
-      { "label": "Option 4" }
-    ],
-    separator: true
+      { "label": "Option 1 - regular" },
+      { "label": "Option 2 - hover", "class": "is-hover" },
+      { "label": "Option 3 - active", "class": "is-active" },
+      { "label": "Option 4 - selected", "class": "is-selected" },
+      { "label": "Option 5 - selected hover", "class": "is-selected is-hover" }
+    ]
   })
 }}
   {% endset %}
   {{ format(example) }}
-
 
 <br/><br/><br/>
   <h2>menu list with disable particular menu item</h2>
@@ -64,45 +57,17 @@
   {{ format(example) }}
 
   <br/><br/><br/>
-  <h2>separated and grouped</h2>
-  {% set example %}
-  {{ menu(properties={
-  items: [
-      {
-        "label": "Group Header",
-        "items": [
-            { "label": "Option 1" },
-            { "label": "Option 2" },
-            { "label": "Option 3" }
-        ]
-      },
-      {
-        "label": "Group Header",
-        "items": [
-            { "label": "Option 1" },
-            { "label": "Option 2" },
-            { "label": "Option 3" }
-        ]
-      }
-    ],
-    separator: true
-  })
-}}
-  {% endset %}
-  {{ format(example) }}
-
-  <br/><br/><br/>
   <h2>menu with icons</h2>
   {% set example %}
   {{ menu(properties={
             items: [
-              { "label": "Option 1 with very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very  very very very very long menu", "icon": "accept" },
-              { "label": "Option 2", "icon": "cart" },
-              { "label": "Option 3", "icon": "windows-doors" },
-              { "label": "Option 4", "icon": "past" }
+              { "label": "Option 1 with very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very  very very very very long menu and primary and secondary icons.", "icon": "accept", "secondaryIcon": "grid" },
+              { "label": "Option 2- only primary icon", "icon": "cart" },
+              { "label": "Option 3- only secondary icon", "secondaryIcon": "sap-icon--grid" },
+              { "label": "Option 4- both icons", "icon": "past", "secondaryIcon": "cart" }
             ],
             addon_before: true,
-            separator: true
+            addon_after: true
         },
         modifier=["addon-before"])
 }}
@@ -110,20 +75,25 @@
   {{ format(example) }}
 
   <br/><br/><br/>
-  <h2>menu with headlines</h2>
+
+  <h2>menu with submenu</h2>
   {% set example %}
-  {{ menuWithAllHeadlines(properties={
+  {{ menu(properties={
             items: [
-              { "label": "Option 1", "icon": "accept", "class": "is-disabled" },
-              { "label": "Option 2", "icon": "cart" },
-              { "label": "Option 3", "icon": "windows-doors", "class": "is-disabled" },
-              { "label": "Option 4", "icon": "past" }
+              { "label": "Option 1", "icon": "accept" },
+              { "label": "Option 2 with submenu", "icon": "cart", "secondaryIcon":"cart", "submenu":"true","class": "has-child" },
+              { "label": "Option 3"},
+              { "label": "Option 4" }
+            ],
+            submenu_items:[
+              { "label": "Sub-option 1", "icon": "accept" },
+              { "label": "Sub-option 2 ", "icon": "cart"}
             ],
             addon_before: true,
-            separator: true
+            addon_after: true
         },
         modifier=["addon-before"])
-}}
+  }}
   {% endset %}
   {{ format(example) }}
 {% endblock %}
