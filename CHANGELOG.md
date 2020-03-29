@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0-rc.34"></a>
+# [0.8.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.33...v0.8.0-rc.34) (2020-03-29)
+
+
+### Bug Fixes
+
+* Add theming parameter for disabled ([#809](https://github.com/SAP/fundamental-styles/issues/809)) ([8823bc6](https://github.com/SAP/fundamental-styles/commit/8823bc6))
+
+
+
 <a name="0.8.0-rc.33"></a>
 # [0.8.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.32...v0.8.0-rc.33) (2020-03-29)
 
