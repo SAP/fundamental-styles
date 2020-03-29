@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0-rc.33"></a>
+# [0.8.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.32...v0.8.0-rc.33) (2020-03-29)
+
+
+### Features
+
+* Menu refactor to Fiori3 ([#702](https://github.com/SAP/fundamental-styles/issues/702)) ([1272053](https://github.com/SAP/fundamental-styles/commit/1272053))
+
+
+
 <a name="0.8.0-rc.32"></a>
 # [0.8.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.31...v0.8.0-rc.32) (2020-03-27)
 
