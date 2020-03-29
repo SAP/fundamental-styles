@@ -133,4 +133,10 @@
   --sapButton_Critical_Background: chocolate;
   --sapButton_Success_Background: teal;
   --sapInformativeElementColor: #e3ba20;
+  --sapLink_SubtleColor: rgba(255, 255, 0, 0.787);
+  --sapLink_Visited_Color: #f09fa3;
+  --sapLink_Active_Color: #990008;
+  --sapLink_InvertedColor: #ff4516;
+  --sapLink_Hover_Color: rgb(148, 214, 148);
+  --sapLinkColor: rgb(6, 56, 6);
 }

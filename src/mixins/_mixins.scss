@@ -308,6 +308,10 @@
     color: var(--sapLink_InvertedColor);
   }
 
+  &--subtle {
+    color: var(--sapLink_SubtleColor);
+  }
+
   @include fd-disabled() {
     opacity: var(--sapContent_DisabledOpacity);
     color: var(--sapLinkColor);
