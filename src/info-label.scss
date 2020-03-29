@@ -42,16 +42,16 @@ $block: #{$fd-namespace}-info-label;
   $fd-info-lable-margin-cozy: 0.8125rem 0 !default;
 
   $color-accents: (
-    "1": ("background": var(--sapLegendBackgroundColor1), "border": var(--sapAccentColor1)),
-    "2": ("background": var(--sapLegendBackgroundColor2), "border": var(--sapAccentColor2)),
-    "3": ("background": var(--sapLegendBackgroundColor3), "border": var(--sapAccentColor3)),
-    "4": ("background": var(--sapLegendBackgroundColor5), "border": var(--sapAccentColor4)),
-    "5": ("background": var(--sapLegendBackgroundColor20), "border": var(--sapAccentColor5)),
-    "6": ("background": var(--sapLegendBackgroundColor6), "border": var(--sapAccentColor6)),
-    "7": ("background": var(--sapLegendBackgroundColor7), "border": var(--sapAccentColor7)),
-    "8": ("background": var(--sapLegendBackgroundColor8), "border": var(--sapAccentColor8)),
-    "9": ("background": var(--sapLegendBackgroundColor10), "border": var(--sapAccentColor9)),
-    "10": ("background": var(--sapLegendBackgroundColor9), "border": var(--sapAccentColor10))
+    "1": ("background": var(--sapLegendBackgroundColor1), "border": var(--sapLegendColor1)),
+    "2": ("background": var(--sapLegendBackgroundColor2), "border": var(--sapLegendColor2)),
+    "3": ("background": var(--sapLegendBackgroundColor3), "border": var(--sapLegendColor3)),
+    "4": ("background": var(--sapLegendBackgroundColor5), "border": var(--sapLegendColor4)),
+    "5": ("background": var(--sapLegendBackgroundColor20), "border": var(--sapLegendColor5)),
+    "6": ("background": var(--sapLegendBackgroundColor6), "border": var(--sapLegendColor6)),
+    "7": ("background": var(--sapLegendBackgroundColor7), "border": var(--sapLegendColor7)),
+    "8": ("background": var(--sapLegendBackgroundColor8), "border": var(--sapLegendColor8)),
+    "9": ("background": var(--sapLegendBackgroundColor10), "border": var(--sapLegendColor9)),
+    "10": ("background": var(--sapLegendBackgroundColor9), "border": var(--sapLegendColor10))
   );
 
   @include fd-reset();
