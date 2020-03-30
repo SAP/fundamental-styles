@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0-rc.39"></a>
+# [0.8.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.38...v0.8.0-rc.39) (2020-03-30)
+
+
+### Bug Fixes
+
+* update Side Navigation - Utility section separator per latest design [#790](https://github.com/SAP/fundamental-styles/issues/790) ([#816](https://github.com/SAP/fundamental-styles/issues/816)) ([a95e049](https://github.com/SAP/fundamental-styles/commit/a95e049))
+
+
+
 <a name="0.8.0-rc.38"></a>
 # [0.8.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.37...v0.8.0-rc.38) (2020-03-30)
 
