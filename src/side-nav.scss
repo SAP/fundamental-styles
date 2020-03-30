@@ -42,7 +42,7 @@ $block: #{$fd-namespace}-side-nav;
       display: block;
       border-top: 0.125rem solid;
       border-top-color: var(--sapList_GroupHeaderBorderColor);
-      margin: 0.25rem 0.875rem;
+      margin: 0.25rem 0.5rem;
     }
   }
 
@@ -79,12 +79,6 @@ $block: #{$fd-namespace}-side-nav;
             bottom: 0;
             position: absolute;
           }
-        }
-      }
-
-      &__utility {
-        &::before {
-          margin: 0.25rem 0.5rem;
         }
       }
     }
