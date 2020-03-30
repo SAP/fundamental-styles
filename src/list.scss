@@ -219,6 +219,12 @@ $block: #{$fd-namespace}-list;
     .#{$block}__group-header {
       border-bottom: 0;
     }
+
+    .#{$block}__item {
+      @include fd-selected() {
+        border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+      }
+    }
   }
 
   &--has-message {

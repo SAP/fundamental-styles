@@ -15,7 +15,7 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 
 {% capture standard-list %}
 <ul class="fd-list">
-  <li class="fd-list__item">
+  <li class="fd-list__item is-selected">
       <span class="fd-list__title">List item 1</span>
   </li>
   <li class="fd-list__item">
@@ -53,7 +53,7 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 
 {% capture secondary-data %}
 <ul class="fd-list">
-  <li class="fd-list__item">
+  <li class="fd-list__item is-selected">
       <span class="fd-list__title">List item 1</span>
       <span class="fd-list__secondary fd-has-color-status-1">Positive</span>
   </li>
@@ -78,7 +78,7 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 
 {% capture list-with-icons %}
 <ul class="fd-list">
-  <li class="fd-list__item">
+  <li class="fd-list__item is-selected">
       <span class="fd-list__icon sap-icon--cart"></span>
       <span class="fd-list__title">List item 1</span>
   </li>
@@ -97,7 +97,7 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 </ul>
 <br /><br />
 <ul class="fd-list">
-  <li class="fd-list__item">
+  <li class="fd-list__item is-selected">
       <span class="fd-list__title">List item 1</span>
       <span class="fd-list__icon sap-icon--navigation-right-arrow"></span>
   </li>
@@ -121,7 +121,7 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
   <li class="fd-list__group-header">
     Group Header 1
   </li>
-  <li class="fd-list__item">
+  <li class="fd-list__item is-selected">
       <span class="fd-list__title">List item 1</span>
   </li>
   <li class="fd-list__item">
@@ -154,7 +154,7 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
   <li class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
   </li>
-  <li class="fd-list__item">
+  <li class="fd-list__item is-selected">
       <span class="fd-list__title">List item 2</span>
   </li>
   <li class="fd-list__item">
@@ -178,7 +178,7 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
   <li class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
   </li>
-  <li class="fd-list__item">
+  <li class="fd-list__item is-selected">
       <span class="fd-list__title">List item 2</span>
   </li>
   <li class="fd-list__item">
