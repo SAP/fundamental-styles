@@ -11,6 +11,8 @@ $fd-dialog-overlay-color: rgba(0, 0, 0, 0.6); // Should be fade(var(--sapBlockLa
 
 %dialog {
   position: fixed;
+  align-items: center;
+  justify-content: center;
   top: 0;
   left: 0;
   width: 100%;
@@ -21,7 +23,7 @@ $fd-dialog-overlay-color: rgba(0, 0, 0, 0.6); // Should be fade(var(--sapBlockLa
 %dialog-content {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  outline: none;
   position: absolute;
   top: 50%;
   left: 50%;

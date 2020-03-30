@@ -34,10 +34,12 @@ $message-box-states: (
   &__content {
     @extend %dialog-content;
 
+    overflow: hidden;
+
     @each $size-label, $size in $fd-message-box-content-padding-x {
       &--#{$size-label} {
-        .#{$block}__header.#{$bar}--header,
-        .#{$block}__footer.#{$bar}--footer,
+        .#{$block}__header.#{$bar},
+        .#{$block}__footer.#{$bar},
         .#{$block}__body {
           padding-left: map_get($fd-message-box-content-padding-x, $size-label);
           padding-right: map_get($fd-message-box-content-padding-x, $size-label);
@@ -50,9 +52,11 @@ $message-box-states: (
     }
   }
 
-  &__header.#{$bar}--header,
-  &__footer.#{$bar}--footer {
-    @extend %dialog-paddings;
+  &__header,
+  &__footer {
+    &.#{$bar} {
+      @extend %dialog-paddings;
+    }
   }
 
   &__footer {
@@ -76,21 +80,20 @@ $message-box-states: (
     font-size: $fd-message-box-title-icon-text-size;
   }
 
-  &__link {
+  &__more {
     @include fd-reset();
 
-    display: block;
     margin-top: 1rem;
   }
 
   // MODIFIERS
   &--active {
-    display: block;
+    display: flex;
   }
 
   @each $set-name, $state-set in $message-box-states {
     &--#{$set-name} {
-      .#{$block}__header.#{$bar}--header {
+      .#{$block}__header.#{$bar} {
         box-shadow: map_get($state-set, "boxShadow");
       }
 

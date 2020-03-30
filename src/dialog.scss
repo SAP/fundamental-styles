@@ -37,6 +37,9 @@ $button: #{$fd-namespace}-button;
   // RESIZE HANDLE
   $fd-dialog-resize-handle-color: var(--sapButton_Lite_TextColor);
 
+  // HEADER
+  $fd-dialog-title-font-size: 1rem;
+
   // BODY
   $fd-dialog-body-padding-y: 1rem;
   $fd-dialog-body-color: var(--sapGroup_ContentBackground);
@@ -52,7 +55,7 @@ $button: #{$fd-namespace}-button;
   display: none;
 
   &--active {
-    display: block;
+    display: flex;
   }
 
   &__content {
@@ -62,10 +65,9 @@ $button: #{$fd-namespace}-button;
 
     @each $size-label, $size in $fd-dialog-content-padding-x {
       &--#{$size-label} {
-        .#{$block}__header.#{$bar}--header,
-        .#{$block}__header.#{$bar}--header-with-subheader,
-        .#{$block}__subheader.#{$bar}--subheader,
-        .#{$block}__footer.#{$bar}--footer,
+        .#{$block}__header.#{$bar},
+        .#{$block}__subheader.#{$bar},
+        .#{$block}__footer.#{$bar},
         .#{$block}__body {
           padding-left: map_get($fd-dialog-content-padding-x, $size-label);
           padding-right: map_get($fd-dialog-content-padding-x, $size-label);
@@ -103,11 +105,25 @@ $button: #{$fd-namespace}-button;
     }
   }
 
-  &__header.#{$bar}--header,
-  &__header.#{$bar}--header-with-subheader,
-  &__subheader.#{$bar}--subheader,
-  &__footer.#{$bar}--footer {
-    @extend %dialog-paddings;
+  &__header,
+  &__subheader,
+  &__footer {
+    &.#{$bar} {
+      @extend %dialog-paddings;
+    }
+  }
+
+  &__header.#{$bar},
+  &__footer.#{$bar} {
+    .#{$block}__decisive-button {
+      min-width: $fd-dialog-footer-button-min-width;
+    }
+  }
+
+  &__header.#{$bar} {
+    position: relative;
+    border-top-left-radius: $fd-dialog-content-border-radius;
+    border-top-right-radius: $fd-dialog-content-border-radius;
   }
 
   &__body {
@@ -117,17 +133,28 @@ $button: #{$fd-namespace}-button;
 
     padding-top: $fd-dialog-body-padding-y;
     padding-bottom: $fd-dialog-body-padding-y;
+    border-radius: $fd-dialog-content-border-radius;
 
     &--no-vertical-padding {
       padding-top: 0;
       padding-bottom: 0;
     }
+
+    & ~ .#{$block}__header,
+    & ~ .#{$block}__subheader {
+      border-top-left-radius: initial;
+      border-top-right-radius: initial;
+    }
+
+    & + :not(.#{$block}__footer) {
+      border-bottom-left-radius: initial;
+      border-bottom-right-radius: initial;
+    }
   }
 
-  &__footer {
-    .#{$block}__decisive-button.#{$button} {
-      min-width: $fd-dialog-footer-button-min-width;
-    }
+  &__footer.#{$bar} {
+    border-bottom-left-radius: $fd-dialog-content-border-radius;
+    border-bottom-right-radius: $fd-dialog-content-border-radius;
   }
 
   &__loader {
@@ -155,5 +182,7 @@ $button: #{$fd-namespace}-button;
   &__title {
     @include fd-reset();
     @include fd-ellipsis();
+
+    font-size: $fd-dialog-title-font-size;
   }
 }

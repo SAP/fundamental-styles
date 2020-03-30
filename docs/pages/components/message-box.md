@@ -90,7 +90,9 @@ Available options are `standard | confirmation | error | success | warning | inf
         </header>
         <div class="fd-message-box__body">
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            <a href="#" class="fd-link fd-message-box__link" tabindex="0">Show more</a>
+            <div class="fd-message-box__more">
+                <a href="#" class="fd-link" tabindex="0">Show more</a>
+            </div>
         </div>
         <footer class="fd-bar fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
@@ -261,7 +263,9 @@ To remove the semantic icon from the title of the Message Box apply the `fd-mess
         </header>
         <div class="fd-message-box__body">
             Success Message Box with no status icon in the title and "Show more" link in the body
-            <a href="#" class="fd-link fd-message-box__link" tabindex="0">Show more</a>
+            <div class="fd-message-box__more">
+                <a href="#" class="fd-link" tabindex="0">Show more</a>
+            </div>
         </div>
         <footer class="fd-bar fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
@@ -337,7 +341,9 @@ On phone devices the content container takes 100vh and 100vw. It's achieved by a
         </header>
         <div class="fd-message-box__body">
             Information Message Box on small screen in Cosy mode 
-            <a href="#" class="fd-link fd-message-box__link" tabindex="0">Show more</a>
+            <div class="fd-message-box__more">
+                <a href="#" class="fd-link" tabindex="0">Show more</a>
+            </div>
         </div>
         <footer class="fd-bar fd-bar--cosy fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
