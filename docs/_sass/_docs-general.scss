@@ -50,7 +50,6 @@ img {
 a {
     text-decoration: none;
     display: inline-block;
-    transition: all $fd-animation-speed ease-in;
     color: --fd-color-action;
     &:hover {
         color: fd-color-state("hover", "action");

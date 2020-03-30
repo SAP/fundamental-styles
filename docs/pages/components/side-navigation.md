@@ -122,6 +122,7 @@ The lists in both sections (Main and Utility) should have the `fd-nested-list--t
 
 ## Side navigation with multiple levels - cozy mode
 Use this when there is more than one level of hierarchy in the left navigation. The entries on the first level are just group headers(don't trigger navigation themselves). It's recommended to use up to two levels of navigation. For more levels of navigation, use the content area. 
+On expand, the `is-expanded` class should be propagated also to `__content` element. `fd-nested-list__expand-ico    n` is element, which triggers another level.
 
 {% capture default %}
 <nav class="fd-side-nav">
@@ -138,17 +139,11 @@ Use this when there is more than one level of hierarchy in the left navigation. 
                 </a>
             </li>            
             <li class="fd-nested-list__item">
-                <div class="fd-nested-list__content has-child">
-                    <a class="fd-nested-list__link" href="#">
+                <div class="fd-nested-list__content has-child" tabindex="0">
+                    <a class="fd-nested-list__link" href="#" tabindex="-1">
                         <span class="fd-nested-list__title">Level 1 Item</span>
                     </a>
-                    <a class="fd-nested-list__expand-icon" href="#" aria-controls="EX100L2" aria-haspopup="true"></a>
-                </div>
-            </li>
-            <li class="fd-nested-list__item">
-                <div class="fd-nested-list__content">
-                    <a class="fd-nested-list__title" href="#">Level 1 Item</a>
-                    <a class="fd-nested-list__expand-icon" href="#" aria-controls="EX100L2" aria-haspopup="true"></a>
+                    <a class="fd-nested-list__expand-icon" href="#" tabindex="-1" aria-controls="EX100L2" aria-haspopup="true"></a>
                 </div>
                 <ul class="fd-nested-list level-2" id="EX100L2" aria-hidden="true">
                     <li class="fd-nested-list__item">
@@ -222,10 +217,13 @@ Use this when there is more than one level of hierarchy in the left navigation. 
                 </a>
             </li>
             <li class="fd-nested-list__item">
-                <a class="fd-nested-list__link is-selected has-child" href="#" aria-controls="EX400L2" aria-haspopup="true">
-                    <span class="fd-nested-list__icon sap-icon--employee"></span>
-                    <span class="fd-nested-list__title">Level 1 Item</span>
-                </a>
+                 <div class="fd-nested-list__content is-selected has-child" tabindex="0">
+                    <a class="fd-nested-list__link" href="#" tabindex="-1">
+                        <span class="fd-nested-list__icon sap-icon--employee"></span>
+                        <span class="fd-nested-list__title">Level 1 Item</span>
+                    </a>
+                    <a class="fd-nested-list__expand-icon" href="#" aria-controls="EX400L2" tabindex="-1" aria-haspopup="true"></a>
+                </div>
                 <ul class="fd-nested-list fd-nested-list--text-only level-2" id="EX400L2" aria-hidden="true">
                     <li class="fd-nested-list__item">
                         <a class="fd-nested-list__link" href="#">
@@ -313,10 +311,12 @@ The lists in both sections (Main and Utility) should have the `fd-nested-list--c
                 </a>
             </li>
             <li class="fd-nested-list__item">
-                <a class="fd-nested-list__link has-child" href="#" aria-controls="EX500L2" aria-haspopup="true">
-                    <span class="fd-nested-list__icon sap-icon--employee"></span>
-                    <span class="fd-nested-list__title">Level 1 Item</span>
-                </a>
+                <div class="fd-nested-list__content has-child" tabindex="0">
+                    <a class="fd-nested-list__link" href="#" tabindex="-1">
+                        <span class="fd-nested-list__title">Level 1 Item</span>
+                    </a>
+                    <a class="fd-nested-list__expand-icon" href="#" tabindex="-1" aria-controls="EX500L2" aria-haspopup="true"></a>
+                </div>
                 <ul class="fd-nested-list fd-nested-list--text-only level-2" id="EX500L2" aria-hidden="true">
                     <li class="fd-nested-list__item">
                         <a class="fd-nested-list__link" href="#">
@@ -402,10 +402,13 @@ Use the `fd-side-nav--condensed` modifier class for `condensed` state.
                 </a>
             </li>
             <li class="fd-nested-list__item">
-                <a class="fd-nested-list__link is-selected has-child" href="#">
-                    <span class="fd-nested-list__icon sap-icon--employee"></span>
-                    <span class="fd-nested-list__title">Level 1 Item</span>
-                </a>
+                <div class="fd-nested-list__content is-selected has-child" tabindex="0">
+                    <a class="fd-nested-list__link" href="#" tabindex="-1">
+                        <span class="fd-nested-list__icon sap-icon--activities"></span>
+                        <span class="fd-nested-list__title">Level 1 Item</span>
+                    </a>
+                    <a class="fd-nested-list__expand-icon" href="#" tabindex="-1" aria-haspopup="true"></a>
+                </div>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
@@ -468,10 +471,12 @@ Use the `fd-side-nav--condensed` modifier class for `condensed` state.
                 </a>
             </li>
             <li class="fd-nested-list__item">
-                <a class="fd-nested-list__link is-selected has-child" href="#">
-                    <span class="fd-nested-list__icon sap-icon--employee"></span>
-                    <span class="fd-nested-list__title">Level 1 Item</span>
-                </a>
+                <div class="fd-nested-list__content is-selected has-child" tabindex="0">
+                    <a class="fd-nested-list__link" href="#" tabindex="-1">
+                        <span class="fd-nested-list__title">Level 1 Item</span>
+                    </a>
+                    <a class="fd-nested-list__expand-icon" href="#" tabindex="-1" aria-haspopup="true"></a>
+                </div>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">

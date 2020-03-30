@@ -51,11 +51,13 @@ $block: #{$fd-namespace}-side-nav;
 
     .#{$fd-namespace}-nested-list {
       &__title,
-      &__group-header {
+      &__group-header,
+      &__expand-icon {
         display: none;
       }
 
-      &__link {
+      &__link,
+      &__content {
         border-bottom: none;
 
         @include fd-selected() {
