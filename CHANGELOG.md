@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0-rc.36"></a>
+# [0.8.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.35...v0.8.0-rc.36) (2020-03-30)
+
+
+### Bug Fixes
+
+* added workaround for creating release notes ([#794](https://github.com/SAP/fundamental-styles/issues/794)) ([2e4f615](https://github.com/SAP/fundamental-styles/commit/2e4f615))
+
+
+
 <a name="0.8.0-rc.35"></a>
 # [0.8.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.34...v0.8.0-rc.35) (2020-03-29)
 
