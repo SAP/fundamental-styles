@@ -136,11 +136,20 @@ Use this when there is more than one level of hierarchy in the left navigation. 
                 <a class="fd-nested-list__link is-selected" href="#">
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
+            </li>            
+            <li class="fd-nested-list__item">
+                <div class="fd-nested-list__content has-child">
+                    <a class="fd-nested-list__link" href="#">
+                        <span class="fd-nested-list__title">Level 1 Item</span>
+                    </a>
+                    <a class="fd-nested-list__expand-icon" href="#" aria-controls="EX100L2" aria-haspopup="true"></a>
+                </div>
             </li>
             <li class="fd-nested-list__item">
-                <a class="fd-nested-list__link has-child" href="#" aria-controls="EX100L2" aria-haspopup="true">
-                    <span class="fd-nested-list__title">Level 1 Item</span>
-                </a>
+                <div class="fd-nested-list__content">
+                    <a class="fd-nested-list__title" href="#">Level 1 Item</a>
+                    <a class="fd-nested-list__expand-icon" href="#" aria-controls="EX100L2" aria-haspopup="true"></a>
+                </div>
                 <ul class="fd-nested-list level-2" id="EX100L2" aria-hidden="true">
                     <li class="fd-nested-list__item">
                         <a class="fd-nested-list__link" href="#">

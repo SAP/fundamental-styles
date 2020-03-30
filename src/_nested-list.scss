@@ -76,8 +76,10 @@ $block: #{$fd-namespace}-nested-list;
     @include fd-reset();
 
     text-decoration: none;
-    height: 2.75rem;
     display: flex;
+    overflow: hidden;
+    height: 2.75rem;
+    width: 100%;
     align-items: center;
     border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
 
@@ -103,48 +105,54 @@ $block: #{$fd-namespace}-nested-list;
       }
 
       .#{$block}__title,
-      .#{$block}__icon {
+      .#{$block}__icon,
+      .#{$block}__expand-icon {
         color: var(--sapList_Active_TextColor);
       }
     }
 
     &.has-child {
+      justify-content: space-between;
+      padding: 0;
+    }
+  }
+
+  &__expand-icon {
+    @include fd-flex-center();
+    @include fd-nested-list-arrow();
+    // `height: 0` is set to prevent breaking `align-items: center` on IE11
+    // Read more https://github.com/philipwalton/flexbugs/issues/231
+    min-height: 100%;
+    min-width: 2.75rem;
+    color: var(--sapList_TextColor);
+    font-size: var(--sapFontHeader4Size);
+
+    &::after {
+      content: "\e066";
+    }
+
+    @include fd-rtl() {
       &::after {
-        @include fd-flex-center();
-        @include fd-nested-list-arrow();
-        // `height: 0` is set to prevent breaking `align-items: center` on IE11
-        // Read more https://github.com/philipwalton/flexbugs/issues/231
-        height: 0;
-        min-height: 100%;
-        min-width: 2.75rem;
-        color: var(--sapList_TextColor);
-        font-size: var(--sapFontHeader4Size);
-        content: "\e066";
+        content: "\e067";
+      }
+    }
+
+    &.is-expanded,
+    &[aria-expanded="true"] {
+      border-bottom: none;
+
+      &::after {
+        content: "\e1e2";
       }
 
-      @include fd-rtl() {
-        &::after {
-          content: "\e067";
-        }
+      @include fd-selected() {
+        border-bottom: var(--sapList_BorderWidth) solid;
+        border-bottom-color: var(--sapList_SelectionBorderColor);
       }
+    }
 
-      &.is-expanded,
-      &[aria-expanded="true"] {
-        border-bottom: none;
-
-        &::after {
-          content: "\e1e2";
-        }
-
-        @include fd-selected() {
-          border-bottom: var(--sapList_BorderWidth) solid;
-          border-bottom-color: var(--sapList_SelectionBorderColor);
-        }
-      }
-
-      &:active::after {
-        color: var(--sapList_Active_TextColor);
-      }
+    &:active::after {
+      color: var(--sapList_Active_TextColor);
     }
   }
 
@@ -161,6 +169,7 @@ $block: #{$fd-namespace}-nested-list;
   &__title {
     @include fd-reset();
 
+    height: 100%;
     width: 100%;
     font-size: var(--sapFontLargeSize);
     color: var(--sapList_TextColor);
@@ -168,6 +177,8 @@ $block: #{$fd-namespace}-nested-list;
     overflow: hidden;
     text-overflow: ellipsis;
     padding-right: 1rem;
+    display: flex;
+    align-items: center;
 
     &:first-child {
       padding-left: 2.75rem;
@@ -215,6 +226,10 @@ $block: #{$fd-namespace}-nested-list;
     .#{$block}__link,
     .#{$block}__content {
       padding-left: 1rem;
+
+      &.has-child {
+        padding: 0;
+      }
     }
 
     .#{$block}__title {
