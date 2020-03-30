@@ -29,23 +29,28 @@ $block: #{$fd-namespace}-dialog;
   $fd-dialog-content-min-height: 7.5rem;
   $fd-dialog-content-box-shadow: var(--sapContent_Shadow3);
   $fd-dialog-content-border-radius: var(--sapElement_BorderCornerRadius);
-  $fd-dialog-content-padding-x: (def: 1rem, s: 1rem, m: 2rem, l: 2rem, xl: 3rem);
+  $fd-dialog-content-padding-x: (s: 1rem, m: 2rem, l: 2rem, xl: 3rem);
 
   // RESIZE HANDLE
   $fd-dialog-resize-handle-color: var(--sapButton_Lite_TextColor);
+
+  // LOADER
+  $fd-dialog-loader-margin-y: 1.5rem;
+
+  // HEADER
+  $fd-dialog-title-font-size: 1rem;
 
   // BODY
   $fd-dialog-body-padding-y: 1rem;
   $fd-dialog-body-color: var(--sapGroup_ContentBackground);
 
-  // LOADER
-  $fd-dialog-loader-margin-y: 1.5rem;
-
-  // Footer
+  // FOOTER
   $fd-dialog-footer-button-min-width: 4rem;
 
   display: none;
   position: fixed;
+  align-items: center;
+  justify-content: center;
   top: 0;
   left: 0;
   width: 100%;
@@ -53,7 +58,7 @@ $block: #{$fd-namespace}-dialog;
   background-color: $fd-dialog-overlay-color;
 
   &--active {
-    display: block;
+    display: flex;
   }
 
   &__content {
@@ -61,29 +66,14 @@ $block: #{$fd-namespace}-dialog;
 
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    outline: none;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     min-width: $fd-dialog-content-min-width;
     min-height: $fd-dialog-content-min-height;
     max-width: calc(100vw - #{$fd-dialog-content-margin-x});
     max-height: calc(100vh - #{$fd-dialog-content-margin-y});
     box-shadow: $fd-dialog-content-box-shadow;
     border-radius: $fd-dialog-content-border-radius;
-
-    @each $size-label, $size in $fd-dialog-content-padding-x {
-      &--#{$size-label} {
-        .#{$block}__header,
-        .#{$block}__subheader,
-        .#{$block}__body,
-        .#{$block}__footer {
-          padding-left: map_get($fd-dialog-content-padding-x, $size-label);
-          padding-right: map_get($fd-dialog-content-padding-x, $size-label);
-        }
-      }
-    }
 
     &--mobile {
       width: 100vw;
@@ -118,12 +108,37 @@ $block: #{$fd-namespace}-dialog;
     }
   }
 
-  &__header,
-  &__subheader,
-  &__footer {
-    padding-left: map_get($fd-dialog-content-padding-x, def);
-    padding-right: map_get($fd-dialog-content-padding-x, def);
+  @each $size-label, $size in $fd-dialog-content-padding-x {
+    &--#{$size-label} {
+      .#{$block}__header.#{$fd-namespace}-bar,
+      .#{$block}__subheader.#{$fd-namespace}-bar,
+      .#{$block}__footer.#{$fd-namespace}-bar,
+      .#{$block}__body {
+        padding-left: map_get($fd-dialog-content-padding-x, $size-label);
+        padding-right: map_get($fd-dialog-content-padding-x, $size-label);
+      }
+    }
+  }
+
+  &__header.#{$fd-namespace}-bar,
+  &__subheader.#{$fd-namespace}-bar,
+  &__footer.#{$fd-namespace}-bar {
+    padding-left: map_get($fd-dialog-content-padding-x, s);
+    padding-right: map_get($fd-dialog-content-padding-x, s);
     flex-shrink: 0;
+  }
+
+  &__header.#{$fd-namespace}-bar,
+  &__footer.#{$fd-namespace}-bar {
+    .#{$block}__decisive-button {
+      min-width: $fd-dialog-footer-button-min-width;
+    }
+  }
+
+  &__header.#{$fd-namespace}-bar {
+    position: relative;
+    border-top-left-radius: $fd-dialog-content-border-radius;
+    border-top-right-radius: $fd-dialog-content-border-radius;
   }
 
   &__body {
@@ -134,17 +149,28 @@ $block: #{$fd-namespace}-dialog;
     background-color: $fd-dialog-body-color;
     padding-top: $fd-dialog-body-padding-y;
     padding-bottom: $fd-dialog-body-padding-y;
+    border-radius: $fd-dialog-content-border-radius;
 
     &--no-vertical-padding {
       padding-top: 0;
       padding-bottom: 0;
     }
+
+    & ~ .#{$block}__header,
+    & ~ .#{$block}__subheader {
+      border-top-left-radius: initial;
+      border-top-right-radius: initial;
+    }
+
+    & + :not(.#{$block}__footer) {
+      border-bottom-left-radius: initial;
+      border-bottom-right-radius: initial;
+    }
   }
 
-  &__footer {
-    .#{$block}__decisive-button {
-      min-width: $fd-dialog-footer-button-min-width;
-    }
+  &__footer.#{$fd-namespace}-bar {
+    border-bottom-left-radius: $fd-dialog-content-border-radius;
+    border-bottom-right-radius: $fd-dialog-content-border-radius;
   }
 
   &__loader {
@@ -170,5 +196,7 @@ $block: #{$fd-namespace}-dialog;
   &__title {
     @include fd-reset();
     @include fd-ellipsis();
+
+    font-size: $fd-dialog-title-font-size;
   }
 }
