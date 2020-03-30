@@ -11,6 +11,24 @@
     .fd-list+(__item, __label, _input,  __title, __message, __footer)+(--no-wrap)
 */
 
+@mixin fake-list-outline($outlineColor: var(--sapContent_FocusColor)) {
+  &:focus,
+  &.is-focus {
+    outline: none;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) $outlineColor;
+      top: 0.1875rem;
+      left: 0.1875rem;
+      right: 0.1875rem;
+      bottom: 0.1875rem;
+    }
+  }
+}
+
 $block: #{$fd-namespace}-list;
 
 .#{$block} {
@@ -40,12 +58,13 @@ $block: #{$fd-namespace}-list;
   &__item {
     border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
     background: var(--sapList_Background);
+    position: relative;
 
     @include fd-hover() {
       background: var(--sapList_Hover_Background);
     }
 
-    @include fd-fiori-focus();
+    @include fake-list-outline();
 
     @include fd-selected() {
       background: var(--sapList_SelectionBackgroundColor);
@@ -63,9 +82,7 @@ $block: #{$fd-namespace}-list;
         background: var(--sapList_Active_Background);
       }
 
-      @include fd-fiori-focus() {
-        outline-color: var(--sapContent_ContrastFocusColor);
-      }
+      @include fake-list-outline(var(--sapContent_ContrastFocusColor));
 
       .#{$block}__title,
       .#{$block}__secondary,
