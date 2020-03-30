@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0-rc.37"></a>
+# [0.8.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.36...v0.8.0-rc.37) (2020-03-30)
+
+
+### Bug Fixes
+
+* replace info label border parameters ([#813](https://github.com/SAP/fundamental-styles/issues/813)) ([d0192b4](https://github.com/SAP/fundamental-styles/commit/d0192b4))
+
+
+
 <a name="0.8.0-rc.36"></a>
 # [0.8.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.35...v0.8.0-rc.36) (2020-03-30)
 
