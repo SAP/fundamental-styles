@@ -6,7 +6,7 @@
 
 ## What is Fundamental Library Styles?
 
-Fundamental Library Styles is a light-weight presentation layer that can be used with your UI framework of choice (e.g. Angular, React, Vue, etc.). With Fundamental Library Styles’ library of stylesheets and HTML tags, developers can build consistent Fiori apps in any web-based technology.
+Fundamental Library Styles is a light-weight presentation layer that can be used with your UI framework of choice (e.g. Angular, React, Vue, etc.). With Fundamental Library Styles, library of stylesheets and HTML tags, developers can build consistent Fiori apps in any web-based technology.
 
 **Learn more at http://sap.github.io/fundamental-styles/**
 
@@ -65,7 +65,7 @@ Fundamental Library Styles is aiming to deliver:
 * [Fiori 3.0](https://www.sap.com/products/fiori.html) compliant components
 * themable components built on top of [SAP Theming Base Content](https://github.com/SAP/theming-base-content) by consuming the CSS Custom Properties delivered by the theming library
 * self-contained components(each component style file contains all the styling needed to be rendered properly and at the same time avoid external styling bleeding in and bleading out. `Bleading in` means that global reset wouldn't affect the component and `bleading out` means that the component styling should not affect other HTML elements) 
-* An html reference specification that consuming libraries must adhere to.
+* An HTML reference specification that consuming libraries must adhere to.
 * Accessibility support
   * Accessibility - Color contrast support for WCAG 2.0 level AA (4.5:1 for typical text)
   * Accessibility - Semantic HTML reference
