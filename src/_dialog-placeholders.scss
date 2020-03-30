@@ -4,7 +4,7 @@ $fd-dialog-content-min-width: 20rem;
 $fd-dialog-content-min-height: 7.5rem;
 $fd-dialog-content-box-shadow: var(--sapContent_Shadow3);
 $fd-dialog-content-border-radius: var(--sapElement_BorderCornerRadius);
-$fd-dialog-content-padding-x: (def: 1rem, s: 1rem, m: 2rem, l: 2rem, xl: 3rem);
+$fd-dialog-content-padding-x: (s: 1rem, m: 2rem, l: 2rem, xl: 3rem);
 $fd-dialog-footer-button-min-width: 4rem;
 $fd-dialog-body-color: var(--sapGroup_ContentBackground);
 $fd-dialog-overlay-color: rgba(0, 0, 0, 0.6); // Should be fade(var(--sapBlockLayer_Background), 60)
@@ -41,8 +41,8 @@ $fd-dialog-overlay-color: rgba(0, 0, 0, 0.6); // Should be fade(var(--sapBlockLa
 }
 
 %dialog-paddings {
-  padding-left: map_get($fd-dialog-content-padding-x, def);
-  padding-right: map_get($fd-dialog-content-padding-x, def);
+  padding-left: map_get($fd-dialog-content-padding-x, s);
+  padding-right: map_get($fd-dialog-content-padding-x, s);
   flex-shrink: 0;
 }
 

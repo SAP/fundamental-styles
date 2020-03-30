@@ -4,11 +4,13 @@
 @import "./dialog-placeholders";
 
 $block: #{$fd-namespace}-message-box;
+$bar: #{$fd-namespace}-bar;
+$button: #{$fd-namespace}-button;
 
 $fd-message-box-icon-text-spacing: 0.5rem;
 $fd-message-box-title-icon-text-size: 1rem;
 $fd-message-box-footer-button-min-width: 4rem;
-$fd-message-box-content-padding-x: (def: 1rem, s: 1rem, m: 2rem, l: 2rem, xl: 3rem);
+$fd-message-box-content-padding-x: (s: 1rem, m: 2rem, l: 2rem, xl: 3rem);
 $defaultBoxShadow: var(--sapContent_HeaderShadow);
 $errorBoxShadow: inset 0 -0.0625rem var(--sapErrorBorderColor), var(--sapContent_HeaderShadow);
 $successBoxShadow: inset 0 -0.0625rem var(--sapSuccessBorderColor), var(--sapContent_HeaderShadow);
@@ -34,9 +36,9 @@ $message-box-states: (
 
     @each $size-label, $size in $fd-message-box-content-padding-x {
       &--#{$size-label} {
-        .#{$block}__header,
-        .#{$block}__body,
-        .#{$block}__footer {
+        .#{$block}__header.#{$bar}--header,
+        .#{$block}__footer.#{$bar}--footer,
+        .#{$block}__body {
           padding-left: map_get($fd-message-box-content-padding-x, $size-label);
           padding-right: map_get($fd-message-box-content-padding-x, $size-label);
         }
@@ -48,13 +50,13 @@ $message-box-states: (
     }
   }
 
-  &__header,
-  &__footer {
+  &__header.#{$bar}--header,
+  &__footer.#{$bar}--footer {
     @extend %dialog-paddings;
   }
 
   &__footer {
-    .#{$block}__decisive-button {
+    .#{$block}__decisive-button.#{$button} {
       min-width: $fd-message-box-footer-button-min-width;
     }
   }
@@ -88,7 +90,7 @@ $message-box-states: (
 
   @each $set-name, $state-set in $message-box-states {
     &--#{$set-name} {
-      .#{$block}__header {
+      .#{$block}__header.#{$bar}--header {
         box-shadow: map_get($state-set, "boxShadow");
       }
 

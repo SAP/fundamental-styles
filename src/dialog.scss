@@ -17,6 +17,8 @@
       .fd-dialog__resize-handle
 */
 $block: #{$fd-namespace}-dialog;
+$bar: #{$fd-namespace}-bar;
+$button: #{$fd-namespace}-button;
 
 .#{$block} {
 
@@ -60,10 +62,11 @@ $block: #{$fd-namespace}-dialog;
 
     @each $size-label, $size in $fd-dialog-content-padding-x {
       &--#{$size-label} {
-        .#{$block}__header,
-        .#{$block}__subheader,
-        .#{$block}__body,
-        .#{$block}__footer {
+        .#{$block}__header.#{$bar}--header,
+        .#{$block}__header.#{$bar}--header-with-subheader,
+        .#{$block}__subheader.#{$bar}--subheader,
+        .#{$block}__footer.#{$bar}--footer,
+        .#{$block}__body {
           padding-left: map_get($fd-dialog-content-padding-x, $size-label);
           padding-right: map_get($fd-dialog-content-padding-x, $size-label);
         }
@@ -100,9 +103,10 @@ $block: #{$fd-namespace}-dialog;
     }
   }
 
-  &__header,
-  &__subheader,
-  &__footer {
+  &__header.#{$bar}--header,
+  &__header.#{$bar}--header-with-subheader,
+  &__subheader.#{$bar}--subheader,
+  &__footer.#{$bar}--footer {
     @extend %dialog-paddings;
   }
 
@@ -121,7 +125,7 @@ $block: #{$fd-namespace}-dialog;
   }
 
   &__footer {
-    .#{$block}__decisive-button {
+    .#{$block}__decisive-button.#{$button} {
       min-width: $fd-dialog-footer-button-min-width;
     }
   }
