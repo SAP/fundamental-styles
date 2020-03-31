@@ -313,6 +313,7 @@ The lists in both sections (Main and Utility) should have the `fd-nested-list--c
             <li class="fd-nested-list__item">
                 <div class="fd-nested-list__content has-child" tabindex="0">
                     <a class="fd-nested-list__link" href="#" tabindex="-1">
+                        <span class="fd-nested-list__icon sap-icon--employee"></span>
                         <span class="fd-nested-list__title">Level 1 Item</span>
                     </a>
                     <a class="fd-nested-list__expand-icon" href="#" tabindex="-1" aria-controls="EX500L2" aria-haspopup="true"></a>

@@ -321,10 +321,6 @@ $block: #{$fd-namespace}-nested-list;
 
     .#{$block}__expand-icon {
       min-width: 2rem;
-
-      &::after {
-        font-size: var(--sapFontSize);
-      }
     }
   }
 }
