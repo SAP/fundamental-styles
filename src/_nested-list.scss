@@ -114,18 +114,25 @@ $block: #{$fd-namespace}-nested-list;
       justify-content: space-between;
       padding: 0;
 
-      .#{$block}__title {
-        padding-right: 0;
-
-        @include fd-rtl() {
-          padding-left: 0;
-        }
-      }
-
       > .#{$block}__link {
         background: transparent;
         border: none;
         height: 100%;
+
+        > .#{$block}__title {
+          padding-right: 0;
+
+          @include fd-rtl() {
+            padding-left: 0;
+          }
+        }
+      }
+
+      > .#{$block}__link,
+      > .#{$block}__expand-icon {
+        @include fd-fiori-focus() {
+          outline: none;
+        }
       }
     }
   }
