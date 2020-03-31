@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0-rc.43"></a>
+# [0.8.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.42...v0.8.0-rc.43) (2020-03-31)
+
+
+
 <a name="0.8.0-rc.42"></a>
 # [0.8.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.41...v0.8.0-rc.42) (2020-03-31)
 
