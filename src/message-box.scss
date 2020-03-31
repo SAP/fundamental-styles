@@ -74,10 +74,7 @@ $message-box-states: (
   }
 
   &__title {
-    @include fd-reset();
-    @include fd-ellipsis();
-
-    font-size: $fd-message-box-title-icon-text-size;
+    @extend %dialog-title;
   }
 
   &__more {

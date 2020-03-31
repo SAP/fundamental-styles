@@ -37,9 +37,6 @@ $button: #{$fd-namespace}-button;
   // RESIZE HANDLE
   $fd-dialog-resize-handle-color: var(--sapButton_Lite_TextColor);
 
-  // HEADER
-  $fd-dialog-title-font-size: 1rem;
-
   // BODY
   $fd-dialog-body-padding-y: 1rem;
   $fd-dialog-body-color: var(--sapGroup_ContentBackground);
@@ -184,9 +181,6 @@ $button: #{$fd-namespace}-button;
   }
 
   &__title {
-    @include fd-reset();
-    @include fd-ellipsis();
-
-    font-size: $fd-dialog-title-font-size;
+    @extend %dialog-title;
   }
 }
