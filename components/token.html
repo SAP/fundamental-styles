@@ -27,7 +27,7 @@
 </script>
 <!-- End Google Tag Manager -->
 
-<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1583092772907683073">
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1585675029978964627">
 <link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -68,7 +68,7 @@
         <div class="docs-top-nav__support fd-has-float-right">
 
             <span class="fd-has-align-items-center fd-has-margin-right-small">
-                <span>v0.7.0</span>
+                <span>v0.8.0</span>
                 <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
                     <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
                         <title>GitHub</title>
@@ -151,42 +151,6 @@
         <a class="side-nav__headers-link"
            href="/fundamental-styles/getting-started.html">getting started</a>
         <ul>
-            
-        </ul>
-        <hr class="side-nav__seperator">
-    </li>
-    
-    
-    
-
-    
-
-    
-    <li class="side-nav__headers">
-        
-        <a class="side-nav__headers-link"
-           href="/fundamental-styles/foundation/index.html">foundation</a>
-        <ul>
-            
-            
-            
-            <li class="side-nav__links">
-                <a href="/fundamental-styles/foundation/spacing.html"
-                   class="side-nav__links-link">Spacing</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
-                <a href="/fundamental-styles/foundation/type.html"
-                   class="side-nav__links-link">Type</a>
-            </li>
-            
-            
-            
             
         </ul>
         <hr class="side-nav__seperator">
@@ -325,6 +289,16 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/patterns/search-input.html"
                    class="side-nav__links-link">Search Input</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/patterns/step-input.html"
+                   class="side-nav__links-link">Step Input</a>
             </li>
             
             
@@ -589,8 +563,28 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/components/message-box.html"
+                   class="side-nav__links-link">Message Box</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/notification.html"
                    class="side-nav__links-link">Notification</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/object-status.html"
+                   class="side-nav__links-link">Object Status</a>
             </li>
             
             
@@ -845,6 +839,7 @@
 
 	</div>
 </div>
+<div style="overflow-y: auto; max-height: 500px;">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
@@ -870,6 +865,8 @@
     <span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
 <span class="nt">&lt;/span&gt;</span></code></pre></figure>
+
+</div>
 
 <h2 id="selected-token">Selected Token</h2>
 <p><code class="highlighter-rouge">fd-token--selected</code> modifier different color of token</p>
@@ -904,6 +901,7 @@
 
 	</div>
 </div>
+<div style="overflow-y: auto; max-height: 500px;">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--selected"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
@@ -929,6 +927,8 @@
     <span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
 <span class="nt">&lt;/span&gt;</span></code></pre></figure>
+
+</div>
 
 <h2 id="readonly-token">Readonly Token</h2>
 <p><code class="highlighter-rouge">fd-token--readonly</code> modifier different color of token. Readonly token shouldn’t contain close button</p>
@@ -959,6 +959,7 @@
 
 	</div>
 </div>
+<div style="overflow-y: auto; max-height: 500px;">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--readonly"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
@@ -980,6 +981,8 @@
         Filter
     <span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/span&gt;</span></code></pre></figure>
+
+</div>
 
 <h2 id="compact-token">Compact Token</h2>
 <p><code class="highlighter-rouge">fd-token--compact</code> modifier adds compact mode</p>
@@ -1014,6 +1017,7 @@
 
 	</div>
 </div>
+<div style="overflow-y: auto; max-height: 500px;">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--compact"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
@@ -1040,14 +1044,18 @@
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
 <span class="nt">&lt;/span&gt;</span></code></pre></figure>
 
-<h2 id="tokenizer">Tokenizer</h2>
-<p>Tokenizer is container for tokens, can be placed inside multi input components. 
-To show focus on whole element, it’s needed to add <code class="highlighter-rouge">.is-focus</code> into container.</p>
+</div>
+
+<h2 id="tokenizer---cozy">Tokenizer - Cozy</h2>
+<p>Tokenizer is a container for tokens, often placed inside multi-input components. 
+To focus the whole element, <code class="highlighter-rouge">.is-focus</code> should be added to the container.
+The Cozy tokenizer is for small and medium sized screens. 
+The user can review the tokens by swiping them to the left or right.</p>
 
 <div class="fd-tile docs-component docs-component__">
     <div class="fd-tile__content">
 		
-<div class="fd-tokenizer">
+<div class="fd-tokenizer ">
     <div class="fd-tokenizer__inner">
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
@@ -1119,8 +1127,9 @@ To show focus on whole element, it’s needed to add <code class="highlighter-ro
 
 	</div>
 </div>
+<div style="overflow-y: auto; max-height: 500px;">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-tokenizer"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-tokenizer "</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-tokenizer__inner"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
@@ -1190,7 +1199,11 @@ To show focus on whole element, it’s needed to add <code class="highlighter-ro
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h2 id="compact-tokenizer">Compact Tokenizer</h2>
+</div>
+
+<h2 id="tokenizer---compact">Tokenizer - Compact</h2>
+<p>The Compact tokenizer is for large screens.
+The user can review tokens by pressing the right or left arrows on the keyboard.</p>
 
 <div class="fd-tile docs-component docs-component__">
     <div class="fd-tile__content">
@@ -1267,6 +1280,7 @@ To show focus on whole element, it’s needed to add <code class="highlighter-ro
 
 	</div>
 </div>
+<div style="overflow-y: auto; max-height: 500px;">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-tokenizer fd-tokenizer--compact"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-tokenizer__inner"</span><span class="nt">&gt;</span>
@@ -1337,6 +1351,151 @@ To show focus on whole element, it’s needed to add <code class="highlighter-ro
         <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input fd-input--compact fd-tokenizer__input"</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+</div>
+
+<h2 id="tokenizer---scrollable">Tokenizer - Scrollable</h2>
+<p>The Compact tokenizer is for large screens.
+The user can review tokens by pressing the <code class="highlighter-rouge">tab</code> and <code class="highlighter-rouge">shift + tab</code> on the keyboard.</p>
+
+<div class="fd-tile docs-component docs-component__">
+    <div class="fd-tile__content">
+		
+<div class="fd-tokenizer fd-tokenizer--scrollable">
+    <div class="fd-tokenizer__inner" id="tokenizer-scrollable">
+        <span class="fd-token" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Long Token Option 1
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Long Token Option 2
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Long Token Option 3
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Long Token Option 4
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Long Token Option 5
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Long Token Option 6
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Long Token Option 7
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Long Token Option 8
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token" role="button" tabindex="0">
+            <span class="fd-token__text">
+                Long Token Option 9
+            </span>
+            <button class="fd-token__close" tabindex="-1"></button>
+        </span>
+        <span class="fd-token fd-token--readonly">
+            <span class="fd-token__text">
+                Long Token Option 10
+            </span>
+        </span>
+        <input class="fd-input fd-tokenizer__input" />
+    </div>
+</div>
+
+	</div>
+</div>
+<div style="overflow-y: auto; max-height: 500px;">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-tokenizer fd-tokenizer--scrollable"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-tokenizer__inner"</span> <span class="na">id=</span><span class="s">"tokenizer-scrollable"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Long Token Option 1
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Long Token Option 2
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Long Token Option 3
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Long Token Option 4
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Long Token Option 5
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Long Token Option 6
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Long Token Option 7
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Long Token Option 8
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Long Token Option 9
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-token__close"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token fd-token--readonly"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-token__text"</span><span class="nt">&gt;</span>
+                Long Token Option 10
+            <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-input fd-tokenizer__input"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+</div>
 
 
 

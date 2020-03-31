@@ -27,7 +27,7 @@
 </script>
 <!-- End Google Tag Manager -->
 
-<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1583092772907683073">
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1585675029978964627">
 <link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -68,7 +68,7 @@
         <div class="docs-top-nav__support fd-has-float-right">
 
             <span class="fd-has-align-items-center fd-has-margin-right-small">
-                <span>v0.7.0</span>
+                <span>v0.8.0</span>
                 <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
                     <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
                         <title>GitHub</title>
@@ -151,42 +151,6 @@
         <a class="side-nav__headers-link"
            href="/fundamental-styles/getting-started.html">getting started</a>
         <ul>
-            
-        </ul>
-        <hr class="side-nav__seperator">
-    </li>
-    
-    
-    
-
-    
-
-    
-    <li class="side-nav__headers">
-        
-        <a class="side-nav__headers-link"
-           href="/fundamental-styles/foundation/index.html">foundation</a>
-        <ul>
-            
-            
-            
-            <li class="side-nav__links">
-                <a href="/fundamental-styles/foundation/spacing.html"
-                   class="side-nav__links-link">Spacing</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
-                <a href="/fundamental-styles/foundation/type.html"
-                   class="side-nav__links-link">Type</a>
-            </li>
-            
-            
-            
             
         </ul>
         <hr class="side-nav__seperator">
@@ -325,6 +289,16 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/patterns/search-input.html"
                    class="side-nav__links-link">Search Input</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/patterns/step-input.html"
+                   class="side-nav__links-link">Step Input</a>
             </li>
             
             
@@ -589,8 +563,28 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/components/message-box.html"
+                   class="side-nav__links-link">Message Box</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/notification.html"
                    class="side-nav__links-link">Notification</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/object-status.html"
+                   class="side-nav__links-link">Object Status</a>
             </li>
             
             
@@ -815,7 +809,7 @@
 
 <h2 class="docs-header-h2" id="current-version-github">Current version (<a href="https://github.com/SAP/fundamental-styles/releases" target="_blank">GitHub</a>)</h2>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.7.0
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.8.0
 </code></pre></div></div>
 
 <h2 class="docs-header-h2" id="npm">NPM</h2>
@@ -825,8 +819,51 @@
 
 <h2 class="docs-header-h2" id="cdn-link">CDN link</h2>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://unpkg.com/fundamental-styles@0.7.0/dist/fundamental-styles.css
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://unpkg.com/fundamental-styles@0.8.0/dist/fundamental-styles.css
 </code></pre></div></div>
+
+<h2 id="fonts">Fonts</h2>
+
+<p>SAP 72 font family was designed from the ground up and made it possible to meet SAP Fiori’s typographic requirements, including - legibility enhancements, font styles, brand voice, character set and language support.</p>
+
+<p><br /></p>
+<p class="docs-type_SAP">
+<span class="docs-type_drop-cap">72</span>
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z <br />
+a b c d e f g h i j k l m n o p q r s t u v w x y z <br />
+1 2 3 4 5 6 7 8 9 0 <br />
+​‘ ? ’ “ ! ” ( % ) [ # ] { @ } / &amp; \ &lt; - + ÷ × = &gt; ® © $ € £ ¥ ¢ : ; , . *
+</p>
+<p><br />
+<br />
+<a href="https://experience.sap.com/72/" target="_blank">Learn More about the SAP 72 Font Family</a>
+<br /></p>
+
+<h2 id="icons">Icons</h2>
+
+<p>See the <a href="/fundamental-styles/components/icon.html">Icon Component</a> for a list of icon class names. See <a href="#Project-configuration">Project Configuration</a> below for instructions to include SAP Fiori 3 icons in your project.</p>
+
+<h2 id="project-configuration">Project Configuration</h2>
+
+<p>This project does not contain fonts and icons - they must be added to your project separately. Fonts and icons can be found at <a href="https://github.com/SAP/theming-base-content" target="_blank"><code class="highlighter-rouge">@sap-theming/theming-base-content</code></a>. After importing fonts and icons from <a href="https://github.com/SAP/theming-base-content" target="_blank"><code class="highlighter-rouge">@sap-theming/theming-base-content</code></a>, add the following to your css:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    @font-face {
+        font-family: "72";
+        src: url("path/to/fonts") format("woff"); // Bold, Light, Regular available in woff and woff2
+        font-weight: normal;
+        font-style: normal;
+    };
+
+    @font-face {
+        font-family: "SAP-icons";
+        src: url("path/to/icons") format("woff"); // available in woff, woff2 and ttf
+        font-weight: normal;
+        font-style: normal;
+    }
+</code></pre></div></div>
+<p><br />
+If you are not supporting IE11, the recommended format is <code class="highlighter-rouge">woff2</code>. If supporting IE11, use <code class="highlighter-rouge">woff</code>.</p>
+
 
 
     <div class="tags">

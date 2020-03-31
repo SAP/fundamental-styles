@@ -197,17 +197,6 @@
 
 
 {
-"title": "Designers",
-"tags": "",
-"keywords": "getting started designers",
-"url": "/foundation/getting-started-designers.html",
-"folder": "foundation"
-}
-,
-
-
-
-{
 "title": "Getting Started",
 "tags": "",
 "keywords": "getting started",
@@ -290,17 +279,6 @@
 "keywords": "patterns",
 "url": "/patterns/index.html",
 "folder": "Patterns"
-}
-,
-
-
-
-{
-"title": "Foundation",
-"tags": "",
-"keywords": "guide, guides",
-"url": "/foundation/index.html",
-"folder": "foundation"
 }
 ,
 
@@ -452,6 +430,17 @@
 
 
 {
+"title": "Message Box",
+"tags": "",
+"keywords": "message message-box",
+"url": "/components/message-box.html",
+"folder": "components"
+}
+,
+
+
+
+{
 "title": "Message Strip",
 "tags": "",
 "keywords": "message alert message-strip",
@@ -482,6 +471,17 @@
 "tags": "",
 "keywords": "notification",
 "url": "/components/notification.html",
+"folder": "components"
+}
+,
+
+
+
+{
+"title": "Object Status",
+"tags": "",
+"keywords": "object status, status, object, object-status, clickable, generic indication",
+"url": "/components/object-status.html",
 "folder": "components"
 }
 ,
@@ -627,22 +627,22 @@
 
 
 {
-"title": "Spacing",
+"title": "Status Indicators",
 "tags": "",
-"keywords": "spacing",
-"url": "/foundation/spacing.html",
-"folder": "fundamentals"
+"keywords": "status indicators, status, indicators, badge, label, counter",
+"url": "/components/status-indicators.html",
+"folder": "components"
 }
 ,
 
 
 
 {
-"title": "Status Indicators",
+"title": "Step Input",
 "tags": "",
-"keywords": "status indicators, status, indicators, badge, label, counter",
-"url": "/components/status-indicators.html",
-"folder": "components"
+"keywords": "step input",
+"url": "/patterns/step-input.html",
+"folder": "patterns"
 }
 ,
 
@@ -737,17 +737,6 @@
 "keywords": "tree",
 "url": "/components/tree.html",
 "folder": "components"
-}
-,
-
-
-
-{
-"title": "Typography",
-"tags": "",
-"keywords": "type",
-"url": "/foundation/type.html",
-"folder": "fundamentals"
 }
 ,
 
