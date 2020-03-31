@@ -13,6 +13,8 @@ $fd-dialog-body-color: var(--sapGroup_ContentBackground);
 $fd-dialog-overlay-color: rgba(0, 0, 0, 0.6); // Should be fade(var(--sapBlockLayer_Background), 60)
 
 %dialog {
+  @include fd-reset();
+
   position: fixed;
   align-items: center;
   justify-content: center;
@@ -24,6 +26,8 @@ $fd-dialog-overlay-color: rgba(0, 0, 0, 0.6); // Should be fade(var(--sapBlockLa
 }
 
 %dialog-content {
+  @include fd-reset();
+
   display: flex;
   flex-direction: column;
   outline: none;
@@ -37,6 +41,8 @@ $fd-dialog-overlay-color: rgba(0, 0, 0, 0.6); // Should be fade(var(--sapBlockLa
 }
 
 %dialog-body {
+  @include fd-reset();
+
   overflow: auto;
   flex-grow: 1;
   background-color: $fd-dialog-body-color;

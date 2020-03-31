@@ -66,8 +66,6 @@ $message-box-states: (
   }
 
   &__body {
-    @include fd-reset();
-
     @extend %dialog-body;
 
     padding: 1rem;
