@@ -51,6 +51,9 @@
     - title: Message Strip
       meta: message-strip
 
+    - title: Message Box
+      meta: message-box
+
     - title: Notification
       meta: notification
 

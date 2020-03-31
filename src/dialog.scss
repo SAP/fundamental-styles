@@ -2,6 +2,7 @@
 @import "./mixins";
 @import "./functions";
 @import "./overlay.scss";
+@import "./dialog-placeholders";
 
 /*!
   .fd-dialog+(--active)
@@ -16,6 +17,8 @@
       .fd-dialog__resize-handle
 */
 $block: #{$fd-namespace}-dialog;
+$bar: #{$fd-namespace}-bar;
+$button: #{$fd-namespace}-button;
 
 .#{$block} {
 
@@ -44,41 +47,27 @@ $block: #{$fd-namespace}-dialog;
   // Footer
   $fd-dialog-footer-button-min-width: 4rem;
 
+  @include fd-reset();
+
+  @extend %dialog;
+
   display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: $fd-dialog-overlay-color;
 
   &--active {
-    display: block;
+    display: flex;
   }
 
   &__content {
     @include fd-reset();
 
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: $fd-dialog-content-min-width;
-    min-height: $fd-dialog-content-min-height;
-    max-width: calc(100vw - #{$fd-dialog-content-margin-x});
-    max-height: calc(100vh - #{$fd-dialog-content-margin-y});
-    box-shadow: $fd-dialog-content-box-shadow;
-    border-radius: $fd-dialog-content-border-radius;
+    @extend %dialog-content;
 
     @each $size-label, $size in $fd-dialog-content-padding-x {
       &--#{$size-label} {
-        .#{$block}__header,
-        .#{$block}__subheader,
-        .#{$block}__body,
-        .#{$block}__footer {
+        .#{$block}__header.#{$bar},
+        .#{$block}__subheader.#{$bar},
+        .#{$block}__footer.#{$bar},
+        .#{$block}__body {
           padding-left: map_get($fd-dialog-content-padding-x, $size-label);
           padding-right: map_get($fd-dialog-content-padding-x, $size-label);
         }
@@ -86,10 +75,7 @@ $block: #{$fd-namespace}-dialog;
     }
 
     &--mobile {
-      width: 100vw;
-      height: 100vh;
-      max-width: 100vw;
-      max-height: 100vh;
+      @extend %dialog-mobile;
     }
 
     &--no-mobile-stretch {
@@ -121,30 +107,53 @@ $block: #{$fd-namespace}-dialog;
   &__header,
   &__subheader,
   &__footer {
-    padding-left: map_get($fd-dialog-content-padding-x, def);
-    padding-right: map_get($fd-dialog-content-padding-x, def);
-    flex-shrink: 0;
+    &.#{$bar} {
+      @extend %dialog-paddings;
+    }
+  }
+
+  &__header.#{$bar},
+  &__footer.#{$bar} {
+    .#{$block}__decisive-button {
+      min-width: $fd-dialog-footer-button-min-width;
+    }
+  }
+
+  &__header.#{$bar} {
+    position: relative;
+    border-top-left-radius: $fd-dialog-content-border-radius;
+    border-top-right-radius: $fd-dialog-content-border-radius;
   }
 
   &__body {
     @include fd-reset();
 
-    overflow: auto;
-    flex-grow: 1;
-    background-color: $fd-dialog-body-color;
+    @extend %dialog-body;
+
     padding-top: $fd-dialog-body-padding-y;
     padding-bottom: $fd-dialog-body-padding-y;
+    border-radius: $fd-dialog-content-border-radius;
 
     &--no-vertical-padding {
       padding-top: 0;
       padding-bottom: 0;
     }
+
+    .#{$block}__header + &,
+    .#{$block}__subheader + & {
+      border-top-left-radius: initial;
+      border-top-right-radius: initial;
+    }
+
+    &:not(:last-child) {
+      border-bottom-left-radius: initial;
+      border-bottom-right-radius: initial;
+    }
   }
 
-  &__footer {
-    .#{$block}__decisive-button {
-      min-width: $fd-dialog-footer-button-min-width;
-    }
+  &__footer.#{$bar} {
+    border-bottom-left-radius: $fd-dialog-content-border-radius;
+    border-bottom-right-radius: $fd-dialog-content-border-radius;
   }
 
   &__loader {
@@ -156,10 +165,14 @@ $block: #{$fd-namespace}-dialog;
   }
 
   &__resize-handle {
+    @include fd-reset();
+
     position: absolute;
     right: 0;
     bottom: -1px;
     cursor: se-resize;
+    overflow: hidden;
+    border-bottom-right-radius: $fd-dialog-content-border-radius;
 
     @include fd-icon("resize-corner", "m", "after") {
       display: flex;
@@ -168,7 +181,6 @@ $block: #{$fd-namespace}-dialog;
   }
 
   &__title {
-    @include fd-reset();
-    @include fd-ellipsis();
+    @extend %dialog-title;
   }
 }
