@@ -170,10 +170,6 @@ $block: #{$fd-namespace}-nested-list;
         content: "\e1e2";
       }
     }
-
-    &:active::after {
-      color: var(--sapList_Active_TextColor);
-    }
   }
 
   &__icon {

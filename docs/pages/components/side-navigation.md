@@ -383,13 +383,11 @@ The lists in both sections (Main and Utility) should have the `fd-nested-list--c
 
 ## Side navigation with icons - condensed state
 Use the `fd-side-nav--condensed` modifier class for `condensed` state.
+Group headers are forbidden in `condensed` state.
 {% capture default %}
 <nav class="fd-side-nav fd-side-nav--condensed">
     <div class="fd-side-nav__main-navigation">
         <ul class="fd-nested-list">
-            <li class="fd-nested-list__group-header">
-                Group Header 1
-            </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
                     <span class="fd-nested-list__icon sap-icon--home"></span>
@@ -416,9 +414,6 @@ Use the `fd-side-nav--condensed` modifier class for `condensed` state.
                     <span class="fd-nested-list__icon sap-icon--activities"></span>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
-            </li>
-            <li class="fd-nested-list__group-header">
-                Group Header 2
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
@@ -456,9 +451,6 @@ Use the `fd-side-nav--condensed` modifier class for `condensed` state.
 <nav class="fd-side-nav fd-side-nav--condensed">
     <div class="fd-side-nav__main-navigation">
         <ul class="fd-nested-list fd-nested-list--compact">
-            <li class="fd-nested-list__group-header">
-                Group Header 1
-            </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
                     <span class="fd-nested-list__icon sap-icon--home"></span>
@@ -484,9 +476,6 @@ Use the `fd-side-nav--condensed` modifier class for `condensed` state.
                     <span class="fd-nested-list__icon sap-icon--activities"></span>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
-            </li>
-            <li class="fd-nested-list__group-header">
-                Group Header 2
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
