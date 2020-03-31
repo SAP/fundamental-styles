@@ -50,6 +50,8 @@ $button: #{$fd-namespace}-button;
   // Footer
   $fd-dialog-footer-button-min-width: 4rem;
 
+  @include fd-reset();
+
   @extend %dialog;
 
   display: none;
@@ -140,13 +142,13 @@ $button: #{$fd-namespace}-button;
       padding-bottom: 0;
     }
 
-    & ~ .#{$block}__header,
-    & ~ .#{$block}__subheader {
+    .#{$block}__header + &,
+    .#{$block}__subheader + & {
       border-top-left-radius: initial;
       border-top-right-radius: initial;
     }
 
-    & + :not(.#{$block}__footer) {
+    &:not(:last-child) {
       border-bottom-left-radius: initial;
       border-bottom-right-radius: initial;
     }
@@ -172,6 +174,8 @@ $button: #{$fd-namespace}-button;
     right: 0;
     bottom: -1px;
     cursor: se-resize;
+    overflow: hidden;
+    border-bottom-right-radius: $fd-dialog-content-border-radius;
 
     @include fd-icon("resize-corner", "m", "after") {
       display: flex;
