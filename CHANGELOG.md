@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0-rc.40"></a>
+# [0.8.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.39...v0.8.0-rc.40) (2020-03-31)
+
+
+### Bug Fixes
+
+* add border to the selected state in borderless design and fix outline-offset issue in IE11 ([#823](https://github.com/SAP/fundamental-styles/issues/823)) ([a3d018d](https://github.com/SAP/fundamental-styles/commit/a3d018d))
+
+
+
 <a name="0.8.0-rc.39"></a>
 # [0.8.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.38...v0.8.0-rc.39) (2020-03-30)
 
