@@ -151,10 +151,16 @@ The button triggers the last action chosen by the user. Initially, it also trigg
   id="t4c0o273">
     <nav class="fd-menu">
         <ul class="fd-menu__list">
-          <li><a role="button" class="fd-menu__item">Add to list</a>
-        </li>
-          <li><a role="button" class="fd-menu__item">Save for later</a>
-        </li>
+          <li class="fd-menu__item">
+              <a class="fd-menu__link" role="button" href="#">
+                  <span class="fd-menu__title">Add to list</span>
+              </a>
+          </li>
+          <li class="fd-menu__item">
+              <a class="fd-menu__link" role="button" href="#">
+                  <span class="fd-menu__title">Save for later</span>
+              </a>
+          </li>
         </ul>
     </nav>
   </div>
@@ -168,10 +174,16 @@ The button triggers the last action chosen by the user. Initially, it also trigg
     id="t4c0o2732">
     <nav class="fd-menu">
         <ul class="fd-menu__list">
-          <li><a role="button" class="fd-menu__item">Add to list</a>
-        </li>
-          <li><a role="button" class="fd-menu__item">Save for later</a>
-        </li>
+          <li class="fd-menu__item">
+              <a class="fd-menu__link" role="button" href="#">
+                  <span class="fd-menu__title">Add to list</span>
+              </a>
+          </li>
+          <li class="fd-menu__item">
+              <a class="fd-menu__link" role="button" href="#">
+                  <span class="fd-menu__title">Save for later</span>
+              </a>
+          </li>
         </ul>
     </nav>
   </div>
