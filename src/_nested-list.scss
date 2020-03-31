@@ -4,16 +4,6 @@
 
 $block: #{$fd-namespace}-nested-list;
 
-@mixin fd-nested-list-arrow {
-  font-family: "SAP-icons";
-  font-style: normal;
-  font-weight: normal;
-  font-size: var(--sapFontHeader4Size);
-  text-decoration: inherit;
-  text-transform: none;
-  speak: none;
-}
-
 .#{$block} {
   @mixin fd-nested-level-padding($paddingLeft, $paddingRight) {
     .#{$block}__link,
@@ -124,6 +114,14 @@ $block: #{$fd-namespace}-nested-list;
       justify-content: space-between;
       padding: 0;
 
+      .#{$block}__title {
+        padding-right: 0;
+
+        @include fd-rtl() {
+          padding-left: 0;
+        }
+      }
+
       > .#{$block}__link {
         background: transparent;
         border: none;
@@ -138,19 +136,17 @@ $block: #{$fd-namespace}-nested-list;
 
     text-decoration: none;
     height: 100%;
-    min-width: 2.75rem;
-    color: var(--sapList_TextColor);
-    font-size: var(--sapFontHeader4Size);
+    min-width: 2.5rem;
+    color: var(--sapContent_IconColor);
     display: flex;
     justify-content: center;
 
     @include fd-icon('navigation-right-arrow', 'default', 'after') {
       @include fd-flex-center();
-      @include fd-nested-list-arrow();
 
       height: 100%;
       min-height: 100%;
-      font-size: var(--sapFontHeader4Size);
+      font-size: var(--sapFontLargeSize);
     }
 
     @include fd-rtl() {

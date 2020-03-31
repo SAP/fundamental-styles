@@ -122,7 +122,7 @@ The lists in both sections (Main and Utility) should have the `fd-nested-list--t
 
 ## Side navigation with multiple levels - cozy mode
 Use this when there is more than one level of hierarchy in the left navigation. The entries on the first level are just group headers(don't trigger navigation themselves). It's recommended to use up to two levels of navigation. For more levels of navigation, use the content area. 
-On expand, the `is-expanded` class should be propagated also to `__content` element. `fd-nested-list__expand-ico    n` is element, which triggers another level.
+On expand, the `is-expanded` class should be propagated also to `__content` element. `fd-nested-list__expand-icon` is element, which triggers another level.
 
 {% capture default %}
 <nav class="fd-side-nav">
