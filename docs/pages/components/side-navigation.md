@@ -403,7 +403,7 @@ Group headers are forbidden in `condensed` state.
             <li class="fd-nested-list__item">
                 <div class="fd-nested-list__content is-selected has-child" tabindex="0">
                     <a class="fd-nested-list__link" href="#" tabindex="-1">
-                        <span class="fd-nested-list__icon sap-icon--activities"></span>
+                        <span class="fd-nested-list__icon sap-icon--employee"></span>
                         <span class="fd-nested-list__title">Level 1 Item</span>
                     </a>
                     <a class="fd-nested-list__expand-icon" href="#" tabindex="-1" aria-haspopup="true"></a>
@@ -466,6 +466,7 @@ Group headers are forbidden in `condensed` state.
             <li class="fd-nested-list__item">
                 <div class="fd-nested-list__content is-selected has-child" tabindex="0">
                     <a class="fd-nested-list__link" href="#" tabindex="-1">
+                        <span class="fd-nested-list__icon sap-icon--employee"></span>
                         <span class="fd-nested-list__title">Level 1 Item</span>
                     </a>
                     <a class="fd-nested-list__expand-icon" href="#" tabindex="-1" aria-haspopup="true"></a>
