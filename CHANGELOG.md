@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0-rc.41"></a>
+# [0.8.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.40...v0.8.0-rc.41) (2020-03-31)
+
+
+### Bug Fixes
+
+* introduce new component Message Box ([#808](https://github.com/SAP/fundamental-styles/issues/808)) ([c8151cf](https://github.com/SAP/fundamental-styles/commit/c8151cf))
+
+
+
 <a name="0.8.0-rc.40"></a>
 # [0.8.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.8.0-rc.39...v0.8.0-rc.40) (2020-03-31)
 
