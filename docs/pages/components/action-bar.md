@@ -401,4 +401,3 @@ When there are several main actions for a page, consider displaying them under a
 {% endcapture %}
 {% include display-component.html component=default-action-bar-multi %}
  
- 
