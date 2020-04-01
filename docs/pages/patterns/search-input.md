@@ -11,6 +11,8 @@ summary:
 
 The search input component is an opinionated composition of the `input group`, `popover` and `menu` components with the use of a styled button.
 {: .docs-intro}
+> **DEPRECATED**. Search Input does not exist as a Fiori 3 component so it has been deprecated. 
+{: .docs-deprecated}
 
 {% capture default %}
 <div class="documentation-site-popover-container">
