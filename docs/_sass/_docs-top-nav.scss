@@ -35,15 +35,6 @@
         }
     }
 
-    &__button {
-        color: $docs-home-dark-color;
-        border-color: $docs-home-dark-color;
-
-        &:hover {
-            background-color: $accent-color;
-        }
-    }
-
     &__mobile {
         @include media("<=tablet") {
             display: flex;

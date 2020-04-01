@@ -28,11 +28,11 @@ $block: #{$fd-namespace}-menu;
   width: 100%;
   max-width: 20rem;
 
-  &__full-width {
-    max-width: initial;
+  &--full-width {
+    max-width: 100%;
 
     .#{$block}__link {
-      max-width: initial;
+      max-width: 100%;
     }
   }
 
