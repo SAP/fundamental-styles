@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.1-rc.5"></a>
+## [0.8.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.8.1-rc.4...v0.8.1-rc.5) (2020-04-01)
+
+
+### Bug Fixes
+
+* update menu examples; add rounded corners for menu in popover ([#827](https://github.com/SAP/fundamental-styles/issues/827)) ([1bb9a9d](https://github.com/SAP/fundamental-styles/commit/1bb9a9d)), closes [#829](https://github.com/SAP/fundamental-styles/issues/829)
+
+
+
 <a name="0.8.1-rc.4"></a>
 ## [0.8.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.8.1-rc.3...v0.8.1-rc.4) (2020-04-01)
 
