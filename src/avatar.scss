@@ -18,6 +18,7 @@ $block: #{$fd-namespace}-avatar;
     xl: $fd-const-ratio * 7,
   ) !default;
   $fd-avatar-border-radius: $fd-border-radius !default;
+  $fd-avatar-border-fade: rgba(0, 0, 0, 0.5); // Should be fade(var(--sapContent_ShadowColor), 10);
   $fd-avatar-color: fd-color("text", 5) !default;
   $fd-avatar-background-color: fd-color("accent", 6) !default;
 
@@ -135,7 +136,7 @@ $block: #{$fd-namespace}-avatar;
       line-height: $value;
     }
   }
-  // borders
+  // circle
   &.#{$block}--circle {
     border-radius: 50%;
 
@@ -163,5 +164,9 @@ $block: #{$fd-namespace}-avatar;
 
     position: absolute;
     border-radius: 50%;
+  }
+  // optional border
+  &.#{$block}--border {
+    box-shadow: inset 0 0 0 0.0625rem $fd-avatar-border-fade;
   }
 }
