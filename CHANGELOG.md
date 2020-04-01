@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.2-rc.0"></a>
+## [0.8.2-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.8.1...v0.8.2-rc.0) (2020-04-03)
+
+
+
+<a name="0.8.1"></a>
+## [0.8.1](https://github.com/SAP/fundamental-styles/compare/v0.8.1-rc.6...v0.8.1) (2020-04-02)
+
+
+
+<a name="0.8.1-rc.6"></a>
+## [0.8.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.8.1-rc.5...v0.8.1-rc.6) (2020-04-01)
+
+
+### Bug Fixes
+
+* update menu examples ([#835](https://github.com/SAP/fundamental-styles/issues/835)) ([3674813](https://github.com/SAP/fundamental-styles/commit/3674813))
+
+
+
 <a name="0.8.1-rc.5"></a>
 ## [0.8.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.8.1-rc.4...v0.8.1-rc.5) (2020-04-01)
 

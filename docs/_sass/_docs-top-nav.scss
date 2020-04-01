@@ -1,10 +1,11 @@
 .docs-top-nav {
+    display: flex;
+    align-items: center;
     background-color: $docs-home-white-color;
-    min-height: 87px;
+    min-height: 6rem;
+    padding: 0 1rem;
 
     &__logo {
-        margin-top: 25px;
-        margin-left: 35px;
         display: inline-block;
         font-size: 24px;
         font-weight: bold;
@@ -24,7 +25,6 @@
         font-size: 1.14286rem;
         line-height: 1.25;
         font-weight: 400;
-        padding: 30px 20px 0 0;
         display: inline-block;
         @include media("<=tablet") {
             display: none;
@@ -36,10 +36,13 @@
     }
 
     &__mobile {
+        width: 100%;
+
         @include media("<=tablet") {
             display: flex;
-            justify-content: space-around;
-            align-items: baseline;
+            justify-content: space-between;
+            padding: 0 1rem;
+            align-items: center;
         }
     }
 }
