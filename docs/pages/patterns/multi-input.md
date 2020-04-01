@@ -444,7 +444,7 @@ This can also be done by using the `.is-readonly` class or `aria-readonly="true"
                                 </a>
                             </div>
                             <div class="fd-popover__body" aria-hidden="true" id="F4GF5348a">
-                                <nav class="fd-menu" id="">
+                                <nav class="fd-menu fd-menu--dropdown" id="">
                                     <ul class="fd-menu__list">
                                         <li class="fd-menu__item">
                                             <a href="#" class="fd-menu__link">
@@ -515,7 +515,7 @@ The disabled state can also be achieved by adding the `.is-disabled` class or th
                                 </a>
                             </div>
                             <div class="fd-popover__body" aria-hidden="true" id="F4GcX34Xa">
-                                <nav class="fd-menu" id="">
+                                <nav class="fd-menu fd-menu--dropdown" id="">
                                     <ul class="fd-menu__list">
                                         <li class="fd-menu__item">
                                             <a href="#" class="fd-menu__link">

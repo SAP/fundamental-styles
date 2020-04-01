@@ -28,7 +28,7 @@ summary:
          </div>
       </div>
       <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="NJvVh542c">
-         <nav class="fd-menu">
+         <nav class="fd-menu fd-menu--dropdown">
             <ul class="fd-menu__list">
                <li class="fd-localization-editor__language">
                   <div class="fd-input-group">
@@ -78,7 +78,7 @@ summary:
          </div>
       </div>
       <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="test22">
-         <nav class="fd-menu">
+         <nav class="fd-menu fd-menu--dropdown">
             <ul class="fd-menu__list">
                <li class="fd-localization-editor__language">
                   <div class="fd-input-group">
@@ -133,7 +133,7 @@ summary:
          </div>
       </div>
       <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="NJvVh542">
-         <nav class="fd-menu">
+         <nav class="fd-menu fd-menu--dropdown">
             <ul class="fd-menu__list">
                <li class="fd-localization-editor__language">
                   <div class="fd-input-group ">
