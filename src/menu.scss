@@ -25,6 +25,7 @@ $block: #{$fd-namespace}-menu;
   // set all BLOCK reset and baseline styles
   @include fd-reset();
 
+  overflow: hidden;
   width: 100%;
   max-width: 20rem;
 
@@ -148,12 +149,6 @@ $block: #{$fd-namespace}-menu;
         margin: 0 0 0 -1rem; // since before and after icons switch places, their margins also switch
       }
     }
-  }
-
-  &--dropdown {
-    @include fd-popover-border-radius();
-
-    overflow: hidden;
   }
 
   @mixin selected-menu() {

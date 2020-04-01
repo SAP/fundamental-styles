@@ -93,7 +93,7 @@ The component is ideal for displaying collection data when a grid or list layout
                     aria-controls="WQIDD179" aria-haspopup="true"></button>
             </div>
             <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="WQIDD179">
-                <nav class="fd-menu fd-menu--dropdown" id="">
+                <nav class="fd-menu" id="">
                     <ul class="fd-menu__list">
                         <li class="fd-menu__item">
                             <a href="#" class="fd-menu__link">

@@ -30,7 +30,7 @@ Implementation Guidelines:
         <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="pQqQR213" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
     </div>
     <div class="fd-popover__body" aria-hidden="true" id="pQqQR213">
-        <nav class="fd-menu fd-menu--dropdown">
+        <nav class="fd-menu">
             <ul class="fd-menu__list">
                 <li class="fd-menu__item">
                     <a href="#" class="fd-menu__link">
@@ -64,7 +64,7 @@ Implementation Guidelines:
         <button class="fd-button" aria-controls="jhqD0558" aria-haspopup="true" aria-expanded="false" aria-label="More">More</button>
     </div>
     <div class="fd-popover__body" aria-hidden="true" id="jhqD0558">
-        <nav class="fd-menu fd-menu--dropdown">
+        <nav class="fd-menu">
             <ul class="fd-menu__list">
                 <li class="fd-menu__item">
                     <a href="#" class="fd-menu__link">

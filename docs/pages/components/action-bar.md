@@ -163,7 +163,7 @@ When there are several main actions for a page, consider displaying them under a
                     aria-controls="wgxzK859" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                 </div>
                 <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="wgxzK859">
-                    <nav class="fd-menu fd-menu--dropdown" id="">
+                    <nav class="fd-menu" id="">
                         <ul class="fd-menu__list">
                             <li class="fd-menu__item">
                                 <a class="fd-menu__link" href="#">
@@ -321,7 +321,7 @@ When there are several main actions for a page, consider displaying them under a
                         aria-controls="wgxzK85" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="wgxzK85">
-                        <nav class="fd-menu fd-menu--dropdown" id="">
+                        <nav class="fd-menu" id="">
                             <ul class="fd-menu__list">
                                 <li class="fd-menu__item">
                                     <a class="fd-menu__link" href="#">
@@ -368,7 +368,7 @@ When there are several main actions for a page, consider displaying them under a
                         aria-controls="wgxzK86" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="wgxzK86">
-                        <nav class="fd-menu fd-menu--dropdown" id="">
+                        <nav class="fd-menu" id="">
                             <ul class="fd-menu__list">
                                 <li class="fd-menu__item">
                                     <a class="fd-menu__link" href="#">

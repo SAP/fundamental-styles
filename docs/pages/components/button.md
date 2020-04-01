@@ -149,7 +149,7 @@ The button triggers the last action chosen by the user. Initially, it also trigg
   aria-expanded="false" aria-label="More"></button>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
   id="t4c0o273">
-    <nav class="fd-menu fd-menu--dropdown">
+    <nav class="fd-menu">
         <ul class="fd-menu__list">
           <li class="fd-menu__item">
               <a class="fd-menu__link" role="button" href="#">
@@ -172,7 +172,7 @@ The button triggers the last action chosen by the user. Initially, it also trigg
   aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
     id="t4c0o2732">
-    <nav class="fd-menu fd-menu--dropdown">
+    <nav class="fd-menu">
         <ul class="fd-menu__list">
           <li class="fd-menu__item">
               <a class="fd-menu__link" role="button" href="#">

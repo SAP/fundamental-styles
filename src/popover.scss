@@ -116,16 +116,14 @@ $block: #{$fd-namespace}-popover;
       z-index: $fd-popover-z-index + 1;
     }
 
-    &-header {
-      & > *:first-child {
-        border-radius: $fd-popover-border-radius $fd-popover-border-radius 0 0;
-      }
+    > *:first-child {
+      border-top-right-radius: $fd-popover-border-radius;
+      border-top-left-radius: $fd-popover-border-radius;
     }
 
-    &-footer {
-      & > * {
-        border-radius: 0 0 $fd-popover-border-radius $fd-popover-border-radius;
-      }
+    > *:last-child {
+      border-bottom-right-radius: $fd-popover-border-radius;
+      border-bottom-left-radius: $fd-popover-border-radius;
     }
 
     &--left {

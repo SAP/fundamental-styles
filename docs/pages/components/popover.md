@@ -52,7 +52,7 @@ There are four placement options:
         <button class="fd-button" aria-label="Image label" aria-controls="popoverA1" aria-expanded="false" aria-haspopup="true">Left Aligned (default)</button>
     </div>
     <div class="fd-popover__body" aria-hidden="true" id="popoverA1">
-        <nav class="fd-menu fd-menu--dropdown" id="">
+        <nav class="fd-menu" id="">
             <ul class="fd-menu__list">
                 <li class="fd-menu__item">
                     <a class="fd-menu__link" href="#">
@@ -95,7 +95,7 @@ There are four placement options:
         <button class="fd-button" aria-label="Image label" aria-controls="popoverA3" aria-expanded="false" aria-haspopup="true">No Arrow & Left Aligned</button>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverA3">
-        <nav class="fd-menu fd-menu--dropdown" id="">
+        <nav class="fd-menu" id="">
             <ul class="fd-menu__list">
                 <li class="fd-menu__item">
                     <a class="fd-menu__link" href="#">
@@ -127,7 +127,7 @@ There are four placement options:
         <button class="fd-button" aria-label="Image label" aria-controls="popoverA4" aria-expanded="false" aria-haspopup="true">No Arrow & Right Aligned</button>
     </div>
     <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverA4">
-        <nav class="fd-menu fd-menu--dropdown" id="">
+        <nav class="fd-menu" id="">
             <ul class="fd-menu__list">
                 <li class="fd-menu__item">
                     <a class="fd-menu__link" href="#">
@@ -181,7 +181,7 @@ There are four placement options:
                 </div>
             </div>
         </div>
-        <nav class="fd-menu fd-menu--dropdown" id="">
+        <nav class="fd-menu" id="">
             <ul class="fd-menu__list">
                 <li class="fd-menu__item">
                     <a class="fd-menu__link" href="#">
@@ -342,7 +342,7 @@ Virtually any component can be used as a `fd-popover__control` to control the di
         </a>
     </div>
     <div class="fd-popover__body" aria-hidden="true" id="popoverB1">
-        <nav class="fd-menu fd-menu--dropdown" id="">
+        <nav class="fd-menu" id="">
             <ul class="fd-menu__list">
                 <li class="fd-menu__item">
                     <a class="fd-menu__link" href="#">
@@ -375,7 +375,7 @@ Virtually any component can be used as a `fd-popover__control` to control the di
 style="background-image: url('https://placeimg.com/400/400/nature');"></span>
     </div>
     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="popoverB2">
-        <nav class="fd-menu fd-menu--dropdown" id="">
+        <nav class="fd-menu" id="">
             <ul class="fd-menu__list">
                 <li class="fd-menu__item">
                     <a class="fd-menu__link" href="#">
@@ -409,7 +409,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB3">
-        <nav class="fd-menu fd-menu--dropdown" id="">
+        <nav class="fd-menu" id="">
             <ul class="fd-menu__list">
                 <li class="fd-menu__item">
                     <a class="fd-menu__link" href="#">
@@ -442,7 +442,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         <span class="sap-icon--cart sap-icon--xl" aria-label="Image label" aria-controls="popoverB4" aria-expanded="false" aria-haspopup="true"></span>
     </div>
     <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverB4">
-        <nav class="fd-menu fd-menu--dropdown" id="">
+        <nav class="fd-menu" id="">
             <ul class="fd-menu__list">
                 <li class="fd-menu__item">
                     <a class="fd-menu__link" href="#">
