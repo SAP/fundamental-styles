@@ -126,6 +126,20 @@ $block: #{$fd-namespace}-popover;
       border-bottom-left-radius: $fd-popover-border-radius;
     }
 
+    &-header {
+      & > *:first-child {
+        border-top-right-radius: $fd-popover-border-radius;
+        border-top-left-radius: $fd-popover-border-radius;
+      }
+    }
+
+    &-footer {
+      & > * {
+        border-bottom-right-radius: $fd-popover-border-radius;
+        border-bottom-left-radius: $fd-popover-border-radius;
+      }
+    }
+
     &--left {
       right: auto;
       left: $fd-popover-body-shadow-offset;
