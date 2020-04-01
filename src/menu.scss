@@ -150,6 +150,12 @@ $block: #{$fd-namespace}-menu;
     }
   }
 
+  &--dropdown {
+    @include fd-popover-border-radius();
+
+    overflow: hidden;
+  }
+
   @mixin selected-menu() {
     .#{$block}__title {
       color: $fd-menu-item-color;
@@ -246,7 +252,7 @@ $block: #{$fd-namespace}-menu;
     .#{$block}__title {
       @include fd-reset();
 
-      flex: 3 3 10%;  // needed to keep the icons aligned
+      width: 100%;
       color: $fd-menu-item-color;
 
       @include fd-weight("normal");

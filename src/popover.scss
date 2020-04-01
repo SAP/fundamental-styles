@@ -68,13 +68,13 @@ $block: #{$fd-namespace}-popover;
 
   &__body {
     @include fd-reset();
+    @include fd-popover-border-radius();
 
     border: none;
     position: absolute;
     white-space: nowrap;
     box-shadow: $fd-popover-box-shadow;
     z-index: $fd-popover-z-index;
-    border-radius: $fd-popover-border-radius;
     background: $fd-popover-background-color;
     opacity: 1;
     visibility: visible;
