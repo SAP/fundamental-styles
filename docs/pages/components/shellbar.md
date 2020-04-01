@@ -37,7 +37,7 @@ The shellbar handles layout and has some built-in elements but relies on standal
 * `.fd-shellbar__action--mobile` (optional) for product actions only visible on mobile screens.
 * `.fd-shellbar__action--desktop` (optional) for product actions only visible on desktop screens.
 * `.fd-search-input` (optional) for searching the product.
-* `.fd-identifier` (required) for user settings and application meta links such as Sign Out. [Accent colors between 11-15]({{site.baseurl}}/foundation/colors.html#accent) can be randomly assigned to the background.
+* `.fd-avatarier` (required) for user settings and application meta links such as Sign Out. [Accent colors between 11-15]({{site.baseurl}}/foundation/colors.html#accent) can be randomly assigned to the background.
 * `.fd-product-switch` (optional) for navigating between products.
 
 Here are examples of various configurations.
@@ -58,7 +58,7 @@ This example shows the minimum shellbar for a single application product with on
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
           <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="WV3AY276" aria-expanded="false" aria-haspopup="true" role="button">
-            <span class="fd-identifier fd-identifier--xs fd-identifier--circle">WW</span>
+            <span class="fd-avatarier fd-avatarier--xs fd-avatarier--circle">WW</span>
           </div>
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="WV3AY276">
@@ -128,7 +128,7 @@ This example includes the product menu for navigating to applications within the
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
           <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="ZY3AY276" aria-expanded="false" aria-haspopup="true" role="button">
-            <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" aria-label="William Wallingham">WW</span>
+            <span class="fd-avatarier fd-avatarier--xs fd-avatarier--circle fd-avatarier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" aria-label="William Wallingham">WW</span>
           </div>
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="ZY3AY276">
@@ -205,7 +205,7 @@ When a product has multiple links, the product links should collapse into an ove
         <div class="fd-popover fd-popover--right">
           <div class="fd-popover__control">
             <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="DD35G276" aria-expanded="false" aria-haspopup="true" role="button">
-              <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-shellbar__identifier--circle">WW</span>
+              <span class="fd-avatarier fd-avatarier--xs fd-avatarier--circle fd-shellbar__avatarier--circle">WW</span>
             </div>
           </div>
           <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="DD35G276">
@@ -247,7 +247,7 @@ For more information about the Product Switch, see [Product Switch](product-swit
         <div class="fd-popover fd-popover--right">
           <div class="fd-popover__control">
             <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="MKFAY276" aria-expanded="false" aria-haspopup="true" role="button">
-              <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" aria-label="William Wallingham">WW</span>
+              <span class="fd-avatarier fd-avatarier--xs fd-avatarier--circle fd-avatarier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" aria-label="William Wallingham">WW</span>
             </div>
           </div>
           <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="MKFAY276">

@@ -1,6 +1,6 @@
 {
-    "id": "identifier",
-    "name": "Identifier",
+    "id": "avatar",
+    "name": "Avatar",
     "properties": {
         "initials": "WW",
         "icon": "washing-machine",

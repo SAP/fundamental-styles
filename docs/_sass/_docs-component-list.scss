@@ -56,6 +56,11 @@ $grid-transition-delay: 100ms;
             margin-top: 60px;
         }
 
+        &__avatar {
+            width: 200px;
+            margin-top: 50px;
+        }
+
         &__message-strip {
             width: 250px;
             margin-top: 20px;
@@ -93,11 +98,6 @@ $grid-transition-delay: 100ms;
         &__icons {
             width: 250px;
             margin-top: 70px;
-        }
-
-        &__identifier {
-            width: 200px;
-            margin-top: 50px;
         }
 
         &__image {

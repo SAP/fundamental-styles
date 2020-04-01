@@ -69,7 +69,7 @@ There are four placement options:
     </div>
     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="popoverA2">
         <div style="margin: 20px;">
-            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" role="presentation" aria-label="Nature"></span>
+            <span class="fd-avatarier fd-avatarier--xxl fd-avatarier--circle fd-avatarier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" role="presentation" aria-label="Nature"></span>
         </div>
     </div>
 </div>
@@ -150,7 +150,7 @@ There are four placement options:
     </div>
     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="popoverHSF2">
         <div style="margin: 20px;">
-            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" role="presentation" aria-label="Nature"></span>
+            <span class="fd-avatarier fd-avatarier--xxl fd-avatarier--circle fd-avatarier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" role="presentation" aria-label="Nature"></span>
         </div>
         <div class="fd-popover__body-footer">
             <div class="fd-bar fd-bar--footer">
@@ -198,7 +198,7 @@ There are four placement options:
             </div>
         </div>
         <div style="margin: 20px 80px;">
-            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" role="presentation" aria-label="Nature"></span>
+            <span class="fd-avatarier fd-avatarier--xxl fd-avatarier--circle fd-avatarier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" role="presentation" aria-label="Nature"></span>
         </div>
         <div class="fd-popover__body-footer">
             <div class="fd-bar fd-bar--footer">
@@ -246,7 +246,7 @@ There are four placement options:
                 </div>
             </div>
         <div style="margin: 20px 80px;">
-            <span class="fd-identifier fd-identifier--xxl fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" role="presentation" aria-label="Nature"></span>
+            <span class="fd-avatarier fd-avatarier--xxl fd-avatarier--circle fd-avatarier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" role="presentation" aria-label="Nature"></span>
         </div>
         <div class="fd-popover__body-footer">
             <div class="fd-bar fd-bar--cosy fd-bar--footer">

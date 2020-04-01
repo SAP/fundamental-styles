@@ -35,7 +35,7 @@ The component is ideal for displaying collection data when a grid or list layout
 {% capture tile %}
 <div class="fd-tile">
     <div class="fd-tile__media">
-        <span class="fd-identifier fd-identifier--m fd-identifier--transparent sap-icon--home"></span>
+        <span class="fd-avatarier fd-avatarier--m fd-avatarier--transparent sap-icon--home"></span>
     </div>
     <div class="fd-tile__content">
         <h3 class="fd-tile__title">Tile Title</h3>
@@ -46,7 +46,7 @@ The component is ideal for displaying collection data when a grid or list layout
 
 <div class="fd-tile">
     <div class="fd-tile__media">
-        <span class="fd-identifier fd-identifier--m sap-icon--home fd-has-background-color-accent-3"></span>
+        <span class="fd-avatarier fd-avatarier--m sap-icon--home fd-has-background-color-accent-3"></span>
     </div>
     <div class="fd-tile__content">
         <h3 class="fd-tile__title">Tile Title</h3>
@@ -161,7 +161,7 @@ Add class `is-disabled`
 
 <div class="fd-tile is-disabled" aria-disabled="true">
     <div class="fd-tile__media">
-        <span class="fd-identifier fd-identifier--m fd-identifier--transparent sap-icon--home"></span>
+        <span class="fd-avatarier fd-avatarier--m fd-avatarier--transparent sap-icon--home"></span>
     </div>
     <div class="fd-tile__content">
         <h3 class="fd-tile__title">Tile Title</h3>

@@ -1,15 +1,15 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "./component.njk" import identifier %}
+{% from "./component.njk" import avatar %}
 
 {% block content %}
 
-{% set sizes = ["xxs","xs","s","m","l","xl","xxl"] %}
+{% set sizes = ["xs","s","m","l","xl"] %}
 
 <h3>sizes</h3>
 {%- set example %}
   {%- for size in sizes %}
-    {{ identifier(
+    {{ avatar(
           properties={ icon: data.properties.icon },
           modifier={ block: [size] }
       )
@@ -21,7 +21,7 @@
 <h3>--thumbnail</h3>
 {%- set example %}
 {%- for size in sizes %}
-{{  identifier(
+{{  avatar(
     properties=data.properties,
     modifier={
         block: [size,"thumbnail"]
@@ -36,7 +36,7 @@
 <h3>--circle</h3>
 {%- set example %}
   {% for size in sizes %}
-  {{  identifier(
+  {{  avatar(
           properties={
                   icon: "money-bills"
           },
@@ -56,7 +56,7 @@
 <h3>--transparent</h3>
 {%- set example %}
   {% for size in sizes %}
-    {{  identifier(
+    {{  avatar(
             properties={
                     icon: "money-bills"
             },

@@ -1,0 +1,167 @@
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+/*!
+.fd-avatar+((--circle), (--thumbnail), (--xxs|--xs|--s|--m|--l|--xl|--xxl))
+*/
+$block: #{$fd-namespace}-avatar;
+
+.#{$block} {
+  // LOCAL VARS (set all themeable properties, always include !default)
+  $fd-const-ratio: 1rem;
+  $fd-avatar-sizes: (
+    xs: $fd-const-ratio * 2,
+    s: $fd-const-ratio * 3,
+    m: $fd-const-ratio * 4,
+    l: $fd-const-ratio * 5,
+    xl: $fd-const-ratio * 7,
+  ) !default;
+  $fd-avatar-border-radius: $fd-border-radius !default;
+  $fd-avatar-color: fd-color("text", 5) !default;
+  $fd-avatar-background-color: fd-color("accent", 6) !default;
+
+  // BLOCK BASE *******************************************
+  @at-root {
+    [class*="#{$block}"] {
+      @include fd-reset();
+
+      --fd-avatar-color: var(--fd-color-text-5);
+      --fd-avatar-background-color: var(--fd-color-accent-6);
+
+      @include fd-reset();
+
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50%;
+      border-radius: $fd-avatar-border-radius;
+
+      @include fd-var-color("background-color", $fd-avatar-background-color, --fd-avatar-background-color);
+      @include fd-var-color("color", $fd-avatar-color, --fd-avatar-color);
+    }
+  }
+  // BLOCK MODIFIERS ************
+  // sizes
+  @each $size, $value in $fd-avatar-sizes {
+    &.#{$block}--#{$size} {
+      @include fd-reset-spacing();
+
+      width: $value;
+      height: $value;
+      max-width: $value;
+      max-height: $value;
+      min-width: $value;
+      min-height: $value;
+
+      @if $size == xs or $size == s or $size == m {
+        .#{$block}__zoom-icon {
+          width: 1.125rem;
+          height: 1.125rem;
+          bottom: -0.125rem;
+          right: -0.125rem;
+
+          &::before {
+            font-size: 0.75rem;
+          }
+        }
+      }
+
+      @if $size == xs {
+        @include fd-type("-1");
+        @include fd-weight("normal");
+
+        font-size: 1rem;
+        font-stretch: condensed;
+        line-height: $value;
+      }
+
+      @if $size == s {
+        @include fd-type("-1");
+        @include fd-weight("normal");
+
+        font-size: 1.125rem;
+        font-stretch: condensed;
+        line-height: $value;
+      }
+
+      @if $size == m {
+        @include fd-type("0");
+
+        font-size: 1.5rem;
+        line-height: $value;
+      }
+
+      @if $size == l {
+        @include fd-type("2");
+
+        font-size: 2.25rem;
+        line-height: $value;
+
+        .#{$block}__zoom-icon {
+          width: 1.25rem;
+          height: 1.25rem;
+          bottom: -0.1875rem;
+          right: -0.1875rem;
+
+          &::before {
+            font-size: 0.875rem;
+          }
+        }
+      }
+
+      @if $size == xl {
+        @include fd-type("2");
+
+        font-size: 3rem;
+        line-height: $value;
+
+        .#{$block}__zoom-icon {
+          width: 1.75rem;
+          height: 1.75rem;
+          bottom: -0.25rem;
+          right: -0.25rem;
+
+          &::before {
+            font-size: 1rem;
+            line-height: 1.75rem;
+          }
+        }
+      }
+
+      line-height: $value;
+    }
+  }
+  // borders
+  &.#{$block}--circle {
+    border-radius: 50%;
+
+    .#{$block}__zoom-icon {
+      bottom: 0;
+      right: 0;
+    }
+  }
+  // thumbnail
+  &.#{$block}--thumbnail {
+    text-indent: -200%;
+    overflow: hidden;
+  }
+  // background
+  &.#{$block}--transparent {
+    --fd-avatar-background-color: transparent;
+
+    @include fd-var-color("color", map-get($fd-colors-text, 1), --fd-color-text-1);
+    @include fd-var-color("background-color", transparent);
+  }
+  // zoom icon
+  &__zoom-icon {
+    @include fd-var-color("background-color", $fd-link-color, --fd-link-color);
+    @include fd-var-color("color", $fd-avatar-color, --fd-avatar-color);
+
+    position: absolute;
+    border-radius: 50%;
+  }
+}
