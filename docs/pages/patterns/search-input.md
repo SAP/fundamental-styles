@@ -27,11 +27,23 @@ The search input component is an opinionated composition of the `input group`, `
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="F4GcX348bc">
             <nav class="fd-menu">
-            <ul class="fd-menu__list">
-                <li><a href="#" class="fd-menu__item"><strong>Ba</strong>nana</a></li>
-                <li><a href="#" class="fd-menu__item"><strong>Ba</strong>rk</a></li>
-                <li><a href="#" class="fd-menu__item"><strong>Ba</strong>ts</a></li>
-            </ul>
+                <ul class="fd-menu__list">
+                    <li class="fd-menu__item">
+                        <a href="#" class="fd-menu__link">
+                            <span class="fd-menu__title"><strong>Ba</strong>nana</span>
+                        </a>
+                    </li>
+                    <li class="fd-menu__item">
+                        <a href="#" class="fd-menu__link">
+                            <span class="fd-menu__title"><strong>Ba</strong>rk</span>
+                        </a>
+                    </li>
+                    <li class="fd-menu__item">
+                        <a href="#" class="fd-menu__link">
+                            <span class="fd-menu__title"><strong>Ba</strong>ts</span>
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </div>
@@ -52,12 +64,24 @@ The search input component is an opinionated composition of the `input group`, `
             </div>
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="F4GcX34b">
-            <nav class="fd-menu">
-            <ul class="fd-menu__list">
-                <li><a href="#" class="fd-menu__item"><strong>Ba</strong>nana</a></li>
-                <li><a href="#" class="fd-menu__item"><strong>Ba</strong>rk</a></li>
-                <li><a href="#" class="fd-menu__item"><strong>Ba</strong>ts</a></li>
-            </ul>
+            <nav class="fd-menu fd-menu--compact">
+                <ul class="fd-menu__list">
+                    <li class="fd-menu__item">
+                        <a href="#" class="fd-menu__link">
+                            <span class="fd-menu__title"><strong>Ba</strong>nana</span>
+                        </a>
+                    </li>
+                    <li class="fd-menu__item">
+                        <a href="#" class="fd-menu__link">
+                            <span class="fd-menu__title"><strong>Ba</strong>rk</span>
+                        </a>
+                    </li>
+                    <li class="fd-menu__item">
+                        <a href="#" class="fd-menu__link">
+                            <span class="fd-menu__title"><strong>Ba</strong>ts</span>
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </div>
