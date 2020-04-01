@@ -210,4 +210,9 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   .#{$fd-namespace}-textarea {
     resize: vertical;
   }
+
+  &[readonly],
+  &.is-readonly {
+    overflow: visible;
+  }
 }

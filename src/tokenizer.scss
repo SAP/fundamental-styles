@@ -85,6 +85,9 @@ $block: #{$fd-namespace}-tokenizer;
   &--readonly {
     overflow: visible;
     background-color: var(--sapField_ReadOnly_Background);
+    .#{$block}__inner {
+      overflow: visible;
+    }
   }
 
   &--scrollable {
