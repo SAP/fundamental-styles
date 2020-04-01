@@ -25,7 +25,6 @@ $block: #{$fd-namespace}-menu;
   // set all BLOCK reset and baseline styles
   @include fd-reset();
 
-  overflow: hidden;
   width: 100%;
   max-width: 20rem;
 
@@ -41,6 +40,7 @@ $block: #{$fd-namespace}-menu;
   &__sublist {
     @include fd-reset();
 
+    border-radius: inherit;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -89,12 +89,14 @@ $block: #{$fd-namespace}-menu;
     }
 
     .#{$block}__addon-before {
+      min-width: 2rem; // to account for item right padding of 12px or 0.75rem so 2rem-0.75rem = 1.25rem
       width: 2rem; // to account for item right padding of 12px or 0.75rem so 2rem-0.75rem = 1.25rem
       height: 1.25rem; // to account for item top padding of 6px or 0.375rem so 2rem-0.375rem-0.375rem = 1.25rem
       margin: 0 0 0 -0.5rem;
     }
 
     .#{$block}__addon-after {
+      min-width: 2rem; // to account for item right padding of 12px or 0.75rem so 2rem-0.75rem = 1.25rem
       width: 2rem; // to account for item right padding of 12px or 0.75rem so 2rem-0.75rem = 1.25rem
       height: 1.25rem; // to account for item top padding of 6px or 0.375rem so 2rem-0.375rem-0.375rem = 1.25rem
       margin: 0 -0.75rem 0 0;
@@ -129,12 +131,14 @@ $block: #{$fd-namespace}-menu;
     }
 
     .#{$block}__addon-before {
+      min-width: 2.75rem; // to account for item right padding of 16px or 1rem so 2.75rem-1rem = 1.75rem
       width: 2.75rem; // to account for item right padding of 16px or 1rem so 2.75rem-1rem = 1.75rem
       height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
       margin: 0 0 0 -1rem;
     }
 
     .#{$block}__addon-after {
+      min-width: 2.75rem; // to account for item right padding of 16px or 1rem so 2.75rem-1rem = 1.75rem
       width: 2.75rem; // to account for item right padding of 16px or 1rem so 2.75rem-1rem = 1.75rem
       height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
       margin: 0 -1rem 0 0;
@@ -181,6 +185,7 @@ $block: #{$fd-namespace}-menu;
     @include fd-reset();
     @include action-cursor();
 
+    border-radius: inherit;
     background-color: $fd-menu-item-background-color;
     position: relative;   // so that sub-menus align relatively to parent menu item
   }
@@ -188,6 +193,7 @@ $block: #{$fd-namespace}-menu;
   &__link {
     @include fd-reset();
 
+    border-radius: inherit;
     display: flex;
     align-items: center;
     max-width: 20rem;
@@ -276,6 +282,7 @@ $block: #{$fd-namespace}-menu;
     @include fd-flex-center();
 
     // cozy tablet icon size
+    min-width: 2.25rem; // to account for item right padding of 16px or 1rem so 2.25rem-1rem = 1.25rem
     width: 2.25rem; // to account for item right padding of 16px or 1rem so 2.25rem-1rem = 1.25rem
     height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
     margin: 0 0 0 -0.75rem;
@@ -312,6 +319,7 @@ $block: #{$fd-namespace}-menu;
     display: flex;
     color: $fd-menu-primary-icon-color;
     // cozy tablet icon size
+    min-width: 2.25rem; // to account for item right padding of 16px or 1rem so 2.25rem-1rem = 1.25rem
     width: 2.25rem; // to account for item right padding of 16px or 1rem so 2.25rem-1rem = 1.25rem
     height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
     margin: 0 -1rem 0 0;
