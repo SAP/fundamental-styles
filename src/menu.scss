@@ -28,6 +28,14 @@ $block: #{$fd-namespace}-menu;
   width: 100%;
   max-width: 20rem;
 
+  &__full-width {
+    max-width: initial;
+
+    .#{$block}__link {
+      max-width: initial;
+    }
+  }
+
   &__list,
   &__sublist {
     @include fd-reset();
