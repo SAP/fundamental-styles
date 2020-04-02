@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.8.0
+ * Fundamental Library Styles v0.8.1
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -10727,6 +10727,10 @@ sans-serif;
 .fd-input-group .fd-textarea {
   resize: vertical
 }
+.fd-input-group.is-readonly,
+.fd-input-group[readonly] {
+  overflow: visible
+}
 /*!
 .fd-label+(--success | --warning | --error)
 */
@@ -11727,6 +11731,12 @@ sans-serif;
   box-sizing: inherit;
   font-size: inherit
 }
+.fd-menu--full-width {
+  max-width: 100%
+}
+.fd-menu--full-width .fd-menu__link {
+  max-width: 100%
+}
 .fd-menu__list,
 .fd-menu__sublist {
   font-size: .875rem;
@@ -11751,6 +11761,7 @@ sans-serif;
   padding: 0;
   margin: 0;
   border: 0;
+  border-radius: inherit;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -11857,11 +11868,13 @@ sans-serif;
   height: 2rem
 }
 .fd-menu--compact .fd-menu__addon-before {
+  min-width: 2rem;
   width: 2rem;
   height: 1.25rem;
   margin: 0 0 0 -.5rem
 }
 .fd-menu--compact .fd-menu__addon-after {
+  min-width: 2rem;
   width: 2rem;
   height: 1.25rem;
   margin: 0 -.75rem 0 0
@@ -11915,11 +11928,13 @@ sans-serif;
   max-width: 100%
 }
 .fd-menu--mobile .fd-menu__addon-before {
+  min-width: 2.75rem;
   width: 2.75rem;
   height: 1.25rem;
   margin: 0 0 0 -1rem
 }
 .fd-menu--mobile .fd-menu__addon-after {
+  min-width: 2.75rem;
   width: 2.75rem;
   height: 1.25rem;
   margin: 0 -1rem 0 0
@@ -11990,6 +12005,7 @@ sans-serif;
   margin: 0;
   border: 0;
   cursor: pointer;
+  border-radius: inherit;
   background-color: #fff;
   background-color: var(--sapList_Background,#fff);
   position: relative
@@ -12023,6 +12039,7 @@ sans-serif;
   padding: 0;
   margin: 0;
   border: 0;
+  border-radius: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12138,9 +12155,7 @@ sans-serif;
   padding: 0;
   margin: 0;
   border: 0;
-  -webkit-box-flex: 3;
-  -ms-flex: 3 3 10%;
-  flex: 3 3 10%;
+  width: 100%;
   color: #32363a;
   color: var(--sapList_TextColor,#32363a);
   font-weight: 400;
@@ -12257,6 +12272,7 @@ sans-serif;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 2.25rem;
   width: 2.25rem;
   height: 1.25rem;
   margin: 0 0 0 -.75rem;
@@ -12332,6 +12348,7 @@ sans-serif;
   display: flex;
   color: #6a6d70;
   color: var(--sapContent_NonInteractiveIconColor,#6a6d70);
+  min-width: 2.25rem;
   width: 2.25rem;
   height: 1.25rem;
   margin: 0 -1rem 0 0;
@@ -15932,6 +15949,8 @@ sans-serif;
   padding: 0;
   margin: 0;
   border: 0;
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem);
   border: none;
   position: absolute;
   white-space: nowrap;
@@ -15960,8 +15979,6 @@ rgba(0,0,0,0.42)
 rgba(0,0,0,0.3);
   box-shadow: var(--sapContent_Shadow2,0 0 0 .0625rem rgba(0,0,0,.42),0 .625rem 1.875rem 0 rgba(0,0,0,.3));
   z-index: 1000;
-  border-radius: .25rem;
-  border-radius: var(--sapElement_BorderCornerRadius,.25rem);
   background: #fff;
   background: var(--sapGroup_ContentBackground,#fff);
   opacity: 1;
@@ -16024,13 +16041,29 @@ rgba(0,0,0,0.3);
   left: .5rem;
   z-index: 1001
 }
+.fd-popover__body > :first-child {
+  border-top-right-radius: .25rem;
+  border-top-right-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  border-top-left-radius: .25rem;
+  border-top-left-radius: var(--sapElement_BorderCornerRadius,.25rem)
+}
+.fd-popover__body > :last-child {
+  border-bottom-right-radius: .25rem;
+  border-bottom-right-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  border-bottom-left-radius: .25rem;
+  border-bottom-left-radius: var(--sapElement_BorderCornerRadius,.25rem)
+}
 .fd-popover__body-header > :first-child {
-  border-radius: .25rem .25rem 0 0;
-  border-radius: var(--sapElement_BorderCornerRadius,.25rem) var(--sapElement_BorderCornerRadius,.25rem) 0 0
+  border-top-right-radius: .25rem;
+  border-top-right-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  border-top-left-radius: .25rem;
+  border-top-left-radius: var(--sapElement_BorderCornerRadius,.25rem)
 }
 .fd-popover__body-footer > * {
-  border-radius: 0 0 .25rem .25rem;
-  border-radius: 0 0 var(--sapElement_BorderCornerRadius,.25rem) var(--sapElement_BorderCornerRadius,.25rem)
+  border-bottom-right-radius: .25rem;
+  border-bottom-right-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  border-bottom-left-radius: .25rem;
+  border-bottom-left-radius: var(--sapElement_BorderCornerRadius,.25rem)
 }
 .fd-popover__body--left {
   right: auto;
@@ -24009,6 +24042,9 @@ sans-serif;
 .fd-tokenizer--readonly {
   overflow: visible;
   background-color: var(--sapField_ReadOnly_Background,rgba(242,242,242,.5))
+}
+.fd-tokenizer--readonly .fd-tokenizer__inner {
+  overflow: visible
 }
 .fd-tokenizer--scrollable .fd-tokenizer__inner {
   -webkit-box-pack: initial;
