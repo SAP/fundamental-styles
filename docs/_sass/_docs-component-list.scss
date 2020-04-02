@@ -7,7 +7,6 @@ $grid-transition-delay: 100ms;
     border: 1px solid $gird-border-color;
     border-left: none;
     border-right: none;
-    margin: 0 -40px -80px -40px;
     display: flex;
     flex-wrap: wrap;
 
@@ -81,102 +80,27 @@ $grid-transition-delay: 100ms;
         right: 0;
         margin: 0 auto;
     }
-
+    
     &--img {
 
         &__action-bar {
             width: 95%;
-
-            @include media("<=tablet") {
-                width: 80%;
-            }
-
-            @include media(">=desktop") {
-                width: 50%;
-            }
         }
 
         &__bar {
             width: 95%;
-
-            @include media("<=tablet") {
-                width: 80%;
-            }
-
-            @include media(">=desktop") {
-                width: 80%;
-            }
         }
 
         &__busy-indicator {
             width: 100%;
-
-            @include media("<=tablet") {
-                width: 40%;
-            }
-
-            @include media(">=desktop") {
-                width: 40%;
-            }
-        }
-
-        &__message-strip {
-            width: 70%;
-
-            @include media("<=tablet") {
-                width: 40%;
-            }
-
-            @include media(">=desktop") {
-                width: 30%;
-            }
-        }
-
-        &__status-indicators {
-            width: 70%;
-        }
-
-	    &__info-label {
-            width: 70%;
         }
 
         &__button {
             width: 40%;
-
-            @include media("<=tablet") {
-                width: 30%;
-            }
-
-            @include media(">=desktop") {
-                width: 25%;
-            }
-        }
-
-        &__combobox-input {
-
-            @include media("<=tablet") {
-                width: 30%;
-            }
-
-            @include media(">=desktop") {
-                width: 45%;
-            }
         }
 
         &__contextual-menu {
             width: 40%;
-
-            @include media("<=tablet") {
-                width: 20%;
-            }
-
-            @include media(">=desktop") {
-                width: 25%;
-            }
-
-            @include media(">=display") {
-                width: 20%;
-            }
         }
 
         &__dropdown {
@@ -189,89 +113,35 @@ $grid-transition-delay: 100ms;
 
         &__identifier {
             width: 65%;
-
-            @include media("<=tablet") {
-                width: 40%;
-            }
-
-            @include media(">=desktop") {
-                width: 40%;
-            }
         }
 
         &__image {
             width: 30%;
-
-            @include media("<=tablet") {
-                width: 15%;
-            }
-
-            @include media(">=desktop") {
-                width: 10%;
-            }
         }
 
         &__inline-help {
             width: 70%;
-
-            @include media("<=tablet") {
-                width: 40%;
-            }
-
-            @include media(">=desktop") {
-                width: 30%;
-            }
         }
 
         &__link {
             width: 55%;
-
-            @include media("<=tablet") {
-                width: 25%;
-            }
-
-            @include media(">=desktop") {
-                width: 25%;
-            }
         }
 
         &__list {
             width: 75%;
-
-            @include media("<=tablet") {
-                width: 30%;
-            }
-
-            @include media(">=desktop") {
-                width: 30%;
-            }
-        }
-
-        &__localization-editor {
         }
 
         &__form {
             width: 70%;
 
-            @include media("<=tablet") {
-                width: 35%;
-            }
+        }
 
-            @include media(">=desktop") {
-                width: 25%;
-            }
+        &__info-label {
+            width: 70%;
         }
 
         &__input-group {
             width: 70%;
-
-            @include media("<=tablet") {
-                width: 40%;
-            }
-
-            @include media(">=desktop") {
-                width: 40%;
-            }
         }
 
         &__list-group {
@@ -280,36 +150,14 @@ $grid-transition-delay: 100ms;
 
         &__loading-spinner {
             width: 25%;
-
-            @include media("<=tablet") {
-                width: 12%;
-            }
-
-            @include media(">=desktop") {
-                width: 12%;
-            }
-        }
-
-        &__product-switch {
-            @include media("<=tablet") {
-                width: 40%;
-            }
-
-            @include media(">=desktop") {
-                width:30%;
-            }
         }
 
         &__dialog {
             width: 50%;
+        }
 
-            @include media("<=tablet") {
-                width: 25%;
-            }
-
-            @include media(">=desktop") {
-                width: 20%;
-            }
+        &__message-strip {
+            width: 70%;
         }
 
         &__multi-input {
@@ -318,98 +166,38 @@ $grid-transition-delay: 100ms;
 
         &__pagination {
             width: 90%;
-
-            @include media("<=tablet") {
-                width: 80%;
-            }
-
-            @include media(">=desktop") {
-                width: 80%;
-            }
         }
 
         &__select {
             width: 40%;
-
-            @include media("<=tablet") {
-                width: 20%;
-            }
-
-            @include media(">=desktop") {
-                width: 20%;
-            }
         }
 
         &__side-navigation {
             width: 30%;
-
-            @include media("<=tablet") {
-                width: 12%;
-            }
-
-            @include media(">=desktop") {
-                width: 12%;
-            }
         }
 
         &__shellbar {
             width: 90%;
+        }
 
-            @include media("<=tablet") {
-                width: 80%;
-            }
-
-            @include media(">=desktop") {
-                width: 80%;
-            }
+        &__status-indicators {
+            width: 70%;
         }
 
         &__switch {
             width: 20%;
-
-            @include media("<=tablet") {
-                width: 10%;
-            }
-
-            @include media(">=desktop") {
-                width: 10%;
-            }
         }
 
         &__table {
             width: 90%;
-
-            @include media("<=tablet") {
-                width: 45%;
-            }
-
-            @include media(">=desktop") {
-                width: 45%;
-            }
         }
 
         &__tabs {
             width: 90%;
-
-            @include media("<=tablet") {
-                width: 50%;
-            }
-
-            @include media(">=desktop") {
-                width: 50%;
-            }
         }
 
         &__tile {
             width: 90%;
-
-            @include media("<=tablet") {
-                width: 50%;
-            }
-
-            @include media(">=desktop") {
-                width: 50%;
-            }
         }
 
         &__toolbar {
@@ -418,13 +206,245 @@ $grid-transition-delay: 100ms;
 
         &__tree {
             width: 90%;
+        }
+    }
 
-            @include media("<=tablet") {
+    @include media("<=tablet") {
+        &--img {
+            &__action-bar {
+                width: 80%;
+            }
+
+            &__bar {
+                width: 80%;
+            }
+
+            &__busy-indicator {
+                width: 40%;
+            }
+
+            &__message-strip {
+                width: 40%;
+            }
+
+            &__button {
+                width: 30%;
+            }
+
+            &__combobox-input {
+                width: 30%;
+            }
+
+            &__contextual-menu {
+                width: 20%;
+            }
+
+            &__identifier {
+                width: 40%;
+            }
+
+            &__image {
+                width: 15%;
+            }
+
+            &__inline-help {
+                width: 40%;
+            }
+
+            &__link {
+                width: 25%;
+            }
+
+            &__list {
+                width: 30%;
+            }
+
+            &__form {
+                width: 35%;
+            }
+
+            &__input-group {
+                    width: 40%;
+            }
+
+            &__list-group {
+                width: 90%;
+            }
+
+            &__loading-spinner {
+                width: 12%;
+            }
+
+            &__dialog {
+                width: 25%;
+            }
+
+            &__multi-input {
+                width: 75%;
+            }
+
+            &__pagination {
+                width: 80%;
+            }
+
+            &__select {
+                width: 20%;
+            }
+
+            &__side-navigation {
+                width: 12%;
+            }
+
+            &__shellbar {
+                width: 80%;
+            }
+
+            &__switch {
+                width: 10%;
+            }
+
+            &__table {
+                width: 45%;
+            }
+
+            &__tabs {
                 width: 50%;
             }
 
-            @include media(">=desktop") {
+            &__tile {
                 width: 50%;
+            }
+
+            &__toolbar {
+                width: 95%;
+            }
+
+            &__tree {
+                width: 50%;
+            }
+        }
+    }
+
+    @include media(">=desktop") {
+        &--img {
+            &__action-bar {
+                    width: 50%;
+            }
+
+            &__bar {
+                width: 80%;
+            }
+
+            &__busy-indicator {
+                    width: 40%;
+            }
+
+            &__message-strip {
+                width: 30%;
+            }
+
+            &__button {
+                width: 25%;
+            }
+
+            &__combobox-input {
+                width: 45%;
+            }
+
+            &__contextual-menu {
+                width: 25%;
+            }
+
+            &__dropdown {
+                width: 70%;
+            }
+
+            &__icons {
+                width: 70%;
+            }
+
+            &__identifier {
+                width: 40%;
+            }
+
+            &__image {
+                width: 10%;
+            }
+
+            &__inline-help {
+                width: 30%;
+            }
+
+            &__link {
+                width: 25%;
+            }
+
+            &__list {
+                width: 30%;
+            }
+
+            &__form {
+                width: 25%;
+            }
+
+            &__input-group {
+                width: 40%;
+            }
+
+            &__loading-spinner {
+                width: 12%;
+            }
+
+            &__product-switch {
+                width:30%;
+            }
+
+            &__dialog {
+                width: 20%;
+            }
+
+            &__pagination {
+                width: 80%;
+            }
+
+            &__select {
+                width: 20%;
+            }
+
+            &__side-navigation {
+                width: 12%;
+            }
+
+            &__shellbar {
+                width: 80%;
+            }
+
+            &__switch {
+                width: 10%;
+            }
+
+            &__table {
+                width: 45%;
+            }
+
+            &__tabs {
+                width: 50%;
+            }
+
+            &__tile {
+                width: 50%;
+            }
+
+            &__tree {
+                width: 50%;
+            }
+        }
+    }
+
+    @include media(">=display") {
+        &--img {
+            &__contextual-menu {
+                width: 20%;
             }
         }
     }

@@ -10,11 +10,11 @@
     scroll-behavior: smooth;
 }
 .docs-content {
-    padding: 40px 40px 80px 60px;
+    padding: 2rem 2rem 4rem 2rem;
     box-sizing: border-box;
     width: 100%;
     @include media("<=tablet") {
-        padding: 10px;
+        padding: 2rem 0 0 0;
         min-width: auto;
         width: 100%;
     }
