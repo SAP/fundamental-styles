@@ -6,6 +6,7 @@
 .fd-checkbox
 */
 $block: #{$fd-namespace}-checkbox;
+$displayonlyblock: #{$fd-namespace}-displayonly-checkbox;
 
 %fd-checkbox-input-hidden {
   position: absolute;
@@ -167,5 +168,63 @@ $block: #{$fd-namespace}-checkbox;
         @include fd-form-radio-focus($fd-checkbox-margin-compact);
       }
     }
+  }
+}
+
+.#{$displayonlyblock} {
+
+  $fd-displaycheckbox-margin: 0.5rem;
+
+  &__label {
+    width: fit-content;
+    min-width: fit-content;
+    overflow: hidden;
+    display: flex;
+    pointer-events: none;
+    padding: $fd-displaycheckbox-margin 0 $fd-displaycheckbox-margin $fd-displaycheckbox-margin;
+
+    @include fd-rtl() {
+      padding: $fd-displaycheckbox-margin $fd-displaycheckbox-margin $fd-displaycheckbox-margin 0;
+    }
+
+    &::before {
+      content: "\e19a";
+      font-size: 1rem;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "SAP-icons";
+      background-color: var(--sapField_Background);
+      margin-right: $fd-displaycheckbox-margin;
+      margin-left: 0;
+      color: var(--sapTextColor);
+    }
+
+    @include fd-rtl() {
+      &::before {
+        margin-left: $fd-displaycheckbox-margin;
+        margin-right: 0;
+      }
+    }
+
+    @include fd-hover() {
+      &::before {
+        background-color: var(--sapField_Hover_Background);
+        border-color: var(--sapField_Hover_BorderColor);
+      }
+    }
+  }
+
+  &:checked + .#{$displayonlyblock}__label::before {
+    content: "\e03f";
+  }
+
+  &:indeterminate + .#{$displayonlyblock}__label::before {
+    content: "\e17b";
+    font-size: 0.5rem;
+    height: 0.875rem;
+    width: 0.875rem;
+    border: var(--sapField_BorderWidth) solid var(--sapField_BorderColor);
+    border-radius: 0.0625;
   }
 }

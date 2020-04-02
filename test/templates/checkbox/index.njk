@@ -1,8 +1,17 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
 {% from "./component.njk" import checkbox %}
+{% from "./component.njk" import displaycheckbox %}
 
 {% block content %}
+<h2>Display only Mode</h2>
+{% set example %}
+  {{ displaycheckbox(properties='checked') }}
+  {{ displaycheckbox() }}
+  {{ displaycheckbox(properties='indeterminate') }}
+{% endset %}
+
+{{ format(example) }}
 
 <h2>Default</h2>
 

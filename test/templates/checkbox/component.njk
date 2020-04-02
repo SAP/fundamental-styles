@@ -5,3 +5,9 @@
     <input type="checkbox" class="{{'fd-checkbox'}}{{ ' is-'+state if state }}{{ ' fd-checkbox--compact' if compact }}" id="{{_id}}" name="checkbox" {{properties}}>
 	<label class="fd-checkbox__label" for="{{_id}}">Label</label>
 {%- endmacro %}
+
+{% macro displaycheckbox(properties="") -%}
+    {%- set _id = utils.id() %}
+    <input type="checkbox" class="{{'fd-displayonly-checkbox'}}" id="{{_id}}" {{properties}} style="display:none">
+	<label class="fd-displayonly-checkbox__label" for="{{_id}}">Label</label>
+{%- endmacro %}
