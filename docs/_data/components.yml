@@ -12,6 +12,9 @@
     - title: Button
       meta: button
 
+    - title: Checkbox
+      meta: checkbox
+
     - title: Dialog
       meta: dialog
 

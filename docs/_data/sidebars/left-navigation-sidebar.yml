@@ -112,6 +112,10 @@ entries:
       url: /components/calendar.html
       output: web
 
+    - title: Checkbox
+      url: /components/checkbox.html
+      output: web
+
     - title: Dialog
       url: /components/dialog.html
       output: web
