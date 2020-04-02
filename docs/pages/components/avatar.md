@@ -118,6 +118,7 @@ Use helpers classes to change the background colors, for example, `.fd-has-backg
 <span class="fd-avatar fd-avatar--m sap-icon--money-bills fd-has-background-color-accent-7" role="presentation"></span>
 <span class="fd-avatar fd-avatar--m sap-icon--money-bills fd-has-background-color-accent-8" role="presentation"></span>
 <span class="fd-avatar fd-avatar--m sap-icon--money-bills fd-has-background-color-accent-9" role="presentation"></span>
+<span class="fd-avatar fd-avatar--m sap-icon--money-bills fd-has-background-color-accent-10" role="presentation"></span>
 {% endcapture %}
 {% include display-component.html component=avatar-accent-colors %}
 
