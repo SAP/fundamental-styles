@@ -32,9 +32,21 @@ Implementation Guidelines:
     <div class="fd-popover__body" aria-hidden="true" id="pQqQR213">
         <nav class="fd-menu">
             <ul class="fd-menu__list">
-                <li><a href="#" class="fd-menu__item">Option 1</a></li>
-                <li><a href="#" class="fd-menu__item">Option 2</a></li>
-                <li><a href="#" class="fd-menu__item">Option 3</a></li>
+                <li class="fd-menu__item">
+                    <a href="#" class="fd-menu__link">
+                        <span class="fd-menu__title">Option 1</span>
+                    </a>
+                </li>
+                <li class="fd-menu__item">
+                    <a href="#" class="fd-menu__link">
+                        <span class="fd-menu__title">Option 2</span>
+                    </a>
+                </li>
+                <li class="fd-menu__item">
+                    <a href="#" class="fd-menu__link">
+                        <span class="fd-menu__title">Option 3</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -44,7 +56,7 @@ Implementation Guidelines:
 
 <br>
 
-## With Text Button and Group Header
+## With Text Button and Separated Items
 
 {% capture default-contextualmenuwheader %}
 <div class="fd-popover">
@@ -54,18 +66,23 @@ Implementation Guidelines:
     <div class="fd-popover__body" aria-hidden="true" id="jhqD0558">
         <nav class="fd-menu">
             <ul class="fd-menu__list">
-                <li><a href="#" class="fd-menu__item">Option 1</a></li>
-                <li><a href="#" class="fd-menu__item">Option 2</a></li>
-                <li><a href="#" class="fd-menu__item">Option 3</a></li>
+                <li class="fd-menu__item">
+                    <a href="#" class="fd-menu__link">
+                        <span class="fd-menu__title">Option 1</span>
+                    </a>
+                </li>
+                <span class="fd-menu__separator"></span>
+                <li class="fd-menu__item">
+                    <a href="#" class="fd-menu__link">
+                        <span class="fd-menu__title">Option 2</span>
+                    </a>
+                </li>
+                <li class="fd-menu__item">
+                    <a href="#" class="fd-menu__link">
+                        <span class="fd-menu__title">Option 3</span>
+                    </a>
+                </li>
             </ul>
-            <div class="fd-menu__group">
-                <h3 class="fd-menu__title">Group Header</h3>
-                <ul class="fd-menu__list">
-                    <li><a href="#" class="fd-menu__item">Option 4</a></li>
-                    <li><a href="#" class="fd-menu__item">Option 5</a></li>
-                    <li><a href="#" class="fd-menu__item">Option 6</a></li>
-                </ul>
-            </div>
         </nav>
     </div>
 </div>

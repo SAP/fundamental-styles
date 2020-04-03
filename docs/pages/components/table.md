@@ -360,10 +360,26 @@ a contextual menu can be substituted in order to display all actions in one menu
                     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="pQqQR213a">
                         <nav class="fd-menu">
                             <ul class="fd-menu__list">
-                                <li><a href="#" class="fd-menu__item">Edit</a></li>
-                                <li><a href="#" class="fd-menu__item">Lock</a></li>
-                                <li><a href="#" class="fd-menu__item">Duplicate</a></li>
-                                <li><a href="#" class="fd-menu__item">Delete</a></li>
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Edit</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Lock</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Duplicate</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Delete</span>
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -382,10 +398,26 @@ a contextual menu can be substituted in order to display all actions in one menu
                     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="lkjlkj23">
                         <nav class="fd-menu">
                             <ul class="fd-menu__list">
-                                <li><a href="#" class="fd-menu__item">Edit</a></li>
-                                <li><a href="#" class="fd-menu__item">Lock</a></li>
-                                <li><a href="#" class="fd-menu__item">Duplicate</a></li>
-                                <li><a href="#" class="fd-menu__item">Delete</a></li>
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Edit</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Lock</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Duplicate</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Delete</span>
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -404,10 +436,26 @@ a contextual menu can be substituted in order to display all actions in one menu
                     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="uu4324">
                         <nav class="fd-menu">
                             <ul class="fd-menu__list">
-                                <li><a href="#" class="fd-menu__item">Edit</a></li>
-                                <li><a href="#" class="fd-menu__item">Lock</a></li>
-                                <li><a href="#" class="fd-menu__item">Duplicate</a></li>
-                                <li><a href="#" class="fd-menu__item">Delete</a></li>
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Edit</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Lock</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Duplicate</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Delete</span>
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
                     </div>

@@ -66,8 +66,10 @@ $(document).ready(function () {
                 return;
             }
             //tree
-            var isTree = target.getAttribute("role") === "tree";
-            var isTreeItem = target.getAttribute("role") === "treeitem";
+            if(target){
+                var isTree = target.getAttribute("role") === "tree";
+                var isTreeItem = target.getAttribute("role") === "treeitem";
+            }
 
             function setPressed(el, bool) {
                 el.setAttribute("aria-pressed", bool);

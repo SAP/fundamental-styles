@@ -25,10 +25,8 @@ $block: #{$fd-namespace}-token;
   $fd-token-padding-horizontal: 0.3125rem;
   $fd-token-compact-padding-horizontal: 0.25rem;
   $fd-token-color: var(--sapTextColor) !default;
-  // $fd-token-background-color: darken(var(--sapButton_Background), 2);
-  $fd-token-background-color: var(--sapButton_Background) !default;
-  // $fd-token-border-color: darken(var(--sapButton_BorderColor), 24);
-  $fd-token-border-color: var(--sapButton_BorderColor) !default;
+  $fd-token-background-color: var(--sapButton_TokenBackground) !default;
+  $fd-token-border-color: var(--sapButton_TokenBorderColor) !default;
   $fd-token-selected-hover-border-color: var(--sapButton_Selected_Hover_BorderColor) !default;
 
   $fd-token-icon-color: var(--sapContent_IconColor);

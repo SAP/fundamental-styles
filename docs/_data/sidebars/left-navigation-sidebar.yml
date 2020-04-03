@@ -172,6 +172,10 @@ entries:
       url: /components/message-strip.html
       output: web
 
+    - title: Message Box
+      url: /components/message-box.html
+      output: web
+
     - title: Notification
       url: /components/notification.html
       output: web

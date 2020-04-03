@@ -1,0 +1,63 @@
+@import "./mixins";
+
+$fd-dialog-content-margin-y: 6%;
+$fd-dialog-content-margin-x: 10%;
+$fd-dialog-content-min-width: 20rem;
+$fd-dialog-content-min-height: 7.5rem;
+$fd-dialog-content-box-shadow: var(--sapContent_Shadow3);
+$fd-dialog-content-border-radius: var(--sapElement_BorderCornerRadius);
+$fd-dialog-content-padding-x: (s: 1rem, m: 2rem, l: 2rem, xl: 3rem);
+$fd-dialog-title-font-size: 1rem;
+$fd-dialog-footer-button-min-width: 4rem;
+$fd-dialog-body-color: var(--sapGroup_ContentBackground);
+$fd-dialog-overlay-color: rgba(0, 0, 0, 0.6); // Should be fade(var(--sapBlockLayer_Background), 60)
+
+%dialog {
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $fd-dialog-overlay-color;
+}
+
+%dialog-content {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  position: absolute;
+  min-width: $fd-dialog-content-min-width;
+  min-height: $fd-dialog-content-min-height;
+  max-width: calc(100vw - #{$fd-dialog-content-margin-x});
+  max-height: calc(100vh - #{$fd-dialog-content-margin-y});
+  box-shadow: $fd-dialog-content-box-shadow;
+  border-radius: $fd-dialog-content-border-radius;
+}
+
+%dialog-body {
+  overflow: auto;
+  flex-grow: 1;
+  background-color: $fd-dialog-body-color;
+}
+
+%dialog-paddings {
+  padding-left: map_get($fd-dialog-content-padding-x, s);
+  padding-right: map_get($fd-dialog-content-padding-x, s);
+  flex-shrink: 0;
+}
+
+%dialog-mobile {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+%dialog-title {
+  @include fd-reset();
+  @include fd-ellipsis();
+
+  font-size: $fd-dialog-title-font-size;
+}

@@ -165,11 +165,31 @@ When there are several main actions for a page, consider displaying them under a
                 <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="wgxzK859">
                     <nav class="fd-menu" id="">
                         <ul class="fd-menu__list">
-                            <li><a href="#" class="fd-menu__item">Edit</a></li>
-                            <li><a href="#" class="fd-menu__item">Delete</a></li>
-                            <li><a href="#" class="fd-menu__item">Assign</a></li>
-                            <li><a href="#" class="fd-menu__item">Expire</a></li>
-                            <li><a href="#" class="fd-menu__item">Archive</a></li>
+                            <li class="fd-menu__item">
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Edit</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item">
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Delete</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item">
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Assign</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item">
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Expire</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item">
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Archive</span>
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                </div>
@@ -303,10 +323,26 @@ When there are several main actions for a page, consider displaying them under a
                     <div class="fd-popover__body" aria-hidden="true" id="wgxzK85">
                         <nav class="fd-menu" id="">
                             <ul class="fd-menu__list">
-                                <li><a href="#" class="fd-menu__item">Option 1</a></li>
-                                <li><a href="#" class="fd-menu__item">Option 2</a></li>
-                                <li><a href="#" class="fd-menu__item">Option 3</a></li>
-                                <li><a href="#" class="fd-menu__item">Option 4</a></li>
+                                <li class="fd-menu__item">
+                                    <a class="fd-menu__link" href="#">
+                                        <span class="fd-menu__title">Option 1</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a class="fd-menu__link" href="#">
+                                        <span class="fd-menu__title">Option 2</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a class="fd-menu__link" href="#">
+                                        <span class="fd-menu__title">Option 3</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a class="fd-menu__link" href="#">
+                                        <span class="fd-menu__title">Option 4</span>
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -329,15 +365,31 @@ When there are several main actions for a page, consider displaying them under a
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <button class="fd-button fd-button--transparent sap-icon--overflow"
-                        aria-controls="wgxzK85" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                        aria-controls="wgxzK86" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
-                    <div class="fd-popover__body" aria-hidden="true" id="wgxzK85">
+                    <div class="fd-popover__body" aria-hidden="true" id="wgxzK86">
                         <nav class="fd-menu" id="">
                             <ul class="fd-menu__list">
-                                <li><a href="#" class="fd-menu__item">Option 1</a></li>
-                                <li><a href="#" class="fd-menu__item">Option 2</a></li>
-                                <li><a href="#" class="fd-menu__item">Option 3</a></li>
-                                <li><a href="#" class="fd-menu__item">Option 4</a></li>
+                                <li class="fd-menu__item">
+                                    <a class="fd-menu__link" href="#">
+                                        <span class="fd-menu__title">Option 1</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a class="fd-menu__link" href="#">
+                                        <span class="fd-menu__title">Option 2</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a class="fd-menu__link" href="#">
+                                        <span class="fd-menu__title">Option 3</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a class="fd-menu__link" href="#">
+                                        <span class="fd-menu__title">Option 4</span>
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -348,5 +400,4 @@ When there are several main actions for a page, consider displaying them under a
 </div>
 {% endcapture %}
 {% include display-component.html component=default-action-bar-multi %}
- 
  

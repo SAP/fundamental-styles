@@ -77,7 +77,7 @@
 
   @include fd-disabled() {
     pointer-events: none;
-    opacity: 0.4;
+    opacity: var(--sapContent_DisabledOpacity);
 
     &::placeholder {
       color: transparent;

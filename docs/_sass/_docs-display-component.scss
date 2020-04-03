@@ -83,19 +83,25 @@
         text-decoration: none;
     }
 
-    .fd-dialog-docs-static {
+    .fd-dialog-docs-static,
+    .fd-message-box-docs-static {
         &.fd-dialog,
-        .fd-dialog {
+        .fd-dialog,
+        &.fd-message-box,
+        .fd-message-box {
             position: static;
             background-color: transparent;
         }
 
         &.fd-dialog__content,
-        .fd-dialog__content {
+        .fd-dialog__content,
+        &.fd-message-box__content,
+        .fd-message-box__content {
             position: static;
             transform: translate(0%, 0%);
             width: 30rem;
             margin: auto;
+            height: auto;
 
             &:not(:last-child) {
                 margin-bottom: 2rem;

@@ -82,7 +82,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
     @include fd-disabled() {
       pointer-events: none;
-      opacity: 0.4;
+      opacity: var(--sapContent_DisabledOpacity);
     }
 
     &:nth-child(1) {
@@ -209,5 +209,10 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
   .#{$fd-namespace}-textarea {
     resize: vertical;
+  }
+
+  &[readonly],
+  &.is-readonly {
+    overflow: visible;
   }
 }

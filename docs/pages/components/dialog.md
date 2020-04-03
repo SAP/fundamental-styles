@@ -35,7 +35,7 @@ Dialog consists of following elements:
 <ul>
     <li><code>.fd-dialog</code>: Wraps dialog and displays it with <code>position: fixed</code>. Dialog can be made visible by applying <code style="white-space:nowrap;">.fd-dialog--active</code> class
         <ul>
-            <li><code>.fd-dialog__content</code>: Dialog dialog window
+            <li><code>.fd-dialog__content</code>: Dialog window
                 <ul>
                     <li><code>.fd-dialog__header</code>: Header
                         <ul>

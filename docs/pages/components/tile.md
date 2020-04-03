@@ -95,9 +95,21 @@ The component is ideal for displaying collection data when a grid or list layout
             <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="WQIDD179">
                 <nav class="fd-menu" id="">
                     <ul class="fd-menu__list">
-                        <li><a href="#" class="fd-menu__item">Option 1</a></li>
-                        <li><a href="#" class="fd-menu__item">Option 2</a></li>
-                        <li><a href="#" class="fd-menu__item">Option 3</a></li>
+                        <li class="fd-menu__item">
+                            <a href="#" class="fd-menu__link">
+                                <span class="fd-menu__title">Option 1</span>
+                            </a>
+                        </li>
+                        <li class="fd-menu__item">
+                            <a href="#" class="fd-menu__link">
+                                <span class="fd-menu__title">Option 2</span>
+                            </a>
+                        </li>
+                        <li class="fd-menu__item">
+                            <a href="#" class="fd-menu__link">
+                                <span class="fd-menu__title">Option 3</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>

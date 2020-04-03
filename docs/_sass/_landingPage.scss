@@ -175,7 +175,7 @@ body {
   }
 
   &__container {
-    max-width: 1440px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
@@ -188,7 +188,7 @@ body {
 
 .libraries-section {
   padding: 140px 120px 64px 120px;
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
 
   &__logo {
@@ -715,15 +715,20 @@ body {
 
 // HAMBURGER MENU
 .header-section__hamburger {
-  min-width: 25px;
+  min-width: 15px;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
+.header-section__sap-icon--menu2 {
+  background-color: white;
+  border: none;
+}
+
 .header-section__sap-icon--menu2::before {
-  font-size: 20px;
   transition: opacity 0.3s, transform 0.3s;
   color: $home-page-action-color;
+   font-size: 20px;
 }
 
 .header-section__sap-icon--decline::before {

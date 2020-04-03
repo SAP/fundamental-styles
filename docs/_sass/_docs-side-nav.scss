@@ -15,7 +15,7 @@ $side-nav-links-color: $docs-home-white-color;
         display: none;
         &.fd-styles__mobile-list {
             width: auto;
-            display: block;
+            display: flex;
         }
     }
 
@@ -37,10 +37,13 @@ $side-nav-links-color: $docs-home-white-color;
         &-link {
             color: $side-nav-links-color !important;
             font-family: '72', sans-serif;
-            padding: 20px 20px 5px 20px;
+            padding: 1rem 0rem 1rem 1rem;
             display: block;
             &:hover {
                 color: $side-nav-links-color;
+            }
+            &:focus {
+                background-color: #5FA8EF;
             }
         }
         ol, ul {
@@ -49,7 +52,7 @@ $side-nav-links-color: $docs-home-white-color;
     }
 
     &__links-container {
-        padding-left: 20px;
+        padding-bottom: 7rem;
         margin: 0;
         overflow-y: auto;
     }
@@ -79,7 +82,7 @@ $side-nav-links-color: $docs-home-white-color;
     }
 
     &__seperator {
-        margin: 15px 20px 0 20px;
+        margin: 0 1rem;
         border-bottom: 1px solid #242424;
         opacity: .3;
     }

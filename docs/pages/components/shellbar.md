@@ -64,8 +64,16 @@ This example shows the minimum shellbar for a single application product with on
         <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="WV3AY276">
           <nav class="fd-menu">
             <ul class="fd-menu__list">
-              <li><a role="button" class="fd-menu__item">Settings</a></li>
-              <li><a role="button" class="fd-menu__item">Sign Out</a></li>
+              <li class="fd-menu__item">
+                <a role="button" class="fd-menu__link">
+                  <span class="fd-menu__title">Settings</span>
+                </a>
+              </li>
+              <li class="fd-menu__item">
+                <a role="button" class="fd-menu__link">
+                  <span class="fd-menu__title">Sign Out</span>
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -98,10 +106,26 @@ This example includes the product menu for navigating to applications within the
       <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="9GLB26941">
         <nav class="fd-menu">
           <ul class="fd-menu__list">
-            <li><a role="button" class="fd-menu__item">Application A</a></li>
-            <li><a role="button" class="fd-menu__item">Application B</a></li>
-            <li><a role="button" class="fd-menu__item">Application C</a></li>
-            <li><a role="button" class="fd-menu__item">Application D</a></li>
+            <li class="fd-menu__item">
+              <a role="button" class="fd-menu__link">
+                <span class="fd-menu__title">Application A</span>
+              </a>
+            </li>
+            <li class="fd-menu__item">
+              <a role="button" class="fd-menu__link">
+                <span class="fd-menu__title">Application B</span>
+              </a>
+            </li>
+            <li class="fd-menu__item">
+              <a role="button" class="fd-menu__link">
+                <span class="fd-menu__title">Application C</span>
+              </a>
+            </li>
+            <li class="fd-menu__item">
+              <a role="button" class="fd-menu__link">
+                <span class="fd-menu__title">Application D</span>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -134,8 +158,16 @@ This example includes the product menu for navigating to applications within the
         <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="ZY3AY276">
           <nav class="fd-menu">
             <ul class="fd-menu__list">
-              <li><a role="button" class="fd-menu__item">Settings</a></li>
-              <li><a role="button" class="fd-menu__item">Sign Out</a></li>
+              <li class="fd-menu__item">
+                <a role="button" class="fd-menu__link">
+                  <span class="fd-menu__title">Settings</span>
+                </a>
+              </li>
+              <li class="fd-menu__item">
+                <a role="button" class="fd-menu__link">
+                  <span class="fd-menu__title">Sign Out</span>
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -192,9 +224,21 @@ When a product has multiple links, the product links should collapse into an ove
             <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="CWaGX278">
               <nav class="fd-menu">
                 <ul class="fd-menu__list">
-                  <li><a role="button" class="fd-menu__item">Search</a></li>
-                  <li><a role="button" class="fd-menu__item">Notifications</a></li>
-                  <li><a role="button" class="fd-menu__item">Pool</a></li>
+                  <li class="fd-menu__item">
+                    <a role="button" class="fd-menu__link">
+                      <span class="fd-menu__title">Search</span>
+                    </a>
+                  </li>
+                  <li class="fd-menu__item">
+                    <a role="button" class="fd-menu__link">
+                      <span class="fd-menu__title">Notifications Out</span>
+                    </a>
+                  </li>
+                  <li class="fd-menu__item">
+                    <a role="button" class="fd-menu__link">
+                      <span class="fd-menu__title">Pool</span>
+                    </a>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -211,10 +255,18 @@ When a product has multiple links, the product links should collapse into an ove
           <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="DD35G276">
             <nav class="fd-menu">
               <ul class="fd-menu__list">
-                <li><a role="button" class="fd-menu__item">Settings</a></li>
-                <li><a role="button" class="fd-menu__item">Sign Out</a></li>
+                <li class="fd-menu__item">
+                  <a role="button" class="fd-menu__link">
+                    <span class="fd-menu__title">Settings</span>
+                  </a>
+                </li>
+                <li class="fd-menu__item">
+                  <a role="button" class="fd-menu__link">
+                    <span class="fd-menu__title">Sign Out</span>
+                  </a>
+                </li>
               </ul>
-            </nav>
+          </nav>
           </div>
         </div>
       </div>
@@ -253,8 +305,16 @@ For more information about the Product Switch, see [Product Switch](product-swit
           <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="MKFAY276">
             <nav class="fd-menu">
               <ul class="fd-menu__list">
-                <li><a role="button" class="fd-menu__item">Settings</a></li>
-                <li><a role="button" class="fd-menu__item">Sign Out</a></li>
+                <li class="fd-menu__item">
+                  <a role="button" class="fd-menu__link">
+                    <span class="fd-menu__title">Settings</span>
+                  </a>
+                </li>
+                <li class="fd-menu__item">
+                  <a role="button" class="fd-menu__link">
+                    <span class="fd-menu__title">Sign Out</span>
+                  </a>
+                </li>
               </ul>
             </nav>
           </div>
