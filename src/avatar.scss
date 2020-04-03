@@ -19,19 +19,16 @@ $block: #{$fd-namespace}-avatar;
   ) !default;
   $fd-avatar-border-radius: $fd-border-radius !default;
   $fd-avatar-border-fade: rgba(0, 0, 0, 0.5); // Should be fade(var(--sapContent_ShadowColor), 10);
-  $fd-avatar-color: fd-color("text", 5) !default;
-  $fd-avatar-background-color: fd-color("accent", 6) !default;
+  $fd-avatar-color: var(--sapContent_ContrastTextColor) !default;
+  $fd-avatar-background-color: var(--sapAccentColor6) !default;
 
   // BLOCK BASE *******************************************
   @at-root {
     [class*="#{$block}"] {
       @include fd-reset();
 
-      --fd-avatar-color: var(--fd-color-text-5);
-      --fd-avatar-background-color: var(--fd-color-accent-6);
-
-      @include fd-reset();
-
+      color: $fd-avatar-color;
+      background-color: $fd-avatar-background-color;
       display: inline-block;
       position: relative;
       vertical-align: middle;
@@ -40,9 +37,6 @@ $block: #{$fd-namespace}-avatar;
       background-size: cover;
       background-position: 50%;
       border-radius: $fd-avatar-border-radius;
-
-      @include fd-var-color("background-color", $fd-avatar-background-color, --fd-avatar-background-color);
-      @include fd-var-color("color", $fd-avatar-color, --fd-avatar-color);
     }
   }
   // BLOCK MODIFIERS ************
@@ -57,6 +51,7 @@ $block: #{$fd-namespace}-avatar;
       max-height: $value;
       min-width: $value;
       min-height: $value;
+      font-weight: 400;
 
       @if $size == xs or $size == s or $size == m {
         .#{$block}__zoom-icon {
@@ -71,36 +66,30 @@ $block: #{$fd-namespace}-avatar;
         }
       }
 
-      @if $size == xs {
-        @include fd-type("-1");
-        @include fd-weight("normal");
-
-        font-size: 1rem;
+      @if $size == xs or $size == s {
+        line-height: 1.33333;
         font-stretch: condensed;
-        line-height: $value;
+      }
+
+      @if $size == xs {
+        font-size: 1rem;
       }
 
       @if $size == s {
-        @include fd-type("-1");
-        @include fd-weight("normal");
-
         font-size: 1.125rem;
-        font-stretch: condensed;
-        line-height: $value;
       }
 
       @if $size == m {
-        @include fd-type("0");
-
+        line-height: 1.42857;
         font-size: 1.5rem;
-        line-height: $value;
+      }
+
+      @if $size == l or $size == xl {
+        line-height: 1.33333;
       }
 
       @if $size == l {
-        @include fd-type("2");
-
         font-size: 2.25rem;
-        line-height: $value;
 
         .#{$block}__zoom-icon {
           width: 1.25rem;
@@ -115,10 +104,7 @@ $block: #{$fd-namespace}-avatar;
       }
 
       @if $size == xl {
-        @include fd-type("2");
-
         font-size: 3rem;
-        line-height: $value;
 
         .#{$block}__zoom-icon {
           width: 1.75rem;
