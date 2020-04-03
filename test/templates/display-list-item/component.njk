@@ -1,0 +1,78 @@
+{%- macro display_list_item(properties={}, modifier=modifier) %}
+
+{%- if modifier == 'compact' %}
+<ul class="fd-list">
+    {%- if properties.items %}
+    {%- for item in properties.items %}
+    <li class="fd-display-list-item fd-display-list-item--{{modifier}}" tabindex="0">
+    <div class="fd-display-list-item--content fd-display-list-item--content--{{modifier}}">
+    <div class="fd-display-list-item--label fd-display-list-item--label--{{modifier}}">{{item.title}}</div>
+    <div class="fd-display-list-item--value">{{item.secondary}}</div>
+    </div>
+  </li>
+    {%- endfor %}
+    {%- else %}
+        <li class="fd-display-list-item">
+        <div class="fd-display-list-item--label">No data found.</div>
+        <div class="fd-display-list-item--value">No secondary data found.</div>
+        </li>
+    {%- endif %}
+</ul>
+ {%- elseif modifier == 'action' %}
+<ul class="fd-list">
+    {%- if properties.items %}
+        {%- for item in properties.items %}
+    <li class="fd-display-list-item fd-display-list-item--{{modifier}} tabindex="0">
+    <div class="fd-display-list-item--content">
+    <div class="fd-display-list-item--label">{{item.title}}</div>
+    <div class="fd-display-list-item--value">{{item.secondary}}</div>
+    <div class="sap-icon--navigation-right-arrow fd-display-list-item--navigation"></div>
+    </div>
+  </li>
+    {%- endfor %}
+    {%- else %}
+        <li class="fd-display-list-item">
+        <div class="fd-display-list-item--label">No data found.</div>
+        <div class="fd-display-list-item--value">No secondary data found.</div>
+        </li>
+    {%- endif %}
+</ul>
+ {%- elseif modifier == 'selected' %}
+<ul class="fd-list">
+    {%- if properties.items %}
+        {%- for item in properties.items %}
+    <li class="fd-display-list-item fd-display-list-item--{{modifier}} tabindex="0">
+    <div class="fd-display-list-item--content">
+    <div class="fd-display-list-item--label">{{item.title}}</div>
+    <div class="fd-display-list-item--value">{{item.secondary}}</div>
+    </div>
+  </li>
+    {%- endfor %}
+    {%- else %}
+        <li class="fd-display-list-item">
+        <div class="fd-display-list-item--label">No data found.</div>
+        <div class="fd-display-list-item--value">No secondary data found.</div>
+        </li>
+    {%- endif %}
+</ul>
+ {%- else %}
+ <ul class="fd-list">
+    {%- if properties.items %}
+        {%- for item in properties.items %}
+    <li class="fd-display-list-item tabindex="0">
+    <div class="fd-display-list-item--content">
+    <div class="fd-display-list-item--label">{{item.title}}</div>
+    <div class="fd-display-list-item--value">{{item.secondary}}</div>
+    </div>
+  </li>
+    {%- endfor %}
+    {%- else %}
+        <li class="fd-display-list-item">
+        <div class="fd-display-list-item--label">No data found.</div>
+        <div class="fd-display-list-item--value">No secondary data found.</div>
+        </li>
+    {%- endif %}
+</ul>
+ {%- endif %}
+ 
+{%- endmacro %}

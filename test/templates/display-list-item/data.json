@@ -1,0 +1,33 @@
+{
+  "id": "display-list-item",
+  "name": "Display List Item",
+  "type": "text",
+  "modifier": {
+    "block": [
+        "compact",
+        "action",
+        "selected"
+    ]
+ },
+  "properties": {
+        "items": [
+          {
+            "title": "List item 1",
+            "secondary": "status 1"
+          },
+          {
+            "title": "List item 2",
+            "secondary": "status 2"
+          },
+          {
+            "title": "List item 3",
+            "secondary": "status 3"
+          },
+          {
+            "title": "List item 4",
+            "secondary": "status 4"
+          }
+        ]
+      }
+}
+

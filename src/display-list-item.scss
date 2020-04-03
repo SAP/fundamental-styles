@@ -1,0 +1,111 @@
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+@import "./list.scss";
+@import "./list-item-base";
+
+/*!
+.fd-display-list-item
+*/
+$block: #{$fd-namespace}-display-list-item;
+// display list item values of varaibles
+$fd-display-list-item-text-color: var(--sapList_TextColor);
+$fd-display-list-item-content-label-color: var(--sapContent_LabelColor);
+$fd-display-list-item-active-text-color: var(--sapList_Active_TextColor);
+$fd-display-list-item-font-medium-size: var(--sapMFontMediumSize);
+
+.#{$block} {
+  display: -webkit-box;
+  display: flex;
+  height: 3rem;
+
+  @include fd-list-item-basic();
+
+  &--compact {
+    height: 2rem;
+  }
+
+  &:focus {
+    @include fd-list-item-focusable();
+  }
+
+  &:hover {
+    @include fd-list-item-hoverable();
+  }
+
+  &--action {
+    cursor: pointer;
+
+    &:active {
+      @include fd-list-item-active();
+
+      background: var(--sapList_Active_Background);
+    }
+  }
+
+  &--selected {
+    @include fd-list-item-selected();
+  }
+}
+
+.#{$block} > .#{$block}--content {
+  @include fd-list-item-content();
+
+  display: -webkit-box;
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 3rem;
+
+  &--compact {
+    line-height: 2rem;
+  }
+}
+
+.#{$block}--label {
+  -webkit-box-flex: 1;
+  flex: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 3rem;
+  display: block;
+  font-size: 1.125rem;
+  -webkit-box-align: center;
+  align-items: center;
+  color: $fd-display-list-item-text-color;
+
+  &:active {
+    color: $fd-display-list-item-active-text-color;
+  }
+
+  &--compact {
+    font-size: $fd-display-list-item-font-medium-size;
+  }
+
+  @include fd-rtl() {
+    text-align: right;
+  }
+}
+
+.#{$block}--value {
+  -webkit-box-flex: 1;
+  flex: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 3rem;
+  font-size: 0.875rem;
+  margin-left: 1rem;
+  text-align: right;
+  color: $fd-display-list-item-content-label-color;
+
+  @include fd-rtl() {
+    text-align: left;
+  }
+}
+
+.#{$block}--navigation {
+  @include fd-list-ImgNav();
+}

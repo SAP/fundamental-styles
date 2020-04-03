@@ -15,6 +15,9 @@
     - title: Dialog
       meta: dialog
 
+    - title: Display List Item
+      meta: display-list-item
+
     - title: Forms
       meta: form
 

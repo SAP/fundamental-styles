@@ -1,0 +1,95 @@
+@import "./settings";
+@import "./mixins";
+@import "./functions";
+
+$block: #{$fd-namespace}-list-item-base;
+
+$fd-basic-list-background: var(--sapList_Background);
+$fd-basic-list-border-color: var(--sapList_BorderColor);
+$fd-basic-list-content-focus-color: var(--sapContent_FocusColor);
+$fd-basic-list-hover-background-color: var(--sapList_Hover_Background);
+$fd-basic-list-selection-background-color: var(--sapList_SelectionBackgroundColor);
+$fd-basic-list-active-text-color: var(--sapList_active_TextColor);
+$fd-basic-list-active-background: var(--sapList_active_Background);
+$fd-basic-list-hover-selection-background: var(--sapList_Hover_SelectionBackground);
+$fd-basic-list-selected-color: var(--sapSelectedColor);
+$fd-basic-list-element-line-height: var(--sapElement_LineHeight);
+$fd-basic-list-content-non-interactive-icon-color: var(--sapContent_NonInteractiveIconColor);
+$fd-basic-list-hover-selection-background-color: var(--sapList_Hover_SelectionBackground);
+
+@mixin fd-list-item-focusable() {
+  outline: 1px dotted $fd-basic-list-content-focus-color;
+  outline-offset: -2px;
+}
+
+@mixin fd-list-item-highlight() {
+  position: absolute;
+  width: 0.375rem;
+  bottom: 0;
+  left: 0;
+  top: 0;
+}
+
+@mixin fd-list-item-content() {
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  max-width: 100%;
+}
+
+@mixin fd-list-item-transparentbg() {
+  background: fade($fd-basic-list-background, 0);
+}
+
+@mixin fd-list-item-hoverable() {
+  background: $fd-basic-list-hover-background-color;
+}
+
+@mixin fd-list-item-selected() {
+  background: $fd-basic-list-selection-background-color;
+
+  &:hover {
+    background: $fd-basic-list-hover-selection-background-color;
+  }
+}
+
+@mixin fd-list-item-active() {
+  color: $fd-basic-list-active-text-color;
+  background: $fd-basic-list-active-background;
+
+  div {
+    color: $fd-basic-list-active-text-color;
+  }
+}
+
+@mixin fd-list-item-delImg() {
+  margin-left: 0.125rem;
+}
+
+@mixin fd-list-item-counter() {
+  color: $fd-basic-list-active-text-color;
+}
+
+@mixin fd-list-item-basic() {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  background: $fd-basic-list-background;
+  border-bottom: 1px solid $fd-basic-list-border-color;
+  padding: 0 1rem 0 1rem;
+  box-sizing: border-box;
+}
+
+@mixin fd-list-ImgNav() {
+  width: 2.75rem;
+  font-size: 0.75rem;
+  color: #6a6d70;
+  -webkit-box-flex: 0;
+  flex: none;
+  box-sizing: border-box;
+  cursor: default;
+  text-align: center;
+  display: inline-block;
+  vertical-align: baseline;
+}

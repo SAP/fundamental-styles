@@ -116,6 +116,10 @@ entries:
       url: /components/dialog.html
       output: web
 
+    - title: Display List Item
+      url: /components/display-list-item.html
+      output: web
+
     - title: Forms
       url: /components/form.html
       output: web

@@ -1,0 +1,42 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./component.njk" import display_list_item %}
+
+{%- set basic_list = {
+            "items": [
+                { "title": "List item 1", "secondary": "Complete" },
+                { "title": "List item 2", "secondary": "Incomplete" },
+                { "title": "List item 3" },
+                { "title": "List item 4", "secondary": "Complete" }
+            ]
+} %}
+
+{% set modifiers = ["", "compact", "action", "selected"] %}
+
+{% block content %}
+
+    <h2>Display List item</h2>
+    {% set example %}
+    {{ display_list_item(basic_list,modifiers[0]) }}
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>Display Compact List item</h2>
+    {% set example %}
+    {{ display_list_item(basic_list, modifiers[1])}}
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>Display Action List item</h2>
+    {% set example %}
+    {{ display_list_item(basic_list, modifiers[2])}}
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>Display Selected List item</h2>
+    {% set example %}
+    {{ display_list_item(basic_list, modifiers[3])}}
+    {% endset %}
+    {{ format(example) }}
+
+{% endblock %}
