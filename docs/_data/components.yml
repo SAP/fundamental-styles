@@ -81,6 +81,12 @@
     - title: Side Navigation
       meta: side-navigation
 
+    - title: Status Indicators
+      meta: status-indicators
+
+    - title: Step Input
+      meta: step-input
+
     - title: Switch
       meta: switch
 
