@@ -1,0 +1,91 @@
+{% extends "layout.njk" %}
+{% from "./component.njk" import step_input %}
+{% from "./../format.njk" import format %}
+
+{% block content %}
+{% set states = ["success", "error", "warning", "information"] %}
+<h2>Step Input compact mode</h2>
+{%- set example %}
+
+                {{ step_input(
+                    properties={
+                        unitdesc: "PC",
+                        value: 0
+                        },
+                    modifier={
+                        compact: true
+
+                    })
+                }}
+{%- endset %}
+{{ format(example) }}
+
+<h2>Step Input cozy mode</h2>
+{%- set example %}
+
+                {{ step_input(
+                    properties={
+                        unitdesc: "PC",
+                        value: 0
+                        },
+                    modifier={
+                        cozy: true
+
+                    })
+                }}
+{%- endset %}
+{{ format(example) }}
+
+
+<h2>Step Input with  diffrent state</h2>
+{%- set example %}
+{%- for st in states %}
+                {{ step_input(
+                    properties={
+                        unitdesc: "PC",
+                        value: 0
+                        },
+                    modifier={
+                        compact: true,
+                        state: st
+
+                    })
+                }}
+        <br />
+{%- endfor %}
+{%- endset %}
+{{ format(example) }}
+
+<h2>Step Input with disabled mode</h2>
+{%- set example %}
+
+                {{ step_input(
+                    properties={
+                        unitdesc: "PC",
+                        value: 0
+                        },
+                    modifier={
+                        cozy: true,
+                        disabled: true
+                    })
+                }}
+{%- endset %}
+{{ format(example) }}
+
+<h2>Step Input with Read only</h2>
+{%- set example %}
+
+                {{ step_input(
+                    properties={
+                        unitdesc: "PC",
+                        value: 0
+                        },
+                    modifier={
+                        cozy: true,
+                        readonly: true
+                    })
+                }}
+{%- endset %}
+{{ format(example) }}
+
+{% endblock %}

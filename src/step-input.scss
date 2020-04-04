@@ -1,0 +1,185 @@
+@import "./settings";
+@import "./new-settings";
+@import "./mixins";
+@import "./functions";
+@import "./button";
+
+$block: #{$fd-namespace}-step-input;
+
+.#{$block} {
+  $fd-step-input-border-thin-width: 0.0625rem;
+  $fd-step-input-border-thick-width: 2 * $fd-step-input-border-thin-width;
+  $fd-input-group-button-active-focus-color: var(--sapContent_ContrastFocusColor);
+  $fd-button-icon-font-size: 1rem;
+  width: auto;
+  display: inline-block;
+
+  @mixin iconSize($size) {
+    &::before,
+    &::after {
+      font-size: $size;
+    }
+  }
+
+  @include fd-fiori-focus() {
+    outline-color: $fd-input-group-button-active-focus-color;
+  }
+  @include fd-reset();
+  @include fd-rtl();
+
+  &__ContentWrapper {
+    background: var(--sapField_Background);
+    border-style: solid;
+    border-width: $fd-step-input-border-thin-width;
+    border-color: var(--sapField_BorderColor);
+    border-radius: var(--sapField_BorderCornerRadius);
+    box-sizing: border-box;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    @include fd-form-states();
+
+    &.is-readonly {
+      outline: none;
+    }
+  }
+
+  &__ContentWrapper:focus-within {
+    box-shadow: none;
+    outline-offset: -0.1875rem;
+    outline-width: var(--sapContent_FocusWidth);
+    outline-color: var(--sapContent_FocusColor);
+    outline-style: var(--sapContent_FocusStyle);
+    &.is-readonly {
+      outline: none;
+    }
+  }
+
+  &__ContentWrappers:hover {
+    background: var(--sapField_Hover_Background);
+    border-color: var(--sapField_Hover_BorderColor);
+    box-sizing: border-box;
+    border-radius: var(--sapField_BorderCornerRadius);
+  }
+  &__IconContainer {
+    width: auto;
+    height: 100%;
+    vertical-align: inherit;
+    display: inline-block;
+    outline: none;
+
+    &.is-readonly {
+      display: none;
+    }
+    @include fd-hover() {
+      @include buttonContainerHover();
+    }
+  }
+  &__Icon {
+    background-color: var(--sapButton_Lite_Background);
+    border-color: var(--sapButton_Lite_BorderColor);
+    color: var(--sapButton_Lite_TextColor);
+    margin: 0;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    @include iconSize($fd-button-icon-font-size);
+  }
+
+  &__Icon--cozy {
+    display: inline-block;
+    width: 2.125rem;
+    min-width: 2rem;
+    height: 2.25rem;
+    line-height: 2rem;
+  }
+
+  &__Icon--compact {
+    display: inline-block;
+    width: 1.5rem;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.4rem;
+  }
+
+  &__Inputtext {
+    border: none;
+    width: auto;
+    height: 100%;
+    text-align: right;
+    vertical-align: middle;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: var(--sapFontFamily);
+    font-size: var(--sapFontSize);
+    font-style: normal;
+    font-weight: normal;
+    color: var(--sapField_TextColor);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @include fd-form-states();
+
+    @include fd-rtl() {
+      text-align: left;
+    }
+
+    &--no-number-spinner {
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      -moz-appearance: textfield;
+    }
+
+    &:focus::first-line {
+      color: var(--sapContent_ContrastTextColor);
+      background-color: var(--sapSelectedColor);
+    }
+  }
+
+  &__Inputtext:focus {
+    
+    outline: none;
+    
+  }
+
+  &__ContentWrapper--cozy {
+    width: auto;
+    min-width: 2.75rem;
+    height: 2.25rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  &__ContentWrapper--compact {
+    width: auto;
+    min-width: 2rem;
+    height: 1.625rem;
+    margin-top: 0.1875rem;
+    margin-bottom: 0.1875rem;
+  }
+
+  &__UnitDescription {
+    height: 100%;
+    vertical-align: middle;
+    padding-left: 0.5rem;
+    font-family: var(--sapFontFamily);
+    font-size: var(--sapFontSize);
+    font-style: normal;
+    font-weight: normal;
+    color: var(--sapField_TextColor);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @include fd-form-states();
+
+    @include fd-rtl() {
+      padding-right: 0.5rem;
+    }
+  }
+}
