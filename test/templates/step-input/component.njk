@@ -1,7 +1,7 @@
 <!--
 step-input:
     properties={},
-    modifier={ block: [],state: "",compact: false, cozy: false},
+    modifier={ block: [],state: "", cozy: false},
 -->
 
 {% macro step_input(
@@ -11,24 +11,23 @@ step-input:
         state: "",
         disabled: false,
         readonly: false,
-        compact: true,
         cozy: false
     })
 %}
 {%- set input = properties.input %}
 <div class="fd-step-input">
-<div class="fd-step-input__ContentWrapper {{ 'fd-step-input__ContentWrapper--compact' if modifier.compact}} {{ ' is-' + modifier.state if modifier.state }} {{ 'is-readonly' if modifier.readonly }} {{ ' is-disabled' if modifier.disabled }} {{ 'fd-step-input__ContentWrapper--cozy' if modifier.cozy}}">
-        <div class="fd-step-input__IconContainer {{ 'is-readonly' if modifier.readonly }}">
-            <span class="fd-step-input__Icon {{ 'fd-step-input__Icon--compact' if modifier.compact}} {{ 'fd-step-input__Icon--cozy' if modifier.cozy}} sap-icon--less">
+   <div class="fd-step-input__content-wrapper{{ ' is-' + modifier.state if modifier.state }} {{ 'is-readonly' if modifier.readonly }} {{ ' is-disabled' if modifier.disabled }} {{ 'fd-step-input__content-wrapper--cozy' if modifier.cozy}}">
+        <div class="fd-step-input__icon-container {{ 'is-readonly' if modifier.readonly }}">
+            <span class="fd-step-input__icon {{ 'fd-step-input__icon--cozy' if modifier.cozy}} sap-icon--less">
             </span>
         </div>
-              <input class="fd-step-input__Inputtext fd-step-input__Inputtext--no-number-spinner {{ 'is-readonly' if modifier.readonly }}" id="step-1-compact" type="{{input.type}}"  value="{{properties.value}}">
-        <div class="fd-step-input__IconContainer {{ 'is-readonly' if modifier.readonly }} ">    
-            <span class="fd-step-input__Icon {{ 'fd-step-input__Icon--compact' if modifier.compact}} {{ 'fd-step-input__Icon--cozy' if modifier.cozy}} sap-icon--add" ">
+              <input class="fd-step-input__inputtext fd-step-input__inputtext--no-number-spinner {{ 'is-readonly' if modifier.readonly }}" id="step-1-compact" type="{{input.type}}"  value="{{properties.value}}">
+        <div class="fd-step-input__icon-container {{ 'is-readonly' if modifier.readonly }} ">    
+            <span class="fd-step-input__icon {{ 'fd-step-input__icon--cozy' if modifier.cozy}} sap-icon--add" ">
             </span>
         </div>
     </div>
-    <span class="fd-step-input__UnitDescription {{ ' is-disabled' if modifier.disabled }}">{{ properties.unitdesc }}</span>
+    <span class="fd-step-input__unit-description {{ ' is-disabled' if modifier.disabled }}">{{ properties.unitdesc }}</span>
 </div>
 
 {%- endmacro %}
