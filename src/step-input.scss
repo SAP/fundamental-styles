@@ -11,10 +11,11 @@ $block: #{$fd-namespace}-step-input;
   $fd-step-input-border-thick-width: 2 * $fd-step-input-border-thin-width;
   $fd-input-group-button-active-focus-color: var(--sapContent_ContrastFocusColor);
   $fd-button-icon-font-size: 1rem;
+
   width: auto;
   display: inline-block;
 
-  @mixin iconSize($size) {
+  @mixin icon-size($size) {
     &::before,
     &::after {
       font-size: $size;
@@ -24,10 +25,16 @@ $block: #{$fd-namespace}-step-input;
   @include fd-fiori-focus() {
     outline-color: $fd-input-group-button-active-focus-color;
   }
+
   @include fd-reset();
   @include fd-rtl();
 
-  &__ContentWrapper {
+  &__content-wrapper {
+    width: auto;
+    min-width: 2rem;
+    height: 1.625rem;
+    margin-top: 0.1875rem;
+    margin-bottom: 0.1875rem;
     background: var(--sapField_Background);
     border-style: solid;
     border-width: $fd-step-input-border-thin-width;
@@ -37,7 +44,7 @@ $block: #{$fd-namespace}-step-input;
     vertical-align: middle;
     display: inline-block;
     position: relative;
-    margin: 0;
+
     @include fd-form-states();
 
     &.is-readonly {
@@ -45,24 +52,32 @@ $block: #{$fd-namespace}-step-input;
     }
   }
 
-  &__ContentWrapper:focus-within {
+  &__content-wrapper:focus-within {
     box-shadow: none;
     outline-offset: -0.1875rem;
     outline-width: var(--sapContent_FocusWidth);
     outline-color: var(--sapContent_FocusColor);
     outline-style: var(--sapContent_FocusStyle);
+
     &.is-readonly {
       outline: none;
     }
   }
 
-  &__ContentWrappers:hover {
+  &__content-wrapper:hover {
     background: var(--sapField_Hover_Background);
     border-color: var(--sapField_Hover_BorderColor);
     box-sizing: border-box;
     border-radius: var(--sapField_BorderCornerRadius);
+
+    &.is-readonly {
+      background: none;
+      border-width: $fd-step-input-border-thin-width;
+      border-color: var(--sapField_BorderColor);
+    }
   }
-  &__IconContainer {
+
+  &__icon-container {
     width: auto;
     height: 100%;
     vertical-align: inherit;
@@ -72,22 +87,29 @@ $block: #{$fd-namespace}-step-input;
     &.is-readonly {
       display: none;
     }
+
     @include fd-hover() {
       @include buttonContainerHover();
     }
   }
-  &__Icon {
+
+  &__icon {
+    display: inline-block;
+    width: 1.5rem;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.4rem;
     background-color: var(--sapButton_Lite_Background);
     border-color: var(--sapButton_Lite_BorderColor);
     color: var(--sapButton_Lite_TextColor);
     margin: 0;
-    height: 100%;
     text-align: center;
     cursor: pointer;
-    @include iconSize($fd-button-icon-font-size);
+
+    @include icon-size($fd-button-icon-font-size);
   }
 
-  &__Icon--cozy {
+  &__icon--cozy {
     display: inline-block;
     width: 2.125rem;
     min-width: 2rem;
@@ -95,15 +117,7 @@ $block: #{$fd-namespace}-step-input;
     line-height: 2rem;
   }
 
-  &__Icon--compact {
-    display: inline-block;
-    width: 1.5rem;
-    min-width: 1.5rem;
-    height: 1.5rem;
-    line-height: 1.4rem;
-  }
-
-  &__Inputtext {
+  &__inputtext {
     border: none;
     width: auto;
     height: 100%;
@@ -120,6 +134,7 @@ $block: #{$fd-namespace}-step-input;
     color: var(--sapField_TextColor);
     overflow: hidden;
     text-overflow: ellipsis;
+
     @include fd-form-states();
 
     @include fd-rtl() {
@@ -136,19 +151,17 @@ $block: #{$fd-namespace}-step-input;
       -moz-appearance: textfield;
     }
 
+    &:focus {
+      outline: none;
+    }
+
     &:focus::first-line {
       color: var(--sapContent_ContrastTextColor);
       background-color: var(--sapSelectedColor);
     }
   }
 
-  &__Inputtext:focus {
-    
-    outline: none;
-    
-  }
-
-  &__ContentWrapper--cozy {
+  &__content-wrapper--cozy {
     width: auto;
     min-width: 2.75rem;
     height: 2.25rem;
@@ -156,15 +169,7 @@ $block: #{$fd-namespace}-step-input;
     margin-bottom: 0.25rem;
   }
 
-  &__ContentWrapper--compact {
-    width: auto;
-    min-width: 2rem;
-    height: 1.625rem;
-    margin-top: 0.1875rem;
-    margin-bottom: 0.1875rem;
-  }
-
-  &__UnitDescription {
+  &__unit-description {
     height: 100%;
     vertical-align: middle;
     padding-left: 0.5rem;
@@ -176,6 +181,7 @@ $block: #{$fd-namespace}-step-input;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+
     @include fd-form-states();
 
     @include fd-rtl() {
