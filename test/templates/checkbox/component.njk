@@ -8,6 +8,6 @@
 
 {% macro displayOnlycheckbox(properties="") -%}
     {%- set _id = utils.id() %}
-    <input type="checkbox" class="{{'fd-checkbox--display-only'}}" id="{{_id}}" {{properties}} style="display:none">
-	<label class="fd-checkbox--display-only__label" for="{{_id}}">Label</label>
+    <input type="checkbox" class="{{'fd-checkbox'}}{{' fd-checkbox--display-only'}}" id="{{_id}}" {{properties}}>
+	<label class="fd-checkbox__label--display-only" for="{{_id}}">Label</label>
 {%- endmacro %}

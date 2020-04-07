@@ -222,6 +222,16 @@ $(document).ready(function () {
         triStateCheckboxI8.indeterminate = true;
     }
 
+    const triStateCheckboxI9 = document.getElementById('GWRmH826');
+    if (triStateCheckboxI9) {
+        triStateCheckboxI9.indeterminate = true;
+    }
+
+    const triStateCheckboxI10 = document.getElementById('GWRmH836');
+    if (triStateCheckboxI10) {
+        triStateCheckboxI10.indeterminate = true;
+    }
+
     // display responsive component controls
     const displayControls = document.querySelectorAll('.docs-component--responsive-display__controls');
 

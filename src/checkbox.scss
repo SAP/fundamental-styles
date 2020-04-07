@@ -84,6 +84,51 @@ $displayonlyblock: #{$fd-namespace}-displayonly-checkbox;
         border-color: var(--sapField_Hover_BorderColor);
       }
     }
+
+    &--display-only {
+      $fd-displaycheckbox-margin: 0.5rem;
+      $fd-displaycheckbox-dimensions: 1rem;
+
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      pointer-events: none;
+      padding: $fd-displaycheckbox-margin 0 $fd-displaycheckbox-margin $fd-displaycheckbox-margin;
+
+      @include fd-rtl() {
+        padding: $fd-displaycheckbox-margin $fd-displaycheckbox-margin $fd-displaycheckbox-margin 0;
+      }
+
+      &::before {
+        content: "\e19a";
+        height: $fd-displaycheckbox-dimensions;
+        width: $fd-displaycheckbox-dimensions;
+        min-width: $fd-displaycheckbox-dimensions;
+        font-size: 1rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "SAP-icons";
+        background-color: var(--sapField_Background);
+        margin-right: $fd-displaycheckbox-margin;
+        margin-left: 0;
+        color: var(--sapTextColor);
+      }
+
+      @include fd-rtl() {
+        &::before {
+          margin-left: $fd-displaycheckbox-margin;
+          margin-right: 0;
+        }
+      }
+
+      @include fd-hover() {
+        &::before {
+          background-color: var(--sapField_Hover_Background);
+          border-color: var(--sapField_Hover_BorderColor);
+        }
+      }
+    }
   }
 
   &:checked + .#{$block}__label::before {
@@ -171,56 +216,11 @@ $displayonlyblock: #{$fd-namespace}-displayonly-checkbox;
   }
 
   &--display-only {
-    $fd-displaycheckbox-margin: 0.5rem;
-    $fd-displaycheckbox-dimensions: 1rem;
-
-    &__label {
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      pointer-events: none;
-      padding: $fd-displaycheckbox-margin 0 $fd-displaycheckbox-margin $fd-displaycheckbox-margin;
-
-      @include fd-rtl() {
-        padding: $fd-displaycheckbox-margin $fd-displaycheckbox-margin $fd-displaycheckbox-margin 0;
-      }
-
-      &::before {
-        content: "\e19a";
-        height: $fd-displaycheckbox-dimensions;
-        width: $fd-displaycheckbox-dimensions;
-        min-width: $fd-displaycheckbox-dimensions;
-        font-size: 1rem;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "SAP-icons";
-        background-color: var(--sapField_Background);
-        margin-right: $fd-displaycheckbox-margin;
-        margin-left: 0;
-        color: var(--sapTextColor);
-      }
-
-      @include fd-rtl() {
-        &::before {
-          margin-left: $fd-displaycheckbox-margin;
-          margin-right: 0;
-        }
-      }
-
-      @include fd-hover() {
-        &::before {
-          background-color: var(--sapField_Hover_Background);
-          border-color: var(--sapField_Hover_BorderColor);
-        }
-      }
-    }
-
-    &:checked + .#{$block}--display-only__label::before {
+    &:checked + .#{$block}__label--display-only::before {
       content: "\e03f";
     }
 
-    &:indeterminate + .#{$block}--display-only__label::before {
+    &:indeterminate + .#{$block}__label--display-only::before {
       content: "\e17b";
       height: 0.875rem;
       width: 0.875rem;
