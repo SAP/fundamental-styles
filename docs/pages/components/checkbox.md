@@ -275,15 +275,15 @@ Do not use the checkbox control if:
     <div class="fd-form-group">
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox fd-checkbox--display-only" id="1tn4O446" checked>
-            <label class="fd-checkbox__label--display-only" for="1tn4O446">Label</label>
+            <label class="fd-checkbox__label fd-checkbox__label--display-only" for="1tn4O446">Label</label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox fd-checkbox--display-only" id="StRHi735">
-            <label class="fd-checkbox__label--display-only" for="StRHi735">Label</label>
+            <label class="fd-checkbox__label fd-checkbox__label--display-only" for="StRHi735">Label</label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox fd-checkbox--display-only" id="GWRmH826">
-            <label class="fd-checkbox__label--display-only" for="GWRmH826">Label</label>
+            <label class="fd-checkbox__label fd-checkbox__label--display-only" for="GWRmH826">Label</label>
         </div>
     </div>
 </fieldset>
@@ -293,15 +293,15 @@ Do not use the checkbox control if:
     <div class="fd-form-group">
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox fd-checkbox--display-only" id="1tn4O446" checked>
-            <label class="fd-checkbox__label--display-only" for="1tn4O446">Label</label>
+            <label class="fd-checkbox__label fd-checkbox__label--display-only" for="1tn4O446">Label</label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox fd-checkbox--display-only" id="StRHi735">
-            <label class="fd-checkbox__label--display-only" for="StRHi735">Label</label>
+            <label class="fd-checkbox__label fd-checkbox__label--display-only" for="StRHi735">Label</label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox fd-checkbox--display-only" id="GWRmH836" >
-            <label class="fd-checkbox__label--display-only" for="GWRmH836">Label</label>
+            <label class="fd-checkbox__label fd-checkbox__label--display-only" for="GWRmH836">Label</label>
         </div>
     </div>
 </fieldset>
