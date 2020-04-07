@@ -19,7 +19,7 @@ A checkbox can have 3 states.
 <ul>
     <li>checked</li>
     <li>unchecked</li>
-    <li>Intermediate</li>
+    <li>Indeterminate</li>
 </ul>
 
 ## Indeterminate state checkbox
@@ -27,7 +27,7 @@ A checkbox can have 3 states.
 {% capture indeterminate-checkbox %}
 <p> Checkbox states</p>
     <input type="checkbox" class="fd-checkbox" id="B6CUi438" name="checkbox" indeterminate>
-	<label class="fd-checkbox__label" for="B6CUi438">Intermediate Ckeckbox</label>
+	<label class="fd-checkbox__label" for="B6CUi438">Indeterminate Ckeckbox</label>
 
 {% endcapture %}
 
@@ -44,7 +44,7 @@ A checkbox can have 3 states.
 	<label class="fd-checkbox__label" for="Vmvua940">Checked checkbox</label>
 
     <input type="checkbox" class="fd-checkbox" id="B6CUi438" name="checkbox" indeterminate>
-	<label class="fd-checkbox__label" for="B6CUi438">Intermediate Ckeckbox</label>
+	<label class="fd-checkbox__label" for="B6CUi438">Indeterminate Ckeckbox</label>
 
 {% endcapture %}
 
@@ -60,7 +60,7 @@ A checkbox can have 3 states.
 	<label class="fd-checkbox__label" for="Vmvua940">Checked checkbox</label>
 
     <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="B6CUi438" name="checkbox" indeterminate>
-	<label class="fd-checkbox__label" for="B6CUi438">Intermediate Ckeckbox</label>
+	<label class="fd-checkbox__label" for="B6CUi438">Indeterminate Ckeckbox</label>
 {% endcapture %}
 
 {% include display-component.html component=compact-checkbox %}
