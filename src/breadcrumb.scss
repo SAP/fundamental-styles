@@ -47,13 +47,23 @@ $block: #{$fd-namespace}-breadcrumb;
     @include fd-reset();
     @include fd-link();
 
+    color: var(--sapLinkColor);
     display: inline-block;
     transition: all $fd-animation-speed ease-in;
+
+    &:hover {
+      color: var(--sapLink_Hover_Color);
+    }
+
+    &:active {
+      color: var(--sapLink_Active_Color);
+    }
   }
 
   &__dropdown-icon {
     @include fd-reset();
     @include fd-icon('slim-arrow-down');
+    @include fd-link();
 
     text-decoration: inherit;
     color: var(--sapLinkColor);
