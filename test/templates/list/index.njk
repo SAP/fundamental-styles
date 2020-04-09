@@ -2,6 +2,41 @@
 {% from "./component.njk" import list %}
 {% from "./../format.njk" import format %}
 
+{%- set action_list = {
+     "groups": [
+        {
+            "items": [
+          {
+            "title": "Reject"
+          },
+          {
+            "title": "Accept",
+            "selected": true
+          },
+          {
+            "title": "Delete",
+            "active": true
+          },
+          {
+            "title": "Mail",
+            "hover": true
+          }
+            ]
+        }
+     ]
+} %}
+{%- set display_list = {
+    "groups": [
+        {
+            "items": [
+                { "title": "List item 1", "secondary": "Complete","selected": true },
+                { "title": "List item 2", "secondary": "Incomplete", "active": true },
+                { "title": "List item 3" , "iconAfter": ">" },
+                { "title": "List item 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud", "secondary": "Complete", "iconAfter": ">" ,"hover": true }
+            ]
+        }
+    ]
+} %}
 {%- set basic_list = {
     "groups": [
         {
@@ -264,5 +299,28 @@
 		{%- endfor %}
 	{% endset %}
 	{{ format(example) }}
+
+    <h2>Display List item</h2>
+	{% set example %}
+		{%- for modifier in modifiers %}
+			{%- if modifier %}
+				<h3>{{ modifier }}</h3>
+			{%- endif %}
+			{{ list(display_list, toggles={"display": true}, modifier=[modifier]) }}
+		{%- endfor %}
+	{% endset %}
+	{{ format(example) }}
+
+    <h2>Action List Item</h2>
+    {% set example %}
+    {%- for modifier in modifiers %}
+     {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+    {{  list(action_list, toggles={"action": true}, modifier=[modifier] ) }}
+     {%- endfor %}
+    
+    {% endset %}
+    {{ format(example) }}
 
 {% endblock %}

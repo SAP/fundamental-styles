@@ -27,7 +27,20 @@
 </ul>
 {%- endmacro %}
 
+
 {% macro list_item(item={}, toggles={}, modifier=[]) %}
+{%- if toggles.display %}
+<li tabindex="0" class="fd-list__item fd-list__item--display {{ modifier | modifier('list__item') }} {{ 'is-selected' if item.selected }} {{ 'is-active' if item.active }} {{ 'is-hover' if item.hover }}">
+   <span class="fd-list__title">{{item.title}}</span>
+    <span class="fd-list__secondary">{{item.secondary}}</span>
+    <span class="fd-list__icon">{{item.iconAfter}}</span>
+</li>
+{%- elif toggles.action %}
+<li tabindex="0" class="fd-list__item fd-list__item--action {{ modifier | modifier('list__item') }} {{ 'is-selected' if item.selected }} {{ 'is-active' if item.active }} {{ 'is-hover' if item.hover }}">
+   <span class="fd-list__title">{{item.title}}</span></li>
+</li>
+
+{%- else %}
 <li class="fd-list__item{{ modifier | modifier('list__item') }} {{ 'is-selected' if item.selected }} {{ 'is-active' if item.active }} {{ 'is-hover' if item.hover }}">
     {%- if toggles.multiInput %}
     	<label class="fd-list__label">
@@ -46,4 +59,5 @@
     	</label>
 	{%- endif %}
 </li>
+{%- endif %}
 {%- endmacro %}

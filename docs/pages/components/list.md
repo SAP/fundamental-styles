@@ -9,6 +9,7 @@ folder: components
 ---
 
 In SAP Fiori, we distinguish between tables and lists. Both usually contain homogeneous data, but lists generally have rather basic data, whereas the data in tables tends to be more complex. Lists are mostly used in the master list for a master-detail scenario using the flexible column layout, as well as in popovers or dialogs.
+
 {: .docs-intro}
 
 ## Standard List
@@ -191,3 +192,114 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 {% endcapture %}
 
 {% include display-component.html component=list-without-borders %}
+
+## Display List Item
+
+{% capture display-list-item %}
+<ul class="fd-list">              
+  <li tabindex="0" class="fd-list__item fd-list__item--display is-selected">
+     <span class="fd-list__title">List item 1</span>
+      <span class="fd-list__secondary">Complete</span>
+      <span class="fd-list__icon"></span>
+  </li>
+   <li tabindex="0" class="fd-list__item fd-list__item--display is-active">
+     <span class="fd-list__title">List item 2</span>
+      <span class="fd-list__secondary">Incomplete</span>
+      <span class="fd-list__icon"></span>
+  </li>
+   <li tabindex="0" class="fd-list__item fd-list__item--display">
+     <span class="fd-list__title">List item 3</span>
+      <span class="fd-list__secondary"></span>
+      <span class="fd-list__icon">></span>
+  </li>
+   <li tabindex="0" class="fd-list__item fd-list__item--display is-hover">
+     <span class="fd-list__title">List item 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</span>
+      <span class="fd-list__secondary">Complete</span>
+      <span class="fd-list__icon">></span>
+  </li>
+  </ul>
+<br />
+
+<h4>Compact Size</h4>
+<ul class="fd-list fd-list--compact">
+<li tabindex="0" class="fd-list__item fd-list__item--display is-selected">
+     <span class="fd-list__title">List item 1</span>
+      <span class="fd-list__secondary">Complete</span>
+      <span class="fd-list__icon"></span>
+  </li>               
+  <li tabindex="0" class="fd-list__item fd-list__item--display is-active">
+     <span class="fd-list__title">List item 2</span>
+      <span class="fd-list__secondary">Incomplete</span>
+      <span class="fd-list__icon"></span>
+  </li>               
+  <li tabindex="0" class="fd-list__item fd-list__item--display">
+     <span class="fd-list__title">List item 3</span>
+      <span class="fd-list__secondary"></span>
+      <span class="fd-list__icon">></span>
+  </li>              
+  <li tabindex="0" class="fd-list__item fd-list__item--display is-hover">
+     <span class="fd-list__title">List item 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</span>
+      <span class="fd-list__secondary">Complete</span>
+      <span class="fd-list__icon">></span>
+  </li>
+</ul>
+<br />
+
+<h4>In Action</h4>
+<ul class="fd-list">
+  <li tabindex="0"  class="fd-list__item fd-list__item--display fd-list__item--display--action is-selected">
+     <span class="fd-list__title">List item 1</span>
+      <span class="fd-list__secondary">Complete</span>
+      <span class="fd-list__icon"></span>
+  </li>
+  <li tabindex="0"  class="fd-list__item fd-list__item--display fd-list__item--display--action is-active">
+     <span class="fd-list__title">List item 2</span>
+      <span class="fd-list__secondary">Incomplete</span>
+      <span class="fd-list__icon"></span>
+  </li>
+  <li tabindex="0"  class="fd-list__item fd-list__item--display fd-list__item--display--action">
+    <span class="fd-list__title">List item 3</span>
+      <span class="fd-list__secondary"></span>
+      <span class="fd-list__icon">></span>
+  </li>
+  <li tabindex="0"  class="fd-list__item fd-list__item--display fd-list__item--display--action is-hover">
+    <span class="fd-list__title">List item 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</span>
+      <span class="fd-list__secondary">Complete</span>
+      <span class="fd-list__icon">></span>
+  </li>
+</ul>
+{% endcapture %}
+
+{% include display-component.html component=display-list-item %}
+
+
+
+## Action List Item
+
+{% capture action-list-item %}
+<ul class="fd-list">
+<li tabindex="0" class="fd-list__item fd-list__item--action">
+     <span class="fd-list__title">Reject</span></li>
+  <li tabindex="0" class="fd-list__item fd-list__item--action is-selected">
+     <span class="fd-list__title">Accept</span></li>
+  <li tabindex="0" class="fd-list__item fd-list__item--action is-active">
+     <span class="fd-list__title">Delete</span></li>
+  <li tabindex="0" class="fd-list__item fd-list__item--action is-hover">
+     <span class="fd-list__title">Mail</span></li>
+  </ul>
+<br />
+
+<h4>Compact Size</h4>
+<ul class="fd-list fd-list--compact">
+ <li tabindex="0" class="fd-list__item fd-list__item--action">
+     <span class="fd-list__title">Reject</span></li>
+   <li tabindex="0" class="fd-list__item fd-list__item--action is-selected">
+     <span class="fd-list__title">Accept</span></li>
+  <li tabindex="0" class="fd-list__item fd-list__item--action is-active">
+     <span class="fd-list__title">Delete</span></li>
+   <li tabindex="0" class="fd-list__item fd-list__item--action is-hover">
+     <span class="fd-list__title">Mail</span></li>
+</ul>
+{% endcapture %}
+
+{% include display-component.html component=action-list-item %}

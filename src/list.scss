@@ -9,6 +9,7 @@
     .fd-list+(__item, __title, __secondary, __message)+(--no-wrap)
 .fd-list--multi-input
     .fd-list+(__item, __label, _input,  __title, __message, __footer)+(--no-wrap)
+    .fd-list__item,( --display, --action)
 */
 
 @mixin fake-list-outline($outlineColor: var(--sapContent_FocusColor)) {
@@ -17,7 +18,7 @@
     outline: none;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       display: block;
       border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) $outlineColor;
@@ -52,7 +53,7 @@ $block: #{$fd-namespace}-list;
     display: flex;
     align-items: center;
     padding: 0 $fd-list-horizontal-padding;
-    height: 2.75rem;
+    height: 3rem;
   }
 
   &__item {
@@ -86,8 +87,7 @@ $block: #{$fd-namespace}-list;
 
       .#{$block}__title,
       .#{$block}__secondary,
-      .#{$block}__icon,
-      & {
+      .#{$block}__icon & {
         color: var(--sapList_Active_TextColor);
       }
     }
@@ -99,6 +99,101 @@ $block: #{$fd-namespace}-list;
 
       @include fd-hover() {
         background: var(--sapList_Background);
+      }
+    }
+
+    &--action {
+      display: -webkit-box;
+      display: flex;
+      size: 2rem;
+      padding: 0 0.25rem;
+      -webkit-box-pack: center;
+      justify-content: center;
+      cursor: pointer;
+      border: var(--sapPageFooter_BorderColor);
+      background: var(--sapPageFooter_Background);
+
+      @include fd-ellipsis();
+
+      &--compact {
+        size: 1.625rem;
+        font-size: var(--sapFontSize);
+      }
+
+      .#{$block}__title {
+        -webkit-box-flex: 1;
+        flex: auto;
+        width: auto;
+        min-width: 3rem;
+        display: block;
+        text-align: center;
+        font-weight: normal;
+        color: var(--sapButton_TextColor);
+        font-size: var(--sapFontLargeSize);
+        text-shadow: none;
+
+        @include fd-ellipsis();
+        @include fd-rtl();
+      }
+    }
+
+    &--display {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-flex: 1;
+      flex: 1 1 auto;
+      max-width: 100%;
+
+      @include fd-ellipsis();
+
+      &--action {
+        cursor: pointer;
+      }
+
+      .#{$block}__title {
+        -webkit-box-flex: 1;
+        flex: auto;
+        min-width: 3rem;
+        display: block;
+        font-size: var(--sapFontLargeSize);
+        -webkit-box-align: center;
+        align-items: center;
+        color: var(--sapList_TextColor);
+        font-weight: normal;
+
+        @include fd-ellipsis();
+
+        @include fd-rtl() {
+          text-align: right;
+        }
+      }
+
+      .#{$block}__secondary {
+        -webkit-box-flex: 1;
+        flex: auto;
+        min-width: 3rem;
+        font-size: 0.875rem;
+        margin-left: 1rem;
+        text-align: right;
+        color: var(--sapContent_LabelColor);
+
+        @include fd-ellipsis();
+
+        @include fd-rtl() {
+          text-align: left;
+        }
+      }
+
+      .#{$block}__icon {
+        width: 2.75rem;
+        color: #6a6d70;
+        -webkit-box-flex: 0;
+        flex: none;
+        box-sizing: border-box;
+        cursor: default;
+        text-align: center;
+        display: inline-block;
+        vertical-align: baseline;
       }
     }
   }
