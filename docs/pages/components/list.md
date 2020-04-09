@@ -9,6 +9,7 @@ folder: components
 ---
 
 In SAP Fiori, we distinguish between tables and lists. Both usually contain homogeneous data, but lists generally have rather basic data, whereas the data in tables tends to be more complex. Lists are mostly used in the master list for a master-detail scenario using the flexible column layout, as well as in popovers or dialogs.
+
 {: .docs-intro}
 
 ## Standard List

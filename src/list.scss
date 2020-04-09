@@ -9,6 +9,7 @@
     .fd-list+(__item, __title, __secondary, __message)+(--no-wrap)
 .fd-list--multi-input
     .fd-list+(__item, __label, _input,  __title, __message, __footer)+(--no-wrap)
+    .fd-list__item,( --display, --action)
 */
 
 @mixin fake-list-outline($outlineColor: var(--sapContent_FocusColor)) {
@@ -185,7 +186,6 @@ $block: #{$fd-namespace}-list;
 
       .#{$block}__icon {
         width: 2.75rem;
-        font-size: 0.75rem;
         color: #6a6d70;
         -webkit-box-flex: 0;
         flex: none;
