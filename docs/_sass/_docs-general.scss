@@ -12,7 +12,7 @@ html {
    margin-left: 0;
     width: 100%;
     display: flex;
-       @include media("<=tablet") {
+    @media screen and (max-width: 950px) {
         display: inline;
        }
     }
@@ -75,7 +75,7 @@ a {
 }
 
 ul, ol {
-    margin-left: 40px;
+    margin-left: 1.5rem;
     padding: 0;
 }
 
@@ -211,11 +211,12 @@ pre {
     font-size: 1.1rem;
     line-height: 1.4;
     font-weight: 400;
+    margin-left: 0;
 }
 
 #mobile-sidenav-btn {
     display: none;
-    @include media("<=tablet") {
+    @media screen and (max-width: 950px) {
         display: block;
     }
 }

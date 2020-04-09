@@ -10,10 +10,10 @@
     scroll-behavior: smooth;
 }
 .docs-content {
-    padding: 2rem 2rem 4rem 2rem;
+    padding: 2rem 1.5rem 4rem 1.5rem;
     box-sizing: border-box;
     width: 100%;
-    @include media("<=tablet") {
+    @media screen and (max-width: 950px) {
         padding: 2rem 0 0 0;
         min-width: auto;
         width: 100%;
@@ -23,12 +23,29 @@
         margin: 10px 0 10px 0;
     }
 
+    ul{
+        @media screen and (max-width: 950px) {
+            padding-left: 0;
+            margin-left: 3rem;
+        }
+    }
+
     > h2 {
         @extend .docs-header-h2;
+        @media screen and (max-width: 950px) {
+            padding-left: 0;
+            margin-left: 1.5rem;
+        }
     }
 
     > h3 {
         @extend .docs-header-h3;
+    }
+
+    > p {
+        @media screen and (max-width: 950px) {
+            margin-left: 1.5rem;
+        }
     }
 }
 .docs-content-full-width {
@@ -36,7 +53,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    @include media("<=tablet") {
+    @media screen and (max-width: 950px) {
         text-align: center;
         padding-top: 20px;
     }

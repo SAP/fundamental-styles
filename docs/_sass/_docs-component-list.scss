@@ -24,33 +24,26 @@ $grid-transition-delay: 100ms;
 
         display: flex;
         flex-direction: column;
-        padding: 5rem 1rem;
+        padding: 4rem 1rem;
         align-items: center;
         justify-content: flex-end;
 
-        @include media("<=tablet") {
-            
-                width: 100%;
-            
-        }
-        @include media(">=tablet") {
-            
-                width: 50%;
-                padding: 5rem 1rem;
-
-        }
         @include media(">=desktop") {
-            
-                width: (4/12)*100%;
-              
+            width: (4/12)*100%;
         }
-
         @include media(">=display") {
-            
-            width: (2/12)*100%;
-            padding: 5rem 1rem;
+            width: 25%;
+            padding: 4rem 1rem;
         }
-        
+        @media screen and (max-width: 1300px) {
+            width: 50%;
+            padding: 4rem 1rem;
+        }
+        @media screen and (max-width: 950px) {
+            width: 100%;
+            padding: 2rem 1rem;
+            justify-content: center;
+        }
 
         &:hover {
             background-color: $grid-item-bg-color;
@@ -84,367 +77,822 @@ $grid-transition-delay: 100ms;
     &--img {
 
         &__action-bar {
-            width: 95%;
+            width: auto;
+            height: auto;
+            min-width: 275px;
+            max-width: 80%;
         }
-
         &__bar {
-            width: 95%;
+            width: auto;
+            height: auto;
+            min-width: 200px;
+            max-width: 80%;
         }
 
         &__busy-indicator {
-            width: 100%;
+            width: auto;
+            height: auto;
+            min-width: 375px;
+            max-width: 100%;
         }
 
+
         &__button {
-            width: 40%;
+            width: auto;
+            height: auto;
+            min-width: 250px;
+            max-width: 40%;
+        }
+
+        &__combobox-input {
+            width: auto;
+            height: auto;
+            min-width: 350px;
+            max-width: 40%;
         }
 
         &__contextual-menu {
-            width: 40%;
+            width: auto;
+            height: auto;
+            min-width: 125px;
+            max-width: 15%;
+        }
+
+        &__date-picker {
+            width: auto;
+            height: auto;
+            min-width: 275px;
+            max-width: 50%;
         }
 
         &__dropdown {
-            width: 70%;
+            width: auto;
+            height: auto;
+            min-width: 375px;
+            max-width: 100%;
         }
 
-        &__icons {
-            width: 70%;
+        &__icon {
+            width: auto;
+            height: auto;
+            min-width: 250px;
+            max-width: 100%;
         }
 
         &__identifier {
-            width: 65%;
+            width: auto;
+            height: auto;
+            min-width: 275px;
+            max-width: 100%;
         }
 
         &__image {
-            width: 30%;
-        }
-
-        &__inline-help {
-            width: 70%;
-        }
-
-        &__link {
-            width: 55%;
-        }
-
-        &__list {
-            width: 75%;
-        }
-
-        &__form {
-            width: 70%;
-
+            width: auto;
+            height: auto;
+            min-width: 120px;
+            max-width: 20%;
         }
 
         &__info-label {
-            width: 70%;
+            width: auto;
+            height: auto;
+            min-width: 250px;
+            max-width: 100%;            
+        }
+
+        &__inline-help {
+            width: auto;
+            height: auto;
+            min-width: 250px;
+            max-width: 70%;
+        }
+
+        &__link {
+            width: auto;
+            height: auto;
+            min-width: 200px;
+            max-width: 100%;
+        }
+
+        &__list {
+            width: auto;
+            height: auto;
+            min-width: 275px;
+            max-width: 80%;
+        }
+
+        &__form {
+            width: auto;
+            height: auto;
+            min-width: 250px;
+            max-width: 40%;
         }
 
         &__input-group {
-            width: 70%;
-        }
-
-        &__list-group {
-            width: 90%;
+            width: auto;
+            height: auto;
+            min-width: 250px;
+            max-width: 40%;
         }
 
         &__loading-spinner {
-            width: 25%;
+            width: auto;
+            height: auto;
+            min-width: 150px;
+            max-width: 50%;
         }
 
-        &__dialog {
-            width: 50%;
+        &__localization-editor{
+            width: auto;
+            height: auto;
+            min-width: 275px;
+            max-width: 80%; 
+        }
+
+        &__message-box {
+            width: auto;
+            height: auto;
+            min-width: 250px;
+            max-width: 30%;
         }
 
         &__message-strip {
-            width: 70%;
+            width: auto;
+            height: auto;
+            min-width: 250px;
+            max-width: 55%;            
         }
 
         &__multi-input {
-            width: 75%;
+            width: auto;
+            height: auto;
+            min-width: 300px;
+            max-width: 55%;            
+        }
+
+        &__notification {
+            width: auto;
+            height: auto;
+            min-width: 275px;
+            max-width: 70%;      
+        }
+
+        &__object-status {
+            width: auto;
+            height: auto;
+            min-width: 200px;
+            max-width: 100%;
+        }
+
+        &__product-switch {
+            width: auto;
+            height: auto;
+            min-width: 250px;
+            max-width: 60%;
+        }
+
+        &__dialog {
+            width: auto;
+            height: auto;
+            min-width: 250px;
+            max-width: 30%;
         }
 
         &__pagination {
-            width: 90%;
+            width: auto;
+            height: auto;
+            min-width: 275px;
+            max-width: 90%;
+        }
+
+        &__search-input {
+            width: auto;
+            height: auto;
+            min-width: 300px;
+            max-width: 55%;            
         }
 
         &__select {
-            width: 40%;
+            width: auto;
+            height: auto;
+            min-width: 250px;
+            max-width: 70%;
         }
 
         &__side-navigation {
-            width: 30%;
+            width: auto;
+            height: auto;
+            min-width: 115px;
+            max-width: 20%;
         }
 
         &__shellbar {
-            width: 90%;
+            width: auto;
+            height: auto;
+            min-width: 275px;
+            max-width: 100%;
         }
 
         &__status-indicators {
-            width: 70%;
+            width: auto;
+            height: auto;
+            min-width: 275px;
+            max-width: 100%;            
         }
 
         &__switch {
-            width: 20%;
+            width: auto;
+            height: auto;
+            min-width: 80px;
+            max-width: 50%;
         }
 
         &__table {
-            width: 90%;
+            width: auto;
+            height: auto;
+            min-width: 275px;
+            max-width: 60%;
         }
 
         &__tabs {
-            width: 90%;
+            width: auto;
+            height: auto;
+            min-width: 275px;
+            max-width: 90%;
         }
 
         &__tile {
-            width: 90%;
+            width: auto;
+            height: auto;
+            min-width: 275px;
+            max-width: 90%;
         }
 
-        &__toolbar {
-            width: 95%;
+        &__time-picker {
+            width: auto;
+            height: auto;
+            min-width: 300px;
+            max-width: 55%;            
         }
 
         &__tree {
-            width: 90%;
+            width: auto;
+            height: auto;
+            min-width: 275px;
+            max-width: 60%;
         }
     }
 
-    @include media("<=tablet") {
+    @media screen and (min-width: 950px) {
         &--img {
             &__action-bar {
-                width: 80%;
+                min-width: 275px;
+                max-width: 100%;
             }
-
             &__bar {
-                width: 80%;
+                min-width: 200px;
+                max-width: 100%;
             }
 
             &__busy-indicator {
-                width: 40%;
+                min-width: 375px;
+                max-width: 100%;
             }
 
             &__message-strip {
-                width: 40%;
+                min-width: 375px;
+                max-width: 100%;
             }
 
             &__button {
-                width: 30%;
+                min-width: 250px;
+                max-width: 40%;
             }
 
             &__combobox-input {
-                width: 30%;
+                min-width: 125px;
+                max-width: 70%;
             }
 
             &__contextual-menu {
-                width: 20%;
-            }
-
-            &__identifier {
-                width: 40%;
-            }
-
-            &__image {
-                width: 15%;
-            }
-
-            &__inline-help {
-                width: 40%;
-            }
-
-            &__link {
-                width: 25%;
-            }
-
-            &__list {
-                width: 30%;
-            }
-
-            &__form {
-                width: 35%;
-            }
-
-            &__input-group {
-                    width: 40%;
-            }
-
-            &__list-group {
-                width: 90%;
-            }
-
-            &__loading-spinner {
-                width: 12%;
-            }
-
-            &__dialog {
-                width: 25%;
-            }
-
-            &__multi-input {
-                width: 75%;
-            }
-
-            &__pagination {
-                width: 80%;
-            }
-
-            &__select {
-                width: 20%;
-            }
-
-            &__side-navigation {
-                width: 12%;
-            }
-
-            &__shellbar {
-                width: 80%;
-            }
-
-            &__switch {
-                width: 10%;
-            }
-
-            &__table {
-                width: 45%;
-            }
-
-            &__tabs {
-                width: 50%;
-            }
-
-            &__tile {
-                width: 50%;
-            }
-
-            &__toolbar {
-                width: 95%;
-            }
-
-            &__tree {
-                width: 50%;
-            }
-        }
-    }
-
-    @include media(">=desktop") {
-        &--img {
-            &__action-bar {
-                    width: 50%;
-            }
-
-            &__bar {
-                width: 80%;
-            }
-
-            &__busy-indicator {
-                    width: 40%;
-            }
-
-            &__message-strip {
-                width: 30%;
-            }
-
-            &__button {
-                width: 25%;
-            }
-
-            &__combobox-input {
-                width: 45%;
-            }
-
-            &__contextual-menu {
-                width: 25%;
+                min-width: 125px;
+                max-width: 30%;
             }
 
             &__dropdown {
-                width: 70%;
+                min-width: 375px;
+                max-width: 100%;
             }
 
-            &__icons {
-                width: 70%;
+            &__icon {
+                min-width: 250px;
+                max-width: 100%;
             }
 
             &__identifier {
-                width: 40%;
+                min-width: 275px;
+                max-width: 100%;
             }
 
             &__image {
-                width: 10%;
+                min-width: 120px;
+                max-width: 20%;
+            }
+
+            &__info-label {
+                min-width: 250px;
+                max-width: 100%;            
             }
 
             &__inline-help {
-                width: 30%;
+                min-width: 250px;
+                max-width: 70%;
             }
 
             &__link {
-                width: 25%;
+                min-width: 200px;
+                max-width: 100%;
             }
 
             &__list {
-                width: 30%;
+                min-width: 275px;
+                max-width: 80%;
             }
 
             &__form {
-                width: 25%;
+                min-width: 250px;
+                max-width: 40%;
             }
 
             &__input-group {
-                width: 40%;
+                min-width: 250px;
+                max-width: 40%;
             }
 
             &__loading-spinner {
-                width: 12%;
+                min-width: 150px;
+                max-width: 50%;
+            }
+
+            &__localization-editor{
+                min-width: 275px;
+                max-width: 80%; 
+            }
+
+            &__message-box {
+                min-width: 250px;
+                max-width: 30%;
+            }
+
+            &__message-strip {
+                min-width: 250px;
+                max-width: 75%;            
+            }
+            
+            &__multi-input {
+                min-width: 250px;
+                max-width: 75%;            
+            }
+
+            &__notification {
+                min-width: 275px;
+                max-width: 70%;      
+            }
+
+            &__object-status {
+                min-width: 200px;
+                max-width: 100%;
             }
 
             &__product-switch {
-                width:30%;
+                min-width: 250px;
+                max-width: 60%;
             }
 
             &__dialog {
-                width: 20%;
+                min-width: 250px;
+                max-width: 40%;
             }
 
             &__pagination {
-                width: 80%;
+                min-width: 275px;
+                max-width: 90%;
+            }
+
+            &__search-input {
+                min-width: 250px;
+                max-width: 90%;
             }
 
             &__select {
-                width: 20%;
+                min-width: 250px;
+                max-width: 70%;
             }
 
             &__side-navigation {
-                width: 12%;
+                min-width: 115px;
+                max-width: 20%;
             }
 
             &__shellbar {
-                width: 80%;
+                min-width: 275px;
+                max-width: 100%;
+            }
+
+            &__status-indicators {
+                min-width: 275px;
+                max-width: 100%;            
             }
 
             &__switch {
-                width: 10%;
+                min-width: 80px;
+                max-width: 50%;
             }
 
             &__table {
-                width: 45%;
+                min-width: 275px;
+                max-width: 70%;
             }
 
             &__tabs {
-                width: 50%;
+                min-width: 275px;
+                max-width: 90%;
             }
 
             &__tile {
-                width: 50%;
+                min-width: 275px;
+                max-width: 90%;
             }
 
             &__tree {
-                width: 50%;
+                min-width: 275px;
+                max-width: 70%;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1300px) {
+        &--img {
+            &__action-bar {
+                min-width: 275px;
+                max-width: 100%;
+            }
+            &__bar {
+                min-width: 200px;
+                max-width: 100%;
+            }
+
+            &__busy-indicator {
+                min-width: 375px;
+                max-width: 100%;
+            }
+
+            &__message-strip {
+                min-width: 375px;
+                max-width: 100%;
+            }
+
+            &__button {
+                min-width: 250px;
+                max-width: 40%;
+            }
+
+            &__combobox-input {
+                min-width: 250px;
+                max-width: 60%;
+            }
+
+            &__contextual-menu {
+                min-width: 125px;
+                max-width: 10%;
+            }
+
+            &__dropdown {
+                min-width: 375px;
+                max-width: 100%;
+            }
+
+            &__icon {
+                min-width: 250px;
+                max-width: 100%;
+            }
+
+            &__identifier {
+                min-width: 275px;
+                max-width: 100%;
+            }
+
+            &__image {
+                min-width: 120px;
+                max-width: 20%;
+            }
+
+            &__info-label {
+                min-width: 250px;
+                max-width: 100%;            
+            }
+
+            &__inline-help {
+                min-width: 250px;
+                max-width: 60%;
+            }
+
+            &__link {
+                min-width: 200px;
+                max-width: 100%;
+            }
+
+            &__list {
+                min-width: 275px;
+                max-width: 80%;
+            }
+
+            &__form {
+                min-width: 250px;
+                max-width: 40%;
+            }
+
+            &__input-group {
+                min-width: 250px;
+                max-width: 40%;
+            }
+
+            &__loading-spinner {
+                min-width: 150px;
+                max-width: 50%;
+            }
+
+            &__localization-editor{
+                min-width: 275px;
+                max-width: 80%; 
+            }
+
+            &__message-box {
+                min-width: 250px;
+                max-width: 30%;
+            }
+
+            &__message-strip {
+                min-width: 250px;
+                max-width: 75%;            
+            }
+
+            &__multi-input {
+                min-width: 250px;
+                max-width: 75%;            
+            }
+
+            &__notification {
+                min-width: 275px;
+                max-width: 70%;      
+            }
+
+            &__object-status {
+                min-width: 200px;
+                max-width: 100%;
+            }
+
+            &__product-switch {
+                min-width: 250px;
+                max-width: 60%;
+            }
+
+            &__dialog {
+                min-width: 250px;
+                max-width: 40%;
+            }
+
+            &__pagination {
+                min-width: 250px;
+                max-width: 90%;
+            }
+
+            &__search-input {
+                min-width: 300px;
+                max-width: 50%;
+            }
+
+            &__select {
+                min-width: 300px;
+                max-width: 50%;
+            }
+
+            &__side-navigation {
+                min-width: 115px;
+                max-width: 20%;
+            }
+
+            &__shellbar {
+                min-width: 275px;
+                max-width: 100%;
+            }
+
+            &__status-indicators {
+                min-width: 275px;
+                max-width: 100%;            
+            }
+
+            &__switch {
+                min-width: 100px;
+                max-width: 50%;
+            }
+
+            &__table {
+                min-width: 275px;
+                max-width: 70%;
+            }
+
+            &__tabs {
+                min-width: 275px;
+                max-width: 90%;
+            }
+
+            &__tile {
+                min-width: 275px;
+                max-width: 90%;
+            }
+
+            &__tree {
+                min-width: 275px;
+                max-width: 70%;
             }
         }
     }
 
     @include media(">=display") {
         &--img {
+            &__action-bar {
+                min-width: 375px;
+                max-width: 100%;
+            }
+            &__bar {
+                min-width: 200px;
+                max-width: 100%;
+            }
+
+            &__busy-indicator {
+                min-width: 375px;
+                max-width: 100%;
+            }
+
+            &__message-strip {
+                min-width: 375px;
+                max-width: 100%;
+            }
+
+            &__button {
+                min-width: 300px;
+                max-width: 40%;
+            }
+
+            &__combobox-input {
+                min-width: 250px;
+                max-width: 35%;
+            }
+
             &__contextual-menu {
-                width: 20%;
+                min-width: 125px;
+                max-width: 10%;
+            }
+
+            &__dropdown {
+                min-width: 375px;
+                max-width: 100%;
+            }
+
+            &__form {
+                min-width: 300px;
+                max-width: 40%;
+            }
+
+            &__icon {
+                min-width: 375px;
+                max-width: 100%;
+            }
+
+            &__identifier {
+                min-width: 375px;
+                max-width: 100%;
+            }
+
+            &__image {
+                min-width: 120px;
+                max-width: 15%;
+            }
+
+            &__info-label {
+                min-width: 375px;
+                max-width: 100%;            
+            }
+
+            &__inline-help {
+                min-width: 300px;
+                max-width: 40%;
+            }
+
+            &__input-group {
+                min-width: 300px;
+                max-width: 40%;
+            }
+
+            &__link {
+                min-width: 200px;
+                max-width: 100%;
+            }
+
+            &__list {
+                min-width: 375px;
+                max-width: 60%;
+            }
+
+            &__loading-spinner {
+                min-width: 150px;
+                max-width: 50%;
+            }
+
+            &__localization-editor{
+                min-width: 375px;
+                max-width: 80%; 
+            }
+
+            &__message-box {
+                min-width: 250px;
+                max-width: 25%;
+            }
+
+            &__message-strip {
+                min-width: 250px;
+                max-width: 40%;            
+            }
+
+            &__notification {
+                min-width: 275px;
+                max-width: 70%;      
+            }
+
+            &__object-status {
+                min-width: 200px;
+                max-width: 100%;
+            }
+
+            &__product-switch {
+                min-width: 300px;
+                max-width: 35%;
+            }
+
+            &__dialog {
+                min-width: 250px;
+                max-width: 20%;
+            }
+
+            &__pagination {
+                min-width: 375px;
+                max-width: 100%;
+            }
+
+            &__select {
+                min-width: 300px;
+                max-width: 35%;
+            }
+
+            &__side-navigation {
+                min-width: 115px;
+                max-width: 10%;
+            }
+
+            &__shellbar {
+                min-width: 375px;
+                max-width: 100%;
+            }
+
+            &__status-indicators {
+                min-width: 375px;
+                max-width: 100%;            
+            }
+
+            &__switch {
+                min-width: 100px;
+                max-width: 50%;
+            }
+
+            &__table {
+                min-width: 375px;
+                max-width: 40%;
+            }
+
+            &__tabs {
+                min-width: 375px;
+                max-width: 90%;
+            }
+
+            &__tile {
+                min-width: 375px;
+                max-width: 90%;
+            }
+
+            &__tree {
+                min-width: 375px;
+                max-width: 40%;
             }
         }
     }
