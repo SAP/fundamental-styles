@@ -15,7 +15,7 @@ $grid-transition-delay: 100ms;
         box-sizing: border-box;
     }
 
-    &--item {
+    &__item {
         background: $grid-item-bg-color;
         position: relative;
         height: 280px;
@@ -74,7 +74,9 @@ $grid-transition-delay: 100ms;
         margin: 0 auto;
     }
     
-    &--img {
+    &__img {
+        min-height: 1px;
+        -ms-interpolation-mode: bicubic;
 
         &__action-bar {
             width: auto;
@@ -344,7 +346,10 @@ $grid-transition-delay: 100ms;
     }
 
     @media screen and (min-width: 950px) {
-        &--img {
+        &__img {
+            min-height: 1px;
+            -ms-interpolation-mode: bicubic;
+
             &__action-bar {
                 min-width: 275px;
                 max-width: 100%;
@@ -532,7 +537,10 @@ $grid-transition-delay: 100ms;
     }
 
     @media screen and (min-width: 1300px) {
-        &--img {
+        &__img {
+            min-height: 1px;
+            -ms-interpolation-mode: bicubic;
+
             &__action-bar {
                 min-width: 275px;
                 max-width: 100%;
@@ -720,13 +728,16 @@ $grid-transition-delay: 100ms;
     }
 
     @include media(">=display") {
-        &--img {
+        &__img {
+            min-height: 1px;
+            -ms-interpolation-mode: bicubic;
+
             &__action-bar {
-                min-width: 375px;
+                min-width: 325px;
                 max-width: 100%;
             }
             &__bar {
-                min-width: 200px;
+                min-width: 175px;
                 max-width: 100%;
             }
 
@@ -741,7 +752,7 @@ $grid-transition-delay: 100ms;
             }
 
             &__button {
-                min-width: 300px;
+                min-width: 250px;
                 max-width: 40%;
             }
 
@@ -766,17 +777,17 @@ $grid-transition-delay: 100ms;
             }
 
             &__icon {
-                min-width: 375px;
+                min-width: 325px;
                 max-width: 100%;
             }
 
             &__identifier {
-                min-width: 375px;
+                min-width: 300px;
                 max-width: 100%;
             }
 
             &__image {
-                min-width: 120px;
+                min-width: 100px;
                 max-width: 15%;
             }
 
@@ -796,7 +807,7 @@ $grid-transition-delay: 100ms;
             }
 
             &__link {
-                min-width: 200px;
+                min-width: 150px;
                 max-width: 100%;
             }
 
@@ -861,7 +872,7 @@ $grid-transition-delay: 100ms;
             }
 
             &__shellbar {
-                min-width: 375px;
+                min-width: 325px;
                 max-width: 100%;
             }
 
@@ -872,7 +883,7 @@ $grid-transition-delay: 100ms;
 
             &__switch {
                 min-width: 100px;
-                max-width: 50%;
+                max-width: 30%;
             }
 
             &__table {
@@ -881,7 +892,7 @@ $grid-transition-delay: 100ms;
             }
 
             &__tabs {
-                min-width: 375px;
+                min-width: 325px;
                 max-width: 90%;
             }
 
