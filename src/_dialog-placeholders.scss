@@ -1,5 +1,3 @@
-@import "./mixins";
-
 $fd-dialog-content-margin-y: 6%;
 $fd-dialog-content-margin-x: 10%;
 $fd-dialog-content-min-width: 20rem;
@@ -13,8 +11,6 @@ $fd-dialog-body-color: var(--sapGroup_ContentBackground);
 $fd-dialog-overlay-color: rgba(0, 0, 0, 0.6); // Should be fade(var(--sapBlockLayer_Background), 60)
 
 %dialog {
-  @include fd-reset();
-
   position: fixed;
   align-items: center;
   justify-content: center;
@@ -26,8 +22,6 @@ $fd-dialog-overlay-color: rgba(0, 0, 0, 0.6); // Should be fade(var(--sapBlockLa
 }
 
 %dialog-content {
-  @include fd-reset();
-
   display: flex;
   flex-direction: column;
   outline: none;
@@ -41,8 +35,6 @@ $fd-dialog-overlay-color: rgba(0, 0, 0, 0.6); // Should be fade(var(--sapBlockLa
 }
 
 %dialog-body {
-  @include fd-reset();
-
   overflow: auto;
   flex-grow: 1;
   background-color: $fd-dialog-body-color;
@@ -62,8 +54,8 @@ $fd-dialog-overlay-color: rgba(0, 0, 0, 0.6); // Should be fade(var(--sapBlockLa
 }
 
 %dialog-title {
-  @include fd-reset();
-  @include fd-ellipsis();
-
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: $fd-dialog-title-font-size;
 }

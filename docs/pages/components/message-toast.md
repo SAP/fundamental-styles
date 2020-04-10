@@ -27,8 +27,6 @@ Message Toast is used in the following cases:
 ### Behavior and Interaction
 - The message toast fades in and out automatically. The timing and duration of the message toast is defined by the app.
 
-<br>
-
 ## Message Toast
 
 {% capture default-message-toast %}

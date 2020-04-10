@@ -47,6 +47,8 @@ $button: #{$fd-namespace}-button;
   // Footer
   $fd-dialog-footer-button-min-width: 4rem;
 
+  @include fd-reset();
+
   @extend %dialog;
 
   display: none;
@@ -56,6 +58,8 @@ $button: #{$fd-namespace}-button;
   }
 
   &__content {
+    @include fd-reset();
+
     @extend %dialog-content;
 
     @each $size-label, $size in $fd-dialog-content-padding-x {
@@ -122,6 +126,8 @@ $button: #{$fd-namespace}-button;
   }
 
   &__body {
+    @include fd-reset();
+
     @extend %dialog-body;
 
     padding-top: $fd-dialog-body-padding-y;
@@ -175,6 +181,8 @@ $button: #{$fd-namespace}-button;
   }
 
   &__title {
+    @include fd-reset();
+
     @extend %dialog-title;
   }
 }
