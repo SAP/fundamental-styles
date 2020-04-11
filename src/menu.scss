@@ -39,6 +39,15 @@ $block: #{$fd-namespace}-menu;
   $fd-menu-icon-color-active: var(--sapList_Active_TextColor) !default;
   $fd-menu-icon-color-selected: var(--sapContent_NonInteractiveIconColor) !default;
 
+  // Menu Title
+  $fd-menu-title-font-size: var(--sapFontSize) !default;
+
+  // Menu SHortcur
+  $fd-menu-shortcut-height: 1.25rem !default;
+  $fd-menu-shortcut-padding-left: 1rem !default;
+  $fd-menu-shortcut-font-size: var(--sapFontSize) !default;
+  $fd-menu-shortcut-color: var(--sapContent_NonInteractiveIconColor) !default;
+
   // Separator
   $fd-menu-separator-color: var(--sapGroup_ContentBorderColor) !default;
   $fd-menu-separator-height: 0.0625rem !default;
@@ -47,6 +56,7 @@ $block: #{$fd-namespace}-menu;
     border-bottom: $fd-menu-item-border-bottom;
     background-color: $fd-menu-item-background-color-selected;
 
+    .#{$block}__shortcut,
     .#{$block}__addon-before,
     .#{$block}__addon-after {
       color: $fd-menu-icon-color-selected;
@@ -240,6 +250,7 @@ $block: #{$fd-namespace}-menu;
         color: $fd-menu-item-color-active;
       }
 
+      .#{$block}__shortcut,
       .#{$block}__addon-before,
       .#{$block}__addon-after {
         color: $fd-menu-icon-color-active;
@@ -263,7 +274,7 @@ $block: #{$fd-namespace}-menu;
 
     width: 100%;
     color: $fd-menu-item-color;
-    font-size: var(--sapFontSize);
+    font-size: $fd-menu-title-font-size;
     font-family: var(--sapFontFamily);
   }
 
@@ -299,5 +310,17 @@ $block: #{$fd-namespace}-menu;
     &--submenu {
       font-size: $fd-menu-icon-sublist-size;
     }
+  }
+
+  &__shortcut {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    flex: 0 1 auto;
+    font-weight: normal;
+    font-family: var(--sapFontFamily);
+    color: $fd-menu-shortcut-color;
+    font-size: $fd-menu-shortcut-font-size;
+    padding-left: $fd-menu-shortcut-padding-left;
   }
 }
