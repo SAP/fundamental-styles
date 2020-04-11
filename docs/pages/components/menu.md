@@ -389,7 +389,7 @@ For a submenu, do the following:
 - After the end of the `fd-menu__link` container, use `fd-menu__sublist` class in its own `<ul>` 
 - Follow the same template for submenu as you would for a normal menu. The same `fd-menu__item` and `fd-menu__link` works for the subitems too.
 
-{% capture default-menuwgroup %}
+{% capture menu-submenu %}
 
 <nav class="fd-menu">
     <ul class="fd-menu__list">
@@ -442,7 +442,44 @@ For a submenu, do the following:
 </nav>
 {% endcapture %}
 
-{% include display-component.html component=default-menuwgroup %}
+{% include display-component.html component=menu-submenu %}
+
+## Menu and A11y
+
+To support best accessibility practices use following features:
+- Add `role="menu"` to  `<ul>` elements
+- Add `role="presentation"` to `<li>` elements
+- Add `role="menuitem"` to `<a>` elements 
+
+{% capture menu-a11y %}
+<nav class="fd-menu">
+    <ul class="fd-menu__list" role="menu">
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 1</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 2</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 3</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 4</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+{% endcapture %}
+
+{% include display-component.html component=menu-a11y %}
+
 
 ## Menu with RTL mode
 
