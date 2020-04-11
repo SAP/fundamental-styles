@@ -30,6 +30,7 @@ $block: #{$fd-namespace}-menu;
 
   // Menu Icon
   $fd-menu-icon-size: var(--sapFontLargeSize) !default;
+  $fd-menu-icon-sublist-size: var(--sapFontSmallSize) !default;
   $fd-menu-icon-height: 1.25rem !default; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
   $fd-menu-icon-width: 2.25rem !default; // to account for item right padding of 16px or 1rem so 2.25rem-1rem = 1.25rem
   $fd-menu-icon-width-compact: 2rem !default;
@@ -149,37 +150,37 @@ $block: #{$fd-namespace}-menu;
       border-radius: 0;
       box-shadow: none;
       position: static;
-    }
 
-    .#{$block}__item {
-      border-radius: 0;
-    }
+      .#{$block}__item {
+        border-radius: 0;
+      }
 
-    .#{$block}__link {
-      padding: 0.75rem 1rem 0.75rem 1rem; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each
-    }
+      .#{$block}__link {
+        padding: 0.75rem 1rem 0.75rem 1rem; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each
+      }
 
-    .#{$block}__addon-before,
-    .#{$block}__addon-after {
-      min-width: $fd-menu-icon-width-mobile;
-      width: $fd-menu-icon-width-mobile;
-    }
+      .#{$block}__addon-before,
+      .#{$block}__addon-after {
+        min-width: $fd-menu-icon-width-mobile;
+        width: $fd-menu-icon-width-mobile;
+      }
 
-    .#{$block}__addon-before {
-      margin: 0 0 0 -1rem;
-    }
-
-    .#{$block}__addon-after {
-      margin: 0 -1rem 0 0;
-    }
-
-    @include fd-rtl() {
       .#{$block}__addon-before {
-        margin: 0 -1rem 0 0; // since before and after icons switch places, their margins also switch
+        margin: 0 0 0 -1rem;
       }
 
       .#{$block}__addon-after {
-        margin: 0 0 0 -1rem; // since before and after icons switch places, their margins also switch
+        margin: 0 -1rem 0 0;
+      }
+
+      @include fd-rtl() {
+        .#{$block}__addon-before {
+          margin: 0 -1rem 0 0; // since before and after icons switch places, their margins also switch
+        }
+
+        .#{$block}__addon-after {
+          margin: 0 0 0 -1rem; // since before and after icons switch places, their margins also switch
+        }
       }
     }
   }
@@ -293,6 +294,10 @@ $block: #{$fd-namespace}-menu;
 
     @include fd-rtl() {
       margin: 0 0 0 -0.75rem; // since before and after icons switch places, their margins also switch
+    }
+
+    &--submenu {
+      font-size: $fd-menu-icon-sublist-size;
     }
   }
 }
