@@ -14,6 +14,7 @@ $block: #{$fd-namespace}-menu;
   // Menu Item
   $fd-menu-item-color: var(--sapList_TextColor) !default;
   $fd-menu-item-color-active: var(--sapList_Active_TextColor) !default;
+  $fd-menu-item-border-bottom: 0.0625rem solid var(--sapList_SelectionBorderColor) !default;
 
   $fd-menu-item-background-color: var(--sapList_Background) !default;
   $fd-menu-item-background-color-hover: var(--sapList_Hover_Background) !default;
@@ -32,11 +33,28 @@ $block: #{$fd-namespace}-menu;
   $fd-menu-icon-width-compact: 2rem !default;
   $fd-menu-icon-width-mobile: 2.75rem !default;
   $fd-menu-icon-color: var(--sapContent_NonInteractiveIconColor) !default;
-  $fd-menu-icon-color-active-selected: var(--sapList_Active_TextColor) !default;
+  $fd-menu-icon-color-active: var(--sapList_Active_TextColor) !default;
+  $fd-menu-icon-color-selected: var(--sapContent_NonInteractiveIconColor) !default;
 
   // Separator
   $fd-menu-separator-color: var(--sapGroup_ContentBorderColor) !default;
   $fd-menu-separator-height: 0.0625rem !default;
+
+  @mixin selected-menu-item() {
+    border-bottom: $fd-menu-item-border-bottom;
+    background-color: $fd-menu-item-background-color-selected;
+
+    .#{$block}__addon-before,
+    .#{$block}__addon-after {
+      color: $fd-menu-icon-color-selected;
+    }
+
+    @include fd-hover() {
+      &:not(:active):not(.is-active) {
+        background-color: $fd-menu-item-background-color-selected-hover;
+      }
+    }
+  }
 
   // BLOCK BASE *******************************************
   @include fd-reset();
@@ -148,24 +166,6 @@ $block: #{$fd-namespace}-menu;
     }
   }
 
-  @mixin selected-menu() {
-    .#{$block}__title {
-      color: $fd-menu-item-color;
-    }
-
-    background-color: $fd-menu-item-background-color-selected;
-    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
-
-    .#{$block}__addon-before,
-    .#{$block}__addon-after {
-      color: $fd-menu-icon-color;
-    }
-
-    @include fd-hover() {
-      background-color: $fd-menu-item-background-color-selected-hover;
-    }
-  }
-
   &__separator {
     @include fd-reset();
 
@@ -176,7 +176,6 @@ $block: #{$fd-namespace}-menu;
 
   &__item {
     @include fd-reset();
-    @include action-cursor();
 
     position: relative;
     border-radius: inherit;
@@ -185,9 +184,11 @@ $block: #{$fd-namespace}-menu;
 
   &__link {
     @include fd-reset();
+    @include action-cursor();
     @include fd-fiori-focus();
 
     border-radius: inherit;
+    text-decoration: none;
     display: flex;
     align-items: center;
     width: 100%;
@@ -196,13 +197,14 @@ $block: #{$fd-namespace}-menu;
 
     @include fd-hover() {
       background-color: $fd-menu-item-background-color-hover;
+    }
 
-      .#{$block}__title {
-        color: $fd-menu-item-color;
-      }
+    @include fd-selected() {
+      @include selected-menu-item();
     }
 
     @include fd-active() {
+      color: $fd-menu-item-color-active;
       background-color: $fd-menu-item-background-color-active;
 
       .#{$block}__title {
@@ -211,41 +213,29 @@ $block: #{$fd-namespace}-menu;
 
       .#{$block}__addon-before,
       .#{$block}__addon-after {
-        color: $fd-menu-icon-color-active-selected;
+        color: $fd-menu-icon-color-active;
       }
     }
 
-    @include fd-selected() {
-      @include selected-menu();
-    }
-
     @include fd-disabled() {
-      cursor: not-allowed;
       pointer-events: none;
       opacity: var(--sapContent_DisabledOpacity);
     }
 
-    .#{$block}__title {
-      @include fd-reset();
-      @include fd-ellipsis();
-
-      width: 100%;
-      color: $fd-menu-item-color;
-      font-size: var(--sapFontSize);
-      font-family: var(--sapFontFamily);
-      text-decoration: none;
+    &.has-child.is-expanded,
+    &.has-child[aria-expanded="true"] {
+      @include selected-menu-item();
     }
+  }
 
-    &.has-child {
-      @include selected-menu();
+  &__title {
+    @include fd-reset();
+    @include fd-ellipsis();
 
-      &.is-expanded,
-      &[aria-expanded="true"] {
-        @include fd-selected() {
-          @include selected-menu();
-        }
-      }
-    }
+    width: 100%;
+    color: $fd-menu-item-color;
+    font-size: var(--sapFontSize);
+    font-family: var(--sapFontFamily);
   }
 
   &__addon-before,
@@ -259,18 +249,6 @@ $block: #{$fd-namespace}-menu;
     height: $fd-menu-icon-height;
     font-size: $fd-menu-icon-size;
     background-color: transparent;
-
-    @include fd-active() {
-      color: $fd-menu-item-color-active;
-    }
-
-    @include fd-selected() {
-      color: $fd-menu-icon-color;
-
-      @include fd-hover() {
-        color: $fd-menu-item-color-active;
-      }
-    }
   }
 
   &__addon-before {
