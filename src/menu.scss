@@ -308,7 +308,13 @@ $block: #{$fd-namespace}-menu;
     }
 
     &--submenu {
+      @include fd-icon("navigation-right-arrow", "s");
+
       font-size: $fd-menu-icon-sublist-size;
+
+      @include fd-rtl() {
+        @include fd-icon("navigation-left-arrow", "s");
+      }
     }
   }
 
@@ -316,7 +322,8 @@ $block: #{$fd-namespace}-menu;
     @include fd-reset();
     @include fd-ellipsis();
 
-    flex: 0 1 auto;
+    display: flex;
+    flex-shrink: 0;
     font-weight: normal;
     font-family: var(--sapFontFamily);
     color: $fd-menu-shortcut-color;

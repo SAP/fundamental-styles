@@ -401,7 +401,7 @@ For a submenu, do the following:
         <!-- For submenu, have the parent menu item in its own span so that its states do not override the submenu states -->
             <a class="fd-menu__link has-child" href="#" aria-controls="EX100M2" aria-haspopup="true">
                 <span class="fd-menu__title">Option 2 with submenu</span>
-                <span class="fd-menu__addon-after fd-menu__addon-after--submenu sap-icon--navigation-right-arrow"></span> 
+                <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span> 
             </a>       
             <ul class="fd-menu__sublist" id="EX100M2" aria-hidden="true">
                 <li class="fd-menu__item">
