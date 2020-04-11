@@ -7,6 +7,8 @@ $block: #{$fd-namespace}-menu;
 .#{$block} {
   // Menu
   $fd-menu-max-width: 20rem !default;
+  $fd-menu-box-shadow: var(--sapContent_Shadow1) !default;
+  $fd-menu-border-radius: var(--sapElement_BorderCornerRadius) !default;
 
   // Menu Sublist
   $fd-menu-sublist-offset: 0.25rem 0 0 -0.25rem !default;
@@ -74,7 +76,12 @@ $block: #{$fd-namespace}-menu;
     flex-wrap: wrap;
     flex-direction: column;
     list-style: none;
-    border-radius: inherit;
+    box-shadow: $fd-menu-box-shadow;
+    border-radius: $fd-menu-border-radius;
+
+    &--no-shadow {
+      box-shadow: none;
+    }
   }
 
   &__sublist {
@@ -137,6 +144,17 @@ $block: #{$fd-namespace}-menu;
   &--mobile {
     max-width: 100%;
 
+    .#{$block}__list,
+    .#{$block}__sublist {
+      border-radius: 0;
+      box-shadow: none;
+      position: static;
+    }
+
+    .#{$block}__item {
+      border-radius: 0;
+    }
+
     .#{$block}__link {
       padding: 0.75rem 1rem 0.75rem 1rem; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each
     }
@@ -178,8 +196,18 @@ $block: #{$fd-namespace}-menu;
     @include fd-reset();
 
     position: relative;
-    border-radius: inherit;
+    border-radius: 0;
     background-color: $fd-menu-item-background-color;
+
+    &:first-child {
+      border-top-right-radius: $fd-menu-border-radius;
+      border-top-left-radius: $fd-menu-border-radius;
+    }
+
+    &:last-child {
+      border-bottom-right-radius: $fd-menu-border-radius;
+      border-bottom-left-radius: $fd-menu-border-radius;
+    }
   }
 
   &__link {
@@ -187,11 +215,11 @@ $block: #{$fd-namespace}-menu;
     @include action-cursor();
     @include fd-fiori-focus();
 
-    border-radius: inherit;
     text-decoration: none;
     display: flex;
     align-items: center;
     width: 100%;
+    border-radius: inherit;
     height: $fd-menu-link-height;
     padding: 0.75rem 1rem 0.75rem 0.75rem; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each
 
