@@ -27,6 +27,9 @@
         {%- endif -%}
       {%- endif -%}
       <span class="fd-menu__title">{{ item.label }}</span>
+      {%- if properties.shortcut -%}
+            <span class="fd-menu__shortcut">Ctrl + A</span>
+      {%- endif -%}
       {%- if properties.addon_after -%}
           {%- if item.submenu -%}
             <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>

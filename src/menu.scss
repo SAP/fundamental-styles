@@ -264,7 +264,9 @@ $block: #{$fd-namespace}-menu;
 
     &.has-child.is-expanded,
     &.has-child[aria-expanded="true"] {
-      @include selected-menu-item();
+      &:not(:active):not(.is-active) {
+        @include selected-menu-item();
+      }
     }
   }
 
