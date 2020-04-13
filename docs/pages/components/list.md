@@ -210,12 +210,12 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
    <li tabindex="0" class="fd-list__item fd-list__item--display">
      <span class="fd-list__title">List item 3</span>
       <span class="fd-list__secondary"></span>
-      <span class="fd-list__icon">></span>
+      <span class="fd-list__icon sap-icon--navigation-right-arrow"></span>
   </li>
    <li tabindex="0" class="fd-list__item fd-list__item--display is-hover">
      <span class="fd-list__title">List item 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</span>
       <span class="fd-list__secondary">Complete</span>
-      <span class="fd-list__icon">></span>
+      <span class="fd-list__icon sap-icon--navigation-right-arrow"></span>
   </li>
   </ul>
 <br />
@@ -235,12 +235,12 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
   <li tabindex="0" class="fd-list__item fd-list__item--display">
      <span class="fd-list__title">List item 3</span>
       <span class="fd-list__secondary"></span>
-      <span class="fd-list__icon">></span>
+      <span class="fd-list__icon sap-icon--navigation-right-arrow"></span>
   </li>              
   <li tabindex="0" class="fd-list__item fd-list__item--display is-hover">
      <span class="fd-list__title">List item 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</span>
       <span class="fd-list__secondary">Complete</span>
-      <span class="fd-list__icon">></span>
+      <span class="fd-list__icon sap-icon--navigation-right-arrow"></span>
   </li>
 </ul>
 <br />
@@ -260,12 +260,12 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
   <li tabindex="0"  class="fd-list__item fd-list__item--display fd-list__item--display--action">
     <span class="fd-list__title">List item 3</span>
       <span class="fd-list__secondary"></span>
-      <span class="fd-list__icon">></span>
+      <span class="fd-list__icon sap-icon--navigation-right-arrow"></span>
   </li>
   <li tabindex="0"  class="fd-list__item fd-list__item--display fd-list__item--display--action is-hover">
     <span class="fd-list__title">List item 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</span>
       <span class="fd-list__secondary">Complete</span>
-      <span class="fd-list__icon">></span>
+      <span class="fd-list__icon sap-icon--navigation-right-arrow"></span>
   </li>
 </ul>
 {% endcapture %}
