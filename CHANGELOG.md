@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.2-rc.2"></a>
+## [0.8.2-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.8.2-rc.1...v0.8.2-rc.2) (2020-04-14)
+
+
+### Bug Fixes
+
+* introduce new Message Toast component ([#826](https://github.com/SAP/fundamental-styles/issues/826)) ([deca3c4](https://github.com/SAP/fundamental-styles/commit/deca3c4))
+
+
+
 <a name="0.8.2-rc.1"></a>
 ## [0.8.2-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.8.2-rc.0...v0.8.2-rc.1) (2020-04-13)
 
