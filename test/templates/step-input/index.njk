@@ -2,9 +2,15 @@
 {% from "./component.njk" import step_input %}
 {% from "./../format.njk" import format %}
 
+
+{% block header %}
+
+{% endblock %} 
+
 {% block content %}
 {% set states = ["success", "error", "warning", "information"] %}
-<h2>Step Input compact mode</h2>
+<h2>Step Input Cozy mode</h2>
+</head>
 {%- set example %}
 
                 {{ step_input(
@@ -20,7 +26,7 @@
 {%- endset %}
 {{ format(example) }}
 
-<h2>Step Input cozy mode</h2>
+<h2>Step Input compact mode</h2>
 {%- set example %}
 
                 {{ step_input(
@@ -29,44 +35,8 @@
                         value: 0
                         },
                     modifier={
-                        cozy: true
+                        compact: true
 
-                    })
-                }}
-{%- endset %}
-{{ format(example) }}
-
-
-<h2>Step Input with  diffrent state</h2>
-{%- set example %}
-{%- for st in states %}
-                {{ step_input(
-                    properties={
-                        unitdesc: "PC",
-                        value: 0
-                       },
-                    modifier={
-                        cozy: false,
-                        state: st
-
-                    })
-                }}
-        <br /><br />
-{%- endfor %}
-{%- endset %}
-{{ format(example) }}
-
-<h2>Step Input with disabled mode</h2>
-{%- set example %}
-
-                {{ step_input(
-                    properties={
-                        unitdesc: "PC",
-                        value: 0
-                        },
-                    modifier={
-                        cozy: true,
-                        disabled: true
                     })
                 }}
 {%- endset %}
@@ -81,7 +51,7 @@
                         value: 0
                         },
                     modifier={
-                        cozy: true,
+                        compact: true,
                         readonly: true
                     })
                 }}

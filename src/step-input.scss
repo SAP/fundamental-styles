@@ -10,17 +10,19 @@ $block: #{$fd-namespace}-step-input;
   $fd-step-input-border-thin-width: 0.0625rem;
   $fd-step-input-border-thick-width: 2 * $fd-step-input-border-thin-width;
   $fd-input-group-button-active-focus-color: var(--sapContent_ContrastFocusColor);
-  $fd-button-icon-font-size: 1rem;
+  $fd-button-icon-font-size: 0.875rem;
+  $fd-button-icon-font-size-cozy: 1rem;
 
-  width: auto;
-  display: inline-block;
-
-  @mixin icon-size($size) {
+  @mixin iconSize($size) {
     &::before,
     &::after {
       font-size: $size;
     }
   }
+
+  width: auto;
+  display: inline-block;
+  line-height: 0;
 
   @include fd-fiori-focus() {
     outline-color: $fd-input-group-button-active-focus-color;
@@ -31,21 +33,14 @@ $block: #{$fd-namespace}-step-input;
 
   &__content-wrapper {
     width: auto;
-    min-width: 2rem;
-    height: 1.625rem;
-    margin-top: 0.1875rem;
-    margin-bottom: 0.1875rem;
-    background: var(--sapField_Background);
-    border-style: solid;
-    border-width: $fd-step-input-border-thin-width;
-    border-color: var(--sapField_BorderColor);
-    border-radius: var(--sapField_BorderCornerRadius);
+    min-width: 2.75rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    padding: 0;
     box-sizing: border-box;
     vertical-align: middle;
     display: inline-block;
     position: relative;
-
-    @include fd-form-states();
 
     &.is-readonly {
       outline: none;
@@ -64,25 +59,13 @@ $block: #{$fd-namespace}-step-input;
     }
   }
 
-  &__content-wrapper:hover {
-    background: var(--sapField_Hover_Background);
-    border-color: var(--sapField_Hover_BorderColor);
-    box-sizing: border-box;
-    border-radius: var(--sapField_BorderCornerRadius);
-
-    &.is-readonly {
-      background: none;
-      border-width: $fd-step-input-border-thin-width;
-      border-color: var(--sapField_BorderColor);
-    }
-  }
-
-  &__icon-container {
-    width: auto;
-    height: 100%;
-    vertical-align: inherit;
+  &__button-container {
+    width: 2.125rem;
+    min-width: 2rem;
+    vertical-align: middle;
     display: inline-block;
     outline: none;
+    height: 100%;
 
     &.is-readonly {
       display: none;
@@ -93,62 +76,45 @@ $block: #{$fd-namespace}-step-input;
     }
   }
 
-  &__icon {
-    display: inline-block;
+  &__button-container--compact {
     width: 1.5rem;
     min-width: 1.5rem;
-    height: 1.5rem;
-    line-height: 1.4rem;
+  }
+
+  .#{$fd-namespace}-button.#{$block}__button {
+    @include fd-button-reset();
+
     background-color: var(--sapButton_Lite_Background);
     border-color: var(--sapButton_Lite_BorderColor);
     color: var(--sapButton_Lite_TextColor);
+    width: 2.125rem;
+    min-width: 2rem;
+    height: 2.25rem;
+    line-height: 1.5rem;
     margin: 0;
     text-align: center;
     cursor: pointer;
 
-    @include icon-size($fd-button-icon-font-size);
+    &:focus {
+      outline: none;
+    }
+
+    @include iconSize($fd-button-icon-font-size);
   }
 
-  &__icon--cozy {
-    display: inline-block;
-    width: 2.125rem;
-    min-width: 2rem;
-    height: 2.25rem;
-    line-height: 2rem;
+  .#{$fd-namespace}-button.#{$block}__button--compact {
+    width: 1.5rem;
+    min-width: 1.5rem;
+    height: 1.5rem;
   }
 
   &__inputtext {
-    border: none;
     width: auto;
-    height: 100%;
     text-align: right;
     vertical-align: middle;
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-family: var(--sapFontFamily);
-    font-size: var(--sapFontSize);
-    font-style: normal;
-    font-weight: normal;
-    color: var(--sapField_TextColor);
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-    @include fd-form-states();
 
     @include fd-rtl() {
       text-align: left;
-    }
-
-    &--no-number-spinner {
-      &::-webkit-outer-spin-button,
-      &::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-      }
-
-      -moz-appearance: textfield;
     }
 
     &:focus {
@@ -161,12 +127,10 @@ $block: #{$fd-namespace}-step-input;
     }
   }
 
-  &__content-wrapper--cozy {
-    width: auto;
-    min-width: 2.75rem;
-    height: 2.25rem;
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
+  &__content-wrapper--compact {
+    min-width: 2rem;
+    margin-top: 0.1875rem;
+    margin-bottom: 0.1875rem;
   }
 
   &__unit-description {
@@ -181,8 +145,6 @@ $block: #{$fd-namespace}-step-input;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
-    @include fd-form-states();
 
     @include fd-rtl() {
       padding-right: 0.5rem;
