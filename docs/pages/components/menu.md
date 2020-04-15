@@ -28,24 +28,24 @@ Use class modifier`fd-menu--compact` on menu container level for desktop mode.
     <label class="fd-form-label">Combobox Tablet Cozy Mode - default mode</label><br/><br/>
     
     <nav class="fd-menu">
-        <ul class="fd-menu__list">
-            <li class="fd-menu__item">
-                <a class="fd-menu__link" href="#">
+        <ul class="fd-menu__list" role="menu">
+            <li class="fd-menu__item" role="presentation">
+                <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 1</span>
                 </a>
             </li>
-            <li class="fd-menu__item">
-                <a class="fd-menu__link" href="#">
+            <li class="fd-menu__item" role="presentation">
+                <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 2</span>
                 </a>
             </li>
-            <li class="fd-menu__item">
-                <a class="fd-menu__link" href="#">
+            <li class="fd-menu__item" role="presentation">
+                <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 3</span>
                 </a>
             </li>
-            <li class="fd-menu__item">
-                <a class="fd-menu__link" href="#">
+            <li class="fd-menu__item" role="presentation">
+                <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 4</span>
                 </a>
             </li>
@@ -57,24 +57,24 @@ Use class modifier`fd-menu--compact` on menu container level for desktop mode.
     <label class="fd-form-label">Combobox Desktop Compact Mode</label><br/><br/>
     
     <nav class="fd-menu fd-menu--compact">
-        <ul class="fd-menu__list">
-            <li class="fd-menu__item">
-                <a class="fd-menu__link" href="#">
+        <ul class="fd-menu__list" role="menu">
+            <li class="fd-menu__item" role="presentation">
+                <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 1</span>
                 </a>
             </li>
-            <li class="fd-menu__item">
-                <a class="fd-menu__link" href="#">
+            <li class="fd-menu__item" role="presentation">
+                <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 2</span>
                 </a>
             </li>
-            <li class="fd-menu__item">
-                <a class="fd-menu__link" href="#">
+            <li class="fd-menu__item" role="presentation">
+                <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 3</span>
                 </a>
             </li>
-            <li class="fd-menu__item">
-                <a class="fd-menu__link" href="#">
+            <li class="fd-menu__item" role="presentation">
+                <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 4</span>
                 </a>
             </li>
@@ -91,7 +91,7 @@ Use class modifier`fd-menu--compact` on menu container level for desktop mode.
 The basic stucture of a menu in mobile where it opens as a dialog. Use class `fd-menu--mobile` on menu container level.
 Example shows the parent menu's item in active state to simulate a pressed/touched event. Submenu appears in its own fullscreen dialog in mobile devices. The device's back button takes one back to the parent menu fullscreen dialog.
 
-{% capture default-menuwgroup %}
+{% capture menu-mobile %}
 
 <div style="width: 50%; display: inline-block" class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
     <div class="fd-dialog__content fd-dialog__content--mobile">
@@ -106,30 +106,30 @@ Example shows the parent menu's item in active state to simulate a pressed/touch
         </header>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
              <nav class="fd-menu fd-menu--mobile" aria-hidden="true" id="parent-menu">
-                <ul class="fd-menu__list">
-                    <li class="fd-menu__item">
-                        <a class="fd-menu__link" href="#">
+                <ul class="fd-menu__list" role="menu">
+                    <li class="fd-menu__item" role="presentation">
+                        <a class="fd-menu__link" href="#" role="menuitem">
                             <span class="fd-menu__addon-before sap-icon--grid"></span>
                             <span class="fd-menu__title">Option 1</span>
                             <span class="fd-menu__addon-after sap-icon--wrench"></span> 
                         </a>
                     </li>
-                    <li class="fd-menu__item">
-                        <a class="fd-menu__link is-active" href="#">
+                    <li class="fd-menu__item" role="presentation">
+                        <a class="fd-menu__link is-active" href="#" role="menuitem">
                             <span class="fd-menu__addon-before sap-icon--accept"></span>
                             <span class="fd-menu__title">Option 2</span>
                             <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
                         </a>
                     </li>
-                    <li class="fd-menu__item">
-                        <a class="fd-menu__link" href="#">
+                    <li class="fd-menu__item" role="presentation">
+                        <a class="fd-menu__link" href="#" role="menuitem">
                             <span class="fd-menu__addon-before sap-icon--history"></span>
                             <span class="fd-menu__title">Option 3</span>
                             <span class="fd-menu__addon-after sap-icon--lightbulb"></span>
                         </a>
                     </li>
-                    <li class="fd-menu__item">
-                        <a class="fd-menu__link" href="#">
+                    <li class="fd-menu__item" role="presentation">
+                        <a class="fd-menu__link" href="#" role="menuitem">
                             <span class="fd-menu__addon-before sap-icon--grid"></span>
                             <span class="fd-menu__title">Option 4</span>
                             <span class="fd-menu__addon-after sap-icon--history"></span>
@@ -164,24 +164,24 @@ Example shows the parent menu's item in active state to simulate a pressed/touch
         </header>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
              <nav class="fd-menu fd-menu--mobile">
-                <ul class="fd-menu__sublist" style="position:relative; left:0; margin:0;">
-                    <li class="fd-menu__item">
-                        <a class="fd-menu__link" href="#">
+                <ul class="fd-menu__sublist" style="position:relative; left:0; margin:0;" role="menu">
+                    <li class="fd-menu__item" role="presentation">
+                        <a class="fd-menu__link" href="#" role="menuitem">
                             <span class="fd-menu__title">Sub-option 1</span>
                         </a>                    
                     </li>
-                    <li class="fd-menu__item">                    
-                        <a class="fd-menu__link" href="#">
+                    <li class="fd-menu__item" role="presentation">                    
+                        <a class="fd-menu__link" href="#" role="menuitem">
                             <span class="fd-menu__title">Sub-option 2</span>
                         </a>
                     </li>
-                    <li class="fd-menu__item">                    
-                        <a class="fd-menu__link" href="#">
+                    <li class="fd-menu__item" role="presentation">                    
+                        <a class="fd-menu__link" href="#" role="menuitem">
                             <span class="fd-menu__title">Sub-option 3</span>
                         </a>
                     </li>
-                    <li class="fd-menu__item">                    
-                        <a class="fd-menu__link" href="#">
+                    <li class="fd-menu__item" role="presentation">                    
+                        <a class="fd-menu__link" href="#" role="menuitem">
                             <span class="fd-menu__title">Sub-option 4</span>
                         </a>
                     </li>
@@ -200,40 +200,40 @@ Example shows the parent menu's item in active state to simulate a pressed/touch
 
 {% endcapture %}
 
-{% include display-component.html component=default-menuwgroup %}
+{% include display-component.html component=menu-mobile %}
 
 ## Menu list with separated items
 
 To add separators between the items, use the class `fd-menu__separator` in its own `<span>` after the `<li>` item where you want the separation.
 
-{% capture default-menuwgroup %}
+{% capture menu-separator %}
 
 <nav class="fd-menu">
-    <ul class="fd-menu__list">
-        <li class="fd-menu__item">
-            <a class="fd-menu__link" href="#">
+    <ul class="fd-menu__list" role="menu">
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
                 <span class="fd-menu__title">Option 1</span>
             </a>
         </li>
-        <li class="fd-menu__item">
-            <a class="fd-menu__link" href="#">
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
                 <span class="fd-menu__title">Option 2</span>
             </a>
         </li>
         <span class="fd-menu__separator"></span>
-        <li class="fd-menu__item">
-            <a class="fd-menu__link" href="#">
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
                 <span class="fd-menu__title">Option 3</span>
             </a>
         </li>
-        <li class="fd-menu__item">
-            <a class="fd-menu__link" href="#">
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
                 <span class="fd-menu__title">Option 4</span>
             </a>
         </li>
         <span class="fd-menu__separator"></span>
-        <li class="fd-menu__item">
-            <a class="fd-menu__link" href="#">
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
                 <span class="fd-menu__title">Option 5</span>
             </a>
         </li>
@@ -241,7 +241,7 @@ To add separators between the items, use the class `fd-menu__separator` in its o
 </nav>
 {% endcapture %}
 
-{% include display-component.html component=default-menuwgroup %}
+{% include display-component.html component=menu-separator %}
 
 ## Menu list with different states
 
@@ -254,37 +254,37 @@ Simulate different states to show state behaviour between the items.
 
 To remove default box shadow from menu containers use `fd-menu__list--no-shadow` or `fd-menu__sublist--no-shadow`.
 
-{% capture default-menuwgroup %}
+{% capture menu-states %}
 <div style="width: 50%; display: inline-block">
     <nav class="fd-menu">
-        <ul class="fd-menu__list">
-            <li class="fd-menu__item">
-                <a class="fd-menu__link" href="#">
+        <ul class="fd-menu__list" role="menu">
+            <li class="fd-menu__item" role="presentation">
+                <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 1- Regular</span>
                 </a>
             </li>
-             <li class="fd-menu__item">
-                <a class="fd-menu__link is-hover" href="#">
+             <li class="fd-menu__item" role="presentation">
+                <a class="fd-menu__link is-hover" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 2 - Hover</span>
                 </a>
             </li>
-            <li class="fd-menu__item">
-                <a class="fd-menu__link is-active" href="#">
+            <li class="fd-menu__item" role="presentation">
+                <a class="fd-menu__link is-active" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 3 - Active</span>
                 </a>
             </li>
-            <li class="fd-menu__item">
-                <a class="fd-menu__link is-selected" href="#">
+            <li class="fd-menu__item" role="presentation">
+                <a class="fd-menu__link is-selected" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 4 - Selected</span>
                 </a>
             </li>
-            <li class="fd-menu__item">
-                <a class="fd-menu__link is-selected is-hover" href="#">
+            <li class="fd-menu__item" role="presentation">
+                <a class="fd-menu__link is-selected is-hover" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 5 - Selected-Hover</span>
                 </a>
             </li>
-            <li class="fd-menu__item">
-                <a class="fd-menu__link is-disabled" href="#">
+            <li class="fd-menu__item" role="presentation">
+                <a class="fd-menu__link is-disabled" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 6 - Disabled</span>
                 </a>
             </li>
@@ -294,34 +294,34 @@ To remove default box shadow from menu containers use `fd-menu__list--no-shadow`
 
 <div style="width: 49%; display: inline-block">
     <nav class="fd-menu">
-        <ul class="fd-menu__list fd-menu__list--no-shadow">
-            <li class="fd-menu__item">
-                <a class="fd-menu__link" href="#">
+        <ul class="fd-menu__list fd-menu__list--no-shadow" role="menu">
+            <li class="fd-menu__item" role="presentation">
+                <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 1</span>
                 </a>                    
             </li>
-            <li class="fd-menu__item">                    
-                <a class="fd-menu__link" href="#">
+            <li class="fd-menu__item" role="presentation">                    
+                <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 2</span>
                 </a>
             </li>
-            <li class="fd-menu__item">                    
-                <a class="fd-menu__link" href="#">
+            <li class="fd-menu__item" role="presentation">                    
+                <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 3</span>
                 </a>
             </li>
-            <li class="fd-menu__item">                    
-                <a class="fd-menu__link" href="#">
+            <li class="fd-menu__item" role="presentation">                    
+                <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 4</span>
                 </a>
             </li>
-            <li class="fd-menu__item">                    
-                <a class="fd-menu__link" href="#">
+            <li class="fd-menu__item" role="presentation">                    
+                <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 5</span>
                 </a>
             </li>
-            <li class="fd-menu__item">                    
-                <a class="fd-menu__link" href="#">
+            <li class="fd-menu__item" role="presentation">                    
+                <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 6</span>
                 </a>
             </li>
@@ -330,7 +330,7 @@ To remove default box shadow from menu containers use `fd-menu__list--no-shadow`
 </div>
 {% endcapture %}
 
-{% include display-component.html component=default-menuwgroup %}
+{% include display-component.html component=menu-states %}
 
 ## Menu with addons
 
@@ -340,33 +340,33 @@ To create an addon before or after `fd-menu__title` element, use elements with f
 - `fd-menu__shortcut`       - styles shortcut placed after `fd-menu__title`
 According to Fiori3 design shortcuts should be on desktop devices.
 
-{% capture default-menuwgroup %}
+{% capture menu-addons %}
 
 <nav class="fd-menu">
-    <ul class="fd-menu__list">
-        <li class="fd-menu__item">
-                <a class="fd-menu__link" href="#">
+    <ul class="fd-menu__list" role="menu">
+        <li class="fd-menu__item" role="presentation">
+                <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__addon-before sap-icon--grid"></span>
                     <span class="fd-menu__title">Option 1</span>
                     <span class="fd-menu__addon-after sap-icon--wrench"></span>
                 </a>
         </li>
-        <li class="fd-menu__item">
-                <a class="fd-menu__link" href="#">
+        <li class="fd-menu__item" role="presentation">
+                <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__addon-before sap-icon--accept"></span>
                     <span class="fd-menu__title">Option 2</span>
                     <span class="fd-menu__addon-after sap-icon--history"></span>
                 </a>            
         </li>
-        <li class="fd-menu__item">
-                <a class="fd-menu__link" href="#">
+        <li class="fd-menu__item" role="presentation">
+                <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__addon-before sap-icon--wrench"></span>
                     <span class="fd-menu__title">Option 3</span>
                     <span class="fd-menu__addon-after sap-icon--lightbulb"></span>
                 </a>
         </li>
-        <li class="fd-menu__item">            
-                <a class="fd-menu__link" href="#">
+        <li class="fd-menu__item" role="presentation">            
+                <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__addon-before sap-icon--cart"></span>
                     <span class="fd-menu__title">Option 4</span>
                     <span class="fd-menu__shortcut">Ctrl + A</span>
@@ -377,7 +377,7 @@ According to Fiori3 design shortcuts should be on desktop devices.
 </nav>
 {% endcapture %}
 
-{% include display-component.html component=default-menuwgroup %}
+{% include display-component.html component=menu-addons %}
 
 ## Menu with a submenu
 
@@ -391,49 +391,49 @@ For a submenu, do the following:
 {% capture menu-submenu %}
 
 <nav class="fd-menu">
-    <ul class="fd-menu__list">
-        <li class="fd-menu__item">            
-            <a class="fd-menu__link" href="#">
+    <ul class="fd-menu__list" role="menu">
+        <li class="fd-menu__item" role="presentation">            
+            <a class="fd-menu__link" href="#" role="menuitem">
                 <span class="fd-menu__title">Option 1</span>  
             </a>          
         </li>
-        <li class="fd-menu__item">
+        <li class="fd-menu__item" role="presentation">
         <!-- For submenu, have the parent menu item in its own span so that its states do not override the submenu states -->
-            <a class="fd-menu__link has-child" href="#" aria-controls="EX100M2" aria-haspopup="true">
+            <a class="fd-menu__link has-child" href="#" aria-controls="EX100M2" aria-haspopup="true" role="menuitem">
                 <span class="fd-menu__title">Option 2 with submenu</span>
                 <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span> 
             </a>       
-            <ul class="fd-menu__sublist" id="EX100M2" aria-hidden="true">
-                <li class="fd-menu__item">
-                    <a class="fd-menu__link" href="#">
+            <ul class="fd-menu__sublist" id="EX100M2" aria-hidden="true" role="menu">
+                <li class="fd-menu__item" role="presentation">
+                    <a class="fd-menu__link" href="#" role="menuitem">
                         <span class="fd-menu__title">Sub-option 1</span>
                     </a>                    
                 </li>
-                <li class="fd-menu__item">                    
-                    <a class="fd-menu__link" href="#">
+                <li class="fd-menu__item" role="presentation">                    
+                    <a class="fd-menu__link" href="#" role="menuitem">
                         <span class="fd-menu__title">Sub-option 2</span>
                     </a>
                 </li>
-                <li class="fd-menu__item">                    
-                    <a class="fd-menu__link" href="#">
+                <li class="fd-menu__item" role="presentation">                    
+                    <a class="fd-menu__link" href="#" role="menuitem">
                         <span class="fd-menu__title">Sub-option 3</span>
                     </a>
                 </li>
-                <li class="fd-menu__item">                    
-                    <a class="fd-menu__link" href="#">
+                <li class="fd-menu__item" role="presentation">                    
+                    <a class="fd-menu__link" href="#" role="menuitem">
                         <span class="fd-menu__title">Sub-option 4</span>
                     </a>
                 </li>
             </ul>
         </li>
         <span class="fd-menu__separator"></span>
-        <li class="fd-menu__item">            
-            <a class="fd-menu__link" href="#">
+        <li class="fd-menu__item" role="presentation">            
+            <a class="fd-menu__link" href="#" role="menuitem">
                 <span class="fd-menu__title">Option 3</span>
             </a>
         </li>
-        <li class="fd-menu__item">            
-            <a class="fd-menu__link" href="#">
+        <li class="fd-menu__item" role="presentation">            
+            <a class="fd-menu__link" href="#" role="menuitem">
                 <span class="fd-menu__title">Option 4</span>
             </a>
         </li>        
@@ -443,74 +443,37 @@ For a submenu, do the following:
 
 {% include display-component.html component=menu-submenu %}
 
-## Menu and A11y
-
-To support best accessibility practices use following features:
-- Add `role="menu"` to  `<ul>` elements
-- Add `role="presentation"` to `<li>` elements
-- Add `role="menuitem"` to `<a>` elements 
-
-{% capture menu-a11y %}
-<nav class="fd-menu">
-    <ul class="fd-menu__list" role="menu">
-        <li class="fd-menu__item" role="presentation">
-            <a class="fd-menu__link" href="#" role="menuitem">
-                <span class="fd-menu__title">Option 1</span>
-            </a>
-        </li>
-        <li class="fd-menu__item" role="presentation">
-            <a class="fd-menu__link" href="#" role="menuitem">
-                <span class="fd-menu__title">Option 2</span>
-            </a>
-        </li>
-        <li class="fd-menu__item" role="presentation">
-            <a class="fd-menu__link" href="#" role="menuitem">
-                <span class="fd-menu__title">Option 3</span>
-            </a>
-        </li>
-        <li class="fd-menu__item" role="presentation">
-            <a class="fd-menu__link" href="#" role="menuitem">
-                <span class="fd-menu__title">Option 4</span>
-            </a>
-        </li>
-    </ul>
-</nav>
-{% endcapture %}
-
-{% include display-component.html component=menu-a11y %}
-
-
 ## Menu with RTL mode
 
 The basic stucture of a menu in RTL simulated mode.
 
-{% capture default-menu %}
+{% capture menu-rtl %}
 
 <nav class="fd-menu" dir="rtl">
-    <ul class="fd-menu__list">
-        <li class="fd-menu__item">
-            <a class="fd-menu__link" href="#">
+    <ul class="fd-menu__list" role="menu">
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
                 <span class="fd-menu__addon-before sap-icon--grid"></span>
                 <span class="fd-menu__title">Option 1</span>
                 <span class="fd-menu__addon-after sap-icon--history"></span>
             </a>
         </li>
-        <li class="fd-menu__item">
-            <a class="fd-menu__link" href="#">
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
                 <span class="fd-menu__addon-before sap-icon--accept"></span>
                 <span class="fd-menu__title">Option 2</span>
                 <span class="fd-menu__addon-after sap-icon--grid"></span>
             </a>
         </li>
-        <li class="fd-menu__item">
-            <a class="fd-menu__link" href="#">
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
                 <span class="fd-menu__addon-before sap-icon--history"></span>
                 <span class="fd-menu__title">Option 3</span>
                 <span class="fd-menu__addon-after sap-icon--cart"></span>
             </a>
         </li>
-        <li class="fd-menu__item">
-            <a class="fd-menu__link" href="#">
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
                 <span class="fd-menu__addon-before sap-icon--grid"></span>
                 <span class="fd-menu__title">Option 4</span>
                 <span class="fd-menu__addon-after sap-icon--lightbulb"></span>
@@ -520,4 +483,4 @@ The basic stucture of a menu in RTL simulated mode.
 </nav>
 {% endcapture %}
 
-{% include display-component.html component=default-menu %}
+{% include display-component.html component=menu-rtl %}
