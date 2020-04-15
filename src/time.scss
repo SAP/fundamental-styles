@@ -32,6 +32,8 @@ $block: #{$fd-namespace}-time;
   }
 
   &__current-indicator {
+    @include fd-reset();
+
     position: absolute;
     top: 50%;
     left: 0;
@@ -133,12 +135,19 @@ $block: #{$fd-namespace}-time;
   }
 
   &__unit {
-    display: flex;
+    @include fd-reset();
+
+    text-align: center;
+    color: inherit;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
     z-index: 2;
+    line-height: $fd-time-item-height;
   }
 
   &__list {
@@ -205,6 +214,10 @@ $block: #{$fd-namespace}-time;
           height: $fd-time-wrapper-compact-height;
         }
       }
+    }
+
+    .#{$block}__unit {
+      line-height: $fd-time-item-compact-height;
     }
   }
 
