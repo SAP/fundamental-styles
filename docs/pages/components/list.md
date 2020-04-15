@@ -191,3 +191,144 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 {% endcapture %}
 
 {% include display-component.html component=list-without-borders %}
+
+
+## Standard List with Byline
+
+{% capture list-byline %}
+<ul class="fd-list fd-list--byline">
+  <li tabindex="0"  class="fd-list__item">
+      <span class="sap-icon--activate fd-list__thumbnail"></span>
+      <div class="fd-list__content">
+        <div class="fd-list__title">Title</div>
+        <div class="fd-list__byline">Byline (description)</div>
+      </div>
+  </li>
+  <li tabindex="0"  class="fd-list__item is-selected">
+      <span class="sap-icon--employee fd-list__thumbnail"></span>
+      <div class="fd-list__content">
+        <div class="fd-list__title">List Item With No Byline</div>
+      </div>
+  </li>
+  <li tabindex="0"  class="fd-list__item">
+    <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
+style="background-image: url('https://placeimg.com/400/400/nature');"></span>
+    <div class="fd-list__content">
+        <div class="fd-list__title">List Item With Two-Column Byline</div>
+        <div class="fd-list__byline fd-list__byline--2-col">
+            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
+            <div class="fd-list__byline-right">Second text item in Byline (Can be semantic (Status) or not)</div>
+        </div>
+    </div>
+  </li>
+  <li tabindex="0"  class="fd-list__item">
+      <div class="fd-list__content">
+        <div class="fd-list__title">Text-Only List Item</div>
+        <div class="fd-list__byline">Byline (description)</div>
+      </div>
+  </li>
+</ul>
+
+<br><br>
+<h4>Compact Size</h4>
+
+<ul class="fd-list fd-list--compact fd-list--byline">
+  <li tabindex="0"  class="fd-list__item">
+    <span class="sap-icon--e-care fd-list__thumbnail"></span>
+    <div class="fd-list__content">
+        <div class="fd-list__title">List Item With Two-Column Byline and Semantic Byline Second Item</div>
+        <div class="fd-list__byline fd-list__byline--2-col">
+            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
+            <div class="fd-list__byline-right fd-list__byline-right--neutral">Second text item in Byline - Neutral</div>
+        </div>
+    </div>
+  </li>
+  <li tabindex="0"  class="fd-list__item">
+    <span class="sap-icon--globe fd-list__thumbnail"></span>
+    <div class="fd-list__content">
+        <div class="fd-list__title">List Item With Two-Column Byline and Semantic Byline Second Item</div>
+        <div class="fd-list__byline fd-list__byline--2-col">
+            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
+            <div class="fd-list__byline-right fd-list__byline-right--positive">Second text item in Byline - Positive</div>
+        </div>
+    </div>
+  </li>
+  <li tabindex="0"  class="fd-list__item">
+    <span class="sap-icon--manager fd-list__thumbnail"></span>
+    <div class="fd-list__content">
+        <div class="fd-list__title">List Item With Two-Column Byline and Semantic Byline Second Item</div>
+        <div class="fd-list__byline fd-list__byline--2-col">
+            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
+            <div class="fd-list__byline-right fd-list__byline-right--critical">Second text item in Byline - Critical</div>
+        </div>
+    </div>
+  </li>
+  <li tabindex="0"  class="fd-list__item">
+    <span class="sap-icon--loan fd-list__thumbnail"></span>
+    <div class="fd-list__content">
+        <div class="fd-list__title">List Item With Two-Column Byline and Semantic Byline Second Item</div>
+        <div class="fd-list__byline fd-list__byline--2-col">
+            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
+            <div class="fd-list__byline-right fd-list__byline-right--negative">Second text item in Byline - Negative</div>
+        </div>
+    </div>
+  </li>
+  <li tabindex="0"  class="fd-list__item">
+    <span class="sap-icon--home-share fd-list__thumbnail"></span>
+    <div class="fd-list__content">
+        <div class="fd-list__title">List Item With Two-Column Byline and Semantic Byline Second Item</div>
+        <div class="fd-list__byline fd-list__byline--2-col">
+            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
+            <div class="fd-list__byline-right fd-list__byline-right--informative">Second text item in Byline - Informative</div>
+        </div>
+    </div>
+  </li>
+</ul>
+
+{% endcapture %}
+
+{% include display-component.html component=list-byline %}
+
+
+## Standard List with Byline Borderless Design
+
+{% capture list-byline-borderless %}
+<ul class="fd-list fd-list--no-border fd-list--byline">
+  <li tabindex="0"  class="fd-list__item">
+      <span class="sap-icon--activate fd-list__thumbnail"></span>
+      <div class="fd-list__content">
+        <div class="fd-list__title">Title</div>
+        <div class="fd-list__byline">Byline (description)</div>
+      </div>
+  </li>
+  <li tabindex="0"  class="fd-list__item">
+      <span class="sap-icon--employee fd-list__thumbnail"></span>
+      <div class="fd-list__content">
+        <div class="fd-list__title">List Item With No Byline</div>
+      </div>
+  </li>
+  <li tabindex="0"  class="fd-list__item">
+    <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
+style="background-image: url('https://placeimg.com/400/400/nature');"></span>
+    <div class="fd-list__content">
+        <div class="fd-list__title">List Item With Two-Column Byline</div>
+        <div class="fd-list__byline fd-list__byline--2-col">
+            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
+            <div class="fd-list__byline-right fd-list__byline-right--positive">Second text item in Byline - Semantic Positive</div>
+        </div>
+    </div>
+  </li>
+  <li tabindex="0"  class="fd-list__item is-selected">
+    <span class="sap-icon--world fd-list__thumbnail"></span>
+    <div class="fd-list__content">
+        <div class="fd-list__title">List Item With Two-Column Byline and Semantic Byline Second Item</div>
+        <div class="fd-list__byline fd-list__byline--2-col">
+            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
+            <div class="fd-list__byline-right fd-list__byline-right--informative">Second text item in Byline - Semantic Informative</div>
+        </div>
+    </div>
+  </li>
+</ul>
+{% endcapture %}
+
+{% include display-component.html component=list-byline-borderless %}

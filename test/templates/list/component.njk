@@ -35,7 +35,29 @@
 	{%- if toggles.useIconBefore %}
         <span class="fd-list__icon">{{item.iconBefore}}</span>
     {%- endif %}
-    	<span class="fd-list__title {{ 'fd-list__title--no-wrap' if toggles.noWrap }}">{{item.title}}</span>
+    {%- if toggles.byline %}
+        {%- if item.thumbnail %}
+            <span class="fd-list__thumbnail list-tumbnail-playground"></span>
+        {%- endif %}
+
+        <div class="fd-list__content">
+            <div class="fd-list__title">{{item.title}}</div>
+            <div class="fd-list__byline {{ 'fd-list__byline--2-col' if toggles.byline2col }}">
+                {%- if item.bylineLeft %}
+                    <div class="fd-list__byline-left">{{item.bylineLeft}}</div>
+                {%- endif %}
+                {%- if item.bylineRight %}
+                    <div class="fd-list__byline-right {{ 'fd-list__byline-right--' + item.semantic if item.semantic }}">{{item.bylineRight}}</div>
+                {%- endif %}
+                {%- if item.byline %}
+                    {{item.byline}}
+                {%- endif %}
+            </div>
+        </div>
+
+        {%- else %}
+            <span class="fd-list__title {{ 'fd-list__title--no-wrap' if toggles.noWrap }}">{{item.title}}</span>
+    {%- endif %}
     {%- if toggles.useSecondary %}
         <span class="fd-list__secondary  {{ 'fd-list__secondary--no-wrap' if toggles.noWrap }}">{{item.secondary}}</span>
     {%- endif %}

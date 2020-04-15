@@ -38,6 +38,24 @@ $block: #{$fd-namespace}-list;
   $fd-checkbox-dimensions: 1.375rem;
   $fd-list-last-item-bottom-border-radius: var(--sapElement_BorderCornerRadius) !default;
 
+  // STANDARD LIST WITH BYLINE
+  $fd-list-byline-thumbnail-dimensions: 3rem !default;
+  $fd-list-byline-thumbnail-border-radius: 0.25rem !default;
+  $fd-list-byline-thumbnail-spacing: 0.75rem !default;
+  $fd-list-byline-item-height: 5rem !default;
+  $fd-list-byline-text-line-height: 1rem !default;
+  $fd-list-byline-elements-spacing: 0.5rem !default;
+  $fd-list-byline-item-padding-x: 1rem !default;
+  $fd-list-byline-item-padding-y: 1rem !default;
+
+  $semantic-color: (
+    "neutral": ("color": var(--sapNeutralTextColor)),
+    "positive": ("color": var(--sapPositiveTextColor)),
+    "critical": ("color": var(--sapCriticalTextColor)),
+    "negative": ("color": var(--sapNegativeTextColor)),
+    "informative": ("color": var(--sapInformativeTextColor))
+  );
+
   @include fd-reset();
 
   position: relative;
@@ -106,12 +124,10 @@ $block: #{$fd-namespace}-list;
   &__title,
   &__secondary {
     @include fd-reset();
+    @include fd-ellipsis();
 
     line-height: 1rem;
     color: var(--sapList_TextColor);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   &__title {
@@ -384,6 +400,140 @@ $block: #{$fd-namespace}-list;
       &:last-child {
         border-bottom-left-radius: $fd-list-last-item-bottom-border-radius;
         border-bottom-right-radius: $fd-list-last-item-bottom-border-radius;
+      }
+    }
+  }
+
+  // Standard List with Byline
+  &--byline {
+    .#{$block}__item {
+      width: 100%;
+      height: $fd-list-byline-item-height;
+      padding: $fd-list-byline-item-padding-x $fd-list-byline-item-padding-y;
+
+      @include fd-active() {
+        .#{$block}__thumbnail,
+        .#{$block}__byline,
+        .#{$block}__byline-left,
+        .#{$block}__byline-right {
+          color: var(--sapList_Active_TextColor);
+        }
+
+        @each $set-name, $color-set in $semantic-color {
+          &--#{$set-name} {
+            color: var(--sapList_Active_TextColor);
+          }
+        }
+      }
+    }
+
+    .#{$block}__thumbnail {
+      @include fd-reset();
+      @include fd-flex-center();
+
+      width: $fd-list-byline-thumbnail-dimensions;
+      height: $fd-list-byline-thumbnail-dimensions;
+      min-width: $fd-list-byline-thumbnail-dimensions;
+      max-width: $fd-list-byline-thumbnail-dimensions;
+      min-height: $fd-list-byline-thumbnail-dimensions;
+      max-height: $fd-list-byline-thumbnail-dimensions;
+      border-radius: $fd-list-byline-thumbnail-border-radius;
+      margin-right: $fd-list-byline-thumbnail-spacing;
+      font-size: 2.5rem;
+      color: var(--sapContent_NonInteractiveIconColor);
+
+      @include fd-rtl() {
+        margin-right: 0;
+        margin-left: $fd-list-byline-thumbnail-spacing;
+      }
+    }
+
+    .#{$block}__content {
+      @include fd-reset();
+
+      @include fd-flex(column) {
+        align-content: space-between;
+      }
+
+      min-height: $fd-list-byline-thumbnail-dimensions;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      padding: 0.125rem 0;
+    }
+
+    .#{$block}__title {
+      font-size: var(--sapFontLargeSize);
+    }
+
+    .#{$block}__byline {
+      @include fd-reset();
+      @include fd-ellipsis();
+
+      font-size: var(--sapFontSize);
+      color: var(--sapContent_LabelColor);
+      line-height: $fd-list-byline-text-line-height;
+
+      &--2-col {
+        display: flex;
+      }
+    }
+
+    .#{$block}__byline-left {
+      @include fd-reset();
+      @include fd-ellipsis();
+
+      width: 60%;
+      color: var(--sapContent_LabelColor);
+      padding-right: $fd-list-byline-elements-spacing;
+      line-height: $fd-list-byline-text-line-height;
+
+      @include fd-rtl() {
+        padding-left: $fd-list-byline-elements-spacing;
+        padding-right: 0;
+      }
+    }
+
+    .#{$block}__byline-right {
+      @include fd-reset();
+      @include fd-ellipsis();
+
+      width: 40%;
+      color: var(--sapContent_LabelColor);
+      padding-left: $fd-list-byline-elements-spacing;
+      line-height: $fd-list-byline-text-line-height;
+
+      @include fd-rtl() {
+        padding-left: 0;
+        padding-right: $fd-list-byline-elements-spacing;
+      }
+
+      @each $set-name, $color-set in $semantic-color {
+        &--#{$set-name} {
+          color: map_get($color-set, "color");
+        }
+      }
+    }
+
+    &.#{$block}--compact {
+      .#{$block}__title {
+        font-size: var(--sapFontSize);
+      }
+    }
+
+    &.#{$block}--no-border {
+      .#{$block}__item {
+        padding: 0.5rem $fd-list-byline-item-padding-x;
+        max-height: $fd-list-byline-item-height;
+        height: 100%;
+      }
+
+      .#{$block}__item:first-child {
+        padding-top: $fd-list-byline-item-padding-y;
+      }
+
+      .#{$block}__item:last-child {
+        padding-bottom: $fd-list-byline-item-padding-y;
       }
     }
   }
