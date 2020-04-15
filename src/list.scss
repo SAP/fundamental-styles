@@ -121,6 +121,15 @@ $block: #{$fd-namespace}-list;
     }
   }
 
+  &__form-item {
+    margin-left: -1rem;
+
+    @include fd-rtl() {
+      margin-right: -1rem;
+      margin-left: 0;
+    }
+  }
+
   &__title,
   &__secondary {
     @include fd-reset();
@@ -410,6 +419,7 @@ $block: #{$fd-namespace}-list;
       width: 100%;
       height: $fd-list-byline-item-height;
       padding: $fd-list-byline-item-padding-x $fd-list-byline-item-padding-y;
+      align-items: flex-start;
 
       @include fd-active() {
         .#{$block}__thumbnail,
@@ -424,6 +434,16 @@ $block: #{$fd-namespace}-list;
             color: var(--sapList_Active_TextColor);
           }
         }
+      }
+    }
+
+    .#{$block}__form-item {
+      margin-left: -1rem;
+      margin-top: -0.6875rem;
+
+      @include fd-rtl() {
+        margin-right: -1rem;
+        margin-left: 0;
       }
     }
 
@@ -519,6 +539,10 @@ $block: #{$fd-namespace}-list;
       .#{$block}__title {
         font-size: var(--sapFontSize);
       }
+
+      .#{$block}__form-item {
+        margin-top: -0.5rem;
+      }
     }
 
     &.#{$block}--no-border {
@@ -534,6 +558,20 @@ $block: #{$fd-namespace}-list;
 
       .#{$block}__item:last-child {
         padding-bottom: $fd-list-byline-item-padding-y;
+      }
+
+      .#{$block}__item:not(:first-child) {
+        .#{$block}__form-item {
+          margin-top: -0.5rem;
+
+          label {
+            padding-top: 0.5rem;
+
+            &::after {
+              top: 0.375rem;
+            }
+          }
+        }
       }
     }
   }

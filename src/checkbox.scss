@@ -83,6 +83,17 @@ $block: #{$fd-namespace}-checkbox;
         border-color: var(--sapField_Hover_BorderColor);
       }
     }
+
+    &:empty {
+      padding: $fd-checkbox-margin;
+      margin: 0;
+
+      &::before,
+      &::after {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
   }
 
   &:checked + .#{$block}__label::before {
@@ -126,6 +137,10 @@ $block: #{$fd-namespace}-checkbox;
     + .#{$block}__label {
       @include fd-form-radio-focus($fd-checkbox-margin);
     }
+
+    + .#{$block}__label:empty {
+      @include fd-form-radio-empty-focus($fd-checkbox-margin);
+    }
   }
 
   @include fd-disabled() {
@@ -160,11 +175,26 @@ $block: #{$fd-namespace}-checkbox;
           margin-right: 0;
         }
       }
+
+      &:empty {
+        padding: $fd-checkbox-margin-compact;
+        margin: 0;
+
+        &::before,
+        &::after {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
     }
 
     @include fd-focus() {
       + .#{$block}__label {
         @include fd-form-radio-focus($fd-checkbox-margin-compact);
+      }
+
+      + .#{$block}__label:empty {
+        @include fd-form-radio-empty-focus($fd-checkbox-margin-compact);
       }
     }
   }

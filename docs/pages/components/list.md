@@ -192,8 +192,125 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 
 {% include display-component.html component=list-without-borders %}
 
+## Selection
+
+{% capture list-selection %}
+
+<ul class="fd-list">
+  <li tabindex="0"  class="fd-list__item">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez1">
+          <label class="fd-checkbox__label" for="Ai4ez1"></label>
+      </div>
+      <span class="fd-list__title">List item 1</span>
+  </li>
+  <li tabindex="0"  class="fd-list__item is-selected">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez2">
+          <label class="fd-checkbox__label" for="Ai4ez2"></label>
+      </div>
+      <span class="fd-list__title">List item 2</span>
+  </li>
+  <li tabindex="0"  class="fd-list__item">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez3">
+          <label class="fd-checkbox__label" for="Ai4ez3"></label>
+      </div>
+      <span class="fd-list__title">List item 3</span>
+  </li>
+</ul>
+
+<br><br>
+<h4>With Icons</h4>
+
+<ul class="fd-list">
+  <li tabindex="0"  class="fd-list__item is-selected">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez4a">
+          <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez4a"></label>
+      </div>
+      <span class="fd-list__icon sap-icon--cart"></span>
+      <span class="fd-list__title">List item 1</span>
+  </li>
+  <li tabindex="0"  class="fd-list__item">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez4b">
+          <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez4b"></label>
+      </div>
+      <span class="fd-list__icon sap-icon--wrench"></span>
+      <span class="fd-list__title">List item 2</span>
+  </li>
+  <li tabindex="0"  class="fd-list__item">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez4c">
+          <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez4c"></label>
+      </div>
+      <span class="fd-list__icon sap-icon--lightbulb"></span>
+      <span class="fd-list__title">List item 3</span>
+  </li>
+</ul>
+
+<br><br>
+<h4>Compact Size</h4>
+
+<ul class="fd-list fd-list--compact fd-list--no-border">
+  <li tabindex="0"  class="fd-list__item">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez4">
+          <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez4"></label>
+      </div>
+      <span class="fd-list__title">List item 1</span>
+  </li>
+  <li tabindex="0"  class="fd-list__item is-selected">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez5">
+          <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez5"></label>
+      </div>
+      <span class="fd-list__title">List item 2</span>
+  </li>
+  <li tabindex="0"  class="fd-list__item">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6">
+          <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6"></label>
+      </div>
+      <span class="fd-list__title">List item 3</span>
+  </li>
+</ul>
+
+<br><br>
+<h4>Borderless Design</h4>
+
+<ul class="fd-list fd-list--no-border">
+  <li tabindex="0"  class="fd-list__item">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez7">
+          <label class="fd-checkbox__label" for="Ai4ez7"></label>
+      </div>
+      <span class="fd-list__title">List item 1</span>
+  </li>
+  <li tabindex="0"  class="fd-list__item is-selected">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez8">
+          <label class="fd-checkbox__label" for="Ai4ez8"></label>
+      </div>
+      <span class="fd-list__title">List item 2</span>
+  </li>
+  <li tabindex="0"  class="fd-list__item">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez9">
+          <label class="fd-checkbox__label" for="Ai4ez9"></label>
+      </div>
+      <span class="fd-list__title">List item 3</span>
+  </li>
+</ul>
+{% endcapture %}
+
+{% include display-component.html component=list-selection %}
+
 
 ## Standard List with Byline
+Add the `fd-list--byline` modifier class for a Standard List with Byline (description).
+For a two-column byline you need to add the `fd-list__byline--2-col` modifier class to the element. The first text item (`fd-list__byline-left`) is a standard text (description) and takes 60% of the available space. The second text item (`fd-list__byline-right`) could be a standard text or semantic (status) and takes the remaining 40% of the available space. For semantic (status) use a modifier class (`fd-list__byline-right--* `) to represent `neutral`, `positive`, `critical`, `negative` and `informative` status.
 
 {% capture list-byline %}
 <ul class="fd-list fd-list--byline">
@@ -332,3 +449,136 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 {% endcapture %}
 
 {% include display-component.html component=list-byline-borderless %}
+
+
+## Standard List with Byline and Selection
+
+{% capture list-byline-selection %}
+<ul class="fd-list fd-list--byline">
+  <li tabindex="0"  class="fd-list__item">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez6111">
+          <label class="fd-checkbox__label" for="Ai4ez6111"></label>
+      </div>
+      <span class="sap-icon--activate fd-list__thumbnail"></span>
+      <div class="fd-list__content">
+        <span class="fd-list__title">Title</span>
+        <span class="fd-list__byline">Byline (description)</span>
+      </div>
+  </li>
+  <li tabindex="0"  class="fd-list__item">
+    <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez6112">
+          <label class="fd-checkbox__label" for="Ai4ez6112"></label>
+      </div>
+    <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
+style="background-image: url('https://placeimg.com/400/400/nature');"></span>
+    <div class="fd-list__content">
+        <div class="fd-list__title">List Item With Two-Column Byline</div>
+        <div class="fd-list__byline fd-list__byline--2-col">
+            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
+            <div class="fd-list__byline-right">Second text item in Byline (Can be semantic (Status) or not)</div>
+        </div>
+    </div>
+  </li>
+  <li tabindex="0"  class="fd-list__item">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez6113">
+          <label class="fd-checkbox__label" for="Ai4ez6113"></label>
+      </div>
+      <div class="fd-list__content">
+        <div class="fd-list__title">Text-Only List Item</div>
+        <div class="fd-list__byline">Byline (description)</div>
+      </div>
+  </li>
+</ul>
+
+<br><br>
+<h4>Compact Size</h4>
+
+<ul class="fd-list fd-list--compact fd-list--byline">
+  <li tabindex="0"  class="fd-list__item">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6115">
+          <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6115"></label>
+      </div>
+      <span class="sap-icon--activate fd-list__thumbnail"></span>
+      <div class="fd-list__content">
+        <span class="fd-list__title">Title</span>
+        <span class="fd-list__byline">Byline (description)</span>
+      </div>
+  </li>
+  <li tabindex="0"  class="fd-list__item">
+    <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6116">
+          <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6116"></label>
+      </div>
+    <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
+style="background-image: url('https://placeimg.com/400/400/nature');"></span>
+    <div class="fd-list__content">
+        <div class="fd-list__title">List Item With Two-Column Byline</div>
+        <div class="fd-list__byline fd-list__byline--2-col">
+            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
+            <div class="fd-list__byline-right">Second text item in Byline (Can be semantic (Status) or not)</div>
+        </div>
+    </div>
+  </li>
+  <li tabindex="0"  class="fd-list__item">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6117">
+          <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6117"></label>
+      </div>
+      <div class="fd-list__content">
+        <div class="fd-list__title">Text-Only List Item</div>
+        <div class="fd-list__byline">Byline (description)</div>
+      </div>
+  </li>
+</ul>
+
+
+<br><br>
+<h4>Borderless Design</h4>
+<ul class="fd-list fd-list--no-border fd-list--byline">
+  <li tabindex="0"  class="fd-list__item">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez6118">
+          <label class="fd-checkbox__label" for="Ai4ez6118"></label>
+      </div>
+      <span class="sap-icon--activate fd-list__thumbnail"></span>
+      <div class="fd-list__content">
+        <span class="fd-list__title">Title</span>
+        <span class="fd-list__byline">Byline (description)</span>
+      </div>
+  </li>
+  <li tabindex="0"  class="fd-list__item">
+    <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez6119">
+          <label class="fd-checkbox__label" for="Ai4ez6119"></label>
+      </div>
+    <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
+style="background-image: url('https://placeimg.com/400/400/nature');"></span>
+    <div class="fd-list__content">
+        <div class="fd-list__title">List Item With Two-Column Byline</div>
+        <div class="fd-list__byline fd-list__byline--2-col">
+            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
+            <div class="fd-list__byline-right">Second text item in Byline (Can be semantic (Status) or not)</div>
+        </div>
+    </div>
+  </li>
+  <li tabindex="0"  class="fd-list__item">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez61110">
+          <label class="fd-checkbox__label" for="Ai4ez61110"></label>
+      </div>
+      <div class="fd-list__content">
+        <div class="fd-list__title">Text-Only List Item</div>
+        <div class="fd-list__byline">Byline (description)</div>
+      </div>
+  </li>
+</ul>
+
+
+{% endcapture %}
+
+{% include display-component.html component=list-byline-selection %}
+
