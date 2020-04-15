@@ -168,12 +168,16 @@ entries:
       url: /components/menu.html
       output: web
 
+    - title: Message Box
+      url: /components/message-box.html
+      output: web
+    
     - title: Message Strip
       url: /components/message-strip.html
       output: web
 
-    - title: Message Box
-      url: /components/message-box.html
+    - title: Message Toast
+      url: /components/message-toast.html
       output: web
 
     - title: Notification

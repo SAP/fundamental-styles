@@ -54,6 +54,9 @@
     - title: Message Box
       meta: message-box
 
+    - title: Message Toast
+      meta: message-toast
+
     - title: Notification
       meta: notification
 

@@ -1,5 +1,3 @@
-@import "./mixins";
-
 $fd-dialog-content-margin-y: 6%;
 $fd-dialog-content-margin-x: 10%;
 $fd-dialog-content-min-width: 20rem;
@@ -56,8 +54,8 @@ $fd-dialog-overlay-color: rgba(0, 0, 0, 0.6); // Should be fade(var(--sapBlockLa
 }
 
 %dialog-title {
-  @include fd-reset();
-  @include fd-ellipsis();
-
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: $fd-dialog-title-font-size;
 }

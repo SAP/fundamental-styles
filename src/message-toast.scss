@@ -1,0 +1,32 @@
+@import "./new-settings";
+@import "./mixins";
+@import "./functions";
+
+$block: #{$fd-namespace}-message-toast;
+
+$fd-message-toast-max-width: 15rem;
+$fd-message-toast-padding: 1rem;
+$fd-message-toast-border-radius: var(--sapElement_BorderCornerRadius);
+$fd-message-toast-background: var(--sapList_Background);
+$fd-message-toast-box-shadow: var(--sapContent_Shadow2);
+$fd-message-toast-text-font-family: var(--sapFontFamily);
+$fd-message-toast-text-font-size: var(--sapFontSize);
+$fd-message-toast-text-color: var(--sapList_TextColor);
+
+.#{$block} {
+  @include fd-reset();
+
+  // CONTAINER
+  display: inline-flex;
+  width: auto;
+  max-width: $fd-message-toast-max-width;
+  box-shadow: $fd-message-toast-box-shadow;
+  background-color: $fd-message-toast-background;
+  border-radius: $fd-message-toast-border-radius;
+  padding: $fd-message-toast-padding;
+
+  // TEXT
+  font-family: $fd-message-toast-text-font-family;
+  font-size: var(--sapFontSize);
+  color: $fd-message-toast-text-color;
+}

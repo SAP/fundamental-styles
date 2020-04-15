@@ -26,12 +26,16 @@ $message-box-states: (
 );
 
 .#{$block} {
+  @include fd-reset();
+
   @extend %dialog;
 
   display: none;
 
   // ELEMENTS
   &__content {
+    @include fd-reset();
+
     @extend %dialog-content;
 
     overflow: hidden;
@@ -74,6 +78,8 @@ $message-box-states: (
   }
 
   &__title {
+    @include fd-reset();
+
     @extend %dialog-title;
   }
 
