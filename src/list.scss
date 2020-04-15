@@ -47,6 +47,8 @@ $block: #{$fd-namespace}-list;
   $fd-list-byline-elements-spacing: 0.5rem !default;
   $fd-list-byline-item-padding-x: 1rem !default;
   $fd-list-byline-item-padding-y: 1rem !default;
+  $fd-list-byline-borderless-item-padding-y: 0.5rem !default;
+  $fd-list-form-item-margin-top: -0.5rem !default;
 
   $semantic-color: (
     "neutral": ("color": var(--sapNeutralTextColor)),
@@ -541,13 +543,13 @@ $block: #{$fd-namespace}-list;
       }
 
       .#{$block}__form-item {
-        margin-top: -0.5rem;
+        margin-top: $fd-list-form-item-margin-top;
       }
     }
 
     &.#{$block}--no-border {
       .#{$block}__item {
-        padding: 0.5rem $fd-list-byline-item-padding-x;
+        padding: $fd-list-byline-borderless-item-padding-y $fd-list-byline-item-padding-x;
         max-height: $fd-list-byline-item-height;
         height: 100%;
       }
@@ -562,10 +564,10 @@ $block: #{$fd-namespace}-list;
 
       .#{$block}__item:not(:first-child) {
         .#{$block}__form-item {
-          margin-top: -0.5rem;
+          margin-top: $fd-list-form-item-margin-top;
 
           label {
-            padding-top: 0.5rem;
+            padding-top: $fd-list-byline-borderless-item-padding-y;
 
             &::after {
               top: 0.375rem;
