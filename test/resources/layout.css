@@ -71,8 +71,13 @@ body {
   margin: 0;
 }
 
-.btn-playground--compact{
+.btn-playground--compact {
   padding: 4px;
+}
+
+.btn-playground--transparent {
+  border-color: transparent;
+  background-color: var(--sapButton_Lite_Background);
 }
 
 .btn-playground--emphasized {
@@ -176,6 +181,18 @@ body {
   margin: 0;
   padding: 0;
   border: none;
+}
+
+.input-group-addon-playground {
+  color: var(--sapContent_NonInteractiveIconColor);
+  background-color: var(--sapField_Background);
+  font-size: var(--sapFontLargeSize);
+  min-width: 2.25rem;
+  min-height: 2.25rem;
+}
+
+.input-group-addon-playground--compact {
+  min-height: 1.625rem;
 }
 
 .input-group-input-playground {
@@ -298,4 +315,3 @@ body {
   height: 20px;
   background-color: cadetblue;
 }
-

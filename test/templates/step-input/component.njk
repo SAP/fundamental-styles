@@ -16,18 +16,17 @@ step-input:
 %}
 {%- set input = properties.input %}
 <div class="fd-step-input">
-   <div class="fd-step-input__content-wrapper{{ ' is-' + modifier.state if modifier.state }} {{ 'is-readonly' if modifier.readonly }} {{ ' is-disabled' if modifier.disabled }} {{ 'fd-step-input__content-wrapper--cozy' if modifier.cozy}}">
-        <div class="fd-step-input__icon-container {{ 'is-readonly' if modifier.readonly }}">
-            <span class="fd-step-input__icon {{ 'fd-step-input__icon--cozy' if modifier.cozy}} sap-icon--less">
-            </span>
-        </div>
-              <input class="fd-step-input__inputtext fd-step-input__inputtext--no-number-spinner {{ 'is-readonly' if modifier.readonly }}" id="step-1-compact" type="{{input.type}}"  value="{{properties.value}}">
-        <div class="fd-step-input__icon-container {{ 'is-readonly' if modifier.readonly }} ">    
-            <span class="fd-step-input__icon {{ 'fd-step-input__icon--cozy' if modifier.cozy}} sap-icon--add" ">
-            </span>
-        </div>
+    <div class="input-group-input-playground {{ 'is-readonly' if modifier.readonly }} fd-step-input__content-wrapper {{ 'fd-step-input__content-wrapper--compact' if modifier.compact}}">
+            <div class="input-group-addon-playground input-group-addon-playground--compact fd-step-input__button-container {{ 'is-readonly' if modifier.readonly }} {{ 'fd-step-input__button-container--compact' if modifier.compact}}">
+                <div class="fd-button fd-step-input__button {{ 'fd-step-input__button--compact' if modifier.compact }}" onclick="stepInputValue('step-1', 'down');">-</div>
+            </div>
+            <input class="input-group-playground fd-step-input__inputtext" id="step-1" {{ 'readonly' if modifier.readonly }} type="text" value="0">
+            <div class="input-group-addon-playground input-group-addon-playground--compact fd-step-input__button-container {{ 'is-readonly' if modifier.readonly }} {{ 'fd-step-input__button-container--compact' if modifier.compact}} ">
+               <button class="fd-button fd-step-input__button {{ 'fd-step-input__button--compact' if modifier.compact }}" onclick="stepInputValue('step-1', 'up');">+</div>
+            </div>
     </div>
-    <span class="fd-step-input__unit-description {{ ' is-disabled' if modifier.disabled }}">{{ properties.unitdesc }}</span>
+ <span class="fd-step-input__unit-description {{ ' is-disabled' if modifier.disabled }}">{{ properties.unitdesc }}</span>
 </div>
+
 
 {%- endmacro %}
