@@ -383,7 +383,15 @@ The lists in both sections (Main and Utility) should have the `fd-nested-list--c
 
 ## Side navigation with icons - condensed state
 Use the `fd-side-nav--condensed` modifier class for `condensed` state.
-Group headers are forbidden in `condensed` state.
+The following requirements must be met:
+<ul>
+    <li>
+        all first level items of the Side Navigation should have icons
+    </li>
+    <li>
+        the Side Navigation should not have Group Headers
+    </li>
+</ul>
 {% capture default %}
 <nav class="fd-side-nav fd-side-nav--condensed">
     <div class="fd-side-nav__main-navigation">
