@@ -1,6 +1,4 @@
-@import "./settings";
 @import "./mixins";
-@import "./functions";
 
 /*!
 .fd-avatar+((--circle), (--thumbnail), (--xxs|--xs|--s|--m|--l|--xl|--xxl))
@@ -138,16 +136,13 @@ $block: #{$fd-namespace}-avatar;
   }
   // background
   &.#{$block}--transparent {
-    --fd-avatar-background-color: transparent;
-
-    @include fd-var-color("color", map-get($fd-colors-text, 1), --fd-color-text-1);
-    @include fd-var-color("background-color", transparent);
+    color: var(--fd-color-text-1);
+    background-color: transparent;
   }
   // zoom icon
   &__zoom-icon {
-    @include fd-var-color("background-color", $fd-link-color, --fd-link-color);
-    @include fd-var-color("color", $fd-avatar-color, --fd-avatar-color);
-
+    background-color: var(--fd-link-color);
+    color: var(--fd-avatar-color);
     position: absolute;
     border-radius: 50%;
   }
