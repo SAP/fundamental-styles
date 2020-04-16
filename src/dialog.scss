@@ -181,6 +181,8 @@ $button: #{$fd-namespace}-button;
   }
 
   &__title {
+    @include fd-reset();
+
     @extend %dialog-title;
   }
 }

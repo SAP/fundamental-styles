@@ -1,0 +1,14 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+
+{% block content %}
+
+<h2>Message Toast</h2>
+    
+{% set example %}
+<div class="fd-message-toast">Product added successfully</div>
+{% endset %}
+{{ format(example) }}
+
+{% endblock %}
+
