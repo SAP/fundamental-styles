@@ -16,9 +16,12 @@ $block: #{$fd-namespace}-avatar;
     xl: $fd-const-ratio * 7,
   ) !default;
   $fd-avatar-border-radius: $fd-border-radius !default;
-  $fd-avatar-border-fade: rgba(0, 0, 0, 0.5); // Should be fade(var(--sapContent_ShadowColor), 10);
+  $fd-avatar-border-fade: rgba(0, 0, 0, 0.5) !default; // Should be fade(var(--sapContent_ShadowColor), 10);
   $fd-avatar-color: var(--sapContent_ContrastTextColor) !default;
   $fd-avatar-background-color: var(--sapAccentColor6) !default;
+  $fd-zoom-icon-s: 1.125rem !default;
+  $fd-zoom-icon-l: 1.25rem !default;
+  $fd-zoom-icon-xl: 1.75rem !default;
 
   // BLOCK BASE *******************************************
   @at-root {
@@ -53,8 +56,8 @@ $block: #{$fd-namespace}-avatar;
 
       @if $size == xs or $size == s or $size == m {
         .#{$block}__zoom-icon {
-          width: 1.125rem;
-          height: 1.125rem;
+          width: $fd-zoom-icon-s;
+          height: $fd-zoom-icon-s;
           bottom: -0.125rem;
           right: -0.125rem;
 
@@ -65,7 +68,6 @@ $block: #{$fd-namespace}-avatar;
       }
 
       @if $size == xs or $size == s {
-        line-height: 1.33333;
         font-stretch: condensed;
       }
 
@@ -74,24 +76,19 @@ $block: #{$fd-namespace}-avatar;
       }
 
       @if $size == s {
-        font-size: 1.125rem;
+        font-size: $fd-zoom-icon-s;
       }
 
       @if $size == m {
-        line-height: 1.42857;
         font-size: 1.5rem;
-      }
-
-      @if $size == l or $size == xl {
-        line-height: 1.33333;
       }
 
       @if $size == l {
         font-size: 2.25rem;
 
         .#{$block}__zoom-icon {
-          width: 1.25rem;
-          height: 1.25rem;
+          width: $fd-zoom-icon-l;
+          height: $fd-zoom-icon-l;
           bottom: -0.1875rem;
           right: -0.1875rem;
 
@@ -105,14 +102,14 @@ $block: #{$fd-namespace}-avatar;
         font-size: 3rem;
 
         .#{$block}__zoom-icon {
-          width: 1.75rem;
-          height: 1.75rem;
+          width: $fd-zoom-icon-xl;
+          height: $fd-zoom-icon-xl;
           bottom: -0.25rem;
           right: -0.25rem;
 
           &::before {
             font-size: 1rem;
-            line-height: 1.75rem;
+            line-height: $fd-zoom-icon-xl;
           }
         }
       }
@@ -141,7 +138,7 @@ $block: #{$fd-namespace}-avatar;
   }
   // zoom icon
   &__zoom-icon {
-    background-color: var(--fd-link-color);
+    background-color: var(--sapLinkColor);
     color: var(--fd-avatar-color);
     position: absolute;
     border-radius: 50%;
