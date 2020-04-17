@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.2-rc.3"></a>
+## [0.8.2-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.8.2-rc.2...v0.8.2-rc.3) (2020-04-17)
+
+
+### Bug Fixes
+
+* check if tag starts with 'v' not if contains v ([#864](https://github.com/SAP/fundamental-styles/issues/864)) ([b6544d4](https://github.com/SAP/fundamental-styles/commit/b6544d4))
+
+
+
 <a name="0.8.2-rc.2"></a>
 ## [0.8.2-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.8.2-rc.1...v0.8.2-rc.2) (2020-04-14)
 
