@@ -13,17 +13,21 @@ $block: #{$fd-namespace}-time;
   $fd-time-wrapper-compact-height: 7 * $fd-time-item-compact-height;
   $fd-time-dropdown-padding: 1rem;
   $fd-time-dropdown-compact-padding: 0.5rem;
+  $fd-time-item-width: 3rem;
+
+  @include fd-flex() {
+    justify-content: center;
+  }
 
   padding: $fd-time-dropdown-padding;
-  display: flex;
-  justify-content: center;
 
   &__col {
     @include fd-reset();
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include fd-flex-vertical-center() {
+      flex-direction: column;
+    }
+
     margin-right: 0.5rem;
 
     &:last-child {
@@ -39,7 +43,7 @@ $block: #{$fd-namespace}-time;
     left: 0;
     transform: translateY(-50%);
     box-sizing: border-box;
-    width: 3rem;
+    width: $fd-time-item-width;
     height: $fd-time-item-height;
     border: 0.0625rem solid var(--sapList_SelectionBorderColor);
     border-radius: var(--sapButton_BorderCornerRadius);
@@ -48,14 +52,14 @@ $block: #{$fd-namespace}-time;
   &__wrapper {
     @include fd-reset();
 
+    @include fd-flex-center() {
+      flex-direction: column;
+    }
+
     overflow: hidden;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     flex: 1 1 auto;
-    width: 3rem;
+    width: $fd-time-item-width;
 
     &--active {
       max-height: $fd-time-wrapper-height;
@@ -82,14 +86,12 @@ $block: #{$fd-namespace}-time;
 
   &__item {
     @include fd-reset();
+    @include fd-flex-center();
 
     cursor: default;
-    width: 3rem;
+    width: $fd-time-item-width;
     height: $fd-time-item-height;
     min-height: $fd-time-item-height;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: var(--sapButton_BorderCornerRadius);
     background-color: var(--sapLegend_WorkingBackground);
     border: 0.0625rem solid var(--sapList_Background);
@@ -136,14 +138,11 @@ $block: #{$fd-namespace}-time;
 
   &__unit {
     @include fd-reset();
+    @include fd-ellipsis();
 
     text-align: center;
     color: inherit;
     display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100%;
     z-index: 2;
@@ -159,13 +158,15 @@ $block: #{$fd-namespace}-time;
 
   &__slider-label {
     @include fd-reset();
+    @include fd-ellipsis();
 
     line-height: $fd-time-item-compact-height;
     height: $fd-time-item-compact-height;
+    font-size: var(--sapFontSmallSize);
+    max-width: $fd-time-item-width;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;
-    font-size: var(--sapFontSmallSize);
+    text-overflow: clip;
   }
 
   &__control {
