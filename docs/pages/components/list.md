@@ -28,8 +28,30 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
       <span class="fd-list__title">List item 4</span>
   </li>
 </ul>
-<br />
 
+<br />
+<h4>With links</h4>
+<ul class="fd-list fd-list--links">
+  <li class="fd-list__item">
+      <a tabindex="0" class="fd-list__link" href="#">
+        <span class="fd-list__title">List item 1</span>
+      </a>
+  </li>
+  <li class="fd-list__item">
+      <a tabindex="0" class="fd-list__link" href="#">
+        <span class="fd-list__icon sap-icon--history"></span>
+        <span class="fd-list__title">List item 2</span>
+      </a>
+  </li>
+  <li class="fd-list__item">
+      <a tabindex="0" class="fd-list__link" href="#">
+        <span class="fd-list__title">List item 3</span>
+        <span class="fd-list__icon sap-icon--navigation-right-arrow"></span>
+      </a>
+  </li>
+</ul>
+
+<br />
 <h4>Compact Size</h4>
 <ul class="fd-list fd-list--compact">
   <li tabindex="0"  class="fd-list__item">

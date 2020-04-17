@@ -95,23 +95,6 @@ $block: #{$fd-namespace}-list;
       }
     }
 
-    @include fd-active() {
-      background: var(--sapList_Active_Background);
-
-      @include fd-hover() {
-        background: var(--sapList_Active_Background);
-      }
-
-      @include fake-list-outline(var(--sapContent_ContrastFocusColor));
-
-      .#{$block}__title,
-      .#{$block}__secondary,
-      .#{$block}__icon,
-      & {
-        color: var(--sapList_Active_TextColor);
-      }
-    }
-
     &--no-data {
       .#{$block}__title {
         text-align: center;
@@ -187,6 +170,36 @@ $block: #{$fd-namespace}-list;
       &:last-child {
         margin-left: -1rem;
         margin-right: 0;
+      }
+    }
+  }
+
+  &__link {
+    @include fd-reset();
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 $fd-list-horizontal-padding;
+    cursor: pointer;
+
+    @include fake-list-outline();
+
+    @include fd-active() {
+      background: var(--sapList_Active_Background);
+
+      @include fd-hover() {
+        background: var(--sapList_Active_Background);
+      }
+
+      @include fake-list-outline(var(--sapContent_ContrastFocusColor));
+
+      .#{$block}__title,
+      .#{$block}__secondary,
+      .#{$block}__icon,
+      & {
+        color: var(--sapList_Active_TextColor);
       }
     }
   }
@@ -415,6 +428,12 @@ $block: #{$fd-namespace}-list;
     }
   }
 
+  &--links {
+    .#{$block}__item {
+      padding: 0;
+    }
+  }
+
   // Standard List with Byline
   &--byline {
     .#{$block}__item {
@@ -422,21 +441,6 @@ $block: #{$fd-namespace}-list;
       height: $fd-list-byline-item-height;
       padding: $fd-list-byline-item-padding-x $fd-list-byline-item-padding-y;
       align-items: flex-start;
-
-      @include fd-active() {
-        .#{$block}__thumbnail,
-        .#{$block}__byline,
-        .#{$block}__byline-left,
-        .#{$block}__byline-right {
-          color: var(--sapList_Active_TextColor);
-        }
-
-        @each $set-name, $color-set in $semantic-color {
-          &--#{$set-name} {
-            color: var(--sapList_Active_TextColor);
-          }
-        }
-      }
     }
 
     .#{$block}__form-item {
