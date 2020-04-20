@@ -6,80 +6,41 @@ $block: #{$fd-namespace}-menu;
 
 .#{$block} {
   // Menu
-  $fd-menu-max-width: 20rem !default;
-  $fd-menu-box-shadow: var(--sapContent_Shadow1) !default;
   $fd-menu-border-radius: var(--sapElement_BorderCornerRadius) !default;
 
-  // Menu Sublist
-  $fd-menu-sublist-offset: 0.25rem 0 0 -0.25rem !default;
-  $fd-menu-sublist-offset-rtl: 0.25rem -0.25rem 0 0 !default;
-
   // Menu Item
-  $fd-menu-item-color: var(--sapList_TextColor) !default;
   $fd-menu-item-color-active: var(--sapList_Active_TextColor) !default;
-  $fd-menu-item-border-bottom: 0.0625rem solid var(--sapList_SelectionBorderColor) !default;
-
-  $fd-menu-item-background-color: var(--sapList_Background) !default;
-  $fd-menu-item-background-color-hover: var(--sapList_Hover_Background) !default;
-  $fd-menu-item-background-color-active: var(--sapList_Active_Background) !default;
-  $fd-menu-item-background-color-selected: var(--sapList_SelectionBackgroundColor) !default;
-  $fd-menu-item-background-color-selected-hover: var(--sapList_Hover_SelectionBackground) !default;
 
   // Menu Link
-  $fd-menu-link-height: 2.75rem !default;
-  $fd-menu-link-height-compact: 2rem !default;
-  $fd-menu-link-disabled-opacity: var(--sapContent_DisabledOpacity) !default;
-  $fd-menu-link-padding: 0.75rem 1rem 0.75rem 0.75rem !default; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each
-  $fd-menu-link-padding-mobile: 0.75rem 1rem !default; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each
-  $fd-menu-link-padding-compact: 0.375rem 0.75rem !default; // line-height=20px so 2rem or 32px-20px=12px/2= 6px or 0.375rem each
-
-  // Menu Icon
-  $fd-menu-icon-size: var(--sapFontLargeSize) !default;
-  $fd-menu-icon-sublist-size: var(--sapFontSmallSize) !default;
-  $fd-menu-icon-height: 1.25rem !default; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
   $fd-menu-icon-width: 2.25rem !default; // to account for item right padding of 16px or 1rem so 2.25rem-1rem = 1.25rem
   $fd-menu-icon-width-compact: 2rem !default;
   $fd-menu-icon-width-mobile: 2.75rem !default;
-  $fd-menu-icon-color: var(--sapContent_NonInteractiveIconColor) !default;
-  $fd-menu-icon-color-active: var(--sapList_Active_TextColor) !default;
-  $fd-menu-icon-color-selected: var(--sapContent_NonInteractiveIconColor) !default;
-
-  $fd-menu-icon-before-margin: 0 0 0 -0.75rem !default;
   $fd-menu-icon-after-margin: 0 -1rem 0 0 !default;
-
+  $fd-menu-icon-before-margin: 0 0 0 -0.75rem !default;
   $fd-menu-icon-before-margin-compact: 0 0 0 -0.5rem !default;
   $fd-menu-icon-after-margin-compact: 0 -0.75rem 0 0 !default;
-
   $fd-menu-icon-before-margin-mobile: 0 0 0 -1rem !default;
   $fd-menu-icon-after-margin-mobile: 0 -1rem 0 0 !default;
 
   // Menu Title
-  $fd-menu-title-font-size: var(--sapFontSize) !default;
   $fd-menu-title-font-family: var(--sapFontFamily) !default;
 
-  // Menu Shortcut
-  $fd-menu-shortcut-height: 1.25rem !default;
-  $fd-menu-shortcut-padding-left: 1rem !default;
-  $fd-menu-shortcut-font-size: var(--sapFontSize) !default;
-  $fd-menu-shortcut-color: var(--sapContent_NonInteractiveIconColor) !default;
-
-  // Separator
-  $fd-menu-separator-color: var(--sapGroup_ContentBorderColor) !default;
-  $fd-menu-separator-height: 0.0625rem !default;
+  // Menu Icon
+  $fd-menu-icon-color: var(--sapContent_NonInteractiveIconColor) !default;
 
   @mixin selected-menu-item() {
-    border-bottom: $fd-menu-item-border-bottom;
-    background-color: $fd-menu-item-background-color-selected;
+    border-bottom: 0.0625rem solid var(--sapList_SelectionBorderColor);
+    background-color: var(--sapList_SelectionBackgroundColor);
 
     .#{$block}__shortcut,
     .#{$block}__addon-before,
     .#{$block}__addon-after {
-      color: $fd-menu-icon-color-selected;
+      color: $fd-menu-icon-color;
     }
 
     @include fd-hover() {
       &:not(:active):not(.is-active) {
-        background-color: $fd-menu-item-background-color-selected-hover;
+        background-color: var(--sapList_Hover_SelectionBackground);
       }
     }
   }
@@ -88,7 +49,7 @@ $block: #{$fd-namespace}-menu;
   @include fd-reset();
 
   width: 100%;
-  max-width: $fd-menu-max-width;
+  max-width: 20rem;
 
   &__list,
   &__sublist {
@@ -98,7 +59,7 @@ $block: #{$fd-namespace}-menu;
     flex-wrap: wrap;
     flex-direction: column;
     list-style: none;
-    box-shadow: $fd-menu-box-shadow;
+    box-shadow: var(--sapContent_Shadow1);
     border-radius: $fd-menu-border-radius;
 
     &--no-shadow {
@@ -113,13 +74,13 @@ $block: #{$fd-namespace}-menu;
     top: 0;
     left: 100%;
     z-index: 2;
-    margin: $fd-menu-sublist-offset;
+    margin: 0.25rem 0 0 -0.25rem;
     width: 100%; // to fix IE issue
 
     @include fd-rtl() {
       right: 100%;
       left: initial;
-      margin: $fd-menu-sublist-offset-rtl;
+      margin: 0.25rem -0.25rem 0 0;
     }
 
     &[aria-hidden='true'] {
@@ -136,8 +97,8 @@ $block: #{$fd-namespace}-menu;
     @include fd-reset();
 
     width: 100%;
-    height: $fd-menu-separator-height;
-    background-color: $fd-menu-separator-color;
+    height: 0.0625rem;
+    background-color: var(--sapGroup_ContentBorderColor);
   }
 
   &__item {
@@ -145,7 +106,7 @@ $block: #{$fd-namespace}-menu;
 
     position: relative;
     border-radius: 0;
-    background-color: $fd-menu-item-background-color;
+    background-color: var(--sapList_Background);
 
     &:first-child {
       border-top-right-radius: $fd-menu-border-radius;
@@ -168,11 +129,11 @@ $block: #{$fd-namespace}-menu;
     align-items: center;
     width: 100%;
     border-radius: inherit;
-    height: $fd-menu-link-height;
-    padding: $fd-menu-link-padding;
+    height: 2.75rem;
+    padding: 0.75rem 1rem 0.75rem 0.75rem; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each;
 
     @include fd-hover() {
-      background-color: $fd-menu-item-background-color-hover;
+      background-color: var(--sapList_Hover_Background);
     }
 
     @include fd-selected() {
@@ -181,7 +142,7 @@ $block: #{$fd-namespace}-menu;
 
     @include fd-active() {
       color: $fd-menu-item-color-active;
-      background-color: $fd-menu-item-background-color-active;
+      background-color: var(--sapList_Active_Background);
 
       .#{$block}__title {
         color: $fd-menu-item-color-active;
@@ -190,13 +151,13 @@ $block: #{$fd-namespace}-menu;
       .#{$block}__shortcut,
       .#{$block}__addon-before,
       .#{$block}__addon-after {
-        color: $fd-menu-icon-color-active;
+        color: var(--sapList_Active_TextColor);
       }
     }
 
     @include fd-disabled() {
       pointer-events: none;
-      opacity: $fd-menu-link-disabled-opacity;
+      opacity: var(--sapContent_DisabledOpacity);
     }
 
     &.has-child.is-expanded,
@@ -212,8 +173,8 @@ $block: #{$fd-namespace}-menu;
     @include fd-ellipsis();
 
     width: 100%;
-    color: $fd-menu-item-color;
-    font-size: $fd-menu-title-font-size;
+    color: var(--sapList_TextColor);
+    font-size: var(--sapFontSize);
     font-family: $fd-menu-title-font-family;
   }
 
@@ -225,8 +186,8 @@ $block: #{$fd-namespace}-menu;
     color: $fd-menu-icon-color;
     width: $fd-menu-icon-width;
     min-width: $fd-menu-icon-width;
-    height: $fd-menu-icon-height;
-    font-size: $fd-menu-icon-size;
+    height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem;
+    font-size: var(--sapFontLargeSize);
     background-color: transparent;
   }
 
@@ -249,7 +210,7 @@ $block: #{$fd-namespace}-menu;
     &--submenu {
       @include fd-icon("navigation-right-arrow", "s");
 
-      font-size: $fd-menu-icon-sublist-size;
+      font-size: var(--sapFontSmallSize);
 
       @include fd-rtl() {
         @include fd-icon("navigation-left-arrow", "s");
@@ -265,9 +226,9 @@ $block: #{$fd-namespace}-menu;
     flex-shrink: 0;
     font-weight: normal;
     font-family: $fd-menu-title-font-family;
-    color: $fd-menu-shortcut-color;
-    font-size: $fd-menu-shortcut-font-size;
-    padding-left: $fd-menu-shortcut-padding-left;
+    color: var(--sapContent_NonInteractiveIconColor);
+    font-size: var(--sapFontSize);
+    padding-left: 1rem;
   }
 
   &--full-width {
@@ -276,8 +237,8 @@ $block: #{$fd-namespace}-menu;
 
   &--compact {
     .#{$block}__link {
-      padding: $fd-menu-link-padding-compact;
-      height: $fd-menu-link-height-compact;
+      padding: 0.375rem 0.75rem; // line-height=20px so 2rem or 32px-20px=12px/2= 6px or 0.375rem each;
+      height: 2rem;
 
       .#{$block}__addon-before,
       .#{$block}__addon-after {
@@ -319,7 +280,7 @@ $block: #{$fd-namespace}-menu;
       }
 
       .#{$block}__link {
-        padding: $fd-menu-link-padding-mobile;
+        padding: 0.75rem 1rem; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each;
       }
 
       .#{$block}__addon-before,
