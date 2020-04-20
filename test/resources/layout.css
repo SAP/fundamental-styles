@@ -303,3 +303,10 @@ body {
   background-color: burlywood;
 }
 
+.form-item-playground {
+  margin: 0;
+  padding: 0;
+  background-color: thistle;
+  min-height: 1.5rem;
+  min-width: 1.5rem;
+}

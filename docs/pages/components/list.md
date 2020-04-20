@@ -14,56 +14,34 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 ## Standard List
 
 {% capture standard-list %}
-<ul class="fd-list">
-  <li tabindex="0"  class="fd-list__item is-selected">
+<ul class="fd-list" role="list">
+  <li role="listitem" tabindex="0"  class="fd-list__item is-selected">
       <span class="fd-list__title">List item 1</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 2</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 3</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 4</span>
   </li>
 </ul>
 
 <br />
-<h4>With links</h4>
-<ul class="fd-list fd-list--links">
-  <li class="fd-list__item">
-      <a tabindex="0" class="fd-list__link" href="#">
-        <span class="fd-list__title">List item 1</span>
-      </a>
-  </li>
-  <li class="fd-list__item">
-      <a tabindex="0" class="fd-list__link" href="#">
-        <span class="fd-list__icon sap-icon--history"></span>
-        <span class="fd-list__title">List item 2</span>
-      </a>
-  </li>
-  <li class="fd-list__item">
-      <a tabindex="0" class="fd-list__link" href="#">
-        <span class="fd-list__title">List item 3</span>
-        <span class="fd-list__icon sap-icon--navigation-right-arrow"></span>
-      </a>
-  </li>
-</ul>
-
-<br />
 <h4>Compact Size</h4>
-<ul class="fd-list fd-list--compact">
-  <li tabindex="0"  class="fd-list__item">
+<ul class="fd-list fd-list--compact" role="list">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 2</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 3</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 4</span>
   </li>
 </ul>
@@ -71,23 +49,48 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 
 {% include display-component.html component=standard-list %}
 
+## Standard List With Links
+{% capture list-with-links %}
+<ul class="fd-list fd-list--links" role="list">
+  <li role="listitem" class="fd-list__item">
+      <a tabindex="0" class="fd-list__link" href="#">
+        <span class="fd-list__title">List item 1</span>
+      </a>
+  </li>
+  <li role="listitem" class="fd-list__item">
+      <a tabindex="0" class="fd-list__link" href="#">
+        <span class="fd-list__icon sap-icon--history"></span>
+        <span class="fd-list__title">List item 2</span>
+      </a>
+  </li>
+  <li role="listitem" class="fd-list__item">
+      <a tabindex="0" class="fd-list__link" href="#">
+        <span class="fd-list__title">List item 3</span>
+        <span class="fd-list__icon sap-icon--map"></span>
+      </a>
+  </li>
+</ul>
+{% endcapture %}
+
+{% include display-component.html component=list-with-links%}
+
 ## Secondary Data
 
 {% capture secondary-data %}
-<ul class="fd-list">
-  <li tabindex="0"  class="fd-list__item is-selected">
+<ul class="fd-list" role="list">
+  <li role="listitem" tabindex="0"  class="fd-list__item is-selected">
       <span class="fd-list__title">List item 1</span>
       <span class="fd-list__secondary fd-has-color-status-1">Positive</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 2</span>
       <span class="fd-list__secondary fd-has-color-status-3">Negative</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 3</span>
       <span class="fd-list__secondary fd-has-color-status-1">Positive</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 4</span>
       <span class="fd-list__secondary fd-has-color-status-3">Negative</span>
   </li>
@@ -99,37 +102,22 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 ## Icons
 
 {% capture list-with-icons %}
-<ul class="fd-list">
-  <li tabindex="0"  class="fd-list__item is-selected">
+<ul class="fd-list" role="list">
+  <li role="listitem" tabindex="0"  class="fd-list__item is-selected">
       <span class="fd-list__icon sap-icon--cart"></span>
       <span class="fd-list__title">List item 1</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__icon sap-icon--wrench"></span>
       <span class="fd-list__title">List item 2</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
+      <span class="fd-list__title">List item 3</span>
       <span class="fd-list__icon sap-icon--lightbulb"></span>
-      <span class="fd-list__title">List item 3</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
-      <span class="fd-list__icon sap-icon--history"></span>
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 4</span>
-  </li>
-</ul>
-<br /><br />
-<ul class="fd-list">
-  <li tabindex="0"  class="fd-list__item is-selected">
-      <span class="fd-list__title">List item 1</span>
-      <span class="fd-list__icon sap-icon--navigation-right-arrow"></span>
-  </li>
-  <li tabindex="0"  class="fd-list__item">
-      <span class="fd-list__title">List item 2</span>
-      <span class="fd-list__icon sap-icon--navigation-right-arrow"></span>
-  </li>
-  <li tabindex="0"  class="fd-list__item">
-      <span class="fd-list__title">List item 3</span>
-      <span class="fd-list__icon sap-icon--navigation-right-arrow"></span>
+      <span class="fd-list__icon sap-icon--history"></span>
   </li>
 </ul>
 {% endcapture %}
@@ -139,29 +127,29 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 ## Group Header
 
 {% capture list-with-group-header %}
-<ul class="fd-list">
-  <li tabindex="0"  class="fd-list__group-header">
+<ul class="fd-list" role="list">
+  <li role="listitem" tabindex="0"  class="fd-list__group-header">
     Group Header 1
   </li>
-  <li tabindex="0"  class="fd-list__item is-selected">
+  <li role="listitem" tabindex="0"  class="fd-list__item is-selected">
       <span class="fd-list__title">List item 1</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 2</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 3</span>
   </li>
-  <li tabindex="0"  class="fd-list__group-header">
+  <li role="listitem" tabindex="0"  class="fd-list__group-header">
     Group Header 2
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 4</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 5</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 6</span>
   </li>
 </ul>
@@ -172,20 +160,20 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 ## Footer
 
 {% capture list-with-footer %}
-<ul class="fd-list">
-  <li tabindex="0"  class="fd-list__item">
+<ul class="fd-list" role="list">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
   </li>
-  <li tabindex="0"  class="fd-list__item is-selected">
+  <li role="listitem" tabindex="0"  class="fd-list__item is-selected">
       <span class="fd-list__title">List item 2</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 3</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 4</span>
   </li>
-  <li tabindex="0"  class="fd-list__footer">
+  <li role="listitem" tabindex="0"  class="fd-list__footer">
     Footer text
   </li>
 </ul>
@@ -196,17 +184,17 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 ## Borderless
 
 {% capture list-without-borders %}
-<ul class="fd-list fd-list--no-border">
-  <li tabindex="0"  class="fd-list__item">
+<ul class="fd-list fd-list--no-border" role="list">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
   </li>
-  <li tabindex="0"  class="fd-list__item is-selected">
+  <li role="listitem" tabindex="0"  class="fd-list__item is-selected">
       <span class="fd-list__title">List item 2</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 3</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="fd-list__title">List item 4</span>
   </li>
 </ul>
@@ -218,56 +206,26 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 
 {% capture list-selection %}
 
-<ul class="fd-list">
-  <li tabindex="0"  class="fd-list__item">
+<ul class="fd-list" role="list">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox" id="Ai4ez1">
-          <label class="fd-checkbox__label" for="Ai4ez1"></label>
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez1"></label>
       </div>
       <span class="fd-list__title">List item 1</span>
   </li>
-  <li tabindex="0"  class="fd-list__item is-selected">
+  <li role="listitem" tabindex="0"  class="fd-list__item is-selected">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox" id="Ai4ez2">
-          <label class="fd-checkbox__label" for="Ai4ez2"></label>
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez2"></label>
       </div>
       <span class="fd-list__title">List item 2</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox" id="Ai4ez3">
-          <label class="fd-checkbox__label" for="Ai4ez3"></label>
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez3"></label>
       </div>
-      <span class="fd-list__title">List item 3</span>
-  </li>
-</ul>
-
-<br><br>
-<h4>With Icons</h4>
-
-<ul class="fd-list">
-  <li tabindex="0"  class="fd-list__item is-selected">
-      <div class="fd-form-item fd-list__form-item">
-          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez4a">
-          <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez4a"></label>
-      </div>
-      <span class="fd-list__icon sap-icon--cart"></span>
-      <span class="fd-list__title">List item 1</span>
-  </li>
-  <li tabindex="0"  class="fd-list__item">
-      <div class="fd-form-item fd-list__form-item">
-          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez4b">
-          <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez4b"></label>
-      </div>
-      <span class="fd-list__icon sap-icon--wrench"></span>
-      <span class="fd-list__title">List item 2</span>
-  </li>
-  <li tabindex="0"  class="fd-list__item">
-      <div class="fd-form-item fd-list__form-item">
-          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez4c">
-          <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez4c"></label>
-      </div>
-      <span class="fd-list__icon sap-icon--lightbulb"></span>
       <span class="fd-list__title">List item 3</span>
   </li>
 </ul>
@@ -275,25 +233,25 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 <br><br>
 <h4>Compact Size</h4>
 
-<ul class="fd-list fd-list--compact fd-list--no-border">
-  <li tabindex="0"  class="fd-list__item">
+<ul class="fd-list fd-list--compact fd-list--no-border" role="list">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez4">
-          <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez4"></label>
+          <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez4"></label>
       </div>
       <span class="fd-list__title">List item 1</span>
   </li>
-  <li tabindex="0"  class="fd-list__item is-selected">
+  <li role="listitem" tabindex="0"  class="fd-list__item is-selected">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez5">
-          <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez5"></label>
+          <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez5"></label>
       </div>
       <span class="fd-list__title">List item 2</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6">
-          <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6"></label>
+          <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6"></label>
       </div>
       <span class="fd-list__title">List item 3</span>
   </li>
@@ -302,25 +260,25 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 <br><br>
 <h4>Borderless Design</h4>
 
-<ul class="fd-list fd-list--no-border">
-  <li tabindex="0"  class="fd-list__item">
+<ul class="fd-list fd-list--no-border" role="list">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox" id="Ai4ez7">
-          <label class="fd-checkbox__label" for="Ai4ez7"></label>
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez7"></label>
       </div>
       <span class="fd-list__title">List item 1</span>
   </li>
-  <li tabindex="0"  class="fd-list__item is-selected">
+  <li role="listitem" tabindex="0"  class="fd-list__item is-selected">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox" id="Ai4ez8">
-          <label class="fd-checkbox__label" for="Ai4ez8"></label>
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez8"></label>
       </div>
       <span class="fd-list__title">List item 2</span>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox" id="Ai4ez9">
-          <label class="fd-checkbox__label" for="Ai4ez9"></label>
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez9"></label>
       </div>
       <span class="fd-list__title">List item 3</span>
   </li>
@@ -335,21 +293,21 @@ Add the `fd-list--byline` modifier class for a Standard List with Byline (descri
 For a two-column byline you need to add the `fd-list__byline--2-col` modifier class to the element. The first text item (`fd-list__byline-left`) is a standard text (description) and takes 60% of the available space. The second text item (`fd-list__byline-right`) could be a standard text or semantic (status) and takes the remaining 40% of the available space. For semantic (status) use a modifier class (`fd-list__byline-right--* `) to represent `neutral`, `positive`, `critical`, `negative` and `informative` status.
 
 {% capture list-byline %}
-<ul class="fd-list fd-list--byline">
-  <li tabindex="0"  class="fd-list__item">
+<ul class="fd-list fd-list--byline" role="list">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="sap-icon--activate fd-list__thumbnail"></span>
       <div class="fd-list__content">
         <div class="fd-list__title">Title</div>
         <div class="fd-list__byline">Byline (description)</div>
       </div>
   </li>
-  <li tabindex="0"  class="fd-list__item is-selected">
+  <li role="listitem" tabindex="0"  class="fd-list__item is-selected">
       <span class="sap-icon--employee fd-list__thumbnail"></span>
       <div class="fd-list__content">
         <div class="fd-list__title">List Item With No Byline</div>
       </div>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
 style="background-image: url('https://placeimg.com/400/400/nature');"></span>
     <div class="fd-list__content">
@@ -360,7 +318,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         </div>
     </div>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <div class="fd-list__content">
         <div class="fd-list__title">Text-Only List Item</div>
         <div class="fd-list__byline">Byline (description)</div>
@@ -371,8 +329,8 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 <br><br>
 <h4>Compact Size</h4>
 
-<ul class="fd-list fd-list--compact fd-list--byline">
-  <li tabindex="0"  class="fd-list__item">
+<ul class="fd-list fd-list--compact fd-list--byline" role="list">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
     <span class="sap-icon--e-care fd-list__thumbnail"></span>
     <div class="fd-list__content">
         <div class="fd-list__title">List Item With Two-Column Byline and Semantic Byline Second Item</div>
@@ -382,7 +340,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         </div>
     </div>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
     <span class="sap-icon--globe fd-list__thumbnail"></span>
     <div class="fd-list__content">
         <div class="fd-list__title">List Item With Two-Column Byline and Semantic Byline Second Item</div>
@@ -392,7 +350,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         </div>
     </div>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
     <span class="sap-icon--manager fd-list__thumbnail"></span>
     <div class="fd-list__content">
         <div class="fd-list__title">List Item With Two-Column Byline and Semantic Byline Second Item</div>
@@ -402,7 +360,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         </div>
     </div>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
     <span class="sap-icon--loan fd-list__thumbnail"></span>
     <div class="fd-list__content">
         <div class="fd-list__title">List Item With Two-Column Byline and Semantic Byline Second Item</div>
@@ -412,7 +370,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         </div>
     </div>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
     <span class="sap-icon--home-share fd-list__thumbnail"></span>
     <div class="fd-list__content">
         <div class="fd-list__title">List Item With Two-Column Byline and Semantic Byline Second Item</div>
@@ -432,21 +390,21 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 ## Standard List with Byline Borderless Design
 
 {% capture list-byline-borderless %}
-<ul class="fd-list fd-list--no-border fd-list--byline">
-  <li tabindex="0"  class="fd-list__item">
+<ul class="fd-list fd-list--no-border fd-list--byline" role="list">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="sap-icon--activate fd-list__thumbnail"></span>
       <div class="fd-list__content">
         <div class="fd-list__title">Title</div>
         <div class="fd-list__byline">Byline (description)</div>
       </div>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <span class="sap-icon--employee fd-list__thumbnail"></span>
       <div class="fd-list__content">
         <div class="fd-list__title">List Item With No Byline</div>
       </div>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
 style="background-image: url('https://placeimg.com/400/400/nature');"></span>
     <div class="fd-list__content">
@@ -457,7 +415,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         </div>
     </div>
   </li>
-  <li tabindex="0"  class="fd-list__item is-selected">
+  <li role="listitem" tabindex="0"  class="fd-list__item is-selected">
     <span class="sap-icon--world fd-list__thumbnail"></span>
     <div class="fd-list__content">
         <div class="fd-list__title">List Item With Two-Column Byline and Semantic Byline Second Item</div>
@@ -476,11 +434,11 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 ## Standard List with Byline and Selection
 
 {% capture list-byline-selection %}
-<ul class="fd-list fd-list--byline">
-  <li tabindex="0"  class="fd-list__item">
+<ul class="fd-list fd-list--byline" role="list">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox" id="Ai4ez6111">
-          <label class="fd-checkbox__label" for="Ai4ez6111"></label>
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6111"></label>
       </div>
       <span class="sap-icon--activate fd-list__thumbnail"></span>
       <div class="fd-list__content">
@@ -488,10 +446,10 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         <span class="fd-list__byline">Byline (description)</span>
       </div>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
     <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox" id="Ai4ez6112">
-          <label class="fd-checkbox__label" for="Ai4ez6112"></label>
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6112"></label>
       </div>
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
 style="background-image: url('https://placeimg.com/400/400/nature');"></span>
@@ -503,10 +461,10 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         </div>
     </div>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox" id="Ai4ez6113">
-          <label class="fd-checkbox__label" for="Ai4ez6113"></label>
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6113"></label>
       </div>
       <div class="fd-list__content">
         <div class="fd-list__title">Text-Only List Item</div>
@@ -518,11 +476,11 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 <br><br>
 <h4>Compact Size</h4>
 
-<ul class="fd-list fd-list--compact fd-list--byline">
-  <li tabindex="0"  class="fd-list__item">
+<ul class="fd-list fd-list--compact fd-list--byline" role="list">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6115">
-          <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6115"></label>
+          <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6115"></label>
       </div>
       <span class="sap-icon--activate fd-list__thumbnail"></span>
       <div class="fd-list__content">
@@ -530,10 +488,10 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         <span class="fd-list__byline">Byline (description)</span>
       </div>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
     <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6116">
-          <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6116"></label>
+          <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6116"></label>
       </div>
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
 style="background-image: url('https://placeimg.com/400/400/nature');"></span>
@@ -545,10 +503,10 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         </div>
     </div>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6117">
-          <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6117"></label>
+          <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6117"></label>
       </div>
       <div class="fd-list__content">
         <div class="fd-list__title">Text-Only List Item</div>
@@ -560,11 +518,11 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 
 <br><br>
 <h4>Borderless Design</h4>
-<ul class="fd-list fd-list--no-border fd-list--byline">
-  <li tabindex="0"  class="fd-list__item">
+<ul class="fd-list fd-list--no-border fd-list--byline" role="list">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox" id="Ai4ez6118">
-          <label class="fd-checkbox__label" for="Ai4ez6118"></label>
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6118"></label>
       </div>
       <span class="sap-icon--activate fd-list__thumbnail"></span>
       <div class="fd-list__content">
@@ -572,10 +530,10 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         <span class="fd-list__byline">Byline (description)</span>
       </div>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
     <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox" id="Ai4ez6119">
-          <label class="fd-checkbox__label" for="Ai4ez6119"></label>
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6119"></label>
       </div>
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
 style="background-image: url('https://placeimg.com/400/400/nature');"></span>
@@ -587,10 +545,10 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         </div>
     </div>
   </li>
-  <li tabindex="0"  class="fd-list__item">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox" id="Ai4ez61110">
-          <label class="fd-checkbox__label" for="Ai4ez61110"></label>
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez61110"></label>
       </div>
       <div class="fd-list__content">
         <div class="fd-list__title">Text-Only List Item</div>

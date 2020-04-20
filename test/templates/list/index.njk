@@ -158,6 +158,17 @@
     {% endset %}
     {{ format(example) }}
 
+    <h2>Selection</h2>
+    {% set example %}
+        {%- for modifier in modifiers %}
+            {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+            {{ list(list_with_icons, toggles={"selection": true}, modifier=[modifier]) }}
+        {%- endfor %}
+    {% endset %}
+    {{ format(example) }}
+
     <h2>Icons (Before & After)</h2>
     {% set example %}
         {%- for modifier in modifiers %}
@@ -310,6 +321,17 @@
                 <h3>{{ modifier }}</h3>
             {%- endif %}
             {{ list(byline_semantic_list, toggles={"byline2col": true, "byline": true}, modifier=[modifier]) }}
+        {%- endfor %}
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>Standard List with Byline, Semantic Byline Second Item and Selection</h2>
+    {% set example %}
+        {%- for modifier in bylineModifiers %}
+            {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+            {{ list(byline_semantic_list, toggles={"byline2col": true, "byline": true, "selection": true}, modifier=[modifier]) }}
         {%- endfor %}
     {% endset %}
     {{ format(example) }}

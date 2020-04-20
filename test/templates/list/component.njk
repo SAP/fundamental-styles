@@ -32,6 +32,9 @@
     {%- if toggles.multiInput %}
     	<label class="fd-list__label">
 	{%- endif %}
+    {%- if toggles.selection %}
+        <div class="form-item-playground fd-list__form-item"></div>
+    {%- endif %}
 	{%- if toggles.useIconBefore %}
         <span class="fd-list__icon">{{item.iconBefore}}</span>
     {%- endif %}

@@ -84,6 +84,10 @@ $block: #{$fd-namespace}-checkbox;
       }
     }
 
+    &:focus {
+      outline: none;
+    }
+
     &:empty {
       padding: $fd-checkbox-margin;
       margin: 0;

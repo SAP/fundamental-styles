@@ -30,6 +30,7 @@
 }
 
 $block: #{$fd-namespace}-list;
+$form-item: #{$fd-namespace}-form-item;
 
 .#{$block} {
   $fd-list-horizontal-padding: 1rem;
@@ -37,6 +38,9 @@ $block: #{$fd-namespace}-list;
   $fd-dropdown-vertical-compact-padding: 0.5rem;
   $fd-checkbox-dimensions: 1.375rem;
   $fd-list-last-item-bottom-border-radius: var(--sapElement_BorderCornerRadius) !default;
+  $fd-list-form-item-margin-x: -1rem;
+  $fd-list-large-font-size: var(--sapFontLargeSize);
+  $fd-list-normal-font-size: var(--sapFontSize);
 
   // STANDARD LIST WITH BYLINE
   $fd-list-byline-thumbnail-dimensions: 3rem !default;
@@ -48,6 +52,7 @@ $block: #{$fd-namespace}-list;
   $fd-list-byline-item-padding-x: 1rem !default;
   $fd-list-byline-item-padding-y: 1rem !default;
   $fd-list-byline-borderless-item-padding-y: 0.5rem !default;
+  $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
   $fd-list-form-item-margin-top: -0.5rem !default;
 
   $semantic-color: (
@@ -106,11 +111,12 @@ $block: #{$fd-namespace}-list;
     }
   }
 
-  &__form-item {
-    margin-left: -1rem;
+  &__form-item,
+  &__form-item.#{$form-item} {
+    margin-left: $fd-list-form-item-margin-x;
 
     @include fd-rtl() {
-      margin-right: -1rem;
+      margin-right: $fd-list-form-item-margin-x;
       margin-left: 0;
     }
   }
@@ -126,11 +132,11 @@ $block: #{$fd-namespace}-list;
 
   &__title {
     flex: 3 3 10%;
-    font-size: var(--sapFontLargeSize);
+    font-size: $fd-list-large-font-size;
   }
 
   &__secondary {
-    font-size: var(--sapFontSize);
+    font-size: $fd-list-normal-font-size;
     flex: 2 2 10%;
     text-align: right;
     padding-left: 1rem;
@@ -209,7 +215,7 @@ $block: #{$fd-namespace}-list;
     border-bottom: var(--sapList_BorderWidth) solid var(--sapList_GroupHeaderBorderColor);
     color: var(--sapList_GroupHeaderTextColor);
     align-items: flex-end;
-    font-size: var(--sapFontSize);
+    font-size: $fd-list-normal-font-size;
     font-weight: bold;
     height: 2.75rem;
     line-height: 2rem;
@@ -218,7 +224,7 @@ $block: #{$fd-namespace}-list;
   &__footer {
     background: var(--sapList_FooterBackground);
     color: var(--sapList_FooterTextColor);
-    font-size: var(--sapFontSize);
+    font-size: $fd-list-normal-font-size;
     height: 2rem;
   }
 
@@ -263,11 +269,11 @@ $block: #{$fd-namespace}-list;
     }
 
     .#{$block}__title {
-      font-size: var(--sapFontSize);
+      font-size: $fd-list-normal-font-size;
     }
 
     .#{$block}__icon {
-      font-size: var(--sapFontLargeSize);
+      font-size: $fd-list-large-font-size;
     }
   }
 
@@ -393,7 +399,7 @@ $block: #{$fd-namespace}-list;
 
     .#{$block}__title,
     .#{$block}__secondary {
-      font-size: var(--sapFontSize);
+      font-size: $fd-list-normal-font-size;
       white-space: normal;
       flex: auto;
 
@@ -443,12 +449,13 @@ $block: #{$fd-namespace}-list;
       align-items: flex-start;
     }
 
-    .#{$block}__form-item {
-      margin-left: -1rem;
+    .#{$block}__form-item,
+    .#{$block}__form-item.#{$form-item} {
+      margin-left: $fd-list-form-item-margin-x;
       margin-top: -0.6875rem;
 
       @include fd-rtl() {
-        margin-right: -1rem;
+        margin-right: $fd-list-form-item-margin-x;
         margin-left: 0;
       }
     }
@@ -482,22 +489,22 @@ $block: #{$fd-namespace}-list;
       }
 
       min-height: $fd-list-byline-thumbnail-dimensions;
+      min-width: $fd-list-byline-thumbnail-dimensions;
       height: 100%;
       width: 100%;
-      overflow: hidden;
       padding: 0.125rem 0;
     }
 
     .#{$block}__title {
-      font-size: var(--sapFontLargeSize);
+      font-size: $fd-list-large-font-size;
     }
 
     .#{$block}__byline {
       @include fd-reset();
       @include fd-ellipsis();
 
-      font-size: var(--sapFontSize);
-      color: var(--sapContent_LabelColor);
+      font-size: $fd-list-normal-font-size;
+      color: $fd-list-byline-section-text-color;
       line-height: $fd-list-byline-text-line-height;
 
       &--2-col {
@@ -510,7 +517,7 @@ $block: #{$fd-namespace}-list;
       @include fd-ellipsis();
 
       width: 60%;
-      color: var(--sapContent_LabelColor);
+      color: $fd-list-byline-section-text-color;
       padding-right: $fd-list-byline-elements-spacing;
       line-height: $fd-list-byline-text-line-height;
 
@@ -525,7 +532,7 @@ $block: #{$fd-namespace}-list;
       @include fd-ellipsis();
 
       width: 40%;
-      color: var(--sapContent_LabelColor);
+      color: $fd-list-byline-section-text-color;
       padding-left: $fd-list-byline-elements-spacing;
       line-height: $fd-list-byline-text-line-height;
 
@@ -543,10 +550,11 @@ $block: #{$fd-namespace}-list;
 
     &.#{$block}--compact {
       .#{$block}__title {
-        font-size: var(--sapFontSize);
+        font-size: $fd-list-normal-font-size;
       }
 
-      .#{$block}__form-item {
+      .#{$block}__form-item,
+      .#{$block}__form-item.#{$form-item} {
         margin-top: $fd-list-form-item-margin-top;
       }
     }
@@ -567,7 +575,8 @@ $block: #{$fd-namespace}-list;
       }
 
       .#{$block}__item:not(:first-child) {
-        .#{$block}__form-item {
+        .#{$block}__form-item,
+        .#{$block}__form-item.#{$form-item} {
           margin-top: $fd-list-form-item-margin-top;
 
           label {
