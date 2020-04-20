@@ -72,4 +72,42 @@
 {%- endset %}
 {{ format(example) }}
 
+<h3>--placeholder</h3>
+{%- set example %}
+  {% for size in sizes %}
+    {{  avatar(
+            properties={
+                    icon: "money-bills"
+            },
+            modifier={
+                block: [size, "placeholder"]
+            },
+            aria={
+              role: "presentation"
+            }
+        )
+    }}
+  {%- endfor %}
+{%- endset %}
+{{ format(example) }}
+
+<h3>--tile</h3>
+{%- set example %}
+  {% for size in sizes %}
+    {{  avatar(
+            properties={
+                    icon: "money-bills"
+            },
+            modifier={
+                block: [size, "tile"]
+            },
+            aria={
+              role: "presentation"
+            }
+        )
+    }}
+  {%- endfor %}
+{%- endset %}
+{{ format(example) }}
+
 {% endblock %}

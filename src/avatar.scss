@@ -6,29 +6,27 @@
 $block: #{$fd-namespace}-avatar;
 
 .#{$block} {
-  // LOCAL VARS (set all themeable properties, always include !default)
-  $fd-const-ratio: 1rem;
-  $fd-avatar-sizes: (
-    xs: $fd-const-ratio * 2,
-    s: $fd-const-ratio * 3,
-    m: $fd-const-ratio * 4,
-    l: $fd-const-ratio * 5,
-    xl: $fd-const-ratio * 7,
-  ) !default;
-  $fd-avatar-border-radius: $fd-border-radius !default;
+  $fd-avatar-border-radius: 50% !default;
   $fd-avatar-border-fade: rgba(0, 0, 0, 0.5) !default; // Should be fade(var(--sapContent_ShadowColor), 10);
-  $fd-avatar-color: var(--sapContent_ContrastTextColor) !default;
   $fd-avatar-background-color: var(--sapAccentColor6) !default;
   $fd-zoom-icon-s: 1.125rem !default;
   $fd-zoom-icon-l: 1.25rem !default;
   $fd-zoom-icon-xl: 1.75rem !default;
+  $fd-const-ratio: 1rem;
+  $fd-avatar-sizes: (
+    "xs": ("ratio": ($fd-const-ratio * 2), "font-size": 1rem, "zoomIconDimensions": $fd-zoom-icon-s, "offset":  -0.125rem, "beforeFontSize": 0.75rem, "fontStretch": condensed),
+    "s": ("ratio": ($fd-const-ratio * 3), "font-size": 1.125rem, "zoomIconDimensions": $fd-zoom-icon-s, "offset":  -0.125rem, "beforeFontSize": 0.75rem, "fontStretch": condensed),
+    "m": ("ratio": ($fd-const-ratio * 4), "font-size": 1.5rem, "zoomIconDimensions": $fd-zoom-icon-s, "offset":  -0.125rem, "beforeFontSize": 0.75rem, "fontStretch": normal),
+    "l": ("ratio": ($fd-const-ratio * 5), "font-size": 2.25rem, "zoomIconDimensions": $fd-zoom-icon-l, "offset":  -0.1875rem, "beforeFontSize": 0.875rem, "fontStretch": normal),
+    "xl": ("ratio": ($fd-const-ratio * 7), "font-size": 3rem, "zoomIconDimensions": $fd-zoom-icon-xl, "offset":  -0.25rem, "beforeFontSize": 1rem, "fontStretch": normal)
+  );
 
   // BLOCK BASE *******************************************
   @at-root {
     [class*="#{$block}"] {
       @include fd-reset();
 
-      color: $fd-avatar-color;
+      color: var(--sapContent_ContrastTextColor);
       background-color: $fd-avatar-background-color;
       display: inline-block;
       position: relative;
@@ -37,111 +35,78 @@ $block: #{$fd-namespace}-avatar;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 50%;
-      border-radius: $fd-avatar-border-radius;
+      border-radius: var(--sapElement_BorderCornerRadius);
     }
   }
   // BLOCK MODIFIERS ************
   // sizes
-  @each $size, $value in $fd-avatar-sizes {
-    &.#{$block}--#{$size} {
+  @each $set-name, $size-set in $fd-avatar-sizes {
+    &--#{$set-name} {
       @include fd-reset-spacing();
 
-      width: $value;
-      height: $value;
-      max-width: $value;
-      max-height: $value;
-      min-width: $value;
-      min-height: $value;
-      font-weight: 400;
+      width: map_get($size-set, "ratio");
+      height: map_get($size-set, "ratio");
+      max-width: map_get($size-set, "ratio");
+      max-height: map_get($size-set, "ratio");
+      min-width: map_get($size-set, "ratio");
+      min-height: map_get($size-set, "ratio");
+      line-height: map_get($size-set, "ratio");
+      font-size: map_get($size-set, "font-size");
+      font-stretch: map_get($size-set, "fontStretch");
 
-      @if $size == xs or $size == s or $size == m {
-        .#{$block}__zoom-icon {
-          width: $fd-zoom-icon-s;
-          height: $fd-zoom-icon-s;
-          bottom: -0.125rem;
-          right: -0.125rem;
+      .#{$block}__zoom-icon {
+        width: map_get($size-set, "zoomIconDimensions");
+        height: map_get($size-set, "zoomIconDimensions");
+        bottom: map_get($size-set, "offset");
+        right: map_get($size-set, "offset");
 
-          &::before {
-            font-size: 0.75rem;
-          }
+        &::before {
+          font-size: map_get($size-set, "beforeFontSize");
         }
       }
-
-      @if $size == xs or $size == s {
-        font-stretch: condensed;
-      }
-
-      @if $size == xs {
-        font-size: 1rem;
-      }
-
-      @if $size == s {
-        font-size: $fd-zoom-icon-s;
-      }
-
-      @if $size == m {
-        font-size: 1.5rem;
-      }
-
-      @if $size == l {
-        font-size: 2.25rem;
-
-        .#{$block}__zoom-icon {
-          width: $fd-zoom-icon-l;
-          height: $fd-zoom-icon-l;
-          bottom: -0.1875rem;
-          right: -0.1875rem;
-
-          &::before {
-            font-size: 0.875rem;
-          }
-        }
-      }
-
-      @if $size == xl {
-        font-size: 3rem;
-
-        .#{$block}__zoom-icon {
-          width: $fd-zoom-icon-xl;
-          height: $fd-zoom-icon-xl;
-          bottom: -0.25rem;
-          right: -0.25rem;
-
-          &::before {
-            font-size: 1rem;
-            line-height: $fd-zoom-icon-xl;
-          }
-        }
-      }
-
-      line-height: $value;
     }
   }
+
   // circle
   &.#{$block}--circle {
-    border-radius: 50%;
+    border-radius: $fd-avatar-border-radius;
 
     .#{$block}__zoom-icon {
       bottom: 0;
       right: 0;
     }
   }
+
   // thumbnail
   &.#{$block}--thumbnail {
     text-indent: -200%;
     overflow: hidden;
   }
+
   // background
   &.#{$block}--transparent {
-    color: var(--fd-color-text-1);
     background-color: transparent;
+    color: var(--sapContent_IconColor);
   }
+
+  // placeholder background
+  &.#{$block}--placeholder {
+    background-color: var(--sapContent_ImagePlaceholderBackground);
+  }
+
+  // tile background
+  &.#{$block}--tile {
+    background-color: var(--sapTile_IconColor);
+  }
+
   // zoom icon
   &__zoom-icon {
+    @include fd-flex-center();
+
     background-color: var(--sapLinkColor);
-    color: var(--fd-avatar-color);
+    color: var(--sapContent_ContrastIconColor);
     position: absolute;
-    border-radius: 50%;
+    border-radius: $fd-avatar-border-radius;
   }
   // optional border
   &.#{$block}--border {

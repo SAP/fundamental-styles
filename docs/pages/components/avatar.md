@@ -105,6 +105,36 @@ A transparent style can be rendered using the `--transparent` modifier.
 {% include display-component.html component=avatar-transparent %}
 <br>
 
+## Placeholder Background
+
+An Avatar with placeholder background can be rendered using the `--placeholder` modifier.
+
+{% capture avatar-placeholder %}
+<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills" role="presentation"></span>
+
+{% endcapture %}
+{% include display-component.html component=avatar-placeholder %}
+<br>
+
+## TileIcon Background
+
+An Avatar with TileIcon background can be rendered using the `--tile` modifier.
+
+{% capture avatar-tile %}
+<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--tile sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--tile sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--tile sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--tile sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile sap-icon--money-bills" role="presentation"></span>
+
+{% endcapture %}
+{% include display-component.html component=avatar-tile %}
+<br>
+
 ## Accent Colors
 Use helpers classes to change the background colors, for example, `.fd-has-background-color-accent-9`.
 
