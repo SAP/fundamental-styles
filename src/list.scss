@@ -38,6 +38,23 @@ $block: #{$fd-namespace}-list;
   $fd-dropdown-vertical-compact-padding: 0.5rem;
   $fd-checkbox-dimensions: 1.375rem;
   $fd-list-last-item-bottom-border-radius: var(--sapElement_BorderCornerRadius) !default;
+  $fd-list-text-content-min-width: 3rem;
+  $fd-action-list-item-size: 2.5rem;
+  $fd-action-list-item-height: 3rem;
+  $fd-action-list-item-compact-size: 1.625rem;
+  $fd-list-item-secondary-text-font-size: 0.875rem;
+  $fd-list-item-secondary-text-margin-left: 1rem;
+  $fd-list-item-icon-font-size: 0.75rem;
+  $fd-list-item-icon-width: 2.75rem;
+
+  $fd-list-item-active-text-color: var(--sapList_Active_TextColor);
+  $fd-list-item-border-color: var(--sapList_BorderColor);
+  $fd-action-list-item-background-color: var(--sapList_Background);
+  $fd-compact-action-list-item-font-size: var(--sapFontSize);
+  $fd-action-list-item-button-text-color: var(--sapButton_TextColor);
+  $fd-list-item-title-text-color: var(--sapList_TextColor);
+  $fd-list-item-secondary-text-color: var(--sapContent_LabelColor);
+  $fd-list-item-icon-color: var(--sapContent_NonInteractiveIconColor);
 
   @include fd-reset();
 
@@ -106,26 +123,26 @@ $block: #{$fd-namespace}-list;
     &--action {
       @include fd-ellipsis();
 
-      size: 2.5rem;
+      size: $fd-action-list-item-size;
       padding: 0 0.25rem;
       justify-content: center;
       cursor: pointer;
-      border-color: var(--sapList_BorderColor);
-      background: var(--sapList_Background);
-      height: 3rem;
+      border-color: $fd-list-item-border-color;
+      background: $fd-action-list-item-background-color;
+      height: $fd-action-list-item-height;
 
       &--compact {
-        size: 1.625rem;
-        font-size: var(--sapFontSize);
+        size: $fd-action-list-item-compact-size;
+        font-size: $fd-compact-action-list-item-font-size;
       }
 
       .#{$block}__title {
         @include fd-ellipsis();
 
-        min-width: 3rem;
+        min-width: $fd-list-text-content-min-width;
         display: block;
         text-align: center;
-        color: var(--sapButton_TextColor);
+        color: $fd-action-list-item-button-text-color;
         text-shadow: none;
       }
     }
@@ -143,26 +160,26 @@ $block: #{$fd-namespace}-list;
       .#{$block}__title {
         @include fd-ellipsis();
 
-        min-width: 3rem;
+        min-width: $fd-list-text-content-min-width;
         display: block;
         align-items: center;
-        color: var(--sapList_TextColor);
+        color: $fd-list-item-title-text-color;
       }
 
       .#{$block}__secondary {
         @include fd-ellipsis();
 
-        min-width: 3rem;
-        font-size: 0.875rem;
-        margin-left: 1rem;
+        min-width: $fd-list-text-content-min-width;
+        font-size: $fd-list-item-secondary-text-font-size;
+        margin-left: $fd-list-item-secondary-text-margin-left;
         text-align: right;
-        color: var(--sapContent_LabelColor);
+        color: $fd-list-item-secondary-text-color;
       }
 
       .#{$block}__icon {
-        font-size: 0.75rem;
-        width: 2.75rem;
-        color: var(--sapContent_NonInteractiveIconColor);
+        font-size: $fd-list-item-icon-font-size;
+        width: $fd-list-item-icon-width;
+        color: $fd-list-item-icon-color;
         flex: none;
         box-sizing: border-box;
         cursor: pointer;
@@ -171,7 +188,7 @@ $block: #{$fd-namespace}-list;
         vertical-align: baseline;
 
         &:active {
-          color: var(--sapList_Active_TextColor);
+          color: $fd-list-item-active-text-color;
         }
       }
     }
