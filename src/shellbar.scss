@@ -296,6 +296,11 @@ $block: #{$fd-namespace}-shellbar;
     background: $fd-shellbar-background-color;
     color: $fd-shellbar-color;
 
+    &--back {
+      margin: 1em;
+      flex: none;
+    }
+
     &:hover {
       background: $fd-shell-hover-background;
     }
