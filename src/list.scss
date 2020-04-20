@@ -46,6 +46,7 @@ $block: #{$fd-namespace}-list;
   $fd-list-item-secondary-text-margin-left: 1rem;
   $fd-list-item-icon-font-size: 0.75rem;
   $fd-list-item-icon-width: 2.75rem;
+  $fd-compact-list-item-height: 2rem;
 
   $fd-list-item-active-text-color: var(--sapList_Active_TextColor);
   $fd-list-item-border-color: var(--sapList_BorderColor);
@@ -310,11 +311,11 @@ $block: #{$fd-namespace}-list;
 
   &--compact {
     .#{$block}__item {
-      height: 2rem;
+      height: $fd-compact-list-item-height;
 
       &--display {
         .#{$block}__icon {
-          font-size: 0.75rem;
+          font-size: $fd-list-item-icon-font-size;
         }
       }
     }
