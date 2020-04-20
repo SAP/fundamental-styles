@@ -437,7 +437,7 @@ For more information about the Product Switch, see [Product Switch](product-swit
 {% endcapture %}
 {% include display-component.html component=app-layout class="" %}
 
-## Product Switch and CoPilot
+## Shellbar with Back Button
 {: .docs-header-h2}
 
 This example shows an application with a back button.
