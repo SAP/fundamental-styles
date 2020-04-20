@@ -106,5 +106,21 @@ $block: #{$fd-namespace}-side-nav;
     border-right: none;
     border-left: var(--sapList_BorderWidth) solid;
     border-left-color: var(--sapGroup_ContentBorderColor);
+
+    &--condensed {
+      width: 2.75rem;
+
+      .#{$fd-namespace}-nested-list {
+        &__link {
+          &.has-child {
+            &::after {
+              right: initial;
+              left: 0;
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+    }
   }
 }
