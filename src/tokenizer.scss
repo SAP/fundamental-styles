@@ -32,6 +32,10 @@ $block: #{$fd-namespace}-tokenizer;
 
   .fd-token {
     margin-right: $fd-tokenizer-spacing;
+
+    @include fd-rtl() {
+      margin: 0 0 0 $fd-tokenizer-spacing;
+    }
   }
 
   &__indicator {
@@ -79,6 +83,10 @@ $block: #{$fd-namespace}-tokenizer;
 
     .fd-token {
       margin-right: $fd-tokenizer-compact-spacing;
+
+      @include fd-rtl() {
+        margin: 0 0 0 $fd-tokenizer-spacing;
+      }
     }
   }
 
