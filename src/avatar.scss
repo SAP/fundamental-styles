@@ -50,9 +50,11 @@ $block: #{$fd-namespace}-avatar;
       max-height: map_get($size-set, "ratio");
       min-width: map_get($size-set, "ratio");
       min-height: map_get($size-set, "ratio");
-      line-height: map_get($size-set, "ratio");
       font-size: map_get($size-set, "font-size");
       font-stretch: map_get($size-set, "fontStretch");
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
 
       .#{$block}__zoom-icon {
         width: map_get($size-set, "zoomIconDimensions");
