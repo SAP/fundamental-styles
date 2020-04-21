@@ -49,9 +49,9 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 
 {% include display-component.html component=standard-list %}
 
-## Standard List With Links
+## Standard List With Navigation
 {% capture list-with-links %}
-<ul class="fd-list fd-list--links" role="list">
+<ul class="fd-list fd-list--navigation" role="list">
   <li role="listitem" class="fd-list__item">
       <a tabindex="0" class="fd-list__link" href="#">
         <span class="fd-list__title">List item 1</span>
@@ -73,6 +73,48 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 {% endcapture %}
 
 {% include display-component.html component=list-with-links%}
+
+## Standard List With Navigation Indication
+If only a subset of the list items are navigable you should indicate those by displaying a navigation arrow. This is achieved by applying the `fd-list--navigation-indication` modifier class to the `ul` element. Do not show arrows if all items are navigable. In this case use a Standard List with Navigation.
+
+{% capture list-with-links-navigation %}
+<ul class="fd-list fd-list--navigation fd-list--navigation-indication" role="list">
+  <li role="listitem" class="fd-list__item">
+      <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+        <span class="fd-list__title">List item 1</span>
+        <!-- <span class="fd-list__navigation-indicator"></span> -->
+      </a>
+  </li>
+  <li role="listitem" class="fd-list__item">
+      <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+        <span class="fd-list__icon sap-icon--history"></span>
+        <span class="fd-list__title">List item 2</span>
+        <!-- <span class="fd-list__navigation-indicator"></span> -->
+      </a>
+  </li>
+  <li role="listitem" class="fd-list__item">
+      <a tabindex="0" class="fd-list__link" href="#">
+        <span class="fd-list__icon sap-icon--history"></span>
+        <span class="fd-list__title">List item 3</span>
+      </a>
+  </li>
+  <li role="listitem" class="fd-list__item">
+      <a tabindex="0" class="fd-list__link" href="#">
+        <span class="fd-list__title">List item 4</span>
+        <span class="fd-list__icon sap-icon--map"></span>
+      </a>
+  </li>
+  <li role="listitem" class="fd-list__item">
+      <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+        <span class="fd-list__title">List item 5</span>
+        <span class="fd-list__icon sap-icon--map"></span>
+        <!-- <span class="fd-list__navigation-indicator"></span> -->
+      </a>
+  </li>
+</ul>
+{% endcapture %}
+
+{% include display-component.html component=list-with-links-navigation %}
 
 ## Secondary Data
 
@@ -561,4 +603,156 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 {% endcapture %}
 
 {% include display-component.html component=list-byline-selection %}
+
+
+## Standard List with Byline, Selection and Navigation
+
+{% capture list-byline-selection-navigation %}
+<ul class="fd-list fd-list--byline fd-list--navigation fd-list--navigation-indication" role="list">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
+    <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez6111">
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6111"></label>
+      </div>
+      <span class="sap-icon--activate fd-list__thumbnail"></span>
+      <div class="fd-list__content">
+        <span class="fd-list__title">Title</span>
+        <span class="fd-list__byline">Byline (description)</span>
+      </div>
+    </a>
+  </li>
+  <li role="listitem" tabindex="0"  class="fd-list__item">
+    <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+    <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez6112">
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6112"></label>
+      </div>
+    <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
+style="background-image: url('https://placeimg.com/400/400/nature');"></span>
+    <div class="fd-list__content">
+        <div class="fd-list__title">List Item With Two-Column Byline</div>
+        <div class="fd-list__byline fd-list__byline--2-col">
+            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
+            <div class="fd-list__byline-right">Second text item in Byline (Can be semantic (Status) or not)</div>
+        </div>
+    </div>
+    </a>
+  </li>
+  <li role="listitem" tabindex="0"  class="fd-list__item">
+    <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez6113">
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6113"></label>
+      </div>
+      <div class="fd-list__content">
+        <div class="fd-list__title">Text-Only List Item</div>
+        <div class="fd-list__byline">Byline (description)</div>
+      </div>
+    </a>
+  </li>
+</ul>
+
+<br><br>
+<h4>Compact Size</h4>
+
+<ul class="fd-list fd-list--compact fd-list--byline fd-list--navigation fd-list--navigation-indication" role="list">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
+    <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6115">
+          <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6115"></label>
+      </div>
+      <span class="sap-icon--activate fd-list__thumbnail"></span>
+      <div class="fd-list__content">
+        <span class="fd-list__title">Title</span>
+        <span class="fd-list__byline">Byline (description)</span>
+      </div>
+    </a>
+  </li>
+  <li role="listitem" tabindex="0"  class="fd-list__item">
+    <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+    <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6116">
+          <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6116"></label>
+      </div>
+    <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
+style="background-image: url('https://placeimg.com/400/400/nature');"></span>
+    <div class="fd-list__content">
+        <div class="fd-list__title">List Item With Two-Column Byline</div>
+        <div class="fd-list__byline fd-list__byline--2-col">
+            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
+            <div class="fd-list__byline-right">Second text item in Byline (Can be semantic (Status) or not)</div>
+        </div>
+    </div>
+    </a>
+  </li>
+  <li role="listitem" tabindex="0"  class="fd-list__item">
+    <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6117">
+          <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6117"></label>
+      </div>
+      <div class="fd-list__content">
+        <div class="fd-list__title">Text-Only List Item</div>
+        <div class="fd-list__byline">Byline (description)</div>
+      </div>
+    </a>
+  </li>
+</ul>
+
+
+<br><br>
+<h4>Borderless Design</h4>
+<ul class="fd-list fd-list--no-border fd-list--byline fd-list--navigation fd-list--navigation-indication" role="list">
+  <li role="listitem" tabindex="0"  class="fd-list__item">
+    <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez6118">
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6118"></label>
+      </div>
+      <span class="sap-icon--activate fd-list__thumbnail"></span>
+      <div class="fd-list__content">
+        <span class="fd-list__title">Title</span>
+        <span class="fd-list__byline">Byline (description)</span>
+      </div>
+    </a>
+  </li>
+  <li role="listitem" tabindex="0"  class="fd-list__item">
+    <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+    <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez6119">
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6119"></label>
+      </div>
+    <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
+style="background-image: url('https://placeimg.com/400/400/nature');"></span>
+    <div class="fd-list__content">
+        <div class="fd-list__title">List Item With Two-Column Byline</div>
+        <div class="fd-list__byline fd-list__byline--2-col">
+            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
+            <div class="fd-list__byline-right">Second text item in Byline (Can be semantic (Status) or not)</div>
+        </div>
+    </div>
+    </a>
+  </li>
+  <li role="listitem" tabindex="0"  class="fd-list__item">
+    <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+      <div class="fd-form-item fd-list__form-item">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez61110">
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez61110"></label>
+      </div>
+      <div class="fd-list__content">
+        <div class="fd-list__title">Text-Only List Item</div>
+        <div class="fd-list__byline">Byline (description)</div>
+      </div>
+    </a>
+  </li>
+</ul>
+
+
+{% endcapture %}
+
+{% include display-component.html component=list-byline-selection-navigation %}
+
+
 

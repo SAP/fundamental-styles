@@ -55,6 +55,9 @@ $form-item: #{$fd-namespace}-form-item;
   $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
   $fd-list-form-item-margin-top: -0.5rem !default;
 
+  // STANDARD LIST WITH NAVIGATION
+  $fd-list-navigation-indicator-width: 2.5rem !default;
+
   $semantic-color: (
     "neutral": ("color": var(--sapNeutralTextColor)),
     "positive": ("color": var(--sapPositiveTextColor)),
@@ -204,8 +207,20 @@ $form-item: #{$fd-namespace}-form-item;
       .#{$block}__title,
       .#{$block}__secondary,
       .#{$block}__icon,
+      .#{$block}__content,
+      .#{$block}__byline,
+      .#{$block}__byline-left,
+      .#{$block}__byline-right,
+      .#{$block}__thumbnail,
+      &.#{$block}__link--navigation-indicator::after,
       & {
         color: var(--sapList_Active_TextColor);
+      }
+
+      @each $set-name, $color-set in $semantic-color {
+        .#{$block}__byline-right--#{$set-name} {
+          color: var(--sapList_Active_TextColor);
+        }
       }
     }
   }
@@ -434,9 +449,61 @@ $form-item: #{$fd-namespace}-form-item;
     }
   }
 
-  &--links {
+  &--navigation {
     .#{$block}__item {
       padding: 0;
+    }
+  }
+
+  &--navigation-indication {
+    .#{$block}__item {
+      padding: 0;
+    }
+
+    .#{$block}__link {
+      padding-right: 0;
+
+      &::after {
+        min-width: $fd-list-navigation-indicator-width;
+        content: '';
+      }
+
+      &--navigation-indicator {
+        &::after {
+          @include fd-flex-center();
+
+          height: 100%;
+          font-family: "SAP-icons";
+          content: '\e1ed';
+          color: var(--sapContent_NonInteractiveIconColor);
+          font-size: var(--sapFontSmallSize);
+          text-decoration: none;
+          text-transform: none;
+        }
+
+        @include fd-rtl() {
+          &::after {
+            content: '\e1ee';
+          }
+        }
+      }
+
+      @include fd-rtl() {
+        padding-right: $fd-list-byline-item-padding-x;
+        padding-left: 0;
+      }
+    }
+
+    .#{$block}__icon {
+      &:last-child {
+        margin: 0;
+      }
+
+      @include fd-rtl() {
+        &:last-child {
+          margin: 0;
+        }
+      }
     }
   }
 
