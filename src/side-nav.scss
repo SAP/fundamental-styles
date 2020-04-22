@@ -108,7 +108,7 @@ $block-nested-list: #{$fd-namespace}-nested-list;
     border-left: var(--sapList_BorderWidth) solid;
     border-left-color: var(--sapGroup_ContentBorderColor);
 
-    &--condensed {
+    &.#{$block}--condensed {
       width: 2.75rem;
 
       .#{$block-nested-list} {
