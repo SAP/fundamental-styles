@@ -11,8 +11,13 @@ $block: #{$fd-namespace}-menu;
   // Menu Item
   $fd-menu-item-color-active: var(--sapList_Active_TextColor) !default;
 
+  // Menu Shortcut
+  $fd-menu-shortcut-padding-left: 1rem !default;
+
   // Menu Link
-  $fd-menu-icon-width: 2.25rem !default; // to account for item right padding of 16px or 1rem so 2.25rem-1rem = 1.25rem
+  $fd-menu-link-padding-top: 0.25rem !default;
+  $fd-menu-link-padding-left: -0.25rem !default;
+  $fd-menu-icon-width: 2.25rem !default;
   $fd-menu-icon-width-compact: 2rem !default;
   $fd-menu-icon-width-mobile: 2.75rem !default;
   $fd-menu-icon-after-margin: 0 -1rem 0 0 !default;
@@ -74,13 +79,13 @@ $block: #{$fd-namespace}-menu;
     top: 0;
     left: 100%;
     z-index: 2;
-    margin: 0.25rem 0 0 -0.25rem;
+    margin: $fd-menu-link-padding-top 0 0 $fd-menu-link-padding-left;
     width: 100%; // to fix IE issue
 
     @include fd-rtl() {
       right: 100%;
       left: initial;
-      margin: 0.25rem -0.25rem 0 0;
+      margin: $fd-menu-link-padding-top $fd-menu-link-padding-left 0 0;
     }
 
     &[aria-hidden='true'] {
@@ -130,7 +135,7 @@ $block: #{$fd-namespace}-menu;
     width: 100%;
     border-radius: inherit;
     height: 2.75rem;
-    padding: 0.75rem 1rem 0.75rem 0.75rem; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each;
+    padding: 0.75rem 1rem 0.75rem 0.75rem;
 
     @include fd-hover() {
       background-color: var(--sapList_Hover_Background);
@@ -186,7 +191,7 @@ $block: #{$fd-namespace}-menu;
     color: $fd-menu-icon-color;
     width: $fd-menu-icon-width;
     min-width: $fd-menu-icon-width;
-    height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem;
+    height: 1.25rem;
     font-size: var(--sapFontLargeSize);
     background-color: transparent;
   }
@@ -228,7 +233,12 @@ $block: #{$fd-namespace}-menu;
     font-family: $fd-menu-title-font-family;
     color: var(--sapContent_NonInteractiveIconColor);
     font-size: var(--sapFontSize);
-    padding-left: 1rem;
+    padding-left: $fd-menu-shortcut-padding-left;
+
+    @include fd-rtl() {
+      padding-left: 0;
+      padding-right: $fd-menu-shortcut-padding-left;
+    }
   }
 
   &--full-width {
@@ -237,7 +247,7 @@ $block: #{$fd-namespace}-menu;
 
   &--compact {
     .#{$block}__link {
-      padding: 0.375rem 0.75rem; // line-height=20px so 2rem or 32px-20px=12px/2= 6px or 0.375rem each;
+      padding: 0.375rem 0.75rem;
       height: 2rem;
 
       .#{$block}__addon-before,
@@ -280,7 +290,7 @@ $block: #{$fd-namespace}-menu;
       }
 
       .#{$block}__link {
-        padding: 0.75rem 1rem; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each;
+        padding: 0.75rem 1rem;
       }
 
       .#{$block}__addon-before,
