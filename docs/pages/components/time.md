@@ -64,7 +64,7 @@ Default cozy mode implemented mostly to be used mobile devices. There should be 
 <div class="docs-time-wrapper">
     <div class="fd-time">
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Hrs</label>
+            <label class="fd-time__slider-label">Hrs</label>
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
             <div class="fd-time__wrapper fd-time__wrapper--active">
                 <ul class="fd-time__list">
@@ -106,7 +106,7 @@ Default cozy mode implemented mostly to be used mobile devices. There should be 
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Min</label>
+            <label class="fd-time__slider-label">Min</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">25</span>
             </div>
@@ -115,7 +115,7 @@ Default cozy mode implemented mostly to be used mobile devices. There should be 
     
     <div class="fd-time">
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Hrs</label>
+            <label class="fd-time__slider-label">Hrs</label>
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
             <div class="fd-time__wrapper fd-time__wrapper--active">
                <ul class="fd-time__list">
@@ -157,13 +157,13 @@ Default cozy mode implemented mostly to be used mobile devices. There should be 
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Min</label>
+            <label class="fd-time__slider-label">Min</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">25</span>
             </div>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Sec</label>
+            <label class="fd-time__slider-label">Sec</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">10</span>
             </div>
@@ -172,25 +172,25 @@ Default cozy mode implemented mostly to be used mobile devices. There should be 
     
     <div class="fd-time">
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Hrs</label>
+            <label class="fd-time__slider-label">Hrs</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">04</span>
             </div>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Min</label>
+            <label class="fd-time__slider-label">Min</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">25</span>
             </div>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Sec</label>
+            <label class="fd-time__slider-label">Sec</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">10</span>
             </div>
         </div>
         <div class="fd-time__col fd-time__col--period">
-            <label class="fd-time__slider-label fd-form-label">AM/PM</label>
+            <label class="fd-time__slider-label">AM/PM</label>
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Change Meridian"></button>
             <div class="fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian">
                 <ul class="fd-time__list">
@@ -225,7 +225,7 @@ Tablet Mode can be added by using `fd-time--tablet` modifier. IT provides lower 
 <div class="docs-time-wrapper">
     <div class="fd-time fd-time--tablet">
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Hrs</label>
+            <label class="fd-time__slider-label">Hrs</label>
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
             <div class="fd-time__wrapper fd-time__wrapper--active">
                 <ul class="fd-time__list">
@@ -267,7 +267,7 @@ Tablet Mode can be added by using `fd-time--tablet` modifier. IT provides lower 
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Min</label>
+            <label class="fd-time__slider-label">Min</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">25</span>
             </div>
@@ -276,7 +276,7 @@ Tablet Mode can be added by using `fd-time--tablet` modifier. IT provides lower 
     
     <div class="fd-time fd-time--tablet">
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Hrs</label>
+            <label class="fd-time__slider-label">Hrs</label>
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
             <div class="fd-time__wrapper fd-time__wrapper--active">
                <ul class="fd-time__list">
@@ -318,13 +318,13 @@ Tablet Mode can be added by using `fd-time--tablet` modifier. IT provides lower 
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Min</label>
+            <label class="fd-time__slider-label">Min</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">25</span>
             </div>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Sec</label>
+            <label class="fd-time__slider-label">Sec</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">10</span>
             </div>
@@ -333,25 +333,25 @@ Tablet Mode can be added by using `fd-time--tablet` modifier. IT provides lower 
     
     <div class="fd-time fd-time--tablet">
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Hrs</label>
+            <label class="fd-time__slider-label">Hrs</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">04</span>
             </div>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Min</label>
+            <label class="fd-time__slider-label">Min</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">25</span>
             </div>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Sec</label>
+            <label class="fd-time__slider-label">Sec</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">10</span>
             </div>
         </div>
         <div class="fd-time__col fd-time__col--period">
-            <label class="fd-time__slider-label fd-form-label">AM/PM</label>
+            <label class="fd-time__slider-label">AM/PM</label>
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Change Meridian"></button>
             <div class="fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian">
                     <ul class="fd-time__list">
@@ -383,7 +383,7 @@ Compact Mode can be added, by using `fd-time--compact` modifier. It's mostly imp
 <div class="docs-time-wrapper"> 
     <div class="fd-time fd-time--compact">
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Hrs</label>
+            <label class="fd-time__slider-label">Hrs</label>
             <button class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
             <div class="fd-time__wrapper fd-time__wrapper--active">
                 <ul class="fd-time__list">
@@ -425,7 +425,7 @@ Compact Mode can be added, by using `fd-time--compact` modifier. It's mostly imp
             <button class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Min</label>
+            <label class="fd-time__slider-label">Min</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">25</span>
             </div>
@@ -434,7 +434,7 @@ Compact Mode can be added, by using `fd-time--compact` modifier. It's mostly imp
     
     <div class="fd-time fd-time--compact">
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Hrs</label>
+            <label class="fd-time__slider-label">Hrs</label>
             <button class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
             <div class="fd-time__wrapper fd-time__wrapper--active">
                <ul class="fd-time__list">
@@ -476,13 +476,13 @@ Compact Mode can be added, by using `fd-time--compact` modifier. It's mostly imp
             <button class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Min</label>
+            <label class="fd-time__slider-label">Min</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">25</span>
             </div>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Sec</label>
+            <label class="fd-time__slider-label">Sec</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">10</span>
             </div>
@@ -491,25 +491,25 @@ Compact Mode can be added, by using `fd-time--compact` modifier. It's mostly imp
     
     <div class="fd-time fd-time--compact">
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Hrs</label>
+            <label class="fd-time__slider-label">Hrs</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">04</span>
             </div>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Min</label>
+            <label class="fd-time__slider-label">Min</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">25</span>
             </div>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Sec</label>
+            <label class="fd-time__slider-label">Sec</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">10</span>
             </div>
         </div>
         <div class="fd-time__col fd-time__col--period">
-            <label class="fd-time__slider-label fd-form-label">AM/PM</label>
+            <label class="fd-time__slider-label">AM/PM</label>
             <button class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Change Meridian"></button>
             <div class="fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian">
                     <ul class="fd-time__list">
@@ -543,7 +543,7 @@ but functionality to fit it inside indicator frames should be implemented no app
 <div class="docs-time-wrapper">
     <div class="fd-time fd-time--scrollable">
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Hrs</label>
+            <label class="fd-time__slider-label">Hrs</label>
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
             <div class="fd-time__wrapper fd-time__wrapper--active">
                 <ul class="fd-time__list">
@@ -585,7 +585,7 @@ but functionality to fit it inside indicator frames should be implemented no app
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Min</label>
+            <label class="fd-time__slider-label">Min</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">25</span>
             </div>
@@ -594,7 +594,7 @@ but functionality to fit it inside indicator frames should be implemented no app
     
     <div class="fd-time fd-time--scrollable">
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Hrs</label>
+            <label class="fd-time__slider-label">Hrs</label>
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
             <div class="fd-time__wrapper fd-time__wrapper--active">
                <ul class="fd-time__list">
@@ -636,13 +636,13 @@ but functionality to fit it inside indicator frames should be implemented no app
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Min</label>
+            <label class="fd-time__slider-label">Min</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">25</span>
             </div>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Sec</label>
+            <label class="fd-time__slider-label">Sec</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">10</span>
             </div>
@@ -651,25 +651,25 @@ but functionality to fit it inside indicator frames should be implemented no app
     
     <div class="fd-time fd-time--scrollable">
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Hrs</label>
+            <label class="fd-time__slider-label">Hrs</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">04</span>
             </div>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Min</label>
+            <label class="fd-time__slider-label">Min</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">25</span>
             </div>
         </div>
         <div class="fd-time__col">
-            <label class="fd-time__slider-label fd-form-label">Sec</label>
+            <label class="fd-time__slider-label">Sec</label>
             <div class="fd-time__wrapper">
                 <span class="fd-time__item fd-time__item--collapsed">10</span>
             </div>
         </div>
         <div class="fd-time__col fd-time__col--period">
-            <label class="fd-time__slider-label fd-form-label">AM/PM</label>
+            <label class="fd-time__slider-label">AM/PM</label>
             <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Change Meridian"></button>
             <div class="fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian">
                     <ul class="fd-time__list">

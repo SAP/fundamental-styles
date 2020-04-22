@@ -13,6 +13,7 @@ $block: #{$fd-namespace}-time;
   $fd-time-wrapper-compact-height: 7 * $fd-time-item-compact-height;
   $fd-time-dropdown-padding: 1rem;
   $fd-time-dropdown-compact-padding: 0.5rem;
+  $fd-time-column-margin-x: 0.5rem;
   $fd-time-item-width: 3rem;
 
   @include fd-flex() {
@@ -28,7 +29,7 @@ $block: #{$fd-namespace}-time;
       flex-direction: column;
     }
 
-    margin-right: 0.5rem;
+    margin-right: $fd-time-column-margin-x;
 
     &:last-child {
       margin-right: 0;
@@ -157,8 +158,7 @@ $block: #{$fd-namespace}-time;
   }
 
   &__slider-label {
-    @include fd-reset();
-    @include fd-ellipsis();
+    @include fd-form-label();
 
     line-height: $fd-time-item-compact-height;
     height: $fd-time-item-compact-height;
@@ -167,6 +167,13 @@ $block: #{$fd-namespace}-time;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: clip;
+    padding: 0;
+    margin: 0;
+
+    @include fd-rtl() {
+      padding: 0;
+      margin: 0;
+    }
   }
 
   &__control {
@@ -231,7 +238,7 @@ $block: #{$fd-namespace}-time;
   @include fd-rtl() {
     .#{$block}__col {
       margin-right: 0;
-      margin-left: 0.5rem;
+      margin-left: $fd-time-column-margin-x;
 
       &:last-child {
         margin-left: 0;
