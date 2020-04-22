@@ -21,13 +21,26 @@ $block: #{$fd-namespace}-form-group;
   &--inline {
     display: flex;
     justify-content: flex-start;
+    margin-right: 1rem;
 
-    :not(:last-child) {
-      margin-right: fd-space(4);
+    &:last-child {
+      margin-right: 0;
     }
   }
 
   &__item {
     @include fd-reset();
+  }
+
+  @include fd-rtl() {
+    &--inline {
+      &:last-child {
+        margin-right: 1rem;
+      }
+
+      &:first-child {
+        margin-right: 0;
+      }
+    }
   }
 }
