@@ -115,7 +115,7 @@ $block-nested-list: #{$fd-namespace}-nested-list;
         &__link {
           &.has-child {
             &::after {
-              right: initial;
+              right: auto;
               left: 0;
               transform: rotate(90deg);
             }
