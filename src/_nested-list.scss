@@ -253,6 +253,7 @@ $block: #{$fd-namespace}-nested-list;
       .#{$block}__link,
       .#{$block}__content {
         padding-right: 1rem;
+        padding-left: 0;
       }
 
       .#{$block}__title {
