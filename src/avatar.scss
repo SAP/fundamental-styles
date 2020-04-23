@@ -79,12 +79,6 @@ $block: #{$fd-namespace}-avatar;
     }
   }
 
-  // thumbnail
-  &.#{$block}--thumbnail {
-    text-indent: -200%;
-    overflow: hidden;
-  }
-
   // background
   &.#{$block}--transparent {
     background-color: transparent;
@@ -112,6 +106,6 @@ $block: #{$fd-namespace}-avatar;
   }
   // optional border
   &.#{$block}--border {
-    box-shadow: inset 0 0 0 0.0625rem $fd-avatar-border-fade;
+    border: inset 0.0625rem $fd-avatar-border-fade;
   }
 }
