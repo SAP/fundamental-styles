@@ -43,17 +43,17 @@ there should be popover with missing options.
             </div>
             <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--no-overflow fd-popover__body--dropdown" aria-hidden="true" id="breadcrumb1">
                 <ul class="fd-list fd-list--compact fd-list--dropdown" role="listbox">
-                    <li class="fd-list__item" tabindex="0" role="option">
-                      <a class="fd-list__title fd-list__title--anchor" tabindex="-1"  href="#">Link Text</a>
+                    <li class="fd-list__item fd-list__item--anchor" tabindex="-1" role="option">
+                      <a class="fd-list__item fd-list__title fd-list__title--anchor" tabindex="0" href=""><span class="">Link Text</span></a>
                     </li>
-                    <li class="fd-list__item" tabindex="0" role="option">
-                      <a class="fd-list__title fd-list__title--anchor" tabindex="-1" href="#">Link Text</a>                    
+                    <li class="fd-list__item fd-list__item--anchor" tabindex="-1" role="option">
+                      <a class="fd-list__title fd-list__title--anchor" tabindex="0" href="#"><span class="">Link Text</span></a>       
                     </li>
-                    <li class="fd-list__item" tabindex="0" role="option">
-                      <a class="fd-list__title fd-list__title--anchor" tabindex="-1" href="#">Link Text</a>
+                    <li class="fd-list__item fd-list__item--anchor" tabindex="-1" role="option">
+                      <a class="fd-list__title fd-list__title--anchor" tabindex="0" href="#"><span class="">Link Text</span></a>       
                     </li>
-                    <li class="fd-list__item" tabindex="0" role="option">
-                      <a class="fd-list__title fd-list__title--anchor" tabindex="-1" href="#">Link Text</a>
+                    <li class="fd-list__item fd-list__item--anchor" tabindex="-1" role="option">
+                      <a class="fd-list__title fd-list__title--anchor" tabindex="0" href="#">Link Text</a>
                     </li>
                 </ul>
             </div>

@@ -10,6 +10,8 @@
 .fd-list--multi-input
     .fd-list+(__item, __label, _input,  __title, __message, __footer)+(--no-wrap)
 */
+$title-secondaryline-height: 1rem;
+$dropdown-max-width: 37.5rem;
 
 @mixin fake-list-outline($outlineColor: var(--sapContent_FocusColor)) {
   &:focus,
@@ -107,7 +109,7 @@ $block: #{$fd-namespace}-list;
   &__secondary {
     @include fd-reset();
 
-    line-height: 1rem;
+    line-height: $title-secondaryline-height;
     color: var(--sapList_TextColor);
     white-space: nowrap;
     overflow: hidden;
@@ -119,10 +121,17 @@ $block: #{$fd-namespace}-list;
     font-size: var(--sapFontLargeSize);
 
     &--anchor {
-      pointer-events: none;
+      width: 100%;
+      padding: 0.5rem 1rem;
 
       &:focus {
-        outline: none;
+        @include fake-list-outline();
+      }
+
+      &:active {
+        &:focus {
+          @include fake-list-outline(var(--sapContent_ContrastFocusColor));
+        }
       }
     }
   }
@@ -266,6 +275,18 @@ $block: #{$fd-namespace}-list;
       .#{$block}__item {
         height: auto;
         padding: $fd-dropdown-vertical-compact-padding $fd-list-horizontal-padding;
+
+        &--anchor {
+          padding: 0;
+        }
+      }
+    }
+
+    :last-child() {
+      .#{$block}__title {
+        &--anchor {
+          border-bottom: none;
+        }
       }
     }
   }
@@ -348,7 +369,7 @@ $block: #{$fd-namespace}-list;
   &--multi-input {
     display: block;
     min-width: 5rem;
-    max-width: 37.5rem;
+    max-width: $dropdown-max-width;
 
     .#{$block}__item {
       cursor: pointer;
@@ -376,6 +397,10 @@ $block: #{$fd-namespace}-list;
 
       &:first-child:last-child {
         max-width: 37.5rem;
+      }
+
+      &--anchor {
+        border-bottom: solid 0.0625rem var(--sapPageHeader_BorderColor);
       }
     }
 
