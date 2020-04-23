@@ -83,7 +83,34 @@
     ]
   } %}
 
+  {%- set byline_list = {
+    "groups": [
+        {
+            "items": [
+                { "thumbnail": true, "title": "Title", "byline": "Byline (description)" },
+                { "thumbnail": true, "title": "Title", "selected": true },
+                { "title": "Title", "byline": "Byline (description)" }
+            ]
+        }
+    ]
+  } %}
+
+  {%- set byline_semantic_list = {
+    "groups": [
+        {
+            "items": [
+                { "thumbnail": true, "title": "Title", "bylineLeft": "First text item in Byline (Standard text item)", "bylineRight": "Second text item in Byline (Can be semantic (Status) or not)", "semantic": "neutral" },
+                { "thumbnail": true, "title": "Title", "bylineLeft": "First text item in Byline (Standard text item)", "bylineRight": "Second text item in Byline (Can be semantic (Status) or not)", "semantic": "positive" },
+                { "thumbnail": true, "title": "Title", "bylineLeft": "First text item in Byline (Standard text item)", "bylineRight": "Second text item in Byline (Can be semantic (Status) or not)", "semantic": "critical" },
+                { "thumbnail": true, "title": "Title", "bylineLeft": "First text item in Byline (Standard text item)", "bylineRight": "Second text item in Byline (Can be semantic (Status) or not)", "semantic": "negative" },
+                { "thumbnail": true, "title": "Title", "bylineLeft": "First text item in Byline (Standard text item)", "bylineRight": "Second text item in Byline (Can be semantic (Status) or not)", "semantic": "informative" }
+            ]
+        }
+    ]
+  } %}
+
 {% set modifiers = ["", "compact", "no-border"] %}
+{% set bylineModifiers = ["byline", "byline fd-list--compact", "byline fd-list--no-border"] %}
 
 {% block content %}
 
@@ -127,6 +154,17 @@
                 <h3>{{ modifier }}</h3>
             {%- endif %}
             {{ list(list_with_icons, toggles={"useIconAfter": true}, modifier=[modifier]) }}
+        {%- endfor %}
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>Selection</h2>
+    {% set example %}
+        {%- for modifier in modifiers %}
+            {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+            {{ list(list_with_icons, toggles={"selection": true}, modifier=[modifier]) }}
         {%- endfor %}
     {% endset %}
     {{ format(example) }}
@@ -264,5 +302,38 @@
 		{%- endfor %}
 	{% endset %}
 	{{ format(example) }}
+
+    <h2>Standard List with Byline</h2>
+    {% set example %}
+        {%- for modifier in bylineModifiers %}
+            {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+            {{ list(byline_list, toggles={"byline": true}, modifier=[modifier]) }}
+        {%- endfor %}
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>Standard List with Byline and Semantic Byline Second Item</h2>
+    {% set example %}
+        {%- for modifier in bylineModifiers %}
+            {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+            {{ list(byline_semantic_list, toggles={"byline2col": true, "byline": true}, modifier=[modifier]) }}
+        {%- endfor %}
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>Standard List with Byline, Semantic Byline Second Item and Selection</h2>
+    {% set example %}
+        {%- for modifier in bylineModifiers %}
+            {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+            {{ list(byline_semantic_list, toggles={"byline2col": true, "byline": true, "selection": true}, modifier=[modifier]) }}
+        {%- endfor %}
+    {% endset %}
+    {{ format(example) }}
 
 {% endblock %}
