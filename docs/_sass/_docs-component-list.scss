@@ -24,7 +24,7 @@ $grid-transition-delay: 100ms;
 
         display: flex;
         flex-direction: column;
-        padding: 4rem 1rem;
+        padding: 4rem 2rem;
         align-items: center;
         justify-content: flex-end;
 
@@ -33,15 +33,15 @@ $grid-transition-delay: 100ms;
         }
         @include media(">=display") {
             width: 25%;
-            padding: 4rem 1rem;
+            padding: 4rem 3rem;
         }
         @media screen and (max-width: 1300px) {
             width: 50%;
-            padding: 4rem 1rem;
+            padding: 4rem 2rem;
         }
         @media screen and (max-width: 950px) {
             width: 100%;
-            padding: 2rem 1rem;
+            padding: 2rem 2rem;
             justify-content: center;
         }
 
@@ -312,7 +312,7 @@ $grid-transition-delay: 100ms;
         &__table {
             width: auto;
             height: auto;
-            min-width: 275px;
+            min-width: 375px;
             max-width: 60%;
         }
 
@@ -485,7 +485,7 @@ $grid-transition-delay: 100ms;
             }
 
             &__search-input {
-                min-width: 250px;
+                min-width: 100%;
                 max-width: 90%;
             }
 
@@ -542,7 +542,7 @@ $grid-transition-delay: 100ms;
             -ms-interpolation-mode: bicubic;
 
             &__action-bar {
-                min-width: 275px;
+                min-width: 250px;
                 max-width: 100%;
             }
             &__bar {
@@ -651,7 +651,7 @@ $grid-transition-delay: 100ms;
             }
 
             &__notification {
-                min-width: 275px;
+                min-width: 250px;
                 max-width: 70%;      
             }
 
@@ -681,7 +681,7 @@ $grid-transition-delay: 100ms;
             }
 
             &__select {
-                min-width: 300px;
+                min-width: 250px;
                 max-width: 50%;
             }
 
@@ -701,12 +701,12 @@ $grid-transition-delay: 100ms;
             }
 
             &__switch {
-                min-width: 100px;
+                min-width: 60px;
                 max-width: 50%;
             }
 
             &__table {
-                min-width: 275px;
+                min-width: 250px;
                 max-width: 70%;
             }
 
@@ -716,7 +716,7 @@ $grid-transition-delay: 100ms;
             }
 
             &__tile {
-                min-width: 275px;
+                min-width: 250px;
                 max-width: 90%;
             }
 
@@ -792,7 +792,7 @@ $grid-transition-delay: 100ms;
             }
 
             &__info-label {
-                min-width: 375px;
+                min-width: 300px;
                 max-width: 100%;            
             }
 
@@ -812,7 +812,7 @@ $grid-transition-delay: 100ms;
             }
 
             &__list {
-                min-width: 375px;
+                min-width: 300px;
                 max-width: 60%;
             }
 
@@ -822,7 +822,7 @@ $grid-transition-delay: 100ms;
             }
 
             &__localization-editor{
-                min-width: 375px;
+                min-width: 300px;
                 max-width: 80%; 
             }
 
@@ -857,8 +857,8 @@ $grid-transition-delay: 100ms;
             }
 
             &__pagination {
-                min-width: 375px;
-                max-width: 100%;
+                min-width: 300px;
+                max-width: 90%;
             }
 
             &__select {
@@ -877,7 +877,7 @@ $grid-transition-delay: 100ms;
             }
 
             &__status-indicators {
-                min-width: 375px;
+                min-width: 300px;
                 max-width: 100%;            
             }
 
@@ -887,7 +887,7 @@ $grid-transition-delay: 100ms;
             }
 
             &__table {
-                min-width: 375px;
+                min-width: 300px;
                 max-width: 40%;
             }
 
@@ -897,12 +897,12 @@ $grid-transition-delay: 100ms;
             }
 
             &__tile {
-                min-width: 375px;
+                min-width: 300px;
                 max-width: 90%;
             }
 
             &__tree {
-                min-width: 375px;
+                min-width: 300px;
                 max-width: 40%;
             }
         }
