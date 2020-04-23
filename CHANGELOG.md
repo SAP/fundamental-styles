@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.2-rc.6"></a>
+## [0.8.2-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.8.2-rc.5...v0.8.2-rc.6) (2020-04-23)
+
+
+### Bug Fixes
+
+* add Byline and Selection features to List component ([#863](https://github.com/SAP/fundamental-styles/issues/863)) ([dfd9b7a](https://github.com/SAP/fundamental-styles/commit/dfd9b7a))
+
+
+
 <a name="0.8.2-rc.5"></a>
 ## [0.8.2-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.8.2-rc.4...v0.8.2-rc.5) (2020-04-21)
 
