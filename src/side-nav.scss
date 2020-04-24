@@ -16,6 +16,7 @@
 */
 
 $block: #{$fd-namespace}-side-nav;
+$block-nested-list: #{$fd-namespace}-nested-list;
 
 .#{$block} {
   @include fd-reset();
@@ -73,7 +74,7 @@ $block: #{$fd-namespace}-side-nav;
             min-width: 0;
             min-height: 0;
             margin-right: 0.125rem;
-            margin-bottom: 0.1875rem;
+            margin-bottom: 0.0625rem;
             border-style: solid;
             border-width: 0.375rem 0.375rem 0 0;
             border-color: transparent var(--sapContent_IconColor) transparent transparent;
@@ -99,6 +100,38 @@ $block: #{$fd-namespace}-side-nav;
 
         &:active::after {
           color: var(--sapList_Active_TextColor);
+        }
+      }
+    }
+  }
+
+  @include fd-rtl() {
+    border-right: none;
+    border-left: var(--sapList_BorderWidth) solid;
+    border-left-color: var(--sapGroup_ContentBorderColor);
+
+    &.#{$block}--condensed {
+      width: 2.75rem;
+
+      .#{$block-nested-list} {
+        &__link {
+          &.has-child {
+            &::after {
+              right: auto;
+              left: 0;
+              transform: rotate(90deg);
+            }
+          }
+        }
+
+        &__item {
+          .#{$block-nested-list}__item {
+            .#{$block-nested-list}__link,
+            .#{$block-nested-list}__content {
+              padding-right: 1rem;
+              padding-left: 1rem;
+            }
+          }
         }
       }
     }
