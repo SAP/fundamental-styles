@@ -15,7 +15,7 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 
 {% capture standard-list %}
 <ul class="fd-list" role="list">
-  <li role="listitem" tabindex="0" class="fd-list__item is-selected">
+  <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
@@ -87,7 +87,7 @@ If only a subset of the list items are navigable you should indicate those by di
       </a>
   </li>
   <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-      <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+      <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-selected" href="#">
         <span class="fd-list__icon sap-icon--history"></span>
         <span class="fd-list__title">List item 2</span>
       </a>
@@ -96,7 +96,7 @@ If only a subset of the list items are navigable you should indicate those by di
         <span class="fd-list__icon sap-icon--history"></span>
         <span class="fd-list__title">List item 3</span>
   </li>
-  <li tabindex="0" role="listitem" class="fd-list__item is-selected">
+  <li tabindex="0" role="listitem" class="fd-list__item">
         <span class="fd-list__title">List item 4</span>
         <span class="fd-list__icon sap-icon--map"></span>
   </li>
@@ -115,7 +115,7 @@ If only a subset of the list items are navigable you should indicate those by di
 
 {% capture secondary-data %}
 <ul class="fd-list" role="list">
-  <li role="listitem" tabindex="0" class="fd-list__item is-selected">
+  <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
       <span class="fd-list__secondary fd-has-color-status-1">Positive</span>
   </li>
@@ -140,7 +140,7 @@ If only a subset of the list items are navigable you should indicate those by di
 
 {% capture list-with-icons %}
 <ul class="fd-list" role="list">
-  <li role="listitem" tabindex="0" class="fd-list__item is-selected">
+  <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__icon sap-icon--cart"></span>
       <span class="fd-list__title">List item 1</span>
   </li>
@@ -165,10 +165,10 @@ If only a subset of the list items are navigable you should indicate those by di
 
 {% capture list-with-group-header %}
 <ul class="fd-list" role="list">
-  <li role="listitem" tabindex="0" class="fd-list__group-header">
+  <li role="listitem" class="fd-list__group-header">
     Group Header 1
   </li>
-  <li role="listitem" tabindex="0" class="fd-list__item is-selected">
+  <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
@@ -177,7 +177,7 @@ If only a subset of the list items are navigable you should indicate those by di
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 3</span>
   </li>
-  <li role="listitem" tabindex="0" class="fd-list__group-header">
+  <li role="listitem" class="fd-list__group-header">
     Group Header 2
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
@@ -201,7 +201,7 @@ If only a subset of the list items are navigable you should indicate those by di
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
   </li>
-  <li role="listitem" tabindex="0" class="fd-list__item is-selected">
+  <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 2</span>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
@@ -210,7 +210,7 @@ If only a subset of the list items are navigable you should indicate those by di
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 4</span>
   </li>
-  <li role="listitem" tabindex="0" class="fd-list__footer">
+  <li role="listitem" class="fd-list__footer">
     Footer text
   </li>
 </ul>
@@ -225,7 +225,7 @@ If only a subset of the list items are navigable you should indicate those by di
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
   </li>
-  <li role="listitem" tabindex="0" class="fd-list__item is-selected">
+  <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 2</span>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
@@ -241,7 +241,7 @@ If only a subset of the list items are navigable you should indicate those by di
 
 ## Selection
 {% capture list-selection %}
-<ul class="fd-list fd-list--selection" role="list">
+<ul class="fd-list fd-list--selection" role="listbox">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox" id="Ai4ez1">
@@ -268,7 +268,7 @@ If only a subset of the list items are navigable you should indicate those by di
 <br><br>
 <h4>Compact Size</h4>
 
-<ul class="fd-list fd-list--selection fd-list--compact fd-list--no-border" role="list">
+<ul class="fd-list fd-list--selection fd-list--compact fd-list--no-border" role="listbox">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez4">
@@ -295,7 +295,7 @@ If only a subset of the list items are navigable you should indicate those by di
 <br><br>
 <h4>Borderless Design</h4>
 
-<ul class="fd-list fd-list--selection fd-list--no-border" role="list">
+<ul class="fd-list fd-list--selection fd-list--no-border" role="listbox">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox" id="Ai4ez7">
@@ -322,7 +322,7 @@ If only a subset of the list items are navigable you should indicate those by di
 <br><br>
 <h4>Links</h4>
 
-<ul class="fd-list fd-list--selection fd-list--navigation" role="list">
+<ul class="fd-list fd-list--selection fd-list--navigation" role="listbox">
   <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
     <div class="fd-form-item fd-list__form-item">
         <input type="checkbox" class="fd-checkbox" id="Ai4ez7A">
@@ -355,7 +355,7 @@ If only a subset of the list items are navigable you should indicate those by di
 <br><br>
 <h4>Links With Navigation Indication</h4>
 
-<ul class="fd-list fd-list--selection fd-list--navigation fd-list--navigation-indication" role="list">
+<ul class="fd-list fd-list--selection fd-list--navigation fd-list--navigation-indication" role="listbox">
   <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
     <div class="fd-form-item fd-list__form-item">
         <input type="checkbox" class="fd-checkbox" id="Ai4ez7ATY">
@@ -385,7 +385,7 @@ If only a subset of the list items are navigable you should indicate those by di
 
 <br><br>
 <h4>Links With Navigation Indication - Compact</h4>
-<ul class="fd-list fd-list--selection fd-list--compact fd-list--navigation fd-list--navigation-indication" role="list">
+<ul class="fd-list fd-list--selection fd-list--compact fd-list--navigation fd-list--navigation-indication" role="listbox">
   <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
     <div class="fd-form-item fd-list__form-item">
         <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez7ATYCOM">
@@ -430,7 +430,7 @@ For a two-column byline you need to add the `fd-list__byline--2-col` modifier cl
         <div class="fd-list__byline">Byline (description)</div>
       </div>
   </li>
-  <li role="listitem" tabindex="0" class="fd-list__item is-selected">
+  <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="sap-icon--employee fd-list__thumbnail"></span>
       <div class="fd-list__content">
         <div class="fd-list__title">List Item With No Byline</div>
@@ -620,7 +620,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         </div>
     </div>
   </li>
-  <li role="listitem" tabindex="0" class="fd-list__item is-selected">
+  <li role="listitem" tabindex="0" class="fd-list__item">
     <span class="sap-icon--world fd-list__thumbnail"></span>
     <div class="fd-list__content">
         <div class="fd-list__title">List Item With Two-Column Byline and Semantic Byline Second Item</div>
@@ -639,7 +639,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 ## Standard List with Byline and Selection
 
 {% capture list-byline-selection %}
-<ul class="fd-list fd-list--selection fd-list--byline" role="list">
+<ul class="fd-list fd-list--selection fd-list--byline" role="listbox">
   <li role="listitem" tabindex="0" class="fd-list__item is-selected">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox" id="Ai4ez6111Z" checked>
@@ -681,7 +681,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 <br><br>
 <h4>Compact Size</h4>
 
-<ul class="fd-list fd-list--compact fd-list--selection fd-list--byline" role="list">
+<ul class="fd-list fd-list--compact fd-list--selection fd-list--byline" role="listbox">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6115V">
@@ -723,7 +723,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 
 <br><br>
 <h4>Borderless Design</h4>
-<ul class="fd-list fd-list--selection fd-list--no-border fd-list--byline" role="list">
+<ul class="fd-list fd-list--selection fd-list--no-border fd-list--byline" role="listbox">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox" id="Ai4ez6118M">
@@ -764,7 +764,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 
 <br><br>
 <h4>Compact Borderless Design</h4>
-<ul class="fd-list fd-list--compact fd-list--selection fd-list--no-border fd-list--byline" role="list">
+<ul class="fd-list fd-list--compact fd-list--selection fd-list--no-border fd-list--byline" role="listbox">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
           <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6118MR">
@@ -812,7 +812,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 ## Standard List with Byline, Selection and Navigation
 
 {% capture list-byline-selection-navigation %}
-<ul class="fd-list fd-list--selection fd-list--byline fd-list--navigation" role="list">
+<ul class="fd-list fd-list--selection fd-list--byline fd-list--navigation" role="listbox">
   <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
     <div class="fd-form-item fd-list__form-item">
         <input type="checkbox" class="fd-checkbox" id="Ai4ez6111">
@@ -860,7 +860,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 <br><br>
 <h4>Compact Size</h4>
 
-<ul class="fd-list fd-list--selection fd-list--compact fd-list--byline fd-list--navigation" role="list">
+<ul class="fd-list fd-list--selection fd-list--compact fd-list--byline fd-list--navigation" role="listbox">
   <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
     <div class="fd-form-item fd-list__form-item">
         <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6115">
@@ -908,7 +908,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 
 <br><br>
 <h4>Borderless Design</h4>
-<ul class="fd-list fd-list--selection fd-list--no-border fd-list--byline fd-list--navigation" role="list">
+<ul class="fd-list fd-list--selection fd-list--no-border fd-list--byline fd-list--navigation" role="listbox">
   <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
     <div class="fd-form-item fd-list__form-item">
         <input type="checkbox" class="fd-checkbox" id="Ai4ez6118">
@@ -956,7 +956,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 
 <br><br>
 <h4>Compact Borderless Design</h4>
-<ul class="fd-list fd-list--compact fd-list--selection fd-list--no-border fd-list--byline fd-list--navigation" role="list">
+<ul class="fd-list fd-list--compact fd-list--selection fd-list--no-border fd-list--byline fd-list--navigation" role="listbox">
   <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
     <div class="fd-form-item fd-list__form-item">
         <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6118CO">
@@ -1009,7 +1009,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 ## Standard List with Byline, Selection, Navigation and Navigation Indication
 
 {% capture list-byline-selection-navigation-indication %}
-<ul class="fd-list fd-list--selection fd-list--byline fd-list--navigation fd-list--navigation-indication" role="list">
+<ul class="fd-list fd-list--selection fd-list--byline fd-list--navigation fd-list--navigation-indication" role="listbox">
   <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
     <div class="fd-form-item fd-list__form-item">
         <input type="checkbox" class="fd-checkbox" id="Ai4ez6111N">
@@ -1055,7 +1055,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 <br><br>
 <h4>Compact Size</h4>
 
-<ul class="fd-list fd-list--selection fd-list--compact fd-list--byline fd-list--navigation fd-list--navigation-indication" role="list">
+<ul class="fd-list fd-list--selection fd-list--compact fd-list--byline fd-list--navigation fd-list--navigation-indication" role="listbox">
   <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
     <div class="fd-form-item fd-list__form-item">
         <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6115N">
@@ -1101,7 +1101,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 
 <br><br>
 <h4>Borderless Design</h4>
-<ul class="fd-list fd-list--selection fd-list--no-border fd-list--byline fd-list--navigation fd-list--navigation-indication" role="list">
+<ul class="fd-list fd-list--selection fd-list--no-border fd-list--byline fd-list--navigation fd-list--navigation-indication" role="listbox">
   <li role="listitem" tabindex="0" class="fd-list__item">
     <div class="fd-form-item fd-list__form-item">
         <input type="checkbox" class="fd-checkbox" id="Ai4ez6118N">
@@ -1147,7 +1147,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 
 <br><br>
 <h4>Compact Borderless Design</h4>
-<ul class="fd-list fd-list--compact fd-list--selection fd-list--no-border fd-list--byline fd-list--navigation fd-list--navigation-indication" role="list">
+<ul class="fd-list fd-list--compact fd-list--selection fd-list--no-border fd-list--byline fd-list--navigation fd-list--navigation-indication" role="listbox">
   <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
     <div class="fd-form-item fd-list__form-item">
         <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6118CON">
