@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.2"></a>
+# [0.9.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.1...v0.9.0-rc.2) (2020-04-24)
+
+
+### Features
+
+* Adapt time to fiori3 ([#801](https://github.com/SAP/fundamental-styles/issues/801)) ([a429870](https://github.com/SAP/fundamental-styles/commit/a429870))
+
+
+
 <a name="0.9.0-rc.1"></a>
 # [0.9.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.0...v0.9.0-rc.1) (2020-04-24)
 
