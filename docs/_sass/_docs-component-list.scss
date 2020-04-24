@@ -18,8 +18,8 @@ $grid-transition-delay: 100ms;
     &__item {
         background: $grid-item-bg-color;
         position: relative;
-        height: 280px;
-        min-width: 300px;
+        height: 270px;
+        min-width: 270px;
         z-index: 1;
         transition: all ease-in-out $grid-transition-delay;
 
@@ -79,6 +79,6 @@ $grid-transition-delay: 100ms;
     &__img {
         min-height: 1px;
         -ms-interpolation-mode: bicubic;
-        width: 17.5rem;
+        width: 15.5rem;
     }
 }
