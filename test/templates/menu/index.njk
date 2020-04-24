@@ -57,7 +57,7 @@
   {{ format(example) }}
 
   <br/><br/><br/>
-  <h2>menu with icons</h2>
+  <h2>menu with icons and shortcut</h2>
   {% set example %}
   {{ menu(properties={
             items: [
@@ -67,7 +67,8 @@
               { "label": "Option 4- both icons", "icon": "past", "secondaryIcon": "cart" }
             ],
             addon_before: true,
-            addon_after: true
+            addon_after: true,
+            shortcut: true
         },
         modifier=["addon-before"])
 }}

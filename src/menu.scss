@@ -5,69 +5,88 @@
 $block: #{$fd-namespace}-menu;
 
 .#{$block} {
-  // LOCAL VARS (set all themeable properties, always include !default)
-  // items
-  $fd-menu-item-color: var(--sapList_TextColor) !default;
-  $fd-menu-item-color--active: var(--sapList_Active_TextColor) !default;
+  // Menu
+  $fd-menu-border-radius: var(--sapElement_BorderCornerRadius) !default;
 
-  $fd-menu-item-background-color: var(--sapList_Background) !default;
-  $fd-menu-item-background-color--hover: var(--sapList_Hover_Background) !default;
-  $fd-menu-item-background-color--active: var(--sapList_Active_Background) !default;
-  $fd-menu-item-background-color--selected: var(--sapList_SelectionBackgroundColor) !default;
-  $fd-menu-item-background-color--selected-hover: var(--sapList_Hover_SelectionBackground) !default;
+  // Menu Item
+  $fd-menu-item-color-active: var(--sapList_Active_TextColor) !default;
 
-  $fd-menu-separator-color: var(--sapGroup_ContentBorderColor) !default;
+  // Menu Shortcut
+  $fd-menu-shortcut-padding-left: 1rem !default;
 
-  $fd-menu-primary-icon-color: var(--sapContent_NonInteractiveIconColor) !default;
-  $fd-menu-primary-icon-color-active-selected: var(--sapList_Active_TextColor) !default;
+  // Menu Link
+  $fd-menu-link-padding-top: 0.25rem !default;
+  $fd-menu-link-padding-left: -0.25rem !default;
+  $fd-menu-icon-width: 2.25rem !default;
+  $fd-menu-icon-width-compact: 2rem !default;
+  $fd-menu-icon-width-mobile: 2.75rem !default;
+  $fd-menu-icon-after-margin: 0 -1rem 0 0 !default;
+  $fd-menu-icon-before-margin: 0 0 0 -0.75rem !default;
+  $fd-menu-icon-before-margin-compact: 0 0 0 -0.5rem !default;
+  $fd-menu-icon-after-margin-compact: 0 -0.75rem 0 0 !default;
+  $fd-menu-icon-before-margin-mobile: 0 0 0 -1rem !default;
+  $fd-menu-icon-after-margin-mobile: 0 -1rem 0 0 !default;
+
+  // Menu Title
+  $fd-menu-title-font-family: var(--sapFontFamily) !default;
+
+  // Menu Icon
+  $fd-menu-icon-color: var(--sapContent_NonInteractiveIconColor) !default;
+
+  @mixin selected-menu-item() {
+    border-bottom: 0.0625rem solid var(--sapList_SelectionBorderColor);
+    background-color: var(--sapList_SelectionBackgroundColor);
+
+    .#{$block}__shortcut,
+    .#{$block}__addon-before,
+    .#{$block}__addon-after {
+      color: $fd-menu-icon-color;
+    }
+
+    @include fd-hover() {
+      &:not(:active):not(.is-active) {
+        background-color: var(--sapList_Hover_SelectionBackground);
+      }
+    }
+  }
 
   // BLOCK BASE *******************************************
-  // set all BLOCK reset and baseline styles
   @include fd-reset();
 
   width: 100%;
   max-width: 20rem;
 
-  &--full-width {
-    max-width: 100%;
-
-    .#{$block}__link {
-      max-width: 100%;
-    }
-  }
-
   &__list,
   &__sublist {
     @include fd-reset();
 
-    border-radius: inherit;
-    margin: 0;
-    padding: 0;
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    -webkit-box-direction: normal;
-    -webkit-box-orient: vertical;
+    list-style: none;
+    box-shadow: var(--sapContent_Shadow1);
+    border-radius: $fd-menu-border-radius;
+
+    &--no-shadow {
+      box-shadow: none;
+    }
   }
 
   &__sublist {
     @include fd-reset();
 
-    left: 100%;
-    right: initial;
     position: absolute;
     top: 0;
+    left: 100%;
     z-index: 2;
-    margin: 0.25rem 0 0 -0.25rem; // offset of submenu
+    margin: $fd-menu-link-padding-top 0 0 $fd-menu-link-padding-left;
+    width: 100%; // to fix IE issue
 
     @include fd-rtl() {
       right: 100%;
       left: initial;
-      margin: 0.25rem -0.25rem 0 0;
+      margin: $fd-menu-link-padding-top $fd-menu-link-padding-left 0 0;
     }
-
-    width: 100%;  // to fix IE issue
 
     &[aria-hidden='true'] {
       display: none;
@@ -75,281 +94,227 @@ $block: #{$fd-namespace}-menu;
   }
 
   &__list > li {
-    position: relative; // submenu's positioning relative to parent item
-    width: 100%;  // to ensure in mobile mode the width of parent is taken fully
-  }
-
-  &--compact {
-    @include fd-reset();
-
-    .#{$block}__link {
-      // for desktop mode
-      padding: 0.375rem 0.75rem 0.375rem 0.5rem; // line-height=20px so 2rem or 32px-20px=12px/2= 6px or 0.375rem each
-      height: 2rem;
-    }
-
-    .#{$block}__addon-before {
-      min-width: 2rem; // to account for item right padding of 12px or 0.75rem so 2rem-0.75rem = 1.25rem
-      width: 2rem; // to account for item right padding of 12px or 0.75rem so 2rem-0.75rem = 1.25rem
-      height: 1.25rem; // to account for item top padding of 6px or 0.375rem so 2rem-0.375rem-0.375rem = 1.25rem
-      margin: 0 0 0 -0.5rem;
-    }
-
-    .#{$block}__addon-after {
-      min-width: 2rem; // to account for item right padding of 12px or 0.75rem so 2rem-0.75rem = 1.25rem
-      width: 2rem; // to account for item right padding of 12px or 0.75rem so 2rem-0.75rem = 1.25rem
-      height: 1.25rem; // to account for item top padding of 6px or 0.375rem so 2rem-0.375rem-0.375rem = 1.25rem
-      margin: 0 -0.75rem 0 0;
-    }
-
-    // handle icons rtl modes
-    @include fd-rtl() {
-      .#{$block}__addon-before {
-        margin: 0 -0.75rem 0 0; // since before and after icons switch places, their margins also switch
-      }
-
-      .#{$block}__addon-after {
-        margin: 0 0 0 -0.5rem; // since before and after icons switch places, their margins also switch
-      }
-    }
-  }
-
-  &--mobile {      // for mobile mode
-    @include fd-reset();
-
-    max-width: none;
-
-    .#{$block}__link {
-      padding: 0.75rem 1rem 0.75rem 1rem; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each
-      height: 2.75rem;
-      width: 100%;
-      max-width: none;
-
-      .#{$block}__title {
-        max-width: 100%;
-      }
-    }
-
-    .#{$block}__addon-before {
-      min-width: 2.75rem; // to account for item right padding of 16px or 1rem so 2.75rem-1rem = 1.75rem
-      width: 2.75rem; // to account for item right padding of 16px or 1rem so 2.75rem-1rem = 1.75rem
-      height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
-      margin: 0 0 0 -1rem;
-    }
-
-    .#{$block}__addon-after {
-      min-width: 2.75rem; // to account for item right padding of 16px or 1rem so 2.75rem-1rem = 1.75rem
-      width: 2.75rem; // to account for item right padding of 16px or 1rem so 2.75rem-1rem = 1.75rem
-      height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
-      margin: 0 -1rem 0 0;
-    }
-
-    @include fd-rtl() {
-      .#{$block}__addon-before {
-        margin: 0 -1rem 0 0; // since before and after icons switch places, their margins also switch
-      }
-
-      .#{$block}__addon-after {
-        margin: 0 0 0 -1rem; // since before and after icons switch places, their margins also switch
-      }
-    }
-  }
-
-  @mixin selected-menu() {
-    .#{$block}__title {
-      color: $fd-menu-item-color;
-    }
-
-    background-color: $fd-menu-item-background-color--selected;
-    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
-
-    .#{$block}__addon-before,
-    .#{$block}__addon-after {
-      color: $fd-menu-primary-icon-color;
-    }
-
-    @include fd-hover() {
-      background-color: $fd-menu-item-background-color--selected-hover;
-    }
+    position: relative;
+    width: 100%;
   }
 
   &__separator {
     @include fd-reset();
 
-    height: 0.0625rem;
     width: 100%;
-    background-color: $fd-menu-separator-color;
+    height: 0.0625rem;
+    background-color: var(--sapGroup_ContentBorderColor);
   }
 
   &__item {
     @include fd-reset();
-    @include action-cursor();
 
-    border-radius: inherit;
-    background-color: $fd-menu-item-background-color;
-    position: relative;   // so that sub-menus align relatively to parent menu item
+    position: relative;
+    border-radius: 0;
+    background-color: var(--sapList_Background);
+
+    &:first-child {
+      border-top-right-radius: $fd-menu-border-radius;
+      border-top-left-radius: $fd-menu-border-radius;
+    }
+
+    &:last-child {
+      border-bottom-right-radius: $fd-menu-border-radius;
+      border-bottom-left-radius: $fd-menu-border-radius;
+    }
   }
 
   &__link {
     @include fd-reset();
+    @include action-cursor();
+    @include fd-fiori-focus();
 
-    border-radius: inherit;
+    text-decoration: none;
     display: flex;
     align-items: center;
-    max-width: 20rem;
-
-    // tablet cozy - will be default
-    padding: 0.75rem 1rem 0.75rem 0.75rem; // line-height=20px so 2.75rem or 44px-20px=24px/2= 12px or 0.75rem each
+    width: 100%;
+    border-radius: inherit;
     height: 2.75rem;
+    padding: 0.75rem 1rem 0.75rem 0.75rem;
 
     @include fd-hover() {
-      .#{$block}__title {
-        color: $fd-menu-item-color;
-      }
-
-      background-color: $fd-menu-item-background-color--hover;
-    }
-
-    @include fd-active() {
-      .#{$block}__title {
-        color: $fd-menu-item-color--active;
-      }
-
-      background-color: $fd-menu-item-background-color--active;
-
-      .#{$block}__addon-before,
-      .#{$block}__addon-after {
-        color: $fd-menu-primary-icon-color-active-selected;
-      }
-
-      .#{$block}__addon-after {
-        border-bottom-color: transparent;
-      }
+      background-color: var(--sapList_Hover_Background);
     }
 
     @include fd-selected() {
-      @include selected-menu();
+      @include selected-menu-item();
     }
 
-    &.is-expanded,
-    &[aria-selected='true'],
-    &[aria-expanded='true'] {
-      @include fd-selected();
-    }
+    @include fd-active() {
+      color: $fd-menu-item-color-active;
+      background-color: var(--sapList_Active_Background);
 
-    @include fd-fiori-focus();
+      .#{$block}__title {
+        color: $fd-menu-item-color-active;
+      }
+
+      .#{$block}__shortcut,
+      .#{$block}__addon-before,
+      .#{$block}__addon-after {
+        color: var(--sapList_Active_TextColor);
+      }
+    }
 
     @include fd-disabled() {
-      opacity: var(--sapContent_DisabledOpacity);
-      cursor: not-allowed;
-      text-decoration: none;
       pointer-events: none;
+      opacity: var(--sapContent_DisabledOpacity);
     }
 
-    &[aria-disabled='true'] {
-      @include fd-disabled();
+    &.has-child.is-expanded,
+    &.has-child[aria-expanded="true"] {
+      &:not(:active):not(.is-active) {
+        @include selected-menu-item();
+      }
+    }
+  }
+
+  &__title {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    width: 100%;
+    color: var(--sapList_TextColor);
+    font-size: var(--sapFontSize);
+    font-family: $fd-menu-title-font-family;
+  }
+
+  &__addon-before,
+  &__addon-after {
+    @include fd-reset();
+    @include fd-flex-center();
+
+    color: $fd-menu-icon-color;
+    width: $fd-menu-icon-width;
+    min-width: $fd-menu-icon-width;
+    height: 1.25rem;
+    font-size: var(--sapFontLargeSize);
+    background-color: transparent;
+  }
+
+  &__addon-before {
+    margin: $fd-menu-icon-before-margin;
+
+    @include fd-rtl() {
+      margin: $fd-menu-icon-after-margin;
+    }
+  }
+
+  &__addon-after {
+    flex: 0 0 auto;
+    margin: $fd-menu-icon-after-margin;
+
+    @include fd-rtl() {
+      margin: $fd-menu-icon-before-margin;
     }
 
-    .#{$block}__title {
-      @include fd-reset();
+    &--submenu {
+      @include fd-icon("navigation-right-arrow", "s");
 
-      width: 100%;
-      color: $fd-menu-item-color;
+      font-size: var(--sapFontSmallSize);
 
-      @include fd-weight("normal");
-
-      font-size: var(--sapFontSize);
-      font-family: var(--sapFontFamily);
-      text-decoration: none;
-
-      @include fd-ellipsis();
+      @include fd-rtl() {
+        @include fd-icon("navigation-left-arrow", "s");
+      }
     }
+  }
 
-    &.has-child {
-      @include selected-menu();
+  &__shortcut {
+    @include fd-reset();
+    @include fd-ellipsis();
 
-      &.is-expanded,
-      &[aria-expanded="true"] {
-        @include fd-selected() {
-          @include selected-menu();
+    display: flex;
+    flex-shrink: 0;
+    font-weight: normal;
+    font-family: $fd-menu-title-font-family;
+    color: var(--sapContent_NonInteractiveIconColor);
+    font-size: var(--sapFontSize);
+    padding-left: $fd-menu-shortcut-padding-left;
+
+    @include fd-rtl() {
+      padding-left: 0;
+      padding-right: $fd-menu-shortcut-padding-left;
+    }
+  }
+
+  &--full-width {
+    max-width: 100%;
+  }
+
+  &--compact {
+    .#{$block}__link {
+      padding: 0.375rem 0.75rem;
+      height: 2rem;
+
+      .#{$block}__addon-before,
+      .#{$block}__addon-after {
+        min-width: $fd-menu-icon-width-compact;
+        width: $fd-menu-icon-width-compact;
+      }
+
+      .#{$block}__addon-before {
+        margin: $fd-menu-icon-before-margin-compact;
+      }
+
+      .#{$block}__addon-after {
+        margin: $fd-menu-icon-after-margin-compact;
+      }
+
+      @include fd-rtl() {
+        .#{$block}__addon-before {
+          margin: $fd-menu-icon-after-margin-compact;
+        }
+
+        .#{$block}__addon-after {
+          margin: $fd-menu-icon-before-margin-compact;
         }
       }
     }
   }
 
-  &__addon-before {
-    @include fd-reset();
-    @include fd-flex-center();
+  &--mobile {
+    max-width: 100%;
 
-    // cozy tablet icon size
-    min-width: 2.25rem; // to account for item right padding of 16px or 1rem so 2.25rem-1rem = 1.25rem
-    width: 2.25rem; // to account for item right padding of 16px or 1rem so 2.25rem-1rem = 1.25rem
-    height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
-    margin: 0 0 0 -0.75rem;
+    .#{$block}__list,
+    .#{$block}__sublist {
+      border-radius: 0;
+      box-shadow: none;
+      position: static;
 
-    @include fd-rtl() {
-      margin: 0 -1rem 0 0; // since before and after icons switch places, their margins also switch
-    }
-
-    color: $fd-menu-primary-icon-color;
-
-    @include fd-active() {
-      color: $fd-menu-item-color--active;
-    }
-
-    @include fd-selected() {
-      color: $fd-menu-primary-icon-color;
-
-      @include fd-hover() {
-        color: $fd-menu-item-color--active;
+      .#{$block}__item {
+        border-radius: 0;
       }
-    }
 
-    display: flex;
-    background-color: transparent;
-    font-size: var(--sapFontLargeSize);
-  }
-
-  // for affordance icon to be used with submenu
-  &__addon-after {
-    @include fd-reset();
-    @include fd-flex-center();
-
-    flex: 0 0 auto;
-    display: flex;
-    color: $fd-menu-primary-icon-color;
-    // cozy tablet icon size
-    min-width: 2.25rem; // to account for item right padding of 16px or 1rem so 2.25rem-1rem = 1.25rem
-    width: 2.25rem; // to account for item right padding of 16px or 1rem so 2.25rem-1rem = 1.25rem
-    height: 1.25rem; // to account for item top padding of 12px or 0.75rem so 2.75rem-0.75rem-0.75rem = 1.25rem
-    margin: 0 -1rem 0 0;
-
-    @include fd-rtl() {
-      margin: 0 0 0 -0.75rem; // since before and after icons switch places, their margins also switch
-    }
-
-    @include fd-active() {
-      color: $fd-menu-item-color--active;
-    }
-
-    @include fd-selected() {
-      color: $fd-menu-primary-icon-color;
-
-      @include fd-hover() {
-        color: $fd-menu-item-color--active;
+      .#{$block}__link {
+        padding: 0.75rem 1rem;
       }
-    }
 
-    background-color: transparent;
-    font-size: var(--sapFontLargeSize);
+      .#{$block}__addon-before,
+      .#{$block}__addon-after {
+        min-width: $fd-menu-icon-width-mobile;
+        width: $fd-menu-icon-width-mobile;
+      }
 
-    &--submenu {
-      font-size: var(--sapFontSmallSize);
-      // for submenu modifier, we add the right(and left for rtl) arrow
-      @include fd-icon("navigation-right-arrow","s");
+      .#{$block}__addon-before {
+        margin: $fd-menu-icon-before-margin-mobile;
+      }
+
+      .#{$block}__addon-after {
+        margin: $fd-menu-icon-after-margin-mobile;
+      }
 
       @include fd-rtl() {
-        @include fd-icon("navigation-left-arrow","s");
+        .#{$block}__addon-before {
+          margin: $fd-menu-icon-after-margin-mobile;
+        }
+
+        .#{$block}__addon-after {
+          margin: $fd-menu-icon-before-margin-mobile;
+        }
       }
     }
   }
