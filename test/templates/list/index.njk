@@ -109,8 +109,39 @@
     ]
   } %}
 
+  {%- set byline_list_nav = {
+    "groups": [
+        {
+            "items": [
+                { "thumbnail": true, "title": "Title", "byline": "Byline (description)", "link": true, "navIndicator": true, "hasLink": true, "navigated": true },
+                { "thumbnail": true, "title": "Title", "selected": true, "link": true, "navIndicator": true, "hasLink": true },
+                { "thumbnail": true, "title": "Title", "active": true, "link": true, "navIndicator": true, "hasLink": true },
+                { "thumbnail": true, "title": "Title", "hover": true, "link": true, "navIndicator": true, "hasLink": true },
+                { "title": "Title", "byline": "Byline (description)", "link": true, "navIndicator": true, "hasLink": true, "navigated": true, "selected": true }
+            ]
+        }
+    ]
+  } %}
+
+  {%- set list_nav = {
+    "groups": [
+        {
+            "items": [
+                { "title": "Title", "link": true, "navIndicator": true, "hasLink": true },
+                { "title": "Title", "link": true, "navIndicator": true, "hasLink": true, "navigated": true },
+                { "title": "Title", "link": true, "navIndicator": true, "selected": true, "hasLink": true },
+                { "title": "Title", "link": true, "navIndicator": true, "selected": true, "hasLink": true, "navigated": true},
+                { "title": "Title", "link": true, "navIndicator": true, "hover": true, "hasLink": true },
+                { "title": "Title", "link": true, "navIndicator": true, "active": true, "hasLink": true }
+            ]
+        }
+    ]
+  } %}
+
 {% set modifiers = ["", "compact", "no-border"] %}
 {% set bylineModifiers = ["byline", "byline fd-list--compact", "byline fd-list--no-border"] %}
+{% set navModifiers = ["navigation fd-list--navigation-indication"] %}
+{% set navBylineModifiers = ["byline fd-list--navigation fd-list--navigation-indication"] %}
 
 {% block content %}
 
@@ -325,13 +356,24 @@
     {% endset %}
     {{ format(example) }}
 
-    <h2>Standard List with Byline, Semantic Byline Second Item and Selection</h2>
+    <h2>Standard List with Navigation (Links) and Navigation Indication</h2>
     {% set example %}
-        {%- for modifier in bylineModifiers %}
+        {%- for modifier in navModifiers %}
             {%- if modifier %}
                 <h3>{{ modifier }}</h3>
             {%- endif %}
-            {{ list(byline_semantic_list, toggles={"byline2col": true, "byline": true, "selection": true}, modifier=[modifier]) }}
+            {{ list(list_nav, toggles={"link": true, "navIndicator": true}, modifier=[modifier]) }}
+        {%- endfor %}
+    {% endset %}
+    {{ format(example) }}
+
+     <h2>Standard List with Byline, Navigation (Links) and Navigation Indication</h2>
+    {% set example %}
+        {%- for modifier in navBylineModifiers %}
+            {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+            {{ list(byline_list_nav, toggles={"link": true, "navIndicator": true}, modifier=[modifier]) }}
         {%- endfor %}
     {% endset %}
     {{ format(example) }}
