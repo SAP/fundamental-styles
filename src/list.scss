@@ -161,6 +161,25 @@ $semantic-color: (
         background: var(--sapList_Background);
       }
     }
+
+    @include fd-selected() {
+      background: var(--sapList_SelectionBackgroundColor);
+      border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+
+      .#{$block}__link {
+        @include fd-hover() {
+          background: var(--sapList_Hover_SelectionBackground);
+        }
+
+        @include fd-active() {
+          background: var(--sapList_Active_Background);
+
+          @include fd-hover() {
+            background: var(--sapList_Active_Background);
+          }
+        }
+      }
+    }
   }
 
   &__title,
@@ -271,27 +290,6 @@ $semantic-color: (
       @each $set-name, $color-set in $semantic-color {
         .#{$block}__byline-right--#{$set-name} {
           color: var(--sapList_Active_TextColor);
-        }
-      }
-    }
-  }
-
-  &__item {
-    @include fd-selected() {
-      background: var(--sapList_SelectionBackgroundColor);
-      border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
-
-      .#{$block}__link {
-        @include fd-hover() {
-          background: var(--sapList_Hover_SelectionBackground);
-        }
-
-        @include fd-active() {
-          background: var(--sapList_Active_Background);
-
-          @include fd-hover() {
-            background: var(--sapList_Active_Background);
-          }
         }
       }
     }
