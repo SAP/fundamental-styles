@@ -41,11 +41,7 @@
             "selected": true
           },
           {
-            "title": "List item 3 - Lorem ipsum dolor sit amet, consectetur sed do",
-            "active": true
-          },
-          {
-            "title": "List item 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+            "title": "List item 3 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
             "hover": true
           }
         ]
@@ -64,18 +60,15 @@
 			"secondary": "More information needed"
           },
           {
-            "title": "List item 2 (Selected)",
-            "selected": true,
+            "title": "List item 2",
 			"secondary": "More"
           },
           {
             "title": "List item 3 - Lorem ipsum dolor sit amet, consectetur sed do",
-            "active": true,
 			"secondary": "Information"
           },
           {
             "title": "List item 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
-            "hover": true,
 			"secondary": "Very long text for information Very long text for information Very long text for information Very long text for information "
           }
         ]
@@ -139,7 +132,9 @@
   } %}
 
 {% set modifiers = ["", "compact", "no-border"] %}
+{% set modifiersSelection = ["selection", "compact fd-list--selection", "no-border fd-list--selection"] %}
 {% set bylineModifiers = ["byline", "byline fd-list--compact", "byline fd-list--no-border"] %}
+{% set bylineModifiersSelection = ["byline fd-list--selection", "byline fd-list--compact fd-list--selection", "byline fd-list--no-border fd-list--selection"] %}
 {% set navModifiers = ["navigation fd-list--navigation-indication"] %}
 {% set navBylineModifiers = ["byline fd-list--navigation fd-list--navigation-indication"] %}
 
@@ -191,7 +186,7 @@
 
     <h2>Selection</h2>
     {% set example %}
-        {%- for modifier in modifiers %}
+        {%- for modifier in modifiersSelection %}
             {%- if modifier %}
                 <h3>{{ modifier }}</h3>
             {%- endif %}
@@ -211,7 +206,7 @@
     {% endset %}
     {{ format(example) }}
 
-    <h2>Group Headers and Footer with Selected and Active states</h2>
+    <h2>Group Headers and Footer</h2>
     {% set example %}
         {%- for modifier in modifiers %}
             {%- if modifier %}
@@ -257,7 +252,7 @@
 	{% endset %}
 	{{ format(example) }}
 
-	<h2>Multi Input with active and selected state, plus footer</h2>
+	<h2>Multi Input with selected state, plus footer</h2>
 	{% set example %}
 		{%- for modifier in modifiers %}
 			{%- if modifier %}
@@ -268,7 +263,7 @@
 	{% endset %}
 	{{ format(example) }}
 
-	<h2>Multi Input with active and selected state, plus footer and message</h2>
+	<h2>Multi Input with selected state, plus footer and message</h2>
 	{% set example %}
 		{%- for modifier in modifiers %}
 			{%- if modifier %}
@@ -290,40 +285,7 @@
 	{% endset %}
 	{{ format(example) }}
 
-	<h2>Dropdown with active and selected state</h2>
-	{% set example %}
-		{%- for modifier in modifiers %}
-			{%- if modifier %}
-				<h3>{{ modifier }}</h3>
-			{%- endif %}
-			{{ list(dropdown_list, toggles={"dropdown": true}, modifier=[modifier]) }}
-		{%- endfor %}
-	{% endset %}
-	{{ format(example) }}
-
-	<h2>Dropdown with active and selected state, plus message</h2>
-	{% set example %}
-		{%- for modifier in modifiers %}
-			{%- if modifier %}
-				<h3>{{ modifier }}</h3>
-			{%- endif %}
-			{{ list(dropdown_list, toggles={"dropdown": true, "hasMessage": true}, modifier=[modifier]) }}
-		{%- endfor %}
-	{% endset %}
-	{{ format(example) }}
-
-	<h2>Dropdown with active and selected state, plus message and 2 columns</h2>
-	{% set example %}
-		{%- for modifier in modifiers %}
-			{%- if modifier %}
-				<h3>{{ modifier }}</h3>
-			{%- endif %}
-			{{ list(dropdown_list, toggles={"dropdown": true, "useSecondary": true, "hasMessage": true}, modifier=[modifier]) }}
-		{%- endfor %}
-	{% endset %}
-	{{ format(example) }}
-
-	<h2>Dropdown with active and selected state, plus message and 2 columns, overflow no wrap</h2>
+	<h2>Dropdown with plus message and 2 columns, overflow no wrap</h2>
 	{% set example %}
 		{%- for modifier in modifiers %}
 			{%- if modifier %}
@@ -352,6 +314,17 @@
                 <h3>{{ modifier }}</h3>
             {%- endif %}
             {{ list(byline_semantic_list, toggles={"byline2col": true, "byline": true}, modifier=[modifier]) }}
+        {%- endfor %}
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>Standard List with Byline, Semantic Byline Second Item and Selection</h2>
+    {% set example %}
+        {%- for modifier in bylineModifiersSelection %}
+            {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+            {{ list(byline_semantic_list, toggles={"byline2col": true, "byline": true, "selection": true}, modifier=[modifier]) }}
         {%- endfor %}
     {% endset %}
     {{ format(example) }}

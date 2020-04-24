@@ -306,7 +306,21 @@ body {
 .form-item-playground {
   margin: 0;
   padding: 0;
+  padding: 0.6875rem;
+  display: flex;
+}
+.form-item-playground::after {
+  content: '';
+  min-height: 1.375rem;
+  min-width: 1.375rem;
   background-color: thistle;
-  min-height: 1.5rem;
-  min-width: 1.5rem;
+}
+
+.fd-list--compact .form-item-playground {
+  padding: 0.5rem;
+}
+
+.fd-list--compact .form-item-playground::after {
+  min-height: 1rem;
+  min-width: 1rem;
 }
