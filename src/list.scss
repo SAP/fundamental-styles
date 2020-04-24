@@ -11,6 +11,53 @@
     .fd-list+(__item, __label, _input,  __title, __message, __footer)+(--no-wrap)
 */
 
+$block: #{$fd-namespace}-list;
+$form-item: #{$fd-namespace}-form-item;
+
+$fd-list-item-padding-x: 1rem;
+$fd-dropdown-vertical-padding: 0.75rem;
+$fd-dropdown-vertical-compact-padding: 0.5rem;
+$fd-checkbox-dimensions: 1.375rem;
+$fd-list-last-item-bottom-border-radius: var(--sapElement_BorderCornerRadius) !default;
+$fd-list-form-item-margin-x: -1rem;
+$fd-list-large-font-size: var(--sapFontLargeSize);
+$fd-list-normal-font-size: var(--sapFontSize);
+
+// STANDARD LIST WITH BYLINE
+$fd-list-byline-thumbnail-dimensions: 3rem !default;
+$fd-list-byline-thumbnail-border-radius: 0.25rem !default;
+$fd-list-byline-thumbnail-spacing: 0.75rem !default;
+$fd-list-byline-item-height: 5rem !default;
+$fd-list-byline-text-line-height: 1rem !default;
+$fd-list-byline-elements-spacing: 0.5rem !default;
+$fd-list-byline-item-padding-x: 1rem !default;
+$fd-list-byline-item-padding-y: 1rem !default;
+$fd-list-byline-borderless-item-padding-y: 0.5rem !default;
+$fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
+$fd-list-form-item-margin-top: -0.5rem !default;
+$fd-list-byline-form-item-top-offset: 0.3125rem !default;
+$fd-list-byline-form-item-compact-top-offset: 0.5rem !default;
+$fd-list-byline-form-item-left-offset: 0.375rem !default;
+$fd-list-byline-form-item-label-top-offset: 0.375rem !default;
+
+// STANDARD LIST WITH NAVIGATION
+$fd-list-navigation-indicator-width: 2.5rem !default;
+$fd-list-navigation-navigator-bar-right: inset -0.1875rem 0 0 0 var(--sapSelectedColor);
+$fd-list-navigation-navigator-bar-left: inset 0.1875rem 0 0 0 var(--sapSelectedColor);
+$fd-list-navigation-indicator-width: 2.75rem !default;
+
+// STANDARD LIST WITH SELECTION
+$fd-list-selection-container-width: 2.75rem !default;
+$fd-list-selection-container-compact-width: 2rem !default;
+
+$semantic-color: (
+  "neutral": ("color": var(--sapNeutralTextColor)),
+  "positive": ("color": var(--sapPositiveTextColor)),
+  "critical": ("color": var(--sapCriticalTextColor)),
+  "negative": ("color": var(--sapNegativeTextColor)),
+  "informative": ("color": var(--sapInformativeTextColor))
+);
+
 @mixin fake-list-outline($outlineColor: var(--sapContent_FocusColor)) {
   &:focus,
   &.is-focus {
@@ -29,43 +76,58 @@
   }
 }
 
-$block: #{$fd-namespace}-list;
-$form-item: #{$fd-namespace}-form-item;
+@mixin padding-left-right($left, $right) {
+  padding-left: $left;
+  padding-right: $right;
+
+  @include fd-rtl() {
+    padding-left: $right;
+    padding-right: $left;
+  }
+}
+
+@mixin padding-top-bottom($padding-y) {
+  padding-top: $padding-y;
+  padding-bottom: $padding-y;
+}
+
+@mixin reset-list-item-paddings {
+  .#{$block}__item--link {
+    padding: 0;
+  }
+}
+
+@mixin navigation-byline-borderless {
+  .#{$block}__item--link {
+    .#{$block}__link {
+      @include padding-top-bottom(0.5rem);
+    }
+  }
+
+  .#{$block}__item--link:first-child {
+    padding-top: 0;
+    .#{$block}__link {
+      padding-top: 1rem;
+    }
+
+    .#{$block}__link--navigation-indicator::after {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .#{$block}__item--link:last-child {
+    padding-bottom: 0;
+    .#{$block}__link {
+      padding-bottom: 1rem;
+    }
+
+    .#{$block}__link--navigation-indicator::after {
+      margin-top: 0.25rem;
+    }
+  }
+}
 
 .#{$block} {
-  $fd-list-horizontal-padding: 1rem;
-  $fd-dropdown-vertical-padding: 0.75rem;
-  $fd-dropdown-vertical-compact-padding: 0.5rem;
-  $fd-checkbox-dimensions: 1.375rem;
-  $fd-list-last-item-bottom-border-radius: var(--sapElement_BorderCornerRadius) !default;
-  $fd-list-form-item-margin-x: -1rem;
-  $fd-list-large-font-size: var(--sapFontLargeSize);
-  $fd-list-normal-font-size: var(--sapFontSize);
-
-  // STANDARD LIST WITH BYLINE
-  $fd-list-byline-thumbnail-dimensions: 3rem !default;
-  $fd-list-byline-thumbnail-border-radius: 0.25rem !default;
-  $fd-list-byline-thumbnail-spacing: 0.75rem !default;
-  $fd-list-byline-item-height: 5rem !default;
-  $fd-list-byline-text-line-height: 1rem !default;
-  $fd-list-byline-elements-spacing: 0.5rem !default;
-  $fd-list-byline-item-padding-x: 1rem !default;
-  $fd-list-byline-item-padding-y: 1rem !default;
-  $fd-list-byline-borderless-item-padding-y: 0.5rem !default;
-  $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
-  $fd-list-form-item-margin-top: -0.5rem !default;
-
-  // STANDARD LIST WITH NAVIGATION
-  $fd-list-navigation-indicator-width: 2.5rem !default;
-
-  $semantic-color: (
-    "neutral": ("color": var(--sapNeutralTextColor)),
-    "positive": ("color": var(--sapPositiveTextColor)),
-    "critical": ("color": var(--sapCriticalTextColor)),
-    "negative": ("color": var(--sapNegativeTextColor)),
-    "informative": ("color": var(--sapInformativeTextColor))
-  );
-
   @include fd-reset();
 
   position: relative;
@@ -79,29 +141,16 @@ $form-item: #{$fd-namespace}-form-item;
 
     display: flex;
     align-items: center;
-    padding: 0 $fd-list-horizontal-padding;
+    padding: 0 $fd-list-item-padding-x;
     height: 2.75rem;
   }
 
   &__item {
+    @include fake-list-outline();
+
     border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
     background: var(--sapList_Background);
     position: relative;
-
-    @include fd-hover() {
-      background: var(--sapList_Hover_Background);
-    }
-
-    @include fake-list-outline();
-
-    @include fd-selected() {
-      background: var(--sapList_SelectionBackgroundColor);
-      border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
-
-      @include fd-hover() {
-        background: var(--sapList_Hover_SelectionBackground);
-      }
-    }
 
     &--no-data {
       .#{$block}__title {
@@ -111,16 +160,6 @@ $form-item: #{$fd-namespace}-form-item;
       @include fd-hover() {
         background: var(--sapList_Background);
       }
-    }
-  }
-
-  &__form-item,
-  &__form-item.#{$form-item} {
-    margin-left: $fd-list-form-item-margin-x;
-
-    @include fd-rtl() {
-      margin-right: $fd-list-form-item-margin-x;
-      margin-left: 0;
     }
   }
 
@@ -185,15 +224,27 @@ $form-item: #{$fd-namespace}-form-item;
 
   &__link {
     @include fd-reset();
+    @include fake-list-outline();
 
     display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 0 $fd-list-horizontal-padding;
+    padding: 0 $fd-list-item-padding-x;
     cursor: pointer;
 
-    @include fake-list-outline();
+    @include fd-hover() {
+      background: var(--sapList_Hover_Background);
+    }
+
+    @include fd-selected() {
+      background: var(--sapList_SelectionBackgroundColor);
+      border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+
+      @include fd-hover() {
+        background: var(--sapList_Hover_SelectionBackground);
+      }
+    }
 
     @include fd-active() {
       background: var(--sapList_Active_Background);
@@ -220,6 +271,27 @@ $form-item: #{$fd-namespace}-form-item;
       @each $set-name, $color-set in $semantic-color {
         .#{$block}__byline-right--#{$set-name} {
           color: var(--sapList_Active_TextColor);
+        }
+      }
+    }
+  }
+
+  &__item {
+    @include fd-selected() {
+      background: var(--sapList_SelectionBackgroundColor);
+      border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+
+      .#{$block}__link {
+        @include fd-hover() {
+          background: var(--sapList_Hover_SelectionBackground);
+        }
+
+        @include fd-active() {
+          background: var(--sapList_Active_Background);
+
+          @include fd-hover() {
+            background: var(--sapList_Active_Background);
+          }
         }
       }
     }
@@ -312,13 +384,13 @@ $form-item: #{$fd-namespace}-form-item;
   &--dropdown {
     .#{$block}__item {
       height: auto;
-      padding: $fd-dropdown-vertical-padding $fd-list-horizontal-padding;
+      padding: $fd-dropdown-vertical-padding $fd-list-item-padding-x;
     }
 
     &.#{$block}--compact {
       .#{$block}__item {
         height: auto;
-        padding: $fd-dropdown-vertical-compact-padding $fd-list-horizontal-padding;
+        padding: $fd-dropdown-vertical-compact-padding $fd-list-item-padding-x;
       }
     }
   }
@@ -373,7 +445,7 @@ $form-item: #{$fd-namespace}-form-item;
 
     .#{$block}__footer,
     .#{$block}__label {
-      padding: $fd-dropdown-vertical-padding $fd-list-horizontal-padding;
+      padding: $fd-dropdown-vertical-padding $fd-list-item-padding-x;
     }
 
     &.#{$block}--compact {
@@ -392,7 +464,7 @@ $form-item: #{$fd-namespace}-form-item;
 
       .#{$block}__footer,
       .#{$block}__label {
-        padding: $fd-dropdown-vertical-compact-padding $fd-list-horizontal-padding;
+        padding: $fd-dropdown-vertical-compact-padding $fd-list-item-padding-x;
       }
     }
   }
@@ -449,82 +521,13 @@ $form-item: #{$fd-namespace}-form-item;
     }
   }
 
-  &--navigation {
-    .#{$block}__item {
-      padding: 0;
-    }
-  }
-
-  &--navigation-indication {
-    .#{$block}__item {
-      padding: 0;
-    }
-
-    .#{$block}__link {
-      padding-right: 0;
-
-      &::after {
-        min-width: $fd-list-navigation-indicator-width;
-        content: '';
-      }
-
-      &--navigation-indicator {
-        &::after {
-          @include fd-flex-center();
-
-          height: 100%;
-          font-family: "SAP-icons";
-          content: '\e1ed';
-          color: var(--sapContent_NonInteractiveIconColor);
-          font-size: var(--sapFontSmallSize);
-          text-decoration: none;
-          text-transform: none;
-        }
-
-        @include fd-rtl() {
-          &::after {
-            content: '\e1ee';
-          }
-        }
-      }
-
-      @include fd-rtl() {
-        padding-right: $fd-list-byline-item-padding-x;
-        padding-left: 0;
-      }
-    }
-
-    .#{$block}__icon {
-      &:last-child {
-        margin: 0;
-      }
-
-      @include fd-rtl() {
-        &:last-child {
-          margin: 0;
-        }
-      }
-    }
-  }
-
   // Standard List with Byline
   &--byline {
     .#{$block}__item {
       width: 100%;
       height: $fd-list-byline-item-height;
-      padding: $fd-list-byline-item-padding-x $fd-list-byline-item-padding-y;
+      padding: $fd-list-byline-item-padding-y $fd-list-byline-item-padding-x;
       align-items: flex-start;
-    }
-
-    .#{$block}__form-item,
-    .#{$block}__form-item.#{$form-item} {
-      margin-left: $fd-list-form-item-margin-x;
-      margin-top: -0.6875rem;
-
-      @include fd-rtl() {
-        margin-right: $fd-list-form-item-margin-x;
-        margin-left: 0;
-      }
     }
 
     .#{$block}__thumbnail {
@@ -619,11 +622,6 @@ $form-item: #{$fd-namespace}-form-item;
       .#{$block}__title {
         font-size: $fd-list-normal-font-size;
       }
-
-      .#{$block}__form-item,
-      .#{$block}__form-item.#{$form-item} {
-        margin-top: $fd-list-form-item-margin-top;
-      }
     }
 
     &.#{$block}--no-border {
@@ -640,21 +638,270 @@ $form-item: #{$fd-namespace}-form-item;
       .#{$block}__item:last-child {
         padding-bottom: $fd-list-byline-item-padding-y;
       }
+    }
+  }
+
+  // NAVIGATION INDICATION
+  &--navigation-indication {
+
+    .#{$block}__item {
+      &::after {
+        min-width: $fd-list-navigation-indicator-width - 1rem;
+        content: '';
+      }
+    }
+
+    .#{$block}__item.#{$block}__item--link {
+      &::after {
+        content: none;
+      }
+
+      padding-right: 0;
+
+      @include fd-rtl() {
+        padding-left: 0;
+        padding-right: initial;
+      }
+    }
+
+    .#{$block}__link {
+      &::after {
+        min-width: $fd-list-navigation-indicator-width;
+        content: '';
+      }
+
+      &--navigation-indicator {
+        &::after {
+          @include fd-flex-center();
+
+          height: 100%;
+          font-family: "SAP-icons";
+          content: '\e1ed';
+          color: var(--sapContent_NonInteractiveIconColor);
+          font-size: var(--sapFontSmallSize);
+          text-decoration: none;
+          text-transform: none;
+        }
+
+        @include fd-rtl() {
+          &::after {
+            content: '\e1ee';
+          }
+        }
+      }
+    }
+
+    .#{$block}__icon {
+      &:last-child {
+        margin: 0;
+      }
+
+      @include fd-rtl() {
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+
+    .is-navigated {
+      box-shadow: $fd-list-navigation-navigator-bar-right;
+
+      @include fd-rtl() {
+        box-shadow: $fd-list-navigation-navigator-bar-left;
+      }
+    }
+  }
+
+  // SELECTION
+  &--selection {
+    .#{$block}__item {
+      @include padding-left-right($fd-list-selection-container-width, $fd-list-item-padding-x);
+    }
+
+    .#{$block}__form-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+
+      @include fd-rtl() {
+        left: initial;
+        right: 0;
+      }
+    }
+
+    // SELECTION + Compact
+    &.#{$block}--compact {
+      .#{$block}__item {
+        @include padding-left-right($fd-list-selection-container-compact-width, $fd-list-item-padding-x);
+      }
+    }
+
+    // SELECTION + Byline
+    &.#{$block}--byline {
+      .#{$block}__item {
+        @include padding-left-right($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
+      }
+
+      .#{$block}__form-item {
+        top: $fd-list-byline-form-item-top-offset;
+      }
+    }
+
+    // SELECTION + BYLINE + Compact
+    &.#{$block}--byline.#{$block}--compact {
+      .#{$block}__item {
+        @include padding-left-right($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
+      }
+
+      .#{$block}__form-item {
+        top: $fd-list-byline-form-item-compact-top-offset;
+        left: $fd-list-byline-form-item-left-offset;
+
+        @include fd-rtl() {
+          left: initial;
+          right: $fd-list-byline-form-item-left-offset;
+        }
+      }
+    }
+
+    // SELECTION + BYLINE + Borderless
+    &.#{$block}--byline.#{$block}--no-border {
+      .#{$block}__item {
+        @include padding-left-right($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
+        @include padding-top-bottom($fd-list-byline-borderless-item-padding-y);
+
+        &:first-child {
+          padding-top: $fd-list-byline-item-padding-y;
+        }
+
+        &:last-child {
+          padding-bottom: $fd-list-byline-item-padding-y;
+        }
+      }
 
       .#{$block}__item:not(:first-child) {
         .#{$block}__form-item,
         .#{$block}__form-item.#{$form-item} {
-          margin-top: $fd-list-form-item-margin-top;
+          top: 0;
 
           label {
             padding-top: $fd-list-byline-borderless-item-padding-y;
 
             &::after {
-              top: 0.375rem;
+              top: $fd-list-byline-form-item-label-top-offset;
             }
           }
         }
       }
+    }
+  }
+
+  &--navigation {
+    @include reset-list-item-paddings();
+
+    .#{$block}__link {
+      @include padding-left-right($fd-list-item-padding-x, $fd-list-item-padding-x);
+    }
+
+    // NAVIGATION + Navigation Indication
+    &.#{$block}--navigation-indication {
+      .#{$block}__link {
+        @include padding-left-right($fd-list-item-padding-x, 0);
+      }
+    }
+
+    // NAVIGATION + Selection
+    &.#{$block}--selection {
+      @include reset-list-item-paddings();
+
+      .#{$block}__link {
+        @include padding-left-right($fd-list-selection-container-width, $fd-list-item-padding-x);
+      }
+    }
+
+    // NAVIGATION + SELECTION + Compact
+    &.#{$block}--selection.#{$block}--compact {
+      .#{$block}__link {
+        @include padding-left-right($fd-list-selection-container-compact-width, $fd-list-item-padding-x);
+      }
+    }
+
+    // NAVIGATION + SELECTION + Navigation Indication
+    &.#{$block}--selection.#{$block}--navigation-indication {
+      @include reset-list-item-paddings();
+
+      .#{$block}__link {
+        @include padding-left-right($fd-list-selection-container-width, 0);
+      }
+    }
+
+    // NAVIGATION + SELECTION + NAVIGATION INDICATION + Compact
+    &.#{$block}--selection.#{$block}--navigation-indication.#{$block}--compact {
+      .#{$block}__link {
+        @include padding-left-right($fd-list-selection-container-compact-width, 0);
+      }
+    }
+
+    // NAVIGATION + Byline
+    &.#{$block}--byline,
+    &.#{$block}--byline.#{$block}--compact {
+      @include reset-list-item-paddings();
+
+      .#{$block}__link {
+        @include padding-left-right($fd-list-byline-item-padding-x, $fd-list-byline-item-padding-x);
+        @include padding-top-bottom(1rem);
+      }
+    }
+
+    // NAVIGATION + BYLINE + Borderless
+    &.#{$block}--byline.#{$block}--no-border {
+      @include navigation-byline-borderless();
+    }
+
+    // NAVIGATION + BYLINE + Selection
+    &.#{$block}--byline.#{$block}--selection {
+      @include reset-list-item-paddings();
+
+      .#{$block}__link {
+        @include padding-left-right($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
+      }
+    }
+
+    // NAVIGATION + BYLINE + SELECTION + Compact
+    &.#{$block}--byline.#{$block}--selection.#{$block}--compact {
+      @include reset-list-item-paddings();
+
+      .#{$block}__link {
+        @include padding-left-right($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
+      }
+    }
+
+    // NAVIGATION + BYLINE + SELECTION + Borderless
+    &.#{$block}--byline.#{$block}--selection.#{$block}--no-border {
+      @include reset-list-item-paddings();
+      @include navigation-byline-borderless();
+    }
+
+    // NAVIGATION + BYLINE + SELECTION + Navigation Indication
+    &.#{$block}--byline.#{$block}--selection.#{$block}--navigation-indication {
+      @include reset-list-item-paddings();
+
+      .#{$block}__link {
+        @include padding-left-right($fd-list-selection-container-width, 0);
+      }
+    }
+
+    // NAVIGATION + BYLINE + SELECTION + NAVIGATION INDICATION + Compact
+    &.#{$block}--byline.#{$block}--selection.#{$block}--navigation-indication.#{$block}--compact {
+      .#{$block}__link {
+        @include padding-left-right($fd-list-selection-container-width, 0);
+      }
+    }
+
+    // NAVIGATION + BYLINE + SELECTION + NAVIGATION INDICATION + Borderless
+    &.#{$block}--byline.#{$block}--selection.#{$block}--navigation-indication.#{$block}--no-border {
+      @include navigation-byline-borderless();
     }
   }
 }
