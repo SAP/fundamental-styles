@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.2-rc.8"></a>
+## [0.8.2-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.8.2-rc.7...v0.8.2-rc.8) (2020-04-24)
+
+
+### Bug Fixes
+
+* Add Rtl support for form group ([#884](https://github.com/SAP/fundamental-styles/issues/884)) ([0caf54f](https://github.com/SAP/fundamental-styles/commit/0caf54f))
+
+
+
 <a name="0.8.2-rc.7"></a>
 ## [0.8.2-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.8.2-rc.6...v0.8.2-rc.7) (2020-04-23)
 
