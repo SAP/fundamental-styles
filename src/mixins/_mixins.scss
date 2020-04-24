@@ -385,3 +385,12 @@
   overflow: hidden;
   white-space: nowrap;
 }
+
+@mixin fd-remove-scrollbar {
+  &::-webkit-scrollbar {
+    display: none; // hide scrollbar but keep element scrollable for Chrome/Safari/Opera
+  }
+
+  -ms-overflow-style: none; // hide scrollbar but keep element scrollable for IE/Edge
+  scrollbar-width: none; // hide scrollbar on firefox
+}

@@ -7,31 +7,242 @@ $block: #{$fd-namespace}-time;
 .#{$block} {
   @include fd-reset();
 
-  width: 184px; // Quick fix to solve overflow issue
+  $fd-time-item-height: 2.875rem;
+  $fd-time-wrapper-height: 7 * $fd-time-item-height;
+  $fd-time-item-compact-height: 2rem;
+  $fd-time-wrapper-compact-height: 7 * $fd-time-item-compact-height;
+  $fd-time-dropdown-padding: 1rem;
+  $fd-time-dropdown-compact-padding: 0.5rem;
+  $fd-time-column-margin-x: 0.5rem;
+  $fd-time-item-width: 3rem;
 
-  &__item {
+  @include fd-flex() {
+    justify-content: center;
+  }
+
+  padding: $fd-time-dropdown-padding;
+
+  &__col {
     @include fd-reset();
 
-    display: inline-block;
-    max-width: fd-space(10);
-    text-align: center;
-    margin-right: fd-space(1);
+    @include fd-flex-vertical-center() {
+      flex-direction: column;
+    }
+
+    margin-right: $fd-time-column-margin-x;
 
     &:last-child {
       margin-right: 0;
     }
+  }
 
-    // Spacing and narrower side padding for child inputs
-    .#{$block}__input {
-      margin: fd-space(2) 0;
-      padding-left: fd-space(2);
-      padding-right: fd-space(2);
-      text-align: center;
-      width: 100%;
+  &__current-indicator {
+    @include fd-reset();
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    width: $fd-time-item-width;
+    height: $fd-time-item-height;
+    border: 0.0625rem solid var(--sapList_SelectionBorderColor);
+    border-radius: var(--sapButton_BorderCornerRadius);
+  }
+
+  &__wrapper {
+    @include fd-reset();
+
+    @include fd-flex-center() {
+      flex-direction: column;
+    }
+
+    overflow: hidden;
+    position: relative;
+    flex: 1 1 auto;
+    width: $fd-time-item-width;
+
+    &--active {
+      max-height: $fd-time-wrapper-height;
+      height: $fd-time-wrapper-height;
+      justify-content: initial;
+    }
+
+    &--meridian {
+      .#{$block}__item {
+        &:first-child {
+          margin-top: $fd-time-item-height * 3;
+        }
+
+        &:last-child {
+          margin-bottom: $fd-time-item-height * 3;
+        }
+      }
+
+      .#{$block}__list {
+        height: $fd-time-wrapper-height;
+      }
+    }
+  }
+
+  &__item {
+    @include fd-reset();
+    @include fd-flex-center();
+
+    cursor: default;
+    width: $fd-time-item-width;
+    height: $fd-time-item-height;
+    min-height: $fd-time-item-height;
+    border-radius: var(--sapButton_BorderCornerRadius);
+    background-color: var(--sapLegend_WorkingBackground);
+    border: 0.0625rem solid var(--sapList_Background);
+
+    &:hover {
+      background-color: var(--sapList_Hover_Background);
+    }
+
+    &:active {
+      background-color: var(--sapContent_Selected_Background);
+      border-color: transparent;
+      color: var(--sapContent_Selected_TextColor);
+    }
+
+    &--current {
+      border-color: var(--sapList_SelectionBorderColor);
+      background-color: var(--sapList_Background);
+
+      &:hover {
+        background-color: var(--sapList_Hover_Background);
+      }
+
+      &:active {
+        background-color: var(--sapContent_Selected_Background);
+        border-color: transparent;
+        color: var(--sapContent_Selected_TextColor);
+      }
+    }
+
+    &--collapsed {
+      background-color: var(--sapContent_Selected_Background);
+      color: var(--sapContent_Selected_TextColor);
+      border-color: transparent;
+
+      &:hover {
+        background-color: var(--sapContent_Selected_Hover_Background);
+      }
+    }
+
+    &--hidden {
+      visibility: hidden;
+    }
+  }
+
+  &__unit {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    text-align: center;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    line-height: $fd-time-item-height;
+  }
+
+  &__list {
+    @include fd-reset();
+    @include fd-remove-scrollbar();
+
+    overflow: hidden;
+  }
+
+  &__slider-label {
+    @include fd-form-label();
+
+    line-height: $fd-time-item-compact-height;
+    height: $fd-time-item-compact-height;
+    font-size: var(--sapFontSmallSize);
+    max-width: $fd-time-item-width;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+    padding: 0;
+    margin: 0;
+
+    @include fd-rtl() {
+      padding: 0;
+      margin: 0;
     }
   }
 
   &__control {
     @include fd-reset();
+  }
+
+  &--tablet {
+    padding: $fd-time-dropdown-compact-padding;
+
+    .#{$block}__item {
+      height: $fd-time-item-height;
+      min-height: $fd-time-item-height;
+    }
+  }
+
+  &--compact {
+    padding: $fd-time-dropdown-compact-padding;
+
+    .#{$block}__item {
+      height: $fd-time-item-compact-height;
+      min-height: $fd-time-item-compact-height;
+    }
+
+    .#{$block}__wrapper {
+      .#{$block}__current-indicator {
+        height: $fd-time-item-compact-height;
+      }
+
+      &.#{$block}__wrapper--active {
+        max-height: $fd-time-wrapper-compact-height;
+        height: $fd-time-wrapper-compact-height;
+      }
+
+      &.#{$block}__wrapper--meridian {
+        .#{$block}__item {
+          &:first-child {
+            margin-top: $fd-time-item-compact-height * 3;
+          }
+
+          &:last-child {
+            margin-bottom: $fd-time-item-compact-height * 3;
+          }
+        }
+
+        .#{$block}__list {
+          height: $fd-time-wrapper-compact-height;
+        }
+      }
+    }
+
+    .#{$block}__unit {
+      line-height: $fd-time-item-compact-height;
+    }
+  }
+
+  &--scrollable {
+    .#{$block}__list {
+      overflow: auto;
+    }
+  }
+
+  @include fd-rtl() {
+    .#{$block}__col {
+      margin-right: 0;
+      margin-left: $fd-time-column-margin-x;
+
+      &:last-child {
+        margin-left: 0;
+      }
+    }
   }
 }

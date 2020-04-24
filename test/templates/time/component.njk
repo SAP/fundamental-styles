@@ -10,20 +10,32 @@ time:
 {%- macro time(properties={}, modifier=[], aria=[]) -%}
 <div class="fd-time{{ modifier | modifier('time') }}"{{ aria | aria }}>
   {%- for item in properties.items %}
-    {{ time_item(item) }}
+  	<div class="fd-time__col">
+  		<label class="fd-time__slider-label fd-form-label">{{item.label}}</label>
+  		{%- if item.active %}
+			<button class="btn-playground"></button>
+    	{%- endif %}
+  		<div class="fd-time__wrapper{{ ' fd-time__wrapper--active' if item.active }}{{' fd-time__wrapper--meridian' if item.meridian}}">
+			<ul class="fd-time__list">
+				{{ time_item(item) }}
+			</ul>
+		</div>
+  		{%- if item.active %}
+			<button class="btn-playground"></button>
+    	{%- endif %}
+    </div>
   {%- endfor %}
 </div>
 {%- endmacro %}
 
 {%- macro time_item(properties={}) -%}
 {%- set _id = utils.id() %}
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="btn-playground"></button>
-      </div>
-      <input class="fd-time__input input-playground input-playground--full-width" type="text" placeholder="{{properties.placeholder}}" value="{{properties.value}}" id="{{ _id }}" aria-label="{{properties.label | capitalize }}"/>
-      <div class="fd-time__control">
-          <button class="btn-playground"></button>
-      </div>
-  </div>
+  	{%- for item in properties.values %}
+	<li class="fd-time__item{{' fd-time__item--collapsed' if properties.values.length === 1}}">
+		<span class="fd-time__unit">{{item.item}}</span>
+    	{%- if item.current %}
+		   <div class="fd-time__current-indicator"></div>
+    	{%- endif %}
+	</li>
+  	{%- endfor %}
 {%- endmacro %}
