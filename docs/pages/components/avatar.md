@@ -1,7 +1,7 @@
 ---
 title: Avatar
 id: avatar
-keywords: icon, avatar
+keywords: icon, avatar, identifier
 sidebar: left-navigation-sidebar
 toc: false
 permalink: components/avatar.html
@@ -12,12 +12,11 @@ Avatar is a way to visually present something using an icon or user initials.
 {: .docs-intro}
 
 There are multiple sizes:
-- Default matches the base font size (14px)
-- Extra Small (`--xs` - 28px)
-- Small (`--s`) - 32px
-- Medium (`--m`) - 48px
-- Large (`--l`) - 64px
-- Extra Large (`--xl`) - 80px
+- Extra Small (`--xs` - 2rem)
+- Small (`--s`) - 3rem
+- Medium (`--m`) - 4rem
+- Large (`--l`) - 5rem
+- Extra Large (`--xl`) - 7rem
 
 <br>
 

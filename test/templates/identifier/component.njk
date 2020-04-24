@@ -1,0 +1,11 @@
+<!--
+identifier:
+    properties={},
+    modifier={ block: [] },
+    state={},
+    aria={}
+-->
+{% macro identifier(properties={}, modifier={}, state={}, aria={}, classes="") -%}
+{%- set thumb %}{%- if properties.thumbnail %}style="background-image: url({{properties.thumbnail}})"{%- endif %}{%- endset %}
+<span class="fd-identifier{{ modifier.block | modifier('identifier') }}{{ ' sap-icon--'+properties.icon if properties.icon and not properties.thumbnail }}{{ state | state }}{{ classes | classes }}" {{ thumb }}{{ aria | aria }}>{{ properties.initials if properties.initials }}</span>
+{%- endmacro %}

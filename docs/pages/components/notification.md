@@ -60,7 +60,7 @@ Add the modifier class `fd-notification--success` for Success notification.
     <div class="fd-notification__body">
         <div class="fd-notification__content">
             <div class="fd-notification__avatar">
-                <span class="fd-avatar fd-avatar--s fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
+                <span class="fd-avatar fd-avatar--xs fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
             </div>
             <div class="fd-notification__text">
                 <div class="fd-notification__description">
@@ -96,7 +96,7 @@ Add the modifier class `fd-notification--warning` for Warning notification.
     <div class="fd-notification__body">
         <div class="fd-notification__content">
             <div class="fd-notification__avatar">
-                <span class="fd-avatar fd-avatar--s fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
+                <span class="fd-avatar fd-avatar--xs fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
             </div>
             <div class="fd-notification__text">
                 <div class="fd-notification__description">
@@ -133,7 +133,7 @@ Add the modifier class `fd-notification--error` for Error notification.
     <div class="fd-notification__body">
         <div class="fd-notification__content">
             <div class="fd-notification__avatar">
-                <span class="fd-avatar fd-avatar--s fd-has-background-color-accent-9" aria-label="Wendy Wallace">WW</span>
+                <span class="fd-avatar fd-avatar--xs fd-has-background-color-accent-9" aria-label="Wendy Wallace">WW</span>
             </div>
             <div class="fd-notification__text">
                 <div class="fd-notification__description">
@@ -169,7 +169,7 @@ Add the modifier class `fd-notification--information` for Information notificati
     <div class="fd-notification__body">
         <div class="fd-notification__content">
             <div class="fd-notification__avatar">
-                <span class="fd-avatar fd-avatar--s" aria-label="Wendy Wallace">WW</span>
+                <span class="fd-avatar fd-avatar--xs" aria-label="Wendy Wallace">WW</span>
             </div>
             <div class="fd-notification__text">
                 <div class="fd-notification__description">
@@ -206,7 +206,7 @@ Medium (m) size notifications have width from 320px to 640px. Include the modifi
     <div class="fd-notification__body">
         <div class="fd-notification__content">
             <div class="fd-notification__avatar">
-                <span class="fd-avatar fd-avatar--s fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
+                <span class="fd-avatar fd-avatar--xs fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
             </div>
             <div class="fd-notification__text">
                 <div class="fd-notification__description">
@@ -242,7 +242,7 @@ Small (s) size notifications have width 320px . Include the modifier class `fd-n
     <div class="fd-notification__body">
         <div class="fd-notification__content">
             <div class="fd-notification__avatar">
-                <span class="fd-avatar fd-avatar--s" aria-label="Wendy Wallace">WW</span>
+                <span class="fd-avatar fd-avatar--xs" aria-label="Wendy Wallace">WW</span>
             </div>
             <div class="fd-notification__text">
                 <div class="fd-notification__description">
@@ -273,7 +273,7 @@ Small (s) size notifications have width 320px . Include the modifier class `fd-n
     <div class="fd-notification__body">
         <div class="fd-notification__content">
             <div class="fd-notification__avatar">
-                <span class="fd-avatar fd-avatar--s" aria-label="Wendy Wallace">WW</span>
+                <span class="fd-avatar fd-avatar--xs" aria-label="Wendy Wallace">WW</span>
             </div>
             <div class="fd-notification__text">
                 <div class="fd-notification__description">
@@ -304,7 +304,7 @@ Notifications can be grouped together in a container with a class `fd-notificati
         <div class="fd-notification__body">
             <div class="fd-notification__content">
                 <div class="fd-notification__avatar">
-                    <span class="fd-avatar fd-avatar--s fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
+                    <span class="fd-avatar fd-avatar--xs fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
                 </div>
                 <div class="fd-notification__text">
                     <div class="fd-notification__description">
@@ -333,7 +333,7 @@ Notifications can be grouped together in a container with a class `fd-notificati
         <div class="fd-notification__body">
             <div class="fd-notification__content">
                 <div class="fd-notification__avatar">
-                    <span class="fd-avatar fd-avatar--s fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
+                    <span class="fd-avatar fd-avatar--xs fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
                 </div>
                 <div class="fd-notification__text">
                     <div class="fd-notification__description">
@@ -362,7 +362,7 @@ Notifications can be grouped together in a container with a class `fd-notificati
         <div class="fd-notification__body">
             <div class="fd-notification__content">
                 <div class="fd-notification__avatar">
-                    <span class="fd-avatar fd-avatar--s fd-has-background-color-accent-9" aria-label="Wendy Wallace">WW</span>
+                    <span class="fd-avatar fd-avatar--xs fd-has-background-color-accent-9" aria-label="Wendy Wallace">WW</span>
                 </div>
                 <div class="fd-notification__text">
                     <div class="fd-notification__description">
@@ -391,7 +391,7 @@ Notifications can be grouped together in a container with a class `fd-notificati
         <div class="fd-notification__body">
             <div class="fd-notification__content">
                 <div class="fd-notification__avatar">
-                    <span class="fd-avatar fd-avatar--s" aria-label="Wendy Wallace">WW</span>
+                    <span class="fd-avatar fd-avatar--xs" aria-label="Wendy Wallace">WW</span>
                 </div>
                 <div class="fd-notification__text">
                     <div class="fd-notification__description">
@@ -427,7 +427,7 @@ Notifications can be grouped together in a container with a class `fd-notificati
         <div class="fd-notification__body">
             <div class="fd-notification__content">
                 <div class="fd-notification__avatar">
-                    <span class="fd-avatar fd-avatar--s" aria-label="Wendy Wallace">WW</span>
+                    <span class="fd-avatar fd-avatar--xs" aria-label="Wendy Wallace">WW</span>
                 </div>
                 <div class="fd-notification__text">
                     <div class="fd-notification__description">
@@ -456,7 +456,7 @@ Notifications can be grouped together in a container with a class `fd-notificati
         <div class="fd-notification__body">
             <div class="fd-notification__content">
                 <div class="fd-notification__avatar">
-                    <span class="fd-avatar fd-avatar--s fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
+                    <span class="fd-avatar fd-avatar--xs fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
                 </div>
                 <div class="fd-notification__text">
                     <div class="fd-notification__description">

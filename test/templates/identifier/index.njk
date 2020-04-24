@@ -1,0 +1,75 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./component.njk" import identifier %}
+
+{% block content %}
+
+{% set sizes = ["xxs","xs","s","m","l","xl","xxl"] %}
+
+<h3>sizes</h3>
+{%- set example %}
+  {%- for size in sizes %}
+    {{ identifier(
+          properties={ icon: data.properties.icon },
+          modifier={ block: [size] }
+      )
+    }}
+  {%- endfor %}
+{%- endset %}
+{{ format(example) }}
+
+<h3>--thumbnail</h3>
+{%- set example %}
+{%- for size in sizes %}
+{{  identifier(
+    properties=data.properties,
+    modifier={
+        block: [size,"thumbnail"]
+    },
+    aria=data.aria
+)
+}}
+{%- endfor %}
+{%- endset %}
+{{ format(example) }}
+
+<h3>--circle</h3>
+{%- set example %}
+  {% for size in sizes %}
+  {{  identifier(
+          properties={
+                  icon: "money-bills"
+          },
+          modifier={
+              block: [size, "circle"]
+          },
+          aria={
+            role: "presentation"
+          }
+      )
+  }}
+  {%- endfor %}
+  {%- endset %}
+{{ format(example) }}
+
+
+<h3>--transparent</h3>
+{%- set example %}
+  {% for size in sizes %}
+    {{  identifier(
+            properties={
+                    icon: "money-bills"
+            },
+            modifier={
+                block: [size, "transparent"]
+            },
+            aria={
+              role: "presentation"
+            }
+        )
+    }}
+  {%- endfor %}
+{%- endset %}
+{{ format(example) }}
+
+{% endblock %}

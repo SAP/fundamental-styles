@@ -1,0 +1,24 @@
+{
+  "id": "identifier",
+  "name": "Identifier",
+  "properties": {
+    "initials": "WW",
+    "icon": "washing-machine",
+    "thumbnail": "/static/nature.jpg"
+  },
+  "modifier": {
+    "block": [
+      "xxs",
+      "xs",
+      "s",
+      "m",
+      "l",
+      "xl",
+      "xxl"
+    ]
+  },
+  "state": {},
+  "aria": {
+    "label": "Wendilee Wallingham"
+  }
+}
