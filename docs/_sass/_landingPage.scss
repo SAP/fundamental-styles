@@ -343,7 +343,7 @@ body {
   &__container {
     display: grid;
     grid-gap: 24px;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
   }
 
   &__item {
@@ -368,6 +368,7 @@ body {
 }
 
 .footer-section {
+  width: 100%;
   margin: 16px 120px 0;
   padding: 16px 0;
   @extend %text;
