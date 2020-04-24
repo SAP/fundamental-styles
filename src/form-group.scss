@@ -21,10 +21,6 @@ $block: #{$fd-namespace}-form-group;
   &--inline {
     display: flex;
     justify-content: flex-start;
-
-    :not(:last-child) {
-      margin-right: fd-space(4);
-    }
   }
 
   &__item {
