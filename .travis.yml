@@ -13,7 +13,9 @@ jobs:
   include:
   - stage: Lint, Test and Size
     # script: npm run lint && npm run test:ci-config && npm run test && npm run size
-    script: npm run build:prod && npm run size
+    script:
+      - npm run build:prod
+      - npm run size
   - stage: Pre-release
     if: branch = master
     before_deploy:
