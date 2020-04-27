@@ -305,7 +305,8 @@ Do not use the text area if
 <br>
 
 ## Form Select
-The Form Select component is similar to a dropdown but is more commonly used within a form. It can also be set to a disabled state.
+> **DEPRECATED**. Form Select does not exist as a Fiori 3 component so it has been deprecated.
+> Instead of it use [Custom Select Component]({{site.baseurl}}/components/select.html).
 
 {% capture select %}
     <div class="fd-form-item">
