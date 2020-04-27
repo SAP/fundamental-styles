@@ -33,7 +33,7 @@ module.exports = {
                     const wasLessChanged = Object.keys(filesChanged).some((file) => file.includes('.scss'));
 
                     if (wasLessChanged) {
-                        exec('npm run style:compile', (err, stdout, stderr) => {
+                        exec('npm run build', (err, stdout, stderr) => {
                             if (stdout) process.stdout.write(stdout);
                             if (stderr) process.stderr.write(stderr);
                         });
