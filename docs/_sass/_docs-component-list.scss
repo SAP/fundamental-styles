@@ -15,42 +15,37 @@ $grid-transition-delay: 100ms;
         box-sizing: border-box;
     }
 
-    &--item {
+    &__item {
         background: $grid-item-bg-color;
         position: relative;
-        height: 280px;
+        height: 270px;
+        min-width: 270px;
         z-index: 1;
         transition: all ease-in-out $grid-transition-delay;
 
         display: flex;
         flex-direction: column;
-        padding: 5rem 1rem;
+        padding: 4rem 0.5rem;
         align-items: center;
         justify-content: flex-end;
 
-        @include media("<=tablet") {
-            
-                width: 100%;
-            
-        }
-        @include media(">=tablet") {
-            
-                width: 50%;
-                padding: 5rem 1rem;
-
-        }
         @include media(">=desktop") {
-            
-                width: (4/12)*100%;
-              
+            width: (4/12)*100%;
         }
-
         @include media(">=display") {
-            
-            width: (2/12)*100%;
-            padding: 5rem 1rem;
+            width: 25%;
+            padding: 4rem 3rem;
         }
-        
+        @media screen and (max-width: 1300px) {
+            width: 50%;
+            padding: 4rem 2rem;
+        }
+        @media screen and (max-width: 600px) {
+            width: 100%;
+            height: 200px;
+            padding: 2rem 2rem;
+            justify-content: center;
+        }
 
         &:hover {
             background-color: $grid-item-bg-color;
@@ -81,371 +76,9 @@ $grid-transition-delay: 100ms;
         margin: 0 auto;
     }
     
-    &--img {
-
-        &__action-bar {
-            width: 95%;
-        }
-
-        &__bar {
-            width: 95%;
-        }
-
-        &__busy-indicator {
-            width: 100%;
-        }
-
-        &__button {
-            width: 40%;
-        }
-
-        &__contextual-menu {
-            width: 40%;
-        }
-
-        &__dropdown {
-            width: 70%;
-        }
-
-        &__icons {
-            width: 70%;
-        }
-
-        &__identifier {
-            width: 65%;
-        }
-
-        &__image {
-            width: 30%;
-        }
-
-        &__inline-help {
-            width: 70%;
-        }
-
-        &__link {
-            width: 55%;
-        }
-
-        &__list {
-            width: 75%;
-        }
-
-        &__form {
-            width: 70%;
-
-        }
-
-        &__info-label {
-            width: 70%;
-        }
-
-        &__input-group {
-            width: 70%;
-        }
-
-        &__list-group {
-            width: 90%;
-        }
-
-        &__loading-spinner {
-            width: 25%;
-        }
-
-        &__dialog {
-            width: 50%;
-        }
-
-        &__message-strip {
-            width: 70%;
-        }
-
-        &__multi-input {
-            width: 75%;
-        }
-
-        &__pagination {
-            width: 90%;
-        }
-
-        &__select {
-            width: 40%;
-        }
-
-        &__side-navigation {
-            width: 30%;
-        }
-
-        &__shellbar {
-            width: 90%;
-        }
-
-        &__status-indicators {
-            width: 70%;
-        }
-
-        &__switch {
-            width: 20%;
-        }
-
-        &__table {
-            width: 90%;
-        }
-
-        &__tabs {
-            width: 90%;
-        }
-
-        &__tile {
-            width: 90%;
-        }
-
-        &__toolbar {
-            width: 95%;
-        }
-
-        &__tree {
-            width: 90%;
-        }
-    }
-
-    @include media("<=tablet") {
-        &--img {
-            &__action-bar {
-                width: 80%;
-            }
-
-            &__bar {
-                width: 80%;
-            }
-
-            &__busy-indicator {
-                width: 40%;
-            }
-
-            &__message-strip {
-                width: 40%;
-            }
-
-            &__button {
-                width: 30%;
-            }
-
-            &__combobox-input {
-                width: 30%;
-            }
-
-            &__contextual-menu {
-                width: 20%;
-            }
-
-            &__identifier {
-                width: 40%;
-            }
-
-            &__image {
-                width: 15%;
-            }
-
-            &__inline-help {
-                width: 40%;
-            }
-
-            &__link {
-                width: 25%;
-            }
-
-            &__list {
-                width: 30%;
-            }
-
-            &__form {
-                width: 35%;
-            }
-
-            &__input-group {
-                    width: 40%;
-            }
-
-            &__list-group {
-                width: 90%;
-            }
-
-            &__loading-spinner {
-                width: 12%;
-            }
-
-            &__dialog {
-                width: 25%;
-            }
-
-            &__multi-input {
-                width: 75%;
-            }
-
-            &__pagination {
-                width: 80%;
-            }
-
-            &__select {
-                width: 20%;
-            }
-
-            &__side-navigation {
-                width: 12%;
-            }
-
-            &__shellbar {
-                width: 80%;
-            }
-
-            &__switch {
-                width: 10%;
-            }
-
-            &__table {
-                width: 45%;
-            }
-
-            &__tabs {
-                width: 50%;
-            }
-
-            &__tile {
-                width: 50%;
-            }
-
-            &__toolbar {
-                width: 95%;
-            }
-
-            &__tree {
-                width: 50%;
-            }
-        }
-    }
-
-    @include media(">=desktop") {
-        &--img {
-            &__action-bar {
-                    width: 50%;
-            }
-
-            &__bar {
-                width: 80%;
-            }
-
-            &__busy-indicator {
-                    width: 40%;
-            }
-
-            &__message-strip {
-                width: 30%;
-            }
-
-            &__button {
-                width: 25%;
-            }
-
-            &__combobox-input {
-                width: 45%;
-            }
-
-            &__contextual-menu {
-                width: 25%;
-            }
-
-            &__dropdown {
-                width: 70%;
-            }
-
-            &__icons {
-                width: 70%;
-            }
-
-            &__identifier {
-                width: 40%;
-            }
-
-            &__image {
-                width: 10%;
-            }
-
-            &__inline-help {
-                width: 30%;
-            }
-
-            &__link {
-                width: 25%;
-            }
-
-            &__list {
-                width: 30%;
-            }
-
-            &__form {
-                width: 25%;
-            }
-
-            &__input-group {
-                width: 40%;
-            }
-
-            &__loading-spinner {
-                width: 12%;
-            }
-
-            &__product-switch {
-                width:30%;
-            }
-
-            &__dialog {
-                width: 20%;
-            }
-
-            &__pagination {
-                width: 80%;
-            }
-
-            &__select {
-                width: 20%;
-            }
-
-            &__side-navigation {
-                width: 12%;
-            }
-
-            &__shellbar {
-                width: 80%;
-            }
-
-            &__switch {
-                width: 10%;
-            }
-
-            &__table {
-                width: 45%;
-            }
-
-            &__tabs {
-                width: 50%;
-            }
-
-            &__tile {
-                width: 50%;
-            }
-
-            &__tree {
-                width: 50%;
-            }
-        }
-    }
-
-    @include media(">=display") {
-        &--img {
-            &__contextual-menu {
-                width: 20%;
-            }
-        }
+    &__img {
+        min-height: 1px;
+        -ms-interpolation-mode: bicubic;
+        width: 15.5rem;
     }
 }

@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     background-color: $docs-home-white-color;
-    min-height: 6rem;
-    padding: 0 1rem;
+    min-height: 5.5rem;
+    padding: 0 1.5rem;
 
     &__logo {
         display: inline-block;
@@ -26,7 +26,7 @@
         line-height: 1.25;
         font-weight: 400;
         display: inline-block;
-        @include media("<=tablet") {
+        @media screen and (max-width: 950px) {
             display: none;
         }
         &--link {
@@ -38,10 +38,9 @@
     &__mobile {
         width: 100%;
 
-        @include media("<=tablet") {
+        @media screen and (max-width: 950px) {
             display: flex;
             justify-content: space-between;
-            padding: 0 1rem;
             align-items: center;
         }
     }

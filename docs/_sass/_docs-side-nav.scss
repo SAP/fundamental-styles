@@ -10,7 +10,7 @@ $side-nav-links-color: $docs-home-white-color;
     width: 290px;
     min-width: 290px;
 
-    @include media("<=tablet") {
+    @media screen and (max-width: 950px) {
         width: auto;
         display: none;
         &.fd-styles__mobile-list {
@@ -37,7 +37,7 @@ $side-nav-links-color: $docs-home-white-color;
         &-link {
             color: $side-nav-links-color !important;
             font-family: '72', sans-serif;
-            padding: 1rem 0rem 1rem 1rem;
+            padding: 1.25rem 0rem 1.25rem 1.5rem;
             display: block;
             &:hover {
                 color: $side-nav-links-color;

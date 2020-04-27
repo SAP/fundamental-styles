@@ -8,7 +8,7 @@
         background-color: $docs-home-grey-color;
         color: $docs-home-dark-color;
         padding-top: 100px;
-        @include media("<=tablet") {
+        @media screen and (max-width: 950px) {
             padding-top: 0;
         }
 
@@ -17,7 +17,7 @@
             font-weight: 100;
             line-height: 1.1;
             text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.09);
-            @include media("<=tablet") {
+            @media screen and (max-width: 950px) {
                 font-size: 40px;
             }
         }
@@ -28,7 +28,7 @@
 
         &-content {
             padding: 100px;
-            @include media("<=tablet") {
+            @media screen and (max-width: 950px) {
                 padding: 20px;
             }
         }
@@ -50,7 +50,7 @@
             line-height: 0;
             padding: 20px;
             border: none;
-            @include media("<=tablet") {
+            @media screen and (max-width: 950px) {
                 margin-top: 20px;
                 margin-bottom: 20px;
             }
@@ -74,7 +74,7 @@
     &_panel {
         padding: 100px;
         background: $docs-home-white-color;
-        @include media("<=tablet") {
+        @media screen and (max-width: 950px) {
             padding: 20px;
         }
 
