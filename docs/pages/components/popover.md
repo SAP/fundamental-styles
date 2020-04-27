@@ -53,7 +53,7 @@ There are four placement options:
     </div>
     <div class="fd-popover__body" aria-hidden="true" id="popoverA1">
         <nav class="fd-menu" id="">
-            <ul class="fd-menu__list">
+            <ul class="fd-menu__list fd-menu__list--no-shadow">
                 <li class="fd-menu__item">
                     <a class="fd-menu__link" href="#">
                         <span class="fd-menu__title">Option 1</span>
@@ -96,7 +96,7 @@ There are four placement options:
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverA3">
         <nav class="fd-menu" id="">
-            <ul class="fd-menu__list">
+            <ul class="fd-menu__list fd-menu__list--no-shadow">
                 <li class="fd-menu__item">
                     <a class="fd-menu__link" href="#">
                         <span class="fd-menu__title">Option 1</span>
@@ -128,7 +128,7 @@ There are four placement options:
     </div>
     <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverA4">
         <nav class="fd-menu" id="">
-            <ul class="fd-menu__list">
+            <ul class="fd-menu__list fd-menu__list--no-shadow">
                 <li class="fd-menu__item">
                     <a class="fd-menu__link" href="#">
                         <span class="fd-menu__title">Option 1</span>
@@ -182,7 +182,7 @@ There are four placement options:
             </div>
         </div>
         <nav class="fd-menu" id="">
-            <ul class="fd-menu__list">
+            <ul class="fd-menu__list fd-menu__list--no-shadow">
                 <li class="fd-menu__item">
                     <a class="fd-menu__link" href="#">
                         <span class="fd-menu__title">Option 1</span>
@@ -343,7 +343,7 @@ Virtually any component can be used as a `fd-popover__control` to control the di
     </div>
     <div class="fd-popover__body" aria-hidden="true" id="popoverB1">
         <nav class="fd-menu" id="">
-            <ul class="fd-menu__list">
+            <ul class="fd-menu__list fd-menu__list--no-shadow">
                 <li class="fd-menu__item">
                     <a class="fd-menu__link" href="#">
                         <span class="fd-menu__title">Option 1</span>
@@ -376,7 +376,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
     </div>
     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="popoverB2">
         <nav class="fd-menu" id="">
-            <ul class="fd-menu__list">
+            <ul class="fd-menu__list fd-menu__list--no-shadow">
                 <li class="fd-menu__item">
                     <a class="fd-menu__link" href="#">
                         <span class="fd-menu__title">Option 1</span>
@@ -410,7 +410,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB3">
         <nav class="fd-menu" id="">
-            <ul class="fd-menu__list">
+            <ul class="fd-menu__list fd-menu__list--no-shadow">
                 <li class="fd-menu__item">
                     <a class="fd-menu__link" href="#">
                         <span class="fd-menu__title">Option 1</span>
@@ -443,7 +443,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
     </div>
     <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverB4">
         <nav class="fd-menu" id="">
-            <ul class="fd-menu__list">
+            <ul class="fd-menu__list fd-menu__list--no-shadow">
                 <li class="fd-menu__item">
                     <a class="fd-menu__link" href="#">
                         <span class="fd-menu__title">Option 1</span>

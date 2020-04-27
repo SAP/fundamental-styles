@@ -63,7 +63,7 @@ This example shows the minimum shellbar for a single application product with on
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="WV3AY276">
           <nav class="fd-menu">
-            <ul class="fd-menu__list">
+            <ul class="fd-menu__list fd-menu__list--no-shadow">
               <li class="fd-menu__item">
                 <a role="button" class="fd-menu__link">
                   <span class="fd-menu__title">Settings</span>
@@ -105,7 +105,7 @@ This example includes the product menu for navigating to applications within the
       </div>
       <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="9GLB26941">
         <nav class="fd-menu">
-          <ul class="fd-menu__list">
+          <ul class="fd-menu__list fd-menu__list--no-shadow">
             <li class="fd-menu__item">
               <a role="button" class="fd-menu__link">
                 <span class="fd-menu__title">Application A</span>
@@ -157,7 +157,7 @@ This example includes the product menu for navigating to applications within the
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="ZY3AY276">
           <nav class="fd-menu">
-            <ul class="fd-menu__list">
+            <ul class="fd-menu__list fd-menu__list--no-shadow">
               <li class="fd-menu__item">
                 <a role="button" class="fd-menu__link">
                   <span class="fd-menu__title">Settings</span>
@@ -223,7 +223,7 @@ When a product has multiple links, the product links should collapse into an ove
             </div>
             <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="CWaGX278">
               <nav class="fd-menu">
-                <ul class="fd-menu__list">
+                <ul class="fd-menu__list fd-menu__list--no-shadow">
                   <li class="fd-menu__item">
                     <a role="button" class="fd-menu__link">
                       <span class="fd-menu__title">Search</span>
@@ -254,7 +254,7 @@ When a product has multiple links, the product links should collapse into an ove
           </div>
           <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="DD35G276">
             <nav class="fd-menu">
-              <ul class="fd-menu__list">
+              <ul class="fd-menu__list fd-menu__list--no-shadow">
                 <li class="fd-menu__item">
                   <a role="button" class="fd-menu__link">
                     <span class="fd-menu__title">Settings</span>
@@ -304,7 +304,7 @@ For more information about the Product Switch, see [Product Switch](product-swit
           </div>
           <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="MKFAY276">
             <nav class="fd-menu">
-              <ul class="fd-menu__list">
+              <ul class="fd-menu__list fd-menu__list--no-shadow">
                 <li class="fd-menu__item">
                   <a role="button" class="fd-menu__link">
                     <span class="fd-menu__title">Settings</span>
