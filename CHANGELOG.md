@@ -2,6 +2,116 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.5"></a>
+# [0.9.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.4...v0.9.0-rc.5) (2020-04-27)
+
+
+
+<a name="0.9.0-rc.4"></a>
+# [0.9.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.3...v0.9.0-rc.4) (2020-04-27)
+
+
+
+<a name="0.9.0-rc.3"></a>
+# [0.9.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.2...v0.9.0-rc.3) (2020-04-25)
+
+
+
+<a name="0.9.0-rc.2"></a>
+# [0.9.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.1...v0.9.0-rc.2) (2020-04-24)
+
+
+### Features
+
+* Adapt time to fiori3 ([#801](https://github.com/SAP/fundamental-styles/issues/801)) ([a429870](https://github.com/SAP/fundamental-styles/commit/a429870))
+
+
+
+<a name="0.9.0-rc.1"></a>
+# [0.9.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.0...v0.9.0-rc.1) (2020-04-24)
+
+
+### Bug Fixes
+
+* Apply fixes to Side nav's rtl ([#877](https://github.com/SAP/fundamental-styles/issues/877)) ([98b867f](https://github.com/SAP/fundamental-styles/commit/98b867f))
+
+
+
+<a name="0.9.0-rc.0"></a>
+# [0.9.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.8.2-rc.10...v0.9.0-rc.0) (2020-04-24)
+
+
+### Features
+
+* side navigation expand icon ([#825](https://github.com/SAP/fundamental-styles/issues/825)) ([5d39b0c](https://github.com/SAP/fundamental-styles/commit/5d39b0c))
+
+
+
+<a name="0.8.2-rc.10"></a>
+## [0.8.2-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.8.2-rc.9...v0.8.2-rc.10) (2020-04-24)
+
+
+### Bug Fixes
+
+* Introduce menu shortcut | Improve A11y | Fix Menu issues ([#855](https://github.com/SAP/fundamental-styles/issues/855)) ([d12304e](https://github.com/SAP/fundamental-styles/commit/d12304e))
+
+
+
+<a name="0.8.2-rc.9"></a>
+## [0.8.2-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.8.2-rc.8...v0.8.2-rc.9) (2020-04-24)
+
+
+
+<a name="0.8.2-rc.8"></a>
+## [0.8.2-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.8.2-rc.7...v0.8.2-rc.8) (2020-04-24)
+
+
+### Bug Fixes
+
+* Add Rtl support for form group ([#884](https://github.com/SAP/fundamental-styles/issues/884)) ([0caf54f](https://github.com/SAP/fundamental-styles/commit/0caf54f))
+
+
+
+<a name="0.8.2-rc.7"></a>
+## [0.8.2-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.8.2-rc.6...v0.8.2-rc.7) (2020-04-23)
+
+
+### Bug Fixes
+
+* add subtle link, improve the tests ([#815](https://github.com/SAP/fundamental-styles/issues/815)) ([d001ff5](https://github.com/SAP/fundamental-styles/commit/d001ff5)), closes [#786](https://github.com/SAP/fundamental-styles/issues/786)
+
+
+
+<a name="0.8.2-rc.6"></a>
+## [0.8.2-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.8.2-rc.5...v0.8.2-rc.6) (2020-04-23)
+
+
+### Bug Fixes
+
+* add Byline and Selection features to List component ([#863](https://github.com/SAP/fundamental-styles/issues/863)) ([dfd9b7a](https://github.com/SAP/fundamental-styles/commit/dfd9b7a))
+
+
+
+<a name="0.8.2-rc.5"></a>
+## [0.8.2-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.8.2-rc.4...v0.8.2-rc.5) (2020-04-21)
+
+
+
+<a name="0.8.2-rc.4"></a>
+## [0.8.2-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.8.2-rc.3...v0.8.2-rc.4) (2020-04-21)
+
+
+
+<a name="0.8.2-rc.3"></a>
+## [0.8.2-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.8.2-rc.2...v0.8.2-rc.3) (2020-04-17)
+
+
+### Bug Fixes
+
+* check if tag starts with 'v' not if contains v ([#864](https://github.com/SAP/fundamental-styles/issues/864)) ([b6544d4](https://github.com/SAP/fundamental-styles/commit/b6544d4))
+
+
+
 <a name="0.8.2-rc.2"></a>
 ## [0.8.2-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.8.2-rc.1...v0.8.2-rc.2) (2020-04-14)
 

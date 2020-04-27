@@ -6,6 +6,7 @@
 
     <!-- output the component example and the code snippet -->
     {% set example %}
+    <span>Normal Link:</span>
 {{  link(
         properties=data.properties,
         modifier={},
@@ -13,7 +14,7 @@
         aria={}
     )
 }}
-<br>
+<br><span>Hovered Link:</span>
 {{  link(
         properties=data.properties,
         modifier={
@@ -25,7 +26,7 @@
         }
     )
 }}
-<br>
+<br><span>Emphasized Link:</span>
 {{  link(
         properties=data.properties,
         modifier={
@@ -35,7 +36,17 @@
         aria={}
     )
 }}
-<br>
+<br><span>Subtle Link:</span>
+{{  link(
+        properties=data.properties,
+        modifier={
+            block: 'subtle'
+        },
+        state=data.state,
+        aria={}
+    )
+}}
+<br><span>Disabled Link:</span>
 {{  link(
         properties=data.properties,
         modifier={

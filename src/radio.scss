@@ -83,6 +83,17 @@ $block: #{$fd-namespace}-radio;
         margin-right: 0;
       }
     }
+
+    &:empty {
+      padding: $fd-radio-outer-circle-margin;
+      margin: 0;
+
+      &::before,
+      &::after {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
   }
 
   &:checked + .#{$block}__label::before {
@@ -115,6 +126,10 @@ $block: #{$fd-namespace}-radio;
   @include fd-focus() {
     + .#{$block}__label {
       @include fd-form-radio-focus($fd-radio-outer-circle-margin);
+    }
+
+    + .#{$block}__label:empty {
+      @include fd-form-radio-empty-focus($fd-radio-outer-circle-margin);
     }
   }
 
@@ -150,11 +165,26 @@ $block: #{$fd-namespace}-radio;
           margin-right: 0;
         }
       }
+
+      &:empty {
+        padding: $fd-radio-outer-circle-margin-compact;
+        margin: 0;
+
+        &::before,
+        &::after {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
     }
 
     @include fd-focus() {
       + .#{$block}__label {
         @include fd-form-radio-focus($fd-radio-outer-circle-margin-compact);
+      }
+
+      + .#{$block}__label:empty {
+        @include fd-form-radio-empty-focus($fd-radio-outer-circle-margin-compact);
       }
     }
   }

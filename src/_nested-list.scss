@@ -4,18 +4,34 @@
 
 $block: #{$fd-namespace}-nested-list;
 
-@mixin fd-nested-list-arrow {
-  font-family: "SAP-icons";
-  font-style: normal;
-  font-weight: normal;
-  color: var(--sapList_TextColor);
-  font-size: var(--sapFontHeader4Size);
-  text-decoration: inherit;
-  text-transform: none;
-  speak: none;
-}
-
 .#{$block} {
+  @mixin fd-nested-level-padding($paddingLeft, $paddingRight) {
+    .#{$block}__link,
+    .#{$block}__content {
+      padding-left: $paddingLeft;
+      padding-right: $paddingRight;
+      border-bottom: none;
+
+      @include fd-selected() {
+        border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+      }
+
+      &.has-child {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    .#{$block}__content {
+      &.has-child {
+        > .#{$block}__title {
+          padding-left: $paddingLeft;
+          padding-right: $paddingRight;
+        }
+      }
+    }
+  }
+
   @include fd-reset();
 
   list-style: none;
@@ -25,16 +41,7 @@ $block: #{$fd-namespace}-nested-list;
     .level-#{$i} {
       $paddingLeft: ($i - 2) + 2.75rem;
 
-      .#{$block}__link,
-      .#{$block}__content {
-        padding-left: $paddingLeft;
-        border-bottom: none;
-
-        @include fd-selected() {
-          border-bottom: var(--sapList_BorderWidth) solid;
-          border-bottom-color: var(--sapList_SelectionBorderColor);
-        }
-      }
+      @include fd-nested-level-padding($paddingLeft, 0);
     }
   }
 
@@ -43,20 +50,7 @@ $block: #{$fd-namespace}-nested-list;
       .level-#{$i} {
         $paddingRight: ($i - 2) + 2.75rem;
 
-        .#{$block}__link,
-        .#{$block}__content {
-          padding-right: $paddingRight;
-          padding-left: 0;
-        }
-
-        .#{$block}__item {
-          border-bottom: none;
-
-          @include fd-selected() {
-            border-bottom: var(--sapList_BorderWidth) solid;
-            border-bottom-color: var(--sapList_SelectionBorderColor);
-          }
-        }
+        @include fd-nested-level-padding(0, $paddingRight);
       }
     }
   }
@@ -76,13 +70,20 @@ $block: #{$fd-namespace}-nested-list;
     @include fd-reset();
 
     text-decoration: none;
-    height: 2.75rem;
     display: flex;
+    height: 2.75rem;
+    width: 100%;
     align-items: center;
     border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
 
     @include fd-hover() {
       background: var(--sapList_Hover_Background);
+    }
+
+    @include fd-fiori-focus();
+
+    &.is-expanded {
+      border-bottom: none;
     }
 
     @include fd-selected() {
@@ -103,47 +104,70 @@ $block: #{$fd-namespace}-nested-list;
       }
 
       .#{$block}__title,
-      .#{$block}__icon {
+      .#{$block}__icon,
+      .#{$block}__expand-icon {
         color: var(--sapList_Active_TextColor);
       }
     }
 
     &.has-child {
+      justify-content: space-between;
+      padding: 0;
+
+      > .#{$block}__link {
+        background: transparent;
+        border: none;
+        height: 100%;
+
+        > .#{$block}__title {
+          padding-right: 0;
+
+          @include fd-rtl() {
+            padding-left: 0;
+          }
+        }
+      }
+
+      > .#{$block}__link,
+      > .#{$block}__expand-icon {
+        @include fd-fiori-focus() {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  &__expand-icon {
+    @include fd-reset();
+    @include fd-fiori-focus();
+
+    text-decoration: none;
+    height: 100%;
+    min-width: 2.5rem;
+    color: var(--sapContent_IconColor);
+    display: flex;
+    justify-content: center;
+
+    @include fd-icon('navigation-right-arrow', 'default', 'after') {
+      @include fd-flex-center();
+
+      height: 100%;
+      min-height: 100%;
+      font-size: var(--sapFontLargeSize);
+    }
+
+    @include fd-rtl() {
       &::after {
-        @include fd-flex-center();
-        @include fd-nested-list-arrow();
-        // `height: 0` is set to prevent breaking `align-items: center` on IE11
-        // Read more https://github.com/philipwalton/flexbugs/issues/231
-        height: 0;
-        min-height: 100%;
-        min-width: 2.75rem;
-        color: var(--sapList_TextColor);
-        font-size: var(--sapFontHeader4Size);
-        content: "\e066";
+        content: "\e067";
       }
+    }
 
-      @include fd-rtl() {
-        &::after {
-          content: "\e067";
-        }
-      }
+    &.is-expanded,
+    &[aria-expanded="true"] {
+      border-bottom: none;
 
-      &.is-expanded,
-      &[aria-expanded="true"] {
-        border-bottom: none;
-
-        &::after {
-          content: "\e1e2";
-        }
-
-        @include fd-selected() {
-          border-bottom: var(--sapList_BorderWidth) solid;
-          border-bottom-color: var(--sapList_SelectionBorderColor);
-        }
-      }
-
-      &:active::after {
-        color: var(--sapList_Active_TextColor);
+      &::after {
+        content: "\e1e2";
       }
     }
   }
@@ -161,6 +185,7 @@ $block: #{$fd-namespace}-nested-list;
   &__title {
     @include fd-reset();
 
+    height: 100%;
     width: 100%;
     font-size: var(--sapFontLargeSize);
     color: var(--sapList_TextColor);
@@ -168,6 +193,8 @@ $block: #{$fd-namespace}-nested-list;
     overflow: hidden;
     text-overflow: ellipsis;
     padding-right: 1rem;
+    display: flex;
+    align-items: center;
 
     &:first-child {
       padding-left: 2.75rem;
@@ -215,6 +242,10 @@ $block: #{$fd-namespace}-nested-list;
     .#{$block}__link,
     .#{$block}__content {
       padding-left: 1rem;
+
+      &.has-child {
+        padding: 0;
+      }
     }
 
     .#{$block}__title {
@@ -227,25 +258,13 @@ $block: #{$fd-namespace}-nested-list;
       .level-#{$i} {
         $paddingLeft: 1rem * $i;
 
-        .#{$block}__link,
-        .#{$block}__content {
-          padding-left: $paddingLeft;
-          border-bottom: none;
-
-          @include fd-selected() {
-            border-bottom: var(--sapList_BorderWidth) solid;
-            border-bottom-color: var(--sapList_SelectionBorderColor);
-          }
-        }
+        @include fd-nested-level-padding($paddingLeft, 0);
       }
 
       &.level-#{$i} {
         $paddingLeft: ($i - 2) + 2.75rem;
 
-        .#{$block}__link,
-        .#{$block}__content {
-          padding-left: $paddingLeft;
-        }
+        @include fd-nested-level-padding($paddingLeft, 0);
       }
     }
 
@@ -254,6 +273,10 @@ $block: #{$fd-namespace}-nested-list;
       .#{$block}__content {
         padding-right: 1rem;
         padding-left: 0;
+
+        &.has-child {
+          padding-right: 0;
+        }
       }
 
       .#{$block}__title {
@@ -266,21 +289,13 @@ $block: #{$fd-namespace}-nested-list;
         .level-#{$i} {
           $paddingRight: 1rem * $i;
 
-          .#{$block}__link,
-          .#{$block}__content {
-            padding-right: $paddingRight;
-            padding-left: 0;
-          }
+          @include fd-nested-level-padding(0, $paddingRight);
         }
 
         &.level-#{$i} {
           $paddingRight: ($i - 2) + 2.75rem;
 
-          .#{$block}__link,
-          .#{$block}__content {
-            padding-right: $paddingRight;
-            padding-left: 0;
-          }
+          @include fd-nested-level-padding(0, $paddingRight);
         }
       }
     }
@@ -290,12 +305,6 @@ $block: #{$fd-namespace}-nested-list;
     .#{$block}__link,
     .#{$block}__content {
       height: 2rem;
-
-      &.has-child {
-        &::after {
-          font-size: var(--sapFontSize);
-        }
-      }
     }
 
     .#{$block}__title {

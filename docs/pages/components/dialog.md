@@ -65,7 +65,7 @@ Dialog headers and footer can be customized using Bar component features.
 
 {% capture dialog-anatomy %}
     <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-        <div class="fd-dialog__content">
+        <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
             <span class="fd-dialog__resize-handle"></span>
             <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
                 <div class="fd-bar__left">
@@ -73,7 +73,7 @@ Dialog headers and footer can be customized using Bar component features.
                         Dialog header
                     </div>
                     <div class="fd-bar__element">
-                        <h3 class="fd-dialog__title">
+                        <h3 class="fd-dialog__title" id="dialog-title-1">
                             Dialog title
                         </h3>
                     </div>
@@ -143,11 +143,11 @@ Please remember that on mobile devices Bar component should be used with <code>.
 ### Dialog header/body/footer horizontal paddings
 {% capture dialog-size %}
     <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-        <div class="fd-dialog__content fd-dialog__content--s">
+        <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
             <header class="fd-dialog__header fd-bar fd-bar--header">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
-                        <h3 class="fd-dialog__title">
+                        <h3 class="fd-dialog__title" id="dialog-title-2">
                             Small Dialog
                         </h3>
                     </div>
@@ -170,11 +170,11 @@ Please remember that on mobile devices Bar component should be used with <code>.
     </div>
     <br />
     <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-        <div class="fd-dialog__content fd-dialog__content--m">
+        <div class="fd-dialog__content fd-dialog__content--m" role="dialog" aria-modal="true" aria-labelledby="dialog-title-3">
             <header class="fd-dialog__header fd-bar fd-bar--header">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
-                        <h3 class="fd-dialog__title">
+                        <h3 class="fd-dialog__title" id="dialog-title-3">
                             Medium Dialog
                         </h3>
                     </div>
@@ -197,11 +197,11 @@ Please remember that on mobile devices Bar component should be used with <code>.
     </div>
     <br />
     <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-        <div class="fd-dialog__content fd-dialog__content--l">
+        <div class="fd-dialog__content fd-dialog__content--l" role="dialog" aria-modal="true" aria-labelledby="dialog-title-4">
             <header class="fd-dialog__header fd-bar fd-bar--header">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
-                        <h3 class="fd-dialog__title">
+                        <h3 class="fd-dialog__title" id="dialog-title-4">
                             Large Dialog
                         </h3>
                     </div>
@@ -224,11 +224,11 @@ Please remember that on mobile devices Bar component should be used with <code>.
     </div>
     <br />
     <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-        <div class="fd-dialog__content fd-dialog__content--xl">
+        <div class="fd-dialog__content fd-dialog__content--xl" role="dialog" aria-modal="true" aria-labelledby="dialog-title-5">
             <header class="fd-dialog__header fd-bar fd-bar--header">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
-                        <h3 class="fd-dialog__title">
+                        <h3 class="fd-dialog__title" id="dialog-title-5">
                             Extra Large Dialog
                         </h3>
                     </div>
@@ -258,12 +258,12 @@ Horizontal and vertical resize should be enabled only for <b>desktop</b> devices
 Resizable Dialog should be desktop only feature. 
 {% capture dialog-resize %}
     <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-        <div class="fd-dialog__content fd-dialog__content--s">
+        <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-6">
             <span class="fd-dialog__resize-handle"></span>
             <header class="fd-dialog__header fd-bar fd-bar--header">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
-                        <h3 class="fd-dialog__title">
+                        <h3 class="fd-dialog__title" id="dialog-title-6">
                             Lorem ipsum
                         </h3>
                     </div>
@@ -296,11 +296,11 @@ Draggable mode can be visualized using following classes:
 </ul>
 {% capture dialog-drag %}
     <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-        <div class="fd-dialog__content fd-dialog__content--draggable-grab fd-dialog__content--s">
+        <div class="fd-dialog__content fd-dialog__content--draggable-grab fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-7">
             <header class="fd-dialog__header fd-bar fd-bar--header">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
-                        <h3 class="fd-dialog__title">
+                        <h3 class="fd-dialog__title" id="dialog-title-7">
                             Lorem ipsum
                         </h3>
                     </div>
@@ -329,11 +329,11 @@ Draggable mode can be visualized using following classes:
 {% capture dialog-select %}
     <button class="fd-button" onclick="toggleDialog('select-dialog-example', true)">Open example</button>
     <div class="fd-dialog" id="select-dialog-example">
-        <div class="fd-dialog__content">
+        <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-8">
             <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
-                        <h3 class="fd-dialog__title">
+                        <h3 class="fd-dialog__title" id="dialog-title-8">
                             Select Dialog
                         </h3>
                     </div>
@@ -399,11 +399,11 @@ Draggable mode can be visualized using following classes:
 {% capture dialog-loading %}
     <button class="fd-button" onclick="toggleDialog('loading-dialog-example', true)">Open example</button>
     <div class="fd-dialog" id="loading-dialog-example">
-        <div class="fd-dialog__content fd-dialog__content--s">
+        <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-9">
             <header class="fd-dialog__header fd-bar fd-bar--header">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
-                        <h1 class="fd-dialog__title">
+                        <h1 class="fd-dialog__title" id="dialog-title-9">
                             Loading Data...
                         </h1>
                     </div>

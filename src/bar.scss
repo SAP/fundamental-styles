@@ -44,7 +44,8 @@ $block: #{$fd-namespace}-bar;
 
     display: flex;
     align-items: center;
-    flex: 1;
+    flex: 1 1 auto;
+    width: 100%;
     max-width: 100%;
   }
 

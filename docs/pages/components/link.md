@@ -23,6 +23,8 @@ The `fd-link` component supports the use of modifiers, as well as the `is-visite
 <br><br>
 <a href="#" class="fd-link fd-link--inverted">Inverted Link</a>
 <br><br>
+<a href="#" class="fd-link fd-link--subtle">Subtle Link</a>
+<br><br>
 <a href="#" class="fd-link" tabindex="0">
     Icon Left Link 
     <span class="sap-icon--slim-arrow-right sap-icon--s"></span>
