@@ -58,7 +58,6 @@ $block: #{$fd-namespace}-switch;
   display: inline-block;
   position: relative;
   padding: $fd-switch-container-padding-y 0;
-  overflow: hidden;
 
   &__label {
     @include fd-form-label();
