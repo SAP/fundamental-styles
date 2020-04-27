@@ -306,7 +306,7 @@ Do not use the text area if
 
 ## Form Select
 > **DEPRECATED**. Form Select does not exist as a Fiori 3 component so it has been deprecated.
-> Instead of it use [Custom Select Component]({{site.baseurl}}/components/select.html).
+> It has been replaced by the [Custom Select Component]({{site.baseurl}}/components/select.html).
 
 {% capture select %}
     <div class="fd-form-item">
