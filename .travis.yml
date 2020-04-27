@@ -8,11 +8,11 @@ before_install:
 git:
   depth: false
 script:
-  - npm run build
+  - npm run build:prod
 jobs:
   include:
-  - stage: Lint and Test
-    script: npm run lint && npm run test:ci-config && npm run test
+  - stage: Lint, Test and Size
+    script: npm run lint && npm run test:ci-config && npm run test && npm run size
   - stage: Pre-release
     if: branch = master
     before_deploy:
