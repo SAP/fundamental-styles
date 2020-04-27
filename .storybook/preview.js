@@ -5,6 +5,11 @@ import { withA11y } from '@storybook/addon-a11y';
 addParameters({
   cssresources: [
     {
+      id: 'fiori3 css variables',
+      code: `<link rel="stylesheet" type="text/css" href="./css_variables.css"></link>`,
+      picked: true,
+    },
+    {
         id: 'unnormalize',
         code: `<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"></link>`,
         picked: false,
