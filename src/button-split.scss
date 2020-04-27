@@ -1,6 +1,5 @@
 @import "./new-settings";
 @import "./mixins";
-@import "./functions";
 
 /*!
 .fd-button-split+()
@@ -10,10 +9,6 @@ $block: #{$fd-namespace}-button-split;
 $fd-button-split-corner-radius: var(--sapButton_BorderCornerRadius);
 $fd-button-split-border-width: var(--sapButton_BorderWidth);
 $fd-button-split-margin: 0.125rem / 2;
-
-@mixin styleContent() {
-  @content;
-}
 
 @mixin ltrMode() {
   > * {
