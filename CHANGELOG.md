@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.6"></a>
+# [0.9.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.5...v0.9.0-rc.6) (2020-04-28)
+
+
+### Bug Fixes
+
+* update identifier to avatar ([#836](https://github.com/SAP/fundamental-styles/issues/836)) ([67ed9dc](https://github.com/SAP/fundamental-styles/commit/67ed9dc))
+
+
+
 <a name="0.9.0-rc.5"></a>
 # [0.9.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.4...v0.9.0-rc.5) (2020-04-27)
 
