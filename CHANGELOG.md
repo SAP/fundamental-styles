@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.8"></a>
+# [0.9.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.7...v0.9.0-rc.8) (2020-04-28)
+
+
+### Bug Fixes
+
+* introduce Navigation Indication functionality to List component ([#887](https://github.com/SAP/fundamental-styles/issues/887)) ([1cc87be](https://github.com/SAP/fundamental-styles/commit/1cc87be))
+
+
+
 <a name="0.9.0-rc.7"></a>
 # [0.9.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.6...v0.9.0-rc.7) (2020-04-28)
 
