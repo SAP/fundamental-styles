@@ -69,7 +69,7 @@ $block: #{$fd-namespace}-switch;
     padding: 0;
 
     &.is-disabled {
-      opacity: 0.4;
+      opacity: var(--sapContent_DisabledOpacity);
     }
   }
 
@@ -157,7 +157,7 @@ $block: #{$fd-namespace}-switch;
 
   @include fd-disabled() {
     pointer-events: none;
-    opacity: 0.4;
+    opacity: var(--sapContent_DisabledOpacity);
   }
 
   &__input:focus + .#{$block}__wrapper {
