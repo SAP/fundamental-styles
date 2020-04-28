@@ -67,7 +67,12 @@
         </div>
 
         {%- else %}
-            <span class="fd-list__title {{ 'fd-list__title--no-wrap' if toggles.noWrap }}">{{item.title}}</span>
+            {%- if toggles.isAction %}
+                <button class="fd-list__title">{{item.title}}</button>
+            {%- else %}
+                <span class="fd-list__title {{ 'fd-list__title--no-wrap' if toggles.noWrap }}">{{item.title}}</span>
+            {%- endif %}
+            
     {%- endif %}
     {%- if toggles.useSecondary %}
         <span class="fd-list__secondary  {{ 'fd-list__secondary--no-wrap' if toggles.noWrap }}">{{item.secondary}}</span>
