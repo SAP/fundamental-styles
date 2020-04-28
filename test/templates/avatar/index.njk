@@ -1,0 +1,113 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./component.njk" import avatar %}
+
+{% block content %}
+
+{% set sizes = ["xs","s","m","l","xl"] %}
+
+<h3>sizes</h3>
+{%- set example %}
+  {%- for size in sizes %}
+    {{ avatar(
+          properties={ icon: data.properties.icon },
+          modifier={ block: [size] }
+      )
+    }}
+  {%- endfor %}
+{%- endset %}
+{{ format(example) }}
+
+<h3>--thumbnail</h3>
+{%- set example %}
+{%- for size in sizes %}
+{{  avatar(
+    properties=data.properties,
+    modifier={
+        block: [size,"thumbnail"]
+    },
+    aria=data.aria
+)
+}}
+{%- endfor %}
+{%- endset %}
+{{ format(example) }}
+
+<h3>--circle</h3>
+{%- set example %}
+  {% for size in sizes %}
+  {{  avatar(
+          properties={
+                  icon: "money-bills"
+          },
+          modifier={
+              block: [size, "circle"]
+          },
+          aria={
+            role: "presentation"
+          }
+      )
+  }}
+  {%- endfor %}
+  {%- endset %}
+{{ format(example) }}
+
+
+<h3>--transparent</h3>
+{%- set example %}
+  {% for size in sizes %}
+    {{  avatar(
+            properties={
+                    icon: "money-bills"
+            },
+            modifier={
+                block: [size, "transparent"]
+            },
+            aria={
+              role: "presentation"
+            }
+        )
+    }}
+  {%- endfor %}
+{%- endset %}
+{{ format(example) }}
+
+<h3>--placeholder</h3>
+{%- set example %}
+  {% for size in sizes %}
+    {{  avatar(
+            properties={
+                    icon: "money-bills"
+            },
+            modifier={
+                block: [size, "placeholder"]
+            },
+            aria={
+              role: "presentation"
+            }
+        )
+    }}
+  {%- endfor %}
+{%- endset %}
+{{ format(example) }}
+
+<h3>--tile</h3>
+{%- set example %}
+  {% for size in sizes %}
+    {{  avatar(
+            properties={
+                    icon: "money-bills"
+            },
+            modifier={
+                block: [size, "tile"]
+            },
+            aria={
+              role: "presentation"
+            }
+        )
+    }}
+  {%- endfor %}
+{%- endset %}
+{{ format(example) }}
+
+{% endblock %}

@@ -1,0 +1,111 @@
+@import "./mixins";
+
+/*!
+.fd-avatar+((--circle), (--thumbnail), (--xxs|--xs|--s|--m|--l|--xl|--xxl))
+*/
+$block: #{$fd-namespace}-avatar;
+
+.#{$block} {
+  $fd-avatar-border-radius: 50% !default;
+  $fd-avatar-border-fade: rgba(0, 0, 0, 0.5) !default; // Should be fade(var(--sapContent_ShadowColor), 10);
+  $fd-avatar-background-color: var(--sapAccentColor6) !default;
+  $fd-zoom-icon-s: 1.125rem !default;
+  $fd-zoom-icon-l: 1.25rem !default;
+  $fd-zoom-icon-xl: 1.75rem !default;
+  $fd-const-ratio: 1rem;
+  $fd-avatar-sizes: (
+    "xs": ("ratio": ($fd-const-ratio * 2), "font-size": 1rem, "zoomIconDimensions": $fd-zoom-icon-s, "offset":  -0.125rem, "beforeFontSize": 0.75rem, "fontStretch": condensed),
+    "s": ("ratio": ($fd-const-ratio * 3), "font-size": 1.125rem, "zoomIconDimensions": $fd-zoom-icon-s, "offset":  -0.125rem, "beforeFontSize": 0.75rem, "fontStretch": condensed),
+    "m": ("ratio": ($fd-const-ratio * 4), "font-size": 1.5rem, "zoomIconDimensions": $fd-zoom-icon-s, "offset":  -0.125rem, "beforeFontSize": 0.75rem, "fontStretch": normal),
+    "l": ("ratio": ($fd-const-ratio * 5), "font-size": 2.25rem, "zoomIconDimensions": $fd-zoom-icon-l, "offset":  -0.1875rem, "beforeFontSize": 0.875rem, "fontStretch": normal),
+    "xl": ("ratio": ($fd-const-ratio * 7), "font-size": 3rem, "zoomIconDimensions": $fd-zoom-icon-xl, "offset":  -0.25rem, "beforeFontSize": 1rem, "fontStretch": normal)
+  );
+
+  // BLOCK BASE *******************************************
+  @at-root {
+    [class*="#{$block}"] {
+      @include fd-reset();
+
+      color: var(--sapContent_ContrastTextColor);
+      background-color: $fd-avatar-background-color;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50%;
+      border-radius: var(--sapElement_BorderCornerRadius);
+    }
+  }
+  // BLOCK MODIFIERS ************
+  // sizes
+  @each $set-name, $size-set in $fd-avatar-sizes {
+    &--#{$set-name} {
+      @include fd-reset-spacing();
+
+      width: map_get($size-set, "ratio");
+      height: map_get($size-set, "ratio");
+      max-width: map_get($size-set, "ratio");
+      max-height: map_get($size-set, "ratio");
+      min-width: map_get($size-set, "ratio");
+      min-height: map_get($size-set, "ratio");
+      font-size: map_get($size-set, "font-size");
+      font-stretch: map_get($size-set, "fontStretch");
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      .#{$block}__zoom-icon {
+        width: map_get($size-set, "zoomIconDimensions");
+        height: map_get($size-set, "zoomIconDimensions");
+        bottom: map_get($size-set, "offset");
+        right: map_get($size-set, "offset");
+
+        &::before {
+          font-size: map_get($size-set, "beforeFontSize");
+        }
+      }
+    }
+  }
+
+  // circle
+  &.#{$block}--circle {
+    border-radius: $fd-avatar-border-radius;
+
+    .#{$block}__zoom-icon {
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  // background
+  &.#{$block}--transparent {
+    background-color: transparent;
+    color: var(--sapContent_IconColor);
+  }
+
+  // placeholder background
+  &.#{$block}--placeholder {
+    background-color: var(--sapContent_ImagePlaceholderBackground);
+  }
+
+  // tile background
+  &.#{$block}--tile {
+    background-color: var(--sapTile_IconColor);
+  }
+
+  // zoom icon
+  &__zoom-icon {
+    @include fd-flex-center();
+
+    background-color: var(--sapLinkColor);
+    color: var(--sapContent_ContrastIconColor);
+    position: absolute;
+    border-radius: $fd-avatar-border-radius;
+  }
+  // optional border
+  &.#{$block}--border {
+    border: inset 0.0625rem $fd-avatar-border-fade;
+  }
+}

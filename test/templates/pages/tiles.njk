@@ -10,7 +10,7 @@
 {% from "../label/component.njk" import label %}
 {% from "../tile/component.njk" import tile, tile_content, tile_media, tile_actions %}
 {% from "../layout-grid/component.njk" import layout_grid %}
-{% from "../identifier/component.njk" import identifier %}
+{% from "../avatar/component.njk" import avatar %}
 {% from "../badge/component.njk" import badge %}
 
 {% set active_label  %}<span class="fd-has-color-status-1">Active</span>{% endset %}
@@ -19,7 +19,7 @@
 {% call tile() -%}
   {% call tile_media() -%}
   {{
-    identifier(
+    avatar(
     properties={ icon: "person-placeholder" },
     modifier={ block: ["m"] },
     classes=["has-background-color-accent-1"])

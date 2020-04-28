@@ -3,6 +3,9 @@
     - title: Action Bar
       meta: action-bar
 
+    - title: Avatar
+      meta: avatar
+
     - title: Bar
       meta: bar
 
@@ -20,9 +23,6 @@
 
     - title: Icon
       meta: icon
-
-    - title: Identifier
-      meta: identifier
 
     - title: Image
       meta: image

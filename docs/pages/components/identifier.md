@@ -7,6 +7,8 @@ toc: false
 permalink: components/identifier.html
 folder: components
 ---
+> **DEPRECATED**. Use the [Avatar](avatar.html) component.
+{: .docs-deprecated}
 
 Identifier is a way to visually present something using an icon or user initials.
 {: .docs-intro}

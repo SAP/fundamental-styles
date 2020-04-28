@@ -88,6 +88,10 @@ entries:
       url: /components/alert.html
       output: web
 
+    - title: Avatar
+      url: /components/avatar.html
+      output: web
+
     - title: Asset Upload
       url: /components/asset-upload.html
       output: web
@@ -120,12 +124,12 @@ entries:
       url: /components/form.html
       output: web
 
-    - title: Identifier
-      url: /components/identifier.html
-      output: web
-
     - title: Icon
       url: /components/icon.html
+      output: web
+
+    - title: Identifier
+      url: /components/identifier.html
       output: web
 
     - title: Image
