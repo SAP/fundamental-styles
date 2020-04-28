@@ -112,7 +112,7 @@ $block: #{$fd-namespace}-product-switch;
       @include dragged() {
         &:hover,
         &:active {
-          background-color: fade(var(--sapList_Background), 90);
+          background-color: var(--sapList_Background);
 
           .#{$block}__icon {
             color: var(--sapContent_IconColor);
