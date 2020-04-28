@@ -3,16 +3,20 @@ node_js: 10.19.0
 dist: trusty
 services:
   - docker
-before_install:
-- docker pull backstopjs/backstopjs:3.9.2
 git:
   depth: false
 script:
-  - npm run build
+  - npm run build:prod
 jobs:
   include:
-  - stage: Lint and Test
-    script: npm run lint && npm run test:ci-config && npm run test
+  - stage: Lint, Test and Size
+    script:
+      - docker pull backstopjs/backstopjs:3.9.2
+      - npm run build:prod
+      - npm run lint
+      - npm run test:ci-config
+      - npm run test
+      - npm run size
   - stage: Pre-release
     if: branch = master
     before_deploy:

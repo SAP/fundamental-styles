@@ -1,6 +1,5 @@
 @import "./new-settings";
 @import "./mixins";
-@import "./functions";
 @import "./mixins/button/button-helper";
 @import "./mixins/button/standard";
 @import "./mixins/button/negative";
@@ -64,7 +63,6 @@ $block: #{$fd-namespace}-button;
   min-width: $fd-button-min-width;
   line-height: $fd-button-line-height;
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
 
   @include iconSize($fd-button-icon-font-size);
@@ -214,7 +212,6 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin buttonContainer() {
-  @include buttonReset();
   @include standard();
 
   &.#{$block}--ghost {
@@ -373,14 +370,10 @@ $block: #{$fd-namespace}-button;
 }
 
 .#{$block} {
-  @include fd-button-reset();
-
-  overflow: visible;
-  background-color: transparent;
-  cursor: pointer;
-
+  @include buttonReset();
   @include buttonContainer();
 
+  overflow: visible;
   min-width: $fd-button-min-width;
 
   &--compact {
@@ -411,29 +404,17 @@ $block: #{$fd-namespace}-button;
     outline: none;
 
     @include buttonContainerPressed();
-
-    @include fd-disabled() {
-      @include buttonContainerDisabled();
-    }
   }
 
   @include fd-focus() {
-    box-shadow: none;
-
     @include buttonContainerFocus();
 
     @include fd-active-pressed-selected() {
       @include buttonContainerPressedFocus();
     }
-
-    @include fd-disabled() {
-      @include buttonContainerDisabled();
-    }
   }
 
   @include fd-disabled() {
-    cursor: not-allowed;
-
     @include buttonContainerDisabled();
   }
 }

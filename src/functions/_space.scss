@@ -23,14 +23,3 @@
 
   @return $_size;
 }
-
-// space helper
-@function fd-modify-space_($size) {
-  $_size: $size;
-
-  @if $fd-space-modify == compact {
-    $_size: $_size / 2;
-  }
-
-  @return $_size;
-}
