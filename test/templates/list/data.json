@@ -14,11 +14,10 @@
             "iconAfter": ">"
           },
           {
-            "title": "List item 2 (Selected)",
+            "title": "List item 2",
             "secondary": "A different status",
             "iconBefore": "X",
-            "iconAfter": ">",
-            "selected": true
+            "iconAfter": ">"
           },
           {
             "title": "List item 3 - Lorem ipsum dolor sit amet, consectetur sed do",
@@ -36,11 +35,10 @@
         "header": "Group Header 2",
         "items": [
           {
-            "title": "List item 5 (Active)",
+            "title": "List item 5",
             "secondary": "Status 1",
             "iconBefore": "O",
-            "iconAfter": ">",
-            "active": true
+            "iconAfter": ">"
           },
           {
             "title": "List item 6",

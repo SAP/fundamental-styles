@@ -37,16 +37,10 @@
             "title": "List item 1"
           },
           {
-            "title": "List item 2 (Selected)",
-            "selected": true
+            "title": "List item 2"
           },
           {
-            "title": "List item 3 - Lorem ipsum dolor sit amet, consectetur sed do",
-            "active": true
-          },
-          {
-            "title": "List item 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
-            "hover": true
+            "title": "List item 3 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
           }
         ]
       }
@@ -64,18 +58,15 @@
 			"secondary": "More information needed"
           },
           {
-            "title": "List item 2 (Selected)",
-            "selected": true,
+            "title": "List item 2",
 			"secondary": "More"
           },
           {
             "title": "List item 3 - Lorem ipsum dolor sit amet, consectetur sed do",
-            "active": true,
 			"secondary": "Information"
           },
           {
             "title": "List item 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
-            "hover": true,
 			"secondary": "Very long text for information Very long text for information Very long text for information Very long text for information "
           }
         ]
@@ -109,8 +100,41 @@
     ]
   } %}
 
+  {%- set byline_list_nav = {
+    "groups": [
+        {
+            "items": [
+                { "thumbnail": true, "title": "Title", "byline": "Byline (description)", "link": true, "navIndicator": true, "hasLink": true, "navigated": true },
+                { "thumbnail": true, "title": "Title", "selected": true, "link": true, "navIndicator": true, "hasLink": true },
+                { "thumbnail": true, "title": "Title", "active": true, "link": true, "navIndicator": true, "hasLink": true },
+                { "thumbnail": true, "title": "Title", "hover": true, "link": true, "navIndicator": true, "hasLink": true },
+                { "title": "Title", "byline": "Byline (description)", "link": true, "navIndicator": true, "hasLink": true, "navigated": true, "selected": true }
+            ]
+        }
+    ]
+  } %}
+
+  {%- set list_nav = {
+    "groups": [
+        {
+            "items": [
+                { "title": "Title", "link": true, "navIndicator": true, "hasLink": true },
+                { "title": "Title", "link": true, "navIndicator": true, "hasLink": true, "navigated": true },
+                { "title": "Title", "link": true, "navIndicator": true, "selected": true, "hasLink": true },
+                { "title": "Title", "link": true, "navIndicator": true, "selected": true, "hasLink": true, "navigated": true},
+                { "title": "Title", "link": true, "navIndicator": true, "hover": true, "hasLink": true },
+                { "title": "Title", "link": true, "navIndicator": true, "active": true, "hasLink": true }
+            ]
+        }
+    ]
+  } %}
+
 {% set modifiers = ["", "compact", "no-border"] %}
+{% set modifiersSelection = ["selection", "compact fd-list--selection", "no-border fd-list--selection"] %}
 {% set bylineModifiers = ["byline", "byline fd-list--compact", "byline fd-list--no-border"] %}
+{% set bylineModifiersSelection = ["byline fd-list--selection", "byline fd-list--compact fd-list--selection", "byline fd-list--no-border fd-list--selection"] %}
+{% set navModifiers = ["navigation fd-list--navigation-indication"] %}
+{% set navBylineModifiers = ["byline fd-list--navigation fd-list--navigation-indication"] %}
 
 {% block content %}
 
@@ -160,7 +184,7 @@
 
     <h2>Selection</h2>
     {% set example %}
-        {%- for modifier in modifiers %}
+        {%- for modifier in modifiersSelection %}
             {%- if modifier %}
                 <h3>{{ modifier }}</h3>
             {%- endif %}
@@ -180,7 +204,7 @@
     {% endset %}
     {{ format(example) }}
 
-    <h2>Group Headers and Footer with Selected and Active states</h2>
+    <h2>Group Headers and Footer</h2>
     {% set example %}
         {%- for modifier in modifiers %}
             {%- if modifier %}
@@ -226,7 +250,7 @@
 	{% endset %}
 	{{ format(example) }}
 
-	<h2>Multi Input with active and selected state, plus footer</h2>
+	<h2>Multi Input with selected state, plus footer</h2>
 	{% set example %}
 		{%- for modifier in modifiers %}
 			{%- if modifier %}
@@ -237,7 +261,7 @@
 	{% endset %}
 	{{ format(example) }}
 
-	<h2>Multi Input with active and selected state, plus footer and message</h2>
+	<h2>Multi Input with selected state, plus footer and message</h2>
 	{% set example %}
 		{%- for modifier in modifiers %}
 			{%- if modifier %}
@@ -259,40 +283,7 @@
 	{% endset %}
 	{{ format(example) }}
 
-	<h2>Dropdown with active and selected state</h2>
-	{% set example %}
-		{%- for modifier in modifiers %}
-			{%- if modifier %}
-				<h3>{{ modifier }}</h3>
-			{%- endif %}
-			{{ list(dropdown_list, toggles={"dropdown": true}, modifier=[modifier]) }}
-		{%- endfor %}
-	{% endset %}
-	{{ format(example) }}
-
-	<h2>Dropdown with active and selected state, plus message</h2>
-	{% set example %}
-		{%- for modifier in modifiers %}
-			{%- if modifier %}
-				<h3>{{ modifier }}</h3>
-			{%- endif %}
-			{{ list(dropdown_list, toggles={"dropdown": true, "hasMessage": true}, modifier=[modifier]) }}
-		{%- endfor %}
-	{% endset %}
-	{{ format(example) }}
-
-	<h2>Dropdown with active and selected state, plus message and 2 columns</h2>
-	{% set example %}
-		{%- for modifier in modifiers %}
-			{%- if modifier %}
-				<h3>{{ modifier }}</h3>
-			{%- endif %}
-			{{ list(dropdown_list, toggles={"dropdown": true, "useSecondary": true, "hasMessage": true}, modifier=[modifier]) }}
-		{%- endfor %}
-	{% endset %}
-	{{ format(example) }}
-
-	<h2>Dropdown with active and selected state, plus message and 2 columns, overflow no wrap</h2>
+	<h2>Dropdown with plus message and 2 columns, overflow no wrap</h2>
 	{% set example %}
 		{%- for modifier in modifiers %}
 			{%- if modifier %}
@@ -327,11 +318,33 @@
 
     <h2>Standard List with Byline, Semantic Byline Second Item and Selection</h2>
     {% set example %}
-        {%- for modifier in bylineModifiers %}
+        {%- for modifier in bylineModifiersSelection %}
             {%- if modifier %}
                 <h3>{{ modifier }}</h3>
             {%- endif %}
             {{ list(byline_semantic_list, toggles={"byline2col": true, "byline": true, "selection": true}, modifier=[modifier]) }}
+        {%- endfor %}
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>Standard List with Navigation (Links) and Navigation Indication</h2>
+    {% set example %}
+        {%- for modifier in navModifiers %}
+            {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+            {{ list(list_nav, toggles={"link": true, "navIndicator": true}, modifier=[modifier]) }}
+        {%- endfor %}
+    {% endset %}
+    {{ format(example) }}
+
+     <h2>Standard List with Byline, Navigation (Links) and Navigation Indication</h2>
+    {% set example %}
+        {%- for modifier in navBylineModifiers %}
+            {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+            {{ list(byline_list_nav, toggles={"link": true, "navIndicator": true}, modifier=[modifier]) }}
         {%- endfor %}
     {% endset %}
     {{ format(example) }}
