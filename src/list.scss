@@ -22,6 +22,8 @@ $fd-list-form-item-margin-x: -1rem !default;
 $fd-list-large-font-size: var(--sapFontLargeSize) !default;
 $fd-list-normal-font-size: var(--sapFontSize) !default;
 $fd-list-message-padding-left: 0.5rem !default;
+$fd-list-selected-state-border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+$fd-list-item-border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
 
 // STANDARD LIST WITH BYLINE
 $fd-list-byline-thumbnail-dimensions: 3rem !default;
@@ -127,6 +129,57 @@ $semantic-color: (
   }
 }
 
+@mixin list-selected-state {
+  background: var(--sapList_SelectionBackgroundColor);
+  border-bottom: $fd-list-selected-state-border-bottom;
+
+  @content;
+}
+
+@mixin list-active-state {
+  background: var(--sapList_Active_Background);
+
+  @include fd-hover() {
+    background: var(--sapList_Active_Background);
+  }
+
+  @include fd-selected() {
+    background: var(--sapList_Active_Background);
+
+    @include fd-hover() {
+      background: var(--sapList_Active_Background);
+    }
+  }
+
+  @include fake-list-outline(var(--sapContent_ContrastFocusColor));
+
+  .#{$block}__title,
+  .#{$block}__secondary,
+  .#{$block}__icon,
+  .#{$block}__content,
+  .#{$block}__byline,
+  .#{$block}__byline-left,
+  .#{$block}__byline-right,
+  .#{$block}__thumbnail,
+  &.#{$block}__link--navigation-indicator::after,
+  & {
+    color: var(--sapList_Active_TextColor);
+  }
+
+  @each $set-name, $color-set in $semantic-color {
+    .#{$block}__byline-right--#{$set-name} {
+      color: var(--sapList_Active_TextColor);
+    }
+  }
+}
+
+@mixin ie11-active-state-fix() {
+  // :active selector has issues in IE11 when there are nested elements.
+  // The solution is to remove the pointer events from the nested elements.
+
+  pointer-events: none;
+}
+
 .#{$block} {
   @include fd-reset();
 
@@ -148,7 +201,7 @@ $semantic-color: (
   &__item {
     @include fake-list-outline();
 
-    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+    border-bottom: $fd-list-item-border;
     background: var(--sapList_Background);
     position: relative;
 
@@ -163,8 +216,7 @@ $semantic-color: (
     }
 
     @include fd-selected() {
-      background: var(--sapList_SelectionBackgroundColor);
-      border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+      @include list-selected-state();
 
       .#{$block}__link {
         @include fd-hover() {
@@ -180,12 +232,42 @@ $semantic-color: (
         }
       }
     }
+
+    &--action {
+      text-align: center;
+      cursor: pointer;
+
+      &:first-child {
+        border-top: $fd-list-item-border;
+      }
+
+      @include fd-hover() {
+        background: var(--sapList_Hover_Background);
+      }
+
+      @include fd-active() {
+        @include list-active-state();
+      }
+
+      @include fd-selected() {
+        @include list-selected-state() {
+          @include fd-hover() {
+            background: var(--sapList_Hover_SelectionBackground);
+          }
+        }
+      }
+
+      .#{$block}__title {
+        color: var(--sapButton_TextColor);
+      }
+    }
   }
 
   &__title,
   &__secondary {
     @include fd-reset();
     @include fd-ellipsis();
+    @include ie11-active-state-fix();
 
     line-height: 1rem;
     color: var(--sapList_TextColor);
@@ -211,6 +293,7 @@ $semantic-color: (
 
   &__icon {
     @include fd-reset();
+    @include ie11-active-state-fix();
 
     color: var(--sapList_TextColor);
     flex: 0 0 auto;
@@ -258,41 +341,11 @@ $semantic-color: (
     }
 
     @include fd-selected() {
-      background: var(--sapList_SelectionBackgroundColor);
-      border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
-
-      @include fd-hover() {
-        background: var(--sapList_Hover_SelectionBackground);
-      }
+      @include list-selected-state();
     }
 
     @include fd-active() {
-      background: var(--sapList_Active_Background);
-
-      @include fd-hover() {
-        background: var(--sapList_Active_Background);
-      }
-
-      @include fake-list-outline(var(--sapContent_ContrastFocusColor));
-
-      .#{$block}__title,
-      .#{$block}__secondary,
-      .#{$block}__icon,
-      .#{$block}__content,
-      .#{$block}__byline,
-      .#{$block}__byline-left,
-      .#{$block}__byline-right,
-      .#{$block}__thumbnail,
-      &.#{$block}__link--navigation-indicator::after,
-      & {
-        color: var(--sapList_Active_TextColor);
-      }
-
-      @each $set-name, $color-set in $semantic-color {
-        .#{$block}__byline-right--#{$set-name} {
-          color: var(--sapList_Active_TextColor);
-        }
-      }
+      @include list-active-state();
     }
   }
 
@@ -372,11 +425,12 @@ $semantic-color: (
     .#{$block}__item,
     .#{$block}__group-header {
       border-bottom: 0;
+      border-top: 0;
     }
 
     .#{$block}__item {
       @include fd-selected() {
-        border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+        border-bottom: $fd-list-selected-state-border-bottom;
       }
     }
   }
@@ -484,7 +538,7 @@ $semantic-color: (
       border: none;
 
       @include fd-selected() {
-        border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+        border-bottom: $fd-list-selected-state-border-bottom;
       }
     }
 
@@ -537,6 +591,7 @@ $semantic-color: (
     .#{$block}__thumbnail {
       @include fd-reset();
       @include fd-flex-center();
+      @include ie11-active-state-fix();
 
       width: $fd-list-byline-thumbnail-dimensions;
       height: $fd-list-byline-thumbnail-dimensions;
@@ -557,6 +612,7 @@ $semantic-color: (
 
     .#{$block}__content {
       @include fd-reset();
+      @include ie11-active-state-fix();
 
       @include fd-flex(column) {
         align-content: space-between;
@@ -723,6 +779,8 @@ $semantic-color: (
     }
 
     .#{$block}__form-item {
+      @include ie11-active-state-fix();
+
       position: absolute;
       top: 0;
       left: 0;
