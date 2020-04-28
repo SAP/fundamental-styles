@@ -32,8 +32,17 @@
     }
   }
 
+<<<<<<< HEAD
   > h2 {
     @extend .docs-header-h2;
+=======
+    > ul {
+        @media screen and (max-width: 950px) {
+            padding-left: 0;
+            margin-left: 3rem;
+        }
+    }
+>>>>>>> docs:add more specfic class to ul
 
     @media screen and (max-width: 950px) {
       padding-left: 0;
