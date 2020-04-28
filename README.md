@@ -92,13 +92,12 @@ Merges to the `master` branch will be published as a prerelease. Prereleases wil
 The following circumstances will be considered a MAJOR or BREAKING change:
 * Droppping existing classnames, css variables, color names, color groups, spacing parameters
 * The existing underlying HTML markup of a component is altered
+* Non-visual HTML attribute changes/additions (such as `role`, `aria-*`, `data-*`)
 * An existing unit test is altered to account for either of the above
 
 The following circumstances will NOT be considered a MAJOR or BREAKING change:
 * Introducing new  classnames, css variables, color names, color groups, spacing parameters
-* Non-visual HTML attribute changes/additions (such as `role`, `aria-*`, `data-*`)
 * Adding or modifying CSS properties and values of existing classnames.
-* An existing unit test is altered to account for non-visual HTML attribute changes/additions (such as `role`, `aria-*`, `data-*`)
 
 ## License
 
