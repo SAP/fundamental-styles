@@ -779,8 +779,6 @@ $semantic-color: (
     }
 
     .#{$block}__form-item {
-      @include ie11-active-state-fix();
-
       position: absolute;
       top: 0;
       left: 0;
