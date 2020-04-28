@@ -340,4 +340,12 @@ $block: #{$fd-namespace}-shellbar;
       color: $fd-shell-active-text-color;
     }
   }
+
+  .#{$fd-namespace}-button.#{$fd-namespace}-button--menu.#{$block}__button--menu {
+    padding-right: 0;
+
+    @include fd-screen(m) {
+      padding-right: 1.937rem;
+    }
+  }
 }
