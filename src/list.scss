@@ -234,8 +234,8 @@ $semantic-color: (
     }
 
     &--action {
+      padding: 0;
       text-align: center;
-      cursor: pointer;
 
       &:first-child {
         border-top: $fd-list-item-border;
@@ -258,7 +258,26 @@ $semantic-color: (
       }
 
       .#{$block}__title {
+        padding: 0 $fd-list-item-padding-x;
+        height: 100%;
+        width: 100%;
+        background: transparent;
         color: var(--sapButton_TextColor);
+        pointer-events: all;
+        cursor: pointer;
+
+        @include fd-focus() {
+          outline-style: dotted;
+          outline-width: var(--sapContent_FocusWidth);
+          outline-color: var(--sapContent_FocusColor);
+          outline-offset: -0.1875rem;
+        }
+
+        @include fd-active() {
+          @include fd-focus() {
+            outline-color: var(--sapContent_ContrastFocusColor);
+          }
+        }
       }
     }
   }
