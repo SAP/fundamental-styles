@@ -1,0 +1,13 @@
+{
+    "extends": "eslint:recommended",
+    "parser": "babel-eslint",
+    "env": {
+        "node": true,
+        "browser": true,
+        "es6": true,
+        "jquery" : true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6
+    }
+}

@@ -27,7 +27,7 @@ module.exports = postcss.plugin('add fallback plugin', function (opts) {
 
 		root.walkDecls(decl => {
 			// extract var name
-			let matches = decl.value.match(/var\(([^\,\(\)]+)\)/g);
+			let matches = decl.value.match(/var\(([^,()]+)\)/g);
 			matches = arrayUniq(matches);
 			if (matches) {
 				matches.forEach(varMatch => {
