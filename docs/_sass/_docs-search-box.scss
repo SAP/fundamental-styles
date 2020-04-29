@@ -1,12 +1,13 @@
 .search-container {
-    .fd-popover {
-        display: block;
+  .fd-popover {
+    display: block;
 
-        #docs-search {
-            padding-left: 1.5rem;
-        }
-        &__body {
-            min-width: 100%;
-        }
+    #docs-search {
+      padding-left: 1.5rem;
     }
+
+    &__body {
+      min-width: 100%;
+    }
+  }
 }
