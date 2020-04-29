@@ -68,7 +68,7 @@ When the first page is active, the Back arrow should be disabled.
     <a href="#" class="fd-pagination__link">1</a>
     <a href="#" class="fd-pagination__link" aria-selected="true">2</a>
     <a href="#" class="fd-pagination__link">3</a>
-    <span class="fd-pagination__link fd-pagination__link--more" role="presentation"></span>
+    <span class="fd-pagination__link--more" role="presentation"></span>
     <a href="#" class="fd-pagination__link">50</a>
     <a href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next"
     aria-disabled="false"></a>
@@ -89,11 +89,11 @@ When the first page is active, the Back arrow should be disabled.
     <a href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Previous"
     aria-disabled="false"></a>
     <a href="#" class="fd-pagination__link">1</a>
-    <span class="fd-pagination__link fd-pagination__link--more" role="presentation"></span>
+    <span class="fd-pagination__link--more" role="presentation"></span>
     <a href="#" class="fd-pagination__link">21</a>
     <a href="#" class="fd-pagination__link" aria-selected="true">22</a>
     <a href="#" class="fd-pagination__link">23</a>
-    <span class="fd-pagination__link fd-pagination__link--more" role="presentation"></span>
+    <span class="fd-pagination__link--more" role="presentation"></span>
     <a href="#" class="fd-pagination__link">50</a>
     <a href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next"
     aria-disabled="false"></a>
@@ -115,7 +115,7 @@ On the last page, the Next arrow should be disabled.
     <a href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Previous"
     aria-disabled="false"></a>
     <a href="#" class="fd-pagination__link">1</a>
-    <span class="fd-pagination__link fd-pagination__link--more" role="presentation"></span>
+    <span class="fd-pagination__link--more" role="presentation"></span>
     <a href="#" class="fd-pagination__link">49</a>
     <a href="#" class="fd-pagination__link" aria-selected="true">50</a>
     <a href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next"

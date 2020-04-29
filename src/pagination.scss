@@ -9,6 +9,10 @@
 $block: #{$fd-namespace}-pagination;
 
 .#{$block} {
+
+  $fd-pagination-link-padding-x: 0.25rem;
+  $fd-pagination-padding-x: 0.5rem;
+
   @include fd-reset();
 
   font-size: var(--sapFontSize);
@@ -18,10 +22,17 @@ $block: #{$fd-namespace}-pagination;
 
     font-size: var(--sapFontSize);
     color: var(--sapContent_LabelColor);
-    margin-right: 0.5rem;
+    margin-right: $fd-pagination-padding-x;
+
+    @include fd-rtl() {
+      margin-right: 0;
+      margin-left: $fd-pagination-padding-x;
+    }
   }
 
   &__nav {
+    @include fd-reset();
+
     display: inline-block;
     padding-left: 0;
     margin-left: 0;
@@ -35,8 +46,8 @@ $block: #{$fd-namespace}-pagination;
 
     font-size: var(--sapFontSize);
     background-color: transparent;
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+    padding-left: $fd-pagination-link-padding-x;
+    padding-right: $fd-pagination-link-padding-x;
     position: relative;
     text-decoration: none;
 
@@ -53,8 +64,8 @@ $block: #{$fd-namespace}-pagination;
       @include fd-link();
 
       font-size: var(--sapFontSize);
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
+      padding-left: $fd-pagination-padding-x;
+      padding-right: $fd-pagination-padding-x;
     }
 
     &--previous {
@@ -74,6 +85,8 @@ $block: #{$fd-namespace}-pagination;
     }
 
     &--more {
+      @include fd-reset();
+
       &::before {
         content: "...";
         color: var(--sapContent_LabelColor);
