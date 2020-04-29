@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.11"></a>
+# [0.9.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.10...v0.9.0-rc.11) (2020-04-29)
+
+
+### Bug Fixes
+
+* button disabled opacity to use theming parameter ([#908](https://github.com/SAP/fundamental-styles/issues/908)) ([e4ff1cf](https://github.com/SAP/fundamental-styles/commit/e4ff1cf))
+
+
+
 <a name="0.9.0-rc.10"></a>
 # [0.9.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.9...v0.9.0-rc.10) (2020-04-29)
 
