@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.10"></a>
+# [0.9.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.9...v0.9.0-rc.10) (2020-04-29)
+
+
+### Bug Fixes
+
+* add opacity parameter to disabled switch ([#909](https://github.com/SAP/fundamental-styles/issues/909)) ([061cda2](https://github.com/SAP/fundamental-styles/commit/061cda2))
+
+
+
 <a name="0.9.0-rc.9"></a>
 # [0.9.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.8...v0.9.0-rc.9) (2020-04-28)
 
