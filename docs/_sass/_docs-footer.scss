@@ -1,12 +1,14 @@
 .docs-footer {
-    background: $docs-home-white-color;
-    bottom: 0;
-    padding: 32px;
-    font-size: 16px;
-    .row {
-      margin: 0;
-    }
-    &__link {
-      margin-left: 20px;
-    }
+  background: $docs-home-white-color;
+  bottom: 0;
+  padding: 32px;
+  font-size: 16px;
+
+  .row {
+    margin: 0;
+  }
+
+  &__link {
+    margin-left: 20px;
+  }
 }

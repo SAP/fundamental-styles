@@ -1,6 +1,6 @@
 {
   "name": "fundamental-styles",
-  "version": "0.9.0-rc.11",
+  "version": "0.9.0-rc.12",
   "description": "Fundamental Styles is a Design System and HTML/CSS Component Library used to build modern Product User Experiences with the SAP look and feel. Learn more about this project at - http://sap.github.io/fundamental-styles/",
   "main": "dist/fundamental-styles.css",
   "scripts": {
@@ -11,7 +11,7 @@
     "docs:config": "./scripts/create-library-config.js",
     "docs:prod": "npm run docs:compile && cd docs && bundle install && bundle exec jekyll build --config _config.yml,_config-library.yml,_config-prod.yml && cd ..",
     "docs": "npm run docs:compile && cd docs && bundle install && bundle exec jekyll build --config _config.yml,_config-library.yml && cd ..",
-    "lint:style": "stylelint 'src/**/*.(sa|sc|c)ss'",
+    "lint:style": "stylelint '{src,docs}/**/*.(sa|sc|c)ss'",
     "lint:js": "eslint . --ext .js",
     "lint": "npm run lint:style && npm run lint:js",
     "lint:fix": "npm run lint:style -- --fix && npm run lint:js -- --fix",

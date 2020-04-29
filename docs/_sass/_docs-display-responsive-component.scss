@@ -1,22 +1,28 @@
 .fd-tile__content--responsive-display {
-    padding: 60px 10px 30px 10px !important;
-    text-align: center;
+  padding: 60px 10px 30px 10px !important;
+  text-align: center;
 }
+
 .docs-component--responsive-display {
-    &__frame {
-        border: 1px solid #ccc;
-        margin: 0 auto;
-        transition: width .25s, height .25s;
+  &__frame {
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    transition: width 0.25s, height 0.25s;
+  }
+
+  &__controls {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  &__full-screen {
+    padding: 5px 9px;
+    font-size: 1.14286rem;
+    color: rgb(109, 118, 120) !important;
+
+    &:hover {
+      color: white !important;
     }
-    &__controls {
-        position: absolute; right: 10px; top: 10px;
-    }
-    &__full-screen {
-        padding: 5px 9px ;
-        font-size: 1.14286rem;
-        color: rgb(109, 118, 120) !important;
-        &:hover {
-            color: white !important;
-        }
-    }
+  }
 }
