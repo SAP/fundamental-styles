@@ -93,7 +93,7 @@ The following circumstances will be considered a MAJOR or BREAKING change:
 * Droppping existing classnames, css variables, color names, color groups, spacing parameters
 * The existing underlying HTML markup of a component is altered
 * Non-visual HTML attribute changes/additions (such as `role`, `aria-*`, `data-*`)
-* An existing unit test is altered to account for either of the above
+  > Note: Fundamental Styles provides CSS directly, and HTML as reference to consumers. Because of the reference relationship of the HTML seen in Fundamental Styles, we want to be very clear when we alter that reference so that it is properly reflected in JS implementation libraries. Because of this, even non-visual changes will be treated as breaking.
 
 The following circumstances will NOT be considered a MAJOR or BREAKING change:
 * Introducing new  classnames, css variables, color names, color groups, spacing parameters
