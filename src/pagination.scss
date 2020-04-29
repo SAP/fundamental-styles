@@ -1,4 +1,4 @@
-@import "./settings";
+@import "./new-settings";
 @import "./mixins";
 @import "./functions";
 
@@ -9,26 +9,30 @@
 $block: #{$fd-namespace}-pagination;
 
 .#{$block} {
-  $fd-pagination-link-color: $fd-color--action !default;
-  $fd-pagination-link-color--active: fd-color("text", 2) !default;
-  $fd-pagination-total-color: fd-color("text", 2) !default;
 
-  --fd-pagination-link-color: var(--fd-color-action-1);
-  --fd-pagination-link-color-active: var(--fd-color-text-2);
-  --fd-pagination-total-color: var(--fd-color-text-2);
+  $fd-pagination-link-padding-x: 0.25rem;
+  $fd-pagination-padding-x: 0.5rem;
 
   @include fd-reset();
-  @include fd-type("0");
+
+  font-size: var(--sapFontSize);
 
   &__total {
     @include fd-reset();
-    @include fd-type("0");
-    @include fd-var-color("color", $fd-pagination-total-color, --fd-pagination-total-color);
 
-    margin-right: fd-space("xxs");
+    font-size: var(--sapFontSize);
+    color: var(--sapContent_LabelColor);
+    margin-right: $fd-pagination-padding-x;
+
+    @include fd-rtl() {
+      margin-right: 0;
+      margin-left: $fd-pagination-padding-x;
+    }
   }
 
   &__nav {
+    @include fd-reset();
+
     display: inline-block;
     padding-left: 0;
     margin-left: 0;
@@ -38,32 +42,30 @@ $block: #{$fd-namespace}-pagination;
 
   &__link {
     @include fd-reset();
-    @include fd-type("0");
-    @include fd-var-color("color", $fd-pagination-link-color, --fd-pagination-link-color);
+    @include fd-link();
 
+    font-size: var(--sapFontSize);
     background-color: transparent;
-    padding-left: fd-space(1);
-    padding-right: fd-space(1);
+    padding-left: $fd-pagination-link-padding-x;
+    padding-right: $fd-pagination-link-padding-x;
     position: relative;
     text-decoration: none;
 
     @include fd-selected() {
-      @include fd-var-color("color", $fd-pagination-link-color--active, --fd-pagination-link-color-active);
-
+      color: var(--sapContent_LabelColor);
       text-decoration: none;
       cursor: default;
-
-      @include fd-weight("bold");
+      font-weight: bold;
     }
 
     &--previous,
     &--next {
       @include fd-reset();
-      @include fd-type("0");
-      @include fd-var-color("color", $fd-pagination-link-color, --fd-pagination-link-color);
+      @include fd-link();
 
-      padding-left: fd-space(2);
-      padding-right: fd-space(2);
+      font-size: var(--sapFontSize);
+      padding-left: $fd-pagination-padding-x;
+      padding-right: $fd-pagination-padding-x;
     }
 
     &--previous {
@@ -83,11 +85,12 @@ $block: #{$fd-namespace}-pagination;
     }
 
     &--more {
+      @include fd-reset();
+
       &::before {
         content: "...";
-
-        @include fd-var-color("color", $fd-pagination-link-color--active, --fd-pagination-link-color-active);
-        @include fd-weight("bold");
+        color: var(--sapContent_LabelColor);
+        font-weight: bold;
       }
     }
   }
