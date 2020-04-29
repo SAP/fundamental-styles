@@ -39,7 +39,7 @@ $fd-button-transition-params: $fd-animation-speed ease-in !default;
 $block: #{$fd-namespace}-button;
 
 @mixin isDisabled() {
-  opacity: 0.4;
+  opacity: var(--sapContent_DisabledOpacity);
   cursor: not-allowed;
 
   &:focus {
