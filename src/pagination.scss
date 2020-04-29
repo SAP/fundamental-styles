@@ -1,6 +1,5 @@
 @import "./new-settings";
 @import "./mixins";
-@import "./functions";
 
 /*!
 .fd-pagination
@@ -38,6 +37,16 @@ $block: #{$fd-namespace}-pagination;
     margin-left: 0;
     list-style: none;
     margin-bottom: 0;
+  }
+
+  &__more {
+    @include fd-reset();
+
+    &::before {
+      content: "...";
+      color: var(--sapContent_LabelColor);
+      font-weight: bold;
+    }
   }
 
   &__link {
@@ -81,16 +90,6 @@ $block: #{$fd-namespace}-pagination;
 
       @include fd-rtl() {
         @include fd-icon("navigation-left-arrow","s");
-      }
-    }
-
-    &--more {
-      @include fd-reset();
-
-      &::before {
-        content: "...";
-        color: var(--sapContent_LabelColor);
-        font-weight: bold;
       }
     }
   }
