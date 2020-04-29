@@ -42,6 +42,7 @@ let prepareComponentScenario = (component) => {
   const scenario = { ...defaultScenario, ...componentScenario };
   // Ensure each config file has a urlSuffix, label and selectors defined.
   if (!scenario.urlSuffix || !scenario.label || !scenario.selectors) {
+    // eslint-disable-next-line no-undef
     throw "Error with backstop config file '" + configFile + "', must include urlSuffix, label and selectors";
   }
   scenario.url = scenario.urlPrefix + scenario.urlSuffix;
