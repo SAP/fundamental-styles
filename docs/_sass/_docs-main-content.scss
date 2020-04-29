@@ -33,6 +33,7 @@
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   > h2 {
     @extend .docs-header-h2;
 =======
@@ -47,9 +48,17 @@
     @media screen and (max-width: 950px) {
       padding-left: 0;
       margin-left: 1.5rem;
+=======
+    > h2 {
+        @extend .docs-header-h2;
+        @media screen and (max-width: 950px) {
+            padding-left: 0;
+        }
+>>>>>>> docs: fix margins
     }
   }
 
+<<<<<<< HEAD
   > h3 {
     @extend .docs-header-h3;
   }
@@ -59,6 +68,11 @@
       margin-left: 1.5rem;
     }
   }
+=======
+    > h3 {
+        @extend .docs-header-h3;
+    }
+>>>>>>> docs: fix margins
 }
 
 .docs-content-full-width {
