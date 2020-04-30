@@ -909,4 +909,20 @@ $semantic-color: (
       @include navigation-byline-borderless();
     }
   }
+
+  &--interactive {
+    > * {
+      &:active {
+        background: var(--sapList_Active_Background);
+
+        &::before {
+          border: none;
+        }
+
+        .#{$block}__title, .#{$block}__subtitle {
+          color: var(--sapContent_ContrastTextColor);
+        }
+      }
+    }
+  }
 }
