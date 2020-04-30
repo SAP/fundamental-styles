@@ -1,0 +1,6 @@
+docs/js/jquery.shuffle.min.js
+docs/js/jquery.navgoco.min.js
+docs/js/jquery.ba-throttle-debounce.min.js
+docs/js/toc.js
+docs/_site/
+test/visual-regression-tests/backstop_data/*

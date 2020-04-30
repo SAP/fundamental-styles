@@ -1,37 +1,37 @@
 .docs-header {
+  &-h1 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.06;
+    text-align: left;
 
-    &-h1 {
-        font-size: 36px;
-        font-weight: bold;
-        line-height: 1.06;
-        text-align: left;
-        @media screen and (max-width: 950px) {
-            margin-left: 1.5rem;
-            margin-bottom: 24px;
-        }
+    @media screen and (max-width: 950px) {
+      margin-left: 1.5rem;
+      margin-bottom: 24px;
     }
+  }
 
-    &-h2 {
-    	font-size: 28px;
-    	font-weight: 100;
-    	line-height: 1.14;
-        margin-top: 40px;
-    }
+  &-h2 {
+    font-size: 28px;
+    font-weight: 100;
+    line-height: 1.14;
+    margin-top: 40px;
+  }
 
-    &-h3 {
-        font-size: 16px;
-        font-weight: bold;
-        line-height: 1.88;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-        margin-top: 40px;
-    }
+  &-h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.88;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
 
-    &-h4 {
-        font-size: 16px;
-        font-weight: bold;
-        line-height: 1.88;
-        margin-bottom: 10px;
-        margin-top: 40px;
-    }
+  &-h4 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.88;
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
 }

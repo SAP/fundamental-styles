@@ -43,15 +43,6 @@
   font-weight: 300;
 }
 
-.docs-landing-page {
-  a {
-    &:focus {
-      text-decoration: underline;
-      outline-offset: 2px;
-    }
-  }
-}
-
 $home-page-action-color: #007ea3;
 
 body {
@@ -116,6 +107,7 @@ body {
 
     a {
       @extend %text;
+
       height: 52px;
       display: flex;
       justify-content: center;
@@ -145,6 +137,9 @@ body {
 
   &__hamburger {
     display: none;
+    min-width: 15px;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 
     button {
       border: 0;
@@ -182,6 +177,7 @@ body {
   &__text {
     width: 70%;
     margin-top: 16px;
+
     @extend %text;
   }
 }
@@ -197,6 +193,7 @@ body {
 
   &__title {
     @extend %text;
+
     text-align: center;
     margin-bottom: 64px;
   }
@@ -226,6 +223,7 @@ body {
 
   &__item-title {
     @extend %text;
+
     font-size: 30px;
     line-height: 1.2;
     margin: 16px 0;
@@ -233,6 +231,7 @@ body {
 
   &__text {
     @extend %text;
+
     font-size: 20px;
     line-height: 1.4;
   }
@@ -243,6 +242,7 @@ body {
 
   &__more {
     @extend %text;
+
     font-size: 16px;
     line-height: 1.75;
     font-weight: normal;
@@ -265,6 +265,7 @@ body {
 
   &__title {
     @extend %text;
+
     text-align: center;
     margin-bottom: 52px;
   }
@@ -283,12 +284,14 @@ body {
 
   &__item-title {
     @extend %text;
+
     font-size: 30px;
     line-height: 1.2;
   }
 
   &__text {
     @extend %text;
+
     font-size: 20px;
     line-height: 1.4;
   }
@@ -302,6 +305,7 @@ body {
 
   &__title {
     @extend %text;
+
     text-align: center;
     margin-bottom: 64px;
   }
@@ -316,6 +320,7 @@ body {
 
   &__item {
     @extend %text;
+
     font-size: 20px;
     line-height: 1.4;
   }
@@ -328,13 +333,16 @@ body {
 
   &__title {
     @extend %text;
+
     text-align: center;
   }
 
   &__text {
     width: 50%;
     margin: 16px auto 44px;
+
     @extend %text;
+
     font-size: 20px;
     line-height: 1.4;
     text-align: center;
@@ -371,13 +379,14 @@ body {
   width: 100%;
   margin: 16px 120px 0;
   padding: 16px 0;
+
   @extend %text;
+
   font-size: 12px;
   line-height: 1.33;
   font-weight: normal;
   display: grid;
   grid-template-columns: auto auto;
-
   align-items: center;
   border-top: 2px solid #eeeeee;
   color: #404040;
@@ -475,6 +484,7 @@ body {
 
     &__text {
       width: 100%;
+
       @include item-title-mobile();
     }
 
@@ -504,6 +514,7 @@ body {
 
     &__title {
       @include title-mobile();
+
       margin-bottom: 44px;
     }
 
@@ -513,6 +524,7 @@ body {
 
     &__item-title {
       @include item-title-mobile();
+
       margin-bottom: 8px;
     }
 
@@ -537,6 +549,7 @@ body {
 
     &__title {
       @include title-mobile();
+
       margin-bottom: 20px;
     }
 
@@ -574,11 +587,13 @@ body {
 
     &__title {
       @include title-mobile();
+
       margin-bottom: 44px;
     }
 
     &__item-title {
       @include item-title-mobile();
+
       margin-bottom: 8px;
     }
 
@@ -598,6 +613,7 @@ body {
 
     &__title {
       @include title-mobile();
+
       margin-bottom: 16px;
     }
 
@@ -678,6 +694,7 @@ body {
     &__copyright {
       margin: 0;
       margin-top: 24px;
+      text-align: center;
     }
 
     &__container--left {
@@ -701,10 +718,6 @@ body {
       width: 100%;
       justify-content: center;
     }
-
-    &__copyright {
-      text-align: center;
-    }
   }
 }
 
@@ -712,13 +725,6 @@ body {
   .backToTopVisible {
     display: none;
   }
-}
-
-// HAMBURGER MENU
-.header-section__hamburger {
-  min-width: 15px;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 .header-section__sap-icon--menu2 {
@@ -729,7 +735,7 @@ body {
 .header-section__sap-icon--menu2::before {
   transition: opacity 0.3s, transform 0.3s;
   color: $home-page-action-color;
-   font-size: 20px;
+  font-size: 20px;
 }
 
 .header-section__sap-icon--decline::before {
@@ -754,6 +760,7 @@ body {
     -webkit-transform: scale(1);
   }
 }
+
 @keyframes scale-display--reversed {
   0% {
     opacity: 1;
@@ -763,6 +770,7 @@ body {
     transform: scale(1);
     -webkit-transform: scale(1);
   }
+
   99% {
     opacity: 0;
     display: flex;
@@ -771,11 +779,21 @@ body {
     transform: scale(0);
     -webkit-transform: scale(0);
   }
+
   100% {
     display: none;
     opacity: 0;
     transform-origin: top left;
     transform: scale(0);
     -webkit-transform: scale(0);
+  }
+}
+
+.docs-landing-page {
+  a {
+    &:focus {
+      text-decoration: underline;
+      outline-offset: 2px;
+    }
   }
 }

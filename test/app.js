@@ -1,3 +1,4 @@
+/* eslint-disable no-prototype-builtins */
 const nunjucks = require('nunjucks');
 const express = require('express');
 const path = require('path');
@@ -79,7 +80,7 @@ env.addFilter('state', (obj = []) => {
     const classes = [];
     for (const key in obj) {
         if (obj.hasOwnProperty(key)) {
-            if (!!obj[key]) {
+            if (obj[key]) {
                 classes.push(` is-${key}`);
             }
         }
@@ -203,10 +204,9 @@ router.get('/:key', (req, res) => {
     try {
         data = require(`./templates/${key}/data.json`);
     } catch (e) {
-
-    } finally {
-
+        console.log(e);
     }
+
     signale.info(`Requested http://localhost:${port}/${key}`);
     res.render(`${key}/index`, Object.assign(GLOBALS, { id: key, component: getStarterData(), data, selfContained: process.env.SELF_CONTAINED, ie11: process.env.IE11 }));
 });
