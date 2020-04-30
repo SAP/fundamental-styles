@@ -41,6 +41,7 @@ there should be popover with missing options.
                     <span class="fd-breadcrumb__dropdown-icon"></span>
                 </a>
             </div>
+<<<<<<< HEAD
             <div class="fd-popover__body fd-popover__body--no-arrow fd-breadcrumb__popover-body" aria-hidden="true" id="breadcrumb1">
               <ul class="fd-list fd-list--navigation" role="list">
                 <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
@@ -59,6 +60,25 @@ there should be popover with missing options.
                     </a>
                 </li>
               </ul>
+=======
+            <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="breadcrumb1">
+              <div class="fd-popover__body__no-overflow">
+                <ul class="fd-list fd-list--no-borderBot fd-list--compact">
+                      <li class="fd-list__item">
+                        <a class="fd-list__title" href="#">Link Text</a>
+                      </li>
+                      <li class="fd-list__item">
+                        <a class="fd-list__title" href="#">Link Text</a>                    
+                      </li>
+                      <li class="fd-list__item">
+                        <a class="fd-list__title" href="#">Link Text</a>
+                      </li>
+                      <li class="fd-list__item">
+                        <a class="fd-list__title" href="#">Link Text</a>
+                      </li>
+                  </ul>
+                </div>
+>>>>>>> fix: popover overflow
             </div>
         </div>
     </li>

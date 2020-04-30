@@ -34,22 +34,24 @@ If the entries are not validated by the application, users can also enter custom
       </div>
   </div>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcX348">
-        <ul class="fd-list fd-list--dropdown" role="listbox">
-            <li role="option" tabindex="0" class="fd-list__item is-selected">
-                <span class="fd-list__title">
-                    <span class="fd-list__bold">App</span>le
-                </span>
-            </li>
-            <li role="option" tabindex="0" class="fd-list__item">
-                <span class="fd-list__title">Orange</span>
-            </li>
-            <li role="option" tabindex="0" class="fd-list__item">
-                <span class="fd-list__title">Banana</span>
-            </li>
-            <li role="option" tabindex="0" class="fd-list__item">
-                <span class="fd-list__title">Kiwi</span>
-            </li>
-        </ul>
+    <div class="fd-popover__body__no-overflow">
+      <ul class="fd-list fd-list--no-borderBot fd-list--dropdown" role="listbox">
+          <li role="option" tabindex="0" class="fd-list__item is-selected">
+              <span class="fd-list__title">
+                  <span class="fd-list__bold">App</span>le
+              </span>
+          </li>
+          <li role="option" tabindex="0" class="fd-list__item">
+              <span class="fd-list__title">Orange</span>
+          </li>
+          <li role="option" tabindex="0" class="fd-list__item">
+              <span class="fd-list__title">Banana</span>
+          </li>
+          <li role="option" tabindex="0" class="fd-list__item">
+              <span class="fd-list__title">Kiwi</span>
+          </li>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -70,22 +72,24 @@ If the entries are not validated by the application, users can also enter custom
         </div>
     </div>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcX34">
-        <ul class="fd-list fd-list--dropdown fd-list--compact" role="listbox">
-            <li role="option" tabindex="0" class="fd-list__item is-selected">
-                <span class="fd-list__title">
-                    <span class="fd-list__bold">App</span>le
-                </span>
-            </li>
-            <li role="option" tabindex="0" class="fd-list__item">
-                <span class="fd-list__title">Orange</span>
-            </li>
-            <li role="option" tabindex="0" class="fd-list__item">
-                <span class="fd-list__title">Banana</span>
-            </li>
-            <li role="option" tabindex="0" class="fd-list__item">
-                <span class="fd-list__title">Kiwi</span>
-            </li>
-        </ul>
+    <div class="fd-popover__body__no-overflow">
+      <ul class="fd-list fd-list--dropdown fd-list--no-borderBot fd-list--compact" role="listbox">
+          <li role="option" tabindex="0" class="fd-list__item is-selected">
+              <span class="fd-list__title">
+                  <span class="fd-list__bold">App</span>le
+              </span>
+          </li>
+          <li role="option" tabindex="0" class="fd-list__item">
+              <span class="fd-list__title">Orange</span>
+          </li>
+          <li role="option" tabindex="0" class="fd-list__item">
+              <span class="fd-list__title">Banana</span>
+          </li>
+          <li role="option" tabindex="0" class="fd-list__item">
+              <span class="fd-list__title">Kiwi</span>
+          </li>
+      </ul>
+    </div>
   </div>
 </div>
 {% endcapture %}
@@ -105,7 +109,8 @@ The `ComboBox` component can be customized by adding additional information in a
       </div>
   </div>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GRTGLK6">
-        <ul class="fd-list fd-list--dropdown" role="listbox">
+    <div class="fd-popover__body__no-overflow">
+        <ul class="fd-list fd-list--dropdown fd-list--no-borderBot" role="listbox">
            <li class="fd-list__item is-selected" role="option" tabindex="0">
                <span class="fd-list__title">Product 1</span>
                <span class="fd-list__secondary">1000 EUR</span>
@@ -123,6 +128,7 @@ The `ComboBox` component can be customized by adding additional information in a
                <span class="fd-list__secondary">40 EUR</span>
             </li>
         </ul>
+    </div>
   </div>
 </div>
 {% endcapture %}
@@ -142,7 +148,8 @@ In cases where the list items need to be categorized into groups, it is possible
       </div>
   </div>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcXLK6">
-        <ul class="fd-list fd-list--dropdown" role="listbox">
+    <div class="fd-popover__body__no-overflow">
+        <ul class="fd-list fd-list--dropdown fd-list--no-borderBot" role="listbox">
             <li class="fd-list__group-header">
                 Fruits
             </li>
@@ -174,6 +181,7 @@ In cases where the list items need to be categorized into groups, it is possible
                 <span class="fd-list__title">Potato</span>
             </li>
         </ul>
+    </div>
   </div>
 </div>
 {% endcapture %}
@@ -198,7 +206,8 @@ In the example you can see how the `Combobox` component looks without the `fd-po
       </div>
   </div>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4HTFDLK6">
-        <ul class="fd-list fd-list--dropdown" role="listbox">
+    <div class="fd-popover__body__no-overflow">
+        <ul class="fd-list fd-list--dropdown fd-list--no-borderBot" role="listbox">
             <li role="option" tabindex="0" class="fd-list__item is-selected">
                 <span class="fd-list__title">Apple</span>
             </li>
@@ -212,6 +221,7 @@ In the example you can see how the `Combobox` component looks without the `fd-po
                 <span class="fd-list__title">Kiwi</span>
             </li>
         </ul>
+    </div>
   </div>
 </div>
 {% endcapture %}
@@ -271,7 +281,8 @@ To add text in the `body` of the component, simply include your text in the `fd-
             </div>
         </div>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcEX34">
-        <ul class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
+    <div class="fd-popover__body__no-overflow">
+        <ul class="fd-list fd-list--has-message fd-list--dropdown fd-list--no-borderBot fd-list--compact" role="listbox">
             <li class="fd-list__message fd-list__message--success">Success message</li>
             <li role="option" tabindex="0" class="fd-list__item is-selected">
                 <span class="fd-list__title">
@@ -288,6 +299,7 @@ To add text in the `body` of the component, simply include your text in the `fd-
                 <span class="fd-list__title">Kiwi</span>
             </li>
         </ul>
+    </div>
   </div>
 </div>
 <span class="fd-form-message fd-form-message--static fd-form-message--success">Success message</span>

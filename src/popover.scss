@@ -81,7 +81,6 @@ $block: #{$fd-namespace}-popover;
     top: $fd-popover-top-position;
     transition: all $fd-popover-transition-params;
     transform: translateY(0);
-    overflow: hidden;
 
     @include fd-rtl() {
       left: auto;
@@ -232,6 +231,10 @@ $block: #{$fd-namespace}-popover;
       z-index: 1;
       opacity: 0;
       visibility: hidden;
+    }
+
+    &__no-overflow {
+      overflow: hidden;
     }
   }
 
