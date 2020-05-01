@@ -41,7 +41,7 @@ there should be popover with missing options.
                     <span class="fd-breadcrumb__dropdown-icon"></span>
                 </a>
             </div>
-            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--breadcrumb" aria-hidden="true" id="breadcrumb1">
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-breadcrumb__popover-body" aria-hidden="true" id="breadcrumb1">
               <ul class="fd-list fd-list--navigation" role="list">
                 <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
                     <a tabindex="0" class="fd-list__link" href="https://sap.github.io/fundamental-styles/">

@@ -44,8 +44,6 @@ $block: #{$fd-namespace}-popover;
   $fd-popover-footer-border-top: 0.0625rem solid var(--sapPageFooter_BorderColor);
   $fd-popover-footer-padding: 0 0.5rem !default;
 
-  $fd-breadcrumb-border-top-radius: 0.125rem;
-
   @include fd-reset();
 
   position: relative;
@@ -232,11 +230,6 @@ $block: #{$fd-namespace}-popover;
       z-index: 1;
       opacity: 0;
       visibility: hidden;
-    }
-
-    &--breadcrumb {
-      border-top-left-radius: $fd-breadcrumb-border-top-radius;
-      border-top-right-radius: $fd-breadcrumb-border-top-radius;
     }
   }
 
