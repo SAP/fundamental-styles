@@ -10,7 +10,7 @@
   padding-bottom: 8px;
   border: 1px solid #ccc;
   position: relative;
-  background-color: #f3f4f5;
+  background-color: var(--sapBackgroundColor);
   transition: background-color 0.25s;
 
   > .fd-tile__content {
