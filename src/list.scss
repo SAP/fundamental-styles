@@ -392,7 +392,7 @@ $semantic-color: (
       @include fd-selected() {
         border-bottom-color: var(--sapSelectedColor);
         background-color: var(--sapList_SelectionBackgroundColor);
-        cursor: grabbing;
+        cursor: grab;
 
         .#{$block}__title,
         .#{$block}__subtitle,
@@ -404,6 +404,14 @@ $semantic-color: (
           color: var(--sapList_TextColor);
         }
 
+        &:active {
+          background: var(--sapList_Active_Background);
+
+          &:hover {
+            background: var(--sapList_Active_Background);
+          }
+        }
+
         &:hover {
           border-bottom-color: var(--sapSelectedColor);
           background-color: var(--sapList_Hover_SelectionBackground);
@@ -412,12 +420,12 @@ $semantic-color: (
 
       &:hover {
         background-color: var(--sapList_Hover_Background);
-        cursor: grabbing;
+        cursor: grab;
       }
 
       &:active {
         background: var(--sapList_Active_Background);
-        cursor: grabbing;
+        cursor: grab;
 
         &::before {
           border: none;
