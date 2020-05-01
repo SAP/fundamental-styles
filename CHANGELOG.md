@@ -1,13 +1,6 @@
-# Changelog
+# Change Log
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
-
-## [0.9.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.14...v0.9.0-rc.15) (2020-05-01)
-
-
-### Bug Fixes
-
-* debug standard version ([#930](https://github.com/SAP/fundamental-styles/issues/930)) ([f3724c4](https://github.com/SAP/fundamental-styles/commit/f3724c4acb6fe31a4c3a92262dadf63f8a60e984))
 
 <a name="0.9.0-rc.14"></a>
 # [0.9.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.13...v0.9.0-rc.14) (2020-04-30)
