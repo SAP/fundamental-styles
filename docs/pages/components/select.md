@@ -32,16 +32,18 @@ For lists that require more than 12 options, the <a href="/patterns/combobox-inp
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h0C6A325">
      <ul class="fd-list fd-list--dropdown" role="listbox">
         <li class="fd-list__item is-selected" role="option" tabindex="0">
-           <span class="fd-list__title">List item 1</span>
+            <span class="fd-list__icon sap-icon--history"></span>
+           <span class="fd-list__title">Selected List item 1</span>
         </li>
         <li class="fd-list__item" role="option" tabindex="0">
-           <span class="fd-list__title">List item 2</span>
+          <span class="fd-list__icon sap-icon--history"></span>
+          <span class="fd-list__title">List item 2</span>
        </li>
         <li class="fd-list__item" role="option" tabindex="0">
            <span class="fd-list__title">List item 3</span>
         </li>
-        <li class="fd-list__item" role="option" tabindex="0">
-           <span class="fd-list__title">List item 4</span>
+        <li class="fd-list__item" role="option" tabindex="0" disabled>
+           <span class="fd-list__title">Disabled List item 4</span>
         </li>
      </ul>
   </div>

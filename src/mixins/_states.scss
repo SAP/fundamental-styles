@@ -13,6 +13,7 @@
 @mixin fd-disabled {
   &[aria-disabled="true"],
   &.is-disabled,
+  &[disabled],
   &:disabled {
     @content;
   }
