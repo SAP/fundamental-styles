@@ -29,7 +29,7 @@ summary:
       </div>
       <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="NJvVh542c">
          <nav class="fd-menu">
-            <ul class="fd-menu__list">
+            <ul class="fd-menu__list fd-menu__list--no-shadow">
                <li class="fd-localization-editor__language">
                   <div class="fd-input-group">
                      <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Enter Label">
@@ -79,7 +79,7 @@ summary:
       </div>
       <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="test22">
          <nav class="fd-menu">
-            <ul class="fd-menu__list">
+            <ul class="fd-menu__list fd-menu__list--no-shadow">
                <li class="fd-localization-editor__language">
                   <div class="fd-input-group">
                      <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Enter Label">
@@ -134,7 +134,7 @@ summary:
       </div>
       <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="NJvVh542">
          <nav class="fd-menu">
-            <ul class="fd-menu__list">
+            <ul class="fd-menu__list fd-menu__list--no-shadow">
                <li class="fd-localization-editor__language">
                   <div class="fd-input-group ">
                      <textarea class="fd-textarea fd-input-group__input" id=""></textarea>

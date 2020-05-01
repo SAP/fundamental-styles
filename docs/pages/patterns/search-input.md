@@ -29,7 +29,7 @@ The search input component is an opinionated composition of the `input group`, `
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="F4GcX348bc">
             <nav class="fd-menu fd-menu--full-width">
-                <ul class="fd-menu__list">
+                <ul class="fd-menu__list fd-menu__list--no-shadow">
                     <li class="fd-menu__item">
                         <a href="#" class="fd-menu__link">
                             <span class="fd-menu__title"><strong>Ba</strong>nana</span>
@@ -67,7 +67,7 @@ The search input component is an opinionated composition of the `input group`, `
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="F4GcX34b">
             <nav class="fd-menu fd-menu--compact">
-                <ul class="fd-menu__list">
+                <ul class="fd-menu__list fd-menu__list--no-shadow">
                     <li class="fd-menu__item">
                         <a href="#" class="fd-menu__link">
                             <span class="fd-menu__title"><strong>Ba</strong>nana</span>

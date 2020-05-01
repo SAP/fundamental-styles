@@ -31,7 +31,7 @@ Implementation Guidelines:
     </div>
     <div class="fd-popover__body" aria-hidden="true" id="pQqQR213">
         <nav class="fd-menu">
-            <ul class="fd-menu__list">
+            <ul class="fd-menu__list fd-menu__list--no-shadow">
                 <li class="fd-menu__item">
                     <a href="#" class="fd-menu__link">
                         <span class="fd-menu__title">Option 1</span>
@@ -65,7 +65,7 @@ Implementation Guidelines:
     </div>
     <div class="fd-popover__body" aria-hidden="true" id="jhqD0558">
         <nav class="fd-menu">
-            <ul class="fd-menu__list">
+            <ul class="fd-menu__list fd-menu__list--no-shadow">
                 <li class="fd-menu__item">
                     <a href="#" class="fd-menu__link">
                         <span class="fd-menu__title">Option 1</span>
