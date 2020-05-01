@@ -11,6 +11,15 @@ All notable changes to this project will be documented in this file. See [standa
 * debug standard version with debug command + bump back to 7 ([#932](https://github.com/SAP/fundamental-styles/issues/932)) ([7c48741](https://github.com/SAP/fundamental-styles/commit/7c48741023f41fd687088488a18cfe0776f13fee))
 * revert standard-version to v4 ([#931](https://github.com/SAP/fundamental-styles/issues/931)) ([986d5ec](https://github.com/SAP/fundamental-styles/commit/986d5ec348ffa42dac396efde01f9b54568c632e))
 
+## [0.9.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.14...v0.9.0-rc.15) (2020-05-01)
+
+
+### Bug Fixes
+
+* debug standard version ([#930](https://github.com/SAP/fundamental-styles/issues/930)) ([f3724c4](https://github.com/SAP/fundamental-styles/commit/f3724c4acb6fe31a4c3a92262dadf63f8a60e984))
+* debug standard version with debug command + bump back to 7 ([#932](https://github.com/SAP/fundamental-styles/issues/932)) ([7c48741](https://github.com/SAP/fundamental-styles/commit/7c48741023f41fd687088488a18cfe0776f13fee))
+* revert standard-version to v4 ([#931](https://github.com/SAP/fundamental-styles/issues/931)) ([986d5ec](https://github.com/SAP/fundamental-styles/commit/986d5ec348ffa42dac396efde01f9b54568c632e))
+
 <a name="0.9.0-rc.14"></a>
 # [0.9.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.13...v0.9.0-rc.14) (2020-04-30)
 
