@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.17"></a>
+# [0.9.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.16...v0.9.0-rc.17) (2020-05-02)
+
+
+### Features
+
+* migrate pagination with theming parameters ([#922](https://github.com/SAP/fundamental-styles/issues/922)) ([3f33390](https://github.com/SAP/fundamental-styles/commit/3f33390))
+
+
+
 <a name="0.9.0-rc.16"></a>
 # [0.9.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.15...v0.9.0-rc.16) (2020-05-01)
 
