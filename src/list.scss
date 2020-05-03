@@ -60,7 +60,7 @@ $semantic-color: (
   "informative": ("color": var(--sapInformativeTextColor))
 );
 
-@mixin fake-list-outline($outlineColor: var(--sapContent_FocusColor)) {
+@mixin fake-list-outline() {
   &:focus,
   &.is-focus {
     outline: none;
@@ -69,13 +69,81 @@ $semantic-color: (
       content: '';
       position: absolute;
       display: block;
-      border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) $outlineColor;
-      top: 0.1875rem;
-      left: 0.1875rem;
-      right: 0.1875rem;
-      bottom: 0.1875rem;
+      border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+      top: 0.125rem;
+      left: 0.125rem;
+      right: 0.125rem;
+      bottom: 0.125rem;
+    }
+
+    @include fd-active() {
+      &::before {
+        border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_ContrastFocusColor);
+      }
     }
   }
+}
+
+@mixin list-item-selected-state() {
+  background: var(--sapList_SelectionBackgroundColor);
+  border-bottom: $fd-list-selected-state-border-bottom;
+
+  @content;
+}
+
+@mixin list-item-states() {
+  @include fd-hover() {
+    background: var(--sapList_Hover_Background);
+  }
+
+  @include fd-selected() {
+    @include list-item-selected-state() {
+      @include fd-hover() {
+        background: var(--sapList_Hover_SelectionBackground);
+      }
+    }
+  }
+
+  @include fd-active() {
+    background: var(--sapList_Active_Background);
+
+    @include fd-hover() {
+      background: var(--sapList_Active_Background);
+    }
+
+    @include fd-selected() {
+      background: var(--sapList_Active_Background);
+
+      @include fd-hover() {
+        background: var(--sapList_Active_Background);
+      }
+    }
+
+    .#{$block}__title,
+    .#{$block}__secondary,
+    .#{$block}__icon,
+    .#{$block}__content,
+    .#{$block}__byline,
+    .#{$block}__byline-left,
+    .#{$block}__byline-right,
+    .#{$block}__thumbnail,
+    .#{$block}__link--navigation-indicator::after,
+    & {
+      color: var(--sapList_Active_TextColor);
+    }
+
+    @each $set-name, $color-set in $semantic-color {
+      .#{$block}__byline-right--#{$set-name} {
+        color: var(--sapList_Active_TextColor);
+      }
+    }
+  }
+}
+
+@mixin ie11-active-state-fix() {
+  // :active selector has issues in IE11 when there are nested elements.
+  // The solution is to remove the pointer events from the nested elements.
+  pointer-events: none;
 }
 
 @mixin padding-left-right($left, $right) {
@@ -93,13 +161,13 @@ $semantic-color: (
   padding-bottom: $padding-y;
 }
 
-@mixin reset-list-item-paddings {
+@mixin reset-list-item-paddings() {
   .#{$block}__item--link {
     padding: 0;
   }
 }
 
-@mixin navigation-byline-borderless {
+@mixin navigation-byline-borderless() {
   .#{$block}__item--link {
     .#{$block}__link {
       @include padding-top-bottom(0.5rem);
@@ -129,57 +197,6 @@ $semantic-color: (
   }
 }
 
-@mixin list-selected-state {
-  background: var(--sapList_SelectionBackgroundColor);
-  border-bottom: $fd-list-selected-state-border-bottom;
-
-  @content;
-}
-
-@mixin list-active-state {
-  background: var(--sapList_Active_Background);
-
-  @include fd-hover() {
-    background: var(--sapList_Active_Background);
-  }
-
-  @include fd-selected() {
-    background: var(--sapList_Active_Background);
-
-    @include fd-hover() {
-      background: var(--sapList_Active_Background);
-    }
-  }
-
-  @include fake-list-outline(var(--sapContent_ContrastFocusColor));
-
-  .#{$block}__title,
-  .#{$block}__secondary,
-  .#{$block}__icon,
-  .#{$block}__content,
-  .#{$block}__byline,
-  .#{$block}__byline-left,
-  .#{$block}__byline-right,
-  .#{$block}__thumbnail,
-  &.#{$block}__link--navigation-indicator::after,
-  & {
-    color: var(--sapList_Active_TextColor);
-  }
-
-  @each $set-name, $color-set in $semantic-color {
-    .#{$block}__byline-right--#{$set-name} {
-      color: var(--sapList_Active_TextColor);
-    }
-  }
-}
-
-@mixin ie11-active-state-fix() {
-  // :active selector has issues in IE11 when there are nested elements.
-  // The solution is to remove the pointer events from the nested elements.
-
-  pointer-events: none;
-}
-
 .#{$block} {
   @include fd-reset();
 
@@ -205,32 +222,19 @@ $semantic-color: (
     background: var(--sapList_Background);
     position: relative;
 
+    @include fd-selected() {
+      @include list-item-selected-state();
+    }
+
     &--no-data {
       .#{$block}__title {
         text-align: center;
       }
-
-      @include fd-hover() {
-        background: var(--sapList_Background);
-      }
     }
 
-    @include fd-selected() {
-      @include list-selected-state();
-
-      .#{$block}__link {
-        @include fd-hover() {
-          background: var(--sapList_Hover_SelectionBackground);
-        }
-
-        @include fd-active() {
-          background: var(--sapList_Active_Background);
-
-          @include fd-hover() {
-            background: var(--sapList_Active_Background);
-          }
-        }
-      }
+    &--link,
+    &--action {
+      @include list-item-states();
     }
 
     &--action {
@@ -239,22 +243,6 @@ $semantic-color: (
 
       &:first-child {
         border-top: $fd-list-item-border;
-      }
-
-      @include fd-hover() {
-        background: var(--sapList_Hover_Background);
-      }
-
-      @include fd-active() {
-        @include list-active-state();
-      }
-
-      @include fd-selected() {
-        @include list-selected-state() {
-          @include fd-hover() {
-            background: var(--sapList_Hover_SelectionBackground);
-          }
-        }
       }
 
       .#{$block}__title {
@@ -270,13 +258,15 @@ $semantic-color: (
           outline-style: dotted;
           outline-width: var(--sapContent_FocusWidth);
           outline-color: var(--sapContent_FocusColor);
-          outline-offset: -0.1875rem;
-        }
+          outline-offset: -0.125rem;
 
-        @include fd-active() {
-          @include fd-focus() {
+          @include fd-active() {
             outline-color: var(--sapContent_ContrastFocusColor);
           }
+        }
+
+        &::-moz-focus-inner {
+          border: 0;
         }
       }
     }
@@ -354,18 +344,6 @@ $semantic-color: (
     height: 100%;
     padding: 0 $fd-list-item-padding-x;
     cursor: pointer;
-
-    @include fd-hover() {
-      background: var(--sapList_Hover_Background);
-    }
-
-    @include fd-selected() {
-      @include list-selected-state();
-    }
-
-    @include fd-active() {
-      @include list-active-state();
-    }
   }
 
   &__group-header {
@@ -460,6 +438,8 @@ $semantic-color: (
 
   &--dropdown {
     .#{$block}__item {
+      @include list-item-states();
+
       height: auto;
       padding: $fd-dropdown-vertical-padding $fd-list-item-padding-x;
     }
@@ -474,6 +454,8 @@ $semantic-color: (
 
   &--multi-input {
     .#{$block}__item {
+      @include list-item-states();
+
       padding: 0;
       height: auto;
     }
