@@ -331,7 +331,7 @@ $semantic-color: (
     font-size: var(--sapFontSmallSize);
     overflow: hidden;
     text-overflow: ellipsis;
-    
+
     @include fd-rtl() {
       padding-left: 0;
       padding-right: $fd-list-message-padding-left;
