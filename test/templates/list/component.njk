@@ -30,12 +30,12 @@
 {%- endmacro %}
 
 {% macro list_item(item={}, toggles={}, modifier=[]) %}
-<li class="fd-list__item{{ modifier | modifier('list__item') }} {{ 'fd-list__item--link' if item.hasLink }} {{ 'fd-list__item--action' if item.isAction }} {{ 'is-selected' if item.selected }} {{ 'is-active' if item.active and item.isAction }} {{ 'is-hover' if item.hover and item.isAction }}">
+<li class="fd-list__item{{ modifier | modifier('list__item') }} {{ 'fd-list__item--link' if item.hasLink }} {{ 'fd-list__item--action' if item.isAction }} {{ 'is-selected' if item.selected }} {{ 'is-active' if item.active }} {{ 'is-hover' if item.hover }}">
     {%- if toggles.link and not toggles.navIndicator %}
-    	<a tabindex="0" class="fd-list__link {{ 'is-selected' if item.selected }} {{ 'is-active' if item.active }} {{ 'is-hover' if item.hover }}" href="#">
+    	<a tabindex="0" class="fd-list__link " href="#">
 	{%- endif %}
     {%- if toggles.navIndicator %}
-    	<a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator {{ 'is-active' if item.active }} {{ 'is-hover' if item.hover }} {{ 'is-navigated' if item.navigated }}" href="#">
+    	<a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
 	{%- endif %}
     {%- if toggles.multiInput %}
     	<label class="fd-list__label">
