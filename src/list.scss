@@ -21,6 +21,7 @@ $fd-list-last-item-bottom-border-radius: var(--sapElement_BorderCornerRadius) !d
 $fd-list-form-item-margin-x: -1rem !default;
 $fd-list-large-font-size: var(--sapFontLargeSize) !default;
 $fd-list-normal-font-size: var(--sapFontSize) !default;
+$fd-list-message-padding-left: 0.5rem !default;
 
 // STANDARD LIST WITH BYLINE
 $fd-list-byline-thumbnail-dimensions: 3rem !default;
@@ -326,10 +327,15 @@ $semantic-color: (
     top: 0;
     left: 0;
     height: 2rem;
-    padding-left: 1rem;
+    padding-left: $fd-list-message-padding-left;
     font-size: var(--sapFontSmallSize);
     overflow: hidden;
     text-overflow: ellipsis;
+
+    @include fd-rtl() {
+      padding-left: 0;
+      padding-right: $fd-list-message-padding-left;
+    }
 
     &--error {
       background-color: var(--sapErrorBackground);
