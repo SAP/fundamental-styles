@@ -105,4 +105,13 @@ $block: #{$fd-namespace}-select;
       }
     }
   }
+
+  @include fd-rtl() {
+    .#{$block}__control {
+      .#{$block}__button {
+        margin-left: 0;
+        margin-right: 0.5rem;
+      }
+    }
+  }
 }
