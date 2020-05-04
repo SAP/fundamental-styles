@@ -53,6 +53,9 @@ $block: #{$fd-namespace}-switch;
   $fd-switch-track-semantic-offset: 1.9375rem;
   $fd-switch-track-border-offset: 0.0625rem;
 
+  $fd-switch-off-opacity: 0;
+  $fd-switch-on-opacity: 1;
+
   @include fd-reset();
 
   cursor: pointer;
@@ -123,7 +126,7 @@ $block: #{$fd-namespace}-switch;
     &--on {
       color: var(--sapPositiveElementColor);
       margin: 0 0 0 0.125rem;
-      opacity: 0;
+      opacity: $fd-switch-off-opacity;
     }
   }
 
@@ -142,7 +145,7 @@ $block: #{$fd-namespace}-switch;
   &__input {
     @include fd-reset();
 
-    opacity: 0;
+    opacity: $fd-switch-off-opacity;
     width: 0;
     height: 0;
     position: absolute;
@@ -194,11 +197,11 @@ $block: #{$fd-namespace}-switch;
 
     .#{$block}__icon {
       &--off {
-        opacity: 0;
+        opacity: $fd-switch-off-opacity;
       }
 
       &--on {
-        opacity: 1;
+        opacity: $fd-switch-on-opacity;
       }
     }
   }
