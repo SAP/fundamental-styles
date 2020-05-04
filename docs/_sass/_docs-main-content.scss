@@ -25,30 +25,12 @@
     margin: 10px 0 10px 0;
   }
 
-  ul {
-    @media screen and (max-width: 950px) {
-      padding-left: 0;
-      margin-left: 3rem;
-    }
-  }
-
   > h2 {
     @extend .docs-header-h2;
-
-    @media screen and (max-width: 950px) {
-      padding-left: 0;
-      margin-left: 1.5rem;
-    }
   }
 
   > h3 {
     @extend .docs-header-h3;
-  }
-
-  > p {
-    @media screen and (max-width: 950px) {
-      margin-left: 1.5rem;
-    }
   }
 }
 
