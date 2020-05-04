@@ -240,7 +240,6 @@ body {
   margin: 0;
   border: 0;
   list-style: none;
-  padding-left: 1rem;
 }
 
 .test-sidenav-list-icon {
@@ -248,6 +247,7 @@ body {
   padding: 0;
   margin: 0;
   border: 0;
+  text-align: center;
 }
 
 .bar-popover-playground {
