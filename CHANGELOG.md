@@ -2,6 +2,56 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.23"></a>
+# [0.9.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.22...v0.9.0-rc.23) (2020-05-04)
+
+
+### Bug Fixes
+
+* Add RTL support to Avatar ([#947](https://github.com/SAP/fundamental-styles/issues/947)) ([c3e1cc8](https://github.com/SAP/fundamental-styles/commit/c3e1cc8))
+
+
+### Features
+
+* Remove search input ([#949](https://github.com/SAP/fundamental-styles/issues/949)) ([4409637](https://github.com/SAP/fundamental-styles/commit/4409637))
+
+
+
+<a name="0.9.0-rc.22"></a>
+# [0.9.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.21...v0.9.0-rc.22) (2020-05-04)
+
+
+
+<a name="0.9.0-rc.21"></a>
+# [0.9.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.20...v0.9.0-rc.21) (2020-05-04)
+
+
+### Bug Fixes
+
+* Remove overflow:hidden from switch ([#893](https://github.com/SAP/fundamental-styles/issues/893)) ([b4ddb63](https://github.com/SAP/fundamental-styles/commit/b4ddb63))
+
+
+
+<a name="0.9.0-rc.20"></a>
+# [0.9.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.19...v0.9.0-rc.20) (2020-05-04)
+
+
+### Bug Fixes
+
+* add ActionListItem functionality to List component ([#910](https://github.com/SAP/fundamental-styles/issues/910)) ([d35c439](https://github.com/SAP/fundamental-styles/commit/d35c439))
+
+
+
+<a name="0.9.0-rc.19"></a>
+# [0.9.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.18...v0.9.0-rc.19) (2020-05-04)
+
+
+### Bug Fixes
+
+* deprecate Image ([#937](https://github.com/SAP/fundamental-styles/issues/937)) ([ee25648](https://github.com/SAP/fundamental-styles/commit/ee25648))
+
+
+
 <a name="0.9.0-rc.18"></a>
 # [0.9.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.17...v0.9.0-rc.18) (2020-05-03)
 
