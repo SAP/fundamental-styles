@@ -1,13 +1,15 @@
 ---
 title: Image
 id: image
-keywords: image
+keywords: 
 sidebar: left-navigation-sidebar
 toc: false
 permalink: components/image.html
 folder: components
 summary:
 ---
+> **DEPRECATED**. Use the [Avatar]({{site.baseurl}}/components/avatar.html) component.
+{: .docs-deprecated}
 
 An image is used to apply shapes to images.
 {: .docs-intro}
