@@ -150,7 +150,7 @@ The button triggers the last action chosen by the user. Initially, it also trigg
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
   id="t4c0o273">
     <nav class="fd-menu">
-        <ul class="fd-menu__list">
+        <ul class="fd-menu__list fd-menu__list--no-shadow">
           <li class="fd-menu__item">
               <a class="fd-menu__link" role="button" href="#">
                   <span class="fd-menu__title">Add to list</span>
@@ -173,7 +173,7 @@ The button triggers the last action chosen by the user. Initially, it also trigg
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
     id="t4c0o2732">
     <nav class="fd-menu">
-        <ul class="fd-menu__list">
+        <ul class="fd-menu__list fd-menu__list--no-shadow">
           <li class="fd-menu__item">
               <a class="fd-menu__link" role="button" href="#">
                   <span class="fd-menu__title">Add to list</span>

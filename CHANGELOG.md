@@ -2,6 +2,130 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.23"></a>
+# [0.9.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.22...v0.9.0-rc.23) (2020-05-04)
+
+
+### Bug Fixes
+
+* Add RTL support to Avatar ([#947](https://github.com/SAP/fundamental-styles/issues/947)) ([c3e1cc8](https://github.com/SAP/fundamental-styles/commit/c3e1cc8))
+
+
+### Features
+
+* Remove search input ([#949](https://github.com/SAP/fundamental-styles/issues/949)) ([4409637](https://github.com/SAP/fundamental-styles/commit/4409637))
+
+
+
+<a name="0.9.0-rc.22"></a>
+# [0.9.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.21...v0.9.0-rc.22) (2020-05-04)
+
+
+
+<a name="0.9.0-rc.21"></a>
+# [0.9.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.20...v0.9.0-rc.21) (2020-05-04)
+
+
+### Bug Fixes
+
+* Remove overflow:hidden from switch ([#893](https://github.com/SAP/fundamental-styles/issues/893)) ([b4ddb63](https://github.com/SAP/fundamental-styles/commit/b4ddb63))
+
+
+
+<a name="0.9.0-rc.20"></a>
+# [0.9.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.19...v0.9.0-rc.20) (2020-05-04)
+
+
+### Bug Fixes
+
+* add ActionListItem functionality to List component ([#910](https://github.com/SAP/fundamental-styles/issues/910)) ([d35c439](https://github.com/SAP/fundamental-styles/commit/d35c439))
+
+
+
+<a name="0.9.0-rc.19"></a>
+# [0.9.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.18...v0.9.0-rc.19) (2020-05-04)
+
+
+### Bug Fixes
+
+* deprecate Image ([#937](https://github.com/SAP/fundamental-styles/issues/937)) ([ee25648](https://github.com/SAP/fundamental-styles/commit/ee25648))
+
+
+
+<a name="0.9.0-rc.18"></a>
+# [0.9.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.17...v0.9.0-rc.18) (2020-05-03)
+
+
+### Bug Fixes
+
+* Add RTL padding to list message ([#891](https://github.com/SAP/fundamental-styles/issues/891)) ([f9ae1d9](https://github.com/SAP/fundamental-styles/commit/f9ae1d9))
+
+
+
+<a name="0.9.0-rc.17"></a>
+# [0.9.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.16...v0.9.0-rc.17) (2020-05-02)
+
+
+### Features
+
+* migrate pagination with theming parameters ([#922](https://github.com/SAP/fundamental-styles/issues/922)) ([3f33390](https://github.com/SAP/fundamental-styles/commit/3f33390))
+
+
+
+<a name="0.9.0-rc.16"></a>
+# [0.9.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.15...v0.9.0-rc.16) (2020-05-01)
+
+
+
+<a name="0.9.0-rc.15"></a>
+# [0.9.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.14...v0.9.0-rc.15) (2020-05-01)
+
+
+### Bug Fixes
+
+* debug standard version ([#930](https://github.com/SAP/fundamental-styles/issues/930)) ([f3724c4](https://github.com/SAP/fundamental-styles/commit/f3724c4))
+* debug standard version with debug command + bump back to 7 ([#932](https://github.com/SAP/fundamental-styles/issues/932)) ([7c48741](https://github.com/SAP/fundamental-styles/commit/7c48741))
+* revert standard-version to v4 ([#931](https://github.com/SAP/fundamental-styles/issues/931)) ([986d5ec](https://github.com/SAP/fundamental-styles/commit/986d5ec))
+* standard-version v6 ([#933](https://github.com/SAP/fundamental-styles/issues/933)) ([88c16e0](https://github.com/SAP/fundamental-styles/commit/88c16e0))
+* try locking standard-version to 4.2.0 ([#934](https://github.com/SAP/fundamental-styles/issues/934)) ([1f6bda6](https://github.com/SAP/fundamental-styles/commit/1f6bda6))
+
+
+
+<a name="0.9.0-rc.14"></a>
+# [0.9.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.13...v0.9.0-rc.14) (2020-04-30)
+
+
+
+<a name="0.9.0-rc.13"></a>
+# [0.9.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.12...v0.9.0-rc.13) (2020-04-29)
+
+
+
+<a name="0.9.0-rc.12"></a>
+# [0.9.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.11...v0.9.0-rc.12) (2020-04-29)
+
+
+
+<a name="0.9.0-rc.11"></a>
+# [0.9.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.10...v0.9.0-rc.11) (2020-04-29)
+
+
+### Bug Fixes
+
+* button disabled opacity to use theming parameter ([#908](https://github.com/SAP/fundamental-styles/issues/908)) ([e4ff1cf](https://github.com/SAP/fundamental-styles/commit/e4ff1cf))
+
+
+
+<a name="0.9.0-rc.10"></a>
+# [0.9.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.9...v0.9.0-rc.10) (2020-04-29)
+
+
+### Bug Fixes
+
+* add opacity parameter to disabled switch ([#909](https://github.com/SAP/fundamental-styles/issues/909)) ([061cda2](https://github.com/SAP/fundamental-styles/commit/061cda2))
+
+
+
 <a name="0.9.0-rc.9"></a>
 # [0.9.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.8...v0.9.0-rc.9) (2020-04-28)
 

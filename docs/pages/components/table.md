@@ -358,8 +358,8 @@ a contextual menu can be substituted in order to display all actions in one menu
                         <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="pQqQR213a" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
                     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="pQqQR213a">
-                        <nav class="fd-menu">
-                            <ul class="fd-menu__list">
+                        <nav class="fd-menu fd-menu--compact">
+                            <ul class="fd-menu__list fd-menu__list--no-shadow">
                                 <li class="fd-menu__item">
                                     <a href="#" class="fd-menu__link">
                                         <span class="fd-menu__title">Edit</span>
@@ -396,8 +396,8 @@ a contextual menu can be substituted in order to display all actions in one menu
                         <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="lkjlkj23" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
                     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="lkjlkj23">
-                        <nav class="fd-menu">
-                            <ul class="fd-menu__list">
+                        <nav class="fd-menu fd-menu--compact">
+                            <ul class="fd-menu__list fd-menu__list--no-shadow">
                                 <li class="fd-menu__item">
                                     <a href="#" class="fd-menu__link">
                                         <span class="fd-menu__title">Edit</span>
@@ -434,8 +434,8 @@ a contextual menu can be substituted in order to display all actions in one menu
                         <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="uu4324" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
                     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="uu4324">
-                        <nav class="fd-menu">
-                            <ul class="fd-menu__list">
+                        <nav class="fd-menu fd-menu--compact">
+                            <ul class="fd-menu__list fd-menu__list--no-shadow">
                                 <li class="fd-menu__item">
                                     <a href="#" class="fd-menu__link">
                                         <span class="fd-menu__title">Edit</span>
@@ -579,16 +579,25 @@ a contextual menu can be substituted in order to display all actions in one menu
                   <span class="fd-table__context-menu-label">Header Column</span>
                </div>
                <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="col1">
-                  <nav class="fd-menu fd-menu--addon-before">
-                     <ul class="fd-menu__list">
-                        <li><a href="#" class="fd-menu__item">Ascending</a>
-                        </li>
-                        <li><a href="#" class="fd-menu__item">Decensing</a>
-                        </li>
-                        <li><a href="#" class="fd-menu__item">Fix Column</a>
-                        </li>
-                     </ul>
-                  </nav>
+                   <div class="fd-menu fd-menu--compact">
+                       <ul class="fd-menu__list fd-menu__list--no-shadow">
+                           <li class="fd-menu__item">
+                               <div class="fd-menu__link">
+                                   <span class="fd-menu__title">Ascending</span>
+                               </div>
+                           </li>
+                           <li class="fd-menu__item">
+                               <div class="fd-menu__link">
+                                   <span class="fd-menu__title">Decensing</span>
+                               </div>
+                           </li>
+                           <li class="fd-menu__item">
+                               <div class="fd-menu__link">
+                                   <span class="fd-menu__title">Fix Column</span>
+                               </div>
+                           </li>
+                       </ul>
+                   </div>
                </div>
             </div>
          </th>
@@ -598,16 +607,25 @@ a contextual menu can be substituted in order to display all actions in one menu
                   <span class="fd-table__context-menu-label">Header Column</span>
                </div>
                <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="col2">
-                  <nav class="fd-menu fd-menu--addon-before">
-                     <ul class="fd-menu__list">
-                        <li><a href="#" class="fd-menu__item">Ascending</a>
-                        </li>
-                        <li><a href="#" class="fd-menu__item">Decensing</a>
-                        </li>
-                        <li><a href="#" class="fd-menu__item">Fix Column</a>
-                        </li>
+                  <div class="fd-menu fd-menu--compact">
+                     <ul class="fd-menu__list fd-menu__list--no-shadow">
+                         <li class="fd-menu__item">
+                             <div class="fd-menu__link">
+                                 <span class="fd-menu__title">Ascending</span>
+                             </div>
+                         </li>
+                         <li class="fd-menu__item">
+                             <div class="fd-menu__link">
+                                 <span class="fd-menu__title">Decensing</span>
+                             </div>
+                         </li>
+                         <li class="fd-menu__item">
+                             <div class="fd-menu__link">
+                                 <span class="fd-menu__title">Fix Column</span>
+                             </div>
+                         </li>
                      </ul>
-                  </nav>
+                 </div>
                </div>
             </div>
          </th>
@@ -617,16 +635,25 @@ a contextual menu can be substituted in order to display all actions in one menu
                   <span class="fd-table__context-menu-label">Header Column</span>
                </div>
                <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="col3">
-                  <nav class="fd-menu fd-menu--addon-before">
-                     <ul class="fd-menu__list">
-                        <li><a href="#" class="fd-menu__item">Ascending</a>
-                        </li>
-                        <li><a href="#" class="fd-menu__item">Decensing</a>
-                        </li>
-                        <li><a href="#" class="fd-menu__item">Fix Column</a>
-                        </li>
-                     </ul>
-                  </nav>
+                    <div class="fd-menu fd-menu--compact">
+                       <ul class="fd-menu__list fd-menu__list--no-shadow">
+                           <li class="fd-menu__item">
+                               <div class="fd-menu__link">
+                                   <span class="fd-menu__title">Ascending</span>
+                               </div>
+                           </li>
+                           <li class="fd-menu__item">
+                               <div class="fd-menu__link">
+                                   <span class="fd-menu__title">Decensing</span>
+                               </div>
+                           </li>
+                           <li class="fd-menu__item">
+                               <div class="fd-menu__link">
+                                   <span class="fd-menu__title">Fix Column</span>
+                               </div>
+                           </li>
+                       </ul>
+                   </div>
                </div>
             </div>
          </th>
@@ -675,28 +702,26 @@ a contextual menu can be substituted in order to display all actions in one menu
                         <span class="fd-table__context-menu-label">Header Column</span>
                      </div>
                      <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="col1.2">
-                        <nav class="fd-menu fd-menu--addon-before">
-                           <ul class="fd-menu__list">
-                              <li>
-                                 <a href="#" class="fd-menu__item">
-                                    <span class="fd-menu__addon-before"></span>
-                                    Ascending
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#" class="fd-menu__item">
-                                    <span class="fd-menu__addon-before"></span>
-                                    Decensing
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#" class="fd-menu__item">
-                                    <span class="fd-menu__addon-before sap-icon--accept"></span>
-                                    Fix Column
-                                 </a>
-                              </li>
+                        <div class="fd-menu fd-menu--compact">
+                           <ul class="fd-menu__list fd-menu__list--no-shadow">
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link is-active">
+                                        <span class="fd-menu__addon-before sap-icon--accept"></span>
+                                       <span class="fd-menu__title">Ascending</span>
+                                   </div>
+                               </li>
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Decensing</span>
+                                   </div>
+                               </li>
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Fix Column</span>
+                                   </div>
+                               </li>
                            </ul>
-                        </nav>
+                       </div>
                      </div>
                   </div>
                </th>
@@ -706,13 +731,25 @@ a contextual menu can be substituted in order to display all actions in one menu
                         <span class="fd-table__context-menu-label">Header Column</span>
                      </div>
                      <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="col2.2">
-                        <nav class="fd-menu fd-menu--addon-before">
-                           <ul class="fd-menu__list">
-                              <li><a href="#" class="fd-menu__item">Ascending</a></li>
-                              <li><a href="#" class="fd-menu__item">Decensing</a></li>
-                              <li><a href="#" class="fd-menu__item">Fix Column</a></li>
+                        <div class="fd-menu fd-menu--compact">
+                           <ul class="fd-menu__list fd-menu__list--no-shadow">
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Ascending</span>
+                                   </div>
+                               </li>
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Decensing</span>
+                                   </div>
+                               </li>
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Fix Column</span>
+                                   </div>
+                               </li>
                            </ul>
-                        </nav>
+                       </div>
                      </div>
                   </div>
                </th>
@@ -722,14 +759,26 @@ a contextual menu can be substituted in order to display all actions in one menu
                         <span class="fd-table__context-menu-label">Header Column</span>
                      </div>
                      <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="col3.2">
-                        <nav class="fd-menu fd-menu--addon-before">
-                           <ul class="fd-menu__list">
-                              <li><a href="#" class="fd-menu__item">Ascending</a></li>
-                              <li><a href="#" class="fd-menu__item">Decensing</a></li>
-                              <li><a href="#" class="fd-menu__item">Fix Column</a></li>
+                        <div class="fd-menu fd-menu--compact">
+                           <ul class="fd-menu__list fd-menu__list--no-shadow">
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Ascending</span>
+                                   </div>
+                               </li>
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Decensing</span>
+                                   </div>
+                               </li>
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Fix Column</span>
+                                   </div>
+                               </li>
                            </ul>
-                        </nav>
-                     </div>
+                       </div>
+                    </div>
                   </div>
                </th>
                <th class="fd-table__cell fd-table__context-menu" aria-controls="col4.2" aria-haspopup="true" scope="col">
@@ -738,13 +787,25 @@ a contextual menu can be substituted in order to display all actions in one menu
                         <span class="fd-table__context-menu-label">Header Column</span>
                      </div>
                      <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="col4.2">
-                        <nav class="fd-menu fd-menu--addon-before">
-                           <ul class="fd-menu__list">
-                              <li><a href="#" class="fd-menu__item">Ascending</a></li>
-                              <li><a href="#" class="fd-menu__item">Decensing</a></li>
-                              <li><a href="#" class="fd-menu__item">Fix Column</a></li>
+                        <div class="fd-menu fd-menu--compact">
+                           <ul class="fd-menu__list fd-menu__list--no-shadow">
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Ascending</span>
+                                   </div>
+                               </li>
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Decensing</span>
+                                   </div>
+                               </li>
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Fix Column</span>
+                                   </div>
+                               </li>
                            </ul>
-                        </nav>
+                       </div>
                      </div>
                   </div>
                </th>
@@ -754,13 +815,25 @@ a contextual menu can be substituted in order to display all actions in one menu
                         <span class="fd-table__context-menu-label">Header Column</span>
                      </div>
                      <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="col5.2">
-                        <nav class="fd-menu fd-menu--addon-before">
-                           <ul class="fd-menu__list">
-                              <li><a href="#" class="fd-menu__item">Ascending</a></li>
-                              <li><a href="#" class="fd-menu__item">Decensing</a></li>
-                              <li><a href="#" class="fd-menu__item">Fix Column</a></li>
+                        <div class="fd-menu fd-menu--compact">
+                           <ul class="fd-menu__list fd-menu__list--no-shadow">
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Ascending</span>
+                                   </div>
+                               </li>
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Decensing</span>
+                                   </div>
+                               </li>
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Fix Column</span>
+                                   </div>
+                               </li>
                            </ul>
-                        </nav>
+                       </div>
                      </div>
                   </div>
                </th>
@@ -770,13 +843,25 @@ a contextual menu can be substituted in order to display all actions in one menu
                         <span class="fd-table__context-menu-label">Header Column</span>
                      </div>
                      <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="col6.2">
-                        <nav class="fd-menu fd-menu--addon-before">
-                           <ul class="fd-menu__list">
-                              <li><a href="#" class="fd-menu__item">Ascending</a></li>
-                              <li><a href="#" class="fd-menu__item">Decensing</a></li>
-                              <li><a href="#" class="fd-menu__item">Fix Column</a></li>
+                        <div class="fd-menu fd-menu--compact">
+                           <ul class="fd-menu__list fd-menu__list--no-shadow">
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Ascending</span>
+                                   </div>
+                               </li>
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Decensing</span>
+                                   </div>
+                               </li>
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Fix Column</span>
+                                   </div>
+                               </li>
                            </ul>
-                        </nav>
+                       </div>
                      </div>
                   </div>
                </th>
@@ -786,13 +871,25 @@ a contextual menu can be substituted in order to display all actions in one menu
                         <span class="fd-table__context-menu-label">Header Column</span>
                      </div>
                      <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="col7.2">
-                        <nav class="fd-menu fd-menu--addon-before">
-                           <ul class="fd-menu__list">
-                              <li><a href="#" class="fd-menu__item">Ascending</a></li>
-                              <li><a href="#" class="fd-menu__item">Decensing</a></li>
-                              <li><a href="#" class="fd-menu__item">Fix Column</a></li>
+                        <div class="fd-menu fd-menu--compact">
+                           <ul class="fd-menu__list fd-menu__list--no-shadow">
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Ascending</span>
+                                   </div>
+                               </li>
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Decensing</span>
+                                   </div>
+                               </li>
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Fix Column</span>
+                                   </div>
+                               </li>
                            </ul>
-                        </nav>
+                       </div>
                      </div>
                   </div>
                </th>
@@ -802,13 +899,25 @@ a contextual menu can be substituted in order to display all actions in one menu
                         <span class="fd-table__context-menu-label">Header Column</span>
                      </div>
                      <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="col8.2">
-                        <nav class="fd-menu fd-menu--addon-before">
-                           <ul class="fd-menu__list">
-                              <li><a href="#" class="fd-menu__item">Ascending</a></li>
-                              <li><a href="#" class="fd-menu__item">Decensing</a></li>
-                              <li><a href="#" class="fd-menu__item">Fix Column</a></li>
+                        <div class="fd-menu fd-menu--compact">
+                           <ul class="fd-menu__list fd-menu__list--no-shadow">
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Ascending</span>
+                                   </div>
+                               </li>
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Decensing</span>
+                                   </div>
+                               </li>
+                               <li class="fd-menu__item">
+                                   <div class="fd-menu__link">
+                                       <span class="fd-menu__title">Fix Column</span>
+                                   </div>
+                               </li>
                            </ul>
-                        </nav>
+                       </div>
                      </div>
                   </div>
                </th>

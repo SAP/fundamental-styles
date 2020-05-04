@@ -92,13 +92,12 @@ Merges to the `master` branch will be published as a prerelease. Prereleases wil
 The following circumstances will be considered a MAJOR or BREAKING change:
 * Droppping existing classnames, css variables, color names, color groups, spacing parameters
 * The existing underlying HTML markup of a component is altered
-* An existing unit test is altered to account for either of the above
+* Non-visual HTML attribute changes/additions (such as `role`, `aria-*`, `data-*`)
+  > Note: Fundamental Styles provides CSS directly, and HTML as reference to consumers. Because of the reference relationship of the HTML seen in Fundamental Styles, we want to be very clear when we alter that reference so that it is properly reflected in JS implementation libraries. Because of this, even non-visual changes will be treated as breaking.
 
 The following circumstances will NOT be considered a MAJOR or BREAKING change:
 * Introducing new  classnames, css variables, color names, color groups, spacing parameters
-* Non-visual HTML attribute changes/additions (such as `role`, `aria-*`, `data-*`)
 * Adding or modifying CSS properties and values of existing classnames.
-* An existing unit test is altered to account for non-visual HTML attribute changes/additions (such as `role`, `aria-*`, `data-*`)
 
 ## License
 

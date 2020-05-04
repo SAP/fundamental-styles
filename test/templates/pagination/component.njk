@@ -16,18 +16,18 @@
 {%- elseif (currentPage === pages) or (currentPage === pages + 1) or (currentPage > 4) %}
     {{ pageLink(1) }}
     {%- for item in range(pages, pages+1) %}
-        <span class="fd-pagination__link fd-pagination__link--more" role="presentation"></span>
+        <span class="fd-pagination__more" role="presentation"></span>
         {%- if (item === currentPage) %}{{pageLink(item - 1)}}
         {%- elseif (currentPage !== (pages)) or (item !== (pages))%}
             {{pageLink(currentPage - 1)}}{{pageLink(currentPage, true)}}{{pageLink(currentPage + 1)}}
-            <span class="fd-pagination__link fd-pagination__link--more" role="presentation"></span>
+            <span class="fd-pagination__more" role="presentation"></span>
         {%- endif %} 
         {{ pageLink(item, item === currentPage  or item === pages + 1) }}
     {%- endfor %}
 {%- else %}
     {%- for item in range(1, 4) %}{{pageLink(item, item === currentPage)}}{%- endfor %}
     {%- for item in range(pages, pages+1) %}
-        <span class="fd-pagination__link fd-pagination__link--more" role="presentation"></span>
+        <span class="fd-pagination__more" role="presentation"></span>
         {%- if (item === currentPage) %} {{pageLink(item -1)}} {%- endif %}
         {{ pageLink(item, item === currentPage  or item === pages + 1)}}
     {%- endfor %}

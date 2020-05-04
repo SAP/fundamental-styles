@@ -29,7 +29,7 @@ module.exports.runDocker = (config, backstopCommand) => {
     return new Promise((resolve, reject) => {
       const dockerProcess = spawn(DOCKER_COMMAND, { stdio: 'inherit', shell: true });
       dockerProcess.on('error', err => reject(err));
-      dockerProcess.on('exit', function (code, signal) {
+      dockerProcess.on('exit', function (code) {
         if (code === 0) {
           resolve();
         } else {

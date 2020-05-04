@@ -4,80 +4,82 @@ $grid-item-bg-color: fd-color(background, 2);
 $grid-transition-delay: 100ms;
 
 .docs-component-grid {
+  border: 1px solid $gird-border-color;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  > * {
     border: 1px solid $gird-border-color;
-    border-left: none;
-    border-right: none;
+    box-sizing: border-box;
+  }
+
+  &__item {
+    background: $grid-item-bg-color;
+    position: relative;
+    height: 270px;
+    min-width: 270px;
+    z-index: 1;
+    transition: all ease-in-out $grid-transition-delay;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 4rem 0.5rem;
+    align-items: center;
+    justify-content: flex-end;
 
-    > * {
-        border: 1px solid $gird-border-color;
-        box-sizing: border-box;
+    @include media(">=desktop") {
+      width: (4/12) *100%;
     }
 
-    &__item {
-        background: $grid-item-bg-color;
-        position: relative;
-        height: 270px;
-        min-width: 270px;
-        z-index: 1;
-        transition: all ease-in-out $grid-transition-delay;
-
-        display: flex;
-        flex-direction: column;
-        padding: 4rem 0.5rem;
-        align-items: center;
-        justify-content: flex-end;
-
-        @include media(">=desktop") {
-            width: (4/12)*100%;
-        }
-        @include media(">=display") {
-            width: 25%;
-            padding: 4rem 3rem;
-        }
-        @media screen and (max-width: 1300px) {
-            width: 50%;
-            padding: 4rem 2rem;
-        }
-        @media screen and (max-width: 600px) {
-            width: 100%;
-            height: 200px;
-            padding: 2rem 2rem;
-            justify-content: center;
-        }
-
-        &:hover {
-            background-color: $grid-item-bg-color;
-            box-shadow: 0 0 20px 0 rgba(138, 143, 161, 0.4);
-            text-decoration: none;
-            z-index: 2;
-            transition: all ease-in-out $grid-transition-delay;
-        }
-
-        h3 {
-            margin-top: 0;
-            position: relative;
-            bottom: 0;
-        }
+    @include media(">=display") {
+      width: 25%;
+      padding: 4rem 3rem;
     }
 
-    &--label {
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 1.56;
-        text-align: center;
-        color: #21262c;
-        margin-top: 30px;
-        position: absolute;
-        bottom: 60px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
+    @media screen and (max-width: 1300px) {
+      width: 50%;
+      padding: 4rem 2rem;
     }
-    &__img {
-        min-height: 1px;
-        -ms-interpolation-mode: bicubic;
-        width: 15.5rem;
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      height: 200px;
+      padding: 2rem 2rem;
+      justify-content: center;
     }
+
+    &:hover {
+      background-color: $grid-item-bg-color;
+      box-shadow: 0 0 20px 0 rgba(138, 143, 161, 0.4);
+      text-decoration: none;
+      z-index: 2;
+      transition: all ease-in-out $grid-transition-delay;
+    }
+
+    h3 {
+      margin-top: 0;
+      position: relative;
+      bottom: 0;
+    }
+  }
+
+  &--label {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.56;
+    text-align: center;
+    color: #21262c;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  &__img {
+    min-height: 1px;
+    -ms-interpolation-mode: bicubic;
+    width: 15.5rem;
+  }
 }

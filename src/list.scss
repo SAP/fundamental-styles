@@ -21,6 +21,9 @@ $fd-list-last-item-bottom-border-radius: var(--sapElement_BorderCornerRadius) !d
 $fd-list-form-item-margin-x: -1rem !default;
 $fd-list-large-font-size: var(--sapFontLargeSize) !default;
 $fd-list-normal-font-size: var(--sapFontSize) !default;
+$fd-list-message-padding-left: 0.5rem !default;
+$fd-list-selected-state-border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+$fd-list-item-border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
 
 // STANDARD LIST WITH BYLINE
 $fd-list-byline-thumbnail-dimensions: 3rem !default;
@@ -57,7 +60,7 @@ $semantic-color: (
   "informative": ("color": var(--sapInformativeTextColor))
 );
 
-@mixin fake-list-outline($outlineColor: var(--sapContent_FocusColor)) {
+@mixin fake-list-outline() {
   &:focus,
   &.is-focus {
     outline: none;
@@ -66,13 +69,79 @@ $semantic-color: (
       content: '';
       position: absolute;
       display: block;
-      border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) $outlineColor;
-      top: 0.1875rem;
-      left: 0.1875rem;
-      right: 0.1875rem;
-      bottom: 0.1875rem;
+      border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+      top: 0.125rem;
+      left: 0.125rem;
+      right: 0.125rem;
+      bottom: 0.125rem;
+    }
+
+    @include fd-active() {
+      &::before {
+        border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_ContrastFocusColor);
+      }
     }
   }
+}
+
+@mixin list-item-selected-state() {
+  background: var(--sapList_SelectionBackgroundColor);
+  border-bottom: $fd-list-selected-state-border-bottom;
+
+  @include fd-hover() {
+    background: var(--sapList_Hover_SelectionBackground);
+  }
+}
+
+@mixin list-item-states() {
+  @include fd-hover() {
+    background: var(--sapList_Hover_Background);
+  }
+
+  @include fd-selected() {
+    @include list-item-selected-state();
+  }
+
+  @include fd-active() {
+    background: var(--sapList_Active_Background);
+
+    @include fd-hover() {
+      background: var(--sapList_Active_Background);
+    }
+
+    @include fd-selected() {
+      background: var(--sapList_Active_Background);
+
+      @include fd-hover() {
+        background: var(--sapList_Active_Background);
+      }
+    }
+
+    .#{$block}__title,
+    .#{$block}__secondary,
+    .#{$block}__icon,
+    .#{$block}__content,
+    .#{$block}__byline,
+    .#{$block}__byline-left,
+    .#{$block}__byline-right,
+    .#{$block}__thumbnail,
+    &.#{$block}__link--navigation-indicator::after,
+    & {
+      color: var(--sapList_Active_TextColor);
+    }
+
+    @each $set-name, $color-set in $semantic-color {
+      .#{$block}__byline-right--#{$set-name} {
+        color: var(--sapList_Active_TextColor);
+      }
+    }
+  }
+}
+
+@mixin ie11-active-state-fix() {
+  // :active selector has issues in IE11 when there are nested elements.
+  // The solution is to remove the pointer events from the nested elements.
+  pointer-events: none;
 }
 
 @mixin padding-left-right($left, $right) {
@@ -90,13 +159,13 @@ $semantic-color: (
   padding-bottom: $padding-y;
 }
 
-@mixin reset-list-item-paddings {
+@mixin reset-list-item-paddings() {
   .#{$block}__item--link {
     padding: 0;
   }
 }
 
-@mixin navigation-byline-borderless {
+@mixin navigation-byline-borderless() {
   .#{$block}__item--link {
     .#{$block}__link {
       @include padding-top-bottom(0.5rem);
@@ -147,7 +216,7 @@ $semantic-color: (
   &__item {
     @include fake-list-outline();
 
-    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+    border-bottom: $fd-list-item-border;
     background: var(--sapList_Background);
     position: relative;
 
@@ -155,27 +224,40 @@ $semantic-color: (
       .#{$block}__title {
         text-align: center;
       }
-
-      @include fd-hover() {
-        background: var(--sapList_Background);
-      }
     }
 
-    @include fd-selected() {
-      background: var(--sapList_SelectionBackgroundColor);
-      border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+    &--action {
+      @include list-item-states();
 
-      .#{$block}__link {
-        @include fd-hover() {
-          background: var(--sapList_Hover_SelectionBackground);
+      padding: 0;
+      text-align: center;
+
+      &:first-child {
+        border-top: $fd-list-item-border;
+      }
+
+      .#{$block}__title {
+        padding: 0 $fd-list-item-padding-x;
+        height: 100%;
+        width: 100%;
+        background: transparent;
+        color: var(--sapButton_TextColor);
+        pointer-events: all;
+        cursor: pointer;
+
+        @include fd-focus() {
+          outline-style: dotted;
+          outline-width: var(--sapContent_FocusWidth);
+          outline-color: var(--sapContent_FocusColor);
+          outline-offset: -0.125rem;
+
+          @include fd-active() {
+            outline-color: var(--sapContent_ContrastFocusColor);
+          }
         }
 
-        @include fd-active() {
-          background: var(--sapList_Active_Background);
-
-          @include fd-hover() {
-            background: var(--sapList_Active_Background);
-          }
+        &::-moz-focus-inner {
+          border: 0;
         }
       }
     }
@@ -185,6 +267,7 @@ $semantic-color: (
   &__secondary {
     @include fd-reset();
     @include fd-ellipsis();
+    @include ie11-active-state-fix();
 
     line-height: 1rem;
     color: var(--sapList_TextColor);
@@ -210,6 +293,7 @@ $semantic-color: (
 
   &__icon {
     @include fd-reset();
+    @include ie11-active-state-fix();
 
     color: var(--sapList_TextColor);
     flex: 0 0 auto;
@@ -243,6 +327,7 @@ $semantic-color: (
   &__link {
     @include fd-reset();
     @include fake-list-outline();
+    @include list-item-states();
 
     text-decoration: none;
     display: flex;
@@ -251,48 +336,6 @@ $semantic-color: (
     height: 100%;
     padding: 0 $fd-list-item-padding-x;
     cursor: pointer;
-
-    @include fd-hover() {
-      background: var(--sapList_Hover_Background);
-    }
-
-    @include fd-selected() {
-      background: var(--sapList_SelectionBackgroundColor);
-      border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
-
-      @include fd-hover() {
-        background: var(--sapList_Hover_SelectionBackground);
-      }
-    }
-
-    @include fd-active() {
-      background: var(--sapList_Active_Background);
-
-      @include fd-hover() {
-        background: var(--sapList_Active_Background);
-      }
-
-      @include fake-list-outline(var(--sapContent_ContrastFocusColor));
-
-      .#{$block}__title,
-      .#{$block}__secondary,
-      .#{$block}__icon,
-      .#{$block}__content,
-      .#{$block}__byline,
-      .#{$block}__byline-left,
-      .#{$block}__byline-right,
-      .#{$block}__thumbnail,
-      &.#{$block}__link--navigation-indicator::after,
-      & {
-        color: var(--sapList_Active_TextColor);
-      }
-
-      @each $set-name, $color-set in $semantic-color {
-        .#{$block}__byline-right--#{$set-name} {
-          color: var(--sapList_Active_TextColor);
-        }
-      }
-    }
   }
 
   &__group-header {
@@ -326,10 +369,15 @@ $semantic-color: (
     top: 0;
     left: 0;
     height: 2rem;
-    padding-left: 1rem;
+    padding-left: $fd-list-message-padding-left;
     font-size: var(--sapFontSmallSize);
     overflow: hidden;
     text-overflow: ellipsis;
+
+    @include fd-rtl() {
+      padding-left: 0;
+      padding-right: $fd-list-message-padding-left;
+    }
 
     &--error {
       background-color: var(--sapErrorBackground);
@@ -366,11 +414,12 @@ $semantic-color: (
     .#{$block}__item,
     .#{$block}__group-header {
       border-bottom: 0;
+      border-top: 0;
     }
 
     .#{$block}__item {
       @include fd-selected() {
-        border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+        border-bottom: $fd-list-selected-state-border-bottom;
       }
     }
   }
@@ -381,6 +430,8 @@ $semantic-color: (
 
   &--dropdown {
     .#{$block}__item {
+      @include list-item-states();
+
       height: auto;
       padding: $fd-dropdown-vertical-padding $fd-list-item-padding-x;
     }
@@ -395,6 +446,8 @@ $semantic-color: (
 
   &--multi-input {
     .#{$block}__item {
+      @include list-item-states();
+
       padding: 0;
       height: auto;
     }
@@ -478,7 +531,7 @@ $semantic-color: (
       border: none;
 
       @include fd-selected() {
-        border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+        border-bottom: $fd-list-selected-state-border-bottom;
       }
     }
 
@@ -531,6 +584,7 @@ $semantic-color: (
     .#{$block}__thumbnail {
       @include fd-reset();
       @include fd-flex-center();
+      @include ie11-active-state-fix();
 
       width: $fd-list-byline-thumbnail-dimensions;
       height: $fd-list-byline-thumbnail-dimensions;
@@ -551,6 +605,7 @@ $semantic-color: (
 
     .#{$block}__content {
       @include fd-reset();
+      @include ie11-active-state-fix();
 
       @include fd-flex(column) {
         align-content: space-between;
@@ -714,6 +769,16 @@ $semantic-color: (
   &--selection {
     .#{$block}__item {
       @include padding-left-right($fd-list-selection-container-width, $fd-list-item-padding-x);
+
+      @include fd-hover() {
+        background: var(--sapList_Hover_Background);
+      }
+
+      @include fd-selected() {
+        @include list-item-selected-state();
+      }
+
+      cursor: pointer;
     }
 
     .#{$block}__form-item {
