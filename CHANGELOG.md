@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.32"></a>
+# [0.9.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.31...v0.9.0-rc.32) (2020-05-04)
+
+
+### Bug Fixes
+
+* fixed more content arrow on rtl mode ([#946](https://github.com/SAP/fundamental-styles/issues/946)) ([98c23fd](https://github.com/SAP/fundamental-styles/commit/98c23fd))
+
+
+
 <a name="0.9.0-rc.31"></a>
 # [0.9.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.30...v0.9.0-rc.31) (2020-05-04)
 
