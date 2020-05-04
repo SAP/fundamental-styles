@@ -129,6 +129,19 @@
     ]
   } %}
 
+    {%- set list_action = {
+    "groups": [
+        {
+            "items": [
+                { "title": "Forward", "isAction": true },
+                { "title": "Save", "isAction": true, "active": true },
+                { "title": "Cancel", "isAction": true, "selected": true },
+                { "title": "More Options", "isAction": true, "hover": true }
+            ]
+        }
+    ]
+  } %}
+
 {% set modifiers = ["", "compact", "no-border"] %}
 {% set modifiersSelection = ["selection", "compact fd-list--selection", "no-border fd-list--selection"] %}
 {% set bylineModifiers = ["byline", "byline fd-list--compact", "byline fd-list--no-border"] %}
@@ -345,6 +358,17 @@
                 <h3>{{ modifier }}</h3>
             {%- endif %}
             {{ list(byline_list_nav, toggles={"link": true, "navIndicator": true}, modifier=[modifier]) }}
+        {%- endfor %}
+    {% endset %}
+    {{ format(example) }}
+
+    <h2>Standard List with Action List Item</h2>
+    {% set example %}
+        {%- for modifier in modifiers %}
+            {%- if modifier %}
+                <h3>{{ modifier }}</h3>
+            {%- endif %}
+            {{ list(list_action, toggles={"isAction": true}, modifier=[modifier]) }}
         {%- endfor %}
     {% endset %}
     {{ format(example) }}
