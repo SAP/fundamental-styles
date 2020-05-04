@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.19"></a>
+# [0.9.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.18...v0.9.0-rc.19) (2020-05-04)
+
+
+### Bug Fixes
+
+* deprecate Image ([#937](https://github.com/SAP/fundamental-styles/issues/937)) ([ee25648](https://github.com/SAP/fundamental-styles/commit/ee25648))
+
+
+
 <a name="0.9.0-rc.18"></a>
 # [0.9.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.17...v0.9.0-rc.18) (2020-05-03)
 
