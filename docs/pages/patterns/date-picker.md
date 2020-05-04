@@ -50,29 +50,30 @@ This component mostly relies on the CSS of other components and has very little 
 					<div class="fd-calendar__dates" id="YeayX297" aria-hidden="false">
 						<table class="fd-calendar__table" role="grid">
 						<thead class="fd-calendar__group">
-						<tr class="fd-calendar__row">
-							<th class="fd-calendar__column-header">
-								<span class="fd-calendar__day-of-week">S</span>
-							</th>
-							<th class="fd-calendar__column-header">
-								<span class="fd-calendar__day-of-week">M</span>
-							</th>
-							<th class="fd-calendar__column-header">
-								<span class="fd-calendar__day-of-week">T</span>
-							</th>
-							<th class="fd-calendar__column-header">
-								<span class="fd-calendar__day-of-week">W</span>
-							</th>
-							<th class="fd-calendar__column-header">
-								<span class="fd-calendar__day-of-week">T</span>
-							</th>
-							<th class="fd-calendar__column-header">
-								<span class="fd-calendar__day-of-week">F</span>
-							</th>
-							<th class="fd-calendar__column-header">
-								<span class="fd-calendar__day-of-week">S</span>
-							</th>
-						</tr>
+					        <tr class="fd-calendar__row">
+                                <th class="fd-calendar__item fd-calendar__item--side-helper"></th>
+                                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                                    <span class="fd-calendar__text" role="button">S</span>
+                                </th>
+                                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                                    <span class="fd-calendar__text" role="button">M</span>
+                                </th>
+                                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                                    <span class="fd-calendar__text" role="button">T</span>
+                                </th>
+                                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                                    <span class="fd-calendar__text" role="button">W</span>
+                                </th>
+                                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                                    <span class="fd-calendar__text" role="button">T</span>
+                                </th>
+                                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                                    <span class="fd-calendar__text" role="button">F</span>
+                                </th>
+                                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                                    <span class="fd-calendar__text" role="button">S</span>
+                                </th>
+                            </tr>
 						</thead>
 						<tbody class="fd-calendar__group">
 						<tr class="fd-calendar__row">
@@ -232,32 +233,33 @@ This component mostly relies on the CSS of other components and has very little 
 				<div class="fd-calendar__content">
 					<div class="fd-calendar__dates" id="YeayX297" aria-hidden="false">
 						<table class="fd-calendar__table" role="grid">
-						<thead class="fd-calendar__group">
-						<tr class="fd-calendar__row">
-							<th class="fd-calendar__column-header">
-								<span class="fd-calendar__day-of-week">S</span>
-							</th>
-							<th class="fd-calendar__column-header">
-								<span class="fd-calendar__day-of-week">M</span>
-							</th>
-							<th class="fd-calendar__column-header">
-								<span class="fd-calendar__day-of-week">T</span>
-							</th>
-							<th class="fd-calendar__column-header">
-								<span class="fd-calendar__day-of-week">W</span>
-							</th>
-							<th class="fd-calendar__column-header">
-								<span class="fd-calendar__day-of-week">T</span>
-							</th>
-							<th class="fd-calendar__column-header">
-								<span class="fd-calendar__day-of-week">F</span>
-							</th>
-							<th class="fd-calendar__column-header">
-								<span class="fd-calendar__day-of-week">S</span>
-							</th>
-						</tr>
+	                    <thead class="fd-calendar__group">
+					        <tr class="fd-calendar__row">
+                                <th class="fd-calendar__item fd-calendar__item--side-helper"></th>
+                                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                                    <span class="fd-calendar__text" role="button">S</span>
+                                </th>
+                                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                                    <span class="fd-calendar__text" role="button">M</span>
+                                </th>
+                                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                                    <span class="fd-calendar__text" role="button">T</span>
+                                </th>
+                                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                                    <span class="fd-calendar__text" role="button">W</span>
+                                </th>
+                                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                                    <span class="fd-calendar__text" role="button">T</span>
+                                </th>
+                                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                                    <span class="fd-calendar__text" role="button">F</span>
+                                </th>
+                                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                                    <span class="fd-calendar__text" role="button">S</span>
+                                </th>
+                            </tr>
 						</thead>
-						<tbody class="fd-calendar__group">
+                        <tbody class="fd-calendar__group">
 						<tr class="fd-calendar__row">
 							<td class="fd-calendar__item fd-calendar__item--other-month is-disabled" role="gridcell">
 								<span class="fd-calendar__text">29</span>
