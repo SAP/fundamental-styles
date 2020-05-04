@@ -62,6 +62,11 @@ $block: #{$fd-namespace}-avatar;
         bottom: map_get($size-set, "offset");
         right: map_get($size-set, "offset");
 
+        @include fd-rtl() {
+          right: auto;
+          left: map_get($size-set, "offset");
+        }
+
         &::before {
           font-size: map_get($size-set, "beforeFontSize");
         }
@@ -76,6 +81,11 @@ $block: #{$fd-namespace}-avatar;
     .#{$block}__zoom-icon {
       bottom: 0;
       right: 0;
+
+      @include fd-rtl() {
+        right: auto;
+        left: 0;
+      }
     }
   }
 
