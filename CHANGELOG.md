@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.29"></a>
+# [0.9.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.28...v0.9.0-rc.29) (2020-05-04)
+
+
+### Bug Fixes
+
+* Shellbar remove padding on buttons ([#940](https://github.com/SAP/fundamental-styles/issues/940)) ([b115bd5](https://github.com/SAP/fundamental-styles/commit/b115bd5))
+
+
+
 <a name="0.9.0-rc.28"></a>
 # [0.9.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.27...v0.9.0-rc.28) (2020-05-04)
 
