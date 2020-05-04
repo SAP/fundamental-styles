@@ -62,10 +62,6 @@ entries:
       url: /patterns/multi-input.html
       output: web
 
-    - title: Search Input
-      url: /patterns/search-input.html
-      output: web
-
     - title: Step Input
       url: /patterns/step-input.html
       output: web

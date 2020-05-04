@@ -1,7 +1,7 @@
 ---
 title: Avatar
 id: avatar
-keywords: icon, avatar, identifier
+keywords: icon, avatar, identifier, image
 sidebar: left-navigation-sidebar
 toc: false
 permalink: components/avatar.html
