@@ -12,8 +12,5 @@
     - title: Multi Input
       meta: multi-input
 
-    - title: Search Input
-      meta: search-input
-
     - title: Time Picker
       meta: time-picker
