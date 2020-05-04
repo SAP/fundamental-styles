@@ -64,14 +64,4 @@ Layouts in Fundamental Library Styles are for structuring the main parts of your
              </p>
         </div>
     </a>
-    <a class="fd-tile" role="button" href="global-navigation.html">
-        <div class="fd-tile__content">
-             <h2 class="fd-tile__header">
-                 Global Nav
-             </h2>
-             <p class="fd-tile__description">
-                 Global Navigation to switch between different Apps
-             </p>
-        </div>
-    </a>
 </div>
