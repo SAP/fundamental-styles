@@ -164,7 +164,7 @@ Example shows the parent menu's item in active state to simulate a pressed/touch
         </header>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
              <nav class="fd-menu fd-menu--mobile">
-                <ul class="fd-menu__sublist" style="position:relative; left:0; margin:0;" role="menu">
+                <ul class="fd-menu__sublist" role="menu">
                     <li class="fd-menu__item" role="presentation">
                         <a class="fd-menu__link" href="#" role="menuitem">
                             <span class="fd-menu__title">Sub-option 1</span>
