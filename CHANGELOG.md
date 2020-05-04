@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.26"></a>
+# [0.9.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.25...v0.9.0-rc.26) (2020-05-04)
+
+
+### Bug Fixes
+
+* RTL calendar landscape orientation ([#945](https://github.com/SAP/fundamental-styles/issues/945)) ([41025f0](https://github.com/SAP/fundamental-styles/commit/41025f0))
+
+
+
 <a name="0.9.0-rc.25"></a>
 # [0.9.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.24...v0.9.0-rc.25) (2020-05-04)
 
