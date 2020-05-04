@@ -5,6 +5,14 @@
 <button class="btn-playground fd-shellbar__button"{% if disabled %} disabled {% endif %}>&&</button>
 {%- endmacro %}
 
+{# .fd-search-input #}
+{% macro search_input() -%}
+    <div class="input-group-playground">
+        <input class="input-group-input-playground fd-shellbar__input-group__input" type="text" placeholder="search input" />
+        <button class="btn-playground fd-shellbar__button">%%</button>
+    </div>
+{%- endmacro %}
+
 {# .fd-product-switcher #}
 {% set product = {
   title: "Corporate Portal",
@@ -68,6 +76,9 @@
       <button class="fd-shellbar__button"><img src="/static/copilot.png" alt="CoPilot" height="30" width="30" /></button>
     </div>
       <div class="fd-shellbar__group fd-shellbar__group--actions">
+        <div class="fd-shellbar__action fd-shellbar__action--desktop">
+            {{ search_input() }}
+        </div>
         <div class="fd-shellbar__action fd-shellbar__action--mobile">
             {# this should only be visible on small screens #}
             {{ shellbar_button() }}
