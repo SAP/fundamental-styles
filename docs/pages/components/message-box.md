@@ -330,7 +330,7 @@ On phone devices the content container takes 100vh and 100vw. It's achieved by a
 <br>
 
 {% capture default-message-box %}
-<div class="fd-message-box-docs-static fd-message-box fd-message-box--no-icon fd-message-box--information fd-message-box--active">
+<div class="fd-message-box-docs-static fd-message-box fd-message-box--information fd-message-box--active">
     <div class="fd-message-box__content fd-message-box__content--s">
         <header class="fd-bar fd-bar--cosy fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
@@ -359,7 +359,7 @@ On phone devices the content container takes 100vh and 100vw. It's achieved by a
 
 <br><br><br>
 
-<div class="fd-message-box-docs-static fd-message-box fd-message-box--error fd-message-box--no-icon fd-message-box--active">
+<div class="fd-message-box-docs-static fd-message-box fd-message-box--error fd-message-box--active">
     <div class="fd-message-box__content fd-message-box__content--m">
         <header class="fd-bar fd-bar--cosy fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
