@@ -25,13 +25,6 @@
     margin: 10px 0 10px 0;
   }
 
-  ul {
-    @media screen and (max-width: 950px) {
-      padding-left: 0;
-      margin-left: 3rem;
-    }
-  }
-
   > h2 {
     @extend .docs-header-h2;
 
