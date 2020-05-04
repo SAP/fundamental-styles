@@ -88,7 +88,9 @@ $semantic-color: (
   background: var(--sapList_SelectionBackgroundColor);
   border-bottom: $fd-list-selected-state-border-bottom;
 
-  @content;
+  @include fd-hover() {
+    background: var(--sapList_Hover_SelectionBackground);
+  }
 }
 
 @mixin list-item-states() {
@@ -97,11 +99,7 @@ $semantic-color: (
   }
 
   @include fd-selected() {
-    @include list-item-selected-state() {
-      @include fd-hover() {
-        background: var(--sapList_Hover_SelectionBackground);
-      }
-    }
+    @include list-item-selected-state();
   }
 
   @include fd-active() {
@@ -127,7 +125,7 @@ $semantic-color: (
     .#{$block}__byline-left,
     .#{$block}__byline-right,
     .#{$block}__thumbnail,
-    .#{$block}__link--navigation-indicator::after,
+    &.#{$block}__link--navigation-indicator::after,
     & {
       color: var(--sapList_Active_TextColor);
     }
@@ -222,22 +220,15 @@ $semantic-color: (
     background: var(--sapList_Background);
     position: relative;
 
-    @include fd-selected() {
-      @include list-item-selected-state();
-    }
-
     &--no-data {
       .#{$block}__title {
         text-align: center;
       }
     }
 
-    &--link,
     &--action {
       @include list-item-states();
-    }
 
-    &--action {
       padding: 0;
       text-align: center;
 
@@ -336,6 +327,7 @@ $semantic-color: (
   &__link {
     @include fd-reset();
     @include fake-list-outline();
+    @include list-item-states();
 
     text-decoration: none;
     display: flex;
@@ -777,6 +769,16 @@ $semantic-color: (
   &--selection {
     .#{$block}__item {
       @include padding-left-right($fd-list-selection-container-width, $fd-list-item-padding-x);
+
+      @include fd-hover() {
+        background: var(--sapList_Hover_Background);
+      }
+
+      @include fd-selected() {
+        @include list-item-selected-state();
+      }
+
+      cursor: pointer;
     }
 
     .#{$block}__form-item {
