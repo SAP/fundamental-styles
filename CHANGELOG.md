@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.33"></a>
+# [0.9.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.32...v0.9.0-rc.33) (2020-05-04)
+
+
+### Features
+
+* breadcrumb popover with proper fiori 3 ([#923](https://github.com/SAP/fundamental-styles/issues/923)) ([4e78160](https://github.com/SAP/fundamental-styles/commit/4e78160))
+
+
+
 <a name="0.9.0-rc.32"></a>
 # [0.9.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.31...v0.9.0-rc.32) (2020-05-04)
 
