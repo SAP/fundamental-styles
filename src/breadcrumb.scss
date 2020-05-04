@@ -7,13 +7,12 @@
     .fd-breadcrump__link
 */
 
-$fd-breadcrumb-margin-bottom: 0.5rem;
 $fd-breadcrumb-spacing: 0.25rem;
 
 $fd-breadcrumb-separator-color: var(--sapContent_LabelColor);
 $fd-breadcrumb-item-color: var(--sapContent_LabelColor);
-
 $block: #{$fd-namespace}-breadcrumb;
+$fd-breadcrumb-border-top-radius: 0.125rem !default;
 
 .#{$block} {
 
@@ -23,7 +22,6 @@ $block: #{$fd-namespace}-breadcrumb;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: $fd-breadcrumb-margin-bottom;
   list-style: none;
 
   // ELEMENTS *******************************************
@@ -41,6 +39,12 @@ $block: #{$fd-namespace}-breadcrumb;
 
     &:last-child::after {
       content: none;
+    }
+
+    .#{$block}__popover-body {
+      border: none;
+      border-top-left-radius: $fd-breadcrumb-border-top-radius;
+      border-top-right-radius: $fd-breadcrumb-border-top-radius;
     }
   }
 
