@@ -242,6 +242,7 @@ $fd-calendar-special-days: (
   &__header {
     @include fd-reset();
 
+    position: relative;
     display: flex;
     flex-direction: column;
   }
@@ -251,7 +252,6 @@ $fd-calendar-special-days: (
 
     width: 100%;
     display: flex;
-    position: relative;
     justify-content: center;
     padding-top: $fd-calendar-button-horizontal-space;
     padding-bottom: $fd-calendar-button-horizontal-space;
@@ -461,12 +461,7 @@ $fd-calendar-special-days: (
       }
 
       &__navigation--main {
-        padding-right: calc(100vw - #{$fd-calendar-navigation-landscape-width});
-
-        @include fd-rtl() {
-          padding-right: 0;
-          padding-left: calc(100vw - #{$fd-calendar-navigation-landscape-width});
-        }
+        max-width: 20rem;
       }
     }
   }
