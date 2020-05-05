@@ -276,6 +276,10 @@ $semantic-color: (
   &__title {
     flex: 3 3 10%;
     font-size: $fd-list-large-font-size;
+
+    &:last-child:first-child {
+      flex-basis: auto;
+    }
   }
 
   &__secondary {
