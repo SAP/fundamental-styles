@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.46"></a>
+# [0.9.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.45...v0.9.0-rc.46) (2020-05-05)
+
+
+### Bug Fixes
+
+* shellbar product menu padding bug ([#916](https://github.com/SAP/fundamental-styles/issues/916)) ([9cdf67a](https://github.com/SAP/fundamental-styles/commit/9cdf67a))
+
+
+
 <a name="0.9.0-rc.45"></a>
 # [0.9.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.44...v0.9.0-rc.45) (2020-05-05)
 
