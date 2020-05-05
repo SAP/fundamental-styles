@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.41"></a>
+# [0.9.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.40...v0.9.0-rc.41) (2020-05-05)
+
+
+### Bug Fixes
+
+* Fix dropdown fill content no ie11 ([#967](https://github.com/SAP/fundamental-styles/issues/967)) ([595f50f](https://github.com/SAP/fundamental-styles/commit/595f50f))
+
+
+
 <a name="0.9.0-rc.40"></a>
 # [0.9.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.39...v0.9.0-rc.40) (2020-05-05)
 
