@@ -1,32 +1,34 @@
 <!--
 step-input:
     properties={},
-    modifier={ block: [],state: "", cozy: false},
+    modifier={ block: [], cozy: false},
+    state={}
 -->
 
 {% macro step_input(
     properties={},
     modifier={
-        block: [],
-        state: "",
-        disabled: false,
-        readonly: false,
-        cozy: false
-    })
+    	block: []
+    },
+	state= {})
 %}
-{%- set input = properties.input %}
-<div class="fd-step-input">
-    <div class="input-group-input-playground {{ 'is-readonly' if modifier.readonly }} fd-step-input__content-wrapper {{ 'fd-step-input__content-wrapper--compact' if modifier.compact}}">
-            <div class="input-group-addon-playground input-group-addon-playground--compact fd-step-input__button-container {{ 'is-readonly' if modifier.readonly }} {{ 'fd-step-input__button-container--compact' if modifier.compact}}">
-                <div class="fd-button fd-step-input__button {{ 'fd-step-input__button--compact' if modifier.compact }}" onclick="stepInputValue('step-1', 'down');">-</div>
-            </div>
-            <input class="input-group-playground fd-step-input__inputtext" id="step-1" {{ 'readonly' if modifier.readonly }} type="text" value="0">
-            <div class="input-group-addon-playground input-group-addon-playground--compact fd-step-input__button-container {{ 'is-readonly' if modifier.readonly }} {{ 'fd-step-input__button-container--compact' if modifier.compact}} ">
-               <button class="fd-button fd-step-input__button {{ 'fd-step-input__button--compact' if modifier.compact }}" onclick="stepInputValue('step-1', 'up');">+</div>
-            </div>
-    </div>
- <span class="fd-step-input__unit-description {{ ' is-disabled' if modifier.disabled }}">{{ properties.unitdesc }}</span>
+
+<div class="fd-step-input{{ modifier.block | modifier('step-input') }}{{ state | state }}">
+	<button aria-label="Step up" class="fd-button{{ modifier.block | modifier('button') }} fd-step-input__button btn-playground" type="button"></button>
+	<input class="fd-input{{ modifier.block | modifier('input') }} input-group-input-playground fd-step-input__input" type="number" value="0">
+	<button aria-label="Step up" class="fd-button{{ modifier.block | modifier('button') }} fd-step-input__button btn-playground" type="button"></button>
 </div>
+<span class="fd-step-input__unit-description">PC</span>
 
+<br/>
+<br/>
+<br/>
 
+<div>
+<div class="fd-step-input fd-step-input--compact {{ state | state }}">
+	<button aria-label="Step up" class="fd-button fd-button--compact fd-step-input__button btn-playground" type="button"></button>
+	<input class="fd-input fd-input--compact input-group-input-playground fd-step-input__input" type="number" value="0">
+	<button aria-label="Step up" class="fd-button fd-button--compact fd-step-input__button btn-playground" type="button"></button>
+</div>
+<span class="fd-step-input__unit-description">PC</span>
 {%- endmacro %}

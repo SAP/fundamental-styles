@@ -1,117 +1,74 @@
-@import "./settings";
-@import "./new-settings";
 @import "./mixins";
-@import "./functions";
-@import "./button";
 
 $block: #{$fd-namespace}-step-input;
 
 .#{$block} {
-  $fd-step-input-border-thin-width: 0.0625rem;
-  $fd-step-input-border-thick-width: 2 * $fd-step-input-border-thin-width;
-  $fd-input-group-button-active-focus-color: var(--sapContent_ContrastFocusColor);
   $fd-button-icon-font-size: 0.875rem;
-  $fd-button-icon-font-size-cozy: 1rem;
+  $fd-step-input-cozy-height: 2.25rem;
+  $fd-step-input-compact-height: 1.5rem;
+  $fd-step-input-cozy-button-width: 2.125rem;
+  $fd-step-input-compact-button-width: 1.5rem;
+  $fd-step-input-description-padding: 0.5rem;
 
   @mixin iconSize($size) {
     &::before,
     &::after {
       font-size: $size;
+      margin: 0;
     }
-  }
-
-  width: auto;
-  display: inline-block;
-  line-height: 0;
-
-  @include fd-fiori-focus() {
-    outline-color: $fd-input-group-button-active-focus-color;
   }
 
   @include fd-reset();
-  @include fd-rtl();
+  @include fd-form-states();
+  @include fd-fiori-focus-within();
 
-  &__content-wrapper {
-    width: auto;
-    min-width: 2.75rem;
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-    padding: 0;
-    box-sizing: border-box;
-    vertical-align: middle;
-    display: inline-block;
-    position: relative;
+  width: auto;
+  border-style: solid;
+  border-width: var(--sapField_BorderWidth);
+  border-color: var(--sapField_BorderColor);
+  border-radius: var(--sapField_BorderCornerRadius);
+  background-color: var(--sapField_Background);
+  height: calc(#{$fd-step-input-cozy-height} + 2 * var(--sapField_BorderWidth));
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
 
-    &.is-readonly {
-      outline: none;
-    }
-  }
-
-  &__content-wrapper:focus-within {
-    box-shadow: none;
-    outline-offset: -0.1875rem;
-    outline-width: var(--sapContent_FocusWidth);
-    outline-color: var(--sapContent_FocusColor);
-    outline-style: var(--sapContent_FocusStyle);
-
-    &.is-readonly {
-      outline: none;
-    }
-  }
-
-  &__button-container {
-    width: 2.125rem;
-    min-width: 2rem;
-    vertical-align: middle;
-    display: inline-block;
-    outline: none;
+  &__button.#{$fd-namespace}-button {
+    width: $fd-step-input-cozy-button-width;
+    min-width: $fd-step-input-cozy-button-width;
     height: 100%;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    &.is-readonly {
-      display: none;
-    }
-
-    @include fd-hover() {
-      @include buttonContainerHover();
-    }
-  }
-
-  &__button-container--compact {
-    width: 1.5rem;
-    min-width: 1.5rem;
-  }
-
-  .#{$fd-namespace}-button.#{$block}__button {
-    @include fd-button-reset();
-
-    background-color: var(--sapButton_Lite_Background);
-    border-color: var(--sapButton_Lite_BorderColor);
-    color: var(--sapButton_Lite_TextColor);
-    width: 2.125rem;
-    min-width: 2rem;
-    height: 2.25rem;
-    line-height: 1.5rem;
-    margin: 0;
-    text-align: center;
-    cursor: pointer;
-
-    &:focus {
+    @include fd-focus() {
       outline: none;
+
+      &,
+      &:hover {
+        z-index: auto;
+      }
+    }
+
+    &--compact {
+      width: $fd-step-input-compact-button-width;
+      min-width: $fd-step-input-compact-button-width;
     }
 
     @include iconSize($fd-button-icon-font-size);
   }
 
-  .#{$fd-namespace}-button.#{$block}__button--compact {
-    width: 1.5rem;
-    min-width: 1.5rem;
-    height: 1.5rem;
-  }
-
-  &__inputtext {
+  &__input.#{$fd-namespace}-input {
     width: auto;
+    height: 100%;
     text-align: right;
-    vertical-align: middle;
+    border: none;
+    margin: 0;
+    padding: 0 0.25rem;
+    background-color: transparent;
 
     @include fd-rtl() {
       text-align: left;
@@ -121,33 +78,38 @@ $block: #{$fd-namespace}-step-input;
       outline: none;
     }
 
-    &:focus::first-line {
-      color: var(--sapContent_ContrastTextColor);
-      background-color: var(--sapSelectedColor);
+    &--compact {
+      height: 100%;
     }
   }
 
-  &__content-wrapper--compact {
-    min-width: 2rem;
-    margin-top: 0.1875rem;
-    margin-bottom: 0.1875rem;
+  /** Width is different due to different border width  */
+  &.is-information,
+  &.is-error,
+  &.is-warning {
+    .#{$block}__button.#{$fd-namespace}-button {
+      width: calc(#{$fd-step-input-cozy-button-width} - 0.125rem);
+      min-width: calc(#{$fd-step-input-cozy-button-width} - 0.125rem);
+    }
   }
 
-  &__unit-description {
-    height: 100%;
-    vertical-align: middle;
-    padding-left: 0.5rem;
-    font-family: var(--sapFontFamily);
-    font-size: var(--sapFontSize);
-    font-style: normal;
-    font-weight: normal;
-    color: var(--sapField_TextColor);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  &--compact {
+    height: calc(#{$fd-step-input-compact-height} + 2 * var(--sapField_BorderWidth));
 
-    @include fd-rtl() {
-      padding-right: 0.5rem;
+    /** Width is different due to different border width  */
+    &.is-information,
+    &.is-error,
+    &.is-warning {
+      .#{$block}__button.#{$fd-namespace}-button {
+        width: calc(#{$fd-step-input-compact-button-width} - 0.125rem);
+        min-width: calc(#{$fd-step-input-compact-button-width} - 0.125rem);
+      }
+    }
+  }
+
+  &.is-readonly {
+    .#{$block}__button.#{$fd-namespace}-button {
+      display: none;
     }
   }
 }

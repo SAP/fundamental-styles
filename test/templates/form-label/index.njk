@@ -23,4 +23,11 @@
 
 {{ format(example) }}
 
+<h2>Unit Description</h2>
+{% set example %}
+  {{ formLabel(unit_description="true", text="Unit Description") }}
+  <br><br>
+{% endset %}
+
+{{ format(example) }}
 {% endblock %}

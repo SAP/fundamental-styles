@@ -15,32 +15,65 @@ It is typically used to enter numbers.The value can be increased or reduced with
 ## Step Input with compact
 
 {% capture step-input-compact %}
-
-<div class="fd-step-input">
-    <div class="fd-input-group fd-input-group--control fd-step-input__content-wrapper fd-step-input__content-wrapper--compact">
-            <div class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button fd-step-input__button-container fd-step-input__button-container--compact">
-                <button aria-label="Step down" class="fd-button fd-step-input__button fd-step-input__button--compact sap-icon--less " onclick="stepInputValue('step-1', 'down');" type="button"></button>
-            </div>
-            <input class="fd-input fd-input--compact fd-input--no-number-spinner fd-step-input__inputtext fd-input-group__input" id="step-1" type="number" value="0">
-            <div class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button fd-step-input__button-container fd-step-input__button-container--compact">
-                <button aria-label="Step up" class="fd-button fd-step-input__button fd-step-input__button--compact sap-icon--add " onclick="stepInputValue('step-1', 'up');" type="button"></button>
-            </div>
+<div class="fd-form-item fd-form-item--horizontal">
+    <div class="fd-step-input fd-step-input--compact">
+            <button aria-label="Step down" class="
+                fd-button
+                fd-button--compact
+                fd-button--transparent
+                fd-step-input__button
+                sap-icon--less"
+                onclick="stepInputValue('step-1', 'down');"
+                type="button">
+            </button>
+        <input class="
+                fd-input 
+                fd-input--compact 
+                fd-input--no-number-spinner 
+                fd-step-input__input
+        " id="step-1" type="number" value="0">
+            <button aria-label="Step up" class="
+                fd-button 
+                fd-button--compact
+                fd-button--transparent
+                fd-step-input__button
+                sap-icon--add"
+                onclick="stepInputValue('step-1', 'up');" 
+                type="button">
+            </button>
     </div>
- <span class="fd-step-input__unit-description">PC</span>
+    <span class="fd-form-label fd-form-label--unit-description">PC</span>
 </div>
 <br><br>
 <h3>RTL Support</h3>
-<div class="fd-step-input" dir="rtl">
-    <div class="fd-input-group fd-input-group--control fd-step-input__content-wrapper fd-step-input__content-wrapper--compact">
-            <div class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button fd-step-input__button-container fd-step-input__button-container--compact">
-                <button aria-label="Step down" class="fd-button fd-step-input__button fd-step-input__button--compact sap-icon--less " onclick="stepInputValue('step-1-rtl', 'down');" type="button"></button>
-            </div>
-            <input class="fd-input fd-input--compact fd-step-input__inputtext fd-input-group__input" id="step-1-rtl" type="text" value="0">
-            <div class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button fd-step-input__button-container fd-step-input__button-container--compact">
-                <button aria-label="Step up" class="fd-button fd-step-input__button fd-step-input__button--compact sap-icon--add " onclick="stepInputValue('step-1-rtl', 'up');" type="button"></button>
-            </div>
+<div class="fd-form-item fd-form-item--horizontal" dir="rtl">
+    <div class="fd-step-input fd-step-input--compact">
+            <button aria-label="Step down" class="
+                fd-button
+                fd-button--compact
+                fd-button--transparent
+                fd-step-input__button
+                sap-icon--less"
+                onclick="stepInputValue('step-2', 'down');"
+                type="button">
+            </button>
+        <input class="
+                fd-input 
+                fd-input--compact 
+                fd-input--no-number-spinner 
+                fd-step-input__input
+        " id="step-2" type="number" value="0">
+            <button aria-label="Step up" class="
+                fd-button 
+                fd-button--compact
+                fd-button--transparent
+                fd-step-input__button
+                sap-icon--add"
+                onclick="stepInputValue('step-2', 'up');" 
+                type="button">
+            </button>
     </div>
-     <span class="fd-step-input__unit-description">PC</span>
+    <span class="fd-form-label fd-form-label--unit-description">PC</span>
 </div>
 {% endcapture %}
 {% include display-component.html component=step-input-compact %}
@@ -48,32 +81,56 @@ It is typically used to enter numbers.The value can be increased or reduced with
 ## Step Input with Cozy
 
 {% capture step-input-cozy %}
-
 <div class="fd-step-input">
-<div class="fd-input-group fd-input-group--control fd-step-input__content-wrapper">
-            <div class="fd-input-group__addon fd-input-group__addon--button fd-step-input__button-container">
-                <button aria-label="Step down" class="fd-button fd-step-input__button sap-icon--less" onclick="stepInputValue('step-2', 'down');" type="button"></button>
-            </div>
-            <input class="fd-input fd-step-input__inputtext fd-input-group__input" id="step-2" type="text" value="0">
-            <div class="fd-input-group__addon fd-input-group__addon--button fd-step-input__button-container">
-                <button aria-label="Step up" class="fd-button fd-step-input__button sap-icon--add " onclick="stepInputValue('step-2', 'up');" type="button"></button>
-            </div>
-    </div>
-  <span class="fd-step-input__unit-description">PC</span>
+        <button aria-label="Step down" class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+            onclick="stepInputValue('step-3', 'down');"
+            type="button">
+        </button>
+    <input class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    " id="step-3" type="number" value="0">
+        <button aria-label="Step up" class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+            onclick="stepInputValue('step-3', 'up');" 
+            type="button">
+        </button>
 </div>
 <br><br>
 <h3>RTL Support</h3>
-<div class="fd-step-input" dir="rtl">
-    <div class="fd-input-group fd-input-group--control fd-step-input__content-wrapper">
-            <div class="fd-input-group__addon fd-input-group__addon--button fd-step-input__button-container">
-                <button aria-label="Step down" class="fd-button fd-step-input__button sap-icon--less " onclick="stepInputValue('step-2-rtl', 'down');" type="button"></button>
-            </div>
-            <input class="fd-input fd-step-input__inputtext fd-input-group__input" id="step-2-rtl" type="text" value="0">
-            <div class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button fd-step-input__button-container">
-                <button aria-label="Step up" class="fd-button fd-step-input__button sap-icon--add " onclick="stepInputValue('step-2-rtl', 'up');" type="button"></button>
-            </div>
+<div dir="rtl">
+    <div class="fd-step-input">
+            <button aria-label="Step down" class="
+                fd-button
+                fd-button--transparent
+                fd-step-input__button
+                sap-icon--less"
+                onclick="stepInputValue('step-4', 'down');"
+                type="button">
+            </button>
+        <input class="
+                fd-input 
+                fd-input--no-number-spinner 
+                fd-step-input__input
+        " id="step-4" type="number" value="0">
+            <button aria-label="Step up" class="
+                fd-button 
+                fd-button--transparent
+                fd-step-input__button
+                sap-icon--add"
+                onclick="stepInputValue('step-4', 'up');" 
+                type="button">
+            </button>
     </div>
-    <span class="fd-step-input__unit-description">PC</span>
+    
 </div>
 {% endcapture %}
 {% include display-component.html component=step-input-cozy %}
@@ -83,61 +140,235 @@ It is typically used to enter numbers.The value can be increased or reduced with
 {% capture step-input-states %}
 
 <h3>Success</h3>
-<div class="fd-step-input">
-  <div class="fd-input-group is-success fd-input-group--control fd-step-input__content-wrapper  fd-step-input__content-wrapper--compact">
-            <div class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button fd-step-input__button-container fd-step-input__button-container--compact">
-                <button aria-label="Step down" class="fd-button fd-step-input__button fd-step-input__button--compact sap-icon--less " onclick="stepInputValue('step-3', 'down');" type="button"></button>
-            </div>
-            <input class="fd-input fd-input--compact fd-step-input__inputtext fd-input-group__input" id="step-3" type="text" value="0">
-            <div class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button fd-step-input__button-container fd-step-input__button-container--compact">
-                <button aria-label="Step up" class="fd-button fd-step-input__button fd-step-input__button--compact sap-icon--add " onclick="stepInputValue('step-3', 'up');" type="button"></button>
-            </div>
+
+<div class="fd-step-input is-success">
+        <button aria-label="Step down" class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+            onclick="stepInputValue('step-5', 'down');"
+            type="button">
+        </button>
+    <input class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    " id="step-5" type="number" value="0">
+        <button aria-label="Step up" class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+            onclick="stepInputValue('step-5', 'up');" 
+            type="button">
+        </button>
 </div>
-    <span class="fd-step-input__unit-description">PC</span>
-</div>
+
 <br><br>
 <h3>Information</h3>
-<div class="fd-step-input">
-   <div class="fd-input-group is-information fd-input-group--control fd-step-input__content-wrapper fd-step-input__content-wrapper--compact">
-            <div class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button fd-step-input__button-container fd-step-input__button-container--compact">
-                <button aria-label="Step down" class="fd-button fd-step-input__button fd-step-input__button--compact sap-icon--less " onclick="stepInputValue('step-3-info', 'down');" type="button"></button>
-            </div>
-            <input class="fd-input fd-input--compact fd-step-input__inputtext fd-input-group__input " id="step-3-info" type="text" value="0">
-            <div class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button fd-step-input__button-container fd-step-input__button-container--compact">
-                <button aria-label="Step up" class="fd-button fd-step-input__button fd-step-input__button--compact sap-icon--add " onclick="stepInputValue('step-3-info', 'up');" type="button"></button>
-            </div>
-    </div>
-    <span class="fd-step-input__unit-description">PC</span>
+<div class="fd-step-input is-information">
+        <button aria-label="Step down" class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+            onclick="stepInputValue('step-6', 'down');"
+            type="button">
+        </button>
+    <input class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    " id="step-6" type="number" value="0">
+        <button aria-label="Step up" class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+            onclick="stepInputValue('step-6', 'up');" 
+            type="button">
+        </button>
 </div>
 <br><br>
 <h3>Error</h3>
-<div class="fd-step-input">
-   <div class="fd-input-group is-error fd-input-group--control fd-step-input__content-wrapper fd-step-input__content-wrapper--compact">
-            <div class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button fd-step-input__button-container fd-step-input__button-container--compact">
-                <button aria-label="Step down" class="fd-button fd-step-input__button fd-step-input__button--compact sap-icon--less " onclick="stepInputValue('step-4', 'down');" type="button"></button>
-            </div>
-            <input class="fd-input fd-input--compact fd-step-input__inputtext fd-input-group__input" id="step-4" type="text" value="0">
-            <div class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button fd-step-input__button-container fd-step-input__button-container--compact">
-                <button aria-label="Step up" class="fd-button fd-step-input__button fd-step-input__button--compact sap-icon--add " onclick="stepInputValue('step-4', 'up');" type="button"></button>
-            </div>
-    </div>
-    <span class="fd-step-input__unit-description">PC</span>
+<div class="fd-step-input is-error">
+        <button aria-label="Step down" class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+            onclick="stepInputValue('step-7', 'down');"
+            type="button">
+        </button>
+    <input class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    " id="step-7" type="number" value="0">
+        <button aria-label="Step up" class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+            onclick="stepInputValue('step-7', 'up');" 
+            type="button">
+        </button>
 </div>
 
 <br><br>
 
 <h3>Warning</h3>
-<div class="fd-step-input">
-    <div class="fd-input-group is-warning fd-input-group--control fd-step-input__content-wrapper fd-step-input__content-wrapper--compact">
-            <div class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button fd-step-input__button-container fd-step-input__button-container--compact">
-                <button aria-label="Step down" class="fd-button fd-step-input__button fd-step-input__button--compact sap-icon--less " onclick="stepInputValue('step-5', 'down');" type="button"></button>
-            </div>
-            <input class="fd-input fd-input--compact fd-step-input__inputtext fd-input-group__input" id="step-5" type="text" value="0">
-            <div class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button fd-step-input__button-container fd-step-input__button-container--compact">
-                <button aria-label="Step up" class="fd-button fd-step-input__button fd-step-input__button--compact sap-icon--add " onclick="stepInputValue('step-5', 'up');" type="button"></button>
-            </div>
-    </div>
-    <span class="fd-step-input__unit-description">PC</span>
+<div class="fd-step-input is-warning">
+    <button aria-label="Step down" class="
+        fd-button
+        fd-button--transparent
+        fd-step-input__button
+        sap-icon--less"
+        onclick="stepInputValue('step-8', 'down');"
+        type="button">
+    </button>
+    <input class="
+        fd-input 
+        fd-input--no-number-spinner 
+        fd-step-input__input
+    " id="step-8" type="number" value="0">
+    <button aria-label="Step up" class="
+        fd-button 
+        fd-button--transparent
+        fd-step-input__button
+        sap-icon--add"
+        onclick="stepInputValue('step-8', 'up');" 
+        type="button">
+    </button>
+</div>
+
+
+<br>
+<br>
+
+<h3>Compact Success</h3>
+<div class="fd-step-input is-success fd-step-input--compact">
+        <button aria-label="Step down" class="
+            fd-button
+            fd-button--compact
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+            onclick="stepInputValue('step-9', 'down');"
+            type="button">
+        </button>
+    <input class="
+            fd-input 
+            fd-input--compact 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    " id="step-9" type="number" value="0">
+        <button aria-label="Step up" class="
+            fd-button 
+            fd-button--compact
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+            onclick="stepInputValue('step-9', 'up');" 
+            type="button">
+        </button>
+</div>
+
+
+<br>
+<br>
+
+<h3>Compact Warning</h3>
+<div class="fd-step-input is-warning fd-step-input--compact">
+        <button aria-label="Step down" class="
+            fd-button
+            fd-button--compact
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+            onclick="stepInputValue('step-10', 'down');"
+            type="button">
+        </button>
+    <input class="
+            fd-input 
+            fd-input--compact 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    " id="step-10" type="number" value="0">
+        <button aria-label="Step up" class="
+            fd-button 
+            fd-button--compact
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+            onclick="stepInputValue('step-10', 'up');" 
+            type="button">
+        </button>
+</div>
+
+
+<br>
+<br>
+
+<h3>Compact Error</h3>
+<div class="fd-step-input is-error fd-step-input--compact">
+        <button aria-label="Step down" class="
+            fd-button
+            fd-button--compact
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+            onclick="stepInputValue('step-11', 'down');"
+            type="button">
+        </button>
+    <input class="
+            fd-input 
+            fd-input--compact 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    " id="step-11" type="number" value="0">
+        <button aria-label="Step up" class="
+            fd-button 
+            fd-button--compact
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+            onclick="stepInputValue('step-11', 'up');" 
+            type="button">
+        </button>
+</div>
+
+
+<br>
+<br>
+
+<h3>Compact Information</h3>
+<div class="fd-step-input is-information fd-step-input--compact">
+        <button aria-label="Step down" class="
+            fd-button
+            fd-button--compact
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+            onclick="stepInputValue('step-12', 'down');"
+            type="button">
+        </button>
+    <input class="
+            fd-input 
+            fd-input--compact 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    " id="step-12" type="number" value="0">
+        <button aria-label="Step up" class="
+            fd-button 
+            fd-button--compact
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+            onclick="stepInputValue('step-12', 'up');" 
+            type="button">
+        </button>
 </div>
 
 {% endcapture %}
@@ -147,35 +378,59 @@ It is typically used to enter numbers.The value can be increased or reduced with
 
 {% capture step-input-disabled %}
 
-<div class="fd-step-input">
-    <div class="fd-input-group is-disabled fd-input-group--control fd-step-input__content-wrapper fd-step-input__content-wrapper--compact">
-            <div class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button fd-step-input__button-container fd-step-input__button-container--compact">
-                <button aria-label="Step down" class="fd-button fd-step-input__button fd-step-input__button--compact sap-icon--less " onclick="stepInputValue('step-6', 'down');" type="button"></button>
-            </div>
-            <input class="fd-input fd-input--compact fd-step-input__inputtext fd-input-group__input" id="step-6" type="text" value="0">
-            <div class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button fd-step-input__button-container fd-step-input__button-container--compact">
-                <button aria-label="Step up" class="fd-button fd-step-input__button fd-step-input__button--compact sap-icon--add " onclick="stepInputValue('step-6', 'up');" type="button"></button>
-            </div>
-    </div>
-    <span class="fd-step-input__unit-description is-disabled">PC</span>
+<div class="fd-step-input is-disabled">
+        <button aria-label="Step down" class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+            onclick="stepInputValue('step-13', 'down');"
+            type="button">
+        </button>
+    <input class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    " id="step-13" type="number" value="0" disabled>
+        <button aria-label="Step up" class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+            onclick="stepInputValue('step-13', 'up');" 
+            type="button">
+        </button>
 </div>
+
 
 <br><br>
 
 <h3>Read Only</h3>
 
-<div class="fd-step-input">
-<div class="fd-input-group is-readonly fd-input-group--control fd-step-input__content-wrapper fd-step-input__content-wrapper--compact is-readonly">
-            <div class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button fd-step-input__button-container is-readonly fd-step-input__button-container--compact">
-                <button aria-label="Step down" class="fd-button fd-step-input__button fd-step-input__button--compact sap-icon--less " onclick="stepInputValue('step-7', 'down');" type="button"></button>
-            </div>
-            <input class="fd-input fd-input--compact fd-input--compact fd-step-input__inputtext fd-input-group__input" id="step-7" type="text" value="0" readonly>
-            <div class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button fd-step-input__button-container is-readonly fd-step-input__button-container--compact">
-                <button aria-label="Step up" class="fd-button fd-step-input__button fd-step-input__button--compact sap-icon--add " onclick="stepInputValue('step-7', 'up');" type="button"></button>
-            </div>
-    </div>
-    <span class="fd-step-input__unit-description">PC</span>
+<div class="fd-step-input is-readonly">
+        <button aria-label="Step down" class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+            onclick="stepInputValue('step-14', 'down');"
+            type="button">
+        </button>
+    <input class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    " id="step-14" type="number" readonly value="0">
+        <button aria-label="Step up" class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+            onclick="stepInputValue('step-14', 'up');" 
+            type="button">
+        </button>
 </div>
+
 
 {% endcapture %}
 {% include display-component.html component=step-input-disabled %}

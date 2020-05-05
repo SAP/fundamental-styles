@@ -9,52 +9,116 @@
 
 {% block content %}
 {% set states = ["success", "error", "warning", "information"] %}
-<h2>Step Input Cozy mode</h2>
+<h2>Default Step Input</h2>
 </head>
 {%- set example %}
-
-                {{ step_input(
-                    properties={
-                        unitdesc: "PC",
-                        value: 0
-                        },
-                    modifier={
-                        cozy: false
-
-                    })
-                }}
+	{{ step_input(
+		properties={
+			unitdesc: "PC",
+			value: 0
+		},
+		state={},
+		modifier={})
+	}}
 {%- endset %}
 {{ format(example) }}
 
-<h2>Step Input compact mode</h2>
+<h2>Readonly Step Input</h2>
 {%- set example %}
-
-                {{ step_input(
-                    properties={
-                        unitdesc: "PC",
-                        value: 0
-                        },
-                    modifier={
-                        compact: true
-
-                    })
-                }}
+	{{ step_input(
+		properties={
+			unitdesc: "PC",
+			value: 0
+		},
+        state={'readonly': true},
+		modifier={
+            block: 'readonly'
+		})
+	}}
 {%- endset %}
 {{ format(example) }}
 
-<h2>Step Input with Read only</h2>
+<h2>Disabled Step Input</h2>
 {%- set example %}
+	{{ step_input(
+		properties={
+			unitdesc: "PC",
+			value: 0
+		},
+        state={'disabled': true},
+		modifier={
+		})
+	}}
+{%- endset %}
+{{ format(example) }}
 
-                {{ step_input(
-                    properties={
-                        unitdesc: "PC",
-                        value: 0
-                        },
-                    modifier={
-                        compact: true,
-                        readonly: true
-                    })
-                }}
+<h2>Success Step Input</h2>
+{%- set example %}
+	{{ step_input(
+		properties={
+			unitdesc: "PC",
+			value: 0
+		},
+        state={'success': true},
+		modifier={
+		})
+	}}
+{%- endset %}
+{{ format(example) }}
+
+<h2>Error Step Input</h2>
+{%- set example %}
+	{{ step_input(
+		properties={
+			unitdesc: "PC",
+			value: 0
+		},
+        state={'error': true},
+		modifier={
+		})
+	}}
+{%- endset %}
+{{ format(example) }}
+
+<h2>Warning Step Input</h2>
+{%- set example %}
+	{{ step_input(
+		properties={
+			unitdesc: "PC",
+			value: 0
+		},
+        state={'warning': true},
+		modifier={
+		})
+	}}
+{%- endset %}
+{{ format(example) }}
+
+<h2>Information Step Input</h2>
+{%- set example %}
+	{{ step_input(
+		properties={
+			unitdesc: "PC",
+			value: 0
+		},
+        state={'information': true},
+		modifier={
+		})
+	}}
+{%- endset %}
+{{ format(example) }}
+
+<h2>Focused Step Input</h2>
+{%- set example %}
+	{{ step_input(
+		properties={
+			unitdesc: "PC",
+			value: 0
+		},
+        state={'focus': true},
+		modifier={
+		})
+	}}
 {%- endset %}
 {{ format(example) }}
 

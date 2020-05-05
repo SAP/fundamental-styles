@@ -71,13 +71,8 @@ body {
   margin: 0;
 }
 
-.btn-playground--compact {
+.btn-playground--compact{
   padding: 4px;
-}
-
-.btn-playground--transparent {
-  border-color: transparent;
-  background-color: var(--sapButton_Lite_Background);
 }
 
 .btn-playground--emphasized {
@@ -124,7 +119,7 @@ body {
   font-size: 10px;
 }
 
-.identifier-playground {
+.avatar-playground {
   display: inline-block;
   background: beige;
   width: 28px;
@@ -181,18 +176,6 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-}
-
-.input-group-addon-playground {
-  color: var(--sapContent_NonInteractiveIconColor);
-  background-color: var(--sapField_Background);
-  font-size: var(--sapFontLargeSize);
-  min-width: 2.25rem;
-  min-height: 2.25rem;
-}
-
-.input-group-addon-playground--compact {
-  min-height: 1.625rem;
 }
 
 .input-group-input-playground {
@@ -257,7 +240,6 @@ body {
   margin: 0;
   border: 0;
   list-style: none;
-  padding-left: 1rem;
 }
 
 .test-sidenav-list-icon {
@@ -265,6 +247,7 @@ body {
   padding: 0;
   margin: 0;
   border: 0;
+  text-align: center;
 }
 
 .bar-popover-playground {
@@ -314,4 +297,30 @@ body {
   width: 50px;
   height: 20px;
   background-color: cadetblue;
+}
+
+.list-tumbnail-playground {
+  background-color: burlywood;
+}
+
+.form-item-playground {
+  margin: 0;
+  padding: 0;
+  padding: 0.6875rem;
+  display: flex;
+}
+.form-item-playground::after {
+  content: '';
+  min-height: 1.375rem;
+  min-width: 1.375rem;
+  background-color: thistle;
+}
+
+.fd-list--compact .form-item-playground {
+  padding: 0.5rem;
+}
+
+.fd-list--compact .form-item-playground::after {
+  min-height: 1rem;
+  min-width: 1rem;
 }
