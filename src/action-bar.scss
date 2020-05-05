@@ -91,6 +91,7 @@ $block: #{$fd-namespace}-action-bar;
     font-family: var(--sapFontHeaderFamily);
     color: $fd-action-bar-title-color;
     flex-grow: 1;
+    flex-basis: 0;
     line-height: 1.375rem;
     padding-right: 0.5rem;
     vertical-align: middle;
