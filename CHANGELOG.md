@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.42"></a>
+# [0.9.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.41...v0.9.0-rc.42) (2020-05-05)
+
+
+### Bug Fixes
+
+* Fix product switch mobile mode on ie11 ([#965](https://github.com/SAP/fundamental-styles/issues/965)) ([20e738b](https://github.com/SAP/fundamental-styles/commit/20e738b))
+
+
+
 <a name="0.9.0-rc.41"></a>
 # [0.9.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.40...v0.9.0-rc.41) (2020-05-05)
 
