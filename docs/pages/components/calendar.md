@@ -578,7 +578,7 @@ These are classes used to describe the look of calendar grid element.
 
 {% capture default-calendar-years %}
 <div style="display: flex; justify-content: space-around; margin-bottom: 1rem; flex-wrap: wrap;">
-    <div class="fd-calendar">
+    <div class="fd-calendar" style="margin-bottom: 1rem;">
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
@@ -651,7 +651,7 @@ These are classes used to describe the look of calendar grid element.
     </div>
     <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
 </div>
-    <div class="fd-calendar">
+    <div class="fd-calendar" style="margin-bottom: 1rem;">
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
@@ -711,7 +711,7 @@ These are classes used to describe the look of calendar grid element.
 </div>
 
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-    <div class="fd-calendar">
+    <div class="fd-calendar" style="margin-bottom: 1rem;">
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
@@ -760,7 +760,7 @@ These are classes used to describe the look of calendar grid element.
     </div>
     <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
 </div>
-    <div class="fd-calendar">
+    <div class="fd-calendar" style="margin-bottom: 1rem;">
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
