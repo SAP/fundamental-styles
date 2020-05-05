@@ -273,6 +273,7 @@ $block: #{$fd-namespace}-product-switch;
       border-radius: 0;
       border: none;
       border-bottom: 0.0625rem solid;
+      flex: auto;
       border-bottom-color: var(--sapList_GroupHeaderBorderColor);
 
       @include fd-product-pseudo-element-background(var(--sapTile_Background));
