@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.39"></a>
+# [0.9.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.38...v0.9.0-rc.39) (2020-05-05)
+
+
+### Bug Fixes
+
+* add fix for ActionListItem missing active state in IE11 ([#969](https://github.com/SAP/fundamental-styles/issues/969)) ([7ef2c5c](https://github.com/SAP/fundamental-styles/commit/7ef2c5c))
+
+
+
 <a name="0.9.0-rc.38"></a>
 # [0.9.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.37...v0.9.0-rc.38) (2020-05-05)
 
