@@ -50,7 +50,8 @@ $block: #{$fd-namespace}-shellbar;
 
     display: flex;
     align-items: center;
-    flex: 1;
+    flex: 1 1 0;
+    overflow: hidden;
 
     &--product {
       justify-content: flex-start;
