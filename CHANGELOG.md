@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.43"></a>
+# [0.9.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.42...v0.9.0-rc.43) (2020-05-05)
+
+
+### Bug Fixes
+
+* IE11 popover list overflow fix ([#964](https://github.com/SAP/fundamental-styles/issues/964)) ([547dacf](https://github.com/SAP/fundamental-styles/commit/547dacf))
+
+
+
 <a name="0.9.0-rc.42"></a>
 # [0.9.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.41...v0.9.0-rc.42) (2020-05-05)
 
