@@ -202,6 +202,10 @@ $semantic-color: (
   list-style: none;
   width: 100%;
 
+  :last-child {
+    border-bottom: none;
+  }
+
   &__item,
   &__group-header,
   &__footer {
