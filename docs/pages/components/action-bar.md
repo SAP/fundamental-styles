@@ -164,7 +164,7 @@ When there are several main actions for a page, consider displaying them under a
                 </div>
                 <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="wgxzK859">
                     <nav class="fd-menu" id="">
-                        <ul class="fd-menu__list">
+                        <ul class="fd-menu__list fd-menu__list--no-shadow">
                             <li class="fd-menu__item">
                                 <a class="fd-menu__link" href="#">
                                     <span class="fd-menu__title">Edit</span>
@@ -322,7 +322,7 @@ When there are several main actions for a page, consider displaying them under a
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="wgxzK85">
                         <nav class="fd-menu" id="">
-                            <ul class="fd-menu__list">
+                            <ul class="fd-menu__list fd-menu__list--no-shadow">
                                 <li class="fd-menu__item">
                                     <a class="fd-menu__link" href="#">
                                         <span class="fd-menu__title">Option 1</span>
@@ -369,7 +369,7 @@ When there are several main actions for a page, consider displaying them under a
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="wgxzK86">
                         <nav class="fd-menu" id="">
-                            <ul class="fd-menu__list">
+                            <ul class="fd-menu__list fd-menu__list--no-shadow">
                                 <li class="fd-menu__item">
                                     <a class="fd-menu__link" href="#">
                                         <span class="fd-menu__title">Option 1</span>

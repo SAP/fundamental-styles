@@ -26,6 +26,7 @@ $block: #{$fd-namespace}-switch;
   $fd-switch-label-width: 1.75rem;
 
   $fd-switch-transition: all 0.1s;
+  $fd-switch-semantic-icon-transition: visibility 0s ease 0.03s, opacity 0s ease 0.03s;
 
   $fd-switch-container-padding-y: 0.375rem;
   $fd-switch-size-x: 3.75rem;
@@ -51,13 +52,15 @@ $block: #{$fd-namespace}-switch;
   $fd-switch-track-semantic-offset: 1.9375rem;
   $fd-switch-track-border-offset: 0.0625rem;
 
+  $fd-switch-off-opacity: 0;
+  $fd-switch-on-opacity: 1;
+
   @include fd-reset();
 
   cursor: pointer;
   display: inline-block;
   position: relative;
   padding: $fd-switch-container-padding-y 0;
-  overflow: hidden;
 
   &__label {
     @include fd-form-label();
@@ -69,7 +72,7 @@ $block: #{$fd-namespace}-switch;
     padding: 0;
 
     &.is-disabled {
-      opacity: 0.4;
+      opacity: var(--sapContent_DisabledOpacity);
     }
   }
 
@@ -112,6 +115,7 @@ $block: #{$fd-namespace}-switch;
     font-size: 0.75rem;
     line-height: 1.375rem;
     text-align: center;
+    transition: $fd-switch-semantic-icon-transition;
 
     &--off {
       color: var(--sapNegativeElementColor);
@@ -121,6 +125,8 @@ $block: #{$fd-namespace}-switch;
     &--on {
       color: var(--sapPositiveElementColor);
       margin: 0 0 0 0.125rem;
+      visibility: hidden;
+      opacity: $fd-switch-off-opacity;
     }
   }
 
@@ -139,7 +145,7 @@ $block: #{$fd-namespace}-switch;
   &__input {
     @include fd-reset();
 
-    opacity: 0;
+    opacity: $fd-switch-off-opacity;
     width: 0;
     height: 0;
     position: absolute;
@@ -157,7 +163,7 @@ $block: #{$fd-namespace}-switch;
 
   @include fd-disabled() {
     pointer-events: none;
-    opacity: 0.4;
+    opacity: var(--sapContent_DisabledOpacity);
   }
 
   &__input:focus + .#{$block}__wrapper {
@@ -187,6 +193,18 @@ $block: #{$fd-namespace}-switch;
 
     .#{$block}__track {
       transform: translate($fd-switch-track-border-offset, -50%);
+    }
+
+    .#{$block}__icon {
+      &--off {
+        opacity: $fd-switch-off-opacity;
+        visibility: hidden;
+      }
+
+      &--on {
+        opacity: $fd-switch-on-opacity;
+        visibility: visible;
+      }
     }
   }
 

@@ -1,239 +1,244 @@
 .docs-home {
+  &_hero {
+    background-image: url('../images/home-hero-bg.png');
+    background-size: cover;
+    background-position: -190px -350px;
+    background-repeat: no-repeat;
+    background-color: $docs-home-grey-color;
+    color: $docs-home-dark-color;
+    padding-top: 100px;
 
-    &_hero {
-        background-image: url('../images/home-hero-bg.png');
-        background-size: cover;
-        background-position: -190px -350px;
-        background-repeat: no-repeat;
-        background-color: $docs-home-grey-color;
+    @media screen and (max-width: 950px) {
+      padding-top: 0;
+    }
+
+    &-heading {
+      font-size: 70px;
+      font-weight: 100;
+      line-height: 1.1;
+      text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.09);
+
+      @media screen and (max-width: 950px) {
+        font-size: 40px;
+      }
+    }
+
+    &-bold {
+      font-weight: bold;
+    }
+
+    &-content {
+      padding: 100px;
+
+      @media screen and (max-width: 950px) {
+        padding: 20px;
+      }
+    }
+
+    &-description {
+      font-size: 20px;
+      line-height: 1.2;
+      margin-top: 20px;
+      margin-bottom: 0;
+      max-width: 520px;
+    }
+
+    &-btn.fd-button--emphasized {
+      font-size: 16px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 36px;
+      margin-bottom: 32px;
+      line-height: 0;
+      padding: 20px;
+      border: none;
+
+      @media screen and (max-width: 950px) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      &:hover {
+        text-decoration: none;
+        box-shadow: none;
+      }
+    }
+
+    &-version {
+      display: inline-block;
+      text-transform: none;
+      border-radius: 20px;
+      font-weight: normal;
+      color: docs-color(action, 3);
+      font-size: 15px;
+    }
+  }
+
+  &_panel {
+    padding: 100px;
+    background: $docs-home-white-color;
+
+    @media screen and (max-width: 950px) {
+      padding: 20px;
+    }
+
+    &-title {
+      color: $docs-home-dark-color;
+      font-size: 60px;
+      border-bottom: 1px solid $docs-home-dark-color;
+      padding-bottom: 20px;
+      margin-bottom: 50px;
+
+      a {
         color: $docs-home-dark-color;
-        padding-top: 100px;
-        @media screen and (max-width: 950px) {
-            padding-top: 0;
-        }
+      }
 
-        &-heading {
-            font-size: 70px;
-            font-weight: 100;
-            line-height: 1.1;
-            text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.09);
-            @media screen and (max-width: 950px) {
-                font-size: 40px;
-            }
-        }
-
-        &-bold {
-            font-weight: bold;
-        }
-
-        &-content {
-            padding: 100px;
-            @media screen and (max-width: 950px) {
-                padding: 20px;
-            }
-        }
-
-        &-description {
-            font-size: 20px;
-            line-height: 1.2;
-            margin-top: 20px;
-            margin-bottom: 0;
-            max-width: 520px;
-        }
-
-        &-btn.fd-button--emphasized {
-            font-size: 16px;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 36px;
-            margin-bottom: 32px;
-            line-height: 0;
-            padding: 20px;
-            border: none;
-            @media screen and (max-width: 950px) {
-                margin-top: 20px;
-                margin-bottom: 20px;
-            }
-
-            &:hover {
-                text-decoration: none;
-                box-shadow: none;
-            }
-        }
-
-        &-version {
-            display: inline-block;
-            text-transform: none;
-            border-radius: 20px;
-            font-weight: normal;
-            color: docs-color(action, 3);
-            font-size: 15px;
-        }
-    }
-
-    &_panel {
-        padding: 100px;
-        background: $docs-home-white-color;
-        @media screen and (max-width: 950px) {
-            padding: 20px;
-        }
-
-        &-title {
-            color: $docs-home-dark-color;
-            font-size: 60px;
-            border-bottom: 1px solid $docs-home-dark-color;
-            padding-bottom: 20px;
-            margin-bottom: 50px;
-            a {
-                color: $docs-home-dark-color;
-            }
-            a:hover {
-                color: $docs-home-dark-color;
-                text-decoration: none;
-            }
-        }
-
-        &-heading {
-            color: $docs-home-dark-color;
-            font-size: 30px;
-            margin-top: 20px;
-            margin-bottom: 30px;
-            font-weight: 100;
-        }
-
-        &-description {
-            color: $docs-home-dark-color;
-            font-size: 16px;
-            margin-bottom: 30px;
-        }
-
-        &-action {
-            font-size: 15px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            display: inline-block;
-        }
-
-        &-img {
-            float: right;
-        }
-
-        &-resources-link {
-            display: block;
-            color: docs-color(action, 4);
-            font-size: 20px;
-            margin-bottom: 30px;
-            position: relative;
-            padding-left: 30px;
-
-            span {
-                position: absolute;
-                left: 0;
-                top: 0;
-            }
-        }
-    }
-
-    &_getting-started {
-        width: 50%;
-        float: left;
-        padding: 100px 50px;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-        display: inline-block;
-        transition: all 0.5s ease;
+      a:hover {
         color: $docs-home-dark-color;
-
-        &:hover {
-            color: $docs-home-dark-color;
-        }
-
-        &-label {
-            margin-top: 40px;
-            display: block;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-
-        &--designer {
-            background-image: url('../images/home-designers-bg.png');
-            border-right: 1px solid docs-color(neturals, 2);
-        }
-
-        &--developer {
-            background-image: url('../images/home-developers-bg.png');
-       }
+        text-decoration: none;
+      }
     }
 
-    &_ui-guidelines {
-        text-align: center;
-        background-color: docs-color(background, 3);
-        color: $docs-home-white-color;
-        padding: 100px 0;
-
-        &-heading {
-            font-size: 28px;
-            font-weight: 900;
-            margin-bottom: 12px;
-        }
-
-        &-description {
-            font-size: 14px;
-        }
-
-        &-img {
-            height: 120px;
-            vertical-align: baseline;
-            position: relative;
-            margin-bottom: 30px;
-
-            img {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
-
-        &-link {
-            width: 200px;
-            display: inline-block;
-            font-size: 16px;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: $docs-home-dark-color !important;
-
-            &:hover {
-                color: $docs-home-dark-color;
-            }
-        }
+    &-heading {
+      color: $docs-home-dark-color;
+      font-size: 30px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-weight: 100;
     }
 
-    &_support {
-        width: 60%;
-        margin: 160px auto;
-        display: flex;
-
-        &-link {
-            width: 50%;
-            float: left;
-            text-align: center;
-            color: $docs-home-dark-color;
-
-            &:hover {
-                color: $docs-home-dark-color;
-            }
-
-            img {
-                display: block;
-                margin: 30px auto;
-                width: 80px;
-            }
-        }
+    &-description {
+      color: $docs-home-dark-color;
+      font-size: 16px;
+      margin-bottom: 30px;
     }
+
+    &-action {
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    &-img {
+      float: right;
+    }
+
+    &-resources-link {
+      display: block;
+      color: docs-color(action, 4);
+      font-size: 20px;
+      margin-bottom: 30px;
+      position: relative;
+      padding-left: 30px;
+
+      span {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+
+  &_getting-started {
+    width: 50%;
+    float: left;
+    padding: 100px 50px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.5s ease;
+    color: $docs-home-dark-color;
+
+    &:hover {
+      color: $docs-home-dark-color;
+    }
+
+    &-label {
+      margin-top: 40px;
+      display: block;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+
+    &--designer {
+      background-image: url('../images/home-designers-bg.png');
+      border-right: 1px solid docs-color(neturals, 2);
+    }
+
+    &--developer {
+      background-image: url('../images/home-developers-bg.png');
+    }
+  }
+
+  &_ui-guidelines {
+    text-align: center;
+    background-color: docs-color(background, 3);
+    color: $docs-home-white-color;
+    padding: 100px 0;
+
+    &-heading {
+      font-size: 28px;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    &-description {
+      font-size: 14px;
+    }
+
+    &-img {
+      height: 120px;
+      vertical-align: baseline;
+      position: relative;
+      margin-bottom: 30px;
+
+      img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &-link {
+      width: 200px;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $docs-home-dark-color !important;
+
+      &:hover {
+        color: $docs-home-dark-color;
+      }
+    }
+  }
+
+  &_support {
+    width: 60%;
+    margin: 160px auto;
+    display: flex;
+
+    &-link {
+      width: 50%;
+      float: left;
+      text-align: center;
+      color: $docs-home-dark-color;
+
+      &:hover {
+        color: $docs-home-dark-color;
+      }
+
+      img {
+        display: block;
+        margin: 30px auto;
+        width: 80px;
+      }
+    }
+  }
 }
-

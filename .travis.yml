@@ -12,11 +12,12 @@ jobs:
   - stage: Lint, Test and Size
     script:
       - docker pull backstopjs/backstopjs:3.9.2
-      - npm run build:prod
-      - npm run lint
       - npm run test:ci-config
       - npm run test
-      - npm run size
+  -
+    script: npm run lint
+  -
+    script: npm run build:prod && npm run size
   - stage: Pre-release
     if: branch = master
     before_deploy:

@@ -283,6 +283,7 @@ $block: #{$fd-namespace}-menu;
       border-radius: 0;
       box-shadow: none;
       position: static;
+      margin: 0;
 
       .#{$block}__item {
         border-radius: 0;

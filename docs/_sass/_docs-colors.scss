@@ -1,70 +1,70 @@
 
 .docs-colors {
-    $colors-example-1-bg: fd-color(background, 1);
-    $colors-example-1-text: fd-color(text, 1);
-    $colors-example-2-bg: fd-color(action, 1);
-    $colors-example-2-text: fd-color(action, 2);
-    $colors-example-3-bg: fd-color(shell, 1);
-    $colors-example-3-text: fd-color(shell, 2);
-    $colors-example-4-bg: fd-color(background, 1);
-    $colors-example-4-text: fd-color(text, 5);
+  $colors-example-1-bg: fd-color(background, 1);
+  $colors-example-1-text: fd-color(text, 1);
+  $colors-example-2-bg: fd-color(action, 1);
+  $colors-example-2-text: fd-color(action, 2);
+  $colors-example-3-bg: fd-color(shell, 1);
+  $colors-example-3-text: fd-color(shell, 2);
+  $colors-example-4-bg: fd-color(background, 1);
+  $colors-example-4-text: fd-color(text, 5);
 
-    &_plaque {
-        list-style: none;
-        margin-left: 0;
+  &_plaque {
+    list-style: none;
+    margin-left: 0;
 
-        &_color {
-            display: inline-block;
-            float: left;
+    &_color {
+      float: left;
+      width: calc(25% - 20px);
+      padding: 10px;
+      margin-bottom: 20px;
+      min-height: 115px;
+      display: flex;
+      flex-direction: column;
+      vertical-align: middle;
+      margin-right: 10px;
 
-            width: calc(25% - 20px);
-            padding: 10px;
-            margin-bottom: 20px;
-            min-height: 115px;
+      &:nth-child(4n) {
+        clear: right;
+      }
 
-            display: flex;
-            flex-direction: column;
-            vertical-align: middle;
-            margin-right: 10px;
+      &-name {
+        font-size: 2rem;
+        margin-bottom: 5px;
+      }
 
-            &:nth-child(4n) {
+      &-value {
+        display: block;
+        margin-bottom: 5px;
+      }
 
-                clear: right;
-            }
+      &-code {
+        display: block;
+      }
+    }
+  }
 
-            &-name {
-                font-size: 2rem;
-                margin-bottom: 5px;
-            }
+  &_example {
+    text-align: center;
 
-            &-value {
-                display: block;
-                margin-bottom: 5px;
-            }
-
-            &-code {
-                display: block;
-            }
-        }
+    &--1 {
+      background-color: $colors-example-1-bg;
+      color: $colors-example-1-text;
     }
 
-    &_example {
-        text-align: center;
-        &--1 {
-            background-color: $colors-example-1-bg;
-            color: $colors-example-1-text;
-        }
-        &--2 {
-            background-color: $colors-example-2-bg;
-            color: $colors-example-2-text;
-        }
-        &--3 {
-            background-color: $colors-example-3-bg;
-            color: $colors-example-3-text;
-        }
-        &--4 {
-            background-color: $colors-example-4-bg;
-            color: $colors-example-4-text;
-        }
+    &--2 {
+      background-color: $colors-example-2-bg;
+      color: $colors-example-2-text;
     }
+
+    &--3 {
+      background-color: $colors-example-3-bg;
+      color: $colors-example-3-text;
+    }
+
+    &--4 {
+      background-color: $colors-example-4-bg;
+      color: $colors-example-4-text;
+    }
+  }
 }

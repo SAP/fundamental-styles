@@ -1,8 +1,9 @@
+/* eslint-disable no-undef */
 (function () {
     const els = document.querySelectorAll("[aria-controls]");
     for (let i = 0; i < els.length; i++) {
         const el = els[i];
-        el.addEventListener('click', function (e) {
+        el.addEventListener('click', function () {
             let targetId = this.getAttribute("aria-controls");
             let target = document.getElementById(targetId);
             //message strip
@@ -25,7 +26,6 @@
                     this.classList.add('is-expanded');
                 }
                 //target
-                const targetIsHidden = target.getAttribute("aria-hidden") == "true";
                 target.setAttribute("aria-hidden", isExpanded);
                 return;
             }

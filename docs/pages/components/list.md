@@ -111,6 +111,55 @@ If only a subset of the list items are navigable you should indicate those by di
 
 {% include display-component.html component=list-with-links-navigation %}
 
+## Standard List with Action List Item
+
+{% capture standard-list-action %}
+<ul class="fd-list" role="list">
+  <li role="listitem" class="fd-list__item fd-list__item--action">
+      <button class="fd-list__title">Forward</button>
+  </li>
+  <li role="listitem" class="fd-list__item fd-list__item--action">
+      <button class="fd-list__title">Save</button>
+  </li>
+  <li role="listitem" class="fd-list__item fd-list__item--action">
+      <button class="fd-list__title">More Options</button>
+  </li>
+</ul>
+
+<br />
+<h4>Compact Size</h4>
+<ul class="fd-list fd-list--compact" role="list">
+  <li role="listitem" class="fd-list__item fd-list__item--action">
+      <button class="fd-list__title">Forward</button>
+  </li>
+  <li role="listitem" class="fd-list__item fd-list__item--action">
+      <button class="fd-list__title">Save</button>
+  </li>
+  <li role="listitem" class="fd-list__item fd-list__item--action">
+      <button class="fd-list__title">More Options</button>
+  </li>
+</ul>
+
+<br />
+<h4>Action List Item With Other List Items </h4>
+<ul class="fd-list" role="list">
+  <li role="listitem" class="fd-list__item">
+      <span class="fd-list__title">List Item 1</span>
+  </li>
+  <li role="listitem" class="fd-list__item">
+      <span class="fd-list__title">List Item 2</span>
+  </li>
+  <li role="listitem" class="fd-list__item">
+      <span class="fd-list__title">List Item 3</span>
+  </li>
+  <li role="listitem" class="fd-list__item fd-list__item--action">
+      <button class="fd-list__title">More Options</button>
+  </li>
+</ul>
+{% endcapture %}
+
+{% include display-component.html component=standard-list-action %}
+
 ## Secondary Data
 
 {% capture secondary-data %}
@@ -239,7 +288,7 @@ If only a subset of the list items are navigable you should indicate those by di
 
 {% include display-component.html component=list-without-borders %}
 
-## Selection
+<!-- ## Selection
 {% capture list-selection %}
 <ul class="fd-list fd-list--selection" role="listbox">
   <li role="listitem" tabindex="0" class="fd-list__item">
@@ -415,9 +464,9 @@ If only a subset of the list items are navigable you should indicate those by di
 {% endcapture %}
 
 {% include display-component.html component=list-selection %}
+-->
 
-
-## Standard List with Byline
+<!-- ## Standard List with Byline
 Add the `fd-list--byline` modifier class for a Standard List with Byline (description).
 For a two-column byline you need to add the `fd-list__byline--2-col` modifier class to the element. The first text item (`fd-list__byline-left`) is a standard text (description) and takes 60% of the available space. The second text item (`fd-list__byline-right`) could be a standard text or semantic (status) and takes the remaining 40% of the available space. For semantic (status) use a modifier class (`fd-list__byline-right--* `) to represent `neutral`, `positive`, `critical`, `negative` and `informative` status.
 
@@ -1190,4 +1239,4 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
   </li>
 </ul>
 {% endcapture %}
-{% include display-component.html component=list-byline-selection-navigation-indication %}
+{% include display-component.html component=list-byline-selection-navigation-indication %} -->

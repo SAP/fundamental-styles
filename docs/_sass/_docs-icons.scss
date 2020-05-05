@@ -4,13 +4,16 @@
   width: 16%;
   text-align: center;
   height: 120px;
+
   & span {
     padding: 10px;
     display: inline-block;
+
     &::before {
-        font-size: 35px;
+      font-size: 35px;
     }
   }
+
   & h5 {
     margin-bottom: 0;
   }

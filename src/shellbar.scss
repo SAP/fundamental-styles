@@ -1,7 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
 @import "./product-menu";
-@import "./search-input";
 
 $block: #{$fd-namespace}-shellbar;
 
@@ -295,6 +294,7 @@ $block: #{$fd-namespace}-shellbar;
     border-color: transparent;
     background: $fd-shellbar-background-color;
     color: $fd-shellbar-color;
+    padding: 0;
 
     &:hover {
       background: $fd-shell-hover-background;

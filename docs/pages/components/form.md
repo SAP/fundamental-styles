@@ -548,7 +548,7 @@ In special cases, there are only two mutually exclusive options. Combine them in
     </div>
 </fieldset><br /><br />
 <fieldset class="fd-fieldset" id="radiortl" dir="rtl">
-    <legend class="fd-fieldset__legend">Interaction States</legend>
+    <legend class="fd-fieldset__legend">Interaction States RTL</legend>
     <div class="fd-form-group">
         <div class="fd-form-item">
             <input type="radio" class="fd-radio" id="radioRtl1" name="radiortl" checked>

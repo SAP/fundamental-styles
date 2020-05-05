@@ -11,15 +11,6 @@ git push "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" ":$TRAVIS_BRANCH" > /d
 std_ver=$(npm run std-version)
 release_tag=$(echo "$std_ver" | grep "tagging release" | awk '{print $4}')
 
-if  [[ $release_tag == v* ]]; then
-  echo ""
-else
-  release_tag="v$release_tag"
-fi
-
-echo "$std_ver"
-echo "$release_tag"
-
 git push --follow-tags "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" master > /dev/null 2>&1;
 
 # build dist and component folders

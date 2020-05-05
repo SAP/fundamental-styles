@@ -110,4 +110,40 @@
 {%- endset %}
 {{ format(example) }}
 
+<h3>__zoom-icon</h3>
+{%- set example %}
+  {% for size in sizes %}
+    {{  avatar(
+            properties={
+                    icon: "money-bills",
+                    zoomIcon: true
+            },
+            modifier={
+                block: [size, "tile"]
+            },
+            aria={
+              role: "presentation"
+            }
+        )
+    }}
+  {%- endfor %}
+
+  {% for size in sizes %}
+    {{  avatar(
+            properties={
+                    icon: "money-bills",
+                    zoomIcon: true
+            },
+            modifier={
+                block: [size, "circle"]
+            },
+            aria={
+              role: "presentation"
+            }
+        )
+    }}
+  {%- endfor %}
+{%- endset %}
+{{ format(example) }}
+
 {% endblock %}

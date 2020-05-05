@@ -63,7 +63,7 @@ Items that contain additional items are called nodes, while items that do not co
                     </div>
                     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="j2lk3j">
                         <nav class="fd-menu">
-                            <ul class="fd-menu__list">
+                            <ul class="fd-menu__list fd-menu__list--no-shadow">
                                 <li class="fd-menu__item">
                                     <a href="#" class="fd-menu__link">
                                         <span class="fd-menu__title">Edit</span>
@@ -116,7 +116,7 @@ Items that contain additional items are called nodes, while items that do not co
                             </div>
                             <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="lklkj3">
                                 <nav class="fd-menu">
-                                    <ul class="fd-menu__list">
+                                    <ul class="fd-menu__list fd-menu__list--no-shadow">
                                         <li class="fd-menu__item">
                                             <a href="#" class="fd-menu__link">
                                                 <span class="fd-menu__title">Edit</span>
@@ -169,7 +169,7 @@ Items that contain additional items are called nodes, while items that do not co
                                     </div>
                                     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="asofjh3">
                                         <nav class="fd-menu">
-                                            <ul class="fd-menu__list">
+                                            <ul class="fd-menu__list fd-menu__list--no-shadow">
                                                 <li class="fd-menu__item">
                                                     <a href="#" class="fd-menu__link">
                                                         <span class="fd-menu__title">Edit</span>
@@ -221,7 +221,7 @@ Items that contain additional items are called nodes, while items that do not co
                                             </div>
                                             <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="iouh3">
                                                 <nav class="fd-menu">
-                                                    <ul class="fd-menu__list">
+                                                    <ul class="fd-menu__list fd-menu__list--no-shadow">
                                                         <li class="fd-menu__item">
                                                             <a href="#" class="fd-menu__link">
                                                                 <span class="fd-menu__title">Edit</span>
@@ -276,7 +276,7 @@ Items that contain additional items are called nodes, while items that do not co
                             </div>
                             <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="jk3333">
                                 <nav class="fd-menu">
-                                    <ul class="fd-menu__list">
+                                    <ul class="fd-menu__list fd-menu__list--no-shadow">
                                         <li class="fd-menu__item">
                                             <a href="#" class="fd-menu__link">
                                                 <span class="fd-menu__title">Edit</span>
@@ -331,7 +331,7 @@ Items that contain additional items are called nodes, while items that do not co
                     </div>
                     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="asdhjb3">
                         <nav class="fd-menu">
-                            <ul class="fd-menu__list">
+                            <ul class="fd-menu__list fd-menu__list--no-shadow">
                                 <li class="fd-menu__item">
                                     <a href="#" class="fd-menu__link">
                                         <span class="fd-menu__title">Edit</span>
@@ -382,7 +382,7 @@ Items that contain additional items are called nodes, while items that do not co
                             </div>
                             <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="hkjhkjh3">
                                 <nav class="fd-menu">
-                                    <ul class="fd-menu__list">
+                                    <ul class="fd-menu__list fd-menu__list--no-shadow">
                                         <li class="fd-menu__item">
                                             <a href="#" class="fd-menu__link">
                                                 <span class="fd-menu__title">Edit</span>
@@ -435,7 +435,7 @@ Items that contain additional items are called nodes, while items that do not co
                     </div>
                     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="ggiuhwer">
                         <nav class="fd-menu">
-                            <ul class="fd-menu__list">
+                            <ul class="fd-menu__list fd-menu__list--no-shadow">
                                 <li class="fd-menu__item">
                                     <a href="#" class="fd-menu__link">
                                         <span class="fd-menu__title">Edit</span>
