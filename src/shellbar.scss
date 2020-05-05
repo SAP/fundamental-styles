@@ -13,6 +13,7 @@ $block: #{$fd-namespace}-shellbar;
 
   // Paddings
   $fd-shellbar-item-spacing: 0.5rem !default;
+  $fd-shellbar-menu-button-padding: 1.937rem !default;
 
   // Heights
   $fd-shellbar-height: 2.75rem !default;
@@ -109,8 +110,13 @@ $block: #{$fd-namespace}-shellbar;
   }
 
   &__subtitle {
-    padding: 0 16px;
     font-size: var(--sapFontSmallSize);
+    margin-left: $fd-shellbar-item-spacing;
+
+    @include fd-rtl() {
+      margin-left: 0;
+      margin-right: $fd-shellbar-item-spacing;
+    }
 
     // Show only on desktop, hide on s
     @include fd-screen(s) {
@@ -131,13 +137,6 @@ $block: #{$fd-namespace}-shellbar;
   &__subtitle {
     display: inline-block;
     vertical-align: middle;
-    padding-right: 0;
-    padding-left: $fd-shellbar-item-spacing;
-
-    @include fd-rtl() {
-      padding-right: $fd-shellbar-item-spacing;
-      padding-left: 0;
-    }
   }
 
   &__title {
@@ -154,25 +153,18 @@ $block: #{$fd-namespace}-shellbar;
   &__logo {
     @include fd-reset();
 
-    padding-right: 0;
+    padding-left: 0;
+    margin-right: $fd-shellbar-item-spacing;
 
     @include fd-rtl() {
-      padding-left: 0;
+      padding-right: 0;
+      margin-right: 0;
+      margin-left: $fd-shellbar-item-spacing;
     }
 
     max-height: 2rem;
     background-repeat: no-repeat;
     background-size: contain;
-    // the logo inside the menu (show only on small screen)
-    @include fd-screen(m) {
-      display: inline-block;
-      margin-right: fd-space("tiny");
-
-      @include fd-rtl() {
-        margin-right: 0;
-        margin-left: fd-space("tiny");
-      }
-    }
 
     > * {
       line-height: 0;
@@ -339,6 +331,12 @@ $block: #{$fd-namespace}-shellbar;
     &:focus {
       background: $fd-shell-active-background;
       color: $fd-shell-active-text-color;
+    }
+  }
+
+  .#{$fd-namespace}-button.#{$fd-namespace}-button--menu.#{$block}__button--menu {
+    @media only screen and (max-width: 600px) {
+      padding: 0;
     }
   }
 }
