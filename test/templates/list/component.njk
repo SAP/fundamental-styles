@@ -30,7 +30,7 @@
 {%- endmacro %}
 
 {% macro list_item(item={}, toggles={}, modifier=[]) %}
-<li class="fd-list__item{{ modifier | modifier('list__item') }} {{ 'fd-list__item--link' if item.hasLink }} {{ 'fd-list__item--action' if item.isAction }} {{ 'is-selected' if item.selected }} {{ 'is-active' if item.active and item.isAction}} {{ 'is-hover' if item.hover and item.isAction}}">
+<li class="fd-list__item{{ modifier | modifier('list__item') }} {{ 'fd-list__item--link' if item.hasLink }} {{ 'fd-list__item--action' if item.isAction }}">
     {%- if toggles.link and not toggles.navIndicator %}
     	<a tabindex="0" class="fd-list__link {{ 'is-active' if item.active }} {{ 'is-hover' if item.hover }} {{ 'is-navigated' if item.navigated }}" href="#">
 	{%- endif %}
@@ -68,7 +68,7 @@
 
         {%- else %}
             {%- if toggles.isAction %}
-                <button class="fd-list__title">{{item.title}}</button>
+                <button class="fd-list__title {{ 'is-selected' if item.selected }} {{ 'is-active' if item.active and item.isAction}} {{ 'is-hover' if item.hover and item.isAction}}">{{item.title}}</button>
             {%- else %}
                 <span class="fd-list__title {{ 'fd-list__title--no-wrap' if toggles.noWrap }}">{{item.title}}</span>
             {%- endif %}
