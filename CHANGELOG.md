@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.40"></a>
+# [0.9.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.39...v0.9.0-rc.40) (2020-05-05)
+
+
+### Bug Fixes
+
+* add fix for the text overflow in Shellbar ([#968](https://github.com/SAP/fundamental-styles/issues/968)) ([ad41697](https://github.com/SAP/fundamental-styles/commit/ad41697))
+
+
+
 <a name="0.9.0-rc.39"></a>
 # [0.9.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.38...v0.9.0-rc.39) (2020-05-05)
 
