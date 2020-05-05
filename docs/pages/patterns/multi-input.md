@@ -64,7 +64,7 @@ If the entries are not validated by the application, users can also enter custom
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcX348a">
       <div class="fd-popover__body__no-overflow">
-        <ul class="fd-list fd-list--no-borderBot fd-list--multi-input">
+        <ul class="fd-list fd-list--multi-input">
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez611">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4ez611">
@@ -152,7 +152,7 @@ If the entries are not validated by the application, users can also enter custom
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcX34a">
       <div class="fd-popover__body__no-overflow">
-         <ul class="fd-list fd-list--no-borderBot fd-list--multi-input fd-list--compact">
+         <ul class="fd-list fd-list--multi-input fd-list--compact">
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai1ez611">
                 <label class="fd-checkbox__label fd-list__label" for="Ai1ez611">
@@ -357,7 +357,7 @@ In the example you can see how the `Multi Input` component looks without the `fd
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4HGFHX34a">
       <div class="fd-popover__body__no-overflow">
-         <ul class="fd-list fd-list--no-borderBot fd-list--multi-input">
+         <ul class="fd-list fd-list--multi-input">
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai124z651">
                 <label class="fd-checkbox__label fd-list__label" for="Ai124z651">
@@ -595,7 +595,7 @@ To add text in the `body` of the component, simply include your text in the `fd-
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcKJH8a">
       <div class="fd-popover__body__no-overflow">
-        <ul class="fd-list fd-list--no-borderBot fd-list--multi-input fd-list--has-message">
+        <ul class="fd-list fd-list--multi-input fd-list--has-message">
             <li class="fd-list__message fd-list__message--success">Success Message</li>
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="AGi4ez611">
