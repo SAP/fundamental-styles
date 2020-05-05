@@ -109,8 +109,13 @@ $block: #{$fd-namespace}-shellbar;
   }
 
   &__subtitle {
-    padding: 0 16px;
     font-size: var(--sapFontSmallSize);
+    margin-left: $fd-shellbar-item-spacing;
+
+    @include fd-rtl() {
+      margin-left: 0;
+      margin-right: $fd-shellbar-item-spacing;
+    }
 
     // Show only on desktop, hide on s
     @include fd-screen(s) {
@@ -131,13 +136,6 @@ $block: #{$fd-namespace}-shellbar;
   &__subtitle {
     display: inline-block;
     vertical-align: middle;
-    padding-right: 0;
-    padding-left: $fd-shellbar-item-spacing;
-
-    @include fd-rtl() {
-      padding-right: $fd-shellbar-item-spacing;
-      padding-left: 0;
-    }
   }
 
   &__title {
@@ -155,24 +153,17 @@ $block: #{$fd-namespace}-shellbar;
     @include fd-reset();
 
     padding-left: 0;
+    margin-right: $fd-shellbar-item-spacing;
 
     @include fd-rtl() {
       padding-right: 0;
+      margin-right: 0;
+      margin-left: $fd-shellbar-item-spacing;
     }
 
     max-height: 2rem;
     background-repeat: no-repeat;
     background-size: contain;
-    // the logo inside the menu (show only on small screen)
-    @include fd-screen(m) {
-      display: inline-block;
-      margin-right: fd-space("tiny");
-
-      @include fd-rtl() {
-        margin-right: 0;
-        margin-left: fd-space("tiny");
-      }
-    }
 
     > * {
       line-height: 0;
@@ -343,29 +334,8 @@ $block: #{$fd-namespace}-shellbar;
   }
 
   .#{$fd-namespace}-button.#{$fd-namespace}-button--menu.#{$block}__button--menu {
-    padding-right: 0;
-
-    @include fd-screen(s) {
-      margin-left: $fd-shellbar-item-spacing;
-    }
-
-    @include fd-screen(m) {
-      margin-left: 0;
-      padding-right: $fd-shellbar-menu-button-padding;
-    }
-
-    @include fd-rtl() {
-      padding-left: 0;
-
-      @include fd-screen(s) {
-        margin-right: $fd-shellbar-item-spacing;
-      }
-
-      @include fd-screen(m) {
-        margin-right: 0;
-        padding-right: 0;
-        padding-left: $fd-shellbar-menu-button-padding;
-      }
+    @media only screen and (max-width: 600px) {
+      padding: 0;
     }
   }
 }
