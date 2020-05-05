@@ -14,6 +14,7 @@ $block: #{$fd-namespace}-shellbar;
 
   // Paddings
   $fd-shellbar-item-spacing: 0.5rem !default;
+  $fd-shellbar-menu-button-padding: 1.937rem !default;
 
   // Heights
   $fd-shellbar-height: 2.75rem !default;
@@ -154,10 +155,10 @@ $block: #{$fd-namespace}-shellbar;
   &__logo {
     @include fd-reset();
 
-    padding-right: 0;
+    padding-left: 0;
 
     @include fd-rtl() {
-      padding-left: 0;
+      padding-right: 0;
     }
 
     max-height: 2rem;
@@ -344,8 +345,27 @@ $block: #{$fd-namespace}-shellbar;
   .#{$fd-namespace}-button.#{$fd-namespace}-button--menu.#{$block}__button--menu {
     padding-right: 0;
 
+    @include fd-screen(s) {
+      margin-left: $fd-shellbar-item-spacing;
+    }
+
     @include fd-screen(m) {
-      padding-right: 1.937rem;
+      margin-left: 0;
+      padding-right: $fd-shellbar-menu-button-padding;
+    }
+
+    @include fd-rtl() {
+      padding-left: 0;
+
+      @include fd-screen(s) {
+        margin-right: $fd-shellbar-item-spacing;
+      }
+
+      @include fd-screen(m) {
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: $fd-shellbar-menu-button-padding;
+      }
     }
   }
 }
