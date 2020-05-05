@@ -19,6 +19,10 @@ $block: #{$fd-namespace}-input;
   cursor: text;
   overflow: hidden;
 
+  &::-ms-clear {
+    display: none;
+  }
+
   &[aria-expanded="false"] {
     z-index: 0;
   }
