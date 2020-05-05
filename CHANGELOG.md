@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.38"></a>
+# [0.9.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.37...v0.9.0-rc.38) (2020-05-05)
+
+
+### Bug Fixes
+
+* add fix for Action Bar actions not taking the whole width ([#966](https://github.com/SAP/fundamental-styles/issues/966)) ([8d8d3d6](https://github.com/SAP/fundamental-styles/commit/8d8d3d6))
+
+
+
 <a name="0.9.0-rc.37"></a>
 # [0.9.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.36...v0.9.0-rc.37) (2020-05-05)
 
