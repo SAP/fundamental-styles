@@ -51,7 +51,6 @@ This component mostly relies on the CSS of other components and has very little 
 						<table class="fd-calendar__table" role="grid">
 						<thead class="fd-calendar__group">
 					        <tr class="fd-calendar__row">
-                                <th class="fd-calendar__item fd-calendar__item--side-helper"></th>
                                 <th class="fd-calendar__item fd-calendar__item--side-helper">
                                     <span class="fd-calendar__text" role="button">S</span>
                                 </th>
@@ -235,7 +234,6 @@ This component mostly relies on the CSS of other components and has very little 
 						<table class="fd-calendar__table" role="grid">
 	                    <thead class="fd-calendar__group">
 					        <tr class="fd-calendar__row">
-                                <th class="fd-calendar__item fd-calendar__item--side-helper"></th>
                                 <th class="fd-calendar__item fd-calendar__item--side-helper">
                                     <span class="fd-calendar__text" role="button">S</span>
                                 </th>
