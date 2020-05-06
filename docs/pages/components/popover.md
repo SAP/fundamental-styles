@@ -335,46 +335,12 @@ There are four placement options:
 ## Popover Control Examples
 Virtually any component can be used as a `fd-popover__control` to control the display of `fd-popover__body`
 {% capture default-popoverwmenu %}
-<div class="fd-popover">
-    <div class="fd-popover__control">
-        <a href="#" class="fd-link" aria-label="Image label" aria-controls="popoverB1" aria-expanded="false" aria-haspopup="true">
-            Link with a popover
-        </a>
-    </div>
-    <div class="fd-popover__body" aria-hidden="true" id="popoverB1">
-        <nav class="fd-menu" id="">
-            <ul class="fd-menu__list fd-menu__list--no-shadow">
-                <li class="fd-menu__item">
-                    <a class="fd-menu__link" href="#">
-                        <span class="fd-menu__title">Option 1</span>
-                    </a>
-                </li>
-                <li class="fd-menu__item">
-                    <a class="fd-menu__link" href="#">
-                        <span class="fd-menu__title">Option 2</span>
-                    </a>
-                </li>
-                <li class="fd-menu__item">
-                    <a class="fd-menu__link" href="#">
-                        <span class="fd-menu__title">Option 3</span>
-                    </a>
-                </li>
-                <li class="fd-menu__item">
-                    <a class="fd-menu__link" href="#">
-                        <span class="fd-menu__title">Option 4</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</div>
-
 <div class="fd-popover fd-popover--right">
     <div class="fd-popover__control">
         <span class=" fd-image--m fd-image--circle" aria-label="Image label" aria-controls="popoverB2" aria-expanded="false" aria-haspopup="true" aria-label="Image label"
 style="background-image: url('https://placeimg.com/400/400/nature');"></span>
     </div>
-    <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="popoverB2">
+    <div class="fd-popover__body fd-popover__body--left" aria-hidden="true" id="popoverB2">
         <nav class="fd-menu" id="">
             <ul class="fd-menu__list fd-menu__list--no-shadow">
                 <li class="fd-menu__item">
@@ -401,41 +367,6 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         </nav>
     </div>
 </div>
-
-<div class="fd-popover">
-    <div class="fd-popover__control">
-        <div class="fd-form-item fd-has-margin-none">
-            <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text" aria-label="Image label" aria-controls="popoverB3" aria-expanded="false" aria-haspopup="true">
-        </div>
-    </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB3">
-        <nav class="fd-menu" id="">
-            <ul class="fd-menu__list fd-menu__list--no-shadow">
-                <li class="fd-menu__item">
-                    <a class="fd-menu__link" href="#">
-                        <span class="fd-menu__title">Option 1</span>
-                    </a>
-                </li>
-                <li class="fd-menu__item">
-                    <a class="fd-menu__link" href="#">
-                        <span class="fd-menu__title">Option 2</span>
-                    </a>
-                </li>
-                <li class="fd-menu__item">
-                    <a class="fd-menu__link" href="#">
-                        <span class="fd-menu__title">Option 3</span>
-                    </a>
-                </li>
-                <li class="fd-menu__item">
-                    <a class="fd-menu__link" href="#">
-                        <span class="fd-menu__title">Option 4</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</div>
-
 
 <div class="fd-popover fd-popover--right">
     <div class="fd-popover__control">
