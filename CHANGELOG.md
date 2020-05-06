@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0-rc.51"></a>
+# [0.9.0-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.50...v0.9.0-rc.51) (2020-05-06)
+
+
+### Bug Fixes
+
+* overflow removed in order to show popover ([#977](https://github.com/SAP/fundamental-styles/issues/977)) ([a990093](https://github.com/SAP/fundamental-styles/commit/a990093))
+
+
+
 <a name="0.9.0-rc.50"></a>
 # [0.9.0-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.9.0-rc.49...v0.9.0-rc.50) (2020-05-06)
 
