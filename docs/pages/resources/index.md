@@ -24,4 +24,11 @@ summary:
             </h2>
         </div>
     </a>
+    <a class="fd-tile" role="button" href="{{site.baseurl}}/resources/Fundamental_Library_UI_Kit_V.0.9.0.zip">
+        <div class="fd-tile__content">
+            <h2 class="fd-tile__header">
+                Fundamental Library UI Kit Bundle
+            </h2>
+        </div>
+    </a>
 </div>

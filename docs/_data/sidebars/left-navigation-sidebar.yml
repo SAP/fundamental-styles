@@ -258,4 +258,8 @@ entries:
     - title: Fundamental Libraries
       url: /resources/fundamentals-libraries.html
       output: web
+
+    - title: Fundamental Library UI Kit Bundle
+      url: /resources/fundamentals-libraries.html
+      output: web
       
