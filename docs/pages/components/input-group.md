@@ -288,7 +288,8 @@ The Input Group supports **focus** state, it can be added by putting `.is-focus`
 {% include display-component.html component=focus %}
 
 ## Number input
-
+> **DEPRECATED**. Use the [Step Input]({{site.baseurl}}/../patterns/step-input.html) component.
+{: .docs-deprecated}
 For an integer value input, a spinner can be added allowing the user to increase or decrease the value.
 
 {% capture input-spinner %}
