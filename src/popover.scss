@@ -234,6 +234,10 @@ $block: #{$fd-namespace}-popover;
     }
   }
 
+  &__content-wrapper {
+    overflow: hidden;
+  }
+
   &--input-message-group {
     .#{$block}__body,
     .#{$block}__body--no-arrow,
