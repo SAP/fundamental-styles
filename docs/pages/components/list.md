@@ -166,19 +166,19 @@ If only a subset of the list items are navigable you should indicate those by di
 <ul class="fd-list" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
-      <span class="fd-list__secondary fd-has-color-status-1">Positive</span>
+      <span class="fd-list__secondary">A1</span>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 2</span>
-      <span class="fd-list__secondary fd-has-color-status-3">Negative</span>
+      <span class="fd-list__secondary">A2</span>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 3</span>
-      <span class="fd-list__secondary fd-has-color-status-1">Positive</span>
+      <span class="fd-list__secondary">A3</span>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 4</span>
-      <span class="fd-list__secondary fd-has-color-status-3">Negative</span>
+      <span class="fd-list__secondary">A4</span>
   </li>
 </ul>
 {% endcapture %}
