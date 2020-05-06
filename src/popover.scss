@@ -67,7 +67,7 @@ $block: #{$fd-namespace}-popover;
 
   &__wrapper {
     border-radius: $fd-popover-border-radius;
-    overflow: hidden;
+    overflow: auto;
   }
 
   &__body {
@@ -223,6 +223,11 @@ $block: #{$fd-namespace}-popover;
       width: max-content;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
+
+      .#{$block}__wrapper {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
 
       &-fill {
         display: block;
