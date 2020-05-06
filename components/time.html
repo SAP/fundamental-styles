@@ -27,7 +27,7 @@
 </script>
 <!-- End Google Tag Manager -->
 
-<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1585786472141199683">
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1588789968111984841">
 <link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -68,7 +68,7 @@
         <div class="docs-top-nav__support fd-has-float-right">
 
             <span class="fd-has-align-items-center fd-has-margin-right-small">
-                <span>v0.8.1</span>
+                <span>v0.9.0</span>
                 <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
                     <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
                         <title>GitHub</title>
@@ -294,16 +294,6 @@
             
             
             <li class="side-nav__links">
-                <a href="/fundamental-styles/patterns/search-input.html"
-                   class="side-nav__links-link">Search Input</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
                 <a href="/fundamental-styles/patterns/step-input.html"
                    class="side-nav__links-link">Step Input</a>
             </li>
@@ -352,6 +342,16 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/alert.html"
                    class="side-nav__links-link">Alert</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/avatar.html"
+                   class="side-nav__links-link">Avatar</a>
             </li>
             
             
@@ -440,8 +440,8 @@
             
             
             <li class="side-nav__links">
-                <a href="/fundamental-styles/components/identifier.html"
-                   class="side-nav__links-link">Identifier</a>
+                <a href="/fundamental-styles/components/icon.html"
+                   class="side-nav__links-link">Icon</a>
             </li>
             
             
@@ -450,8 +450,8 @@
             
             
             <li class="side-nav__links">
-                <a href="/fundamental-styles/components/icon.html"
-                   class="side-nav__links-link">Icon</a>
+                <a href="/fundamental-styles/components/identifier.html"
+                   class="side-nav__links-link">Identifier</a>
             </li>
             
             
@@ -560,6 +560,16 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/components/message-box.html"
+                   class="side-nav__links-link">Message Box</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/message-strip.html"
                    class="side-nav__links-link">Message Strip</a>
             </li>
@@ -570,8 +580,8 @@
             
             
             <li class="side-nav__links">
-                <a href="/fundamental-styles/components/message-box.html"
-                   class="side-nav__links-link">Message Box</a>
+                <a href="/fundamental-styles/components/message-toast.html"
+                   class="side-nav__links-link">Message Toast</a>
             </li>
             
             
@@ -773,6 +783,16 @@
             
             
             
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/resources/fundamentals-libraries.html"
+                   class="side-nav__links-link">Fundamental Library UI Kit Bundle</a>
+            </li>
+            
+            
+            
+            
         </ul>
         <hr class="side-nav__seperator">
     </li>
@@ -818,260 +838,1311 @@
   <p>Looking for Time Picker? From a style perspective, a time-picker is simply a composition of our existing time, input group and popover, but contains no new styles of its own. Therefore, we consider it a pattern. <a href="/fundamental-styles/patterns/time-picker">See the time picker pattern here</a>.</p>
 </blockquote>
 
+<h2 id="time-items">Time Items</h2>
+<p>These are classes used to describe slider items.</p>
+
+<div style="width: 100%;">
+    <table style="width: 100%;">
+        <tr>
+            <td><code style="white-space: nowrap;">.fd-time__item</code></td>
+            <td>Class used to style default time slider item</td>
+            <td>
+                <li class="fd-time__item">
+                    <span class="fd-time__unit">01</span>
+                </li>
+            </td>
+        </tr>
+        <tr>
+            <td><code style="white-space: nowrap;">.fd-time__item--collapsed</code></td>
+            <td>Class used to style collapsed time slider item</td>
+            <td>
+                <li class="fd-time__item fd-time__item--collapsed">
+                    <span class="fd-time__unit">01</span>
+                </li>
+            </td>
+        </tr>
+        <tr>
+            <td><code style="white-space: nowrap;">.fd-time__item--current</code></td>
+            <td>Class used to style current time slider item</td>
+            <td>
+                <li class="fd-time__item fd-time__item--current">
+                    <span class="fd-time__unit">01</span>
+                </li>
+            </td>
+        </tr>
+    </table>
+</div>
+
 <p><br /></p>
 
-<h2 id="with-values">With Values</h2>
+<h2 id="default-cozy-mode">Default Cozy Mode</h2>
+<p>Default cozy mode implemented mostly to be used mobile devices. There should be at most 1 active wrapper, marked with 
+<code class="highlighter-rouge">fd-time__wrapper--active</code> modifier. In those examples it’s hour or meridian. The rest of items should be marked as collapsed 
+<code class="highlighter-rouge">fd-time__item--collapsed</code>. Also meridian (AM/PM) wrapper has to contain <code class="highlighter-rouge">fd-time__wrapper--meridian</code> modifier.</p>
 
 <div class="fd-tile docs-component docs-component__">
     <div class="fd-tile__content">
 		
-<div class="fd-time">
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours" aria-controls="1610C873"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="hh" value="02" id="1610C873" aria-label="Hours" />
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours" aria-controls="1610C873"></button>
-      </div>
-  </div>
+<div class="docs-time-wrapper">
+    <div class="fd-time">
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Hrs</label>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+            <div class="fd-time__wrapper fd-time__wrapper--active">
+                <ul class="fd-time__list">
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">01</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">02</span>                    
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">03</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <div class="fd-time__current-indicator"></div>
+                        <span class="fd-time__unit">
+                            04
+                        </span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">05</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">06</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">07</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">08</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">09</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">10</span>
+                    </li>
+                </ul>
+            </div>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Min</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">25</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="fd-time">
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Hrs</label>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+            <div class="fd-time__wrapper fd-time__wrapper--active">
+               <ul class="fd-time__list">
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">01</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">02</span>                    
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">03</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <div class="fd-time__current-indicator"></div>
+                       <span class="fd-time__unit">
+                           04
+                       </span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">05</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">06</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">07</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">08</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">09</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">10</span>
+                   </li>
+               </ul>
+            </div>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Min</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">25</span>
+            </div>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Sec</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">10</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="fd-time">
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Hrs</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">04</span>
+            </div>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Min</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">25</span>
+            </div>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Sec</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">10</span>
+            </div>
+        </div>
+        <div class="fd-time__col fd-time__col--period">
+            <label class="fd-time__slider-label">AM/PM</label>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Change Meridian"></button>
+            <div class="fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian">
+                <ul class="fd-time__list">
+                    <span class="fd-time__item">
+                        <span class="fd-time__unit">
+                            AM
+                        </span>
+                        <div class="fd-time__current-indicator"></div>
+                    </span>
+                    <span class="fd-time__item">
+                        <span class="fd-time__unit">
+                            PM
+                        </span>
+                    </span>
+                </ul>
+            </div>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Change Meridian"></button>
+            </div>
+        </div>
+    </div>
 
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase minutes" aria-controls="DDlHR199"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="mm" value="34" id="DDlHR199" aria-label="Minutes" />
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease minutes" aria-controls="DDlHR199"></button>
-      </div>
-  </div>
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase seconds" aria-controls="8CAnL947"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="ss" value="56" id="8CAnL947" aria-label="Seconds" />
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease seconds" aria-controls="8CAnL947"></button>
-      </div>
-  </div>
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase period" aria-controls="sEWOL676"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="am" value="pm" id="sEWOL676" aria-label="Period" />
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease period" aria-controls="sEWOL676"></button>
-      </div>
-  </div>
 </div>
 
 	</div>
-</div>
+<p>&lt;/div&gt;</p>
 <div style="overflow-y: auto; max-height: 500px;">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-up-arrow"</span>
-          <span class="na">aria-label=</span><span class="s">"Increase hours"</span> <span class="na">aria-controls=</span><span class="s">"1610C873"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-time__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"hh"</span> <span class="na">value=</span><span class="s">"02"</span> <span class="na">id=</span><span class="s">"1610C873"</span> <span class="na">aria-label=</span><span class="s">"Hours"</span><span class="nt">/&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-down-arrow"</span>
-          <span class="na">aria-label=</span><span class="s">"Decrease hours"</span> <span class="na">aria-controls=</span><span class="s">"1610C873"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"docs-time-wrapper"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Hrs<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase hours"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper fd-time__wrapper--active"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-time__list"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>01<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>02<span class="nt">&lt;/span&gt;</span>                    
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>03<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__current-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>
+                            04
+                        <span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>05<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>06<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>07<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>08<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>09<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease hours"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Min<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Hrs<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase hours"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper fd-time__wrapper--active"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-time__list"</span><span class="nt">&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>01<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>02<span class="nt">&lt;/span&gt;</span>                    
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>03<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__current-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>
+                           04
+                       <span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>05<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>06<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>07<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>08<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>09<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+               <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease hours"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Min<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Sec<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Hrs<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>04<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Min<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Sec<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col fd-time__col--period"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>AM/PM<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Change Meridian"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-time__list"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>
+                            AM
+                        <span class="nt">&lt;/span&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__current-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                    <span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>
+                            PM
+                        <span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Change Meridian"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-up-arrow"</span>
-          <span class="na">aria-label=</span><span class="s">"Increase minutes"</span> <span class="na">aria-controls=</span><span class="s">"DDlHR199"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-time__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"mm"</span> <span class="na">value=</span><span class="s">"34"</span> <span class="na">id=</span><span class="s">"DDlHR199"</span> <span class="na">aria-label=</span><span class="s">"Minutes"</span><span class="nt">/&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-down-arrow"</span>
-          <span class="na">aria-label=</span><span class="s">"Decrease minutes"</span> <span class="na">aria-controls=</span><span class="s">"DDlHR199"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-up-arrow"</span>
-          <span class="na">aria-label=</span><span class="s">"Increase seconds"</span> <span class="na">aria-controls=</span><span class="s">"8CAnL947"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-time__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"ss"</span> <span class="na">value=</span><span class="s">"56"</span> <span class="na">id=</span><span class="s">"8CAnL947"</span> <span class="na">aria-label=</span><span class="s">"Seconds"</span><span class="nt">/&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-down-arrow"</span>
-          <span class="na">aria-label=</span><span class="s">"Decrease seconds"</span> <span class="na">aria-controls=</span><span class="s">"8CAnL947"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-up-arrow"</span>
-          <span class="na">aria-label=</span><span class="s">"Increase period"</span> <span class="na">aria-controls=</span><span class="s">"sEWOL676"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-time__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"am"</span> <span class="na">value=</span><span class="s">"pm"</span> <span class="na">id=</span><span class="s">"sEWOL676"</span> <span class="na">aria-label=</span><span class="s">"Period"</span><span class="nt">/&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-down-arrow"</span>
-          <span class="na">aria-label=</span><span class="s">"Decrease period"</span> <span class="na">aria-controls=</span><span class="s">"sEWOL676"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 </div>
 
-<h2 id="with-placeholder">With Placeholder</h2>
+<h2 id="tablet-mode">Tablet Mode</h2>
+<p>Tablet Mode can be added by using <code class="highlighter-rouge">fd-time--tablet</code> modifier. IT provides lower padding on sides.</p>
 
 <div class="fd-tile docs-component docs-component__">
     <div class="fd-tile__content">
 		
-<div class="fd-time">
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours" aria-controls="HgDLk176"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="hh" value="" id="HgDLk176" aria-label="Hours" />
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours" aria-controls="HgDLk176"></button>
-      </div>
-  </div>
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase minutes" aria-controls="CHeFH472"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="mm" value="" id="CHeFH472" aria-label="Minutes" />
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease minutes" aria-controls="CHeFH472"></button>
-      </div>
-  </div>
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase seconds" aria-controls="qMPpb855"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="ss" value="" id="qMPpb855" aria-label="Seconds" />
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease seconds" aria-controls="qMPpb855"></button>
-      </div>
-  </div>
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase period" aria-controls="VpUG6928"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="am" value="" id="VpUG6928" aria-label="Period" />
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease period" aria-controls="VpUG6928"></button>
-      </div>
-  </div>
+<div class="docs-time-wrapper">
+    <div class="fd-time fd-time--tablet">
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Hrs</label>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+            <div class="fd-time__wrapper fd-time__wrapper--active">
+                <ul class="fd-time__list">
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">01</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">02</span>                    
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">03</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <div class="fd-time__current-indicator"></div>
+                        <span class="fd-time__unit">
+                            04
+                        </span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">05</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">06</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">07</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">08</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">09</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">10</span>
+                    </li>
+                </ul>
+            </div>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Min</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">25</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="fd-time fd-time--tablet">
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Hrs</label>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+            <div class="fd-time__wrapper fd-time__wrapper--active">
+               <ul class="fd-time__list">
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">01</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">02</span>                    
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">03</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <div class="fd-time__current-indicator"></div>
+                       <span class="fd-time__unit">
+                           04
+                       </span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">05</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">06</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">07</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">08</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">09</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">10</span>
+                   </li>
+               </ul>
+            </div>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Min</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">25</span>
+            </div>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Sec</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">10</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="fd-time fd-time--tablet">
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Hrs</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">04</span>
+            </div>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Min</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">25</span>
+            </div>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Sec</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">10</span>
+            </div>
+        </div>
+        <div class="fd-time__col fd-time__col--period">
+            <label class="fd-time__slider-label">AM/PM</label>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Change Meridian"></button>
+            <div class="fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian">
+                    <ul class="fd-time__list">
+                        <span class="fd-time__item">
+                            <span class="fd-time__unit">
+                                AM
+                            </span>
+                            <div class="fd-time__current-indicator"></div>
+                        </span>
+                        <span class="fd-time__item">
+                            <span class="fd-time__unit">
+                                PM
+                            </span>
+                        </span>
+                    </ul>
+                </div>
+                <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Change Meridian"></button>
+            </div>
+        </div>
+    </div>
 </div>
 
 	</div>
-</div>
+<p>&lt;/div&gt;</p>
 <div style="overflow-y: auto; max-height: 500px;">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-up-arrow"</span>
-          <span class="na">aria-label=</span><span class="s">"Increase hours"</span> <span class="na">aria-controls=</span><span class="s">"HgDLk176"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-time__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"hh"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"HgDLk176"</span> <span class="na">aria-label=</span><span class="s">"Hours"</span><span class="nt">/&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-down-arrow"</span>
-          <span class="na">aria-label=</span><span class="s">"Decrease hours"</span> <span class="na">aria-controls=</span><span class="s">"HgDLk176"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-up-arrow"</span>
-          <span class="na">aria-label=</span><span class="s">"Increase minutes"</span> <span class="na">aria-controls=</span><span class="s">"CHeFH472"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-time__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"mm"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"CHeFH472"</span> <span class="na">aria-label=</span><span class="s">"Minutes"</span><span class="nt">/&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-down-arrow"</span>
-          <span class="na">aria-label=</span><span class="s">"Decrease minutes"</span> <span class="na">aria-controls=</span><span class="s">"CHeFH472"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-up-arrow"</span>
-          <span class="na">aria-label=</span><span class="s">"Increase seconds"</span> <span class="na">aria-controls=</span><span class="s">"qMPpb855"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-time__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"ss"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"qMPpb855"</span> <span class="na">aria-label=</span><span class="s">"Seconds"</span><span class="nt">/&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-down-arrow"</span>
-          <span class="na">aria-label=</span><span class="s">"Decrease seconds"</span> <span class="na">aria-controls=</span><span class="s">"qMPpb855"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-up-arrow"</span>
-          <span class="na">aria-label=</span><span class="s">"Increase period"</span> <span class="na">aria-controls=</span><span class="s">"VpUG6928"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-time__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"am"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"VpUG6928"</span> <span class="na">aria-label=</span><span class="s">"Period"</span><span class="nt">/&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-down-arrow"</span>
-          <span class="na">aria-label=</span><span class="s">"Decrease period"</span> <span class="na">aria-controls=</span><span class="s">"VpUG6928"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"docs-time-wrapper"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time fd-time--tablet"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Hrs<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase hours"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper fd-time__wrapper--active"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-time__list"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>01<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>02<span class="nt">&lt;/span&gt;</span>                    
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>03<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__current-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>
+                            04
+                        <span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>05<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>06<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>07<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>08<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>09<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease hours"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Min<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time fd-time--tablet"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Hrs<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase hours"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper fd-time__wrapper--active"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-time__list"</span><span class="nt">&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>01<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>02<span class="nt">&lt;/span&gt;</span>                    
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>03<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__current-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>
+                           04
+                       <span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>05<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>06<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>07<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>08<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>09<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+               <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease hours"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Min<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Sec<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time fd-time--tablet"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Hrs<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>04<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Min<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Sec<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col fd-time__col--period"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>AM/PM<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Change Meridian"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-time__list"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>
+                                AM
+                            <span class="nt">&lt;/span&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__current-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                        <span class="nt">&lt;/span&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>
+                                PM
+                            <span class="nt">&lt;/span&gt;</span>
+                        <span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/ul&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Change Meridian"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 </div>
 
-<h2 id="with-button-state">With Button State</h2>
-<p>Since the controls and inputs are standard components, they can take all states available to
-buttons and forms respectively, e.g., disabled, .is-error. In this case, the buttons are
-disabled when the first or last values are reached.</p>
+<h2 id="compact-mode">Compact Mode</h2>
+<p>Compact Mode can be added, by using <code class="highlighter-rouge">fd-time--compact</code> modifier. It’s mostly implemented, to be used on desktop devices.</p>
 
 <div class="fd-tile docs-component docs-component__">
     <div class="fd-tile__content">
 		
-<div class="fd-time">
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours" aria-controls="Rjap5115"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="hh" value="00" id="Rjap5115" aria-label="Hours" />
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow is-disabled" aria-label="Decrease hours" aria-controls="Rjap5115"></button>
-      </div>
-  </div>
-  <div class="fd-time__item">
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-up-arrow is-disabled" aria-label="Increase minutes" aria-controls="VnVPz732"></button>
-      </div>
-      <input class="fd-time__input fd-input" type="text" placeholder="mm" value="59" id="VnVPz732" aria-label="Minutes" />
-      <div class="fd-time__control">
-          <button class="fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease minutes" aria-controls="VnVPz732"></button>
-      </div>
-  </div>
+<div class="docs-time-wrapper"> 
+    <div class="fd-time fd-time--compact">
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Hrs</label>
+            <button class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+            <div class="fd-time__wrapper fd-time__wrapper--active">
+                <ul class="fd-time__list">
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">01</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">02</span>                    
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">03</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <div class="fd-time__current-indicator"></div>
+                        <span class="fd-time__unit">
+                            04
+                        </span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">05</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">06</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">07</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">08</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">09</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">10</span>
+                    </li>
+                </ul>
+            </div>
+            <button class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Min</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">25</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="fd-time fd-time--compact">
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Hrs</label>
+            <button class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+            <div class="fd-time__wrapper fd-time__wrapper--active">
+               <ul class="fd-time__list">
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">01</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">02</span>                    
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">03</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <div class="fd-time__current-indicator"></div>
+                       <span class="fd-time__unit">
+                           04
+                       </span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">05</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">06</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">07</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">08</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">09</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">10</span>
+                   </li>
+               </ul>
+            </div>
+            <button class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Min</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">25</span>
+            </div>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Sec</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">10</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="fd-time fd-time--compact">
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Hrs</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">04</span>
+            </div>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Min</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">25</span>
+            </div>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Sec</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">10</span>
+            </div>
+        </div>
+        <div class="fd-time__col fd-time__col--period">
+            <label class="fd-time__slider-label">AM/PM</label>
+            <button class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Change Meridian"></button>
+            <div class="fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian">
+                    <ul class="fd-time__list">
+                        <span class="fd-time__item">
+                            <span class="fd-time__unit">
+                                AM
+                            </span>
+                            <div class="fd-time__current-indicator"></div>
+                        </span>
+                        <span class="fd-time__item">
+                            <span class="fd-time__unit">
+                                PM
+                            </span>
+                        </span>
+                    </ul>
+                </div>
+                <button class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Change Meridian"></button>
+            </div>
+        </div>
+    </div>
 </div>
 
 	</div>
-</div>
+<p>&lt;/div&gt;</p>
 <div style="overflow-y: auto; max-height: 500px;">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-up-arrow"</span>
-          <span class="na">aria-label=</span><span class="s">"Increase hours"</span> <span class="na">aria-controls=</span><span class="s">"Rjap5115"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-time__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"hh"</span> <span class="na">value=</span><span class="s">"00"</span> <span class="na">id=</span><span class="s">"Rjap5115"</span> <span class="na">aria-label=</span><span class="s">"Hours"</span><span class="nt">/&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-down-arrow is-disabled"</span>
-          <span class="na">aria-label=</span><span class="s">"Decrease hours"</span> <span class="na">aria-controls=</span><span class="s">"Rjap5115"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-up-arrow is-disabled"</span>
-          <span class="na">aria-label=</span><span class="s">"Increase minutes"</span> <span class="na">aria-controls=</span><span class="s">"VnVPz732"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"fd-time__input fd-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"mm"</span> <span class="na">value=</span><span class="s">"59"</span> <span class="na">id=</span><span class="s">"VnVPz732"</span> <span class="na">aria-label=</span><span class="s">"Minutes"</span><span class="nt">/&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__control"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent sap-icon--navigation-down-arrow"</span>
-          <span class="na">aria-label=</span><span class="s">"Decrease minutes"</span> <span class="na">aria-controls=</span><span class="s">"VnVPz732"</span><span class="nt">&gt;&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"docs-time-wrapper"</span><span class="nt">&gt;</span> 
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time fd-time--compact"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Hrs<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase hours"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper fd-time__wrapper--active"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-time__list"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>01<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>02<span class="nt">&lt;/span&gt;</span>                    
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>03<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__current-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>
+                            04
+                        <span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>05<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>06<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>07<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>08<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>09<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease hours"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Min<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time fd-time--compact"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Hrs<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase hours"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper fd-time__wrapper--active"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-time__list"</span><span class="nt">&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>01<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>02<span class="nt">&lt;/span&gt;</span>                    
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>03<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__current-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>
+                           04
+                       <span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>05<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>06<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>07<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>08<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>09<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+               <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease hours"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Min<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Sec<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time fd-time--compact"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Hrs<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>04<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Min<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Sec<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col fd-time__col--period"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>AM/PM<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Change Meridian"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-time__list"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>
+                                AM
+                            <span class="nt">&lt;/span&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__current-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                        <span class="nt">&lt;/span&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>
+                                PM
+                            <span class="nt">&lt;/span&gt;</span>
+                        <span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/ul&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Change Meridian"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+</div>
+
+<h2 id="scrollable-mode">Scrollable Mode</h2>
+<p>Scrollable Mode can be added by using <code class="highlighter-rouge">fd-time--scrollable</code> modifier. It provides possibility to scroll up and down on 
+active columns. So the unit can be chosen by mouse scroll or mobile tap and release. Current indicator element is vertically centered, 
+but functionality to fit it inside indicator frames should be implemented no application level.</p>
+
+<div class="fd-tile docs-component docs-component__">
+    <div class="fd-tile__content">
+		
+<div class="docs-time-wrapper">
+    <div class="fd-time fd-time--scrollable">
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Hrs</label>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+            <div class="fd-time__wrapper fd-time__wrapper--active">
+                <ul class="fd-time__list">
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">01</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">02</span>                    
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">03</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <div class="fd-time__current-indicator"></div>
+                        <span class="fd-time__unit">
+                            04
+                        </span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">05</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">06</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">07</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">08</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">09</span>
+                    </li>
+                    <li class="fd-time__item">
+                        <span class="fd-time__unit">10</span>
+                    </li>
+                </ul>
+            </div>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Min</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">25</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="fd-time fd-time--scrollable">
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Hrs</label>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+            <div class="fd-time__wrapper fd-time__wrapper--active">
+               <ul class="fd-time__list">
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">01</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">02</span>                    
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">03</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <div class="fd-time__current-indicator"></div>
+                       <span class="fd-time__unit">
+                           04
+                       </span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">05</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">06</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">07</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">08</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">09</span>
+                   </li>
+                   <li class="fd-time__item">
+                       <span class="fd-time__unit">10</span>
+                   </li>
+               </ul>
+            </div>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Min</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">25</span>
+            </div>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Sec</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">10</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="fd-time fd-time--scrollable">
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Hrs</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">04</span>
+            </div>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Min</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">25</span>
+            </div>
+        </div>
+        <div class="fd-time__col">
+            <label class="fd-time__slider-label">Sec</label>
+            <div class="fd-time__wrapper">
+                <span class="fd-time__item fd-time__item--collapsed">10</span>
+            </div>
+        </div>
+        <div class="fd-time__col fd-time__col--period">
+            <label class="fd-time__slider-label">AM/PM</label>
+            <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Change Meridian"></button>
+            <div class="fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian">
+                    <ul class="fd-time__list">
+                        <span class="fd-time__item">
+                            <span class="fd-time__unit">
+                                AM
+                            </span>
+                            <div class="fd-time__current-indicator"></div>
+                        </span>
+                        <span class="fd-time__item">
+                            <span class="fd-time__unit">
+                                PM
+                            </span>
+                        </span>
+                    </ul>
+                </div>
+                <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Change Meridian"></button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+	</div>
+<p>&lt;/div&gt;</p>
+<div style="overflow-y: auto; max-height: 500px;">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"docs-time-wrapper"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time fd-time--scrollable"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Hrs<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase hours"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper fd-time__wrapper--active"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-time__list"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>01<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>02<span class="nt">&lt;/span&gt;</span>                    
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>03<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__current-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>
+                            04
+                        <span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>05<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>06<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>07<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>08<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>09<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease hours"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Min<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time fd-time--scrollable"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Hrs<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Increase hours"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper fd-time__wrapper--active"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-time__list"</span><span class="nt">&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>01<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>02<span class="nt">&lt;/span&gt;</span>                    
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>03<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__current-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>
+                           04
+                       <span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>05<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>06<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>07<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>08<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>09<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+                   <span class="nt">&lt;/li&gt;</span>
+               <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Decrease hours"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Min<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Sec<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time fd-time--scrollable"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Hrs<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>04<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Min<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>Sec<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item fd-time__item--collapsed"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__col fd-time__col--period"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-time__slider-label"</span><span class="nt">&gt;</span>AM/PM<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow"</span> <span class="na">aria-label=</span><span class="s">"Change Meridian"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-time__list"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>
+                                AM
+                            <span class="nt">&lt;/span&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-time__current-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                        <span class="nt">&lt;/span&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__item"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-time__unit"</span><span class="nt">&gt;</span>
+                                PM
+                            <span class="nt">&lt;/span&gt;</span>
+                        <span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/ul&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow"</span> <span class="na">aria-label=</span><span class="s">"Change Meridian"</span><span class="nt">&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 </div>

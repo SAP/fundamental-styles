@@ -27,7 +27,7 @@
 </script>
 <!-- End Google Tag Manager -->
 
-<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1585786472141199683">
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1588789968111984841">
 <link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -68,7 +68,7 @@
         <div class="docs-top-nav__support fd-has-float-right">
 
             <span class="fd-has-align-items-center fd-has-margin-right-small">
-                <span>v0.8.1</span>
+                <span>v0.9.0</span>
                 <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
                     <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
                         <title>GitHub</title>
@@ -294,16 +294,6 @@
             
             
             <li class="side-nav__links">
-                <a href="/fundamental-styles/patterns/search-input.html"
-                   class="side-nav__links-link">Search Input</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
                 <a href="/fundamental-styles/patterns/step-input.html"
                    class="side-nav__links-link">Step Input</a>
             </li>
@@ -352,6 +342,16 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/alert.html"
                    class="side-nav__links-link">Alert</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/avatar.html"
+                   class="side-nav__links-link">Avatar</a>
             </li>
             
             
@@ -440,8 +440,8 @@
             
             
             <li class="side-nav__links">
-                <a href="/fundamental-styles/components/identifier.html"
-                   class="side-nav__links-link">Identifier</a>
+                <a href="/fundamental-styles/components/icon.html"
+                   class="side-nav__links-link">Icon</a>
             </li>
             
             
@@ -450,8 +450,8 @@
             
             
             <li class="side-nav__links">
-                <a href="/fundamental-styles/components/icon.html"
-                   class="side-nav__links-link">Icon</a>
+                <a href="/fundamental-styles/components/identifier.html"
+                   class="side-nav__links-link">Identifier</a>
             </li>
             
             
@@ -560,6 +560,16 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/components/message-box.html"
+                   class="side-nav__links-link">Message Box</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/message-strip.html"
                    class="side-nav__links-link">Message Strip</a>
             </li>
@@ -570,8 +580,8 @@
             
             
             <li class="side-nav__links">
-                <a href="/fundamental-styles/components/message-box.html"
-                   class="side-nav__links-link">Message Box</a>
+                <a href="/fundamental-styles/components/message-toast.html"
+                   class="side-nav__links-link">Message Toast</a>
             </li>
             
             
@@ -773,6 +783,16 @@
             
             
             
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/resources/fundamentals-libraries.html"
+                   class="side-nav__links-link">Fundamental Library UI Kit Bundle</a>
+            </li>
+            
+            
+            
+            
         </ul>
         <hr class="side-nav__seperator">
     </li>
@@ -836,8 +856,7 @@
   <li><code class="highlighter-rouge">.fd-shellbar__action</code> (required) container for each product action and link.</li>
   <li><code class="highlighter-rouge">.fd-shellbar__action--mobile</code> (optional) for product actions only visible on mobile screens.</li>
   <li><code class="highlighter-rouge">.fd-shellbar__action--desktop</code> (optional) for product actions only visible on desktop screens.</li>
-  <li><code class="highlighter-rouge">.fd-search-input</code> (optional) for searching the product.</li>
-  <li><code class="highlighter-rouge">.fd-identifier</code> (required) for user settings and application meta links such as Sign Out. <a href="/fundamental-styles/foundation/colors.html#accent">Accent colors between 11-15</a> can be randomly assigned to the background.</li>
+  <li><code class="highlighter-rouge">.fd-avatar</code> (required) for user settings and application meta links such as Sign Out. <a href="/fundamental-styles/foundation/colors.html#accent">Accent colors between 11-15</a> can be randomly assigned to the background.</li>
   <li><code class="highlighter-rouge">.fd-product-switch</code> (optional) for navigating between products.</li>
 </ul>
 
@@ -860,12 +879,12 @@
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
           <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="WV3AY276" aria-expanded="false" aria-haspopup="true" role="button">
-            <span class="fd-identifier fd-identifier--xs fd-identifier--circle">WW</span>
+            <span class="fd-avatar fd-avatar--xs fd-avatar--circle">WW</span>
           </div>
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="WV3AY276">
           <nav class="fd-menu">
-            <ul class="fd-menu__list">
+            <ul class="fd-menu__list fd-menu__list--no-shadow">
               <li class="fd-menu__item">
                 <a role="button" class="fd-menu__link">
                   <span class="fd-menu__title">Settings</span>
@@ -898,12 +917,12 @@
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover fd-popover--right"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button fd-shellbar__button fd-user-menu__control"</span> <span class="na">aria-controls=</span><span class="s">"WV3AY276"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-identifier fd-identifier--xs fd-identifier--circle"</span><span class="nt">&gt;</span>WW<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-avatar fd-avatar--xs fd-avatar--circle"</span><span class="nt">&gt;</span>WW<span class="nt">&lt;/span&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"WV3AY276"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"fd-menu"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list fd-menu__list--no-shadow"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__link"</span><span class="nt">&gt;</span>
                   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-menu__title"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/span&gt;</span>
@@ -944,7 +963,7 @@
       </div>
       <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="9GLB26941">
         <nav class="fd-menu">
-          <ul class="fd-menu__list">
+          <ul class="fd-menu__list fd-menu__list--no-shadow">
             <li class="fd-menu__item">
               <a role="button" class="fd-menu__link">
                 <span class="fd-menu__title">Application A</span>
@@ -991,12 +1010,12 @@
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
           <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="ZY3AY276" aria-expanded="false" aria-haspopup="true" role="button">
-            <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" aria-label="William Wallingham">WW</span>
+            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" aria-label="William Wallingham">WW</span>
           </div>
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="ZY3AY276">
           <nav class="fd-menu">
-            <ul class="fd-menu__list">
+            <ul class="fd-menu__list fd-menu__list--no-shadow">
               <li class="fd-menu__item">
                 <a role="button" class="fd-menu__link">
                   <span class="fd-menu__title">Settings</span>
@@ -1032,7 +1051,7 @@
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"9GLB26941"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"fd-menu"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list fd-menu__list--no-shadow"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__link"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-menu__title"</span><span class="nt">&gt;</span>Application A<span class="nt">&lt;/span&gt;</span>
@@ -1079,12 +1098,12 @@
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover fd-popover--right"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button fd-shellbar__button fd-user-menu__control"</span> <span class="na">aria-controls=</span><span class="s">"ZY3AY276"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail"</span> <span class="na">style=</span><span class="s">"background-image: url('https://placeimg.com/400/400/nature');"</span> <span class="na">aria-label=</span><span class="s">"William Wallingham"</span><span class="nt">&gt;</span>WW<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"</span> <span class="na">style=</span><span class="s">"background-image: url('https://placeimg.com/400/400/nature');"</span> <span class="na">aria-label=</span><span class="s">"William Wallingham"</span><span class="nt">&gt;</span>WW<span class="nt">&lt;/span&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"ZY3AY276"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"fd-menu"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list fd-menu__list--no-shadow"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__link"</span><span class="nt">&gt;</span>
                   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-menu__title"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/span&gt;</span>
@@ -1151,7 +1170,7 @@
             </div>
             <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="CWaGX278">
               <nav class="fd-menu">
-                <ul class="fd-menu__list">
+                <ul class="fd-menu__list fd-menu__list--no-shadow">
                   <li class="fd-menu__item">
                     <a role="button" class="fd-menu__link">
                       <span class="fd-menu__title">Search</span>
@@ -1177,12 +1196,12 @@
         <div class="fd-popover fd-popover--right">
           <div class="fd-popover__control">
             <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="DD35G276" aria-expanded="false" aria-haspopup="true" role="button">
-              <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-shellbar__identifier--circle">WW</span>
+              <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatarier--circle">WW</span>
             </div>
           </div>
           <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="DD35G276">
             <nav class="fd-menu">
-              <ul class="fd-menu__list">
+              <ul class="fd-menu__list fd-menu__list--no-shadow">
                 <li class="fd-menu__item">
                   <a role="button" class="fd-menu__link">
                     <span class="fd-menu__title">Settings</span>
@@ -1245,7 +1264,7 @@
             <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"CWaGX278"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"fd-menu"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list fd-menu__list--no-shadow"</span><span class="nt">&gt;</span>
                   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__link"</span><span class="nt">&gt;</span>
                       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-menu__title"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/span&gt;</span>
@@ -1271,12 +1290,12 @@
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover fd-popover--right"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button fd-shellbar__button fd-user-menu__control"</span> <span class="na">aria-controls=</span><span class="s">"DD35G276"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-identifier fd-identifier--xs fd-identifier--circle fd-shellbar__identifier--circle"</span><span class="nt">&gt;</span>WW<span class="nt">&lt;/span&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatarier--circle"</span><span class="nt">&gt;</span>WW<span class="nt">&lt;/span&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"DD35G276"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"fd-menu"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list fd-menu__list--no-shadow"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>
                   <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__link"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-menu__title"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/span&gt;</span>
@@ -1310,7 +1329,7 @@ For more information about the Product Switch, see <a href="product-switch.html"
 <div class="fd-shellbar">
   <div class="fd-shellbar__group fd-shellbar__group--product">
     <span class="fd-shellbar__logo">
-      <svg style="height: 32px;" width="286" height="143" viewBox="0 0 286 143" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="-91.234%" y1="50%" x2="98.574%" y2="50%" id="a"><stop stop-color="#32B79D" stop-opacity=".59" offset="0%" /><stop stop-color="#33EAFF" stop-opacity=".59" offset="35.525%" /><stop stop-color="#7FCAFF" stop-opacity=".59" offset="73.603%" /><stop stop-color="#84A2FF" stop-opacity=".59" offset="100%" /></linearGradient></defs><g transform="translate(-19)" fill="url(#a)" fill-rule="evenodd"><path d="M114.232.963h190.464c0 16.966-13.754 30.72-30.72 30.72H83.512c0-16.966 13.754-30.72 30.72-30.72zM80.44 56.259h116.736c0 16.966-13.754 30.72-30.72 30.72H49.72c0-16.966 13.754-30.72 30.72-30.72zM49.72 111.555h18.432c0 16.966-13.754 30.72-30.72 30.72H19c0-16.966 13.754-30.72 30.72-30.72z" /></g></svg>
+      <svg style="height: 32px; width: 64px" width="286" height="143" viewBox="0 0 286 143" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="-91.234%" y1="50%" x2="98.574%" y2="50%" id="a"><stop stop-color="#32B79D" stop-opacity=".59" offset="0%" /><stop stop-color="#33EAFF" stop-opacity=".59" offset="35.525%" /><stop stop-color="#7FCAFF" stop-opacity=".59" offset="73.603%" /><stop stop-color="#84A2FF" stop-opacity=".59" offset="100%" /></linearGradient></defs><g transform="translate(-19)" fill="url(#a)" fill-rule="evenodd"><path d="M114.232.963h190.464c0 16.966-13.754 30.72-30.72 30.72H83.512c0-16.966 13.754-30.72 30.72-30.72zM80.44 56.259h116.736c0 16.966-13.754 30.72-30.72 30.72H49.72c0-16.966 13.754-30.72 30.72-30.72zM49.72 111.555h18.432c0 16.966-13.754 30.72-30.72 30.72H19c0-16.966 13.754-30.72 30.72-30.72z" /></g></svg>
     </span>
     <span class="fd-shellbar__title">Corporate Portal</span>
   </div>
@@ -1322,12 +1341,12 @@ For more information about the Product Switch, see <a href="product-switch.html"
         <div class="fd-popover fd-popover--right">
           <div class="fd-popover__control">
             <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="MKFAY276" aria-expanded="false" aria-haspopup="true" role="button">
-              <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" aria-label="William Wallingham">WW</span>
+              <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" aria-label="William Wallingham">WW</span>
             </div>
           </div>
           <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="MKFAY276">
             <nav class="fd-menu">
-              <ul class="fd-menu__list">
+              <ul class="fd-menu__list fd-menu__list--no-shadow">
                 <li class="fd-menu__item">
                   <a role="button" class="fd-menu__link">
                     <span class="fd-menu__title">Settings</span>
@@ -1461,7 +1480,7 @@ For more information about the Product Switch, see <a href="product-switch.html"
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shellbar__group fd-shellbar__group--product"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-shellbar__logo"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;svg</span> <span class="na">style=</span><span class="s">"height: 32px;"</span> <span class="na">width=</span><span class="s">"286"</span> <span class="na">height=</span><span class="s">"143"</span> <span class="na">viewBox=</span><span class="s">"0 0 286 143"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span><span class="nt">&gt;&lt;defs&gt;&lt;linearGradient</span> <span class="na">x1=</span><span class="s">"-91.234%"</span> <span class="na">y1=</span><span class="s">"50%"</span> <span class="na">x2=</span><span class="s">"98.574%"</span> <span class="na">y2=</span><span class="s">"50%"</span> <span class="na">id=</span><span class="s">"a"</span><span class="nt">&gt;&lt;stop</span> <span class="na">stop-color=</span><span class="s">"#32B79D"</span> <span class="na">stop-opacity=</span><span class="s">".59"</span> <span class="na">offset=</span><span class="s">"0%"</span><span class="nt">/&gt;&lt;stop</span> <span class="na">stop-color=</span><span class="s">"#33EAFF"</span> <span class="na">stop-opacity=</span><span class="s">".59"</span> <span class="na">offset=</span><span class="s">"35.525%"</span><span class="nt">/&gt;&lt;stop</span> <span class="na">stop-color=</span><span class="s">"#7FCAFF"</span> <span class="na">stop-opacity=</span><span class="s">".59"</span> <span class="na">offset=</span><span class="s">"73.603%"</span><span class="nt">/&gt;&lt;stop</span> <span class="na">stop-color=</span><span class="s">"#84A2FF"</span> <span class="na">stop-opacity=</span><span class="s">".59"</span> <span class="na">offset=</span><span class="s">"100%"</span><span class="nt">/&gt;&lt;/linearGradient&gt;&lt;/defs&gt;&lt;g</span> <span class="na">transform=</span><span class="s">"translate(-19)"</span> <span class="na">fill=</span><span class="s">"url(#a)"</span> <span class="na">fill-rule=</span><span class="s">"evenodd"</span><span class="nt">&gt;&lt;path</span> <span class="na">d=</span><span class="s">"M114.232.963h190.464c0 16.966-13.754 30.72-30.72 30.72H83.512c0-16.966 13.754-30.72 30.72-30.72zM80.44 56.259h116.736c0 16.966-13.754 30.72-30.72 30.72H49.72c0-16.966 13.754-30.72 30.72-30.72zM49.72 111.555h18.432c0 16.966-13.754 30.72-30.72 30.72H19c0-16.966 13.754-30.72 30.72-30.72z"</span><span class="nt">/&gt;&lt;/g&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;svg</span> <span class="na">style=</span><span class="s">"height: 32px; width: 64px"</span> <span class="na">width=</span><span class="s">"286"</span> <span class="na">height=</span><span class="s">"143"</span> <span class="na">viewBox=</span><span class="s">"0 0 286 143"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span><span class="nt">&gt;&lt;defs&gt;&lt;linearGradient</span> <span class="na">x1=</span><span class="s">"-91.234%"</span> <span class="na">y1=</span><span class="s">"50%"</span> <span class="na">x2=</span><span class="s">"98.574%"</span> <span class="na">y2=</span><span class="s">"50%"</span> <span class="na">id=</span><span class="s">"a"</span><span class="nt">&gt;&lt;stop</span> <span class="na">stop-color=</span><span class="s">"#32B79D"</span> <span class="na">stop-opacity=</span><span class="s">".59"</span> <span class="na">offset=</span><span class="s">"0%"</span><span class="nt">/&gt;&lt;stop</span> <span class="na">stop-color=</span><span class="s">"#33EAFF"</span> <span class="na">stop-opacity=</span><span class="s">".59"</span> <span class="na">offset=</span><span class="s">"35.525%"</span><span class="nt">/&gt;&lt;stop</span> <span class="na">stop-color=</span><span class="s">"#7FCAFF"</span> <span class="na">stop-opacity=</span><span class="s">".59"</span> <span class="na">offset=</span><span class="s">"73.603%"</span><span class="nt">/&gt;&lt;stop</span> <span class="na">stop-color=</span><span class="s">"#84A2FF"</span> <span class="na">stop-opacity=</span><span class="s">".59"</span> <span class="na">offset=</span><span class="s">"100%"</span><span class="nt">/&gt;&lt;/linearGradient&gt;&lt;/defs&gt;&lt;g</span> <span class="na">transform=</span><span class="s">"translate(-19)"</span> <span class="na">fill=</span><span class="s">"url(#a)"</span> <span class="na">fill-rule=</span><span class="s">"evenodd"</span><span class="nt">&gt;&lt;path</span> <span class="na">d=</span><span class="s">"M114.232.963h190.464c0 16.966-13.754 30.72-30.72 30.72H83.512c0-16.966 13.754-30.72 30.72-30.72zM80.44 56.259h116.736c0 16.966-13.754 30.72-30.72 30.72H49.72c0-16.966 13.754-30.72 30.72-30.72zM49.72 111.555h18.432c0 16.966-13.754 30.72-30.72 30.72H19c0-16.966 13.754-30.72 30.72-30.72z"</span><span class="nt">/&gt;&lt;/g&gt;&lt;/svg&gt;</span>
     <span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-shellbar__title"</span><span class="nt">&gt;</span>Corporate Portal<span class="nt">&lt;/span&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -1473,12 +1492,12 @@ For more information about the Product Switch, see <a href="product-switch.html"
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover fd-popover--right"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-button fd-shellbar__button fd-user-menu__control"</span> <span class="na">aria-controls=</span><span class="s">"MKFAY276"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail"</span> <span class="na">style=</span><span class="s">"background-image: url('https://placeimg.com/400/400/nature');"</span> <span class="na">aria-label=</span><span class="s">"William Wallingham"</span><span class="nt">&gt;</span>WW<span class="nt">&lt;/span&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"</span> <span class="na">style=</span><span class="s">"background-image: url('https://placeimg.com/400/400/nature');"</span> <span class="na">aria-label=</span><span class="s">"William Wallingham"</span><span class="nt">&gt;</span>WW<span class="nt">&lt;/span&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"MKFAY276"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"fd-menu"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"fd-menu__list fd-menu__list--no-shadow"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"fd-menu__item"</span><span class="nt">&gt;</span>
                   <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"fd-menu__link"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-menu__title"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/span&gt;</span>

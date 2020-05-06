@@ -37,6 +37,17 @@
 
 
 {
+"title": "Avatar",
+"tags": "",
+"keywords": "icon, avatar, identifier, image",
+"url": "/components/avatar.html",
+"folder": "components"
+}
+,
+
+
+
+{
 "title": "Bar",
 "tags": "",
 "keywords": "bar, header, subheader, footer, floating-footer",
@@ -168,8 +179,6 @@
 
 
 
-
-
 {
 "title": "Forms",
 "tags": "",
@@ -178,8 +187,6 @@
 "folder": "components"
 }
 ,
-
-
 
 
 
@@ -243,7 +250,7 @@
 {
 "title": "Image",
 "tags": "",
-"keywords": "image",
+"keywords": "",
 "url": "/components/image.html",
 "folder": "components"
 }
@@ -285,17 +292,6 @@
 
 
 {
-"title": "Demo Pages",
-"tags": "",
-"keywords": "demo page",
-"url": "/demo-pages/index.html",
-"folder": "demo-pages"
-}
-,
-
-
-
-{
 "title": "Resources",
 "tags": "",
 "keywords": "guide, guides, resources,",
@@ -303,8 +299,6 @@
 "folder": "resources"
 }
 ,
-
-
 
 
 
@@ -452,6 +446,17 @@
 
 
 {
+"title": "Message Toast",
+"tags": "",
+"keywords": "message message-toast",
+"url": "/components/message-toast.html",
+"folder": "components"
+}
+,
+
+
+
+{
 "title": "Multi Input",
 "tags": "",
 "keywords": "multi input",
@@ -459,10 +464,6 @@
 "folder": "patterns"
 }
 ,
-
-
-
-
 
 
 
@@ -554,17 +555,6 @@
 
 
 
-{
-"title": "Search Input",
-"tags": "",
-"keywords": "search input",
-"url": "/patterns/search-input.html",
-"folder": "patterns"
-}
-,
-
-
-
 
 
 {
@@ -600,8 +590,6 @@
 
 
 
-
-
 {
 "title": "Shellbar",
 "tags": "",
@@ -621,8 +609,6 @@
 "folder": "components"
 }
 ,
-
-
 
 
 
@@ -659,8 +645,6 @@
 
 
 
-
-
 {
 "title": "Table",
 "tags": "",
@@ -694,8 +678,6 @@
 
 
 
-
-
 {
 "title": "Time Picker",
 "tags": "",
@@ -726,8 +708,6 @@
 "folder": "components"
 }
 ,
-
-
 
 
 
