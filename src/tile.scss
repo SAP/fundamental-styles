@@ -2,96 +2,100 @@
 @import "./mixins";
 @import "./functions";
 
-/*!
-.fd-tile+()
-        .fd-tile__media+()
-        .fd-tile__content+()
-        .fd-tile__title+()
-        .fd-tile__actions+()
-*/
 $block: #{$fd-namespace}-tile;
 
-.#{$block} {
-  // VARS
-  color: var(--sapTile_TextColor);
-  background-color: var(--sapTile_Background);
-  $fd-tile-content-padding: fd-space(4) fd-space("reg") !default;
-  $fd-tile-content-padding-x: fd-space("small") !default;
-  $fd-tile-content-padding-y: fd-space(2) + 2px !default;
-  // anim
-  $fd-tile-transition-params: $fd-animation-speed ease-in !default;
+// DEFAULT (LARGE) TILE
+$fd-tile-height: 11rem !default;
+$fd-tile-width: 11rem !default;
+$fd-tile-double-width: 22.5rem !default;
 
+// SMALL TILE
+$fd-tile-small-height: 9.25rem !default;
+$fd-tile-small-width: 9.25rem !default;
+$fd-tile-small-double-width: 19rem !default;
+
+// PADDINGS
+$fd-tile-padding: 1rem !default;
+$fd-tile-small-padding: 0.5rem !default;
+$fd-tile-inner-padding: 0.25rem !default;
+
+// MIXINS
+@mixin two-col-sections {
+  display: flex;
+  justify-content: space-between;
+}
+
+.#{$block} {
   @include fd-reset();
 
-  display: flex;
-
-  &__text {
-    @include fd-reset();
-  }
-
-  // MODIFICATIONS
-  &--button,
-  &[role="button"] {
-    @include action-cursor();
-
-    transition: box-shadow $fd-tile-transition-params;
-
-    &:hover {
-      box-shadow: 0 0 5px 0 rgba(var(--sapTile_BorderColor), 0.4);
-      position: relative;
-      z-index: map-get($fd-z-index-levels, "first");
-    }
-  }
-  // STATES
-  &.is-disabled {
-    opacity: 0.4;
-  }
+  height: $fd-tile-height;
+  width: $fd-tile-width;
+  padding: $fd-tile-padding;
+  background: var(--sapTile_Background);
+  box-shadow: var(--sapContent_Shadow0);
+  border-radius: var(--sapElement_BorderCornerRadius);
+  border: 0.0625rem solid var(--sapTile_BorderColor);
 
   // ELEMENTS
-  &__media {
-    @include fd-reset();
+  &__header {
+    background-color: khaki; // JUST FOR DEVELOPMENT PURPOSES
+    height: 3.625rem;
+    margin-bottom: $fd-tile-inner-padding;
 
-    padding: $fd-tile-content-padding-y 0 $fd-tile-content-padding-y $fd-tile-content-padding-x;
-
-    @include fd-rtl() {
-      padding-right: $fd-tile-content-padding-x;
-      padding-left: 0;
+    &--2-col {
+      @include two-col-sections();
     }
   }
 
   &__content {
-    @include fd-reset();
+    background-color: lightpink; // JUST FOR DEVELOPMENT PURPOSES
+    height: 3.875rem;
+    margin-bottom: $fd-tile-inner-padding;
 
-    flex: 1;
-    padding: $fd-tile-content-padding-y $fd-tile-content-padding-x $fd-tile-content-padding-y fd-space(3);
-
-    @include fd-rtl() {
-      padding-right: fd-space(3);
-      padding-left: $fd-tile-content-padding-x;
-    }
-
-    align-self: center;
-
-    &:first-child {
-      padding-left: $fd-tile-content-padding-x;
-
-      @include fd-rtl() {
-        padding-right: $fd-tile-content-padding-x;
-      }
+    &--2-col {
+      @include two-col-sections();
     }
   }
 
-  &__title {
-    @include fd-type("0");
+  &__footer {
+    background-color: mediumturquoise; // JUST FOR DEVELOPMENT PURPOSES
+    height: 1rem;
 
-    color: var(--sapTile_TitleTextColor);
-
-    @include fd-reset-spacing();
+    &--2-col {
+      @include two-col-sections();
+    }
   }
 
-  &__actions {
-    @include fd-reset();
+  &__section {
+    width: calc(50% - 0.125rem); // 0.125rem is 0.25rem (inner-padding) / 2
+    height: 100%;
+    background-color: hotpink;
+  }
 
-    padding: fd-space(3) $fd-tile-content-padding-x fd-space(3) fd-space(3);
+  // MODIFIERS
+  &--double {
+    width: $fd-tile-double-width;
+  }
+
+  &--s {
+    height: $fd-tile-small-height;
+    width: $fd-tile-small-width;
+    padding: $fd-tile-small-padding;
+
+    &.#{$block}--double {
+      width: $fd-tile-small-double-width;
+    }
+
+    .#{$block}__header {
+      height: 3.25rem;
+    }
+
+    .#{$block}__content {
+      height: 3.438rem;
+    }
+
+    .#{$block}__footer {
+      height: 1.063rem;
+    }
   }
 }

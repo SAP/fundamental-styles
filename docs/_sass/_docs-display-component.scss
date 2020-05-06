@@ -13,9 +13,8 @@
   background-color: #f3f4f5;
   transition: background-color 0.25s;
 
-  > .fd-tile__content {
+  > .docs-tile__content {
     padding: 60px 20px;
-    width: 100%;
     max-width: 100%;
   }
 
@@ -184,7 +183,7 @@
   }
 
   &__page {
-    .fd-tile__content {
+    .docs-tile__content {
       padding: 20px 20px;
     }
 
@@ -319,33 +318,33 @@
   }
 
   &__spacing-example {
-    .fd-tile__content [class^="fd-has"] {
+    .docs-tile__content [class^="fd-has"] {
       border: 1px solid #ccc;
       background: fd-color(background, 2);
       margin-bottom: 10px;
       text-align: center;
     }
 
-    .fd-tile__content [class^="fd-has-margin"] {
+    .docs-tile__content [class^="fd-has-margin"] {
       padding: 10px;
     }
   }
 
   &__margin-padding-helpers {
-    .fd-tile__content [class^="fd-has"] {
+    .docs-tile__content [class^="fd-has"] {
       display: block;
       background: white;
       border: 1px solid #ccc;
       padding: 10px;
     }
 
-    .fd-tile__content [class^="fd-has-padding"] {
+    .docs-tile__content [class^="fd-has-padding"] {
       margin: 10px;
     }
   }
 
   &__color-examples {
-    .fd-tile__content p {
+    .docs-tile__content p {
       padding: 10px;
       display: inline-block;
       width: calc(33%);

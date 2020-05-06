@@ -1,0 +1,88 @@
+@import "../../src/settings";
+@import "../../src/mixins";
+@import "../../src/functions";
+
+.docs-tile {
+  // VARS
+  color: var(--sapTile_TextColor);
+  background-color: var(--sapTile_Background);
+  $fd-tile-content-padding: fd-space(4) fd-space("reg") !default;
+  $fd-tile-content-padding-x: fd-space("small") !default;
+  $fd-tile-content-padding-y: fd-space(2) + 2px !default;
+  // anim
+  $fd-tile-transition-params: $fd-animation-speed ease-in !default;
+
+  @include fd-reset();
+
+  display: flex;
+
+  &__text {
+    @include fd-reset();
+  }
+
+  // MODIFICATIONS
+  &--button,
+  &[role="button"] {
+    @include action-cursor();
+
+    transition: box-shadow $fd-tile-transition-params;
+
+    &:hover {
+      box-shadow: 0 0 5px 0 rgba(var(--sapTile_BorderColor), 0.4);
+      position: relative;
+      z-index: map-get($fd-z-index-levels, "first");
+    }
+  }
+  // STATES
+  &.is-disabled {
+    opacity: 0.4;
+  }
+
+  // ELEMENTS
+  &__media {
+    @include fd-reset();
+
+    padding: $fd-tile-content-padding-y 0 $fd-tile-content-padding-y $fd-tile-content-padding-x;
+
+    @include fd-rtl() {
+      padding-right: $fd-tile-content-padding-x;
+      padding-left: 0;
+    }
+  }
+
+  &__content {
+    @include fd-reset();
+
+    flex: 1;
+    padding: $fd-tile-content-padding-y $fd-tile-content-padding-x $fd-tile-content-padding-y fd-space(3);
+
+    @include fd-rtl() {
+      padding-right: fd-space(3);
+      padding-left: $fd-tile-content-padding-x;
+    }
+
+    align-self: center;
+
+    &:first-child {
+      padding-left: $fd-tile-content-padding-x;
+
+      @include fd-rtl() {
+        padding-right: $fd-tile-content-padding-x;
+      }
+    }
+  }
+
+  &__title {
+    @include fd-type("0");
+
+    color: var(--sapTile_TitleTextColor);
+
+    @include fd-reset-spacing();
+  }
+
+  &__actions {
+    @include fd-reset();
+
+    padding: fd-space(3) $fd-tile-content-padding-x fd-space(3) fd-space(3);
+  }
+}
