@@ -148,10 +148,6 @@ entries:
       url: /components/list.html
       output: web
 
-    - title: List Group
-      url: /components/list-group.html
-      output: web
-
     - title: Link
       url: /components/link.html
       output: web
