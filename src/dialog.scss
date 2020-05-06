@@ -173,6 +173,13 @@ $button: #{$fd-namespace}-button;
     overflow: hidden;
     border-bottom-right-radius: $fd-dialog-content-border-radius;
 
+    @include fd-rtl() {
+      right: unset;
+      left: 0;
+      cursor: sw-resize;
+      transform: scaleX(-1);
+    }
+
     @include fd-icon("resize-corner", "m", "after") {
       display: flex;
       color: $fd-dialog-resize-handle-color;
