@@ -16,14 +16,14 @@ The dialog is a container displayed in response to an action.
 The dialog control interrupts the current app process to prompt the user for information or for a response. It forces a decision or a confirmation that needs to be signed off by the user.
 
 Use the dialog if:
-<ul>
+<ul class="docs-ul">
     <li>You want to display complex content, but don’t want the user to navigate away from the current page.</li>
     <li>You want to display an additional step or process that needs to be confirmed by a user action.</li>
     <li>You want to enable the user to create an object with a small number of fields (up to 8 fields).</li>
 </ul>
 
 Do not use the dialog if:
-<ul>
+<ul class="docs-ul">
     <li>You want to display a simple message. Use the message box instead.</li>
     <li>You just want to confirm a successful action.</li>
     <li>You do not want to interrupt the user.</li>
@@ -32,13 +32,13 @@ Do not use the dialog if:
 
 ## Dialog structure
 Dialog consists of following elements:
-<ul>
+<ul class="docs-ul">
     <li><code>.fd-dialog</code>: Wraps dialog and displays it with <code>position: fixed</code>. Dialog can be made visible by applying <code style="white-space:nowrap;">.fd-dialog--active</code> class
-        <ul>
+        <ul class="docs-ul">
             <li><code>.fd-dialog__content</code>: Dialog window
-                <ul>
+                <ul class="docs-ul">
                     <li><code>.fd-dialog__header</code>: Header
-                        <ul>
+                        <ul class="docs-ul">
                             <li><code>.fd-dialog__title</code>: Dialog title</li>
                         </ul>
                     </li>
@@ -46,7 +46,7 @@ Dialog consists of following elements:
                     <li><code>.fd-dialog__body</code>: Dialog content</li>
                     <li><code>.fd-dialog__loader</code>: Dialog loader</li>
                     <li><code>.fd-dialog__footer</code>: Dialog footer
-                        <ul>
+                        <ul class="docs-ul">
                             <li><code>.fd-dialog__decisive-button</code>: Footer begin/end button </li>
                         </ul>
                     </li>
@@ -120,7 +120,7 @@ Dialog headers and footer can be customized using Bar component features.
 By default dialog body has no horizontal paddings. Header, subheader, body and footer paddings should be applied responsively based on dialogs window width.
 <br>
 Modifying header/subheader/body/footer horizontal paddings:
-<ul>
+<ul class="docs-ul">
     <li><code>.fd-dialog__content--s</code>: 1rem - max-width: 599px</li>
     <li><code>.fd-dialog__content--m</code>: 2rem - min-width: 600px and max-width: 1023px</li>
     <li><code>.fd-dialog__content--l</code>: 2rem - min-width: 1024px and max-width: 1439px</li>
@@ -128,13 +128,13 @@ Modifying header/subheader/body/footer horizontal paddings:
 </ul>
 
 By default dialog body has vertical padding. This behavior might be changed using:
-<ul>
+<ul class="docs-ul">
     <li><code>.fd-dialog__body--no-vertical-padding</code>: padding-top: 0, padding-bottom: 0</li>
 </ul>
 
 By default dialog on mobile devices should take full height and width of the screen.
 This behaviour can be changed using <code>.fd-dialog__content--no-mobile-stretch</code> class, which will add additional spacing around dialog.
-<ul>
+<ul class="docs-ul">
     <li><code>.fd-dialog__content--mobile</code>: dialog takes full height and width</li>
     <li><code>.fd-dialog__content--no-mobile-stretch</code>: margin: 6% 10%</li>
 </ul>
@@ -290,7 +290,7 @@ Resizable Dialog should be desktop only feature.
 ## Dialog draggable mode
 Dialog can be opened in draggable mode, enabling drag dialog over browser view-port area (only for <b>desktop</b>).
 Draggable mode can be visualized using following classes:
-<ul>
+<ul class="docs-ul">
     <li><code>.fd-dialog__content--draggable-grab</code>: element can be dragged</li>
     <li><code>.fd-dialog__content--draggable-grabbing</code>: element is being dragged</li>
 </ul>

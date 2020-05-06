@@ -49,16 +49,16 @@ h6 {
   margin-top: 0;
 }
 
-// ul,
-// ol {
-//   margin-left: 1.5rem;
-//   padding: 0;
+.docs-ul,
+.docs-ol {
+  margin-left: 1.5rem;
+  padding: 0;
 
-//   @include fd-rtl() {
-//     margin-left: 0;
-//     margin-right: 1.5rem;
-//   }
-// }
+  @include fd-rtl() {
+    margin-left: 0;
+    margin-right: 1.5rem;
+  }
+}
 
 blockquote {
   margin: 15px 0;

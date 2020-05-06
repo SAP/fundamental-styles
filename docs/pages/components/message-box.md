@@ -17,19 +17,19 @@ Message Box is used to display simple messages (text) to the user. These message
 ## Message Box Structure
  
 The Message Box follows the [Dialog]({{site.baseurl}}/components/dialog.html) structure and consists of following elements:
-<ul>
+<ul class="docs-ul">
     <li><code>.fd-message-box</code>: styles the Backdrop and displays the Message Box Container with <code>position: fixed</code>. The Message Box becomes visible by applying <code style="white-space:nowrap;">.fd-message--active</code> modifier class.
-        <ul>
+        <ul class="docs-ul">
             <li><code>.fd-message__content</code>: Message Box container
-                <ul>
+                <ul class="docs-ul">
                     <li><code>.fd-message__header</code>: Message Box Header
-                        <ul>
+                        <ul class="docs-ul">
                             <li><code>.fd-message__title</code>: Message Box Title</li>
                         </ul>
                     </li>
                     <li><code>.fd-message__body</code>: Message Box Content</li>
                     <li><code>.fd-message__footer</code>: Message Box Footer
-                        <ul>
+                        <ul class="docs-ul">
                             <li><code>.fd-message__decisive-button</code>: Footer begin/end button </li>
                         </ul>
                     </li>
@@ -317,7 +317,7 @@ By default the Message Box body has 1rem padding all around the content. The val
 Horizontal responsive paddings can be applied to the header, the body and the footer of the Message Box. Their values depend on the screen size. <br>
 To enable responsive behavior for the paddings use the following modifier classes on the content container:
 <br>
-<ul>
+<ul class="docs-ul">
     <li><code>.fd-message-box__content--s</code>: 1rem - max-width: 599px</li>
     <li><code>.fd-message-box__content--m</code>: 2rem - min-width: 600px and max-width: 1023px</li>
     <li><code>.fd-message-box__content--l</code>: 2rem - min-width: 1024px and max-width: 1439px</li>

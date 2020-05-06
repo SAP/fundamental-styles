@@ -384,7 +384,7 @@ The lists in both sections (Main and Utility) should have the `fd-nested-list--c
 ## Side navigation with icons - condensed state
 Use the `fd-side-nav--condensed` modifier class for `condensed` state.
 The following requirements must be met:
-<ul>
+<ul class="docs-ul">
     <li>
         all first level items of the Side Navigation should have icons
     </li>

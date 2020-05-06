@@ -17,16 +17,16 @@ Commonly used as the contents of a popover when composing `date-picker`, rarely 
 
 ## Calendar structure
 Following classes describe block structure of calendar component.
-<ul>
+<ul class="docs-ul">
     <li>
         <code>.fd-calendar</code> - calendar main container, defines width of calendar
-        <ul>
+        <ul class="docs-ul">
             <li>
                 <code>.fd-calendar__header</code> - header section of calendar
-                <ul>
+                <ul class="docs-ul">
                     <li>
                         <code>.fd-calendar__navigation</code> - container used for grouping row of navigation controls
-                        <ul>
+                        <ul class="docs-ul">
                             <li><code>.fd-calendar__action</code> - action buttons of calendar</li>
                             <li><code>.fd-calendar__close-button--navigation</code> - close button inside navigation for calendar on mobile devices without dialog header</li>
                         </ul>
@@ -36,19 +36,19 @@ Following classes describe block structure of calendar component.
             </li>
             <li>
                 <code>.fd-calendar__content</code> - calendar body container
-                <ul>
+                <ul class="docs-ul">
                     <li>
                         <code>.fd-calendar__table</code> - groups table elements representing calendar items
-                        <ul>
+                        <ul class="docs-ul">
                             <li>
                                 <code>.fd-calendar__group</code> - groups calendar rows with the same destination
-                                <ul>
+                                <ul class="docs-ul">
                                     <li>
                                         <code>.fd-calendar__row</code> - groups calendar grid items in one row
-                                        <ul>
+                                        <ul class="docs-ul">
                                             <li>
                                                 <code>.fd-calendar__item</code> - represents calendar grid item
-                                                <ul>
+                                                <ul class="docs-ul">
                                                     <li><code>.fd-calendar__text</code> - represents content of calendar grid item</li>
                                                 </ul>
                                             </li>
@@ -963,7 +963,7 @@ These are classes used to describe the look of calendar grid element.
 On mobile devices calendar is composed into Dialog window taking full width and height of the device.
 <b>For landscape orientation no [Dialog]({{site.baseurl}}/components/dialog) header element should be used. Dialog footer element is optional.</b>
 Remember that if <code>.fd-calendar__close-button</code> is placed inside navigation section of the calendar then:
- <ul>
+<ul class="docs-ul">
     <li><code>.fd-calendar__navigation</code> - requires <code>.fd-calendar__navigation--main</code> modifier</li>
     <li><code>.fd-calendar__close-button</code> - requires <code>.fd-calendar__close-button--navigation</code> modifier</li>
  </ul>
