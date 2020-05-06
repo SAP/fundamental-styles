@@ -25,3 +25,5 @@ docs/css/fundamental-styles.css
 docs/css/*.woff
 test/visual-regression-tests/config/backstopConfigCI.json
 docs/_config-library.yml
+
+__diff_output__
