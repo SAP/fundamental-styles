@@ -63,7 +63,7 @@ module.exports = {
           const wasLessChanged = Object.keys(filesChanged).some((file) => file.includes('.scss'));
 
           if (wasLessChanged) {
-            exec('npm run build:no-remove', (err, stdout, stderr) => {
+            exec('npm run build:default', (err, stdout, stderr) => {
               if (stdout) process.stdout.write(stdout);
               if (stderr) process.stderr.write(stderr);
             });
