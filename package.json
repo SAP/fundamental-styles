@@ -5,6 +5,7 @@
   "main": "dist/fundamental-styles.css",
   "scripts": {
     "build": "npm run style:remove && npm run style:compile && npm run style:postCSS && npm run style:assets",
+    "build:no-remove": "npm run style:compile && npm run style:postCSS && npm run style:assets",
     "build:prod": "NODE_ENV=production npm run build",
     "deploy": "gh-pages -d docs/_site",
     "docs:compile": "npm run build && npm run docs:config; cp dist/fundamental-styles.css docs/css",
