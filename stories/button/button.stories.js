@@ -1,5 +1,5 @@
 
-import "../base.css";
+import "../base.scss";
 
 import "../../dist/button.css";
 import "../../dist/icon.css";
