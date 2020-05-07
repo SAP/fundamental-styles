@@ -25,6 +25,6 @@ initStoryshots({
     storybookUrl: "http://localhost:6006/",
     customizePage,
     beforeScreenshot,
-    getMatchOptions,
   }),
+  getMatchOptions,
 });

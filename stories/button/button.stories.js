@@ -1,7 +1,6 @@
 
 import "../base.css";
 
-import "../../dist/variables.css";
 import "../../dist/button.css";
 import "../../dist/icon.css";
 
