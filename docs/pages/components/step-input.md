@@ -12,7 +12,69 @@ The Step Input component is an opinionated composition of the Input, Button comp
 It is typically used to enter numbers.The value can be increased or reduced with the provided controls.
 {: .docs-intro}
 
-## Step Input with compact
+
+## Step Input with Cozy
+Cozy Mode is the default one, it should be used in mobile and tablet devices.
+
+{% capture step-input-cozy %}
+<div class="fd-step-input">
+        <button aria-label="Step down" class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+            onclick="stepInputValue('step-3', 'down');"
+            type="button">
+        </button>
+    <input class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    " id="step-3" type="number" value="0">
+        <button aria-label="Step up" class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+            onclick="stepInputValue('step-3', 'up');" 
+            type="button">
+        </button>
+</div>
+<br><br>
+<h3>RTL Support</h3>
+<div dir="rtl">
+    <div class="fd-step-input">
+            <button aria-label="Step down" class="
+                fd-button
+                fd-button--transparent
+                fd-step-input__button
+                sap-icon--less"
+                onclick="stepInputValue('step-4', 'down');"
+                type="button">
+            </button>
+        <input class="
+                fd-input 
+                fd-input--no-number-spinner 
+                fd-step-input__input
+        " id="step-4" type="number" value="0">
+            <button aria-label="Step up" class="
+                fd-button 
+                fd-button--transparent
+                fd-step-input__button
+                sap-icon--add"
+                onclick="stepInputValue('step-4', 'up');" 
+                type="button">
+            </button>
+    </div>
+    
+</div>
+{% endcapture %}
+{% include display-component.html component=step-input-cozy %}
+
+
+## Compact Step Input
+Step Input can be used in compact mode, which is done to be used in desktop, or larger screen devices. 
+it can be achieved by adding `--compact` modifier to main element, button and input elements.
 
 {% capture step-input-compact %}
 <div class="fd-form-item fd-form-item--horizontal">
@@ -78,64 +140,9 @@ It is typically used to enter numbers.The value can be increased or reduced with
 {% endcapture %}
 {% include display-component.html component=step-input-compact %}
 
-## Step Input with Cozy
-
-{% capture step-input-cozy %}
-<div class="fd-step-input">
-        <button aria-label="Step down" class="
-            fd-button
-            fd-button--transparent
-            fd-step-input__button
-            sap-icon--less"
-            onclick="stepInputValue('step-3', 'down');"
-            type="button">
-        </button>
-    <input class="
-            fd-input 
-            fd-input--no-number-spinner 
-            fd-step-input__input
-    " id="step-3" type="number" value="0">
-        <button aria-label="Step up" class="
-            fd-button 
-            fd-button--transparent
-            fd-step-input__button
-            sap-icon--add"
-            onclick="stepInputValue('step-3', 'up');" 
-            type="button">
-        </button>
-</div>
-<br><br>
-<h3>RTL Support</h3>
-<div dir="rtl">
-    <div class="fd-step-input">
-            <button aria-label="Step down" class="
-                fd-button
-                fd-button--transparent
-                fd-step-input__button
-                sap-icon--less"
-                onclick="stepInputValue('step-4', 'down');"
-                type="button">
-            </button>
-        <input class="
-                fd-input 
-                fd-input--no-number-spinner 
-                fd-step-input__input
-        " id="step-4" type="number" value="0">
-            <button aria-label="Step up" class="
-                fd-button 
-                fd-button--transparent
-                fd-step-input__button
-                sap-icon--add"
-                onclick="stepInputValue('step-4', 'up');" 
-                type="button">
-            </button>
-    </div>
-    
-</div>
-{% endcapture %}
-{% include display-component.html component=step-input-cozy %}
-
-## Step Input with Diffrent states
+## Step Input with Different states
+Step Input Component also supports semantic states, same as for every form. They can be achieved by adding
+`is-error` | `is-success` | `is-warning` | `is-information`  into `fd-step-input` element.
 
 {% capture step-input-states %}
 
@@ -377,6 +384,8 @@ It is typically used to enter numbers.The value can be increased or reduced with
 ## Step Input with disabled and Read only state
 
 {% capture step-input-disabled %}
+
+<h3>Disabled</h3>
 
 <div class="fd-step-input is-disabled">
         <button aria-label="Step down" class="
