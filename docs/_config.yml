@@ -16,7 +16,7 @@ site_description: Fundamental Styles is a Fiori 3 component library and SASS too
 company_name: Fundamental Styles
 
 # if you have google-analytics ID, put it in. if not, edit this value to blank.
-google_analytics: UA-126805333-1
+google_analytics: UA-126805333-3
 
 # the preview server used. Leave as is.
 host: 127.0.0.1
