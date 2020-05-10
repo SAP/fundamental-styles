@@ -240,7 +240,7 @@ Structure of the Numeric Content
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale">
-                        <span class="sap-icon--down"></span>
+                        <span class="fd-numeric-content__scale-arrow sap-icon--down"></span>
                         <span class="fd-numeric-content__scale-text">M</span>
                     </div>
                 </div>
@@ -260,13 +260,13 @@ Structure of the Numeric Content
             <div class="fd-tile__subtitle">Tile Subtitle Text</div>
         </div>
         <div class="fd-tile__content">
-            <div class="fd-numeric-content">
+            <div class="fd-numeric-content fd-numeric-content--small-tile">
                 <div class="fd-numeric-content__kpi-container">
                     <div class="fd-numeric-content__kpi">1Ñç</div>
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale">
-                        <span class="sap-icon--down"></span>
+                        <span class="fd-numeric-content__scale-arrow sap-icon--down"></span>
                         <span class="fd-numeric-content__scale-text">milçM</span>
                     </div>
                 </div>
@@ -288,7 +288,7 @@ Structure of the Numeric Content
 <div class="docs-section-container">
     <div tabindex="0" class="fd-tile fd-tile--kpi">
         <div class="fd-tile__header">
-            <div class="fd-tile__title">Tile Title Text ibkiwr arsiqret clgtuqgko crcajbarhu agvi</div>
+            <div class="fd-tile__title">Tile Title Text eiusmod tempor incididunt ut labore </div>
         </div>
         <div class="fd-tile__content">
             <div class="fd-numeric-content fd-numeric-content--m">
@@ -297,7 +297,7 @@ Structure of the Numeric Content
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale fd-numeric-content__scale--positive">
-                        <span class="sap-icon--down"></span>
+                        <span class="fd-numeric-content__scale-arrow sap-icon--down"></span>
                     </div>
                 </div>
             </div>
@@ -308,7 +308,7 @@ Structure of the Numeric Content
     </div>
     <div tabindex="0" class="fd-tile fd-tile--kpi fd-tile--s">
         <div class="fd-tile__header">
-            <div class="fd-tile__title">Title Text ibkiwr arsiqret clgtuqgko</div>
+            <div class="fd-tile__title">Title Text eiusmod tempor incididunt</div>
             <div class="fd-tile__subtitle">Subtitle Text</div>
         </div>
         <div class="fd-tile__content">
@@ -318,7 +318,7 @@ Structure of the Numeric Content
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale fd-numeric-content__scale--negative">
-                        <span class="sap-icon--up"></span>
+                        <span class="fd-numeric-content__scale-arrow sap-icon--up"></span>
                     </div>
                 </div>
             </div>
@@ -344,7 +344,7 @@ Structure of the Numeric Content
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale fd-numeric-content__scale--critical">
-                        <span class="sap-icon--down"></span>
+                        <span class="fd-numeric-content__scale-arrow sap-icon--down"></span>
                         <span class="fd-numeric-content__scale-text">%</span>
                     </div>
                 </div>
@@ -452,7 +452,7 @@ Numeric Content Sizes:
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale fd-numeric-content__scale--negative">
-                        <span class="sap-icon--down"></span>
+                        <span class="fd-numeric-content__scale-arrow sap-icon--down"></span>
                         <span class="fd-numeric-content__scale-text">M</span>
                     </div>
                 </div>
@@ -472,7 +472,7 @@ Numeric Content Sizes:
             <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
         </div>
         <div class="fd-tile__content">
-            <div class="fd-numeric-content">
+            <div class="fd-numeric-content fd-numeric-content--small-tile">
                 <div class="fd-numeric-content__launch-icon-container">
                     <span class="fd-numeric-content__launch-icon sap-icon--line-charts"></span>
                 </div>
@@ -498,7 +498,7 @@ Numeric Content Sizes:
             <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
         </div>
         <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/400/400/nature')" role="presentation" aria-label="Profile Image"></span>
+            <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/60/60/nature')" role="presentation" aria-label="Profile Image"></span>
         </div>
         <div class="fd-tile__footer">
             <span class="fd-tile__footer-text">Footer Text</span>
@@ -510,15 +510,13 @@ Numeric Content Sizes:
             <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
         </div>
         <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/400/400/nature')" role="presentation" aria-label="Profile Image"></span>
+            <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/50/50/nature')" role="presentation" aria-label="Profile Image"></span>
         </div>
         <div class="fd-tile__footer">
             <span class="fd-tile__footer-text">Unit, Notification</span>
         </div>
     </div>
 </div>
-
-
 <br>
 <br>
 <h4>Launch Tile (Logo)</h4>
@@ -560,13 +558,13 @@ Numeric Content Sizes:
 <div class="docs-section-container">
     <div tabindex="0" class="fd-tile fd-tile--double fd-tile--feed">
         <div class="fd-tile__header">
-            <div class="fd-tile__title">Feed Tile Title Text tgcbohmb osbaqbed sntiqpacxs lptefmap icn tsnafdomze</div>
+            <div class="fd-tile__title">Feed Tile Title Text sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
             <div class="fd-tile__subtitle">Feed Tile Subtitle Text</div>
         </div>
         <div class="fd-tile__content fd-tile__content--2-col">
             <div class="fd-tile__section">
                 <div class="fd-tile__content-text-container">
-                    <div class="fd-tile__content-text">Pcbuxkin otcifnegqi irvpeqg oclbufb tctoybasxv gpnbu ult vpvazv utmsohg</div>
+                    <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt magna aliqua.</div>
                     <div class="fd-tile__content-byline">About 1 minute ago.</div>
                 </div>
             </div>
@@ -584,13 +582,13 @@ Numeric Content Sizes:
     </div>
     <div tabindex="0" class="fd-tile fd-tile--double fd-tile--s fd-tile--feed">
         <div class="fd-tile__header">
-            <div class="fd-tile__title">Feed Tile Title Text tgcbohmb osbaqbed sntiqpacxs lptefmap icn tsnafdomze</div>
+            <div class="fd-tile__title">Feed Tile Title Text sed do eiusmod</div>
             <div class="fd-tile__subtitle">Feed Tile Subtitle Text</div>
         </div>
         <div class="fd-tile__content fd-tile__content--2-col">
             <div class="fd-tile__section">
                 <div class="fd-tile__content-text-container">
-                    <div class="fd-tile__content-text">Pcbuxkin otcifnegqi irvpeqg oclbufb tctoybasxv gpnbu ult vpvazv utmsohg</div>
+                    <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod.</div>
                     <div class="fd-tile__content-byline">About 1 minute ago.</div>
                 </div>
             </div>

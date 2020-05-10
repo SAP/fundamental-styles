@@ -96,12 +96,13 @@ $fd-numeric-content-elements-spacing-s: 0.5rem !default;
     color: var(--sapTile_IconColor);
   }
 
-  &__kpi,
-  &__scale {
+  &__kpi {
     @include fd-reset();
 
     line-height: normal;
     color: var(--sapNeutralTextColor);
+    font-weight: lighter;
+    font-size: 2.25rem;
 
     &--positive {
       color: var(--sapPositiveTextColor);
@@ -120,18 +121,50 @@ $fd-numeric-content-elements-spacing-s: 0.5rem !default;
     }
   }
 
-  &__kpi {
-    font-weight: lighter;
-    font-size: 2.25rem;
-  }
-
   &__scale {
+    @include fd-reset();
+
     @include fd-flex-vertical-center () {
       flex-direction: column;
       justify-content: space-between;
     }
 
-    font-size: 0.875rem;
+    &-arrow,
+    &-text {
+      @include fd-reset();
+
+      font-size: 0.875rem;
+      line-height: normal;
+      color: var(--sapNeutralTextColor);
+    }
+
+    &--positive {
+      .#{$block}__scale-arrow,
+      .#{$block}__scale-text {
+        color: var(--sapPositiveTextColor);
+      }
+    }
+
+    &--critical {
+      .#{$block}__scale-arrow,
+      .#{$block}__scale-text {
+        color: var(--sapCriticalTextColor);
+      }
+    }
+
+    &--negative {
+      .#{$block}__scale-arrow,
+      .#{$block}__scale-text {
+        color: var(--sapNegativeTextColor);
+      }
+    }
+
+    &--informative {
+      .#{$block}__scale-arrow,
+      .#{$block}__scale-text {
+        color: var(--sapInformativeTextColor);
+      }
+    }
   }
 
   &--m {

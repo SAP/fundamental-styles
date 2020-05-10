@@ -12,17 +12,6 @@ $fd-tile-inner-padding: 0.25rem !default;
 // REFRESH
 $fd-tile-refresh-icon-spacing: 0.5rem !default;
 
-// PROFILE IMAGE
-$fd-tile-profile-img-size: 3.5rem !default;
-$fd-tile-profile-img-size-s: 3rem !default;
-
-// LOGO
-$fd-tile-logo-width: 3.625rem !default;
-$fd-tile-logo-width-s: 3rem !default;
-
-$fd-tile-logo-height: 1.75rem !default;
-$fd-tile-logo-height-s: 1.438rem !default;
-
 // MIXINS
 @mixin two-col-sections {
   display: flex;
@@ -127,6 +116,8 @@ $fd-tile-logo-height-s: 1.438rem !default;
 
   &__refresh {
     color: var(--sapButton_IconColor);
+    min-width: 0.875rem;
+    text-align: center;
     margin-right: $fd-tile-refresh-icon-spacing;
 
     @include fd-rtl() {
@@ -136,6 +127,7 @@ $fd-tile-logo-height-s: 1.438rem !default;
   }
 
   &__profile-img {
+    @include fd-reset();
     @include set-width(3.5rem);
     @include set-height(3.5rem);
 
@@ -244,6 +236,8 @@ $fd-tile-logo-height-s: 1.438rem !default;
     }
 
     .#{$block}__content-text-container {
+      @include fd-reset();
+
       display: flex;
       flex-direction: column;
     }

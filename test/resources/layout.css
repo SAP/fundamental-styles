@@ -324,3 +324,21 @@ body {
   min-height: 1rem;
   min-width: 1rem;
 }
+
+.tile-content-playground,
+.tile-content-small-playground {
+  background-color: white;
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+}
+.tile-content-playground {
+  width: 9rem;
+  height: 3.875rem;
+}
+
+.tile-content-small-playground {
+  width: 8.25rem;
+  height: 3.438rem;
+}
