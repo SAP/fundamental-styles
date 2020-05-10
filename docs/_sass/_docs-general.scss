@@ -331,3 +331,14 @@ pre {
     }
   }
 }
+
+.docs-section-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  > * {
+    margin: 0.5rem;
+  }
+}

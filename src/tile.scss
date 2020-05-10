@@ -4,20 +4,24 @@
 
 $block: #{$fd-namespace}-tile;
 
-// DEFAULT (LARGE) TILE
-$fd-tile-height: 11rem !default;
-$fd-tile-width: 11rem !default;
-$fd-tile-double-width: 22.5rem !default;
-
-// SMALL TILE
-$fd-tile-small-height: 9.25rem !default;
-$fd-tile-small-width: 9.25rem !default;
-$fd-tile-small-double-width: 19rem !default;
-
 // PADDINGS
-$fd-tile-padding: 1rem !default;
-$fd-tile-small-padding: 0.5rem !default;
+$fd-tile-padding: calc(1rem - 0.0625rem) !default;
+$fd-tile-small-padding: calc(0.5rem - 0.0625rem) !default;
 $fd-tile-inner-padding: 0.25rem !default;
+
+// REFRESH
+$fd-tile-refresh-icon-spacing: 0.5rem !default;
+
+// PROFILE IMAGE
+$fd-tile-profile-img-size: 3.5rem !default;
+$fd-tile-profile-img-size-s: 3rem !default;
+
+// LOGO
+$fd-tile-logo-width: 3.625rem !default;
+$fd-tile-logo-width-s: 3rem !default;
+
+$fd-tile-logo-height: 1.75rem !default;
+$fd-tile-logo-height-s: 1.438rem !default;
 
 // MIXINS
 @mixin two-col-sections {
@@ -25,77 +29,246 @@ $fd-tile-inner-padding: 0.25rem !default;
   justify-content: space-between;
 }
 
+@mixin set-height($height) {
+  height: $height;
+  min-height: $height;
+  max-height: $height;
+}
+
+@mixin set-width($width) {
+  width: $width;
+  min-width: $width;
+  max-width: $width;
+}
+
 .#{$block} {
   @include fd-reset();
+  @include set-height(11rem);
+  @include set-width(11rem);
 
-  height: $fd-tile-height;
-  width: $fd-tile-width;
   padding: $fd-tile-padding;
   background: var(--sapTile_Background);
   box-shadow: var(--sapContent_Shadow0);
   border-radius: var(--sapElement_BorderCornerRadius);
   border: 0.0625rem solid var(--sapTile_BorderColor);
+  cursor: pointer;
+
+  // STATES
+  @include fd-active() {
+    background: var(--sapTile_Active_Background);
+    // box-shadow: 0 0 0 1px fade(var(--sapContent_ShadowColor), 30);
+  }
+
+  @include fd-hover() {
+    background: var(--sapTile_Hover_Background);
+    // box-shadow: 0 0 0 1px fade(var(--sapContent_ShadowColor), 30);;
+  }
+
+  @include fd-focus() {
+    box-shadow: none;
+    outline-style: dotted;
+    outline-width: var(--sapContent_FocusWidth);
+    outline-color: var(--sapContent_FocusColor);
+    outline-offset: -0.1875rem;
+  }
 
   // ELEMENTS
-  &__header {
-    background-color: khaki; // JUST FOR DEVELOPMENT PURPOSES
-    height: 3.625rem;
-    margin-bottom: $fd-tile-inner-padding;
+  &__header,
+  &__content,
+  &__footer {
+    @include fd-reset();
+
+    overflow: hidden;
 
     &--2-col {
       @include two-col-sections();
     }
+  }
+
+  &__header {
+    @include set-height(3.625rem);
+
+    margin-bottom: $fd-tile-inner-padding;
   }
 
   &__content {
-    background-color: lightpink; // JUST FOR DEVELOPMENT PURPOSES
-    height: 3.875rem;
-    margin-bottom: $fd-tile-inner-padding;
+    @include set-height(3.875rem);
 
-    &--2-col {
-      @include two-col-sections();
-    }
+    margin-bottom: $fd-tile-inner-padding;
   }
 
   &__footer {
-    background-color: mediumturquoise; // JUST FOR DEVELOPMENT PURPOSES
-    height: 1rem;
-
-    &--2-col {
-      @include two-col-sections();
-    }
+    @include set-height(1rem);
   }
 
   &__section {
+    @include fd-reset();
+
+    overflow: hidden;
     width: calc(50% - 0.125rem); // 0.125rem is 0.25rem (inner-padding) / 2
     height: 100%;
-    background-color: hotpink;
+  }
+
+  &__title,
+  &__subtitle,
+  &__footer-text,
+  &__refresh {
+    @include fd-reset();
+
+    font-size: var(--sapFontSize);
+    line-height: normal;
+    color: var(--sapTile_TextColor);
+  }
+
+  &__title {
+    color: var(--sapTile_TitleTextColor);
+    font-size: var(--sapFontLargeSize);
+  }
+
+  &__refresh {
+    color: var(--sapButton_IconColor);
+    margin-right: $fd-tile-refresh-icon-spacing;
+
+    @include fd-rtl() {
+      margin-right: 0;
+      margin-left: $fd-tile-refresh-icon-spacing;
+    }
+  }
+
+  &__profile-img {
+    @include set-width(3.5rem);
+    @include set-height(3.5rem);
+
+    border-radius: 50%;
+  }
+
+  &__logo {
+    @include set-width(3.625rem);
+    @include set-height(1.75rem);
   }
 
   // MODIFIERS
   &--double {
-    width: $fd-tile-double-width;
+    @include set-width(22.5rem);
   }
 
   &--s {
-    height: $fd-tile-small-height;
-    width: $fd-tile-small-width;
+    @include set-height(9.25rem);
+    @include set-width(9.25rem);
+
     padding: $fd-tile-small-padding;
 
     &.#{$block}--double {
-      width: $fd-tile-small-double-width;
+      @include set-width(19rem);
     }
 
     .#{$block}__header {
-      height: 3.25rem;
+      @include set-height(3.25rem);
     }
 
     .#{$block}__content {
-      height: 3.438rem;
+      @include set-height(3.438rem);
     }
 
     .#{$block}__footer {
-      height: 1.063rem;
+      @include set-height(1.063rem);
+    }
+
+    .#{$block}__title {
+      font-size: var(--sapFontSize);
+    }
+
+    .#{$block}__footer-text {
+      font-size: var(--sapFontSmallSize);
+    }
+
+    .#{$block}__profile-img {
+      @include set-width(3rem);
+      @include set-height(3rem);
+    }
+
+    .#{$block}__logo {
+      @include set-width(3rem);
+      @include set-height(1.438rem);
+    }
+  }
+
+  // TILE TYPES
+  &--kpi,
+  &--launch,
+  &--feed {
+    .#{$block}__content {
+      @include fd-flex-vertical-bottom();
+
+      &--2-col {
+        .#{$block}__section {
+          @include fd-flex-vertical-bottom();
+        }
+      }
+    }
+
+    .#{$block}__footer {
+      @include fd-flex-vertical-center();
+
+      &--2-col {
+        .#{$block}__section {
+          @include fd-flex-vertical-center();
+        }
+
+        .#{$block}__section:last-child {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+
+  &--feed {
+    .#{$block}__content {
+      .#{$block}__section {
+        width: auto;
+
+        &:first-child {
+          flex: 1;
+          margin-right: $fd-tile-inner-padding;
+
+          @include fd-rtl() {
+            margin-left: $fd-tile-inner-padding;
+            margin-right: 0;
+          }
+        }
+
+        &:nth-child(2) {
+          max-width: 10.25rem;
+        }
+      }
+    }
+
+    .#{$block}__content-text-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .#{$block}__content-text,
+    .#{$block}__content-byline {
+      @include fd-reset();
+
+      font-size: var(--sapFontSmallSize);
+      line-height: 1.063 rem;
+      color: var(--sapTile_TitleTextColor);
+    }
+
+    .#{$block}__content-byline {
+      color: var(--sapTile_TextColor);
+    }
+
+    &.#{$block}--s {
+      .#{$block}__content {
+        .#{$block}__section {
+          &:nth-child(2) {
+            max-width: 8.25rem;
+          }
+        }
+      }
     }
   }
 }
