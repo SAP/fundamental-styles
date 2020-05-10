@@ -1,7 +1,7 @@
 ---
 title: List
 id: list
-keywords: list, lists, groups
+keywords: list, lists
 sidebar: left-navigation-sidebar
 toc: false
 permalink: components/list.html
