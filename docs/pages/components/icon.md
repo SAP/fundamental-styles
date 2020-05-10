@@ -8,8 +8,10 @@ permalink: components/icon.html
 folder: components
 summary:
 ---
-Icons are used throughout the UI to save space, allow for visual clarity and focus, and for fun.
+> **UNDER REVIEW**. This component is under review. A new version will be implemented soon.
 {: .docs-intro}
+
+Icons are used throughout the UI to save space, allow for visual clarity and focus, and for fun.
 Icons can be used adaptively if desired, but at this point they are used more as visual elements within other components. See [Getting Started](../getting-started.html#project-configuration) for instructions for making the SAP icon font available on your page.
 
 <br>

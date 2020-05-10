@@ -8,7 +8,7 @@ permalink: components/notification.html
 folder: components
 summary:
 ---
-
+> **UNDER REVIEW**. This component is under review. A new version will be implemented soon.
 {: .docs-intro}
 - **Sizes**: Notifications have 3 sizes: Large (width more than 640px), Medium (width from 320px to 640px) and Small (width up to 320px). The default size is Large (L). It takes 100% of the parent container but can't exceed 60rem. 
 - **Types**: default, success, warning, error, and information.

@@ -8,9 +8,9 @@ permalink: components/inline-help.html
 folder: components
 summary:
 ---
-
-Inline help is used to display help text in a popover, often inline with headers, body text and form labels.
+> **DEPRECATED**. The component is deprecated.
 {: .docs-intro}
+Inline help is used to display help text in a popover, often inline with headers, body text and form labels.
 
 <br>
 

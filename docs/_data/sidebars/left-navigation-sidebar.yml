@@ -112,6 +112,10 @@ entries:
       url: /components/calendar.html
       output: web
 
+    - title: Counter
+      url: /components/counter.html
+      output: web
+
     - title: Dialog
       url: /components/dialog.html
       output: web
@@ -210,10 +214,6 @@ entries:
 
     - title: Side Navigation
       url: /components/side-navigation.html
-      output: web
-
-    - title: Status Indicators
-      url: /components/status-indicators.html
       output: web
 
     - title: Switch

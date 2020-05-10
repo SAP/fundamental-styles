@@ -1,9 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
 
-/*!
-.fd-badge+(( --numeric | --icon ), ( --cozy | --compact ))
-*/
 $block: #{$fd-namespace}-info-label;
 
 .#{$block} {

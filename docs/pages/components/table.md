@@ -8,8 +8,9 @@ permalink: components/table.html
 folder: components
 ---
 
-A table is a set of tabular data. Line items can support data, images and actions.
+> **UNDER REVIEW**. This component is under review. A new version will be implemented soon.
 {: .docs-intro}
+A table is a set of tabular data. Line items can support data, images and actions.
 
 <br>
 
