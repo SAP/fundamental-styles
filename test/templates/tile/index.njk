@@ -150,7 +150,7 @@
 {% endset %}
 {{ format(example) }}
 
-<h2>Launch Tile</h2>
+<h2>Launch Tile - Profile</h2>
 {% set example %}
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
   <div class="fd-tile fd-tile--launch">
@@ -177,6 +177,14 @@
           <span class="fd-tile__footer-text">Unit, Notification</span>
       </div>
   </div>
+</div>
+
+{% endset %}
+{{ format(example) }}
+
+<h2>Launch Tile - Logo</h2>
+{% set example %}
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
   <div class="fd-tile fd-tile--launch">
       <div class="fd-tile__header">
           <div class="fd-tile__title">Launch Tile (Logo) Title Text</div>
@@ -205,6 +213,7 @@
 
 {% endset %}
 {{ format(example) }}
+
 
 <h2>Feed Tile</h2>
 {% set example %}
