@@ -8,13 +8,26 @@ permalink: components/step-input.html
 folder: components
 ---
 
-The Step Input component is an opinionated composition of the Input, Button components.
-It is typically used to enter numbers.The value can be increased or reduced with the provided controls.
+The step input control allows the user to change the input values in predefined increments (steps).
+
+Use the step input if:
+<ul>
+    <li>The user needs to adjust amounts, quantities, or other values quickly.</li>
+    <li>The user needs to adjust values for a specific step (for example, in a shopping cart).</li>
+</ul>
+Do not use the step input if:
+<ul>
+    <li>The user needs to enter a static number (for example, postal code, phone number, or ID). In this case, use the regular input field control instead.</li>
+    <li>You want to display a value that rarely needs to be adjusted and does not pertain to a particular step. In this case, use the regular input field control instead.</li>
+    <li>You want the user to enter dates and times. In this case, use the date picker, date range selection, time picker, or date/time picker instead.</li>
+</ul>
+
+
 {: .docs-intro}
 
 
 ## Step Input with Cozy
-Cozy Mode is the default one, it should be used in mobile and tablet devices.
+On smartphones and tablets, the step input is shown in cozy mode (default).
 
 {% capture step-input-cozy %}
 <div class="fd-step-input">
@@ -73,8 +86,8 @@ Cozy Mode is the default one, it should be used in mobile and tablet devices.
 
 
 ## Compact Step Input
-Step Input can be used in compact mode, which is done to be used in desktop, or larger screen devices. 
-it can be achieved by adding `--compact` modifier to main element, button and input elements.
+The Step Input should be used in compact mode when using a desktop of devices with large screens. 
+It can be achieved by adding the `--compact` modifier to the main element as well as the button and input elements.
 
 {% capture step-input-compact %}
 <div class="fd-form-item fd-form-item--horizontal">
@@ -141,8 +154,8 @@ it can be achieved by adding `--compact` modifier to main element, button and in
 {% include display-component.html component=step-input-compact %}
 
 ## Step Input with Different states
-Step Input Component also supports semantic states, same as for every form. They can be achieved by adding
-`is-error` | `is-success` | `is-warning` | `is-information`  into `fd-step-input` element.
+The Step Input component also supports semantic states as does every form. 
+The semantic states can be customized by adding the `is-error` | `is-success` | `is-warning` | or `is-information` into the fd-step-input element.
 
 {% capture step-input-states %}
 
