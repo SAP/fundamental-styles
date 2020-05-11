@@ -1,22 +1,16 @@
 @import "./mixins";
+@import "./new-settings";
 
 $block: #{$fd-namespace}-step-input;
 
 .#{$block} {
   $fd-button-icon-font-size: 0.875rem;
   $fd-step-input-cozy-height: 2.25rem;
-  $fd-step-input-compact-height: 1.5rem;
+  $fd-step-input-compact-height: 1.625rem;
   $fd-step-input-cozy-button-width: 2.125rem;
   $fd-step-input-compact-button-width: 1.5rem;
   $fd-step-input-description-padding: 0.5rem;
-
-  @mixin iconSize($size) {
-    &::before,
-    &::after {
-      font-size: $size;
-      margin: 0;
-    }
-  }
+  $fd-step-input-semantic-border-offset: 0.125rem;
 
   @include fd-reset();
   @include fd-form-states();
@@ -28,7 +22,7 @@ $block: #{$fd-namespace}-step-input;
   border-color: var(--sapField_BorderColor);
   border-radius: var(--sapField_BorderCornerRadius);
   background-color: var(--sapField_Background);
-  height: calc(#{$fd-step-input-cozy-height} + 2 * var(--sapField_BorderWidth));
+  height: $fd-step-input-cozy-height;
   display: inline-flex;
   align-items: center;
   line-height: 0;
@@ -44,11 +38,16 @@ $block: #{$fd-namespace}-step-input;
     align-items: center;
     justify-content: center;
 
+    &::before,
+    &::after {
+      font-size: $fd-button-icon-font-size;
+      margin: 0;
+    }
+
     @include fd-focus() {
       outline: none;
 
-      &,
-      &:hover {
+      @include fd-hover() {
         z-index: auto;
       }
     }
@@ -57,8 +56,6 @@ $block: #{$fd-namespace}-step-input;
       width: $fd-step-input-compact-button-width;
       min-width: $fd-step-input-compact-button-width;
     }
-
-    @include iconSize($fd-button-icon-font-size);
   }
 
   &__input.#{$fd-namespace}-input {
@@ -88,21 +85,21 @@ $block: #{$fd-namespace}-step-input;
   &.is-error,
   &.is-warning {
     .#{$block}__button.#{$fd-namespace}-button {
-      width: calc(#{$fd-step-input-cozy-button-width} - 0.125rem);
-      min-width: calc(#{$fd-step-input-cozy-button-width} - 0.125rem);
+      width: calc(#{$fd-step-input-cozy-button-width} - #{$fd-step-input-semantic-border-offset});
+      min-width: calc(#{$fd-step-input-cozy-button-width} - #{$fd-step-input-semantic-border-offset});
     }
   }
 
   &--compact {
-    height: calc(#{$fd-step-input-compact-height} + 2 * var(--sapField_BorderWidth));
+    height: $fd-step-input-compact-height;
 
     /** Width is different due to different border width  */
     &.is-information,
     &.is-error,
     &.is-warning {
       .#{$block}__button.#{$fd-namespace}-button {
-        width: calc(#{$fd-step-input-compact-button-width} - 0.125rem);
-        min-width: calc(#{$fd-step-input-compact-button-width} - 0.125rem);
+        width: calc(#{$fd-step-input-compact-button-width} - #{$fd-step-input-semantic-border-offset});
+        min-width: calc(#{$fd-step-input-compact-button-width} - #{$fd-step-input-semantic-border-offset});
       }
     }
   }
