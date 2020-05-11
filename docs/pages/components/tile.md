@@ -20,6 +20,8 @@ The large (default) tiles are designed for screens larger than 374px. For smalle
     <li>Large Tile - 11 x 11rem</li>
     <li>Small Tile - 9.25 x 9.25rem</li>
 </ul>
+
+*The background-colors are used to illustrate the tile sections in the documentation page.
 {% capture tile-sizes %}
 <div class="docs-section-container">
     <div tabindex="0" class="fd-tile">
@@ -110,7 +112,7 @@ The tiles header, content and footer can be split into two columns with a 0.25re
     </li>
 </ul>
 
-*The blue background of the sections is used to illustrate the sections in the documentation page. 
+*The background color is used to illustrate the column sections in the documentation page. 
 {% capture tile-sizes %}
 <div class="docs-section-container">
     <div tabindex="0" class="fd-tile">
@@ -172,6 +174,215 @@ The tiles header, content and footer can be split into two columns with a 0.25re
 </div>
 {% endcapture %}
 {% include display-component.html component=tile-sizes %}
+
+<br>
+
+## Launch Tile
+
+Structure of the Numeric Content
+<ul class="docs-ul">
+    <li>Launch Icon Container - <code>fd-numeric-content__launch-icon-container</code>
+        <ul class="docs-ul">
+            <li>Launch Icon - <code>fd-numeric-content__launch-icon sap-icon--line-charts</code></li>
+        </ul>
+    </li>
+    <li>KPI Container <strong>(optional)</strong> - <code>fd-numeric-content__kpi-container</code>
+        <ul class="docs-ul">
+            <li>KPI <strong>(optional)</strong> - <code>fd-numeric-content__kpi</code>
+                <ul class="docs-ul">
+                    <li>States:
+                        <ul class="docs-ul">
+                            <li>neutral (default)</li>
+                            <li>positive - <code>fd-numeric-content__kpi--positive</code></li>
+                            <li>negative - <code>fd-numeric-content__kpi--negative</code></li>
+                            <li>critical - <code>fd-numeric-content__kpi--critical</code></li>
+                            <li>informative - <code>fd-numeric-content__kpi--informative</code></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Scale Container <strong>(optional)</strong> - <code>fd-numeric-content__scale-container</code>
+        <ul class="docs-ul">
+            <li>Scale <strong>(optional)</strong> - <code>fd-numeric-content__scale</code>
+                 <ul class="docs-ul">
+                    <li>States:
+                        <ul class="docs-ul">
+                            <li>neutral (default)</li>
+                            <li>positive - <code>fd-numeric-content__scale--positive</code></li>
+                            <li>negative - <code>fd-numeric-content__scale--negative</code></li>
+                            <li>critical - <code>fd-numeric-content__scale--critical</code></li>
+                            <li>informative - <code>fd-numeric-content__scale--informative</code></li>
+                        </ul>
+                    </li>
+                    <li>Deviation Arrows <strong>(optional)</strong>: <code>sap-icon--down</code> or <code>sap-icon--up</code></li>
+                    <li>Text <strong>(optional)</strong>: <code>fd-numeric-content__scale-text</code></li>
+                 </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<br>
+Numeric Content Sizes:
+<ul class="docs-ul">
+    <li>L-Numeric Content size. Longest combination for 4-character languages</li>
+    <li>M-Numeric Content size. Longest combination for 6-character languages</li>
+    <li>S-Numeric Content size. Longest combination for 8-character languages</li>
+</ul>
+
+<br>
+The header contains a maximum of 3 lines title or a maximum of 2 lines title with 1 line subtitle.
+For 4 lines of title and an optional 1 line of subtitle use `fd-tile__header-content` that represents a header and content containers merged to one.
+
+{% capture tile-launch %}
+<h4>Launch Tile With Numeric Content and Launch Icon</h4>
+<br>
+<div class="docs-section-container">
+    <div tabindex="0" class="fd-tile fd-tile--launch">
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Launch Tile Title Text</div>
+            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
+        </div>
+        <div class="fd-tile__content">
+            <div class="fd-numeric-content">
+                <div class="fd-numeric-content__launch-icon-container">
+                    <span class="fd-numeric-content__launch-icon sap-icon--line-charts"></span>
+                </div>
+                <div class="fd-numeric-content__kpi-container">
+                    <div class="fd-numeric-content__kpi fd-numeric-content__kpi--negative">1Ñç</div>
+                </div>
+                <div class="fd-numeric-content__scale-container">
+                    <div class="fd-numeric-content__scale fd-numeric-content__scale--negative">
+                        <span class="fd-numeric-content__scale-arrow sap-icon--down"></span>
+                        <span class="fd-numeric-content__scale-text">M</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fd-tile__footer fd-tile__footer--2-col">
+            <div class="fd-tile__section">
+                <span class="sap-icon--refresh fd-tile__refresh"></span>
+                <span class="fd-tile__footer-text">Now</span>
+            </div>
+            <div class="fd-tile__section"><span class="fd-tile__footer-text">Footer</span></div>
+        </div>
+    </div>
+    <div tabindex="0" class="fd-tile fd-tile--launch fd-tile--s">
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Launch Tile Title Text</div>
+            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
+        </div>
+        <div class="fd-tile__content">
+            <div class="fd-numeric-content fd-numeric-content--small-tile">
+                <div class="fd-numeric-content__launch-icon-container">
+                    <span class="fd-numeric-content__launch-icon sap-icon--line-charts"></span>
+                </div>
+                <div class="fd-numeric-content__kpi-container">
+                    <div class="fd-numeric-content__kpi fd-numeric-content__kpi--positive">1234</div>
+                </div>
+            </div>
+        </div>
+        <div class="fd-tile__footer">
+            <span class="fd-tile__footer-text">Unit, Notification</span>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<h4>Launch Tile With Combined Header and Content</h4>
+<br>
+<div class="docs-section-container">
+    <div tabindex="0" class="fd-tile fd-tile--launch">
+        <div class="fd-tile__header-content">
+            <div class="fd-tile__title">Launch Tile Title Text Lorem ipsum dolor sit amet, consectetur elit</div>
+            <div class="fd-tile__subtitle">Subtitle Text</div>
+        </div>
+        <div class="fd-tile__footer fd-tile__footer--2-col">
+            <div class="fd-tile__section">
+                <span class="sap-icon--refresh fd-tile__refresh"></span>
+                <span class="fd-tile__footer-text">Now</span>
+            </div>
+            <div class="fd-tile__section"><span class="fd-tile__footer-text">Footer</span></div>
+        </div>
+    </div>
+    <div tabindex="0" class="fd-tile fd-tile--s fd-tile--launch">
+        <div class="fd-tile__header-content">
+            <div class="fd-tile__title">Launch Tile Title Text Lorem ipsum dolor sit amet, consectetur elit</div>
+            <div class="fd-tile__subtitle">Subtitle Text</div>
+        </div>
+        <div class="fd-tile__footer fd-tile__footer--2-col">
+            <div class="fd-tile__section">
+                <span class="sap-icon--refresh fd-tile__refresh"></span>
+                <span class="fd-tile__footer-text">Now</span>
+            </div>
+            <div class="fd-tile__section"><span class="fd-tile__footer-text">Footer</span></div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<h4>Launch Tile (Profile)</h4>
+<br>
+<div class="docs-section-container">
+    <div tabindex="0" class="fd-tile fd-tile--launch">
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
+            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
+        </div>
+        <div class="fd-tile__content">
+            <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/60/60/nature')" role="presentation" aria-label="Profile Image"></span>
+        </div>
+        <div class="fd-tile__footer">
+            <span class="fd-tile__footer-text">Footer Text</span>
+        </div>
+    </div>
+    <div tabindex="0" class="fd-tile fd-tile--launch fd-tile--s">
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
+            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
+        </div>
+        <div class="fd-tile__content">
+            <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/50/50/nature')" role="presentation" aria-label="Profile Image"></span>
+        </div>
+        <div class="fd-tile__footer">
+            <span class="fd-tile__footer-text">Unit, Notification</span>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<h4>Launch Tile (Logo)</h4>
+<br>
+<div class="docs-section-container">
+    <div tabindex="0" class="fd-tile fd-tile--launch">
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Launch Tile (Logo) Title Text</div>
+            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
+        </div>
+        <div class="fd-tile__content">
+            <img class="fd-tile__logo" src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" alt="SAP">
+        </div>
+        <div class="fd-tile__footer">
+            <span class="fd-tile__footer-text">Footer Text</span>
+        </div>
+    </div>
+    <div tabindex="0" class="fd-tile fd-tile--launch fd-tile--s">
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Launch Tile (Logo) Title Text</div>
+            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
+        </div>
+        <div class="fd-tile__content">
+            <img class="fd-tile__logo" src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" alt="SAP">
+        </div>
+        <div class="fd-tile__footer">
+            <span class="fd-tile__footer-text">Unit, Notification</span>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=tile-launch %}
 
 <br>
 
@@ -378,180 +589,6 @@ Structure of the Numeric Content
 
 <br>
 
-## Launch Tile
-
-Structure of the Numeric Content
-<ul class="docs-ul">
-    <li>Launch Icon Container - <code>fd-numeric-content__launch-icon-container</code>
-        <ul class="docs-ul">
-            <li>Launch Icon - <code>fd-numeric-content__launch-icon sap-icon--line-charts</code></li>
-        </ul>
-    </li>
-    <li>KPI Container <strong>(optional)</strong> - <code>fd-numeric-content__kpi-container</code>
-        <ul class="docs-ul">
-            <li>KPI <strong>(optional)</strong> - <code>fd-numeric-content__kpi</code>
-                <ul class="docs-ul">
-                    <li>States:
-                        <ul class="docs-ul">
-                            <li>neutral (default)</li>
-                            <li>positive - <code>fd-numeric-content__kpi--positive</code></li>
-                            <li>negative - <code>fd-numeric-content__kpi--negative</code></li>
-                            <li>critical - <code>fd-numeric-content__kpi--critical</code></li>
-                            <li>informative - <code>fd-numeric-content__kpi--informative</code></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li>Scale Container <strong>(optional)</strong> - <code>fd-numeric-content__scale-container</code>
-        <ul class="docs-ul">
-            <li>Scale <strong>(optional)</strong> - <code>fd-numeric-content__scale</code>
-                 <ul class="docs-ul">
-                    <li>States:
-                        <ul class="docs-ul">
-                            <li>neutral (default)</li>
-                            <li>positive - <code>fd-numeric-content__scale--positive</code></li>
-                            <li>negative - <code>fd-numeric-content__scale--negative</code></li>
-                            <li>critical - <code>fd-numeric-content__scale--critical</code></li>
-                            <li>informative - <code>fd-numeric-content__scale--informative</code></li>
-                        </ul>
-                    </li>
-                    <li>Deviation Arrows <strong>(optional)</strong>: <code>sap-icon--down</code> or <code>sap-icon--up</code></li>
-                    <li>Text <strong>(optional)</strong>: <code>fd-numeric-content__scale-text</code></li>
-                 </ul>
-            </li>
-        </ul>
-    </li>
-</ul>
-
-<br>
-Numeric Content Sizes:
-<ul class="docs-ul">
-    <li>L-Numeric Content size. Longest combination for 4-character languages</li>
-    <li>M-Numeric Content size. Longest combination for 6-character languages</li>
-    <li>S-Numeric Content size. Longest combination for 8-character languages</li>
-</ul>
-
-{% capture tile-launch %}
-<h4>Launch Tile With Numeric Content and Launch Icon</h4>
-<br>
-<div class="docs-section-container">
-    <div tabindex="0" class="fd-tile fd-tile--launch">
-        <div class="fd-tile__header">
-            <div class="fd-tile__title">Launch Tile Title Text</div>
-            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
-        </div>
-        <div class="fd-tile__content">
-            <div class="fd-numeric-content">
-                <div class="fd-numeric-content__launch-icon-container">
-                    <span class="fd-numeric-content__launch-icon sap-icon--line-charts"></span>
-                </div>
-                <div class="fd-numeric-content__kpi-container">
-                    <div class="fd-numeric-content__kpi fd-numeric-content__kpi--negative">1Ñç</div>
-                </div>
-                <div class="fd-numeric-content__scale-container">
-                    <div class="fd-numeric-content__scale fd-numeric-content__scale--negative">
-                        <span class="fd-numeric-content__scale-arrow sap-icon--down"></span>
-                        <span class="fd-numeric-content__scale-text">M</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="fd-tile__footer fd-tile__footer--2-col">
-            <div class="fd-tile__section">
-                <span class="sap-icon--refresh fd-tile__refresh"></span>
-                <span class="fd-tile__footer-text">Now</span>
-            </div>
-            <div class="fd-tile__section"><span class="fd-tile__footer-text">Footer</span></div>
-        </div>
-    </div>
-    <div tabindex="0" class="fd-tile fd-tile--kpi fd-tile--s">
-        <div class="fd-tile__header">
-            <div class="fd-tile__title">Launch Tile Title Text</div>
-            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
-        </div>
-        <div class="fd-tile__content">
-            <div class="fd-numeric-content fd-numeric-content--small-tile">
-                <div class="fd-numeric-content__launch-icon-container">
-                    <span class="fd-numeric-content__launch-icon sap-icon--line-charts"></span>
-                </div>
-                <div class="fd-numeric-content__kpi-container">
-                    <div class="fd-numeric-content__kpi fd-numeric-content__kpi--positive">1234</div>
-                </div>
-            </div>
-        </div>
-        <div class="fd-tile__footer">
-            <span class="fd-tile__footer-text">Unit, Notification</span>
-        </div>
-    </div>
-</div>
-
-<br>
-<br>
-<h4>Launch Tile (Profile)</h4>
-<br>
-<div class="docs-section-container">
-    <div tabindex="0" class="fd-tile fd-tile--launch">
-        <div class="fd-tile__header">
-            <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
-            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
-        </div>
-        <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/60/60/nature')" role="presentation" aria-label="Profile Image"></span>
-        </div>
-        <div class="fd-tile__footer">
-            <span class="fd-tile__footer-text">Footer Text</span>
-        </div>
-    </div>
-    <div tabindex="0" class="fd-tile fd-tile--kpi fd-tile--s">
-        <div class="fd-tile__header">
-            <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
-            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
-        </div>
-        <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/50/50/nature')" role="presentation" aria-label="Profile Image"></span>
-        </div>
-        <div class="fd-tile__footer">
-            <span class="fd-tile__footer-text">Unit, Notification</span>
-        </div>
-    </div>
-</div>
-<br>
-<br>
-<h4>Launch Tile (Logo)</h4>
-<br>
-<div class="docs-section-container">
-    <div tabindex="0" class="fd-tile fd-tile--launch">
-        <div class="fd-tile__header">
-            <div class="fd-tile__title">Launch Tile (Logo) Title Text</div>
-            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
-        </div>
-        <div class="fd-tile__content">
-            <img class="fd-tile__logo" src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" alt="SAP">
-        </div>
-        <div class="fd-tile__footer">
-            <span class="fd-tile__footer-text">Footer Text</span>
-        </div>
-    </div>
-    <div tabindex="0" class="fd-tile fd-tile--kpi fd-tile--s">
-        <div class="fd-tile__header">
-            <div class="fd-tile__title">Launch Tile (Logo) Title Text</div>
-            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
-        </div>
-        <div class="fd-tile__content">
-            <img class="fd-tile__logo" src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" alt="SAP">
-        </div>
-        <div class="fd-tile__footer">
-            <span class="fd-tile__footer-text">Unit, Notification</span>
-        </div>
-    </div>
-</div>
-{% endcapture %}
-{% include display-component.html component=tile-launch %}
-
-<br>
-
 ## Feed Tile
 
 {% capture tile-feed %}
@@ -593,7 +630,7 @@ Numeric Content Sizes:
                 </div>
             </div>
             <div class="fd-tile__section">
-                <div class="fd-numeric-content">
+                <div class="fd-numeric-content fd-numeric-content--m">
                     <div class="fd-numeric-content__kpi-container">
                         <div class="fd-numeric-content__kpi fd-numeric-content__kpi--negative">9</div>
                     </div>

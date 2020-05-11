@@ -64,7 +64,8 @@ $fd-tile-refresh-icon-spacing: 0.5rem !default;
   // ELEMENTS
   &__header,
   &__content,
-  &__footer {
+  &__footer,
+  &__header-content {
     @include fd-reset();
 
     overflow: hidden;
@@ -82,6 +83,12 @@ $fd-tile-refresh-icon-spacing: 0.5rem !default;
 
   &__content {
     @include set-height(3.875rem);
+
+    margin-bottom: $fd-tile-inner-padding;
+  }
+
+  &__header-content {
+    @include set-height(7.75rem);
 
     margin-bottom: $fd-tile-inner-padding;
   }
@@ -111,7 +118,7 @@ $fd-tile-refresh-icon-spacing: 0.5rem !default;
 
   &__title {
     color: var(--sapTile_TitleTextColor);
-    font-size: var(--sapFontLargeSize);
+    font-size: var(--sapFontHeader5Size);
   }
 
   &__refresh {
@@ -162,12 +169,16 @@ $fd-tile-refresh-icon-spacing: 0.5rem !default;
       @include set-height(3.438rem);
     }
 
+    .#{$block}__header-content {
+      @include set-height(6.938rem);
+    }
+
     .#{$block}__footer {
       @include set-height(1.063rem);
     }
 
     .#{$block}__title {
-      font-size: var(--sapFontSize);
+      font-size: var(--sapFontHeader6Size);
     }
 
     .#{$block}__footer-text {

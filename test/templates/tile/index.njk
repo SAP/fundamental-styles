@@ -8,20 +8,28 @@
   }
 </style>
 
-<h2>Numeric Content</h2>
+<h2>Tile</h2>
 {% set example %}
 <h4>Generic Tile Sizes (Responsiveness)</h4>
 <br>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
   <div class="fd-tile">
-      <div class="fd-tile__header"></div>
-      <div class="fd-tile__content"></div>
-      <div class="fd-tile__footer"></div>
+      <div class="fd-tile__header" style="background-color: lightcyan"></div>
+      <div class="fd-tile__content" style="background-color: moccasin"></div>
+      <div class="fd-tile__footer" style="background-color: lightgreen"></div>
   </div>
   <div class="fd-tile fd-tile--s">
-      <div class="fd-tile__header"></div>
-      <div class="fd-tile__content"></div>
-      <div class="fd-tile__footer"></div>
+      <div class="fd-tile__header" style="background-color: lightcyan"></div>
+      <div class="fd-tile__content" style="background-color: moccasin"></div>
+      <div class="fd-tile__footer" style="background-color: lightgreen"></div>
+  </div>
+<div class="fd-tile">
+      <div class="fd-tile__header-content" style="background-color: lightcyan"></div>
+      <div class="fd-tile__footer" style="background-color: lightgreen"></div>
+  </div>
+  <div class="fd-tile fd-tile--s">
+      <div class="fd-tile__header-content" style="background-color: lightcyan"></div>
+      <div class="fd-tile__footer" style="background-color: lightgreen"></div>
   </div>
 </div>
 <br>
@@ -29,27 +37,26 @@
 <br>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
   <div class="fd-tile">
-      <div class="fd-tile__header"></div>
-      <div class="fd-tile__content"></div>
-      <div class="fd-tile__footer"></div>
+      <div class="fd-tile__header" style="background-color: lightcyan"></div>
+      <div class="fd-tile__content" style="background-color: moccasin"></div>
+      <div class="fd-tile__footer" style="background-color: lightgreen"></div>
   </div>
       <div class="fd-tile fd-tile--double">
-      <div class="fd-tile__header"></div>
-      <div class="fd-tile__content"></div>
-      <div class="fd-tile__footer"></div>
+      <div class="fd-tile__header" style="background-color: lightcyan"></div>
+      <div class="fd-tile__content" style="background-color: moccasin"></div>
+      <div class="fd-tile__footer" style="background-color: lightgreen"></div>
   </div>
   <div class="fd-tile fd-tile--s">
-      <div class="fd-tile__header"></div>
-      <div class="fd-tile__content"></div>
-      <div class="fd-tile__footer"></div>
+      <div class="fd-tile__header" style="background-color: lightcyan"></div>
+      <div class="fd-tile__content" style="background-color: moccasin"></div>
+      <div class="fd-tile__footer" style="background-color: lightgreen"></div>
   </div>
       <div class="fd-tile fd-tile--s fd-tile--double">
-      <div class="fd-tile__header"></div>
-      <div class="fd-tile__content"></div>
-      <div class="fd-tile__footer"></div>
+      <div class="fd-tile__header" style="background-color: lightcyan"></div>
+      <div class="fd-tile__content" style="background-color: moccasin"></div>
+      <div class="fd-tile__footer" style="background-color: lightgreen"></div>
   </div>
 </div>
-
 <br>
 <h4>Generic Tile Content Columns</h4>
 <br>
@@ -111,12 +118,9 @@
       </div>
   </div>
 </div>
-{% endset %}
-{{ format(example) }}
-
-
-<h2>KPI Tile</h2>
-{% set example %}
+<br>
+<h4>KPI Tile</h4>
+<br>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
   <div class="fd-tile fd-tile--kpi">
       <div class="fd-tile__header">
@@ -147,11 +151,32 @@
       </div>
   </div>
 </div>
-{% endset %}
-{{ format(example) }}
-
-<h2>Launch Tile - Profile</h2>
-{% set example %}
+<br>
+<h4>Launch Tile - Header+Content</h4>
+<br>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
+  <div class="fd-tile fd-tile--launch">
+      <div class="fd-tile__header-content">
+          <div class="fd-tile__title">Launch Tile Title Text Lorem ipsum dolor sit amet, consectetur elit</div>
+          <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
+      </div>
+      <div class="fd-tile__footer">
+          <span class="fd-tile__footer-text">Footer Text</span>
+      </div>
+  </div>
+  <div class="fd-tile fd-tile--launch fd-tile--s">
+      <div class="fd-tile__header-content">
+          <div class="fd-tile__title">Launch Tile Title Text Lorem ipsum dolor sit amet, consectetur elit</div>
+          <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
+      </div>
+      <div class="fd-tile__footer">
+          <span class="fd-tile__footer-text">Unit, Notification</span>
+      </div>
+  </div>
+</div>
+<br>
+<h4>Launch Tile - Profile</h4>
+<br>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
   <div class="fd-tile fd-tile--launch">
       <div class="fd-tile__header">
@@ -165,7 +190,7 @@
           <span class="fd-tile__footer-text">Footer Text</span>
       </div>
   </div>
-  <div class="fd-tile fd-tile--kpi fd-tile--s">
+  <div class="fd-tile fd-tile--launch fd-tile--s">
       <div class="fd-tile__header">
           <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
           <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
@@ -178,12 +203,9 @@
       </div>
   </div>
 </div>
-
-{% endset %}
-{{ format(example) }}
-
-<h2>Launch Tile - Logo</h2>
-{% set example %}
+<br>
+<h4>Launch Tile - Logo</h4>
+<br>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
   <div class="fd-tile fd-tile--launch">
       <div class="fd-tile__header">
@@ -197,7 +219,7 @@
           <span class="fd-tile__footer-text">Footer Text</span>
       </div>
   </div>
-  <div class="fd-tile fd-tile--kpi fd-tile--s">
+  <div class="fd-tile fd-tile--launch fd-tile--s">
       <div class="fd-tile__header">
           <div class="fd-tile__title">Launch Tile (Logo) Title Text</div>
           <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
@@ -210,13 +232,9 @@
       </div>
   </div>
 </div>
-
-{% endset %}
-{{ format(example) }}
-
-
-<h2>Feed Tile</h2>
-{% set example %}
+<br>
+<h4>Feed Tile</h4>
+<br>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
   <div class="fd-tile fd-tile--double fd-tile--feed">
       <div class="fd-tile__header">
