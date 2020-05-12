@@ -445,7 +445,7 @@ To add text in the body of the component, simply include your text in the `fd-li
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h07jjhYH">
          <ul class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
-            <li class="fd-list__message fd-list__message--success">Success message</li>
+            <div aria-live="assertive" class="fd-list__message fd-list__message--success" role="alert">Success message</div>
             <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
                <span class="fd-list__title">
                    List Item 1
@@ -484,7 +484,7 @@ To add text in the body of the component, simply include your text in the `fd-li
    </div>
    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h07j9978H">
         <ul class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
-           <li class="fd-list__message fd-list__message--error">Error message</li>
+           <div aria-live="assertive" class="fd-list__message fd-list__message--error" role="alert">Error message</div>
            <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
               <span class="fd-list__title">
                   List Item 1
@@ -523,7 +523,7 @@ To add text in the body of the component, simply include your text in the `fd-li
    </div>
    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h07j998hhH">
         <ul class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
-           <li class="fd-list__message fd-list__message--warning">Warning message</li>
+           <div aria-live="assertive" class="fd-list__message fd-list__message--warning" role="alert">Warning message</div>
            <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
               <span class="fd-list__title">
                   List Item 1
@@ -562,7 +562,7 @@ To add text in the body of the component, simply include your text in the `fd-li
    </div>
    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="hkhh998hhH">
         <ul class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
-           <li class="fd-list__message fd-list__message--information">Information message</li>
+           <div aria-live="assertive" class="fd-list__message fd-list__message--information" role="alert">Information message</div>
            <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
               <span class="fd-list__title">
                   List Item 1
@@ -612,7 +612,7 @@ select component in `dialog` and `bar` components.
         </header>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
             <ul class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
-                <li class="fd-list__message fd-list__message--information">Choose one item</li>
+                <div aria-live="assertive" class="fd-list__message fd-list__message--information" role="alert">Choose one item</div>
                 <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
                    <span class="fd-list__title">Apple</span>
                </li>
