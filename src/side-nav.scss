@@ -4,6 +4,7 @@
 
 /*!
 .fd-side-nav
+    .fd-side-nav__skip-link
     .fd-side-nav__group
         .fd-side-nav__title
         .fd-side-nav__list
@@ -28,6 +29,37 @@ $has-child-content-arrow-margin: 0.125rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  &__skip-link {
+    @include fd-reset();
+    @include fd-screen-reader-only();
+
+    &:focus {
+      @include fd-link();
+      position: static;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &__group-header {
+    @include fd-reset();
+
+    height: 2.75rem;
+    background: var(--sapList_GroupHeaderBackground);
+    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_GroupHeaderBorderColor);
+    color: var(--sapList_GroupHeaderTextColor);
+    display: flex;
+    align-items: flex-end;
+    font-size: var(--sapFontSize);
+    font-weight: bold;
+    line-height: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
   &__main-navigation {
     @include fd-reset();
