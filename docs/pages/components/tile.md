@@ -643,3 +643,94 @@ Structure of the Numeric Content
 </div>
 {% endcapture %}
 {% include display-component.html component=tile-feed %}
+
+<br>
+
+## Badge Tile
+Badges are used to display very short and important information.
+Use a badge on a Tile if the Tile new or it has been newly added. 
+Tiles do not display badges in action/edit mode. 
+{% capture tile-badge %}
+<div class="docs-section-container">
+    <div tabindex="0" class="fd-tile fd-tile--launch">
+        <div class="fd-badge">Badge</div>
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
+            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
+        </div>
+        <div class="fd-tile__content">
+            <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/60/60/nature')" role="presentation" aria-label="Profile Image"></span>
+        </div>
+        <div class="fd-tile__footer">
+            <span class="fd-tile__footer-text">Footer Text</span>
+        </div>
+    </div>
+    <div tabindex="0" class="fd-tile fd-tile--launch fd-tile--s">
+        <div class="fd-badge">Badge with a very very very very very very very very very long text</div>
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
+            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
+        </div>
+        <div class="fd-tile__content">
+            <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/50/50/nature')" role="presentation" aria-label="Profile Image"></span>
+        </div>
+        <div class="fd-tile__footer">
+            <span class="fd-tile__footer-text">Unit, Notification</span>
+        </div>
+    </div>
+</div>
+<div class="docs-section-container">
+    <div tabindex="0" class="fd-tile fd-tile--double fd-tile--feed">
+        <div class="fd-badge">New</div>
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Feed Tile Title Text sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+            <div class="fd-tile__subtitle">Feed Tile Subtitle Text</div>
+        </div>
+        <div class="fd-tile__content fd-tile__content--2-col">
+            <div class="fd-tile__section">
+                <div class="fd-tile__content-text-container">
+                    <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt magna aliqua.</div>
+                    <div class="fd-tile__content-byline">About 1 minute ago.</div>
+                </div>
+            </div>
+            <div class="fd-tile__section">
+                <div class="fd-numeric-content">
+                    <div class="fd-numeric-content__kpi-container">
+                        <div class="fd-numeric-content__kpi">35</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fd-tile__footer">
+            <span class="fd-tile__footer-text">Footer</span>
+        </div>
+    </div>
+    <div tabindex="0" class="fd-tile fd-tile--double fd-tile--s fd-tile--feed">
+        <div class="fd-badge">Badge with a very very very very very very very very very long text</div>
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Feed Tile Title Text sed do eiusmod</div>
+            <div class="fd-tile__subtitle">Feed Tile Subtitle Text</div>
+        </div>
+        <div class="fd-tile__content fd-tile__content--2-col">
+            <div class="fd-tile__section">
+                <div class="fd-tile__content-text-container">
+                    <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod.</div>
+                    <div class="fd-tile__content-byline">About 1 minute ago.</div>
+                </div>
+            </div>
+            <div class="fd-tile__section">
+                <div class="fd-numeric-content fd-numeric-content--m">
+                    <div class="fd-numeric-content__kpi-container">
+                        <div class="fd-numeric-content__kpi fd-numeric-content__kpi--negative">9</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fd-tile__footer">
+            <span class="fd-tile__footer-text">Footer</span>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=tile-badge %}
+

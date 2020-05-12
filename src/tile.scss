@@ -41,6 +41,7 @@ $fd-tile-refresh-icon-spacing: 0.5rem !default;
   @include set-height(11rem);
   @include set-width(11rem);
 
+  position: relative;
   padding: $fd-tile-padding;
   background: var(--sapTile_Background);
   box-shadow: var(--sapContent_Shadow0);
