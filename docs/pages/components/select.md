@@ -398,7 +398,7 @@ The disabled state can also be achieved by adding the `.is-disabled` class or th
 <div class="fd-popover">
     <div class="fd-popover__control" aria-disabled="true" disabled>
         <div class="fd-select">
-            <div class="fd-select__control" role="button" tabindex="0" aria-expanded="false" aria-haspopup="false" aria-disabled="true" disabled>
+            <div class="fd-select__control" role="button" aria-expanded="false" aria-haspopup="false" aria-disabled="true" disabled>
                 Select
                 <span class="fd-button sap-icon--slim-arrow-down fd-select__button"></span>
             </div>
@@ -418,7 +418,7 @@ This can also be done by adding the `.is-readonly` class or the `aria-readonly="
 <div class="fd-popover">
     <div class="fd-popover__control" aria-expanded="false" aria-haspopup="false" aria-readonly="true" readonly>
         <div class="fd-select">
-            <div class="fd-select__control" role="button" tabindex="0" aria-expanded="false" aria-haspopup="false" aria-readonly="true" readonly>
+            <div class="fd-select__control" role="button" aria-expanded="false" aria-haspopup="false" aria-readonly="true" readonly>
                 Select
            </div>
         </div>
@@ -613,28 +613,28 @@ select component in `dialog` and `bar` components.
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
             <ul class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
                 <li class="fd-list__message fd-list__message--information">Choose one item</li>
-                <li role="option" class="fd-list__item is-selected" aria-selected="true">
+                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
                    <span class="fd-list__title">Apple</span>
                </li>
-               <li role="option" class="fd-list__item">
+               <li role="option" tabindex="0" class="fd-list__item">
                    <span class="fd-list__title">Orange</span>
                </li>
-               <li role="option" class="fd-list__item">
+               <li role="option" tabindex="0" class="fd-list__item">
                    <span class="fd-list__title">Banana</span>
                </li>
-                <li role="option" class="fd-list__item">
+                <li role="option" tabindex="0" class="fd-list__item">
                    <span class="fd-list__title">Kiwi</span>
                 </li>
-                <li role="option" class="fd-list__item">
+                <li role="option" tabindex="0" class="fd-list__item">
                     <span class="fd-list__title">Tomato</span>
                 </li>
-                <li role="option" class="fd-list__item">
+                <li role="option" tabindex="0" class="fd-list__item">
                     <span class="fd-list__title">Onion</span>
                 </li>
-                <li role="option" class="fd-list__item">
+                <li role="option" tabindex="0" class="fd-list__item">
                     <span class="fd-list__title">Spinach</span>
                 </li>
-                <li role="option" class="fd-list__item">
+                <li role="option" tabindex="0" class="fd-list__item">
                     <span class="fd-list__title">Potato</span>
                 </li>
             </ul>
