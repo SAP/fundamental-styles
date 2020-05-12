@@ -10,7 +10,7 @@ summary:
 ---
 
 
-Tiles are used in SAP Fiori launchpad home page to represent an app. They can display different types of content, which is based on data supplied by the app. They can contain an icon, a title, an informative text, KPIs, counters, and charts.
+Tiles can be used to represent an app similar to the SAP Fiori launchpad home page. They can display different types of content, which are based on the data supplied by the app. They can contain an icon, a title, an informative text, KPIs, counters and charts.
 {: .docs-intro}
 
 ## Generic Tile Sizes (Responsiveness)
@@ -53,7 +53,7 @@ The layout of the generic tile is fixed, with designated areas for the header, c
 <ul class="docs-ul">
     <li>Header <code>fd-tile__header</code> - <strong>required</strong>. It contains a title and an (optional) subtitle.
         <ul class="docs-ul">
-            <li>Title <code>fd-tile__title</code> - can have up to two lines of text before it is truncated (or three lines if there is no subtitle).</li>
+            <li>Title <code>fd-tile__title</code> - <strong>required</strong>. Can have up to two lines of text before it is truncated (or three lines if there is no subtitle).</li>
             <li>Subtitle <code>fd-tile__subtitle</code> <strong>optional</strong> - can have one line of text before it is truncated.</li>
         </ul>
     </li>
@@ -233,8 +233,7 @@ Numeric Content Sizes:
 </ul>
 
 <br>
-The header contains a maximum of 3 lines title or a maximum of 2 lines title with 1 line subtitle.
-For 4 lines of title and an optional 1 line of subtitle use `fd-tile__header-content` that represents a header and content containers merged to one.
+The header can contain a maximum of 3 lines; all 3 lines can be used for the title or one of the lines can be used for a subtitle. If a 4 line title or an optional subtitle line is required, the fd-tile_header-content can be used to represent a header and will merge the content containers into one tile.
 
 {% capture tile-launch %}
 <h4>Launch Tile With Numeric Content and Launch Icon</h4>
@@ -387,7 +386,7 @@ For 4 lines of title and an optional 1 line of subtitle use `fd-tile__header-con
 <br>
 
 ## KPI Tile (Numeric Content)
-Key Performance Indicators (KPIs) are used to measure and monitor a company’s performance at a strategic and operational level.The number of digits is limited by the size of the tiles.
+Key Performance Indicators (KPIs) are used to measure and monitor a company’s performance at a strategic and operational level.The KPI Tile control supports a limited number of digits which varies depending on the size of the tile.
 <br>
 <ul class="docs-ul">
     <li>L-Numeric Content size. Longest combination for 4-character languages</li>
