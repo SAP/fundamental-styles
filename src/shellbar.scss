@@ -287,7 +287,8 @@ $block: #{$fd-namespace}-shellbar;
     color: $fd-shellbar-color;
     padding: 0;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: $fd-shell-hover-background;
     }
 
@@ -296,6 +297,7 @@ $block: #{$fd-namespace}-shellbar;
     }
 
     &:hover,
+    &:focus,
     &:active {
       color: $fd-shell-active-text-color;
     }
@@ -321,7 +323,8 @@ $block: #{$fd-namespace}-shellbar;
       content: "\e287";
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: $fd-shell-hover-background;
       border-color: transparent;
     }
