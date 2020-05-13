@@ -153,6 +153,65 @@ It can be achieved by adding the `--compact` modifier to the main element as wel
 {% endcapture %}
 {% include display-component.html component=step-input-compact %}
 
+## Focused Step Input
+By default there is built-in focus indicator for StepInput component, which is not supported by IE11.
+To make focus work on IE11, it should be added by putting `.is-focus` class to component
+
+{% capture step-input-cozy %}
+<div class="fd-step-input is-focus">
+        <button aria-label="Step down" class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+            onclick="stepInputValue('step-20', 'down');"
+            type="button">
+        </button>
+    <input class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    " id="step-20" type="number" value="0">
+        <button aria-label="Step up" class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+            onclick="stepInputValue('step-20', 'up');" 
+            type="button">
+        </button>
+</div>
+<br><br>
+<h3>RTL Support</h3>
+<div dir="rtl">
+    <div class="fd-step-input is-focus">
+            <button aria-label="Step down" class="
+                fd-button
+                fd-button--transparent
+                fd-step-input__button
+                sap-icon--less"
+                onclick="stepInputValue('step-21', 'down');"
+                type="button">
+            </button>
+        <input class="
+                fd-input 
+                fd-input--no-number-spinner 
+                fd-step-input__input
+        " id="step-21" type="number" value="0">
+            <button aria-label="Step up" class="
+                fd-button 
+                fd-button--transparent
+                fd-step-input__button
+                sap-icon--add"
+                onclick="stepInputValue('step-21', 'up');" 
+                type="button">
+            </button>
+    </div>
+    
+</div>
+{% endcapture %}
+{% include display-component.html component=step-input-cozy %}
+
 ## Step Input with Different states
 The Step Input component also supports semantic states as does every form. 
 The semantic states can be customized by adding the `is-error` | `is-success` | `is-warning` | or `is-information` into the fd-step-input element.
