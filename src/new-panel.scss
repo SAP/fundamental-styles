@@ -29,6 +29,11 @@ $block: #{$fd-namespace}-new-panel;
 
   &__content {
     padding: 0.625rem 1rem 1.375rem 1rem;
+    overflow: auto;
+
+    &[aria-hidden="true"] {
+      display: none;
+    }
   }
 
   &__expand {
@@ -38,15 +43,15 @@ $block: #{$fd-namespace}-new-panel;
     @include fd-flex-center();
 
     .#{$fd-namespace}-button {
-      @include fd-icon('slim-arrow-down');
+      @include fd-icon('slim-arrow-right');
 
       &.is-expanded {
-        @include fd-icon('slim-arrow-right');
+        @include fd-icon('slim-arrow-down');
       }
     }
   }
 
-  &--static {
+  &--fixed {
     .#{$block}__header {
       padding-left: 1rem;
     }
