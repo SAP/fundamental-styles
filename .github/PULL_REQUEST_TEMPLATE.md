@@ -13,3 +13,8 @@ Closes SAP/fundamental-styles#
 
 
 ### After:
+
+#### Please check whether the PR fulfills the following requirements
+
+- [ ] all items on the PR Review Checklist are addressed :
+https://github.com/SAP/fundamental-styles/wiki/PR-Review-Checklist
