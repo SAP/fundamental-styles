@@ -25,13 +25,14 @@ Do not use the panel if:
 
 ## Expandable Panel
 Expandable panels are much like fixed panels, except their content can be expanded and collapsed (including the info toolbar, if available).
+{% capture expand-panel %}
 <div class="fd-new-panel">
     <div class="fd-new-panel__header">
         <div class="fd-new-panel__expand">
             <button class="fd-button fd-button--transparent sap-icon--slim-arrow-down" aria-expanded="false" aria-haspopup="true" aria-controls="jhqDKYdf"></button>
         </div>
         <h5 class="fd-new-panel__title">Panel Header</h5>
-        <div>
+        <div class="toolbar-placeholder">
             <button class="fd-button fd-button--transparent sap-icon--settings"></button>
             <button class="fd-button fd-button--transparent sap-icon--settings"></button>
         </div>
@@ -48,16 +49,19 @@ Expandable panels are much like fixed panels, except their content can be expand
         </span>
     </div>
 </div>
+{% endcapture %}
+{% include display-component.html component=expand-panel %}
 
 
 ## Fixed Panel
 Fixed panels are useful for grouping custom content. They include headers and info toolbars.
 To create fixed panel, add `--fixed` modifier.
 
+{% capture fixed-panel %}
 <div class="fd-new-panel fd-new-panel--fixed">
     <div class="fd-new-panel__header">
         <h5 class="fd-new-panel__title">Panel Header</h5>
-        <div>
+        <div class="toolbar-placeholder">
             <button class="fd-button fd-button--transparent sap-icon--settings"></button>
             <button class="fd-button fd-button--transparent sap-icon--settings"></button>
         </div>
@@ -72,21 +76,25 @@ To create fixed panel, add `--fixed` modifier.
         Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
     </div>
 </div>
+{% endcapture %}
+{% include display-component.html component=fixed-panel %}
 
 ## Compact Panel
-To use compact panel, add `--compact` modifier
+To use compact panel, add `--compact` modifier.
+
+{% capture compact-panel %}
 <div class="fd-new-panel fd-new-panel--compact">
     <div class="fd-new-panel__header">
         <div class="fd-new-panel__expand">
-            <button class="fd-button fd-button--compact fd-button--transparent sap-icon--slim-arrow-down"></button>
+            <button class="fd-button fd-button--compact fd-button--transparent sap-icon--slim-arrow-down" aria-expanded="false" aria-haspopup="true" aria-controls="Gekf63D"></button>
         </div>
         <h5 class="fd-new-panel__title">Panel Header</h5>
-        <div>
+        <div class="toolbar-placeholder">
             <button class="fd-button fd-button--compact fd-button--transparent sap-icon--settings"></button>
             <button class="fd-button fd-button--compact fd-button--transparent sap-icon--settings"></button>
         </div>
     </div>
-    <div class="fd-new-panel__content">
+    <div class="fd-new-panel__content" aria-hidden="true" id="Gekf63D">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
         et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
         Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
@@ -96,22 +104,25 @@ To use compact panel, add `--compact` modifier
         Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
     </div>
 </div>
+{% endcapture %}
+{% include display-component.html component=compact-panel %}
 
 ## Fixed Height Content Panel
 When the height of the panel's content is set to a fixed size, the content area can be scrolled through.
 
+{% capture fixed-height-panel %}
 <div class="fd-new-panel">
     <div class="fd-new-panel__header">
         <div class="fd-new-panel__expand">
-            <button class="fd-button fd-button--transparent sap-icon--slim-arrow-down"></button>
+            <button class="fd-button fd-button--transparent sap-icon--slim-arrow-down" aria-expanded="false" aria-haspopup="true" aria-controls="GJL745SD"></button>
         </div>
         <h5 class="fd-new-panel__title">Panel Header</h5>
-        <div>
+        <div class="toolbar-placeholder">
             <button class="fd-button fd-button--transparent sap-icon--settings"></button>
             <button class="fd-button fd-button--transparent sap-icon--settings"></button>
         </div>
     </div>
-    <div class="fd-new-panel__content" style="height: 100px">
+    <div class="fd-new-panel__content" aria-hidden="true" id="GJL745SD" style="height: 100px">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
@@ -130,3 +141,5 @@ When the height of the panel's content is set to a fixed size, the content area 
         </span>
     </div>
 </div>
+{% endcapture %}
+{% include display-component.html component=fixed-height-panel %}
