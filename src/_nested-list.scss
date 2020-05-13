@@ -77,6 +77,10 @@ $block: #{$fd-namespace}-nested-list;
 
     @include fd-hover() {
       background: var(--sapList_Hover_Background);
+
+      .#{$block}__expand-icon {
+        background: var(--sapList_Hover_Background);
+      }
     }
 
     @include fd-fiori-focus();
@@ -90,16 +94,32 @@ $block: #{$fd-namespace}-nested-list;
       border-bottom: var(--sapList_BorderWidth) solid;
       border-bottom-color: var(--sapList_SelectionBorderColor);
 
+      .#{$block}__expand-icon {
+        background: var(--sapList_SelectionBackgroundColor);
+      }
+
       @include fd-hover() {
         background: var(--sapList_Hover_SelectionBackground);
+
+        .#{$block}__expand-icon {
+          background: var(--sapList_Hover_SelectionBackground);
+        }
       }
     }
 
     @include fd-active() {
       background: var(--sapList_Active_Background);
 
+      .#{$block}__expand-icon {
+        background: var(--sapList_Active_Background);
+      }
+
       @include fd-selected() {
         background: var(--sapList_Active_Background);
+
+        .#{$block}__expand-icon {
+          background: var(--sapList_Active_Background);
+        }
       }
 
       .#{$block}__title,
@@ -211,8 +231,28 @@ $block: #{$fd-namespace}-nested-list;
     }
   }
 
+  &__group-header {
+    @include fd-reset();
+
+    height: 2.75rem;
+    background: var(--sapList_GroupHeaderBackground);
+    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_GroupHeaderBorderColor);
+    color: var(--sapList_GroupHeaderTextColor);
+    display: flex;
+    align-items: flex-end;
+    font-size: var(--sapFontSize);
+    font-weight: bold;
+    line-height: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   &--no-border {
-    .#{$block}__item {
+    .#{$block}__item,
+    .#{$block}__group-header {
       border-bottom: none;
     }
   }
