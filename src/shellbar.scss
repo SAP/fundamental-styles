@@ -317,6 +317,7 @@ $block: #{$fd-namespace}-shellbar;
 
   .#{$fd-namespace}-button.#{$block}__button--menu {
     font-size: var(--sapFontSize);
+    outline: 0;
 
     &::after {
       color: $fd-shellbar-color;
