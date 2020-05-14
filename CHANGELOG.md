@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.10.0-rc.3"></a>
+# [0.10.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.2...v0.10.0-rc.3) (2020-05-14)
+
+
+### Features
+
+* remove status indicator components ([#989](https://github.com/SAP/fundamental-styles/issues/989)) ([1fc6089](https://github.com/SAP/fundamental-styles/commit/1fc6089))
+
+
+
 <a name="0.10.0-rc.2"></a>
 # [0.10.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.1...v0.10.0-rc.2) (2020-05-14)
 
