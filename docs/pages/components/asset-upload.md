@@ -8,7 +8,7 @@ permalink: components/asset-upload.html
 folder: components
 summary:
 ---
-
+> **UNDER REVIEW**. This component is under review. A new version will be implemented soon.
 Asset Upload provides a stylized component for file upload button.
 {: .docs-intro}
 

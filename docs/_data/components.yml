@@ -15,6 +15,9 @@
     - title: Button
       meta: button
 
+    - title: Counter
+      meta: counter
+
     - title: Dialog
       meta: dialog
 
@@ -77,9 +80,6 @@
 
     - title: Side Navigation
       meta: side-navigation
-
-    - title: Status Indicators
-      meta: status-indicators
 
     - title: Switch
       meta: switch
