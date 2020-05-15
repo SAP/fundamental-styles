@@ -34,7 +34,7 @@ If the entries are not validated by the application, users can also enter custom
       </div>
   </div>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcX348">
-    <div class="fd-popover__wrapper">
+    <div class="fd-popover__wrapper docs-max-height">
       <ul class="fd-list fd-list--dropdown" role="listbox">
           <li role="option" tabindex="0" class="fd-list__item is-selected">
               <span class="fd-list__title">
@@ -51,37 +51,37 @@ If the entries are not validated by the application, users can also enter custom
               <span class="fd-list__title">Kiwi</span>
           </li>
           <li role="option" tabindex="0" class="fd-list__item">
-              <span class="fd-list__title">Kiwi</span>
+              <span class="fd-list__title">Nectarine</span>
           </li>
           <li role="option" tabindex="0" class="fd-list__item">
-              <span class="fd-list__title">Kiwi</span>
+              <span class="fd-list__title">Apricots</span>
           </li>
           <li role="option" tabindex="0" class="fd-list__item">
-              <span class="fd-list__title">Kiwi</span>
+              <span class="fd-list__title">Peache</span>
           </li>
           <li role="option" tabindex="0" class="fd-list__item">
-              <span class="fd-list__title">Kiwi</span>
+              <span class="fd-list__title">Plum</span>
           </li>
           <li role="option" tabindex="0" class="fd-list__item">
-              <span class="fd-list__title">Kiwi</span>
+              <span class="fd-list__title">Mango</span>
           </li>
           <li role="option" tabindex="0" class="fd-list__item">
-              <span class="fd-list__title">Kiwi</span>
+              <span class="fd-list__title">Strawberry</span>
           </li>
           <li role="option" tabindex="0" class="fd-list__item">
-              <span class="fd-list__title">Kiwi</span>
+              <span class="fd-list__title">Blueberry</span>
           </li>
           <li role="option" tabindex="0" class="fd-list__item">
-              <span class="fd-list__title">Kiwi</span>
+              <span class="fd-list__title">Watermelon</span>
           </li>
           <li role="option" tabindex="0" class="fd-list__item">
-              <span class="fd-list__title">Kiwi</span>
+              <span class="fd-list__title">Rockmelon</span>
           </li>
           <li role="option" tabindex="0" class="fd-list__item">
-              <span class="fd-list__title">Kiwi</span>
+              <span class="fd-list__title">Honeydew</span>
           </li>
           <li role="option" tabindex="0" class="fd-list__item">
-              <span class="fd-list__title">Kiwi</span>
+              <span class="fd-list__title">Apple</span>
           </li>
       </ul>
     </div>
