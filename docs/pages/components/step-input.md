@@ -37,7 +37,7 @@ On smartphones and tablets, the step input is shown in cozy mode (default).
             fd-step-input__button
             sap-icon--less"
             onclick="stepInputValue('step-3', 'down');"
-            type="button">
+            tabindex="-1" type="button">
         </button>
     <input class="
             fd-input 
@@ -50,7 +50,7 @@ On smartphones and tablets, the step input is shown in cozy mode (default).
             fd-step-input__button
             sap-icon--add"
             onclick="stepInputValue('step-3', 'up');" 
-            type="button">
+            tabindex="-1" type="button">
         </button>
 </div>
 <br><br>
@@ -63,7 +63,7 @@ On smartphones and tablets, the step input is shown in cozy mode (default).
                 fd-step-input__button
                 sap-icon--less"
                 onclick="stepInputValue('step-4', 'down');"
-                type="button">
+                tabindex="-1" type="button">
             </button>
         <input class="
                 fd-input 
@@ -76,7 +76,7 @@ On smartphones and tablets, the step input is shown in cozy mode (default).
                 fd-step-input__button
                 sap-icon--add"
                 onclick="stepInputValue('step-4', 'up');" 
-                type="button">
+                tabindex="-1" type="button">
             </button>
     </div>
     
@@ -99,7 +99,7 @@ It can be achieved by adding the `--compact` modifier to the main element as wel
                 fd-step-input__button
                 sap-icon--less"
                 onclick="stepInputValue('step-1', 'down');"
-                type="button">
+                tabindex="-1" type="button">
             </button>
         <input class="
                 fd-input 
@@ -114,7 +114,7 @@ It can be achieved by adding the `--compact` modifier to the main element as wel
                 fd-step-input__button
                 sap-icon--add"
                 onclick="stepInputValue('step-1', 'up');" 
-                type="button">
+                tabindex="-1" type="button">
             </button>
     </div>
     <span class="fd-form-label fd-form-label--unit-description">PC</span>
@@ -130,7 +130,7 @@ It can be achieved by adding the `--compact` modifier to the main element as wel
                 fd-step-input__button
                 sap-icon--less"
                 onclick="stepInputValue('step-2', 'down');"
-                type="button">
+                tabindex="-1" type="button">
             </button>
         <input class="
                 fd-input 
@@ -145,7 +145,7 @@ It can be achieved by adding the `--compact` modifier to the main element as wel
                 fd-step-input__button
                 sap-icon--add"
                 onclick="stepInputValue('step-2', 'up');" 
-                type="button">
+                tabindex="-1" type="button">
             </button>
     </div>
     <span class="fd-form-label fd-form-label--unit-description">PC</span>
@@ -165,7 +165,7 @@ To make focus work on IE11, it should be added by putting `.is-focus` class to c
             fd-step-input__button
             sap-icon--less"
             onclick="stepInputValue('step-20', 'down');"
-            type="button">
+            tabindex="-1" type="button">
         </button>
     <input class="
             fd-input 
@@ -178,7 +178,7 @@ To make focus work on IE11, it should be added by putting `.is-focus` class to c
             fd-step-input__button
             sap-icon--add"
             onclick="stepInputValue('step-20', 'up');" 
-            type="button">
+            tabindex="-1" type="button">
         </button>
 </div>
 <br><br>
@@ -191,7 +191,7 @@ To make focus work on IE11, it should be added by putting `.is-focus` class to c
                 fd-step-input__button
                 sap-icon--less"
                 onclick="stepInputValue('step-21', 'down');"
-                type="button">
+                tabindex="-1" type="button">
             </button>
         <input class="
                 fd-input 
@@ -204,7 +204,7 @@ To make focus work on IE11, it should be added by putting `.is-focus` class to c
                 fd-step-input__button
                 sap-icon--add"
                 onclick="stepInputValue('step-21', 'up');" 
-                type="button">
+                tabindex="-1" type="button">
             </button>
     </div>
     
@@ -227,7 +227,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
             fd-step-input__button
             sap-icon--less"
             onclick="stepInputValue('step-5', 'down');"
-            type="button">
+            tabindex="-1" type="button">
         </button>
     <input class="
             fd-input 
@@ -240,7 +240,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
             fd-step-input__button
             sap-icon--add"
             onclick="stepInputValue('step-5', 'up');" 
-            type="button">
+            tabindex="-1" type="button">
         </button>
 </div>
 
@@ -253,7 +253,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
             fd-step-input__button
             sap-icon--less"
             onclick="stepInputValue('step-6', 'down');"
-            type="button">
+            tabindex="-1" type="button">
         </button>
     <input class="
             fd-input 
@@ -266,7 +266,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
             fd-step-input__button
             sap-icon--add"
             onclick="stepInputValue('step-6', 'up');" 
-            type="button">
+            tabindex="-1" type="button">
         </button>
 </div>
 <br><br>
@@ -278,7 +278,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
             fd-step-input__button
             sap-icon--less"
             onclick="stepInputValue('step-7', 'down');"
-            type="button">
+            tabindex="-1" type="button">
         </button>
     <input class="
             fd-input 
@@ -291,7 +291,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
             fd-step-input__button
             sap-icon--add"
             onclick="stepInputValue('step-7', 'up');" 
-            type="button">
+            tabindex="-1" type="button">
         </button>
 </div>
 
@@ -305,7 +305,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
         fd-step-input__button
         sap-icon--less"
         onclick="stepInputValue('step-8', 'down');"
-        type="button">
+        tabindex="-1" type="button">
     </button>
     <input class="
         fd-input 
@@ -318,7 +318,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
         fd-step-input__button
         sap-icon--add"
         onclick="stepInputValue('step-8', 'up');" 
-        type="button">
+        tabindex="-1" type="button">
     </button>
 </div>
 
@@ -335,7 +335,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
             fd-step-input__button
             sap-icon--less"
             onclick="stepInputValue('step-9', 'down');"
-            type="button">
+            tabindex="-1" type="button">
         </button>
     <input class="
             fd-input 
@@ -350,7 +350,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
             fd-step-input__button
             sap-icon--add"
             onclick="stepInputValue('step-9', 'up');" 
-            type="button">
+            tabindex="-1" type="button">
         </button>
 </div>
 
@@ -367,7 +367,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
             fd-step-input__button
             sap-icon--less"
             onclick="stepInputValue('step-10', 'down');"
-            type="button">
+            tabindex="-1" type="button">
         </button>
     <input class="
             fd-input 
@@ -382,7 +382,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
             fd-step-input__button
             sap-icon--add"
             onclick="stepInputValue('step-10', 'up');" 
-            type="button">
+            tabindex="-1" type="button">
         </button>
 </div>
 
@@ -399,7 +399,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
             fd-step-input__button
             sap-icon--less"
             onclick="stepInputValue('step-11', 'down');"
-            type="button">
+            tabindex="-1" type="button">
         </button>
     <input class="
             fd-input 
@@ -414,7 +414,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
             fd-step-input__button
             sap-icon--add"
             onclick="stepInputValue('step-11', 'up');" 
-            type="button">
+            tabindex="-1" type="button">
         </button>
 </div>
 
@@ -431,7 +431,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
             fd-step-input__button
             sap-icon--less"
             onclick="stepInputValue('step-12', 'down');"
-            type="button">
+            tabindex="-1" type="button">
         </button>
     <input class="
             fd-input 
@@ -446,7 +446,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
             fd-step-input__button
             sap-icon--add"
             onclick="stepInputValue('step-12', 'up');" 
-            type="button">
+            tabindex="-1" type="button">
         </button>
 </div>
 
@@ -466,7 +466,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
             fd-step-input__button
             sap-icon--less"
             onclick="stepInputValue('step-13', 'down');"
-            type="button">
+            tabindex="-1" type="button">
         </button>
     <input class="
             fd-input 
@@ -479,7 +479,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
             fd-step-input__button
             sap-icon--add"
             onclick="stepInputValue('step-13', 'up');" 
-            type="button">
+            tabindex="-1" type="button">
         </button>
 </div>
 
@@ -495,7 +495,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
             fd-step-input__button
             sap-icon--less"
             onclick="stepInputValue('step-14', 'down');"
-            type="button">
+            tabindex="-1" type="button">
         </button>
     <input class="
             fd-input 
@@ -508,7 +508,7 @@ The semantic states can be customized by adding the `is-error` | `is-success` | 
             fd-step-input__button
             sap-icon--add"
             onclick="stepInputValue('step-14', 'up');" 
-            type="button">
+            tabindex="-1" type="button">
         </button>
 </div>
 
