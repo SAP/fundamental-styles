@@ -634,6 +634,10 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
         color: var(--sapButton_IconColor);
         content: "\e1f2";
       }
+
+      @include fd-focus() {
+        outline: none;
+      }
     }
 
     &.#{$block}--slide {
