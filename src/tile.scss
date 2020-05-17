@@ -3,13 +3,42 @@
 
 $block: #{$fd-namespace}-tile;
 
+// SIZES
+$fd-tile-height: 11rem !default;
+$fd-tile-width: 11rem !default;
+$fd-tile-double-width: 22.5rem !default;
+
+$fd-tile-height-s: 9.25rem !default;
+$fd-tile-width-s: 9.25rem !default;
+$fd-tile-double-width-s: 19rem !default;
+
 // PADDINGS
 $fd-tile-padding: calc(1rem - 0.0625rem) !default;
 $fd-tile-small-padding: calc(0.5rem - 0.0625rem) !default;
 $fd-tile-inner-padding: 0.25rem !default;
 
+$fd-tile-border-radius: var(--sapElement_BorderCornerRadius) !default;
+
 // REFRESH
 $fd-tile-refresh-icon-spacing: 0.5rem !default;
+
+// FEED
+$fd-tile-feed-kpi-spacing: 0.5rem !default;
+
+// INDICATOR DOTS
+$fd-tile-indicator-dot-size: 0.188rem !default;
+$fd-tile-indicator-dot-active-size: 0.313rem !default;
+$fd-tile-indicator-dot-spacing: 0.375rem !default;
+
+// TOGGLE BUTTON
+$fd-tile-toggle-button-position: -0.0625rem !default;
+
+// CLOSE BUTTON
+$fd-tile-close-button-position: -0.375rem !default;
+$fd-tile-close-button-offset: 0.625rem !default;
+
+// ACTION INDICATOR
+$fd-tile-action-indicator-offset: 0.25rem !default;
 
 // MIXINS
 @mixin two-col-sections {
@@ -36,16 +65,36 @@ $fd-tile-refresh-icon-spacing: 0.5rem !default;
   overflow: hidden;
 }
 
+@mixin fake-tile-outline() {
+  &:focus,
+  &.is-focus {
+    outline: none;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+      border-radius: $fd-tile-border-radius;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+  }
+}
+
 .#{$block} {
   @include fd-reset();
-  @include set-height(11rem);
-  @include set-width(11rem);
+  @include set-height($fd-tile-height);
+  @include set-width($fd-tile-width);
 
   position: relative;
   padding: $fd-tile-padding;
   background: var(--sapTile_Background);
   box-shadow: var(--sapContent_Shadow0);
-  border-radius: var(--sapElement_BorderCornerRadius);
+  border-radius: $fd-tile-border-radius;
   border: 0.0625rem solid var(--sapTile_BorderColor);
   cursor: pointer;
 
@@ -57,10 +106,14 @@ $fd-tile-refresh-icon-spacing: 0.5rem !default;
 
   @include fd-hover() {
     background: var(--sapTile_Hover_Background);
-    // box-shadow: 0 0 0 1px fade(var(--sapContent_ShadowColor), 30);;
+    // box-shadow: 0 0 0 1px fade(var(--sapContent_ShadowColor), 30);
+
+    .#{$block}__toggle {
+      display: block;
+    }
   }
 
-  @include fd-fiori-focus();
+  @include fake-tile-outline();
 
   // ELEMENTS
   &__header,
@@ -100,6 +153,8 @@ $fd-tile-refresh-icon-spacing: 0.5rem !default;
 
   &__footer {
     @include set-height(1rem);
+
+    display: flex;
   }
 
   &__section {
@@ -158,19 +213,25 @@ $fd-tile-refresh-icon-spacing: 0.5rem !default;
     @include set-height(1.75rem);
   }
 
+  &__action-close,
+  &__action-indicator,
+  &__overlay {
+    display: none;
+  }
+
   // MODIFIERS
   &--double {
-    @include set-width(22.5rem);
+    @include set-width($fd-tile-double-width);
   }
 
   &--s {
-    @include set-height(9.25rem);
-    @include set-width(9.25rem);
+    @include set-height($fd-tile-height-s);
+    @include set-width($fd-tile-width-s);
 
     padding: $fd-tile-small-padding;
 
     &.#{$block}--double {
-      @include set-width(19rem);
+      @include set-width($fd-tile-double-width-s);
     }
 
     .#{$block}__header {
@@ -244,7 +305,13 @@ $fd-tile-refresh-icon-spacing: 0.5rem !default;
 
         &:first-child {
           flex: 1;
+          max-width: 100%;
           margin-right: $fd-tile-inner-padding;
+
+          @include fd-flex($direction: column) {
+            align-items: flex-start;
+            justify-content: flex-end;
+          }
 
           @include fd-rtl() {
             margin-left: $fd-tile-inner-padding;
@@ -254,22 +321,21 @@ $fd-tile-refresh-icon-spacing: 0.5rem !default;
 
         &:nth-child(2) {
           max-width: 10.25rem;
+          padding-left: $fd-tile-feed-kpi-spacing;
+
+          @include fd-rtl() {
+            padding-right: $fd-tile-feed-kpi-spacing;
+            padding-left: 0;
+          }
         }
       }
-    }
-
-    .#{$block}__content-text-container {
-      @include fd-reset();
-
-      display: flex;
-      flex-direction: column;
-      max-width: 100%;
     }
 
     .#{$block}__content-text,
     .#{$block}__content-byline {
       @include fd-reset();
 
+      max-width: 100%;
       font-size: var(--sapFontSmallSize);
       line-height: 1.063rem;
       color: var(--sapTile_TitleTextColor);
@@ -291,6 +357,289 @@ $fd-tile-refresh-icon-spacing: 0.5rem !default;
           &:nth-child(2) {
             max-width: 8.25rem;
           }
+        }
+      }
+    }
+  }
+
+  &--slide {
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+
+    .#{$block}__background-img {
+      @include fd-reset();
+
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-size: cover;
+      border-radius: $fd-tile-border-radius;
+
+      @include fd-hover() {
+        opacity: 90%;
+      }
+
+      @include fd-active() {
+        opacity: 80%;
+      }
+    }
+
+    .#{$block}__toggle {
+      @include fd-reset();
+      @include set-height(3rem);
+      @include set-width(3rem);
+
+      display: none;
+      padding: 0.5rem;
+      position: absolute;
+      background: transparent;
+      top: $fd-tile-toggle-button-position;
+      right: $fd-tile-toggle-button-position;
+
+      @include fd-rtl() {
+        right: initial;
+        left: $fd-tile-toggle-button-position;
+      }
+
+      &::before {
+        @include set-height(2rem);
+        @include set-width(2rem);
+        @include fd-flex-center();
+
+        background-color: var(--sapBlockLayer_Background);
+        opacity: 60%;
+        border-radius: 50%;
+        font-family: SAP-icons;
+        font-size: 1rem;
+        color: var(--sapButton_Emphasized_TextColor);
+        text-shadow: var(--sapButton_Emphasized_TextShadow);
+        content: "\e14b";
+      }
+
+      &--pause {
+        &::before {
+          content: "\e14c";
+        }
+      }
+
+      @include fd-focus() {
+        outline: none;
+      }
+
+      @include fd-hover() {
+        &::before {
+          opacity: 80%;
+        }
+      }
+
+      @include fd-active() {
+        &::before {
+          opacity: 100%;
+        }
+      }
+    }
+
+    .#{$block}__container {
+      @include fd-reset();
+      @include set-height(6.125rem);
+
+      @include fd-flex($direction: column) {
+        justify-content: space-between;
+      }
+
+      max-width: 100%;
+      background-color: var(--sapBlockLayer_Background);
+      opacity: 80%;
+      padding-top: 0.375rem;
+      padding-left: $fd-tile-padding;
+      padding-right: $fd-tile-padding;
+      border-bottom-left-radius: $fd-tile-border-radius;
+      border-bottom-right-radius: $fd-tile-border-radius;
+    }
+
+    .#{$block}__header {
+      @include set-height(3.5rem);
+    }
+
+    .#{$block}__title,
+    .#{$block}__subtitle,
+    .#{$block}__footer-text {
+      color: var(--sapContent_ContrastTextColor); // TO BE CONFIRMED
+      text-shadow: var(--sapContent_ContrastShadowColor); // TO BE CONFIRMED
+      font-size: var(--sapFontSize);
+      line-height: normal;
+    }
+
+    .#{$block}__page-indicator {
+      @include fd-reset();
+      @include fd-flex-center();
+      @include set-height(0.5rem);
+
+      margin-bottom: 0.125rem;
+      margin-top: 0.375rem;
+    }
+
+    .#{$block}__dot {
+      @include fd-reset();
+      @include set-height($fd-tile-indicator-dot-size);
+      @include set-width($fd-tile-indicator-dot-size);
+
+      border-radius: 50%;
+      background-color: var(--sapContent_ContrastTextColor); // TO BE CONFIRMED
+      box-shadow: 0 0 0.25rem var(--sapContent_ShadowColor);
+      margin-right: $fd-tile-indicator-dot-spacing;
+
+      @include fd-rtl() {
+        margin-right: 0;
+        margin-left: $fd-tile-indicator-dot-spacing;
+      }
+
+      &--active {
+        @include set-height($fd-tile-indicator-dot-active-size);
+        @include set-width($fd-tile-indicator-dot-active-size);
+
+        color: var(--sapContent_ContrastTextColor); // TO BE CONFIRMED
+      }
+    }
+
+    &.#{$block}--s {
+      .#{$block}__container {
+        @include set-height(5.25rem);
+
+        padding-top: 0.25rem;
+        padding-right: $fd-tile-small-padding;
+        padding-left: $fd-tile-small-padding;
+      }
+
+      .#{$block}__header {
+        @include set-height(3.188rem);
+      }
+
+      .#{$block}__title,
+      .#{$block}__subtitle,
+      .#{$block}__footer-text {
+        font-size: var(--sapFontSmallSize);
+      }
+
+      .#{$block}__page-indicator {
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+    }
+  }
+
+  // MODES
+  &--action {
+
+    .#{$block}__action-close,
+    .#{$block}__action-indicator,
+    .#{$block}__overlay {
+      display: block;
+    }
+
+    .#{$block}__overlay {
+      @include fd-reset();
+
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--sapTile_Background);
+      border-radius: $fd-tile-border-radius;
+      opacity: 70%;
+      z-index: 2;
+    }
+
+    .#{$block}__footer {
+      display: none;
+    }
+
+    .#{$fd-namespace}-badge {
+      display: none;
+    }
+
+    .#{$block}__action-close {
+      @include fd-reset();
+      @include set-height(2rem);
+      @include set-width(2rem);
+
+      position: absolute;
+      background: transparent;
+      top: $fd-tile-close-button-position;
+      right: $fd-tile-close-button-position;
+      z-index: 3;
+      cursor: pointer;
+
+      @include fd-rtl() {
+        right: initial;
+        left: $fd-tile-close-button-position;
+
+        &::before {
+          margin-left: initial;
+          margin-right: $fd-tile-close-button-offset;
+        }
+      }
+
+      &::before {
+        @include set-height(1.375rem);
+        @include set-width(1.375rem);
+        @include fd-flex-center();
+
+        border-radius: 50%;
+        margin-bottom: $fd-tile-close-button-offset;
+        margin-left: $fd-tile-close-button-offset;
+        font-family: SAP-icons;
+        font-size: 0.75rem;
+        background: var(--sapButton_Background);
+        border: 0.0625rem solid var(--sapButton_BorderColor);
+        color: var(--sapButton_IconColor);
+        content: "\e03e";
+      }
+
+      @include fd-focus() {
+        outline: none;
+      }
+    }
+
+    .#{$block}__action-indicator {
+      @include fd-reset();
+      @include set-height(1.625rem);
+      @include set-width(2rem);
+
+      background: transparent;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin-bottom: $fd-tile-action-indicator-offset;
+      margin-right: $fd-tile-action-indicator-offset;
+      z-index: 3;
+      cursor: pointer;
+
+      @include fd-rtl() {
+        right: initial;
+        left: 0;
+        margin-right: initial;
+        margin-left: $fd-tile-action-indicator-offset;
+      }
+
+      &::before {
+        @include fd-flex-center();
+
+        font-family: SAP-icons;
+        font-size: 1rem;
+        color: var(--sapButton_IconColor);
+        content: "\e1f2";
+      }
+    }
+
+    &.#{$block}--slide {
+      .#{$block}__action-indicator {
+        &::before {
+          color: var(--sapShell_Active_TextColor);
         }
       }
     }

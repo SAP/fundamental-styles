@@ -386,7 +386,7 @@ The header can contain a maximum of 3 lines; all 3 lines can be used for the tit
 <br>
 
 ## KPI Tile (Numeric Content)
-Key Performance Indicators (KPIs) are used to measure and monitor a company’s performance at a strategic and operational level.The KPI Tile control supports a limited number of digits which varies depending on the size of the tile.
+Key Performance Indicators (KPIs) are used to measure and monitor a company’s performance at a strategic and operational level. The KPI Tile control supports a limited number of digits which varies depending on the size of the tile.
 <br>
 <ul class="docs-ul">
     <li>L-Numeric Content size. Longest combination for 4-character languages</li>
@@ -589,7 +589,6 @@ Structure of the Numeric Content
 <br>
 
 ## Feed Tile
-
 {% capture tile-feed %}
 <div class="docs-section-container">
     <div tabindex="0" class="fd-tile fd-tile--double fd-tile--feed">
@@ -599,10 +598,8 @@ Structure of the Numeric Content
         </div>
         <div class="fd-tile__content fd-tile__content--2-col">
             <div class="fd-tile__section">
-                <div class="fd-tile__content-text-container">
-                    <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt magna aliqua.</div>
-                    <div class="fd-tile__content-byline">About 1 minute ago.</div>
-                </div>
+                <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt magna aliqua.</div>
+                <div class="fd-tile__content-byline">About 1 minute ago.</div>
             </div>
             <div class="fd-tile__section">
                 <div class="fd-numeric-content">
@@ -623,10 +620,8 @@ Structure of the Numeric Content
         </div>
         <div class="fd-tile__content fd-tile__content--2-col">
             <div class="fd-tile__section">
-                <div class="fd-tile__content-text-container">
-                    <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod.</div>
-                    <div class="fd-tile__content-byline">About 1 minute ago.</div>
-                </div>
+                <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod.</div>
+                <div class="fd-tile__content-byline">About 1 minute ago.</div>
             </div>
             <div class="fd-tile__section">
                 <div class="fd-numeric-content fd-numeric-content--m">
@@ -648,7 +643,7 @@ Structure of the Numeric Content
 
 ## Badge Tile
 Badges are used to display very short and important information.
-Use a badge on a Tile if the Tile new or it has been newly added. 
+Use a badge on a Tile if the Tile is new or has been newly added to a page.
 Tiles do not display badges in action/edit mode. 
 {% capture tile-badge %}
 <div class="docs-section-container">
@@ -688,10 +683,8 @@ Tiles do not display badges in action/edit mode.
         </div>
         <div class="fd-tile__content fd-tile__content--2-col">
             <div class="fd-tile__section">
-                <div class="fd-tile__content-text-container">
-                    <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt magna aliqua.</div>
-                    <div class="fd-tile__content-byline">About 1 minute ago.</div>
-                </div>
+                <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt magna aliqua.</div>
+                <div class="fd-tile__content-byline">About 1 minute ago.</div>
             </div>
             <div class="fd-tile__section">
                 <div class="fd-numeric-content">
@@ -713,10 +706,8 @@ Tiles do not display badges in action/edit mode.
         </div>
         <div class="fd-tile__content fd-tile__content--2-col">
             <div class="fd-tile__section">
-                <div class="fd-tile__content-text-container">
-                    <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod.</div>
-                    <div class="fd-tile__content-byline">About 1 minute ago.</div>
-                </div>
+                <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod.</div>
+                <div class="fd-tile__content-byline">About 1 minute ago.</div>
             </div>
             <div class="fd-tile__section">
                 <div class="fd-numeric-content fd-numeric-content--m">
@@ -734,3 +725,189 @@ Tiles do not display badges in action/edit mode.
 {% endcapture %}
 {% include display-component.html component=tile-badge %}
 
+<br>
+
+## Slide Tile
+{% capture tile-slide %}
+<div class="docs-section-container">
+    <div tabindex="0" class="fd-tile fd-tile--slide">
+        <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/200/200/nature')"></div>
+        <button class="fd-tile__toggle"></button>
+        <div class="fd-tile__container">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
+                <div class="fd-tile__subtitle">SAP News</div>
+            </div>
+            <div class="fd-tile__footer">
+                <span class="fd-tile__footer-text">May 14, 2020</span>
+            </div>
+            <div class="fd-tile__page-indicator">
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot fd-tile__dot--active"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+            </div>
+        </div>
+    </div>
+    <div tabindex="0" class="fd-tile fd-tile--slide fd-tile--s">
+        <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/200/200/nature')"></div>
+        <button class="fd-tile__toggle"></button>
+        <div class="fd-tile__container">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
+                <div class="fd-tile__subtitle">SAP News</div>
+            </div>
+            <div class="fd-tile__footer">
+                <span class="fd-tile__footer-text">May 14, 2020</span>
+            </div>
+            <div class="fd-tile__page-indicator">
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot fd-tile__dot--active"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="docs-section-container">
+    <div tabindex="0" class="fd-tile fd-tile--double fd-tile--slide">
+        <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/400/200/nature')"></div>
+        <button class="fd-tile__toggle fd-tile__toggle--pause"></button>
+        <div class="fd-tile__container">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
+                <div class="fd-tile__subtitle">SAP News</div>
+            </div>
+            <div class="fd-tile__footer">
+                <span class="fd-tile__footer-text">May 14, 2020</span>
+            </div>
+            <div class="fd-tile__page-indicator">
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot fd-tile__dot--active"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+            </div>
+        </div>
+    </div>
+    <div tabindex="0" class="fd-tile fd-tile--double fd-tile--s fd-tile--slide">
+        <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/400/200/nature')"></div>
+        <button class="fd-tile__toggle fd-tile__toggle--pause"></button>
+        <div class="fd-tile__container">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
+                <div class="fd-tile__subtitle">SAP News</div>
+            </div>
+            <div class="fd-tile__footer">
+                <span class="fd-tile__footer-text">May 14, 2020</span>
+            </div>
+            <div class="fd-tile__page-indicator">
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot fd-tile__dot--active"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include display-component.html component=tile-slide %}
+
+<br>
+
+## Tile In Action Mode
+{% capture tile-action %}
+<div class="docs-section-container">
+    <div tabindex="0" class="fd-tile fd-tile--launch fd-tile--action">
+        <div class="fd-tile__overlay"></div>
+        <button class="fd-tile__action-close"></button>
+        <button class="fd-tile__action-indicator"></button>
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
+            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
+        </div>
+        <div class="fd-tile__content">
+            <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/60/60/nature')" role="presentation" aria-label="Profile Image"></span>
+        </div>
+        <div class="fd-tile__footer">
+            <span class="fd-tile__footer-text">Footer Text</span>
+        </div>
+    </div>
+    <div tabindex="0" class="fd-tile fd-tile--launch fd-tile--s fd-tile--action">
+        <div class="fd-tile__overlay"></div>
+        <button class="fd-tile__action-close"></button>
+        <button class="fd-tile__action-indicator"></button>
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
+            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
+        </div>
+        <div class="fd-tile__content">
+            <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/50/50/nature')" role="presentation" aria-label="Profile Image"></span>
+        </div>
+        <div class="fd-tile__footer">
+            <span class="fd-tile__footer-text">Unit, Notification</span>
+        </div>
+    </div>
+</div>
+<div class="docs-section-container">
+    <div tabindex="0" class="fd-tile fd-tile--double fd-tile--slide fd-tile--action">
+        <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/400/200/nature')"></div>
+        <div class="fd-tile__overlay"></div>
+        <button class="fd-tile__toggle fd-tile__toggle--pause"></button>
+        <button class="fd-tile__action-close"></button>
+        <button class="fd-tile__action-indicator"></button>
+        <div class="fd-tile__container">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
+                <div class="fd-tile__subtitle">SAP News</div>
+            </div>
+            <div class="fd-tile__footer">
+                <span class="fd-tile__footer-text">May 14, 2020</span>
+            </div>
+            <div class="fd-tile__page-indicator">
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot fd-tile__dot--active"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+            </div>
+        </div>
+    </div>
+    <div tabindex="0" class="fd-tile fd-tile--double fd-tile--s fd-tile--slide fd-tile--action">
+        <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/400/200/nature')"></div>
+        <div class="fd-tile__overlay"></div>
+        <button class="fd-tile__toggle fd-tile__toggle--pause"></button>
+        <button class="fd-tile__action-close"></button>
+        <button class="fd-tile__action-indicator"></button>
+        <div class="fd-tile__container">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
+                <div class="fd-tile__subtitle">SAP News</div>
+            </div>
+            <div class="fd-tile__footer">
+                <span class="fd-tile__footer-text">May 14, 2020</span>
+            </div>
+            <div class="fd-tile__page-indicator">
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot fd-tile__dot--active"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endcapture %}
+{% include display-component.html component=tile-action %}

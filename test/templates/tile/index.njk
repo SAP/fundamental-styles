@@ -136,7 +136,7 @@
           <div class="fd-tile__section"><span class="fd-tile__footer-text">Footer</span></div>
       </div>
   </div>
-  <div class="fd-tile fd-tile--kpi fd-tile--s">
+  <div class="fd-tile fd-tile--kpi fd-tile--s is-hover">
       <div class="fd-tile__header">
           <div class="fd-tile__title">Tile Title Text</div>
           <div class="fd-tile__subtitle">Tile Subtitle Text</div>
@@ -164,7 +164,7 @@
           <span class="fd-tile__footer-text">Footer Text</span>
       </div>
   </div>
-  <div class="fd-tile fd-tile--launch fd-tile--s">
+  <div class="fd-tile fd-tile--launch fd-tile--s is-hover">
       <div class="fd-tile__header-content">
           <div class="fd-tile__title">Launch Tile Title Text Lorem ipsum dolor sit amet, consectetur elit</div>
           <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
@@ -184,7 +184,7 @@
           <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
       </div>
       <div class="fd-tile__content">
-          <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/60/60/nature')" role="presentation" aria-label="Profile Image"></span>
+          <span class="fd-tile__profile-img" style="background-image: url('/static/product-tile.jpg')" role="presentation" aria-label="Profile Image"></span>
       </div>
       <div class="fd-tile__footer">
           <span class="fd-tile__footer-text">Footer Text</span>
@@ -196,7 +196,7 @@
           <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
       </div>
       <div class="fd-tile__content">
-          <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/50/50/nature')" role="presentation" aria-label="Profile Image"></span>
+          <span class="fd-tile__profile-img" style="background-image: url('/static/product-tile.jpg')" role="presentation" aria-label="Profile Image"></span>
       </div>
       <div class="fd-tile__footer">
           <span class="fd-tile__footer-text">Unit, Notification</span>
@@ -243,10 +243,8 @@
       </div>
       <div class="fd-tile__content fd-tile__content--2-col">
           <div class="fd-tile__section">
-              <div class="fd-tile__content-text-container">
-                  <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt magna aliqua.</div>
-                  <div class="fd-tile__content-byline">About 1 minute ago.</div>
-              </div>
+                <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt magna aliqua.</div>
+                <div class="fd-tile__content-byline">About 1 minute ago.</div>
           </div>
           <div class="fd-tile__section">0</div>
       </div>
@@ -261,10 +259,8 @@
       </div>
       <div class="fd-tile__content fd-tile__content--2-col">
           <div class="fd-tile__section">
-              <div class="fd-tile__content-text-container">
-                  <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod.</div>
-                  <div class="fd-tile__content-byline">About 1 minute ago.</div>
-              </div>
+                <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod.</div>
+                <div class="fd-tile__content-byline">About 1 minute ago.</div>
           </div>
           <div class="fd-tile__section">99</div>
       </div>
@@ -272,6 +268,185 @@
           <span class="fd-tile__footer-text">Footer</span>
       </div>
   </div>
+</div>
+<br>
+<h4>Slide Tile</h4>
+<br>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
+    <div tabindex="0" class="fd-tile fd-tile--slide">
+        <div class="fd-tile__background-img" style="background-image: url('/static/product-tile.jpg')"></div>
+        <button class="fd-tile__toggle"></button>
+        <div class="fd-tile__container">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
+                <div class="fd-tile__subtitle">SAP News</div>
+            </div>
+            <div class="fd-tile__footer">
+                <span class="fd-tile__footer-text">May 14, 2020</span>
+            </div>
+            <div class="fd-tile__page-indicator">
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot fd-tile__dot--active"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+            </div>
+        </div>
+    </div>
+    <div tabindex="0" class="fd-tile fd-tile--slide fd-tile--s is-hover">
+        <div class="fd-tile__background-img" style="background-image: url('/static/product-tile.jpg')"></div>
+        <button class="fd-tile__toggle"></button>
+        <div class="fd-tile__container">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
+                <div class="fd-tile__subtitle">SAP News</div>
+            </div>
+            <div class="fd-tile__footer">
+                <span class="fd-tile__footer-text">May 14, 2020</span>
+            </div>
+            <div class="fd-tile__page-indicator">
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot fd-tile__dot--active"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
+    <div tabindex="0" class="fd-tile fd-tile--double fd-tile--slide">
+        <div class="fd-tile__background-img" style="background-image: url('/static/product-tile.jpg')"></div>
+        <button class="fd-tile__toggle fd-tile__toggle--pause"></button>
+        <div class="fd-tile__container">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
+                <div class="fd-tile__subtitle">SAP News</div>
+            </div>
+            <div class="fd-tile__footer">
+                <span class="fd-tile__footer-text">May 14, 2020</span>
+            </div>
+            <div class="fd-tile__page-indicator">
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot fd-tile__dot--active"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+            </div>
+        </div>
+    </div>
+    <div tabindex="0" class="fd-tile fd-tile--double fd-tile--s fd-tile--slide is-hover">
+        <div class="fd-tile__background-img" style="background-image: url('/static/product-tile.jpg')"></div>
+        <button class="fd-tile__toggle fd-tile__toggle--pause"></button>
+        <div class="fd-tile__container">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
+                <div class="fd-tile__subtitle">SAP News</div>
+            </div>
+            <div class="fd-tile__footer">
+                <span class="fd-tile__footer-text">May 14, 2020</span>
+            </div>
+            <div class="fd-tile__page-indicator">
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot fd-tile__dot--active"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<h4>Action Mode</h4>
+<br>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
+    <div tabindex="0" class="fd-tile fd-tile--launch fd-tile--action">
+        <div class="fd-tile__overlay"></div>
+        <button class="fd-tile__action-close"></button>
+        <button class="fd-tile__action-indicator"></button>
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
+            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
+        </div>
+        <div class="fd-tile__content">
+            <span class="fd-tile__profile-img" style="background-image: url('/static/product-tile.jpg')" role="presentation" aria-label="Profile Image"></span>
+        </div>
+        <div class="fd-tile__footer">
+            <span class="fd-tile__footer-text">Footer Text</span>
+        </div>
+    </div>
+    <div tabindex="0" class="fd-tile fd-tile--launch fd-tile--s fd-tile--action">
+        <div class="fd-tile__overlay"></div>
+        <button class="fd-tile__action-close"></button>
+        <button class="fd-tile__action-indicator"></button>
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
+            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
+        </div>
+        <div class="fd-tile__content">
+            <span class="fd-tile__profile-img" style="background-image: url('/static/product-tile.jpg')" role="presentation" aria-label="Profile Image"></span>
+        </div>
+        <div class="fd-tile__footer">
+            <span class="fd-tile__footer-text">Unit, Notification</span>
+        </div>
+    </div>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
+    <div tabindex="0" class="fd-tile fd-tile--double fd-tile--slide fd-tile--action">
+        <div class="fd-tile__background-img" style="background-image: url('/static/product-tile.jpg')"></div>
+        <div class="fd-tile__overlay"></div>
+        <button class="fd-tile__toggle fd-tile__toggle--pause"></button>
+        <button class="fd-tile__action-close"></button>
+        <button class="fd-tile__action-indicator"></button>
+        <div class="fd-tile__container">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
+                <div class="fd-tile__subtitle">SAP News</div>
+            </div>
+            <div class="fd-tile__footer">
+                <span class="fd-tile__footer-text">May 14, 2020</span>
+            </div>
+            <div class="fd-tile__page-indicator">
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot fd-tile__dot--active"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+            </div>
+        </div>
+    </div>
+    <div tabindex="0" class="fd-tile fd-tile--double fd-tile--s fd-tile--slide fd-tile--action">
+        <div class="fd-tile__background-img" style="background-image: url('/static/product-tile.jpg')"></div>
+        <div class="fd-tile__overlay"></div>
+        <button class="fd-tile__toggle fd-tile__toggle--pause"></button>
+        <button class="fd-tile__action-close"></button>
+        <button class="fd-tile__action-indicator"></button>
+        <div class="fd-tile__container">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
+                <div class="fd-tile__subtitle">SAP News</div>
+            </div>
+            <div class="fd-tile__footer">
+                <span class="fd-tile__footer-text">May 14, 2020</span>
+            </div>
+            <div class="fd-tile__page-indicator">
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot fd-tile__dot--active"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+                <span class="fd-tile__dot"></span>
+            </div>
+        </div>
+    </div>
 </div>
 {% endset %}
 {{ format(example) }}
