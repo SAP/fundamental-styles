@@ -7,10 +7,23 @@
 $block: #{$fd-namespace}-form-label;
 
 .#{$block} {
+  $fd-unit-description-padding: 0.25rem;
+
   @include fd-form-label();
 
   &.is-disabled {
     opacity: 0.4;
+  }
+
+  &--unit-description {
+    padding: 0 0 0 $fd-unit-description-padding;
+    color: var(--sapField_TextColor);
+    margin: 0;
+
+    @include fd-rtl() {
+      margin: 0;
+      padding: 0 $fd-unit-description-padding 0 0;
+    }
   }
 
   &--required,

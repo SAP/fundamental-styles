@@ -1,0 +1,112 @@
+@import "./mixins";
+@import "./new-settings";
+
+$block: #{$fd-namespace}-step-input;
+
+.#{$block} {
+  $fd-button-icon-font-size: 0.875rem;
+  $fd-step-input-cozy-height: 2.25rem;
+  $fd-step-input-compact-height: 1.625rem;
+  $fd-step-input-cozy-button-width: 2.125rem;
+  $fd-step-input-compact-button-width: 1.5rem;
+  $fd-step-input-description-padding: 0.5rem;
+  $fd-step-input-semantic-border-offset: 0.125rem;
+
+  @include fd-reset();
+  @include fd-form-states();
+  @include fd-fiori-focus-within();
+
+  width: auto;
+  border-style: solid;
+  border-width: var(--sapField_BorderWidth);
+  border-color: var(--sapField_BorderColor);
+  border-radius: var(--sapField_BorderCornerRadius);
+  background-color: var(--sapField_Background);
+  height: $fd-step-input-cozy-height;
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+
+  &__button.#{$fd-namespace}-button {
+    width: $fd-step-input-cozy-button-width;
+    min-width: $fd-step-input-cozy-button-width;
+    height: 100%;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before,
+    &::after {
+      font-size: $fd-button-icon-font-size;
+      margin: 0;
+    }
+
+    @include fd-focus() {
+      outline: none;
+
+      @include fd-hover() {
+        z-index: auto;
+      }
+    }
+
+    &--compact {
+      width: $fd-step-input-compact-button-width;
+      min-width: $fd-step-input-compact-button-width;
+    }
+  }
+
+  &__input.#{$fd-namespace}-input {
+    width: auto;
+    height: 100%;
+    text-align: right;
+    border: none;
+    margin: 0;
+    padding: 0 0.25rem;
+    background-color: transparent;
+
+    @include fd-rtl() {
+      text-align: left;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &--compact {
+      height: 100%;
+    }
+  }
+
+  /** Width is different due to different border width  */
+  &.is-information,
+  &.is-error,
+  &.is-warning {
+    .#{$block}__button.#{$fd-namespace}-button {
+      width: calc(#{$fd-step-input-cozy-button-width} - #{$fd-step-input-semantic-border-offset});
+      min-width: calc(#{$fd-step-input-cozy-button-width} - #{$fd-step-input-semantic-border-offset});
+    }
+  }
+
+  &--compact {
+    height: $fd-step-input-compact-height;
+
+    /** Width is different due to different border width  */
+    &.is-information,
+    &.is-error,
+    &.is-warning {
+      .#{$block}__button.#{$fd-namespace}-button {
+        width: calc(#{$fd-step-input-compact-button-width} - #{$fd-step-input-semantic-border-offset});
+        min-width: calc(#{$fd-step-input-compact-button-width} - #{$fd-step-input-semantic-border-offset});
+      }
+    }
+  }
+
+  &.is-readonly {
+    .#{$block}__button.#{$fd-namespace}-button {
+      display: none;
+    }
+  }
+}
