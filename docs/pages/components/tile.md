@@ -735,7 +735,7 @@ Tiles do not display badges in action/edit mode.
         <button class="fd-tile__toggle"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
-                <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
+                <div class="fd-tile__title">Wind Map: Monitoring Real-Time</div>
                 <div class="fd-tile__subtitle">SAP News</div>
             </div>
             <div class="fd-tile__footer">
@@ -755,7 +755,7 @@ Tiles do not display badges in action/edit mode.
         <button class="fd-tile__toggle"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
-                <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
+                <div class="fd-tile__title">Wind Map: Monitoring Real-Time</div>
                 <div class="fd-tile__subtitle">SAP News</div>
             </div>
             <div class="fd-tile__footer">

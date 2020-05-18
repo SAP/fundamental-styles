@@ -80,7 +80,7 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
       left: 0;
       right: 0;
       bottom: 0;
-      z-index: 1;
+      z-index: 3;
     }
   }
 }
@@ -373,15 +373,19 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
       height: 100%;
       width: 100%;
       position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       background-size: cover;
       border-radius: $fd-tile-border-radius;
 
       @include fd-hover() {
-        opacity: 90%;
+        opacity: 0.9;
       }
 
       @include fd-active() {
-        opacity: 80%;
+        opacity: 0.8;
       }
     }
 
@@ -408,7 +412,7 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
         @include fd-flex-center();
 
         background-color: var(--sapBlockLayer_Background);
-        opacity: 60%;
+        opacity: 0.6;
         border-radius: 50%;
         font-family: SAP-icons;
         font-size: 1rem;
@@ -429,13 +433,13 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
 
       @include fd-hover() {
         &::before {
-          opacity: 80%;
+          opacity: 0.8;
         }
       }
 
       @include fd-active() {
         &::before {
-          opacity: 100%;
+          opacity: 1;
         }
       }
     }
@@ -448,9 +452,11 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
         justify-content: space-between;
       }
 
+      z-index: 2;
+      width: 100%;
       max-width: 100%;
       background-color: var(--sapBlockLayer_Background);
-      opacity: 80%;
+      opacity: 0.8;
       padding-top: 0.375rem;
       padding-left: $fd-tile-padding;
       padding-right: $fd-tile-padding;
@@ -550,8 +556,8 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
       bottom: 0;
       background: var(--sapTile_Background);
       border-radius: $fd-tile-border-radius;
-      opacity: 70%;
-      z-index: 2;
+      opacity: 0.7;
+      z-index: 4;
     }
 
     .#{$block}__footer {
@@ -571,7 +577,7 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
       background: transparent;
       top: $fd-tile-close-button-position;
       right: $fd-tile-close-button-position;
-      z-index: 3;
+      z-index: 5;
       cursor: pointer;
 
       @include fd-rtl() {
@@ -616,7 +622,7 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
       right: 0;
       margin-bottom: $fd-tile-action-indicator-offset;
       margin-right: $fd-tile-action-indicator-offset;
-      z-index: 3;
+      z-index: 5;
       cursor: pointer;
 
       @include fd-rtl() {
