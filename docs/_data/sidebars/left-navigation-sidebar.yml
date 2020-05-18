@@ -212,6 +212,10 @@ entries:
       url: /components/side-navigation.html
       output: web
 
+    - title: Step Input
+      url: /components/step-input.html
+      output: web
+
     - title: Switch
       url: /components/switch.html
       output: web

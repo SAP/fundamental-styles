@@ -42,6 +42,17 @@
   }
 }
 
+// Focus state, which is not support by IE11. Use it with `fd-fiori-focus` mixin.
+@mixin fd-fiori-focus-within($offset: -0.1875rem) {
+  &:focus-within {
+    outline-offset: $offset;
+    outline-width: var(--sapContent_FocusWidth);
+    outline-color: var(--sapContent_FocusColor);
+    outline-style: var(--sapContent_FocusStyle);
+    @content;
+  }
+}
+
 // HOVER state (mouseover)
 // `.is-hover` is for demo purposes
 @mixin fd-hover {
