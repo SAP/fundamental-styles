@@ -23,7 +23,7 @@ The default positioning of inline help component is bottom right.
         </span>
     </div>
     <div id="h0C6A326" class="fd-popover__body" aria-hidden="true" x-placement="bottom-start" >
-        <span class="fd-inline-help___content fd-no-border">Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
+        <span class="fd-inline-help__content fd-no-border">Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
         <span class="fd-popover__arrow" style="left: 7px;"></span>
     </div>
 </div>
@@ -40,7 +40,7 @@ The default positioning of inline help component is bottom right.
         </span>
     </div>
     <div id="bbh0C6A3261" class="fd-popover__body fd-popover__body--right" aria-hidden="true" x-placement="bottom-end" >
-        <span class="fd-inline-help___content fd-no-border">Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
+        <span class="fd-inline-help__content fd-no-border">Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
         <span class="fd-popover__arrow" style="left: 7px;"></span>
     </div>
 </div>
@@ -58,7 +58,7 @@ The default positioning of inline help component is bottom right.
         </span>
     </div>
     <div id="aah0C6A32611" class="fd-popover__popper" aria-hidden="true" x-placement="bottom" style="left: -185px;" >
-        <span class="fd-inline-help___content fd-no-border">Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
+        <span class="fd-inline-help__content fd-no-border">Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
         <span class="fd-popover__arrow" style="left: 177px;"></span>
     </div>
 </div>
@@ -76,7 +76,7 @@ The default positioning of inline help component is bottom right.
         </span>
     </div>
     <div id="cch0C6A3261" class="fd-popover__popper" aria-hidden="true" x-placement="right" style="left: 18px;top: -7px;" >
-        <span class="fd-inline-help___content fd-no-border">Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
+        <span class="fd-inline-help__content fd-no-border">Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
         <span class="fd-popover__arrow" style="top: 4px;"></span>
     </div>
 </div>
@@ -94,7 +94,7 @@ The default positioning of inline help component is bottom right.
         </span>
     </div>
     <div id="ddh0C6A3261" class="fd-popover__popper" aria-hidden="true" x-placement="left" style="right: 18px;top: -7px;" >
-        <span class="fd-inline-help___content fd-no-border">Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
+        <span class="fd-inline-help__content fd-no-border">Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
         <span class="fd-popover__arrow" style="top: 4px;"></span>
     </div>
 </div>
