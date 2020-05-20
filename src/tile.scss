@@ -85,6 +85,25 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
   }
 }
 
+@mixin fake-tile-button-outline() {
+  &:focus,
+  &.is-focus {
+    outline: none;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+      top: 0;
+      left: 0.625rem;
+      right: 0;
+      bottom: 0.625rem;
+      z-index: 3;
+    }
+  }
+}
+
 .#{$block} {
   @include fd-reset();
   @include set-height($fd-tile-height);
@@ -457,15 +476,11 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
       max-width: 100%;
       background-color: var(--sapBlockLayer_Background);
       opacity: 0.8;
-      padding-top: 0.375rem;
+      padding-top: $fd-tile-inner-padding;
       padding-left: $fd-tile-padding;
       padding-right: $fd-tile-padding;
       border-bottom-left-radius: $fd-tile-border-radius;
       border-bottom-right-radius: $fd-tile-border-radius;
-    }
-
-    .#{$block}__header {
-      @include set-height(3.5rem);
     }
 
     .#{$block}__title,
@@ -513,13 +528,9 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
       .#{$block}__container {
         @include set-height(5.25rem);
 
-        padding-top: 0.25rem;
+        padding-top: 0.1875rem;
         padding-right: $fd-tile-small-padding;
         padding-left: $fd-tile-small-padding;
-      }
-
-      .#{$block}__header {
-        @include set-height(3.188rem);
       }
 
       .#{$block}__title,
@@ -572,6 +583,7 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
       @include fd-reset();
       @include set-height(2rem);
       @include set-width(2rem);
+      @include fake-tile-button-outline();
 
       position: absolute;
       background: transparent;
@@ -609,6 +621,10 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
       @include fd-focus() {
         outline: none;
       }
+
+      &::-moz-focus-inner {
+        border: 0;
+      }
     }
 
     .#{$block}__action-indicator {
@@ -643,6 +659,10 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
 
       @include fd-focus() {
         outline: none;
+      }
+
+      &::-moz-focus-inner {
+        border: 0;
       }
     }
 

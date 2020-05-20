@@ -828,7 +828,7 @@ Tiles do not display badges in action/edit mode.
     <div tabindex="0" class="fd-tile fd-tile--launch fd-tile--action">
         <div class="fd-tile__overlay"></div>
         <button class="fd-tile__action-close"></button>
-        <button class="fd-tile__action-indicator"></button>
+        <button tabindex="-1" class="fd-tile__action-indicator"></button>
         <div class="fd-tile__header">
             <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
             <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
@@ -843,7 +843,7 @@ Tiles do not display badges in action/edit mode.
     <div tabindex="0" class="fd-tile fd-tile--launch fd-tile--s fd-tile--action">
         <div class="fd-tile__overlay"></div>
         <button class="fd-tile__action-close"></button>
-        <button class="fd-tile__action-indicator"></button>
+        <button tabindex="-1" class="fd-tile__action-indicator"></button>
         <div class="fd-tile__header">
             <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
             <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
@@ -862,7 +862,7 @@ Tiles do not display badges in action/edit mode.
         <div class="fd-tile__overlay"></div>
         <button class="fd-tile__toggle fd-tile__toggle--pause"></button>
         <button class="fd-tile__action-close"></button>
-        <button class="fd-tile__action-indicator"></button>
+        <button tabindex="-1" class="fd-tile__action-indicator"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
                 <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
@@ -887,7 +887,7 @@ Tiles do not display badges in action/edit mode.
         <div class="fd-tile__overlay"></div>
         <button class="fd-tile__toggle fd-tile__toggle--pause"></button>
         <button class="fd-tile__action-close"></button>
-        <button class="fd-tile__action-indicator"></button>
+        <button tabindex="-1" class="fd-tile__action-indicator"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
                 <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>

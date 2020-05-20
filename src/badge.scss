@@ -20,6 +20,7 @@ $block: #{$fd-namespace}-badge;
   position: absolute;
   right: 0.5rem;
   top: -0.55rem;
+  z-index: 5;
 
   @include fd-rtl() {
     right: initial;
