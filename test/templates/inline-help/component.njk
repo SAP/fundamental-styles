@@ -6,9 +6,15 @@ inline-help:
 {% macro inline_help(properties={
         content: "Lorem ipsum dolor sit amet."
     }, modifier={}, state={}, aria={}) -%}
-<span class="fd-inline-help"{{ aria | aria }}>
-    <span class="fd-inline-help__content{{ modifier.content | modifier('inline-help__content') }}">
-        {{ properties.content }}
-    </span>
-</span>
+<div class="fd-popover">
+    <div class="fd-popover__control">
+        <span class="fd-inline-help" tabindex="0" role="button" aria-controls="aah0C6A32611" aria-expanded="false" aria-haspopup="true">
+        </span>
+    </div>
+    <div id="aah0C6A32611" class="fd-popover__popper" aria-hidden="true" x-placement="bottom" {{ aria | aria }} >
+        <span class="fd-inline-help__content fd-no-border{{ modifier.content | modifier('inline-help__content') }}">{{ properties.content }}</span>
+        <span class="fd-popover__arrow"></span>
+    </div>
+</div>
 {%- endmacro %}
+
