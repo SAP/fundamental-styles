@@ -69,8 +69,8 @@ $block: #{$fd-namespace}-inline-help;
     z-index: map-get($fd-z-index-levels, "first");
     border-radius: 5px;
     filter: $fd-tooltip-box-shadow;
-
   }
+
   &:hover {
     .#{$block}__content {
       visibility: visible;
