@@ -92,14 +92,24 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
 
     &::after {
       content: '';
+      width: 1.5rem;
+      height: 1.5rem;
+      box-sizing: border-box;
       position: absolute;
       display: block;
       border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
-      top: 0;
-      left: 0.625rem;
+      top: -0.0625rem;
+      left: 0.5625rem;
       right: 0;
-      bottom: 0.625rem;
+      bottom: 0;
       z-index: 3;
+    }
+
+    @include fd-rtl() {
+      &::after {
+        left: 0;
+        right: 0.5625rem;
+      }
     }
   }
 }
@@ -580,17 +590,15 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
     }
 
     .#{$block}__action-close {
-      @include fd-reset();
       @include set-height(2rem);
       @include set-width(2rem);
       @include fake-tile-button-outline();
 
       position: absolute;
-      background: transparent;
+      padding: 0;
       top: $fd-tile-close-button-position;
       right: $fd-tile-close-button-position;
       z-index: 5;
-      cursor: pointer;
 
       @include fd-rtl() {
         right: initial;
@@ -607,6 +615,7 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
         @include set-width(1.375rem);
         @include fd-flex-center();
 
+        box-sizing: border-box;
         border-radius: 50%;
         margin-bottom: $fd-tile-close-button-offset;
         margin-left: $fd-tile-close-button-offset;
@@ -628,18 +637,12 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
     }
 
     .#{$block}__action-indicator {
-      @include fd-reset();
-      @include set-height(1.625rem);
-      @include set-width(2rem);
-
-      background: transparent;
       position: absolute;
       bottom: 0;
       right: 0;
       margin-bottom: $fd-tile-action-indicator-offset;
       margin-right: $fd-tile-action-indicator-offset;
       z-index: 5;
-      cursor: pointer;
 
       @include fd-rtl() {
         right: initial;
@@ -656,13 +659,22 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
         color: var(--sapButton_IconColor);
         content: "\e1f2";
       }
+    }
 
-      @include fd-focus() {
-        outline: none;
+    .#{$block}__action-close,
+    .#{$block}__action-indicator {
+      @include fd-hover() {
+        background: transparent;
+        border-color: transparent;
       }
 
-      &::-moz-focus-inner {
-        border: 0;
+      @include fd-active() {
+        background: transparent;
+        border-color: transparent;
+
+        @include fd-focus() {
+          outline-color: var(--sapContent_FocusColor);
+        }
       }
     }
 

@@ -736,7 +736,7 @@ Use the `fd-tile--slide` modifier class for Slide Tile.
 <div class="docs-section-container">
     <div tabindex="0" class="fd-tile fd-tile--slide">
         <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/200/200/nature')"></div>
-        <button class="fd-tile__toggle"></button>
+        <button aria-label="toggle play button" class="fd-tile__toggle"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
                 <div class="fd-tile__title">Wind Map: Monitoring Real-Time</div>
@@ -756,7 +756,7 @@ Use the `fd-tile--slide` modifier class for Slide Tile.
     </div>
     <div tabindex="0" class="fd-tile fd-tile--slide fd-tile--s">
         <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/200/200/nature')"></div>
-        <button class="fd-tile__toggle"></button>
+        <button aria-label="toggle play button" class="fd-tile__toggle"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
                 <div class="fd-tile__title">Wind Map: Monitoring Real-Time</div>
@@ -778,7 +778,7 @@ Use the `fd-tile--slide` modifier class for Slide Tile.
 <div class="docs-section-container">
     <div tabindex="0" class="fd-tile fd-tile--double fd-tile--slide">
         <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/400/200/nature')"></div>
-        <button class="fd-tile__toggle fd-tile__toggle--pause"></button>
+        <<button aria-label="toggle pause button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
                 <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
@@ -800,7 +800,7 @@ Use the `fd-tile--slide` modifier class for Slide Tile.
     </div>
     <div tabindex="0" class="fd-tile fd-tile--double fd-tile--s fd-tile--slide">
         <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/400/200/nature')"></div>
-        <button class="fd-tile__toggle fd-tile__toggle--pause"></button>
+        <<button aria-label="toggle pause button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
                 <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
@@ -835,8 +835,8 @@ For Action Mode use the `fd-tile--action` modifier class.
 <div class="docs-section-container">
     <div tabindex="0" class="fd-tile fd-tile--launch fd-tile--action">
         <div class="fd-tile__overlay"></div>
-        <button class="fd-tile__action-close"></button>
-        <button tabindex="-1" class="fd-tile__action-indicator"></button>
+        <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+        <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"></button>
         <div class="fd-tile__header">
             <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
             <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
@@ -850,8 +850,8 @@ For Action Mode use the `fd-tile--action` modifier class.
     </div>
     <div tabindex="0" class="fd-tile fd-tile--launch fd-tile--s fd-tile--action">
         <div class="fd-tile__overlay"></div>
-        <button class="fd-tile__action-close"></button>
-        <button tabindex="-1" class="fd-tile__action-indicator"></button>
+        <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+        <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"></button>
         <div class="fd-tile__header">
             <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
             <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
@@ -868,9 +868,9 @@ For Action Mode use the `fd-tile--action` modifier class.
     <div tabindex="0" class="fd-tile fd-tile--double fd-tile--slide fd-tile--action">
         <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/400/200/nature')"></div>
         <div class="fd-tile__overlay"></div>
-        <button class="fd-tile__toggle fd-tile__toggle--pause"></button>
-        <button class="fd-tile__action-close"></button>
-        <button tabindex="-1" class="fd-tile__action-indicator"></button>
+        <button aria-label="toggle button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
+        <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+        <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
                 <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
@@ -893,9 +893,9 @@ For Action Mode use the `fd-tile--action` modifier class.
     <div tabindex="0" class="fd-tile fd-tile--double fd-tile--s fd-tile--slide fd-tile--action">
         <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/400/200/nature')"></div>
         <div class="fd-tile__overlay"></div>
-        <button class="fd-tile__toggle fd-tile__toggle--pause"></button>
-        <button class="fd-tile__action-close"></button>
-        <button tabindex="-1" class="fd-tile__action-indicator"></button>
+        <button aria-label="toggle button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
+        <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+        <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
                 <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
