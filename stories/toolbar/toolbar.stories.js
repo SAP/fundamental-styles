@@ -7,6 +7,7 @@ import "../../dist/button.css";
 import "../../dist/list.css";
 import "../../dist/menu.css";
 import "../../dist/popover.css";
+import "../../test/resources/layout.css";
 
 import Toolbar from "./toolbar.html";
 

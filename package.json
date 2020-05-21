@@ -124,7 +124,7 @@
     "colors": true,
     "run": [
       "lint:pre-commit",
-      "storybook:visual"
+      "storybook:visual-docker"
     ],
     "silent": false
   },
