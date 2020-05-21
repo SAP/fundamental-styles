@@ -88,6 +88,7 @@ $block: #{$fd-namespace}-table;
     font-family: var(--sapFontFamily);
     font-size: var(--sapFontSize);
     font-weight: normal;
+    color: inherit;
     vertical-align: middle;
     border-right: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
 
@@ -120,7 +121,6 @@ $block: #{$fd-namespace}-table;
     &--status-indicator {
       width: 0.375rem;
       padding: 0;
-      background-color: $fd-table-basic-background;
 
       &--valid {
         background-color: var(--sapSuccessBorderColor);
@@ -192,9 +192,13 @@ $block: #{$fd-namespace}-table;
 
     .#{$block}__cell {
       word-break: break-word;
+    }
 
-      // TODO: To discuss where it should belong
-      @include fd-trigger-element();
+    .#{$block}__cell,
+    .#{$block}__row {
+      &--activable {
+        @include fd-trigger-element();
+      }
     }
   }
 

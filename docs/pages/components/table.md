@@ -19,7 +19,6 @@ A table is a set of tabular data. Line items can support data, images and action
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell" scope="col"></th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -29,30 +28,21 @@ A table is a set of tabular data. Line items can support data, images and action
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
-            </span></td>
-            <td class="fd-table__cell"><a href="#" >user.name@email.com</a></td>
+            <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Middle Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
-            </span></td>
-            <td class="fd-table__cell"><a href="#" >user.name@email.com</a></td>
+            <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Middle Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
-            </span></td>
-            <td class="fd-table__cell"><a href="#" >user.name@email.com</a></td>
+            <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Middle Name</td>
             <td class="fd-table__cell">Last Name</td>
@@ -63,7 +53,7 @@ A table is a set of tabular data. Line items can support data, images and action
 {% endcapture %}
 {% include display-component.html component=table-icon %}
 
-<br />
+<br/>
 
 ## Table with no borders
 <ul>
@@ -77,7 +67,6 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`
 <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell" scope="col"></th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -86,28 +75,19 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
-            </span></td>
-            <td class="fd-table__cell"><a href="#" >user.name@email.com</a></td>
+            <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
-            </span></td>
-            <td class="fd-table__cell"><a href="#" >user.name@email.com</a></td>
+            <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
-            </span></td>
-            <td class="fd-table__cell"><a href="#" >user.name@email.com</a></td>
+            <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -119,7 +99,6 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell" scope="col"></th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -128,28 +107,19 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`
     </thead>
     <tbody class="fd-table__body fd-table__body--no-horizontal-borders fd-table__body--no-vertical-borders">
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
-            </span></td>
-            <td class="fd-table__cell"><a href="#" >user.name@email.com</a></td>
+            <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
-            </span></td>
-            <td class="fd-table__cell"><a href="#" >user.name@email.com</a></td>
+            <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
-            </span></td>
-            <td class="fd-table__cell"><a href="#" >user.name@email.com</a></td>
+            <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -167,7 +137,6 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell" scope="col"></th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -176,28 +145,19 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
-            </span></td>
-            <td class="fd-table__cell"><a href="#" >user.name@email.com</a></td>
+            <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
-            </span></td>
-            <td class="fd-table__cell"><a href="#" >user.name@email.com</a></td>
+            <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
-            </span></td>
-            <td class="fd-table__cell"><a href="#" >user.name@email.com</a></td>
+            <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -219,7 +179,6 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`
 <table class="fd-table fd-table--compact">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell" scope="col"></th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -228,28 +187,19 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
-            </span></td>
-            <td class="fd-table__cell"><a href="#" >user.name@email.com</a></td>
+            <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
-            </span></td>
-            <td class="fd-table__cell"><a href="#" >user.name@email.com</a></td>
+            <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
-            </span></td>
-            <td class="fd-table__cell"><a href="#" >user.name@email.com</a></td>
+            <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -257,7 +207,6 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`
     </tbody>
     <tfoot class="fd-table__footer">
         <tr class="fd-table__row">
-            <td class="fd-table__cell"></td>
             <td class="fd-table__cell"></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
@@ -271,7 +220,6 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`
 <table class="fd-table fd-table--condensed">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell" scope="col"></th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -280,28 +228,19 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
-            </span></td>
-            <td class="fd-table__cell"><a href="#" >user.name@email.com</a></td>
+            <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
-            </span></td>
-            <td class="fd-table__cell"><a href="#" >user.name@email.com</a></td>
+            <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><span class=" fd-image--s fd-image--circle" aria-label="Image label"
-            style="background-image: url('{{site.baseurl}}/images/thumbs/rodney.artichoke.png');">
-            </span></td>
-            <td class="fd-table__cell"><a href="#" >user.name@email.com</a></td>
+            <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -309,7 +248,6 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`
     </tbody>
     <tfoot class="fd-table__footer">
         <tr class="fd-table__row">
-            <td class="fd-table__cell"></td>
             <td class="fd-table__cell"></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
@@ -321,6 +259,51 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`
 
 {% endcapture %}
 {% include display-component.html component=table-icon %}
+
+<br />
+
+## Activable Rows and Columns
+
+
+{% capture table-icon %}
+<table class="fd-table">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row fd-table__row--activable">
+            <td class="fd-table__cell">Clicking on any cell</td>
+            <td class="fd-table__cell">Of this row</td>
+            <td class="fd-table__cell">Will cause</td>
+            <td class="fd-table__cell">Higlight of whole row</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--activable">Clicking on cell</td>
+            <td class="fd-table__cell fd-table__cell--activable">Will cause</td>
+            <td class="fd-table__cell fd-table__cell--activable">Highlight of cell</td>
+            <td class="fd-table__cell fd-table__cell--activable">Last Name</td>
+            <td class="fd-table__cell fd-table__cell--activable">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell">This row</td>
+            <td class="fd-table__cell">And cells</td>
+            <td class="fd-table__cell">Are not activable</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+    </tbody>
+</table>
+{% endcapture %}
+{% include display-component.html component=table-icon %}
+
+<br />
 
 
 ## Table with checkbox
