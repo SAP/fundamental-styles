@@ -240,6 +240,10 @@ entries:
       url: /components/token.html
       output: web
 
+    - title: Toolbar
+      url: /components/toolbar.html
+      output: web
+
     - title: Tree
       url: /components/tree.html
       output: web

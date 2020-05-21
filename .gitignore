@@ -13,6 +13,7 @@ Thumbs.db
 /dist
 node_modules
 build
+storybook-static
 test/visual-regression-tests/backstop_data
 .tmp
 *.log

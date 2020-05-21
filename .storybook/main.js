@@ -1,6 +1,6 @@
 const path = require("path");
-const glob = require('glob');
-const { exec } = require('child_process');
+const glob = require("glob");
+const { exec } = require("child_process");
 
 const cssLoader = ["style-loader", "css-loader"];
 const scssLoader = [
@@ -15,6 +15,7 @@ const scssLoader = [
 module.exports = {
   stories: ["../stories/**/*.stories.js"],
   addons: [
+    "@storybook/addon-knobs/register",
     "@storybook/addon-actions",
     "@storybook/addon-links",
     "@storybook/preset-scss",
@@ -43,8 +44,8 @@ module.exports = {
     config.plugins.push({
       // Custom plugin to add scss files to webpack watcher
       apply: (compiler) => {
-        compiler.hooks.afterCompile.tap('after-compile', (comp) => {
-          const files = glob.sync('src/**/*.scss', {
+        compiler.hooks.afterCompile.tap("after-compile", (comp) => {
+          const files = glob.sync("src/**/*.scss", {
             cwd: process.cwd(),
             dot: true,
             absolute: true,
@@ -58,12 +59,12 @@ module.exports = {
     config.plugins.push({
       // Custom plugin to rebuild css styles for each scss change
       apply: (compiler) => {
-        compiler.hooks.watchRun.tap('watchRun', (comp) => {
+        compiler.hooks.watchRun.tap("watchRun", (comp) => {
           const filesChanged = comp.watchFileSystem.watcher.mtimes;
-          const wasLessChanged = Object.keys(filesChanged).some((file) => file.includes('.scss'));
+          const wasLessChanged = Object.keys(filesChanged).some((file) => file.includes(".scss"));
 
           if (wasLessChanged) {
-            exec('npm run build:default', (err, stdout, stderr) => {
+            exec("npm run build:default", (err, stdout, stderr) => {
               if (stdout) process.stdout.write(stdout);
               if (stderr) process.stderr.write(stderr);
             });
