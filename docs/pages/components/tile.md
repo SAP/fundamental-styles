@@ -589,6 +589,7 @@ Structure of the Numeric Content
 <br>
 
 ## Feed Tile
+Feed tile shows the content of new notifications. If there are no new notifications, the tile displays the most recent notification. Use the `fd-tile--feed` modifier class for Feed Tile.
 {% capture tile-feed %}
 <div class="docs-section-container">
     <div tabindex="0" class="fd-tile fd-tile--double fd-tile--feed">
@@ -728,6 +729,9 @@ Tiles do not display badges in action/edit mode.
 <br>
 
 ## Slide Tile
+Slide Tile contains a news headline, a background image, the news source, and a time stamp. A start and pause button can be found by hovering the mouse over the tile on desktop devices. On touch devices, the buttons are always displayed. The number of slides contained the tile is visualized as dots on the bottom of the tile.
+Use the `fd-tile--slide` modifier class for Slide Tile.
+
 {% capture tile-slide %}
 <div class="docs-section-container">
     <div tabindex="0" class="fd-tile fd-tile--slide">
@@ -823,6 +827,10 @@ Tiles do not display badges in action/edit mode.
 <br>
 
 ## Tile In Action Mode
+On action mode view, the close button is displayed on the top right corner of the Tile.
+The action icon is only an indicator and is displayed on the bottom right corner. Click/touch area is the entire Tile, excluding the click/touch area reserved for the close button.
+For Action Mode use the `fd-tile--action` modifier class.
+
 {% capture tile-action %}
 <div class="docs-section-container">
     <div tabindex="0" class="fd-tile fd-tile--launch fd-tile--action">
