@@ -36,6 +36,7 @@ $has-child-content-arrow-margin: 0.125rem;
 
     &:focus {
       @include fd-link();
+
       position: static;
       width: auto;
       height: auto;
