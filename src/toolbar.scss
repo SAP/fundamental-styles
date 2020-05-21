@@ -142,6 +142,8 @@ $title-toolbar-height: 2.75rem;
   }
 
   &__spacer {
+    @include fd-reset();
+
     height: 100%;
     flex: 1 auto;
 
@@ -152,6 +154,8 @@ $title-toolbar-height: 2.75rem;
   }
 
   &__separator {
+    @include fd-reset();
+
     width: 0.0625rem;
     height: $toolbar-separator-height-compact;
     // missing color
