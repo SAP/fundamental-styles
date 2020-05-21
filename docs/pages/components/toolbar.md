@@ -92,6 +92,8 @@ The toolbar appears smaller than the regular size to show information(e.g: text,
 
 ### Title
 
+Title toolbar should be used whenever title needs to be included
+
 {% capture toolbar %}
 
   <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
@@ -105,6 +107,8 @@ The toolbar appears smaller than the regular size to show information(e.g: text,
 {% include display-component.html component=toolbar %}
 
 ## Active toolbar
+
+When active toolbar class is added, then it enables hover and select behaviour on toolbar
 
 {% capture toolbar %}
 
