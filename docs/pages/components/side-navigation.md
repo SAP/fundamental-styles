@@ -146,7 +146,7 @@ On expand, the `is-expanded` class should be propagated also to `__content` elem
                     <a class="fd-nested-list__link" href="#">
                         <span class="fd-nested-list__title">Level 1 Item</span>
                     </a>
-                    <button class="fd-button fd-nested-list__button" aria-controls="EX100L2" aria-haspopup="true" aria-expanded="false"></button>
+                    <button class="fd-button fd-nested-list__button" aria-controls="EX100L2" aria-haspopup="true" aria-expanded="false" aria-label="Expand submenu"></button>
                 </div>
                 <ul class="fd-nested-list level-2" id="EX100L2" aria-hidden="true">
                     <li class="fd-nested-list__item">
@@ -222,11 +222,11 @@ On expand, the `is-expanded` class should be propagated also to `__content` elem
             </li>
             <li class="fd-nested-list__item">
                 <div class="fd-nested-list__content is-selected has-child">
-                    <span class="fd-nested-list__link">
+                    <a class="fd-nested-list__link" href="#">
                         <span aria-hidden="true" class="fd-nested-list__icon sap-icon--employee"></span>
-                        <a class="fd-nested-list__title" href="#">Level 1 Item</a>
-                    </span>
-                    <button class="fd-button fd-nested-list__button" aria-controls="EX100L2" aria-haspopup="true" aria-expanded="false"></button>
+                        <span class="fd-nested-list__title" href="#">Level 1 Item</span>
+                    </a>
+                    <button class="fd-button fd-nested-list__button" aria-controls="EX100L2" aria-haspopup="true" aria-expanded="false" aria-label="Expand submenu"></button>
                 </div>
                 <ul class="fd-nested-list fd-nested-list--text-only level-2" id="EX400L2" aria-hidden="true">
                     <li class="fd-nested-list__item">
@@ -318,11 +318,11 @@ The lists in both sections (Main and Utility) should have the `fd-nested-list--c
             </li>
             <li class="fd-nested-list__item">
                 <div class="fd-nested-list__content has-child">
-                    <span class="fd-nested-list__link">
+                    <a class="fd-nested-list__link" href="#">
                         <span aria-hidden="true" class="fd-nested-list__icon sap-icon--employee"></span>
-                        <a class="fd-nested-list__title" href="#">Level 1 Item</a>
-                    </span>
-                    <button class="fd-button fd-nested-list__button" aria-controls="EX100L2" aria-haspopup="true" aria-expanded="false"></button>
+                        <span class="fd-nested-list__title" href="#">Level 1 Item</span>
+                    </a>
+                    <button class="fd-button fd-nested-list__button" aria-controls="EX500L2" aria-haspopup="true" aria-expanded="false" aria-label="Expand submenu"></button>
                 </div>
                 <ul class="fd-nested-list fd-nested-list--text-only level-2" id="EX500L2" aria-hidden="true">
                     <li class="fd-nested-list__item">
@@ -371,7 +371,7 @@ The lists in both sections (Main and Utility) should have the `fd-nested-list--c
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
                     <span aria-hidden="true" class="fd-nested-list__icon sap-icon--compare"></span>
-                    <a class="fd-nested-list__title" href="#">Level 1 Item</a>
+                    <span class="fd-nested-list__title" href="#">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
@@ -418,11 +418,11 @@ The following requirements must be met:
             </li>
             <li class="fd-nested-list__item">
                 <div class="fd-nested-list__content is-selected has-child" tabindex="0">
-                    <span class="fd-nested-list__link">
+                    <a class="fd-nested-list__link" href="#">
                         <span aria-hidden="true" class="fd-nested-list__icon sap-icon--employee"></span>
-                        <a class="fd-nested-list__title" href="#">Level 1 Item</a>
-                    </span>
-                    <button class="fd-button fd-nested-list__button" aria-controls="EX100L2" aria-haspopup="true" aria-expanded="false"></button>
+                        <span class="fd-nested-list__title" href="#">Level 1 Item</span>
+                    </a>
+                    <button class="fd-button fd-nested-list__button" aria-controls="EX100L2" aria-haspopup="true" aria-expanded="false" aria-label="Expand submenu"></button>
                 </div>
             </li>
             <li class="fd-nested-list__item">
@@ -477,15 +477,15 @@ The following requirements must be met:
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
                     <span aria-label="Level 1 Item" class="fd-nested-list__icon sap-icon--calendar"></span>
-                    <a class="fd-nested-list__title" href="#">Level 1 Item</a>
+                    <span class="fd-nested-list__title" href="#">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <div class="fd-nested-list__content is-selected has-child" tabindex="0">
-                    <span class="fd-nested-list__link">
+                    <a class="fd-nested-list__link" href="#">
                         <span aria-hidden="true" class="fd-nested-list__icon sap-icon--employee"></span>
                         <span class="fd-nested-list__title">Level 1 Item</span>
-                    </span>
+                    </a>
                     <button class="fd-button fd-nested-list__button" aria-controls="EX100L2" aria-haspopup="true" aria-expanded="false"></button>
                 </div>
             </li>
