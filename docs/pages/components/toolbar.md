@@ -9,7 +9,7 @@ folder: components
 summary:
 ---
 
-The toolbar enables the user to change the UI or trigger an action. For example, the toolbar allows the user to change views, manipulate data or objects, navigate to another page, perform generic actions, and so on.
+The toolbar enables the user to change the UI or trigger an action. For example, the toolbar allows the user to change views, manipulate data or objects, navigate to another page, perform generic actions, and so on.  It is usually used for buttons (with an icon or text).
 {: .docs-intro}
 
 ## Toolbar types
