@@ -141,6 +141,7 @@ $block: #{$fd-namespace}-table;
     }
 
     &--fixed {
+      left: 0;
       position: absolute;
       background-color: $fd-table-basic-background;
       display: flex;
@@ -234,9 +235,6 @@ $block: #{$fd-namespace}-table;
   }
 
   // Modifiers
-  &--fixed-wrapper {
-    position: relative;
-  }
 
   &--fixed {
     overflow-x: scroll;
