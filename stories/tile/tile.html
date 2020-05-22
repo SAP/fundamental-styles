@@ -1,15 +1,3 @@
-{% extends "layout.njk" %}
-{% from "./../format.njk" import format %}
-
-{% block content %}
-<style media="screen">
-  .fd-tile {
-    margin-bottom: 10px;
-  }
-</style>
-
-<h2>Tile</h2>
-{% set example %}
 <h4>Generic Tile Sizes (Responsiveness)</h4>
 <br>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
@@ -136,7 +124,7 @@
           <div class="fd-tile__section"><span class="fd-tile__footer-text">Footer</span></div>
       </div>
   </div>
-  <div class="fd-tile fd-tile--kpi fd-tile--s is-hover">
+  <div class="fd-tile fd-tile--kpi fd-tile--s">
       <div class="fd-tile__header">
           <div class="fd-tile__title">Tile Title Text</div>
           <div class="fd-tile__subtitle">Tile Subtitle Text</div>
@@ -164,7 +152,7 @@
           <span class="fd-tile__footer-text">Footer Text</span>
       </div>
   </div>
-  <div class="fd-tile fd-tile--launch fd-tile--s is-hover">
+  <div class="fd-tile fd-tile--launch fd-tile--s">
       <div class="fd-tile__header-content">
           <div class="fd-tile__title">Launch Tile Title Text Lorem ipsum dolor sit amet, consectetur elit</div>
           <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
@@ -184,7 +172,7 @@
           <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
       </div>
       <div class="fd-tile__content">
-          <span class="fd-tile__profile-img" style="background-image: url('/static/product-tile.jpg')" role="presentation" aria-label="Profile Image"></span>
+          <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/60/60/nature')" role="presentation" aria-label="Profile Image"></span>
       </div>
       <div class="fd-tile__footer">
           <span class="fd-tile__footer-text">Footer Text</span>
@@ -196,7 +184,7 @@
           <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
       </div>
       <div class="fd-tile__content">
-          <span class="fd-tile__profile-img" style="background-image: url('/static/product-tile.jpg')" role="presentation" aria-label="Profile Image"></span>
+          <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/50/50/nature')" role="presentation" aria-label="Profile Image"></span>
       </div>
       <div class="fd-tile__footer">
           <span class="fd-tile__footer-text">Unit, Notification</span>
@@ -236,46 +224,138 @@
 <h4>Feed Tile</h4>
 <br>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
-  <div class="fd-tile fd-tile--double fd-tile--feed">
-      <div class="fd-tile__header">
-          <div class="fd-tile__title">Feed Tile Title Text sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-          <div class="fd-tile__subtitle">Feed Tile Subtitle Text</div>
-      </div>
-      <div class="fd-tile__content fd-tile__content--2-col">
-          <div class="fd-tile__section">
+  <div tabindex="0" class="fd-tile fd-tile--double fd-tile--feed">
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Feed Tile Title Text sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+            <div class="fd-tile__subtitle">Feed Tile Subtitle Text</div>
+        </div>
+        <div class="fd-tile__content fd-tile__content--2-col">
+            <div class="fd-tile__section">
                 <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt magna aliqua.</div>
                 <div class="fd-tile__content-byline">About 1 minute ago.</div>
-          </div>
-          <div class="fd-tile__section">0</div>
-      </div>
-      <div class="fd-tile__footer">
-          <span class="fd-tile__footer-text">Footer</span>
-      </div>
-  </div>
-  <div class="fd-tile fd-tile--double fd-tile--s fd-tile--feed">
-      <div class="fd-tile__header">
-          <div class="fd-tile__title">Feed Tile Title Text sed do eiusmod</div>
-          <div class="fd-tile__subtitle">Feed Tile Subtitle Text</div>
-      </div>
-      <div class="fd-tile__content fd-tile__content--2-col">
-          <div class="fd-tile__section">
+            </div>
+            <div class="fd-tile__section">
+                <div class="fd-numeric-content">
+                    <div class="fd-numeric-content__kpi-container">
+                        <div class="fd-numeric-content__kpi">35</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fd-tile__footer">
+            <span class="fd-tile__footer-text">Footer</span>
+        </div>
+    </div>
+    <div tabindex="0" class="fd-tile fd-tile--double fd-tile--s fd-tile--feed">
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Feed Tile Title Text sed do eiusmod</div>
+            <div class="fd-tile__subtitle">Feed Tile Subtitle Text</div>
+        </div>
+        <div class="fd-tile__content fd-tile__content--2-col">
+            <div class="fd-tile__section">
                 <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod.</div>
                 <div class="fd-tile__content-byline">About 1 minute ago.</div>
-          </div>
-          <div class="fd-tile__section">99</div>
-      </div>
-      <div class="fd-tile__footer">
-          <span class="fd-tile__footer-text">Footer</span>
-      </div>
-  </div>
+            </div>
+            <div class="fd-tile__section">
+                <div class="fd-numeric-content fd-numeric-content--m">
+                    <div class="fd-numeric-content__kpi-container">
+                        <div class="fd-numeric-content__kpi fd-numeric-content__kpi--negative">9</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fd-tile__footer">
+            <span class="fd-tile__footer-text">Footer</span>
+        </div>
+    </div>
+</div>
+<br>
+<h4>Badge Tile</h4>
+<br>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
+    <div tabindex="0" class="fd-tile fd-tile--launch">
+        <div class="fd-badge">Badge</div>
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
+            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
+        </div>
+        <div class="fd-tile__content">
+            <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/60/60/nature')" role="presentation" aria-label="Profile Image"></span>
+        </div>
+        <div class="fd-tile__footer">
+            <span class="fd-tile__footer-text">Footer Text</span>
+        </div>
+    </div>
+    <div tabindex="0" class="fd-tile fd-tile--launch fd-tile--s">
+        <div class="fd-badge">Badge with a very very very very very very very very very long text</div>
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
+            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
+        </div>
+        <div class="fd-tile__content">
+            <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/50/50/nature')" role="presentation" aria-label="Profile Image"></span>
+        </div>
+        <div class="fd-tile__footer">
+            <span class="fd-tile__footer-text">Unit, Notification</span>
+        </div>
+    </div>
+</div>
+<br>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
+    <div tabindex="0" class="fd-tile fd-tile--double fd-tile--feed">
+        <div class="fd-badge">New</div>
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Feed Tile Title Text sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+            <div class="fd-tile__subtitle">Feed Tile Subtitle Text</div>
+        </div>
+        <div class="fd-tile__content fd-tile__content--2-col">
+            <div class="fd-tile__section">
+                <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt magna aliqua.</div>
+                <div class="fd-tile__content-byline">About 1 minute ago.</div>
+            </div>
+            <div class="fd-tile__section">
+                <div class="fd-numeric-content">
+                    <div class="fd-numeric-content__kpi-container">
+                        <div class="fd-numeric-content__kpi">35</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fd-tile__footer">
+            <span class="fd-tile__footer-text">Footer</span>
+        </div>
+    </div>
+    <div tabindex="0" class="fd-tile fd-tile--double fd-tile--s fd-tile--feed">
+        <div class="fd-badge">Badge with a very very very very very very very very very long text</div>
+        <div class="fd-tile__header">
+            <div class="fd-tile__title">Feed Tile Title Text sed do eiusmod</div>
+            <div class="fd-tile__subtitle">Feed Tile Subtitle Text</div>
+        </div>
+        <div class="fd-tile__content fd-tile__content--2-col">
+            <div class="fd-tile__section">
+                <div class="fd-tile__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod.</div>
+                <div class="fd-tile__content-byline">About 1 minute ago.</div>
+            </div>
+            <div class="fd-tile__section">
+                <div class="fd-numeric-content fd-numeric-content--m">
+                    <div class="fd-numeric-content__kpi-container">
+                        <div class="fd-numeric-content__kpi fd-numeric-content__kpi--negative">9</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fd-tile__footer">
+            <span class="fd-tile__footer-text">Footer</span>
+        </div>
+    </div>
 </div>
 <br>
 <h4>Slide Tile</h4>
 <br>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
     <div tabindex="0" class="fd-tile fd-tile--slide">
-        <div class="fd-tile__background-img" style="background-image: url('/static/product-tile.jpg')"></div>
-        <button class="fd-tile__toggle"></button>
+        <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/300/300/nature')"></div>
+        <button aria-label="toggle button" class="fd-tile__toggle"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
                 <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
@@ -294,8 +374,8 @@
         </div>
     </div>
     <div tabindex="0" class="fd-tile fd-tile--slide fd-tile--s is-hover">
-        <div class="fd-tile__background-img" style="background-image: url('/static/product-tile.jpg')"></div>
-        <button class="fd-tile__toggle"></button>
+        <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/300/300/nature')"></div>
+        <button aria-label="toggle button" class="fd-tile__toggle"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
                 <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
@@ -314,10 +394,11 @@
         </div>
     </div>
 </div>
+<br>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
     <div tabindex="0" class="fd-tile fd-tile--double fd-tile--slide">
-        <div class="fd-tile__background-img" style="background-image: url('/static/product-tile.jpg')"></div>
-        <button class="fd-tile__toggle fd-tile__toggle--pause"></button>
+        <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/300/300/nature')"></div>
+        <button aria-label="toggle button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
                 <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
@@ -338,8 +419,8 @@
         </div>
     </div>
     <div tabindex="0" class="fd-tile fd-tile--double fd-tile--s fd-tile--slide is-hover">
-        <div class="fd-tile__background-img" style="background-image: url('/static/product-tile.jpg')"></div>
-        <button class="fd-tile__toggle fd-tile__toggle--pause"></button>
+        <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/300/300/nature')"></div>
+        <button aria-label="toggle button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
                 <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
@@ -360,21 +441,20 @@
         </div>
     </div>
 </div>
-
 <br>
 <h4>Action Mode</h4>
 <br>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
     <div tabindex="0" class="fd-tile fd-tile--launch fd-tile--action">
         <div class="fd-tile__overlay"></div>
-        <button class="btn-playground--compact btn-playground--transparent fd-tile__action-close"></button>
-        <button class="btn-playground--compact btn-playground--transparent fd-tile__action-indicator"></button>
+        <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+        <button aria-label="actions button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator fd-tile__action-indicator"></button>
         <div class="fd-tile__header">
             <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
             <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
         </div>
         <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('/static/product-tile.jpg')" role="presentation" aria-label="Profile Image"></span>
+            <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/300/300/nature')" role="presentation" aria-label="Profile Image"></span>
         </div>
         <div class="fd-tile__footer">
             <span class="fd-tile__footer-text">Footer Text</span>
@@ -382,27 +462,28 @@
     </div>
     <div tabindex="0" class="fd-tile fd-tile--launch fd-tile--s fd-tile--action">
         <div class="fd-tile__overlay"></div>
-        <button class="btn-playground--compact btn-playground--transparent fd-tile__action-close"></button>
-        <button class="btn-playground--compact btn-playground--transparent fd-tile__action-indicator"></button>
+        <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+        <button aria-label="actions button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator fd-tile__action-indicator"></button>
         <div class="fd-tile__header">
             <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
             <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
         </div>
         <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('/static/product-tile.jpg')" role="presentation" aria-label="Profile Image"></span>
+            <span class="fd-tile__profile-img" style="background-image: url('https://placeimg.com/300/300/nature')" role="presentation" aria-label="Profile Image"></span>
         </div>
         <div class="fd-tile__footer">
             <span class="fd-tile__footer-text">Unit, Notification</span>
         </div>
     </div>
 </div>
+<br>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
     <div tabindex="0" class="fd-tile fd-tile--double fd-tile--slide fd-tile--action">
-        <div class="fd-tile__background-img" style="background-image: url('/static/product-tile.jpg')"></div>
+        <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/300/300/nature')"></div>
         <div class="fd-tile__overlay"></div>
-        <button class="fd-tile__toggle fd-tile__toggle--pause"></button>
-        <button class="btn-playground--compact btn-playground--transparent fd-tile__action-close"></button>
-        <button class="btn-playground--compact btn-playground--transparent fd-tile__action-indicator"></button>
+        <button aria-label="toggle button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
+        <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+        <button aria-label="actions button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator fd-tile__action-indicator"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
                 <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
@@ -423,11 +504,11 @@
         </div>
     </div>
     <div tabindex="0" class="fd-tile fd-tile--double fd-tile--s fd-tile--slide fd-tile--action">
-        <div class="fd-tile__background-img" style="background-image: url('/static/product-tile.jpg')"></div>
+        <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/300/300/nature')"></div>
         <div class="fd-tile__overlay"></div>
-        <button class="fd-tile__toggle fd-tile__toggle--pause"></button>
-        <button class="btn-playground--compact btn-playground--transparent fd-tile__action-close"></button>
-        <button class="btn-playground--compact btn-playground--transparent fd-tile__action-indicator"></button>
+        <button aria-label="toggle button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
+        <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+        <button aria-label="actions button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator fd-tile__action-indicator"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
                 <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
@@ -448,7 +529,3 @@
         </div>
     </div>
 </div>
-{% endset %}
-{{ format(example) }}
-
-{% endblock %}

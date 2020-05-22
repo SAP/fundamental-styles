@@ -1,0 +1,29 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-badge;
+
+.#{$block} {
+  @include fd-reset();
+  @include fd-ellipsis();
+
+  height: 1rem;
+  max-width: calc(100% - 1rem);
+  font-size: var(--sapFontSmallSize);
+  line-height: normal;
+  font-weight: bold;
+  background: var(--sapHighlightColor);
+  color: var(--sapContent_ContrastTextColor);
+  padding: 0 0.5rem;
+  border: 0.0625rem solid transparent;
+  border-radius: 0.5rem;
+  position: absolute;
+  right: 0.5rem;
+  top: -0.55rem;
+  z-index: 5;
+
+  @include fd-rtl() {
+    right: initial;
+    left: 0.5rem;
+  }
+}
