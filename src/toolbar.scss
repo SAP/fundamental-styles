@@ -159,6 +159,8 @@ $title-toolbar-height: 2.75rem;
   &__overflow {
     &.#{$fd-namespace}-popover {
       .#{$block}__overflow__body {
+        @include fd-reset();
+
         display: flex;
         flex-direction: column;
         max-width: 20rem;
@@ -167,7 +169,7 @@ $title-toolbar-height: 2.75rem;
         > * {
           display: block;
           text-align: left;
-          width: 100%;
+          width: auto;
 
           @include fd-rtl() {
             text-align: right;
@@ -176,7 +178,7 @@ $title-toolbar-height: 2.75rem;
         > .#{$block}__separator {
           height: 0.0625rem;
           margin: 0.375rem 0.1875rem;
-          width: 100%;
+          width: auto;
           // background-color: var(@sapUiToolbarSeparatorColor);
           background-color: var(--sapGroup_TitleBorderColor);
         }
