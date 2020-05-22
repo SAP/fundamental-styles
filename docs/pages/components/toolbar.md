@@ -213,48 +213,34 @@ there is not enough space
 
   <div class="fd-toolbar fd-toolbar--solid fd-toolbar--cozy">
     <span>Title</span>
+    <button class="fd-button fd-button--compact fd-button--transparent">Button</button>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
-    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--survey"></button>
-    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--pool"></button>
-    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--pie-chart"></button>
-    <div class="fd-popover">
+    <button class="fd-button fd-button--compact fd-button--transparent">Button</button>
+    <button class="fd-button fd-button--compact fd-button--transparent">Button</button>
+    <span class="fd-toolbar__separator"></span>
+    <div class="fd-popover fd-toolbar__overflow">
       <div class="fd-popover__control">
         <button class="fd-button fd-button--transparent fd-button--compact sap-icon--overflow"
-                    aria-controls="wgxzK859" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+          aria-controls="wgxzK85912"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-label="More"></button>
       </div>
-      <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="wgxzK859">
-        <nav class="fd-menu" id="">
-          <ul class="fd-menu__list fd-menu__list--no-shadow">
-              <li class="fd-menu__item">
-                  <a class="fd-menu__link" href="#">
-                      <span class="fd-menu__title">Edit</span>
-                  </a>
-              </li>
-              <li class="fd-menu__item">
-                  <a class="fd-menu__link" href="#">
-                      <span class="fd-menu__title">Delete</span>
-                  </a>
-              </li>
-              <li class="fd-menu__item">
-                  <a class="fd-menu__link" href="#">
-                      <span class="fd-menu__title">Assign</span>
-                  </a>
-              </li>
-              <li class="fd-menu__item">
-                  <a class="fd-menu__link" href="#">
-                      <span class="fd-menu__title">Expire</span>
-                  </a>
-              </li>
-              <li class="fd-menu__item">
-                  <a class="fd-menu__link" href="#">
-                      <span class="fd-menu__title">Archive</span>
-                  </a>
-              </li>
-          </ul>
-        </nav>
+      <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+        aria-hidden="true"
+        id="wgxzK85912">
+        <div class="fd-toolbar__overflow__body">
+          <label class="fd-label fd-toolbar__overflow__label">Label</label>
+          <button class="fd-button fd-button--compact fd-button--transparent">Edit</button>
+          <span class="fd-toolbar__separator"></span>
+          <label class="fd-form-label fd-toolbar__overflow__form-label">Form label</label>
+          <button class="fd-button fd-button--compact fd-button--negative">Delete</button>
+          <span class="fd-toolbar__separator"></span>
+          <button class="fd-button fd-button--compact fd-button--sucess">Assign</button>
+          <button class="fd-button fd-button--compact fd-button--attention">Exit</button>
+        </div>
       </div>
     </div>
   </div>
-
 {% endcapture %}
 {% include display-component.html component=toolbar %}

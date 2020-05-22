@@ -159,9 +159,8 @@ $title-toolbar-height: 2.75rem;
   &__overflow {
     &.#{$fd-namespace}-popover {
       .#{$block}__overflow__body {
-        display: -ms-grid;
-        -ms-grid-columns: max-content;
-        width: max-content;
+        display: flex;
+        flex-direction: column;
         max-width: 20rem;
         padding: 0.1875rem 0.375rem;
 
