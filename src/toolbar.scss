@@ -134,13 +134,6 @@ $title-toolbar-height: 2.75rem;
     @include toolbarInfo();
   }
 
-  &--cozy {
-    height: $toolbar-height-cozy;
-    .#{$block}__separator {
-      height: $toolbar-separator-height-cozy;
-    }
-  }
-
   &__spacer {
     @include fd-reset();
 
@@ -161,5 +154,60 @@ $title-toolbar-height: 2.75rem;
     // missing color
     // background-color: var(@sapUiToolbarSeparatorColor);
     background-color: var(--sapGroup_TitleBorderColor);
+  }
+
+  &__overflow {
+    &.#{$fd-namespace}-popover {
+      .#{$block}__overflow__body {
+        display: -ms-grid;
+        -ms-grid-columns: max-content;
+        width: max-content;
+        max-width: 20rem;
+        padding: 0.1875rem 0.375rem;
+
+        > * {
+          display: block;
+          text-align: left;
+          width: 100%;
+
+          @include fd-rtl() {
+            text-align: right;
+          }
+        }
+        > .#{$block}__separator {
+          height: 0.0625rem;
+          margin: 0.375rem 0.1875rem;
+          width: 100%;
+          // background-color: var(@sapUiToolbarSeparatorColor);
+          background-color: var(--sapGroup_TitleBorderColor);
+        }
+        .#{$block}__overflow__label {
+          &.#{$fd-namespace}-label {
+            margin: 0.375rem 0;
+          }
+        }
+
+        .#{$block}__overflow__form-label {
+          &.#{$fd-namespace}-form-label {
+            margin: 0.625rem 0 0.125rem 0;
+          }
+        }
+      }
+    }
+  }
+
+  &--cozy {
+    height: $toolbar-height-cozy;
+    .#{$block}__separator {
+      height: $toolbar-separator-height-cozy;
+    }
+
+    .#{$block}__overflow {
+      &.#{$fd-namespace}-popover {
+        .#{$block}__overflow__body {
+          padding: 0.25rem 0.5rem;
+        }
+      }
+    }
   }
 }
