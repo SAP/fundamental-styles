@@ -133,7 +133,7 @@ Its role is to fill remaining space either automatically or manually and place i
 
 ### Auto
 
-Takes remaining width and fill it
+The toolbar can be inserted into other controls and can inherit the design from the parent control by adding `auto` to the `fd-toolbar` class
 
 {% capture toolbar %}
 
