@@ -20,20 +20,19 @@
         ],
         "headers": [
             {
-                "label": "Test Header",
-                "sort": "asc"
+                "label": "Test Header"
             },
             {
-                "label": "Test Header",
-                "sort": "dsc"
+                "label": "Test Header"
             },
             {
-                "label": "Test Header",
-                "sort": ""
+                "label": "Test Header"
             },
             {
-                "label": "Test Header",
-                "sort": ""
+                "label": "Test Header"
+            },
+            {
+                "label": "Test Header"
             }
         ]
     },

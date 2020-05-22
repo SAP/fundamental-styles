@@ -170,7 +170,6 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`
             <td class="fd-table__cell"></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell"></td>
         </tr>
     </tfoot>
 </table>

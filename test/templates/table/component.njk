@@ -16,14 +16,14 @@ table:
 <table  class="fd-table{{ modifier.block | modifier('table') }}{{ state | state }}{{ classes | classes }}"{{ aria | aria }}>
     <thead class="fd-table__header">
         <tr class="fd-table__row">
+            {%- if properties.checkbox -%}
+                <th></th>
+            {%- endif -%}
+            {%- if properties.highlight -%}
+                <th></th>
+            {%- endif -%}
             {%- for header in properties.headers %}
             {%- if header.context_menu -%}
-            <th class="fd-table__context-menu {{header.classes | classes}} fd-table__cell" {{header.aria | aria}}  scope="col">
-                <span class="fd-table__context-menu-label">Header Column</span>
-            </th>
-            {%- else -%}
-            {% set sort_class = "fd-table__cell fd-table__sort-column" if header.sortable else "" %}
-            {% set sort_order_class = "fd-table__cell fd-table__sort-column--"+header.sort_order if header.sort_order and header.sortable  else "" %}
             <th class="fd-table__cell {{sort_class}} {{sort_order_class}}" scope="col">{{header.label}}</th>
             {%- endif -%}
             {%- endfor %}
@@ -32,6 +32,13 @@ table:
     <tbody class="fd-table__body" >
         {%- for row in properties.rows %}
         <tr{% if properties.selectedRow === loop.index %} aria-selected="true"{% endif %}  class="fd-table__row {% if properties.rowClass.rowIndex === loop.index %}{{properties.rowClass.class}}{% endif %}">
+
+            {%- if properties.checkbox -%}
+                <td></td>
+            {%- endif -%}
+            {%- if properties.highlight -%}
+                <td></td>
+            {%- endif -%}
             {%- for item in row %}
             {%- if item.label %}
             <td class="{{item.class}} fd-table__cell">{{ item.label }}</td>
