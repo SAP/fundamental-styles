@@ -9,14 +9,14 @@ folder: components
 summary:
 ---
 
-The toolbar enables the user to change the UI or trigger an action. For example, the toolbar allows the user to change views, manipulate data or objects, navigate to another page, perform generic actions, and so on.  It is usually used for buttons (with an icon or text).
+The toolbar enables the user to change the UI or trigger an action. For example, the toolbar allows the user to change views, manipulate data or objects, navigate to another page, perform generic actions, and so on.  It is most commonly used to display buttons, labels, selects and various other input controls.
 {: .docs-intro}
 
 ## Toolbar types
 
 ### Solid
 
-The toolbar has a solid background
+The toolbar has a solid background by default.
 
 {% capture toolbar %}
 
@@ -37,7 +37,7 @@ The toolbar has a solid background
 
 ### Auto
 
-The toolbar can be inserted into other controls and if the design is "Auto" then it inherits the design from parent control
+The toolbar can be inserted into other controls and can inherit the design from the parent control by passing `auto` to the `fd-toolbar` class.
 
 {% capture toolbar %}
 
@@ -58,7 +58,7 @@ The toolbar can be inserted into other controls and if the design is "Auto" then
 
 ### Transparent
 
-The content of the toolbar will be displayed transparent
+The toolbar also supports a transparent background which can be achieved by passing `transparent` to the `fd-toolbar` class.
 
 {% capture toolbar %}
 
@@ -79,7 +79,7 @@ The content of the toolbar will be displayed transparent
 
 ### Info
 
-The toolbar appears smaller than the regular size to show information(e.g: text, icon)
+The Info toolbar is commonly used to show information (text or icons) and is slightly smaller than the regular toolbar in size. It can be achieved by passing `info` to the `fd-toolbar` class.
 
 {% capture toolbar %}
 
@@ -92,7 +92,7 @@ The toolbar appears smaller than the regular size to show information(e.g: text,
 
 ### Title
 
-Title toolbar should be used whenever title needs to be included
+The Title toolbar should be used whenever a title needs to be included. It can be achieved by passing `title` to the `fd-toolbar` class.
 
 {% capture toolbar %}
 
@@ -108,7 +108,7 @@ Title toolbar should be used whenever title needs to be included
 
 ## Active toolbar
 
-When active toolbar class is added, then it enables hover and select behaviour on toolbar
+The Active toolbar can be used to enable hover and select behaviours in toolbar by passing `active` in the `fd-toolbar` class.
 
 {% capture toolbar %}
 
@@ -129,11 +129,11 @@ When active toolbar class is added, then it enables hover and select behaviour o
 
 ## Spacer
 
-Its role is to fill remaining space either automatically or manually and place item regarding to it
+Spacers can be used to fill any remaining space either automatically or manually within a toolbar.
 
 ### Auto
 
-The toolbar can be inserted into other controls and can inherit the design from the parent control by adding `auto` to the `fd-toolbar` class
+To create a spacer that automatically fills the remaining width in the toolbar, pass `auto` in the `fd-toolbar_spacer` class.
 
 {% capture toolbar %}
 
@@ -148,7 +148,7 @@ The toolbar can be inserted into other controls and can inherit the design from 
 
 ### Fixed
 
-Developer has to set width for spacer
+To set the width of a spacer manually, pass the desired width using the `fixed` and `style` modifiers in the `fd-toolbar_spacer` class as seen below.
 
 {% capture toolbar %}
 
@@ -163,7 +163,8 @@ Developer has to set width for spacer
 
 ## Separator
 
-Its role is to visually separate items from each other
+Separators should be used to visually separate items from each other.
+
 {% capture toolbar %}
 
   <div class="fd-toolbar fd-toolbar--info">
@@ -185,7 +186,7 @@ Its role is to visually separate items from each other
 
 ## Size
 
-Default size is compact but this can be changed using `fd-toolbar--cozy` modifier
+The default size of the toolbar is compact but this can be changed by passing the `fd-toolbar--cozy` modifier in the `fd-toolbar` class.
 
 {% capture toolbar %}
 
