@@ -35,14 +35,14 @@ The toolbar has a solid background by default.
 {% endcapture %}
 {% include display-component.html component=toolbar %}
 
-### Auto
+### Transparent
 
-The toolbar can be inserted into other controls and can inherit the design from the parent control by passing `auto` to the `fd-toolbar` class.
+The toolbar also supports a transparent background which can be achieved by passing `transparent` to the `fd-toolbar` class.
 
 {% capture toolbar %}
 
-  <div class="fd-toolbar fd-toolbar--clear fd-toolbar--auto">
-    <button class="fd-button fd-button--compact fd-button--transparent">Action</button>
+  <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+    <button class="fd-button fd-button--compact fd-button--transparent">Action1</button>
     <button class="fd-button fd-button--compact fd-button--transparent">Action2</button>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
     <button class="fd-button fd-button--compact fd-button--transparent">Action3</button>
@@ -56,14 +56,14 @@ The toolbar can be inserted into other controls and can inherit the design from 
 {% endcapture %}
 {% include display-component.html component=toolbar %}
 
-### Transparent
+### Auto
 
-The toolbar also supports a transparent background which can be achieved by passing `transparent` to the `fd-toolbar` class.
+The toolbar can be inserted into other controls and can inherit the design from the parent control by passing `auto` to the `fd-toolbar` class.
 
 {% capture toolbar %}
 
-  <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-    <button class="fd-button fd-button--compact fd-button--transparent">Action1</button>
+  <div class="fd-toolbar fd-toolbar--clear fd-toolbar--auto">
+    <button class="fd-button fd-button--compact fd-button--transparent">Action</button>
     <button class="fd-button fd-button--compact fd-button--transparent">Action2</button>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
     <button class="fd-button fd-button--compact fd-button--transparent">Action3</button>
@@ -186,7 +186,7 @@ Separators should be used to visually separate items from each other.
 
 ## Size
 
-The default size of the toolbar is compact but this can be changed by passing the `fd-toolbar--cozy` modifier in the `fd-toolbar` class.
+The default size of the toolbar is compact but this can be changed by passing the `fd-toolbar--cozy` modifier class.
 
 {% capture toolbar %}
 
@@ -207,8 +207,7 @@ The default size of the toolbar is compact but this can be changed by passing th
 
 ## Overflow
 
-The only addition OverflowToolbar has is the ability to place input elements in a popover when
-there is not enough space
+The Overflow toolbar can be used to add additional elements when extra space is required. It can be achieved in a popover by passing `fd-popover fd-toolbar__overflow` or in a button by passing `sap-icon--overflow` in the `fd-button` class.
 
 {% capture toolbar %}
 
