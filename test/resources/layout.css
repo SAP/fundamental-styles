@@ -62,6 +62,7 @@ body {
 
 .btn-playground,
 .btn-playground--compact,
+.btn-playground--transparent,
 .btn-playground--emphasized {
   border: 1px solid black;
   border-radius: 4px;
@@ -77,6 +78,11 @@ body {
 
 .btn-playground--emphasized {
   background: pink;
+}
+
+.btn-playground--transparent {
+  background: transparent;
+  border-color: transparent;
 }
 
 .el-playground {
@@ -323,4 +329,22 @@ body {
 .fd-list--compact .form-item-playground::after {
   min-height: 1rem;
   min-width: 1rem;
+}
+
+.tile-content-playground,
+.tile-content-small-playground {
+  background-color: white;
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+}
+.tile-content-playground {
+  width: 9rem;
+  height: 3.875rem;
+}
+
+.tile-content-small-playground {
+  width: 8.25rem;
+  height: 3.438rem;
 }
