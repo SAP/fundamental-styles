@@ -45,11 +45,6 @@ $fd-breadcrumb-border-top-radius: 0.125rem !default;
       border: none;
       border-top-left-radius: $fd-breadcrumb-border-top-radius;
       border-top-right-radius: $fd-breadcrumb-border-top-radius;
-
-      .#{$block}__wrapper {
-        border-top-left-radius: $fd-breadcrumb-border-top-radius;
-        border-top-right-radius: $fd-breadcrumb-border-top-radius;
-      }
     }
   }
 
