@@ -178,14 +178,14 @@ $block: #{$fd-namespace}-table;
     }
 
     @include fd-last-child() {
-      border-right-color: transparent;
+      border-right: none;
     }
   }
 
   &__body {
-    border-bottom: $fd-table-border;
     border-left: $fd-table-border;
     border-right: $fd-table-border;
+    border-bottom: $fd-table-border;
 
     .#{$block}__row {
       border-bottom: $fd-table-border;
@@ -207,7 +207,7 @@ $block: #{$fd-namespace}-table;
       }
 
       @include fd-last-child() {
-        border-bottom-color: transparent;
+        border-bottom: none;
       }
     }
 
