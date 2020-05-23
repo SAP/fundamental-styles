@@ -779,7 +779,7 @@ To create a Slide Tile, use the `fd-tile--slide` modifier class.
 <div class="docs-section-container">
     <div tabindex="0" class="fd-tile fd-tile--double fd-tile--slide">
         <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/400/200/nature')"></div>
-        <<button aria-label="toggle pause button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
+        <button aria-label="toggle pause button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
                 <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
@@ -801,7 +801,7 @@ To create a Slide Tile, use the `fd-tile--slide` modifier class.
     </div>
     <div tabindex="0" class="fd-tile fd-tile--double fd-tile--s fd-tile--slide">
         <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/400/200/nature')"></div>
-        <<button aria-label="toggle pause button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
+        <button aria-label="toggle pause button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
                 <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
