@@ -850,7 +850,7 @@ To create fixed column, these steps need to be reproduced
 
 
 ## Navigation Indication State
-Navigation can be indicated on a row in the final column using the `.fd-table__cell--navigation` class.
+Navigation can be indicated on a row in the final column using the `.fd-table__cell--navigated` class.
 
 {% capture table-navigation %}
 <table class="fd-table">
@@ -878,7 +878,7 @@ Navigation can be indicated on a row in the final column using the `.fd-table__c
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
-            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigation" scope="col">
+            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated" scope="col">
                 <button class="fd-button fd-button--transparent sap-icon--navigation-right-arrow" aria-controls="pQqQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
             </td>
         </tr>
