@@ -463,6 +463,198 @@ Also for cells, where checkbox is included should contain `fd-table__cell--check
 <br />
 
 
+{% capture table-responsive %}
+<h3>Responsive Table</h3>
+<table class="fd-table fd-table--no-vertical-borders">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Name</th>
+            <th class="fd-table__cell" scope="col">Status</th>
+            <th class="fd-table__cell" scope="col">Price</th>
+            <th class="fd-table__cell" scope="col">Country</th>
+            <th class="fd-table__cell"></th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row fd-table__row--activable">
+            <td class="fd-table__cell">Banana</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--positive">
+                    Available
+                </span>
+            </td>
+            <td class="fd-table__cell">5 EUR</td>
+            <td class="fd-table__cell">India</td>
+            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+            </td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--activable">
+            <td class="fd-table__cell">Pineapple</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--negative">
+                    Out of stock
+                </span>
+            </td>
+            <td class="fd-table__cell">2 EUR</td>
+            <td class="fd-table__cell">Mexico</td>
+            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+            </td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--activable">
+            <td class="fd-table__cell">Orange</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--informative">
+                    Temporary unavailable
+                </span>
+            </td>
+            <td class="fd-table__cell">6 EUR</td>
+            <td class="fd-table__cell">Spain</td>
+            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Popin Table 2.0</h3>
+<div style="max-width: 450px">
+    <table class="fd-table fd-table--no-vertical-borders fd-table--responsive-2">
+        <tbody class="fd-table__body">
+            <tr class="fd-table__row fd-table__row--activable">
+                      <td class="fd-table__cell">Banana</td>
+                      <td class="fd-table__cell">
+                          <span class="fd-object-status fd-object-status--positive">
+                              Available
+                          </span>
+                      </td>
+                      <td class="fd-table__cell fd-table__cell--nowrap">5 EUR</td>
+                      <td class="fd-table__cell fd-table__cell--wrap">India</td>
+                      <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding fd-table__cell--right">
+                          <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                      </td>
+                  </tr>
+                  <tr class="fd-table__row fd-table__row--activable">
+                      <td class="fd-table__cell">Pineapple</td>
+                      <td class="fd-table__cell">
+                          <span class="fd-object-status fd-object-status--negative">
+                              Out of stock
+                          </span>
+                      </td>
+                      <td class="fd-table__cell fd-table__cell--nowrap">2 EUR</td>
+                      <td class="fd-table__cell">Mexico</td>
+                      <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding fd-table__cell--right">
+                          <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                      </td>
+                  </tr>
+                  <tr class="fd-table__row fd-table__row--activable">
+                      <td class="fd-table__cell">Orange</td>
+                      <td class="fd-table__cell">
+                          <span class="fd-object-status fd-object-status--informative">
+                              Temporary unavailable
+                          </span>
+                      </td>
+                      <td class="fd-table__cell fd-table__cell--nowrap">6 EUR</td>
+                      <td class="fd-table__cell fd-table__cell--wrap">Spain</td>
+                      <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding fd-table__cell--right">
+                          <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                      </td>
+                  </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+<h3>Pop-in</h3>
+<div style="max-width: 450px">
+    <table class="fd-table fd-table--no-vertical-borders fd-table--responsive">
+        <tbody class="fd-table__body">
+            <tr class="fd-table__row fd-table__row--main fd-table__row--activable">
+                <td class="fd-table__cell">
+                    <p class="fd-table__text fd-table__text--title">Banana</p>
+                    <p class="fd-table__text">India</p>
+                </td>
+                <td class="fd-table__cell fd-table__cell--fit-content">
+                    5 EUR
+                </td>
+                <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                    <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                </td>
+            </tr>
+            <tr class="fd-table__row fd-table__row--secondary">
+                <td class="fd-table__cell" colspan="100%">
+                    <p class="fd-table__text">
+                        <label class="fd-form-label">Status:</label>
+                        <span class="fd-object-status fd-object-status--positive">
+                            Available
+                        </span>
+                    </p>
+                    <p class="fd-table__text">
+                        <label class="fd-form-label">Date Of Expire:</label>
+                        12.01.12
+                    </p>
+                </td>
+            </tr>
+            <tr class="fd-table__row fd-table__row--main fd-table__row--activable">
+                <td class="fd-table__cell">
+                    <p class="fd-table__text fd-table__text--title">Very long name for orange, which noone expected, it forces to wrap text into anoher line.</p>
+                    <p class="fd-table__text">Spain</p>
+                </td>
+                <td class="fd-table__cell fd-table__cell--fit-content">
+                    6 EUR
+                </td>
+                <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                    <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                </td>
+            </tr>
+            <tr class="fd-table__row fd-table__row--secondary">
+                <td class="fd-table__cell" colspan="100%">
+                    <p class="fd-table__text">
+                        <label class="fd-form-label">Status:</label>
+                        <span class="fd-object-status fd-object-status--negative">
+                            Out of stock
+                        </span>
+                    </p>
+                    <p class="fd-table__text">
+                        <label class="fd-form-label">Date Of Expire:</label>
+                        12.01.12
+                    </p>
+                </td>
+            </tr>
+            <tr class="fd-table__row fd-table__row--main fd-table__row--activable">
+                <td class="fd-table__cell">
+                    <p class="fd-table__text fd-table__text--title">Pineapple</p>
+                    <p class="fd-table__text">Mexico</p>
+                </td>
+                <td class="fd-table__cell fd-table__cell--fit-content">
+                    2 EUR
+                </td>
+                <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                    <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                </td>
+            </tr>
+            <tr class="fd-table__row fd-table__row--secondary">
+                <td class="fd-table__cell" colspan="100%">
+                    <p class="fd-table__text">
+                        <label class="fd-form-label">Status:</label>
+                        <span class="fd-object-status fd-object-status--positive">
+                            Available
+                        </span>
+                    </p>
+                    <p class="fd-table__text">
+                        <label class="fd-form-label">Date Of Expire:</label>
+                        12.01.12
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endcapture %}
+{% include display-component.html component=table-responsive %}
+
+
 ## Table with semantic row highlighting 
 Table rows support semantic cells highlighting.
 To achieve it there should be added cell with `fd-table__cell--status-indicator` class to every row.
@@ -719,25 +911,70 @@ a contextual menu can be substituted in order to display all actions in one menu
 <table class="fd-table" >
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell" scope="col" aria-controls="popoverA1" aria-expanded="false" aria-haspopup="true">
-                <div class="fd-popover">
-                    <div class="fd-popover__control">
-                        Column Header
+            <th class="fd-table__cell" scope="col">
+                <div class="fd-table__popover fd-popover">
+                    <div class="fd-popover__control" aria-controls="popoverA1" aria-expanded="false" aria-haspopup="true">
+                        <div class="fd-table__inner">
+                            Column Header Ascending
+                            <span class="fd-table__icon sap-icon--sort-ascending"></span>
+                        </div>
                     </div>
                     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverA1">
-                        <nav class="fd-menu" id="">
-                            <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                <li class="fd-menu__item">
-                                    <a class="fd-menu__link" href="#">
-                                        <span class="fd-menu__title">Option 1</span>
+                        <ul class="fd-list fd-list--compact" role="list">
+                            <li tabindex="0" role="listitem" class="fd-list__item">
+                                <span class="fd-list__icon sap-icon--sort-descending"></span>
+                                <span class="fd-list__title">Sort Descending</span>
+                            </li>
+                            <li tabindex="0" role="listitem" class="fd-list__item">
+                                <span class="fd-list__icon sap-icon--sort-ascending"></span>
+                                <span class="fd-list__title">Sort Ascendnig</span>
+                            </li>
+                            <li role="listitem" class="fd-list__item">
+                                <span class="fd-list__icon sap-icon--filter"></span>
+                                <div class="fd-form-item  fd-form-item--horizontal">
+                                    <label class="fd-form-label" for="input-1d">Filter</label>
+                                    <input class="fd-input fd-input--compact" id="input-1d">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </th>
+            <th class="fd-table__cell" scope="col">
+                <div class="fd-table__popover fd-popover">
+                    <div class="fd-popover__control" aria-controls="popoverA2" aria-expanded="false" aria-haspopup="true">
+                        <div class="fd-table__inner">
+                            Column Header Descending
+                            <span class="fd-table__icon sap-icon--sort-descending"></span>
+                        </div>
+                    </div>
+                    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverA2">
+                        <nav class="fd-menu fd-menu--compact">
+                            <ul class="fd-menu__list" role="menu">
+                                <li class="fd-menu__item" role="presentation">
+                                    <a class="fd-menu__link" href="#" role="menuitem">
+                                        <span class="fd-menu__addon-before sap-icon--sort-descending"></span>
+                                        <span class="fd-menu__title">Sort Descending</span>
                                     </a>
+                                </li>
+                                <li class="fd-menu__item" role="presentation">
+                                    <a class="fd-menu__link" href="#" role="menuitem">
+                                        <span class="fd-menu__addon-before sap-icon--sort-ascending"></span>
+                                        <span class="fd-menu__title">Sort Ascendnig</span>
+                                    </a>            
+                                </li>
+                                <li class="fd-menu__item" role="presentation">
+                                    <span class="fd-menu__addon-before sap-icon--filter"></span>
+                                    <div class="fd-form-item  fd-form-item--horizontal">
+                                        <label class="fd-form-label" for="input-1d">Filter</label>
+                                        <input class="fd-input fd-input--compact" id="input-1d">
+                                    </div>         
                                 </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
             </th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
         </tr>
     </thead>
@@ -875,7 +1112,7 @@ Navigation can be indicated on a row in the final column using the `.fd-table__c
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
             <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
-                <button class="fd-button fd-button--transparent sap-icon--navigation-right-arrow" aria-controls="pQqQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                <button class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
             </td>
         </tr>
         <tr class="fd-table__row">
@@ -884,7 +1121,7 @@ Navigation can be indicated on a row in the final column using the `.fd-table__c
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated" scope="col">
-                <button class="fd-button fd-button--transparent sap-icon--navigation-right-arrow" aria-controls="pQqQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                <button class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
             </td>
         </tr>
         <tr class="fd-table__row">
@@ -893,7 +1130,7 @@ Navigation can be indicated on a row in the final column using the `.fd-table__c
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
             <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
-                <button class="fd-button fd-button--transparent sap-icon--navigation-right-arrow" aria-controls="pQqQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                <button class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
             </td>
         </tr>
     </tbody>

@@ -23,6 +23,11 @@ $block: #{$fd-namespace}-table;
         color: var(--sapContent_ContrastIconColor);
       }
 
+      .#{$fd-namespace}-link,
+      .#{$fd-namespace}-object-status {
+        color: inherit;
+      }
+
       @include fd-hover() {
         background-color: var(--sapList_Active_Background);
       }
@@ -46,7 +51,8 @@ $block: #{$fd-namespace}-table;
   &__header,
   &__body,
   &__footer,
-  &__icon {
+  &__icon,
+  &__text {
     @include fd-reset();
   }
 
@@ -58,6 +64,15 @@ $block: #{$fd-namespace}-table;
   &__icon {
     color: var(--sapContent_NonInteractiveIconColor);
     font-size: var(--sapFontSmallSize);
+
+    &--navigation {
+      font-size: var(--sapFontSmallSize);
+      width: 2rem;
+      min-width: 2rem;
+      height: 100%;
+
+      @include fd-flex-center();
+    }
   }
 
   &__header {
@@ -92,6 +107,7 @@ $block: #{$fd-namespace}-table;
     padding: 0 $fd-table-cell-padding;
     color: inherit;
     border-right: $fd-table-border;
+    word-break: break-word;
 
     &--valid {
       color: var(--sapSuccessColor);
@@ -117,6 +133,13 @@ $block: #{$fd-namespace}-table;
 
     &--fit-content {
       width: 10px;
+      word-break: keep-all;
+      white-space: nowrap;
+    }
+
+    &--no-padding {
+      padding: 0;
+      margin: 0;
     }
 
     &--status-indicator {
@@ -214,10 +237,6 @@ $block: #{$fd-namespace}-table;
       }
     }
 
-    .#{$block}__cell {
-      word-break: break-word;
-    }
-
     .#{$block}__cell,
     .#{$block}__row {
       &--activable {
@@ -238,10 +257,97 @@ $block: #{$fd-namespace}-table;
     }
   }
 
-  // Modifiers
+  &__inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 
+  &__popover.#{$fd-namespace}-popover {
+    height: 100%;
+    display: block;
+    color: inherit;
+
+    .#{$fd-namespace}-popover__control {
+      width: 100%;
+      height: 100%;
+      color: inherit;
+
+      @include fd-flex-vertical-center();
+    }
+  }
+
+  // Modifiers
   &--fixed {
     overflow-x: scroll;
+  }
+
+  &--responsive {
+    .#{$block}__text {
+      color: inherit;
+      margin-bottom: 0.5rem;
+
+      &--title {
+        font-weight: bold;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .#{$block}__cell {
+      height: auto;
+    }
+
+    .#{$block}__row--main {
+      border: none;
+
+      .#{$block}__cell {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+      }
+    }
+
+    .#{$block}__row--secondary {
+      background-color: $fd-table-basic-background;
+      border-bottom: $fd-table-border;
+
+      &:hover {
+        background-color: $fd-table-basic-background;
+      }
+
+      .#{$block}__cell {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+
+  // Experimental
+  &--responsive-2 {
+    .fd-table__row {
+      position: relative;
+      display: block;
+    }
+
+    .fd-table__cell {
+      display: block;
+      height: auto;
+      padding-right: 2rem;
+
+      &--nowrap {
+        color: red;
+      }
+    }
+
+    .fd-table__cell--right {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: auto;
+    }
   }
 
   &,
