@@ -179,6 +179,10 @@ $block: #{$fd-namespace}-table;
     @include fd-last-child() {
       border-right: none;
     }
+
+    &--navigated {
+      box-shadow: inset -0.1875rem 0 var(--sapSelectedColor);
+    }
   }
 
   &__body {

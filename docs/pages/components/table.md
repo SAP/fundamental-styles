@@ -847,5 +847,57 @@ To create fixed column, these steps need to be reproduced
       </table>
     </div>
 </div>
+
 {% endcapture %}
 {% include display-component.html component=table-fixed %}
+
+<br/>
+
+
+## Navigation Indication State
+Navigation can be indicated on a row in the final column using the `.fd-table__cell--navigated` class.
+
+{% capture table-navigation %}
+<table class="fd-table">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col"></th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
+                <button class="fd-button fd-button--transparent sap-icon--navigation-right-arrow" aria-controls="pQqQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+            </td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated" scope="col">
+                <button class="fd-button fd-button--transparent sap-icon--navigation-right-arrow" aria-controls="pQqQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+            </td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
+                <button class="fd-button fd-button--transparent sap-icon--navigation-right-arrow" aria-controls="pQqQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+{% endcapture %}
+{% include display-component.html component=table-navigation %}
