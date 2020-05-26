@@ -22,7 +22,7 @@ The default positioning of inline help component is bottom right.
         <span class="fd-inline-help" tabindex="0" role="button" aria-controls="h0C6A326" aria-expanded="false" aria-haspopup="true">
         </span>
     </div>
-    <div id="h0C6A326" class="fd-popover__body" aria-hidden="true" x-placement="bottom-start" >
+    <div id="h0C6A326" class="fd-popover__popper" aria-hidden="true" x-placement="bottom-start" style="left: -14px;">
         <span class="fd-inline-help__content fd-no-border">Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
         <span class="fd-popover__arrow" style="left: 7px;"></span>
     </div>
@@ -39,9 +39,9 @@ The default positioning of inline help component is bottom right.
         <span class="fd-inline-help" tabindex="0" role="button" aria-controls="bbh0C6A3261" aria-expanded="false" aria-haspopup="true">
         </span>
     </div>
-    <div id="bbh0C6A3261" class="fd-popover__body fd-popover__body--right" aria-hidden="true" x-placement="bottom-end" >
+    <div id="bbh0C6A3261" class="fd-popover__popper" aria-hidden="true" x-placement="bottom-end" style="right: -14px;">
         <span class="fd-inline-help__content fd-no-border">Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
-        <span class="fd-popover__arrow" style="left: 7px;"></span>
+        <span class="fd-popover__arrow" style="right: 7px;"></span>
     </div>
 </div>
 {% endcapture %}
@@ -59,7 +59,7 @@ The default positioning of inline help component is bottom right.
     </div>
     <div id="aah0C6A32611" class="fd-popover__popper" aria-hidden="true" x-placement="bottom" style="left: -185px;" >
         <span class="fd-inline-help__content fd-no-border">Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
-        <span class="fd-popover__arrow" style="left: 177px;"></span>
+        <span class="fd-popover__arrow" style="left: 178px;"></span>
     </div>
 </div>
 {% endcapture %}
@@ -103,7 +103,7 @@ The default positioning of inline help component is bottom right.
 
 <style>
     /* align examples to center for this page only - necessary for left side popover examples */
-    .fd-tile__content {
+    .docs-tile__content {
         text-align: center;
     }
 </style>
