@@ -918,3 +918,473 @@ In action mode view, the close button is displayed on the top right-hand corner 
 
 {% endcapture %}
 {% include display-component.html component=tile-action %}
+
+<br>
+## Line Tile
+<ul class="docs-ul">
+    <li>
+        Line Tile Container - <code>fd-tile-container</code>. The container controls the behaviour of the tiles - <strong>Floating</strong> (default) and <strong>List</strong> (<code>fd-tile-container--list</code>). For screen sizes less than 450px use the <strong>List</strong> behaviour. For bigger screens use the default <strong>Floating</strong> behaviour.
+        <ul class="docs-ul">
+            <li>Line Tile - apply the <code>fd-tile--line</code> modifier class to <code>fd-tile</code>.
+                Line Tiles have two modes - cosy (default) and compact (<code>fd-tile--compact</code>). *Note: the compact mode is applied only on Line Tiles. It should not be applied on the other types.
+                <ul class="docs-ul">
+                    <li>Line Tile Header - <code>fd-tile__header</code>
+                        <ul class="docs-ul">
+                            <li>Title <code>fd-tile__title</code> - <strong>required</strong>. For a Line Tile with a badge the title and the badge must be wrapped in a container <code>fd-tile__title-container</code>.
+                            </li>
+                            <li>Subtitle <code>fd-tile__subtitle</code> <strong>optional</strong>.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<br>
+<strong>Breakpoints</strong>
+<ul class="docs-ul">
+    <li><strong>List</strong> behaviour - for screen sizes less than 450px - S screens.</li>
+    <li><strong>Floating</strong> behaviour - for screen sizes greater or equal to 450px - M, L and XL screens.</li>
+</ul>
+
+<br>
+<strong>Wrapping and Overflow Behaviour</strong>
+<ul class="docs-ul">
+    <li><strong>Floating</strong> behaviour - when next link doesn't fit right to previous link, it gets dropped in the next row underneath. If the content of the Tile can't fit in one line, the Tile wraps into two rows. *Note: this behaviour requires JavaScript and is not provided in Fundamental-Styles. </li>
+    <li><strong>List</strong> behaviour - the Tile grows vertically and the text inside wraps into two rows, splitting title in the first row and subtitle in the second row.</li>
+</ul>
+
+<br>
+<strong>List Tile States</strong>
+<ul class="docs-ul">
+    <li>Regular</li>
+    <li>Hover</li>
+    <li>Pressed</li>
+    <li>Disabled - the disabled state can only be applied on Line Tiles. The other types do not have a disabled state. </li>
+</ul>
+
+<br>
+<strong>Action Mode</strong> <br><br>
+The controls are wrapped in a container <code>fd-tile__action-container</code> which is right aligned within the tile. There's a 0.25rem spacing between the header and the actions container. On edit mode List View the overflow of the list is done with gradient mask.
+
+{% capture tile-line %}
+<h4>Line Tile - Floating Behaviour, Cosy Mode</h4>
+<div class="docs-section-container">
+    <div class="fd-tile-container"> 
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title very very very very very very long text</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle very very very very very very long text</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle aute irure dolor in reprehenderit in voluptate velit esse cillum</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title perspiciatis unde omnis iste natus error sit voluptatem</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle enim ipsam voluptatem </div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title iusto odio dignissimos ducimus</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle lorem ipsum dolor sit amet</div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<h4>Line Tile - List Behaviour, Cosy Mode</h4>
+<div class="docs-section-container">
+    <div class="fd-tile-container fd-tile-container--list"> 
+                <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title very very very very very very long text</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle very very very very very very long text</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle aute irure dolor in reprehenderit in voluptate velit esse cillum</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Very Long Title perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</div>
+                <div class="fd-tile__subtitle">Line Tile Very Long Subtitle enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title iusto odio dignissimos ducimus</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle lorem ipsum dolor sit amet</div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<h4>Line Tile - Floating Behaviour, Compact Mode</h4>
+<div class="docs-section-container">
+    <div class="fd-tile-container"> 
+        <div tabindex="0" class="fd-tile fd-tile--compact fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--compact fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title very very very very very very long text</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle very very very very very very long text</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--compact fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--compact fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle aute irure dolor in reprehenderit in voluptate velit esse cillum</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--compact fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title perspiciatis unde omnis iste natus error sit voluptatem</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle enim ipsam voluptatem</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--compact fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title iusto odio dignissimos ducimus</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle lorem ipsum dolor sit amet</div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<h4>Line Tile - List Behaviour, Compact Mode</h4>
+<div class="docs-section-container">
+    <div class="fd-tile-container fd-tile-container--list"> 
+        <div tabindex="0" class="fd-tile fd-tile--compact fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--compact fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle aute irure dolor in reprehenderit in voluptate velit esse cillum</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--compact fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Very Long Title perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</div>
+                <div class="fd-tile__subtitle">Line Tile Very Long Subtitle enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--compact fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title praesentium voluptatum deleniti atque</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle aute irure dolor in reprehenderit</div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<h4>Line Tile - Floating Behaviour, Cosy Mode, With Badge</h4>
+<div class="docs-section-container">
+    <div class="fd-tile-container"> 
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title-container">
+                    <div class="fd-badge">Badge</div>
+                    <div class="fd-tile__title">Line Tile Title</div>
+                </div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title-container">
+                    <div class="fd-badge">Badge</div>
+                    <div class="fd-tile__title">Line Tile Title very very very very very very long text</div>
+                </div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle very very very very very very long text</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title-container">
+                    <div class="fd-badge">Badge</div>
+                    <div class="fd-tile__title">Line Tile Title</div>
+                </div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title-container">
+                    <div class="fd-badge">Badge</div>
+                    <div class="fd-tile__title">Line Tile Title sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle aute irure dolor in reprehenderit in voluptate velit esse cillum</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title-container">
+                    <div class="fd-badge">Badge</div>
+                    <div class="fd-tile__title">Line Tile Title</div>
+                </div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title-container">
+                    <div class="fd-badge">Badge</div>
+                    <div class="fd-tile__title">Line Tile Title perspiciatis unde omnis iste natus error</div>
+                </div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle enim ipsam voluptatem quia voluptas</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title-container">
+                    <div class="fd-badge">Badge</div>
+                    <div class="fd-tile__title">Line Tile Title accusamus dignissimos ducimus</div>
+                </div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle facilis distinctio</div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<h4>Line Tile - List Behaviour, Cosy Mode, With Badge</h4>
+<div class="docs-section-container">
+    <div class="fd-tile-container fd-tile-container--list"> 
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title-container">
+                    <div class="fd-badge">Badge</div>
+                    <div class="fd-tile__title">Line Tile Title</div>
+                </div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title-container">
+                    <div class="fd-badge">Badge</div>
+                    <div class="fd-tile__title">Line Tile Title sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle aute irure dolor in reprehenderit in voluptate velit esse cillum</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title-container">
+                    <div class="fd-badge">Badge</div>
+                    <div class="fd-tile__title">Line Tile Very Long Title perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</div>
+                </div>
+                <div class="fd-tile__subtitle">Line Tile Very Long Subtitle enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title-container">
+                    <div class="fd-badge">Badge</div>
+                    <div class="fd-tile__title">Line Tile Title accusamus et iusto odio dignissimos ducimus</div>
+                </div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle facilis est et expedita distinctio</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title-container">
+                    <div class="fd-badge">Badge</div>
+                    <div class="fd-tile__title">Line Tile Title iusto odio dignissimos ducimus</div>
+                </div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle lorem ipsum dolor sit amet</div>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title-container">
+                    <div class="fd-badge">Badge</div>
+                    <div class="fd-tile__title">Line Tile Title praesentium voluptatum deleniti atque</div>
+                </div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle aute irure dolor in reprehenderit</div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<h4>Line Tile - Floating Behaviour, Cosy and Action Mode</h4>
+<div class="docs-section-container">
+    <div class="fd-tile-container"> 
+        <div tabindex="0" class="fd-tile fd-tile--line fd-tile--action">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle</div>
+            </div>
+            <div class="fd-tile__action-container">
+                <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"></button>
+                <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line fd-tile--action">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title very very very very very very long text</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle very very very very very very long text</div>
+            </div>
+            <div class="fd-tile__action-container">
+                <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"></button>
+                <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line fd-tile--action">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle</div>
+            </div>
+            <div class="fd-tile__action-container">
+                <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"></button>
+                <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line fd-tile--action">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle aute irure dolor in reprehenderit in voluptate velit esse cillum</div>
+            </div>
+            <div class="fd-tile__action-container">
+                <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"></button>
+                <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line fd-tile--action is-disabled">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Disabled Line Tile Title perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle enim ipsam voluptatem quia</div>
+            </div>
+            <div class="fd-tile__action-container">
+                <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"></button>
+                <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line fd-tile--action">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title iusto odio dignissimos ducimus</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle lorem ipsum dolor sit amet</div>
+            </div>
+            <div class="fd-tile__action-container">
+                <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"></button>
+                <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<h4>Line Tile - List Behaviour, Cosy and Action Mode</h4>
+<div class="docs-section-container">
+    <div class="fd-tile-container fd-tile-container--list"> 
+                <div tabindex="0" class="fd-tile fd-tile--line fd-tile--action">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle</div>
+            </div>
+            <div class="fd-tile__action-container">
+                <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"></button>
+                <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line fd-tile--action">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title very very very very very very long text</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle very very very very very very long text</div>
+            </div>
+            <div class="fd-tile__action-container">
+                <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"></button>
+                <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line fd-tile--action">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle</div>
+            </div>
+            <div class="fd-tile__action-container">
+                <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"></button>
+                <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line fd-tile--action is-disabled">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Disabled Line Tile Title sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle aute irure dolor in reprehenderit in voluptate velit esse cillum</div>
+            </div>
+            <div class="fd-tile__action-container">
+                <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"></button>
+                <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line fd-tile--action">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Very Long Title perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</div>
+                <div class="fd-tile__subtitle">Line Tile Very Long Subtitle enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</div>
+            </div>
+            <div class="fd-tile__action-container">
+                <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"></button>
+                <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+            </div>
+        </div>
+        <div tabindex="0" class="fd-tile fd-tile--line fd-tile--action">
+            <div class="fd-tile__header">
+                <div class="fd-tile__title">Line Tile Title iusto odio dignissimos ducimus</div>
+                <div class="fd-tile__subtitle">Line Tile Subtitle lorem ipsum dolor sit amet</div>
+            </div>
+            <div class="fd-tile__action-container">
+                <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"></button>
+                <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endcapture %}
+{% include display-component.html component=tile-line %}

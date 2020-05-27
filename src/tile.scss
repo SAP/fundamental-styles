@@ -1,5 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
+@import "./mixins/button/button-helper";
 
 $block: #{$fd-namespace}-tile;
 
@@ -35,10 +36,24 @@ $fd-tile-toggle-button-position: -0.0625rem !default;
 
 // CLOSE BUTTON
 $fd-tile-close-button-position: -0.375rem !default;
-$fd-tile-close-button-offset: 0.625rem !default;
+$fd-tile-close-button-offset: 0.5rem !default;
 
 // ACTION INDICATOR
 $fd-tile-action-indicator-offset: 0.25rem !default;
+
+// LINE TILE
+$fd-line-tile-height: 2.25rem !default;
+$fd-line-tile-height-compact: 1.625rem !default;
+$fd-line-tile-max-height: 3.25rem !default;
+$fd-line-tile-max-height-compact: 2.875rem !default;
+$fd-line-tile-min-width: 2rem !default;
+$fd-line-tile-vertical-spacing: 0.125rem !default;
+$fd-line-tile-horizontal-spacing: 1.25rem !default;
+$fd-line-tile-title-horizontal-spacing: 0.625rem !default;
+$fd-line-tile-title-horizontal-spacing-compact: 0.5rem !default;
+$fd-line-tile-horizontal-padding: 0.5rem !default;
+$fd-line-tile-action-container-horizontal-spacing: 0.25rem !default;
+$fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
 
 // MIXINS
 @mixin two-col-sections {
@@ -99,7 +114,7 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
       display: block;
       border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
       top: -0.0625rem;
-      left: 0.5625rem;
+      left: 0.4375rem;
       right: 0;
       bottom: 0;
       z-index: 3;
@@ -108,7 +123,7 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
     @include fd-rtl() {
       &::after {
         left: 0;
-        right: 0.5625rem;
+        right: 0.4375rem;
       }
     }
   }
@@ -687,6 +702,209 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
         &::before {
           color: var(--sapShell_Active_TextColor);
         }
+      }
+    }
+  }
+
+  // LINE TILES
+  &-container {
+    @include fd-reset();
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: $fd-tile-border-radius;
+    border: 0.0625rem solid var(--sapTile_BorderColor);
+    background-color: var(--sapTile_Background);
+    box-shadow: var(--sapContent_Shadow0);
+    padding: 0.5rem;
+
+    &--list {
+      flex-direction: column;
+      background-color: var(--sapGroup_ContentBackground);
+
+      .#{$block}--line {
+        flex-wrap: wrap;
+        margin-right: 0;
+        margin-left: 0;
+        max-height: $fd-line-tile-max-height;
+
+        &.#{$block}--compact {
+          max-height: $fd-line-tile-max-height-compact;
+        }
+      }
+
+      .#{$block}--action {
+        .#{$block}__header {
+          mask-image: linear-gradient(linear, right top, left top, from(transparent), color-stop(7%, #000000), to(#000000));
+          -webkit-mask-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(7%, #000000), to(#000000));
+
+          @include fd-rtl() {
+            mask-image: linear-gradient(linear, left top, right top, from(transparent), color-stop(7%, #000000), to(#000000));
+            -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(7%, #000000), to(#000000));
+          }
+        }
+      }
+
+      .#{$block}__header {
+        flex-wrap: wrap;
+        flex: 1;
+      }
+    }
+  }
+
+  &--line {
+    @include fd-flex-vertical-center() {
+      justify-content: space-between;
+    }
+
+    min-height: $fd-line-tile-height;
+    max-height: $fd-line-tile-height;
+    height: 100%;
+    min-width: $fd-line-tile-min-width;
+    max-width: 100%;
+    width: auto;
+    padding: 0 $fd-line-tile-horizontal-padding;
+    margin-right: $fd-line-tile-horizontal-spacing;
+    margin-top: $fd-line-tile-vertical-spacing;
+    margin-bottom: $fd-line-tile-vertical-spacing;
+    box-shadow: none;
+    background: transparent;
+
+    @include fd-hover() {
+      box-shadow: none;
+    }
+
+    @include fd-active() {
+      box-shadow: none;
+    }
+
+    @include fd-disabled() {
+      opacity: 0.5;
+      background: transparent;
+      pointer-events: none;
+    }
+
+    @include fd-rtl() {
+      margin-right: 0;
+      margin-left: $fd-line-tile-horizontal-spacing;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .#{$block}__header {
+      @include set-height(100%);
+
+      margin: 0;
+      display: flex;
+    }
+
+    .#{$block}__title-container {
+      @include fd-reset();
+      @include fd-flex-vertical-center();
+
+      max-width: 100%;
+    }
+
+    .#{$block}__title,
+    .#{$block}__subtitle {
+      font-size: var(--sapFontSize);
+      text-shadow: var(--sapContent_TextShadow);
+      color: var(--sapTile_TextColor);
+      line-height: 1.625rem;
+      min-width: $fd-line-tile-min-width;
+    }
+
+    .#{$block}__title {
+      @include fd-ellipsis();
+
+      margin-right: $fd-line-tile-title-horizontal-spacing;
+      color: var(--sapButton_TextColor);
+      display: unset;
+      -webkit-line-clamp: unset;
+
+      @include fd-rtl() {
+        margin-right: 0;
+        margin-left: $fd-line-tile-title-horizontal-spacing;
+      }
+    }
+
+    &.#{$block}--compact {
+      min-height: $fd-line-tile-height-compact;
+      max-height: $fd-line-tile-height-compact;
+
+      .#{$block}__title,
+      .#{$block}__subtitle {
+        line-height: 1.4375rem;
+      }
+
+      .#{$block}__title {
+        margin-right: $fd-line-tile-title-horizontal-spacing-compact;
+
+        @include fd-rtl() {
+          margin-right: 0;
+          margin-left: $fd-line-tile-title-horizontal-spacing-compact;
+        }
+      }
+    }
+
+    &.#{$block}--action {
+      padding-right: 0;
+
+      @include fd-rtl() {
+        padding-left: 0;
+        padding-right: $fd-line-tile-horizontal-padding;
+      }
+
+      .#{$block}__action-container {
+        @include fd-reset();
+        @include fd-flex-vertical-center();
+
+        margin-left: $fd-line-tile-action-container-horizontal-spacing;
+
+        @include fd-rtl() {
+          margin-left: 0;
+          margin-right: $fd-line-tile-action-container-horizontal-spacing;
+        }
+      }
+
+      .#{$block}__action-indicator {
+        position: unset;
+        margin: 0;
+      }
+
+      .#{$block}__action-close {
+        @include set-height(1.625rem);
+
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 0 0.25rem;
+
+        &::before {
+          margin: 0;
+        }
+
+        &::after {
+          content: none;
+        }
+
+        @include fd-focus() {
+          @include buttonFocus();
+        }
+      }
+    }
+
+    .#{$fd-namespace}-badge {
+      position: unset;
+      margin-right: $fd-line-tile-badge-horizontal-spacing;
+      flex-shrink: 0;
+
+      @include fd-rtl() {
+        margin-left: $fd-line-tile-badge-horizontal-spacing;
+        margin-right: 0;
       }
     }
   }
