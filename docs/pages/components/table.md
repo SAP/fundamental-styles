@@ -465,7 +465,7 @@ Also for cells, where checkbox is included should contain `fd-table__cell--check
 
 {% capture table-responsive %}
 <h3>Responsive Table</h3>
-<table class="fd-table fd-table--no-vertical-borders">
+<table class="fd-table fd-table--no-horizontal-borders">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
             <th class="fd-table__cell" scope="col">Name</th>
@@ -521,7 +521,7 @@ Also for cells, where checkbox is included should contain `fd-table__cell--check
 <br>
 <h3>Pop-in</h3>
 <div style="max-width: 450px">
-    <table class="fd-table fd-table--no-vertical-borders fd-table--responsive">
+    <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--responsive">
         <tbody class="fd-table__body">
             <tr class="fd-table__row fd-table__row--main fd-table__row--activable">
                 <td class="fd-table__cell">

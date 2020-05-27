@@ -356,8 +356,8 @@ $block: #{$fd-namespace}-table;
     }
 
     &--no-horizontal-borders {
-      .#{$block}__cell {
-        .#{$block}__row {
+      .#{$block}__row {
+        .#{$block}__cell {
           border-right: none;
         }
       }
