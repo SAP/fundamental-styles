@@ -2,29 +2,19 @@
 @import "./functions";
 @import "./mixins";
 
-/*!
-.fd-tooltip
-    .fd-tooltip__content+(left, right, bottom-left, bottom-right)
-*/
 $block: #{$fd-namespace}-inline-help;
 
 .#{$block} {
   // LOCAL VARS
-  $fd-tooltip-icon-background-color: fd-color("status", 4) !default;
-  $fd-tooltip-content-background-color: fd-color("background", 2) !default;
-  $fd-tooltip-content-color: fd-color("text", 2) !default;
+  $fd-tooltip-icon-background-color: var(--sapButton_Neutral_Background) !default;
+  $fd-tooltip-content-background-color: var(--sapTile_Background) !default;
+  $fd-tooltip-content-color: var(--sapTextColor) !default;
   $fd-tooltip-padding: fd-space(xs) !default;
-  $fd-tooltip-arrow-offset: fd-space(2) !default;
-  $fd-tooltip-arrow-width: $fd-tooltip-arrow-offset !default;
-  $fd-tooltip-icon-size: 18px;
+  $fd-tooltip-icon-size: 1.125rem;
   $fd-tooltip-transition-params: $fd-animation-speed ease-in !default;
-  $fd-tooltip-min-width: 350px !default;
-  $fd-tooltip-box-shadow: drop-shadow(rgba(0, 0, 0, 0.1) 0 2px 10px) !default;
+  $fd-tooltip-min-width: 21.875rem !default;
+  $fd-tooltip-box-shadow: drop-shadow(var(--sapContent_Shadow0)) !default;
 
-  --fd-inline-help-color: var(--fd-color-text-1);
-  --fd-inline-help-background-color: var(--fd-color-background-2);
-  --fd-inline-help-icon-color: var(--fd-color-text-5);
-  --fd-inline-help-icon-background-color: var(--fd-color-status-4);
 
   // BLOCK BASE *******************************************
   @include fd-reset();
@@ -44,23 +34,18 @@ $block: #{$fd-namespace}-inline-help;
     position: absolute;
     left: 0;
     border-radius: 50%;
-
-    @include fd-var-color("color", fd-color("text", 5), --fd-inline-help-icon-color);
-    @include fd-var-color("background-color", $fd-tooltip-icon-background-color, --fd-inline-help-icon-background-color);
-
+    color:var(--sapContent_ContrastIconColor);
+    background-color: $fd-tooltip-icon-background-color;
     text-align: center;
   }
 
   // ELEMENTS *******************************************
   &__content {
     @include fd-type("-1");
-    @include fd-var-color("background-color", $fd-tooltip-content-background-color, --fd-inline-help-background-color);
-
+    background-color: $fd-tooltip-content-background-color;
     padding: $fd-tooltip-padding;
     display: block;
-
-    @include fd-var-color("color", $fd-tooltip-content-color, --fd-inline-help-color);
-
+    color: $fd-tooltip-content-color;
     top: $fd-tooltip-padding * 2.5;
     right: -$fd-tooltip-padding;
     min-width: $fd-tooltip-min-width;
