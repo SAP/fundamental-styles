@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.10.0-rc.11"></a>
+# [0.10.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.10...v0.10.0-rc.11) (2020-05-27)
+
+
+### Bug Fixes
+
+* introduce toolbar component ([#1022](https://github.com/SAP/fundamental-styles/issues/1022)) ([8c74636](https://github.com/SAP/fundamental-styles/commit/8c74636))
+
+
+
 <a name="0.10.0-rc.10"></a>
 # [0.10.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.9...v0.10.0-rc.10) (2020-05-27)
 
