@@ -195,6 +195,13 @@ This component mostly relies on the CSS of other components and has very little 
 					</div>
 				</div>
 			</div>
+			<footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
+				<div class="fd-bar__right">
+					<div class="fd-bar__element">
+						<button class="fd-dialog__decisive-button fd-button fd-button--compact">Today</button>
+					</div>
+				</div>
+			</footer>
 		</div>
 	</div>
 </div>
@@ -378,6 +385,13 @@ This component mostly relies on the CSS of other components and has very little 
 					</div>
 				</div>
 			</div>
+			<footer class="fd-dialog__footer fd-bar fd-bar--footer">
+				<div class="fd-bar__right">
+					<div class="fd-bar__element">
+						<button class="fd-dialog__decisive-button fd-button fd-button--compact">Today</button>
+					</div>
+				</div>
+			</footer>
 		</div>
 	</div>
 </div>
