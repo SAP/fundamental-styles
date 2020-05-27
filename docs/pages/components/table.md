@@ -518,53 +518,6 @@ Also for cells, where checkbox is included should contain `fd-table__cell--check
     </tbody>
 </table>
 
-<h3>Popin Table 2.0</h3>
-<div style="max-width: 450px">
-    <table class="fd-table fd-table--no-vertical-borders fd-table--responsive-2">
-        <tbody class="fd-table__body">
-            <tr class="fd-table__row fd-table__row--activable">
-                      <td class="fd-table__cell">Banana</td>
-                      <td class="fd-table__cell">
-                          <span class="fd-object-status fd-object-status--positive">
-                              Available
-                          </span>
-                      </td>
-                      <td class="fd-table__cell fd-table__cell--nowrap">5 EUR</td>
-                      <td class="fd-table__cell fd-table__cell--wrap">India</td>
-                      <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding fd-table__cell--right">
-                          <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
-                      </td>
-                  </tr>
-                  <tr class="fd-table__row fd-table__row--activable">
-                      <td class="fd-table__cell">Pineapple</td>
-                      <td class="fd-table__cell">
-                          <span class="fd-object-status fd-object-status--negative">
-                              Out of stock
-                          </span>
-                      </td>
-                      <td class="fd-table__cell fd-table__cell--nowrap">2 EUR</td>
-                      <td class="fd-table__cell">Mexico</td>
-                      <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding fd-table__cell--right">
-                          <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
-                      </td>
-                  </tr>
-                  <tr class="fd-table__row fd-table__row--activable">
-                      <td class="fd-table__cell">Orange</td>
-                      <td class="fd-table__cell">
-                          <span class="fd-object-status fd-object-status--informative">
-                              Temporary unavailable
-                          </span>
-                      </td>
-                      <td class="fd-table__cell fd-table__cell--nowrap">6 EUR</td>
-                      <td class="fd-table__cell fd-table__cell--wrap">Spain</td>
-                      <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding fd-table__cell--right">
-                          <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
-                      </td>
-                  </tr>
-        </tbody>
-    </table>
-</div>
-
 <br>
 <h3>Pop-in</h3>
 <div style="max-width: 450px">
@@ -782,6 +735,56 @@ If there is a need to use semantic mode on any of cells, one of that modifiers s
 {% include display-component.html component=table-checkbox %}
 
 <br />
+
+
+{% capture table-merge-cells %}
+<h3>Merge Cells Table</h3>
+<table class="fd-table">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Name</th>
+            <th class="fd-table__cell" scope="col">Status</th>
+            <th class="fd-table__cell" scope="col">Price</th>
+            <th class="fd-table__cell" scope="col">Country</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row fd-table__row--activable">
+            <td class="fd-table__cell fd-table__cell--no-horizontal-border fd-table__cell--no-vertical-border">Banana</td>
+            <td class="fd-table__cell fd-table__cell--no-vertical-border">
+                <span class="fd-object-status fd-object-status--positive">
+                    Available
+                </span>
+            </td>
+            <td class="fd-table__cell">5 EUR</td>
+            <td class="fd-table__cell">India</td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--activable">
+            <td class="fd-table__cell fd-table__cell--no-horizontal-border">Pineapple</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--negative">
+                    Out of stock
+                </span>
+            </td>
+            <td class="fd-table__cell">2 EUR</td>
+            <td class="fd-table__cell">Mexico</td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--activable">
+            <td class="fd-table__cell">Orange</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--informative">
+                    Temporary unavailable
+                </span>
+            </td>
+            <td class="fd-table__cell">6 EUR</td>
+            <td class="fd-table__cell">Spain</td>
+        </tr>
+    </tbody>
+</table>
+{% endcapture %}
+{% include display-component.html component=table-merge-cells %}
+
+<br>
 
 ## Table with Contextual Menu
 When more than three actions exist per row and/or space doesn't allow for actions,

@@ -16,8 +16,12 @@ $block: #{$fd-namespace}-table;
   @mixin fd-trigger-element() {
     @include fd-active() {
       background-color: var(--sapList_Active_Background);
-      border-bottom-color: var(--sapList_SelectionBorderColor);
       color: var(--sapList_Active_TextColor);
+
+      &,
+      .#{$block}__cell {
+        border-bottom-color: var(--sapList_SelectionBorderColor);
+      }
 
       .#{$block}__icon {
         color: var(--sapContent_ContrastIconColor);
@@ -213,8 +217,19 @@ $block: #{$fd-namespace}-table;
     border-right: $fd-table-border;
     border-bottom: $fd-table-border;
 
-    .#{$block}__row {
+    .#{$block}__cell {
       border-bottom: $fd-table-border;
+
+      &--no-vertical-border {
+        border-bottom-color: transparent;
+      }
+
+      &--no-horizontal-border {
+        border-right-color: transparent;
+      }
+    }
+
+    .#{$block}__row {
       border-left: none;
       border-right: none;
       background-color: $fd-table-basic-background;
@@ -225,7 +240,10 @@ $block: #{$fd-namespace}-table;
 
       @include fd-selected() {
         background-color: var(--sapList_SelectionBackgroundColor);
-        border-bottom-color: var(--sapList_SelectionBorderColor);
+
+        .#{$block}__cell {
+          border-bottom-color: var(--sapList_SelectionBorderColor);
+        }
 
         @include fd-hover() {
           background-color: var(--sapList_Hover_SelectionBackground);
@@ -233,7 +251,9 @@ $block: #{$fd-namespace}-table;
       }
 
       @include fd-last-child() {
-        border-bottom: none;
+        .#{$block}__cell {
+          border-bottom: none;
+        }
       }
     }
 
@@ -324,46 +344,22 @@ $block: #{$fd-namespace}-table;
     }
   }
 
-  // Experimental
-  &--responsive-2 {
-    .fd-table__row {
-      position: relative;
-      display: block;
-    }
-
-    .fd-table__cell {
-      display: block;
-      height: auto;
-      padding-right: 2rem;
-
-      &--nowrap {
-        color: red;
-      }
-    }
-
-    .fd-table__cell--right {
-      position: absolute;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      width: auto;
-    }
-  }
-
   &,
   &__body,
   &__header {
     &--no-vertical-borders {
       .#{$block}__row {
         .#{$block}__cell {
-          border: none;
+          border-bottom: none;
         }
       }
     }
 
     &--no-horizontal-borders {
-      .#{$block}__row {
-        border: none;
+      .#{$block}__cell {
+        .#{$block}__row {
+          border-right: none;
+        }
       }
     }
   }
