@@ -15,7 +15,6 @@ $block: #{$fd-namespace}-inline-help;
   $fd-tooltip-min-width: 21.875rem !default;
   $fd-tooltip-box-shadow: drop-shadow(var(--sapContent_Shadow0)) !default;
 
-
   // BLOCK BASE *******************************************
   @include fd-reset();
 
@@ -34,7 +33,7 @@ $block: #{$fd-namespace}-inline-help;
     position: absolute;
     left: 0;
     border-radius: 50%;
-    color:var(--sapContent_ContrastIconColor);
+    color: var(--sapContent_ContrastIconColor);
     background-color: $fd-tooltip-icon-background-color;
     text-align: center;
   }
@@ -42,6 +41,7 @@ $block: #{$fd-namespace}-inline-help;
   // ELEMENTS *******************************************
   &__content {
     @include fd-type("-1");
+
     background-color: $fd-tooltip-content-background-color;
     padding: $fd-tooltip-padding;
     display: block;
