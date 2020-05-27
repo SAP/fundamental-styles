@@ -22,7 +22,7 @@ $block: #{$fd-namespace}-inline-help;
   display: inline-block;
   width: $fd-tooltip-icon-size;
   height: $fd-tooltip-icon-size;
-  top: 3px;
+  top: 0.188rem;
 
   &::before {
     content: "?";
@@ -52,7 +52,7 @@ $block: #{$fd-namespace}-inline-help;
     transition: opacity $fd-tooltip-transition-params;
     text-align: left;
     z-index: map-get($fd-z-index-levels, "first");
-    border-radius: 5px;
+    border-radius: 0.313rem;
     filter: $fd-tooltip-box-shadow;
   }
 
