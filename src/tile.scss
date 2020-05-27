@@ -532,6 +532,10 @@ $fd-tile-action-indicator-offset: 0.25rem !default;
 
         color: var(--sapContent_ContrastTextColor); // TO BE CONFIRMED
       }
+
+      &:last-child {
+        margin: 0;
+      }
     }
 
     &.#{$block}--s {
