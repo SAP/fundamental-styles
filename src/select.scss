@@ -76,7 +76,6 @@ $block: #{$fd-namespace}-select;
       }
     }
 
-    &[readonly],
     &[aria-readonly="true"],
     &.is-readonly {
       padding-right: $fd-select-padding-x;
@@ -100,7 +99,6 @@ $block: #{$fd-namespace}-select;
         padding-left: 0;
       }
 
-      &[readonly],
       &[aria-readonly="true"],
       &.is-readonly {
         padding-right: $fd-select-padding-compact-x;

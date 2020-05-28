@@ -416,9 +416,9 @@ This can also be done by adding the `.is-readonly` class or the `aria-readonly="
 
 {% capture readonly-select %}
 <div class="fd-popover">
-    <div class="fd-popover__control" aria-expanded="false" aria-haspopup="false" aria-readonly="true" readonly>
+    <div class="fd-popover__control" aria-expanded="false" aria-haspopup="false" aria-readonly="true">
         <div class="fd-select">
-            <div class="fd-select__control" role="button" aria-expanded="false" aria-label="Select" aria-haspopup="false" aria-readonly="true" readonly></div>
+            <div class="fd-select__control" role="button" aria-expanded="false" aria-label="Select" aria-haspopup="false" aria-readonly="true"></div>
         </div>
     </div>
 </div>
