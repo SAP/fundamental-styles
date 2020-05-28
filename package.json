@@ -123,8 +123,7 @@
   "pre-commit": {
     "colors": true,
     "run": [
-      "lint:pre-commit",
-      "storybook:visual-docker"
+      "lint:pre-commit"
     ],
     "silent": false
   },
