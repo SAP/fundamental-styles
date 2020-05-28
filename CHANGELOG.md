@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.10.0-rc.13"></a>
+# [0.10.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.12...v0.10.0-rc.13) (2020-05-28)
+
+
+### Bug Fixes
+
+* remove storybook from precommit ([#1067](https://github.com/SAP/fundamental-styles/issues/1067)) ([c203ea8](https://github.com/SAP/fundamental-styles/commit/c203ea8))
+
+
+
 <a name="0.10.0-rc.12"></a>
 # [0.10.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.11...v0.10.0-rc.12) (2020-05-28)
 
