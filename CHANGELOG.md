@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.10.0-rc.12"></a>
+# [0.10.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.11...v0.10.0-rc.12) (2020-05-28)
+
+
+### Bug Fixes
+
+* removed active state except info, test updated for docker ([#1062](https://github.com/SAP/fundamental-styles/issues/1062)) ([80fb26a](https://github.com/SAP/fundamental-styles/commit/80fb26a))
+
+
+
 <a name="0.10.0-rc.11"></a>
 # [0.10.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.10...v0.10.0-rc.11) (2020-05-27)
 
