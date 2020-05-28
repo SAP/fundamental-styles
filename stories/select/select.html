@@ -1,25 +1,4 @@
----
-title: Select
-id: select
-keywords: select, dropdown, dropdowns
-sidebar: left-navigation-sidebar
-toc: false
-permalink: components/select.html
-folder: components
----
-
-The select component is commonly used to enable users to select an item from a predefined list.
-It should be used when there are less than 12 items to choose from. 
-For lists that require more than 12 options, the <a href="/patterns/combobox-input.html">Combobox Input</a> should be used.
-{: .docs-intro}
-
-## Sizes
-
-{% capture select-sizes %}
-<label class="fd-form-label">
-    Select Cozy Mode
-</label>
-<br>
+<!-- default (cosy) -->
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
@@ -46,13 +25,12 @@ For lists that require more than 12 options, the <a href="/patterns/combobox-inp
      </ul>
   </div>
 </div>
-<br />
-<br />
 
-<label class="fd-form-label">
-    Select Compact Mode
-</label>
-<br>
+<br/>
+<br/>
+<br/>
+
+<!-- compact -->
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select fd-select--compact">
@@ -82,18 +60,11 @@ For lists that require more than 12 options, the <a href="/patterns/combobox-inp
      </ul>
   </div>
 </div>
-{% endcapture %}
 
-{% include display-component.html component=select-sizes %}
-
-## Two Columns
-The `Select` component can be customized by adding additional information in additional columns.
-
-{% capture two-col %}
-<label class="fd-form-label">
-    Select Cozy Mode With 2 Columns
-</label>
-<br>
+<br/>
+<br/>
+<br/>
+<!-- Select Cozy Mode With 2 Columns -->
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
@@ -124,14 +95,13 @@ The `Select` component can be customized by adding additional information in add
      </ul>
   </div>
 </div>
-<br />
-<br />
+
+<br/>
+<br/>
+<br/>
 
 
-<label class="fd-form-label">
-    Select Compact Mode With 2 Columns 
-</label>
-<br>
+<!-- Select Compact Mode With 2 Columns  -->
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select fd-select--compact">
@@ -163,15 +133,11 @@ The `Select` component can be customized by adding additional information in add
   </div>
 </div>
 
+<br/>
+<br/>
+<br/>
 
-<br />
-<br />
-
-
-<label class="fd-form-label">
-    Select Cozy Mode With 2 Columns and Icons
-</label>
-<br>
+<!-- Select Cozy Mode With 2 Columns and Icons -->
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
@@ -206,16 +172,12 @@ The `Select` component can be customized by adding additional information in add
      </ul>
   </div>
 </div>
-{% endcapture %}
 
-{% include display-component.html component=two-col %}
+<br/>
+<br/>
+<br/>
 
-
-
-## Select with Items Grouping
-In cases where the list items need to be categorized into groups, it is possible to add headers for each category.
-
-{% capture select-group %}
+<!-- item grouping -->
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
@@ -260,18 +222,12 @@ In cases where the list items need to be categorized into groups, it is possible
         </ul>
   </div>
 </div>
-{% endcapture %}
-{% include display-component.html component=select-group %}
 
-## Text Wrapping
-In the `Select` component, the text is wrapped by default. In order to prevent the text from wrapping, 
-the `--no-wrap` modifier can be added to the `fd-list__title`, or `fd-list__secondary` elements.
+<br/>
+<br/>
+<br/>
 
-{% capture select-wrap %}
-<label class="fd-form-label">
-    Select with more text
-</label>
-<br>
+<!-- text wrapping -->
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
@@ -306,10 +262,7 @@ the `--no-wrap` modifier can be added to the `fd-list__title`, or `fd-list__seco
 <br />
 
 
-<label class="fd-form-label">
-    Select with more text and removed wrapping
-</label>
-<br>
+<!-- no text wrapping -->
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select fd-select--compact">
@@ -342,19 +295,12 @@ the `--no-wrap` modifier can be added to the `fd-list__title`, or `fd-list__seco
      </ul>
   </div>
 </div>
-{% endcapture %}
 
-{% include display-component.html component=select-wrap %}
+<br/>
+<br/>
+<br/>
 
-
-## Match Select Popover Body Size
-The default size for the popover body is often longer than the text length. 
-The length can be adjusted to match the text length by adding the `fd-popover__body--dropdown-fill` class to `fd-popover__body`.
-{% capture select-fill %}
-<label class="fd-form-label">
-    Fill Control Element
-</label>
-<br>
+<!-- match popover body size -->
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
@@ -385,16 +331,12 @@ The length can be adjusted to match the text length by adding the `fd-popover__b
      </ul>
   </div>
 </div>
-{% endcapture %}
 
-{% include display-component.html component=select-fill %}
+<br/>
+<br/>
+<br/>
 
-
-## Disabled State
-To disable a `Select` component, the disabled attribute needs to be added to the `fd-popover__control` and the `fd-select__control` elements.
-The disabled state can also be achieved by adding the `.is-disabled` class or the `aria-disabled="true"` attribute.
-
-{% capture disabled-select %}
+<!-- disabled -->
 <div class="fd-popover">
     <div class="fd-popover__control" aria-disabled="true" disabled>
         <div class="fd-select">
@@ -405,16 +347,12 @@ The disabled state can also be achieved by adding the `.is-disabled` class or th
         </div>
     </div>
 </div>
-{% endcapture %}
 
-{% include display-component.html component=disabled-select %}
+<br/>
+<br/>
+<br/>
 
-
-## Readonly State
-To make the `Select` component read-only, the readonly attribute needs to be added to the `fd-select__control` element. 
-This can also be done by adding the `.is-readonly` class or the `aria-readonly="true"` attribute.
-
-{% capture readonly-select %}
+<!-- readonly -->
 <div class="fd-popover">
     <div class="fd-popover__control" aria-expanded="false" aria-haspopup="false" aria-readonly="true" readonly>
         <div class="fd-select">
@@ -422,16 +360,12 @@ This can also be done by adding the `.is-readonly` class or the `aria-readonly="
         </div>
     </div>
 </div>
-{% endcapture %}
 
-{% include display-component.html component=readonly-select %}
+<br/>
+<br/>
+<br/>
 
-## Semantic States
-The semantic mode can be used to modify the  select component by adding one of the 
-`is-error` | `is-success` | `is-warning` | `is-information` classes into the `fd-select__control` element.
-To add text in the body of the component, simply include your text in the `fd-list__message` under the `ul` element. 
-
-{% capture semantic-select %}
+<!-- semantic -->
 <div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select">
@@ -583,62 +517,3 @@ To add text in the body of the component, simply include your text in the `fd-li
     </div>
 </div>
 <span class="fd-form-message fd-form-message--static fd-form-message--information">Information message</span>
-
-{% endcapture %}
-
-{% include display-component.html component=semantic-select %}
-
-## Select Mobile Mode
-For mobile devices, or tablets, select component should be displayed in fullscreen mode. It can be achieved by wrapping
-select component in `dialog` and `bar` components. 
-{% capture disabled-select %}
-<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
-    <div class="fd-dialog__content">
-        <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
-            <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <h3 class="fd-dialog__title">
-                        Select Ingredient
-                    </h3>
-                </div>
-            </div>
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button aria-label="open dropdown" class="fd-button fd-button--transparent sap-icon--decline" aria-label="close"></button>
-                </div>
-            </div>
-        </header>
-        <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
-            <ul class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
-                <div aria-live="assertive" class="fd-list__message fd-list__message--information" role="alert">Choose one item</div>
-                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                   <span class="fd-list__title">Apple</span>
-               </li>
-               <li role="option" tabindex="0" class="fd-list__item">
-                   <span class="fd-list__title">Orange</span>
-               </li>
-               <li role="option" tabindex="0" class="fd-list__item">
-                   <span class="fd-list__title">Banana</span>
-               </li>
-                <li role="option" tabindex="0" class="fd-list__item">
-                   <span class="fd-list__title">Kiwi</span>
-                </li>
-                <li role="option" tabindex="0" class="fd-list__item">
-                    <span class="fd-list__title">Tomato</span>
-                </li>
-                <li role="option" tabindex="0" class="fd-list__item">
-                    <span class="fd-list__title">Onion</span>
-                </li>
-                <li role="option" tabindex="0" class="fd-list__item">
-                    <span class="fd-list__title">Spinach</span>
-                </li>
-                <li role="option" tabindex="0" class="fd-list__item">
-                    <span class="fd-list__title">Potato</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-{% endcapture %}
-
-{% include display-component.html component=disabled-select %}
