@@ -79,11 +79,15 @@ The toolbar can be inserted into other controls and can inherit the design from 
 
 ### Info
 
-The Info toolbar is commonly used to show information (text or icons) and is slightly smaller than the regular toolbar in size. It can be achieved by passing `info` to the `fd-toolbar` class.
+The Info toolbar is commonly used to show information (text or icons) and is slightly smaller than the regular toolbar in size. It can be achieved by passing `info` to the `fd-toolbar` class. `fd-toolbar--active` class can be added to have active and hover states.
 
 {% capture toolbar %}
 
   <div class="fd-toolbar fd-toolbar--info">
+    3 item selected
+  </div>
+  <br>
+  <div class="fd-toolbar fd-toolbar--info fd-toolbar--active">
     3 item selected
   </div>
 
@@ -101,27 +105,6 @@ The Title toolbar should be used whenever a title needs to be included. It can b
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
     <button class="fd-button fd-button--compact fd-button--transparent">opt1</button>
     <button class="fd-button fd-button--compact fd-button--transparent">opt2</button>
-  </div>
-
-{% endcapture %}
-{% include display-component.html component=toolbar %}
-
-## Active toolbar
-
-The Active toolbar can be used to enable hover and select behaviours in toolbar by passing `active` in the `fd-toolbar` class.
-
-{% capture toolbar %}
-
-  <div class="fd-toolbar fd-toolbar--active fd-toolbar--solid">
-    <span>Title</span>
-    <button class="fd-button fd-button--compact fd-button--transparent">Action1</button>
-    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
-    <button class="fd-button fd-button--compact fd-button--transparent">Action2</button>
-    <button class="fd-button fd-button--compact fd-button--transparent">Action3</button>
-    <span class="fd-toolbar__separator"></span>
-    <button class="fd-button fd-button--compact fd-button--transparent">Action4</button>
-    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
-    <button class="fd-button fd-button--compact fd-button--transparent">Action5</button>
   </div>
 
 {% endcapture %}
