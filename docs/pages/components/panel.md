@@ -32,9 +32,13 @@ Expandable panels are much like fixed panels, except their content can be expand
             <button class="fd-button fd-button--transparent sap-icon--slim-arrow-down" aria-expanded="false" aria-haspopup="true" aria-controls="jhqDKYdf"></button>
         </div>
         <h5 class="fd-new-panel__title">Panel Header</h5>
-        <div class="toolbar-placeholder">
-            <button class="fd-button fd-button--transparent sap-icon--settings"></button>
-            <button class="fd-button fd-button--transparent sap-icon--settings"></button>
+        <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+            <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
+              <button class="fd-button is-selected" aria-pressed="true">Left</button>
+              <button class="fd-button">Middle</button>
+              <button class="fd-button">Right</button>
+            </div>
         </div>
     </div>
     <div class="fd-new-panel__content" aria-hidden="true" id="jhqDKYdf">
@@ -61,9 +65,13 @@ To create fixed panel, add `--fixed` modifier.
 <div class="fd-new-panel fd-new-panel--fixed">
     <div class="fd-new-panel__header">
         <h5 class="fd-new-panel__title">Panel Header</h5>
-        <div class="toolbar-placeholder">
-            <button class="fd-button fd-button--transparent sap-icon--settings"></button>
-            <button class="fd-button fd-button--transparent sap-icon--settings"></button>
+        <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+            <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
+              <button class="fd-button is-selected" aria-pressed="true">Left</button>
+              <button class="fd-button">Middle</button>
+              <button class="fd-button">Right</button>
+            </div>
         </div>
     </div>
     <div class="fd-new-panel__content">
@@ -89,9 +97,13 @@ To use compact panel, add `--compact` modifier.
             <button class="fd-button fd-button--compact fd-button--transparent sap-icon--slim-arrow-down" aria-expanded="false" aria-haspopup="true" aria-controls="Gekf63D"></button>
         </div>
         <h5 class="fd-new-panel__title">Panel Header</h5>
-        <div class="toolbar-placeholder">
-            <button class="fd-button fd-button--compact fd-button--transparent sap-icon--settings"></button>
-            <button class="fd-button fd-button--compact fd-button--transparent sap-icon--settings"></button>
+        <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+            <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
+              <button class="fd-button fd-button--compact is-selected" aria-pressed="true">Left</button>
+              <button class="fd-button fd-button--compact">Middle</button>
+              <button class="fd-button fd-button--compact">Right</button>
+            </div>
         </div>
     </div>
     <div class="fd-new-panel__content" aria-hidden="true" id="Gekf63D">
@@ -117,12 +129,16 @@ When the height of the panel's content is set to a fixed size, the content area 
             <button class="fd-button fd-button--transparent sap-icon--slim-arrow-down" aria-expanded="false" aria-haspopup="true" aria-controls="GJL745SD"></button>
         </div>
         <h5 class="fd-new-panel__title">Panel Header</h5>
-        <div class="toolbar-placeholder">
-            <button class="fd-button fd-button--transparent sap-icon--settings"></button>
-            <button class="fd-button fd-button--transparent sap-icon--settings"></button>
+        <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+            <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
+              <button class="fd-button is-selected" aria-pressed="true">Left</button>
+              <button class="fd-button">Middle</button>
+              <button class="fd-button">Right</button>
+            </div>
         </div>
     </div>
-    <div class="fd-new-panel__content" aria-hidden="true" id="GJL745SD" style="height: 100px">
+    <div class="fd-new-panel__content" aria-hidden="true" id="GJL745SD" style="height: 100px;">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
