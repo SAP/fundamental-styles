@@ -104,9 +104,6 @@ If the entries are not validated by the application, users can also enter custom
                     </span>
                 </label>
              </li>
-             <li class="fd-list__footer">
-                <a class="fd-link" href="#">Show All</a>
-            </li>
         </ul>
     </div>
 </div>
@@ -190,9 +187,6 @@ If the entries are not validated by the application, users can also enter custom
                     </span>
                 </label>
              </li>
-             <li class="fd-list__footer">
-                <a class="fd-link" href="#">Show All</a>
-            </li>
          </ul>
      </div>
 </div>
@@ -299,9 +293,6 @@ In cases where the list items need to be categorized into groups, it is possible
                     </span>
                 </label>
             </li>
-            <li class="fd-list__footer">
-                <a class="fd-link" href="#">Show All</a>
-            </li>
          </ul>
      </div>
 </div>
@@ -391,9 +382,6 @@ In the example you can see how the `Multi Input` component looks without the `fd
                     </span>
                 </label>
              </li>
-            <li class="fd-list__footer">
-                <a class="fd-link" href="#">Show All</a>
-            </li>
          </ul>
      </div>
 </div>
@@ -620,9 +608,6 @@ To add text in the `body` of the component, simply include your text in the `fd-
                     <span class="fd-list__title">Lemon</span>
                 </label>
             </li>
-             <li class="fd-list__footer">
-                <a class="fd-link" href="#">Show All</a>
-            </li>
         </ul>
     </div>
 </div>
@@ -725,9 +710,6 @@ So instead of using popover and dropdown, it should be wrapped in `dialog` and `
                          <span class="fd-list__title">Lemon</span>
                      </label>
                  </li>
-                  <li class="fd-list__footer">
-                     <a class="fd-link" href="#">Show All</a>
-                 </li>
              </ul>
         </div>
        <footer class="fd-dialog__footer fd-bar fd-bar--cosy fd-bar--footer">
@@ -739,6 +721,79 @@ So instead of using popover and dropdown, it should be wrapped in `dialog` and `
         </footer>
     </div>
 </div>
+<br/>
+
 {% endcapture %}
 
 {% include display-component.html component=mobile-multi-input %}
+
+## Filtering
+The user can filter selectable options by typing in the input. A button with the text "Show All" should be displayed, 
+that when clicked, will clear the text in the input and show all options in the list.
+{% capture filter-multi-input %}
+<div class="fd-popover">
+    <div class="fd-popover__control" aria-controls="F4GcX348aB" aria-expanded="false" aria-haspopup="true">
+        <div class="fd-input-group fd-input-group--control">
+            <div class="fd-tokenizer">
+                <div class="fd-tokenizer__inner">
+                    <span class="fd-token" role="button">
+                        <span class="fd-token__text">
+                            Apple
+                        </span>
+                        <button class="fd-token__close"></button>
+                    </span>
+                    <span class="fd-token" role="button">
+                        <span class="fd-token__text">
+                            Orange
+                        </span>
+                        <button class="fd-token__close"></button>
+                    </span>
+                    <span class="fd-token" role="button">
+                        <span class="fd-token__text">
+                            Banana
+                        </span>
+                        <button class="fd-token__close"></button>
+                    </span>
+                    <input class="fd-input fd-input-group__input fd-tokenizer__input" value="A" />
+                </div>
+            </div>
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--value-help" aria-controls="F4GcX348aB" aria-expanded="false" aria-haspopup="true"></button>
+            </span>
+        </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcX348aB">
+        <ul class="fd-list fd-list--multi-input">
+             <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez611A">
+                <label class="fd-checkbox__label fd-list__label" for="Ai4ez611A">
+                    <span class="fd-list__title">
+                        <b>A</b>pple
+                    </span>
+                </label>
+            </li>
+             <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez612A">
+                <label class="fd-checkbox__label fd-list__label" for="Ai4ez612A">
+                    <span class="fd-list__title">
+                        Or<b>a</b>nge
+                    </span>
+                </label>
+            </li>
+             <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez614A">
+                <label class="fd-checkbox__label fd-list__label" for="Ai4ez614A">
+                    <span class="fd-list__title">
+                        B<b>a</b>nana
+                    </span>
+                </label>
+            </li>
+            <li class="fd-list__footer">
+              <a class="fd-link" href="#">Show All</a>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endcapture %}
+
+{% include display-component.html component=filter-multi-input %}
