@@ -13,16 +13,6 @@ $toolbar-padding: 0 0.5rem;
 $title-toolbar-padding: 0 0.5rem 0 1rem;
 $title-toolbar-height: 2.75rem;
 
-%toolbarStandardColors {
-  @include fd-hover() {
-    background-color: var(--sapList_Hover_Background);
-  }
-
-  @include fd-active() {
-    background-color: var(--sapActiveColor);
-  }
-}
-
 @mixin activeStyles() {
   &.#{$block}--active {
     @content;
@@ -105,10 +95,6 @@ $title-toolbar-height: 2.75rem;
 
   @include toolbarSpacing();
   @include toolbarStandard();
-
-  @include activeStyles() {
-    @extend %toolbarStandardColors;
-  }
 
   &--title {
     @include titleToolbar();
