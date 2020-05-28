@@ -166,7 +166,7 @@ hr {
     }
   }
 
-  .fd-tile__header {
+  .docs-tile__header {
     color: $docs-tiles-color !important;
     font-weight: normal;
     font-size: 20px;
@@ -178,11 +178,11 @@ hr {
     }
   }
 
-  .fd-tile__content {
+  .docs-tile__content {
     align-self: auto;
   }
 
-  .fd-tile__description {
+  .docs-tile__description {
     color: docs-color(text, 1);
   }
 
