@@ -12,7 +12,7 @@ select:
     <div class="fd-select{{ modifier.block | modifier('select') }}">
 		 <div class="fd-select__control {{ "is-expanded" if state.expanded }} {{ "is-readonly" if state.readonly }} {{ "is-hover" if state.hover }}" role="button" aria-controls="{{ properties.id }}" aria-expanded="false" aria-haspopup="true" {{ " disabled" if state.disabled }}{{ aria | aria }}>
             {{ properties.label if not state.readonly }}
-			 <button class="btn-playground fd-select__button sap-icon--slim-arrow-down"></button>
+			 <button tabindex="-1" class="btn-playground fd-select__button sap-icon--slim-arrow-down"></button>
 		 </div>
     </div>
 {%- endmacro %}
