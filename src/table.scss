@@ -302,7 +302,7 @@ $block: #{$fd-namespace}-table;
     overflow-x: scroll;
   }
 
-  &--responsive {
+  &--pop-in {
     .#{$block}__text {
       color: inherit;
       margin-bottom: 0.5rem;
@@ -318,6 +318,17 @@ $block: #{$fd-namespace}-table;
 
     .#{$block}__cell {
       height: auto;
+
+      &--checkbox {
+        + .#{$block}__cell {
+          padding-left: 0;
+
+          @include fd-rtl() {
+            padding-right: 0;
+            padding-left: $fd-table-cell-padding;
+          }
+        }
+      }
     }
 
     .#{$block}__row--main {

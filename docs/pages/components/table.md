@@ -462,12 +462,79 @@ Also for cells, where checkbox is included should contain `fd-table__cell--check
 
 <br />
 
+## Table with Pagination
+
+
+{% capture table-pagination %}
+<table class="fd-table">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Name</th>
+            <th class="fd-table__cell" scope="col">Status</th>
+            <th class="fd-table__cell" scope="col">Price</th>
+            <th class="fd-table__cell" scope="col">Country</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell">Banana</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--positive">
+                    Available
+                </span>
+            </td>
+            <td class="fd-table__cell">5 EUR</td>
+            <td class="fd-table__cell">India</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell">Pineapple</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--negative">
+                    Out of stock
+                </span>
+            </td>
+            <td class="fd-table__cell">2 EUR</td>
+            <td class="fd-table__cell">Mexico</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell">Orange</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--informative">
+                    Temporary unavailable
+                </span>
+            </td>
+            <td class="fd-table__cell">6 EUR</td>
+            <td class="fd-table__cell">Spain</td>
+        </tr>
+    </tbody>
+</table>
+<div class="fd-pagination">
+    <span class="fd-pagination__total">Showing 3 of 30 items</span>
+    <nav class="fd-pagination__nav">
+        <a href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Next" aria-disabled="false"></a>
+        <a href="#" class="fd-pagination__link">1</a>
+        <a href="#" class="fd-pagination__link is-selected">2</a>
+        <a href="#" class="fd-pagination__link">3</a>
+        <span class="fd-pagination__more" role="presentation"></span>
+        <a href="#" class="fd-pagination__link">10</a>
+        <a href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next" aria-disabled="false"></a>
+    </nav>
+</div>
+{% endcapture %}
+{% include display-component.html component=table-pagination %}
+
+<br />
+
 
 {% capture table-responsive %}
 <h3>Responsive Table</h3>
 <table class="fd-table fd-table--no-horizontal-borders">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
+            <th class="fd-table__cell fd-table__cell--checkbox">
+                <input type="checkbox" class="fd-checkbox" id="kqqzPI">
+                <label class="fd-checkbox__label" for="kqqzPI"></label>
+            </th>
             <th class="fd-table__cell" scope="col">Name</th>
             <th class="fd-table__cell" scope="col">Status</th>
             <th class="fd-table__cell" scope="col">Price</th>
@@ -477,6 +544,10 @@ Also for cells, where checkbox is included should contain `fd-table__cell--check
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row fd-table__row--activable">
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input type="checkbox" class="fd-checkbox" id="EWuzWh">
+                <label class="fd-checkbox__label" for="EWuzWh"></label>
+            </td>
             <td class="fd-table__cell">Banana</td>
             <td class="fd-table__cell">
                 <span class="fd-object-status fd-object-status--positive">
@@ -490,6 +561,10 @@ Also for cells, where checkbox is included should contain `fd-table__cell--check
             </td>
         </tr>
         <tr class="fd-table__row fd-table__row--activable">
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input type="checkbox" class="fd-checkbox" id="19j0Sc">
+                <label class="fd-checkbox__label" for="19j0Sc"></label>
+            </td>
             <td class="fd-table__cell">Pineapple</td>
             <td class="fd-table__cell">
                 <span class="fd-object-status fd-object-status--negative">
@@ -503,6 +578,10 @@ Also for cells, where checkbox is included should contain `fd-table__cell--check
             </td>
         </tr>
         <tr class="fd-table__row fd-table__row--activable">
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input type="checkbox" class="fd-checkbox" id="a7SfGX">
+                <label class="fd-checkbox__label" for="a7SfGX"></label>
+            </td>
             <td class="fd-table__cell">Orange</td>
             <td class="fd-table__cell">
                 <span class="fd-object-status fd-object-status--informative">
@@ -521,7 +600,7 @@ Also for cells, where checkbox is included should contain `fd-table__cell--check
 <br>
 <h3>Pop-in</h3>
 <div style="max-width: 450px">
-    <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--responsive">
+    <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
         <tbody class="fd-table__body">
             <tr class="fd-table__row fd-table__row--main fd-table__row--activable">
                 <td class="fd-table__cell">
@@ -575,24 +654,68 @@ Also for cells, where checkbox is included should contain `fd-table__cell--check
                     </p>
                 </td>
             </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<h3>Pop-in with Checkbox</h3>
+<div style="max-width: 450px">
+    <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
+        <tbody class="fd-table__body">
             <tr class="fd-table__row fd-table__row--main fd-table__row--activable">
+                <td class="fd-table__cell fd-table__cell--checkbox">
+                    <input type="checkbox" class="fd-checkbox" id="CWkhTG">
+                    <label class="fd-checkbox__label" for="CWkhTG"></label>
+                </td>
                 <td class="fd-table__cell">
-                    <p class="fd-table__text fd-table__text--title">Pineapple</p>
-                    <p class="fd-table__text">Mexico</p>
+                    <p class="fd-table__text fd-table__text--title">Banana</p>
+                    <p class="fd-table__text">India</p>
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content">
-                    2 EUR
+                    5 EUR
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
                     <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
                 </td>
             </tr>
             <tr class="fd-table__row fd-table__row--secondary">
+                <td class="fd-table__cell fd-table__cell--checkbox"></td>
                 <td class="fd-table__cell" colspan="100%">
                     <p class="fd-table__text">
                         <label class="fd-form-label">Status:</label>
                         <span class="fd-object-status fd-object-status--positive">
                             Available
+                        </span>
+                    </p>
+                    <p class="fd-table__text">
+                        <label class="fd-form-label">Date Of Expire:</label>
+                        12.01.12
+                    </p>
+                </td>
+            </tr>
+            <tr class="fd-table__row fd-table__row--main fd-table__row--activable">
+                <td class="fd-table__cell fd-table__cell--checkbox">
+                    <input type="checkbox" class="fd-checkbox" id="Yeas6w">
+                    <label class="fd-checkbox__label" for="Yeas6w"></label>
+                </td>
+                <td class="fd-table__cell">
+                    <p class="fd-table__text fd-table__text--title">Very long name for orange, which noone expected, it forces to wrap text into anoher line.</p>
+                    <p class="fd-table__text">Spain</p>
+                </td>
+                <td class="fd-table__cell fd-table__cell--fit-content">
+                    6 EUR
+                </td>
+                <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                    <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                </td>
+            </tr>
+            <tr class="fd-table__row fd-table__row--secondary">
+                <td class="fd-table__cell fd-table__cell--checkbox"></td>
+                <td class="fd-table__cell" colspan="100%">
+                    <p class="fd-table__text">
+                        <label class="fd-form-label">Status:</label>
+                        <span class="fd-object-status fd-object-status--negative">
+                            Out of stock
                         </span>
                     </p>
                     <p class="fd-table__text">
@@ -614,7 +737,7 @@ To achieve it there should be added cell with `fd-table__cell--status-indicator`
 If there is a need to use semantic mode on any of cells, one of that modifiers should be used
 `--valid`, `--information`, `--error`, `--warning`
 
-{% capture table-checkbox %}
+{% capture table-highlight %}
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -732,7 +855,7 @@ If there is a need to use semantic mode on any of cells, one of that modifiers s
     </tbody>
 </table>
 {% endcapture %}
-{% include display-component.html component=table-checkbox %}
+{% include display-component.html component=table-highlight %}
 
 <br />
 
