@@ -63,8 +63,8 @@ The project has the following prerequisites:
 Our Service Level Agreement. Fundamental Library Styles is aiming to deliver:
 
 ### SLA - What
-* [Fiori 3.0](https://www.sap.com/products/fiori.html) compliant CSS component styles.
-* The HTML reference specification that consuming libraries **MUST** adhere to.
+* Consumable CSS that strives for [Fiori 3.0](https://www.sap.com/products/fiori.html) compliance.
+* Reference HTML specification that consuming libraries **MUST** adhere to.
 
 ### SLA - How
 * Themable components built on top of [SAP Theming Base Content](https://github.com/SAP/theming-base-content) by consuming the CSS Custom Properties delivered by the theming library
