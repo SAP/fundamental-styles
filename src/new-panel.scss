@@ -7,6 +7,7 @@ $block: #{$fd-namespace}-new-panel;
 
   $fd-panel-header-height: 2.75rem;
   $fd-panel-compact-header-height: 2.75rem;
+  $fd-panel-header-padding: 0.5rem;
 
   &,
   &__content,
@@ -19,7 +20,7 @@ $block: #{$fd-namespace}-new-panel;
   &__header {
     height: $fd-panel-header-height;
     min-height: $fd-panel-header-height;
-    padding-right: 0.5em;
+    padding-right: $fd-panel-header-padding;
     background-color: var(--sapGroup_TitleBackground);
     border-bottom: solid 0.0625rem var(--sapGroup_TitleBorderColor);
     display: flex;
@@ -57,9 +58,21 @@ $block: #{$fd-namespace}-new-panel;
     }
   }
 
+  @include fd-rtl() {
+    .#{$block}__header {
+      padding-right: 0;
+      padding-left: $fd-panel-header-padding;
+    }
+  }
+
   &--fixed {
     .#{$block}__header {
       padding-left: 1rem;
+
+      @include fd-rtl() {
+        padding-left: $fd-panel-header-padding;
+        padding-right: 1rem;
+      }
     }
   }
 
