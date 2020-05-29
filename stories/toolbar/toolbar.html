@@ -1,0 +1,106 @@
+<script>
+  import { createEventDispatcher } from "svelte";
+  const dispatch = createEventDispatcher();
+
+  export let toolbar = {
+    hideOverflowMenu: false,
+    dir: "ltr",
+  };
+
+  function onPopoverMenuClicked() {
+    toolbar.hideOverflowMenu = !toolbar.hideOverflowMenu;
+    dispatch("onPopoverMenuClicked", toolbar);
+  }
+</script>
+
+<div dir="{toolbar.dir}">
+  <dir style="background-color: green;">
+    <h2>Auto</h2>
+    <div class="fd-toolbar fd-toolbar--clear fd-toolbar--clear fd-toolbar--auto">
+      <button class="btn-playground btn-playground--compact">Button</button>
+      <button class="btn-playground btn-playground--compact">Button</button>
+      <span class="fd-toolbar__spacer fd-toolbar__spacer--auto" />
+      <button class="btn-playground btn-playground--compact">Button</button>
+      <button class="btn-playground btn-playground--compact">Button</button>
+      <span class="fd-toolbar__separator" />
+      <button class="btn-playground btn-playground--compact">Button</button>
+      <span class="fd-toolbar__spacer fd-toolbar__spacer--auto" />
+      <button class="btn-playground btn-playground--compact">Button</button>
+    </div>
+  </dir>
+
+  <h2>Transparent</h2>
+  <div class="fd-toolbar fd-toolbar--standard fd-toolbar--transparent">
+    <button class="btn-playground btn-playground--compact">Button</button>
+    <button class="btn-playground btn-playground--compact">Button</button>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto" />
+    <button class="btn-playground btn-playground--compact">Button</button>
+    <button class="btn-playground btn-playground--compact">Button</button>
+    <span class="fd-toolbar__separator" />
+    <button class="btn-playground btn-playground--compact">Button</button>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto" />
+    <button class="btn-playground btn-playground--compact">Button</button>
+  </div>
+
+  <h2>Solid, standard</h2>
+  <div class="fd-toolbar fd-toolbar--solid">
+    <button class="btn-playground btn-playground--compact">Button</button>
+    <button class="btn-playground btn-playground--compact">Button</button>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto" />
+    <button class="btn-playground btn-playground--compact">Button</button>
+    <button class="btn-playground btn-playground--compact">Button</button>
+    <span class="fd-toolbar__separator" />
+    <button class="btn-playground btn-playground--compact">Button</button>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto" />
+    <button class="btn-playground btn-playground--compact">Button</button>
+  </div>
+
+  <h2>Info</h2>
+  <div class="fd-toolbar fd-toolbar--info fd-toolbar--active">3 item selected</div>
+
+  <h2>Title toolbar</h2>
+  <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title">
+    <h4>Title</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto" />
+    <button class="btn-playground btn-playground--compact">opt1</button>
+    <button class="btn-playground btn-playground--compact">opt2</button>
+  </div>
+
+  <h2>Overflow</h2>
+  <div class="fd-toolbar fd-toolbar--solid">
+    <h4>Title</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+    <button class="fd-button fd-button--compact fd-button--transparent">Button</button>
+    <button class="fd-button fd-button--compact fd-button--transparent">Button</button>
+    <button class="fd-button fd-button--compact fd-button--transparent">Button</button>
+
+    <div class="fd-popover fd-toolbar__overflow">
+      <div class="fd-popover__control">
+        <button
+          on:click="{onPopoverMenuClicked}"
+          class="fd-button fd-button--transparent fd-button--compact sap-icon--overflow"
+          aria-controls="wgxzK859"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-label="More"
+        ></button>
+      </div>
+      <div
+        class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+        aria-hidden="{toolbar.hideOverflowMenu}"
+        id="wgxzK859"
+      >
+        <div class="fd-toolbar__overflow__body">
+          <label class="fd-toolbar__overflow__label">Label</label>
+          <button class="fd-button fd-button--compact fd-button--transparent">Edit</button>
+          <span class="fd-toolbar__separator"></span>
+          <label class="fd-toolbar__overflow__form-label">Form label</label>
+          <button class="fd-button fd-button--compact fd-button--negative">Delete</button>
+          <span class="fd-toolbar__separator"></span>
+          <button class="fd-button fd-button--compact fd-button--sucess">Assign</button>
+          <button class="fd-button fd-button--compact fd-button--attention">Exit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

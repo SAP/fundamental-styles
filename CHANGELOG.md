@@ -2,6 +2,81 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.10.0-rc.20"></a>
+# [0.10.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.19...v0.10.0-rc.20) (2020-05-29)
+
+
+### Bug Fixes
+
+* add Line Tile type to Generic Tiles ([#1059](https://github.com/SAP/fundamental-styles/issues/1059)) ([c38c9de](https://github.com/SAP/fundamental-styles/commit/c38c9de))
+
+
+
+<a name="0.10.0-rc.19"></a>
+# [0.10.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.18...v0.10.0-rc.19) (2020-05-29)
+
+
+### Features
+
+* remove overflow from popover ([#895](https://github.com/SAP/fundamental-styles/issues/895)) ([f90882a](https://github.com/SAP/fundamental-styles/commit/f90882a))
+
+
+
+<a name="0.10.0-rc.18"></a>
+# [0.10.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.17...v0.10.0-rc.18) (2020-05-29)
+
+
+
+<a name="0.10.0-rc.17"></a>
+# [0.10.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.16...v0.10.0-rc.17) (2020-05-28)
+
+
+
+<a name="0.10.0-rc.16"></a>
+# [0.10.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.15...v0.10.0-rc.16) (2020-05-28)
+
+
+
+<a name="0.10.0-rc.15"></a>
+# [0.10.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.14...v0.10.0-rc.15) (2020-05-28)
+
+
+
+<a name="0.10.0-rc.14"></a>
+# [0.10.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.13...v0.10.0-rc.14) (2020-05-28)
+
+
+
+<a name="0.10.0-rc.13"></a>
+# [0.10.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.12...v0.10.0-rc.13) (2020-05-28)
+
+
+### Bug Fixes
+
+* remove storybook from precommit ([#1067](https://github.com/SAP/fundamental-styles/issues/1067)) ([c203ea8](https://github.com/SAP/fundamental-styles/commit/c203ea8))
+
+
+
+<a name="0.10.0-rc.12"></a>
+# [0.10.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.11...v0.10.0-rc.12) (2020-05-28)
+
+
+### Bug Fixes
+
+* removed active state except info, test updated for docker ([#1062](https://github.com/SAP/fundamental-styles/issues/1062)) ([80fb26a](https://github.com/SAP/fundamental-styles/commit/80fb26a))
+
+
+
+<a name="0.10.0-rc.11"></a>
+# [0.10.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.10...v0.10.0-rc.11) (2020-05-27)
+
+
+### Bug Fixes
+
+* introduce toolbar component ([#1022](https://github.com/SAP/fundamental-styles/issues/1022)) ([8c74636](https://github.com/SAP/fundamental-styles/commit/8c74636))
+
+
+
 <a name="0.10.0-rc.10"></a>
 # [0.10.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.9...v0.10.0-rc.10) (2020-05-27)
 

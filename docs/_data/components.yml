@@ -1,5 +1,5 @@
 ## Data for componnets list display page.
-  items:
+items:
     - title: Action Bar
       meta: action-bar
 
@@ -23,6 +23,9 @@
 
     - title: Forms
       meta: form
+
+    - title: Generic Tile
+      meta: generic-tile
 
     - title: Icon
       meta: icon
@@ -96,8 +99,8 @@
     - title: Tabs
       meta: tabs
 
-    - title: Tile
-      meta: tile
+    - title: Toolbar
+      meta: toolbar
 
     - title: Tree
       meta: tree

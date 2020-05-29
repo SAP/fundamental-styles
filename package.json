@@ -1,6 +1,6 @@
 {
   "name": "fundamental-styles",
-  "version": "0.10.0-rc.10",
+  "version": "0.10.0-rc.20",
   "description": "Fundamental Styles is a Design System and HTML/CSS Component Library used to build modern Product User Experiences with the SAP look and feel. Learn more about this project at - http://sap.github.io/fundamental-styles/",
   "main": "dist/fundamental-styles.css",
   "scripts": {
@@ -39,8 +39,8 @@
     "build-storybook": "build-storybook",
     "storybook:ci": "npm run storybook -- --ci --quiet",
     "storybook:visual-setup": "jest --config=./config/jest.config.js",
-    "storybook:visual": "start-server-and-test storybook:ci http-get://localhost:6006 storybook:visual-setup",
-    "storybook:visual-update": "server-test storybook:ci http-get://localhost:6006 'npm run storybook:visual-setup -- --updateSnapshot'",
+    "storybook:visual": "npm run build && start-server-and-test storybook:ci http-get://localhost:6006 storybook:visual-setup",
+    "storybook:visual-update": "npm run build && server-test storybook:ci http-get://localhost:6006 'npm run storybook:visual-setup -- --updateSnapshot'",
     "storybook:visual-docker": "DOCKER=true && npm run storybook:visual",
     "storybook:visual-docker-windows": "set DOCKER=true && npm run storybook:visual",
     "storybook:visual-update-docker": "DOCKER=true npm run storybook:visual-update",
@@ -58,10 +58,12 @@
   "homepage": "https://sap.github.io/fundamental-styles/",
   "devDependencies": {
     "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-runtime": "^7.9.6",
     "@sap-theming/theming-base-content": "~11.1.19",
     "@storybook/addon-a11y": "^5.3.18",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-cssresources": "^5.3.18",
+    "@storybook/addon-knobs": "^5.3.18",
     "@storybook/addon-links": "^5.3.18",
     "@storybook/addon-storyshots": "^5.3.18",
     "@storybook/addon-storyshots-puppeteer": "^5.3.18",

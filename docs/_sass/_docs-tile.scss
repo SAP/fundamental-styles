@@ -2,7 +2,9 @@
 @import "../../src/mixins";
 @import "../../src/functions";
 
-.docs-tile {
+$block: docs-tile;
+
+.#{$block} {
   // VARS
   color: var(--sapTile_TextColor);
   background-color: var(--sapTile_Background);

@@ -140,4 +140,18 @@
     --sapLink_InvertedColor: #ff4516;
     --sapLink_Hover_Color: rgb(148, 214, 148);
     --sapLinkColor: rgb(6, 56, 6);
+    --sapActiveColor:#4f9344;
+    --sapBackgroundColor: #945ef7;
+    --sapToolbar_Background: #4f9344;
+    --sapInfobar_Background: yellow;
+    --sapInfobar_Hover_Background: brown;
+    --sapInfobar_Active_Background: red;
+    --sapGroup_TitleBorderColor: #945ef7;
+    --sapTile_Background: chocolate;
+    --sapTile_TextColor: green;
+    --sapButton_TextColor: #66ffff;
+    --sapHighlightColor: yellow;
+    --sapContent_ContrastTextColor: blue;
+    --sapButton_Background: powderblue;
+    --sapButton_IconColor: pink;
   }
