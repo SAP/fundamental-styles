@@ -408,7 +408,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 
 
 ## Popover Overflow Prevention
-Add the `fd-popover-body__wrapper` wrapper on the element below the `popover__body` for prevent body overflow.
+Add the `fd-popover-body__wrapper` wrapper on the element below the `popover__body` to prevent body overflow.
 {% capture default-popoverwrap %}
 <div class="fd-popover">
     <div class="fd-popover__control">
