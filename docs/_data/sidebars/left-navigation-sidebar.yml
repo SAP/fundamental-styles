@@ -35,10 +35,6 @@ entries:
       url: /layouts/section.html
       output: web
 
-    - title: Panel
-      url: /layouts/panel.html
-      output: web
-
     - title: Columns
       url: /layouts/columns.html
       output: web

@@ -1,7 +1,7 @@
 ---
 title: Layout Panel
 id: layout-panel
-keywords: panel layout-panel
+keywords: layout-panel
 sidebar: left-navigation-sidebar
 toc: false
 permalink: layouts/layout-panel
