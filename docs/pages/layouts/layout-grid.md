@@ -18,29 +18,29 @@ Use a layout grid to arrange components evenly in a grid layout.
 ## Default Layout Grid (3 columns)
 {% capture default %}
 <div class="fd-layout-grid">
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
 </div>
@@ -53,29 +53,29 @@ Use a layout grid to arrange components evenly in a grid layout.
 The `.fd-layout-grid-no-gap` modifier will remove margins between the panels.
 {% capture default %}
 <div class="fd-layout-grid fd-layout-grid--no-gap">
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
 </div>
@@ -88,29 +88,29 @@ The `.fd-layout-grid-no-gap` modifier will remove margins between the panels.
 The `.fd-layout-grid-gap-1` modifier will leave `1px` margins between the panels.
 {% capture default %}
 <div class="fd-layout-grid fd-layout-grid--gap-1">
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
 </div>
@@ -123,24 +123,24 @@ The `.fd-layout-grid-gap-1` modifier will leave `1px` margins between the panels
 The `.fd-layout-grid--col-1` modifier will render a 1 column grid.
 {% capture default %}
 <div class="fd-layout-grid fd-layout-grid--col-1">
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
 </div>
@@ -154,24 +154,24 @@ The `.fd-layout-grid--col-1` modifier will render a 1 column grid.
 The `.fd-layout-grid--col-2` modifier will render a 2 column grid.
 {% capture default %}
 <div class="fd-layout-grid fd-layout-grid--col-2">
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
 </div>
@@ -184,44 +184,44 @@ The `.fd-layout-grid--col-2` modifier will render a 2 column grid.
 The `.fd-layout-grid--col-4` modifier will render a 4 column grid.
 {% capture default %}
 <div class="fd-layout-grid fd-layout-grid--col-4">
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
 </div>
@@ -234,54 +234,54 @@ The `.fd-layout-grid--col-4` modifier will render a 4 column grid.
 The `.fd-layout-grid--col-5` modifier will render a 5 column grid.
 {% capture default %}
 <div class="fd-layout-grid fd-layout-grid--col-5">
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
 </div>
@@ -294,64 +294,64 @@ The `.fd-layout-grid--col-5` modifier will render a 5 column grid.
 The `.fd-layout-grid--col-6` modifier will render a 6 column grid.
 {% capture default %}
 <div class="fd-layout-grid fd-layout-grid--col-6">
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
 </div>
@@ -364,78 +364,78 @@ The `.fd-layout-grid--col-6` modifier will render a 6 column grid.
 The `.fd-layout-grid__span-column-[num]`. `[num]` option ranges from 2 to 6.
 {% capture default %}
 <div class="fd-layout-grid fd-layout-grid--col-6">
-    <div class="fd-panel fd-layout-grid__span-column-2">
-        <div class="fd-panel__body">
+    <div class="fd-layout-panel fd-layout-grid__span-column-2">
+        <div class="fd-layout-panel__body">
             <p>.fd-layout-grid__span-column-2 </p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel fd-layout-grid__span-column-3">
-        <div class="fd-panel__body">
+    <div class="fd-layout-panel fd-layout-grid__span-column-3">
+        <div class="fd-layout-panel__body">
             <p>.fd-layout-grid__span-column-3</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel fd-layout-grid__span-column-4">
-        <div class="fd-panel__body">
+    <div class="fd-layout-panel fd-layout-grid__span-column-4">
+        <div class="fd-layout-panel__body">
             <p>.fd-layout-grid__span-column-4</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel fd-layout-grid__span-column-5">
-        <div class="fd-panel__body">
+    <div class="fd-layout-panel fd-layout-grid__span-column-5">
+        <div class="fd-layout-panel__body">
             <p>.fd-layout-grid__span-column-5</p>
         </div>
     </div>
-    <div class="fd-panel">
-        <div class="fd-panel__body">
-            <p>.fd-panel</p>
+    <div class="fd-layout-panel">
+        <div class="fd-layout-panel__body">
+            <p>.fd-layout-panel</p>
         </div>
     </div>
-    <div class="fd-panel fd-layout-grid__span-column-6">
-        <div class="fd-panel__body">
+    <div class="fd-layout-panel fd-layout-grid__span-column-6">
+        <div class="fd-layout-panel__body">
             <p>fd-layout-grid__span-column-6</p>
         </div>
     </div>

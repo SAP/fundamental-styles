@@ -4,21 +4,21 @@
 
 {% set panel_example %}
 {% call panel() -%}
-    {% call panel_header({ title: ".fd-panel__title", description: ".fd-panel__description" }) -%}
+    {% call panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description" }) -%}
     {% call panel_actions() -%}
-.fd-panel__actions
+.fd-layout-panel__actions
     {%- endcall %}
 
     {%- endcall %}
 
     {%- call panel_filters() %}
-.fd-panel__filters
+.fd-layout-panel__filters
     {%- endcall %}
     {% call panel_body() -%}
-      <p>.fd-panel__body</p>
+      .fd-layout-panel__body
     {%- endcall %}
     {% call panel_footer() -%}
-.fd-panel__footer
+.fd-layout-panel__footer
     {%- endcall %}
 {%- endcall %}
 {% endset %}
@@ -41,7 +41,7 @@
 <h2> Example with H2 </h2>
 {% set example %}
     {% call panel() -%}
-        {% call panel_header({ title: ".fd-panel__title", description: ".fd-panel__description", title_size: "h2" }) -%}
+        {% call panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description", title_size: "h2" }) -%}
         {%- endcall %}
     {%- endcall %}
 {% endset %}
@@ -53,7 +53,7 @@
 <h2> Example with H4 </h2>
 {% set example %}
     {% call panel() -%}
-        {% call panel_header({ title: ".fd-panel__title", description: ".fd-panel__description", title_size: "h4" }) -%}
+        {% call panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description", title_size: "h4" }) -%}
         {%- endcall %}
     {%- endcall %}
 {% endset %}
@@ -65,7 +65,7 @@
 <h2> Example with H5 </h2>
 {% set example %}
     {% call panel() -%}
-        {% call panel_header({ title: ".fd-panel__title", description: ".fd-panel__description", title_size: "h5" }) -%}
+        {% call panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description", title_size: "h5" }) -%}
         {%- endcall %}
     {%- endcall %}
 {% endset %}
@@ -77,7 +77,7 @@
 <h2> Example with H6 </h2>
 {% set example %}
     {% call panel() -%}
-        {% call panel_header({ title: ".fd-panel__title", description: ".fd-panel__description", title_size: "h6" }) -%}
+        {% call panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description", title_size: "h6" }) -%}
         {%- endcall %}
     {%- endcall %}
 {% endset %}

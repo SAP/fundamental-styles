@@ -23,6 +23,10 @@ entries:
       url: /layouts/layout-grid.html
       output: web
 
+    - title: Layout Panel
+      url: /layouts/layout-panel.html
+      output: web
+
     - title: Page
       url: /layouts/page-layout.html
       output: web
