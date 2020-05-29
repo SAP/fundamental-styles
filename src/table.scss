@@ -38,14 +38,25 @@ $block: #{$fd-namespace}-table;
     }
   }
 
-  // LOCAL VARS )
+  @mixin fd-table-reset-spacing() {
+    padding: 0;
+    margin: 0;
+  }
+
+  // LOCAL VARS
   $fd-table-cell-padding: 0.5rem;
   $fd-table-first-cell-padding: 1rem;
   $fd-table-cozy-cell-height: 2.75rem;
   $fd-table-compact-cell-height: 2rem;
+  $fd-table-navigation-icon-width: 2rem;
   $fd-table-condensed-cell-height: 1.5rem;
+
+  // Thanks to table-cell specification, if the width is set to small value, the cell will have content width
+  $fd-table-cell-fit-content-width: 0.5rem;
+
   $fd-table-basic-background: var(--sapList_Background);
   $fd-table-border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+  $fd-table-fixed-cell-border: 0.125rem var(--sapList_TableFixedBorderColor) solid;
 
   // BLOCK BASE *******************************************
   // set all BLOCK reset and baseline styles
@@ -71,8 +82,8 @@ $block: #{$fd-namespace}-table;
 
     &--navigation {
       font-size: var(--sapFontSmallSize);
-      width: 2rem;
-      min-width: 2rem;
+      width: $fd-table-navigation-icon-width;
+      min-width: $fd-table-navigation-icon-width;
       height: 100%;
 
       @include fd-flex-center();
@@ -130,20 +141,19 @@ $block: #{$fd-namespace}-table;
     }
 
     &--checkbox {
-      width: 10px;
-      padding: 0;
-      margin: 0;
+      width: $fd-table-cell-fit-content-width;
+
+      @include fd-table-reset-spacing();
     }
 
     &--fit-content {
-      width: 10px;
+      width: $fd-table-cell-fit-content-width;
       word-break: keep-all;
       white-space: nowrap;
     }
 
     &--no-padding {
-      padding: 0;
-      margin: 0;
+      @include fd-table-reset-spacing();
     }
 
     &--status-indicator {
@@ -171,16 +181,26 @@ $block: #{$fd-namespace}-table;
       left: 0;
       position: absolute;
       background-color: $fd-table-basic-background;
-      display: flex;
-      align-items: center;
       border-bottom: $fd-table-border;
+
+      @include fd-flex-vertical-center();
 
       @include fd-hover() {
         background-color: var(--sapList_Hover_Background);
       }
 
-      &:last-child {
-        border-right: 0.125rem var(--sapList_TableFixedBorderColor) solid;
+      &:last-of-type {
+        border-right: $fd-table-fixed-cell-border;
+      }
+
+      @include fd-rtl() {
+        left: auto;
+        right: 0;
+
+        &:last-of-type {
+          border-right: none;
+          border-left: $fd-table-fixed-cell-border;
+        }
       }
     }
 
@@ -209,6 +229,10 @@ $block: #{$fd-namespace}-table;
 
     &--navigated {
       box-shadow: inset -0.1875rem 0 var(--sapSelectedColor);
+
+      @include fd-rtl() {
+        box-shadow: inset 0.1875rem 0 var(--sapSelectedColor);
+      }
     }
   }
 

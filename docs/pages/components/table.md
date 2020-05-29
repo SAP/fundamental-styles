@@ -1137,6 +1137,12 @@ To create fixed column, these steps need to be reproduced
         .fd-table--fixed {
            padding-left: 200px;
         }
+        [dir=rtl] .fd-table--fixed,
+        .fd-table--fixed[dir=rtl] {
+           padding-left: 0;
+           padding-right: 200px;            
+        }
+        
         .fd-table--fixed .fd-table__cell {
             min-width: 200px;
             max-width: 200px;
