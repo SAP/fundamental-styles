@@ -77,8 +77,7 @@ $block: #{$fd-namespace}-select;
       }
     }
 
-    &.is-readonly,
-    [readonly] {
+    &.is-readonly {
       padding-right: $fd-select-padding-x;
       padding-left: $fd-select-padding-x;
       cursor: text;
@@ -104,8 +103,7 @@ $block: #{$fd-namespace}-select;
         padding-left: 0;
       }
 
-      &.is-readonly,
-      [readonly] {
+      &.is-readonly {
         padding-right: $fd-select-padding-compact-x;
         padding-left: $fd-select-padding-compact-x;
       }
