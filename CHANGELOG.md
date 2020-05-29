@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.10.0-rc.20"></a>
+# [0.10.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.19...v0.10.0-rc.20) (2020-05-29)
+
+
+### Bug Fixes
+
+* add Line Tile type to Generic Tiles ([#1059](https://github.com/SAP/fundamental-styles/issues/1059)) ([c38c9de](https://github.com/SAP/fundamental-styles/commit/c38c9de))
+
+
+
 <a name="0.10.0-rc.19"></a>
 # [0.10.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.18...v0.10.0-rc.19) (2020-05-29)
 
