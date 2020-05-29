@@ -22,7 +22,7 @@
 </p>
 
     {% set example %}
-<div class="fd-panel is-busy">
+<div class="fd-layout-panel is-busy">
     {{  spinner(
             properties=data.properties,
             modifier=data.modifier,
@@ -30,11 +30,11 @@
             aria=data.aria
         ) | indent(4)
     }}
-    <div class="fd-panel__header">
-        <h3 class="fd-panel__title">Lorem ipsum</h3>
+    <div class="fd-layout-panel__header">
+        <h3 class="fd-layout-panel__title">Lorem ipsum</h3>
     </div>
     <!-- Loaded content goes here -->
-    <div class="fd-panel__footer">
+    <div class="fd-layout-panel__footer">
         <p><em>Etiam pulvinar turpis sed velit porttitor vel adipiscing velit fringilla.</em></p>
     </div>
 </div>

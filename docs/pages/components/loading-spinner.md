@@ -38,15 +38,15 @@ The loading indicator is most often used within another component to indicate th
 The spinner should be included inside the container. Visibility can be toggled in relation to the aria-busy attribute. They should always be opposites, i.e, if currently loading, `section[aria-busy="true"]`, `.fd-spinner[aria-hidden="false"]`, once the content is loaded, toggle to false and true respectively.
 
 {% capture aria %}
-<div class="fd-panel" aria-busy="true">
+<div class="fd-layout-panel" aria-busy="true">
     <div class="fd-spinner" aria-hidden="false" aria-label="Loading">
         <div class="fd-spinner__body"></div>
     </div>
-    <div class="fd-panel__header">
-        <h3 class="fd-panel__title">Lorem ipsum</h3>
+    <div class="fd-layout-panel__header">
+        <h3 class="fd-layout-panel__title">Lorem ipsum</h3>
     </div>
     <!-- Loaded content goes here -->
-    <div class="fd-panel__footer">
+    <div class="fd-layout-panel__footer">
         <p><em>Etiam pulvinar turpis sed velit porttitor vel adipiscing velit fringilla.</em></p>
     </div>
 </div>
