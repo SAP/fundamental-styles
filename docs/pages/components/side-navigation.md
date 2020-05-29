@@ -417,7 +417,7 @@ The following requirements must be met:
                 </a>
             </li>
             <li class="fd-nested-list__item">
-                <div class="fd-nested-list__content is-selected has-child" tabindex="0">
+                <div class="fd-nested-list__content is-selected has-child">
                     <button class="fd-nested-list__link" aria-controls="EX500L2" aria-haspopup="true" aria-expanded="false" aria-label="Expand submenu">
                         <span aria-hidden="true" class="fd-nested-list__icon sap-icon--employee"></span>
                         <span class="fd-nested-list__title">Level 1 Item</span>
@@ -480,7 +480,7 @@ The following requirements must be met:
                 </a>
             </li>
             <li class="fd-nested-list__item">
-                <div class="fd-nested-list__content is-selected has-child" tabindex="0">
+                <div class="fd-nested-list__content is-selected has-child">
                     <button class="fd-nested-list__link" aria-controls="EX600L2" aria-haspopup="true" aria-expanded="false" aria-label="Expand submenu">
                         <span aria-hidden="true" class="fd-nested-list__icon sap-icon--employee"></span>
                         <span class="fd-nested-list__title">Level 1 Item</span>
