@@ -59,7 +59,7 @@ Expandable panels are much like fixed panels, except their content can be expand
 
 ## Fixed Panel
 Fixed panels are useful for grouping custom content. They include headers and info toolbars.
-To create fixed panel, add `--fixed` modifier.
+To create a fixed panel, add the `--fixed` modifier.
 
 {% capture fixed-panel %}
 <div class="fd-new-panel fd-new-panel--fixed">
@@ -88,7 +88,7 @@ To create fixed panel, add `--fixed` modifier.
 {% include display-component.html component=fixed-panel %}
 
 ## Compact Panel
-To use compact panel, add `--compact` modifier.
+To use a compact panel, add the `--compact` modifier.
 
 {% capture compact-panel %}
 <div class="fd-new-panel fd-new-panel--compact">
