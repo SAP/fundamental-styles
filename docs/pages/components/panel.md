@@ -41,7 +41,7 @@ Expandable panels are much like fixed panels, except their content can be expand
             </div>
         </div>
     </div>
-    <div class="fd-expand-panel__content" aria-hidden="true" id="jhqDKYdf">
+    <div role="region" aria-labelledby="jhqDKYdf" class="fd-expand-panel__content" aria-hidden="true" id="jhqDKYdf">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
@@ -74,7 +74,7 @@ To create a fixed panel, add the `--fixed` modifier.
             </div>
         </div>
     </div>
-    <div class="fd-expand-panel__content">
+    <div role="region" class="fd-expand-panel__content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
         et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
         Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
@@ -106,7 +106,7 @@ To use a compact panel, add the `--compact` modifier.
             </div>
         </div>
     </div>
-    <div class="fd-expand-panel__content" aria-hidden="true" id="Gekf63D">
+    <div role="region" aria-labelledby="Gekf63D" class="fd-expand-panel__content" aria-hidden="true" id="Gekf63D">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
         et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
         Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
@@ -138,7 +138,7 @@ When the height of the panel's content is set to a fixed size, the content area 
             </div>
         </div>
     </div>
-    <div class="fd-expand-panel__content" aria-hidden="true" id="GJL745SD" style="height: 100px;">
+    <div role="region" aria-labelledby="GJL745SD" class="fd-expand-panel__content" aria-hidden="true" id="GJL745SD" style="height: 100px;">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
