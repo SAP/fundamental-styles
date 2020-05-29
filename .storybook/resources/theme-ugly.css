@@ -147,4 +147,11 @@
     --sapInfobar_Hover_Background: brown;
     --sapInfobar_Active_Background: red;
     --sapGroup_TitleBorderColor: #945ef7;
+    --sapTile_Background: chocolate;
+    --sapTile_TextColor: green;
+    --sapButton_TextColor: #66ffff;
+    --sapHighlightColor: yellow;
+    --sapContent_ContrastTextColor: blue;
+    --sapButton_Background: powderblue;
+    --sapButton_IconColor: pink;
   }

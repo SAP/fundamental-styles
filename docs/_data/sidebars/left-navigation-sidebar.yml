@@ -124,6 +124,10 @@ entries:
       url: /components/form.html
       output: web
 
+    - title: Generic Tile
+      url: /components/generic-tile.html
+      output: web
+
     - title: Icon
       url: /components/icon.html
       output: web
@@ -226,10 +230,6 @@ entries:
 
     - title: Tabs
       url: /components/tabs.html
-      output: web
-
-    - title: Tile
-      url: /components/tile.html
       output: web
 
     - title: Time
