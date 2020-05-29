@@ -11,6 +11,9 @@
  </script>
 
  <div dir="{select.dir}">
+   <label class="fd-form-label" id="f45564A57">
+      Label examples
+  </label>
    <div class="fd-popover">
       <div
          aria-disabled="{select.disabled}"
@@ -23,7 +26,6 @@
                   aria-expanded="{select.openDropdown}"
                   aria-haspopup="true"
                   class="fd-select__control {select.readOnly ? 'is-readonly' : ''}"
-                  id="f45564A57"
                   role="button"
                   tabindex="0"
                   on:click="{!select.readOnly && onSelectClick}">
@@ -49,7 +51,8 @@
          <ul
             aria-labelledby="f45564A57"
             class="fd-list fd-list--dropdown {select.compact ? 'fd-list--compact' : ''} {select.formMessage ? 'fd-list--has-message' : ''}"
-            role="listbox">
+            role="listbox"
+            tabindex="-1">
             {#each select.optionData as option}
             <li
                aria-selected="{option.selected}"

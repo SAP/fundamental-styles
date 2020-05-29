@@ -5,6 +5,7 @@ import "../base.scss";
 import "../../dist/icon.css";
 import "../../dist/popover.css";
 import "../../dist/list.css";
+import "../../dist/form-label.css";
 import "../../dist/form-message.css";
 import "../../dist/select.css";
 
