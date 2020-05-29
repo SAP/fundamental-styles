@@ -1,7 +1,7 @@
 @import "./new-settings";
 @import "./mixins";
 
-$block: #{$fd-namespace}-expand-panel;
+$block: #{$fd-namespace}-panel;
 
 .#{$block} {
 
@@ -54,8 +54,18 @@ $block: #{$fd-namespace}-expand-panel;
   &__button {
     @include fd-icon('slim-arrow-right');
 
+    &::before {
+      font-size: 1rem;
+      line-height: normal;
+    }
+
     &.is-expanded {
       @include fd-icon('slim-arrow-down');
+
+      &::before {
+        font-size: 1rem;
+        line-height: normal;
+      }
     }
   }
 
