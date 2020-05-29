@@ -25,61 +25,46 @@
 
 
 {% block content %}
-
-<h2> Default Example </h2>
-
 <p class="fd-has-type-2">NOTE: This is a <code>layout</code> component</p>
-    <!-- output the component example and the code snippet -->
-    {% set example %}
+
+<h4> Default Example </h4>
+{% set example %}
 {{panel_example}}
-    {% endset %}
-
-    {{ format(example) }}
 
 <br/><br/>
 
-<h2> Example with H2 </h2>
-{% set example %}
-    {% call panel() -%}
-        {% call panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description", title_size: "h2" }) -%}
-        {%- endcall %}
+<h4> Example with H2 </h4>
+{% call panel() -%}
+    {% call panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description", title_size: "h2" }) -%}
     {%- endcall %}
-{% endset %}
-
-{{ format(example) }}
+{%- endcall %}
 
 <br/><br/>
 
-<h2> Example with H4 </h2>
-{% set example %}
-    {% call panel() -%}
-        {% call panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description", title_size: "h4" }) -%}
-        {%- endcall %}
-    {%- endcall %}
-{% endset %}
+<h4> Example with H4 </h4>
 
-{{ format(example) }}
+{% call panel() -%}
+    {% call panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description", title_size: "h4" }) -%}
+    {%- endcall %}
+{%- endcall %}
 
 <br/><br/>
 
-<h2> Example with H5 </h2>
-{% set example %}
-    {% call panel() -%}
-        {% call panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description", title_size: "h5" }) -%}
-        {%- endcall %}
-    {%- endcall %}
-{% endset %}
+<h4> Example with H5 </h4>
 
-{{ format(example) }}
+{% call panel() -%}
+    {% call panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description", title_size: "h5" }) -%}
+    {%- endcall %}
+{%- endcall %}
 
 <br/><br/>
 
-<h2> Example with H6 </h2>
-{% set example %}
-    {% call panel() -%}
-        {% call panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description", title_size: "h6" }) -%}
-        {%- endcall %}
+<h4> Example with H6 </h4>
+
+{% call panel() -%}
+    {% call panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description", title_size: "h6" }) -%}
     {%- endcall %}
+{%- endcall %}
 {% endset %}
 
 {{ format(example) }}
