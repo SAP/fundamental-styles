@@ -68,7 +68,7 @@ $block: #{$fd-namespace}-layout-panel;
 
   &__description {
     @include fd-reset();
-  
+
     margin-top: 0.25rem;
     color: var(--sapNeutralTextColor);
     font-size: var(--sapFontSmallSize);
