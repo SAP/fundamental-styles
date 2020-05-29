@@ -406,6 +406,66 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
 
 <br>
 
+
+## Popover Overflow Prevention
+Add the `fd-popover-body__wrapper` wrapper on the element underneath the popover__body for the body to not have overflow
+{% capture default-popoverwrap %}
+<div class="fd-popover">
+    <div class="fd-popover__control">
+        <button class="fd-button" aria-label="Image label" aria-controls="popoverF1" aria-expanded="false" aria-haspopup="true">Popover with overflow</button>
+    </div>
+      <div class="fd-popover__body" aria-hidden="true" id="popoverF1">
+      <div class="fd-popover__wrapper  docs-max-height">
+          <nav class="fd-menu" id="">
+              <ul class="fd-menu__list fd-menu__list--no-shadow">
+                  <li class="fd-menu__item">
+                      <a class="fd-menu__link" href="#">
+                          <span class="fd-menu__title">Option 1</span>
+                      </a>
+                  </li>
+                  <li class="fd-menu__item">
+                      <a class="fd-menu__link" href="#">
+                          <span class="fd-menu__title">Option 2</span>
+                      </a>
+                  </li>
+                  <li class="fd-menu__item">
+                      <a class="fd-menu__link" href="#">
+                          <span class="fd-menu__title">Option 3</span>
+                      </a>
+                  </li>
+                  <li class="fd-menu__item">
+                      <a class="fd-menu__link" href="#">
+                          <span class="fd-menu__title">Option 4</span>
+                      </a>
+                  </li>
+                                  <li class="fd-menu__item">
+                      <a class="fd-menu__link" href="#">
+                          <span class="fd-menu__title">Option 5</span>
+                      </a>
+                  </li>
+                  <li class="fd-menu__item">
+                      <a class="fd-menu__link" href="#">
+                          <span class="fd-menu__title">Option 6</span>
+                      </a>
+                  </li>
+                  <li class="fd-menu__item">
+                      <a class="fd-menu__link" href="#">
+                          <span class="fd-menu__title">Option 7</span>
+                      </a>
+                  </li>
+                  <li class="fd-menu__item">
+                      <a class="fd-menu__link" href="#">
+                          <span class="fd-menu__title">Option 8</span>
+                      </a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+    </div>
+</div>
+
+{% endcapture %}
+{% include display-component.html component=default-popoverwrap %}
 ## Implementation Options
 
 Using [popper.js](https://github.com/FezVrasta/popper.js) allows for programmatic positioning, but requires slightly different styling.  Use the `fd-popover__popper` class for wrapping the popover content instead of `fd-popover__body`. See the implementation libraries for specifc details:
