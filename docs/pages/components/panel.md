@@ -1,6 +1,6 @@
 ---
 title: Panel
-id: new-panel
+id: expand-panel
 keywords: panel
 sidebar: left-navigation-sidebar
 toc: false
@@ -26,12 +26,12 @@ Do not use the panel if:
 ## Expandable Panel
 Expandable panels are much like fixed panels, except their content can be expanded and collapsed (including the info toolbar, if available).
 {% capture expand-panel %}
-<div class="fd-new-panel">
-    <div class="fd-new-panel__header">
-        <div class="fd-new-panel__expand">
-            <button class="fd-button fd-button--transparent fd-new-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="jhqDKYdf"></button>
+<div class="fd-expand-panel">
+    <div class="fd-expand-panel__header">
+        <div class="fd-expand-panel__expand">
+            <button class="fd-button fd-button--transparent fd-expand-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="jhqDKYdf"></button>
         </div>
-        <h5 class="fd-new-panel__title">Panel Header</h5>
+        <h5 class="fd-expand-panel__title">Panel Header</h5>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -41,7 +41,7 @@ Expandable panels are much like fixed panels, except their content can be expand
             </div>
         </div>
     </div>
-    <div class="fd-new-panel__content" aria-hidden="true" id="jhqDKYdf">
+    <div class="fd-expand-panel__content" aria-hidden="true" id="jhqDKYdf">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
@@ -62,9 +62,9 @@ Fixed panels are useful for grouping custom content. They include headers and in
 To create a fixed panel, add the `--fixed` modifier.
 
 {% capture fixed-panel %}
-<div class="fd-new-panel fd-new-panel--fixed">
-    <div class="fd-new-panel__header">
-        <h5 class="fd-new-panel__title">Panel Header</h5>
+<div class="fd-expand-panel fd-expand-panel--fixed">
+    <div class="fd-expand-panel__header">
+        <h5 class="fd-expand-panel__title">Panel Header</h5>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -74,7 +74,7 @@ To create a fixed panel, add the `--fixed` modifier.
             </div>
         </div>
     </div>
-    <div class="fd-new-panel__content">
+    <div class="fd-expand-panel__content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
         et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
         Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
@@ -91,12 +91,12 @@ To create a fixed panel, add the `--fixed` modifier.
 To use a compact panel, add the `--compact` modifier.
 
 {% capture compact-panel %}
-<div class="fd-new-panel fd-new-panel--compact">
-    <div class="fd-new-panel__header">
-        <div class="fd-new-panel__expand">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-new-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="Gekf63D"></button>
+<div class="fd-expand-panel fd-expand-panel--compact">
+    <div class="fd-expand-panel__header">
+        <div class="fd-expand-panel__expand">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-expand-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="Gekf63D"></button>
         </div>
-        <h5 class="fd-new-panel__title">Panel Header</h5>
+        <h5 class="fd-expand-panel__title">Panel Header</h5>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -106,7 +106,7 @@ To use a compact panel, add the `--compact` modifier.
             </div>
         </div>
     </div>
-    <div class="fd-new-panel__content" aria-hidden="true" id="Gekf63D">
+    <div class="fd-expand-panel__content" aria-hidden="true" id="Gekf63D">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
         et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
         Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
@@ -123,12 +123,12 @@ To use a compact panel, add the `--compact` modifier.
 When the height of the panel's content is set to a fixed size, the content area can be scrolled through.
 
 {% capture fixed-height-panel %}
-<div class="fd-new-panel">
-    <div class="fd-new-panel__header">
-        <div class="fd-new-panel__expand">
-            <button class="fd-button fd-button--transparent fd-new-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="GJL745SD"></button>
+<div class="fd-expand-panel">
+    <div class="fd-expand-panel__header">
+        <div class="fd-expand-panel__expand">
+            <button class="fd-button fd-button--transparent fd-expand-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="GJL745SD"></button>
         </div>
-        <h5 class="fd-new-panel__title">Panel Header</h5>
+        <h5 class="fd-expand-panel__title">Panel Header</h5>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -138,7 +138,7 @@ When the height of the panel's content is set to a fixed size, the content area 
             </div>
         </div>
     </div>
-    <div class="fd-new-panel__content" aria-hidden="true" id="GJL745SD" style="height: 100px;">
+    <div class="fd-expand-panel__content" aria-hidden="true" id="GJL745SD" style="height: 100px;">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 

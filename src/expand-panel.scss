@@ -1,7 +1,7 @@
 @import "./new-settings";
 @import "./mixins";
 
-$block: #{$fd-namespace}-new-panel;
+$block: #{$fd-namespace}-expand-panel;
 
 .#{$block} {
 
