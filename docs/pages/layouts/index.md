@@ -54,10 +54,10 @@ Layouts in Fundamental Library Styles are for structuring the main parts of your
              </p>
         </div>
     </a>
-    <a class="docs-tile" role="button" href="panel.html">
+    <a class="docs-tile" role="button" href="layout-panel.html">
         <div class="docs-tile__content">
              <h2 class="docs-tile__header">
-                 Panel
+                 Layout Panel
              </h2>
              <p class="docs-tile__description">
                  Elements to organize components.

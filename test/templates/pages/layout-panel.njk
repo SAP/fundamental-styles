@@ -18,18 +18,18 @@
 
 {% set panel %}
 {% call layout.panel() -%}
-    {% call layout.panel_header({ title: ".fd-panel__title", description: ".fd-panel__description" }) -%}
+    {% call layout.panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description" }) -%}
         {% call layout.panel_actions() -%}
-.fd-panel__actions
+.fd-layout-panel__actions
         {%- endcall %}
     {%- endcall %}
     {% call layout.panel_body() -%}
-      <p>.fd-panel__body</p>
+      <p>.fd-layout-panel__body</p>
       <p>Very much like a <code>.fd-section</code> but intended to contain content.</p>
       <p>Use <code>.fd-col</code>s when multiple panels are needed in a column structure.</p>
     {%- endcall %}
     {% call layout.panel_footer() -%}
-.fd-panel__footer
+.fd-layout-panel__footer
     {%- endcall %}
 {%- endcall %}
 {% endset %}
@@ -37,19 +37,19 @@
 
 {% set panel_filters %}
 {% call layout.panel() -%}
-    {% call layout.panel_header({ title: ".fd-panel__title", description: ".fd-panel__description" }) -%}
+    {% call layout.panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description" }) -%}
         {% call layout.panel_actions() -%}
-.fd-panel__actions
+.fd-layout-panel__actions
         {%- endcall %}
     {%- endcall %}
     {% call layout.panel_filters(aria={ hidden: false }) -%}
-.fd-panel__filters
+.fd-layout-panel__filters
     {%- endcall %}
     {% call layout.panel_body() -%}
-      .fd-panel__body
+      .fd-layout-panel__body
     {%- endcall %}
     {% call layout.panel_footer() -%}
-.fd-panel__footer
+.fd-layout-panel__footer
     {%- endcall %}
 {%- endcall %}
 {% endset %}
@@ -57,7 +57,7 @@
 {# //////////////////////// #}
 
 {% call layout.section() -%}
-{% call layout.section_header({ title: "<code>.fd-panel</code>"}) -%}
+{% call layout.section_header({ title: "<code>.fd-layout-panel</code>"}) -%}
 {%- endcall %}
 {% call layout.container() -%}
 
@@ -92,7 +92,7 @@
 {# //////////////////////// #}
 
 {% call layout.section() -%}
-{% call layout.section_header({ title: "<code>.fd-panel</code> with filters"}) -%}
+{% call layout.section_header({ title: "<code>.fd-layout-panel</code> with filters"}) -%}
 {%- endcall %}
 {% call layout.container() -%}
 
@@ -175,7 +175,7 @@
 {{tokens}}
     {%- endcall %}
     {% call layout.panel_body() -%}
-      .fd-panel__body
+      .fd-layout-panel__body
     {%- endcall %}
     {% call layout.panel_footer() -%}
     {{  pagination(data.pagination.properties) }}
@@ -188,7 +188,7 @@
 
 
 {% call layout.section() -%}
-{% call layout.section_header({ title: "Example <code>.fd-panel</code> with content"}) -%}
+{% call layout.section_header({ title: "Example <code>.fd-layout-panel</code> with content"}) -%}
 {%- endcall %}
 {% call layout.container() -%}
 

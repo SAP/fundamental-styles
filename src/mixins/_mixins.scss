@@ -307,6 +307,12 @@
   @content;
 }
 
+@mixin fd-flex-horizontal-center {
+  display: flex;
+  justify-content: center;
+  @content;
+}
+
 @mixin fd-screen-reader-only {
   position: absolute;
   clip: rect(0 0 0 0);
