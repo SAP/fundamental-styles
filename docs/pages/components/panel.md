@@ -29,7 +29,7 @@ Expandable panels are much like fixed panels, except their content can be expand
 <div class="fd-new-panel">
     <div class="fd-new-panel__header">
         <div class="fd-new-panel__expand">
-            <button class="fd-button fd-button--transparent sap-icon--slim-arrow-down" aria-expanded="false" aria-haspopup="true" aria-controls="jhqDKYdf"></button>
+            <button class="fd-button fd-button--transparent fd-new-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="jhqDKYdf"></button>
         </div>
         <h5 class="fd-new-panel__title">Panel Header</h5>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
@@ -94,7 +94,7 @@ To use a compact panel, add the `--compact` modifier.
 <div class="fd-new-panel fd-new-panel--compact">
     <div class="fd-new-panel__header">
         <div class="fd-new-panel__expand">
-            <button class="fd-button fd-button--compact fd-button--transparent sap-icon--slim-arrow-down" aria-expanded="false" aria-haspopup="true" aria-controls="Gekf63D"></button>
+            <button class="fd-button fd-button--compact fd-button--transparent fd-new-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="Gekf63D"></button>
         </div>
         <h5 class="fd-new-panel__title">Panel Header</h5>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
@@ -126,7 +126,7 @@ When the height of the panel's content is set to a fixed size, the content area 
 <div class="fd-new-panel">
     <div class="fd-new-panel__header">
         <div class="fd-new-panel__expand">
-            <button class="fd-button fd-button--transparent sap-icon--slim-arrow-down" aria-expanded="false" aria-haspopup="true" aria-controls="GJL745SD"></button>
+            <button class="fd-button fd-button--transparent fd-new-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="GJL745SD"></button>
         </div>
         <h5 class="fd-new-panel__title">Panel Header</h5>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">

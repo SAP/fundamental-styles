@@ -6,8 +6,9 @@ $block: #{$fd-namespace}-new-panel;
 .#{$block} {
 
   $fd-panel-header-height: 2.75rem;
-  $fd-panel-compact-header-height: 2.75rem;
-  $fd-panel-header-padding: 0.5rem;
+  $fd-panel-compact-header-height: 2.5rem;
+  $fd-panel-header-right-padding: 0.5rem;
+  $fd-panel-header-fixed-left-padding: 1rem;
 
   &,
   &__content,
@@ -20,11 +21,11 @@ $block: #{$fd-namespace}-new-panel;
   &__header {
     height: $fd-panel-header-height;
     min-height: $fd-panel-header-height;
-    padding-right: $fd-panel-header-padding;
+    padding-right: $fd-panel-header-right-padding;
     background-color: var(--sapGroup_TitleBackground);
     border-bottom: solid 0.0625rem var(--sapGroup_TitleBorderColor);
-    display: flex;
-    align-items: center;
+
+    @include fd-flex-vertical-center();
   }
 
   &__title {
@@ -48,30 +49,30 @@ $block: #{$fd-namespace}-new-panel;
     min-height: $fd-panel-header-height;
 
     @include fd-flex-center();
+  }
 
-    .#{$fd-namespace}-button {
-      @include fd-icon('slim-arrow-right');
+  &__button {
+    @include fd-icon('slim-arrow-right');
 
-      &.is-expanded {
-        @include fd-icon('slim-arrow-down');
-      }
+    &.is-expanded {
+      @include fd-icon('slim-arrow-down');
     }
   }
 
   @include fd-rtl() {
     .#{$block}__header {
       padding-right: 0;
-      padding-left: $fd-panel-header-padding;
+      padding-left: $fd-panel-header-right-padding;
     }
   }
 
   &--fixed {
     .#{$block}__header {
-      padding-left: 1rem;
+      padding-left: $fd-panel-header-fixed-left-padding;
 
       @include fd-rtl() {
-        padding-left: $fd-panel-header-padding;
-        padding-right: 1rem;
+        padding-left: $fd-panel-header-right-padding;
+        padding-right: $fd-panel-header-fixed-left-padding;
       }
     }
   }

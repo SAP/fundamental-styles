@@ -334,8 +334,8 @@
   scrollbar-width: none; // hide scrollbar on firefox
 }
 
-@mixin fd-typography($fd-size) {
+@mixin fd-typography($fd-size, $color: var(--sapGroup_TitleTextColor)) {
   font-family: var(--sapFontHeaderFamily);
-  color: var(--sapGroup_TitleTextColor);
+  color: $color;
   font-size: $fd-size;
 }
