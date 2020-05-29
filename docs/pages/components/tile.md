@@ -951,8 +951,8 @@ In action mode view, the close button is displayed on the top right-hand corner 
 <br>
 <strong>Wrapping and Overflow Behaviour</strong>
 <ul class="docs-ul">
-    <li><strong>Floating</strong> behaviour - when next link doesn't fit right to previous link, it gets dropped in the next row underneath. If the content of the Tile can't fit in one line, the Tile wraps into two rows. *Note: this behaviour requires JavaScript and is not provided in Fundamental-Styles. </li>
-    <li><strong>List</strong> behaviour - the Tile grows vertically and the text inside wraps into two rows, splitting title in the first row and subtitle in the second row.</li>
+    <li><strong>Floating</strong> behaviour - If the content of the Tile can't fit in one line, the Tile wraps into two rows. *Note: this behaviour requires JavaScript and is not provided in Fundamental-Styles. </li>
+    <li><strong>List</strong> behaviour - the Tile grows vertically and the text inside wraps into two rows, splitting the title in the first row and the subtitle in the second row.</li>
 </ul>
 
 <br>
@@ -966,7 +966,7 @@ In action mode view, the close button is displayed on the top right-hand corner 
 
 <br>
 <strong>Action Mode</strong> <br><br>
-The controls are wrapped in a container <code>fd-tile__action-container</code> which is right aligned within the tile. There's a 0.25rem spacing between the header and the actions container. On edit mode List View the overflow of the list is done with gradient mask.
+The controls are wrapped in a container <code>fd-tile__action-container</code> which is right aligned within the tile. The default spacing between the header and actions container for List View in Action mode is 0.25rem. Gradient masking is also supported in edit mode. 
 
 {% capture tile-line %}
 <h4>Line Tile - Floating Behaviour, Cosy Mode</h4>
