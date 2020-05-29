@@ -3,15 +3,15 @@ import "../base.scss";
 
 import "../../dist/button.css";
 import "../../dist/icon.css";
-import "../../dist/new-panel.css";
+import "../../dist/expand-panel.css";
 
-import Panel from "./panel.html";
+import Panel from "./expand-panel.html";
 
 export default {
-  title: "Panel",
+  title: "Expand Panel",
   component: Panel,
 };
 
-export const Text = () => ({
+export const AllCases = () => ({
   Component: Panel,
 });
