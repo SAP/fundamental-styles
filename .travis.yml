@@ -14,6 +14,7 @@ jobs:
       - docker pull backstopjs/backstopjs:3.9.2
       - npm run test:ci-config
       - npm run test
+      - npm run storybook:visual-docker-windows
   -
     script: npm run lint
   -
