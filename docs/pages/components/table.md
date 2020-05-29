@@ -56,15 +56,15 @@ A table is a set of tabular data. Line items can support data, images and action
 
 <br/>
 
-## Table with no borders
+## Table Without Borders
 <ul>
 <li>`--no-vertical-borders` modifier can be applied to render a table without vertical borders.</li>
 <li>`--no-horizontal-borders` modifier can be applied to render a table without horizontal borders.</li>
 </ul>
-Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`
+Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
 
 {% capture table-no-borders-icon %}
-<h3>Table without Borders</h3>
+<h3>Table Without Borders</h3>
 <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -96,7 +96,7 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`
     </tbody>
 </table>
 
-<h3>Table without Borders on body</h3>
+<h3>Table Without Borders On Body</h3>
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -131,7 +131,7 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`
 {% include display-component.html component=table-no-borders-icon %}
 <br />
 
-## Table with Footer
+## Table With Footer
 
 {% capture table-icon %}
 <h3>Cozy Mode</h3>
@@ -306,10 +306,10 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`
 <br />
 
 
-## Table with checkbox
+## Table With Checkbox
 The checkbox input can be used at the beginning of each row to allow for bulk actions.
 It is recommended to add the parameter `aria-selected="true"` to the row that is selected.
-Also for cells, where checkbox is included should contain `fd-table__cell--checkbox` class.
+Also for cells that include a checkbox should contain the `fd-table__cell--checkbox` class.
 
 {% capture table-checkbox %}
 <h3>Cozy Mode</h3>
@@ -462,7 +462,7 @@ Also for cells, where checkbox is included should contain `fd-table__cell--check
 
 <br />
 
-## Table with Pagination
+## Table With Pagination
 
 
 {% capture table-pagination %}
@@ -630,7 +630,7 @@ Also for cells, where checkbox is included should contain `fd-table__cell--check
             </tr>
             <tr class="fd-table__row fd-table__row--main fd-table__row--activable">
                 <td class="fd-table__cell">
-                    <p class="fd-table__text fd-table__text--title">Very long name for orange, which noone expected, it forces to wrap text into anoher line.</p>
+                    <p class="fd-table__text fd-table__text--title">Very long name for orange, which no one expected, forces text wrapping into another line.</p>
                     <p class="fd-table__text">Spain</p>
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content">
@@ -699,7 +699,7 @@ Also for cells, where checkbox is included should contain `fd-table__cell--check
                     <label class="fd-checkbox__label" for="Yeas6w"></label>
                 </td>
                 <td class="fd-table__cell">
-                    <p class="fd-table__text fd-table__text--title">Very long name for orange, which noone expected, it forces to wrap text into anoher line.</p>
+                    <p class="fd-table__text fd-table__text--title">Very long name for orange, which no one expected, forces text wrapping into another line.</p>
                     <p class="fd-table__text">Spain</p>
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content">
@@ -731,11 +731,9 @@ Also for cells, where checkbox is included should contain `fd-table__cell--check
 {% include display-component.html component=table-responsive %}
 
 
-## Table with semantic row highlighting 
-Table rows support semantic cells highlighting.
-To achieve it there should be added cell with `fd-table__cell--status-indicator` class to every row.
-If there is a need to use semantic mode on any of cells, one of that modifiers should be used
-`--valid`, `--information`, `--error`, `--warning`
+## Table With Semantic Row Highlighting 
+To show that an item needs attention, you can show a highlight indicator next to the item. This can be achieved by passing the `fd-table__cell--status-indicator` class to each row.
+Other indicators such as semantic states and modes can be added using the `--valid`, `--information`, `--error`, `--warning`modifiers.
 
 {% capture table-highlight %}
 <table class="fd-table">
@@ -861,7 +859,7 @@ If there is a need to use semantic mode on any of cells, one of that modifiers s
 
 
 {% capture table-merge-cells %}
-<h3>Merge Cells Table</h3>
+<h3>Merge Cells in a Table</h3>
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -909,9 +907,9 @@ If there is a need to use semantic mode on any of cells, one of that modifiers s
 
 <br>
 
-## Table with Contextual Menu
-When more than three actions exist per row and/or space doesn't allow for actions,
-a contextual menu can be substituted in order to display all actions in one menu.
+## Table With Contextual Menu
+When more than three actions exist per row and/or there isn't enough space for the required actions,
+a contextual menu can be substituted to display all actions in one menu.
 
 {% capture table-actions %}
 <table class="fd-table" >
@@ -1031,7 +1029,7 @@ a contextual menu can be substituted in order to display all actions in one menu
 <br />
 
 
-## Table with Menu in Header
+## Table With Menu In Header
 
 {% capture table-actions-header %}
 <table class="fd-table" >
