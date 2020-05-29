@@ -29,11 +29,7 @@
                   on:click="{!select.readOnly && onSelectClick}">
                   {select.placeholder ? select.placeholder : 'Select'}
                   {#if !select.readOnly}
-                  <button
-                     aria-hidden="true"
-                     class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"
-                     disabled="{select.disabled}"
-                     tabindex="-1"></button>
+                  <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
                   {/if}
                </div>
             </div>
@@ -57,7 +53,7 @@
             {#each select.optionData as option}
             <li
                aria-selected="{option.selected}"
-               class="fd-list__item"
+               class="fd-list__item fd-select__item"
                role="option"
                tabindex="-1">
                {#if option.icon}

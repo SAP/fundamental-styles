@@ -2,11 +2,11 @@ import { action } from "@storybook/addon-actions";
 
 import "../base.scss";
 
-import "../../dist/select.css";
 import "../../dist/icon.css";
 import "../../dist/popover.css";
 import "../../dist/list.css";
 import "../../dist/form-message.css";
+import "../../dist/select.css";
 
 import Select from "./select.html";
 

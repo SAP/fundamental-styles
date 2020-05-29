@@ -54,7 +54,8 @@ $block: #{$fd-namespace}-select;
       }
     }
 
-    &.is-expanded {
+    &.is-expanded,
+    &[aria-expanded="true"] {
       .#{$block}__button {
         background-color: $fd-select-button-active-background;
         color: $fd-select-button-active-text-color;
@@ -76,7 +77,8 @@ $block: #{$fd-namespace}-select;
       }
     }
 
-    &.is-readonly {
+    &.is-readonly,
+    [readonly] {
       padding-right: $fd-select-padding-x;
       padding-left: $fd-select-padding-x;
       cursor: text;
@@ -85,6 +87,10 @@ $block: #{$fd-namespace}-select;
 
   &__text {
     font-size: var(--sapFontSize);
+  }
+
+  &__item[aria-selected=true] {
+    border-bottom: 0 !important;
   }
 
   &--compact {
@@ -98,7 +104,8 @@ $block: #{$fd-namespace}-select;
         padding-left: 0;
       }
 
-      &.is-readonly {
+      &.is-readonly,
+      [readonly] {
         padding-right: $fd-select-padding-compact-x;
         padding-left: $fd-select-padding-compact-x;
       }
