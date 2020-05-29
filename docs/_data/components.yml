@@ -24,6 +24,9 @@ items:
     - title: Forms
       meta: form
 
+    - title: Generic Tile
+      meta: generic-tile
+
     - title: Icon
       meta: icon
 
@@ -95,9 +98,6 @@ items:
 
     - title: Tabs
       meta: tabs
-
-    - title: Tile
-      meta: tile
 
     - title: Toolbar
       meta: toolbar
