@@ -1,12 +1,6 @@
-allowed-tags:
-  - getting_started
-  - content_types
-  - navigation
-  - formatting
-  - publishing
-  - single_sourcing
-  - special_layouts
-  - collaboration
-  - news
-  - troubleshooting
-  - mobile
+component-tags:
+  a11y: {name: 'a11y', title: 'Accessibility Compliant Component', color: 1}
+  f3: {name: 'fiori 3', title: 'Fiori 3 Component' , color: 2}
+  theme: {name: 'themeable', title: 'Fiori 3 Themeable Component', color: 3}
+  design: {name: 'design in progress', title: 'Design is under review', color: 4}
+  development: {name: 'in development', title: 'The component is under development', color: 5}
