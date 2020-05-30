@@ -28,14 +28,14 @@ A table is a set of tabular data. Line items can support data, images and action
         </tr>
     </thead>
     <tbody class="fd-table__body">
-        <tr class="fd-table__row">
+        <tr class="fd-table__row fd-table__row--hoverable">
             <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Middle Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
-        <tr class="fd-table__row">
+        <tr class="fd-table__row fd-table__row--hoverable">
             <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Middle Name</td>
@@ -262,40 +262,47 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
 
 <br />
 
-## Activable Rows and Columns
+## Interactive Rows and Columns
 
 
 {% capture table-icon %}
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable" scope="col">Hovering And</th>
+            <th class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable" scope="col">Clicking</th>
+            <th class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable" scope="col">On Header's Cell</th>
+            <th class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable" scope="col">Will Trigger</th>
+            <th class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable" scope="col">Color Change</th>
         </tr>
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row fd-table__row--activable">
-            <td class="fd-table__cell">Clicking on any cell</td>
-            <td class="fd-table__cell">Of this row</td>
+            <td class="fd-table__cell">Clicking on any Cell</td>
+            <td class="fd-table__cell">On This Row</td>
             <td class="fd-table__cell">Will cause</td>
-            <td class="fd-table__cell">Higlight of whole row</td>
+            <td class="fd-table__cell">Highlight of Whole Row</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell fd-table__cell--activable">Clicking on cell</td>
+            <td class="fd-table__cell fd-table__cell--activable">Clicking On Cell</td>
             <td class="fd-table__cell fd-table__cell--activable">Will cause</td>
             <td class="fd-table__cell fd-table__cell--activable">Highlight of cell</td>
             <td class="fd-table__cell fd-table__cell--activable">Last Name</td>
             <td class="fd-table__cell fd-table__cell--activable">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell">This row</td>
+            <td class="fd-table__cell fd-table__cell--hoverable">Hovering On Any Cell</td>
+            <td class="fd-table__cell fd-table__cell--hoverable">Will Change</td>
+            <td class="fd-table__cell fd-table__cell--hoverable">Background</td>
+            <td class="fd-table__cell fd-table__cell--hoverable">Of Certain</td>
+            <td class="fd-table__cell fd-table__cell--hoverable">Cell</td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--hoverable">
+            <td class="fd-table__cell">Hovering On Any Cell</td>
             <td class="fd-table__cell">And cells</td>
-            <td class="fd-table__cell">Are not activable</td>
-            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">Will Change</td>
+            <td class="fd-table__cell">Background of Whole Row</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
     </tbody>
@@ -329,7 +336,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
     <tbody class="fd-table__body">
         <tr class="fd-table__row" aria-selected="true">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez615">
+                <input type="checkbox" checked class="fd-checkbox" id="Ai4ez615">
                 <label class="fd-checkbox__label" for="Ai4ez615"></label>
             </td>
             <td class="fd-table__cell"><a >user.name@email.com</a></td>
@@ -378,7 +385,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
     <tbody class="fd-table__body">
         <tr class="fd-table__row" aria-selected="true">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4HFHG1">
+                <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact" id="Ai4HFHG1">
                 <label class="fd-checkbox__label" for="Ai4HFHG1"></label>
             </td>
             <td class="fd-table__cell"><a >user.name@email.com</a></td>
@@ -427,7 +434,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
     <tbody class="fd-table__body">
         <tr class="fd-table__row" aria-selected="true">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4JHf87">
+                <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact" id="Ai4JHf87">
                 <label class="fd-checkbox__label" for="Ai4JHf87"></label>
             </td>
             <td class="fd-table__cell"><a >user.name@email.com</a></td>
