@@ -3,9 +3,9 @@ import "../base.scss";
 
 import "../../dist/button.css";
 import "../../dist/icon.css";
-import "../../dist/expand-panel.css";
+import "../../dist/panel.css";
 
-import Panel from "./expand-panel.html";
+import Panel from "./panel.html";
 
 export default {
   title: "Expand Panel",

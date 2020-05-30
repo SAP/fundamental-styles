@@ -29,7 +29,7 @@ Expandable panels are much like fixed panels, except their content can be expand
 <div class="fd-panel">
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
-            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="fghqwe321" ></button>aria-labelledby="asdASD123"
+            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="fghqwe321" ></button>
         </div>
         <h5 class="fd-panel__title" id="asdASD123">Panel Header</h5>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
@@ -94,7 +94,7 @@ To use a compact panel, add the `--compact` modifier.
 <div class="fd-panel fd-panel--compact">
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="Gekf63D" aria-labelledby="asdASD234"></button>
+            <button class="fd-button fd-button--compact fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="Gekf63a" aria-labelledby="asdASD234"></button>
         </div>
         <h5 class="fd-panel__title" id="asdASD234">Panel Header</h5>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
@@ -106,7 +106,7 @@ To use a compact panel, add the `--compact` modifier.
             </div>
         </div>
     </div>
-    <div role="region" aria-labelledby="Gekf63D" class="fd-panel__content" aria-hidden="true">
+    <div role="region" aria-labelledby="Gekf63D" class="fd-panel__content" aria-hidden="true" id="Gekf63a">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
         et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
         Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
@@ -126,7 +126,7 @@ When the height of the panel's content is set to a fixed size, the content area 
 <div class="fd-panel">
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
-            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="GJL745SD" aria-labelledby="asdASD345"></button>
+            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="GJL745SV" aria-labelledby="asdASD345"></button>
         </div>
         <h5 class="fd-panel__title" id="asdASD345">Panel Header</h5>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
@@ -138,7 +138,7 @@ When the height of the panel's content is set to a fixed size, the content area 
             </div>
         </div>
     </div>
-    <div role="region" aria-labelledby="GJL745SD" class="fd-panel__content" aria-hidden="true" tyle="height: 100px;">
+    <div role="region" id="GJL745SV" aria-labelledby="GJL745SD" class="fd-panel__content" aria-hidden="true" tyle="height: 100px;">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
