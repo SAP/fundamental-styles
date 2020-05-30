@@ -6,6 +6,7 @@ sidebar: left-navigation-sidebar
 toc: false
 permalink: components/form.html
 folder: components
+tags: [f3, a11y, theme]
 ---
 
 Form groups are used to assemble form elements with labels, messages, and help containers.

@@ -7,6 +7,7 @@ toc: false
 permalink: components/breadcrumb.html
 folder: components
 summary:
+tags: [f3, a11y, theme]
 ---
 
 The breadcrumb allows users to see the current page and navigation path to that page.

@@ -7,6 +7,7 @@ toc: false
 permalink: components/inline-help.html
 folder: components
 summary:
+tags: [non-f3, a11y]
 ---
 > **DEPRECATED**. The component is deprecated.
 {: .docs-intro}

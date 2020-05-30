@@ -7,6 +7,7 @@ toc: false
 permalink: components/generic-tile.html
 folder: components
 summary:
+tags: [f3, a11y, theme, development]
 ---
 
 

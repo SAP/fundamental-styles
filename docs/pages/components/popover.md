@@ -7,6 +7,7 @@ toc: false
 permalink: components/popover.html
 folder: components
 summary:
+tags: [f3, a11y, theme]
 ---
 
 The popover is a wrapping component that accepts a "control" as well as a "body".

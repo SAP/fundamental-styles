@@ -7,6 +7,7 @@ sidebar: left-navigation-sidebar
 permalink: /components/shellbar.html
 folder: components
 summary:
+tags: [f3, a11y, theme]
 ---
 
 The shellbar offers consistent, responsive navigation across all products and applications.

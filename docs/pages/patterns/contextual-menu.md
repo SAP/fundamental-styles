@@ -7,6 +7,7 @@ toc: false
 permalink: patterns/contextual-menu.html
 folder: patterns
 summary:
+tags: [f3, a11y, theme]
 ---
 
 
