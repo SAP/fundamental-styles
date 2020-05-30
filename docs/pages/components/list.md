@@ -288,7 +288,7 @@ If only a subset of the list items are navigable you should indicate those by di
 
 {% include display-component.html component=list-without-borders %}
 
-<!-- ## Selection
+## Selection
 {% capture list-selection %}
 <ul class="fd-list fd-list--selection" role="listbox">
   <li role="listitem" tabindex="0" class="fd-list__item">
@@ -1239,4 +1239,4 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
   </li>
 </ul>
 {% endcapture %}
-{% include display-component.html component=list-byline-selection-navigation-indication %} -->
+{% include display-component.html component=list-byline-selection-navigation-indication %}
