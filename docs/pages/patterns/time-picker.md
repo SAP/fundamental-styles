@@ -7,6 +7,7 @@ toc: false
 permalink: patterns/time-picker.html
 folder: patterns
 summary:
+tags: [f3, a11y, theme]
 ---
 
 The Time Picker is an opinionated component composed of an `input-group`, `popover`, and `time` components to create a time selection interaction.

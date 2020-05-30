@@ -6,6 +6,7 @@ sidebar: left-navigation-sidebar
 toc: false
 permalink: components/table.html
 folder: components
+tags: [development]
 ---
 
 > **UNDER REVIEW**. This component is under review. A new version will be implemented soon.

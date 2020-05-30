@@ -7,6 +7,7 @@ toc: false
 permalink: patterns/multi-input.html
 folder: patterns
 summary:
+tags: [f3, a11y, theme]
 ---
 
 The multi-input component is an opinionated composition of the `input group`, `popover`, `checkbox`, `list` and `token` components.

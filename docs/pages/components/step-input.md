@@ -6,6 +6,7 @@ sidebar: left-navigation-sidebar
 toc: false
 permalink: components/step-input.html
 folder: components
+tags: [f3, a11y, theme]
 ---
 
 The step input control allows the user to change the input values in predefined increments (steps).

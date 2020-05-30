@@ -4,3 +4,4 @@ component-tags:
   theme: {name: 'themeable', title: 'Fiori 3 Themeable Component', color: 3}
   design: {name: 'design in progress', title: 'Design is under review', color: 4}
   development: {name: 'in development', title: 'The component is under development', color: 5}
+  non-f3: {name: 'non-fiori 3', title: 'Non Fiori 3 Component' , color: 6}
