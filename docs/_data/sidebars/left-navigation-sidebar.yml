@@ -196,6 +196,10 @@ entries:
       url: /components/pagination.html
       output: web
 
+    - title: Panel
+      url: /components/panel.html
+      output: web
+
     - title: Popover
       url: /components/popover.html
       output: web
