@@ -7,6 +7,7 @@ toc: false
 permalink: components/message-toast.html
 folder: components
 summary:
+tags: [f3, a11y, theme]
 ---
 
 Message Toast is a small, non-disruptive popup for success messages that disappears automatically after a few seconds.

@@ -7,6 +7,7 @@ toc: false
 permalink: components/menu.html
 folder: components
 summary:
+tags: [f3, a11y, theme, development]
 ---
 
 The menu component is the listing structure with optional headers to create menus.

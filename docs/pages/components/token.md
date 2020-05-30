@@ -7,6 +7,7 @@ toc: false
 permalink: components/token.html
 folder: components
 summary:
+tags: [f3, a11y, theme]
 ---
 
 Token are used to represent contextualizing information. They can be useful to show applied filters, selected values for form field or object metadata.

@@ -7,6 +7,7 @@ toc: false
 permalink: components/notification.html
 folder: components
 summary:
+tags: [f3, a11y, theme, development]
 ---
 > **UNDER REVIEW**. This component is under review. A new version will be implemented soon.
 {: .docs-intro}

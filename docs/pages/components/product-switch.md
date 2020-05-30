@@ -6,6 +6,7 @@ sidebar: left-navigation-sidebar
 toc: false
 permalink: components/product-switch.html
 folder: components
+tags: [f3, a11y, theme]
 ---
 
 {: .docs-intro}

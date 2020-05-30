@@ -7,6 +7,7 @@ toc: false
 permalink: patterns/date-picker.html
 folder: patterns
 summary:
+tags: [f3, a11y, theme]
 ---
 
 The date-picker component is an opinionated composition of the `input-group`, `popover` and `calendar` components to accomplish the UI pattern for picking a date.

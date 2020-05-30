@@ -6,6 +6,7 @@ sidebar: left-navigation-sidebar
 toc: false
 permalink: components/panel.html
 folder: components
+tags: [f3, a11y, theme, development]
 ---
 The panel is a container for grouping and displaying information. It can be collapsed to save space on the screen.
 {: .docs-intro}
