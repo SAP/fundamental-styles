@@ -37,6 +37,12 @@ layout: default
 
     {% endif %}
 
+    {% if page.tags %}
+        {% for tag in page.tags %}
+            <span title="{{site.data.tags.component-tags[tag].title}}" class="fd-info-label fd-info-label--accent-color-{{site.data.tags.component-tags[tag].color}}">{{site.data.tags.component-tags[tag].name}}</span>
+        {% endfor %}
+    {% endif%}
+
     {% unless page.toc == false %}
     {% include toc.html %}
     {% endunless %}
@@ -52,19 +58,4 @@ layout: default
     {% endif %}
 
     {{content}}
-
-    <div class="tags">
-        {% if page.tags != null %}
-        <b>Tags: </b>
-        {% assign projectTags = site.data.tags.allowed-tags %}
-        {% for tag in page.tags %}
-        {% if projectTags contains tag %}
-        <a href="{{ "tag_" | append: tag | append: ".html" }}"
-           class="btn bfd-default navbar-btn cursorNorm"
-           role="button">{{page.tagName}}{{tag}}</a>
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-    </div>
-
 </div>
