@@ -465,9 +465,8 @@ If only a subset of the list items are navigable you should indicate those by di
 {% endcapture %}
 
 {% include display-component.html component=list-selection %}
--->
 
-<!-- ## Standard List with Byline
+## Standard List with Byline
 Add the `fd-list--byline` modifier class for a Standard List with Byline (description).
 For a two-column byline you need to add the `fd-list__byline--2-col` modifier class to the element. The first text item (`fd-list__byline-left`) is a standard text (description) and takes 60% of the available space. The second text item (`fd-list__byline-right`) could be a standard text or semantic (status) and takes the remaining 40% of the available space. For semantic (status) use a modifier class (`fd-list__byline-right--* `) to represent `neutral`, `positive`, `critical`, `negative` and `informative` status.
 
