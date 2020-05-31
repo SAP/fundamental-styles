@@ -7,6 +7,7 @@ toc: false
 permalink: components/toolbar.html
 folder: components
 summary:
+tags: [f3, a11y, theme, design]
 ---
 
 The toolbar enables the user to change the UI or trigger an action. For example, the toolbar allows the user to change views, manipulate data or objects, navigate to another page, perform generic actions, and so on.  It is most commonly used to display buttons, labels, selects and various other input controls.

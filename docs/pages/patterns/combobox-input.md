@@ -7,6 +7,7 @@ toc: false
 permalink: patterns/combobox-input.html
 folder: patterns
 summary:
+tags: [f3, a11y, theme]
 ---
 
 The Combobox Input component is an opinionated composition of the input group, popover and list components. 

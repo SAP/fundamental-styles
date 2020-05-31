@@ -7,6 +7,7 @@ toc: false
 permalink: components/message-strip.html
 folder: components
 summary:
+tags: [f3, a11y, theme]
 ---
 
 Message Strip provide inline messages within the application that are color-coded to emphasize the level of urgency.

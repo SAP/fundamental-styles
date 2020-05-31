@@ -7,6 +7,7 @@ toc: false
 permalink: components/image.html
 folder: components
 summary:
+tags: [development]
 ---
 > **DEPRECATED**. Use the [Avatar]({{site.baseurl}}/components/avatar.html) component.
 {: .docs-deprecated}

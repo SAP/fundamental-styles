@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.10.0-rc.25"></a>
+# [0.10.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.24...v0.10.0-rc.25) (2020-05-31)
+
+
+
+<a name="0.10.0-rc.24"></a>
+# [0.10.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.23...v0.10.0-rc.24) (2020-05-30)
+
+
+
+<a name="0.10.0-rc.23"></a>
+# [0.10.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.22...v0.10.0-rc.23) (2020-05-30)
+
+
+
+<a name="0.10.0-rc.22"></a>
+# [0.10.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.21...v0.10.0-rc.22) (2020-05-30)
+
+
+### Bug Fixes
+
+* introduce panel component ([#1024](https://github.com/SAP/fundamental-styles/issues/1024)) ([a2dcfc7](https://github.com/SAP/fundamental-styles/commit/a2dcfc7))
+
+
+
+<a name="0.10.0-rc.21"></a>
+# [0.10.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.20...v0.10.0-rc.21) (2020-05-29)
+
+
+### Features
+
+* rename Panel to Layout Panel, migrate to theme parameters ([#1073](https://github.com/SAP/fundamental-styles/issues/1073)) ([d10315c](https://github.com/SAP/fundamental-styles/commit/d10315c))
+
+
+
 <a name="0.10.0-rc.20"></a>
 # [0.10.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.19...v0.10.0-rc.20) (2020-05-29)
 

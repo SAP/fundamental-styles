@@ -64,21 +64,21 @@ panel:
     aria={}
 -->
 {%- macro panel(modifier=[], aria={}, classes=[]) %}
-<div class="fd-panel{{ classes | classes }}{{ modifier | modifier("panel") }}"{{aria | aria}}>
+<div class="fd-layout-panel{{ classes | classes }}{{ modifier | modifier("panel") }}"{{aria | aria}}>
     {{- caller() | indent -}}
 </div>
 {%- endmacro %}
 
 {%- macro panel_header(properties={}, modifier=[], aria={}, classes=[]) %}
-<div class="fd-panel__header{{ classes | classes }}{{ modifier | modifier("panel__header") }}">
-    <div class="fd-panel_head">
+<div class="fd-layout-panel__header{{ classes | classes }}{{ modifier | modifier("panel__header") }}">
+    <div class="fd-layout-panel_head">
         {%- if properties.title %}
-        <h3 class="fd-panel__title">
+        <h3 class="fd-layout-panel__title">
             {{ properties.title }}
         </h3>
         {%- endif %}
         {%- if properties.description %}
-        <p class="fd-panel__description">
+        <p class="fd-layout-panel__description">
             {{ properties.description }}
         </p>
         {%- endif %}
@@ -89,25 +89,25 @@ panel:
 {%- endmacro %}
 
 {%- macro panel_filters(properties={}, modifier=[], aria={}, classes=[]) %}
-<div class="fd-panel__filters{{ classes | classes }}{{ modifier | modifier("panel__filters") }}"{{ aria | aria }}  id="{{ properties.id }}">
+<div class="fd-layout-panel__filters{{ classes | classes }}{{ modifier | modifier("panel__filters") }}"{{ aria | aria }}  id="{{ properties.id }}">
     {{- caller() | indent -}}
 </div>
 {%- endmacro %}
 
 {%- macro panel_body(properties={}, modifier=[], aria={}, classes=[]) %}
-<div class="fd-panel__body{{ classes | classes }}{{ modifier | modifier("panel__body") }}">
+<div class="fd-layout-panel__body{{ classes | classes }}{{ modifier | modifier("panel__body") }}">
     {{ caller() | indent -}}
 </div>
 {%- endmacro %}
 
 {%- macro panel_footer(properties={}, modifier=[], aria={}, classes=[]) %}
-<div class="fd-panel__footer">
+<div class="fd-layout-panel__footer">
     {{ caller() | indent -}}
 </div>
 {%- endmacro %}
 
 {%- macro panel_actions(properties={}, modifier=[], aria={}, classes=[]) %}
-<div class="fd-panel__actions">
+<div class="fd-layout-panel__actions">
     {{ caller() }}
 </div>
 {%- endmacro %}
