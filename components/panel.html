@@ -6,10 +6,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Fundamental Library Styles is a themable Fiori 3 component library ">
-<meta name="keywords" content=" shell application layouts overlay">
+<meta name="keywords" content="f3a11ythemedevelopment,  panel">
 <title>
 	
-	Application Shell - Fundamental Styles
+	Panel - Fundamental Styles
 	
 
 </title>
@@ -147,7 +147,7 @@
         searchInput: document.getElementById('docs-search'),
         resultsContainer: document.getElementById('results-container'),
         json: '/fundamental-styles/js/search.json',
-        searchResultTemplate: '<li class="fd-menu__item"><a href="/fundamental-styles{url}" title="Application Shell">{folder} > {title}</a></li>',
+        searchResultTemplate: '<li class="fd-menu__item"><a href="/fundamental-styles{url}" title="Panel">{folder} > {title}</a></li>',
         noResultsText: '<li class="fd-menu__item">No results found</li>',
         limit: 10,
         fuzzy: true,
@@ -180,7 +180,7 @@
     
 
     
-    <li class="side-nav__headers active">
+    <li class="side-nav__headers">
         
         <a class="side-nav__headers-link"
            href="/fundamental-styles/layouts/index.html">layouts</a>
@@ -188,7 +188,7 @@
             
             
             
-            <li class="side-nav__links active">
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/layouts/shell-layout.html"
                    class="side-nav__links-link">Application Shell</a>
             </li>
@@ -322,7 +322,7 @@
     
 
     
-    <li class="side-nav__headers">
+    <li class="side-nav__headers active">
         
         <a class="side-nav__headers-link"
            href="/fundamental-styles/components/index.html">components</a>
@@ -630,7 +630,7 @@
             
             
             
-            <li class="side-nav__links">
+            <li class="side-nav__links active">
                 <a href="/fundamental-styles/components/panel.html"
                    class="side-nav__links-link">Panel</a>
             </li>
@@ -842,88 +842,71 @@
 
 <div class="docs-content">
 
-    <h1 class="docs-header-h1">Application Shell</h1>
+    <h1 class="docs-header-h1">Panel</h1>
 
     
 
     
+        
+            <span title="Fiori 3 Component" class="fd-info-label fd-info-label--accent-color-2">fiori 3</span>
+        
+            <span title="Accessibility Compliant Component" class="fd-info-label fd-info-label--accent-color-1">a11y</span>
+        
+            <span title="Fiori 3 Themeable Component" class="fd-info-label fd-info-label--accent-color-3">themeable</span>
+        
+            <span title="The component is under development, breaking changes may occur" class="fd-info-label fd-info-label--accent-color-5">in development</span>
+        
+    
 
     
 
 
     
 
-    <p>Shell layout containers are used to construct the master template and application containers, providing structure to your application. The structure is divided into two layout components — <code class="highlighter-rouge">shell</code> and <code class="highlighter-rouge">app</code>.</p>
+    <p class="docs-intro">The panel is a container for grouping and displaying information. It can be collapsed to save space on the screen.</p>
 
+<p>Use the panel if:</p>
+<ul> 
+    <li>You need to group or display information.</li>
+    <li>You want to give users the option of hiding this information.</li>
+    <li>You want to show additional information on demand (for example, a panel could show optional input fields for an advanced search).</li>
+</ul>
+<p>Do not use the panel if:</p>
 <ul>
-  <li>The <code class="highlighter-rouge">shell</code> layer is only for high-level containers: global header, app content, global footer and full-page overlay.</li>
-  <li>The <code class="highlighter-rouge">app</code> layer is for application-level containers: sidebar and page content.</li>
+    <li>You are designing an object page. Never use panels in the object page content area.</li>
 </ul>
 
-<p>These are dumb containers only concerned with placement with no effect on their contents. Simple responsive behaviors are built-in.
-<br /><br /></p>
+<h2 id="expandable-panel">Expandable Panel</h2>
+<p>Expandable panels are much like fixed panels, except their content can be expanded and collapsed (including the info toolbar, if available).</p>
 
-<h2 id="container-hierarchy">Container hierarchy</h2>
-
-<ul>
-  <li><code class="highlighter-rouge">.fd-shell</code>: The outermost full-screen root wrapper
-    <ul>
-      <li><code class="highlighter-rouge">.fd-shell__header</code>: Global header for <a href="/components/shellbar.html">shellbar component</a>
-        <ul>
-          <li><code class="highlighter-rouge">.fd-shell__header--fixed</code>: Modifier to make the header persistent (sticky)</li>
-        </ul>
-      </li>
-      <li><code class="highlighter-rouge">.fd-shell__app</code>: The wrapper for the app content
-        <ul>
-          <li><code class="highlighter-rouge">.fd-app</code>: The root application content container
-            <ul>
-              <li><code class="highlighter-rouge">.fd-app__navigation</code>: Optional navigation container, use <code class="highlighter-rouge">--horizontal</code> or <code class="highlighter-rouge">--vertical</code> orientations</li>
-              <li><code class="highlighter-rouge">.fd-app__main</code>: Main app content</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><code class="highlighter-rouge">.fd_shell__footer</code>: Optional global footer
-        <ul>
-          <li><code class="highlighter-rouge">.fd-shell__footer--fixed</code>: Modifier to make the footer persistent (sticky)</li>
-        </ul>
-      </li>
-      <li><code class="highlighter-rouge">.fd-shell__overlay</code>: Appended container for overlaying content
-        <ul>
-          <li><code class="highlighter-rouge">.fd-overlay</code>: Common standalone component used to dim background</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h2 class="docs-header-h2" id="application-with-only-top-bar">Application with only Top Bar</h2>
-<p>This is the master layout which provides the foundation for all page templates. Use this foundation when a full-width layout is needed, e.g., home page, launchpad, dashboard, etc.</p>
-
-<p>Both the header and footer can be fixed by applying the <code class="highlighter-rouge">.fd-shell--fixed</code> modifier to the <code class="highlighter-rouge">.fd-shell</code> container, or each can be fixed individual by apply <code class="highlighter-rouge">.fd-shell__header--fixed</code> or <code class="highlighter-rouge">.fd-shell__footer--fixed</code>.</p>
-
-<blockquote>
-  <p>See the <a href="/components/shellbar.html">shellbar component</a> which is used in the header container.</p>
-</blockquote>
-
-<p>The <code class="highlighter-rouge">app</code> containers here provide additional structure to application content.</p>
-
-<div class="docs-tile docs-component docs-component__app">
+<div class="docs-tile docs-component docs-component__">
     <div class="docs-tile__content">
 		
-<div class="fd-shell fd-shell--fundamentals">
-    <div class="fd-shell__header">
-        fd-shell__header
-    </div>
-    <div class="fd-shell__app">
-        <div class="fd-app">
-            <main class="fd-app__main">
-                fd-app__main
-            </main>
+<div class="fd-panel">
+    <div class="fd-panel__header">
+        <div class="fd-panel__expand">
+            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="fghqwe321"></button>
+        </div>
+        <h5 class="fd-panel__title" id="asdASD123">Panel Header</h5>
+        <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+            <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
+              <button class="fd-button is-selected" id="jhqDKYdf" aria-pressed="true">Left</button>
+              <button class="fd-button">Middle</button>
+              <button class="fd-button">Right</button>
+            </div>
         </div>
     </div>
-    <div class="fd-shell__footer">
-        fd-shell__footer
+    <div role="region" aria-labelledby="jhqDKYdf" class="fd-panel__content" aria-hidden="true" id="fghqwe321">
+        <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+        </span>
     </div>
 </div>
 
@@ -931,47 +914,63 @@
 </div>
 <div style="overflow-y: auto; max-height: 500px;">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell fd-shell--fundamentals"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__header"</span><span class="nt">&gt;</span>
-        fd-shell__header
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__app"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-app"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"fd-app__main"</span><span class="nt">&gt;</span>
-                fd-app__main
-            <span class="nt">&lt;/main&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-panel"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-panel__header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-panel__expand"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-panel__button"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"fghqwe321"</span> <span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"fd-panel__title"</span> <span class="na">id=</span><span class="s">"asdASD123"</span><span class="nt">&gt;</span>Panel Header<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-toolbar fd-toolbar--clear fd-toolbar--transparent"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__spacer fd-toolbar__spacer--auto"</span><span class="nt">&gt;</span> <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-segmented-button"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button is-selected"</span> <span class="na">id=</span><span class="s">"jhqDKYdf"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button"</span><span class="nt">&gt;</span>Middle<span class="nt">&lt;/button&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__footer"</span><span class="nt">&gt;</span>
-        fd-shell__footer
+    <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"region"</span> <span class="na">aria-labelledby=</span><span class="s">"jhqDKYdf"</span> <span class="na">class=</span><span class="s">"fd-panel__content"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"fghqwe321"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+        <span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 </div>
 
-<h2 class="docs-header-h2" id="application-with-horizontal-navigation">Application with horizontal navigation</h2>
+<h2 id="fixed-panel">Fixed Panel</h2>
+<p>Fixed panels are useful for grouping custom content. They include headers and info toolbars.
+To create a fixed panel, add the <code class="highlighter-rouge">--fixed</code> modifier.</p>
 
-<p>The sidebar is an optional <code class="highlighter-rouge">app</code> layout container and should be used with applications with more than two levels of navigation.</p>
-
-<div class="docs-tile docs-component docs-component__app">
+<div class="docs-tile docs-component docs-component__">
     <div class="docs-tile__content">
 		
-<div class="fd-shell fd-shell--fundamentals">
-    <div class="fd-shell__header">
-        fd-shell__header
-    </div>
-    <div class="fd-shell__app">
-        <div class="fd-app">
-            <div class="fd-app__navigation fd-app__navigation--horizontal">
-                fd-app__navigation--horizontal
+<div class="fd-panel fd-panel--fixed">
+    <div class="fd-panel__header">
+        <h5 class="fd-panel__title">Panel Header</h5>
+        <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+            <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
+              <button class="fd-button is-selected" id="jhqDKYrt" aria-pressed="true">Left</button>
+              <button class="fd-button">Middle</button>
+              <button class="fd-button">Right</button>
             </div>
-            <main class="fd-app__main">
-                fd-app__main
-            </main>
         </div>
     </div>
-    <div class="fd-shell__footer">
-        fd-shell__footer
+    <div role="region" aria-labelledby="jhqDKYrt" class="fd-panel__content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+        et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+        Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+        Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+        Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+        Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+        Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
     </div>
 </div>
 
@@ -979,50 +978,60 @@
 </div>
 <div style="overflow-y: auto; max-height: 500px;">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell fd-shell--fundamentals"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__header"</span><span class="nt">&gt;</span>
-        fd-shell__header
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__app"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-app"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-app__navigation fd-app__navigation--horizontal"</span><span class="nt">&gt;</span>
-                fd-app__navigation--horizontal
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-panel fd-panel--fixed"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-panel__header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"fd-panel__title"</span><span class="nt">&gt;</span>Panel Header<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-toolbar fd-toolbar--clear fd-toolbar--transparent"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__spacer fd-toolbar__spacer--auto"</span><span class="nt">&gt;</span> <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-segmented-button"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button is-selected"</span> <span class="na">id=</span><span class="s">"jhqDKYrt"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button"</span><span class="nt">&gt;</span>Middle<span class="nt">&lt;/button&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/button&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"fd-app__main"</span><span class="nt">&gt;</span>
-                fd-app__main
-            <span class="nt">&lt;/main&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__footer"</span><span class="nt">&gt;</span>
-        fd-shell__footer
+    <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"region"</span> <span class="na">aria-labelledby=</span><span class="s">"jhqDKYrt"</span> <span class="na">class=</span><span class="s">"fd-panel__content"</span><span class="nt">&gt;</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+        et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+        Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+        Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+        Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+        Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+        Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 </div>
 
-<h2 class="docs-header-h2" id="application-with-sidebar">Application with Sidebar</h2>
+<h2 id="compact-panel">Compact Panel</h2>
+<p>To use a compact panel, add the <code class="highlighter-rouge">--compact</code> modifier.</p>
 
-<p>The sidebar is an optional <code class="highlighter-rouge">app</code> layout container and should be used with applications with more than two levels of navigation.</p>
-
-<div class="docs-tile docs-component docs-component__app">
+<div class="docs-tile docs-component docs-component__">
     <div class="docs-tile__content">
 		
-<div class="fd-shell fd-shell--fundamentals">
-    <div class="fd-shell__header">
-        fd-shell__header
-    </div>
-    <div class="fd-shell__app">
-        <div class="fd-app">
-            <div class="fd-app__navigation fd-app__navigation--vertical">
-                fd-app__navigation--vertical
+<div class="fd-panel fd-panel--compact">
+    <div class="fd-panel__header">
+        <div class="fd-panel__expand">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="Gekf63a" aria-labelledby="asdASD234"></button>
+        </div>
+        <h5 class="fd-panel__title" id="asdASD234">Panel Header</h5>
+        <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+            <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
+              <button class="fd-button fd-button--compact is-selected" id="Gekf63D" aria-pressed="true">Left</button>
+              <button class="fd-button fd-button--compact">Middle</button>
+              <button class="fd-button fd-button--compact">Right</button>
             </div>
-            <main class="fd-app__main">
-                fd-app__main
-            </main>
         </div>
     </div>
-    <div class="fd-shell__footer">
-        fd-shell__footer
+    <div role="region" aria-labelledby="Gekf63D" class="fd-panel__content" aria-hidden="true" id="Gekf63a">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+        et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+        Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+        Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+        Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+        Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+        Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
     </div>
 </div>
 
@@ -1030,22 +1039,111 @@
 </div>
 <div style="overflow-y: auto; max-height: 500px;">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell fd-shell--fundamentals"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__header"</span><span class="nt">&gt;</span>
-        fd-shell__header
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__app"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-app"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-app__navigation fd-app__navigation--vertical"</span><span class="nt">&gt;</span>
-                fd-app__navigation--vertical
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-panel fd-panel--compact"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-panel__header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-panel__expand"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent fd-panel__button"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"Gekf63a"</span> <span class="na">aria-labelledby=</span><span class="s">"asdASD234"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"fd-panel__title"</span> <span class="na">id=</span><span class="s">"asdASD234"</span><span class="nt">&gt;</span>Panel Header<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-toolbar fd-toolbar--clear fd-toolbar--transparent"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__spacer fd-toolbar__spacer--auto"</span><span class="nt">&gt;</span> <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-segmented-button"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact is-selected"</span>  <span class="na">id=</span><span class="s">"Gekf63D"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact"</span><span class="nt">&gt;</span>Middle<span class="nt">&lt;/button&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/button&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"fd-app__main"</span><span class="nt">&gt;</span>
-                fd-app__main
-            <span class="nt">&lt;/main&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-shell__footer"</span><span class="nt">&gt;</span>
-        fd-shell__footer
+    <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"region"</span> <span class="na">aria-labelledby=</span><span class="s">"Gekf63D"</span> <span class="na">class=</span><span class="s">"fd-panel__content"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"Gekf63a"</span><span class="nt">&gt;</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+        et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+        Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+        Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+        Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+        Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+        Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+</div>
+
+<h2 id="fixed-height-content-panel">Fixed Height Content Panel</h2>
+<p>When the height of the panel’s content is set to a fixed size, the content area can be scrolled through.</p>
+
+<div class="docs-tile docs-component docs-component__">
+    <div class="docs-tile__content">
+		
+<div class="fd-panel">
+    <div class="fd-panel__header">
+        <div class="fd-panel__expand">
+            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="GJL745SV" aria-labelledby="asdASD345"></button>
+        </div>
+        <h5 class="fd-panel__title" id="asdASD345">Panel Header</h5>
+        <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+            <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
+              <button class="fd-button is-selected" id="GJL745SD" aria-pressed="true">Left</button>
+              <button class="fd-button">Middle</button>
+              <button class="fd-button">Right</button>
+            </div>
+        </div>
+    </div>
+    <div role="region" id="GJL745SV" aria-labelledby="GJL745SD" class="fd-panel__content" aria-hidden="true" tyle="height: 100px;">
+        <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+            Morbi eget diam vehicula, porttitor orci eu, posuere leo. Sed varius orci id ipsum pharetra feugiat. 
+            Donec libero mi, vestibulum eget massa non, pretium egestas eros. Aenean quis eros ut augue condimentum faucibus.
+            Nam tristique, enim eu volutpat cursus, enim neque pulvinar mauris, nec tempor libero lacus vel lacus. Nunc molestie elit in
+            aliquam eleifend. Ut consequat convallis erat, porta egestas lectus sagittis et. Mauris fermentum semper lorem, a sollicitudin nisi sollicitudin nec. 
+            Duis semper pretium elit ac molestie. Morbi condimentum nisl vitae dolor varius convallis. Donec a molestie ex, 
+            id condimentum velit. Proin dignissim dolor velit, eu malesuada magna porta vel. Aenean quis feugiat libero, sed pretium libero. 
+            Nunc ex orci, volutpat in tristique et, accumsan sed ante. Maecenas laoreet egestas iaculis. In quis ligula mauris.
+        </span>
+    </div>
+</div>
+
+	</div>
+</div>
+<div style="overflow-y: auto; max-height: 500px;">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-panel"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-panel__header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-panel__expand"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-panel__button"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"GJL745SV"</span> <span class="na">aria-labelledby=</span><span class="s">"asdASD345"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"fd-panel__title"</span> <span class="na">id=</span><span class="s">"asdASD345"</span><span class="nt">&gt;</span>Panel Header<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-toolbar fd-toolbar--clear fd-toolbar--transparent"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__spacer fd-toolbar__spacer--auto"</span><span class="nt">&gt;</span> <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-segmented-button"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Group label"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button is-selected"</span> <span class="na">id=</span><span class="s">"GJL745SD"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button"</span><span class="nt">&gt;</span>Middle<span class="nt">&lt;/button&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"region"</span> <span class="na">id=</span><span class="s">"GJL745SV"</span> <span class="na">aria-labelledby=</span><span class="s">"GJL745SD"</span> <span class="na">class=</span><span class="s">"fd-panel__content"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">tyle=</span><span class="s">"height: 100px;"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+            Morbi eget diam vehicula, porttitor orci eu, posuere leo. Sed varius orci id ipsum pharetra feugiat. 
+            Donec libero mi, vestibulum eget massa non, pretium egestas eros. Aenean quis eros ut augue condimentum faucibus.
+            Nam tristique, enim eu volutpat cursus, enim neque pulvinar mauris, nec tempor libero lacus vel lacus. Nunc molestie elit in
+            aliquam eleifend. Ut consequat convallis erat, porta egestas lectus sagittis et. Mauris fermentum semper lorem, a sollicitudin nisi sollicitudin nec. 
+            Duis semper pretium elit ac molestie. Morbi condimentum nisl vitae dolor varius convallis. Donec a molestie ex, 
+            id condimentum velit. Proin dignissim dolor velit, eu malesuada magna porta vel. Aenean quis feugiat libero, sed pretium libero. 
+            Nunc ex orci, volutpat in tristique et, accumsan sed ante. Maecenas laoreet egestas iaculis. In quis ligula mauris.
+        <span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 

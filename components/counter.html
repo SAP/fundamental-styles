@@ -5,14 +5,24 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="keywords" content=" status indicators, status, indicators, badge, label, counter">
+<meta name="description" content="Fundamental Library Styles is a themable Fiori 3 component library ">
+<meta name="keywords" content="development,  counter">
 <title>
 	
-	Status Indicators - Fundamental Styles
+	Counter - Fundamental Styles
 	
 
 </title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126805333-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-126805333-3');
+</script>
+
 
 <!-- Google Tag Manager -->
 <script>
@@ -27,7 +37,7 @@
 </script>
 <!-- End Google Tag Manager -->
 
-<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1588789968111984841">
+<link rel="stylesheet" href="/fundamental-styles/css/syntax.css?1590886476760393453">
 <link rel="stylesheet" href="/fundamental-styles/css/docs-all.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -39,6 +49,7 @@
 
 <link rel="alternate" type="application/rss+xml" title="fundamental-styles" href="/feed.xml">
 
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 </head>
 
 <body>
@@ -68,7 +79,7 @@
         <div class="docs-top-nav__support fd-has-float-right">
 
             <span class="fd-has-align-items-center fd-has-margin-right-small">
-                <span>v0.9.0</span>
+                <span>v0.10.0</span>
                 <a class="fd-has-margin-left-small docs-top-nav__support--link" href="https://github.com/SAP/fundamental-styles" target="_blank" rel="noopener" aria-label="GitHub">
                     <svg class="fd-has-margin-left-small docs-top-nav__support--link--svg" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
                         <title>GitHub</title>
@@ -136,7 +147,7 @@
         searchInput: document.getElementById('docs-search'),
         resultsContainer: document.getElementById('results-container'),
         json: '/fundamental-styles/js/search.json',
-        searchResultTemplate: '<li class="fd-menu__item"><a href="/fundamental-styles{url}" title="Status Indicators">{folder} > {title}</a></li>',
+        searchResultTemplate: '<li class="fd-menu__item"><a href="/fundamental-styles{url}" title="Counter">{folder} > {title}</a></li>',
         noResultsText: '<li class="fd-menu__item">No results found</li>',
         limit: 10,
         fuzzy: true,
@@ -198,6 +209,16 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/layouts/layout-panel.html"
+                   class="side-nav__links-link">Layout Panel</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/layouts/page-layout.html"
                    class="side-nav__links-link">Page</a>
             </li>
@@ -210,16 +231,6 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/layouts/section.html"
                    class="side-nav__links-link">Section</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
-                <a href="/fundamental-styles/layouts/panel.html"
-                   class="side-nav__links-link">Panel</a>
             </li>
             
             
@@ -286,16 +297,6 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/patterns/multi-input.html"
                    class="side-nav__links-link">Multi Input</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
-                <a href="/fundamental-styles/patterns/step-input.html"
-                   class="side-nav__links-link">Step Input</a>
             </li>
             
             
@@ -419,6 +420,16 @@
             
             
             
+            <li class="side-nav__links active">
+                <a href="/fundamental-styles/components/counter.html"
+                   class="side-nav__links-link">Counter</a>
+            </li>
+            
+            
+            
+            
+            
+            
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/dialog.html"
                    class="side-nav__links-link">Dialog</a>
@@ -432,6 +443,16 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/form.html"
                    class="side-nav__links-link">Forms</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/generic-tile.html"
+                   class="side-nav__links-link">Generic Tile</a>
             </li>
             
             
@@ -502,16 +523,6 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/list.html"
                    class="side-nav__links-link">List</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
-                <a href="/fundamental-styles/components/list-group.html"
-                   class="side-nav__links-link">List Group</a>
             </li>
             
             
@@ -620,6 +631,16 @@
             
             
             <li class="side-nav__links">
+                <a href="/fundamental-styles/components/panel.html"
+                   class="side-nav__links-link">Panel</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/popover.html"
                    class="side-nav__links-link">Popover</a>
             </li>
@@ -669,9 +690,9 @@
             
             
             
-            <li class="side-nav__links active">
-                <a href="/fundamental-styles/components/status-indicators.html"
-                   class="side-nav__links-link">Status Indicators</a>
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/step-input.html"
+                   class="side-nav__links-link">Step Input</a>
             </li>
             
             
@@ -710,16 +731,6 @@
             
             
             <li class="side-nav__links">
-                <a href="/fundamental-styles/components/tile.html"
-                   class="side-nav__links-link">Tile</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/time.html"
                    class="side-nav__links-link">Time</a>
             </li>
@@ -732,6 +743,16 @@
             <li class="side-nav__links">
                 <a href="/fundamental-styles/components/token.html"
                    class="side-nav__links-link">Token</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="side-nav__links">
+                <a href="/fundamental-styles/components/toolbar.html"
+                   class="side-nav__links-link">Toolbar</a>
             </li>
             
             
@@ -821,8 +842,14 @@
 
 <div class="docs-content">
 
-    <h1 class="docs-header-h1">Status Indicators</h1>
+    <h1 class="docs-header-h1">Counter</h1>
 
+    
+
+    
+        
+            <span title="The component is under development, breaking changes may occur" class="fd-info-label fd-info-label--accent-color-5">in development</span>
+        
     
 
     
@@ -830,180 +857,15 @@
 
     
 
-    <blockquote class="docs-deprecated">
-  <p><strong>DEPRECATED</strong>. Depending on the use case, use either the <a href="info-label.html">InfoLabel</a> component or the <strong>ObjectStatusCoponent</strong> component</p>
+    <blockquote class="docs-intro">
+  <p><strong>UNDER REVIEW</strong>. This component is under review. A new version will be implemented soon.</p>
 </blockquote>
-
-<p class="docs-intro">Status indicators are used to easily highlight the state of an object. <code class="highlighter-rouge">badge</code>, <code class="highlighter-rouge">label</code>, <code class="highlighter-rouge">status-label</code> and <code class="highlighter-rouge">counter</code></p>
-
-<p><br /></p>
-
-<h1 id="badge">Badge</h1>
-
-<h2 id="badge-style-options">Badge Style Options</h2>
-<p><code class="highlighter-rouge">badge</code> Status Indicator has three options: <code class="highlighter-rouge">default</code>, <code class="highlighter-rouge">--pill</code> and <code class="highlighter-rouge">--filled</code></p>
-
-<div class="fd-tile docs-component docs-component__">
-    <div class="fd-tile__content">
-		
-<span class="fd-badge">Label</span>
-<span class="fd-badge fd-badge--filled">Label</span>
-<span class="fd-badge fd-badge--pill"> Label </span>
-
-
-
-	</div>
-</div>
-<div style="overflow-y: auto; max-height: 500px;">
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-badge"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-badge fd-badge--filled"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-badge fd-badge--pill"</span><span class="nt">&gt;</span> Label <span class="nt">&lt;/span&gt;</span></code></pre></figure>
-
-</div>
-
-<p><br /></p>
-
-<h3 id="badge-color-options">Badge Color Options</h3>
-<p>In addition the the default grey, there are three additional Semantic color options available: <code class="highlighter-rouge">--success</code>, <code class="highlighter-rouge">--warning</code> and <code class="highlighter-rouge">-error</code></p>
-
-<div class="fd-tile docs-component docs-component__">
-    <div class="fd-tile__content">
-		
-<span class="fd-badge fd-badge--success">Label</span>
-<span class="fd-badge fd-badge--warning">Label</span>
-<span class="fd-badge fd-badge--error">Label</span>
-<br /><br />
-<span class="fd-badge fd-badge--success fd-badge--pill">Label</span>
-<span class="fd-badge fd-badge--warning fd-badge--pill">Label</span>
-<span class="fd-badge fd-badge--error fd-badge--pill">Label</span>
-<br /><br />
-<span class="fd-badge fd-badge--success fd-badge--filled">Label</span>
-<span class="fd-badge fd-badge--warning fd-badge--filled">Label</span>
-<span class="fd-badge fd-badge--error fd-badge--filled">Label</span>
-
-
-	</div>
-</div>
-<div style="overflow-y: auto; max-height: 500px;">
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-badge fd-badge--success"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-badge fd-badge--warning"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-badge fd-badge--error"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;br&gt;&lt;br&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-badge fd-badge--success fd-badge--pill"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-badge fd-badge--warning fd-badge--pill"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-badge fd-badge--error fd-badge--pill"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;br&gt;&lt;br&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-badge fd-badge--success fd-badge--filled"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-badge fd-badge--warning fd-badge--filled"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-badge fd-badge--error fd-badge--filled"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/span&gt;</span></code></pre></figure>
-
-</div>
-
-<hr />
-
-<h1 id="label">Label</h1>
-<p>A <code class="highlighter-rouge">label</code> is similar to the <code class="highlighter-rouge">badge</code> status Indicator, but it does not have have any borders or background color. Color options of default grey, <code class="highlighter-rouge">--success</code>, <code class="highlighter-rouge">--warning</code> and <code class="highlighter-rouge">--error</code> are available.</p>
-
-<div class="fd-tile docs-component docs-component__">
-    <div class="fd-tile__content">
-		
-<span class="fd-label">Default</span>
-<span class="fd-label fd-label--success">Success</span>
-<span class="fd-label fd-label--warning">Warning</span>
-<span class="fd-label fd-label--error">Error</span>
-
-	</div>
-</div>
-<div style="overflow-y: auto; max-height: 500px;">
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-label"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-label fd-label--success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-label fd-label--warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-label fd-label--error"</span><span class="nt">&gt;</span>Error<span class="nt">&lt;/span&gt;</span></code></pre></figure>
-
-</div>
-
-<hr />
-
-<h1 id="status-indicator-label">Status Indicator Label</h1>
-<h2 id="status-indicator-label-with-build-in-status-icons">Status Indicator Label with build in status icons</h2>
-
-<div class="fd-tile docs-component docs-component__">
-    <div class="fd-tile__content">
-		
-<span class="fd-status-label fd-status-label--available">Available</span>
-<span class="fd-status-label fd-status-label--away">Away</span>
-<span class="fd-status-label fd-status-label--busy">Busy</span>
-<span class="fd-status-label fd-status-label--offline">Appear Offline</span>
-
-	</div>
-</div>
-<div style="overflow-y: auto; max-height: 500px;">
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-status-label fd-status-label--available"</span><span class="nt">&gt;</span>Available<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-status-label fd-status-label--away"</span><span class="nt">&gt;</span>Away<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-status-label fd-status-label--busy"</span><span class="nt">&gt;</span>Busy<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-status-label fd-status-label--offline"</span><span class="nt">&gt;</span>Appear Offline<span class="nt">&lt;/span&gt;</span></code></pre></figure>
-
-</div>
-
-<p><br /></p>
-
-<h2 id="status-indicator-label-with-any-icons">Status Indicator Label with any icons</h2>
-
-<div class="fd-tile docs-component docs-component__">
-    <div class="fd-tile__content">
-		
-<span class="fd-status-label sap-icon--history">Custom Icon</span>
-<span class="fd-status-label sap-icon--message-success">Success</span>
-<span class="fd-status-label sap-icon--message-warning">Warning</span>
-<span class="fd-status-label sap-icon--message-error">Error</span>
-
-	</div>
-</div>
-<div style="overflow-y: auto; max-height: 500px;">
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-status-label sap-icon--history"</span><span class="nt">&gt;</span>Custom Icon<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-status-label sap-icon--message-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-status-label sap-icon--message-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-status-label sap-icon--message-error"</span><span class="nt">&gt;</span>Error<span class="nt">&lt;/span&gt;</span></code></pre></figure>
-
-</div>
-
-<p><br /></p>
-
-<h2 id="status-indicator-label-with-semantic-colors">Status Indicator Label with Semantic colors</h2>
-
-<div class="fd-tile docs-component docs-component__">
-    <div class="fd-tile__content">
-		
-<span class="fd-status-label">Default</span>
-<span class="fd-status-label fd-status-label--success">Success</span>
-<span class="fd-status-label fd-status-label--warning">Warning</span>
-<span class="fd-status-label fd-status-label--error">Error</span>
-
-	</div>
-</div>
-<div style="overflow-y: auto; max-height: 500px;">
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-status-label"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-status-label fd-status-label--success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-status-label fd-status-label--warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-status-label fd-status-label--error"</span><span class="nt">&gt;</span>Error<span class="nt">&lt;/span&gt;</span></code></pre></figure>
-
-</div>
-
-<hr />
-
-<h1 id="counter">Counter</h1>
 
 <h2 id="default-counter">Default Counter</h2>
 <p>Counter has a minimum value 1. Maximum display is 999+</p>
 
-<div class="fd-tile docs-component docs-component__">
-    <div class="fd-tile__content">
+<div class="docs-tile docs-component docs-component__">
+    <div class="docs-tile__content">
 		
 <span class="fd-counter" aria-label="Unread count">5</span>
 <span class="fd-counter" aria-label="Unread count">25</span>
@@ -1025,8 +887,8 @@
 
 <h2 id="counter-inline-with-a-paragraph">Counter inline with a paragraph</h2>
 
-<div class="fd-tile docs-component docs-component__">
-    <div class="fd-tile__content">
+<div class="docs-tile docs-component docs-component__">
+    <div class="docs-tile__content">
 		
 <p>Lorem ipsum <span class="fd-counter" aria-label="Unread count">5</span> </p>
 
@@ -1042,8 +904,8 @@
 
 <h2 id="counter-with-tabs">Counter with Tabs</h2>
 
-<div class="fd-tile docs-component docs-component__">
-    <div class="fd-tile__content">
+<div class="docs-tile docs-component docs-component__">
+    <div class="docs-tile__content">
 		
 <ul class="fd-tabs" role="tablist">
    <li class="fd-tabs__item">
@@ -1089,8 +951,8 @@
 
 <h2 id="counter-with---notification-modifier">Counter with <code class="highlighter-rouge">--notification</code> modifier</h2>
 
-<div class="fd-tile docs-component docs-component__">
-    <div class="fd-tile__content">
+<div class="docs-tile docs-component docs-component__">
+    <div class="docs-tile__content">
 		
 <button class="fd-button fd-button--transparent sap-icon--bell" aria-label="Notifications">
     <span class="fd-counter fd-counter--notification" aria-label="Unread count">1</span>
@@ -1131,19 +993,6 @@
 
 </div>
 
-<p><br /></p>
-
-<style>
-.fd-badge, .fd-label, .fd-status-label {
-    margin-right: 20px;
-}
-</style>
-
-
-
-    <div class="tags">
-        
-    </div>
 
 </div>
                 
@@ -1158,7 +1007,7 @@
 
 
 
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-126805333-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-126805333-3','auto');ga('require','displayfeatures');ga('send','pageview');</script>
  
     
 </body>

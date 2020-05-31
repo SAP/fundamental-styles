@@ -6,10 +6,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Fundamental Library Styles is a themable Fiori 3 component library ">
-<meta name="keywords" content="a11ythemenon-f3,  alert">
+<meta name="keywords" content="f3a11ythemedesign,  toolbar">
 <title>
 	
-	Alert - Fundamental Styles
+	Toolbar - Fundamental Styles
 	
 
 </title>
@@ -147,7 +147,7 @@
         searchInput: document.getElementById('docs-search'),
         resultsContainer: document.getElementById('results-container'),
         json: '/fundamental-styles/js/search.json',
-        searchResultTemplate: '<li class="fd-menu__item"><a href="/fundamental-styles{url}" title="Alert">{folder} > {title}</a></li>',
+        searchResultTemplate: '<li class="fd-menu__item"><a href="/fundamental-styles{url}" title="Toolbar">{folder} > {title}</a></li>',
         noResultsText: '<li class="fd-menu__item">No results found</li>',
         limit: 10,
         fuzzy: true,
@@ -340,7 +340,7 @@
             
             
             
-            <li class="side-nav__links active">
+            <li class="side-nav__links">
                 <a href="/fundamental-styles/components/alert.html"
                    class="side-nav__links-link">Alert</a>
             </li>
@@ -750,7 +750,7 @@
             
             
             
-            <li class="side-nav__links">
+            <li class="side-nav__links active">
                 <a href="/fundamental-styles/components/toolbar.html"
                    class="side-nav__links-link">Toolbar</a>
             </li>
@@ -842,17 +842,19 @@
 
 <div class="docs-content">
 
-    <h1 class="docs-header-h1">Alert</h1>
+    <h1 class="docs-header-h1">Toolbar</h1>
 
     
 
     
+        
+            <span title="Fiori 3 Component" class="fd-info-label fd-info-label--accent-color-2">fiori 3</span>
         
             <span title="Accessibility Compliant Component" class="fd-info-label fd-info-label--accent-color-1">a11y</span>
         
             <span title="Fiori 3 Themeable Component" class="fd-info-label fd-info-label--accent-color-3">themeable</span>
         
-            <span title="Non Fiori 3 Component" class="fd-info-label fd-info-label--accent-color-6">non-fiori 3</span>
+            <span title="Design is under review" class="fd-info-label fd-info-label--accent-color-4">design in progress</span>
         
     
 
@@ -861,248 +863,396 @@
 
     
 
-    <p class="docs-intro">Alerts provide inline messages within the application that are color-coded to emphasize the level of urgency.</p>
-<blockquote class="docs-deprecated">
-  <p><strong>DEPRECATED</strong>. Alert does not exist as a Fiori 3 component so it has been deprecated. The inline version successor of the alert is <a href="/fundamental-styles/components/message-strip.html">Message Strip component</a>. There is no overlay version of Alert in Fiori 3.</p>
-</blockquote>
+    <p class="docs-intro">The toolbar enables the user to change the UI or trigger an action. For example, the toolbar allows the user to change views, manipulate data or objects, navigate to another page, perform generic actions, and so on.  It is most commonly used to display buttons, labels, selects and various other input controls.</p>
 
-<p><br /></p>
+<h2 id="toolbar-types">Toolbar types</h2>
 
-<h2 id="default-alert">Default Alert</h2>
-<p>The alert provides information that is useful and relevant, but not critical. It can also provide feedback that an action has been executed. In most cases, the user should be able to dismiss the message so include the modifier class <code class="highlighter-rouge">fd-alert--dismissible</code> and include the close button.</p>
+<h3 id="solid">Solid</h3>
+
+<p>The toolbar has a solid background by default.</p>
 
 <div class="docs-tile docs-component docs-component__">
     <div class="docs-tile__content">
 		
-<div class="fd-alert fd-alert--dismissible" role="alert" id="ZvPBg609">
-  <button class="fd-button fd-button--transparent fd-button--compact fd-alert__close" aria-controls="ZvPBg609" aria-label="Close"></button>
-  <p class="fd-alert__text">
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et mattis erat vel aliquet in sem urna et sagittis diam in vehicula. <a href="#" class="fd-link">Learn More</a>
-  </p>
-</div>
-<br />
+
+  <div class="fd-toolbar fd-toolbar--solid">
+    <span>Title</span>
+    <button class="fd-button fd-button--compact fd-button--transparent">Action1</button>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+    <button class="fd-button fd-button--compact fd-button--transparent">Action2</button>
+    <button class="fd-button fd-button--compact fd-button--transparent">Action3</button>
+    <span class="fd-toolbar__separator"></span>
+    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--survey"></button>
+    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--pool"></button>
+    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--pie-chart"></button>
+  </div>
+
 
 	</div>
 </div>
 <div style="overflow-y: auto; max-height: 500px;">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-alert fd-alert--dismissible"</span> <span class="na">role=</span><span class="s">"alert"</span>  <span class="na">id=</span><span class="s">"ZvPBg609"</span> <span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--compact fd-alert__close"</span> <span class="na">aria-controls=</span><span class="s">"ZvPBg609"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;/button&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"fd-alert__text"</span><span class="nt">&gt;</span>
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et mattis erat vel aliquet in sem urna et sagittis diam in vehicula. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-link"</span><span class="nt">&gt;</span>Learn More<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;br&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-toolbar fd-toolbar--solid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>Title<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>Action1<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__spacer fd-toolbar__spacer--auto"</span><span class="nt">&gt;</span> <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>Action2<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>Action3<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__separator"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--survey"</span><span class="nt">&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--pool"</span><span class="nt">&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--pie-chart"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 </div>
 
-<h2 id="information">Information</h2>
-<p>Add the modifier class <code class="highlighter-rouge">fd-alert--information</code> for Information alert.</p>
+<h3 id="transparent">Transparent</h3>
+
+<p>The toolbar also supports a transparent background which can be achieved by passing <code class="highlighter-rouge">transparent</code> to the <code class="highlighter-rouge">fd-toolbar</code> class.</p>
 
 <div class="docs-tile docs-component docs-component__">
     <div class="docs-tile__content">
 		
-<div class="fd-alert fd-alert--information fd-alert--dismissible" role="alert" id="JwPcf464">
-  <button class="fd-button fd-button--transparent fd-button--compact fd-alert__close" aria-controls="JwPcf464" aria-label="Close"></button>
-  <p class="fd-alert__text">
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et. <a href="#" class="fd-link">Learn More</a>
-  </p>
-</div>
-<br />
+
+  <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+    <button class="fd-button fd-button--compact fd-button--transparent">Action1</button>
+    <button class="fd-button fd-button--compact fd-button--transparent">Action2</button>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+    <button class="fd-button fd-button--compact fd-button--transparent">Action3</button>
+    <button class="fd-button fd-button--compact fd-button--transparent">Action4</button>
+    <span class="fd-toolbar__separator"></span>
+    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--survey"></button>
+    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--pool"></button>
+    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--pie-chart"></button>
+  </div>
 
 
 	</div>
 </div>
 <div style="overflow-y: auto; max-height: 500px;">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-alert fd-alert--information fd-alert--dismissible"</span> <span class="na">role=</span><span class="s">"alert"</span>  <span class="na">id=</span><span class="s">"JwPcf464"</span> <span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--compact fd-alert__close"</span> <span class="na">aria-controls=</span><span class="s">"JwPcf464"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;/button&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"fd-alert__text"</span><span class="nt">&gt;</span>
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"fd-link"</span><span class="nt">&gt;</span>Learn More<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;br&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-toolbar fd-toolbar--clear fd-toolbar--transparent"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>Action1<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>Action2<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__spacer fd-toolbar__spacer--auto"</span><span class="nt">&gt;</span> <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>Action3<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>Action4<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__separator"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--survey"</span><span class="nt">&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--pool"</span><span class="nt">&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--pie-chart"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 </div>
 
-<h2 id="success">Success</h2>
-<p>Add the modifier class <code class="highlighter-rouge">fd-alert--success</code> for Success alert.</p>
+<h3 id="auto">Auto</h3>
+
+<p>The toolbar can be inserted into other controls and can inherit the design from the parent control by passing <code class="highlighter-rouge">auto</code> to the <code class="highlighter-rouge">fd-toolbar</code> class.</p>
 
 <div class="docs-tile docs-component docs-component__">
     <div class="docs-tile__content">
 		
-<div class="fd-alert fd-alert--success fd-alert--dismissible" role="alert" id="ulr5z216">
-  <button class="fd-button fd-button--transparent fd-button--compact fd-alert__close" aria-controls="ulr5z216" aria-label="Close"></button>
-  <p class="fd-alert__text">
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-  </p>
-</div>
+
+  <div class="fd-toolbar fd-toolbar--clear fd-toolbar--auto">
+    <button class="fd-button fd-button--compact fd-button--transparent">Action</button>
+    <button class="fd-button fd-button--compact fd-button--transparent">Action2</button>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+    <button class="fd-button fd-button--compact fd-button--transparent">Action3</button>
+    <button class="fd-button fd-button--compact fd-button--transparent">Action4</button>
+    <span class="fd-toolbar__separator"></span>
+    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--survey"></button>
+    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--pool"></button>
+    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--pie-chart"></button>
+  </div>
+
 
 	</div>
 </div>
 <div style="overflow-y: auto; max-height: 500px;">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-alert fd-alert--success fd-alert--dismissible"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">id=</span><span class="s">"ulr5z216"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--compact fd-alert__close"</span> <span class="na">aria-controls=</span><span class="s">"ulr5z216"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;/button&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"fd-alert__text"</span><span class="nt">&gt;</span>
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-  <span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-toolbar fd-toolbar--clear fd-toolbar--auto"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>Action2<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__spacer fd-toolbar__spacer--auto"</span><span class="nt">&gt;</span> <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>Action3<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>Action4<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__separator"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--survey"</span><span class="nt">&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--pool"</span><span class="nt">&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--pie-chart"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 </div>
 
-<h2 id="warning">Warning</h2>
-<p>The alert warns of potential issues, but the user can still continue. The user will need to dismiss the message.</p>
+<h3 id="info">Info</h3>
 
-<p>Add the modifier class <code class="highlighter-rouge">fd-alert--warning</code> for Warning alert.</p>
+<p>The Info toolbar is commonly used to show information (text or icons) and is slightly smaller than the regular toolbar in size. It can be achieved by passing <code class="highlighter-rouge">info</code> to the <code class="highlighter-rouge">fd-toolbar</code> class. <code class="highlighter-rouge">fd-toolbar--active</code> class can be added to have active and hover states.</p>
 
 <div class="docs-tile docs-component docs-component__">
     <div class="docs-tile__content">
 		
-<div class="fd-alert fd-alert--warning fd-alert--dismissible" role="alert" id="fwYq4606">
-  <button class="fd-button fd-button--transparent fd-button--compact fd-alert__close" aria-controls="fwYq4606" aria-label="Close"></button>
-  <p class="fd-alert__text">
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-  </p>
-</div>
+
+  <div class="fd-toolbar fd-toolbar--info">
+    3 item selected
+  </div>
+  <br />
+  <div class="fd-toolbar fd-toolbar--info fd-toolbar--active">
+    3 item selected
+  </div>
+
 
 	</div>
 </div>
 <div style="overflow-y: auto; max-height: 500px;">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-alert fd-alert--warning fd-alert--dismissible"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">id=</span><span class="s">"fwYq4606"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--compact fd-alert__close"</span> <span class="na">aria-controls=</span><span class="s">"fwYq4606"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;/button&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"fd-alert__text"</span><span class="nt">&gt;</span>
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-  <span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-toolbar fd-toolbar--info"</span><span class="nt">&gt;</span>
+    3 item selected
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;br&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-toolbar fd-toolbar--info fd-toolbar--active"</span><span class="nt">&gt;</span>
+    3 item selected
+  <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 </div>
 
-<h2 id="error">Error</h2>
-<p>This alert is triggered after the user entered data incorrectly or a system error has occurred. It should interrupt the user. A final action such as Submit cannot be carried out until the user has rectified the error. The user will need to dismiss the message.</p>
+<h3 id="title">Title</h3>
 
-<p>Add the modifier class <code class="highlighter-rouge">fd-alert--error</code> for Error alert.</p>
+<p>The Title toolbar should be used whenever a title needs to be included. It can be achieved by passing <code class="highlighter-rouge">title</code> to the <code class="highlighter-rouge">fd-toolbar</code> class.</p>
 
 <div class="docs-tile docs-component docs-component__">
     <div class="docs-tile__content">
 		
-<div class="fd-alert fd-alert--error fd-alert--dismissible" role="alert" id="SsoiW591">
-  <button class="fd-button fd-button--transparent fd-button--compact fd-alert__close" aria-controls="SsoiW591" aria-label="Close"></button>
-  <p class="fd-alert__text">
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-  </p>
-</div>
+
+  <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin-bottom:0px;">Title</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+    <button class="fd-button fd-button--compact fd-button--transparent">opt1</button>
+    <button class="fd-button fd-button--compact fd-button--transparent">opt2</button>
+  </div>
+
 
 	</div>
 </div>
 <div style="overflow-y: auto; max-height: 500px;">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-alert fd-alert--error fd-alert--dismissible"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">id=</span><span class="s">"SsoiW591"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--compact fd-alert__close"</span> <span class="na">aria-controls=</span><span class="s">"SsoiW591"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;/button&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"fd-alert__text"</span><span class="nt">&gt;</span>
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-  <span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4</span> <span class="na">style=</span><span class="s">"margin-bottom:0px;"</span><span class="nt">&gt;</span>Title<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__spacer fd-toolbar__spacer--auto"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>opt1<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>opt2<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 </div>
 
-<h2 id="no-icons">No Icons</h2>
+<h2 id="spacer">Spacer</h2>
 
-<p>Add the modifier class <code class="highlighter-rouge">fd-alert--no-icon</code> to render alert without any icon</p>
+<p>Spacers can be used to fill any remaining space either automatically or manually within a toolbar.</p>
 
-<div class="docs-tile docs-component docs-component__no-icon">
-    <div class="docs-tile__content">
-		
-<div class="fd-alert fd-alert--information fd-alert--no-icon fd-alert--dismissible" role="alert" id="SsoiW591">
-  <button class="fd-button fd-button--transparent fd-button--compact fd-alert__close" aria-controls="SsoiW591" aria-label="Close"></button>
-  <p class="fd-alert__text">
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-  </p>
-</div>
-<br />
-<div class="fd-alert fd-alert--success fd-alert--no-icon fd-alert--dismissible" role="alert" id="SsoiW591">
-  <button class="fd-button fd-button--transparent fd-button--compact fd-alert__close" aria-controls="SsoiW591" aria-label="Close"></button>
-  <p class="fd-alert__text">
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-  </p>
-</div>
-<br />
-<div class="fd-alert fd-alert--warning fd-alert--no-icon fd-alert--dismissible" role="alert" id="SsoiW591">
-  <button class="fd-button fd-button--transparent fd-button--compact fd-alert__close" aria-controls="SsoiW591" aria-label="Close"></button>
-  <p class="fd-alert__text">
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-  </p>
-</div>
-<br />
-<div class="fd-alert fd-alert--error fd-alert--no-icon fd-alert--dismissible" role="alert" id="SsoiW591">
-  <button class="fd-button fd-button--transparent fd-button--compact fd-alert__close" aria-controls="SsoiW591" aria-label="Close"></button>
-  <p class="fd-alert__text">
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-  </p>
-</div>
+<h3 id="auto-1">Auto</h3>
 
-	</div>
-</div>
-<div style="overflow-y: auto; max-height: 500px;">
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-alert fd-alert--information fd-alert--no-icon fd-alert--dismissible"</span> 
-     <span class="na">role=</span><span class="s">"alert"</span> <span class="na">id=</span><span class="s">"SsoiW591"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--compact fd-alert__close"</span> <span class="na">aria-controls=</span><span class="s">"SsoiW591"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;/button&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"fd-alert__text"</span><span class="nt">&gt;</span>
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-  <span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-alert fd-alert--success fd-alert--no-icon fd-alert--dismissible"</span> 
-     <span class="na">role=</span><span class="s">"alert"</span> <span class="na">id=</span><span class="s">"SsoiW591"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--compact fd-alert__close"</span> <span class="na">aria-controls=</span><span class="s">"SsoiW591"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;/button&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"fd-alert__text"</span><span class="nt">&gt;</span>
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-  <span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-alert fd-alert--warning fd-alert--no-icon fd-alert--dismissible"</span> 
-     <span class="na">role=</span><span class="s">"alert"</span> <span class="na">id=</span><span class="s">"SsoiW591"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--compact fd-alert__close"</span> <span class="na">aria-controls=</span><span class="s">"SsoiW591"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;/button&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"fd-alert__text"</span><span class="nt">&gt;</span>
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-  <span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-alert fd-alert--error fd-alert--no-icon fd-alert--dismissible"</span> 
-     <span class="na">role=</span><span class="s">"alert"</span> <span class="na">id=</span><span class="s">"SsoiW591"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--compact fd-alert__close"</span> <span class="na">aria-controls=</span><span class="s">"SsoiW591"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;/button&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"fd-alert__text"</span><span class="nt">&gt;</span>
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-  <span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-</div>
-
-<h2 id="right-to-left-support">Right to left support</h2>
-<p>If right to left text direction is provided, the dismiss button moves to left side.</p>
+<p>To create a spacer that automatically fills the remaining width in the toolbar, pass <code class="highlighter-rouge">auto</code> in the <code class="highlighter-rouge">fd-toolbar_spacer</code> class.</p>
 
 <div class="docs-tile docs-component docs-component__">
     <div class="docs-tile__content">
 		
-<div class="fd-alert fd-alert--error fd-alert--dismissible" role="alert" id="BQ6WP516" dir="rtl">
-  <button class="fd-button fd-button--transparent fd-button--compact fd-alert__close" aria-controls="BQ6WP516" aria-label="Close"></button>
-  <p class="fd-alert__text">
-   حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانيأسي.
-   </p>
-</div>
+
+  <div class="fd-toolbar fd-toolbar--info fd-toolbar--active">
+    <span>text</span>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+    <span>text</span>
+  </div>
+
 
 	</div>
 </div>
 <div style="overflow-y: auto; max-height: 500px;">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-alert fd-alert--error fd-alert--dismissible"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">id=</span><span class="s">"BQ6WP516"</span> <span class="na">dir=</span><span class="s">"rtl"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--compact fd-alert__close"</span> <span class="na">aria-controls=</span><span class="s">"BQ6WP516"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;/button&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"fd-alert__text"</span><span class="nt">&gt;</span>
-   حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانيأسي.
-   <span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-toolbar fd-toolbar--info fd-toolbar--active"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>text<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__spacer fd-toolbar__spacer--auto"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;</span>text<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+</div>
+
+<h3 id="fixed">Fixed</h3>
+
+<p>To set the width of a spacer manually, pass the desired width using the <code class="highlighter-rouge">fixed</code> and <code class="highlighter-rouge">style</code> modifiers in the <code class="highlighter-rouge">fd-toolbar_spacer</code> class as seen below.</p>
+
+<div class="docs-tile docs-component docs-component__">
+    <div class="docs-tile__content">
+		
+
+  <div class="fd-toolbar fd-toolbar--info">
+    <span>text</span>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--fixed" style="width:150px;"></span>
+    <span>text</span>
+  </div>
+
+
+	</div>
+</div>
+<div style="overflow-y: auto; max-height: 500px;">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-toolbar fd-toolbar--info"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>text<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__spacer fd-toolbar__spacer--fixed"</span> <span class="na">style=</span><span class="s">"width:150px;"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;</span>text<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+</div>
+
+<h2 id="separator">Separator</h2>
+
+<p>Separators should be used to visually separate items from each other.</p>
+
+<div class="docs-tile docs-component docs-component__">
+    <div class="docs-tile__content">
+		
+
+  <div class="fd-toolbar fd-toolbar--info">
+    <span>text</span>
+    <span class="fd-toolbar__separator"></span>
+    <span>text</span>
+  </div>
+  
+  <br />
+  
+  <div class="fd-toolbar fd-toolbar--solid">
+    <span>text</span>
+    <span class="fd-toolbar__separator"></span>
+    <span>text</span>
+  </div>
+
+
+	</div>
+</div>
+<div style="overflow-y: auto; max-height: 500px;">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-toolbar fd-toolbar--info"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>text<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__separator"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;</span>text<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  
+  <span class="nt">&lt;br&gt;</span>
+  
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-toolbar fd-toolbar--solid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>text<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__separator"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;</span>text<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+</div>
+
+<h2 id="size">Size</h2>
+
+<p>The default size of the toolbar is compact but this can be changed by passing the <code class="highlighter-rouge">fd-toolbar--cozy</code> modifier class.</p>
+
+<div class="docs-tile docs-component docs-component__">
+    <div class="docs-tile__content">
+		
+
+  <div class="fd-toolbar fd-toolbar--solid fd-toolbar--cozy">
+    <span>Title</span>
+    <button class="fd-button fd-button--compact fd-button--transparent">Button</button>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+    <button class="fd-button fd-button--compact fd-button--transparent">Button</button>
+    <button class="fd-button fd-button--compact fd-button--transparent">Button</button>
+    <span class="fd-toolbar__separator"></span>
+    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--survey"></button>
+    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--pool"></button>
+    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--pie-chart"></button>
+  </div>
+
+
+	</div>
+</div>
+<div style="overflow-y: auto; max-height: 500px;">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-toolbar fd-toolbar--solid fd-toolbar--cozy"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>Title<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__spacer fd-toolbar__spacer--auto"</span><span class="nt">&gt;</span> <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__separator"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--survey"</span><span class="nt">&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--pool"</span><span class="nt">&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent sap-icon--pie-chart"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+</div>
+
+<h2 id="overflow">Overflow</h2>
+
+<p>The Overflow toolbar can be used to add additional elements when extra space is required. It can be achieved in a popover by passing <code class="highlighter-rouge">fd-popover fd-toolbar__overflow</code> or in a button by passing <code class="highlighter-rouge">sap-icon--overflow</code> in the <code class="highlighter-rouge">fd-button</code> class.</p>
+
+<div class="docs-tile docs-component docs-component__">
+    <div class="docs-tile__content">
+		
+
+  <div class="fd-toolbar fd-toolbar--solid fd-toolbar--cozy">
+    <span>Title</span>
+    <button class="fd-button fd-button--compact fd-button--transparent">Button</button>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+    <button class="fd-button fd-button--compact fd-button--transparent">Button</button>
+    <button class="fd-button fd-button--compact fd-button--transparent">Button</button>
+    <span class="fd-toolbar__separator"></span>
+    <div class="fd-popover fd-toolbar__overflow">
+      <div class="fd-popover__control">
+        <button class="fd-button fd-button--transparent fd-button--compact sap-icon--overflow" aria-controls="wgxzK85912" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+      </div>
+      <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="wgxzK85912">
+        <div class="fd-toolbar__overflow__body">
+          <label class="fd-label fd-toolbar__overflow__label">Label</label>
+          <button class="fd-button fd-button--compact fd-button--transparent">Edit</button>
+          <span class="fd-toolbar__separator"></span>
+          <label class="fd-form-label fd-toolbar__overflow__form-label">Form label</label>
+          <button class="fd-button fd-button--compact fd-button--negative">Delete</button>
+          <span class="fd-toolbar__separator"></span>
+          <button class="fd-button fd-button--compact fd-button--sucess">Assign</button>
+          <button class="fd-button fd-button--compact fd-button--attention">Exit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	</div>
+</div>
+<div style="overflow-y: auto; max-height: 500px;">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-toolbar fd-toolbar--solid fd-toolbar--cozy"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>Title<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__spacer fd-toolbar__spacer--auto"</span><span class="nt">&gt;</span> <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__separator"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover fd-toolbar__overflow"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__control"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--transparent fd-button--compact sap-icon--overflow"</span>
+          <span class="na">aria-controls=</span><span class="s">"wgxzK85912"</span>
+          <span class="na">aria-haspopup=</span><span class="s">"true"</span>
+          <span class="na">aria-expanded=</span><span class="s">"false"</span>
+          <span class="na">aria-label=</span><span class="s">"More"</span><span class="nt">&gt;&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"</span>
+        <span class="na">aria-hidden=</span><span class="s">"true"</span>
+        <span class="na">id=</span><span class="s">"wgxzK85912"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fd-toolbar__overflow__body"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-label fd-toolbar__overflow__label"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--transparent"</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__separator"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"fd-form-label fd-toolbar__overflow__form-label"</span><span class="nt">&gt;</span>Form label<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--negative"</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fd-toolbar__separator"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--sucess"</span><span class="nt">&gt;</span>Assign<span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"fd-button fd-button--compact fd-button--attention"</span><span class="nt">&gt;</span>Exit<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 </div>
 

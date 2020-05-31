@@ -5,7 +5,7 @@
 
 {
 "title": "Action Bar",
-"tags": "",
+"tags": "a11ythemenon-f3",
 "keywords": "action bar, action, bar",
 "url": "/components/action-bar.html",
 "folder": "components"
@@ -16,7 +16,7 @@
 
 {
 "title": "Alert",
-"tags": "",
+"tags": "a11ythemenon-f3",
 "keywords": "alert",
 "url": "/components/alert.html",
 "folder": "components"
@@ -27,7 +27,7 @@
 
 {
 "title": "Asset Upload",
-"tags": "",
+"tags": "development",
 "keywords": "asset upload, file upload, asset, file, upload",
 "url": "/components/asset-upload.html",
 "folder": "components"
@@ -38,7 +38,7 @@
 
 {
 "title": "Avatar",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "icon, avatar, identifier, image",
 "url": "/components/avatar.html",
 "folder": "components"
@@ -49,7 +49,7 @@
 
 {
 "title": "Bar",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "bar, header, subheader, footer, floating-footer",
 "url": "/components/bar.html",
 "folder": "components"
@@ -60,7 +60,7 @@
 
 {
 "title": "Breadcrumb",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "breadcrumb",
 "url": "/components/breadcrumb.html",
 "folder": "components"
@@ -71,7 +71,7 @@
 
 {
 "title": "Busy Indicator",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "busy indicator, busy, spinner, loader",
 "url": "/components/busy-indicator.html",
 "folder": "components"
@@ -82,7 +82,7 @@
 
 {
 "title": "Button",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "button, buttons",
 "url": "/components/button.html",
 "folder": "components"
@@ -93,7 +93,7 @@
 
 {
 "title": "Calendar",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "calendar",
 "url": "/components/calendar.html",
 "folder": "components"
@@ -115,7 +115,7 @@
 
 {
 "title": "Combobox Input",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "combobox input",
 "url": "/patterns/combobox-input.html",
 "folder": "patterns"
@@ -126,7 +126,7 @@
 
 {
 "title": "Contextual Menu",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "contextual, menu",
 "url": "/patterns/contextual-menu.html",
 "folder": "patterns"
@@ -136,8 +136,19 @@
 
 
 {
+"title": "Counter",
+"tags": "development",
+"keywords": "counter",
+"url": "/components/counter.html",
+"folder": "components"
+}
+,
+
+
+
+{
 "title": "Date Picker",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "date-picker",
 "url": "/patterns/date-picker.html",
 "folder": "patterns"
@@ -159,7 +170,7 @@
 
 {
 "title": "Dialog",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "dialog, dialogs, modal, modals",
 "url": "/components/dialog.html",
 "folder": "components"
@@ -181,7 +192,7 @@
 
 {
 "title": "Forms",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "form, forms, checkboxes, input, inputs, input help elemnts, input sates, select, radio buttons,",
 "url": "/components/form.html",
 "folder": "components"
@@ -198,6 +209,17 @@
 "keywords": "libraries frameworks angular vue react",
 "url": "/resources/fundamentals-libraries.html",
 "folder": "resources"
+}
+,
+
+
+
+{
+"title": "Generic Tile",
+"tags": "f3a11ythemedevelopment",
+"keywords": "tile generic tile",
+"url": "/components/generic-tile.html",
+"folder": "components"
 }
 ,
 
@@ -227,7 +249,7 @@
 
 {
 "title": "Icon",
-"tags": "",
+"tags": "development",
 "keywords": "icon",
 "url": "/components/icon.html",
 "folder": "components"
@@ -249,7 +271,7 @@
 
 {
 "title": "Image",
-"tags": "",
+"tags": "development",
 "keywords": "",
 "url": "/components/image.html",
 "folder": "components"
@@ -315,7 +337,7 @@
 
 {
 "title": "Info Label",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "info label, info, label, info-label, counter",
 "url": "/components/info-label.html",
 "folder": "components"
@@ -326,7 +348,7 @@
 
 {
 "title": "Inline Help",
-"tags": "",
+"tags": "non-f3a11y",
 "keywords": "inline, help",
 "url": "/components/inline-help.html",
 "folder": "components"
@@ -337,7 +359,7 @@
 
 {
 "title": "Input Group",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "input group, input groups, input, groups",
 "url": "/components/input-group.html",
 "folder": "components"
@@ -358,8 +380,19 @@
 
 
 {
-"title": "Link",
+"title": "Layout Panel",
 "tags": "",
+"keywords": "layout-panel",
+"url": "/layouts/layout-panel",
+"folder": "layouts"
+}
+,
+
+
+
+{
+"title": "Link",
+"tags": "f3a11ytheme",
 "keywords": "link",
 "url": "/components/link.html",
 "folder": "components"
@@ -369,20 +402,9 @@
 
 
 {
-"title": "List Group",
-"tags": "",
-"keywords": "list group, lists group, list, lists, groups",
-"url": "/components/list-group.html",
-"folder": "components"
-}
-,
-
-
-
-{
 "title": "List",
-"tags": "",
-"keywords": "list, lists, groups",
+"tags": "f3a11ythemedevelopment",
+"keywords": "list, lists",
 "url": "/components/list.html",
 "folder": "components"
 }
@@ -403,7 +425,7 @@
 
 {
 "title": "Localization Editor",
-"tags": "",
+"tags": "non-f3",
 "keywords": "localization editor",
 "url": "/components/localization-editor.html",
 "folder": "components"
@@ -414,7 +436,7 @@
 
 {
 "title": "Menu",
-"tags": "",
+"tags": "f3a11ythemedevelopment",
 "keywords": "menu",
 "url": "/components/menu.html",
 "folder": "components"
@@ -425,7 +447,7 @@
 
 {
 "title": "Message Box",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "message message-box",
 "url": "/components/message-box.html",
 "folder": "components"
@@ -436,7 +458,7 @@
 
 {
 "title": "Message Strip",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "message alert message-strip",
 "url": "/components/message-strip.html",
 "folder": "components"
@@ -447,7 +469,7 @@
 
 {
 "title": "Message Toast",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "message message-toast",
 "url": "/components/message-toast.html",
 "folder": "components"
@@ -458,7 +480,7 @@
 
 {
 "title": "Multi Input",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "multi input",
 "url": "/patterns/multi-input.html",
 "folder": "patterns"
@@ -469,7 +491,7 @@
 
 {
 "title": "Notification",
-"tags": "",
+"tags": "f3a11ythemedevelopment",
 "keywords": "notification",
 "url": "/components/notification.html",
 "folder": "components"
@@ -480,7 +502,7 @@
 
 {
 "title": "Object Status",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "object status, status, object, object-status, clickable, generic indication",
 "url": "/components/object-status.html",
 "folder": "components"
@@ -502,7 +524,7 @@
 
 {
 "title": "Pagination",
-"tags": "",
+"tags": "a11ytheme",
 "keywords": "pagination",
 "url": "/components/pagination.html",
 "folder": "components"
@@ -513,10 +535,10 @@
 
 {
 "title": "Panel",
-"tags": "",
+"tags": "f3a11ythemedevelopment",
 "keywords": "panel",
-"url": "/layouts/panel.html",
-"folder": "layouts"
+"url": "/components/panel.html",
+"folder": "components"
 }
 ,
 
@@ -524,7 +546,7 @@
 
 {
 "title": "Popover",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "popover",
 "url": "/components/popover.html",
 "folder": "components"
@@ -535,7 +557,7 @@
 
 {
 "title": "Product Switch",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "product-switch, shellbar",
 "url": "/components/product-switch.html",
 "folder": "components"
@@ -570,7 +592,7 @@
 
 {
 "title": "Select",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "select, dropdown, dropdowns",
 "url": "/components/select.html",
 "folder": "components"
@@ -592,7 +614,7 @@
 
 {
 "title": "Shellbar",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "shell shellbar global navigation",
 "url": "/components/shellbar.html",
 "folder": "components"
@@ -603,7 +625,7 @@
 
 {
 "title": "Side Navigation",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "side navigation",
 "url": "/components/side-navigation.html",
 "folder": "components"
@@ -613,10 +635,10 @@
 
 
 {
-"title": "Status Indicators",
-"tags": "",
-"keywords": "status indicators, status, indicators, badge, label, counter",
-"url": "/components/status-indicators.html",
+"title": "Step Input",
+"tags": "f3a11ytheme",
+"keywords": "Step Input, Step, Input",
+"url": "/components/step-input.html",
 "folder": "components"
 }
 ,
@@ -624,19 +646,8 @@
 
 
 {
-"title": "Step Input",
-"tags": "",
-"keywords": "step input",
-"url": "/patterns/step-input.html",
-"folder": "patterns"
-}
-,
-
-
-
-{
 "title": "Switch",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "toggle, switch",
 "url": "/components/switch.html",
 "folder": "components"
@@ -647,7 +658,7 @@
 
 {
 "title": "Table",
-"tags": "",
+"tags": "development",
 "keywords": "table",
 "url": "/components/table.html",
 "folder": "components"
@@ -658,7 +669,7 @@
 
 {
 "title": "Tabs",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "tab, tabs",
 "url": "/components/tabs.html",
 "folder": "components"
@@ -668,19 +679,8 @@
 
 
 {
-"title": "Tile",
-"tags": "",
-"keywords": "tile",
-"url": "/components/tile.html",
-"folder": "components"
-}
-,
-
-
-
-{
 "title": "Time Picker",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "time picker",
 "url": "/patterns/time-picker.html",
 "folder": "patterns"
@@ -691,7 +691,7 @@
 
 {
 "title": "Time",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "time",
 "url": "/components/time.html",
 "folder": "components"
@@ -702,7 +702,7 @@
 
 {
 "title": "Token",
-"tags": "",
+"tags": "f3a11ytheme",
 "keywords": "tag, token",
 "url": "/components/token.html",
 "folder": "components"
@@ -712,8 +712,19 @@
 
 
 {
+"title": "Toolbar",
+"tags": "f3a11ythemedesign",
+"keywords": "toolbar",
+"url": "/components/toolbar.html",
+"folder": "components"
+}
+,
+
+
+
+{
 "title": "Tree",
-"tags": "",
+"tags": "development",
 "keywords": "tree",
 "url": "/components/tree.html",
 "folder": "components"
