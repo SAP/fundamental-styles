@@ -10,7 +10,7 @@ summary:
 tags: [f3, a11y, theme, design]
 ---
 
-The toolbar enables the user to change the UI or trigger an action. For example, the toolbar allows the user to change views, manipulate data or objects, navigate to another page, perform generic actions, and so on.  It is most commonly used to display buttons, labels, selects and various other input controls.
+The toolbar enables the user to change the UI or trigger an action. For example, the toolbar allows the user to change views, manipulate data or objects, navigate to another page, perform generic actions, and so on. It is most commonly used to display buttons, labels, selects and various other input controls.
 {: .docs-intro}
 
 ## Toolbar types
@@ -24,7 +24,7 @@ The toolbar has a solid background by default.
   <div class="fd-toolbar fd-toolbar--solid">
     <span>Title</span>
     <button class="fd-button fd-button--compact fd-button--transparent">Action1</button>
-    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+    <span class="fd-toolbar__spacer "> </span>
     <button class="fd-button fd-button--compact fd-button--transparent">Action2</button>
     <button class="fd-button fd-button--compact fd-button--transparent">Action3</button>
     <span class="fd-toolbar__separator"></span>
@@ -45,7 +45,7 @@ The toolbar also supports a transparent background which can be achieved by pass
   <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
     <button class="fd-button fd-button--compact fd-button--transparent">Action1</button>
     <button class="fd-button fd-button--compact fd-button--transparent">Action2</button>
-    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+    <span class="fd-toolbar__spacer "> </span>
     <button class="fd-button fd-button--compact fd-button--transparent">Action3</button>
     <button class="fd-button fd-button--compact fd-button--transparent">Action4</button>
     <span class="fd-toolbar__separator"></span>
@@ -66,7 +66,7 @@ The toolbar can be inserted into other controls and can inherit the design from 
   <div class="fd-toolbar fd-toolbar--clear fd-toolbar--auto">
     <button class="fd-button fd-button--compact fd-button--transparent">Action</button>
     <button class="fd-button fd-button--compact fd-button--transparent">Action2</button>
-    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+    <span class="fd-toolbar__spacer "> </span>
     <button class="fd-button fd-button--compact fd-button--transparent">Action3</button>
     <button class="fd-button fd-button--compact fd-button--transparent">Action4</button>
     <span class="fd-toolbar__separator"></span>
@@ -103,7 +103,7 @@ The Title toolbar should be used whenever a title needs to be included. It can b
 
   <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin-bottom:0px;">Title</h4>
-    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+    <span class="fd-toolbar__spacer "></span>
     <button class="fd-button fd-button--compact fd-button--transparent">opt1</button>
     <button class="fd-button fd-button--compact fd-button--transparent">opt2</button>
   </div>
@@ -123,7 +123,7 @@ To create a spacer that automatically fills the remaining width in the toolbar, 
 
   <div class="fd-toolbar fd-toolbar--info fd-toolbar--active">
     <span>text</span>
-    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+    <span class="fd-toolbar__spacer "></span>
     <span>text</span>
   </div>
 
@@ -177,7 +177,7 @@ The default size of the toolbar is compact but this can be changed by passing th
   <div class="fd-toolbar fd-toolbar--solid fd-toolbar--cozy">
     <span>Title</span>
     <button class="fd-button fd-button--compact fd-button--transparent">Button</button>
-    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+    <span class="fd-toolbar__spacer "> </span>
     <button class="fd-button fd-button--compact fd-button--transparent">Button</button>
     <button class="fd-button fd-button--compact fd-button--transparent">Button</button>
     <span class="fd-toolbar__separator"></span>
@@ -198,7 +198,7 @@ The Overflow toolbar can be used to add additional elements when extra space is 
   <div class="fd-toolbar fd-toolbar--solid fd-toolbar--cozy">
     <span>Title</span>
     <button class="fd-button fd-button--compact fd-button--transparent">Button</button>
-    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+    <span class="fd-toolbar__spacer "> </span>
     <button class="fd-button fd-button--compact fd-button--transparent">Button</button>
     <button class="fd-button fd-button--compact fd-button--transparent">Button</button>
     <span class="fd-toolbar__separator"></span>
