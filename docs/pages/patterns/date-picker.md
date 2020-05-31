@@ -37,10 +37,10 @@ This component mostly relies on the CSS of other components and has very little 
 						<button class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
 					</div>
 					<div class="fd-calendar__action">
-						<button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="mGTGe998">September</button>
+						<button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false" aria-controls="mGTGe998">September</button>
 					</div>
 					<div class="fd-calendar__action">
-						<button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="D8NDL125">2018</button>
+						<button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false" aria-controls="D8NDL125">2018</button>
 					</div>
 					<div class="fd-calendar__action">
 						<button class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
@@ -199,7 +199,7 @@ This component mostly relies on the CSS of other components and has very little 
 			<footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
 				<div class="fd-bar__right">
 					<div class="fd-bar__element">
-						<button class="fd-dialog__decisive-button fd-button fd-button--compact">Today</button>
+						<button class="fd-dialog__decisive-button fd-button">Today</button>
 					</div>
 				</div>
 			</footer>
@@ -224,7 +224,7 @@ This component mostly relies on the CSS of other components and has very little 
 				<header class="fd-calendar__header">
 				<div class="fd-calendar__navigation">
 					<div class="fd-calendar__action">
-						<button class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
+						<button class="fd-button fd-button--transparent sap-icon--slim-arrow-left fd-button--compact" aria-label="Previous" aria-disabled="true"></button>
 					</div>
 					<div class="fd-calendar__action">
 						<button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="mGTGe998">September</button>
@@ -233,7 +233,7 @@ This component mostly relies on the CSS of other components and has very little 
 						<button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="D8NDL125">2018</button>
 					</div>
 					<div class="fd-calendar__action">
-						<button class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+						<button class="fd-button fd-button--transparent sap-icon--slim-arrow-right fd-button--compact" aria-label="Next"></button>
 					</div>
 				</div>
 				</header>
