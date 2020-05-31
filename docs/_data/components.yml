@@ -30,9 +30,6 @@ items:
     - title: Icon
       meta: icon
 
-    - title: Image
-      meta: image
-
     - title: Info Label
       meta: info-label
 
