@@ -85,7 +85,7 @@
     "gh-pages": "^2.2.0",
     "github-assistant": "^0.3.0",
     "ip": "^1.1.5",
-    "jest": "^25.4.0",
+    "jest": "^26.0.1",
     "jest-css-modules-transform": "^4.0.0",
     "jest-puppeteer": "^4.4.0",
     "jest-puppeteer-docker": "^1.3.2",
