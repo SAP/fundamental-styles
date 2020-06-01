@@ -1167,11 +1167,13 @@ a contextual menu can be substituted to display all actions in one menu.
                                     </a>            
                                 </li>
                                 <li class="fd-menu__item" role="presentation">
-                                    <span class="fd-menu__addon-before sap-icon--filter"></span>
-                                    <div class="fd-form-item  fd-form-item--horizontal">
-                                        <label class="fd-form-label" for="input-1d">Filter</label>
-                                        <input class="fd-input fd-input--compact" id="input-1d">
-                                    </div>         
+                                    <div class="fd-menu__link">
+                                        <span class="fd-menu__addon-before sap-icon--filter"></span>
+                                        <div class="fd-form-item  fd-form-item--horizontal">
+                                            <label class="fd-form-label" for="input-1d">Filter</label>
+                                            <input class="fd-input fd-input--compact" id="input-1d">
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </nav>
@@ -1351,5 +1353,51 @@ Navigation can be indicated on a row in the final column using the `.fd-table__c
     </tbody>
 </table>
 
+<div dir="rtl"> 
+    <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+        <h4 style="margin-bottom:0px;">Table with Navigation Indication State on RTL</h4>
+        <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+    </div>
+    <table class="fd-table">
+        <thead class="fd-table__header">
+            <tr class="fd-table__row">
+                <th class="fd-table__cell" scope="col">Column Header</th>
+                <th class="fd-table__cell" scope="col">Column Header</th>
+                <th class="fd-table__cell" scope="col">Column Header</th>
+                <th class="fd-table__cell" scope="col">Column Header</th>
+                <th class="fd-table__cell" scope="col"></th>
+            </tr>
+        </thead>
+        <tbody class="fd-table__body">
+            <tr class="fd-table__row">
+                <td class="fd-table__cell">user.name@email.com</td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+                <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
+                    <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                </td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell">user.name@email.com</td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+                <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated" scope="col">
+                    <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                </td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell">user.name@email.com</td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+                <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
+                    <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 {% endcapture %}
 {% include display-component.html component=table-navigation %}
