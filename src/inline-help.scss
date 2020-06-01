@@ -43,7 +43,7 @@ $block: #{$fd-namespace}-inline-help;
     font-size: var(--sapFontSmallSize);
     line-height: normal;
     background-color: $fd-tooltip-content-background-color;
-    padding: $fd-tooltip-padding;
+    padding: $fd-tooltip-padding * 1.5;
     display: block;
     color: $fd-tooltip-content-color;
     top: $fd-tooltip-padding * 2.5;
