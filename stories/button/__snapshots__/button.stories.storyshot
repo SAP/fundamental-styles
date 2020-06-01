@@ -1,17 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Button Text 1`] = `
+exports[`Storyshots Button Emphasized 1`] = `
 <section
   class="storybook-snapshot-container"
 >
-  <button
-    class="fd-button fd-button--success"
+  <div
+    dir="ltr"
   >
-    test123
-  </button>
-   
-  <button
-    class="fd-button sap-icon--cart"
-  />
+    <button
+      class="fd-button
+    
+    fd-button--emphasized"
+    >
+      Button
+    </button>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Button Icon 1`] = `
+<section
+  class="storybook-snapshot-container"
+>
+  <div
+    dir="ltr"
+  >
+    <button
+      class="fd-button
+    sap-icon--cart
+    "
+    >
+      Button
+    </button>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Button Primary 1`] = `
+<section
+  class="storybook-snapshot-container"
+>
+  <div
+    dir="ltr"
+  >
+    <button
+      class="fd-button
+    
+    "
+    >
+      Button
+    </button>
+  </div>
 </section>
 `;
