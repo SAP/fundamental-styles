@@ -17,6 +17,12 @@ A table is a set of tabular data. Line items can support data, images and action
 ## Default Table
 
 {% capture table-icon %}
+
+
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin-bottom:0px;">Default Table</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -64,7 +70,10 @@ A table is a set of tabular data. Line items can support data, images and action
 Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
 
 {% capture table-no-borders-icon %}
-<h3>Table Without Borders</h3>
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin-bottom:0px;">Table Without Borders</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
 <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -96,7 +105,10 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
     </tbody>
 </table>
 
-<h3>Table Without Borders On Body</h3>
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin-bottom:0px;">Table Without Borders On Body</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -134,7 +146,10 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
 ## Table With Footer
 
 {% capture table-icon %}
-<h3>Cozy Mode</h3>
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin-bottom:0px;">Table With Footer Cozy Mode</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -175,7 +190,10 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
 </table>
 
 
-<h3>Compact Mode</h3>
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin-bottom:0px;">Table With Footer Compact Mode</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
 <table class="fd-table fd-table--compact">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -216,7 +234,10 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
 </table>
 
 
-<h3>Condensed Mode</h3>
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin-bottom:0px;">Table With Footer Condensed Mode</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
 <table class="fd-table fd-table--condensed">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -266,6 +287,11 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
 
 
 {% capture table-icon %}
+
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin-bottom:0px;">Interactive Table With Hoverable and Activable Cells and Rows</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -319,7 +345,11 @@ It is recommended to add the parameter `aria-selected="true"` to the row that is
 Also for cells that include a checkbox should contain the `fd-table__cell--checkbox` class.
 
 {% capture table-checkbox %}
-<h3>Cozy Mode</h3>
+
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin-bottom:0px;">Table With Checkbox Cozy Mode</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -368,7 +398,11 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
 </table>
 
 
-<h3>Compact Mode</h3>
+
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin-bottom:0px;">Table With Checkbox Compact Mode</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
 <table class="fd-table fd-table--compact">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -417,7 +451,11 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
 </table>
 
 
-<h3>Condensed Mode</h3>
+
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin-bottom:0px;">Table With Checkbox Condensed Mode</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
 <table class="fd-table fd-table--condensed">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -473,6 +511,10 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
 
 
 {% capture table-pagination %}
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin-bottom:0px;">Table With Pagintaion at The Bottom</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -534,7 +576,10 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
 
 
 {% capture table-responsive %}
-<h3>Responsive Table</h3>
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin-bottom:0px;">Responsive Table</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
 <table class="fd-table fd-table--no-horizontal-borders">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -605,8 +650,11 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
 </table>
 
 <br>
-<h3>Pop-in</h3>
 <div style="max-width: 450px">
+    <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+        <h4 style="margin-bottom:0px;">Responsive Table - Pop-in mode</h4>
+        <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+    </div>
     <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
         <tbody class="fd-table__body">
             <tr class="fd-table__row fd-table__row--main fd-table__row--activable">
@@ -665,8 +713,11 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
     </table>
 </div>
 <br>
-<h3>Pop-in with Checkbox</h3>
 <div style="max-width: 450px">
+    <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+        <h4 style="margin-bottom:0px;">Responsive Table - Pop-in Mode with Checkboxes</h4>
+        <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+    </div>
     <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
         <tbody class="fd-table__body">
             <tr class="fd-table__row fd-table__row--main fd-table__row--activable">
@@ -743,6 +794,11 @@ To show that an item needs attention, you can show a highlight indicator next to
 Other indicators such as semantic states and modes can be added using the `--valid`, `--information`, `--error`, `--warning`modifiers.
 
 {% capture table-highlight %}
+
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin-bottom:0px;">Table with Semantic Rows</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -866,7 +922,11 @@ Other indicators such as semantic states and modes can be added using the `--val
 
 
 {% capture table-merge-cells %}
-<h3>Merge Cells in a Table</h3>
+
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin-bottom:0px;">Table with Merged Cells</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -919,6 +979,12 @@ When more than three actions exist per row and/or there isn't enough space for t
 a contextual menu can be substituted to display all actions in one menu.
 
 {% capture table-actions %}
+
+
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin-bottom:0px;">Table with Contextual Menu</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
 <table class="fd-table" >
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -1039,6 +1105,12 @@ a contextual menu can be substituted to display all actions in one menu.
 ## Table With Menu In Header
 
 {% capture table-actions-header %}
+
+
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin-bottom:0px;">Table with Popover in Headers</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
 <table class="fd-table" >
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -1232,6 +1304,12 @@ To create fixed column, these steps need to be reproduced
 Navigation can be indicated on a row in the final column using the `.fd-table__cell--navigated` class.
 
 {% capture table-navigation %}
+
+
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin-bottom:0px;">Table with Navigation Indication State</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
