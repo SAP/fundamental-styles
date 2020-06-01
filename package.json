@@ -35,7 +35,7 @@
     "test:update": "npm run test:linux-fix && server-test start:playground http-get://localhost:3030 test:reference && backstop approve --config ./test/visual-regression-tests/config/backstopConfig.js",
     "test:update-linux": "npm run test:linux-fix && server-test start:playground http-get://localhost:3030 test:reference && sudo chown -R ${USER}:${USER} . && backstop approve --config ./test/visual-regression-tests/config/backstopConfig.js",
     "test:visual": "backstop test --config ./test/visual-regression-tests/config/backstopConfig.js --docker",
-    "storybook": "start-storybook -s ./.storybook/resources -p 6006",
+    "storybook": "npm run build && start-storybook -s ./.storybook/resources -p 6006",
     "build-storybook": "build-storybook",
     "storybook:ci": "npm run storybook -- --ci --quiet",
     "storybook:visual-setup": "jest --config=./config/jest.config.js",
