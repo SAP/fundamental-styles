@@ -103,7 +103,7 @@
     "pre-commit": "^1.2.2",
     "sass-loader": "^8.0.2",
     "signale": "^1.4.0",
-    "standard-version": "4.2.0",
+    "standard-version": "8.0.0",
     "start-server-and-test": "^1.11.0",
     "style-loader": "^1.2.1",
     "stylelint": "^13.5.0",
