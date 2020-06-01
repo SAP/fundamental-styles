@@ -34,14 +34,14 @@ A table is a set of tabular data. Line items can support data, images and action
         </tr>
     </thead>
     <tbody class="fd-table__body">
-        <tr class="fd-table__row fd-table__row--hoverable">
+        <tr class="fd-table__row">
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Middle Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
-        <tr class="fd-table__row fd-table__row--hoverable">
+        <tr class="fd-table__row">
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Middle Name</td>
@@ -144,6 +144,8 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
 <br />
 
 ## Table With Footer
+Footer can be added by using `fd-table__footer` class with `tfoot` element.
+It has to contain same size of columns as tbody and thead
 
 {% capture table-icon %}
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
@@ -284,8 +286,11 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
 <br />
 
 ## Interactive Rows and Columns
-
-
+Interactive states of columns and row can be set by adding
+<ul> 
+    <li>For active state handler `--activable` modifier</li>
+    <li>For hover state handler `--hoverable` modifier</li>
+</ul>
 {% capture table-icon %}
 
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
@@ -509,10 +514,9 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
 
 ## Table With Pagination
 
-
 {% capture table-pagination %}
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin-bottom:0px;">Table With Pagintaion at The Bottom</h4>
+    <h4 style="margin-bottom:0px;">Table With Pagination at The Bottom</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table">
@@ -571,10 +575,186 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
 </div>
 {% endcapture %}
 {% include display-component.html component=table-pagination %}
+<br/>
+
+## Table With Advanced Toolbar
+Advanced Toolbar can be used to customize table. Certain buttons trigger dialogs, where user can set some data.
+
+{% capture table-toolbar %}
+<div class="fd-dialog" id="filter-dialog-example">
+    <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-filter">
+        <header class="fd-dialog__header fd-bar">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h3 class="fd-dialog__title" id="dialog-filter">
+                        Filter By
+                    </h3>
+                </div>
+            </div>
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <span class="sap-icon--filter"></span>
+                </div>
+            </div>
+        </header>
+        <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
+            <ul class="fd-list fd-list--compact">
+              <li class="fd-list__item">
+                  <span class="fd-list__title">Name</span>
+              </li>
+              <li class="fd-list__item">
+                  <span class="fd-list__title">Status</span>
+              </li>
+              <li class="fd-list__item">
+                  <span class="fd-list__title">Price</span>
+              </li>
+              <li class="fd-list__item">
+                  <span class="fd-list__title">Country</span>
+              </li>
+            </ul>
+        </div>
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact" onclick="toggleDialog('filter-dialog-example', false)">OK</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact" onclick="toggleDialog('filter-dialog-example', false)">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<div class="fd-dialog" id="settings-dialog-example">
+    <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-settings">
+        <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h3 class="fd-dialog__title" id="dialog-settings">
+                        Columns
+                    </h3>
+                </div>
+            </div>
+        </header>
+        <div class="fd-dialog__subheader fd-bar fd-bar--subheader">
+            <div class="fd-bar__middle">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--icon fd-button--transparent fd-button--compact sap-icon--arrow-top"></button>
+                    <button class="fd-button fd-button--icon fd-button--transparent fd-button--compact sap-icon--arrow-bottom"></button>
+                </div>
+                <div class="fd-bar__element fd-bar__element--full-width">
+                    <div class="fd-input-group">
+                        <input class="fd-input fd-input-group__input fd-input--compact" type="text" placeholder="Search...">
+                        <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
+                            <button class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact sap-icon--search"></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
+            <ul class="fd-list fd-list--multi-input fd-list--compact">
+                <li class="fd-list__item is-selected" role="option">
+                  <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="GGi4ezFD1">
+                  <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="GGi4ezFD1">
+                      <span class="fd-list__title">All</span>
+                  </label>
+                </li>
+                <li class="fd-list__item is-selected" role="option">
+                  <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="GGi4ez641">
+                  <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="GGi4ez641">
+                      <span class="fd-list__title">Name</span>
+                  </label>
+                </li>
+                <li class="fd-list__item is-selected" role="option">
+                  <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai4FGFG612">
+                  <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="Ai4FGFG612">
+                      <span class="fd-list__title">Status</span>
+                  </label>
+                </li>
+                <li class="fd-list__item is-selected" role="option">
+                  <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai4e88614">
+                  <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="Ai4e88614">
+                      <span class="fd-list__title">Price</span>
+                  </label>
+                </li>
+                <li class="fd-list__item is-selected" role="option">
+                  <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai4egh6024">
+                  <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="Ai4egh6024">
+                      <span class="fd-list__title">Country</span>
+                  </label>
+                </li>
+            </ul>
+        </div>
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact" onclick="toggleDialog('settings-dialog-example', false)">OK</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact" onclick="toggleDialog('settings-dialog-example', false)">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin-bottom:0px;">Table With Advanced Shellbar</h4>
+    <div class="fd-toolbar__spacer"></div>
+    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--filter" onclick="toggleDialog('filter-dialog-example', true)"></button>
+    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--action-settings" onclick="toggleDialog('settings-dialog-example', true)"></button>
+</div>
+<table class="fd-table">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Name</th>
+            <th class="fd-table__cell" scope="col">Status</th>
+            <th class="fd-table__cell" scope="col">Price</th>
+            <th class="fd-table__cell" scope="col">Country</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell">Banana</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--positive">
+                    Available
+                </span>
+            </td>
+            <td class="fd-table__cell">5 EUR</td>
+            <td class="fd-table__cell">India</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell">Pineapple</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--negative">
+                    Out of stock
+                </span>
+            </td>
+            <td class="fd-table__cell">2 EUR</td>
+            <td class="fd-table__cell">Mexico</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell">Orange</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--informative">
+                    Temporary unavailable
+                </span>
+            </td>
+            <td class="fd-table__cell">6 EUR</td>
+            <td class="fd-table__cell">Spain</td>
+        </tr>
+    </tbody>
+</table>
+{% endcapture %}
+{% include display-component.html component=table-toolbar %}
 
 <br />
 
-
+## Responsive Table
+Responsive table is not that different than basic table, there should be used some modifiers, to remove borders.
+For Pop-in example markup is changed, one row is transformed to 2 rows with `fd-table__row--main` and `fd-table__row--secondary`
+modifiers. Also some cells should be merged into paragraphs.
 {% capture table-responsive %}
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin-bottom:0px;">Responsive Table</h4>
@@ -922,7 +1102,7 @@ Other indicators such as semantic states and modes can be added using the `--val
 
 
 {% capture table-merge-cells %}
-
+To merge cells, the `--no-horizontal-border` or `--no-vertical-border` modifier should be added.
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin-bottom:0px;">Table with Merged Cells</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
@@ -1105,8 +1285,8 @@ a contextual menu can be substituted to display all actions in one menu.
 ## Table With Menu In Header
 
 {% capture table-actions-header %}
-
-
+Some customization actions can be added to headers, the options will be displayed in popover. Those popover should be 
+added with `fd-table__popover` class.
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin-bottom:0px;">Table with Popover in Headers</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
@@ -1164,7 +1344,7 @@ a contextual menu can be substituted to display all actions in one menu.
                             <li role="listitem" class="fd-list__item">
                                 <span class="fd-list__icon sap-icon--filter"></span>
                                 <div class="fd-form-item  fd-form-item--horizontal">
-                                    <label class="fd-form-label" for="input-1d2">Filter</label>
+                                    <label class="fd-form-label" for="input-1d">Filter</label>
                                     <input class="fd-input fd-input--compact" id="input-1d2">
                                 </div>
                             </li>
