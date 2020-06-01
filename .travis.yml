@@ -5,6 +5,8 @@ services:
   - docker
 git:
   depth: false
+cache:
+  npm: false
 script:
   - npm run build:prod
 jobs:
