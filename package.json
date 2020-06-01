@@ -69,7 +69,6 @@
     "@storybook/svelte": "^5.3.18",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
-    "backstopjs": "3.9.2",
     "browser-sync": "^2.26.7",
     "bundlesize": "^0.18.0",
     "clean-css-cli": "^4.3.0",
