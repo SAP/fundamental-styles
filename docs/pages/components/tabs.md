@@ -7,6 +7,7 @@ toc: false
 permalink: components/tabs.html
 folder: components
 summary:
+tags: [f3, a11y, theme]
 ---
 
 Tabs are based on a folder metaphor and used to separate content into different sections. Tabs should be ordered to create a visual hierarchy based on priority.

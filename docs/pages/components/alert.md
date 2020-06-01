@@ -7,6 +7,7 @@ toc: false
 permalink: components/alert.html
 folder: components
 summary:
+tags: [a11y, theme, non-f3]
 ---
 
 Alerts provide inline messages within the application that are color-coded to emphasize the level of urgency.

@@ -7,6 +7,7 @@ toc: false
 permalink: components/bar.html
 folder: components
 summary:
+tags: [f3, a11y, theme]
 ---
 
 The Bar component is a container that holds titles, buttons and input controls. Its content is distributed in three areas - left, middle and right. <br>

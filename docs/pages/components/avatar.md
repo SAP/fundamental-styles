@@ -6,6 +6,7 @@ sidebar: left-navigation-sidebar
 toc: false
 permalink: components/avatar.html
 folder: components
+tags: [f3, a11y, theme]
 ---
 
 Avatar is a way to visually present something using an icon or user initials.

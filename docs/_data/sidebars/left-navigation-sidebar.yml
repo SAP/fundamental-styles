@@ -23,16 +23,16 @@ entries:
       url: /layouts/layout-grid.html
       output: web
 
+    - title: Layout Panel
+      url: /layouts/layout-panel.html
+      output: web
+
     - title: Page
       url: /layouts/page-layout.html
       output: web
 
     - title: Section
       url: /layouts/section.html
-      output: web
-
-    - title: Panel
-      url: /layouts/panel.html
       output: web
 
     - title: Columns
@@ -60,10 +60,6 @@ entries:
 
     - title: Multi Input
       url: /patterns/multi-input.html
-      output: web
-
-    - title: Step Input
-      url: /patterns/step-input.html
       output: web
 
     - title: Time Picker
@@ -122,6 +118,10 @@ entries:
 
     - title: Forms
       url: /components/form.html
+      output: web
+
+    - title: Generic Tile
+      url: /components/generic-tile.html
       output: web
 
     - title: Icon
@@ -192,6 +192,10 @@ entries:
       url: /components/pagination.html
       output: web
 
+    - title: Panel
+      url: /components/panel.html
+      output: web
+
     - title: Popover
       url: /components/popover.html
       output: web
@@ -226,10 +230,6 @@ entries:
 
     - title: Tabs
       url: /components/tabs.html
-      output: web
-
-    - title: Tile
-      url: /components/tile.html
       output: web
 
     - title: Time

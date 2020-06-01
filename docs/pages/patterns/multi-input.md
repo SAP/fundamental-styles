@@ -7,6 +7,7 @@ toc: false
 permalink: patterns/multi-input.html
 folder: patterns
 summary:
+tags: [f3, a11y, theme]
 ---
 
 The multi-input component is an opinionated composition of the `input group`, `popover`, `checkbox`, `list` and `token` components.
@@ -63,6 +64,7 @@ If the entries are not validated by the application, users can also enter custom
         </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcX348a">
+      <div class="fd-popover__wrapper">
         <ul class="fd-list fd-list--multi-input">
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez611">
@@ -105,6 +107,7 @@ If the entries are not validated by the application, users can also enter custom
                 </label>
              </li>
         </ul>
+      </div>
     </div>
 </div>
 <br>
@@ -146,6 +149,7 @@ If the entries are not validated by the application, users can also enter custom
         </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcX34a">
+      <div class="fd-popover__wrapper">
          <ul class="fd-list fd-list--multi-input fd-list--compact">
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai1ez611">
@@ -188,7 +192,8 @@ If the entries are not validated by the application, users can also enter custom
                 </label>
              </li>
          </ul>
-     </div>
+      </div>
+    </div>
 </div>
 {% endcapture %}
 {% include display-component.html component=default %}
@@ -230,6 +235,7 @@ In cases where the list items need to be categorized into groups, it is possible
         </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4H8X34a">
+      <div class="fd-popover__wrapper">
          <ul class="fd-list fd-list--multi-input">
             <li class="fd-list__group-header">
                 Fruits
@@ -294,7 +300,8 @@ In cases where the list items need to be categorized into groups, it is possible
                 </label>
             </li>
          </ul>
-     </div>
+      </div>
+    </div>
 </div>
 {% endcapture %}
 {% include display-component.html component=multi-input-group %}
@@ -341,6 +348,7 @@ In the example you can see how the `Multi Input` component looks without the `fd
         </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="F4HGFHX34a">
+      <div class="fd-popover__wrapper">
          <ul class="fd-list fd-list--multi-input">
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai124z651">
@@ -383,7 +391,8 @@ In the example you can see how the `Multi Input` component looks without the `fd
                 </label>
              </li>
          </ul>
-     </div>
+      </div>
+    </div>
 </div>
 {% endcapture %}
 {% include display-component.html component=multi-input-group %}
@@ -574,6 +583,7 @@ To add text in the `body` of the component, simply include your text in the `fd-
         </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="F4GcKJH8a">
+      <div class="fd-popover__wrapper">
         <ul class="fd-list fd-list--multi-input fd-list--has-message">
             <li class="fd-list__message fd-list__message--success">Success Message</li>
              <li class="fd-list__item is-selected" role="option">
@@ -610,6 +620,7 @@ To add text in the `body` of the component, simply include your text in the `fd-
             </li>
         </ul>
     </div>
+  </div>
 </div>
 <span class="fd-form-message fd-form-message--static fd-form-message--success">Success message</span>
 <br>

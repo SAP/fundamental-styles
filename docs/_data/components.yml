@@ -24,6 +24,9 @@ items:
     - title: Forms
       meta: form
 
+    - title: Generic Tile
+      meta: generic-tile
+
     - title: Icon
       meta: icon
 
@@ -69,6 +72,9 @@ items:
     - title: Pagination
       meta: pagination
 
+    - title: Panel
+      meta: panel
+
     - title: Product Switch
       meta: product-switch
 
@@ -95,9 +101,6 @@ items:
 
     - title: Tabs
       meta: tabs
-
-    - title: Tile
-      meta: tile
 
     - title: Toolbar
       meta: toolbar

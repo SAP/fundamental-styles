@@ -6,6 +6,7 @@ sidebar: left-navigation-sidebar
 toc: false
 permalink: components/action-bar.html
 folder: components
+tags: [a11y, theme, non-f3]
 ---
 The Action Bar is located at the top of the page and is used for the following:
 {: .docs-intro}

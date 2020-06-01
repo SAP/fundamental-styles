@@ -6,6 +6,7 @@ sidebar: left-navigation-sidebar
 toc: false
 permalink: components/info-label.html
 folder: components
+tags: [f3, a11y, theme]
 ---
 
 Info Label is a small non-interactive numeric or text-based control. Its primary use is to add user-defined characteristic to an object. `fd-info-label`, `fd-info-label--numeric`, `fd-info-label--accent-color-1` and `fd-info-label--icon`

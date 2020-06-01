@@ -6,6 +6,7 @@ sidebar: left-navigation-sidebar
 toc: false
 permalink: components/select.html
 folder: components
+tags: [f3, a11y, theme]
 ---
 
 The select component is commonly used to enable users to select an item from a predefined list.

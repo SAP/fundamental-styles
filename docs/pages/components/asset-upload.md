@@ -7,6 +7,7 @@ toc: false
 permalink: components/asset-upload.html
 folder: components
 summary:
+tags: [development]
 ---
 > **UNDER REVIEW**. This component is under review. A new version will be implemented soon.
 Asset Upload provides a stylized component for file upload button.

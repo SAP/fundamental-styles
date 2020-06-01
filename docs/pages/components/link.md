@@ -7,6 +7,7 @@ toc: false
 permalink: components/link.html
 folder: components
 summary:
+tags: [f3, a11y, theme]
 ---
 
 The `fd-link` component supports the use of modifiers, as well as the `is-visited` flag, which allows for optimal customization of your hyperlink. There are currently no restrictions as to which content can be included in this component.

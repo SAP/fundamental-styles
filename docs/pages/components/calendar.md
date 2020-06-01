@@ -7,6 +7,7 @@ toc: false
 permalink: components/calendar.html
 folder: components
 summary:
+tags: [f3, a11y, theme]
 ---
 
 Commonly used as the contents of a popover when composing `date-picker`, rarely used on its own as a standalone component.

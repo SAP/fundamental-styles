@@ -6,6 +6,7 @@ sidebar: left-navigation-sidebar
 toc: false
 permalink: components/switch.html
 folder: components
+tags: [f3, a11y, theme]
 ---
 
 The Switch is meant to resemble a physical switch and allow a user to turn a setting “on” or “off”. It should be used to switch between two states/modes: active or inactive.

@@ -7,6 +7,7 @@ toc: false
 permalink: components/breadcrumb.html
 folder: components
 summary:
+tags: [f3, a11y, theme]
 ---
 
 The breadcrumb allows users to see the current page and navigation path to that page.
@@ -41,25 +42,27 @@ there should be popover with missing options.
                     <span class="fd-breadcrumb__dropdown-icon"></span>
                 </a>
             </div>
-            <div class="fd-popover__body fd-popover__body--no-arrow fd-breadcrumb__popover-body" aria-hidden="true" id="breadcrumb1">
-              <ul class="fd-list fd-list--navigation" role="list">
-                <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                    <a tabindex="0" class="fd-list__link" href="https://sap.github.io/fundamental-styles/">
-                      <span class="fd-list__title">List item 1</span>
-                    </a>
-                </li>
-                <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                    <a tabindex="0" class="fd-list__link" href="https://sap.github.io/fundamental-styles/">
-                      <span class="fd-list__title">List item 2</span>
-                    </a>
-                </li>
-                <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                    <a tabindex="0" class="fd-list__link" href="https://sap.github.io/fundamental-styles/">
-                      <span class="fd-list__title">List item 3</span>
-                    </a>
-                </li>
-              </ul>
+            <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="breadcrumb1">
+              <div class="fd-popover__wrapper">
+                <ul class="fd-list fd-list--navigation" role="list">
+                  <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                      <a tabindex="0" class="fd-list__link" href="https://sap.github.io/fundamental-styles/">
+                        <span class="fd-list__title">List item 1</span>
+                      </a>
+                  </li>
+                  <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                      <a tabindex="0" class="fd-list__link" href="https://sap.github.io/fundamental-styles/">
+                        <span class="fd-list__title">List item 2</span>
+                      </a>
+                  </li>
+                  <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                      <a tabindex="0" class="fd-list__link" href="https://sap.github.io/fundamental-styles/">
+                        <span class="fd-list__title">List item 3</span>
+                      </a>
+                  </li>
+                </ul>
             </div>
+          </div>
         </div>
     </li>
     <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Link Text</a></li>
