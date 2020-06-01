@@ -39,8 +39,8 @@
     "build-storybook": "build-storybook",
     "storybook:ci": "npm run storybook -- --ci --quiet",
     "storybook:visual-setup": "jest --config=./config/jest.config.js",
-    "storybook:visual": "cross-env DOCKER=true PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm run build && start-server-and-test storybook:ci http-get://localhost:6006 storybook:visual-setup",
-    "storybook:visual-update": "cross-env DOCKER=true PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm run build && server-test storybook:ci http-get://localhost:6006 'npm run storybook:visual-setup -- --updateSnapshot'"
+    "storybook:visual": "npm run build && start-server-and-test storybook:ci http-get://localhost:6006 storybook:visual-setup",
+    "storybook:visual-update": "npm run build && server-test storybook:ci http-get://localhost:6006 'npm run storybook:visual-setup -- --updateSnapshot'"
   },
   "repository": {
     "type": "git",
