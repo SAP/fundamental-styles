@@ -22,9 +22,9 @@ const beforeScreenshot = (page) => page.emulate(view);
 initStoryshots({
   suite: "Image storyshots",
   test: imageSnapshot({
+    getMatchOptions,
     storybookUrl: "http://localhost:6006/",
     customizePage,
     beforeScreenshot,
   }),
-  getMatchOptions,
 });
