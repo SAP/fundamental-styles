@@ -5,6 +5,8 @@ services:
   - docker
 git:
   depth: false
+env:
+  - DOCKER=true
 script:
   - npm run build:prod
 jobs:
@@ -15,7 +17,7 @@ jobs:
       - npm run test:ci-config
       - npm run test
   -
-    script: npm run storybook:visual-docker-windows
+    script: npm run storybook:visual
   -
     script: npm run lint
   -
