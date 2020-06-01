@@ -303,7 +303,7 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
         </tr>
     </thead>
     <tbody class="fd-table__body">
-        <tr class="fd-table__row fd-table__row--activable">
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable">
             <td class="fd-table__cell">Clicking on any Cell</td>
             <td class="fd-table__cell">On This Row</td>
             <td class="fd-table__cell">Will cause</td>
@@ -657,7 +657,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
     </div>
     <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
         <tbody class="fd-table__body">
-            <tr class="fd-table__row fd-table__row--main fd-table__row--activable">
+            <tr class="fd-table__row fd-table__row--main fd-table__row--activable fd-table__row--hoverable">
                 <td class="fd-table__cell">
                     <p class="fd-table__text fd-table__text--title">Banana</p>
                     <p class="fd-table__text">India</p>
@@ -683,7 +683,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
                     </p>
                 </td>
             </tr>
-            <tr class="fd-table__row fd-table__row--main fd-table__row--activable">
+            <tr class="fd-table__row fd-table__row--main fd-table__row--activable fd-table__row--hoverable">
                 <td class="fd-table__cell">
                     <p class="fd-table__text fd-table__text--title">Very long name for orange, which no one expected, forces text wrapping into another line.</p>
                     <p class="fd-table__text">Spain</p>
@@ -720,7 +720,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
     </div>
     <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
         <tbody class="fd-table__body">
-            <tr class="fd-table__row fd-table__row--main fd-table__row--activable">
+            <tr class="fd-table__row fd-table__row--main fd-table__row--activable fd-table__row--hoverable">
                 <td class="fd-table__cell fd-table__cell--checkbox">
                     <input type="checkbox" class="fd-checkbox" id="CWkhTG">
                     <label class="fd-checkbox__label" for="CWkhTG"></label>
@@ -751,7 +751,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
                     </p>
                 </td>
             </tr>
-            <tr class="fd-table__row fd-table__row--main fd-table__row--activable">
+            <tr class="fd-table__row fd-table__row--main fd-table__row--activable fd-table__row--hoverable">
                 <td class="fd-table__cell fd-table__cell--checkbox">
                     <input type="checkbox" class="fd-checkbox" id="Yeas6w">
                     <label class="fd-checkbox__label" for="Yeas6w"></label>

@@ -13,30 +13,34 @@
 $block: #{$fd-namespace}-table;
 
 .#{$block} {
-  @mixin fd-trigger-element() {
-    cursor: pointer;
+  @mixin fd-table-active() {
+    background-color: var(--sapList_Active_Background);
+    color: var(--sapList_Active_TextColor);
 
-    @include fd-active() {
-      background-color: var(--sapList_Active_Background);
-      color: var(--sapList_Active_TextColor);
-
-      &,
-      .#{$block}__cell {
-        border-bottom-color: var(--sapList_SelectionBorderColor);
-      }
-
-      .#{$block}__icon {
-        color: var(--sapContent_ContrastIconColor);
-      }
-
-      .#{$fd-namespace}-link,
-      .#{$fd-namespace}-object-status {
-        color: inherit;
-      }
+    .#{$block}__cell {
+      border-bottom-color: var(--sapList_SelectionBorderColor);
 
       @include fd-hover() {
         background-color: var(--sapList_Active_Background);
       }
+    }
+
+    .#{$block}__icon {
+      color: var(--sapContent_ContrastIconColor);
+    }
+
+    .#{$fd-namespace}-link,
+    .#{$fd-namespace}-form-label,
+    .#{$fd-namespace}-object-status {
+      color: inherit;
+    }
+  }
+
+  @mixin fd-trigger-element() {
+    cursor: pointer;
+
+    @include fd-active() {
+      @include fd-table-active();
     }
   }
 
@@ -268,10 +272,6 @@ $block: #{$fd-namespace}-table;
 
   &__cell,
   &__row {
-    &--activable {
-      @include fd-trigger-element();
-    }
-
     &--hoverable {
       &,
       .#{$block}__cell {
@@ -279,6 +279,10 @@ $block: #{$fd-namespace}-table;
           background-color: var(--sapList_Hover_Background);
         }
       }
+    }
+
+    &--activable {
+      @include fd-trigger-element();
     }
   }
 
@@ -354,6 +358,22 @@ $block: #{$fd-namespace}-table;
       .#{$block}__cell {
         padding-top: 0.25rem;
         padding-bottom: 0.25rem;
+      }
+
+      &.#{$block}__row--hoverable {
+        @include fd-hover() {
+          + .#{$block}__row--secondary {
+            background-color: var(--sapList_Hover_Background);
+          }
+        }
+      }
+
+      &.#{$block}__row--activable {
+        @include fd-active() {
+          + .#{$block}__row--secondary {
+            @include fd-table-active();
+          }
+        }
       }
     }
 
