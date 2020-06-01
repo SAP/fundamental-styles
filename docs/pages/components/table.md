@@ -1152,31 +1152,23 @@ a contextual menu can be substituted to display all actions in one menu.
                         </div>
                     </div>
                     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverA2">
-                        <nav class="fd-menu fd-menu--compact">
-                            <ul class="fd-menu__list" role="menu">
-                                <li class="fd-menu__item" role="presentation">
-                                    <a class="fd-menu__link" href="#" role="menuitem">
-                                        <span class="fd-menu__addon-before sap-icon--sort-descending"></span>
-                                        <span class="fd-menu__title">Sort Descending</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item" role="presentation">
-                                    <a class="fd-menu__link" href="#" role="menuitem">
-                                        <span class="fd-menu__addon-before sap-icon--sort-ascending"></span>
-                                        <span class="fd-menu__title">Sort Ascendnig</span>
-                                    </a>            
-                                </li>
-                                <li class="fd-menu__item" role="presentation">
-                                    <div class="fd-menu__link">
-                                        <span class="fd-menu__addon-before sap-icon--filter"></span>
-                                        <div class="fd-form-item  fd-form-item--horizontal">
-                                            <label class="fd-form-label" for="input-1d">Filter</label>
-                                            <input class="fd-input fd-input--compact" id="input-1d">
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </nav>
+                        <ul class="fd-list fd-list--compact" role="list">
+                            <li tabindex="0" role="listitem" class="fd-list__item">
+                                <span class="fd-list__icon sap-icon--sort-descending"></span>
+                                <span class="fd-list__title">Sort Descending</span>
+                            </li>
+                            <li tabindex="0" role="listitem" class="fd-list__item">
+                                <span class="fd-list__icon sap-icon--sort-ascending"></span>
+                                <span class="fd-list__title">Sort Ascendnig</span>
+                            </li>
+                            <li role="listitem" class="fd-list__item">
+                                <span class="fd-list__icon sap-icon--filter"></span>
+                                <div class="fd-form-item  fd-form-item--horizontal">
+                                    <label class="fd-form-label" for="input-1d2">Filter</label>
+                                    <input class="fd-input fd-input--compact" id="input-1d2">
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </th>
