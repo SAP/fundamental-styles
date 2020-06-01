@@ -5,8 +5,6 @@ services:
   - docker
 git:
   depth: false
-env:
-  - DOCKER=true
 script:
   - npm run build:prod
 jobs:
