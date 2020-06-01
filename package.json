@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run style:remove && npm run build:default",
     "build:default": "npm run style:compile && npm run style:postCSS && npm run style:assets",
-    "build:prod": "NODE_ENV=production npm run build",
+    "build:prod": "cross-env NODE_ENV=production npm run build",
     "deploy": "gh-pages -d docs/_site",
     "docs:compile": "npm run build && npm run docs:config; cp dist/fundamental-styles.css docs/css",
     "docs:config": "./scripts/create-library-config.js",
@@ -41,10 +41,8 @@
     "storybook:visual-setup": "jest --config=./config/jest.config.js",
     "storybook:visual": "npm run build && start-server-and-test storybook:ci http-get://localhost:6006 storybook:visual-setup",
     "storybook:visual-update": "npm run build && server-test storybook:ci http-get://localhost:6006 'npm run storybook:visual-setup -- --updateSnapshot'",
-    "storybook:visual-docker": "DOCKER=true && npm run storybook:visual",
-    "storybook:visual-docker-windows": "set DOCKER=true && npm run storybook:visual",
-    "storybook:visual-update-docker": "DOCKER=true npm run storybook:visual-update",
-    "storybook:visual-update-docker-windows": "set DOCKER=true && npm run storybook:visual-update"
+    "storybook:visual-docker": "cross-env DOCKER=true && npm run storybook:visual",
+    "storybook:visual-update-docker": "cross-env DOCKER=true npm run storybook:visual-update"
   },
   "repository": {
     "type": "git",
@@ -77,11 +75,11 @@
     "browser-sync": "^2.26.7",
     "bundlesize": "^0.18.0",
     "clean-css-cli": "^4.3.0",
+    "cross-env": "^7.0.2",
     "css-loader": "^3.5.3",
     "cssnano": "^4.1.10",
     "eslint": "^7.0.0",
     "express": "^4.17.1",
-    "foreach-cli": "^1.8.1",
     "gh-pages": "^2.2.0",
     "github-assistant": "^0.3.0",
     "ip": "^1.1.5",
@@ -112,9 +110,6 @@
     "svelte": "^3.20.1",
     "svelte-loader": "^2.13.6",
     "write-yaml": "^1.0.0"
-  },
-  "peerDependencies": {
-    "@sap-theming/theming-base-content": "~11.1.17"
   },
   "directories": {
     "doc": "docs",
