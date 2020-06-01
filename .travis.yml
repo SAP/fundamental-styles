@@ -5,9 +5,6 @@ services:
   - docker
 git:
   depth: false
-env:
-  - DOCKER=true
-  - PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 script:
   - npm run build:prod
 jobs:
