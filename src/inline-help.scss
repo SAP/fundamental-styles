@@ -1,4 +1,4 @@
-@import "./settings";
+@import "./new-settings";
 @import "./functions";
 @import "./mixins";
 
@@ -9,7 +9,7 @@ $block: #{$fd-namespace}-inline-help;
   $fd-tooltip-icon-background-color: var(--sapButton_Neutral_Background) !default;
   $fd-tooltip-content-background-color: var(--sapTile_Background) !default;
   $fd-tooltip-content-color: var(--sapTextColor) !default;
-  $fd-tooltip-padding: fd-space(xs) !default;
+  $fd-tooltip-padding: 0.5rem !default;
   $fd-tooltip-icon-size: 1.125rem;
   $fd-tooltip-transition-params: $fd-animation-speed ease-in !default;
   $fd-tooltip-min-width: 21.875rem !default;
@@ -40,8 +40,8 @@ $block: #{$fd-namespace}-inline-help;
 
   // ELEMENTS *******************************************
   &__content {
-    @include fd-type("-1");
-
+    font-size: var(--sapFontSmallSize);
+    line-height: normal;
     background-color: $fd-tooltip-content-background-color;
     padding: $fd-tooltip-padding;
     display: block;

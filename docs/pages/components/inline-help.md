@@ -17,7 +17,7 @@ Inline help is used to display help text in a popover, often inline with headers
 ## Default Position
 The default positioning of inline help component is bottom right.
 {% capture inline-help %}
-<div class="fd-popover">
+<div class="fd-popover" aria-label ="inline-help">
     <div class="fd-popover__control">
         <span class="fd-inline-help" tabindex="0" role="button" aria-controls="h0C6A326" aria-expanded="false" aria-haspopup="true">
         </span>
@@ -34,7 +34,7 @@ The default positioning of inline help component is bottom right.
 
 ## Bottom Left Position
 {% capture inline-help %}
-<div class="fd-popover">
+<div class="fd-popover" aria-label ="inline-help">
     <div class="fd-popover__control">
         <span class="fd-inline-help" tabindex="0" role="button" aria-controls="bbh0C6A3261" aria-expanded="false" aria-haspopup="true">
         </span>
@@ -52,7 +52,7 @@ The default positioning of inline help component is bottom right.
 ## Bottom Center Position
 {% capture inline-help %}
 
-<div class="fd-popover">
+<div class="fd-popover" aria-label ="inline-help">
     <div class="fd-popover__control">
         <span class="fd-inline-help" tabindex="0" role="button" aria-controls="aah0C6A32611" aria-expanded="false" aria-haspopup="true">
         </span>
@@ -70,7 +70,7 @@ The default positioning of inline help component is bottom right.
 ## Right Position
 {% capture inline-help %}
 
-<div class="fd-popover">
+<div class="fd-popover" aria-label ="inline-help">
     <div class="fd-popover__control">
         <span class="fd-inline-help" tabindex="0" role="button" aria-controls="cch0C6A3261" aria-expanded="false" aria-haspopup="true">
         </span>
@@ -88,7 +88,7 @@ The default positioning of inline help component is bottom right.
 ## Left Position
 {% capture inline-help %}
 
-<div class="fd-popover">
+<div class="fd-popover" aria-label ="inline-help">
     <div class="fd-popover__control">
         <span class="fd-inline-help" tabindex="0" role="button" aria-controls="ddh0C6A3261" aria-expanded="false" aria-haspopup="true">
         </span>
