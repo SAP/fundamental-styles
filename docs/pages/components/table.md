@@ -35,21 +35,21 @@ A table is a set of tabular data. Line items can support data, images and action
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row fd-table__row--hoverable">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Middle Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row fd-table__row--hoverable">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Middle Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Middle Name</td>
             <td class="fd-table__cell">Last Name</td>
@@ -85,19 +85,19 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -120,19 +120,19 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
     </thead>
     <tbody class="fd-table__body fd-table__body--no-horizontal-borders fd-table__body--no-vertical-borders">
         <tr class="fd-table__row">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -161,19 +161,19 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -205,19 +205,19 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -249,19 +249,19 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -369,7 +369,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
                 <input type="checkbox" checked class="fd-checkbox" id="Ai4ez615">
                 <label class="fd-checkbox__label" for="Ai4ez615"></label>
             </td>
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -379,7 +379,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez617">
                 <label class="fd-checkbox__label" for="Ai4ez617"></label>
             </td>
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -389,7 +389,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
                 <input type="checkbox" class="fd-checkbox" id="Gi4ez611">
                 <label class="fd-checkbox__label" for="Gi4ez611"></label>
             </td>
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -422,7 +422,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
                 <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact" id="Ai4HFHG1">
                 <label class="fd-checkbox__label" for="Ai4HFHG1"></label>
             </td>
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -432,7 +432,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
                 <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4JKHG1">
                 <label class="fd-checkbox__label" for="Ai4JKHG1"></label>
             </td>
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -442,7 +442,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
                 <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4JH23G1">
                 <label class="fd-checkbox__label" for="Ai4JH23G1"></label>
             </td>
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -475,7 +475,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
                 <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact" id="Ai4JHf87">
                 <label class="fd-checkbox__label" for="Ai4JHf87"></label>
             </td>
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -485,7 +485,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
                 <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4Jj67">
                 <label class="fd-checkbox__label" for="Ai4Jj67"></label>
             </td>
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -495,7 +495,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
                 <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="AGjtJj67">
                 <label class="fd-checkbox__label" for="AGjtJj67"></label>
             </td>
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -820,7 +820,7 @@ Other indicators such as semantic states and modes can be added using the `--val
                 <input type="checkbox" class="fd-checkbox" id="Ai9ek611">
                 <label class="fd-checkbox__label" for="Ai9ek611"></label>
             </td>
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -831,7 +831,7 @@ Other indicators such as semantic states and modes can be added using the `--val
                 <input type="checkbox" class="fd-checkbox" id="Ai9ek673">
                 <label class="fd-checkbox__label" for="Ai9ek673"></label>
             </td>
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell fd-table__cell--valid">01/26/17</td>
@@ -842,7 +842,7 @@ Other indicators such as semantic states and modes can be added using the `--val
                 <input type="checkbox" class="fd-checkbox" id="Ai9ek69s">
                 <label class="fd-checkbox__label" for="Ai9ek69s"></label>
             </td>
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -853,7 +853,7 @@ Other indicators such as semantic states and modes can be added using the `--val
                 <input type="checkbox" class="fd-checkbox" id="Ai9ekk69s">
                 <label class="fd-checkbox__label" for="Ai9ekk69s"></label>
             </td>
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell fd-table__cell--warning">01/26/17</td>
@@ -864,7 +864,7 @@ Other indicators such as semantic states and modes can be added using the `--val
                 <input type="checkbox" class="fd-checkbox" id="Ai73k69s">
                 <label class="fd-checkbox__label" for="Ai73k69s"></label>
             </td>
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -875,7 +875,7 @@ Other indicators such as semantic states and modes can be added using the `--val
                 <input type="checkbox" class="fd-checkbox" id="Ai734F6s">
                 <label class="fd-checkbox__label" for="Ai734F6s"></label>
             </td>
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell fd-table__cell--error">01/26/17</td>
@@ -886,7 +886,7 @@ Other indicators such as semantic states and modes can be added using the `--val
                 <input type="checkbox" class="fd-checkbox" id="Ai73HE36s">
                 <label class="fd-checkbox__label" for="Ai73HE36s"></label>
             </td>
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -897,7 +897,7 @@ Other indicators such as semantic states and modes can be added using the `--val
                 <input type="checkbox" class="fd-checkbox" id="Ai7JDE36s">
                 <label class="fd-checkbox__label" for="Ai7JDE36s"></label>
             </td>
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell fd-table__cell--information">01/26/17</td>
@@ -908,7 +908,7 @@ Other indicators such as semantic states and modes can be added using the `--val
                 <input type="checkbox" class="fd-checkbox" id="Ai7JGD6s">
                 <label class="fd-checkbox__label" for="Ai7JGD6s"></label>
             </td>
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -996,7 +996,7 @@ a contextual menu can be substituted to display all actions in one menu.
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">01/26/17</td>
             <td class="fd-table__cell fd-table__cell--fit-content">
@@ -1029,7 +1029,7 @@ a contextual menu can be substituted to display all actions in one menu.
             </td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">01/26/17</td>
             <td class="fd-table__cell fd-table__cell--fit-content">
@@ -1062,7 +1062,7 @@ a contextual menu can be substituted to display all actions in one menu.
             </td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">01/26/17</td>
             <td class="fd-table__cell fd-table__cell--fit-content">
@@ -1185,17 +1185,17 @@ a contextual menu can be substituted to display all actions in one menu.
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a >user.name@email.com</a></td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
@@ -1324,7 +1324,7 @@ Navigation can be indicated on a row in the final column using the `.fd-table__c
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -1333,7 +1333,7 @@ Navigation can be indicated on a row in the final column using the `.fd-table__c
             </td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -1342,7 +1342,7 @@ Navigation can be indicated on a row in the final column using the `.fd-table__c
             </td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -1370,7 +1370,7 @@ Navigation can be indicated on a row in the final column using the `.fd-table__c
         </thead>
         <tbody class="fd-table__body">
             <tr class="fd-table__row">
-                <td class="fd-table__cell">user.name@email.com</td>
+                <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
                 <td class="fd-table__cell">First Name</td>
                 <td class="fd-table__cell">Last Name</td>
                 <td class="fd-table__cell">01/26/17</td>
@@ -1379,7 +1379,7 @@ Navigation can be indicated on a row in the final column using the `.fd-table__c
                 </td>
             </tr>
             <tr class="fd-table__row">
-                <td class="fd-table__cell">user.name@email.com</td>
+                <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
                 <td class="fd-table__cell">First Name</td>
                 <td class="fd-table__cell">Last Name</td>
                 <td class="fd-table__cell">01/26/17</td>
@@ -1388,7 +1388,7 @@ Navigation can be indicated on a row in the final column using the `.fd-table__c
                 </td>
             </tr>
             <tr class="fd-table__row">
-                <td class="fd-table__cell">user.name@email.com</td>
+                <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
                 <td class="fd-table__cell">First Name</td>
                 <td class="fd-table__cell">Last Name</td>
                 <td class="fd-table__cell">01/26/17</td>
