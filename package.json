@@ -38,9 +38,9 @@
     "storybook": "npm run build && start-storybook -s ./.storybook/resources -p 6006",
     "build-storybook": "build-storybook",
     "storybook:ci": "npm run storybook -- --ci --quiet",
-    "storybook:visual-setup": "jest --config=./config/jest.config.js",
+    "storybook:visual-setup": "cross-env DOCKER=true PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true jest --config=./config/jest.config.js",
     "storybook:visual": "npm run build && start-server-and-test storybook:ci http-get://localhost:6006 storybook:visual-setup",
-    "storybook:visual-update": "npm run build && server-test storybook:ci http-get://localhost:6006 'npm run storybook:visual-setup -- --updateSnapshot'"
+    "storybook:visual:update": "npm run build && server-test storybook:ci http-get://localhost:6006 'npm run storybook:visual-setup -- --updateSnapshot'"
   },
   "repository": {
     "type": "git",
@@ -54,7 +54,6 @@
   "homepage": "https://sap.github.io/fundamental-styles/",
   "devDependencies": {
     "@babel/core": "^7.9.6",
-    "@babel/plugin-transform-runtime": "^7.9.6",
     "@sap-theming/theming-base-content": "~11.1.19",
     "@storybook/addon-a11y": "^5.3.18",
     "@storybook/addon-actions": "^5.3.18",
