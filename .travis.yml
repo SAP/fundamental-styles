@@ -5,8 +5,6 @@ services:
   - docker
 git:
   depth: false
-cache:
-  npm: false
 script:
   - npm run build:prod
 jobs:
@@ -16,8 +14,6 @@ jobs:
       - docker pull backstopjs/backstopjs:3.9.2
       - npm run test:ci-config
       - npm run test
-  -
-    script: npm run storybook:visual-docker
   -
     script: npm run lint
   -
