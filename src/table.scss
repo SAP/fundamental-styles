@@ -118,7 +118,6 @@ $block: #{$fd-namespace}-table;
     padding: 0 $fd-table-cell-padding;
     color: inherit;
     border-right: $fd-table-border;
-    word-break: break-word;
 
     &--valid {
       color: var(--sapSuccessColor);

@@ -895,7 +895,7 @@ modifiers. Also some cells should be merged into paragraphs.
 <br>
 <div style="max-width: 450px">
     <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-        <h4 style="margin-bottom:0px;">Responsive Table - Pop-in Mode with Checkboxes</h4>
+        <h4 style="margin-bottom:0px;">Responsive Table - Pop-in Mode with Checkboxes and Navigation Indicator</h4>
         <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
     </div>
     <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
@@ -912,7 +912,7 @@ modifiers. Also some cells should be merged into paragraphs.
                 <td class="fd-table__cell fd-table__cell--fit-content">
                     5 EUR
                 </td>
-                <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding fd-table__cell--navigated">
                     <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
                 </td>
             </tr>
