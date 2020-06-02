@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.0"></a>
+# [0.11.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.10.1-rc.1...v0.11.0-rc.0) (2020-06-02)
+
+
+### Features
+
+* remove image ([#1082](https://github.com/SAP/fundamental-styles/issues/1082)) ([8a11fc0](https://github.com/SAP/fundamental-styles/commit/8a11fc0))
+
+
+
 <a name="0.10.1-rc.1"></a>
 ## [0.10.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.10.1-rc.0...v0.10.1-rc.1) (2020-06-02)
 
