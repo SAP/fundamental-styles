@@ -152,10 +152,6 @@ entries:
       url: /components/link.html
       output: web
 
-    - title: Loading Spinner
-      url: /components/loading-spinner.html
-      output: web
-
     - title: Localization Editor
       url: /components/localization-editor.html
       output: web
