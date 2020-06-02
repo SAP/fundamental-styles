@@ -704,7 +704,7 @@ Advanced Toolbar can be used to customize table. Certain buttons trigger dialogs
     <button class="fd-button fd-button--compact fd-button--transparent sap-icon--filter" onclick="toggleDialog('filter-dialog-example', true)"></button>
     <button class="fd-button fd-button--compact fd-button--transparent sap-icon--action-settings" onclick="toggleDialog('settings-dialog-example', true)"></button>
 </div>
-<table class="fd-table">
+<table class="fd-table fd-table--compact">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
             <th class="fd-table__cell" scope="col">Name</th>
@@ -775,7 +775,7 @@ modifiers. Also some cells should be merged into paragraphs.
         </tr>
     </thead>
     <tbody class="fd-table__body">
-        <tr class="fd-table__row fd-table__row--activable">
+        <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input type="checkbox" class="fd-checkbox" id="EWuzWh">
                 <label class="fd-checkbox__label" for="EWuzWh"></label>
@@ -792,7 +792,7 @@ modifiers. Also some cells should be merged into paragraphs.
                 <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
             </td>
         </tr>
-        <tr class="fd-table__row fd-table__row--activable">
+        <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input type="checkbox" class="fd-checkbox" id="19j0Sc">
                 <label class="fd-checkbox__label" for="19j0Sc"></label>
@@ -809,7 +809,7 @@ modifiers. Also some cells should be merged into paragraphs.
                 <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
             </td>
         </tr>
-        <tr class="fd-table__row fd-table__row--activable">
+        <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input type="checkbox" class="fd-checkbox" id="a7SfGX">
                 <label class="fd-checkbox__label" for="a7SfGX"></label>
@@ -900,7 +900,7 @@ modifiers. Also some cells should be merged into paragraphs.
     </div>
     <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
         <tbody class="fd-table__body">
-            <tr class="fd-table__row fd-table__row--main fd-table__row--activable fd-table__row--hoverable">
+            <tr class="fd-table__row fd-table__row--main">
                 <td class="fd-table__cell fd-table__cell--checkbox">
                     <input type="checkbox" class="fd-checkbox" id="CWkhTG">
                     <label class="fd-checkbox__label" for="CWkhTG"></label>
@@ -912,7 +912,7 @@ modifiers. Also some cells should be merged into paragraphs.
                 <td class="fd-table__cell fd-table__cell--fit-content">
                     5 EUR
                 </td>
-                <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding fd-table__cell--navigated">
+                <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
                     <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
                 </td>
             </tr>
@@ -931,7 +931,7 @@ modifiers. Also some cells should be merged into paragraphs.
                     </p>
                 </td>
             </tr>
-            <tr class="fd-table__row fd-table__row--main fd-table__row--activable fd-table__row--hoverable">
+            <tr class="fd-table__row fd-table__row--main">
                 <td class="fd-table__cell fd-table__cell--checkbox">
                     <input type="checkbox" class="fd-checkbox" id="Yeas6w">
                     <label class="fd-checkbox__label" for="Yeas6w"></label>
