@@ -128,10 +128,6 @@ entries:
       url: /components/icon.html
       output: web
 
-    - title: Identifier
-      url: /components/identifier.html
-      output: web
-
     - title: Info Label
       url: /components/info-label.html
       output: web
