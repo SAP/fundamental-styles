@@ -17,7 +17,7 @@ else
   release_tag="v$release_tag"
 fi
 
-echo "$std_ver"	echo "$std_ver"
+echo "$std_ver"
 echo "$release_tag"
 
 git push --follow-tags "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" master > /dev/null 2>&1;
