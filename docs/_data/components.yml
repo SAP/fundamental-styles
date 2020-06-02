@@ -45,9 +45,6 @@ items:
     - title: List
       meta: list
 
-    - title: Loading Spinner
-      meta: loading-spinner
-
     - title: Localization Editor
       meta: localization-editor
 
