@@ -128,14 +128,6 @@ entries:
       url: /components/icon.html
       output: web
 
-    - title: Identifier
-      url: /components/identifier.html
-      output: web
-
-    - title: Image
-      url: /components/image.html
-      output: web
-
     - title: Info Label
       url: /components/info-label.html
       output: web
@@ -154,10 +146,6 @@ entries:
 
     - title: Link
       url: /components/link.html
-      output: web
-
-    - title: Loading Spinner
-      url: /components/loading-spinner.html
       output: web
 
     - title: Localization Editor
