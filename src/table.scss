@@ -298,6 +298,8 @@ $block: #{$fd-namespace}-table;
   }
 
   &__inner {
+    @include fd-reset();
+
     width: 100%;
     display: flex;
     justify-content: space-between;

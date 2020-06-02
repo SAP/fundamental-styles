@@ -359,7 +359,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
     <thead class="fd-table__header">
         <tr class="fd-table__row">
             <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez611">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai4ez611">
                 <label class="fd-checkbox__label" for="Ai4ez611"></label>
             </th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -371,7 +371,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
     <tbody class="fd-table__body">
         <tr class="fd-table__row" aria-selected="true">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" checked class="fd-checkbox" id="Ai4ez615">
+                <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox" id="Ai4ez615">
                 <label class="fd-checkbox__label" for="Ai4ez615"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
@@ -381,7 +381,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez617">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai4ez617">
                 <label class="fd-checkbox__label" for="Ai4ez617"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
@@ -391,7 +391,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox" id="Gi4ez611">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Gi4ez611">
                 <label class="fd-checkbox__label" for="Gi4ez611"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
@@ -412,7 +412,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
     <thead class="fd-table__header">
         <tr class="fd-table__row">
             <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
-                <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4HF611">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4HF611">
                 <label class="fd-checkbox__label" for="Ai4HF611"></label>
             </th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -424,7 +424,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
     <tbody class="fd-table__body">
         <tr class="fd-table__row" aria-selected="true">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact" id="Ai4HFHG1">
+                <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact" id="Ai4HFHG1">
                 <label class="fd-checkbox__label" for="Ai4HFHG1"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
@@ -434,7 +434,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4JKHG1">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4JKHG1">
                 <label class="fd-checkbox__label" for="Ai4JKHG1"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
@@ -444,7 +444,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4JH23G1">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4JH23G1">
                 <label class="fd-checkbox__label" for="Ai4JH23G1"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
@@ -465,7 +465,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
     <thead class="fd-table__header">
         <tr class="fd-table__row">
             <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
-                <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4JH2BF87">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4JH2BF87">
                 <label class="fd-checkbox__label" for="Ai4JH2BF87"></label>
             </th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -477,7 +477,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
     <tbody class="fd-table__body">
         <tr class="fd-table__row" aria-selected="true">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact" id="Ai4JHf87">
+                <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact" id="Ai4JHf87">
                 <label class="fd-checkbox__label" for="Ai4JHf87"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
@@ -487,7 +487,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4Jj67">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4Jj67">
                 <label class="fd-checkbox__label" for="Ai4Jj67"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
@@ -497,7 +497,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="AGjtJj67">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="AGjtJj67">
                 <label class="fd-checkbox__label" for="AGjtJj67"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
@@ -616,10 +616,10 @@ Advanced Toolbar can be used to customize table. Certain buttons trigger dialogs
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact" onclick="toggleDialog('filter-dialog-example', false)">OK</button>
+                    <button aria-label="navigation" class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact" onclick="toggleDialog('filter-dialog-example', false)">OK</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact" onclick="toggleDialog('filter-dialog-example', false)">Cancel</button>
+                    <button aria-label="navigation" class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact" onclick="toggleDialog('filter-dialog-example', false)">Cancel</button>
                 </div>
             </div>
         </footer>
@@ -639,14 +639,14 @@ Advanced Toolbar can be used to customize table. Certain buttons trigger dialogs
         <div class="fd-dialog__subheader fd-bar fd-bar--subheader">
             <div class="fd-bar__middle">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--icon fd-button--transparent fd-button--compact sap-icon--arrow-top"></button>
-                    <button class="fd-button fd-button--icon fd-button--transparent fd-button--compact sap-icon--arrow-bottom"></button>
+                    <button aria-label="navigation" class="fd-button fd-button--icon fd-button--transparent fd-button--compact sap-icon--arrow-top"></button>
+                    <button aria-label="navigation" class="fd-button fd-button--icon fd-button--transparent fd-button--compact sap-icon--arrow-bottom"></button>
                 </div>
                 <div class="fd-bar__element fd-bar__element--full-width">
                     <div class="fd-input-group">
                         <input class="fd-input fd-input-group__input fd-input--compact" type="text" placeholder="Search...">
                         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                            <button class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact sap-icon--search"></button>
+                            <button aria-label="navigation" class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact sap-icon--search"></button>
                         </span>
                     </div>
                 </div>
@@ -655,31 +655,31 @@ Advanced Toolbar can be used to customize table. Certain buttons trigger dialogs
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
             <ul class="fd-list fd-list--multi-input fd-list--compact">
                 <li class="fd-list__item is-selected" role="option">
-                  <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="GGi4ezFD1">
+                  <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="GGi4ezFD1">
                   <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="GGi4ezFD1">
                       <span class="fd-list__title">All</span>
                   </label>
                 </li>
                 <li class="fd-list__item is-selected" role="option">
-                  <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="GGi4ez641">
+                  <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="GGi4ez641">
                   <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="GGi4ez641">
                       <span class="fd-list__title">Name</span>
                   </label>
                 </li>
                 <li class="fd-list__item is-selected" role="option">
-                  <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai4FGFG612">
+                  <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai4FGFG612">
                   <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="Ai4FGFG612">
                       <span class="fd-list__title">Status</span>
                   </label>
                 </li>
                 <li class="fd-list__item is-selected" role="option">
-                  <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai4e88614">
+                  <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai4e88614">
                   <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="Ai4e88614">
                       <span class="fd-list__title">Price</span>
                   </label>
                 </li>
                 <li class="fd-list__item is-selected" role="option">
-                  <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai4egh6024">
+                  <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai4egh6024">
                   <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="Ai4egh6024">
                       <span class="fd-list__title">Country</span>
                   </label>
@@ -689,10 +689,10 @@ Advanced Toolbar can be used to customize table. Certain buttons trigger dialogs
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact" onclick="toggleDialog('settings-dialog-example', false)">OK</button>
+                    <button aria-label="navigation" class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact" onclick="toggleDialog('settings-dialog-example', false)">OK</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact" onclick="toggleDialog('settings-dialog-example', false)">Cancel</button>
+                    <button aria-label="navigation" class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact" onclick="toggleDialog('settings-dialog-example', false)">Cancel</button>
                 </div>
             </div>
         </footer>
@@ -701,8 +701,8 @@ Advanced Toolbar can be used to customize table. Certain buttons trigger dialogs
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin-bottom:0px;">Table With Advanced Shellbar</h4>
     <div class="fd-toolbar__spacer"></div>
-    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--filter" onclick="toggleDialog('filter-dialog-example', true)"></button>
-    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--action-settings" onclick="toggleDialog('settings-dialog-example', true)"></button>
+    <button aria-label="navigation" class="fd-button fd-button--compact fd-button--transparent sap-icon--filter" onclick="toggleDialog('filter-dialog-example', true)"></button>
+    <button aria-label="navigation" class="fd-button fd-button--compact fd-button--transparent sap-icon--action-settings" onclick="toggleDialog('settings-dialog-example', true)"></button>
 </div>
 <table class="fd-table fd-table--compact">
     <thead class="fd-table__header">
@@ -764,7 +764,7 @@ modifiers. Also some cells should be merged into paragraphs.
     <thead class="fd-table__header">
         <tr class="fd-table__row">
             <th class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox" id="kqqzPI">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="kqqzPI">
                 <label class="fd-checkbox__label" for="kqqzPI"></label>
             </th>
             <th class="fd-table__cell" scope="col">Name</th>
@@ -777,7 +777,7 @@ modifiers. Also some cells should be merged into paragraphs.
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox" id="EWuzWh">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="EWuzWh">
                 <label class="fd-checkbox__label" for="EWuzWh"></label>
             </td>
             <td class="fd-table__cell">Banana</td>
@@ -794,7 +794,7 @@ modifiers. Also some cells should be merged into paragraphs.
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox" id="19j0Sc">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="19j0Sc">
                 <label class="fd-checkbox__label" for="19j0Sc"></label>
             </td>
             <td class="fd-table__cell">Pineapple</td>
@@ -811,7 +811,7 @@ modifiers. Also some cells should be merged into paragraphs.
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox" id="a7SfGX">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="a7SfGX">
                 <label class="fd-checkbox__label" for="a7SfGX"></label>
             </td>
             <td class="fd-table__cell">Orange</td>
@@ -902,7 +902,7 @@ modifiers. Also some cells should be merged into paragraphs.
         <tbody class="fd-table__body">
             <tr class="fd-table__row fd-table__row--main">
                 <td class="fd-table__cell fd-table__cell--checkbox">
-                    <input type="checkbox" class="fd-checkbox" id="CWkhTG">
+                    <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="CWkhTG">
                     <label class="fd-checkbox__label" for="CWkhTG"></label>
                 </td>
                 <td class="fd-table__cell">
@@ -933,7 +933,7 @@ modifiers. Also some cells should be merged into paragraphs.
             </tr>
             <tr class="fd-table__row fd-table__row--main">
                 <td class="fd-table__cell fd-table__cell--checkbox">
-                    <input type="checkbox" class="fd-checkbox" id="Yeas6w">
+                    <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Yeas6w">
                     <label class="fd-checkbox__label" for="Yeas6w"></label>
                 </td>
                 <td class="fd-table__cell">
@@ -984,7 +984,7 @@ Other indicators such as semantic states and modes can be added using the `--val
         <tr class="fd-table__row">
             <th class="fd-table__cell fd-table__cell--status-indicator"></th>
             <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
-                <input type="checkbox" class="fd-checkbox" id="Ai9ez611">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ez611">
                 <label class="fd-checkbox__label" for="Ai9ez611"></label>
             </th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -997,7 +997,7 @@ Other indicators such as semantic states and modes can be added using the `--val
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--status-indicator"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox" id="Ai9ek611">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ek611">
                 <label class="fd-checkbox__label" for="Ai9ek611"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
@@ -1008,7 +1008,7 @@ Other indicators such as semantic states and modes can be added using the `--val
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--valid"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox" id="Ai9ek673">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ek673">
                 <label class="fd-checkbox__label" for="Ai9ek673"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
@@ -1019,7 +1019,7 @@ Other indicators such as semantic states and modes can be added using the `--val
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--status-indicator"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox" id="Ai9ek69s">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ek69s">
                 <label class="fd-checkbox__label" for="Ai9ek69s"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
@@ -1030,7 +1030,7 @@ Other indicators such as semantic states and modes can be added using the `--val
          <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--warning"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox" id="Ai9ekk69s">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ekk69s">
                 <label class="fd-checkbox__label" for="Ai9ekk69s"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
@@ -1041,7 +1041,7 @@ Other indicators such as semantic states and modes can be added using the `--val
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--status-indicator"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox" id="Ai73k69s">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai73k69s">
                 <label class="fd-checkbox__label" for="Ai73k69s"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
@@ -1052,7 +1052,7 @@ Other indicators such as semantic states and modes can be added using the `--val
          <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--error"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox" id="Ai734F6s">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai734F6s">
                 <label class="fd-checkbox__label" for="Ai734F6s"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
@@ -1063,7 +1063,7 @@ Other indicators such as semantic states and modes can be added using the `--val
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--status-indicator"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox" id="Ai73HE36s">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai73HE36s">
                 <label class="fd-checkbox__label" for="Ai73HE36s"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
@@ -1074,7 +1074,7 @@ Other indicators such as semantic states and modes can be added using the `--val
          <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--information"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox" id="Ai7JDE36s">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai7JDE36s">
                 <label class="fd-checkbox__label" for="Ai7JDE36s"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
@@ -1085,7 +1085,7 @@ Other indicators such as semantic states and modes can be added using the `--val
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--status-indicator"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input type="checkbox" class="fd-checkbox" id="Ai7JGD6s">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai7JGD6s">
                 <label class="fd-checkbox__label" for="Ai7JGD6s"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
@@ -1182,7 +1182,7 @@ a contextual menu can be substituted to display all actions in one menu.
             <td class="fd-table__cell fd-table__cell--fit-content">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="pQqQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                        <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="pQqQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="pQqQRFF3">
                         <nav class="fd-menu">
@@ -1215,7 +1215,7 @@ a contextual menu can be substituted to display all actions in one menu.
             <td class="fd-table__cell fd-table__cell--fit-content">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="G54qQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                        <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="G54qQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="G54qQRFF3">
                         <nav class="fd-menu">
@@ -1248,7 +1248,7 @@ a contextual menu can be substituted to display all actions in one menu.
             <td class="fd-table__cell fd-table__cell--fit-content">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="G54JRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                        <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="G54JRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="G54JRFF3">
                         <nav class="fd-menu">
@@ -1501,7 +1501,7 @@ Navigation can be indicated on a row in the final column using the `.fd-table__c
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
             <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
-                <button class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
+                <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
             </td>
         </tr>
         <tr class="fd-table__row">
@@ -1510,7 +1510,7 @@ Navigation can be indicated on a row in the final column using the `.fd-table__c
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated" scope="col">
-                <button class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
+                <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
             </td>
         </tr>
         <tr class="fd-table__row">
@@ -1519,7 +1519,7 @@ Navigation can be indicated on a row in the final column using the `.fd-table__c
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
             <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
-                <button class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
+                <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
             </td>
         </tr>
     </tbody>
@@ -1547,7 +1547,7 @@ Navigation can be indicated on a row in the final column using the `.fd-table__c
                 <td class="fd-table__cell">Last Name</td>
                 <td class="fd-table__cell">01/26/17</td>
                 <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
-                    <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                    <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
                 </td>
             </tr>
             <tr class="fd-table__row">
@@ -1556,7 +1556,7 @@ Navigation can be indicated on a row in the final column using the `.fd-table__c
                 <td class="fd-table__cell">Last Name</td>
                 <td class="fd-table__cell">01/26/17</td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated" scope="col">
-                    <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                    <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
                 </td>
             </tr>
             <tr class="fd-table__row">
@@ -1565,7 +1565,7 @@ Navigation can be indicated on a row in the final column using the `.fd-table__c
                 <td class="fd-table__cell">Last Name</td>
                 <td class="fd-table__cell">01/26/17</td>
                 <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
-                    <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                    <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
                 </td>
             </tr>
         </tbody>
