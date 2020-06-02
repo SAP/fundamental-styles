@@ -1,0 +1,239 @@
+@import "./listDefinitions.scss";
+
+.#{$block} {
+  @include fd-reset();
+
+  position: relative;
+  list-style: none;
+  width: 100%;
+
+  &__item,
+  &__group-header,
+  &__footer {
+    @include fd-reset();
+
+    display: flex;
+    align-items: center;
+    padding: 0 $fd-list-item-padding-x;
+    height: 2.75rem;
+  }
+
+  &__item {
+    @include fake-list-outline();
+
+    border-bottom: $fd-list-item-border;
+    background: var(--sapList_Background);
+    position: relative;
+
+    &--no-data {
+      .#{$block}__title {
+        text-align: center;
+      }
+    }
+
+    &--action {
+      padding: 0;
+      text-align: center;
+
+      &:first-child {
+        border-top: $fd-list-item-border;
+      }
+
+      .#{$block}__title {
+        @include list-item-states();
+
+        padding: 0 $fd-list-item-padding-x;
+        height: 100%;
+        width: 100%;
+        background: transparent;
+        color: var(--sapButton_TextColor);
+        pointer-events: all;
+        cursor: pointer;
+
+        @include fd-focus() {
+          outline-style: dotted;
+          outline-width: var(--sapContent_FocusWidth);
+          outline-color: var(--sapContent_FocusColor);
+          outline-offset: -0.125rem;
+
+          @include fd-active() {
+            outline-color: var(--sapContent_ContrastFocusColor);
+          }
+        }
+
+        &::-moz-focus-inner {
+          border: 0;
+        }
+      }
+    }
+  }
+
+  &__title,
+  &__secondary {
+    @include fd-reset();
+    @include fd-ellipsis();
+    @include ie11-active-state-fix();
+
+    line-height: 1rem;
+    color: var(--sapList_TextColor);
+  }
+
+  &__title {
+    flex: 3 3 10%;
+    font-size: $fd-list-large-font-size;
+
+    &:last-child:first-child {
+      flex-basis: auto;
+    }
+  }
+
+  &__secondary {
+    font-size: $fd-list-normal-font-size;
+    flex: 2 2 10%;
+    text-align: right;
+    padding-left: 1rem;
+
+    @include fd-rtl() {
+      text-align: left;
+      padding-right: 1rem;
+      padding-left: 0;
+    }
+  }
+
+  &__icon {
+    @include fd-reset();
+    @include ie11-active-state-fix();
+
+    color: var(--sapList_TextColor);
+    flex: 0 0 auto;
+    width: 2.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--sapFontHeader4Size);
+
+    &:first-child {
+      margin-left: -1rem;
+    }
+
+    &:last-child {
+      margin-right: -1rem;
+    }
+
+    @include fd-rtl() {
+      &:first-child {
+        margin-right: -1rem;
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-left: -1rem;
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__link {
+    @include fd-reset();
+    @include fake-list-outline();
+    @include list-item-states();
+
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 $fd-list-item-padding-x;
+    cursor: pointer;
+  }
+
+  &__group-header {
+    background: var(--sapList_GroupHeaderBackground);
+    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_GroupHeaderBorderColor);
+    color: var(--sapList_GroupHeaderTextColor);
+    align-items: flex-end;
+    font-size: $fd-list-normal-font-size;
+    font-weight: bold;
+    height: 2.75rem;
+    line-height: 2rem;
+  }
+
+  &__footer {
+    background: var(--sapList_FooterBackground);
+    color: var(--sapList_FooterTextColor);
+    font-size: $fd-list-normal-font-size;
+    height: 2rem;
+  }
+
+  &__bold {
+    font-weight: bold;
+  }
+
+  &__message {
+    @include fd-reset();
+
+    position: absolute;
+    line-height: 2rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    padding-left: $fd-list-message-padding-left;
+    font-size: var(--sapFontSmallSize);
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @include fd-rtl() {
+      padding-left: 0;
+      padding-right: $fd-list-message-padding-left;
+    }
+
+    &--error {
+      background-color: var(--sapErrorBackground);
+    }
+
+    &--warning {
+      background-color: var(--sapWarningBackground);
+    }
+
+    &--success {
+      background-color: var(--sapSuccessBackground);
+    }
+
+    &--information {
+      background-color: var(--sapInformationBackground);
+    }
+  }
+
+  &--compact {
+    .#{$block}__item {
+      height: 2rem;
+    }
+
+    .#{$block}__title {
+      font-size: $fd-list-normal-font-size;
+    }
+
+    .#{$block}__icon {
+      font-size: $fd-list-large-font-size;
+    }
+  }
+
+  &--no-border {
+    .#{$block}__item,
+    .#{$block}__group-header {
+      border-bottom: 0;
+      border-top: 0;
+    }
+
+    .#{$block}__item {
+      @include fd-selected() {
+        border-bottom: $fd-list-selected-state-border-bottom;
+      }
+    }
+  }
+
+  &--has-message {
+    padding-top: 2rem;
+  }
+}

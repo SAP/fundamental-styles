@@ -1,0 +1,73 @@
+@import "./listDefinitions.scss";
+
+.#{$block} {
+  &--navigation-indication {
+
+    .#{$block}__item {
+      &::after {
+        min-width: $fd-list-navigation-indicator-width - 1rem;
+        content: '';
+      }
+    }
+
+    .#{$block}__item.#{$block}__item--link {
+      &::after {
+        content: none;
+      }
+
+      padding-right: 0;
+
+      @include fd-rtl() {
+        padding-left: 0;
+        padding-right: initial;
+      }
+    }
+
+    .#{$block}__link {
+      &::after {
+        min-width: $fd-list-navigation-indicator-width;
+        content: '';
+      }
+
+      &--navigation-indicator {
+        &::after {
+          @include fd-flex-center();
+
+          height: 100%;
+          font-family: "SAP-icons";
+          content: '\e1ed';
+          color: var(--sapContent_NonInteractiveIconColor);
+          font-size: var(--sapFontSmallSize);
+          text-decoration: none;
+          text-transform: none;
+        }
+
+        @include fd-rtl() {
+          &::after {
+            content: '\e1ee';
+          }
+        }
+      }
+    }
+
+    .#{$block}__icon {
+      &:last-child {
+        margin: 0;
+      }
+
+      @include fd-rtl() {
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+
+    .is-navigated {
+      box-shadow: $fd-list-navigation-navigator-bar-right;
+
+      @include fd-rtl() {
+        box-shadow: $fd-list-navigation-navigator-bar-left;
+      }
+    }
+  }
+}
