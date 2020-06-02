@@ -1,6 +1,6 @@
 {
   "name": "fundamental-styles",
-  "version": "0.10.0",
+  "version": "0.11.0-rc.0",
   "description": "Fundamental Styles is a Design System and HTML/CSS Component Library used to build modern Product User Experiences with the SAP look and feel. Learn more about this project at - http://sap.github.io/fundamental-styles/",
   "main": "dist/fundamental-styles.css",
   "scripts": {
@@ -57,20 +57,20 @@
   "license": "Apache-2.0",
   "homepage": "https://sap.github.io/fundamental-styles/",
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-transform-runtime": "^7.10.1",
     "@sap-theming/theming-base-content": "~11.1.19",
-    "@storybook/addon-a11y": "^5.3.18",
-    "@storybook/addon-actions": "^5.3.18",
-    "@storybook/addon-cssresources": "^5.3.18",
-    "@storybook/addon-knobs": "^5.3.18",
-    "@storybook/addon-links": "^5.3.18",
-    "@storybook/addon-storyshots": "^5.3.18",
-    "@storybook/addon-storyshots-puppeteer": "^5.3.18",
-    "@storybook/addon-viewport": "^5.3.18",
-    "@storybook/addons": "^5.3.18",
+    "@storybook/addon-a11y": "^5.3.19",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-cssresources": "^5.3.19",
+    "@storybook/addon-knobs": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addon-storyshots": "^5.3.19",
+    "@storybook/addon-storyshots-puppeteer": "^5.3.19",
+    "@storybook/addon-viewport": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
     "@storybook/preset-scss": "^1.0.2",
-    "@storybook/svelte": "^5.3.18",
+    "@storybook/svelte": "^5.3.19",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "backstopjs": "3.9.2",
@@ -79,7 +79,7 @@
     "clean-css-cli": "^4.3.0",
     "css-loader": "^3.5.3",
     "cssnano": "^4.1.10",
-    "eslint": "^7.0.0",
+    "eslint": "^7.1.0",
     "express": "^4.17.1",
     "foreach-cli": "^1.8.1",
     "gh-pages": "^2.2.0",
@@ -114,7 +114,7 @@
     "write-yaml": "^1.0.0"
   },
   "peerDependencies": {
-    "@sap-theming/theming-base-content": "~11.1.17"
+    "@sap-theming/theming-base-content": "~11.1.19"
   },
   "directories": {
     "doc": "docs",
