@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.5"></a>
+# [0.11.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.4...v0.11.0-rc.5) (2020-06-02)
+
+
+### Features
+
+* [#1014](https://github.com/SAP/fundamental-styles/issues/1014) Inline help rebuild with popover component ([#1069](https://github.com/SAP/fundamental-styles/issues/1069)) ([f224afc](https://github.com/SAP/fundamental-styles/commit/f224afc)), closes [#1067](https://github.com/SAP/fundamental-styles/issues/1067) [#1065](https://github.com/SAP/fundamental-styles/issues/1065) [#1063](https://github.com/SAP/fundamental-styles/issues/1063) [#1064](https://github.com/SAP/fundamental-styles/issues/1064) [#1068](https://github.com/SAP/fundamental-styles/issues/1068) [#1070](https://github.com/SAP/fundamental-styles/issues/1070) [#895](https://github.com/SAP/fundamental-styles/issues/895) [#1059](https://github.com/SAP/fundamental-styles/issues/1059) [#1073](https://github.com/SAP/fundamental-styles/issues/1073) [#1024](https://github.com/SAP/fundamental-styles/issues/1024) [#1075](https://github.com/SAP/fundamental-styles/issues/1075) [#1071](https://github.com/SAP/fundamental-styles/issues/1071) [#1076](https://github.com/SAP/fundamental-styles/issues/1076) [#1077](https://github.com/SAP/fundamental-styles/issues/1077) [#1084](https://github.com/SAP/fundamental-styles/issues/1084) [#1078](https://github.com/SAP/fundamental-styles/issues/1078) [#1082](https://github.com/SAP/fundamental-styles/issues/1082) [#1079](https://github.com/SAP/fundamental-styles/issues/1079) [#1081](https://github.com/SAP/fundamental-styles/issues/1081)
+
+
+
 <a name="0.11.0-rc.4"></a>
 # [0.11.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.3...v0.11.0-rc.4) (2020-06-02)
 
