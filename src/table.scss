@@ -137,6 +137,7 @@ $block: #{$fd-namespace}-table;
 
     &--checkbox {
       width: $fd-table-cell-fit-content-width;
+      vertical-align: baseline;
 
       @include fd-table-reset-spacing();
     }
