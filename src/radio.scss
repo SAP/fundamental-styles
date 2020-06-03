@@ -83,7 +83,7 @@ $block: #{$fd-namespace}-radio;
       }
     }
 
-    &:empty {
+    @include fd-empty() {
       padding: $fd-radio-outer-circle-margin;
       margin: 0;
 
@@ -165,7 +165,7 @@ $block: #{$fd-namespace}-radio;
         }
       }
 
-      &:empty {
+      @include fd-empty() {
         padding: $fd-radio-outer-circle-margin-compact;
         margin: 0;
 

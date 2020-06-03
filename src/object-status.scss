@@ -135,7 +135,7 @@ $color-accents: (
   }
 
   // ICON ONLY MODE
-  &:empty {
+  @include fd-empty() {
     justify-content: center;
     padding-right: 0;
     padding-left: 0;
@@ -152,7 +152,7 @@ $color-accents: (
       padding-left: $fd-object-status-icon-padding;
     }
 
-    &:empty {
+    @include fd-empty() {
       &::before {
         padding-right: 0;
         padding-left: 0;
@@ -251,7 +251,7 @@ $color-accents: (
     }
 
     // ICON ONLY MODE
-    &:empty {
+    @include fd-empty() {
       height: $fd-object-status-inverted-height-empty;
       width: auto;
       min-width: $fd-object-status-inverted-min-width;
@@ -301,7 +301,7 @@ $color-accents: (
       }
 
       // ICON ONLY MODE
-      &:empty {
+      @include fd-empty() {
         width: auto;
         height: $fd-object-status-min-height-large-inverted-empty;
         min-width: $fd-object-status-min-width-large-inverted-empty;

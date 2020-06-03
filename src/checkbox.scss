@@ -87,7 +87,7 @@ $block: #{$fd-namespace}-checkbox;
       outline: none;
     }
 
-    &:empty {
+    @include fd-empty() {
       padding: $fd-checkbox-margin;
       margin: 0;
 
@@ -179,7 +179,7 @@ $block: #{$fd-namespace}-checkbox;
         }
       }
 
-      &:empty {
+      @include fd-empty() {
         padding: $fd-checkbox-margin-compact;
         margin: 0;
 
