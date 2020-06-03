@@ -1,70 +1,13 @@
 {% extends "layout.njk" %}
 {% from "./../format.njk" import format %}
-{% from "./component.njk" import table %}
 {% import "./../utils.njk" as utils %}
 
 {% block content %}
-
-{% set headers = [
-        { label: "Header Column" },
-        { label: "Header Column" },
-        { label: "Header Column" },
-        { label: "Header Column" },
-        { label: "Header Column" }
-    ]
-%}
-
-{% set class_row = [
-        { label: "Lorem ipsum dolor sit amet ipsum", class: "fd-table__fixed-cell", width: "200px", fixed_col: true},
-        { label: "Lorem ipsum dolor sit amet ipsum",  offset: "200px" },
-        { label: "Lorem ipsum dolor sit amet ipsum" },
-        { label: "Lorem ipsum dolor sit amet ipsum" },
-        { label: "Lorem ipsum dolor sit amet ipsum" },
-        { label: "Lorem ipsum dolor sit amet ipsum" },
-        { label: "Lorem ipsum dolor sit amet ipsum" },
-        { label: "Lorem ipsum dolor sit amet ipsum" },
-        { label: "Lorem ipsum dolor sit amet ipsum" },
-        { label: "Lorem ipsum dolor sit amet ipsum" }
-    ]
-%}
-
-{% set row = ['Lorem', 'Lorem ipsum dolor sit amet ipsum', 'Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet', 'Lorem ipsum', 'Lorem ipsum dolor sit amet'] %}
-
-<h2>default</h2>
 {% set example %}
-{{  table(properties={
-        rows: [row, row, row],
-        headers: [
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            }
-        ]
-    })
-}}
-
-{% endset %}
-{{ format(example) }}
-
-<br><br><br>
-
-<h2>default with selected row</h2>
-{% set example %}
+<h4>Default Table</h4>
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -73,24 +16,639 @@
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell">Lorem Ipsum</td>
-            <td class="fd-table__cell">user.name@email.com</td>
             <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Middle Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
-        <tr class="fd-table__row" aria-selected="true">
-            <td class="fd-table__cell">Lorem Ipsum</td>
-            <td class="fd-table__cell">user.name@email.com</td>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Middle Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Middle Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+    </tbody>
+</table>
+
+<br><br><br>
+<h4>Borderless Table</h4>
+<table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell">Lorem Ipsum</td>
-            <td class="fd-table__cell">user.name@email.com</td>
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+    </tbody>
+</table>
+
+<br><br><br>
+<h4>Table Without Borders On Body</h4>
+<table class="fd-table">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body fd-table__body--no-horizontal-borders fd-table__body--no-vertical-borders">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+    </tbody>
+</table>
+
+<br><br><br>
+<h4>Table With Footer Cozy Mode</h4>
+<table class="fd-table">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+    </tbody>
+    <tfoot class="fd-table__footer">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"></td>
+            <td class="fd-table__cell"></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+        </tr>
+    </tfoot>
+</table>
+
+<br><br><br>
+<h4>Table With Checkbox</h4>
+<table class="fd-table">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
+                <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row" aria-selected="true">
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </td>
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--checkbox">
+               <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </td>
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </td>
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+    </tbody>
+</table>
+
+<br><br><br>
+<h4>Table With Checkbox Compact Mode</h4> 
+<table class="fd-table fd-table--compact">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
+                <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row" aria-selected="true">
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </td>
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </td>
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--checkbox">
+               <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </td>
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+    </tbody>
+</table>
+
+<br><br><br>
+<h4>Table With Checkbox Condensed Mode</h4>
+<table class="fd-table fd-table--condensed">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
+                <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row" aria-selected="true">
+            <td class="fd-table__cell fd-table__cell--checkbox">
+               <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </td>
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </td>
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </td>
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+    </tbody>
+</table>
+
+<br><br><br>
+<h4>Table With Semantic Row Highlighting</h4>
+<table class="fd-table">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell fd-table__cell--status-indicator"></th>
+            <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
+                <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--status-indicator"></td>
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </td>
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--valid"></td>
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </td>
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell fd-table__cell--valid">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--status-indicator"></td>
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </td>
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+         <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--warning"></td>
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </td>
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell fd-table__cell--warning">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--status-indicator"></td>
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </td>
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+         <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--error"></td>
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </td>
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell fd-table__cell--error">01/26/17</td>
+        </tr>  
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--status-indicator"></td>
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </td>
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+         <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--information"></td>
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </td>
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell fd-table__cell--information">01/26/17</td>
+        </tr>   
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--status-indicator"></td>
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+            </td>
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>                    
+    </tbody>
+</table>
+
+<br><br><br>
+<h4>Table With Merged Cells</h4>
+<table class="fd-table">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Name</th>
+            <th class="fd-table__cell" scope="col">Status</th>
+            <th class="fd-table__cell" scope="col">Price</th>
+            <th class="fd-table__cell" scope="col">Country</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row fd-table__row--activable">
+            <td class="fd-table__cell fd-table__cell--no-horizontal-border fd-table__cell--no-vertical-border">Banana</td>
+            <td class="fd-table__cell fd-table__cell--no-vertical-border">
+               Available
+            </td>
+            <td class="fd-table__cell">5 EUR</td>
+            <td class="fd-table__cell">India</td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--activable">
+            <td class="fd-table__cell fd-table__cell--no-horizontal-border">Pineapple</td>
+            <td class="fd-table__cell">
+                Out of stock
+            </td>
+            <td class="fd-table__cell">2 EUR</td>
+            <td class="fd-table__cell">Mexico</td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--activable">
+            <td class="fd-table__cell">Orange</td>
+            <td class="fd-table__cell">
+                Temporary unavailable
+            </td>
+            <td class="fd-table__cell">6 EUR</td>
+            <td class="fd-table__cell">Spain</td>
+        </tr>
+    </tbody>
+</table>
+
+<br><br><br>
+<h4>Table With Navigation Indication State</h4>
+<table class="fd-table">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col"></th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
+                <button class="btn-playground"></button>
+            </td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated" scope="col">
+                <button class="btn-playground"></button>
+            </td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="link-playground">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
+                <button class="btn-playground"></button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<br><br><br>
+<h4>Responsive Table Pop-in mode</h4>
+<div style="max-width: 450px">
+    <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
+        <tbody class="fd-table__body">
+            <tr class="fd-table__row fd-table__row--main fd-table__row--activable fd-table__row--hoverable">
+                <td class="fd-table__cell">
+                    <p class="fd-table__text fd-table__text--title">Banana</p>
+                    <p class="fd-table__text">India</p>
+                </td>
+                <td class="fd-table__cell fd-table__cell--fit-content">
+                    5 EUR
+                </td>
+                <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                    <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                </td>
+            </tr>
+            <tr class="fd-table__row fd-table__row--secondary">
+                <td class="fd-table__cell" colspan="100%">
+                    <p class="fd-table__text">
+                        <label class="label-playground">Status:</label>
+                        Available
+                    </p>
+                    <p class="fd-table__text">
+                        <label class="label-playground">Date Of Expire:</label>
+                        12.01.12
+                    </p>
+                </td>
+            </tr>
+            <tr class="fd-table__row fd-table__row--main fd-table__row--activable fd-table__row--hoverable">
+                <td class="fd-table__cell">
+                    <p class="fd-table__text fd-table__text--title">Very long name for orange, which no one expected, forces text wrapping into another line.</p>
+                    <p class="fd-table__text">Spain</p>
+                </td>
+                <td class="fd-table__cell fd-table__cell--fit-content">
+                    6 EUR
+                </td>
+                <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                    <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                </td>
+            </tr>
+            <tr class="fd-table__row fd-table__row--secondary">
+                <td class="fd-table__cell" colspan="100%">
+                    <p class="fd-table__text">
+                        <label class="label-playground">Status:</label>
+                        Out of stock
+                    </p>
+                    <p class="fd-table__text">
+                        <label class="label-playground">Date Of Expire:</label>
+                        12.01.12
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<div style="max-width: 450px">
+    <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
+        <tbody class="fd-table__body">
+            <tr class="fd-table__row fd-table__row--main">
+                <td class="fd-table__cell fd-table__cell--checkbox">
+                    <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+                </td>
+                <td class="fd-table__cell">
+                    <p class="fd-table__text fd-table__text--title">Banana</p>
+                    <p class="fd-table__text">India</p>
+                </td>
+                <td class="fd-table__cell fd-table__cell--fit-content">
+                    5 EUR
+                </td>
+                <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                    <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                </td>
+            </tr>
+            <tr class="fd-table__row fd-table__row--secondary">
+                <td class="fd-table__cell fd-table__cell--checkbox"></td>
+                <td class="fd-table__cell" colspan="100%">
+                    <p class="fd-table__text">
+                        <label class="label-playground">Status:</label>
+                        Available
+                    </p>
+                    <p class="fd-table__text">
+                        <label class="label-playground">Date Of Expire:</label>
+                        12.01.12
+                    </p>
+                </td>
+            </tr>
+            <tr class="fd-table__row fd-table__row--main">
+                <td class="fd-table__cell fd-table__cell--checkbox">
+                   <input class="checkbox-playground" type="checkbox" id="Ai4ez617">
+                </td>
+                <td class="fd-table__cell">
+                    <p class="fd-table__text fd-table__text--title">Very long name for orange, which no one expected, forces text wrapping into another line.</p>
+                    <p class="fd-table__text">Spain</p>
+                </td>
+                <td class="fd-table__cell fd-table__cell--fit-content">
+                    6 EUR
+                </td>
+                <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                    <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                </td>
+            </tr>
+            <tr class="fd-table__row fd-table__row--secondary">
+                <td class="fd-table__cell fd-table__cell--checkbox"></td>
+                <td class="fd-table__cell" colspan="100%">
+                    <p class="fd-table__text">
+                        <label class="label-playground">Status:</label>
+                        Out of stock
+                    </p>
+                    <p class="fd-table__text">
+                        <label class="label-playground">Date Of Expire:</label>
+                        12.01.12
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br><br><br>
+<h4>Interactive Rows and Columns</h4>
+<table class="fd-table">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable" scope="col">Hovering And</th>
+            <th class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable" scope="col">Clicking</th>
+            <th class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable" scope="col">On Header's Cell</th>
+            <th class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable" scope="col">Will Trigger</th>
+            <th class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable" scope="col">Color Change</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable">
+            <td class="fd-table__cell">Clicking on any Cell</td>
+            <td class="fd-table__cell">On This Row</td>
+            <td class="fd-table__cell">Will cause</td>
+            <td class="fd-table__cell">Highlight of Whole Row</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable is-hover">
+            <td class="fd-table__cell">Clicking on any Cell</td>
+            <td class="fd-table__cell">On This Row</td>
+            <td class="fd-table__cell">Will cause</td>
+            <td class="fd-table__cell">Highlight of Whole Row</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable is-active">
+            <td class="fd-table__cell">Clicking on any Cell</td>
+            <td class="fd-table__cell">On This Row</td>
+            <td class="fd-table__cell">Will cause</td>
+            <td class="fd-table__cell">Highlight of Whole Row</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--activable">Clicking On Cell</td>
+            <td class="fd-table__cell fd-table__cell--activable is-active">Will cause</td>
+            <td class="fd-table__cell fd-table__cell--activable">Highlight of cell</td>
+            <td class="fd-table__cell fd-table__cell--activable">Last Name</td>
+            <td class="fd-table__cell fd-table__cell--activable">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--hoverable">Hovering On Any Cell</td>
+            <td class="fd-table__cell fd-table__cell--hoverable is-hover">Will Change</td>
+            <td class="fd-table__cell fd-table__cell--hoverable">Background</td>
+            <td class="fd-table__cell fd-table__cell--hoverable">Of Certain</td>
+            <td class="fd-table__cell fd-table__cell--hoverable">Cell</td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--hoverable">
+            <td class="fd-table__cell">Hovering On Any Cell</td>
+            <td class="fd-table__cell">And cells</td>
+            <td class="fd-table__cell">Will Change</td>
+            <td class="fd-table__cell">Background of Whole Row</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--hoverable is-hover">
+            <td class="fd-table__cell">Hovering On Any Cell</td>
+            <td class="fd-table__cell">And cells</td>
+            <td class="fd-table__cell">Will Change</td>
+            <td class="fd-table__cell">Background of Whole Row</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
     </tbody>
@@ -98,392 +656,4 @@
 {% endset %}
 {{ format(example) }}
 
-<br><br><br>
-
-<h3>Table with `--no-borders`</h3>
-{% set example %}
-{{  table(properties={
-        rows: [row, row, row],
-        headers: [
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            }
-        ]
-    },
-    modifier={
-        block: ['no-borders']
-    })
-}}
-{% endset %}
-{{ format(example) }}
-
-<br><br><br>
-
-<h3>Table with `--striped`</h3>
-{% set example %}
-{{  table(properties={
-        rows: [row, row, row],
-        headers: [
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            }
-        ]
-    },
-    modifier={
-        block: ['striped']
-    })
-}}
-{% endset %}
-{{ format(example) }}
-
-<br><br><br>
-
-<h3>Sortable Column Enabled</h3>
-
-{% set example %}
-{{  table({
-        rows: [row, row, row],
-        headers: [
-            {
-                label: "Header Column",
-                sortable: true
-            },
-            {
-                label: "Header Column",
-                sortable: true
-            },
-            {
-                label: "Header Column",
-                sortable: true
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            }
-        ],
-        sortable: true,
-        stripedTable: true,
-        noBorders:false
-    })
-}}
-{% endset %}
-{{ format(example) }}
-
-<br><br><br>
-
-<h3>Asc Sort Column Example</h3>
-
-{% set example %}
-{{  table({
-        rows: [row, row, row],
-        headers: [
-            {
-                label: "Header Column",
-                sortable: true,
-                sort_order:"asc"
-            },
-            {
-                label: "Header Column",
-                sortable: true
-            },
-            {
-                label: "Header Column",
-                sortable: true
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            }
-        ],
-        sortable: true,
-        stripedTable: true,
-        noBorders:false
-
-    })
-}}
-{% endset %}
-{{ format(example) }}
-
-<br><br><br>
-
-<h3>Dec Sort Column Example</h3>
-
-{% set example %}
-{{  table({
-        rows: [row, row, row],
-        headers: [
-            {
-                label: "Header Column",
-                sortable: true
-            },
-            {
-                label: "Header Column",
-                sortable: true,
-                sort_order:"dsc"
-            },
-            {
-                label: "Header Column",
-                sortable: true
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            }
-        ],
-        sortable: true,
-        stripedTable: true,
-        noBorders:false
-
-    })
-}}
-{% endset %}
-{{ format(example) }}
-
-<br><br><br>
-
-<h3>Column with Contextual Menu</h3>
-
-{% set example %}
-{{  table({
-        rows: [row, row, row],
-        headers: [
-            {
-                label: "Header Column",
-                id: "col1",
-                context_menu: true,
-                aria: {
-                    controls: "col1",
-                    haspopup: true
-                }
-            },
-            {
-                label: "Header Column",
-                id: "col2",
-                context_menu: true,
-                aria: {
-                    controls: "col2",
-                    haspopup: true
-                }
-            },
-            {
-                label: "Header Column",
-                id: "col3",
-                context_menu: true,
-                aria: {
-                    controls: "col3",
-                    haspopup: true
-                }
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            }
-        ],
-        contextual_headers: true,
-        stripedTable: true,
-        noBorders:false
-    })
-}}
-{% endset %}
-{{ format(example) }}
-
-<br><br><br>
-
-<h3>Fixed Column with Contextual Menu</h3>
-
-{% set example %}
-{{  table({
-        rows: [class_row, class_row, class_row],
-        headers: [
-            {
-                label: "Header Column",
-                id: "col1.2",
-                context_menu: true,
-                addon_before: true,
-                fixed_col: true,
-                width: "200px",
-                aria: {
-                    controls: "col1.2",
-                    haspopup: true
-                },
-                classes: ["fd-table__fixed-cell"]
-            },
-            {
-                label: "Header Column",
-                id: "col2.2",
-                context_menu: true,
-                offset: "200px",
-                aria: {
-                    controls: "col2.2",
-                    haspopup: true
-                }
-            },
-            {
-                label: "Header Column",
-                id: "col3.2",
-                context_menu: true,
-                aria: {
-                    controls: "col3.2",
-                    haspopup: true
-                }
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            }
-        ],
-        contextual_headers: true,
-        fixed_col_table: true,
-        stripedTable: true,
-        noBorders:false
-
-    })
-}}
-{% endset %}
-{{ format(example) }}
-
-<h2>Table with semantic row highlighting</h2>
-{% set example %}
-{{  table(properties={
-        rows: [row, row, row],
-        rowClass : {"rowIndex": 2, "class": "fd-table__row--success"},
-        headers: [
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            }
-        ]
-    })
-}}
-
-{{  table(properties={
-        rows: [row, row, row],
-        rowClass : {"rowIndex": 2, "class": "fd-table__row--warning"},
-        headers: [
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            }
-        ]
-    })
-}}
-
-{{  table(properties={
-        rows: [row, row, row],
-        rowClass : {"rowIndex": 2, "class": "fd-table__row--error"},
-        headers: [
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            }
-        ]
-    })
-}}
-
-{{  table(properties={
-        rows: [row, row, row],
-        rowClass : {"rowIndex": 2, "class": "fd-table__row--information"},
-        headers: [
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            },
-            {
-                label: "Header Column"
-            }
-        ]
-    })
-}}
-{% endset %}
-{{ format(example) }}
 {% endblock %}
