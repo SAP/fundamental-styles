@@ -1,15 +1,15 @@
 
-import "../base.scss";
+// import "../base.scss";
 
-import "../../dist/layout-panel.css";
+// import "../../dist/layout-panel.css";
 
-import LayoutPanel from "./layout-panel.html";
+// import LayoutPanel from "./layout-panel.html";
 
-export default {
-  title: "LayoutPanel",
-  component: LayoutPanel,
-};
+// export default {
+//   title: "LayoutPanel",
+//   component: LayoutPanel,
+// };
 
-export const AllCases = () => ({
-  Component: LayoutPanel,
-});
+// export const AllCases = () => ({
+//   Component: LayoutPanel,
+// });

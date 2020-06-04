@@ -1,8 +1,15 @@
-import { addDecorator, addParameters, configure } from "@storybook/svelte";
+import fundamentals from './custom/fundamentals';
+import { addDecorator, addParameters, configure } from "@storybook/html";
 import { withCssResources } from "@storybook/addon-cssresources";
-import { withA11y } from "@storybook/addon-a11y";
+// import { withA11y } from "@storybook/addon-a11y";
+import { DocsContainer } from '@storybook/addon-docs/blocks';
+import DocsPage from './custom/components/DocsPage';
 
 addParameters({
+  options: {
+    showRoots: true,
+    theme: fundamentals
+  },
   cssresources: [
     {
       id: "normalize",
@@ -20,7 +27,11 @@ addParameters({
       picked: false,
     },
   ],
+  docs: {
+      container: DocsContainer,
+      page: DocsPage
+  },
 });
 
 addDecorator(withCssResources);
-addDecorator(withA11y);
+// addDecorator(withA11y);

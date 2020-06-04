@@ -12,7 +12,8 @@ module.exports = {
   transform: {
       '^.+\\.stories\\.js$': '@storybook/addon-storyshots/injectFileName',
       '^.+\\.?visual\\.js?$': '@storybook/addon-storyshots/injectFileName',
-      "^.+\\.html$": "jest-transform-svelte",
-      '^.+\\.js?$': 'babel-jest'
+      '^.+\\.js?$': 'babel-jest',
+      "^.+\\.[tj]sx?$": "babel-jest",
+    "^.+\\.mdx$": "@storybook/addon-docs/jest-transform-mdx"
   }
 };
