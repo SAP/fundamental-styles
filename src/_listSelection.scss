@@ -1,0 +1,99 @@
+@import "./listDefinitions.scss";
+
+$block: #{$fd-namespace}-list;
+
+.#{$block} {
+  &--selection {
+    .#{$block}__item {
+      @include padding-left-right($fd-list-selection-container-width, $fd-list-item-padding-x);
+
+      @include fd-hover() {
+        background: var(--sapList_Hover_Background);
+      }
+
+      @include fd-selected() {
+        @include list-item-selected-state();
+      }
+
+      cursor: pointer;
+    }
+
+    .#{$block}__form-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+
+      @include fd-rtl() {
+        left: initial;
+        right: 0;
+      }
+    }
+
+    // SELECTION + Compact
+    &.#{$block}--compact {
+      .#{$block}__item {
+        @include padding-left-right($fd-list-selection-container-compact-width, $fd-list-item-padding-x);
+      }
+    }
+
+    // SELECTION + Byline
+    &.#{$block}--byline {
+      .#{$block}__item {
+        @include padding-left-right($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
+      }
+
+      .#{$block}__form-item {
+        top: $fd-list-byline-form-item-top-offset;
+      }
+    }
+
+    // SELECTION + BYLINE + Compact
+    &.#{$block}--byline.#{$block}--compact {
+      .#{$block}__item {
+        @include padding-left-right($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
+      }
+
+      .#{$block}__form-item {
+        top: $fd-list-byline-form-item-compact-top-offset;
+        left: $fd-list-byline-form-item-left-offset;
+
+        @include fd-rtl() {
+          left: initial;
+          right: $fd-list-byline-form-item-left-offset;
+        }
+      }
+    }
+
+    // SELECTION + BYLINE + Borderless
+    &.#{$block}--byline.#{$block}--no-border {
+      .#{$block}__item {
+        @include padding-left-right($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
+        @include padding-top-bottom($fd-list-byline-borderless-item-padding-y);
+
+        &:first-child {
+          padding-top: $fd-list-byline-item-padding-y;
+        }
+
+        &:last-child {
+          padding-bottom: $fd-list-byline-item-padding-y;
+        }
+      }
+
+      .#{$block}__item:not(:first-child) {
+        .#{$block}__form-item,
+        .#{$block}__form-item.#{$form-item} {
+          top: 0;
+
+          label {
+            padding-top: $fd-list-byline-borderless-item-padding-y;
+
+            &::after {
+              top: $fd-list-byline-form-item-label-top-offset;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+
+@import "./listDefinitions.scss";
+
+.#{$block} {
+  &--dropdown {
+    .#{$block}__item {
+      @include list-item-states();
+
+      height: auto;
+      padding: $fd-dropdown-vertical-padding $fd-list-item-padding-x;
+    }
+
+    &.#{$block}--compact {
+      .#{$block}__item {
+        height: auto;
+        padding: $fd-dropdown-vertical-compact-padding $fd-list-item-padding-x;
+      }
+    }
+  }
+
+  &--multi-input {
+    .#{$block}__item {
+      @include list-item-states();
+
+      padding: 0;
+      height: auto;
+    }
+
+    .#{$block}__label {
+      @include fd-reset();
+
+      color: inherit;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-right: 0;
+
+      &::before {
+        margin-top: (1rem - $fd-checkbox-dimensions) / 2;
+        margin-bottom: (1rem - $fd-checkbox-dimensions) / 2;
+      }
+    }
+
+    .#{$block}__input {
+      @include fd-focus() {
+        box-shadow: none;
+
+        + .#{$block}__label {
+          &::after {
+            $fd-multi-input-focus-offset: 0.0625rem;
+
+            top: $fd-multi-input-focus-offset;
+            bottom: $fd-multi-input-focus-offset;
+            left: $fd-multi-input-focus-offset;
+            right: $fd-multi-input-focus-offset;
+          }
+        }
+      }
+    }
+
+    .#{$block}__footer {
+      height: auto;
+      text-align: right;
+      justify-content: flex-end;
+      line-height: 1rem;
+      background-color: var(--sapList_Background);
+    }
+
+    .#{$block}__footer,
+    .#{$block}__label {
+      padding: $fd-dropdown-vertical-padding $fd-list-item-padding-x;
+    }
+
+    &.#{$block}--compact {
+      .#{$block}__item {
+        padding: 0;
+        height: auto;
+      }
+
+      .#{$block}__label {
+        &::before {
+          margin-left: 0;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+
+      .#{$block}__footer,
+      .#{$block}__label {
+        padding: $fd-dropdown-vertical-compact-padding $fd-list-item-padding-x;
+      }
+    }
+  }
+
+  &--dropdown,
+  &--multi-input {
+    display: block;
+    min-width: 5rem;
+    max-width: 37.5rem;
+
+    .#{$block}__item {
+      cursor: pointer;
+      border: none;
+
+      @include fd-selected() {
+        border-bottom: $fd-list-selected-state-border-bottom;
+      }
+    }
+
+    .#{$block}__title,
+    .#{$block}__secondary {
+      font-size: $fd-list-normal-font-size;
+      white-space: normal;
+      flex: auto;
+
+      &--no-wrap {
+        white-space: nowrap;
+      }
+    }
+
+    .#{$block}__title {
+      width: auto;
+      max-width: 22.5rem;
+
+      &:first-child:last-child {
+        max-width: 37.5rem;
+      }
+    }
+
+    .#{$block}__secondary {
+      width: auto;
+      max-width: 15rem;
+    }
+
+    .#{$block}__icon {
+      line-height: 1rem;
+    }
+
+    > * {
+      &:last-child {
+        border-bottom-left-radius: $fd-list-last-item-bottom-border-radius;
+        border-bottom-right-radius: $fd-list-last-item-bottom-border-radius;
+      }
+    }
+  }
+}

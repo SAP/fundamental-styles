@@ -2,6 +2,91 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.8"></a>
+# [0.11.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.7...v0.11.0-rc.8) (2020-06-04)
+
+
+
+<a name="0.11.0-rc.7"></a>
+# [0.11.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.6...v0.11.0-rc.7) (2020-06-03)
+
+
+### Features
+
+* Migrate Table to fiori3 ([#1042](https://github.com/SAP/fundamental-styles/issues/1042)) ([c068511](https://github.com/SAP/fundamental-styles/commit/c068511)), closes [#1053](https://github.com/SAP/fundamental-styles/issues/1053)
+
+
+
+<a name="0.11.0-rc.6"></a>
+# [0.11.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.5...v0.11.0-rc.6) (2020-06-02)
+
+
+
+<a name="0.11.0-rc.5"></a>
+# [0.11.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.4...v0.11.0-rc.5) (2020-06-02)
+
+
+### Features
+
+* [#1014](https://github.com/SAP/fundamental-styles/issues/1014) Inline help rebuild with popover component ([#1069](https://github.com/SAP/fundamental-styles/issues/1069)) ([f224afc](https://github.com/SAP/fundamental-styles/commit/f224afc)), closes [#1067](https://github.com/SAP/fundamental-styles/issues/1067) [#1065](https://github.com/SAP/fundamental-styles/issues/1065) [#1063](https://github.com/SAP/fundamental-styles/issues/1063) [#1064](https://github.com/SAP/fundamental-styles/issues/1064) [#1068](https://github.com/SAP/fundamental-styles/issues/1068) [#1070](https://github.com/SAP/fundamental-styles/issues/1070) [#895](https://github.com/SAP/fundamental-styles/issues/895) [#1059](https://github.com/SAP/fundamental-styles/issues/1059) [#1073](https://github.com/SAP/fundamental-styles/issues/1073) [#1024](https://github.com/SAP/fundamental-styles/issues/1024) [#1075](https://github.com/SAP/fundamental-styles/issues/1075) [#1071](https://github.com/SAP/fundamental-styles/issues/1071) [#1076](https://github.com/SAP/fundamental-styles/issues/1076) [#1077](https://github.com/SAP/fundamental-styles/issues/1077) [#1084](https://github.com/SAP/fundamental-styles/issues/1084) [#1078](https://github.com/SAP/fundamental-styles/issues/1078) [#1082](https://github.com/SAP/fundamental-styles/issues/1082) [#1079](https://github.com/SAP/fundamental-styles/issues/1079) [#1081](https://github.com/SAP/fundamental-styles/issues/1081)
+
+
+
+<a name="0.11.0-rc.4"></a>
+# [0.11.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.3...v0.11.0-rc.4) (2020-06-02)
+
+
+
+<a name="0.11.0-rc.3"></a>
+# [0.11.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.2...v0.11.0-rc.3) (2020-06-02)
+
+
+
+<a name="0.11.0-rc.2"></a>
+# [0.11.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.1...v0.11.0-rc.2) (2020-06-02)
+
+
+### Features
+
+* remove identifier ([#1081](https://github.com/SAP/fundamental-styles/issues/1081)) ([4b84910](https://github.com/SAP/fundamental-styles/commit/4b84910))
+
+
+
+<a name="0.11.0-rc.1"></a>
+# [0.11.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.0...v0.11.0-rc.1) (2020-06-02)
+
+
+### Features
+
+* remove spinner ([#1079](https://github.com/SAP/fundamental-styles/issues/1079)) ([4bd8246](https://github.com/SAP/fundamental-styles/commit/4bd8246))
+
+
+
+<a name="0.11.0-rc.0"></a>
+# [0.11.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.10.1-rc.1...v0.11.0-rc.0) (2020-06-02)
+
+
+### Features
+
+* remove image ([#1082](https://github.com/SAP/fundamental-styles/issues/1082)) ([8a11fc0](https://github.com/SAP/fundamental-styles/commit/8a11fc0))
+
+
+
+<a name="0.10.1-rc.1"></a>
+## [0.10.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.10.1-rc.0...v0.10.1-rc.1) (2020-06-02)
+
+
+
+<a name="0.10.1-rc.0"></a>
+## [0.10.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.10.0...v0.10.1-rc.0) (2020-06-02)
+
+
+
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.25...v0.10.0) (2020-05-31)
+
+
+
 <a name="0.10.0-rc.25"></a>
 # [0.10.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.10.0-rc.24...v0.10.0-rc.25) (2020-05-31)
 

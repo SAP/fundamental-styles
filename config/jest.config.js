@@ -1,15 +1,18 @@
 const process = require("process");
 const path = require("path");
+
 module.exports = {
-  rootDir: path.resolve(__dirname, "../"),
-  transform: {
-    ".+\\.(css|styl|less|sass|scss)$": "<rootDir>/node_modules/jest-css-modules-transform",
-    "^.+\\.html$": "jest-transform-svelte",
-    "^.+\\.js$": "babel-jest",
-  },
+  rootDir: path.resolve(__dirname, "../storybook-testing/"),
   verbose: true,
   preset: process.env["DOCKER"] ? "jest-puppeteer-docker" : "jest-puppeteer",
-  testRegex: path.resolve(__dirname, "../integration/storyshots.test.js"),
   setupFilesAfterEnv: [path.resolve(__dirname, "storyshots-setup.js")],
-  moduleNameMapper: {},
+  moduleNameMapper: {
+    ".+\\.(css|styl|less|sass|scss)$": 'babel-jest'
+  },
+  transform: {
+      '^.+\\.stories\\.js$': '@storybook/addon-storyshots/injectFileName',
+      '^.+\\.?visual\\.js?$': '@storybook/addon-storyshots/injectFileName',
+      "^.+\\.html$": "jest-transform-svelte",
+      '^.+\\.js?$': 'babel-jest'
+  }
 };

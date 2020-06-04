@@ -46,6 +46,12 @@
     }
   }
 
+  .fd-popover .fd-popover__popper[aria-hidden=true] {
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+  }
+
   .fd-identifier--s {
     display: inline-block;
   }
@@ -290,10 +296,6 @@
   }
 
   .fd-dropdown {
-    margin-right: 20px;
-  }
-
-  > [class*="fd-identifier"] {
     margin-right: 20px;
   }
 

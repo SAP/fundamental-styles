@@ -370,3 +370,16 @@ body {
   margin-right: 0;
   margin-left: 0.375rem;
 }
+
+.link-playground {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #0a6ed1;
+  text-decoration: none;
+}
+
+.link-playground:hover,
+.link-playground:active {
+  text-decoration: underline;
+}

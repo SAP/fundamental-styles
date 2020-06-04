@@ -53,12 +53,12 @@ $(document).ready(function () {
                 this.setAttribute("aria-expanded", !isExpanded);
                 if (isExpanded) {
                     for (let i = 0; i < elements.length; i ++) {
-                      elements[i].classList.remove('is-expanded')
+                        elements[i].classList.remove('is-expanded')
                     }
                 } else {
-                  for (let i = 0; i < elements.length; i ++) {
-                    elements[i].classList.add('is-expanded')
-                  }
+                    for (let i = 0; i < elements.length; i ++) {
+                        elements[i].classList.add('is-expanded')
+                    }
                 }
                 //target
                 target.setAttribute("aria-hidden", isExpanded);
@@ -258,6 +258,12 @@ $(document).ready(function () {
                 break;
         }
     }
+    //display inline-help on mouse over of the help icon
+    $(".fd-popover[aria-label='inline-help']").hover(function () {
+        $(this).find(".fd-popover__popper").attr("aria-hidden", false);
+    }, function () {
+        $(this).find(".fd-popover__popper").attr("aria-hidden", true);
+    });
 });
 
 function stepInputValue(inputId, stepDirection) {
@@ -303,6 +309,6 @@ function draggableDialog() {
 function tokenizerScrollToEnd() {
     const tokenizerElement = $('#tokenizer-scrollable');
     if (tokenizerElement) {
-      tokenizerElement.scrollLeft(10000);
+        tokenizerElement.scrollLeft(10000);
     }
 }

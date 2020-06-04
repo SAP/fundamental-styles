@@ -139,7 +139,7 @@ When the height of the panel's content is set to a fixed size, the content area 
             </div>
         </div>
     </div>
-    <div role="region" id="GJL745SV" aria-labelledby="GJL745SD" class="fd-panel__content" aria-hidden="true" tyle="height: 100px;">
+    <div role="region" id="GJL745SV" aria-labelledby="GJL745SD" class="fd-panel__content" aria-hidden="true" style="height: 100px;">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
