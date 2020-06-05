@@ -30,5 +30,12 @@ docs/_config-library.yml
 __diff_output__
 storybook-static
 .storybook/static/*.woff
-.storybook/static/*.css
-src/Docs/
+.storybook/static/72-Bold.woff
+.storybook/static/72-Light.woff
+.storybook/static/72-Regular.woff
+.storybook/static/HCB_css_variables.css
+.storybook/static/HCW_css_variables.css
+.storybook/static/css_variables.css
+.storybook/static/dark_css_variables.css
+.storybook/static/light_dark_css_variables.css
+stories/docs/

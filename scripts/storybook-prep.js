@@ -15,7 +15,7 @@ const HCBCssVariables = require.resolve('@sap-theming/theming-base-content/conte
 const HCWCssVariables = require.resolve('@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3_hcw/css_variables.css');
 
 
-const introductionPath = 'src/Docs/introduction.stories.mdx';
+const introductionPath = 'stories/docs/introduction.stories.mdx';
 
 // if readme copy already exists, remove it
 if (fs.existsSync(introductionPath)) {
@@ -25,7 +25,7 @@ if (fs.existsSync(introductionPath)) {
 }
 
 // create Docs folder if it doesn't already exist
-fs.mkdirSync('src/Docs', { recursive: true });
+fs.mkdirSync('stories/docs', { recursive: true });
 
 // copy readme file and prepend necessary <Meta />, <Header />, <Community /> and <Footer />
 fs.copyFile('README.md', introductionPath, (err) => {
