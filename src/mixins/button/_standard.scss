@@ -13,8 +13,8 @@
 @mixin standardPressed {
   @include applyColors(
     var(--sapButton_Selected_TextColor),
-    var(--sapButton_Active_Background),
-    var(--sapButton_BorderColor)
+    var(--sapButton_BorderColor),
+    var(--sapButton_Active_Background)
   );
 }
 
