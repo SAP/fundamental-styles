@@ -285,6 +285,7 @@ $block: #{$fd-namespace}-shellbar;
     background: $fd-shellbar-background-color;
     color: $fd-shellbar-color;
     padding: 0;
+    outline-color: var(--sapContent_ContrastFocusColor);
 
     &:hover {
       background: $fd-shell-hover-background;
@@ -318,6 +319,7 @@ $block: #{$fd-namespace}-shellbar;
 
   .#{$fd-namespace}-button.#{$block}__button--menu {
     font-size: var(--sapFontSize);
+    outline-color: var(--sapContent_ContrastFocusColor);
 
     &::after {
       color: $fd-shellbar-color;
