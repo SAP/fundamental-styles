@@ -21,6 +21,7 @@ const customizePage = (page) => page.emulate(view);
 const beforeScreenshot = (page) => page.emulate(view);
 
 initStoryshots({
+  framework: "html",
   test: imageSnapshot({
     storyKindRegex: /Visual/,
     getMatchOptions,
