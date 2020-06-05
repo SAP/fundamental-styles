@@ -1,0 +1,72 @@
+{% extends "layout.njk" %}
+{% from "./../format.njk" import format %}
+{% from "./component.njk" import panel, panel_header, panel_actions, panel_filters, panel_body, panel_footer %}
+
+{% set panel_example %}
+{% call panel() -%}
+    {% call panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description" }) -%}
+    {% call panel_actions() -%}
+.fd-layout-panel__actions
+    {%- endcall %}
+
+    {%- endcall %}
+
+    {%- call panel_filters() %}
+.fd-layout-panel__filters
+    {%- endcall %}
+    {% call panel_body() -%}
+      .fd-layout-panel__body
+    {%- endcall %}
+    {% call panel_footer() -%}
+.fd-layout-panel__footer
+    {%- endcall %}
+{%- endcall %}
+{% endset %}
+
+
+{% block content %}
+<p class="fd-has-type-2">NOTE: This is a <code>layout</code> component</p>
+
+<h4> Default Example </h4>
+{% set example %}
+{{panel_example}}
+
+<br/><br/>
+
+<h4> Example with H2 </h4>
+{% call panel() -%}
+    {% call panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description", title_size: "h2" }) -%}
+    {%- endcall %}
+{%- endcall %}
+
+<br/><br/>
+
+<h4> Example with H4 </h4>
+
+{% call panel() -%}
+    {% call panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description", title_size: "h4" }) -%}
+    {%- endcall %}
+{%- endcall %}
+
+<br/><br/>
+
+<h4> Example with H5 </h4>
+
+{% call panel() -%}
+    {% call panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description", title_size: "h5" }) -%}
+    {%- endcall %}
+{%- endcall %}
+
+<br/><br/>
+
+<h4> Example with H6 </h4>
+
+{% call panel() -%}
+    {% call panel_header({ title: ".fd-layout-panel__title", description: ".fd-layout-panel__description", title_size: "h6" }) -%}
+    {%- endcall %}
+{%- endcall %}
+{% endset %}
+
+{{ format(example) }}
+
+{% endblock %}

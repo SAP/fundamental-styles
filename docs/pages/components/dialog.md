@@ -7,6 +7,7 @@ toc: false
 permalink: components/dialog.html
 folder: components
 summary:
+tags: [f3, a11y, theme]
 ---
 
 The dialog is a container displayed in response to an action.

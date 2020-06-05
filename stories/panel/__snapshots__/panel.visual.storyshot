@@ -1,0 +1,453 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Visual Panel 1`] = `
+<div>
+  <div>
+    
+
+    <div
+      class="fd-panel"
+    >
+      
+    
+      <div
+        class="fd-panel__header"
+      >
+        
+        
+        <div
+          class="fd-panel__expand"
+        >
+          
+            
+          <button
+            aria-controls="fghqwe321"
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="fd-button fd-button--transparent fd-panel__button"
+          />
+          
+        
+        </div>
+        
+        
+        <h5
+          class="fd-panel__title"
+          id="asdASD123"
+        >
+          Panel Header
+        </h5>
+        
+        
+        <div
+          class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+        >
+          
+            
+          <span
+            class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+          >
+             
+          </span>
+          
+            
+          <div
+            aria-label="Group label"
+            class="fd-segmented-button"
+            role="group"
+          >
+            
+              
+            <button
+              aria-pressed="true"
+              class="fd-button is-selected"
+              id="jhqDKYdf"
+            >
+              Left
+            </button>
+            
+              
+            <button
+              class="fd-button"
+            >
+              Middle
+            </button>
+            
+              
+            <button
+              class="fd-button"
+            >
+              Right
+            </button>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <div
+        aria-hidden="true"
+        aria-labelledby="jhqDKYdf"
+        class="fd-panel__content"
+        id="fghqwe321"
+        role="region"
+      >
+        
+        
+        <span>
+          
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+        
+        </span>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-panel fd-panel--fixed"
+    >
+      
+    
+      <div
+        class="fd-panel__header"
+      >
+        
+        
+        <h5
+          class="fd-panel__title"
+        >
+          Panel Header
+        </h5>
+        
+        
+        <div
+          class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+        >
+          
+            
+          <span
+            class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+          >
+             
+          </span>
+          
+            
+          <div
+            aria-label="Group label"
+            class="fd-segmented-button"
+            role="group"
+          >
+            
+              
+            <button
+              aria-pressed="true"
+              class="fd-button is-selected"
+              id="jhqDKYrt"
+            >
+              Left
+            </button>
+            
+              
+            <button
+              class="fd-button"
+            >
+              Middle
+            </button>
+            
+              
+            <button
+              class="fd-button"
+            >
+              Right
+            </button>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <div
+        aria-labelledby="jhqDKYrt"
+        class="fd-panel__content"
+        role="region"
+      >
+        
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+        et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+        Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+        Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+        Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+        Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+        Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-panel fd-panel--compact"
+    >
+      
+    
+      <div
+        class="fd-panel__header"
+      >
+        
+        
+        <div
+          class="fd-panel__expand"
+        >
+          
+            
+          <button
+            aria-controls="Gekf63a"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-labelledby="asdASD234"
+            class="fd-button fd-button--compact fd-button--transparent fd-panel__button"
+          />
+          
+        
+        </div>
+        
+        
+        <h5
+          class="fd-panel__title"
+          id="asdASD234"
+        >
+          Panel Header
+        </h5>
+        
+        
+        <div
+          class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+        >
+          
+            
+          <span
+            class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+          >
+             
+          </span>
+          
+            
+          <div
+            aria-label="Group label"
+            class="fd-segmented-button"
+            role="group"
+          >
+            
+              
+            <button
+              aria-pressed="true"
+              class="fd-button fd-button--compact is-selected"
+              id="Gekf63D"
+            >
+              Left
+            </button>
+            
+              
+            <button
+              class="fd-button fd-button--compact"
+            >
+              Middle
+            </button>
+            
+              
+            <button
+              class="fd-button fd-button--compact"
+            >
+              Right
+            </button>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <div
+        aria-hidden="true"
+        aria-labelledby="Gekf63D"
+        class="fd-panel__content"
+        id="Gekf63a"
+        role="region"
+      >
+        
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+        et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+        Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+        Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+        Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+        Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+        Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-panel"
+    >
+      
+    
+      <div
+        class="fd-panel__header"
+      >
+        
+        
+        <div
+          class="fd-panel__expand"
+        >
+          
+            
+          <button
+            aria-controls="GJL745SV"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-labelledby="asdASD345"
+            class="fd-button fd-button--transparent fd-panel__button"
+          />
+          
+        
+        </div>
+        
+        
+        <h5
+          class="fd-panel__title"
+          id="asdASD345"
+        >
+          Panel Header
+        </h5>
+        
+        
+        <div
+          class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+        >
+          
+            
+          <span
+            class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+          >
+             
+          </span>
+          
+            
+          <div
+            aria-label="Group label"
+            class="fd-segmented-button"
+            role="group"
+          >
+            
+              
+            <button
+              aria-pressed="true"
+              class="fd-button is-selected"
+              id="GJL745SD"
+            >
+              Left
+            </button>
+            
+              
+            <button
+              class="fd-button"
+            >
+              Middle
+            </button>
+            
+              
+            <button
+              class="fd-button"
+            >
+              Right
+            </button>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <div
+        aria-hidden="true"
+        aria-labelledby="GJL745SD"
+        class="fd-panel__content"
+        id="GJL745SV"
+        role="region"
+        style="height: 100px;"
+      >
+        
+        
+        <span>
+          
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+            Morbi eget diam vehicula, porttitor orci eu, posuere leo. Sed varius orci id ipsum pharetra feugiat. 
+            Donec libero mi, vestibulum eget massa non, pretium egestas eros. Aenean quis eros ut augue condimentum faucibus.
+            Nam tristique, enim eu volutpat cursus, enim neque pulvinar mauris, nec tempor libero lacus vel lacus. Nunc molestie elit in
+            aliquam eleifend. Ut consequat convallis erat, porta egestas lectus sagittis et. Mauris fermentum semper lorem, a sollicitudin nisi sollicitudin nec. 
+            Duis semper pretium elit ac molestie. Morbi condimentum nisl vitae dolor varius convallis. Donec a molestie ex, 
+            id condimentum velit. Proin dignissim dolor velit, eu malesuada magna porta vel. Aenean quis feugiat libero, sed pretium libero. 
+            Nunc ex orci, volutpat in tristique et, accumsan sed ante. Maecenas laoreet egestas iaculis. In quis ligula mauris.
+        
+        </span>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+</div>
+`;

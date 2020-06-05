@@ -7,6 +7,7 @@ toc: false
 permalink: components/localization-editor.html
 folder: components
 summary:
+tags: [non-f3]
 ---
 
 ## With input

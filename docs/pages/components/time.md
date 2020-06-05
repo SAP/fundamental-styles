@@ -7,6 +7,7 @@ toc: false
 permalink: components/time.html
 folder: components
 summary:
+tags: [f3, a11y, theme]
 ---
 
 The time component is used to select a time value.

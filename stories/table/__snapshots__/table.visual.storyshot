@@ -1,0 +1,8733 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Visual Button 1`] = `
+<div>
+  <div>
+    
+    
+    <button
+      class="fd-button"
+    >
+      Create
+    </button>
+    
+    
+    <button
+      class="fd-button sap-icon--cart"
+    />
+    
+    
+    <button
+      class="fd-button fd-button--emphasized "
+    >
+      Save
+    </button>
+    
+
+  </div>
+  <div>
+    
+    
+    <div
+      class="fddocs-container"
+    >
+       
+        
+      <button
+        class="fd-button"
+      >
+        Default Button
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--emphasized"
+      >
+        Emphasized Button
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--ghost"
+      >
+        Ghost Button
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--positive"
+      >
+        Positive Button
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--negative"
+      >
+        Negative Button
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--attention"
+      >
+        Attention Button
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--transparent"
+      >
+        Transparent Button
+      </button>
+      
+    
+    </div>
+    
+
+  </div>
+  <div>
+    
+    
+    <div
+      aria-label="Group label"
+      class="fd-segmented-button"
+      role="group"
+    >
+      
+        
+      <button
+        class="fd-button sap-icon--survey"
+      />
+      
+        
+      <button
+        aria-pressed="true"
+        class="fd-button sap-icon--pie-chart is-selected"
+      />
+      
+        
+      <button
+        class="fd-button sap-icon--pool"
+      />
+      
+    
+    </div>
+    
+
+    
+    <div
+      aria-label="Group label"
+      class="fd-segmented-button"
+      role="group"
+    >
+      
+        
+      <button
+        aria-pressed="true"
+        class="fd-button fd-button--compact is-selected"
+      >
+        Left
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--compact"
+      >
+        Middle
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--compact"
+      >
+        Right
+      </button>
+      
+    
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <button
+      class="fd-button fd-button--menu"
+    >
+      Action Button
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--ghost fd-button--menu"
+    >
+      Ghost Button
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--positive fd-button--menu"
+    >
+      Positive Button
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--negative fd-button--menu"
+    >
+      Negative Button
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--attention fd-button--menu"
+    >
+      Attention Button
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--menu"
+      disabled=""
+    >
+      Action Button
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--ghost fd-button--menu"
+      disabled=""
+    >
+      Ghost Button
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--positive fd-button--menu"
+      disabled=""
+    >
+      Positive Button
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--negative fd-button--menu"
+      disabled=""
+    >
+      Negative Button
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--attention fd-button--menu"
+      disabled=""
+    >
+      Attention Button
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--emphasized fd-button--menu"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--menu"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--transparent fd-button--menu"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--emphasized fd-button--menu fd-button--positive"
+    >
+      Approve
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--negative fd-button--menu"
+    >
+      Reject
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--attention fd-button--menu"
+    >
+      Attention
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--menu sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--transparent fd-button--menu sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button fd-button--menu sap-icon--filter"
+    />
+    
+
+    <button
+      class="fd-button fd-button--menu fd-button--positive sap-icon--accept"
+    />
+    
+
+    <button
+      class="fd-button fd-button--menu fd-button--negative sap-icon--decline"
+    />
+    
+
+    <button
+      class="fd-button fd-button--menu fd-button--attention sap-icon--warning"
+    />
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--menu"
+    >
+      Default
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--compact fd-button--menu"
+    >
+      Compact
+    </button>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      aria-label="button-split"
+      class="fd-button-split fd-has-margin-right-small"
+      role="group"
+    >
+      
+  
+      <button
+        aria-label="button"
+        class="fd-button"
+      >
+        Button with text
+      </button>
+      
+  
+      <button
+        aria-controls="t4c0o273"
+        aria-expanded="false"
+        aria-haspopup="true"
+        aria-label="More"
+        class="fd-button sap-icon--slim-arrow-down"
+      />
+      
+  
+      <div
+        aria-hidden="true"
+        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
+        id="t4c0o273"
+      >
+        
+    
+        <nav
+          class="fd-menu"
+        >
+          
+        
+          <ul
+            class="fd-menu__list fd-menu__list--no-shadow"
+          >
+            
+          
+            <li
+              class="fd-menu__item"
+            >
+              
+              
+              <a
+                class="fd-menu__link"
+                href="#"
+                role="button"
+              >
+                
+                  
+                <span
+                  class="fd-menu__title"
+                >
+                  Add to list
+                </span>
+                
+              
+              </a>
+              
+          
+            </li>
+            
+          
+            <li
+              class="fd-menu__item"
+            >
+              
+              
+              <a
+                class="fd-menu__link"
+                href="#"
+                role="button"
+              >
+                
+                  
+                <span
+                  class="fd-menu__title"
+                >
+                  Save for later
+                </span>
+                
+              
+              </a>
+              
+          
+            </li>
+            
+        
+          </ul>
+          
+    
+        </nav>
+        
+  
+      </div>
+      
+
+    </div>
+    
+
+
+    <div
+      aria-label="button-split"
+      class="fd-button-split"
+      role="group"
+    >
+      
+  
+      <button
+        aria-label="button"
+        class="fd-button fd-button--emphasized"
+      >
+        Button with text
+      </button>
+      
+  
+      <button
+        aria-controls="t4c0o2732"
+        aria-expanded="false"
+        aria-haspopup="true"
+        aria-label="More"
+        class="fd-button fd-button--emphasized sap-icon--slim-arrow-down"
+      />
+      
+  
+      <div
+        aria-hidden="true"
+        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
+        id="t4c0o2732"
+      >
+        
+    
+        <nav
+          class="fd-menu"
+        >
+          
+        
+          <ul
+            class="fd-menu__list fd-menu__list--no-shadow"
+          >
+            
+          
+            <li
+              class="fd-menu__item"
+            >
+              
+              
+              <a
+                class="fd-menu__link"
+                href="#"
+                role="button"
+              >
+                
+                  
+                <span
+                  class="fd-menu__title"
+                >
+                  Add to list
+                </span>
+                
+              
+              </a>
+              
+          
+            </li>
+            
+          
+            <li
+              class="fd-menu__item"
+            >
+              
+              
+              <a
+                class="fd-menu__link"
+                href="#"
+                role="button"
+              >
+                
+                  
+                <span
+                  class="fd-menu__title"
+                >
+                  Save for later
+                </span>
+                
+              
+              </a>
+              
+          
+            </li>
+            
+        
+          </ul>
+          
+    
+        </nav>
+        
+  
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <button
+      class="fd-button"
+    >
+      Save
+    </button>
+    
+
+    <button
+      class="fd-button fd-button sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--ghost sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--emphasized sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--transparent sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--positive"
+    >
+      Approve
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--negative"
+    >
+      Reject
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--attention"
+    >
+      Attention
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--compact"
+    >
+      Edit
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--compact fd-button sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--ghost fd-button--compact"
+    >
+      Edit
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--emphasized fd-button--compact sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--transparent fd-button--compact sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--positive fd-button--compact "
+    >
+      Approve
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--negative fd-button--compact"
+    >
+      Reject
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--attention fd-button--compact"
+    >
+      Attention
+    </button>
+    
+
+  </div>
+  <div>
+    
+
+    <button
+      class="fd-button fd-button--emphasized"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--transparent"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--ghost"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--positive"
+    >
+      Approve
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--negative"
+    >
+      Reject
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--attention"
+    >
+      Attention
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--transparent sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button sap-icon--filter"
+    />
+    
+
+    <button
+      class="fd-button fd-button--ghost sap-icon--filter"
+    />
+    
+
+    <button
+      class="fd-button fd-button--positive sap-icon--accept"
+    />
+    
+
+    <button
+      class="fd-button fd-button--negative sap-icon--decline"
+    />
+    
+
+    <button
+      class="fd-button fd-button--attention sap-icon--decline"
+    />
+    
+
+  </div>
+  <div>
+    
+
+    <button
+      class="fd-button fd-button--emphasized"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button--emphasized is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--emphasized"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button is-disabled"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--transparent"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button--transparent is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--transparent is-disabled"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button "
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--ghost"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button--ghost is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--ghost"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--positive"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button--positive is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--positive"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--negative"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button--negative is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--negative"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--attention"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button--attention is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--attention"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      dir="rtl"
+    >
+      
+  
+      <button
+        class="fd-button fd-button--emphasized"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <button
+        class="fd-button"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--transparent"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--ghost"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--positive"
+      >
+        Approve
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--negative"
+      >
+        Reject
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--attention"
+      >
+        Attention
+      </button>
+      
+  
+      <br />
+      <br />
+      
+  
+      <button
+        class="fd-button fd-button--emphasized fd-button--menu"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--menu"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--transparent fd-button--menu"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <br />
+      <br />
+      
+  
+      <button
+        class="fd-button sap-icon--cart"
+      />
+      
+  
+      <button
+        class="fd-button fd-button--emphasized sap-icon--cart"
+      />
+      
+  
+      <button
+        class="fd-button fd-button--transparent sap-icon--cart"
+      />
+      
+  
+      <button
+        class="fd-button fd-button--ghost sap-icon--filter"
+      />
+      
+  
+      <button
+        class="fd-button fd-button--positive sap-icon--accept"
+      />
+      
+  
+      <button
+        class="fd-button fd-button--negative sap-icon--decline"
+      />
+      
+  
+      <button
+        class="fd-button fd-button--attention sap-icon--warning"
+      />
+      
+  
+      <div
+        aria-label="Group label"
+        class="fd-segmented-button"
+        role="group"
+      >
+        
+    
+        <button
+          class="fd-button sap-icon--survey"
+        />
+        
+    
+        <button
+          aria-pressed="true"
+          class="fd-button sap-icon--pie-chart"
+        />
+        
+    
+        <button
+          class="fd-button sap-icon--pool"
+        />
+        
+  
+      </div>
+      
+
+  
+      <div
+        aria-label="Group label"
+        class="fd-segmented-button"
+        role="group"
+      >
+        
+    
+        <button
+          aria-pressed="true"
+          class="fd-button fd-button--compact"
+        >
+          Left
+        </button>
+        
+    
+        <button
+          class="fd-button fd-button--compact"
+        >
+          Middle
+        </button>
+        
+    
+        <button
+          class="fd-button fd-button--compact"
+        >
+          Right
+        </button>
+        
+  
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+</div>
+`;
+
+exports[`Storyshots Visual Layout Panel 1`] = `
+<div>
+  <div>
+    
+
+    <div
+      class="fd-layout-panel"
+    >
+      
+  
+      <div
+        class="fd-layout-panel__header"
+      >
+        
+    
+        <div
+          class="fd-layout-panel__head"
+        >
+          
+      
+          <h3
+            class="fd-layout-panel__title"
+          >
+            
+        .fd-layout-panel__title
+      
+          </h3>
+          
+      
+          <p
+            class="fd-layout-panel__description"
+          >
+            
+        .fd-layout-panel__description
+      
+          </p>
+          
+    
+        </div>
+        
+    
+        <div
+          class="fd-layout-panel__actions"
+        >
+          
+      .fd-layout-panel__actions
+    
+        </div>
+        
+  
+      </div>
+      
+  
+      <div
+        class="fd-layout-panel__filters"
+        id=""
+      >
+        
+    .fd-layout-panel__filters
+  
+      </div>
+      
+  
+      <div
+        class="fd-layout-panel__body"
+      >
+        
+    .fd-layout-panel__body
+  
+      </div>
+      
+  
+      <div
+        class="fd-layout-panel__footer"
+      >
+        
+    .fd-layout-panel__footer
+  
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+</div>
+`;
+
+exports[`Storyshots Visual Numeric Content 1`] = `
+<div>
+  <div>
+    
+
+    <div
+      class="tile-content-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi"
+          >
+            1Ñç
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__scale"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--down"
+            />
+            
+                        
+            <span
+              class="fd-numeric-content__scale-text"
+            >
+              M
+            </span>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+    <br />
+    
+
+    <div
+      class="tile-content-small-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--small-tile"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                        
+          <div
+            class="fd-numeric-content__kpi"
+          >
+            1Ñç
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                        
+          <div
+            class="fd-numeric-content__scale"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--down"
+            />
+            
+                        
+            <span
+              class="fd-numeric-content__scale-text"
+            >
+              milçM
+            </span>
+            
+                        
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="tile-content-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--m"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi fd-numeric-content__kpi--positive"
+          >
+            123
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__scale fd-numeric-content__scale--positive"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--down"
+            />
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+    <br />
+    
+
+    <div
+      class="tile-content-small-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--m fd-numeric-content--small-tile"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi fd-numeric-content__kpi--negative"
+          >
+            -889
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__scale fd-numeric-content__scale--negative"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--up"
+            />
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="tile-content-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--s"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi fd-numeric-content__kpi--critical"
+          >
+            12
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__scale fd-numeric-content__scale--critical"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--down"
+            />
+            
+                        
+            <span
+              class="fd-numeric-content__scale-text"
+            >
+              %
+            </span>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+    <br />
+    
+
+    <div
+      class="tile-content-small-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--small-tile fd-numeric-content--m"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi fd-numeric-content__kpi--informative"
+          >
+            1.95
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="tile-content-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__launch-icon-container"
+        >
+          
+                    
+          <span
+            class="fd-numeric-content__launch-icon sap-icon--line-charts"
+          />
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi"
+          >
+            123
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__scale"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--down"
+            />
+            
+                        
+            <span
+              class="fd-numeric-content__scale-text"
+            >
+              milçM
+            </span>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+    <br />
+    
+
+    <div
+      class="tile-content-small-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--small-tile"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__launch-icon-container"
+        >
+          
+                    
+          <span
+            class="fd-numeric-content__launch-icon sap-icon--line-charts"
+          />
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi fd-numeric-content__kpi--positive"
+          >
+            1234
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="tile-content-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--m"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__launch-icon-container"
+        >
+          
+                    
+          <span
+            class="fd-numeric-content__launch-icon sap-icon--line-charts"
+          />
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi fd-numeric-content__kpi--negative"
+          >
+            -889
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__scale fd-numeric-content__scale--negative"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--down"
+            />
+            
+                        
+            <span
+              class="fd-numeric-content__scale-text"
+            >
+              M
+            </span>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+    <br />
+    
+
+    <div
+      class="tile-content-small-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--m fd-numeric-content--small-tile"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__launch-icon-container"
+        >
+          
+                    
+          <span
+            class="fd-numeric-content__launch-icon sap-icon--line-charts"
+          />
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi fd-numeric-content__kpi--informative"
+          >
+            -88 88
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__scale fd-numeric-content__scale--informative"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--down"
+            />
+            
+                        
+            <span
+              class="fd-numeric-content__scale-text"
+            >
+              milÇ
+            </span>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="tile-content-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--s"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__launch-icon-container"
+        >
+          
+                    
+          <span
+            class="fd-numeric-content__launch-icon sap-icon--line-charts"
+          />
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi fd-numeric-content__kpi--critical"
+          >
+            123
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__scale fd-numeric-content__scale--critical"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--up"
+            />
+            
+                        
+            <span
+              class="fd-numeric-content__scale-text"
+            >
+              ÑÇmlč
+            </span>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+    <br />
+    
+
+    <div
+      class="tile-content-small-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--s fd-numeric-content--small-tile"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__launch-icon-container"
+        >
+          
+                    
+          <span
+            class="fd-numeric-content__launch-icon sap-icon--line-charts"
+          />
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi fd-numeric-content__kpi--positive"
+          >
+            123
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__scale fd-numeric-content__scale--positive"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--down"
+            />
+            
+                        
+            <span
+              class="fd-numeric-content__scale-text"
+            >
+              ÑÇmlč
+            </span>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+</div>
+`;
+
+exports[`Storyshots Visual Panel 1`] = `
+<div>
+  <div>
+    
+
+    <div
+      class="fd-panel"
+    >
+      
+    
+      <div
+        class="fd-panel__header"
+      >
+        
+        
+        <div
+          class="fd-panel__expand"
+        >
+          
+            
+          <button
+            aria-controls="fghqwe321"
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="fd-button fd-button--transparent fd-panel__button"
+          />
+          
+        
+        </div>
+        
+        
+        <h5
+          class="fd-panel__title"
+          id="asdASD123"
+        >
+          Panel Header
+        </h5>
+        
+        
+        <div
+          class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+        >
+          
+            
+          <span
+            class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+          >
+             
+          </span>
+          
+            
+          <div
+            aria-label="Group label"
+            class="fd-segmented-button"
+            role="group"
+          >
+            
+              
+            <button
+              aria-pressed="true"
+              class="fd-button is-selected"
+              id="jhqDKYdf"
+            >
+              Left
+            </button>
+            
+              
+            <button
+              class="fd-button"
+            >
+              Middle
+            </button>
+            
+              
+            <button
+              class="fd-button"
+            >
+              Right
+            </button>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <div
+        aria-hidden="true"
+        aria-labelledby="jhqDKYdf"
+        class="fd-panel__content"
+        id="fghqwe321"
+        role="region"
+      >
+        
+        
+        <span>
+          
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+        
+        </span>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-panel fd-panel--fixed"
+    >
+      
+    
+      <div
+        class="fd-panel__header"
+      >
+        
+        
+        <h5
+          class="fd-panel__title"
+        >
+          Panel Header
+        </h5>
+        
+        
+        <div
+          class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+        >
+          
+            
+          <span
+            class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+          >
+             
+          </span>
+          
+            
+          <div
+            aria-label="Group label"
+            class="fd-segmented-button"
+            role="group"
+          >
+            
+              
+            <button
+              aria-pressed="true"
+              class="fd-button is-selected"
+              id="jhqDKYrt"
+            >
+              Left
+            </button>
+            
+              
+            <button
+              class="fd-button"
+            >
+              Middle
+            </button>
+            
+              
+            <button
+              class="fd-button"
+            >
+              Right
+            </button>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <div
+        aria-labelledby="jhqDKYrt"
+        class="fd-panel__content"
+        role="region"
+      >
+        
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+        et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+        Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+        Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+        Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+        Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+        Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-panel fd-panel--compact"
+    >
+      
+    
+      <div
+        class="fd-panel__header"
+      >
+        
+        
+        <div
+          class="fd-panel__expand"
+        >
+          
+            
+          <button
+            aria-controls="Gekf63a"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-labelledby="asdASD234"
+            class="fd-button fd-button--compact fd-button--transparent fd-panel__button"
+          />
+          
+        
+        </div>
+        
+        
+        <h5
+          class="fd-panel__title"
+          id="asdASD234"
+        >
+          Panel Header
+        </h5>
+        
+        
+        <div
+          class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+        >
+          
+            
+          <span
+            class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+          >
+             
+          </span>
+          
+            
+          <div
+            aria-label="Group label"
+            class="fd-segmented-button"
+            role="group"
+          >
+            
+              
+            <button
+              aria-pressed="true"
+              class="fd-button fd-button--compact is-selected"
+              id="Gekf63D"
+            >
+              Left
+            </button>
+            
+              
+            <button
+              class="fd-button fd-button--compact"
+            >
+              Middle
+            </button>
+            
+              
+            <button
+              class="fd-button fd-button--compact"
+            >
+              Right
+            </button>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <div
+        aria-hidden="true"
+        aria-labelledby="Gekf63D"
+        class="fd-panel__content"
+        id="Gekf63a"
+        role="region"
+      >
+        
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+        et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+        Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+        Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+        Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+        Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+        Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-panel"
+    >
+      
+    
+      <div
+        class="fd-panel__header"
+      >
+        
+        
+        <div
+          class="fd-panel__expand"
+        >
+          
+            
+          <button
+            aria-controls="GJL745SV"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-labelledby="asdASD345"
+            class="fd-button fd-button--transparent fd-panel__button"
+          />
+          
+        
+        </div>
+        
+        
+        <h5
+          class="fd-panel__title"
+          id="asdASD345"
+        >
+          Panel Header
+        </h5>
+        
+        
+        <div
+          class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+        >
+          
+            
+          <span
+            class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+          >
+             
+          </span>
+          
+            
+          <div
+            aria-label="Group label"
+            class="fd-segmented-button"
+            role="group"
+          >
+            
+              
+            <button
+              aria-pressed="true"
+              class="fd-button is-selected"
+              id="GJL745SD"
+            >
+              Left
+            </button>
+            
+              
+            <button
+              class="fd-button"
+            >
+              Middle
+            </button>
+            
+              
+            <button
+              class="fd-button"
+            >
+              Right
+            </button>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <div
+        aria-hidden="true"
+        aria-labelledby="GJL745SD"
+        class="fd-panel__content"
+        id="GJL745SV"
+        role="region"
+        style="height: 100px;"
+      >
+        
+        
+        <span>
+          
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+            Morbi eget diam vehicula, porttitor orci eu, posuere leo. Sed varius orci id ipsum pharetra feugiat. 
+            Donec libero mi, vestibulum eget massa non, pretium egestas eros. Aenean quis eros ut augue condimentum faucibus.
+            Nam tristique, enim eu volutpat cursus, enim neque pulvinar mauris, nec tempor libero lacus vel lacus. Nunc molestie elit in
+            aliquam eleifend. Ut consequat convallis erat, porta egestas lectus sagittis et. Mauris fermentum semper lorem, a sollicitudin nisi sollicitudin nec. 
+            Duis semper pretium elit ac molestie. Morbi condimentum nisl vitae dolor varius convallis. Donec a molestie ex, 
+            id condimentum velit. Proin dignissim dolor velit, eu malesuada magna porta vel. Aenean quis feugiat libero, sed pretium libero. 
+            Nunc ex orci, volutpat in tristique et, accumsan sed ante. Maecenas laoreet egestas iaculis. In quis ligula mauris.
+        
+        </span>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+</div>
+`;
+
+exports[`Storyshots Visual Step Input 1`] = `
+<div>
+  <div>
+    
+
+    <div
+      class="fd-step-input"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-3', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        id="step-3"
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-3', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-form-item fd-form-item--horizontal"
+    >
+      
+    
+      <div
+        class="fd-step-input fd-step-input--compact"
+      >
+        
+            
+        <button
+          aria-label="Step down"
+          class="
+                fd-button
+                fd-button--compact
+                fd-button--transparent
+                fd-step-input__button
+                sap-icon--less"
+          onclick="stepInputValue('step-1', 'down');"
+          tabindex="-1"
+          type="button"
+        >
+          
+            
+        </button>
+        
+        
+        <input
+          class="
+                fd-input 
+                fd-input--compact 
+                fd-input--no-number-spinner 
+                fd-step-input__input
+        "
+          id="step-1"
+          type="number"
+          value="0"
+        />
+        
+            
+        <button
+          aria-label="Step up"
+          class="
+                fd-button 
+                fd-button--compact
+                fd-button--transparent
+                fd-step-input__button
+                sap-icon--add"
+          onclick="stepInputValue('step-1', 'up');"
+          tabindex="-1"
+          type="button"
+        >
+          
+            
+        </button>
+        
+    
+      </div>
+      
+    
+      <span
+        class="fd-form-label fd-form-label--unit-description"
+      >
+        PC
+      </span>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-step-input is-focus"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-20', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        id="step-20"
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-20', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <h3>
+      Success
+    </h3>
+    
+
+
+    <div
+      class="fd-step-input is-success"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-5', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        id="step-5"
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-5', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+
+    <br />
+    <br />
+    
+
+    <h3>
+      Information
+    </h3>
+    
+
+    <div
+      class="fd-step-input is-information"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-6', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        id="step-6"
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-6', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+    <br />
+    <br />
+    
+
+    <h3>
+      Error
+    </h3>
+    
+
+    <div
+      class="fd-step-input is-error"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-7', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        id="step-7"
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-7', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+
+    <br />
+    <br />
+    
+
+
+    <h3>
+      Warning
+    </h3>
+    
+
+    <div
+      class="fd-step-input is-warning"
+    >
+      
+    
+      <button
+        aria-label="Step down"
+        class="
+        fd-button
+        fd-button--transparent
+        fd-step-input__button
+        sap-icon--less"
+        onclick="stepInputValue('step-8', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+    
+      </button>
+      
+    
+      <input
+        class="
+        fd-input 
+        fd-input--no-number-spinner 
+        fd-step-input__input
+    "
+        id="step-8"
+        type="number"
+        value="0"
+      />
+      
+    
+      <button
+        aria-label="Step up"
+        class="
+        fd-button 
+        fd-button--transparent
+        fd-step-input__button
+        sap-icon--add"
+        onclick="stepInputValue('step-8', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+    
+      </button>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-step-input is-disabled"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-13', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        disabled=""
+        id="step-13"
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-13', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-step-input is-readonly"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-14', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        id="step-14"
+        readonly=""
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-14', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+  </div>
+</div>
+`;
+
+exports[`Storyshots Visual Table 1`] = `
+<div>
+  <div>
+    
+
+    <table
+      class="fd-table"
+    >
+      
+    
+      <thead
+        class="fd-table__header"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+        
+        </tr>
+        
+    
+      </thead>
+      
+    
+      <tbody
+        class="fd-table__body"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Middle Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Middle Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Middle Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+    
+      </tbody>
+      
+
+    </table>
+    
+
+  </div>
+  <div>
+    
+
+    <table
+      class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders"
+    >
+      
+    
+      <thead
+        class="fd-table__header"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+        
+        </tr>
+        
+    
+      </thead>
+      
+    
+      <tbody
+        class="fd-table__body"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+    
+      </tbody>
+      
+
+    </table>
+    
+
+  </div>
+  <div>
+    
+
+    <table
+      class="fd-table"
+    >
+      
+    
+      <thead
+        class="fd-table__header"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+        
+        </tr>
+        
+    
+      </thead>
+      
+    
+      <tbody
+        class="fd-table__body fd-table__body--no-horizontal-borders fd-table__body--no-vertical-borders"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+    
+      </tbody>
+      
+
+    </table>
+    
+
+  </div>
+  <div>
+    
+
+    <table
+      class="fd-table"
+    >
+      
+    
+      <thead
+        class="fd-table__header"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+        
+        </tr>
+        
+    
+      </thead>
+      
+    
+      <tbody
+        class="fd-table__body"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+    
+      </tbody>
+      
+    
+      <tfoot
+        class="fd-table__footer"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          />
+          
+            
+          <td
+            class="fd-table__cell"
+          />
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+        
+        </tr>
+        
+    
+      </tfoot>
+      
+
+    </table>
+  </div>
+  <div>
+    
+
+    <table
+      class="fd-table fd-table--compact"
+    >
+      
+    
+      <thead
+        class="fd-table__header"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+        
+        </tr>
+        
+    
+      </thead>
+      
+    
+      <tbody
+        class="fd-table__body"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+    
+      </tbody>
+      
+    
+      <tfoot
+        class="fd-table__footer"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          />
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          />
+          
+        
+        </tr>
+        
+    
+      </tfoot>
+      
+
+    </table>
+    
+
+  </div>
+  <div>
+    
+
+    <table
+      class="fd-table fd-table--condensed"
+    >
+      
+    
+      <thead
+        class="fd-table__header"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+        
+        </tr>
+        
+    
+      </thead>
+      
+    
+      <tbody
+        class="fd-table__body"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+    
+      </tbody>
+      
+    
+      <tfoot
+        class="fd-table__footer"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          />
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          />
+          
+        
+        </tr>
+        
+    
+      </tfoot>
+      
+
+    </table>
+    
+
+  </div>
+  <div>
+    
+
+    <table
+      class="fd-table"
+    >
+      
+    
+      <thead
+        class="fd-table__header"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <th
+            class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable"
+            scope="col"
+          >
+            Hovering And
+          </th>
+          
+            
+          <th
+            class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable"
+            scope="col"
+          >
+            Clicking
+          </th>
+          
+            
+          <th
+            class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable"
+            scope="col"
+          >
+            On Header's Cell
+          </th>
+          
+            
+          <th
+            class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable"
+            scope="col"
+          >
+            Will Trigger
+          </th>
+          
+            
+          <th
+            class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable"
+            scope="col"
+          >
+            Color Change
+          </th>
+          
+        
+        </tr>
+        
+    
+      </thead>
+      
+    
+      <tbody
+        class="fd-table__body"
+      >
+        
+        
+        <tr
+          class="fd-table__row fd-table__row--activable fd-table__row--hoverable"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Clicking on any Cell
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            On This Row
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Will cause
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Highlight of Whole Row
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--activable"
+          >
+            Clicking On Cell
+          </td>
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--activable"
+          >
+            Will cause
+          </td>
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--activable"
+          >
+            Highlight of cell
+          </td>
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--activable"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--activable"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--hoverable"
+          >
+            Hovering On Any Cell
+          </td>
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--hoverable"
+          >
+            Will Change
+          </td>
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--hoverable"
+          >
+            Background
+          </td>
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--hoverable"
+          >
+            Of Certain
+          </td>
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--hoverable"
+          >
+            Cell
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row fd-table__row--hoverable"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Hovering On Any Cell
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            And cells
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Will Change
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Background of Whole Row
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+    
+      </tbody>
+      
+
+    </table>
+    
+
+  </div>
+  <div>
+    
+
+    <table
+      class="fd-table"
+    >
+      
+    
+      <thead
+        class="fd-table__header"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <th
+            class="fd-table__cell fd-table__cell--checkbox"
+            scope="col"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox"
+              id="Ai4ez611"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez611"
+            />
+            
+            
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+        
+        </tr>
+        
+    
+      </thead>
+      
+    
+      <tbody
+        class="fd-table__body"
+      >
+        
+        
+        <tr
+          aria-selected="true"
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              checked=""
+              class="fd-checkbox"
+              id="Ai4ez615"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez615"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox"
+              id="Ai4ez617"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez617"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox"
+              id="Gi4ez611"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Gi4ez611"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+    
+      </tbody>
+      
+
+    </table>
+    
+
+  </div>
+  <div>
+    
+
+    <table
+      class="fd-table fd-table--compact"
+    >
+      
+    
+      <thead
+        class="fd-table__header"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <th
+            class="fd-table__cell fd-table__cell--checkbox"
+            scope="col"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4HF611"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4HF611"
+            />
+            
+            
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+        
+        </tr>
+        
+    
+      </thead>
+      
+    
+      <tbody
+        class="fd-table__body"
+      >
+        
+        
+        <tr
+          aria-selected="true"
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              checked=""
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4HFHG1"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4HFHG1"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4JKHG1"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4JKHG1"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4JH23G1"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4JH23G1"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+    
+      </tbody>
+      
+
+    </table>
+    
+
+  </div>
+  <div>
+    
+
+    <table
+      class="fd-table fd-table--condensed"
+    >
+      
+    
+      <thead
+        class="fd-table__header"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <th
+            class="fd-table__cell fd-table__cell--checkbox"
+            scope="col"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4JH2BF87"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4JH2BF87"
+            />
+            
+            
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+        
+        </tr>
+        
+    
+      </thead>
+      
+    
+      <tbody
+        class="fd-table__body"
+      >
+        
+        
+        <tr
+          aria-selected="true"
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              checked=""
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4JHf87"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4JHf87"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4Jj67"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4Jj67"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox fd-checkbox--compact"
+              id="AGjtJj67"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="AGjtJj67"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+    
+      </tbody>
+      
+
+    </table>
+    
+
+  </div>
+  <div>
+    
+
+    <table
+      class="fd-table"
+    >
+      
+    
+      <thead
+        class="fd-table__header"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Name
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Status
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Price
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Country
+          </th>
+          
+        
+        </tr>
+        
+    
+      </thead>
+      
+    
+      <tbody
+        class="fd-table__body"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Banana
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            
+                
+            <span
+              class="fd-object-status fd-object-status--positive"
+            >
+              
+                    Available
+                
+            </span>
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            5 EUR
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            India
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Pineapple
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            
+                
+            <span
+              class="fd-object-status fd-object-status--negative"
+            >
+              
+                    Out of stock
+                
+            </span>
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            2 EUR
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Mexico
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Orange
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            
+                
+            <span
+              class="fd-object-status fd-object-status--informative"
+            >
+              
+                    Temporary unavailable
+                
+            </span>
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            6 EUR
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Spain
+          </td>
+          
+        
+        </tr>
+        
+    
+      </tbody>
+      
+
+    </table>
+    
+
+    <div
+      class="fd-pagination"
+    >
+      
+    
+      <span
+        class="fd-pagination__total"
+      >
+        Showing 3 of 30 items
+      </span>
+      
+    
+      <nav
+        class="fd-pagination__nav"
+      >
+        
+        
+        <a
+          aria-disabled="false"
+          aria-label="Next"
+          class="fd-pagination__link fd-pagination__link--previous"
+          href="#"
+        />
+        
+        
+        <a
+          class="fd-pagination__link"
+          href="#"
+        >
+          1
+        </a>
+        
+        
+        <a
+          class="fd-pagination__link is-selected"
+          href="#"
+        >
+          2
+        </a>
+        
+        
+        <a
+          class="fd-pagination__link"
+          href="#"
+        >
+          3
+        </a>
+        
+        
+        <span
+          class="fd-pagination__more"
+          role="presentation"
+        />
+        
+        
+        <a
+          class="fd-pagination__link"
+          href="#"
+        >
+          10
+        </a>
+        
+        
+        <a
+          aria-disabled="false"
+          aria-label="Next"
+          class="fd-pagination__link fd-pagination__link--next"
+          href="#"
+        />
+        
+    
+      </nav>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-dialog"
+      id="filter-dialog-example"
+    >
+      
+    
+      <div
+        aria-labelledby="dialog-filter"
+        aria-modal="true"
+        class="fd-dialog__content"
+        role="dialog"
+      >
+        
+        
+        <header
+          class="fd-dialog__header fd-bar"
+        >
+          
+            
+          <div
+            class="fd-bar__left"
+          >
+            
+                
+            <div
+              class="fd-bar__element"
+            >
+              
+                    
+              <h3
+                class="fd-dialog__title"
+                id="dialog-filter"
+              >
+                
+                        Filter By
+                    
+              </h3>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-bar__right"
+          >
+            
+                
+            <div
+              class="fd-bar__element"
+            >
+              
+                    
+              <span
+                class="sap-icon--filter"
+              />
+              
+                
+            </div>
+            
+            
+          </div>
+          
+        
+        </header>
+        
+        
+        <div
+          class="fd-dialog__body fd-dialog__body--no-vertical-padding"
+        >
+          
+            
+          <ul
+            class="fd-list fd-list--compact"
+          >
+            
+              
+            <li
+              class="fd-list__item"
+            >
+              
+                  
+              <span
+                class="fd-list__title"
+              >
+                Name
+              </span>
+              
+              
+            </li>
+            
+              
+            <li
+              class="fd-list__item"
+            >
+              
+                  
+              <span
+                class="fd-list__title"
+              >
+                Status
+              </span>
+              
+              
+            </li>
+            
+              
+            <li
+              class="fd-list__item"
+            >
+              
+                  
+              <span
+                class="fd-list__title"
+              >
+                Price
+              </span>
+              
+              
+            </li>
+            
+              
+            <li
+              class="fd-list__item"
+            >
+              
+                  
+              <span
+                class="fd-list__title"
+              >
+                Country
+              </span>
+              
+              
+            </li>
+            
+            
+          </ul>
+          
+        
+        </div>
+        
+        
+        <footer
+          class="fd-dialog__footer fd-bar fd-bar--footer"
+        >
+          
+            
+          <div
+            class="fd-bar__right"
+          >
+            
+                
+            <div
+              class="fd-bar__element"
+            >
+              
+                    
+              <button
+                aria-label="navigation"
+                class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact"
+                onclick="toggleDialog('filter-dialog-example', false)"
+              >
+                OK
+              </button>
+              
+                
+            </div>
+            
+                
+            <div
+              class="fd-bar__element"
+            >
+              
+                    
+              <button
+                aria-label="navigation"
+                class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact"
+                onclick="toggleDialog('filter-dialog-example', false)"
+              >
+                Cancel
+              </button>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+        
+        </footer>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+    <div
+      class="fd-dialog"
+      id="settings-dialog-example"
+    >
+      
+    
+      <div
+        aria-labelledby="dialog-settings"
+        aria-modal="true"
+        class="fd-dialog__content"
+        role="dialog"
+      >
+        
+        
+        <header
+          class="fd-dialog__header fd-bar fd-bar--header-with-subheader"
+        >
+          
+            
+          <div
+            class="fd-bar__left"
+          >
+            
+                
+            <div
+              class="fd-bar__element"
+            >
+              
+                    
+              <h3
+                class="fd-dialog__title"
+                id="dialog-settings"
+              >
+                
+                        Columns
+                    
+              </h3>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+        
+        </header>
+        
+        
+        <div
+          class="fd-dialog__subheader fd-bar fd-bar--subheader"
+        >
+          
+            
+          <div
+            class="fd-bar__middle"
+          >
+            
+                
+            <div
+              class="fd-bar__element"
+            >
+              
+                    
+              <button
+                aria-label="navigation"
+                class="fd-button fd-button--icon fd-button--transparent fd-button--compact sap-icon--arrow-top"
+              />
+              
+                    
+              <button
+                aria-label="navigation"
+                class="fd-button fd-button--icon fd-button--transparent fd-button--compact sap-icon--arrow-bottom"
+              />
+              
+                
+            </div>
+            
+                
+            <div
+              class="fd-bar__element fd-bar__element--full-width"
+            >
+              
+                    
+              <div
+                class="fd-input-group"
+              >
+                
+                        
+                <input
+                  class="fd-input fd-input-group__input fd-input--compact"
+                  placeholder="Search..."
+                  type="text"
+                />
+                
+                        
+                <span
+                  class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact"
+                >
+                  
+                            
+                  <button
+                    aria-label="navigation"
+                    class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact sap-icon--search"
+                  />
+                  
+                        
+                </span>
+                
+                    
+              </div>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+        
+        <div
+          class="fd-dialog__body fd-dialog__body--no-vertical-padding"
+        >
+          
+            
+          <ul
+            class="fd-list fd-list--multi-input fd-list--compact"
+          >
+            
+                
+            <li
+              class="fd-list__item is-selected"
+              role="option"
+            >
+              
+                  
+              <input
+                aria-label="checkbox"
+                checked=""
+                class="fd-checkbox fd-checkbox--compact fd-list__input"
+                id="GGi4ezFD1"
+                type="checkbox"
+              />
+              
+                  
+              <label
+                class="fd-checkbox__label fd-checkbox__label--compact fd-list__label"
+                for="GGi4ezFD1"
+              >
+                
+                      
+                <span
+                  class="fd-list__title"
+                >
+                  All
+                </span>
+                
+                  
+              </label>
+              
+                
+            </li>
+            
+                
+            <li
+              class="fd-list__item is-selected"
+              role="option"
+            >
+              
+                  
+              <input
+                aria-label="checkbox"
+                checked=""
+                class="fd-checkbox fd-checkbox--compact fd-list__input"
+                id="GGi4ez641"
+                type="checkbox"
+              />
+              
+                  
+              <label
+                class="fd-checkbox__label fd-checkbox__label--compact fd-list__label"
+                for="GGi4ez641"
+              >
+                
+                      
+                <span
+                  class="fd-list__title"
+                >
+                  Name
+                </span>
+                
+                  
+              </label>
+              
+                
+            </li>
+            
+                
+            <li
+              class="fd-list__item is-selected"
+              role="option"
+            >
+              
+                  
+              <input
+                aria-label="checkbox"
+                checked=""
+                class="fd-checkbox fd-checkbox--compact fd-list__input"
+                id="Ai4FGFG612"
+                type="checkbox"
+              />
+              
+                  
+              <label
+                class="fd-checkbox__label fd-checkbox__label--compact fd-list__label"
+                for="Ai4FGFG612"
+              >
+                
+                      
+                <span
+                  class="fd-list__title"
+                >
+                  Status
+                </span>
+                
+                  
+              </label>
+              
+                
+            </li>
+            
+                
+            <li
+              class="fd-list__item is-selected"
+              role="option"
+            >
+              
+                  
+              <input
+                aria-label="checkbox"
+                checked=""
+                class="fd-checkbox fd-checkbox--compact fd-list__input"
+                id="Ai4e88614"
+                type="checkbox"
+              />
+              
+                  
+              <label
+                class="fd-checkbox__label fd-checkbox__label--compact fd-list__label"
+                for="Ai4e88614"
+              >
+                
+                      
+                <span
+                  class="fd-list__title"
+                >
+                  Price
+                </span>
+                
+                  
+              </label>
+              
+                
+            </li>
+            
+                
+            <li
+              class="fd-list__item is-selected"
+              role="option"
+            >
+              
+                  
+              <input
+                aria-label="checkbox"
+                checked=""
+                class="fd-checkbox fd-checkbox--compact fd-list__input"
+                id="Ai4egh6024"
+                type="checkbox"
+              />
+              
+                  
+              <label
+                class="fd-checkbox__label fd-checkbox__label--compact fd-list__label"
+                for="Ai4egh6024"
+              >
+                
+                      
+                <span
+                  class="fd-list__title"
+                >
+                  Country
+                </span>
+                
+                  
+              </label>
+              
+                
+            </li>
+            
+            
+          </ul>
+          
+        
+        </div>
+        
+        
+        <footer
+          class="fd-dialog__footer fd-bar fd-bar--footer"
+        >
+          
+            
+          <div
+            class="fd-bar__right"
+          >
+            
+                
+            <div
+              class="fd-bar__element"
+            >
+              
+                    
+              <button
+                aria-label="navigation"
+                class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact"
+                onclick="toggleDialog('settings-dialog-example', false)"
+              >
+                OK
+              </button>
+              
+                
+            </div>
+            
+                
+            <div
+              class="fd-bar__element"
+            >
+              
+                    
+              <button
+                aria-label="navigation"
+                class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact"
+                onclick="toggleDialog('settings-dialog-example', false)"
+              >
+                Cancel
+              </button>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+        
+        </footer>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+    <div
+      class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+    >
+      
+    
+      <h4
+        style="margin-bottom:0px;"
+      >
+        Table With Advanced Shellbar
+      </h4>
+      
+    
+      <div
+        class="fd-toolbar__spacer"
+      />
+      
+    
+      <button
+        aria-label="navigation"
+        class="fd-button fd-button--compact fd-button--transparent sap-icon--filter"
+        onclick="toggleDialog('filter-dialog-example', true)"
+      />
+      
+    
+      <button
+        aria-label="navigation"
+        class="fd-button fd-button--compact fd-button--transparent sap-icon--action-settings"
+        onclick="toggleDialog('settings-dialog-example', true)"
+      />
+      
+
+    </div>
+    
+
+    <table
+      class="fd-table fd-table--compact"
+    >
+      
+    
+      <thead
+        class="fd-table__header"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Name
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Status
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Price
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Country
+          </th>
+          
+        
+        </tr>
+        
+    
+      </thead>
+      
+    
+      <tbody
+        class="fd-table__body"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Banana
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            
+                
+            <span
+              class="fd-object-status fd-object-status--positive"
+            >
+              
+                    Available
+                
+            </span>
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            5 EUR
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            India
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Pineapple
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            
+                
+            <span
+              class="fd-object-status fd-object-status--negative"
+            >
+              
+                    Out of stock
+                
+            </span>
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            2 EUR
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Mexico
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Orange
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            
+                
+            <span
+              class="fd-object-status fd-object-status--informative"
+            >
+              
+                    Temporary unavailable
+                
+            </span>
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            6 EUR
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Spain
+          </td>
+          
+        
+        </tr>
+        
+    
+      </tbody>
+      
+
+    </table>
+    
+
+  </div>
+  <div>
+    
+
+    <table
+      class="fd-table fd-table--no-horizontal-borders"
+    >
+      
+    
+      <thead
+        class="fd-table__header"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <th
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox"
+              id="kqqzPI"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="kqqzPI"
+            />
+            
+            
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Name
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Status
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Price
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Country
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+          />
+          
+        
+        </tr>
+        
+    
+      </thead>
+      
+    
+      <tbody
+        class="fd-table__body"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox"
+              id="EWuzWh"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="EWuzWh"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Banana
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            
+                
+            <span
+              class="fd-object-status fd-object-status--positive"
+            >
+              
+                    Available
+                
+            </span>
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            5 EUR
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            India
+          </td>
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
+          >
+            
+                
+            <span
+              class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            />
+            
+            
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox"
+              id="19j0Sc"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="19j0Sc"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Pineapple
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            
+                
+            <span
+              class="fd-object-status fd-object-status--negative"
+            >
+              
+                    Out of stock
+                
+            </span>
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            2 EUR
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Mexico
+          </td>
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
+          >
+            
+                
+            <span
+              class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            />
+            
+            
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox"
+              id="a7SfGX"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="a7SfGX"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Orange
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            
+                
+            <span
+              class="fd-object-status fd-object-status--informative"
+            >
+              
+                    Temporary unavailable
+                
+            </span>
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            6 EUR
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Spain
+          </td>
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
+          >
+            
+                
+            <span
+              class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            />
+            
+            
+          </td>
+          
+        
+        </tr>
+        
+    
+      </tbody>
+      
+
+    </table>
+  </div>
+  <div>
+    
+    
+    <table
+      class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in"
+    >
+      
+        
+      <tbody
+        class="fd-table__body"
+      >
+        
+            
+        <tr
+          class="fd-table__row fd-table__row--main fd-table__row--activable fd-table__row--hoverable"
+        >
+          
+                
+          <td
+            class="fd-table__cell"
+          >
+            
+                    
+            <p
+              class="fd-table__text fd-table__text--title"
+            >
+              Banana
+            </p>
+            
+                    
+            <p
+              class="fd-table__text"
+            >
+              India
+            </p>
+            
+                
+          </td>
+          
+                
+          <td
+            class="fd-table__cell fd-table__cell--fit-content"
+          >
+            
+                    5 EUR
+                
+          </td>
+          
+                
+          <td
+            class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
+          >
+            
+                    
+            <span
+              class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            />
+            
+                
+          </td>
+          
+            
+        </tr>
+        
+            
+        <tr
+          class="fd-table__row fd-table__row--secondary"
+        >
+          
+                
+          <td
+            class="fd-table__cell"
+            colspan="100%"
+          >
+            
+                    
+            <p
+              class="fd-table__text"
+            >
+              
+                        
+              <label
+                class="fd-form-label"
+              >
+                Status:
+              </label>
+              
+                        
+              <span
+                class="fd-object-status fd-object-status--positive"
+              >
+                
+                            Available
+                        
+              </span>
+              
+                    
+            </p>
+            
+                    
+            <p
+              class="fd-table__text"
+            >
+              
+                        
+              <label
+                class="fd-form-label"
+              >
+                Date Of Expire:
+              </label>
+              
+                        12.01.12
+                    
+            </p>
+            
+                
+          </td>
+          
+            
+        </tr>
+        
+            
+        <tr
+          class="fd-table__row fd-table__row--main fd-table__row--activable fd-table__row--hoverable"
+        >
+          
+                
+          <td
+            class="fd-table__cell"
+          >
+            
+                    
+            <p
+              class="fd-table__text fd-table__text--title"
+            >
+              Very long name for orange, which no one expected, forces text wrapping into another line.
+            </p>
+            
+                    
+            <p
+              class="fd-table__text"
+            >
+              Spain
+            </p>
+            
+                
+          </td>
+          
+                
+          <td
+            class="fd-table__cell fd-table__cell--fit-content"
+          >
+            
+                    6 EUR
+                
+          </td>
+          
+                
+          <td
+            class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
+          >
+            
+                    
+            <span
+              class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            />
+            
+                
+          </td>
+          
+            
+        </tr>
+        
+            
+        <tr
+          class="fd-table__row fd-table__row--secondary"
+        >
+          
+                
+          <td
+            class="fd-table__cell"
+            colspan="100%"
+          >
+            
+                    
+            <p
+              class="fd-table__text"
+            >
+              
+                        
+              <label
+                class="fd-form-label"
+              >
+                Status:
+              </label>
+              
+                        
+              <span
+                class="fd-object-status fd-object-status--negative"
+              >
+                
+                            Out of stock
+                        
+              </span>
+              
+                    
+            </p>
+            
+                    
+            <p
+              class="fd-table__text"
+            >
+              
+                        
+              <label
+                class="fd-form-label"
+              >
+                Date Of Expire:
+              </label>
+              
+                        12.01.12
+                    
+            </p>
+            
+                
+          </td>
+          
+            
+        </tr>
+        
+        
+      </tbody>
+      
+    
+    </table>
+    
+
+  </div>
+  <div>
+    
+
+    <table
+      class="fd-table"
+    >
+      
+    
+      <thead
+        class="fd-table__header"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <th
+            class="fd-table__cell fd-table__cell--status-indicator"
+          />
+          
+            
+          <th
+            class="fd-table__cell fd-table__cell--checkbox"
+            scope="col"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox"
+              id="Ai9ez611"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai9ez611"
+            />
+            
+            
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+        
+        </tr>
+        
+    
+      </thead>
+      
+    
+      <tbody
+        class="fd-table__body"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--status-indicator"
+          />
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox"
+              id="Ai9ek611"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai9ek611"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--valid"
+          />
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox"
+              id="Ai9ek673"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai9ek673"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--valid"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--status-indicator"
+          />
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox"
+              id="Ai9ek69s"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai9ek69s"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+         
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--warning"
+          />
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox"
+              id="Ai9ekk69s"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai9ekk69s"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--warning"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--status-indicator"
+          />
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox"
+              id="Ai73k69s"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai73k69s"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+         
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--error"
+          />
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox"
+              id="Ai734F6s"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai734F6s"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--error"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+          
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--status-indicator"
+          />
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox"
+              id="Ai73HE36s"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai73HE36s"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+         
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--information"
+          />
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox"
+              id="Ai7JDE36s"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai7JDE36s"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--information"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+           
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--status-indicator"
+          />
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox"
+              id="Ai7JGD6s"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai7JGD6s"
+            />
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+                            
+    
+      </tbody>
+      
+
+    </table>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+    >
+      
+    
+      <h4
+        style="margin-bottom:0px;"
+      >
+        Table with Merged Cells
+      </h4>
+      
+    
+      <span
+        class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+      />
+      
+
+    </div>
+    
+
+    <table
+      class="fd-table"
+    >
+      
+    
+      <thead
+        class="fd-table__header"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Name
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Status
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Price
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Country
+          </th>
+          
+        
+        </tr>
+        
+    
+      </thead>
+      
+    
+      <tbody
+        class="fd-table__body"
+      >
+        
+        
+        <tr
+          class="fd-table__row fd-table__row--activable"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--no-horizontal-border fd-table__cell--no-vertical-border"
+          >
+            Banana
+          </td>
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--no-vertical-border"
+          >
+            
+                
+            <span
+              class="fd-object-status fd-object-status--positive"
+            >
+              
+                    Available
+                
+            </span>
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            5 EUR
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            India
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row fd-table__row--activable"
+        >
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--no-horizontal-border"
+          >
+            Pineapple
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            
+                
+            <span
+              class="fd-object-status fd-object-status--negative"
+            >
+              
+                    Out of stock
+                
+            </span>
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            2 EUR
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Mexico
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row fd-table__row--activable"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Orange
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            
+                
+            <span
+              class="fd-object-status fd-object-status--informative"
+            >
+              
+                    Temporary unavailable
+                
+            </span>
+            
+            
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            6 EUR
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Spain
+          </td>
+          
+        
+        </tr>
+        
+    
+      </tbody>
+      
+
+    </table>
+    
+
+  </div>
+  <div>
+    
+
+    <table
+      class="fd-table"
+    >
+      
+    
+      <thead
+        class="fd-table__header"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            
+                
+            <div
+              class="fd-table__inner"
+            >
+              
+                    Column Header Ascending
+                    
+              <span
+                class="fd-table__icon sap-icon--sort-ascending"
+              />
+              
+                
+            </div>
+            
+            
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            
+                
+            <div
+              class="fd-table__inner"
+            >
+              
+                    Column Header Descending
+                    
+              <span
+                class="fd-table__icon sap-icon--sort-descending"
+              />
+              
+                
+            </div>
+            
+            
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+        
+        </tr>
+        
+    
+      </thead>
+      
+    
+      <tbody
+        class="fd-table__body"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+              href="/"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+              href="/"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+              href="/"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+        
+        </tr>
+        
+    
+      </tbody>
+      
+
+    </table>
+    
+
+  </div>
+  <div>
+    
+
+    <style>
+      
+        .fd-table--fixed {
+           padding-left: 200px;
+        }
+        
+        .fd-table--fixed .fd-table__cell {
+            min-width: 200px;
+            max-width: 200px;
+        }
+
+    </style>
+    
+
+    <div
+      style="position: relative"
+    >
+      
+    
+      <div
+        class="fd-table--fixed"
+      >
+        
+      
+        <table
+          class="fd-table"
+        >
+          
+         
+          <thead
+            class="fd-table__header"
+          >
+            
+            
+            <tr
+              class="fd-table__row"
+            >
+              
+               
+              <th
+                aria-haspopup="true"
+                class="fd-table__cell fd-table__cell--fixed"
+                scope="col"
+              >
+                
+                Header Column
+               
+              </th>
+              
+               
+              <th
+                class="fd-table__cell"
+                scope="col"
+              >
+                
+                    Header Column
+               
+              </th>
+              
+               
+              <th
+                class="fd-table__cell"
+                scope="col"
+              >
+                
+                    Header Column
+               
+              </th>
+              
+               
+              <th
+                class="fd-table__cell"
+                scope="col"
+              >
+                
+                    Header Column
+               
+              </th>
+              
+               
+              <th
+                class="fd-table__cell"
+                scope="col"
+              >
+                
+                    Header Column
+               
+              </th>
+              
+               
+              <th
+                class="fd-table__cell"
+                scope="col"
+              >
+                
+                    Header Column
+               
+              </th>
+              
+               
+              <th
+                class="fd-table__cell"
+                scope="col"
+              >
+                
+                    Header Column
+               
+              </th>
+              
+               
+              <th
+                class="fd-table__cell"
+                scope="col"
+              >
+                
+                    Header Column
+               
+              </th>
+              
+            
+            </tr>
+            
+         
+          </thead>
+          
+         
+          <tbody
+            class="fd-table__body"
+          >
+            
+            
+            <tr
+              class="fd-table__row"
+            >
+              
+               
+              <td
+                class="fd-table__cell fd-table__cell--fixed"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+            
+            </tr>
+            
+            
+            <tr
+              class="fd-table__row"
+            >
+              
+               
+              <td
+                class="fd-table__cell fd-table__cell--fixed"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+            
+            </tr>
+            
+            
+            <tr
+              class="fd-table__row"
+            >
+              
+               
+              <td
+                class="fd-table__cell fd-table__cell--fixed"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+               
+              <td
+                class="fd-table__cell"
+              >
+                Lorem ipsum dolor sit amet ipsum
+              </td>
+              
+            
+            </tr>
+            
+         
+          </tbody>
+          
+      
+        </table>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <table
+      class="fd-table"
+    >
+      
+    
+      <thead
+        class="fd-table__header"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+            
+          <th
+            class="fd-table__cell"
+            scope="col"
+          />
+          
+        
+        </tr>
+        
+    
+      </thead>
+      
+    
+      <tbody
+        class="fd-table__body"
+      >
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+              href="/"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--fit-content"
+          >
+            
+                
+            <button
+              aria-label="navigation"
+              class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"
+            />
+            
+            
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+              href="/"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated"
+          >
+            
+                
+            <button
+              aria-label="navigation"
+              class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"
+            />
+            
+            
+          </td>
+          
+        
+        </tr>
+        
+        
+        <tr
+          class="fd-table__row"
+        >
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+              href="/"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+            
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+            
+          <td
+            class="fd-table__cell fd-table__cell--fit-content"
+          >
+            
+                
+            <button
+              aria-label="navigation"
+              class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"
+            />
+            
+            
+          </td>
+          
+        
+        </tr>
+        
+    
+      </tbody>
+      
+
+    </table>
+    
+
+  </div>
+</div>
+`;

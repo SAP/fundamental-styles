@@ -14,7 +14,7 @@ The section is a page-level structure container used to divide a page into stack
 You will generally use a section inside a page container which will give you the appropriate side margins. Since a section is full-width by default it can be used as a well with background colors or images.
 
 Can hold two child types:
-- `.fd-panel`
+- `.fd-layout-panel`
 - `.fd-container` and `fd-col--[num]` can be used to organize panels or content when a grid layout is not desired.
 
 > {{ site.data.strings.headerDisclaimer }}
@@ -42,20 +42,20 @@ Shows an example with the grid span helper class. This is most appropriate when 
 {% capture section-layout-example %}
 <section class="fd-section">
     <div class="fd-layout-grid">
-        <div class="fd-panel fd-layout-grid__span-column-2">
-            .fd-panel
+        <div class="fd-layout-panel fd-layout-grid__span-column-2">
+            .fd-layout-panel
         </div>
-        <div class="fd-panel">
-            .fd-panel
+        <div class="fd-layout-panel">
+            .fd-layout-panel
         </div>
-        <div class="fd-panel">
-            .fd-panel
+        <div class="fd-layout-panel">
+            .fd-layout-panel
         </div>
-        <div class="fd-panel">
-            .fd-panel
+        <div class="fd-layout-panel">
+            .fd-layout-panel
         </div>
-        <div class="fd-panel">
-            .fd-panel
+        <div class="fd-layout-panel">
+            .fd-layout-panel
         </div>
     </div>
 </section>
@@ -69,21 +69,21 @@ Shows an alternate layout option using columns. This may be more appropriate dep
 {% capture section-layout-example %}
 <section class="fd-section">
     <div class="fd-container">
-        <div class="fd-panel">
-            .fd-panel
+        <div class="fd-layout-panel">
+            .fd-layout-panel
         </div>
     </div>
 </section>
 <section class="fd-section">
     <div class="fd-container">
         <div class="fd-col--6">
-            <div class="fd-panel">
-                .fd-panel
+            <div class="fd-layout-panel">
+                .fd-layout-panel
             </div>
         </div>
         <div class="fd-col--6">
-            <div class="fd-panel">
-                .fd-panel
+            <div class="fd-layout-panel">
+                .fd-layout-panel
             </div>
         </div>
     </div>
@@ -101,8 +101,8 @@ Header and title elements are available when necessary to label content groups.
     <div class="fd-section__header">
       <h3 class="fd-section__title">Section title</h3>
     </div>
-    <div class="fd-panel">
-        .fd-panel
+    <div class="fd-layout-panel">
+        .fd-layout-panel
     </div>
 </section>
 {% endcapture %}

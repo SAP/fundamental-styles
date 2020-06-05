@@ -108,7 +108,7 @@ body {
   background: pink;
 }
 
-.panel-playground {
+.layout-panel-playground {
   border: 1px solid navy;
   border-radius: 4px;
   padding: 10px;
@@ -347,4 +347,39 @@ body {
 .tile-content-small-playground {
   width: 8.25rem;
   height: 3.438rem;
+}
+
+.tile-badge-playground {
+  margin: 0;
+  padding: 0;
+  height: 1rem;
+  max-width: calc(100% - 1rem);
+  font-size: 0.75rem;
+  line-height: normal;
+  font-weight: bold;
+  background: plum;
+  color: blueviolet;
+  padding: 0 0.5rem;
+  border: 0.0625rem solid transparent;
+  border-radius: 0.5rem;
+  position: unset;
+  margin-right: 0.375rem;
+}
+
+*[dir="rtl"] .tile-badge-playground{
+  margin-right: 0;
+  margin-left: 0.375rem;
+}
+
+.link-playground {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #0a6ed1;
+  text-decoration: none;
+}
+
+.link-playground:hover,
+.link-playground:active {
+  text-decoration: underline;
 }

@@ -7,6 +7,7 @@ toc: false
 permalink: components/busy-indicator.html
 folder: components
 summary:
+tags: [f3, a11y, theme]
 ---
 
 A busy indicator informs the user of an ongoing operation. Only one busy indicator should be shown at a time.

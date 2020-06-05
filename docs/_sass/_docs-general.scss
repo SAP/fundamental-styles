@@ -166,7 +166,7 @@ hr {
     }
   }
 
-  .fd-tile__header {
+  .docs-tile__header {
     color: $docs-tiles-color !important;
     font-weight: normal;
     font-size: 20px;
@@ -178,11 +178,11 @@ hr {
     }
   }
 
-  .fd-tile__content {
+  .docs-tile__content {
     align-self: auto;
   }
 
-  .fd-tile__description {
+  .docs-tile__description {
     color: docs-color(text, 1);
   }
 
@@ -248,6 +248,10 @@ pre {
   line-height: 1.4;
   font-weight: 400;
   margin-left: 0;
+}
+
+.docs-max-height {
+  max-height: 250px;
 }
 
 #mobile-sidenav-btn {

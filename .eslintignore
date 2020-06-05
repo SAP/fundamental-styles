@@ -4,3 +4,5 @@ docs/js/jquery.ba-throttle-debounce.min.js
 docs/js/toc.js
 docs/_site/
 test/visual-regression-tests/backstop_data/*
+test/
+docs/

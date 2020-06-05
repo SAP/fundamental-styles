@@ -7,6 +7,7 @@ toc: false
 permalink: components/pagination.html
 folder: components
 summary:
+tags: [a11y, theme]
 ---
 
 Pagination is commonly used for tables and tiles. It allows users to see how many pages of content exist, to navigate and highlights which page they are currently viewing.

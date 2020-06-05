@@ -6,6 +6,7 @@ sidebar: left-navigation-sidebar
 toc: false
 permalink: components/button.html
 folder: components
+tags: [f3, a11y, theme]
 ---
 {: .docs-intro}
 Buttons allow users to perform actions. All the buttons require the fd-buttonbase class and an additional modifier for each of the flavours.

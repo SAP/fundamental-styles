@@ -6,6 +6,7 @@ sidebar: left-navigation-sidebar
 toc: false
 permalink: components/input-group.html
 folder: components
+tags: [f3, a11y, theme]
 ---
 
 The input group includes form inputs with add-ons that allow the user to better understand the information being entered.

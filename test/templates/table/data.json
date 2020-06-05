@@ -2,40 +2,8 @@
     "id": "table",
     "name": "Table",
     "properties": {
-        "rows": [
-            [
-                "Data 1.1",
-                "Data 1.2",
-                "Data 1.3",
-                "Data 1.4",
-                "Data 1.5"
-            ],
-            [
-                "Data 2.1",
-                "Data 2.2",
-                "Data 2.3",
-                "Data 2.4",
-                "Data 2.5"
-            ]
-        ],
-        "headers": [
-            {
-                "label": "Test Header",
-                "sort": "asc"
-            },
-            {
-                "label": "Test Header",
-                "sort": "dsc"
-            },
-            {
-                "label": "Test Header",
-                "sort": ""
-            },
-            {
-                "label": "Test Header",
-                "sort": ""
-            }
-        ]
+        "rows": [],
+        "headers": []
     },
     "modifier": {
         "block": []

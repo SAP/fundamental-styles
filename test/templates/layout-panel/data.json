@@ -1,0 +1,15 @@
+{
+    "id": "layout panel",
+    "name": "Layout Panel",
+    "properties": {
+        "title": "Layout Panel Label",
+        "description": "Layout Panel Description"
+    },
+    "modifier": {
+        "block": [
+            "no-border"
+        ]
+    },
+    "state": {},
+    "aria": {}
+}

@@ -1,0 +1,53 @@
+<!--
+panel:
+    properties={},
+    modifier={ block: [] },
+    state={},
+    aria={}
+-->
+{%- macro panel(modifier=[], aria={}, classes=[]) %}
+<div class="fd-layout-panel{{ classes | classes }}{{ modifier | modifier("panel") }}"{{aria | aria}}>
+    {{- caller() | indent -}}
+</div>
+{%- endmacro %}
+
+{%- macro panel_header(properties={}, modifier=[], aria={}, classes=[]) %}
+<div class="fd-layout-panel__header{{ classes | classes }}{{ modifier | modifier("panel__header") }}">
+    {%- if properties.title %}
+    <div class="fd-layout-panel__head">
+        {% set title_size = properties.title_size  if properties.title_size  else "h3" %}
+        <{{title_size}} class="fd-layout-panel__title">{{ properties.title }}</{{title_size}}>
+    {%- endif %}
+        {%- if properties.description %}
+        <p class="fd-layout-panel__description">
+            {{ properties.description }}
+        </p>
+        {%- endif %}
+    </div>
+    {{- caller() | indent -}}
+</div>
+{%- endmacro %}
+
+{%- macro panel_filters(properties={}, modifier=[], aria={}, classes=[]) %}
+<div class="fd-layout-panel__filters{{ classes | classes }}{{ modifier | modifier("panel__filters") }}"{{ aria | aria }} id="{{ properties.id }}">
+    {{- caller() | indent -}}
+</div>
+{%- endmacro %}
+
+{%- macro panel_body(properties={}, modifier=[], aria={}, classes=[]) %}
+<div class="fd-layout-panel__body{{ classes | classes }}{{ modifier | modifier("panel__body") }}">
+    {{ caller() | indent -}}
+</div>
+{%- endmacro %}
+
+{%- macro panel_footer(properties={}, modifier=[], aria={}, classes=[]) %}
+<div class="fd-layout-panel__footer">
+    {{ caller() | indent -}}
+</div>
+{%- endmacro %}
+
+{%- macro panel_actions(properties={}, modifier=[], aria={}, classes=[]) %}
+<div class="fd-layout-panel__actions">
+    {{ caller() }}
+</div>
+{%- endmacro %}

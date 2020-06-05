@@ -54,11 +54,6 @@ The left and right spacings of the Bar and the Content could be adjusted accordi
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <span class="fd-image--s" aria-label="Image label"
-                        style="background-image: url('https://placeimg.com/400/400/nature');">
-                    </span>
-                </div>
-                <div class="fd-bar__element">
                     <button class="fd-button fd-button--transparent sap-icon--grid"></button>
                 </div>
             </div>
