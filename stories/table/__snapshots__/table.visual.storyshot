@@ -1,5 +1,3016 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Visual Button 1`] = `
+<div>
+  <div>
+    
+    
+    <button
+      class="fd-button"
+    >
+      Create
+    </button>
+    
+    
+    <button
+      class="fd-button sap-icon--cart"
+    />
+    
+    
+    <button
+      class="fd-button fd-button--emphasized "
+    >
+      Save
+    </button>
+    
+
+  </div>
+  <div>
+    
+    
+    <div
+      class="fddocs-container"
+    >
+       
+        
+      <button
+        class="fd-button"
+      >
+        Default Button
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--emphasized"
+      >
+        Emphasized Button
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--ghost"
+      >
+        Ghost Button
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--positive"
+      >
+        Positive Button
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--negative"
+      >
+        Negative Button
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--attention"
+      >
+        Attention Button
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--transparent"
+      >
+        Transparent Button
+      </button>
+      
+    
+    </div>
+    
+
+  </div>
+  <div>
+    
+    
+    <div
+      aria-label="Group label"
+      class="fd-segmented-button"
+      role="group"
+    >
+      
+        
+      <button
+        class="fd-button sap-icon--survey"
+      />
+      
+        
+      <button
+        aria-pressed="true"
+        class="fd-button sap-icon--pie-chart is-selected"
+      />
+      
+        
+      <button
+        class="fd-button sap-icon--pool"
+      />
+      
+    
+    </div>
+    
+
+    
+    <div
+      aria-label="Group label"
+      class="fd-segmented-button"
+      role="group"
+    >
+      
+        
+      <button
+        aria-pressed="true"
+        class="fd-button fd-button--compact is-selected"
+      >
+        Left
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--compact"
+      >
+        Middle
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--compact"
+      >
+        Right
+      </button>
+      
+    
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <button
+      class="fd-button fd-button--menu"
+    >
+      Action Button
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--ghost fd-button--menu"
+    >
+      Ghost Button
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--positive fd-button--menu"
+    >
+      Positive Button
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--negative fd-button--menu"
+    >
+      Negative Button
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--attention fd-button--menu"
+    >
+      Attention Button
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--menu"
+      disabled=""
+    >
+      Action Button
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--ghost fd-button--menu"
+      disabled=""
+    >
+      Ghost Button
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--positive fd-button--menu"
+      disabled=""
+    >
+      Positive Button
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--negative fd-button--menu"
+      disabled=""
+    >
+      Negative Button
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--attention fd-button--menu"
+      disabled=""
+    >
+      Attention Button
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--emphasized fd-button--menu"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--menu"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--transparent fd-button--menu"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--emphasized fd-button--menu fd-button--positive"
+    >
+      Approve
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--negative fd-button--menu"
+    >
+      Reject
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--attention fd-button--menu"
+    >
+      Attention
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--menu sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--transparent fd-button--menu sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button fd-button--menu sap-icon--filter"
+    />
+    
+
+    <button
+      class="fd-button fd-button--menu fd-button--positive sap-icon--accept"
+    />
+    
+
+    <button
+      class="fd-button fd-button--menu fd-button--negative sap-icon--decline"
+    />
+    
+
+    <button
+      class="fd-button fd-button--menu fd-button--attention sap-icon--warning"
+    />
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--menu"
+    >
+      Default
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--compact fd-button--menu"
+    >
+      Compact
+    </button>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      aria-label="button-split"
+      class="fd-button-split fd-has-margin-right-small"
+      role="group"
+    >
+      
+  
+      <button
+        aria-label="button"
+        class="fd-button"
+      >
+        Button with text
+      </button>
+      
+  
+      <button
+        aria-controls="t4c0o273"
+        aria-expanded="false"
+        aria-haspopup="true"
+        aria-label="More"
+        class="fd-button sap-icon--slim-arrow-down"
+      />
+      
+  
+      <div
+        aria-hidden="true"
+        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
+        id="t4c0o273"
+      >
+        
+    
+        <nav
+          class="fd-menu"
+        >
+          
+        
+          <ul
+            class="fd-menu__list fd-menu__list--no-shadow"
+          >
+            
+          
+            <li
+              class="fd-menu__item"
+            >
+              
+              
+              <a
+                class="fd-menu__link"
+                href="#"
+                role="button"
+              >
+                
+                  
+                <span
+                  class="fd-menu__title"
+                >
+                  Add to list
+                </span>
+                
+              
+              </a>
+              
+          
+            </li>
+            
+          
+            <li
+              class="fd-menu__item"
+            >
+              
+              
+              <a
+                class="fd-menu__link"
+                href="#"
+                role="button"
+              >
+                
+                  
+                <span
+                  class="fd-menu__title"
+                >
+                  Save for later
+                </span>
+                
+              
+              </a>
+              
+          
+            </li>
+            
+        
+          </ul>
+          
+    
+        </nav>
+        
+  
+      </div>
+      
+
+    </div>
+    
+
+
+    <div
+      aria-label="button-split"
+      class="fd-button-split"
+      role="group"
+    >
+      
+  
+      <button
+        aria-label="button"
+        class="fd-button fd-button--emphasized"
+      >
+        Button with text
+      </button>
+      
+  
+      <button
+        aria-controls="t4c0o2732"
+        aria-expanded="false"
+        aria-haspopup="true"
+        aria-label="More"
+        class="fd-button fd-button--emphasized sap-icon--slim-arrow-down"
+      />
+      
+  
+      <div
+        aria-hidden="true"
+        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
+        id="t4c0o2732"
+      >
+        
+    
+        <nav
+          class="fd-menu"
+        >
+          
+        
+          <ul
+            class="fd-menu__list fd-menu__list--no-shadow"
+          >
+            
+          
+            <li
+              class="fd-menu__item"
+            >
+              
+              
+              <a
+                class="fd-menu__link"
+                href="#"
+                role="button"
+              >
+                
+                  
+                <span
+                  class="fd-menu__title"
+                >
+                  Add to list
+                </span>
+                
+              
+              </a>
+              
+          
+            </li>
+            
+          
+            <li
+              class="fd-menu__item"
+            >
+              
+              
+              <a
+                class="fd-menu__link"
+                href="#"
+                role="button"
+              >
+                
+                  
+                <span
+                  class="fd-menu__title"
+                >
+                  Save for later
+                </span>
+                
+              
+              </a>
+              
+          
+            </li>
+            
+        
+          </ul>
+          
+    
+        </nav>
+        
+  
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <button
+      class="fd-button"
+    >
+      Save
+    </button>
+    
+
+    <button
+      class="fd-button fd-button sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--ghost sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--emphasized sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--transparent sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--positive"
+    >
+      Approve
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--negative"
+    >
+      Reject
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--attention"
+    >
+      Attention
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--compact"
+    >
+      Edit
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--compact fd-button sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--ghost fd-button--compact"
+    >
+      Edit
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--emphasized fd-button--compact sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--transparent fd-button--compact sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--positive fd-button--compact "
+    >
+      Approve
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--negative fd-button--compact"
+    >
+      Reject
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--attention fd-button--compact"
+    >
+      Attention
+    </button>
+    
+
+  </div>
+  <div>
+    
+
+    <button
+      class="fd-button fd-button--emphasized"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--transparent"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--ghost"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--positive"
+    >
+      Approve
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--negative"
+    >
+      Reject
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--attention"
+    >
+      Attention
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--transparent sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button sap-icon--filter"
+    />
+    
+
+    <button
+      class="fd-button fd-button--ghost sap-icon--filter"
+    />
+    
+
+    <button
+      class="fd-button fd-button--positive sap-icon--accept"
+    />
+    
+
+    <button
+      class="fd-button fd-button--negative sap-icon--decline"
+    />
+    
+
+    <button
+      class="fd-button fd-button--attention sap-icon--decline"
+    />
+    
+
+  </div>
+  <div>
+    
+
+    <button
+      class="fd-button fd-button--emphasized"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button--emphasized is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--emphasized"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button is-disabled"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--transparent"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button--transparent is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--transparent is-disabled"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button "
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--ghost"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button--ghost is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--ghost"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--positive"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button--positive is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--positive"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--negative"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button--negative is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--negative"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--attention"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button--attention is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--attention"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      dir="rtl"
+    >
+      
+  
+      <button
+        class="fd-button fd-button--emphasized"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <button
+        class="fd-button"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--transparent"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--ghost"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--positive"
+      >
+        Approve
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--negative"
+      >
+        Reject
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--attention"
+      >
+        Attention
+      </button>
+      
+  
+      <br />
+      <br />
+      
+  
+      <button
+        class="fd-button fd-button--emphasized fd-button--menu"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--menu"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--transparent fd-button--menu"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <br />
+      <br />
+      
+  
+      <button
+        class="fd-button sap-icon--cart"
+      />
+      
+  
+      <button
+        class="fd-button fd-button--emphasized sap-icon--cart"
+      />
+      
+  
+      <button
+        class="fd-button fd-button--transparent sap-icon--cart"
+      />
+      
+  
+      <button
+        class="fd-button fd-button--ghost sap-icon--filter"
+      />
+      
+  
+      <button
+        class="fd-button fd-button--positive sap-icon--accept"
+      />
+      
+  
+      <button
+        class="fd-button fd-button--negative sap-icon--decline"
+      />
+      
+  
+      <button
+        class="fd-button fd-button--attention sap-icon--warning"
+      />
+      
+  
+      <div
+        aria-label="Group label"
+        class="fd-segmented-button"
+        role="group"
+      >
+        
+    
+        <button
+          class="fd-button sap-icon--survey"
+        />
+        
+    
+        <button
+          aria-pressed="true"
+          class="fd-button sap-icon--pie-chart"
+        />
+        
+    
+        <button
+          class="fd-button sap-icon--pool"
+        />
+        
+  
+      </div>
+      
+
+  
+      <div
+        aria-label="Group label"
+        class="fd-segmented-button"
+        role="group"
+      >
+        
+    
+        <button
+          aria-pressed="true"
+          class="fd-button fd-button--compact"
+        >
+          Left
+        </button>
+        
+    
+        <button
+          class="fd-button fd-button--compact"
+        >
+          Middle
+        </button>
+        
+    
+        <button
+          class="fd-button fd-button--compact"
+        >
+          Right
+        </button>
+        
+  
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+</div>
+`;
+
+exports[`Storyshots Visual Layout Panel 1`] = `
+<div>
+  <div>
+    
+
+    <div
+      class="fd-layout-panel"
+    >
+      
+  
+      <div
+        class="fd-layout-panel__header"
+      >
+        
+    
+        <div
+          class="fd-layout-panel__head"
+        >
+          
+      
+          <h3
+            class="fd-layout-panel__title"
+          >
+            
+        .fd-layout-panel__title
+      
+          </h3>
+          
+      
+          <p
+            class="fd-layout-panel__description"
+          >
+            
+        .fd-layout-panel__description
+      
+          </p>
+          
+    
+        </div>
+        
+    
+        <div
+          class="fd-layout-panel__actions"
+        >
+          
+      .fd-layout-panel__actions
+    
+        </div>
+        
+  
+      </div>
+      
+  
+      <div
+        class="fd-layout-panel__filters"
+        id=""
+      >
+        
+    .fd-layout-panel__filters
+  
+      </div>
+      
+  
+      <div
+        class="fd-layout-panel__body"
+      >
+        
+    .fd-layout-panel__body
+  
+      </div>
+      
+  
+      <div
+        class="fd-layout-panel__footer"
+      >
+        
+    .fd-layout-panel__footer
+  
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+</div>
+`;
+
+exports[`Storyshots Visual Numeric Content 1`] = `
+<div>
+  <div>
+    
+
+    <div
+      class="tile-content-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi"
+          >
+            1Ñç
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__scale"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--down"
+            />
+            
+                        
+            <span
+              class="fd-numeric-content__scale-text"
+            >
+              M
+            </span>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+    <br />
+    
+
+    <div
+      class="tile-content-small-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--small-tile"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                        
+          <div
+            class="fd-numeric-content__kpi"
+          >
+            1Ñç
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                        
+          <div
+            class="fd-numeric-content__scale"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--down"
+            />
+            
+                        
+            <span
+              class="fd-numeric-content__scale-text"
+            >
+              milçM
+            </span>
+            
+                        
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="tile-content-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--m"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi fd-numeric-content__kpi--positive"
+          >
+            123
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__scale fd-numeric-content__scale--positive"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--down"
+            />
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+    <br />
+    
+
+    <div
+      class="tile-content-small-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--m fd-numeric-content--small-tile"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi fd-numeric-content__kpi--negative"
+          >
+            -889
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__scale fd-numeric-content__scale--negative"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--up"
+            />
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="tile-content-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--s"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi fd-numeric-content__kpi--critical"
+          >
+            12
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__scale fd-numeric-content__scale--critical"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--down"
+            />
+            
+                        
+            <span
+              class="fd-numeric-content__scale-text"
+            >
+              %
+            </span>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+    <br />
+    
+
+    <div
+      class="tile-content-small-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--small-tile fd-numeric-content--m"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi fd-numeric-content__kpi--informative"
+          >
+            1.95
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="tile-content-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__launch-icon-container"
+        >
+          
+                    
+          <span
+            class="fd-numeric-content__launch-icon sap-icon--line-charts"
+          />
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi"
+          >
+            123
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__scale"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--down"
+            />
+            
+                        
+            <span
+              class="fd-numeric-content__scale-text"
+            >
+              milçM
+            </span>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+    <br />
+    
+
+    <div
+      class="tile-content-small-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--small-tile"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__launch-icon-container"
+        >
+          
+                    
+          <span
+            class="fd-numeric-content__launch-icon sap-icon--line-charts"
+          />
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi fd-numeric-content__kpi--positive"
+          >
+            1234
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="tile-content-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--m"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__launch-icon-container"
+        >
+          
+                    
+          <span
+            class="fd-numeric-content__launch-icon sap-icon--line-charts"
+          />
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi fd-numeric-content__kpi--negative"
+          >
+            -889
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__scale fd-numeric-content__scale--negative"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--down"
+            />
+            
+                        
+            <span
+              class="fd-numeric-content__scale-text"
+            >
+              M
+            </span>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+    <br />
+    
+
+    <div
+      class="tile-content-small-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--m fd-numeric-content--small-tile"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__launch-icon-container"
+        >
+          
+                    
+          <span
+            class="fd-numeric-content__launch-icon sap-icon--line-charts"
+          />
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi fd-numeric-content__kpi--informative"
+          >
+            -88 88
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__scale fd-numeric-content__scale--informative"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--down"
+            />
+            
+                        
+            <span
+              class="fd-numeric-content__scale-text"
+            >
+              milÇ
+            </span>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="tile-content-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--s"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__launch-icon-container"
+        >
+          
+                    
+          <span
+            class="fd-numeric-content__launch-icon sap-icon--line-charts"
+          />
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi fd-numeric-content__kpi--critical"
+          >
+            123
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__scale fd-numeric-content__scale--critical"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--up"
+            />
+            
+                        
+            <span
+              class="fd-numeric-content__scale-text"
+            >
+              ÑÇmlč
+            </span>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+    <br />
+    
+
+    <div
+      class="tile-content-small-playground"
+    >
+      
+        
+      <div
+        class="fd-numeric-content fd-numeric-content--s fd-numeric-content--small-tile"
+      >
+        
+                
+        <div
+          class="fd-numeric-content__launch-icon-container"
+        >
+          
+                    
+          <span
+            class="fd-numeric-content__launch-icon sap-icon--line-charts"
+          />
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__kpi-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__kpi fd-numeric-content__kpi--positive"
+          >
+            123
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-numeric-content__scale-container"
+        >
+          
+                    
+          <div
+            class="fd-numeric-content__scale fd-numeric-content__scale--positive"
+          >
+            
+                        
+            <span
+              class="fd-numeric-content__scale-arrow sap-icon--down"
+            />
+            
+                        
+            <span
+              class="fd-numeric-content__scale-text"
+            >
+              ÑÇmlč
+            </span>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+</div>
+`;
+
+exports[`Storyshots Visual Panel 1`] = `
+<div>
+  <div>
+    
+
+    <div
+      class="fd-panel"
+    >
+      
+    
+      <div
+        class="fd-panel__header"
+      >
+        
+        
+        <div
+          class="fd-panel__expand"
+        >
+          
+            
+          <button
+            aria-controls="fghqwe321"
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="fd-button fd-button--transparent fd-panel__button"
+          />
+          
+        
+        </div>
+        
+        
+        <h5
+          class="fd-panel__title"
+          id="asdASD123"
+        >
+          Panel Header
+        </h5>
+        
+        
+        <div
+          class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+        >
+          
+            
+          <span
+            class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+          >
+             
+          </span>
+          
+            
+          <div
+            aria-label="Group label"
+            class="fd-segmented-button"
+            role="group"
+          >
+            
+              
+            <button
+              aria-pressed="true"
+              class="fd-button is-selected"
+              id="jhqDKYdf"
+            >
+              Left
+            </button>
+            
+              
+            <button
+              class="fd-button"
+            >
+              Middle
+            </button>
+            
+              
+            <button
+              class="fd-button"
+            >
+              Right
+            </button>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <div
+        aria-hidden="true"
+        aria-labelledby="jhqDKYdf"
+        class="fd-panel__content"
+        id="fghqwe321"
+        role="region"
+      >
+        
+        
+        <span>
+          
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+        
+        </span>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-panel fd-panel--fixed"
+    >
+      
+    
+      <div
+        class="fd-panel__header"
+      >
+        
+        
+        <h5
+          class="fd-panel__title"
+        >
+          Panel Header
+        </h5>
+        
+        
+        <div
+          class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+        >
+          
+            
+          <span
+            class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+          >
+             
+          </span>
+          
+            
+          <div
+            aria-label="Group label"
+            class="fd-segmented-button"
+            role="group"
+          >
+            
+              
+            <button
+              aria-pressed="true"
+              class="fd-button is-selected"
+              id="jhqDKYrt"
+            >
+              Left
+            </button>
+            
+              
+            <button
+              class="fd-button"
+            >
+              Middle
+            </button>
+            
+              
+            <button
+              class="fd-button"
+            >
+              Right
+            </button>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <div
+        aria-labelledby="jhqDKYrt"
+        class="fd-panel__content"
+        role="region"
+      >
+        
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+        et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+        Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+        Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+        Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+        Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+        Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-panel fd-panel--compact"
+    >
+      
+    
+      <div
+        class="fd-panel__header"
+      >
+        
+        
+        <div
+          class="fd-panel__expand"
+        >
+          
+            
+          <button
+            aria-controls="Gekf63a"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-labelledby="asdASD234"
+            class="fd-button fd-button--compact fd-button--transparent fd-panel__button"
+          />
+          
+        
+        </div>
+        
+        
+        <h5
+          class="fd-panel__title"
+          id="asdASD234"
+        >
+          Panel Header
+        </h5>
+        
+        
+        <div
+          class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+        >
+          
+            
+          <span
+            class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+          >
+             
+          </span>
+          
+            
+          <div
+            aria-label="Group label"
+            class="fd-segmented-button"
+            role="group"
+          >
+            
+              
+            <button
+              aria-pressed="true"
+              class="fd-button fd-button--compact is-selected"
+              id="Gekf63D"
+            >
+              Left
+            </button>
+            
+              
+            <button
+              class="fd-button fd-button--compact"
+            >
+              Middle
+            </button>
+            
+              
+            <button
+              class="fd-button fd-button--compact"
+            >
+              Right
+            </button>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <div
+        aria-hidden="true"
+        aria-labelledby="Gekf63D"
+        class="fd-panel__content"
+        id="Gekf63a"
+        role="region"
+      >
+        
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+        et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+        Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+        Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+        Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+        Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+        Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-panel"
+    >
+      
+    
+      <div
+        class="fd-panel__header"
+      >
+        
+        
+        <div
+          class="fd-panel__expand"
+        >
+          
+            
+          <button
+            aria-controls="GJL745SV"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-labelledby="asdASD345"
+            class="fd-button fd-button--transparent fd-panel__button"
+          />
+          
+        
+        </div>
+        
+        
+        <h5
+          class="fd-panel__title"
+          id="asdASD345"
+        >
+          Panel Header
+        </h5>
+        
+        
+        <div
+          class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+        >
+          
+            
+          <span
+            class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+          >
+             
+          </span>
+          
+            
+          <div
+            aria-label="Group label"
+            class="fd-segmented-button"
+            role="group"
+          >
+            
+              
+            <button
+              aria-pressed="true"
+              class="fd-button is-selected"
+              id="GJL745SD"
+            >
+              Left
+            </button>
+            
+              
+            <button
+              class="fd-button"
+            >
+              Middle
+            </button>
+            
+              
+            <button
+              class="fd-button"
+            >
+              Right
+            </button>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <div
+        aria-hidden="true"
+        aria-labelledby="GJL745SD"
+        class="fd-panel__content"
+        id="GJL745SV"
+        role="region"
+        style="height: 100px;"
+      >
+        
+        
+        <span>
+          
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+            Morbi eget diam vehicula, porttitor orci eu, posuere leo. Sed varius orci id ipsum pharetra feugiat. 
+            Donec libero mi, vestibulum eget massa non, pretium egestas eros. Aenean quis eros ut augue condimentum faucibus.
+            Nam tristique, enim eu volutpat cursus, enim neque pulvinar mauris, nec tempor libero lacus vel lacus. Nunc molestie elit in
+            aliquam eleifend. Ut consequat convallis erat, porta egestas lectus sagittis et. Mauris fermentum semper lorem, a sollicitudin nisi sollicitudin nec. 
+            Duis semper pretium elit ac molestie. Morbi condimentum nisl vitae dolor varius convallis. Donec a molestie ex, 
+            id condimentum velit. Proin dignissim dolor velit, eu malesuada magna porta vel. Aenean quis feugiat libero, sed pretium libero. 
+            Nunc ex orci, volutpat in tristique et, accumsan sed ante. Maecenas laoreet egestas iaculis. In quis ligula mauris.
+        
+        </span>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+</div>
+`;
+
+exports[`Storyshots Visual Step Input 1`] = `
+<div>
+  <div>
+    
+
+    <div
+      class="fd-step-input"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-3', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        id="step-3"
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-3', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-form-item fd-form-item--horizontal"
+    >
+      
+    
+      <div
+        class="fd-step-input fd-step-input--compact"
+      >
+        
+            
+        <button
+          aria-label="Step down"
+          class="
+                fd-button
+                fd-button--compact
+                fd-button--transparent
+                fd-step-input__button
+                sap-icon--less"
+          onclick="stepInputValue('step-1', 'down');"
+          tabindex="-1"
+          type="button"
+        >
+          
+            
+        </button>
+        
+        
+        <input
+          class="
+                fd-input 
+                fd-input--compact 
+                fd-input--no-number-spinner 
+                fd-step-input__input
+        "
+          id="step-1"
+          type="number"
+          value="0"
+        />
+        
+            
+        <button
+          aria-label="Step up"
+          class="
+                fd-button 
+                fd-button--compact
+                fd-button--transparent
+                fd-step-input__button
+                sap-icon--add"
+          onclick="stepInputValue('step-1', 'up');"
+          tabindex="-1"
+          type="button"
+        >
+          
+            
+        </button>
+        
+    
+      </div>
+      
+    
+      <span
+        class="fd-form-label fd-form-label--unit-description"
+      >
+        PC
+      </span>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-step-input is-focus"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-20', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        id="step-20"
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-20', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <h3>
+      Success
+    </h3>
+    
+
+
+    <div
+      class="fd-step-input is-success"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-5', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        id="step-5"
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-5', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+
+    <br />
+    <br />
+    
+
+    <h3>
+      Information
+    </h3>
+    
+
+    <div
+      class="fd-step-input is-information"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-6', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        id="step-6"
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-6', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+    <br />
+    <br />
+    
+
+    <h3>
+      Error
+    </h3>
+    
+
+    <div
+      class="fd-step-input is-error"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-7', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        id="step-7"
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-7', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+
+    <br />
+    <br />
+    
+
+
+    <h3>
+      Warning
+    </h3>
+    
+
+    <div
+      class="fd-step-input is-warning"
+    >
+      
+    
+      <button
+        aria-label="Step down"
+        class="
+        fd-button
+        fd-button--transparent
+        fd-step-input__button
+        sap-icon--less"
+        onclick="stepInputValue('step-8', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+    
+      </button>
+      
+    
+      <input
+        class="
+        fd-input 
+        fd-input--no-number-spinner 
+        fd-step-input__input
+    "
+        id="step-8"
+        type="number"
+        value="0"
+      />
+      
+    
+      <button
+        aria-label="Step up"
+        class="
+        fd-button 
+        fd-button--transparent
+        fd-step-input__button
+        sap-icon--add"
+        onclick="stepInputValue('step-8', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+    
+      </button>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-step-input is-disabled"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-13', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        disabled=""
+        id="step-13"
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-13', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-step-input is-readonly"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-14', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        id="step-14"
+        readonly=""
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-14', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+  </div>
+</div>
+`;
+
 exports[`Storyshots Visual Table 1`] = `
 <div>
   <div>

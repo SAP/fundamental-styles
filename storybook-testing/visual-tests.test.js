@@ -1,3 +1,6 @@
+/**
+ * @jest-environment jsdom
+ */
 /* eslint-disable no-console */
 import { imageSnapshot } from '@storybook/addon-storyshots-puppeteer';
 import initStoryshots from '@storybook/addon-storyshots';

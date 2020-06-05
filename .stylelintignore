@@ -1,3 +1,4 @@
 docs/_site
 docs/css/fundamental-styles.css
 docs/css/docs-all.scss
+.storybook/static/*.css
