@@ -6,6 +6,7 @@ import initStoryshots, { multiSnapshotWithOptions } from '@storybook/addon-story
 
 // create jest snapshot tests from each story
 initStoryshots({
+    storyKindRegex: /Visual/,
     integrityOptions: { cwd: path.join(__dirname, 'stories', 'stories') },
     test: multiSnapshotWithOptions()
 });
