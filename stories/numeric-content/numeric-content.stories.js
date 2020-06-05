@@ -1,10 +1,10 @@
 
-import "./numeric-content-playground.scss";
-import "../../dist/numeric-content.css";
-import "../../dist/icon.css";
+import './numeric-content-playground.scss';
+import '../../dist/numeric-content.css';
+import '../../dist/icon.css';
 
 export default {
-  title: "Dev/Numeric Content"
+    title: 'Dev/Numeric Content'
 };
 
 export const large = () => `
@@ -37,9 +37,7 @@ export const large = () => `
 </div>
 `;
 
-large.story = {
-  parameters: { docs: { disable: true } }
-};
+large.parameters = { docs: { disable: true } };
 
 
 export const medium = () => `
@@ -70,9 +68,7 @@ export const medium = () => `
 </div>
 `;
 
-medium.story = {
-  parameters: { docs: { disable: true } }
-};
+medium.parameters = { docs: { disable: true } };
 
 
 export const small = () => `
@@ -99,9 +95,7 @@ export const small = () => `
 </div>
 `;
 
-small.story = {
-  parameters: { docs: { disable: true } }
-};
+small.parameters = { docs: { disable: true } };
 
 
 export const launchIconLarge = () => `
@@ -134,9 +128,7 @@ export const launchIconLarge = () => `
 </div>
 `;
 
-launchIconLarge.story = {
-  parameters: { docs: { disable: true } }
-};
+launchIconLarge.parameters = { docs: { disable: true } };
 
 
 export const launchIconMedium = () => `
@@ -175,9 +167,7 @@ export const launchIconMedium = () => `
 </div>
 `;
 
-launchIconMedium.story = {
-  parameters: { docs: { disable: true } }
-};
+launchIconMedium.parameters = { docs: { disable: true } };
 
 
 export const launchIconSmall = () => `
@@ -216,6 +206,4 @@ export const launchIconSmall = () => `
 </div>
 `;
 
-launchIconSmall.story = {
-  parameters: { docs: { disable: true } }
-};
+launchIconSmall.parameters = { docs: { disable: true } };

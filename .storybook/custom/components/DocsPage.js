@@ -38,7 +38,7 @@ const DocsPage = () => {
     }
 
     // do not display disabled stories (dev only)
-    const stories = context.storyStore?.getStoriesForKind(context.kind)?.filter((s) => !s.parameters?.docs?.disable || !s.paramater?.docs?.primary);
+    const stories = context.storyStore?.getStoriesForKind(context.kind)?.filter((s) => !s.parameters?.docs?.disable);
 
     return (
         <>

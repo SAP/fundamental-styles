@@ -1,14 +1,14 @@
 
-import "../../dist/button.css";
-import "../../dist/icon.css";
-import "../../dist/panel.css";
-import "../../dist/segmented-button.css";
-import "../../dist/toolbar.css";
+import '../../dist/button.css';
+import '../../dist/icon.css';
+import '../../dist/panel.css';
+import '../../dist/segmented-button.css';
+import '../../dist/toolbar.css';
 
 export default {
-  title: "Components/Panel",
-  parameters: {
-    description: `
+    title: 'Components/Panel',
+    parameters: {
+        description: `
 The panel is a container for grouping and displaying information.
 It can be collapsed to save space on the screen.
 
@@ -22,7 +22,7 @@ Do not use the panel if:
 
 - You are designing an object page. Never use panels in the object page content area.
   `
-  }
+    }
 };
 
 export const expandable = () => `
@@ -55,14 +55,12 @@ export const expandable = () => `
 </div>
 `;
 
-expandable.story = {
-  parameters: {
-      docs: {
-          storyDescription: `
+expandable.parameters = {
+    docs: {
+        storyDescription: `
 Expandable panels are much like fixed panels, except their content can be expanded and collapsed (including the info toolbar, if available).
-          `
-      }
-  }
+        `
+    }
 };
 
 export const fixed = () => `
@@ -90,15 +88,13 @@ export const fixed = () => `
 </div>
 `;
 
-fixed.story = {
-  parameters: {
-      docs: {
-          storyDescription: `
+fixed.parameters = {
+    docs: {
+        storyDescription: `
 Fixed panels are useful for grouping custom content. They include headers and info toolbars.
 To create a fixed panel, add the <code>--fixed</code> modifier.
-        `
-      }
-  }
+      `
+    }
 };
 
 export const compact = () => `
@@ -129,12 +125,10 @@ export const compact = () => `
 </div>
 `;
 
-compact.story = {
-  parameters: {
-      docs: {
-          storyDescription: "To use a compact panel, add the `--compact` modifier."
-      }
-  }
+compact.parameters = {
+    docs: {
+        storyDescription: 'To use a compact panel, add the `--compact` modifier.'
+    }
 };
 
 export const fixedHeightContent = () => `
@@ -174,10 +168,8 @@ export const fixedHeightContent = () => `
 </div>
 `;
 
-fixedHeightContent.story = {
-  parameters: {
-      docs: {
-          storyDescription: "When the height of the panel's content is set to a fixed size, the content area can be scrolled through."
-      }
-  }
+fixedHeightContent.parameters = {
+    docs: {
+        storyDescription: 'When the height of the panel\'s content is set to a fixed size, the content area can be scrolled through.'
+    }
 };

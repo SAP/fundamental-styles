@@ -3,85 +3,86 @@
 
 // table of contents (tocbot) overrides
 .toc {
-    box-sizing: border-box;
-    background-color: white;
+  box-sizing: border-box;
+  background-color: white;
 
-    > .toc-list {
-        padding-left: 0;
-    }
+  > .toc-list {
+    padding-left: 0;
+  }
 }
 
 a.toc-link {
-    margin: 2px 0;
-    color: #0a6ed1;
-    padding-left: 15px;
-    text-indent: -15px;
+  margin: 2px 0;
+  color: #0a6ed1;
+  padding-left: 15px;
+  text-indent: -15px;
 
-    &:before {
-        width: 0;
+  &::before {
+    width: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: #085caf;
+  }
+}
+
+.is-active-link {
+  font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+  .toc {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 75px 0 0 0;
+    height: 100%;
+    font-size: 14px;
+
+    > .toc-list {
+      padding-left: 14px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  a.toc-link {
+    display: inline-block;
+    margin: 4px 0;
+    text-decoration: none;
+    transition: all 0.125s ease-in;
+    color: #32363a;
+
+    &::before {
+      width: 4px;
     }
 
     &:hover,
     &:focus {
-        color: #085caf;
+      color: #32363a;
     }
-}
+  }
 
-.is-active-link {
-    font-weight: 400;
-}
+  .is-active-link {
+    font-weight: 700;
 
-@media (min-width: 1024px) {
-    .toc {
-        width: 200px;
-        position: fixed;
-        top: 0;
-        right: 0;
-        padding: 75px 0 0 0;
-        height: 100%;
-        font-size: 14px;
-
-        > .toc-list {
-            padding-left: 14px;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
+    &::before {
+      background-color: #0e7290;
     }
+  }
 
-    a.toc-link {
-        display: inline-block;
-        margin: 4px 0;
-        text-decoration: none;
-        transition: all 0.125s ease-in;
-        color: #32363a;
-
-        &:before {
-            width: 4px;
-        }
-
-        &:hover,
-        &:focus {
-            color: #32363a;
-        }
-    }
-
-    .is-active-link {
-        font-weight: 700;
-
-        &:before {
-            background-color: #0e7290;
-        }
-    }
-
-    .toc-heading {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        border: 0;
-    }
+  .toc-heading {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
 }

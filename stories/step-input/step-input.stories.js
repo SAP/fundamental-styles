@@ -1,14 +1,14 @@
-import "../../dist/button.css";
-import "../../dist/icon.css";
-import "../../dist/form-item.css";
-import "../../dist/step-input.css";
-import "../../dist/form-label.css";
-import "../../dist/input.css";
+import '../../dist/button.css';
+import '../../dist/icon.css';
+import '../../dist/form-item.css';
+import '../../dist/step-input.css';
+import '../../dist/form-label.css';
+import '../../dist/input.css';
 
 export default {
-  title: "Components/StepInput",
-  parameters: {
-      description: `
+    title: 'Components/StepInput',
+    parameters: {
+        description: `
 The step input control allows the user to change the input values in predefined increments (steps).
 
 Use the step input if:
@@ -22,7 +22,7 @@ Do not use the step input if:
 * You want to display a value that rarely needs to be adjusted and does not pertain to a particular step. In this case, use the regular input field control instead.
 * You want the user to enter dates and times. In this case, use the date picker, date range selection, time picker, or date/time picker instead.  
   `
-  }
+    }
 };
 
 export const primary = () => `
@@ -51,13 +51,12 @@ export const primary = () => `
 </div>
 `;
 
-primary.story = {
-  name: "Default",
-  parameters: {
-      docs: {
-          storyDescription: "On smartphones and tablets, the step input is shown in cozy mode (default)."
-      }
-  }
+primary.storyName = 'Default';
+
+primary.parameters = {
+    docs: {
+        storyDescription: 'On smartphones and tablets, the step input is shown in cozy mode (default).'
+    }
 };
 
 export const compact = () => `
@@ -92,16 +91,14 @@ export const compact = () => `
 </div>
 `;
 
-compact.story = {
-  parameters: {
-      docs: {
-          storyDescription: `
+compact.parameters = {
+    docs: {
+        storyDescription: `
 The Step Input should be used in compact mode when using a desktop of devices with large screens. 
 It can be achieved by adding the <code>--compact</code> modifier to the main element as well as the
 button and input elements.    
-          `
-      },
-  }
+        `
+    }
 };
 
 export const focused = () => `
@@ -130,15 +127,13 @@ export const focused = () => `
 </div>
 `;
 
-focused.story = {
-  parameters: {
-      docs: {
-          storyDescription: `
+focused.parameters = {
+    docs: {
+        storyDescription: `
 By default there is built-in focus indicator for StepInput component, which is not supported by IE11.
 To make focus work on IE11, it should be added by putting <code>.is-focus</code> class to component  
-          `
-      },
-  }
+        `
+    }
 };
 
 
@@ -248,15 +243,13 @@ export const states = () => `
 </div>
 `;
 
-states.story = {
-  parameters: {
-      docs: {
-          storyDescription: `
+states.parameters = {
+    docs: {
+        storyDescription: `
 The Step Input component also supports semantic states as does every form. 
 The semantic states can be customized by adding the <code>is-error</code> | <code>is-success</code> | <code>is-warning</code> | or <code>is-information</code> into the fd-step-input element.
-          `
-      },
-  }
+        `
+    }
 };
 
 export const disabled = () => `

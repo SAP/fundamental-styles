@@ -1,4 +1,4 @@
-'use strict'
+
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const postcssClean = require('postcss-clean');
@@ -14,8 +14,8 @@ const minify = process.env.NODE_ENV === 'production' ? cssnano({
     preset: [
         'default', {
             mergeLonghand: false, // https://github.com/cssnano/cssnano/issues/675
-            mergeRules: false, // https://github.com/cssnano/cssnano/issues/730
-        },
+            mergeRules: false // https://github.com/cssnano/cssnano/issues/730
+        }
     ]
 }) : null;
 
@@ -25,8 +25,8 @@ module.exports = {
     sourcesContent: true,
     plugins: [
         postcssImport(),
-        postcssAddFallback({importFrom: 'dist/root.css'}),
-        postcssAddFallback({importFrom: 'node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/css_variables.css'}),
+        postcssAddFallback({ importFrom: 'dist/root.css' }),
+        postcssAddFallback({ importFrom: 'node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/css_variables.css' }),
         autoprefixer({
             cascade: true
         }),
@@ -36,14 +36,14 @@ module.exports = {
         }),
         postcssCustomProperties({
             preserve: true
-          }),
+        }),
         postcssRemoveFonts(), // remove fonts from @sap-theming/theming-base-content
         minify,
         postcssBanner({
             banner: `Fundamental Library Styles v${packageVersion}
 Copyright (c) ${year} SAP SE or an SAP affiliate company.
 Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)`,
-            important: true})
+            important: true })
 
     ]
-}
+};

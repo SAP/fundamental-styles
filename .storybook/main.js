@@ -3,13 +3,13 @@ const glob = require("glob");
 const { exec } = require("child_process");
 
 module.exports = {
-  stories: ['../stories/docs/introduction.stories.mdx', '../stories/**/*.(stories|visual).js'],
+  stories: ['../stories/docs/introduction.stories.mdx', '../stories/**/*.@(stories|visual).js'],
   addons: [
     "@storybook/addon-knobs/register",
     "@storybook/addon-actions",
     "@storybook/addon-links",
     "@storybook/preset-scss",
-    "@storybook/addon-a11y/register",
+    "@storybook/addon-a11y",
     "@storybook/addon-cssresources/register",
     "@storybook/addon-viewport/register",
     '@storybook/addon-docs',

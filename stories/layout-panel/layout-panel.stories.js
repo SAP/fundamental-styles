@@ -1,9 +1,9 @@
-import "../../dist/layout-panel.css";
+import '../../dist/layout-panel.css';
 
 export default {
-  title: "Layouts/LayoutPanel",
-  parameters: {
-      description: `
+    title: 'Layouts/LayoutPanel',
+    parameters: {
+        description: `
   Layout Panels are used to encapsulate part of the content, form elements, lists, collections, etc., on a page.
 
   Place patterns and interactions within panels on your pages to achieve focus and separation for the tasks at-hand with the information displayed inside the panel.
@@ -18,7 +18,7 @@ export default {
   - <code>.fd-layout-panel__body</code>: Main content of the Layout Panel can that hold lists, table, tree, text, form or any other infomation.
   - <code>.fd-layout-panel__footer</code>: Layout Panel footer can be utilized for pagination, secondary actions, add more data, etc.
       `
-  },
+    }
 };
 
 export const primary = () => `
@@ -46,4 +46,4 @@ export const primary = () => `
     .fd-layout-panel__footer
   </div>
 </div>
-`
+`;
