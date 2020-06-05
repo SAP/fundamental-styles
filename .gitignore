@@ -13,7 +13,6 @@ Thumbs.db
 /dist
 node_modules
 build
-storybook-static
 test/visual-regression-tests/backstop_data
 .tmp
 *.log
@@ -27,4 +26,9 @@ docs/css/*.woff
 test/visual-regression-tests/config/backstopConfigCI.json
 docs/_config-library.yml
 
+# Storybook
 __diff_output__
+storybook-static
+.storybook/static/*.woff
+.storybook/static/*.css
+src/Docs/
