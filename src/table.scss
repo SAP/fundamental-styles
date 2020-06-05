@@ -261,12 +261,6 @@ $block: #{$fd-namespace}-table;
           background-color: var(--sapList_Hover_SelectionBackground);
         }
       }
-
-      @include fd-last-child() {
-        .#{$block}__cell {
-          border-bottom: none;
-        }
-      }
     }
   }
 
