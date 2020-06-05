@@ -918,9 +918,9 @@ modifiers. Also some cells should be merged into paragraphs.
             </tr>
         </thead>
         <tbody class="fd-table__body">
-            <tr class="fd-table__row fd-table__row--main">
+            <tr class="fd-table__row fd-table__row--main" aria-selected="true">
                 <td class="fd-table__cell fd-table__cell--checkbox">
-                    <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="CWkhTG">
+                    <input aria-label="checkbox" checked type="checkbox" class="fd-checkbox" id="CWkhTG">
                     <label class="fd-checkbox__label" for="CWkhTG"></label>
                 </td>
                 <td class="fd-table__cell">
@@ -934,7 +934,7 @@ modifiers. Also some cells should be merged into paragraphs.
                     <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
                 </td>
             </tr>
-            <tr class="fd-table__row fd-table__row--secondary">
+            <tr class="fd-table__row fd-table__row--secondary" aria-selected="true">
                 <td class="fd-table__cell fd-table__cell--checkbox"></td>
                 <td class="fd-table__cell" colspan="100%">
                     <p class="fd-table__text">
