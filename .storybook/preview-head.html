@@ -7,11 +7,13 @@
     for (var i = 0; i < els.length; i++) {
         var el = els[i];
         el.addEventListener('click', function () {
+            console.log('here')
             var targetId = this.getAttribute("aria-controls");
             var target = document.getElementById(targetId);
             //dropdown
             var isDropdown = this.getAttribute("aria-haspopup") === "true";
             if (isDropdown) {
+                console.log(isDropdown)
                 // Get all of elements with same aria controls ID
                 const elements = document.querySelectorAll('[aria-controls="' + targetId + '"]');
 
@@ -214,6 +216,16 @@
         }
     }
 })();
+
+function onSelectClick(controlId) {
+    let popoverRef = document.getElementById(controlId);
+
+    if (popoverRef.getAttribute("aria-hidden") === "true") {
+        popoverRef.setAttribute("aria-hidden", "false");
+    } else {
+        popoverRef.setAttribute("aria-hidden", "true");
+    }
+}
 
 function stepInputValue(inputId, stepDirection) {
     let inputRef = document.getElementById(inputId);
