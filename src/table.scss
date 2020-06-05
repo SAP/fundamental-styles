@@ -340,8 +340,6 @@ $block: #{$fd-namespace}-table;
     }
 
     .#{$block}__cell {
-      height: auto;
-
       &--checkbox {
         + .#{$block}__cell {
           padding-left: 0;
@@ -351,6 +349,12 @@ $block: #{$fd-namespace}-table;
             padding-left: $fd-table-cell-padding;
           }
         }
+      }
+    }
+
+    .#{$block}__body {
+      .#{$block}__cell {
+        height: auto;
       }
     }
 

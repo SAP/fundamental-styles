@@ -836,6 +836,13 @@ modifiers. Also some cells should be merged into paragraphs.
         <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
     </div>
     <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
+        <thead class="fd-table__header">
+            <tr class="fd-table__row">
+                <th class="fd-table__cell" scope="col">Description</th>
+                <th class="fd-table__cell" scope="col">Price</th>
+                <th class="fd-table__cell" scope="col"></th>
+            </tr>
+        </thead>
         <tbody class="fd-table__body">
             <tr class="fd-table__row fd-table__row--main fd-table__row--activable fd-table__row--hoverable">
                 <td class="fd-table__cell">
@@ -899,6 +906,17 @@ modifiers. Also some cells should be merged into paragraphs.
         <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
     </div>
     <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
+        <thead class="fd-table__header">
+            <tr class="fd-table__row">
+                <th class="fd-table__cell fd-table__cell--checkbox">
+                    <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="CWkshBJ">
+                    <label class="fd-checkbox__label" for="CWkshBJ"></label>
+                </th>
+                <th class="fd-table__cell" scope="col">Description</th>
+                <th class="fd-table__cell" scope="col">Price</th>
+                <th class="fd-table__cell" scope="col"></th>
+            </tr>
+        </thead>
         <tbody class="fd-table__body">
             <tr class="fd-table__row fd-table__row--main">
                 <td class="fd-table__cell fd-table__cell--checkbox">
