@@ -76,25 +76,25 @@ The lists in both sections (Main and Utility) should have the `fd-nested-list--t
         <ul class="fd-nested-list">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span class="fd-nested-list__icon sap-icon--home"></span>
+                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--home"></span>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link is-selected" href="#">
-                    <span class="fd-nested-list__icon sap-icon--calendar"></span>
+                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--calendar"></span>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span class="fd-nested-list__icon sap-icon--employee"></span>
+                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--employee"></span>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span class="fd-nested-list__icon sap-icon--activities"></span>
+                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--activities"></span>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
@@ -104,13 +104,13 @@ The lists in both sections (Main and Utility) should have the `fd-nested-list--t
         <ul class="fd-nested-list">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span class="fd-nested-list__icon sap-icon--compare"></span>
+                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--compare"></span>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span class="fd-nested-list__icon sap-icon--chain-link"></span>
+                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--chain-link"></span>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
