@@ -33,6 +33,7 @@ storybook-static
 .storybook/static/72-Bold.woff
 .storybook/static/72-Light.woff
 .storybook/static/72-Regular.woff
+.storybook/static/SAP-icons.woff
 .storybook/static/HCB_css_variables.css
 .storybook/static/HCW_css_variables.css
 .storybook/static/css_variables.css
