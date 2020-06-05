@@ -1,5 +1,5 @@
 import fundamentals from './custom/fundamentals';
-import { addDecorator, addParameters, configure } from "@storybook/html";
+import { addDecorator, addParameters } from "@storybook/html";
 import { withCssResources } from "@storybook/addon-cssresources";
 // import { withA11y } from "@storybook/addon-a11y";
 import { DocsContainer } from '@storybook/addon-docs/blocks';

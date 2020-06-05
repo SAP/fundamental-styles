@@ -11,7 +11,6 @@ import {
     Heading,
     Title,
     Subtitle,
-    Primary,
     DocsStory,
   } from '@storybook/addon-docs/blocks';
 
@@ -47,7 +46,7 @@ const DocsPage = () => {
         <Title />
         <Toc />
         <Subtitle />
-        <Description desc={context?.parameters?.description} />
+        {context?.parameters?.description && <Description desc={context?.parameters?.description} />}
         <Heading>Examples</Heading>
         {stories.map((story) => story && <DocsStory
             key={story.id}
