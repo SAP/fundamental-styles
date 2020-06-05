@@ -9,5 +9,100 @@
     },
     "parserOptions": {
         "ecmaVersion": 6
-    }
+    },
+    "rules": {
+        "brace-style": 2,
+        "camelcase": 2,
+        "comma-dangle": [2, "never"],
+        "comma-spacing": 2,
+        "comma-style": [2, "last"],
+        "default-case": 2,
+        "dot-notation": 2,
+        "eol-last": 2,
+        "eqeqeq": 2,
+        "guard-for-in": 2,
+        "handle-callback-err": 2,
+        "indent": [2, 4, {
+            "SwitchCase": 1
+          }
+        ],
+        "key-spacing": 2,
+        "keyword-spacing": [2, { "before": true }],
+        "new-cap": 2,
+        "no-cond-assign": 2,
+        "no-console": 2,
+        "no-constant-condition": 2,
+        "no-control-regex": 2,
+        "no-debugger": 2,
+        "no-dupe-args": 2,
+        "no-dupe-keys": 2,
+        "no-duplicate-case": 2,
+        "no-empty-character-class": 2,
+        "no-empty": 2,
+        "no-ex-assign": 2,
+        "no-extra-bind": 2,
+        "no-extra-boolean-cast": 0,
+        "no-extra-parens": 0,
+        "no-extra-semi": 2,
+        "no-fallthrough": 2,
+        "no-floating-decimal": 2,
+        "no-func-assign": 2,
+        "no-inner-declarations": 2,
+        "no-invalid-regexp": 2,
+        "no-irregular-whitespace": 2,
+        "no-loop-func": 2,
+        "no-mixed-spaces-and-tabs": 2,
+        "no-multi-spaces": 2,
+        "no-negated-in-lhs": 2,
+        "no-nested-ternary": 2,
+        "no-obj-calls": 2,
+        "no-regex-spaces": 2,
+        "no-shadow": 2,
+        "no-spaced-func": 2,
+        "no-sparse-arrays": 2,
+        "no-trailing-spaces": 2,
+        "no-undef": 2,
+        "no-undefined": 2,
+        "no-underscore-dangle": 0,
+        "no-unreachable": 2,
+        "no-unused-vars": [2, { "ignoreRestSiblings": true }],
+        "object-curly-spacing": [2, "always"],
+        "quote-props": [2, "as-needed",
+          {
+            "keywords": true,
+            "unnecessary": false
+          }
+        ],
+        "quotes": [2, "single"],
+        "radix": 2,
+        "semi-spacing": 2,
+        "semi": 2,
+        "sort-imports": [2,
+          {
+            "ignoreCase": true,
+            "ignoreMemberSort": false,
+            "memberSyntaxSortOrder": [
+              "none",
+              "single",
+              "multiple",
+              "all"
+            ]
+          }
+        ],
+        "space-before-blocks": 2,
+        "space-before-function-paren": [2, "never"],
+        "space-infix-ops": 2,
+        "spaced-comment": [0, "always", { "exceptions": ["-"] }],
+        "strict": [2, "global"],
+        "use-isnan": 2,
+        "valid-jsdoc": [2,
+          {
+            "prefer": {
+              "return": "returns"
+            }
+          }
+        ],
+        "valid-typeof": 2,
+        "wrap-iife": [2, "any"]
+      }
 }

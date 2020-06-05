@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-
+/* eslint-disable no-console */
 const ip = require('ip');
 const fs = require('fs');
 

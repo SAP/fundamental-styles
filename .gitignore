@@ -13,7 +13,6 @@ Thumbs.db
 /dist
 node_modules
 build
-storybook-static
 test/visual-regression-tests/backstop_data
 .tmp
 *.log
@@ -27,4 +26,17 @@ docs/css/*.woff
 test/visual-regression-tests/config/backstopConfigCI.json
 docs/_config-library.yml
 
+# Storybook
 __diff_output__
+storybook-static
+.storybook/static/*.woff
+.storybook/static/72-Bold.woff
+.storybook/static/72-Light.woff
+.storybook/static/72-Regular.woff
+.storybook/static/SAP-icons.woff
+.storybook/static/HCB_css_variables.css
+.storybook/static/HCW_css_variables.css
+.storybook/static/css_variables.css
+.storybook/static/dark_css_variables.css
+.storybook/static/light_dark_css_variables.css
+stories/docs/
