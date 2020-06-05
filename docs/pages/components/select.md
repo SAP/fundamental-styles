@@ -44,22 +44,22 @@ For lists that require more than 12 options, the <a href="/patterns/combobox-inp
         class="fd-list fd-list--dropdown"
         role="listbox">
         <li aria-selected="true"
-            class="fd-list__item fd-select__item is-selected"
+            class="fd-list__item is-selected"
             role="option"
             tabindex="0">
            <span class="fd-list__title">List item 1</span>
         </li>
-        <li class="fd-list__item fd-select__item"
+        <li class="fd-list__item"
             role="option"
             tabindex="-1">
            <span class="fd-list__title">List item 2</span>
        </li>
-        <li class="fd-list__item fd-select__item"
+        <li class="fd-list__item"
             role="option"
             tabindex="-1">
            <span class="fd-list__title">List item 3</span>
         </li>
-        <li class="fd-list__item fd-select__item"
+        <li class="fd-list__item"
             role="option"
             tabindex="-1">
            <span class="fd-list__title">List item 4</span>
@@ -85,19 +85,19 @@ For lists that require more than 12 options, the <a href="/patterns/combobox-inp
   </div>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h0C6A326">
      <ul tabIndex="-1" aria-labelledby="f45564A58" class="fd-list fd-list--dropdown fd-list--compact" role="listbox">
-        <li class="fd-list__item fd-select__item is-selected" aria-selected="true" role="option" tabindex="0">
+        <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
            <span class="fd-list__title">
                Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text
                Very long text, Very long text, Very long text
            </span>
         </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__title">List item 2</span>
         </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__title">List item 3</span>
         </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__title">List item 4</span>
         </li>
      </ul>
@@ -126,19 +126,19 @@ The `Select` component can be customized by adding additional information in add
   </div>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h0C62325">
      <ul tabIndex="-1" aria-labelledby="f45564A59" class="fd-list fd-list--dropdown" role="listbox">
-        <li class="fd-list__item fd-select__item is-selected" aria-selected="true" role="option" tabindex="0">
+        <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
            <span class="fd-list__title">Product 1</span>
            <span class="fd-list__secondary">1000 EUR</span>
         </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__title">Product 2</span>
            <span class="fd-list__secondary">750 EUR</span>
        </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__title">Product 3</span>
            <span class="fd-list__secondary">780 EUR</span>
         </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__title">Product 4</span>
            <span class="fd-list__secondary">40 EUR</span>
         </li>
@@ -164,19 +164,19 @@ The `Select` component can be customized by adding additional information in add
   </div>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h07jj326">
      <ul tabIndex="-1" aria-labelledby="g45564A59" class="fd-list fd-list--dropdown fd-list--compact" role="listbox">
-        <li class="fd-list__item fd-select__item is-selected" aria-selected="true" role="option" tabindex="0">
+        <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
            <span class="fd-list__title">Product 1</span>
            <span class="fd-list__secondary">1000 EUR</span>
         </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__title">Product 2</span>
            <span class="fd-list__secondary">750 EUR</span>
        </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__title">Product 3</span>
            <span class="fd-list__secondary">780 EUR</span>
         </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__title">Product 4</span>
            <span class="fd-list__secondary">40 EUR</span>
         </li>
@@ -204,22 +204,22 @@ The `Select` component can be customized by adding additional information in add
   </div>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h090G325">
      <ul tabIndex="-1" aria-labelledby="g45564A50" class="fd-list fd-list--dropdown" role="listbox">
-        <li class="fd-list__item fd-select__item is-selected" aria-selected="true" role="option" tabindex="0">
+        <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
            <span class="fd-list__icon sap-icon--marketing-campaign"></span>
            <span class="fd-list__title">Marketing</span>
            <span class="fd-list__secondary">1000 EUR</span>
         </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__icon sap-icon--save"></span>
            <span class="fd-list__title">Backups</span>
            <span class="fd-list__secondary">500 EUR</span>
        </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__icon sap-icon--shipping-status"></span>
            <span class="fd-list__title">Shipping</span>
            <span class="fd-list__secondary">125 EUR</span>
         </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__icon sap-icon--headset"></span>
            <span class="fd-list__title">Consulting</span>
            <span class="fd-list__secondary">200 EUR</span>
@@ -255,31 +255,31 @@ In cases where the list items need to be categorized into groups, it is possible
             <li class="fd-list__group-header">
                 Fruits
             </li>
-            <li role="option" tabindex="0" class="fd-list__item fd-select__item is-selected" aria-selected="true">
+            <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
                 <span class="fd-list__title">Apple</span>
             </li>
-            <li role="option" tabindex="-1" class="fd-list__item fd-select__item">
+            <li role="option" tabindex="-1" class="fd-list__item">
                 <span class="fd-list__title">Orange</span>
             </li>
-            <li role="option" tabindex="-1" class="fd-list__item fd-select__item">
+            <li role="option" tabindex="-1" class="fd-list__item">
                 <span class="fd-list__title">Banana</span>
             </li>
-            <li role="option" tabindex="-1" class="fd-list__item fd-select__item">
+            <li role="option" tabindex="-1" class="fd-list__item">
                 <span class="fd-list__title">Kiwi</span>
             </li>
             <li class="fd-list__group-header">
                 Vegetables
             </li>
-            <li role="option" tabindex="-1" class="fd-list__item fd-select__item">
+            <li role="option" tabindex="-1" class="fd-list__item">
                 <span class="fd-list__title">Tomato</span>
             </li>
-            <li role="option" tabindex="-1" class="fd-list__item fd-select__item">
+            <li role="option" tabindex="-1" class="fd-list__item">
                 <span class="fd-list__title">Onion</span>
             </li>
-            <li role="option" tabindex="-1" class="fd-list__item fd-select__item">
+            <li role="option" tabindex="-1" class="fd-list__item">
                 <span class="fd-list__title">Spinach</span>
             </li>
-            <li role="option" tabindex="-1" class="fd-list__item fd-select__item">
+            <li role="option" tabindex="-1" class="fd-list__item">
                 <span class="fd-list__title">Potato</span>
             </li>
         </ul>
@@ -308,19 +308,19 @@ the `--no-wrap` modifier can be added to the `fd-list__title`, or `fd-list__seco
   </div>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h0GFF2325">
      <ul tabIndex="-1" aria-labelledby="g45464A40" class="fd-list fd-list--dropdown" role="listbox">
-        <li class="fd-list__item fd-select__item is-selected" aria-selected="true" role="option" tabindex="0">
+        <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
            <span class="fd-list__title">Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text </span>
            <span class="fd-list__secondary">A1</span>
         </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__title">List item 2</span>
            <span class="fd-list__secondary">A2</span>
        </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__title">List item 3</span>
            <span class="fd-list__secondary">A3</span>
         </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__title">List item 4</span>
            <span class="fd-list__secondary">A4</span>
         </li>
@@ -346,21 +346,21 @@ the `--no-wrap` modifier can be added to the `fd-list__title`, or `fd-list__seco
   </div>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h0GZH2325">
      <ul tabIndex="-1" aria-labelledby="g45464B40" class="fd-list fd-list--dropdown fd-list--compact" role="listbox">
-        <li class="fd-list__item fd-select__item is-selected" aria-selected="true" role="option" tabindex="0">
+        <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
            <span class="fd-list__title fd-list__title--no-wrap">
                Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text 
            </span>
            <span class="fd-list__secondary">A1</span>
         </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__title">List item 2</span>
            <span class="fd-list__secondary">A2</span>
         </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__title">List item 3</span>
            <span class="fd-list__secondary">A3</span>
         </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__title">List item 4</span>
            <span class="fd-list__secondary">A4</span>
         </li>
@@ -391,19 +391,19 @@ The length can be adjusted to match the text length by adding the `fd-popover__b
   </div>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="h0GTKE325">
      <ul tabIndex="-1" aria-labelledby="g4546C40" class="fd-list fd-list--dropdown" role="listbox">
-        <li class="fd-list__item fd-select__item is-selected" aria-selected="true" role="option" tabindex="0">
+        <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
            <span class="fd-list__title">List item 1</span>
            <span class="fd-list__secondary">A1</span>
         </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__title">List item 2</span>
            <span class="fd-list__secondary">A2</span>
        </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__title">List item 3</span>
            <span class="fd-list__secondary">A3</span>
         </li>
-        <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+        <li class="fd-list__item" role="option" tabindex="-1">
            <span class="fd-list__title">List item 4</span>
            <span class="fd-list__secondary">A4</span>
         </li>
@@ -471,21 +471,21 @@ To add text in the body of the component, simply include your text in the `fd-li
     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h07jjhYH">
         <div aria-live="assertive" class="fd-list__message fd-list__message--success" role="alert">Success message</div>
          <ul tabIndex="-1" aria-labelledby="a4546C40" class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
-            <li class="fd-list__item fd-select__item is-selected" aria-selected="true" role="option" tabindex="0">
+            <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
                <span class="fd-list__title">
                    List Item 1
                </span>
                <span class="fd-list__secondary">A1</span>
             </li>
-            <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+            <li class="fd-list__item" role="option" tabindex="-1">
                <span class="fd-list__title">List item 2</span>
                <span class="fd-list__secondary">A2</span>
             </li>
-            <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+            <li class="fd-list__item" role="option" tabindex="-1">
                <span class="fd-list__title">List item 3</span>
                <span class="fd-list__secondary">A3</span>
             </li>
-            <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+            <li class="fd-list__item" role="option" tabindex="-1">
                <span class="fd-list__title">List item 4</span>
                <span class="fd-list__secondary">A4</span>
             </li>
@@ -513,21 +513,21 @@ To add text in the body of the component, simply include your text in the `fd-li
    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h07j9978H">
         <div aria-live="assertive" class="fd-list__message fd-list__message--error" role="alert">Error message</div>
         <ul tabIndex="-1" aria-labelledby="b4546C40" class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
-           <li class="fd-list__item fd-select__item is-selected" aria-selected="true" role="option" tabindex="0">
+           <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
               <span class="fd-list__title">
                   List Item 1
               </span>
               <span class="fd-list__secondary">A1</span>
            </li>
-           <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+           <li class="fd-list__item" role="option" tabindex="-1">
               <span class="fd-list__title">List item 2</span>
               <span class="fd-list__secondary">A2</span>
            </li>
-           <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+           <li class="fd-list__item" role="option" tabindex="-1">
               <span class="fd-list__title">List item 3</span>
               <span class="fd-list__secondary">A3</span>
            </li>
-           <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+           <li class="fd-list__item" role="option" tabindex="-1">
               <span class="fd-list__title">List item 4</span>
               <span class="fd-list__secondary">A4</span>
            </li>
@@ -555,21 +555,21 @@ To add text in the body of the component, simply include your text in the `fd-li
    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h07j998hhH">
         <div aria-live="assertive" class="fd-list__message fd-list__message--warning" role="alert">Warning message</div>
         <ul tabIndex="-1" aria-labelledby="b45336C4" class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
-           <li class="fd-list__item fd-select__item is-selected" aria-selected="true" role="option" tabindex="0">
+           <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
               <span class="fd-list__title">
                   List Item 1
               </span>
               <span class="fd-list__secondary">A1</span>
            </li>
-           <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+           <li class="fd-list__item" role="option" tabindex="-1">
               <span class="fd-list__title">List item 2</span>
               <span class="fd-list__secondary">A2</span>
            </li>
-           <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+           <li class="fd-list__item" role="option" tabindex="-1">
               <span class="fd-list__title">List item 3</span>
               <span class="fd-list__secondary">A3</span>
            </li>
-           <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+           <li class="fd-list__item" role="option" tabindex="-1">
               <span class="fd-list__title">List item 4</span>
               <span class="fd-list__secondary">A4</span>
            </li>
@@ -598,21 +598,21 @@ To add text in the body of the component, simply include your text in the `fd-li
    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="hkhh998hhH">
         <div aria-live="assertive" class="fd-list__message fd-list__message--information" role="alert">Information message</div>
         <ul tabIndex="-1" aria-labelledby="h45336C4" class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
-           <li class="fd-list__item fd-select__item is-selected" aria-selected="true" role="option" tabindex="0">
+           <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
               <span class="fd-list__title">
                   List Item 1
               </span>
               <span class="fd-list__secondary">A1</span>
            </li>
-           <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+           <li class="fd-list__item" role="option" tabindex="-1">
               <span class="fd-list__title">List item 2</span>
               <span class="fd-list__secondary">A2</span>
            </li>
-           <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+           <li class="fd-list__item" role="option" tabindex="-1">
               <span class="fd-list__title">List item 3</span>
               <span class="fd-list__secondary">A3</span>
            </li>
-           <li class="fd-list__item fd-select__item" role="option" tabindex="-1">
+           <li class="fd-list__item" role="option" tabindex="-1">
               <span class="fd-list__title">List item 4</span>
               <span class="fd-list__secondary">A4</span>
            </li>
@@ -648,28 +648,28 @@ select component in `dialog` and `bar` components.
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
             <div aria-live="assertive" class="fd-list__message fd-list__message--information" role="alert">Choose one item</div>
             <ul class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
-                <li role="option" tabindex="0" class="fd-list__item fd-select__item is-selected" aria-selected="true">
+                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
                    <span class="fd-list__title">Apple</span>
                </li>
-               <li role="option" tabindex="0" class="fd-list__item fd-select__item">
+               <li role="option" tabindex="0" class="fd-list__item">
                    <span class="fd-list__title">Orange</span>
                </li>
-               <li role="option" tabindex="0" class="fd-list__item fd-select__item">
+               <li role="option" tabindex="0" class="fd-list__item">
                    <span class="fd-list__title">Banana</span>
                </li>
-                <li role="option" tabindex="0" class="fd-list__item fd-select__item">
+                <li role="option" tabindex="0" class="fd-list__item">
                    <span class="fd-list__title">Kiwi</span>
                 </li>
-                <li role="option" tabindex="0" class="fd-list__item fd-select__item">
+                <li role="option" tabindex="0" class="fd-list__item">
                     <span class="fd-list__title">Tomato</span>
                 </li>
-                <li role="option" tabindex="0" class="fd-list__item fd-select__item">
+                <li role="option" tabindex="0" class="fd-list__item">
                     <span class="fd-list__title">Onion</span>
                 </li>
-                <li role="option" tabindex="0" class="fd-list__item fd-select__item">
+                <li role="option" tabindex="0" class="fd-list__item">
                     <span class="fd-list__title">Spinach</span>
                 </li>
-                <li role="option" tabindex="0" class="fd-list__item fd-select__item">
+                <li role="option" tabindex="0" class="fd-list__item">
                     <span class="fd-list__title">Potato</span>
                 </li>
             </ul>

@@ -88,10 +88,6 @@ $block: #{$fd-namespace}-select;
     font-size: var(--sapFontSize);
   }
 
-  &__item[aria-selected=true] {
-    border-bottom: 0 !important;
-  }
-
   &--compact {
     .#{$block}__control {
       height: $fd-form-input-height--compact;

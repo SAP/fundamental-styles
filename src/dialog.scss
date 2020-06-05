@@ -129,6 +129,7 @@ $button: #{$fd-namespace}-button;
 
     @extend %dialog-body;
 
+    position: relative;
     padding-top: $fd-dialog-body-padding-y;
     padding-bottom: $fd-dialog-body-padding-y;
     border-radius: $fd-dialog-content-border-radius;
