@@ -37,10 +37,10 @@ This component mostly relies on the CSS of other components and has very little 
 						<button class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
 					</div>
 					<div class="fd-calendar__action">
-						<button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false" aria-controls="mGTGe998">September</button>
+						<button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">September</button>
 					</div>
 					<div class="fd-calendar__action">
-						<button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false" aria-controls="D8NDL125">2018</button>
+						<button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">2018</button>
 					</div>
 					<div class="fd-calendar__action">
 						<button class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
@@ -220,10 +220,10 @@ This component mostly relies on the CSS of other components and has very little 
 						<button class="fd-button fd-button--transparent sap-icon--slim-arrow-left fd-button--compact" aria-label="Previous" aria-disabled="true"></button>
 					</div>
 					<div class="fd-calendar__action">
-						<button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="mGTGe998">September</button>
+						<button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false">September</button>
 					</div>
 					<div class="fd-calendar__action">
-						<button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false" aria-controls="D8NDL125">2018</button>
+						<button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false">2018</button>
 					</div>
 					<div class="fd-calendar__action">
 						<button class="fd-button fd-button--transparent sap-icon--slim-arrow-right fd-button--compact" aria-label="Next"></button>
@@ -231,7 +231,7 @@ This component mostly relies on the CSS of other components and has very little 
 				</div>
 				</header>
 				<div class="fd-calendar__content">
-					<div class="fd-calendar__dates" id="YeayX297" aria-hidden="false">
+					<div class="fd-calendar__dates" id="YeayX298" aria-hidden="false">
 						<table class="fd-calendar__table" role="grid">
 	                    <thead class="fd-calendar__group">
 					        <tr class="fd-calendar__row">
@@ -407,10 +407,10 @@ The today selection button in the footer selects today's date in the system or u
 						<button class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
 					</div>
 					<div class="fd-calendar__action">
-						<button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false" aria-controls="mGTGe998">September</button>
+						<button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">September</button>
 					</div>
 					<div class="fd-calendar__action">
-						<button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false" aria-controls="D8NDL125">2018</button>
+						<button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">2018</button>
 					</div>
 					<div class="fd-calendar__action">
 						<button class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
@@ -418,7 +418,7 @@ The today selection button in the footer selects today's date in the system or u
 				</div>
 				</header>
 				<div class="fd-calendar__content">
-					<div class="fd-calendar__dates" id="YeayX297" aria-hidden="false">
+					<div class="fd-calendar__dates" id="YeayX299" aria-hidden="false">
 						<table class="fd-calendar__table" role="grid">
 						<thead class="fd-calendar__group">
 					        <tr class="fd-calendar__row">
@@ -604,21 +604,21 @@ The today navigation button in the header navigates focus to today's date in the
 						<button class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
 					</div>
 					<div class="fd-calendar__action">
-						<button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false" aria-controls="mGTGe998">September</button>
+						<button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">September</button>
 					</div>
 					<div class="fd-calendar__action">
-						<button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false" aria-controls="D8NDL125">2018</button>
+						<button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">2018</button>
 					</div>
 					<div class="fd-calendar__action">
 						<button class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
 					</div>
 					<div class="fd-calendar__action">
-						<button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false" aria-controls="D8NDL125">Today</button>
+						<button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">Today</button>
 					</div>
 				</div>
 				</header>
 				<div class="fd-calendar__content">
-					<div class="fd-calendar__dates" id="YeayX297" aria-hidden="false">
+					<div class="fd-calendar__dates" id="YeayX300" aria-hidden="false">
 						<table class="fd-calendar__table" role="grid">
 						<thead class="fd-calendar__group">
 					        <tr class="fd-calendar__row">
