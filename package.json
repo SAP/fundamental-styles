@@ -108,6 +108,7 @@
     "signale": "^1.4.0",
     "standard-version": "4.2.0",
     "start-server-and-test": "^1.11.0",
+    "story-description-loader": "^1.0.0",
     "style-loader": "^1.2.1",
     "stylelint": "^13.5.0",
     "stylelint-config-standard": "^20.0.0",
