@@ -293,6 +293,7 @@ $block: #{$fd-namespace}-shellbar;
 
     &:active {
       background: $fd-shell-active-background;
+      outline-color: var(--sapContent_ContrastFocusColor);
     }
 
     &:hover,
@@ -335,6 +336,7 @@ $block: #{$fd-namespace}-shellbar;
     &:focus {
       background: $fd-shell-active-background;
       color: $fd-shell-active-text-color;
+      outline-color: var(--sapContent_ContrastFocusColor);
     }
   }
 
