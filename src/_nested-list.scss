@@ -77,6 +77,10 @@ $block: #{$fd-namespace}-nested-list;
 
     @include fd-hover() {
       background: var(--sapList_Hover_Background);
+
+      .#{$block}__button {
+        background: var(--sapList_Hover_Background);
+      }
     }
 
     @include fd-fiori-focus();
@@ -90,21 +94,37 @@ $block: #{$fd-namespace}-nested-list;
       border-bottom: var(--sapList_BorderWidth) solid;
       border-bottom-color: var(--sapList_SelectionBorderColor);
 
+      .#{$block}__button {
+        background: var(--sapList_SelectionBackgroundColor);
+      }
+
       @include fd-hover() {
         background: var(--sapList_Hover_SelectionBackground);
+
+        .#{$block}__button {
+          background: var(--sapList_Hover_SelectionBackground);
+        }
       }
     }
 
     @include fd-active() {
       background: var(--sapList_Active_Background);
 
+      .#{$block}__button {
+        background: var(--sapList_Active_Background);
+      }
+
       @include fd-selected() {
         background: var(--sapList_Active_Background);
+
+        .#{$block}__button {
+          background: var(--sapList_Active_Background);
+        }
       }
 
       .#{$block}__title,
       .#{$block}__icon,
-      .#{$block}__expand-icon {
+      .#{$block}__button {
         color: var(--sapList_Active_TextColor);
       }
     }
@@ -128,15 +148,13 @@ $block: #{$fd-namespace}-nested-list;
       }
 
       > .#{$block}__link,
-      > .#{$block}__expand-icon {
-        @include fd-fiori-focus() {
-          outline: none;
-        }
+      > .#{$block}__button {
+        @include fd-fiori-focus();
       }
     }
   }
 
-  &__expand-icon {
+  &__button {
     @include fd-reset();
     @include fd-fiori-focus();
 

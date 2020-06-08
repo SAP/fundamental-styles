@@ -1,0 +1,1156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Visual Button 1`] = `
+<div>
+  <div>
+    
+    
+    <button
+      class="fd-button"
+    >
+      Create
+    </button>
+    
+    
+    <button
+      class="fd-button sap-icon--cart"
+    />
+    
+    
+    <button
+      class="fd-button fd-button--emphasized "
+    >
+      Save
+    </button>
+    
+
+  </div>
+  <div>
+    
+    
+    <div
+      class="fddocs-container"
+    >
+       
+        
+      <button
+        class="fd-button"
+      >
+        Default Button
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--emphasized"
+      >
+        Emphasized Button
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--ghost"
+      >
+        Ghost Button
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--positive"
+      >
+        Positive Button
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--negative"
+      >
+        Negative Button
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--attention"
+      >
+        Attention Button
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--transparent"
+      >
+        Transparent Button
+      </button>
+      
+    
+    </div>
+    
+
+  </div>
+  <div>
+    
+    
+    <div
+      aria-label="Group label"
+      class="fd-segmented-button"
+      role="group"
+    >
+      
+        
+      <button
+        class="fd-button sap-icon--survey"
+      />
+      
+        
+      <button
+        aria-pressed="true"
+        class="fd-button sap-icon--pie-chart is-selected"
+      />
+      
+        
+      <button
+        class="fd-button sap-icon--pool"
+      />
+      
+    
+    </div>
+    
+
+    
+    <div
+      aria-label="Group label"
+      class="fd-segmented-button"
+      role="group"
+    >
+      
+        
+      <button
+        aria-pressed="true"
+        class="fd-button fd-button--compact is-selected"
+      >
+        Left
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--compact"
+      >
+        Middle
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--compact"
+      >
+        Right
+      </button>
+      
+    
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <button
+      class="fd-button fd-button--menu"
+    >
+      Action Button
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--ghost fd-button--menu"
+    >
+      Ghost Button
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--positive fd-button--menu"
+    >
+      Positive Button
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--negative fd-button--menu"
+    >
+      Negative Button
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--attention fd-button--menu"
+    >
+      Attention Button
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--menu"
+      disabled=""
+    >
+      Action Button
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--ghost fd-button--menu"
+      disabled=""
+    >
+      Ghost Button
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--positive fd-button--menu"
+      disabled=""
+    >
+      Positive Button
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--negative fd-button--menu"
+      disabled=""
+    >
+      Negative Button
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--attention fd-button--menu"
+      disabled=""
+    >
+      Attention Button
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--emphasized fd-button--menu"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--menu"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--transparent fd-button--menu"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--emphasized fd-button--menu fd-button--positive"
+    >
+      Approve
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--negative fd-button--menu"
+    >
+      Reject
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--attention fd-button--menu"
+    >
+      Attention
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--menu sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--transparent fd-button--menu sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button fd-button--menu sap-icon--filter"
+    />
+    
+
+    <button
+      class="fd-button fd-button--menu fd-button--positive sap-icon--accept"
+    />
+    
+
+    <button
+      class="fd-button fd-button--menu fd-button--negative sap-icon--decline"
+    />
+    
+
+    <button
+      class="fd-button fd-button--menu fd-button--attention sap-icon--warning"
+    />
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--menu"
+    >
+      Default
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--compact fd-button--menu"
+    >
+      Compact
+    </button>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      aria-label="button-split"
+      class="fd-button-split fd-has-margin-right-small"
+      role="group"
+    >
+      
+  
+      <button
+        aria-label="button"
+        class="fd-button"
+      >
+        Button with text
+      </button>
+      
+  
+      <button
+        aria-controls="t4c0o273"
+        aria-expanded="false"
+        aria-haspopup="true"
+        aria-label="More"
+        class="fd-button sap-icon--slim-arrow-down"
+      />
+      
+  
+      <div
+        aria-hidden="true"
+        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
+        id="t4c0o273"
+      >
+        
+    
+        <nav
+          class="fd-menu"
+        >
+          
+        
+          <ul
+            class="fd-menu__list fd-menu__list--no-shadow"
+          >
+            
+          
+            <li
+              class="fd-menu__item"
+            >
+              
+              
+              <a
+                class="fd-menu__link"
+                href="#"
+                role="button"
+              >
+                
+                  
+                <span
+                  class="fd-menu__title"
+                >
+                  Add to list
+                </span>
+                
+              
+              </a>
+              
+          
+            </li>
+            
+          
+            <li
+              class="fd-menu__item"
+            >
+              
+              
+              <a
+                class="fd-menu__link"
+                href="#"
+                role="button"
+              >
+                
+                  
+                <span
+                  class="fd-menu__title"
+                >
+                  Save for later
+                </span>
+                
+              
+              </a>
+              
+          
+            </li>
+            
+        
+          </ul>
+          
+    
+        </nav>
+        
+  
+      </div>
+      
+
+    </div>
+    
+
+
+    <div
+      aria-label="button-split"
+      class="fd-button-split"
+      role="group"
+    >
+      
+  
+      <button
+        aria-label="button"
+        class="fd-button fd-button--emphasized"
+      >
+        Button with text
+      </button>
+      
+  
+      <button
+        aria-controls="t4c0o2732"
+        aria-expanded="false"
+        aria-haspopup="true"
+        aria-label="More"
+        class="fd-button fd-button--emphasized sap-icon--slim-arrow-down"
+      />
+      
+  
+      <div
+        aria-hidden="true"
+        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
+        id="t4c0o2732"
+      >
+        
+    
+        <nav
+          class="fd-menu"
+        >
+          
+        
+          <ul
+            class="fd-menu__list fd-menu__list--no-shadow"
+          >
+            
+          
+            <li
+              class="fd-menu__item"
+            >
+              
+              
+              <a
+                class="fd-menu__link"
+                href="#"
+                role="button"
+              >
+                
+                  
+                <span
+                  class="fd-menu__title"
+                >
+                  Add to list
+                </span>
+                
+              
+              </a>
+              
+          
+            </li>
+            
+          
+            <li
+              class="fd-menu__item"
+            >
+              
+              
+              <a
+                class="fd-menu__link"
+                href="#"
+                role="button"
+              >
+                
+                  
+                <span
+                  class="fd-menu__title"
+                >
+                  Save for later
+                </span>
+                
+              
+              </a>
+              
+          
+            </li>
+            
+        
+          </ul>
+          
+    
+        </nav>
+        
+  
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <button
+      class="fd-button"
+    >
+      Save
+    </button>
+    
+
+    <button
+      class="fd-button fd-button sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--ghost sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--emphasized sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--transparent sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--positive"
+    >
+      Approve
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--negative"
+    >
+      Reject
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--attention"
+    >
+      Attention
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--compact"
+    >
+      Edit
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--compact fd-button sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--ghost fd-button--compact"
+    >
+      Edit
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--emphasized fd-button--compact sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--transparent fd-button--compact sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--positive fd-button--compact "
+    >
+      Approve
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--negative fd-button--compact"
+    >
+      Reject
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--attention fd-button--compact"
+    >
+      Attention
+    </button>
+    
+
+  </div>
+  <div>
+    
+
+    <button
+      class="fd-button fd-button--emphasized"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--transparent"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--ghost"
+    >
+      Add to Cart
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--positive"
+    >
+      Approve
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--negative"
+    >
+      Reject
+    </button>
+    
+
+    <button
+      class="fd-button fd-button--attention"
+    >
+      Attention
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button fd-button--transparent sap-icon--cart"
+    />
+    
+
+    <button
+      class="fd-button sap-icon--filter"
+    />
+    
+
+    <button
+      class="fd-button fd-button--ghost sap-icon--filter"
+    />
+    
+
+    <button
+      class="fd-button fd-button--positive sap-icon--accept"
+    />
+    
+
+    <button
+      class="fd-button fd-button--negative sap-icon--decline"
+    />
+    
+
+    <button
+      class="fd-button fd-button--attention sap-icon--decline"
+    />
+    
+
+  </div>
+  <div>
+    
+
+    <button
+      class="fd-button fd-button--emphasized"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button--emphasized is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--emphasized"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button is-disabled"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--transparent"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button--transparent is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--transparent is-disabled"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button "
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--ghost"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button--ghost is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--ghost"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--positive"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button--positive is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--positive"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--negative"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button--negative is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--negative"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+    <br />
+    <br />
+    
+
+    <button
+      class="fd-button fd-button--attention"
+    >
+      Normal State
+    </button>
+    
+
+    <button
+      aria-selected="true"
+      class="fd-button fd-button--attention is-selected"
+    >
+      Selected State
+    </button>
+    
+
+    <button
+      aria-disabled="true"
+      class="fd-button fd-button--attention"
+      disabled=""
+    >
+      Disabled State
+    </button>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      dir="rtl"
+    >
+      
+  
+      <button
+        class="fd-button fd-button--emphasized"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <button
+        class="fd-button"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--transparent"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--ghost"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--positive"
+      >
+        Approve
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--negative"
+      >
+        Reject
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--attention"
+      >
+        Attention
+      </button>
+      
+  
+      <br />
+      <br />
+      
+  
+      <button
+        class="fd-button fd-button--emphasized fd-button--menu"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--menu"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <button
+        class="fd-button fd-button--transparent fd-button--menu"
+      >
+        Add to Cart
+      </button>
+      
+  
+      <br />
+      <br />
+      
+  
+      <button
+        class="fd-button sap-icon--cart"
+      />
+      
+  
+      <button
+        class="fd-button fd-button--emphasized sap-icon--cart"
+      />
+      
+  
+      <button
+        class="fd-button fd-button--transparent sap-icon--cart"
+      />
+      
+  
+      <button
+        class="fd-button fd-button--ghost sap-icon--filter"
+      />
+      
+  
+      <button
+        class="fd-button fd-button--positive sap-icon--accept"
+      />
+      
+  
+      <button
+        class="fd-button fd-button--negative sap-icon--decline"
+      />
+      
+  
+      <button
+        class="fd-button fd-button--attention sap-icon--warning"
+      />
+      
+  
+      <div
+        aria-label="Group label"
+        class="fd-segmented-button"
+        role="group"
+      >
+        
+    
+        <button
+          class="fd-button sap-icon--survey"
+        />
+        
+    
+        <button
+          aria-pressed="true"
+          class="fd-button sap-icon--pie-chart"
+        />
+        
+    
+        <button
+          class="fd-button sap-icon--pool"
+        />
+        
+  
+      </div>
+      
+
+  
+      <div
+        aria-label="Group label"
+        class="fd-segmented-button"
+        role="group"
+      >
+        
+    
+        <button
+          aria-pressed="true"
+          class="fd-button fd-button--compact"
+        >
+          Left
+        </button>
+        
+    
+        <button
+          class="fd-button fd-button--compact"
+        >
+          Middle
+        </button>
+        
+    
+        <button
+          class="fd-button fd-button--compact"
+        >
+          Right
+        </button>
+        
+  
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+</div>
+`;

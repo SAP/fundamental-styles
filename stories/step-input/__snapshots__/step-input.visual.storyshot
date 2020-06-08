@@ -1,0 +1,554 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Visual Step Input 1`] = `
+<div>
+  <div>
+    
+
+    <div
+      class="fd-step-input"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-3', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        id="step-3"
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-3', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-form-item fd-form-item--horizontal"
+    >
+      
+    
+      <div
+        class="fd-step-input fd-step-input--compact"
+      >
+        
+            
+        <button
+          aria-label="Step down"
+          class="
+                fd-button
+                fd-button--compact
+                fd-button--transparent
+                fd-step-input__button
+                sap-icon--less"
+          onclick="stepInputValue('step-1', 'down');"
+          tabindex="-1"
+          type="button"
+        >
+          
+            
+        </button>
+        
+        
+        <input
+          class="
+                fd-input 
+                fd-input--compact 
+                fd-input--no-number-spinner 
+                fd-step-input__input
+        "
+          id="step-1"
+          type="number"
+          value="0"
+        />
+        
+            
+        <button
+          aria-label="Step up"
+          class="
+                fd-button 
+                fd-button--compact
+                fd-button--transparent
+                fd-step-input__button
+                sap-icon--add"
+          onclick="stepInputValue('step-1', 'up');"
+          tabindex="-1"
+          type="button"
+        >
+          
+            
+        </button>
+        
+    
+      </div>
+      
+    
+      <span
+        class="fd-form-label fd-form-label--unit-description"
+      >
+        PC
+      </span>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-step-input is-focus"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-20', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        id="step-20"
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-20', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <h3>
+      Success
+    </h3>
+    
+
+
+    <div
+      class="fd-step-input is-success"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-5', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        id="step-5"
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-5', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+
+    <br />
+    <br />
+    
+
+    <h3>
+      Information
+    </h3>
+    
+
+    <div
+      class="fd-step-input is-information"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-6', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        id="step-6"
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-6', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+    <br />
+    <br />
+    
+
+    <h3>
+      Error
+    </h3>
+    
+
+    <div
+      class="fd-step-input is-error"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-7', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        id="step-7"
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-7', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+
+    <br />
+    <br />
+    
+
+
+    <h3>
+      Warning
+    </h3>
+    
+
+    <div
+      class="fd-step-input is-warning"
+    >
+      
+    
+      <button
+        aria-label="Step down"
+        class="
+        fd-button
+        fd-button--transparent
+        fd-step-input__button
+        sap-icon--less"
+        onclick="stepInputValue('step-8', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+    
+      </button>
+      
+    
+      <input
+        class="
+        fd-input 
+        fd-input--no-number-spinner 
+        fd-step-input__input
+    "
+        id="step-8"
+        type="number"
+        value="0"
+      />
+      
+    
+      <button
+        aria-label="Step up"
+        class="
+        fd-button 
+        fd-button--transparent
+        fd-step-input__button
+        sap-icon--add"
+        onclick="stepInputValue('step-8', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+    
+      </button>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-step-input is-disabled"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-13', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        disabled=""
+        id="step-13"
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-13', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-step-input is-readonly"
+    >
+      
+        
+      <button
+        aria-label="Step down"
+        class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--less"
+        onclick="stepInputValue('step-14', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+    
+      <input
+        class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    "
+        id="step-14"
+        readonly=""
+        type="number"
+        value="0"
+      />
+      
+        
+      <button
+        aria-label="Step up"
+        class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button
+            sap-icon--add"
+        onclick="stepInputValue('step-14', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+        
+      </button>
+      
+
+    </div>
+    
+
+  </div>
+</div>
+`;

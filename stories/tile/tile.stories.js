@@ -1,16 +1,16 @@
 
-import "../base.scss";
+// import "../base.scss";
 
-import "../../dist/tile.css";
-import "../../dist/badge.css";
+// import "../../dist/tile.css";
+// import "../../dist/badge.css";
 
-import Tile from "./tile.html";
+// import Tile from "./tile.html";
 
-export default {
-  title: "Tile",
-  component: Tile,
-};
+// export default {
+//   title: "Tile",
+//   component: Tile,
+// };
 
-export const AllCases = () => ({
-  Component: Tile,
-});
+// export const AllCases = () => ({
+//   Component: Tile,
+// });
