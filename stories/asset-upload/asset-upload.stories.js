@@ -3,7 +3,7 @@ import '../../dist/asset-upload.css';
 export default {
     title: 'Components/Asset Upload',
     parameters: {
-        alert: 'UNDER REVIEW. This component is under review. A new version will be implemented soon. Asset Upload provides a stylized component for file upload button.'
+        tags: ['development']
     }
 };
 
