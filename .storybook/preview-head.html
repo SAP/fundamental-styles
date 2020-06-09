@@ -192,6 +192,22 @@ function toggleDialog(dialogId, show) {
         dialog.classList.remove('fd-dialog--active');
     }
 }
+function onSideNavClick(controlId) {
+  const sideNavRef = document.getElementById(controlId);
+  const button = document.querySelector('[aria-controls="' + controlId + '"]');
+
+  if (sideNavRef.getAttribute("aria-hidden") === "true") {
+    sideNavRef.setAttribute("aria-hidden", "false");
+  } else {
+    sideNavRef.setAttribute("aria-hidden", "true");
+  }
+
+  if (button.getAttribute("aria-expanded") === "true") {
+    button.setAttribute("aria-expanded", "false");
+  } else {
+    button.setAttribute("aria-expanded", "true");
+  }
+}
 
 function onControlClick(controlId) {
     let ref = document.getElementById(controlId);
