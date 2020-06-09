@@ -1155,6 +1155,816 @@ exports[`Storyshots Visual Button 1`] = `
 </div>
 `;
 
+exports[`Storyshots Visual Input 1`] = `
+<div>
+  <div>
+    
+
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-1"
+      >
+        Default input:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        id="input-1"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    <br />
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-1b"
+      >
+        Compact Input:
+      </label>
+      
+        
+      <input
+        class="fd-input fd-input--compact"
+        id="input-1b"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label fd-form-label--required"
+        for="input-1c"
+      >
+        Required Input:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        id="input-1c"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        aria-required="true"
+        class="fd-form-label"
+        for="input-1d"
+      >
+        Password:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        id="input-1d"
+        type="password"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-01"
+      >
+        Error Input:
+      </label>
+      
+        
+      <input
+        class="fd-input is-error"
+        id="input-01"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-02"
+      >
+        Success Input:
+      </label>
+      
+        
+      <input
+        class="fd-input is-success"
+        id="input-02"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-03"
+      >
+        Warning (Alert) Input:
+      </label>
+      
+        
+      <input
+        class="fd-input is-warning"
+        id="input-03"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-04"
+      >
+        Information Input:
+      </label>
+      
+        
+      <input
+        class="fd-input is-information"
+        id="input-04"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-05"
+      >
+        Disabled Input:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        disabled=""
+        id="input-05"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-06"
+      >
+        Read-Only Input:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        id="input-06"
+        placeholder="Field placeholder text"
+        readonly=""
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item fd-form-item--horizontal"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-07"
+      >
+        Default input:
+      </label>
+      
+            
+      <input
+        aria-label="Image label"
+        class="fd-input"
+        id="input-07"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    <br />
+    
+    
+    <div
+      class="fd-form-item fd-form-item--horizontal"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-08"
+      >
+        Compact input:
+      </label>
+      
+            
+      <input
+        aria-label="Image label"
+        class="fd-input fd-input--compact"
+        id="input-08"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    <br />
+    
+    
+    <div
+      class="fd-form-item fd-form-item--horizontal"
+    >
+      
+        
+      <label
+        class="fd-form-label fd-form-label--required"
+        for="input-09"
+      >
+        Required Input:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        id="input-09"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item fd-form-item--horizontal"
+    >
+      
+        
+      <label
+        aria-required="true"
+        class="fd-form-label"
+        for="input-10"
+      >
+        Password:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        id="input-10"
+        type="password"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item fd-form-item--horizontal"
+    >
+      
+        
+      <label
+        aria-required="true"
+        class="fd-form-label"
+        for="input-11"
+      >
+        Input:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        id="input-11"
+        type="text"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="input-1aa"
+      >
+        Normal input:
+      </label>
+      
+    
+      <input
+        aria-label="Image label"
+        class="fd-input"
+        id="input-1aa"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+
+    </div>
+    
+
+
+    <br />
+    <br />
+    
+
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="input-1bb"
+      >
+        Success input:
+      </label>
+      
+    
+      <div
+        class="fd-form-input-message-group fd-popover fd-popover--input-message-group"
+      >
+        
+        
+        <div
+          aria-controls="popoverB2"
+          aria-expanded="false"
+          aria-haspopup="true"
+          class="fd-popover__control"
+          onclick="onPopoverClick('popoverB2');"
+        >
+          
+            
+          <input
+            aria-label="Image label"
+            class="fd-input is-success"
+            id="input-1bb"
+            placeholder="Field placeholder text"
+            type="text"
+          />
+          
+        
+        </div>
+        
+        
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow"
+          id="popoverB2"
+        >
+          
+            
+          <div
+            class="fd-form-message fd-form-message--success"
+          >
+            Success message
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+
+    <br />
+    <br />
+    
+
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="input-1cc"
+      >
+        Error input:
+      </label>
+      
+    
+      <div
+        class="fd-form-input-message-group fd-popover fd-popover--input-message-group"
+      >
+        
+        
+        <div
+          aria-controls="popoverB3"
+          aria-expanded="false"
+          aria-haspopup="true"
+          class="fd-popover__control"
+          onclick="onPopoverClick('popoverB3');"
+        >
+          
+            
+          <input
+            aria-label="Image label"
+            class="fd-input is-error"
+            id="input-1cc"
+            placeholder="Field placeholder text"
+            type="text"
+          />
+          
+        
+        </div>
+        
+        
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow"
+          id="popoverB3"
+        >
+          
+            
+          <div
+            class="fd-form-message fd-form-message--error"
+          >
+            Error message
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+
+    <br />
+    <br />
+    
+
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="input-1dd"
+      >
+        Warning input:
+      </label>
+      
+    
+      <div
+        class="fd-form-input-message-group fd-popover fd-popover--input-message-group"
+      >
+        
+        
+        <div
+          aria-controls="popoverB4"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-label="Image label"
+          class="fd-popover__control"
+          fd-input=""
+          id="input-1dd"
+          is-warning"=""
+          onclick="onPopoverClick('popoverB4');>
+            <input class="
+          placeholder="Field placeholder text"
+          type="text"
+        >
+          
+        
+        </div>
+        
+        
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow"
+          id="popoverB4"
+        >
+          
+            
+          <div
+            class="fd-form-message fd-form-message--warning"
+          >
+            Warning message
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+
+    <br />
+    <br />
+    
+
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="input-1ee"
+      >
+        Information input:
+      </label>
+      
+    
+      <div
+        class="fd-form-input-message-group fd-popover fd-popover--input-message-group"
+      >
+        
+        
+        <div
+          aria-controls="popoverB5"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-label="Image label"
+          class="fd-popover__control"
+          fd-input=""
+          fd-input--compact=""
+          id="input-1ee"
+          is-information"=""
+          onclick="onPopoverClick('popoverB5');>
+            <input class="
+          placeholder="Field placeholder text"
+          type="text"
+        >
+          
+        
+        </div>
+        
+        
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow"
+          id="popoverB5"
+        >
+          
+            
+          <div
+            class="fd-form-message fd-form-message--information"
+          >
+            Information message
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+
+    <br />
+    <br />
+    
+
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="input-1ff"
+      >
+        Disabled Input:
+      </label>
+      
+    
+      <input
+        class="fd-input"
+        disabled=""
+        id="input-1ff"
+        type="text"
+        value="Non editable data"
+      />
+      
+
+    </div>
+    
+
+
+    <br />
+    <br />
+    
+
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="input-1gg"
+      >
+        Read Only Input:
+      </label>
+      
+    
+      <input
+        class="fd-input"
+        id="input-1gg"
+        readonly=""
+        type="text"
+        value="Read only data"
+      />
+      
+
+    </div>
+    
+
+  </div>
+</div>
+`;
+
 exports[`Storyshots Visual Layout Panel 1`] = `
 <div>
   <div>
@@ -2458,6 +3268,1852 @@ exports[`Storyshots Visual Panel 1`] = `
 </div>
 `;
 
+exports[`Storyshots Visual Popover 1`] = `
+<div>
+  <div>
+    
+    
+    <div
+      class="fddocs-container"
+    >
+       
+        
+      <div
+        class="fd-popover"
+      >
+        
+            
+        <div
+          class="fd-popover__control"
+        >
+          
+                
+          <button
+            aria-controls="popoverA1"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="Image label"
+            class="fd-button"
+            onclick="onPopoverClick('popoverA1');"
+          >
+            Left Aligned (default)
+          </button>
+          
+            
+        </div>
+        
+            
+        <div
+          aria-hidden="true"
+          class="fd-popover__body"
+          id="popoverA1"
+        >
+          
+                
+          <nav
+            class="fd-menu"
+            id=""
+          >
+            
+                    
+            <ul
+              class="fd-menu__list fd-menu__list--no-shadow"
+            >
+              
+                        
+              <li
+                class="fd-menu__item"
+              >
+                
+                            
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                                
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 1
+                  </span>
+                  
+                            
+                </a>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-menu__item"
+              >
+                
+                            
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                                
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 2
+                  </span>
+                  
+                            
+                </a>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-menu__item"
+              >
+                
+                            
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                                
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 3
+                  </span>
+                  
+                            
+                </a>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-menu__item"
+              >
+                
+                            
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                                
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 4
+                  </span>
+                  
+                            
+                </a>
+                
+                        
+              </li>
+              
+                    
+            </ul>
+            
+                
+          </nav>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+
+        
+      <div
+        class="fd-popover fd-popover--right"
+      >
+        
+            
+        <div
+          class="fd-popover__control"
+        >
+          
+                
+          <button
+            aria-controls="popoverA2"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="Image label"
+            class="fd-button"
+            onclick="onPopoverClick('popoverA2');"
+          >
+            Right Aligned
+          </button>
+          
+            
+        </div>
+        
+            
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--right"
+          id="popoverA2"
+        >
+          
+                
+          <div
+            style="margin: 20px;"
+          >
+            
+                    
+            <span
+              aria-label="Nature"
+              class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
+              role="presentation"
+              style="background-image: url('https://placeimg.com/400/400/nature');"
+            />
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+
+        
+      <div
+        class="fd-popover"
+      >
+        
+            
+        <div
+          class="fd-popover__control"
+        >
+          
+                
+          <button
+            aria-controls="popoverA3"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="Image label"
+            class="fd-button"
+            onclick="onPopoverClick('popoverA3');"
+          >
+            No Arrow & Left Aligned
+          </button>
+          
+            
+        </div>
+        
+            
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow"
+          id="popoverA3"
+        >
+          
+                
+          <nav
+            class="fd-menu"
+            id=""
+          >
+            
+                    
+            <ul
+              class="fd-menu__list fd-menu__list--no-shadow"
+            >
+              
+                        
+              <li
+                class="fd-menu__item"
+              >
+                
+                            
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                                
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 1
+                  </span>
+                  
+                            
+                </a>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-menu__item"
+              >
+                
+                            
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                                
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 2
+                  </span>
+                  
+                            
+                </a>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-menu__item"
+              >
+                
+                            
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                                
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 3
+                  </span>
+                  
+                            
+                </a>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-menu__item"
+              >
+                
+                            
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                                
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 4
+                  </span>
+                  
+                            
+                </a>
+                
+                        
+              </li>
+              
+                    
+            </ul>
+            
+                
+          </nav>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+
+        
+      <div
+        class="fd-popover fd-popover--right"
+      >
+        
+            
+        <div
+          class="fd-popover__control"
+        >
+          
+                
+          <button
+            aria-controls="popoverA4"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="Image label"
+            class="fd-button"
+            onclick="onPopoverClick('popoverA4');"
+          >
+            No Arrow & Right Aligned
+          </button>
+          
+            
+        </div>
+        
+            
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+          id="popoverA4"
+        >
+          
+                
+          <nav
+            class="fd-menu"
+            id=""
+          >
+            
+                    
+            <ul
+              class="fd-menu__list fd-menu__list--no-shadow"
+            >
+              
+                        
+              <li
+                class="fd-menu__item"
+              >
+                
+                            
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                                
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 1
+                  </span>
+                  
+                            
+                </a>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-menu__item"
+              >
+                
+                            
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                                
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 2
+                  </span>
+                  
+                            
+                </a>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-menu__item"
+              >
+                
+                            
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                                
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 3
+                  </span>
+                  
+                            
+                </a>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-menu__item"
+              >
+                
+                            
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                                
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 4
+                  </span>
+                  
+                            
+                </a>
+                
+                        
+              </li>
+              
+                    
+            </ul>
+            
+                
+          </nav>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fddocs-container"
+    >
+       
+    
+      <div
+        class="fd-popover"
+      >
+        
+        
+        <div
+          class="fd-popover__control"
+        >
+          
+            
+          <button
+            aria-controls="popoverHSF1"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="Image label"
+            class="fd-button"
+            onclick="onPopoverClick('popoverHSF1');"
+          >
+            Header Only
+          </button>
+          
+        
+        </div>
+        
+        
+        <div
+          aria-hidden="true"
+          class="fd-popover__body"
+          id="popoverHSF1"
+        >
+          
+            
+          <div
+            class="fd-popover__body-header"
+          >
+            
+                
+            <div
+              class="fd-bar fd-bar--header"
+            >
+              
+                    
+              <div
+                class="fd-bar__left"
+              >
+                
+                        
+                <div
+                  class="fd-bar__element"
+                >
+                  
+                            
+                  <button
+                    class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
+                  />
+                  
+                        
+                </div>
+                
+                        
+                <div
+                  class="fd-bar__element"
+                >
+                  
+                            Header
+                        
+                </div>
+                
+                    
+              </div>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+            
+          <nav
+            class="fd-menu"
+            id=""
+          >
+            
+                
+            <ul
+              class="fd-menu__list fd-menu__list--no-shadow"
+            >
+              
+                    
+              <li
+                class="fd-menu__item"
+              >
+                
+                        
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                            
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 1
+                  </span>
+                  
+                        
+                </a>
+                
+                    
+              </li>
+              
+                    
+              <li
+                class="fd-menu__item"
+              >
+                
+                        
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                            
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 2
+                  </span>
+                  
+                        
+                </a>
+                
+                    
+              </li>
+              
+                    
+              <li
+                class="fd-menu__item"
+              >
+                
+                        
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                            
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 3
+                  </span>
+                  
+                        
+                </a>
+                
+                    
+              </li>
+              
+                    
+              <li
+                class="fd-menu__item"
+              >
+                
+                        
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                            
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 4
+                  </span>
+                  
+                        
+                </a>
+                
+                    
+              </li>
+              
+                
+            </ul>
+            
+            
+          </nav>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    
+      <div
+        class="fd-popover fd-popover--right"
+      >
+        
+        
+        <div
+          class="fd-popover__control"
+        >
+          
+            
+          <button
+            aria-controls="popoverHSF2"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="Image label"
+            class="fd-button"
+            onclick="onPopoverClick('popoverHSF2');"
+          >
+            Footer Only
+          </button>
+          
+        
+        </div>
+        
+        
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--right"
+          id="popoverHSF2"
+        >
+          
+            
+          <div
+            style="margin: 20px;"
+          >
+            
+                
+            <span
+              aria-label="Nature"
+              class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
+              role="presentation"
+              style="background-image: url('https://placeimg.com/400/400/nature');"
+            />
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-popover__body-footer"
+          >
+            
+                
+            <div
+              class="fd-bar fd-bar--footer"
+            >
+              
+                    
+              <div
+                class="fd-bar__right"
+              >
+                
+                        
+                <div
+                  class="fd-bar__element"
+                >
+                  
+                            
+                  <button
+                    class="fd-button fd-button--compact fd-button--emphasized"
+                  >
+                    Save
+                  </button>
+                  
+                        
+                </div>
+                
+                        
+                <div
+                  class="fd-bar__element"
+                >
+                  
+                            
+                  <button
+                    class="fd-button fd-button--compact fd-button--transparent"
+                  >
+                    Cancel
+                  </button>
+                  
+                        
+                </div>
+                
+                    
+              </div>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    
+      <div
+        class="fd-popover"
+      >
+        
+        
+        <div
+          class="fd-popover__control"
+        >
+          
+            
+          <button
+            aria-controls="popoverHSF3"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="Image label"
+            class="fd-button"
+            onclick="onPopoverClick('popoverHSF3');"
+          >
+            With Header, Subheader and Footer
+          </button>
+          
+        
+        </div>
+        
+        
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow"
+          id="popoverHSF3"
+        >
+          
+            
+          <div
+            class="fd-popover__body-header"
+          >
+            
+                
+            <div
+              class="fd-bar fd-bar--header-with-subheader"
+            >
+              
+                    
+              <div
+                class="fd-bar__left"
+              >
+                
+                        
+                <div
+                  class="fd-bar__element"
+                >
+                  
+                            
+                  <button
+                    class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
+                  />
+                  
+                        
+                </div>
+                
+                        
+                <div
+                  class="fd-bar__element"
+                >
+                  
+                            Header
+                        
+                </div>
+                
+                    
+              </div>
+              
+                
+            </div>
+            
+                
+            <div
+              class="fd-bar fd-bar--subheader"
+            >
+              
+                    
+              <div
+                class="fd-bar__middle"
+              >
+                
+                        
+                <div
+                  class="fd-bar__element"
+                >
+                  
+                            
+                  <div
+                    class="fd-form-item"
+                  >
+                    
+                                
+                    <div
+                      aria-label="Group label"
+                      class="fd-segmented-button"
+                      role="group"
+                    >
+                      
+                                    
+                      <button
+                        aria-pressed="true"
+                        class="fd-button fd-button--compact sap-icon--email"
+                      />
+                      
+                                    
+                      <button
+                        class="fd-button fd-button--compact sap-icon--iphone"
+                      />
+                      
+                                    
+                      <button
+                        class="fd-button fd-button--compact sap-icon--notification-2"
+                      />
+                      
+                                
+                    </div>
+                    
+                            
+                  </div>
+                  
+                        
+                </div>
+                
+                    
+              </div>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+            
+          <div
+            style="margin: 20px 80px;"
+          >
+            
+                
+            <span
+              aria-label="Nature"
+              class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
+              role="presentation"
+              style="background-image: url('https://placeimg.com/400/400/nature');"
+            />
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-popover__body-footer"
+          >
+            
+                
+            <div
+              class="fd-bar fd-bar--footer"
+            >
+              
+                    
+              <div
+                class="fd-bar__right"
+              >
+                
+                        
+                <div
+                  class="fd-bar__element"
+                >
+                  
+                            
+                  <button
+                    class="fd-button fd-button--compact fd-button--emphasized"
+                  >
+                    Save
+                  </button>
+                  
+                        
+                </div>
+                
+                        
+                <div
+                  class="fd-bar__element"
+                >
+                  
+                            
+                  <button
+                    class="fd-button fd-button--compact fd-button--transparent"
+                  >
+                    Cancel
+                  </button>
+                  
+                        
+                </div>
+                
+                    
+              </div>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    
+      <div
+        class="fd-popover"
+      >
+        
+        
+        <div
+          class="fd-popover__control"
+        >
+          
+            
+          <button
+            aria-controls="popoverHSF345"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="Image label"
+            class="fd-button"
+            onclick="onPopoverClick('popoverHSF345');"
+          >
+            All Cosy Mode
+          </button>
+          
+        
+        </div>
+        
+        
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow"
+          id="popoverHSF345"
+        >
+          
+            
+          <div
+            class="fd-popover__body-header"
+          >
+            
+                
+            <div
+              class="fd-bar fd-bar--cosy fd-bar--header-with-subheader"
+            >
+              
+                    
+              <div
+                class="fd-bar__left"
+              >
+                
+                        
+                <div
+                  class="fd-bar__element"
+                >
+                  
+                            
+                  <button
+                    class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
+                  />
+                  
+                        
+                </div>
+                
+                        
+                <div
+                  class="fd-bar__element"
+                >
+                  
+                            Header
+                        
+                </div>
+                
+                    
+              </div>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-bar fd-bar--cosy fd-bar--subheader"
+          >
+            
+                    
+            <div
+              class="fd-bar__middle"
+            >
+              
+                        
+              <div
+                class="fd-bar__element"
+              >
+                
+                            
+                <div
+                  class="fd-form-item"
+                >
+                  
+                                
+                  <div
+                    aria-label="Group label"
+                    class="fd-segmented-button"
+                    role="group"
+                  >
+                    
+                                    
+                    <button
+                      aria-pressed="true"
+                      class="fd-button fd-button--compact sap-icon--email"
+                    />
+                    
+                                    
+                    <button
+                      class="fd-button fd-button--compact sap-icon--iphone"
+                    />
+                    
+                                    
+                    <button
+                      class="fd-button fd-button--compact sap-icon--notification-2"
+                    />
+                    
+                                
+                  </div>
+                  
+                            
+                </div>
+                
+                        
+              </div>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+          <div
+            style="margin: 20px 80px;"
+          >
+            
+                
+            <span
+              aria-label="Nature"
+              class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
+              role="presentation"
+              style="background-image: url('https://placeimg.com/400/400/nature');"
+            />
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-popover__body-footer"
+          >
+            
+                
+            <div
+              class="fd-bar fd-bar--cosy fd-bar--footer"
+            >
+              
+                    
+              <div
+                class="fd-bar__right"
+              >
+                
+                        
+                <div
+                  class="fd-bar__element"
+                >
+                  
+                            
+                  <button
+                    class="fd-button fd-button--compact fd-button--emphasized"
+                  >
+                    Save
+                  </button>
+                  
+                        
+                </div>
+                
+                        
+                <div
+                  class="fd-bar__element"
+                >
+                  
+                            
+                  <button
+                    class="fd-button fd-button--compact fd-button--transparent"
+                  >
+                    Cancel
+                  </button>
+                  
+                        
+                </div>
+                
+                    
+              </div>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fddocs-container"
+    >
+      
+    
+      <div
+        class="fd-popover fd-popover--right"
+      >
+        
+        
+        <div
+          class="fd-popover__control"
+          style="width: 48px; height: 48px;"
+        >
+          
+            
+          <span
+            aria-controls="popoverB2"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="Image label"
+            class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail aria-label="
+            image=""
+            label"=""
+            onclick="onPopoverClick('popoverB2');"
+            style="background-image: url('https://placeimg.com/400/400/nature');"
+          />
+          
+        
+        </div>
+        
+        
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--left"
+          id="popoverB2"
+        >
+          
+            
+          <nav
+            class="fd-menu"
+            id=""
+          >
+            
+                
+            <ul
+              class="fd-menu__list fd-menu__list--no-shadow"
+            >
+              
+                    
+              <li
+                class="fd-menu__item"
+              >
+                
+                        
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                            
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 1
+                  </span>
+                  
+                        
+                </a>
+                
+                    
+              </li>
+              
+                    
+              <li
+                class="fd-menu__item"
+              >
+                
+                        
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                            
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 2
+                  </span>
+                  
+                        
+                </a>
+                
+                    
+              </li>
+              
+                    
+              <li
+                class="fd-menu__item"
+              >
+                
+                        
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                            
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 3
+                  </span>
+                  
+                        
+                </a>
+                
+                    
+              </li>
+              
+                    
+              <li
+                class="fd-menu__item"
+              >
+                
+                        
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                            
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 4
+                  </span>
+                  
+                        
+                </a>
+                
+                    
+              </li>
+              
+                
+            </ul>
+            
+            
+          </nav>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    
+      <div
+        class="fd-popover fd-popover--right"
+      >
+        
+        
+        <div
+          class="fd-popover__control"
+        >
+          
+            
+          <span
+            aria-controls="popoverB4"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="Image label"
+            class="sap-icon--cart sap-icon--xl"
+            onclick="onPopoverClick('popoverB4');"
+          />
+          
+        
+        </div>
+        
+        
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+          id="popoverB4"
+        >
+          
+            
+          <nav
+            class="fd-menu"
+            id=""
+          >
+            
+                
+            <ul
+              class="fd-menu__list fd-menu__list--no-shadow"
+            >
+              
+                    
+              <li
+                class="fd-menu__item"
+              >
+                
+                        
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                            
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 1
+                  </span>
+                  
+                        
+                </a>
+                
+                    
+              </li>
+              
+                    
+              <li
+                class="fd-menu__item"
+              >
+                
+                        
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                            
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 2
+                  </span>
+                  
+                        
+                </a>
+                
+                    
+              </li>
+              
+                    
+              <li
+                class="fd-menu__item"
+              >
+                
+                        
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                            
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 3
+                  </span>
+                  
+                        
+                </a>
+                
+                    
+              </li>
+              
+                    
+              <li
+                class="fd-menu__item"
+              >
+                
+                        
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                            
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 4
+                  </span>
+                  
+                        
+                </a>
+                
+                    
+              </li>
+              
+                
+            </ul>
+            
+            
+          </nav>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-popover"
+    >
+      
+    
+      <div
+        class="fd-popover__control"
+      >
+        
+        
+        <button
+          aria-controls="popoverF1"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-label="Image label"
+          class="fd-button"
+          onclick="onPopoverClick('popoverF1');"
+        >
+          Popover with overflow
+        </button>
+        
+    
+      </div>
+      
+      
+      <div
+        aria-hidden="true"
+        class="fd-popover__body"
+        id="popoverF1"
+      >
+        
+      
+        <div
+          class="fd-popover__wrapper"
+          style="max-height: 250px;"
+        >
+          
+          
+          <nav
+            class="fd-menu"
+            id=""
+          >
+            
+              
+            <ul
+              class="fd-menu__list fd-menu__list--no-shadow"
+            >
+              
+                  
+              <li
+                class="fd-menu__item"
+              >
+                
+                      
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                          
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 1
+                  </span>
+                  
+                      
+                </a>
+                
+                  
+              </li>
+              
+                  
+              <li
+                class="fd-menu__item"
+              >
+                
+                      
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                          
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 2
+                  </span>
+                  
+                      
+                </a>
+                
+                  
+              </li>
+              
+                  
+              <li
+                class="fd-menu__item"
+              >
+                
+                      
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                          
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 3
+                  </span>
+                  
+                      
+                </a>
+                
+                  
+              </li>
+              
+                  
+              <li
+                class="fd-menu__item"
+              >
+                
+                      
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                          
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 4
+                  </span>
+                  
+                      
+                </a>
+                
+                  
+              </li>
+              
+                                  
+              <li
+                class="fd-menu__item"
+              >
+                
+                      
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                          
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 5
+                  </span>
+                  
+                      
+                </a>
+                
+                  
+              </li>
+              
+                  
+              <li
+                class="fd-menu__item"
+              >
+                
+                      
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                          
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 6
+                  </span>
+                  
+                      
+                </a>
+                
+                  
+              </li>
+              
+                  
+              <li
+                class="fd-menu__item"
+              >
+                
+                      
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                          
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 7
+                  </span>
+                  
+                      
+                </a>
+                
+                  
+              </li>
+              
+                  
+              <li
+                class="fd-menu__item"
+              >
+                
+                      
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                >
+                  
+                          
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Option 8
+                  </span>
+                  
+                      
+                </a>
+                
+                  
+              </li>
+              
+              
+            </ul>
+            
+          
+          </nav>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+</div>
+`;
+
 exports[`Storyshots Visual Select 1`] = `
 <div>
   <div>
@@ -2483,7 +5139,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onSelectClick('h0C6A325');"
+            onclick="onPopoverClick('h0C6A325');"
             role="button"
             tabindex="0"
           >
@@ -2620,7 +5276,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onSelectClick('h0C6A326');"
+            onclick="onPopoverClick('h0C6A326');"
             role="button"
             tabindex="0"
           >
@@ -2761,7 +5417,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onSelectClick('h0C62325');"
+            onclick="onPopoverClick('h0C62325');"
             role="button"
             tabindex="0"
           >
@@ -2923,7 +5579,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onSelectClick('h07jj326');"
+            onclick="onPopoverClick('h07jj326');"
             role="button"
             tabindex="0"
           >
@@ -3089,7 +5745,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onSelectClick('h090G325');"
+            onclick="onPopoverClick('h090G325');"
             role="button"
             tabindex="0"
           >
@@ -3275,7 +5931,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onSelectClick('h09GDGG325');"
+            onclick="onPopoverClick('h09GDGG325');"
             role="button"
             tabindex="0"
           >
@@ -3499,7 +6155,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onSelectClick('h0GFF2325');"
+            onclick="onPopoverClick('h0GFF2325');"
             role="button"
             tabindex="0"
           >
@@ -3665,7 +6321,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onSelectClick('h0GZH2325');"
+            onclick="onPopoverClick('h0GZH2325');"
             role="button"
             tabindex="0"
           >
@@ -3833,7 +6489,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onSelectClick('h0GTKE325');"
+            onclick="onPopoverClick('h0GTKE325');"
             role="button"
             tabindex="0"
           >
@@ -4098,7 +6754,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control is-success"
-            onclick="onSelectClick('h07jjhYH');"
+            onclick="onPopoverClick('h07jjhYH');"
             role="button"
             tabindex="0"
           >
@@ -4301,7 +6957,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control is-error"
-            onclick="onSelectClick('h07j9978H');"
+            onclick="onPopoverClick('h07j9978H');"
             role="button"
             tabindex="0"
           >
@@ -4504,7 +7160,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control is-warning"
-            onclick="onSelectClick('h07j998hhH');"
+            onclick="onPopoverClick('h07j998hhH');"
             role="button"
             tabindex="0"
           >
@@ -4708,7 +7364,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control is-information"
-            onclick="onSelectClick('hkhh998hhH');"
+            onclick="onPopoverClick('hkhh998hhH');"
             role="button"
             tabindex="0"
           >
