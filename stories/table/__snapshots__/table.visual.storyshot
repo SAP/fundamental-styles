@@ -4873,235 +4873,131 @@ exports[`Storyshots Visual Select 1`] = `
     
 
     <div
-      class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active"
-      id="select-dialog-example"
+      class="fd-popover"
     >
       
-    
+  
       <div
-        class="fd-dialog__content"
+        class="fd-popover__control"
       >
         
-        
-        <header
-          class="fd-dialog__header fd-bar fd-bar--header-with-subheader"
-        >
-          
-            
-          <div
-            class="fd-bar__left"
-          >
-            
-                
-            <div
-              class="fd-bar__element"
-            >
-              
-                    
-              <h3
-                class="fd-dialog__title"
-              >
-                
-                        Select Ingredient
-                    
-              </h3>
-              
-                
-            </div>
-            
-            
-          </div>
-          
-            
-          <div
-            class="fd-bar__right"
-          >
-            
-                
-            <div
-              class="fd-bar__element"
-            >
-              
-                    
-              <button
-                aria-label="close"
-                class="fd-button fd-button--transparent sap-icon--decline"
-                tabindex="-1"
-              />
-              
-                
-            </div>
-            
-            
-          </div>
-          
-        
-        </header>
-        
-        
+     
         <div
-          class="fd-dialog__body fd-dialog__body--no-vertical-padding"
+          class="fd-select"
         >
           
-            
+         
           <div
-            aria-live="assertive"
-            class="fd-list__message fd-list__message--information"
-            role="alert"
+            aria-controls="h0C6A3245234"
+            aria-expanded="true"
+            aria-haspopup="true"
+            class="fd-select__control"
+            role="button"
+            tabindex="0"
           >
-            Choose one item
+            
+             Select
+             
+            <span
+              class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"
+            />
+            
+         
           </div>
           
-            
-          <ul
-            class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact"
-            role="listbox"
-          >
-            
-                
-            <li
-              aria-selected="true"
-              class="fd-list__item is-selected"
-              role="option"
-              tabindex="0"
-            >
-              
-                   
-              <span
-                class="fd-list__title"
-              >
-                Apple
-              </span>
-              
-               
-            </li>
-            
-               
-            <li
-              class="fd-list__item"
-              role="option"
-              tabindex="0"
-            >
-              
-                   
-              <span
-                class="fd-list__title"
-              >
-                Orange
-              </span>
-              
-               
-            </li>
-            
-               
-            <li
-              class="fd-list__item"
-              role="option"
-              tabindex="0"
-            >
-              
-                   
-              <span
-                class="fd-list__title"
-              >
-                Banana
-              </span>
-              
-               
-            </li>
-            
-                
-            <li
-              class="fd-list__item"
-              role="option"
-              tabindex="0"
-            >
-              
-                   
-              <span
-                class="fd-list__title"
-              >
-                Kiwi
-              </span>
-              
-                
-            </li>
-            
-                
-            <li
-              class="fd-list__item"
-              role="option"
-              tabindex="0"
-            >
-              
-                    
-              <span
-                class="fd-list__title"
-              >
-                Tomato
-              </span>
-              
-                
-            </li>
-            
-                
-            <li
-              class="fd-list__item"
-              role="option"
-              tabindex="0"
-            >
-              
-                    
-              <span
-                class="fd-list__title"
-              >
-                Onion
-              </span>
-              
-                
-            </li>
-            
-                
-            <li
-              class="fd-list__item"
-              role="option"
-              tabindex="0"
-            >
-              
-                    
-              <span
-                class="fd-list__title"
-              >
-                Spinach
-              </span>
-              
-                
-            </li>
-            
-                
-            <li
-              class="fd-list__item"
-              role="option"
-              tabindex="0"
-            >
-              
-                    
-              <span
-                class="fd-list__title"
-              >
-                Potato
-              </span>
-              
-                
-            </li>
-            
-            
-          </ul>
-          
-        
+      
         </div>
         
-    
+  
+      </div>
+      
+  
+      <div
+        aria-hidden="false"
+        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+        id="h0C6A325"
+      >
+        
+     
+        <ul
+          aria-labelledby="h0C6A3245234"
+          class="fd-list fd-list--dropdown"
+          role="listbox"
+        >
+          
+        
+          <li
+            aria-selected="true"
+            class="fd-list__item is-selected"
+            role="option"
+            tabindex="0"
+          >
+            
+           
+            <span
+              class="fd-list__title"
+            >
+              List item 1
+            </span>
+            
+        
+          </li>
+          
+        
+          <li
+            class="fd-list__item"
+            role="option"
+            tabindex="-1"
+          >
+            
+           
+            <span
+              class="fd-list__title"
+            >
+              List item 2
+            </span>
+            
+       
+          </li>
+          
+        
+          <li
+            class="fd-list__item"
+            role="option"
+            tabindex="-1"
+          >
+            
+           
+            <span
+              class="fd-list__title"
+            >
+              List item 3
+            </span>
+            
+        
+          </li>
+          
+        
+          <li
+            class="fd-list__item"
+            role="option"
+            tabindex="-1"
+          >
+            
+           
+            <span
+              class="fd-list__title"
+            >
+              List item 4
+            </span>
+            
+        
+          </li>
+          
+     
+        </ul>
+        
+  
       </div>
       
 
