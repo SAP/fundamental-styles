@@ -10,7 +10,7 @@ import '../../dist/bar.css';
 export default {
     title: 'Components/Select',
     parameters: {
-        description: `The select component is commonly used to enable users to select an item from a predefined list.
+        description: `The **Select** component is commonly used to enable users to select an item from a predefined list.
       It should be used when there are less than 12 items to choose from. 
       For lists that require more than 12 options, the Combobox Input should be used.`
     }
@@ -107,6 +107,8 @@ compact.parameters = {
     docs: { iframeHeight: 300 }
 };
 
+/** The **Select** component can be customized by adding additional information in additional columns. */
+
 export const twoColumn = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
@@ -170,16 +172,6 @@ export const twoColumn = () => `
 </div>
 `;
 
-twoColumn.parameters = {
-    docs: {
-        iframeHeight: 300,
-        storyDescription: `
-The <code>Select</code> component can be customized by adding additional information
-in additional columns.
-        `
-    }
-};
-
 export const twoColumnsAndIcons = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
@@ -220,6 +212,8 @@ export const twoColumnsAndIcons = () => `
 twoColumnsAndIcons.parameters = {
     docs: { iframeHeight: 300 }
 };
+
+/** In cases where the list items need to be categorized into groups, it is possible to add headers for each category. */
 
 export const itemGrouping = () => `
 <div class="fd-popover">
@@ -268,15 +262,9 @@ export const itemGrouping = () => `
 </div>
 `;
 
-itemGrouping.parameters = {
-    docs: {
-        iframeHeight: 470,
-        storyDescription: `
-In cases where the list items need to be categorized into groups,
-it is possible to add headers for each category.
-      `
-    }
-};
+
+/** In the **Select** component, the text is wrapped by default. In order to prevent the text from wrapping,
+* the `--no-wrap` modifier can be added to the `fd-list__title`, or `fd-list__secondary` elements. */
 
 export const textWrapping = () => `
 <div class="fd-popover">
@@ -310,16 +298,6 @@ export const textWrapping = () => `
   </div>
 </div>
 `;
-
-textWrapping.parameters = {
-    docs: {
-        iframeHeight: 300,
-        storyDescription: `
-In the **Select** component, the text is wrapped by default. In order to prevent the text from wrapping, 
-the <code>--no-wrap</code> modifier can be added to the <code>fd-list__title</code>, or <code>fd-list__secondary</code> elements.
-    `
-    }
-};
 
 export const noWrapping = () => `
 <div class="fd-popover">
@@ -360,6 +338,9 @@ noWrapping.parameters = {
     docs: { iframeHeight: 300 }
 };
 
+/** The default size for the popover body is often longer than the text length. The length can be adjusted to match the text
+ * length by adding the `fd-popover__body--dropdown-fill` class to `fd-popover__body`. */
+
 export const matchSelectPopoverBodySize = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
@@ -396,14 +377,12 @@ export const matchSelectPopoverBodySize = () => `
 
 matchSelectPopoverBodySize.parameters = {
     docs: {
-        iframeHeight: 300,
-        storyDescription: `
-The default size for the popover body is often longer than the text length. 
-The length can be adjusted to match the text length by adding the
-<code>fd-popover__body--dropdown-fill</code> class to <code>fd-popover__body</code>.
-    `
+        iframeHeight: 300
     }
 };
+
+/** To disable a **Select** component, the `aria-disabled="true"` attribute needs to be added to the
+* `fd-popover__control` and the `fd-select__control` elements. */
 
 export const disabled = () => `
 <div class="fd-popover">
@@ -418,14 +397,7 @@ export const disabled = () => `
 </div>
 `;
 
-disabled.parameters = {
-    docs: {
-        storyDescription: `
-To disable a **Select** component, the <code>aria-disabled="true"</code> attribute needs to be added to the
-<code>fd-popover__control</code> and the <code>fd-select__control</code> elements.
-    `
-    }
-};
+/** To make the **Select** component read-only, the `.is-readonly` class needs to be added to the `fd-select__control` element.  */
 
 export const readonly = () => `
 <div class="fd-popover">
@@ -437,14 +409,12 @@ export const readonly = () => `
 </div>
 `;
 
-disabled.parameters = {
-    docs: {
-        storyDescription: `
-To make the **Select** component read-only, the <code>.is-readonly</code>
-class needs to be added to the <code>fd-select__control</code> element. 
-    `
-    }
-};
+/**
+ * The semantic mode can be used to modify the  select component by adding one of the
+ * `is-error` | `is-success` | `is-warning` | `is-information` classes into the `fd-select__control` element.
+ * To add text in the body of the component, simply include your text in the `fd-list__message`
+ * above the `ul` element.
+ */
 
 export const semanticStates = () => `
 <label class="fd-form-label" id="a4546C40">
@@ -614,18 +584,8 @@ export const semanticStates = () => `
 <span class="fd-form-message fd-form-message--static fd-form-message--information">Information message</span>
 `;
 
-semanticStates.parameters = {
-    docs: {
-        iframeHeight: 500,
-        storyDescription: `
-The semantic mode can be used to modify the  select component by adding one of the 
-<code>is-error</code> | <code>is-success</code> | <code>is-warning</code> | <code>is-information</code>
-classes into the <code>fd-select__control</code> element.
-To add text in the body of the component, simply include your text in the <code>fd-list__message</code>
-above the <code>ul</code> element. 
-    `
-    }
-};
+/** For mobile devices, or tablets, select component should be displayed in fullscreen mode. It can be achieved by wrapping
+select component in **Dialog** and **Bar** components.  */
 
 export const mobileMode = () => `
 <div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
@@ -679,10 +639,62 @@ export const mobileMode = () => `
 
 mobileMode.parameters = {
     docs: {
-        iframeHeight: 400,
-        storyDescription: `
-For mobile devices, or tablets, select component should be displayed in fullscreen mode. It can be achieved by wrapping
-select component in **Dialog** and **Bar** components. 
-    `
+        iframeHeight: 400
+    }
+};
+
+export const expanded = () => `
+<div class="fd-popover">
+  <div class="fd-popover__control">
+     <div class="fd-select">
+         <div
+            aria-controls="h0C6A3245234"
+            aria-expanded="true"
+            aria-haspopup="true"
+            class="fd-select__control"
+            role="button"
+            tabindex="0">
+             Select
+             <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+         </div>
+      </div>
+  </div>
+  <div
+    aria-hidden="false"
+    class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+    id="h0C6A325">
+     <ul
+        aria-labelledby="h0C6A3245234"
+        class="fd-list fd-list--dropdown"
+        role="listbox">
+        <li aria-selected="true"
+            class="fd-list__item is-selected"
+            role="option"
+            tabindex="0">
+           <span class="fd-list__title">List item 1</span>
+        </li>
+        <li class="fd-list__item"
+            role="option"
+            tabindex="-1">
+           <span class="fd-list__title">List item 2</span>
+       </li>
+        <li class="fd-list__item"
+            role="option"
+            tabindex="-1">
+           <span class="fd-list__title">List item 3</span>
+        </li>
+        <li class="fd-list__item"
+            role="option"
+            tabindex="-1">
+           <span class="fd-list__title">List item 4</span>
+        </li>
+     </ul>
+  </div>
+</div>
+`;
+
+expanded.parameters = {
+    docs: {
+        disable: true
     }
 };
