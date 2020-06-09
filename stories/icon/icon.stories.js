@@ -4,6 +4,7 @@ import '../../dist/icon.css';
 import '../../dist/menu.css';
 import '../../dist/popover.css';
 import '../../dist/segmented-button.css';
+import data from './data.json';
 
 export default {
     title: 'Components/Icon',
@@ -13,10 +14,6 @@ export default {
         See [Getting Started](../getting-started.html#project-configuration) for instructions for making the SAP icon font available on your page.`
     }
 };
-
-function getData() {
-    return require('../../test/templates/icon/data.json');
-}
 
 export const sizes = () => `
     <span class="sap-icon--cart sap-icon--s"></span>
@@ -32,13 +29,21 @@ export const animations = () => `
 `;
 
 export const availableIcons = () => {
-    const markup = '';
-    const icons = getData().properties.glyphs;
-    icons.forEach(icon => markup.concat(markup, `
-        <div class="demo-icon-wrapper">
-            <span class="sap-icon--${icon} sap-icon--xl"></span>
-            <h5>.sap-icon--${icon}</h5>
-        </div>
-    `));
-    return markup;
+    const div = document.createElement('div');
+    div.className = 'fddocs-container';
+    div.innerHTML = data.icons.map((icon) => {
+        return (
+            '<div class="fddocs-container--icon">' +
+                `<span class="sap-icon--${icon} sap-icon--xl"></span>` +
+                `<div>.sap-icon--${icon}</div>` +
+            '</div>'
+        );
+    }).join('');
+    return div;
+};
+
+availableIcons.parameters = {
+    docs: {
+        iframeHeight: 500
+    }
 };
