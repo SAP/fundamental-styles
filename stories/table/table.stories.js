@@ -10,7 +10,10 @@ import '../../dist/toolbar.css';
 export default {
     title: 'Components/Table',
     parameters: {
-        description: 'A table is a set of tabular data. Line items can support data, images and actions.'
+        description: 'A table is a set of tabular data. Line items can support data, images and actions.',
+        docs: {
+            iframeHeight: 500
+        }
     }
 };
 
@@ -51,6 +54,13 @@ export const primary = () => `
 </table>
 `;
 
+/**
+ * * `--no-vertical-borders` modifier can be applied to render a table without vertical borders.
+* `--no-horizontal-borders` modifier can be applied to render a table without horizontal borders.
+
+Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
+ */
+
 export const withoutBorders = () => `
 <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders">
     <thead class="fd-table__header">
@@ -83,16 +93,6 @@ export const withoutBorders = () => `
     </tbody>
 </table>
 `;
-
-withoutBorders.parameters = {
-    docs: {
-        storyDescription: `
-* <code>--no-vertical-borders</code> modifier can be applied to render a table without vertical borders.</li>
-* <code>--no-horizontal-borders</code> modifier can be applied to render a table without horizontal borders.</li>
-
-Both can be added to  <code>fd-table</code>, <code>fd-table__header</code>, or <code>fd-table__body</code>.          `
-    }
-};
 
 export const withoutBordersOnBody = () => `
 <table class="fd-table">
@@ -127,6 +127,8 @@ export const withoutBordersOnBody = () => `
 </table>
 `;
 
+/** Footer can be added by using `fd-table__footer` class with `tfoot` element.
+It has to contain same size of columns as tbody and thead. */
 
 export const withFooter = () => `
 <table class="fd-table">
@@ -167,15 +169,6 @@ export const withFooter = () => `
         </tr>
     </tfoot>
 </table>`;
-
-withFooter.parameters = {
-    docs: {
-        storyDescription: `
-Footer can be added by using <code>fd-table__footer</code> class with <code>tfoot</code> element.
-It has to contain same size of columns as tbody and thead
-`
-    }
-};
 
 export const withFooterCompact = () => `
 <table class="fd-table fd-table--compact">
@@ -259,6 +252,12 @@ export const withFooterCondensed = () => `
 </table>
 `;
 
+/**
+ * Interactive states of columns and row can be set by adding
+
+* For active state handler `--activable` modifier
+* For hover state handler `--hoverable` modifier
+ */
 
 export const interactiveRowsAndColumns = () => `
 <table class="fd-table">
@@ -306,17 +305,11 @@ export const interactiveRowsAndColumns = () => `
 
 interactiveRowsAndColumns.storyName = 'Interactive Table With Hoverable and Activable Cells and Rows';
 
-interactiveRowsAndColumns.parameters = {
-    docs: {
-        storyDescription: `
-Interactive states of columns and row can be set by adding
-
-* For active state handler <code>--activable</code> modifier
-* For hover state handler <code>--hoverable</code> modifier
-      `
-    }
-};
-
+/**
+ * The checkbox input can be used at the beginning of each row to allow for bulk actions.
+It is recommended to add the parameter `aria-selected="true"` to the row that is selected.
+Also for cells that include a checkbox should contain the `fd-table__cell--checkbox` class.
+ */
 
 export const withCheckbox = () => `
 <table class="fd-table">
@@ -366,16 +359,6 @@ export const withCheckbox = () => `
     </tbody>
 </table>
 `;
-
-withCheckbox.parameters = {
-    docs: {
-        storyDescription: `
-The checkbox input can be used at the beginning of each row to allow for bulk actions.
-It is recommended to add the parameter <code>aria-selected="true"</code> to the row that is selected.
-Also for cells that include a checkbox should contain the <code>fd-table__cell--checkbox</code> class.
-      `
-    }
-};
 
 export const withCheckboxCompact = () => `
 <table class="fd-table fd-table--compact">
@@ -532,6 +515,8 @@ export const withPagination = () => `
     </nav>
 </div>
 `;
+
+/** Advanced Toolbar can be used to customize table. Certain buttons trigger dialogs, where user can set some data. */
 
 export const withAdvancedToolbar = () => `
 <div class="fd-dialog" id="filter-dialog-example">
@@ -701,13 +686,11 @@ export const withAdvancedToolbar = () => `
 </table>
 `;
 
-withAdvancedToolbar.parameters = {
-    docs: {
-        storyDescription: `
-Advanced Toolbar can be used to customize table. Certain buttons trigger dialogs, where user can set some data.
-      `
-    }
-};
+/**
+ * Responsive table is not that different than basic table, there should be used some modifiers, to remove borders.
+For Pop-in example markup is changed, one row is transformed to 2 rows with `fd-table__row--main` and
+`fd-table__row--secondary`modifiers. Also some cells should be merged into paragraphs.
+ */
 
 export const responsiveTable = () => `
 <table class="fd-table fd-table--no-horizontal-borders">
@@ -779,16 +762,6 @@ export const responsiveTable = () => `
     </tbody>
 </table>`;
 
-responsiveTable.parameters = {
-    docs: {
-        storyDescription: `
-Responsive table is not that different than basic table, there should be used some modifiers, to remove borders.
-For Pop-in example markup is changed, one row is transformed to 2 rows with <code>fd-table__row--main</code> and 
-<code>fd-table__row--secondary</code>modifiers. Also some cells should be merged into paragraphs.
-      `
-    }
-};
-
 export const responsiveTablePopInMode = () => `
     <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
         <tbody class="fd-table__body">
@@ -847,6 +820,13 @@ export const responsiveTablePopInMode = () => `
         </tbody>
     </table>
 `;
+
+/**
+ * To show that an item needs attention, you can show a highlight indicator next to the item.
+This can be achieved by passing the `fd-table__cell--status-indicator` class to each row.
+Other indicators such as semantic states and modes can be added using the `--valid`,
+`--information`, `--error`, `--warning` modifiers.
+ */
 
 export const semanticRows = () => `
 <table class="fd-table">
@@ -967,16 +947,7 @@ export const semanticRows = () => `
 </table>
 `;
 
-semanticRows.parameters = {
-    docs: {
-        storyDescription: `
-To show that an item needs attention, you can show a highlight indicator next to the item.
-This can be achieved by passing the <code>fd-table__cell--status-indicator</code> class to each row.
-Other indicators such as semantic states and modes can be added using the <code>--valid</code>,
-<code>--information</code>, <code>--error</code>, <code>--warning</code> modifiers.     
-      `
-    }
-};
+/** To merge cells, the `--no-horizontal-border` or `--no-vertical-border` modifier should be added. */
 
 export const mergedCells = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
@@ -1027,12 +998,10 @@ export const mergedCells = () => `
 </table>
 `;
 
-mergedCells.parameters = {
-    docs: {
-        storyDescription: `
-To merge cells, the <code>--no-horizontal-border</code> or <code>--no-vertical-border</code> modifier should be added.        `
-    }
-};
+/**
+ * Some customization actions can be added to headers, the options will be displayed in popover. Those popover should be
+added with `fd-table__popover` class.
+ */
 
 export const withMenuInHeader = () => `
 <table class="fd-table" >
@@ -1073,15 +1042,12 @@ export const withMenuInHeader = () => `
 </table>
 `;
 
-withMenuInHeader.parameters = {
-    docs: {
-        storyDescription: `
-Some customization actions can be added to headers, the options will be displayed in popover. Those popover should be 
-added with <code>fd-table__popover</code> class.
-        `
-    }
-};
-
+/**
+ * To create fixed column, these steps need to be reproduced
+* Wrap the table with element with class `fd-table--fixed`
+* Add `fd-table__cell--fixed` class to cell elements, it should be propagated to whole row
+* Hard code the width of columns, otherwise the cells will be squashed.
+ */
 
 export const fixColumnHeader = () => `
 <style>
@@ -1162,17 +1128,7 @@ export const fixColumnHeader = () => `
 </div>
 `;
 
-fixColumnHeader.parameters = {
-    docs: {
-        storyDescription: `
-To create fixed column, these steps need to be reproduced
-* Wrap the table with element with class <code>fd-table--fixed</code>
-* Add <code>fd-table__cell--fixed</code> class to cell elements, it should be propagated to whole row
-* Hard code the width of columns, otherwise the cells will be squashed 
-        `
-    }
-};
-
+/** Navigation can be indicated on a row in the final column using the `.fd-table__cell--navigated` class. */
 
 export const navigationIndicationStates = () => `
 <table class="fd-table">
@@ -1216,10 +1172,3 @@ export const navigationIndicationStates = () => `
     </tbody>
 </table>
 `;
-
-
-navigationIndicationStates.parameters = {
-    docs: {
-        storyDescription: 'Navigation can be indicated on a row in the final column using the `.fd-table__cell--navigated` class.'
-    }
-};

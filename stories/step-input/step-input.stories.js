@@ -25,6 +25,8 @@ Do not use the step input if:
     }
 };
 
+/** On smartphones and tablets, the step input is shown in cozy mode (default). */
+
 export const primary = () => `
 <div class="fd-step-input">
         <button aria-label="Step down" class="
@@ -53,11 +55,11 @@ export const primary = () => `
 
 primary.storyName = 'Default';
 
-primary.parameters = {
-    docs: {
-        storyDescription: 'On smartphones and tablets, the step input is shown in cozy mode (default).'
-    }
-};
+/**
+ * The Step Input should be used in compact mode when using a desktop of devices with large screens.
+It can be achieved by adding the `--compact` modifier to the main element as well as the
+button and input elements.
+ */
 
 export const compact = () => `
 <div class="fd-form-item fd-form-item--horizontal">
@@ -91,15 +93,10 @@ export const compact = () => `
 </div>
 `;
 
-compact.parameters = {
-    docs: {
-        storyDescription: `
-The Step Input should be used in compact mode when using a desktop of devices with large screens. 
-It can be achieved by adding the <code>--compact</code> modifier to the main element as well as the
-button and input elements.    
-        `
-    }
-};
+/**
+ * By default there is built-in focus indicator for StepInput component, which is not supported by IE11.
+To make focus work on IE11, it should be added by putting `.is-focus` class to component
+ */
 
 export const focused = () => `
 <div class="fd-step-input is-focus">
@@ -127,15 +124,10 @@ export const focused = () => `
 </div>
 `;
 
-focused.parameters = {
-    docs: {
-        storyDescription: `
-By default there is built-in focus indicator for StepInput component, which is not supported by IE11.
-To make focus work on IE11, it should be added by putting <code>.is-focus</code> class to component  
-        `
-    }
-};
-
+/**
+ * The Step Input component also supports semantic states as does every form.
+The semantic states can be customized by adding the `is-error` | `is-success` | `is-warning` | or `is-information` into the fd-step-input element.
+ */
 
 export const states = () => `
 <h3>Success</h3>
@@ -245,12 +237,10 @@ export const states = () => `
 
 states.parameters = {
     docs: {
-        storyDescription: `
-The Step Input component also supports semantic states as does every form. 
-The semantic states can be customized by adding the <code>is-error</code> | <code>is-success</code> | <code>is-warning</code> | or <code>is-information</code> into the fd-step-input element.
-        `
+        iframeHeight: 300
     }
 };
+
 
 export const disabled = () => `
 <div class="fd-step-input is-disabled">

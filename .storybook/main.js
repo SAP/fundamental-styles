@@ -15,6 +15,10 @@ module.exports = {
     '@storybook/addon-docs',
   ],
   webpackFinal: async (config) => {
+    config.module.rules.push({
+      test: /\.stories\.js?$/,
+      use: [{ loader: 'story-description-loader' }],
+    });
     config.plugins.push({
       // Custom plugin to add scss files to webpack watcher
       apply: (compiler) => {
