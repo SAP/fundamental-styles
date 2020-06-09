@@ -1,26 +1,22 @@
----
-title: Select
-id: select
-keywords: select, dropdown, dropdowns
-sidebar: left-navigation-sidebar
-toc: false
-permalink: components/select.html
-folder: components
-tags: [f3, a11y, theme]
----
+import '../../dist/icon.css';
+import '../../dist/popover.css';
+import '../../dist/list.css';
+import '../../dist/form-label.css';
+import '../../dist/form-message.css';
+import '../../dist/select.css';
+import '../../dist/dialog.css';
+import '../../dist/bar.css';
 
-The select component is commonly used to enable users to select an item from a predefined list.
-It should be used when there are less than 12 items to choose from. 
-For lists that require more than 12 options, the <a href="/patterns/combobox-input.html">Combobox Input</a> should be used.
-{: .docs-intro}
+export default {
+    title: 'Components/Select',
+    parameters: {
+        description: `The **Select** component is commonly used to enable users to select an item from a predefined list.
+      It should be used when there are less than 12 items to choose from. 
+      For lists that require more than 12 options, the Combobox Input should be used.`
+    }
+};
 
-## Sizes
-
-{% capture select-sizes %}
-<label class="fd-form-label" id="f45564A57">
-    Select Cozy Mode
-</label>
-<br>
+export const cozy = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
@@ -29,6 +25,7 @@ For lists that require more than 12 options, the <a href="/patterns/combobox-inp
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
+            onclick="onSelectClick('h0C6A325');"
             role="button"
             tabindex="0">
              Select
@@ -68,17 +65,17 @@ For lists that require more than 12 options, the <a href="/patterns/combobox-inp
      </ul>
   </div>
 </div>
-<br />
-<br />
+`;
 
-<label class="fd-form-label" id="f45564A58">
-    Select Compact Mode
-</label>
-<br>
+cozy.parameters = {
+    docs: { iframeHeight: 300 }
+};
+
+export const compact = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select fd-select--compact">
-        <div class="fd-select__control" role="button" tabindex="0" aria-controls="h0C6A326" aria-expanded="false" aria-haspopup="true">
+        <div onclick="onSelectClick('h0C6A326');" class="fd-select__control" role="button" tabindex="0" aria-controls="h0C6A326" aria-expanded="false" aria-haspopup="true">
             Select
             <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
         </div>
@@ -104,22 +101,19 @@ For lists that require more than 12 options, the <a href="/patterns/combobox-inp
      </ul>
   </div>
 </div>
-{% endcapture %}
+`;
 
-{% include display-component.html component=select-sizes %}
+compact.parameters = {
+    docs: { iframeHeight: 300 }
+};
 
-## Two Columns
-The `Select` component can be customized by adding additional information in additional columns.
+/** The **Select** component can be customized by adding additional information in additional columns. */
 
-{% capture two-col %}
-<label class="fd-form-label" id="f45564A59">
-    Select Cozy Mode With 2 Columns
-</label>
-<br>
+export const twoColumn = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
-         <div class="fd-select__control" role="button" tabindex="0" aria-controls="h0C62325" aria-expanded="false" aria-haspopup="true">
+         <div class="fd-select__control" role="button" tabindex="0" aria-controls="h0C62325" onclick="onSelectClick('h0C62325');" aria-expanded="false" aria-haspopup="true">
              Select Product
              <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
          </div>
@@ -146,18 +140,10 @@ The `Select` component can be customized by adding additional information in add
      </ul>
   </div>
 </div>
-<br />
-<br />
-
-
-<label class="fd-form-label" id="g45564A59">
-    Select Compact Mode With 2 Columns 
-</label>
-<br>
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select fd-select--compact">
-        <div class="fd-select__control" role="button" tabindex="0" aria-controls="h07jj326" aria-expanded="false" aria-haspopup="true">
+        <div class="fd-select__control" role="button" tabindex="0" aria-controls="h07jj326" onclick="onSelectClick('h07jj326');" aria-expanded="false" aria-haspopup="true">
             Select Product
             <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
         </div>
@@ -184,20 +170,13 @@ The `Select` component can be customized by adding additional information in add
      </ul>
   </div>
 </div>
+`;
 
-
-<br />
-<br />
-
-
-<label class="fd-form-label" id="g45564A50">
-    Select Cozy Mode With 2 Columns and Icons
-</label>
-<br>
+export const twoColumnsAndIcons = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
-         <div class="fd-select__control" role="button" tabindex="0" aria-controls="h090G325" aria-expanded="false" aria-haspopup="true">
+         <div class="fd-select__control" role="button" tabindex="0" aria-controls="h090G325" onclick="onSelectClick('h090G325');" aria-expanded="false" aria-haspopup="true">
              Select Product
              <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
          </div>
@@ -228,24 +207,19 @@ The `Select` component can be customized by adding additional information in add
      </ul>
   </div>
 </div>
-{% endcapture %}
+`;
 
-{% include display-component.html component=two-col %}
+twoColumnsAndIcons.parameters = {
+    docs: { iframeHeight: 300 }
+};
 
+/** In cases where the list items need to be categorized into groups, it is possible to add headers for each category. */
 
-
-## Select with Items Grouping
-In cases where the list items need to be categorized into groups, it is possible to add headers for each category.
-
-{% capture select-group %}
-<label class="fd-form-label" id="g45464A50">
-    Select with Items Grouping
-</label>
-<br>
+export const itemGrouping = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
-         <div class="fd-select__control" role="button" tabindex="0" aria-controls="h09GDGG325" aria-expanded="false" aria-haspopup="true">
+         <div class="fd-select__control" role="button" tabindex="0" aria-controls="h09GDGG325" onclick="onSelectClick('h09GDGG325');" aria-expanded="false" aria-haspopup="true">
              Select Ingredient
              <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
          </div>
@@ -286,22 +260,17 @@ In cases where the list items need to be categorized into groups, it is possible
         </ul>
   </div>
 </div>
-{% endcapture %}
-{% include display-component.html component=select-group %}
+`;
 
-## Text Wrapping
-In the `Select` component, the text is wrapped by default. In order to prevent the text from wrapping, 
-the `--no-wrap` modifier can be added to the `fd-list__title`, or `fd-list__secondary` elements.
 
-{% capture select-wrap %}
-<label class="fd-form-label" id="g45464A40">
-    Select with more text
-</label>
-<br>
+/** In the **Select** component, the text is wrapped by default. In order to prevent the text from wrapping,
+* the `--no-wrap` modifier can be added to the `fd-list__title`, or `fd-list__secondary` elements. */
+
+export const textWrapping = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
-         <div class="fd-select__control" role="button" tabindex="0" aria-controls="h0GFF2325" aria-expanded="false" aria-haspopup="true">
+         <div class="fd-select__control" role="button" tabindex="0" aria-controls="h0GFF2325" onclick="onSelectClick('h0GFF2325');" aria-expanded="false" aria-haspopup="true">
              Select
              <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
          </div>
@@ -328,18 +297,13 @@ the `--no-wrap` modifier can be added to the `fd-list__title`, or `fd-list__seco
      </ul>
   </div>
 </div>
-<br />
-<br />
+`;
 
-
-<label class="fd-form-label" id="g45464B40">
-    Select with more text and removed wrapping
-</label>
-<br>
+export const noWrapping = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select fd-select--compact">
-        <div class="fd-select__control" role="button" tabindex="0" aria-controls="h0GZH2325" aria-expanded="false" aria-haspopup="true">
+        <div class="fd-select__control" role="button" tabindex="0" aria-controls="h0GZH2325" onclick="onSelectClick('h0GZH2325');" aria-expanded="false" aria-haspopup="true">
             Select
             <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
         </div>
@@ -368,23 +332,20 @@ the `--no-wrap` modifier can be added to the `fd-list__title`, or `fd-list__seco
      </ul>
   </div>
 </div>
-{% endcapture %}
+`;
 
-{% include display-component.html component=select-wrap %}
+noWrapping.parameters = {
+    docs: { iframeHeight: 300 }
+};
 
+/** The default size for the popover body is often longer than the text length. The length can be adjusted to match the text
+ * length by adding the `fd-popover__body--dropdown-fill` class to `fd-popover__body`. */
 
-## Match Select Popover Body Size
-The default size for the popover body is often longer than the text length. 
-The length can be adjusted to match the text length by adding the `fd-popover__body--dropdown-fill` class to `fd-popover__body`.
-{% capture select-fill %}
-<label class="fd-form-label" id="g4546C40">
-    Fill Control Element
-</label>
-<br>
+export const matchSelectPopoverBodySize = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
-         <div class="fd-select__control" role="button" tabindex="0" aria-controls="h0GTKE325" aria-expanded="false" aria-haspopup="true">
+         <div class="fd-select__control" role="button" tabindex="0" aria-controls="h0GTKE325" onclick="onSelectClick('h0GTKE325');" aria-expanded="false" aria-haspopup="true">
              Much Longer than Usual
              <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
          </div>
@@ -411,15 +372,19 @@ The length can be adjusted to match the text length by adding the `fd-popover__b
      </ul>
   </div>
 </div>
-{% endcapture %}
-
-{% include display-component.html component=select-fill %}
+`;
 
 
-## Disabled State
-To disable a `Select` component, the `aria-disabled="true"` attribute needs to be added to the `fd-popover__control` and the `fd-select__control` elements.
+matchSelectPopoverBodySize.parameters = {
+    docs: {
+        iframeHeight: 300
+    }
+};
 
-{% capture disabled-select %}
+/** To disable a **Select** component, the `aria-disabled="true"` attribute needs to be added to the
+* `fd-popover__control` and the `fd-select__control` elements. */
+
+export const disabled = () => `
 <div class="fd-popover">
     <div class="fd-popover__control" aria-disabled="true">
         <div class="fd-select">
@@ -430,15 +395,11 @@ To disable a `Select` component, the `aria-disabled="true"` attribute needs to b
         </div>
     </div>
 </div>
-{% endcapture %}
+`;
 
-{% include display-component.html component=disabled-select %}
+/** To make the **Select** component read-only, the `.is-readonly` class needs to be added to the `fd-select__control` element.  */
 
-
-## Readonly State
-To make the `Select` component read-only, the `.is-readonly` class needs to be added to the `fd-select__control` element. 
-
-{% capture readonly-select %}
+export const readonly = () => `
 <div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select">
@@ -446,16 +407,16 @@ To make the `Select` component read-only, the `.is-readonly` class needs to be a
         </div>
     </div>
 </div>
-{% endcapture %}
+`;
 
-{% include display-component.html component=readonly-select %}
+/**
+ * The semantic mode can be used to modify the  select component by adding one of the
+ * `is-error` | `is-success` | `is-warning` | `is-information` classes into the `fd-select__control` element.
+ * To add text in the body of the component, simply include your text in the `fd-list__message`
+ * above the `ul` element.
+ */
 
-## Semantic States
-The semantic mode can be used to modify the  select component by adding one of the 
-`is-error` | `is-success` | `is-warning` | `is-information` classes into the `fd-select__control` element.
-To add text in the body of the component, simply include your text in the `fd-list__message` under the `ul` element. 
-
-{% capture semantic-select %}
+export const semanticStates = () => `
 <label class="fd-form-label" id="a4546C40">
     Success Select Example
 </label>
@@ -463,7 +424,7 @@ To add text in the body of the component, simply include your text in the `fd-li
 <div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select">
-            <div class="fd-select__control is-success" role="button" tabindex="0" aria-controls="h07jjhYH"  aria-expanded="false" aria-haspopup="true">
+            <div class="fd-select__control is-success" role="button" tabindex="0" aria-controls="h07jjhYH" onclick="onSelectClick('h07jjhYH');"  aria-expanded="false" aria-haspopup="true">
                 Success
                 <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
             </div>
@@ -505,7 +466,7 @@ To add text in the body of the component, simply include your text in the `fd-li
 <div class="fd-popover">
    <div class="fd-popover__control">
        <div class="fd-select">
-           <div class="fd-select__control is-error" role="button" tabindex="0" aria-controls="h07j9978H"  aria-expanded="false" aria-haspopup="true">
+           <div class="fd-select__control is-error" role="button" tabindex="0" aria-controls="h07j9978H" onclick="onSelectClick('h07j9978H');" aria-expanded="false" aria-haspopup="true">
                Error
                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
            </div>
@@ -547,7 +508,7 @@ To add text in the body of the component, simply include your text in the `fd-li
 <div class="fd-popover">
    <div class="fd-popover__control">
        <div class="fd-select">
-           <div class="fd-select__control is-warning" role="button" tabindex="0" aria-controls="h07j998hhH"  aria-expanded="false" aria-haspopup="true">
+           <div class="fd-select__control is-warning" role="button" tabindex="0" aria-controls="h07j998hhH" onclick="onSelectClick('h07j998hhH');"  aria-expanded="false" aria-haspopup="true">
                Warning
                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
            </div>
@@ -590,7 +551,7 @@ To add text in the body of the component, simply include your text in the `fd-li
 <div class="fd-popover">
    <div class="fd-popover__control">
        <div class="fd-select">
-           <div class="fd-select__control is-information" role="button" tabindex="0" aria-controls="hkhh998hhH"  aria-expanded="false" aria-haspopup="true">
+           <div class="fd-select__control is-information" role="button" tabindex="0" aria-controls="hkhh998hhH" onclick="onSelectClick('hkhh998hhH');"  aria-expanded="false" aria-haspopup="true">
                Information
                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
            </div>
@@ -621,15 +582,12 @@ To add text in the body of the component, simply include your text in the `fd-li
     </div>
 </div>
 <span class="fd-form-message fd-form-message--static fd-form-message--information">Information message</span>
+`;
 
-{% endcapture %}
+/** For mobile devices, or tablets, select component should be displayed in fullscreen mode. It can be achieved by wrapping
+select component in **Dialog** and **Bar** components.  */
 
-{% include display-component.html component=semantic-select %}
-
-## Select Mobile Mode
-For mobile devices, or tablets, select component should be displayed in fullscreen mode. It can be achieved by wrapping
-select component in `dialog` and `bar` components. 
-{% capture disabled-select %}
+export const mobileMode = () => `
 <div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
     <div class="fd-dialog__content">
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
@@ -677,6 +635,66 @@ select component in `dialog` and `bar` components.
         </div>
     </div>
 </div>
-{% endcapture %}
+`;
 
-{% include display-component.html component=disabled-select %}
+mobileMode.parameters = {
+    docs: {
+        iframeHeight: 400
+    }
+};
+
+export const expanded = () => `
+<div class="fd-popover">
+  <div class="fd-popover__control">
+     <div class="fd-select">
+         <div
+            aria-controls="h0C6A3245234"
+            aria-expanded="true"
+            aria-haspopup="true"
+            class="fd-select__control"
+            role="button"
+            tabindex="0">
+             Select
+             <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+         </div>
+      </div>
+  </div>
+  <div
+    aria-hidden="false"
+    class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+    id="h0C6A325">
+     <ul
+        aria-labelledby="h0C6A3245234"
+        class="fd-list fd-list--dropdown"
+        role="listbox">
+        <li aria-selected="true"
+            class="fd-list__item is-selected"
+            role="option"
+            tabindex="0">
+           <span class="fd-list__title">List item 1</span>
+        </li>
+        <li class="fd-list__item"
+            role="option"
+            tabindex="-1">
+           <span class="fd-list__title">List item 2</span>
+       </li>
+        <li class="fd-list__item"
+            role="option"
+            tabindex="-1">
+           <span class="fd-list__title">List item 3</span>
+        </li>
+        <li class="fd-list__item"
+            role="option"
+            tabindex="-1">
+           <span class="fd-list__title">List item 4</span>
+        </li>
+     </ul>
+  </div>
+</div>
+`;
+
+expanded.parameters = {
+    docs: {
+        disable: true
+    }
+};

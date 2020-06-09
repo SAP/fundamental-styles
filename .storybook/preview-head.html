@@ -215,6 +215,16 @@
     }
 })();
 
+function onSelectClick(controlId) {
+    let popoverRef = document.getElementById(controlId);
+
+    if (popoverRef.getAttribute("aria-hidden") === "true") {
+        popoverRef.setAttribute("aria-hidden", "false");
+    } else {
+        popoverRef.setAttribute("aria-hidden", "true");
+    }
+}
+
 function stepInputValue(inputId, stepDirection) {
     let inputRef = document.getElementById(inputId);
 

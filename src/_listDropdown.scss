@@ -3,6 +3,10 @@
 
 .#{$block} {
   &--dropdown {
+    @include fd-focus() {
+      outline: none;
+    }
+
     .#{$block}__item {
       @include list-item-states();
 
