@@ -15,7 +15,7 @@ If available, a single topmost node is called a root node. Apart from the hierar
     }
 };
 
-export const primary = () => `
+export const primaryTree = () => `
 <div class="fd-tree fd-tree--header">
     <div class="fd-tree__row fd-tree__row--header">
         <div class="fd-tree__col fd-tree__col--control">
@@ -456,7 +456,7 @@ export const primary = () => `
 </ul>
 `;
 
-export const expanded = () => `
+export const expandedTree = () => `
 <div class="fd-tree fd-tree--header">
     <div class="fd-tree__row fd-tree__row--header">
         <div class="fd-tree__col fd-tree__col--control">
@@ -889,7 +889,7 @@ export const expanded = () => `
 </ul>
 `;
 
-expanded.parameters = {
+expandedTree.parameters = {
     docs: {
         disable: true
     }
