@@ -17,10 +17,6 @@ There are multiple sizes:
     }
 };
 
-/**
- * Include <code>role="presentation"</code> when the avatar is used for only illustrative purposes. For example, if the icon sits right next to a label, use role.
- */
-
 export const icon = () => `
 <span class="fd-avatar fd-avatar--xs sap-icon--washing-machine" role="presentation"></span>
 <span class="fd-avatar fd-avatar--s sap-icon--washing-machine" role="presentation"></span>
@@ -29,11 +25,14 @@ export const icon = () => `
 <span class="fd-avatar fd-avatar--xl sap-icon--washing-machine" role="presentation"></span>
 `;
 
+icon.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'Include <code>role="presentation"</code> when the avatar is used for only illustrative purposes. For example, if the icon sits right next to a label, use role.'
+    }
+};
 
 
-/**
- * Include aria-label when there is no text equivalent for the avatar. This is not necessary if the avatar is used for illustrative purposes only. See Icon above.
- */
 
 export const initials = () => `
 <span class="fd-avatar fd-avatar--xs" aria-label="Wendy Wallace">WW</span>
@@ -43,10 +42,13 @@ export const initials = () => `
 <span class="fd-avatar fd-avatar--xl" aria-label="Wendy Wallace">WW</span>
 `;
 
+initials.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'Include aria-label when there is no text equivalent for the avatar. This is not necessary if the avatar is used for illustrative purposes only. See Icon above.'
+    }
+};
 
-/**
- * A circle style can be rendered using the <code>--circle</code> modifier.
- */
 
 export const circle = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle sap-icon--money-bills" role="presentation"></span>
@@ -62,10 +64,12 @@ export const circle = () => `
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
 `;
 
-
-/**
- * A background image can be applied to any style using the <code>--thumbnail</code> modifier.
- */
+circle.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'A circle style can be rendered using the <code>--circle</code> modifier.'
+    }
+};
 
 export const backgroundImage = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature')" role="presentation" aria-label="John Doe"></span>
@@ -75,10 +79,12 @@ export const backgroundImage = () => `
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature')" role="presentation" aria-label="John Doe"></span>
 `;
 
-
-/**
- * A transparent style can be rendered using the <code>--transparent</code> modifier.
- */
+backgroundImage.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'A background image can be applied to any style using the <code>--thumbnail</code> modifier.'
+    }
+};
 
 export const transparent = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent sap-icon--money-bills" role="presentation"></span>
@@ -94,10 +100,13 @@ export const transparent = () => `
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace">WW</span>
 `;
 
+transparent.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'A transparent style can be rendered using the <code>--transparent</code> modifier.'
+    }
+};
 
-/**
- * An Avatar with placeholder background can be rendered using the <code>--placeholder</code> modifier.
- */
 
 export const placeholderBackground = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills" role="presentation"></span>
@@ -107,10 +116,13 @@ export const placeholderBackground = () => `
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills" role="presentation"></span>
 `;
 
+placeholderBackground.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'An Avatar with placeholder background can be rendered using the <code>--placeholder</code> modifier.'
+    }
+};
 
-/**
- * An Avatar with TileIcon background can be rendered using the <code>--tile</code> modifier.
- */
 
 export const tileIconBackground = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--tile sap-icon--money-bills" role="presentation"></span>
@@ -120,10 +132,13 @@ export const tileIconBackground = () => `
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile sap-icon--money-bills" role="presentation"></span>
 `;
 
+tileIconBackground.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'An Avatar with TileIcon background can be rendered using the <code>--tile</code> modifier.'
+    }
+};
 
-/**
- * Use helpers classes to change the background colors, for example, <code>.fd-has-background-color-accent-9</code>.
- */
 
 export const accentColors = () => `
 <span class="fd-avatar fd-avatar--accent-color-1 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
@@ -138,10 +153,13 @@ export const accentColors = () => `
 <span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
 `;
 
+accentColors.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'Use helpers classes to change the background colors, for example, <code>.fd-has-background-color-accent-9</code>.'
+    }
+};
 
-/**
- * A zoom icon button can be added with another element using the <code>.fd-avatar__zoom-icon</code> class.
- */
 
 export const zoomIcon = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1 sap-icon--money-bills" role="presentation">
@@ -177,10 +195,13 @@ export const zoomIcon = () => `
 </span>
 `;
 
+zoomIcon.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'A zoom icon button can be added with another element using the <code>.fd-avatar__zoom-icon</code> class.'
+    }
+};
 
-/**
- * An optional border can be added with the <code>--border</code> modifier.
- */
 
 export const borders = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--transparent fd-avatar--border sap-icon--money-bills" role="presentation"></span>
@@ -196,3 +217,9 @@ export const borders = () => `
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace">WW</span>
 `;
 
+borders.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'An optional border can be added with the <code>--border</code> modifier.'
+    }
+};
