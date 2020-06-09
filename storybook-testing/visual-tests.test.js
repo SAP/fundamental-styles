@@ -25,8 +25,8 @@ const beforeScreenshot = (page) => page.emulate(view);
 
 initStoryshots({
     framework: 'html',
+    storyKindRegex: /Visual/,
     test: imageSnapshot({
-        storyKindRegex: /Visual/,
         getMatchOptions,
         storybookUrl: 'http://localhost:6006/',
         customizePage,
