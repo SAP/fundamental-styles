@@ -252,7 +252,7 @@ seperatedItems.storyName = 'List with separated items';
 
 export const differentStates = () => `
 <div style="width: 50%; display: inline-block">
-    <nav class="fd-menu">
+    <nav aria-label="navbar" class="fd-menu">
         <ul class="fd-menu__list" role="menu">
             <li class="fd-menu__item" role="presentation">
                 <a class="fd-menu__link" href="#" role="menuitem">
@@ -392,7 +392,7 @@ export const withSubmenu = () => `
         </li>
         <li class="fd-menu__item" role="presentation">
         <!-- For submenu, have the parent menu item in its own span so that its states do not override the submenu states -->
-            <a class="fd-menu__link has-child" aria-controls="EX100M2" aria-haspopup="true" role="menuitem" onclick = onPopoverClick('EX100M2')>
+            <a class="fd-menu__link has-child" aria-controls="EX100M2" href="#" aria-haspopup="true" role="menuitem" onclick = onPopoverClick('EX100M2')>
                 <span class="fd-menu__title">Option 2 with submenu</span>
                 <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span> 
             </a>       
