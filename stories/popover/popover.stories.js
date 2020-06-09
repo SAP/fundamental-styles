@@ -8,18 +8,20 @@ import '../../dist/segmented-button.css';
 export default {
     title: 'Components/Popover',
     parameters: {
-        description: `
-The popover is a wrapping component that accepts a "control" as well as a "body".
+        description: `The popover is a wrapping component that accepts a "control" as well as a "body".
 
 A control can be anything that you want to trigger the interaction from. The body will be the contents of what you reveal on the page after triggering the popover.
 Commonly used as the interaction/wrapping component when composing "dropdowns", "contextual menus", "mega menu", etc, when paired with the menu component.
 
-As a general rule, it is suggested that one popover be revealed on the page at any given time. Opening one popover should close all others to prevent multiple layers and collisions of several popovers.
-`
+As a general rule, it is suggested that one popover be revealed on the page at any given time.
+Opening one popover should close all others to prevent multiple layers and collisions of several popovers.`,
+        docs: { iframeHeight: 350 },
+        tags: ['f3', 'a11y', 'theme']
     }
 };
 
 /**
+ *
  * - Left Aligned - This is the default placement and no extra modifier classes are needed
  * - Right Aligned - A modifier class `--right` should be applied at the block level wrapper `fd-popover` and `--right` to the `fd-popover__body` warapper
  * - No Arrow & Left Aligned - `--no-arrow` modifier class on the `fd-popover__body` wrapper
@@ -137,9 +139,6 @@ export const placementOptions = () => `
     </div>
 `;
 
-placementOptions.parameters = {
-    docs: { iframeHeight: 300 }
-};
 
 /**
  * Header (with/without a subheader): `fd-popover__body-header`
@@ -314,9 +313,6 @@ export const layoutOptions = () => `
 `;
 
 layoutOptions.storyName = 'Popover with Header, Subheader and Footer';
-layoutOptions.parameters = {
-    docs: { iframeHeight: 400 }
-};
 
 /**
  * Virtually any component can be used as a `fd-popover__control` to control the display of `fd-popover__body`
@@ -391,10 +387,6 @@ export const controlExamples = () => `
 </div>
 `;
 
-controlExamples.parameters = {
-    docs: { iframeHeight: 300 }
-};
-
 /**
  * Add the `fd-popover-body__wrapper` wrapper on the element below the `popover__body` to prevent body overflow.
  */
@@ -454,7 +446,3 @@ export const overflowProtection = () => `
     </div>
 </div>
 `;
-
-overflowProtection.parameters = {
-    docs: { iframeHeight: 400 }
-};
