@@ -12,7 +12,8 @@ There are multiple sizes:
 - Small (--s) - 3rem
 - Medium (--m) - 4rem
 - Large (--l) - 5rem
-- Extra Large (--xl) - 7rem`
+- Extra Large (--xl) - 7rem`,
+        tags: ['a11y', 'f3', 'theme']
     }
 };
 
