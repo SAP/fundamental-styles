@@ -267,7 +267,7 @@ $(document).ready(function() {
 });
 
 function stepInputValue(inputId, stepDirection) {
-    console.log(inputId);
+    
     let inputRef = document.getElementById(inputId);
 
     if (inputRef) {
@@ -282,7 +282,7 @@ function stepInputValue(inputId, stepDirection) {
 }
 
 function browseFile(inputId) {
-    console.log("No element with id='"+ inputId);
+    
     let inputRef = document.getElementById(inputId);
     inputRef.click();
   
@@ -292,7 +292,6 @@ function selectFile(input, inputtext){
     var file=input.value;
     let inputRef = document.getElementById(inputtext);
     inputRef.value=file;
-    console.log("Files"+file);
 }
 
 function toggleDialog(dialogId, show) {

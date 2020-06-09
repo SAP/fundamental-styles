@@ -4,6 +4,7 @@
 $block: #{$fd-namespace}-file-uploader;
 
 .#{$block} {
+  $fd-file-uploader-padding: 0.25rem;
   @include fd-reset();
 
   display: inline-flex;
@@ -12,10 +13,10 @@ $block: #{$fd-namespace}-file-uploader;
 
   &__input.#{$fd-namespace}-input {
     width: auto;
-    margin-right: 0.25rem;
+    margin-right: $fd-file-uploader-padding;
 
     @include fd-rtl() {
-      margin-left: 0.25rem;
+      margin-left: $fd-file-uploader-padding;
     }
 
     &:read-only::placeholder {
