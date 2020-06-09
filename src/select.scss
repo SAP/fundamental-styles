@@ -88,6 +88,10 @@ $block: #{$fd-namespace}-select;
     font-size: var(--sapFontSize);
   }
 
+  &__text-content {
+    min-width: 100px;
+  }
+
   &--compact {
     .#{$block}__control {
       height: $fd-form-input-height--compact;
