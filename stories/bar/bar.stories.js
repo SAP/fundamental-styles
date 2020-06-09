@@ -88,10 +88,6 @@ desktop.parameters = {
     }
 };
 
-/**
- * For Tablet and Mobile (Cosy mode) apply the <code>fd-bar--cosy</code> class to the container element.
- */
-
 export const tabletAndMobile = () => `
 <div class="fd-bar fd-bar--cosy">
     <div class="fd-bar__left">
@@ -127,10 +123,12 @@ export const tabletAndMobile = () => `
 </div>
 `;
 
-
-/**
- * For Header in Bar Design apply the <code>fd-bar--header</code> class to the container element.
- */
+tabletAndMobile.parameters = {
+    docs: {
+        iframeHeight: 100,
+        storyDescription: 'For Tablet and Mobile (Cosy mode) apply the <code>fd-bar--cosy</code> class to the container element.'
+    }
+};
 
 export const barAsHeader = () => `
 <div><b>Desktop</b></div>
@@ -239,9 +237,13 @@ export const barAsHeader = () => `
 </div>
 `;
 
-/**
- * SubHeader in Bar Design is achieved by adding the <code>fd-bar--subheader</code> class to the container element.
- */
+barAsHeader.parameters = {
+    docs: {
+        iframeHeight: 350,
+        storyDescription: 'For Header in Bar Design apply the <code>fd-bar--header</code> class to the container element.'
+    }
+};
+
 
 export const barAsSubheader = () => `
 <div><b>Desktop</b></div>
@@ -317,9 +319,13 @@ export const barAsSubheader = () => `
 </div>
 `;
 
-/**
- * If a Header is followed by a SubHeader, the Header container should have the <code>fd-bar--header-with-subheader</code> modifier class which is removing the element’s box-shadow.
- */
+barAsSubheader.parameters = {
+    docs: {
+        iframeHeight: 450,
+        storyDescription: 'SubHeader in Bar Design is achieved by adding the <code>fd-bar--subheader</code> class to the container element.'
+    }
+};
+
 
 export const headerWithSubheader = () => `
 <div><b>Desktop</b></div>
@@ -364,6 +370,13 @@ export const headerWithSubheader = () => `
     </div>
 </div>
 `;
+
+headerWithSubheader.parameters = {
+    docs: {
+        iframeHeight: 150,
+        storyDescription: 'If a Header is followed by a SubHeader, the Header container should have the <code>fd-bar--header-with-subheader</code> modifier class which is removing the element’s box-shadow.'
+    }
+};
 
 export const barAsFooter = () => `
 <div><b>Desktop</b></div>
