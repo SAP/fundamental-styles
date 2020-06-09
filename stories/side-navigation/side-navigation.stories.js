@@ -1,11 +1,10 @@
 export default {
-  title: "Components/SideNavigation",
-  parameters: {
-    description: `
+    title: 'Components/SideNavigation',
+    parameters: {
+        description: `
   The left navigation area can be used to display navigation structures with links that change the content in the main area. The side navigation consists of two container section:  the Main Navigation Section (top-aligned) with links used to navigate within the user’s current work context, and Utility Section (bottom-aligned) that contains links to additional information.
-  Each of the sections uses a Nested List to display the navigation items.
-        `
-  }
+  Each of the sections uses a Nested List to display the navigation items.`
+    }
 };
 
 /** Side Navigation with one level - text-only, cozy mode.
@@ -57,8 +56,7 @@ export const cozy = () => `
 </div>
 `;
 
-cozy.parameters = {
-};
+cozy.parameters = {};
 
 
 /** Side Navigation with one level - with icons, cozy mode. */
