@@ -1,3 +1,0 @@
-{% macro input(properties="", modifier={}, type="text", class="") -%}
-<input class="fd-input{{ modifier.block | modifier('input') }} {{ class}}" type="{{type}}" placeholder="Placeholder Text" {{properties}}/>
-{%- endmacro %}
