@@ -1,0 +1,27 @@
+@import "./mixins";
+@import "./new-settings";
+
+$block: #{$fd-namespace}-file-uploader;
+
+.#{$block} {
+    @include fd-reset();
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+   
+    &__input.#{$fd-namespace}-input {
+        width: auto;
+        margin-right: 0.25rem;
+        @include fd-rtl() {
+            margin-left: 0.25rem;
+          }
+     &:read-only::placeholder{
+        color: var(--sapTextColor);
+        text-overflow: ellipsis;
+     }
+    }
+    &__hidden{
+        display: none;
+    }
+     
+}

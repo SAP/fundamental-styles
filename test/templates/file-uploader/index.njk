@@ -1,0 +1,40 @@
+{% extends "layout.njk" %}
+{% from "./component.njk" import file_uploader %}
+{% from "./../format.njk" import format %}
+
+
+{% block header %}
+
+{% endblock %} 
+
+{% block content %}
+<h2>Cozy File Uploader</h2>
+</head>
+{%- set cozyexample %}
+	{{ file_uploader(
+		properties={
+			placeholder: "choose a file to select"
+},
+
+modifier={},
+compact=false
+)
+}}
+{%- endset %}
+{{ format(cozyexample) }}
+
+<h2>Compact File Uploader</h2>
+</head>
+{%- set compactexample %}
+	{{ file_uploader(
+		properties={
+			placeholder: "choose a file to select"
+		},
+		modifier={},
+		compact=true
+		)
+	}}
+{%- endset %}
+{{ format(compactexample) }}
+
+{% endblock %}

@@ -1,0 +1,25 @@
+<!--
+file-uploader:
+    properties={},
+    modifier={ block: []},
+    state={}
+-->
+
+{% macro file_uploader(
+    properties={
+        placeholder: ""
+        },
+    modifier={
+    	block: []
+    },
+	compact= false)
+%}
+
+<div class="fd-file-uploader">
+    <input class="fd-input   fd-file-uploader__input input-playground {{ "input-playground--compact" if compact }}"  type="text" placeholder=" {{properties.placeholder}} " readonly>
+    <button class="btn-playground {{ "btn-playground--compact" if compact }}"  title="Select a file for uploading">Browse...</button>
+</div>
+<input class="fd-file-uploader__hidden" type="file" />
+<br/>
+ 
+{%- endmacro %}

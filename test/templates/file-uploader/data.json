@@ -1,0 +1,9 @@
+{
+    "id": "file-uploader",
+    "name": "File Uploader",
+    "properties": {},
+    "modifier": {
+        "block": ""
+    },
+    "type": ""
+}

@@ -152,6 +152,10 @@ body {
   width: 100%;
 }
 
+.input-playground--compact {
+  height: .25rem;
+}
+
 .input-playground.input-playground--subheader {
   padding: 0;
   margin: 0;
