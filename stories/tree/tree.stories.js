@@ -8,8 +8,9 @@ export default {
     title: 'Components/Tree',
     parameters: {
         description: `A tree is used to display data in a visual hierarchy.
-        Items that contain additional items are called nodes, while items that do not contain any other items are called leaves. 
-        If available, a single topmost node is called a root node. Apart from the hierarchical structure of its nodes and leaves, a tree is similar to a list.`
+
+Items that contain additional items are called nodes, while items that do not contain any other items are called leaves. 
+If available, a single topmost node is called a root node. Apart from the hierarchical structure of its nodes and leaves, a tree is similar to a list.`
     }
 };
 

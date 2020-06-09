@@ -1,5 +1,4 @@
 import '../../dist/button.css';
-import '../../dist/button-split.css';
 import '../../dist/icon.css';
 import '../../dist/menu.css';
 import '../../dist/popover.css';
