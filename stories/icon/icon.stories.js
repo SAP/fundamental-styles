@@ -39,7 +39,7 @@ export const availableIcons = () => {
             '</div>'
         );
     }).join('');
-    return div;
+    return div.outerHTML;
 };
 
 availableIcons.parameters = {
