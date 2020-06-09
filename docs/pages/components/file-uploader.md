@@ -34,7 +34,23 @@ Input element is readonly and populated with the selected file name.
     onchange="selectFile(this,'browse_input1')"
   
 />
+<br/>
+<br/>
+<br/>
+<h3>RTL Support</h3>
+<div class="fd-file-uploader" dir="rtl">
+    <input class="fd-input fd-file-uploader__input" onclick="browseFile('input1-rtl');" title="Select a file for uploading" aria-label="Select a file for uploading" type="text" id="browse_input1-rtl" placeholder=" Choose a file for upload to localserver " readonly>
+    <button class="fd-button" onclick="browseFile('input1-rtl');"  id="fileuploader-button1" aria-label="Select a file for uploading" >Browse...</button>
   
+</div>
+  <input
+    id="input1-rtl"
+    class="fd-file-uploader__hidden"
+    type="file"
+    onchange="selectFile(this,'browse_input1-rtl')"
+  
+/>
+
 {% endcapture %}
 {% include display-component.html component=default %}
 
@@ -56,6 +72,23 @@ Input element is readonly and populated with the selected file name.
     onchange="selectFile(this,'browse_input2')"
 
 />
+<br/>
+<br/>
+<br/>
+<h3>RTL Support</h3>
+<div class="fd-file-uploader" dir="rtl">
+    <input class="fd-input fd-input--compact fd-file-uploader__input" onclick="browseFile('input2-rtl');" id="browse_input2-rtl" type="text" aria-label="Select a file for uploading" title="Select a file for uploading"  placeholder="Choose a file for upload to localserver" readonly>
+    <button class="fd-button fd-button--compact "  onclick="browseFile('input2-rtl');" id="fileuplader-button2" aria-label="Select a file for uploading">Browse...</button>
+  
+</div>
+  <input
+    id="input2-rtl"
+    class="fd-file-uploader__hidden"
+    type="file"
+    onchange="selectFile(this,'browse_input2-rtl')"
+
+/>
+
   
 {% endcapture %}
 {% include display-component.html component=default %}
