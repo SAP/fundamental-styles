@@ -1,208 +1,156 @@
-@import "./settings";
+@import "./new-settings";
 @import "./mixins";
-@import "./functions";
 
-/*!
-.fd-tree+(--header)
-    .fd-tree__group+(--sublevel-1...-6, ([aria-hidden] | .is-hidden))
-    .fd-tree__item
-        .fd-tree__row+(--header, ([aria-selected] | .is-selected))
-            .fd-tree__col+(--control, --actions)
-                .fd-tree__control+([aria-pressed] | .is-pressed)
-*/
 $block: #{$fd-namespace}-tree;
 
+$fd-tree-item-padding-y: 0.25rem !default;
+
 .#{$block} {
-  // LOCAL VARS (set all themeable properties, always include !default)
-  $fd-tree-background-color: fd-color("background", 2) !default;
-  $fd-tree-border-color: fd-color("neutral", 2) !default;
-  $fd-tree-border-width: 0 !default;
-  $fd-tree-link-color: fd-color(action, 1) !default;
-  $fd-tree-cell-spacing: $fd-width--gutter !default;
+  // VARIABLES
 
-  --fd-tree-cell-spacing: var(--fd-width-gutter);
-  $fd-tree-cell-padding: fd-space(3) !default;
-  $fd-tree-header-color: fd-color("text", 3) !default;
-  $fd-tree-header-background-color: fd-color("neutral", 2) !default;
-  $fd-tree-row-background-color--hover: fd-color-state("hover") !default;
+  // MIXINS
 
-  $fd-tree-control-width: 18px !default;
-  $fd-tree-control-button-width-height: 34px !default;
-  $fd-tree-control-margin-right: fd-space(2) !default;
-  $fd-tree-transition-params: $fd-animation-speed ease-in !default;
+  @mixin set-state(
+    $background: var(--sapList_Background),
+    $icon: var(--sapContent_IconColor),
+    $text: var(--sapList_TextColor),
+    $border: var(--sapList_BorderColor)) {
+    background-color: $background;
+    border-bottom: 0.063rem solid $border;
 
-  --fd-tree-border-color: var(--fd-color-neutral-2);
-  --fd-tree-background-color: var(--fd-color-background-2);
-  --fd-tree-link-color: var(--fd-color-action-1);
-  --fd-tree-header-color: var(--fd-color-text-3);
-  --fd-tree-header-background-color: var(--fd-color-neutral-2);
+    .#{$block}__expander {
+      color: $icon;
+    }
 
-  @include fd-reset();
-  @include fd-last-child();
+    .#{$block}__text {
+      color: $text;
+    }
+  }
 
-  position: relative;
+  // BLOCK
   width: 100%;
-  max-width: 100%;
+  list-style-type: none;
 
-  @include fd-var-color("background-color", $fd-tree-background-color, --fd-tree-background-color);
-
-  border-bottom-style: solid;
-  border-bottom-width: $fd-tree-border-width;
-
-  @include fd-var-color("border-bottom-color", $fd-tree-border-color, --fd-tree-border-color);
-
-  padding-left: 0;
-  padding-right: 0;
-  margin-bottom: $fd-margin-bottom;
-  margin-left: 0;
-
-  &:last-child {
-    margin-bottom: 0;
+  &[aria-hidden="true"] {
+    display: none;
   }
 
-  &--header {
-    border-bottom: 0;
-    border-top-style: solid;
-    border-top-width: $fd-tree-border-width;
-
-    @include fd-var-color("border-top-color", $fd-tree-border-color, --fd-tree-border-color);
-
-    margin-bottom: 0;
-
-    @include fd-var-color("background-color", $fd-tree-header-background-color, --fd-tree-header-background-color);
-  }
-
-  &__group {
-    @include fd-reset();
-
-    transition: opacity $fd-animation-speed linear;
-    max-height: auto;
-    opacity: 1;
-    margin-bottom: 0;
-    margin-left: 0;
-    padding-left: 0;
-    padding-right: 0;
-
-    &.is-hidden {
-      display: none;
-    }
-  }
-
-  &__item {
-    @include fd-reset();
-
-    border-top-style: solid;
-    border-top-width: $fd-tree-border-width;
-
-    @include fd-var-color("border-top-color", $fd-tree-border-color, --fd-tree-border-color);
-
-    margin-bottom: 0;
-    list-style: none;
-  }
-
-  &__row {
-    @include fd-reset();
-    @include fd-var-size("padding-left", $fd-tree-cell-spacing, --fd-tree-cell-spacing);
-    @include fd-var-size("padding-right", $fd-tree-cell-spacing, --fd-tree-cell-spacing);
-
-    padding-top: 0;
-    padding-bottom: 0;
-    display: flex;
-    align-items: center;
-    position: relative;
-    transition: background-color $fd-tree-transition-params;
-
-    @include fd-hover() {
-      @include fd-var-color("background-color", $fd-tree-row-background-color--hover, --fd-color-background-hover);
-    }
-
-    &--header {
-      @include fd-var-color("color", $fd-tree-header-color, --fd-tree-header-color);
-      @include fd-var-color("background-color", $fd-tree-header-background-color, --fd-tree-header-background-color);
-
-      text-transform: uppercase;
+  &[class*="level"] {
+    .#{$block}__content {
+      background-color: var(--sapList_AlternatingBackground);
+      border-bottom-color: transparent;
 
       @include fd-hover() {
-        background-color: initial;
+        @include set-state($background: var(--sapList_Hover_Background), $border: transparent);
       }
-    }
 
-    @include fd-selected() {
-      background-color: fd-color-state("selected");
+      @include fd-selected() {
+        @include set-state($background: var(--sapList_SelectionBackgroundColor), $border: var(--sapList_SelectionBorderColor));
 
-      @include fd-var-color("background-color", fd-color-state("selected"), --fd-color-background-selected);
-    }
-  }
-  $_row_padding: $fd-tree-control-width + $fd-tree-control-margin-right + 4;
-
-  &__col {
-    @include fd-reset();
-
-    flex: 1;
-    padding: $fd-tree-cell-padding 0;
-    // pad to account for control
-    padding-left: $_row_padding;
-
-    @include fd-rtl() {
-      padding-left: 0;
-      padding-right: $_row_padding;
-    }
-
-    &--control {
-      flex: auto;
-      width: 20%;
-      // sets 8 sublevels of indentation based on __group level
-      @at-root {
-        @each $i in 1,2,3,4,5,6,7,8 {
-          .#{$block}__group--sublevel-#{$i} & {
-            padding-left: $_row_padding * ($i + 1);
-
-            @include fd-rtl() {
-              padding-left: 0;
-              padding-right: $_row_padding * ($i + 1);
-            }
-          }
+        @include fd-hover() {
+          @include set-state($background: var(--sapList_Hover_SelectionBackground), $border: var(--sapList_SelectionBorderColor));
         }
       }
     }
+  }
 
-    &--actions {
-      @include fd-reset();
+  &.level-2 {
+    .#{$block}__expander {
+      margin-left: 1.5rem;
+    }
 
-      padding-top: 0;
-      padding-bottom: 0;
-      text-align: right;
+    .#{$block}__text:only-child {
+      padding-left: 4.5rem;
+    }
+  }
 
-      @include fd-rtl() {
-        text-align: left;
+  &.level-3 {
+    .#{$block}__expander {
+      margin-left: 2.5rem;
+    }
+
+    .#{$block}__text:only-child {
+      padding-left: 5.5rem;
+    }
+  }
+
+  // ELEMENTS
+  &__item {
+    @include fd-reset();
+
+    height: 100%;
+  }
+
+  &__content {
+    @include fd-reset();
+    @include fd-flex-vertical-center();
+    @include set-state();
+
+    height: 2.75rem;
+
+    @include fd-hover() {
+      @include set-state($background: var(--sapList_Hover_Background));
+    }
+
+    @include fd-selected() {
+      @include set-state($background: var(--sapList_SelectionBackgroundColor), $border: var(--sapList_SelectionBorderColor));
+
+      @include fd-hover() {
+        @include set-state($background: var(--sapList_Hover_SelectionBackground), $border: var(--sapList_SelectionBorderColor));
       }
     }
   }
 
-  &__control {
+  &__expander {
     @include fd-reset();
-    @include fd-button-reset();
 
-    position: absolute;
-    top: calc(50% - #{$fd-tree-control-width} / 2);
-    margin: -8px fd-space(3) 0 -36px;
-    width: $fd-tree-control-button-width-height;
-    height: $fd-tree-control-button-width-height;
-    transform: rotate(180deg);
-    vertical-align: middle;
-    transition: transform $fd-animation-speed linear;
+    width: 3rem;
+    height: 2.5rem;
 
-    @include fd-icon("nav-back");
-    @include fd-var-color("color", $fd-link-color, --fd-color-action-1);
-    @include fd-focus();
+    @include fd-icon('navigation-right-arrow', 'default', 'after') {
+      @include fd-flex-center();
 
-    @include fd-rtl() {
-      margin-right: -40px;
-      transform: rotate(0deg);
+      height: 100%;
+      min-height: 100%;
+      font-size: var(--sapFontLargeSize);
     }
 
-    &.is-pressed {
-      transform: rotate(270deg);
+    @include fd-rtl() {
+      &::after {
+        content: "\e067";
+      }
+    }
+
+    &.is-expanded,
+    &[aria-expanded="true"] {
+      border-bottom: none;
+
+      &::after {
+        content: "\e1e2";
+      }
+    }
+  }
+
+  &__text {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    font-family: var(--sapFontFamily);
+    font-size: var(--sapFontSize);
+  }
+
+  // MODIFIERS
+
+  &--compact {
+
+    .#{$block}__content {
+      height: 1.5rem;
+    }
+
+    .#{$block}__expander {
+      width: 2rem;
+      height: 1.5rem;
+      font-size: 0.75rem;
     }
   }
 }

@@ -19,436 +19,73 @@ Items that contain additional items are called nodes, while items that do not co
 ## Tree with multiple levels and actions
 
 {% capture tree %}
-<div class="fd-tree fd-tree--header">
-    <div class="fd-tree__row fd-tree__row--header">
-        <div class="fd-tree__col fd-tree__col--control">
-            <button class="fd-tree__control" aria-label="Expand all" aria-controls="tWsod582" aria-pressed="false"></button>
-            Column Header
+<ul class="fd-tree">
+    <li class="fd-tree__item">
+        <div class="fd-tree__content">
+            <span class="fd-tree__expander" aria-controls="TREE1L2" aria-haspopup="true" aria-expanded="false" aria-label="Expand level 2"></span>
+            <span class="fd-tree__text">Level 1</span>
         </div>
-        <div class="fd-tree__col">
-            Column Header
-        </div>
-        <div class="fd-tree__col">
-            Column Header
-        </div>
-        <div class="fd-tree__col">
-            Status
-        </div>
-        <div class="fd-tree__col fd-tree__col--actions">
-        </div>
-    </div>
-</div>
-<ul class="fd-tree" id="tWsod582" role="tree">
-    <li class="fd-tree__item" role="treeitem" id="inYUX852" aria-expanded="false">
-        <div class="fd-tree__row">
-            <div class="fd-tree__col fd-tree__col--control">
-                <button class="fd-tree__control" aria-label="Expand" aria-controls="inYUX852"
-                aria-pressed="false"></button>
-                First Level
-            </div>
-            <div class="fd-tree__col">
-                Secondary Value
-            </div>
-            <div class="fd-tree__col">
-                Secondary Value
-            </div>
-            <div class="fd-tree__col">
-                    Inactive
-            </div>
-            <div class="fd-tree__col fd-tree__col--actions">
-               <div class="fd-popover fd-popover--right">
-                    <div class="fd-popover__control">
-                        <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="j2lk3j" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
-                    </div>
-                    <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="j2lk3j">
-                        <nav class="fd-menu">
-                            <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Edit</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Lock</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Duplicate</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Delete</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+        <ul class="fd-tree level-2" id="TREE1L2" aria-hidden="true">
+            <li class="fd-tree__item">
+                <div class="fd-tree__content">
+                    <span class="fd-tree__expander" aria-controls="TREE1L3" aria-haspopup="true" aria-expanded="false" aria-label="Expand level 3"></span>
+                    <span class="fd-tree__text">Level 2</span>
                 </div>
-            </div>
-        </div>
-        <ul class="fd-tree__group fd-tree__group--sublevel-1 is-hidden" role="group" aria-hidden="true">
-            <li class="fd-tree__item" role="treeitem" id="Bxd8s850" aria-expanded="false">
-                <div class="fd-tree__row">
-                    <div class="fd-tree__col fd-tree__col--control">
-                        <button class="fd-tree__control" aria-label="Expand" aria-controls="Bxd8s850"
-                        aria-pressed="false"></button>
-                        Second Level
-                    </div>
-                    <div class="fd-tree__col">
-                        Secondary Value
-                    </div>
-                    <div class="fd-tree__col">
-                        Secondary Value
-                    </div>
-                    <div class="fd-tree__col">
-                            Inactive
-                    </div>
-                    <div class="fd-tree__col fd-tree__col--actions">
-                        <div class="fd-popover fd-popover--right">
-                            <div class="fd-popover__control">
-                                <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="lklkj3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
-                            </div>
-                            <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="lklkj3">
-                                <nav class="fd-menu">
-                                    <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                        <li class="fd-menu__item">
-                                            <a href="#" class="fd-menu__link">
-                                                <span class="fd-menu__title">Edit</span>
-                                            </a>
-                                        </li>
-                                        <li class="fd-menu__item">
-                                            <a href="#" class="fd-menu__link">
-                                                <span class="fd-menu__title">Lock</span>
-                                            </a>
-                                        </li>
-                                        <li class="fd-menu__item">
-                                            <a href="#" class="fd-menu__link">
-                                                <span class="fd-menu__title">Duplicate</span>
-                                            </a>
-                                        </li>
-                                        <li class="fd-menu__item">
-                                            <a href="#" class="fd-menu__link">
-                                                <span class="fd-menu__title">Delete</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
+                <ul class="fd-tree level-3" id="TREE1L3" aria-hidden="true">
+                    <li class="fd-tree__item">
+                        <div class="fd-tree__content">
+                            <span class="fd-tree__expander" aria-controls="TREE1L4" aria-haspopup="true" aria-expanded="false" aria-label="Expand level 4"></span>
+                            <span class="fd-tree__text">Level 3</span>
                         </div>
-                    </div>
-                </div>
-                <ul class="fd-tree__group fd-tree__group--sublevel-2 is-hidden" role="group" aria-hidden="true">
-                    <li class="fd-tree__item" role="treeitem" id="qz9hB117" aria-expanded="false">
-                        <div class="fd-tree__row">
-                            <div class="fd-tree__col fd-tree__col--control">
-                                <button class="fd-tree__control" aria-label="Expand" aria-controls="qz9hB117"
-                                aria-pressed="false"></button>
-                                Third Level
-                            </div>
-                            <div class="fd-tree__col">
-                                Secondary Value
-                            </div>
-                            <div class="fd-tree__col">
-                                Secondary Value
-                            </div>
-                            <div class="fd-tree__col">
-                                    Inactive
-                            </div>
-                            <div class="fd-tree__col fd-tree__col--actions">
-                                <div class="fd-popover fd-popover--right">
-                                    <div class="fd-popover__control">
-                                        <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="asofjh3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
-                                    </div>
-                                    <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="asofjh3">
-                                        <nav class="fd-menu">
-                                            <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                                <li class="fd-menu__item">
-                                                    <a href="#" class="fd-menu__link">
-                                                        <span class="fd-menu__title">Edit</span>
-                                                    </a>
-                                                </li>
-                                                <li class="fd-menu__item">
-                                                    <a href="#" class="fd-menu__link">
-                                                        <span class="fd-menu__title">Lock</span>
-                                                    </a>
-                                                </li>
-                                                <li class="fd-menu__item">
-                                                    <a href="#" class="fd-menu__link">
-                                                        <span class="fd-menu__title">Duplicate</span>
-                                                    </a>
-                                                </li>
-                                                <li class="fd-menu__item">
-                                                    <a href="#" class="fd-menu__link">
-                                                        <span class="fd-menu__title">Delete</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
+                        <ul class="fd-tree level-4" id="TREE1L4" aria-hidden="true">
+                            <li class="fd-tree__item">
+                                <div class="fd-tree__content">
+                                    <span class="fd-tree__text">Level 4</span>
                                 </div>
-                            </div>
-                        </div>
-                        <ul class="fd-tree__group fd-tree__group--sublevel-3 is-hidden"
-                        role="group" aria-hidden="true">
-                            <li class="fd-tree__item" role="treeitem">
-                                <div class="fd-tree__row">
-                                    <div class="fd-tree__col fd-tree__col--control">
-                                        Fourth Level
-                                    </div>
-                                    <div class="fd-tree__col">
-                                        Secondary Value
-                                    </div>
-                                    <div class="fd-tree__col">
-                                        Secondary Value
-                                    </div>
-                                    <div class="fd-tree__col">
-                                            Inactive
-                                    </div>
-                                    <div class="fd-tree__col fd-tree__col--actions">
-                                       <div class="fd-popover fd-popover--right">
-                                            <div class="fd-popover__control">
-                                                <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="iouh3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
-                                            </div>
-                                            <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="iouh3">
-                                                <nav class="fd-menu">
-                                                    <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                                        <li class="fd-menu__item">
-                                                            <a href="#" class="fd-menu__link">
-                                                                <span class="fd-menu__title">Edit</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="fd-menu__item">
-                                                            <a href="#" class="fd-menu__link">
-                                                                <span class="fd-menu__title">Lock</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="fd-menu__item">
-                                                            <a href="#" class="fd-menu__link">
-                                                                <span class="fd-menu__title">Duplicate</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="fd-menu__item">
-                                                            <a href="#" class="fd-menu__link">
-                                                                <span class="fd-menu__title">Delete</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </nav>
-                                            </div>
-                                        </div>
-                                    </div>
+                            </li>
+                            <li class="fd-tree__item">
+                                <div class="fd-tree__content">
+                                    <span class="fd-tree__text">Level 4</span>
                                 </div>
                             </li>
                         </ul>
                     </li>
+                    <li class="fd-tree__item">
+                        <div class="fd-tree__content">
+                            <span class="fd-tree__text">Level 3</span>
+                        </div>
+                    </li>
+                    <li class="fd-tree__item">
+                        <div class="fd-tree__content">
+                            <span class="fd-tree__text">Level 3</span>
+                        </div>
+                    </li>
                 </ul>
             </li>
-            <li class="fd-tree__item" role="treeitem">
-                <div class="fd-tree__row">
-                    <div class="fd-tree__col fd-tree__col--control">
-                        Second Level
-                    </div>
-                    <div class="fd-tree__col">
-                        Secondary Value
-                    </div>
-                    <div class="fd-tree__col">
-                        Secondary Value
-                    </div>
-                    <div class="fd-tree__col">
-                            Default
-                    </div>
-                    <div class="fd-tree__col fd-tree__col--actions">
-                        <div class="fd-popover fd-popover--right">
-                            <div class="fd-popover__control">
-                                <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="jk3333" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
-                            </div>
-                            <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="jk3333">
-                                <nav class="fd-menu">
-                                    <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                        <li class="fd-menu__item">
-                                            <a href="#" class="fd-menu__link">
-                                                <span class="fd-menu__title">Edit</span>
-                                            </a>
-                                        </li>
-                                        <li class="fd-menu__item">
-                                            <a href="#" class="fd-menu__link">
-                                                <span class="fd-menu__title">Lock</span>
-                                            </a>
-                                        </li>
-                                        <li class="fd-menu__item">
-                                            <a href="#" class="fd-menu__link">
-                                                <span class="fd-menu__title">Duplicate</span>
-                                            </a>
-                                        </li>
-                                        <li class="fd-menu__item">
-                                            <a href="#" class="fd-menu__link">
-                                                <span class="fd-menu__title">Delete</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
+            <li class="fd-tree__item">
+                <div class="fd-tree__content">
+                    <span class="fd-tree__text">Level 2</span>
+                </div>
+            </li>
+            <li class="fd-tree__item">
+                <div class="fd-tree__content">
+                    <span class="fd-tree__text">Level 2</span>
                 </div>
             </li>
         </ul>
     </li>
-    <li class="fd-tree__item" role="treeitem" id="lkEDI899" aria-expanded="false">
-        <div class="fd-tree__row">
-            <div class="fd-tree__col fd-tree__col--control">
-                <button class="fd-tree__control" aria-label="Expand" aria-controls="lkEDI899"
-                aria-pressed="false"></button>
-                First Level
-            </div>
-            <div class="fd-tree__col">
-                Secondary Value
-            </div>
-            <div class="fd-tree__col">
-                Secondary Value
-            </div>
-            <div class="fd-tree__col">
-                    Default
-            </div>
-            <div class="fd-tree__col fd-tree__col--actions">
-                <div class="fd-popover fd-popover--right">
-                    <div class="fd-popover__control">
-                        <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="asdhjb3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
-                    </div>
-                    <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="asdhjb3">
-                        <nav class="fd-menu">
-                            <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Edit</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Lock</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Duplicate</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Delete</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
+    <li class="fd-tree__item">
+        <div class="fd-tree__content">
+            <span class="fd-tree__expander"></span>
+            <span class="fd-tree__text">Level 1</span>
         </div>
-        <ul class="fd-tree__group fd-tree__group--sublevel-1 is-hidden" role="group" aria-hidden="true">
-            <li class="fd-tree__item" role="treeitem">
-                <div class="fd-tree__row">
-                    <div class="fd-tree__col fd-tree__col--control">
-                        Second Level
-                    </div>
-                    <div class="fd-tree__col">
-                        Secondary Value
-                    </div>
-                    <div class="fd-tree__col">
-                        Secondary Value
-                    </div>
-                    <div class="fd-tree__col">
-                            Inactive
-                    </div>
-                    <div class="fd-tree__col fd-tree__col--actions">
-                        <div class="fd-popover fd-popover--right">
-                            <div class="fd-popover__control">
-                                <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="hkjhkjh3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
-                            </div>
-                            <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="hkjhkjh3">
-                                <nav class="fd-menu">
-                                    <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                        <li class="fd-menu__item">
-                                            <a href="#" class="fd-menu__link">
-                                                <span class="fd-menu__title">Edit</span>
-                                            </a>
-                                        </li>
-                                        <li class="fd-menu__item">
-                                            <a href="#" class="fd-menu__link">
-                                                <span class="fd-menu__title">Lock</span>
-                                            </a>
-                                        </li>
-                                        <li class="fd-menu__item">
-                                            <a href="#" class="fd-menu__link">
-                                                <span class="fd-menu__title">Duplicate</span>
-                                            </a>
-                                        </li>
-                                        <li class="fd-menu__item">
-                                            <a href="#" class="fd-menu__link">
-                                                <span class="fd-menu__title">Delete</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
     </li>
-    <li class="fd-tree__item" role="treeitem">
-        <div class="fd-tree__row">
-            <div class="fd-tree__col fd-tree__col--control">
-                First Level
-            </div>
-            <div class="fd-tree__col">
-                Secondary Value
-            </div>
-            <div class="fd-tree__col">
-                Secondary Value
-            </div>
-            <div class="fd-tree__col">
-                    Inactive
-            </div>
-            <div class="fd-tree__col fd-tree__col--actions">
-                <div class="fd-popover fd-popover--right">
-                    <div class="fd-popover__control">
-                        <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="ggiuhwer" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
-                    </div>
-                    <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="ggiuhwer">
-                        <nav class="fd-menu">
-                            <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Edit</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Lock</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Duplicate</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Delete</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
+    <li class="fd-tree__item">
+        <div class="fd-tree__content">
+            <span class="fd-tree__expander"></span>
+            <span class="fd-tree__text">Level 1</span>
         </div>
     </li>
 </ul>
 {% endcapture %}
-
 {% include display-component.html component=tree %}
