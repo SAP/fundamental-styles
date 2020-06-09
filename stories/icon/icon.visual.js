@@ -10,7 +10,7 @@ export default {
     title: 'Visual'
 };
 
-export const Button = () => {
+export const Icon = () => {
     const storyNames = Object.keys(stories).filter(story => story !== 'default');
     const div = document.createElement('div');
     div.innerHTML = storyNames.map(function(item) {
