@@ -6,7 +6,8 @@ export default {
         description: `
         Form groups are used to assemble form elements with labels, messages, and help containers.
 
-        These components can be used alone. For example, the 'form__item' element with the label and control could be used without the full form group since not every form field will need error messages.`
+        These components can be used alone. For example, the 'form__item' element with the label and control could  
+        be used without the full form group since not every form field will need error messages.`
     }
 };
 
