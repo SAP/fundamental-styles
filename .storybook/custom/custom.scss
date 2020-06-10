@@ -244,3 +244,14 @@ $heading-toc-spacer: $docs-hd-tp + $docs-hd-bp + $docs-hd-ch + $docs-tm;
     height: 120px;
   }
 }
+
+body.sb-show-main {
+  background-color: #f7f7f7;
+  background-color: var(--sapBackgroundColor, #f7f7f7);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: 0.875rem;
+  font-size: var(--sapFontSize, 0.875rem);
+  color: #32363a;
+  color: var(--sapTextColor, #32363a);
+}
