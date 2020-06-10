@@ -244,3 +244,42 @@ $heading-toc-spacer: $docs-hd-tp + $docs-hd-bp + $docs-hd-ch + $docs-tm;
     height: 120px;
   }
 }
+
+/* Display containers side-by-side */
+.side-by-side {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  & > * {
+    margin: 1rem;
+    flex-shrink: 0;
+  }
+}
+
+/* Display Dialog, Message Box as static */
+.fd-dialog-docs-static,
+.fd-message-box-docs-static {
+  &.fd-dialog,
+  .fd-dialog,
+  &.fd-message-box,
+  .fd-message-box {
+    position: static;
+    background-color: transparent;
+  }
+
+  &.fd-dialog__content,
+  .fd-dialog__content,
+  &.fd-message-box__content,
+  .fd-message-box__content {
+    position: static;
+    transform: translate(0%, 0%);
+    width: 30rem;
+    margin: auto;
+    height: auto;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}
