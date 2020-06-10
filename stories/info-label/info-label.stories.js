@@ -12,7 +12,8 @@ Use the Info Label base class with following modifiers:
     - \`fd-info-label--icon\`
     - \`fd-info-label--numeric\`
     - \`fd-info-label--accent-color-*\`
-      `
+      `,
+        tags: ['f3', 'a11y', 'theme']
     }
 };
 
