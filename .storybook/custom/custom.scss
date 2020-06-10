@@ -245,6 +245,10 @@ $heading-toc-spacer: $docs-hd-tp + $docs-hd-bp + $docs-hd-ch + $docs-tm;
   }
 }
 
+.fddocs.fd-info-label {
+  margin-right: 5px;
+}
+
 body.sb-show-main {
   background-color: #f7f7f7;
   background-color: var(--sapBackgroundColor, #f7f7f7);
