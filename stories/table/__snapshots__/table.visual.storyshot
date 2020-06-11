@@ -2483,7 +2483,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onSelectClick('h0C6A325');"
+            onclick="onControlClick('h0C6A325');"
             role="button"
             tabindex="0"
           >
@@ -2620,7 +2620,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onSelectClick('h0C6A326');"
+            onclick="onControlClick('h0C6A326');"
             role="button"
             tabindex="0"
           >
@@ -2761,7 +2761,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onSelectClick('h0C62325');"
+            onclick="onControlClick('h0C62325');"
             role="button"
             tabindex="0"
           >
@@ -2923,7 +2923,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onSelectClick('h07jj326');"
+            onclick="onControlClick('h07jj326');"
             role="button"
             tabindex="0"
           >
@@ -3089,7 +3089,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onSelectClick('h090G325');"
+            onclick="onControlClick('h090G325');"
             role="button"
             tabindex="0"
           >
@@ -3275,7 +3275,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onSelectClick('h09GDGG325');"
+            onclick="onControlClick('h09GDGG325');"
             role="button"
             tabindex="0"
           >
@@ -3499,7 +3499,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onSelectClick('h0GFF2325');"
+            onclick="onControlClick('h0GFF2325');"
             role="button"
             tabindex="0"
           >
@@ -3665,7 +3665,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onSelectClick('h0GZH2325');"
+            onclick="onControlClick('h0GZH2325');"
             role="button"
             tabindex="0"
           >
@@ -3833,7 +3833,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onSelectClick('h0GTKE325');"
+            onclick="on('h0GTKE325');"
             role="button"
             tabindex="0"
           >
@@ -4098,7 +4098,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control is-success"
-            onclick="onSelectClick('h07jjhYH');"
+            onclick="onControlClick('h07jjhYH');"
             role="button"
             tabindex="0"
           >
@@ -4301,7 +4301,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control is-error"
-            onclick="onSelectClick('h07j9978H');"
+            onclick="onControlClick('h07j9978H');"
             role="button"
             tabindex="0"
           >
@@ -4504,7 +4504,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control is-warning"
-            onclick="onSelectClick('h07j998hhH');"
+            onclick="onControlClick('h07j998hhH');"
             role="button"
             tabindex="0"
           >
@@ -4708,7 +4708,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control is-information"
-            onclick="onSelectClick('hkhh998hhH');"
+            onclick="onControlClick('hkhh998hhH');"
             role="button"
             tabindex="0"
           >
