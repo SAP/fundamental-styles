@@ -20,7 +20,7 @@ export const primaryTree = () => `
 <div class="fd-tree fd-tree--header">
     <div class="fd-tree__row fd-tree__row--header">
         <div class="fd-tree__col fd-tree__col--control">
-            <button class="fd-tree__control" aria-label="Expand all" aria-controls="tWsod582" aria-pressed="false" onclick="onSelectClick('tWsod582');"></button>
+            <button class="fd-tree__control" aria-label="Expand all" aria-controls="tWsod582" aria-pressed="false" onclick="onControlClick('tWsod582');"></button>
             Column Header
         </div>
         <div class="fd-tree__col">
@@ -41,7 +41,7 @@ export const primaryTree = () => `
         <div class="fd-tree__row">
             <div class="fd-tree__col fd-tree__col--control">
                 <button class="fd-tree__control" aria-label="Expand" aria-controls="inYUX852"
-                aria-pressed="false" onclick="onSelectClick('inYUX852');"></button>
+                aria-pressed="false" onclick="onControlClick('inYUX852');"></button>
                 First Level
             </div>
             <div class="fd-tree__col">
@@ -57,7 +57,7 @@ export const primaryTree = () => `
                <div class="fd-popover fd-popover--right">
                     <div class="fd-popover__control">
                         <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="j2lk3j" 
-                        aria-haspopup="true" aria-expanded="false" aria-label="More" onclick="onSelectClick('j2lk3j');"></button>
+                        aria-haspopup="true" aria-expanded="false" aria-label="More" onclick="onControlClick('j2lk3j');"></button>
                     </div>
                     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="j2lk3j">
                         <nav class="fd-menu">
@@ -93,7 +93,7 @@ export const primaryTree = () => `
                 <div class="fd-tree__row">
                     <div class="fd-tree__col fd-tree__col--control">
                         <button class="fd-tree__control" aria-label="Expand" aria-controls="Bxd8s850"
-                        aria-pressed="false" onclick="onSelectClick('Bxd8s850');"></button>
+                        aria-pressed="false" onclick="onControlClick('Bxd8s850');"></button>
                         Second Level
                     </div>
                     <div class="fd-tree__col">
@@ -109,7 +109,7 @@ export const primaryTree = () => `
                         <div class="fd-popover fd-popover--right">
                             <div class="fd-popover__control">
                                 <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="lklkj3"
-                                aria-haspopup="true" aria-expanded="false" aria-label="More" onclick="onSelectClick('lklkj3');"></button>
+                                aria-haspopup="true" aria-expanded="false" aria-label="More" onclick="onControlClick('lklkj3');"></button>
                             </div>
                             <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="lklkj3">
                                 <nav class="fd-menu">
@@ -145,7 +145,7 @@ export const primaryTree = () => `
                         <div class="fd-tree__row">
                             <div class="fd-tree__col fd-tree__col--control">
                                 <button class="fd-tree__control" aria-label="Expand" aria-controls="qz9hB117"
-                                aria-pressed="false" onclick="onSelectClick('qz9hB117');"></button>
+                                aria-pressed="false" onclick="onControlClick('qz9hB117');"></button>
                                 Third Level
                             </div>
                             <div class="fd-tree__col">
@@ -161,7 +161,7 @@ export const primaryTree = () => `
                                 <div class="fd-popover fd-popover--right">
                                     <div class="fd-popover__control">
                                         <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="asofjh3"
-                                        aria-haspopup="true" aria-expanded="false" aria-label="More" onclick="onSelectClick('asofjh3');"></button>
+                                        aria-haspopup="true" aria-expanded="false" aria-label="More" onclick="onControlClick('asofjh3');"></button>
                                     </div>
                                     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="asofjh3">
                                         <nav class="fd-menu">
@@ -212,7 +212,7 @@ export const primaryTree = () => `
                                        <div class="fd-popover fd-popover--right">
                                             <div class="fd-popover__control">
                                                 <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="iouh3"
-                                                aria-haspopup="true" aria-expanded="false" aria-label="More" onclick="onSelectClick('iouh3');"></button>
+                                                aria-haspopup="true" aria-expanded="false" aria-label="More" onclick="onControlClick('iouh3');"></button>
                                             </div>
                                             <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="iouh3">
                                                 <nav class="fd-menu">
@@ -266,7 +266,7 @@ export const primaryTree = () => `
                         <div class="fd-popover fd-popover--right">
                             <div class="fd-popover__control">
                                 <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="jk3333"
-                                aria-haspopup="true" aria-expanded="false" aria-label="More" onclick="onSelectClick('jk3333');"></button>
+                                aria-haspopup="true" aria-expanded="false" aria-label="More" onclick="onControlClick('jk3333');"></button>
                             </div>
                             <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="jk3333">
                                 <nav class="fd-menu">
@@ -304,7 +304,7 @@ export const primaryTree = () => `
         <div class="fd-tree__row">
             <div class="fd-tree__col fd-tree__col--control">
                 <button class="fd-tree__control" aria-label="Expand" aria-controls="lkEDI899"
-                aria-pressed="false" onclick="onSelectClick('lkEDI899');"></button>
+                aria-pressed="false" onclick="onControlClick('lkEDI899');"></button>
                 First Level
             </div>
             <div class="fd-tree__col">
@@ -320,7 +320,7 @@ export const primaryTree = () => `
                 <div class="fd-popover fd-popover--right">
                     <div class="fd-popover__control">
                         <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="asdhjb3"
-                        aria-haspopup="true" aria-expanded="false" aria-label="More" onclick="onSelectClick('asdhjb3');"></button>
+                        aria-haspopup="true" aria-expanded="false" aria-label="More" onclick="onControlClick('asdhjb3');"></button>
                     </div>
                     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="asdhjb3">
                         <nav class="fd-menu">
@@ -370,7 +370,7 @@ export const primaryTree = () => `
                         <div class="fd-popover fd-popover--right">
                             <div class="fd-popover__control">
                                 <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="hkjhkjh3"
-                                aria-haspopup="true" aria-expanded="false" aria-label="More" onclick="onSelectClick('hkjhkjh3');"></button>
+                                aria-haspopup="true" aria-expanded="false" aria-label="More" onclick="onControlClick('hkjhkjh3');"></button>
                             </div>
                             <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="hkjhkjh3">
                                 <nav class="fd-menu">
@@ -422,7 +422,7 @@ export const primaryTree = () => `
                 <div class="fd-popover fd-popover--right">
                     <div class="fd-popover__control">
                         <button class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="ggiuhwer"
-                        aria-haspopup="true" aria-expanded="false" aria-label="More" onclick="onSelectClick('ggiuhwer');"></button>
+                        aria-haspopup="true" aria-expanded="false" aria-label="More" onclick="onControlClick('ggiuhwer');"></button>
                     </div>
                     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="ggiuhwer">
                         <nav class="fd-menu">
