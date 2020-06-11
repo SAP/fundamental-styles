@@ -231,7 +231,7 @@ function onSelectClick(controlId) {
     //toggle all treeitems
     if (isTree) {
         //all triggers
-        const controls = ref.querySelectorAll('.fd-tree__control');
+        const controls = document.querySelectorAll('.fd-tree__control');
         for (let i = 0; i < controls.length; i++) {
             let control = controls[i];
             setPressed(control, !isPressed);
