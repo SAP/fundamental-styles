@@ -259,3 +259,7 @@ body.sb-show-main {
   color: #32363a;
   color: var(--sapTextColor, #32363a);
 }
+
+.sbdocs.sbdocs-preview > :last-child > :first-child > :first-child > :first-child > :first-child {
+  height: 100% !important;
+}
