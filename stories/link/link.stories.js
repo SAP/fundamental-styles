@@ -15,7 +15,9 @@ export const primary = () => `
 <br><br>
 <a class="fd-link" aria-disabled="true">Disabled Link</a>
 <br><br>
-<a href="#" class="fd-link fd-link--inverted">Inverted Link</a>
+<div style="background-color:#314a5e;padding:10px">
+    <a href="#" class="fd-link fd-link--inverted">Inverted Link</a>
+</div>
 <br><br>
 <a href="#" class="fd-link fd-link--subtle">Subtle Link</a>
 <br><br>
