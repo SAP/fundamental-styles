@@ -960,7 +960,7 @@ These are classes used to describe the look of calendar grid element.
 {% endcapture %}
 {% include display-component.html component=default-calendar-compact %}
 
-## Example calendar in mobile mode lanscape orientation
+## Example calendar in mobile mode landscape orientation
 On mobile devices calendar is composed into Dialog window taking full width and height of the device.
 <b>For landscape orientation no [Dialog]({{site.baseurl}}/components/dialog) header element should be used. Dialog footer element is optional.</b>
 Remember that if <code>.fd-calendar__close-button</code> is placed inside navigation section of the calendar then:

@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.21"></a>
+# [0.11.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.20...v0.11.0-rc.21) (2020-06-11)
+
+
+### Features
+
+* add date-picker today actions ([#1058](https://github.com/SAP/fundamental-styles/issues/1058)) ([e4d8a4a](https://github.com/SAP/fundamental-styles/commit/e4d8a4a))
+
+
+
 <a name="0.11.0-rc.20"></a>
 # [0.11.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.19...v0.11.0-rc.20) (2020-06-09)
 
