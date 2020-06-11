@@ -245,6 +245,55 @@ $heading-toc-spacer: $docs-hd-tp + $docs-hd-bp + $docs-hd-ch + $docs-tm;
   }
 }
 
+blockquote {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-left-width: 5px;
+  border-radius: 5px;
+  background: #fffde4;
+  font-size: 1rem;
+
+  &.docs-deprecated {
+    background: var(--fd-color-background-negative);
+    color: var(--fd-color-negative);
+    border-color: var(--fd-color-negative);
+  }
+}
+
+code.docs-code {
+  padding: 2px 4px;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+.fd-dialog-docs-static,
+.fd-message-box-docs-static {
+  &.fd-dialog,
+  .fd-dialog,
+  &.fd-message-box,
+  .fd-message-box {
+    position: static;
+    background-color: transparent;
+  }
+
+  &.fd-dialog__content,
+  .fd-dialog__content,
+  &.fd-message-box__content,
+  .fd-message-box__content {
+    position: static;
+    transform: translate(0%, 0%);
+    width: 30rem;
+    margin: auto;
+    height: auto;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
 .fddocs.fd-info-label {
   margin-right: 5px;
 }

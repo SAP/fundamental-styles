@@ -180,13 +180,77 @@
     }
 })();
 
-function onPopoverClick(controlId) {
-    let popoverRef = document.getElementById(controlId);
-
-    if (popoverRef.getAttribute("aria-hidden") === "true") {
-        popoverRef.setAttribute("aria-hidden", "false");
+function toggleDialog(dialogId, show) {
+    let dialog = document.getElementById(dialogId);
+    if(!dialog){
+        console.error('No dialog with id', dialogId);
+        return;
+    }
+    if (show) {
+        dialog.classList.add('fd-dialog--active');
     } else {
-        popoverRef.setAttribute("aria-hidden", "true");
+        dialog.classList.remove('fd-dialog--active');
+    }
+}
+
+function onControlClick(controlId) {
+    let ref = document.getElementById(controlId);
+
+    if (ref.getAttribute("aria-hidden") === "true") {
+        ref.setAttribute("aria-hidden", "false");
+    } else {
+        ref.setAttribute("aria-hidden", "true");
+    }
+
+    // tree
+    var isTree = ref.getAttribute('role') === 'tree';
+    var isTreeItem = ref.getAttribute('role') === 'treeitem';
+
+    function setPressed(el, bool) {
+        el.setAttribute('aria-pressed', bool);
+        if (bool) {
+            el.classList.add('is-pressed');
+        } else {
+            el.classList.remove('is-pressed');
+        }
+    }
+
+    function setExpanded(el, bool) {
+        el.setAttribute('aria-expanded', bool);
+        //get group
+        var group = el.querySelector('[role=group]');
+        if (group) {
+            group.setAttribute('aria-hidden', !bool);
+            if (!bool) {
+                group.classList.add('is-hidden');
+            } else {
+                group.classList.remove('is-hidden');
+            }
+        }
+    }
+
+    let isPressed;
+    //handle the primary trigger
+    if (isTree || isTreeItem) {
+        const control = ref.querySelector('.fd-tree__control');
+        isPressed = control.getAttribute('aria-pressed') === 'true';
+        setPressed(control, !isPressed);
+    }
+    //toggle a single treeitem
+    if (isTreeItem) {
+        setExpanded(ref, !isPressed);
+    }
+    //toggle all treeitems
+    if (isTree) {
+        //all triggers
+        const controls = document.querySelectorAll('.fd-tree__control');
+        for (let i = 0; i < controls.length; i++) {
+            let control = controls[i];
+            setPressed(control, !isPressed);
+            targetId = control.getAttribute('aria-controls');
+            ref = document.getElementById(targetId);
+            setExpanded(ref, !isPressed);
+        }
     }
 }
 
