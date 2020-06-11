@@ -12,7 +12,8 @@ import {
     Title,
     Subtitle,
     DocsStory,
-  } from '@storybook/addon-docs/blocks';
+} from '@storybook/addon-docs/blocks';
+import InfoLabel from './InfoLabel';
 
 const DocsPage = () => {
     // setup toc bot
@@ -27,35 +28,50 @@ const DocsPage = () => {
                 hasInnerContainers: true
             }
         );
-        document.querySelectorAll('.toc-link').forEach( x => x.setAttribute('target','_self'));
+        document.querySelectorAll('.toc-link').forEach(x => x.setAttribute('target', '_self'));
     }, []);
 
     const context = useContext(DocsContext);
 
     // do not display Dev or Visual stories in docs
-    if(context.kind === 'Visual' || /Dev/.test(context.kind)) {
+    if (context.kind === 'Visual' || /Dev/.test(context.kind)) {
         return null;
     }
 
     // do not display disabled stories (dev only)
     const stories = context.storyStore?.getStoriesForKind(context.kind)?.filter((s) => !s.parameters?.docs?.disable);
 
+    const renderInfoLabels = (tags) => {
+        let infoLabels = []
+        tags?.forEach((tag) => {
+            infoLabels.push(<InfoLabel
+                tag={tag}
+            />)
+        })
+        return (
+            <>
+                {infoLabels}
+            </>
+        );
+    }
+
     return (
         <>
-        <Header />
-        <Title />
-        <Toc />
-        <Subtitle />
-        {context?.parameters?.description && <Description desc={context?.parameters?.description} />}
-        <Heading>Examples</Heading>
-        {stories.map((story) => story && <DocsStory
-            key={story.id}
-            {...story}
-            expanded
-            withToolbar />)}
-        <Community />
-        <Footer />
-      </>
+            <Header />
+            <Title />
+            <Toc />
+            <Subtitle />
+            {renderInfoLabels(context?.parameters?.tags)}
+            {context?.parameters?.description && <Description desc={context?.parameters?.description} />}
+            <Heading>Examples</Heading>
+            {stories.map((story) => story && <DocsStory
+                key={story.id}
+                {...story}
+                expanded
+                withToolbar />)}
+            <Community />
+            <Footer />
+        </>
     )
 }
 
