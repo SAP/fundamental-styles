@@ -11,9 +11,9 @@ export default {
     parameters: {
         description: `Icons are used throughout the UI to save space, allow for visual clarity and focus, and for fun.
         Icons can be used adaptively if desired, but at this point they are used more as visual elements within other components.
-        See [Getting Started](../getting-started.html#project-configuration) for instructions for making the SAP icon font available on your page.`
-    },
-    tags: ['development']
+        See [Getting Started](../getting-started.html#project-configuration) for instructions for making the SAP icon font available on your page.`,
+        tags: ['development']
+    }
 };
 
 export const sizes = () => `
