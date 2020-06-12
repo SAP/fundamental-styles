@@ -10,7 +10,7 @@ summary:
 tags: [f3, a11y, theme]
 ---
 
-The File uploader componet is an opinionated composistion of the input and button components.
+The File uploader component is an opinionated composistion of the input and button components.
 Please see the `input` and `button` components documentation for the complete list of modifiers.
 <br/><br/>
 `File Uploader` allows user to select the files when click on the input or browse button.
