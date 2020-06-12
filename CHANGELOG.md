@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.33"></a>
+# [0.11.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.32...v0.11.0-rc.33) (2020-06-12)
+
+
+### Features
+
+* remove form-input-message-group and introduce textarea storybook ([#1148](https://github.com/SAP/fundamental-styles/issues/1148)) ([d3cc308](https://github.com/SAP/fundamental-styles/commit/d3cc308))
+
+
+
 <a name="0.11.0-rc.32"></a>
 # [0.11.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.31...v0.11.0-rc.32) (2020-06-12)
 
