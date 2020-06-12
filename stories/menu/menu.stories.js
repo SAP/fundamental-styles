@@ -8,6 +8,7 @@ import '../../dist/dialog.css';
 export default {
     title: 'Components/Menu',
     parameters: {
+        tags: ['f3', 'a11y', 'theme', 'development'],
         description: `
 The menu component is the listing structure with optional headers to create menus.
 
@@ -16,11 +17,6 @@ Commonly used as the contents when composing "dropdowns", "contextual menus", et
     }
 };
 
-/** The basic stucture of a menu.
-* Place the menu item title in a `<span>` tag using class `fd-menu__title` and wrap it in the `fd-menu__link` and `fd-menu__item` classes as shown.
-* Default mode is the cozy tablet mode, no class has to be added for this.
-* Use class modifier`fd-menu--compact` on menu container level for desktop mode.
-**/
 
 export const desktopAndTablet = () => `
 <div style="width: 50%; display: inline-block">    
@@ -83,11 +79,12 @@ export const desktopAndTablet = () => `
 `;
 
 desktopAndTablet.storyName = 'Desktop and Tablet Modes';
-
-/*
-* The basic stucture of a menu in mobile where it opens as a dialog. Use class `fd-menu--mobile` on menu container level.
-* Example shows the parent menu's item in active state to simulate a pressed/touched event. Submenu appears in its own fullscreen dialog in mobile devices. The device's back button takes one back to the parent menu fullscreen dialog.
-*/
+desktopAndTablet.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: 'The basic stucture of a menu. Place the menu item title in a `<span>` tag using class `fd-menu__title` and wrap it in the `fd-menu__link` and `fd-menu__item` classes as shown. Default mode is the cozy tablet mode, no class has to be added for this. Use class modifier`fd-menu--compact` on menu container level for desktop mode.'
+    }
+};
 
 export const mobileCozyMode = () => `
 <div style="width: 50%; display: inline-block" class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
@@ -197,12 +194,12 @@ export const mobileCozyMode = () => `
 `;
 
 mobileCozyMode.storyName = 'Mobile Cozy Mode';
-
-/*
-* To add separators between the items,
-* use the class `fd-menu__separator` in its own `<span>`
-* after the `<li>` item where you want the separation.
-*/
+mobileCozyMode.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: 'The basic stucture of a menu in mobile where it opens as a dialog. Use class <code>fd-menu--mobile</code> on menu container level. Example shows the parent menu\'s item in active state to simulate a pressed/touched event. Submenu appears in its own fullscreen dialog in mobile devices. The device\'s back button takes one back to the parent menu fullscreen dialog.'
+    }
+};
 
 export const seperatedItems = () => `
 <nav class="fd-menu">
@@ -239,16 +236,12 @@ export const seperatedItems = () => `
 `;
 
 seperatedItems.storyName = 'List with separated items';
-
-/* Simulate different states to show state behaviour between the items.
-*- For simulating hover state, use class `is-hover` on the menu item.
-* - For simulating active state, use class `is-active` on the menu item.
-* - For simulating selected state, use class `is-selected` on the menu item.
-* - For simulating selected-hover state, use classes `is-selected is-hover` on the menu item.
-* - For simulating disabled state, use class `is-disabled` on the menu item.
-*
-* To remove default box shadow from menu containers use `fd-menu__list--no-shadow` or `fd-menu__sublist--no-shadow`.
-*/
+seperatedItems.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: 'To add separators between the items, use the class `fd-menu__separator` in its own `<span>` after the `<li>` item where you want the separation.'
+    }
+};
 
 export const differentStates = () => `
 <div style="width: 50%; display: inline-block">
@@ -326,14 +319,22 @@ export const differentStates = () => `
 </div>
 `;
 
-seperatedItems.storyName = 'List different states';
+differentStates.storyName = 'List different states';
+differentStates.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `
+Simulate different states to show state behaviour between the items.
 
-/* To create an addon before or after `fd-menu__title` element, use elements with folowing classes inside `fd-menu__link`:
-* - `fd-menu__addon-before`   - styles addon befotre `fd-menu__title`
-* - `fd-menu__addon-after`    - styles addon after `fd-menu__title`
-* - `fd-menu__shortcut`       - styles shortcut placed after `fd-menu__title`
-* According to Fiori3 design shortcuts should be on desktop devices.
-*/
+- For simulating hover state, use class <code>is-hover</code> on the menu item.
+- For simulating active state, use class <code>is-active</code> on the menu item.
+- For simulating selected state, use class <code>is-selected</code> on the menu item.
+- For simulating selected-hover state, use classes <code>is-selected is-hover</code> on the menu item.
+- For simulating disabled state, use class <code>is-disabled</code> on the menu item.
+
+To remove default box shadow from menu containers use <code>fd-menu__list--no-shadow</code> or <code>fd-menu__sublist--no-shadow</code>.`
+    }
+};
 
 export const menuIcon = () => `
 <nav class="fd-menu">
@@ -372,15 +373,17 @@ export const menuIcon = () => `
 `;
 
 menuIcon.storyName = 'List with Icon';
-
-/*
-* Menu with an additional submenu that can be used for items that can be further grouped under a level but not necessarily visible to user always.
-* For a submenu, do the following:
-* - Specify `fd-menu__link` class normally like other items. Use `has-child` class to apply styles for parent containing the submenu.
-* - Create an addon indicating submenu level using `fd-menu__addon-after--submenu` class and an icon.
-* - After the end of the `fd-menu__link` container, use `fd-menu__sublist` class in its own `<ul>`
-* - Follow the same template for submenu as you would for a normal menu. The same `fd-menu__item` and `fd-menu__link` works for the subitems too.
-*/
+menuIcon.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: `
+To create an addon before or after <code>fd-menu__title</code> element, use elements with folowing classes inside <code>fd-menu__link<code>:
+- <code>fd-menu__addon-before</code>   - styles addon befotre <code>fd-menu__title</code>
+- <code>fd-menu__addon-after</code>    - styles addon after <code>fd-menu__title</code>
+- <code>fd-menu__shortcut</code>       - styles shortcut placed after <code>fd-menu__title</code>
+According to Fiori3 design shortcuts should be on desktop devices.`
+    }
+};
 
 export const withSubmenu = () => `
 <nav class="fd-menu">
@@ -433,10 +436,20 @@ export const withSubmenu = () => `
     </ul>
 </nav>
 `;
+withSubmenu.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: `
+Menu with an additional submenu that can be used for items that can be further grouped under a level but not necessarily visible to user always.
 
-/*
-* The basic stucture of a menu in RTL simulated mode.
-*/
+For a submenu, do the following:
+- Specify <code>fd-menu__link</code> class normally like other items. Use <code>has-child</code> class to apply styles for parent containing the submenu.
+- Create an addon indicating submenu level using <code>fd-menu__addon-after--submenu</code> class and an icon.
+- After the end of the <code>fd-menu__link</code> container, use <code>fd-menu__sublist</code> class in its own <code><ul><code>
+- Follow the same template for submenu as you would for a normal menu. The same <code>fd-menu__item</code> and <code>fd-menu__link</code> works for the subitems too.
+`
+    }
+};
 
 export const RTL = () => `
 <nav class="fd-menu" dir="rtl">
@@ -472,3 +485,10 @@ export const RTL = () => `
     </ul>
 </nav>
 `;
+
+RTL.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'The basic stucture of a menu in RTL simulated mode.'
+    }
+};
