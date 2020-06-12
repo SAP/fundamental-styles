@@ -1,9 +1,6 @@
 import '../../dist/button.css';
-import '../../dist/button-split.css';
 import '../../dist/icon.css';
 import '../../dist/menu.css';
-import '../../dist/popover.css';
-import '../../dist/dialog.css';
 
 export default {
     title: 'Components/Menu',
@@ -375,7 +372,7 @@ export const menuIcon = () => `
 menuIcon.storyName = 'List with Icon';
 menuIcon.parameters = {
     docs: {
-        iframeHeight: 200,
+        iframeHeight: 220,
         storyDescription: `
 To create an addon before or after <code>fd-menu__title</code> element, use elements with folowing classes inside <code>fd-menu__link<code>:
 - <code>fd-menu__addon-before</code>   - styles addon befotre <code>fd-menu__title</code>
@@ -438,7 +435,7 @@ export const withSubmenu = () => `
 `;
 withSubmenu.parameters = {
     docs: {
-        iframeHeight: 200,
+        iframeHeight: 220,
         storyDescription: `
 Menu with an additional submenu that can be used for items that can be further grouped under a level but not necessarily visible to user always.
 
@@ -488,7 +485,7 @@ export const RTL = () => `
 
 RTL.parameters = {
     docs: {
-        iframeHeight: 200,
+        iframeHeight: 220,
         storyDescription: 'The basic stucture of a menu in RTL simulated mode.'
     }
 };
