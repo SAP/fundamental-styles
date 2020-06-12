@@ -11,6 +11,7 @@ import '../../dist/shellbar.css';
 export default {
     title: 'Components/Shellbar',
     parameters: {
+        tags: ['f3', 'a11y', 'theme'],
         description: `The shellbar offers consistent, responsive navigation across all products and applications.
         Includes support for branding, product navigation, search, notifications, user settings, and CoPilot. This is a composite component comprised of mandatory and optional elements.
         <h2>How it works </h2> 
@@ -92,7 +93,11 @@ export const primary = () => `
   </div>
 </div>
 `;
-
+primary.parameters = {
+    docs: {
+        iframeHeight: 150
+    }
+};
 /**This example includes the product menu for navigating to applications within the product and shows a search box.*/
 
 export const productMenuAndSearch = () => `
@@ -180,6 +185,11 @@ export const productMenuAndSearch = () => `
 </div>
 </div>
 `;
+productMenuAndSearch.parameters = {
+    docs: {
+        iframeHeight: 150
+    }
+};
 
 /**When a product has multiple links, the product links should collapse into an overflow menu on mobile screens.
 * All actions, except for the user menu, should be collapsed. See the placement of the `.fd-shellbar__action--mobile` container below. */
@@ -275,7 +285,11 @@ export const linksWithCollapsibleMenu = () => `
   </div>
 </div>
 `;
-
+linksWithCollapsibleMenu.parameters = {
+    docs: {
+        iframeHeight: 150
+    }
+};
 /**
  * This example shows an application with CoPilot, integration with other products, and a customized logo.
 For more information about the Product Switch, see [Product Switch](product-switch.html) component.
@@ -434,3 +448,8 @@ export const productSwitchandCopilot = () => `
   </div>
 </div>
 `;
+productSwitchandCopilot.parameters = {
+    docs: {
+        iframeHeight: 150
+    }
+};
