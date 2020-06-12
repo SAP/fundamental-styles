@@ -3,10 +3,7 @@ import '../../dist/message-box.css';
 export default {
     title: 'Components/Message Box',
     parameters: {
-        description: `
-        Message Box is used to display simple messages (text) to the user. These messages could be Standard (Default),
-        Confirmation, Error, Success, Warning and Information (Neutral). The Message Box component inherits the look
-        and the basic behaviour (excludes dragging and resizing) of the Dialog component.`,
+        description: 'Message Box is used to display simple messages (text) to the user. These messages could be Standard (Default), Confirmation, Error, Success, Warning and Information (Neutral). The Message Box component inherits the look and the basic behaviour (excludes dragging and resizing) of the Dialog component.',
         tags: ['f3', 'a11y', 'theme']
     }
 };
@@ -230,7 +227,7 @@ types.storyName = 'Types';
 
 types.parameters = {
     docs: {
-        iframeHeight: messageBoxHeight * 2,
+        iframeHeight: messageBoxHeight * 6.5,
         storyDescription: `Available options are \`standard | confirmation | error | success | warning | information\`.
         Add modifier classes \`fd-message-box--confirmation\`, \`fd-message-box--error\`, \`fd-message-box--success\`,
         \`fd-message-box--warning\`, and \`fd-message-box--information\` to the container class.
@@ -417,7 +414,7 @@ export const responsive = () =>
 responsive.storyName = 'Responsive';
 responsive.parameters = {
     docs: {
-        iframeHeight: messageBoxHeight * 2,
+        iframeHeight: messageBoxHeight * 4,
         storyDescription: `
 By default the Message Box body has 1rem padding all around the content. The values for the paddings in the header and the footer are inherited from the Bar component. 
 
@@ -472,6 +469,6 @@ rtl.storyName = 'Rtl';
 rtl.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `Message Box in RTL mode`
+        storyDescription: 'Message Box in RTL mode'
     }
 };
