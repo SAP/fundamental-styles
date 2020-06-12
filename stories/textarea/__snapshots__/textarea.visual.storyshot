@@ -1,5 +1,1942 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Visual Action Bar 1`] = `
+<div>
+  <div>
+    
+
+    <div
+      class="fd-action-bar"
+    >
+      
+    
+      <div
+        class="fd-action-bar__header"
+      >
+        
+        
+        <div
+          class="fd-action-bar__back"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"
+          />
+          
+        
+        </div>
+        
+        
+        <h3
+          class="fd-action-bar__title"
+        >
+          Page Title
+        </h3>
+        
+        
+        <div
+          class="fd-action-bar__actions"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--compact"
+          >
+            Button
+          </button>
+          
+            
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Button
+          </button>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <p
+        class="fd-action-bar__description fd-action-bar__description--back"
+      >
+        Action bar Description 
+      </p>
+      
+
+    </div>
+    
+
+    <br />
+    <br />
+    
+
+    <h3>
+      RTL Support
+    </h3>
+    
+
+    <br />
+    
+
+    <div
+      class="fd-action-bar"
+      dir="rtl"
+    >
+      
+    
+      <div
+        class="fd-action-bar__header"
+      >
+        
+        
+        <div
+          class="fd-action-bar__back"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"
+          />
+          
+        
+        </div>
+        
+        
+        <h3
+          class="fd-action-bar__title"
+        >
+          Page Title
+        </h3>
+        
+        
+        <div
+          class="fd-action-bar__actions"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--compact"
+          >
+            Button
+          </button>
+          
+            
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Button
+          </button>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <p
+        class="fd-action-bar__description fd-action-bar__description--back"
+      >
+        Action bar Description 
+      </p>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-action-bar"
+    >
+      
+    
+      <div
+        class="fd-action-bar__header"
+      >
+        
+        
+        <h3
+          class="fd-action-bar__title"
+        >
+          Page Title
+        </h3>
+        
+        
+        <div
+          class="fd-action-bar__actions"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--compact"
+          >
+            Button
+          </button>
+          
+            
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Button
+          </button>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <p
+        class="fd-action-bar__description"
+      >
+        Action bar Description 
+      </p>
+      
+
+    </div>
+    
+
+    <br />
+    <br />
+    
+
+    <h3>
+      RTL Support
+    </h3>
+    
+
+    <br />
+    
+
+    <div
+      class="fd-action-bar"
+      dir="rtl"
+    >
+      
+    
+      <div
+        class="fd-action-bar__header"
+      >
+        
+        
+        <h3
+          class="fd-action-bar__title"
+        >
+          Page Title
+        </h3>
+        
+        
+        <div
+          class="fd-action-bar__actions"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--compact"
+          >
+            Button
+          </button>
+          
+            
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Button
+          </button>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <p
+        class="fd-action-bar__description"
+      >
+        Action bar Description 
+      </p>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-action-bar"
+    >
+      
+    
+      <div
+        class="fd-action-bar__header"
+      >
+        
+        
+        <div
+          class="fd-action-bar__back"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"
+          />
+          
+        
+        </div>
+        
+        
+        <h3
+          class="fd-action-bar__title"
+        >
+          Page Title
+        </h3>
+        
+        
+        <div
+          class="fd-action-bar__actions"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--compact"
+          >
+            Button
+          </button>
+          
+            
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Button
+          </button>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+    <br />
+    <br />
+    
+
+    <h3>
+      RTL Support
+    </h3>
+    
+
+    <br />
+    
+
+    <div
+      class="fd-action-bar"
+      dir="rtl"
+    >
+      
+    
+      <div
+        class="fd-action-bar__header"
+      >
+        
+        
+        <div
+          class="fd-action-bar__back"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"
+          />
+          
+        
+        </div>
+        
+        
+        <h3
+          class="fd-action-bar__title"
+        >
+          Page Title
+        </h3>
+        
+        
+        <div
+          class="fd-action-bar__actions"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--compact"
+          >
+            Button
+          </button>
+          
+            
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Button
+          </button>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-action-bar"
+    >
+      
+    
+      <div
+        class="fd-action-bar__header"
+      >
+        
+        
+        <div
+          class="fd-action-bar__back"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"
+          />
+          
+        
+        </div>
+        
+        
+        <div
+          class="fd-action-bar__title"
+        >
+          Page Title Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long.
+        
+        </div>
+        
+        
+        <div
+          class="fd-action-bar__actions"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--compact"
+          >
+            Button
+          </button>
+          
+            
+          <button
+            class="fd-button fd-button--compact"
+          >
+            Button
+          </button>
+          
+            
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Button
+          </button>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <p
+        class="fd-action-bar__description fd-action-bar__description--back"
+      >
+        Action bar Description Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long
+    
+      </p>
+      
+
+    </div>
+    
+
+    <br />
+    <br />
+    
+
+    <h3>
+      RTL Support
+    </h3>
+    
+
+    <br />
+    
+
+    <div
+      class="fd-action-bar"
+      dir="rtl"
+    >
+      
+    
+      <div
+        class="fd-action-bar__header"
+      >
+        
+        
+        <div
+          class="fd-action-bar__back"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"
+          />
+          
+        
+        </div>
+        
+        
+        <div
+          class="fd-action-bar__title"
+        >
+          Page Title Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long.
+        
+        </div>
+        
+        
+        <div
+          class="fd-action-bar__actions"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--compact"
+          >
+            Button
+          </button>
+          
+            
+          <button
+            class="fd-button fd-button--compact"
+          >
+            Button
+          </button>
+          
+            
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Button
+          </button>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+     
+      <p
+        class="fd-action-bar__description fd-action-bar__description--back"
+      >
+        Action bar Description Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long
+     
+      </p>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-action-bar"
+    >
+      
+    
+      <div
+        class="fd-action-bar__header"
+      >
+        
+      
+        <h3
+          class="fd-action-bar__title"
+        >
+          
+          Page Title
+      
+        </h3>
+        
+       
+        <div
+          class="fd-action-bar__actions"
+        >
+          
+            
+          <div
+            class="fd-popover"
+          >
+            
+                
+            <div
+              class="fd-popover__control"
+            >
+              
+                    
+              <button
+                aria-controls="wgxzK859"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="More"
+                class="fd-button fd-button--transparent fd-button--compact sap-icon--overflow"
+              />
+              
+                
+            </div>
+            
+                
+            <div
+              aria-hidden="true"
+              class="fd-popover__body fd-popover__body--right"
+              id="wgxzK859"
+            >
+              
+                    
+              <nav
+                class="fd-menu"
+                id=""
+              >
+                
+                        
+                <ul
+                  class="fd-menu__list fd-menu__list--no-shadow"
+                >
+                  
+                            
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                
+                    <a
+                      class="fd-menu__link"
+                      href="#"
+                    >
+                      
+                                    
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Edit
+                      </span>
+                      
+                                
+                    </a>
+                    
+                            
+                  </li>
+                  
+                            
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                
+                    <a
+                      class="fd-menu__link"
+                      href="#"
+                    >
+                      
+                                    
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Delete
+                      </span>
+                      
+                                
+                    </a>
+                    
+                            
+                  </li>
+                  
+                            
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                
+                    <a
+                      class="fd-menu__link"
+                      href="#"
+                    >
+                      
+                                    
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Assign
+                      </span>
+                      
+                                
+                    </a>
+                    
+                            
+                  </li>
+                  
+                            
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                
+                    <a
+                      class="fd-menu__link"
+                      href="#"
+                    >
+                      
+                                    
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Expire
+                      </span>
+                      
+                                
+                    </a>
+                    
+                            
+                  </li>
+                  
+                            
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                
+                    <a
+                      class="fd-menu__link"
+                      href="#"
+                    >
+                      
+                                    
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Archive
+                      </span>
+                      
+                                
+                    </a>
+                    
+                            
+                  </li>
+                  
+                        
+                </ul>
+                
+                    
+              </nav>
+              
+               
+            </div>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+
+    <div
+      class="fd-action-bar fd-action-bar--m_l"
+    >
+      
+    
+      <div
+        class="fd-action-bar__header"
+      >
+        
+        
+        <div
+          class="fd-action-bar__back"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"
+          />
+          
+        
+        </div>
+        
+        
+        <h3
+          class="fd-action-bar__title"
+        >
+          Page Title
+        </h3>
+        
+        
+        <div
+          class="fd-action-bar__actions"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--compact"
+          >
+            Button
+          </button>
+          
+            
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Button
+          </button>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <p
+        class="fd-action-bar__description fd-action-bar__description--back"
+      >
+        Action bar Description
+      </p>
+      
+
+    </div>
+    
+
+    <br />
+    <br />
+    
+
+    <h3>
+      RTL Support
+    </h3>
+    
+
+    <br />
+    
+
+    <div
+      class="fd-action-bar fd-action-bar--m_l"
+      dir="rtl"
+    >
+      
+    
+      <div
+        class="fd-action-bar__header"
+      >
+        
+        
+        <div
+          class="fd-action-bar__back"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"
+          />
+          
+        
+        </div>
+        
+        
+        <h3
+          class="fd-action-bar__title"
+        >
+          Page Title
+        </h3>
+        
+        
+        <div
+          class="fd-action-bar__actions"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--compact"
+          >
+            Button
+          </button>
+          
+            
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Button
+          </button>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <p
+        class="fd-action-bar__description fd-action-bar__description--back"
+      >
+        Action bar Description
+      </p>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class=" fd-action-bar fd-action-bar--xl"
+    >
+      
+    
+      <div
+        class="fd-action-bar__header"
+      >
+        
+        
+        <div
+          class="fd-action-bar__back"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"
+          />
+          
+        
+        </div>
+        
+        
+        <h3
+          class="fd-action-bar__title"
+        >
+          Page Title
+        </h3>
+        
+        
+        <div
+          class="fd-action-bar__actions"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--compact"
+          >
+            Button
+          </button>
+          
+            
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Button
+          </button>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <p
+        class="fd-action-bar__description fd-action-bar__description--back"
+      >
+        Action bar Description 
+      </p>
+      
+
+    </div>
+    
+
+    <br />
+    <br />
+    
+
+    <h3>
+      RTL Support
+    </h3>
+    
+
+    <br />
+    
+
+    <div
+      class=" fd-action-bar fd-action-bar--xl"
+      dir="rtl"
+    >
+      
+    
+      <div
+        class="fd-action-bar__header"
+      >
+        
+        
+        <div
+          class="fd-action-bar__back"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"
+          />
+          
+        
+        </div>
+        
+        
+        <h3
+          class="fd-action-bar__title"
+        >
+          Page Title
+        </h3>
+        
+        
+        <div
+          class="fd-action-bar__actions"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--compact"
+          >
+            Button
+          </button>
+          
+            
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Button
+          </button>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <p
+        class="fd-action-bar__description fd-action-bar__description--back"
+      >
+        Action bar Description 
+      </p>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      style="width:319px;"
+    >
+      
+    
+      <div
+        class="fd-action-bar fd-action-bar--s"
+      >
+         
+        
+        <div
+          class="fd-action-bar__header"
+        >
+          
+            
+          <div
+            class="fd-action-bar__back"
+          >
+            
+                
+            <button
+              aria-label="Back"
+              class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
+            />
+            
+            
+          </div>
+          
+            
+          <h3
+            class="fd-action-bar__title"
+          >
+            Action Bar with description and back button
+          </h3>
+          
+            
+          <div
+            class="fd-action-bar__actions"
+          >
+            
+                
+            <div
+              class="fd-popover"
+            >
+              
+                    
+              <div
+                class="fd-popover__control"
+              >
+                
+                        
+                <button
+                  aria-controls="wgxzK85"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  aria-label="More"
+                  class="fd-button fd-button--transparent sap-icon--overflow"
+                />
+                
+                    
+              </div>
+              
+                    
+              <div
+                aria-hidden="true"
+                class="fd-popover__body"
+                id="wgxzK85"
+              >
+                
+                        
+                <nav
+                  class="fd-menu"
+                  id=""
+                >
+                  
+                            
+                  <ul
+                    class="fd-menu__list fd-menu__list--no-shadow"
+                  >
+                    
+                                
+                    <li
+                      class="fd-menu__item"
+                    >
+                      
+                                    
+                      <a
+                        class="fd-menu__link"
+                        href="#"
+                      >
+                        
+                                        
+                        <span
+                          class="fd-menu__title"
+                        >
+                          Option 1
+                        </span>
+                        
+                                    
+                      </a>
+                      
+                                
+                    </li>
+                    
+                                
+                    <li
+                      class="fd-menu__item"
+                    >
+                      
+                                    
+                      <a
+                        class="fd-menu__link"
+                        href="#"
+                      >
+                        
+                                        
+                        <span
+                          class="fd-menu__title"
+                        >
+                          Option 2
+                        </span>
+                        
+                                    
+                      </a>
+                      
+                                
+                    </li>
+                    
+                                
+                    <li
+                      class="fd-menu__item"
+                    >
+                      
+                                    
+                      <a
+                        class="fd-menu__link"
+                        href="#"
+                      >
+                        
+                                        
+                        <span
+                          class="fd-menu__title"
+                        >
+                          Option 3
+                        </span>
+                        
+                                    
+                      </a>
+                      
+                                
+                    </li>
+                    
+                                
+                    <li
+                      class="fd-menu__item"
+                    >
+                      
+                                    
+                      <a
+                        class="fd-menu__link"
+                        href="#"
+                      >
+                        
+                                        
+                        <span
+                          class="fd-menu__title"
+                        >
+                          Option 4
+                        </span>
+                        
+                                    
+                      </a>
+                      
+                                
+                    </li>
+                    
+                            
+                  </ul>
+                  
+                        
+                </nav>
+                
+                    
+              </div>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+    <br />
+    <br />
+    
+
+    <h3>
+      RTL Support
+    </h3>
+    
+
+    <br />
+    
+
+    <div
+      dir="rtl"
+      style="width:319px;"
+    >
+      
+    
+      <div
+        class="fd-action-bar fd-action-bar--s"
+      >
+         
+        
+        <div
+          class="fd-action-bar__header"
+        >
+          
+            
+          <div
+            class="fd-action-bar__back"
+          >
+            
+                
+            <button
+              aria-label="Back"
+              class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"
+            />
+            
+            
+          </div>
+          
+            
+          <h3
+            class="fd-action-bar__title"
+          >
+            Action Bar with description and back button
+          </h3>
+          
+            
+          <div
+            class="fd-action-bar__actions"
+          >
+            
+                
+            <div
+              class="fd-popover"
+            >
+              
+                    
+              <div
+                class="fd-popover__control"
+              >
+                
+                        
+                <button
+                  aria-controls="wgxzK86"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  aria-label="More"
+                  class="fd-button fd-button--transparent sap-icon--overflow"
+                />
+                
+                    
+              </div>
+              
+                    
+              <div
+                aria-hidden="true"
+                class="fd-popover__body"
+                id="wgxzK86"
+              >
+                
+                        
+                <nav
+                  class="fd-menu"
+                  id=""
+                >
+                  
+                            
+                  <ul
+                    class="fd-menu__list fd-menu__list--no-shadow"
+                  >
+                    
+                                
+                    <li
+                      class="fd-menu__item"
+                    >
+                      
+                                    
+                      <a
+                        class="fd-menu__link"
+                        href="#"
+                      >
+                        
+                                        
+                        <span
+                          class="fd-menu__title"
+                        >
+                          Option 1
+                        </span>
+                        
+                                    
+                      </a>
+                      
+                                
+                    </li>
+                    
+                                
+                    <li
+                      class="fd-menu__item"
+                    >
+                      
+                                    
+                      <a
+                        class="fd-menu__link"
+                        href="#"
+                      >
+                        
+                                        
+                        <span
+                          class="fd-menu__title"
+                        >
+                          Option 2
+                        </span>
+                        
+                                    
+                      </a>
+                      
+                                
+                    </li>
+                    
+                                
+                    <li
+                      class="fd-menu__item"
+                    >
+                      
+                                    
+                      <a
+                        class="fd-menu__link"
+                        href="#"
+                      >
+                        
+                                        
+                        <span
+                          class="fd-menu__title"
+                        >
+                          Option 3
+                        </span>
+                        
+                                    
+                      </a>
+                      
+                                
+                    </li>
+                    
+                                
+                    <li
+                      class="fd-menu__item"
+                    >
+                      
+                                    
+                      <a
+                        class="fd-menu__link"
+                        href="#"
+                      >
+                        
+                                        
+                        <span
+                          class="fd-menu__title"
+                        >
+                          Option 4
+                        </span>
+                        
+                                    
+                      </a>
+                      
+                                
+                    </li>
+                    
+                            
+                  </ul>
+                  
+                        
+                </nav>
+                
+                    
+              </div>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+</div>
+`;
+
+exports[`Storyshots Visual Breadcrumb 1`] = `
+<div>
+  <div>
+    
+
+    <ul
+      class="fd-breadcrumb"
+    >
+      
+    
+      <li
+        class="fd-breadcrumb__item"
+      >
+        <a
+          class="fd-breadcrumb__link"
+          href="#"
+          tabindex="0"
+        >
+          Products
+        </a>
+      </li>
+      
+    
+      <li
+        class="fd-breadcrumb__item"
+      >
+        <a
+          class="fd-breadcrumb__link"
+          href="#"
+          tabindex="0"
+        >
+          Suppliers
+        </a>
+      </li>
+      
+    
+      <li
+        class="fd-breadcrumb__item"
+      >
+        <a
+          class="fd-breadcrumb__link"
+          href="#"
+          tabindex="0"
+        >
+          Titanium
+        </a>
+      </li>
+      
+    
+      <li
+        class="fd-breadcrumb__item"
+      >
+        <a
+          class="fd-breadcrumb__link"
+          href="#"
+          tabindex="0"
+        >
+          Ultra Portable
+        </a>
+      </li>
+      
+    
+      <li
+        class="fd-breadcrumb__item"
+      >
+        <a
+          class="fd-breadcrumb__link"
+          href="#"
+          tabindex="0"
+        >
+          12 inch
+        </a>
+      </li>
+      
+    
+      <li
+        class="fd-breadcrumb__item"
+      >
+        <a
+          class="fd-breadcrumb__link"
+          href="#"
+          tabindex="0"
+        >
+          Super portable deluxe
+        </a>
+      </li>
+      
+    
+      <li
+        class="fd-breadcrumb__item"
+      >
+        Laptop
+      </li>
+      
+
+    </ul>
+    
+
+  </div>
+  <div>
+    
+
+    <ul
+      class="fd-breadcrumb"
+    >
+      
+    
+      <li
+        class="fd-breadcrumb__item"
+      >
+        
+        
+        <div
+          class="fd-popover"
+        >
+          
+            
+          <div
+            class="fd-popover__control"
+          >
+            
+                
+            <div
+              aria-controls="breadcrumb1"
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="fd-breadcrumb__link"
+              onclick="onPopoverClick('breadcrumb1');"
+            >
+              
+                ...
+                
+              <span
+                class="fd-breadcrumb__dropdown-icon"
+              />
+              
+                
+            </div>
+            
+            
+          </div>
+          
+            
+          <div
+            aria-hidden="true"
+            class="fd-popover__body fd-popover__body--no-arrow"
+            id="breadcrumb1"
+          >
+            
+                
+            <div
+              class="fd-popover__wrapper"
+            >
+              
+                    
+              <ul
+                class="fd-list fd-list--navigation"
+                role="list"
+              >
+                
+                        
+                <li
+                  class="fd-list__item fd-list__item--link"
+                  role="listitem"
+                  tabindex="-1"
+                >
+                  
+                            
+                  <a
+                    class="fd-list__link"
+                    href="https://sap.github.io/fundamental-styles/"
+                    tabindex="0"
+                  >
+                    
+                            
+                    <span
+                      class="fd-list__title"
+                    >
+                      Products
+                    </span>
+                    
+                            
+                  </a>
+                  
+                        
+                </li>
+                
+                        
+                <li
+                  class="fd-list__item fd-list__item--link"
+                  role="listitem"
+                  tabindex="-1"
+                >
+                  
+                            
+                  <a
+                    class="fd-list__link"
+                    href="https://sap.github.io/fundamental-styles/"
+                    tabindex="0"
+                  >
+                    
+                            
+                    <span
+                      class="fd-list__title"
+                    >
+                      Suppliers
+                    </span>
+                    
+                            
+                  </a>
+                  
+                        
+                </li>
+                
+                        
+                <li
+                  class="fd-list__item fd-list__item--link"
+                  role="listitem"
+                  tabindex="-1"
+                >
+                  
+                            
+                  <a
+                    class="fd-list__link"
+                    href="https://sap.github.io/fundamental-styles/"
+                    tabindex="0"
+                  >
+                    
+                            
+                    <span
+                      class="fd-list__title"
+                    >
+                      Titanium
+                    </span>
+                    
+                            
+                  </a>
+                  
+                        
+                </li>
+                
+                    
+              </ul>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </li>
+      
+    
+      <li
+        class="fd-breadcrumb__item"
+      >
+        <a
+          class="fd-breadcrumb__link"
+          href="#"
+          tabindex="0"
+        >
+          Ultra Portable
+        </a>
+      </li>
+      
+    
+      <li
+        class="fd-breadcrumb__item"
+      >
+        <a
+          class="fd-breadcrumb__link"
+          href="#"
+          tabindex="0"
+        >
+          12 inch
+        </a>
+      </li>
+      
+    
+      <li
+        class="fd-breadcrumb__item"
+      >
+        <a
+          class="fd-breadcrumb__link"
+          href="#"
+          tabindex="0"
+        >
+          Super portable deluxe
+        </a>
+      </li>
+      
+    
+      <li
+        class="fd-breadcrumb__item"
+      >
+        Laptop
+      </li>
+      
+
+    </ul>
+    
+
+  </div>
+</div>
+`;
+
+exports[`Storyshots Visual Busy Indicator 1`] = `
+<div>
+  <div>
+    
+    
+    <div
+      style="text-align: center"
+    >
+      
+    
+      <div
+        aria-hidden="false"
+        aria-label="Loading"
+        class="fd-busy-indicator--l"
+      >
+        
+        
+        <div
+          class="fd-busy-indicator--circle-0"
+        />
+        
+        
+        <div
+          class="fd-busy-indicator--circle-1"
+        />
+        
+        
+        <div
+          class="fd-busy-indicator--circle-2"
+        />
+        
+    
+      </div>
+      <br />
+      <br />
+      
+    
+      <div
+        aria-hidden="false"
+        aria-label="Loading"
+        class="fd-busy-indicator--m"
+      >
+        
+        
+        <div
+          class="fd-busy-indicator--circle-0"
+        />
+        
+        
+        <div
+          class="fd-busy-indicator--circle-1"
+        />
+        
+        
+        <div
+          class="fd-busy-indicator--circle-2"
+        />
+        
+    
+      </div>
+      <br />
+      <br />
+      
+    
+      <div
+        aria-hidden="false"
+        aria-label="Loading"
+        class="fd-busy-indicator"
+      >
+        
+        
+        <div
+          class="fd-busy-indicator--circle-0"
+        />
+        
+        
+        <div
+          class="fd-busy-indicator--circle-1"
+        />
+        
+        
+        <div
+          class="fd-busy-indicator--circle-2"
+        />
+        
+    
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      style="display:flex;justify-content:center;flex-direction:column;align-items:center;background-color:cadetblue;height:250px"
+    >
+      
+
+      <div
+        aria-hidden="false"
+        aria-label="Loading"
+        class="fd-busy-indicator--l contrast"
+      >
+        
+    
+        <div
+          class="fd-busy-indicator--circle-0"
+        />
+        
+    
+        <div
+          class="fd-busy-indicator--circle-1"
+        />
+        
+    
+        <div
+          class="fd-busy-indicator--circle-2"
+        />
+        
+
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+</div>
+`;
+
 exports[`Storyshots Visual Button 1`] = `
 <div>
   <div>
@@ -1146,6 +3083,2246 @@ exports[`Storyshots Visual Button 1`] = `
         
   
       </div>
+      
+
+    </div>
+    
+
+  </div>
+</div>
+`;
+
+exports[`Storyshots Visual Checkbox 1`] = `
+<div>
+  <div>
+    
+
+    <div
+      style="display:flex;justify-content:space-between"
+    >
+      
+    
+      <fieldset
+        class="fd-fieldset"
+      >
+        
+        
+        <legend
+          class="fd-fieldset__legend"
+        >
+          Cozy Checkboxes
+        </legend>
+        
+        
+        <div
+          class="fd-form-group"
+        >
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              class="fd-checkbox"
+              id="Ai4ez611"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez611"
+            >
+              
+                    Apple
+                
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              checked=""
+              class="fd-checkbox"
+              id="Ai4ez612"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez612"
+            >
+              
+                    Banana
+                
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              class="fd-checkbox"
+              disabled=""
+              id="Ai4ez622"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez622"
+            >
+              
+                    Kiwi
+                
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              checked=""
+              class="fd-checkbox"
+              disabled=""
+              id="Ai4ez632"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez632"
+            >
+              
+                    Lemon
+                
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              class="fd-checkbox"
+              id="Ai4ez613"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez613"
+            >
+              All Fruits (TriState)
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              class="fd-checkbox"
+              disabled=""
+              id="Ai4ez643"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez643"
+            >
+              All Fruits (TriState)
+            </label>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </fieldset>
+      
+    
+      <fieldset
+        class="fd-fieldset"
+      >
+        
+        
+        <legend
+          class="fd-fieldset__legend"
+        >
+          Compact Checkboxes
+        </legend>
+        
+        
+        <div
+          class="fd-form-group"
+        >
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4ez611c"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact"
+              for="Ai4ez611c"
+            >
+              
+                    Apple
+                
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              checked=""
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4ez612c"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact"
+              for="Ai4ez612c"
+            >
+              
+                    Banana
+                
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              class="fd-checkbox fd-checkbox--compact"
+              disabled=""
+              id="Ai4ez622c"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact"
+              for="Ai4ez622c"
+            >
+              
+                    Kiwi
+                
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              checked=""
+              class="fd-checkbox fd-checkbox--compact"
+              disabled=""
+              id="Ai4ez632c"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact"
+              for="Ai4ez632c"
+            >
+              
+                    Lemon
+                
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4ez613c"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact"
+              for="Ai4ez613c"
+            >
+              All Fruits (TriState)
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              class="fd-checkbox fd-checkbox--compact"
+              disabled=""
+              id="Ai4ez643c"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact"
+              for="Ai4ez643c"
+            >
+              All Fruits (TriState)
+            </label>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </fieldset>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <fieldset
+      class="fd-fieldset"
+    >
+      
+    
+      <legend
+        class="fd-fieldset__legend"
+      >
+        Checkboxes inline
+      </legend>
+      
+    
+      <div
+        class="fd-form-group fd-form-group--inline"
+      >
+        
+        
+        <div
+          class="fd-form-group__item fd-form-item"
+        >
+          
+            
+          <input
+            class="fd-checkbox"
+            id="Ai4ez617"
+            type="checkbox"
+          />
+          
+            
+          <label
+            class="fd-checkbox__label"
+            for="Ai4ez617"
+          >
+            
+                Potatos
+            
+          </label>
+          
+        
+        </div>
+        
+        
+        <div
+          class="fd-form-group__item fd-form-item"
+        >
+          
+            
+          <input
+            checked=""
+            class="fd-checkbox"
+            id="Ai4ez618"
+            type="checkbox"
+          />
+          
+            
+          <label
+            class="fd-checkbox__label"
+            for="Ai4ez618"
+          >
+            
+                Tomatos
+            
+          </label>
+          
+        
+        </div>
+        
+        
+        <div
+          class="fd-form-group__item fd-form-item"
+        >
+          
+            
+          <input
+            checked=""
+            class="fd-checkbox"
+            disabled=""
+            id="Ai4ez619"
+            type="checkbox"
+          />
+          
+            
+          <label
+            class="fd-checkbox__label"
+            for="Ai4ez619"
+          >
+            
+                Carrots
+            
+          </label>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </fieldset>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      style="display:flex;justify-content:space-between;flex-wrap:wrap"
+    >
+      
+    
+      <fieldset
+        class="fd-fieldset"
+      >
+        
+        
+        <legend
+          class="fd-fieldset__legend"
+        >
+          Checkboxes Error
+        </legend>
+        
+        
+        <div
+          class="fd-form-group"
+        >
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              class="fd-checkbox is-error"
+              id="Ai4ez6119"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez6119"
+            >
+              
+                    Text Option
+                
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              checked=""
+              class="fd-checkbox is-error"
+              id="Ai4ez6129"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez6129"
+            >
+              
+                    Selected State
+                
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              class="fd-checkbox is-error"
+              id="Ai4ez613i1"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez613i1"
+            >
+              
+                    TriState Text
+                
+            </label>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </fieldset>
+      
+
+    
+      <fieldset
+        class="fd-fieldset"
+      >
+        
+        
+        <legend
+          class="fd-fieldset__legend"
+        >
+          Checkboxes Success
+        </legend>
+        
+        
+        <div
+          class="fd-form-group"
+        >
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              class="fd-checkbox is-success"
+              id="Ai4ez61192"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez61192"
+            >
+              
+                    Text Option
+                
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              checked=""
+              class="fd-checkbox is-success"
+              id="Ai4ez61292"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez61292"
+            >
+              
+                    Selected State
+                
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              class="fd-checkbox is-success"
+              id="Ai4ez613i2"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez613i2"
+            >
+              
+                    TriState Text
+                
+            </label>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </fieldset>
+      
+
+    
+      <fieldset
+        class="fd-fieldset"
+      >
+        
+        
+        <legend
+          class="fd-fieldset__legend"
+        >
+          Checkboxes Warning
+        </legend>
+        
+        
+        <div
+          class="fd-form-group"
+        >
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              class="fd-checkbox is-warning"
+              id="Ai4ez61193"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez61193"
+            >
+              
+                    Text Option
+                
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              checked=""
+              class="fd-checkbox is-warning"
+              id="Ai4ez61293"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez61293"
+            >
+              
+                    Selected State
+                
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              class="fd-checkbox is-warning"
+              id="Ai4ez613i3"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez613i3"
+            >
+              
+                    TriState Text
+                
+            </label>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </fieldset>
+      
+
+    
+      <fieldset
+        class="fd-fieldset"
+      >
+        
+        
+        <legend
+          class="fd-fieldset__legend"
+        >
+          Checkboxes Information
+        </legend>
+        
+        
+        <div
+          class="fd-form-group"
+        >
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              class="fd-checkbox is-information"
+              id="Ai4ez61194"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez61194"
+            >
+              
+                    Text Option
+                
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              checked=""
+              class="fd-checkbox is-information"
+              id="Ai4ez61294"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez61294"
+            >
+              
+                    Selected State
+                
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              class="fd-checkbox is-information"
+              id="Ai4ez613i4"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez613i4"
+            >
+              
+                    TriState Text
+                
+            </label>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </fieldset>
+      
+
+    
+      <fieldset
+        class="fd-fieldset"
+      >
+        
+        
+        <legend
+          class="fd-fieldset__legend"
+        >
+          Checkboxes Disabled
+        </legend>
+        
+        
+        <div
+          class="fd-form-group"
+        >
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              class="fd-checkbox"
+              disabled=""
+              id="Ai4ez61196"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez61196"
+            >
+              
+                    Text Option
+                
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              checked=""
+              class="fd-checkbox"
+              disabled=""
+              id="Ai4ez61296"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez61296"
+            >
+              
+                    Selected State
+                
+            </label>
+            
+            
+          </div>
+          
+            
+          <div
+            class="fd-form-item"
+          >
+            
+                
+            <input
+              class="fd-checkbox"
+              disabled=""
+              id="Ai4ez613i6"
+              type="checkbox"
+            />
+            
+                
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez613i6"
+            >
+              
+                    TriState Text
+                
+            </label>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </fieldset>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <fieldset
+      class="fd-fieldset"
+      dir="rtl"
+    >
+      
+    
+      <legend
+        class="fd-fieldset__legend"
+      >
+        Checkboxes RTL Support
+      </legend>
+      
+    
+      <div
+        class="fd-form-group"
+      >
+        
+        
+        <div
+          class="fd-form-item"
+        >
+          
+            
+          <input
+            class="fd-checkbox"
+            id="Ai4ez611tt"
+            type="checkbox"
+          />
+          
+            
+          <label
+            class="fd-checkbox__label"
+            for="Ai4ez611tt"
+          >
+            
+                Text Option
+            
+          </label>
+          
+        
+        </div>
+        
+        
+        <div
+          class="fd-form-item"
+        >
+          
+            
+          <input
+            checked=""
+            class="fd-checkbox"
+            id="Ai4ez612tt"
+            type="checkbox"
+          />
+          
+            
+          <label
+            class="fd-checkbox__label"
+            for="Ai4ez612tt"
+          >
+            
+                Selected State
+            
+          </label>
+          
+        
+        </div>
+        
+        
+        <div
+          class="fd-form-item"
+        >
+          
+            
+          <input
+            class="fd-checkbox"
+            id="Ai4ez613i7"
+            type="checkbox"
+          />
+          
+            
+          <label
+            class="fd-checkbox__label"
+            for="Ai4ez613i7"
+          >
+            
+                TriState Text
+            
+          </label>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </fieldset>
+    
+
+  </div>
+</div>
+`;
+
+exports[`Storyshots Visual Counter 1`] = `
+<div>
+  <div>
+    
+
+    <span
+      aria-label="Unread count"
+      class="fd-counter"
+    >
+      5
+    </span>
+    
+
+    <span
+      aria-label="Unread count"
+      class="fd-counter"
+    >
+      25
+    </span>
+    
+
+    <span
+      aria-label="Unread count"
+      class="fd-counter"
+    >
+      101
+    </span>
+    
+
+    <span
+      aria-label="Unread count"
+      class="fd-counter"
+    >
+      999+
+    </span>
+    
+
+  </div>
+  <div>
+    
+
+    <p>
+      Lorem ipsum 
+      <span
+        aria-label="Unread count"
+        class="fd-counter"
+      >
+        5
+      </span>
+       
+    </p>
+    
+
+  </div>
+  <div>
+    
+
+    <ul
+      class="fd-tabs"
+      role="tablist"
+    >
+      
+    
+      <li
+        class="fd-tabs__item"
+      >
+        
+        
+        <a
+          aria-controls="AvcVC566"
+          class="fd-tabs__link"
+          href="#AvcVC566"
+          role="tab"
+        >
+          Link
+        
+          <span
+            aria-label="Unread count"
+            class="fd-counter"
+          >
+            25
+          </span>
+        </a>
+        
+    
+      </li>
+      
+    
+      <li
+        class="fd-tabs__item"
+      >
+        
+        
+        <a
+          aria-controls="5mxO9110"
+          aria-selected="true"
+          class="fd-tabs__link"
+          href="#5mxO9110"
+          role="tab"
+        >
+          
+            
+          <span
+            class="fd-tabs__tag"
+          >
+            Selected
+          </span>
+          
+        
+        </a>
+        
+    
+      </li>
+      
+    
+      <li
+        class="fd-tabs__item"
+      >
+        
+        
+        <a
+          aria-controls="r0pk3445"
+          class="fd-tabs__link"
+          href="#r0pk3445"
+          role="tab"
+        >
+          Link
+        </a>
+        
+    
+      </li>
+      
+    
+      <li
+        class="fd-tabs__item"
+      >
+        
+        
+        <a
+          aria-controls="Dj1Ri832"
+          aria-disabled="true"
+          class="fd-tabs__link"
+          role="tab"
+        >
+          Disabled
+        </a>
+        
+    
+      </li>
+      
+
+    </ul>
+    
+
+  </div>
+  <div>
+    
+
+    <button
+      aria-label="Notifications"
+      class="fd-button fd-button--transparent sap-icon--bell"
+    >
+      
+    
+      <span
+        aria-label="Unread count"
+        class="fd-counter fd-counter--notification"
+      >
+        1
+      </span>
+      
+
+    </button>
+    
+
+
+    <button
+      aria-label="Notifications"
+      class="fd-button fd-button--transparent sap-icon--bell"
+    >
+      
+    
+      <span
+        aria-label="Unread count"
+        class="fd-counter fd-counter--notification"
+      >
+        20
+      </span>
+      
+
+    </button>
+    
+
+
+    <button
+      aria-label="Notifications"
+      class="fd-button fd-button--transparent sap-icon--bell"
+    >
+      
+    
+      <span
+        aria-label="Unread count"
+        class="fd-counter fd-counter--notification"
+      >
+        300
+      </span>
+      
+
+    </button>
+    
+
+
+    <button
+      aria-label="Notifications"
+      class="fd-button fd-button--transparent sap-icon--bell"
+    >
+      
+    
+      <span
+        aria-label="Unread count"
+        class="fd-counter fd-counter--notification"
+      >
+        999+
+      </span>
+      
+
+    </button>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      dir="rtl"
+    >
+      
+    
+      <ul
+        class="fd-tabs"
+        role="tablist"
+      >
+        
+        
+        <li
+          class="fd-tabs__item"
+        >
+          
+            
+          <a
+            aria-controls="AvcVC566"
+            class="fd-tabs__link"
+            href="#AvcVC566"
+            role="tab"
+          >
+            Link
+            
+            <span
+              aria-label="Unread count"
+              class="fd-counter"
+            >
+              25
+            </span>
+          </a>
+          
+        
+        </li>
+        
+        
+        <li
+          class="fd-tabs__item"
+        >
+          
+            
+          <a
+            aria-controls="5mxO9110"
+            aria-selected="true"
+            class="fd-tabs__link"
+            href="#5mxO9110"
+            role="tab"
+          >
+            
+                
+            <span
+              class="fd-tabs__tag"
+            >
+              Selected
+            </span>
+            
+            
+          </a>
+          
+        
+        </li>
+        
+        
+        <li
+          class="fd-tabs__item"
+        >
+          
+            
+          <a
+            aria-controls="r0pk3445"
+            class="fd-tabs__link"
+            href="#r0pk3445"
+            role="tab"
+          >
+            Link
+          </a>
+          
+        
+        </li>
+        
+        
+        <li
+          class="fd-tabs__item"
+        >
+          
+            
+          <a
+            aria-controls="Dj1Ri832"
+            aria-disabled="true"
+            class="fd-tabs__link"
+            role="tab"
+          >
+            Disabled
+          </a>
+          
+        
+        </li>
+        
+    
+      </ul>
+      
+
+    </div>
+    
+
+  </div>
+</div>
+`;
+
+exports[`Storyshots Visual Input 1`] = `
+<div>
+  <div>
+    
+
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-1"
+      >
+        Default input:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        id="input-1"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    <br />
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-1b"
+      >
+        Compact Input:
+      </label>
+      
+        
+      <input
+        class="fd-input fd-input--compact"
+        id="input-1b"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label fd-form-label--required"
+        for="input-1c"
+      >
+        Required Input:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        id="input-1c"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        aria-required="true"
+        class="fd-form-label"
+        for="input-1d"
+      >
+        Password:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        id="input-1d"
+        type="password"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-01"
+      >
+        Error Input:
+      </label>
+      
+        
+      <input
+        class="fd-input is-error"
+        id="input-01"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-02"
+      >
+        Success Input:
+      </label>
+      
+        
+      <input
+        class="fd-input is-success"
+        id="input-02"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-03"
+      >
+        Warning (Alert) Input:
+      </label>
+      
+        
+      <input
+        class="fd-input is-warning"
+        id="input-03"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-04"
+      >
+        Information Input:
+      </label>
+      
+        
+      <input
+        class="fd-input is-information"
+        id="input-04"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-05"
+      >
+        Disabled Input:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        disabled=""
+        id="input-05"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-06"
+      >
+        Read-Only Input:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        id="input-06"
+        placeholder="Field placeholder text"
+        readonly=""
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item fd-form-item--horizontal"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-07"
+      >
+        Default input:
+      </label>
+      
+            
+      <input
+        aria-label="Image label"
+        class="fd-input"
+        id="input-07"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    <br />
+    
+    
+    <div
+      class="fd-form-item fd-form-item--horizontal"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-08"
+      >
+        Compact input:
+      </label>
+      
+            
+      <input
+        aria-label="Image label"
+        class="fd-input fd-input--compact"
+        id="input-08"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    <br />
+    
+    
+    <div
+      class="fd-form-item fd-form-item--horizontal"
+    >
+      
+        
+      <label
+        class="fd-form-label fd-form-label--required"
+        for="input-09"
+      >
+        Required Input:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        id="input-09"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item fd-form-item--horizontal"
+    >
+      
+        
+      <label
+        aria-required="true"
+        class="fd-form-label"
+        for="input-10"
+      >
+        Password:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        id="input-10"
+        type="password"
+      />
+      
+    
+    </div>
+    
+    
+    <br />
+    
+    
+    <br />
+    
+    
+    <div
+      class="fd-form-item fd-form-item--horizontal"
+    >
+      
+        
+      <label
+        aria-required="true"
+        class="fd-form-label"
+        for="input-11"
+      >
+        Input:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        id="input-11"
+        type="text"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="input-1aa"
+      >
+        Normal input:
+      </label>
+      
+    
+      <input
+        aria-label="Image label"
+        class="fd-input"
+        id="input-1aa"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+
+    </div>
+    
+
+
+    <br />
+    <br />
+    
+
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="input-1bb"
+      >
+        Success input:
+      </label>
+      
+    
+      <div
+        class="fd-popover fd-popover--input-message-group"
+      >
+        
+        
+        <div
+          aria-controls="popoverB2"
+          aria-expanded="false"
+          aria-haspopup="true"
+          class="fd-popover__control"
+          onclick="onPopoverClick('popoverB2');"
+        >
+          
+            
+          <input
+            aria-label="Image label"
+            class="fd-input is-success"
+            id="input-1bb"
+            placeholder="Field placeholder text"
+            type="text"
+          />
+          
+        
+        </div>
+        
+        
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow"
+          id="popoverB2"
+        >
+          
+            
+          <div
+            class="fd-form-message fd-form-message--success"
+          >
+            Success message
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+
+    <br />
+    <br />
+    
+
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="input-1cc"
+      >
+        Error input:
+      </label>
+      
+    
+      <div
+        class="fd-popover fd-popover--input-message-group"
+      >
+        
+        
+        <div
+          aria-controls="popoverB3"
+          aria-expanded="false"
+          aria-haspopup="true"
+          class="fd-popover__control"
+          onclick="onPopoverClick('popoverB3');"
+        >
+          
+            
+          <input
+            aria-label="Image label"
+            class="fd-input is-error"
+            id="input-1cc"
+            placeholder="Field placeholder text"
+            type="text"
+          />
+          
+        
+        </div>
+        
+        
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow"
+          id="popoverB3"
+        >
+          
+            
+          <div
+            class="fd-form-message fd-form-message--error"
+          >
+            Error message
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+
+    <br />
+    <br />
+    
+
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="input-1dd"
+      >
+        Warning input:
+      </label>
+      
+    
+      <div
+        class="fd-popover fd-popover--input-message-group"
+      >
+        
+        
+        <div
+          aria-controls="popoverB4"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-label="Image label"
+          class="fd-popover__control"
+          fd-input=""
+          id="input-1dd"
+          is-warning"=""
+          onclick="onPopoverClick('popoverB4');>
+            <input class="
+          placeholder="Field placeholder text"
+          type="text"
+        >
+          
+        
+        </div>
+        
+        
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow"
+          id="popoverB4"
+        >
+          
+            
+          <div
+            class="fd-form-message fd-form-message--warning"
+          >
+            Warning message
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+
+    <br />
+    <br />
+    
+
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="input-1ee"
+      >
+        Information input:
+      </label>
+      
+    
+      <div
+        class="fd-popover fd-popover--input-message-group"
+      >
+        
+        
+        <div
+          aria-controls="popoverB5"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-label="Image label"
+          class="fd-popover__control"
+          fd-input=""
+          fd-input--compact=""
+          id="input-1ee"
+          is-information"=""
+          onclick="onPopoverClick('popoverB5');>
+            <input class="
+          placeholder="Field placeholder text"
+          type="text"
+        >
+          
+        
+        </div>
+        
+        
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow"
+          id="popoverB5"
+        >
+          
+            
+          <div
+            class="fd-form-message fd-form-message--information"
+          >
+            Information message
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+
+    <br />
+    <br />
+    
+
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="input-1ff"
+      >
+        Disabled Input:
+      </label>
+      
+    
+      <input
+        class="fd-input"
+        disabled=""
+        id="input-1ff"
+        type="text"
+        value="Non editable data"
+      />
+      
+
+    </div>
+    
+
+
+    <br />
+    <br />
+    
+
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="input-1gg"
+      >
+        Read Only Input:
+      </label>
+      
+    
+      <input
+        class="fd-input"
+        id="input-1gg"
+        readonly=""
+        type="text"
+        value="Read only data"
+      />
       
 
     </div>
@@ -2483,7 +6660,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onControlClick('h0C6A325');"
+            onclick="onPopoverClick('h0C6A325');"
             role="button"
             tabindex="0"
           >
@@ -2620,7 +6797,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onControlClick('h0C6A326');"
+            onclick="onPopoverClick('h0C6A326');"
             role="button"
             tabindex="0"
           >
@@ -2761,7 +6938,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onControlClick('h0C62325');"
+            onclick="onPopoverClick('h0C62325');"
             role="button"
             tabindex="0"
           >
@@ -2923,7 +7100,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onControlClick('h07jj326');"
+            onclick="onPopoverClick('h07jj326');"
             role="button"
             tabindex="0"
           >
@@ -3089,7 +7266,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onControlClick('h090G325');"
+            onclick="onPopoverClick('h090G325');"
             role="button"
             tabindex="0"
           >
@@ -3275,7 +7452,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onControlClick('h09GDGG325');"
+            onclick="onPopoverClick('h09GDGG325');"
             role="button"
             tabindex="0"
           >
@@ -3499,7 +7676,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onControlClick('h0GFF2325');"
+            onclick="onPopoverClick('h0GFF2325');"
             role="button"
             tabindex="0"
           >
@@ -3665,7 +7842,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onControlClick('h0GZH2325');"
+            onclick="onPopoverClick('h0GZH2325');"
             role="button"
             tabindex="0"
           >
@@ -3833,7 +8010,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="on('h0GTKE325');"
+            onclick="onPopoverClick('h0GTKE325');"
             role="button"
             tabindex="0"
           >
@@ -4098,7 +8275,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control is-success"
-            onclick="onControlClick('h07jjhYH');"
+            onclick="onPopoverClick('h07jjhYH');"
             role="button"
             tabindex="0"
           >
@@ -4301,7 +8478,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control is-error"
-            onclick="onControlClick('h07j9978H');"
+            onclick="onPopoverClick('h07j9978H');"
             role="button"
             tabindex="0"
           >
@@ -4504,7 +8681,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control is-warning"
-            onclick="onControlClick('h07j998hhH');"
+            onclick="onPopoverClick('h07j998hhH');"
             role="button"
             tabindex="0"
           >
@@ -4708,7 +8885,7 @@ exports[`Storyshots Visual Select 1`] = `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control is-information"
-            onclick="onControlClick('hkhh998hhH');"
+            onclick="onPopoverClick('hkhh998hhH');"
             role="button"
             tabindex="0"
           >
@@ -11276,6 +15453,445 @@ exports[`Storyshots Visual Table 1`] = `
       
 
     </table>
+    
+
+  </div>
+</div>
+`;
+
+exports[`Storyshots Visual Textarea 1`] = `
+<div>
+  <div>
+    
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="textarea-1"
+      >
+        Text area(cozy):
+      </label>
+      
+    
+      <textarea
+        class="fd-textarea"
+        id="textarea-1"
+        placeholder="Write something here"
+      />
+      
+
+    </div>
+    
+
+    <br />
+    
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label fd-form-label--compact"
+        for="textarea-123"
+      >
+        Text area(compact):
+      </label>
+      
+    
+      <textarea
+        class="fd-textarea fd-textarea--compact"
+        id="textarea-123"
+        placeholder="Write something here"
+      />
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="textarea-2"
+      >
+        Compact text area:
+      </label>
+      
+    
+      <textarea
+        class="fd-textarea fd-textarea--compact"
+        id="textarea-2"
+      >
+        Pellentesque metus lacus commodo eget justo ut rutrum varius nunc.
+      </textarea>
+      
+    
+      <div
+        class="fd-textarea-counter"
+      >
+        150 characters left
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="textarea-7"
+      >
+        Text area:
+      </label>
+      
+    
+      <textarea
+        class="fd-textarea"
+        disabled=""
+        id="textarea-7"
+      >
+        Disabled textarea
+      </textarea>
+      
+
+    </div>
+    
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="textarea-8"
+      >
+        Text area:
+      </label>
+      
+    
+      <textarea
+        class="fd-textarea"
+        id="textarea-8"
+        readonly=""
+      >
+        Read Only textarea
+      </textarea>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="textarea-3"
+      >
+        Success text area:
+      </label>
+      
+    
+      <div
+        class="fd-popover fd-popover--input-message-group"
+      >
+        
+        
+        <div
+          aria-controls="popoverT51"
+          aria-expanded="false"
+          aria-haspopup="true"
+          class="fd-popover__control"
+        >
+          
+            
+          <textarea
+            class="fd-textarea is-success"
+            id="textarea-3"
+            placeholder="Write something here"
+          />
+          
+        
+        </div>
+        
+        
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow"
+          id="popoverT51"
+        >
+          
+            
+          <div
+            class="fd-form-message fd-form-message--success"
+          >
+            Success message
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <div
+        class="fd-textarea-counter"
+      >
+        150 characters left
+      </div>
+      
+
+    </div>
+    
+
+    <br />
+    
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="textarea-4"
+      >
+        Error text area:
+      </label>
+      
+    
+      <div
+        class="fd-popover fd-popover--input-message-group"
+      >
+        
+        
+        <div
+          aria-controls="popoverT52"
+          aria-expanded="false"
+          aria-haspopup="true"
+          class="fd-popover__control"
+        >
+          
+            
+          <textarea
+            class="fd-textarea is-error"
+            id="textarea-4"
+            placeholder="Write something here"
+          />
+          
+        
+        </div>
+        
+        
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow"
+          id="popoverT52"
+        >
+          
+            
+          <div
+            class="fd-form-message fd-form-message--error"
+          >
+            Error message
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+    <br />
+    
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="textarea-5"
+      >
+        Warning text area:
+      </label>
+      
+    
+      <div
+        class="fd-popover fd-popover--input-message-group"
+      >
+        
+        
+        <div
+          aria-controls="popoverT53"
+          aria-expanded="false"
+          aria-haspopup="true"
+          class="fd-popover__control"
+        >
+          
+            
+          <textarea
+            class="fd-textarea is-warning"
+            id="textarea-5"
+            placeholder="Write something here"
+          />
+          
+        
+        </div>
+        
+        
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow"
+          id="popoverT53"
+        >
+          
+            
+          <div
+            class="fd-form-message fd-form-message--warning"
+          >
+            Warning message
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+    <br />
+    
+
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="textarea-6"
+      >
+        Information text area:
+      </label>
+      
+    
+      <div
+        class="fd-popover fd-popover--input-message-group"
+      >
+        
+        
+        <div
+          aria-controls="popoverT54"
+          aria-expanded="false"
+          aria-haspopup="true"
+          class="fd-popover__control"
+        >
+          
+            
+          <textarea
+            class="fd-textarea is-information"
+            id="textarea-6"
+            placeholder="Write something here"
+          />
+          
+        
+        </div>
+        
+        
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow"
+          id="popoverT54"
+        >
+          
+            
+          <div
+            class="fd-form-message fd-form-message--information"
+          >
+            Information message
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <div>
+    
+
+    <div
+      class="fd-form-item"
+      dir="rtl"
+    >
+      
+    
+      <label
+        class="fd-form-label"
+        for="textarea-222"
+      >
+        Compact text area:
+      </label>
+      
+    
+      <textarea
+        class="fd-textarea fd-textarea--compact"
+        id="textarea-222"
+      >
+        Pellentesque metus lacus commodo eget justo ut rutrum varius nunc.
+      </textarea>
+      
+    
+      <div
+        class="fd-textarea-counter"
+      >
+        150 characters left
+      </div>
+      
+
+    </div>
     
 
   </div>

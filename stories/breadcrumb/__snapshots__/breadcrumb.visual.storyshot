@@ -127,7 +127,7 @@ exports[`Storyshots Visual Breadcrumb 1`] = `
               aria-expanded="false"
               aria-haspopup="true"
               class="fd-breadcrumb__link"
-              onclick="onPopoverClick('breadcrumb1');"
+              onclick="onControlClick('breadcrumb1');"
             >
               
                 ...

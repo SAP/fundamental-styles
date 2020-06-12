@@ -1,56 +1,56 @@
----
-title: Avatar
-id: avatar
-keywords: icon, avatar, identifier, image
-sidebar: left-navigation-sidebar
-toc: false
-permalink: components/avatar.html
-folder: components
-tags: [f3, a11y, theme]
----
+import '../../dist/avatar.css';
+import '../../dist/icon.css';
 
-Avatar is a way to visually present something using an icon or user initials.
-{: .docs-intro}
+export default {
+    title: 'Components/Avatar',
+    parameters: {
+        description: `Avatar is a way to visually present something using an icon or user initials.
 
 There are multiple sizes:
-- Extra Small (`--xs` - 2rem)
-- Small (`--s`) - 3rem
-- Medium (`--m`) - 4rem
-- Large (`--l`) - 5rem
-- Extra Large (`--xl`) - 7rem
 
-<br>
+- Extra Small (--xs - 2rem)
+- Small (--s) - 3rem
+- Medium (--m) - 4rem
+- Large (--l) - 5rem
+- Extra Large (--xl) - 7rem`,
+        tags: ['a11y', 'f3', 'theme']
+    }
+};
 
-## Icon
-Include `role="presentation"` when the avatar is used for only illustrative purposes. For example, if the icon sits right next to a label, use role.
-
-{% capture avatar-icon %}
+export const icon = () => `
 <span class="fd-avatar fd-avatar--xs sap-icon--washing-machine" role="presentation"></span>
 <span class="fd-avatar fd-avatar--s sap-icon--washing-machine" role="presentation"></span>
 <span class="fd-avatar fd-avatar--m sap-icon--washing-machine" role="presentation"></span>
 <span class="fd-avatar fd-avatar--l sap-icon--washing-machine" role="presentation"></span>
 <span class="fd-avatar fd-avatar--xl sap-icon--washing-machine" role="presentation"></span>
-{% endcapture %}
-{% include display-component.html component=avatar-icon %}
-<br>
+`;
 
-## Initials
-Include aria-label when there is no text equivalent for the avatar. This is not necessary if the avatar is used for illustrative purposes only. See Icon above.
+icon.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'Include <code>role="presentation"</code> when the avatar is used for only illustrative purposes. For example, if the icon sits right next to a label, use role.'
+    }
+};
 
-{% capture avatar-initials %}
+
+
+export const initials = () => `
 <span class="fd-avatar fd-avatar--xs" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--s" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--m" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--l" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--xl" aria-label="Wendy Wallace">WW</span>
-{% endcapture %}
-{% include display-component.html component=avatar-initials %}
-<br>
+`;
 
-## Circle
-A circle style can be rendered using the `--circle` modifier.
+initials.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'Include aria-label when there is no text equivalent for the avatar. This is not necessary if the avatar is used for illustrative purposes only. See Icon above.'
+    }
+};
 
-{% capture avatar-circle %}
+
+export const circle = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle sap-icon--money-bills" role="presentation"></span>
 <span class="fd-avatar fd-avatar--s fd-avatar--circle sap-icon--money-bills" role="presentation"></span>
 <span class="fd-avatar fd-avatar--m fd-avatar--circle sap-icon--money-bills" role="presentation"></span>
@@ -62,34 +62,31 @@ A circle style can be rendered using the `--circle` modifier.
 <span class="fd-avatar fd-avatar--m fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--l fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
-{% endcapture %}
-{% include display-component.html component=avatar-circle %}
-<br>
+`;
 
+circle.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'A circle style can be rendered using the <code>--circle</code> modifier.'
+    }
+};
 
-## Background image
-
-A background image can be applied to any style using the `--thumbnail` modifier.
-
-{% capture avatar-thumbnail %}
+export const backgroundImage = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature')" role="presentation" aria-label="John Doe"></span>
 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature')" role="presentation" aria-label="John Doe"></span>
 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature')" role="presentation" aria-label="John Doe"></span>
 <span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature')" role="presentation" aria-label="John Doe"></span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature')" role="presentation" aria-label="John Doe"></span>
+`;
 
+backgroundImage.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'A background image can be applied to any style using the <code>--thumbnail</code> modifier.'
+    }
+};
 
-{% endcapture %}
-{% include display-component.html component=avatar-thumbnail %}
-<br>
-
-
-
-## Transparent
-
-A transparent style can be rendered using the `--transparent` modifier.
-
-{% capture avatar-transparent %}
+export const transparent = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent sap-icon--money-bills" role="presentation"></span>
 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent sap-icon--money-bills" role="presentation"></span>
 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent sap-icon--money-bills" role="presentation"></span>
@@ -101,44 +98,49 @@ A transparent style can be rendered using the `--transparent` modifier.
 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace">WW</span>
-{% endcapture %}
-{% include display-component.html component=avatar-transparent %}
-<br>
+`;
 
-## Placeholder Background
+transparent.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'A transparent style can be rendered using the <code>--transparent</code> modifier.'
+    }
+};
 
-An Avatar with placeholder background can be rendered using the `--placeholder` modifier.
 
-{% capture avatar-placeholder %}
+export const placeholderBackground = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills" role="presentation"></span>
 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills" role="presentation"></span>
 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills" role="presentation"></span>
 <span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills" role="presentation"></span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills" role="presentation"></span>
+`;
 
-{% endcapture %}
-{% include display-component.html component=avatar-placeholder %}
-<br>
+placeholderBackground.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'An Avatar with placeholder background can be rendered using the <code>--placeholder</code> modifier.'
+    }
+};
 
-## TileIcon Background
 
-An Avatar with TileIcon background can be rendered using the `--tile` modifier.
-
-{% capture avatar-tile %}
+export const tileIconBackground = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--tile sap-icon--money-bills" role="presentation"></span>
 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--tile sap-icon--money-bills" role="presentation"></span>
 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--tile sap-icon--money-bills" role="presentation"></span>
 <span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--tile sap-icon--money-bills" role="presentation"></span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile sap-icon--money-bills" role="presentation"></span>
+`;
 
-{% endcapture %}
-{% include display-component.html component=avatar-tile %}
-<br>
+tileIconBackground.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'An Avatar with TileIcon background can be rendered using the <code>--tile</code> modifier.'
+    }
+};
 
-## Accent Colors
-Use helpers classes to change the background colors, for example, `.fd-avatar--accent-color-9`.
 
-{% capture avatar-accent-colors %}
+export const accentColors = () => `
 <span class="fd-avatar fd-avatar--accent-color-1 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
 <span class="fd-avatar fd-avatar--accent-color-2 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
 <span class="fd-avatar fd-avatar--accent-color-3 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
@@ -149,13 +151,17 @@ Use helpers classes to change the background colors, for example, `.fd-avatar--a
 <span class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
 <span class="fd-avatar fd-avatar--accent-color-9 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
 <span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
-{% endcapture %}
-{% include display-component.html component=avatar-accent-colors %}
+`;
 
-## Zoom Icon
-A zoom icon button can be added with another element using the `.fd-avatar__zoom-icon` class.
+accentColors.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'Use helpers classes to change the background colors, for example, <code>.fd-has-background-color-accent-9</code>.'
+    }
+};
 
-{% capture avatar-zoom-icon %}
+
+export const zoomIcon = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1 sap-icon--money-bills" role="presentation">
     <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
 </span>
@@ -187,15 +193,17 @@ A zoom icon button can be added with another element using the `.fd-avatar__zoom
 <span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl" aria-label="Wendy Wallace">WW
     <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
 </span>
-{% endcapture %}
-{% include display-component.html component=avatar-zoom-icon %}
-<br>
+`;
 
-## Borders
+zoomIcon.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'A zoom icon button can be added with another element using the <code>.fd-avatar__zoom-icon</code> class.'
+    }
+};
 
-An optional border can be added with the `--border` modifier.
 
-{% capture avatar-transparent %}
+export const borders = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--transparent fd-avatar--border sap-icon--money-bills" role="presentation"></span>
 <span class="fd-avatar fd-avatar--s fd-avatar--transparent fd-avatar--border sap-icon--money-bills" role="presentation"></span>
 <span class="fd-avatar fd-avatar--m fd-avatar--transparent fd-avatar--border sap-icon--money-bills" role="presentation"></span>
@@ -207,6 +215,11 @@ An optional border can be added with the `--border` modifier.
 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace">WW</span>
-{% endcapture %}
-{% include display-component.html component=avatar-transparent %}
-<br>
+`;
+
+borders.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'An optional border can be added with the <code>--border</code> modifier.'
+    }
+};

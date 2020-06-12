@@ -34,7 +34,7 @@ export const overflow = () => `
             <div class="fd-popover__control">
                 <div
                     class="fd-breadcrumb__link"
-                    onclick="onPopoverClick('breadcrumb1');"
+                    onclick="onControlClick('breadcrumb1');"
                     aria-controls="breadcrumb1"
                     aria-expanded="false"
                     aria-haspopup="true"

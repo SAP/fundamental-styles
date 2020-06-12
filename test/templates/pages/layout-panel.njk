@@ -7,7 +7,6 @@
 {% from "../token/component.njk" import token %}
 {% from "../button/component.njk" import button %}
 {% from "../segmented-button/component.njk" import segmented_button %}
-{% from "../pagination/component.njk" import pagination %}
 {% from "../menu/component.njk" import menu %}
 
 {% set hide_app_sidebar = false %}
@@ -178,7 +177,6 @@
       .fd-layout-panel__body
     {%- endcall %}
     {% call layout.panel_footer() -%}
-    {{  pagination(data.pagination.properties) }}
 
     {%- endcall %}
 {%- endcall %}

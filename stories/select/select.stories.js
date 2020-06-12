@@ -25,7 +25,7 @@ export const cozy = () => `
             aria-expanded="false"
             aria-haspopup="true"
             class="fd-select__control"
-            onclick="onPopoverClick('h0C6A325');"
+            onclick="onControlClick('h0C6A325');"
             role="button"
             tabindex="0">
              <span class="fd-select__text-content">Select</span>

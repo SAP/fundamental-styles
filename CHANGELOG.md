@@ -2,6 +2,61 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.33"></a>
+# [0.11.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.32...v0.11.0-rc.33) (2020-06-12)
+
+
+### Features
+
+* remove form-input-message-group and introduce textarea storybook ([#1148](https://github.com/SAP/fundamental-styles/issues/1148)) ([d3cc308](https://github.com/SAP/fundamental-styles/commit/d3cc308))
+
+
+
+<a name="0.11.0-rc.32"></a>
+# [0.11.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.31...v0.11.0-rc.32) (2020-06-12)
+
+
+
+<a name="0.11.0-rc.31"></a>
+# [0.11.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.30...v0.11.0-rc.31) (2020-06-12)
+
+
+### Features
+
+* remove fundamental specific classes from Avatar, add Storybook ([#1129](https://github.com/SAP/fundamental-styles/issues/1129)) ([af021b4](https://github.com/SAP/fundamental-styles/commit/af021b4))
+
+
+
+<a name="0.11.0-rc.30"></a>
+# [0.11.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.29...v0.11.0-rc.30) (2020-06-12)
+
+
+### Features
+
+* update pagination selected page markup and add pagination storybook and remove njk ([#1147](https://github.com/SAP/fundamental-styles/issues/1147)) ([5f7cff5](https://github.com/SAP/fundamental-styles/commit/5f7cff5))
+
+
+
+<a name="0.11.0-rc.29"></a>
+# [0.11.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.28...v0.11.0-rc.29) (2020-06-12)
+
+
+
+<a name="0.11.0-rc.28"></a>
+# [0.11.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.27...v0.11.0-rc.28) (2020-06-11)
+
+
+
+<a name="0.11.0-rc.27"></a>
+# [0.11.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.26...v0.11.0-rc.27) (2020-06-11)
+
+
+
+<a name="0.11.0-rc.26"></a>
+# [0.11.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.25...v0.11.0-rc.26) (2020-06-11)
+
+
+
 <a name="0.11.0-rc.25"></a>
 # [0.11.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.24...v0.11.0-rc.25) (2020-06-11)
 
