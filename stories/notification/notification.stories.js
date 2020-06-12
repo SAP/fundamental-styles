@@ -39,7 +39,11 @@ export const primary = () => `
 </div>
 </div>
 `;
-
+primary.parameters = {
+    docs: {
+        iframeHeight: 200
+    }
+};
 /*
  * Add the modifier class `fd-notification--success` for Success notification.
  */
@@ -75,7 +79,11 @@ export const success = () => `
     </div>
 </div>
 `;
-
+success.parameters = {
+    docs: {
+        iframeHeight: 200
+    }
+};
 /**
  * Add the modifier class `fd-notification--warning` for Warning notification.
  */
@@ -111,7 +119,11 @@ export const warning = () => `
     </div>
 </div>
 `;
-
+warning.parameters = {
+    docs: {
+        iframeHeight: 200
+    }
+};
 /**
 * Add the modifier class `fd-notification--error` for Error notification.
 */
@@ -146,7 +158,11 @@ export const error = () => `
     </div>
 </div>
 `;
-
+error.parameters = {
+    docs: {
+        iframeHeight: 200
+    }
+};
 /**Add the modifier class `fd-notification--information` for Information notification. */
 
 export const information = () => `
@@ -180,7 +196,11 @@ export const information = () => `
     </div>
 </div>
 `;
-
+information.parameters = {
+    docs: {
+        iframeHeight: 200
+    }
+};
 /**
 * Medium (m) size notifications have width from 320px to 640px.
 * Include the modifier class `fd-notification--m` to achieve medium size notification.
@@ -216,7 +236,11 @@ export const mediumSize = () => `
     </div>
 </div>
 `;
-
+mediumSize.parameters = {
+    docs: {
+        iframeHeight: 200
+    }
+};
 /**Small (s) size notifications have width 320px . Include the modifier class `fd-notification--s` to achieve small size notification. */
 
 export const smallSize = () => `
@@ -274,7 +298,11 @@ export const smallSize = () => `
     </div>
 </div>
 `;
-
+smallSize.parameters = {
+    docs: {
+        iframeHeight: 450
+    }
+};
 export const notificationGroup = () => `
 <div class="fd-notification--group">
     <div class="fd-notification fd-notification--success fd-notification--m">
@@ -394,7 +422,11 @@ export const notificationGroup = () => `
     </div>
 </div>
 `;
-
+notificationGroup.parameters = {
+    docs: {
+        iframeHeight: 750
+    }
+};
 export const RTL = () => `
 <div class="fd-notification--group" dir="rtl">
     <div class="fd-notification fd-notification--success fd-notification--m">
@@ -457,3 +489,8 @@ export const RTL = () => `
     </div>
 </div>
 `;
+RTL.parameters = {
+    docs: {
+        iframeHeight: 500
+    }
+};
