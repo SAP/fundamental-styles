@@ -23,25 +23,27 @@ Use the Info Label base class with following modifiers:
  * */
 
 export const colors = () => `
-<span class="fd-info-label fd-info-label--accent-color-1">Info Label</span>
-<br><br>
-<span class="fd-info-label fd-info-label--accent-color-2">Info Label</span>
-<br><br>
-<span class="fd-info-label fd-info-label--accent-color-3">Info Label</span>
-<br><br>
-<span class="fd-info-label fd-info-label--accent-color-4">Info Label</span>
-<br><br>
-<span class="fd-info-label fd-info-label--accent-color-5">Info Label</span>
-<br><br>
-<span class="fd-info-label fd-info-label--accent-color-6">Info Label</span>
-<br><br>
-<span class="fd-info-label fd-info-label--accent-color-7">Info Label</span>
-<br><br>
-<span class="fd-info-label fd-info-label--accent-color-8">Info Label</span>
-<br><br>
-<span class="fd-info-label fd-info-label--accent-color-9">Info Label</span>
-<br><br>
-<span class="fd-info-label fd-info-label--accent-color-10">Info Label</span>
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+    <span class="fd-info-label fd-info-label--accent-color-1">Info Label</span>
+    <br><br>
+    <span class="fd-info-label fd-info-label--accent-color-2">Info Label</span>
+    <br><br>
+    <span class="fd-info-label fd-info-label--accent-color-3">Info Label</span>
+    <br><br>
+    <span class="fd-info-label fd-info-label--accent-color-4">Info Label</span>
+    <br><br>
+    <span class="fd-info-label fd-info-label--accent-color-5">Info Label</span>
+    <br><br>
+    <span class="fd-info-label fd-info-label--accent-color-6">Info Label</span>
+    <br><br>
+    <span class="fd-info-label fd-info-label--accent-color-7">Info Label</span>
+    <br><br>
+    <span class="fd-info-label fd-info-label--accent-color-8">Info Label</span>
+    <br><br>
+    <span class="fd-info-label fd-info-label--accent-color-9">Info Label</span>
+    <br><br>
+    <span class="fd-info-label fd-info-label--accent-color-10">Info Label</span>
+</div>
 `;
 
 colors.storyName = 'Info Label colors';
@@ -51,9 +53,11 @@ colors.storyName = 'Info Label colors';
  * */
 
 export const icons = () => `
-<span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon sap-icon--future">Info Label</span>
-<br><br>
-<span class="fd-info-label fd-info-label--accent-color-2 fd-info-label--only-icon sap-icon--upload-to-cloud"></span>
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+    <span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon sap-icon--future">Info Label</span>
+    <br><br>
+    <span class="fd-info-label fd-info-label--accent-color-2 fd-info-label--only-icon sap-icon--upload-to-cloud"></span>
+</div>
 `;
 
 icons.storyName = 'Info Label icons';
@@ -64,11 +68,13 @@ icons.storyName = 'Info Label icons';
  * */
 
 export const numeric = () => `
-<span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-1">6</span>
-<br><br>
-<span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-2">6.2</span>
-<br><br>
-<span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-3">42k</span>
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+    <span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-1">6</span>
+    <br><br>
+    <span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-2">6.2</span>
+    <br><br>
+    <span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-3">42k</span>
+</div>
 `;
 
 numeric.storyName = 'Info Label numeric';
@@ -78,7 +84,7 @@ numeric.storyName = 'Info Label numeric';
  * */
 
 export const rtl = () => `
-<div dir="rtl">
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;" dir="rtl">
     <span class="fd-info-label fd-info-label--accent-color-1">Info Label</span>
     <span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-1">6</span>
     <span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon sap-icon--future">Info Label</span>
