@@ -22,7 +22,7 @@ export const desktopAndTablet = () => `
 <div style="width: 50%; display: inline-block">    
 <label class="fd-form-label">Combobox Tablet Cozy Mode - default mode</label><br/><br/>
 
-<nav class="fd-menu">
+<nav aria-label="fd-menu-nav" class="fd-menu">
     <ul class="fd-menu__list" role="menu">
         <li class="fd-menu__item" role="presentation">
             <a class="fd-menu__link" href="#" role="menuitem">
@@ -89,7 +89,7 @@ desktopAndTablet.parameters = {
 export const mobileCozyMode = () => `
 <div style="width: 50%; display: inline-block" class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
     <div class="fd-dialog__content fd-dialog__content--mobile">
-        <header class="fd-dialog__header fd-bar fd-bar--header">
+        <header aria-label="bar-header" class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
                     <h3 class="fd-dialog__title">
@@ -99,7 +99,7 @@ export const mobileCozyMode = () => `
             </div>
         </header>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
-             <nav class="fd-menu fd-menu--mobile" aria-hidden="true" id="parent-menu">
+             <nav tabindex="-1" class="fd-menu fd-menu--mobile" aria-hidden="true" id="parent-menu">
                 <ul class="fd-menu__list" role="menu">
                     <li class="fd-menu__item" role="presentation">
                         <a class="fd-menu__link" href="#" role="menuitem">
@@ -132,22 +132,22 @@ export const mobileCozyMode = () => `
                 </ul>
             </nav>
         </div>
-       <footer class="fd-dialog__footer fd-bar fd-bar--cosy fd-bar--footer">
+       <footer aria-label="bar-footer" class="fd-dialog__footer fd-bar fd-bar--cosy fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--light fd-dialog__decisive-button">Cancel</button>
+                    <button aria-label="fd-button" role="button" class="fd-button fd-button--light fd-dialog__decisive-button">Cancel</button>
                 </div>
             </div>
         </footer>
     </div>
 </div>
 
-<div style="display: inline-block; width: auto;" class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
+<div style="display: inline-block; width: auto;" class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example-inner">
     <div class="fd-dialog__content fd-dialog__content--mobile">
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                <button aria-label="fd-button" role="button" class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
             </div>
             <div class="fd-bar__element">
                     <h3 class="fd-dialog__title">
@@ -185,7 +185,7 @@ export const mobileCozyMode = () => `
        <footer class="fd-dialog__footer fd-bar fd-bar--cosy fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--light fd-dialog__decisive-button">Cancel</button>
+                    <button aria-label="fd-button" role="button" class="fd-button fd-button--light fd-dialog__decisive-button">Cancel</button>
                 </div>
             </div>
         </footer>
