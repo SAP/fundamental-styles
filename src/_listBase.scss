@@ -81,6 +81,7 @@
   &__title {
     flex: 3 3 10%;
     font-size: $fd-list-large-font-size;
+    min-height: $fd-list-normal-font-size;
 
     &:last-child:first-child {
       flex-basis: auto;
@@ -212,6 +213,7 @@
 
     .#{$block}__title {
       font-size: $fd-list-normal-font-size;
+      min-height: $fd-list-normal-font-size;
     }
 
     .#{$block}__icon {
