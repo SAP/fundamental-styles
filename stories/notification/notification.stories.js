@@ -79,7 +79,7 @@ export const success = () => `
 `;
 success.parameters = {
     docs: {
-        iframeHeight: 200,
+        iframeHeight: 250,
         storyDescription: 'Add the modifier class `fd-notification--success` for Success notification.'
     }
 };
@@ -229,7 +229,7 @@ export const mediumSize = () => `
 `;
 mediumSize.parameters = {
     docs: {
-        iframeHeight: 200,
+        iframeHeight: 250,
         storyDescription: 'Medium (m) size notifications have width from 320px to 640px. Include the modifier class `fd-notification--m` to achieve medium size notification.'
     }
 };
@@ -416,7 +416,7 @@ export const notificationGroup = () => `
 `;
 notificationGroup.parameters = {
     docs: {
-        iframeHeight: 750
+        iframeHeight: 800
     }
 };
 export const RTL = () => `
