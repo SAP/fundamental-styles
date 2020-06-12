@@ -21,7 +21,7 @@ export const primary = () => `
     <span class="fd-token__text">
         Lorem
     </span>
-    <button class="fd-token__close" tabindex="-1" aria-label="Lorem token close2"></button>
+    <button class="fd-token__close" tabindex="-1" aria-label="Lorem token close"></button>
 </span>
 <span class="fd-token" role="button" tabindex="0">
     <span class="fd-token__text">
@@ -47,25 +47,25 @@ export const selected = () => `
     <span class="fd-token__text">
         Bibendum
     </span>
-    <button class="fd-token__close" tabindex="-1"></button>
+    <button class="fd-token__close" tabindex="-1" aria-label="Bibendum token close"></button>
 </span>
 <span class="fd-token fd-token--selected" role="button" tabindex="0">
     <span class="fd-token__text">
         Lorem
     </span>
-    <button class="fd-token__close" tabindex="-1"></button>
+    <button class="fd-token__close" tabindex="-1" aria-label="Lorem token close"></button>
 </span>
 <span class="fd-token fd-token--selected" role="button" tabindex="0">
     <span class="fd-token__text">
         Dolor
     </span>
-    <button class="fd-token__close" tabindex="-1"></button>
+    <button class="fd-token__close" tabindex="-1" aria-label="Dolor token close"></button>
 </span>
 <span class="fd-token fd-token--selected" role="button" tabindex="0">
     <span class="fd-token__text">
         Filter
     </span>
-    <button class="fd-token__close" tabindex="-1"></button>
+    <button class="fd-token__close" tabindex="-1" aria-label="Filter token close"></button>
 </span>
 `;
 
@@ -105,25 +105,25 @@ export const compactToken = () => `
     <span class="fd-token__text">
         Bibendum
     </span>
-    <button class="fd-token__close" tabindex="-1"></button>
+    <button class="fd-token__close" tabindex="-1" aria-label="Bibendum token close"></button>
 </span>
 <span class="fd-token fd-token--compact" role="button" tabindex="0">
     <span class="fd-token__text">
         Lorem
     </span>
-    <button class="fd-token__close" tabindex="-1"></button>
+    <button class="fd-token__close" tabindex="-1" aria-label="Lorem token close"></button>
 </span>
 <span class="fd-token fd-token--compact" role="button" tabindex="0">
     <span class="fd-token__text">
         Dolor
     </span>
-    <button class="fd-token__close" tabindex="-1"></button>
+    <button class="fd-token__close" tabindex="-1" aria-label="Dolor token close"></button>
 </span>
 <span class="fd-token fd-token--compact" role="button" tabindex="0">
     <span class="fd-token__text">
         Filter
     </span>
-    <button class="fd-token__close" tabindex="-1"></button>
+    <button class="fd-token__close" tabindex="-1" aria-label="Filter token close"></button>
 </span>
 `;
 
@@ -141,32 +141,32 @@ export const cozyTokenizer = () => `
             <span class="fd-token__text">
                 Bibendum
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Lorem
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Dolor
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Filter
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token fd-token--readonly">
             <span class="fd-token__text">
                 Lorem
             </span>
         </span>
-        <input class="fd-input fd-tokenizer__input" />
+        <input class="fd-input fd-tokenizer__input" aria-label="Tokenizer input"/>
     </div>
 </div>
 <br/><br/>
@@ -176,32 +176,32 @@ export const cozyTokenizer = () => `
             <span class="fd-token__text">
                 Bibendum
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Lorem
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Dolor
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Filter
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token fd-token--readonly">
             <span class="fd-token__text">
                 Lorem
             </span>
         </span>
-        <input class="fd-input fd-tokenizer__input" />
+        <input class="fd-input fd-tokenizer__input" aria-label="Tokenizer input"/>
     </div>
 </div>
 `;
@@ -218,32 +218,32 @@ export const compactTokenizer = () => `
             <span class="fd-token__text">
                 Bibendum
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Lorem
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Dolor
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Filter
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token fd-token--readonly fd-token--compact">
             <span class="fd-token__text">
                 Lorem
             </span>
         </span>
-        <input class="fd-input fd-input--compact fd-tokenizer__input" />
+        <input class="fd-input fd-input--compact fd-tokenizer__input" aria-label="Tokenizer input"/>
     </div>
 </div>
 <br/><br/>
@@ -253,32 +253,32 @@ export const compactTokenizer = () => `
             <span class="fd-token__text">
                 Bibendum
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Lorem
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Dolor
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
                 Filter
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token fd-token--readonly fd-token--compact">
             <span class="fd-token__text">
                 Lorem
             </span>
         </span>
-        <input class="fd-input fd-input--compact fd-tokenizer__input" />
+        <input class="fd-input fd-input--compact fd-tokenizer__input" aria-label="Tokenizer input"/>
     </div>
 </div>
 `;
@@ -295,62 +295,62 @@ export const scrollableTokenizer = () => `
             <span class="fd-token__text">
                 Long Token Option 1
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Long Token Option 2
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Long Token Option 3
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Long Token Option 4
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Long Token Option 5
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Long Token Option 6
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Long Token Option 7
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Long Token Option 8
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Long Token Option 9
             </span>
-            <button class="fd-token__close" tabindex="-1"></button>
+            <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
         <span class="fd-token fd-token--readonly">
             <span class="fd-token__text">
                 Long Token Option 10
             </span>
         </span>
-        <input class="fd-input fd-tokenizer__input" />
+        <input class="fd-input fd-tokenizer__input" aria-label="Tokenizer input"/>
     </div>
 </div>
 `;
@@ -365,32 +365,32 @@ export const rtl = () => `
                 <span class="fd-token__text">
                     Bibendum
                 </span>
-                <button class="fd-token__close" tabindex="-1"></button>
+                <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
             </span>
             <span class="fd-token fd-token--compact" role="button" tabindex="0">
                 <span class="fd-token__text">
                     Lorem
                 </span>
-                <button class="fd-token__close" tabindex="-1"></button>
+                <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
             </span>
             <span class="fd-token fd-token--compact" role="button" tabindex="0">
                 <span class="fd-token__text">
                     Dolor
                 </span>
-                <button class="fd-token__close" tabindex="-1"></button>
+                <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
             </span>
             <span class="fd-token fd-token--compact" role="button" tabindex="0">
                 <span class="fd-token__text">
                     Filter
                 </span>
-                <button class="fd-token__close" tabindex="-1"></button>
+                <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
             </span>
             <span class="fd-token fd-token--readonly fd-token--compact">
                 <span class="fd-token__text">
                     Lorem
                 </span>
             </span>
-            <input class="fd-input fd-input--compact fd-tokenizer__input" />
+            <input class="fd-input fd-input--compact fd-tokenizer__input" aria-label="Tokenizer input"/>
         </div>
     </div>
 </div>
