@@ -14,7 +14,6 @@ $block: #{$fd-namespace}-select;
 
   display: block;
   padding-right: 0;
-  min-width: 5rem;
 
   &__control {
     @include fd-form-base();
@@ -86,6 +85,10 @@ $block: #{$fd-namespace}-select;
 
   &__text {
     font-size: var(--sapFontSize);
+  }
+
+  &__text-content {
+    min-width: 5rem;
   }
 
   &--compact {

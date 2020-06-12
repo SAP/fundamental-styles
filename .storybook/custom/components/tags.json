@@ -28,5 +28,10 @@
         "name": "non-fiori 3", 
         "title": "Non Fiori 3 Component" ,
         "color": 6
-    }
+    },
+    "under-review": {
+      "name": "under review", 
+      "title": "Under Review" ,
+      "color": 7
+  }
 }
