@@ -17,7 +17,7 @@ export const firstPage = () => `
     <span class="fd-pagination__total">30 items</span>
     <nav class="fd-pagination__nav">
         <a href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Previous"aria-disabled="true"></a>
-        <a href="#" class="fd-pagination__link" aria-selected="true">1</a>
+        <a href="#" class="fd-pagination__link is-selected" >1</a>
         <a href="#" class="fd-pagination__link">2</a>
         <a href="#" class="fd-pagination__link">3</a>
         <a href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next"
@@ -38,7 +38,7 @@ export const secondPage = () => `
     <a href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Previous"
     aria-disabled="false"></a>
     <a href="#" class="fd-pagination__link">1</a>
-    <a href="#" class="fd-pagination__link" aria-selected="true">2</a>
+    <a href="#" class="fd-pagination__link is-selected">2</a>
     <a href="#" class="fd-pagination__link">3</a>
     <a href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next"
     aria-disabled="false"></a>
@@ -57,7 +57,7 @@ export const multiplePages = () => `
     <a href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Previous"
     aria-disabled="false"></a>
     <a href="#" class="fd-pagination__link">1</a>
-    <a href="#" class="fd-pagination__link" aria-selected="true">2</a>
+    <a href="#" class="fd-pagination__link is-selected">2</a>
     <a href="#" class="fd-pagination__link">3</a>
     <span class="fd-pagination__more" role="presentation"></span>
     <a href="#" class="fd-pagination__link">50</a>
@@ -80,7 +80,7 @@ export const middlePage = () => `
     <a href="#" class="fd-pagination__link">1</a>
     <span class="fd-pagination__more" role="presentation"></span>
     <a href="#" class="fd-pagination__link">21</a>
-    <a href="#" class="fd-pagination__link" aria-selected="true">22</a>
+    <a href="#" class="fd-pagination__link is-selected">22</a>
     <a href="#" class="fd-pagination__link">23</a>
     <span class="fd-pagination__more" role="presentation"></span>
     <a href="#" class="fd-pagination__link">50</a>
@@ -103,7 +103,7 @@ export const lastPage = () => `
     <a href="#" class="fd-pagination__link">1</a>
     <span class="fd-pagination__more" role="presentation"></span>
     <a href="#" class="fd-pagination__link">49</a>
-    <a href="#" class="fd-pagination__link" aria-selected="true">50</a>
+    <a href="#" class="fd-pagination__link is-selected">50</a>
     <a href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next"
     aria-disabled="true"></a>
   </nav>
@@ -123,7 +123,7 @@ export const rtlExample = () => `
     <a href="#" class="fd-pagination__link">1</a>
     <span class="fd-pagination__more" role="presentation"></span>
     <a href="#" class="fd-pagination__link">21</a>
-    <a href="#" class="fd-pagination__link" aria-selected="true">22</a>
+    <a href="#" class="fd-pagination__link is-selected">22</a>
     <a href="#" class="fd-pagination__link">23</a>
     <span class="fd-pagination__more" role="presentation"></span>
     <a href="#" class="fd-pagination__link">50</a>
