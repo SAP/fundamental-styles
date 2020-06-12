@@ -5,6 +5,7 @@ import '../../dist/notification.css';
 export default {
     title: 'Components/Notification',
     parameters: {
+        tags: ['f3', 'a11y', 'theme', 'development', 'under-review'],
         description: `
 - **Sizes**: Notifications have 3 sizes: Large (width more than 640px), Medium (width from 320px to 640px) and Small (width up to 320px). The default size is Large (L). It takes 100% of the parent container but can't exceed 60rem. 
 - **Types**: default, success, warning, error, and information.`
@@ -44,9 +45,6 @@ primary.parameters = {
         iframeHeight: 200
     }
 };
-/*
- * Add the modifier class `fd-notification--success` for Success notification.
- */
 
 export const success = () => `
 <div class="fd-notification fd-notification--success">
@@ -81,12 +79,10 @@ export const success = () => `
 `;
 success.parameters = {
     docs: {
-        iframeHeight: 200
+        iframeHeight: 200,
+        storyDescription: 'Add the modifier class `fd-notification--success` for Success notification.'
     }
 };
-/**
- * Add the modifier class `fd-notification--warning` for Warning notification.
- */
 
 export const warning = () => `
 <div class="fd-notification fd-notification--warning">
@@ -121,12 +117,10 @@ export const warning = () => `
 `;
 warning.parameters = {
     docs: {
-        iframeHeight: 200
+        iframeHeight: 200,
+        storyDescription: 'Add the modifier class `fd-notification--warning` for Warning notification.'
     }
 };
-/**
-* Add the modifier class `fd-notification--error` for Error notification.
-*/
 
 export const error = () => `
 <div class="fd-notification fd-notification--error">
@@ -160,10 +154,10 @@ export const error = () => `
 `;
 error.parameters = {
     docs: {
-        iframeHeight: 200
+        iframeHeight: 200,
+        storyDescription: 'Add the modifier class `fd-notification--error` for Error notification.'
     }
 };
-/**Add the modifier class `fd-notification--information` for Information notification. */
 
 export const information = () => `
 <div class="fd-notification fd-notification--information">
@@ -198,13 +192,10 @@ export const information = () => `
 `;
 information.parameters = {
     docs: {
-        iframeHeight: 200
+        iframeHeight: 200,
+        storyDescription: 'Add the modifier class `fd-notification--information` for Information notification.'
     }
 };
-/**
-* Medium (m) size notifications have width from 320px to 640px.
-* Include the modifier class `fd-notification--m` to achieve medium size notification.
-*/
 
 export const mediumSize = () => `
 <div class="fd-notification fd-notification--success fd-notification--m">
@@ -238,10 +229,10 @@ export const mediumSize = () => `
 `;
 mediumSize.parameters = {
     docs: {
-        iframeHeight: 200
+        iframeHeight: 200,
+        storyDescription: 'Medium (m) size notifications have width from 320px to 640px. Include the modifier class `fd-notification--m` to achieve medium size notification.'
     }
 };
-/**Small (s) size notifications have width 320px . Include the modifier class `fd-notification--s` to achieve small size notification. */
 
 export const smallSize = () => `
 <div class="fd-notification fd-notification--information fd-notification--s">
@@ -300,7 +291,8 @@ export const smallSize = () => `
 `;
 smallSize.parameters = {
     docs: {
-        iframeHeight: 450
+        iframeHeight: 450,
+        storyDescription: 'Small (s) size notifications have width 320px . Include the modifier class `fd-notification--s` to achieve small size notification.'
     }
 };
 export const notificationGroup = () => `
