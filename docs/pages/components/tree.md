@@ -803,7 +803,7 @@ and the indentation rules are repeated.
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" class="fd-tree level-1 expanded-level-25">
+<ul role="tree" class="fd-tree fd-tree--compact level-1 expanded-level-25">
     <li role="treeitem" aria-level="0" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -932,7 +932,7 @@ Same indentation rules as Tree with Expanded Level 2
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" class="fd-tree level-1 expanded-level-26">
+<ul role="tree" class="fd-tree fd-tree--compact level-1 expanded-level-26">
     <li role="treeitem" aria-level="0" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -1096,7 +1096,7 @@ Same indentation rules as Tree with Expanded Level 3
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" class="fd-tree level-1 expanded-level-27">
+<ul role="tree" class="fd-tree fd-tree--compact level-1 expanded-level-27">
     <li role="treeitem" aria-level="0" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -1327,7 +1327,7 @@ Same indentation rules as Tree with Expanded Level 6
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" class="fd-tree level-1 expanded-level-30">
+<ul role="tree" class="fd-tree fd-tree--compact level-1 expanded-level-30">
     <li role="treeitem" aria-level="0" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
