@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.30"></a>
+# [0.11.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.29...v0.11.0-rc.30) (2020-06-12)
+
+
+### Features
+
+* update pagination selected page markup and add pagination storybook and remove njk ([#1147](https://github.com/SAP/fundamental-styles/issues/1147)) ([5f7cff5](https://github.com/SAP/fundamental-styles/commit/5f7cff5))
+
+
+
 <a name="0.11.0-rc.29"></a>
 # [0.11.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.28...v0.11.0-rc.29) (2020-06-12)
 
