@@ -198,21 +198,14 @@ $fd-tree-checkbox-margin-right-compact: 0.5rem !default;
 
   &.expanded-level-3,
   &.expanded-level-4,
-  &.expanded-level-5 {
-    @for $i from 2 through 6 {
-      $marginLeft: ($i - 1) * 0.5rem;
-      .level-#{$i} {
-        @include set-indentation($marginLeft);
-      }
-    }
-  }
-
+  &.expanded-level-5,
   &.expanded-level-27,
   &.expanded-level-28,
   &.expanded-level-29 {
-    @for $i from 26 through 30 {
-      $marginLeft: ($i - 25) * 0.5rem;
-      .level-#{$i} {
+    @for $i from 2 through 6 {
+      $marginLeft: ($i - 1) * 0.5rem;
+      .level-#{$i},
+      .level-#{$i + 24} {
         @include set-indentation($marginLeft);
       }
     }
