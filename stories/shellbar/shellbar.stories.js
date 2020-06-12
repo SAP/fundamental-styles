@@ -14,7 +14,7 @@ export default {
         tags: ['f3', 'a11y', 'theme'],
         description: `The shellbar offers consistent, responsive navigation across all products and applications.
         Includes support for branding, product navigation, search, notifications, user settings, and CoPilot. This is a composite component comprised of mandatory and optional elements.
-        <h2>How it works </h2> 
+        ##How it works  
 
 - The shellbar should be placed inside the shell layout container.
 
@@ -26,7 +26,7 @@ export default {
 
 Moving from left to right, the shellbar content will become more variable based on the product needs. See below for more details about child elements.
 
-<h2>Supported elements</h2>
+##Supported elements
 
 The shellbar handles layout and has some built-in elements but relies on standalone components for much of its content.
 
@@ -53,10 +53,6 @@ Here are examples of various configurations.
 `
     }
 };
-
-
-/**This example shows the minimum shellbar for a single application product with only user settings. If no user thumbnail is available then display initials.
-*/
 
 export const primary = () => `
 <div class="fd-shellbar">
@@ -95,10 +91,10 @@ export const primary = () => `
 `;
 primary.parameters = {
     docs: {
-        iframeHeight: 150
+        iframeHeight: 150,
+        storyDescription: 'This example shows the minimum shellbar for a single application product with only user settings. If no user thumbnail is available then display initials.'
     }
 };
-/**This example includes the product menu for navigating to applications within the product and shows a search box.*/
 
 export const productMenuAndSearch = () => `
 <div class="fd-shellbar">
@@ -187,12 +183,10 @@ export const productMenuAndSearch = () => `
 `;
 productMenuAndSearch.parameters = {
     docs: {
-        iframeHeight: 150
+        iframeHeight: 150,
+        storyDescription: 'This example includes the product menu for navigating to applications within the product and shows a search box.'
     }
 };
-
-/**When a product has multiple links, the product links should collapse into an overflow menu on mobile screens.
-* All actions, except for the user menu, should be collapsed. See the placement of the `.fd-shellbar__action--mobile` container below. */
 
 export const linksWithCollapsibleMenu = () => `
 <div class="fd-shellbar">
@@ -287,13 +281,10 @@ export const linksWithCollapsibleMenu = () => `
 `;
 linksWithCollapsibleMenu.parameters = {
     docs: {
-        iframeHeight: 150
+        iframeHeight: 150,
+        storyDescription: 'When a product has multiple links, the product links should collapse into an overflow menu on mobile screens. All actions, except for the user menu, should be collapsed. See the placement of the `.fd-shellbar__action--mobile` container below.'
     }
 };
-/**
- * This example shows an application with CoPilot, integration with other products, and a customized logo.
-For more information about the Product Switch, see [Product Switch](product-switch.html) component.
- */
 
 export const productSwitchandCopilot = () => `
  <div class="fd-shellbar">
@@ -450,6 +441,7 @@ export const productSwitchandCopilot = () => `
 `;
 productSwitchandCopilot.parameters = {
     docs: {
-        iframeHeight: 150
+        iframeHeight: 150,
+        storyDescription: 'This example shows an application with CoPilot, integration with other products, and a customized logo. For more information about the Product Switch, see [Product Switch](product-switch.html) component.'
     }
 };
