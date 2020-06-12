@@ -3,7 +3,10 @@ export default {
     parameters: {
         description: `
   The left navigation area can be used to display navigation structures with links that change the content in the main area. The side navigation consists of two container section:  the Main Navigation Section (top-aligned) with links used to navigate within the user’s current work context, and Utility Section (bottom-aligned) that contains links to additional information.
-  Each of the sections uses a Nested List to display the navigation items.`
+  Each of the sections uses a Nested List to display the navigation items.`,
+        docs: {
+            iframeHeight: 400
+        }
     }
 };
 
@@ -15,8 +18,8 @@ export default {
 export const cozy = () => `
 <div class="fd-side-nav">
     <a class="fd-side-nav__skip-link" href="#content">Skip navigation</a>
-    <nav class="fd-side-nav__main-navigation">
-        <ul class="fd-nested-list fd-nested-list--text-only">
+    <nav class="fd-side-nav__main-navigation" aria-label="Main Menu">
+        <ul class="fd-nested-list fd-nested-list--text-only" aria-label="Main Menu">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link">
                     <span class="fd-nested-list__title">Level 1 Item</span>
@@ -39,7 +42,7 @@ export const cozy = () => `
             </li>
         </ul>
     </nav>
-    <nav class="fd-side-nav__utility">
+    <nav class="fd-side-nav__utility" aria-label="Utility Menu">
         <ul class="fd-nested-list fd-nested-list--text-only" aria-label="Utility Menu">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link">
@@ -56,15 +59,13 @@ export const cozy = () => `
 </div>
 `;
 
-cozy.parameters = {};
-
 
 /** Side Navigation with one level - with icons, cozy mode. */
 
 export const cozyIcons = () => `
 <div class="fd-side-nav">
     <a class="fd-side-nav__skip-link" href="#content">Skip navigation</a>
-    <nav class="fd-side-nav__main-navigation">
+    <nav class="fd-side-nav__main-navigation" aria-label="Main Menu">
         <ul class="fd-nested-list">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
@@ -92,7 +93,7 @@ export const cozyIcons = () => `
             </li>
         </ul>
     </nav>
-    <nav class="fd-side-nav__utility">
+    <nav class="fd-side-nav__utility" aria-label="Utility Menu">
         <ul class="fd-nested-list">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
@@ -111,7 +112,11 @@ export const cozyIcons = () => `
 </div>
 `;
 
-cozyIcons.parameters = {};
+cozyIcons.parameters = {
+    docs: {
+        iframeHeight: 400
+    }
+};
 
 /** Use this when there is more than one level of hierarchy in the left navigation.
  * The entries on the first level are just group headers(don't trigger navigation themselves).
@@ -122,7 +127,7 @@ cozyIcons.parameters = {};
 export const cozyMultiple = () => `
 <div class="fd-side-nav">
     <a class="fd-side-nav__skip-link" href="#content">Skip navigation</a>
-    <nav class="fd-side-nav__main-navigation">
+    <nav class="fd-side-nav__main-navigation" aria-label="Main Menu">
         <ul class="fd-nested-list fd-nested-list--text-only">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
@@ -176,7 +181,7 @@ export const cozyMultiple = () => `
             </li>
         </ul>
     </nav>
-    <nav class="fd-side-nav__utility">
+    <nav class="fd-side-nav__utility" aria-label="Utility Menu">
         <ul class="fd-nested-list fd-nested-list--text-only" aria-label="Utility Menu">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
@@ -193,6 +198,12 @@ export const cozyMultiple = () => `
 </div>
 `;
 
+cozyMultiple.parameters = {
+    docs: {
+        iframeHeight: 400
+    }
+};
+
 /** Side navigation with 2 levels - with icons and group headers, cozy mode */
 
 export const complexCozySideNav = () => `
@@ -201,7 +212,7 @@ export const complexCozySideNav = () => `
     <div class="fd-side-nav__group-header" id="EX400H1">
         Group Header 1
     </div>
-    <nav class="fd-side-nav__main-navigation">
+    <nav class="fd-side-nav__main-navigation" aria-label="Main Menu">
         <ul class="fd-nested-list" aria-labelledby="EX400H1">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
@@ -259,7 +270,7 @@ export const complexCozySideNav = () => `
         </div>
         <ul class="fd-nested-list" aria-labelledby="EX400H2">
             <li class="fd-nested-list__item">
-                <a class="fd-nested-list__link" href="#" aria-labelledby="group-2-header">
+                <a class="fd-nested-list__link" href="#">
                     <span aria-hidden="true" class="fd-nested-list__icon sap-icon--bar-chart"></span>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
@@ -271,7 +282,7 @@ export const complexCozySideNav = () => `
             </li>
         </ul>
     </nav>
-    <nav class="fd-side-nav__utility">
+    <nav class="fd-side-nav__utility" aria-label="Utility Menu">
         <ul class="fd-nested-list" aria-label="Utility Menu">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
@@ -290,6 +301,11 @@ export const complexCozySideNav = () => `
 </div>
 `;
 
+complexCozySideNav.parameters = {
+    docs: {
+        iframeHeight: 550
+    }
+};
 
 /** Side navigation with 2 levels - with icons and group headers, compact mode */
 
@@ -299,7 +315,7 @@ export const complexCompactSideNav = () => `
     <div class="fd-side-nav__group-header" id="EX500H1">
         Group Header 1
     </div>
-    <nav class="fd-side-nav__main-navigation">
+    <nav class="fd-side-nav__main-navigation" aria-label="Main Menu">
         <ul class="fd-nested-list fd-nested-list--compact" aria-labelledby="EX500H1">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
@@ -368,7 +384,7 @@ export const complexCompactSideNav = () => `
             </li>
         </ul>
     </nav>
-    <nav class="fd-side-nav__utility">
+    <nav class="fd-side-nav__utility" aria-label="Utility Menu">
         <ul class="fd-nested-list fd-nested-list--compact" aria-label="Utility Menu">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
@@ -386,6 +402,12 @@ export const complexCompactSideNav = () => `
     </nav>
 </div>
 `;
+
+complexCompactSideNav.parameters = {
+    docs: {
+        iframeHeight: 550
+    }
+};
 
 export const condensedStateCozy = () => `
 <nav class="fd-side-nav fd-side-nav--condensed">
@@ -445,7 +467,11 @@ export const condensedStateCozy = () => `
 </nav>
 `;
 
-condensedStateCozy.parameters = {};
+condensedStateCozy.parameters = {
+    docs: {
+        iframeHeight: 500
+    }
+};
 
 /** The default size for the popover body is often longer than the text length. The length can be adjusted to match the text
  * length by adding the `fd-popover__body--dropdown-fill` class to `fd-popover__body`. */
