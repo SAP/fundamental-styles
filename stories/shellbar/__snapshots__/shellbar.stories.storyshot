@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Shellbar Links With Collapsible Menu 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Shellbar Primary 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Shellbar Product Menu And Search 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Shellbar Product Switchand Copilot 1`] = `
+
+ 
+`;

@@ -1,0 +1,1686 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Bar Bar As Floating Footer 1`] = `
+<section>
+  
+
+  <div>
+    <b>
+      Desktop
+    </b>
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-bar fd-bar--floating-footer"
+  >
+    
+    
+    <div
+      class="fd-bar__right"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--emphasized fd-button--compact"
+        >
+          Save
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          Cancel
+        </button>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+  <br />
+  <br />
+  
+
+  <div>
+    <b>
+      Tablet and Mobile (Cosy)
+    </b>
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-bar fd-bar--floating-footer fd-bar--cosy"
+  >
+    
+    
+    <div
+      class="fd-bar__right"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--emphasized"
+        >
+          Save
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent"
+        >
+          Cancel
+        </button>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+  <br />
+  <br />
+  
+
+  <div>
+    <b>
+      RTL Support
+    </b>
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-bar fd-bar--floating-footer"
+    dir="rtl"
+  >
+    
+    
+    <div
+      class="fd-bar__right"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--emphasized fd-button--compact"
+        >
+          Save
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          Cancel
+        </button>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Bar Bar As Footer 1`] = `
+<section>
+  
+
+  <div>
+    <b>
+      Desktop
+    </b>
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-bar fd-bar--footer"
+  >
+    
+    
+    <div
+      class="fd-bar__right"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--emphasized fd-button--compact"
+        >
+          Save
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          Cancel
+        </button>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+  <br />
+  <br />
+  
+
+  <div>
+    <b>
+      Tablet and Mobile (Cosy)
+    </b>
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-bar fd-bar--footer fd-bar--cosy"
+  >
+    
+    
+    <div
+      class="fd-bar__right"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--emphasized"
+        >
+          Save
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent"
+        >
+          Cancel
+        </button>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+  <br />
+  <br />
+  
+
+  <div>
+    <b>
+      RTL Support
+    </b>
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-bar fd-bar--footer"
+    dir="rtl"
+  >
+    
+    
+    <div
+      class="fd-bar__right"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--emphasized fd-button--compact"
+        >
+          Save
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          Cancel
+        </button>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Bar Bar As Header 1`] = `
+<section>
+  
+
+  <div>
+    <b>
+      Desktop
+    </b>
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-bar fd-bar--header"
+  >
+    
+    
+    <div
+      class="fd-bar__left"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--home"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--account"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__middle"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <div
+          aria-label="Group label"
+          class="fd-segmented-button"
+          role="group"
+        >
+          
+                
+          <button
+            aria-label="button"
+            aria-pressed="true"
+            class="fd-button fd-button--compact sap-icon--email"
+          />
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact sap-icon--iphone"
+          />
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact sap-icon--notification-2"
+          />
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__right"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <span
+          aria-label="Image label"
+          class="fd-image--s"
+          style="background-image: url('https://placeimg.com/400/400/nature');"
+        >
+          
+            
+        </span>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--grid"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+  <br />
+  <br />
+  
+
+  <div>
+    <b>
+      Tablet and Mobile (Cosy)
+    </b>
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-bar fd-bar--header fd-bar--cosy"
+  >
+    
+    
+    <div
+      class="fd-bar__left"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--home"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--account"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__middle"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <div
+          aria-label="Group label"
+          class="fd-segmented-button"
+          role="group"
+        >
+          
+                
+          <button
+            aria-label="button"
+            aria-pressed="true"
+            class="fd-button fd-button--compact sap-icon--email"
+          />
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact sap-icon--iphone"
+          />
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact sap-icon--notification-2"
+          />
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__right"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <span
+          aria-label="Image label"
+          class="fd-image--s"
+          style="background-image: url('https://placeimg.com/400/400/nature');"
+        >
+          
+            
+        </span>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--grid"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+  <br />
+  <br />
+  
+
+  <div>
+    <b>
+      RTL Support
+    </b>
+  </div>
+  
+
+  <br />
+   
+
+  <div
+    class="fd-bar fd-bar--header"
+    dir="rtl"
+  >
+    
+    
+    <div
+      class="fd-bar__left"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--home"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--account"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__middle"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <div
+          aria-label="Group label"
+          class="fd-segmented-button"
+          role="group"
+        >
+          
+                
+          <button
+            aria-label="button"
+            aria-pressed="true"
+            class="fd-button fd-button--compact sap-icon--email"
+          />
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact sap-icon--iphone"
+          />
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact sap-icon--notification-2"
+          />
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__right"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <span
+          aria-label="Image label"
+          class="fd-image--s"
+          style="background-image: url('https://placeimg.com/400/400/nature');"
+        >
+          
+            
+        </span>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--grid"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Bar Bar As Subheader 1`] = `
+<section>
+  
+
+  <div>
+    <b>
+      Desktop
+    </b>
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-bar fd-bar--subheader"
+  >
+    
+    
+    <div
+      class="fd-bar__left"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent fd-button--compact sap-icon--home"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__right"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <span
+          aria-label="Image label"
+          class="fd-image--s"
+          style="background-image: url('https://placeimg.com/400/400/nature');"
+        >
+          
+            
+        </span>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent fd-button--compact sap-icon--grid"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+  <br />
+  <br />
+  
+
+  <div>
+    <b>
+      Tablet and Mobile (Cosy)
+    </b>
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-bar fd-bar--subheader fd-bar--cosy"
+  >
+    
+    
+    <div
+      class="fd-bar__middle"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <div
+          class="fd-form-item"
+        >
+          
+                
+          <div
+            aria-label="Group label"
+            class="fd-segmented-button"
+            role="group"
+          >
+            
+                    
+            <button
+              aria-label="button"
+              aria-pressed="true"
+              class="fd-button fd-button--compact sap-icon--email"
+            />
+            
+                    
+            <button
+              aria-label="button"
+              class="fd-button fd-button--compact sap-icon--iphone"
+            />
+            
+                    
+            <button
+              aria-label="button"
+              class="fd-button fd-button--compact sap-icon--notification-2"
+            />
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+  <br />
+  <br />
+  
+
+  <div>
+    <b>
+      Full width element
+    </b>
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-bar fd-bar--subheader fd-bar--cosy"
+  >
+    
+    
+    <div
+      class="fd-bar__middle"
+    >
+      
+        
+      <div
+        class="fd-bar__element fd-bar__element--full-width"
+      >
+        
+            
+        <input
+          aria-label="input"
+          class="fd-input fd-input--compact fd-input-group__input"
+          id=""
+          name=""
+          type="text"
+          value="1234568910"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+  <br />
+  <br />
+  
+
+  <div>
+    <b>
+      RTL Support
+    </b>
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-bar fd-bar--subheader"
+    dir="rtl"
+  >
+    
+    
+    <div
+      class="fd-bar__left"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-right-arrow"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--compact fd-button--transparent sap-icon--home"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__right"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <span
+          aria-label="Image label"
+          class="fd-image--s"
+          style="background-image: url('https://placeimg.com/400/400/nature');"
+        >
+          
+            
+        </span>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--compact fd-button--transparent sap-icon--grid"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Bar Desktop 1`] = `
+<section>
+  
+
+  <div
+    class="fd-bar"
+  >
+    
+    
+    <div
+      class="fd-bar__left"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--home"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--account"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__middle"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <div
+          aria-label="Group label"
+          class="fd-segmented-button"
+          role="group"
+        >
+          
+                
+          <button
+            aria-label="button"
+            aria-pressed="true"
+            class="fd-button fd-button--compact sap-icon--email"
+          />
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact sap-icon--iphone"
+          />
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact sap-icon--notification-2"
+          />
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__right"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <span
+          aria-label="Image label"
+          class="fd-image--s"
+          style="background-image: url('https://placeimg.com/400/400/nature');"
+        >
+          
+            
+        </span>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--grid"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+  <br />
+  <br />
+  
+
+  <div>
+    <b>
+      RTL Support
+    </b>
+  </div>
+  
+
+  <br />
+    
+
+  <div
+    class="fd-bar"
+    dir="rtl"
+  >
+    
+    
+    <div
+      class="fd-bar__left"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--home"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--account"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__middle"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <div
+          aria-label="Group label"
+          class="fd-segmented-button"
+          role="group"
+        >
+          
+                
+          <button
+            aria-label="button"
+            aria-pressed="true"
+            class="fd-button fd-button--compact sap-icon--email"
+          />
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact sap-icon--iphone"
+          />
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact sap-icon--notification-2"
+          />
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__right"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <span
+          aria-label="Image label"
+          class="fd-image--s"
+          style="background-image: url('https://placeimg.com/400/400/nature');"
+        >
+          
+            
+        </span>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--grid"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Bar Header With Subheader 1`] = `
+<section>
+  
+
+  <div>
+    <b>
+      Desktop
+    </b>
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-bar fd-bar--header-with-subheader"
+  >
+    
+    
+    <div
+      class="fd-bar__left"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--home"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--account"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__middle"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <div
+          aria-label="Group label"
+          class="fd-segmented-button"
+          role="group"
+        >
+          
+                
+          <button
+            aria-label="button"
+            aria-pressed="true"
+            class="fd-button fd-button--compact sap-icon--email"
+          />
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact sap-icon--iphone"
+          />
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact sap-icon--notification-2"
+          />
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__right"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <span
+          aria-label="Image label"
+          class="fd-image--s"
+          style="background-image: url('https://placeimg.com/400/400/nature');"
+        >
+          
+            
+        </span>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent sap-icon--grid"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+  <div
+    class="fd-bar fd-bar--subheader"
+  >
+    
+    
+    <div
+      class="fd-bar__middle"
+    >
+      
+        
+      <div
+        class="fd-bar__element fd-bar__element--full-width"
+      >
+        
+            
+        <input
+          aria-label="input"
+          class="fd-input fd-input--compact fd-input-group__input"
+          id=""
+          name=""
+          type="text"
+          value="1234568910 "
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Bar Tablet And Mobile 1`] = `
+
+
+`;

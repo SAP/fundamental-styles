@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Forms/Checkbox Checkboxes in RTL Mode 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Checkbox Checkboxes listed inline 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Checkbox Interaction States 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Checkbox Responsiveness 1`] = `
+
+
+`;
