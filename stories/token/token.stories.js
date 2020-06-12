@@ -6,7 +6,8 @@ export default {
     parameters: {
         description: `Token are used to represent contextualizing information. They can be useful to show applied filters, 
 selected values for form field or object metadata.`
-    }
+    },
+    tags: ['f3', 'a11y', 'theme']
 };
 
 export const primary = () => `
@@ -14,25 +15,25 @@ export const primary = () => `
     <span class="fd-token__text">
         Bibendum
     </span>
-    <button class="fd-token__close" tabindex="-1"></button>
+    <button class="fd-token__close" tabindex="-1" aria-label="Bibendum token close"></button>
 </span>
 <span class="fd-token" role="button" tabindex="0">
     <span class="fd-token__text">
         Lorem
     </span>
-    <button class="fd-token__close" tabindex="-1"></button>
+    <button class="fd-token__close" tabindex="-1" aria-label="Lorem token close2"></button>
 </span>
 <span class="fd-token" role="button" tabindex="0">
     <span class="fd-token__text">
         Dolor
     </span>
-    <button class="fd-token__close" tabindex="-1"></button>
+    <button class="fd-token__close" tabindex="-1" aria-label="Dolor token close"></button>
 </span>
 <span class="fd-token" role="button" tabindex="0">
     <span class="fd-token__text">
         Filter
     </span>
-    <button class="fd-token__close" tabindex="-1"></button>
+    <button class="fd-token__close" tabindex="-1" aria-label="Filter token close"></button>
 </span>
 `;
 
