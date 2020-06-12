@@ -181,7 +181,6 @@ function getStarterData() {
     const data = {
         "table": require(`./templates/table/data.json`),
         "tabs": require(`./templates/tabs/data.json`),
-        "pagination": require(`./templates/pagination/data.json`),
         "localization_editor": require(`./templates/localization-editor/data.json`),
         "test": require(`./data/test.json`)
     };

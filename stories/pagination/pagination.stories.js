@@ -1,45 +1,37 @@
----
-title: Pagination
-id: pagination
-keywords: pagination
-sidebar: left-navigation-sidebar
-toc: false
-permalink: components/pagination.html
-folder: components
-summary:
-tags: [a11y, theme]
----
+import '../../dist/pagination.css';
 
-Pagination is commonly used for tables and tiles. It allows users to see how many pages of content exist, to navigate and highlights which page they are currently viewing.
-{: .docs-intro}
+export default {
+    title: 'Components/Pagination',
+    parameters: {
+        description: 'Pagination is commonly used for tables and tiles. It allows users to see how many pages of content exist, to navigate and highlights which page they are currently viewing.',
+        tags: ['a11y', 'theme']
+    }
+};
 
-<br>
+/**
+ * When the first page is active, the Back arrow should be disabled.
+ */
 
-## First Page
-When the first page is active, the Back arrow should be disabled.
-
-{% capture pagination %}
+export const firstPage = () => `
 <div class="fd-pagination">
-  <span class="fd-pagination__total">30 items</span>
-  <nav class="fd-pagination__nav">
-    <a href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Previous"
-    aria-disabled="true"></a>
-    <a href="#" class="fd-pagination__link is-selected">1</a>
-    <a href="#" class="fd-pagination__link">2</a>
-    <a href="#" class="fd-pagination__link">3</a>
-    <a href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next"
-    aria-disabled="false"></a>
-  </nav>
+    <span class="fd-pagination__total">30 items</span>
+    <nav class="fd-pagination__nav">
+        <a href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Previous"aria-disabled="true"></a>
+        <a href="#" class="fd-pagination__link is-selected" >1</a>
+        <a href="#" class="fd-pagination__link">2</a>
+        <a href="#" class="fd-pagination__link">3</a>
+        <a href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next"
+        aria-disabled="false"></a>
+    </nav>
 </div>
-{% endcapture %}
+`;
 
-{% include display-component.html component=pagination %}
+/**
+ * ##### Second Page
+ * When any other page different than the first is active, the Back button should be enabled
+ */
 
-<br>
-
-## Second Page
-
-{% capture pagination-second %}
+export const secondPage = () => `
 <div class="fd-pagination">
   <span class="fd-pagination__total">30 items</span>
   <nav class="fd-pagination__nav">
@@ -52,15 +44,13 @@ When the first page is active, the Back arrow should be disabled.
     aria-disabled="false"></a>
   </nav>
 </div>
-{% endcapture %}
+`;
 
-{% include display-component.html component=pagination-second %}
+/**
+  * More than 3 pages
+  */
 
-<br>
-
-## More than three Pages
-
-{% capture pagination-more %}
+export const multiplePages = () => `
 <div class="fd-pagination">
   <span class="fd-pagination__total">500 items</span>
   <nav class="fd-pagination__nav">
@@ -75,15 +65,13 @@ When the first page is active, the Back arrow should be disabled.
     aria-disabled="false"></a>
   </nav>
 </div>
-{% endcapture %}
+`;
 
-{% include display-component.html component=pagination-more %}
+/**
+ * In between more than three Pages
+ */
 
-<br>
-
-## In between more than three Pages
-
-{% capture pagination-more-between %}
+export const middlePage = () => `
 <div class="fd-pagination">
   <span class="fd-pagination__total">500 items</span>
   <nav class="fd-pagination__nav">
@@ -100,16 +88,13 @@ When the first page is active, the Back arrow should be disabled.
     aria-disabled="false"></a>
   </nav>
 </div>
-{% endcapture %}
+`;
 
-{% include display-component.html component=pagination-more-between %}
+/**
+ * On the last page, the Next arrow should be disabled.
+ */
 
-<br>
-
-## Last Page
-On the last page, the Next arrow should be disabled.
-
-{% capture pagination-last %}
+export const lastPage = () => `
 <div class="fd-pagination">
   <span class="fd-pagination__total">500 items</span>
   <nav class="fd-pagination__nav">
@@ -123,6 +108,27 @@ On the last page, the Next arrow should be disabled.
     aria-disabled="true"></a>
   </nav>
 </div>
-{% endcapture %}
+`;
 
-{% include display-component.html component=pagination-last %}
+/**
+ * Right-to-Left Example
+ */
+
+export const rtlExample = () => `
+<div class="fd-pagination" dir="rtl">
+  <span class="fd-pagination__total">500 items</span>
+  <nav class="fd-pagination__nav">
+    <a href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Previous"
+    aria-disabled="false"></a>
+    <a href="#" class="fd-pagination__link">1</a>
+    <span class="fd-pagination__more" role="presentation"></span>
+    <a href="#" class="fd-pagination__link">21</a>
+    <a href="#" class="fd-pagination__link is-selected">22</a>
+    <a href="#" class="fd-pagination__link">23</a>
+    <span class="fd-pagination__more" role="presentation"></span>
+    <a href="#" class="fd-pagination__link">50</a>
+    <a href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next"
+    aria-disabled="false"></a>
+  </nav>
+</div>
+`;
