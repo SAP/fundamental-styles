@@ -59,9 +59,6 @@ export const cozy = () => `
 </div>
 `;
 
-
-/** Side Navigation with one level - with icons, cozy mode. */
-
 export const cozyIcons = () => `
 <div class="fd-side-nav">
     <a class="fd-side-nav__skip-link" href="#content">Skip navigation</a>
@@ -114,15 +111,10 @@ export const cozyIcons = () => `
 
 cozyIcons.parameters = {
     docs: {
-        iframeHeight: 400
+        iframeHeight: 400,
+        storyDescription: 'Side Navigation with one level - with icons, cozy mode.'
     }
 };
-
-/** Use this when there is more than one level of hierarchy in the left navigation.
- * The entries on the first level are just group headers(don't trigger navigation themselves).
- * It's recommended to use up to two levels of navigation. For more levels of navigation, use the content area.
- * On expand, the `is-expanded` class should be propagated also to `__content` element. `fd-nested-list__button`
- * is the element which triggers another level.. */
 
 export const cozyMultiple = () => `
 <div class="fd-side-nav">
@@ -145,7 +137,6 @@ export const cozyMultiple = () => `
                         <span class="fd-nested-list__title">Level 1 Item</span>
                     </a>
                     <button class="fd-button fd-nested-list__button" 
-                        onclick="onSideNavClick('EX100L2')"
                         aria-controls="EX100L2" 
                         aria-haspopup="true" 
                         aria-expanded="false" 
@@ -200,11 +191,16 @@ export const cozyMultiple = () => `
 
 cozyMultiple.parameters = {
     docs: {
-        iframeHeight: 400
+        iframeHeight: 400,
+        storyDescription: `
+Use this when there is more than one level of hierarchy in the left navigation.
+The entries on the first level are just group headers(don't trigger navigation themselves).
+It's recommended to use up to two levels of navigation. For more levels of navigation, use the content area.
+On expand, the <code>is-expanded</code> class should be propagated also to <code>__content</code> element. <code>fd-nested-list__button</code>
+is the element which triggers another level..
+        `
     }
 };
-
-/** Side navigation with 2 levels - with icons and group headers, cozy mode */
 
 export const complexCozySideNav = () => `
 <div class="fd-side-nav">
@@ -213,7 +209,7 @@ export const complexCozySideNav = () => `
         Group Header 1
     </div>
     <nav class="fd-side-nav__main-navigation" aria-label="Main Menu">
-        <ul class="fd-nested-list" aria-labelledby="EX400H1">
+        <ul class="fd-nested-list " aria-labelledby="EX400H1">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
                     <span aria-hidden="true" class="fd-nested-list__icon sap-icon--home"></span>
@@ -237,7 +233,6 @@ export const complexCozySideNav = () => `
                         aria-controls="EX400L2" 
                         aria-haspopup="true" 
                         aria-expanded="false" 
-                        onclick="onSideNavClick('EX400L2')"
                         aria-label="Expand submenu"></button>
                 </div>
                 <ul class="fd-nested-list fd-nested-list--text-only level-2" id="EX400L2" aria-hidden="true">
@@ -303,11 +298,10 @@ export const complexCozySideNav = () => `
 
 complexCozySideNav.parameters = {
     docs: {
-        iframeHeight: 550
+        iframeHeight: 550,
+        storyDescription: 'Side navigation with 2 levels - with icons and group headers, cozy mode'
     }
 };
-
-/** Side navigation with 2 levels - with icons and group headers, compact mode */
 
 export const complexCompactSideNav = () => `
 <div class="fd-side-nav">
@@ -336,7 +330,6 @@ export const complexCompactSideNav = () => `
                         <span class="fd-nested-list__title">Level 1 Item</span>
                     </a>
                     <button class="fd-button fd-nested-list__button"
-                        onclick="onSideNavClick('EX500L2')"
                         aria-controls="EX500L2" 
                         aria-haspopup="true" 
                         aria-expanded="false" 
@@ -405,7 +398,8 @@ export const complexCompactSideNav = () => `
 
 complexCompactSideNav.parameters = {
     docs: {
-        iframeHeight: 550
+        iframeHeight: 550,
+        storyDescription: 'Side navigation with 2 levels - with icons and group headers, compact mode'
     }
 };
 
@@ -473,8 +467,6 @@ condensedStateCozy.parameters = {
     }
 };
 
-/** The default size for the popover body is often longer than the text length. The length can be adjusted to match the text
- * length by adding the `fd-popover__body--dropdown-fill` class to `fd-popover__body`. */
 
 export const condensedStateCompact = () => `
 <nav class="fd-side-nav fd-side-nav--condensed">
@@ -535,4 +527,11 @@ export const condensedStateCompact = () => `
 `;
 
 
-condensedStateCompact.parameters = {};
+condensedStateCompact.parameters = {
+    docs: {
+        storyDescription: `
+The default size for the popover body is often longer than the text length. The length can be adjusted to match the text
+length by adding the <code>fd-popover__body--dropdown-fill</code> class to <code>fd-popover__body</code>.
+`
+    }
+};
