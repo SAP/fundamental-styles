@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.49"></a>
+# [0.11.0-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.48...v0.11.0-rc.49) (2020-06-15)
+
+
+### Bug Fixes
+
+* update inverted link hover color ([#1154](https://github.com/SAP/fundamental-styles/issues/1154)) ([5742a35](https://github.com/SAP/fundamental-styles/commit/5742a35))
+
+
+
 <a name="0.11.0-rc.48"></a>
 # [0.11.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.47...v0.11.0-rc.48) (2020-06-15)
 
