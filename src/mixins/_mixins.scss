@@ -233,6 +233,10 @@
 
   &--inverted {
     color: var(--sapLink_InvertedColor);
+
+    @include fd-hover() {
+      color: var(--sapLink_InvertedColor);
+    }
   }
 
   &--subtle {
