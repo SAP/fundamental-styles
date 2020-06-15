@@ -51,7 +51,9 @@ $block: #{$fd-namespace}-shellbar;
 
     display: flex;
     align-items: center;
-    flex: 1 1 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
 
     &--product {
       justify-content: flex-start;
