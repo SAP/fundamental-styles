@@ -398,7 +398,6 @@ $block: #{$fd-namespace}-table;
         padding-bottom: 0.5rem;
       }
 
-
       @include fd-selected() {
         .#{$block}__cell {
           border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
