@@ -34,17 +34,12 @@ $block: #{$fd-namespace}-form-label;
       font-weight: bold;
       color: var(--sapField_RequiredColor);
       margin-left: 0.125rem;
-      position: absolute;
-      right: 0;
-      top: 0;
     }
 
     @include fd-rtl() {
       &::after {
         margin-left: 0;
-        position: absolute;
-        right: auto;
-        left: 0;
+        margin-right: 0.125rem;
       }
     }
   }
