@@ -1,0 +1,1740 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Table Fix Column Header 1`] = `
+<section>
+  
+
+  <style>
+    
+        .fd-table--fixed {
+           padding-left: 200px;
+        }
+        
+        .fd-table--fixed .fd-table__cell {
+            min-width: 200px;
+            max-width: 200px;
+        }
+
+  </style>
+  
+
+  <div
+    style="position: relative"
+  >
+    
+    
+    <div
+      class="fd-table--fixed"
+    >
+      
+      
+      <table
+        class="fd-table"
+      >
+        
+         
+        <thead
+          class="fd-table__header"
+        >
+          
+            
+          <tr
+            class="fd-table__row"
+          >
+            
+               
+            <th
+              aria-haspopup="true"
+              class="fd-table__cell fd-table__cell--fixed"
+              scope="col"
+            >
+              
+                Header Column
+               
+            </th>
+            
+               
+            <th
+              class="fd-table__cell"
+              scope="col"
+            >
+              
+                    Header Column
+               
+            </th>
+            
+               
+            <th
+              class="fd-table__cell"
+              scope="col"
+            >
+              
+                    Header Column
+               
+            </th>
+            
+               
+            <th
+              class="fd-table__cell"
+              scope="col"
+            >
+              
+                    Header Column
+               
+            </th>
+            
+               
+            <th
+              class="fd-table__cell"
+              scope="col"
+            >
+              
+                    Header Column
+               
+            </th>
+            
+               
+            <th
+              class="fd-table__cell"
+              scope="col"
+            >
+              
+                    Header Column
+               
+            </th>
+            
+               
+            <th
+              class="fd-table__cell"
+              scope="col"
+            >
+              
+                    Header Column
+               
+            </th>
+            
+               
+            <th
+              class="fd-table__cell"
+              scope="col"
+            >
+              
+                    Header Column
+               
+            </th>
+            
+            
+          </tr>
+          
+         
+        </thead>
+        
+         
+        <tbody
+          class="fd-table__body"
+        >
+          
+            
+          <tr
+            class="fd-table__row"
+          >
+            
+               
+            <td
+              class="fd-table__cell fd-table__cell--fixed"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+            
+          </tr>
+          
+            
+          <tr
+            class="fd-table__row"
+          >
+            
+               
+            <td
+              class="fd-table__cell fd-table__cell--fixed"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+            
+          </tr>
+          
+            
+          <tr
+            class="fd-table__row"
+          >
+            
+               
+            <td
+              class="fd-table__cell fd-table__cell--fixed"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+               
+            <td
+              class="fd-table__cell"
+            >
+              Lorem ipsum dolor sit amet ipsum
+            </td>
+            
+            
+          </tr>
+          
+         
+        </tbody>
+        
+      
+      </table>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Table Interactive Table With Hoverable and Activable Cells and Rows 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Table Merged Cells 1`] = `
+<section>
+  
+
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin-bottom:0px;"
+    >
+      Table with Merged Cells
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
+
+  </div>
+  
+
+  <table
+    class="fd-table"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Name
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Status
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Price
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Country
+        </th>
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        class="fd-table__row fd-table__row--activable"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--no-horizontal-border fd-table__cell--no-vertical-border"
+        >
+          Banana
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--no-vertical-border"
+        >
+          
+                
+          <span
+            class="fd-object-status fd-object-status--positive"
+          >
+            
+                    Available
+                
+          </span>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          5 EUR
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          India
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row fd-table__row--activable"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--no-horizontal-border"
+        >
+          Pineapple
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          
+                
+          <span
+            class="fd-object-status fd-object-status--negative"
+          >
+            
+                    Out of stock
+                
+          </span>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          2 EUR
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Mexico
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row fd-table__row--activable"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Orange
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          
+                
+          <span
+            class="fd-object-status fd-object-status--informative"
+          >
+            
+                    Temporary unavailable
+                
+          </span>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          6 EUR
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Spain
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+
+  </table>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Table Navigation Indication States 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Table Primary 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Table Responsive Table 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Table Responsive Table Pop In Mode 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Table Semantic Rows 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
+<section>
+  
+
+  <div
+    class="fd-dialog"
+    id="filter-dialog-example"
+  >
+    
+    
+    <div
+      aria-labelledby="dialog-filter"
+      aria-modal="true"
+      class="fd-dialog__content"
+      role="dialog"
+    >
+      
+        
+      <header
+        class="fd-dialog__header fd-bar"
+      >
+        
+            
+        <div
+          class="fd-bar__left"
+        >
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <h3
+              class="fd-dialog__title"
+              id="dialog-filter"
+            >
+              
+                        Filter By
+                    
+            </h3>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-bar__right"
+        >
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <span
+              class="sap-icon--filter"
+            />
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </header>
+      
+        
+      <div
+        class="fd-dialog__body fd-dialog__body--no-vertical-padding"
+      >
+        
+            
+        <ul
+          class="fd-list fd-list--compact"
+        >
+          
+              
+          <li
+            class="fd-list__item"
+          >
+            
+                  
+            <span
+              class="fd-list__title"
+            >
+              Name
+            </span>
+            
+              
+          </li>
+          
+              
+          <li
+            class="fd-list__item"
+          >
+            
+                  
+            <span
+              class="fd-list__title"
+            >
+              Status
+            </span>
+            
+              
+          </li>
+          
+              
+          <li
+            class="fd-list__item"
+          >
+            
+                  
+            <span
+              class="fd-list__title"
+            >
+              Price
+            </span>
+            
+              
+          </li>
+          
+              
+          <li
+            class="fd-list__item"
+          >
+            
+                  
+            <span
+              class="fd-list__title"
+            >
+              Country
+            </span>
+            
+              
+          </li>
+          
+            
+        </ul>
+        
+        
+      </div>
+      
+        
+      <footer
+        class="fd-dialog__footer fd-bar fd-bar--footer"
+      >
+        
+            
+        <div
+          class="fd-bar__right"
+        >
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              aria-label="navigation"
+              class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact"
+              onclick="toggleDialog('filter-dialog-example', false)"
+            >
+              OK
+            </button>
+            
+                
+          </div>
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              aria-label="navigation"
+              class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact"
+              onclick="toggleDialog('filter-dialog-example', false)"
+            >
+              Cancel
+            </button>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </footer>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+  <div
+    class="fd-dialog"
+    id="settings-dialog-example"
+  >
+    
+    
+    <div
+      aria-labelledby="dialog-settings"
+      aria-modal="true"
+      class="fd-dialog__content"
+      role="dialog"
+    >
+      
+        
+      <header
+        class="fd-dialog__header fd-bar fd-bar--header-with-subheader"
+      >
+        
+            
+        <div
+          class="fd-bar__left"
+        >
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <h3
+              class="fd-dialog__title"
+              id="dialog-settings"
+            >
+              
+                        Columns
+                    
+            </h3>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </header>
+      
+        
+      <div
+        class="fd-dialog__subheader fd-bar fd-bar--subheader"
+      >
+        
+            
+        <div
+          class="fd-bar__middle"
+        >
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              aria-label="navigation"
+              class="fd-button fd-button--icon fd-button--transparent fd-button--compact sap-icon--arrow-top"
+            />
+            
+                    
+            <button
+              aria-label="navigation"
+              class="fd-button fd-button--icon fd-button--transparent fd-button--compact sap-icon--arrow-bottom"
+            />
+            
+                
+          </div>
+          
+                
+          <div
+            class="fd-bar__element fd-bar__element--full-width"
+          >
+            
+                    
+            <div
+              class="fd-input-group"
+            >
+              
+                        
+              <input
+                class="fd-input fd-input-group__input fd-input--compact"
+                placeholder="Search..."
+                type="text"
+              />
+              
+                        
+              <span
+                class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact"
+              >
+                
+                            
+                <button
+                  aria-label="navigation"
+                  class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact sap-icon--search"
+                />
+                
+                        
+              </span>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-dialog__body fd-dialog__body--no-vertical-padding"
+      >
+        
+            
+        <ul
+          class="fd-list fd-list--multi-input fd-list--compact"
+        >
+          
+                
+          <li
+            class="fd-list__item is-selected"
+            role="option"
+          >
+            
+                  
+            <input
+              aria-label="checkbox"
+              checked=""
+              class="fd-checkbox fd-checkbox--compact fd-list__input"
+              id="GGi4ezFD1"
+              type="checkbox"
+            />
+            
+                  
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact fd-list__label"
+              for="GGi4ezFD1"
+            >
+              
+                      
+              <span
+                class="fd-list__title"
+              >
+                All
+              </span>
+              
+                  
+            </label>
+            
+                
+          </li>
+          
+                
+          <li
+            class="fd-list__item is-selected"
+            role="option"
+          >
+            
+                  
+            <input
+              aria-label="checkbox"
+              checked=""
+              class="fd-checkbox fd-checkbox--compact fd-list__input"
+              id="GGi4ez641"
+              type="checkbox"
+            />
+            
+                  
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact fd-list__label"
+              for="GGi4ez641"
+            >
+              
+                      
+              <span
+                class="fd-list__title"
+              >
+                Name
+              </span>
+              
+                  
+            </label>
+            
+                
+          </li>
+          
+                
+          <li
+            class="fd-list__item is-selected"
+            role="option"
+          >
+            
+                  
+            <input
+              aria-label="checkbox"
+              checked=""
+              class="fd-checkbox fd-checkbox--compact fd-list__input"
+              id="Ai4FGFG612"
+              type="checkbox"
+            />
+            
+                  
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact fd-list__label"
+              for="Ai4FGFG612"
+            >
+              
+                      
+              <span
+                class="fd-list__title"
+              >
+                Status
+              </span>
+              
+                  
+            </label>
+            
+                
+          </li>
+          
+                
+          <li
+            class="fd-list__item is-selected"
+            role="option"
+          >
+            
+                  
+            <input
+              aria-label="checkbox"
+              checked=""
+              class="fd-checkbox fd-checkbox--compact fd-list__input"
+              id="Ai4e88614"
+              type="checkbox"
+            />
+            
+                  
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact fd-list__label"
+              for="Ai4e88614"
+            >
+              
+                      
+              <span
+                class="fd-list__title"
+              >
+                Price
+              </span>
+              
+                  
+            </label>
+            
+                
+          </li>
+          
+                
+          <li
+            class="fd-list__item is-selected"
+            role="option"
+          >
+            
+                  
+            <input
+              aria-label="checkbox"
+              checked=""
+              class="fd-checkbox fd-checkbox--compact fd-list__input"
+              id="Ai4egh6024"
+              type="checkbox"
+            />
+            
+                  
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact fd-list__label"
+              for="Ai4egh6024"
+            >
+              
+                      
+              <span
+                class="fd-list__title"
+              >
+                Country
+              </span>
+              
+                  
+            </label>
+            
+                
+          </li>
+          
+            
+        </ul>
+        
+        
+      </div>
+      
+        
+      <footer
+        class="fd-dialog__footer fd-bar fd-bar--footer"
+      >
+        
+            
+        <div
+          class="fd-bar__right"
+        >
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              aria-label="navigation"
+              class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact"
+              onclick="toggleDialog('settings-dialog-example', false)"
+            >
+              OK
+            </button>
+            
+                
+          </div>
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              aria-label="navigation"
+              class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact"
+              onclick="toggleDialog('settings-dialog-example', false)"
+            >
+              Cancel
+            </button>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </footer>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin-bottom:0px;"
+    >
+      Table With Advanced Shellbar
+    </h4>
+    
+    
+    <div
+      class="fd-toolbar__spacer"
+    />
+    
+    
+    <button
+      aria-label="navigation"
+      class="fd-button fd-button--compact fd-button--transparent sap-icon--filter"
+      onclick="toggleDialog('filter-dialog-example', true)"
+    />
+    
+    
+    <button
+      aria-label="navigation"
+      class="fd-button fd-button--compact fd-button--transparent sap-icon--action-settings"
+      onclick="toggleDialog('settings-dialog-example', true)"
+    />
+    
+
+  </div>
+  
+
+  <table
+    class="fd-table fd-table--compact"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Name
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Status
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Price
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Country
+        </th>
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Banana
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          
+                
+          <span
+            class="fd-object-status fd-object-status--positive"
+          >
+            
+                    Available
+                
+          </span>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          5 EUR
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          India
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Pineapple
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          
+                
+          <span
+            class="fd-object-status fd-object-status--negative"
+          >
+            
+                    Out of stock
+                
+          </span>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          2 EUR
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Mexico
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Orange
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          
+                
+          <span
+            class="fd-object-status fd-object-status--informative"
+          >
+            
+                    Temporary unavailable
+                
+          </span>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          6 EUR
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Spain
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+
+  </table>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Table With Checkbox 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Table With Checkbox Compact 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Table With Checkbox Condensed 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Table With Footer 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Table With Footer Compact 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Table With Footer Condensed 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Table With Menu In Header 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Table With Pagination 1`] = `
+<section>
+  
+
+  <table
+    class="fd-table"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Name
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Status
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Price
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Country
+        </th>
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Banana
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          
+                
+          <span
+            class="fd-object-status fd-object-status--positive"
+          >
+            
+                    Available
+                
+          </span>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          5 EUR
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          India
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Pineapple
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          
+                
+          <span
+            class="fd-object-status fd-object-status--negative"
+          >
+            
+                    Out of stock
+                
+          </span>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          2 EUR
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Mexico
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Orange
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          
+                
+          <span
+            class="fd-object-status fd-object-status--informative"
+          >
+            
+                    Temporary unavailable
+                
+          </span>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          6 EUR
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Spain
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+
+  </table>
+  
+
+  <div
+    class="fd-pagination"
+  >
+    
+    
+    <span
+      class="fd-pagination__total"
+    >
+      Showing 3 of 30 items
+    </span>
+    
+    
+    <nav
+      class="fd-pagination__nav"
+    >
+      
+        
+      <a
+        aria-disabled="false"
+        aria-label="Next"
+        class="fd-pagination__link fd-pagination__link--previous"
+        href="#"
+      />
+      
+        
+      <a
+        class="fd-pagination__link"
+        href="#"
+      >
+        1
+      </a>
+      
+        
+      <a
+        class="fd-pagination__link is-selected"
+        href="#"
+      >
+        2
+      </a>
+      
+        
+      <a
+        class="fd-pagination__link"
+        href="#"
+      >
+        3
+      </a>
+      
+        
+      <span
+        class="fd-pagination__more"
+        role="presentation"
+      />
+      
+        
+      <a
+        class="fd-pagination__link"
+        href="#"
+      >
+        10
+      </a>
+      
+        
+      <a
+        aria-disabled="false"
+        aria-label="Next"
+        class="fd-pagination__link fd-pagination__link--next"
+        href="#"
+      />
+      
+    
+    </nav>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Table Without Borders 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Table Without Borders On Body 1`] = `
+
+
+`;

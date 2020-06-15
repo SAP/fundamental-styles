@@ -1,0 +1,6577 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Icon Animations 1`] = `
+<section>
+  
+    
+  <span
+    class="sap-icon--synchronize sap-icon--xl sap-icon--animate-spin"
+  />
+  
+    
+  <span
+    class="sap-icon--synchronize sap-icon--xl sap-icon--animate-pulse"
+  />
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Icon Available Icons 1`] = `
+<div
+  class="fddocs-container"
+>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--accidental-leave sap-icon--xl"
+    />
+    <div>
+      .sap-icon--accidental-leave
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--account sap-icon--xl"
+    />
+    <div>
+      .sap-icon--account
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--wrench sap-icon--xl"
+    />
+    <div>
+      .sap-icon--wrench
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--windows-doors sap-icon--xl"
+    />
+    <div>
+      .sap-icon--windows-doors
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--washing-machine sap-icon--xl"
+    />
+    <div>
+      .sap-icon--washing-machine
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--visits sap-icon--xl"
+    />
+    <div>
+      .sap-icon--visits
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--video sap-icon--xl"
+    />
+    <div>
+      .sap-icon--video
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--travel-expense sap-icon--xl"
+    />
+    <div>
+      .sap-icon--travel-expense
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--temperature sap-icon--xl"
+    />
+    <div>
+      .sap-icon--temperature
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--task sap-icon--xl"
+    />
+    <div>
+      .sap-icon--task
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--synchronize sap-icon--xl"
+    />
+    <div>
+      .sap-icon--synchronize
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--survey sap-icon--xl"
+    />
+    <div>
+      .sap-icon--survey
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--settings sap-icon--xl"
+    />
+    <div>
+      .sap-icon--settings
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--search sap-icon--xl"
+    />
+    <div>
+      .sap-icon--search
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sales-document sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sales-document
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--retail-store sap-icon--xl"
+    />
+    <div>
+      .sap-icon--retail-store
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--refresh sap-icon--xl"
+    />
+    <div>
+      .sap-icon--refresh
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--product sap-icon--xl"
+    />
+    <div>
+      .sap-icon--product
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--present sap-icon--xl"
+    />
+    <div>
+      .sap-icon--present
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--ppt-attachment sap-icon--xl"
+    />
+    <div>
+      .sap-icon--ppt-attachment
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--pool sap-icon--xl"
+    />
+    <div>
+      .sap-icon--pool
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--pie-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--pie-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--picture sap-icon--xl"
+    />
+    <div>
+      .sap-icon--picture
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--photo-voltaic sap-icon--xl"
+    />
+    <div>
+      .sap-icon--photo-voltaic
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--phone sap-icon--xl"
+    />
+    <div>
+      .sap-icon--phone
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--pending sap-icon--xl"
+    />
+    <div>
+      .sap-icon--pending
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--pdf-attachment sap-icon--xl"
+    />
+    <div>
+      .sap-icon--pdf-attachment
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--past sap-icon--xl"
+    />
+    <div>
+      .sap-icon--past
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--outgoing-call sap-icon--xl"
+    />
+    <div>
+      .sap-icon--outgoing-call
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--opportunity sap-icon--xl"
+    />
+    <div>
+      .sap-icon--opportunity
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--opportunities sap-icon--xl"
+    />
+    <div>
+      .sap-icon--opportunities
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--notes sap-icon--xl"
+    />
+    <div>
+      .sap-icon--notes
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--money-bills sap-icon--xl"
+    />
+    <div>
+      .sap-icon--money-bills
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--map sap-icon--xl"
+    />
+    <div>
+      .sap-icon--map
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--log sap-icon--xl"
+    />
+    <div>
+      .sap-icon--log
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--line-charts sap-icon--xl"
+    />
+    <div>
+      .sap-icon--line-charts
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--lightbulb sap-icon--xl"
+    />
+    <div>
+      .sap-icon--lightbulb
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--leads sap-icon--xl"
+    />
+    <div>
+      .sap-icon--leads
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--lead sap-icon--xl"
+    />
+    <div>
+      .sap-icon--lead
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--laptop sap-icon--xl"
+    />
+    <div>
+      .sap-icon--laptop
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--kpi-managing-my-area sap-icon--xl"
+    />
+    <div>
+      .sap-icon--kpi-managing-my-area
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--kpi-corporate-performance sap-icon--xl"
+    />
+    <div>
+      .sap-icon--kpi-corporate-performance
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--incoming-call sap-icon--xl"
+    />
+    <div>
+      .sap-icon--incoming-call
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--inbox sap-icon--xl"
+    />
+    <div>
+      .sap-icon--inbox
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--horizontal-bar-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--horizontal-bar-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--history sap-icon--xl"
+    />
+    <div>
+      .sap-icon--history
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--heating-cooling sap-icon--xl"
+    />
+    <div>
+      .sap-icon--heating-cooling
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--gantt-bars sap-icon--xl"
+    />
+    <div>
+      .sap-icon--gantt-bars
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--future sap-icon--xl"
+    />
+    <div>
+      .sap-icon--future
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--fridge sap-icon--xl"
+    />
+    <div>
+      .sap-icon--fridge
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--fallback sap-icon--xl"
+    />
+    <div>
+      .sap-icon--fallback
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--expense-report sap-icon--xl"
+    />
+    <div>
+      .sap-icon--expense-report
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--excel-attachment sap-icon--xl"
+    />
+    <div>
+      .sap-icon--excel-attachment
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--energy-saving-lightbulb sap-icon--xl"
+    />
+    <div>
+      .sap-icon--energy-saving-lightbulb
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--employee sap-icon--xl"
+    />
+    <div>
+      .sap-icon--employee
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--email sap-icon--xl"
+    />
+    <div>
+      .sap-icon--email
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--edit sap-icon--xl"
+    />
+    <div>
+      .sap-icon--edit
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--duplicate sap-icon--xl"
+    />
+    <div>
+      .sap-icon--duplicate
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--download sap-icon--xl"
+    />
+    <div>
+      .sap-icon--download
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--doc-attachment sap-icon--xl"
+    />
+    <div>
+      .sap-icon--doc-attachment
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--dishwasher sap-icon--xl"
+    />
+    <div>
+      .sap-icon--dishwasher
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--delete sap-icon--xl"
+    />
+    <div>
+      .sap-icon--delete
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--decline sap-icon--xl"
+    />
+    <div>
+      .sap-icon--decline
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--complete sap-icon--xl"
+    />
+    <div>
+      .sap-icon--complete
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--competitor sap-icon--xl"
+    />
+    <div>
+      .sap-icon--competitor
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--collections-management sap-icon--xl"
+    />
+    <div>
+      .sap-icon--collections-management
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--chalkboard sap-icon--xl"
+    />
+    <div>
+      .sap-icon--chalkboard
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--cart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--cart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--card sap-icon--xl"
+    />
+    <div>
+      .sap-icon--card
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--camera sap-icon--xl"
+    />
+    <div>
+      .sap-icon--camera
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--calendar sap-icon--xl"
+    />
+    <div>
+      .sap-icon--calendar
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--begin sap-icon--xl"
+    />
+    <div>
+      .sap-icon--begin
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--basket sap-icon--xl"
+    />
+    <div>
+      .sap-icon--basket
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--bar-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--bar-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--attachment sap-icon--xl"
+    />
+    <div>
+      .sap-icon--attachment
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--arrow-top sap-icon--xl"
+    />
+    <div>
+      .sap-icon--arrow-top
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--arrow-right sap-icon--xl"
+    />
+    <div>
+      .sap-icon--arrow-right
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--arrow-left sap-icon--xl"
+    />
+    <div>
+      .sap-icon--arrow-left
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--arrow-bottom sap-icon--xl"
+    />
+    <div>
+      .sap-icon--arrow-bottom
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--approvals sap-icon--xl"
+    />
+    <div>
+      .sap-icon--approvals
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--appointment sap-icon--xl"
+    />
+    <div>
+      .sap-icon--appointment
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--alphabetical-order sap-icon--xl"
+    />
+    <div>
+      .sap-icon--alphabetical-order
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--along-stacked-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--along-stacked-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--alert sap-icon--xl"
+    />
+    <div>
+      .sap-icon--alert
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--addresses sap-icon--xl"
+    />
+    <div>
+      .sap-icon--addresses
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--address-book sap-icon--xl"
+    />
+    <div>
+      .sap-icon--address-book
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--add-filter sap-icon--xl"
+    />
+    <div>
+      .sap-icon--add-filter
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--add-favorite sap-icon--xl"
+    />
+    <div>
+      .sap-icon--add-favorite
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--add sap-icon--xl"
+    />
+    <div>
+      .sap-icon--add
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--activities sap-icon--xl"
+    />
+    <div>
+      .sap-icon--activities
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--action sap-icon--xl"
+    />
+    <div>
+      .sap-icon--action
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--accept sap-icon--xl"
+    />
+    <div>
+      .sap-icon--accept
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--hint sap-icon--xl"
+    />
+    <div>
+      .sap-icon--hint
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--group sap-icon--xl"
+    />
+    <div>
+      .sap-icon--group
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--check-availability sap-icon--xl"
+    />
+    <div>
+      .sap-icon--check-availability
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--weather-proofing sap-icon--xl"
+    />
+    <div>
+      .sap-icon--weather-proofing
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--payment-approval sap-icon--xl"
+    />
+    <div>
+      .sap-icon--payment-approval
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--batch-payments sap-icon--xl"
+    />
+    <div>
+      .sap-icon--batch-payments
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--bed sap-icon--xl"
+    />
+    <div>
+      .sap-icon--bed
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--arobase sap-icon--xl"
+    />
+    <div>
+      .sap-icon--arobase
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--family-care sap-icon--xl"
+    />
+    <div>
+      .sap-icon--family-care
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--favorite sap-icon--xl"
+    />
+    <div>
+      .sap-icon--favorite
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--navigation-right-arrow sap-icon--xl"
+    />
+    <div>
+      .sap-icon--navigation-right-arrow
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--navigation-left-arrow sap-icon--xl"
+    />
+    <div>
+      .sap-icon--navigation-left-arrow
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--e-care sap-icon--xl"
+    />
+    <div>
+      .sap-icon--e-care
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--less sap-icon--xl"
+    />
+    <div>
+      .sap-icon--less
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--lateness sap-icon--xl"
+    />
+    <div>
+      .sap-icon--lateness
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--lab sap-icon--xl"
+    />
+    <div>
+      .sap-icon--lab
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--internet-browser sap-icon--xl"
+    />
+    <div>
+      .sap-icon--internet-browser
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--instance sap-icon--xl"
+    />
+    <div>
+      .sap-icon--instance
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--inspection sap-icon--xl"
+    />
+    <div>
+      .sap-icon--inspection
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--image-viewer sap-icon--xl"
+    />
+    <div>
+      .sap-icon--image-viewer
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--home sap-icon--xl"
+    />
+    <div>
+      .sap-icon--home
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--grid sap-icon--xl"
+    />
+    <div>
+      .sap-icon--grid
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--goalseek sap-icon--xl"
+    />
+    <div>
+      .sap-icon--goalseek
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--general-leave-request sap-icon--xl"
+    />
+    <div>
+      .sap-icon--general-leave-request
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--create-leave-request sap-icon--xl"
+    />
+    <div>
+      .sap-icon--create-leave-request
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--flight sap-icon--xl"
+    />
+    <div>
+      .sap-icon--flight
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--filter sap-icon--xl"
+    />
+    <div>
+      .sap-icon--filter
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--favorite-list sap-icon--xl"
+    />
+    <div>
+      .sap-icon--favorite-list
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--factory sap-icon--xl"
+    />
+    <div>
+      .sap-icon--factory
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--endoscopy sap-icon--xl"
+    />
+    <div>
+      .sap-icon--endoscopy
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--employee-pane sap-icon--xl"
+    />
+    <div>
+      .sap-icon--employee-pane
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--employee-approvals sap-icon--xl"
+    />
+    <div>
+      .sap-icon--employee-approvals
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--email-read sap-icon--xl"
+    />
+    <div>
+      .sap-icon--email-read
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--electrocardiogram sap-icon--xl"
+    />
+    <div>
+      .sap-icon--electrocardiogram
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--documents sap-icon--xl"
+    />
+    <div>
+      .sap-icon--documents
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--decision sap-icon--xl"
+    />
+    <div>
+      .sap-icon--decision
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--database sap-icon--xl"
+    />
+    <div>
+      .sap-icon--database
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--customer-history sap-icon--xl"
+    />
+    <div>
+      .sap-icon--customer-history
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--customer sap-icon--xl"
+    />
+    <div>
+      .sap-icon--customer
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--credit-card sap-icon--xl"
+    />
+    <div>
+      .sap-icon--credit-card
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--create-entry-time sap-icon--xl"
+    />
+    <div>
+      .sap-icon--create-entry-time
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--contacts sap-icon--xl"
+    />
+    <div>
+      .sap-icon--contacts
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--compare sap-icon--xl"
+    />
+    <div>
+      .sap-icon--compare
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--clinical-order sap-icon--xl"
+    />
+    <div>
+      .sap-icon--clinical-order
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--chain-link sap-icon--xl"
+    />
+    <div>
+      .sap-icon--chain-link
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--pull-down sap-icon--xl"
+    />
+    <div>
+      .sap-icon--pull-down
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--cargo-train sap-icon--xl"
+    />
+    <div>
+      .sap-icon--cargo-train
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--car-rental sap-icon--xl"
+    />
+    <div>
+      .sap-icon--car-rental
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--business-card sap-icon--xl"
+    />
+    <div>
+      .sap-icon--business-card
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--bar-code sap-icon--xl"
+    />
+    <div>
+      .sap-icon--bar-code
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--folder-blank sap-icon--xl"
+    />
+    <div>
+      .sap-icon--folder-blank
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--passenger-train sap-icon--xl"
+    />
+    <div>
+      .sap-icon--passenger-train
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--question-mark sap-icon--xl"
+    />
+    <div>
+      .sap-icon--question-mark
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--world sap-icon--xl"
+    />
+    <div>
+      .sap-icon--world
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--iphone sap-icon--xl"
+    />
+    <div>
+      .sap-icon--iphone
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--ipad sap-icon--xl"
+    />
+    <div>
+      .sap-icon--ipad
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--warning sap-icon--xl"
+    />
+    <div>
+      .sap-icon--warning
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sort sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sort
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--course-book sap-icon--xl"
+    />
+    <div>
+      .sap-icon--course-book
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--course-program sap-icon--xl"
+    />
+    <div>
+      .sap-icon--course-program
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--add-coursebook sap-icon--xl"
+    />
+    <div>
+      .sap-icon--add-coursebook
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--print sap-icon--xl"
+    />
+    <div>
+      .sap-icon--print
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--save sap-icon--xl"
+    />
+    <div>
+      .sap-icon--save
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--play sap-icon--xl"
+    />
+    <div>
+      .sap-icon--play
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--pause sap-icon--xl"
+    />
+    <div>
+      .sap-icon--pause
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--record sap-icon--xl"
+    />
+    <div>
+      .sap-icon--record
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--response sap-icon--xl"
+    />
+    <div>
+      .sap-icon--response
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--pushpin-on sap-icon--xl"
+    />
+    <div>
+      .sap-icon--pushpin-on
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--pushpin-off sap-icon--xl"
+    />
+    <div>
+      .sap-icon--pushpin-off
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--unfavorite sap-icon--xl"
+    />
+    <div>
+      .sap-icon--unfavorite
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--learning-assistant sap-icon--xl"
+    />
+    <div>
+      .sap-icon--learning-assistant
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--timesheet sap-icon--xl"
+    />
+    <div>
+      .sap-icon--timesheet
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--time-entry-request sap-icon--xl"
+    />
+    <div>
+      .sap-icon--time-entry-request
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--list sap-icon--xl"
+    />
+    <div>
+      .sap-icon--list
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--action-settings sap-icon--xl"
+    />
+    <div>
+      .sap-icon--action-settings
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--share sap-icon--xl"
+    />
+    <div>
+      .sap-icon--share
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--feed sap-icon--xl"
+    />
+    <div>
+      .sap-icon--feed
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--role sap-icon--xl"
+    />
+    <div>
+      .sap-icon--role
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--flag sap-icon--xl"
+    />
+    <div>
+      .sap-icon--flag
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--post sap-icon--xl"
+    />
+    <div>
+      .sap-icon--post
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--inspect sap-icon--xl"
+    />
+    <div>
+      .sap-icon--inspect
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--inspect-down sap-icon--xl"
+    />
+    <div>
+      .sap-icon--inspect-down
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--appointment-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--appointment-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--target-group sap-icon--xl"
+    />
+    <div>
+      .sap-icon--target-group
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--marketing-campaign sap-icon--xl"
+    />
+    <div>
+      .sap-icon--marketing-campaign
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--message-error sap-icon--xl"
+    />
+    <div>
+      .sap-icon--message-error
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--notification sap-icon--xl"
+    />
+    <div>
+      .sap-icon--notification
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--comment sap-icon--xl"
+    />
+    <div>
+      .sap-icon--comment
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--shipping-status sap-icon--xl"
+    />
+    <div>
+      .sap-icon--shipping-status
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--collaborate sap-icon--xl"
+    />
+    <div>
+      .sap-icon--collaborate
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--shortcut sap-icon--xl"
+    />
+    <div>
+      .sap-icon--shortcut
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--lead-outdated sap-icon--xl"
+    />
+    <div>
+      .sap-icon--lead-outdated
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--tools-opportunity sap-icon--xl"
+    />
+    <div>
+      .sap-icon--tools-opportunity
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--permission sap-icon--xl"
+    />
+    <div>
+      .sap-icon--permission
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--supplier sap-icon--xl"
+    />
+    <div>
+      .sap-icon--supplier
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--table-view sap-icon--xl"
+    />
+    <div>
+      .sap-icon--table-view
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--table-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--table-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--switch-views sap-icon--xl"
+    />
+    <div>
+      .sap-icon--switch-views
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--e-learning sap-icon--xl"
+    />
+    <div>
+      .sap-icon--e-learning
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--manager sap-icon--xl"
+    />
+    <div>
+      .sap-icon--manager
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--switch-classes sap-icon--xl"
+    />
+    <div>
+      .sap-icon--switch-classes
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--simple-payment sap-icon--xl"
+    />
+    <div>
+      .sap-icon--simple-payment
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--signature sap-icon--xl"
+    />
+    <div>
+      .sap-icon--signature
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sales-order-item sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sales-order-item
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sales-order sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sales-order
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--request sap-icon--xl"
+    />
+    <div>
+      .sap-icon--request
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--receipt sap-icon--xl"
+    />
+    <div>
+      .sap-icon--receipt
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--puzzle sap-icon--xl"
+    />
+    <div>
+      .sap-icon--puzzle
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--process sap-icon--xl"
+    />
+    <div>
+      .sap-icon--process
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--private sap-icon--xl"
+    />
+    <div>
+      .sap-icon--private
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--popup-window sap-icon--xl"
+    />
+    <div>
+      .sap-icon--popup-window
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--person-placeholder sap-icon--xl"
+    />
+    <div>
+      .sap-icon--person-placeholder
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--per-diem sap-icon--xl"
+    />
+    <div>
+      .sap-icon--per-diem
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--paper-plane sap-icon--xl"
+    />
+    <div>
+      .sap-icon--paper-plane
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--paid-leave sap-icon--xl"
+    />
+    <div>
+      .sap-icon--paid-leave
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--pdf-reader sap-icon--xl"
+    />
+    <div>
+      .sap-icon--pdf-reader
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--overview-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--overview-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--overlay sap-icon--xl"
+    />
+    <div>
+      .sap-icon--overlay
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--org-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--org-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--number-sign sap-icon--xl"
+    />
+    <div>
+      .sap-icon--number-sign
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--notification-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--notification-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--my-sales-order sap-icon--xl"
+    />
+    <div>
+      .sap-icon--my-sales-order
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--meal sap-icon--xl"
+    />
+    <div>
+      .sap-icon--meal
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--loan sap-icon--xl"
+    />
+    <div>
+      .sap-icon--loan
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--order-status sap-icon--xl"
+    />
+    <div>
+      .sap-icon--order-status
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--customer-order-entry sap-icon--xl"
+    />
+    <div>
+      .sap-icon--customer-order-entry
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--performance sap-icon--xl"
+    />
+    <div>
+      .sap-icon--performance
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--menu sap-icon--xl"
+    />
+    <div>
+      .sap-icon--menu
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--employee-lookup sap-icon--xl"
+    />
+    <div>
+      .sap-icon--employee-lookup
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--education sap-icon--xl"
+    />
+    <div>
+      .sap-icon--education
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--customer-briefing sap-icon--xl"
+    />
+    <div>
+      .sap-icon--customer-briefing
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--customer-and-contacts sap-icon--xl"
+    />
+    <div>
+      .sap-icon--customer-and-contacts
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--my-view sap-icon--xl"
+    />
+    <div>
+      .sap-icon--my-view
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--accelerated sap-icon--xl"
+    />
+    <div>
+      .sap-icon--accelerated
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--to-be-reviewed sap-icon--xl"
+    />
+    <div>
+      .sap-icon--to-be-reviewed
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--warning2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--warning2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--feeder-arrow sap-icon--xl"
+    />
+    <div>
+      .sap-icon--feeder-arrow
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--quality-issue sap-icon--xl"
+    />
+    <div>
+      .sap-icon--quality-issue
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--workflow-tasks sap-icon--xl"
+    />
+    <div>
+      .sap-icon--workflow-tasks
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--create sap-icon--xl"
+    />
+    <div>
+      .sap-icon--create
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--home-share sap-icon--xl"
+    />
+    <div>
+      .sap-icon--home-share
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--globe sap-icon--xl"
+    />
+    <div>
+      .sap-icon--globe
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--tags sap-icon--xl"
+    />
+    <div>
+      .sap-icon--tags
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--work-history sap-icon--xl"
+    />
+    <div>
+      .sap-icon--work-history
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--x-ray sap-icon--xl"
+    />
+    <div>
+      .sap-icon--x-ray
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--wounds-doc sap-icon--xl"
+    />
+    <div>
+      .sap-icon--wounds-doc
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--web-cam sap-icon--xl"
+    />
+    <div>
+      .sap-icon--web-cam
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--waiver sap-icon--xl"
+    />
+    <div>
+      .sap-icon--waiver
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--vertical-bar-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--vertical-bar-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--upstacked-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--upstacked-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--trip-report sap-icon--xl"
+    />
+    <div>
+      .sap-icon--trip-report
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--microphone sap-icon--xl"
+    />
+    <div>
+      .sap-icon--microphone
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--unpaid-leave sap-icon--xl"
+    />
+    <div>
+      .sap-icon--unpaid-leave
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--tree sap-icon--xl"
+    />
+    <div>
+      .sap-icon--tree
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--toaster-up sap-icon--xl"
+    />
+    <div>
+      .sap-icon--toaster-up
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--toaster-top sap-icon--xl"
+    />
+    <div>
+      .sap-icon--toaster-top
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--toaster-down sap-icon--xl"
+    />
+    <div>
+      .sap-icon--toaster-down
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--time-account sap-icon--xl"
+    />
+    <div>
+      .sap-icon--time-account
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--theater sap-icon--xl"
+    />
+    <div>
+      .sap-icon--theater
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--taxi sap-icon--xl"
+    />
+    <div>
+      .sap-icon--taxi
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--subway-train sap-icon--xl"
+    />
+    <div>
+      .sap-icon--subway-train
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--study-leave sap-icon--xl"
+    />
+    <div>
+      .sap-icon--study-leave
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--stethoscope sap-icon--xl"
+    />
+    <div>
+      .sap-icon--stethoscope
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--step sap-icon--xl"
+    />
+    <div>
+      .sap-icon--step
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sonography sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sonography
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--soccor sap-icon--xl"
+    />
+    <div>
+      .sap-icon--soccor
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--physical-activity sap-icon--xl"
+    />
+    <div>
+      .sap-icon--physical-activity
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--pharmacy sap-icon--xl"
+    />
+    <div>
+      .sap-icon--pharmacy
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--official-service sap-icon--xl"
+    />
+    <div>
+      .sap-icon--official-service
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--offsite-work sap-icon--xl"
+    />
+    <div>
+      .sap-icon--offsite-work
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--nutrition-activity sap-icon--xl"
+    />
+    <div>
+      .sap-icon--nutrition-activity
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--newspaper sap-icon--xl"
+    />
+    <div>
+      .sap-icon--newspaper
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--monitor-payments sap-icon--xl"
+    />
+    <div>
+      .sap-icon--monitor-payments
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--map-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--map-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--machine sap-icon--xl"
+    />
+    <div>
+      .sap-icon--machine
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--mri-scan sap-icon--xl"
+    />
+    <div>
+      .sap-icon--mri-scan
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--end-user-experience-monitoring sap-icon--xl"
+    />
+    <div>
+      .sap-icon--end-user-experience-monitoring
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--unwired sap-icon--xl"
+    />
+    <div>
+      .sap-icon--unwired
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--customer-financial-fact-sheet sap-icon--xl"
+    />
+    <div>
+      .sap-icon--customer-financial-fact-sheet
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--retail-store-manager sap-icon--xl"
+    />
+    <div>
+      .sap-icon--retail-store-manager
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--Netweaver-business-client sap-icon--xl"
+    />
+    <div>
+      .sap-icon--Netweaver-business-client
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--electronic-medical-record sap-icon--xl"
+    />
+    <div>
+      .sap-icon--electronic-medical-record
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--eam-work-order sap-icon--xl"
+    />
+    <div>
+      .sap-icon--eam-work-order
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--customer-view sap-icon--xl"
+    />
+    <div>
+      .sap-icon--customer-view
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--crm-service-manager sap-icon--xl"
+    />
+    <div>
+      .sap-icon--crm-service-manager
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--crm-sales sap-icon--xl"
+    />
+    <div>
+      .sap-icon--crm-sales
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--widgets sap-icon--xl"
+    />
+    <div>
+      .sap-icon--widgets
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--commission-check sap-icon--xl"
+    />
+    <div>
+      .sap-icon--commission-check
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--collections-insight sap-icon--xl"
+    />
+    <div>
+      .sap-icon--collections-insight
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--clinical-tast-tracker sap-icon--xl"
+    />
+    <div>
+      .sap-icon--clinical-tast-tracker
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--citizen-connect sap-icon--xl"
+    />
+    <div>
+      .sap-icon--citizen-connect
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--cart-approval sap-icon--xl"
+    />
+    <div>
+      .sap-icon--cart-approval
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--capital-projects sap-icon--xl"
+    />
+    <div>
+      .sap-icon--capital-projects
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--bo-strategy-management sap-icon--xl"
+    />
+    <div>
+      .sap-icon--bo-strategy-management
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--business-objects-mobile sap-icon--xl"
+    />
+    <div>
+      .sap-icon--business-objects-mobile
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--business-objects-explorer sap-icon--xl"
+    />
+    <div>
+      .sap-icon--business-objects-explorer
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--business-objects-experience sap-icon--xl"
+    />
+    <div>
+      .sap-icon--business-objects-experience
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--bbyd-dashboard sap-icon--xl"
+    />
+    <div>
+      .sap-icon--bbyd-dashboard
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--bbyd-active-sales sap-icon--xl"
+    />
+    <div>
+      .sap-icon--bbyd-active-sales
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--business-by-design sap-icon--xl"
+    />
+    <div>
+      .sap-icon--business-by-design
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--business-one sap-icon--xl"
+    />
+    <div>
+      .sap-icon--business-one
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sap-box sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sap-box
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--manager-insight sap-icon--xl"
+    />
+    <div>
+      .sap-icon--manager-insight
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--accounting-document-verification sap-icon--xl"
+    />
+    <div>
+      .sap-icon--accounting-document-verification
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--hr-approval sap-icon--xl"
+    />
+    <div>
+      .sap-icon--hr-approval
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--idea-wall sap-icon--xl"
+    />
+    <div>
+      .sap-icon--idea-wall
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--Chart-Tree-Map sap-icon--xl"
+    />
+    <div>
+      .sap-icon--Chart-Tree-Map
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--cart-5 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--cart-5
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--cart-4 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--cart-4
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--wallet sap-icon--xl"
+    />
+    <div>
+      .sap-icon--wallet
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--vehicle-repair sap-icon--xl"
+    />
+    <div>
+      .sap-icon--vehicle-repair
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--upload sap-icon--xl"
+    />
+    <div>
+      .sap-icon--upload
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--unlocked sap-icon--xl"
+    />
+    <div>
+      .sap-icon--unlocked
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--umbrella sap-icon--xl"
+    />
+    <div>
+      .sap-icon--umbrella
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--travel-request sap-icon--xl"
+    />
+    <div>
+      .sap-icon--travel-request
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--travel-expense-report sap-icon--xl"
+    />
+    <div>
+      .sap-icon--travel-expense-report
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--travel-itinerary sap-icon--xl"
+    />
+    <div>
+      .sap-icon--travel-itinerary
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--time-overtime sap-icon--xl"
+    />
+    <div>
+      .sap-icon--time-overtime
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--thing-type sap-icon--xl"
+    />
+    <div>
+      .sap-icon--thing-type
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--technical-object sap-icon--xl"
+    />
+    <div>
+      .sap-icon--technical-object
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--tag sap-icon--xl"
+    />
+    <div>
+      .sap-icon--tag
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--syringe sap-icon--xl"
+    />
+    <div>
+      .sap-icon--syringe
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--syntax sap-icon--xl"
+    />
+    <div>
+      .sap-icon--syntax
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--suitcase sap-icon--xl"
+    />
+    <div>
+      .sap-icon--suitcase
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--simulate sap-icon--xl"
+    />
+    <div>
+      .sap-icon--simulate
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--shield sap-icon--xl"
+    />
+    <div>
+      .sap-icon--shield
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--share-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--share-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sales-quote sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sales-quote
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--repost sap-icon--xl"
+    />
+    <div>
+      .sap-icon--repost
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--provision sap-icon--xl"
+    />
+    <div>
+      .sap-icon--provision
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--projector sap-icon--xl"
+    />
+    <div>
+      .sap-icon--projector
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--add-product sap-icon--xl"
+    />
+    <div>
+      .sap-icon--add-product
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--pipeline-analysis sap-icon--xl"
+    />
+    <div>
+      .sap-icon--pipeline-analysis
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--add-photo sap-icon--xl"
+    />
+    <div>
+      .sap-icon--add-photo
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--palette sap-icon--xl"
+    />
+    <div>
+      .sap-icon--palette
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--nurse sap-icon--xl"
+    />
+    <div>
+      .sap-icon--nurse
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sales-notification sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sales-notification
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--mileage sap-icon--xl"
+    />
+    <div>
+      .sap-icon--mileage
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--meeting-room sap-icon--xl"
+    />
+    <div>
+      .sap-icon--meeting-room
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--media-forward sap-icon--xl"
+    />
+    <div>
+      .sap-icon--media-forward
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--media-play sap-icon--xl"
+    />
+    <div>
+      .sap-icon--media-play
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--media-pause sap-icon--xl"
+    />
+    <div>
+      .sap-icon--media-pause
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--media-reverse sap-icon--xl"
+    />
+    <div>
+      .sap-icon--media-reverse
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--media-rewind sap-icon--xl"
+    />
+    <div>
+      .sap-icon--media-rewind
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--measurement-document sap-icon--xl"
+    />
+    <div>
+      .sap-icon--measurement-document
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--measuring-point sap-icon--xl"
+    />
+    <div>
+      .sap-icon--measuring-point
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--measure sap-icon--xl"
+    />
+    <div>
+      .sap-icon--measure
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--map-3 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--map-3
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--locked sap-icon--xl"
+    />
+    <div>
+      .sap-icon--locked
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--letter sap-icon--xl"
+    />
+    <div>
+      .sap-icon--letter
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--journey-arrive sap-icon--xl"
+    />
+    <div>
+      .sap-icon--journey-arrive
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--journey-change sap-icon--xl"
+    />
+    <div>
+      .sap-icon--journey-change
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--journey-depart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--journey-depart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--it-system sap-icon--xl"
+    />
+    <div>
+      .sap-icon--it-system
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--it-instance sap-icon--xl"
+    />
+    <div>
+      .sap-icon--it-instance
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--it-host sap-icon--xl"
+    />
+    <div>
+      .sap-icon--it-host
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--iphone-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--iphone-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--ipad-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--ipad-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--inventory sap-icon--xl"
+    />
+    <div>
+      .sap-icon--inventory
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--insurance-house sap-icon--xl"
+    />
+    <div>
+      .sap-icon--insurance-house
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--insurance-life sap-icon--xl"
+    />
+    <div>
+      .sap-icon--insurance-life
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--insurance-car sap-icon--xl"
+    />
+    <div>
+      .sap-icon--insurance-car
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--initiative sap-icon--xl"
+    />
+    <div>
+      .sap-icon--initiative
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--incident sap-icon--xl"
+    />
+    <div>
+      .sap-icon--incident
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--group-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--group-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--goal sap-icon--xl"
+    />
+    <div>
+      .sap-icon--goal
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--functional-location sap-icon--xl"
+    />
+    <div>
+      .sap-icon--functional-location
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--full-screen sap-icon--xl"
+    />
+    <div>
+      .sap-icon--full-screen
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--form sap-icon--xl"
+    />
+    <div>
+      .sap-icon--form
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--fob-watch sap-icon--xl"
+    />
+    <div>
+      .sap-icon--fob-watch
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--blank-tag sap-icon--xl"
+    />
+    <div>
+      .sap-icon--blank-tag
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--family-protection sap-icon--xl"
+    />
+    <div>
+      .sap-icon--family-protection
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--folder sap-icon--xl"
+    />
+    <div>
+      .sap-icon--folder
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--fax-machine sap-icon--xl"
+    />
+    <div>
+      .sap-icon--fax-machine
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--example sap-icon--xl"
+    />
+    <div>
+      .sap-icon--example
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--eraser sap-icon--xl"
+    />
+    <div>
+      .sap-icon--eraser
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--employee-rejections sap-icon--xl"
+    />
+    <div>
+      .sap-icon--employee-rejections
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--drop-down-list sap-icon--xl"
+    />
+    <div>
+      .sap-icon--drop-down-list
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--draw-rectangle sap-icon--xl"
+    />
+    <div>
+      .sap-icon--draw-rectangle
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--document sap-icon--xl"
+    />
+    <div>
+      .sap-icon--document
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--doctor sap-icon--xl"
+    />
+    <div>
+      .sap-icon--doctor
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--discussion-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--discussion-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--discussion sap-icon--xl"
+    />
+    <div>
+      .sap-icon--discussion
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--dimension sap-icon--xl"
+    />
+    <div>
+      .sap-icon--dimension
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--customer-and-supplier sap-icon--xl"
+    />
+    <div>
+      .sap-icon--customer-and-supplier
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--crop sap-icon--xl"
+    />
+    <div>
+      .sap-icon--crop
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--add-contact sap-icon--xl"
+    />
+    <div>
+      .sap-icon--add-contact
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--compare-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--compare-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--color-fill sap-icon--xl"
+    />
+    <div>
+      .sap-icon--color-fill
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--collision sap-icon--xl"
+    />
+    <div>
+      .sap-icon--collision
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--curriculum sap-icon--xl"
+    />
+    <div>
+      .sap-icon--curriculum
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--chart-axis sap-icon--xl"
+    />
+    <div>
+      .sap-icon--chart-axis
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--full-stacked-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--full-stacked-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--full-stacked-column-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--full-stacked-column-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--vertical-bar-chart-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--vertical-bar-chart-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--horizontal-bar-chart-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--horizontal-bar-chart-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--horizontal-stacked-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--horizontal-stacked-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--vertical-stacked-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--vertical-stacked-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--choropleth-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--choropleth-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--geographic-bubble-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--geographic-bubble-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--multiple-radar-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--multiple-radar-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--radar-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--radar-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--crossed-line-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--crossed-line-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--multiple-line-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--multiple-line-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--multiple-bar-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--multiple-bar-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--line-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--line-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--line-chart-dual-axis sap-icon--xl"
+    />
+    <div>
+      .sap-icon--line-chart-dual-axis
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--bubble-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--bubble-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--scatter-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--scatter-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--multiple-pie-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--multiple-pie-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--column-chart-dual-axis sap-icon--xl"
+    />
+    <div>
+      .sap-icon--column-chart-dual-axis
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--tag-cloud-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--tag-cloud-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--area-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--area-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--cause sap-icon--xl"
+    />
+    <div>
+      .sap-icon--cause
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--cart-3 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--cart-3
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--cart-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--cart-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--bus-public-transport sap-icon--xl"
+    />
+    <div>
+      .sap-icon--bus-public-transport
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--burglary sap-icon--xl"
+    />
+    <div>
+      .sap-icon--burglary
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--building sap-icon--xl"
+    />
+    <div>
+      .sap-icon--building
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--border sap-icon--xl"
+    />
+    <div>
+      .sap-icon--border
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--bookmark sap-icon--xl"
+    />
+    <div>
+      .sap-icon--bookmark
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--badge sap-icon--xl"
+    />
+    <div>
+      .sap-icon--badge
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--attachment-audio sap-icon--xl"
+    />
+    <div>
+      .sap-icon--attachment-audio
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--attachment-video sap-icon--xl"
+    />
+    <div>
+      .sap-icon--attachment-video
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--attachment-html sap-icon--xl"
+    />
+    <div>
+      .sap-icon--attachment-html
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--attachment-photo sap-icon--xl"
+    />
+    <div>
+      .sap-icon--attachment-photo
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--attachment-e-pub sap-icon--xl"
+    />
+    <div>
+      .sap-icon--attachment-e-pub
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--attachment-zip-file sap-icon--xl"
+    />
+    <div>
+      .sap-icon--attachment-zip-file
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--attachment-text-file sap-icon--xl"
+    />
+    <div>
+      .sap-icon--attachment-text-file
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--add-equipment sap-icon--xl"
+    />
+    <div>
+      .sap-icon--add-equipment
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--add-activity sap-icon--xl"
+    />
+    <div>
+      .sap-icon--add-activity
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--activity-individual sap-icon--xl"
+    />
+    <div>
+      .sap-icon--activity-individual
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--activity-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--activity-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--add-activity-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--add-activity-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--activity-items sap-icon--xl"
+    />
+    <div>
+      .sap-icon--activity-items
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--activity-assigned-to-goal sap-icon--xl"
+    />
+    <div>
+      .sap-icon--activity-assigned-to-goal
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--status-positive sap-icon--xl"
+    />
+    <div>
+      .sap-icon--status-positive
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--status-completed sap-icon--xl"
+    />
+    <div>
+      .sap-icon--status-completed
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--status-negative sap-icon--xl"
+    />
+    <div>
+      .sap-icon--status-negative
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--status-error sap-icon--xl"
+    />
+    <div>
+      .sap-icon--status-error
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--status-inactive sap-icon--xl"
+    />
+    <div>
+      .sap-icon--status-inactive
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--status-critical sap-icon--xl"
+    />
+    <div>
+      .sap-icon--status-critical
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--status-in-progress sap-icon--xl"
+    />
+    <div>
+      .sap-icon--status-in-progress
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--blank-tag-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--blank-tag-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--cart-full sap-icon--xl"
+    />
+    <div>
+      .sap-icon--cart-full
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--locate-me sap-icon--xl"
+    />
+    <div>
+      .sap-icon--locate-me
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--paging sap-icon--xl"
+    />
+    <div>
+      .sap-icon--paging
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--company-view sap-icon--xl"
+    />
+    <div>
+      .sap-icon--company-view
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--document-text sap-icon--xl"
+    />
+    <div>
+      .sap-icon--document-text
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--explorer sap-icon--xl"
+    />
+    <div>
+      .sap-icon--explorer
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--personnel-view sap-icon--xl"
+    />
+    <div>
+      .sap-icon--personnel-view
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sorting-ranking sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sorting-ranking
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--drill-down sap-icon--xl"
+    />
+    <div>
+      .sap-icon--drill-down
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--drill-up sap-icon--xl"
+    />
+    <div>
+      .sap-icon--drill-up
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--vds-file sap-icon--xl"
+    />
+    <div>
+      .sap-icon--vds-file
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sap-logo-shape sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sap-logo-shape
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--folder-full sap-icon--xl"
+    />
+    <div>
+      .sap-icon--folder-full
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--system-exit sap-icon--xl"
+    />
+    <div>
+      .sap-icon--system-exit
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--system-exit-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--system-exit-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--close-command-field sap-icon--xl"
+    />
+    <div>
+      .sap-icon--close-command-field
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--open-command-field sap-icon--xl"
+    />
+    <div>
+      .sap-icon--open-command-field
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sys-enter-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sys-enter-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sys-enter sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sys-enter
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sys-help-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sys-help-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sys-help sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sys-help
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sys-back sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sys-back
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sys-back-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sys-back-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sys-cancel sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sys-cancel
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sys-cancel-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sys-cancel-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--open-folder sap-icon--xl"
+    />
+    <div>
+      .sap-icon--open-folder
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sys-find-next sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sys-find-next
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sys-find sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sys-find
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sys-monitor sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sys-monitor
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sys-prev-page sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sys-prev-page
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sys-first-page sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sys-first-page
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sys-next-page sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sys-next-page
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sys-last-page sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sys-last-page
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--generate-shortcut sap-icon--xl"
+    />
+    <div>
+      .sap-icon--generate-shortcut
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--create-session sap-icon--xl"
+    />
+    <div>
+      .sap-icon--create-session
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--display-more sap-icon--xl"
+    />
+    <div>
+      .sap-icon--display-more
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--enter-more sap-icon--xl"
+    />
+    <div>
+      .sap-icon--enter-more
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--zoom-in sap-icon--xl"
+    />
+    <div>
+      .sap-icon--zoom-in
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--zoom-out sap-icon--xl"
+    />
+    <div>
+      .sap-icon--zoom-out
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--header sap-icon--xl"
+    />
+    <div>
+      .sap-icon--header
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--detail-view sap-icon--xl"
+    />
+    <div>
+      .sap-icon--detail-view
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--show-edit sap-icon--xl"
+    />
+    <div>
+      .sap-icon--show-edit
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--collapse sap-icon--xl"
+    />
+    <div>
+      .sap-icon--collapse
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--expand sap-icon--xl"
+    />
+    <div>
+      .sap-icon--expand
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--positive sap-icon--xl"
+    />
+    <div>
+      .sap-icon--positive
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--negative sap-icon--xl"
+    />
+    <div>
+      .sap-icon--negative
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--display sap-icon--xl"
+    />
+    <div>
+      .sap-icon--display
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--menu2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--menu2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--redo sap-icon--xl"
+    />
+    <div>
+      .sap-icon--redo
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--undo sap-icon--xl"
+    />
+    <div>
+      .sap-icon--undo
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--navigation-up-arrow sap-icon--xl"
+    />
+    <div>
+      .sap-icon--navigation-up-arrow
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--navigation-down-arrow sap-icon--xl"
+    />
+    <div>
+      .sap-icon--navigation-down-arrow
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--down sap-icon--xl"
+    />
+    <div>
+      .sap-icon--down
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--up sap-icon--xl"
+    />
+    <div>
+      .sap-icon--up
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--shelf sap-icon--xl"
+    />
+    <div>
+      .sap-icon--shelf
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--background sap-icon--xl"
+    />
+    <div>
+      .sap-icon--background
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--resize sap-icon--xl"
+    />
+    <div>
+      .sap-icon--resize
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--move sap-icon--xl"
+    />
+    <div>
+      .sap-icon--move
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--show sap-icon--xl"
+    />
+    <div>
+      .sap-icon--show
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--hide sap-icon--xl"
+    />
+    <div>
+      .sap-icon--hide
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--nav-back sap-icon--xl"
+    />
+    <div>
+      .sap-icon--nav-back
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--error sap-icon--xl"
+    />
+    <div>
+      .sap-icon--error
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--slim-arrow-right sap-icon--xl"
+    />
+    <div>
+      .sap-icon--slim-arrow-right
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--slim-arrow-left sap-icon--xl"
+    />
+    <div>
+      .sap-icon--slim-arrow-left
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--slim-arrow-down sap-icon--xl"
+    />
+    <div>
+      .sap-icon--slim-arrow-down
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--slim-arrow-up sap-icon--xl"
+    />
+    <div>
+      .sap-icon--slim-arrow-up
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--forward sap-icon--xl"
+    />
+    <div>
+      .sap-icon--forward
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--overflow sap-icon--xl"
+    />
+    <div>
+      .sap-icon--overflow
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--value-help sap-icon--xl"
+    />
+    <div>
+      .sap-icon--value-help
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--multiselect sap-icon--xl"
+    />
+    <div>
+      .sap-icon--multiselect
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--exitfullscreen sap-icon--xl"
+    />
+    <div>
+      .sap-icon--exitfullscreen
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sys-add sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sys-add
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sys-minus sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sys-minus
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--dropdown sap-icon--xl"
+    />
+    <div>
+      .sap-icon--dropdown
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--expand-group sap-icon--xl"
+    />
+    <div>
+      .sap-icon--expand-group
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--vertical-grip sap-icon--xl"
+    />
+    <div>
+      .sap-icon--vertical-grip
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--horizontal-grip sap-icon--xl"
+    />
+    <div>
+      .sap-icon--horizontal-grip
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sort-descending sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sort-descending
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sort-ascending sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sort-ascending
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--arrow-down sap-icon--xl"
+    />
+    <div>
+      .sap-icon--arrow-down
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--legend sap-icon--xl"
+    />
+    <div>
+      .sap-icon--legend
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--collapse-group sap-icon--xl"
+    />
+    <div>
+      .sap-icon--collapse-group
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--message-warning sap-icon--xl"
+    />
+    <div>
+      .sap-icon--message-warning
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--message-information sap-icon--xl"
+    />
+    <div>
+      .sap-icon--message-information
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--message-success sap-icon--xl"
+    />
+    <div>
+      .sap-icon--message-success
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--restart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--restart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--stop sap-icon--xl"
+    />
+    <div>
+      .sap-icon--stop
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--add-process sap-icon--xl"
+    />
+    <div>
+      .sap-icon--add-process
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--cancel-maintenance sap-icon--xl"
+    />
+    <div>
+      .sap-icon--cancel-maintenance
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--activate sap-icon--xl"
+    />
+    <div>
+      .sap-icon--activate
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--resize-horizontal sap-icon--xl"
+    />
+    <div>
+      .sap-icon--resize-horizontal
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--resize-vertical sap-icon--xl"
+    />
+    <div>
+      .sap-icon--resize-vertical
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--connected sap-icon--xl"
+    />
+    <div>
+      .sap-icon--connected
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--disconnected sap-icon--xl"
+    />
+    <div>
+      .sap-icon--disconnected
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--edit-outside sap-icon--xl"
+    />
+    <div>
+      .sap-icon--edit-outside
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--key sap-icon--xl"
+    />
+    <div>
+      .sap-icon--key
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--minimize sap-icon--xl"
+    />
+    <div>
+      .sap-icon--minimize
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--back-to-top sap-icon--xl"
+    />
+    <div>
+      .sap-icon--back-to-top
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--hello-world sap-icon--xl"
+    />
+    <div>
+      .sap-icon--hello-world
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--outbox sap-icon--xl"
+    />
+    <div>
+      .sap-icon--outbox
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--donut-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--donut-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--heatmap-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--heatmap-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--horizontal-bullet-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--horizontal-bullet-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--vertical-bullet-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--vertical-bullet-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--call sap-icon--xl"
+    />
+    <div>
+      .sap-icon--call
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--download-from-cloud sap-icon--xl"
+    />
+    <div>
+      .sap-icon--download-from-cloud
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--upload-to-cloud sap-icon--xl"
+    />
+    <div>
+      .sap-icon--upload-to-cloud
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--jam sap-icon--xl"
+    />
+    <div>
+      .sap-icon--jam
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sap-ui5 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sap-ui5
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--message-popup sap-icon--xl"
+    />
+    <div>
+      .sap-icon--message-popup
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--cloud sap-icon--xl"
+    />
+    <div>
+      .sap-icon--cloud
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--horizontal-waterfall-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--horizontal-waterfall-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--vertical-waterfall-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--vertical-waterfall-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--broken-link sap-icon--xl"
+    />
+    <div>
+      .sap-icon--broken-link
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--headset sap-icon--xl"
+    />
+    <div>
+      .sap-icon--headset
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--thumb-up sap-icon--xl"
+    />
+    <div>
+      .sap-icon--thumb-up
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--thumb-down sap-icon--xl"
+    />
+    <div>
+      .sap-icon--thumb-down
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--multiselect-all sap-icon--xl"
+    />
+    <div>
+      .sap-icon--multiselect-all
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--multiselect-none sap-icon--xl"
+    />
+    <div>
+      .sap-icon--multiselect-none
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--scissors sap-icon--xl"
+    />
+    <div>
+      .sap-icon--scissors
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sound sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sound
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sound-loud sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sound-loud
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--sound-off sap-icon--xl"
+    />
+    <div>
+      .sap-icon--sound-off
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--date-time sap-icon--xl"
+    />
+    <div>
+      .sap-icon--date-time
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--user-settings sap-icon--xl"
+    />
+    <div>
+      .sap-icon--user-settings
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--key-user-settings sap-icon--xl"
+    />
+    <div>
+      .sap-icon--key-user-settings
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--developer-settings sap-icon--xl"
+    />
+    <div>
+      .sap-icon--developer-settings
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--text-formatting sap-icon--xl"
+    />
+    <div>
+      .sap-icon--text-formatting
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--bold-text sap-icon--xl"
+    />
+    <div>
+      .sap-icon--bold-text
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--italic-text sap-icon--xl"
+    />
+    <div>
+      .sap-icon--italic-text
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--underline-text sap-icon--xl"
+    />
+    <div>
+      .sap-icon--underline-text
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--text-align-justified sap-icon--xl"
+    />
+    <div>
+      .sap-icon--text-align-justified
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--text-align-left sap-icon--xl"
+    />
+    <div>
+      .sap-icon--text-align-left
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--text-align-center sap-icon--xl"
+    />
+    <div>
+      .sap-icon--text-align-center
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--text-align-right sap-icon--xl"
+    />
+    <div>
+      .sap-icon--text-align-right
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--bullet-text sap-icon--xl"
+    />
+    <div>
+      .sap-icon--bullet-text
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--numbered-text sap-icon--xl"
+    />
+    <div>
+      .sap-icon--numbered-text
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--co sap-icon--xl"
+    />
+    <div>
+      .sap-icon--co
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--ui-notifications sap-icon--xl"
+    />
+    <div>
+      .sap-icon--ui-notifications
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--bell sap-icon--xl"
+    />
+    <div>
+      .sap-icon--bell
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--cancel-share sap-icon--xl"
+    />
+    <div>
+      .sap-icon--cancel-share
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--write-new-document sap-icon--xl"
+    />
+    <div>
+      .sap-icon--write-new-document
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--write-new sap-icon--xl"
+    />
+    <div>
+      .sap-icon--write-new
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--cancel sap-icon--xl"
+    />
+    <div>
+      .sap-icon--cancel
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--screen-split-one sap-icon--xl"
+    />
+    <div>
+      .sap-icon--screen-split-one
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--screen-split-two sap-icon--xl"
+    />
+    <div>
+      .sap-icon--screen-split-two
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--screen-split-three sap-icon--xl"
+    />
+    <div>
+      .sap-icon--screen-split-three
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--customize sap-icon--xl"
+    />
+    <div>
+      .sap-icon--customize
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--user-edit sap-icon--xl"
+    />
+    <div>
+      .sap-icon--user-edit
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--source-code sap-icon--xl"
+    />
+    <div>
+      .sap-icon--source-code
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--copy sap-icon--xl"
+    />
+    <div>
+      .sap-icon--copy
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--paste sap-icon--xl"
+    />
+    <div>
+      .sap-icon--paste
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--line-chart-time-axis sap-icon--xl"
+    />
+    <div>
+      .sap-icon--line-chart-time-axis
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--clear-filter sap-icon--xl"
+    />
+    <div>
+      .sap-icon--clear-filter
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--reset sap-icon--xl"
+    />
+    <div>
+      .sap-icon--reset
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--trend-up sap-icon--xl"
+    />
+    <div>
+      .sap-icon--trend-up
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--trend-down sap-icon--xl"
+    />
+    <div>
+      .sap-icon--trend-down
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--cursor sap-icon--xl"
+    />
+    <div>
+      .sap-icon--cursor
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--add-document sap-icon--xl"
+    />
+    <div>
+      .sap-icon--add-document
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--create-form sap-icon--xl"
+    />
+    <div>
+      .sap-icon--create-form
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--resize-corner sap-icon--xl"
+    />
+    <div>
+      .sap-icon--resize-corner
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--chevron-phase sap-icon--xl"
+    />
+    <div>
+      .sap-icon--chevron-phase
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--chevron-phase-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--chevron-phase-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--rhombus-milestone sap-icon--xl"
+    />
+    <div>
+      .sap-icon--rhombus-milestone
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--rhombus-milestone-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--rhombus-milestone-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--circle-task sap-icon--xl"
+    />
+    <div>
+      .sap-icon--circle-task
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--circle-task-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--circle-task-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--project-definition-triangle sap-icon--xl"
+    />
+    <div>
+      .sap-icon--project-definition-triangle
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--project-definition-triangle-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--project-definition-triangle-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--master-task-triangle sap-icon--xl"
+    />
+    <div>
+      .sap-icon--master-task-triangle
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--master-task-triangle-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--master-task-triangle-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--program-triangles sap-icon--xl"
+    />
+    <div>
+      .sap-icon--program-triangles
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--program-triangles-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--program-triangles-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--mirrored-task-circle sap-icon--xl"
+    />
+    <div>
+      .sap-icon--mirrored-task-circle
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--mirrored-task-circle-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--mirrored-task-circle-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--checklist-item sap-icon--xl"
+    />
+    <div>
+      .sap-icon--checklist-item
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--checklist-item-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--checklist-item-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--checklist sap-icon--xl"
+    />
+    <div>
+      .sap-icon--checklist
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--checklist-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--checklist-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--chart-table-view sap-icon--xl"
+    />
+    <div>
+      .sap-icon--chart-table-view
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--filter-analytics sap-icon--xl"
+    />
+    <div>
+      .sap-icon--filter-analytics
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--filter-facets sap-icon--xl"
+    />
+    <div>
+      .sap-icon--filter-facets
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--filter-fields sap-icon--xl"
+    />
+    <div>
+      .sap-icon--filter-fields
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--indent sap-icon--xl"
+    />
+    <div>
+      .sap-icon--indent
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--outdent sap-icon--xl"
+    />
+    <div>
+      .sap-icon--outdent
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--heading-1 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--heading-1
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--heading-2 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--heading-2
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--heading-3 sap-icon--xl"
+    />
+    <div>
+      .sap-icon--heading-3
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--decrease-line-height sap-icon--xl"
+    />
+    <div>
+      .sap-icon--decrease-line-height
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--increase-line-height sap-icon--xl"
+    />
+    <div>
+      .sap-icon--increase-line-height
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--fx sap-icon--xl"
+    />
+    <div>
+      .sap-icon--fx
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--add-folder sap-icon--xl"
+    />
+    <div>
+      .sap-icon--add-folder
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--away sap-icon--xl"
+    />
+    <div>
+      .sap-icon--away
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--busy sap-icon--xl"
+    />
+    <div>
+      .sap-icon--busy
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--appear-offline sap-icon--xl"
+    />
+    <div>
+      .sap-icon--appear-offline
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--blur sap-icon--xl"
+    />
+    <div>
+      .sap-icon--blur
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--pixelate sap-icon--xl"
+    />
+    <div>
+      .sap-icon--pixelate
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--horizontal-combination-chart sap-icon--xl"
+    />
+    <div>
+      .sap-icon--horizontal-combination-chart
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--add-employee sap-icon--xl"
+    />
+    <div>
+      .sap-icon--add-employee
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--text-color sap-icon--xl"
+    />
+    <div>
+      .sap-icon--text-color
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--browse-folder sap-icon--xl"
+    />
+    <div>
+      .sap-icon--browse-folder
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--primary-key sap-icon--xl"
+    />
+    <div>
+      .sap-icon--primary-key
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--two-keys sap-icon--xl"
+    />
+    <div>
+      .sap-icon--two-keys
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--strikethrough sap-icon--xl"
+    />
+    <div>
+      .sap-icon--strikethrough
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--text sap-icon--xl"
+    />
+    <div>
+      .sap-icon--text
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--responsive sap-icon--xl"
+    />
+    <div>
+      .sap-icon--responsive
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--desktop-mobile sap-icon--xl"
+    />
+    <div>
+      .sap-icon--desktop-mobile
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--table-row sap-icon--xl"
+    />
+    <div>
+      .sap-icon--table-row
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--table-column sap-icon--xl"
+    />
+    <div>
+      .sap-icon--table-column
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--validate sap-icon--xl"
+    />
+    <div>
+      .sap-icon--validate
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--keyboard-and-mouse sap-icon--xl"
+    />
+    <div>
+      .sap-icon--keyboard-and-mouse
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--touch sap-icon--xl"
+    />
+    <div>
+      .sap-icon--touch
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--expand-all sap-icon--xl"
+    />
+    <div>
+      .sap-icon--expand-all
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--collapse-all sap-icon--xl"
+    />
+    <div>
+      .sap-icon--collapse-all
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--combine sap-icon--xl"
+    />
+    <div>
+      .sap-icon--combine
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--split sap-icon--xl"
+    />
+    <div>
+      .sap-icon--split
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Icon Sizes 1`] = `
+<section>
+  
+    
+  <span
+    class="sap-icon--cart sap-icon--s"
+  />
+  
+    
+  <span
+    class="sap-icon--cart"
+  />
+  
+    
+  <span
+    class="sap-icon--cart sap-icon--m"
+  />
+  
+    
+  <span
+    class="sap-icon--cart sap-icon--l"
+  />
+  
+    
+  <span
+    class="sap-icon--cart sap-icon--xl"
+  />
+  
+
+</section>
+`;

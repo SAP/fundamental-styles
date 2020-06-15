@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Info Label Info Label RTL 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Info Label Info Label colors 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Info Label Info Label icons 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Info Label Info Label numeric 1`] = `
+
+
+`;

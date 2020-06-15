@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/BusyIndicator Contrast Mode 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/BusyIndicator Sizes 1`] = `
+
+    
+`;
