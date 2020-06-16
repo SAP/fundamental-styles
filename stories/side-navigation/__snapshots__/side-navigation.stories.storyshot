@@ -34,3 +34,38 @@ exports[`Storyshots Components/SideNavigation Cozy Multiple 1`] = `
 
 
 `;
+
+exports[`Storyshots Components/SideNavigation Nested List With Group Headers 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/SideNavigation Nested List With Group Headers Compact Mode 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/SideNavigation Nested List With Icons Only In First Level 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/SideNavigation Nested List Without Icons 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/SideNavigation Nested List Without Links 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/SideNavigation Rtl Cozy Multiple 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/SideNavigation Rtl Example 1`] = `
+
+
+`;
