@@ -434,7 +434,7 @@ $fd-tree-checkbox-margin-right-compact: 0.5rem !default;
 
   &[class*='expanded-level-'] {
     &,
-    [class*='level-'] {
+    [class*=' level-'] {
       &.#{$block}--dependent-selection {
         .#{$block}__item {
           .#{$block}__form-item + .#{$block}__content {
