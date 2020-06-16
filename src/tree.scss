@@ -43,10 +43,6 @@ $fd-tree-checkbox-margin-right-compact: 0.5rem !default;
     margin-left: $margin;
   }
 
-  .#{$block}__expander + .#{$block}__content {
-    margin: 0;
-  }
-
   .#{$block}__form-item + .#{$block}__content,
   .#{$block}__content:only-child {
     margin-left: $margin + $fd-tree-expander-width;
@@ -54,13 +50,11 @@ $fd-tree-checkbox-margin-right-compact: 0.5rem !default;
 
   @include fd-rtl() {
     .#{$block}__expander {
-      margin-left: 0;
       margin-right: $margin;
     }
 
     .#{$block}__form-item + .#{$block}__content,
     .#{$block}__content:only-child {
-      margin-left: 0;
       margin-right: $margin + $fd-tree-expander-width;
     }
   }
@@ -74,32 +68,19 @@ $fd-tree-checkbox-margin-right-compact: 0.5rem !default;
     @include fd-rtl() {
       .#{$block}__form-item + .#{$block}__content,
       .#{$block}__content:only-child {
-        margin-left: 0;
         margin-right: $margin + $fd-tree-expander-width-compact;
       }
     }
   }
 
   &.#{$block}--dependent-selection {
-    .#{$block}__content {
-      margin: 0;
-    }
 
     .#{$block}__form-item:first-child {
       margin-left: $margin + $fd-tree-expander-width;
     }
 
-    .#{$block}__form-item + .#{$block}__content {
-      margin: 0;
-    }
-
     @include fd-rtl() {
-      .#{$block}__form-item + .#{$block}__content {
-        margin: 0;
-      }
-
       .#{$block}__form-item:first-child {
-        margin-left: $fd-tree-checkbox-margin-right;
         margin-right: $margin + $fd-tree-expander-width;
       }
     }
@@ -112,7 +93,6 @@ $fd-tree-checkbox-margin-right-compact: 0.5rem !default;
       @include fd-rtl() {
         .#{$block}__form-item:first-child {
           margin-right: $margin + $fd-tree-expander-width-compact;
-          margin-left: $fd-tree-checkbox-margin-right-compact;
         }
       }
     }
@@ -309,6 +289,10 @@ $fd-tree-checkbox-margin-right-compact: 0.5rem !default;
         content: "\e1e2";
       }
     }
+
+    + .#{$block}__content {
+      margin: 0;
+    }
   }
 
   &__content {
@@ -443,6 +427,59 @@ $fd-tree-checkbox-margin-right-compact: 0.5rem !default;
         @include fd-rtl() {
           margin-right: 0;
           margin-left: $fd-tree-checkbox-margin-right-compact;
+        }
+      }
+    }
+  }
+
+  &[class*='expanded-level-'] {
+    &,
+    [class*='level-'] {
+      &.#{$block}--dependent-selection {
+        .#{$block}__item {
+          .#{$block}__form-item + .#{$block}__content {
+            margin: 0;
+          }
+
+          .#{$block}__content {
+            margin: 0;
+          }
+        }
+
+        @include fd-rtl() {
+          .#{$block}__form-item + .#{$block}__content {
+            margin: 0;
+          }
+
+          .#{$block}__content {
+            margin: 0;
+          }
+
+          .#{$block}__form-item:first-child {
+            margin-left: $fd-tree-checkbox-margin-right;
+          }
+        }
+
+        &.#{$block}--compact {
+          @include fd-rtl() {
+            .#{$block}__form-item:first-child {
+              margin-left: $fd-tree-checkbox-margin-right-compact;
+            }
+          }
+        }
+      }
+
+      &,
+      &.#{$block}--compact {
+        @include fd-rtl() {
+          .#{$block}__expander {
+            margin-left: 0;
+          }
+
+          .#{$block}__form-item + .#{$block}__content,
+          .#{$block}__content:only-child {
+            margin-left: 0;
+          }
         }
       }
     }
