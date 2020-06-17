@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Message Strip Default 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Message Strip Error 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Message Strip Information 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Message Strip Success 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Message Strip Warning 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Message Strip Without Icon 1`] = `
+<section>
+  
+
+  <div
+    class="fd-message-strip fd-message-strip--information fd-message-strip--no-icon fd-message-strip--dismissible"
+    id="SsoiW592"
+    role="alert"
+  >
+    
+  
+    <p
+      class="fd-message-strip__text"
+    >
+      
+    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
+  
+    </p>
+    
+  
+    <button
+      aria-controls="SsoiW592"
+      aria-label="Close"
+      class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close"
+    />
+    
+
+  </div>
+  
+
+
+  <br />
+  
+
+
+  <div
+    class="fd-message-strip fd-message-strip--success fd-message-strip--no-icon fd-message-strip--dismissible"
+    id="SsoiW593"
+    role="alert"
+  >
+    
+  
+    <p
+      class="fd-message-strip__text"
+    >
+      
+    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
+  
+    </p>
+    
+  
+    <button
+      aria-controls="SsoiW593"
+      aria-label="Close"
+      class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close"
+    />
+    
+
+  </div>
+  
+
+
+  <br />
+  
+
+
+  <div
+    class="fd-message-strip fd-message-strip--warning fd-message-strip--no-icon fd-message-strip--dismissible"
+    id="SsoiW594"
+    role="alert"
+  >
+    
+  
+    <p
+      class="fd-message-strip__text"
+    >
+      
+    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
+  
+    </p>
+    
+  
+    <button
+      aria-controls="SsoiW594"
+      aria-label="Close"
+      class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close"
+    />
+    
+
+  </div>
+  
+
+
+  <br />
+  
+
+
+  <div
+    class="fd-message-strip fd-message-strip--error fd-message-strip--no-icon fd-message-strip--dismissible"
+    id="SsoiW595"
+    role="alert"
+  >
+    
+  
+    <p
+      class="fd-message-strip__text"
+    >
+      
+    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
+  
+    </p>
+    
+  
+    <button
+      aria-controls="SsoiW595"
+      aria-label="Close"
+      class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close"
+    />
+    
+
+  </div>
+  
+
+</section>
+`;
