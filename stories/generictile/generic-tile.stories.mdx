@@ -1,19 +1,30 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 import '../../dist/tile.css';
 import './generic-tile.css';
+import Header from '../../.storybook/custom/components/Header';
+import InfoLabel from '../../.storybook/custom/components/InfoLabel';
+
+import Community from '../../.storybook/custom/components/Community';
+import Footer from '../../.storybook/custom/components/Footer';
 
 <Meta
     title="Components/GenericTile"
     parameters={{
-        tags: ['f3', 'a11y', 'theme'],
-        description: `
-        Generic Tiles can be used to represent an app similar to the SAP Fiori launchpad home page. 
-        They can display different types of content, which are based on the data supplied by the app. 
-        They can contain an icon, a title, an informative text, KPIs, counters and charts.
-  `
+        tags: ['f3', 'a11y', 'theme']
     }}
 />
 
+<Header />
+
+## Generic Tile
+
+<InfoLabel tag='f3'/>
+<InfoLabel tag='a11y'/>
+<InfoLabel tag='theme'/>
+
+Generic Tiles can be used to represent an app similar to the SAP Fiori launchpad home page.
+They can display different types of content, which are based on the data supplied by the app.
+They can contain an icon, a title, an informative text, KPIs, counters and charts.
 
 ## Generic Tile Sizes (Responsiveness)
 
@@ -900,30 +911,31 @@ In action mode view, the close button is displayed on the top right-hand corner 
 </Preview>
 
 ## Line Tile
-*   Line Tile Container - `fd-tile-container`. The container controls the behaviour of the tiles - **Floating** (default) and **List** (`fd-tile-container--list`). For screen sizes less than 450px use the **List** behaviour. For bigger screens use the default **Floating** behaviour.
-    *   Line Tile - apply the `fd-tile--line` modifier class to `fd-tile`. Line Tiles have two modes - cosy (default) and compact (`fd-tile--compact`). *Note: the compact mode is applied only on Line Tiles. It should not be applied on the other types.
-        *   Line Tile Header - `fd-tile__header`
-            *   Title `fd-tile__title` - **required**. For a Line Tile with a badge the title and the badge must be wrapped in a container `fd-tile__title-container`.
-            *   Subtitle `fd-tile__subtitle` **optional**.
+
+-   Line Tile Container - `fd-tile-container`. The container controls the behaviour of the tiles - **Floating** (default) and **List** (`fd-tile-container--list`). For screen sizes less than 450px use the **List** behaviour. For bigger screens use the default **Floating** behaviour.
+    -   Line Tile - apply the `fd-tile--line` modifier class to `fd-tile`. Line Tiles have two modes - cosy (default) and compact (`fd-tile--compact`). \*Note: the compact mode is applied only on Line Tiles. It should not be applied on the other types.
+        -   Line Tile Header - `fd-tile__header`
+            -   Title `fd-tile__title` - **required**. For a Line Tile with a badge the title and the badge must be wrapped in a container `fd-tile__title-container`.
+            -   Subtitle `fd-tile__subtitle` **optional**.
 
 **Breakpoints**
 
-*   **List** behaviour - for screen sizes less than 450px - S screens.
-*   **Floating** behaviour - for screen sizes greater or equal to 450px - M, L and XL screens.
+-   **List** behaviour - for screen sizes less than 450px - S screens.
+-   **Floating** behaviour - for screen sizes greater or equal to 450px - M, L and XL screens.
 
 **Wrapping and Overflow Behaviour**
 
-*   **Floating** behaviour - If the content of the Tile can't fit in one line, the Tile wraps into two rows. *Note: this behaviour requires JavaScript and is not provided in Fundamental-Styles.
-*   **List** behaviour - the Tile grows vertically and the text inside wraps into two rows, splitting the title in the first row and the subtitle in the second row.
+-   **Floating** behaviour - If the content of the Tile can't fit in one line, the Tile wraps into two rows. \*Note: this behaviour requires JavaScript and is not provided in Fundamental-Styles.
+-   **List** behaviour - the Tile grows vertically and the text inside wraps into two rows, splitting the title in the first row and the subtitle in the second row.
 
 **List Tile States**
 
-*   Regular
-*   Hover
-*   Pressed
-*   Disabled - the disabled state can only be applied on Line Tiles. The other types do not have a disabled state.
+-   Regular
+-   Hover
+-   Pressed
+-   Disabled - the disabled state can only be applied on Line Tiles. The other types do not have a disabled state.
 
-**Action Mode**  
+**Action Mode**
 
 The controls are wrapped in a container `fd-tile__action-container` which is right aligned within the tile. The default spacing between the header and actions container for List View in Action mode is 0.25rem. Gradient masking is also supported in edit mode.
 
@@ -1349,3 +1361,6 @@ The controls are wrapped in a container `fd-tile__action-container` which is rig
             `}
     </Story>
 </Preview>
+
+<Community />
+<Footer />
