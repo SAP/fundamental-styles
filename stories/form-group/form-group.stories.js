@@ -8,7 +8,8 @@ export default {
 
         These components can be used alone. For example, the 'form__item' element with the label and control could  
         be used without the full form group since not every form field will need error messages.`
-    }
+    },
+    tags: ['f3', 'a11y', 'theme']
 };
 
 export const primary = () => `
