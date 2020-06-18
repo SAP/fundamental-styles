@@ -51,7 +51,9 @@ $block: #{$fd-namespace}-shellbar;
 
     display: flex;
     align-items: center;
-    flex: 1 1 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
 
     &--product {
       justify-content: flex-start;
@@ -278,7 +280,6 @@ $block: #{$fd-namespace}-shellbar;
    is a better option than using the buttonBase() mixin from the button.scss file or using !important.
    */
   .#{$fd-namespace}-button.#{$block}__button {
-    @include fd-button-reset();
     @include fd-icon-size("m", "before");
     @include fd-icon-size("m", "after");
 
@@ -286,18 +287,18 @@ $block: #{$fd-namespace}-shellbar;
     background: $fd-shellbar-background-color;
     color: $fd-shellbar-color;
     padding: 0;
+    outline-color: var(--sapContent_ContrastFocusColor);
 
-    &:hover,
-    &:focus {
+    &:hover {
       background: $fd-shell-hover-background;
     }
 
     &:active {
       background: $fd-shell-active-background;
+      outline-color: var(--sapContent_ContrastFocusColor);
     }
 
     &:hover,
-    &:focus,
     &:active {
       color: $fd-shell-active-text-color;
     }
@@ -313,19 +314,22 @@ $block: #{$fd-namespace}-shellbar;
         margin-right: 0;
       }
     }
+
+    &.#{$block}__button--user-menu {
+      outline-offset: 0.1px;
+    }
   }
 
   .#{$fd-namespace}-button.#{$block}__button--menu {
     font-size: var(--sapFontSize);
-    outline: 0;
+    outline-color: var(--sapContent_ContrastFocusColor);
 
     &::after {
       color: $fd-shellbar-color;
       content: "\e287";
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
       background: $fd-shell-hover-background;
       border-color: transparent;
     }
@@ -334,6 +338,7 @@ $block: #{$fd-namespace}-shellbar;
     &:focus {
       background: $fd-shell-active-background;
       color: $fd-shell-active-text-color;
+      outline-color: var(--sapContent_ContrastFocusColor);
     }
   }
 

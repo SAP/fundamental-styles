@@ -136,19 +136,19 @@ An Avatar with TileIcon background can be rendered using the `--tile` modifier.
 <br>
 
 ## Accent Colors
-Use helpers classes to change the background colors, for example, `.fd-has-background-color-accent-9`.
+Use helpers classes to change the background colors, for example, `.fd-avatar--accent-color-9`.
 
 {% capture avatar-accent-colors %}
-<span class="fd-avatar fd-avatar--m sap-icon--money-bills fd-has-background-color-accent-1" role="presentation"></span>
-<span class="fd-avatar fd-avatar--m sap-icon--money-bills fd-has-background-color-accent-2" role="presentation"></span>
-<span class="fd-avatar fd-avatar--m sap-icon--money-bills fd-has-background-color-accent-3" role="presentation"></span>
-<span class="fd-avatar fd-avatar--m sap-icon--money-bills fd-has-background-color-accent-4" role="presentation"></span>
-<span class="fd-avatar fd-avatar--m sap-icon--money-bills fd-has-background-color-accent-5" role="presentation"></span>
-<span class="fd-avatar fd-avatar--m sap-icon--money-bills fd-has-background-color-accent-6" role="presentation"></span>
-<span class="fd-avatar fd-avatar--m sap-icon--money-bills fd-has-background-color-accent-7" role="presentation"></span>
-<span class="fd-avatar fd-avatar--m sap-icon--money-bills fd-has-background-color-accent-8" role="presentation"></span>
-<span class="fd-avatar fd-avatar--m sap-icon--money-bills fd-has-background-color-accent-9" role="presentation"></span>
-<span class="fd-avatar fd-avatar--m sap-icon--money-bills fd-has-background-color-accent-10" role="presentation"></span>
+<span class="fd-avatar fd-avatar--accent-color-1 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--accent-color-2 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--accent-color-3 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--accent-color-4 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--accent-color-5 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--accent-color-7 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--accent-color-9 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
 {% endcapture %}
 {% include display-component.html component=avatar-accent-colors %}
 
@@ -156,35 +156,35 @@ Use helpers classes to change the background colors, for example, `.fd-has-backg
 A zoom icon button can be added with another element using the `.fd-avatar__zoom-icon` class.
 
 {% capture avatar-zoom-icon %}
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle sap-icon--money-bills fd-has-background-color-accent-1" role="presentation">
+<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1 sap-icon--money-bills" role="presentation">
     <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
 </span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle sap-icon--money-bills fd-has-background-color-accent-2" role="presentation">
+<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2 sap-icon--money-bills" role="presentation">
     <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
 </span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle sap-icon--money-bills fd-has-background-color-accent-3" role="presentation">
+<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3 sap-icon--money-bills" role="presentation">
     <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
 </span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle sap-icon--money-bills fd-has-background-color-accent-4" role="presentation">
+<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4 sap-icon--money-bills" role="presentation">
     <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
 </span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle sap-icon--money-bills fd-has-background-color-accent-5" role="presentation">
+<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5 sap-icon--money-bills" role="presentation">
     <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
 </span>
 
-<span class="fd-avatar fd-avatar--xs fd-has-background-color-accent-1" aria-label="Wendy Wallace">WW
+<span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs" aria-label="Wendy Wallace">WW
     <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
 </span>
-<span class="fd-avatar fd-avatar--s fd-has-background-color-accent-2" aria-label="Wendy Wallace">WW
+<span class="fd-avatar fd-avatar--accent-color-7 fd-avatar--s" aria-label="Wendy Wallace">WW
     <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
 </span>
-<span class="fd-avatar fd-avatar--m fd-has-background-color-accent-3" aria-label="Wendy Wallace">WW
+<span class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m" aria-label="Wendy Wallace">WW
     <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
 </span>
-<span class="fd-avatar fd-avatar--l fd-has-background-color-accent-4" aria-label="Wendy Wallace">WW
+<span class="fd-avatar fd-avatar--accent-color-9 fd-avatar--l" aria-label="Wendy Wallace">WW
     <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
 </span>
-<span class="fd-avatar fd-avatar--xl fd-has-background-color-accent-5" aria-label="Wendy Wallace">WW
+<span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl" aria-label="Wendy Wallace">WW
     <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
 </span>
 {% endcapture %}

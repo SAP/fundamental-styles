@@ -240,22 +240,6 @@ body {
   font-size: 14px;
 }
 
-.test-sidenav-list {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  list-style: none;
-}
-
-.test-sidenav-list-icon {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  text-align: center;
-}
-
 .bar-popover-playground {
   margin: 0;
   padding: 0;

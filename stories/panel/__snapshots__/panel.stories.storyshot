@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Panel Compact 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Panel Expandable 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Panel Fixed 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Panel Fixed Height Content 1`] = `
+
+
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Time Compact Mode 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Time Default Cozy Mode 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Time Scrollable Mode 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Time Tablet Mode 1`] = `
+
+
+`;

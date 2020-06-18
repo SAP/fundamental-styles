@@ -79,7 +79,7 @@ $block: #{$fd-namespace}-info-label;
     line-height: 1.1;
 
     @include fd-rtl() {
-      &:empty {
+      @include fd-empty() {
         padding: 0 $fd-info-label-icon-padding-right 0 $fd-info-label-icon-padding-right;
       }
 
@@ -95,7 +95,7 @@ $block: #{$fd-namespace}-info-label;
       top: 0.0625rem;
     }
 
-    &:empty {
+    @include fd-empty() {
       padding: 0 $fd-info-label-icon-padding-right 0 $fd-info-label-icon-padding-right;
     }
   }

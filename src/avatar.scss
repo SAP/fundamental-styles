@@ -21,6 +21,19 @@ $block: #{$fd-namespace}-avatar;
     "xl": ("ratio": ($fd-const-ratio * 7), "font-size": 3rem, "zoomIconDimensions": $fd-zoom-icon-xl, "offset":  -0.25rem, "beforeFontSize": 1rem, "fontStretch": normal)
   );
 
+  $fd-avatar-accent-colors: (
+    "1": ("background-color": var(--sapAccentColor1)),
+    "2": ("background-color": var(--sapAccentColor2)),
+    "3": ("background-color": var(--sapAccentColor3)),
+    "4": ("background-color": var(--sapAccentColor4)),
+    "5": ("background-color": var(--sapAccentColor5)),
+    "6": ("background-color": var(--sapAccentColor6)),
+    "7": ("background-color": var(--sapAccentColor7)),
+    "8": ("background-color": var(--sapAccentColor8)),
+    "9": ("background-color": var(--sapAccentColor9)),
+    "10": ("background-color": var(--sapAccentColor10))
+  );
+
   // BLOCK BASE *******************************************
   @at-root {
     [class*="#{$block}"] {
@@ -117,5 +130,12 @@ $block: #{$fd-namespace}-avatar;
   // optional border
   &.#{$block}--border {
     border: inset 0.0625rem $fd-avatar-border-fade;
+  }
+
+  // accent-colors
+  @each $set-name, $color-set in $fd-avatar-accent-colors {
+    &--accent-color-#{$set-name} {
+      background-color: map_get($color-set, "background-color");
+    }
   }
 }

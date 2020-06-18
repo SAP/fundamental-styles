@@ -87,7 +87,7 @@ $block: #{$fd-namespace}-checkbox;
       outline: none;
     }
 
-    &:empty {
+    @include fd-empty() {
       padding: $fd-checkbox-margin;
       margin: 0;
 
@@ -139,10 +139,10 @@ $block: #{$fd-namespace}-checkbox;
   @include fd-focus() {
     + .#{$block}__label {
       @include fd-form-radio-focus($fd-checkbox-margin);
-    }
 
-    + .#{$block}__label:empty {
-      @include fd-form-radio-empty-focus($fd-checkbox-margin);
+      @include fd-empty() {
+        @include fd-form-radio-empty-focus($fd-checkbox-margin);
+      }
     }
   }
 
@@ -179,7 +179,7 @@ $block: #{$fd-namespace}-checkbox;
         }
       }
 
-      &:empty {
+      @include fd-empty() {
         padding: $fd-checkbox-margin-compact;
         margin: 0;
 
@@ -194,10 +194,10 @@ $block: #{$fd-namespace}-checkbox;
     @include fd-focus() {
       + .#{$block}__label {
         @include fd-form-radio-focus($fd-checkbox-margin-compact);
-      }
 
-      + .#{$block}__label:empty {
-        @include fd-form-radio-empty-focus($fd-checkbox-margin-compact);
+        @include fd-empty() {
+          @include fd-form-radio-empty-focus($fd-checkbox-margin-compact);
+        }
       }
     }
   }

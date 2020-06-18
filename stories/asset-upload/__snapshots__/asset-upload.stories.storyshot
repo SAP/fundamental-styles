@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Asset Upload Asset Upload with Icon and Message 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Asset Upload Asset Upload with no icon 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Asset Upload Asset Upload with no message 1`] = `
+
+
+`;

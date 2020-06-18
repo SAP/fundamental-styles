@@ -62,6 +62,15 @@
   }
 }
 
+// Empty state
+// `.is-empty` is when empty state can't be applied, because of some internal framework comments
+@mixin fd-empty {
+  &:empty,
+  &.is-empty {
+    @content;
+  }
+}
+
 // PRESSED state (toggle with full press-and-release)
 @mixin fd-pressed {
   &[aria-pressed="true"],

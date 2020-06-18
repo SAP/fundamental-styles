@@ -145,7 +145,7 @@ Along with Error and Warning, error messages should be displayed below the field
 
 <div class="fd-form-item">
     <label class="fd-form-label" for="input-1bb">Success input:</label>
-    <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
+    <div class="fd-popover fd-popover--input-message-group">
         <div class="fd-popover__control" aria-controls="popoverB2" aria-expanded="false" aria-haspopup="true">
             <input class="fd-input is-success" type="text" id="input-1bb" placeholder="Field placeholder text" aria-label="Image label">
         </div>
@@ -159,7 +159,7 @@ Along with Error and Warning, error messages should be displayed below the field
 
 <div class="fd-form-item">
     <label class="fd-form-label" for="input-1cc">Error input:</label>
-    <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
+    <div class="fd-popover fd-popover--input-message-group">
         <div class="fd-popover__control" aria-controls="popoverB3" aria-expanded="false" aria-haspopup="true">
             <input class="fd-input is-error" type="text" id="input-1cc" placeholder="Field placeholder text" aria-label="Image label">
         </div>
@@ -173,7 +173,7 @@ Along with Error and Warning, error messages should be displayed below the field
 
 <div class="fd-form-item">
     <label class="fd-form-label" for="input-1dd">Warning input:</label>
-    <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
+    <div class="fd-popover fd-popover--input-message-group">
         <div class="fd-popover__control" aria-controls="popoverB4" aria-expanded="false" aria-haspopup="true">
             <input class="fd-input is-warning" type="text" id="input-1dd" placeholder="Field placeholder text" aria-label="Image label">
         </div>
@@ -187,7 +187,7 @@ Along with Error and Warning, error messages should be displayed below the field
 
 <div class="fd-form-item">
     <label class="fd-form-label" for="input-1ee">Information input:</label>
-    <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
+    <div class="fd-popover fd-popover--input-message-group">
         <div class="fd-popover__control" aria-controls="popoverB5" aria-expanded="false" aria-haspopup="true">
             <input class="fd-input fd-input--compact is-information" type="text" id="input-1ee" placeholder="Field placeholder text" aria-label="Image label">
         </div>
@@ -237,7 +237,7 @@ Do not use the text area if
     <br/>
     <div class="fd-form-item">
         <label class="fd-form-label" for="textarea-3">Success text area:</label>
-        <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
+        <div class="fd-popover fd-popover--input-message-group">
             <div class="fd-popover__control" aria-controls="popoverT51" aria-expanded="false" aria-haspopup="true">
                 <textarea class="fd-textarea is-success" id="textarea-3" placeholder="Write something here"></textarea>
             </div>
@@ -250,7 +250,7 @@ Do not use the text area if
     <br/>
     <div class="fd-form-item">
         <label class="fd-form-label" for="textarea-4">Error text area:</label>
-        <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
+        <div class="fd-popover fd-popover--input-message-group">
             <div class="fd-popover__control" aria-controls="popoverT52" aria-expanded="false" aria-haspopup="true">
                 <textarea class="fd-textarea is-error" id="textarea-4" placeholder="Write something here"></textarea>
             </div>
@@ -262,7 +262,7 @@ Do not use the text area if
     <br/>
     <div class="fd-form-item">
         <label class="fd-form-label" for="textarea-5">Warning text area:</label>
-        <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
+        <div class="fd-popover fd-popover--input-message-group">
             <div class="fd-popover__control" aria-controls="popoverT53" aria-expanded="false" aria-haspopup="true">
                 <textarea class="fd-textarea is-warning" id="textarea-5" placeholder="Write something here"></textarea>
             </div>
@@ -274,7 +274,7 @@ Do not use the text area if
     <br/>
     <div class="fd-form-item">
         <label class="fd-form-label" for="textarea-6">Information text area:</label>
-        <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
+        <div class="fd-popover fd-popover--input-message-group">
             <div class="fd-popover__control" aria-controls="popoverT54" aria-expanded="false" aria-haspopup="true">
                 <textarea class="fd-textarea is-information" id="textarea-6" placeholder="Write something here"></textarea>
             </div>

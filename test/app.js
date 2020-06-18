@@ -179,11 +179,8 @@ router.get('/', (req, res) => {
 
 function getStarterData() {
     const data = {
-        "tree": require(`./templates/tree/data.json`),
         "table": require(`./templates/table/data.json`),
         "tabs": require(`./templates/tabs/data.json`),
-        "pagination": require(`./templates/pagination/data.json`),
-        "localization_editor": require(`./templates/localization-editor/data.json`),
         "test": require(`./data/test.json`)
     };
     return data;

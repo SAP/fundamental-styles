@@ -57,9 +57,9 @@ This example shows the minimum shellbar for a single application product with on
     <div class="fd-shellbar__action">
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
-          <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="WV3AY276" aria-expanded="false" aria-haspopup="true" role="button">
+          <button class="fd-button fd-shellbar__button fd-shellbar__button--user-menu" aria-controls="WV3AY276" aria-expanded="false" aria-haspopup="true">
             <span class="fd-avatar fd-avatar--xs fd-avatar--circle">WW</span>
-          </div>
+          </button>
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="WV3AY276">
           <nav class="fd-menu">
@@ -151,9 +151,9 @@ This example includes the product menu for navigating to applications within the
     <div class="fd-shellbar__action">
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
-          <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="ZY3AY276" aria-expanded="false" aria-haspopup="true" role="button">
+          <button class="fd-button fd-shellbar__button fd-shellbar__button--user-menu" aria-controls="ZY3AY276" aria-expanded="false" aria-haspopup="true">
             <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" aria-label="William Wallingham">WW</span>
-          </div>
+          </button>
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="ZY3AY276">
           <nav class="fd-menu">
@@ -248,9 +248,9 @@ When a product has multiple links, the product links should collapse into an ove
       <div class="fd-shellbar__action">
         <div class="fd-popover fd-popover--right">
           <div class="fd-popover__control">
-            <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="DD35G276" aria-expanded="false" aria-haspopup="true" role="button">
+            <button class="fd-button fd-shellbar__button fd-shellbar__button--user-menu" aria-controls="DD35G276" aria-expanded="false" aria-haspopup="true">
               <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatarier--circle">WW</span>
-            </div>
+            </button>
           </div>
           <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="DD35G276">
             <nav class="fd-menu">
@@ -298,9 +298,9 @@ For more information about the Product Switch, see [Product Switch](product-swit
       <div class="fd-shellbar__action">
         <div class="fd-popover fd-popover--right">
           <div class="fd-popover__control">
-            <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="MKFAY276" aria-expanded="false" aria-haspopup="true" role="button">
+            <button class="fd-button fd-shellbar__button fd-shellbar__button--user-menu" aria-controls="MKFAY276" aria-expanded="false" aria-haspopup="true">
               <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" aria-label="William Wallingham">WW</span>
-            </div>
+            </button>
           </div>
           <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="MKFAY276">
             <nav class="fd-menu">

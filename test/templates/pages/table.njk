@@ -11,7 +11,6 @@
 {% from "../table/component.njk" import table %}
 {% from "../token/component.njk" import token %}
 {% from "../menu/component.njk" import menu %}
-{% from "../pagination/component.njk" import pagination %}
 
 {% set headers = ["", "Column Header", "Column Header", "Column Header", "Column Header"] %}
 {% set image_row = ['<img src="./static/nature.jpg" class="fd-has-border-radius-50percent" width="32" height="32">', '<a class="fd-has-font-weight-semi">user.name@email.com</a>', 'First Name', 'Last Name', '01/26/17'] %}
@@ -106,7 +105,6 @@
   {{table_example}}
     {%- endcall %}
     {% call layout.panel_footer() -%}
-    {{  pagination(data.pagination.properties) }}
 
     {%- endcall %}
 {%- endcall %}
