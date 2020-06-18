@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Forms/FormMessage Error 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Forms/FormMessage Information 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Forms/FormMessage Success 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Forms/FormMessage Warning 1`] = `
+
+    
+`;

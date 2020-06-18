@@ -9,7 +9,8 @@ export default {
 > **DEPRECATED**. Form Select does not exist as a Fiori 3 component so it has been deprecated.  
 > It has been replaced by the Custom Select Component.
 
-A Form Select is similar to a Dropdown but is more commonly used within a form. It can also be set to a disabled state.`
+A Form Select is similar to a Dropdown but is more commonly used within a form. It can also be set to a disabled state.`,
+        tags: ['f3', 'a11y', 'theme']
     }
 };
 

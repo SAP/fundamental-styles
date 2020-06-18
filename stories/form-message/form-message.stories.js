@@ -19,7 +19,8 @@ The state of the input field can reflect the validity of the data entered, wheth
 * **Disabled**: Indicates the field is not editable, commonly used when the field is dependent on a previous entry/selection within the form.
 * **Read Only**: Used to display static information in the context of a form.
 
-Along with Error and Warning, error messages should be displayed below the field so the user can correct the error and move forward.`
+Along with Error and Warning, error messages should be displayed below the field so the user can correct the error and move forward.`,
+        tags: ['f3', 'a11y', 'theme']
     }
 };
 
