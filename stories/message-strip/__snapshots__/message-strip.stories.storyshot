@@ -15,6 +15,11 @@ exports[`Storyshots Components/Message Strip Information 1`] = `
 
 `;
 
+exports[`Storyshots Components/Message Strip Rtl 1`] = `
+
+
+`;
+
 exports[`Storyshots Components/Message Strip Success 1`] = `
 
 

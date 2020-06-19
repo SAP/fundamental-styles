@@ -159,3 +159,43 @@ noIcons.parameters = {
         storyDescription: 'Add the modifier class `fd-message-strip--no-icon` to render Message Strip without any icon.'
     }
 };
+
+export const rtl = () => `
+<div dir="rtl">
+    <div class="fd-message-strip fd-message-strip--dismissible" role="alert" id="ZvPBg609" >
+      <p class="fd-message-strip__text">
+        Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
+      </p>
+      <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="ZvPBg609" aria-label="Close"></button>
+    </div>
+
+     <br />
+
+   <div class="fd-message-strip fd-message-strip--information fd-message-strip--no-icon fd-message-strip--dismissible" 
+         role="alert" id="SsoiW592">
+      <p class="fd-message-strip__text">
+        Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
+      </p>
+      <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW592" aria-label="Close"></button>
+   </div>
+    
+   <br />
+    
+    <div class="fd-message-strip fd-message-strip--error fd-message-strip--dismissible" 
+         role="alert" id="SsoiW595">
+      <p class="fd-message-strip__text">
+        Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
+      </p>
+      <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW595" aria-label="Close"></button>
+    </div>
+</div>
+`;
+
+rtl.storyName = 'Rtl';
+
+rtl.parameters = {
+    docs: {
+        iframeHeight: messageStripHeight * 4,
+        storyDescription: 'Message Strip in Rtl mode'
+    }
+};
