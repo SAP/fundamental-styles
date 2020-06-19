@@ -45,7 +45,7 @@ By default tree items do not have hover state. The <code class="docs-code">fd-tr
 For selected state apply the is-selected class to the <code class="docs-code">fd-tree\\_\\_item-container</code> element.
 
 
-<span style="color: darkred; font-weight: bold;">NOTE:</span>The interaction with the expander is disabled in the documentation in order to provide accurate demonstration of the indentation rules based on the currently expanded level. Modifier classes like <code class="docs-code">is-expanded</code>, <code class="docs-code">expanded-level-*</code>  and attributes like <code class="docs-code">aria-expanded="true"</code>, <code class="docs-code">aria-hidden="false"</code> have been hard-coded for the same purpose. 
+<span style="color: darkred; font-weight: bold;">NOTE: In some examples the expander is not interactive (will not show/hide the next level). Its purpose in these cases is simply to demonstrate the indentation rules.
         `,
         docs: { iframeHeight: 500 },
         tags: ['development']
@@ -53,18 +53,18 @@ For selected state apply the is-selected class to the <code class="docs-code">fd
 };
 
 export const treeWithExpandedLevel1 = () => `
-<ul role="tree" id="TREE1L1" class="fd-tree level-1 expanded-level-1">
+<ul role="tree" aria-label="root-tree" id="TREE1L1" class="fd-tree level-1 expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
-            <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE1L2" aria-haspopup="true"  aria-label="Expand level 2"></span>
+            <button class="fd-tree__expander is-expanded" aria-controls="TREE1L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
             </div>
         </div>
-        <ul role="tree" class="fd-tree level-2" id="TREE1L2" aria-hidden="false">
+        <ul role="group" class="fd-tree level-2" id="TREE1L2" aria-hidden="false">
             <li role="treeitem" aria-level="2" class="fd-tree__item">
                 <div tabindex="0" class="fd-tree__item-container">
-                    <span role="presentation" class="fd-tree__expander" aria-label="Expander"></span>
+                    <button class="fd-tree__expander" aria-label="Expander"></button>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
                     </div>
@@ -116,18 +116,18 @@ export const treeWithExpandedLevel1 = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" id="TREE1CL1" class="fd-tree fd-tree--compact level-1 expanded-level-1">
+<ul role="tree" aria-label="root-tree" id="TREE1CL1" class="fd-tree fd-tree--compact level-1 expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
-            <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE1CL2" aria-haspopup="true"  aria-label="Expand level 2"></span>
+            <button class="fd-tree__expander is-expanded" aria-controls="TREE1CL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
             </div>
         </div>
-        <ul role="tree" class="fd-tree fd-tree--compact level-2" id="TREE1CL2" aria-hidden="false">
+        <ul role="group" class="fd-tree fd-tree--compact level-2" id="TREE1CL2" aria-hidden="false">
             <li role="treeitem" aria-level="2" class="fd-tree__item">
                 <div tabindex="0" class="fd-tree__item-container">
-                    <span role="presentation" class="fd-tree__expander" aria-label="Expander"></span>
+                    <button class="fd-tree__expander" aria-label="Expander"></button>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
                     </div>
@@ -177,26 +177,26 @@ Only Level 1 tree (ul element) needs to have the <code class="docs-code">expande
 };
 
 export const treeWithExpandedLevel2AndHoverableTreeItems = () => `
-<ul role="tree" id="TREE2L1" class="fd-tree fd-tree--hoverable level-1 expanded-level-2">
+<ul role="tree" aria-label="root-tree" id="TREE2L1" class="fd-tree fd-tree--hoverable level-1 expanded-level-2">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
-            <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE2L2" aria-haspopup="true"  aria-label="Expand level 2"></span>
+            <button class="fd-tree__expander is-expanded" aria-controls="TREE2L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
             </div>
         </div>
-        <ul role="tree" class="fd-tree level-2" id="TREE2L2" aria-hidden="false">
+        <ul role="group" class="fd-tree level-2" id="TREE2L2" aria-hidden="false">
             <li role="treeitem" aria-level="2" aria-expanded="true" class="fd-tree__item">
                 <div tabindex="0" class="fd-tree__item-container">
-                    <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE2L3" aria-haspopup="true"  aria-label="Expand level 3"></span>
+                    <button class="fd-tree__expander is-expanded" aria-controls="TREE2L3" aria-haspopup="true" aria-label="Expand level 3" aria-expanded="true"></button>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
                     </div>
                 </div>
-                <ul role="tree" class="fd-tree level-3" id="TREE2L3" aria-hidden="false">
+                <ul role="group" class="fd-tree level-3" id="TREE2L3" aria-hidden="false">
                     <li role="treeitem" aria-level="3" class="fd-tree__item">
                         <div tabindex="0" class="fd-tree__item-container">
-                            <span role="presentation" class="fd-tree__expander" aria-label="Expander"></span>
+                            <button class="fd-tree__expander" aria-label="Expander"></button>
                             <div class="fd-tree__content">
                                 <span class="fd-tree__text">Level 3</span>
                             </div>
@@ -240,26 +240,26 @@ export const treeWithExpandedLevel2AndHoverableTreeItems = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" id="TREE2CL1" class="fd-tree fd-tree--hoverable fd-tree--compact level-1 expanded-level-2">
+<ul role="tree" aria-label="root-tree" id="TREE2CL1" class="fd-tree fd-tree--hoverable fd-tree--compact level-1 expanded-level-2">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
-            <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE2CL2" aria-haspopup="true"  aria-label="Expand level 2"></span>
+            <button class="fd-tree__expander is-expanded" aria-controls="TREE2CL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
             </div>
         </div>
-        <ul role="tree" class="fd-tree fd-tree--compact level-2" id="TREE2CL2" aria-hidden="false">
+        <ul role="group" class="fd-tree fd-tree--compact level-2" id="TREE2CL2" aria-hidden="false">
             <li role="treeitem" aria-level="2" aria-expanded="true" class="fd-tree__item">
                 <div tabindex="0" class="fd-tree__item-container">
-                    <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE2CL3" aria-haspopup="true"  aria-label="Expand level 3"></span>
+                    <button class="fd-tree__expander is-expanded" aria-controls="TREE2CL3" aria-haspopup="true" aria-label="Expand level 3" aria-expanded="true"></button>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
                     </div>
                 </div>
-                <ul role="tree" class="fd-tree fd-tree--compact level-3" id="TREE2CL3" aria-hidden="false">
+                <ul role="group" class="fd-tree fd-tree--compact level-3" id="TREE2CL3" aria-hidden="false">
                     <li role="treeitem" aria-level="3" class="fd-tree__item">
                         <div tabindex="0" class="fd-tree__item-container">
-                            <span role="presentation" class="fd-tree__expander" aria-label="Expander"></span>
+                            <button class="fd-tree__expander" aria-label="Expander"></button>
                             <div class="fd-tree__content">
                                 <span class="fd-tree__text">Level 3</span>
                             </div>
@@ -313,34 +313,34 @@ For hoverable tree items add the <code class="docs-code">fd-tree--hoverable</cod
 
 
 export const treeWithExpandedLevel3 = () => `
-<ul role="tree" id="TREE3L1" class="fd-tree level-1 expanded-level-3">
+<ul role="tree" aria-label="root-tree" id="TREE3L1" class="fd-tree level-1 expanded-level-3">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
-            <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE3L2" aria-haspopup="true"  aria-label="Expand level 2"></span>
+            <button class="fd-tree__expander is-expanded" aria-controls="TREE3L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
             </div>
         </div>
-        <ul role="tree" class="fd-tree level-2" id="TREE3L2" aria-hidden="false">
+        <ul role="group" class="fd-tree level-2" id="TREE3L2" aria-hidden="false">
             <li role="treeitem" aria-level="2" aria-expanded="true" class="fd-tree__item">
                 <div tabindex="0" class="fd-tree__item-container">
-                    <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE3L3" aria-haspopup="true"  aria-label="Expand level 3"></span>
+                    <button class="fd-tree__expander is-expanded" aria-controls="TREE3L3" aria-haspopup="true" aria-label="Expand level 3" aria-expanded="true"></button>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
                     </div>
                 </div>
-                <ul role="tree" class="fd-tree level-3" id="TREE3L3" aria-hidden="false">
+                <ul role="group" class="fd-tree level-3" id="TREE3L3" aria-hidden="false">
                     <li role="treeitem" aria-level="3" aria-expanded="true" class="fd-tree__item">
                         <div tabindex="0" class="fd-tree__item-container">
-                            <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE3L4" aria-haspopup="true"  aria-label="Expand level 4"></span>
+                            <button class="fd-tree__expander is-expanded" aria-controls="TREE3L4" aria-haspopup="true" aria-label="Expand level 4" aria-expanded="true"></button>
                             <div class="fd-tree__content">
                                 <span class="fd-tree__text">Level 3</span>
                             </div>
                         </div>
-                        <ul role="tree" class="fd-tree level-4" id="TREE3L4" aria-hidden="false">
+                        <ul role="group" class="fd-tree level-4" id="TREE3L4" aria-hidden="false">
                             <li role="treeitem" aria-level="4" class="fd-tree__item">
                                 <div tabindex="0" class="fd-tree__item-container">
-                                    <span role="presentation" class="fd-tree__expander" aria-label="Expander"></span>
+                                    <button class="fd-tree__expander" aria-label="Expander"></button>
                                     <div class="fd-tree__content">
                                         <span class="fd-tree__text">Level 4</span>
                                     </div>
@@ -393,34 +393,34 @@ export const treeWithExpandedLevel3 = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" id="TREE3CL1" class="fd-tree fd-tree--compact level-1 expanded-level-3">
+<ul role="tree" aria-label="root-tree" id="TREE3CL1" class="fd-tree fd-tree--compact level-1 expanded-level-3">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
-            <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE3CL2" aria-haspopup="true"  aria-label="Expand level 2"></span>
+            <button class="fd-tree__expander is-expanded" aria-controls="TREE3CL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
             </div>
         </div>
-        <ul role="tree" class="fd-tree fd-tree--compact level-2" id="TREE3CL2" aria-hidden="false">
+        <ul role="group" class="fd-tree fd-tree--compact level-2" id="TREE3CL2" aria-hidden="false">
             <li role="treeitem" aria-level="2" aria-expanded="true" class="fd-tree__item">
                 <div tabindex="0" class="fd-tree__item-container">
-                    <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE3CL3" aria-haspopup="true"  aria-label="Expand level 3"></span>
+                    <button class="fd-tree__expander is-expanded" aria-controls="TREE3CL3" aria-haspopup="true" aria-label="Expand level 3" aria-expanded="true"></button>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
                     </div>
                 </div>
-                <ul role="tree" class="fd-tree fd-tree--compact level-3" id="TREE3CL3" aria-hidden="false">
+                <ul role="group" class="fd-tree fd-tree--compact level-3" id="TREE3CL3" aria-hidden="false">
                     <li role="treeitem" aria-level="3" aria-expanded="true" class="fd-tree__item">
                         <div tabindex="0" class="fd-tree__item-container">
-                            <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE3CL4" aria-haspopup="true"  aria-label="Expand level 4"></span>
+                            <button class="fd-tree__expander is-expanded" aria-controls="TREE3CL4" aria-haspopup="true" aria-label="Expand level 4" aria-expanded="true"></button>
                             <div class="fd-tree__content">
                                 <span class="fd-tree__text">Level 3</span>
                             </div>
                         </div>
-                        <ul role="tree" class="fd-tree fd-tree--compact level-4" id="TREE3CL4" aria-hidden="false">
+                        <ul role="group" class="fd-tree fd-tree--compact level-4" id="TREE3CL4" aria-hidden="false">
                             <li role="treeitem" aria-level="4" class="fd-tree__item">
                                 <div tabindex="0" class="fd-tree__item-container">
-                                    <span role="presentation" class="fd-tree__expander" aria-label="Expander"></span>
+                                    <button class="fd-tree__expander" aria-label="Expander"></button>
                                     <div class="fd-tree__content">
                                         <span class="fd-tree__text">Level 4</span>
                                     </div>
@@ -491,58 +491,58 @@ This indentation repeats when level 4 and 5 are triggered.
 };
 
 export const treeWithExpandedLevel6 = () => `
-<ul role="tree" id="TREE6L1" class="fd-tree level-1 expanded-level-6">
+<ul role="tree" aria-label="root-tree" id="TREE6L1" class="fd-tree level-1 expanded-level-6">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
-            <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE6L2" aria-haspopup="true"  aria-label="Expand level 2"></span>
+            <button class="fd-tree__expander is-expanded" aria-controls="TREE6L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
             </div>
         </div>
-        <ul role="tree" class="fd-tree level-2" id="TREE6L2" aria-hidden="false">
+        <ul role="group" class="fd-tree level-2" id="TREE6L2" aria-hidden="false">
             <li role="treeitem" aria-level="2" aria-expanded="true" class="fd-tree__item">
                 <div tabindex="0" class="fd-tree__item-container">
-                    <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE6L3" aria-haspopup="true"  aria-label="Expand level 3"></span>
+                    <button class="fd-tree__expander is-expanded" aria-controls="TREE6L3" aria-haspopup="true" aria-label="Expand level 3" aria-expanded="true"></button>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
                     </div>
                 </div>
-                <ul role="tree" class="fd-tree level-3" id="TREE6L3" aria-hidden="false">
+                <ul role="group" class="fd-tree level-3" id="TREE6L3" aria-hidden="false">
                     <li role="treeitem" aria-level="3" aria-expanded="true" class="fd-tree__item">
                         <div tabindex="0" class="fd-tree__item-container">
-                            <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE6L4" aria-haspopup="true"  aria-label="Expand level 4"></span>
+                            <button class="fd-tree__expander is-expanded" aria-controls="TREE6L4" aria-haspopup="true" aria-label="Expand level 4" aria-expanded="true"></button>
                             <div class="fd-tree__content">
                                 <span class="fd-tree__text">Level 3</span>
                             </div>
                         </div>
-                        <ul role="tree" class="fd-tree level-4" id="TREE6L4" aria-hidden="false">
+                        <ul role="group" class="fd-tree level-4" id="TREE6L4" aria-hidden="false">
                             <li role="treeitem" aria-level="4" aria-expanded="true" class="fd-tree__item">
                                 <div tabindex="0" class="fd-tree__item-container">
-                                    <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE6L5" aria-haspopup="true"  aria-label="Expand level 5"></span>
+                                    <button class="fd-tree__expander is-expanded" aria-controls="TREE6L5" aria-haspopup="true" aria-label="Expand level 5" aria-expanded="true"></button>
                                     <div class="fd-tree__content">
                                         <span class="fd-tree__text">Level 4</span>
                                     </div>
                                 </div>
-                                <ul role="tree" class="fd-tree level-5" id="TREE6L5" aria-hidden="false">
+                                <ul role="group" class="fd-tree level-5" id="TREE6L5" aria-hidden="false">
                                     <li role="treeitem" aria-level="5" aria-expanded="true"  class="fd-tree__item">
                                         <div tabindex="0" class="fd-tree__item-container">
-                                            <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE6L6" aria-haspopup="true"  aria-label="Expand level 6"></span>
+                                            <button class="fd-tree__expander is-expanded" aria-controls="TREE6L6" aria-haspopup="true" aria-label="Expand level 6" aria-expanded="true"></button>
                                             <div class="fd-tree__content">
                                                 <span class="fd-tree__text">Level 5</span>
                                             </div>
                                         </div>
-                                        <ul role="tree" class="fd-tree level-6" id="TREE6L6" aria-hidden="false">
+                                        <ul role="group" class="fd-tree level-6" id="TREE6L6" aria-hidden="false">
                                             <li role="treeitem" aria-level="6" aria-expanded="true" class="fd-tree__item">
                                                 <div tabindex="0" class="fd-tree__item-container">
-                                                    <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE6L7" aria-haspopup="true"  aria-label="Expand level 7"></span>
+                                                    <button class="fd-tree__expander is-expanded" aria-controls="TREE6L7" aria-haspopup="true" aria-label="Expand level 7" aria-expanded="true"></button>
                                                     <div class="fd-tree__content">
                                                         <span class="fd-tree__text">Level 6</span>
                                                     </div>
                                                 </div>
-                                                <ul role="tree" class="fd-tree level-7" id="TREE6L7" aria-hidden="false">
+                                                <ul role="group" class="fd-tree level-7" id="TREE6L7" aria-hidden="false">
                                                     <li role="treeitem" aria-level="7" class="fd-tree__item">
                                                         <div tabindex="0" class="fd-tree__item-container">
-                                                            <span role="presentation" class="fd-tree__expander" aria-label="Expander"></span>
+                                                            <button class="fd-tree__expander" aria-label="Expander"></button>
                                                             <div class="fd-tree__content">
                                                                 <span class="fd-tree__text">Level 7</span>
                                                             </div>
@@ -622,58 +622,58 @@ export const treeWithExpandedLevel6 = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" id="TREE6CL1" class="fd-tree fd-tree--compact level-1 expanded-level-6">
+<ul role="tree" aria-label="root-tree" id="TREE6CL1" class="fd-tree fd-tree--compact level-1 expanded-level-6">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
-            <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE6CL2" aria-haspopup="true"  aria-label="Expand level 2"></span>
+            <button class="fd-tree__expander is-expanded" aria-controls="TREE6CL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
             </div>
         </div>
-        <ul role="tree" class="fd-tree fd-tree--compact level-2" id="TREE6CL2" aria-hidden="false">
+        <ul role="group" class="fd-tree fd-tree--compact level-2" id="TREE6CL2" aria-hidden="false">
             <li role="treeitem" aria-level="2" aria-expanded="true" class="fd-tree__item">
                 <div tabindex="0" class="fd-tree__item-container">
-                    <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE6CL3" aria-haspopup="true"  aria-label="Expand level 3"></span>
+                    <button class="fd-tree__expander is-expanded" aria-controls="TREE6CL3" aria-haspopup="true" aria-label="Expand level 3" aria-expanded="true"></button>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
                     </div>
                 </div>
-                <ul role="tree" class="fd-tree fd-tree--compact level-3" id="TREE6CL3" aria-hidden="false">
+                <ul role="group" class="fd-tree fd-tree--compact level-3" id="TREE6CL3" aria-hidden="false">
                     <li role="treeitem" aria-level="3" aria-expanded="true" class="fd-tree__item">
                         <div tabindex="0" class="fd-tree__item-container">
-                            <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE6CL4" aria-haspopup="true"  aria-label="Expand level 4"></span>
+                            <button class="fd-tree__expander is-expanded" aria-controls="TREE6CL4" aria-haspopup="true" aria-label="Expand level 4" aria-expanded="true"></button>
                             <div class="fd-tree__content">
                                 <span class="fd-tree__text">Level 3</span>
                             </div>
                         </div>
-                        <ul role="tree" class="fd-tree fd-tree--compact level-4" id="TREE6CL4" aria-hidden="false">
+                        <ul role="group" class="fd-tree fd-tree--compact level-4" id="TREE6CL4" aria-hidden="false">
                             <li role="treeitem" aria-level="4" aria-expanded="true" class="fd-tree__item">
                                 <div tabindex="0" class="fd-tree__item-container">
-                                    <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE6CL5" aria-haspopup="true"  aria-label="Expand level 5"></span>
+                                    <button class="fd-tree__expander is-expanded" aria-controls="TREE6CL5" aria-haspopup="true" aria-label="Expand level 5" aria-expanded="true"></button>
                                     <div class="fd-tree__content">
                                         <span class="fd-tree__text">Level 4</span>
                                     </div>
                                 </div>
-                                <ul role="tree" class="fd-tree fd-tree--compact level-5" id="TREE6CL5" aria-hidden="false">
+                                <ul role="group" class="fd-tree fd-tree--compact level-5" id="TREE6CL5" aria-hidden="false">
                                     <li role="treeitem" aria-level="5" aria-expanded="true"  class="fd-tree__item">
                                         <div tabindex="0" class="fd-tree__item-container">
-                                            <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE6CL6" aria-haspopup="true"  aria-label="Expand level 6"></span>
+                                            <button class="fd-tree__expander is-expanded" aria-controls="TREE6CL6" aria-haspopup="true" aria-label="Expand level 6" aria-expanded="true"></button>
                                             <div class="fd-tree__content">
                                                 <span class="fd-tree__text">Level 5</span>
                                             </div>
                                         </div>
-                                        <ul role="tree" class="fd-tree fd-tree--compact level-6" id="TREE6CL6" aria-hidden="false">
+                                        <ul role="group" class="fd-tree fd-tree--compact level-6" id="TREE6CL6" aria-hidden="false">
                                             <li role="treeitem" aria-level="6" aria-expanded="true" class="fd-tree__item">
                                                 <div tabindex="0" class="fd-tree__item-container">
-                                                    <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE6CL7" aria-haspopup="true"  aria-label="Expand level 7"></span>
+                                                    <button class="fd-tree__expander is-expanded" aria-controls="TREE6CL7" aria-haspopup="true" aria-label="Expand level 7" aria-expanded="true"></button>
                                                     <div class="fd-tree__content">
                                                         <span class="fd-tree__text">Level 6</span>
                                                     </div>
                                                 </div>
-                                                <ul role="tree" class="fd-tree fd-tree--compact level-7" id="TREE6CL7" aria-hidden="false">
+                                                <ul role="group" class="fd-tree fd-tree--compact level-7" id="TREE6CL7" aria-hidden="false">
                                                     <li role="treeitem" aria-level="7" class="fd-tree__item">
                                                         <div tabindex="0" class="fd-tree__item-container">
-                                                            <span role="presentation" class="fd-tree__expander" aria-label="Expander"></span>
+                                                            <button class="fd-tree__expander" aria-label="Expander"></button>
                                                             <div class="fd-tree__content">
                                                                 <span class="fd-tree__text">Level 7</span>
                                                             </div>
@@ -771,7 +771,7 @@ Indentations are calculated with 0.25rem
 
 
 export const treeWithExpandedLevel25 = () => `
-<ul role="tree" id="TREE25L1" class="fd-tree level-1 expanded-level-25">
+<ul role="tree" aria-label="root-tree" id="TREE25L1" class="fd-tree level-1 expanded-level-25">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -779,18 +779,18 @@ export const treeWithExpandedLevel25 = () => `
             </div>
         </div>    
     </li>
-    <ul role="tree" id="TREE25L25" class="fd-tree level-25">
+    <ul role="group" id="TREE25L25" class="fd-tree level-25">
         <li role="treeitem" aria-level="25" aria-expanded="true" class="fd-tree__item">
             <div tabindex="0" class="fd-tree__item-container">
-                <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE25L26" aria-haspopup="true"  aria-label="Expand level 26"></span>
+                <button class="fd-tree__expander is-expanded" aria-controls="TREE25L26" aria-haspopup="true" aria-label="Expand level 26" aria-expanded="true"></button>
                 <div class="fd-tree__content">
                     <span class="fd-tree__text">Level 25</span>
                 </div>
             </div>
-            <ul role="tree" class="fd-tree level-26" id="TREE25L26" aria-hidden="false">
+            <ul role="group" class="fd-tree level-26" id="TREE25L26" aria-hidden="false">
                 <li role="treeitem" aria-level="26" class="fd-tree__item">
                     <div tabindex="0" class="fd-tree__item-container">
-                        <span role="presentation" class="fd-tree__expander" aria-label="Expander"></span>
+                        <button class="fd-tree__expander" aria-label="Expander"></button>
                         <div class="fd-tree__content">
                             <span class="fd-tree__text">Level 26</span>
                         </div>
@@ -825,7 +825,7 @@ export const treeWithExpandedLevel25 = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" id="TREE25CL1" class="fd-tree fd-tree--compact level-1 expanded-level-25">
+<ul role="tree" aria-label="root-tree" id="TREE25CL1" class="fd-tree fd-tree--compact level-1 expanded-level-25">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -833,18 +833,18 @@ export const treeWithExpandedLevel25 = () => `
             </div>
         </div>    
     </li>
-    <ul role="tree" id="TREE25CL25" class="fd-tree fd-tree--compact level-25">
+    <ul role="group" id="TREE25CL25" class="fd-tree fd-tree--compact level-25">
         <li role="treeitem" aria-level="25" aria-expanded="true" class="fd-tree__item">
             <div tabindex="0" class="fd-tree__item-container">
-                <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE25CL26" aria-haspopup="true" aria-label="Expand level 26"></span>
+                <button class="fd-tree__expander is-expanded" aria-controls="TREE25CL26" aria-haspopup="true" aria-label="Expand level 26" aria-expanded="true"></button>
                 <div class="fd-tree__content">
                     <span class="fd-tree__text">Level 25</span>
                 </div>
             </div>
-            <ul role="tree" class="fd-tree fd-tree--compact level-26" id="TREE25CL26" aria-hidden="false">
+            <ul role="group" class="fd-tree fd-tree--compact level-26" id="TREE25CL26" aria-hidden="false">
                 <li role="treeitem" aria-level="26" class="fd-tree__item">
                     <div tabindex="0" class="fd-tree__item-container">
-                        <span role="presentation" class="fd-tree__expander" aria-label="Expander"></span>
+                        <button class="fd-tree__expander" aria-label="Expander"></button>
                         <div class="fd-tree__content">
                             <span class="fd-tree__text">Level 26</span>
                         </div>
@@ -890,7 +890,7 @@ Level 25 Starts back at the Level 1 position and the indentation rules are repea
 
 
 export const treeWithExpandedLevel26 = () => `
-<ul role="tree" id="TREE26L1" class="fd-tree level-1 expanded-level-26">
+<ul role="tree" aria-label="root-tree" id="TREE26L1" class="fd-tree level-1 expanded-level-26">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -898,26 +898,26 @@ export const treeWithExpandedLevel26 = () => `
             </div>
         </div>    
     </li>
-    <ul role="tree" id="TREE26L25" class="fd-tree level-25">
+    <ul role="group" id="TREE26L25" class="fd-tree level-25">
         <li role="treeitem" aria-level="25" aria-expanded="true" class="fd-tree__item">
             <div tabindex="0" class="fd-tree__item-container">
-                <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE26L26" aria-haspopup="true"  aria-label="Expand level 26"></span>
+                <button class="fd-tree__expander is-expanded" aria-controls="TREE26L26" aria-haspopup="true" aria-label="Expand level 26" aria-expanded="true"></button>
                 <div class="fd-tree__content">
                     <span class="fd-tree__text">Level 25</span>
                 </div>
             </div>
-            <ul role="tree" class="fd-tree level-26" id="TREE26L26" aria-hidden="false">
+            <ul role="group" class="fd-tree level-26" id="TREE26L26" aria-hidden="false">
                 <li role="treeitem" aria-level="26" aria-expanded="true" class="fd-tree__item">
                     <div tabindex="0" class="fd-tree__item-container">
-                        <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE26L27" aria-haspopup="true"  aria-label="Expand level 27"></span>
+                        <button class="fd-tree__expander is-expanded" aria-controls="TREE26L27" aria-haspopup="true" aria-label="Expand level 27" aria-expanded="true"></button>
                         <div class="fd-tree__content">
                             <span class="fd-tree__text">Level 26</span>
                         </div>
                     </div>
-                    <ul role="tree" class="fd-tree level-27" id="TREE26L27" aria-hidden="false">
+                    <ul role="group" class="fd-tree level-27" id="TREE26L27" aria-hidden="false">
                         <li role="treeitem" aria-level="27" class="fd-tree__item">
                             <div tabindex="0" class="fd-tree__item-container">
-                                <span role="presentation" class="fd-tree__expander" aria-label="Expander"></span>
+                                <button class="fd-tree__expander" aria-label="Expander"></button>
                                 <div class="fd-tree__content">
                                     <span class="fd-tree__text">Level 27</span>
                                 </div>
@@ -961,7 +961,7 @@ export const treeWithExpandedLevel26 = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" id="TREE26CL1" class="fd-tree fd-tree--compact level-1 expanded-level-26">
+<ul role="tree" aria-label="root-tree" id="TREE26CL1" class="fd-tree fd-tree--compact level-1 expanded-level-26">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -969,26 +969,26 @@ export const treeWithExpandedLevel26 = () => `
             </div>
         </div>    
     </li>
-    <ul role="tree" id="TREE26CL25" class="fd-tree fd-tree--compact level-25">
+    <ul role="group" id="TREE26CL25" class="fd-tree fd-tree--compact level-25">
         <li role="treeitem" aria-level="25" class="fd-tree__item">
             <div tabindex="0" class="fd-tree__item-container">
-                <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE26CL26" aria-haspopup="true"  aria-label="Expand level 26"></span>
+                <button class="fd-tree__expander is-expanded" aria-controls="TREE26CL26" aria-haspopup="true" aria-label="Expand level 26" aria-expanded="true"></button>
                 <div class="fd-tree__content">
                     <span class="fd-tree__text">Level 25</span>
                 </div>
             </div>
-            <ul role="tree" class="fd-tree fd-tree--compact level-26" id="TREE26CL26" aria-hidden="false">
+            <ul role="group" class="fd-tree fd-tree--compact level-26" id="TREE26CL26" aria-hidden="false">
                 <li role="treeitem" aria-level="26" aria-expanded="true" class="fd-tree__item">
                     <div tabindex="0" class="fd-tree__item-container">
-                        <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE26CL27" aria-haspopup="true"  aria-label="Expand level 27"></span>
+                        <button class="fd-tree__expander is-expanded" aria-controls="TREE26CL27" aria-haspopup="true" aria-label="Expand level 27" aria-expanded="true"></button>
                         <div class="fd-tree__content">
                             <span class="fd-tree__text">Level 26</span>
                         </div>
                     </div>
-                    <ul role="tree" class="fd-tree fd-tree--compact level-27" id="TREE26CL27" aria-hidden="false">
+                    <ul role="group" class="fd-tree fd-tree--compact level-27" id="TREE26CL27" aria-hidden="false">
                         <li role="treeitem" aria-level="27" class="fd-tree__item">
                             <div tabindex="0" class="fd-tree__item-container">
-                                <span role="presentation" class="fd-tree__expander" aria-label="Expander"></span>
+                                <button class="fd-tree__expander" aria-label="Expander"></button>
                                 <div class="fd-tree__content">
                                     <span class="fd-tree__text">Level 27</span>
                                 </div>
@@ -1039,7 +1039,7 @@ treeWithExpandedLevel26.parameters = {
 
 
 export const treeWithExpandedLevel27 = () => `
-<ul role="tree" id="TREE27L1" class="fd-tree level-1 expanded-level-27">
+<ul role="tree" aria-label="root-tree" id="TREE27L1" class="fd-tree level-1 expanded-level-27">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -1047,34 +1047,34 @@ export const treeWithExpandedLevel27 = () => `
             </div>
         </div>    
     </li>
-    <ul role="tree" id="TREE27L25" class="fd-tree level-25">
+    <ul role="group" id="TREE27L25" class="fd-tree level-25">
         <li role="treeitem" aria-level="25" aria-expanded="true" class="fd-tree__item">
             <div tabindex="0" class="fd-tree__item-container">
-                <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE27L26" aria-haspopup="true"  aria-label="Expand level 26"></span>
+                <button class="fd-tree__expander is-expanded" aria-controls="TREE27L26" aria-haspopup="true" aria-label="Expand level 26" aria-expanded="true"></button>
                 <div class="fd-tree__content">
                     <span class="fd-tree__text">Level 25</span>
                 </div>
             </div>
-            <ul role="tree" class="fd-tree level-26" id="TREE27L26" aria-hidden="false">
+            <ul role="group" class="fd-tree level-26" id="TREE27L26" aria-hidden="false">
                 <li role="treeitem" aria-level="26" aria-expanded="true" class="fd-tree__item">
                     <div tabindex="0" class="fd-tree__item-container">
-                        <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE27L27" aria-haspopup="true"  aria-label="Expand level 27"></span>
+                        <button class="fd-tree__expander is-expanded" aria-controls="TREE27L27" aria-haspopup="true" aria-label="Expand level 27" aria-expanded="true"></button>
                         <div class="fd-tree__content">
                             <span class="fd-tree__text">Level 26</span>
                         </div>
                     </div>
-                    <ul role="tree" class="fd-tree level-27" id="TREE27L27" aria-hidden="false">
+                    <ul role="group" class="fd-tree level-27" id="TREE27L27" aria-hidden="false">
                         <li role="treeitem" aria-level="27" aria-expanded="true" class="fd-tree__item">
                             <div tabindex="0" class="fd-tree__item-container">
-                                <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE27L28" aria-haspopup="true"  aria-label="Expand level 28"></span>
+                                <button class="fd-tree__expander is-expanded" aria-controls="TREE27L28" aria-haspopup="true" aria-label="Expand level 28" aria-expanded="true"></button>
                                 <div class="fd-tree__content">
                                     <span class="fd-tree__text">Level 27</span>
                                 </div>
                             </div>
-                            <ul role="tree" class="fd-tree level-28" id="TREE27L28" aria-hidden="false">
+                            <ul role="group" class="fd-tree level-28" id="TREE27L28" aria-hidden="false">
                                 <li role="treeitem" aria-level="28" class="fd-tree__item">
                                     <div tabindex="0" class="fd-tree__item-container">
-                                        <span role="presentation" class="fd-tree__expander" aria-label="Expander"></span>
+                                        <button class="fd-tree__expander" aria-label="Expander"></button>
                                         <div class="fd-tree__content">
                                             <span class="fd-tree__text">Level 28</span>
                                         </div>
@@ -1127,7 +1127,7 @@ export const treeWithExpandedLevel27 = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" id="TREE27CL1" class="fd-tree fd-tree--compact level-1 expanded-level-27">
+<ul role="tree" aria-label="root-tree" id="TREE27CL1" class="fd-tree fd-tree--compact level-1 expanded-level-27">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -1135,34 +1135,34 @@ export const treeWithExpandedLevel27 = () => `
             </div>
         </div>    
     </li>
-    <ul role="tree" id="TREE27CL25" class="fd-tree fd-tree--compact level-25">
+    <ul role="group" id="TREE27CL25" class="fd-tree fd-tree--compact level-25">
         <li role="treeitem" aria-level="25" aria-expanded="true" class="fd-tree__item">
             <div tabindex="0" class="fd-tree__item-container">
-                <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE27CL26" aria-haspopup="true"  aria-label="Expand level 26"></span>
+                <button class="fd-tree__expander is-expanded" aria-controls="TREE27CL26" aria-haspopup="true" aria-label="Expand level 26" aria-expanded="true"></button>
                 <div class="fd-tree__content">
                     <span class="fd-tree__text">Level 25</span>
                 </div>
             </div>
-            <ul role="tree" class="fd-tree fd-tree--compact level-26" id="TREE27CL26" aria-hidden="false">
+            <ul role="group" class="fd-tree fd-tree--compact level-26" id="TREE27CL26" aria-hidden="false">
                 <li role="treeitem" aria-level="26" aria-expanded="true" class="fd-tree__item">
                     <div tabindex="0" class="fd-tree__item-container">
-                        <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE27CL27" aria-haspopup="true"  aria-label="Expand level 27"></span>
+                        <button class="fd-tree__expander is-expanded" aria-controls="TREE27CL27" aria-haspopup="true" aria-label="Expand level 27" aria-expanded="true"></button>
                         <div class="fd-tree__content">
                             <span class="fd-tree__text">Level 26</span>
                         </div>
                     </div>
-                    <ul role="tree" class="fd-tree fd-tree--compact level-27" id="TREE27CL27" aria-hidden="false">
+                    <ul role="group" class="fd-tree fd-tree--compact level-27" id="TREE27CL27" aria-hidden="false">
                         <li role="treeitem" aria-level="27" aria-expanded="true" class="fd-tree__item">
                             <div tabindex="0" class="fd-tree__item-container">
-                                <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE27CL28" aria-haspopup="true"  aria-label="Expand level 28"></span>
+                                <button class="fd-tree__expander is-expanded" aria-controls="TREE27CL28" aria-haspopup="true" aria-label="Expand level 28" aria-expanded="true"></button>
                                 <div class="fd-tree__content">
                                     <span class="fd-tree__text">Level 27</span>
                                 </div>
                             </div>
-                            <ul role="tree" class="fd-tree fd-tree--compact level-28" id="TREE27CL28" aria-hidden="false">
+                            <ul role="group" class="fd-tree fd-tree--compact level-28" id="TREE27CL28" aria-hidden="false">
                                 <li role="treeitem" aria-level="28" class="fd-tree__item">
                                     <div tabindex="0" class="fd-tree__item-container">
-                                        <span role="presentation" class="fd-tree__expander" aria-label="Expander"></span>
+                                        <button class="fd-tree__expander" aria-label="Expander"></button>
                                         <div class="fd-tree__content">
                                             <span class="fd-tree__text">Level 28</span>
                                         </div>
@@ -1222,7 +1222,7 @@ treeWithExpandedLevel27.parameters = {
 
 
 export const treeWithExpandedLevel30 = () => `
-<ul role="tree" id="TREE30L1" class="fd-tree level-1 expanded-level-30">
+<ul role="tree" aria-label="root-tree" id="TREE30L1" class="fd-tree level-1 expanded-level-30">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -1230,58 +1230,58 @@ export const treeWithExpandedLevel30 = () => `
             </div>
         </div>    
     </li>
-    <ul role="tree" id="TREE30L25" class="fd-tree level-25">
+    <ul role="group" id="TREE30L25" class="fd-tree level-25">
         <li role="treeitem" aria-level="25" aria-expanded="true" class="fd-tree__item">
             <div tabindex="0" class="fd-tree__item-container">
-                <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE30L26" aria-haspopup="true"  aria-label="Expand level 26"></span>
+                <button class="fd-tree__expander is-expanded" aria-controls="TREE30L26" aria-haspopup="true" aria-label="Expand level 26" aria-expanded="true"></button>
                 <div class="fd-tree__content">
                     <span class="fd-tree__text">Level 25</span>
                 </div>
             </div>
-            <ul role="tree" class="fd-tree level-26" id="TREE30L26" aria-hidden="false">
+            <ul role="group" class="fd-tree level-26" id="TREE30L26" aria-hidden="false">
                 <li role="treeitem" aria-level="26" aria-expanded="true" class="fd-tree__item">
                     <div tabindex="0" class="fd-tree__item-container">
-                        <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE30L27" aria-haspopup="true"  aria-label="Expand level 27"></span>
+                        <button class="fd-tree__expander is-expanded" aria-controls="TREE30L27" aria-haspopup="true" aria-label="Expand level 27" aria-expanded="true"></button>
                         <div class="fd-tree__content">
                             <span class="fd-tree__text">Level 26</span>
                         </div>
                     </div>
-                    <ul role="tree" class="fd-tree level-27" id="TREE30L27" aria-hidden="false">
+                    <ul role="group" class="fd-tree level-27" id="TREE30L27" aria-hidden="false">
                         <li role="treeitem" aria-level="27" aria-expanded="true" class="fd-tree__item">
                             <div tabindex="0" class="fd-tree__item-container">
-                                <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE30L28" aria-haspopup="true"  aria-label="Expand level 28"></span>
+                                <button class="fd-tree__expander is-expanded" aria-controls="TREE30L28" aria-haspopup="true" aria-label="Expand level 28" aria-expanded="true"></button>
                                 <div class="fd-tree__content">
                                     <span class="fd-tree__text">Level 27</span>
                                 </div>
                             </div>
-                            <ul role="tree" class="fd-tree level-28" id="TREE30L28" aria-hidden="false">
+                            <ul role="group" class="fd-tree level-28" id="TREE30L28" aria-hidden="false">
                                 <li role="treeitem" aria-level="28" aria-expanded="true" class="fd-tree__item">
                                     <div tabindex="0" class="fd-tree__item-container">
-                                        <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE30L29" aria-haspopup="true"  aria-label="Expand level 29"></span>
+                                        <button class="fd-tree__expander is-expanded" aria-controls="TREE30L29" aria-haspopup="true" aria-label="Expand level 29" aria-expanded="true"></button>
                                         <div class="fd-tree__content">
                                             <span class="fd-tree__text">Level 28</span>
                                         </div>
                                     </div>
-                                    <ul role="tree" class="fd-tree level-29" id="TREE30L29" aria-hidden="false">
+                                    <ul role="group" class="fd-tree level-29" id="TREE30L29" aria-hidden="false">
                                         <li role="treeitem" aria-level="29" aria-expanded="true" class="fd-tree__item">
                                             <div tabindex="0" class="fd-tree__item-container">
-                                                <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE30L30" aria-haspopup="true"  aria-label="Expand level 30"></span>
+                                                <button class="fd-tree__expander is-expanded" aria-controls="TREE30L30" aria-haspopup="true" aria-label="Expand level 30" aria-expanded="true"></button>
                                                 <div class="fd-tree__content">
                                                     <span class="fd-tree__text">Level 29</span>
                                                 </div>
                                             </div>
-                                            <ul role="tree" class="fd-tree level-30" id="TREE30L30" aria-hidden="false">
+                                            <ul role="group" class="fd-tree level-30" id="TREE30L30" aria-hidden="false">
                                                 <li role="treeitem" aria-level="30" aria-expanded="true" class="fd-tree__item">
                                                     <div tabindex="0" class="fd-tree__item-container">
-                                                        <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE30L31" aria-haspopup="true"  aria-label="Expand level 31"></span>
+                                                        <button class="fd-tree__expander is-expanded" aria-controls="TREE30L31" aria-haspopup="true" aria-label="Expand level 31" aria-expanded="true"></button>
                                                         <div class="fd-tree__content">
                                                             <span class="fd-tree__text">Level 30</span>
                                                         </div>
                                                     </div>
-                                                    <ul role="tree" class="fd-tree level-31" id="TREE30L31" aria-hidden="false">
+                                                    <ul role="group" class="fd-tree level-31" id="TREE30L31" aria-hidden="false">
                                                         <li role="treeitem" aria-level="31" class="fd-tree__item">
                                                             <div tabindex="0" class="fd-tree__item-container">
-                                                                <span role="presentation" class="fd-tree__expander" aria-label="Expander"></span>
+                                                                <button class="fd-tree__expander" aria-label="Expander" aria-expanded="true"></button>
                                                                 <div class="fd-tree__content">
                                                                     <span class="fd-tree__text">Level 31</span>
                                                                 </div>
@@ -1361,7 +1361,7 @@ export const treeWithExpandedLevel30 = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" id="TREE30CL1" class="fd-tree fd-tree--compact level-1 expanded-level-30">
+<ul role="tree" aria-label="root-tree" id="TREE30CL1" class="fd-tree fd-tree--compact level-1 expanded-level-30">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -1369,58 +1369,58 @@ export const treeWithExpandedLevel30 = () => `
             </div>
         </div>    
     </li>
-    <ul role="tree" id="TREE30CL25" class="fd-tree fd-tree--compact level-25">
+    <ul role="group" id="TREE30CL25" class="fd-tree fd-tree--compact level-25">
         <li role="treeitem" aria-level="25" aria-expanded="true" class="fd-tree__item">
             <div tabindex="0" class="fd-tree__item-container">
-                <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE30CL26" aria-haspopup="true"  aria-label="Expand level 26"></span>
+                <button class="fd-tree__expander is-expanded" aria-controls="TREE30CL26" aria-haspopup="true" aria-label="Expand level 26" aria-expanded="true"></button>
                 <div class="fd-tree__content">
                     <span class="fd-tree__text">Level 25</span>
                 </div>
             </div>
-            <ul role="tree" class="fd-tree fd-tree--compact level-26" id="TREE30CL26" aria-hidden="false">
+            <ul role="group" class="fd-tree fd-tree--compact level-26" id="TREE30CL26" aria-hidden="false">
                 <li role="treeitem" aria-level="26" aria-expanded="true" class="fd-tree__item">
                     <div tabindex="0" class="fd-tree__item-container">
-                        <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE30CL27" aria-haspopup="true"  aria-label="Expand level 27"></span>
+                        <button class="fd-tree__expander is-expanded" aria-controls="TREE30CL27" aria-haspopup="true" aria-label="Expand level 27" aria-expanded="true"></button>
                         <div class="fd-tree__content">
                             <span class="fd-tree__text">Level 26</span>
                         </div>
                     </div>
-                    <ul role="tree" class="fd-tree fd-tree--compact level-27" id="TREE30CL27" aria-hidden="false">
+                    <ul role="group" class="fd-tree fd-tree--compact level-27" id="TREE30CL27" aria-hidden="false">
                         <li role="treeitem" aria-level="27" aria-expanded="true" class="fd-tree__item">
                             <div tabindex="0" class="fd-tree__item-container">
-                                <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE30CL28" aria-haspopup="true"  aria-label="Expand level 28"></span>
+                                <button class="fd-tree__expander is-expanded" aria-controls="TREE30CL28" aria-haspopup="true" aria-label="Expand level 28" aria-expanded="true"></button>
                                 <div class="fd-tree__content">
                                     <span class="fd-tree__text">Level 27</span>
                                 </div>
                             </div>
-                            <ul role="tree" class="fd-tree fd-tree--compact level-28" id="TREE30CL28" aria-hidden="false">
+                            <ul role="group" class="fd-tree fd-tree--compact level-28" id="TREE30CL28" aria-hidden="false">
                                 <li role="treeitem" aria-level="28" aria-expanded="true" class="fd-tree__item">
                                     <div tabindex="0" class="fd-tree__item-container">
-                                        <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE30CL29" aria-haspopup="true"  aria-label="Expand level 29"></span>
+                                        <button class="fd-tree__expander is-expanded" aria-controls="TREE30CL29" aria-haspopup="true" aria-label="Expand level 29" aria-expanded="true"></button>
                                         <div class="fd-tree__content">
                                             <span class="fd-tree__text">Level 28</span>
                                         </div>
                                     </div>
-                                    <ul role="tree" class="fd-tree fd-tree--compact level-29" id="TREE30CL29" aria-hidden="false">
+                                    <ul role="group" class="fd-tree fd-tree--compact level-29" id="TREE30CL29" aria-hidden="false">
                                         <li role="treeitem" aria-level="29" aria-expanded="true" class="fd-tree__item">
                                             <div tabindex="0" class="fd-tree__item-container">
-                                                <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE30CL30" aria-haspopup="true"  aria-label="Expand level 30"></span>
+                                                <button class="fd-tree__expander is-expanded" aria-controls="TREE30CL30" aria-haspopup="true" aria-label="Expand level 30"></button>
                                                 <div class="fd-tree__content">
                                                     <span class="fd-tree__text">Level 29</span>
                                                 </div>
                                             </div>
-                                            <ul role="tree" class="fd-tree fd-tree--compact level-30" id="TREE30CL30" aria-hidden="false">
+                                            <ul role="group" class="fd-tree fd-tree--compact level-30" id="TREE30CL30" aria-hidden="false">
                                                 <li role="treeitem" aria-level="30" aria-expanded="true" class="fd-tree__item">
                                                     <div tabindex="0" class="fd-tree__item-container">
-                                                        <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE30CL31" aria-haspopup="true"  aria-label="Expand level 31"></span>
+                                                        <button class="fd-tree__expander is-expanded" aria-controls="TREE30CL31" aria-haspopup="true" aria-label="Expand level 31" aria-expanded="true"></button>
                                                         <div class="fd-tree__content">
                                                             <span class="fd-tree__text">Level 30</span>
                                                         </div>
                                                     </div>
-                                                    <ul role="tree" class="fd-tree fd-tree--compact level-31" id="TREE30CL31" aria-hidden="false">
+                                                    <ul role="group" class="fd-tree fd-tree--compact level-31" id="TREE30CL31" aria-hidden="false">
                                                         <li role="treeitem" aria-level="31" class="fd-tree__item">
                                                             <div tabindex="0" class="fd-tree__item-container">
-                                                                <span role="presentation" class="fd-tree__expander" aria-label="Expander"></span>
+                                                                <button class="fd-tree__expander" aria-label="Expander"></button>
                                                                 <div class="fd-tree__content">
                                                                     <span class="fd-tree__text">Level 31</span>
                                                                 </div>
@@ -1507,26 +1507,26 @@ treeWithExpandedLevel30.parameters = {
 
 
 export const treeWithIndependentSelection = () => `
-<ul role="tree" id="TREE1ISL1" class="fd-tree fd-tree--hoverable fd-tree--independent-selection level-1 expanded-level-1">
+<ul role="tree" aria-label="root-tree" id="TREE1ISL1" class="fd-tree fd-tree--hoverable fd-tree--independent-selection level-1 expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <div class="fd-form-item fd-tree__form-item">
                 <input aria-label="checkbox-label" type="checkbox" class="fd-checkbox" id="Ai4ez2">
                 <label tabindex="-1" class="fd-checkbox__label fd-tree__checkbox-label" for="Ai4ez2"></label>
             </div>
-            <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE1ISL2" aria-haspopup="true"  aria-label="Expand level 2"></span>
+            <button class="fd-tree__expander is-expanded" aria-controls="TREE1ISL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
             </div>
         </div>
-        <ul role="tree" class="fd-tree fd-tree--independent-selection level-2" id="TREE1ISL2" aria-hidden="false">
+        <ul role="group" class="fd-tree fd-tree--independent-selection level-2" id="TREE1ISL2" aria-hidden="false">
             <li role="treeitem" aria-level="2" class="fd-tree__item">
                 <div tabindex="0" class="fd-tree__item-container">
                     <div class="fd-form-item fd-tree__form-item">
                         <input aria-label="checkbox-label" type="checkbox" class="fd-checkbox" id="Ai4ez3">
                         <label tabindex="-1" class="fd-checkbox__label fd-tree__checkbox-label" for="Ai4ez3"></label>
                     </div>
-                    <span role="presentation" class="fd-tree__expander" aria-label="Expander"></span>
+                    <button class="fd-tree__expander" aria-label="Expander"></button>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
                     </div>
@@ -1584,55 +1584,55 @@ export const treeWithIndependentSelection = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" id="TREE1ISCL1" class="fd-tree fd-tree--compact fd-tree--hoverable fd-tree--independent-selection level-1 expanded-level-4">
+<ul role="tree" aria-label="root-tree" id="TREE1ISCL1" class="fd-tree fd-tree--compact fd-tree--hoverable fd-tree--independent-selection level-1 expanded-level-4">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <div class="fd-form-item fd-tree__form-item">
                 <input aria-label="checkbox-label" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="CAi4ez2">
                 <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label" for="CAi4ez2"></label>
             </div>
-            <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE1ISCL2" aria-haspopup="true"  aria-label="Expand level 2"></span>
+            <button class="fd-tree__expander is-expanded" aria-controls="TREE1ISCL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
             </div>
         </div>
-        <ul role="tree" class="fd-tree fd-tree--compact fd-tree--independent-selection level-2" id="TREE1ISCL2" aria-hidden="false">
+        <ul role="group" class="fd-tree fd-tree--compact fd-tree--independent-selection level-2" id="TREE1ISCL2" aria-hidden="false">
             <li role="treeitem" aria-level="2" aria-expanded="true" class="fd-tree__item">
                 <div tabindex="0" class="fd-tree__item-container">
                     <div class="fd-form-item fd-tree__form-item">
                         <input aria-label="checkbox-label" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="CAi4ez3">
                         <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label" for="CAi4ez3"></label>
                     </div>
-                    <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE1ISCL3" aria-haspopup="true"  aria-label="Expand level 3"></span>
+                    <button class="fd-tree__expander is-expanded" aria-controls="TREE1ISCL3" aria-haspopup="true" aria-label="Expand level 3" aria-expanded="true"></button>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
                     </div>
                 </div>
-                <ul role="tree" class="fd-tree fd-tree--compact fd-tree--independent-selection level-3" id="TREE1ISCL3" aria-hidden="false">
+                <ul role="group" class="fd-tree fd-tree--compact fd-tree--independent-selection level-3" id="TREE1ISCL3" aria-hidden="false">
                     <li role="treeitem" aria-level="3" aria-expanded="true" class="fd-tree__item">
                         <div tabindex="0" class="fd-tree__item-container">
                             <div class="fd-form-item fd-tree__form-item">
                                 <input aria-label="checkbox-label" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="CAi4ez3AA">
                                 <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label" for="CAi4ez3AA"></label>
                             </div>
-                            <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE1ISCL4" aria-haspopup="true"  aria-label="Expand level 4"></span>
+                            <button class="fd-tree__expander is-expanded" aria-controls="TREE1ISCL4" aria-haspopup="true" aria-label="Expand level 4" aria-expanded="true"></button>
                             <div class="fd-tree__content">
                                 <span class="fd-tree__text">Level 3</span>
                             </div>
                         </div>
-                        <ul role="tree" class="fd-tree fd-tree--compact fd-tree--independent-selection level-4" id="TREE1ISCL4" aria-hidden="false">
+                        <ul role="group" class="fd-tree fd-tree--compact fd-tree--independent-selection level-4" id="TREE1ISCL4" aria-hidden="false">
                             <li role="treeitem" aria-level="4" aria-expanded="true" class="fd-tree__item">
                                 <div tabindex="0" class="fd-tree__item-container">
                                     <div class="fd-form-item fd-tree__form-item">
                                         <input aria-label="checkbox-label" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="CAi4ez3CC">
                                         <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label" for="CAi4ez3CC"></label>
                                     </div>
-                                    <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE1ISCL5" aria-haspopup="true"  aria-label="Expand level 5"></span>
+                                    <button class="fd-tree__expander is-expanded" aria-controls="TREE1ISCL5" aria-haspopup="true" aria-label="Expand level 5" aria-expanded="true"></button>
                                     <div class="fd-tree__content">
                                         <span class="fd-tree__text">Level 4</span>
                                     </div>
                                 </div>
-                                <ul role="tree" class="fd-tree fd-tree--compact fd-tree--independent-selection level-5" id="TREE1ISCL5" aria-hidden="false">
+                                <ul role="group" class="fd-tree fd-tree--compact fd-tree--independent-selection level-5" id="TREE1ISCL5" aria-hidden="false">
                                     <li role="treeitem" aria-level="5" class="fd-tree__item">
                                         <div tabindex="0" class="fd-tree__item-container">
                                             <div class="fd-form-item fd-tree__form-item">
@@ -1741,10 +1741,10 @@ treeWithIndependentSelection.parameters = {
 };
 
 export const treeWithDependentSelection = () => `
-<ul role="tree" id="TREE1DSL1" class="fd-tree fd-tree--dependent-selection fd-tree--hoverable level-1 expanded-level-1">
+<ul role="tree" aria-label="root-tree" id="TREE1DSL1" class="fd-tree fd-tree--dependent-selection fd-tree--hoverable level-1 expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
-            <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE1DSL2" aria-haspopup="true"  aria-label="Expand level 2"></span>
+            <button class="fd-tree__expander is-expanded" aria-controls="TREE1DSL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
             <div class="fd-form-item fd-tree__form-item">
                 <input aria-label="checkbox-label" type="checkbox" class="fd-checkbox" id="Ai4ez8">
                 <label tabindex="-1" class="fd-checkbox__label fd-tree__checkbox-label" for="Ai4ez8"></label>
@@ -1753,10 +1753,10 @@ export const treeWithDependentSelection = () => `
                 <span class="fd-tree__text">Level 1</span>
             </div>
         </div>
-        <ul role="tree" class="fd-tree fd-tree--dependent-selection level-2" id="TREE1DSL2" aria-hidden="false">
+        <ul role="group" class="fd-tree fd-tree--dependent-selection level-2" id="TREE1DSL2" aria-hidden="false">
             <li role="treeitem" aria-level="2" class="fd-tree__item">
                 <div tabindex="0" class="fd-tree__item-container">
-                    <span role="presentation" class="fd-tree__expander" aria-label="Expander"></span>
+                    <button class="fd-tree__expander" aria-label="Expander" aria-expanded="true"></button>
                     <div class="fd-form-item fd-tree__form-item">
                         <input aria-label="checkbox-label" type="checkbox" class="fd-checkbox" id="Ai4ez9">
                         <label tabindex="-1" class="fd-checkbox__label fd-tree__checkbox-label" for="Ai4ez9"></label>
@@ -1818,10 +1818,10 @@ export const treeWithDependentSelection = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" id="TREE1DCSL1" class="fd-tree fd-tree--compact fd-tree--dependent-selection level-1 expanded-level-2">
+<ul role="tree" aria-label="root-tree" id="TREE1DCSL1" class="fd-tree fd-tree--compact fd-tree--dependent-selection level-1 expanded-level-2">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
-            <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE1DCSL2" aria-haspopup="true"  aria-label="Expand level 2"></span>
+            <button class="fd-tree__expander is-expanded" aria-controls="TREE1DCSL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
             <div class="fd-form-item fd-tree__form-item">
                 <input aria-label="checkbox-label" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="CAi4ez8">
                 <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="CAi4ez8"></label>
@@ -1830,10 +1830,10 @@ export const treeWithDependentSelection = () => `
                 <span class="fd-tree__text">Level 1</span>
             </div>
         </div>
-        <ul role="tree" class="fd-tree fd-tree--compact fd-tree--dependent-selection level-2" id="TREE1DCSL2" aria-hidden="false">
+        <ul role="group" class="fd-tree fd-tree--compact fd-tree--dependent-selection level-2" id="TREE1DCSL2" aria-hidden="false">
             <li role="treeitem" aria-level="2" aria-expanded="true" class="fd-tree__item">
                 <div tabindex="0" class="fd-tree__item-container">
-                    <span role="presentation" class="fd-tree__expander is-expanded" aria-controls="TREE1DCSL3" aria-haspopup="true"  aria-label="Expand level 3"></span>
+                    <button class="fd-tree__expander is-expanded" aria-controls="TREE1DCSL3" aria-haspopup="true" aria-label="Expand level 3" aria-expanded="true"></button>
                     <div class="fd-form-item fd-tree__form-item">
                         <input aria-label="checkbox-label" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="CAi4ez9">
                         <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="CAi4ez9"></label>
@@ -1842,7 +1842,7 @@ export const treeWithDependentSelection = () => `
                         <span class="fd-tree__text">Level 2</span>
                     </div>
                 </div>
-                <ul role="tree" class="fd-tree fd-tree--compact fd-tree--dependent-selection level-3" id="TREE1DCSL3" aria-hidden="false">
+                <ul role="group" class="fd-tree fd-tree--compact fd-tree--dependent-selection level-3" id="TREE1DCSL3" aria-hidden="false">
                     <li role="treeitem" aria-level="3" class="fd-tree__item">
                         <div tabindex="0" class="fd-tree__item-container">
                             <div class="fd-form-item fd-tree__form-item">

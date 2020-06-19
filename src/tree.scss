@@ -120,6 +120,10 @@ $fd-tree-checkbox-margin-right-compact: 0.5rem !default;
     }
 
     & > .#{$block}__item-container.#{$block}__item-container--growing {
+      .#{$block}__text {
+        color: var(--sapButton_TextColor);
+      }
+
       .#{$block}__content:only-child {
         margin: 0;
 
@@ -137,7 +141,7 @@ $fd-tree-checkbox-margin-right-compact: 0.5rem !default;
       }
 
       @include fd-hover() {
-        @include set-state($background: var(--sapList_Hover_Background), $border: var(--sapList_BorderColor));
+        @include set-state($background: var(--sapList_Hover_Background), $border: var(--sapList_BorderColor), $text: var(--sapButton_TextColor));
 
         @include fd-active() {
           @include set-state($background: var(--sapList_Active_Background), $text: var(--sapList_Active_TextColor));
@@ -250,8 +254,10 @@ $fd-tree-checkbox-margin-right-compact: 0.5rem !default;
       justify-content: center;
       padding-right: $fd-tree-growing-content-padding;
       padding-left: $fd-tree-growing-content-padding;
-      font-size: var(--sapFontSize);
-      color: var(--sapButton_TextColor);
+
+      .#{$block}__text {
+        color: var(--sapButton_TextColor);
+      }
 
       @include fd-rtl() {
         padding-right: $fd-tree-growing-content-padding;
@@ -271,6 +277,10 @@ $fd-tree-checkbox-margin-right-compact: 0.5rem !default;
       font-size: var(--sapFontLargeSize);
     }
 
+    @include fd-focus() {
+      outline: none;
+    }
+
     @include fd-rtl() {
       &::after {
         content: "\e067";
@@ -280,6 +290,7 @@ $fd-tree-checkbox-margin-right-compact: 0.5rem !default;
     min-width: $fd-tree-expander-width;
     width: $fd-tree-expander-width;
     height: $fd-tree-expander-height;
+    background-color: transparent;
 
     &.is-expanded,
     &[aria-expanded="true"] {
