@@ -51,7 +51,7 @@ For selected state apply the `is-selected` class to the `fd-tree__item-container
 When Level 1 is expanded to show Level 2, Level 2 is idented by 1.5rem. <br>
 Only Level 1 tree (ul element) needs to have the `expanded-level-*` modifier class in order to keep track of which level is currently expanded.
 {% capture tree %}
-<ul role="tree" aria-label="root-tree" id="TREE1L1" class="fd-tree level-1 expanded-level-1">
+<ul role="tree" aria-label="Root Tree" id="TREE1L1" class="fd-tree level-1 expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE1L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
@@ -114,7 +114,7 @@ Only Level 1 tree (ul element) needs to have the `expanded-level-*` modifier cla
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE1CL1" class="fd-tree fd-tree--compact level-1 expanded-level-1">
+<ul role="tree" aria-label="Root Tree" id="TREE1CL1" class="fd-tree fd-tree--compact level-1 expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE1CL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
@@ -171,7 +171,7 @@ Only Level 1 tree (ul element) needs to have the `expanded-level-*` modifier cla
 When Level 2 is expanded to show Level 3, Level 2 changes to be indented by 1rem, Level 3 is indented by 2.5rem. <br>
 For hoverable tree items add the `fd-tree--hoverable` modifier class to the first tree level (ul element). 
 {% capture tree2 %}
-<ul role="tree" aria-label="root-tree" id="TREE2L1" class="fd-tree fd-tree--hoverable level-1 expanded-level-2">
+<ul role="tree" aria-label="Root Tree" id="TREE2L1" class="fd-tree fd-tree--hoverable level-1 expanded-level-2">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE2L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
@@ -234,7 +234,7 @@ For hoverable tree items add the `fd-tree--hoverable` modifier class to the firs
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE2CL1" class="fd-tree fd-tree--hoverable fd-tree--compact level-1 expanded-level-2">
+<ul role="tree" aria-label="Root Tree" id="TREE2CL1" class="fd-tree fd-tree--hoverable fd-tree--compact level-1 expanded-level-2">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE2CL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
@@ -309,7 +309,7 @@ This indentation repeats when level 4 and 5 are triggered.
 - Level 6 is indented by 2.5rem 
 
 {% capture tree3 %}
-<ul role="tree" aria-label="root-tree" id="TREE3L1" class="fd-tree level-1 expanded-level-3">
+<ul role="tree" aria-label="Root Tree" id="TREE3L1" class="fd-tree level-1 expanded-level-3">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE3L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
@@ -389,7 +389,7 @@ This indentation repeats when level 4 and 5 are triggered.
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE3CL1" class="fd-tree fd-tree--compact level-1 expanded-level-3">
+<ul role="tree" aria-label="Root Tree" id="TREE3CL1" class="fd-tree fd-tree--compact level-1 expanded-level-3">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE3CL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
@@ -483,7 +483,7 @@ Indentations are calculated with 0.25rem
 0.25rem is added to each indentation up to level 24
 
 {% capture tree24 %}
-<ul role="tree" aria-label="root-tree" id="TREE6L1" class="fd-tree level-1 expanded-level-6">
+<ul role="tree" aria-label="Root Tree" id="TREE6L1" class="fd-tree level-1 expanded-level-6">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE6L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
@@ -614,7 +614,7 @@ Indentations are calculated with 0.25rem
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE6CL1" class="fd-tree fd-tree--compact level-1 expanded-level-6">
+<ul role="tree" aria-label="Root Tree" id="TREE6CL1" class="fd-tree fd-tree--compact level-1 expanded-level-6">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE6CL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
@@ -754,7 +754,7 @@ Level 25 Starts back at the Level 1 position
 and the indentation rules are repeated.
 
 {% capture tree25 %}
-<ul role="tree" aria-label="root-tree" id="TREE25L1" class="fd-tree level-1 expanded-level-25">
+<ul role="tree" aria-label="Root Tree" id="TREE25L1" class="fd-tree level-1 expanded-level-25">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -808,7 +808,7 @@ and the indentation rules are repeated.
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE25CL1" class="fd-tree fd-tree--compact level-1 expanded-level-25">
+<ul role="tree" aria-label="Root Tree" id="TREE25CL1" class="fd-tree fd-tree--compact level-1 expanded-level-25">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -866,7 +866,7 @@ and the indentation rules are repeated.
 ## Tree with Expanded Level 26
 Same indentation rules as Tree with Expanded Level 2
 {% capture tree26 %}
-<ul role="tree" aria-label="root-tree" id="TREE26L1" class="fd-tree level-1 expanded-level-26">
+<ul role="tree" aria-label="Root Tree" id="TREE26L1" class="fd-tree level-1 expanded-level-26">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -937,7 +937,7 @@ Same indentation rules as Tree with Expanded Level 2
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE26CL1" class="fd-tree fd-tree--compact level-1 expanded-level-26">
+<ul role="tree" aria-label="Root Tree" id="TREE26CL1" class="fd-tree fd-tree--compact level-1 expanded-level-26">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -1013,7 +1013,7 @@ Same indentation rules as Tree with Expanded Level 2
 ## Tree with Expanded Level 27
 Same indentation rules as Tree with Expanded Level 3
 {% capture tree27 %}
-<ul role="tree" aria-label="root-tree" id="TREE27L1" class="fd-tree level-1 expanded-level-27">
+<ul role="tree" aria-label="Root Tree" id="TREE27L1" class="fd-tree level-1 expanded-level-27">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -1101,7 +1101,7 @@ Same indentation rules as Tree with Expanded Level 3
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE27CL1" class="fd-tree fd-tree--compact level-1 expanded-level-27">
+<ul role="tree" aria-label="Root Tree" id="TREE27CL1" class="fd-tree fd-tree--compact level-1 expanded-level-27">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -1193,7 +1193,7 @@ Same indentation rules as Tree with Expanded Level 3
 ## Tree with Expanded Level 30
 Same indentation rules as Tree with Expanded Level 6
 {% capture tree30 %}
-<ul role="tree" aria-label="root-tree" id="TREE30L1" class="fd-tree level-1 expanded-level-30">
+<ul role="tree" aria-label="Root Tree" id="TREE30L1" class="fd-tree level-1 expanded-level-30">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -1332,7 +1332,7 @@ Same indentation rules as Tree with Expanded Level 6
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE30CL1" class="fd-tree fd-tree--compact level-1 expanded-level-30">
+<ul role="tree" aria-label="Root Tree" id="TREE30CL1" class="fd-tree fd-tree--compact level-1 expanded-level-30">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -1476,7 +1476,7 @@ Same indentation rules as Tree with Expanded Level 6
 Apply the `fd-tree--independent-selection` modifier class to each `fd-tree` element.
 
 {% capture treeIndepSelection %}
-<ul role="tree" aria-label="root-tree" id="TREE1ISL1" class="fd-tree fd-tree--hoverable fd-tree--independent-selection level-1 expanded-level-1">
+<ul role="tree" aria-label="Root Tree" id="TREE1ISL1" class="fd-tree fd-tree--hoverable fd-tree--independent-selection level-1 expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <div class="fd-form-item fd-tree__form-item">
@@ -1553,7 +1553,7 @@ Apply the `fd-tree--independent-selection` modifier class to each `fd-tree` elem
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE1ISCL1" class="fd-tree fd-tree--compact fd-tree--hoverable fd-tree--independent-selection level-1 expanded-level-4">
+<ul role="tree" aria-label="Root Tree" id="TREE1ISCL1" class="fd-tree fd-tree--compact fd-tree--hoverable fd-tree--independent-selection level-1 expanded-level-4">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <div class="fd-form-item fd-tree__form-item">
@@ -1708,7 +1708,7 @@ Apply the `fd-tree--independent-selection` modifier class to each `fd-tree` elem
 Apply the `fd-tree--dependent-selection` modifier class to each `fd-tree` element.
 
 {% capture treeDepSelection %}
-<ul role="tree" aria-label="root-tree" id="TREE1DSL1" class="fd-tree fd-tree--dependent-selection fd-tree--hoverable level-1 expanded-level-1">
+<ul role="tree" aria-label="Root Tree" id="TREE1DSL1" class="fd-tree fd-tree--dependent-selection fd-tree--hoverable level-1 expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE1DSL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
@@ -1785,7 +1785,7 @@ Apply the `fd-tree--dependent-selection` modifier class to each `fd-tree` elemen
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE1DCSL1" class="fd-tree fd-tree--compact fd-tree--dependent-selection level-1 expanded-level-2">
+<ul role="tree" aria-label="Root Tree" id="TREE1DCSL1" class="fd-tree fd-tree--compact fd-tree--dependent-selection level-1 expanded-level-2">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE1DCSL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>

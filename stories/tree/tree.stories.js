@@ -53,7 +53,7 @@ For selected state apply the is-selected class to the <code class="docs-code">fd
 };
 
 export const treeWithExpandedLevel1 = () => `
-<ul role="tree" aria-label="root-tree" id="TREE1L1" class="fd-tree level-1 expanded-level-1">
+<ul role="tree" aria-label="Root Tree" id="TREE1L1" class="fd-tree level-1 expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE1L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
@@ -116,7 +116,7 @@ export const treeWithExpandedLevel1 = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE1CL1" class="fd-tree fd-tree--compact level-1 expanded-level-1">
+<ul role="tree" aria-label="Root Tree" id="TREE1CL1" class="fd-tree fd-tree--compact level-1 expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE1CL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
@@ -177,7 +177,7 @@ Only Level 1 tree (ul element) needs to have the <code class="docs-code">expande
 };
 
 export const treeWithExpandedLevel2AndHoverableTreeItems = () => `
-<ul role="tree" aria-label="root-tree" id="TREE2L1" class="fd-tree fd-tree--hoverable level-1 expanded-level-2">
+<ul role="tree" aria-label="Root Tree" id="TREE2L1" class="fd-tree fd-tree--hoverable level-1 expanded-level-2">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE2L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
@@ -240,7 +240,7 @@ export const treeWithExpandedLevel2AndHoverableTreeItems = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE2CL1" class="fd-tree fd-tree--hoverable fd-tree--compact level-1 expanded-level-2">
+<ul role="tree" aria-label="Root Tree" id="TREE2CL1" class="fd-tree fd-tree--hoverable fd-tree--compact level-1 expanded-level-2">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE2CL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
@@ -313,7 +313,7 @@ For hoverable tree items add the <code class="docs-code">fd-tree--hoverable</cod
 
 
 export const treeWithExpandedLevel3 = () => `
-<ul role="tree" aria-label="root-tree" id="TREE3L1" class="fd-tree level-1 expanded-level-3">
+<ul role="tree" aria-label="Root Tree" id="TREE3L1" class="fd-tree level-1 expanded-level-3">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE3L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
@@ -393,7 +393,7 @@ export const treeWithExpandedLevel3 = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE3CL1" class="fd-tree fd-tree--compact level-1 expanded-level-3">
+<ul role="tree" aria-label="Root Tree" id="TREE3CL1" class="fd-tree fd-tree--compact level-1 expanded-level-3">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE3CL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
@@ -491,7 +491,7 @@ This indentation repeats when level 4 and 5 are triggered.
 };
 
 export const treeWithExpandedLevel6 = () => `
-<ul role="tree" aria-label="root-tree" id="TREE6L1" class="fd-tree level-1 expanded-level-6">
+<ul role="tree" aria-label="Root Tree" id="TREE6L1" class="fd-tree level-1 expanded-level-6">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE6L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
@@ -622,7 +622,7 @@ export const treeWithExpandedLevel6 = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE6CL1" class="fd-tree fd-tree--compact level-1 expanded-level-6">
+<ul role="tree" aria-label="Root Tree" id="TREE6CL1" class="fd-tree fd-tree--compact level-1 expanded-level-6">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE6CL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
@@ -771,7 +771,7 @@ Indentations are calculated with 0.25rem
 
 
 export const treeWithExpandedLevel25 = () => `
-<ul role="tree" aria-label="root-tree" id="TREE25L1" class="fd-tree level-1 expanded-level-25">
+<ul role="tree" aria-label="Root Tree" id="TREE25L1" class="fd-tree level-1 expanded-level-25">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -825,7 +825,7 @@ export const treeWithExpandedLevel25 = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE25CL1" class="fd-tree fd-tree--compact level-1 expanded-level-25">
+<ul role="tree" aria-label="Root Tree" id="TREE25CL1" class="fd-tree fd-tree--compact level-1 expanded-level-25">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -890,7 +890,7 @@ Level 25 Starts back at the Level 1 position and the indentation rules are repea
 
 
 export const treeWithExpandedLevel26 = () => `
-<ul role="tree" aria-label="root-tree" id="TREE26L1" class="fd-tree level-1 expanded-level-26">
+<ul role="tree" aria-label="Root Tree" id="TREE26L1" class="fd-tree level-1 expanded-level-26">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -961,7 +961,7 @@ export const treeWithExpandedLevel26 = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE26CL1" class="fd-tree fd-tree--compact level-1 expanded-level-26">
+<ul role="tree" aria-label="Root Tree" id="TREE26CL1" class="fd-tree fd-tree--compact level-1 expanded-level-26">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -1039,7 +1039,7 @@ treeWithExpandedLevel26.parameters = {
 
 
 export const treeWithExpandedLevel27 = () => `
-<ul role="tree" aria-label="root-tree" id="TREE27L1" class="fd-tree level-1 expanded-level-27">
+<ul role="tree" aria-label="Root Tree" id="TREE27L1" class="fd-tree level-1 expanded-level-27">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -1127,7 +1127,7 @@ export const treeWithExpandedLevel27 = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE27CL1" class="fd-tree fd-tree--compact level-1 expanded-level-27">
+<ul role="tree" aria-label="Root Tree" id="TREE27CL1" class="fd-tree fd-tree--compact level-1 expanded-level-27">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -1222,7 +1222,7 @@ treeWithExpandedLevel27.parameters = {
 
 
 export const treeWithExpandedLevel30 = () => `
-<ul role="tree" aria-label="root-tree" id="TREE30L1" class="fd-tree level-1 expanded-level-30">
+<ul role="tree" aria-label="Root Tree" id="TREE30L1" class="fd-tree level-1 expanded-level-30">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -1361,7 +1361,7 @@ export const treeWithExpandedLevel30 = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE30CL1" class="fd-tree fd-tree--compact level-1 expanded-level-30">
+<ul role="tree" aria-label="Root Tree" id="TREE30CL1" class="fd-tree fd-tree--compact level-1 expanded-level-30">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" role="button" class="fd-tree__item-container fd-tree__item-container--growing">
             <div class="fd-tree__content">
@@ -1507,7 +1507,7 @@ treeWithExpandedLevel30.parameters = {
 
 
 export const treeWithIndependentSelection = () => `
-<ul role="tree" aria-label="root-tree" id="TREE1ISL1" class="fd-tree fd-tree--hoverable fd-tree--independent-selection level-1 expanded-level-1">
+<ul role="tree" aria-label="Root Tree" id="TREE1ISL1" class="fd-tree fd-tree--hoverable fd-tree--independent-selection level-1 expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <div class="fd-form-item fd-tree__form-item">
@@ -1584,7 +1584,7 @@ export const treeWithIndependentSelection = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE1ISCL1" class="fd-tree fd-tree--compact fd-tree--hoverable fd-tree--independent-selection level-1 expanded-level-4">
+<ul role="tree" aria-label="Root Tree" id="TREE1ISCL1" class="fd-tree fd-tree--compact fd-tree--hoverable fd-tree--independent-selection level-1 expanded-level-4">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <div class="fd-form-item fd-tree__form-item">
@@ -1741,7 +1741,7 @@ treeWithIndependentSelection.parameters = {
 };
 
 export const treeWithDependentSelection = () => `
-<ul role="tree" aria-label="root-tree" id="TREE1DSL1" class="fd-tree fd-tree--dependent-selection fd-tree--hoverable level-1 expanded-level-1">
+<ul role="tree" aria-label="Root Tree" id="TREE1DSL1" class="fd-tree fd-tree--dependent-selection fd-tree--hoverable level-1 expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE1DSL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
@@ -1818,7 +1818,7 @@ export const treeWithDependentSelection = () => `
 <h4>Compact</h4>
 <br>
 
-<ul role="tree" aria-label="root-tree" id="TREE1DCSL1" class="fd-tree fd-tree--compact fd-tree--dependent-selection level-1 expanded-level-2">
+<ul role="tree" aria-label="Root Tree" id="TREE1DCSL1" class="fd-tree fd-tree--compact fd-tree--dependent-selection level-1 expanded-level-2">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE1DCSL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
