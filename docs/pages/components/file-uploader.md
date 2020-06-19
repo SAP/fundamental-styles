@@ -25,7 +25,8 @@ Input element is readonly and populated with the selected file name.
 
 <div class="fd-form-item">
     <div class="fd-file-uploader">
-        <input class="fd-input fd-file-uploader__input" 
+        <input 
+        class="fd-input fd-file-uploader__input" 
         onclick="browseFile('input1');" 
         title="Select a file for uploading" 
         aria-label="Select a file for uploading" 
@@ -55,7 +56,8 @@ Input element is readonly and populated with the selected file name.
 <h3>RTL Support</h3>
 <div class="fd-form-item">
     <div class="fd-file-uploader" dir="rtl">
-        <input class="fd-input fd-file-uploader__input" 
+        <input 
+        class="fd-input fd-file-uploader__input" 
         onclick="browseFile('input1-rtl');" 
         title="Select a file for uploading" 
         aria-label="Select a file for uploading" 
@@ -89,7 +91,8 @@ Input element is readonly and populated with the selected file name.
 
 <div class="fd-form-item">
   <div class="fd-file-uploader">
-      <input class="fd-input fd-input--compact fd-file-uploader__input" 
+      <input 
+      class="fd-input fd-input--compact fd-file-uploader__input" 
       onclick="browseFile('input2');" 
       id="browse_input2" 
       type="text"
@@ -117,7 +120,8 @@ Input element is readonly and populated with the selected file name.
 <h3>RTL Support</h3>
   <div class="fd-form-item">
     <div class="fd-file-uploader" dir="rtl">
-      <input class="fd-input fd-input--compact fd-file-uploader__input" 
+      <input 
+      class="fd-input fd-input--compact fd-file-uploader__input" 
       onclick="browseFile('input2-rtl');" 
       id="browse_input2-rtl" 
       type="text" 
@@ -125,7 +129,8 @@ Input element is readonly and populated with the selected file name.
       title="Select a file for uploading"  
       placeholder="Choose a file for upload to localserver" 
       readonly>
-      <button class="fd-button fd-button--compact fd-file-uploader__button"  
+      <button 
+      class="fd-button fd-button--compact fd-file-uploader__button"  
       onclick="browseFile('input2-rtl');" 
       id="fileuplader-button2" 
       aria-label="Select a file for uploading">Browse...
