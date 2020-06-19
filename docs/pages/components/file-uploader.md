@@ -33,7 +33,8 @@ Input element is readonly and populated with the selected file name.
         id="browse_input1" 
         placeholder=" Choose a file for upload to localserver " 
         readonly>
-        <button class="fd-button" 
+        <button class="fd-button fd-file-uploader__button" 
+        width="40px"
         onclick="browseFile('input1');" 
         id="fileuploader-button1" 
         aria-label="Select a file for uploading" >
@@ -62,7 +63,7 @@ Input element is readonly and populated with the selected file name.
         id="browse_input1-rtl" 
         placeholder=" Choose a file for upload to localserver " 
         readonly>
-        <button class="fd-button" 
+        <button class="fd-button fd-file-uploader__button" 
         onclick="browseFile('input1-rtl');"  
         id="fileuploader-button1" 
         aria-label="Select a file for uploading" >
@@ -97,7 +98,7 @@ Input element is readonly and populated with the selected file name.
       placeholder="Choose a file for upload to localserver" 
       readonly>
       <button
-      class="fd-button fd-button--compact "  
+      class="fd-button fd-button--compact fd-file-uploader__button"  
       onclick="browseFile('input2');"
       id="fileuplader-button2" aria-label="Select a file for uploading">Browse...
       </button>
@@ -124,7 +125,7 @@ Input element is readonly and populated with the selected file name.
       title="Select a file for uploading"  
       placeholder="Choose a file for upload to localserver" 
       readonly>
-      <button class="fd-button fd-button--compact "  
+      <button class="fd-button fd-button--compact fd-file-uploader__button"  
       onclick="browseFile('input2-rtl');" 
       id="fileuplader-button2" 
       aria-label="Select a file for uploading">Browse...

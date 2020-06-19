@@ -28,6 +28,11 @@ $block: #{$fd-namespace}-file-uploader;
     }
   }
 
+  &__button.#{$fd-namespace}-button {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   &__hidden {
     display: none;
   }
