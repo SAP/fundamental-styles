@@ -22,6 +22,10 @@ $col-xl: 16;
 
   &--no-gap {
     margin: 0;
+
+    .fd-col {
+      padding: 0;
+    }
   }
 
   > *:last-child {
@@ -75,12 +79,8 @@ $col-xl: 16;
     }
   }
 
-  &--no-gap {
-    padding: 0;
-  }
-
   .#{$blockRow} {
-    margin: -0.25rem 0;
+    margin: 0 -0.25rem;
   }
 }
 
@@ -95,6 +95,10 @@ $col-xl: 16;
 
     &--no-gap {
       margin: 0;
+
+      .fd-col {
+        padding: 0;
+      }
     }
   }
 
@@ -116,10 +120,6 @@ $col-xl: 16;
         min-width: ( ( $n / $col-until-xl ) *100%);
         max-width: ( ( $n / $col-until-xl ) *100%);
       }
-    }
-
-    &--no-gap {
-      padding: 0;
     }
 
     .#{$blockRow} {
