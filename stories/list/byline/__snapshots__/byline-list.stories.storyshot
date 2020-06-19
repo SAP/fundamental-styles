@@ -15,16 +15,24 @@ exports[`Storyshots Components/List/Byline Navigation indicator 1`] = `
 
 `;
 
+exports[`Storyshots Components/List/Byline Rtl 1`] = `
+
+
+`;
+
 exports[`Storyshots Components/List/Byline Selection 1`] = `
 <section>
   
 
-  <h4>
+  <h4
+    id="O09lk9"
+  >
     Standard Size
   </h4>
   
 
   <ul
+    aria-labelledby="O09lk9"
     class="fd-list fd-list--selection fd-list--byline"
     role="listbox"
   >
@@ -32,7 +40,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
   
     <li
       class="fd-list__item is-selected"
-      role="listitem"
+      role="option"
       tabindex="0"
     >
       
@@ -43,6 +51,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
         
           
         <input
+          aria-labelledby="O09lk1"
           checked=""
           class="fd-checkbox"
           id="Ai4ez6111Z"
@@ -72,6 +81,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
         
         <span
           class="fd-list__title"
+          id="O09lk1"
         >
           Title
         </span>
@@ -92,7 +102,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
   
     <li
       class="fd-list__item"
-      role="listitem"
+      role="option"
       tabindex="0"
     >
       
@@ -103,6 +113,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
         
           
         <input
+          aria-labelledby="O09lk2"
           class="fd-checkbox"
           id="Ai4ez6112X"
           type="checkbox"
@@ -133,6 +144,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
         
         <div
           class="fd-list__title"
+          id="O09lk2"
         >
           List Item With Two-Column Byline
         </div>
@@ -168,7 +180,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
   
     <li
       class="fd-list__item"
-      role="listitem"
+      role="option"
       tabindex="0"
     >
       
@@ -179,6 +191,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
         
           
         <input
+          aria-labelledby="O09lk3"
           class="fd-checkbox"
           id="Ai4ez6113C"
           type="checkbox"
@@ -202,6 +215,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
         
         <div
           class="fd-list__title"
+          id="O09lk3"
         >
           Text-Only List Item
         </div>
@@ -224,12 +238,15 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
   
 
 
-  <h4>
+  <h4
+    id="O09lk8"
+  >
     Compact Size
   </h4>
   
 
   <ul
+    aria-labelledby="O09lk8"
     class="fd-list fd-list--compact fd-list--selection fd-list--byline"
     role="listbox"
   >
@@ -237,7 +254,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
   
     <li
       class="fd-list__item"
-      role="listitem"
+      role="option"
       tabindex="0"
     >
       
@@ -248,6 +265,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
         
           
         <input
+          aria-labelledby="O09lk4"
           class="fd-checkbox fd-checkbox--compact"
           id="Ai4ez6115V"
           type="checkbox"
@@ -276,6 +294,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
         
         <span
           class="fd-list__title"
+          id="O09lk4"
         >
           Title
         </span>
@@ -296,7 +315,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
   
     <li
       class="fd-list__item"
-      role="listitem"
+      role="option"
       tabindex="0"
     >
       
@@ -307,6 +326,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
         
           
         <input
+          aria-labelledby="O09lk5"
           class="fd-checkbox fd-checkbox--compact"
           id="Ai4ez6116B"
           type="checkbox"
@@ -337,6 +357,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
         
         <div
           class="fd-list__title"
+          id="O09lk5"
         >
           List Item With Two-Column Byline
         </div>
@@ -372,7 +393,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
   
     <li
       class="fd-list__item"
-      role="listitem"
+      role="option"
       tabindex="0"
     >
       
@@ -383,6 +404,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
         
           
         <input
+          aria-labelledby="O09lk6"
           class="fd-checkbox fd-checkbox--compact"
           id="Ai4ez6117N"
           type="checkbox"
@@ -406,6 +428,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
         
         <div
           class="fd-list__title"
+          id="O09lk6"
         >
           Text-Only List Item
         </div>
@@ -434,12 +457,15 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
 <section>
   
 
-  <h4>
+  <h4
+    id="Ki81L1"
+  >
     Standard Size
   </h4>
   
 
   <ul
+    aria-labelledby="Ki81L1"
     class="fd-list fd-list--selection fd-list--byline fd-list--navigation fd-list--navigation-indication"
     role="listbox"
   >
@@ -447,7 +473,7 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
   
     <li
       class="fd-list__item"
-      role="listitem"
+      role="option"
       tabindex="0"
     >
       
@@ -458,6 +484,7 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
         
         
         <input
+          aria-labelledby="Ki81L2"
           class="fd-checkbox"
           id="Ai4ez6118N"
           type="checkbox"
@@ -486,6 +513,7 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
     
         <span
           class="fd-list__title"
+          id="Ki81L2"
         >
           Title
         </span>
@@ -505,8 +533,9 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
     
   
     <li
+      aria-selected="true"
       class="fd-list__item fd-list__item--link is-selected"
-      role="listitem"
+      role="option"
       tabindex="-1"
     >
       
@@ -517,6 +546,7 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
         
         
         <input
+          aria-labelledby="Ki81L3"
           checked=""
           class="fd-checkbox"
           id="Ai4ez6119N"
@@ -555,6 +585,7 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
         
           <div
             class="fd-list__title"
+            id="Ki81L3"
           >
             List Item With Two-Column Byline
           </div>
@@ -593,7 +624,7 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
   
     <li
       class="fd-list__item fd-list__item--link"
-      role="listitem"
+      role="option"
       tabindex="-1"
     >
       
@@ -604,6 +635,7 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
         
         
         <input
+          aria-labelledby="Ki81L4"
           class="fd-checkbox"
           id="Ai4ez61110N"
           type="checkbox"
@@ -634,6 +666,7 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
         
           <div
             class="fd-list__title"
+            id="Ki81L4"
           >
             Text-Only List Item
           </div>
@@ -659,12 +692,15 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
   
 
 
-  <h4>
+  <h4
+    id="Ki81L5"
+  >
     Compact Size
   </h4>
   
 
   <ul
+    aria-labelledby="Ki81L5"
     class="fd-list fd-list--compact fd-list--selection fd-list--byline fd-list--navigation fd-list--navigation-indication"
     role="listbox"
   >
@@ -672,7 +708,7 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
   
     <li
       class="fd-list__item fd-list__item--link"
-      role="listitem"
+      role="option"
       tabindex="-1"
     >
       
@@ -683,6 +719,7 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
         
         
         <input
+          aria-labelledby="Ki81L6"
           class="fd-checkbox fd-checkbox--compact"
           id="Ai4ez6118CON"
           type="checkbox"
@@ -718,6 +755,7 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
         
           <span
             class="fd-list__title"
+            id="Ki81L6"
           >
             Title
           </span>
@@ -741,7 +779,7 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
   
     <li
       class="fd-list__item is-selected"
-      role="listitem"
+      role="option"
       tabindex="0"
     >
       
@@ -752,6 +790,7 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
         
         
         <input
+          aria-labelledby="Ki81L7"
           checked=""
           class="fd-checkbox fd-checkbox--compact"
           id="Ai4ez6119CON"
@@ -783,6 +822,7 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
         
         <div
           class="fd-list__title"
+          id="Ki81L7"
         >
           List Item With Two-Column Byline
         </div>
@@ -818,7 +858,7 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
   
     <li
       class="fd-list__item fd-list__item--link"
-      role="listitem"
+      role="option"
       tabindex="-1"
     >
       
@@ -829,6 +869,7 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
         
         
         <input
+          aria-labelledby="Ki81L8"
           class="fd-checkbox fd-checkbox--compact"
           id="Ai4ez61110CON"
           type="checkbox"
@@ -859,6 +900,7 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
         
           <div
             class="fd-list__title"
+            id="Ki81L8"
           >
             Text-Only List Item
           </div>

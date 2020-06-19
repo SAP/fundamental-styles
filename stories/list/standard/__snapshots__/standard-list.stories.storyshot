@@ -241,6 +241,11 @@ exports[`Storyshots Components/List/Standard Navigation indicator 1`] = `
 
 `;
 
+exports[`Storyshots Components/List/Standard Rtl 1`] = `
+
+
+`;
+
 exports[`Storyshots Components/List/Standard Secondary Data 1`] = `
 
 
@@ -250,12 +255,15 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
 <section>
   
 
-  <h4>
+  <h4
+    id="XezW11"
+  >
     Standard Size
   </h4>
   
 
   <ul
+    aria-labelledby="XezW11"
     class="fd-list fd-list--selection"
     role="listbox"
   >
@@ -263,7 +271,7 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
   
     <li
       class="fd-list__item"
-      role="listitem"
+      role="option"
       tabindex="0"
     >
       
@@ -274,6 +282,7 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
         
           
         <input
+          aria-labelledby="Az0bg1"
           class="fd-checkbox"
           id="Ai4ez1"
           type="checkbox"
@@ -292,6 +301,7 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
       
       <span
         class="fd-list__title"
+        id="Az0bg1"
       >
         List item 1
       </span>
@@ -301,8 +311,9 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
     
   
     <li
+      aria-selected="true"
       class="fd-list__item is-selected"
-      role="listitem"
+      role="option"
       tabindex="0"
     >
       
@@ -313,6 +324,7 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
         
           
         <input
+          aria-labelledby="Az0bg2"
           checked=""
           class="fd-checkbox"
           id="Ai4ez2"
@@ -332,6 +344,7 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
       
       <span
         class="fd-list__title"
+        id="Az0bg2"
       >
         List item 2
       </span>
@@ -342,7 +355,7 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
   
     <li
       class="fd-list__item"
-      role="listitem"
+      role="option"
       tabindex="0"
     >
       
@@ -353,6 +366,7 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
         
           
         <input
+          aria-labelledby="Az0bg3"
           class="fd-checkbox"
           id="Ai4ez3"
           type="checkbox"
@@ -371,6 +385,7 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
       
       <span
         class="fd-list__title"
+        id="Az0bg3"
       >
         List item 3
       </span>
@@ -383,12 +398,15 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
   
 
 
-  <h4>
+  <h4
+    id="XezW12"
+  >
     Compact Size
   </h4>
   
 
   <ul
+    aria-labelledby="XezW12"
     class="fd-list fd-list--selection fd-list--compact fd-list--no-border"
     role="listbox"
   >
@@ -396,7 +414,7 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
   
     <li
       class="fd-list__item"
-      role="listitem"
+      role="option"
       tabindex="0"
     >
       
@@ -407,6 +425,7 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
         
           
         <input
+          aria-labelledby="Az0bg4"
           class="fd-checkbox fd-checkbox--compact"
           id="Ai4ez4"
           type="checkbox"
@@ -425,6 +444,7 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
       
       <span
         class="fd-list__title"
+        id="Az0bg4"
       >
         List item 1
       </span>
@@ -434,8 +454,9 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
     
   
     <li
+      aria-selected="true"
       class="fd-list__item is-selected"
-      role="listitem"
+      role="option"
       tabindex="0"
     >
       
@@ -446,6 +467,7 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
         
           
         <input
+          aria-labelledby="Az0bg5"
           checked=""
           class="fd-checkbox fd-checkbox--compact"
           id="Ai4ez5"
@@ -465,6 +487,7 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
       
       <span
         class="fd-list__title"
+        id="Az0bg5"
       >
         List item 2
       </span>
@@ -475,7 +498,7 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
   
     <li
       class="fd-list__item"
-      role="listitem"
+      role="option"
       tabindex="0"
     >
       
@@ -486,6 +509,7 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
         
           
         <input
+          aria-labelledby="Az0bg6"
           class="fd-checkbox fd-checkbox--compact"
           id="Ai4ez6"
           type="checkbox"
@@ -504,6 +528,7 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
       
       <span
         class="fd-list__title"
+        id="Az0bg6"
       >
         List item 3
       </span>

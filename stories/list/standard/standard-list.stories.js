@@ -340,53 +340,53 @@ borderless.parameters = {
 };
 
 export const selection = () => `
-<h4>Standard Size</h4>
-<ul class="fd-list fd-list--selection" role="listbox">
-  <li role="listitem" tabindex="0" class="fd-list__item">
+<h4 id="XezW11">Standard Size</h4>
+<ul class="fd-list fd-list--selection" role="listbox" aria-labelledby="XezW11">
+  <li role="option" tabindex="0" class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
-          <input type="checkbox" class="fd-checkbox" id="Ai4ez1">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez1" aria-labelledby="Az0bg1">
           <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez1"></label>
       </div>
-      <span class="fd-list__title">List item 1</span>
+      <span class="fd-list__title" id="Az0bg1">List item 1</span>
   </li>
-  <li role="listitem" tabindex="0" class="fd-list__item is-selected">
+  <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
       <div class="fd-form-item fd-list__form-item">
-          <input type="checkbox" class="fd-checkbox" id="Ai4ez2" checked>
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez2" checked aria-labelledby="Az0bg2">
           <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez2"></label>
       </div>
-      <span class="fd-list__title">List item 2</span>
+      <span class="fd-list__title" id="Az0bg2">List item 2</span>
   </li>
-  <li role="listitem" tabindex="0" class="fd-list__item">
+  <li role="option" tabindex="0" class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
-          <input type="checkbox" class="fd-checkbox" id="Ai4ez3">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez3" aria-labelledby="Az0bg3">
           <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez3"></label>
       </div>
-      <span class="fd-list__title">List item 3</span>
+      <span class="fd-list__title" id="Az0bg3">List item 3</span>
   </li>
 </ul>
 
-<h4>Compact Size</h4>
-<ul class="fd-list fd-list--selection fd-list--compact fd-list--no-border" role="listbox">
-  <li role="listitem" tabindex="0" class="fd-list__item">
+<h4 id="XezW12">Compact Size</h4>
+<ul class="fd-list fd-list--selection fd-list--compact fd-list--no-border" role="listbox" aria-labelledby="XezW12">
+  <li role="option" tabindex="0" class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
-          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez4">
+          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez4" aria-labelledby="Az0bg4">
           <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez4"></label>
       </div>
-      <span class="fd-list__title">List item 1</span>
+      <span class="fd-list__title" id="Az0bg4">List item 1</span>
   </li>
-  <li role="listitem" tabindex="0" class="fd-list__item is-selected">
+  <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
       <div class="fd-form-item fd-list__form-item">
-          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez5" checked>
+          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez5" checked aria-labelledby="Az0bg5">
           <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez5"></label>
       </div>
-      <span class="fd-list__title">List item 2</span>
+      <span class="fd-list__title" id="Az0bg5">List item 2</span>
   </li>
-  <li role="listitem" tabindex="0" class="fd-list__item">
+  <li role="option" tabindex="0" class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
-          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6">
+          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6" aria-labelledby="Az0bg6">
           <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6"></label>
       </div>
-      <span class="fd-list__title">List item 3</span>
+      <span class="fd-list__title" id="Az0bg6">List item 3</span>
   </li>
 </ul>
 `;
@@ -402,5 +402,73 @@ To create selection list:
 * Create a standard list with \`fd-list--selection\` modifier.
 * Inside list element create checkbox form item with \`fd-list__form-item\` class.
 `
+    }
+};
+
+
+export const rtl = () => `
+<div dir="rtl">
+    <ul class="fd-list fd-list--navigation fd-list--navigation-indication" role="list">
+      <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+          <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+            <span class="fd-list__title">List item 1</span>
+          </a>
+      </li>
+      <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+          <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-selected" href="#">
+            <span class="fd-list__icon sap-icon--history"></span>
+            <span class="fd-list__title">List item 2</span>
+          </a>
+      </li>
+      <li tabindex="0" role="listitem" class="fd-list__item">
+            <span class="fd-list__icon sap-icon--history"></span>
+            <span class="fd-list__title">List item 3</span>
+      </li>
+      <li tabindex="0" role="listitem" class="fd-list__item">
+            <span class="fd-list__title">List item 4</span>
+            <span class="fd-list__icon sap-icon--map"></span>
+      </li>
+      <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+          <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
+            <span class="fd-list__title">List item 5</span>
+            <span class="fd-list__icon sap-icon--map"></span>
+          </a>
+      </li>
+    </ul>
+    
+    <br/><br/>
+    
+    <ul class="fd-list fd-list--selection" role="listbox" aria-label="Selection list">
+      <li role="option" tabindex="0" class="fd-list__item">
+          <div class="fd-form-item fd-list__form-item">
+              <input type="checkbox" class="fd-checkbox" id="AiEez2" aria-labelledby="Ai4eZ3">
+              <label tabindex="-1" class="fd-checkbox__label" for="AiEez2"></label>
+          </div>
+          <span class="fd-list__title" id="Ai4eZ3">List item 1</span>
+      </li>
+      <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+          <div class="fd-form-item fd-list__form-item">
+              <input type="checkbox" class="fd-checkbox" id="A99ez2" checked aria-labelledby="Ai4eZ4">
+              <label tabindex="-1" class="fd-checkbox__label" for="A99ez2"></label>
+          </div>
+          <span class="fd-list__title" id="Ai4eZ4">List item 2</span>
+      </li>
+      <li role="option" tabindex="0" class="fd-list__item">
+          <div class="fd-form-item fd-list__form-item">
+              <input type="checkbox" class="fd-checkbox" id="Ai4ez3" aria-labelledby="Ai4eZ5">
+              <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez3"></label>
+          </div>
+          <span class="fd-list__title" id="Ai4eZ5">List item 3</span>
+      </li>
+    </ul>
+</div>
+`;
+
+rtl.storyName = 'Rtl';
+
+rtl.parameters = {
+    docs: {
+        iframeHeight: 420,
+        storyDescription: 'List in Rtl mode'
     }
 };
