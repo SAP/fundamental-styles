@@ -13,7 +13,8 @@ export default {
  - fd-page--transparent: transparent
 
 
- CONTAINER HIERARCHY
+ ### CONTAINER HIERARCHY
+
  The elements used to construct a page are:
  
  - fd-page: The page-level wrapper
@@ -24,7 +25,8 @@ export default {
  - Footer: Uses a Bar component with <code>fd-bar--page</code> and <code>fd-bar--footer</code> modifier classes
 
 
- PAGE RESPONSIVE BEHAVIOUR
+ ### PAGE RESPONSIVE BEHAVIOUR
+
  The left and right spacings of the Bar and the Content could be adjusted according to the container width.
 
  - default: Bar component with <code>fd-bar--page modifier</code> class and <code>fd-page__content</code> class for the content
