@@ -16,15 +16,19 @@ $block: #{$fd-namespace}-file-uploader;
     width: auto;
     margin-right: $fd-file-uploader-padding;
 
+    @include fd-ellipsis();
+
     @include fd-rtl() {
       margin-left: $fd-file-uploader-padding;
       margin-right: 0;
     }
 
-    &:read-only::placeholder {
-      color: var(--sapTextColor);
+    &:read-only {
+      background-color: var(--sapField_Background);
 
-      @include fd-ellipsis();
+      &::placeholder {
+        color: var(--sapTextColor);
+      }
     }
   }
 

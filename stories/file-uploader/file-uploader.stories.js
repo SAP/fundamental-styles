@@ -17,7 +17,8 @@ Use the file uploader if:
 
 * The user needs to select the files to upload by browsing the system folders.
 * The user needs to select the files based on specific file formats to upload.
-`
+`,
+        tags: ['f3', 'a11y', 'theme']
     }
 };
 
@@ -27,7 +28,6 @@ export const primary = () => `
 <div class="fd-form-item">
     <div class="fd-file-uploader">
         <input class="fd-input fd-file-uploader__input" 
-        onclick="browseFile('input1');" 
         title="Select a file for uploading" 
         aria-label="Select a file for uploading" 
         type="text" 
@@ -35,7 +35,6 @@ export const primary = () => `
         placeholder=" Choose a file for upload to localserver " 
         readonly>
         <button class="fd-button" 
-        onclick="browseFile('input1');" 
         id="fileuploader-button1" 
         aria-label="Select a file for uploading" >
         Browse...
@@ -45,7 +44,6 @@ export const primary = () => `
         id="input1"
         class="fd-file-uploader__hidden"
         type="file"
-        onchange="selectFile(this,'browse_input1')"
       />
     </div>
 `;
@@ -61,7 +59,6 @@ export const compact = () => `
 <div class="fd-form-item">
     <div class="fd-file-uploader">
       <input class="fd-input fd-input--compact fd-file-uploader__input" 
-      onclick="browseFile('input2-rtl');" 
       id="browse_input2-rtl" 
       type="text" 
       aria-label="Select a file for uploading" 
@@ -69,7 +66,6 @@ export const compact = () => `
       placeholder="Choose a file for upload to localserver" 
       readonly>
       <button class="fd-button fd-button--compact "  
-      onclick="browseFile('input2-rtl');" 
       id="fileuplader-button2" 
       aria-label="Select a file for uploading">Browse...
       </button>
@@ -78,7 +74,6 @@ export const compact = () => `
         id="input2-rtl"
         class="fd-file-uploader__hidden"
         type="file"
-        onchange="selectFile(this,'browse_input2-rtl')"
       />
   </div>
 `;
