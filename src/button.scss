@@ -98,7 +98,7 @@ $block: #{$fd-namespace}-button;
     }
   }
 
-  &:empty {
+  @include fd-empty() {
     &::before,
     &::after {
       margin-right: 0;
@@ -177,7 +177,7 @@ $block: #{$fd-namespace}-button;
       right: auto;
     }
 
-    &:empty {
+    @include fd-empty() {
       &::before {
         margin-left: 0;
       }

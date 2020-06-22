@@ -83,7 +83,7 @@ $block: #{$fd-namespace}-radio;
       }
     }
 
-    &:empty {
+    @include fd-empty() {
       padding: $fd-radio-outer-circle-margin;
       margin: 0;
 
@@ -125,10 +125,10 @@ $block: #{$fd-namespace}-radio;
   @include fd-focus() {
     + .#{$block}__label {
       @include fd-form-radio-focus($fd-radio-outer-circle-margin);
-    }
 
-    + .#{$block}__label:empty {
-      @include fd-form-radio-empty-focus($fd-radio-outer-circle-margin);
+      @include fd-empty() {
+        @include fd-form-radio-empty-focus($fd-radio-outer-circle-margin);
+      }
     }
   }
 
@@ -165,7 +165,7 @@ $block: #{$fd-namespace}-radio;
         }
       }
 
-      &:empty {
+      @include fd-empty() {
         padding: $fd-radio-outer-circle-margin-compact;
         margin: 0;
 
@@ -180,10 +180,10 @@ $block: #{$fd-namespace}-radio;
     @include fd-focus() {
       + .#{$block}__label {
         @include fd-form-radio-focus($fd-radio-outer-circle-margin-compact);
-      }
 
-      + .#{$block}__label:empty {
-        @include fd-form-radio-empty-focus($fd-radio-outer-circle-margin-compact);
+        @include fd-empty() {
+          @include fd-form-radio-empty-focus($fd-radio-outer-circle-margin-compact);
+        }
       }
     }
   }

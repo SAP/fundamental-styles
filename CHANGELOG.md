@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.54"></a>
+# [0.11.0-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.53...v0.11.0-rc.54) (2020-06-18)
+
+
+### Bug Fixes
+
+* Add fd-empty mixin, replace empty selectors ([#1099](https://github.com/SAP/fundamental-styles/issues/1099)) ([8a66423](https://github.com/SAP/fundamental-styles/commit/8a66423))
+
+
+
+<a name="0.11.0-rc.53"></a>
+# [0.11.0-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.52...v0.11.0-rc.53) (2020-06-17)
+
+
+
 <a name="0.11.0-rc.52"></a>
 # [0.11.0-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.51...v0.11.0-rc.52) (2020-06-16)
 
