@@ -3,7 +3,6 @@
 {% from "./../../button/component.njk" import button %}
 {% from "./../../breadcrumb/component.njk" import breadcrumb %}
 {% from "./../../shellbar/component.njk" import shellbar %}
-{% from "./../../tabs/component.njk" import tabs %}
 
 {% set hide_ui_footer = true %}
 {% block ui_header %}
@@ -50,35 +49,4 @@
         aria={}
     )
 }}
-{% endblock %}
-
-{% block app_navigation %}
-
-{{  tabs(
-        properties={
-          items: [
-              {
-                  "label": "Nunc"
-              },
-              {
-                  "label": "Pellentesque",
-                  "selected": true
-              },
-              {
-                  "label": "Cras"
-              },
-              {
-                  "label": "Vivamus"
-              }
-          ]
-        },
-        modifier={
-            block: []
-        },
-        state={},
-        aria={},
-        classes="has-border-bottom-none"
-    )
-}}
-
 {% endblock %}
