@@ -1,5 +1,6 @@
 @import "./mixins";
 @import "./new-settings";
+@import "./button.scss";
 
 $block: #{$fd-namespace}-file-uploader;
 
@@ -18,16 +19,37 @@ $block: #{$fd-namespace}-file-uploader;
 
     @include fd-ellipsis();
 
+    user-select: none;
+
     @include fd-rtl() {
       margin-left: $fd-file-uploader-padding;
       margin-right: 0;
     }
+
+    cursor: text;
 
     &:read-only {
       background-color: var(--sapField_Background);
 
       &::placeholder {
         color: var(--sapTextColor);
+      }
+    }
+
+    &:focus {
+      outline: none;
+
+      ~ .#{$block}__button {
+        @include buttonContainerFocus();
+      }
+    }
+
+    &:hover {
+      outline: none;
+      cursor: pointer;
+      border-color: var(--sapField_BorderColor);
+      ~ .#{$block}__button {
+        @include buttonContainerHover();
       }
     }
   }

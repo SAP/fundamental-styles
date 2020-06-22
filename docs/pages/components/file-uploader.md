@@ -29,14 +29,19 @@ Input element is readonly and populated with the selected file name.
         class="fd-input fd-file-uploader__input" 
         onclick="browseFile('input1');" 
         title="Select a file for uploading" 
-        aria-label="Select a file for uploading" 
+        aria-label="Select a file for uploading"
+        aria-live="polite"
+        autocomplete="off"
         type="text" 
         id="browse_input1" 
         placeholder=" Choose a file for upload to localserver " 
-        readonly>
+        tabindex="-1"
+        readonly
+        >
         <button class="fd-button fd-file-uploader__button" 
         width="40px"
         onclick="browseFile('input1');" 
+        tabindex="0"
         id="fileuploader-button1" 
         aria-label="Select a file for uploading" >
         Browse...
@@ -63,7 +68,8 @@ Input element is readonly and populated with the selected file name.
         aria-label="Select a file for uploading" 
         type="text" 
         id="browse_input1-rtl" 
-        placeholder=" Choose a file for upload to localserver " 
+        placeholder=" Choose a file for upload to localserver "
+        tabindex="-1"
         readonly>
         <button class="fd-button fd-file-uploader__button" 
         onclick="browseFile('input1-rtl');"  
@@ -98,7 +104,8 @@ Input element is readonly and populated with the selected file name.
       type="text"
       aria-label="Select a file for uploading" 
       title="Select a file for uploading"  
-      placeholder="Choose a file for upload to localserver" 
+      placeholder="Choose a file for upload to localserver"
+      tabindex="-1"
       readonly>
       <button
       class="fd-button fd-button--compact fd-file-uploader__button"  
@@ -125,7 +132,8 @@ Input element is readonly and populated with the selected file name.
       onclick="browseFile('input2-rtl');" 
       id="browse_input2-rtl" 
       type="text" 
-      aria-label="Select a file for uploading" 
+      aria-label="Select a file for uploading"
+      tabindex="-1"
       title="Select a file for uploading"  
       placeholder="Choose a file for upload to localserver" 
       readonly>
