@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Message Toast Default Toast 1`] = `
+<section>
+  
+
+  <div
+    class="fd-message-toast"
+  >
+    Product added
+  </div>
+  
+
+  <br />
+  <br />
+  
+
+  <div
+    class="fd-message-toast"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+  
+
+</section>
+`;
