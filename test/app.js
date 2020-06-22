@@ -180,7 +180,6 @@ router.get('/', (req, res) => {
 function getStarterData() {
     const data = {
         "table": require(`./templates/table/data.json`),
-        "tabs": require(`./templates/tabs/data.json`),
         "test": require(`./data/test.json`)
     };
     return data;
