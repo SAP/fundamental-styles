@@ -40,7 +40,32 @@ structure.parameters = {
 
 export const sectionLayoutGrid = () => `
 <section class="fd-section">
-    <div class="fd-layout-grid"> 
+    <div class="fd-layout-grid">
+        <div class="fd-layout-panel">
+            <div class="fd-layout-panel__body">
+                <p>.fd-layout-panel</p>
+            </div>
+        </div>
+        <div class="fd-layout-panel">
+            <div class="fd-layout-panel__body">
+                <p>.fd-layout-panel</p>
+            </div>
+        </div>
+        <div class="fd-layout-panel">
+            <div class="fd-layout-panel__body">
+                <p>.fd-layout-panel</p>
+            </div>
+        </div>
+        <div class="fd-layout-panel">
+            <div class="fd-layout-panel__body">
+                <p>.fd-layout-panel</p>
+            </div>
+        </div>
+        <div class="fd-layout-panel">
+            <div class="fd-layout-panel__body">
+                <p>.fd-layout-panel</p>
+            </div>
+        </div>
     </div>
 </section>
 `;
