@@ -384,8 +384,7 @@ export const sizes = () => `
 
 sizes.parameters = {
     docs: {
-        iframeHeight: 400
-        // storyDescription: ''
+        iframeHeight: 420
     }
 };
 
@@ -582,7 +581,7 @@ export const todaySelectionButton = () => `
 
 todaySelectionButton.parameters = {
     docs: {
-        iframeHeight: 440,
+        iframeHeight: 460,
         storyDescription: 'The today selection button in the footer selects today\'s date in the system or user-preferred timezone and closes the DatePicker popover. This date value then appears in the DatePicker\'s input field. If using a compact datepicker add the <code>fd-button--compact</code> class to this button.'
     }
 };
