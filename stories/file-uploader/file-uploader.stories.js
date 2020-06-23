@@ -9,11 +9,11 @@ export default {
     title: 'Components/FileUploader',
     parameters: {
         description: `
-The file uploader control allows the user to select the files from the system to upload.
-The File uploader component is an opinionated composition of the input and button components.
+The File Uploader component allows the user to select the files from the system to upload.
+The File Uploader component is an opinionated composition of the input and button components.
 Please see the input and button components documentation for the complete list of modifiers.
 
-Use the file uploader if:
+Use the File Uploader if:
 
 * The user needs to select the files to upload by browsing the system folders.
 * The user needs to select the files based on specific file formats to upload.
