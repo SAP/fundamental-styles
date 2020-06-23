@@ -28,7 +28,7 @@ $block: #{$fd-namespace}-file-uploader;
 
     cursor: text;
 
-    &:read-only {
+    @include fd-readonly() {
       background-color: var(--sapField_Background);
 
       &::placeholder {
@@ -36,7 +36,7 @@ $block: #{$fd-namespace}-file-uploader;
       }
     }
 
-    &:focus {
+    @include fd-focus() {
       outline: none;
 
       ~ .#{$block}__button {
@@ -44,7 +44,7 @@ $block: #{$fd-namespace}-file-uploader;
       }
     }
 
-    &:hover {
+    @include fd-hover() {
       outline: none;
       cursor: pointer;
       border-color: var(--sapField_BorderColor);

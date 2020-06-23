@@ -36,6 +36,7 @@ Input element is readonly and populated with the selected file name.
         id="browse_input1" 
         placeholder=" Choose a file for upload to localserver " 
         tabindex="-1"
+        readonly
         >
         <button class="fd-button fd-file-uploader__button" 
         width="40px"
