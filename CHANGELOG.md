@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.64"></a>
+# [0.11.0-rc.64](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.63...v0.11.0-rc.64) (2020-06-24)
+
+
+### Bug Fixes
+
+* specify DatePicker border radius ([#1175](https://github.com/SAP/fundamental-styles/issues/1175)) ([3ac1b19](https://github.com/SAP/fundamental-styles/commit/3ac1b19))
+
+
+
 <a name="0.11.0-rc.63"></a>
 # [0.11.0-rc.63](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.62...v0.11.0-rc.63) (2020-06-24)
 
