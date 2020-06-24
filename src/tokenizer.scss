@@ -7,6 +7,9 @@ $block: #{$fd-namespace}-tokenizer;
   $fd-tokenizer-compact-spacing: 0.25rem;
   $fd-tokenizer-spacing: 0.3125rem;
 
+  $fd-tokenizer-inner-padding-horizontal: 0.3125rem; // 0.625-0.3125 = 0.3125rem
+  $fd-tokenizer-compact-inner-padding-horizontal: 0.25rem; // 0.5-0.25= 0.25rem
+
   width: 100%;
   background-color: var(--sapField_Background);
   display: flex;
@@ -47,6 +50,10 @@ $block: #{$fd-namespace}-tokenizer;
       min-width: 3rem;
     }
 
+    &:first-child {
+      padding: 0 $fd-tokenizer-inner-padding-horizontal;
+    }
+
     &:last-child {
       flex-basis: 100%;
     }
@@ -74,6 +81,10 @@ $block: #{$fd-namespace}-tokenizer;
 
     .#{$block}__input.#{$fd-namespace}-input {
       min-width: 2rem;
+    }
+
+    .#{$block}__input:first-child {
+      padding: 0 $fd-tokenizer-compact-inner-padding-horizontal;
     }
 
     .fd-token {
