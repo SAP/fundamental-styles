@@ -237,6 +237,7 @@ $fd-calendar-special-days: (
   width: $fd-calendar-width;
   padding: $fd-calendar-padding;
   background-color: $fd-calendar-background;
+  border-radius: $fd-calendar-border-radius;
 
   // CALENDAR HEADER
   &__header {
