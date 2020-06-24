@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Forms/FormSelect Default 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Forms/FormSelect Disabled 1`] = `
+
+    
+`;
