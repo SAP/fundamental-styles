@@ -120,6 +120,10 @@ entries:
       url: /components/form.html
       output: web
 
+    - title: File Uploader
+      url: /components/file-uploader.html
+      output: web
+
     - title: Generic Tile
       url: /components/generic-tile.html
       output: web

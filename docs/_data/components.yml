@@ -24,6 +24,9 @@ items:
     - title: Forms
       meta: form
 
+    - title: File Uploader
+      meta: file-uploader
+
     - title: Generic Tile
       meta: generic-tile
 
