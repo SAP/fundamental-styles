@@ -209,7 +209,11 @@ export const defaultAndCompactSizes = () => `
       <div class="fd-input-group">
         <input id="compactDatepicker" type="text" value="" placeholder="Pick a date" class="fd-input fd-input--compact fd-input-group__input">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-        <button class="fd-button fd-button--transparent fd-button--compact fd-input-group__button fd-popover__control sap-icon--calendar" aria-controls="Itcgq82" aria-expanded="false" aria-haspopup="true" aria-hidden="true"></button>
+        <button class="fd-button fd-button--transparent fd-button--compact fd-input-group__button fd-popover__control sap-icon--calendar"
+          aria-controls="Itcgq82"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-hidden="true"></button>
         </span>
       </div>
     </div>
@@ -387,7 +391,7 @@ export const defaultAndCompactSizes = () => `
 
 defaultAndCompactSizes.parameters = {
     docs: {
-        iframeHeight: 400
+        iframeHeight: 500
     }
 };
 
@@ -838,7 +842,8 @@ export const mobileLandscape = () => `
               <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
             </div>
             <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Today</button>
-            <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button fd-calendar__close-button--navigation" aria-label="Close"></button>
+            <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button fd-calendar__close-button--navigation"
+              aria-label="Close"></button>
           </div>
         </header>
         <div class="fd-calendar__content fd-calendar__content--dates" id="Xh8Gr283">
@@ -1455,7 +1460,11 @@ export const defaultAndCompactSizesVisualStoryShotOnly = () => `
       <div class="fd-input-group">
         <input id="compactDatepickerSS" type="text" value="" placeholder="Pick a date" class="fd-input fd-input--compact fd-input-group__input">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-        <button class="fd-button fd-button--transparent fd-button--compact fd-input-group__button fd-popover__control sap-icon--calendar" aria-controls="Itcgq82" aria-expanded="false" aria-haspopup="true" aria-hidden="true"></button>
+        <button class="fd-button fd-button--transparent fd-button--compact fd-input-group__button fd-popover__control sap-icon--calendar"
+          aria-controls="Itcgq82"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-hidden="true"></button>
         </span>
       </div>
     </div>
