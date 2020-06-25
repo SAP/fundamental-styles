@@ -108,16 +108,6 @@ body {
   background: pink;
 }
 
-.layout-panel-playground {
-  border: 1px solid navy;
-  border-radius: 4px;
-  padding: 10px;
-  margin: 0;
-  background: gold;
-  font-size: 14px;
-  box-shadow: 0 5px 20px 0 blue;
-}
-
 .badge-playground {
   border: 1px solid black;
   border-radius: 4px;
