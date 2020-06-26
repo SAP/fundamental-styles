@@ -1,68 +1,149 @@
----
-title: Generic Tile
-id: generic-tile
-keywords: tile generic tile
-sidebar: left-navigation-sidebar
-toc: false
-permalink: components/generic-tile.html
-folder: components
-summary:
-tags: [f3, a11y, theme, development]
----
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 
+import '../../dist/tile.css';
+import '../../dist/badge.css';
 
-Generic Tiles can be used to represent an app similar to the SAP Fiori launchpad home page. They can display different types of content, which are based on the data supplied by the app. They can contain an icon, a title, an informative text, KPIs, counters and charts.
-{: .docs-intro}
+import './generic-tile.css';
+
+import Header from '../../.storybook/custom/components/Header';
+import InfoLabel from '../../.storybook/custom/components/InfoLabel';
+
+import Community from '../../.storybook/custom/components/Community';
+import Toc from '../../.storybook/custom/components/Toc.js';
+import Footer from '../../.storybook/custom/components/Footer';
+
+<Meta
+    title="Components/GenericTile"
+    parameters={{
+        tags: ['f3', 'a11y', 'theme'],
+        docs: { iframeHeight: 500 }
+    }}
+/>
+
+<Header />
+
+## Generic Tile
+
+<InfoLabel tag="f3" />
+<InfoLabel tag="a11y" />
+<InfoLabel tag="theme" />
+
+<h2 className="toc-heading">Contents</h2>
+
+<nav class=" toc">
+    <ol class="toc-list ">
+        <li class="toc-list-item is-active-li">
+            <a href="#examples" class="toc-link node-name--H2  is-active-link" target="_self">
+                Examples
+            </a>
+            <ol class="toc-list ">
+                <li class="toc-list-item">
+                    <a href="#generic-tile-sizes-responsiveness" class="toc-link node-name--H3 " target="_self">
+                        Generic Tile Sizes (Responsiveness)
+                    </a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#generic-tile-layout" class="toc-link node-name--H3 " target="_self">
+                        Generic Tile Layout
+                    </a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#generic-tile-content-columns" class="toc-link node-name--H3 " target="_self">
+                        Generic Tile Content Columns
+                    </a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#launch-tile" class="toc-link node-name--H3 " target="_self">
+                        Launch Tile
+                    </a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#kpi-tile-numeric-content" class="toc-link node-name--H3 " target="_self">
+                        KPI Tile (Numeric Content)
+                    </a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#feed-tile" class="toc-link node-name--H3 " target="_self">
+                        Feed Tile
+                    </a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#badge-tile" class="toc-link node-name--H3 " target="_self">
+                        Badge Tile
+                    </a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#slide-tile" class="toc-link node-name--H3 " target="_self">
+                        Slide Tile
+                    </a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#tile-in-action-mode" class="toc-link node-name--H3 " target="_self">
+                        Tile In Action Mode
+                    </a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#line-tile" class="toc-link node-name--H3 " target="_self">
+                        Line Tile
+                    </a>
+                </li>
+            </ol>
+        </li>
+    </ol>
+</nav>
+
+Generic Tiles can be used to represent an app similar to the SAP Fiori launchpad home page. They can display different
+types of content, which are based on the data supplied by the app. They can contain an icon, a title, an informative
+text, KPIs, counters and charts.
+
+## Examples
 
 ## Generic Tile Sizes (Responsiveness)
+
 The large (default) tiles are designed for screens larger than 374px. For smaller screens use the small tiles `fd-tile--s`.
 
-<ul class="docs-ul">
-    <li>Large Tile - 11 x 11rem</li>
-    <li>Small Tile - 9.25 x 9.25rem</li>
-</ul>
+-   Large Tile - 11 x 11rem
+-   Small Tile - 9.25 x 9.25rem
 
-*The background-colors are used to illustrate the tile sections in the documentation page.
-{% capture tile-sizes %}
-<div class="docs-section-container">
-    <div role="button" aria-label="button" tabindex="0" class="fd-tile">
-        <div class="fd-tile__header"></div>
-        <div class="fd-tile__content"></div>
-        <div class="fd-tile__footer"></div>
-    </div>
-    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s">
-        <div class="fd-tile__header"></div>
-        <div class="fd-tile__content"></div>
-        <div class="fd-tile__footer"></div>
-    </div>
-</div>
-
-{% endcapture %}
-{% include display-component.html component=tile-sizes %}
+<Preview>
+    <Story name="Generic Tile Sizes">
+        {() => `
+            <div class="docs-section-container">
+                <div role="button" aria-label="button" tabindex="0" class="fd-tile">
+                    <div class="fd-tile__header"></div>
+                    <div class="fd-tile__content"></div>
+                    <div class="fd-tile__footer"></div>
+                </div>
+                <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s">
+                    <div class="fd-tile__header"></div>
+                    <div class="fd-tile__content"></div>
+                    <div class="fd-tile__footer"></div>
+                </div>
+            </div>
+            `}
+    </Story>
+</Preview>
 
 ## Generic Tile Layout
+
 The generic tile control supports two tile dimensions - 1×1 (default) and 2×1 (`fd-tile--double`).
-<ul class="docs-ul">
-    <li>Large Tile (1 x 1) - 11 x 11rem</li>
-    <li>Large Tile (2 x 1) - 22.5 x 11rem</li>
-    <li>Small Tile (1 x 1) - 9.25 x 9.25rem</li>
-    <li>Small Tile (2 x 1) - 19 x 9.25rem</li>
-</ul>
+
+-   Large Tile (1 x 1) - 11 x 11rem
+-   Large Tile (2 x 1) - 22.5 x 11rem
+-   Small Tile (1 x 1) - 9.25 x 9.25rem
+-   Small Tile (2 x 1) - 19 x 9.25rem
 
 The layout of the generic tile is fixed, with designated areas for the header, content area, and footer.
- 
-<ul class="docs-ul">
-    <li>Header <code>fd-tile__header</code> - <strong>required</strong>. It contains a title and an (optional) subtitle.
-        <ul class="docs-ul">
-            <li>Title <code>fd-tile__title</code> - <strong>required</strong>. Can have up to two lines of text before it is truncated (or three lines if there is no subtitle).</li>
-            <li>Subtitle <code>fd-tile__subtitle</code> <strong>optional</strong> - can have one line of text before it is truncated.</li>
-        </ul>
-    </li>
-    <li>Content <code>fd-tile__content</code> - <strong>optional</strong>.</li>
-    <li>Footer <code>fd-tile__footer</code>- <strong>optional</strong>. Can contain a refresh icon <code>sap-icon--refresh</code> and status.</li>
-</ul>
 
-{% capture tile-sizes %}
+-   Header `fd-tile__header` - **required**. It contains a title and an (optional) subtitle.
+    -   Title `fd-tile__title` - **required**. Can have up to two lines of text before it is truncated (or three lines if there is no subtitle).
+    -   Subtitle `fd-tile__subtitle` **optional** - can have one line of text before it is truncated.
+-   Content `fd-tile__content` - **optional**.
+-   Footer `fd-tile__footer`- **optional**. Can contain a refresh icon `sap-icon--refresh` and status.
+
+<Preview>
+    <Story name="Generic Tile Layout">
+        {() => `
 <div class="docs-section-container">
     <div role="button" aria-label="button" tabindex="0" class="fd-tile">
         <div class="fd-tile__header"></div>
@@ -85,36 +166,55 @@ The layout of the generic tile is fixed, with designated areas for the header, c
         <div class="fd-tile__footer"></div>
     </div>
 </div>
-
-{% endcapture %}
-{% include display-component.html component=tile-sizes %}
+            `}
+    </Story>
+</Preview>
 
 ## Generic Tile Content Columns
+
 The tiles header, content and footer can be split into two columns with a 0.25rem vertical padding. Use the (`*--2-col`) modifier classes to achieve the 2-col design.
 
 <ul class="docs-ul">
-    <li>Header <code>fd-tile__header fd-tile__header--2-col</code>
+    <li>
+        Header <code>fd-tile__header fd-tile__header--2-col</code>
         <ul class="docs-ul">
-            <li>Section <code>fd-tile__section</code>.</li>
-            <li>Section <code>fd-tile__section</code>.</li>
+            <li>
+                Section <code>fd-tile__section</code>.
+            </li>
+            <li>
+                Section <code>fd-tile__section</code>.
+            </li>
         </ul>
     </li>
-    <li>Content <code>fd-tile__content fd-tile__content--2-col</code>
+    <li>
+        Content <code>fd-tile__content fd-tile__content--2-col</code>
         <ul class="docs-ul">
-            <li>Section <code>fd-tile__section</code>.</li>
-            <li>Section <code>fd-tile__section</code>.</li>
+            <li>
+                Section <code>fd-tile__section</code>.
+            </li>
+            <li>
+                Section <code>fd-tile__section</code>.
+            </li>
         </ul>
     </li>
-    <li>Footer <code>fd-tile__footer fd-tile__footer--2-col</code>
+    <li>
+        Footer <code>fd-tile__footer fd-tile__footer--2-col</code>
         <ul class="docs-ul">
-            <li>Section <code>fd-tile__section</code>.</li>
-            <li>Section <code>fd-tile__section</code>.</li>
+            <li>
+                Section <code>fd-tile__section</code>.
+            </li>
+            <li>
+                Section <code>fd-tile__section</code>.
+            </li>
         </ul>
     </li>
 </ul>
 
-*The background color is used to illustrate the column sections in the documentation page. 
-{% capture tile-sizes %}
+\*The background color is used to illustrate the column sections in the documentation page.
+
+<Preview>
+    <Story name="Generic Tile Content Columns">
+        {() => `
 <div class="docs-section-container">
     <div role="button" aria-label="button" tabindex="0" class="fd-tile">
         <div class="fd-tile__header fd-tile__header--2-col">
@@ -173,70 +273,46 @@ The tiles header, content and footer can be split into two columns with a 0.25re
         </div>
     </div>
 </div>
-{% endcapture %}
-{% include display-component.html component=tile-sizes %}
-
-<br>
+            `}
+    </Story>
+</Preview>
 
 ## Launch Tile
 
 Structure of the Numeric Content
-<ul class="docs-ul">
-    <li>Launch Icon Container - <code>fd-numeric-content__launch-icon-container</code>
-        <ul class="docs-ul">
-            <li>Launch Icon - <code>fd-numeric-content__launch-icon sap-icon--line-charts</code></li>
-        </ul>
-    </li>
-    <li>KPI Container <strong>(optional)</strong> - <code>fd-numeric-content__kpi-container</code>
-        <ul class="docs-ul">
-            <li>KPI <strong>(optional)</strong> - <code>fd-numeric-content__kpi</code>
-                <ul class="docs-ul">
-                    <li>States:
-                        <ul class="docs-ul">
-                            <li>neutral (default)</li>
-                            <li>positive - <code>fd-numeric-content__kpi--positive</code></li>
-                            <li>negative - <code>fd-numeric-content__kpi--negative</code></li>
-                            <li>critical - <code>fd-numeric-content__kpi--critical</code></li>
-                            <li>informative - <code>fd-numeric-content__kpi--informative</code></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li>Scale Container <strong>(optional)</strong> - <code>fd-numeric-content__scale-container</code>
-        <ul class="docs-ul">
-            <li>Scale <strong>(optional)</strong> - <code>fd-numeric-content__scale</code>
-                 <ul class="docs-ul">
-                    <li>States:
-                        <ul class="docs-ul">
-                            <li>neutral (default)</li>
-                            <li>positive - <code>fd-numeric-content__scale--positive</code></li>
-                            <li>negative - <code>fd-numeric-content__scale--negative</code></li>
-                            <li>critical - <code>fd-numeric-content__scale--critical</code></li>
-                            <li>informative - <code>fd-numeric-content__scale--informative</code></li>
-                        </ul>
-                    </li>
-                    <li>Deviation Arrows <strong>(optional)</strong>: <code>sap-icon--down</code> or <code>sap-icon--up</code></li>
-                    <li>Text <strong>(optional)</strong>: <code>fd-numeric-content__scale-text</code></li>
-                 </ul>
-            </li>
-        </ul>
-    </li>
-</ul>
 
-<br>
+-   Launch Icon Container - `fd-numeric-content__launch-icon-container`
+    -   Launch Icon - `fd-numeric-content__launch-icon sap-icon--line-charts`
+-   KPI Container **(optional)** - `fd-numeric-content__kpi-container`
+    -   KPI **(optional)** - `fd-numeric-content__kpi`
+        -   States:
+            -   neutral (default)
+            -   positive - `fd-numeric-content__kpi--positive`
+            -   negative - `fd-numeric-content__kpi--negative`
+            -   critical - `fd-numeric-content__kpi--critical`
+            -   informative - `fd-numeric-content__kpi--informative`
+-   Scale Container **(optional)** - `fd-numeric-content__scale-container`
+    -   Scale **(optional)** - `fd-numeric-content__scale`
+        -   States:
+            -   neutral (default)
+            -   positive - `fd-numeric-content__scale--positive`
+            -   negative - `fd-numeric-content__scale--negative`
+            -   critical - `fd-numeric-content__scale--critical`
+            -   informative - `fd-numeric-content__scale--informative`
+        -   Deviation Arrows **(optional)**: `sap-icon--down` or `sap-icon--up`
+        -   Text **(optional)**: `fd-numeric-content__scale-text`
+
 Numeric Content Sizes:
-<ul class="docs-ul">
-    <li>L-Numeric Content size. Longest combination for 4-character languages</li>
-    <li>M-Numeric Content size. Longest combination for 6-character languages</li>
-    <li>S-Numeric Content size. Longest combination for 8-character languages</li>
-</ul>
 
-<br>
+-   L-Numeric Content size. Longest combination for 4-character languages
+-   M-Numeric Content size. Longest combination for 6-character languages
+-   S-Numeric Content size. Longest combination for 8-character languages
+
 The header can contain a maximum of 3 lines; all 3 lines can be used for the title or one of the lines can be used for a subtitle. If a 4 line title or an optional subtitle line is required, the fd-tile_header-content can be used to represent a header and will merge the content containers into one tile.
 
-{% capture tile-launch %}
+<Preview>
+    <Story name="Launch Tile">
+        {() => `
 <h4>Launch Tile With Numeric Content and Launch Icon</h4>
 <br>
 <div class="docs-section-container">
@@ -381,62 +457,42 @@ The header can contain a maximum of 3 lines; all 3 lines can be used for the tit
         </div>
     </div>
 </div>
-{% endcapture %}
-{% include display-component.html component=tile-launch %}
-
-<br>
+            `}
+    </Story>
+</Preview>
 
 ## KPI Tile (Numeric Content)
+
 Key Performance Indicators (KPIs) are used to measure and monitor a company’s performance at a strategic and operational level. The KPI Tile control supports a limited number of digits which varies depending on the size of the tile.
-<br>
-<ul class="docs-ul">
-    <li>L-Numeric Content size. Longest combination for 4-character languages</li>
-    <li>M-Numeric Content size. Longest combination for 6-character languages</li>
-    <li>S-Numeric Content size. Longest combination for 8-character languages</li>
-</ul>
 
-<br>
+-   L-Numeric Content size. Longest combination for 4-character languages
+-   M-Numeric Content size. Longest combination for 6-character languages
+-   S-Numeric Content size. Longest combination for 8-character languages
+
 Structure of the Numeric Content
-<ul class="docs-ul">
-    <li>KPI Container - <code>fd-numeric-content__kpi-container</code>
-        <ul class="docs-ul">
-            <li>KPI - <code>fd-numeric-content__kpi</code>
-                <ul class="docs-ul">
-                    <li>States:
-                        <ul class="docs-ul">
-                            <li>neutral (default)</li>
-                            <li>positive - <code>fd-numeric-content__kpi--positive</code></li>
-                            <li>negative - <code>fd-numeric-content__kpi--negative</code></li>
-                            <li>critical - <code>fd-numeric-content__kpi--critical</code></li>
-                            <li>informative - <code>fd-numeric-content__kpi--informative</code></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li>Scale Container <strong>(optional)</strong> - <code>fd-numeric-content__scale-container</code>
-        <ul class="docs-ul">
-            <li>Scale <strong>(optional)</strong> - <code>fd-numeric-content__scale</code>
-                 <ul class="docs-ul">
-                    <li>States:
-                        <ul class="docs-ul">
-                            <li>neutral (default)</li>
-                            <li>positive - <code>fd-numeric-content__scale--positive</code></li>
-                            <li>negative - <code>fd-numeric-content__scale--negative</code></li>
-                            <li>critical - <code>fd-numeric-content__scale--critical</code></li>
-                            <li>informative - <code>fd-numeric-content__scale--informative</code></li>
-                        </ul>
-                    </li>
-                    <li>Deviation Arrows <strong>(optional)</strong>: <code>sap-icon--down</code> or <code>sap-icon--up</code></li>
-                    <li>Text <strong>(optional)</strong>: <code>fd-numeric-content__scale-text</code></li>
-                 </ul>
-            </li>
-        </ul>
-    </li>
-</ul>
 
-{% capture tile-kpi %}
+-   KPI Container - `fd-numeric-content__kpi-container`
+    -   KPI - `fd-numeric-content__kpi`
+        -   States:
+            -   neutral (default)
+            -   positive - `fd-numeric-content__kpi--positive`
+            -   negative - `fd-numeric-content__kpi--negative`
+            -   critical - `fd-numeric-content__kpi--critical`
+            -   informative - `fd-numeric-content__kpi--informative`
+-   Scale Container **(optional)** - `fd-numeric-content__scale-container`
+    -   Scale **(optional)** - `fd-numeric-content__scale`
+        -   States:
+            -   neutral (default)
+            -   positive - `fd-numeric-content__scale--positive`
+            -   negative - `fd-numeric-content__scale--negative`
+            -   critical - `fd-numeric-content__scale--critical`
+            -   informative - `fd-numeric-content__scale--informative`
+        -   Deviation Arrows **(optional)**: `sap-icon--down` or `sap-icon--up`
+        -   Text **(optional)**: `fd-numeric-content__scale-text`
+
+<Preview>
+    <Story name="KPI Tile">
+        {() => `
 <h4>KPI Tile with L-Size Numeric Content</h4>
 <div class="docs-section-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--kpi">
@@ -492,7 +548,6 @@ Structure of the Numeric Content
         </div>
     </div>
 </div>
-
 <br>
 <br>
 <h4>KPI Tile with M-Size Numeric Content</h4>
@@ -539,7 +594,6 @@ Structure of the Numeric Content
         </div>
     </div>
 </div>
-
 <br>
 <br>
 <h4>KPI Tile with S-Size Numeric Content</h4>
@@ -582,17 +636,18 @@ Structure of the Numeric Content
         </div>
     </div>
 </div>
-
-
-{% endcapture %}
-{% include display-component.html component=tile-kpi %}
-
-<br>
+`}
+    </Story>
+</Preview>
 
 ## Feed Tile
-The Feed tile can be used to show new notification content in a news feed. If there are no new notifications, the tile displays the most recent notification. 
+
+The Feed tile can be used to show new notification content in a news feed. If there are no new notifications, the tile displays the most recent notification.
 To create a Feed tile, use the `fd-tile--feed` modifier class.
-{% capture tile-feed %}
+
+<Preview>
+    <Story name="Feed Tile">
+        {() => `
 <div class="docs-section-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--double fd-tile--feed">
         <div class="fd-tile__header">
@@ -639,16 +694,19 @@ To create a Feed tile, use the `fd-tile--feed` modifier class.
         </div>
     </div>
 </div>
-{% endcapture %}
-{% include display-component.html component=tile-feed %}
-
-<br>
+            `}
+    </Story>
+</Preview>
 
 ## Badge Tile
+
 Badges are used to display very short and important information.
 Use a badge on a Tile if the Tile is new or has been newly added to a page.
-Tiles do not display badges in action/edit mode. 
-{% capture tile-badge %}
+Tiles do not display badges in action/edit mode.
+
+<Preview>
+    <Story name="Badge Tile">
+        {() => `
 <div class="docs-section-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--launch">
         <div class="fd-badge">Badge</div>
@@ -725,16 +783,18 @@ Tiles do not display badges in action/edit mode.
         </div>
     </div>
 </div>
-{% endcapture %}
-{% include display-component.html component=tile-badge %}
-
-<br>
+            `}
+    </Story>
+</Preview>
 
 ## Slide Tile
-The Slide Tile contains a news headline, a background image, the news source, and a time stamp. A start and pause button are always displayed on touch devices and can be revealed by hovering the mouse over the tile on desktop devices. The dots on the bottom of each tile identify the number of pages they contain. 
+
+The Slide Tile contains a news headline, a background image, the news source, and a time stamp. A start and pause button are always displayed on touch devices and can be revealed by hovering the mouse over the tile on desktop devices. The dots on the bottom of each tile identify the number of pages they contain.
 To create a Slide Tile, use the `fd-tile--slide` modifier class.
 
-{% capture tile-slide %}
+<Preview>
+    <Story name="Slide Tile">
+        {() => `
 <div class="docs-section-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--slide">
         <div class="fd-tile__background-img" style="background-image: url('https://placeimg.com/200/200/nature')"></div>
@@ -823,15 +883,17 @@ To create a Slide Tile, use the `fd-tile--slide` modifier class.
         </div>
     </div>
 </div>
-{% endcapture %}
-{% include display-component.html component=tile-slide %}
-
-<br>
+            `}
+    </Story>
+</Preview>
 
 ## Tile In Action Mode
+
 In action mode view, the close button is displayed on the top right-hand corner of the Tile. The action icon is only an indicator and is displayed on the bottom right-hand corner. The click/touch area fills the entire Tile, excluding the click/touch area reserved for the close button. For Action Mode use the `fd-tile--action` modifier class.
 
-{% capture tile-action %}
+<Preview>
+    <Story name="Tile In Action Mode">
+        {() => `
 <div class="docs-section-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--launch fd-tile--action">
         <div class="fd-tile__overlay"></div>
@@ -916,60 +978,42 @@ In action mode view, the close button is displayed on the top right-hand corner 
         </div>
     </div>
 </div>
+            `}
+    </Story>
+</Preview>
 
-{% endcapture %}
-{% include display-component.html component=tile-action %}
-
-<br>
 ## Line Tile
-<ul class="docs-ul">
-    <li>
-        Line Tile Container - <code>fd-tile-container</code>. The container controls the behaviour of the tiles - <strong>Floating</strong> (default) and <strong>List</strong> (<code>fd-tile-container--list</code>). For screen sizes less than 450px use the <strong>List</strong> behaviour. For bigger screens use the default <strong>Floating</strong> behaviour.
-        <ul class="docs-ul">
-            <li>Line Tile - apply the <code>fd-tile--line</code> modifier class to <code>fd-tile</code>.
-                Line Tiles have two modes - cosy (default) and compact (<code>fd-tile--compact</code>). *Note: the compact mode is applied only on Line Tiles. It should not be applied on the other types.
-                <ul class="docs-ul">
-                    <li>Line Tile Header - <code>fd-tile__header</code>
-                        <ul class="docs-ul">
-                            <li>Title <code>fd-tile__title</code> - <strong>required</strong>. For a Line Tile with a badge the title and the badge must be wrapped in a container <code>fd-tile__title-container</code>.
-                            </li>
-                            <li>Subtitle <code>fd-tile__subtitle</code> <strong>optional</strong>.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-</ul>
 
-<br>
-<strong>Breakpoints</strong>
-<ul class="docs-ul">
-    <li><strong>List</strong> behaviour - for screen sizes less than 450px - S screens.</li>
-    <li><strong>Floating</strong> behaviour - for screen sizes greater or equal to 450px - M, L and XL screens.</li>
-</ul>
+-   Line Tile Container - `fd-tile-container`. The container controls the behaviour of the tiles - **Floating** (default) and **List** (`fd-tile-container--list`). For screen sizes less than 450px use the **List** behaviour. For bigger screens use the default **Floating** behaviour.
+    -   Line Tile - apply the `fd-tile--line` modifier class to `fd-tile`. Line Tiles have two modes - cosy (default) and compact (`fd-tile--compact`). \*Note: the compact mode is applied only on Line Tiles. It should not be applied on the other types.
+        -   Line Tile Header - `fd-tile__header`
+            -   Title `fd-tile__title` - **required**. For a Line Tile with a badge the title and the badge must be wrapped in a container `fd-tile__title-container`.
+            -   Subtitle `fd-tile__subtitle` **optional**.
 
-<br>
-<strong>Wrapping and Overflow Behaviour</strong>
-<ul class="docs-ul">
-    <li><strong>Floating</strong> behaviour - If the content of the Tile can't fit in one line, the Tile wraps into two rows. *Note: this behaviour requires JavaScript and is not provided in Fundamental-Styles. </li>
-    <li><strong>List</strong> behaviour - the Tile grows vertically and the text inside wraps into two rows, splitting the title in the first row and the subtitle in the second row.</li>
-</ul>
+**Breakpoints**
 
-<br>
-<strong>List Tile States</strong>
-<ul class="docs-ul">
-    <li>Regular</li>
-    <li>Hover</li>
-    <li>Pressed</li>
-    <li>Disabled - the disabled state can only be applied on Line Tiles. The other types do not have a disabled state. </li>
-</ul>
+-   **List** behaviour - for screen sizes less than 450px - S screens.
+-   **Floating** behaviour - for screen sizes greater or equal to 450px - M, L and XL screens.
 
-<br>
-<strong>Action Mode</strong> <br><br>
-The controls are wrapped in a container <code>fd-tile__action-container</code> which is right aligned within the tile. The default spacing between the header and actions container for List View in Action mode is 0.25rem. Gradient masking is also supported in edit mode. 
+**Wrapping and Overflow Behaviour**
 
-{% capture tile-line %}
+-   **Floating** behaviour - If the content of the Tile can't fit in one line, the Tile wraps into two rows. \*Note: this behaviour requires JavaScript and is not provided in Fundamental-Styles.
+-   **List** behaviour - the Tile grows vertically and the text inside wraps into two rows, splitting the title in the first row and the subtitle in the second row.
+
+**List Tile States**
+
+-   Regular
+-   Hover
+-   Pressed
+-   Disabled - the disabled state can only be applied on Line Tiles. The other types do not have a disabled state.
+
+**Action Mode**
+
+The controls are wrapped in a container `fd-tile__action-container` which is right aligned within the tile. The default spacing between the header and actions container for List View in Action mode is 0.25rem. Gradient masking is also supported in edit mode.
+
+<Preview>
+    <Story name="Line Tile">
+        {() => `
 <h4>Line Tile - Floating Behaviour, Cosy Mode</h4>
 <div class="docs-section-container">
     <div class="fd-tile-container"> 
@@ -1386,6 +1430,9 @@ The controls are wrapped in a container <code>fd-tile__action-container</code> w
         </div>
     </div>
 </div>
+            `}
+    </Story>
+</Preview>
 
-{% endcapture %}
-{% include display-component.html component=tile-line %}
+<Community />
+<Footer />

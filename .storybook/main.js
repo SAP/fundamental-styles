@@ -3,7 +3,7 @@ const glob = require("glob");
 const { exec } = require("child_process");
 
 module.exports = {
-  stories: ['../stories/docs/introduction.stories.mdx', '../stories/**/*.@(stories|visual).js'],
+  stories: ['../stories/docs/introduction.stories.mdx', '../stories/**/*.@(stories|visual).@(js|mdx)'],
   addons: [
     "@storybook/addon-knobs/register",
     "@storybook/addon-actions",
