@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.65"></a>
+# [0.11.0-rc.65](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.64...v0.11.0-rc.65) (2020-06-26)
+
+
+### Bug Fixes
+
+* add RTL for Panel expand button ([#1171](https://github.com/SAP/fundamental-styles/issues/1171)) ([c457ba0](https://github.com/SAP/fundamental-styles/commit/c457ba0))
+* Fiori 3 file uploader changes ([#1117](https://github.com/SAP/fundamental-styles/issues/1117)) ([7c52f69](https://github.com/SAP/fundamental-styles/commit/7c52f69))
+
+
+
 <a name="0.11.0-rc.64"></a>
 # [0.11.0-rc.64](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.63...v0.11.0-rc.64) (2020-06-24)
 
