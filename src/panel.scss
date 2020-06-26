@@ -54,6 +54,10 @@ $block: #{$fd-namespace}-panel;
   &__button {
     @include fd-icon('slim-arrow-right');
 
+    @include fd-rtl() {
+      @include fd-icon('slim-arrow-left');
+    }
+
     &::before {
       font-size: 1rem;
       line-height: normal;
