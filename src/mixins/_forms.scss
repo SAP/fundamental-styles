@@ -78,10 +78,6 @@
   @include fd-disabled() {
     pointer-events: none;
     opacity: var(--sapContent_DisabledOpacity);
-
-    &::placeholder {
-      color: transparent;
-    }
   }
 
   @include fd-readonly() {
@@ -113,6 +109,7 @@
   &::placeholder {
     font-style: italic;
     color: var(--sapField_PlaceholderTextColor);
+    opacity: 100%;
   }
 
   &::selection {
