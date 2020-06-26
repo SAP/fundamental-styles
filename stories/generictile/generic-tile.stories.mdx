@@ -1,16 +1,22 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+
 import '../../dist/tile.css';
+import '../../dist/badge.css';
+
 import './generic-tile.css';
+
 import Header from '../../.storybook/custom/components/Header';
 import InfoLabel from '../../.storybook/custom/components/InfoLabel';
 
 import Community from '../../.storybook/custom/components/Community';
+import Toc from '../../.storybook/custom/components/Toc.js';
 import Footer from '../../.storybook/custom/components/Footer';
 
 <Meta
     title="Components/GenericTile"
     parameters={{
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        docs: { iframeHeight: 500 }
     }}
 />
 
@@ -18,13 +24,79 @@ import Footer from '../../.storybook/custom/components/Footer';
 
 ## Generic Tile
 
-<InfoLabel tag='f3'/>
-<InfoLabel tag='a11y'/>
-<InfoLabel tag='theme'/>
+<InfoLabel tag="f3" />
+<InfoLabel tag="a11y" />
+<InfoLabel tag="theme" />
 
-Generic Tiles can be used to represent an app similar to the SAP Fiori launchpad home page.
-They can display different types of content, which are based on the data supplied by the app.
-They can contain an icon, a title, an informative text, KPIs, counters and charts.
+<h2 className="toc-heading">Contents</h2>
+
+<nav class=" toc">
+    <ol class="toc-list ">
+        <li class="toc-list-item is-active-li">
+            <a href="#examples" class="toc-link node-name--H2  is-active-link" target="_self">
+                Examples
+            </a>
+            <ol class="toc-list ">
+                <li class="toc-list-item">
+                    <a href="#generic-tile-sizes-responsiveness" class="toc-link node-name--H3 " target="_self">
+                        Generic Tile Sizes (Responsiveness)
+                    </a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#generic-tile-layout" class="toc-link node-name--H3 " target="_self">
+                        Generic Tile Layout
+                    </a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#generic-tile-content-columns" class="toc-link node-name--H3 " target="_self">
+                        Generic Tile Content Columns
+                    </a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#launch-tile" class="toc-link node-name--H3 " target="_self">
+                        Launch Tile
+                    </a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#kpi-tile-numeric-content" class="toc-link node-name--H3 " target="_self">
+                        KPI Tile (Numeric Content)
+                    </a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#feed-tile" class="toc-link node-name--H3 " target="_self">
+                        Feed Tile
+                    </a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#badge-tile" class="toc-link node-name--H3 " target="_self">
+                        Badge Tile
+                    </a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#slide-tile" class="toc-link node-name--H3 " target="_self">
+                        Slide Tile
+                    </a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#tile-in-action-mode" class="toc-link node-name--H3 " target="_self">
+                        Tile In Action Mode
+                    </a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#line-tile" class="toc-link node-name--H3 " target="_self">
+                        Line Tile
+                    </a>
+                </li>
+            </ol>
+        </li>
+    </ol>
+</nav>
+
+Generic Tiles can be used to represent an app similar to the SAP Fiori launchpad home page. They can display different
+types of content, which are based on the data supplied by the app. They can contain an icon, a title, an informative
+text, KPIs, counters and charts.
+
+## Examples
 
 ## Generic Tile Sizes (Responsiveness)
 
@@ -37,12 +109,12 @@ The large (default) tiles are designed for screens larger than 374px. For smalle
     <Story name="Generic Tile Sizes">
         {() => `
             <div class="docs-section-container">
-                <div role="button" tabindex="0" class="fd-tile">
+                <div role="button" aria-label="button" tabindex="0" class="fd-tile">
                     <div class="fd-tile__header"></div>
                     <div class="fd-tile__content"></div>
                     <div class="fd-tile__footer"></div>
                 </div>
-                <div role="button" tabindex="0" class="fd-tile fd-tile--s">
+                <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s">
                     <div class="fd-tile__header"></div>
                     <div class="fd-tile__content"></div>
                     <div class="fd-tile__footer"></div>
@@ -73,22 +145,22 @@ The layout of the generic tile is fixed, with designated areas for the header, c
     <Story name="Generic Tile Layout">
         {() => `
 <div class="docs-section-container">
-    <div role="button" tabindex="0" class="fd-tile">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile">
         <div class="fd-tile__header"></div>
         <div class="fd-tile__content"></div>
         <div class="fd-tile__footer"></div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--double">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--double">
         <div class="fd-tile__header"></div>
         <div class="fd-tile__content"></div>
         <div class="fd-tile__footer"></div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--s">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s">
         <div class="fd-tile__header"></div>
         <div class="fd-tile__content"></div>
         <div class="fd-tile__footer"></div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--s fd-tile--double">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s fd-tile--double">
         <div class="fd-tile__header"></div>
         <div class="fd-tile__content"></div>
         <div class="fd-tile__footer"></div>
@@ -144,7 +216,7 @@ The tiles header, content and footer can be split into two columns with a 0.25re
     <Story name="Generic Tile Content Columns">
         {() => `
 <div class="docs-section-container">
-    <div role="button" tabindex="0" class="fd-tile">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile">
         <div class="fd-tile__header fd-tile__header--2-col">
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
@@ -158,7 +230,7 @@ The tiles header, content and footer can be split into two columns with a 0.25re
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
         </div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--double">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--double">
         <div class="fd-tile__header fd-tile__header--2-col">
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
@@ -172,7 +244,7 @@ The tiles header, content and footer can be split into two columns with a 0.25re
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
         </div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--s">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s">
         <div class="fd-tile__header fd-tile__header--2-col">
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
@@ -186,7 +258,7 @@ The tiles header, content and footer can be split into two columns with a 0.25re
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
         </div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--s fd-tile--double">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s fd-tile--double">
         <div class="fd-tile__header fd-tile__header--2-col">
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>

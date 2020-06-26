@@ -25,12 +25,12 @@ The large (default) tiles are designed for screens larger than 374px. For smalle
 *The background-colors are used to illustrate the tile sections in the documentation page.
 {% capture tile-sizes %}
 <div class="docs-section-container">
-    <div role="button" tabindex="0" class="fd-tile">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile">
         <div class="fd-tile__header"></div>
         <div class="fd-tile__content"></div>
         <div class="fd-tile__footer"></div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--s">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s">
         <div class="fd-tile__header"></div>
         <div class="fd-tile__content"></div>
         <div class="fd-tile__footer"></div>
@@ -64,22 +64,22 @@ The layout of the generic tile is fixed, with designated areas for the header, c
 
 {% capture tile-sizes %}
 <div class="docs-section-container">
-    <div role="button" tabindex="0" class="fd-tile">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile">
         <div class="fd-tile__header"></div>
         <div class="fd-tile__content"></div>
         <div class="fd-tile__footer"></div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--double">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--double">
         <div class="fd-tile__header"></div>
         <div class="fd-tile__content"></div>
         <div class="fd-tile__footer"></div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--s">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s">
         <div class="fd-tile__header"></div>
         <div class="fd-tile__content"></div>
         <div class="fd-tile__footer"></div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--s fd-tile--double">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s fd-tile--double">
         <div class="fd-tile__header"></div>
         <div class="fd-tile__content"></div>
         <div class="fd-tile__footer"></div>
@@ -116,7 +116,7 @@ The tiles header, content and footer can be split into two columns with a 0.25re
 *The background color is used to illustrate the column sections in the documentation page. 
 {% capture tile-sizes %}
 <div class="docs-section-container">
-    <div role="button" tabindex="0" class="fd-tile">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile">
         <div class="fd-tile__header fd-tile__header--2-col">
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
@@ -130,7 +130,7 @@ The tiles header, content and footer can be split into two columns with a 0.25re
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
         </div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--double">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--double">
         <div class="fd-tile__header fd-tile__header--2-col">
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
@@ -144,7 +144,7 @@ The tiles header, content and footer can be split into two columns with a 0.25re
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
         </div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--s">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s">
         <div class="fd-tile__header fd-tile__header--2-col">
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
@@ -158,7 +158,7 @@ The tiles header, content and footer can be split into two columns with a 0.25re
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
         </div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--s fd-tile--double">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s fd-tile--double">
         <div class="fd-tile__header fd-tile__header--2-col">
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
