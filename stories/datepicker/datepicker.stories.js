@@ -22,7 +22,7 @@ export const sizes = () => `
             <div class="fd-input-group">
 				<input class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date" id="asdewq123">
 				<span class="fd-input-group__addon fd-input-group__addon--button">
-				<button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2" aria-controls="Itcgq828" aria-expanded="false" aria-haspopup="true" aria-label="button"></button>
+				<button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2" aria-controls="Itcgq828" aria-expanded="false" aria-haspopup="true" aria-label="Choose Date"></button>
 				</span>
 			</div>
 		</div>
@@ -206,7 +206,7 @@ export const sizes = () => `
 			<div class="fd-input-group">
 				<input type="text" value="" placeholder="Pick a date" class="fd-input fd-input--compact fd-input-group__input" id="asdewq124">
 				<span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-				<button class="fd-button fd-button--transparent fd-button--compact fd-input-group__button fd-popover__control sap-icon--appointment-2" aria-controls="Itcgq82" aria-expanded="false" aria-haspopup="true" aria-label="button"></button>
+				<button class="fd-button fd-button--transparent fd-button--compact fd-input-group__button fd-popover__control sap-icon--appointment-2" aria-controls="Itcgq82" aria-expanded="false" aria-haspopup="true" aria-label="Choose Date"></button>
 				</span>
 			</div>
 		</div>
@@ -396,7 +396,7 @@ export const todaySelectionButton = () => `
 			<div class="fd-input-group">
 				<input class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date" id="asdewq125">
 				<span class="fd-input-group__addon fd-input-group__addon--button">
-				<button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2" aria-controls="Itcgq829" aria-expanded="false" aria-haspopup="true" aria-label="button"></button>
+				<button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2" aria-controls="Itcgq829" aria-expanded="false" aria-haspopup="true" aria-label="Choose Date"></button>
 				</span>
 			</div>
 		</div>
@@ -594,7 +594,7 @@ export const todayNavigationButton = () => `
 			<div class="fd-input-group">
 				<input class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date" id="asdewq126">
 				<span class="fd-input-group__addon fd-input-group__addon--button">
-				<button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2" aria-controls="Itcgq830" aria-expanded="false" aria-haspopup="true" aria-label="button"></button>
+				<button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2" aria-controls="Itcgq830" aria-expanded="false" aria-haspopup="true" aria-label="Choose Date"></button>
 				</span>
 			</div>
 		</div>
@@ -1154,7 +1154,7 @@ export const rtlExample = () => `
 			<div class="fd-input-group">
 				<input class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date" id="asdewq127">
 				<span class="fd-input-group__addon fd-input-group__addon--button">
-				<button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2" aria-controls="Itcgq828" aria-expanded="false" aria-haspopup="true" aria-label="button"></button>
+				<button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2" aria-controls="Itcgq828" aria-expanded="false" aria-haspopup="true" aria-label="Choose Date"></button>
 				</span>
 			</div>
 		</div>
