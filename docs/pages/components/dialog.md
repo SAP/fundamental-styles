@@ -139,7 +139,7 @@ This behaviour can be changed using <code>.fd-dialog__content--no-mobile-stretch
     <li><code>.fd-dialog__content--mobile</code>: dialog takes full height and width</li>
     <li><code>.fd-dialog__content--no-mobile-stretch</code>: margin: 6% 10%</li>
 </ul>
-Please remember that on mobile devices Bar component should be used with <code>.fd-bar--cosy</code> class.
+Please remember that on mobile devices Bar component should be used with <code>.fd-bar--cozy</code> class.
 
 ### Dialog header/body/footer horizontal paddings
 {% capture dialog-size %}

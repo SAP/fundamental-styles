@@ -287,7 +287,7 @@ There are four placement options:
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverHSF345">
         <div class="fd-popover__body-header">
-            <div class="fd-bar fd-bar--cosy fd-bar--header-with-subheader">
+            <div class="fd-bar fd-bar--cozy fd-bar--header-with-subheader">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
                         <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
@@ -298,7 +298,7 @@ There are four placement options:
                 </div>
             </div>
         </div>
-        <div class="fd-bar fd-bar--cosy fd-bar--subheader">
+        <div class="fd-bar fd-bar--cozy fd-bar--subheader">
                 <div class="fd-bar__middle">
                     <div class="fd-bar__element">
                         <div class="fd-form-item">
@@ -315,7 +315,7 @@ There are four placement options:
             <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('https://placeimg.com/400/400/nature');" role="presentation" aria-label="Nature"></span>
         </div>
         <div class="fd-popover__body-footer">
-            <div class="fd-bar fd-bar--cosy fd-bar--footer">
+            <div class="fd-bar fd-bar--cozy fd-bar--footer">
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
                         <button class="fd-button fd-button--compact fd-button--emphasized">Save</button>

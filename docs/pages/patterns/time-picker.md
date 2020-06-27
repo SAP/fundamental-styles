@@ -85,7 +85,7 @@ This component mostly relies on the CSS of other components and has no CSS of it
             </div>
         </div>
        <div class="fd-popover__body-footer">
-            <div class="fd-bar fd-bar--cosy fd-bar--footer">
+            <div class="fd-bar fd-bar--cozy fd-bar--footer">
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
                         <button class="fd-button fd-button--emphasized">OK</button>
@@ -180,7 +180,7 @@ This component mostly relies on the CSS of other components and has no CSS of it
             </div>
         </div>
        <div class="fd-popover__body-footer">
-            <div class="fd-bar fd-bar--cosy fd-bar--footer">
+            <div class="fd-bar fd-bar--cozy fd-bar--footer">
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
                         <button class="fd-button fd-button--emphasized">OK</button>
@@ -274,7 +274,7 @@ This component mostly relies on the CSS of other components and has no CSS of it
             </div>
         </div>
        <div class="fd-popover__body-footer">
-            <div class="fd-bar fd-bar--cosy fd-bar--footer">
+            <div class="fd-bar fd-bar--cozy fd-bar--footer">
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
                         <button class="fd-button fd-button--compact fd-button--emphasized">OK</button>

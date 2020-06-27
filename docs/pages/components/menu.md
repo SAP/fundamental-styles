@@ -139,7 +139,7 @@ Example shows the parent menu's item in active state to simulate a pressed/touch
                 </ul>
             </nav>
         </div>
-       <footer class="fd-dialog__footer fd-bar fd-bar--cosy fd-bar--footer">
+       <footer class="fd-dialog__footer fd-bar fd-bar--cozy fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-button fd-button--light fd-dialog__decisive-button">Cancel</button>
@@ -189,7 +189,7 @@ Example shows the parent menu's item in active state to simulate a pressed/touch
                 </ul>
             </nav>
         </div>
-       <footer class="fd-dialog__footer fd-bar fd-bar--cosy fd-bar--footer">
+       <footer class="fd-dialog__footer fd-bar fd-bar--cozy fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-button fd-button--light fd-dialog__decisive-button">Cancel</button>

@@ -648,7 +648,7 @@ So instead of using popover and dropdown, it should be wrapped in `dialog` and `
                 </div>
             </div>
         </header>
-        <div class="fd-dialog__subheader fd-bar fd-bar--cosy fd-bar--subheader">
+        <div class="fd-dialog__subheader fd-bar fd-bar--cozy fd-bar--subheader">
             <div class="fd-bar__middle">
                 <div class="fd-bar__element">
                     <div class="fd-input-group">
@@ -723,7 +723,7 @@ So instead of using popover and dropdown, it should be wrapped in `dialog` and `
                  </li>
              </ul>
         </div>
-       <footer class="fd-dialog__footer fd-bar fd-bar--cosy fd-bar--footer">
+       <footer class="fd-dialog__footer fd-bar fd-bar--cozy fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-button fd-button--emphasized fd-dialog__decisive-button">OK</button>

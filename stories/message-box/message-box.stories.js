@@ -306,7 +306,7 @@ export const responsive = () =>
     `
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--information fd-message-box--active">
     <div class="fd-message-box__content fd-message-box__content--s">
-        <header class="fd-bar fd-bar--cosy fd-bar--header fd-message-box__header">
+        <header class="fd-bar fd-bar--cozy fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
                     <h2 class="fd-message-box__title">Information</h2>
@@ -319,7 +319,7 @@ export const responsive = () =>
                 <a href="#" class="fd-link" tabindex="0">Show more</a>
             </div>
         </div>
-        <footer class="fd-bar fd-bar--cosy fd-bar--footer fd-message-box__footer">
+        <footer class="fd-bar fd-bar--cozy fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
@@ -335,7 +335,7 @@ export const responsive = () =>
 
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--error fd-message-box--active">
     <div class="fd-message-box__content fd-message-box__content--m">
-        <header class="fd-bar fd-bar--cosy fd-bar--header fd-message-box__header">
+        <header class="fd-bar fd-bar--cozy fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
                     <h2 class="fd-message-box__title">Error</h2>
@@ -345,7 +345,7 @@ export const responsive = () =>
         <div class="fd-message-box__body">
             Error Message Box on medium screen in Cosy mode  
         </div>
-        <footer class="fd-bar fd-bar--cosy fd-bar--footer fd-message-box__footer">
+        <footer class="fd-bar fd-bar--cozy fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
@@ -426,7 +426,7 @@ To enable responsive behavior for the paddings use the following modifier classe
 - \`.fd-message-box__content--l\`: 2rem - min-width: 1024px and max-width: 1439px
 - \`.fd-message-box__content--xl\`: 3rem - min-width: 1440px
 
-On mobile devices the component should be in \`cosy\` mode. Add the \`fd-bar--cosy\` modifier class to the header and the footer. The buttons in the footer should also be in Cosy mode. The deafult mode for Buttons is \`cosy\` so no modifier classes are required.
+On mobile devices the component should be in \`cosy\` mode. Add the \`fd-bar--cozy\` modifier class to the header and the footer. The buttons in the footer should also be in Cosy mode. The deafult mode for Buttons is \`cosy\` so no modifier classes are required.
 
 On phone devices the content container takes 100vh and 100vw. It's achieved by applying the \`fd-message-box__content--mobile\` modifier class on the Message Box content container.
         `

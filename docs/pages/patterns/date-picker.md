@@ -566,7 +566,7 @@ The today selection button in the footer selects today's date in the system or u
 					</div>
 				</div>
 			</div>
-			<footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
+			<footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cozy">
 				<div class="fd-bar__right">
 					<div class="fd-bar__element">
 						<button class="fd-dialog__decisive-button fd-button">Today</button>
@@ -928,7 +928,7 @@ The today navigation button in the header navigates focus to today's date in the
                 </div>
             </div>
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cozy">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">
@@ -946,7 +946,7 @@ The today navigation button in the header navigates focus to today's date in the
 {% capture mobile-datepicker-portrait-today-navigation %}
 <div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--portrait fd-dialog fd-dialog--active">
     <div class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile">
-        <header class="fd-dialog__header fd-bar fd-bar--header fd-bar--cosy">
+        <header class="fd-dialog__header fd-bar fd-bar--header fd-bar--cozy">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
                     <h3 class="fd-dialog__title">
@@ -1115,7 +1115,7 @@ The today navigation button in the header navigates focus to today's date in the
                 <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
             </div>
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cozy">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">
