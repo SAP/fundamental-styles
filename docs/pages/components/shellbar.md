@@ -33,7 +33,6 @@ The shellbar handles layout and has some built-in elements but relies on standal
 * `.fd-shellbar__logo` (required) for company branding. Use `--image-replaced` modifier when using CSS to apply the logo.
 * `.fd-shellbar__title` (required) displays the current application.
 * `.fd-shellbar__subtitle` (optional) displays an application context. _This should be used rarely._
-* `.fd-product-menu` (optional) for navigating to applications within the product.
 * `.fd-shellbar__action` (required) container for each product action and link.
 * `.fd-shellbar__action--mobile` (optional) for product actions only visible on mobile screens.
 * `.fd-shellbar__action--desktop` (optional) for product actions only visible on desktop screens.
