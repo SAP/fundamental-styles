@@ -20,7 +20,7 @@ export const productSwitchInShellbar = () => `
                     aria-haspopup="true">
                 </button>
             </div>
-            <div class="fd-popover__body fd-popover__body--right" aria-hidden="false;" id="product-switch-body">
+            <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="product-switch-body">
                 <div class="fd-product-switch__body">
                     <ul class="fd-product-switch__list">
                         <li class="fd-product-switch__item" tabindex="0">

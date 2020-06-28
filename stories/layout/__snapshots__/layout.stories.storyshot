@@ -1,66 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Layouts/Layout Eight 1`] = `
+exports[`Storyshots Layouts/Column Layouts Centered Container 1`] = `
 
 
 `;
 
-exports[`Storyshots Layouts/Layout Eleven 1`] = `
+exports[`Storyshots Layouts/Column Layouts Columns 12 1`] = `
 
 
 `;
 
-exports[`Storyshots Layouts/Layout Five 1`] = `
+exports[`Storyshots Layouts/Column Layouts Default Container 1`] = `
 
 
 `;
 
-exports[`Storyshots Layouts/Layout Forteen 1`] = `
+exports[`Storyshots Layouts/Column Layouts Flex Container 1`] = `
 
 
 `;
 
-exports[`Storyshots Layouts/Layout Four 1`] = `
+exports[`Storyshots Layouts/Column Layouts Fluid Container 1`] = `
 
 
 `;
 
-exports[`Storyshots Layouts/Layout Nine 1`] = `
+exports[`Storyshots Layouts/Column Layouts Four Column Layout 1`] = `
 
 
 `;
 
-exports[`Storyshots Layouts/Layout One 1`] = `
+exports[`Storyshots Layouts/Column Layouts Four columns and Three flex columns 1`] = `
 
 
 `;
 
-exports[`Storyshots Layouts/Layout Seven 1`] = `
+exports[`Storyshots Layouts/Column Layouts One column, shifted by three columns 1`] = `
 
 
 `;
 
-exports[`Storyshots Layouts/Layout Six 1`] = `
+exports[`Storyshots Layouts/Column Layouts Six Column Layout 1`] = `
 
 
 `;
 
-exports[`Storyshots Layouts/Layout Thirteen 1`] = `
+exports[`Storyshots Layouts/Column Layouts Three Column Layout 1`] = `
 
 
 `;
 
-exports[`Storyshots Layouts/Layout Three 1`] = `
+exports[`Storyshots Layouts/Column Layouts Three Columns 1`] = `
 
 
 `;
 
-exports[`Storyshots Layouts/Layout Twelve 1`] = `
+exports[`Storyshots Layouts/Column Layouts Three columns using flexbox 1`] = `
 
 
 `;
 
-exports[`Storyshots Layouts/Layout Two 1`] = `
+exports[`Storyshots Layouts/Column Layouts Two Columns 1`] = `
 
 
 `;
