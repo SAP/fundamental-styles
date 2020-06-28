@@ -1,6 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Product Switch One 1`] = `
+exports[`Storyshots Components/Product Switch Product Switch 3 Column Layout 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Product Switch Product Switch In Shellbar 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Product Switch Product Switch On Desktop 1`] = `
 
 
 `;
@@ -10,12 +20,7 @@ exports[`Storyshots Components/Product Switch Rtl 1`] = `
 
 `;
 
-exports[`Storyshots Components/Product Switch Three 1`] = `
-
-
-`;
-
-exports[`Storyshots Components/Product Switch Two 1`] = `
+exports[`Storyshots Components/Product Switch Smallest Screen 1`] = `
 
 
 `;
