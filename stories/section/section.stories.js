@@ -119,16 +119,6 @@ This may be more appropriate depending on the need to maintain source order and 
     }
 };
 
-sectionLayoutGrid.storyName = 'With Layout Grid';
-sectionLayoutGrid.parameters = {
-    docs: {
-        iframeHeight: 300,
-        storyDescription: `
-Shows an example with the grid span helper class.
-This is most appropriate when displaying a collection of content in a linear order.`
-    }
-};
-
 export const sectionHeaders = () => `
 <section class="fd-section">
     <div class="fd-section__header">
@@ -146,12 +136,6 @@ sectionHeaders.storyName = 'With Headers';
 sectionHeaders.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'Header and title elements are available when necessary to label content groups.'
-    }
-};
-sectionWithHeader.parameters = {
-    docs: {
-        iframeHeight: 200,
         storyDescription: 'Header and title elements are available when necessary to label content groups.'
     }
 };
@@ -249,6 +233,7 @@ Section Content
     <div class='fd-section__footer'>footer part</div>
 </section>
 `;
+
 testingSectionWithHeadlines.parameters = {
     docs: {
         disable: true
