@@ -9,6 +9,11 @@ exports[`Storyshots Components/Table Fix Column Header 1`] = `
         .fd-table--fixed {
            padding-left: 200px;
         }
+        [dir=rtl] .fd-table--fixed,
+        .fd-table--fixed[dir=rtl] {
+           padding-left: 0;
+           padding-right: 200px;            
+        }
         
         .fd-table--fixed .fd-table__cell {
             min-width: 200px;
@@ -142,6 +147,7 @@ exports[`Storyshots Components/Table Fix Column Header 1`] = `
                
             <td
               class="fd-table__cell fd-table__cell--fixed"
+              scope="row"
             >
               Lorem ipsum dolor sit amet ipsum
             </td>
@@ -206,6 +212,7 @@ exports[`Storyshots Components/Table Fix Column Header 1`] = `
                
             <td
               class="fd-table__cell fd-table__cell--fixed"
+              scope="row"
             >
               Lorem ipsum dolor sit amet ipsum
             </td>
@@ -270,6 +277,7 @@ exports[`Storyshots Components/Table Fix Column Header 1`] = `
                
             <td
               class="fd-table__cell fd-table__cell--fixed"
+              scope="row"
             >
               Lorem ipsum dolor sit amet ipsum
             </td>
@@ -343,8 +351,274 @@ exports[`Storyshots Components/Table Fix Column Header 1`] = `
 `;
 
 exports[`Storyshots Components/Table Interactive Table With Hoverable and Activable Cells and Rows 1`] = `
+<section>
+  
 
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin-bottom:0px;"
+    >
+      Interactive Table With Hoverable and Activable Cells and Rows
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
 
+  </div>
+  
+
+  <table
+    class="fd-table"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable"
+          scope="col"
+        >
+          Hovering And
+        </th>
+        
+            
+        <th
+          class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable"
+          scope="col"
+        >
+          Clicking
+        </th>
+        
+            
+        <th
+          class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable"
+          scope="col"
+        >
+          On Header's Cell
+        </th>
+        
+            
+        <th
+          class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable"
+          scope="col"
+        >
+          Will Trigger
+        </th>
+        
+            
+        <th
+          class="fd-table__cell fd-table__cell--activable fd-table__cell--hoverable"
+          scope="col"
+        >
+          Color Change
+        </th>
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        class="fd-table__row fd-table__row--activable fd-table__row--hoverable"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Clicking on any Cell
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          On This Row
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Will cause
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Highlight of Whole Row
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--activable"
+        >
+          Clicking On Cell
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--activable"
+        >
+          Will cause
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--activable"
+        >
+          Highlight of cell
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--activable"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--activable"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--hoverable"
+        >
+          Hovering On Any Cell
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--hoverable"
+        >
+          Will Change
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--hoverable"
+        >
+          Background
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--hoverable"
+        >
+          Of Certain
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--hoverable"
+        >
+          Cell
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row fd-table__row--hoverable"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Hovering On Any Cell
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          And cells
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Will Change
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Background of Whole Row
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+
+  </table>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Table Merged Cells 1`] = `
@@ -577,28 +851,3019 @@ exports[`Storyshots Components/Table Merged Cells 1`] = `
 `;
 
 exports[`Storyshots Components/Table Navigation Indication States 1`] = `
+<section>
+  
+
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin-bottom:0px;"
+    >
+      Table with Navigation Indication State
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
+
+  </div>
+  
+
+  <table
+    class="fd-table"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        />
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--fit-content"
+          scope="col"
+        >
+          
+                
+          <button
+            aria-label="navigation"
+            class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"
+          />
+          
+            
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated"
+          scope="col"
+        >
+          
+                
+          <button
+            aria-label="navigation"
+            class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"
+          />
+          
+            
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--fit-content"
+          scope="col"
+        >
+          
+                
+          <button
+            aria-label="navigation"
+            class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"
+          />
+          
+            
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+
+  </table>
+  
 
 
+  <div
+    dir="rtl"
+  >
+     
+    
+    <div
+      class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+    >
+      
+        
+      <h4
+        style="margin-bottom:0px;"
+      >
+        Table with Navigation Indication State on RTL
+      </h4>
+      
+        
+      <span
+        class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+      />
+      
+    
+    </div>
+    
+    
+    <table
+      class="fd-table"
+    >
+      
+        
+      <thead
+        class="fd-table__header"
+      >
+        
+            
+        <tr
+          class="fd-table__row"
+        >
+          
+                
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+                
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+                
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+                
+          <th
+            class="fd-table__cell"
+            scope="col"
+          >
+            Column Header
+          </th>
+          
+                
+          <th
+            class="fd-table__cell"
+            scope="col"
+          />
+          
+            
+        </tr>
+        
+        
+      </thead>
+      
+        
+      <tbody
+        class="fd-table__body"
+      >
+        
+            
+        <tr
+          class="fd-table__row"
+        >
+          
+                
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+                
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+                
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+                
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+                
+          <td
+            class="fd-table__cell fd-table__cell--fit-content"
+            scope="col"
+          >
+            
+                    
+            <button
+              aria-label="navigation"
+              class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
+            />
+            
+                
+          </td>
+          
+            
+        </tr>
+        
+            
+        <tr
+          class="fd-table__row"
+        >
+          
+                
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+                
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+                
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+                
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+                
+          <td
+            class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated"
+            scope="col"
+          >
+            
+                    
+            <button
+              aria-label="navigation"
+              class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
+            />
+            
+                
+          </td>
+          
+            
+        </tr>
+        
+            
+        <tr
+          class="fd-table__row"
+        >
+          
+                
+          <td
+            class="fd-table__cell"
+          >
+            <a
+              class="fd-link"
+            >
+              user.name@email.com
+            </a>
+          </td>
+          
+                
+          <td
+            class="fd-table__cell"
+          >
+            First Name
+          </td>
+          
+                
+          <td
+            class="fd-table__cell"
+          >
+            Last Name
+          </td>
+          
+                
+          <td
+            class="fd-table__cell"
+          >
+            01/26/17
+          </td>
+          
+                
+          <td
+            class="fd-table__cell fd-table__cell--fit-content"
+            scope="col"
+          >
+            
+                    
+            <button
+              aria-label="navigation"
+              class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
+            />
+            
+                
+          </td>
+          
+            
+        </tr>
+        
+        
+      </tbody>
+      
+    
+    </table>
+    
+
+  </div>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Table Primary 1`] = `
+<section>
+  
 
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin-bottom:0px;"
+    >
+      Default Table
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
 
+  </div>
+  
+
+  <table
+    class="fd-table"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Middle Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Middle Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Middle Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+
+  </table>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Table Responsive Table 1`] = `
+<section>
+  
 
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin-bottom:0px;"
+    >
+      Responsive Table
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
 
+  </div>
+  
+
+  <table
+    class="fd-table fd-table--no-horizontal-borders"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox"
+            id="kqqzPI"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="kqqzPI"
+          />
+          
+            
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Name
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Status
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Price
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Country
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+        />
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox"
+            id="EWuzWh"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="EWuzWh"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Banana
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          
+                
+          <span
+            class="fd-object-status fd-object-status--positive"
+          >
+            
+                    Available
+                
+          </span>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          5 EUR
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          India
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
+        >
+          
+                
+          <span
+            class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+          />
+          
+            
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox"
+            id="19j0Sc"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="19j0Sc"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Pineapple
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          
+                
+          <span
+            class="fd-object-status fd-object-status--negative"
+          >
+            
+                    Out of stock
+                
+          </span>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          2 EUR
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Mexico
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
+        >
+          
+                
+          <span
+            class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+          />
+          
+            
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox"
+            id="a7SfGX"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="a7SfGX"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Orange
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          
+                
+          <span
+            class="fd-object-status fd-object-status--informative"
+          >
+            
+                    Temporary unavailable
+                
+          </span>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          6 EUR
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Spain
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
+        >
+          
+                
+          <span
+            class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+          />
+          
+            
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+
+  </table>
+</section>
 `;
 
 exports[`Storyshots Components/Table Responsive Table Pop In Mode 1`] = `
+<section>
+  
 
+  <div
+    style="max-width: 450px"
+  >
     
+    
+    <div
+      class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+    >
+      
+        
+      <h4
+        style="margin-bottom:0px;"
+      >
+        Responsive Table - Pop-in mode
+      </h4>
+      
+        
+      <span
+        class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+      />
+      
+    
+    </div>
+    
+    
+    <table
+      class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in"
+    >
+      
+        
+      <tbody
+        class="fd-table__body"
+      >
+        
+            
+        <tr
+          class="fd-table__row fd-table__row--main fd-table__row--activable fd-table__row--hoverable"
+        >
+          
+                
+          <td
+            class="fd-table__cell"
+          >
+            
+                    
+            <p
+              class="fd-table__text fd-table__text--title"
+            >
+              Banana
+            </p>
+            
+                    
+            <p
+              class="fd-table__text"
+            >
+              India
+            </p>
+            
+                
+          </td>
+          
+                
+          <td
+            class="fd-table__cell fd-table__cell--fit-content"
+          >
+            
+                    5 EUR
+                
+          </td>
+          
+                
+          <td
+            class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
+          >
+            
+                    
+            <span
+              class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            />
+            
+                
+          </td>
+          
+            
+        </tr>
+        
+            
+        <tr
+          class="fd-table__row fd-table__row--secondary"
+        >
+          
+                
+          <td
+            class="fd-table__cell"
+            colspan="100%"
+          >
+            
+                    
+            <p
+              class="fd-table__text"
+            >
+              
+                        
+              <label
+                class="fd-form-label"
+              >
+                Status:
+              </label>
+              
+                        
+              <span
+                class="fd-object-status fd-object-status--positive"
+              >
+                
+                            Available
+                        
+              </span>
+              
+                    
+            </p>
+            
+                    
+            <p
+              class="fd-table__text"
+            >
+              
+                        
+              <label
+                class="fd-form-label"
+              >
+                Date Of Expire:
+              </label>
+              
+                        12.01.12
+                    
+            </p>
+            
+                
+          </td>
+          
+            
+        </tr>
+        
+            
+        <tr
+          class="fd-table__row fd-table__row--main fd-table__row--activable fd-table__row--hoverable"
+        >
+          
+                
+          <td
+            class="fd-table__cell"
+          >
+            
+                    
+            <p
+              class="fd-table__text fd-table__text--title"
+            >
+              Very long name for orange, which no one expected, forces text wrapping into another line.
+            </p>
+            
+                    
+            <p
+              class="fd-table__text"
+            >
+              Spain
+            </p>
+            
+                
+          </td>
+          
+                
+          <td
+            class="fd-table__cell fd-table__cell--fit-content"
+          >
+            
+                    6 EUR
+                
+          </td>
+          
+                
+          <td
+            class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
+          >
+            
+                    
+            <span
+              class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            />
+            
+                
+          </td>
+          
+            
+        </tr>
+        
+            
+        <tr
+          class="fd-table__row fd-table__row--secondary"
+        >
+          
+                
+          <td
+            class="fd-table__cell"
+            colspan="100%"
+          >
+            
+                    
+            <p
+              class="fd-table__text"
+            >
+              
+                        
+              <label
+                class="fd-form-label"
+              >
+                Status:
+              </label>
+              
+                        
+              <span
+                class="fd-object-status fd-object-status--negative"
+              >
+                
+                            Out of stock
+                        
+              </span>
+              
+                    
+            </p>
+            
+                    
+            <p
+              class="fd-table__text"
+            >
+              
+                        
+              <label
+                class="fd-form-label"
+              >
+                Date Of Expire:
+              </label>
+              
+                        12.01.12
+                    
+            </p>
+            
+                
+          </td>
+          
+            
+        </tr>
+        
+        
+      </tbody>
+      
+    
+    </table>
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    style="max-width: 450px"
+  >
+    
+    
+    <div
+      class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+    >
+      
+        
+      <h4
+        style="margin-bottom:0px;"
+      >
+        Responsive Table - Pop-in Mode with Checkboxes and Navigation Indicator
+      </h4>
+      
+        
+      <span
+        class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+      />
+      
+    
+    </div>
+    
+    
+    <table
+      class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in"
+    >
+      
+        
+      <tbody
+        class="fd-table__body"
+      >
+        
+            
+        <tr
+          class="fd-table__row fd-table__row--main"
+        >
+          
+                
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                    
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox"
+              id="CWkhTG"
+              type="checkbox"
+            />
+            
+                    
+            <label
+              class="fd-checkbox__label"
+              for="CWkhTG"
+            />
+            
+                
+          </td>
+          
+                
+          <td
+            class="fd-table__cell"
+          >
+            
+                    
+            <p
+              class="fd-table__text fd-table__text--title"
+            >
+              Banana
+            </p>
+            
+                    
+            <p
+              class="fd-table__text"
+            >
+              India
+            </p>
+            
+                
+          </td>
+          
+                
+          <td
+            class="fd-table__cell fd-table__cell--fit-content"
+          >
+            
+                    5 EUR
+                
+          </td>
+          
+                
+          <td
+            class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
+          >
+            
+                    
+            <span
+              class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            />
+            
+                
+          </td>
+          
+            
+        </tr>
+        
+            
+        <tr
+          class="fd-table__row fd-table__row--secondary"
+        >
+          
+                
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          />
+          
+                
+          <td
+            class="fd-table__cell"
+            colspan="100%"
+          >
+            
+                    
+            <p
+              class="fd-table__text"
+            >
+              
+                        
+              <label
+                class="fd-form-label"
+              >
+                Status:
+              </label>
+              
+                        
+              <span
+                class="fd-object-status fd-object-status--positive"
+              >
+                
+                            Available
+                        
+              </span>
+              
+                    
+            </p>
+            
+                    
+            <p
+              class="fd-table__text"
+            >
+              
+                        
+              <label
+                class="fd-form-label"
+              >
+                Date Of Expire:
+              </label>
+              
+                        12.01.12
+                    
+            </p>
+            
+                
+          </td>
+          
+            
+        </tr>
+        
+            
+        <tr
+          class="fd-table__row fd-table__row--main"
+        >
+          
+                
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          >
+            
+                    
+            <input
+              aria-label="checkbox"
+              class="fd-checkbox"
+              id="Yeas6w"
+              type="checkbox"
+            />
+            
+                    
+            <label
+              class="fd-checkbox__label"
+              for="Yeas6w"
+            />
+            
+                
+          </td>
+          
+                
+          <td
+            class="fd-table__cell"
+          >
+            
+                    
+            <p
+              class="fd-table__text fd-table__text--title"
+            >
+              Very long name for orange, which no one expected, forces text wrapping into another line.
+            </p>
+            
+                    
+            <p
+              class="fd-table__text"
+            >
+              Spain
+            </p>
+            
+                
+          </td>
+          
+                
+          <td
+            class="fd-table__cell fd-table__cell--fit-content"
+          >
+            
+                    6 EUR
+                
+          </td>
+          
+                
+          <td
+            class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
+          >
+            
+                    
+            <span
+              class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            />
+            
+                
+          </td>
+          
+            
+        </tr>
+        
+            
+        <tr
+          class="fd-table__row fd-table__row--secondary"
+        >
+          
+                
+          <td
+            class="fd-table__cell fd-table__cell--checkbox"
+          />
+          
+                
+          <td
+            class="fd-table__cell"
+            colspan="100%"
+          >
+            
+                    
+            <p
+              class="fd-table__text"
+            >
+              
+                        
+              <label
+                class="fd-form-label"
+              >
+                Status:
+              </label>
+              
+                        
+              <span
+                class="fd-object-status fd-object-status--negative"
+              >
+                
+                            Out of stock
+                        
+              </span>
+              
+                    
+            </p>
+            
+                    
+            <p
+              class="fd-table__text"
+            >
+              
+                        
+              <label
+                class="fd-form-label"
+              >
+                Date Of Expire:
+              </label>
+              
+                        12.01.12
+                    
+            </p>
+            
+                
+          </td>
+          
+            
+        </tr>
+        
+        
+      </tbody>
+      
+    
+    </table>
+    
+
+  </div>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Table Semantic Rows 1`] = `
+<section>
+  
 
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin-bottom:0px;"
+    >
+      Table with Semantic Rows
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
 
+  </div>
+  
+
+  <table
+    class="fd-table"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell fd-table__cell--status-indicator"
+        />
+        
+            
+        <th
+          class="fd-table__cell fd-table__cell--checkbox"
+          scope="col"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox"
+            id="Ai9ez611"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai9ez611"
+          />
+          
+            
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--status-indicator"
+        />
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox"
+            id="Ai9ek611"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai9ek611"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--valid"
+        />
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox"
+            id="Ai9ek673"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai9ek673"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--valid"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--status-indicator"
+        />
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox"
+            id="Ai9ek69s"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai9ek69s"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+         
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--warning"
+        />
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox"
+            id="Ai9ekk69s"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai9ekk69s"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--warning"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--status-indicator"
+        />
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox"
+            id="Ai73k69s"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai73k69s"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+         
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--error"
+        />
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox"
+            id="Ai734F6s"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai734F6s"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--error"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+        
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--status-indicator"
+        />
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox"
+            id="Ai73HE36s"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai73HE36s"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+         
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--information"
+        />
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox"
+            id="Ai7JDE36s"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai7JDE36s"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--information"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+         
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--status-indicator"
+        />
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox"
+            id="Ai7JGD6s"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai7JGD6s"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+                          
+    
+    </tbody>
+    
+
+  </table>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Table Table With Contextual Menu 1`] = `
+<section>
+  
+
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin-bottom:0px;"
+    >
+      Table with Contextual Menu
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
+
+  </div>
+  
+
+  <table
+    class="fd-table"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        />
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--fit-content"
+        >
+          
+                
+          <div
+            class="fd-popover"
+          >
+            
+                    
+            <div
+              class="fd-popover__control"
+            >
+              
+                        
+              <button
+                aria-controls="pQqQRFF3"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="navigation"
+                class="fd-button fd-button--transparent sap-icon--overflow"
+              />
+              
+                    
+            </div>
+            
+                    
+            <div
+              aria-hidden="true"
+              class="fd-popover__body"
+              id="pQqQRFF3"
+            >
+              
+                        
+              <nav
+                class="fd-menu"
+              >
+                
+                            
+                <ul
+                  class="fd-menu__list fd-menu__list--no-shadow"
+                >
+                  
+                                
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                    
+                    <a
+                      class="fd-menu__link"
+                      href="#"
+                    >
+                      
+                                        
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Option 1
+                      </span>
+                      
+                                    
+                    </a>
+                    
+                                
+                  </li>
+                  
+                                
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                    
+                    <a
+                      class="fd-menu__link"
+                      href="#"
+                    >
+                      
+                                        
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Option 2
+                      </span>
+                      
+                                    
+                    </a>
+                    
+                                
+                  </li>
+                  
+                                
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                    
+                    <a
+                      class="fd-menu__link"
+                      href="#"
+                    >
+                      
+                                        
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Option 3
+                      </span>
+                      
+                                    
+                    </a>
+                    
+                                
+                  </li>
+                  
+                            
+                </ul>
+                
+                        
+              </nav>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--fit-content"
+        >
+          
+                
+          <div
+            class="fd-popover"
+          >
+            
+                    
+            <div
+              class="fd-popover__control"
+            >
+              
+                        
+              <button
+                aria-controls="G54qQRFF3"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="navigation"
+                class="fd-button fd-button--transparent sap-icon--overflow"
+              />
+              
+                    
+            </div>
+            
+                    
+            <div
+              aria-hidden="true"
+              class="fd-popover__body"
+              id="G54qQRFF3"
+            >
+              
+                        
+              <nav
+                class="fd-menu"
+              >
+                
+                            
+                <ul
+                  class="fd-menu__list fd-menu__list--no-shadow"
+                >
+                  
+                                
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                    
+                    <a
+                      class="fd-menu__link"
+                      href="#"
+                    >
+                      
+                                        
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Option 1
+                      </span>
+                      
+                                    
+                    </a>
+                    
+                                
+                  </li>
+                  
+                                
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                    
+                    <a
+                      class="fd-menu__link"
+                      href="#"
+                    >
+                      
+                                        
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Option 2
+                      </span>
+                      
+                                    
+                    </a>
+                    
+                                
+                  </li>
+                  
+                                
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                    
+                    <a
+                      class="fd-menu__link"
+                      href="#"
+                    >
+                      
+                                        
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Option 3
+                      </span>
+                      
+                                    
+                    </a>
+                    
+                                
+                  </li>
+                  
+                            
+                </ul>
+                
+                        
+              </nav>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--fit-content"
+        >
+          
+                
+          <div
+            class="fd-popover"
+          >
+            
+                    
+            <div
+              class="fd-popover__control"
+            >
+              
+                        
+              <button
+                aria-controls="G54JRFF3"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="navigation"
+                class="fd-button fd-button--transparent sap-icon--overflow"
+              />
+              
+                    
+            </div>
+            
+                    
+            <div
+              aria-hidden="true"
+              class="fd-popover__body"
+              id="G54JRFF3"
+            >
+              
+                        
+              <nav
+                class="fd-menu"
+              >
+                
+                            
+                <ul
+                  class="fd-menu__list fd-menu__list--no-shadow"
+                >
+                  
+                                
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                    
+                    <a
+                      class="fd-menu__link"
+                      href="#"
+                    >
+                      
+                                        
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Option 1
+                      </span>
+                      
+                                    
+                    </a>
+                    
+                                
+                  </li>
+                  
+                                
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                    
+                    <a
+                      class="fd-menu__link"
+                      href="#"
+                    >
+                      
+                                        
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Option 2
+                      </span>
+                      
+                                    
+                    </a>
+                    
+                                
+                  </li>
+                  
+                                
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                    
+                    <a
+                      class="fd-menu__link"
+                      href="#"
+                    >
+                      
+                                        
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Option 3
+                      </span>
+                      
+                                    
+                    </a>
+                    
+                                
+                  </li>
+                  
+                            
+                </ul>
+                
+                        
+              </nav>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+
+  </table>
+  
+ 
+</section>
 `;
 
 exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
@@ -1409,42 +4674,2132 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
 `;
 
 exports[`Storyshots Components/Table With Checkbox 1`] = `
+<section>
+  
 
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin-bottom:0px;"
+    >
+      Table With Checkbox Cozy Mode
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
 
+  </div>
+  
+
+  <table
+    class="fd-table"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell fd-table__cell--checkbox"
+          scope="col"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox"
+            id="Ai4ez611"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai4ez611"
+          />
+          
+            
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        aria-selected="true"
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            checked=""
+            class="fd-checkbox"
+            id="Ai4ez615"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai4ez615"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox"
+            id="Ai4ez617"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai4ez617"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox"
+            id="Gi4ez611"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Gi4ez611"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+
+  </table>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Table With Checkbox Compact 1`] = `
+<section>
+  
 
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin-bottom:0px;"
+    >
+      Table With Checkbox Compact Mode
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
 
+  </div>
+  
+
+  <table
+    class="fd-table fd-table--compact"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell fd-table__cell--checkbox"
+          scope="col"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox fd-checkbox--compact"
+            id="Ai4HF611"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai4HF611"
+          />
+          
+            
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        aria-selected="true"
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            checked=""
+            class="fd-checkbox fd-checkbox--compact"
+            id="Ai4HFHG1"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai4HFHG1"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox fd-checkbox--compact"
+            id="Ai4JKHG1"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai4JKHG1"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox fd-checkbox--compact"
+            id="Ai4JH23G1"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai4JH23G1"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+
+  </table>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Table With Checkbox Condensed 1`] = `
+<section>
+  
 
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin-bottom:0px;"
+    >
+      Table With Checkbox Condensed Mode
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
 
+  </div>
+  
+
+  <table
+    class="fd-table fd-table--condensed"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell fd-table__cell--checkbox"
+          scope="col"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox fd-checkbox--compact"
+            id="Ai4JH2BF87"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai4JH2BF87"
+          />
+          
+            
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        aria-selected="true"
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            checked=""
+            class="fd-checkbox fd-checkbox--compact"
+            id="Ai4JHf87"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai4JHf87"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox fd-checkbox--compact"
+            id="Ai4Jj67"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai4Jj67"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox fd-checkbox--compact"
+            id="AGjtJj67"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="AGjtJj67"
+          />
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+
+  </table>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Table With Footer 1`] = `
+<section>
+  
 
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin-bottom:0px;"
+    >
+      Table With Footer Cozy Mode
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
 
+  </div>
+  
+
+  <table
+    class="fd-table"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+    
+    <tfoot
+      class="fd-table__footer"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        />
+        
+            
+        <td
+          class="fd-table__cell"
+        />
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tfoot>
+    
+
+  </table>
+</section>
 `;
 
 exports[`Storyshots Components/Table With Footer Compact 1`] = `
+<section>
+  
 
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin-bottom:0px;"
+    >
+      Table With Footer Compact Mode
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
 
+  </div>
+  
+
+  <table
+    class="fd-table fd-table--compact"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+    
+    <tfoot
+      class="fd-table__footer"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        />
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        />
+        
+        
+      </tr>
+      
+    
+    </tfoot>
+    
+
+  </table>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Table With Footer Condensed 1`] = `
+<section>
+  
 
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin-bottom:0px;"
+    >
+      Table With Footer Condensed Mode
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
 
+  </div>
+  
+
+  <table
+    class="fd-table fd-table--condensed"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+    
+    <tfoot
+      class="fd-table__footer"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        />
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        />
+        
+        
+      </tr>
+      
+    
+    </tfoot>
+    
+
+  </table>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Table With Menu In Header 1`] = `
+<section>
+  
 
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin-bottom:0px;"
+    >
+      Table with Popover in Headers
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
 
+  </div>
+  
+
+  <table
+    class="fd-table"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          
+                
+          <div
+            class="fd-table__popover fd-popover"
+          >
+            
+                    
+            <div
+              aria-controls="popoverA1"
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="fd-popover__control"
+            >
+              
+                        
+              <div
+                class="fd-table__inner"
+              >
+                
+                            Column Header Ascending
+                            
+                <span
+                  class="fd-table__icon sap-icon--sort-ascending"
+                />
+                
+                        
+              </div>
+              
+                    
+            </div>
+            
+                    
+            <div
+              aria-hidden="true"
+              class="fd-popover__body fd-popover__body--no-arrow"
+              id="popoverA1"
+            >
+              
+                        
+              <ul
+                class="fd-list fd-list--compact"
+                role="list"
+              >
+                
+                            
+                <li
+                  class="fd-list__item"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  
+                                
+                  <span
+                    class="fd-list__icon sap-icon--sort-descending"
+                  />
+                  
+                                
+                  <span
+                    class="fd-list__title"
+                  >
+                    Sort Descending
+                  </span>
+                  
+                            
+                </li>
+                
+                            
+                <li
+                  class="fd-list__item"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  
+                                
+                  <span
+                    class="fd-list__icon sap-icon--sort-ascending"
+                  />
+                  
+                                
+                  <span
+                    class="fd-list__title"
+                  >
+                    Sort Ascendnig
+                  </span>
+                  
+                            
+                </li>
+                
+                            
+                <li
+                  class="fd-list__item"
+                  role="listitem"
+                >
+                  
+                                
+                  <span
+                    class="fd-list__icon sap-icon--filter"
+                  />
+                  
+                                
+                  <div
+                    class="fd-form-item  fd-form-item--horizontal"
+                  >
+                    
+                                    
+                    <label
+                      class="fd-form-label"
+                      for="input-1d"
+                    >
+                      Filter
+                    </label>
+                    
+                                    
+                    <input
+                      class="fd-input fd-input--compact"
+                      id="input-1d"
+                    />
+                    
+                                
+                  </div>
+                  
+                            
+                </li>
+                
+                        
+              </ul>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          
+                
+          <div
+            class="fd-table__popover fd-popover"
+          >
+            
+                    
+            <div
+              aria-controls="popoverA2"
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="fd-popover__control"
+            >
+              
+                        
+              <div
+                class="fd-table__inner"
+              >
+                
+                            Column Header Descending
+                            
+                <span
+                  class="fd-table__icon sap-icon--sort-descending"
+                />
+                
+                        
+              </div>
+              
+                    
+            </div>
+            
+                    
+            <div
+              aria-hidden="true"
+              class="fd-popover__body fd-popover__body--no-arrow"
+              id="popoverA2"
+            >
+              
+                        
+              <ul
+                class="fd-list fd-list--compact"
+                role="list"
+              >
+                
+                            
+                <li
+                  class="fd-list__item"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  
+                                
+                  <span
+                    class="fd-list__icon sap-icon--sort-descending"
+                  />
+                  
+                                
+                  <span
+                    class="fd-list__title"
+                  >
+                    Sort Descending
+                  </span>
+                  
+                            
+                </li>
+                
+                            
+                <li
+                  class="fd-list__item"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  
+                                
+                  <span
+                    class="fd-list__icon sap-icon--sort-ascending"
+                  />
+                  
+                                
+                  <span
+                    class="fd-list__title"
+                  >
+                    Sort Ascendnig
+                  </span>
+                  
+                            
+                </li>
+                
+                            
+                <li
+                  class="fd-list__item"
+                  role="listitem"
+                >
+                  
+                                
+                  <span
+                    class="fd-list__icon sap-icon--filter"
+                  />
+                  
+                                
+                  <div
+                    class="fd-form-item  fd-form-item--horizontal"
+                  >
+                    
+                                    
+                    <label
+                      class="fd-form-label"
+                      for="input-1d"
+                    >
+                      Filter
+                    </label>
+                    
+                                    
+                    <input
+                      class="fd-input fd-input--compact"
+                      id="input-1d2"
+                    />
+                    
+                                
+                  </div>
+                  
+                            
+                </li>
+                
+                        
+              </ul>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+
+  </table>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Table With Pagination 1`] = `
 <section>
+  
+
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin-bottom:0px;"
+    >
+      Table With Pagination at The Bottom
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
+
+  </div>
   
 
   <table
@@ -1730,11 +7085,423 @@ exports[`Storyshots Components/Table With Pagination 1`] = `
 `;
 
 exports[`Storyshots Components/Table Without Borders 1`] = `
+<section>
+  
 
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin-bottom:0px;"
+    >
+      Table Without Borders
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
 
+  </div>
+  
+
+  <table
+    class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+
+  </table>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Table Without Borders On Body 1`] = `
+<section>
+  
 
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin-bottom:0px;"
+    >
+      Table Without Borders On Body
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
 
+  </div>
+  
+
+  <table
+    class="fd-table"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body fd-table__body--no-horizontal-borders fd-table__body--no-vertical-borders"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+
+  </table>
+  
+
+</section>
 `;

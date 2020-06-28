@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Product Switch One 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Product Switch Rtl 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Product Switch Three 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Product Switch Two 1`] = `
+
+
+`;

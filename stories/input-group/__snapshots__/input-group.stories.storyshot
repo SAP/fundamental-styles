@@ -1,0 +1,1878 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Forms/Input Group Five 1`] = `
+<section>
+  
+
+  <div
+    class="fd-input-group  is-success "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-success "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-success  is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-success  is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-error "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-error "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-error  is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-error  is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-warning "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-warning "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-warning  is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-warning  is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-information "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-information "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-information  is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-information  is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Forms/Input Group Four 1`] = `
+<section>
+  
+
+  <div
+    class="fd-input-group  "
+  >
+    
+        
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+        
+    <span
+      class="fd-input-group__addon fd-input-group__addon--button "
+    >
+      
+                    
+      <button
+        class="btn-playground fd-input-group__button"
+      >
+        Click Me
+      </button>
+      
+
+        
+    </span>
+    
+
+  </div>
+  
+                
+  <br />
+  
+                
+
+  <div
+    class="fd-input-group  "
+  >
+    
+        
+    <span
+      class="fd-input-group__addon fd-input-group__addon--button  "
+    >
+      
+                    
+      <button
+        class="btn-playground fd-input-group__button"
+      >
+        Click Me
+      </button>
+      
+
+        
+    </span>
+    
+        
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+                
+  <br />
+  
+                
+
+  <div
+    class="fd-input-group  "
+  >
+    
+        
+    <span
+      class="fd-input-group__addon fd-input-group__addon--button  "
+    >
+      
+                    
+      <button
+        class="btn-playground fd-input-group__button"
+      >
+        Click Me
+      </button>
+      
+
+        
+    </span>
+    
+        
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+        
+    <span
+      class="fd-input-group__addon fd-input-group__addon--button "
+    >
+      
+                    
+      <button
+        class="btn-playground fd-input-group__button"
+      >
+        Click Me
+      </button>
+      
+
+        
+    </span>
+    
+
+  </div>
+  
+                
+  <br />
+  
+                
+
+  <div
+    class="fd-input-group  "
+  >
+    
+        
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+        
+    <span
+      class="fd-input-group__addon fd-input-group__addon--button "
+    >
+      
+                    
+      <button
+        class="btn-playground fd-input-group__button"
+      >
+        Click Me
+      </button>
+      
+
+        
+    </span>
+    
+
+  </div>
+  
+                
+  <br />
+  
+                
+
+  <div
+    class="fd-input-group  "
+  >
+    
+        
+    <span
+      class="fd-input-group__addon fd-input-group__addon--button  "
+    >
+      
+                    
+      <button
+        class="btn-playground fd-input-group__button"
+      >
+        Click Me
+      </button>
+      
+
+        
+    </span>
+    
+        
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+                
+  <br />
+  
+                
+
+  <div
+    class="fd-input-group  "
+  >
+    
+        
+    <span
+      class="fd-input-group__addon fd-input-group__addon--button  "
+    >
+      
+                    
+      <button
+        class="btn-playground fd-input-group__button"
+      >
+        Click Me
+      </button>
+      
+
+        
+    </span>
+    
+        
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+        
+    <span
+      class="fd-input-group__addon fd-input-group__addon--button "
+    >
+      
+                    
+      <button
+        class="btn-playground fd-input-group__button"
+      >
+        Click Me
+      </button>
+      
+
+        
+    </span>
+    
+
+  </div>
+  
+                
+  <br />
+  
+        
+  <h3>
+    Disabled
+  </h3>
+  
+                
+
+  <div
+    class="fd-input-group   is-disabled"
+  >
+    
+        
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+        
+    <span
+      class="fd-input-group__addon fd-input-group__addon--button "
+    >
+      
+                    
+      <button
+        class="btn-playground fd-input-group__button"
+      >
+        Click Me
+      </button>
+      
+
+        
+    </span>
+    
+
+  </div>
+  
+                
+  <br />
+  
+                
+
+  <div
+    class="fd-input-group   is-disabled"
+  >
+    
+        
+    <span
+      class="fd-input-group__addon fd-input-group__addon--button  "
+    >
+      
+                    
+      <button
+        class="btn-playground fd-input-group__button"
+      >
+        Click Me
+      </button>
+      
+
+        
+    </span>
+    
+        
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+                
+  <br />
+  
+                
+
+  <div
+    class="fd-input-group   is-disabled"
+  >
+    
+        
+    <span
+      class="fd-input-group__addon fd-input-group__addon--button  "
+    >
+      
+                    
+      <button
+        class="btn-playground fd-input-group__button"
+      >
+        Click Me
+      </button>
+      
+
+        
+    </span>
+    
+        
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+        
+    <span
+      class="fd-input-group__addon fd-input-group__addon--button "
+    >
+      
+                    
+      <button
+        class="btn-playground fd-input-group__button"
+      >
+        Click Me
+      </button>
+      
+
+        
+    </span>
+    
+
+  </div>
+  
+                
+  <br />
+  
+                
+
+  <div
+    class="fd-input-group   is-disabled"
+  >
+    
+        
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+        
+    <span
+      class="fd-input-group__addon fd-input-group__addon--button "
+    >
+      
+                    
+      <button
+        class="btn-playground fd-input-group__button"
+      >
+        Click Me
+      </button>
+      
+
+        
+    </span>
+    
+
+  </div>
+  
+                
+  <br />
+  
+                
+
+  <div
+    class="fd-input-group   is-disabled"
+  >
+    
+        
+    <span
+      class="fd-input-group__addon fd-input-group__addon--button  "
+    >
+      
+                    
+      <button
+        class="btn-playground fd-input-group__button"
+      >
+        Click Me
+      </button>
+      
+
+        
+    </span>
+    
+        
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+                
+  <br />
+  
+                
+
+  <div
+    class="fd-input-group   is-disabled"
+  >
+    
+        
+    <span
+      class="fd-input-group__addon fd-input-group__addon--button  "
+    >
+      
+                    
+      <button
+        class="btn-playground fd-input-group__button"
+      >
+        Click Me
+      </button>
+      
+
+        
+    </span>
+    
+        
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+        
+    <span
+      class="fd-input-group__addon fd-input-group__addon--button "
+    >
+      
+                    
+      <button
+        class="btn-playground fd-input-group__button"
+      >
+        Click Me
+      </button>
+      
+
+        
+    </span>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Forms/Input Group One 1`] = `
+<section>
+  
+
+  <div
+    class="fd-input-group  "
+  >
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+   
+    <span
+      class="fd-input-group__addon "
+    >
+      
+   km/h
+   
+    </span>
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+   
+    <span
+      class="fd-input-group__addon "
+    >
+      
+   .00
+   
+    </span>
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  "
+  >
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+   
+    <span
+      class="fd-input-group__addon "
+    >
+      
+   km/h
+   
+    </span>
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+   
+    <span
+      class="fd-input-group__addon "
+    >
+      
+   .00
+   
+    </span>
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group   is-disabled"
+  >
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+   
+    <span
+      class="fd-input-group__addon "
+    >
+      
+   km/h
+   
+    </span>
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group   is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group   is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+   
+    <span
+      class="fd-input-group__addon "
+    >
+      
+   .00
+   
+    </span>
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group   is-disabled"
+  >
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+   
+    <span
+      class="fd-input-group__addon "
+    >
+      
+   km/h
+   
+    </span>
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group   is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group   is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+   
+    <span
+      class="fd-input-group__addon "
+    >
+      
+   .00
+   
+    </span>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Forms/Input Group Six 1`] = `
+<section>
+  
+
+  <div
+    class="fd-input-group fd-input-group--inline  "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   phone
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder="Field placeholder text"
+      value=""
+    />
+    
+
+  </div>
+  
+
+  <div
+    class="fd-input-group fd-input-group--inline  "
+  >
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder="Field placeholder text"
+      value=""
+    />
+    
+   
+    <span
+      class="fd-input-group__addon "
+    >
+      
+   fax
+   
+    </span>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Forms/Input Group Three 1`] = `
+<section>
+  
+
+  <div
+    class="fd-input-group  is-success "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-success "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-success  is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-success  is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-error "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-error "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-error  is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-error  is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-warning "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-warning "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-warning  is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-warning  is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-information "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-information "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-information  is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  is-information  is-disabled"
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  "
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <textarea
+      class="input-group-input-playground  fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Forms/Input Group Two 1`] = `
+<section>
+  
+
+  <div
+    class="fd-input-group  "
+  >
+    
+   
+    <input
+      class="input-group-input-playground input-group-input-playground--compact fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+   
+    <span
+      class="fd-input-group__addon fd-input-group__addon--compact"
+    >
+      
+   km/h
+   
+    </span>
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  fd-input-group__addon--compact"
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground input-group-input-playground--compact fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-input-group  "
+  >
+    
+   
+    <span
+      class="fd-input-group__addon  fd-input-group__addon--compact"
+    >
+      
+   $
+   
+    </span>
+    
+   
+    <input
+      class="input-group-input-playground input-group-input-playground--compact fd-input-group__input"
+      placeholder=""
+      value="19387309"
+    />
+    
+   
+    <span
+      class="fd-input-group__addon fd-input-group__addon--compact"
+    >
+      
+   .00
+   
+    </span>
+    
+
+  </div>
+  
+
+</section>
+`;
