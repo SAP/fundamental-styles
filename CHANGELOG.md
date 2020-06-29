@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.74"></a>
+# [0.11.0-rc.74](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.73...v0.11.0-rc.74) (2020-06-29)
+
+
+### Features
+
+* remove asset upload and product menu ([#1187](https://github.com/SAP/fundamental-styles/issues/1187)) ([ea631fb](https://github.com/SAP/fundamental-styles/commit/ea631fb))
+
+
+
 <a name="0.11.0-rc.73"></a>
 # [0.11.0-rc.73](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.72...v0.11.0-rc.73) (2020-06-29)
 
