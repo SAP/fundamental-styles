@@ -29,7 +29,6 @@ These are dumb containers only concerned with placement with no effect on their 
     * `.fd_shell__footer`: Optional global footer
         * `.fd-shell__footer--fixed`: Modifier to make the footer persistent (sticky)
     * `.fd-shell__overlay`: Appended container for overlaying content
-        * `.fd-overlay`: Common standalone component used to dim background
 
 ## Application with only Top Bar
 {: .docs-header-h2}
