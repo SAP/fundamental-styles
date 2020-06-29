@@ -47,7 +47,7 @@ $block: #{$fd-namespace}-action-bar;
   }
 
   @include fd-reset();
-  
+
   box-shadow: var(--sapContent_HeaderShadow);
   background-color: $fd-action-bar-background-color;
   min-height: $fd-action-bar-min-height;
