@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.75"></a>
+# [0.11.0-rc.75](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.74...v0.11.0-rc.75) (2020-06-29)
+
+
+### Features
+
+* update datepicker aria attributes and icon; introduce storybook ([#1169](https://github.com/SAP/fundamental-styles/issues/1169)) ([e0571c8](https://github.com/SAP/fundamental-styles/commit/e0571c8))
+
+
+
 <a name="0.11.0-rc.74"></a>
 # [0.11.0-rc.74](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.73...v0.11.0-rc.74) (2020-06-29)
 
