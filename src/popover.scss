@@ -60,6 +60,10 @@ $block: #{$fd-namespace}-popover;
       margin-bottom: 0;
     }
 
+    &.is-expanded {
+      z-index: 3;
+    }
+
     @include fd-disabled() {
       pointer-events: none;
     }
@@ -188,12 +192,28 @@ $block: #{$fd-namespace}-popover;
     }
 
     &--no-arrow {
-      box-shadow: $fd-popover-box-shadow-no-arrow;
+      box-shadow: none;
       top: $fd-popover-top-position-noarrow;
+      z-index: 2;
 
-      &::before,
       &::after {
         display: none;
+      }
+
+      &::before {
+        @include fd-reset();
+
+        box-shadow: $fd-popover-box-shadow-no-arrow;
+        border-radius: $fd-popover-border-radius;
+        content: "";
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
       }
 
       &.#{$block}__body--left {
@@ -223,6 +243,11 @@ $block: #{$fd-namespace}-popover;
       width: max-content;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
+
+      &::before {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
 
       .#{$block}__wrapper {
         border-top-left-radius: 0;
