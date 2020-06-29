@@ -68,7 +68,7 @@ exports[`Storyshots Components/Bar Bar As Floating Footer 1`] = `
 
   <div>
     <b>
-      Tablet and Mobile (Cosy)
+      Tablet and Mobile (Cozy)
     </b>
   </div>
   
@@ -77,7 +77,7 @@ exports[`Storyshots Components/Bar Bar As Floating Footer 1`] = `
   
 
   <div
-    class="fd-bar fd-bar--floating-footer fd-bar--cosy"
+    class="fd-bar fd-bar--floating-footer fd-bar--cozy"
   >
     
     
@@ -258,7 +258,7 @@ exports[`Storyshots Components/Bar Bar As Footer 1`] = `
 
   <div>
     <b>
-      Tablet and Mobile (Cosy)
+      Tablet and Mobile (Cozy)
     </b>
   </div>
   
@@ -267,7 +267,7 @@ exports[`Storyshots Components/Bar Bar As Footer 1`] = `
   
 
   <div
-    class="fd-bar fd-bar--footer fd-bar--cosy"
+    class="fd-bar fd-bar--footer fd-bar--cozy"
   >
     
     
@@ -543,7 +543,7 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
 
   <div>
     <b>
-      Tablet and Mobile (Cosy)
+      Tablet and Mobile (Cozy)
     </b>
   </div>
   
@@ -552,7 +552,7 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
   
 
   <div
-    class="fd-bar fd-bar--header fd-bar--cosy"
+    class="fd-bar fd-bar--header fd-bar--cozy"
   >
     
     
@@ -959,7 +959,7 @@ exports[`Storyshots Components/Bar Bar As Subheader 1`] = `
 
   <div>
     <b>
-      Tablet and Mobile (Cosy)
+      Tablet and Mobile (Cozy)
     </b>
   </div>
   
@@ -968,7 +968,7 @@ exports[`Storyshots Components/Bar Bar As Subheader 1`] = `
   
 
   <div
-    class="fd-bar fd-bar--subheader fd-bar--cosy"
+    class="fd-bar fd-bar--subheader fd-bar--cozy"
   >
     
     
@@ -1043,7 +1043,7 @@ exports[`Storyshots Components/Bar Bar As Subheader 1`] = `
   
 
   <div
-    class="fd-bar fd-bar--subheader fd-bar--cosy"
+    class="fd-bar fd-bar--subheader fd-bar--cozy"
   >
     
     

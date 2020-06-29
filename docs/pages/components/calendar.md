@@ -1120,7 +1120,7 @@ Remember that if <code>.fd-calendar__close-button</code> is placed inside naviga
                 </div>
             </div>
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cozy">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">
@@ -1141,7 +1141,7 @@ On mobile devices calendar is composed into Dialog window taking full width and 
 {% capture default-calendar-mobile %}
 <div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--portrait fd-dialog fd-dialog--active">
     <div class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile">
-        <header class="fd-dialog__header fd-bar fd-bar--header fd-bar--cosy">
+        <header class="fd-dialog__header fd-bar fd-bar--header fd-bar--cozy">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
                     <h3 class="fd-dialog__title">
@@ -1309,7 +1309,7 @@ On mobile devices calendar is composed into Dialog window taking full width and 
                 <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
             </div>
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cozy">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">

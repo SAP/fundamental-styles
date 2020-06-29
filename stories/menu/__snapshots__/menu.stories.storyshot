@@ -892,7 +892,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
        
       <footer
         aria-label="bar-footer"
-        class="fd-dialog__footer fd-bar fd-bar--cosy fd-bar--footer"
+        class="fd-dialog__footer fd-bar fd-bar--cozy fd-bar--footer"
       >
         
             
@@ -1121,7 +1121,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
       
        
       <footer
-        class="fd-dialog__footer fd-bar fd-bar--cosy fd-bar--footer"
+        class="fd-dialog__footer fd-bar fd-bar--cozy fd-bar--footer"
       >
         
             
