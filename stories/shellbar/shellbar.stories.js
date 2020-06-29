@@ -36,8 +36,6 @@ The shellbar handles layout and has some built-in elements but relies on standal
 
 * <code>.fd-shellbar__subtitle</code> (optional) displays an application context. _This should be used rarely._
 
-* <code>.fd-product-menu</code> (optional) for navigating to applications within the product.
-
 * <code>.fd-shellbar__action</code> (required) container for each product action and link.
 
 * <code>.fd-shellbar__action--mobile</code> (optional) for product actions only visible on mobile screens.
