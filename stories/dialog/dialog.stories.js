@@ -234,7 +234,7 @@ By default dialog on mobile devices should take full height and width of the scr
 
 - \`.fd-dialog__content--mobile\`: dialog takes full height and width
 - \`.fd-dialog__content--no-mobile-stretch\`: margin: 6% 10%
-Please remember that on mobile devices Bar component should be used with \`.fd-bar--cosy\` class.
+Please remember that on mobile devices Bar component should be used with \`.fd-bar--cozy\` class.
 
 **DIALOG HEADER/BODY/FOOTER HORIZONTAL PADDINGS**
 `

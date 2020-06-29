@@ -2,6 +2,102 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.74"></a>
+# [0.11.0-rc.74](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.73...v0.11.0-rc.74) (2020-06-29)
+
+
+### Features
+
+* remove asset upload and product menu ([#1187](https://github.com/SAP/fundamental-styles/issues/1187)) ([ea631fb](https://github.com/SAP/fundamental-styles/commit/ea631fb))
+
+
+
+<a name="0.11.0-rc.73"></a>
+# [0.11.0-rc.73](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.72...v0.11.0-rc.73) (2020-06-29)
+
+
+### Features
+
+* rename class fd-bar--cosy to fd-bar--cozy ([#1186](https://github.com/SAP/fundamental-styles/issues/1186)) ([286c54d](https://github.com/SAP/fundamental-styles/commit/286c54d))
+
+
+
+<a name="0.11.0-rc.72"></a>
+# [0.11.0-rc.72](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.71...v0.11.0-rc.72) (2020-06-29)
+
+
+### Bug Fixes
+
+* migrate fieldset to Fiori 3 ([#1185](https://github.com/SAP/fundamental-styles/issues/1185)) ([f9cab31](https://github.com/SAP/fundamental-styles/commit/f9cab31))
+
+
+
+<a name="0.11.0-rc.71"></a>
+# [0.11.0-rc.71](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.70...v0.11.0-rc.71) (2020-06-29)
+
+
+### Features
+
+* remove overlay.scss ([#1184](https://github.com/SAP/fundamental-styles/issues/1184)) ([969db12](https://github.com/SAP/fundamental-styles/commit/969db12))
+
+
+
+<a name="0.11.0-rc.70"></a>
+# [0.11.0-rc.70](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.69...v0.11.0-rc.70) (2020-06-29)
+
+
+
+<a name="0.11.0-rc.69"></a>
+# [0.11.0-rc.69](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.68...v0.11.0-rc.69) (2020-06-29)
+
+
+### Features
+
+* Add Headers to popin mode, add fixes to selection borders ([#1106](https://github.com/SAP/fundamental-styles/issues/1106)) ([9709cc6](https://github.com/SAP/fundamental-styles/commit/9709cc6))
+
+
+
+<a name="0.11.0-rc.68"></a>
+# [0.11.0-rc.68](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.67...v0.11.0-rc.68) (2020-06-29)
+
+
+### Bug Fixes
+
+* modify paddings for token and tokenizer ([#1176](https://github.com/SAP/fundamental-styles/issues/1176)) ([954cf39](https://github.com/SAP/fundamental-styles/commit/954cf39))
+
+
+
+<a name="0.11.0-rc.67"></a>
+# [0.11.0-rc.67](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.66...v0.11.0-rc.67) (2020-06-26)
+
+
+
+<a name="0.11.0-rc.66"></a>
+# [0.11.0-rc.66](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.65...v0.11.0-rc.66) (2020-06-26)
+
+
+
+<a name="0.11.0-rc.65"></a>
+# [0.11.0-rc.65](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.64...v0.11.0-rc.65) (2020-06-26)
+
+
+### Bug Fixes
+
+* add RTL for Panel expand button ([#1171](https://github.com/SAP/fundamental-styles/issues/1171)) ([c457ba0](https://github.com/SAP/fundamental-styles/commit/c457ba0))
+* Fiori 3 file uploader changes ([#1117](https://github.com/SAP/fundamental-styles/issues/1117)) ([7c52f69](https://github.com/SAP/fundamental-styles/commit/7c52f69))
+
+
+
+<a name="0.11.0-rc.64"></a>
+# [0.11.0-rc.64](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.63...v0.11.0-rc.64) (2020-06-24)
+
+
+### Bug Fixes
+
+* specify DatePicker border radius ([#1175](https://github.com/SAP/fundamental-styles/issues/1175)) ([3ac1b19](https://github.com/SAP/fundamental-styles/commit/3ac1b19))
+
+
+
 <a name="0.11.0-rc.63"></a>
 # [0.11.0-rc.63](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.62...v0.11.0-rc.63) (2020-06-24)
 

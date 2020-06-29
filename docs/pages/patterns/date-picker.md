@@ -25,7 +25,7 @@ This component mostly relies on the CSS of other components and has very little 
 			<div class="fd-input-group">
 				<input class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
 				<span class="fd-input-group__addon fd-input-group__addon--button">
-				<button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--calendar" aria-controls="Itcgq828" aria-expanded="false" aria-haspopup="true" aria-hidden="true"></button>
+				<button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2" aria-controls="Itcgq828" aria-expanded="false" aria-haspopup="true" aria-hidden="true"></button>
 				</span>
 			</div>
 		</div>
@@ -208,7 +208,7 @@ This component mostly relies on the CSS of other components and has very little 
 			<div class="fd-input-group">
 				<input type="text" value="" placeholder="Pick a date" class="fd-input fd-input--compact fd-input-group__input">
 				<span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-				<button class="fd-button fd-button--transparent fd-button--compact fd-input-group__button fd-popover__control sap-icon--calendar" aria-controls="Itcgq82" aria-expanded="false" aria-haspopup="true" aria-hidden="true"></button>
+				<button class="fd-button fd-button--transparent fd-button--compact fd-input-group__button fd-popover__control sap-icon--appointment-2" aria-controls="Itcgq82" aria-expanded="false" aria-haspopup="true" aria-hidden="true"></button>
 				</span>
 			</div>
 		</div>
@@ -395,7 +395,7 @@ The today selection button in the footer selects today's date in the system or u
 			<div class="fd-input-group">
 				<input class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
 				<span class="fd-input-group__addon fd-input-group__addon--button">
-				<button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--calendar" aria-controls="Itcgq829" aria-expanded="false" aria-haspopup="true" aria-hidden="true"></button>
+				<button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2" aria-controls="Itcgq829" aria-expanded="false" aria-haspopup="true" aria-hidden="true"></button>
 				</span>
 			</div>
 		</div>
@@ -566,7 +566,7 @@ The today selection button in the footer selects today's date in the system or u
 					</div>
 				</div>
 			</div>
-			<footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
+			<footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cozy">
 				<div class="fd-bar__right">
 					<div class="fd-bar__element">
 						<button class="fd-dialog__decisive-button fd-button">Today</button>
@@ -592,7 +592,7 @@ The today navigation button in the header navigates focus to today's date in the
 			<div class="fd-input-group">
 				<input class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
 				<span class="fd-input-group__addon fd-input-group__addon--button">
-				<button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--calendar" aria-controls="Itcgq830" aria-expanded="false" aria-haspopup="true" aria-hidden="true"></button>
+				<button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2" aria-controls="Itcgq830" aria-expanded="false" aria-haspopup="true" aria-hidden="true"></button>
 				</span>
 			</div>
 		</div>
@@ -928,7 +928,7 @@ The today navigation button in the header navigates focus to today's date in the
                 </div>
             </div>
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cozy">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">
@@ -946,7 +946,7 @@ The today navigation button in the header navigates focus to today's date in the
 {% capture mobile-datepicker-portrait-today-navigation %}
 <div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--portrait fd-dialog fd-dialog--active">
     <div class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile">
-        <header class="fd-dialog__header fd-bar fd-bar--header fd-bar--cosy">
+        <header class="fd-dialog__header fd-bar fd-bar--header fd-bar--cozy">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
                     <h3 class="fd-dialog__title">
@@ -1115,7 +1115,7 @@ The today navigation button in the header navigates focus to today's date in the
                 <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
             </div>
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cozy">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">

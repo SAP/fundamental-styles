@@ -267,6 +267,7 @@ $(document).ready(function() {
 });
 
 function stepInputValue(inputId, stepDirection) {
+    
     let inputRef = document.getElementById(inputId);
 
     if (inputRef) {
@@ -278,6 +279,19 @@ function stepInputValue(inputId, stepDirection) {
     } else {
         console.warn('No element with id=\'' + inputId + '\' found');
     }
+}
+
+function browseFile(inputId) {
+    
+    let inputRef = document.getElementById(inputId);
+    inputRef.click();
+  
+}
+
+function selectFile(input, inputtext){
+    var file=input.value;
+    let inputRef = document.getElementById(inputtext);
+    inputRef.value=file;
 }
 
 function toggleDialog(dialogId, show) {

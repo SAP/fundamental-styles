@@ -84,10 +84,6 @@ entries:
       url: /components/avatar.html
       output: web
 
-    - title: Asset Upload
-      url: /components/asset-upload.html
-      output: web
-
     - title: Bar
       url: /components/bar.html
       output: web
@@ -118,6 +114,10 @@ entries:
 
     - title: Forms
       url: /components/form.html
+      output: web
+
+    - title: File Uploader
+      url: /components/file-uploader.html
       output: web
 
     - title: Generic Tile

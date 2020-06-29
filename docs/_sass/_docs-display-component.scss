@@ -40,12 +40,6 @@
     }
   }
 
-  .fd-product-menu {
-    .fd-popover__body--right {
-      right: -10px;
-    }
-  }
-
   .fd-popover .fd-popover__popper[aria-hidden=true] {
     z-index: 1;
     opacity: 0;
@@ -133,12 +127,6 @@
       max-height: 410px;
       position: relative;
     }
-
-    .fd-overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
   }
 
   &__app-example {
@@ -165,14 +153,6 @@
     .fd-app__main {
       background-color: fd-color(neutral, 1);
       padding-top: 50px;
-    }
-
-    .fd-overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
     }
 
     .fd-side-nav__list,

@@ -7,7 +7,7 @@ export default {
     title: 'Components/Bar',
     parameters: {
         description: `The Bar component is a container that holds titles, buttons and input controls. Its content is distributed in three areas - left, middle and right.
-The Bar has 2 modes - Desktop (default) and Tablet/Mobile (cosy).`,
+The Bar has 2 modes - Desktop (default) and Tablet/Mobile (cozy).`,
         tags: ['f3', 'a11y', 'theme']
     }
 };
@@ -89,7 +89,7 @@ desktop.parameters = {
 };
 
 export const tabletAndMobile = () => `
-<div class="fd-bar fd-bar--cosy">
+<div class="fd-bar fd-bar--cozy">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
             <button aria-label="button" class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
@@ -126,7 +126,7 @@ export const tabletAndMobile = () => `
 tabletAndMobile.parameters = {
     docs: {
         iframeHeight: 100,
-        storyDescription: 'For Tablet and Mobile (Cosy mode) apply the <code>fd-bar--cosy</code> class to the container element.'
+        storyDescription: 'For Tablet and Mobile (Cozy mode) apply the <code>fd-bar--cozy</code> class to the container element.'
     }
 };
 
@@ -166,9 +166,9 @@ export const barAsHeader = () => `
     </div>
 </div>
 <br><br>
-<div><b>Tablet and Mobile (Cosy)</b></div>
+<div><b>Tablet and Mobile (Cozy)</b></div>
 <br>
-<div class="fd-bar fd-bar--header fd-bar--cosy">
+<div class="fd-bar fd-bar--header fd-bar--cozy">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
             <button aria-label="button" class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
@@ -269,9 +269,9 @@ export const barAsSubheader = () => `
     </div>
 </div>
 <br><br>
-<div><b>Tablet and Mobile (Cosy)</b></div>
+<div><b>Tablet and Mobile (Cozy)</b></div>
 <br>
-<div class="fd-bar fd-bar--subheader fd-bar--cosy">
+<div class="fd-bar fd-bar--subheader fd-bar--cozy">
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
             <div class="fd-form-item">
@@ -287,7 +287,7 @@ export const barAsSubheader = () => `
 <br><br>
 <div><b>Full width element</b></div>
 <br>
-<div class="fd-bar fd-bar--subheader fd-bar--cosy">
+<div class="fd-bar fd-bar--subheader fd-bar--cozy">
     <div class="fd-bar__middle">
         <div class="fd-bar__element fd-bar__element--full-width">
             <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="" name="" value="1234568910" aria-label="input">
@@ -392,9 +392,9 @@ export const barAsFooter = () => `
     </div>
 </div>
 <br><br>
-<div><b>Tablet and Mobile (Cosy)</b></div>
+<div><b>Tablet and Mobile (Cozy)</b></div>
 <br>
-<div class="fd-bar fd-bar--footer fd-bar--cosy">
+<div class="fd-bar fd-bar--footer fd-bar--cozy">
     <div class="fd-bar__right">
         <div class="fd-bar__element">
             <button aria-label="button" class="fd-button fd-button--emphasized">Save</button>
@@ -439,9 +439,9 @@ export const barAsFloatingFooter = () => `
     </div>
 </div>
 <br><br>
-<div><b>Tablet and Mobile (Cosy)</b></div>
+<div><b>Tablet and Mobile (Cozy)</b></div>
 <br>
-<div class="fd-bar fd-bar--floating-footer fd-bar--cosy">
+<div class="fd-bar fd-bar--floating-footer fd-bar--cozy">
     <div class="fd-bar__right">
         <div class="fd-bar__element">
             <button aria-label="button" class="fd-button fd-button--emphasized">Save</button>

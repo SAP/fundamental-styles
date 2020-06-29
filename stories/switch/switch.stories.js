@@ -20,7 +20,7 @@ export default {
 export const basic = () => `
 <div class="fd-form-group">
     <div class="fd-form-item">
-        <div class="fd-form-label" id="label1">Default (Cosy) Switch</div>
+        <div class="fd-form-label" id="label1">Default (Cozy) Switch</div>
         <label class="fd-switch__label">
             <span class="fd-switch">
                 <input class="fd-switch__input" type="checkbox" name="" value="" aria-labelledby="label1" id="y21YO3251">

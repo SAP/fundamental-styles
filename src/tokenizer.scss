@@ -47,6 +47,10 @@ $block: #{$fd-namespace}-tokenizer;
       min-width: 3rem;
     }
 
+    &:first-child {
+      padding: 0 $fd-tokenizer-spacing;
+    }
+
     &:last-child {
       flex-basis: 100%;
     }
@@ -74,6 +78,10 @@ $block: #{$fd-namespace}-tokenizer;
 
     .#{$block}__input.#{$fd-namespace}-input {
       min-width: 2rem;
+    }
+
+    .#{$block}__input:first-child {
+      padding: 0 $fd-tokenizer-compact-spacing;
     }
 
     .fd-token {

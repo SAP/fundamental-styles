@@ -25,12 +25,12 @@ The large (default) tiles are designed for screens larger than 374px. For smalle
 *The background-colors are used to illustrate the tile sections in the documentation page.
 {% capture tile-sizes %}
 <div class="docs-section-container">
-    <div role="button" tabindex="0" class="fd-tile">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile">
         <div class="fd-tile__header"></div>
         <div class="fd-tile__content"></div>
         <div class="fd-tile__footer"></div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--s">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s">
         <div class="fd-tile__header"></div>
         <div class="fd-tile__content"></div>
         <div class="fd-tile__footer"></div>
@@ -64,22 +64,22 @@ The layout of the generic tile is fixed, with designated areas for the header, c
 
 {% capture tile-sizes %}
 <div class="docs-section-container">
-    <div role="button" tabindex="0" class="fd-tile">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile">
         <div class="fd-tile__header"></div>
         <div class="fd-tile__content"></div>
         <div class="fd-tile__footer"></div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--double">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--double">
         <div class="fd-tile__header"></div>
         <div class="fd-tile__content"></div>
         <div class="fd-tile__footer"></div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--s">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s">
         <div class="fd-tile__header"></div>
         <div class="fd-tile__content"></div>
         <div class="fd-tile__footer"></div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--s fd-tile--double">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s fd-tile--double">
         <div class="fd-tile__header"></div>
         <div class="fd-tile__content"></div>
         <div class="fd-tile__footer"></div>
@@ -116,7 +116,7 @@ The tiles header, content and footer can be split into two columns with a 0.25re
 *The background color is used to illustrate the column sections in the documentation page. 
 {% capture tile-sizes %}
 <div class="docs-section-container">
-    <div role="button" tabindex="0" class="fd-tile">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile">
         <div class="fd-tile__header fd-tile__header--2-col">
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
@@ -130,7 +130,7 @@ The tiles header, content and footer can be split into two columns with a 0.25re
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
         </div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--double">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--double">
         <div class="fd-tile__header fd-tile__header--2-col">
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
@@ -144,7 +144,7 @@ The tiles header, content and footer can be split into two columns with a 0.25re
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
         </div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--s">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s">
         <div class="fd-tile__header fd-tile__header--2-col">
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
@@ -158,7 +158,7 @@ The tiles header, content and footer can be split into two columns with a 0.25re
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
         </div>
     </div>
-    <div role="button" tabindex="0" class="fd-tile fd-tile--s fd-tile--double">
+    <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s fd-tile--double">
         <div class="fd-tile__header fd-tile__header--2-col">
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
@@ -927,7 +927,7 @@ In action mode view, the close button is displayed on the top right-hand corner 
         Line Tile Container - <code>fd-tile-container</code>. The container controls the behaviour of the tiles - <strong>Floating</strong> (default) and <strong>List</strong> (<code>fd-tile-container--list</code>). For screen sizes less than 450px use the <strong>List</strong> behaviour. For bigger screens use the default <strong>Floating</strong> behaviour.
         <ul class="docs-ul">
             <li>Line Tile - apply the <code>fd-tile--line</code> modifier class to <code>fd-tile</code>.
-                Line Tiles have two modes - cosy (default) and compact (<code>fd-tile--compact</code>). *Note: the compact mode is applied only on Line Tiles. It should not be applied on the other types.
+                Line Tiles have two modes - cozy (default) and compact (<code>fd-tile--compact</code>). *Note: the compact mode is applied only on Line Tiles. It should not be applied on the other types.
                 <ul class="docs-ul">
                     <li>Line Tile Header - <code>fd-tile__header</code>
                         <ul class="docs-ul">
@@ -970,7 +970,7 @@ In action mode view, the close button is displayed on the top right-hand corner 
 The controls are wrapped in a container <code>fd-tile__action-container</code> which is right aligned within the tile. The default spacing between the header and actions container for List View in Action mode is 0.25rem. Gradient masking is also supported in edit mode. 
 
 {% capture tile-line %}
-<h4>Line Tile - Floating Behaviour, Cosy Mode</h4>
+<h4>Line Tile - Floating Behaviour, cozy Mode</h4>
 <div class="docs-section-container">
     <div class="fd-tile-container"> 
         <div role="button" tabindex="0" class="fd-tile fd-tile--line">
@@ -1012,7 +1012,7 @@ The controls are wrapped in a container <code>fd-tile__action-container</code> w
     </div>
 </div>
 <br><br><br>
-<h4>Line Tile - List Behaviour, Cosy Mode</h4>
+<h4>Line Tile - List Behaviour, cozy Mode</h4>
 <div class="docs-section-container">
     <div class="fd-tile-container fd-tile-container--list"> 
                 <div role="button" tabindex="0" class="fd-tile fd-tile--line">
@@ -1126,7 +1126,7 @@ The controls are wrapped in a container <code>fd-tile__action-container</code> w
     </div>
 </div>
 <br><br><br>
-<h4>Line Tile - Floating Behaviour, Cosy Mode, With Badge</h4>
+<h4>Line Tile - Floating Behaviour, cozy Mode, With Badge</h4>
 <div class="docs-section-container">
     <div class="fd-tile-container"> 
         <div role="button" tabindex="0" class="fd-tile fd-tile--line">
@@ -1195,7 +1195,7 @@ The controls are wrapped in a container <code>fd-tile__action-container</code> w
     </div>
 </div>
 <br><br><br>
-<h4>Line Tile - List Behaviour, Cosy Mode, With Badge</h4>
+<h4>Line Tile - List Behaviour, cozy Mode, With Badge</h4>
 <div class="docs-section-container">
     <div class="fd-tile-container fd-tile-container--list"> 
         <div role="button" tabindex="0" class="fd-tile fd-tile--line">
@@ -1255,7 +1255,7 @@ The controls are wrapped in a container <code>fd-tile__action-container</code> w
     </div>
 </div>
 <br><br><br>
-<h4>Line Tile - Floating Behaviour, Cosy and Action Mode</h4>
+<h4>Line Tile - Floating Behaviour, cozy and Action Mode</h4>
 <div class="docs-section-container">
     <div class="fd-tile-container"> 
         <div role="button" tabindex="0" class="fd-tile fd-tile--line fd-tile--action">
@@ -1321,7 +1321,7 @@ The controls are wrapped in a container <code>fd-tile__action-container</code> w
     </div>
 </div>
 <br><br><br>
-<h4>Line Tile - List Behaviour, Cosy and Action Mode</h4>
+<h4>Line Tile - List Behaviour, cozy and Action Mode</h4>
 <div class="docs-section-container">
     <div class="fd-tile-container fd-tile-container--list"> 
         <div role="button" tabindex="0" class="fd-tile fd-tile--line fd-tile--action">

@@ -7,33 +7,37 @@ export default {
     excludeStories: /.*VisualStoryShotOnly/,
     parameters: {
         description: `
-The date-picker component is an opinionated composition of the \`input-group\`, \`popover\` and \`calendar\` components to accomplish the UI pattern for picking a date.
+The date picker lets users select a localized date using touch, mouse, or keyboard input. It consists of two parts: the date input field and the date picker.
+
+Use this control if the user needs to enter a single date or a date range. The control also allows users to navigate directly from one month or year to another.
+
+The date-picker component is an opinionated composition of the <code>input-group</code>, <code>popover</code> and <code>calendar</code> components to accomplish the UI pattern for picking a date.
+
 This component mostly relies on the CSS of other components and has very little CSS of its own.
-`,
-        tags: ['f3', 'a11y', 'theme']
+`
     }
 };
 
 export const defaultAndCompactSizes = () => `
-<label class="fd-form-label" for="defaultDatepicker">Default</label>
 <div class="fd-docs-date-picker">
   <div class="fd-popover">
     <div class="fd-popover__control">
+      <label class="fd-form-label" for="defaultDatepicker">Default</label>
       <div class="fd-input-group">
         <input id="defaultDatepicker" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
         <span class="fd-input-group__addon fd-input-group__addon--button">
         <button
-          class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--calendar"
+          class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2"
           aria-controls="Itcgq828"
           aria-expanded="false"
           aria-haspopup="true"
-          aria-hidden="true"></button>
+          aria-label="Choose Date" ></button>
         </span>
       </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="Itcgq828">
       <div class="fd-calendar">
-        <header class="fd-calendar__header">
+        <div class="fd-calendar__header">
           <div class="fd-calendar__navigation">
             <div class="fd-calendar__action">
               <button class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
@@ -48,7 +52,7 @@ export const defaultAndCompactSizes = () => `
               <button class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
             </div>
           </div>
-        </header>
+        </div>
         <div class="fd-calendar__content">
           <div class="fd-calendar__dates" id="YeayX297" aria-hidden="false">
             <table class="fd-calendar__table" role="grid">
@@ -202,24 +206,24 @@ export const defaultAndCompactSizes = () => `
   </div>
 </div>
 <br>
-<label class="fd-form-label" for="defaultDatepicker">Compact</label>
 <div class="fd-docs-date-picker">
   <div class="fd-popover">
     <div class="fd-popover__control">
+      <label class="fd-form-label" for="compactDatepicker">Compact</label>
       <div class="fd-input-group">
         <input id="compactDatepicker" type="text" value="" placeholder="Pick a date" class="fd-input fd-input--compact fd-input-group__input">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-        <button class="fd-button fd-button--transparent fd-button--compact fd-input-group__button fd-popover__control sap-icon--calendar"
+        <button class="fd-button fd-button--transparent fd-button--compact fd-input-group__button fd-popover__control sap-icon--appointment-2"
           aria-controls="Itcgq82"
           aria-expanded="false"
           aria-haspopup="true"
-          aria-hidden="true"></button>
+          aria-label="Choose Date"></button>
         </span>
       </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="Itcgq82">
       <div class="fd-calendar fd-calendar--compact">
-        <header class="fd-calendar__header">
+        <div class="fd-calendar__header">
           <div class="fd-calendar__navigation">
             <div class="fd-calendar__action">
               <button class="fd-button fd-button--transparent sap-icon--slim-arrow-left fd-button--compact" aria-label="Previous" aria-disabled="true"></button>
@@ -234,7 +238,7 @@ export const defaultAndCompactSizes = () => `
               <button class="fd-button fd-button--transparent sap-icon--slim-arrow-right fd-button--compact" aria-label="Next"></button>
             </div>
           </div>
-        </header>
+        </div>
         <div class="fd-calendar__content">
           <div class="fd-calendar__dates" id="YeayX298" aria-hidden="false">
             <table class="fd-calendar__table" role="grid">
@@ -396,24 +400,24 @@ defaultAndCompactSizes.parameters = {
 };
 
 export const todaySelectionButton = () =>`
-<label class="fd-form-label" for="todaySelectionDateInput">en-US DatePicker with today selection</label>
 <div class="fd-docs-date-picker">
   <div class="fd-popover">
     <div class="fd-popover__control">
+    <label class="fd-form-label" for="todaySelectionDateInput">en-US DatePicker with today selection</label>
       <div class="fd-input-group">
         <input id="todaySelectionDateInput" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-        <button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--calendar"
+        <button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2"
           aria-controls="Itcgq829"
           aria-expanded="false"
           aria-haspopup="true"
-          aria-hidden="true"></button>
+          aria-label="Choose Date"></button>
         </span>
       </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="Itcgq829">
       <div class="fd-calendar">
-        <header class="fd-calendar__header">
+        <div class="fd-calendar__header">
           <div class="fd-calendar__navigation">
             <div class="fd-calendar__action">
               <button class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
@@ -428,7 +432,7 @@ export const todaySelectionButton = () =>`
               <button class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
             </div>
           </div>
-        </header>
+        </div>
         <div class="fd-calendar__content">
           <div class="fd-calendar__dates" id="YeayX299" aria-hidden="false">
             <table class="fd-calendar__table" role="grid">
@@ -578,7 +582,7 @@ export const todaySelectionButton = () =>`
           </div>
         </div>
       </div>
-      <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
+      <div class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
         <div class="fd-bar__right">
           <div class="fd-bar__element">
           <button class="fd-dialog__decisive-button fd-button"
@@ -590,7 +594,7 @@ export const todaySelectionButton = () =>`
           </button>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
   </div>
 </div>
@@ -607,25 +611,25 @@ This date value then appears in the DatePicker's input field. If using a compact
 };
 
 export const todayNavigationButton = () =>`
-<label class="fd-form-label" for="todayNavigationDateInput">en-US DatePicker with today navigation</label>
 <div class="fd-docs-date-picker">
   <div class="fd-popover">
     <div class="fd-popover__control">
+      <label class="fd-form-label" for="todayNavigationDateInput">en-US DatePicker with today navigation</label>
       <div class="fd-input-group">
         <input id="todayNavigationDateInput" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-        <button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--calendar"
+        <button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2"
           aria-controls="Itcgq830"
           aria-expanded="false"
           aria-haspopup="true"
-          aria-hidden="true">
+          aria-label="Choose Date">
         </button>
         </span>
       </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="Itcgq830">
       <div class="fd-calendar">
-        <header class="fd-calendar__header">
+        <div class="fd-calendar__header">
           <div class="fd-calendar__navigation">
             <div class="fd-calendar__action">
               <button class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
@@ -653,7 +657,7 @@ export const todayNavigationButton = () =>`
               </button>
             </div>
           </div>
-        </header>
+        </div>
         <div class="fd-calendar__content">
           <div class="fd-calendar__dates" id="YeayX300" aria-hidden="false">
             <table class="fd-calendar__table" role="grid">
@@ -827,7 +831,7 @@ export const mobileLandscape = () => `
   <div class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile">
     <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
       <div class="fd-calendar fd-calendar--mobile-landscape">
-        <header class="fd-calendar__header">
+        <div class="fd-calendar__header">
           <div class="fd-calendar__navigation fd-calendar__navigation--main">
             <div class="fd-calendar__action fd-calendar__action--arrow-left">
               <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
@@ -845,7 +849,7 @@ export const mobileLandscape = () => `
             <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button fd-calendar__close-button--navigation"
               aria-label="Close"></button>
           </div>
-        </header>
+        </div>
         <div class="fd-calendar__content fd-calendar__content--dates" id="Xh8Gr283">
           <table class="fd-calendar__table" role="grid">
             <thead class="fd-calendar__group">
@@ -1010,7 +1014,7 @@ export const mobileLandscape = () => `
         </div>
       </div>
     </div>
-    <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
+    <div class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
       <div class="fd-bar__right">
         <div class="fd-bar__element">
           <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">
@@ -1018,7 +1022,7 @@ export const mobileLandscape = () => `
           </button>
         </div>
       </div>
-    </footer>
+    </div>
   </div>
 </div>
 `;
@@ -1034,7 +1038,7 @@ mobileLandscape.parameters = {
 export const mobilePortrait = () => `
 <div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--portrait fd-dialog fd-dialog--active">
   <div class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile">
-    <header class="fd-dialog__header fd-bar fd-bar--header fd-bar--cosy">
+    <div class="fd-dialog__header fd-bar fd-bar--header fd-bar--cosy">
       <div class="fd-bar__left">
         <div class="fd-bar__element">
           <h3 class="fd-dialog__title">
@@ -1047,10 +1051,10 @@ export const mobilePortrait = () => `
           <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button" aria-label="Close"></button>
         </div>
       </div>
-    </header>
+    </div>
     <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
       <div class="fd-calendar fd-calendar--mobile-portrait">
-        <header class="fd-calendar__header">
+        <div class="fd-calendar__header">
           <div class="fd-calendar__navigation">
             <div class="fd-segmented-button" role="group" aria-label="Switch Date/Time picker">
               <button class="fd-button is-active">Date</button>
@@ -1072,7 +1076,7 @@ export const mobilePortrait = () => `
             </div>
             <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Today</button>
           </div>
-        </header>
+        </div>
         <div class="fd-calendar__content fd-calendar__content--dates" id="Xh8Gr283">
           <table class="fd-calendar__table" role="grid">
             <thead class="fd-calendar__group">
@@ -1238,7 +1242,7 @@ export const mobilePortrait = () => `
         <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
       </div>
     </div>
-    <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
+    <div class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
       <div class="fd-bar__right">
         <div class="fd-bar__element">
           <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">
@@ -1246,7 +1250,7 @@ export const mobilePortrait = () => `
           </button>
         </div>
       </div>
-    </footer>
+    </div>
   </div>
 </div>
 `;
@@ -1270,17 +1274,17 @@ export const defaultAndCompactSizesVisualStoryShotOnly = () => `
         <input id="defaultDatepickerSS" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
         <span class="fd-input-group__addon fd-input-group__addon--button">
         <button
-          class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--calendar"
+          class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2"
           aria-controls="Itcgq828"
           aria-expanded="false"
           aria-haspopup="true"
-          aria-hidden="true"></button>
+          aria-label="Choose Date"></button>
         </span>
       </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" id="Itcgq828">
       <div class="fd-calendar">
-        <header class="fd-calendar__header">
+        <div class="fd-calendar__header">
           <div class="fd-calendar__navigation">
             <div class="fd-calendar__action">
               <button class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
@@ -1295,7 +1299,7 @@ export const defaultAndCompactSizesVisualStoryShotOnly = () => `
               <button class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
             </div>
           </div>
-        </header>
+        </div>
         <div class="fd-calendar__content">
           <div class="fd-calendar__dates" id="YeayX297" aria-hidden="false">
             <table class="fd-calendar__table" role="grid">
@@ -1460,7 +1464,7 @@ export const defaultAndCompactSizesVisualStoryShotOnly = () => `
       <div class="fd-input-group">
         <input id="compactDatepickerSS" type="text" value="" placeholder="Pick a date" class="fd-input fd-input--compact fd-input-group__input">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-        <button class="fd-button fd-button--transparent fd-button--compact fd-input-group__button fd-popover__control sap-icon--calendar"
+        <button class="fd-button fd-button--transparent fd-button--compact fd-input-group__button fd-popover__control sap-icon--appointment-2"
           aria-controls="Itcgq82"
           aria-expanded="false"
           aria-haspopup="true"
@@ -1470,7 +1474,7 @@ export const defaultAndCompactSizesVisualStoryShotOnly = () => `
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" id="Itcgq82">
       <div class="fd-calendar fd-calendar--compact">
-        <header class="fd-calendar__header">
+        <div class="fd-calendar__header">
           <div class="fd-calendar__navigation">
             <div class="fd-calendar__action">
               <button class="fd-button fd-button--transparent sap-icon--slim-arrow-left fd-button--compact" aria-label="Previous" aria-disabled="true"></button>
@@ -1485,7 +1489,7 @@ export const defaultAndCompactSizesVisualStoryShotOnly = () => `
               <button class="fd-button fd-button--transparent sap-icon--slim-arrow-right fd-button--compact" aria-label="Next"></button>
             </div>
           </div>
-        </header>
+        </div>
         <div class="fd-calendar__content">
           <div class="fd-calendar__dates" id="YeayX298" aria-hidden="false">
             <table class="fd-calendar__table" role="grid">
@@ -1653,17 +1657,17 @@ export const todaySelectionButtonVisualStoryShotOnly = () =>`
       <div class="fd-input-group">
         <input id="todaySelectionDateInputSS" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-        <button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--calendar"
+        <button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2"
           aria-controls="Itcgq829"
           aria-expanded="false"
           aria-haspopup="true"
-          aria-hidden="true"></button>
+          aria-label="Choose Date"></button>
         </span>
       </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" id="Itcgq829">
       <div class="fd-calendar">
-        <header class="fd-calendar__header">
+        <div class="fd-calendar__header">
           <div class="fd-calendar__navigation">
             <div class="fd-calendar__action">
               <button class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
@@ -1678,7 +1682,7 @@ export const todaySelectionButtonVisualStoryShotOnly = () =>`
               <button class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
             </div>
           </div>
-        </header>
+        </div>
         <div class="fd-calendar__content">
           <div class="fd-calendar__dates" id="YeayX299" aria-hidden="false">
             <table class="fd-calendar__table" role="grid">
@@ -1828,7 +1832,7 @@ export const todaySelectionButtonVisualStoryShotOnly = () =>`
           </div>
         </div>
       </div>
-      <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
+      <div class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--cosy">
         <div class="fd-bar__right">
           <div class="fd-bar__element">
           <button class="fd-dialog__decisive-button fd-button"
@@ -1840,7 +1844,7 @@ export const todaySelectionButtonVisualStoryShotOnly = () =>`
           </button>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
   </div>
 </div>
@@ -1859,18 +1863,18 @@ export const todayNavigationButtonVisualStoryShotOnly = () =>`
       <div class="fd-input-group">
         <input id="todayNavigationDateInputSS" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-        <button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--calendar"
+        <button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2"
           aria-controls="Itcgq830"
           aria-expanded="false"
           aria-haspopup="true"
-          aria-hidden="true">
+          aria-label="Choose Date">
         </button>
         </span>
       </div>
     </div>
     <div class="fd-popover__body fd-popover__body--no-arrow" id="Itcgq830">
       <div class="fd-calendar">
-        <header class="fd-calendar__header">
+        <div class="fd-calendar__header">
           <div class="fd-calendar__navigation">
             <div class="fd-calendar__action">
               <button class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
@@ -1898,7 +1902,7 @@ export const todayNavigationButtonVisualStoryShotOnly = () =>`
               </button>
             </div>
           </div>
-        </header>
+        </div>
         <div class="fd-calendar__content">
           <div class="fd-calendar__dates" id="YeayX300" aria-hidden="false">
             <table class="fd-calendar__table" role="grid">

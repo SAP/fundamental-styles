@@ -17,18 +17,26 @@ $block: #{$fd-namespace}-token;
     }
   }
 
+  $fd-token-height: 1.625rem;
   $fd-token-compact-height: 1.25rem;
   $fd-token-compact-close-width: 1.25rem;
   $fd-token-close-width: 1.75rem;
-  $fd-token-close-height: 1.625rem;
   $fd-token-padding-horizontal: 0.3125rem;
+  $fd-token-padding-vertical: 0.25rem;
   $fd-token-compact-padding-horizontal: 0.25rem;
+  $fd-token-compact-padding-vertical: 0.1rem;
   $fd-token-color: var(--sapTextColor) !default;
   $fd-token-background-color: var(--sapButton_TokenBackground) !default;
   $fd-token-border-color: var(--sapButton_TokenBorderColor) !default;
   $fd-token-selected-hover-border-color: var(--sapButton_Selected_Hover_BorderColor) !default;
 
-  $fd-token-icon-color: var(--sapContent_IconColor);
+  $fd-token-icon-color: var(--sapContent_IconColor) !default;
+
+  $fd-token-selected-text-color: var(--sapButton_Selected_TextColor) !default;
+
+  // readonly
+  $fd-token-readonly-padding-horizontal: 0.375rem;
+  $fd-token-compact-readonly-padding-horizontal: 0.25rem;
 
   @include fd-reset();
 
@@ -37,12 +45,14 @@ $block: #{$fd-namespace}-token;
   font-size: var(--sapFontSize);
   display: inline-flex;
   align-items: center;
-  padding-left: $fd-token-padding-horizontal;
-  border-radius: $fd-border-radius;
+  text-align: center;
+  padding: $fd-token-padding-vertical 0 $fd-token-padding-vertical $fd-token-padding-horizontal;
+  border-radius: 0.25rem;
   white-space: nowrap;
   max-width: 100%;
+  min-width: 3.625rem;
   text-overflow: clip;
-  height: 1.625rem;
+  height: $fd-token-height;
   line-height: 1.5rem;
   flex: 1 0 auto;
   border: var(--sapButton_BorderWidth) solid $fd-token-border-color;
@@ -64,11 +74,11 @@ $block: #{$fd-namespace}-token;
     @include fd-reset();
 
     font-size: var(--sapFontSmallSize);
-    color: var(--sapContent_IconColor);
-    padding: 0 0.5rem;
+    color: $fd-token-icon-color;
+    padding: 0.25rem 0.5rem;
     width: $fd-token-close-width;
     min-width: $fd-token-close-width;
-    height: $fd-token-close-height;
+    height: $fd-token-height;
     background-color: transparent;
     line-height: 1.25rem;
     cursor: pointer;
@@ -92,12 +102,13 @@ $block: #{$fd-namespace}-token;
   @include fd-token-focus();
 
   &--compact {
-    padding-left: $fd-token-compact-padding-horizontal;
+    padding: 0 0 $fd-token-compact-padding-vertical $fd-token-compact-padding-horizontal;
     height: $fd-token-compact-height;
+    min-width: 3rem;
     line-height: 1.125rem;
 
     .#{$block}__close {
-      padding: 0 $fd-token-compact-padding-horizontal;
+      padding: $fd-token-compact-padding-vertical $fd-token-compact-padding-horizontal;
       vertical-align: baseline;
       width: $fd-token-compact-close-width;
       min-width: $fd-token-compact-close-width;
@@ -111,17 +122,17 @@ $block: #{$fd-namespace}-token;
   }
 
   &--selected {
-    color: var(--sapButton_Selected_TextColor);
+    color: $fd-token-selected-text-color;
     background-color: var(--sapButton_Selected_Background);
     border-color: var(--sapButton_Selected_BorderColor);
 
     .#{$block}__close {
-      color: var(--sapButton_Selected_TextColor);
+      color: $fd-token-selected-text-color;
     }
 
     &:hover {
       background-color: var(--sapButton_Selected_Hover_Background);
-      border-color: var(--sapButton_Selected_Hover_BorderColor);
+      border-color: $fd-token-selected-hover-border-color;
     }
 
     @include fd-token-focus() {
@@ -131,18 +142,18 @@ $block: #{$fd-namespace}-token;
 
   &--readonly {
     color: var(--sapContent_LabelColor);
-    padding: 0 $fd-token-padding-horizontal;
+    padding: $fd-token-padding-vertical $fd-token-readonly-padding-horizontal;
 
     &.#{$block}--compact {
-      padding: 0 $fd-token-compact-padding-horizontal;
+      padding: $fd-token-compact-padding-vertical $fd-token-compact-readonly-padding-horizontal;
 
       @include fd-rtl() {
-        padding-left: $fd-token-compact-padding-horizontal;
+        padding-left: $fd-token-compact-readonly-padding-horizontal;
       }
     }
 
     @include fd-rtl() {
-      padding-left: $fd-token-padding-horizontal;
+      padding-left: $fd-token-readonly-padding-horizontal;
     }
   }
 }

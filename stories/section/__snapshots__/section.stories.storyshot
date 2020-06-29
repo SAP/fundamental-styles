@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Layouts/Section Section Structure 1`] = `
+<section>
+  
+
+  <section
+    class="fd-section"
+  >
+    
+    .fd-section
+
+  </section>
+  
+
+  <section
+    class="fd-section"
+  >
+    
+    .fd-section
+
+  </section>
+  
+
+  <section
+    class="fd-section"
+  >
+    
+    .fd-section
+
+  </section>
+  
+
+</section>
+`;
+
+exports[`Storyshots Layouts/Section With Headers 1`] = `
+
+
+`;
+
+exports[`Storyshots Layouts/Section With Layout Grid 1`] = `
+
+
+`;
+
+exports[`Storyshots Layouts/Section With Panels 1`] = `
+
+
+`;
