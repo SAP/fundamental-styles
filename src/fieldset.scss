@@ -1,6 +1,5 @@
-@import "./settings";
+@import "./new-settings";
 @import "./mixins";
-@import "./functions";
 @import "./form-group";
 
 /*!
@@ -15,14 +14,11 @@ $block: #{$fd-namespace}-fieldset;
 
   &__legend {
     @include fd-reset();
-    @include fd-var-color("color", fd-color(text, 3), --fd-color-text-3);
 
-    line-height: $fd-forms-height--input-check;
-    margin-bottom: fd-space(2);
     display: block;
 
     &.is-disabled {
-      opacity: 0.4;
+      opacity: var(--sapContent_DisabledOpacity, 0.4);
     }
   }
 }
