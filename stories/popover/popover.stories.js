@@ -264,7 +264,7 @@ export const layoutOptions = () => `
 
     <div class="fd-popover">
         <div class="fd-popover__control">
-            <button class="fd-button" aria-label="Image label" aria-controls="popoverHSF345" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverHSF345');">All Cosy Mode</button>
+            <button class="fd-button" aria-label="Image label" aria-controls="popoverHSF345" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverHSF345');">All Cozy Mode</button>
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverHSF345">
             <div class="fd-popover__body-header">

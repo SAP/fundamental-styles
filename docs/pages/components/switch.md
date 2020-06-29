@@ -17,7 +17,7 @@ The Switch is meant to resemble a physical switch and allow a user to turn a set
 {% capture default %}
 <div class="fd-form-group">
     <div class="fd-form-item">
-        <label class="fd-form-label">Default (Cosy) Switch</label>
+        <label class="fd-form-label">Default (Cozy) Switch</label>
         <label class="fd-switch__label">
             <span class="fd-switch">
                 <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3251">

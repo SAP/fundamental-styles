@@ -314,7 +314,7 @@ export const responsive = () =>
             </div>
         </header>
         <div class="fd-message-box__body">
-            Information Message Box on small screen in Cosy mode 
+            Information Message Box on small screen in Cozy mode 
             <div class="fd-message-box__more">
                 <a href="#" class="fd-link" tabindex="0">Show more</a>
             </div>
@@ -343,7 +343,7 @@ export const responsive = () =>
             </div>
         </header>
         <div class="fd-message-box__body">
-            Error Message Box on medium screen in Cosy mode  
+            Error Message Box on medium screen in Cozy mode  
         </div>
         <footer class="fd-bar fd-bar--cozy fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
@@ -426,7 +426,7 @@ To enable responsive behavior for the paddings use the following modifier classe
 - \`.fd-message-box__content--l\`: 2rem - min-width: 1024px and max-width: 1439px
 - \`.fd-message-box__content--xl\`: 3rem - min-width: 1440px
 
-On mobile devices the component should be in \`cosy\` mode. Add the \`fd-bar--cozy\` modifier class to the header and the footer. The buttons in the footer should also be in Cosy mode. The deafult mode for Buttons is \`cosy\` so no modifier classes are required.
+On mobile devices the component should be in \`cozy\` mode. Add the \`fd-bar--cozy\` modifier class to the header and the footer. The buttons in the footer should also be in Cozy mode. The deafult mode for Buttons is \`cozy\` so no modifier classes are required.
 
 On phone devices the content container takes 100vh and 100vw. It's achieved by applying the \`fd-message-box__content--mobile\` modifier class on the Message Box content container.
         `

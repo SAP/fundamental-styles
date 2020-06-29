@@ -7,7 +7,7 @@ export default {
     title: 'Components/Bar',
     parameters: {
         description: `The Bar component is a container that holds titles, buttons and input controls. Its content is distributed in three areas - left, middle and right.
-The Bar has 2 modes - Desktop (default) and Tablet/Mobile (cosy).`,
+The Bar has 2 modes - Desktop (default) and Tablet/Mobile (cozy).`,
         tags: ['f3', 'a11y', 'theme']
     }
 };
@@ -126,7 +126,7 @@ export const tabletAndMobile = () => `
 tabletAndMobile.parameters = {
     docs: {
         iframeHeight: 100,
-        storyDescription: 'For Tablet and Mobile (Cosy mode) apply the <code>fd-bar--cozy</code> class to the container element.'
+        storyDescription: 'For Tablet and Mobile (Cozy mode) apply the <code>fd-bar--cozy</code> class to the container element.'
     }
 };
 
@@ -166,7 +166,7 @@ export const barAsHeader = () => `
     </div>
 </div>
 <br><br>
-<div><b>Tablet and Mobile (Cosy)</b></div>
+<div><b>Tablet and Mobile (Cozy)</b></div>
 <br>
 <div class="fd-bar fd-bar--header fd-bar--cozy">
     <div class="fd-bar__left">
@@ -269,7 +269,7 @@ export const barAsSubheader = () => `
     </div>
 </div>
 <br><br>
-<div><b>Tablet and Mobile (Cosy)</b></div>
+<div><b>Tablet and Mobile (Cozy)</b></div>
 <br>
 <div class="fd-bar fd-bar--subheader fd-bar--cozy">
     <div class="fd-bar__middle">
@@ -392,7 +392,7 @@ export const barAsFooter = () => `
     </div>
 </div>
 <br><br>
-<div><b>Tablet and Mobile (Cosy)</b></div>
+<div><b>Tablet and Mobile (Cozy)</b></div>
 <br>
 <div class="fd-bar fd-bar--footer fd-bar--cozy">
     <div class="fd-bar__right">
@@ -439,7 +439,7 @@ export const barAsFloatingFooter = () => `
     </div>
 </div>
 <br><br>
-<div><b>Tablet and Mobile (Cosy)</b></div>
+<div><b>Tablet and Mobile (Cozy)</b></div>
 <br>
 <div class="fd-bar fd-bar--floating-footer fd-bar--cozy">
     <div class="fd-bar__right">

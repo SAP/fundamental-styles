@@ -258,7 +258,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
         class="fd-message-box__body"
       >
         
-            Information Message Box on small screen in Cosy mode 
+            Information Message Box on small screen in Cozy mode 
             
         <div
           class="fd-message-box__more"
@@ -371,7 +371,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
         class="fd-message-box__body"
       >
         
-            Error Message Box on medium screen in Cosy mode  
+            Error Message Box on medium screen in Cozy mode  
         
       </div>
       
