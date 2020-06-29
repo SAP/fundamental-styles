@@ -261,12 +261,6 @@ $block: #{$fd-namespace}-table;
           background-color: var(--sapList_Hover_SelectionBackground);
         }
       }
-
-      @include fd-last-child() {
-        .#{$block}__cell {
-          border-bottom: none;
-        }
-      }
     }
   }
 
@@ -340,8 +334,6 @@ $block: #{$fd-namespace}-table;
     }
 
     .#{$block}__cell {
-      height: auto;
-
       &--checkbox {
         + .#{$block}__cell {
           padding-left: 0;
@@ -351,6 +343,12 @@ $block: #{$fd-namespace}-table;
             padding-left: $fd-table-cell-padding;
           }
         }
+      }
+    }
+
+    .#{$block}__body {
+      .#{$block}__cell {
+        height: auto;
       }
     }
 
@@ -385,19 +383,37 @@ $block: #{$fd-namespace}-table;
           }
         }
       }
+
+      @include fd-selected() {
+        @include fd-hover() {
+          + .#{$block}__row--secondary {
+            background-color: var(--sapList_Hover_SelectionBackground);
+          }
+        }
+      }
     }
 
     .#{$block}__row--secondary {
       background-color: $fd-table-basic-background;
       border-bottom: $fd-table-border;
 
-      &:hover {
+      @include fd-hover() {
         background-color: $fd-table-basic-background;
       }
 
       .#{$block}__cell {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+      }
+
+      @include fd-selected() {
+        .#{$block}__cell {
+          border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+        }
+
+        @include fd-hover() {
+          background-color: var(--sapList_SelectionBackgroundColor);
+        }
       }
     }
   }
