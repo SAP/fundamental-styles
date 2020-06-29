@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.68"></a>
+# [0.11.0-rc.68](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.67...v0.11.0-rc.68) (2020-06-29)
+
+
+### Bug Fixes
+
+* modify paddings for token and tokenizer ([#1176](https://github.com/SAP/fundamental-styles/issues/1176)) ([954cf39](https://github.com/SAP/fundamental-styles/commit/954cf39))
+
+
+
 <a name="0.11.0-rc.67"></a>
 # [0.11.0-rc.67](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.66...v0.11.0-rc.67) (2020-06-26)
 
