@@ -383,13 +383,21 @@ $block: #{$fd-namespace}-table;
           }
         }
       }
+
+      @include fd-selected() {
+        @include fd-hover() {
+          + .#{$block}__row--secondary {
+            background-color: var(--sapList_Hover_SelectionBackground);
+          }
+        }
+      }
     }
 
     .#{$block}__row--secondary {
       background-color: $fd-table-basic-background;
       border-bottom: $fd-table-border;
 
-      &:hover {
+      @include fd-hover() {
         background-color: $fd-table-basic-background;
       }
 
@@ -401,6 +409,10 @@ $block: #{$fd-namespace}-table;
       @include fd-selected() {
         .#{$block}__cell {
           border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+        }
+
+        @include fd-hover() {
+          background-color: var(--sapList_SelectionBackgroundColor);
         }
       }
     }
