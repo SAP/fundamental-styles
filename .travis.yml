@@ -11,9 +11,7 @@ jobs:
   include:
   - stage: Lint, Test and Size
     script:
-      - docker pull backstopjs/backstopjs:3.9.2
-      - npm run test:ci-config
-      - npm run test
+      - npm run test:ci
   -
     script: npm run lint
   -
