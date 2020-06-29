@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.71"></a>
+# [0.11.0-rc.71](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.70...v0.11.0-rc.71) (2020-06-29)
+
+
+### Features
+
+* remove overlay.scss ([#1184](https://github.com/SAP/fundamental-styles/issues/1184)) ([969db12](https://github.com/SAP/fundamental-styles/commit/969db12))
+
+
+
 <a name="0.11.0-rc.70"></a>
 # [0.11.0-rc.70](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.69...v0.11.0-rc.70) (2020-06-29)
 
