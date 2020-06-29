@@ -73,22 +73,6 @@ $block: #{$fd-namespace}-shellbar;
       order: 3;
     }
 
-    .#{$block}__product-menu {
-      cursor: pointer;
-      color: $fd-shellbar-color;
-      background: $fd-shellbar-background-color;
-
-      &:hover {
-        background: $fd-shell-hover-background;
-      }
-
-      &:active,
-      &:focus {
-        background: $fd-shell-active-background;
-        color: $fd-shell-active-text-color;
-      }
-    }
-
     .#{$block}__avatar--circle {
       background-color: var(--sapAccentColor6);
     }
