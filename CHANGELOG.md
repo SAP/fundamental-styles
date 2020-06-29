@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.69"></a>
+# [0.11.0-rc.69](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.68...v0.11.0-rc.69) (2020-06-29)
+
+
+### Features
+
+* Add Headers to popin mode, add fixes to selection borders ([#1106](https://github.com/SAP/fundamental-styles/issues/1106)) ([9709cc6](https://github.com/SAP/fundamental-styles/commit/9709cc6))
+
+
+
 <a name="0.11.0-rc.68"></a>
 # [0.11.0-rc.68](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.67...v0.11.0-rc.68) (2020-06-29)
 
