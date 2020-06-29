@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.72"></a>
+# [0.11.0-rc.72](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.71...v0.11.0-rc.72) (2020-06-29)
+
+
+### Bug Fixes
+
+* migrate fieldset to Fiori 3 ([#1185](https://github.com/SAP/fundamental-styles/issues/1185)) ([f9cab31](https://github.com/SAP/fundamental-styles/commit/f9cab31))
+
+
+
 <a name="0.11.0-rc.71"></a>
 # [0.11.0-rc.71](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.70...v0.11.0-rc.71) (2020-06-29)
 
