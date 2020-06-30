@@ -32,9 +32,7 @@
     "storybook:ci": "npm run storybook -- --ci --quiet",
     "storybook:prep": "npm run build && babel-node scripts/storybook-prep.js",
     "storybook:static": "rm -rf storybook-static && npm run storybook:prep && build-storybook -c .storybook -o storybook-static -s .storybook/static/ --docs",
-    "storybook:visual:setup": "jest --no-cache --config=./config/jest.config.js",
-    "storybook:visual:docker": "cross-env DOCKER=true && npm run test",
-    "storybook:visual:docker:update": "cross-env DOCKER=true npm run test:update"
+    "storybook:visual:setup": "jest --no-cache --config=./config/jest.config.js"
   },
   "repository": {
     "type": "git",
@@ -76,8 +74,8 @@
     "gh-pages": "^2.2.0",
     "github-assistant": "^0.3.0",
     "jest": "^25.4.0",
+    "jest-image-snapshot": "^4.0.2",
     "jest-puppeteer": "^4.4.0",
-    "jest-puppeteer-docker": "^1.3.2",
     "load-json-file": "^6.2.0",
     "markdown-to-jsx": "^6.11.4",
     "node-sass": "^4.14.1",

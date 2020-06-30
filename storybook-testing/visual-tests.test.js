@@ -10,9 +10,12 @@ global.window = { ...global };
 
 const getMatchOptions = ({ context }) => {
     return {
-        failureThreshold: 0.2,
+        failureThreshold: 0.5,
         failureThresholdType: 'percent',
         customSnapshotIdentifier: () => context.name.replace(/\s/g, ''),
+        // Will output base64 string of a diff image to console in case of failed tests (in addition to creating a diff image).
+        // This string can be copy-pasted to a browser address string to preview the diff for a failed test.
+        dumpDiffToConsole: true,
         allowSizeMismatch: true
     };
 };
