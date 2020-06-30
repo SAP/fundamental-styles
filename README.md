@@ -57,7 +57,6 @@ The project has the following prerequisites:
 * Git (for downloading this repo)
 * [Node LTS](https://nodejs.org/)
 * Ruby (for running the documentation website locally)
-* Docker (for running the visual regression testing framework)
 
 ## SLA
 Our Service Level Agreement. Fundamental Library Styles is aiming to deliver:

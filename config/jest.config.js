@@ -1,11 +1,10 @@
-const process = require('process');
 const path = require('path');
 
 module.exports = {
     rootDir: path.resolve(__dirname, '../storybook-testing/'),
     verbose: true,
     testEnvironment: 'node',
-    preset: process.env.DOCKER ? 'jest-puppeteer-docker' : 'jest-puppeteer',
+    preset: 'jest-puppeteer',
     setupFilesAfterEnv: [path.resolve(__dirname, 'storyshots-setup.js')],
     moduleNameMapper: {
         '.+\\.(css|styl|less|sass|scss)$': 'babel-jest'

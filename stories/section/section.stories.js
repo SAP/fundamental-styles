@@ -119,16 +119,6 @@ This may be more appropriate depending on the need to maintain source order and 
     }
 };
 
-sectionLayoutGrid.storyName = 'With Layout Grid';
-sectionLayoutGrid.parameters = {
-    docs: {
-        iframeHeight: 300,
-        storyDescription: `
-Shows an example with the grid span helper class.
-This is most appropriate when displaying a collection of content in a linear order.`
-    }
-};
-
 export const sectionHeaders = () => `
 <section class="fd-section">
     <div class="fd-section__header">
@@ -147,5 +137,105 @@ sectionHeaders.parameters = {
     docs: {
         iframeHeight: 300,
         storyDescription: 'Header and title elements are available when necessary to label content groups.'
+    }
+};
+
+export const testingSimpleSection = () => `
+<section class='fd-section '>
+    Simple Section
+</section>
+
+<section class='fd-section '>
+    <div class='fd-section__header'>
+        <h3 class='fd-section__title'>Section Title</h3>
+    </div>
+    Section Content
+</section>
+    
+<section class='fd-section '>
+    <div class='fd-section__header'>
+        <h3 class='fd-section__title'>Title</h3>
+        <div class='fd-section__actions'>action section</div>
+    </div>
+    Section Content
+</section>
+    
+<section class='fd-section '>
+    <div class='fd-section__header'>
+        <h3 class='fd-section__title'>Title</h3>
+        <div class='fd-section__actions'>action part</div>
+    </div>
+    Section Content
+    <div class='fd-section__footer'>footer part</div>
+</section>
+    
+<section class='fd-section fd-section--full-bleed'>
+    <div class='fd-section__header'>
+        <h3 class='fd-section__title'>Title</h3>
+        <div class='fd-section__actions'>action part</div>
+    </div>
+    Section Content with Full Bleed
+    <div class='fd-section__footer'>footer part</div>
+</section>
+    
+<section class='fd-section '>Simple Section</section>
+`;
+
+testingSimpleSection.parameters = {
+    docs: {
+        disable: true
+    }
+};
+
+export const testingSectionWithHeadlines = () => `        
+<section class='fd-section '>
+    <div class='fd-section__header'>
+        <h2 class='fd-section__title'>section with h2 headline</h2>
+        <div class='fd-section__actions'>action part</div>
+    </div>
+    Section Content
+    <div class='fd-section__footer'>footer part</div>
+</section>
+    
+<section class='fd-section '>
+    <div class='fd-section__header'>
+        <h3 class='fd-section__title'>section with h3 headline</h3>
+            <div class='fd-section__actions'>action part</div>
+    </div>
+    Section Content
+    <div class='fd-section__footer'>footer part</div>
+</section>
+    
+<section class='fd-section '>
+    <div class='fd-section__header'>
+        <h4 class='fd-section__title'>section with h4 headline</h4>
+        <div class='fd-section__actions'>action part</div>
+    </div>
+    Section Content
+    <div class='fd-section__footer'>footer part</div>
+</section>
+    
+<section class='fd-section '>
+    <div class='fd-section__header'>
+        <h5 class='fd-section__title'>section with h5 headline</h5>
+        <div class='fd-section__actions'>action part</div>
+    </div>
+    Section Content
+    <div class='fd-section__footer'>footer part</div>
+</section>
+
+<section class='fd-section '>
+    <div class='fd-section__header'>
+        <h6 class='fd-section__title'>section with h6 headline</h6>
+        <div class='fd-section__actions'>action part</div>
+    </div>
+Section Content
+    <div class='fd-section__footer'>footer part</div>
+</section>
+`;
+
+testingSectionWithHeadlines.parameters = {
+    docs: {
+        disable: true
     }
 };

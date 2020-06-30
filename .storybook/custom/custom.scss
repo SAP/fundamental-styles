@@ -308,3 +308,28 @@ body.sb-show-main {
   color: #32363a;
   color: var(--sapTextColor, #32363a);
 }
+
+.fdsb-layout-panel-playground {
+  border: 1px solid navy;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 0;
+  background: gold;
+  font-size: 14px;
+  box-shadow: 0 5px 20px 0 blue;
+}
+
+.fddocs.fd-container {
+  min-height: 20px;
+  padding: 20px;
+  background: lightblue;
+  border: 1px solid yellow;
+
+  [class^="fd-col"] {
+    background-color: #edeff0;
+    height: 70px;
+    border: 1px solid #d9d9d9;
+    text-align: center;
+    padding: 10px 5px;
+  }
+}
