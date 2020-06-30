@@ -343,3 +343,66 @@
   color: $color;
   font-size: $fd-size;
 }
+
+$colors: (
+  --fd-color-action-1: var(--sapButton_Active_Background, #0a6ed1),
+  --fd-color-action-2: var(--sapButton_Background, #ffffff),
+  --fd-color-action-3: var(--sapButton_Selected_Background, #0854a1),
+  --fd-color-shell-1: var(--sapShellColor, #354a5f),
+  --fd-color-shell-2: var(--sapShell_InteractiveTextColor, #d1e8ff),
+  --fd-color-shell-3: var(--sapShell_Hover_Background, #283848),
+  --fd-color-shell-4: var(--sapShell_Active_Background, #23303e),
+  --fd-color-shell-5: var(--sapShell_InteractiveBorderColor, #7996b4),
+  --fd-color-text-1: var(--sapTextColor, #32363a),
+  --fd-color-text-2: var(--sapTextColor, #515559),
+  --fd-color-text-3: var(--sapContent_LabelColor, #6a6d70),
+  --fd-color-text-4: var(--sapfield_PlaceholderTextColor, #74777a),
+  --fd-color-text-5: var(--sapContent_Selected_TextColor, #ffffff),
+  --fd-color-background-1: var(--sapShell_Background, #edeff0),
+  --fd-color-background-2: var(--sapBaseColor, #ffffff),
+  --fd-color-background-3: var(--sapSuccessBackground, #f1fdf6),
+  --fd-color-background-4: var(--sapWarningBackground, #fef7f1),
+  --fd-color-background-5: var(--saperrorBackground, #ffebeb),
+  --fd-color-background-6: var(--sapInformationBackground, #f5faff),
+  --fd-color-background-7: var(--sapNeutralBackground, #f4f4f4),
+  --fd-color-neutral-1: var(--sapList_footerBackground, #fafafa),
+  --fd-color-neutral-2: var(--sapNeutralColor, #eeeeef),
+  --fd-color-neutral-3: var(--sapPageHeader_BorderColor, #d9d9d9),
+  --fd-color-neutral-4: var(--sapContent_UnratedColor, #89919a),
+  --fd-color-neutral-5: var(--sapBackgroundColor, #f7f7f7),
+  --fd-color-neutral-6: var(--sapList_HeaderBackground, #f2f2f2),
+  --fd-color-status-1: var(--sapPositiveColor, #107e3e),
+  --fd-color-status-2: var(--sapCriticalColor, #e9730c),
+  --fd-color-status-3: var(--sapNegativeColor, #bb0000),
+  --fd-color-status-4: var(--sapNeutralColor, #6a6d70),
+  --fd-color-status-5: var(--sapInformativeColor, #0a6ed1),
+  --fd-color-accent-1: var(--sapAccentColor1, #d08014),
+  --fd-color-accent-2: var(--sapAccentColor2, #d04343),
+  --fd-color-accent-3: var(--sapAccentColor3, #db1f77),
+  --fd-color-accent-4: var(--sapAccentColor4, #c0399f),
+  --fd-color-accent-5: var(--sapAccentColor5, #6367de),
+  --fd-color-accent-6: var(--sapAccentColor6, #286eb4),
+  --fd-color-accent-7: var(--sapAccentColor7, #0f828f),
+  --fd-color-accent-8: var(--sapAccentColor8, #7ca10c),
+  --fd-color-accent-9: var(--sapAccentColor9, #955ecf),
+  --fd-color-accent-10: var(--sapAccentColor10, #647887),
+  --fd-color-accent-11: var(--sapAccentColor1, #d17f15),
+  --fd-color-accent-12: var(--sapAccentColor2, #d04343),
+  --fd-color-accent-13: var(--sapAccentColor6, #2b78c5),
+  --fd-color-accent-14: var(--sapAccentColor9, #0f828f),
+  --fd-color-accent-15: var(--sapAccentColor4, #647887),
+  --fd-color-action-hover: var(--sapButton_emphasized_Hover_Background, #085caf),
+  --fd-color-action-selected: var(--sapSelectedColor, #0854a0),
+  --fd-color-action-disabled: rgba(var(--sapSelectedColor, #0854a0), var(--sapContent_DisabledOpacity, 0.4)),
+  --fd-color-background-hover: var(--sapList_AlternatingBackground, #fafafa),
+  --fd-color-background-selected: var(--sapInformativeColor, #0a6ed1),
+  --fd-color-background-selected-hover: var(--sapContent_Selected_Hover_Background, #095caf)
+);
+
+@mixin fd-theming($property, $color) {
+  @if map-has-key($colors, $color) {
+    $property: map-get($colors, $color);
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$color}`. " + "Please make sure it is defined in `$colors` map.";
+  }
+}
