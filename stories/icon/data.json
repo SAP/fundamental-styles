@@ -651,6 +651,9 @@
         "expand-all",
         "collapse-all",
         "combine",
-        "split"
+        "split",
+        "megamenu",
+        "feedback",
+        "information"
     ]
 }
