@@ -19,7 +19,7 @@ jobs:
   -
     script: npm run build:prod && npm run size
   - stage: Pre-release
-    if: branch = master
+    if: branch = master AND type = push
     before_deploy:
     - git checkout master
     - bash ./ci-scripts/setup-npm.sh
