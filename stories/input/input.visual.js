@@ -1,8 +1,9 @@
 
 import * as stories from './input.stories.js';
 
+// TO DO: change title to "Visual" once addon-storyshots is updated https://github.com/storybookjs/storybook/pull/11267
 export default {
-    title: 'Visual'
+    title: 'Ignore'
 };
 
 export const Input = () => {

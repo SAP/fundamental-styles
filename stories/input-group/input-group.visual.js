@@ -5,8 +5,9 @@ import '../../dist/popover.css';
 import '../../dist/input-group.css';
 import * as stories from './input-group.stories.js';
 
+// TO DO: change title to "Visual" once addon-storyshots is updated https://github.com/storybookjs/storybook/pull/11267
 export default {
-    title: 'Visual'
+    title: 'Ignore'
 };
 
 export const InputGroup = () => {
