@@ -12,7 +12,8 @@ const getMatchOptions = ({ context }) => {
     return {
         failureThreshold: 0.2,
         failureThresholdType: 'percent',
-        customSnapshotIdentifier: () => context.name.replace(/\s/g, '')
+        customSnapshotIdentifier: () => context.name.replace(/\s/g, ''),
+        allowSizeMismatch: true
     };
 };
 
