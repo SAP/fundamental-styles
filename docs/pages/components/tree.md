@@ -13,10 +13,10 @@ tags: [development]
 Unlike tree tables, trees are used for rather basic data.
 
 ### Use the tree if:
-- You need to display the key identifier of hierarchically structured items
-- Selecting one or more items out of a set of hierarchically structured items is a main use case.
-- The hierarchy has a restricted number of levels (up to about 12, depending on the content) and items (around 200).
-- You want to have only one implementation for all devices.
+- You need to display the key identifier of items structured in a hierarchy
+- Selecting one or more items out of a set of hierarchically structured items is a main use case
+- The hierarchy has a restricted number of levels (up to about 12, depending on the content) and items (around 200)
+- You want to have only one implementation for all devices
 
 
 ### Do not use the tree if:
@@ -32,14 +32,14 @@ Unlike tree tables, trees are used for rather basic data.
 The tree is like a list containing hierarchical data. It acts as a container for items, with the possibility to expand and collapse nodes. The tree changes the indentation per level dynamically when the user expands a node, based on number of levels currently showing. The first tree level (ul element) has a class `expanded-level-*` which keeps track of which level is currently expanded. The indentation rules are the same for compact and cozy mode.
 
 ### Wrapping Behaviour
-The default behaviour of the list item is no wrapping. To allow wrapping use the `fd-tree__content--wrap` modifier class applied on the `fd-tree__content` element.
+The default behaviour of the list item is not wrapped. To allow wrapping, use the `fd-tree__content--wrap` modifier class applied on the `fd-tree__content` element.
 
 ### Modes
-There are 2 modes: Default(Tablet and Mobile) and Compact (Desktop). For compact mode apply the `fd-tree--compact` modifier class to each `fd-tree` element. 
+There are 2 modes: Default (Tablet and Mobile) and Compact (Desktop). For compact mode apply the `fd-tree--compact` modifier class to each `fd-tree` element. 
 
 ### Interactive States
-By default tree items do not have `hover` state. The `fd-tree--hoverable` modifier class applied to the first tree level (ul element) can enable the `hover` state. <br>
-For selected state apply the `is-selected` class to the `fd-tree__item-container` element.
+The `hover` state isn't enabled on tree items by default. This can be achieved by applying the `fd-tree--hoverable` modifier class to the first tree level (ul element). <br>
+For the selected state, apply the `is-selected` class to the `fd-tree__item-container` element.
 
 <br>
 
@@ -49,7 +49,7 @@ For selected state apply the `is-selected` class to the `fd-tree__item-container
 
 ## Tree with Expanded Level 1
 When Level 1 is expanded to show Level 2, Level 2 is idented by 1.5rem. <br>
-Only Level 1 tree (ul element) needs to have the `expanded-level-*` modifier class in order to keep track of which level is currently expanded.
+The `expanded-level-*` modifier class should only be applied to the Level 1 tree (ul element) in order to keep track of which level is currently expanded.
 {% capture tree %}
 <ul role="tree" aria-label="Root Tree" id="TREE1L1" class="fd-tree level-1 expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
@@ -168,7 +168,7 @@ Only Level 1 tree (ul element) needs to have the `expanded-level-*` modifier cla
 <br>
 
 ## Tree with Expanded Level 2 and Hoverable Tree Items
-When Level 2 is expanded to show Level 3, Level 2 changes to be indented by 1rem, Level 3 is indented by 2.5rem. <br>
+When Level 2 is expanded to show Level 3, Level 2 shifts to an indentation of 1rem and Level 3 shifts to 2.5rem. <br>
 For hoverable tree items add the `fd-tree--hoverable` modifier class to the first tree level (ul element). 
 {% capture tree2 %}
 <ul role="tree" aria-label="Root Tree" id="TREE2L1" class="fd-tree fd-tree--hoverable level-1 expanded-level-2">
@@ -747,11 +747,9 @@ Indentations are calculated with 0.25rem
 <br>
 
 ## Tree with Expanded Level 25
-If there are more levels they should be triggered
-by the Growing list visualisation.
+If more than 25 levels are required, they should be triggered by the Growing list visualisation.
 
-Level 25 Starts back at the Level 1 position
-and the indentation rules are repeated.
+At Level 25, the tree level reverts to the Level 1 position and the indentation rules are repeated.
 
 {% capture tree25 %}
 <ul role="tree" aria-label="Root Tree" id="TREE25L1" class="fd-tree level-1 expanded-level-25">
@@ -864,7 +862,7 @@ and the indentation rules are repeated.
 <br>
 
 ## Tree with Expanded Level 26
-Same indentation rules as Tree with Expanded Level 2
+The same indentation rules as Tree with Expanded Level 2 are applied.
 {% capture tree26 %}
 <ul role="tree" aria-label="Root Tree" id="TREE26L1" class="fd-tree level-1 expanded-level-26">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
@@ -1011,7 +1009,7 @@ Same indentation rules as Tree with Expanded Level 2
 <br>
 
 ## Tree with Expanded Level 27
-Same indentation rules as Tree with Expanded Level 3
+Same indentation rules as Tree with Expanded Level 3 are applied.
 {% capture tree27 %}
 <ul role="tree" aria-label="Root Tree" id="TREE27L1" class="fd-tree level-1 expanded-level-27">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
@@ -1191,7 +1189,7 @@ Same indentation rules as Tree with Expanded Level 3
 <br>
 
 ## Tree with Expanded Level 30
-Same indentation rules as Tree with Expanded Level 6
+Same indentation rules as Tree with Expanded Level 6 are applied.
 {% capture tree30 %}
 <ul role="tree" aria-label="Root Tree" id="TREE30L1" class="fd-tree level-1 expanded-level-30">
     <li role="treeitem" aria-level="0" aria-expanded="true" class="fd-tree__item">
