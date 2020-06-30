@@ -60,6 +60,10 @@ $block: #{$fd-namespace}-popover;
       margin-bottom: 0;
     }
 
+    &.is-expanded {
+      z-index: 3;
+    }
+
     @include fd-disabled() {
       pointer-events: none;
     }
@@ -190,6 +194,7 @@ $block: #{$fd-namespace}-popover;
     &--no-arrow {
       box-shadow: $fd-popover-box-shadow-no-arrow;
       top: $fd-popover-top-position-noarrow;
+      z-index: 2;
 
       &::before,
       &::after {
