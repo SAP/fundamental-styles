@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.80"></a>
+# [0.11.0-rc.80](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.79...v0.11.0-rc.80) (2020-06-30)
+
+
+### Bug Fixes
+
+* fixing HCB bugs ([#1191](https://github.com/SAP/fundamental-styles/issues/1191)) ([5be885e](https://github.com/SAP/fundamental-styles/commit/5be885e))
+
+
+
 <a name="0.11.0-rc.79"></a>
 # [0.11.0-rc.79](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.78...v0.11.0-rc.79) (2020-06-30)
 
