@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.77"></a>
+# [0.11.0-rc.77](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.76...v0.11.0-rc.77) (2020-06-30)
+
+
+### Bug Fixes
+
+* remove double box shadow ([#1193](https://github.com/SAP/fundamental-styles/issues/1193)) ([2994bb9](https://github.com/SAP/fundamental-styles/commit/2994bb9))
+
+
+
 <a name="0.11.0-rc.76"></a>
 # [0.11.0-rc.76](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.75...v0.11.0-rc.76) (2020-06-30)
 
