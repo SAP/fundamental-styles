@@ -19,7 +19,7 @@ export const desktop = () => `
             <button aria-label="button" class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
         </div>
         <div class="fd-bar__element">
-            <span aria-label="logo">LOGO</span>
+            <span aria-label="text">TEXT</span>
         </div>
     </div>
     <div class="fd-bar__middle">
@@ -51,7 +51,7 @@ export const desktop = () => `
             <button aria-label="button" class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
         </div>
         <div class="fd-bar__element">
-          <span aria-label="logo">LOGO</span>
+          <span aria-label="text">TEXT</span>
         </div>
     </div>
     <div class="fd-bar__middle">
