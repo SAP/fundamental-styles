@@ -10,7 +10,6 @@ $fd-tree-item-height: 2.75rem !default;
 $fd-tree-item-height-compact: 2rem !default;
 $fd-tree-content-padding-right: 1rem !default;
 $fd-tree-content-padding-y: 0.25rem !default;
-$fd-tree-growing-content-padding: 1rem !default;
 $fd-tree-expander-height: 2.75rem !default;
 $fd-tree-expander-height-compact: 1.5rem !default;
 $fd-tree-expander-width: 2.75rem !default;
@@ -118,98 +117,43 @@ $fd-tree-checkbox-margin-right-compact: 0.5rem !default;
         @include set-state($background: var(--sapList_SelectionBackgroundColor), $border: var(--sapList_SelectionBorderColor));
       }
     }
-
-    & > .#{$block}__item-container.#{$block}__item-container--growing {
-      .#{$block}__text {
-        color: var(--sapButton_TextColor);
-      }
-
-      .#{$block}__content:only-child {
-        margin: 0;
-
-        @include fd-rtl() {
-          margin: 0;
-        }
-      }
-
-      @include fd-active() {
-        @include set-state($background: var(--sapList_Active_Background), $text: var(--sapList_Active_TextColor));
-
-        @include fd-focus() {
-          outline-color: var(--sapContent_ContrastFocusColor);
-        }
-      }
-
-      @include fd-hover() {
-        @include set-state($background: var(--sapList_Hover_Background), $border: var(--sapList_BorderColor), $text: var(--sapButton_TextColor));
-
-        @include fd-active() {
-          @include set-state($background: var(--sapList_Active_Background), $text: var(--sapList_Active_TextColor));
-
-          @include fd-focus() {
-            outline-color: var(--sapContent_ContrastFocusColor);
-          }
-        }
-      }
-    }
   }
 
-  &.level-1,
-  &.level-25 {
+  &.level-1 {
     @include set-indentation(0);
   }
 
-  &.expanded-level-1,
-  &.expanded-level-25 {
-    .level-2,
-    .level-26 {
+  &.expanded-level-1 {
+    .level-2 {
       @include set-indentation(1.5rem);
     }
   }
 
-  &.expanded-level-2,
-  &.expanded-level-26 {
-    .level-2,
-    .level-26 {
+  &.expanded-level-2 {
+    .level-2 {
       @include set-indentation(1rem);
     }
 
-    .level-3,
-    .level-27 {
+    .level-3 {
       @include set-indentation(2.5rem);
     }
   }
 
   &.expanded-level-3,
   &.expanded-level-4,
-  &.expanded-level-5,
-  &.expanded-level-27,
-  &.expanded-level-28,
-  &.expanded-level-29 {
+  &.expanded-level-5 {
     @for $i from 2 through 6 {
       $marginLeft: ($i - 1) * 0.5rem;
-      .level-#{$i},
-      .level-#{$i + 24} {
+      .level-#{$i} {
         @include set-indentation($marginLeft);
       }
     }
   }
 
-  @for $i from 6 through 24 {
+  @for $i from 6 through 17 {
     &.expanded-level-#{$i} {
-      @for $j from 2 through 24 {
+      @for $j from 2 through 17 {
         $marginLeft: ($j - 1) * 0.25rem;
-        .level-#{$j} {
-          @include set-indentation($marginLeft);
-        }
-      }
-    }
-  }
-
-  @for $i from 30 through 36 {
-    &.expanded-level-#{$i} {
-      @for $j from 25 through 36 {
-        $marginLeft: ($j - 25) * 0.25rem;
         .level-#{$j} {
           @include set-indentation($marginLeft);
         }
@@ -248,22 +192,6 @@ $fd-tree-checkbox-margin-right-compact: 0.5rem !default;
     min-height: $fd-tree-item-height;
     height: 100%;
     padding-right: $fd-tree-content-padding-right;
-
-    &--growing {
-      cursor: pointer;
-      justify-content: center;
-      padding-right: $fd-tree-growing-content-padding;
-      padding-left: $fd-tree-growing-content-padding;
-
-      .#{$block}__text {
-        color: var(--sapButton_TextColor);
-      }
-
-      @include fd-rtl() {
-        padding-right: $fd-tree-growing-content-padding;
-        padding-left: $fd-tree-growing-content-padding;
-      }
-    }
   }
 
   &__expander {
