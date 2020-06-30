@@ -1211,24 +1211,11 @@ exports[`Storyshots Components/Bar Desktop 1`] = `
       >
         
             
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--home"
-        />
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--account"
-        />
+        <span
+          aria-label="text"
+        >
+          TEXT
+        </span>
         
         
       </div>
@@ -1368,25 +1355,12 @@ exports[`Storyshots Components/Bar Desktop 1`] = `
         class="fd-bar__element"
       >
         
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--home"
-        />
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--account"
-        />
+          
+        <span
+          aria-label="text"
+        >
+          TEXT
+        </span>
         
         
       </div>
