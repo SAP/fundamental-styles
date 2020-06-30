@@ -30,7 +30,7 @@
     "test:update": "npm run build && server-test storybook:ci http-get://localhost:6006 'npm run storybook:visual:setup -- --updateSnapshot'",
     "storybook": "npm run build && babel-node scripts/storybook-prep.js && start-storybook -s .storybook/static/ -p 6006",
     "storybook:ci": "npm run storybook -- --ci --quiet",
-    "storybook:static": "rm -rf storybook-static && npm run build && build-storybook -c .storybook -o storybook-static -s .storybook/static/ --docs",
+    "storybook:static": "rm -rf storybook-static && build-storybook -c .storybook -o storybook-static -s .storybook/static/ --docs",
     "storybook:visual:setup": "jest --no-cache --config=./config/jest.config.js",
     "storybook:visual:docker": "cross-env DOCKER=true && npm run test",
     "storybook:visual:docker:update": "cross-env DOCKER=true npm run test:update"
