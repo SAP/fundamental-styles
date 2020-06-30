@@ -11,7 +11,7 @@ jobs:
   include:
   - stage: Lint, Test and Size
     script:
-      - npm run test
+      - npm run storybook:visual:docker
   -
     script: npm run lint
   -

@@ -10,7 +10,7 @@ global.window = { ...global };
 
 const getMatchOptions = ({ context }) => {
     return {
-        failureThreshold: 2,
+        failureThreshold: 0.2,
         failureThresholdType: 'percent',
         customSnapshotIdentifier: () => context.name.replace(/\s/g, '')
     };
