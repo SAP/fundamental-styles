@@ -11,7 +11,7 @@ jobs:
   include:
   - stage: Lint, Test and Size
     script:
-      - npm run test:ci
+      - npm run test
   -
     script: npm run lint
   -
