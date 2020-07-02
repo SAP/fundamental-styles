@@ -31,7 +31,7 @@ $block: #{$fd-namespace}-shellbar;
   $fd-content-badge-background: var(--sapContent_BadgeBackground) !default;
 
   // Box shadow
-  $fd-shellbar-box-shadow: inset 0 -0.0625rem 0 0 var(--sapShellBorderColor) !default;
+  $fd-shellbar-box-shadow: var(--sapContent_HeaderShadow) !default;
 
   @include fd-reset();
 

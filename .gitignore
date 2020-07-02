@@ -13,7 +13,6 @@ Thumbs.db
 /dist
 node_modules
 build
-test/visual-regression-tests/backstop_data
 .tmp
 *.log
 *.tgz
@@ -40,3 +39,4 @@ storybook-static
 .storybook/static/dark_css_variables.css
 .storybook/static/light_dark_css_variables.css
 stories/docs/
+storybook-static

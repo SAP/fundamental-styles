@@ -2,6 +2,66 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.85"></a>
+# [0.11.0-rc.85](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.84...v0.11.0-rc.85) (2020-07-01)
+
+
+
+<a name="0.11.0-rc.84"></a>
+# [0.11.0-rc.84](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.83...v0.11.0-rc.84) (2020-07-01)
+
+
+
+<a name="0.11.0-rc.83"></a>
+# [0.11.0-rc.83](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.82...v0.11.0-rc.83) (2020-07-01)
+
+
+
+<a name="0.11.0-rc.82"></a>
+# [0.11.0-rc.82](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.81...v0.11.0-rc.82) (2020-07-01)
+
+
+
+<a name="0.11.0-rc.81"></a>
+# [0.11.0-rc.81](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.80...v0.11.0-rc.81) (2020-06-30)
+
+
+
+<a name="0.11.0-rc.80"></a>
+# [0.11.0-rc.80](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.79...v0.11.0-rc.80) (2020-06-30)
+
+
+### Bug Fixes
+
+* fixing HCB bugs ([#1191](https://github.com/SAP/fundamental-styles/issues/1191)) ([5be885e](https://github.com/SAP/fundamental-styles/commit/5be885e))
+
+
+
+<a name="0.11.0-rc.79"></a>
+# [0.11.0-rc.79](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.78...v0.11.0-rc.79) (2020-06-30)
+
+
+
+<a name="0.11.0-rc.78"></a>
+# [0.11.0-rc.78](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.77...v0.11.0-rc.78) (2020-06-30)
+
+
+
+<a name="0.11.0-rc.77"></a>
+# [0.11.0-rc.77](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.76...v0.11.0-rc.77) (2020-06-30)
+
+
+### Bug Fixes
+
+* remove double box shadow ([#1193](https://github.com/SAP/fundamental-styles/issues/1193)) ([2994bb9](https://github.com/SAP/fundamental-styles/commit/2994bb9))
+
+
+
+<a name="0.11.0-rc.76"></a>
+# [0.11.0-rc.76](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.75...v0.11.0-rc.76) (2020-06-30)
+
+
+
 <a name="0.11.0-rc.75"></a>
 # [0.11.0-rc.75](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.74...v0.11.0-rc.75) (2020-06-29)
 

@@ -1,9 +1,0 @@
-{%- macro id(prefix="") -%}
-{%- set num -%}
-    {%- if prefix === "" -%}
-    {{ 3 | random_string }}
-    {%- endif -%}
-    {{ 3 | random_number }}
-{%- endset -%}
-{{ prefix }}{{ num | trim }}
-{%- endmacro -%}

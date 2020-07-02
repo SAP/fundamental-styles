@@ -1,8 +1,6 @@
 language: node_js
 node_js: 10.21.0
 dist: trusty
-services:
-  - docker
 git:
   depth: false
 script:
@@ -11,15 +9,13 @@ jobs:
   include:
   - stage: Lint, Test and Size
     script:
-      - docker pull backstopjs/backstopjs:3.9.2
-      - npm run test:ci-config
       - npm run test
   -
     script: npm run lint
   -
     script: npm run build:prod && npm run size
   - stage: Pre-release
-    if: branch = master
+    if: branch = master AND type = push
     before_deploy:
     - git checkout master
     - bash ./ci-scripts/setup-npm.sh
