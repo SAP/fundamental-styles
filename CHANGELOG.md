@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.86"></a>
+# [0.11.0-rc.86](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.85...v0.11.0-rc.86) (2020-07-03)
+
+
+### Bug Fixes
+
+* add new icons ([#1203](https://github.com/SAP/fundamental-styles/issues/1203)) ([6567813](https://github.com/SAP/fundamental-styles/commit/6567813))
+
+
+
 <a name="0.11.0-rc.85"></a>
 # [0.11.0-rc.85](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.84...v0.11.0-rc.85) (2020-07-01)
 
