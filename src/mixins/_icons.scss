@@ -26,7 +26,6 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    speak: none;
     @content;
   }
 }
@@ -57,7 +56,7 @@
     } @else {
       // implicity
       font-size: map-get($fd-icons-sizes, "default");
-      line-height: $fd-line-height;
+      line-height: var(--sapContent_LineHeight);
     }
     @content;
   }
