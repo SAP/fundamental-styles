@@ -1302,3 +1302,9 @@
   unicode: "\e285"
 - name: split
   unicode: "\e286" 
+- name: megamenu
+  unicode: "\e287" 
+- name: feedback
+  unicode: "\e288" 
+- name: information
+  unicode: "\e289" 

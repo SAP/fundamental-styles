@@ -6541,6 +6541,36 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
       .sap-icon--split
     </div>
   </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--megamenu sap-icon--xl"
+    />
+    <div>
+      .sap-icon--megamenu
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--feedback sap-icon--xl"
+    />
+    <div>
+      .sap-icon--feedback
+    </div>
+  </div>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon--information sap-icon--xl"
+    />
+    <div>
+      .sap-icon--information
+    </div>
+  </div>
 </div>
 `;
 
