@@ -4,6 +4,27 @@
 // library namespace
 $fd-namespace: fd !default;
 
+$fd-breakpoints: (
+  s: 320px,    // phone     <600
+  m: 600px,    // tablet    600-1023
+  l: 1024px,   // desktop   1024-1439
+  xl: 1440px,  // desktop   1440-1919
+  xxl: 1920px, // display   >1920
+) !default;
+
+$fd-z-index-levels: () !default;
+$fd-z-index-levels: map-merge(
+  (
+    "base": 0,
+    "first": 1,
+    "second": 2,
+    "focus": 5,
+    "top": 1000,
+    "default": auto
+  ),
+  $fd-z-index-levels
+);
+
 // animation speed
 $fd-animation-speed: 0.125s !default;
 $fd-forms-transition-params: $fd-animation-speed ease-in !default;
