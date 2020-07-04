@@ -1,6 +1,5 @@
 @import "./mixins";
 @import "./new-settings";
-@import "./button.scss";
 
 $block: #{$fd-namespace}-file-uploader;
 
@@ -38,19 +37,12 @@ $block: #{$fd-namespace}-file-uploader;
 
     @include fd-focus() {
       outline: none;
-
-      ~ .#{$block}__button {
-        @include buttonContainerFocus();
-      }
     }
 
     @include fd-hover() {
       outline: none;
       cursor: pointer;
       border-color: var(--sapField_BorderColor);
-      ~ .#{$block}__button {
-        @include buttonContainerHover();
-      }
     }
   }
 
