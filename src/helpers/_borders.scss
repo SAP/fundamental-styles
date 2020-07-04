@@ -1,4 +1,4 @@
-@import "./../settings";
+@import "./../new-settings";
 @import "../mixins/mixins";
 
 .#{$fd-namespace}-has-border-radius-0 {
@@ -37,33 +37,5 @@
         border-#{$_opp}: none !important;
       }
     }
-  }
-}
-
-@each $type, $shades in $fd-colors {
-  @each $shade, $value in $shades {
-    @if $shade == 1 {
-      // set default selector for convenience
-      .#{$fd-namespace}-has-border-color-#{$type},
-      .#{$fd-namespace}-has-border-color-#{$type}-#{$shade} {
-        @include fd-var-color("border-color", $value, --fd-color-#{$type}-#{$shade}, true);
-      }
-    } @else {
-      .#{$fd-namespace}-has-border-color-#{$type}-#{$shade} {
-        @include fd-var-color("border-color", $value, --fd-color-#{$type}-#{$shade}, true);
-      }
-    }
-  }
-}
-
-@each $state, $value in $fd-colors-action-states {
-  .#{$fd-namespace}-has-border-color-action-#{$state} {
-    @include fd-var-color("border-color", $value, --fd-color-action-#{$state}, true);
-  }
-}
-
-@each $state, $value in $fd-colors-background-states {
-  .#{$fd-namespace}-has-border-color-background-#{$state} {
-    @include fd-var-color("border-color", $value, --fd-color-background-#{$state}, true);
   }
 }
