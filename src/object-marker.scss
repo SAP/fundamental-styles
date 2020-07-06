@@ -1,0 +1,115 @@
+@import "./new-settings";
+@import "./mixins";
+
+/*!
+.fd-object-marker
+*/
+$block: #{$fd-namespace}-object-marker;
+
+.#{$block} {
+  // ICON VARIABLES
+  $fd-object-marker-color: var(--sapContent_MarkerIconColor) !default;
+  $fd-object-marker-text-color: var(--sapContent_LabelColor) !default;
+  $fd-object-marker-padding-left: 0.5rem !default;
+  $fd-object-marker-padding-right: 0.25rem !default;
+
+  @include fd-reset();
+  @include fd-ellipsis();
+
+  max-width: 100%;
+  color: $fd-object-marker-text-color;
+  word-break: break-word;
+  align-items: center;
+  line-height: 1;
+  display: inline-block;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &::before {
+    font-size: 1rem;
+    color: $fd-object-marker-color;
+    padding: 0 $fd-object-marker-padding-right 0 0;
+    vertical-align: middle;
+  }
+
+  // CLICKABLE OBJECT STATUS
+  &--link {
+    display: inline-block;
+    text-decoration: none;
+    color: $fd-object-marker-color;
+    cursor: pointer;
+
+    &::before {
+      position: relative;
+      display: inline-block;
+    }
+
+    &:hover {
+      text-decoration: underline;
+
+      &::before {
+        text-decoration: none;
+      }
+    }
+
+    &:visited {
+      text-decoration: none;
+    }
+  }
+
+  &__icon {
+    color: $fd-object-marker-color;
+    font-style: normal;
+    line-height: normal;
+    font-size: 1rem;
+
+    &::before {
+      padding-right: $fd-object-marker-padding-right;
+    }
+
+    @include fd-rtl() {
+      &::before {
+        padding-left: $fd-object-marker-padding-right;
+        padding-right: 0;
+      }
+    }
+  }
+
+  // ICON ONLY MODE
+  @include fd-empty() {
+    justify-content: center;
+    padding-right: 0;
+    padding-left: 0;
+
+    &::before {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  @include fd-rtl() {
+    &::before {
+      padding-left: $fd-object-marker-padding-right;
+      padding-right: 0;
+    }
+
+    @include fd-empty() {
+      &::before {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+
+  & + .#{$block} {
+    margin-left: $fd-object-marker-padding-left;
+    margin-right: 0;
+
+    @include fd-rtl() {
+      margin-right: $fd-object-marker-padding-left;
+      margin-left: 0;
+    }
+  }
+}
