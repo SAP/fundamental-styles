@@ -27,7 +27,7 @@ For lists that require more than 12 options, the <a href="/patterns/combobox-inp
          <div
             aria-controls="h0C6A325"
             aria-expanded="false"
-            aria-haspopup="true"
+            aria-haspopup="listbox"
             class="fd-select__control"
             role="combobox"
             tabindex="0">
@@ -78,7 +78,7 @@ For lists that require more than 12 options, the <a href="/patterns/combobox-inp
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select fd-select--compact">
-        <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0C6A326" aria-expanded="false" aria-haspopup="true">
+        <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0C6A326" aria-expanded="false" aria-haspopup="listbox">
             <span class="fd-select__text-content">Select</span>
             <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
         </div>
@@ -119,7 +119,7 @@ The `Select` component can be customized by adding additional information in add
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
-         <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0C62325" aria-expanded="false" aria-haspopup="true">
+         <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0C62325" aria-expanded="false" aria-haspopup="listbox">
              <span class="fd-select__text-content">Select Product</span>
              <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
          </div>
@@ -157,7 +157,7 @@ The `Select` component can be customized by adding additional information in add
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select fd-select--compact">
-        <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h07jj326" aria-expanded="false" aria-haspopup="true">
+        <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h07jj326" aria-expanded="false" aria-haspopup="listbox">
             <span class="fd-select__text-content">Select Product</span>
             <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
         </div>
@@ -197,7 +197,7 @@ The `Select` component can be customized by adding additional information in add
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
-         <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h090G325" aria-expanded="false" aria-haspopup="true">
+         <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h090G325" aria-expanded="false" aria-haspopup="listbox">
              <span class="fd-select__text-content">Select Product</span>
              <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
          </div>
@@ -245,7 +245,7 @@ In cases where the list items need to be categorized into groups, it is possible
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
-         <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h09GDGG325" aria-expanded="false" aria-haspopup="true">
+         <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h09GDGG325" aria-expanded="false" aria-haspopup="listbox">
              <span class="fd-select__text-content">Select Ingredient</span>
              <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
          </div>
@@ -301,7 +301,7 @@ the `--no-wrap` modifier can be added to the `fd-list__title`, or `fd-list__seco
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
-         <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0GFF2325" aria-expanded="false" aria-haspopup="true">
+         <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0GFF2325" aria-expanded="false" aria-haspopup="listbox">
              <span class="fd-select__text-content">Select</span>
              <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
          </div>
@@ -339,7 +339,7 @@ the `--no-wrap` modifier can be added to the `fd-list__title`, or `fd-list__seco
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select fd-select--compact">
-        <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0GZH2325" aria-expanded="false" aria-haspopup="true">
+        <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0GZH2325" aria-expanded="false" aria-haspopup="listbox">
             <span class="fd-select__text-content">Select</span>
             <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
         </div>
@@ -384,7 +384,7 @@ The length can be adjusted to match the text length by adding the `fd-popover__b
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
-         <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0GTKE325" aria-expanded="false" aria-haspopup="true">
+         <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0GTKE325" aria-expanded="false" aria-haspopup="listbox">
              <span class="fd-select__text-content">Much Longer than Usual</span>
              <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
          </div>
@@ -465,7 +465,7 @@ To add text in the body of the component, simply include your text in the `fd-li
 <div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select">
-            <div class="fd-select__control is-success" role="combobox" tabindex="0" aria-controls="h07jjhYH"  aria-expanded="false" aria-haspopup="true">
+            <div class="fd-select__control is-success" role="combobox" tabindex="0" aria-controls="h07jjhYH"  aria-expanded="false" aria-haspopup="listbox">
                 <span class="fd-select__text-content">Success</span>
                 <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
             </div>
@@ -507,7 +507,7 @@ To add text in the body of the component, simply include your text in the `fd-li
 <div class="fd-popover">
    <div class="fd-popover__control">
        <div class="fd-select">
-           <div class="fd-select__control is-error" role="combobox" tabindex="0" aria-controls="h07j9978H"  aria-expanded="false" aria-haspopup="true">
+           <div class="fd-select__control is-error" role="combobox" tabindex="0" aria-controls="h07j9978H"  aria-expanded="false" aria-haspopup="listbox">
                <span class="fd-select__text-content">Error</span>
                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
            </div>
@@ -549,7 +549,7 @@ To add text in the body of the component, simply include your text in the `fd-li
 <div class="fd-popover">
    <div class="fd-popover__control">
        <div class="fd-select">
-           <div class="fd-select__control is-warning" role="combobox" tabindex="0" aria-controls="h07j998hhH"  aria-expanded="false" aria-haspopup="true">
+           <div class="fd-select__control is-warning" role="combobox" tabindex="0" aria-controls="h07j998hhH"  aria-expanded="false" aria-haspopup="listbox">
                <span class="fd-select__text-content">Warning</span>
                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
            </div>
@@ -591,7 +591,7 @@ To add text in the body of the component, simply include your text in the `fd-li
 <div class="fd-popover">
    <div class="fd-popover__control">
        <div class="fd-select">
-           <div class="fd-select__control is-information" role="combobox" tabindex="0" aria-controls="hkhh998hhH"  aria-expanded="false" aria-haspopup="true">
+           <div class="fd-select__control is-information" role="combobox" tabindex="0" aria-controls="hkhh998hhH"  aria-expanded="false" aria-haspopup="listbox">
                <span class="fd-select__text-content">Information</span>
                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
            </div>
@@ -638,7 +638,7 @@ If a user should not be presented with a default selection, a blank option can b
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
-         <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0B6A326" aria-expanded="false" aria-haspopup="true">
+         <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0B6A326" aria-expanded="false" aria-haspopup="listbox">
              <span class="fd-select__text-content"></span>
              <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
          </div>
@@ -673,7 +673,7 @@ If a user should not be presented with a default selection, a blank option can b
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select fd-select--compact">
-        <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0B6A327" aria-expanded="false" aria-haspopup="true">
+        <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0B6A327" aria-expanded="false" aria-haspopup="listbox">
             <span class="fd-select__text-content"></span>
             <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
         </div>
