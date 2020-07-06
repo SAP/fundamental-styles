@@ -35,10 +35,10 @@ exports[`Storyshots Components/Select Blank 1`] = `
         <div
           aria-controls="h0B6A326"
           aria-expanded="false"
-          aria-haspopup="true"
+          aria-haspopup="listbox"
           class="fd-select__control"
           onclick="onPopoverClick('h0B6A326');"
-          role="button"
+          role="combobox"
           tabindex="0"
         >
           
@@ -209,10 +209,10 @@ exports[`Storyshots Components/Select Blank 1`] = `
         <div
           aria-controls="h0B6A327"
           aria-expanded="false"
-          aria-haspopup="true"
+          aria-haspopup="listbox"
           class="fd-select__control"
           onclick="onPopoverClick('h0B6A327');"
-          role="button"
+          role="combobox"
           tabindex="0"
         >
           
@@ -411,10 +411,10 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
         <div
           aria-controls="h07jjhYH"
           aria-expanded="false"
-          aria-haspopup="true"
+          aria-haspopup="listbox"
           class="fd-select__control is-success"
           onclick="onPopoverClick('h07jjhYH');"
-          role="button"
+          role="combobox"
           tabindex="0"
         >
           
@@ -620,10 +620,10 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
         <div
           aria-controls="h07j9978H"
           aria-expanded="false"
-          aria-haspopup="true"
+          aria-haspopup="listbox"
           class="fd-select__control is-error"
           onclick="onPopoverClick('h07j9978H');"
-          role="button"
+          role="combobox"
           tabindex="0"
         >
           
@@ -829,10 +829,10 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
         <div
           aria-controls="h07j998hhH"
           aria-expanded="false"
-          aria-haspopup="true"
+          aria-haspopup="listbox"
           class="fd-select__control is-warning"
           onclick="onPopoverClick('h07j998hhH');"
-          role="button"
+          role="combobox"
           tabindex="0"
         >
           
@@ -1039,10 +1039,10 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
         <div
           aria-controls="hkhh998hhH"
           aria-expanded="false"
-          aria-haspopup="true"
+          aria-haspopup="listbox"
           class="fd-select__control is-information"
           onclick="onPopoverClick('hkhh998hhH');"
-          role="button"
+          role="combobox"
           tabindex="0"
         >
           
@@ -1237,10 +1237,10 @@ exports[`Storyshots Components/Select Two Column 1`] = `
         <div
           aria-controls="h0C62325"
           aria-expanded="false"
-          aria-haspopup="true"
+          aria-haspopup="listbox"
           class="fd-select__control"
           onclick="onPopoverClick('h0C62325');"
-          role="button"
+          role="combobox"
           tabindex="0"
         >
           
@@ -1405,10 +1405,10 @@ exports[`Storyshots Components/Select Two Column 1`] = `
         <div
           aria-controls="h07jj326"
           aria-expanded="false"
-          aria-haspopup="true"
+          aria-haspopup="listbox"
           class="fd-select__control"
           onclick="onPopoverClick('h07jj326');"
-          role="button"
+          role="combobox"
           tabindex="0"
         >
           
