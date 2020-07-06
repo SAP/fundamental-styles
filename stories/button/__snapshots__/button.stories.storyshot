@@ -933,5 +933,110 @@ exports[`Storyshots Components/Button Split Menu Button 1`] = `
   </div>
   
 
+
+  <div
+    aria-label="button-split"
+    class="fd-button-split"
+    role="group"
+  >
+    
+  
+    <button
+      aria-label="button"
+      class="fd-button fd-button--transparent"
+    >
+      Button with text
+    </button>
+    
+  
+    <button
+      aria-controls="t4c0o2732"
+      aria-expanded="false"
+      aria-haspopup="true"
+      aria-label="More"
+      class="fd-button fd-button--transparent sap-icon--slim-arrow-down"
+    />
+    
+  
+    <div
+      aria-hidden="true"
+      class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
+      id="t4c0o2732"
+    >
+      
+    
+      <nav
+        class="fd-menu"
+      >
+        
+        
+        <ul
+          class="fd-menu__list fd-menu__list--no-shadow"
+        >
+          
+          
+          <li
+            class="fd-menu__item"
+          >
+            
+              
+            <a
+              class="fd-menu__link"
+              href="#"
+              role="button"
+            >
+              
+                  
+              <span
+                class="fd-menu__title"
+              >
+                Add to list
+              </span>
+              
+              
+            </a>
+            
+          
+          </li>
+          
+          
+          <li
+            class="fd-menu__item"
+          >
+            
+              
+            <a
+              class="fd-menu__link"
+              href="#"
+              role="button"
+            >
+              
+                  
+              <span
+                class="fd-menu__title"
+              >
+                Save for later
+              </span>
+              
+              
+            </a>
+            
+          
+          </li>
+          
+        
+        </ul>
+        
+    
+      </nav>
+      
+  
+    </div>
+    
+
+  </div>
+  
+
+
 </section>
 `;

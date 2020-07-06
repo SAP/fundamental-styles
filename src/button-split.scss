@@ -22,7 +22,9 @@ $fd-button-split-margin: 0.125rem / 2;
       margin: 0;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
-      border-left-width: 0;
+      &:not(.#{$fd-namespace}-button--transparent) {
+        border-left-width: 0;
+      }
     }
   }
 }
@@ -42,7 +44,9 @@ $fd-button-split-margin: 0.125rem / 2;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
       border-left-width: $fd-button-split-border-width;
-      border-right-width: 0;
+      &:not(.#{$fd-namespace}-button--transparent) {
+        border-right-width: 0;
+      }
     }
   }
 }

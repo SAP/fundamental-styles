@@ -170,6 +170,30 @@ export const splitMenuButton = () => `
     </nav>
   </div>
 </div>
+
+<div class="fd-button-split" role="group" aria-label="button-split">
+  <button class="fd-button fd-button--transparent" aria-label="button">Button with text</button>
+  <button class="fd-button fd-button--transparent sap-icon--slim-arrow-down" aria-controls="t4c0o2732" 
+  aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
+    id="t4c0o2732">
+    <nav class="fd-menu">
+        <ul class="fd-menu__list fd-menu__list--no-shadow">
+          <li class="fd-menu__item">
+              <a class="fd-menu__link" role="button" href="#">
+                  <span class="fd-menu__title">Add to list</span>
+              </a>
+          </li>
+          <li class="fd-menu__item">
+              <a class="fd-menu__link" role="button" href="#">
+                  <span class="fd-menu__title">Save for later</span>
+              </a>
+          </li>
+        </ul>
+    </nav>
+  </div>
+</div>
+
 `;
 
 splitMenuButton.parameters = {
