@@ -26,7 +26,7 @@ export const cozy = () => `
             aria-haspopup="true"
             class="fd-select__control"
             onclick="onControlClick('h0C6A325');"
-            role="button"
+            role="combobox"
             tabindex="0">
              <span class="fd-select__text-content">Select</span>
              <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
@@ -75,7 +75,7 @@ export const compact = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select fd-select--compact">
-        <div onclick="onPopoverClick('h0C6A326');" class="fd-select__control" role="button" tabindex="0" aria-controls="h0C6A326" aria-expanded="false" aria-haspopup="true">
+        <div onclick="onPopoverClick('h0C6A326');" class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0C6A326" aria-expanded="false" aria-haspopup="true">
             <span class="fd-select__text-content">Select</span>
             <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
         </div>
@@ -113,7 +113,7 @@ export const twoColumn = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
-         <div class="fd-select__control" role="button" tabindex="0" aria-controls="h0C62325" onclick="onPopoverClick('h0C62325');" aria-expanded="false" aria-haspopup="true">
+         <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0C62325" onclick="onPopoverClick('h0C62325');" aria-expanded="false" aria-haspopup="true">
              <span class="fd-select__text-content">Select Product</span>
              <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
          </div>
@@ -143,7 +143,7 @@ export const twoColumn = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select fd-select--compact">
-        <div class="fd-select__control" role="button" tabindex="0" aria-controls="h07jj326" onclick="onPopoverClick('h07jj326');" aria-expanded="false" aria-haspopup="true">
+        <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h07jj326" onclick="onPopoverClick('h07jj326');" aria-expanded="false" aria-haspopup="true">
             <span class="fd-select__text-content">Select Product</span>
             <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
         </div>
@@ -176,7 +176,7 @@ export const twoColumnsAndIcons = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
-         <div class="fd-select__control" role="button" tabindex="0" aria-controls="h090G325" onclick="onPopoverClick('h090G325');" aria-expanded="false" aria-haspopup="true">
+         <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h090G325" onclick="onPopoverClick('h090G325');" aria-expanded="false" aria-haspopup="true">
              <span class="fd-select__text-content">Select Product</span>
              <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
          </div>
@@ -219,7 +219,7 @@ export const itemGrouping = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
-         <div class="fd-select__control" role="button" tabindex="0" aria-controls="h09GDGG325" onclick="onPopoverClick('h09GDGG325');" aria-expanded="false" aria-haspopup="true">
+         <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h09GDGG325" onclick="onPopoverClick('h09GDGG325');" aria-expanded="false" aria-haspopup="true">
              <span class="fd-select__text-content">Select Ingredient</span>
              <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
          </div>
@@ -270,7 +270,7 @@ export const textWrapping = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
-         <div class="fd-select__control" role="button" tabindex="0" aria-controls="h0GFF2325" onclick="onPopoverClick('h0GFF2325');" aria-expanded="false" aria-haspopup="true">
+         <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0GFF2325" onclick="onPopoverClick('h0GFF2325');" aria-expanded="false" aria-haspopup="true">
              <span class="fd-select__text-content">Select</span>
              <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
          </div>
@@ -303,7 +303,7 @@ export const noWrapping = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select fd-select--compact">
-        <div class="fd-select__control" role="button" tabindex="0" aria-controls="h0GZH2325" onclick="onPopoverClick('h0GZH2325');" aria-expanded="false" aria-haspopup="true">
+        <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0GZH2325" onclick="onPopoverClick('h0GZH2325');" aria-expanded="false" aria-haspopup="true">
             <span class="fd-select__text-content">Select</span>
             <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
         </div>
@@ -345,7 +345,7 @@ export const matchSelectPopoverBodySize = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
-         <div class="fd-select__control" role="button" tabindex="0" aria-controls="h0GTKE325" onclick="onPopoverClick('h0GTKE325');" aria-expanded="false" aria-haspopup="true">
+         <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0GTKE325" onclick="onPopoverClick('h0GTKE325');" aria-expanded="false" aria-haspopup="true">
              <span class="fd-select__text-content">Much Longer than Usual</span>
              <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
          </div>
@@ -388,7 +388,7 @@ export const disabled = () => `
 <div class="fd-popover">
     <div class="fd-popover__control" aria-disabled="true">
         <div class="fd-select">
-            <div class="fd-select__control" role="button" aria-expanded="false" aria-haspopup="false" aria-disabled="true">
+            <div class="fd-select__control" role="combobox" aria-expanded="false" aria-haspopup="false" aria-disabled="true">
                 <span class="fd-select__text-content">Select</span>
                 <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
             </div>
@@ -403,7 +403,7 @@ export const readonly = () => `
 <div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select">
-            <div class="fd-select__control is-readonly" role="button" aria-expanded="false" aria-label="Select" aria-haspopup="false">
+            <div class="fd-select__control is-readonly" role="combobox" aria-readonly="true" aria-expanded="false" aria-label="Select" aria-haspopup="false" tabindex="0">
               <span class="fd-select__text-content">Selected Item 2</span>
             </div>
         </div>
@@ -426,7 +426,7 @@ export const semanticStates = () => `
 <div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select">
-            <div class="fd-select__control is-success" role="button" tabindex="0" aria-controls="h07jjhYH" onclick="onPopoverClick('h07jjhYH');"  aria-expanded="false" aria-haspopup="true">
+            <div class="fd-select__control is-success" role="combobox" tabindex="0" aria-controls="h07jjhYH" onclick="onPopoverClick('h07jjhYH');"  aria-expanded="false" aria-haspopup="true">
                 <span class="fd-select__text-content">Success</span>
                 <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
             </div>
@@ -468,7 +468,7 @@ export const semanticStates = () => `
 <div class="fd-popover">
    <div class="fd-popover__control">
        <div class="fd-select">
-           <div class="fd-select__control is-error" role="button" tabindex="0" aria-controls="h07j9978H" onclick="onPopoverClick('h07j9978H');" aria-expanded="false" aria-haspopup="true">
+           <div class="fd-select__control is-error" role="combobox" tabindex="0" aria-controls="h07j9978H" onclick="onPopoverClick('h07j9978H');" aria-expanded="false" aria-haspopup="true">
                <span class="fd-select__text-content">Error</span>
                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
            </div>
@@ -510,7 +510,7 @@ export const semanticStates = () => `
 <div class="fd-popover">
    <div class="fd-popover__control">
        <div class="fd-select">
-           <div class="fd-select__control is-warning" role="button" tabindex="0" aria-controls="h07j998hhH" onclick="onPopoverClick('h07j998hhH');"  aria-expanded="false" aria-haspopup="true">
+           <div class="fd-select__control is-warning" role="combobox" tabindex="0" aria-controls="h07j998hhH" onclick="onPopoverClick('h07j998hhH');"  aria-expanded="false" aria-haspopup="true">
                <span class="fd-select__text-content">Warning</span>
                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
            </div>
@@ -553,7 +553,7 @@ export const semanticStates = () => `
 <div class="fd-popover">
    <div class="fd-popover__control">
        <div class="fd-select">
-           <div class="fd-select__control is-information" role="button" tabindex="0" aria-controls="hkhh998hhH" onclick="onPopoverClick('hkhh998hhH');"  aria-expanded="false" aria-haspopup="true">
+           <div class="fd-select__control is-information" role="combobox" tabindex="0" aria-controls="hkhh998hhH" onclick="onPopoverClick('hkhh998hhH');"  aria-expanded="false" aria-haspopup="true">
                <span class="fd-select__text-content">Information</span>
                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
            </div>
@@ -654,7 +654,7 @@ export const expanded = () => `
             aria-expanded="true"
             aria-haspopup="true"
             class="fd-select__control"
-            role="button"
+            role="combobox"
             tabindex="0">
              <span class="fd-select__text-content">Select</span>
              <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
@@ -709,7 +709,7 @@ export const blank = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
-         <div onClick="onPopoverClick('h0B6A326');" class="fd-select__control" role="button" tabindex="0" aria-controls="h0B6A326" aria-expanded="false" aria-haspopup="true">
+         <div onClick="onPopoverClick('h0B6A326');" class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0B6A326" aria-expanded="false" aria-haspopup="true">
              <span class="fd-select__text-content"></span>
              <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
          </div>
@@ -744,7 +744,7 @@ export const blank = () => `
 <div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select fd-select--compact">
-        <div onClick="onPopoverClick('h0B6A327');" class="fd-select__control" role="button" tabindex="0" aria-controls="h0B6A327" aria-expanded="false" aria-haspopup="true">
+        <div onClick="onPopoverClick('h0B6A327');" class="fd-select__control" role="combobox" tabindex="0" aria-controls="h0B6A327" aria-expanded="false" aria-haspopup="true">
             <span class="fd-select__text-content"></span>
             <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
         </div>
