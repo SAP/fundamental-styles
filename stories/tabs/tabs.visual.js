@@ -7,7 +7,7 @@ import '../../dist/input.css';
 import * as stories from './tabs.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Tabs'
 };
 
 export const Tabs = () => {

@@ -6,7 +6,7 @@ import '../../dist/toolbar.css';
 import * as stories from './panel.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Panel'
 };
 
 export const Panel = () => {

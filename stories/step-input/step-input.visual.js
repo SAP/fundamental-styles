@@ -7,7 +7,7 @@ import '../../dist/input.css';
 import * as stories from './step-input.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/StepInput'
 };
 
 export const StepInput = () => {

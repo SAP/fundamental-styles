@@ -2,7 +2,7 @@ import '../../dist/form-group.css';
 import * as stories from './form-group.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/FormGroup'
 };
 
 export const FormGroup = () => {

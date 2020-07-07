@@ -2,7 +2,7 @@ import '../../dist/dialog.css';
 import * as stories from './dialog.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Dialog'
 };
 
 export const Dialog = () => {

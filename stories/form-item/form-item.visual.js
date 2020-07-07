@@ -2,7 +2,7 @@ import '../../dist/form-item.css';
 import * as stories from './form-item.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/FormItem'
 };
 
 export const FormItem = () => {
