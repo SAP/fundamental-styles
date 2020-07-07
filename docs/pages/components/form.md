@@ -615,18 +615,20 @@ Do not use the checkbox control if:
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez611">
             <label class="fd-checkbox__label" for="Ai4ez611">
-                Field label
+                <span class="fd-checkbox__text">Field label</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez612" checked>
             <label class="fd-checkbox__label" for="Ai4ez612">
-                Selected State
+                <span class="fd-checkbox__text">Selected State</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez613">
-            <label class="fd-checkbox__label" for="Ai4ez613">TriState Text</label>
+            <label class="fd-checkbox__label" for="Ai4ez613">
+                <span class="fd-checkbox__text">TriState Text</span>
+            </label>
         </div>
     </div>
 </fieldset>
@@ -637,19 +639,19 @@ Do not use the checkbox control if:
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez614" disabled>
             <label class="fd-checkbox__label" for="Ai4ez614">
-                Field label
+                <span class="fd-checkbox__text">Field label</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez615" disabled>
             <label class="fd-checkbox__label" for="Ai4ez615">
-                Field label
+                <span class="fd-checkbox__text">Field label</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez616" disabled>
             <label class="fd-checkbox__label" for="Ai4ez616">
-                Field label
+                <span class="fd-checkbox__text">Field label</span>
             </label>
         </div>
     </div>
@@ -661,19 +663,19 @@ Do not use the checkbox control if:
         <div class="fd-form-group__item fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez617">
             <label class="fd-checkbox__label" for="Ai4ez617">
-                Field label
+                <span class="fd-checkbox__text">Field label</span>
             </label>
         </div>
         <div class="fd-form-group__item fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez618">
             <label class="fd-checkbox__label" for="Ai4ez618">
-                Field label
+                <span class="fd-checkbox__text">Field label</span>
             </label>
         </div>
         <div class="fd-form-group__item fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez619">
             <label class="fd-checkbox__label" for="Ai4ez619">
-                Field label
+                <span class="fd-checkbox__text">Field label</span>
             </label>
         </div>
     </div>
@@ -685,19 +687,19 @@ Do not use the checkbox control if:
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6171">
             <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6171">
-                Field label
+                <span class="fd-checkbox__text">Field label</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6181">
             <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6181">
-                Field label
+                <span class="fd-checkbox__text">Field label</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6191">
             <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6191">
-                Field label
+                <span class="fd-checkbox__text">Field label</span>
             </label>
         </div>
     </div>
@@ -710,19 +712,19 @@ Do not use the checkbox control if:
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox is-error" id="Ai4ez6119">
             <label class="fd-checkbox__label" for="Ai4ez6119">
-                Text Option
+                <span class="fd-checkbox__text">Text Option</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox is-error" id="Ai4ez6129" checked>
             <label class="fd-checkbox__label" for="Ai4ez6129">
-                Selected State
+                <span class="fd-checkbox__text">Selected State</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox is-error" id="Ai4ez613i1">
             <label class="fd-checkbox__label" for="Ai4ez613i1">
-                TriState Text
+                <span class="fd-checkbox__text">TriState Text</span>
             </label>
         </div>
     </div>
@@ -734,19 +736,19 @@ Do not use the checkbox control if:
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox is-success" id="Ai4ez61192">
             <label class="fd-checkbox__label" for="Ai4ez61192">
-                Text Option
+                <span class="fd-checkbox__text">Text Option</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox is-success" id="Ai4ez61292" checked>
             <label class="fd-checkbox__label" for="Ai4ez61292">
-                Selected State
+                <span class="fd-checkbox__text">Selected State</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox is-success" id="Ai4ez613i2">
             <label class="fd-checkbox__label" for="Ai4ez613i2">
-                TriState Text
+                <span class="fd-checkbox__text">TriState Text</span>
             </label>
         </div>
     </div>
@@ -758,19 +760,19 @@ Do not use the checkbox control if:
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez61193">
             <label class="fd-checkbox__label" for="Ai4ez61193">
-                Text Option
+                <span class="fd-checkbox__text">Text Option</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez61293" checked>
             <label class="fd-checkbox__label" for="Ai4ez61293">
-                Selected State
+                <span class="fd-checkbox__text">Selected State</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez613i3">
             <label class="fd-checkbox__label" for="Ai4ez613i3">
-                TriState Text
+                <span class="fd-checkbox__text">TriState Text</span>
             </label>
         </div>
     </div>
@@ -782,19 +784,19 @@ Do not use the checkbox control if:
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez61194">
             <label class="fd-checkbox__label" for="Ai4ez61194">
-                Text Option
+                <span class="fd-checkbox__text">Text Option</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez61294" checked>
             <label class="fd-checkbox__label" for="Ai4ez61294">
-                Selected State
+                <span class="fd-checkbox__text">Selected State</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez613i4">
             <label class="fd-checkbox__label" for="Ai4ez613i4">
-                TriState Text
+                <span class="fd-checkbox__text">TriState Text</span>
             </label>
         </div>
     </div>
@@ -806,19 +808,19 @@ Do not use the checkbox control if:
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez61196" disabled>
             <label class="fd-checkbox__label" for="Ai4ez61196">
-                Text Option
+                <span class="fd-checkbox__text">Text Option</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez61296" checked disabled>
             <label class="fd-checkbox__label" for="Ai4ez61296">
-                Selected State
+                <span class="fd-checkbox__text">Selected State</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez613i6" disabled>
             <label class="fd-checkbox__label" for="Ai4ez613i6">
-                TriState Text
+                <span class="fd-checkbox__text">TriState Text</span>
             </label>
         </div>
     </div>
@@ -830,19 +832,19 @@ Do not use the checkbox control if:
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez611tt">
             <label class="fd-checkbox__label" for="Ai4ez611tt">
-                Text Option
+                <span class="fd-checkbox__text">Text Option</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez612tt" checked>
             <label class="fd-checkbox__label" for="Ai4ez612tt">
-                Selected State
+                <span class="fd-checkbox__text">Selected State</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez613i7">
             <label class="fd-checkbox__label" for="Ai4ez613i7">
-                TriState Text
+                <span class="fd-checkbox__text">TriState Text</span>
             </label>
         </div>
     </div>

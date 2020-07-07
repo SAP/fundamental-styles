@@ -43,7 +43,6 @@ $block: #{$fd-namespace}-checkbox;
 
     line-height: 1rem;
     padding: $fd-checkbox-margin 0 $fd-checkbox-margin $fd-checkbox-margin;
-    overflow: hidden;
     display: flex;
     align-items: center;
 
@@ -97,6 +96,10 @@ $block: #{$fd-namespace}-checkbox;
         margin-left: 0;
       }
     }
+  }
+
+  &__text {
+    @include fd-ellipsis();
   }
 
   &:checked + .#{$block}__label::before {
