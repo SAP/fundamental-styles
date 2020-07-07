@@ -36,7 +36,7 @@ export const availableIcons = () => {
     div.innerHTML = data.icons.map((icon) => {
         return (
             '<div class="fddocs-container--icon">' +
-                `<span class="sap-icon sap-icon--${icon}" style="font-size:2rem"></span>` +
+                `<span class="sap-icon sap-icon--${icon}" style="font-size:1rem"></span>` +
                 `<div>.sap-icon--${icon}</div>` +
             '</div>'
         );

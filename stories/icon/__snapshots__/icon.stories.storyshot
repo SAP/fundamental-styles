@@ -9,7 +9,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--accidental-leave"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--accidental-leave
@@ -20,7 +20,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--account"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--account
@@ -31,7 +31,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--wrench"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--wrench
@@ -42,7 +42,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--windows-doors"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--windows-doors
@@ -53,7 +53,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--washing-machine"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--washing-machine
@@ -64,7 +64,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--visits"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--visits
@@ -75,7 +75,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--video"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--video
@@ -86,7 +86,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--travel-expense"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--travel-expense
@@ -97,7 +97,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--temperature"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--temperature
@@ -108,7 +108,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--task"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--task
@@ -119,7 +119,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--synchronize"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--synchronize
@@ -130,7 +130,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--survey"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--survey
@@ -141,7 +141,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--settings"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--settings
@@ -152,7 +152,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--search"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--search
@@ -163,7 +163,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sales-document"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sales-document
@@ -174,7 +174,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--retail-store"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--retail-store
@@ -185,7 +185,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--refresh"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--refresh
@@ -196,7 +196,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--product"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--product
@@ -207,7 +207,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--present"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--present
@@ -218,7 +218,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--ppt-attachment"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--ppt-attachment
@@ -229,7 +229,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--pool"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--pool
@@ -240,7 +240,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--pie-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--pie-chart
@@ -251,7 +251,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--picture"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--picture
@@ -262,7 +262,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--photo-voltaic"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--photo-voltaic
@@ -273,7 +273,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--phone"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--phone
@@ -284,7 +284,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--pending"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--pending
@@ -295,7 +295,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--pdf-attachment"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--pdf-attachment
@@ -306,7 +306,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--past"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--past
@@ -317,7 +317,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--outgoing-call"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--outgoing-call
@@ -328,7 +328,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--opportunity"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--opportunity
@@ -339,7 +339,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--opportunities"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--opportunities
@@ -350,7 +350,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--notes"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--notes
@@ -361,7 +361,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--money-bills"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--money-bills
@@ -372,7 +372,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--map"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--map
@@ -383,7 +383,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--log"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--log
@@ -394,7 +394,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--line-charts"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--line-charts
@@ -405,7 +405,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--lightbulb"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--lightbulb
@@ -416,7 +416,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--leads"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--leads
@@ -427,7 +427,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--lead"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--lead
@@ -438,7 +438,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--laptop"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--laptop
@@ -449,7 +449,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--kpi-managing-my-area"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--kpi-managing-my-area
@@ -460,7 +460,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--kpi-corporate-performance"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--kpi-corporate-performance
@@ -471,7 +471,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--incoming-call"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--incoming-call
@@ -482,7 +482,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--inbox"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--inbox
@@ -493,7 +493,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--horizontal-bar-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--horizontal-bar-chart
@@ -504,7 +504,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--history"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--history
@@ -515,7 +515,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--heating-cooling"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--heating-cooling
@@ -526,7 +526,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--gantt-bars"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--gantt-bars
@@ -537,7 +537,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--future"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--future
@@ -548,7 +548,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--fridge"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--fridge
@@ -559,7 +559,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--fallback"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--fallback
@@ -570,7 +570,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--expense-report"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--expense-report
@@ -581,7 +581,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--excel-attachment"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--excel-attachment
@@ -592,7 +592,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--energy-saving-lightbulb"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--energy-saving-lightbulb
@@ -603,7 +603,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--employee"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--employee
@@ -614,7 +614,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--email"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--email
@@ -625,7 +625,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--edit"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--edit
@@ -636,7 +636,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--duplicate"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--duplicate
@@ -647,7 +647,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--download"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--download
@@ -658,7 +658,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--doc-attachment"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--doc-attachment
@@ -669,7 +669,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--dishwasher"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--dishwasher
@@ -680,7 +680,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--delete"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--delete
@@ -691,7 +691,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--decline"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--decline
@@ -702,7 +702,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--complete"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--complete
@@ -713,7 +713,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--competitor"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--competitor
@@ -724,7 +724,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--collections-management"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--collections-management
@@ -735,7 +735,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--chalkboard"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--chalkboard
@@ -746,7 +746,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--cart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--cart
@@ -757,7 +757,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--card"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--card
@@ -768,7 +768,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--camera"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--camera
@@ -779,7 +779,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--calendar"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--calendar
@@ -790,7 +790,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--begin"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--begin
@@ -801,7 +801,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--basket"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--basket
@@ -812,7 +812,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--bar-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--bar-chart
@@ -823,7 +823,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--attachment"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--attachment
@@ -834,7 +834,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--arrow-top"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--arrow-top
@@ -845,7 +845,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--arrow-right"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--arrow-right
@@ -856,7 +856,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--arrow-left"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--arrow-left
@@ -867,7 +867,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--arrow-bottom"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--arrow-bottom
@@ -878,7 +878,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--approvals"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--approvals
@@ -889,7 +889,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--appointment"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--appointment
@@ -900,7 +900,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--alphabetical-order"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--alphabetical-order
@@ -911,7 +911,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--along-stacked-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--along-stacked-chart
@@ -922,7 +922,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--alert"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--alert
@@ -933,7 +933,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--addresses"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--addresses
@@ -944,7 +944,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--address-book"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--address-book
@@ -955,7 +955,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--add-filter"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--add-filter
@@ -966,7 +966,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--add-favorite"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--add-favorite
@@ -977,7 +977,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--add"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--add
@@ -988,7 +988,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--activities"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--activities
@@ -999,7 +999,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--action"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--action
@@ -1010,7 +1010,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--accept"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--accept
@@ -1021,7 +1021,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--hint"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--hint
@@ -1032,7 +1032,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--group"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--group
@@ -1043,7 +1043,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--check-availability"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--check-availability
@@ -1054,7 +1054,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--weather-proofing"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--weather-proofing
@@ -1065,7 +1065,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--payment-approval"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--payment-approval
@@ -1076,7 +1076,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--batch-payments"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--batch-payments
@@ -1087,7 +1087,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--bed"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--bed
@@ -1098,7 +1098,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--arobase"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--arobase
@@ -1109,7 +1109,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--family-care"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--family-care
@@ -1120,7 +1120,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--favorite"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--favorite
@@ -1131,7 +1131,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--navigation-right-arrow"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--navigation-right-arrow
@@ -1142,7 +1142,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--navigation-left-arrow"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--navigation-left-arrow
@@ -1153,7 +1153,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--e-care"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--e-care
@@ -1164,7 +1164,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--less"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--less
@@ -1175,7 +1175,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--lateness"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--lateness
@@ -1186,7 +1186,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--lab"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--lab
@@ -1197,7 +1197,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--internet-browser"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--internet-browser
@@ -1208,7 +1208,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--instance"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--instance
@@ -1219,7 +1219,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--inspection"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--inspection
@@ -1230,7 +1230,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--image-viewer"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--image-viewer
@@ -1241,7 +1241,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--home"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--home
@@ -1252,7 +1252,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--grid"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--grid
@@ -1263,7 +1263,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--goalseek"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--goalseek
@@ -1274,7 +1274,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--general-leave-request"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--general-leave-request
@@ -1285,7 +1285,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--create-leave-request"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--create-leave-request
@@ -1296,7 +1296,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--flight"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--flight
@@ -1307,7 +1307,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--filter"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--filter
@@ -1318,7 +1318,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--favorite-list"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--favorite-list
@@ -1329,7 +1329,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--factory"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--factory
@@ -1340,7 +1340,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--endoscopy"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--endoscopy
@@ -1351,7 +1351,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--employee-pane"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--employee-pane
@@ -1362,7 +1362,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--employee-approvals"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--employee-approvals
@@ -1373,7 +1373,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--email-read"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--email-read
@@ -1384,7 +1384,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--electrocardiogram"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--electrocardiogram
@@ -1395,7 +1395,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--documents"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--documents
@@ -1406,7 +1406,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--decision"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--decision
@@ -1417,7 +1417,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--database"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--database
@@ -1428,7 +1428,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--customer-history"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--customer-history
@@ -1439,7 +1439,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--customer"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--customer
@@ -1450,7 +1450,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--credit-card"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--credit-card
@@ -1461,7 +1461,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--create-entry-time"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--create-entry-time
@@ -1472,7 +1472,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--contacts"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--contacts
@@ -1483,7 +1483,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--compare"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--compare
@@ -1494,7 +1494,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--clinical-order"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--clinical-order
@@ -1505,7 +1505,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--chain-link"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--chain-link
@@ -1516,7 +1516,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--pull-down"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--pull-down
@@ -1527,7 +1527,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--cargo-train"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--cargo-train
@@ -1538,7 +1538,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--car-rental"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--car-rental
@@ -1549,7 +1549,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--business-card"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--business-card
@@ -1560,7 +1560,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--bar-code"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--bar-code
@@ -1571,7 +1571,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--folder-blank"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--folder-blank
@@ -1582,7 +1582,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--passenger-train"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--passenger-train
@@ -1593,7 +1593,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--question-mark"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--question-mark
@@ -1604,7 +1604,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--world"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--world
@@ -1615,7 +1615,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--iphone"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--iphone
@@ -1626,7 +1626,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--ipad"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--ipad
@@ -1637,7 +1637,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--warning"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--warning
@@ -1648,7 +1648,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sort"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sort
@@ -1659,7 +1659,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--course-book"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--course-book
@@ -1670,7 +1670,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--course-program"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--course-program
@@ -1681,7 +1681,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--add-coursebook"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--add-coursebook
@@ -1692,7 +1692,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--print"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--print
@@ -1703,7 +1703,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--save"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--save
@@ -1714,7 +1714,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--play"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--play
@@ -1725,7 +1725,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--pause"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--pause
@@ -1736,7 +1736,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--record"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--record
@@ -1747,7 +1747,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--response"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--response
@@ -1758,7 +1758,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--pushpin-on"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--pushpin-on
@@ -1769,7 +1769,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--pushpin-off"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--pushpin-off
@@ -1780,7 +1780,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--unfavorite"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--unfavorite
@@ -1791,7 +1791,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--learning-assistant"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--learning-assistant
@@ -1802,7 +1802,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--timesheet"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--timesheet
@@ -1813,7 +1813,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--time-entry-request"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--time-entry-request
@@ -1824,7 +1824,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--list"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--list
@@ -1835,7 +1835,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--action-settings"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--action-settings
@@ -1846,7 +1846,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--share"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--share
@@ -1857,7 +1857,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--feed"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--feed
@@ -1868,7 +1868,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--role"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--role
@@ -1879,7 +1879,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--flag"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--flag
@@ -1890,7 +1890,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--post"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--post
@@ -1901,7 +1901,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--inspect"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--inspect
@@ -1912,7 +1912,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--inspect-down"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--inspect-down
@@ -1923,7 +1923,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--appointment-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--appointment-2
@@ -1934,7 +1934,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--target-group"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--target-group
@@ -1945,7 +1945,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--marketing-campaign"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--marketing-campaign
@@ -1956,7 +1956,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--message-error"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--message-error
@@ -1967,7 +1967,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--notification"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--notification
@@ -1978,7 +1978,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--comment"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--comment
@@ -1989,7 +1989,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--shipping-status"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--shipping-status
@@ -2000,7 +2000,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--collaborate"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--collaborate
@@ -2011,7 +2011,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--shortcut"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--shortcut
@@ -2022,7 +2022,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--lead-outdated"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--lead-outdated
@@ -2033,7 +2033,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--tools-opportunity"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--tools-opportunity
@@ -2044,7 +2044,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--permission"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--permission
@@ -2055,7 +2055,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--supplier"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--supplier
@@ -2066,7 +2066,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--table-view"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--table-view
@@ -2077,7 +2077,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--table-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--table-chart
@@ -2088,7 +2088,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--switch-views"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--switch-views
@@ -2099,7 +2099,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--e-learning"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--e-learning
@@ -2110,7 +2110,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--manager"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--manager
@@ -2121,7 +2121,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--switch-classes"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--switch-classes
@@ -2132,7 +2132,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--simple-payment"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--simple-payment
@@ -2143,7 +2143,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--signature"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--signature
@@ -2154,7 +2154,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sales-order-item"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sales-order-item
@@ -2165,7 +2165,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sales-order"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sales-order
@@ -2176,7 +2176,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--request"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--request
@@ -2187,7 +2187,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--receipt"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--receipt
@@ -2198,7 +2198,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--puzzle"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--puzzle
@@ -2209,7 +2209,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--process"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--process
@@ -2220,7 +2220,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--private"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--private
@@ -2231,7 +2231,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--popup-window"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--popup-window
@@ -2242,7 +2242,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--person-placeholder"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--person-placeholder
@@ -2253,7 +2253,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--per-diem"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--per-diem
@@ -2264,7 +2264,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--paper-plane"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--paper-plane
@@ -2275,7 +2275,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--paid-leave"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--paid-leave
@@ -2286,7 +2286,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--pdf-reader"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--pdf-reader
@@ -2297,7 +2297,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--overview-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--overview-chart
@@ -2308,7 +2308,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--overlay"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--overlay
@@ -2319,7 +2319,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--org-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--org-chart
@@ -2330,7 +2330,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--number-sign"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--number-sign
@@ -2341,7 +2341,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--notification-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--notification-2
@@ -2352,7 +2352,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--my-sales-order"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--my-sales-order
@@ -2363,7 +2363,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--meal"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--meal
@@ -2374,7 +2374,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--loan"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--loan
@@ -2385,7 +2385,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--order-status"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--order-status
@@ -2396,7 +2396,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--customer-order-entry"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--customer-order-entry
@@ -2407,7 +2407,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--performance"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--performance
@@ -2418,7 +2418,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--menu"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--menu
@@ -2429,7 +2429,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--employee-lookup"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--employee-lookup
@@ -2440,7 +2440,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--education"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--education
@@ -2451,7 +2451,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--customer-briefing"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--customer-briefing
@@ -2462,7 +2462,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--customer-and-contacts"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--customer-and-contacts
@@ -2473,7 +2473,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--my-view"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--my-view
@@ -2484,7 +2484,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--accelerated"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--accelerated
@@ -2495,7 +2495,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--to-be-reviewed"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--to-be-reviewed
@@ -2506,7 +2506,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--warning2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--warning2
@@ -2517,7 +2517,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--feeder-arrow"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--feeder-arrow
@@ -2528,7 +2528,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--quality-issue"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--quality-issue
@@ -2539,7 +2539,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--workflow-tasks"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--workflow-tasks
@@ -2550,7 +2550,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--create"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--create
@@ -2561,7 +2561,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--home-share"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--home-share
@@ -2572,7 +2572,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--globe"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--globe
@@ -2583,7 +2583,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--tags"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--tags
@@ -2594,7 +2594,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--work-history"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--work-history
@@ -2605,7 +2605,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--x-ray"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--x-ray
@@ -2616,7 +2616,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--wounds-doc"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--wounds-doc
@@ -2627,7 +2627,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--web-cam"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--web-cam
@@ -2638,7 +2638,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--waiver"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--waiver
@@ -2649,7 +2649,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--vertical-bar-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--vertical-bar-chart
@@ -2660,7 +2660,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--upstacked-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--upstacked-chart
@@ -2671,7 +2671,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--trip-report"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--trip-report
@@ -2682,7 +2682,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--microphone"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--microphone
@@ -2693,7 +2693,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--unpaid-leave"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--unpaid-leave
@@ -2704,7 +2704,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--tree"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--tree
@@ -2715,7 +2715,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--toaster-up"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--toaster-up
@@ -2726,7 +2726,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--toaster-top"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--toaster-top
@@ -2737,7 +2737,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--toaster-down"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--toaster-down
@@ -2748,7 +2748,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--time-account"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--time-account
@@ -2759,7 +2759,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--theater"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--theater
@@ -2770,7 +2770,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--taxi"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--taxi
@@ -2781,7 +2781,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--subway-train"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--subway-train
@@ -2792,7 +2792,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--study-leave"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--study-leave
@@ -2803,7 +2803,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--stethoscope"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--stethoscope
@@ -2814,7 +2814,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--step"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--step
@@ -2825,7 +2825,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sonography"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sonography
@@ -2836,7 +2836,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--soccor"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--soccor
@@ -2847,7 +2847,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--physical-activity"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--physical-activity
@@ -2858,7 +2858,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--pharmacy"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--pharmacy
@@ -2869,7 +2869,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--official-service"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--official-service
@@ -2880,7 +2880,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--offsite-work"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--offsite-work
@@ -2891,7 +2891,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--nutrition-activity"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--nutrition-activity
@@ -2902,7 +2902,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--newspaper"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--newspaper
@@ -2913,7 +2913,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--monitor-payments"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--monitor-payments
@@ -2924,7 +2924,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--map-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--map-2
@@ -2935,7 +2935,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--machine"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--machine
@@ -2946,7 +2946,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--mri-scan"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--mri-scan
@@ -2957,7 +2957,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--end-user-experience-monitoring"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--end-user-experience-monitoring
@@ -2968,7 +2968,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--unwired"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--unwired
@@ -2979,7 +2979,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--customer-financial-fact-sheet"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--customer-financial-fact-sheet
@@ -2990,7 +2990,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--retail-store-manager"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--retail-store-manager
@@ -3001,7 +3001,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--Netweaver-business-client"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--Netweaver-business-client
@@ -3012,7 +3012,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--electronic-medical-record"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--electronic-medical-record
@@ -3023,7 +3023,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--eam-work-order"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--eam-work-order
@@ -3034,7 +3034,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--customer-view"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--customer-view
@@ -3045,7 +3045,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--crm-service-manager"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--crm-service-manager
@@ -3056,7 +3056,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--crm-sales"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--crm-sales
@@ -3067,7 +3067,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--widgets"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--widgets
@@ -3078,7 +3078,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--commission-check"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--commission-check
@@ -3089,7 +3089,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--collections-insight"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--collections-insight
@@ -3100,7 +3100,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--clinical-tast-tracker"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--clinical-tast-tracker
@@ -3111,7 +3111,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--citizen-connect"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--citizen-connect
@@ -3122,7 +3122,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--cart-approval"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--cart-approval
@@ -3133,7 +3133,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--capital-projects"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--capital-projects
@@ -3144,7 +3144,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--bo-strategy-management"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--bo-strategy-management
@@ -3155,7 +3155,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--business-objects-mobile"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--business-objects-mobile
@@ -3166,7 +3166,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--business-objects-explorer"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--business-objects-explorer
@@ -3177,7 +3177,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--business-objects-experience"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--business-objects-experience
@@ -3188,7 +3188,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--bbyd-dashboard"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--bbyd-dashboard
@@ -3199,7 +3199,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--bbyd-active-sales"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--bbyd-active-sales
@@ -3210,7 +3210,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--business-by-design"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--business-by-design
@@ -3221,7 +3221,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--business-one"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--business-one
@@ -3232,7 +3232,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sap-box"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sap-box
@@ -3243,7 +3243,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--manager-insight"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--manager-insight
@@ -3254,7 +3254,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--accounting-document-verification"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--accounting-document-verification
@@ -3265,7 +3265,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--hr-approval"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--hr-approval
@@ -3276,7 +3276,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--idea-wall"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--idea-wall
@@ -3287,7 +3287,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--Chart-Tree-Map"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--Chart-Tree-Map
@@ -3298,7 +3298,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--cart-5"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--cart-5
@@ -3309,7 +3309,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--cart-4"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--cart-4
@@ -3320,7 +3320,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--wallet"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--wallet
@@ -3331,7 +3331,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--vehicle-repair"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--vehicle-repair
@@ -3342,7 +3342,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--upload"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--upload
@@ -3353,7 +3353,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--unlocked"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--unlocked
@@ -3364,7 +3364,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--umbrella"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--umbrella
@@ -3375,7 +3375,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--travel-request"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--travel-request
@@ -3386,7 +3386,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--travel-expense-report"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--travel-expense-report
@@ -3397,7 +3397,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--travel-itinerary"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--travel-itinerary
@@ -3408,7 +3408,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--time-overtime"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--time-overtime
@@ -3419,7 +3419,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--thing-type"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--thing-type
@@ -3430,7 +3430,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--technical-object"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--technical-object
@@ -3441,7 +3441,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--tag"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--tag
@@ -3452,7 +3452,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--syringe"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--syringe
@@ -3463,7 +3463,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--syntax"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--syntax
@@ -3474,7 +3474,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--suitcase"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--suitcase
@@ -3485,7 +3485,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--simulate"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--simulate
@@ -3496,7 +3496,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--shield"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--shield
@@ -3507,7 +3507,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--share-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--share-2
@@ -3518,7 +3518,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sales-quote"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sales-quote
@@ -3529,7 +3529,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--repost"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--repost
@@ -3540,7 +3540,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--provision"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--provision
@@ -3551,7 +3551,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--projector"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--projector
@@ -3562,7 +3562,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--add-product"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--add-product
@@ -3573,7 +3573,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--pipeline-analysis"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--pipeline-analysis
@@ -3584,7 +3584,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--add-photo"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--add-photo
@@ -3595,7 +3595,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--palette"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--palette
@@ -3606,7 +3606,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--nurse"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--nurse
@@ -3617,7 +3617,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sales-notification"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sales-notification
@@ -3628,7 +3628,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--mileage"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--mileage
@@ -3639,7 +3639,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--meeting-room"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--meeting-room
@@ -3650,7 +3650,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--media-forward"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--media-forward
@@ -3661,7 +3661,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--media-play"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--media-play
@@ -3672,7 +3672,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--media-pause"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--media-pause
@@ -3683,7 +3683,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--media-reverse"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--media-reverse
@@ -3694,7 +3694,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--media-rewind"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--media-rewind
@@ -3705,7 +3705,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--measurement-document"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--measurement-document
@@ -3716,7 +3716,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--measuring-point"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--measuring-point
@@ -3727,7 +3727,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--measure"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--measure
@@ -3738,7 +3738,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--map-3"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--map-3
@@ -3749,7 +3749,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--locked"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--locked
@@ -3760,7 +3760,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--letter"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--letter
@@ -3771,7 +3771,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--journey-arrive"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--journey-arrive
@@ -3782,7 +3782,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--journey-change"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--journey-change
@@ -3793,7 +3793,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--journey-depart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--journey-depart
@@ -3804,7 +3804,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--it-system"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--it-system
@@ -3815,7 +3815,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--it-instance"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--it-instance
@@ -3826,7 +3826,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--it-host"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--it-host
@@ -3837,7 +3837,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--iphone-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--iphone-2
@@ -3848,7 +3848,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--ipad-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--ipad-2
@@ -3859,7 +3859,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--inventory"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--inventory
@@ -3870,7 +3870,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--insurance-house"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--insurance-house
@@ -3881,7 +3881,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--insurance-life"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--insurance-life
@@ -3892,7 +3892,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--insurance-car"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--insurance-car
@@ -3903,7 +3903,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--initiative"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--initiative
@@ -3914,7 +3914,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--incident"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--incident
@@ -3925,7 +3925,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--group-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--group-2
@@ -3936,7 +3936,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--goal"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--goal
@@ -3947,7 +3947,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--functional-location"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--functional-location
@@ -3958,7 +3958,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--full-screen"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--full-screen
@@ -3969,7 +3969,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--form"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--form
@@ -3980,7 +3980,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--fob-watch"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--fob-watch
@@ -3991,7 +3991,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--blank-tag"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--blank-tag
@@ -4002,7 +4002,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--family-protection"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--family-protection
@@ -4013,7 +4013,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--folder"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--folder
@@ -4024,7 +4024,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--fax-machine"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--fax-machine
@@ -4035,7 +4035,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--example"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--example
@@ -4046,7 +4046,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--eraser"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--eraser
@@ -4057,7 +4057,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--employee-rejections"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--employee-rejections
@@ -4068,7 +4068,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--drop-down-list"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--drop-down-list
@@ -4079,7 +4079,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--draw-rectangle"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--draw-rectangle
@@ -4090,7 +4090,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--document"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--document
@@ -4101,7 +4101,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--doctor"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--doctor
@@ -4112,7 +4112,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--discussion-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--discussion-2
@@ -4123,7 +4123,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--discussion"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--discussion
@@ -4134,7 +4134,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--dimension"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--dimension
@@ -4145,7 +4145,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--customer-and-supplier"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--customer-and-supplier
@@ -4156,7 +4156,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--crop"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--crop
@@ -4167,7 +4167,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--add-contact"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--add-contact
@@ -4178,7 +4178,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--compare-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--compare-2
@@ -4189,7 +4189,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--color-fill"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--color-fill
@@ -4200,7 +4200,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--collision"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--collision
@@ -4211,7 +4211,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--curriculum"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--curriculum
@@ -4222,7 +4222,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--chart-axis"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--chart-axis
@@ -4233,7 +4233,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--full-stacked-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--full-stacked-chart
@@ -4244,7 +4244,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--full-stacked-column-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--full-stacked-column-chart
@@ -4255,7 +4255,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--vertical-bar-chart-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--vertical-bar-chart-2
@@ -4266,7 +4266,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--horizontal-bar-chart-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--horizontal-bar-chart-2
@@ -4277,7 +4277,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--horizontal-stacked-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--horizontal-stacked-chart
@@ -4288,7 +4288,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--vertical-stacked-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--vertical-stacked-chart
@@ -4299,7 +4299,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--choropleth-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--choropleth-chart
@@ -4310,7 +4310,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--geographic-bubble-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--geographic-bubble-chart
@@ -4321,7 +4321,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--multiple-radar-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--multiple-radar-chart
@@ -4332,7 +4332,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--radar-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--radar-chart
@@ -4343,7 +4343,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--crossed-line-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--crossed-line-chart
@@ -4354,7 +4354,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--multiple-line-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--multiple-line-chart
@@ -4365,7 +4365,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--multiple-bar-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--multiple-bar-chart
@@ -4376,7 +4376,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--line-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--line-chart
@@ -4387,7 +4387,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--line-chart-dual-axis"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--line-chart-dual-axis
@@ -4398,7 +4398,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--bubble-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--bubble-chart
@@ -4409,7 +4409,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--scatter-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--scatter-chart
@@ -4420,7 +4420,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--multiple-pie-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--multiple-pie-chart
@@ -4431,7 +4431,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--column-chart-dual-axis"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--column-chart-dual-axis
@@ -4442,7 +4442,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--tag-cloud-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--tag-cloud-chart
@@ -4453,7 +4453,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--area-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--area-chart
@@ -4464,7 +4464,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--cause"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--cause
@@ -4475,7 +4475,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--cart-3"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--cart-3
@@ -4486,7 +4486,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--cart-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--cart-2
@@ -4497,7 +4497,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--bus-public-transport"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--bus-public-transport
@@ -4508,7 +4508,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--burglary"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--burglary
@@ -4519,7 +4519,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--building"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--building
@@ -4530,7 +4530,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--border"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--border
@@ -4541,7 +4541,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--bookmark"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--bookmark
@@ -4552,7 +4552,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--badge"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--badge
@@ -4563,7 +4563,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--attachment-audio"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--attachment-audio
@@ -4574,7 +4574,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--attachment-video"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--attachment-video
@@ -4585,7 +4585,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--attachment-html"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--attachment-html
@@ -4596,7 +4596,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--attachment-photo"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--attachment-photo
@@ -4607,7 +4607,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--attachment-e-pub"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--attachment-e-pub
@@ -4618,7 +4618,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--attachment-zip-file"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--attachment-zip-file
@@ -4629,7 +4629,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--attachment-text-file"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--attachment-text-file
@@ -4640,7 +4640,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--add-equipment"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--add-equipment
@@ -4651,7 +4651,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--add-activity"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--add-activity
@@ -4662,7 +4662,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--activity-individual"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--activity-individual
@@ -4673,7 +4673,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--activity-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--activity-2
@@ -4684,7 +4684,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--add-activity-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--add-activity-2
@@ -4695,7 +4695,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--activity-items"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--activity-items
@@ -4706,7 +4706,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--activity-assigned-to-goal"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--activity-assigned-to-goal
@@ -4717,7 +4717,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--status-positive"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--status-positive
@@ -4728,7 +4728,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--status-completed"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--status-completed
@@ -4739,7 +4739,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--status-negative"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--status-negative
@@ -4750,7 +4750,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--status-error"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--status-error
@@ -4761,7 +4761,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--status-inactive"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--status-inactive
@@ -4772,7 +4772,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--status-critical"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--status-critical
@@ -4783,7 +4783,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--status-in-progress"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--status-in-progress
@@ -4794,7 +4794,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--blank-tag-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--blank-tag-2
@@ -4805,7 +4805,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--cart-full"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--cart-full
@@ -4816,7 +4816,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--locate-me"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--locate-me
@@ -4827,7 +4827,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--paging"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--paging
@@ -4838,7 +4838,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--company-view"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--company-view
@@ -4849,7 +4849,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--document-text"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--document-text
@@ -4860,7 +4860,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--explorer"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--explorer
@@ -4871,7 +4871,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--personnel-view"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--personnel-view
@@ -4882,7 +4882,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sorting-ranking"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sorting-ranking
@@ -4893,7 +4893,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--drill-down"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--drill-down
@@ -4904,7 +4904,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--drill-up"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--drill-up
@@ -4915,7 +4915,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--vds-file"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--vds-file
@@ -4926,7 +4926,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sap-logo-shape"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sap-logo-shape
@@ -4937,7 +4937,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--folder-full"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--folder-full
@@ -4948,7 +4948,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--system-exit"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--system-exit
@@ -4959,7 +4959,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--system-exit-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--system-exit-2
@@ -4970,7 +4970,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--close-command-field"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--close-command-field
@@ -4981,7 +4981,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--open-command-field"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--open-command-field
@@ -4992,7 +4992,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sys-enter-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sys-enter-2
@@ -5003,7 +5003,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sys-enter"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sys-enter
@@ -5014,7 +5014,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sys-help-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sys-help-2
@@ -5025,7 +5025,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sys-help"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sys-help
@@ -5036,7 +5036,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sys-back"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sys-back
@@ -5047,7 +5047,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sys-back-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sys-back-2
@@ -5058,7 +5058,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sys-cancel"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sys-cancel
@@ -5069,7 +5069,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sys-cancel-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sys-cancel-2
@@ -5080,7 +5080,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--open-folder"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--open-folder
@@ -5091,7 +5091,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sys-find-next"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sys-find-next
@@ -5102,7 +5102,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sys-find"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sys-find
@@ -5113,7 +5113,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sys-monitor"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sys-monitor
@@ -5124,7 +5124,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sys-prev-page"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sys-prev-page
@@ -5135,7 +5135,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sys-first-page"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sys-first-page
@@ -5146,7 +5146,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sys-next-page"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sys-next-page
@@ -5157,7 +5157,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sys-last-page"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sys-last-page
@@ -5168,7 +5168,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--generate-shortcut"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--generate-shortcut
@@ -5179,7 +5179,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--create-session"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--create-session
@@ -5190,7 +5190,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--display-more"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--display-more
@@ -5201,7 +5201,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--enter-more"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--enter-more
@@ -5212,7 +5212,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--zoom-in"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--zoom-in
@@ -5223,7 +5223,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--zoom-out"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--zoom-out
@@ -5234,7 +5234,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--header"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--header
@@ -5245,7 +5245,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--detail-view"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--detail-view
@@ -5256,7 +5256,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--show-edit"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--show-edit
@@ -5267,7 +5267,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--collapse"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--collapse
@@ -5278,7 +5278,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--expand"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--expand
@@ -5289,7 +5289,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--positive"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--positive
@@ -5300,7 +5300,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--negative"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--negative
@@ -5311,7 +5311,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--display"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--display
@@ -5322,7 +5322,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--menu2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--menu2
@@ -5333,7 +5333,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--redo"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--redo
@@ -5344,7 +5344,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--undo"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--undo
@@ -5355,7 +5355,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--navigation-up-arrow"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--navigation-up-arrow
@@ -5366,7 +5366,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--navigation-down-arrow"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--navigation-down-arrow
@@ -5377,7 +5377,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--down"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--down
@@ -5388,7 +5388,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--up"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--up
@@ -5399,7 +5399,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--shelf"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--shelf
@@ -5410,7 +5410,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--background"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--background
@@ -5421,7 +5421,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--resize"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--resize
@@ -5432,7 +5432,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--move"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--move
@@ -5443,7 +5443,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--show"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--show
@@ -5454,7 +5454,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--hide"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--hide
@@ -5465,7 +5465,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--nav-back"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--nav-back
@@ -5476,7 +5476,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--error"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--error
@@ -5487,7 +5487,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--slim-arrow-right"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--slim-arrow-right
@@ -5498,7 +5498,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--slim-arrow-left"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--slim-arrow-left
@@ -5509,7 +5509,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--slim-arrow-down"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--slim-arrow-down
@@ -5520,7 +5520,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--slim-arrow-up"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--slim-arrow-up
@@ -5531,7 +5531,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--forward"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--forward
@@ -5542,7 +5542,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--overflow"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--overflow
@@ -5553,7 +5553,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--value-help"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--value-help
@@ -5564,7 +5564,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--multiselect"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--multiselect
@@ -5575,7 +5575,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--exitfullscreen"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--exitfullscreen
@@ -5586,7 +5586,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sys-add"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sys-add
@@ -5597,7 +5597,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sys-minus"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sys-minus
@@ -5608,7 +5608,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--dropdown"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--dropdown
@@ -5619,7 +5619,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--expand-group"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--expand-group
@@ -5630,7 +5630,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--vertical-grip"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--vertical-grip
@@ -5641,7 +5641,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--horizontal-grip"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--horizontal-grip
@@ -5652,7 +5652,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sort-descending"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sort-descending
@@ -5663,7 +5663,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sort-ascending"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sort-ascending
@@ -5674,7 +5674,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--arrow-down"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--arrow-down
@@ -5685,7 +5685,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--legend"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--legend
@@ -5696,7 +5696,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--collapse-group"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--collapse-group
@@ -5707,7 +5707,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--message-warning"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--message-warning
@@ -5718,7 +5718,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--message-information"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--message-information
@@ -5729,7 +5729,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--message-success"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--message-success
@@ -5740,7 +5740,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--restart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--restart
@@ -5751,7 +5751,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--stop"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--stop
@@ -5762,7 +5762,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--add-process"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--add-process
@@ -5773,7 +5773,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--cancel-maintenance"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--cancel-maintenance
@@ -5784,7 +5784,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--activate"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--activate
@@ -5795,7 +5795,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--resize-horizontal"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--resize-horizontal
@@ -5806,7 +5806,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--resize-vertical"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--resize-vertical
@@ -5817,7 +5817,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--connected"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--connected
@@ -5828,7 +5828,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--disconnected"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--disconnected
@@ -5839,7 +5839,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--edit-outside"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--edit-outside
@@ -5850,7 +5850,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--key"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--key
@@ -5861,7 +5861,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--minimize"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--minimize
@@ -5872,7 +5872,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--back-to-top"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--back-to-top
@@ -5883,7 +5883,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--hello-world"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--hello-world
@@ -5894,7 +5894,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--outbox"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--outbox
@@ -5905,7 +5905,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--donut-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--donut-chart
@@ -5916,7 +5916,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--heatmap-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--heatmap-chart
@@ -5927,7 +5927,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--horizontal-bullet-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--horizontal-bullet-chart
@@ -5938,7 +5938,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--vertical-bullet-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--vertical-bullet-chart
@@ -5949,7 +5949,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--call"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--call
@@ -5960,7 +5960,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--download-from-cloud"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--download-from-cloud
@@ -5971,7 +5971,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--upload-to-cloud"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--upload-to-cloud
@@ -5982,7 +5982,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--jam"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--jam
@@ -5993,7 +5993,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sap-ui5"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sap-ui5
@@ -6004,7 +6004,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--message-popup"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--message-popup
@@ -6015,7 +6015,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--cloud"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--cloud
@@ -6026,7 +6026,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--horizontal-waterfall-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--horizontal-waterfall-chart
@@ -6037,7 +6037,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--vertical-waterfall-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--vertical-waterfall-chart
@@ -6048,7 +6048,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--broken-link"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--broken-link
@@ -6059,7 +6059,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--headset"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--headset
@@ -6070,7 +6070,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--thumb-up"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--thumb-up
@@ -6081,7 +6081,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--thumb-down"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--thumb-down
@@ -6092,7 +6092,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--multiselect-all"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--multiselect-all
@@ -6103,7 +6103,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--multiselect-none"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--multiselect-none
@@ -6114,7 +6114,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--scissors"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--scissors
@@ -6125,7 +6125,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sound"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sound
@@ -6136,7 +6136,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sound-loud"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sound-loud
@@ -6147,7 +6147,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--sound-off"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--sound-off
@@ -6158,7 +6158,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--date-time"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--date-time
@@ -6169,7 +6169,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--user-settings"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--user-settings
@@ -6180,7 +6180,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--key-user-settings"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--key-user-settings
@@ -6191,7 +6191,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--developer-settings"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--developer-settings
@@ -6202,7 +6202,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--text-formatting"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--text-formatting
@@ -6213,7 +6213,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--bold-text"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--bold-text
@@ -6224,7 +6224,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--italic-text"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--italic-text
@@ -6235,7 +6235,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--underline-text"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--underline-text
@@ -6246,7 +6246,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--text-align-justified"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--text-align-justified
@@ -6257,7 +6257,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--text-align-left"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--text-align-left
@@ -6268,7 +6268,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--text-align-center"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--text-align-center
@@ -6279,7 +6279,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--text-align-right"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--text-align-right
@@ -6290,7 +6290,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--bullet-text"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--bullet-text
@@ -6301,7 +6301,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--numbered-text"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--numbered-text
@@ -6312,7 +6312,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--co"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--co
@@ -6323,7 +6323,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--ui-notifications"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--ui-notifications
@@ -6334,7 +6334,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--bell"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--bell
@@ -6345,7 +6345,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--cancel-share"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--cancel-share
@@ -6356,7 +6356,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--write-new-document"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--write-new-document
@@ -6367,7 +6367,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--write-new"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--write-new
@@ -6378,7 +6378,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--cancel"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--cancel
@@ -6389,7 +6389,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--screen-split-one"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--screen-split-one
@@ -6400,7 +6400,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--screen-split-two"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--screen-split-two
@@ -6411,7 +6411,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--screen-split-three"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--screen-split-three
@@ -6422,7 +6422,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--customize"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--customize
@@ -6433,7 +6433,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--user-edit"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--user-edit
@@ -6444,7 +6444,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--source-code"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--source-code
@@ -6455,7 +6455,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--copy"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--copy
@@ -6466,7 +6466,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--paste"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--paste
@@ -6477,7 +6477,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--line-chart-time-axis"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--line-chart-time-axis
@@ -6488,7 +6488,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--clear-filter"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--clear-filter
@@ -6499,7 +6499,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--reset"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--reset
@@ -6510,7 +6510,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--trend-up"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--trend-up
@@ -6521,7 +6521,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--trend-down"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--trend-down
@@ -6532,7 +6532,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--cursor"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--cursor
@@ -6543,7 +6543,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--add-document"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--add-document
@@ -6554,7 +6554,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--create-form"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--create-form
@@ -6565,7 +6565,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--resize-corner"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--resize-corner
@@ -6576,7 +6576,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--chevron-phase"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--chevron-phase
@@ -6587,7 +6587,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--chevron-phase-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--chevron-phase-2
@@ -6598,7 +6598,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--rhombus-milestone"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--rhombus-milestone
@@ -6609,7 +6609,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--rhombus-milestone-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--rhombus-milestone-2
@@ -6620,7 +6620,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--circle-task"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--circle-task
@@ -6631,7 +6631,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--circle-task-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--circle-task-2
@@ -6642,7 +6642,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--project-definition-triangle"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--project-definition-triangle
@@ -6653,7 +6653,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--project-definition-triangle-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--project-definition-triangle-2
@@ -6664,7 +6664,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--master-task-triangle"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--master-task-triangle
@@ -6675,7 +6675,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--master-task-triangle-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--master-task-triangle-2
@@ -6686,7 +6686,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--program-triangles"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--program-triangles
@@ -6697,7 +6697,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--program-triangles-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--program-triangles-2
@@ -6708,7 +6708,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--mirrored-task-circle"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--mirrored-task-circle
@@ -6719,7 +6719,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--mirrored-task-circle-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--mirrored-task-circle-2
@@ -6730,7 +6730,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--checklist-item"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--checklist-item
@@ -6741,7 +6741,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--checklist-item-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--checklist-item-2
@@ -6752,7 +6752,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--checklist"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--checklist
@@ -6763,7 +6763,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--checklist-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--checklist-2
@@ -6774,7 +6774,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--chart-table-view"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--chart-table-view
@@ -6785,7 +6785,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--filter-analytics"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--filter-analytics
@@ -6796,7 +6796,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--filter-facets"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--filter-facets
@@ -6807,7 +6807,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--filter-fields"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--filter-fields
@@ -6818,7 +6818,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--indent"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--indent
@@ -6829,7 +6829,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--outdent"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--outdent
@@ -6840,7 +6840,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--heading-1"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--heading-1
@@ -6851,7 +6851,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--heading-2"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--heading-2
@@ -6862,7 +6862,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--heading-3"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--heading-3
@@ -6873,7 +6873,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--decrease-line-height"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--decrease-line-height
@@ -6884,7 +6884,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--increase-line-height"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--increase-line-height
@@ -6895,7 +6895,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--fx"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--fx
@@ -6906,7 +6906,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--add-folder"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--add-folder
@@ -6917,7 +6917,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--away"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--away
@@ -6928,7 +6928,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--busy"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--busy
@@ -6939,7 +6939,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--appear-offline"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--appear-offline
@@ -6950,7 +6950,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--blur"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--blur
@@ -6961,7 +6961,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--pixelate"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--pixelate
@@ -6972,7 +6972,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--horizontal-combination-chart"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--horizontal-combination-chart
@@ -6983,7 +6983,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--add-employee"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--add-employee
@@ -6994,7 +6994,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--text-color"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--text-color
@@ -7005,7 +7005,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--browse-folder"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--browse-folder
@@ -7016,7 +7016,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--primary-key"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--primary-key
@@ -7027,7 +7027,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--two-keys"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--two-keys
@@ -7038,7 +7038,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--strikethrough"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--strikethrough
@@ -7049,7 +7049,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--text"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--text
@@ -7060,7 +7060,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--responsive"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--responsive
@@ -7071,7 +7071,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--desktop-mobile"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--desktop-mobile
@@ -7082,7 +7082,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--table-row"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--table-row
@@ -7093,7 +7093,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--table-column"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--table-column
@@ -7104,7 +7104,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--validate"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--validate
@@ -7115,7 +7115,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--keyboard-and-mouse"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--keyboard-and-mouse
@@ -7126,7 +7126,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--touch"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--touch
@@ -7137,7 +7137,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--expand-all"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--expand-all
@@ -7148,7 +7148,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--collapse-all"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--collapse-all
@@ -7159,7 +7159,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--combine"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--combine
@@ -7170,7 +7170,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--split"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--split
@@ -7181,7 +7181,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--megamenu"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--megamenu
@@ -7192,7 +7192,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--feedback"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--feedback
@@ -7203,7 +7203,7 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
   >
     <span
       class="sap-icon sap-icon--information"
-      style="font-size:2rem"
+      style="font-size:1rem"
     />
     <div>
       .sap-icon--information
