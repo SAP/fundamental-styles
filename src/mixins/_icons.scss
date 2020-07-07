@@ -1,11 +1,12 @@
-@import "../settings";
+@import "../new-settings";
 @import "../icons/settings";
 
 // icon mixin
-@mixin fd-icon($key, $size: "default", $position: "before") {
+@mixin fd-icon($key, $position: "before") {
   @include fd-icon-base($position);
   @include fd-icon-glyph($key, $position);
-  @include fd-icon-size($size, $position);
+
+  font-family: "SAP-icons";
 
   &::#{$position} {
     @content;
@@ -16,49 +17,12 @@
 @mixin fd-icon-base($position: "before") {
   &::#{$position} {
     font-family: "SAP-icons";
-    font-style: normal;
-    font-weight: normal;
     text-align: center;
-    font-size: $fd-font-size;
-    display: inline-block;
     text-decoration: inherit;
     text-transform: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    speak: none;
-    @content;
-  }
-}
-
-// animate mixin
-@mixin fd-icon-animate($type: "spin") {
-  display: inline-block;
-
-  @if $type == "spin" {
-    animation: sap-icon-spin 2s infinite linear;
-  } @else if $type == "pulse" {
-    animation: sap-icon-spin 2s infinite steps(8);
-  }
-}
-
-// size mixin
-@mixin fd-icon-size($size: "default", $position: "before") {
-  &::#{$position} {
-    @if $size != "default" {
-      // explicitly
-      @if map-has-key($fd-icons-sizes, $size) {
-        font-size: map-get($fd-icons-sizes, $size);
-      } @else {
-        @warn "Unknown `#{$fd-icons-sizes}` in $fd-icons-sizes map";
-      }
-
-      line-height: 1;
-    } @else {
-      // implicity
-      font-size: map-get($fd-icons-sizes, "default");
-      line-height: $fd-line-height;
-    }
     @content;
   }
 }

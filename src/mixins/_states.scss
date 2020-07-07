@@ -1,4 +1,3 @@
-@import "./../functions/color";
 // These mixins ensure that all state selectors — ARIA, pseudos, `is` fallbacks — get applied properly.
 
 // ACTIVE state (press and hold)
@@ -24,7 +23,7 @@
 @mixin fd-focus() {
   &:focus,
   &.is-focus {
-    z-index: map-get($fd-z-index-levels, "focus");
+    z-index: 5;
     @content;
   }
 }

@@ -85,9 +85,9 @@ $block: #{$fd-namespace}-action-bar;
 
   &__title {
     @include fd-reset();
-    @include fd-heading();
     @include fd-truncate-text();
 
+    text-rendering: optimizeLegibility;
     font-size: var(--sapFontHeader3Size);
     font-family: var(--sapFontHeaderFamily);
     color: $fd-action-bar-title-color;
