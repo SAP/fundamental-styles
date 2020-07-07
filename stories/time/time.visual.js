@@ -3,7 +3,7 @@ import '../../dist/time.css';
 import * as stories from './time.stories';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Time'
 };
 
 export const Time = () => {

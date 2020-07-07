@@ -8,7 +8,7 @@ import '../../dist/toolbar.css';
 import * as stories from './table.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Table'
 };
 
 export const Table = () => {

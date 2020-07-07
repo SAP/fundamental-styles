@@ -2,7 +2,7 @@ import '../../dist/section.css';
 import * as stories from './product-switch.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/ProductSwitch'
 };
 
 export const ProductSwitch = () => {

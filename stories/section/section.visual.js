@@ -5,7 +5,7 @@ import '../../dist/layout.css';
 import * as stories from './section.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Section'
 };
 
 export const Section = () => {

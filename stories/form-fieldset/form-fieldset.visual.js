@@ -6,7 +6,7 @@ import '../../dist/radio.css';
 import * as stories from './form-fieldset.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/FieldSet'
 };
 
 export const FieldSet = () => {

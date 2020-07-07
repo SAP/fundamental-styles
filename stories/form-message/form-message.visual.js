@@ -6,7 +6,7 @@ import '../../dist/radio.css';
 import * as stories from './form-message.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/FormMessage'
 };
 
 export const FormMessage = () => {

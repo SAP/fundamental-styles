@@ -8,7 +8,7 @@ import '../../dist/localization-editor.css';
 import * as stories from './localization-editor.stories';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/LocalizationEditor'
 };
 
 export const LocalizationEditor = () => {

@@ -4,7 +4,7 @@ import '../../dist/notification.css';
 import * as stories from './notification.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Notification'
 };
 
 export const Notification = () => {

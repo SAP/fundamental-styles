@@ -6,7 +6,7 @@ import '../../dist/segmented-button.css';
 import * as stories from './tree.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Tree'
 };
 
 export const Tree = () => {

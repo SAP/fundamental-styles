@@ -6,7 +6,7 @@ import '../../dist/radio.css';
 import * as stories from './form-label.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/FormLabel'
 };
 
 export const FormLabel = () => {

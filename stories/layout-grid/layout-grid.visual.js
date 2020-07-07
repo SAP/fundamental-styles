@@ -2,7 +2,7 @@ import '../../dist/section.css';
 import * as stories from './layout-grid.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/LayoutGrid'
 };
 
 export const LayoutGrid = () => {

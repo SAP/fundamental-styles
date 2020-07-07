@@ -1,7 +1,7 @@
 import * as stories from './message-toast.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/MessageToast'
 };
 
 export const MessageToast = () => {

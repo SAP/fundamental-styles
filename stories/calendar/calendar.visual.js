@@ -2,7 +2,7 @@ import '../../dist/calendar.css';
 import * as stories from './calendar.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Calendar'
 };
 
 export const Calendar = () => {

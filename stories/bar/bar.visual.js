@@ -5,7 +5,7 @@ import '../../dist/segmented-button.css';
 import * as stories from './bar.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Bar'
 };
 
 export const Bar = () => {

@@ -2,7 +2,7 @@
 import * as stories from './checkbox.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Checkbox'
 };
 
 export const Checkbox = () => {

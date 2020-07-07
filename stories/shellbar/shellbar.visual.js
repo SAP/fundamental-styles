@@ -10,7 +10,7 @@ import '../../dist/shellbar.css';
 import * as stories from './shellbar.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Shellbar'
 };
 
 export const Shellbar = () => {

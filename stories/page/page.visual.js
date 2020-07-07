@@ -2,7 +2,7 @@ import '../../dist/page.css';
 import * as stories from './page.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Page'
 };
 
 export const Page = () => {

@@ -1,7 +1,7 @@
 import * as stories from './message-box.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/MessageBox'
 };
 
 export const MessageBox = () => {
