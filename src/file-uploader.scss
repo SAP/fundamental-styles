@@ -1,62 +1,30 @@
 @import "./mixins";
 @import "./new-settings";
-@import "./button.scss";
 
 $block: #{$fd-namespace}-file-uploader;
+$input: #{$fd-namespace}-input;
+
+$fd-file-uploader-padding: 0.25rem;
 
 .#{$block} {
-  $fd-file-uploader-padding: 0.25rem;
-
   @include fd-reset();
+  @include fd-flex-vertical-center();
 
-  display: inline-flex;
-  align-items: center;
-  width: auto;
-
-  &__input.#{$fd-namespace}-input {
+  &__input.#{$input} {
     width: auto;
     margin-right: $fd-file-uploader-padding;
-
-    @include fd-ellipsis();
-
+    background-color: var(--sapField_Background);
     user-select: none;
+    cursor: pointer;
+
+    &::placeholder {
+      color: var(--sapTextColor);
+    }
 
     @include fd-rtl() {
       margin-left: $fd-file-uploader-padding;
       margin-right: 0;
     }
-
-    cursor: text;
-
-    @include fd-readonly() {
-      background-color: var(--sapField_Background);
-
-      &::placeholder {
-        color: var(--sapTextColor);
-      }
-    }
-
-    @include fd-focus() {
-      outline: none;
-
-      ~ .#{$block}__button {
-        @include buttonContainerFocus();
-      }
-    }
-
-    @include fd-hover() {
-      outline: none;
-      cursor: pointer;
-      border-color: var(--sapField_BorderColor);
-      ~ .#{$block}__button {
-        @include buttonContainerHover();
-      }
-    }
-  }
-
-  &__button.#{$fd-namespace}-button {
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   &__hidden {
