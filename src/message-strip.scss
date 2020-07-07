@@ -69,7 +69,7 @@ $block: #{$fd-namespace}-message-strip;
   // Elements
   &__close {
     @include fd-message-strip-close-btn-container();
-    @include fd-icon("decline", "m");
+    @include fd-icon("decline");
 
     @include fd-rtl() {
       left: 0.125rem;
@@ -136,10 +136,10 @@ $block: #{$fd-namespace}-message-strip;
     background-color: $fd-message-strip-background-color--warning;
     border-color: $fd-message-strip-border-color--warning;
 
-    @include fd-icon("message-warning", "m");
+    @include fd-icon("message-warning");
 
     @include fd-rtl() {
-      @include fd-icon("message-warning", "m", "after");
+      @include fd-icon("message-warning", "after");
     }
   }
 
@@ -152,10 +152,10 @@ $block: #{$fd-namespace}-message-strip;
     background-color: $fd-message-strip-background-color--error;
     border-color: $fd-message-strip-border-color--error;
 
-    @include fd-icon("message-error", "m");
+    @include fd-icon("message-error");
 
     @include fd-rtl() {
-      @include fd-icon("message-error", "m", "after");
+      @include fd-icon("message-error", "after");
     }
   }
 
@@ -168,10 +168,10 @@ $block: #{$fd-namespace}-message-strip;
     background-color: $fd-message-strip-background-color--success;
     border-color: $fd-message-strip-border-color--success;
 
-    @include fd-icon("message-success", "m");
+    @include fd-icon("message-success");
 
     @include fd-rtl() {
-      @include fd-icon("message-success", "m", "after");
+      @include fd-icon("message-success", "after");
     }
   }
 
@@ -184,10 +184,10 @@ $block: #{$fd-namespace}-message-strip;
     background-color: $fd-message-strip-background-color--information;
     border-color: $fd-message-strip-border-color--information;
 
-    @include fd-icon("message-information", "m");
+    @include fd-icon("message-information");
 
     @include fd-rtl() {
-      @include fd-icon("message-information", "m", "after");
+      @include fd-icon("message-information", "after");
     }
   }
 

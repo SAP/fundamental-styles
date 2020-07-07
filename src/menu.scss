@@ -212,12 +212,12 @@ $block: #{$fd-namespace}-menu;
     }
 
     &--submenu {
-      @include fd-icon("navigation-right-arrow", "s");
+      @include fd-icon("navigation-right-arrow");
 
       font-size: var(--sapFontSmallSize);
 
       @include fd-rtl() {
-        @include fd-icon("navigation-left-arrow", "s");
+        @include fd-icon("navigation-left-arrow");
       }
     }
   }

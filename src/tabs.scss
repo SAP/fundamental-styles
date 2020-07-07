@@ -249,7 +249,7 @@ $block: #{$fd-namespace}-tabs;
 
     margin-left: auto;
 
-    @include fd-icon('slim-arrow-down', 'm');
+    @include fd-icon('slim-arrow-down');
   }
 
   &__process-icon {
@@ -259,7 +259,7 @@ $block: #{$fd-namespace}-tabs;
     padding: 0 0.5rem;
     display: flex;
 
-    @include fd-icon("process", "m");
+    @include fd-icon("process");
 
     font-size: 1rem;
     line-height: 1;
@@ -357,7 +357,7 @@ $block: #{$fd-namespace}-tabs;
     }
 
     .#{$block}__overflow {
-      @include fd-icon('slim-arrow-right', 'm');
+      @include fd-icon('slim-arrow-right');
     }
 
     .#{$block}__label {

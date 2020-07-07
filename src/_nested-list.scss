@@ -165,7 +165,7 @@ $block: #{$fd-namespace}-nested-list;
     display: flex;
     justify-content: center;
 
-    @include fd-icon('navigation-right-arrow', 'default', 'after') {
+    @include fd-icon('navigation-right-arrow', 'after') {
       @include fd-flex-center();
 
       height: 100%;
