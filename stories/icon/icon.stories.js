@@ -17,15 +17,17 @@ export default {
 };
 
 export const sizes = () => `
+
     <span class="sap-icon sap-icon--cart"></span>
-    <span class="sap-icon sap-icon--cart" style="font-size:2rem"></span>
-    <span class="sap-icon sap-icon--cart" style="font-size:4rem"></span>
-    <span class="sap-icon sap-icon--cart" style="font-size:7rem"></span>
+    <br />
+    <span class="sap-icon sap-icon--cart" style="font-size:5rem"></span>
+    <br />
+    <span class="sap-icon sap-icon--cart" style="font-size:10rem"></span>
 `;
 
 sizes.parameters = {
     docs: {
-        iframeHeight: 200,
+        iframeHeight: 250,
         storyDescription: 'Icons do not have predefined size options. They take the font size value for it. This give unlimited options for sizes.'
     }
 };
@@ -36,9 +38,9 @@ export const availableIcons = () => {
     div.innerHTML = data.icons.map((icon) => {
         return (
             '<div class="fddocs-container--icon">' +
-                `<span class="sap-icon sap-icon--${icon}" style="font-size:1rem"></span>` +
+                `<span class="sap-icon sap-icon--${icon}" style="font-size:3rem"></span>` +
                 `<div>.sap-icon--${icon}</div>` +
-            '</div>'
+            '</div><br />'
         );
     }).join('');
     return div.outerHTML;
@@ -46,6 +48,6 @@ export const availableIcons = () => {
 
 availableIcons.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 200
     }
 };
