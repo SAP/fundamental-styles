@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.88"></a>
+# [0.11.0-rc.88](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.87...v0.11.0-rc.88) (2020-07-07)
+
+
+### Bug Fixes
+
+* remove button.scss from file uploader components ([#1213](https://github.com/SAP/fundamental-styles/issues/1213)) ([3029e09](https://github.com/SAP/fundamental-styles/commit/3029e09))
+
+
+
 <a name="0.11.0-rc.87"></a>
 # [0.11.0-rc.87](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.86...v0.11.0-rc.87) (2020-07-07)
 
