@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.93"></a>
+# [0.11.0-rc.93](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.92...v0.11.0-rc.93) (2020-07-08)
+
+
+### Bug Fixes
+
+* set the correct position of the counter notification in Shellbar, RTL included ([#1224](https://github.com/SAP/fundamental-styles/issues/1224)) ([8cc3b70](https://github.com/SAP/fundamental-styles/commit/8cc3b70))
+
+
+
 <a name="0.11.0-rc.92"></a>
 # [0.11.0-rc.92](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.91...v0.11.0-rc.92) (2020-07-08)
 
