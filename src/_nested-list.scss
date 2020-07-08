@@ -35,6 +35,16 @@ $block: #{$fd-namespace}-nested-list;
 
   list-style: none;
   width: 100%;
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+
+  & [class*="level"] {
+    border-bottom: none;
+
+    .#{$block}__link,
+    .#{$block}__content {
+      border-top: none;
+    }
+  }
 
   @for $i from 2 through 10 {
     .level-#{$i} {
@@ -62,6 +72,13 @@ $block: #{$fd-namespace}-nested-list;
     @include fd-reset();
 
     background: var(--sapList_Background);
+
+    &:first-child {
+      .#{$block}__link,
+      .#{$block}__content {
+        border-top: none;
+      }
+    }
   }
 
   &__link,
@@ -73,7 +90,7 @@ $block: #{$fd-namespace}-nested-list;
     height: 2.75rem;
     width: 100%;
     align-items: center;
-    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+    border-top: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
 
     @include fd-hover() {
       background: var(--sapList_Hover_Background);
@@ -84,10 +101,6 @@ $block: #{$fd-namespace}-nested-list;
     }
 
     @include fd-fiori-focus();
-
-    &.is-expanded {
-      border-bottom: none;
-    }
 
     @include fd-selected() {
       background: var(--sapList_SelectionBackgroundColor);
@@ -133,6 +146,11 @@ $block: #{$fd-namespace}-nested-list;
       justify-content: space-between;
       padding: 0;
 
+      > .#{$block}__link,
+      > .#{$block}__item {
+        border: none;
+      }
+
       > .#{$block}__link {
         background: transparent;
         border: none;
@@ -154,8 +172,7 @@ $block: #{$fd-namespace}-nested-list;
     }
   }
 
-  &__button {
-    @include fd-reset();
+  &__button.#{$fd-namespace}-button {
     @include fd-fiori-focus();
 
     text-decoration: none;
@@ -164,6 +181,7 @@ $block: #{$fd-namespace}-nested-list;
     color: var(--sapContent_IconColor);
     display: flex;
     justify-content: center;
+    border: none;
 
     @include fd-icon('navigation-right-arrow', 'after') {
       @include fd-flex-center();
@@ -250,8 +268,9 @@ $block: #{$fd-namespace}-nested-list;
 
   &--no-border {
     .#{$block}__item,
+    .#{$block}__link,
     .#{$block}__group-header {
-      border-bottom: none;
+      border-top: none;
     }
   }
 
