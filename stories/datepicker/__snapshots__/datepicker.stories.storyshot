@@ -1924,10 +1924,7 @@ exports[`Storyshots Patterns/DatePicker Today Navigation Button 1`] = `
               aria-haspopup="true"
               aria-label="Choose Date"
               class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2"
-            >
-              
-        
-            </button>
+            />
             
         
           </span>
