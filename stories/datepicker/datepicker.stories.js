@@ -622,8 +622,7 @@ export const todayNavigationButton = () =>`
           aria-controls="Itcgq830"
           aria-expanded="false"
           aria-haspopup="true"
-          aria-label="Choose Date">
-        </button>
+          aria-label="Choose Date"></button>
         </span>
       </div>
     </div>
