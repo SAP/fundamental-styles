@@ -5,7 +5,7 @@ import '../../dist/input.css';
 import * as stories from './file-uploader.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/FileUploader'
 };
 
 export const FileUploader = () => {

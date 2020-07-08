@@ -168,7 +168,8 @@ $button: #{$fd-namespace}-button;
 
     position: absolute;
     right: 0;
-    bottom: -1px;
+    bottom: -4px;
+    font-size: 1rem;
     cursor: se-resize;
     overflow: hidden;
     border-bottom-right-radius: $fd-dialog-content-border-radius;
@@ -180,8 +181,7 @@ $button: #{$fd-namespace}-button;
       transform: scaleX(-1);
     }
 
-    @include fd-icon("resize-corner", "m", "after") {
-      display: flex;
+    @include fd-icon("resize-corner", "after") {
       color: $fd-dialog-resize-handle-color;
     }
   }

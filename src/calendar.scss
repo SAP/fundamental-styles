@@ -406,7 +406,7 @@ $fd-calendar-special-days: (
   @include special-days($fd-calendar-special-days);
 
   &__close-button {
-    @include fd-icon("decline", "m");
+    @include fd-icon("decline");
 
     &--navigation {
       @include fd-rtl() {

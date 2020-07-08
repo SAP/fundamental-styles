@@ -2,7 +2,7 @@ import '../../dist/object-status.css';
 import * as stories from './object-status.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/ObjectStatus'
 };
 
 export const ObjectStatus = () => {

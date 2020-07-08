@@ -1,7 +1,7 @@
 import * as stories from '../info-label/info-label.stories';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/InfoLabel'
 };
 
 export const InfoLabel = () => {

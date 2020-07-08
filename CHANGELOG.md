@@ -2,6 +2,61 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.91"></a>
+# [0.11.0-rc.91](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.90...v0.11.0-rc.91) (2020-07-08)
+
+
+### Bug Fixes
+
+* add border bottom for the last child of level 2 ([#1222](https://github.com/SAP/fundamental-styles/issues/1222)) ([d1420fb](https://github.com/SAP/fundamental-styles/commit/d1420fb))
+
+
+
+<a name="0.11.0-rc.90"></a>
+# [0.11.0-rc.90](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.89...v0.11.0-rc.90) (2020-07-07)
+
+
+
+<a name="0.11.0-rc.89"></a>
+# [0.11.0-rc.89](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.88...v0.11.0-rc.89) (2020-07-07)
+
+
+### Features
+
+* remove old variables ([#1212](https://github.com/SAP/fundamental-styles/issues/1212)) ([66ef3cc](https://github.com/SAP/fundamental-styles/commit/66ef3cc))
+
+
+
+<a name="0.11.0-rc.88"></a>
+# [0.11.0-rc.88](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.87...v0.11.0-rc.88) (2020-07-07)
+
+
+### Bug Fixes
+
+* remove button.scss from file uploader components ([#1213](https://github.com/SAP/fundamental-styles/issues/1213)) ([3029e09](https://github.com/SAP/fundamental-styles/commit/3029e09))
+
+
+
+<a name="0.11.0-rc.87"></a>
+# [0.11.0-rc.87](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.86...v0.11.0-rc.87) (2020-07-07)
+
+
+### Bug Fixes
+
+* align horizontally and vertically the inner circle of Radio Button ([#1218](https://github.com/SAP/fundamental-styles/issues/1218)) ([dd76cce](https://github.com/SAP/fundamental-styles/commit/dd76cce))
+
+
+
+<a name="0.11.0-rc.86"></a>
+# [0.11.0-rc.86](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.85...v0.11.0-rc.86) (2020-07-03)
+
+
+### Bug Fixes
+
+* add new icons ([#1203](https://github.com/SAP/fundamental-styles/issues/1203)) ([6567813](https://github.com/SAP/fundamental-styles/commit/6567813))
+
+
+
 <a name="0.11.0-rc.85"></a>
 # [0.11.0-rc.85](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.84...v0.11.0-rc.85) (2020-07-01)
 

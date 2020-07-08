@@ -1,7 +1,7 @@
 import * as stories from './message-strip.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/MessageStrip'
 };
 
 export const MessageStrip = () => {

@@ -1,7 +1,5 @@
 // do not change import order
-@import "./root";
 @import "./variables";
-@import "./settings";
 @import "./icon";
 @import "./layout";
 @import "./action-bar";
@@ -35,7 +33,6 @@
 @import "./message-box";
 @import "./message-strip";
 @import "./message-toast";
-@import "./nav";
 @import "./notification";
 @import "./numeric-content";
 @import "./object-status";

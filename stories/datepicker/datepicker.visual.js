@@ -4,7 +4,7 @@ import '../../dist/popover.css';
 import * as stories from './datepicker.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Datepicker'
 };
 
 export const DatePicker = () => {

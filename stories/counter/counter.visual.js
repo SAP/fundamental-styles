@@ -2,7 +2,7 @@ import '../../dist/counter.css';
 import * as stories from './counter.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Counter'
 };
 
 export const Counter = () => {

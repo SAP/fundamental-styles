@@ -4,7 +4,7 @@ import '../../dist/icon.css';
 import * as stories from './numeric-content.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/NumericContent'
 };
 
 export const NumericContent = () => {

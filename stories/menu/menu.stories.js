@@ -15,8 +15,7 @@ Commonly used as the contents when composing "dropdowns", "contextual menus", et
 };
 
 
-export const desktopAndTablet = () => `
-<div style="width: 50%; display: inline-block">    
+export const desktopAndTablet = () => `   
 <label class="fd-form-label">Combobox Tablet Cozy Mode - default mode</label><br/><br/>
 
 <nav aria-label="fd-menu-nav" class="fd-menu">
@@ -43,36 +42,34 @@ export const desktopAndTablet = () => `
         </li>
     </ul>
 </nav>
-</div>
 
-<div style="display: inline-block">
-    <label class="fd-form-label">Combobox Desktop Compact Mode</label><br/><br/>
-    
-    <nav class="fd-menu fd-menu--compact">
-        <ul class="fd-menu__list" role="menu">
-            <li class="fd-menu__item" role="presentation">
-                <a class="fd-menu__link" href="#" role="menuitem">
-                    <span class="fd-menu__title">Option 1</span>
-                </a>
-            </li>
-            <li class="fd-menu__item" role="presentation">
-                <a class="fd-menu__link" href="#" role="menuitem">
-                    <span class="fd-menu__title">Option 2</span>
-                </a>
-            </li>
-            <li class="fd-menu__item" role="presentation">
-                <a class="fd-menu__link" href="#" role="menuitem">
-                    <span class="fd-menu__title">Option 3</span>
-                </a>
-            </li>
-            <li class="fd-menu__item" role="presentation">
-                <a class="fd-menu__link" href="#" role="menuitem">
-                    <span class="fd-menu__title">Option 4</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</div>
+<br> 
+<label class="fd-form-label">Combobox Desktop Compact Mode</label><br/><br/>
+
+<nav class="fd-menu fd-menu--compact">
+    <ul class="fd-menu__list" role="menu">
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 1</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 2</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 3</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 4</span>
+            </a>
+        </li>
+    </ul>
+</nav>
 `;
 
 desktopAndTablet.storyName = 'Desktop and Tablet Modes';

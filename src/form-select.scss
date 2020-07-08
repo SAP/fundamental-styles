@@ -1,31 +1,32 @@
-@import "./settings";
 @import "./mixins";
-@import "./functions";
 
 /*!
 .fd-form-select
 */
 $block: #{$fd-namespace}-form-select;
 
+$fd-forms-select-background-image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzkiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzOSAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiNGQUZCRkMiIGQ9Ik0xIDBoMzd2MzZIMXoiLz48cGF0aCBkPSJNMSAwdjM2TTM4IDB2MzYiIHN0cm9rZT0iI0NFQ0VEMCIvPjxwYXRoIGQ9Ik0yNi45MTkgMTYuODQzbC03LjY2NyA4LjA1OGEuMzY0LjM2NCAwIDAgMS0uMjUzLjA5OS4zNjQuMzY0IDAgMCAxLS4yNTItLjFsLTcuNjY0LTguMDU3YS4yODMuMjgzIDAgMCAxIC4wMzQtLjQyOGwxLjcyMS0xLjM0MWEuMzUyLjM1MiAwIDAgMSAuMjE4LS4wNzRsLjAyNS4wMDFjLjA4OC4wMDYuMTcuMDQ1LjIyOC4xMDdMMTkgMjEuMjAybDUuNjkzLTYuMDk0Yy4xMi0uMTMuMzMtLjE0NS40Ny0uMDM0bDEuNzIyIDEuMzQxYS4yOTcuMjk3IDAgMCAxIC4xMTUuMjA3LjI4My4yODMgMCAwIDEtLjA4LjIyMXoiIGZpbGw9IiMwQTZFRDEiLz48L2c+PC9zdmc+" !default;
+$fd-forms-select-background-image--disabled: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzkiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzOSAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiNGQUZCRkMiIGQ9Ik0xIDBoMzd2MzZIMXoiLz48cGF0aCBkPSJNMSAwdjM2TTM4IDB2MzYiIHN0cm9rZT0iI0VCRUJFQyIvPjxwYXRoIGQ9Ik0yNi45MTkgMTYuODQzbC03LjY2NyA4LjA1OGEuMzY0LjM2NCAwIDAgMS0uMjUzLjA5OS4zNjQuMzY0IDAgMCAxLS4yNTItLjFsLTcuNjY0LTguMDU3YS4yODMuMjgzIDAgMCAxIC4wMzQtLjQyOGwxLjcyMS0xLjM0MWEuMzUyLjM1MiAwIDAgMSAuMjE4LS4wNzRsLjAyNS4wMDFjLjA4OC4wMDYuMTcuMDQ1LjIyOC4xMDdMMTkgMjEuMjAybDUuNjkzLTYuMDk0Yy4xMi0uMTMuMzMtLjE0NS40Ny0uMDM0bDEuNzIyIDEuMzQxYS4yOTcuMjk3IDAgMCAxIC4xMTUuMjA3LjI4My4yODMgMCAwIDEtLjA4LjIyMXoiIGZpbGw9IiNFQkVCRUMiLz48L2c+PC9zdmc+" !default;
+
 .#{$block} {
   @include fd-form-text();
-  @include fd-var-size("height", $fd-forms-height, --fd-forms-height);
 
+  height: 2.25rem;
   appearance: none;
   width: 100%;
   background-image: url(#{$fd-forms-select-background-image});
   background-repeat: no-repeat;
-  background-position: calc(100% + 1px) center;
-  padding-right: $fd-forms-padding + $fd-forms-select-width--background-image;
+  background-position: calc(100% + 0.0625rem) center;
+  padding-right: 3rem;
 
   @include fd-disabled() {
     background-image: url(#{$fd-forms-select-background-image--disabled});
   }
 
   @include fd-rtl() {
-    background-position: -1px center;
-    padding-right: $fd-forms-padding;
-    padding-left: $fd-forms-padding + $fd-forms-select-width--background-image;
+    background-position: -0.0625rem center;
+    padding-right: 0.75rem;
+    padding-left: 3rem;
   }
 
   &::-ms-expand {
@@ -43,33 +44,29 @@ $block: #{$fd-namespace}-form-select;
 
   &::after {
     content: "";
-    width: 10px;
-    height: 5px;
+    width: 0.625rem;
+    height: 0.3125rem;
     border-color: transparent;
     border-style: solid;
-    border-width: 0 0 2px 2px;
+    border-width: 0 0 0.125rem 0.125rem;
     transform: rotate(-45deg);
     position: absolute;
-    z-index: map-get($fd-z-index-levels, "second");
-    top: calc(50% - 4px);
-    left: calc(50% - 10px / 2);
+    z-index: 2;
+    top: calc(50% - 0.25rem);
+    left: calc(50% - 0.625rem / 2);
   }
 
   &--compact {
-    @include fd-var-size("height", $fd-forms-height--compact, --fd-forms-height-compact);
+    height: 1.75rem;
   }
 
   &[multiple] {
-    @include fd-var-size("height", $fd-forms-height * 3);
-
-    height: calc(var(--fd-forms-height) * 3);
+    height: 9.375rem;
     background-image: none;
-    padding-top: $fd-forms-padding;
+    padding-top: 0.75rem;
 
     &.#{$block}--compact {
-      @include fd-var-size("height", $fd-forms-height--compact * 3);
-
-      height: calc(var(--fd-forms-height-compact) * 3);
+      height: 4.6875rem;
     }
   }
 
