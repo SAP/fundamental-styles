@@ -33,6 +33,9 @@ $block: #{$fd-namespace}-shellbar;
   // Box shadow
   $fd-shellbar-box-shadow: var(--sapContent_HeaderShadow) !default;
 
+  // Counter Notification
+  $fd-shellbar-counter-notification-offset: -0.25rem !default;
+
   @include fd-reset();
 
   background-color: $fd-shellbar-background;
@@ -218,9 +221,17 @@ $block: #{$fd-namespace}-shellbar;
       border: $fd-content-badge-background;
       color: $fd-shellbar-color;
       line-height: 0.8;
-      top: 10px;
-      max-height: 16px;
+      max-height: 1rem;
       overflow: hidden;
+      right: $fd-shellbar-counter-notification-offset;
+      top: $fd-shellbar-counter-notification-offset;
+      transform: none;
+
+      @include fd-rtl() {
+        transform: none;
+        right: initial;
+        left: $fd-shellbar-counter-notification-offset;
+      }
     }
 
     .#{$block}__input-group__addon {
@@ -263,6 +274,7 @@ $block: #{$fd-namespace}-shellbar;
    is a better option than using the buttonBase() mixin from the button.scss file or using !important.
    */
   .#{$fd-namespace}-button.#{$block}__button {
+    position: relative;
     border-color: transparent;
     background: $fd-shellbar-background-color;
     color: $fd-shellbar-color;
@@ -292,6 +304,12 @@ $block: #{$fd-namespace}-shellbar;
     &.sap-icon--bell {
       &::before {
         margin-right: 0;
+      }
+
+      @include fd-rtl() {
+        &::before {
+          margin-left: 0;
+        }
       }
     }
 
