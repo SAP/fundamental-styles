@@ -4,7 +4,7 @@ import '../../dist/icon.css';
 import '../../dist/menu.css';
 import '../../dist/popover.css';
 import '../../dist/segmented-button.css';
-import data from './data.json';
+// import data from './data.json';
 
 export default {
     title: 'Components/Icon',
@@ -17,11 +17,6 @@ export default {
 };
 
 export const sizes = () => `
-
-    <span class="sap-icon sap-icon--cart"></span>
-    <br />
-    <span class="sap-icon sap-icon--cart" style="font-size:5rem"></span>
-    <br />
     <span class="sap-icon sap-icon--cart" style="font-size:10rem"></span>
 `;
 
@@ -32,22 +27,22 @@ sizes.parameters = {
     }
 };
 
-export const availableIcons = () => {
-    const div = document.createElement('div');
-    div.className = 'fddocs-container';
-    div.innerHTML = data.icons.map((icon) => {
-        return (
-            '<div class="fddocs-container--icon">' +
-                `<span class="sap-icon sap-icon--${icon}" style="font-size:3rem"></span>` +
-                `<div>.sap-icon--${icon}</div>` +
-            '</div><br />'
-        );
-    }).join('');
-    return div.outerHTML;
-};
+// export const availableIcons = () => {
+//     const div = document.createElement('div');
+//     div.className = 'fddocs-container__icons';
+//     div.innerHTML = data.icons.map((icon) => {
+//         return (
+//             '<div class="fddocs-container--icon">' +
+//                 `<span class="sap-icon sap-icon--${icon}" style="font-size:3rem"></span>` +
+//                 `<div>.sap-icon--${icon}</div>` +
+//             '</div><br />'
+//         );
+//     }).join('');
+//     return div.outerHTML;
+// };
 
-availableIcons.parameters = {
-    docs: {
-        iframeHeight: 200
-    }
-};
+// availableIcons.parameters = {
+//     docs: {
+//         iframeHeight: 200
+//     }
+// };
