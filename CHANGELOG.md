@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.91"></a>
+# [0.11.0-rc.91](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.90...v0.11.0-rc.91) (2020-07-08)
+
+
+### Bug Fixes
+
+* add border bottom for the last child of level 2 ([#1222](https://github.com/SAP/fundamental-styles/issues/1222)) ([d1420fb](https://github.com/SAP/fundamental-styles/commit/d1420fb))
+
+
+
 <a name="0.11.0-rc.90"></a>
 # [0.11.0-rc.90](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.89...v0.11.0-rc.90) (2020-07-07)
 
