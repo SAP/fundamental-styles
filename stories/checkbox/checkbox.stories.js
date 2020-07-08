@@ -25,8 +25,23 @@ Do not use the checkbox control if:
         tags: ['f3', 'a11y', 'theme'] }
 };
 
+const localStyles = `
+<style>
+    .checkbox-example-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .checkbox-example-container > fieldset {
+        max-width: 100%;
+    }
+</style>
+`;
+
 export const primary = () => `
-<div style="display:flex;justify-content:space-between">
+${localStyles}
+<div class="checkbox-example-container">
     <fieldset class="fd-fieldset">
         <legend class="fd-fieldset__legend">Cozy Checkboxes</legend>
         <div class="fd-form-group">
@@ -148,7 +163,8 @@ export const inline = () => `
 inline.storyName = 'Checkboxes listed inline';
 
 export const states = () => `
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap">
+${localStyles}
+<div class="checkbox-example-container">
     <fieldset class="fd-fieldset">
         <legend class="fd-fieldset__legend">Checkboxes Error</legend>
         <div class="fd-form-group">
