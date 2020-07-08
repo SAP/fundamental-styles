@@ -9,7 +9,7 @@ import '../../dist/select.css';
 import * as stories from './select.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Select'
 };
 
 export const Select = () => {

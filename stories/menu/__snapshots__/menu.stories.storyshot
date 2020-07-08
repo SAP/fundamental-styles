@@ -2,286 +2,273 @@
 
 exports[`Storyshots Components/Menu Desktop and Tablet Modes 1`] = `
 <section>
-  
+     
 
-  <div
-    style="width: 50%; display: inline-block"
+  <label
+    class="fd-form-label"
   >
-        
-
-    <label
-      class="fd-form-label"
-    >
-      Combobox Tablet Cozy Mode - default mode
-    </label>
-    <br />
-    <br />
-    
-
-
-    <nav
-      aria-label="fd-menu-nav"
-      class="fd-menu"
-    >
-      
-    
-      <ul
-        class="fd-menu__list"
-        role="menu"
-      >
-        
-        
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-          
-            
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
-          >
-            
-                
-            <span
-              class="fd-menu__title"
-            >
-              Option 1
-            </span>
-            
-            
-          </a>
-          
-        
-        </li>
-        
-        
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-          
-            
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
-          >
-            
-                
-            <span
-              class="fd-menu__title"
-            >
-              Option 2
-            </span>
-            
-            
-          </a>
-          
-        
-        </li>
-        
-        
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-          
-            
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
-          >
-            
-                
-            <span
-              class="fd-menu__title"
-            >
-              Option 3
-            </span>
-            
-            
-          </a>
-          
-        
-        </li>
-        
-        
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-          
-            
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
-          >
-            
-                
-            <span
-              class="fd-menu__title"
-            >
-              Option 4
-            </span>
-            
-            
-          </a>
-          
-        
-        </li>
-        
-    
-      </ul>
-      
-
-    </nav>
-    
-
-  </div>
+    Combobox Tablet Cozy Mode - default mode
+  </label>
+  <br />
+  <br />
   
 
 
-  <div
-    style="display: inline-block"
+  <nav
+    aria-label="fd-menu-nav"
+    class="fd-menu"
   >
     
     
-    <label
-      class="fd-form-label"
-    >
-      Combobox Desktop Compact Mode
-    </label>
-    <br />
-    <br />
-    
-    
-    
-    <nav
-      class="fd-menu fd-menu--compact"
+    <ul
+      class="fd-menu__list"
+      role="menu"
     >
       
         
-      <ul
-        class="fd-menu__list"
-        role="menu"
+      <li
+        class="fd-menu__item"
+        role="presentation"
       >
         
             
-        <li
-          class="fd-menu__item"
-          role="presentation"
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
         >
           
                 
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
+          <span
+            class="fd-menu__title"
           >
-            
-                    
-            <span
-              class="fd-menu__title"
-            >
-              Option 1
-            </span>
-            
-                
-          </a>
+            Option 1
+          </span>
           
             
-        </li>
+        </a>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fd-menu__item"
+        role="presentation"
+      >
         
             
-        <li
-          class="fd-menu__item"
-          role="presentation"
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
         >
           
                 
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
+          <span
+            class="fd-menu__title"
           >
-            
-                    
-            <span
-              class="fd-menu__title"
-            >
-              Option 2
-            </span>
-            
-                
-          </a>
+            Option 2
+          </span>
           
             
-        </li>
+        </a>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fd-menu__item"
+        role="presentation"
+      >
         
             
-        <li
-          class="fd-menu__item"
-          role="presentation"
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
         >
           
                 
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
+          <span
+            class="fd-menu__title"
           >
-            
-                    
-            <span
-              class="fd-menu__title"
-            >
-              Option 3
-            </span>
-            
-                
-          </a>
+            Option 3
+          </span>
           
             
-        </li>
+        </a>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fd-menu__item"
+        role="presentation"
+      >
         
             
-        <li
-          class="fd-menu__item"
-          role="presentation"
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
         >
           
                 
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
+          <span
+            class="fd-menu__title"
           >
-            
-                    
-            <span
-              class="fd-menu__title"
-            >
-              Option 4
-            </span>
-            
-                
-          </a>
+            Option 4
+          </span>
           
             
-        </li>
+        </a>
         
         
-      </ul>
+      </li>
       
     
-    </nav>
+    </ul>
     
 
-  </div>
+  </nav>
+  
+
+
+  <br />
+   
+
+  <label
+    class="fd-form-label"
+  >
+    Combobox Desktop Compact Mode
+  </label>
+  <br />
+  <br />
+  
+
+
+  <nav
+    class="fd-menu fd-menu--compact"
+  >
+    
+    
+    <ul
+      class="fd-menu__list"
+      role="menu"
+    >
+      
+        
+      <li
+        class="fd-menu__item"
+        role="presentation"
+      >
+        
+            
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
+        >
+          
+                
+          <span
+            class="fd-menu__title"
+          >
+            Option 1
+          </span>
+          
+            
+        </a>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fd-menu__item"
+        role="presentation"
+      >
+        
+            
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
+        >
+          
+                
+          <span
+            class="fd-menu__title"
+          >
+            Option 2
+          </span>
+          
+            
+        </a>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fd-menu__item"
+        role="presentation"
+      >
+        
+            
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
+        >
+          
+                
+          <span
+            class="fd-menu__title"
+          >
+            Option 3
+          </span>
+          
+            
+        </a>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fd-menu__item"
+        role="presentation"
+      >
+        
+            
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
+        >
+          
+                
+          <span
+            class="fd-menu__title"
+          >
+            Option 4
+          </span>
+          
+            
+        </a>
+        
+        
+      </li>
+      
+    
+    </ul>
+    
+
+  </nav>
   
 
 </section>

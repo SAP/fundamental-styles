@@ -1,5 +1,3 @@
-@import "./settings";
-@import "./functions";
 @import "./mixins";
 
 /*!
@@ -25,7 +23,7 @@ $block: #{$fd-namespace}-col;
   @at-root {
     [class^="#{$block}"] {
       flex: 1;
-      margin-bottom: $fd-margin-bottom;
+      margin-bottom: 0.75rem;
 
       &:last-child {
         margin-bottom: 0;

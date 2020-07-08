@@ -1,4 +1,3 @@
-@import "./settings";
 @import "./mixins";
 
 /*!
@@ -12,7 +11,11 @@ $block: #{$fd-namespace}-layout-grid;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: var(--fd-width-gutter, $fd-width--gutter);
+  grid-gap: 0.5rem;
+
+  @include fd-screen(m) {
+    grid-gap: 1rem;
+  }
 
   &--no-gap {
     grid-gap: 0;

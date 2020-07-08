@@ -2,7 +2,7 @@ import '../../dist/link.css';
 import * as stories from './link.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Link'
 };
 
 export const Link = () => {

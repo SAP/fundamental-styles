@@ -86,7 +86,7 @@ $block: #{$fd-namespace}-token;
     align-items: center;
     justify-content: center;
 
-    @include fd-icon("decline", "s");
+    @include fd-icon("decline");
 
     @include fd-focus() {
       outline: none;

@@ -4,7 +4,7 @@ import '../../dist/tokenizer.css';
 import * as stories from './token.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Token'
 };
 
 export const Token = () => {

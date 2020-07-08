@@ -3,7 +3,7 @@ import '../../dist/icon.css';
 import * as stories from './avatar.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Avatar'
 };
 
 export const Avatar = () => {

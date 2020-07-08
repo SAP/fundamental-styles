@@ -4,7 +4,7 @@ import './generic-tile.css';
 import * as stories from './generic-tile.stories.mdx';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/GenericTile'
 };
 
 export const GenericTile = () => {

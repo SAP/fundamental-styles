@@ -1,5 +1,3 @@
-@import "./settings";
-@import "./functions";
 @import "./mixins";
 
 /*!
@@ -11,10 +9,8 @@
 $block: #{$fd-namespace}-app;
 
 .#{$block} {
-  $fd-app-navigation-background-color: fd-color("background", 2) !default;
-
-  $fd-app-navigation-height: fd-space(13) !default;
-  $fd-app-sidebar-width: 250px !default;
+  $fd-app-navigation-background-color: var(--sapGroup_ContentBackground) !default;
+  $fd-app-sidebar-width: 15.625rem !default;
 
   position: relative;
   width: 100%;
@@ -26,18 +22,22 @@ $block: #{$fd-namespace}-app;
   }
 
   &__navigation {
-    --fd-background-color: var(--fd-color-background-2);
-
-    @include fd-var-color("background-color", $fd-app-navigation-background-color, --fd-background-color);
-
-    height: $fd-app-navigation-height;
-    max-height: $fd-app-navigation-height;
+    background-color: $fd-app-navigation-background-color;
+    height: 3.25rem;
+    max-height: 3.25rem;
     display: flex;
 
     &--horizontal {
       flex: 1 100%;
-      padding: 0 $fd-padding--ui;
-      padding: 0 var(--fd-padding-ui);
+      padding: 0 0.5rem;
+
+      @include fd-screen(m) {
+        padding: 0 2rem;
+      }
+
+      @include fd-screen(xl) {
+        padding: 0 3rem;
+      }
     }
 
     &--vertical {
@@ -45,7 +45,7 @@ $block: #{$fd-namespace}-app;
       flex: 0;
 
       @include fd-screen(m) {
-        max-width: $fd-app-sidebar-width;
+        max-width: 0.5rem;
         position: relative;
         height: 100%;
         max-height: inherit;

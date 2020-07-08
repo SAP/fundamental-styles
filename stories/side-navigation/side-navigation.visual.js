@@ -4,7 +4,7 @@ import '../../dist/side-nav.css';
 import * as stories from './side-navigation.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/SideNavigation'
 };
 
 export const SideNavigation = () => {

@@ -2,7 +2,7 @@ import '../../dist/pagination.css';
 import * as stories from './pagination.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Pagination'
 };
 
 export const Pagination = () => {

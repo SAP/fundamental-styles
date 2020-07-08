@@ -263,9 +263,6 @@ $block: #{$fd-namespace}-shellbar;
    is a better option than using the buttonBase() mixin from the button.scss file or using !important.
    */
   .#{$fd-namespace}-button.#{$block}__button {
-    @include fd-icon-size("m", "before");
-    @include fd-icon-size("m", "after");
-
     border-color: transparent;
     background: $fd-shellbar-background-color;
     color: $fd-shellbar-color;

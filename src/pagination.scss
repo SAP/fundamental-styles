@@ -78,18 +78,22 @@ $block: #{$fd-namespace}-pagination;
     }
 
     &--previous {
-      @include fd-icon("navigation-left-arrow","s");
+      @include fd-icon("navigation-left-arrow");
+
+      font-size: var(--sapFontSmallSize);
 
       @include fd-rtl() {
-        @include fd-icon("navigation-right-arrow","s");
+        @include fd-icon("navigation-right-arrow");
       }
     }
 
     &--next {
-      @include fd-icon("navigation-right-arrow","s");
+      @include fd-icon("navigation-right-arrow");
+
+      font-size: var(--sapFontSmallSize);
 
       @include fd-rtl() {
-        @include fd-icon("navigation-left-arrow","s");
+        @include fd-icon("navigation-left-arrow");
       }
     }
   }

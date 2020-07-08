@@ -2,7 +2,7 @@ import '../../dist/textarea.css';
 import * as stories from './textarea.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Textarea'
 };
 
 export const Textarea = () => {

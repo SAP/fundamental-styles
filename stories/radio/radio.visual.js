@@ -2,7 +2,7 @@ import '../../dist/radio.css';
 import * as stories from './radio.stories.js';
 
 export default {
-    title: 'Visual'
+    title: 'Visual/Radio'
 };
 
 export const Radio = () => {
