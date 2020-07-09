@@ -28,7 +28,10 @@ $block: #{$fd-namespace}-select;
     padding-left: $fd-select-padding-x;
 
     .#{$block}__button {
+      align-items: center;
       border-radius: 0;
+      display: inline-flex;
+      justify-content: center;
       margin-left: 0.5rem;
       color: var(--sapContent_IconColor);
       border: none;
