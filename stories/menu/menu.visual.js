@@ -4,7 +4,7 @@ import '../../dist/menu.css';
 import * as stories from './menu.stories.js';
 
 export default {
-    title: 'Ignore/Menu'
+    title: 'Visual/Menu'
 };
 
 export const Menu = () => {

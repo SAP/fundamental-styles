@@ -7,7 +7,7 @@ import '../../dist/segmented-button.css';
 import * as stories from './icon.stories.js';
 
 export default {
-    title: 'Ignore/Icon'
+    title: 'Visual/Icon'
 };
 
 export const Icon = () => {
