@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.95"></a>
+# [0.11.0-rc.95](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.94...v0.11.0-rc.95) (2020-07-09)
+
+
+### Features
+
+* Checkbox label ellipsis overflow ([#1220](https://github.com/SAP/fundamental-styles/issues/1220)) ([49fade9](https://github.com/SAP/fundamental-styles/commit/49fade9))
+
+
+
 <a name="0.11.0-rc.94"></a>
 # [0.11.0-rc.94](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.93...v0.11.0-rc.94) (2020-07-09)
 
