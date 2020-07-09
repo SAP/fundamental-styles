@@ -156,7 +156,7 @@ export const accentColors = () => `
 accentColors.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'Use helpers classes to change the background colors, for example, <code>.fd-has-background-color-accent-9</code>.'
+        storyDescription: 'Use <code>fd-avatar--accent-color-*</code> classes to change the background colors. Options include numbers from 1 to 10. For example: <code>fd-avatar--accent-color-10</code>'
     }
 };
 
@@ -198,7 +198,7 @@ export const zoomIcon = () => `
 zoomIcon.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'A zoom icon button can be added with another element using the <code>.fd-avatar__zoom-icon</code> class.'
+        storyDescription: 'A zoom icon button can be added with another element using the <code>.fd-avatar\\_\\_zoom-icon</code> class.'
     }
 };
 

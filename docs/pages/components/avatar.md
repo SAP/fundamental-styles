@@ -136,7 +136,7 @@ An Avatar with TileIcon background can be rendered using the `--tile` modifier.
 <br>
 
 ## Accent Colors
-Use helpers classes to change the background colors, for example, `.fd-avatar--accent-color-9`.
+Use `fd-avatar--accent-color-*` classes to change the background colors. Options include numbers from 1 to 10. For example: `fd-avatar--accent-color-10`</code>
 
 {% capture avatar-accent-colors %}
 <span class="fd-avatar fd-avatar--accent-color-1 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
