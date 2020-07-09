@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.97"></a>
+# [0.11.0-rc.97](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.96...v0.11.0-rc.97) (2020-07-09)
+
+
+### Bug Fixes
+
+* select combobox role ([#1219](https://github.com/SAP/fundamental-styles/issues/1219)) ([52cd733](https://github.com/SAP/fundamental-styles/commit/52cd733))
+
+
+
 <a name="0.11.0-rc.96"></a>
 # [0.11.0-rc.96](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.95...v0.11.0-rc.96) (2020-07-09)
 
