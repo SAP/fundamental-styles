@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.94"></a>
+# [0.11.0-rc.94](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.93...v0.11.0-rc.94) (2020-07-09)
+
+
+### Bug Fixes
+
+* hover for transparent split button fixed ([#1216](https://github.com/SAP/fundamental-styles/issues/1216)) ([e2e57b8](https://github.com/SAP/fundamental-styles/commit/e2e57b8))
+
+
+
 <a name="0.11.0-rc.93"></a>
 # [0.11.0-rc.93](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.92...v0.11.0-rc.93) (2020-07-08)
 
