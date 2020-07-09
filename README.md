@@ -45,18 +45,13 @@ This project does not contain fonts and icons. See our [Getting Started Guide](h
 
 1. **Install NPM Dependencies**: `npm install`
 
-1. **Install Ruby Gems** - These gems are needed to be installed for the documentation site. Navigate to the `docs` folder and `gem install ruby bundler jekyll`
-
-1. **Serve the documentation website locally** - `npm start`
-
-1. **Serve the development playground locally**: `npm run start:playground`
+1. **Serve the development playground and documentation website locally** - `npm start`
 
 ### Project Dependencies
 The project has the following prerequisites:
 
 * Git (for downloading this repo)
 * [Node LTS](https://nodejs.org/)
-* Ruby (for running the documentation website locally)
 
 ## SLA
 Our Service Level Agreement. Fundamental Library Styles is aiming to deliver:

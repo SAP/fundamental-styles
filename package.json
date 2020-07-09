@@ -1,18 +1,14 @@
 {
   "name": "fundamental-styles",
   "version": "0.11.0-rc.98",
-  "description": "Fundamental Styles is a Design System and HTML/CSS Component Library used to build modern Product User Experiences with the SAP look and feel. Learn more about this project at - http://sap.github.io/fundamental-styles/",
+  "description": "Fundamental Library Styles is a Design System and HTML/CSS Component Library used to build modern Product User Experiences with Fiori 3 look and feel. Learn more about this project at - http://sap.github.io/fundamental-styles/",
   "main": "dist/fundamental-styles.css",
   "scripts": {
     "build": "npm run style:remove && npm run build:default",
     "build:default": "npm run style:compile && npm run style:postCSS && npm run style:assets",
     "build:prod": "cross-env NODE_ENV=production npm run build",
-    "deploy": "gh-pages -d docs/_site",
-    "docs:compile": "npm run build && npm run docs:config; cp dist/fundamental-styles.css docs/css",
-    "docs:config": "./scripts/create-library-config.js",
-    "docs:prod": "npm run docs:compile && cd docs && bundle install && bundle exec jekyll build --config _config.yml,_config-library.yml,_config-prod.yml && cd ..",
-    "docs": "npm run docs:compile && cd docs && bundle install && bundle exec jekyll build --config _config.yml,_config-library.yml && cd ..",
-    "lint:style": "stylelint '{src,docs,.storybook}/**/*.(sa|sc|c)ss'",
+    "deploy": "gh-pages -d .storybook/static/",
+    "lint:style": "stylelint '{src,.storybook}/**/*.(sa|sc|c)ss'",
     "lint:js": "eslint . --ext .js",
     "lint": "npm run lint:style && npm run lint:js",
     "lint:fix": "npm run lint:style -- --fix && npm run lint:js -- --fix",
@@ -20,7 +16,7 @@
     "release:create": "create-release",
     "release": "./scripts/publish-release.sh",
     "size": "bundlesize --config config/bundlesize.json",
-    "start": "npm run docs:compile && cd docs && bundle install && bundle exec jekyll serve --incremental --config _config.yml,_config-library.yml",
+    "start": "npm run storybook",
     "std-version": "standard-version -m \"chore(release): version %s build ${TRAVIS_BUILD_NUMBER} [ci skip]\"",
     "style:assets": "./scripts/copy-assets.sh",
     "style:compile": "node-sass -q --output-style expanded --precision 5 src/ --output dist/",
@@ -76,7 +72,6 @@
     "jest": "^25.4.0",
     "jest-image-snapshot": "^4.0.2",
     "jest-puppeteer": "^4.4.0",
-    "load-json-file": "^6.2.0",
     "markdown-to-jsx": "^6.11.4",
     "node-sass": "^4.14.1",
     "normalize.css": "^8.0.1",
@@ -91,7 +86,6 @@
     "react": "^16.13.1",
     "react-is": "^16.13.1",
     "sass-loader": "^8.0.2",
-    "signale": "^1.4.0",
     "standard-version": "4.2.0",
     "start-server-and-test": "^1.11.0",
     "story-description-loader": "^1.0.0",
@@ -99,11 +93,9 @@
     "stylelint": "^13.5.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-scss": "^3.17.2",
-    "tocbot": "^4.11.1",
-    "write-yaml": "^1.0.0"
+    "tocbot": "^4.11.1"
   },
   "directories": {
-    "doc": "docs",
     "storybook-testing": "storybook-testing"
   },
   "pre-commit": {
