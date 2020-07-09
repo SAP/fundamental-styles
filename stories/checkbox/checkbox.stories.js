@@ -25,42 +25,61 @@ Do not use the checkbox control if:
         tags: ['f3', 'a11y', 'theme'] }
 };
 
+const localStyles = `
+<style>
+    .checkbox-example-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .checkbox-example-container > fieldset {
+        max-width: 100%;
+    }
+</style>
+`;
+
 export const primary = () => `
-<div style="display:flex;justify-content:space-between">
+${localStyles}
+<div class="checkbox-example-container">
     <fieldset class="fd-fieldset">
         <legend class="fd-fieldset__legend">Cozy Checkboxes</legend>
         <div class="fd-form-group">
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez611">
                 <label class="fd-checkbox__label" for="Ai4ez611">
-                    Apple
+                    <span class="fd-checkbox__text">Apple</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez612" checked>
                 <label class="fd-checkbox__label" for="Ai4ez612">
-                    Banana
+                    <span class="fd-checkbox__text">Banana</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez622" disabled>
                 <label class="fd-checkbox__label" for="Ai4ez622">
-                    Kiwi
+                    <span class="fd-checkbox__text">Kiwi</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez632"  checked disabled>
                 <label class="fd-checkbox__label" for="Ai4ez632">
-                    Lemon
+                    <span class="fd-checkbox__text">Lemon</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez613">
-                <label class="fd-checkbox__label" for="Ai4ez613">All Fruits (TriState)</label>
+                <label class="fd-checkbox__label" for="Ai4ez613">
+                    <span class="fd-checkbox__text">All Fruits (TriState)</span>
+                </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez643" disabled>
-                <label class="fd-checkbox__label" for="Ai4ez643">All Fruits (TriState)</label>
+                <label class="fd-checkbox__label" for="Ai4ez643">
+                    <span class="fd-checkbox__text">All Fruits (TriState)</span>
+                </label>
             </div>
         </div>
     </fieldset>
@@ -70,34 +89,38 @@ export const primary = () => `
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez611c">
                 <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez611c">
-                    Apple
+                    <span class="fd-checkbox__text">Apple</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez612c" checked>
                 <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez612c">
-                    Banana
+                    <span class="fd-checkbox__text">Banana</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez622c" disabled>
                 <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez622c">
-                    Kiwi
+                    <span class="fd-checkbox__text">Kiwi</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez632c"  checked disabled>
                 <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez632c">
-                    Lemon
+                    <span class="fd-checkbox__text">Lemon</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez613c">
-                <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez613c">All Fruits (TriState)</label>
+                <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez613c">
+                    <span class="fd-checkbox__text">All Fruits (TriState)</span>
+                </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez643c" disabled>
-                <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez643c">All Fruits (TriState)</label>
+                <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez643c">
+                    <span class="fd-checkbox__text">All Fruits (TriState)</span>
+                </label>
             </div>
         </div>
     </fieldset>
@@ -119,19 +142,19 @@ export const inline = () => `
         <div class="fd-form-group__item fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez617">
             <label class="fd-checkbox__label" for="Ai4ez617">
-                Potatos
+                <span class="fd-checkbox__text">Potatoes</span>
             </label>
         </div>
         <div class="fd-form-group__item fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez618" checked>
             <label class="fd-checkbox__label" for="Ai4ez618">
-                Tomatos
+                <span class="fd-checkbox__text">Tomatoes</span>
             </label>
         </div>
         <div class="fd-form-group__item fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez619" disabled checked>
             <label class="fd-checkbox__label" for="Ai4ez619">
-                Carrots
+                <span class="fd-checkbox__text">Carrots</span>
             </label>
         </div>
     </div>
@@ -140,26 +163,27 @@ export const inline = () => `
 inline.storyName = 'Checkboxes listed inline';
 
 export const states = () => `
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap">
+${localStyles}
+<div class="checkbox-example-container">
     <fieldset class="fd-fieldset">
         <legend class="fd-fieldset__legend">Checkboxes Error</legend>
         <div class="fd-form-group">
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-error" id="Ai4ez6119">
                 <label class="fd-checkbox__label" for="Ai4ez6119">
-                    Text Option
+                    <span class="fd-checkbox__text">Text Option</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-error" id="Ai4ez6129" checked>
                 <label class="fd-checkbox__label" for="Ai4ez6129">
-                    Selected State
+                    <span class="fd-checkbox__text">Selected State</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-error" id="Ai4ez613i1">
                 <label class="fd-checkbox__label" for="Ai4ez613i1">
-                    TriState Text
+                    <span class="fd-checkbox__text">TriState Text</span>
                 </label>
             </div>
         </div>
@@ -171,19 +195,19 @@ export const states = () => `
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-success" id="Ai4ez61192">
                 <label class="fd-checkbox__label" for="Ai4ez61192">
-                    Text Option
+                    <span class="fd-checkbox__text">Text Option</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-success" id="Ai4ez61292" checked>
                 <label class="fd-checkbox__label" for="Ai4ez61292">
-                    Selected State
+                    <span class="fd-checkbox__text">Selected State</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-success" id="Ai4ez613i2">
                 <label class="fd-checkbox__label" for="Ai4ez613i2">
-                    TriState Text
+                    <span class="fd-checkbox__text">TriState Text</span>
                 </label>
             </div>
         </div>
@@ -195,19 +219,19 @@ export const states = () => `
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez61193">
                 <label class="fd-checkbox__label" for="Ai4ez61193">
-                    Text Option
+                    <span class="fd-checkbox__text">Text Option</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez61293" checked>
                 <label class="fd-checkbox__label" for="Ai4ez61293">
-                    Selected State
+                    <span class="fd-checkbox__text">Selected State</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez613i3">
                 <label class="fd-checkbox__label" for="Ai4ez613i3">
-                    TriState Text
+                    <span class="fd-checkbox__text">TriState Text</span>
                 </label>
             </div>
         </div>
@@ -219,19 +243,19 @@ export const states = () => `
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez61194">
                 <label class="fd-checkbox__label" for="Ai4ez61194">
-                    Text Option
+                    <span class="fd-checkbox__text">Text Option</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez61294" checked>
                 <label class="fd-checkbox__label" for="Ai4ez61294">
-                    Selected State
+                    <span class="fd-checkbox__text">Selected State</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez613i4">
                 <label class="fd-checkbox__label" for="Ai4ez613i4">
-                    TriState Text
+                    <span class="fd-checkbox__text">TriState Text</span>
                 </label>
             </div>
         </div>
@@ -243,19 +267,19 @@ export const states = () => `
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez61196" disabled>
                 <label class="fd-checkbox__label" for="Ai4ez61196">
-                    Text Option
+                    <span class="fd-checkbox__text">Text Option</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez61296" checked disabled>
                 <label class="fd-checkbox__label" for="Ai4ez61296">
-                    Selected State
+                    <span class="fd-checkbox__text">Selected State</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez613i6" disabled>
                 <label class="fd-checkbox__label" for="Ai4ez613i6">
-                    TriState Text
+                    <span class="fd-checkbox__text">TriState Text</span>
                 </label>
             </div>
         </div>
@@ -277,19 +301,19 @@ export const rtl = () => `
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez611tt">
             <label class="fd-checkbox__label" for="Ai4ez611tt">
-                Text Option
+                <span class="fd-checkbox__text">Text Option</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez612tt" checked>
             <label class="fd-checkbox__label" for="Ai4ez612tt">
-                Selected State
+                <span class="fd-checkbox__text">Selected State</span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez613i7">
             <label class="fd-checkbox__label" for="Ai4ez613i7">
-                TriState Text
+                <span class="fd-checkbox__text">TriState Text</span>
             </label>
         </div>
     </div>

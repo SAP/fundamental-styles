@@ -69,7 +69,7 @@ If the entries are not validated by the application, users can also enter custom
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez611">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4ez611">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Apple
                     </span>
                 </label>
@@ -77,7 +77,7 @@ If the entries are not validated by the application, users can also enter custom
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez612">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4ez612">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Orange
                     </span>
                 </label>
@@ -85,7 +85,7 @@ If the entries are not validated by the application, users can also enter custom
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez614">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4ez614">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Banana
                     </span>
                 </label>
@@ -93,7 +93,7 @@ If the entries are not validated by the application, users can also enter custom
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez615">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4ez615">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Kiwi
                     </span>
                 </label>
@@ -101,7 +101,7 @@ If the entries are not validated by the application, users can also enter custom
              <li class="fd-list__item" role="option">
                 <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai4ez617">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4ez617">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Lemon
                     </span>
                 </label>
@@ -154,7 +154,7 @@ If the entries are not validated by the application, users can also enter custom
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai1ez611">
                 <label class="fd-checkbox__label fd-list__label" for="Ai1ez611">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Apple
                     </span>
                 </label>
@@ -162,7 +162,7 @@ If the entries are not validated by the application, users can also enter custom
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai2ez612">
                 <label class="fd-checkbox__label fd-list__label" for="Ai2ez612">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Orange
                     </span>
                 </label>
@@ -170,7 +170,7 @@ If the entries are not validated by the application, users can also enter custom
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai3ez614">
                 <label class="fd-checkbox__label fd-list__label" for="Ai3ez614">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Banana
                     </span>
                 </label>
@@ -178,7 +178,7 @@ If the entries are not validated by the application, users can also enter custom
              <li class="fd-list__item" role="option">
                 <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai8ez615">
                 <label class="fd-checkbox__label fd-list__label" for="Ai8ez615">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Kiwi
                     </span>
                 </label>
@@ -186,7 +186,7 @@ If the entries are not validated by the application, users can also enter custom
              <li class="fd-list__item" role="option">
                 <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-list__input" id="AiHez617">
                 <label class="fd-checkbox__label fd-list__label" for="AiHez617">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Lemon
                     </span>
                 </label>
@@ -243,7 +243,7 @@ In cases where the list items need to be categorized into groups, it is possible
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai1ez651">
                 <label class="fd-checkbox__label fd-list__label" for="Ai1ez651">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Apple
                     </span>
                 </label>
@@ -251,7 +251,7 @@ In cases where the list items need to be categorized into groups, it is possible
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai2ez652">
                 <label class="fd-checkbox__label fd-list__label" for="Ai2ez652">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Orange
                     </span>
                 </label>
@@ -259,7 +259,7 @@ In cases where the list items need to be categorized into groups, it is possible
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai3ez654">
                 <label class="fd-checkbox__label fd-list__label" for="Ai3ez654">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Kiwi
                     </span>
                 </label>
@@ -267,7 +267,7 @@ In cases where the list items need to be categorized into groups, it is possible
              <li class="fd-list__item" role="option">
                 <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai8ez655">
                 <label class="fd-checkbox__label fd-list__label" for="Ai8ez655">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Banana
                     </span>
                 </label>
@@ -275,7 +275,7 @@ In cases where the list items need to be categorized into groups, it is possible
              <li class="fd-list__item" role="option">
                 <input type="checkbox" class="fd-checkbox fd-list__input" id="AiHez657">
                 <label class="fd-checkbox__label fd-list__label" for="AiHez657">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Lemon
                     </span>
                 </label>
@@ -286,7 +286,7 @@ In cases where the list items need to be categorized into groups, it is possible
             <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai8ez689">
                 <label class="fd-checkbox__label fd-list__label" for="Ai8ez689">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Onion
                     </span>
                 </label>
@@ -294,7 +294,7 @@ In cases where the list items need to be categorized into groups, it is possible
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai8ez685">
                 <label class="fd-checkbox__label fd-list__label" for="Ai8ez685">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Tomato
                     </span>
                 </label>
@@ -353,7 +353,7 @@ In the example you can see how the `Multi Input` component looks without the `fd
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai124z651">
                 <label class="fd-checkbox__label fd-list__label" for="Ai124z651">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Apple
                     </span>
                 </label>
@@ -361,7 +361,7 @@ In the example you can see how the `Multi Input` component looks without the `fd
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai134z651">
                 <label class="fd-checkbox__label fd-list__label" for="Ai134z651">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Orange
                     </span>
                 </label>
@@ -369,7 +369,7 @@ In the example you can see how the `Multi Input` component looks without the `fd
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai1366z651">
                 <label class="fd-checkbox__label fd-list__label" for="Ai1366z651">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Kiwi
                     </span>
                 </label>
@@ -377,7 +377,7 @@ In the example you can see how the `Multi Input` component looks without the `fd
              <li class="fd-list__item" role="option">
                 <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai136gf51">
                 <label class="fd-checkbox__label fd-list__label" for="Ai136gf51">
-                    <span class="fd-list__title">
+                    <span class=" fd-checkbox__text fd-list__title">
                         Banana
                     </span>
                 </label>
@@ -385,7 +385,7 @@ In the example you can see how the `Multi Input` component looks without the `fd
              <li class="fd-list__item" role="option">
                 <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai136ggfd">
                 <label class="fd-checkbox__label fd-list__label" for="Ai136ggfd">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Lemon
                     </span>
                 </label>
@@ -589,7 +589,7 @@ To add text in the `body` of the component, simply include your text in the `fd-
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="AGi4ez611">
                 <label class="fd-checkbox__label fd-list__label" for="AGi4ez611">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         Apple
                     </span>
                 </label>
@@ -597,25 +597,25 @@ To add text in the `body` of the component, simply include your text in the `fd-
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4Fez612">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4Fez612">
-                    <span class="fd-list__title">Orange</span>
+                    <span class="fd-checkbox__text fd-list__title">Orange</span>
                 </label>
             </li>
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4eGz614">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4eGz614">
-                    <span class="fd-list__title">Kiwi</span>
+                    <span class="fd-checkbox__text fd-list__title">Kiwi</span>
                 </label>
             </li>
              <li class="fd-list__item" role="option">
                 <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai4egh614">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4egh614">
-                    <span class="fd-list__title">Banana</span>
+                    <span class="fd-checkbox__text fd-list__title">Banana</span>
                 </label>
             </li>
              <li class="fd-list__item" role="option">
                 <input type="checkbox" class="fd-checkbox fd-list__input" id="jdFffsd3">
                 <label class="fd-checkbox__label fd-list__label" for="jdFffsd3">
-                    <span class="fd-list__title">Lemon</span>
+                    <span class="fd-checkbox__text fd-list__title">Lemon</span>
                 </label>
             </li>
         </ul>
@@ -692,7 +692,7 @@ So instead of using popover and dropdown, it should be wrapped in `dialog` and `
                 <li class="fd-list__item is-selected" role="option">
                      <input type="checkbox" checked class="fd-checkbox  fd-list__input" id="GGi4ez641">
                      <label class="fd-checkbox__label fd-list__label" for="GGi4ez641">
-                         <span class="fd-list__title">
+                         <span class="fd-checkbox__text fd-list__title">
                              Apple
                          </span>
                      </label>
@@ -700,25 +700,25 @@ So instead of using popover and dropdown, it should be wrapped in `dialog` and `
                   <li class="fd-list__item is-selected" role="option">
                      <input type="checkbox" checked class="fd-checkbox  fd-list__input" id="Ai4FGFG612">
                      <label class="fd-checkbox__label fd-list__label" for="Ai4FGFG612">
-                         <span class="fd-list__title">Orange</span>
+                         <span class="fd-checkbox__text fd-list__title">Orange</span>
                      </label>
                  </li>
                   <li class="fd-list__item is-selected" role="option">
                      <input type="checkbox" checked class="fd-checkbox  fd-list__input" id="Ai4e88614">
                      <label class="fd-checkbox__label fd-list__label" for="Ai4e88614">
-                         <span class="fd-list__title">Kiwi</span>
+                         <span class="fd-checkbox__text fd-list__title">Kiwi</span>
                      </label>
                  </li>
                   <li class="fd-list__item" role="option">
                      <input type="checkbox" class="fd-checkbox  fd-list__input" id="Ai4egh6024">
                      <label class="fd-checkbox__label fd-list__label" for="Ai4egh6024">
-                         <span class="fd-list__title">Banana</span>
+                         <span class="fd-checkbox__text fd-list__title">Banana</span>
                      </label>
                  </li>
                   <li class="fd-list__item" role="option">
                      <input type="checkbox" class="fd-checkbox  fd-list__input" id="7gJHdsad">
                      <label class="fd-checkbox__label fd-list__label" for="7gJHdsad">
-                         <span class="fd-list__title">Lemon</span>
+                         <span class="fd-checkbox__text fd-list__title">Lemon</span>
                      </label>
                  </li>
              </ul>
@@ -778,7 +778,7 @@ that when clicked, will clear the text in the input and show all options in the 
              <li class="fd-list__item is-selected" role="option">
                 <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez611A">
                 <label class="fd-checkbox__label fd-list__label" for="Ai4ez611A">
-                    <span class="fd-list__title">
+                    <span class="fd-checkbox__text fd-list__title">
                         <b>A</b>pple
                     </span>
                 </label>
