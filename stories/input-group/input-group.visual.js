@@ -7,7 +7,7 @@ import * as stories from './input-group.stories.js';
 
 // TO DO: change title to "Visual" once addon-storyshots is updated https://github.com/storybookjs/storybook/pull/11267
 export default {
-    title: 'Ignore/InputGroup'
+    title: 'Visual/InputGroup'
 };
 
 export const InputGroup = () => {
