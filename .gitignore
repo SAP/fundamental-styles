@@ -17,14 +17,6 @@ build
 *.log
 *.tgz
 
-# Generated CSS files
-/docs/_site
-/docs/.*
-docs/css/fundamental-styles.css
-docs/css/*.woff
-test/visual-regression-tests/config/backstopConfigCI.json
-docs/_config-library.yml
-
 # Storybook
 __diff_output__
 storybook-static
