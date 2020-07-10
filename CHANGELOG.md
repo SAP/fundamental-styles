@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.101"></a>
+# [0.11.0-rc.101](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.100...v0.11.0-rc.101) (2020-07-10)
+
+
+### Features
+
+* html syntax changed to meet a11y criteria ([#1226](https://github.com/SAP/fundamental-styles/issues/1226)) ([e3d7117](https://github.com/SAP/fundamental-styles/commit/e3d7117))
+
+
+
 <a name="0.11.0-rc.100"></a>
 # [0.11.0-rc.100](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.99...v0.11.0-rc.100) (2020-07-09)
 
