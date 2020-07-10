@@ -255,9 +255,12 @@ blockquote {
   font-size: 1rem;
 
   &.docs-deprecated {
-    background: var(--fd-color-background-negative);
-    color: var(--fd-color-negative);
-    border-color: var(--fd-color-negative);
+    background: #ffebeb;
+    background: var(--sapErrorBackground, #ffebeb);
+    color: #bb0000;
+    color: var(--sapNegativeColor, #bb0000);
+    border-color: #bb0000;
+    border-color: var(--sapNegativeColor, #bb0000);
   }
 }
 
