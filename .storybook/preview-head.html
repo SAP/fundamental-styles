@@ -304,6 +304,19 @@ function addClass(elementId, className) {
     }
 }
 
+function onPopoverClick(id) {
+    let elementRef = document.getElementById(id);
+    let toggl = elementRef.getAttribute('aria-hidden');
+    // I didn't use ?: because of IE 11 support
+    if(toggl == 'true') {
+        toggl='false';
+    } else {
+        toggl='true';
+    }
+
+    setAriaHidden(id, toggl);
+}
+
 </script>
 
 <style type="text/css">
