@@ -21,7 +21,6 @@ Multiple instances can be used in the <code class="docs-code">date-picker</code>
     }
 };
 
-
 export const defaultCozyMode = () => `
 <div style="display: flex; justify-content: space-around; margin-bottom: 1rem; flex-wrap: wrap;">
     <div class='fd-time'>
@@ -156,17 +155,17 @@ export const defaultCozyMode = () => `
             <button class='fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow' aria-label='Change Meridian'></button>
             <div class='fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian'>
                 <ul class='fd-time__list'>
-                    <span class='fd-time__item'>
+                    <li class='fd-time__item'>
                         <span class='fd-time__unit'>
                             AM
                         </span>
                         <div class='fd-time__current-indicator'></div>
-                    </span>
-                    <span class='fd-time__item'>
+                    </li>
+                    <li class='fd-time__item'>
                         <span class='fd-time__unit'>
                             PM
                         </span>
-                    </span>
+                    </li>
                 </ul>
             </div>
             <button class='fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow' aria-label='Change Meridian'></button>
@@ -178,7 +177,8 @@ export const defaultCozyMode = () => `
 defaultCozyMode.parameters = {
     docs: {
         iframeHeight: 550,
-        storyDescription: 'Default cozy mode implemented mostly to be used mobile devices. There should be at most 1 active wrapper, marked with <code class="docs-code">fd-time__wrapper--active</code> modifier. In those examples it\'s hour or meridian. The rest of items should be marked as collapsed <code class="docs-code">fd-time__item--collapsed</code>. Also meridian (AM/PM) wrapper has to contain <code class="docs-code">fd-time__wrapper--meridian</code> modifier.'
+        storyDescription:
+            'Default cozy mode implemented mostly to be used mobile devices. There should be at most 1 active wrapper, marked with <code class="docs-code">fd-time__wrapper--active</code> modifier. In those examples it\'s hour or meridian. The rest of items should be marked as collapsed <code class="docs-code">fd-time__item--collapsed</code>. Also meridian (AM/PM) wrapper has to contain <code class="docs-code">fd-time__wrapper--meridian</code> modifier.'
     }
 };
 
@@ -317,17 +317,17 @@ export const tabletMode = () =>
             <button class='fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow' aria-label='Change Meridian'></button>
             <div class='fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian'>
                     <ul class='fd-time__list'>
-                        <span class='fd-time__item'>
+                        <li class='fd-time__item'>
                             <span class='fd-time__unit'>
                                 AM
                             </span>
                             <div class='fd-time__current-indicator'></div>
-                        </span>
-                        <span class='fd-time__item'>
+                        </li>
+                        <li class='fd-time__item'>
                             <span class='fd-time__unit'>
                                 PM
                             </span>
-                        </span>
+                        </li>
                     </ul>
                 </div>
                 <button class='fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow' aria-label='Change Meridian'></button>
@@ -339,7 +339,8 @@ export const tabletMode = () =>
 tabletMode.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'Tablet Mode can be added by using <code class="docs-code">fd-time--tablet</code> modifier. IT provides lower padding on sides.'
+        storyDescription:
+            'Tablet Mode can be added by using <code class="docs-code">fd-time--tablet</code> modifier. IT provides lower padding on sides.'
     }
 };
 
@@ -478,17 +479,17 @@ export const compactMode = () =>
             <button class='fd-button fd-button--compact fd-button--transparent sap-icon--navigation-up-arrow' aria-label='Change Meridian'></button>
             <div class='fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian'>
                     <ul class='fd-time__list'>
-                        <span class='fd-time__item'>
+                        <li class='fd-time__item'>
                             <span class='fd-time__unit'>
                                 AM
                             </span>
                             <div class='fd-time__current-indicator'></div>
-                        </span>
-                        <span class='fd-time__item'>
+                        </li>
+                        <li class='fd-time__item'>
                             <span class='fd-time__unit'>
                                 PM
                             </span>
-                        </span>
+                        </li>
                     </ul>
                 </div>
                 <button class='fd-button fd-button--compact fd-button--transparent sap-icon--navigation-down-arrow' aria-label='Change Meridian'></button>
@@ -501,7 +502,8 @@ export const compactMode = () =>
 compactMode.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'Compact Mode can be added, by using <code class="docs-code">fd-time--compact</code> modifier. It\'s mostly implemented, to be used on desktop devices.'
+        storyDescription:
+            'Compact Mode can be added, by using <code class="docs-code">fd-time--compact</code> modifier. It\'s mostly implemented, to be used on desktop devices.'
     }
 };
 
@@ -639,17 +641,17 @@ export const scrollableMode = () => `
             <button class='fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow' aria-label='Change Meridian'></button>
             <div class='fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian'>
                     <ul class='fd-time__list'>
-                        <span class='fd-time__item'>
+                        <li class='fd-time__item'>
                             <span class='fd-time__unit'>
                                 AM
                             </span>
                             <div class='fd-time__current-indicator'></div>
-                        </span>
-                        <span class='fd-time__item'>
+                        </li>
+                        <li class='fd-time__item'>
                             <span class='fd-time__unit'>
                                 PM
                             </span>
-                        </span>
+                        </li>
                     </ul>
                 </div>
                 <button class='fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow' aria-label='Change Meridian'></button>
@@ -661,6 +663,7 @@ export const scrollableMode = () => `
 scrollableMode.parameters = {
     docs: {
         iframeHeight: 550,
-        storyDescription: 'Scrollable Mode can be added by using <code class="docs-code">fd-time--scrollable</code> modifier. It provides possibility to scroll up and down on active columns. So the unit can be chosen by mouse scroll or mobile tap and release. Current indicator element is vertically centered, but functionality to fit it inside indicator frames should be implemented no application level.'
+        storyDescription:
+            'Scrollable Mode can be added by using <code class="docs-code">fd-time--scrollable</code> modifier. It provides possibility to scroll up and down on active columns. So the unit can be chosen by mouse scroll or mobile tap and release. Current indicator element is vertically centered, but functionality to fit it inside indicator frames should be implemented no application level.'
     }
 };
