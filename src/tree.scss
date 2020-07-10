@@ -160,7 +160,7 @@ $block: #{$fd-namespace}-tree;
 
     position: absolute;
     top: calc(50% - #{$fd-tree-control-width} / 2);
-    margin: -8px fd-space(3) 0 -36px;
+    margin: -8px 12px 0 -36px;
     width: $fd-tree-control-button-width-height;
     height: $fd-tree-control-button-width-height;
     transform: rotate(180deg);
