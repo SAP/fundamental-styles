@@ -5,7 +5,7 @@ import '../../dist/form-label.css';
 import '../../dist/input.css';
 
 export default {
-    title: 'Components/FileUploader',
+    title: 'Components/File Uploader',
     parameters: {
         description: `
 The File Uploader component allows the user to select the files from the system to upload.

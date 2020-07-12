@@ -5,7 +5,7 @@ import '../../dist/checkbox.css';
 import '../../dist/radio.css';
 
 export default {
-    title: 'Components/Forms/FieldSet',
+    title: 'Components/Forms/Field Set',
     parameters: {
         description: `
         A fieldset is used to give semantic meaning to a group of elements inside a form (e.g. Billing or Shipping Address).

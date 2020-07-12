@@ -1,0 +1,658 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Toolbar Alignment 1`] = `
+<section>
+  
+
+  <h3>
+    Left and Right Aligned Content
+  </h3>
+  
+
+  <div
+    class="fd-toolbar"
+  >
+    
+    
+    <button
+      class="fd-button fd-button--compact fd-button--positive"
+    >
+      Accept
+    </button>
+    
+    
+    <span
+      class="fd-toolbar__spacer"
+    />
+    
+    
+    <button
+      class="fd-button fd-button--compact fd-button--reject"
+    >
+      Reject
+    </button>
+    
+
+  </div>
+  
+
+  <h3>
+    Left Aligned Content
+  </h3>
+  
+
+  <div
+    class="fd-toolbar"
+  >
+    
+    
+    <button
+      class="fd-button fd-button--compact fd-button--positive"
+    >
+      Accept
+    </button>
+    
+    
+    <button
+      class="fd-button fd-button--compact fd-button--reject"
+    >
+      Reject
+    </button>
+    
+
+  </div>
+  
+
+  <h3>
+    Centered Content
+  </h3>
+  
+
+  <div
+    class="fd-toolbar"
+  >
+    
+    
+    <span
+      class="fd-toolbar__spacer"
+    />
+    
+    
+    <button
+      class="fd-button fd-button--compact"
+    >
+      Centered Content
+    </button>
+    
+    
+    <span
+      class="fd-toolbar__spacer"
+    />
+    
+
+  </div>
+  
+
+  <h3>
+    Right Aligned Content
+  </h3>
+  
+
+  <div
+    class="fd-toolbar"
+  >
+    
+    
+    <span
+      class="fd-toolbar__spacer"
+    />
+    
+    
+    <button
+      class="fd-button fd-button--compact"
+    >
+      Right Content
+    </button>
+    
+
+  </div>
+  
+
+  <h3>
+    Left, Centered, Right Aliged Content
+  </h3>
+  
+
+  <div
+    class="fd-toolbar"
+  >
+    
+    
+    <button
+      class="fd-button fd-button--compact"
+    >
+      Left Content
+    </button>
+    
+    
+    <span
+      class="fd-toolbar__spacer"
+    />
+    
+    
+    <button
+      class="fd-button fd-button--compact"
+    >
+      Centered Content
+    </button>
+    
+    
+    <span
+      class="fd-toolbar__spacer"
+    />
+    
+    
+    <button
+      class="fd-button fd-button--compact"
+    >
+      Right Content
+    </button>
+    
+
+  </div>
+  
+
+  <h3>
+    Spacers share the free horizontal space equally, thus content centering is not as precise as in Bar
+  </h3>
+  
+
+  <div
+    class="fd-toolbar"
+  >
+    
+    
+    <button
+      class="fd-button fd-button--compact"
+    >
+      Left Content
+    </button>
+    
+    
+    <span
+      class="fd-toolbar__spacer"
+    />
+    
+    
+    <button
+      class="fd-button fd-button--compact"
+    >
+      Inside Content
+    </button>
+    
+    
+    <span
+      class="fd-toolbar__spacer"
+    />
+    
+    
+    <button
+      class="fd-button fd-button--compact"
+    >
+      Inside Content
+    </button>
+    
+    
+    <span
+      class="fd-toolbar__spacer"
+    />
+    
+    
+    <button
+      class="fd-button fd-button--compact"
+    >
+      Right Content
+    </button>
+    
+
+  </div>
+  
+
+  <h3>
+    Spacers with fixed width
+  </h3>
+  
+
+  <div
+    class="fd-toolbar"
+  >
+    
+    
+    <button
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      Accept
+    </button>
+    
+    
+    <button
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      Reject
+    </button>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--fixed"
+      style="width:50px;"
+    />
+    
+    
+    <button
+      class="fd-button fd-button--compact"
+    >
+      Edit
+    </button>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--fixed"
+      style="width:150px;"
+    />
+    
+    
+    <button
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      Delete
+    </button>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Toolbar Basic 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Toolbar Overflow 1`] = `
+<section>
+  
+
+  <h3>
+    Cozy example
+  </h3>
+  
+
+  <div
+    class="fd-toolbar fd-toolbar--cozy"
+  >
+    
+    
+    <span>
+      Products (34)
+    </span>
+    
+    
+    <button
+      class="fd-button fd-button--transparent"
+    >
+      Create
+    </button>
+    
+    
+    <span
+      class="fd-toolbar__spacer "
+    >
+       
+    </span>
+    
+    
+    <button
+      class="fd-button fd-button--transparent"
+    >
+      Save
+    </button>
+    
+    
+    <button
+      class="fd-button fd-button--transparent"
+    >
+      Copy
+    </button>
+    
+    
+    <span
+      class="fd-toolbar__separator"
+    />
+    
+    
+    <div
+      class="fd-popover fd-toolbar__overflow"
+    >
+      
+    
+      <div
+        class="fd-popover__control"
+      >
+        
+        
+        <button
+          aria-controls="wgxzK85912"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-label="More"
+          class="fd-button fd-button--transparent sap-icon--overflow"
+        />
+        
+    
+      </div>
+      
+    
+      <div
+        aria-hidden="true"
+        class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+        id="wgxzK85912"
+      >
+        
+        
+        <div
+          class="fd-toolbar__overflow__body"
+        >
+          
+            
+          <button
+            class="fd-button fd-button--transparent"
+          >
+            Edit
+          </button>
+          
+            
+          <span
+            class="fd-toolbar__separator"
+          />
+          
+            
+          <button
+            class="fd-button fd-button--transparent"
+          >
+            Delete
+          </button>
+          
+            
+          <span
+            class="fd-toolbar__separator"
+          />
+          
+            
+          <button
+            class="fd-button fd-button--transparent"
+          >
+            Assign
+          </button>
+          
+            
+          <button
+            class="fd-button fd-button--transparent"
+          >
+            Exit
+          </button>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+  <h3>
+    Compact example
+  </h3>
+  
+
+  <div
+    class="fd-toolbar"
+  >
+    
+    
+    <span>
+      Products (34)
+    </span>
+    
+    
+    <button
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      Create
+    </button>
+    
+    
+    <span
+      class="fd-toolbar__spacer "
+    >
+       
+    </span>
+    
+    
+    <button
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      Save
+    </button>
+    
+    
+    <button
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      Copy
+    </button>
+    
+    
+    <span
+      class="fd-toolbar__separator"
+    />
+    
+    
+    <div
+      class="fd-popover fd-toolbar__overflow"
+    >
+      
+    
+      <div
+        class="fd-popover__control"
+      >
+        
+        
+        <button
+          aria-controls="wgxzK859122"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-label="More"
+          class="fd-button fd-button--compact fd-button--transparent sap-icon--overflow"
+        />
+        
+    
+      </div>
+      
+    
+      <div
+        aria-hidden="true"
+        class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+        id="wgxzK859122"
+      >
+        
+        
+        <div
+          class="fd-toolbar__overflow__body"
+        >
+          
+            
+          <label
+            class="fd-label fd-toolbar__overflow__label"
+          >
+            Label
+          </label>
+          
+            
+          <button
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            Edit
+          </button>
+          
+            
+          <span
+            class="fd-toolbar__separator"
+          />
+          
+            
+          <label
+            class="fd-form-label fd-toolbar__overflow__form-label"
+          >
+            Form label
+          </label>
+          
+            
+          <button
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            Delete
+          </button>
+          
+            
+          <span
+            class="fd-toolbar__separator"
+          />
+          
+            
+          <button
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            Assign
+          </button>
+          
+            
+          <button
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            Exit
+          </button>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Toolbar Separator 1`] = `
+<section>
+  
+
+  <h3 />
+  
+
+  <div
+    class="fd-toolbar fd-toolbar--info fd-toolbar--cozy"
+  >
+    
+    
+    <button
+      class="fd-button fd-button--positive"
+    >
+      Accept
+    </button>
+    
+    
+    <span
+      class="fd-toolbar__separator"
+    />
+    
+    
+    <button
+      class="fd-button fd-button--reject"
+    >
+      Reject
+    </button>
+    
+    
+    <span
+      class="fd-toolbar__separator"
+    />
+    
+
+  </div>
+  
+
+  <h3 />
+  
+
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--cozy"
+  >
+    
+    
+    <span
+      class="fd-toolbar__spacer"
+    />
+    
+    
+    <span
+      class="fd-toolbar__separator"
+    />
+    
+    
+    <button
+      class="fd-button fd-button--transparent sap-icon--survey"
+    />
+    
+    
+    <span
+      class="fd-toolbar__separator"
+    />
+    
+    
+    <button
+      class="fd-button fd-button--transparent sap-icon--pool"
+    />
+    
+    
+    <button
+      class="fd-button fd-button--transparent sap-icon--pie-chart"
+    />
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Toolbar Sizes 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Toolbar Types 1`] = `
+
+
+`;

@@ -1,7 +1,7 @@
 import '../../dist/layout-panel.css';
 
 export default {
-    title: 'Layouts/LayoutPanel',
+    title: 'Layouts/Layout Panel',
     parameters: {
         description: `
   Layout Panels are used to encapsulate part of the content, form elements, lists, collections, etc., on a page.

@@ -1,15 +1,11 @@
-import '../../dist/fieldset.css';
-import '../../dist/form-item.css';
-import '../../dist/form-group.css';
-import '../../dist/checkbox.css';
-import '../../dist/radio.css';
-import * as stories from './form-message.stories.js';
+import '../../dist/toolbar.css';
+import * as stories from './toolbar.stories.js';
 
 export default {
-    title: 'Visual/Form Message'
+    title: 'Visual/Toolbar'
 };
 
-export const FormMessage = () => {
+export const Toolbar = () => {
     const storyNames = Object.keys(stories).filter(story => story !== 'default');
     const div = document.createElement('div');
     div.innerHTML = storyNames.map(function(item) {

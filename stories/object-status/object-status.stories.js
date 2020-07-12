@@ -2,7 +2,7 @@ import '../../dist/object-status.css';
 import './custom.scss';
 
 export default {
-    title: 'Components/ObjectStatus',
+    title: 'Components/Object Status',
     parameters: {
         description: `Object Status is a short text that represents the semantic status of an object. It has a semantic 
 color and an optional icon. Typically, the object status is used in the dynamic page header and as a status 

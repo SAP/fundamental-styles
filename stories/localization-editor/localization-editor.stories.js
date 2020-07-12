@@ -7,7 +7,7 @@ import '../../dist/textarea.css';
 import '../../dist/localization-editor.css';
 
 export default {
-    title: 'Components/LocalizationEditor',
+    title: 'Components/Localization Editor',
     tags: ['non-f3'],
     parameters: {
         description: ''

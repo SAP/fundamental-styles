@@ -5,7 +5,7 @@ import '../../dist/input.css';
 import '../../dist/popover.css';
 
 export default {
-    title: 'Components/Forms/FormMessage',
+    title: 'Components/Forms/Form Message',
     parameters: {
         description: `
 Input States

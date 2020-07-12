@@ -3,7 +3,7 @@ import '../../dist/form-label.css';
 import '../../dist/form-select.css';
 
 export default {
-    title: 'Components/Forms/FormSelect',
+    title: 'Components/Forms/Form Select',
     parameters: {
         description: `
 > **DEPRECATED**. Form Select does not exist as a Fiori 3 component so it has been deprecated.  
