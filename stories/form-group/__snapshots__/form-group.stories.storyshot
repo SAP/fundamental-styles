@@ -1,5 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Components/Forms/Form Group Compact 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Forms/Form Group Default 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Forms/Form Group Required 1`] = `
+
+    
+`;
+
 exports[`Storyshots Components/Forms/FormGroup Compact 1`] = `
 
     

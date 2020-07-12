@@ -1,5 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Components/Forms/Form Label Default 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Forms/Form Label Disabled 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Forms/Form Label Required 1`] = `
+
+    
+`;
+
 exports[`Storyshots Components/Forms/FormLabel Default 1`] = `
 
     

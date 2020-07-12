@@ -1,7 +1,7 @@
 import '../../dist/form-group.css';
 
 export default {
-    title: 'Components/Forms/FormGroup',
+    title: 'Components/Forms/Form Group',
     parameters: {
         description: `
         Form groups are used to assemble form elements with labels, messages, and help containers.

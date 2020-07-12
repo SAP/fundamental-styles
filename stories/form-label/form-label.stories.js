@@ -2,7 +2,7 @@ import '../../dist/form-item.css';
 import '../../dist/input.css';
 
 export default {
-    title: 'Components/Forms/FormLabel',
+    title: 'Components/Forms/Form Label',
     parameters: {
         description: `
         A form-label is used to identify form elements such as form-input, checkbox and radio. Best practice is to use this element as a child of form-item.`,
