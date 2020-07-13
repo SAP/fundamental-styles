@@ -26,24 +26,6 @@ $block: #{$fd-namespace}-popover;
 
   $fd-popover-body-shadow-offset: var(--sapGroup_BorderWidth) !default;
 
-  // POPOVER HEADER
-  $fd-popover-header-height: 2.75rem !default;
-  $fd-popover-header-height--compact: 2.5rem !default;
-  $fd-popover-header-background: var(--sapPageHeader_Background);
-  $fd-popover-header-box-shadow: var(--sapContent_HeaderShadow);
-  $fd-popover-header-padding: 0 0.5rem !default;
-
-  // POPOVER SUBHEADER
-  $fd-popover-subheader-height: 2.75rem !default;
-  $fd-popover-subheader-height--compact: 2rem !default;
-
-  // POPOVER FOOTER
-  $fd-popover-footer-height: 2.75rem !default;
-  $fd-popover-footer-height--compact: 2.5rem !default;
-  $fd-popover-footer-background: var(--sapPageFooter_Background);
-  $fd-popover-footer-border-top: 0.0625rem solid var(--sapPageFooter_BorderColor);
-  $fd-popover-footer-padding: 0 0.5rem !default;
-
   @include fd-reset();
 
   position: relative;
