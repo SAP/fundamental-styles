@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.107"></a>
+# [0.11.0-rc.107](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.106...v0.11.0-rc.107) (2020-07-13)
+
+
+### Bug Fixes
+
+* add fix for Pop-in Table last item border in RTL ([#1243](https://github.com/SAP/fundamental-styles/issues/1243)) ([daa4f42](https://github.com/SAP/fundamental-styles/commit/daa4f42))
+
+
+
 <a name="0.11.0-rc.106"></a>
 # [0.11.0-rc.106](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.105...v0.11.0-rc.106) (2020-07-13)
 
