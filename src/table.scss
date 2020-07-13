@@ -355,6 +355,11 @@ $block: #{$fd-namespace}-table;
       .#{$block}__cell {
         @include fd-last-child() {
           border-right: $fd-table-border;
+
+          @include fd-rtl() {
+            border-left: $fd-table-border;
+            border-right: none;
+          }
         }
       }
     }
