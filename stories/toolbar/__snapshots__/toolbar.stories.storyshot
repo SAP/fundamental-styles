@@ -283,129 +283,137 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
 <section>
   
 
-  <h3>
-    Cozy example
-  </h3>
-  
-
   <div
-    class="fd-toolbar fd-toolbar--cozy"
+    style="height:250px"
   >
     
     
-    <span>
-      Products (34)
-    </span>
-    
-    
-    <button
-      class="fd-button fd-button--transparent"
-    >
-      Create
-    </button>
-    
-    
-    <span
-      class="fd-toolbar__spacer "
-    >
-       
-    </span>
-    
-    
-    <button
-      class="fd-button fd-button--transparent"
-    >
-      Save
-    </button>
-    
-    
-    <button
-      class="fd-button fd-button--transparent"
-    >
-      Copy
-    </button>
-    
-    
-    <span
-      class="fd-toolbar__separator"
-    />
+    <h3>
+      Cozy example
+    </h3>
     
     
     <div
-      class="fd-popover fd-toolbar__overflow"
+      class="fd-toolbar fd-toolbar--cozy"
     >
       
-    
-      <div
-        class="fd-popover__control"
-      >
         
-        
-        <button
-          aria-controls="wgxzK85912"
-          aria-expanded="false"
-          aria-haspopup="true"
-          aria-label="More"
-          class="fd-button fd-button--transparent sap-icon--overflow"
-        />
-        
-    
-      </div>
+      <span>
+        Products (34)
+      </span>
       
-    
+        
+      <button
+        class="fd-button fd-button--transparent"
+      >
+        Create
+      </button>
+      
+        
+      <span
+        class="fd-toolbar__spacer "
+      >
+         
+      </span>
+      
+        
+      <button
+        class="fd-button fd-button--transparent"
+      >
+        Save
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--transparent"
+      >
+        Copy
+      </button>
+      
+        
+      <span
+        class="fd-toolbar__separator"
+      />
+      
+        
       <div
-        aria-hidden="true"
-        class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
-        id="wgxzK85912"
+        class="fd-popover fd-toolbar__overflow"
       >
         
         
         <div
-          class="fd-toolbar__overflow__body"
+          class="fd-popover__control"
         >
           
             
           <button
-            class="fd-button fd-button--transparent"
-          >
-            Edit
-          </button>
-          
-            
-          <span
-            class="fd-toolbar__separator"
+            aria-controls="wgxzK85912"
+            aria-expanded="true"
+            aria-haspopup="true"
+            aria-label="More"
+            class="fd-button fd-button--transparent sap-icon--overflow"
           />
-          
-            
-          <button
-            class="fd-button fd-button--transparent"
-          >
-            Delete
-          </button>
-          
-            
-          <span
-            class="fd-toolbar__separator"
-          />
-          
-            
-          <button
-            class="fd-button fd-button--transparent"
-          >
-            Assign
-          </button>
-          
-            
-          <button
-            class="fd-button fd-button--transparent"
-          >
-            Exit
-          </button>
           
         
         </div>
         
-    
+        
+        <div
+          aria-hidden="false"
+          class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+          id="wgxzK85912"
+        >
+          
+            
+          <div
+            class="fd-toolbar__overflow__body"
+          >
+            
+                
+            <button
+              class="fd-button fd-button--transparent"
+            >
+              Edit
+            </button>
+            
+                
+            <span
+              class="fd-toolbar__separator"
+            />
+            
+                
+            <button
+              class="fd-button fd-button--transparent"
+            >
+              Delete
+            </button>
+            
+                
+            <span
+              class="fd-toolbar__separator"
+            />
+            
+                
+            <button
+              class="fd-button fd-button--transparent"
+            >
+              Assign
+            </button>
+            
+                
+            <button
+              class="fd-button fd-button--transparent"
+            >
+              Exit
+            </button>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+        
       </div>
       
     
@@ -475,7 +483,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
         
         <button
           aria-controls="wgxzK859122"
-          aria-expanded="false"
+          aria-expanded="true"
           aria-haspopup="true"
           aria-label="More"
           class="fd-button fd-button--compact fd-button--transparent sap-icon--overflow"
@@ -486,7 +494,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
       
     
       <div
-        aria-hidden="true"
+        aria-hidden="false"
         class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
         id="wgxzK859122"
       >

@@ -80,11 +80,11 @@ types.parameters = {
 
 - **Solid** - has a solid background
 
-- **Transparent** - a transparent background which can be achieved by passing <code>transparent</code> to the <code>fd-toolbar</code> class.
+- **Transparent** - a transparent background which can be achieved by passing \`transparent\`to the \`fd-toolbar\` class.
 
-- **Auto** - this type toolbar can be inserted into other controls and can inherit the design from the parent control by passing <code>auto</code> to the <code>fd-toolbar</code> class.
+- **Auto** - this type toolbar can be inserted into other controls and can inherit the design from the parent control by passing \`auto\` to the \`fd-toolbar\` class.
 
-- **Info** - this toolbar is commonly used to show information (text or icons) and is slightly smaller than the regular toolbar in size. It can be achieved by passing <code>info</code> to the <code>fd-toolbar</code> class. <code>fd-toolbar--active</code> class can be added to have active and hover states.
+- **Info** - this toolbar is commonly used to show information (text or icons) and is slightly smaller than the regular toolbar in size. It can be achieved by passing \`info\` to the \`fd-toolbar\` class. \`fd-toolbar--active\` class can be added to have active and hover states.
 
 - **Title** - it should be used whenever a title needs to be included. It can be achieved by passing <code>title</code> to the <code>fd-toolbar</code> class.`
     }
@@ -171,7 +171,8 @@ export const separator = () => `
 separator.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'Separators should be used to visually separate items from each other. The class for the separator is <code>fd-toolbar__separator</code>'
+        storyDescription: `
+Separators should be used to visually separate items from each other. The class for the separator is \`fd-toolbar__separator\``
     }
 };
 
@@ -191,39 +192,42 @@ export const sizes = () => `
 
 sizes.parameters = {
     docs: {
-        storyDescription: 'The default size of the toolbar is compact but this can be changed by passing the <code>fd-toolbar--cozy</code> modifier class.'
+        storyDescription: `
+The default size of the toolbar is compact but this can be changed by passing the \`fd-toolbar--cozy\` modifier class.`
     }
 };
 
 export const overflow = () => `
-<h3>Cozy example</h3>
-<div class="fd-toolbar fd-toolbar--cozy">
-    <span>Products (34)</span>
-    <button class="fd-button fd-button--transparent">Create</button>
-    <span class="fd-toolbar__spacer "> </span>
-    <button class="fd-button fd-button--transparent">Save</button>
-    <button class="fd-button fd-button--transparent">Copy</button>
-    <span class="fd-toolbar__separator"></span>
-    <div class="fd-popover fd-toolbar__overflow">
-    <div class="fd-popover__control">
-        <button class="fd-button fd-button--transparent sap-icon--overflow"
-        aria-controls="wgxzK85912"
-        aria-haspopup="true"
-        aria-expanded="false"
-        aria-label="More"></button>
-    </div>
-    <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
-        aria-hidden="true"
-        id="wgxzK85912">
-        <div class="fd-toolbar__overflow__body">
-            <button class="fd-button fd-button--transparent">Edit</button>
-            <span class="fd-toolbar__separator"></span>
-            <button class="fd-button fd-button--transparent">Delete</button>
-            <span class="fd-toolbar__separator"></span>
-            <button class="fd-button fd-button--transparent">Assign</button>
-            <button class="fd-button fd-button--transparent">Exit</button>
+<div style="height:250px">
+    <h3>Cozy example</h3>
+    <div class="fd-toolbar fd-toolbar--cozy">
+        <span>Products (34)</span>
+        <button class="fd-button fd-button--transparent">Create</button>
+        <span class="fd-toolbar__spacer "> </span>
+        <button class="fd-button fd-button--transparent">Save</button>
+        <button class="fd-button fd-button--transparent">Copy</button>
+        <span class="fd-toolbar__separator"></span>
+        <div class="fd-popover fd-toolbar__overflow">
+        <div class="fd-popover__control">
+            <button class="fd-button fd-button--transparent sap-icon--overflow"
+            aria-controls="wgxzK85912"
+            aria-haspopup="true"
+            aria-expanded="true"
+            aria-label="More"></button>
         </div>
-    </div>
+        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+            aria-hidden="false"
+            id="wgxzK85912">
+            <div class="fd-toolbar__overflow__body">
+                <button class="fd-button fd-button--transparent">Edit</button>
+                <span class="fd-toolbar__separator"></span>
+                <button class="fd-button fd-button--transparent">Delete</button>
+                <span class="fd-toolbar__separator"></span>
+                <button class="fd-button fd-button--transparent">Assign</button>
+                <button class="fd-button fd-button--transparent">Exit</button>
+            </div>
+        </div>
+        </div>
     </div>
 </div>
 <h3>Compact example</h3>
@@ -239,11 +243,11 @@ export const overflow = () => `
         <button class="fd-button fd-button--compact fd-button--transparent sap-icon--overflow"
         aria-controls="wgxzK859122"
         aria-haspopup="true"
-        aria-expanded="false"
+        aria-expanded="true"
         aria-label="More"></button>
     </div>
     <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
-        aria-hidden="true"
+        aria-hidden="false"
         id="wgxzK859122">
         <div class="fd-toolbar__overflow__body">
             <label class="fd-label fd-toolbar__overflow__label">Label</label>
@@ -262,7 +266,8 @@ export const overflow = () => `
 
 overflow.parameters = {
     docs: {
-        iframeHeight: 400,
-        storyDescription: 'The Overflow toolbar can be used to add additional elements when extra space is required. It can be achieved in a popover by passing <code>fd-popover</code> <code>fd-toolbar__overflow</code> or in a button by passing <code>sap-icon--overflow</code> in the <code>fd-button</code> class.'
+        iframeHeight: 600,
+        storyDescription: `
+The Overflow toolbar can be used to add additional elements when extra space is required. It can be achieved in a popover by passing \`fd-popover\`, \`fd-toolbar__overflow\` or in a button by passing \`sap-icon--overflow\` in the \`fd-button\` class.`
     }
 };

@@ -14,18 +14,3 @@ exports[`Storyshots Components/Forms/Form Group Required 1`] = `
 
     
 `;
-
-exports[`Storyshots Components/Forms/FormGroup Compact 1`] = `
-
-    
-`;
-
-exports[`Storyshots Components/Forms/FormGroup Default 1`] = `
-
-    
-`;
-
-exports[`Storyshots Components/Forms/FormGroup Required 1`] = `
-
-    
-`;

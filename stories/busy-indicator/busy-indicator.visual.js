@@ -2,7 +2,7 @@ import '../../dist/busy-indicator.css';
 import * as stories from './busy-indicator.stories.js';
 
 export default {
-    title: 'Visual/BusyIndicator'
+    title: 'Visual/Busy Indicator'
 };
 
 export const BusyIndicator = () => {

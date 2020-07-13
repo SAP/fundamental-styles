@@ -1,7 +1,7 @@
 import '../../dist/busy-indicator.css';
 
 export default {
-    title: 'Components/BusyIndicator',
+    title: 'Components/Busy Indicator',
     parameters: {
         description: `A busy indicator informs the user of an ongoing operation. Only one busy indicator should be shown at a time.
         Busy indicators are not visible all the time, only when needed.`,
