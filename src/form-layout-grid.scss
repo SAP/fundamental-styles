@@ -1,6 +1,4 @@
-@import "./settings";
 @import "./mixins";
-@import "./functions";
 @import "./layout-grid.scss";
 
 $block: #{$fd-namespace}-form-layout-grid;
