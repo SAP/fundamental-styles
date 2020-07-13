@@ -145,7 +145,7 @@ export const longTitleDescription = () => `
 </div>
 `;
 
-longTitleDescription.storyName = 'Action bar with Long page title and description.';
+longTitleDescription.storyName = 'Action with Long page title and description.';
 
 
 export const actions = () => `
