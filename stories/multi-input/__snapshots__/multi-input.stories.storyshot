@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
+
+
+`;
+
+exports[`Storyshots Patterns/Multi Input Filtering 1`] = `
+
+
+`;
+
+exports[`Storyshots Patterns/Multi Input Grouping 1`] = `
+
+
+`;
+
+exports[`Storyshots Patterns/Multi Input Match Popover Body Size 1`] = `
+
+
+`;
+
+exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
+
+
+`;
+
+exports[`Storyshots Patterns/Multi Input Read Only And Disabled 1`] = `
+
+
+`;
+
+exports[`Storyshots Patterns/Multi Input Semantic 1`] = `
+
+
+`;

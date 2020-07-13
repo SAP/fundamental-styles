@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Patterns/Combobox Input Cozy And Compact 1`] = `
+
+
+`;
+
+exports[`Storyshots Patterns/Combobox Input Disabled And Read Only 1`] = `
+
+
+`;
+
+exports[`Storyshots Patterns/Combobox Input Match Popover Body Size 1`] = `
+
+
+`;
+
+exports[`Storyshots Patterns/Combobox Input Mobile 1`] = `
+
+
+`;
+
+exports[`Storyshots Patterns/Combobox Input Semantic 1`] = `
+
+
+`;
+
+exports[`Storyshots Patterns/Combobox Input Two Items And Items Grouping 1`] = `
+
+
+`;
