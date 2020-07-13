@@ -1,3 +1,4 @@
+
 body {
   font-family: '72', 'Open Sans', sans-serif;
   padding: 0;
@@ -299,6 +300,33 @@ code.docs-code {
 
 .fddocs.fd-info-label {
   margin-right: 5px;
+}
+
+.docs-layout-grid-bg {
+  background-color: #dbdbdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 4rem;
+  text-align: center;
+
+  &--color-1 {
+    background-color: #bdbdbd;
+  }
+
+  &--color-2 {
+    background-color: #8a8a8a;
+  }
+
+  &--color-3 {
+    background-color: #666666;
+  }
+
+  &--color-4 {
+    background-color: #2b2b2b;
+    color: white;
+  }
 }
 
 body.sb-show-main {
