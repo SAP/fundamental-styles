@@ -1,4 +1,5 @@
 @import "./new-settings";
+@import "./functions";
 @import "./mixins";
 
 /*!
@@ -14,63 +15,150 @@ $color-states: (
 );
 
 $color-accents: (
-  "1": ("color": var(--sapIndicationColor_1), "hover": #6f0000, "active": #550000, "visited": var(--sapIndicationColor_1)),
-  "2": ("color": var(--sapIndicationColor_2), "hover": #a20000, "active": #880000, "visited": var(--sapIndicationColor_2)),
-  "3": ("color": var(--sapIndicationColor_3), "hover": #da6c0b, "active": #cc650b, "visited": var(--sapIndicationColor_3)),
-  "4": ("color": var(--sapIndicationColor_4), "hover": #40e786, "active": #107e3e, "visited": var(--sapIndicationColor_4)),
-  "5": ("color": var(--sapIndicationColor_5), "hover": #7bbaf9, "active": #0961b9, "visited": var(--sapIndicationColor_5)),
-  "6": ("color": var(--sapAccentColor7), "hover": #4bdcec, "active": #0d6d78, "visited": var(--sapAccentColor7)),
-  "7": ("color": var(--sapAccentColor9), "hover": #e0d0f1, "active": #8546c8, "visited": var(--sapAccentColor9)),
-  "8": ("color": var(--sapAccentColor4), "hover": #e6acd8, "active": #ac338f, "visited": var(--sapAccentColor4))
+  "1": ("color": var(--sapIndicationColor_1), "visited": var(--sapIndicationColor_1)),
+  "2": ("color": var(--sapIndicationColor_2), "visited": var(--sapIndicationColor_2)),
+  "3": ("color": var(--sapIndicationColor_3), "visited": var(--sapIndicationColor_3)),
+  "4": ("color": var(--sapIndicationColor_4), "visited": var(--sapIndicationColor_4)),
+  "5": ("color": var(--sapIndicationColor_5), "visited": var(--sapIndicationColor_5)),
+  "6": ("color": var(--sapAccentColor7), "visited": var(--sapAccentColor7)),
+  "7": ("color": var(--sapAccentColor9), "visited": var(--sapAccentColor9)),
+  "8": ("color": var(--sapAccentColor4), "visited": var(--sapAccentColor4))
+);
+
+$inverted-color-states: (
+  "neutral": (
+    "regular": ("color": var(--sapButton_Neutral_TextColor), "background": var(--sapButton_Neutral_Background)),
+    "hover": ("color": var(--sapButton_Neutral_Hover_TextColor), "background": var(--sapButton_Neutral_Hover_Background)),
+    "active": ("color": var(--sapButton_Active_TextColor), "background": var(--sapButton_Neutral_Active_Background)),
+    "visited": ("color": var(--sapButton_Neutral_TextColor), "background": var(--sapButton_Neutral_Background)),
+  ),
+  "positive": (
+    "regular": ("color": var(--sapButton_Success_TextColor), "background": var(--sapButton_Success_Background)),
+    "hover": ("color": var(--sapButton_Success_Hover_TextColor), "background": var(--sapButton_Success_Hover_Background)),
+    "active": ("color": var(--sapButton_Active_TextColor), "background": var(--sapButton_Success_Active_Background)),
+    "visited": ("color": var(--sapButton_Critical_TextColor), "background": var(--sapButton_Success_Background)),
+  ),
+  "critical": (
+    "regular": ("color": var(--sapButton_Critical_TextColor), "background": var(--sapButton_Critical_Background)),
+    "hover": ("color": var(sapButton_Critical_Hover_TextColor), "background": var(--sapButton_Critical_Hover_Background)),
+    "active": ("color": var(--sapButton_Active_TextColor), "background": var(--sapButton_Critical_Active_Background)),
+    "visited": ("color": var(--sapButton_Critical_TextColor), "background": var(--sapButton_Critical_Background)),
+  ),
+  "negative": (
+    "regular": ("color": var(--sapButton_Negative_TextColor),"background": var(--sapButton_Negative_Background)),
+    "hover": ("color": var(--sapButton_Negative_Hover_TextColor), "background": var(--sapButton_Negative_Hover_Background)),
+    "active": ("color": var(--sapButton_Active_TextColor),"background": var(--sapButton_Negative_Active_Background)),
+    "visited": ("color": var(--sapButton_Negative_TextColor), "background": var(--sapButton_Negative_Background)),
+  ),
+  "informative": (
+    "regular": ("color": var(--sapButton_Information_TextColor), "background": var(--sapInformativeElementColor)),
+    "hover": ("color": var(--sapButton_Information_Hover_TextColor), "background": var(--sapButton_Information_Hover_Background)),
+    "active": ("color": var(--sapButton_Active_TextColor), "background": var(--sapButton_Information_Active_Background)),
+    "visited": ("color": var(--sapButton_Information_TextColor), "background": var(--sapInformativeElementColor)),
+  ),
+);
+
+$inverted-color-accents: (
+  "1": (
+    "regular": ("color": var(--sapIndicationColor_1_TextColor), "background": var(--sapIndicationColor_1)),
+    "hover": ("color": var(--sapIndicationColor_1_TextColor), "background": var(--sapIndicationColor_1_Hover_Background)),
+    "active": ("color": var(--sapIndicationColor_1_TextColor), "background": var(--sapIndicationColor_1_Active_Background)),
+    "visited": ("color": var(--sapIndicationColor_1_TextColor), "background": var(--sapIndicationColor_1)),
+  ),
+  "2": (
+    "regular": ("color": var(--sapIndicationColor_2_TextColor), "background": var(--sapIndicationColor_2)),
+    "hover": ("color": var(--sapIndicationColor_2_TextColor), "background": var(--sapIndicationColor_2_Hover_Background)),
+    "active": ("color": var(--sapIndicationColor_2_TextColor), "background": var(--sapIndicationColor_2_Active_Background)),
+    "visited": ("color": var(--sapIndicationColor_2_TextColor), "background": var(--sapIndicationColor_2)),
+  ),
+  "3": (
+    "regular": ("color": var(--sapIndicationColor_3_TextColor), "background": var(--sapIndicationColor_3)),
+    "hover": ("color": var(--sapIndicationColor_3_TextColor), "background": var(--sapIndicationColor_3_Hover_Background)),
+    "active": ("color": var(--sapIndicationColor_3_TextColor), "background": var(--sapIndicationColor_3_Active_Background)),
+    "visited": ("color": var(--sapIndicationColor_3_TextColor), "background": var(--sapIndicationColor_3)),
+  ),
+  "4": (
+    "regular": ("color": var(--sapIndicationColor_4_TextColor), "background": var(--sapIndicationColor_4)),
+    "hover": ("color": var(--sapIndicationColor_4_TextColor), "background": var(--sapIndicationColor_4_Hover_Background)),
+    "active": ("color": var(--sapIndicationColor_4_TextColor), "background": var(--sapIndicationColor_4_Active_Background)),
+    "visited": ("color": var(--sapIndicationColor_4_TextColor), "background": var(--sapIndicationColor_4)),
+  ),
+  "5": (
+    "regular": ("color": var(--sapIndicationColor_5_TextColor), "background": var(--sapIndicationColor_5)),
+    "hover": ("color": var(--sapIndicationColor_5_TextColor), "background": var(--sapIndicationColor_5_Hover_Background)),
+    "active": ("color": var(--sapIndicationColor_5_TextColor), "background": var(--sapIndicationColor_5_Active_Background)),
+    "visited": ("color": var(--sapIndicationColor_5_TextColor), "background": var(--sapIndicationColor_5)),
+  ),
+  "6": (
+    "regular": ("color": var(--sapIndicationColor_6_TextColor), "background": var(--sapIndicationColor_6)),
+    "hover": ("color": var(--sapIndicationColor_6_TextColor), "background": var(--sapIndicationColor_6_Hover_Background)),
+    "active": ("color": var(--sapIndicationColor_6_TextColor), "background": var(--sapIndicationColor_6_Active_Background)),
+    "visited": ("color": var(--sapIndicationColor_6_TextColor), "background": var(--sapIndicationColor_6)),
+  ),
+  "7": (
+    "regular": ("color": var(--sapIndicationColor_7_TextColor), "background": var(--sapIndicationColor_7)),
+    "hover": ("color": var(--sapIndicationColor_7_TextColor), "background": var(--sapIndicationColor_7_Hover_Background)),
+    "active": ("color": var(--sapIndicationColor_7_TextColor), "background": var(--sapIndicationColor_7_Active_Background)),
+    "visited": ("color": var(--sapIndicationColor_7_TextColor), "background": var(--sapIndicationColor_7)),
+  ),
+  "8": (
+    "regular": ("color": var(--sapIndicationColor_8_TextColor), "background": var(--sapIndicationColor_8)),
+    "hover": ("color": var(--sapIndicationColor_8_TextColor), "background": var(--sapIndicationColor_8_Hover_Background)),
+    "active": ("color": var(--sapIndicationColor_8_TextColor), "background": var(--sapIndicationColor_8_Active_Background)),
+    "visited": ("color": var(--sapIndicationColor_8_TextColor), "background": var(--sapIndicationColor_8)),
+  ),
 );
 
 // STATES FOR INVERTED OBJECT STATUS
-@mixin inverted-object-states($bg, $color) {
-  background-color: $bg;
-  color: $color;
+@mixin inverted-object-states($variablesSet) {
+  color: map-deep-get($variablesSet, "regular", "color");
+  background-color: map-deep-get($variablesSet, "regular", "background");
 
   &::before {
-    color: $color;
+    color: map-deep-get($variablesSet, "regular", "color");
   }
 
   &:hover,
   &:active,
   &:visited {
-    background-color: $bg;
-    color: $color;
+    color: map-deep-get($variablesSet, "regular", "color");
+    background-color: map-deep-get($variablesSet, "regular", "background");
 
     &::before {
-      color: $color;
+      color: map-deep-get($variablesSet, "regular", "color");
     }
   }
 }
 
 // INTERACTION STATES FOR INVERTED OBJECT STATUS
-@mixin inverted-object-interaction-states($hoverBg, $hoverColor, $activeBg, $activeColor, $visitedBg, $visitedColor) {
-  &:hover {
-    background-color: $hoverBg;
-    color: $hoverColor;
-
-    &::before {
-      color: $hoverColor;
-    }
-  }
-
-  &:active {
-    background-color: $activeBg;
-    color: $activeColor;
-
-    &::before {
-      color: $activeColor;
-    }
-  }
+@mixin inverted-object-interaction-states($variablesSet) {
+  color: map-deep-get($variablesSet, "regular", "color");
+  background-color: map-deep-get($variablesSet, "regular", "background");
 
   &:visited {
-    background-color: $visitedBg;
-    color: $visitedColor;
+    color: map-deep-get($variablesSet, "visited", "color");
+    background-color: map-deep-get($variablesSet, "visited", "background");
 
     &::before {
-      color: $visitedColor;
+      color: map-deep-get($variablesSet, "visited", "color");
+    }
+  }
+
+  @include fd-hover() {
+    color: map-deep-get($variablesSet, "hover", "color");
+    background-color: map-deep-get($variablesSet, "hover", "background");
+
+    &::before {
+      color: map-deep-get($variablesSet, "hover", "color");
+    }
+  }
+
+  @include fd-active() {
+    color: map-deep-get($variablesSet, "active", "color");
+    background-color: map-deep-get($variablesSet, "active", "background");
+
+    &::before {
+      color: map-deep-get($variablesSet, "active", "color");
     }
   }
 }
@@ -87,7 +175,7 @@ $color-accents: (
   $fd-object-status-text-neutral: var(--sapNeutralTextColor);
 
   // INVERTED OBJECT STATUS VARIABLES
-  $fd-object-status-inverted-border-radius: 0.125rem !default;
+  $fd-object-status-inverted-border-radius: var(--sapElement_BorderCornerRadius) !default;
   $fd-object-status-inverted-padding: 0.0625rem 0.25rem !default;
   $fd-object-status-inverted-padding-empty: 0 0.25rem !default;
   $fd-object-status-inverted-min-height: 1rem !default;
@@ -122,18 +210,6 @@ $color-accents: (
     color: $fd-object-status-icon-neutral;
   }
 
-  &:visited,
-  &:hover,
-  &:active {
-    color: $fd-object-status-text-neutral;
-  }
-
-  &:visited::before,
-  &:hover::before,
-  &:active::before {
-    color: $fd-object-status-icon-neutral;
-  }
-
   // ICON ONLY MODE
   @include fd-empty() {
     justify-content: center;
@@ -156,6 +232,36 @@ $color-accents: (
       &::before {
         padding-right: 0;
         padding-left: 0;
+      }
+    }
+  }
+
+  @each $set-name, $color-set in $color-states {
+    &--#{$set-name} {
+      color: map_get($color-set, "color");
+
+      &::before {
+        color: map_get($color-set, "iconColor");
+      }
+
+      &:visited,
+      &:visited::before {
+        color: map_get($color-set, "visited");
+      }
+    }
+  }
+
+  @each $set-name, $color-set in $color-accents {
+    &--indication-#{$set-name} {
+      color: map_get($color-set, "color");
+
+      &::before {
+        color: map_get($color-set, "iconColor");
+      }
+
+      &:visited,
+      &:visited::before {
+        color: map_get($color-set, "visited");
       }
     }
   }
@@ -193,40 +299,6 @@ $color-accents: (
     }
   }
 
-  @each $set-name, $color-set in $color-states {
-    &--#{$set-name} {
-      color: map_get($color-set, "color");
-
-      &::before {
-        color: map_get($color-set, "iconColor");
-      }
-
-      &:visited,
-      &:hover,
-      &:active {
-        color: map_get($color-set, "color");
-      }
-
-      &:visited::before,
-      &:hover::before,
-      &:active::before {
-        color: map_get($color-set, "iconColor");
-      }
-    }
-  }
-
-  @each $set-name, $color-set in $color-accents {
-    &--indication-#{$set-name} {
-      color: map_get($color-set, "color");
-
-      &:visited,
-      &:hover,
-      &:active {
-        color: map_get($color-set, "color");
-      }
-    }
-  }
-
   // INVERTED OBJECT STATUS
   &--inverted {
     height: auto;
@@ -253,41 +325,24 @@ $color-accents: (
     // ICON ONLY MODE
     @include fd-empty() {
       height: $fd-object-status-inverted-height-empty;
-      width: auto;
-      min-width: $fd-object-status-inverted-min-width;
-      max-width: 100%;
       padding: $fd-object-status-inverted-padding-empty;
     }
 
     // TEXT AND BACKGROUND COLOR FOR INVERTED OBJECT STATUS STATES
-    @include inverted-object-states(var(--sapButton_Neutral_Background), var(--sapButton_Neutral_TextColor));
-
-    &.#{$block}--negative {
-      @include inverted-object-states(var(--sapButton_Negative_Background), var(--sapButton_Negative_TextColor));
-    }
-
-    &.#{$block}--critical {
-      @include inverted-object-states(var(--sapButton_Critical_Background), var(--sapButton_Critical_TextColor));
-    }
-
-    &.#{$block}--positive {
-      @include inverted-object-states(var(--sapButton_Success_Background), var(--sapButton_Success_TextColor));
-    }
-
-    &.#{$block}--informative {
-      @include inverted-object-states(var(--sapInformativeElementColor), var(--sapContent_ContrastTextColor));
+    @each $set-name, $color-set in $inverted-color-states {
+      @if $set-name == neutral {
+        @include inverted-object-states($color-set);
+      } @else {
+        &.#{$block}--#{$set-name} {
+          @include inverted-object-states($color-set);
+        }
+      }
     }
 
     // BACKGROUND COLOR FOR INVERTED OBJECT STATUS STATES - GENERIC INDICATION COLORS
-    @each $set-name, $color-set in $color-accents {
+    @each $set-name, $color-set in $inverted-color-accents {
       &.#{$block}--indication-#{$set-name} {
-        background: map_get($color-set, "color");
-
-        &:hover,
-        &:active,
-        &:visited {
-          background: map_get($color-set, "color");
-        }
+        @include inverted-object-states($color-set);
       }
     }
 
@@ -302,7 +357,6 @@ $color-accents: (
 
       // ICON ONLY MODE
       @include fd-empty() {
-        width: auto;
         height: $fd-object-status-min-height-large-inverted-empty;
         min-width: $fd-object-status-min-width-large-inverted-empty;
         padding: $fd-object-status-padding-large-inverted-empty;
@@ -325,47 +379,23 @@ $color-accents: (
       &:active,
       &:visited {
         text-decoration: none;
-
-        &::before {
-          text-decoration: none;
-        }
       }
 
       // INTERACTION STATES FOR CLICKABLE INVERTED OBJECT STATUS
-      @include inverted-object-interaction-states(var(--sapButton_Neutral_Hover_Background), var(--sapButton_Neutral_Hover_TextColor), var(--sapButton_Neutral_Active_Background), var(--sapButton_Neutral_TextColor), var(--sapButton_Neutral_Background), var(--sapButton_Neutral_TextColor));
-
-      &.#{$block}--negative {
-        @include inverted-object-interaction-states(var(--sapButton_Negative_Hover_Background), var(--sapButton_Negative_Hover_TextColor), var(--sapButton_Negative_Active_Background), var(--sapButton_Negative_TextColor), var(--sapButton_Negative_Background), var(--sapButton_Negative_TextColor));
-      }
-
-      &.#{$block}--critical {
-        @include inverted-object-interaction-states(var(--sapButton_Critical_Hover_Background), var(--sapButton_Critical_Hover_TextColor), var(--sapButton_Critical_Active_Background), var(--sapButton_Critical_TextColor), var(--sapButton_Critical_Background), var(--sapButton_Critical_TextColor));
-      }
-
-      &.#{$block}--positive {
-        @include inverted-object-interaction-states(var(--sapButton_Success_Hover_Background), var(--sapButton_Success_Hover_TextColor), var(--sapButton_Success_Active_Background), var(--sapButton_Success_TextColor), var(--sapButton_Success_Background), var(--sapButton_Success_TextColor));
-      }
-
-      &.#{$block}--informative {
-        @include inverted-object-interaction-states(#0961b9, var(--sapContent_ContrastTextColor), #0854a0, var(--sapContent_ContrastTextColor), #0a6ed1, var(--sapContent_ContrastTextColor));
+      @each $set-name, $color-set in $inverted-color-states {
+        @if $set-name == neutral {
+          @include inverted-object-interaction-states($color-set);
+        } @else {
+          &.#{$block}--#{$set-name} {
+            @include inverted-object-interaction-states($color-set);
+          }
+        }
       }
 
       // GENERIC INDICATION COLORS FOR CLICKABLE INVERTED OBJECT STATUS
-      @each $set-name, $color-set in $color-accents {
+      @each $set-name, $color-set in $inverted-color-accents {
         &.#{$block}--indication-#{$set-name} {
-          background: map_get($color-set, "color");
-
-          &:hover {
-            background: map_get($color-set, "hover");
-          }
-
-          &:active {
-            background: map_get($color-set, "active");
-          }
-
-          &:visited {
-            background: map_get($color-set, "visited");
-          }
+          @include inverted-object-interaction-states($color-set);
         }
       }
     }
