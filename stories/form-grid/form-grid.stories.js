@@ -4,6 +4,7 @@ import '../../dist/form-layout-grid.css';
 export default {
     title: 'Components/Forms/Form Grid',
     parameters: {
+<<<<<<< HEAD
         description: `
 A form is used to present data to the user and to allow users to enter data in a structured way. The form acts as a container for other UI elements (such as labels, input fields, and checkboxes), while structuring these into a specific layout.
 
@@ -32,10 +33,13 @@ For each size, you can define how many grid columns are used for **labels**, **f
 The optional empty grid columns are placed after the input elements. They avoid excessive stretching of the input fields. This ratio is displayed as **x:y:z**, where **x** is the number of grids used by the labels, **y** stands for the fields, and **z** for empty columns.
 
 We highly recommend to change the default of the label-field-ratio according to your app’s needs. For more information, see the recommended layouts in the Layout section.`,
+=======
+>>>>>>> feat: add new visual tests
         tags: ['f3', 'a11y']
     }
 };
 
+<<<<<<< HEAD
 export const sSize = () => `
 <div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical" style="max-width:600px">
     <div class="fd-row">
@@ -924,14 +928,44 @@ export const variousColumns = () => `
     <div class="fd-row" role="group" aria-labelledby="groupLabel">
         <div class="fd-col fd-col--4 fd-form-layout-grid-flex fd-form-layout-grid-flex--right">
           <label class="fd-form-label" id="groupLabel" for="input-2">2 times 6 Column Inputs and 1 empty column after inputs: </label>
+=======
+export const fourSevenOneLayout = () => `
+<div class="fd-container fd-form-layout-grid-container">
+    <div class="fd-row">
+        <div class="fd-col fd-col--4 fd-form-layout-grid-flex fd-form-layout-grid-flex--right">
+          <label class="fd-form-label" for="input-1-layout">Default Input:</label>
+        </div>
+        <div class="fd-col fd-col--7">
+            <input class="fd-input" type="text" id="input-1-layout" placeholder="Field placeholder text">
+        </div>
+    </div>
+    <div class="fd-row">
+        <div class="fd-col fd-col--4 fd-form-layout-grid-flex fd-form-layout-grid-flex--right">
+          <label class="fd-form-label fd-form-label--required" for="input-1c-layout">Required Input: </label>
+        </div>
+        <div class="fd-col fd-col--7">
+            <input class="fd-input" type="text" id="input-1c-layout" placeholder="Field placeholder text">
+        </div>
+    </div>
+    <div class="fd-row" role="group" aria-labelledby="groupLabel">
+        <div class="fd-col fd-col--4 fd-form-layout-grid-flex fd-form-layout-grid-flex--right">
+          <label class="fd-form-label" id="groupLabel" for="input-2">2 Inputs: </label>
+>>>>>>> feat: add new visual tests
         </div>
         <div class="fd-col fd-col--7">
             <div class="fd-row">
                   <div class="fd-col fd-col--6">
+<<<<<<< HEAD
                       <input class="fd-input" type="text" id="input1-of-2" aria-label="input1-of-2" placeholder="6 Column input">
                   </div>
                   <div class="fd-col fd-col--6">
                       <input class="fd-input" type="text" id="input2-of-2" aria-label="input2-of-2" placeholder="6 Column input">
+=======
+                      <input class="fd-input" type="text" id="input1-of-2" aria-label="input1-of-2" placeholder="Field placeholder text">
+                  </div>
+                  <div class="fd-col fd-col--6">
+                      <input class="fd-input" type="text" id="input2-of-2" aria-label="input2-of-2" placeholder="Field placeholder text">
+>>>>>>> feat: add new visual tests
                   </div>
               </div>
           </div>
@@ -939,11 +973,19 @@ export const variousColumns = () => `
 </div>
 `;
 
+<<<<<<< HEAD
 variousColumns.parameters = {
     docs: {
         iframeHeight: 250,
         storyDescription: `To display the form using a 4-7-1 layout, use 3 div elements. The first containing the \`fd-container fd-form-layout-grid-container\` class.
 The second containing the \`fd-row\` class. For the most inner element , use the \`fd-col fd-col--x\` ,where **x** is the appropriate column size and \`fd-form-layout-grid-flex fd-form-layout-grid-flex--right\` classes.`
+=======
+fourSevenOneLayout.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: `To display the form using a 4-7-1 layout, use 3 div elements. The first containing the <code class="docs-code">fd-container fd-form-layout-grid-container</code> class.
+The second containing the <code class="docs-code">fd-row</code> class. For the most inner element , use the <code class="docs-code">fd-col fd-col--x></code> ,where x is the appropriate column size and <code class="docs-code">fd-form-layout-grid-flex fd-form-layout-grid-flex--right</code> classes.`
+>>>>>>> feat: add new visual tests
     }
 };
 
@@ -986,8 +1028,12 @@ export const fourSevenOneCompactLayout = () => `
 fourSevenOneCompactLayout.parameters = {
     docs: {
         iframeHeight: 200,
+<<<<<<< HEAD
         storyDescription: `
 To display the form using a compact layout, add the \`--compact\` modifier on the \`fd-input\` class.`
+=======
+        storyDescription: 'To display the form using a 4-7-1 compact layout, add the <code class="docs-code>--compact</code> modifier on the <code class="docs-code>fd-inpu</code> class.'
+>>>>>>> feat: add new visual tests
     }
 };
 
@@ -1036,7 +1082,12 @@ export const vertical12ColumnLayout = () => `
 vertical12ColumnLayout.parameters = {
     docs: {
         iframeHeight: 250,
+<<<<<<< HEAD
         storyDescription: `To display the 12 column grid, apply the \`--vertical\` modifier on the \`fd-form-layout-grid-container\` class.
 For the inner columns, only use the \`fd-col fd-col--12\` class.`
+=======
+        storyDescription: `To display the 12 column grid, apply the <code class="docs-code">--vertical</code> modifier on the <code class="docs-code">fd-form-layout-grid-container</code> class.
+For the inner columns, only use the <code class="docs-code>fd-col fd-col--12</code> class.`
+>>>>>>> feat: add new visual tests
     }
 };
