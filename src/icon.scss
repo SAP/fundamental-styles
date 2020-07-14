@@ -3,7 +3,6 @@
 $block: sap-icon;
 
 [class*="#{$block}"] {
-  @include fd-reset();
   @include fd-icon-base();
 
   display: inline-block;
