@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.116"></a>
+# [0.11.0-rc.116](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.115...v0.11.0-rc.116) (2020-07-15)
+
+
+### Bug Fixes
+
+* add fix for Checkbox tristate misalignment ([#1264](https://github.com/SAP/fundamental-styles/issues/1264)) ([1753dfb](https://github.com/SAP/fundamental-styles/commit/1753dfb))
+
+
+
 <a name="0.11.0-rc.115"></a>
 # [0.11.0-rc.115](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.114...v0.11.0-rc.115) (2020-07-15)
 
