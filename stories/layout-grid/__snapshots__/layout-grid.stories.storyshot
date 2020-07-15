@@ -1,5 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Layouts/Layout Grid Auto Margin Bottom 1`] = `
+
+
+`;
+
 exports[`Storyshots Layouts/Layout Grid Default 12 Columns 1`] = `
 
 

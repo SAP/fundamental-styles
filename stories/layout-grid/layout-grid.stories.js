@@ -7,13 +7,15 @@ export default {
 To use the grid, the user must use all of the <code class="docs-code">fd-container</code>,<code class="docs-code>fd-row</code> and <code class="docs-code>fd-col</code> tags.
 - Use the <code class="docs-code">fd-container</code> class to wrap the whole grid and help apply the proper row margin
 
-- Use the <code class="docs-code>fd-container--no-gap</code> modifier to remove the gutter spacing between all columns.
+- Use the <code class="docs-code">fd-container--no-gap</code> modifier to remove the gutter spacing between all columns.
 
-- Use the <code class="docs-code>fd-row</code> to seperate rows
+- Use the <code class="docs-code">fd-row</code> to seperate rows
 
-- Use the <code class="docs-code>fd-col</code> to create a column of a certain width. The default value will create a column the full width, being 12 columns of the parent at size small and above unless specified another size 
+-Use the code class="docs-code">fd-row</code> to seperate rows and have an automatic gutter in between columns when they column wraps to the next line.
 
-- Use the <code class="docs-code>fd-col--x</code> modifier will make the column spread x-rows/12
+- Use the <code class="docs-code">fd-col</code> to create a column of a certain width. The default value will create a column the full width, being 12 columns of the parent at size small and above unless specified another size 
+
+- Use the <code class="docs-code">fd-col--x</code> modifier will make the column spread x-rows/12
 <h2>Breakpoints</h2>
 - Small 600px <br>
 <code class="docs-code">fd-col--x</code> will be used until the next specified minimum breakpoint, column takes x/12 space of the row
@@ -291,6 +293,41 @@ multipleRows.parameters = {
     docs: {
         iframeHeight: 300,
         storyDescription: 'To use multiple rows, make <code class="docs-code">fd-row</code> siblings with each other. This will cause a line break for the new row.'
+    }
+};
+
+export const autoMarginBottom = () =>
+    `
+<div class="fd-container">
+  <div class="fd-row fd-row--auto-gutter">
+    <div class="fd-col fd-col--6">
+        <div class="docs-layout-grid-bg">
+            6 col auto gutter
+        </div>
+    </div>
+    <div class="fd-col fd-col--6">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
+            6 col auto gutter
+        </div>
+    </div>
+    <div class="fd-col fd-col--6">
+        <div class="docs-layout-grid-bg">
+            6 col auto gutter
+        </div>
+    </div>
+    <div class="fd-col fd-col--6">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
+            6 col auto gutter
+        </div>
+    </div>
+  </div>
+</div>
+`;
+
+autoMarginBottom.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: 'To add an automatic gutter in between rows, use the `fd-row fd-row--auto-gutter` class instead of the `fd-row` class.'
     }
 };
 
