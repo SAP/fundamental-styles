@@ -77,7 +77,7 @@ export const rtl = () => `
     <span class="fd-info-label fd-info-label--accent-color-1">Info Label</span>
     <span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-1">6</span>
     <span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon sap-icon--future">Info Label</span>
-    <span class="fd-info-label fd-info-label--accent-color-2 fd-info-label--only-icon sap-icon--upload-to-cloud"></span>
+    <span class="fd-info-label fd-info-label--accent-color-2 fd-info-label--icon sap-icon--upload-to-cloud"></span>
 </div>
 `;
 rtl.storyName = 'Info Label RTL';

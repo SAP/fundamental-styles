@@ -8,6 +8,7 @@ $fd-info-label-display-height: 1rem !default;
 $fd-info-label-icon-text-spacing: 0.1875rem !default;
 $fd-info-label-border-width: 0.063rem !default;
 $fd-info-label-border-style: solid !default;
+$fd-info-label-font-size: var(--sapFontSmallSize) !default;
 
 $color-accents: (
   "1": ("background": var(--sapLegendBackgroundColor1), "border": var(--sapLegendColor1)),
@@ -30,7 +31,7 @@ $color-accents: (
   height: $fd-info-label-height;
   min-width: $fd-info-label-height;
   max-width: 100%;
-  font-size: var(--sapFontSmallSize);
+  font-size: $fd-info-label-font-size;
   letter-spacing: 0.0125rem;
   text-transform: uppercase;
   text-align: center;
@@ -61,6 +62,7 @@ $color-accents: (
 
   &--icon {
     @include fd-icon-overwrite() {
+      font-size: $fd-info-label-font-size;
       display: inline-flex;
       align-items: center;
       padding: 0 0.3125rem;
