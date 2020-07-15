@@ -170,6 +170,8 @@
 }
 
 @mixin fd-form-label() {
+  $fd-label-spacing: 0.5rem;
+
   @include fd-reset();
   @include fd-ellipsis();
 
@@ -178,14 +180,12 @@
   max-width: 100%;
   font-size: var(--sapFontSize);
   color: var(--sapContent_LabelColor);
-  padding-right: 6px;
-  margin-right: 8px;
+  margin-right: $fd-label-spacing;
   cursor: text;
+  align-self: flex-start;
 
   @include fd-rtl() {
-    padding-left: 6px;
-    padding-right: 0;
-    margin-left: 8px;
+    margin-left: $fd-label-spacing;
     margin-right: 0;
   }
 }
