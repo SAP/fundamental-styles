@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.115"></a>
+# [0.11.0-rc.115](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.114...v0.11.0-rc.115) (2020-07-15)
+
+
+### Features
+
+* refactor Info Label ([#1253](https://github.com/SAP/fundamental-styles/issues/1253)) ([a44f0b5](https://github.com/SAP/fundamental-styles/commit/a44f0b5))
+
+
+
 <a name="0.11.0-rc.114"></a>
 # [0.11.0-rc.114](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.113...v0.11.0-rc.114) (2020-07-15)
 
