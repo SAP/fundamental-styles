@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.117"></a>
+# [0.11.0-rc.117](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.116...v0.11.0-rc.117) (2020-07-15)
+
+
+### Bug Fixes
+
+* align form label and input in horizontal mode ([#1265](https://github.com/SAP/fundamental-styles/issues/1265)) ([9e55983](https://github.com/SAP/fundamental-styles/commit/9e55983))
+
+
+
 <a name="0.11.0-rc.116"></a>
 # [0.11.0-rc.116](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.115...v0.11.0-rc.116) (2020-07-15)
 
