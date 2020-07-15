@@ -57,6 +57,18 @@ $col-xl: 16;
     display: flex;
   }
 
+  &--auto-gutter {
+    .#{$blockRow} + .#{$blockRow} {
+      margin-top: 0;
+    }
+
+    margin-bottom: 0;
+
+    .#{$block} {
+      margin-bottom: 0.5rem;
+    }
+  }
+
   .#{$block} {
     .#{$blockRow} + .#{$blockRow} {
       margin-top: -0.5rem;
@@ -144,6 +156,18 @@ $col-xl: 16;
 
   .#{$blockRow} {
     margin-bottom: 0;
+
+    &--auto-gutter {
+      .#{$blockRow} + .#{$blockRow} {
+        margin-top: 0;
+      }
+
+      margin-bottom: 0;
+
+      .#{$block} {
+        margin-bottom: 1rem;
+      }
+    }
 
     .#{$block} {
       .#{$blockRow} + .#{$blockRow} {
