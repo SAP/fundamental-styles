@@ -1,6 +1,5 @@
 import '../../dist/form-item.css';
 import '../../dist/input.css';
-import { footer } from "../list/standard/standard-list.stories";
 
 export default {
     title: 'Components/Forms/Form Label',
@@ -38,7 +37,10 @@ colon.storyName = 'Colon';
 
 colon.parameters = {
     docs: {
-        storyDescription: 'To achieve overflow proof colon icon there should be `fd-form-label--colon` included'
+        storyDescription: `
+            To achieve overflow proof colon icon there should be 'fd-form-label--colon' included. The ":" character
+            will be added at the end of a label as pseudo element. 
+        `
     }
 };
 
