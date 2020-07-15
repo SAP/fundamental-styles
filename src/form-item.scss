@@ -6,6 +6,8 @@
 */
 $block: #{$fd-namespace}-form-item;
 
+$fd-form-label-spacing: 0.5rem !default;
+
 .#{$block} {
   @include fd-reset();
 
@@ -20,6 +22,11 @@ $block: #{$fd-namespace}-form-item;
 
     .#{$fd-namespace}-form-label {
       padding-bottom: 0;
+      margin: auto $fd-form-label-spacing auto 0;
+
+      @include fd-rtl() {
+        margin: auto 0 auto $fd-form-label-spacing;
+      }
     }
 
     .#{$fd-namespace}-input {
