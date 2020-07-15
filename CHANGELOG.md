@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.113"></a>
+# [0.11.0-rc.113](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.112...v0.11.0-rc.113) (2020-07-15)
+
+
+### Bug Fixes
+
+* add fix for Menu Button related to Icon reset ([#1260](https://github.com/SAP/fundamental-styles/issues/1260)) ([344e507](https://github.com/SAP/fundamental-styles/commit/344e507))
+
+
+
 <a name="0.11.0-rc.112"></a>
 # [0.11.0-rc.112](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.111...v0.11.0-rc.112) (2020-07-15)
 
