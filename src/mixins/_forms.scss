@@ -182,6 +182,7 @@
   color: var(--sapContent_LabelColor);
   margin-right: $fd-label-spacing;
   cursor: text;
+  align-self: flex-start;
 
   @include fd-rtl() {
     margin-left: $fd-label-spacing;
