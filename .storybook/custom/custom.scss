@@ -9,7 +9,7 @@ body {
   max-width: none;
 }
 
-/* fix bug in storybook@6 where toolbar height is hardcoded - causes scrollbar */
+/* fix bug in storybook@6 where toolbar height is hardcoded - causes scrollbar  */
 a[title='Open canvas in new tab'] {
   height: 34px;
 }
