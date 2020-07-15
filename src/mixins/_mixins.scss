@@ -334,7 +334,7 @@
   }
 
   -ms-overflow-style: none; // hide scrollbar but keep element scrollable for IE/Edge
-  scrollbar-width: none; // hide scrollbar on firefox
+  scrollbar-width: none; // hide scrollbar on Firefox
 }
 
 @mixin fd-typography($fd-size, $color: var(--sapGroup_TitleTextColor)) {
