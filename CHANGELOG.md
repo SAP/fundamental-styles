@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.109"></a>
+# [0.11.0-rc.109](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.108...v0.11.0-rc.109) (2020-07-15)
+
+
+### Bug Fixes
+
+* label asterix and colon ([#1181](https://github.com/SAP/fundamental-styles/issues/1181)) ([de29fa4](https://github.com/SAP/fundamental-styles/commit/de29fa4))
+
+
+
 <a name="0.11.0-rc.108"></a>
 # [0.11.0-rc.108](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.107...v0.11.0-rc.108) (2020-07-13)
 
