@@ -10,7 +10,8 @@ export default {
     title: 'Components/Localization Editor',
     tags: ['non-f3'],
     parameters: {
-        description: ''
+        description: `
+> **DEPRECATED**. Localization Editor does not exist as a Fiori 3 component so it has been deprecated. `
     }
 };
 
