@@ -13,7 +13,7 @@ You will generally use a section inside a page container which will give you the
 
 Can hold two child types:
 - \`.fd-layout-panel\`
-- \`.fd-container\` and \`fd-col--[num]\` can be used to organize panels or content when a grid layout is not desired.`,
+- \`.fd-container\`, \`.fd-row\` and \`fd-col--[num]\` can be used to organize panels or content when a grid layout is not desired.`,
         tags: ['non-f3']
     }
 };
@@ -41,7 +41,7 @@ structure.parameters = {
 export const sectionLayoutGrid = () => `
 <section class="fd-section">
     <div class="fd-container">
-      <div class="fd-row fd-row--auto-gutter">
+      <div class="fd-row">
       <div class="fd-col fd-col--4">
         <div class="fd-layout-panel">
             <div class="fd-layout-panel__body">

@@ -18,23 +18,28 @@ $col-xl: 16;
   flex-wrap: wrap;
   flex: 0 0 100%;
   position: relative;
-  margin: 0 -0.25rem;
+  margin: 0 -0.25rem 0 -0.25rem;
 
   &--no-gap {
     margin: 0;
 
-    .fd-col {
+    .#{$block} {
       padding: 0;
     }
-  }
-
-  > *:last-child {
-    margin-bottom: 0;
   }
 
   .#{$blockRow} {
     margin-left: 0;
     margin-right: 0;
+    margin-top: -0.5rem;
+  }
+
+  .#{$blockRow} + .#{$blockRow} {
+    margin-top: 0;
+  }
+
+  @include fd-rtl() {
+    direction: rtl;
   }
 }
 
@@ -45,28 +50,16 @@ $col-xl: 16;
   flex-wrap: wrap;
   flex: 0 0 100%;
   position: relative;
-  margin: 0 -0.25rem 0.5rem -0.25rem;
+  margin: 0 -0.25rem;
   min-width: 100%;
 
   &--inner-flex {
     display: flex;
   }
 
-  &--auto-gutter {
-    .#{$blockRow} + .#{$blockRow} {
-      margin-top: 0;
-    }
-
-    margin-bottom: 0;
-
-    .#{$block} {
-      margin-bottom: 0.5rem;
-    }
-  }
-
   .#{$block} {
     .#{$blockRow} + .#{$blockRow} {
-      margin-top: 0.5rem;
+      margin-top: -0.5rem;
     }
   }
 }
@@ -74,18 +67,16 @@ $col-xl: 16;
 .#{$block} {
   @include fd-reset();
 
-  padding: 0 0.25rem;
+  padding: 0.5rem 0.25rem 0 0.25rem;
   min-width: 100%;
   max-width: 100%;
 
-  @for $n from 1 through $col-until-xl {
+  @for $n from 0 through $col-until-xl {
     &--#{$n} {
       min-width: ( ( $n / $col-until-xl ) *100%);
       max-width: ( ( $n / $col-until-xl ) *100%);
     }
-  }
 
-  @for $n from 1 through $col-until-xl {
     &--offset-#{$n} {
       margin-left: ( ( $n / $col-until-xl ) *100%);
     }
@@ -93,16 +84,22 @@ $col-xl: 16;
 
   .#{$blockRow} {
     margin: 0 -0.25rem;
+    margin-top: -0.5rem;
   }
 }
 
 @media (min-width: 600px) {
   .#{$blockContainer} {
-    margin: 0 -0.5rem;
+    margin: 0 -0.5rem 0 -0.5rem;
 
     .#{$blockRow} {
       margin-left: 0;
       margin-right: 0;
+      margin-top: -1rem;
+    }
+
+    .#{$blockRow} + .#{$blockRow} {
+      margin-top: 0;
     }
 
     &--no-gap {
@@ -115,19 +112,7 @@ $col-xl: 16;
   }
 
   .#{$blockRow} {
-    margin-bottom: 1rem;
-
-    &--auto-gutter {
-      .#{$blockRow} + .#{$blockRow} {
-        margin-top: 0;
-      }
-
-      margin-bottom: 0;
-
-      .#{$block} {
-        margin-bottom: 1rem;
-      }
-    }
+    margin-bottom: 0;
 
     .#{$block} {
       .#{$blockRow} + .#{$blockRow} {
@@ -137,27 +122,36 @@ $col-xl: 16;
   }
 
   .#{$block} {
-    padding: 0 0.5rem;
+    padding: 1rem 0.5rem 0 0.5rem;
 
-    @for $n from 1 through $col-until-xl {
+    @for $n from 0 through $col-until-xl {
       &--#{$n}--m {
         min-width: ( ( $n / $col-until-xl ) *100%);
         max-width: ( ( $n / $col-until-xl ) *100%);
       }
+
+      &--offset-#{$n}--m {
+        margin-left: ( ( $n / $col-until-xl ) *100%);
+      }
     }
 
     .#{$blockRow} {
-      margin: 0 -0.5rem;
+      margin-left: -0.5rem;
+      margin-right: -0.5rem;
     }
   }
 }
 
 @media (min-width: 1024px) {
   .#{$block} {
-    @for $n from 1 through $col-until-xl {
+    @for $n from 0 through $col-until-xl {
       &--#{$n}--#{map-get($size,$col-until-xl)} {
         min-width: ( ( $n / $col-until-xl ) *100%);
         max-width: ( ( $n / $col-until-xl ) *100%);
+      }
+
+      &--offset-#{$n}--#{map-get($size,$col-until-xl)} {
+        margin-left: ( ( $n / $col-until-xl ) *100%);
       }
     }
   }
@@ -165,10 +159,14 @@ $col-xl: 16;
 
 @media (min-width: 1440px) {
   .#{$block} {
-    @for $n from 1 through 16 {
+    @for $n from 0 through 16 {
       &--#{$n}--#{map-get($size,$col-xl)} {
         min-width: ( ( $n / $col-xl ) *100%);
         max-width: ( ( $n / $col-xl ) *100%);
+      }
+
+      &--offset-#{$n}--#{map-get($size,$col-xl)} {
+        margin-left: ( ( $n / $col-xl ) *100%);
       }
     }
   }

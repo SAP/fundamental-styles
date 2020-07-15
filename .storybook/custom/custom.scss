@@ -303,6 +303,10 @@ code.docs-code {
   min-height: 4rem;
   text-align: center;
 
+  &--vertical {
+    height: 100%;
+  }
+
   &--color-1 {
     background-color: #bdbdbd;
   }

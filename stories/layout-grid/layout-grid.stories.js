@@ -64,12 +64,12 @@ export const sixColumns = () =>
     </div>
     <div class="fd-col fd-col--6">
       <div class="docs-layout-grid-bg docs-layout-grid-bg--color-2">
-        (2) 6 col at each size
+        (3) 6 col at each size
       </div>
     </div>
     <div class="fd-col fd-col--6">
       <div class="docs-layout-grid-bg docs-layout-grid-bg--color-3">
-        (2) 6 col at each size
+        (4) 6 col at each size
       </div>
     </div>
   </div>
@@ -186,9 +186,6 @@ export const nesting = () =>
         <div class="docs-layout-grid-bg">
             6 col
         </div>
-        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
-            6 col
-        </div>
     </div>
     <div class="fd-col fd-col--6">
         <div class="fd-row">
@@ -243,9 +240,9 @@ export const offset = () =>
             6 col
         </div>
     </div>
-    <div class="fd-col fd-col--4 fd-col--offset-1">
+    <div class="fd-col fd-col--4 fd-col--2--l fd-col--offset-1 fd-col--offset-2--l">
         <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1"> 
-            4 col with offset of 1
+            4 col with offset of 1 or 2 col with offset of 2 at large andZ 
         </div>
     </div>
   </div>
@@ -255,7 +252,7 @@ export const offset = () =>
 offset.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'To add an offset ot the left of the column use the <code class="docs-code">--offset-x</code> modifier. X will be the size of your choice. If the column after the offset col no longer fits in parent container it will switch to the next page'
+        storyDescription: 'To add an offset to the left of the column for all sizes use the <code class="docs-code">--offset-x</code> modifier. X will be the size of your choice. If the column after the offset col no longer fits in parent container it will switch to the next page. To add an offset to the left of the column for certain sizes and above use the <code class="docs-code">--offset-x--size</code> modifier, where size is either s,m,l,xl'
     }
 };
 
@@ -265,24 +262,24 @@ export const multipleRows = () =>
   <div class="fd-row">
     <div class="fd-col fd-col--12">
         <div class="docs-layout-grid-bg">
-            12 col row 1
+            12 col, row 1
         </div>
     </div>
     <div class="fd-col fd-col--4">
         <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
-            4 col row 1
+            4 col, row 1
         </div>
     </div>
 </div>
 <div class="fd-row">
     <div class="fd-col fd-col--6">
         <div class="docs-layout-grid-bg docs-layout-grid-bg--color-2">
-            6 col row 2
+            6 col, row 2
         </div>
     </div>
     <div class="fd-col fd-col--6">
         <div class="docs-layout-grid-bg docs-layout-grid-bg--color-2">
-            6 col row 2
+            6 col, row 2
         </div>
     </div>
   </div>
@@ -292,42 +289,7 @@ export const multipleRows = () =>
 multipleRows.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'To use multiple rows, make <code class="docs-code">fd-row</code> siblings with each other. This will cause a line break for the new row.'
-    }
-};
-
-export const autoMarginBottom = () =>
-    `
-<div class="fd-container">
-  <div class="fd-row fd-row--auto-gutter">
-    <div class="fd-col fd-col--6">
-        <div class="docs-layout-grid-bg">
-            6 col auto gutter
-        </div>
-    </div>
-    <div class="fd-col fd-col--6">
-        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
-            6 col auto gutter
-        </div>
-    </div>
-    <div class="fd-col fd-col--6">
-        <div class="docs-layout-grid-bg">
-            6 col auto gutter
-        </div>
-    </div>
-    <div class="fd-col fd-col--6">
-        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
-            6 col auto gutter
-        </div>
-    </div>
-  </div>
-</div>
-`;
-
-autoMarginBottom.parameters = {
-    docs: {
-        iframeHeight: 300,
-        storyDescription: 'To add an automatic gutter in between rows, use the `fd-row fd-row--auto-gutter` class instead of the `fd-row` class.'
+        storyDescription: 'To use multiple rows, make <code class="docs-code">fd-row</code> siblings with each other. This will alse create a gutter in between each row applied'
     }
 };
 

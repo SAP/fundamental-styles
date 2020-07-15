@@ -2,6 +2,9 @@
 @import "./layout-grid.scss";
 
 $block: #{$fd-namespace}-form-layout-grid;
+$blockCol: #{$fd-namespace}-col;
+$blockContainer: #{$fd-namespace}-container;
+$blockRow: #{$fd-namespace}-row;
 
 .#{$block}-flex {
   display: flex;
@@ -14,34 +17,45 @@ $block: #{$fd-namespace}-form-layout-grid;
   }
 }
 
-.#{$block}-container {
-  padding: 1rem;
-  margin: 0 -0.25rem;
-
-  .fd-row {
-    margin-bottom: 0;
-    align-items: center;
-
-    .fd-col {
-      padding: 0 0.25rem;
-
-      .fd-form-label {
-        margin-right: 0;
-      }
-
-      .fd-row {
-        margin: 0 -0.25rem;
-      }
+@media (min-width: 0) {
+  .#{$blockContainer}.#{$block}-container {
+    padding: 1rem;
+    .#{$blockRow},
+    .#{$blockRow}+.#{$blockRow} {
+      margin-top: 0;
     }
   }
 
-  &--vertical {
-    > *:not(:last-child) {
-      margin-bottom: 0.625rem;
+  .#{$block}-container {
+    padding: 1rem;
+    margin: 0 -0.25rem;
+
+    .#{$blockRow} {
+      margin-bottom: 0;
+      align-items: center;
+      margin-top: 0;
+
+      .#{$blockCol} {
+        padding: 0 0.25rem;
+
+        .fd-form-label {
+          margin-right: 0;
+        }
+
+        .#{$blockRow} {
+          margin: 0 -0.25rem;
+        }
+      }
     }
 
-    .fd-form-label {
-      padding-bottom: 0.125rem;
+    &--vertical {
+      > *:not(:last-child) {
+        margin-bottom: 0.625rem;
+      }
+
+      .fd-form-label {
+        padding-bottom: 0.125rem;
+      }
     }
   }
 }
