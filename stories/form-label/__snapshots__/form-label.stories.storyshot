@@ -40,7 +40,7 @@ exports[`Storyshots Components/Forms/Form Label Colon 1`] = `
             
       <label
         class="fd-form-label fd-form-label--colon"
-        for="input-1d"
+        for="input-2d"
       >
         Input With Colon
       </label>
@@ -48,7 +48,7 @@ exports[`Storyshots Components/Forms/Form Label Colon 1`] = `
             
       <input
         class="fd-input"
-        id="input-1d"
+        id="input-2d"
         placeholder="Field placeholder text"
         type="text"
       />
