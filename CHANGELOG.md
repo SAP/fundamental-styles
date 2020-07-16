@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.118"></a>
+# [0.11.0-rc.118](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.117...v0.11.0-rc.118) (2020-07-16)
+
+
+### Bug Fixes
+
+* Make stronger selector for product switch, fix badge on shellbar ([#1266](https://github.com/SAP/fundamental-styles/issues/1266)) ([087ec34](https://github.com/SAP/fundamental-styles/commit/087ec34))
+
+
+
 <a name="0.11.0-rc.117"></a>
 # [0.11.0-rc.117](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.116...v0.11.0-rc.117) (2020-07-15)
 
