@@ -1,6 +1,8 @@
 language: node_js
 node_js: 10.21.0
 dist: trusty
+services:	
+  - docker
 git:
   depth: false
 script:
