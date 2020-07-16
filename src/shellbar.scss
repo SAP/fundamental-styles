@@ -278,6 +278,7 @@ $block: #{$fd-namespace}-shellbar;
     border-color: transparent;
     background: $fd-shellbar-background-color;
     color: $fd-shellbar-color;
+    overflow: visible;
     padding: 0;
     outline-color: var(--sapContent_ContrastFocusColor);
 
