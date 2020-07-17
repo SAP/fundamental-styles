@@ -6,8 +6,6 @@
   @include fd-icon-base($position);
   @include fd-icon-glyph($key, $position);
 
-  font-family: "SAP-icons";
-
   &::#{$position} {
     @content;
   }

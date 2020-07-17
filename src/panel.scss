@@ -52,24 +52,16 @@ $block: #{$fd-namespace}-panel;
   }
 
   &__button {
-    @include fd-icon('slim-arrow-right');
+    @include fd-icon('slim-arrow-right') {
+      font-size: 1rem;
+    }
 
     @include fd-rtl() {
       @include fd-icon('slim-arrow-left');
     }
 
-    &::before {
-      font-size: 1rem;
-      line-height: normal;
-    }
-
     &.is-expanded {
       @include fd-icon('slim-arrow-down');
-
-      &::before {
-        font-size: 1rem;
-        line-height: normal;
-      }
     }
   }
 
