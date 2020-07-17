@@ -30,5 +30,6 @@ npm publish
 # run this after publish to make sure GitHub finishes updating from the push
 npm run release:create -- --repo $TRAVIS_REPO_SLUG --tag $release_tag --branch master
 
-npm run docs:prod
+npm run build:prod
+
 npm run deploy -- --repo "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG"
