@@ -360,7 +360,7 @@ exports[`Storyshots Components/Table Interactive Table With Hoverable and Activa
     
     
     <h4
-      style="margin-bottom:0px;"
+      style="margin: 0;"
     >
       Interactive Table With Hoverable and Activable Cells and Rows
     </h4>
@@ -631,7 +631,7 @@ exports[`Storyshots Components/Table Merged Cells 1`] = `
     
     
     <h4
-      style="margin-bottom:0px;"
+      style="margin: 0;"
     >
       Table with Merged Cells
     </h4>
@@ -860,7 +860,7 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
     
     
     <h4
-      style="margin-bottom:0px;"
+      style="margin: 0;"
     >
       Table with Navigation Indication State
     </h4>
@@ -1121,7 +1121,7 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
       
         
       <h4
-        style="margin-bottom:0px;"
+        style="margin: 0;"
       >
         Table with Navigation Indication State on RTL
       </h4>
@@ -1386,7 +1386,7 @@ exports[`Storyshots Components/Table Primary 1`] = `
     
     
     <h4
-      style="margin-bottom:0px;"
+      style="margin: 0;"
     >
       Default Table
     </h4>
@@ -1626,7 +1626,7 @@ exports[`Storyshots Components/Table Responsive Table 1`] = `
     
     
     <h4
-      style="margin-bottom:0px;"
+      style="margin: 0;"
     >
       Responsive Table
     </h4>
@@ -1990,7 +1990,7 @@ exports[`Storyshots Components/Table Responsive Table Pop In Mode 1`] = `
       
         
       <h4
-        style="margin-bottom:0px;"
+        style="margin: 0;"
       >
         Responsive Table - Pop-in mode
       </h4>
@@ -2255,7 +2255,7 @@ exports[`Storyshots Components/Table Responsive Table Pop In Mode 1`] = `
       
         
       <h4
-        style="margin-bottom:0px;"
+        style="margin: 0;"
       >
         Responsive Table - Pop-in Mode with Checkboxes and Navigation Indicator
       </h4>
@@ -2573,7 +2573,7 @@ exports[`Storyshots Components/Table Semantic Rows 1`] = `
     
     
     <h4
-      style="margin-bottom:0px;"
+      style="margin: 0;"
     >
       Table with Semantic Rows
     </h4>
@@ -3295,7 +3295,7 @@ exports[`Storyshots Components/Table Table With Contextual Menu 1`] = `
     
     
     <h4
-      style="margin-bottom:0px;"
+      style="margin: 0;"
     >
       Table with Contextual Menu
     </h4>
@@ -4440,7 +4440,7 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
     
     
     <h4
-      style="margin-bottom:0px;"
+      style="margin: 0;"
     >
       Table With Advanced Shellbar
     </h4>
@@ -4683,7 +4683,7 @@ exports[`Storyshots Components/Table With Checkbox 1`] = `
     
     
     <h4
-      style="margin-bottom:0px;"
+      style="margin: 0;"
     >
       Table With Checkbox Cozy Mode
     </h4>
@@ -4985,7 +4985,7 @@ exports[`Storyshots Components/Table With Checkbox Compact 1`] = `
     
     
     <h4
-      style="margin-bottom:0px;"
+      style="margin: 0;"
     >
       Table With Checkbox Compact Mode
     </h4>
@@ -5287,7 +5287,7 @@ exports[`Storyshots Components/Table With Checkbox Condensed 1`] = `
     
     
     <h4
-      style="margin-bottom:0px;"
+      style="margin: 0;"
     >
       Table With Checkbox Condensed Mode
     </h4>
@@ -5589,7 +5589,7 @@ exports[`Storyshots Components/Table With Footer 1`] = `
     
     
     <h4
-      style="margin-bottom:0px;"
+      style="margin: 0;"
     >
       Table With Footer Cozy Mode
     </h4>
@@ -5838,7 +5838,7 @@ exports[`Storyshots Components/Table With Footer Compact 1`] = `
     
     
     <h4
-      style="margin-bottom:0px;"
+      style="margin: 0;"
     >
       Table With Footer Compact Mode
     </h4>
@@ -6089,7 +6089,7 @@ exports[`Storyshots Components/Table With Footer Condensed 1`] = `
     
     
     <h4
-      style="margin-bottom:0px;"
+      style="margin: 0;"
     >
       Table With Footer Condensed Mode
     </h4>
@@ -6340,7 +6340,7 @@ exports[`Storyshots Components/Table With Menu In Header 1`] = `
     
     
     <h4
-      style="margin-bottom:0px;"
+      style="margin: 0;"
     >
       Table with Popover in Headers
     </h4>
@@ -6788,7 +6788,7 @@ exports[`Storyshots Components/Table With Pagination 1`] = `
     
     
     <h4
-      style="margin-bottom:0px;"
+      style="margin: 0;"
     >
       Table With Pagination at The Bottom
     </h4>
@@ -7094,7 +7094,7 @@ exports[`Storyshots Components/Table Without Borders 1`] = `
     
     
     <h4
-      style="margin-bottom:0px;"
+      style="margin: 0;"
     >
       Table Without Borders
     </h4>
@@ -7305,7 +7305,7 @@ exports[`Storyshots Components/Table Without Borders On Body 1`] = `
     
     
     <h4
-      style="margin-bottom:0px;"
+      style="margin: 0;"
     >
       Table Without Borders On Body
     </h4>
