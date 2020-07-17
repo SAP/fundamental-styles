@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.121"></a>
+# [0.11.0-rc.121](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.120...v0.11.0-rc.121) (2020-07-17)
+
+
+### Bug Fixes
+
+* remove unnecessary styling in panel ([#1271](https://github.com/SAP/fundamental-styles/issues/1271)) ([9e70a10](https://github.com/SAP/fundamental-styles/commit/9e70a10))
+
+
+
 <a name="0.11.0-rc.120"></a>
 # [0.11.0-rc.120](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.119...v0.11.0-rc.120) (2020-07-17)
 
