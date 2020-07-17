@@ -58,6 +58,12 @@ export const expandable = () => `
 </div>
 `;
 
+expandable.parameters = {
+    docs: {
+        iframeHeight: 200
+    }
+};
+
 /**
  * Fixed panels are useful for grouping custom content. They include headers and info toolbars.
 To create a fixed panel, add the `--fixed` modifier.
@@ -88,6 +94,12 @@ export const fixed = () => `
 </div>
 `;
 
+fixed.parameters = {
+    docs: {
+        iframeHeight: 200
+    }
+};
+
 /** To use a compact panel, add the `--compact` modifier. */
 
 export const compact = () => `
@@ -117,6 +129,12 @@ export const compact = () => `
     </div>
 </div>
 `;
+
+compact.parameters = {
+    docs: {
+        iframeHeight: 200
+    }
+};
 
 /** When the height of the panel\'s content is set to a fixed size, the content area can be scrolled through. */
 
@@ -156,3 +174,9 @@ export const fixedHeightContent = () => `
     </div>
 </div>
 `;
+
+fixedHeightContent.parameters = {
+    docs: {
+        iframeHeight: 300
+    }
+};

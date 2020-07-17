@@ -168,6 +168,7 @@ $block: #{$fd-namespace}-time;
     text-overflow: clip;
     padding: 0;
     margin: 0;
+    align-self: auto;
 
     @include fd-rtl() {
       padding: 0;
