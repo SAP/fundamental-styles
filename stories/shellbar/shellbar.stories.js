@@ -328,12 +328,12 @@ export const productSwitchandCopilot = () => `
                     <button class="fd-button fd-button--transparent fd-popover__control fd-product-switch__control sap-icon--grid" 
                         aria-label="Image label" 
                         aria-controls="product-switch-body" 
-                        aria-expanded="false"
+                        aria-expanded="true"
                         aria-haspopup="true"
                         onclick="onPopoverClick('product-switch-body')">
                     </button>
                 </div>
-                <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="product-switch-body">
+                <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="product-switch-body">
                     <div class="fd-product-switch__body">
                         <ul class="fd-product-switch__list">
                             <li class="fd-product-switch__item">
@@ -439,7 +439,7 @@ export const productSwitchandCopilot = () => `
 `;
 productSwitchandCopilot.parameters = {
     docs: {
-        iframeHeight: 150,
+        iframeHeight: 600,
         storyDescription: 'This example shows an application with CoPilot, integration with other products, and a customized logo. For more information about the Product Switch, see [Product Switch](product-switch.html) component.'
     }
 };

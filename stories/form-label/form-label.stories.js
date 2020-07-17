@@ -5,7 +5,7 @@ export default {
     title: 'Components/Forms/Form Label',
     parameters: {
         description: `
-        A form-label is used to identify form elements such as form-input, checkbox and radio. Best practice is to use this element as a child of form-item.`,
+A form-label is used to identify form elements such as form-input, checkbox and radio. Best practice is to use this element as a child of form-item.`,
         tags: ['f3', 'a11y', 'theme']
     }
 };
@@ -44,8 +44,7 @@ colon.storyName = 'Colon';
 colon.parameters = {
     docs: {
         storyDescription: `
-            To achieve overflow proof colon icon there should be 'fd-form-label--colon' included. The ":" character
-            will be added at the end of a label as pseudo element. 
+To achieve overflow proof colon icon there should be \`fd-form-label--colon\` included. The ":" character will be added at the end of a label as pseudo element. 
         `
     }
 };
