@@ -19,7 +19,7 @@ export default {
 
 export const primary = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin-bottom:0px;">Default Table</h4>
+    <h4 style="margin: 0;">Default Table</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table">
@@ -67,7 +67,7 @@ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
 
 export const withoutBorders = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin-bottom:0px;">Table Without Borders</h4>
+    <h4 style="margin: 0;">Table Without Borders</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders">
@@ -104,7 +104,7 @@ export const withoutBorders = () => `
 
 export const withoutBordersOnBody = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin-bottom:0px;">Table Without Borders On Body</h4>
+    <h4 style="margin: 0;">Table Without Borders On Body</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table">
@@ -144,7 +144,7 @@ It has to contain same size of columns as tbody and thead. */
 
 export const withFooter = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin-bottom:0px;">Table With Footer Cozy Mode</h4>
+    <h4 style="margin: 0;">Table With Footer Cozy Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table">
@@ -188,7 +188,7 @@ export const withFooter = () => `
 
 export const withFooterCompact = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin-bottom:0px;">Table With Footer Compact Mode</h4>
+    <h4 style="margin: 0;">Table With Footer Compact Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table fd-table--compact">
@@ -233,7 +233,7 @@ export const withFooterCompact = () => `
 
 export const withFooterCondensed = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin-bottom:0px;">Table With Footer Condensed Mode</h4>
+    <h4 style="margin: 0;">Table With Footer Condensed Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table fd-table--condensed">
@@ -285,7 +285,7 @@ export const withFooterCondensed = () => `
 
 export const interactiveRowsAndColumns = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin-bottom:0px;">Interactive Table With Hoverable and Activable Cells and Rows</h4>
+    <h4 style="margin: 0;">Interactive Table With Hoverable and Activable Cells and Rows</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table">
@@ -341,7 +341,7 @@ Also for cells that include a checkbox should contain the `fd-table__cell--check
 
 export const withCheckbox = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin-bottom:0px;">Table With Checkbox Cozy Mode</h4>
+    <h4 style="margin: 0;">Table With Checkbox Cozy Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table">
@@ -394,7 +394,7 @@ export const withCheckbox = () => `
 
 export const withCheckboxCompact = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin-bottom:0px;">Table With Checkbox Compact Mode</h4>
+    <h4 style="margin: 0;">Table With Checkbox Compact Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table fd-table--compact">
@@ -447,7 +447,7 @@ export const withCheckboxCompact = () => `
 
 export const withCheckboxCondensed = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin-bottom:0px;">Table With Checkbox Condensed Mode</h4>
+    <h4 style="margin: 0;">Table With Checkbox Condensed Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table fd-table--condensed">
@@ -501,7 +501,7 @@ export const withCheckboxCondensed = () => `
 
 export const withPagination = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin-bottom:0px;">Table With Pagination at The Bottom</h4>
+    <h4 style="margin: 0;">Table With Pagination at The Bottom</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table">
@@ -681,7 +681,7 @@ export const withAdvancedToolbar = () => `
     </div>
 </div>
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin-bottom:0px;">Table With Advanced Shellbar</h4>
+    <h4 style="margin: 0;">Table With Advanced Shellbar</h4>
     <div class="fd-toolbar__spacer"></div>
     <button aria-label="navigation" class="fd-button fd-button--compact fd-button--transparent sap-icon--filter" onclick="toggleDialog('filter-dialog-example', true)"></button>
     <button aria-label="navigation" class="fd-button fd-button--compact fd-button--transparent sap-icon--action-settings" onclick="toggleDialog('settings-dialog-example', true)"></button>
@@ -738,7 +738,7 @@ For Pop-in example markup is changed, one row is transformed to 2 rows with `fd-
 
 export const responsiveTable = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin-bottom:0px;">Responsive Table</h4>
+    <h4 style="margin: 0;">Responsive Table</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table fd-table--no-horizontal-borders">
@@ -813,7 +813,7 @@ export const responsiveTable = () => `
 export const responsiveTablePopInMode = () => `
 <div style="max-width: 450px">
     <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-        <h4 style="margin-bottom:0px;">Responsive Table - Pop-in mode</h4>
+        <h4 style="margin: 0;">Responsive Table - Pop-in mode</h4>
         <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
     </div>
     <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
@@ -876,7 +876,7 @@ export const responsiveTablePopInMode = () => `
 <br>
 <div style="max-width: 450px">
     <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-        <h4 style="margin-bottom:0px;">Responsive Table - Pop-in Mode with Checkboxes and Navigation Indicator</h4>
+        <h4 style="margin: 0;">Responsive Table - Pop-in Mode with Checkboxes and Navigation Indicator</h4>
         <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
     </div>
     <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
@@ -957,7 +957,7 @@ Other indicators such as semantic states and modes can be added using the `--val
 
 export const semanticRows = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin-bottom:0px;">Table with Semantic Rows</h4>
+    <h4 style="margin: 0;">Table with Semantic Rows</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table">
@@ -1082,7 +1082,7 @@ export const semanticRows = () => `
 
 export const mergedCells = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin-bottom:0px;">Table with Merged Cells</h4>
+    <h4 style="margin: 0;">Table with Merged Cells</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table">
@@ -1136,7 +1136,7 @@ a contextual menu can be substituted to display all actions in one menu.
 
 export const tableWithContextualMenu = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin-bottom:0px;">Table with Contextual Menu</h4>
+    <h4 style="margin: 0;">Table with Contextual Menu</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table" >
@@ -1259,7 +1259,7 @@ added with `fd-table__popover` class.
 
 export const withMenuInHeader = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin-bottom:0px;">Table with Popover in Headers</h4>
+    <h4 style="margin: 0;">Table with Popover in Headers</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table" >
@@ -1441,7 +1441,7 @@ export const fixColumnHeader = () => `
 
 export const navigationIndicationStates = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin-bottom:0px;">Table with Navigation Indication State</h4>
+    <h4 style="margin: 0;">Table with Navigation Indication State</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table">
@@ -1487,7 +1487,7 @@ export const navigationIndicationStates = () => `
 
 <div dir="rtl"> 
     <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-        <h4 style="margin-bottom:0px;">Table with Navigation Indication State on RTL</h4>
+        <h4 style="margin: 0;">Table with Navigation Indication State on RTL</h4>
         <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
     </div>
     <table class="fd-table">
