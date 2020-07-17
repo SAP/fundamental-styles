@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0-rc.122"></a>
+# [0.11.0-rc.122](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.121...v0.11.0-rc.122) (2020-07-17)
+
+
+### Bug Fixes
+
+* fix time labels; minor storybook update; bump storybook version ([#1267](https://github.com/SAP/fundamental-styles/issues/1267)) ([62c50f9](https://github.com/SAP/fundamental-styles/commit/62c50f9))
+
+
+
 <a name="0.11.0-rc.121"></a>
 # [0.11.0-rc.121](https://github.com/SAP/fundamental-styles/compare/v0.11.0-rc.120...v0.11.0-rc.121) (2020-07-17)
 
