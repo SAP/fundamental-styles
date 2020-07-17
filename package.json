@@ -72,6 +72,7 @@
     "jest": "^26.1.0",
     "jest-image-snapshot": "^4.0.2",
     "jest-puppeteer": "^4.4.0",
+    "jest-puppeteer-docker": "^1.4.0",
     "markdown-to-jsx": "^6.11.4",
     "node-sass": "^4.14.1",
     "normalize.css": "^8.0.1",
@@ -109,5 +110,8 @@
     "last 2 versions",
     "IE 11"
   ],
-  "dependencies": {}
+  "dependencies": {},
+  "puppeteer": {
+    "chromium_revision":768783
+  }
 }
