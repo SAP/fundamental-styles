@@ -58,6 +58,8 @@ $block: #{$fd-namespace}-panel;
       @include fd-icon('slim-arrow-left');
     }
 
+    padding-top: 0.125rem;
+
     &::before {
       font-size: 1rem;
       line-height: normal;
