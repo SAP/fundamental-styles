@@ -111,54 +111,54 @@ $inverted-color-accents: (
 
 // STATES FOR INVERTED OBJECT STATUS
 @mixin inverted-object-states($variablesSet) {
-  color: map-deep-get($variablesSet, "regular", "color");
-  background-color: map-deep-get($variablesSet, "regular", "background");
+  color: map_deep_get($variablesSet, "regular", "color");
+  background-color: map_deep_get($variablesSet, "regular", "background");
 
   &::before {
-    color: map-deep-get($variablesSet, "regular", "color");
+    color: map_deep_get($variablesSet, "regular", "color");
   }
 
   &:hover,
   &:active,
   &:visited {
-    color: map-deep-get($variablesSet, "regular", "color");
-    background-color: map-deep-get($variablesSet, "regular", "background");
+    color: map_deep_get($variablesSet, "regular", "color");
+    background-color: map_deep_get($variablesSet, "regular", "background");
 
     &::before {
-      color: map-deep-get($variablesSet, "regular", "color");
+      color: map_deep_get($variablesSet, "regular", "color");
     }
   }
 }
 
 // INTERACTION STATES FOR INVERTED OBJECT STATUS
 @mixin inverted-object-interaction-states($variablesSet) {
-  color: map-deep-get($variablesSet, "regular", "color");
-  background-color: map-deep-get($variablesSet, "regular", "background");
+  color: map_deep_get($variablesSet, "regular", "color");
+  background-color: map_deep_get($variablesSet, "regular", "background");
 
   &:visited {
-    color: map-deep-get($variablesSet, "visited", "color");
-    background-color: map-deep-get($variablesSet, "visited", "background");
+    color: map_deep_get($variablesSet, "visited", "color");
+    background-color: map_deep_get($variablesSet, "visited", "background");
 
     &::before {
-      color: map-deep-get($variablesSet, "visited", "color");
+      color: map_deep_get($variablesSet, "visited", "color");
     }
   }
 
   @include fd-hover() {
-    color: map-deep-get($variablesSet, "hover", "color");
-    background-color: map-deep-get($variablesSet, "hover", "background");
+    color: map_deep_get($variablesSet, "hover", "color");
+    background-color: map_deep_get($variablesSet, "hover", "background");
 
     &::before {
-      color: map-deep-get($variablesSet, "hover", "color");
+      color: map_deep_get($variablesSet, "hover", "color");
     }
   }
 
   @include fd-active() {
-    color: map-deep-get($variablesSet, "active", "color");
-    background-color: map-deep-get($variablesSet, "active", "background");
+    color: map_deep_get($variablesSet, "active", "color");
+    background-color: map_deep_get($variablesSet, "active", "background");
 
     &::before {
-      color: map-deep-get($variablesSet, "active", "color");
+      color: map_deep_get($variablesSet, "active", "color");
     }
   }
 }
