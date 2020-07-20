@@ -86,7 +86,7 @@
     "react": "^16.13.1",
     "react-is": "^16.13.1",
     "sass-loader": "^8.0.2",
-    "standard-version": "4.2.0",
+    "standard-version": "8.0.2",
     "start-server-and-test": "^1.11.0",
     "story-description-loader": "^1.0.0",
     "style-loader": "^1.2.1",
