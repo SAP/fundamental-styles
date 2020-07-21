@@ -1,0 +1,7 @@
+@function map_deep_get($map, $keys...) {
+  @for $i from 1 through length($keys) {
+    $map: map-get($map, nth($keys, $i));
+  }
+
+  @return $map;
+}
