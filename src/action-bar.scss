@@ -1,6 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
-@import "./functions";
+
 $block: #{$fd-namespace}-action-bar;
 
 .#{$block} {
@@ -48,6 +48,7 @@ $block: #{$fd-namespace}-action-bar;
 
   @include fd-reset();
 
+  box-shadow: var(--sapContent_HeaderShadow);
   background-color: $fd-action-bar-background-color;
   min-height: $fd-action-bar-min-height;
   max-height: $fd-action-bar-max-height;
@@ -84,13 +85,14 @@ $block: #{$fd-namespace}-action-bar;
 
   &__title {
     @include fd-reset();
-    @include fd-heading();
     @include fd-truncate-text();
 
+    text-rendering: optimizeLegibility;
     font-size: var(--sapFontHeader3Size);
     font-family: var(--sapFontHeaderFamily);
     color: $fd-action-bar-title-color;
     flex-grow: 1;
+    flex-basis: 0;
     line-height: 1.375rem;
     padding-right: 0.5rem;
     vertical-align: middle;
@@ -104,16 +106,14 @@ $block: #{$fd-namespace}-action-bar;
 
   &__description {
     @include fd-action-bar-description();
-  }
 
-  &__description--with-backBtn {
-    @include fd-action-bar-description();
+    &--back {
+      padding-left: 2.5rem;
 
-    padding-left: 2.5rem;
-
-    @include fd-rtl() {
-      padding-left: 0;
-      padding-right: 2.5rem;
+      @include fd-rtl() {
+        padding-left: 0;
+        padding-right: 2.5rem;
+      }
     }
   }
 

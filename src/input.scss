@@ -1,6 +1,5 @@
 @import "./new-settings";
 @import "./mixins";
-@import "./functions";
 
 /*!
 .fd-input
@@ -19,6 +18,10 @@ $block: #{$fd-namespace}-input;
   z-index: 1;
   cursor: text;
   overflow: hidden;
+
+  &::-ms-clear {
+    display: none;
+  }
 
   &[aria-expanded="false"] {
     z-index: 0;

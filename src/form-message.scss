@@ -1,6 +1,5 @@
 @import "./new-settings";
 @import "./mixins";
-@import "./functions";
 
 /*!
 .fd-form-message(--help, --error, --warning)
@@ -20,6 +19,7 @@ $block: #{$fd-namespace}-form-message;
   line-height: normal;
   color: var(--sapTextColor);
   white-space: pre-line !important;
+  box-shadow: var(--sapContent_Shadow1);
 
   @include fd-rtl() {
     right: 0;

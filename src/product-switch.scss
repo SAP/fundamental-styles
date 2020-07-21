@@ -1,6 +1,5 @@
 @import "./new-settings";
 @import "./mixins";
-@import "./functions";
 @import "./drag-and-drop";
 
 /*!
@@ -20,7 +19,7 @@ $block: #{$fd-namespace}-product-switch;
 
   @include fd-reset();
 
-  &__control {
+  .#{$fd-namespace}-button.#{$block}__control {
     @include fd-reset();
 
     color: var(--sapShell_TextColor);
@@ -113,7 +112,7 @@ $block: #{$fd-namespace}-product-switch;
       @include dragged() {
         &:hover,
         &:active {
-          background-color: fade(var(--sapList_Background), 90);
+          background-color: var(--sapList_Background);
 
           .#{$block}__icon {
             color: var(--sapContent_IconColor);
@@ -274,6 +273,7 @@ $block: #{$fd-namespace}-product-switch;
       border-radius: 0;
       border: none;
       border-bottom: 0.0625rem solid;
+      flex: auto;
       border-bottom-color: var(--sapList_GroupHeaderBorderColor);
 
       @include fd-product-pseudo-element-background(var(--sapTile_Background));

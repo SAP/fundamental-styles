@@ -1,22 +1,22 @@
 @import "./new-settings";
 @import "./mixins";
-@import "./functions";
 
 $block: #{$fd-namespace}-tokenizer;
 
 .#{$block} {
-
   $fd-tokenizer-compact-spacing: 0.25rem;
   $fd-tokenizer-spacing: 0.3125rem;
 
   width: 100%;
   background-color: var(--sapField_Background);
-  padding-left: $fd-tokenizer-spacing;
-  overflow: hidden;
   display: flex;
   align-items: center;
 
   &__inner {
+    @include fd-remove-scrollbar();
+
+    padding: 0 $fd-tokenizer-spacing;
+    overflow: hidden;
     float: right;
     white-space: nowrap;
     width: 100%;
@@ -27,6 +27,10 @@ $block: #{$fd-namespace}-tokenizer;
 
   .fd-token {
     margin-right: $fd-tokenizer-spacing;
+
+    @include fd-rtl() {
+      margin: 0 0 0 $fd-tokenizer-spacing;
+    }
   }
 
   &__indicator {
@@ -37,10 +41,19 @@ $block: #{$fd-namespace}-tokenizer;
   }
 
   &__input {
-    width: 100%;
-    border: none;
-    min-width: 3rem;
-    padding: 0 $fd-tokenizer-spacing 0 0;
+    &.#{$fd-namespace}-input {
+      border: none;
+      padding: 0;
+      min-width: 3rem;
+    }
+
+    &:first-child {
+      padding: 0 $fd-tokenizer-spacing;
+    }
+
+    &:last-child {
+      flex-basis: 100%;
+    }
 
     @include fd-focus() {
       outline: none;
@@ -59,27 +72,39 @@ $block: #{$fd-namespace}-tokenizer;
   }
 
   &--compact {
-    padding-left: $fd-tokenizer-compact-spacing;
+    .#{$block}__inner {
+      padding: 0 $fd-tokenizer-compact-spacing;
+    }
 
-    .#{$block}__input {
+    .#{$block}__input.#{$fd-namespace}-input {
       min-width: 2rem;
-      padding: 0 $fd-tokenizer-compact-spacing 0 0;
+    }
+
+    .#{$block}__input:first-child {
+      padding: 0 $fd-tokenizer-compact-spacing;
     }
 
     .fd-token {
       margin-right: $fd-tokenizer-compact-spacing;
+
+      @include fd-rtl() {
+        margin: 0 0 0 $fd-tokenizer-spacing;
+      }
     }
   }
 
   &--readonly {
     overflow: visible;
     background-color: var(--sapField_ReadOnly_Background);
+    .#{$block}__inner {
+      overflow: visible;
+    }
   }
 
-  /** To avoid overwriting from fd-input-group__input on multi-input component */
-  .#{$block}__input {
-    &:last-child {
-      flex-basis: 100%;
+  &--scrollable {
+    .#{$block}__inner {
+      justify-content: initial;
+      overflow: scroll;
     }
   }
 }

@@ -1,8 +1,5 @@
 @import "./new-settings";
 @import "./mixins";
-@import "./functions";
-@import "./product-menu";
-@import "./search-input";
 
 $block: #{$fd-namespace}-shellbar;
 
@@ -15,6 +12,7 @@ $block: #{$fd-namespace}-shellbar;
 
   // Paddings
   $fd-shellbar-item-spacing: 0.5rem !default;
+  $fd-shellbar-menu-button-padding: 1.937rem !default;
 
   // Heights
   $fd-shellbar-height: 2.75rem !default;
@@ -33,7 +31,10 @@ $block: #{$fd-namespace}-shellbar;
   $fd-content-badge-background: var(--sapContent_BadgeBackground) !default;
 
   // Box shadow
-  $fd-shellbar-box-shadow: inset 0 -0.0625rem 0 0 var(--sapShellBorderColor) !default;
+  $fd-shellbar-box-shadow: var(--sapContent_HeaderShadow) !default;
+
+  // Counter Notification
+  $fd-shellbar-counter-notification-offset: -0.25rem !default;
 
   @include fd-reset();
 
@@ -52,7 +53,9 @@ $block: #{$fd-namespace}-shellbar;
 
     display: flex;
     align-items: center;
-    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
 
     &--product {
       justify-content: flex-start;
@@ -73,59 +76,8 @@ $block: #{$fd-namespace}-shellbar;
       order: 3;
     }
 
-    .#{$block}__product-menu {
-      cursor: pointer;
-      color: $fd-shellbar-color;
-      background: $fd-shellbar-background-color;
-
-      &:hover {
-        background: $fd-shell-hover-background;
-      }
-
-      &:active,
-      &:focus {
-        background: $fd-shell-active-background;
-        color: $fd-shell-active-text-color;
-      }
-    }
-
-    .#{$block}__identifier--circle {
+    .#{$block}__avatar--circle {
       background-color: var(--sapAccentColor6);
-    }
-  }
-
-  &__button {
-    @include fd-button-reset();
-    @include fd-icon-size("m", "before");
-    @include fd-icon-size("m", "after");
-
-    border-color: transparent;
-    background: $fd-shellbar-background-color;
-    color: $fd-shellbar-color;
-
-    &:hover {
-      background: $fd-shell-hover-background;
-    }
-
-    &:active {
-      background: $fd-shell-active-background;
-    }
-
-    &:hover,
-    &:active {
-      color: $fd-shell-active-text-color;
-    }
-
-    @include fd-hover() {
-      @include fd-disabled() {
-        background: $fd-shellbar-background-color;
-      }
-    }
-
-    &.sap-icon--bell {
-      &::before {
-        margin-right: 0;
-      }
     }
   }
 
@@ -145,8 +97,13 @@ $block: #{$fd-namespace}-shellbar;
   }
 
   &__subtitle {
-    padding: 0 16px;
     font-size: var(--sapFontSmallSize);
+    margin-left: $fd-shellbar-item-spacing;
+
+    @include fd-rtl() {
+      margin-left: 0;
+      margin-right: $fd-shellbar-item-spacing;
+    }
 
     // Show only on desktop, hide on s
     @include fd-screen(s) {
@@ -167,13 +124,6 @@ $block: #{$fd-namespace}-shellbar;
   &__subtitle {
     display: inline-block;
     vertical-align: middle;
-    padding-right: 0;
-    padding-left: $fd-shellbar-item-spacing;
-
-    @include fd-rtl() {
-      padding-right: $fd-shellbar-item-spacing;
-      padding-left: 0;
-    }
   }
 
   &__title {
@@ -190,29 +140,22 @@ $block: #{$fd-namespace}-shellbar;
   &__logo {
     @include fd-reset();
 
-    padding-right: 0;
+    padding-left: 0;
+    margin-right: $fd-shellbar-item-spacing;
 
     @include fd-rtl() {
-      padding-left: 0;
+      padding-right: 0;
+      margin-right: 0;
+      margin-left: $fd-shellbar-item-spacing;
     }
 
     max-height: 2rem;
     background-repeat: no-repeat;
     background-size: contain;
-    // the logo inside the menu (show only on small screen)
-    @include fd-screen(m) {
-      display: inline-block;
-      margin-right: fd-space("tiny");
-
-      @include fd-rtl() {
-        margin-right: 0;
-        margin-left: fd-space("tiny");
-      }
-    }
 
     > * {
       line-height: 0;
-      max-height: fd-space(10);
+      max-height: 2.5rem;
       width: auto;
       display: block;
     }
@@ -278,9 +221,17 @@ $block: #{$fd-namespace}-shellbar;
       border: $fd-content-badge-background;
       color: $fd-shellbar-color;
       line-height: 0.8;
-      top: 10px;
-      max-height: 16px;
+      max-height: 1rem;
       overflow: hidden;
+      right: $fd-shellbar-counter-notification-offset;
+      top: $fd-shellbar-counter-notification-offset;
+      transform: none;
+
+      @include fd-rtl() {
+        transform: none;
+        right: initial;
+        left: $fd-shellbar-counter-notification-offset;
+      }
     }
 
     .#{$block}__input-group__addon {
@@ -310,11 +261,71 @@ $block: #{$fd-namespace}-shellbar;
     }
   }
 
-  &__button--menu {
+  &__popover__body--right {
+    &::before,
+    &::after {
+      right: 14px; // needed to place the popover body arrow under the button arrow icon
+    }
+  }
+
+  /*
+   It is necessary to specify fd-button here to avoid issues with the ordering of how the classes are applied to
+   the shellbar button elements. While specifying fd-button here breaks the rule of self-contained styles in a way, it
+   is a better option than using the buttonBase() mixin from the button.scss file or using !important.
+   */
+  .#{$fd-namespace}-button.#{$block}__button {
+    position: relative;
+    border-color: transparent;
+    background: $fd-shellbar-background-color;
+    color: $fd-shellbar-color;
+    overflow: visible;
+    padding: 0;
+    outline-color: var(--sapContent_ContrastFocusColor);
+
+    &:hover {
+      background: $fd-shell-hover-background;
+    }
+
+    &:active {
+      background: $fd-shell-active-background;
+      outline-color: var(--sapContent_ContrastFocusColor);
+    }
+
+    &:hover,
+    &:active {
+      color: $fd-shell-active-text-color;
+    }
+
+    @include fd-hover() {
+      @include fd-disabled() {
+        background: $fd-shellbar-background-color;
+      }
+    }
+
+    &.sap-icon--bell {
+      &::before {
+        margin-right: 0;
+      }
+
+      @include fd-rtl() {
+        &::before {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &.#{$block}__button--user-menu {
+      outline-offset: 0.1px;
+    }
+  }
+
+  .#{$fd-namespace}-button.#{$block}__button--menu {
     font-size: var(--sapFontSize);
+    outline-color: var(--sapContent_ContrastFocusColor);
 
     &::after {
       color: $fd-shellbar-color;
+      content: "\e287";
     }
 
     &:hover {
@@ -326,13 +337,13 @@ $block: #{$fd-namespace}-shellbar;
     &:focus {
       background: $fd-shell-active-background;
       color: $fd-shell-active-text-color;
+      outline-color: var(--sapContent_ContrastFocusColor);
     }
   }
 
-  &__popover__body--right {
-    &::before,
-    &::after {
-      right: 14px; // needed to place the popover body arrow under the button arrow icon
+  .#{$fd-namespace}-button.#{$fd-namespace}-button--menu.#{$block}__button--menu {
+    @media only screen and (max-width: 600px) {
+      padding: 0;
     }
   }
 }

@@ -1,0 +1,7 @@
+@mixin fd-popover-border-radius() {
+  $fd-popover-border-radius: var(--sapElement_BorderCornerRadius) !default;
+
+  border-radius: $fd-popover-border-radius;
+
+  @content;
+}

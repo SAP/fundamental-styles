@@ -1,5 +1,3 @@
-@import "./settings";
-@import "./functions";
 @import "./mixins";
 
 $block: #{$fd-namespace}-container;
@@ -7,8 +5,8 @@ $block: #{$fd-namespace}-container;
 .#{$block} {
   @include fd-clearfix();
 
-  margin-bottom: $fd-margin-bottom;
-  max-width: $fd-max-width--ui;
+  margin-bottom: 0.75rem;
+  max-width: 80.625rem;
 
   &:last-child {
     margin-bottom: 0;

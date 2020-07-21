@@ -6,7 +6,7 @@
 
 ## What is Fundamental Library Styles?
 
-Fundamental Library Styles is a light-weight presentation layer that can be used with your UI framework of choice (e.g. Angular, React, Vue, etc.). With Fundamental Library Styles’ library of stylesheets and HTML tags, developers can build consistent Fiori apps in any web-based technology.
+Fundamental Library Styles is a light-weight presentation layer that can be used with your UI framework of choice (e.g. Angular, React, Vue, etc.). With Fundamental Library Styles, library of stylesheets and HTML tags, developers can build consistent Fiori apps in any web-based technology.
 
 **Learn more at http://sap.github.io/fundamental-styles/**
 
@@ -45,33 +45,32 @@ This project does not contain fonts and icons. See our [Getting Started Guide](h
 
 1. **Install NPM Dependencies**: `npm install`
 
-1. **Install Ruby Gems** - These gems are needed to be installed for the documentation site. Navigate to the `docs` folder and `gem install ruby bundler jekyll`
-
-1. **Serve the documentation website locally** - `npm start`
-
-1. **Serve the development playground locally**: `npm run start:playground`
+1. **Serve the development playground and documentation website locally** - `npm start`
 
 ### Project Dependencies
 The project has the following prerequisites:
 
 * Git (for downloading this repo)
 * [Node LTS](https://nodejs.org/)
-* Ruby (for running the documentation website locally)
-* Docker (for running the visual regression testing framework)
 
-### Few differences between Fundamental Library Styles and [Fundamental](https://github.com/SAP/fundamental)
+## SLA
+Our Service Level Agreement. Fundamental Library Styles is aiming to deliver:
 
-Fundamental Library Styles is aiming to deliver:
-* [Fiori 3.0](https://www.sap.com/products/fiori.html) compliant components
-* themable components built on top of [SAP Theming Base Content](https://github.com/SAP/theming-base-content) by consuming the CSS Custom Properties delivered by the theming library
-* self-contained components(each component style file contains all the styling needed to be rendered properly and at the same time avoid external styling bleeding in and bleading out. `Bleading in` means that global reset wouldn't affect the component and `bleading out` means that the component styling should not affect other HTML elements) 
-* An html reference specification that consuming libraries must adhere to.
+### SLA - What
+* Consumable CSS that strives for [Fiori 3.0](https://www.sap.com/products/fiori.html) compliance.
+* Reference HTML specification that consuming libraries **MUST** adhere to.
+
+### SLA - How
+* Themable components built on top of [SAP Theming Base Content](https://github.com/SAP/theming-base-content) by consuming the CSS Custom Properties delivered by the theming library
+* Self-contained styles. That is, each component's style file contains all the styling needed to be rendered properly. External styling won't bleed-in internal styling won't blead-out. `Bleading in` means that CSS global reset won't affect the component and `bleading out` means that the component styling should not affect other HTML elements) 
 * Accessibility support
   * Accessibility - Color contrast support for WCAG 2.0 level AA (4.5:1 for typical text)
   * Accessibility - Semantic HTML reference
   * Accessibility - Aria attributes noted when possible in HTML reference
 
 This library is also being consumed by [Fundamental Library for Angular](https://github.com/SAP/fundamental-ngx), [Fundamental Library for React](https://github.com/SAP/fundamental-react), and [Fundamental Library for Vue](https://github.com/SAP/fundamental-vue).
+
+The above SLA is the primary difference between this library and the earlier [Fundamental](https://github.com/SAP/fundamental).
 
 ## Support
 
@@ -92,13 +91,12 @@ Merges to the `master` branch will be published as a prerelease. Prereleases wil
 The following circumstances will be considered a MAJOR or BREAKING change:
 * Droppping existing classnames, css variables, color names, color groups, spacing parameters
 * The existing underlying HTML markup of a component is altered
-* An existing unit test is altered to account for either of the above
+* Non-visual HTML attribute changes/additions (such as `role`, `aria-*`, `data-*`)
+  > Note: Fundamental Styles provides CSS directly, and HTML as reference to consumers. Because of the reference relationship of the HTML seen in Fundamental Styles, we want to be very clear when we alter that reference so that it is properly reflected in JS implementation libraries. Because of this, even non-visual changes will be treated as breaking.
 
 The following circumstances will NOT be considered a MAJOR or BREAKING change:
 * Introducing new  classnames, css variables, color names, color groups, spacing parameters
-* Non-visual HTML attribute changes/additions (such as `role`, `aria-*`, `data-*`)
 * Adding or modifying CSS properties and values of existing classnames.
-* An existing unit test is altered to account for non-visual HTML attribute changes/additions (such as `role`, `aria-*`, `data-*`)
 
 ## License
 

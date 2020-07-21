@@ -1,0 +1,118 @@
+@import "./listDefinitions.scss";
+
+.#{$block} {
+  &--navigation {
+    @include reset-list-item-paddings();
+
+    .#{$block}__link {
+      @include padding-left-right($fd-list-item-padding-x, $fd-list-item-padding-x);
+    }
+
+    // NAVIGATION + Navigation Indication
+    &.#{$block}--navigation-indication {
+      .#{$block}__link {
+        @include padding-left-right($fd-list-item-padding-x, 0);
+      }
+    }
+
+    // NAVIGATION + Selection
+    &.#{$block}--selection {
+      @include reset-list-item-paddings();
+
+      .#{$block}__link {
+        @include padding-left-right($fd-list-selection-container-width, $fd-list-item-padding-x);
+      }
+    }
+
+    // NAVIGATION + SELECTION + Compact
+    &.#{$block}--selection.#{$block}--compact {
+      .#{$block}__link {
+        @include padding-left-right($fd-list-selection-container-compact-width, $fd-list-item-padding-x);
+      }
+    }
+
+    // NAVIGATION + SELECTION + Navigation Indication
+    &.#{$block}--selection.#{$block}--navigation-indication {
+      @include reset-list-item-paddings();
+
+      .#{$block}__link {
+        @include padding-left-right($fd-list-selection-container-width, 0);
+      }
+    }
+
+    // NAVIGATION + SELECTION + NAVIGATION INDICATION + Compact
+    &.#{$block}--selection.#{$block}--navigation-indication.#{$block}--compact {
+      .#{$block}__link {
+        @include padding-left-right($fd-list-selection-container-compact-width, 0);
+      }
+    }
+
+    // NAVIGATION + Byline
+    &.#{$block}--byline,
+    &.#{$block}--byline.#{$block}--compact {
+      @include reset-list-item-paddings();
+
+      .#{$block}__link {
+        @include padding-left-right($fd-list-byline-item-padding-x, $fd-list-byline-item-padding-x);
+        @include padding-top-bottom(1rem);
+      }
+    }
+
+    // NAVIGATION + BYLINE + Navigation Indication
+    &.#{$block}--byline.#{$block}--navigation-indication {
+      .#{$block}__link {
+        @include padding-left-right($fd-list-item-padding-x, 0);
+      }
+    }
+
+    // NAVIGATION + BYLINE + Borderless
+    &.#{$block}--byline.#{$block}--no-border {
+      @include navigation-byline-borderless();
+    }
+
+    // NAVIGATION + BYLINE + Selection
+    &.#{$block}--byline.#{$block}--selection {
+      @include reset-list-item-paddings();
+
+      .#{$block}__link {
+        @include padding-left-right($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
+      }
+    }
+
+    // NAVIGATION + BYLINE + SELECTION + Compact
+    &.#{$block}--byline.#{$block}--selection.#{$block}--compact {
+      @include reset-list-item-paddings();
+
+      .#{$block}__link {
+        @include padding-left-right($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
+      }
+    }
+
+    // NAVIGATION + BYLINE + SELECTION + Borderless
+    &.#{$block}--byline.#{$block}--selection.#{$block}--no-border {
+      @include reset-list-item-paddings();
+      @include navigation-byline-borderless();
+    }
+
+    // NAVIGATION + BYLINE + SELECTION + Navigation Indication
+    &.#{$block}--byline.#{$block}--selection.#{$block}--navigation-indication {
+      @include reset-list-item-paddings();
+
+      .#{$block}__link {
+        @include padding-left-right($fd-list-selection-container-width, 0);
+      }
+    }
+
+    // NAVIGATION + BYLINE + SELECTION + NAVIGATION INDICATION + Compact
+    &.#{$block}--byline.#{$block}--selection.#{$block}--navigation-indication.#{$block}--compact {
+      .#{$block}__link {
+        @include padding-left-right($fd-list-selection-container-width, 0);
+      }
+    }
+
+    // NAVIGATION + BYLINE + SELECTION + NAVIGATION INDICATION + Borderless
+    &.#{$block}--byline.#{$block}--selection.#{$block}--navigation-indication.#{$block}--no-border {
+      @include navigation-byline-borderless();
+    }
+  }
+}

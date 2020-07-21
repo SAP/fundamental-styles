@@ -1,5 +1,5 @@
 @mixin dragged {
-  background-color: fade(var(--sapList_Background), 90);
+  background-color: var(--sapList_Background);
   cursor: grabbing;
   box-shadow: var(--sapContent_Shadow2);
   @content;

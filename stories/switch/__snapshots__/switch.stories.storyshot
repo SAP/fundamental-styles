@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Switch Default 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Switch Rtl 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Switch Semantic Switch 1`] = `
+
+
+
+`;
+
+exports[`Storyshots Components/Switch With Text 1`] = `
+
+
+`;

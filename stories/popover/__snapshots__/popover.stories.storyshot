@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Popover Control Examples 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Popover Overflow Protection 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Popover Placement Options 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Popover Popover with Header, Subheader and Footer 1`] = `
+
+
+`;

@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Link Link types examples 1`] = `
+<section>
+  
+
+  <a
+    class="fd-link"
+    href="#"
+    tabindex="0"
+  >
+    Standard Link
+  </a>
+  
+
+  <br />
+  <br />
+  
+
+  <a
+    class="fd-link fd-link--emphasized"
+    href="#"
+    tabindex="0"
+  >
+    Emphasized Link
+  </a>
+  
+
+  <br />
+  <br />
+  
+
+  <a
+    aria-disabled="true"
+    class="fd-link"
+  >
+    Disabled Link
+  </a>
+  
+
+  <br />
+  <br />
+  
+
+  <div
+    style="background-color:#314a5e;padding:10px"
+  >
+    
+    
+    <a
+      class="fd-link fd-link--inverted"
+      href="#"
+    >
+      Inverted Link
+    </a>
+    
+
+  </div>
+  
+
+  <br />
+  <br />
+  
+
+  <a
+    class="fd-link fd-link--subtle"
+    href="#"
+  >
+    Subtle Link
+  </a>
+  
+
+  <br />
+  <br />
+  
+
+  <a
+    class="fd-link"
+    href="#"
+    tabindex="0"
+  >
+    
+    Icon Left Link 
+    
+    <span
+      class="sap-icon--slim-arrow-right sap-icon--s"
+    />
+    
+
+  </a>
+  
+
+  <br />
+  <br />
+  
+
+  <a
+    class="fd-link"
+    href="#"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="sap-icon--slim-arrow-left sap-icon--s"
+    />
+     
+    Icon Right Link
+
+  </a>
+  
+
+</section>
+`;

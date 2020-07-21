@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Patterns/Time Picker Cozy And Compact Mode 1`] = `
+
+
+`;
+
+exports[`Storyshots Patterns/Time Picker Tablet Mode 1`] = `
+
+
+`;

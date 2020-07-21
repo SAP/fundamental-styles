@@ -12,10 +12,3 @@ $block: #{$fd-namespace}-button;
   outline-color: var(--sapContent_FocusColor);
   outline-offset: -0.1875rem;
 }
-
-@mixin styleContent() {
-  > .#{$block}--content {
-    @include buttonReset();
-    @content;
-  }
-}

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Forms/Radio Inline 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Radio Interaction States 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Radio Responsiveness 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Radio Right-to-Left Example 1`] = `
+
+
+`;

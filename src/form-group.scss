@@ -1,6 +1,5 @@
-@import "./settings";
+@import "./new-settings";
 @import "./mixins";
-@import "./functions";
 
 /*!
 .fd-form-group
@@ -11,7 +10,6 @@ $block: #{$fd-namespace}-form-group;
 .#{$block} {
   @include fd-reset();
 
-  margin-bottom: fd-space("small");
   min-inline-size: auto;
 
   &:last-child {
@@ -21,10 +19,6 @@ $block: #{$fd-namespace}-form-group;
   &--inline {
     display: flex;
     justify-content: flex-start;
-
-    :not(:last-child) {
-      margin-right: fd-space(4);
-    }
   }
 
   &__item {

@@ -1,5 +1,0 @@
-{% macro formGroup(modifier={}) -%}
-<div class="fd-form-group{{ modifier.block | modifier('form-group') }}">
-    {{- caller() | indent -}}
-</div>
-{%- endmacro %}

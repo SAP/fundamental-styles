@@ -1,4 +1,3 @@
-@import "./../functions/color";
 // These mixins ensure that all state selectors — ARIA, pseudos, `is` fallbacks — get applied properly.
 
 // ACTIVE state (press and hold)
@@ -21,11 +20,10 @@
 // FOCUS state (tab onto, click into)
 // override params $shadow-var, $shadow-value
 // `.is-focus` is for demo purposes
-@mixin fd-focus($shadow-var: --fd-color-action-focus, $shadow-value: fd-color-state("hover", "action")) {
+@mixin fd-focus() {
   &:focus,
   &.is-focus {
-    box-shadow: 0 0 0 1px var(#{$shadow-var}, #{$shadow-value});
-    z-index: map-get($fd-z-index-levels, "focus");
+    z-index: 5;
     @content;
   }
 }
@@ -43,11 +41,31 @@
   }
 }
 
+// Focus state, which is not support by IE11. Use it with `fd-fiori-focus` mixin.
+@mixin fd-fiori-focus-within($offset: -0.1875rem) {
+  &:focus-within {
+    outline-offset: $offset;
+    outline-width: var(--sapContent_FocusWidth);
+    outline-color: var(--sapContent_FocusColor);
+    outline-style: var(--sapContent_FocusStyle);
+    @content;
+  }
+}
+
 // HOVER state (mouseover)
 // `.is-hover` is for demo purposes
 @mixin fd-hover {
   &:hover,
   &.is-hover {
+    @content;
+  }
+}
+
+// Empty state
+// `.is-empty` is when empty state can't be applied, because of some internal framework comments
+@mixin fd-empty {
+  &:empty,
+  &.is-empty {
     @content;
   }
 }

@@ -1,6 +1,5 @@
 @import "./new-settings";
 @import "./mixins";
-@import "./functions";
 
 $block: #{$fd-namespace}-popover;
 
@@ -27,24 +26,6 @@ $block: #{$fd-namespace}-popover;
 
   $fd-popover-body-shadow-offset: var(--sapGroup_BorderWidth) !default;
 
-  // POPOVER HEADER
-  $fd-popover-header-height: 2.75rem !default;
-  $fd-popover-header-height--compact: 2.5rem !default;
-  $fd-popover-header-background: var(--sapPageHeader_Background);
-  $fd-popover-header-box-shadow: var(--sapContent_HeaderShadow);
-  $fd-popover-header-padding: 0 0.5rem !default;
-
-  // POPOVER SUBHEADER
-  $fd-popover-subheader-height: 2.75rem !default;
-  $fd-popover-subheader-height--compact: 2rem !default;
-
-  // POPOVER FOOTER
-  $fd-popover-footer-height: 2.75rem !default;
-  $fd-popover-footer-height--compact: 2.5rem !default;
-  $fd-popover-footer-background: var(--sapPageFooter_Background);
-  $fd-popover-footer-border-top: 0.0625rem solid var(--sapPageFooter_BorderColor);
-  $fd-popover-footer-padding: 0 0.5rem !default;
-
   @include fd-reset();
 
   position: relative;
@@ -61,20 +42,29 @@ $block: #{$fd-namespace}-popover;
       margin-bottom: 0;
     }
 
+    &.is-expanded {
+      z-index: 3;
+    }
+
     @include fd-disabled() {
       pointer-events: none;
     }
   }
 
+  &__wrapper {
+    border-radius: $fd-popover-border-radius;
+    overflow: auto;
+  }
+
   &__body {
     @include fd-reset();
+    @include fd-popover-border-radius();
 
     border: none;
     position: absolute;
     white-space: nowrap;
     box-shadow: $fd-popover-box-shadow;
     z-index: $fd-popover-z-index;
-    border-radius: $fd-popover-border-radius;
     background: $fd-popover-background-color;
     opacity: 1;
     visibility: visible;
@@ -116,15 +106,27 @@ $block: #{$fd-namespace}-popover;
       z-index: $fd-popover-z-index + 1;
     }
 
+    > *:first-child {
+      border-top-right-radius: $fd-popover-border-radius;
+      border-top-left-radius: $fd-popover-border-radius;
+    }
+
+    > *:last-child {
+      border-bottom-right-radius: $fd-popover-border-radius;
+      border-bottom-left-radius: $fd-popover-border-radius;
+    }
+
     &-header {
       & > *:first-child {
-        border-radius: $fd-popover-border-radius $fd-popover-border-radius 0 0;
+        border-top-right-radius: $fd-popover-border-radius;
+        border-top-left-radius: $fd-popover-border-radius;
       }
     }
 
     &-footer {
       & > * {
-        border-radius: 0 0 $fd-popover-border-radius $fd-popover-border-radius;
+        border-bottom-right-radius: $fd-popover-border-radius;
+        border-bottom-left-radius: $fd-popover-border-radius;
       }
     }
 
@@ -174,6 +176,7 @@ $block: #{$fd-namespace}-popover;
     &--no-arrow {
       box-shadow: $fd-popover-box-shadow-no-arrow;
       top: $fd-popover-top-position-noarrow;
+      z-index: 2;
 
       &::before,
       &::after {
@@ -208,7 +211,13 @@ $block: #{$fd-namespace}-popover;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
 
+      .#{$block}__wrapper {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
       &-fill {
+        display: block;
         max-width: 37.5rem;
         width: calc(100% - #{$fd-popover-body-shadow-offset} * 2);
       }
@@ -224,7 +233,9 @@ $block: #{$fd-namespace}-popover;
 
   &--input-message-group {
     .#{$block}__body,
-    .#{$block}__body--no-arrow {
+    .#{$block}__body--no-arrow,
+    .#{$block}__popper,
+    .#{$block}__popper--no-arrow {
       box-shadow: none;
       border: none;
       margin-top: -0.25rem;

@@ -1,0 +1,665 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Avatar Accent Colors 1`] = `
+<section>
+  
+
+  <span
+    class="fd-avatar fd-avatar--accent-color-1 fd-avatar--m sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--accent-color-2 fd-avatar--m sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--accent-color-3 fd-avatar--m sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--accent-color-4 fd-avatar--m sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--accent-color-5 fd-avatar--m sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--accent-color-6 fd-avatar--m sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--accent-color-7 fd-avatar--m sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--accent-color-9 fd-avatar--m sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--accent-color-10 fd-avatar--m sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Avatar Background Image 1`] = `
+<section>
+  
+
+  <span
+    aria-label="John Doe"
+    class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+    role="presentation"
+    style="background-image: url('https://placeimg.com/400/400/nature')"
+  />
+  
+
+  <span
+    aria-label="John Doe"
+    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail"
+    role="presentation"
+    style="background-image: url('https://placeimg.com/400/400/nature')"
+  />
+  
+
+  <span
+    aria-label="John Doe"
+    class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--thumbnail"
+    role="presentation"
+    style="background-image: url('https://placeimg.com/400/400/nature')"
+  />
+  
+
+  <span
+    aria-label="John Doe"
+    class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--thumbnail"
+    role="presentation"
+    style="background-image: url('https://placeimg.com/400/400/nature')"
+  />
+  
+
+  <span
+    aria-label="John Doe"
+    class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
+    role="presentation"
+    style="background-image: url('https://placeimg.com/400/400/nature')"
+  />
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Avatar Borders 1`] = `
+<section>
+  
+
+  <span
+    class="fd-avatar fd-avatar--xs fd-avatar--transparent fd-avatar--border sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--s fd-avatar--transparent fd-avatar--border sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--m fd-avatar--transparent fd-avatar--border sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--l fd-avatar--transparent fd-avatar--border sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent fd-avatar--border"
+  >
+    WW
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent fd-avatar--border"
+  >
+    WW
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent fd-avatar--border"
+  >
+    WW
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent fd-avatar--border"
+  >
+    WW
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border"
+  >
+    WW
+  </span>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Avatar Circle 1`] = `
+<section>
+  
+
+  <span
+    class="fd-avatar fd-avatar--xs fd-avatar--circle sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--s fd-avatar--circle sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--m fd-avatar--circle sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--l fd-avatar--circle sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--xl fd-avatar--circle sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--xs fd-avatar--circle"
+  >
+    WW
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--s fd-avatar--circle"
+  >
+    WW
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--m fd-avatar--circle"
+  >
+    WW
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--l fd-avatar--circle"
+  >
+    WW
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--xl fd-avatar--circle"
+  >
+    WW
+  </span>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Avatar Icon 1`] = `
+<section>
+  
+
+  <span
+    class="fd-avatar fd-avatar--xs sap-icon--washing-machine"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--s sap-icon--washing-machine"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--m sap-icon--washing-machine"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--l sap-icon--washing-machine"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--xl sap-icon--washing-machine"
+    role="presentation"
+  />
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Avatar Initials 1`] = `
+<section>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--xs"
+  >
+    WW
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--s"
+  >
+    WW
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--m"
+  >
+    WW
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--l"
+  >
+    WW
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--xl"
+  >
+    WW
+  </span>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Avatar Placeholder Background 1`] = `
+<section>
+  
+
+  <span
+    class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Avatar Tile Icon Background 1`] = `
+<section>
+  
+
+  <span
+    class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--tile sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--tile sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--tile sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--tile sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Avatar Transparent 1`] = `
+<section>
+  
+
+  <span
+    class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent sap-icon--money-bills"
+    role="presentation"
+  />
+  
+
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent"
+  >
+    WW
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent"
+  >
+    WW
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent"
+  >
+    WW
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent"
+  >
+    WW
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent"
+  >
+    WW
+  </span>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
+<section>
+  
+
+  <span
+    class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1 sap-icon--money-bills"
+    role="presentation"
+  >
+    
+    
+    <span
+      class="fd-avatar__zoom-icon sap-icon--edit"
+      role="presentation"
+    />
+    
+
+  </span>
+  
+
+  <span
+    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2 sap-icon--money-bills"
+    role="presentation"
+  >
+    
+    
+    <span
+      class="fd-avatar__zoom-icon sap-icon--edit"
+      role="presentation"
+    />
+    
+
+  </span>
+  
+
+  <span
+    class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3 sap-icon--money-bills"
+    role="presentation"
+  >
+    
+    
+    <span
+      class="fd-avatar__zoom-icon sap-icon--edit"
+      role="presentation"
+    />
+    
+
+  </span>
+  
+
+  <span
+    class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4 sap-icon--money-bills"
+    role="presentation"
+  >
+    
+    
+    <span
+      class="fd-avatar__zoom-icon sap-icon--edit"
+      role="presentation"
+    />
+    
+
+  </span>
+  
+
+  <span
+    class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5 sap-icon--money-bills"
+    role="presentation"
+  >
+    
+    
+    <span
+      class="fd-avatar__zoom-icon sap-icon--edit"
+      role="presentation"
+    />
+    
+
+  </span>
+  
+
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs"
+  >
+    WW
+    
+    <span
+      class="fd-avatar__zoom-icon sap-icon--edit"
+      role="presentation"
+    />
+    
+
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--accent-color-7 fd-avatar--s"
+  >
+    WW
+    
+    <span
+      class="fd-avatar__zoom-icon sap-icon--edit"
+      role="presentation"
+    />
+    
+
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m"
+  >
+    WW
+    
+    <span
+      class="fd-avatar__zoom-icon sap-icon--edit"
+      role="presentation"
+    />
+    
+
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--accent-color-9 fd-avatar--l"
+  >
+    WW
+    
+    <span
+      class="fd-avatar__zoom-icon sap-icon--edit"
+      role="presentation"
+    />
+    
+
+  </span>
+  
+
+  <span
+    aria-label="Wendy Wallace"
+    class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl"
+  >
+    WW
+    
+    <span
+      class="fd-avatar__zoom-icon sap-icon--edit"
+      role="presentation"
+    />
+    
+
+  </span>
+  
+
+</section>
+`;

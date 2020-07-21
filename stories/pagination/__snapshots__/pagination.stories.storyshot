@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Pagination First Page 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Pagination Last Page 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Pagination Middle Page 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Pagination Multiple Pages 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Pagination Rtl Example 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Pagination Second Page 1`] = `
+
+
+`;

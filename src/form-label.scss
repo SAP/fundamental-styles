@@ -1,6 +1,5 @@
 @import "./new-settings";
 @import "./mixins";
-@import "./functions";
 
 /*!
 .fd-form-label
@@ -8,31 +7,94 @@
 $block: #{$fd-namespace}-form-label;
 
 .#{$block} {
+  $fd-unit-description-padding: 0.25rem;
+  $fd-require-space-padding: 0.5rem;
+  $fd-colon-space-padding: 0.25rem;
+  $fd-require-colon-space-spacing: 0.75rem;
+
+  $fd-require-colon-spacing: 0.5rem;
+  $fd-require-asterix-spacing: 0.125rem;
+
   @include fd-form-label();
 
   &.is-disabled {
     opacity: 0.4;
   }
 
+  &--unit-description {
+    padding: 0 0 0 $fd-unit-description-padding;
+    color: var(--sapField_TextColor);
+    margin: 0;
+
+    @include fd-rtl() {
+      margin: 0;
+      padding: 0 $fd-unit-description-padding 0 0;
+    }
+  }
+
   &--required,
   &[aria-required="true"] {
+    padding-right: $fd-require-space-padding;
+
     &::after {
       content: "*";
       font-size: var(--sapFontSize);
       font-weight: bold;
       color: var(--sapField_RequiredColor);
-      margin-left: 0.125rem;
       position: absolute;
       right: 0;
       top: 0;
     }
 
     @include fd-rtl() {
+      padding-right: 0;
+      padding-left: $fd-require-space-padding;
+
       &::after {
-        margin-left: 0;
-        position: absolute;
         right: auto;
         left: 0;
+      }
+    }
+  }
+
+  &--colon {
+    padding-right: $fd-colon-space-padding;
+
+    &::before {
+      content: ":";
+      font-size: var(--sapFontSize);
+      color: inherit;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    @include fd-rtl() {
+      padding-left: $fd-colon-space-padding;
+      padding-right: 0;
+
+      &::before {
+        right: auto;
+        left: 0;
+      }
+    }
+
+    &.#{$block}--required,
+    &[aria-required="true"] {
+      padding-right: $fd-require-colon-space-spacing;
+
+      &::before {
+        right: $fd-require-colon-spacing;
+      }
+
+      @include fd-rtl() {
+        padding-left: $fd-require-colon-space-spacing;
+        padding-right: 0;
+
+        &::before {
+          right: auto;
+          left: $fd-require-colon-spacing;
+        }
       }
     }
   }

@@ -1,0 +1,125 @@
+
+@import "./listDefinitions.scss";
+
+.#{$block} {
+  &--byline {
+    .#{$block}__item {
+      width: 100%;
+      height: $fd-list-byline-item-height;
+      padding: $fd-list-byline-item-padding-y $fd-list-byline-item-padding-x;
+      align-items: flex-start;
+    }
+
+    .#{$block}__thumbnail {
+      @include fd-reset();
+      @include fd-flex-center();
+      @include ie11-active-state-fix();
+
+      width: $fd-list-byline-thumbnail-dimensions;
+      height: $fd-list-byline-thumbnail-dimensions;
+      min-width: $fd-list-byline-thumbnail-dimensions;
+      max-width: $fd-list-byline-thumbnail-dimensions;
+      min-height: $fd-list-byline-thumbnail-dimensions;
+      max-height: $fd-list-byline-thumbnail-dimensions;
+      border-radius: $fd-list-byline-thumbnail-border-radius;
+      margin-right: $fd-list-byline-thumbnail-spacing;
+      font-size: 2.5rem;
+      color: var(--sapContent_NonInteractiveIconColor);
+
+      @include fd-rtl() {
+        margin-right: 0;
+        margin-left: $fd-list-byline-thumbnail-spacing;
+      }
+    }
+
+    .#{$block}__content {
+      @include fd-reset();
+      @include ie11-active-state-fix();
+
+      @include fd-flex(column) {
+        align-content: space-between;
+      }
+
+      min-height: $fd-list-byline-thumbnail-dimensions;
+      min-width: $fd-list-byline-thumbnail-dimensions;
+      height: 100%;
+      width: 100%;
+      padding: 0.125rem 0;
+    }
+
+    .#{$block}__title {
+      font-size: $fd-list-large-font-size;
+    }
+
+    .#{$block}__byline {
+      @include fd-reset();
+      @include fd-ellipsis();
+
+      font-size: $fd-list-normal-font-size;
+      color: $fd-list-byline-section-text-color;
+      line-height: $fd-list-byline-text-line-height;
+
+      &--2-col {
+        display: flex;
+      }
+    }
+
+    .#{$block}__byline-left {
+      @include fd-reset();
+      @include fd-ellipsis();
+
+      width: 60%;
+      color: $fd-list-byline-section-text-color;
+      padding-right: $fd-list-byline-elements-spacing;
+      line-height: $fd-list-byline-text-line-height;
+
+      @include fd-rtl() {
+        padding-left: $fd-list-byline-elements-spacing;
+        padding-right: 0;
+      }
+    }
+
+    .#{$block}__byline-right {
+      @include fd-reset();
+      @include fd-ellipsis();
+
+      width: 40%;
+      color: $fd-list-byline-section-text-color;
+      padding-left: $fd-list-byline-elements-spacing;
+      line-height: $fd-list-byline-text-line-height;
+
+      @include fd-rtl() {
+        padding-left: 0;
+        padding-right: $fd-list-byline-elements-spacing;
+      }
+
+      @each $set-name, $color-set in $semantic-color {
+        &--#{$set-name} {
+          color: map_get($color-set, "color");
+        }
+      }
+    }
+
+    &.#{$block}--compact {
+      .#{$block}__title {
+        font-size: $fd-list-normal-font-size;
+      }
+    }
+
+    &.#{$block}--no-border {
+      .#{$block}__item {
+        padding: $fd-list-byline-borderless-item-padding-y $fd-list-byline-item-padding-x;
+        max-height: $fd-list-byline-item-height;
+        height: 100%;
+      }
+
+      .#{$block}__item:first-child {
+        padding-top: $fd-list-byline-item-padding-y;
+      }
+
+      .#{$block}__item:last-child {
+        padding-bottom: $fd-list-byline-item-padding-y;
+      }
+    }
+  }
+}

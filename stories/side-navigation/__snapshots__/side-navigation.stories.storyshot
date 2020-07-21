@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Side Navigation Complex Compact Side Nav 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Side Navigation Complex Cozy Side Nav 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Side Navigation Condensed State Compact 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Side Navigation Condensed State Cozy 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Side Navigation Cozy 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Side Navigation Cozy Icons 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Side Navigation Cozy Multiple 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Side Navigation Nested List With Group Headers 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Side Navigation Nested List With Group Headers Compact Mode 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Side Navigation Nested List With Icons Only In First Level 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Side Navigation Nested List Without Icons 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Side Navigation Nested List Without Links 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Side Navigation Rtl Cozy Multiple 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Side Navigation Rtl Example 1`] = `
+
+
+`;
