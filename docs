@@ -1,0 +1,215 @@
+#FUNDAMENTAL LIBRARY COMPONENT DOCUMENTATION
+
+
+###Action Bar
+The Action Bar component displays at the top of the page, and includes the page’s title, description, back button and action buttons.
+
+####Usage
+**Use the Action Bar if:**
+
+**Do not use the Action Bar if:**
+
+####Types
+•	**Default**
+This Action Bar displays a page title, description, back button and action buttons.
+•	**No back button**
+This Action Bar doesn’t display a back button, but displays a page title, description and action buttons.
+•	**No description**
+This Action Bar doesn’t display a description, but displays a page title, back button, and action buttons.
+•	**Long page title and description**
+This Action Bar displays a long page title and description, as well as a back button and action buttons.
+•	**Contextual menu**
+This Action Bar displays a page title and contextual menu with several main actions.
+•	**Responsive [M-L]**
+This Action Bar is responsive, and displays a page title, description, back button and action buttons. 
+o	Note: the responsive feature fits the M and L sizes required for tablet and small desktop screens.
+•	**Responsive [XL]**
+This Action Bar is responsive, and displays a page title, description, back button and action buttons.
+o	Note: the responsive feature fits the XL size required for larger screens of 1440px or more.
+•	**Mobile**
+This Action Bar is mobile responsive, and displays a page title, description, back button and action buttons.
+
+###Avatar
+The Avatar component displays an image, icon or user initials, and is used for user profiles, placeholder images, icons or business-related images i.e. product photos.
+
+####Sizes 
+
+**Size | rem	| Use for images in…	| Modifier**
+-----|------|---------------------|----------------------------
+XS	| 2 rem	| Table list items, Card list items | --xs modifier
+S	| 3 rem	| Card headers, Card list items | --s modifier
+M	| 4 rem	| App headers for small screen sizes | --m modifier
+L	| 5 rem	| App headers for normal screen sizes | --l modifier
+XL | 7 rem | App headers for large screen sizes | --xl modifier
+
+####Usage
+**Use Avatar to display:**
+•	A user’s image or initials
+•	Standardized images for business-related content (such as products, company logos, ad campaign images etc.)
+•	Icons
+•	Images with a transparent background
+•	Placeholder images
+
+**Do not use Avatar if:**
+•	You want to display an image for any other use case. Instead, use the Image component.
+•	You want to display images in a carousel. Instead, use the Carousel component.
+•	You want to display an interactive icon. Instead, use the Button component with an icon inside.
+
+
+####Types
+•	**Icon**
+Include role="presentation" when the avatar is used for only illustrative purposes. For example, include role if the icon sits right next to a label.
+•	**Initials**
+Include aria-label when there is no text equivalent for the avatar. This isn’t necessary if the avatar is used for illustrative purposes only. See Icon above.
+•	**Circle**
+A circle style can be displayed using the --circle modifier.
+•	**Background image**
+A background image can be displayed using the --thumbnail modifier.
+•	**Transparent**
+A transparent style can be displayed using the --transparent modifier.
+•	**Placeholder background**
+An Avatar with a placeholder background can be displayed using the --placeholder modifier.
+•	**Tile icon background**
+An Avatar with a tile icon background can be displayed using the --tile modifier.
+•	**Accent colors**
+Use fd-avatar--accent-color-* classes to change the background colors. Options include numbers ranging from 1 to 10. For example: fd-avatar--accent-color-10
+•	**Zoom icon**
+A zoom icon Avatar can be displayed by adding the .fd-avatar__zoom-icon element.
+•	**Borders**
+Borders can be displayed with the --border modifier.
+
+Bar
+Description:
+
+Breadcrumb
+Description:
+
+Busy Indicator
+Description:
+
+Button
+Description:
+
+Calendar
+Description:
+
+Forms
+Description:
+
+Counter
+Description:
+
+Dialog
+Description:
+
+File Uploader
+Description:
+
+Generic Tile
+Description:
+
+Icon
+Description:
+
+Info Label
+Description:
+
+Link
+Description:
+
+List
+Description:
+
+Localization Editor
+Description:
+
+Menu Message
+Description:
+
+Box Message
+Description:
+
+Strip Message
+Description:
+
+Toast Notification
+Description:
+
+Object Status
+Description:
+
+Pagination
+Description:
+
+Panel
+Description:
+
+Popover
+Description:
+
+Product
+Description:
+
+Switch
+Description:
+
+Select
+Description:
+
+Shellbar
+Description:
+
+Side Navigation
+Description:
+
+Step Input
+Description:
+
+Switch
+Description:
+
+Table
+Description:
+
+Tabs
+Description:
+
+Time
+Description:
+
+Token
+Description:
+
+Tree
+Description:
+
+PATTERNS
+
+Datepicker
+Description:
+
+LAYOUTS
+
+Layout
+Description:
+
+Grid Layout
+Description:
+
+Panel Column
+Description:
+
+Layouts
+Description:
+
+Page
+Description:
+
+Section
+Description:
+
+
+DEV
+
+Numeric Content
+Description:
