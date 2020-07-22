@@ -17,7 +17,7 @@ To use the grid, the user must use all of the \`fd-container\`, \`fd-row\`, and 
 - Use the \`fd-col--x\` modifier will make the column spread x-rows/12 (e.g. \`fd-col--4\` which will take 4 columns out of 12)
 
 <h2>Breakpoints</h2>
-- Small 600px <br>
+- Default until next specified breakpoint  <br>
 \`fd-col--x\` will be used until the next specified minimum breakpoint, column takes x/12 space of the row
 - Medium 600px<br>
 \`fd-col--x--m\` will be used from 600px to the next specified minimum breakpoint, column takes x/12 space of the row
@@ -205,12 +205,12 @@ export const nesting = () =>
     `
 <div class="fd-container">
   <div class="fd-row">
-    <div class="fd-col fd-col--6">
+    <div class="fd-col fd-col--2">
         <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
             6 col (1/2 = 50%)
         </div>
     </div>
-    <div class="fd-col fd-col--6">
+    <div class="fd-col fd-col--10">
         <div class="fd-row"">
             <div class="fd-col fd-col--2">
                 <div class="docs-layout-grid-bg docs-layout-grid-bg--color-2"> 
@@ -221,7 +221,7 @@ export const nesting = () =>
                 <div class="fd-row">
                     <div class="fd-col fd-col--6">
                         <div class="docs-layout-grid-bg docs-layout-grid-bg--color-3">
-                            12 coll inner row 2 (5/24 ~21%)
+                            6 coll inner row 2 (5/24 ~21%)
                         </div>
                     </div>      
                     <div class="fd-col fd-col--6">
