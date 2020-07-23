@@ -1,29 +1,16 @@
 @import "./listDefinitions.scss";
 
 .#{$block} {
-  @include fd-reset();
-
-  position: relative;
-  list-style: none;
-  width: 100%;
+  @include fd-list-container();
 
   &__item,
   &__group-header,
   &__footer {
-    @include fd-reset();
-
-    display: flex;
-    align-items: center;
-    padding: 0 $fd-list-item-padding-x;
-    height: 2.75rem;
+    @include fd-list-base-elements();
   }
 
   &__item {
-    @include fake-list-outline();
-
-    border-bottom: $fd-list-item-border;
-    background: var(--sapList_Background);
-    position: relative;
+    @include fd-list-base-item();
 
     &--no-data {
       .#{$block}__title {

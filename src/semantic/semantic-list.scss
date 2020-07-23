@@ -1,0 +1,11 @@
+@import "../listDefinitions";
+
+ul,
+ol {
+  @include fd-list-container();
+
+  > li {
+    @include fd-list-base-elements();
+    @include fd-list-base-item();
+  }
+}

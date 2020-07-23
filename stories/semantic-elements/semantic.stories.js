@@ -48,3 +48,24 @@ export const link = () => `
 link.parameters = {
     docs: { iframeHeight: 300 }
 };
+
+export const list = () => `
+<ul role="list">
+  <li role="listitem" tabindex="0">
+      List item 1
+  </li>
+  <li role="listitem" tabindex="0">
+      List item 2
+  </li>
+  <li role="listitem" tabindex="0">
+      List item 3
+  </li>
+  <li role="listitem" tabindex="0">
+      List item 4
+  </li>
+</ul>
+`;
+
+list.parameters = {
+    docs: { iframeHeight: 400 }
+};
