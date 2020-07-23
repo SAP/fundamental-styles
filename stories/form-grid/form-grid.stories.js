@@ -4,6 +4,34 @@ import '../../dist/form-layout-grid.css';
 export default {
     title: 'Components/Forms/Form Grid',
     parameters: {
+        description: `
+A form is used to present data to the user and to allow users to enter data in a structured way. The form acts as a container for other UI elements (such as labels, input fields, and checkboxes), while structuring these into a specific layout.
+
+There are three types of forms:
+
+- Display-only: the data is presented only as label-value field pairs without editable fields.
+
+- Editable: the data is presented as label-input field pairs, so users can enter data.
+
+- Mixed: some fields are editable and some are not.
+
+By using the responsive grid layout, the form offers a responsive layout based on a 12-column grid. There are three breakpoints, which result in three supported sizes: XL, L, M, and S. These breakpoints are not the XL, L, M, and S breakpoints of the page. In contrast to the page’s breakpoints, which react to the screen width, the breakpoints of the responsive grid layout react to the width of the form.
+
+### Breakpoints
+
+**Size S** reaches up to 600 px. This means that as soon as the width of the form reaches 601 px, it changes from S to M, because the default value of breakpointM is 600. The value of breakpointM is the first value of the smaller size.
+
+The property breakpointL between sizes L and M works in the same way: **Size M** reaches from 601 px to 1024 px. This means that as soon as the width of the form reaches 1025 px, it changes from M to L, because the default value of breakpointL is 1024.
+
+**Size L** reaches from 1025 px to 1440 px. This means that as soon as the width of the form reaches  1441 px, it changes from L to XL, because the default value of breakpointXL is 1440
+
+### Label-Field Ratio 
+
+For each size, you can define how many grid columns are used for **labels**, **fields** (implicitly), and **empty grid columns**.
+
+The optional empty grid columns are placed after the input elements. They avoid excessive stretching of the input fields. This ratio is displayed as **x:y:z**, where **x** is the number of grids used by the labels, **y** stands for the fields, and **z** for empty columns.
+
+We highly recommend to change the default of the label-field-ratio according to your app’s needs. For more information, see the recommended layouts in the Layout section.`,
         tags: ['f3', 'a11y']
     }
 };
@@ -47,8 +75,8 @@ export const fourSevenOneLayout = () => `
 fourSevenOneLayout.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `To display the form using a 4-7-1 layout, use 3 div elements. The first containing the <code class="docs-code">fd-container fd-form-layout-grid-container</code> class.
-The second containing the <code class="docs-code">fd-row</code> class. For the most inner element , use the <code class="docs-code">fd-col fd-col--x></code> ,where x is the appropriate column size and <code class="docs-code">fd-form-layout-grid-flex fd-form-layout-grid-flex--right</code> classes.`
+        storyDescription: `To display the form using a 4-7-1 layout, use 3 div elements. The first containing the \`fd-container fd-form-layout-grid-container\` class.
+The second containing the \`fd-row\` class. For the most inner element , use the \`fd-col fd-col--x\` ,where **x** is the appropriate column size and \`fd-form-layout-grid-flex fd-form-layout-grid-flex--right\` classes.`
     }
 };
 
@@ -91,7 +119,8 @@ export const fourSevenOneCompactLayout = () => `
 fourSevenOneCompactLayout.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'To display the form using a 4-7-1 compact layout, add the <code class="docs-code>--compact</code> modifier on the <code class="docs-code>fd-inpu</code> class.'
+        storyDescription: `
+To display the form using a 4-7-1 compact layout, add the \`--compact\` modifier on the \`fd-inpu\` class.`
     }
 };
 
@@ -140,7 +169,7 @@ export const vertical12ColumnLayout = () => `
 vertical12ColumnLayout.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: `To display the 12 column grid, apply the <code class="docs-code">--vertical</code> modifier on the <code class="docs-code">fd-form-layout-grid-container</code> class.
-For the inner columns, only use the <code class="docs-code>fd-col fd-col--12</code> class.`
+        storyDescription: `To display the 12 column grid, apply the \`--vertical\` modifier on the \`fd-form-layout-grid-container\` class.
+For the inner columns, only use the \`fd-col fd-col--12\` class.`
     }
 };
