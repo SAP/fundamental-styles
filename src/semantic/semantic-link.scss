@@ -1,0 +1,7 @@
+@import "./../new-settings";
+@import "./../mixins";
+
+a {
+  @include fd-reset();
+  @include fd-link();
+}

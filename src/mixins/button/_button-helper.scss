@@ -12,3 +12,12 @@ $block: #{$fd-namespace}-button;
   outline-color: var(--sapContent_FocusColor);
   outline-offset: -0.1875rem;
 }
+
+@mixin isDisabled() {
+  opacity: var(--sapContent_DisabledOpacity);
+  cursor: not-allowed;
+
+  &:focus {
+    outline: none;
+  }
+}

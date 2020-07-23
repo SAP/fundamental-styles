@@ -1,0 +1,34 @@
+@import "./../../new-settings";
+@import "./../../mixins";
+
+@mixin fd-input-base() {
+  @include fd-form-text();
+
+  min-width: 2.75rem;
+  width: 100%;
+  height: $fd-form-input-height;
+  margin-top: $fd-form-input-margin;
+  margin-bottom: 0.25rem;
+  padding: 0 0.625rem;
+  z-index: 1;
+  cursor: text;
+  overflow: hidden;
+
+  &:last-child {
+    margin-bottom: $fd-form-input-margin;
+  }
+
+  &::-ms-clear {
+    display: none;
+  }
+}
+
+@mixin fd-remove-spin() {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  -moz-appearance: textfield;
+}

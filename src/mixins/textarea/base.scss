@@ -1,0 +1,17 @@
+@import "./../../new-settings";
+@import "./../../mixins";
+
+@mixin fd-textarea-base() {
+  @include fd-form-text();
+
+  min-width: 6rem;
+  width: 100%;
+  min-height: 2.25rem;
+  margin: 0.25rem 0;
+  padding: 0.5rem 0.625rem;
+  white-space: pre-wrap;
+  overflow: auto;
+  resize: none;
+  display: block;
+  cursor: text;
+}
