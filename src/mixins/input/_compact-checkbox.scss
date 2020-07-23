@@ -1,0 +1,40 @@
+
+@mixin fd-compact-checkbox() {
+  $fd-checkbox-dimensions-compact: 1rem;
+  $fd-checkbox-margin: 0.6875rem;
+  $fd-checkbox-margin-compact: 0.5rem;
+
+  + .#{$block}__label {
+    padding: $fd-checkbox-margin-compact;
+
+    &::before {
+      font-size: 0.625rem;
+      height: $fd-checkbox-dimensions-compact;
+      width: $fd-checkbox-dimensions-compact;
+      min-width: $fd-checkbox-dimensions-compact;
+      margin-left: 0;
+    }
+
+    @include fd-empty() {
+      padding: $fd-checkbox-margin-compact;
+      margin: 0;
+
+      &::before,
+      &::after {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+
+  @include fd-focus() {
+    + .#{$block}__label {
+      @include fd-form-radio-focus($fd-checkbox-margin-compact);
+    }
+  }
+
+  &:indeterminate + .#{$block}__label::before {
+    content: "\e17b";
+    font-size: 0.6rem;
+  }
+}

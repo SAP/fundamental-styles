@@ -1,0 +1,5 @@
+@import "../mixins/textarea/base";
+
+textarea {
+  @include fd-textarea-base();
+}

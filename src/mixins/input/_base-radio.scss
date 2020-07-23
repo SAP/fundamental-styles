@@ -1,0 +1,95 @@
+@import "./../../new-settings";
+@import "./../../mixins";
+
+/*!
+.fd-radio
+*/
+$block: #{$fd-namespace}-radio;
+
+$fd-radio-inner-circle-padding-y: 0.0625rem; // to align the inner circle vertically in the middle of the outer
+$fd-radio-inner-circle-padding-x: 0.05rem; // to align the inner circle horizontally in the middle of the outer
+
+%fd-radio-input-hidden {
+  position: absolute;
+  opacity: 0.0001;
+}
+
+@mixin fd-base-radio($label: '', $label-selector: '', $full-label: '') {
+  $fd-radio-inner-circle-diameter: 1.375rem;
+  $fd-radio-outer-circle-margin: 0.6875rem;
+
+  @include fd-reset();
+
+  #{$label-selector} #{$label} {
+    @include fd-form-label();
+    @include action-cursor();
+
+    line-height: 1rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: $fd-radio-outer-circle-margin;
+
+    &::before {
+      content: "";
+      padding-top: $fd-radio-inner-circle-padding-y;
+      height: $fd-radio-inner-circle-diameter;
+      width: $fd-radio-inner-circle-diameter;
+      min-width: $fd-radio-inner-circle-diameter;
+      font-size: 0.6875rem;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "SAP-icons";
+      background-color: var(--sapField_Background);
+      margin-right: $fd-radio-outer-circle-margin;
+      color: var(--sapSelectedColor);
+      border: var(--sapField_BorderWidth) solid var(--sapField_BorderColor);
+      border-radius: 50%;
+    }
+
+    @include fd-hover() {
+      &::before {
+        background-color: var(--sapField_Hover_Background);
+        border-color: var(--sapField_Hover_BorderColor);
+      }
+    }
+
+    @include fd-rtl() {
+      &::before {
+        margin-left: $fd-radio-outer-circle-margin;
+        margin-right: 0;
+      }
+    }
+
+    @include fd-empty() {
+      padding: $fd-radio-outer-circle-margin;
+      margin: 0;
+
+      &::before,
+      &::after {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+
+  &:checked + #{$full-label}::before {
+    content: "\e255";
+  }
+
+  @include fd-focus() {
+    + #{$full-label} {
+      @include fd-form-radio-focus($fd-radio-outer-circle-margin);
+    }
+  }
+
+  @include fd-disabled() {
+    opacity: 0.0001;
+
+    + #{$full-label} {
+      pointer-events: none;
+      opacity: 0.4;
+    }
+  }
+}

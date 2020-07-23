@@ -1,0 +1,29 @@
+@import "./../mixins";
+@import "./../mixins/button/base";
+@import "./../mixins/button/button-helper";
+@import "./../mixins/button/standard";
+
+button {
+  @include buttonBase();
+  @include standard();
+
+  @include fd-focus() {
+    @include standardFocus();
+  }
+
+  @include fd-hover() {
+    @include standardHover();
+  }
+
+  @include fd-active() {
+    @include standardPressed();
+
+    @include fd-focus() {
+      @include standardPressedFocus();
+    }
+  }
+
+  @include fd-disabled() {
+    @include standardDisabled();
+  }
+}

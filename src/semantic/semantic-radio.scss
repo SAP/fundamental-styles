@@ -1,0 +1,10 @@
+@import "../mixins/input/base-radio";
+
+input[type=radio] {
+  @include fd-base-radio('label', '+', 'label');
+
+  // Prevent from hiding radio button, when it's used with `<label><input type="radio"></label>` structure
+  &:not(:only-child) {
+    @extend %fd-radio-input-hidden;
+  }
+}

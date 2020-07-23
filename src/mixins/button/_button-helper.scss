@@ -15,3 +15,12 @@ $block: #{$fd-namespace}-button;
     outline-color: var(--sapContent_ContrastFocusColor);
   }
 }
+
+@mixin isDisabled() {
+  opacity: var(--sapContent_DisabledOpacity);
+  cursor: not-allowed;
+
+  &:focus {
+    outline: none;
+  }
+}

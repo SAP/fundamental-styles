@@ -1,0 +1,64 @@
+@import "./../mixins";
+@import "./../../new-settings";
+
+$fd-button-border-width: var(--sapButton_BorderWidth);
+$fd-button-icon-font-size: 1rem;
+
+$fd-button-clickable-height: 2.75rem;
+$fd-button-height: 2.25rem;
+$fd-button-touchable-area: ($fd-button-clickable-height - $fd-button-height) / 2;
+$fd-button-padding-x: calc(0.625rem - #{$fd-button-border-width});
+$fd-button-min-width: 2.25rem;
+$fd-button-icon-margin: 0.375rem;
+
+$fd-button-compact-height: 1.625rem;
+$fd-button-compact-clickable-height: 2rem;
+$fd-button-compact-touchable-area: ($fd-button-compact-clickable-height - $fd-button-compact-height) / 2;
+$fd-button-compact-padding-x: calc(0.5rem - #{$fd-button-border-width});
+$fd-button-compact-min-width: 2rem;
+$fd-button-compact-line-height: calc(#{$fd-button-compact-height} - 2 * #{$fd-button-border-width});
+
+$fd-menu-button-max-width: 12rem;
+
+// anim
+$fd-button-transition-params: $fd-animation-speed ease-in !default;
+
+@mixin iconSize($size) {
+  width: $size;
+  min-width: $size;
+  height: $size;
+  font-size: $size;
+  line-height: $size;
+  font-family: 'SAP-icons';
+}
+
+@mixin buttonBase() {
+  height: $fd-button-height;
+  max-height: $fd-button-height;
+  min-width: $fd-button-min-width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  padding-left: $fd-button-padding-x;
+  padding-right: $fd-button-padding-x;
+  line-height: 1rem;
+  text-align: center;
+  text-shadow: var(--fdButton_Text_Shadow);
+
+  // look
+  border-style: solid;
+  border-width: $fd-button-border-width;
+
+  // Extended touchable area
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    top: -$fd-button-touchable-area;
+    bottom: -$fd-button-touchable-area;
+    left: 0;
+    right: 0;
+  }
+}

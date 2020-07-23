@@ -1,0 +1,5 @@
+@import "./../mixins";
+
+label {
+  @include fd-form-label();
+}

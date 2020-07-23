@@ -16,6 +16,7 @@ $fd-list-normal-font-size: var(--sapFontSize) !default;
 $fd-list-message-padding-left: 0.5rem !default;
 $fd-list-selected-state-border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
 $fd-list-item-border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+$fd-list-base-item-height: 2.75rem;
 
 $fd-list-byline-padding-top: 0.75rem !default;
 $fd-list-byline-thumbnail-dimensions: 3rem !default;
@@ -93,6 +94,7 @@ $semantic-color: (
       left: 0.125rem;
       right: 0.125rem;
       bottom: 0.125rem;
+      pointer-events: none;
     }
 
     @include fd-active() {
@@ -222,4 +224,30 @@ $semantic-color: (
       }
     }
   }
+}
+
+@mixin fd-list-container() {
+  @include fd-reset();
+
+  position: relative;
+  list-style: none;
+  width: 100%;
+  text-shadow: var(--fdListBase_Text_Shadow);
+}
+
+@mixin fd-list-base-item() {
+  @include fake-list-outline();
+
+  border-bottom: $fd-list-item-border;
+  background: var(--sapList_Background);
+  position: relative;
+}
+
+@mixin fd-list-base-elements() {
+  @include fd-reset();
+
+  display: flex;
+  align-items: center;
+  padding: 0 $fd-list-item-padding-x;
+  height: $fd-list-base-item-height;
 }

@@ -12,6 +12,7 @@ yarn.lock
 __diff_output__
 storybook-chromatic
 storybook-static
+.storybook/static/semantic-elements.css
 stories/docs/
 dist
 node_modules

@@ -1,0 +1,14 @@
+@import "../mixins/input/base";
+
+input {
+  &[type="text"],
+  &[type="password"],
+  &[type="number"],
+  &[type="email"] {
+    @include fd-input-base();
+  }
+
+  &[type="number"] {
+    @include fd-remove-spin();
+  }
+}
