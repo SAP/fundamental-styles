@@ -15,11 +15,11 @@ There are three types of forms:
 
 - Mixed: some fields are editable and some are not.
 
-By using the responsive grid layout, the form offers a responsive layout based on a 12-column grid. There are three breakpoints, which result in three supported sizes: XL, L, M, and S. These breakpoints are not the XL, L, M, and S breakpoints of the page. In contrast to the page’s breakpoints, which react to the screen width, the breakpoints of the responsive grid layout react to the width of the form.
+By using the responsive grid layout, the form offers a responsive layout based on a 12-column grid. There are four breakpoints, which result in three supported sizes: XL, L, M, and S. These breakpoints are not the XL, L, M, and S breakpoints of the page. In contrast to the page’s breakpoints, which react to the screen width, the breakpoints of the responsive grid layout react to the width of the form.
 
 ### Breakpoints
 
-**Size S** reaches up to 600 px. This means that as soon as the width of the form reaches 601 px, it changes from S to M, because the default value of breakpointM is 600. The value of breakpointM is the first value of the smaller size.
+**Default** reaches up to the next specified breakpoint. This means that if the next specified breakpoint is medium, as soon as the width of the form reaches 601 px, it changes from S to M, because the default value of breakpointM is 600. The value of breakpointM is the first value of the smaller size.
 
 The property breakpointL between sizes L and M works in the same way: **Size M** reaches from 601 px to 1024 px. This means that as soon as the width of the form reaches 1025 px, it changes from M to L, because the default value of breakpointL is 1024.
 
@@ -36,35 +36,51 @@ We highly recommend to change the default of the label-field-ratio according to 
     }
 };
 
-export const fourSevenOneLayout = () => `
+export const variousColumns = () => `
 <div class="fd-container fd-form-layout-grid-container">
     <div class="fd-row">
-        <div class="fd-col fd-col--4 fd-form-layout-grid-flex fd-form-layout-grid-flex--right">
-          <label class="fd-form-label" for="input-1-layout">Default Input:</label>
+        <div class="fd-col fd-col--2 fd-form-layout-grid-flex fd-form-layout-grid-flex--right">
+          <label class="fd-form-label fd-form-label--required" for="input-1c-layout">2 Column Label:</label>
         </div>
-        <div class="fd-col fd-col--7">
-            <input class="fd-input" type="text" id="input-1-layout" placeholder="Field placeholder text">
+        <div class="fd-col fd-col--10">
+            <input class="fd-input" type="text" id="input-1c-layout" placeholder="10 Column input">
         </div>
     </div>
     <div class="fd-row">
+      <div class="fd-col fd-col--3 fd-form-layout-grid-flex fd-form-layout-grid-flex--right">
+        <label class="fd-form-label fd-form-label--required" for="input-1c-layout">3 Column Label:</label>
+      </div>
+      <div class="fd-col fd-col--5 fd-col--offset-after-4">
+          <input class="fd-input" type="text" id="input-1c-layout" placeholder="5 Column input and 4 Empty Columns after">
+      </div>
+    </div>
+    <div class="fd-row">
         <div class="fd-col fd-col--4 fd-form-layout-grid-flex fd-form-layout-grid-flex--right">
-          <label class="fd-form-label fd-form-label--required" for="input-1c-layout">Required Input: </label>
+          <label class="fd-form-label" for="input-1-layout">4 Column Label:</label>
         </div>
-        <div class="fd-col fd-col--7">
-            <input class="fd-input" type="text" id="input-1c-layout" placeholder="Field placeholder text">
+        <div class="fd-col fd-col--7 fd-col--offset-after-1">
+            <input class="fd-input" type="text" id="input-1-layout" placeholder="7 Column input with 1 Empty Column After">
         </div>
+    </div>
+    <div class="fd-row">
+      <div class="fd-col fd-col--4 fd-form-layout-grid-flex fd-form-layout-grid-flex--right">
+        <label class="fd-form-label fd-form-label--required" for="input-1c-layout">4 Column Label:</label>
+      </div>
+      <div class="fd-col fd-col--8">
+          <input class="fd-input" type="text" id="input-1c-layout" placeholder="8 Column input">
+      </div>
     </div>
     <div class="fd-row" role="group" aria-labelledby="groupLabel">
         <div class="fd-col fd-col--4 fd-form-layout-grid-flex fd-form-layout-grid-flex--right">
-          <label class="fd-form-label" id="groupLabel" for="input-2">2 Inputs: </label>
+          <label class="fd-form-label" id="groupLabel" for="input-2">2 times 6 Column Inputs and 1 empty column after inputs: </label>
         </div>
         <div class="fd-col fd-col--7">
             <div class="fd-row">
                   <div class="fd-col fd-col--6">
-                      <input class="fd-input" type="text" id="input1-of-2" aria-label="input1-of-2" placeholder="Field placeholder text">
+                      <input class="fd-input" type="text" id="input1-of-2" aria-label="input1-of-2" placeholder="6 Column input">
                   </div>
                   <div class="fd-col fd-col--6">
-                      <input class="fd-input" type="text" id="input2-of-2" aria-label="input2-of-2" placeholder="Field placeholder text">
+                      <input class="fd-input" type="text" id="input2-of-2" aria-label="input2-of-2" placeholder="6 Column input">
                   </div>
               </div>
           </div>
@@ -72,9 +88,9 @@ export const fourSevenOneLayout = () => `
 </div>
 `;
 
-fourSevenOneLayout.parameters = {
+variousColumns.parameters = {
     docs: {
-        iframeHeight: 200,
+        iframeHeight: 250,
         storyDescription: `To display the form using a 4-7-1 layout, use 3 div elements. The first containing the \`fd-container fd-form-layout-grid-container\` class.
 The second containing the \`fd-row\` class. For the most inner element , use the \`fd-col fd-col--x\` ,where **x** is the appropriate column size and \`fd-form-layout-grid-flex fd-form-layout-grid-flex--right\` classes.`
     }
@@ -120,7 +136,7 @@ fourSevenOneCompactLayout.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: `
-To display the form using a 4-7-1 compact layout, add the \`--compact\` modifier on the \`fd-inpu\` class.`
+To display the form using a compact layout, add the \`--compact\` modifier on the \`fd-input\` class.`
     }
 };
 

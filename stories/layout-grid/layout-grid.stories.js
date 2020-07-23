@@ -277,6 +277,19 @@ export const offset = () =>
             6 columns with 6-column offset 
         </div>
     </div>
+    <div class="fd-col fd-col--3 fd-col--offset-after-1 fd-col--offset-after-2--m fd-col--offset-after-2--l fd-col--offset-after-1--xl">
+      <div class="docs-layout-grid-bg docs-layout-grid-bg--color-8"> 
+          2 column-width and offset after in different inflection points 
+      </div>
+    </div>
+    <div class="fd-col fd-col--4 fd-col--offset-after-1">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9"> 
+            4 columns with 2-column offset after
+        </div>
+    </div>
+    <div class="fd-col fd-col--2">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-12">2 column element</div>
+    </div>
   </div>
 </div>
 `;
@@ -284,7 +297,7 @@ export const offset = () =>
 offset.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: 'To add an offset to the left of the column for all sizes use the <code class="docs-code">--offset-x</code> modifier. X will be the size of your choice. If the column after the offset col no longer fits in parent container it will switch to the next page. To add an offset to the left of the column for certain sizes and above use the <code class="docs-code">--offset-x--size</code> modifier, where size is either s,m,l,xl'
+        storyDescription: 'To add an offset to the left of the column for all sizes use the <code class="docs-code">--offset-x</code> modifier. X will be the size of your choice. If the column after the offset col no longer fits in parent container it will switch to the next line. To add an offset to the left of the column for certain sizes and above use the <code class="docs-code">--offset-x--size</code> modifier, where size is either s,m,l,xl. To make the offset after and not before use the <code class="docs-code">--offset-after-x--size</code> modifier.'
     }
 };
 

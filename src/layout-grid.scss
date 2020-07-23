@@ -80,6 +80,10 @@ $col-xl: 16;
     &--offset-#{$n} {
       margin-left: ( ( $n / $col-until-xl ) *100%);
     }
+
+    &--offset-after-#{$n} {
+      margin-right: ( ( $n / $col-until-xl ) *100%);
+    }
   }
 
   .#{$blockRow} {
@@ -133,6 +137,10 @@ $col-xl: 16;
       &--offset-#{$n}--m {
         margin-left: ( ( $n / $col-until-xl ) *100%);
       }
+
+      &--offset-after-#{$n}--#{map-get($size,$col-until-xl)} {
+        margin-right: ( ( $n / $col-until-xl ) *100%);
+      }
     }
 
     .#{$blockRow} {
@@ -153,6 +161,10 @@ $col-xl: 16;
       &--offset-#{$n}--#{map-get($size,$col-until-xl)} {
         margin-left: ( ( $n / $col-until-xl ) *100%);
       }
+
+      &--offset-after-#{$n}--#{map-get($size,$col-until-xl)} {
+        margin-right: ( ( $n / $col-until-xl ) *100%);
+      }
     }
   }
 }
@@ -167,6 +179,10 @@ $col-xl: 16;
 
       &--offset-#{$n}--#{map-get($size,$col-xl)} {
         margin-left: ( ( $n / $col-xl ) *100%);
+      }
+
+      &--offset-after-#{$n}--#{map-get($size,$col-xl)} {
+        margin-right: ( ( $n / $col-xl) *100%);
       }
     }
   }
