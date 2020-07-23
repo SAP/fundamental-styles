@@ -15,7 +15,7 @@ npx node ci-scripts/bump_package.js $release_tag
 cat package.json | grep version
 
 git add .
-git commit -m "package.json & package-lock.json update"
+git commit -m "package.json & package-lock.json update [ci skip]"
 
 git status
 
