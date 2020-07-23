@@ -14,6 +14,9 @@ echo "$release_tag"
 npx node ci-scripts/bump_package.js $release_tag
 cat package.json | grep version
 
+git add .
+git commit -m "package.json & package-lock.json update"
+
 git status
 
 git push --follow-tags "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" "$TRAVIS_BRANCH"
