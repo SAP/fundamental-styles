@@ -16,7 +16,6 @@ cat package.json | grep version
 
 git add .
 git commit -m "package.json & package-lock.json update [ci skip]"
-
 git status
 
 git push --follow-tags "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" "$TRAVIS_BRANCH"
