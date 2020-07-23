@@ -4,15 +4,31 @@ import '../../dist/icon.css';
 export default {
     title: 'Components/Avatar',
     parameters: {
-        description: `Avatar is a way to visually present something using an icon or user initials.
+        description: `The avatar component displays an image, icon or user initials, and is used for user profiles, placeholder images, icons or business-related images i.e. product photos.
 
-There are multiple sizes:
+####Sizes
 
-- Extra Small (--xs - 2rem)
-- Small (--s) - 3rem
-- Medium (--m) - 4rem
-- Large (--l) - 5rem
-- Extra Large (--xl) - 7rem`,
+**Size | rem	| Use for images in…	| Modifier**
+-----|------|---------------------|----------------------------
+XS | 2 rem | Table list items, Card list items | --xs modifier
+S | 3 rem | Card headers, Card list items | --s modifier
+M | 4 rem | App headers for small screen sizes | --m modifier
+L | 5 rem | App headers for normal screen sizes | --l modifier
+XL | 7 rem | App headers for large screen sizes | --xl modifier
+
+####Usage
+Use avatar to display:
+•	A user’s image or initials
+•	Standardized images for business-related content (such as products, company logos, ad campaign images etc.)
+•	Icons
+•	Images with a transparent background
+•	Placeholder images
+
+Do not use avatar if:
+•	You want to display an image for any other use case. Instead, use the Image component.
+•	You want to display images in a carousel. Instead, use the Carousel component.
+•	You want to display an interactive icon. Instead, use the Button component with an icon inside.
+
         tags: ['a11y', 'f3', 'theme']
     }
 };
@@ -28,7 +44,7 @@ export const icon = () => `
 icon.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'Include <code>role="presentation"</code> when the avatar is used for only illustrative purposes. For example, if the icon sits right next to a label, use role.'
+        storyDescription: 'The icon avatar can be used to display non-interactive icons. If you want the icon to be interactive, use the button with an icon inside instead. When using the icon avatar for illustrative purposes only, include <code>role="presentation"</code> in the element. For instance, include role if the icon sits right next to a label.'
     }
 };
 
@@ -45,7 +61,7 @@ export const initials = () => `
 initials.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'Include aria-label when there is no text equivalent for the avatar. This is not necessary if the avatar is used for illustrative purposes only. See Icon above.'
+        storyDescription: 'The initials avatar can display up to 3 alphabetical characters, representing the first and last name(s) of a person, for example: MvV for Marjolein van Veen. The order in which the first and last name(s) are displayed depends on the language-specific settings. When there is no text equivalent for the avatar, include <code>aria-label</code> in the element.'
     }
 };
 
