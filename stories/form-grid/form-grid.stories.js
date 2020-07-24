@@ -851,7 +851,7 @@ export const sSize = () => `
         <div class="fd-col fd-col--4">
             <div class="fd-popover" style="width:100%">
                 <div class="fd-popover__control">
-                <div class="fd-select">
+                  <div class="fd-select">
                     <div
                         aria-controls="h031XCM509"
                         aria-expanded="false"
@@ -862,7 +862,7 @@ export const sSize = () => `
                         <span class="fd-select__text-content">US</span>
                         <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
                     </div>
-                    </div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -891,11 +891,77 @@ The label-field ratio is 12:12:0 by default:
     }
 };
 
-export const mSizes = () => `
+export const mSizeDefault = () => `
+<div class="fd-container fd-form-layout-grid-container">
+  <div class="fd-row">
+    <div class="fd-col fd-col--2 fd-form-layout-grid-flex fd-form-layout-grid-flex--right">
+      <label class="fd-form-label" for="input-1-name">Name:</label>
+    </div>
+    <div class="fd-col fd-col--10">
+      <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+    </div>
+  </div>
 
+  <div class="fd-row">
+    <div class="fd-col fd-col--2 fd-form-layout-grid-flex fd-form-layout-grid-flex--right">
+      <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
+    </div>
+    <div class="fd-col fd-col--10">
+      <div class="fd-row">
+      <div class="fd-col fd-col--4">
+          <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
+      </div>
+      <div class="fd-col fd-col--8">
+          <input class="fd-input" type="text" id="input-1-number" placeholder="Enter Street Number" value="495">
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fd-row">
+    <div class="fd-col fd-col--2 fd-form-layout-grid-flex fd-form-layout-grid-flex--right">
+      <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
+    </div>
+    <div class="fd-col fd-col--10">
+      <div class="fd-row">
+        <div class="fd-col fd-col--8">
+          <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
+      </div>
+      <div class="fd-col fd-col--4">
+          <input class="fd-input" type="text" id="input-1-city" placeholder="Enter City" value="Downtown">
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fd-row">
+    <div class="fd-col fd-col--2 fd-form-layout-grid-flex fd-form-layout-grid-flex--right">
+      <label class="fd-form-label" for="input-1-country">Country:</label>
+    </div>
+    <div class="fd-col fd-col--10">
+      <div class="fd-popover" style="width:100%">
+        <div class="fd-popover__control">
+          <div class="fd-select">
+            <div
+                aria-controls="h031XCM509"
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                class="fd-select__control"
+                role="combobox"
+                tabindex="0">
+                <span class="fd-select__text-content">US</span>
+                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+
+</div>
 `;
 
-mSizes.parameters = {
+mSizeDefault.parameters = {
     docs: {
         iframeHeight: 450,
         storyDescription: `
@@ -917,11 +983,325 @@ Size M goes down to 601 px. In this size, the 3:5:4 approach may not be wide eno
     }
 };
 
-export const lSizes = () => `
+export const mSizeSplitScreen = () => `
+<div class="fd-container fd-form-layout-grid-container">
+  <div class="fd-row">
+    <div class="fd-col fd-col--4">
+      <label class="fd-form-label" for="input-1-name">Name:</label>
+    </div>
+    <div class="fd-col fd-col--7 fd-col--7--offset-after--1">
+      <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+    </div>
+  </div>
 
+  <div class="fd-row">
+    <div class="fd-col fd-col--4">
+      <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
+    </div>
+    <div class="fd-col fd-col--7 fd-col--7--offset-after--1">
+      <div class="fd-row">
+      <div class="fd-col fd-col--4">
+          <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
+      </div>
+      <div class="fd-col fd-col--8">
+          <input class="fd-input" type="text" id="input-1-number" placeholder="Enter Street Number" value="495">
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fd-row">
+    <div class="fd-col fd-col--4">
+      <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
+    </div>
+    <div class="fd-col fd-col--7 fd-col--7--offset-after--1">
+      <div class="fd-row">
+        <div class="fd-col fd-col--8">
+          <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
+      </div>
+      <div class="fd-col fd-col--4">
+          <input class="fd-input" type="text" id="input-1-city" placeholder="Enter City" value="Downtown">
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fd-row">
+    <div class="fd-col fd-col--4">
+      <label class="fd-form-label" for="input-1-country">Country:</label>
+    </div>
+    <div class="fd-col fd-col--7 fd-col--7--offset-after--1">
+      <div class="fd-popover" style="width:100%">
+        <div class="fd-popover__control">
+          <div class="fd-select">
+            <div
+                aria-controls="h031XCM509"
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                class="fd-select__control"
+                role="combobox"
+                tabindex="0">
+                <span class="fd-select__text-content">US</span>
+                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+
+</div>
 `;
 
-lSizes.parameters = {
+mSizeSplitScreen.parameters = {
+    docs: {
+        iframeHeight: 450,
+        storyDescription: `
+When placing the form in the details part of a split screen, use a single-column layout with the label-field ratio **4:7:1** 
+- 4 grid columns used by the labels
+- 7 grid columns used by the fields
+- 1 grid column used by empty columns
+`
+    }
+};
+
+
+export const mSizeFullScreenApp = () => `
+<div class="fd-container fd-form-layout-grid-container">
+  <div class="fd-row">
+    <div class="fd-col fd-col--3">
+      <label class="fd-form-label" for="input-1-name">Name:</label>
+    </div>
+    <div class="fd-col fd-col--5 fd-col--5--offset-after--4">
+      <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+    </div>
+  </div>
+
+  <div class="fd-row">
+    <div class="fd-col fd-col--3">
+      <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
+    </div>
+    <div class="fd-col fd-col--5 fd-col--5--offset-after--4">
+      <div class="fd-row">
+      <div class="fd-col fd-col--4">
+          <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
+      </div>
+      <div class="fd-col fd-col--8">
+          <input class="fd-input" type="text" id="input-1-number" placeholder="Enter Street Number" value="495">
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fd-row">
+    <div class="fd-col fd-col--3">
+      <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
+    </div>
+    <div class="fd-col fd-col--5 fd-col--5--offset-after--4">
+      <div class="fd-row">
+        <div class="fd-col fd-col--8">
+          <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
+      </div>
+      <div class="fd-col fd-col--4">
+          <input class="fd-input" type="text" id="input-1-city" placeholder="Enter City" value="Downtown">
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fd-row">
+    <div class="fd-col fd-col--3">
+      <label class="fd-form-label" for="input-1-country">Country:</label>
+    </div>
+    <div class="fd-col fd-col--5 fd-col--5--offset-after--4">
+      <div class="fd-popover" style="width:100%">
+        <div class="fd-popover__control">
+          <div class="fd-select">
+            <div
+                aria-controls="h031XCM509"
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                class="fd-select__control"
+                role="combobox"
+                tabindex="0">
+                <span class="fd-select__text-content">US</span>
+                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+
+</div>
+`;
+
+mSizeFullScreenApp.parameters = {
+    docs: {
+        iframeHeight: 450,
+        storyDescription: `
+When placing the form in a full-screen app, use a single-column layout with the label-field ratio **3:5:4** (
+- 3 grid columns used by the labels
+- 5 grid columns used by the fields
+- 4 grid columns used by empty columns
+
+Size M goes down to 601 px. In this size, the 3:5:4 approach may not be wide enough for longer labels and fields. So if you expect long labels or input values, use the label-field ratio **4:8:0** (4 grid columns used by the labels, 8 grid columns used by the fields, and 0 grid columns used by empty columns).`
+    }
+};
+
+export const mSizeFullScreenAppLongLabel = () => `
+<div class="fd-container fd-form-layout-grid-container">
+  <div class="fd-row">
+    <div class="fd-col fd-col--4--m fd-col--3--l">
+      <label class="fd-form-label" for="input-1-name">Name:</label>
+    </div>
+    <div class="fd-col fd-col--8--m fd-col--5--l fd-col--offset-after--4">
+      <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+    </div>
+  </div>
+
+  <div class="fd-row">
+    <div class="fd-col fd-col--4--m fd-col--3--l">
+      <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
+    </div>
+    <div class="fd-col fd-col--8--m">
+      <div class="fd-row">
+      <div class="fd-col fd-col--4 fd-col--5--l fd-col--offset-after--4">
+          <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
+      </div>
+      <div class="fd-col fd-col--8">
+          <input class="fd-input" type="text" id="input-1-number" placeholder="Enter Street Number" value="495">
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fd-row">
+    <div class="fd-col fd-col--4--m fd-col--3--l">
+      <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
+    </div>
+    <div class="fd-col fd-col--8--m fd-col--5--l fd-col--offset-after--4">
+      <div class="fd-row">
+        <div class="fd-col fd-col--8">
+          <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
+      </div>
+      <div class="fd-col fd-col--4">
+          <input class="fd-input" type="text" id="input-1-city" placeholder="Enter City" value="Downtown">
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fd-row">
+    <div class="fd-col fd-col--4--m fd-col--3--l">
+      <label class="fd-form-label" for="input-1-country">Country:</label>
+    </div>
+    <div class="fd-col fd-col--8--m fd-col--5--l fd-col--offset-after--4">
+      <div class="fd-popover" style="width:100%">
+        <div class="fd-popover__control">
+          <div class="fd-select">
+            <div
+                aria-controls="h031XCM509"
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                class="fd-select__control"
+                role="combobox"
+                tabindex="0">
+                <span class="fd-select__text-content">US</span>
+                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+
+</div>
+`;
+
+mSizeFullScreenAppLongLabel.parameters = {
+    docs: {
+        iframeHeight: 450,
+        storyDescription: `
+
+Size M goes down to 601 px. In this size, the 3:5:4 approach may not be wide enough for longer labels and fields. So if you expect long labels or input values, use the label-field ratio **4:8:0** 
+- 4 grid columns used by the labels
+- 8 grid columns used by the fields
+- 0 grid columns used by empty columns`
+    }
+};
+
+export const lSizeDefault = () => `
+<div class="fd-container fd-form-layout-grid-container">
+  <div class="fd-row">
+    <div class="fd-col fd-col--4--l">
+      <label class="fd-form-label" for="input-1-name">Name:</label>
+    </div>
+    <div class="fd-col fd-col--8">
+      <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+    </div>
+  </div>
+
+  <div class="fd-row">
+    <div class="fd-col fd-col--4--l">
+      <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
+    </div>
+    <div class="fd-col fd-col--8">
+      <div class="fd-row">
+      <div class="fd-col fd-col--4">
+          <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
+      </div>
+      <div class="fd-col fd-col--8">
+          <input class="fd-input" type="text" id="input-1-number" placeholder="Enter Street Number" value="495">
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fd-row">
+    <div class="fd-col fd-col--4--l">
+      <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
+    </div>
+    <div class="fd-col fd-col--8">
+      <div class="fd-row">
+        <div class="fd-col fd-col--8">
+          <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
+      </div>
+      <div class="fd-col fd-col--4">
+          <input class="fd-input" type="text" id="input-1-city" placeholder="Enter City" value="Downtown">
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fd-row">
+    <div class="fd-col fd-col--4--l">
+      <label class="fd-form-label" for="input-1-country">Country:</label>
+    </div>
+    <div class="fd-col fd-col--8">
+      <div class="fd-popover" style="width:100%">
+        <div class="fd-popover__control">
+          <div class="fd-select">
+            <div
+                aria-controls="h031XCM509"
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                class="fd-select__control"
+                role="combobox"
+                tabindex="0">
+                <span class="fd-select__text-content">US</span>
+                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+
+</div>
+`;
+
+lSizeDefault.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
@@ -934,14 +1314,324 @@ The label-field ratio is **4:8:0** by default:
 - 8 grid columns of the responsive grid layout are used by fields.
 
 - 0 grid columns of the responsive grid layout are used by empty columns.
+`
+    }
+};
 
-If the form contains a single form group, use a single-column layout with a label-field ratio of **3:5:4** (3 grid columns used by the labels, 5 grid columns used by the fields, and 4 grid columns used by empty columns).
+export const lSizeSingleFormGroup = () => `
+<div class="fd-container fd-form-layout-grid-container">
+  <div class="fd-row">
+    <div class="fd-col fd-col--3--l">
+      <label class="fd-form-label" for="input-1-name">Name:</label>
+    </div>
+    <div class="fd-col fd-col--5--l fd-col--offset-after-4">
+      <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+    </div>
+  </div>
+
+  <div class="fd-row">
+    <div class="fd-col fd-col--3--l">
+      <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
+    </div>
+    <div class="fd-col fd-col--5--l fd-col--offset-after-4">
+      <div class="fd-row">
+      <div class="fd-col fd-col--4">
+          <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
+      </div>
+      <div class="fd-col fd-col--8">
+          <input class="fd-input" type="text" id="input-1-number" placeholder="Enter Street Number" value="495">
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fd-row">
+    <div class="fd-col fd-col--3--l">
+      <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
+    </div>
+    <div class="fd-col fd-col--5--l fd-col--offset-after-4">
+      <div class="fd-row">
+        <div class="fd-col fd-col--8">
+          <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
+      </div>
+      <div class="fd-col fd-col--4">
+          <input class="fd-input" type="text" id="input-1-city" placeholder="Enter City" value="Downtown">
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fd-row">
+    <div class="fd-col fd-col--3--l">
+      <label class="fd-form-label" for="input-1-country">Country:</label>
+    </div>
+    <div class="fd-col fd-col--5--l fd-col--offset-after-4">
+      <div class="fd-popover" style="width:100%">
+        <div class="fd-popover__control">
+          <div class="fd-select">
+            <div
+                aria-controls="h031XCM509"
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                class="fd-select__control"
+                role="combobox"
+                tabindex="0">
+                <span class="fd-select__text-content">US</span>
+                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+
+</div>
+`;
+
+lSizeSingleFormGroup.parameters = {
+    docs: {
+        iframeHeight: 500,
+        storyDescription: `
+If the form contains a single form group, use a single-column layout with a label-field ratio of **3:5:4** 
+- 3 grid columns used by the labels
+- 5 grid columns used by the fields
+- and 4 grid columns used by empty columns.
 
 If the form contains multiple form groups, you can also use a two-column layout with a label-field ratio of **12:12:0** (12 grid columns used by the labels, 12 grid columns used by the fields, and 0 grid columns used by empty columns). As explained already in the section Responsiveness (Breakpoints), Size L goes down to 1025 px. In this size, long labels that are put next to the fields might not fit on smaller L-sized screens (especially in split apps). Therefore labels are put above fields.`
     }
 };
 
+export const lSizeMultipleFormGroup = () => `
+<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical">
+  <div class="fd-row">
+    <div class="fd-col fd-col--6--l fd-col--wrap">
+
+
+
+      <div class="fd-row">
+          <div class="fd-col">
+              <div class="fd-form-layout-grid-flex">
+                  <label class="fd-form-label" for="input-1-name">Name:</label>
+              </div>
+          </div>
+          <div class="fd-col">
+              <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+          </div>
+      </div>
+      <div class="fd-row">
+          <div class="fd-col">
+              <div class="fd-form-layout-grid-flex">
+                  <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
+              </div>
+          </div>
+          <div class="fd-col">
+              <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
+          </div>
+          <div class="fd-col fd-col--4">
+              <input class="fd-input" type="text" id="input-1-number" placeholder="Enter Street Number" value="495">
+          </div>
+      </div>
+      <div class="fd-row">
+          <div class="fd-col">
+              <div class="fd-form-layout-grid-flex">
+                  <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
+              </div>
+          </div>
+          <div class="fd-col fd-col--4">
+              <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
+          </div>
+          <div class="fd-col">
+              <input class="fd-input" type="text" id="input-1-city" placeholder="Enter City" value="Downtown">
+          </div>
+      </div>
+      <div class="fd-row">
+          <div class="fd-col">
+              <div class="fd-form-layout-grid-flex">
+                  <label class="fd-form-label" for="input-1-country">Country:</label>
+              </div>
+          </div>
+          <div class="fd-col fd-col--4">
+              <div class="fd-popover" style="width:100%">
+                  <div class="fd-popover__control">
+                    <div class="fd-select">
+                      <div
+                          aria-controls="h031XCM509"
+                          aria-expanded="false"
+                          aria-haspopup="listbox"
+                          class="fd-select__control"
+                          role="combobox"
+                          tabindex="0">
+                          <span class="fd-select__text-content">US</span>
+                          <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
+    </div>
+    
+
+    <div class="fd-col fd-col--6--l fd-col--wrap">
+
+
+
+      <div class="fd-row">
+          <div class="fd-col">
+              <div class="fd-form-layout-grid-flex">
+                  <label class="fd-form-label" for="input-1b-name">Name:</label>
+              </div>
+          </div>
+          <div class="fd-col">
+              <input class="fd-input" type="text" id="input-1b-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+          </div>
+      </div>
+      <div class="fd-row">
+          <div class="fd-col">
+              <div class="fd-form-layout-grid-flex">
+                  <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
+              </div>
+          </div>
+          <div class="fd-col">
+              <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
+          </div>
+          <div class="fd-col fd-col--4">
+              <input class="fd-input" type="text" id="input-1-number" placeholder="Enter Street Number" value="495">
+          </div>
+      </div>
+      <div class="fd-row">
+          <div class="fd-col">
+              <div class="fd-form-layout-grid-flex">
+                  <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
+              </div>
+          </div>
+          <div class="fd-col fd-col--4">
+              <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
+          </div>
+          <div class="fd-col">
+              <input class="fd-input" type="text" id="input-1-city" placeholder="Enter City" value="Downtown">
+          </div>
+      </div>
+      <div class="fd-row">
+          <div class="fd-col">
+              <div class="fd-form-layout-grid-flex">
+                  <label class="fd-form-label" for="input-1-country">Country:</label>
+              </div>
+          </div>
+          <div class="fd-col fd-col--4">
+              <div class="fd-popover" style="width:100%">
+                  <div class="fd-popover__control">
+                    <div class="fd-select">
+                      <div
+                          aria-controls="h031XCM509"
+                          aria-expanded="false"
+                          aria-haspopup="listbox"
+                          class="fd-select__control"
+                          role="combobox"
+                          tabindex="0">
+                          <span class="fd-select__text-content">US</span>
+                          <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
+    </div>
+
+
+
+  </div>
+</div>
+`;
+
+lSizeMultipleFormGroup.parameters = {
+    docs: {
+        iframeHeight: 500,
+        storyDescription: `
+If the form contains multiple form groups, you can also use a two-column layout with a label-field ratio of **12:12:0** 
+
+- 12 grid columns used by the labels
+- 12 grid columns used by the fields
+- 0 grid columns used by empty columns. As explained already in the section Responsiveness (Breakpoints), Size L goes down to 1025 px. 
+In this size, long labels that are put next to the fields might not fit on smaller L-sized screens (especially in split apps). Therefore labels are put above fields.`
+    }
+};
+
 export const xlSizes = () => `
+<div class="fd-container fd-form-layout-grid-container">
+  <div class="fd-row">
+    <div class="fd-col fd-col--4 fd-form-layout-grid-flex fd-form-layout-grid-flex--right">
+      <label class="fd-form-label" for="input-2-name">Name:</label>
+    </div>
+    <div class="fd-col fd-col--8">
+      <input class="fd-input" type="text" id="input-2-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+    </div>
+  </div>
+
+  <div class="fd-row">
+    <div class="fd-col fd-col--4 fd-form-layout-grid-flex fd-form-layout-grid-flex--right">
+      <label class="fd-form-label fd-form-label--required" for="input-2-street">Street/No.: </label>
+    </div>
+    <div class="fd-col fd-col--8">
+      <div class="fd-row">
+      <div class="fd-col fd-col--4">
+          <input class="fd-input" type="text" id="input-2-street" placeholder="Enter address" value="Myrtle St.">
+      </div>
+      <div class="fd-col fd-col--8">
+          <input class="fd-input" type="text" id="input-2-number" placeholder="Enter Street Number" value="495">
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fd-row">
+    <div class="fd-col fd-col--4 fd-form-layout-grid-flex fd-form-layout-grid-flex--right">
+      <label class="fd-form-label fd-form-label--required" for="input-2-zip">ZIP Code/City: </label>
+    </div>
+    <div class="fd-col fd-col--8">
+      <div class="fd-row">
+        <div class="fd-col fd-col--8">
+          <input class="fd-input" type="text" id="input-2-zip" placeholder="Enter ZIP Code" value="43823">
+      </div>
+      <div class="fd-col fd-col--4">
+          <input class="fd-input" type="text" id="input-2-city" placeholder="Enter City" value="Downtown">
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fd-row">
+    <div class="fd-col fd-col--4 fd-form-layout-grid-flex fd-form-layout-grid-flex--right">
+      <label class="fd-form-label" for="input-2-country">Country:</label>
+    </div>
+    <div class="fd-col fd-col--8">
+      <div class="fd-popover" style="width:100%">
+        <div class="fd-popover__control">
+          <div class="fd-select">
+            <div
+                aria-controls="h031XCM509"
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                class="fd-select__control"
+                role="combobox"
+                tabindex="0">
+                <span class="fd-select__text-content">US</span>
+                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+
+</div>
 `;
 
 xlSizes.parameters = {
