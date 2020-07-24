@@ -1,0 +1,21 @@
+@import "./../mixins";
+
+// TO BE DECIDED
+form {
+  @include fd-reset();
+
+  min-inline-size: auto;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  > div {
+    @include fd-reset();
+
+    position: relative;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+  }
+}

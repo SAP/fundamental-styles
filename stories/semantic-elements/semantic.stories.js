@@ -1,7 +1,7 @@
-import '../../dist/semantic-elements.css';
+import "../../dist/semantic-elements.css";
 
 export default {
-    title: 'Components/Semantic Elements',
+    title: "Components/Semantic Elements",
     parameters: {
         description: ``
     }
@@ -13,20 +13,34 @@ export const button = () => `
 `;
 
 button.parameters = {
-    docs: { iframeHeight: 300 }
+    docs: { iframeHeight: 200 }
 };
 
 export const input = () => `
-    <input type="text" aria-label="Default Input Text" placeholder="Default Input Text">
-    <input type="number" aria-label="Default Input Number" placeholder="Default Input Number">
-    <input type="password" aria-label="Default Input Password" placeholder="Default Input Password">
+    <label for="input-1">Default input</label>
+    <input type="text" id="input-1" aria-label="Default Input Text" placeholder="Write Something...">
     
-    <input type="text" disabled aria-label="Disabled Input" value="Disabled Input">
-    <input type="text" readonly aria-label="Readonly Input" value="Readonly Input">
+    
+    <label for="input-2">Default input number</label>
+    <input type="number" id="input-2" aria-label="Default Input Number" placeholder="Write Something...">
+
+
+    <label for="input-3">Default input password</label>
+    <input type="password" id="input-3" aria-label="Default Input Password" placeholder="Write Something...">
+    
+    <label for="input-4">Disabled Input</label>
+    <input type="text" id="input-4" disabled aria-label="Disabled Input" value="Disabled Input">
+
+
+    <label for="input-4">Readonly Input</label>
+    <input type="text" id="input-5" readonly aria-label="Readonly Input" value="Readonly Input">
 `;
 
 input.parameters = {
-    docs: { iframeHeight: 300 }
+    docs: {
+        iframeHeight: 400,
+        storyDescription: "There are presented inputs with associated labels"
+    }
 };
 
 export const textarea = () => `
@@ -46,7 +60,7 @@ export const link = () => `
 `;
 
 link.parameters = {
-    docs: { iframeHeight: 300 }
+    docs: { iframeHeight: 200 }
 };
 
 export const list = () => `
@@ -67,5 +81,28 @@ export const list = () => `
 `;
 
 list.parameters = {
+    docs: { iframeHeight: 300 }
+};
+
+export const form = () => `
+<form>
+    <div>
+        <label for="input-form-1">Input inside form</label>
+        <input type="text" id="input-form-1" aria-label="Input inside form" placeholder="Write Something...">    
+    </div>
+    <div>
+        <label for="input-form-2">Input inside form</label>
+        <input type="text" id="input-form-2" aria-label="Input inside form" placeholder="Write Something...">    
+    </div>
+    <div>
+        <label for="input-form-3">Input inside form</label>
+        <input type="text" id="input-form-3" aria-label="Input inside form" placeholder="Write Something...">    
+    </div>
+</form>
+`;
+
+form.parameters = {
     docs: { iframeHeight: 400 }
 };
+
+
