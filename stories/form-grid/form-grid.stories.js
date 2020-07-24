@@ -804,6 +804,167 @@ If the form is put into a full-screen app and it contains multiple form groups, 
     }
 };
 
+export const sSize = () => `
+<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical" style="max-width:600px">
+    <div class="fd-row">
+        <div class="fd-col fd-col--12">
+            <div class="fd-form-layout-grid-flex">
+                <label class="fd-form-label" for="input-1-name">Name:</label>
+            </div>
+        </div>
+        <div class="fd-col fd-col--12">
+            <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+    </div>
+    <div class="fd-row">
+        <div class="fd-col fd-col--12">
+            <div class="fd-form-layout-grid-flex">
+                <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
+            </div>
+        </div>
+        <div class="fd-col fd-col--12">
+            <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
+        </div>
+        <div class="fd-col fd-col--4">
+            <input class="fd-input" type="text" id="input-1-number" placeholder="Enter Street Number" value="495">
+        </div>
+    </div>
+    <div class="fd-row">
+        <div class="fd-col fd-col--12">
+            <div class="fd-form-layout-grid-flex">
+                <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
+            </div>
+        </div>
+        <div class="fd-col fd-col--4">
+            <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
+        </div>
+        <div class="fd-col fd-col--12">
+            <input class="fd-input" type="text" id="input-1-city" placeholder="Enter City" value="Downtown">
+        </div>
+    </div>
+    <div class="fd-row">
+        <div class="fd-col fd-col--12">
+            <div class="fd-form-layout-grid-flex">
+                <label class="fd-form-label" for="input-1-country">Country:</label>
+            </div>
+        </div>
+        <div class="fd-col fd-col--4">
+            <div class="fd-popover" style="width:100%">
+                <div class="fd-popover__control">
+                <div class="fd-select">
+                    <div
+                        aria-controls="h031XCM509"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        class="fd-select__control"
+                        role="combobox"
+                        tabindex="0">
+                        <span class="fd-select__text-content">US</span>
+                        <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+`;
+
+sSize.parameters = {
+    docs: {
+        iframeHeight: 450,
+        storyDescription: `
+Size S is targeting smartphones and dialogs.
+
+This form uses a single-column layout. This means that the form groups are positioned below each other in a single column and the labels are positioned above the fields to avoid truncation of the labels.
+
+The label-field ratio is 12:12:0 by default:
+
+- 12 grid columns of the responsive grid layout are used by the labels.
+(A label handles the space of a whole row.)
+
+- 12 grid columns of the responsive grid layout are used by the fields.
+(A field handles the space of a whole row.)
+
+- 0 grid columns of the responsive grid layout are used by empty columns.
+(There is no empty space on the right of the field.)`
+    }
+};
+
+export const mSizes = () => `
+
+`;
+
+mSizes.parameters = {
+    docs: {
+        iframeHeight: 450,
+        storyDescription: `
+Size M is using a single-column layout. The labels are positioned in the same row as the corresponding input field or value, and form groups are positioned below each other.
+
+The label-field ratio is **2:10:0** by default:
+
+- 2 grid columns of the responsive grid layout are used by the labels.
+
+- 10 grid columns of the responsive grid layout are used by the fields.
+
+- 0 columns of the responsive grid layout are used by empty columns.
+
+If you place the form in the details part of a split screen, use a single-column layout with the label-field ratio **4:7:1** (4 grid columns used by the labels, 7 grid columns used by the fields, and 1 grid column used by empty columns).
+
+If you place the form in a full-screen app, use a single-column layout with the label-field ratio **3:5:4** (3 grid columns used by the labels, 5 grid columns used by the fields, and 4 grid columns used by empty columns).
+
+Size M goes down to 601 px. In this size, the 3:5:4 approach may not be wide enough for longer labels and fields. So if you expect long labels or input values, use the label-field ratio **4:8:0** (4 grid columns used by the labels, 8 grid columns used by the fields, and 0 grid columns used by empty columns).`
+    }
+};
+
+export const lSizes = () => `
+
+`;
+
+lSizes.parameters = {
+    docs: {
+        iframeHeight: 500,
+        storyDescription: `
+Size L use a two-column layout. That means that the form groups are placed next to each other to have all the information on one screen and to avoid scrolling. In these columns, the labels are positioned in the same row as the corresponding input field or value. So the form groups adopt the Z layout (reading direction in rows, not in columns).
+
+The label-field ratio is **4:8:0** by default:
+
+- 4 grid columns of the responsive grid layout are used by the labels.
+
+- 8 grid columns of the responsive grid layout are used by fields.
+
+- 0 grid columns of the responsive grid layout are used by empty columns.
+
+If the form contains a single form group, use a single-column layout with a label-field ratio of **3:5:4** (3 grid columns used by the labels, 5 grid columns used by the fields, and 4 grid columns used by empty columns).
+
+If the form contains multiple form groups, you can also use a two-column layout with a label-field ratio of **12:12:0** (12 grid columns used by the labels, 12 grid columns used by the fields, and 0 grid columns used by empty columns). As explained already in the section Responsiveness (Breakpoints), Size L goes down to 1025 px. In this size, long labels that are put next to the fields might not fit on smaller L-sized screens (especially in split apps). Therefore labels are put above fields.`
+    }
+};
+
+export const xlSizes = () => `
+`;
+
+xlSizes.parameters = {
+    docs: {
+        iframeHeight: 500,
+        storyDescription: `
+Size XL uses also a two-column layout. To have all the information on one screen and avoid scrolling, the form groups are placed next to each other.  In these columns, the labels are positioned in the same row as the corresponding input field or value. The form groups adopt the Z layout.
+
+The label-field ratio for size XL is **4:8:0** (technically the value is set to -1 and inherits the value of size L, see also the development hint below) by default:
+
+- 4 grid columns of the responsive grid layout are used by labels.
+- 8 grid columns of the responsive grid layout are used by fields.
+- 0 grid columns of the responsive grid layout are used by empty columns.
+
+If the form contains a single form group, use a single-column layout with a label-field ratio of **3:5:4** (3 grid columns used by the labels, 5 grid columns used by the fields, and 4 grid columns used by empty columns).
+
+If the form contains multiple form groups, you can also use a **two-column layout** with a label-field ratio of **4:8:0**  (4 grid columns used by the labels, 8 grid columns used by the fields, and 0 grid columns used by empty columns).
+
+If the form is put into a full-screen app and it contains multiple form groups, you can also use a **three-column layout** with a label-field ratio of **12:12:0** (12 grid columns used by the labels, 12 grid columns used by the fields, and 0 grid columns used by empty columns).
+`
+    }
+};
+
 export const variousColumns = () => `
 <div class="fd-container fd-form-layout-grid-container">
     <div class="fd-row">
