@@ -49,11 +49,7 @@ $block: #{$fd-namespace}-radio;
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding: $fd-radio-outer-circle-margin 0 $fd-radio-outer-circle-margin $fd-radio-outer-circle-margin;
-
-    @include fd-rtl() {
-      padding: $fd-radio-outer-circle-margin $fd-radio-outer-circle-margin $fd-radio-outer-circle-margin 0;
-    }
+    padding: $fd-radio-outer-circle-margin;
 
     &::before {
       content: "";

@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.3-rc.1"></a>
+## [0.11.3-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.0...v0.11.3-rc.1) (2020-07-23)
+
+
+### Bug Fixes
+
+* focus ring on Radio and Checkbox ([#1283](https://github.com/SAP/fundamental-styles/issues/1283)) ([61d2f8b](https://github.com/SAP/fundamental-styles/commit/61d2f8b))
+
+
+
 <a name="0.11.3-rc.0"></a>
 ## [0.11.3-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.11.2...v0.11.3-rc.0) (2020-07-21)
 

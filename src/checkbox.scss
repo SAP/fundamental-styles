@@ -42,13 +42,9 @@ $block: #{$fd-namespace}-checkbox;
     @include action-cursor();
 
     line-height: 1rem;
-    padding: $fd-checkbox-margin 0 $fd-checkbox-margin $fd-checkbox-margin;
+    padding: $fd-checkbox-margin;
     display: flex;
     align-items: center;
-
-    @include fd-rtl() {
-      padding: $fd-checkbox-margin $fd-checkbox-margin $fd-checkbox-margin 0;
-    }
 
     &::before {
       content: "";
@@ -161,11 +157,7 @@ $block: #{$fd-namespace}-checkbox;
 
   &--compact {
     + .#{$block}__label {
-      padding: $fd-checkbox-margin-compact 0 $fd-checkbox-margin-compact $fd-checkbox-margin-compact;
-
-      @include fd-rtl() {
-        padding: $fd-checkbox-margin-compact $fd-checkbox-margin-compact $fd-checkbox-margin-compact 0;
-      }
+      padding: $fd-checkbox-margin-compact;
 
       &::before {
         font-size: 0.625rem;
