@@ -90,6 +90,10 @@ $col-xl: 16;
     margin: 0 -0.25rem;
     margin-top: -0.5rem;
   }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 600px) {

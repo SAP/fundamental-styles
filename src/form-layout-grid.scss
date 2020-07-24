@@ -6,17 +6,6 @@ $blockCol: #{$fd-namespace}-col;
 $blockContainer: #{$fd-namespace}-container;
 $blockRow: #{$fd-namespace}-row;
 
-.#{$block}-flex {
-  display: flex;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  justify-content: flex-start;
-
-  &--right {
-    justify-content: flex-end;
-  }
-}
-
 @media (min-width: 0) {
   .#{$blockContainer}.#{$block}-container {
     padding: 1rem;
@@ -30,6 +19,15 @@ $blockRow: #{$fd-namespace}-row;
     padding: 1rem;
     margin: 0 -0.25rem;
 
+    > * {
+      > :first-child {
+        display: flex;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        justify-content: flex-end;
+      }
+    }
+
     .#{$blockRow} {
       margin-bottom: 0;
       align-items: center;
@@ -37,6 +35,10 @@ $blockRow: #{$fd-namespace}-row;
 
       .#{$blockCol} {
         padding: 0 0.25rem;
+
+        .fd-select__control {
+          margin: 0.25rem 0;
+        }
 
         .fd-form-label {
           margin-right: 0;
@@ -49,6 +51,12 @@ $blockRow: #{$fd-namespace}-row;
     }
 
     &--vertical {
+      > * {
+        > :first-child {
+          justify-content: flex-start;
+        }
+      }
+
       > *:not(:last-child) {
         margin-bottom: 0.625rem;
       }
