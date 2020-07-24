@@ -428,6 +428,10 @@ $block: #{$fd-namespace}-button;
     @include half();
   }
 
+  &__instructions {
+    @include fd-screen-reader-only();
+  }
+
   @include fd-hover() {
     @include buttonContainerHover();
   }
