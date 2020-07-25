@@ -892,7 +892,7 @@ The label-field ratio is 12:12:0 by default:
 };
 
 export const mSizeDefault = () => `
-<div class="fd-container fd-form-layout-grid-container">
+<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
     <div class="fd-col fd-col--2 fd-form-layout-grid-flex fd-form-layout-grid-flex--right">
       <label class="fd-form-label" for="input-1-name">Name:</label>
@@ -963,7 +963,7 @@ export const mSizeDefault = () => `
 
 mSizeDefault.parameters = {
     docs: {
-        iframeHeight: 450,
+        iframeHeight: 300,
         storyDescription: `
 Size M is using a single-column layout. The labels are positioned in the same row as the corresponding input field or value, and form groups are positioned below each other.
 
@@ -984,7 +984,7 @@ Size M goes down to 601 px. In this size, the 3:5:4 approach may not be wide eno
 };
 
 export const mSizeSplitScreen = () => `
-<div class="fd-container fd-form-layout-grid-container">
+<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
     <div class="fd-col fd-col--4">
       <label class="fd-form-label" for="input-1-name">Name:</label>
@@ -1055,7 +1055,7 @@ export const mSizeSplitScreen = () => `
 
 mSizeSplitScreen.parameters = {
     docs: {
-        iframeHeight: 450,
+        iframeHeight: 300,
         storyDescription: `
 When placing the form in the details part of a split screen, use a single-column layout with the label-field ratio **4:7:1** 
 - 4 grid columns used by the labels
@@ -1067,7 +1067,7 @@ When placing the form in the details part of a split screen, use a single-column
 
 
 export const mSizeFullScreenApp = () => `
-<div class="fd-container fd-form-layout-grid-container">
+<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
     <div class="fd-col fd-col--3">
       <label class="fd-form-label" for="input-1-name">Name:</label>
@@ -1150,7 +1150,7 @@ Size M goes down to 601 px. In this size, the 3:5:4 approach may not be wide eno
 };
 
 export const mSizeFullScreenAppLongLabel = () => `
-<div class="fd-container fd-form-layout-grid-container">
+<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
     <div class="fd-col fd-col--4--m fd-col--3--l">
       <label class="fd-form-label" for="input-1-name">Name:</label>
@@ -1232,7 +1232,7 @@ Size M goes down to 601 px. In this size, the 3:5:4 approach may not be wide eno
 };
 
 export const lSizeDefault = () => `
-<div class="fd-container fd-form-layout-grid-container">
+<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
   <div class="fd-row">
     <div class="fd-col fd-col--4--l">
       <label class="fd-form-label" for="input-1-name">Name:</label>
@@ -1319,7 +1319,7 @@ The label-field ratio is **4:8:0** by default:
 };
 
 export const lSizeSingleFormGroup = () => `
-<div class="fd-container fd-form-layout-grid-container">
+<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
   <div class="fd-row">
     <div class="fd-col fd-col--3--l">
       <label class="fd-form-label" for="input-1-name">Name:</label>
@@ -1402,12 +1402,9 @@ If the form contains multiple form groups, you can also use a two-column layout 
 };
 
 export const lSizeMultipleFormGroup = () => `
-<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical">
+<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical" style="max-width:1440px">
   <div class="fd-row">
     <div class="fd-col fd-col--6--l fd-col--wrap">
-
-
-
       <div class="fd-row">
           <div class="fd-col">
               <div class="fd-form-layout-grid-flex">
@@ -1469,16 +1466,8 @@ export const lSizeMultipleFormGroup = () => `
               </div>
           </div>
       </div>
-
-
-
     </div>
-    
-
     <div class="fd-col fd-col--6--l fd-col--wrap">
-
-
-
       <div class="fd-row">
           <div class="fd-col">
               <div class="fd-form-layout-grid-flex">
@@ -1540,13 +1529,7 @@ export const lSizeMultipleFormGroup = () => `
               </div>
           </div>
       </div>
-
-
-
     </div>
-
-
-
   </div>
 </div>
 `;
