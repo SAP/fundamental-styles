@@ -49,14 +49,6 @@ $heading-toc-spacer: $docs-hd-tp + $docs-hd-bp + $docs-hd-ch + $docs-tm;
   &:focus {
     outline: none;
   }
-
-  &::before {
-    content: '';
-    display: block;
-    height: $heading-toc-spacer;
-    margin-top: -$heading-toc-spacer;
-    visibility: hidden;
-  }
 }
 
 /* storybook iframe */
