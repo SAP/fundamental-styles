@@ -49,11 +49,6 @@ addParameters({
       id: 'HCW_css_variables',
       code: '<link rel="stylesheet" type="text/css" href="./HCW_css_variables.css"></link>',
       picked: false
-  },
-  {
-      id: 'semantic_elements',
-      code: '<link rel="stylesheet" type="text/css" href="./semantic-elements.css"></link>',
-      picked: false
   }
   ],
   docs: {

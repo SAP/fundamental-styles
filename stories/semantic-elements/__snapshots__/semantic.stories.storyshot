@@ -1,0 +1,714 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Semantic Elements Button 1`] = `
+<section>
+  
+    
+  <link
+    href="./semantic-elements.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  
+    
+  <button>
+    Default Button
+  </button>
+  
+    
+  <button
+    disabled=""
+  >
+    Disabled Button
+  </button>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Semantic Elements Checkbox 1`] = `
+<section>
+  
+
+  <link
+    href="./semantic-elements.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  
+
+  <form>
+    
+    
+    <div>
+      
+        
+      <input
+        checked=""
+        id="pDidhdBDD"
+        name="checkbox5"
+        type="checkbox"
+      />
+      
+        
+      <label
+        for="pDidhdBDD"
+      >
+        
+            Styled Checkbox 1
+        
+      </label>
+      
+    
+    </div>
+    
+    
+    <div>
+      
+        
+      <input
+        id="pDidhFDBDD"
+        name="checkbox6"
+        type="checkbox"
+      />
+      
+        
+      <label
+        for="pDidhFDBDD"
+      >
+        
+            Styled Checkbox 2
+        
+      </label>
+      
+    
+    </div>
+    
+    
+    <div>
+      
+        
+      <label
+        for="FGd76F"
+      >
+        
+            
+        <input
+          checked=""
+          id="FGd76F"
+          name="checkbox7"
+          type="checkbox"
+        />
+        
+            Default Checkbox 1
+        
+      </label>
+      
+    
+    </div>
+    
+    
+    <div>
+      
+        
+      <label
+        for="pDHTTLJ2"
+      >
+        
+            
+        <input
+          id="pDHTTLJ2"
+          name="checkbox8"
+          type="checkbox"
+        />
+        
+            Default Checkbox 2
+        
+      </label>
+      
+    
+    </div>
+    
+
+  </form>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Semantic Elements Form 1`] = `
+<section>
+  
+
+  <link
+    href="./semantic-elements.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  
+
+  <form>
+    
+    
+    <div>
+      
+        
+      <label
+        for="input-form-1"
+      >
+        Input inside form
+      </label>
+      
+        
+      <input
+        aria-label="Input inside form"
+        id="input-form-1"
+        placeholder="Write Something..."
+        type="text"
+      />
+          
+    
+    </div>
+    
+    
+    <div>
+      
+        
+      <label
+        for="input-form-2"
+      >
+        Input inside form
+      </label>
+      
+        
+      <input
+        aria-label="Input inside form"
+        id="input-form-2"
+        placeholder="Write Something..."
+        type="text"
+      />
+          
+    
+    </div>
+    
+    
+    <div>
+      
+        
+      <label
+        for="input-form-3"
+      >
+        Input inside form
+      </label>
+      
+        
+      <input
+        aria-label="Input inside form"
+        id="input-form-3"
+        placeholder="Write Something..."
+        type="text"
+      />
+          
+    
+    </div>
+    
+    
+    <div>
+      
+        
+      <label
+        for="input-form-3"
+      >
+        Input inside form
+      </label>
+      
+        
+      <input
+        aria-label="Input inside form"
+        id="input-form-3"
+        placeholder="Write Something..."
+        type="text"
+      />
+          
+    
+    </div>
+    
+    
+    <div>
+      
+        
+      <label
+        for="pDidh76F"
+      >
+        
+            
+        <input
+          checked=""
+          id="pDidh76F"
+          name="radio1"
+          type="radio"
+        />
+        
+            Radio Option 1
+        
+      </label>
+      
+    
+    </div>
+    
+    
+    <div>
+      
+        
+      <label
+        for="pDidJ7612"
+      >
+        
+            
+        <input
+          id="pDidJ7612"
+          name="radio1"
+          type="radio"
+        />
+        
+            Radio Option 2
+        
+      </label>
+      
+    
+    </div>
+    
+    
+    <div>
+      
+        
+      <label
+        for="pDidhd76F"
+      >
+        
+            
+        <input
+          checked=""
+          id="pDidhd76F"
+          name="checkbox1"
+          type="checkbox"
+        />
+        
+            Checkbox Option 1
+        
+      </label>
+      
+    
+    </div>
+    
+    
+    <div>
+      
+        
+      <label
+        for="pDiHJJ7612"
+      >
+        
+            
+        <input
+          id="pDiHJJ7612"
+          name="checkbox2"
+          type="checkbox"
+        />
+        
+            Checkbox Option 2
+        
+      </label>
+      
+    
+    </div>
+    
+    
+    <div>
+      
+        
+      <input
+        checked=""
+        id="pDidhd7GD"
+        name="checkbox3"
+        type="checkbox"
+      />
+      
+        
+      <label
+        for="pDidhd7GD"
+      >
+        
+            Checkbox Option 3
+        
+      </label>
+      
+    
+    </div>
+    
+    
+    <div>
+      
+        
+      <input
+        id="pDiHJJVF2"
+        name="checkbox4"
+        type="checkbox"
+      />
+      
+        
+      <label
+        for="pDiHJJVF2"
+      >
+        
+            Checkbox Option 4
+        
+      </label>
+      
+    
+    </div>
+    
+
+  </form>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Semantic Elements Input 1`] = `
+<section>
+  
+    
+  <link
+    href="./semantic-elements.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  
+    
+  <label
+    for="input-1"
+  >
+    Default input
+  </label>
+  
+    
+  <input
+    aria-label="Default Input Text"
+    id="input-1"
+    placeholder="Write Something..."
+    type="text"
+  />
+  
+    
+    
+    
+  <label
+    for="input-2"
+  >
+    Default input number
+  </label>
+  
+    
+  <input
+    aria-label="Default Input Number"
+    id="input-2"
+    placeholder="Write Something..."
+    type="number"
+  />
+  
+
+
+    
+  <label
+    for="input-3"
+  >
+    Default input password
+  </label>
+  
+    
+  <input
+    aria-label="Default Input Password"
+    id="input-3"
+    placeholder="Write Something..."
+    type="password"
+  />
+  
+    
+    
+  <label
+    for="input-4"
+  >
+    Disabled Input
+  </label>
+  
+    
+  <input
+    aria-label="Disabled Input"
+    disabled=""
+    id="input-4"
+    type="text"
+    value="Disabled Input"
+  />
+  
+
+
+    
+  <label
+    for="input-4"
+  >
+    Readonly Input
+  </label>
+  
+    
+  <input
+    aria-label="Readonly Input"
+    id="input-5"
+    readonly=""
+    type="text"
+    value="Readonly Input"
+  />
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Semantic Elements Link 1`] = `
+<section>
+  
+    
+  <link
+    href="./semantic-elements.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  
+    
+  <a
+    href="#"
+  >
+    Link
+  </a>
+  
+    
+  <br />
+  
+    
+  <a
+    aria-disabled="true"
+    href="#"
+  >
+    Disabled Link
+  </a>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Semantic Elements List 1`] = `
+<section>
+  
+
+  <link
+    href="./semantic-elements.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  
+
+  <ul
+    role="list"
+  >
+    
+  
+    <li
+      role="listitem"
+      tabindex="0"
+    >
+      
+      List item 1
+  
+    </li>
+    
+  
+    <li
+      role="listitem"
+      tabindex="0"
+    >
+      
+      List item 2
+  
+    </li>
+    
+  
+    <li
+      role="listitem"
+      tabindex="0"
+    >
+      
+      List item 3
+  
+    </li>
+    
+  
+    <li
+      role="listitem"
+      tabindex="0"
+    >
+      
+      List item 4
+  
+    </li>
+    
+
+  </ul>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Semantic Elements Radio 1`] = `
+<section>
+  
+
+  <link
+    href="./semantic-elements.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  
+
+  <form>
+    
+    
+    <div>
+      
+        
+      <input
+        checked=""
+        id="pDidhdBDC"
+        name="radio3"
+        type="radio"
+      />
+      
+        
+      <label
+        for="pDidhdBDC"
+      >
+        
+            Styled Radio 1
+        
+      </label>
+      
+    
+    </div>
+    
+    
+    <div>
+      
+        
+      <input
+        id="pDidhFDBDC"
+        name="radio3"
+        type="radio"
+      />
+      
+        
+      <label
+        for="pDidhFDBDC"
+      >
+        
+            Styled Radio 2
+        
+      </label>
+      
+    
+    </div>
+    
+    
+    <div>
+      
+        
+      <label
+        for="FGd76H"
+      >
+        
+            
+        <input
+          checked=""
+          id="FGd76H"
+          name="radio4"
+          type="radio"
+        />
+        
+            Default Radio 1
+        
+      </label>
+      
+    
+    </div>
+    
+    
+    <div>
+      
+        
+      <label
+        for="pDHTTBJ2"
+      >
+        
+            
+        <input
+          id="pDHTTBJ2"
+          name="radio4"
+          type="radio"
+        />
+        
+            Default Radio 2
+        
+      </label>
+      
+    
+    </div>
+    
+
+  </form>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Semantic Elements Textarea 1`] = `
+<section>
+  
+    
+  <link
+    href="./semantic-elements.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  
+    
+  <textarea
+    aria-label="Default Textarea"
+    placeholder="Write something in textarea..."
+  />
+  
+    
+  <textarea
+    aria-label="Disabled Textarea"
+    disabled=""
+  >
+    Disabled Textarea
+  </textarea>
+  
+    
+  <textarea
+    aria-label="Disabled Textarea"
+    readonly=""
+  >
+    Readonly Textarea
+  </textarea>
+  
+
+</section>
+`;

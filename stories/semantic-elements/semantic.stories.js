@@ -1,11 +1,17 @@
 export default {
     title: 'Components/Semantic Elements',
     parameters: {
-        description: ''
+        description: `
+        Semantic Styling is applied only to certain html elements. Css is aligned to elements instead of classes.
+        Main advantage is that application does not need to put any additional classes to elements, to consume themeable
+        and fiori3 following styles. This is not default styling, adding it to project can be achieved, by importing 
+        'dist/semantic-elements.css' file. It can spoil old application styling, by overwriting some properties.
+        Important thing is that for proper styling, some elements needs to keep same structure as examples shown below`
     }
 };
 
 export const button = () => `
+    <link rel="stylesheet" type="text/css" href="./semantic-elements.css">
     <button>Default Button</button>
     <button disabled>Disabled Button</button>
 `;
@@ -15,6 +21,7 @@ button.parameters = {
 };
 
 export const input = () => `
+    <link rel="stylesheet" type="text/css" href="./semantic-elements.css">
     <label for="input-1">Default input</label>
     <input type="text" id="input-1" aria-label="Default Input Text" placeholder="Write Something...">
     
@@ -42,6 +49,7 @@ input.parameters = {
 };
 
 export const textarea = () => `
+    <link rel="stylesheet" type="text/css" href="./semantic-elements.css">
     <textarea aria-label="Default Textarea" placeholder="Write something in textarea..."></textarea>
     <textarea aria-label="Disabled Textarea" disabled>Disabled Textarea</textarea>
     <textarea aria-label="Disabled Textarea" readonly>Readonly Textarea</textarea>
@@ -52,6 +60,7 @@ textarea.parameters = {
 };
 
 export const link = () => `
+    <link rel="stylesheet" type="text/css" href="./semantic-elements.css">
     <a href="#">Link</a>
     <br/>
     <a href="#" aria-disabled="true">Disabled Link</a>
@@ -62,6 +71,7 @@ link.parameters = {
 };
 
 export const list = () => `
+<link rel="stylesheet" type="text/css" href="./semantic-elements.css">
 <ul role="list">
   <li role="listitem" tabindex="0">
       List item 1
@@ -79,10 +89,14 @@ export const list = () => `
 `;
 
 list.parameters = {
-    docs: { iframeHeight: 300 }
+    docs: {
+        iframeHeight: 300,
+        storyDescription: 'List required a specific construction `ul>li`. Otherwise the styles will not be applied.'
+    }
 };
 
 export const form = () => `
+<link rel="stylesheet" type="text/css" href="./semantic-elements.css">
 <form>
     <div>
         <label for="input-form-1">Input inside form</label>
@@ -145,6 +159,7 @@ form.parameters = {
 
 
 export const checkbox = () => `
+<link rel="stylesheet" type="text/css" href="./semantic-elements.css">
 <form>
     <div>
         <input type="checkbox" id="pDidhdBDD" name="checkbox5" checked>
@@ -182,6 +197,7 @@ checkbox.parameters = {
 
 
 export const radio = () => `
+<link rel="stylesheet" type="text/css" href="./semantic-elements.css">
 <form>
     <div>
         <input type="radio" id="pDidhdBDC" name="radio3" checked>
