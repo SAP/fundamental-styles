@@ -1,5 +1,3 @@
-import '../../dist/semantic-elements.css';
-
 export default {
     title: 'Components/Semantic Elements',
     parameters: {

@@ -85,3 +85,6 @@ fs.copyFile(HCBCssVariables, '.storybook/static/HCB_css_variables.css', (err) =>
 fs.copyFile(HCWCssVariables, '.storybook/static/HCW_css_variables.css', (err) => {
     if (err) throw err;
 });
+fs.copyFile('./dist/semantic-elements.css', '.storybook/static/semantic-elements.css', (err) => {
+    if (err) throw err;
+});
