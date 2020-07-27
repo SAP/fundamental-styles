@@ -4,7 +4,7 @@ import '../../dist/icon.css';
 export default {
     title: 'Components/Avatar',
     parameters: {
-        description: `Avatar is a way to visually present something using an icon or user initials.
+        description: `Vanessa is a way to visually present something using an icon or user initials.
 
 There are multiple sizes:
 
