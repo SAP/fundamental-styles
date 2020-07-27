@@ -195,59 +195,17 @@ exports[`Storyshots Components/Semantic Elements Form 1`] = `
     <div>
       
         
-      <label
-        for="input-form-3"
-      >
-        Input inside form
-      </label>
-      
-        
       <input
-        aria-label="Input inside form"
-        id="input-form-3"
-        placeholder="Write Something..."
-        type="text"
+        checked=""
+        id="pDidh76F"
+        name="radio1"
+        type="radio"
       />
-          
-    
-    </div>
-    
-    
-    <div>
-      
-        
-      <label
-        for="input-form-3"
-      >
-        Input inside form
-      </label>
-      
-        
-      <input
-        aria-label="Input inside form"
-        id="input-form-3"
-        placeholder="Write Something..."
-        type="text"
-      />
-          
-    
-    </div>
-    
-    
-    <div>
       
         
       <label
         for="pDidh76F"
       >
-        
-            
-        <input
-          checked=""
-          id="pDidh76F"
-          name="radio1"
-          type="radio"
-        />
         
             Radio Option 1
         
@@ -260,63 +218,18 @@ exports[`Storyshots Components/Semantic Elements Form 1`] = `
     <div>
       
         
+      <input
+        id="pDidJ7612"
+        name="radio1"
+        type="radio"
+      />
+      
+        
       <label
         for="pDidJ7612"
       >
         
-            
-        <input
-          id="pDidJ7612"
-          name="radio1"
-          type="radio"
-        />
-        
             Radio Option 2
-        
-      </label>
-      
-    
-    </div>
-    
-    
-    <div>
-      
-        
-      <label
-        for="pDidhd76F"
-      >
-        
-            
-        <input
-          checked=""
-          id="pDidhd76F"
-          name="checkbox1"
-          type="checkbox"
-        />
-        
-            Checkbox Option 1
-        
-      </label>
-      
-    
-    </div>
-    
-    
-    <div>
-      
-        
-      <label
-        for="pDiHJJ7612"
-      >
-        
-            
-        <input
-          id="pDiHJJ7612"
-          name="checkbox2"
-          type="checkbox"
-        />
-        
-            Checkbox Option 2
         
       </label>
       
@@ -455,7 +368,7 @@ exports[`Storyshots Components/Semantic Elements Input 1`] = `
 
     
   <label
-    for="input-4"
+    for="input-5"
   >
     Readonly Input
   </label>
