@@ -22,13 +22,9 @@ $block: #{$fd-namespace}-checkbox;
     @include action-cursor();
 
     line-height: 1rem;
-    padding: $fd-checkbox-margin 0 $fd-checkbox-margin $fd-checkbox-margin;
+    padding: $fd-checkbox-margin;
     display: flex;
     align-items: center;
-
-    @include fd-rtl() {
-      padding: $fd-checkbox-margin $fd-checkbox-margin $fd-checkbox-margin 0;
-    }
 
     &::before {
       content: "";
@@ -91,10 +87,6 @@ $block: #{$fd-namespace}-checkbox;
   @include fd-focus() {
     + #{$label} {
       @include fd-form-radio-focus($fd-checkbox-margin);
-
-      @include fd-empty() {
-        @include fd-form-radio-empty-focus($fd-checkbox-margin);
-      }
     }
   }
 

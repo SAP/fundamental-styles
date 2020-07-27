@@ -28,11 +28,7 @@ $fd-radio-inner-circle-padding-x: 0.05rem; // to align the inner circle horizont
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding: $fd-radio-outer-circle-margin 0 $fd-radio-outer-circle-margin $fd-radio-outer-circle-margin;
-
-    @include fd-rtl() {
-      padding: $fd-radio-outer-circle-margin $fd-radio-outer-circle-margin $fd-radio-outer-circle-margin 0;
-    }
+    padding: $fd-radio-outer-circle-margin;
 
     &::before {
       content: "";
@@ -85,10 +81,6 @@ $fd-radio-inner-circle-padding-x: 0.05rem; // to align the inner circle horizont
   @include fd-focus() {
     + #{$label} {
       @include fd-form-radio-focus($fd-radio-outer-circle-margin);
-
-      @include fd-empty() {
-        @include fd-form-radio-empty-focus($fd-radio-outer-circle-margin);
-      }
     }
   }
 

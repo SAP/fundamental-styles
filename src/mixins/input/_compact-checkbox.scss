@@ -41,10 +41,6 @@
   @include fd-focus() {
     + .#{$block}__label {
       @include fd-form-radio-focus($fd-checkbox-margin-compact);
-
-      @include fd-empty() {
-        @include fd-form-radio-empty-focus($fd-checkbox-margin-compact);
-      }
     }
   }
 
