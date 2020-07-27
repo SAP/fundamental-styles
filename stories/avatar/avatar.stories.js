@@ -28,7 +28,7 @@ Do not use avatar if:
 •	You want to display an image for any other use case. Instead, use the Image component.
 •	You want to display images in a carousel. Instead, use the Carousel component.
 •	You want to display an interactive icon. Instead, use the Button component with an icon inside.
-
+`,
         tags: ['a11y', 'f3', 'theme']
     }
 };
