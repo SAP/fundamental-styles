@@ -16,6 +16,7 @@ export default {
 | L | 5 rem | App headers for normal screen sizes | --l modifier |
 | XL | 7 rem | App headers for large screen sizes | --xl modifier |
 
+
 ### Usage
 Use avatar to display:
 
