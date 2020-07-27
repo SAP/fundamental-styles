@@ -1,23 +1,13 @@
-# OS generated files #
 .DS_Store
-.DS_Store?
-._*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
 Thumbs.db
 .idea
 .vscode
-
-# Dependency directory
-/dist
-node_modules
-build
 .tmp
 *.log
 *.tgz
-
-# Storybook
 __diff_output__
 storybook-static
 .storybook/static/*.woff
@@ -31,4 +21,6 @@ storybook-static
 .storybook/static/dark_css_variables.css
 .storybook/static/light_dark_css_variables.css
 stories/docs/
-storybook-static
+dist
+node_modules
+
