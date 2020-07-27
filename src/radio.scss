@@ -1,193 +1,20 @@
-@import "./new-settings";
-@import "./mixins";
+@import "./mixins/input/base-radio";
+@import "./mixins/input/radio-compact";
+@import "./mixins/input/radio-states";
 
 /*!
 .fd-radio
 */
 $block: #{$fd-namespace}-radio;
 
-%fd-radio-input-hidden {
-  position: absolute;
-  opacity: 0.0001;
-}
-
 .#{$block} {
-  @mixin fd-radio-state($background-color, $text-color, $border-color, $border-size) {
-    + .#{$block}__label {
-      &::before {
-        background-color: $background-color;
-        border: $border-size solid $border-color;
-        color: $text-color;
-      }
-
-      @include fd-hover() {
-        @include fd-disabled() {
-          border-color: $border-color;
-        }
-      }
-    }
-  }
-
-  $fd-radio-inner-circle-diameter: 1.375rem;
-  $fd-radio-inner-circle-diameter-compact: 1rem;
-
-  $fd-radio-outer-circle-margin: 0.6875rem;
-  $fd-radio-outer-circle-margin-compact: 0.5rem;
-
-  $fd-radio-inner-circle-padding-y: 0.0625rem; // to align the inner circle vertically in the middle of the outer
-  $fd-radio-inner-circle-padding-x: 0.05rem; // to align the inner circle horizontally in the middle of the outer
-
-  @include fd-form-base();
+  @include fd-base-radio();
+  @include fd-radio-states();
 
   @extend %fd-radio-input-hidden;
 
-  &__label {
-    @include fd-form-label();
-    @include action-cursor();
-
-    line-height: 1rem;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    padding: $fd-radio-outer-circle-margin;
-
-    &::before {
-      content: "";
-      padding-top: $fd-radio-inner-circle-padding-y;
-      height: $fd-radio-inner-circle-diameter;
-      width: $fd-radio-inner-circle-diameter;
-      min-width: $fd-radio-inner-circle-diameter;
-      font-size: 0.6875rem;
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      font-family: "SAP-icons";
-      background-color: var(--sapField_Background);
-      margin-right: $fd-radio-outer-circle-margin;
-      color: var(--sapSelectedColor);
-      border: var(--sapField_BorderWidth) solid var(--sapField_BorderColor);
-      border-radius: 50%;
-    }
-
-    @include fd-hover() {
-      &::before {
-        background-color: var(--sapField_Hover_Background);
-        border-color: var(--sapField_Hover_BorderColor);
-      }
-    }
-
-    @include fd-rtl() {
-      &::before {
-        margin-left: $fd-radio-outer-circle-margin;
-        margin-right: 0;
-      }
-    }
-
-    @include fd-empty() {
-      padding: $fd-radio-outer-circle-margin;
-      margin: 0;
-
-      &::before,
-      &::after {
-        margin-right: 0;
-        margin-left: 0;
-      }
-    }
-  }
-
-  &:checked + .#{$block}__label::before {
-    content: "\e255";
-  }
-
-  // states
-  &.is-warning,
-  &.is-alert {
-    @include fd-radio-state(var(--sapField_WarningBackground), var(--sapField_TextColor), var(--sapField_WarningColor), 0.125rem);
-  }
-
-  &.is-error {
-    @include fd-radio-state(var(--sapField_InvalidBackground), var(--sapField_InvalidColor), var(--sapField_InvalidColor), 0.125rem);
-  }
-
-  &.is-success {
-    @include fd-radio-state(var(--sapField_SuccessBackground), var(--sapField_SuccessColor), var(--sapField_SuccessColor), var(--sapField_BorderWidth));
-  }
-
-  &.is-information {
-    @include fd-radio-state(var(--sapField_InformationBackground), var(--sapField_InformationColor), var(--sapField_InformationColor), 0.125rem);
-  }
-
-  &[readonly],
-  &.is-readonly {
-    @include fd-radio-state(var(--sapField_ReadOnly_Background), var(--sapContent_NonInteractiveIconColor), var(--sapField_ReadOnly_BorderColor), var(--sapField_BorderWidth));
-  }
-
-  @include fd-focus() {
-    + .#{$block}__label {
-      @include fd-form-radio-focus($fd-radio-outer-circle-margin);
-
-      @include fd-empty() {
-        @include fd-form-radio-empty-focus($fd-radio-outer-circle-margin);
-      }
-    }
-  }
-
-  @include fd-disabled() {
-    opacity: 0.0001;
-
-    + .#{$block}__label {
-      pointer-events: none;
-      opacity: 0.4;
-    }
-  }
-
   &--compact {
-    + .#{$block}__label {
-      padding: $fd-radio-outer-circle-margin-compact 0 $fd-radio-outer-circle-margin-compact $fd-radio-outer-circle-margin-compact;
-
-      @include fd-rtl() {
-        padding: $fd-radio-outer-circle-margin-compact $fd-radio-outer-circle-margin-compact $fd-radio-outer-circle-margin-compact 0;
-      }
-
-      &::before {
-        font-size: 0.4375rem;
-        height: $fd-radio-inner-circle-diameter-compact;
-        width: $fd-radio-inner-circle-diameter-compact;
-        min-width: $fd-radio-inner-circle-diameter-compact;
-        margin-right: $fd-radio-outer-circle-margin-compact;
-        margin-left: 0;
-        padding-left: $fd-radio-inner-circle-padding-x;
-      }
-
-      @include fd-rtl() {
-        &::before {
-          margin-left: $fd-radio-outer-circle-margin-compact;
-          margin-right: 0;
-          padding-left: 0;
-          padding-right: $fd-radio-inner-circle-padding-x;
-        }
-      }
-
-      @include fd-empty() {
-        padding: $fd-radio-outer-circle-margin-compact;
-        margin: 0;
-
-        &::before,
-        &::after {
-          margin-right: 0;
-          margin-left: 0;
-        }
-      }
-    }
-
-    @include fd-focus() {
-      + .#{$block}__label {
-        @include fd-form-radio-focus($fd-radio-outer-circle-margin-compact);
-
-        @include fd-empty() {
-          @include fd-form-radio-empty-focus($fd-radio-outer-circle-margin-compact);
-        }
-      }
-    }
+    @include fd-radio-compact();
   }
+
 }
