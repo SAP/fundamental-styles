@@ -8,7 +8,7 @@
 $block: #{$fd-namespace}-checkbox;
 
 .#{$block} {
-  @include fd-base-checkbox('.fd-checkbox__label');
+  @include fd-base-checkbox('&__label', '', '.#{$block}__label');
   @include fd-checkbox-states();
 
   @extend %fd-checkbox-input-hidden;

@@ -11,7 +11,7 @@ $block: #{$fd-namespace}-checkbox;
   opacity: 0.0001;
 }
 
-@mixin fd-base-checkbox($label: '.#{$block}__label', $label-selector: '') {
+@mixin fd-base-checkbox($label: '', $label-selector: '', $full-label: '') {
   $fd-checkbox-dimensions: 1.375rem;
   $fd-checkbox-margin: 0.6875rem;
 
@@ -74,18 +74,18 @@ $block: #{$fd-namespace}-checkbox;
     }
   }
 
-  &:checked + #{$label}::before {
+  &:checked + #{$full-label}::before {
     content: "\e05b";
   }
 
-  &:indeterminate + #{$label}::before {
+  &:indeterminate + #{$full-label}::before {
     content: "\e17b";
     font-size: 0.8125rem;
     padding-top: 0.0625rem;
   }
 
   @include fd-focus() {
-    + #{$label} {
+    + #{$full-label} {
       @include fd-form-radio-focus($fd-checkbox-margin);
     }
   }
@@ -93,7 +93,7 @@ $block: #{$fd-namespace}-checkbox;
   @include fd-disabled() {
     opacity: 0.0001;
 
-    + #{$label} {
+    + #{$full-label} {
       pointer-events: none;
       opacity: 0.4;
     }

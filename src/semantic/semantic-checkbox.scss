@@ -1,7 +1,7 @@
 @import "../mixins/input/base-checkbox";
 
 input[type=checkbox] {
-  @include fd-base-checkbox('label', '+');
+  @include fd-base-checkbox('label', '+', 'label');
 
   // Prevent from hiding checkbox, when it's used with `<label><input type="checkbox"></label>` structure
   &:not(:only-child) {

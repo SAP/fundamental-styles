@@ -8,7 +8,7 @@
 $block: #{$fd-namespace}-radio;
 
 .#{$block} {
-  @include fd-base-radio();
+  @include fd-base-radio('&__label', '', '.#{$block}__label');
   @include fd-radio-states();
 
   @extend %fd-radio-input-hidden;

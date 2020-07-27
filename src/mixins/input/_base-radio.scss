@@ -14,7 +14,7 @@ $fd-radio-inner-circle-padding-x: 0.05rem; // to align the inner circle horizont
   opacity: 0.0001;
 }
 
-@mixin fd-base-radio($label: '.#{$block}__label', $label-selector: '') {
+@mixin fd-base-radio($label: '', $label-selector: '', $full-label: '') {
   $fd-radio-inner-circle-diameter: 1.375rem;
   $fd-radio-outer-circle-margin: 0.6875rem;
 
@@ -74,12 +74,12 @@ $fd-radio-inner-circle-padding-x: 0.05rem; // to align the inner circle horizont
     }
   }
 
-  &:checked + #{$label}::before {
+  &:checked + #{$full-label}::before {
     content: "\e255";
   }
 
   @include fd-focus() {
-    + #{$label} {
+    + #{$full-label} {
       @include fd-form-radio-focus($fd-radio-outer-circle-margin);
     }
   }
@@ -87,7 +87,7 @@ $fd-radio-inner-circle-padding-x: 0.05rem; // to align the inner circle horizont
   @include fd-disabled() {
     opacity: 0.0001;
 
-    + #{label} {
+    + #{$full-label} {
       pointer-events: none;
       opacity: 0.4;
     }
