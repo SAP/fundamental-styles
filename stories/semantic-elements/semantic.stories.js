@@ -37,7 +37,7 @@ export const input = () => `
     <input type="text" id="input-4" disabled aria-label="Disabled Input" value="Disabled Input">
 
 
-    <label for="input-4">Readonly Input</label>
+    <label for="input-5">Readonly Input</label>
     <input type="text" id="input-5" readonly aria-label="Readonly Input" value="Readonly Input">
 `;
 
@@ -107,35 +107,15 @@ export const form = () => `
         <input type="text" id="input-form-2" aria-label="Input inside form" placeholder="Write Something...">    
     </div>
     <div>
-        <label for="input-form-3">Input inside form</label>
-        <input type="text" id="input-form-3" aria-label="Input inside form" placeholder="Write Something...">    
-    </div>
-    <div>
-        <label for="input-form-3">Input inside form</label>
-        <input type="text" id="input-form-3" aria-label="Input inside form" placeholder="Write Something...">    
-    </div>
-    <div>
+        <input type="radio" id="pDidh76F" name="radio1" checked>
         <label for="pDidh76F">
-            <input type="radio" id="pDidh76F" name="radio1" checked>
             Radio Option 1
         </label>
     </div>
     <div>
+        <input type="radio" id="pDidJ7612" name="radio1">
         <label for="pDidJ7612">
-            <input type="radio" id="pDidJ7612" name="radio1">
             Radio Option 2
-        </label>
-    </div>
-    <div>
-        <label for="pDidhd76F">
-            <input type="checkbox" id="pDidhd76F" name="checkbox1" checked>
-            Checkbox Option 1
-        </label>
-    </div>
-    <div>
-        <label for="pDiHJJ7612">
-            <input type="checkbox" id="pDiHJJ7612" name="checkbox2">
-            Checkbox Option 2
         </label>
     </div>
     <div>
