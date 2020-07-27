@@ -1164,9 +1164,9 @@ export const mSizeFullScreenAppLongLabel = () => `
     <div class="fd-col fd-col--4--m fd-col--3--l">
       <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
     </div>
-    <div class="fd-col fd-col--8--m">
+    <div class="fd-col fd-col--8--m fd-col--5--l fd-col--offset-after--4">
       <div class="fd-row">
-      <div class="fd-col fd-col--4 fd-col--5--l fd-col--offset-after--4">
+      <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
       </div>
       <div class="fd-col fd-col--8">
