@@ -8,26 +8,27 @@ export default {
 
 ####Sizes
 
------|-----|---------------------|----------------------------
-**Size | rem | Use for images in…	| Modifier**
-XS | 2 rem | Table list items, Card list items | --xs modifier
-S | 3 rem | Card headers, Card list items | --s modifier
-M | 4 rem | App headers for small screen sizes | --m modifier
-L | 5 rem | App headers for normal screen sizes | --l modifier
-XL | 7 rem | App headers for large screen sizes | --xl modifier
+Size   |  rem  | Use for images in…	| Modifier |
+:-----:|:-----:|--------------------|--------------------------|
+
+XS | 2 rem | Table list items, Card list items | --xs modifier|
+S | 3 rem | Card headers, Card list items | --s modifier|
+M | 4 rem | App headers for small screen sizes | --m modifier|
+L | 5 rem | App headers for normal screen sizes | --l modifier|
+XL | 7 rem | App headers for large screen sizes | --xl modifier|
 
 ####Usage
 Use avatar to display:
-- A user’s image or initials
-- Standardized images for business-related content (such as products, company logos, ad campaign images etc.)
-- Icons
-- Images with a transparent background
-- Placeholder images
+* A user’s image or initials
+* Standardized images for business-related content (such as products, company logos, ad campaign images etc.)
+* Icons
+* Images with a transparent background
+* Placeholder images
 
 Do not use avatar if:
-- You want to display an image for any other use case. Instead, use the Image component.
-- You want to display images in a carousel. Instead, use the Carousel component.
-- You want to display an interactive icon. Instead, use the Button component with an icon inside.
+* You want to display an image for any other use case. Instead, use the Image component.
+* You want to display images in a carousel. Instead, use the Carousel component.
+* You want to display an interactive icon. Instead, use the Button component with an icon inside.
 `,
         tags: ['a11y', 'f3', 'theme']
     }
