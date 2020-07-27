@@ -6,7 +6,8 @@ export default {
 
 export const Semantic = () => {
     const div = document.createElement('div');
-    div.innerHTML = stories.map(function(item) {
+    const storyNames = Object.keys(stories).filter(story => story !== 'default');
+    div.innerHTML = storyNames.map(function(item) {
         return '<div>' + stories[item]() + '</div>';
     }).join('');
     return div;
