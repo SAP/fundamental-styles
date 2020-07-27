@@ -8,8 +8,8 @@ export default {
 
 ### Sizes
 
-Size   |  rem  | Use for images in…	| Modifier |
-:-----:|:------:|------------------------------|-------------------------------------|
+**Size**   |  **rem**  | **Use for images in…**	                                        | **Modifier**                       |
+-----------|-----------|----------------------------------------------------------------|------------------------------------|
 XS | 2 rem | Table list items, Card list items | --xs modifier|
 S | 3 rem | Card headers, Card list items | --s modifier|
 M | 4 rem | App headers for small screen sizes | --m modifier|
