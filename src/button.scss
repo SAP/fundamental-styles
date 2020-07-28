@@ -50,7 +50,7 @@ $block: #{$fd-namespace}-button;
   cursor: not-allowed;
 
   &:focus {
-    outline: none;
+    outline: solid;
   }
 }
 

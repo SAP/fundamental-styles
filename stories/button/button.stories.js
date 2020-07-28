@@ -301,7 +301,7 @@ export const buttonStates = () => `
 <br><br>
 <button class="fd-button fd-button--attention">Normal State</button>
 <button class="fd-button fd-button--attention is-selected" aria-selected="true">Selected State</button>
-<button class="fd-button fd-button--attention" aria-disabled="true" disabled>Disabled State</button>
+<button class="fd-button fd-button--attention is-disabled" aria-disabled="true" disabled>Disabled State</button>
 `;
 
 buttonStates.storyName = 'Button States';
@@ -331,7 +331,8 @@ focusableDisabled.parameters = {
         storyDescription: `
 This disabled button is focusable by using only the \`aria-disabled\` prop without the use of the \`disabled\` prop.
 When using \`aria-disabled\` do not use the \`disabled\` prop in order to make the button focusable and readable by
-screen readers.
+screen readers. In order for a focus ring to be enabled in a focusable disabled button, ensure that \`is-disabled\` is
+present and \`disabled\` is not.
 In order for helper text to be read out by the screen-reader a helper text has been added with \`aria-describedby\`
 matching the \`id\` of the \`<p>\` element using \`__instructions\` element which uses \`screen-reader-only\` styling so it is not visible.
 \`aria-live="assertive"\` is used to make the screen reader read out helper text when the state of the button has changed.
