@@ -112,6 +112,6 @@
   ],
   "dependencies": {},
   "puppeteer": {
-    "chromium_revision":768783
+    "chromium_revision": 768783
   }
 }
