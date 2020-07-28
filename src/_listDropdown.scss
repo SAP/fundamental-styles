@@ -101,7 +101,6 @@
   &--multi-input {
     display: block;
     min-width: 5rem;
-    max-width: 37.5rem;
 
     .#{$block}__item {
       cursor: pointer;
@@ -125,11 +124,6 @@
 
     .#{$block}__title {
       width: auto;
-      max-width: 22.5rem;
-
-      &:first-child:last-child {
-        max-width: 37.5rem;
-      }
     }
 
     .#{$block}__secondary {

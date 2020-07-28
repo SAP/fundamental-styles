@@ -218,7 +218,6 @@ $block: #{$fd-namespace}-popover;
 
       &-fill {
         display: block;
-        max-width: 37.5rem;
         width: calc(100% - #{$fd-popover-body-shadow-offset} * 2);
       }
     }
