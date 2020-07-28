@@ -5,7 +5,7 @@
 
     .#{$block}__item {
       &::after {
-        min-width: $fd-list-navigation-indicator-width - 1rem;
+        min-width: $fd-list-navigation-indicator-width - $fd-list-item-padding-x;
         content: '';
       }
     }
@@ -20,32 +20,28 @@
       @include fd-rtl() {
         padding-left: 0;
         padding-right: initial;
-      }
-    }
 
-    .#{$block}__link {
-      &::after {
-        min-width: $fd-list-navigation-indicator-width;
-        content: '';
-      }
-
-      &--navigation-indicator {
-        &::after {
-          @include fd-flex-center();
-
-          height: 100%;
-          font-family: "SAP-icons";
-          content: '\e1ed';
-          color: var(--sapContent_NonInteractiveIconColor);
-          font-size: var(--sapFontSmallSize);
-          text-decoration: none;
-          text-transform: none;
+        .#{$block}__link::after {
+          content: '\e1ee';
         }
+      }
 
-        @include fd-rtl() {
-          &::after {
-            content: '\e1ee';
-          }
+      .#{$block}__link::after {
+        @include fd-flex-center();
+
+        min-width: $fd-list-navigation-indicator-width;
+        height: 100%;
+        font-family: "SAP-icons";
+        content: '\e1ed';
+        color: var(--sapContent_NonInteractiveIconColor);
+        font-size: var(--sapFontSmallSize);
+        text-decoration: none;
+        text-transform: none;
+      }
+
+      @include fd-active() {
+        .#{$block}__link::after {
+          color: var(--sapList_Active_TextColor);
         }
       }
     }

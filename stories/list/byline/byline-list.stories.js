@@ -155,7 +155,7 @@ For a byline list with navigation links add the \`fd-list--navigation\` modifier
 export const navigationIndicator = () => `
 <ul class="fd-list fd-list--byline fd-list--navigation fd-list--navigation-indication" role="list">
   <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
-    <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#"> 
+    <a tabindex="0" class="fd-list__link" href="#"> 
       <span class="sap-icon--activate fd-list__thumbnail"></span>
       <div class="fd-list__content">
         <div class="fd-list__title">Title</div>
@@ -163,8 +163,8 @@ export const navigationIndicator = () => `
       </div>
     </a> 
   </li>
-  <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link is-selected">
-    <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#"> 
+  <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link is-selected is-navigated">
+    <a tabindex="0" class="fd-list__link" href="#"> 
       <span class="sap-icon--employee fd-list__thumbnail"></span>
       <div class="fd-list__content">
         <div class="fd-list__title">List Item With No Byline</div>
@@ -355,12 +355,12 @@ export const selectionAndNavigation = () => `
     <span class="fd-list__byline">Byline (description)</span>
     </div>
   </li>
-  <li role="option" tabindex="-1" class="fd-list__item fd-list__item--link is-selected" aria-selected="true">
+  <li role="option" tabindex="-1" class="fd-list__item fd-list__item--link is-selected is-navigated" aria-selected="true">
     <div class="fd-form-item fd-list__form-item">
         <input type="checkbox" class="fd-checkbox" id="Ai4ez6119N" checked aria-labelledby="Ki81L3">
         <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6119N"></label>
     </div>
-    <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
+    <a tabindex="0" class="fd-list__link" href="#">
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
 style="background-image: url('https://placeimg.com/400/400/nature');"></span>
     <div class="fd-list__content">
@@ -377,7 +377,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         <input type="checkbox" class="fd-checkbox" id="Ai4ez61110N" aria-labelledby="Ki81L4">
         <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez61110N"></label>
     </div>
-    <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+    <a tabindex="0" class="fd-list__link" href="#">
       <div class="fd-list__content">
         <div class="fd-list__title" id="Ki81L4">Text-Only List Item</div>
         <div class="fd-list__byline">Byline (description)</div>
@@ -393,7 +393,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6118CON" aria-labelledby="Ki81L6">
         <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6118CON"></label>
     </div>
-    <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+    <a tabindex="0" class="fd-list__link" href="#">
       <span class="sap-icon--activate fd-list__thumbnail"></span>
       <div class="fd-list__content">
         <span class="fd-list__title" id="Ki81L6">Title</span>
@@ -416,12 +416,12 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         </div>
     </div>
   </li>
-  <li role="option" tabindex="-1" class="fd-list__item fd-list__item--link">
+  <li role="option" tabindex="-1" class="fd-list__item fd-list__item--link is-navigated">
     <div class="fd-form-item fd-list__form-item">
         <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez61110CON" aria-labelledby="Ki81L8">
         <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez61110CON"></label>
     </div>
-    <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
+    <a tabindex="0" class="fd-list__link" href="#">
       <div class="fd-list__content">
         <div class="fd-list__title" id="Ki81L8">Text-Only List Item</div>
         <div class="fd-list__byline">Byline (description)</div>
@@ -453,12 +453,12 @@ export const rtl = () => `
         <span class="fd-list__byline">Byline (description)</span>
         </div>
       </li>
-      <li role="option" tabindex="-1" class="fd-list__item fd-list__item--link is-selected" aria-selected="true">
+      <li role="option" tabindex="-1" class="fd-list__item fd-list__item--link is-selected is-navigated" aria-selected="true">
         <div class="fd-form-item fd-list__form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez6119N" checked aria-labelledby="K0922">
             <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6119N"></label>
         </div>
-        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
+        <a tabindex="0" class="fd-list__link" href="#">
         <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
     style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         <div class="fd-list__content">
@@ -475,7 +475,7 @@ export const rtl = () => `
             <input type="checkbox" class="fd-checkbox" id="Ai4ez61110N" aria-labelledby="K0923">
             <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez61110N"></label>
         </div>
-        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+        <a tabindex="0" class="fd-list__link" href="#">
           <div class="fd-list__content">
             <div class="fd-list__title" id="K0923">Text-Only List Item</div>
             <div class="fd-list__byline">Byline (description)</div>

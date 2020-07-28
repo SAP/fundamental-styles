@@ -93,12 +93,12 @@ For a standard list with navigation links add the fd-list--navigation modifier c
 export const navigationIndicator = () => `
 <ul class="fd-list fd-list--navigation fd-list--navigation-indication" role="list">
   <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-      <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+      <a tabindex="0" class="fd-list__link" href="#">
         <span class="fd-list__title">List item 1</span>
       </a>
   </li>
-  <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-      <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-selected" href="#">
+  <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link is-selected">
+      <a tabindex="0" class="fd-list__link" href="#">
         <span class="fd-list__icon sap-icon--history"></span>
         <span class="fd-list__title">List item 2</span>
       </a>
@@ -111,8 +111,8 @@ export const navigationIndicator = () => `
         <span class="fd-list__title">List item 4</span>
         <span class="fd-list__icon sap-icon--map"></span>
   </li>
-  <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-      <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
+  <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link is-navigated">
+      <a tabindex="0" class="fd-list__link" href="#">
         <span class="fd-list__title">List item 5</span>
         <span class="fd-list__icon sap-icon--map"></span>
       </a>
@@ -410,12 +410,12 @@ export const rtl = () => `
 <div dir="rtl">
     <ul class="fd-list fd-list--navigation fd-list--navigation-indication" role="list">
       <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-          <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+          <a tabindex="0" class="fd-list__link" href="#">
             <span class="fd-list__title">List item 1</span>
           </a>
       </li>
-      <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-          <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-selected" href="#">
+      <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link is-selected">
+          <a tabindex="0" class="fd-list__link" href="#">
             <span class="fd-list__icon sap-icon--history"></span>
             <span class="fd-list__title">List item 2</span>
           </a>
@@ -428,8 +428,8 @@ export const rtl = () => `
             <span class="fd-list__title">List item 4</span>
             <span class="fd-list__icon sap-icon--map"></span>
       </li>
-      <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-          <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
+      <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link is-navigated">
+          <a tabindex="0" class="fd-list__link" href="#">
             <span class="fd-list__title">List item 5</span>
             <span class="fd-list__icon sap-icon--map"></span>
           </a>

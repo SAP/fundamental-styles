@@ -113,7 +113,6 @@ $semantic-color: (
     .#{$block}__byline-left,
     .#{$block}__byline-right,
     .#{$block}__thumbnail,
-    &.#{$block}__link--navigation-indicator::after,
     & {
       color: var(--sapList_Active_TextColor);
     }
