@@ -616,41 +616,17 @@ exports[`Storyshots Layouts/Layout Grid Nesting 1`] = `
 
 `;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 exports[`Storyshots Layouts/Layout Grid No Gap 1`] = `
-=======
-exports[`Storyshots Layouts/Layout Grid Responsiveness 1`] = `
->>>>>>> feat: add new visual tests
-=======
-exports[`Storyshots Layouts/Layout Grid No Gap 1`] = `
->>>>>>> docs: update grid examples
 
 
 `;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 exports[`Storyshots Layouts/Layout Grid Offset 1`] = `
-=======
-exports[`Storyshots Layouts/Layout Grid Six Columns 1`] = `
->>>>>>> feat: add new visual tests
-=======
-exports[`Storyshots Layouts/Layout Grid Offset 1`] = `
->>>>>>> docs: update grid examples
 
 
 `;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 exports[`Storyshots Layouts/Layout Grid Responsiveness 1`] = `
-=======
-exports[`Storyshots Layouts/Layout Grid Unequal Columns 1`] = `
->>>>>>> feat: add new visual tests
-=======
-exports[`Storyshots Layouts/Layout Grid Responsiveness 1`] = `
->>>>>>> docs: update grid examples
 
 
 `;

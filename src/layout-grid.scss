@@ -64,30 +64,7 @@ $col-xl: 16;
   }
 }
 
-.#{$blockContainer} {
-  @include fd-reset();
-
-  display: flex;
-  flex-wrap: wrap;
-  flex: 0 0 100%;
-  position: relative;
-  margin: 0 -0.25rem;
-
-  &--no-gap {
-    margin: 0;
-  }
-
-  > *:last-child {
-    margin-bottom: 0;
-  }
-
-  .#{$blockRow} {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-.#{$blockRow} {
+.#{$block} {
   @include fd-reset();
 
   padding: 0.5rem 0.25rem 0 0.25rem;
@@ -145,18 +122,6 @@ $col-xl: 16;
   .#{$blockRow} {
     margin-bottom: 0;
 
-    &--auto-gutter {
-      .#{$blockRow} + .#{$blockRow} {
-        margin-top: 0;
-      }
-
-      margin-bottom: 0;
-
-      .#{$block} {
-        margin-bottom: 1rem;
-      }
-    }
-
     .#{$block} {
       .#{$blockRow} + .#{$blockRow} {
         margin-top: 1rem;
@@ -180,11 +145,6 @@ $col-xl: 16;
       &--offset-after-#{$n}--#{map-get($size,$col-until-xl)} {
         margin-right: ( ( $n / $col-until-xl ) *100%);
       }
-    }
-
-    .#{$blockRow} {
-      margin-left: -0.5rem;
-      margin-right: -0.5rem;
     }
 
     .#{$blockRow} {
