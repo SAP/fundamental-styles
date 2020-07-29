@@ -20,17 +20,6 @@ export const primary = () => `
     <button class="fd-button fd-button--emphasized ">Save</button>
 `;
 
-/**
- *
-* - **Default Button** or Standard Button for neutral or informative (secondary) actions
-* - **Emphasized Button** Used for primary action
-* - **Ghost Button**  Used for secondary actions or primary button in cases where there is already a primary button on the page
-* - **Positive Button** Used for positive (secondary) actions
-* - **Negative Button** Used for negative (secondary) actions
-* - **Attention Button**
-* - **Transparent Button** Used for secondary or negative path actions
- */
-
 export const types = () => `
     <div class="fddocs-container"> 
         <button class="fd-button">Default Button</button>
@@ -44,12 +33,19 @@ export const types = () => `
 `;
 
 types.storyName = 'Design Types';
-
-/**
- * Group a series of buttons together on a single line with the segmented button.
-Only one of the options can be active at a time, the others remain or become inactive.
-The option can be activated by clicking on it. This type of button is comparable to a radio button group.
- */
+types.parameters = {
+    docs: {
+        storyDescription: `
+- **Default Button** or Standard Button for neutral or informative (secondary) actions
+- **Emphasized Button** Used for primary action
+- **Ghost Button**  Used for secondary actions or primary button in cases where there is already a primary button on the page
+- **Positive Button** Used for positive (secondary) actions
+- **Negative Button** Used for negative (secondary) actions
+- **Attention Button**
+- **Transparent Button** Used for secondary or negative path action
+`
+    }
+};
 
 export const segmentedButton = () => `
     <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -66,12 +62,15 @@ export const segmentedButton = () => `
 `;
 
 segmentedButton.storyName = 'Segmented Button (previously known as Button Group)';
-
-/**
- * Menu Buttons allows for multiple actions.
-There are two different types of menu buttons. Both can contain items with submenus.
-When the user activates the button, the menu opens. This is the default type.
- */
+segmentedButton.parameters = {
+    docs: {
+        storyDescription: `
+Group a series of buttons together on a single line with the segmented button.
+Only one of the options can be active at a time, the others remain or become inactive.
+The option can be activated by clicking on it. This type of button is comparable to a radio button group.
+`
+    }
+};
 
 export const menuButton = () => `
 <button class="fd-button fd-button--menu">Action Button</button>
@@ -104,25 +103,17 @@ export const menuButton = () => `
 <button class="fd-button fd-button--compact fd-button--menu">Compact</button>
 `;
 
+menuButton.storyName = 'Menu Button';
 menuButton.parameters = {
     docs: {
-        iframeHeight: 300
+        iframeHeight: 300,
+        storyDescription: `
+Menu Buttons allows for multiple actions.
+There are two different types of menu buttons. Both can contain items with submenus.
+When the user activates the button, the menu opens. This is the default type.
+`
     }
 };
-
-/**
- * The menu button can also be split into 2 areas: the text label and the icon. The separator between them signals that the two areas
-result in different actions. The user has two choices: 1- activating the text label on the button triggers the action or 2- activating
-the arrow opens the menu. The split button consolidates a variety of commands, especially when one of the commands is used more often.
-
-In split mode, the text label depends on the default action. If the default action is displayed as an icon only, all the menu items must contain icons.
-
-**Split Menu Button Behaviors**
-The split menu button can have two different behaviors:
-
-The button always triggers the default action set by the app developer. If no default action has been defined, the first item in the menu list becomes the default.
-The button triggers the last action chosen by the user. Initially, it also triggers the default action. However, when the user selects a different action, this user action becomes the default, and the button text label changes accordingly. The button has a fixed size and the text truncates if the menu item exceeds the available width (as with the combo box).
- */
 
 export const splitMenuButton = () => `
 <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
@@ -196,13 +187,25 @@ export const splitMenuButton = () => `
 
 `;
 
+splitMenuButton.storyName = 'Split Menu Button';
 splitMenuButton.parameters = {
     docs: {
-        iframeHeight: 300
+        iframeHeight: 150,
+        storyDescription: `
+The menu button can also be split into 2 areas: the text label and the icon. The separator between them signals that the two areas
+result in different actions. The user has two choices: 1- activating the text label on the button triggers the action or 2- activating
+the arrow opens the menu. The split button consolidates a variety of commands, especially when one of the commands is used more often.
+
+In split mode, the text label depends on the default action. If the default action is displayed as an icon only, all the menu items must contain icons.
+
+**Split Menu Button Behaviors**
+The split menu button can have two different behaviors:
+
+The button always triggers the default action set by the app developer. If no default action has been defined, the first item in the menu list becomes the default.
+The button triggers the last action chosen by the user. Initially, it also triggers the default action. However, when the user selects a different action, this user action becomes the default, and the button text label changes accordingly. The button has a fixed size and the text truncates if the menu item exceeds the available width (as with the combo box).
+`
     }
 };
-
-/** All the buttons support the cozy (default) and compact sizes. */
 
 export const sizes = () => `
 <button class="fd-button">Save</button>
@@ -224,20 +227,15 @@ export const sizes = () => `
 <button class="fd-button fd-button--attention fd-button--compact">Attention</button>
 `;
 
+sizes.storyName = 'Sizes';
 sizes.parameters = {
     docs: {
-        iframeHeight: 300
+        iframeHeight: 150,
+        storyDescription: `
+All the buttons support the cozy (default) and compact sizes.
+`
     }
 };
-
-/**
- * The buttons can contain **icons OR text**.
-The recommendation is to use either one or the other, not both. Use icon for buttons that contain very basic standard icon metaphors
-(e.g. _Back to previous screen, Create a new item, Remove from list, Edit, ..._)
-
-All button styles can be used with an icon. You can use the `sap-icon--{icon-name}` class to attach an icon to the button.
-The full list of all the available icons can be found on the <a href="icon.html">icons page</a>.
- */
 
 export const iconAndText = () => `
 <button class="fd-button fd-button--emphasized">Add to Cart</button>
@@ -257,21 +255,20 @@ export const iconAndText = () => `
 <button class="fd-button fd-button--attention sap-icon--decline"></button>
 `;
 
+iconAndText.storyName = 'Icon and Text';
 iconAndText.parameters = {
     docs: {
-        iframeHeight: 300
+        iframeHeight: 150,
+        storyDescription: `
+The buttons can contain **icons OR text**.
+The recommendation is to use either one or the other, not both. Use icon for buttons that contain very basic standard icon metaphors
+(e.g. _Back to previous screen, Create a new item, Remove from list, Edit, ..._)
+
+All button styles can be used with an icon. You can use the \`sap-icon--{icon-name}\` class to attach an icon to the button.
+The full list of all the available icons can be found on the <a href="icon.html">icons page</a>.
+`
     }
 };
-
-/**
- * The button provides feedback for "normal", "hover", "selected", "focus" and "disabled" states:
-
-- **Normal**: The default state of the button. It can be clicked/tapped to perform the corresponding action.
-- **Selected**: Used to signal that this button is selected among other buttons. This state can be rendered using
-the `is-selected` class or the `aria-selected="true"` attribute for accessibility.
-- **Disabled**: It cannot be clicked/tapped. This state can be rendered using the `is-disabled` class and the
-`aria-disabled="true"` attribute for accessibility.
- */
 
 export const buttonStates = () => `
 <button class="fd-button fd-button--emphasized">Normal State</button>
@@ -304,15 +301,44 @@ export const buttonStates = () => `
 <br><br>
 <button class="fd-button fd-button--attention">Normal State</button>
 <button class="fd-button fd-button--attention is-selected" aria-selected="true">Selected State</button>
-<button class="fd-button fd-button--attention" aria-disabled="true" disabled>Disabled State</button>
+<button class="fd-button fd-button--attention is-disabled" aria-disabled="true" disabled>Disabled State</button>
 `;
 
+buttonStates.storyName = 'Button States';
 buttonStates.parameters = {
     docs: {
-        iframeHeight: 300
+        iframeHeight: 450,
+        storyDescription: `
+The button provides feedback for "normal", "hover", "selected", "focus" and "disabled" states:
+
+- **Normal**: The default state of the button. It can be clicked/tapped to perform the corresponding action.
+- **Selected**: Used to signal that this button is selected among other buttons. This state can be rendered using
+the \`is-selected\` class or the \`aria-selected="true"\` attribute for accessibility.
+- **Disabled**: It cannot be clicked/tapped. This state can be rendered using the \`is-disabled\` class and the
+\`aria-disabled="true"\` attribute for accessibility.
+`
     }
 };
 
+export const focusableDisabled = () => `
+<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button is-disabled" type="button">Disabled Focusable</button>
+<p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
+`;
+
+focusableDisabled.storyName = 'Focusable Disabled';
+focusableDisabled.parameters = {
+    docs: {
+        storyDescription: `
+This disabled button is focusable by using only the \`aria-disabled\` prop without the use of the \`disabled\` prop.
+When using \`aria-disabled\` do not use the \`disabled\` prop in order to make the button focusable and readable by
+screen readers. In order for a focus ring to be enabled in a focusable disabled button, ensure that \`is-disabled\` is
+present and \`disabled\` is not.
+In order for helper text to be read out by the screen-reader a helper text has been added with \`aria-describedby\`
+matching the \`id\` of the \`<p>\` element using \`__instructions\` element which uses \`screen-reader-only\` styling so it is not visible.
+\`aria-live="assertive"\` is used to make the screen reader read out helper text when the state of the button has changed.
+`
+    }
+};
 
 export const rtl = () => `
 <div dir="rtl">
@@ -351,6 +377,6 @@ export const rtl = () => `
 
 rtl.parameters = {
     docs: {
-        iframeHeight: 300
+        iframeHeight: 200
     }
 };

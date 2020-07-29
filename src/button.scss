@@ -50,7 +50,7 @@ $block: #{$fd-namespace}-button;
   cursor: not-allowed;
 
   &:focus {
-    outline: none;
+    @include buttonFocus();
   }
 }
 
@@ -426,6 +426,10 @@ $block: #{$fd-namespace}-button;
 
   &--half {
     @include half();
+  }
+
+  &__instructions {
+    @include fd-screen-reader-only();
   }
 
   @include fd-hover() {
