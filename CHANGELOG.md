@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.11.3-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.5...v0.11.3-rc.6) (2020-07-29)
+
+
+### Features
+
+* add screen-reader-only styles to button ([#1293](https://github.com/SAP/fundamental-styles/issues/1293)) ([7da0f10](https://github.com/SAP/fundamental-styles/commit/7da0f103a5b4f36aef39b74c67e20516a6cc3d33))
+
 ### [0.11.3-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.4...v0.11.3-rc.5) (2020-07-28)
 
 ### [0.11.3-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.3...v0.11.3-rc.4) (2020-07-27)
