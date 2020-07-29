@@ -110,8 +110,5 @@
     "last 2 versions",
     "IE 11"
   ],
-  "dependencies": {},
-  "puppeteer": {
-    "chromium_revision": 768783
-  }
+  "dependencies": {}
 }

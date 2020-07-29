@@ -1,5 +1,7 @@
 const path = require('path');
-process.env.PUPPETEER_CHROMIUM_REVISION = 768783;
+const puppeteer = require('puppeteer');
+
+process.env.PUPPETEER_CHROMIUM_REVISION = puppeteer._preferredRevision;
 
 module.exports = {
     rootDir: path.resolve(__dirname, '../storybook-testing/'),
