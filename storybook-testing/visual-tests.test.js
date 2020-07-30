@@ -39,8 +39,9 @@ initStoryshots({
     storyKindRegex: /Visual\/([A-Z])\w+/,
     test: imageSnapshot({
         storybookUrl: 'http://localhost:6006/',
-        customizePage,
-        getMatchOptions,
-        beforeScreenshot
+        customizePage: customizePage,
+        getMatchOptions: getMatchOptions,
+        beforeScreenshot: beforeScreenshot,
+        setupTimeout: 100
     })
 });
