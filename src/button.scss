@@ -1,13 +1,13 @@
-@import "./new-settings";
-@import "./mixins";
-@import "./mixins/button/button-helper";
-@import "./mixins/button/standard";
-@import "./mixins/button/negative";
-@import "./mixins/button/attention";
-@import "./mixins/button/ghost";
-@import "./mixins/button/positive";
-@import "./mixins/button/emphasized";
-@import "./mixins/button/button-transparent";
+@import './new-settings';
+@import './mixins';
+@import './mixins/button/button-helper';
+@import './mixins/button/standard';
+@import './mixins/button/negative';
+@import './mixins/button/attention';
+@import './mixins/button/ghost';
+@import './mixins/button/positive';
+@import './mixins/button/emphasized';
+@import './mixins/button/button-transparent';
 
 $fd-button-border-width: var(--sapButton_BorderWidth);
 $fd-button-font-size: var(--sapFontMediumSize);
@@ -19,7 +19,6 @@ $fd-button-touchable-area: ($fd-button-clickable-height - $fd-button-height) / 2
 $fd-button-padding-x: calc(0.625rem - #{$fd-button-border-width});
 $fd-button-min-width: 2.25rem;
 $fd-button-icon-margin: 0.375rem;
-$fd-button-line-height: calc(#{$fd-button-height} - 2 * #{$fd-button-border-width});
 
 $fd-button-compact-clickable-height: 2rem;
 $fd-button-compact-height: 1.625rem;
@@ -38,13 +37,6 @@ $fd-button-transition-params: $fd-animation-speed ease-in !default;
 
 $block: #{$fd-namespace}-button;
 
-@mixin iconOverwrite {
-  &,
-  &[class*=sap-icon] {
-    @content;
-  }
-}
-
 @mixin isDisabled() {
   opacity: var(--sapContent_DisabledOpacity);
   cursor: not-allowed;
@@ -61,7 +53,7 @@ $block: #{$fd-namespace}-button;
     height: $size;
     font-size: $size;
     line-height: $size;
-    font-family: "SAP-icons";
+    font-family: 'SAP-icons';
   }
 }
 
@@ -69,7 +61,6 @@ $block: #{$fd-namespace}-button;
   height: $fd-button-height;
   max-height: $fd-button-height;
   min-width: $fd-button-min-width;
-  line-height: $fd-button-line-height;
   overflow: hidden;
   text-overflow: ellipsis;
 
@@ -82,308 +73,260 @@ $block: #{$fd-namespace}-button;
   // look
   border-style: solid;
   border-width: $fd-button-border-width;
-
-  // placements
-  &::before {
-    margin-right: $fd-button-icon-margin;
-    vertical-align: text-bottom;
-  }
-
-  &::after {
-    margin-left: $fd-button-icon-margin;
-    vertical-align: middle;
-  }
-
-  @include fd-rtl() {
-    &::before {
-      margin-right: 0;
-      margin-left: $fd-button-icon-margin;
-    }
-
-    &::after {
-      margin-left: 0;
-      margin-right: $fd-button-icon-margin;
-    }
-  }
-
-  @include fd-empty() {
-    &::before,
-    &::after {
-      margin-right: 0;
-      margin-left: 0;
-    }
-  }
 }
 
 @mixin buttonReset() {
-  @include iconOverwrite() {
-    @include fd-reset();
-    @include fd-button-reset();
-    @include buttonBase();
-  }
+  @include fd-reset();
+  @include fd-button-reset();
+  @include buttonBase();
 }
 
 @mixin compact() {
-  @include iconOverwrite() {
-    // set metrics
-    height: $fd-button-compact-height;
-    max-height: $fd-button-compact-height;
-    min-width: $fd-button-compact-min-width;
-    padding-left: $fd-button-compact-padding-x;
-    padding-right: $fd-button-compact-padding-x;
-    line-height: $fd-button-compact-line-height;
-  }
-}
-
-@mixin menuCompact() {
-  @include iconOverwrite() {
-    $fd-button-menu-button-padding: 1.812rem;
-    $fd-menu-button-icon-position-horizontal: 0.438rem;
-
-    padding-right: $fd-button-menu-button-padding;
-
-    &::after {
-      top: $fd-menu-button-icon-position-top-compact;
-      right: $fd-menu-button-icon-position-horizontal;
-    }
-
-    @include fd-rtl() {
-      padding-left: $fd-button-menu-button-padding;
-      padding-right: $fd-button-compact-padding-x;
-
-      &::after {
-        right: auto;
-        left: $fd-menu-button-icon-position-horizontal;
-      }
-    }
-  }
+  // set metrics
+  height: $fd-button-compact-height;
+  max-height: $fd-button-compact-height;
+  min-width: $fd-button-compact-min-width;
+  padding-left: $fd-button-compact-padding-x;
+  padding-right: $fd-button-compact-padding-x;
+  line-height: $fd-button-compact-line-height;
 }
 
 @mixin menu() {
-  @include iconOverwrite() {
-    $fd-button-menu-button-padding: 1.937rem;
-    $fd-menu-button-icon-position-horizontal: 0.562rem;
-
-    max-width: $fd-menu-button-max-width;
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    padding-right: $fd-button-menu-button-padding;
-
-    &::after {
-      font-family: "SAP-icons";
-      font-weight: normal;
-      font-size: $fd-menu-button-icon-size;
-      content: "\e1ef";
-      position: absolute;
-      top: $fd-menu-button-icon-position-top;
-      right: $fd-menu-button-icon-position-horizontal;
-      margin-right: 0;
-      margin-left: 0;
-    }
-
-    @include fd-rtl() {
-      padding-left: $fd-button-menu-button-padding;
-      padding-right: $fd-button-padding-x;
-
-      &::after {
-        left: $fd-menu-button-icon-position-horizontal;
-        right: auto;
-      }
-
-      @include fd-empty() {
-        &::before {
-          margin-left: 0;
-        }
-      }
-    }
-  }
+  max-width: $fd-menu-button-max-width;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @mixin textAlignment() {
-  @include iconOverwrite() {
-    &-left {
-      text-align: left;
-    }
+  &-left {
+    text-align: left;
+  }
 
-    &-right {
-      text-align: right;
-    }
+  &-right {
+    text-align: right;
+  }
 
-    &-center {
-      text-align: center;
-    }
+  &-center {
+    text-align: center;
   }
 }
 
 @mixin half() {
-  @include iconOverwrite() {
-    height: $fd-button-height / 2;
-    max-height: $fd-button-height / 2;
-    line-height: 1;
+  height: $fd-button-height / 2;
+  max-height: $fd-button-height / 2;
+  line-height: 1;
 
-    &.#{$block}--compact {
-      height: $fd-button-compact-height / 2;
-      max-height: $fd-button-compact-height / 2;
-      line-height: 1;
-    }
+  &.#{$block}--compact {
+    height: $fd-button-compact-height / 2;
+    max-height: $fd-button-compact-height / 2;
+    line-height: 1;
   }
 }
 
 @mixin buttonContainer() {
-  @include iconOverwrite() {
-    @include standard();
+  @include standard();
 
-    &.#{$block}--ghost {
-      @include ghost();
-    }
+  &.#{$block}--ghost {
+    @include ghost();
+  }
 
-    &.#{$block}--positive {
-      @include positive();
-    }
+  &.#{$block}--positive {
+    @include positive();
+  }
 
-    &.#{$block}--negative {
-      @include negative();
-    }
+  &.#{$block}--negative {
+    @include negative();
+  }
 
-    &.#{$block}--attention {
-      @include attention();
-    }
+  &.#{$block}--attention {
+    @include attention();
+  }
 
-    &.#{$block}--emphasized {
-      font-weight: bold;
+  &.#{$block}--emphasized {
+    font-weight: bold;
 
-      @include emphasized();
-    }
+    @include emphasized();
+  }
 
-    &.#{$block}--transparent {
-      @include transparent();
-    }
+  &.#{$block}--transparent {
+    @include transparent();
   }
 }
 
 @mixin buttonContainerDisabled() {
-  @include iconOverwrite() {
-    @include standardDisabled();
+  @include standardDisabled();
 
-    &.#{$block}--ghost {
-      @include ghostDisabled();
-    }
+  &.#{$block}--ghost {
+    @include ghostDisabled();
+  }
 
-    &.#{$block}--positive {
-      @include positiveDisabled();
-    }
+  &.#{$block}--positive {
+    @include positiveDisabled();
+  }
 
-    &.#{$block}--negative {
-      @include negativeDisabled();
-    }
+  &.#{$block}--negative {
+    @include negativeDisabled();
+  }
 
-    &.#{$block}--attention {
-      @include attentionDisabled();
-    }
+  &.#{$block}--attention {
+    @include attentionDisabled();
+  }
 
-    &.#{$block}--emphasized {
-      @include emphasizedDisabled();
-    }
+  &.#{$block}--emphasized {
+    @include emphasizedDisabled();
+  }
 
-    &.#{$block}--transparent {
-      @include transparentDisabled();
-    }
+  &.#{$block}--transparent {
+    @include transparentDisabled();
   }
 }
 
 @mixin buttonContainerFocus() {
-  @include iconOverwrite() {
-    box-shadow: none;
+  box-shadow: none;
 
-    @include standardFocus();
+  @include standardFocus();
 
-    &.#{$block}--ghost {
-      @include ghostFocus();
-    }
+  &.#{$block}--ghost {
+    @include ghostFocus();
+  }
 
-    &.#{$block}--positive {
-      @include positiveFocus();
-    }
+  &.#{$block}--positive {
+    @include positiveFocus();
+  }
 
-    &.#{$block}--negative {
-      @include negativeFocus();
-    }
+  &.#{$block}--negative {
+    @include negativeFocus();
+  }
 
-    &.#{$block}--attention {
-      @include attentionFocus();
-    }
+  &.#{$block}--attention {
+    @include attentionFocus();
+  }
 
-    &.#{$block}--emphasized {
-      @include negativeFocus();
-    }
+  &.#{$block}--emphasized {
+    @include negativeFocus();
   }
 }
 
 @mixin buttonContainerPressedFocus() {
-  @include iconOverwrite() {
-    box-shadow: none;
+  box-shadow: none;
 
-    @include standardPressed();
-    @include standardPressedFocus();
+  @include standardPressed();
+  @include standardPressedFocus();
 
-    &.#{$block}--ghost {
-      @include ghostPressed();
-      @include ghostPressedFocus();
-    }
+  &.#{$block}--ghost {
+    @include ghostPressed();
+    @include ghostPressedFocus();
+  }
 
-    &.#{$block}--positive {
-      @include positivePressed();
-      @include positivePressedFocus();
-    }
+  &.#{$block}--positive {
+    @include positivePressed();
+    @include positivePressedFocus();
+  }
 
-    &.#{$block}--negative {
-      @include negativePressed();
-      @include negativePressedFocus();
-    }
+  &.#{$block}--negative {
+    @include negativePressed();
+    @include negativePressedFocus();
+  }
 
-    &.#{$block}--attention {
-      @include attentionPressed();
-      @include attentionPressedFocus();
-    }
+  &.#{$block}--attention {
+    @include attentionPressed();
+    @include attentionPressedFocus();
+  }
 
-    &.#{$block}--emphasized {
-      @include emphasizedPressed();
-      @include emphasizedPressedFocus();
-    }
+  &.#{$block}--emphasized {
+    @include emphasizedPressed();
+    @include emphasizedPressedFocus();
   }
 }
 
 @mixin buttonContainerHover() {
-  @include iconOverwrite() {
-    @include standardHover();
+  @include standardHover();
 
-    &.#{$block}--ghost {
-      @include ghostHover();
+  &.#{$block}--ghost {
+    @include ghostHover();
+  }
+
+  &.#{$block}--positive {
+    @include positiveHover();
+  }
+
+  &.#{$block}--negative {
+    @include negativeHover();
+  }
+
+  &.#{$block}--attention {
+    @include attentionHover();
+  }
+
+  &.#{$block}--emphasized {
+    @include emphasizedHover();
+  }
+}
+
+@mixin iconStylesLtr() {
+  > i {
+    &[class*='sap-icon'] {
+      position: relative;
+      top: 0.125rem;
+      width: $fd-button-icon-font-size;
+      height: $fd-button-icon-font-size;
+      font-size: $fd-button-icon-font-size;
+      line-height: $fd-button-icon-font-size;
+
+      &::before {
+        font-style: normal;
+        width: $fd-button-icon-font-size;
+        height: $fd-button-icon-font-size;
+        font-size: $fd-button-icon-font-size;
+        line-height: $fd-button-icon-font-size;
+      }
     }
 
-    &.#{$block}--positive {
-      @include positiveHover();
+    &.#{$block}__icon--left {
+      margin-right: $fd-button-icon-margin;
     }
 
-    &.#{$block}--negative {
-      @include negativeHover();
-    }
-
-    &.#{$block}--attention {
-      @include attentionHover();
-    }
-
-    &.#{$block}--emphasized {
-      @include emphasizedHover();
+    &.#{$block}__icon--right {
+      margin-left: $fd-button-icon-margin;
     }
   }
+
+  &:empty {
+    > i {
+      &.#{$block}__icon--left {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@mixin iconStylesRtl {
+  @include fd-rtl() {
+    > i {
+      &.#{$block}__icon--left {
+        margin-right: 0;
+        margin-left: $fd-button-icon-margin;
+      }
+
+      &.#{$block}__icon--right {
+        margin-left: 0;
+        margin-right: $fd-button-icon-margin;
+      }
+    }
+  }
+}
+
+@mixin iconStyles {
+  @include iconStylesLtr();
+  @include iconStylesRtl();
 }
 
 .#{$block} {
   @include buttonReset();
   @include buttonContainer();
+  @include iconStyles();
 
   overflow: visible;
   min-width: $fd-button-min-width;
@@ -394,10 +337,6 @@ $block: #{$fd-namespace}-button;
 
   &--menu {
     @include menu();
-
-    &.#{$block}--compact {
-      @include menuCompact();
-    }
   }
 
   &--text-alignment {
