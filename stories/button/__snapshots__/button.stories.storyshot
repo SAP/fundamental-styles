@@ -28,6 +28,16 @@ exports[`Storyshots Components/Button Button States 1`] = `
   </button>
   
 
+  <button
+    aria-describedby="fd-ONXuqucVcF"
+    aria-disabled="true"
+    class="fd-button fd-button--emphasized is-disabled"
+    type="button"
+  >
+    Disabled Focusable
+  </button>
+  
+
   <br />
   <br />
   
@@ -53,6 +63,16 @@ exports[`Storyshots Components/Button Button States 1`] = `
     disabled=""
   >
     Disabled State
+  </button>
+  
+
+  <button
+    aria-describedby="fd-ONXuqucVcF"
+    aria-disabled="true"
+    class="fd-button is-disabled"
+    type="button"
+  >
+    Disabled Focusable
   </button>
   
 
@@ -84,6 +104,16 @@ exports[`Storyshots Components/Button Button States 1`] = `
   </button>
   
 
+  <button
+    aria-describedby="fd-ONXuqucVcF"
+    aria-disabled="true"
+    class="fd-button fd-button--transparent is-disabled"
+    type="button"
+  >
+    Disabled Focusable
+  </button>
+  
+
   <br />
   <br />
   
@@ -105,10 +135,20 @@ exports[`Storyshots Components/Button Button States 1`] = `
 
   <button
     aria-disabled="true"
-    class="fd-button fd-button "
+    class="fd-button fd-button"
     disabled=""
   >
     Disabled State
+  </button>
+  
+
+  <button
+    aria-describedby="fd-ONXuqucVcF"
+    aria-disabled="true"
+    class="fd-button fd-button is-disabled"
+    type="button"
+  >
+    Disabled Focusable
   </button>
   
 
@@ -140,6 +180,16 @@ exports[`Storyshots Components/Button Button States 1`] = `
   </button>
   
 
+  <button
+    aria-describedby="fd-ONXuqucVcF"
+    aria-disabled="true"
+    class="fd-button fd-button--ghost is-disabled"
+    type="button"
+  >
+    Disabled Focusable
+  </button>
+  
+
   <br />
   <br />
   
@@ -165,6 +215,16 @@ exports[`Storyshots Components/Button Button States 1`] = `
     disabled=""
   >
     Disabled State
+  </button>
+  
+
+  <button
+    aria-describedby="fd-ONXuqucVcF"
+    aria-disabled="true"
+    class="fd-button fd-button--positive is-disabled"
+    type="button"
+  >
+    Disabled Focusable
   </button>
   
 
@@ -196,6 +256,16 @@ exports[`Storyshots Components/Button Button States 1`] = `
   </button>
   
 
+  <button
+    aria-describedby="fd-ONXuqucVcF"
+    aria-disabled="true"
+    class="fd-button fd-button--negative is-disabled"
+    type="button"
+  >
+    Disabled Focusable
+  </button>
+  
+
   <br />
   <br />
   
@@ -221,6 +291,16 @@ exports[`Storyshots Components/Button Button States 1`] = `
     disabled=""
   >
     Disabled State
+  </button>
+  
+
+  <button
+    aria-describedby="fd-ONXuqucVcF"
+    aria-disabled="true"
+    class="fd-button fd-button--attention is-disabled"
+    type="button"
+  >
+    Disabled Focusable
   </button>
   
 
