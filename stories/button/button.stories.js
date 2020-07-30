@@ -274,42 +274,50 @@ export const buttonStates = () => `
 <button class="fd-button fd-button--emphasized">Normal State</button>
 <button class="fd-button fd-button--emphasized is-selected" aria-selected="true">Selected State</button>
 <button class="fd-button fd-button--emphasized" aria-disabled="true" disabled>Disabled State</button>
-<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button fd-button--emphasized is-disabled" type="button">Disabled Focusable</button>
+<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF1" class="fd-button fd-button--emphasized is-disabled" type="button">Disabled Focusable</button>
+<p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF1">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
 <br><br>
 <button class="fd-button">Normal State</button>
 <button class="fd-button is-selected" aria-selected="true">Selected State</button>
 <button class="fd-button is-disabled" aria-disabled="true" disabled>Disabled State</button>
-<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button is-disabled" type="button">Disabled Focusable</button>
+<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF2" class="fd-button is-disabled" type="button">Disabled Focusable</button>
+<p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF2">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
 <br><br>
 <button class="fd-button fd-button--transparent">Normal State</button>
 <button class="fd-button fd-button--transparent is-selected" aria-selected="true">Selected State</button>
 <button class="fd-button fd-button--transparent is-disabled" aria-disabled="true" disabled>Disabled State</button>
-<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button fd-button--transparent is-disabled" type="button">Disabled Focusable</button>
+<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF3" class="fd-button fd-button--transparent is-disabled" type="button">Disabled Focusable</button>
+<p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF3">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
 <br><br>
 <button class="fd-button fd-button">Normal State</button>
 <button class="fd-button fd-button is-selected" aria-selected="true">Selected State</button>
 <button class="fd-button fd-button" aria-disabled="true" disabled>Disabled State</button>
-<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button fd-button is-disabled" type="button">Disabled Focusable</button>
+<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF4" class="fd-button fd-button is-disabled" type="button">Disabled Focusable</button>
+<p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF4">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
 <br><br>
 <button class="fd-button fd-button--ghost">Normal State</button>
 <button class="fd-button fd-button--ghost is-selected" aria-selected="true">Selected State</button>
 <button class="fd-button fd-button--ghost" aria-disabled="true" disabled>Disabled State</button>
-<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button fd-button--ghost is-disabled" type="button">Disabled Focusable</button>
+<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF5" class="fd-button fd-button--ghost is-disabled" type="button">Disabled Focusable</button>
+<p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF5">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
 <br><br>
 <button class="fd-button fd-button--positive">Normal State</button>
 <button class="fd-button fd-button--positive is-selected" aria-selected="true">Selected State</button>
 <button class="fd-button fd-button--positive" aria-disabled="true" disabled>Disabled State</button>
-<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button fd-button--positive is-disabled" type="button">Disabled Focusable</button>
+<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF6" class="fd-button fd-button--positive is-disabled" type="button">Disabled Focusable</button>
+<p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF6">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
 <br><br>
 <button class="fd-button fd-button--negative">Normal State</button>
 <button class="fd-button fd-button--negative is-selected" aria-selected="true">Selected State</button>
 <button class="fd-button fd-button--negative" aria-disabled="true" disabled>Disabled State</button>
-<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button fd-button--negative is-disabled" type="button">Disabled Focusable</button>
+<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF7" class="fd-button fd-button--negative is-disabled" type="button">Disabled Focusable</button>
+<p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF7">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
 <br><br>
 <button class="fd-button fd-button--attention">Normal State</button>
 <button class="fd-button fd-button--attention is-selected" aria-selected="true">Selected State</button>
 <button class="fd-button fd-button--attention is-disabled" aria-disabled="true" disabled>Disabled State</button>
-<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button fd-button--attention is-disabled" type="button">Disabled Focusable</button>
+<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF8" class="fd-button fd-button--attention is-disabled" type="button">Disabled Focusable</button>
+<p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF8">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
 `;
 
 buttonStates.storyName = 'Button States';
@@ -326,7 +334,9 @@ the \`is-selected\` class or the \`aria-selected="true"\` attribute for accessib
 \`aria-disabled="true"\` attribute for accessibility.
 - **Focusable Disabled**: It cannot be clicked/tapped. The button is tabbable and focusable. A focus ring will appear when clicking or tabbing into the button.
  This state can be rendered using the \`is-disabled\` class and the
-\`aria-disabled="true"\` attribute for accessibility without the use of the \`disabled\` property.
+\`aria-disabled="true"\` attribute for accessibility without the use of the \`disabled\` property. With the addition of the hidden \`__instructions\` 
+element, the user will be notified of further instructions to enable the button, and will be notified when the button is enabled
+by use of the \`aria-live\` property.
 `
     }
 };
