@@ -6,8 +6,39 @@ import '../../dist/segmented-button.css';
 export default {
     title: 'Components/Bar',
     parameters: {
-        description: `The Bar component is a container that holds titles, buttons and input controls. Its content is distributed in three areas - left, middle and right.
-The Bar has 2 modes - Desktop (default) and Tablet/Mobile (cozy).`,
+        description: `The bar component is a container that holds titles, buttons and input controls. The contents are distributed into three areas: left, middle and right. This component’s primary function is to display page **headers** and **footers**.
+        <br><br>
+
+The bar component has two modes:
+
+- Default (desktop)
+- Cozy (tablet and mobile)
+
+## Usage 
+### Header
+Use the header bar if:
+
+- Your page contains several controls, and the actions are valid for the entire page.
+
+Do not use the header bar if:
+
+- You have closing or finalizing actions for the whole page. In this case, use a **footer** instead.
+
+### Footer
+Use the footer bar:
+
+- If you have closing or finalizing actions on your page that apply to the whole page.
+
+Do not use the footer bar:
+
+- If you have different containers on your page (such as charts, tables, and forms) and the action influences only certain items. In this case, place the action as close to the corresponding item(s) as possible.
+- If you have global actions (such as *Edit* or *Delete*) that are not finalizing or closing actions. In this case, use a **header** instead.
+
+
+### Buttons
+- Use only icon buttons **or** text buttons. Icon and text should not be combined into one button.
+- Buttons are sorted by usage i.e. from frequently-used to seldomly-used.
+        `,
         tags: ['f3', 'a11y', 'theme']
     }
 };
@@ -78,7 +109,8 @@ export const desktop = () => `
 
 desktop.parameters = {
     docs: {
-        iframeHeight: 200
+        iframeHeight: 200,
+        storyDescription: 'The default bar contains a back button, page title, segmented button and product switch icon. It can be displayed by using the <code>fd-bar</code> class, and is responsive to desktop screen sizes.'
     }
 };
 
@@ -120,12 +152,12 @@ export const tabletAndMobile = () => `
 tabletAndMobile.parameters = {
     docs: {
         iframeHeight: 100,
-        storyDescription: 'For Tablet and Mobile (Cozy mode) apply the <code>fd-bar--cozy</code> class to the container element.'
+        storyDescription: 'The cozy bar contains a back button, page title, segmented button and product switch icon. It is responsive to both tablet and mobile screen sizes.<br>To apply cozy mode, add the <code>--cozy</code> modifier class to the container element.'
     }
 };
 
 export const barAsHeader = () => `
-<div><b>Desktop</b></div>
+<div><b>Default (desktop)</b></div>
 <br>
 <div class="fd-bar fd-bar--header">
     <div class="fd-bar__left">
@@ -160,7 +192,7 @@ export const barAsHeader = () => `
     </div>
 </div>
 <br><br>
-<div><b>Tablet and Mobile (Cozy)</b></div>
+<div><b>Cozy (tablet and mobile)</b></div>
 <br>
 <div class="fd-bar fd-bar--header fd-bar--cozy">
     <div class="fd-bar__left">
@@ -234,13 +266,13 @@ export const barAsHeader = () => `
 barAsHeader.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: 'For Header in Bar Design apply the <code>fd-bar--header</code> class to the container element.'
+        storyDescription: 'The header bar contains actions that impact the entire page. It can be displayed by adding the <code>--header</code> modifier class to the container element.'
     }
 };
 
 
 export const barAsSubheader = () => `
-<div><b>Desktop</b></div>
+<div><b>Default (desktop)</b></div>
 <br>
 <div class="fd-bar fd-bar--subheader">
     <div class="fd-bar__left">
@@ -263,7 +295,7 @@ export const barAsSubheader = () => `
     </div>
 </div>
 <br><br>
-<div><b>Tablet and Mobile (Cozy)</b></div>
+<div><b>Cozy (tablet and mobile)</b></div>
 <br>
 <div class="fd-bar fd-bar--subheader fd-bar--cozy">
     <div class="fd-bar__middle">
@@ -316,13 +348,13 @@ export const barAsSubheader = () => `
 barAsSubheader.parameters = {
     docs: {
         iframeHeight: 450,
-        storyDescription: 'SubHeader in Bar Design is achieved by adding the <code>fd-bar--subheader</code> class to the container element.'
+        storyDescription: 'To change the header bar into a subheader, add the <code>--subheader</code> modifier class to the container element.'
     }
 };
 
 
 export const headerWithSubheader = () => `
-<div><b>Desktop</b></div>
+<div><b>Default (desktop)</b></div>
 <br>
 <div class="fd-bar fd-bar--header-with-subheader">
     <div class="fd-bar__left">
@@ -367,13 +399,13 @@ export const headerWithSubheader = () => `
 
 headerWithSubheader.parameters = {
     docs: {
-        iframeHeight: 150,
-        storyDescription: 'If a Header is followed by a SubHeader, the Header container should have the <code>fd-bar--header-with-subheader</code> modifier class which is removing the element’s box-shadow.'
+        iframeHeight: 250,
+        storyDescription: 'To add a subheader under a header bar, the container element should have the <code>--header-with-subheader</code> modifier class, which will remove the element’s box shadow.'
     }
 };
 
 export const barAsFooter = () => `
-<div><b>Desktop</b></div>
+<div><b>Default (desktop)</b></div>
 <br>
 <div class="fd-bar fd-bar--footer">
     <div class="fd-bar__right">
@@ -386,7 +418,7 @@ export const barAsFooter = () => `
     </div>
 </div>
 <br><br>
-<div><b>Tablet and Mobile (Cozy)</b></div>
+<div><b>Cozy (tablet and mobile)</b></div>
 <br>
 <div class="fd-bar fd-bar--footer fd-bar--cozy">
     <div class="fd-bar__right">
@@ -415,12 +447,13 @@ export const barAsFooter = () => `
 
 barAsFooter.parameters = {
     docs: {
-        iframeHeight: 350
+        iframeHeight: 150,
+        storyDescription: 'The footer bar should display only closing and finalizing action buttons that impact the entire page such as *Save* or *Cancel*. This bar is fixed at the bottom of the screen, and is not visible when scrolling up. It can be displayed by adding the <code>--footer</code> modifier class to the container element.'
     }
 };
 
 export const barAsFloatingFooter = () => `
-<div><b>Desktop</b></div>
+<div><b>Default (desktop)</b></div>
 <br>
 <div class="fd-bar fd-bar--floating-footer">
     <div class="fd-bar__right">
@@ -433,7 +466,7 @@ export const barAsFloatingFooter = () => `
     </div>
 </div>
 <br><br>
-<div><b>Tablet and Mobile (Cozy)</b></div>
+<div><b>Cozy (tablet and mobile)</b></div>
 <br>
 <div class="fd-bar fd-bar--floating-footer fd-bar--cozy">
     <div class="fd-bar__right">
@@ -462,6 +495,7 @@ export const barAsFloatingFooter = () => `
 
 barAsFloatingFooter.parameters = {
     docs: {
-        iframeHeight: 350
+        iframeHeight: 150,
+        storyDescription: 'The floating footer bar should also display only finalizing action buttons that impact the entire page. This type floats above the page at the bottom of the screen and is always visible when scrolling. It can be displayed by adding the <code>--floating-footer</code> modifier class to the container element.'
     }
 };
