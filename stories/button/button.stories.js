@@ -274,34 +274,42 @@ export const buttonStates = () => `
 <button class="fd-button fd-button--emphasized">Normal State</button>
 <button class="fd-button fd-button--emphasized is-selected" aria-selected="true">Selected State</button>
 <button class="fd-button fd-button--emphasized" aria-disabled="true" disabled>Disabled State</button>
+<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button fd-button--emphasized is-disabled" type="button">Disabled Focusable</button>
 <br><br>
 <button class="fd-button">Normal State</button>
 <button class="fd-button is-selected" aria-selected="true">Selected State</button>
 <button class="fd-button is-disabled" aria-disabled="true" disabled>Disabled State</button>
+<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button is-disabled" type="button">Disabled Focusable</button>
 <br><br>
 <button class="fd-button fd-button--transparent">Normal State</button>
 <button class="fd-button fd-button--transparent is-selected" aria-selected="true">Selected State</button>
 <button class="fd-button fd-button--transparent is-disabled" aria-disabled="true" disabled>Disabled State</button>
+<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button fd-button--transparent is-disabled" type="button">Disabled Focusable</button>
 <br><br>
 <button class="fd-button fd-button">Normal State</button>
 <button class="fd-button fd-button is-selected" aria-selected="true">Selected State</button>
-<button class="fd-button fd-button " aria-disabled="true" disabled>Disabled State</button>
+<button class="fd-button fd-button" aria-disabled="true" disabled>Disabled State</button>
+<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button fd-button is-disabled" type="button">Disabled Focusable</button>
 <br><br>
 <button class="fd-button fd-button--ghost">Normal State</button>
 <button class="fd-button fd-button--ghost is-selected" aria-selected="true">Selected State</button>
 <button class="fd-button fd-button--ghost" aria-disabled="true" disabled>Disabled State</button>
+<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button fd-button--ghost is-disabled" type="button">Disabled Focusable</button>
 <br><br>
 <button class="fd-button fd-button--positive">Normal State</button>
 <button class="fd-button fd-button--positive is-selected" aria-selected="true">Selected State</button>
 <button class="fd-button fd-button--positive" aria-disabled="true" disabled>Disabled State</button>
+<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button fd-button--positive is-disabled" type="button">Disabled Focusable</button>
 <br><br>
 <button class="fd-button fd-button--negative">Normal State</button>
 <button class="fd-button fd-button--negative is-selected" aria-selected="true">Selected State</button>
 <button class="fd-button fd-button--negative" aria-disabled="true" disabled>Disabled State</button>
+<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button fd-button--negative is-disabled" type="button">Disabled Focusable</button>
 <br><br>
 <button class="fd-button fd-button--attention">Normal State</button>
 <button class="fd-button fd-button--attention is-selected" aria-selected="true">Selected State</button>
 <button class="fd-button fd-button--attention is-disabled" aria-disabled="true" disabled>Disabled State</button>
+<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button fd-button--attention is-disabled" type="button">Disabled Focusable</button>
 `;
 
 buttonStates.storyName = 'Button States';
