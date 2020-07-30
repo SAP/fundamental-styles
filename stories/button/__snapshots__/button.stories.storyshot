@@ -28,6 +28,25 @@ exports[`Storyshots Components/Button Button States 1`] = `
   </button>
   
 
+  <button
+    aria-describedby="fd-ONXuqucVcF1"
+    aria-disabled="true"
+    class="fd-button fd-button--emphasized is-disabled"
+    type="button"
+  >
+    Disabled Focusable
+  </button>
+  
+
+  <p
+    aria-live="assertive"
+    class="fd-button__instructions"
+    id="fd-ONXuqucVcF1"
+  >
+    This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.
+  </p>
+  
+
   <br />
   <br />
   
@@ -54,6 +73,25 @@ exports[`Storyshots Components/Button Button States 1`] = `
   >
     Disabled State
   </button>
+  
+
+  <button
+    aria-describedby="fd-ONXuqucVcF2"
+    aria-disabled="true"
+    class="fd-button is-disabled"
+    type="button"
+  >
+    Disabled Focusable
+  </button>
+  
+
+  <p
+    aria-live="assertive"
+    class="fd-button__instructions"
+    id="fd-ONXuqucVcF2"
+  >
+    This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.
+  </p>
   
 
   <br />
@@ -84,6 +122,25 @@ exports[`Storyshots Components/Button Button States 1`] = `
   </button>
   
 
+  <button
+    aria-describedby="fd-ONXuqucVcF3"
+    aria-disabled="true"
+    class="fd-button fd-button--transparent is-disabled"
+    type="button"
+  >
+    Disabled Focusable
+  </button>
+  
+
+  <p
+    aria-live="assertive"
+    class="fd-button__instructions"
+    id="fd-ONXuqucVcF3"
+  >
+    This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.
+  </p>
+  
+
   <br />
   <br />
   
@@ -105,11 +162,30 @@ exports[`Storyshots Components/Button Button States 1`] = `
 
   <button
     aria-disabled="true"
-    class="fd-button fd-button "
+    class="fd-button fd-button"
     disabled=""
   >
     Disabled State
   </button>
+  
+
+  <button
+    aria-describedby="fd-ONXuqucVcF4"
+    aria-disabled="true"
+    class="fd-button fd-button is-disabled"
+    type="button"
+  >
+    Disabled Focusable
+  </button>
+  
+
+  <p
+    aria-live="assertive"
+    class="fd-button__instructions"
+    id="fd-ONXuqucVcF4"
+  >
+    This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.
+  </p>
   
 
   <br />
@@ -140,6 +216,25 @@ exports[`Storyshots Components/Button Button States 1`] = `
   </button>
   
 
+  <button
+    aria-describedby="fd-ONXuqucVcF5"
+    aria-disabled="true"
+    class="fd-button fd-button--ghost is-disabled"
+    type="button"
+  >
+    Disabled Focusable
+  </button>
+  
+
+  <p
+    aria-live="assertive"
+    class="fd-button__instructions"
+    id="fd-ONXuqucVcF5"
+  >
+    This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.
+  </p>
+  
+
   <br />
   <br />
   
@@ -166,6 +261,25 @@ exports[`Storyshots Components/Button Button States 1`] = `
   >
     Disabled State
   </button>
+  
+
+  <button
+    aria-describedby="fd-ONXuqucVcF6"
+    aria-disabled="true"
+    class="fd-button fd-button--positive is-disabled"
+    type="button"
+  >
+    Disabled Focusable
+  </button>
+  
+
+  <p
+    aria-live="assertive"
+    class="fd-button__instructions"
+    id="fd-ONXuqucVcF6"
+  >
+    This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.
+  </p>
   
 
   <br />
@@ -196,6 +310,25 @@ exports[`Storyshots Components/Button Button States 1`] = `
   </button>
   
 
+  <button
+    aria-describedby="fd-ONXuqucVcF7"
+    aria-disabled="true"
+    class="fd-button fd-button--negative is-disabled"
+    type="button"
+  >
+    Disabled Focusable
+  </button>
+  
+
+  <p
+    aria-live="assertive"
+    class="fd-button__instructions"
+    id="fd-ONXuqucVcF7"
+  >
+    This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.
+  </p>
+  
+
   <br />
   <br />
   
@@ -222,6 +355,25 @@ exports[`Storyshots Components/Button Button States 1`] = `
   >
     Disabled State
   </button>
+  
+
+  <button
+    aria-describedby="fd-ONXuqucVcF8"
+    aria-disabled="true"
+    class="fd-button fd-button--attention is-disabled"
+    type="button"
+  >
+    Disabled Focusable
+  </button>
+  
+
+  <p
+    aria-live="assertive"
+    class="fd-button__instructions"
+    id="fd-ONXuqucVcF8"
+  >
+    This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.
+  </p>
   
 
 </section>
