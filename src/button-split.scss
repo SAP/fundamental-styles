@@ -25,6 +25,10 @@ $fd-button-split-margin: 0.125rem / 2;
       &:not(.#{$fd-namespace}-button--transparent) {
         border-left-width: 0;
       }
+
+      > li.#{$fd-namespace}-button__icon--right {
+        margin: 0;
+      }
     }
   }
 }
