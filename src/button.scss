@@ -332,6 +332,14 @@ $block: #{$fd-namespace}-button;
         margin-right: $fd-button-icon-margin;
       }
     }
+
+    &:empty {
+      > i {
+        &.#{$block}__icon--left {
+          margin-left: 0;
+        }
+      }
+    }
   }
 }
 
