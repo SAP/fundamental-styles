@@ -7,7 +7,7 @@ export default {
     title: 'Components/Bar',
     parameters: {
         description: `The Bar component is a container that holds titles, buttons and input controls. Its content is distributed in three areas - left, middle and right.
-The Bar has 2 modes - Desktop (default) and Tablet/Mobile (cozy).`,
+The Bar has 2 modes - Default (desktop) and Cozy (tablet and mobile).`,
         tags: ['f3', 'a11y', 'theme']
     }
 };
