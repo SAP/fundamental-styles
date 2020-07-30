@@ -324,6 +324,9 @@ The button provides feedback for "normal", "hover", "selected", "focus" and "dis
 the \`is-selected\` class or the \`aria-selected="true"\` attribute for accessibility.
 - **Disabled**: It cannot be clicked/tapped. This state can be rendered using the \`is-disabled\` class and the
 \`aria-disabled="true"\` attribute for accessibility.
+- **Focusable Disabled**: It cannot be clicked/tapped. The button is tabbable and focusable. A focus ring will appear when clicking or tabbing into the button.
+ This state can be rendered using the \`is-disabled\` class and the
+\`aria-disabled="true"\` attribute for accessibility without the use of the \`disabled\` property.
 `
     }
 };
