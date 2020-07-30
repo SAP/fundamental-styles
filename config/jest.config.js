@@ -5,7 +5,6 @@ process.env.PUPPETEER_CHROMIUM_REVISION = puppeteer._preferredRevision;
 
 module.exports = {
     rootDir: path.resolve(__dirname, '../storybook-testing/'),
-    // verbose: true,
     testEnvironment: 'node',
     preset: 'jest-puppeteer-docker',
     setupFilesAfterEnv: [path.resolve(__dirname, 'storyshots-setup.js')],
