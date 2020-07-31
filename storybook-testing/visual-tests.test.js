@@ -42,6 +42,6 @@ initStoryshots({
         customizePage: customizePage,
         getMatchOptions: getMatchOptions,
         beforeScreenshot: beforeScreenshot,
-        setupTimeout: 100
+        setupTimeout: 15000
     })
 });
