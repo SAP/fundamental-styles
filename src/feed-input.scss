@@ -1,0 +1,31 @@
+@import "./new-settings";
+@import "./mixins";
+
+/*!
+.fd-input
+*/
+$block: #{$fd-namespace}-feed-input;
+
+.#{$block} {
+  @include fd-reset();
+
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0.5rem 1rem 1rem;
+
+  .#{$block}__thumb {
+    background-color: var(--sapContent_ImagePlaceholderBackground);
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0.5rem 0 0;
+  }
+
+  .#{$block}__textarea {
+    min-height: 3rem;
+    margin: 0;
+  }
+
+  .#{$block}__submit-button {
+    margin: auto 0 0.125rem 0.5rem;
+  }
+}
