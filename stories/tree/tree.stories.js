@@ -113,6 +113,8 @@ export const treeWithExpandedLevel1 = () => `
 
 <br><br>
 
+<h3>Compact Mode </h3>
+
 <ul role="tree" aria-label="Root Tree" id="TREE1CL1" class="fd-tree fd-tree--compact expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div tabindex="0" class="fd-tree__item-container">
@@ -172,7 +174,7 @@ export const treeWithExpandedLevel1 = () => `
 
 treeWithExpandedLevel1.parameters = {
     docs: {
-        iframeHeight: 650,
+        iframeHeight: 950,
         storyDescription: `
 When Level 1 is expanded to show Level 2, Level 2 is idented by 1.5rem.
 Only the root tree (ul element) needs to have the <code class="docs-code">.expanded-level-*</code> modifier class in order to keep track of which level is currently expanded.
@@ -1009,3 +1011,9 @@ export const RTL = () => `
     </ul>
 </div>
 `;
+
+RTL.parameters = {
+    docs: {
+        iframeHeight: 500
+    }
+};

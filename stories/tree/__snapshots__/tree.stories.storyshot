@@ -291,6 +291,12 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
   
 
 
+  <h3>
+    Compact Mode 
+  </h3>
+  
+
+
   <ul
     aria-label="Root Tree"
     class="fd-tree fd-tree--compact expanded-level-1"

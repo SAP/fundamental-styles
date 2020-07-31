@@ -70,7 +70,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
 }
 
 @mixin text-wrapping-behaviour() {
-  white-space: initial;
+  white-space: normal;
   overflow: visible;
   text-overflow: initial;
 }
@@ -100,6 +100,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
 
     .#{$block}__expander,
     .#{$block}__text,
+    .#{$block}__icon,
     .has-navigation-indicator::after,
     button::before {
       color: var(--sapList_Active_TextColor);
@@ -269,6 +270,8 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
 
       .#{$block}__text {
         @include text-wrapping-behaviour();
+
+        line-height: 1.4;
       }
     }
   }
@@ -278,6 +281,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
 
     min-width: $fd-tree-icon-size;
     min-height: $fd-tree-icon-size;
+    line-height: $fd-tree-icon-size; // IE11 fix for vertical alignment
     font-size: 1.125rem;
     text-align: center;
     color: var(--sapContent_NonInteractiveIconColor);
@@ -290,6 +294,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
     width: 100%;
     font-size: var(--sapFontLargeSize);
     color: var(--sapList_TextColor);
+    line-height: $fd-tree-item-height; // IE11 fix for vertical alignment
   }
 
   // MODIFIERS
@@ -309,10 +314,17 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
 
     .#{$block}__content {
       min-height: $fd-tree-item-height-compact;
+
+      &--wrap {
+        .#{$block}__text {
+          line-height: 1.4;
+        }
+      }
     }
 
     .#{$block}__text {
       font-size: var(--sapFontSize);
+      line-height: $fd-tree-item-height-compact; // IE11 fix for vertical alignment
     }
 
     .#{$block}__expander {
@@ -332,6 +344,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
 
     .#{$block}__icon {
       min-height: $fd-tree-icon-size-compact;
+      line-height: $fd-tree-icon-size-compact;
       font-size: 1rem;
     }
   }
