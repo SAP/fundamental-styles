@@ -148,7 +148,6 @@ exports[`Storyshots Components/Avatar Borders 1`] = `
   />
   
 
-
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent fd-avatar--border"
@@ -225,7 +224,6 @@ exports[`Storyshots Components/Avatar Circle 1`] = `
     role="presentation"
   />
   
-
 
   <span
     aria-label="Wendy Wallace"
@@ -462,7 +460,6 @@ exports[`Storyshots Components/Avatar Transparent 1`] = `
   />
   
 
-
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent"
@@ -584,7 +581,6 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
 
   </span>
   
-
 
   <span
     aria-label="Wendy Wallace"
