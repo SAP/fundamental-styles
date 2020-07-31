@@ -177,7 +177,7 @@ export const accentColors = () => `
 accentColors.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'To change the background color, add the <code>fd-avatar--accent-color-</code> class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: <code>fd-avatar--accent-color-10</code>.'
+        storyDescription: 'To change the background color, add the <code>fd-avatar--accent-color-*</code> class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: <code>fd-avatar--accent-color-10</code>.'
     }
 };
 
