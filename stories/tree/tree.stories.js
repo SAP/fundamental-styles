@@ -1,7 +1,5 @@
 import '../../dist/button.css';
 import '../../dist/icon.css';
-import '../../dist/menu.css';
-import '../../dist/popover.css';
 import '../../dist/tree.css';
 
 export default {
@@ -191,8 +189,8 @@ export const treeWithExpandedLevel2AndBorderlessDesign = () => `
                 <span class="sap-icon--e-care sap-icon--l fd-tree__icon"></span>
                 <span class="fd-tree__text">Level 1</span>
             </div>
-            <button class="fd-button fd-button--transparent sap-icon--edit"></button>
-            <button class="fd-button fd-button--transparent sap-icon--decline"></button>
+            <button aria-label="Edit button" class="fd-button fd-button--transparent sap-icon--edit"></button>
+            <button aria-label="Delete button" class="fd-button fd-button--transparent sap-icon--decline"></button>
         </div>
         <ul role="group" class="fd-tree" id="TREE2L2" aria-hidden="false">
             <li role="treeitem" aria-level="2" aria-expanded="true" class="fd-tree__item">
@@ -202,8 +200,8 @@ export const treeWithExpandedLevel2AndBorderlessDesign = () => `
                         <span class="sap-icon--account sap-icon--l fd-tree__icon"></span>
                         <span class="fd-tree__text">Level 2</span>
                     </div>
-                    <button class="fd-button fd-button--transparent sap-icon--edit"></button>
-                    <button class="fd-button fd-button--transparent sap-icon--decline"></button>
+                    <button aria-label="Edit button" class="fd-button fd-button--transparent sap-icon--edit"></button>
+                    <button aria-label="Delete button" class="fd-button fd-button--transparent sap-icon--decline"></button>
                 </div>
                 <ul role="group" class="fd-tree" id="TREE2L3" aria-hidden="false">
                     <li role="treeitem" aria-level="3" class="fd-tree__item">
@@ -213,8 +211,8 @@ export const treeWithExpandedLevel2AndBorderlessDesign = () => `
                                 <span class="sap-icon--product sap-icon--l fd-tree__icon"></span>
                                 <span class="fd-tree__text">Level 3</span>
                             </div>
-                            <button class="fd-button fd-button--transparent sap-icon--edit"></button>
-                            <button class="fd-button fd-button--transparent sap-icon--decline"></button>
+                            <button aria-label="Edit button" class="fd-button fd-button--transparent sap-icon--edit"></button>
+                            <button aria-label="Delete button" class="fd-button fd-button--transparent sap-icon--decline"></button>
                         </div>
                     </li>
                     <li role="treeitem" aria-level="3" class="fd-tree__item">
@@ -223,8 +221,8 @@ export const treeWithExpandedLevel2AndBorderlessDesign = () => `
                                 <span class="sap-icon--history sap-icon--l fd-tree__icon"></span>
                                 <span class="fd-tree__text">Level 3</span>
                             </div>
-                            <button class="fd-button fd-button--transparent sap-icon--edit"></button>
-                            <button class="fd-button fd-button--transparent sap-icon--decline"></button>
+                            <button aria-label="Edit button" class="fd-button fd-button--transparent sap-icon--edit"></button>
+                            <button aria-label="Delete button" class="fd-button fd-button--transparent sap-icon--decline"></button>
                         </div>
                     </li>
                 </ul>
@@ -235,8 +233,8 @@ export const treeWithExpandedLevel2AndBorderlessDesign = () => `
                         <span class="sap-icon--competitor sap-icon--l fd-tree__icon"></span>
                         <span class="fd-tree__text">Level 2</span>
                     </div>
-                    <button class="fd-button fd-button--transparent sap-icon--edit"></button>
-                    <button class="fd-button fd-button--transparent sap-icon--decline"></button>
+                    <button aria-label="Edit button" class="fd-button fd-button--transparent sap-icon--edit"></button>
+                    <button aria-label="Delete button" class="fd-button fd-button--transparent sap-icon--decline"></button>
                 </div>
             </li>
         </ul>
@@ -247,8 +245,8 @@ export const treeWithExpandedLevel2AndBorderlessDesign = () => `
                 <span class="sap-icon--batch-payments sap-icon--l fd-tree__icon"></span>
                 <span class="fd-tree__text">Level 1</span>
             </div>
-            <button class="fd-button fd-button--transparent sap-icon--edit"></button>
-            <button class="fd-button fd-button--transparent sap-icon--decline"></button>
+            <button aria-label="Edit button" class="fd-button fd-button--transparent sap-icon--edit"></button>
+            <button aria-label="Delete button" class="fd-button fd-button--transparent sap-icon--decline"></button>
         </div>
     </li>
     <li role="treeitem" aria-level="1" class="fd-tree__item">
@@ -257,8 +255,8 @@ export const treeWithExpandedLevel2AndBorderlessDesign = () => `
                 <span class="sap-icon--favorite sap-icon--l fd-tree__icon"></span>
                 <span class="fd-tree__text">Level 1</span>
             </div>
-            <button class="fd-button fd-button--transparent sap-icon--edit"></button>
-            <button class="fd-button fd-button--transparent sap-icon--decline"></button>
+            <button aria-label="Edit button" class="fd-button fd-button--transparent sap-icon--edit"></button>
+            <button aria-label="Delete button" class="fd-button fd-button--transparent sap-icon--decline"></button>
         </div>
     </li>
 </ul>
@@ -679,7 +677,7 @@ export const treeWithSelection = () => `
             <button tabindex="-1" class="fd-tree__expander is-expanded" aria-controls="TREESELL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
             <div class="fd-form-item fd-tree__form-item">
                 <input type="checkbox" checked class="fd-checkbox" id="Ai4ez1">
-                <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez1"></label>
+                <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="Ai4ez1"></label>
             </div>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
@@ -691,7 +689,7 @@ export const treeWithSelection = () => `
                     <button tabindex="-1" class="fd-tree__expander" aria-label="Expander"></button>
                     <div class="fd-form-item fd-tree__form-item">
                         <input type="checkbox" class="fd-checkbox" id="Ai4ez2">
-                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez2"></label>
+                        <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="Ai4ez2"></label>
                     </div>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
@@ -702,7 +700,7 @@ export const treeWithSelection = () => `
                 <div tabindex="0" class="fd-tree__item-container is-selected">
                     <div class="fd-form-item fd-tree__form-item">
                         <input type="checkbox" checked class="fd-checkbox" id="Ai4ez3">
-                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez3"></label>
+                        <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="Ai4ez3"></label>
                     </div>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
@@ -713,7 +711,7 @@ export const treeWithSelection = () => `
                 <div tabindex="0" class="fd-tree__item-container">
                     <div class="fd-form-item fd-tree__form-item">
                         <input type="checkbox" class="fd-checkbox" id="Ai4ez4">
-                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez4"></label>
+                        <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="Ai4ez4"></label>
                     </div>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
@@ -726,7 +724,7 @@ export const treeWithSelection = () => `
         <div tabindex="0" class="fd-tree__item-container">
             <div class="fd-form-item fd-tree__form-item">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez5">
-                <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez5"></label>
+                <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="Ai4ez5"></label>
             </div>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
@@ -737,7 +735,7 @@ export const treeWithSelection = () => `
         <div tabindex="0" class="fd-tree__item-container">
             <div class="fd-form-item fd-tree__form-item">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez6">
-                <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6"></label>
+                <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="Ai4ez6"></label>
             </div>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
@@ -759,7 +757,7 @@ export const treeWithSelection = () => `
             </div>
             <div class="fd-form-item fd-tree__form-item">
                 <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact" id="Ai4ezA">
-                <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ezA"></label>
+                <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ezA"></label>
             </div>
         </div>
         <ul role="group" class="fd-tree" id="TREESELCL2" aria-hidden="false">
@@ -771,7 +769,7 @@ export const treeWithSelection = () => `
                     </div>
                     <div class="fd-form-item fd-tree__form-item">
                         <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ezB">
-                        <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ezB"></label>
+                        <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ezB"></label>
                     </div>
                 </div>
             </li>
@@ -782,7 +780,7 @@ export const treeWithSelection = () => `
                     </div>
                     <div class="fd-form-item fd-tree__form-item">
                         <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ezC">
-                        <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ezC"></label>
+                        <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ezC"></label>
                     </div>
                 </div>
             </li>
@@ -793,7 +791,7 @@ export const treeWithSelection = () => `
                     </div>
                     <div class="fd-form-item fd-tree__form-item">
                         <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ezD">
-                        <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ezD"></label>
+                        <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ezD"></label>
                     </div>
                 </div>
             </li>
@@ -806,7 +804,7 @@ export const treeWithSelection = () => `
             </div
             <div class="fd-form-item fd-tree__form-item">
                 <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact" id="Ai4ezEE">
-                <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ezEE"></label>
+                <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ezEE"></label>
             </div>
         </div>
     </li>
@@ -817,7 +815,7 @@ export const treeWithSelection = () => `
             </div>
             <div class="fd-form-item fd-tree__form-item">
                 <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ezF">
-                <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ezF"></label>
+                <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ezF"></label>
             </div>
         </div>
     </li>
@@ -833,7 +831,7 @@ export const treeWithSelection = () => `
             <button tabindex="-1" class="fd-tree__expander is-expanded" aria-controls="TREESESSLL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
             <div class="fd-form-item fd-tree__form-item">
                 <input type="radio" class="fd-radio" id="pDidh761" name="radio1" checked>
-                <label class="fd-radio__label" for="pDidh761"></label>
+                <label class="fd-radio__label" aria-label="radio button" for="pDidh761"></label>
             </div>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
@@ -845,7 +843,7 @@ export const treeWithSelection = () => `
                     <button tabindex="-1" class="fd-tree__expander" aria-label="Expander"></button>
                     <div class="fd-form-item fd-tree__form-item">
                         <input type="radio" class="fd-radio" id="pDidh7612" name="radio1">
-                        <label class="fd-radio__label" for="pDidh7612"></label>
+                        <label class="fd-radio__label" aria-label="radio button" for="pDidh7612"></label>
                     </div>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
@@ -856,7 +854,7 @@ export const treeWithSelection = () => `
                 <div tabindex="0" class="fd-tree__item-container">
                     <div class="fd-form-item fd-tree__form-item">
                         <input type="radio" class="fd-radio" id="pDidh7613" name="radio1">
-                        <label class="fd-radio__label" for="pDidh7613"></label>
+                        <label class="fd-radio__label" aria-label="radio button" for="pDidh7613"></label>
                     </div>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
@@ -867,7 +865,7 @@ export const treeWithSelection = () => `
                 <div tabindex="0" class="fd-tree__item-container">
                     <div class="fd-form-item fd-tree__form-item">
                         <input type="radio" class="fd-radio" id="pDidh764" name="radio3">
-                        <label class="fd-radio__label" for="pDidh764"></label>
+                        <label class="fd-radio__label" aria-label="radio button" for="pDidh764"></label>
                     </div>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
@@ -880,7 +878,7 @@ export const treeWithSelection = () => `
         <div tabindex="0" class="fd-tree__item-container">
             <div class="fd-form-item fd-tree__form-item">
             <input type="radio" class="fd-radio" id="pDidh76r4" name="radio3" disabled>
-            <label class="fd-radio__label" for="pDidh76r4"></label>
+            <label class="fd-radio__label" aria-label="radio button" for="pDidh76r4"></label>
             </div>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
@@ -891,7 +889,7 @@ export const treeWithSelection = () => `
         <div tabindex="0" class="fd-tree__item-container">
             <div class="fd-form-item fd-tree__form-item">
                 <input type="radio" class="fd-radio" id="pDidh764Y6" name="radio3" disabled>
-                <label class="fd-radio__label" for="pDidh764Y6"></label>
+                <label class="fd-radio__label" aria-label="radio button" for="pDidh764Y6"></label>
             </div>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
@@ -941,8 +939,8 @@ export const RTL = () => `
                     <span class="sap-icon--pie-chart sap-icon--l fd-tree__icon"></span>
                     <span class="fd-tree__text">Level 1</span>
                 </a>
-                <button class="fd-button fd-button--transparent sap-icon--edit"></button>
-                <button class="fd-button fd-button--transparent sap-icon--decline"></button>
+                <button aria-label="Edit button" class="fd-button fd-button--transparent sap-icon--edit"></button>
+                <button aria-label="Delete button" class="fd-button fd-button--transparent sap-icon--decline"></button>
             </div>
             <ul role="group" class="fd-tree" id="TREE1RTLL2" aria-hidden="false">
                 <li role="treeitem" aria-level="2" class="fd-tree__item">
@@ -952,8 +950,8 @@ export const RTL = () => `
                             <span class="sap-icon--money-bills sap-icon--l fd-tree__icon"></span>
                             <span class="fd-tree__text">Level 2</span>
                         </div>
-                        <button class="fd-button fd-button--transparent sap-icon--edit"></button>
-                        <button class="fd-button fd-button--transparent sap-icon--decline"></button>
+                        <button aria-label="Edit button" class="fd-button fd-button--transparent sap-icon--edit"></button>
+                        <button aria-label="Delete button" class="fd-button fd-button--transparent sap-icon--decline"></button>
                     </div>
                 </li>
                 <li role="treeitem" aria-level="2" class="fd-tree__item">
@@ -962,8 +960,8 @@ export const RTL = () => `
                             <span class="sap-icon--marketing-campaign sap-icon--l fd-tree__icon"></span>
                             <span class="fd-tree__text">Level 2</span>
                         </div>
-                        <button class="fd-button fd-button--transparent sap-icon--edit"></button>
-                        <button class="fd-button fd-button--transparent sap-icon--decline"></button>
+                        <button aria-label="Edit button" class="fd-button fd-button--transparent sap-icon--edit"></button>
+                        <button aria-label="Delete button" class="fd-button fd-button--transparent sap-icon--decline"></button>
                     </div>
                 </li>
                 <li role="treeitem" aria-level="2" class="fd-tree__item">
@@ -973,8 +971,8 @@ export const RTL = () => `
                             <span class="fd-tree__text">Level 2</span>
                             <span class="sap-icon--e-learning sap-icon--l fd-tree__icon"></span>
                         </div>
-                        <button class="fd-button fd-button--transparent sap-icon--edit"></button>
-                        <button class="fd-button fd-button--transparent sap-icon--decline"></button>
+                        <button aria-label="Edit button" class="fd-button fd-button--transparent sap-icon--edit"></button>
+                        <button aria-label="Delete button" class="fd-button fd-button--transparent sap-icon--decline"></button>
                     </div>
                 </li>
             </ul>
@@ -986,8 +984,8 @@ export const RTL = () => `
                     <span class="fd-tree__text">Level 1</span>
                     <span class="sap-icon--puzzle sap-icon--l fd-tree__icon"></span>
                 </div>
-                <button class="fd-button fd-button--transparent sap-icon--edit"></button>
-                <button class="fd-button fd-button--transparent sap-icon--decline"></button>
+                <button aria-label="Edit button" class="fd-button fd-button--transparent sap-icon--edit"></button>
+                <button aria-label="Delete button" class="fd-button fd-button--transparent sap-icon--decline"></button>
             </div>
         </li>
         <li role="treeitem" aria-level="1" class="fd-tree__item">
@@ -1004,8 +1002,8 @@ export const RTL = () => `
                     <span class="sap-icon--e-care sap-icon--l fd-tree__icon"></span>
                     <span class="fd-tree__text">Very long text with wrapping behaviour ... perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span>
                 </div>
-                <button class="fd-button fd-button--transparent sap-icon--edit"></button>
-                <button class="fd-button fd-button--transparent sap-icon--decline"></button>
+                <button aria-label="Edit button" class="fd-button fd-button--transparent sap-icon--edit"></button>
+                <button aria-label="Delete button" class="fd-button fd-button--transparent sap-icon--decline"></button>
             </div>
         </li>
     </ul>
