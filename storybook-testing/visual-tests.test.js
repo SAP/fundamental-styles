@@ -15,7 +15,7 @@ const getMatchOptions = ({ context }) => {
         customSnapshotIdentifier: () => context.name.replace(/\s/g, ''),
         // Will output base64 string of a diff image to console in case of failed tests (in addition to creating a diff image).
         // This string can be copy-pasted to a browser address string to preview the diff for a failed test.
-        dumpDiffToConsole: false,
+        dumpDiffToConsole: true,
         allowSizeMismatch: true
     };
 };
@@ -42,6 +42,6 @@ initStoryshots({
         customizePage: customizePage,
         getMatchOptions: getMatchOptions,
         beforeScreenshot: beforeScreenshot,
-        setupTimeout: 15000
+        setupTimeout: 30000
     })
 });
