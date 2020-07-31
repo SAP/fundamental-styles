@@ -37,7 +37,7 @@ export const standard = () => `
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-style="background-image: url('https://placeimg.com/400/400/nature');"></span>
+style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
     <div class="fd-list__content">
         <div class="fd-list__title">List Item With Two-Column Byline</div>
         <div class="fd-list__byline fd-list__byline--2-col">
@@ -71,7 +71,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-style="background-image: url('https://placeimg.com/400/400/nature');"></span>
+style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
     <div class="fd-list__content">
         <div class="fd-list__title">List Item With Two-Column Byline</div>
         <div class="fd-list__byline fd-list__byline--2-col">
@@ -119,7 +119,7 @@ export const navigation = () => `
   <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
     <a tabindex="0" class="fd-list__link" href="#"> 
         <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-    style="background-image: url('https://placeimg.com/400/400/nature');"></span>
+    style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
         <div class="fd-list__content">
             <div class="fd-list__title">List Item With Two-Column Byline</div>
             <div class="fd-list__byline fd-list__byline--2-col">
@@ -173,7 +173,7 @@ export const navigationIndicator = () => `
   </li>
   <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-    style="background-image: url('https://placeimg.com/400/400/nature');"></span>
+    style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
         <div class="fd-list__content">
             <div class="fd-list__title">List Item With Two-Column Byline</div>
             <div class="fd-list__byline fd-list__byline--2-col">
@@ -215,7 +215,7 @@ export const borderless = () => `
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-style="background-image: url('https://placeimg.com/400/400/nature');"></span>
+style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
     <div class="fd-list__content">
         <div class="fd-list__title">List Item With Two-Column Byline</div>
         <div class="fd-list__byline fd-list__byline--2-col">
@@ -266,7 +266,7 @@ export const selection = () => `
           <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6112X"></label>
       </div>
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-style="background-image: url('https://placeimg.com/400/400/nature');"></span>
+style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
     <div class="fd-list__content">
         <div class="fd-list__title" id="O09lk2">List Item With Two-Column Byline</div>
         <div class="fd-list__byline fd-list__byline--2-col">
@@ -306,7 +306,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
           <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6116B"></label>
       </div>
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-style="background-image: url('https://placeimg.com/400/400/nature');"></span>
+style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
     <div class="fd-list__content">
         <div class="fd-list__title" id="O09lk5">List Item With Two-Column Byline</div>
         <div class="fd-list__byline fd-list__byline--2-col">
@@ -362,7 +362,7 @@ export const selectionAndNavigation = () => `
     </div>
     <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-style="background-image: url('https://placeimg.com/400/400/nature');"></span>
+style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
     <div class="fd-list__content">
         <div class="fd-list__title" id="Ki81L3">List Item With Two-Column Byline</div>
         <div class="fd-list__byline fd-list__byline--2-col">
@@ -407,7 +407,7 @@ style="background-image: url('https://placeimg.com/400/400/nature');"></span>
         <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6119CON"></label>
     </div>
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-style="background-image: url('https://placeimg.com/400/400/nature');"></span>
+style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
     <div class="fd-list__content">
         <div class="fd-list__title" id="Ki81L7">List Item With Two-Column Byline</div>
         <div class="fd-list__byline fd-list__byline--2-col">
@@ -460,7 +460,7 @@ export const rtl = () => `
         </div>
         <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
         <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-    style="background-image: url('https://placeimg.com/400/400/nature');"></span>
+    style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
         <div class="fd-list__content">
             <div class="fd-list__title"  id="K0922">List Item With Two-Column Byline</div>
             <div class="fd-list__byline fd-list__byline--2-col">
@@ -502,7 +502,7 @@ export const rtl = () => `
       </li>
       <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-    style="background-image: url('https://placeimg.com/400/400/nature');"></span>
+    style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
         <div class="fd-list__content">
             <div class="fd-list__title">List Item With Two-Column Byline</div>
             <div class="fd-list__byline fd-list__byline--2-col">
