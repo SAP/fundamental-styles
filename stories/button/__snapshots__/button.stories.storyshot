@@ -468,6 +468,7 @@ exports[`Storyshots Components/Button Icon and Text 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button"
   >
     <i
@@ -477,6 +478,7 @@ exports[`Storyshots Components/Button Icon and Text 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button fd-button--emphasized"
   >
     <i
@@ -486,6 +488,7 @@ exports[`Storyshots Components/Button Icon and Text 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button fd-button--transparent"
   >
     <i
@@ -495,6 +498,7 @@ exports[`Storyshots Components/Button Icon and Text 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button fd-button--ghost"
   >
     <i
@@ -504,6 +508,7 @@ exports[`Storyshots Components/Button Icon and Text 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button fd-button--positive"
   >
     <i
@@ -513,6 +518,7 @@ exports[`Storyshots Components/Button Icon and Text 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button fd-button--negative"
   >
     <i
@@ -522,6 +528,7 @@ exports[`Storyshots Components/Button Icon and Text 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button fd-button--attention"
   >
     <i
@@ -762,6 +769,7 @@ exports[`Storyshots Components/Button Menu Button 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button fd-button--menu"
   >
     
@@ -778,6 +786,7 @@ exports[`Storyshots Components/Button Menu Button 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button fd-button--menu fd-button--transparent"
   >
     
@@ -794,6 +803,7 @@ exports[`Storyshots Components/Button Menu Button 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button fd-button--menu fd-button--positive"
   >
     
@@ -810,6 +820,7 @@ exports[`Storyshots Components/Button Menu Button 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button fd-button--menu fd-button--negative"
   >
     
@@ -826,6 +837,7 @@ exports[`Storyshots Components/Button Menu Button 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button fd-button--menu fd-button--attention"
   >
     
@@ -886,6 +898,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
   
     
   <button
+    aria-label="More"
     class="fd-button"
   >
     <i
@@ -921,6 +934,7 @@ exports[`Storyshots Components/Button Segmented Button (previously known as Butt
     
         
     <button
+      aria-label="More"
       class="fd-button"
     >
       <i
@@ -930,6 +944,7 @@ exports[`Storyshots Components/Button Segmented Button (previously known as Butt
     
         
     <button
+      aria-label="More"
       aria-pressed="true"
       class="fd-button is-selected"
     >
@@ -940,6 +955,7 @@ exports[`Storyshots Components/Button Segmented Button (previously known as Butt
     
         
     <button
+      aria-label="More"
       class="fd-button"
     >
       <i
@@ -999,6 +1015,7 @@ exports[`Storyshots Components/Button Sizes 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button"
   >
     <i
@@ -1008,6 +1025,7 @@ exports[`Storyshots Components/Button Sizes 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button fd-button--ghost"
   >
     <i
@@ -1017,6 +1035,7 @@ exports[`Storyshots Components/Button Sizes 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button fd-button--emphasized"
   >
     <i
@@ -1026,6 +1045,7 @@ exports[`Storyshots Components/Button Sizes 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button fd-button--transparent"
   >
     <i
@@ -1067,6 +1087,7 @@ exports[`Storyshots Components/Button Sizes 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button fd-button--compact"
   >
     <i
@@ -1076,6 +1097,7 @@ exports[`Storyshots Components/Button Sizes 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button fd-button--ghost fd-button--compact"
   >
     Edit
@@ -1083,6 +1105,7 @@ exports[`Storyshots Components/Button Sizes 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button fd-button--emphasized fd-button--compact"
   >
     <i
@@ -1092,6 +1115,7 @@ exports[`Storyshots Components/Button Sizes 1`] = `
   
 
   <button
+    aria-label="More"
     class="fd-button fd-button--transparent fd-button--compact"
   >
     <i
