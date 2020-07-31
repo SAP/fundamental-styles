@@ -5,36 +5,35 @@ $block: #{$fd-namespace}-form-layout-grid;
 $blockCol: #{$fd-namespace}-col;
 $blockContainer: #{$fd-namespace}-container;
 $blockRow: #{$fd-namespace}-row;
+$cols: 11;
 
 @media (min-width: 0) {
   .#{$blockContainer}.#{$block}-container {
     padding: 1rem;
+    margin: 0 -0.25rem;
+
+    & > .fd-row {
+      & > :first-child & :not(.fd-col--wrap) {
+        display: flex;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
     .#{$blockRow},
     .#{$blockRow}+.#{$blockRow} {
       margin-top: 0;
     }
-  }
-
-  .#{$block}-container {
-    padding: 1rem;
-    margin: 0 -0.25rem;
-
-    > * {
-      > :first-child {
-        display: flex;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        justify-content: flex-end;
-      }
-    }
 
     .#{$blockRow} {
-      margin-bottom: 0;
       align-items: center;
       margin-top: 0;
+      margin-bottom: 0.625rem;
 
       .#{$blockCol} {
         padding: 0 0.25rem;
+        text-align: left;
+        justify-content: flex-start;
 
         .fd-select__control {
           margin: 0.25rem 0;
@@ -42,6 +41,24 @@ $blockRow: #{$fd-namespace}-row;
 
         .fd-form-label {
           margin-right: 0;
+          padding-bottom: 0.125rem;
+        }
+
+        @for $n from 0 through $cols {
+          &--#{$n} {
+            text-align: right;
+            justify-content: flex-end;
+            margin-bottom: 0;
+
+            .fd-form-label {
+              padding-bottom: 0;
+            }
+          }
+        }
+
+        &--12 {
+          text-align: left;
+          justify-content: flex-start;
         }
 
         .#{$blockRow} {
@@ -50,19 +67,98 @@ $blockRow: #{$fd-namespace}-row;
       }
     }
 
-    &--vertical {
-      > * {
-        > :first-child {
+    :last-child {
+      * > {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .#{$blockContainer}.#{$block}-container {
+    .#{$blockRow} {
+      margin-bottom: 0;
+
+      .#{$blockCol} {
+        .fd-form-label {
+          padding-bottom: 0;
+        }
+
+        @for $n from 0 through $cols {
+          &--#{$n}--m {
+            text-align: right;
+            justify-content: flex-end;
+            margin-bottom: 0;
+          }
+        }
+
+        &--12--m {
+          text-align: left;
           justify-content: flex-start;
+
+          .fd-form-label {
+            padding-bottom: 0.125rem;
+          }
         }
       }
+    }
+  }
+}
 
-      > *:not(:last-child) {
-        margin-bottom: 0.625rem;
+@media (min-width: 1024px) {
+  .#{$blockContainer}.#{$block}-container {
+    .#{$blockRow} {
+      .#{$blockCol} {
+        .fd-form-label {
+          padding-bottom: 0;
+        }
+
+        @for $n from 0 through $cols {
+          &--#{$n}--l {
+            text-align: right;
+            justify-content: flex-end;
+            margin-bottom: 0;
+          }
+        }
+
+        &--12--l {
+          text-align: left;
+          justify-content: flex-start;
+
+          .fd-form-label {
+            padding-bottom: 0.125rem;
+          }
+        }
       }
+    }
+  }
+}
 
-      .fd-form-label {
-        padding-bottom: 0.125rem;
+@media (min-width: 1440px) {
+  .#{$blockContainer}.#{$block}-container {
+    .#{$blockRow} {
+      .#{$blockCol} {
+        .fd-form-label {
+          padding-bottom: 0;
+        }
+
+        @for $n from 0 through $cols {
+          &--#{$n}--xl {
+            text-align: right;
+            justify-content: flex-end;
+            margin-bottom: 0;
+          }
+        }
+
+        &--12--xl {
+          text-align: left;
+          justify-content: flex-start;
+
+          .fd-form-label {
+            padding-bottom: 0.125rem;
+          }
+        }
       }
     }
   }

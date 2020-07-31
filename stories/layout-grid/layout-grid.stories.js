@@ -18,7 +18,7 @@ To use the grid, the user must use all of the \`fd-container\`, \`fd-row\`, and 
 - Large 1024px<br>
 \`fd-col--x--l\` will be used from 1024px to the next specified minimum breakpoint, column takes x/12 space of the row
 - Extra-large 1440px<br>
-\`fd-col--x--xl\` will be used from 1440px and larger, column takes x/16 space of the row`
+\`fd-col--x--xl\` will be used from 1440px and larger, column takes x/12 space of the row`
     }
 };
 
@@ -164,7 +164,7 @@ export const differentSizeColumns = () =>`
 differentSizeColumns.parameters = {
     docs: {
         iframeHeight: 1150,
-        storyDescription: 'To define the size of that column use the `fd-col--x` modifier, where `x` can go from 1-12, or 1-16 with the extra large size modifier.'
+        storyDescription: 'To define the size of that column use the `fd-col--x` modifier, where `x` can go from 1-12'
     }
 };
 
@@ -191,7 +191,7 @@ export const responsiveness = () =>
 responsiveness.parameters = {
     docs: {
         iframeHeight: 320,
-        storyDescription: 'You can define different column sizes for each inflection point. In this example for extra large the cells are taking 4 columns out of 16 `fd-col--4--xl`; 4 columns out of 12 in large `fd-col--4--l`; 6 columns out of 12 in medium `fd-col--6--m`, and 12 out of 12 in small `fd-col--12`'
+        storyDescription: 'You can define different column sizes for each inflection point. In this example for extra large the cells are taking 4 columns out of 12 `fd-col--4--xl`; 4 columns out of 12 in large `fd-col--4--l`; 6 columns out of 12 in medium `fd-col--6--m`, and 12 out of 12 in small `fd-col--12`'
     }
 };
 
