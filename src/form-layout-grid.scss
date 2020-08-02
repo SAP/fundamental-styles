@@ -25,6 +25,19 @@ $cols: 11;
       margin-top: 0;
     }
 
+    & > .fd-row {
+      & > :first-child & :not(.fd-col--wrap) {
+        display: flex;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .#{$blockRow},
+    .#{$blockRow}+.#{$blockRow} {
+      margin-top: 0;
+    }
+
     .#{$blockRow} {
       align-items: center;
       margin-top: 0;
@@ -34,6 +47,10 @@ $cols: 11;
         padding: 0 0.25rem;
         text-align: left;
         justify-content: flex-start;
+
+        .fd-select__control {
+          margin: 0.25rem 0;
+        }
 
         .fd-select__control {
           margin: 0.25rem 0;

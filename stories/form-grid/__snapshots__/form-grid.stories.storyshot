@@ -45,17 +45,22 @@ exports[`Storyshots Components/Forms/Form Grid S Size 1`] = `
 
 `;
 
-exports[`Storyshots Components/Forms/Form Grid Various Columns 1`] = `
+exports[`Storyshots Components/Forms/Form Grid Xl Default 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Forms/Form Grid Vertical 12 Column Layout 1`] = `
+exports[`Storyshots Components/Forms/Form Grid Xl Double Form Group 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Forms/Form Grid Xl Sizes 1`] = `
+exports[`Storyshots Components/Forms/Form Grid Xl Multiple Form Group 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Form Grid Xl Single Form Group 1`] = `
 
 
 `;

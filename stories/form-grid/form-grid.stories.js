@@ -126,19 +126,19 @@ The label-field ratio is 12:12:0 by default:
 export const mSizeDefault = () => `
 <div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
-    <div class="fd-col fd-col--2--m fd-col--4--l">
+    <div class="fd-col fd-col-md--2 fd-col-lg--4">
       <label class="fd-form-label" for="input-1-name">Name:</label>
     </div>
-    <div class="fd-col fd-col--10--m fd-col--8--l">
+    <div class="fd-col fd-col-md--10 fd-col-lg--8">
       <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
     </div>
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--2--m fd-col--4--l">
+    <div class="fd-col fd-col-md--2 fd-col-lg--4">
       <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
     </div>
-    <div class="fd-col fd-col--10--m fd-col--8--l">
+    <div class="fd-col fd-col-md--10 fd-col-lg--8">
       <div class="fd-row">
       <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
@@ -151,10 +151,10 @@ export const mSizeDefault = () => `
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--2--m  fd-col--4--l">
+    <div class="fd-col fd-col-md--2  fd-col-lg--4">
       <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
     </div>
-    <div class="fd-col fd-col--10--m  fd-col--8--l">
+    <div class="fd-col fd-col-md--10  fd-col-lg--8">
       <div class="fd-row">
         <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
@@ -167,10 +167,10 @@ export const mSizeDefault = () => `
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--2--m  fd-col--4--l">
+    <div class="fd-col fd-col-md--2  fd-col-lg--4">
       <label class="fd-form-label" for="input-1-country">Country:</label>
     </div>
-    <div class="fd-col fd-col--10--m  fd-col--8--l">
+    <div class="fd-col fd-col-md--10  fd-col-lg--8">
       <div class="fd-popover" style="width:100%">
         <div class="fd-popover__control">
           <div class="fd-select">
@@ -218,19 +218,19 @@ Size M goes down to 601 px. In this size, the 3:5:4 approach may not be wide eno
 export const mSizeSplitScreen = () => `
 <div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
-    <div class="fd-col fd-col--4--m  fd-col--4--l">
+    <div class="fd-col fd-col-md--4  fd-col-lg--4">
       <label class="fd-form-label" for="input-1-name">Name:</label>
     </div>
-    <div class="fd-col fd-col--7--m  fd-col--8--l fd-col--offset-after--1--m">
+    <div class="fd-col fd-col-md--7  fd-col-lg--8 fd-col-md--offset-after--1">
       <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
     </div>
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--4--m  fd-col--4--l">
+    <div class="fd-col fd-col-md--4  fd-col-lg--4">
       <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
     </div>
-    <div class="fd-col fd-col--7--m  fd-col--8--l fd-col--offset-after--1--m">
+    <div class="fd-col fd-col-md--7  fd-col-lg--8 fd-col-md--offset-after--1">
       <div class="fd-row">
       <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
@@ -243,10 +243,10 @@ export const mSizeSplitScreen = () => `
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--4--m  fd-col--4--l">
+    <div class="fd-col fd-col-md--4  fd-col-lg--4">
       <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
     </div>
-    <div class="fd-col fd-col--7--m  fd-col--8--l fd-col--offset-after--1--m">
+    <div class="fd-col fd-col-md--7  fd-col-lg--8 fd-col-md--offset-after--1">
       <div class="fd-row">
         <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
@@ -259,10 +259,10 @@ export const mSizeSplitScreen = () => `
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--4--m  fd-col--4--l">
+    <div class="fd-col fd-col-md--4  fd-col-lg--4">
       <label class="fd-form-label" for="input-1-country">Country:</label>
     </div>
-    <div class="fd-col fd-col--7--m  fd-col--8--l fd-col--offset-after--1--m">
+    <div class="fd-col fd-col-md--7  fd-col-lg--8 fd-col-md--offset-after--1">
       <div class="fd-popover" style="width:100%">
         <div class="fd-popover__control">
           <div class="fd-select">
@@ -301,19 +301,19 @@ When placing the form in the details part of a split screen, use a single-column
 export const mSizeFullScreenApp = () => `
 <div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
-    <div class="fd-col fd-col--3--m  fd-col--4--l">
+    <div class="fd-col fd-col-md--3  fd-col-lg--4">
       <label class="fd-form-label" for="input-1-name">Name:</label>
     </div>
-    <div class="fd-col fd-col--5--m  fd-col--8--l fd-col--offset-after--4--m">
+    <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
       <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
     </div>
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--3--m  fd-col--4--l">
+    <div class="fd-col fd-col-md--3  fd-col-lg--4">
       <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
     </div>
-    <div class="fd-col fd-col--5--m  fd-col--8--l fd-col--offset-after--4--m">
+    <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
       <div class="fd-row">
       <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
@@ -326,10 +326,10 @@ export const mSizeFullScreenApp = () => `
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--3--m  fd-col--4--l">
+    <div class="fd-col fd-col-md--3  fd-col-lg--4">
       <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
     </div>
-    <div class="fd-col fd-col--5--m  fd-col--8--l fd-col--offset-after--4--m">
+    <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
       <div class="fd-row">
         <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
@@ -342,10 +342,10 @@ export const mSizeFullScreenApp = () => `
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--3--m  fd-col--4--l">
+    <div class="fd-col fd-col-md--3  fd-col-lg--4">
       <label class="fd-form-label" for="input-1-country">Country:</label>
     </div>
-    <div class="fd-col fd-col--5--m  fd-col--8--l fd-col--offset-after--4--m">
+    <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
       <div class="fd-popover" style="width:100%">
         <div class="fd-popover__control">
           <div class="fd-select">
@@ -384,19 +384,19 @@ Size M goes down to 601 px. In this size, the 3:5:4 approach may not be wide eno
 export const mSizeFullScreenAppLongLabel = () => `
 <div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
-    <div class="fd-col fd-col--4--m fd-col--3--l">
+    <div class="fd-col fd-col-md--4 fd-col-lg--3">
       <label class="fd-form-label" for="input-1-name">Name:</label>
     </div>
-    <div class="fd-col fd-col--8--m fd-col--5--l fd-col--offset-after--4">
+    <div class="fd-col fd-col-md--8 fd-col-lg--5 fd-col--offset-after--4">
       <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
     </div>
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--4--m fd-col--3--l">
+    <div class="fd-col fd-col-md--4 fd-col-lg--3">
       <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
     </div>
-    <div class="fd-col fd-col--8--m fd-col--5--l fd-col--offset-after--4">
+    <div class="fd-col fd-col-md--8 fd-col-lg--5 fd-col--offset-after--4">
       <div class="fd-row">
       <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
@@ -409,10 +409,10 @@ export const mSizeFullScreenAppLongLabel = () => `
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--4--m fd-col--3--l">
+    <div class="fd-col fd-col-md--4 fd-col-lg--3">
       <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
     </div>
-    <div class="fd-col fd-col--8--m fd-col--5--l fd-col--offset-after--4">
+    <div class="fd-col fd-col-md--8 fd-col-lg--5 fd-col--offset-after--4">
       <div class="fd-row">
         <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
@@ -425,10 +425,10 @@ export const mSizeFullScreenAppLongLabel = () => `
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--4--m fd-col--3--l">
+    <div class="fd-col fd-col-md--4 fd-col-lg--3">
       <label class="fd-form-label" for="input-1-country">Country:</label>
     </div>
-    <div class="fd-col fd-col--8--m fd-col--5--l fd-col--offset-after--4">
+    <div class="fd-col fd-col-md--8 fd-col-lg--5 fd-col--offset-after--4">
       <div class="fd-popover" style="width:100%">
         <div class="fd-popover__control">
           <div class="fd-select">
@@ -466,19 +466,19 @@ Size M goes down to 601 px. In this size, the 3:5:4 approach may not be wide eno
 export const lSizeDefault = () => `
 <div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
   <div class="fd-row">
-    <div class="fd-col fd-col--2--m fd-col--4--l">
+    <div class="fd-col fd-col-md--2 fd-col-lg--4">
       <label class="fd-form-label" for="input-1-name">Name:</label>
     </div>
-    <div class="fd-col fd-col--10--m fd-col--8--l">
+    <div class="fd-col fd-col-md--10 fd-col-lg--8">
       <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
     </div>
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--2--m fd-col--4--l">
+    <div class="fd-col fd-col-md--2 fd-col-lg--4">
       <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
     </div>
-    <div class="fd-col fd-col--10--m fd-col--8--l">
+    <div class="fd-col fd-col-md--10 fd-col-lg--8">
       <div class="fd-row">
       <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
@@ -491,10 +491,10 @@ export const lSizeDefault = () => `
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--2--m fd-col--4--l">
+    <div class="fd-col fd-col-md--2 fd-col-lg--4">
       <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
     </div>
-    <div class="fd-col fd-col--10--m fd-col--8--l">
+    <div class="fd-col fd-col-md--10 fd-col-lg--8">
       <div class="fd-row">
         <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
@@ -507,10 +507,10 @@ export const lSizeDefault = () => `
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--2--m fd-col--4--l">
+    <div class="fd-col fd-col-md--2 fd-col-lg--4">
       <label class="fd-form-label" for="input-1-country">Country:</label>
     </div>
-    <div class="fd-col fd-col--10--m fd-col--8--l">
+    <div class="fd-col fd-col-md--10 fd-col-lg--8">
       <div class="fd-popover" style="width:100%">
         <div class="fd-popover__control">
           <div class="fd-select">
@@ -553,19 +553,19 @@ The label-field ratio is **4:8:0** by default:
 export const lSizeSingleFormGroup = () => `
 <div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
   <div class="fd-row">
-    <div class="fd-col fd-col--2--m fd-col--3--l">
+    <div class="fd-col fd-col-md--2 fd-col-lg--3">
       <label class="fd-form-label" for="input-1-name">Name:</label>
     </div>
-    <div class="fd-col fd-col--10--m fd-col--5--l fd-col--offset-after-4--l">
+    <div class="fd-col fd-col-md--10 fd-col-lg--5 fd-col-lg--offset-after--4">
       <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
     </div>
   </div>
 
   <div class="fd-row">
-    <div class="fd-col  fd-col--2--m fd-col--3--l">
+    <div class="fd-col  fd-col-md--2 fd-col-lg--3">
       <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
     </div>
-    <div class="fd-col fd-col--10--m fd-col--5--l fd-col--offset-after-4--l">
+    <div class="fd-col fd-col-md--10 fd-col-lg--5 fd-col-lg--offset-after--4">
       <div class="fd-row">
       <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
@@ -578,10 +578,10 @@ export const lSizeSingleFormGroup = () => `
   </div>
 
   <div class="fd-row">
-    <div class="fd-col  fd-col--2--m fd-col--3--l">
+    <div class="fd-col  fd-col-md--2 fd-col-lg--3">
       <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
     </div>
-    <div class="fd-col  fd-col--10--m fd-col--5--l fd-col--offset-after-4--l">
+    <div class="fd-col  fd-col-md--10 fd-col-lg--5 fd-col-lg--offset-after--4">
       <div class="fd-row">
         <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
@@ -594,10 +594,10 @@ export const lSizeSingleFormGroup = () => `
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--2--m fd-col--3--l">
+    <div class="fd-col fd-col-md--2 fd-col-lg--3">
       <label class="fd-form-label" for="input-1-country">Country:</label>
     </div>
-    <div class="fd-col fd-col--10--m fd-col--5--l fd-col--offset-after-4--l">
+    <div class="fd-col fd-col-md--10 fd-col-lg--5 fd-col-lg--offset-after--4">
       <div class="fd-popover" style="width:100%">
         <div class="fd-popover__control">
           <div class="fd-select">
@@ -635,20 +635,20 @@ If the form contains multiple form groups, you can also use a two-column layout 
 export const lSizeMultipleFormGroup = () => `
 <div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
   <div class="fd-row">
-    <div class="fd-col fd-col--6--l fd-col--wrap">
+    <div class="fd-col fd-col-lg--6 fd-col--wrap">
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--12--l">
+        <div class="fd-col fd-col-md--2 fd-col-lg--12">
           <label class="fd-form-label" for="input-1-name">Name:</label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--12--l">
+        <div class="fd-col fd-col-md--10 fd-col-lg--12">
           <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
         </div>
       </div>
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--12--l">
+        <div class="fd-col fd-col-md--2 fd-col-lg--12">
           <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--12--l">
+        <div class="fd-col fd-col-md--10 fd-col-lg--12">
           <div class="fd-row">
           <div class="fd-col fd-col--4">
               <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
@@ -661,10 +661,10 @@ export const lSizeMultipleFormGroup = () => `
       </div>
 
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--12--l">
+        <div class="fd-col fd-col-md--2 fd-col-lg--12">
           <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--12--l">
+        <div class="fd-col fd-col-md--10 fd-col-lg--12">
           <div class="fd-row">
             <div class="fd-col fd-col--8">
               <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
@@ -677,10 +677,10 @@ export const lSizeMultipleFormGroup = () => `
       </div>
 
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--12--l">
+        <div class="fd-col fd-col-md--2 fd-col-lg--12">
           <label class="fd-form-label" for="input-1-country">Country:</label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--12--l">
+        <div class="fd-col fd-col-md--10 fd-col-lg--12">
           <div class="fd-popover" style="width:100%">
             <div class="fd-popover__control">
               <div class="fd-select">
@@ -703,20 +703,20 @@ export const lSizeMultipleFormGroup = () => `
     
     
 
-    <div class="fd-col fd-col--6--l fd-col--wrap">
+    <div class="fd-col fd-col-lg--6 fd-col--wrap">
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--12--l">
+        <div class="fd-col fd-col-md--2 fd-col-lg--12">
           <label class="fd-form-label" for="input-1-name">Name:</label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--12--l">
+        <div class="fd-col fd-col-md--10 fd-col-lg--12">
           <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
         </div>
       </div>
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--12--l">
+        <div class="fd-col fd-col-md--2 fd-col-lg--12">
           <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--12--l">
+        <div class="fd-col fd-col-md--10 fd-col-lg--12">
           <div class="fd-row">
           <div class="fd-col fd-col--4">
               <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
@@ -729,10 +729,10 @@ export const lSizeMultipleFormGroup = () => `
       </div>
 
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--12--l">
+        <div class="fd-col fd-col-md--2 fd-col-lg--12">
           <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--12--l">
+        <div class="fd-col fd-col-md--10 fd-col-lg--12">
           <div class="fd-row">
             <div class="fd-col fd-col--8">
               <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
@@ -745,10 +745,10 @@ export const lSizeMultipleFormGroup = () => `
       </div>
 
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--12--l">
+        <div class="fd-col fd-col-md--2 fd-col-lg--12">
           <label class="fd-form-label" for="input-1-country">Country:</label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--12--l">
+        <div class="fd-col fd-col-md--10 fd-col-lg--12">
           <div class="fd-popover" style="width:100%">
             <div class="fd-popover__control">
               <div class="fd-select">
@@ -788,19 +788,19 @@ In this size, long labels that are put next to the fields might not fit on small
 export const xlDefault = () => `
 <div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row">
-    <div class="fd-col fd-col--2--m fd-col--4--l fd-col--4--xl">
+    <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
       <label class="fd-form-label" for="input-2-name">Name:</label>
     </div>
-    <div class="fd-col fd-col--10--m fd-col--8--l fd-col--8--xl">
+    <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
       <input class="fd-input" type="text" id="input-2-name" placeholder="Enter First and Last Name" value="Amelia Perry">
     </div>
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--2--m fd-col--4--l fd-col--4--xl">
+    <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
       <label class="fd-form-label fd-form-label--required" for="input-2-street">Street/No.: </label>
     </div>
-    <div class="fd-col fd-col--10--m fd-col--8--l fd-col--8--xl">
+    <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
       <div class="fd-row">
       <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-2-street" placeholder="Enter address" value="Myrtle St.">
@@ -813,10 +813,10 @@ export const xlDefault = () => `
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--2--m fd-col--4--l fd-col--4--xl">
+    <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
       <label class="fd-form-label fd-form-label--required" for="input-2-zip">ZIP Code/City: </label>
     </div>
-    <div class="fd-col fd-col--10--m fd-col--8--l fd-col--8--xl">
+    <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
       <div class="fd-row">
         <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-2-zip" placeholder="Enter ZIP Code" value="43823">
@@ -829,10 +829,10 @@ export const xlDefault = () => `
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--2--m fd-col--4--l fd-col--4--xl">
+    <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
       <label class="fd-form-label" for="input-2-country">Country:</label>
     </div>
-    <div class="fd-col fd-col--10--m fd-col--8--l fd-col--8--xl">
+    <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
       <div class="fd-popover" style="width:100%">
         <div class="fd-popover__control">
           <div class="fd-select">
@@ -874,19 +874,19 @@ The label-field ratio for size XL is **4:8:0** (technically the value is set to 
 export const xlSingleFormGroup = () => `
 <div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row">
-    <div class="fd-col fd-col--2--m fd-col--4--l fd-col--3--xl">
+    <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--3">
       <label class="fd-form-label" for="input-2-name">Name:</label>
     </div>
-    <div class="fd-col fd-col--10--m fd-col--8--l fd-col--5--xl fd-col--offset-after-4--xl">
+    <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--5 fd-col-xl--offset-after--4">
       <input class="fd-input" type="text" id="input-2-name" placeholder="Enter First and Last Name" value="Amelia Perry">
     </div>
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--2--m fd-col--4--l fd-col--3--xl">
+    <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--3">
       <label class="fd-form-label fd-form-label--required" for="input-2-street">Street/No.: </label>
     </div>
-    <div class="fd-col fd-col--10--m fd-col--8--l fd-col--5--xl fd-col--offset-after-4--xl">
+    <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--5 fd-col-xl--offset-after--4">
       <div class="fd-row">
       <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-2-street" placeholder="Enter address" value="Myrtle St.">
@@ -899,10 +899,10 @@ export const xlSingleFormGroup = () => `
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--2--m fd-col--4--l fd-col--3--xl">
+    <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--3">
       <label class="fd-form-label fd-form-label--required" for="input-2-zip">ZIP Code/City: </label>
     </div>
-    <div class="fd-col fd-col--10--m fd-col--8--l fd-col--5--xl fd-col--offset-after-4--xl">
+    <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--5 fd-col-xl--offset-after--4">
       <div class="fd-row">
         <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-2-zip" placeholder="Enter ZIP Code" value="43823">
@@ -915,10 +915,10 @@ export const xlSingleFormGroup = () => `
   </div>
 
   <div class="fd-row">
-    <div class="fd-col fd-col--2--m fd-col--4--l fd-col--3--xl">
+    <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--3">
       <label class="fd-form-label" for="input-2-country">Country:</label>
     </div>
-    <div class="fd-col fd-col--10--m fd-col--8--l fd-col--5--xl fd-col--offset-after-4--xl">
+    <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--5 fd-col-xl--offset-after-4">
       <div class="fd-popover" style="width:100%">
         <div class="fd-popover__control">
           <div class="fd-select">
@@ -961,21 +961,21 @@ If the form is put into a full-screen app and it contains multiple form groups, 
 export const xlDoubleFormGroup = () => `
 <div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row">
-    <div class="fd-col fd-col--6--xl fd-col--wrap">
+    <div class="fd-col fd-col-xl--6 fd-col--wrap">
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--4--l fd-col--4--xl">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
           <label class="fd-form-label" for="input-2-name">Name:</label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--8--l fd-col--8--xl">
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
           <input class="fd-input" type="text" id="input-2-name" placeholder="Enter First and Last Name" value="Amelia Perry">
         </div>
       </div>
 
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--4--l fd-col--4--xl">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
           <label class="fd-form-label fd-form-label--required" for="input-2-street">Street/No.: </label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--8--l fd-col--8--xl">
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
           <div class="fd-row">
           <div class="fd-col fd-col--4">
               <input class="fd-input" type="text" id="input-2-street" placeholder="Enter address" value="Myrtle St.">
@@ -988,10 +988,10 @@ export const xlDoubleFormGroup = () => `
       </div>
 
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--4--l fd-col--4--xl">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
           <label class="fd-form-label fd-form-label--required" for="input-2-zip">ZIP Code/City: </label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--8--l fd-col--8--xl">
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
           <div class="fd-row">
             <div class="fd-col fd-col--8">
               <input class="fd-input" type="text" id="input-2-zip" placeholder="Enter ZIP Code" value="43823">
@@ -1004,10 +1004,10 @@ export const xlDoubleFormGroup = () => `
       </div>
 
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--4--l fd-col--4--xl">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
           <label class="fd-form-label" for="input-2-country">Country:</label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--8--l fd-col--8--xl">
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
           <div class="fd-popover" style="width:100%">
             <div class="fd-popover__control">
               <div class="fd-select">
@@ -1027,21 +1027,21 @@ export const xlDoubleFormGroup = () => `
         </div>
       </div>
     </div>
-    <div class="fd-col fd-col--6--xl fd-col--wrap">
+    <div class="fd-col fd-col-xl--6 fd-col--wrap">
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--4--l fd-col--4--xl">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
           <label class="fd-form-label" for="input-2a-name">Name:</label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--8--l fd-col--8--xl">
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
           <input class="fd-input" type="text" id="input-2a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
         </div>
       </div>
 
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--4--l fd-col--4--xl">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
           <label class="fd-form-label fd-form-label--required" for="input-2a-street">Street/No.: </label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--8--l fd-col--8--xl">
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
           <div class="fd-row">
           <div class="fd-col fd-col--4">
               <input class="fd-input" type="text" id="input-2a-street" placeholder="Enter address" value="Myrtle St.">
@@ -1054,10 +1054,10 @@ export const xlDoubleFormGroup = () => `
       </div>
 
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--4--l fd-col--4--xl">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
           <label class="fd-form-label fd-form-label--required" for="input-2a-zip">ZIP Code/City: </label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--8--l fd-col--8--xl">
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
           <div class="fd-row">
             <div class="fd-col fd-col--8">
               <input class="fd-input" type="text" id="input-2a-zip" placeholder="Enter ZIP Code" value="43823">
@@ -1070,10 +1070,10 @@ export const xlDoubleFormGroup = () => `
       </div>
 
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--4--l fd-col--4--xl">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
           <label class="fd-form-label" for="input-2a-country">Country:</label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--8--l fd-col--8--xl">
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
           <div class="fd-popover" style="width:100%">
             <div class="fd-popover__control">
               <div class="fd-select">
@@ -1115,21 +1115,21 @@ If the form is put into a full-screen app and it contains multiple form groups, 
 export const xlMultipleFormGroup = () => `
 <div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row">
-    <div class="fd-col fd-col--4--xl fd-col--wrap">
+    <div class="fd-col fd-col-xl--4 fd-col--wrap">
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--4--l fd-col--12--xl">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-2-name">Name:</label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--8--l fd-col--12--xl">
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
           <input class="fd-input" type="text" id="input-2-name" placeholder="Enter First and Last Name" value="Amelia Perry">
         </div>
       </div>
 
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--4--l fd-col--12--xl">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label fd-form-label--required" for="input-2-street">Street/No.: </label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--8--l fd-col--12--xl">
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
           <div class="fd-row">
           <div class="fd-col fd-col--4">
               <input class="fd-input" type="text" id="input-2-street" placeholder="Enter address" value="Myrtle St.">
@@ -1142,10 +1142,10 @@ export const xlMultipleFormGroup = () => `
       </div>
 
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--4--l fd-col--12--xl">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label fd-form-label--required" for="input-2-zip">ZIP Code/City: </label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--8--l fd-col--12--xl">
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
           <div class="fd-row">
             <div class="fd-col fd-col--8">
               <input class="fd-input" type="text" id="input-2-zip" placeholder="Enter ZIP Code" value="43823">
@@ -1158,10 +1158,10 @@ export const xlMultipleFormGroup = () => `
       </div>
 
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--4--l fd-col--12--xl">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-2-country">Country:</label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--8--l fd-col--12--xl">
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
           <div class="fd-popover" style="width:100%">
             <div class="fd-popover__control">
               <div class="fd-select">
@@ -1181,21 +1181,21 @@ export const xlMultipleFormGroup = () => `
         </div>
       </div>
     </div>
-    <div class="fd-col fd-col--4--xl fd-col--wrap">
+    <div class="fd-col fd-col-xl--4 fd-col--wrap">
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--4--l fd-col--12--xl">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-2a-name">Name:</label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--8--l fd-col--12--xl">
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
           <input class="fd-input" type="text" id="input-2a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
         </div>
       </div>
 
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--4--l fd-col--12--xl">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label fd-form-label--required" for="input-2a-street">Street/No.: </label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--8--l fd-col--12--xl">
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
           <div class="fd-row">
           <div class="fd-col fd-col--4">
               <input class="fd-input" type="text" id="input-2a-street" placeholder="Enter address" value="Myrtle St.">
@@ -1208,10 +1208,10 @@ export const xlMultipleFormGroup = () => `
       </div>
 
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--4--l fd-col--12--xl">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label fd-form-label--required" for="input-2a-zip">ZIP Code/City: </label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--8--l fd-col--12--xl">
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
           <div class="fd-row">
             <div class="fd-col fd-col--8">
               <input class="fd-input" type="text" id="input-2a-zip" placeholder="Enter ZIP Code" value="43823">
@@ -1224,10 +1224,10 @@ export const xlMultipleFormGroup = () => `
       </div>
 
       <div class="fd-row">
-        <div class="fd-col fd-col--2--m fd-col--4--l fd-col--12--xl">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-2a-country">Country:</label>
         </div>
-        <div class="fd-col fd-col--10--m fd-col--8--l fd-col--12--xl">
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
           <div class="fd-popover" style="width:100%">
             <div class="fd-popover__control">
               <div class="fd-select">
@@ -1249,21 +1249,21 @@ export const xlMultipleFormGroup = () => `
     </div>
     
 
-    <div class="fd-col fd-col--4--xl fd-col--wrap">
+    <div class="fd-col fd-col-xl--4 fd-col--wrap">
     <div class="fd-row">
-      <div class="fd-col fd-col--2--m fd-col--4--l fd-col--12--xl">
+      <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
         <label class="fd-form-label" for="input-2b-name">Name:</label>
       </div>
-      <div class="fd-col fd-col--10--m fd-col--8--l fd-col--12--xl">
+      <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
         <input class="fd-input" type="text" id="input-2b-name" placeholder="Enter First and Last Name" value="Amelia Perry">
       </div>
     </div>
 
     <div class="fd-row">
-      <div class="fd-col fd-col--2--m fd-col--4--l fd-col--12--xl">
+      <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
         <label class="fd-form-label fd-form-label--required" for="input-2b-street">Street/No.: </label>
       </div>
-      <div class="fd-col fd-col--10--m fd-col--8--l fd-col--12--xl">
+      <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
         <div class="fd-row">
         <div class="fd-col fd-col--4">
             <input class="fd-input" type="text" id="input-2b-street" placeholder="Enter address" value="Myrtle St.">
@@ -1276,10 +1276,10 @@ export const xlMultipleFormGroup = () => `
     </div>
 
     <div class="fd-row">
-      <div class="fd-col fd-col--2--m fd-col--4--l fd-col--12--xl">
+      <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
         <label class="fd-form-label fd-form-label--required" for="input-2b-zip">ZIP Code/City: </label>
       </div>
-      <div class="fd-col fd-col--10--m fd-col--8--l fd-col--12--xl">
+      <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
         <div class="fd-row">
           <div class="fd-col fd-col--8">
             <input class="fd-input" type="text" id="input-2b-zip" placeholder="Enter ZIP Code" value="43823">
@@ -1292,10 +1292,10 @@ export const xlMultipleFormGroup = () => `
     </div>
 
     <div class="fd-row">
-      <div class="fd-col fd-col--2--m fd-col--4--l fd-col--12--xl">
+      <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
         <label class="fd-form-label" for="input-2b-country">Country:</label>
       </div>
-      <div class="fd-col fd-col--10--m fd-col--8--l fd-col--12--xl">
+      <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
         <div class="fd-popover" style="width:100%">
           <div class="fd-popover__control">
             <div class="fd-select">
