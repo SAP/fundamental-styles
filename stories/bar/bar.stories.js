@@ -110,7 +110,7 @@ export const desktop = () => `
 desktop.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'The default bar contains a back button, page title, segmented button and product switch icon. It can be displayed by using the <code>fd-bar</code> class, and is responsive to desktop screen sizes.'
+        storyDescription: 'The default bar contains a back button, page title, segmented button and product switch button. It can be displayed by using the <code>fd-bar</code> class, and is responsive to desktop screen sizes.'
     }
 };
 
@@ -152,7 +152,7 @@ export const tabletAndMobile = () => `
 tabletAndMobile.parameters = {
     docs: {
         iframeHeight: 100,
-        storyDescription: 'The cozy bar contains a back button, page title, segmented button and product switch icon. It is responsive to both tablet and mobile screen sizes.<br>To apply cozy mode, add the <code>--cozy</code> modifier class to the container element.'
+        storyDescription: 'The cozy bar contains a back button, icon buttons, segmented button and product switch button. It is responsive to tablet and mobile screen sizes. To apply cozy mode, add the <code>--cozy</code> modifier class to the container element.'
     }
 };
 
