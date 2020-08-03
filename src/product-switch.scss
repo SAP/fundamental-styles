@@ -141,6 +141,7 @@ $block: #{$fd-namespace}-product-switch;
 
   &__item:hover {
     background-color: var(--sapList_Hover_Background);
+    cursor: pointer;
 
     @include fd-product-pseudo-element-background(var(--sapList_Hover_Background));
   }
