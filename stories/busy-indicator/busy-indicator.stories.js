@@ -3,13 +3,35 @@ import '../../dist/busy-indicator.css';
 export default {
     title: 'Components/Busy Indicator',
     parameters: {
-        description: `A busy indicator informs the user of an ongoing operation. Only one busy indicator should be shown at a time.
-        Busy indicators are not visible all the time, only when needed.`,
+        description: `The busy indicator component informs the user about an ongoing operation. Only one busy indicator should be shown at a time.
+
+## Sizes
+
+| **Size** | &nbsp;&nbsp; **rem** &nbsp;&nbsp; | **Modifier class** |
+| :------- | :-------------------------------- | -----------------: |
+| Default  | &nbsp;&nbsp; 0 rem                | none               |
+| M        | &nbsp;&nbsp; 1 rem                | <code>--m</code>   |
+| L        | &nbsp;&nbsp; 2 rem                | <code>--l</code>   |
+
+##Usage
+**Use the busy indicator if:**
+        
+The ongoing operation only covers part of a screen that has multiple controls, and:
+
+- You need to display additional information, or
+- The user needs to be able to cancel the operation.
+
+
+**Do not use the busy indicator if:**
+
+- The operation takes less than one second.
+- You need to block the screen because the user is not supposed to start another operation. In this case, use the **Busy Dialog** component.
+        `,
         tags: ['f3', 'a11y', 'theme']
     }
 };
 
-export const sizes = () => `
+export const Standard = () => `
     <div style="text-align: center">
     <div class="fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
         <div class="fd-busy-indicator--circle-0"></div>
@@ -29,9 +51,10 @@ export const sizes = () => `
     </div>
 `;
 
-sizes.parameters = {
+Standard.parameters = {
     docs: {
-        iframeHeight: 200
+        iframeHeight: 200,
+        storyDescription: 'The standard busy indicator animates a sequence of cascading dots expanding and shrinking in a loop. The component comes in three sizes detailed above. To display the busy indicator, use the <code>fd-busy-indicator</code> class. If you want to display a certain size, add the modifier class of the desired size i.e. <code>--m</code> to the element.'
     }
 };
 
@@ -47,6 +70,7 @@ export const contrastMode = () => `
 
 contrastMode.parameters = {
     docs: {
-        iframeHeight: 300
+        iframeHeight: 200,
+        storyDescription: 'The busy indicator also comes in contrast mode and displays white dots against a dark background. To apply contrast mode, add <code>contrast</code> into the element i.e. <code>fd-busy-indicator--m contrast</code>.'
     }
 };
