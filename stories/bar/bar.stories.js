@@ -9,30 +9,30 @@ export default {
         description: `The bar component is a container that holds titles, buttons and input controls. The contents are distributed into three areas: left, middle and right. This component’s primary function is to display page **headers** and **footers**.
         <br><br>
 
-The bar component has two modes:
+**The bar component has two modes:**
 
 - Default (desktop)
 - Cozy (tablet and mobile)
 
 ## Usage 
 ### Header
-Use the header bar if:
+**Use the header bar if:**
 
 - Your page contains several controls, and the actions are valid for the entire page.
 
-Do not use the header bar if:
+**Do not use the header bar if:**
 
 - You have closing or finalizing actions for the whole page. In this case, use a **footer** instead.
 
 ### Footer
-Use the footer bar:
+**Use the footer bar if:**
 
-- If you have closing or finalizing actions on your page that apply to the whole page.
+- You have closing or finalizing actions on your page that apply to the whole page.
 
-Do not use the footer bar:
+**Do not use the footer bar if:**
 
-- If you have different containers on your page (such as charts, tables, and forms) and the action influences only certain items. In this case, place the action as close to the corresponding item(s) as possible.
-- If you have global actions (such as *Edit* or *Delete*) that are not finalizing or closing actions. In this case, use a **header** instead.
+- You have different containers on your page (such as charts, tables, and forms) and the action influences only certain items. In this case, place the action as close to the corresponding item(s) as possible.
+- You have global actions (such as *Edit* or *Delete*) that are not finalizing or closing actions. In this case, use a **header** instead.
 
 
 ### Buttons
