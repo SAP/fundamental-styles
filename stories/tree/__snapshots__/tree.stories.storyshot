@@ -27,7 +27,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
         
       <div
         class="fd-tree__item-container"
-        tabindex="0"
       >
         
             
@@ -37,7 +36,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
           aria-haspopup="true"
           aria-label="Expand level 2"
           class="fd-tree__expander is-expanded"
-          tabindex="-1"
+          tabindex="0"
         />
         
             
@@ -76,14 +75,13 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
                 
           <div
             class="fd-tree__item-container"
-            tabindex="0"
           >
             
                     
             <button
               aria-label="Expander"
               class="fd-tree__expander"
-              tabindex="-1"
+              tabindex="0"
             />
             
                     
@@ -117,7 +115,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
                 
           <div
             class="fd-tree__item-container"
-            tabindex="0"
           >
             
                     
@@ -151,7 +148,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
                 
           <div
             class="fd-tree__item-container"
-            tabindex="0"
           >
             
                     
@@ -191,7 +187,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
         
       <div
         class="fd-tree__item-container"
-        tabindex="0"
       >
         
             
@@ -223,7 +218,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
         
       <div
         class="fd-tree__item-container"
-        tabindex="0"
       >
         
             
@@ -257,7 +251,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
         
       <div
         class="fd-tree__item-container"
-        tabindex="0"
       >
         
             
@@ -315,7 +308,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
         
       <div
         class="fd-tree__item-container"
-        tabindex="0"
       >
         
             
@@ -325,7 +317,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
           aria-haspopup="true"
           aria-label="Expand level 2"
           class="fd-tree__expander is-expanded"
-          tabindex="-1"
+          tabindex="0"
         />
         
             
@@ -364,14 +356,13 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
                 
           <div
             class="fd-tree__item-container"
-            tabindex="0"
           >
             
                     
             <button
               aria-label="Expander"
               class="fd-tree__expander"
-              tabindex="-1"
+              tabindex="0"
             />
             
                     
@@ -405,7 +396,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
                 
           <div
             class="fd-tree__item-container"
-            tabindex="0"
           >
             
                     
@@ -439,7 +429,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
                 
           <div
             class="fd-tree__item-container"
-            tabindex="0"
           >
             
                     
@@ -479,7 +468,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
         
       <div
         class="fd-tree__item-container"
-        tabindex="0"
       >
         
             
@@ -511,7 +499,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
         
       <div
         class="fd-tree__item-container"
-        tabindex="0"
       >
         
             
@@ -545,7 +532,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
         
       <div
         class="fd-tree__item-container"
-        tabindex="0"
       >
         
             
@@ -608,7 +594,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
         
       <div
         class="fd-tree__item-container fd-tree__item-container--active has-highlight-indicator--success"
-        tabindex="0"
       >
         
             
@@ -658,7 +643,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                 
           <div
             class="fd-tree__item-container has-highlight-indicator--warning"
-            tabindex="0"
           >
             
                     
@@ -707,7 +691,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                         
               <div
                 class="fd-tree__item-container fd-tree__item-container--active has-highlight-indicator--error"
-                tabindex="0"
               >
                 
                             
@@ -757,7 +740,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                 
                   <div
                     class="fd-tree__item-container has-highlight-indicator"
-                    tabindex="0"
                   >
                     
                                     
@@ -806,7 +788,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                         
                       <div
                         class="fd-tree__item-container"
-                        tabindex="0"
                       >
                         
                                             
@@ -855,7 +836,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                                 
                           <div
                             class="fd-tree__item-container"
-                            tabindex="0"
                           >
                             
                                                     
@@ -903,7 +883,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                                         
                               <div
                                 class="fd-tree__item-container"
-                                tabindex="0"
                               >
                                 
                                                             
@@ -943,7 +922,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                                         
                               <div
                                 class="fd-tree__item-container"
-                                tabindex="0"
                               >
                                 
                                                             
@@ -983,7 +961,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                                 
                           <div
                             class="fd-tree__item-container has-highlight-indicator"
-                            tabindex="0"
                           >
                             
                                                     
@@ -1023,7 +1000,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                         
                       <div
                         class="fd-tree__item-container has-highlight-indicator--success"
-                        tabindex="0"
                       >
                         
                                             
@@ -1063,7 +1039,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                 
                   <div
                     class="fd-tree__item-container fd-tree__item-container--active"
-                    tabindex="0"
                   >
                     
                                     
@@ -1104,7 +1079,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                         
               <div
                 class="fd-tree__item-container fd-tree__item-container--active"
-                tabindex="0"
               >
                 
                             
@@ -1145,7 +1119,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                 
           <div
             class="fd-tree__item-container"
-            tabindex="0"
           >
             
                     
@@ -1185,7 +1158,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
         
       <div
         class="fd-tree__item-container fd-tree__item-container--active has-highlight-indicator--success is-navigated"
-        tabindex="0"
       >
         
             
@@ -1220,7 +1192,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
         
       <div
         class="fd-tree__item-container has-highlight-indicator--success"
-        tabindex="0"
       >
         
         
@@ -1278,7 +1249,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
         
       <div
         class="fd-tree__item-container has-highlight-indicator--success"
-        tabindex="0"
       >
         
             
@@ -1328,7 +1298,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                 
           <div
             class="fd-tree__item-container has-highlight-indicator--warning"
-            tabindex="0"
           >
             
                     
@@ -1377,7 +1346,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                         
               <div
                 class="fd-tree__item-container has-highlight-indicator--error"
-                tabindex="0"
               >
                 
                             
@@ -1427,7 +1395,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                 
                   <div
                     class="fd-tree__item-container has-highlight-indicator"
-                    tabindex="0"
                   >
                     
                                     
@@ -1476,7 +1443,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                         
                       <div
                         class="fd-tree__item-container"
-                        tabindex="0"
                       >
                         
                                             
@@ -1525,7 +1491,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                                 
                           <div
                             class="fd-tree__item-container"
-                            tabindex="0"
                           >
                             
                                                     
@@ -1573,7 +1538,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                                         
                               <div
                                 class="fd-tree__item-container"
-                                tabindex="0"
                               >
                                 
                                                             
@@ -1613,7 +1577,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                                         
                               <div
                                 class="fd-tree__item-container"
-                                tabindex="0"
                               >
                                 
                                                             
@@ -1653,7 +1616,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                                 
                           <div
                             class="fd-tree__item-container has-highlight-indicator"
-                            tabindex="0"
                           >
                             
                                                     
@@ -1693,7 +1655,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                         
                       <div
                         class="fd-tree__item-container has-highlight-indicator--success"
-                        tabindex="0"
                       >
                         
                                             
@@ -1733,7 +1694,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                 
                   <div
                     class="fd-tree__item-container"
-                    tabindex="0"
                   >
                     
                                     
@@ -1774,7 +1734,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                         
               <div
                 class="fd-tree__item-container"
-                tabindex="0"
               >
                 
                             
@@ -1815,7 +1774,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                 
           <div
             class="fd-tree__item-container"
-            tabindex="0"
           >
             
                     
@@ -1855,7 +1813,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
         
       <div
         class="fd-tree__item-container has-highlight-indicator--success is-navigated"
-        tabindex="0"
       >
         
             
@@ -1890,7 +1847,6 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
         
       <div
         class="fd-tree__item-container has-highlight-indicator--success"
-        tabindex="0"
       >
         
         
@@ -1954,7 +1910,6 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
         
       <div
         class="fd-tree__item-container is-selected"
-        tabindex="0"
       >
         
             
@@ -1964,7 +1919,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
           aria-haspopup="true"
           aria-label="Expand level 2"
           class="fd-tree__expander is-expanded"
-          tabindex="-1"
+          tabindex="0"
         />
         
             
@@ -2027,14 +1982,13 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
                 
           <div
             class="fd-tree__item-container"
-            tabindex="0"
           >
             
                     
             <button
               aria-label="Expander"
               class="fd-tree__expander"
-              tabindex="-1"
+              tabindex="0"
             />
             
                     
@@ -2091,7 +2045,6 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
                 
           <div
             class="fd-tree__item-container is-selected"
-            tabindex="0"
           >
             
                     
@@ -2149,7 +2102,6 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
                 
           <div
             class="fd-tree__item-container"
-            tabindex="0"
           >
             
                     
@@ -2212,7 +2164,6 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
         
       <div
         class="fd-tree__item-container"
-        tabindex="0"
       >
         
             
@@ -2267,7 +2218,6 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
         
       <div
         class="fd-tree__item-container"
-        tabindex="0"
       >
         
             
@@ -2348,7 +2298,6 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
         
       <div
         class="fd-tree__item-container is-selected"
-        tabindex="0"
       >
         
             
@@ -2358,7 +2307,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
           aria-haspopup="true"
           aria-label="Expand level 2"
           class="fd-tree__expander is-expanded"
-          tabindex="-1"
+          tabindex="0"
         />
         
             
@@ -2421,14 +2370,13 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
                 
           <div
             class="fd-tree__item-container"
-            tabindex="0"
           >
             
                     
             <button
               aria-label="Expander"
               class="fd-tree__expander"
-              tabindex="-1"
+              tabindex="0"
             />
             
                     
@@ -2485,7 +2433,6 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
                 
           <div
             class="fd-tree__item-container"
-            tabindex="0"
           >
             
                     
@@ -2542,7 +2489,6 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
                 
           <div
             class="fd-tree__item-container"
-            tabindex="0"
           >
             
                     
@@ -2605,7 +2551,6 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
         
       <div
         class="fd-tree__item-container is-selected"
-        tabindex="0"
       >
         
             
@@ -2656,7 +2601,6 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
         
       <div
         class="fd-tree__item-container"
-        tabindex="0"
       >
         
             
@@ -2737,7 +2681,6 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
         
       <div
         class="fd-tree__item-container is-selected"
-        tabindex="0"
       >
         
             
@@ -2747,7 +2690,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
           aria-haspopup="true"
           aria-label="Expand level 2"
           class="fd-tree__expander is-expanded"
-          tabindex="-1"
+          tabindex="0"
         />
         
             
@@ -2810,14 +2753,13 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
                 
           <div
             class="fd-tree__item-container"
-            tabindex="0"
           >
             
                     
             <button
               aria-label="Expander"
               class="fd-tree__expander"
-              tabindex="-1"
+              tabindex="0"
             />
             
                     
@@ -2874,7 +2816,6 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
                 
           <div
             class="fd-tree__item-container"
-            tabindex="0"
           >
             
                     
@@ -2931,7 +2872,6 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
                 
           <div
             class="fd-tree__item-container"
-            tabindex="0"
           >
             
                     
@@ -2994,7 +2934,6 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
         
       <div
         class="fd-tree__item-container"
-        tabindex="0"
       >
         
             
@@ -3050,7 +2989,6 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
         
       <div
         class="fd-tree__item-container"
-        tabindex="0"
       >
         
             
