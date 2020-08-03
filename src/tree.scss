@@ -80,6 +80,17 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
   border-bottom: $fd-tree-item-selected-border-bottom;
 }
 
+@mixin tree-focus() {
+  outline-style: dotted;
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-offset: -0.125rem;
+
+  @include fd-active() {
+    outline-color: var(--sapContent_ContrastFocusColor);
+  }
+}
+
 @mixin tree-states() {
   cursor: pointer;
 
@@ -201,10 +212,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
     }
 
     @include fd-focus() {
-      outline-style: dotted;
-      outline-width: var(--sapContent_FocusWidth);
-      outline-color: var(--sapContent_FocusColor);
-      outline-offset: -0.125rem;
+      @include tree-focus();
     }
 
     width: 100%;
@@ -222,12 +230,12 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
   &__expander {
     @include fd-reset();
 
-    @include fd-icon('navigation-right-arrow', 'after') {
-      font-size: var(--sapFontLargeSize);
+    @include fd-focus() {
+      @include tree-focus();
     }
 
-    @include fd-focus() {
-      outline: none;
+    @include fd-icon('navigation-right-arrow', 'after') {
+      font-size: var(--sapFontLargeSize);
     }
 
     @include fd-rtl() {
