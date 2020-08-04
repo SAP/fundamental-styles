@@ -7,7 +7,7 @@
     "build": "npm run style:remove && npm run build:default",
     "build:default": "npm run style:compile && npm run style:postCSS && npm run style:assets",
     "build:prod": "cross-env NODE_ENV=production npm run build",
-    "deploy": "gh-pages -d .storybook/static/",
+    "deploy": "gh-pages -d storybook-static/",
     "lint:style": "stylelint '{src,.storybook}/**/*.(sa|sc|c)ss'",
     "lint:js": "eslint . --ext .js",
     "lint": "npm run lint:style && npm run lint:js",
@@ -24,10 +24,10 @@
     "style:remove": "if [ -d dist/ ]; then rm -rf dist/; fi",
     "test": "npm run build && start-server-and-test storybook:ci http-get://localhost:6006 storybook:visual:setup",
     "test:update": "npm run build && server-test storybook:ci http-get://localhost:6006 'npm run storybook:visual:setup -- --updateSnapshot'",
-    "storybook": "npm run storybook:prep && start-storybook -s .storybook/static/ -p 6006",
+    "storybook": "npm run storybook:prep && start-storybook -s .storybook/static/,node_modules/@sap-theming -p 6006",
     "storybook:ci": "npm run storybook -- --ci --quiet",
     "storybook:prep": "npm run build && babel-node scripts/storybook-prep.js",
-    "storybook:static": "rm -rf storybook-static && npm run storybook:prep && build-storybook -c .storybook -o storybook-static -s .storybook/static/ --docs",
+    "storybook:static": "rm -rf storybook-static && npm run storybook:prep && build-storybook -c .storybook -o storybook-static -s .storybook/static/,node_modules/@sap-theming --docs",
     "storybook:visual:setup": "jest --no-cache --config=./config/jest.config.js"
   },
   "repository": {
@@ -94,7 +94,8 @@
     "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-scss": "^3.18.0",
-    "tocbot": "^4.11.2"
+    "tocbot": "^4.11.2",
+    "webpack-merge": "^5.1.1"
   },
   "directories": {
     "storybook-testing": "storybook-testing"
