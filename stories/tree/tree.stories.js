@@ -177,7 +177,7 @@ treeWithExpandedLevel1.parameters = {
         iframeHeight: 950,
         storyDescription: `
 When Level 1 is expanded to show Level 2, Level 2 is indented by 1.5rem.
-Only the root tree (ul element) needs to have the <code class="docs-code">.expanded-level-*</code> modifier class in order to keep track of which level is currently expanded.
+Only the root tree (ul element) needs to have the <code class="docs-code">.expanded-level-*</code> modifier class to indicate which level is currently expanded.
 `
     }
 };
@@ -371,7 +371,7 @@ This indentation repeats when level 4 and 5 are triggered.
 - Level 5 indents by 2rem
 - Level 6 indents by 2.5rem
 
-Tree items can have highlight-indicators. To apply a highlight indicator use the <code class="docs-code">.has-highlight-indicator--*</code> modifier class on the <code class="docs-code">.fd-tree\\_\\_item-container</code> element. 
+Tree items can have highlight indicators. To apply a highlight indicator use the <code class="docs-code">.has-highlight-indicator--*</code> modifier class on the <code class="docs-code">.fd-tree\\_\\_item-container</code> element. 
 
 Options include:
 
