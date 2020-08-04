@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Feed Input Empty 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Feed Input Multiple lines 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Feed Input Over max height 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Feed Input RTL example 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Feed Input With some text 1`] = `
+
+    
+`;

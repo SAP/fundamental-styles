@@ -27,11 +27,12 @@ $block: #{$fd-namespace}-feed-input;
 
   .#{$block}__thumb {
     display: none;
-    flex: 1 0 auto; // IE11 need it
+    flex: 1 0 auto;
     width: $fd-feed-input-row-height;
     height: $fd-feed-input-row-height;
     margin: 0 0.5rem 0 0;
     background-size: cover;
+    background-repeat: no-repeat;
 
     @include fd-screen(m) {
       display: block;
