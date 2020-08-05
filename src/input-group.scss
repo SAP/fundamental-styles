@@ -190,6 +190,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     @include fd-ellipsis();
 
     border: none;
+    outline: none;
     width: 100%;
   }
 
