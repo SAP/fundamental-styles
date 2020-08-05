@@ -325,6 +325,7 @@ $block: #{$fd-namespace}-button;
   @include iconOverwrite() {
     box-shadow: none;
 
+    @include standardPressed();
     @include standardPressedFocus();
 
     &.#{$block}--ghost {
@@ -345,32 +346,6 @@ $block: #{$fd-namespace}-button;
 
     &.#{$block}--emphasized {
       @include emphasizedPressedFocus();
-    }
-  }
-}
-
-@mixin buttonContainerPressed() {
-  @include iconOverwrite() {
-    @include standardPressed();
-
-    &.#{$block}--ghost {
-      @include ghostPressed();
-    }
-
-    &.#{$block}--positive {
-      @include positivePressed();
-    }
-
-    &.#{$block}--negative {
-      @include negativePressed();
-    }
-
-    &.#{$block}--attention {
-      @include attentionPressed();
-    }
-
-    &.#{$block}--emphasized {
-      @include emphasizedPressed();
     }
   }
 }
@@ -436,18 +411,13 @@ $block: #{$fd-namespace}-button;
     @include buttonContainerHover();
   }
 
-  @include fd-active-pressed-selected() {
-    outline: none;
-
-    @include buttonContainerPressed();
-  }
-
   @include fd-focus() {
     @include buttonContainerFocus();
+  }
 
-    @include fd-active-pressed-selected() {
-      @include buttonContainerPressedFocus();
-    }
+  @include fd-active-pressed-selected() {
+    @include buttonContainerFocus();
+    @include buttonContainerPressedFocus();
   }
 
   @include fd-disabled() {
