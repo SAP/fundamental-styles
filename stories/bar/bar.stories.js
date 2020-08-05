@@ -6,7 +6,7 @@ import '../../dist/segmented-button.css';
 export default {
     title: 'Components/Bar',
     parameters: {
-        description: `The bar component is a container that holds titles, buttons and input controls. The contents are distributed into three areas: left, middle and right. This component’s primary function is to display page **headers** and **footers**.
+        description: `The bar component is a container that holds titles, buttons and input controls. The contents are distributed into three areas: left, middle and right. This component’s primary function is to display page **headers** and **footers**. It is mainly used to construct a **Page**, and acts as a building block for other components like **Dialog**, **Popover** etc.
         <br><br>
 
 **The bar component has two modes:**
@@ -448,7 +448,7 @@ export const barAsFooter = () => `
 barAsFooter.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'The footer bar should display only closing and finalizing action buttons that impact the entire page such as *Save* or *Cancel*. This bar is fixed at the bottom of the screen, and is not visible when scrolling up. It can be displayed by adding the <code>--footer</code> modifier class to the container element.'
+        storyDescription: 'The footer bar should display only closing and finalizing action buttons that impact the entire page such as *Save* or *Cancel*. It can be displayed by adding the <code>--footer</code> modifier class to the container element.'
     }
 };
 
