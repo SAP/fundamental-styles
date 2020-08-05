@@ -27,7 +27,7 @@
     "storybook": "npm run storybook:prep && start-storybook -s .storybook/static/,node_modules/@sap-theming -p 6006",
     "storybook:ci": "npm run storybook -- --ci --quiet",
     "storybook:prep": "npm run build && babel-node scripts/storybook-prep.js",
-    "storybook:static": "rm -rf storybook-static && npm run storybook:prep && build-storybook -c .storybook -o storybook-static -s .storybook/static/,node_modules/@sap-theming --docs",
+    "storybook:static": "rm -rf storybook-static && npm run storybook:prep && STORYBOOK_ENV=docs build-storybook -c .storybook -o storybook-static -s .storybook/static/,node_modules/@sap-theming --docs",
     "storybook:visual:setup": "jest --no-cache --config=./config/jest.config.js"
   },
   "repository": {
