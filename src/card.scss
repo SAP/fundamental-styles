@@ -2,13 +2,27 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-card;
+$object-status: #{$fd-namespace}-object-status;
 
 $fd-card-avatar-text-spacing: 0.75rem !default;
+$fd-card-title-counter-spacing: 1rem !default;
+
+@mixin line-clamp($lines: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
 
 .#{$block} {
   @include fd-reset();
   @include fd-flex(column);
 
+  height: 100%;
+  width: 100%;
+  position: relative;
   background: var(--sapTile_Background);
   box-shadow: var(--sapContent_Shadow0);
   border-radius: var(--sapElement_BorderCornerRadius);
@@ -16,42 +30,83 @@ $fd-card-avatar-text-spacing: 0.75rem !default;
 
   &__header {
     @include fd-reset();
+    @include fd-flex();
 
-    display: flex;
+    @include fd-hover() {
+      background: var(--sapTile_Hover_Background);
+    }
+
+    @include fd-active() {
+      background: var(--sapTile_Active_Background);
+    }
+
     padding: 1rem;
+    background: var(--sapTile_Background);
+    border-bottom: 0.0625rem solid var(--sapTile_SeparatorColor);
+    text-decoration: none;
+    cursor: pointer;
   }
 
   &__header-text {
     @include fd-reset();
-    @include fd-flex(column);
 
-    margin-right: $fd-card-avatar-text-spacing;
-
-    @include rtl() {
-      margin-right: 0;
-      margin-left: $fd-card-avatar-text-spacing;
+    @include fd-flex(column) {
+      justify-content: center;
     }
+
+    margin-left: $fd-card-avatar-text-spacing;
+    width: 100%;
+
+    @include fd-rtl() {
+      margin-left: 0;
+      margin-right: $fd-card-avatar-text-spacing;
+    }
+  }
+
+  &__title-wrapper {
+    @include fd-reset();
+
+    @include fd-flex() {
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    margin-bottom: 0.25rem;
+    width: 100%;
   }
 
   &__title {
     @include fd-reset();
-    @include fd-ellipsis();
+    @include line-clamp(3);
 
-    margin-bottom: 0.25rem;
     font-family: var(--sapFontHeaderFamily);
     font-size: var(--sapFontHeader5Size);
     color: var(--sapTile_TitleTextColor);
-    white-space: normal;
+    line-height: normal;
     word-wrap: break-word;
-    text-align: left;
   }
 
   &__subtitle {
     @include fd-reset();
+    @include line-clamp();
+
+    color: var(--sapTile_TextColor);
+    line-height: normal;
+    word-wrap: break-word;
+    width: 100%;
   }
 
-  &__counter {
-    @include fd-reset();
+  &__counter.#{$object-status} {
+    font-size: var(--sapFontSmallSize);
+    margin-left: $fd-card-title-counter-spacing;
+    margin-top: 0.188rem;
+    margin-right: 0;
+    white-space: nowrap;
+
+    @include fd-rtl() {
+      margin-left: 0;
+      margin-right: $fd-card-title-counter-spacing;
+    }
   }
 
   &__content {
