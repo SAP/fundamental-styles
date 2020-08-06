@@ -83,8 +83,7 @@ $block: #{$fd-namespace}-product-switch;
 
     &.selected {
       background-color: var(--sapList_SelectionBackgroundColor);
-      border: 0.125rem solid;
-      border-color: var(--sapList_SelectionBorderColor);
+      box-shadow: inset 0 0 0 0.125rem var(--sapList_SelectionBorderColor);
 
       @include fd-product-pseudo-element-background(var(--sapList_SelectionBackgroundColor));
 
@@ -98,6 +97,10 @@ $block: #{$fd-namespace}-product-switch;
         background-color: var(--sapList_Active_Background);
 
         @include fd-product-pseudo-element-background(var(--sapList_Active_Background));
+      }
+
+      &:focus {
+        box-shadow: none;
       }
     }
 
