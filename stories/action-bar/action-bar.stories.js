@@ -1,5 +1,6 @@
 import '../../dist/button.css';
 import '../../dist/icon.css';
+import '../../dist/title.css';
 import '../../dist/action-bar.css';
 
 export default {
@@ -19,7 +20,9 @@ export const backBtn = () => `
         <div class="fd-action-bar__back">
             <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"></button>
         </div>
-        <h3 class="fd-action-bar__title">Page Title</h3>
+        <div class="fd-action-bar__title">
+            <h1 class="fd-title fd-title--h3">Page Title</h3>
+        </div>
         <div class="fd-action-bar__actions">
             <button aria-label="button"class="fd-button fd-button--compact">Button</button>
             <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
@@ -35,7 +38,9 @@ export const backBtn = () => `
         <div class="fd-action-bar__back">
             <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"></button>
         </div>
-        <h3 class="fd-action-bar__title">Page Title</h3>
+        <div class="fd-action-bar__title">
+            <h1 class="fd-title fd-title--h3">Page Title</h1>
+        </div>
         <div class="fd-action-bar__actions">
             <button aria-label="button"class="fd-button fd-button--compact">Button</button>
             <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
@@ -50,7 +55,9 @@ backBtn.storyName = 'Action bar with back button, description and action buttons
 export const noBackBtn = () => `
 <div class="fd-action-bar">
     <div class="fd-action-bar__header">
-        <h3 class="fd-action-bar__title">Page Title</h3>
+        <div class="fd-action-bar__title">
+            <h1 class="fd-title fd-title--h3">Page Title</h1>
+        </div>
         <div class="fd-action-bar__actions">
             <button aria-label="button"class="fd-button fd-button--compact">Button</button>
             <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
@@ -63,7 +70,9 @@ export const noBackBtn = () => `
 <br>
 <div class="fd-action-bar" dir="rtl">
     <div class="fd-action-bar__header">
-        <h3 class="fd-action-bar__title">Page Title</h3>
+        <div class="fd-action-bar__title">
+            <h1 class="fd-title fd-title--h3">Page Title</h1>
+        </div>
         <div class="fd-action-bar__actions">
             <button aria-label="button"class="fd-button fd-button--compact">Button</button>
             <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
@@ -81,7 +90,9 @@ export const backBtnNoDescription = () => `
         <div class="fd-action-bar__back">
             <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"></button>
         </div>
-        <h3 class="fd-action-bar__title">Page Title</h3>
+        <div class="fd-action-bar__title">
+            <h1 class="fd-title fd-title--h3">Page Title</h1>
+        </div>
         <div class="fd-action-bar__actions">
             <button aria-label="button"class="fd-button fd-button--compact">Button</button>
             <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
@@ -96,7 +107,9 @@ export const backBtnNoDescription = () => `
         <div class="fd-action-bar__back">
             <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"></button>
         </div>
-        <h3 class="fd-action-bar__title">Page Title</h3>
+        <div class="fd-action-bar__title">
+            <h1 class="fd-title fd-title--h3">Page Title</h1>
+        </div>
         <div class="fd-action-bar__actions">
             <button aria-label="button"class="fd-button fd-button--compact">Button</button>
             <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
@@ -113,7 +126,8 @@ export const longTitleDescription = () => `
         <div class="fd-action-bar__back">
             <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"></button>
         </div>
-        <div class="fd-action-bar__title">Page Title Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long.
+        <div class="fd-action-bar__title">
+            <h1 class="fd-title fd-title--h3">Page Title Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long.</h1>
         </div>
         <div class="fd-action-bar__actions">
             <button aria-label="button"class="fd-button fd-button--compact">Button</button>
@@ -132,7 +146,8 @@ export const longTitleDescription = () => `
         <div class="fd-action-bar__back">
             <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"></button>
         </div>
-        <div class="fd-action-bar__title">Page Title Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long.
+        <div class="fd-action-bar__title">
+            <h1 class="fd-title fd-title--h3">Page Title Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long.</h1>
         </div>
         <div class="fd-action-bar__actions">
             <button aria-label="button"class="fd-button fd-button--compact">Button</button>
@@ -151,10 +166,10 @@ longTitleDescription.storyName = 'Action bar with Long page title and descriptio
 export const actions = () => `
 <div class="fd-action-bar">
     <div class="fd-action-bar__header">
-      <h3 class="fd-action-bar__title">
-          Page Title
-      </h3>
-       <div class="fd-action-bar__actions">
+        <div class="fd-action-bar__title">
+            <h1 class="fd-title fd-title--h3">Page Title</h1>
+        </div>
+        <div class="fd-action-bar__actions">
             <div class="fd-popover">
                 <div class="fd-popover__control">
                     <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact sap-icon--overflow"
@@ -206,7 +221,9 @@ export const responsiveL = () => `
         <div class="fd-action-bar__back">
             <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"></button>
         </div>
-        <h3 class="fd-action-bar__title">Page Title</h3>
+        <div class="fd-action-bar__title">
+            <h1 class="fd-title fd-title--h3">Page Title</h1>
+        </div>
         <div class="fd-action-bar__actions">
             <button aria-label="button"class="fd-button fd-button--compact">Button</button>
             <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
@@ -222,7 +239,9 @@ export const responsiveL = () => `
         <div class="fd-action-bar__back">
             <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"></button>
         </div>
-        <h3 class="fd-action-bar__title">Page Title</h3>
+        <div class="fd-action-bar__title">
+            <h1 class="fd-title fd-title--h3">Page Title</h1>
+        </div>
         <div class="fd-action-bar__actions">
             <button aria-label="button"class="fd-button fd-button--compact">Button</button>
             <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
@@ -240,7 +259,9 @@ export const responsiveXL = () => `
         <div class="fd-action-bar__back">
             <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"></button>
         </div>
-        <h3 class="fd-action-bar__title">Page Title</h3>
+        <div class="fd-action-bar__title">
+            <h1 class="fd-title fd-title--h3">Page Title</h1>
+        </div>
         <div class="fd-action-bar__actions">
             <button aria-label="button"class="fd-button fd-button--compact">Button</button>
             <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
@@ -256,7 +277,9 @@ export const responsiveXL = () => `
         <div class="fd-action-bar__back">
             <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"></button>
         </div>
-        <h3 class="fd-action-bar__title">Page Title</h3>
+        <div class="fd-action-bar__title">
+            <h1 class="fd-title fd-title--h3">Page Title</h1>
+        </div>
         <div class="fd-action-bar__actions">
             <button aria-label="button"class="fd-button fd-button--compact">Button</button>
             <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
@@ -275,7 +298,9 @@ export const mobile = () => `
             <div class="fd-action-bar__back">
                 <button aria-label="button"class="fd-button fd-button--transparent sap-icon--navigation-left-arrow" aria-label="Back"></button>
             </div>
-            <h3 class="fd-action-bar__title">Action Bar with description and back button</h3>
+            <div class="fd-action-bar__title">
+                <h1 class="fd-title fd-title--h3">Action Bar with description and back button</h1>
+            </div>
             <div class="fd-action-bar__actions">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
@@ -322,7 +347,9 @@ export const mobile = () => `
             <div class="fd-action-bar__back">
                 <button aria-label="button"class="fd-button fd-button--transparent sap-icon--navigation-right-arrow" aria-label="Back"></button>
             </div>
-            <h3 class="fd-action-bar__title">Action Bar with description and back button</h3>
+            <div class="fd-action-bar__title">
+                <h1 class="fd-title fd-title--h3">Action Bar with description and back button</h1>
+            </div>
             <div class="fd-action-bar__actions">
                 <div class="fd-popover">
                     <div class="fd-popover__control">

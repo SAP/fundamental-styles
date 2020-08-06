@@ -18,7 +18,6 @@ $block: #{$fd-namespace}-layout-panel;
   $fd-layout-panel-border-color: transparent !default;
   $fd-layout-panel-border-elements-width: var(--sapElement_BorderWidth) !default;
   $fd-layout-panel-header-border-color: var(--sapGroup_ContentBorderColor) !default;
-  $fd-layout-panel-title-color: var(--sapTextColor) !default;
   $fd-layout-panel-filters-padding: 0.75rem 1.5rem !default;
   $fd-layout-panel-filters-border-color: $fd-layout-panel-header-border-color !default;
   $fd-layout-panel-footer-padding: 1rem 1.5rem !default;
@@ -61,8 +60,6 @@ $block: #{$fd-namespace}-layout-panel;
     flex: 1;
     margin-bottom: 0;
     line-height: normal;
-    font-size: var(--sapFontLargeSize);
-    color: $fd-layout-panel-title-color;
   }
 
   &__description {

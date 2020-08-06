@@ -1,4 +1,5 @@
 import '../../dist/layout-panel.css';
+import '../../dist/title.css';
 
 export default {
     title: 'Layouts/Layout Panel',
@@ -25,9 +26,11 @@ export const primary = () => `
 <div class="fd-layout-panel">
   <div class="fd-layout-panel__header">
     <div class="fd-layout-panel__head">
-      <h3 class="fd-layout-panel__title">
-        .fd-layout-panel__title
-      </h3>
+      <div class="fd-layout-panel__title">
+        <h3 class="fd-title fd-title--h5">
+          .fd-layout-panel__title
+        </h3>
+      </div>
       <p class="fd-layout-panel__description">
         .fd-layout-panel__description
       </p>

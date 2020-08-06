@@ -688,7 +688,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
             
                     
             <h3
-              class="fd-dialog__title"
+              class="fd-title fd-title--h5"
             >
               
                         Example Submenu
@@ -961,7 +961,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
             
                     
             <h3
-              class="fd-dialog__title"
+              class="fd-title fd-title--h5"
             >
               
                         Option 2
