@@ -1,0 +1,60 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-card;
+
+$fd-card-avatar-text-spacing: 0.75rem !default;
+
+.#{$block} {
+  @include fd-reset();
+  @include fd-flex(column);
+
+  background: var(--sapTile_Background);
+  box-shadow: var(--sapContent_Shadow0);
+  border-radius: var(--sapElement_BorderCornerRadius);
+  border: 0.0625rem solid var(--sapTile_BorderColor);
+
+  &__header {
+    @include fd-reset();
+
+    display: flex;
+    padding: 1rem;
+  }
+
+  &__header-text {
+    @include fd-reset();
+    @include fd-flex(column);
+
+    margin-right: $fd-card-avatar-text-spacing;
+
+    @include rtl() {
+      margin-right: 0;
+      margin-left: $fd-card-avatar-text-spacing;
+    }
+  }
+
+  &__title {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    margin-bottom: 0.25rem;
+    font-family: var(--sapFontHeaderFamily);
+    font-size: var(--sapFontHeader5Size);
+    color: var(--sapTile_TitleTextColor);
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: left;
+  }
+
+  &__subtitle {
+    @include fd-reset();
+  }
+
+  &__counter {
+    @include fd-reset();
+  }
+
+  &__content {
+    @include fd-reset();
+  }
+}
