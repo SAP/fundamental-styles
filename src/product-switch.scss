@@ -292,6 +292,7 @@ $block: #{$fd-namespace}-product-switch;
 
       &.selected {
         border-bottom-color: var(--sapList_SelectionBorderColor);
+        box-shadow: none;
 
         @include fd-product-pseudo-element-background(var(--sapList_SelectionBorderColor));
 
