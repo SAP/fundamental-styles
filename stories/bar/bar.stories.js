@@ -110,7 +110,7 @@ export const desktop = () => `
 desktop.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'The default bar contains a back button, page title, segmented button and product switch button. It can be displayed by using the <code>fd-bar</code> class, and is responsive to desktop screen sizes.'
+        storyDescription: 'The default bar contains a back button, page title, segmented button and product switch button. It can be displayed by using the <code class="docs-code">fd-bar</code> class, and is responsive to desktop screen sizes.'
     }
 };
 
@@ -152,7 +152,7 @@ export const tabletAndMobile = () => `
 tabletAndMobile.parameters = {
     docs: {
         iframeHeight: 100,
-        storyDescription: 'The cozy bar contains a back button, icon buttons, segmented button and product switch button. It is responsive to tablet and mobile screen sizes. To apply cozy mode, add the <code>--cozy</code> modifier class to the container element.'
+        storyDescription: 'The cozy bar contains a back button, icon buttons, segmented button and product switch button. It is responsive to tablet and mobile screen sizes. To apply cozy mode, add the <code class="docs-code">--cozy</code> modifier class to the container element.'
     }
 };
 
@@ -266,7 +266,7 @@ export const barAsHeader = () => `
 barAsHeader.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: 'The header bar contains actions that impact the entire page. It can be displayed by adding the <code>--header</code> modifier class to the container element.'
+        storyDescription: 'The header bar contains actions that impact the entire page. It can be displayed by adding the <code class="docs-code">--header</code> modifier class to the container element.'
     }
 };
 
@@ -348,7 +348,7 @@ export const barAsSubheader = () => `
 barAsSubheader.parameters = {
     docs: {
         iframeHeight: 450,
-        storyDescription: 'To change the header bar into a subheader, add the <code>--subheader</code> modifier class to the container element.'
+        storyDescription: 'To change the header bar into a subheader, add the <code class="docs-code">--subheader</code> modifier class to the container element.'
     }
 };
 
@@ -400,7 +400,7 @@ export const headerWithSubheader = () => `
 headerWithSubheader.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'To add a subheader under a header bar, the container element should have the <code>--header-with-subheader</code> modifier class, which will remove the element’s box shadow.'
+        storyDescription: 'To add a subheader under a header bar, the container element should have the <code class="docs-code">--header-with-subheader</code> modifier class, which will remove the element’s box shadow.'
     }
 };
 
@@ -448,7 +448,7 @@ export const barAsFooter = () => `
 barAsFooter.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'The footer bar should display only closing and finalizing action buttons that impact the entire page such as *Save* or *Cancel*. It can be displayed by adding the <code>--footer</code> modifier class to the container element.'
+        storyDescription: 'The footer bar should display only closing and finalizing action buttons that impact the entire page such as *Save* or *Cancel*. It can be displayed by adding the <code class="docs-code">--footer</code> modifier class to the container element.'
     }
 };
 
@@ -496,6 +496,6 @@ export const barAsFloatingFooter = () => `
 barAsFloatingFooter.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'The floating footer bar should also display only finalizing action buttons that impact the entire page. This type floats above the page at the bottom of the screen and is always visible when scrolling. It can be displayed by adding the <code>--floating-footer</code> modifier class to the container element.'
+        storyDescription: 'The floating footer bar should also display only finalizing action buttons that impact the entire page. This type floats above the page at the bottom of the screen and is always visible when scrolling. It can be displayed by adding the <code class="docs-code">--floating-footer</code> modifier class to the container element.'
     }
 };
