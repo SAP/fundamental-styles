@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.11.3-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.17...v0.11.3-rc.18) (2020-08-07)
+
+
+### Bug Fixes
+
+* update shellbar icon color ([#1321](https://github.com/SAP/fundamental-styles/issues/1321)) ([0dbaa58](https://github.com/SAP/fundamental-styles/commit/0dbaa5889719c7c3171ea77cfe487eeacb105e06))
+
 ### [0.11.3-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.16...v0.11.3-rc.17) (2020-08-05)
 
 ### [0.11.3-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.15...v0.11.3-rc.16) (2020-08-04)
