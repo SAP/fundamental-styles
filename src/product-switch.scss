@@ -22,18 +22,18 @@ $block: #{$fd-namespace}-product-switch;
   .#{$fd-namespace}-button.#{$block}__control {
     @include fd-reset();
 
-    color: var(--sapShell_TextColor);
+    color: var(--sapShell_InteractiveTextColor);
 
     &::before {
       margin-right: 0;
     }
 
     @include fd-hover() {
-      color: var(--sapShell_TextColor);
+      color: var(--sapShell_InteractiveTextColor);
       background-color: var(--sapShell_Hover_Background);
 
       @include fd-disabled() {
-        color: var(--sapShell_TextColor);
+        color: var(--sapShell_InteractiveTextColor);
         opacity: 0.4%;
       }
     }
