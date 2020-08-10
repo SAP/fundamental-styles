@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.11.3-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.19...v0.11.3-rc.20) (2020-08-10)
+
+
+### Bug Fixes
+
+* remove extra border on Input Group button ([#1335](https://github.com/SAP/fundamental-styles/issues/1335)) ([2e6ae1a](https://github.com/SAP/fundamental-styles/commit/2e6ae1a2ec8b0cf00f94870aab5fab08b53759cc))
+
 ### [0.11.3-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.18...v0.11.3-rc.19) (2020-08-07)
 
 ### [0.11.3-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.17...v0.11.3-rc.18) (2020-08-07)
