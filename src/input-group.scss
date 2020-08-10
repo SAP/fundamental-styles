@@ -193,6 +193,10 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     width: 100%;
   }
 
+  .#{$fd-namespace}-button.#{$block}__button {
+    border-color: transparent;
+  }
+
   &--control {
     .#{$block}__button {
       &.is-expanded {
