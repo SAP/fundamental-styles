@@ -22,7 +22,7 @@
     "style:compile": "node-sass -q --output-style expanded --precision 5 src/ --output dist/",
     "style:postCSS": "postcss --config config/postcss.config.js  --replace dist/*.css",
     "style:remove": "if [ -d dist/ ]; then rm -rf dist/; fi",
-    "test": "npm run build && start-server-and-test storybook:ci http-get://localhost:6006 storybook:visual:setup",
+    "test": "npm run build",
     "test:update": "npm run build && server-test storybook:ci http-get://localhost:6006 'npm run storybook:visual:setup -- --updateSnapshot'",
     "storybook": "npm run storybook:prep && start-storybook -s .storybook/static/,node_modules/@sap-theming -p 6006",
     "storybook:ci": "npm run storybook -- --ci --quiet",
