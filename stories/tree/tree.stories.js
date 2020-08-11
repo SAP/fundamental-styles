@@ -1,5 +1,7 @@
 import '../../dist/button.css';
+import '../../dist/checkbox.css';
 import '../../dist/icon.css';
+import '../../dist/radio.css';
 import '../../dist/tree.css';
 
 export default {
@@ -182,7 +184,7 @@ Only the root tree (ul element) needs to have the <code class="docs-code">.expan
     }
 };
 
-export const treeWithExpandedLevel2AndBorderlessDesign = () => `
+export const treeWithExpandedLevel2AndNoBorders = () => `
 <ul role="tree" aria-label="Root Tree" id="TREE2L1" class="fd-tree fd-tree--no-border expanded-level-2">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container">
@@ -264,7 +266,7 @@ export const treeWithExpandedLevel2AndBorderlessDesign = () => `
 </ul>
 `;
 
-treeWithExpandedLevel2AndBorderlessDesign.parameters = {
+treeWithExpandedLevel2AndNoBorders.parameters = {
     docs: {
         iframeHeight: 400,
         storyDescription: `
@@ -277,7 +279,7 @@ When Level 2 expands to show Level 3, Level 2 indents by 1rem while Level 3 inde
 };
 
 
-export const treeWithExpandedLevel3AndHighlightIndicator = () => `
+export const treeWithExpandedLevel3AndHighlightIndicators = () => `
 <ul role="tree" aria-label="Root Tree" id="TREE3L1" class="fd-tree expanded-level-3">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container has-highlight-indicator">
@@ -355,7 +357,7 @@ export const treeWithExpandedLevel3AndHighlightIndicator = () => `
 </ul>
 `;
 
-treeWithExpandedLevel3AndHighlightIndicator.parameters = {
+treeWithExpandedLevel3AndHighlightIndicators.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
@@ -677,7 +679,7 @@ export const treeWithSelection = () => `
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container is-selected">
             <button tabindex="0" class="fd-tree__expander is-expanded" aria-controls="TREESELL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
-            <div class="fd-form-item fd-tree__form-item">
+            <div class="fd-form-item">
                 <input type="checkbox" checked class="fd-checkbox" id="Ai4ez1">
                 <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="Ai4ez1"></label>
             </div>
@@ -689,7 +691,7 @@ export const treeWithSelection = () => `
             <li role="treeitem" aria-level="2" class="fd-tree__item">
                 <div class="fd-tree__item-container">
                     <button tabindex="0" class="fd-tree__expander" aria-label="Expander"></button>
-                    <div class="fd-form-item fd-tree__form-item">
+                    <div class="fd-form-item">
                         <input type="checkbox" class="fd-checkbox" id="Ai4ez2">
                         <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="Ai4ez2"></label>
                     </div>
@@ -700,7 +702,7 @@ export const treeWithSelection = () => `
             </li>
             <li role="treeitem" aria-level="2" class="fd-tree__item">
                 <div class="fd-tree__item-container is-selected">
-                    <div class="fd-form-item fd-tree__form-item">
+                    <div class="fd-form-item">
                         <input type="checkbox" checked class="fd-checkbox" id="Ai4ez3">
                         <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="Ai4ez3"></label>
                     </div>
@@ -711,7 +713,7 @@ export const treeWithSelection = () => `
             </li>
             <li role="treeitem" aria-level="2" class="fd-tree__item">
                 <div class="fd-tree__item-container">
-                    <div class="fd-form-item fd-tree__form-item">
+                    <div class="fd-form-item">
                         <input type="checkbox" class="fd-checkbox" id="Ai4ez4">
                         <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="Ai4ez4"></label>
                     </div>
@@ -724,7 +726,7 @@ export const treeWithSelection = () => `
     </li>
     <li role="treeitem" aria-level="1" class="fd-tree__item">
         <div class="fd-tree__item-container">
-            <div class="fd-form-item fd-tree__form-item">
+            <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez5">
                 <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="Ai4ez5"></label>
             </div>
@@ -735,7 +737,7 @@ export const treeWithSelection = () => `
     </li>
     <li role="treeitem" aria-level="1" class="fd-tree__item">
         <div class="fd-tree__item-container">
-            <div class="fd-form-item fd-tree__form-item">
+            <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez6">
                 <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="Ai4ez6"></label>
             </div>
@@ -757,7 +759,7 @@ export const treeWithSelection = () => `
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
             </div>
-            <div class="fd-form-item fd-tree__form-item">
+            <div class="fd-form-item">
                 <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact" id="Ai4ezA">
                 <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ezA"></label>
             </div>
@@ -769,7 +771,7 @@ export const treeWithSelection = () => `
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
                     </div>
-                    <div class="fd-form-item fd-tree__form-item">
+                    <div class="fd-form-item">
                         <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ezB">
                         <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ezB"></label>
                     </div>
@@ -780,7 +782,7 @@ export const treeWithSelection = () => `
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
                     </div>
-                    <div class="fd-form-item fd-tree__form-item">
+                    <div class="fd-form-item">
                         <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ezC">
                         <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ezC"></label>
                     </div>
@@ -791,7 +793,7 @@ export const treeWithSelection = () => `
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
                     </div>
-                    <div class="fd-form-item fd-tree__form-item">
+                    <div class="fd-form-item">
                         <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ezD">
                         <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ezD"></label>
                     </div>
@@ -804,7 +806,7 @@ export const treeWithSelection = () => `
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
             </div
-            <div class="fd-form-item fd-tree__form-item">
+            <div class="fd-form-item">
                 <input type="checkbox" checked class="fd-checkbox fd-checkbox--compact" id="Ai4ezEE">
                 <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ezEE"></label>
             </div>
@@ -815,7 +817,7 @@ export const treeWithSelection = () => `
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
             </div>
-            <div class="fd-form-item fd-tree__form-item">
+            <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ezF">
                 <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ezF"></label>
             </div>
@@ -831,7 +833,7 @@ export const treeWithSelection = () => `
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container is-selected">
             <button tabindex="0" class="fd-tree__expander is-expanded" aria-controls="TREESESSLL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true"></button>
-            <div class="fd-form-item fd-tree__form-item">
+            <div class="fd-form-item">
                 <input type="radio" class="fd-radio" id="pDidh761" name="radio1" checked>
                 <label class="fd-radio__label" aria-label="radio button" for="pDidh761"></label>
             </div>
@@ -843,7 +845,7 @@ export const treeWithSelection = () => `
             <li role="treeitem" aria-level="2" class="fd-tree__item">
                 <div class="fd-tree__item-container">
                     <button tabindex="0" class="fd-tree__expander" aria-label="Expander"></button>
-                    <div class="fd-form-item fd-tree__form-item">
+                    <div class="fd-form-item">
                         <input type="radio" class="fd-radio" id="pDidh7612" name="radio1">
                         <label class="fd-radio__label" aria-label="radio button" for="pDidh7612"></label>
                     </div>
@@ -854,7 +856,7 @@ export const treeWithSelection = () => `
             </li>
             <li role="treeitem" aria-level="2" class="fd-tree__item">
                 <div class="fd-tree__item-container">
-                    <div class="fd-form-item fd-tree__form-item">
+                    <div class="fd-form-item">
                         <input type="radio" class="fd-radio" id="pDidh7613" name="radio1">
                         <label class="fd-radio__label" aria-label="radio button" for="pDidh7613"></label>
                     </div>
@@ -865,7 +867,7 @@ export const treeWithSelection = () => `
             </li>
             <li role="treeitem" aria-level="2" class="fd-tree__item">
                 <div class="fd-tree__item-container">
-                    <div class="fd-form-item fd-tree__form-item">
+                    <div class="fd-form-item">
                         <input type="radio" class="fd-radio" id="pDidh764" name="radio3">
                         <label class="fd-radio__label" aria-label="radio button" for="pDidh764"></label>
                     </div>
@@ -878,7 +880,7 @@ export const treeWithSelection = () => `
     </li>
     <li role="treeitem" aria-level="1" class="fd-tree__item">
         <div class="fd-tree__item-container">
-            <div class="fd-form-item fd-tree__form-item">
+            <div class="fd-form-item">
             <input type="radio" class="fd-radio" id="pDidh76r4" name="radio3" disabled>
             <label class="fd-radio__label" aria-label="radio button" for="pDidh76r4"></label>
             </div>
@@ -889,7 +891,7 @@ export const treeWithSelection = () => `
     </li>
     <li role="treeitem" aria-level="1" class="fd-tree__item">
         <div class="fd-tree__item-container">
-            <div class="fd-form-item fd-tree__form-item">
+            <div class="fd-form-item">
                 <input type="radio" class="fd-radio" id="pDidh764Y6" name="radio3" disabled>
                 <label class="fd-radio__label" aria-label="radio button" for="pDidh764Y6"></label>
             </div>

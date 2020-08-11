@@ -381,7 +381,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
   }
 
   .has-highlight-indicator {
-    @include set-highlight(var(--sapHighlightColor));
+    @include set-highlight(var(--sapInformationBorderColor));
 
     &--error {
       @include set-highlight(var(--sapErrorBorderColor));

@@ -562,12 +562,12 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Tree Tree With Expanded Level 2 And Borderless Design 1`] = `
+exports[`Storyshots Components/Tree Tree With Expanded Level 2 And No Borders 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Tree Tree With Expanded Level 3 And Highlight Indicator 1`] = `
+exports[`Storyshots Components/Tree Tree With Expanded Level 3 And Highlight Indicators 1`] = `
 
 
 `;
@@ -1924,7 +1924,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
         
             
         <div
-          class="fd-form-item fd-tree__form-item"
+          class="fd-form-item"
         >
           
                 
@@ -1993,7 +1993,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
             
                     
             <div
-              class="fd-form-item fd-tree__form-item"
+              class="fd-form-item"
             >
               
                         
@@ -2049,7 +2049,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
             
                     
             <div
-              class="fd-form-item fd-tree__form-item"
+              class="fd-form-item"
             >
               
                         
@@ -2106,7 +2106,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
             
                     
             <div
-              class="fd-form-item fd-tree__form-item"
+              class="fd-form-item"
             >
               
                         
@@ -2168,7 +2168,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
         
             
         <div
-          class="fd-form-item fd-tree__form-item"
+          class="fd-form-item"
         >
           
                 
@@ -2222,7 +2222,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
         
             
         <div
-          class="fd-form-item fd-tree__form-item"
+          class="fd-form-item"
         >
           
                 
@@ -2327,7 +2327,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
         
             
         <div
-          class="fd-form-item fd-tree__form-item"
+          class="fd-form-item"
         >
           
                 
@@ -2396,7 +2396,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
             
                     
             <div
-              class="fd-form-item fd-tree__form-item"
+              class="fd-form-item"
             >
               
                         
@@ -2452,7 +2452,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
             
                     
             <div
-              class="fd-form-item fd-tree__form-item"
+              class="fd-form-item"
             >
               
                         
@@ -2508,7 +2508,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
             
                     
             <div
-              class="fd-form-item fd-tree__form-item"
+              class="fd-form-item"
             >
               
                         
@@ -2620,7 +2620,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
         
             
         <div
-          class="fd-form-item fd-tree__form-item"
+          class="fd-form-item"
         >
           
                 
@@ -2695,7 +2695,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
         
             
         <div
-          class="fd-form-item fd-tree__form-item"
+          class="fd-form-item"
         >
           
                 
@@ -2764,7 +2764,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
             
                     
             <div
-              class="fd-form-item fd-tree__form-item"
+              class="fd-form-item"
             >
               
                         
@@ -2820,7 +2820,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
             
                     
             <div
-              class="fd-form-item fd-tree__form-item"
+              class="fd-form-item"
             >
               
                         
@@ -2876,7 +2876,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
             
                     
             <div
-              class="fd-form-item fd-tree__form-item"
+              class="fd-form-item"
             >
               
                         
@@ -2938,7 +2938,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
         
             
         <div
-          class="fd-form-item fd-tree__form-item"
+          class="fd-form-item"
         >
           
             
@@ -2993,7 +2993,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
         
             
         <div
-          class="fd-form-item fd-tree__form-item"
+          class="fd-form-item"
         >
           
                 
