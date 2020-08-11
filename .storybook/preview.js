@@ -27,23 +27,23 @@ addParameters({
       
     },
     {
-        id: 'hcm-1',
-        code: '<link rel="stylesheet" type="text/css" href="./hcm-1.css"></link>',
+        id: 'windows-hcm-1',
+        code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-1.css"></link>',
         picked: false
     },
     {
-        id: 'hcm-2',
-        code: '<link rel="stylesheet" type="text/css" href="./hcm-2.css"></link>',
+        id: 'windows-hcm-2',
+        code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-2.css"></link>',
         picked: false
     },
     {
-        id: 'hcm-black',
-        code: '<link rel="stylesheet" type="text/css" href="./hcm-black.css"></link>',
+        id: 'windows-hcm-black',
+        code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-black.css"></link>',
         picked: false
     },
     {
-        id: 'hcm-white',
-        code: '<link rel="stylesheet" type="text/css" href="./hcm-white.css"></link>',
+        id: 'windows-hcm-white',
+        code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-white.css"></link>',
         picked: false
     },
     {
