@@ -1,11 +1,17 @@
-* {
+*,
+:before,
+:after {
   background-color: black !important;
+  border-color: white !important;
   color: #0f0 !important;
   box-shadow: none !important;
   text-shadow: none !important;
 }
 
-a {
+a[href],
+a[href] *,
+a[href] :before,
+a[href] :after {
   color: #8080ff !important;
 }
 
@@ -26,7 +32,8 @@ textarea,
   color: white !important;
 }
 
-:disabled {
+:disabled,
+::placeholder  {
   color: #c0c0c0 !important;
   opacity: 1 !important;
 }
@@ -35,8 +42,7 @@ textarea,
 :disabled select,
 :disabled button,
 :disabled textarea,
-:disabled .sapcnqr-card,
-:disabled .sapcnqr-messagebar {
+:disabled [data-hcm="bordered"] {
   border: 1px solid #c0c0c0 !important;
 }
 
