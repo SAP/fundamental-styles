@@ -293,7 +293,7 @@ export const offset = () =>
 
 offset.parameters = {
     docs: {
-        iframeHeight: 350,
+        iframeHeight: 450,
         storyDescription: 'To add an offset to the left of the column for all sizes use the <code class="docs-code">--offset-x</code> modifier. X will be the size of your choice. If the column after the offset col no longer fits in parent container it will switch to the next line. To add an offset to the left of the column for certain sizes and above use the <code class="docs-code">--offset-x--size</code> modifier, where size is either s,m,l,xl. To make the offset after and not before use the <code class="docs-code">--offset-after-x--size</code> modifier.'
     }
 };

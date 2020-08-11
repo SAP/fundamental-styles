@@ -10,9 +10,7 @@ A form is used to present data to the user and to allow users to enter data in a
 There are three types of forms:
 
 - Display-only: the data is presented only as label-value field pairs without editable fields.
-
 - Editable: the data is presented as label-input field pairs, so users can enter data.
-
 - Mixed: some fields are editable and some are not.
 
 By using the responsive grid layout, the form offers a responsive layout based on a 12-column grid. There are four breakpoints, which result in three supported sizes: XL, L, M, and S. These breakpoints are not the XL, L, M, and S breakpoints of the page. In contrast to the page’s breakpoints, which react to the screen width, the breakpoints of the responsive grid layout react to the width of the form.
@@ -114,10 +112,8 @@ The label-field ratio is 12:12:0 by default:
 
 - 12 grid columns of the responsive grid layout are used by the labels.
 (A label handles the space of a whole row.)
-
 - 12 grid columns of the responsive grid layout are used by the fields.
 (A field handles the space of a whole row.)
-
 - 0 grid columns of the responsive grid layout are used by empty columns.
 (There is no empty space on the right of the field.)`
     }
@@ -195,16 +191,14 @@ export const mSizeDefault = () => `
 
 mSizeDefault.parameters = {
     docs: {
-        iframeHeight: 300,
+        iframeHeight: 370,
         storyDescription: `
 Size M is using a single-column layout. The labels are positioned in the same row as the corresponding input field or value, and form groups are positioned below each other.
 
 The label-field ratio is **2:10:0** by default:
 
 - 2 grid columns of the responsive grid layout are used by the labels.
-
 - 10 grid columns of the responsive grid layout are used by the fields.
-
 - 0 columns of the responsive grid layout are used by empty columns.
 
 If you place the form in the details part of a split screen, use a single-column layout with the label-field ratio **4:7:1** (4 grid columns used by the labels, 7 grid columns used by the fields, and 1 grid column used by empty columns).
@@ -287,9 +281,10 @@ export const mSizeSplitScreen = () => `
 
 mSizeSplitScreen.parameters = {
     docs: {
-        iframeHeight: 300,
+        iframeHeight: 370,
         storyDescription: `
 When placing the form in the details part of a split screen, use a single-column layout with the label-field ratio **4:7:1** 
+
 - 4 grid columns used by the labels
 - 7 grid columns used by the fields
 - 1 grid column used by empty columns
@@ -373,7 +368,8 @@ mSizeFullScreenApp.parameters = {
         iframeHeight: 450,
         storyDescription: `
 When placing the form in a full-screen app, use a single-column layout with the label-field ratio **3:5:4** (
-- 3 grid columns used by the labels
+
+  - 3 grid columns used by the labels
 - 5 grid columns used by the fields
 - 4 grid columns used by empty columns
 
@@ -455,8 +451,8 @@ mSizeFullScreenAppLongLabel.parameters = {
     docs: {
         iframeHeight: 450,
         storyDescription: `
-
 Size M goes down to 601 px. In this size, the 3:5:4 approach may not be wide enough for longer labels and fields. So if you expect long labels or input values, use the label-field ratio **4:8:0** 
+
 - 4 grid columns used by the labels
 - 8 grid columns used by the fields
 - 0 grid columns used by empty columns`
@@ -542,9 +538,7 @@ Size L use a two-column layout. That means that the form groups are placed next 
 The label-field ratio is **4:8:0** by default:
 
 - 4 grid columns of the responsive grid layout are used by the labels.
-
 - 8 grid columns of the responsive grid layout are used by fields.
-
 - 0 grid columns of the responsive grid layout are used by empty columns.
 `
     }
@@ -621,9 +615,10 @@ export const lSizeSingleFormGroup = () => `
 
 lSizeSingleFormGroup.parameters = {
     docs: {
-        iframeHeight: 500,
+        iframeHeight: 530,
         storyDescription: `
 If the form contains a single form group, use a single-column layout with a label-field ratio of **3:5:4** 
+
 - 3 grid columns used by the labels
 - 5 grid columns used by the fields
 - 4 grid columns used by empty columns.
@@ -700,8 +695,6 @@ export const lSizeMultipleFormGroup = () => `
         </div>
       </div>
     </div>
-    
-    
 
     <div class="fd-col fd-col-lg--6 fd-col--wrap">
       <div class="fd-row">
@@ -774,7 +767,7 @@ export const lSizeMultipleFormGroup = () => `
 
 lSizeMultipleFormGroup.parameters = {
     docs: {
-        iframeHeight: 500,
+        iframeHeight: 590,
         storyDescription: `
 If the form contains multiple form groups, you can also use a two-column layout with a label-field ratio of **12:12:0** 
 
@@ -945,8 +938,8 @@ xlSingleFormGroup.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-
 If the form contains a single form group, use a single-column layout with a label-field ratio of **3:5:4** 
+
 - 3 grid columns used by the labels
 - 5 grid columns used by the fields
 - 4 grid columns used by empty columns
@@ -1099,10 +1092,10 @@ export const xlDoubleFormGroup = () => `
 
 xlDoubleFormGroup.parameters = {
     docs: {
-        iframeHeight: 500,
+        iframeHeight: 650,
         storyDescription: `
-
 If the form contains multiple form groups, you can also use a **two-column layout** with a label-field ratio of **4:8:0**  
+
 - 4 grid columns used by the labels
 - 8 grid columns used by the fields, 
 - 0 grid columns used by empty columns
@@ -1323,10 +1316,11 @@ export const xlMultipleFormGroup = () => `
 
 xlMultipleFormGroup.parameters = {
     docs: {
-        iframeHeight: 500,
+        iframeHeight: 850,
         storyDescription: `
 
 If the form is put into a full-screen app and it contains multiple form groups, you can also use a **three-column layout** with a label-field ratio of **12:12:0** 
+
 - 12 grid columns used by the labels
 - 12 grid columns used by the fields
 - 0 grid columns used by empty columns
