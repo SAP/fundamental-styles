@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.21...v0.12.0-rc.0) (2020-08-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* `fd-col--span`, `fd-layout-grid` removed
+
+### Bug Fixes
+
+* responsive grid layout with new docs ([#889](https://github.com/SAP/fundamental-styles/issues/889)) ([a2d3d9a](https://github.com/SAP/fundamental-styles/commit/a2d3d9af59c4adb4ddbe249538123084d768e87c))
+
 ### [0.11.3-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.20...v0.11.3-rc.21) (2020-08-11)
 
 ### [0.11.3-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.19...v0.11.3-rc.20) (2020-08-10)
