@@ -10,6 +10,9 @@ $fd-card-title-counter-spacing: 1rem !default;
 $fd-card-currency-spacing: 0.25rem !default;
 $fd-card-analytics-spacing: 1rem !default;
 $fd-card-analytics-container-spacing: 2rem !default;
+$fd-card-sections-horizontal-spacing: 2rem !default;
+$fd-card-sections-vertical-spacing: 1.75rem !default;
+$fd-card-content-avatar-text-spacing: 0.5rem !default;
 
 @mixin line-clamp($lines: 2) {
   display: -webkit-box;
@@ -224,9 +227,96 @@ $fd-card-analytics-container-spacing: 2rem !default;
     @include fd-reset();
   }
 
+  &__content-container {
+    @include fd-reset();
+    @include fd-flex(column);
+
+    &--horizontal {
+      flex-direction: row;
+
+      .#{$block}__content-section {
+        margin-bottom: 0;
+        margin-right: $fd-card-sections-horizontal-spacing;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        @include fd-rtl() {
+          margin-right: 0;
+          margin-left: $fd-card-sections-horizontal-spacing;
+
+          &:first-child {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__content-section {
+    @include fd-reset();
+    @include fd-flex(column);
+
+    min-width: 12rem;
+    max-width: 24rem;
+    width: 100%;
+    margin-bottom: $fd-card-sections-vertical-spacing;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__content-title {
+    @include fd-reset();
+
+    padding-bottom: 0.5rem;
+  }
+
+  &__content-group {
+    @include fd-reset();
+
+    @include fd-flex() {
+      align-items: center;
+    }
+
+    margin-top: 1rem;
+  }
+
+  &__content-group-text {
+    @include fd-reset();
+    @include fd-flex(column);
+
+    margin-left: $fd-card-content-avatar-text-spacing;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    @include fd-rtl() {
+      margin-left: 0;
+      margin-right: $fd-card-content-avatar-text-spacing;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &__content-group-label {
+    @include fd-reset();
+  }
+
+  &__content-group-value {
+    @include fd-reset();
+
+    margin-top: 0.25rem;
+  }
+
   &--analytical {
-    .#{$block}__title-area {
-      margin-bottom: 0.5rem;
+    .#{$block}__subtitle-area {
+      margin-top: 0.5rem;
     }
 
     .#{$block}__title {
@@ -239,6 +329,12 @@ $fd-card-analytics-container-spacing: 2rem !default;
       .#{$block}__content {
         padding-bottom: 0.5rem;
       }
+    }
+  }
+
+  &--object {
+    .#{$block}__content {
+      padding: 1rem;
     }
   }
 }

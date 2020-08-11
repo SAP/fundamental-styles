@@ -27,8 +27,8 @@ Several cards can reference the same applicaton but the information should not b
 export const cardAnatomy = () => `
 <div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 400px; margin-bottom: 1rem;">
-        <div class="fd-card">
-            <a class="fd-card__header">
+        <div class="fd-card" role="region" aria-label="card-anatomy-1">
+            <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
@@ -40,12 +40,12 @@ export const cardAnatomy = () => `
                     </div>
                 </div>
             </a>
-            <div class="fd-card__content"></div>
+            <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
     <div style="width: 300px; height: 400px">
-        <div class="fd-card">
-            <a class="fd-card__header">
+        <div class="fd-card" role="region" aria-label="card-anatomy-2">
+            <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
@@ -57,12 +57,12 @@ export const cardAnatomy = () => `
                     </div>
                 </div>
             </a>
-            <div class="fd-card__content"></div>
+            <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
     <div style="width: 300px; height: 400px">
-        <div class="fd-card">
-            <a class="fd-card__header">
+        <div class="fd-card" role="region" aria-label="card-anatomy-3">
+            <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
@@ -71,13 +71,13 @@ export const cardAnatomy = () => `
                     </div>
                 </div>
             </a>
-            <div class="fd-card__content"></div>
+            <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
     <div style="width: 300px; height: 400px">
-        <div class="fd-card">
+        <div class="fd-card" role="region" aria-label="card-anatomy-4">
             <div class="fd-badge">Badge</div>
-            <a class="fd-card__header">
+            <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Card Title</div>
@@ -88,13 +88,13 @@ export const cardAnatomy = () => `
                     </div>
                 </div>
             </a>
-            <div class="fd-card__content"></div>
+            <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
     <div style="width: 300px; height: 400px">
-        <div class="fd-card">
+        <div class="fd-card" role="region" aria-label="card-anatomy-5">
             <div class="fd-badge">New</div>
-            <a class="fd-card__header">
+            <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Card Title With a Very Long Text ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
@@ -105,13 +105,13 @@ export const cardAnatomy = () => `
                     </div>
                 </div>
             </a>
-            <div class="fd-card__content"></div>
+            <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
     <div style="width: 300px; height: 400px">
-        <div class="fd-card">
+        <div class="fd-card" role="region" aria-label="card-anatomy-6">
             <div class="fd-badge">Updated Content</div>
-            <a class="fd-card__header">
+            <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Card Title</div>
@@ -119,7 +119,7 @@ export const cardAnatomy = () => `
                     </div>
                 </div>
             </a>
-            <div class="fd-card__content"></div>
+            <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
 </div>
@@ -151,8 +151,8 @@ Elements:
 export const analyticalCard = () => `
 <div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 400px; margin-bottom: 1rem;">
-        <div class="fd-card fd-card--analytical">
-            <a class="fd-card__header">
+        <div class="fd-card fd-card--analytical" role="region" aria-label="analytical-card-1">
+            <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Card Title</div>
@@ -188,13 +188,13 @@ export const analyticalCard = () => `
                     <div class="fd-card__second-subtitle">Second Subtitle</div>
                 </div>
             </a>
-            <div class="fd-card__content"></div>
+            <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
 
     <div style="width: 700px; height: 400px; margin-bottom: 1rem;">
-        <div class="fd-card fd-card--analytical">
-            <a class="fd-card__header">
+        <div class="fd-card fd-card--analytical"  role="region" aria-label="analytical-card-2">
+            <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <div class="fd-badge">Badge</div>
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
@@ -231,7 +231,7 @@ export const analyticalCard = () => `
                     <div class="fd-card__second-subtitle">Second Subtitle With a Very Long Text ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
                 </div>
             </a>
-            <div class="fd-card__content"></div>
+            <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
 </div>
@@ -240,7 +240,7 @@ export const analyticalCard = () => `
 analyticalCard.parameters = {
     docs: {
         iframeHeight: 450,
-        storyDescription: `The analytical card is used for data visualization. It consists of two areas – a header area (either a standard header or a KPI header) and a chart area with a visual representation of the data. The analytical card is a single object card and does not contain a footer area.
+        storyDescription: `The analytical card is used for data visualization. It consists of two areas – a header area (either a standard header or a KPI header) and a chart area with a visual representation of the data. The analytical card is a single object card and does not contain a footer area. The <code>.fd-card--analytical</code> modifier class needs to be applied with <code>.fd-card</code>.
         
 **Header Area:**
 
@@ -274,8 +274,8 @@ analyticalCard.parameters = {
 export const listCard = () => `
 <div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 100%; margin-bottom: 1rem;">
-        <div class="fd-card">
-            <a class="fd-card__header">
+        <div class="fd-card" role="region" aria-label="list-card-1">
+            <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Quick Links</div>
@@ -283,7 +283,7 @@ export const listCard = () => `
                     </div>
                 </div>
             </a>
-            <div class="fd-card__content">
+            <div class="fd-card__content" role="group" aria-label="Card Content">
                 <ul class="fd-list fd-list--no-border" role="list">
                     <li role="listitem" tabindex="0" class="fd-list__item">
                         <span class="fd-list__icon sap-icon--cart"></span>
@@ -314,8 +314,8 @@ export const listCard = () => `
         </div>
     </div>
     <div style="width: 300px; height: 100%; margin-bottom: 1rem;">
-        <div class="fd-card">
-            <a class="fd-card__header">
+        <div class="fd-card" role="region" aria-label="list-card-2">
+            <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Quick Links</div>
@@ -326,7 +326,7 @@ export const listCard = () => `
                     </div>
                 </div>
             </a>
-            <div class="fd-card__content">
+            <div class="fd-card__content" role="group" aria-label="Card Content">
                 <ul class="fd-list fd-list--no-border fd-list--compact" role="list">
                     <li role="listitem" tabindex="0" class="fd-list__item">
                         <span class="fd-list__icon sap-icon--cart"></span>
@@ -369,8 +369,8 @@ listCard.parameters = {
 export const tableCard = () => `
 <div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 500px; height: 100%; margin-bottom: 1rem;">
-        <div class="fd-card fd-card--table">
-            <a class="fd-card__header">
+        <div class="fd-card fd-card--table" role="region" aria-label="table-card-1">
+            <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Table Card</div>
@@ -378,7 +378,7 @@ export const tableCard = () => `
                     </div>
                 </div>
             </a>
-            <div class="fd-card__content">
+            <div class="fd-card__content" role="group" aria-label="Card Content">
                 <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders">
                     <thead class="fd-table__header">
                         <tr class="fd-table__row">
@@ -451,8 +451,8 @@ export const tableCard = () => `
         </div>
     </div>
     <div style="width: 500px; height: 100%; margin-bottom: 1rem;">
-        <div class="fd-card fd-card--table fd-card--compact">
-            <a class="fd-card__header">
+        <div class="fd-card fd-card--table fd-card--compact" role="region" aria-label="table-card-2">
+            <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Table Card</div>
@@ -463,7 +463,7 @@ export const tableCard = () => `
                     </div>
                 </div>
             </a>
-            <div class="fd-card__content">
+            <div class="fd-card__content" role="group" aria-label="Card Content">
                 <table class="fd-table fd-table--compact fd-table--no-horizontal-borders fd-table--no-vertical-borders">
                     <thead class="fd-table__header">
                         <tr class="fd-table__row">
@@ -525,22 +525,159 @@ export const tableCard = () => `
 tableCard.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'The Header and the Content sections follow the specification described in the Card Anatomy. The Table component belongs to the Content area.'
+        storyDescription: 'The Header and the Content sections follow the specification described in the Card Anatomy. The Table component belongs to the Content area. The <code>.fd-card--table</code> modifier class needs to be applied with <code>.fd-card</code>.'
     }
 };
 
 
-
-
-// TEMPLATE
-export const primary = () => `
-<div class="fd-card">Test</div>
+export const objectCard = () => `
+<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
+    <div style="width: 14rem; height: 34rem; margin-bottom: 1rem;">
+        <div class="fd-card fd-card--object" role="region" aria-label="object-card-1">
+            <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
+                <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
+                <div class="fd-card__header-text">
+                    <div class="fd-card__title-area">
+                        <div class="fd-card__title">Card Title</div>
+                    </div>
+                    <div class="fd-card__subtitle-area">
+                        <div class="fd-card__subtitle">Card Subtitle</div>
+                    </div>
+                </div>
+            </a>
+            <div class="fd-card__content" role="group" aria-label="Card Content">
+                <div class="fd-card__content-container">
+                    <div class="fd-card__content-section">
+                        <div class="fd-card__content-title">Group Title 1</div>
+                        <div class="fd-card__content-group">
+                            <div class="fd-card__content-group-text">
+                                <div class="fd-card__content-group-label">Label</div>
+                                <div class="fd-card__content-group-value">Text</div>
+                            </div>
+                        </div>
+                        <div class="fd-card__content-group">
+                            <div class="fd-card__content-group-text">
+                                <div class="fd-card__content-group-label">Label</div>
+                                <div class="fd-card__content-group-value">Text</div>
+                            </div>
+                        </div>
+                        <div class="fd-card__content-group">
+                            <div class="fd-card__content-group-text">
+                                <div class="fd-card__content-group-label">Label</div>
+                                <div class="fd-card__content-group-value">Text</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fd-card__content-section">
+                        <div class="fd-card__content-title">Group Title 2</div>
+                        <div class="fd-card__content-group">
+                            <div class="fd-card__content-group-text">
+                                <div class="fd-card__content-group-label">Label</div>
+                                <div class="fd-card__content-group-value">Text</div>
+                            </div>
+                        </div>
+                        <div class="fd-card__content-group">
+                            <div class="fd-card__content-group-text">
+                                <div class="fd-card__content-group-label">Label</div>
+                                <div class="fd-card__content-group-value">Text</div>
+                            </div>
+                        </div>
+                        <div class="fd-card__content-group">
+                            <div class="fd-card__content-group-text">
+                                <div class="fd-card__content-group-label">Label</div>
+                                <div class="fd-card__content-group-value">Text</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="width: 40rem; height: 20rem; margin-bottom: 1rem;">
+        <div class="fd-card fd-card--object" role="region" aria-label="object-card-2">
+            <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
+                <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
+                <div class="fd-card__header-text">
+                    <div class="fd-card__title-area">
+                        <div class="fd-card__title">Card Title</div>
+                    </div>
+                    <div class="fd-card__subtitle-area">
+                        <div class="fd-card__subtitle">Card Subtitle</div>
+                    </div>
+                </div>
+            </a>
+            <div class="fd-card__content" role="group" aria-label="Card Content">
+                <div class="fd-card__content-container fd-card__content-container--horizontal">
+                    <div class="fd-card__content-section">
+                        <div class="fd-card__content-title">
+                            <h3 style="margin: 0;">Group Title 1</h3>
+                        </div>
+                        <div class="fd-card__content-group">
+                            <span class="fd-avatar fd-avatar--xs fd-avatar--circle sap-icon--person-placeholder" role="presentation"></span>
+                            <div class="fd-card__content-group-text">
+                                <div class="fd-card__content-group-label">
+                                    <span style="margin:0; padding: 0; font-size: 0.75rem; font-weight: bold; color: darkgrey;">Label</span>
+                                </div>
+                                <div class="fd-card__content-group-value">
+                                    <a href="#" class="fd-link" tabindex="0">Link Text</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fd-card__content-group">
+                            <div class="fd-card__content-group-text">
+                                <div class="fd-card__content-group-label">Label</div>
+                                <div class="fd-card__content-group-value">Text</div>
+                            </div>
+                        </div>
+                        <div class="fd-card__content-group">
+                            <div class="fd-card__content-group-text">
+                                <div class="fd-card__content-group-label">Label</div>
+                                <div class="fd-card__content-group-value">Text</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fd-card__content-section">
+                        <div class="fd-card__content-title">
+                            <h3 style="margin: 0;">Group Title 2</h3>
+                        </div>
+                        <div class="fd-card__content-group">
+                            <div class="fd-card__content-group-text">
+                                <div class="fd-card__content-group-label">Label</div>
+                                <div class="fd-card__content-group-value">Text</div>
+                            </div>
+                        </div>
+                        <div class="fd-card__content-group">
+                            <div class="fd-card__content-group-text">
+                                <div class="fd-card__content-group-label">Label</div>
+                                <div class="fd-card__content-group-value">Text</div>
+                            </div>
+                        </div>
+                        <div class="fd-card__content-group">
+                            <div class="fd-card__content-group-text">
+                                <div class="fd-card__content-group-label">Label</div>
+                                <div class="fd-card__content-group-value">Text</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 `;
-
-primary.storyName = 'Card title';
-primary.parameters = {
+objectCard.parameters = {
     docs: {
-        storyDescription: 'Card section description'
+        iframeHeight: 600,
+        storyDescription: `The Object Card Header is the same specified in the Card Anatomy. The Content has a 1rem padding applied on all sides. The <code>.fd-card--object</code> modifier class needs to be applied with <code>.fd-card</code>.
+          
+Building blocks of the Content:
+
+- <code>.fd-card\\_\\_content-container</code>- a wrapper for the content sections. By default the content is displayed in one column. Do display the content in two columns apply the  <code>fd-card\\_\\_content-container--horizontal</code> modifier class.
+- <code>.fd-card\\_\\_content-section</code>- content section. The min-width of the section is 12rem and it can reach maximum 24rem. A section contains a group title and one or multiple groups.
+- <code>.fd-card\\_\\_content-title</code>- a container for the title.
+- <code>.fd-card\\_\\_content-group</code>- a container for the content group. Can contain an Avatar with size XS, a group label and a group value.
+- <code>.fd-card\\_\\_content-group-label</code>- a container for the label of the group.
+- <code>.fd-card\\_\\_content-group-value</code>- a container for the value of the group.
+`
     }
 };
-
