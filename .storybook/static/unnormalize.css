@@ -73,3 +73,31 @@ button {
   background: aquamarine;
   color: purple;
 }
+
+p:before,
+a:before,
+ul:before,
+li:before,
+button:before,
+fieldset:before,
+input:before,
+span:before,
+textarea:before,
+div:before,
+section:before {
+    content: ":before pseudo element "
+}
+
+p:after,
+a:after,
+ul:after,
+li:after,
+button:after,
+fieldset:after,
+input:after,
+span:after,
+textarea:after,
+div:after,
+section:after {
+    content: " :after pseudo element"
+}
