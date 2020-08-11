@@ -1,0 +1,45 @@
+* {
+  background-color: black !important;
+  color: white !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+a {
+  color: yellow !important;
+}
+
+a[aria-disabled="true"] {
+  color: #3ff23f !important;
+}
+
+input,
+select,
+button,
+textarea,
+*[data-hcm="bordered"] {
+  border: 1px solid white !important;
+}
+
+::selection {
+  background-color: #1aebff !important;
+  color: black !important;
+}
+
+:disabled {
+  color: #3ff23f !important;
+  opacity: 1 !important;
+}
+
+:disabled input,
+:disabled select,
+:disabled button,
+:disabled textarea,
+:disabled .sapcnqr-card,
+:disabled .sapcnqr-messagebar {
+  border: 1px solid #3ff23f !important;
+}
+
+:focus {
+  outline: 1px solid #1aebff !important;
+}
