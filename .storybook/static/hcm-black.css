@@ -8,6 +8,11 @@
   text-shadow: none !important;
 }
 
+:before,
+:after {
+  background-color: transparent !important;
+}
+
 a[href],
 a[href] *,
 a[href] :before,
