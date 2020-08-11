@@ -7,23 +7,15 @@ $blockContainer: #{$fd-namespace}-container;
 $blockRow: #{$fd-namespace}-row;
 $cols: 11;
 
+@mixin placement($direction, $justify) {
+  text-align: $direction;
+  justify-content: $justify;
+}
+
 @media (min-width: 0) {
   .#{$blockContainer}.#{$block}-container {
     padding: 1rem;
     margin: 0 -0.25rem;
-
-    & > .fd-row {
-      & > :first-child & :not(.fd-col--wrap) {
-        display: flex;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-    }
-
-    .#{$blockRow},
-    .#{$blockRow}+.#{$blockRow} {
-      margin-top: 0;
-    }
 
     & > .fd-row {
       & > :first-child & :not(.fd-col--wrap) {
@@ -45,12 +37,8 @@ $cols: 11;
 
       .#{$blockCol} {
         padding: 0 0.25rem;
-        text-align: left;
-        justify-content: flex-start;
 
-        .fd-select__control {
-          margin: 0.25rem 0;
-        }
+        @include placement('left', 'flex-start');
 
         .fd-select__control {
           margin: 0.25rem 0;
@@ -63,8 +51,8 @@ $cols: 11;
 
         @for $n from 0 through $cols {
           &--#{$n} {
-            text-align: right;
-            justify-content: flex-end;
+            @include placement('right', 'flex-end');
+
             margin-bottom: 0;
 
             .fd-form-label {
@@ -74,8 +62,7 @@ $cols: 11;
         }
 
         &--12 {
-          text-align: left;
-          justify-content: flex-start;
+          @include placement('left', 'flex-start');
         }
 
         .#{$blockRow} {
@@ -103,16 +90,15 @@ $cols: 11;
         }
 
         @for $n from 0 through $cols {
-          &--#{$n}--m {
-            text-align: right;
-            justify-content: flex-end;
+          &-md--#{$n} {
+            @include placement('right', 'flex-end');
+
             margin-bottom: 0;
           }
         }
 
-        &--12--m {
-          text-align: left;
-          justify-content: flex-start;
+        &-md--12 {
+          @include placement('left', 'flex-start');
 
           .fd-form-label {
             padding-bottom: 0.125rem;
@@ -132,16 +118,15 @@ $cols: 11;
         }
 
         @for $n from 0 through $cols {
-          &--#{$n}--l {
-            text-align: right;
-            justify-content: flex-end;
+          &-lg--#{$n} {
+            @include placement('right', 'flex-end');
+
             margin-bottom: 0;
           }
         }
 
-        &--12--l {
-          text-align: left;
-          justify-content: flex-start;
+        &-lg--12 {
+          @include placement('left', 'flex-start');
 
           .fd-form-label {
             padding-bottom: 0.125rem;
@@ -161,16 +146,15 @@ $cols: 11;
         }
 
         @for $n from 0 through $cols {
-          &--#{$n}--xl {
-            text-align: right;
-            justify-content: flex-end;
+          &-xl--#{$n} {
+            @include placement('right', 'flex-end');
+
             margin-bottom: 0;
           }
         }
 
-        &--12--xl {
-          text-align: left;
-          justify-content: flex-start;
+        &-xl--12 {
+          @include placement('left', 'flex-start');
 
           .fd-form-label {
             padding-bottom: 0.125rem;

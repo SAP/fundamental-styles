@@ -86,19 +86,21 @@ $cols: 12;
     &--offset-after-#{$n} {
       margin-right: ( ( $n / $cols ) *100%);
     }
+  }
 
-    &--offset-after-#{$n} {
-      margin-right: ( ( $n / $cols ) *100%);
+  @include fd-rtl() {
+    direction: rtl;
+
+    @for $n from 0 through $cols {
+      &--offset-after-#{$n} {
+        margin-left: ( ( $n / $cols ) *100%);
+      }
     }
   }
 
   .#{$blockRow} {
     margin: 0 -0.25rem;
     margin-top: -0.5rem;
-  }
-
-  &--wrap {
-    flex-wrap: wrap;
   }
 
   &--wrap {
@@ -155,13 +157,15 @@ $cols: 12;
       &-#{map-get($size,$m)}--offset-after-#{$n} {
         margin-right: ( ( $n / $cols ) *100%);
       }
+    }
 
-      &--offset-#{$n}--#{map-get($size,$m)} {
-        margin-left: ( ( $n / $cols ) *100%);
-      }
+    @include fd-rtl() {
+      direction: rtl;
 
-      &--offset-after-#{$n}--#{map-get($size,$m)} {
-        margin-right: ( ( $n / $cols ) *100%);
+      @for $n from 0 through $cols {
+        &--offset-after-#{$n} {
+          margin-left: ( ( $n / $cols ) *100%);
+        }
       }
     }
 
@@ -187,13 +191,15 @@ $cols: 12;
       &-#{map-get($size,$l)}--offset-after-#{$n} {
         margin-right: ( ( $n / $cols ) *100%);
       }
+    }
 
-      &--offset-#{$n}--#{map-get($size,$l)} {
-        margin-left: ( ( $n / $cols ) *100%);
-      }
+    @include fd-rtl() {
+      direction: rtl;
 
-      &--offset-after-#{$n}--#{map-get($size,$l)} {
-        margin-right: ( ( $n / $cols ) *100%);
+      @for $n from 0 through $cols {
+        &--offset-after-#{$n} {
+          margin-left: ( ( $n / $cols ) *100%);
+        }
       }
     }
   }
@@ -215,12 +221,14 @@ $cols: 12;
         margin-right: ( ( $n / $cols) *100%);
       }
 
-      &--offset-#{$n}--#{map-get($size,$xl)} {
-        margin-left: ( ( $n / $cols ) *100%);
-      }
+      @include fd-rtl() {
+        direction: rtl;
 
-      &--offset-after-#{$n}--#{map-get($size,$xl)} {
-        margin-right: ( ( $n / $cols) *100%);
+        @for $n from 0 through $cols {
+          &--offset-after-#{$n} {
+            margin-left: ( ( $n / $cols ) *100%);
+          }
+        }
       }
     }
   }
