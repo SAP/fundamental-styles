@@ -1,48 +1,234 @@
 @import "./mixins";
 
 /*!
-.fd-layout-grid
+.fd-col
 */
 
-$block: #{$fd-namespace}-layout-grid;
+$block: #{$fd-namespace}-col;
+$blockContainer: #{$fd-namespace}-container;
+$blockRow: #{$fd-namespace}-row;
+$size: (600:"md", 1024: "lg", 1440: "xl");
+$m: 600;
+$l: 1024;
+$xl: 1440;
+$cols: 12;
+
+.#{$blockContainer} {
+  @include fd-reset();
+
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+  position: relative;
+  margin: 0 -0.25rem 0 -0.25rem;
+
+  &--no-gap {
+    margin: 0;
+
+    .#{$block} {
+      padding: 0;
+    }
+  }
+
+  .#{$blockRow} {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -0.5rem;
+  }
+
+  .#{$blockRow} + .#{$blockRow} {
+    margin-top: 0;
+  }
+
+  @include fd-rtl() {
+    direction: rtl;
+  }
+}
+
+.#{$blockRow} {
+  @include fd-reset();
+
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+  position: relative;
+  margin: 0 -0.25rem;
+  min-width: 100%;
+
+  &--inner-flex {
+    display: flex;
+  }
+
+  .#{$block} {
+    .#{$blockRow} + .#{$blockRow} {
+      margin-top: -0.5rem;
+    }
+  }
+}
 
 .#{$block} {
   @include fd-reset();
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.5rem;
+  padding: 0.5rem 0.25rem 0 0.25rem;
+  min-width: 100%;
+  max-width: 100%;
 
-  @include fd-screen(m) {
-    grid-gap: 1rem;
-  }
+  @for $n from 0 through $cols {
+    &--#{$n} {
+      min-width: ( ( $n / $cols ) *100%);
+      max-width: ( ( $n / $cols ) *100%);
+    }
 
-  &--no-gap {
-    grid-gap: 0;
+    &--offset-#{$n} {
+      margin-left: ( ( $n / $cols ) *100%);
+    }
 
-    & > * {
-      box-shadow: none;
+    &--offset-after-#{$n} {
+      margin-right: ( ( $n / $cols ) *100%);
     }
   }
 
-  &--gap-1 {
-    grid-gap: 1px;
+  @include fd-rtl() {
+    direction: rtl;
 
-    & > * {
-      box-shadow: none;
+    @for $n from 0 through $cols {
+      &--offset-after-#{$n} {
+        margin-left: ( ( $n / $cols ) *100%);
+      }
     }
   }
 
-  @each $n in 1, 2, 3, 4, 5, 6 {
-    &--col-#{$n} {
-      grid-template-columns: repeat(#{$n}, 1fr);
+  .#{$blockRow} {
+    margin: 0 -0.25rem;
+    margin-top: -0.5rem;
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 600px) {
+  .#{$blockContainer} {
+    margin: 0 -0.5rem 0 -0.5rem;
+
+    .#{$blockRow} {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: -1rem;
+    }
+
+    .#{$blockRow} + .#{$blockRow} {
+      margin-top: 0;
+    }
+
+    &--no-gap {
+      margin: 0;
+
+      .fd-col {
+        padding: 0;
+      }
     }
   }
 
-  @each $n in 2,3,4,5,6 {
-    @each $direction in row,column {
-      &__span-#{$direction}-#{$n} {
-        grid-#{$direction}: span #{$n};
+  .#{$blockRow} {
+    margin-bottom: 0;
+
+    .#{$block} {
+      .#{$blockRow} + .#{$blockRow} {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .#{$block} {
+    padding: 1rem 0.5rem 0 0.5rem;
+
+    @for $n from 0 through $cols {
+      &-#{map-get($size,$m)}--#{$n} {
+        min-width: ( ( $n / $cols ) *100%);
+        max-width: ( ( $n / $cols ) *100%);
+      }
+
+      &-#{map-get($size,$m)}--offset-#{$n} {
+        margin-left: ( ( $n / $cols ) *100%);
+      }
+
+      &-#{map-get($size,$m)}--offset-after-#{$n} {
+        margin-right: ( ( $n / $cols ) *100%);
+      }
+    }
+
+    @include fd-rtl() {
+      direction: rtl;
+
+      @for $n from 0 through $cols {
+        &--offset-after-#{$n} {
+          margin-left: ( ( $n / $cols ) *100%);
+        }
+      }
+    }
+
+    .#{$blockRow} {
+      margin-left: -0.5rem;
+      margin-right: -0.5rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .#{$block} {
+    @for $n from 0 through $cols {
+      &-#{map-get($size,$l)}--#{$n} {
+        min-width: ( ( $n / $cols ) *100%);
+        max-width: ( ( $n / $cols ) *100%);
+      }
+
+      &-#{map-get($size,$l)}--offset-#{$n} {
+        margin-left: ( ( $n / $cols ) *100%);
+      }
+
+      &-#{map-get($size,$l)}--offset-after-#{$n} {
+        margin-right: ( ( $n / $cols ) *100%);
+      }
+    }
+
+    @include fd-rtl() {
+      direction: rtl;
+
+      @for $n from 0 through $cols {
+        &--offset-after-#{$n} {
+          margin-left: ( ( $n / $cols ) *100%);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .#{$block} {
+    @for $n from 0 through 12 {
+      &-#{map-get($size,$xl)}--#{$n} {
+        min-width: ( ( $n / $cols ) *100%);
+        max-width: ( ( $n / $cols ) *100%);
+      }
+
+      &-#{map-get($size,$xl)}--offset-#{$n} {
+        margin-left: ( ( $n / $cols ) *100%);
+      }
+
+      &-#{map-get($size,$xl)}--offset-after-#{$n} {
+        margin-right: ( ( $n / $cols) *100%);
+      }
+
+      @include fd-rtl() {
+        direction: rtl;
+
+        @for $n from 0 through $cols {
+          &--offset-after-#{$n} {
+            margin-left: ( ( $n / $cols ) *100%);
+          }
+        }
       }
     }
   }

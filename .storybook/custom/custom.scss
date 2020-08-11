@@ -1,3 +1,4 @@
+
 body {
   font-family: '72', 'Open Sans', sans-serif;
   padding: 0;
@@ -291,6 +292,80 @@ code.docs-code {
 
 .fddocs.fd-info-label {
   margin-right: 5px;
+}
+
+.docs-layout-grid-bg {
+  background-color: #dbdbdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 4rem;
+  text-align: center;
+
+  &--vertical {
+    height: 100%;
+  }
+
+  &--color-1 {
+    background-color: #30c5d2;
+    color: white;
+  }
+
+  &--color-2 {
+    background-color: #32b5c8;
+    color: white;
+  }
+
+  &--color-3 {
+    background-color: #34a4bf;
+    color: white;
+  }
+
+  &--color-4 {
+    background-color: #3694b5;
+    color: white;
+  }
+
+  &--color-5 {
+    background-color: #3883ac;
+    color: white;
+  }
+
+  &--color-6 {
+    background-color: #3a73a2;
+    color: white;
+  }
+
+  &--color-7 {
+    background-color: #3d6299;
+    color: white;
+  }
+
+  &--color-8 {
+    background-color: #3f528f;
+    color: white;
+  }
+
+  &--color-9 {
+    background-color: #414186;
+    color: white;
+  }
+
+  &--color-10 {
+    background-color: #43317c;
+    color: white;
+  }
+
+  &--color-11 {
+    background-color: #452073;
+    color: white;
+  }
+
+  &--color-12 {
+    background-color: #471069;
+    color: white;
+  }
 }
 
 body.sb-show-main {
