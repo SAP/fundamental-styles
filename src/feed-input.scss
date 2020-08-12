@@ -30,6 +30,10 @@ $block: #{$fd-namespace}-feed-input;
     padding-left: $fd-feed-input-padding-end;
   }
 
+  @include fd-disabled() {
+    cursor: not-allowed;
+  }
+
   .#{$block}__thumb {
     display: none;
     flex: 1 0 auto;
