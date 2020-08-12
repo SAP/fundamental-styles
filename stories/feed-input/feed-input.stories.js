@@ -7,7 +7,7 @@ export default {
     title: 'Components/Feed Input',
     parameters: {
         description: 'The feed input component is specifically designed for the users to type their own notes or comments and post them to a corresponding feed.',
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme', 'development']
     }
 };
 
@@ -72,7 +72,7 @@ notEmpty.parameters = {
 };
 
 export const disabled = () => `
-    <div class="fd-feed-input" 
+    <div class="fd-feed-input is-disabled" 
          role="region" 
          aria-label="Feed input disabled example">
         <div class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb" 
