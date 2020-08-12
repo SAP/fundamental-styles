@@ -1156,7 +1156,9 @@ export const tableWithContextualMenu = () => `
             <td class="fd-table__cell fd-table__cell--fit-content">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="pQqQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                        <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="pQqQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More">
+                            <i class="sap-icon--overflow"></i>
+                        </button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="pQqQRFF3">
                         <nav class="fd-menu">
@@ -1189,7 +1191,9 @@ export const tableWithContextualMenu = () => `
             <td class="fd-table__cell fd-table__cell--fit-content">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="G54qQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                        <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="G54qQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More">
+                            <i class="sap-icon--overflow"></i>
+                        </button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="G54qQRFF3">
                         <nav class="fd-menu">
@@ -1222,7 +1226,9 @@ export const tableWithContextualMenu = () => `
             <td class="fd-table__cell fd-table__cell--fit-content">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="G54JRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                        <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="G54JRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More">
+                            <i class="sap-icon--overflow"></i>
+                        </button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="G54JRFF3">
                         <nav class="fd-menu">
@@ -1461,7 +1467,9 @@ export const navigationIndicationStates = () => `
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
             <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
-                <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
+                <button aria-label="navigation" class="fd-button fd-button--transparent">
+                    <i class="sap-icon--navigation-right-arrow"></i>
+                </button>
             </td>
         </tr>
         <tr class="fd-table__row">
@@ -1470,7 +1478,9 @@ export const navigationIndicationStates = () => `
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated" scope="col">
-                <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
+                <button aria-label="navigation" class="fd-button fd-button--transparent">
+                    <i class="sap-icon--navigation-right-arrow"></i>
+                </button>
             </td>
         </tr>
         <tr class="fd-table__row">
@@ -1479,7 +1489,9 @@ export const navigationIndicationStates = () => `
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
             <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
-                <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
+                <button aria-label="navigation" class="fd-button fd-button--transparent">
+                    <i class="sap-icon--navigation-right-arrow"></i>
+                </button>
             </td>
         </tr>
     </tbody>
@@ -1507,7 +1519,9 @@ export const navigationIndicationStates = () => `
                 <td class="fd-table__cell">Last Name</td>
                 <td class="fd-table__cell">01/26/17</td>
                 <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
-                    <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                    <button aria-label="navigation" class="fd-button fd-button--transparent">
+                        <i class="sap-icon--navigation-left-arrow"></i>
+                    </button>
                 </td>
             </tr>
             <tr class="fd-table__row">
@@ -1516,7 +1530,9 @@ export const navigationIndicationStates = () => `
                 <td class="fd-table__cell">Last Name</td>
                 <td class="fd-table__cell">01/26/17</td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated" scope="col">
-                    <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                    <button aria-label="navigation" class="fd-button fd-button--transparent">
+                        <i class="sap-icon--navigation-left-arrow"></i>
+                    </button>
                 </td>
             </tr>
             <tr class="fd-table__row">
@@ -1525,7 +1541,9 @@ export const navigationIndicationStates = () => `
                 <td class="fd-table__cell">Last Name</td>
                 <td class="fd-table__cell">01/26/17</td>
                 <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
-                    <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                    <button aria-label="navigation" class="fd-button fd-button--transparent">
+                        <i class="sap-icon--navigation-left-arrow"></i>
+                    </button>
                 </td>
             </tr>
         </tbody>

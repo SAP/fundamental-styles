@@ -105,7 +105,9 @@ export const days = () => `
         <header class="fd-calendar__header">
             <div class="fd-calendar__navigation">
                 <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                    <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"/>
+                    <button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
+                        <i class="sap-icon--slim-arrow-left"></i>
+                    </button>
                 </div>
                 <div class="fd-calendar__action">
                     <button type="button" class="fd-button fd-button--transparent">January</button>
@@ -114,7 +116,9 @@ export const days = () => `
                     <button type="button" class="fd-button fd-button--transparent">2018</button>
                 </div>
                 <div class="fd-calendar__action fd-calendar__action--arrow-right">
-                    <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"/>
+                    <button type="button" class="fd-button fd-button--transparent" aria-label="Next">
+                        <i class="sap-icon--slim-arrow-right"></i>
+                    </button>
                 </div>
             </div>
         </header>
@@ -300,7 +304,9 @@ export const months = () => `
             <header class="fd-calendar__header">
                 <div class="fd-calendar__navigation">
                     <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                        <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"/>
+                        <button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
+                            <i class="sap-icon--slim-arrow-left"></i>
+                        </button>
                     </div>
                     <div class="fd-calendar__action">
                         <button type="button" class="fd-button fd-button--transparent">January</button>
@@ -309,7 +315,9 @@ export const months = () => `
                         <button type="button" class="fd-button fd-button--transparent">2018</button>
                     </div>
                     <div class="fd-calendar__action fd-calendar__action--arrow-right">
-                        <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"/>
+                        <button type="button" class="fd-button fd-button--transparent" aria-label="Next">
+                            <i class="sap-icon--slim-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
             </header>
@@ -382,7 +390,9 @@ export const years = () => `
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
+    			<button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
+                    <i class="sap-icon--slim-arrow-left"></i>
+                </button>
     		</div>
     		<div class="fd-calendar__action">
     			<button type="button" class="fd-button fd-button--transparent">January</button>
@@ -391,7 +401,9 @@ export const years = () => `
     			<button type="button" class="fd-button fd-button--transparent">2018</button>
     		</div>
     		<div class="fd-calendar__action fd-calendar__action--arrow-right">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+    			<button type="button" class="fd-button fd-button--transparent" aria-label="Next">
+                    <i class="sap-icon--slim-arrow-right"></i>
+                </button>
     		</div>
         </div>
     </header>
@@ -455,7 +467,9 @@ export const years = () => `
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
+    			<button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
+                    <i class="sap-icon--slim-arrow-left"></i>
+                </button>
     		</div>
     		<div class="fd-calendar__action">
     			<button type="button" class="fd-button fd-button--transparent">January</button>
@@ -464,7 +478,9 @@ export const years = () => `
     			<button type="button" class="fd-button fd-button--transparent">2018</button>
     		</div>
     		<div class="fd-calendar__action fd-calendar__action--arrow-right">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+    			<button type="button" class="fd-button fd-button--transparent" aria-label="Next">
+                    <i class="sap-icon--slim-arrow-right"></i>
+                </button>
     		</div>
         </div>
     </header>
@@ -515,7 +531,9 @@ export const years = () => `
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
+    			<button type="button" class="fd-button fd-button--transparent" aria-label="Previous"></button>
+                    <i class="sap-icon--slim-arrow-left"></i>
+                </button>
     		</div>
     		<div class="fd-calendar__action">
     			<button type="button" class="fd-button fd-button--transparent">January</button>
@@ -524,7 +542,9 @@ export const years = () => `
     			<button type="button" class="fd-button fd-button--transparent">2018</button>
     		</div>
     		<div class="fd-calendar__action fd-calendar__action--arrow-right">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+    			<button type="button" class="fd-button fd-button--transparent" aria-label="Next">
+                    <i class="sap-icon--slim-arrow-right"></i>
+                </button>
     		</div>
         </div>
     </header>
@@ -564,7 +584,9 @@ export const years = () => `
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
+    			<button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
+                    <i class="sap-icon--slim-arrow-left"></i>
+                </button>
     		</div>
     		<div class="fd-calendar__action">
     			<button type="button" class="fd-button fd-button--transparent">January</button>
@@ -573,7 +595,9 @@ export const years = () => `
     			<button type="button" class="fd-button fd-button--transparent">2018</button>
     		</div>
     		<div class="fd-calendar__action fd-calendar__action--arrow-right">
-    			<button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+    			<button type="button" class="fd-button fd-button--transparent" aria-label="Next">
+                    <i class="sap-icon--slim-arrow-right"></i>
+                </button>
     		</div>
         </div>
     </header>
@@ -616,7 +640,9 @@ export const compactMode = () => `
         <header class="fd-calendar__header">
             <div class="fd-calendar__navigation">
                 <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                    <button type="button" class="fd-button fd-button--compact fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
+                    <button type="button" class="fd-button fd-button--compact fd-button--transparent" aria-label="Previous">
+                        <i class="sap-icon--slim-arrow-left"></i>
+                    </button>
                 </div>
                 <div class="fd-calendar__action">
                     <button type="button" class="fd-button fd-button--compact fd-button--transparent" aria-expanded="false" aria-controls="fm3cr569">January</button>
@@ -625,7 +651,9 @@ export const compactMode = () => `
                     <button type="button" class="fd-button fd-button--compact fd-button--transparent" aria-expanded="true" aria-controls="bufLe361">2018</button>
                 </div>
                 <div class="fd-calendar__action fd-calendar__action--arrow-right">
-                    <button type="button" class="fd-button fd-button--compact fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+                    <button type="button" class="fd-button fd-button--compact fd-button--transparent" aria-label="Next">
+                        <i class="sap-icon--slim-arrow-right"></i>
+                    </button>
                 </div>
             </div>
         </header>
@@ -775,7 +803,9 @@ export const mobileModeLandscapeOrientation = () => `
                 <header class="fd-calendar__header">
                     <div class="fd-calendar__navigation fd-calendar__navigation--main">
                         <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
+                            <button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
+                                <i class="sap-icon--slim-arrow-left"></i>
+                            </button>
                         </div>
                         <div class="fd-calendar__action">
                             <button type="button" class="fd-button fd-button--transparent">January</button>
@@ -784,7 +814,9 @@ export const mobileModeLandscapeOrientation = () => `
                             <button type="button" class="fd-button fd-button--transparent">2018</button>
                         </div>
                         <div class="fd-calendar__action fd-calendar__action--arrow-right">
-                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+                            <button type="button" class="fd-button fd-button--transparent" aria-label="Next">
+                                <i class="sap-icon--slim-arrow-right"></i>
+                            </button>
                         </div>
                         <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button fd-calendar__close-button--navigation" aria-label="Close"></button>
                     </div>
@@ -973,7 +1005,9 @@ export const mobileModePortraitOrientation = () => `
                     </div>
                     <div class="fd-calendar__navigation">
                         <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
+                            <button type="button" class="fd-button fd-button--transparent" aria-label="Previous"></button>
+                                <i class="sap-icon--slim-arrow-left"></i>
+                            </button>
                         </div>
                         <div class="fd-calendar__action">
                             <button type="button" class="fd-button fd-button--transparent">January</button>
@@ -982,7 +1016,9 @@ export const mobileModePortraitOrientation = () => `
                             <button type="button" class="fd-button fd-button--transparent">2018</button>
                         </div>
                         <div class="fd-calendar__action fd-calendar__action--arrow-right">
-                            <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+                            <button type="button" class="fd-button fd-button--transparent" aria-label="Next">
+                                <i class="sap-icon--slim-arrow-right"></i>
+                            </button>
                         </div>
                     </div>
                 </header>
