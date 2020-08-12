@@ -9,7 +9,9 @@ export default {
         description: `The Action Bar is located at the top of the page and is used for the following:
 
 - Page title
-- Main Actions for the page`,
+- Main Actions for the page
+
+For the page title, a Title component is utilized that is an H1 but visually styled as an H3. As the first heading on the page, for accessibility purposes it must be an H1. See the Title component page for further information on semantic versus visual heading levels.`,
         tags: ['non-f3', 'a11y', 'theme']
     }
 };
@@ -21,7 +23,7 @@ export const backBtn = () => `
             <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"></button>
         </div>
         <div class="fd-action-bar__title">
-            <h1 class="fd-title fd-title--h3">Page Title</h3>
+            <h1 class="fd-title fd-title--h3">Page Title</h1>
         </div>
         <div class="fd-action-bar__actions">
             <button aria-label="button"class="fd-button fd-button--compact">Button</button>
