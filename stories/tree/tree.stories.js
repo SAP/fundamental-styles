@@ -22,8 +22,8 @@ export default {
 - Items are not structured hierarchically. Use a list instead.
 - The hierarchy turns out to have only two levels. In this case, use a grouped list.
 - The hierarchy turns out to be just a categorization based on several details of the item. In this case, an analytical table provides multi-level grouping. Note that the analytical table is not fully responsive. It is only available for desktops and tablets, so you will need to take an adaptive approach by offering an additional UI for smartphones.
-- You need to display very deep hierarchies with additional data per item. In this case, use a tree table. Note that the tree table is not fully responsive. It is only available for desktops and tablets, so you will need to take an adaptive approach by offering an additional UI for smartphones.
-- The structure contains more than around 200 items. In this case, use the tree table. It is optimized for large item sets and provides better performance. Note that the tree table is not fully responsive. It is only available for desktops and tablets, so you will need to take an adaptive approach by offering an additional UI for smartphones.
+- You need to display very deep hierarchies with additional data per item. In this case, use a tree table (not available yet in Fundamental-styles). Note that the tree table is not fully responsive. It is only available for desktops and tablets, so you will need to take an adaptive approach by offering an additional UI for smartphones.
+- The structure contains more than around 200 items. In this case, use the tree table (not available yet in Fundamental-styles). It is optimized for large item sets and provides better performance. Note that the tree table is not fully responsive. It is only available for desktops and tablets, so you will need to take an adaptive approach by offering an additional UI for smartphones.
 - You need an overview of a large amount of data. In this case, use a chart.
 
 ### RESPONSIVENESS
@@ -52,7 +52,7 @@ The Tree currently supports up to 12 levels. More levels can be added per reques
 <span style="color: darkred; font-weight: bold;">NOTE: In some examples the expander is not interactive (will not show/hide the next level). Its purpose in these cases is simply to demonstrate the indentation rules.</span>
 `,
         docs: { iframeHeight: 400 },
-        tags: ['development']
+        tags: ['f3', 'a11y', 'theme', 'development']
     }
 };
 
