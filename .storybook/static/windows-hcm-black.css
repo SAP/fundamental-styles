@@ -27,8 +27,7 @@ a[aria-disabled="true"] {
 input,
 select,
 button,
-textarea,
-*[data-hcm="bordered"] {
+textarea {
   border: 1px solid white !important;
 }
 
@@ -43,11 +42,10 @@ textarea,
   opacity: 1 !important;
 }
 
-:disabled input,
-:disabled select,
-:disabled button,
-:disabled textarea,
-:disabled [data-hcm="bordered"] {
+input:disabled,
+select:disabled,
+button:disabled,
+textarea:disabled {
   border: 1px solid #3ff23f !important;
 }
 
