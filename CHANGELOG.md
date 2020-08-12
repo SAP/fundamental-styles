@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.3...v0.12.0-rc.4) (2020-08-12)
+
+
+### Bug Fixes
+
+* minor fixes for Feed Input component ([#1353](https://github.com/SAP/fundamental-styles/issues/1353)) ([7d7c4a8](https://github.com/SAP/fundamental-styles/commit/7d7c4a822fcee5e4353418e3a375a88526985d52))
+
 ## [0.12.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.2...v0.12.0-rc.3) (2020-08-12)
 
 
