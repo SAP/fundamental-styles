@@ -6,7 +6,7 @@ exports[`Storyshots Components/Bar Bar As Floating Footer 1`] = `
 
   <div>
     <b>
-      Desktop
+      Default (desktop)
     </b>
   </div>
   
@@ -68,7 +68,7 @@ exports[`Storyshots Components/Bar Bar As Floating Footer 1`] = `
 
   <div>
     <b>
-      Tablet and Mobile (Cozy)
+      Cozy (tablet and mobile)
     </b>
   </div>
   
@@ -196,7 +196,7 @@ exports[`Storyshots Components/Bar Bar As Footer 1`] = `
 
   <div>
     <b>
-      Desktop
+      Default (desktop)
     </b>
   </div>
   
@@ -258,7 +258,7 @@ exports[`Storyshots Components/Bar Bar As Footer 1`] = `
 
   <div>
     <b>
-      Tablet and Mobile (Cozy)
+      Cozy (tablet and mobile)
     </b>
   </div>
   
@@ -386,7 +386,7 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
 
   <div>
     <b>
-      Desktop
+      Default (desktop)
     </b>
   </div>
   
@@ -543,7 +543,7 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
 
   <div>
     <b>
-      Tablet and Mobile (Cozy)
+      Cozy (tablet and mobile)
     </b>
   </div>
   
@@ -861,7 +861,7 @@ exports[`Storyshots Components/Bar Bar As Subheader 1`] = `
 
   <div>
     <b>
-      Desktop
+      Default (desktop)
     </b>
   </div>
   
@@ -959,7 +959,7 @@ exports[`Storyshots Components/Bar Bar As Subheader 1`] = `
 
   <div>
     <b>
-      Tablet and Mobile (Cozy)
+      Cozy (tablet and mobile)
     </b>
   </div>
   
@@ -1466,7 +1466,7 @@ exports[`Storyshots Components/Bar Header With Subheader 1`] = `
 
   <div>
     <b>
-      Desktop
+      Default (desktop)
     </b>
   </div>
   
