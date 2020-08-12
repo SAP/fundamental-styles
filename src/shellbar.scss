@@ -23,6 +23,7 @@ $block: #{$fd-namespace}-shellbar;
   $fd-shellbar-background-color: transparent !default;
   $fd-field-border-color: var(--sapField_BorderColor) !default;
   $fd-shell-active-text-color: var(--sapShell_Active_TextColor) !default;
+  $fd-shell-icon-button-color: var(--sapShell_InteractiveTextColor) !default;
 
   // Background
   $fd-shellbar-background: var(--sapShellColor) !default;
@@ -277,7 +278,7 @@ $block: #{$fd-namespace}-shellbar;
     position: relative;
     border-color: transparent;
     background: $fd-shellbar-background-color;
-    color: $fd-shellbar-color;
+    color: $fd-shell-icon-button-color;
     overflow: visible;
     padding: 0;
     outline-color: var(--sapContent_ContrastFocusColor);
@@ -324,7 +325,7 @@ $block: #{$fd-namespace}-shellbar;
     outline-color: var(--sapContent_ContrastFocusColor);
 
     &::after {
-      color: $fd-shellbar-color;
+      color: $fd-shell-icon-button-color;
       content: "\e287";
     }
 

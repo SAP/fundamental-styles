@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.21...v0.12.0-rc.0) (2020-08-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* `fd-col--span`, `fd-layout-grid` removed
+
+### Bug Fixes
+
+* responsive grid layout with new docs ([#889](https://github.com/SAP/fundamental-styles/issues/889)) ([a2d3d9a](https://github.com/SAP/fundamental-styles/commit/a2d3d9af59c4adb4ddbe249538123084d768e87c))
+
+### [0.11.3-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.20...v0.11.3-rc.21) (2020-08-11)
+
+### [0.11.3-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.19...v0.11.3-rc.20) (2020-08-10)
+
+
+### Bug Fixes
+
+* remove extra border on Input Group button ([#1335](https://github.com/SAP/fundamental-styles/issues/1335)) ([2e6ae1a](https://github.com/SAP/fundamental-styles/commit/2e6ae1a2ec8b0cf00f94870aab5fab08b53759cc))
+
+### [0.11.3-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.18...v0.11.3-rc.19) (2020-08-07)
+
+### [0.11.3-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.17...v0.11.3-rc.18) (2020-08-07)
+
+
+### Bug Fixes
+
+* update shellbar icon color ([#1321](https://github.com/SAP/fundamental-styles/issues/1321)) ([0dbaa58](https://github.com/SAP/fundamental-styles/commit/0dbaa5889719c7c3171ea77cfe487eeacb105e06))
+
+### [0.11.3-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.16...v0.11.3-rc.17) (2020-08-05)
+
 ### [0.11.3-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.15...v0.11.3-rc.16) (2020-08-04)
 
 ### [0.11.3-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.14...v0.11.3-rc.15) (2020-08-04)

@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Forms/Form Grid Four Seven One Compact Layout 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Form Grid L Size Default 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Form Grid L Size Multiple Form Group 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Form Grid L Size Single Form Group 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Form Grid M Size Default 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Form Grid M Size Full Screen App 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Form Grid M Size Full Screen App Long Label 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Form Grid M Size Split Screen 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Form Grid S Size 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Form Grid Xl Default 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Form Grid Xl Double Form Group 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Form Grid Xl Multiple Form Group 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Form Grid Xl Single Form Group 1`] = `
+
+
+`;
