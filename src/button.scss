@@ -54,6 +54,7 @@ $block: #{$fd-namespace}-button;
     font-size: $size;
     line-height: $size;
     font-family: 'SAP-icons';
+    vertical-align: text-bottom;
   }
 }
 
@@ -97,6 +98,14 @@ $block: #{$fd-namespace}-button;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+@mixin menu-icon() {
+  > i {
+    &.sap-icon--icon-slim-arrow-down {
+      font-size: var(--sapFontSmallSize);
+    }
+  }
 }
 
 @mixin textAlignment() {
@@ -269,19 +278,12 @@ $block: #{$fd-namespace}-button;
   > i {
     &[class*='sap-icon'] {
       position: relative;
-      top: 0.125rem;
       width: $fd-button-icon-font-size;
       height: $fd-button-icon-font-size;
       font-size: $fd-button-icon-font-size;
       line-height: $fd-button-icon-font-size;
 
-      &::before {
-        font-style: normal;
-        width: $fd-button-icon-font-size;
-        height: $fd-button-icon-font-size;
-        font-size: $fd-button-icon-font-size;
-        line-height: $fd-button-icon-font-size;
-      }
+      @include iconSize($fd-button-icon-font-size);
     }
 
     &.#{$block}__icon--left {
@@ -291,12 +293,11 @@ $block: #{$fd-namespace}-button;
     &.#{$block}__icon--right {
       margin-left: $fd-button-icon-margin;
     }
-  }
 
-  &:empty {
-    > i {
-      &.#{$block}__icon--left {
-        margin-right: 0;
+    @include fd-only-child() {
+      &.#{$block}__icon--left,
+      &.#{$block}__icon--right {
+        margin: 0;
       }
     }
   }
@@ -313,14 +314,6 @@ $block: #{$fd-namespace}-button;
       &.#{$block}__icon--right {
         margin-left: 0;
         margin-right: $fd-button-icon-margin;
-      }
-    }
-
-    &:empty {
-      > i {
-        &.#{$block}__icon--left {
-          margin-left: 0;
-        }
       }
     }
   }
