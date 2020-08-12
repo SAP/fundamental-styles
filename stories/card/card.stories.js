@@ -19,7 +19,7 @@ Cards can display different content:
 Card fields are not editable. A card can focus on a single object or topic, or on a group of objects. Cards sizes vary depanding on the layout.
 Several cards can reference the same applicaton but the information should not be repeated. 
 `,
-        tags: ['development']
+        tags: ['f3', 'a11y', 'theme', 'development']
     }
 };
 

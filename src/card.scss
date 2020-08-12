@@ -228,8 +228,7 @@ $fd-card-content-avatar-text-spacing: 0.5rem !default;
   &__content {
     @include fd-reset();
 
-    height: 100%;
-    width: 100%;
+    flex: 1 0 auto;
   }
 
   &__content-container {
@@ -359,10 +358,10 @@ $fd-card-content-avatar-text-spacing: 0.5rem !default;
       .#{$block}__title {
         max-height: 3rem;
       }
+    }
 
-      .#{$numeric-content} {
-        display: inline;
-      }
+    .#{$numeric-content} {
+      width: 100%;;
     }
   }
 }
