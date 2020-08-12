@@ -1,4 +1,5 @@
 import '../../dist/radio.css';
+import '../../dist/title.css';
 
 export default {
     title: 'Patterns/Combobox Input',
@@ -353,7 +354,7 @@ export const mobile = () => `
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h3 class="fd-dialog__title">
+                    <h3 class="fd-title fd-title--h5">
                         Ingredients
                     </h3>
                 </div>

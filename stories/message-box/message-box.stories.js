@@ -1,4 +1,5 @@
 import '../../dist/message-box.css';
+import '../../dist/title.css';
 
 export default {
     title: 'Components/Message Box',
@@ -16,7 +17,7 @@ export const structure = () => `
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h2 class="fd-message-box__title">Title</h2>
+                    <h2 class="fd-title fd-title--h5">Title</h2>
                 </div>
             </div>
         </header>
@@ -66,7 +67,7 @@ export const types = () => `
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h2 class="fd-message-box__title">Standard</h2>
+                    <h2 class="fd-title fd-title--h5">Standard</h2>
                 </div>
             </div>
         </header>
@@ -95,7 +96,7 @@ export const types = () => `
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h2 class="fd-message-box__title">Confirmation</h2>
+                    <h2 class="fd-title fd-title--h5">Confirmation</h2>
                 </div>
             </div>
         </header>
@@ -126,7 +127,7 @@ export const types = () => `
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h2 class="fd-message-box__title">Error</h2>
+                    <h2 class="fd-title fd-title--h5">Error</h2>
                 </div>
             </div>
         </header>
@@ -152,7 +153,7 @@ export const types = () => `
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h2 class="fd-message-box__title">Success</h2>
+                    <h2 class="fd-title fd-title--h5">Success</h2>
                 </div>
             </div>
         </header>
@@ -178,7 +179,7 @@ export const types = () => `
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h2 class="fd-message-box__title">Warning</h2>
+                    <h2 class="fd-title fd-title--h5">Warning</h2>
                 </div>
             </div>
         </header>
@@ -204,7 +205,7 @@ export const types = () => `
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h2 class="fd-message-box__title">Information</h2>
+                    <h2 class="fd-title fd-title--h5">Information</h2>
                 </div>
             </div>
         </header>
@@ -243,7 +244,7 @@ export const noIcon = () =>
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h2 class="fd-message-box__title">Success</h2>
+                    <h2 class="fd-title fd-title--h5">Success</h2>
                 </div>
             </div>
         </header>
@@ -272,7 +273,7 @@ export const noIcon = () =>
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h2 class="fd-message-box__title">Error</h2>
+                    <h2 class="fd-title fd-title--h5">Error</h2>
                 </div>
             </div>
         </header>
@@ -309,7 +310,7 @@ export const responsive = () =>
         <header class="fd-bar fd-bar--cozy fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h2 class="fd-message-box__title">Information</h2>
+                    <h2 class="fd-title fd-title--h5">Information</h2>
                 </div>
             </div>
         </header>
@@ -338,7 +339,7 @@ export const responsive = () =>
         <header class="fd-bar fd-bar--cozy fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h2 class="fd-message-box__title">Error</h2>
+                    <h2 class="fd-title fd-title--h5">Error</h2>
                 </div>
             </div>
         </header>
@@ -365,7 +366,7 @@ export const responsive = () =>
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h2 class="fd-message-box__title">Success</h2>
+                    <h2 class="fd-title fd-title--h5">Success</h2>
                 </div>
             </div>
         </header>
@@ -391,7 +392,7 @@ export const responsive = () =>
         <header class="fd-bar fd-bar--header fd-message-box__header">
              <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h2 class="fd-message-box__title">Warning</h2>
+                    <h2 class="fd-title fd-title--h5">Warning</h2>
                 </div>
             </div>
         </header>
@@ -439,7 +440,7 @@ export const rtl = () => `
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h2 class="fd-message-box__title">Title</h2>
+                    <h2 class="fd-title fd-title--h5">Title</h2>
                 </div>
             </div>
         </header>

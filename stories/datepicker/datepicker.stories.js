@@ -1,6 +1,7 @@
 import '../../dist/calendar.css';
 import '../../dist/input-group.css';
 import '../../dist/popover.css';
+import '../../dist/title.css';
 
 export default {
     title: 'Patterns/Date Picker',
@@ -1042,7 +1043,7 @@ export const mobilePortrait = () => `
     <div class="fd-dialog__header fd-bar fd-bar--header fd-bar--cosy">
       <div class="fd-bar__left">
         <div class="fd-bar__element">
-          <h3 class="fd-dialog__title">
+          <h3 class="fd-title fd-title--h5">
             Pick a date
           </h3>
         </div>
