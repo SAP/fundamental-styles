@@ -146,10 +146,6 @@ $fd-card-content-avatar-text-spacing: 0.5rem !default;
     @include fd-rtl() {
       margin-left: 0;
       margin-right: $fd-card-currency-spacing;
-
-      &::before {
-        content: '\00a0|';
-      }
     }
   }
 
@@ -335,6 +331,25 @@ $fd-card-content-avatar-text-spacing: 0.5rem !default;
   &--object {
     .#{$block}__content {
       padding: 1rem;
+    }
+  }
+
+  // IE10+ fixes for line-clamp
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .#{$block}__title {
+      max-height: 4rem;
+      flex: 1;
+    }
+
+    .#{$block}__subtitle {
+      max-height: 2.5rem;
+      flex: 1;
+    }
+
+    .#{$block}--analytical {
+      .#{$block}__title {
+        max-height: 3rem;
+      }
     }
   }
 }
