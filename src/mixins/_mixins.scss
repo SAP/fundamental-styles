@@ -60,6 +60,12 @@
   }
 }
 
+@mixin fd-only-child {
+  &:first-child:last-child {
+    @content;
+  }
+}
+
 @mixin fd-screen($size, $dimension: width) {
   @if map-has-key($fd-breakpoints, $size) {
     @media (min-#{$dimension}: map-get($fd-breakpoints, $size)) {

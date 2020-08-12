@@ -28,6 +28,14 @@ $block: #{$fd-namespace}-product-switch;
       margin-right: 0;
     }
 
+    > i[class*='sap-icon'] {
+      color: inherit;
+
+      &::before {
+        color: inherit;
+      }
+    }
+
     @include fd-hover() {
       color: var(--sapShell_InteractiveTextColor);
       background-color: var(--sapShell_Hover_Background);
