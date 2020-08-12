@@ -683,8 +683,12 @@ export const withAdvancedToolbar = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Advanced Shellbar</h4>
     <div class="fd-toolbar__spacer"></div>
-    <button aria-label="navigation" class="fd-button fd-button--compact fd-button--transparent sap-icon--filter" onclick="toggleDialog('filter-dialog-example', true)"></button>
-    <button aria-label="navigation" class="fd-button fd-button--compact fd-button--transparent sap-icon--action-settings" onclick="toggleDialog('settings-dialog-example', true)"></button>
+    <button aria-label="navigation" class="fd-button fd-button--compact fd-button--transparent" onclick="toggleDialog('filter-dialog-example', true)">
+        <i class="sap-icon--filter"></i>
+    </button>
+    <button aria-label="navigation" class="fd-button fd-button--compact fd-button--transparent" onclick="toggleDialog('settings-dialog-example', true)">
+        <i class="sap-icon--action-settings"></i>
+    </button>
 </div>
 <table class="fd-table fd-table--compact">
     <thead class="fd-table__header">

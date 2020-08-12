@@ -54,7 +54,6 @@ $block: #{$fd-namespace}-button;
     font-size: $size;
     line-height: $size;
     font-family: 'SAP-icons';
-    vertical-align: text-bottom;
   }
 }
 
@@ -295,13 +294,21 @@ $block: #{$fd-namespace}-button;
 @mixin iconStylesLtr() {
   > i {
     &[class*='sap-icon'] {
-      position: relative;
+      color: inherit;
       width: $fd-button-icon-font-size;
       height: $fd-button-icon-font-size;
       font-size: $fd-button-icon-font-size;
       line-height: $fd-button-icon-font-size;
+      vertical-align: text-bottom;
 
-      @include iconSize($fd-button-icon-font-size);
+
+      &::before,
+      &::after {
+        width: inherit;
+        height: inherit;
+        font-size: inherit;
+        line-height: inherit;
+      }
     }
 
     &.#{$block}__icon--left {
