@@ -298,7 +298,9 @@ export const mobile = () => `
     <div class="fd-action-bar fd-action-bar--s"> 
         <div class="fd-action-bar__header">
             <div class="fd-action-bar__back">
-                <button aria-label="button"class="fd-button fd-button--transparent sap-icon--navigation-left-arrow" aria-label="Back"></button>
+                <button aria-label="button"class="fd-button fd-button--transparent" aria-label="Back">
+                    <i class="sap-icon--navigation-left-arrow"></i>
+                </button>
             </div>
             <div class="fd-action-bar__title">
                 <h1 class="fd-title fd-title--h3">Action Bar with description and back button</h1>
@@ -306,8 +308,10 @@ export const mobile = () => `
             <div class="fd-action-bar__actions">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button aria-label="button"class="fd-button fd-button--transparent sap-icon--overflow"
-                        aria-controls="wgxzK85" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                        <button aria-label="button"class="fd-button fd-button--transparent"
+                        aria-controls="wgxzK85" aria-haspopup="true" aria-expanded="false" aria-label="More">
+                            <i class="sap-icon--overflow"></i>
+                        </button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="wgxzK85">
                         <nav class="fd-menu" id="">
@@ -347,7 +351,9 @@ export const mobile = () => `
     <div class="fd-action-bar fd-action-bar--s"> 
         <div class="fd-action-bar__header">
             <div class="fd-action-bar__back">
-                <button aria-label="button"class="fd-button fd-button--transparent sap-icon--navigation-right-arrow" aria-label="Back"></button>
+                <button aria-label="button"class="fd-button fd-button--transparent" aria-label="Back">
+                    <i class="sap-icon--navigation-right-arrow"></i>
+                </button>
             </div>
             <div class="fd-action-bar__title">
                 <h1 class="fd-title fd-title--h3">Action Bar with description and back button</h1>
@@ -355,8 +361,10 @@ export const mobile = () => `
             <div class="fd-action-bar__actions">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button aria-label="button"class="fd-button fd-button--transparent sap-icon--overflow"
-                        aria-controls="wgxzK86" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                        <button aria-label="button"class="fd-button fd-button--transparent "
+                        aria-controls="wgxzK86" aria-haspopup="true" aria-expanded="false" aria-label="More">
+                            <i class="sap-icon--overflow"></i>
+                        </button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="wgxzK86">
                         <nav class="fd-menu" id="">

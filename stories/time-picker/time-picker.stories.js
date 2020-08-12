@@ -19,7 +19,9 @@ export const cozyAndCompactMode = () => `
             <div class="fd-input-group">
                 <input type="text" class="fd-input fd-input-group__input" id="" value="4:25:10 PM" placeholder="hh:mm:ss am/pm">
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--time-entry-request fd-popover__control" aria-controls="rKLOR811" aria-expanded="true" aria-haspopup="true"></button>
+                    <button class="fd-input-group__button fd-button fd-button--transparent fd-popover__control" aria-controls="rKLOR811" aria-expanded="true" aria-haspopup="true">
+                        <i class="sap-icon--time-entry-request"></i>
+                    </button>
                 </span>
             </div>
         </div>
@@ -27,7 +29,9 @@ export const cozyAndCompactMode = () => `
             <div class="fd-time fd-time--scrollable">
                 <div class="fd-time__col">
                     <label class="fd-time__slider-label fd-form-label">Hrs</label>
-                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+                    <button class="fd-button fd-button fd-button--transparent" aria-label="Increase hours">
+                        <i class="sap-icon--navigation-up-arrow"></i>
+                    </button>
                     <div class="fd-time__wrapper fd-time__wrapper--active">
                     <ul class="fd-time__list">
                         <li class="fd-time__item">
@@ -65,7 +69,9 @@ export const cozyAndCompactMode = () => `
                         </li>
                     </ul>
                     </div>
-                    <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+                    <button class="fd-button fd-button fd-button--transparent" aria-label="Decrease hours">
+                        <i class="sap-icon--navigation-down-arrow"></i>
+                    </button>
                 </div>
                 <div class="fd-time__col">
                     <label class="fd-time__slider-label fd-form-label">Min</label>
@@ -100,7 +106,9 @@ export const cozyAndCompactMode = () => `
             <div class="fd-input-group">
                 <input type="text" class="fd-input fd-input-group__input fd-input--compact" id="" value="4:25:10 PM" placeholder="hh:mm:ss am/pm">
                 <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                    <button class="fd-input-group__button fd-button fd-button--compact fd-button--transparent sap-icon--time-entry-request fd-popover__control" aria-controls="rKGNR811" aria-expanded="true" aria-haspopup="true"></button>
+                    <button class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-popover__control" aria-controls="rKGNR811" aria-expanded="true" aria-haspopup="true">
+                        <i class="sap-icon--time-entry-request"></i>
+                    </button>
                 </span>
             </div>
         </div>
@@ -108,7 +116,9 @@ export const cozyAndCompactMode = () => `
             <div class="fd-time fd-time--scrollable fd-time--compact">
                 <div class="fd-time__col">
                     <label class="fd-time__slider-label fd-form-label">Hrs</label>
-                    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Increase hours">
+                        <i class="sap-icon--navigation-up-arrow"></i>
+                    </button>
                     <div class="fd-time__wrapper fd-time__wrapper--active">
                     <ul class="fd-time__list">
                         <li class="fd-time__item">
@@ -146,7 +156,9 @@ export const cozyAndCompactMode = () => `
                         </li>
                     </ul>
                     </div>
-                    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Decrease hours">
+                        <i class="sap-icon--navigation-down-arrow"></i>
+                    </button>
                 </div>
                 <div class="fd-time__col">
                     <label class="fd-time__slider-label fd-form-label">Min</label>
@@ -196,7 +208,9 @@ export const tabletMode = () => `
         <div class="fd-input-group">
             <input type="text" class="fd-input fd-input-group__input" id="" value="4:25:10 PM" placeholder="hh:mm:ss am/pm">
             <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--time-entry-request fd-popover__control" aria-controls="rKLHJ5311" aria-expanded="true" aria-haspopup="true"></button>
+                <button class="fd-input-group__button fd-button fd-button--transparent fd-popover__control" aria-controls="rKLHJ5311" aria-expanded="true" aria-haspopup="true">
+                    <i class="sap-icon--time-entry-request"></i>
+                </button>
             </span>
         </div>
     </div>
@@ -204,7 +218,9 @@ export const tabletMode = () => `
         <div class="fd-time fd-time--scrollable fd-time--tablet">
             <div class="fd-time__col">
                 <label class="fd-time__slider-label fd-form-label">Hrs</label>
-                <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-up-arrow" aria-label="Increase hours"></button>
+                <button class="fd-button fd-button--transparent" aria-label="Increase hours">
+                    <i class="sap-icon--navigation-up-arrow"></i>
+                </button>
                 <div class="fd-time__wrapper fd-time__wrapper--active">
                    <ul class="fd-time__list">
                        <li class="fd-time__item">
@@ -242,7 +258,9 @@ export const tabletMode = () => `
                        </li>
                    </ul>
                 </div>
-                <button class="fd-button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Decrease hours"></button>
+                <button class="fd-button fd-button fd-button--transparent" aria-label="Decrease hours">
+                    <i class="sap-icon--navigation-down-arrow"></i>
+                </button>
             </div>
             <div class="fd-time__col">
                 <label class="fd-time__slider-label fd-form-label">Min</label>

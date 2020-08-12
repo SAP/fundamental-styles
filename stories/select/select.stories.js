@@ -29,7 +29,9 @@ export const cozy = () => `
             role="combobox"
             tabindex="0">
              <span class="fd-select__text-content">Select</span>
-             <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+             <span class="fd-button fd-button--transparent fd-select__button">
+                <i class="sap-icon--slim-arrow-down"></i> 
+            </span>
          </div>
       </div>
   </div>
