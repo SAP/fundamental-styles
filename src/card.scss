@@ -5,6 +5,7 @@ $block: #{$fd-namespace}-card;
 $object-status: #{$fd-namespace}-object-status;
 $numeric-content: #{$fd-namespace}-numeric-content;
 
+$fd-card-header-border: 0.0625rem solid var(--sapTile_SeparatorColor) !default;
 $fd-card-avatar-text-spacing: 0.75rem !default;
 $fd-card-title-counter-spacing: 1rem !default;
 $fd-card-currency-spacing: 0.25rem !default;
@@ -49,9 +50,14 @@ $fd-card-content-avatar-text-spacing: 0.5rem !default;
 
     padding: 1rem;
     background: var(--sapTile_Background);
-    border-bottom: 0.0625rem solid var(--sapTile_SeparatorColor);
+    border-bottom: $fd-card-header-border;
     text-decoration: none;
     cursor: pointer;
+
+    &:last-child {
+      border-bottom: none;
+      border-top: $fd-card-header-border;
+    }
   }
 
   &__header-text {
@@ -221,6 +227,9 @@ $fd-card-content-avatar-text-spacing: 0.5rem !default;
 
   &__content {
     @include fd-reset();
+
+    height: 100%;
+    width: 100%;
   }
 
   &__content-container {
@@ -349,6 +358,10 @@ $fd-card-content-avatar-text-spacing: 0.5rem !default;
     .#{$block}--analytical {
       .#{$block}__title {
         max-height: 3rem;
+      }
+
+      .#{$numeric-content} {
+        display: inline;
       }
     }
   }

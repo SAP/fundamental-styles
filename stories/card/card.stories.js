@@ -26,7 +26,7 @@ Several cards can reference the same applicaton but the information should not b
 
 export const cardAnatomy = () => `
 <div style="display:flex; justify-content:space-around; flex-wrap: wrap">
-    <div style="width: 300px; height: 400px; margin-bottom: 1rem;">
+    <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="card-anatomy-1">
             <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
@@ -43,7 +43,24 @@ export const cardAnatomy = () => `
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
-    <div style="width: 300px; height: 400px">
+    <div style="width: 300px; height: 400px; margin: 1rem;">
+        <div class="fd-card" role="region" aria-label="card-anatomy-1">
+            <div class="fd-card__content" role="group" aria-label="Card Content"></div>
+            <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
+                <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
+                <div class="fd-card__header-text">
+                    <div class="fd-card__title-area">
+                        <div class="fd-card__title">Card Title</div>
+                        <span class="fd-object-status fd-card__counter">Counter</span>
+                    </div>
+                    <div class="fd-card__subtitle-area">
+                        <div class="fd-card__subtitle">Card Subtitle</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="card-anatomy-2">
             <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
@@ -60,7 +77,7 @@ export const cardAnatomy = () => `
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
-    <div style="width: 300px; height: 400px">
+    <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="card-anatomy-3">
             <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
@@ -74,7 +91,7 @@ export const cardAnatomy = () => `
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
-    <div style="width: 300px; height: 400px">
+    <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="card-anatomy-4">
             <div class="fd-badge">Badge</div>
             <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
@@ -91,7 +108,24 @@ export const cardAnatomy = () => `
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
-    <div style="width: 300px; height: 400px">
+    <div style="width: 300px; height: 400px; margin: 1rem;">
+        <div class="fd-card" role="region" aria-label="card-anatomy-4">
+            <div class="fd-badge">Badge</div>
+            <div class="fd-card__content" role="group" aria-label="Card Content"></div>
+            <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
+                <div class="fd-card__header-text">
+                    <div class="fd-card__title-area">
+                        <div class="fd-card__title">Card Title</div>
+                        <span class="fd-object-status fd-object-status--critical fd-card__counter">3 of 15</span>
+                    </div>
+                    <div class="fd-card__subtitle-area">
+                        <div class="fd-card__subtitle">Card Subtitle</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="card-anatomy-5">
             <div class="fd-badge">New</div>
             <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
@@ -108,7 +142,7 @@ export const cardAnatomy = () => `
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
-    <div style="width: 300px; height: 400px">
+    <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="card-anatomy-6">
             <div class="fd-badge">Updated Content</div>
             <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
@@ -125,10 +159,12 @@ export const cardAnatomy = () => `
 </div>
 `;
 
+cardAnatomy.storyName = 'Card Anatomy (Standard Card and Component Card)';
 cardAnatomy.parameters = {
     docs: {
-        iframeHeight: 450,
-        storyDescription: `Card consists of two mandatory components: a clickable header area and a content area. The card takes the width and the height of its parent.
+        iframeHeight: 900,
+        storyDescription: `Card is a container that consists of two mandatory components: a clickable header area and a content area. The card takes the width and the height of its parent. The Header could be placed either above or below the Content.
+The Content area of the Unstructured Card is empty.
 
 **Header:**
 
@@ -150,7 +186,7 @@ Elements:
 
 export const analyticalCard = () => `
 <div style="display:flex; justify-content:space-around; flex-wrap: wrap">
-    <div style="width: 300px; height: 400px; margin-bottom: 1rem;">
+    <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card fd-card--analytical" role="region" aria-label="analytical-card-1">
             <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <div class="fd-card__header-text">
@@ -192,7 +228,7 @@ export const analyticalCard = () => `
         </div>
     </div>
 
-    <div style="width: 700px; height: 400px; margin-bottom: 1rem;">
+    <div style="width: 700px; height: 400px; margin: 1rem;">
         <div class="fd-card fd-card--analytical"  role="region" aria-label="analytical-card-2">
             <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <div class="fd-badge">Badge</div>
@@ -273,7 +309,7 @@ analyticalCard.parameters = {
 
 export const listCard = () => `
 <div style="display:flex; justify-content:space-around; flex-wrap: wrap">
-    <div style="width: 300px; height: 100%; margin-bottom: 1rem;">
+    <div style="width: 300px; height: 100%; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="list-card-1">
             <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <div class="fd-card__header-text">
@@ -313,7 +349,7 @@ export const listCard = () => `
             </div>
         </div>
     </div>
-    <div style="width: 300px; height: 100%; margin-bottom: 1rem;">
+    <div style="width: 300px; height: 100%; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="list-card-2">
             <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <div class="fd-card__header-text">
@@ -368,7 +404,7 @@ listCard.parameters = {
 
 export const tableCard = () => `
 <div style="display:flex; justify-content:space-around; flex-wrap: wrap">
-    <div style="width: 500px; height: 100%; margin-bottom: 1rem;">
+    <div style="width: 500px; height: 100%; margin: 1rem;">
         <div class="fd-card fd-card--table" role="region" aria-label="table-card-1">
             <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <div class="fd-card__header-text">
@@ -450,7 +486,7 @@ export const tableCard = () => `
             </div>
         </div>
     </div>
-    <div style="width: 500px; height: 100%; margin-bottom: 1rem;">
+    <div style="width: 500px; height: 100%; margin: 1rem;">
         <div class="fd-card fd-card--table fd-card--compact" role="region" aria-label="table-card-2">
             <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <div class="fd-card__header-text">
@@ -532,7 +568,7 @@ tableCard.parameters = {
 
 export const objectCard = () => `
 <div style="display:flex; justify-content:space-around; flex-wrap: wrap">
-    <div style="width: 14rem; height: 34rem; margin-bottom: 1rem;">
+    <div style="width: 14rem; height: 34rem; margin: 1rem;">
         <div class="fd-card fd-card--object" role="region" aria-label="object-card-1">
             <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
@@ -593,7 +629,7 @@ export const objectCard = () => `
             </div>
         </div>
     </div>
-    <div style="width: 40rem; height: 20rem; margin-bottom: 1rem;">
+    <div style="width: 40rem; height: 20rem; margin: 1rem;">
         <div class="fd-card fd-card--object" role="region" aria-label="object-card-2">
             <a class="fd-card__header" tabindex="0" role="heading" aria-level="3" aria-roledescription="Card Heading" aaria-label="card-header">
                 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
