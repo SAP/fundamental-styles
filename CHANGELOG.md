@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.2...v0.12.0-rc.3) (2020-08-12)
+
+
+### Features
+
+* Title component ([#1338](https://github.com/SAP/fundamental-styles/issues/1338)) ([3d5472f](https://github.com/SAP/fundamental-styles/commit/3d5472f7cd51186582d8de104dba313883d9d5a8))
+
 ## [0.12.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.1...v0.12.0-rc.2) (2020-08-12)
 
 
