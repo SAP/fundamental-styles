@@ -34,7 +34,7 @@ export const primary = () => `
     <button class="fd-button">Create</button>
     <button class="fd-button sap-icon--cart"></button>
     <button class="fd-button fd-button--emphasized ">Save</button>
-`
+`;
 export const types = () => `
     <div class="fddocs-container"> 
         <button class="fd-button">Default Button</button>
@@ -120,7 +120,7 @@ menuButton.storyName = 'Menu button';
 menuButton.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `The menu button displays a dropdown menu upon selection and is considered the default menu button. There are two different type of menu buttons: the default menu button and split menu button, and both of them can contain items with submenus.`
+        storyDescription: 'The menu button displays a dropdown menu upon selection and is considered the default menu button. There are two different type of menu buttons: the default menu button and split menu button, and both of them can contain items with submenus.'
     }
 };
 
@@ -201,12 +201,14 @@ splitMenuButton.parameters = {
     docs: {
         iframeHeight: 150,
         storyDescription: `The split menu button has two separate areas: the text label and the icon. The separator between them indicates that each area results in a different action, giving the user two choices: select the text label to trigger the action or select the arrow to open the menu. This button has a fixed size and the text truncates if the menu items exceed the maximum width available. 
-        <br><br> <span style=“color: darkred; font-weight: bold;“>Note: If the default action is displayed as an icon only, all the menu items must contain icons.</span>
+        <br><br> <span style=“color: red; font-weight: bold;“>Note: If the default action is displayed as an icon only, all the menu items must contain icons.</span>
 
 **The split menu button can behave in two different ways:**
 
 1.	The button triggers the default action set by the developer. If no default action is defined, the first item in the menu list will become the default.
 2.	The button triggers the last action chosen by the user. Initially, it triggers the default action. However, when the user selects a different action, the default switches to the last action selected by the user.
+
+The split menu button can be displayed by using <code class="docs-code>fd-button-split fd-has-margin-right-small</code> class, together with 
 `
     }
 };
