@@ -17,7 +17,7 @@
     "release": "./scripts/publish-release.sh",
     "size": "bundlesize --config config/bundlesize.json",
     "start": "npm run storybook",
-    "std-version": "standard-version -m \"chore(release): version %s build ${TRAVIS_BUILD_NUMBER} [ci skip]\"",
+    "std-version": "standard-version --releaseCommitMessageFormat \"chore(release): version {{currentTag}} build ${TRAVIS_BUILD_NUMBER} [ci skip]\"",
     "style:assets": "./scripts/copy-assets.sh",
     "style:compile": "node-sass -q --output-style expanded --precision 5 src/ --output dist/",
     "style:postCSS": "postcss --config config/postcss.config.js  --replace dist/*.css",
