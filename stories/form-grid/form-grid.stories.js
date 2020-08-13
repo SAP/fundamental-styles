@@ -1330,9 +1330,9 @@ export const xlMultipleFormGroup = () => `
                   role="combobox"
                   tabindex="0">
                   <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent fd-select__button">
+                  <span class="fd-button fd-button--transparent fd-select__button">
                     <i class="sap-icon--slim-arrow-down"></i>
-                </span>
+                  </span>
               </div>
             </div>
           </div>
