@@ -28,7 +28,7 @@ $block: #{$fd-namespace}-product-switch;
       margin-right: 0;
     }
 
-    > i[class*='sap-icon'] {
+    > [class*='sap-icon'] {
       color: inherit;
 
       &::before {
