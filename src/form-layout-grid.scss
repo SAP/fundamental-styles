@@ -37,8 +37,14 @@ $cols: 11;
 
       .#{$blockCol} {
         padding: 0 0.25rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
         @include placement('left', 'flex-start');
+
+        @include fd-rtl() {
+          @include placement('right', 'flex-end');
+        }
 
         .fd-select__control {
           margin: 0.25rem 0;
@@ -53,6 +59,10 @@ $cols: 11;
           &--#{$n} {
             @include placement('right', 'flex-end');
 
+            @include fd-rtl() {
+              @include placement('right', 'flex-start');
+            }
+
             margin-bottom: 0;
 
             .fd-form-label {
@@ -63,6 +73,10 @@ $cols: 11;
 
         &--12 {
           @include placement('left', 'flex-start');
+
+          @include fd-rtl() {
+            @include placement('right', 'flex-end');
+          }
         }
 
         .#{$blockRow} {
@@ -93,11 +107,19 @@ $cols: 11;
           &-md--#{$n} {
             @include placement('right', 'flex-end');
 
+            @include fd-rtl() {
+              @include placement('right', 'flex-start');
+            }
+
             margin-bottom: 0;
           }
         }
 
         &-md--12 {
+          @include fd-rtl() {
+            @include placement('right', 'flex-end');
+          }
+
           @include placement('left', 'flex-start');
 
           .fd-form-label {
@@ -119,6 +141,10 @@ $cols: 11;
 
         @for $n from 0 through $cols {
           &-lg--#{$n} {
+            @include fd-rtl() {
+              @include placement('right', 'flex-start');
+            }
+
             @include placement('right', 'flex-end');
 
             margin-bottom: 0;
@@ -126,6 +152,10 @@ $cols: 11;
         }
 
         &-lg--12 {
+          @include fd-rtl() {
+            @include placement('right', 'flex-end');
+          }
+
           @include placement('left', 'flex-start');
 
           .fd-form-label {
@@ -147,6 +177,10 @@ $cols: 11;
 
         @for $n from 0 through $cols {
           &-xl--#{$n} {
+            @include fd-rtl() {
+              @include placement('right', 'flex-start');
+            }
+
             @include placement('right', 'flex-end');
 
             margin-bottom: 0;
@@ -154,6 +188,10 @@ $cols: 11;
         }
 
         &-xl--12 {
+          @include fd-rtl() {
+            @include placement('right', 'flex-end');
+          }
+
           @include placement('left', 'flex-start');
 
           .fd-form-label {

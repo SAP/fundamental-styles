@@ -29,7 +29,11 @@ For each size, you can define how many grid columns are used for **labels**, **f
 
 The optional empty grid columns are placed after the input elements. They avoid excessive stretching of the input fields. This ratio is displayed as **x:y:z**, where **x** is the number of grids used by the labels, **y** stands for the fields, and **z** for empty columns.
 
-We highly recommend to change the default of the label-field-ratio according to your app’s needs. For more information, see the recommended layouts in the Layout section.`,
+We highly recommend to change the default of the label-field-ratio according to your app’s needs. For more information, see the recommended layouts in the Layout section.
+
+### Use of Columns
+When working with form groups, it's always best to use the recommended number of columns to make the most of your screen space. That way, users aren't prompted to scroll down because of unused white space, and the form is visually balanced between the left and right side of the screen.
+`,
         tags: ['f3', 'a11y']
     }
 };
@@ -1455,11 +1459,14 @@ export const columnRecommended = () => `
 </div>
 `;
 
+
+
 columnRecommended.parameters = {
     docs: {
         iframeHeight: 400,
         storyDescription: `
-The recommended layouts for a form group are XL2-L2-M2-S1, XL2-L2-M1-S1 and XL2-L1-M1-S1
+The recommended column layouts for a form group are XL2-L2-M2-S1, XL2-L2-M1-S1 and XL2-L1-M1-S1. The numbers being how many columns are in each row. 
+XL represents the screen at size extra large, L represents the screen at size large, M represents the screen at size medium and S represents the screen at size small.
 `
     }
 };
