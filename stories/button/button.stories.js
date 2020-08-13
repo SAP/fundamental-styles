@@ -85,54 +85,70 @@ The option can be activated by clicking on it. This type of button is comparable
 
 export const menuButton = () => `
 <button class="fd-button fd-button--menu">
-    Action Button<i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <span class="fd-button__text">Action Button</span>
+    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
 </button>
 <button class="fd-button fd-button--ghost fd-button--menu">
-    Ghost Button<i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <span class="fd-button__text">Ghost Button</span>
+    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
 </button>
 <button class="fd-button fd-button--positive fd-button--menu">
-    Positive Button<i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <span class="fd-button__text">Positive Button</span>
+    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
 </button>
 <button class="fd-button fd-button--negative fd-button--menu">
-    Negative Button<i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <span class="fd-button__text">Negative Button</span>
+    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
 </button>
 <button class="fd-button fd-button--attention fd-button--menu">
-    Attention Button<i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <span class="fd-button__text">Attention Button</span>
+    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
 </button>
 <br /><br />
 <button class="fd-button fd-button--menu" aria-disabled="true" disabled>
-    Action Button<i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <span class="fd-button__text">Action Button</span>
+    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
 </button>
 <button class="fd-button fd-button--ghost fd-button--menu" aria-disabled="true" disabled>
-    Ghost Button<i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <span class="fd-button__text">Ghost Button</span>
+    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
 </button>
 <button class="fd-button fd-button--positive fd-button--menu" aria-disabled="true" disabled>
-    Positive Button<i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <span class="fd-button__text">Positive Button</span>
+    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
 </button>
 <button class="fd-button fd-button--negative fd-button--menu" aria-disabled="true" disabled>
-    Negative Button<i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <span class="fd-button__text">Negative Button</span>
+    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
 </button>
 <button class="fd-button fd-button--attention fd-button--menu" aria-disabled="true" disabled>
-    Attention Button<i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <span class="fd-button__text">Attention Button</span>
+    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
 </button>
 <br /><br />
 <button class="fd-button fd-button--emphasized fd-button--menu">
-    Add to Cart<i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <span class="fd-button__text">Add to Cart</span>
+    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
 </button>
 <button class="fd-button fd-button--menu">
-    Add to Cart<i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <span class="fd-button__text">Add to Cart</span>
+    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
 </button>
 <button class="fd-button fd-button--transparent fd-button--menu">
-    Add to Cart<i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <span class="fd-button__text">Add to Cart</span>
+    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
 </button>
 <button class="fd-button fd-button--emphasized fd-button--menu fd-button--positive">
-    Approve<i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <span class="fd-button__text">Approve Cart</span>
+    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
 </button>
 <button class="fd-button fd-button--negative fd-button--menu">
-    Reject<i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <span class="fd-button__text">Reject</span>
+    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
 </button>
 <button class="fd-button fd-button--attention fd-button--menu">
-    Attention<i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <span class="fd-button__text">Attention</span>
+    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
 </button>
 <br /><br />
 <button aria-label="Add to cart" class="fd-button fd-button--menu">
@@ -152,10 +168,12 @@ export const menuButton = () => `
 </button>
 <br /><br />
 <button class="fd-button fd-button--menu">
-    Default<i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <span class="fd-button__text">Default</span>
+    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
 </button>
 <button class="fd-button fd-button--compact fd-button--menu">
-    Compact<i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <span class="fd-button__text">Compact</span>
+    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
 </button>
 `;
 

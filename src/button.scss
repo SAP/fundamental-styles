@@ -306,20 +306,20 @@ $block: #{$fd-namespace}-button;
       font-size: inherit;
       line-height: inherit;
     }
-  }
 
-  &.#{$block}__icon--left {
-    margin-right: $fd-button-icon-margin;
-  }
+    &.#{$block}__icon--left {
+      margin-right: $fd-button-icon-margin;
+    }
 
-  &.#{$block}__icon--right {
-    margin-left: $fd-button-icon-margin;
-  }
-
-  @include fd-only-child() {
-    &.#{$block}__icon--left,
     &.#{$block}__icon--right {
-      margin: 0;
+      margin-left: $fd-button-icon-margin;
+    }
+
+    @include fd-only-child() {
+      &.#{$block}__icon--left,
+      &.#{$block}__icon--right {
+        margin: 0;
+      }
     }
   }
 }
@@ -350,6 +350,13 @@ $block: #{$fd-namespace}-button;
 
   overflow: visible;
   min-width: $fd-button-min-width;
+
+  &__text {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    color: inherit;
+  }
 
   &--compact {
     @include compact();
