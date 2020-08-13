@@ -156,7 +156,9 @@ export const layoutOptions = () => `
                 <div class="fd-bar fd-bar--header">
                     <div class="fd-bar__left">
                         <div class="fd-bar__element">
-                            <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                            <button class="fd-button fd-button--transparent">
+                                <i class="sap-icon--navigation-left-arrow"></i>
+                            </button>
                         </div>
                         <div class="fd-bar__element">
                             Header
@@ -223,7 +225,9 @@ export const layoutOptions = () => `
                 <div class="fd-bar fd-bar--header-with-subheader">
                     <div class="fd-bar__left">
                         <div class="fd-bar__element">
-                            <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                            <button class="fd-button fd-button--transparent">
+                                <i class="sap-icon--navigation-left-arrow"></i>
+                            </button>
                         </div>
                         <div class="fd-bar__element">
                             Header
@@ -271,7 +275,9 @@ export const layoutOptions = () => `
                 <div class="fd-bar fd-bar--cozy fd-bar--header-with-subheader">
                     <div class="fd-bar__left">
                         <div class="fd-bar__element">
-                            <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                            <button class="fd-button fd-button--transparent">
+                                <i class="sap-icon--navigation-left-arrow"></i>
+                            </button>
                         </div>
                         <div class="fd-bar__element">
                             Header

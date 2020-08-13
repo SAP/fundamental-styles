@@ -29,11 +29,13 @@ export const defaultAndCompactSizes = () => `
           <input id="defaultDatepicker" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
           <span class="fd-input-group__addon fd-input-group__addon--button">
           <button
-            class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2"
+            class="fd-input-group__button fd-popover__control fd-button fd-button--transparent"
             aria-controls="Itcgq828"
             aria-expanded="true"
             aria-haspopup="true"
-            aria-label="Choose Date" ></button>
+            aria-label="Choose Date">
+                <i class="sap-icon--appointment-2"></i>
+            </button>
           </span>
         </div>
       </div>
@@ -42,7 +44,9 @@ export const defaultAndCompactSizes = () => `
           <div class="fd-calendar__header">
             <div class="fd-calendar__navigation">
               <div class="fd-calendar__action">
-                <button class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
+                <button class="fd-button fd-button--transparent" aria-label="Previous" aria-disabled="true"> 
+                    <i class="sap-icon--slim-arrow-left"></i>
+                </button>
               </div>
               <div class="fd-calendar__action">
                 <button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">September</button>
@@ -51,7 +55,9 @@ export const defaultAndCompactSizes = () => `
                 <button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">2018</button>
               </div>
               <div class="fd-calendar__action">
-                <button class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+                <button class="fd-button fd-button--transparent" aria-label="Next"> 
+                    <i class="sap-icon--slim-arrow-right"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -215,11 +221,13 @@ export const defaultAndCompactSizes = () => `
         <div class="fd-input-group">
           <input id="compactDatepicker" type="text" value="" placeholder="Pick a date" class="fd-input fd-input--compact fd-input-group__input">
           <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-          <button class="fd-button fd-button--transparent fd-button--compact fd-input-group__button fd-popover__control sap-icon--appointment-2"
+          <button class="fd-button fd-button--transparent fd-button--compact fd-input-group__button fd-popover__control"
             aria-controls="Itcgq82"
             aria-expanded="true"
             aria-haspopup="true"
-            aria-label="Choose Date"></button>
+            aria-label="Choose Date">
+                <i class="sap-icon--appointment-2"></i>
+            </button>
           </span>
         </div>
       </div>
@@ -228,7 +236,9 @@ export const defaultAndCompactSizes = () => `
           <div class="fd-calendar__header">
             <div class="fd-calendar__navigation">
               <div class="fd-calendar__action">
-                <button class="fd-button fd-button--transparent sap-icon--slim-arrow-left fd-button--compact" aria-label="Previous" aria-disabled="true"></button>
+                <button class="fd-button fd-button--transparent fd-button--compact" aria-label="Previous" aria-disabled="true"> 
+                    <i class="sap-icon--slim-arrow-left"></i>
+                </button>
               </div>
               <div class="fd-calendar__action">
                 <button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false">September</button>
@@ -237,7 +247,9 @@ export const defaultAndCompactSizes = () => `
                 <button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false">2018</button>
               </div>
               <div class="fd-calendar__action">
-                <button class="fd-button fd-button--transparent sap-icon--slim-arrow-right fd-button--compact" aria-label="Next"></button>
+                <button class="fd-button fd-button--transparent fd-button--compact" aria-label="Next">
+                    <i class="sap-icon--slim-arrow-right"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -410,11 +422,13 @@ export const todaySelectionButton = () =>`
       <div class="fd-input-group">
         <input id="todaySelectionDateInput" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-        <button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2"
+        <button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent"
           aria-controls="Itcgq829"
           aria-expanded="true"
           aria-haspopup="true"
-          aria-label="Choose Date"></button>
+          aria-label="Choose Date"> 
+            <i class="sap-icon--appointment-2"></i>
+          </button>
         </span>
       </div>
     </div>
@@ -423,7 +437,9 @@ export const todaySelectionButton = () =>`
         <div class="fd-calendar__header">
           <div class="fd-calendar__navigation">
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
+              <button class="fd-button fd-button--transparent" aria-label="Previous" aria-disabled="true"> 
+                <i class="sap-icon--slim-arrow-left"></i>
+              </button>
             </div>
             <div class="fd-calendar__action">
               <button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">September</button>
@@ -432,7 +448,9 @@ export const todaySelectionButton = () =>`
               <button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">2018</button>
             </div>
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+              <button class="fd-button fd-button--transparent" aria-label="Next"> 
+                <i class="sap-icon--slim-arrow-right"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -621,11 +639,13 @@ export const todayNavigationButton = () =>`
       <div class="fd-input-group">
         <input id="todayNavigationDateInput" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-        <button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2"
+        <button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent"
           aria-controls="Itcgq830"
           aria-expanded="true"
           aria-haspopup="true"
-          aria-label="Choose Date"></button>
+          aria-label="Choose Date"> 
+            <i class="sap-icon--appointment-2"></i>
+          </button>
         </span>
       </div>
     </div>
@@ -634,7 +654,9 @@ export const todayNavigationButton = () =>`
         <div class="fd-calendar__header">
           <div class="fd-calendar__navigation">
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
+              <button class="fd-button fd-button--transparent" aria-label="Previous" aria-disabled="true"> 
+                <i class="sap-icon--slim-arrow-left"></i>
+              </button>
             </div>
             <div class="fd-calendar__action">
               <button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">September</button>
@@ -643,7 +665,9 @@ export const todayNavigationButton = () =>`
               <button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">2018</button>
             </div>
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+              <button class="fd-button fd-button--transparent" aria-label="Next"> 
+                <i class="sap-icon--slim-arrow-right"></i>
+              </button>
             </div>
             <div class="fd-calendar__action">
               <button class="fd-button fd-button--transparent"
@@ -836,7 +860,9 @@ export const mobileLandscape = () => `
         <div class="fd-calendar__header">
           <div class="fd-calendar__navigation fd-calendar__navigation--main">
             <div class="fd-calendar__action fd-calendar__action--arrow-left">
-              <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
+              <button type="button" class="fd-button fd-button--transparent" aria-label="Previous"> 
+                <i class="sap-icon--slim-arrow-left"></i>
+              </button>
             </div>
             <div class="fd-calendar__action">
               <button type="button" class="fd-button fd-button--transparent">January</button>
@@ -845,7 +871,9 @@ export const mobileLandscape = () => `
               <button type="button" class="fd-button fd-button--transparent">2018</button>
             </div>
             <div class="fd-calendar__action fd-calendar__action--arrow-right">
-              <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+              <button type="button" class="fd-button fd-button--transparent" aria-label="Next"> 
+                <i class="sap-icon--slim-arrow-right"></i>
+              </button>
             </div>
             <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Today</button>
             <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button fd-calendar__close-button--navigation"
@@ -1065,7 +1093,9 @@ export const mobilePortrait = () => `
           </div>
           <div class="fd-calendar__navigation">
             <div class="fd-calendar__action fd-calendar__action--arrow-left">
-              <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous"></button>
+              <button type="button" class="fd-button fd-button--transparent" aria-label="Previous"> 
+                <i class="sap-icon--slim-arrow-left"></i>
+              </button>
             </div>
             <div class="fd-calendar__action">
               <button type="button" class="fd-button fd-button--transparent">January</button>
@@ -1074,7 +1104,9 @@ export const mobilePortrait = () => `
               <button type="button" class="fd-button fd-button--transparent">2018</button>
             </div>
             <div class="fd-calendar__action fd-calendar__action--arrow-right">
-              <button type="button" class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+              <button type="button" class="fd-button fd-button--transparent" aria-label="Next"> 
+                <i class="sap-icon--slim-arrow-right"></i>
+              </button>
             </div>
             <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Today</button>
           </div>
@@ -1276,11 +1308,13 @@ export const defaultAndCompactSizesVisualStoryShotOnly = () => `
         <input id="defaultDatepickerSS" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
         <span class="fd-input-group__addon fd-input-group__addon--button">
         <button
-          class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2"
+          class="fd-input-group__button fd-popover__control fd-button fd-button--transparent"
           aria-controls="Itcgq828"
           aria-expanded="false"
           aria-haspopup="true"
-          aria-label="Choose Date"></button>
+          aria-label="Choose Date"> 
+            <i class="sap-icon--appointment-2"></i>
+          </button>
         </span>
       </div>
     </div>
@@ -1289,7 +1323,9 @@ export const defaultAndCompactSizesVisualStoryShotOnly = () => `
         <div class="fd-calendar__header">
           <div class="fd-calendar__navigation">
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
+              <button class="fd-button fd-button--transparent" aria-label="Previous" aria-disabled="true"> 
+                <i class="sap-icon--slim-arrow-left"></i>
+              </button>
             </div>
             <div class="fd-calendar__action">
               <button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">September</button>
@@ -1298,7 +1334,9 @@ export const defaultAndCompactSizesVisualStoryShotOnly = () => `
               <button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">2018</button>
             </div>
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+              <button class="fd-button fd-button--transparent" aria-label="Next"> 
+                <i class="sap-icon--slim-arrow-right"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -1466,11 +1504,13 @@ export const defaultAndCompactSizesVisualStoryShotOnly = () => `
       <div class="fd-input-group">
         <input id="compactDatepickerSS" type="text" value="" placeholder="Pick a date" class="fd-input fd-input--compact fd-input-group__input">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-        <button class="fd-button fd-button--transparent fd-button--compact fd-input-group__button fd-popover__control sap-icon--appointment-2"
+        <button class="fd-button fd-button--transparent fd-button--compact fd-input-group__button fd-popover__control"
           aria-controls="Itcgq82"
           aria-expanded="false"
           aria-haspopup="true"
-          aria-hidden="true"></button>
+          aria-hidden="true"> 
+            <i class="sap-icon--appointment-2"></i>
+          </button>
         </span>
       </div>
     </div>
@@ -1479,7 +1519,9 @@ export const defaultAndCompactSizesVisualStoryShotOnly = () => `
         <div class="fd-calendar__header">
           <div class="fd-calendar__navigation">
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent sap-icon--slim-arrow-left fd-button--compact" aria-label="Previous" aria-disabled="true"></button>
+              <button class="fd-button fd-button--transparent fd-button--compact" aria-label="Previous" aria-disabled="true"> 
+                <i class="sap-icon--slim-arrow-left"></i>
+              </button>
             </div>
             <div class="fd-calendar__action">
               <button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false">September</button>
@@ -1488,7 +1530,9 @@ export const defaultAndCompactSizesVisualStoryShotOnly = () => `
               <button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false">2018</button>
             </div>
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent sap-icon--slim-arrow-right fd-button--compact" aria-label="Next"></button>
+              <button class="fd-button fd-button--transparent fd-button--compact" aria-label="Next"> 
+                <i class="sap-icon--slim-arrow-right"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -1659,11 +1703,13 @@ export const todaySelectionButtonVisualStoryShotOnly = () =>`
       <div class="fd-input-group">
         <input id="todaySelectionDateInputSS" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-        <button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2"
+        <button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent"
           aria-controls="Itcgq829"
           aria-expanded="false"
           aria-haspopup="true"
-          aria-label="Choose Date"></button>
+          aria-label="Choose Date"> 
+            <i class="sap-icon--appointment-2"></i>
+          </button>
         </span>
       </div>
     </div>
@@ -1672,7 +1718,9 @@ export const todaySelectionButtonVisualStoryShotOnly = () =>`
         <div class="fd-calendar__header">
           <div class="fd-calendar__navigation">
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
+              <button class="fd-button fd-button--transparent" aria-label="Previous" aria-disabled="true"> 
+                <i class="sap-icon--slim-arrow-left"></i>
+              </button>
             </div>
             <div class="fd-calendar__action">
               <button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">September</button>
@@ -1681,7 +1729,9 @@ export const todaySelectionButtonVisualStoryShotOnly = () =>`
               <button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">2018</button>
             </div>
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+              <button class="fd-button fd-button--transparent" aria-label="Next"> 
+                <i class="sap-icon--slim-arrow-right"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -1865,11 +1915,12 @@ export const todayNavigationButtonVisualStoryShotOnly = () =>`
       <div class="fd-input-group">
         <input id="todayNavigationDateInputSS" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-        <button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2"
+        <button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent"
           aria-controls="Itcgq830"
           aria-expanded="false"
           aria-haspopup="true"
           aria-label="Choose Date">
+          <i class="sap-icon--appointment-2"></i>
         </button>
         </span>
       </div>
@@ -1879,7 +1930,9 @@ export const todayNavigationButtonVisualStoryShotOnly = () =>`
         <div class="fd-calendar__header">
           <div class="fd-calendar__navigation">
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent sap-icon--slim-arrow-left" aria-label="Previous" aria-disabled="true"></button>
+              <button class="fd-button fd-button--transparent" aria-label="Previous" aria-disabled="true"> 
+                <i class="sap-icon--slim-arrow-left"></i>
+              </button>
             </div>
             <div class="fd-calendar__action">
               <button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">September</button>
@@ -1888,7 +1941,9 @@ export const todayNavigationButtonVisualStoryShotOnly = () =>`
               <button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">2018</button>
             </div>
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent sap-icon--slim-arrow-right" aria-label="Next"></button>
+              <button class="fd-button fd-button--transparent" aria-label="Next"> 
+                <i class="sap-icon--slim-arrow-right"></i>
+              </button>
             </div>
             <div class="fd-calendar__action">
               <button class="fd-button fd-button--transparent"
