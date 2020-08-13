@@ -1371,3 +1371,219 @@ fourSevenOneCompactLayout.parameters = {
 To display the form using a compact layout, add the \`--compact\` modifier on the \`fd-input\` class.`
     }
 };
+
+export const columnRecommended = () => `
+<h1>XL2-L2-M2-S1</h1>
+<div class="fd-container fd-form-layout-grid-container">
+  <div class="fd-row"> 
+    <div class="fd-col fd-col-md--6  fd-col-lg--6 fd-col-xl--6 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-1-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-1a-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-1a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1>XL2-L2-M1-S1</h1>
+<div class="fd-container fd-form-layout-grid-container">
+  <div class="fd-row"> 
+    <div class="fd-col fd-col-md--12 fd-col-lg--6 fd-col-xl--6 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-2-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-2-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-col fd-col-md--12 fd-col-lg--6 fd-col-xl--6 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-2a-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-2a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1>XL2-L1-M1-S1</h1>
+<div class="fd-container fd-form-layout-grid-container">
+  <div class="fd-row"> 
+    <div class="fd-col fd-col-md--12 fd-col-xl--6 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-3-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-3-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-col fd-col-md--12 fd-col-xl--6 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-3a-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-3a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+columnRecommended.parameters = {
+    docs: {
+        iframeHeight: 400,
+        storyDescription: `
+The recommended layouts for a form group are XL2-L2-M2-S1, XL2-L2-M1-S1 and XL2-L1-M1-S1
+`
+    }
+};
+
+export const columnPossible = () => `
+<h1>XL3-L1-M1-S1</h1>
+<div class="fd-container fd-form-layout-grid-container">
+  <div class="fd-row"> 
+    <div class="fd-col fd-col-xl--4 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-1-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-col fd-col-xl--4 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-1a-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-1a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-col fd-col-xl--4 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-1b-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-1b-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1>XL1-L1-M1-S1</h1>
+<div class="fd-container fd-form-layout-grid-container">
+  <div class="fd-row"> 
+    <div class="fd-col fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-2-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-2-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-col fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-2a-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-2a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+columnPossible.parameters = {
+    docs: {
+        iframeHeight: 400,
+        storyDescription: `
+The other possible layouts for a form group are XL3-L1-M1-S1 and XL1-L1-M1-S1`
+    }
+};
+
+export const columnNotRecommended = () => `
+<h1>XL3-L2-M2-S1</h1>
+<div class="fd-container fd-form-layout-grid-container">
+  <div class="fd-row"> 
+    <div class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-1-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-1a-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-1a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-1b-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-1b-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+columnNotRecommended.parameters = {
+    docs: {
+        iframeHeight: 400,
+        storyDescription: `
+The layout that is not recommended for a form group are XL3-L2-M2-S1
+`
+    }
+};
