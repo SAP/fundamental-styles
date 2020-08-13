@@ -25,11 +25,13 @@ export const standard = () => `
                   aria-label="Feed message" 
                   aria-required
                   rows="1"></textarea>
-        <button class="fd-button sap-icon--feeder-arrow fd-feed-input__submit-button" 
+        <button class="fd-button fd-feed-input__submit-button" 
                 aria-label="Send"  
                 aria-disabled="true" 
                 disabled
-                title="Send"></button>
+                title="Send">
+            <i class="sap-icon--feeder-arrow"></i>
+        </button>
     </div>
 `;
 
@@ -55,11 +57,13 @@ export const notEmpty = () => `
                   aria-label="Feed message" 
                   aria-required 
                   rows="1">"Textarea" with a text makes submit button active</textarea>
-        <button class="fd-button sap-icon--feeder-arrow 
+        <button class="fd-button 
                 fd-feed-input__submit-button" 
                 aria-label="Send"
                 aria-disabled="false" 
-                title="Send"></button>
+                title="Send">
+            <i class="sap-icon--feeder-arrow"></i>
+        </button>
     </div>
 `;
 
@@ -87,11 +91,13 @@ export const disabled = () => `
                   rows="1"
                   aria-disabled="true" 
                   disabled>Disabled</textarea>
-        <button class="fd-button sap-icon--feeder-arrow fd-feed-input__submit-button" 
+        <button class="fd-button fd-feed-input__submit-button" 
                 aria-label="Send"  
                 aria-disabled="true" 
                 disabled
-                title="Send"></button>
+                title="Send">
+            <i class="sap-icon--feeder-arrow"></i>
+        </button>
     </div>
 `;
 
@@ -112,9 +118,11 @@ export const withoutUserImage = () => `
                   aria-label="Feed message" 
                   aria-required
                   rows="1">Without user image</textarea>
-        <button class="fd-button sap-icon--feeder-arrow fd-feed-input__submit-button" 
+        <button class="fd-button fd-feed-input__submit-button" 
                 aria-label="Send"  
-                title="Send"></button>
+                title="Send">
+            <i class="sap-icon--feeder-arrow"></i>
+        </button>
     </div>
 `;
 
@@ -139,9 +147,11 @@ export const placeholderImage = () => `
                   aria-label="Feed message" 
                   aria-required
                   rows="1">With generic user image</textarea>
-        <button class="fd-button sap-icon--feeder-arrow fd-feed-input__submit-button" 
+        <button class="fd-button fd-feed-input__submit-button" 
                 aria-label="Send"  
-                title="Send"></button>
+                title="Send">
+            <i class="sap-icon--feeder-arrow"></i>
+        </button>
     </div>
 `;
 
@@ -170,7 +180,9 @@ export const inputGrowth = () => `
         <button class="fd-button sap-icon--feeder-arrow fd-feed-input__submit-button" 
                 aria-label="Send"  
                 aria-disabled="false"
-                title="Send"></button>
+                title="Send">
+            <i class="sap-icon--feeder-arrow"></i>
+        </button>
     </div>
 `;
 
@@ -199,7 +211,9 @@ export const overMaxHeight = () => `
         <button class="fd-button sap-icon--feeder-arrow fd-feed-input__submit-button" 
                 aria-label="Send" 
                 aria-disabled="false" 
-                title="Send"></button>
+                title="Send">
+            <i class="sap-icon--feeder-arrow"></i>
+        </button>
     </div>
 `;
 
@@ -226,10 +240,12 @@ export const rtl = () => `
                       aria-label="Feed" 
                       aria-required 
                       rows="1">Post message here</textarea>
-            <button class="fd-button sap-icon--feeder-arrow fd-feed-input__submit-button" 
+            <button class="fd-button fd-feed-input__submit-button" 
                     aria-label="Send" 
                     aria-disabled="false" 
-                    title="Send"></button>
+                    title="Send">
+                <i class="sap-icon--feeder-arrow"></i>
+            </button>
         </div>
     </div>
 `;
