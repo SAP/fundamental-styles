@@ -8,7 +8,7 @@ import '../../dist/segmented-button.css';
 export default {
     title: 'Components/Button',
     parameters: {
-        description: `The button component is used to trigger an action. All buttons are characterized by the <code class="docs-code">fd-button</code> element and an additional modifier class to specify each button type.
+        description: `The button component is used to trigger an action. All buttons are characterized by the <code class="docs-code">fd-button</code> class and an additional modifier class to specify each button type.
 
 ##Usage
 
