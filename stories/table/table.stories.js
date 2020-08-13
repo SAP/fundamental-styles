@@ -621,14 +621,20 @@ export const withAdvancedToolbar = () => `
         <div class="fd-dialog__subheader fd-bar fd-bar--subheader">
             <div class="fd-bar__middle">
                 <div class="fd-bar__element">
-                    <button aria-label="navigation" class="fd-button fd-button--icon fd-button--transparent fd-button--compact sap-icon--arrow-top"></button>
-                    <button aria-label="navigation" class="fd-button fd-button--icon fd-button--transparent fd-button--compact sap-icon--arrow-bottom"></button>
+                    <button aria-label="navigation" class="fd-button fd-button--icon fd-button--transparent fd-button--compact">
+                        <i class="sap-icon--arrow-top"></i>
+                    </button>
+                    <button aria-label="navigation" class="fd-button fd-button--icon fd-button--transparent fd-button--compact">
+                        <i class="sap-icon--arrow-bottom"></i>
+                    </button>
                 </div>
                 <div class="fd-bar__element fd-bar__element--full-width">
                     <div class="fd-input-group">
                         <input class="fd-input fd-input-group__input fd-input--compact" type="text" placeholder="Search...">
                         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                            <button aria-label="navigation" class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact sap-icon--search"></button>
+                            <button aria-label="navigation" class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact">
+                                <i class="sap-icon--search"></i>
+                            </button>
                         </span>
                     </div>
                 </div>
