@@ -90,7 +90,9 @@ export const sSize = () => `
                         role="combobox"
                         tabindex="0">
                         <span class="fd-select__text-content">US</span>
-                        <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                        <span class="fd-button fd-button--transparent fd-select__button">
+                            <i class="sap-icon--slim-arrow-down"></i>
+                        </span>
                     </div>
                   </div>
                 </div>
@@ -178,7 +180,9 @@ export const mSizeDefault = () => `
                 role="combobox"
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                </span>
             </div>
           </div>
         </div>
@@ -268,7 +272,9 @@ export const mSizeSplitScreen = () => `
                 role="combobox"
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                </span>
             </div>
           </div>
         </div>
@@ -352,7 +358,9 @@ export const mSizeFullScreenApp = () => `
                 role="combobox"
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                </span>
             </div>
           </div>
         </div>
@@ -436,7 +444,9 @@ export const mSizeFullScreenAppLongLabel = () => `
                 role="combobox"
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                </span>
             </div>
           </div>
         </div>
@@ -518,7 +528,9 @@ export const lSizeDefault = () => `
                 role="combobox"
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                </span>
             </div>
           </div>
         </div>
@@ -603,7 +615,9 @@ export const lSizeSingleFormGroup = () => `
                 role="combobox"
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                </span>
             </div>
           </div>
         </div>
@@ -687,7 +701,9 @@ export const lSizeMultipleFormGroup = () => `
                     role="combobox"
                     tabindex="0">
                     <span class="fd-select__text-content">US</span>
-                    <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                    <span class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </span>
                 </div>
               </div>
             </div>
@@ -753,7 +769,9 @@ export const lSizeMultipleFormGroup = () => `
                     role="combobox"
                     tabindex="0">
                     <span class="fd-select__text-content">US</span>
-                    <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                    <span class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </span>
                 </div>
               </div>
             </div>
@@ -837,7 +855,9 @@ export const xlDefault = () => `
                 role="combobox"
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                </span>
             </div>
           </div>
         </div>
@@ -923,7 +943,9 @@ export const xlSingleFormGroup = () => `
                 role="combobox"
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                </span>
             </div>
           </div>
         </div>
@@ -1012,7 +1034,9 @@ export const xlDoubleFormGroup = () => `
                     role="combobox"
                     tabindex="0">
                     <span class="fd-select__text-content">US</span>
-                    <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                    <span class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </span>
                 </div>
               </div>
             </div>
@@ -1078,7 +1102,9 @@ export const xlDoubleFormGroup = () => `
                     role="combobox"
                     tabindex="0">
                     <span class="fd-select__text-content">US</span>
-                    <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                    <span class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </span>
                 </div>
               </div>
             </div>
@@ -1166,7 +1192,9 @@ export const xlMultipleFormGroup = () => `
                     role="combobox"
                     tabindex="0">
                     <span class="fd-select__text-content">US</span>
-                    <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                    <span class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </span>
                 </div>
               </div>
             </div>
@@ -1232,7 +1260,9 @@ export const xlMultipleFormGroup = () => `
                     role="combobox"
                     tabindex="0">
                     <span class="fd-select__text-content">US</span>
-                    <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                    <span class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </span>
                 </div>
               </div>
             </div>
@@ -1300,7 +1330,9 @@ export const xlMultipleFormGroup = () => `
                   role="combobox"
                   tabindex="0">
                   <span class="fd-select__text-content">US</span>
-                  <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                </span>
               </div>
             </div>
           </div>

@@ -136,7 +136,9 @@ export const inputWithActions = () => `
     <div class="fd-input-group">
         <input class="fd-input fd-input-group__input" type="text" id="aqwsde121" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent sap-icon--navigation-down-arrow" aria-label="Navigation"></button>
+            <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent" aria-label="Navigation"> 
+                <i class="sap-icon--navigation-down-arrow"></i>
+            </button>
         </span>
     </div>
 </div>
@@ -146,7 +148,9 @@ export const inputWithActions = () => `
     <div class="fd-input-group">
         <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="aqwsde122" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-            <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact sap-icon--navigation-down-arrow" aria-label="Navigation"></button>
+            <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact" aria-label="Navigation"> 
+                <i class="sap-icon--navigation-down-arrow"></i>
+            </button>
         </span>
     </div>
 </div>
