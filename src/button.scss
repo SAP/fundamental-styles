@@ -100,10 +100,8 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin menu-icon() {
-  > i {
-    &.sap-icon--icon-slim-arrow-down {
-      font-size: var(--sapFontSmallSize);
-    }
+  > .sap-icon--icon-slim-arrow-down {
+    font-size: var(--sapFontSmallSize);
   }
 }
 
@@ -274,53 +272,50 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin iconStylesLtr() {
-  > i {
-    &[class*='sap-icon'] {
-      color: inherit;
-      width: $fd-button-icon-font-size;
-      height: $fd-button-icon-font-size;
-      font-size: $fd-button-icon-font-size;
-      line-height: $fd-button-icon-font-size;
-      vertical-align: text-bottom;
+  > [class*='sap-icon'] {
+    color: inherit;
+    font-style: normal;
+    width: $fd-button-icon-font-size;
+    height: $fd-button-icon-font-size;
+    font-size: $fd-button-icon-font-size;
+    line-height: $fd-button-icon-font-size;
+    vertical-align: text-bottom;
 
-      &::before,
-      &::after {
-        width: inherit;
-        height: inherit;
-        font-size: inherit;
-        line-height: inherit;
-      }
+    &::before,
+    &::after {
+      width: inherit;
+      height: inherit;
+      font-size: inherit;
+      line-height: inherit;
     }
+  }
 
-    &.#{$block}__icon--left {
-      margin-right: $fd-button-icon-margin;
-    }
+  &.#{$block}__icon--left {
+    margin-right: $fd-button-icon-margin;
+  }
 
+  &.#{$block}__icon--right {
+    margin-left: $fd-button-icon-margin;
+  }
+
+  @include fd-only-child() {
+    &.#{$block}__icon--left,
     &.#{$block}__icon--right {
-      margin-left: $fd-button-icon-margin;
-    }
-
-    @include fd-only-child() {
-      &.#{$block}__icon--left,
-      &.#{$block}__icon--right {
-        margin: 0;
-      }
+      margin: 0;
     }
   }
 }
 
 @mixin iconStylesRtl {
   @include fd-rtl() {
-    > i {
-      &.#{$block}__icon--left {
-        margin-right: 0;
-        margin-left: $fd-button-icon-margin;
-      }
+    > .#{$block}__icon--left {
+      margin-right: 0;
+      margin-left: $fd-button-icon-margin;
+    }
 
-      &.#{$block}__icon--right {
-        margin-left: 0;
-        margin-right: $fd-button-icon-margin;
-      }
+    > .#{$block}__icon--right {
+      margin-left: 0;
+      margin-right: $fd-button-icon-margin;
     }
   }
 }

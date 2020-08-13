@@ -4,11 +4,6 @@ $block: #{$fd-namespace}-button;
   color: $color;
   border-color: $borderColor;
   background-color: $backgroundColor;
-
-  > i::before {
-    font-style: normal;
-    color: $color;
-  }
 }
 
 @mixin buttonFocus() {

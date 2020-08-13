@@ -283,16 +283,6 @@ $block: #{$fd-namespace}-shellbar;
     padding: 0;
     outline-color: var(--sapContent_ContrastFocusColor);
 
-    > i {
-      &[class*='sap-icon'] {
-        color: inherit;
-
-        &::before {
-          color: inherit;
-        }
-      }
-    }
-
     &:hover {
       background: $fd-shell-hover-background;
     }
