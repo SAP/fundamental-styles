@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.8...v0.12.0-rc.9) (2020-08-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* Removed classes: 
+`fd-tree--header`, `fd-tree__row`, `fd-tree__row--header`, `fd-tree__col`, `fd-tree__col--control`, `fd-tree__control`, `fd-tree__col--actions`, `fd-tree__group`, `fd-tree__group--sublevel-*`
+
+### Features
+
+* Tree component Fiori 3 refactoring ([#1308](https://github.com/SAP/fundamental-styles/issues/1308)) ([4d3fa51](https://github.com/SAP/fundamental-styles/commit/4d3fa5194289372a59f1d8207af80eabb4a79b68))
+
 ## [0.12.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.7...v0.12.0-rc.8) (2020-08-13)
 
 ## [0.12.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.6...v0.12.0-rc.7) (2020-08-12)
