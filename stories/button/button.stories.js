@@ -25,7 +25,6 @@ export default {
 **Do not use buttons if:**
 
 - You want to link to a different page or object. Instead, use the **Link** component.
-- You want to let users upload content. Instead, use the **Upload Collection** component.
 `
     }
 };
@@ -201,12 +200,12 @@ splitMenuButton.parameters = {
     docs: {
         iframeHeight: 150,
         storyDescription: `The split menu button has two separate areas: the text label and the icon. The separator between them indicates that each area results in a different action, giving the user two choices: select the text label to trigger the action or select the arrow to open the menu. This button has a fixed size and the text truncates if the menu items exceed the maximum width available. 
-        <br><br> Note: If the default action is displayed as an icon only, all the menu items must contain icons.
+<br><br> Note: If the default action is displayed as an icon only, all the menu items must contain icons.
 
 **The split menu button can behave in two different ways:**
 
-1.	The button triggers the default action set by the developer. If no default action is defined, the first item in the menu list will become the default.
-2.	The button triggers the last action chosen by the user. Initially, it triggers the default action. However, when the user selects a different action, the default switches to the last action selected by the user.
+1. The button triggers the default action set by the developer. If no default action is defined, the first item in the menu list will become the default.
+2. The button triggers the last action chosen by the user. Initially, it triggers the default action. However, when the user selects a different action, the default switches to the last action selected by the user.
 
 The split menu button can be displayed by using <code class="docs-code>fd-button-split fd-has-margin-right-small</code> class with <code>role=”group”</code> and the <code>aria-label=”button-split”</code> attribute.
 `
@@ -358,7 +357,7 @@ focusableDisabled.storyName = 'Focusable disabled';
 focusableDisabled.parameters = {
     docs: {
         storyDescription: `
-The disabled button can be focusable by adding the <code>aria-disabled</code> attribute. To enable the focus ring in a focusable disabled button, ensure that <code>is disabled</code> is present while <code>disabled</code> is not. 
+The disabled button can be focusable by adding the <code>aria-disabled</code> attribute. To enable the focus ring in a focusable disabled button, ensure that <code>is-disabled</code> is present while <code>disabled</code> is not. 
 
 ####Accessibility 
 When adding this attribute, make sure to not use the <code>disabled</code> property so that the button is both focusable and readable by screen readers.
