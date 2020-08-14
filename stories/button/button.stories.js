@@ -208,7 +208,7 @@ splitMenuButton.parameters = {
 1.	The button triggers the default action set by the developer. If no default action is defined, the first item in the menu list will become the default.
 2.	The button triggers the last action chosen by the user. Initially, it triggers the default action. However, when the user selects a different action, the default switches to the last action selected by the user.
 
-The split menu button can be displayed by using <code class="docs-code>fd-button-split fd-has-margin-right-small</code> class, together with 
+The split menu button can be displayed by using <code class="docs-code>fd-button-split fd-has-margin-right-small</code> class with <code>role=”group”</code> and the <code>aria-label=”button-split”</code> attribute.
 `
     }
 };
@@ -341,7 +341,7 @@ buttonStates.parameters = {
         storyDescription: `
 These button types indicate different states: normal, selected, disabled and focusable disabled.
 
-- **Normal**: The button’s default state. It can be selected to perform the corresponding action.
+- **Normal**: The button’s default state. It can be selected to perform a corresponding action.
 - **Selected**: The button is selected as opposed to other buttons. This state can be displayed by adding the <code>is-selected</code> class or the <code>aria-selected=”true”</code> attribute for accessibility.
 - **Disabled**: It cannot be selected. This state can be displayed by using the <code>is-disabled</code> class and the <code>aria-disabled=”true”</code> attribute for accessibility.
 - **Focusable disabled**: It cannot be selected, but it is tabbable and focusable. When the button is selected, a focus ring appears. This state can be displayed by using the <code>is-disabled</code> class and the <code>aria-disabled=”true”</code> attribute for accessibility without using the <code>disabled</code> property. By adding the hidden <code>_instructions</code> element, the user will be notified for further instructions on how to enable the button. They will also be notified when the button is enabled when using the <code>aria-live</code> property.
@@ -409,6 +409,6 @@ export const RTL = () => `
 RTL.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'These buttons display from right-to-left on the screen.'
+        storyDescription: 'These buttons are displayed from right-to-left on the screen.'
     }
 };
