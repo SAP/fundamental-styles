@@ -4,7 +4,7 @@ export default {
     title: 'Components/Calendar',
     parameters: {
         description: `
-The calendar component allows users to select a single date, multiple days, whole week(s), or a date range, showing all time-related data within a given timeframe. Users can navigate directly from one month or year to another or display multiple months. 
+The calendar component allows users to navigate to a single date, multiple days, whole week(s), or a date range, showing all time-related data within a given timeframe.
 
 It is usually paired with components: **Input Group** and **Popover** to comprise **Date Picker**, which is considered a design pattern as the date picker does not contain components of its own. The calendar component is rarely, if ever, used as a standalone component.
         
@@ -30,21 +30,23 @@ See **Date Picker** in the patterns section.
 ## Structure
 
 The following classes describe the block structure of the calendar component.\n
-- <code class="docs-code">fd-calendar</code> _calendar's main container that defines the width of calendar_
-  - <code class="docs-code">fd-calendar\\_\\_header</code> _header section of calendar_
-    - <code class="docs-code">fd-calendar\\_\\_navigation</code> _container used for grouping the row of navigation controls_
-      - <code class="docs-code">fd-calendar\\_\\_action</code> _calendar's action buttons_
-      - <code class="docs-code">fd-calendar\\_\\_close-button--navigation</code> _close button inside navigation area on mobile devices without dialog header_
-    - <code class="docs-code">fd-calendar\\_\\_close-button</code> _button inside dialog header on mobile devices_
-  - <code class="docs-code">fd-calendar\\_\\_content</code> _calendar's body container_
-    - <code class="docs-code">fd-calendar\\_\\_table</code> _groups table elements representing calendar items_
-      - <code class="docs-code">fd-calendar\\_\\_group</code> _groups calendar rows with the same destination_
-        - <code class="docs-code">fd-calendar\\_\\_row</code> _groups calendar grid items in one row_
-          - <code class="docs-code">fd-calendar\\_\\_item</code> _represents calendar grid item_
-            - <code class="docs-code">fd-calendar\\_\\_text</code> _represents content of calendar grid item_
-          - <code class="docs-code">fd-calendar\\_\\_special-day</code> _represents calendar grid item with a special marker_
+- <code class="docs-code">fd-calendar</code> calendar's main container that defines the width of calendar
+  - <code class="docs-code">fd-calendar\\_\\_header</code> header section of calendar
+    - <code class="docs-code">fd-calendar\\_\\_navigation</code> container used for grouping the row of navigation controls
+      - <code class="docs-code">fd-calendar\\_\\_action</code> calendar's action buttons
+      - <code class="docs-code">fd-calendar\\_\\_close-button--navigation</code> close button inside navigation panel on mobile devices without dialog header
+    - <code class="docs-code">fd-calendar\\_\\_close-button</code> button inside dialog header on mobile devices
+  - <code class="docs-code">fd-calendar\\_\\_content</code> calendar's body container
+    - <code class="docs-code">fd-calendar\\_\\_table</code> groups table elements representing calendar items
+      - <code class="docs-code">fd-calendar\\_\\_group</code> groups calendar rows with the same destination
+        - <code class="docs-code">fd-calendar\\_\\_row</code> groups calendar grid items in one row
+          - <code class="docs-code">fd-calendar\\_\\_item</code> represents calendar grid item
+            - <code class="docs-code">fd-calendar\\_\\_text</code> represents content of calendar grid item
+          - <code class="docs-code">fd-calendar\\_\\_special-day</code> represents calendar grid item with a special marker
 
 ## Modifiers
+
+### General
 
 These modifier classes are used to display the general look of the calendar component.\n
 | Modifier class | Use to... |
@@ -52,8 +54,8 @@ These modifier classes are used to display the general look of the calendar comp
 | <code class="docs-code">fd-calendar--compact</code> | Display calendar in compact mode
 | <code class="docs-code">fd-calendar--mobile-landscape</code> | Display calendar in landscape mode for mobile
 | <code class="docs-code">fd-calendar--mobile-portrait</code> | Display calendar in portrait mode for mobile
-| <code class="docs-code">fd-calendar\\_\\_content--months</code> | Display calendar content when viewing months
-| <code class="docs-code">fd-calendar\\_\\_content--years</code> | Display calendar content when viewing years
+| <code class="docs-code">fd-calendar\\_\\_content--months</code> | Display calendar months
+| <code class="docs-code">fd-calendar\\_\\_content--years</code> | Display calendar years
 | <code class="docs-code">fd-calendar\\_\\_content--screen-reader-only</code> | Display calendar content when only readable to screen readers
 
 ### Navigation
@@ -61,7 +63,7 @@ These modifier classes are used to display the general look of the calendar comp
 These modifier classes are used to display various calendar navigation actions.\n
 | Modifier class | Use to... |
 | --------------:| :------------- |
-| <code class="docs-code">fd-calendar\\_\\_navigation--main</code> | Limit main navigation width on mobile devices in landscape mode and create space for an optional close button
+| <code class="docs-code">fd-calendar\\_\\_navigation--main</code> | Limit main navigation width on mobile devices in landscape mode and create space for an optional _Close_ button
 | <code class="docs-code">fd-calendar\\_\\_action--arrow-left</code> | Display _Previous_ navigation button
 | <code class="docs-code">fd-calendar\\_\\_action--arrow-right</code> | Display _Next_ navigation button
 | <code class="docs-code">fd-calendar\\_\\_close-button--navigation</code> | Place close button correctly inside calendar's navigation panel
@@ -307,7 +309,8 @@ export const days = () => `
 
 days.parameters = {
     docs: {
-        iframeHeight: 400
+        iframeHeight: 400,
+        storyDescription: 'The calendar component can display days of the month by adding the <code>–days</code> modifier class to the element.'
     }
 };
 
@@ -390,7 +393,8 @@ export const months = () => `
 
 months.parameters = {
     docs: {
-        iframeHeight: 400
+        iframeHeight: 400,
+        storyDescription: 'The calendar component can display months in a year by adding the <code>–months</code> modifier class to the element.'
     }
 };
 
@@ -624,11 +628,12 @@ export const years = () => `
 
 years.parameters = {
     docs: {
-        iframeHeight: 700
+        iframeHeight: 700,
+        storyDescription: 'The calendar component can display a range of years in various ways: short-term, long-term, year ranges etc. Add the <code>–years</code> modifier class to the element, and adjust the number of columns, rows, and content to fit your use case.'
     }
 };
 
-export const compactMode = () => `
+export const compact = () => `
 <div style="display: flex; justify-content: space-around;">
     <div class="fd-calendar fd-calendar--compact">
         <header class="fd-calendar__header">
@@ -779,9 +784,10 @@ export const compactMode = () => `
 </div>
 `;
 
-compactMode.parameters = {
+compact.parameters = {
     docs: {
-        iframeHeight: 300
+        iframeHeight: 300,
+        storyDescription: 'The calendar component can be displayed in compact mode by adding the <code>--compact</code> modifier class to the element.'
     }
 };
 
@@ -948,17 +954,19 @@ export const LandscapeMobile = () => `
     </div>
 </div>
 `;
-
+LandscapeMobile.storyName = 'Landscape (mobile)';
 LandscapeMobile.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-On mobile devices calendar is composed into Dialog window taking full width and height of the device.
-**For landscape mode no [Dialog](?path=/docs/components-dialog) header element should be used.**
-Dialog footer element is optional. Remember that if <code class="docs-code">.fd-calendar\\_\\_close-button</code> is placed inside navigation section of the calendar then:
+While using a mobile in landscape mode, the calendar component is displayed from a **Dialog** window, taking up the full width and height of the screen.
 
-- <code class="docs-code">.fd-calendar\\_\\_navigation</code>  requires <code class="docs-code">.fd-calendar\\_\\_navigation--main</code> modifier
-- <code class="docs-code">.fd-calendar\\_\\_close-button</code>  requires <code class="docs-code">.fd-calendar\\_\\_close-button--navigation</code> modifier
+Note: For landscape mode, no dialog header element should be used. However, a dialog footer is optional.
+        
+**If the** <code>fd-calendar__close-button</code> **class is placed within the calendar’s navigation area, then:**
+        
+- <code class="docs-code">fd-calendar\\_\\_navigation</code> requires the <code class="docs-code">fd-calendar\\_\\_navigation--main</code> modifier class.
+- <code class="docs-code">fd-calendar\\_\\_close-button</code> requires the <code class="docs-code">fd-calendar\\_\\_close-button--navigation</code> modifier class.
 `
     }
 };
@@ -1147,12 +1155,15 @@ export const PortraitMobile = () => `
 </div>
 `;
 
+PortraitMobile.storyName = 'Portrait (mobile)';
 PortraitMobile.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-On mobile devices calendar is composed into Dialog window taking full width and height of the device.
-For portrait mode [Dialog](?path=/docs/dialog) header should always be used, but footer remains optional.
+While using a mobile in portrait mode, the calendar component is displayed from a **Dialog** window, taking up the full width and height of the screen. It can be displayed in this way by adding the <code>--mobile-portrait</code> modifier class to the element.
+
+Note: For portrait mode, dialog header should always be used and the footer remains optional.
+        
 `
     }
 };
