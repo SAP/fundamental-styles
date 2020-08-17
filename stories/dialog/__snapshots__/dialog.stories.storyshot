@@ -375,17 +375,17 @@ exports[`Storyshots Components/Dialog Select Dialog Example 1`] = `
                 
           </li>
           
-                
-          <li
-            class="fd-list__footer"
-          >
-            
-                    2 items selected
-                
-          </li>
-          
             
         </ul>
+          
+                
+        <span
+          class="fd-list__footer"
+        >
+          
+                  2 items selected
+              
+        </span>
         
         
       </div>

@@ -815,10 +815,10 @@ export const filtering = () => `
                     </span>
                 </label>
             </li>
-            <li class="fd-list__footer">
-              <a class="fd-link" href="#">Show All</a>
-            </li>
         </ul>
+        <span class="fd-list__footer">
+          <a class="fd-link" href="#">Show All</a>
+        </span>
     </div>
 </div>
 `;
