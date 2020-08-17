@@ -10,6 +10,7 @@ $block: #{$fd-namespace}-object-marker;
   // ICON VARIABLES
   $fd-object-marker-color: var(--sapContent_MarkerIconColor) !default;
   $fd-object-marker-text-color: var(--sapContent_LabelColor) !default;
+  $fd-object-marker-color-hover: var(--sapContent_IconColor) !default;
   $fd-object-marker-padding-left: 0.5rem !default;
   $fd-object-marker-padding-right: 0.25rem !default;
 
@@ -46,8 +47,13 @@ $block: #{$fd-namespace}-object-marker;
       display: inline-block;
     }
 
+    &:focus {
+      text-decoration: underline;
+    }
+
     &:hover {
       text-decoration: underline;
+      color: $fd-object-marker-color-hover;
 
       &::before {
         text-decoration: none;
