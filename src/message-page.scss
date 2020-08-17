@@ -1,0 +1,88 @@
+@import "./new-settings";
+@import "./mixins";
+
+$fd-message-page: 0 !default;
+
+$block: #{$fd-namespace}-message-page;
+
+.#{$block} {
+  @include fd-reset();
+  @include fd-flex-center();
+
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background: var(--sapBackgroundColor);
+
+  &__container {
+    @include fd-reset();
+
+    @include fd-flex(column) {
+      align-items: center;
+    }
+
+    margin: auto;
+    max-width: 30rem;
+    transform: translateY(-1rem);
+  }
+
+  &__icon-container {
+    @include fd-reset();
+    @include fd-flex-center();
+
+    width: 100%;
+    height: 8rem;
+  }
+
+  &__icon {
+    font-size: 6rem;
+    color: var(--sapContent_NonInteractiveIconColor);
+    opacity: 50%;
+  }
+
+  &__content {
+    @include fd-reset();
+
+    @include fd-flex(column) {
+      align-items: center;
+    }
+
+    padding-bottom: 2rem;
+  }
+
+  &__title {
+    @include fd-reset();
+
+    margin: 1rem 0;
+    text-align: center;
+    font-size: var(--sapFontHeader2Size);
+    color: var(--sapGroup_TitleTextColor);
+  }
+
+  &__subtitle {
+    @include fd-reset();
+
+    margin-bottom: 2rem;
+    font-size: var(--sapFontHeader5Size);
+    color: var(--sapContent_LabelColor);
+  }
+
+  &__actions {
+    @include fd-reset();
+
+    @include fd-flex-center() {
+      flex-wrap: wrap;
+    }
+
+    margin-top: 2rem;
+    min-height: 2rem;
+  }
+
+  &__more {
+    @include fd-reset();
+    @include fd-flex-center();
+
+    min-height: 2rem;
+    margin-top: 0.5rem;
+  }
+}
