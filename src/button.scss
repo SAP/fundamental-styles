@@ -329,22 +329,27 @@ $block: #{$fd-namespace}-button;
     @include standardPressedFocus();
 
     &.#{$block}--ghost {
+      @include ghostPressed();
       @include ghostPressedFocus();
     }
 
     &.#{$block}--positive {
+      @include positivePressed();
       @include positivePressedFocus();
     }
 
     &.#{$block}--negative {
+      @include negativePressed();
       @include negativePressedFocus();
     }
 
     &.#{$block}--attention {
+      @include attentionPressed();
       @include attentionPressedFocus();
     }
 
     &.#{$block}--emphasized {
+      @include emphasizedPressed();
       @include emphasizedPressedFocus();
     }
   }
