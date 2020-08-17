@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.11...v0.12.0-rc.12) (2020-08-17)
+
+
+### Features
+
+* introduce Object Marker component ([#1194](https://github.com/SAP/fundamental-styles/issues/1194)) ([f4d9ce9](https://github.com/SAP/fundamental-styles/commit/f4d9ce980d4919b05828a81a34fb5897035d5b35))
+
 ## [0.12.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.10...v0.12.0-rc.11) (2020-08-14)
 
 ## [0.12.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.9...v0.12.0-rc.10) (2020-08-14)
