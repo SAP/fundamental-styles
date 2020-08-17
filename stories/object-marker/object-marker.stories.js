@@ -36,7 +36,7 @@ export const markerText = () => `
  */
 
 export const iconAndText = () => `
-<span class="fd-object-marker"><i class="sap-icon--request fd-object-marker__icon"></i>Request</i></span>
+<span class="fd-object-marker"><i class="sap-icon--request fd-object-marker__icon"></i>Request</span>
 <span class="fd-object-marker"><i class="sap-icon--favorite fd-object-marker__icon"></i>Favourite</span>
 <span class="fd-object-marker"><i class="sap-icon--flag fd-object-marker__icon"></i>Flag</span>
 <span class="fd-object-marker"><i class="sap-icon--user-edit fd-object-marker__icon"></i>Draft</span>
@@ -65,13 +65,13 @@ iconAndText.parameters = {
  */
 
 export const clickableObjectMarker = () => `
-<a class="fd-object-marker fd-object-marker--link"><i class="sap-icon--private fd-object-marker__icon"></i>Locked</i></a>
-<a class="fd-object-marker fd-object-marker--link"><i class="sap-icon--user-edit fd-object-marker__icon"></i>Unsaved Changes</i></a>
+<a class="fd-object-marker fd-object-marker--link"><i class="sap-icon--private fd-object-marker__icon"></i>Locked</a>
+<a class="fd-object-marker fd-object-marker--link"><i class="sap-icon--user-edit fd-object-marker__icon"></i>Unsaved Changes</a>
 
 <div dir="rtl">
 <h4>RTL Support</h4>
-<a class="fd-object-marker fd-object-marker--link"><i class="sap-icon--private fd-object-marker__icon"></i>Locked</i></a>
-<a class="fd-object-marker fd-object-marker--link"><i class="sap-icon--user-edit fd-object-marker__icon"></i>Unsaved Changes</i></a>
+<a class="fd-object-marker fd-object-marker--link"><i class="sap-icon--private fd-object-marker__icon"></i>Locked</a>
+<a class="fd-object-marker fd-object-marker--link"><i class="sap-icon--user-edit fd-object-marker__icon"></i>Unsaved Changes</a>
 </div>
 `;
 clickableObjectMarker.parameters = {
