@@ -5,9 +5,9 @@ import '../../dist/breadcrumb.css';
 export default {
     title: 'Components/Breadcrumb',
     parameters: {
-        description: `The breadcrumb component is a type of navigation that indicates the position of a page within the application’s page hierarchy. Users can navigate backward by selecting the previous pages in the navigation path.
-        <br><br>
-    
+        description: `
+The breadcrumb component is a type of navigation that indicates the position of a page within the application’s page hierarchy. Users can navigate backward by selecting the previous pages in the navigation path.
+
 ##Usage
 **Use breadcrumb if:**
 
