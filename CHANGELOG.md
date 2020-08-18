@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.12...v0.12.0-rc.13) (2020-08-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* List footer is no longer a list item i.e. no longer a part of the list. It is a <span> with class 'fd-list__footer' after the <ul>
+
+### Bug Fixes
+
+* list footer as span ([#1397](https://github.com/SAP/fundamental-styles/issues/1397)) ([142f8fa](https://github.com/SAP/fundamental-styles/commit/142f8fa42ef3facd80a648815b6daa6594e80eac))
+
 ## [0.12.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.11...v0.12.0-rc.12) (2020-08-17)
 
 
