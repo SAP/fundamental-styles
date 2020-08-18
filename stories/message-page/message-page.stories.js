@@ -23,7 +23,7 @@ The size of the message page adjusts to fit the available space.
 - The title is also mandatory. Add a description with further details if needed. 
 - The message should be as concise as possible.
         `,
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme', 'development']
     }
 };
 
@@ -136,7 +136,7 @@ export const error = () => `
 </div>
 `;
 
-error.storyName = 'Message Page with No Items';
+error.storyName = 'Message Page with an Error';
 error.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
@@ -172,7 +172,14 @@ export const buttons = () => `
                     Sorry, we can't find the page
                 </div>
                 <div class="fd-message-page__subtitle">
-                    <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</i>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                    nulla pariatur. 
+                    <i>Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.</i>
                 </div>
                 <div class="fd-message-page__actions">
                     <button 
@@ -183,7 +190,10 @@ export const buttons = () => `
                     <button class="fd-button fd-button--compact">Reload Page</button>
                 </div>
                 <div class="fd-message-page__more">
-                    <button class="fd-button fd-button--compact fd-button--transparent">Show Details</button>
+                    <button 
+                        class="fd-button fd-button--compact fd-button--transparent">
+                        Show Details
+                    </button>
                 </div>
             </div>
         </div>
