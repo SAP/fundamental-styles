@@ -14,7 +14,7 @@ See **Date Picker** in the patterns section.
 **Use the calendar if:**
 
 - You want the user to select a single date, multiple days, whole week(s), or a date range.
-- You want to display multiple months at once.
+- You want to display multiple months or years at once.
 - The calendar always needs to be visible and prominent.
 - Users need to see the year, month, week, weekday and date at a glance to decide which date to select. For example, a user might want to select a date based on the day of the week.
 - Users might be used to different locale-specific date formats (such as day-month-year or month-day-year). Enabling them to select the date visually using the calendar bypasses format-specific interpretation.
@@ -70,27 +70,27 @@ These modifier classes are used to display various calendar navigation actions.\
 
 ### Grid elements
 
-These modifier classes are used to display various calendar grid elements.\n
+These modifier classes are used to style various calendar grid elements.\n
 
 | Modifier class | | Use to... |
 | -------------:| ------------- | :-------------- |
 | <code class="docs-code">fd-calendar\\_\\_item</code> | <div class="fd-calendar__item" style="max-width: 2rem;"> <span class="fd-calendar__text" role="button">30</span> </div> | Represent calendar cell
-| <code class="docs-code">fd-calendar\\_\\_item--weekend</code> | <div class="fd-calendar__item fd-calendar__item--weekend" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Display weekend days
-| <code class="docs-code">fd-calendar\\_\\_item--other-month</code> | <div class="fd-calendar__item fd-calendar__item--other-month" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Display days outside of current month
-| <code class="docs-code">fd-calendar\\_\\_item--current</code> | <div class="fd-calendar__item fd-calendar__item--current" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Display current day, month or year
-| <code class="docs-code">fd-calendar\\_\\_item--range</code> | <div class="fd-calendar__item fd-calendar__item--range" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Display calendar elements placed between range start and end element
-| <code class="docs-code">fd-calendar\\_\\_item--side-helper</code> | <div class="fd-calendar__item fd-calendar__item--side-helper" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Display calendar grid side helpers like week number or day shortcut
+| <code class="docs-code">fd-calendar\\_\\_item--weekend</code> | <div class="fd-calendar__item fd-calendar__item--weekend" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style weekend days
+| <code class="docs-code">fd-calendar\\_\\_item--other-month</code> | <div class="fd-calendar__item fd-calendar__item--other-month" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style days outside of current month
+| <code class="docs-code">fd-calendar\\_\\_item--current</code> | <div class="fd-calendar__item fd-calendar__item--current" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style current day, month or year
+| <code class="docs-code">fd-calendar\\_\\_item--range</code> | <div class="fd-calendar__item fd-calendar__item--range" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style calendar elements placed between start and end range
+| <code class="docs-code">fd-calendar\\_\\_item--side-helper</code> | <div class="fd-calendar__item fd-calendar__item--side-helper" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style calendar grid side helpers like week number or day shortcut
 
 ### States
-These modifier classes are used to display various states of calendar grid elements.\n
+These modifier classes are used to style various states of calendar grid elements.\n
 | Modifier class | | Use to... |
 | -------------:| ------------- | :-------------- |
-| <code class="docs-code">is-focus</code> | <div class="fd-calendar__item is-focus" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Display focused calendar elements
-| <code class="docs-code">is-active</code> | <div class="fd-calendar__item is-active" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Display selected calendar elements
-| <code class="docs-code">is-disabled</code> | <div class="docs-calendar-table__element fd-calendar__item is-disabled" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Display disabled calendar elements
+| <code class="docs-code">is-focus</code> | <div class="fd-calendar__item is-focus" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style focused calendar elements
+| <code class="docs-code">is-active</code> | <div class="fd-calendar__item is-active" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style selected calendar elements
+| <code class="docs-code">is-disabled</code> | <div class="docs-calendar-table__element fd-calendar__item is-disabled" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style disabled calendar elements
 
 ### Special days
-These classes are used to display various calendar grid element colors, which are identified by numeric modifier classes.\n
+These classes are used to style calendar grid elements with colors, which are identified by numeric modifier classes.\n
 
 | Modifier class | Color |
 |-:|:-|
@@ -310,7 +310,7 @@ export const days = () => `
 days.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'The calendar component can display days of the month by adding the <code>–days</code> modifier class to the element.'
+        storyDescription: 'The calendar component can display days of the month by adding the <code>fd-calendar\\_\\_content--dates</code> class to the container element.'
     }
 };
 
@@ -394,7 +394,7 @@ export const months = () => `
 months.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'The calendar component can display months in a year by adding the <code>–months</code> modifier class to the element.'
+        storyDescription: 'The calendar component can display months in a year by adding the <code>fd-calendar\\_\\_content--months</code> class to the container element.'
     }
 };
 
@@ -629,7 +629,7 @@ export const years = () => `
 years.parameters = {
     docs: {
         iframeHeight: 700,
-        storyDescription: 'The calendar component can display a range of years in various ways: short-term, long-term, year ranges etc. Add the <code>–years</code> modifier class to the element, and adjust the number of columns, rows, and content to fit your use case.'
+        storyDescription: 'The calendar component can display a range of years in various ways: short-term, long-term, year ranges etc. Add the <code>fd-calendar\\_\\_content--years</code> class to the container element, and adjust the number of columns, rows, and content to fit your use case.'
     }
 };
 
@@ -787,7 +787,7 @@ export const compact = () => `
 compact.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'The calendar component can be displayed in compact mode by adding the <code>--compact</code> modifier class to the element.'
+        storyDescription: 'The calendar component can be displayed in compact mode by adding the <code>fd-calendar--compact</code> class to the container element.'
     }
 };
 
@@ -963,10 +963,10 @@ While using a mobile in landscape mode, the calendar component is displayed from
 
 Note: For landscape mode, no dialog header element should be used. However, a dialog footer is optional.
         
-**If the** <code>fd-calendar__close-button</code> **class is placed within the calendar’s navigation area, then:**
+**If the** <code>fd-calendar\\_\\_close-button</code> **class is placed within the calendar’s navigation area, then:**
         
-- <code class="docs-code">fd-calendar\\_\\_navigation</code> requires the <code class="docs-code">fd-calendar\\_\\_navigation--main</code> modifier class.
-- <code class="docs-code">fd-calendar\\_\\_close-button</code> requires the <code class="docs-code">fd-calendar\\_\\_close-button--navigation</code> modifier class.
+- <code class="docs-code">fd-calendar\\_\\_navigation</code> requires the <code class="docs-code">fd-calendar\\_\\_navigation--main</code> class.
+- <code class="docs-code">fd-calendar\\_\\_close-button</code> requires the <code class="docs-code">fd-calendar\\_\\_close-button--navigation</code> class.
 `
     }
 };
@@ -1160,7 +1160,7 @@ PortraitMobile.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-While using a mobile in portrait mode, the calendar component is displayed from a **Dialog** window, taking up the full width and height of the screen. It can be displayed in this way by adding the <code>--mobile-portrait</code> modifier class to the element.
+While using a mobile in portrait mode, the calendar component is displayed from a **Dialog** window, taking up the full width and height of the screen. It can be displayed in this way by adding the <code>fd-calendar--mobile-portrait</code> class to the container element.
 
 Note: For portrait mode, dialog header should always be used and the footer remains optional.
         
