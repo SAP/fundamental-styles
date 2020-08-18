@@ -97,6 +97,6 @@ export const overflow = () => `
 overflow.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'The overflow breadcrumb component displays a dropdown menu, followed by several pages in the navigation path. Like the standard breadcrumb, each page can be selected to navigate to its corresponding page. This type is responsive and will collapse into a dropdown menu if there is insufficient horizontal space on the screen. To display the overflow breadcrumb, include the <code>fd-popover</code> class in the first list item within the element.'
+        storyDescription: 'The overflow breadcrumb component displays a dropdown menu, followed by several pages in the navigation path. Like the standard breadcrumb, each page can be selected to navigate to its corresponding page. This type is responsive and will collapse into a dropdown menu if there is insufficient horizontal space on the screen. To display the overflow breadcrumb, include the <code>fd-popover</code> component in the first breadcrumb item within the element.'
     }
 };
