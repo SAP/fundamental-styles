@@ -6,41 +6,39 @@ export default {
     title: 'Components/Dialog',
     parameters: {
         description: `
-The dialog is a container displayed in response to an action.
+The dialog component is a container that displays in response to an action made by the user. It interrupts the app’s current process to prompt the user for either information or a response, which requires them to make a decision before the process can continue.
 
-## Introduction
-
-The dialog control interrupts the current app process to prompt the user for information or for a response. It forces a decision or a confirmation that needs to be signed off by the user.
-
-Use the dialog if:
+##Usage
+**Use the dialog if:**
 
 - You want to display complex content, but don’t want the user to navigate away from the current page.
 - You want to display an additional step or process that needs to be confirmed by a user action.
 - You want to enable the user to create an object with a small number of fields (up to 8 fields).
 
-Do not use the dialog if:
+**Do not use the dialog if:**
 
-- You want to display a simple message. Use the message box instead.
+- You want to display a simple message. Use the **Message Box** component instead.
 - You just want to confirm a successful action.
 - You do not want to interrupt the user.
 - You want to enable users to create an object with more than 8 fields. Use an object page instead.
+        
 
-## Dialog structure
-Dialog consists of following elements:
+## Structure
 
-- <code class="docs-code">.fd-dialog</code>: Wraps dialog and displays it with position: fixed. Dialog can be made visible by applying .fd-dialog--active class
-  - <code class="docs-code">.fd-dialog\\_\\_content</code>: Dialog window
-    - <code class="docs-code">.fd-dialog\\_\\_header</code>: Header
-      - <code class="docs-code">.fd-dialog\\_\\_title</code>: Dialog title
-    - <code class="docs-code">.fd-dialog\\_\\_subheader</code>: Subheader
-    - <code class="docs-code">.fd-dialog\\_\\_body</code>: Dialog content
-    - <code class="docs-code">.fd-dialog\\_\\_loader</code>: Dialog loader
-    - <code class="docs-code">.fd-dialog\\_\\_footer</code>: Dialog footer
-      - <code class="docs-code">.fd-dialog\\_\\_decisive-button</code>: Footer begin/end button
-    - <code class="docs-code">.fd-dialog\\_\\_resize-handle</code>: Handle for resizing modal
+Dialog consists of the following elements:
 
-Dialogs header, subheader and footer elements are composed out of [Bar Component](?path=/docs/components-bar).
-CSS classes provided by Dialog component are used to slightly override Bar behaviour in favour of Dialog styling, but Dialog headers and footer can be customized using Bar component features.
+- <code class="docs-code">fd-dialog</code>
+  - <code class="docs-code">fd-dialog\\_\\_content</code>: Dialog window
+    - <code class="docs-code">fd-dialog\\_\\_header</code>: Dialog header
+      - <code class="docs-code">fd-dialog\\_\\_title</code>: Dialog title
+    - <code class="docs-code">fd-dialog\\_\\_subheader</code>: Dialog subheader
+    - <code class="docs-code">fd-dialog\\_\\_body</code>: Dialog content
+    - <code class="docs-code">fd-dialog\\_\\_loader</code>: Dialog loader
+    - <code class="docs-code">fd-dialog\\_\\_footer</code>: Dialog footer
+      - <code class="docs-code">fd-dialog\\_\\_decisive-button</code>: Dialog footer's _Begin/End_ button
+    - <code class="docs-code">fd-dialog\\_\\_resize-handle</code>: Handle for resizing modal
+
+    The component displays in a fixed position and is activated by adding the <code>fd-dialog--active</code>class. Dialog's header, subheader and footer are elements from the **Bar** component. To style it according to dialog’s needs, CSS classes are used to slightly override bar’s original behaviour. However, dialog headers and footers can be customized using bar component features.
 `,
         tags: ['f3', 'a11y', 'theme']
     }
