@@ -42,9 +42,7 @@ export const sSize = () => `
 <div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical" style="max-width:600px">
     <div class="fd-row">
         <div class="fd-col">
-            <div class="fd-form-layout-grid-flex">
                 <label class="fd-form-label" for="input-1-name">Name:</label>
-            </div>
         </div>
         <div class="fd-col">
             <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
@@ -52,9 +50,7 @@ export const sSize = () => `
     </div>
     <div class="fd-row">
         <div class="fd-col">
-            <div class="fd-form-layout-grid-flex">
                 <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
-            </div>
         </div>
         <div class="fd-col">
             <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
@@ -65,9 +61,7 @@ export const sSize = () => `
     </div>
     <div class="fd-row">
         <div class="fd-col">
-            <div class="fd-form-layout-grid-flex">
                 <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
-            </div>
         </div>
         <div class="fd-col fd-col--4">
             <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
@@ -78,9 +72,7 @@ export const sSize = () => `
     </div>
     <div class="fd-row">
         <div class="fd-col">
-            <div class="fd-form-layout-grid-flex">
                 <label class="fd-form-label" for="input-1-country">Country:</label>
-            </div>
         </div>
         <div class="fd-col fd-col--4">
             <div class="fd-popover" style="width:100%">
@@ -1591,6 +1583,92 @@ columnNotRecommended.parameters = {
         iframeHeight: 400,
         storyDescription: `
 The layout that is not recommended for a form group are XL3-L2-M2-S1
+`
+    }
+};
+
+export const RTL = () => `
+<div dir="rtl">
+  <div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
+    <div class="fd-row">
+      <div class="fd-col fd-col-md--3  fd-col-lg--4">
+        <label class="fd-form-label" for="input-1-name">Name:</label>
+      </div>
+      <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
+        <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+      </div>
+    </div>
+
+    <div class="fd-row">
+      <div class="fd-col fd-col-md--3  fd-col-lg--4">
+        <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
+      </div>
+      <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
+        <div class="fd-row">
+        <div class="fd-col fd-col--4">
+            <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
+        </div>
+        <div class="fd-col fd-col--8">
+            <input class="fd-input" type="text" id="input-1-number" placeholder="Enter Street Number" value="495">
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-row">
+      <div class="fd-col fd-col-md--3  fd-col-lg--4">
+        <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
+      </div>
+      <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
+        <div class="fd-row">
+          <div class="fd-col fd-col--8">
+            <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
+        </div>
+        <div class="fd-col fd-col--4">
+            <input class="fd-input" type="text" id="input-1-city" placeholder="Enter City" value="Downtown">
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-row">
+      <div class="fd-col fd-col-md--3  fd-col-lg--4">
+        <label class="fd-form-label" for="input-1-country">Country:</label>
+      </div>
+      <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
+        <div class="fd-popover" style="width:100%">
+          <div class="fd-popover__control">
+            <div class="fd-select">
+              <div
+                  aria-controls="h031XCM509"
+                  aria-expanded="false"
+                  aria-haspopup="listbox"
+                  class="fd-select__control"
+                  role="combobox"
+                  tabindex="0">
+                  <span class="fd-select__text-content">US</span>
+                  <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+RTL.parameters = {
+    docs: {
+        iframeHeight: 500,
+        storyDescription: `
+Size L use a two-column layout. That means that the form groups are placed next to each other to have all the information on one screen and to avoid scrolling. In these columns, the labels are positioned in the same row as the corresponding input field or value. So the form groups adopt the Z layout (reading direction in rows, not in columns).
+
+The label-field ratio is **4:8:0** by default:
+
+- 4 grid columns of the responsive grid layout are used by the labels.
+- 8 grid columns of the responsive grid layout are used by fields.
+- 0 grid columns of the responsive grid layout are used by empty columns.
 `
     }
 };
