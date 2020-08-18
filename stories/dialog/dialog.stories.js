@@ -370,10 +370,10 @@ export const selectDialogExample = () => `
                 <li class="fd-list__item">
                     <span class="fd-list__title">List item 6</span>
                 </li>
-                <li class="fd-list__footer">
-                    2 items selected
-                </li>
             </ul>
+            <span class="fd-list__footer">
+                2 items selected
+            </span>
         </div>
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
