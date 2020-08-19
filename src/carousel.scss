@@ -1,0 +1,10 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-carousel;
+
+.#{$block} {
+  @include fd-reset();
+
+  background-color: plum;
+}
