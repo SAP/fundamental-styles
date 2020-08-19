@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.13...v0.12.0-rc.14) (2020-08-19)
+
+
+### Bug Fixes
+
+* border cutting off bottom of product switch item subtitles ([#1337](https://github.com/SAP/fundamental-styles/issues/1337)) ([6cd7ef2](https://github.com/SAP/fundamental-styles/commit/6cd7ef2bfa389017cac56f858121d4ebc2430d05))
+
 ## [0.12.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.12...v0.12.0-rc.13) (2020-08-18)
 
 
