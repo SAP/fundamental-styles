@@ -27,8 +27,8 @@ $fd-button-compact-padding-x: calc(0.5rem - #{$fd-button-border-width});
 $fd-button-compact-min-width: 2rem;
 $fd-button-compact-line-height: calc(#{$fd-button-compact-height} - 2 * #{$fd-button-border-width});
 
-$fd-button-additional-spacing: 0.25rem;
-$fd-button-compact-additional-spacing: 0.1875rem;
+$fd-button-additional-spacing: 0.3125rem;
+$fd-button-compact-additional-spacing: 0.25rem;
 
 $fd-menu-button-max-width: 12rem;
 $fd-menu-button-icon-size: 0.75rem;
@@ -84,8 +84,8 @@ $block: #{$fd-namespace}-button;
     position: absolute;
     height: auto;
     width: 100%;
-    top: -($fd-button-additional-spacing + 0.0625rem);
-    bottom: -($fd-button-additional-spacing + 0.0625rem);
+    top: -$fd-button-additional-spacing;
+    bottom: -$fd-button-additional-spacing;
     left: 0;
     right: 0;
   }
@@ -107,8 +107,8 @@ $block: #{$fd-namespace}-button;
   line-height: $fd-button-compact-line-height;
 
   &::before {
-    top: -($fd-button-compact-additional-spacing + 0.0625rem);
-    bottom: -($fd-button-compact-additional-spacing + 0.0625rem);
+    top: -$fd-button-compact-additional-spacing;
+    bottom: -$fd-button-compact-additional-spacing;
   }
 }
 
