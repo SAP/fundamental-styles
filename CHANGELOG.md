@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.14...v0.12.0-rc.15) (2020-08-19)
+
+
+### Bug Fixes
+
+* button active outline for safari and ff ([#1332](https://github.com/SAP/fundamental-styles/issues/1332)) ([5792c05](https://github.com/SAP/fundamental-styles/commit/5792c05aefc970bd2e51941dd407343693149980))
+
 ## [0.12.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.13...v0.12.0-rc.14) (2020-08-19)
 
 
