@@ -7,10 +7,11 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin buttonFocus() {
-  $fd-focus-offset: -0.1875rem;
+  $fd-focus-offset: 0.125rem;
 
   &::after {
     content: "";
+    position: absolute;
     width: auto;
     height: auto;
     top: $fd-focus-offset;

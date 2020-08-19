@@ -23,7 +23,9 @@
 }
 
 @mixin positivePressedFocus() {
-  outline-color: var(--sapContent_ContrastFocusColor);
+  &::after {
+    border-color: var(--sapContent_ContrastFocusColor);
+  }
 }
 
 @mixin positiveFocus() {
