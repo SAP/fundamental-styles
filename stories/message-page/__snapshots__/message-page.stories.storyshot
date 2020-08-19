@@ -15,12 +15,12 @@ exports[`Storyshots Components/Message Page Message Page with No Items 1`] = `
 
 `;
 
-exports[`Storyshots Components/Message Page Message Page with No Items 2`] = `
+exports[`Storyshots Components/Message Page Message Page with Search 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Message Page Message Page with Search 1`] = `
+exports[`Storyshots Components/Message Page Message Page with an Error 1`] = `
 
 
 `;
