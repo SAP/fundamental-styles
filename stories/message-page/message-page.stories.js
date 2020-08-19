@@ -3,9 +3,9 @@ import '../../dist/message-page.css';
 export default {
     title: 'Components/Message Page',
     parameters: {
-        description: `Message page gives feedback to the user when an app or list is empty, or when an error has occurred. The text and icon of the Message Page change depending on the use case, the layout stays the same.
+        description: `A message page gives feedback to the user when an app or list is empty or if an error has occurred. The text and icon on the message page changes depending on the use case, however, the layout stays the same.
         
-The message page can be used in the following situations:
+**The message page can be used in the following situations:**
 
 - Filtering with no results
 - Searching with no results
@@ -19,7 +19,7 @@ The size of the message page adjusts to fit the available space.
 
 ## Guidelines
 
-- The icon in the message page is mandatory. It can vary depending on the message. The default icon is <code class="docs-code">.sap-icon--documents</code>.
+- The icon in the message page is mandatory, and can vary depending on the message. The default icon is <code class="docs-code">.sap-icon--documents</code>.
 - The title is also mandatory. Add a description with further details if needed. 
 - The message should be as concise as possible.
         `,
@@ -49,13 +49,12 @@ export const filter = () => `
 </div>
 `;
 
-filter.storyName = 'Message Page with Filter';
 filter.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `Use case: The user has set a filter and there are no results.
+        storyDescription: `Use the filter message page for when a user has set a filter and there are no results. This message then prompts the user to remove or re-evaluate the filter they set for the page.
 
-Icon: <code class="docs-code">.sap-icon--filter</code>
+Mandatory: Use the <code class="docs-code">.sap-icon--filter</code> icon.
     `
     }
 };
@@ -77,13 +76,12 @@ export const search = () => `
 </div>
 `;
 
-search.storyName = 'Message Page with Search';
 search.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `Use case: The user has searched for something but there are no results.
+        storyDescription: `Use the search message page for when a user has searched for something, but there are no results for that inquiry.
 
-Icon: <code class="docs-code">.sap-icon--search</code>
+Mandatory: Use the <code class="docs-code">.sap-icon--search</code> icon.
     `
     }
 };
@@ -105,13 +103,12 @@ export const noItems = () => `
 </div>
 `;
 
-noItems.storyName = 'Message Page with No Items';
 noItems.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `Use case: The app contains no items.
+        storyDescription: `Use the no items message page for when the user has viewed a page that is supposed to contain items, but there are none.
 
-Icon: Show the product icon or an icon that matches your use case.
+Mandatory: Use the <code class="docs-code">.sap-icon--product</code> icon, or any other icon that matches your use case.
     `
     }
 };
@@ -136,28 +133,17 @@ export const error = () => `
 </div>
 `;
 
-error.storyName = 'Message Page with an Error';
 error.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `Use case: The app cannot show any content due to an error.
+        storyDescription: `Use the error message page for when the user attempts to view a page but an error has occurred, resulting in no available content. If you can, provide a link to the app start screen in the error message.
 
-Icon: <code class="docs-code">.sap-icon--document</code>
+Mandatory: Use the <code class="docs-code">.sap-icon--document</code> icon.
 
 Provide a link to the app start screen if you can.
     `
     }
 };
-
-
-
-
-
-
-
-
-
-
 
 
 export const buttons = () => `
@@ -201,11 +187,11 @@ export const buttons = () => `
 </div>
 `;
 
-buttons.storyName = 'Message Page with Formatted Text and Buttons';
+buttons.storyName = 'Formatted Text and Buttons';
 buttons.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `The text on the Message Page can be formatted (such as bold, italic, underline, and bullet points), and also buttons can be added in the Actions area. It's recommended to not use more than 2 buttons in the Actions area.
+        storyDescription: `Use the message page with formatted text and buttons when you want to add formatted text (bold, italic, underline and/or bullet points) and buttons to the action area. It's highly recommended not to use more than two buttons in the Actions area.
     `
     }
 };
