@@ -362,3 +362,15 @@
     @content;
   }
 }
+
+@mixin set-width($width) {
+  width: $width;
+  min-width: $width;
+  max-width: $width;
+}
+
+@mixin set-height($height) {
+  height: $height;
+  min-height: $height;
+  max-height: $height;
+}
