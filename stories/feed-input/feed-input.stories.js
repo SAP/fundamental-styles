@@ -208,7 +208,7 @@ export const overMaxHeight = () => `
                   aria-label="Feed message" 
                   aria-required 
                   rows="18">X\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX</textarea>
-        <button class="fd-button sap-icon--feeder-arrow fd-feed-input__submit-button" 
+        <button class="fd-button fd-feed-input__submit-button" 
                 aria-label="Send" 
                 aria-disabled="false" 
                 title="Send">
