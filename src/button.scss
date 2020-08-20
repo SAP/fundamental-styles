@@ -27,6 +27,9 @@ $fd-button-compact-padding-x: calc(0.5rem - #{$fd-button-border-width});
 $fd-button-compact-min-width: 2rem;
 $fd-button-compact-line-height: calc(#{$fd-button-compact-height} - 2 * #{$fd-button-border-width});
 
+$fd-button-additional-spacing: 0.3125rem;
+$fd-button-compact-additional-spacing: 0.25rem;
+
 $fd-menu-button-max-width: 12rem;
 $fd-menu-button-icon-size: 0.75rem;
 $fd-menu-button-icon-position-top: 0.6rem;
@@ -63,6 +66,7 @@ $block: #{$fd-namespace}-button;
   min-width: $fd-button-min-width;
   overflow: hidden;
   text-overflow: ellipsis;
+  position: relative;
 
   @include iconSize($fd-button-icon-font-size);
 
@@ -73,6 +77,18 @@ $block: #{$fd-namespace}-button;
   // look
   border-style: solid;
   border-width: $fd-button-border-width;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    top: -$fd-button-additional-spacing;
+    bottom: -$fd-button-additional-spacing;
+    left: 0;
+    right: 0;
+  }
 }
 
 @mixin buttonReset() {
@@ -89,6 +105,11 @@ $block: #{$fd-namespace}-button;
   padding-left: $fd-button-compact-padding-x;
   padding-right: $fd-button-compact-padding-x;
   line-height: $fd-button-compact-line-height;
+
+  &::before {
+    top: -$fd-button-compact-additional-spacing;
+    bottom: -$fd-button-compact-additional-spacing;
+  }
 }
 
 @mixin menu() {
