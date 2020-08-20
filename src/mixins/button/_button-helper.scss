@@ -7,8 +7,17 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin buttonFocus() {
-  outline-style: dotted;
-  outline-width: var(--sapContent_FocusWidth);
-  outline-color: var(--sapContent_FocusColor);
-  outline-offset: -0.1875rem;
+  $fd-focus-offset: 0.125rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: $fd-focus-offset;
+    left: $fd-focus-offset;
+    right: $fd-focus-offset;
+    bottom: $fd-focus-offset;
+    border: var(--sapContent_FocusWidth) dotted var(--sapContent_FocusColor);
+  }
 }
