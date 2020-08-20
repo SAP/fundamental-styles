@@ -9,6 +9,10 @@ a[title='Open canvas in new tab'] {
   height: 34px;
 }
 
+.sbdocs.sbdocs-content {
+  max-width: 85%;
+}
+
 /* make room for TOCBot */
 @media (min-width: 1024px) {
   .sbdocs.sbdocs-content {
