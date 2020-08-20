@@ -36,7 +36,7 @@ export const filter = () => `
             <div class="fd-message-page__icon-container">
                 <span class="sap-icon sap-icon--filter fd-message-page__icon"></span>
             </div>
-            <div class="fd-message-page__content">
+            <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">
                     No matching items found.
                 </div>
@@ -66,7 +66,7 @@ export const search = () => `
             <div class="fd-message-page__icon-container">
                 <span class="sap-icon sap-icon--search fd-message-page__icon"></span>
             </div>
-            <div class="fd-message-page__content">
+            <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">
                     No matching items found.
                 </div>
@@ -93,7 +93,7 @@ export const noItems = () => `
             <div class="fd-message-page__icon-container">
                 <span class="sap-icon sap-icon--product fd-message-page__icon"></span>
             </div>
-            <div class="fd-message-page__content">
+            <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">
                     No items are currently available.
                 </div>
@@ -120,7 +120,7 @@ export const error = () => `
             <div class="fd-message-page__icon-container">
                 <span class="sap-icon sap-icon--document fd-message-page__icon"></span>
             </div>
-            <div class="fd-message-page__content">
+            <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">
                     Sorry, we can’t find this page.
                 </div>
@@ -153,7 +153,7 @@ export const buttons = () => `
             <div class="fd-message-page__icon-container">
                 <span class="sap-icon sap-icon--documents fd-message-page__icon"></span>
             </div>
-            <div class="fd-message-page__content">
+            <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">
                     Sorry, we can't find the page
                 </div>
