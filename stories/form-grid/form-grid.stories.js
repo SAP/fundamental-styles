@@ -1662,13 +1662,7 @@ RTL.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-Size L use a two-column layout. That means that the form groups are placed next to each other to have all the information on one screen and to avoid scrolling. In these columns, the labels are positioned in the same row as the corresponding input field or value. So the form groups adopt the Z layout (reading direction in rows, not in columns).
-
-The label-field ratio is **4:8:0** by default:
-
-- 4 grid columns of the responsive grid layout are used by the labels.
-- 8 grid columns of the responsive grid layout are used by fields.
-- 0 grid columns of the responsive grid layout are used by empty columns.
+To use rtl wrap the content in a div with <code>dir="rtl"</code>
 `
     }
 };
