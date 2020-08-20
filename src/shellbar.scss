@@ -78,7 +78,7 @@ $block: #{$fd-namespace}-shellbar;
     }
 
     .#{$block}__avatar--circle {
-      background-color: var(--sapAccentColor6);
+      border: 0.0625rem solid var(--sapShell_InteractiveBorderColor);
     }
   }
 
