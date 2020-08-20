@@ -24,7 +24,6 @@ addParameters({
       id: "theme-ugly",
       code: `<link rel="stylesheet" type="text/css" href="./theme-ugly.css"></link>`,
       picked: false,
-      
     },
     {
         id: 'windows-hcm-1',
@@ -48,27 +47,41 @@ addParameters({
     },
     {
       id: 'css_variables',
-      code: '<link rel="stylesheet" type="text/css" href="./theming-base-content/content/Base/baseLib/sap_fiori_3/css_variables.css"></link>',
+      code: `
+            <link rel="stylesheet" type="text/css" href="./sap-default.css"></link>
+            <link rel="stylesheet" type="text/css" href="./theming-base-content/content/Base/baseLib/sap_fiori_3/css_variables.css"></link>
+    `,
       picked: true
     },
     {
         id: 'dark_css_variables',
-        code: '<link rel="stylesheet" type="text/css" href="./theming-base-content/content/Base/baseLib/sap_fiori_3_dark/css_variables.css"></link>',
+        code: `
+            <link rel="stylesheet" type="text/css" href="./sap-Dark.css"></link>
+            <link rel="stylesheet" type="text/css" href="./theming-base-content/content/Base/baseLib/sap_fiori_3_dark/css_variables.css"></link>
+        `,
         picked: false
     },
     {
         id: 'light_dark_css_variables',
-        code: '<link rel="stylesheet" type="text/css" href="./theming-base-content/content/Base/baseLib/sap_fiori_3_light_dark/css_variables.css"></link>',
+        code: `
+            <link rel="stylesheet" type="text/css" href="./sap-light-dark.css"></link>
+            <link rel="stylesheet" type="text/css" href="./theming-base-content/content/Base/baseLib/sap_fiori_3_light_dark/css_variables.css"></link>
+        `,
         picked: false
     },
     {
         id: 'HCB_css_variables',
-        code: '<link rel="stylesheet" type="text/css" href="./theming-base-content/content/Base/baseLib/sap_fiori_3_hcb/css_variables.css"></link>',
+        code: `
+            <link rel="stylesheet" type="text/css" href="./sap-HCB.css"></link>
+            <link rel="stylesheet" type="text/css" href="./theming-base-content/content/Base/baseLib/sap_fiori_3_hcb/css_variables.css"></link>
+        `,
         picked: false
     },
     {
         id: 'HCW_css_variables',
-        code: '<link rel="stylesheet" type="text/css" href="./theming-base-content/content/Base/baseLib/sap_fiori_3_hcw/css_variables.css"></link>',
+        code: `
+            <link rel="stylesheet" type="text/css" href="./sap-HCW.css"></link>
+            <link rel="stylesheet" type="text/css" href="./theming-base-content/content/Base/baseLib/sap_fiori_3_hcw/css_variables.css"></link>`,
         picked: false
     }
   ],
