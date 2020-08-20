@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.16...v0.12.0-rc.17) (2020-08-20)
+
+
+### Bug Fixes
+
+* avatar design updates ([#1395](https://github.com/SAP/fundamental-styles/issues/1395)) ([7bfdd72](https://github.com/SAP/fundamental-styles/commit/7bfdd7295854330d744a452c87d180f4cfee2f6f))
+
 ## [0.12.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.15...v0.12.0-rc.16) (2020-08-20)
 
 ## [0.12.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.14...v0.12.0-rc.15) (2020-08-19)
