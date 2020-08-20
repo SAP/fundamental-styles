@@ -14,15 +14,22 @@ $block: #{$fd-namespace}-message-page;
   padding: 1rem;
   background: var(--sapBackgroundColor);
 
-  &__container {
+  &__container,
+  &__content,
+  &__title,
+  &__subtitle,
+  &__actions,
+  &__more {
     @include fd-reset();
 
+    max-width: 30rem;
+  }
+
+  &__container {
     @include fd-flex(column) {
       align-items: center;
     }
 
-    margin: auto;
-    max-width: 30rem;
     transform: translateY(-1rem);
   }
 
@@ -41,8 +48,6 @@ $block: #{$fd-namespace}-message-page;
   }
 
   &__content {
-    @include fd-reset();
-
     @include fd-flex(column) {
       align-items: center;
     }
@@ -51,8 +56,6 @@ $block: #{$fd-namespace}-message-page;
   }
 
   &__title {
-    @include fd-reset();
-
     margin: 1rem 0;
     text-align: center;
     font-size: var(--sapFontHeader2Size);
@@ -60,16 +63,12 @@ $block: #{$fd-namespace}-message-page;
   }
 
   &__subtitle {
-    @include fd-reset();
-
     margin-bottom: 2rem;
     font-size: var(--sapFontHeader5Size);
     color: var(--sapContent_LabelColor);
   }
 
   &__actions {
-    @include fd-reset();
-
     @include fd-flex-center() {
       flex-wrap: wrap;
     }
@@ -79,7 +78,6 @@ $block: #{$fd-namespace}-message-page;
   }
 
   &__more {
-    @include fd-reset();
     @include fd-flex-center();
 
     min-height: 2rem;
