@@ -26,6 +26,7 @@ module.exports = {
     plugins: [
         postcssImport(),
         postcssAddFallback({ importFrom: 'node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/css_variables.css' }),
+        postcssAddFallback({ importFrom: 'dist/theming/sap-default.css' }),
         autoprefixer({
             cascade: true
         }),
