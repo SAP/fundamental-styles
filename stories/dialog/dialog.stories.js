@@ -6,7 +6,7 @@ export default {
     title: 'Components/Dialog',
     parameters: {
         description: `
-The dialog component is a container that appears in response to an action made by the user. It interrupts the app’s current process to prompt the user for either information or a response, which requires them to make a decision before the process can continue. Dialog displays in a fixed position and is activated by adding the <code>fd-dialog--active</code> class.
+The dialog component is a container that appears in response to an action made by the user. It interrupts the app’s current process to prompt the user for either information or a confirmation, which requires them to make a decision before the process can continue. Dialog displays in a fixed position and is activated by adding the <code>fd-dialog--active</code> class.
 
 ##Usage
 **Use the dialog if:**
@@ -20,7 +20,7 @@ The dialog component is a container that appears in response to an action made b
 - You want to display a simple message. Use the **Message Box** component instead.
 - You just want to confirm a successful action.
 - You do not want to interrupt the user.
-- You want to enable users to create an object with more than 8 fields. Use an object page instead.
+- You want to enable users to create an object with more than 8 fields. Use an **Object Page** instead.
         
 
 ## Structure
@@ -38,7 +38,7 @@ The dialog component is a container that appears in response to an action made b
       - <code class="docs-code">fd-dialog\\_\\_decisive-button</code> Dialog footer's _Begin/End_ button
     - <code class="docs-code">fd-dialog\\_\\_resize-handle</code> Handle for resizing modal
 
-Note: Dialog's header, subheader and footer are elements from the **Bar** component. To style it according to dialog’s needs, CSS classes are used to slightly override bar’s original behaviour. However, dialog headers and footers can be customized using bar component features.
+Note: Dialog's header, subheader and footer are elements from the **Bar** component. This means that dialog headers and footers can be customized using bar component features. To style the elements according to dialog’s needs, CSS classes are used to slightly override bar’s original behaviour.
 `,
         tags: ['f3', 'a11y', 'theme']
     }
@@ -98,7 +98,7 @@ defaultDialog.storyName = 'Default';
 defaultDialog.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'The default dialog component displays a container comprising a header, title, and subheader; followed by a body (content area), loader, footer and action buttons. The container also features a resize handle in the right-bottom corner of the footer, see resize handle dialog below for more information.'
+        storyDescription: 'The default dialog component displays a container comprising a header, title, and subheader; followed by a body (content area), loader, footer and action buttons. The container also features a resize handle in the bottom-right corner of the footer, see resizable dialog below for more information.'
     }
 };
 
@@ -217,11 +217,11 @@ sizes.parameters = {
     docs: {
         iframeHeight: 800,
         storyDescription: `
-By default, dialog’s body has no horizontal paddings. The component's header, subheader, body and footer horizontal paddings should be applied responsively based on dialog’s window width. 
+By default, dialog’s body has no horizontal paddings. If horizontal paddings are added, they should behave responsively based on dialog's window width.
 
 ####Horizontal padding
 
-After identifying the window width, choose one of the following horizontal padding sizes below.
+These modifier classes are used to display horizontal padding for dialog's header, subheader, body and footer in various sizes.
 
 | rem | min-width | max width | modifier class |
 | ---- | ---------- | ---------- | ----------- |
@@ -232,17 +232,18 @@ After identifying the window width, choose one of the following horizontal paddi
 
 ####Vertical padding
 
-The default dialog’s body has vertical padding, however, it can be removed.
+The default dialog’s body has vertical padding, however, it can be removed if it's suitable for the use case.
 
 | Modifier class | Modification |
 | ----------------: | :------------ |
 | <code>fd-dialog\\_\\_body--no-vertical-padding</code> | padding-top: 0, padding-bottom: 0 |
 
 ####Mobile
-It is also recommended that the default dialog takes the full height and width of the mobile screen. Simply add the <code>fd-dialog\\_\\_content--mobile</code> modifier class to the container element. If absolutely necessary, this behaviour can be changed using the modifier class below.
+It is recommended that the default dialog takes the full width and height of the mobile screen. If necessary, this behaviour can be changed using the second modifier class below.
 
 | Modifier class | Modification |
 | ----------------: | :------------ |
+|<code>fd-dialog\\_\\_content--mobile</code> | full width and height of mobile screen |
 | <code>fd-dialog\\_\\_content--no-mobile-stretch</code> | adds additional spacing around the container (margin 6% & 10%) |
 
 Note: On mobile devices, the bar component should be used with the <code>fd-bar--cozy</code> class.
@@ -284,9 +285,9 @@ Resizable.parameters = {
     docs: {
         iframeHeight: 300,
         storyDescription: `
-To open Dialog with resize handle add span element with \`.fd-dialog__resize-handle\` class inside \`.fd-dialog__content\` container.
-Horizontal and vertical resize should be enabled only for desktop devices. Resizable Dialog should be desktop only feature.
-`
+Dialog can also be displayed with a resize handle by adding a span element with a \`fd-dialog__resize-handle\` class inside the \`fd-dialog__content\` container.
+
+Note: This feature should be enabled for desktop screens only.`
     }
 };
 
@@ -323,7 +324,7 @@ Draggable.parameters = {
     docs: {
         iframeHeight: 300,
         storyDescription: `
-Dialog can be draggable, enabling the user to drag dialog along with their cursor over the browser view-port area on a desktop screen.
+Dialog can be draggable, enabling the user to drag the container around with their cursor on a desktop screen.
 
 | Modifier class | Modification |
 | ----------------: | :------------ |
@@ -402,7 +403,9 @@ export const Selectable = () => `
 
 Selectable.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 500,
+        storyDescription: `The selectable dialog displays list items in the content area that can be selected. Users can search items from the list, select one or more items, and finalize their choice by selecting the _Select_ button. To display the selectable dialog, include the <code>fd-list fd-list--compact</code> class to the body's container element.
+        `
     }
 };
 
@@ -440,7 +443,8 @@ export const Loading = () => `
 `;
 Loading.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 500,
+        storyDescription: 'Dialog can display a busy indicator that signals to the user that data is loading. To display a busy indicator in the content area, add the <code>fd-busy-indicator--l</code> to the <code>fd-dialog\\_\\_loader</code> container element. Although the busy indicator is large in this example, you can choose a smaller size. See **Busy Indicator** for more sizes.'
     }
 };
 
