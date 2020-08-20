@@ -16,16 +16,19 @@ fs.mkdirSync('stories/docs', { recursive: true });
 
 // enrich file content with necessary elements
 const fileContent = `
-import Community from \'../../.storybook/custom/components/Community\';
-import Header from \'../../.storybook/custom/components/Header\';
-import Footer from \'../../.storybook/custom/components/Footer\';
-import { Meta } from \'@storybook/addon-docs/blocks\';
-<Meta title=\'Introduction/Overview\' />
+import Community from '../../.storybook/custom/components/Community';
+import Header from '../../.storybook/custom/components/Header';
+import Footer from '../../.storybook/custom/components/Footer';
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Introduction/Overview" />
+
 <Header />
 
 ${fs.readFileSync('README.md')}
 
 <Community />
+
 <Footer />`;
 
 fs.writeFile(introductionPath, fileContent, throwError);
