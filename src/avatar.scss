@@ -48,7 +48,6 @@ $block: #{$fd-namespace}-avatar;
       background-size: cover;
       background-position: 50%;
       border-radius: var(--sapElement_BorderCornerRadius);
-      box-sizing: border-box;
     }
   }
   // BLOCK MODIFIERS ************
@@ -123,7 +122,6 @@ $block: #{$fd-namespace}-avatar;
     @include fd-flex-center();
 
     background-color: var(--sapButton_Emphasized_Background);
-    box-sizing: border-box;
     color: var(--sapButton_Emphasized_TextColor);
     position: absolute;
     border: 0.0625rem solid var(--sapButton_Emphasized_BorderColor);

@@ -63,7 +63,7 @@ export const primary = () => `
       <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
           <div class="fd-button fd-shellbar__button fd-user-menu__control" onclick="onPopoverClick('WV3AY276')" aria-controls="WV3AY276" aria-expanded="false" aria-haspopup="true" role="button">
-            <span class="fd-avatar fd-avatar--xs fd-avatar--circle">WW</span>
+            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle">WW</span>
           </div>
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="WV3AY276">
@@ -155,7 +155,7 @@ export const productMenuAndSearch = () => `
     <div class="fd-popover fd-popover--right">
       <div class="fd-popover__control">
         <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="ZY3AY276" onclick="onPopoverClick('ZY3AY276')" aria-expanded="false" aria-haspopup="true" role="button">
-          <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/50/50/abstract/3/');" aria-label="William Wallingham">WW</span>
+          <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle" style="background-image: url('http://lorempixel.com/50/50/abstract/3/');" aria-label="William Wallingham">WW</span>
         </div>
       </div>
       <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="ZY3AY276">
@@ -252,7 +252,7 @@ export const linksWithCollapsibleMenu = () => `
         <div class="fd-popover fd-popover--right">
           <div class="fd-popover__control">
             <div class="fd-button fd-shellbar__button fd-user-menu__control" onclick="onPopoverClick('DD35G276')" aria-controls="DD35G276" aria-expanded="false" aria-haspopup="true" role="button">
-              <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatarier--circle">WW</span>
+              <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatarier--circle fd-shellbar__avatar--circle">WW</span>
             </div>
           </div>
           <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="DD35G276">
@@ -300,7 +300,7 @@ export const productSwitchandCopilot = () => `
         <div class="fd-popover fd-popover--right">
           <div class="fd-popover__control">
             <div class="fd-button fd-shellbar__button fd-user-menu__control" onclick="onPopoverClick('MKFAY276')" aria-controls="MKFAY276" aria-expanded="false" aria-haspopup="true" role="button">
-              <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/50/50/abstract/3/');" aria-label="William Wallingham">WW</span>
+              <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle" style="background-image: url('http://lorempixel.com/50/50/abstract/3/');" aria-label="William Wallingham">WW</span>
             </div>
           </div>
           <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="MKFAY276">
