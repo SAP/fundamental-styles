@@ -4,15 +4,13 @@ body {
   padding: 0;
 }
 
-/* override storybook max width */
-.sbdocs.sbdocs-content {
-  width: 100%;
-  max-width: none;
-}
-
 /* fix bug in storybook@6 where toolbar height is hardcoded - causes scrollbar  */
 a[title='Open canvas in new tab'] {
   height: 34px;
+}
+
+.sbdocs.sbdocs-content {
+  max-width: 85%;
 }
 
 /* make room for TOCBot */
