@@ -1,6 +1,115 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Button Button States 1`] = `
+exports[`Storyshots Components/Button Button sizes 1`] = `
+<section>
+  
+
+  <button
+    class="fd-button"
+  >
+    Save
+  </button>
+  
+
+  <button
+    class="fd-button fd-button sap-icon--cart"
+  />
+  
+
+  <button
+    class="fd-button fd-button--ghost sap-icon--cart"
+  />
+  
+
+  <button
+    class="fd-button fd-button--emphasized sap-icon--cart"
+  />
+  
+
+  <button
+    class="fd-button fd-button--transparent sap-icon--cart"
+  />
+  
+
+  <button
+    class="fd-button fd-button--positive"
+  >
+    Approve
+  </button>
+  
+
+  <button
+    class="fd-button fd-button--negative"
+  >
+    Reject
+  </button>
+  
+
+  <button
+    class="fd-button fd-button--attention"
+  >
+    Attention
+  </button>
+  
+
+  <br />
+  <br />
+  
+
+  <button
+    class="fd-button fd-button--compact"
+  >
+    Edit
+  </button>
+  
+
+  <button
+    class="fd-button fd-button--compact fd-button sap-icon--cart"
+  />
+  
+
+  <button
+    class="fd-button fd-button--ghost fd-button--compact"
+  >
+    Edit
+  </button>
+  
+
+  <button
+    class="fd-button fd-button--emphasized fd-button--compact sap-icon--cart"
+  />
+  
+
+  <button
+    class="fd-button fd-button--transparent fd-button--compact sap-icon--cart"
+  />
+  
+
+  <button
+    class="fd-button fd-button--positive fd-button--compact "
+  >
+    Approve
+  </button>
+  
+
+  <button
+    class="fd-button fd-button--negative fd-button--compact"
+  >
+    Reject
+  </button>
+  
+
+  <button
+    class="fd-button fd-button--attention fd-button--compact"
+  >
+    Attention
+  </button>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Button Button states 1`] = `
 <section>
   
 
@@ -379,12 +488,12 @@ exports[`Storyshots Components/Button Button States 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Button Design Types 1`] = `
+exports[`Storyshots Components/Button Button styles 1`] = `
 
     
 `;
 
-exports[`Storyshots Components/Button Focusable Disabled 1`] = `
+exports[`Storyshots Components/Button Focusable disabled 1`] = `
 <section>
   
 
@@ -410,7 +519,7 @@ exports[`Storyshots Components/Button Focusable Disabled 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Button Icon and Text 1`] = `
+exports[`Storyshots Components/Button Icon or text 1`] = `
 <section>
   
 
@@ -505,7 +614,7 @@ exports[`Storyshots Components/Button Icon and Text 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Button Menu Button 1`] = `
+exports[`Storyshots Components/Button Menu button 1`] = `
 <section>
   
 
@@ -720,12 +829,12 @@ exports[`Storyshots Components/Button Primary 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Button Rtl 1`] = `
+exports[`Storyshots Components/Button RTL 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Button Segmented Button (previously known as Button Group) 1`] = `
+exports[`Storyshots Components/Button Segmented button 1`] = `
 <section>
   
     
@@ -791,116 +900,7 @@ exports[`Storyshots Components/Button Segmented Button (previously known as Butt
 </section>
 `;
 
-exports[`Storyshots Components/Button Sizes 1`] = `
-<section>
-  
-
-  <button
-    class="fd-button"
-  >
-    Save
-  </button>
-  
-
-  <button
-    class="fd-button fd-button sap-icon--cart"
-  />
-  
-
-  <button
-    class="fd-button fd-button--ghost sap-icon--cart"
-  />
-  
-
-  <button
-    class="fd-button fd-button--emphasized sap-icon--cart"
-  />
-  
-
-  <button
-    class="fd-button fd-button--transparent sap-icon--cart"
-  />
-  
-
-  <button
-    class="fd-button fd-button--positive"
-  >
-    Approve
-  </button>
-  
-
-  <button
-    class="fd-button fd-button--negative"
-  >
-    Reject
-  </button>
-  
-
-  <button
-    class="fd-button fd-button--attention"
-  >
-    Attention
-  </button>
-  
-
-  <br />
-  <br />
-  
-
-  <button
-    class="fd-button fd-button--compact"
-  >
-    Edit
-  </button>
-  
-
-  <button
-    class="fd-button fd-button--compact fd-button sap-icon--cart"
-  />
-  
-
-  <button
-    class="fd-button fd-button--ghost fd-button--compact"
-  >
-    Edit
-  </button>
-  
-
-  <button
-    class="fd-button fd-button--emphasized fd-button--compact sap-icon--cart"
-  />
-  
-
-  <button
-    class="fd-button fd-button--transparent fd-button--compact sap-icon--cart"
-  />
-  
-
-  <button
-    class="fd-button fd-button--positive fd-button--compact "
-  >
-    Approve
-  </button>
-  
-
-  <button
-    class="fd-button fd-button--negative fd-button--compact"
-  >
-    Reject
-  </button>
-  
-
-  <button
-    class="fd-button fd-button--attention fd-button--compact"
-  >
-    Attention
-  </button>
-  
-
-</section>
-`;
-
-exports[`Storyshots Components/Button Split Menu Button 1`] = `
+exports[`Storyshots Components/Button Split menu button 1`] = `
 <section>
   
 

@@ -4,17 +4,17 @@ import '../../dist/icon.css';
 import '../../dist/menu.css';
 import '../../dist/popover.css';
 import '../../dist/segmented-button.css';
-import * as stories from './icon.stories.js';
+// import * as stories from './icon.stories.js';
 
 export default {
     title: 'Visual/Icon'
 };
 
 export const Icon = () => {
-    const storyNames = Object.keys(stories).filter(story => story !== 'default');
+    // const storyNames = Object.keys(stories).filter(story => story !== 'default');
     const div = document.createElement('div');
-    div.innerHTML = storyNames.map(function(item) {
-        return '<div>' + stories[item]() + '</div>';
-    }).join('');
+    // div.innerHTML = storyNames.map(function(item) {
+    //     return '<div>' + stories[item]() + '</div>';
+    // }).join('');
     return div;
 };
