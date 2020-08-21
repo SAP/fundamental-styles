@@ -15,8 +15,7 @@ $color-states: (
 
 .#{$block} {
   // TEXT VARIABLES
-  $fd-object-number-font-family: var(--sapFontFamily) !default;
-  $fd-object-number-text-font-size: var(--sapFontMediumSize) !default;
+  $fd-object-number-text-font-size: var(--sapFontSize) !default;
   $fd-object-number-unit-font-size: var(--sapFontSmallSize) !default;
   $fd-object-number-neutral: var(--sapNeutralTextColor);
 
@@ -25,13 +24,13 @@ $color-states: (
 
   @include fd-reset();
 
-  font-family: $fd-object-number-font-family;
   color: $fd-object-number-neutral;
-  max-width: inherit;
+  max-width: 100%;
+  display: inline-block;
 
   &__text,
   &__unit {
-    max-width: inherit;
+    max-width: 100%;
     display: inline-block;
     vertical-align: middle;
     padding-top: 0.125rem;
@@ -41,6 +40,14 @@ $color-states: (
 
   &__text {
     font-size: $fd-object-number-text-font-size;
+
+    &::after {
+      content: '\00a0 ';
+    }
+
+    &--bold {
+      font-weight: bold;
+    }
   }
 
   &__unit {
@@ -57,6 +64,7 @@ $color-states: (
   &--large {
     .#{$block}__text,
     .#{$block}__unit {
+      font-family: var(--sapFontLightFamily);
       font-size: $fd-object-number-font-size-large;
     }
   }

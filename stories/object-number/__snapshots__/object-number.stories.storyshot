@@ -1,5 +1,112 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Components/Object Number Bold 1`] = `
+<section>
+  
+
+  <span
+    class="fd-object-number fd-object-number--negative"
+  >
+    
+    
+    <span
+      class="fd-object-number__text fd-object-number__text--bold"
+    >
+      -2,000.00
+    </span>
+    <span
+      class="fd-object-number__unit"
+    >
+      EUR
+    </span>
+    
+
+  </span>
+  
+
+  <span
+    class="fd-object-number fd-object-number--critical"
+  >
+    
+    
+    <span
+      class="fd-object-number__text fd-object-number__text--bold"
+    >
+      0.00
+    </span>
+    <span
+      class="fd-object-number__unit"
+    >
+      EUR
+    </span>
+    
+
+  </span>
+  
+
+  <span
+    class="fd-object-number fd-object-number--positive"
+  >
+    
+    
+    <span
+      class="fd-object-number__text fd-object-number__text--bold"
+    >
+      1,000.00
+    </span>
+    <span
+      class="fd-object-number__unit"
+    >
+      EUR
+    </span>
+    
+
+  </span>
+  
+
+  <span
+    class="fd-object-number fd-object-number--informative"
+  >
+    
+    
+    <span
+      class="fd-object-number__text fd-object-number__text--bold"
+    >
+      100.00
+    </span>
+    <span
+      class="fd-object-number__unit"
+    >
+      EUR
+    </span>
+    
+
+  </span>
+  
+
+  <span
+    class="fd-object-number"
+  >
+    
+    
+    <span
+      class="fd-object-number__text fd-object-number__text--bold"
+    >
+      999.00
+    </span>
+    <span
+      class="fd-object-number__unit"
+    >
+      EUR
+    </span>
+    
+
+  </span>
+  
+
+</section>
+`;
+
 exports[`Storyshots Components/Object Number Large 1`] = `
 <section>
   
@@ -14,7 +121,6 @@ exports[`Storyshots Components/Object Number Large 1`] = `
     >
       -2,000.00
     </span>
-     
     <span
       class="fd-object-number__unit"
     >
@@ -35,7 +141,6 @@ exports[`Storyshots Components/Object Number Large 1`] = `
     >
       0.00
     </span>
-     
     <span
       class="fd-object-number__unit"
     >
@@ -56,7 +161,6 @@ exports[`Storyshots Components/Object Number Large 1`] = `
     >
       1,000.00
     </span>
-     
     <span
       class="fd-object-number__unit"
     >
@@ -77,7 +181,6 @@ exports[`Storyshots Components/Object Number Large 1`] = `
     >
       100.00
     </span>
-     
     <span
       class="fd-object-number__unit"
     >
@@ -98,7 +201,6 @@ exports[`Storyshots Components/Object Number Large 1`] = `
     >
       999.00
     </span>
-     
     <span
       class="fd-object-number__unit"
     >
@@ -126,7 +228,6 @@ exports[`Storyshots Components/Object Number Primary 1`] = `
     >
       -2,000.00
     </span>
-     
     <span
       class="fd-object-number__unit"
     >
@@ -147,7 +248,6 @@ exports[`Storyshots Components/Object Number Primary 1`] = `
     >
       0.00
     </span>
-     
     <span
       class="fd-object-number__unit"
     >
@@ -168,7 +268,6 @@ exports[`Storyshots Components/Object Number Primary 1`] = `
     >
       1,000.00
     </span>
-     
     <span
       class="fd-object-number__unit"
     >
@@ -189,7 +288,6 @@ exports[`Storyshots Components/Object Number Primary 1`] = `
     >
       100.00
     </span>
-     
     <span
       class="fd-object-number__unit"
     >
@@ -210,7 +308,6 @@ exports[`Storyshots Components/Object Number Primary 1`] = `
     >
       999.00
     </span>
-     
     <span
       class="fd-object-number__unit"
     >
