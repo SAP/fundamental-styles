@@ -29,7 +29,9 @@
 }
 
 @mixin emphasizedFocus() {
-  @include buttonFocus();
+  @include buttonFocus() {
+    border-color: var(--sapContent_ContrastFocusColor);
+  }
 }
 
 @mixin emphasizedDisabled {

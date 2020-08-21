@@ -19,5 +19,6 @@ $block: #{$fd-namespace}-button;
     right: $fd-focus-offset;
     bottom: $fd-focus-offset;
     border: var(--sapContent_FocusWidth) dotted var(--sapContent_FocusColor);
+    @content;
   }
 }
