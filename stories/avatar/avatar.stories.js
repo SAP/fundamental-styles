@@ -51,6 +51,7 @@ icon.parameters = {
     }
 };
 
+icon.storyName = 'Avatar with Icon';
 
 
 export const initials = () => `

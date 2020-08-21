@@ -67,6 +67,43 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
 </section>
 `;
 
+exports[`Storyshots Components/Avatar Avatar with Icon 1`] = `
+<section>
+  
+
+  <span
+    class="fd-avatar fd-avatar--xs sap-icon--washing-machine"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--s sap-icon--washing-machine"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--m sap-icon--washing-machine"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--l sap-icon--washing-machine"
+    role="presentation"
+  />
+  
+
+  <span
+    class="fd-avatar fd-avatar--xl sap-icon--washing-machine"
+    role="presentation"
+  />
+  
+
+</section>
+`;
+
 exports[`Storyshots Components/Avatar Background Image 1`] = `
 <section>
   
@@ -263,43 +300,6 @@ exports[`Storyshots Components/Avatar Circle 1`] = `
   >
     WW
   </span>
-  
-
-</section>
-`;
-
-exports[`Storyshots Components/Avatar Icon 1`] = `
-<section>
-  
-
-  <span
-    class="fd-avatar fd-avatar--xs sap-icon--washing-machine"
-    role="presentation"
-  />
-  
-
-  <span
-    class="fd-avatar fd-avatar--s sap-icon--washing-machine"
-    role="presentation"
-  />
-  
-
-  <span
-    class="fd-avatar fd-avatar--m sap-icon--washing-machine"
-    role="presentation"
-  />
-  
-
-  <span
-    class="fd-avatar fd-avatar--l sap-icon--washing-machine"
-    role="presentation"
-  />
-  
-
-  <span
-    class="fd-avatar fd-avatar--xl sap-icon--washing-machine"
-    role="presentation"
-  />
   
 
 </section>
