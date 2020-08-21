@@ -232,7 +232,7 @@ $block: #{$fd-namespace}-button;
   }
 
   &.#{$block}--emphasized {
-    @include negativeFocus();
+    @include emphasizedFocus();
   }
 }
 
