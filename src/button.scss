@@ -328,22 +328,23 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin iconStylesRtl {
-  @include fd-rtl() {
-    > .#{$block}__icon--left {
-      margin-right: 0;
-      margin-left: $fd-button-icon-margin;
-    }
+  > .#{$block}__icon--left {
+    margin-right: 0;
+    margin-left: $fd-button-icon-margin;
+  }
 
-    > .#{$block}__icon--right {
-      margin-left: 0;
-      margin-right: $fd-button-icon-margin;
-    }
+  > .#{$block}__icon--right {
+    margin-left: 0;
+    margin-right: $fd-button-icon-margin;
   }
 }
 
 @mixin iconStyles {
   @include iconStylesLtr();
-  @include iconStylesRtl();
+
+  @include fd-rtl() {
+    @include iconStylesRtl();
+  }
 }
 
 .#{$block} {
