@@ -29,6 +29,10 @@ The numeral format is the following: **1 of 9**
 - **Navigation for single items**- when the user clicks one of the paging buttons, the rightmost or leftmost item is moved out of the content area, and the next or previous item slides in (depending on the navigation direction).
 - **Looping**- if looping is enabled, the carousel jumps back to the first item once all items have been displayed.
 - **Paging**- the current position inside the set of items is displayed using an optional paging indicator. 
+
+## Empty State
+
+When no pages are loaded, the Carousel displays a MessagePage component with <code class="docs-code">sap-icon--document</code> icon.
 `,
         tags: ['f3', 'a11y', 'theme', 'development']
     }
