@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Carousel Carousel with Page Indicator on Bottom 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Carousel Carousel with Page Indicator on Top 1`] = `
+
+
+`;

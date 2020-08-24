@@ -4,13 +4,13 @@
 $block: #{$fd-namespace}-carousel;
 $button: #{$fd-namespace}-button;
 
-$fd-carousel-page-indicator-border: 0.0625rem solid var(--sapPageFooter_BorderColor) !default;
-$fd-carousel-button-size: 2.125rem !default;
-$fd-carousel-button-content-offset: 0.5rem !default;
-$fd-carousel-dot-size: 0.25rem !default;
-$fd-carousel-dot-active-size: 0.5rem !default;
-
 .#{$block} {
+  $fd-carousel-page-indicator-border: 0.0625rem solid var(--sapPageFooter_BorderColor) !default;
+  $fd-carousel-button-size: 2.125rem !default;
+  $fd-carousel-button-content-offset: 0.5rem !default;
+  $fd-carousel-dot-size: 0.25rem !default;
+  $fd-carousel-dot-active-size: 0.5rem !default;
+
   @include fd-reset();
   @include fd-flex(column);
 
@@ -86,7 +86,10 @@ $fd-carousel-dot-active-size: 0.5rem !default;
 
   &__page-indicators {
     @include fd-reset();
-    @include fd-flex-center();
+
+    @include fd-flex-center() {
+      flex-wrap: wrap;
+    }
 
     width: 9rem;
     padding: 0.5rem;
@@ -119,6 +122,7 @@ $fd-carousel-dot-active-size: 0.5rem !default;
   }
 
   &__button.#{$button} {
+    @include fd-flex-center();
     @include set-width($fd-carousel-button-size);
     @include set-height($fd-carousel-button-size);
 
@@ -136,6 +140,10 @@ $fd-carousel-dot-active-size: 0.5rem !default;
       &[class*=sap-icon]::before {
         transform: rotate(180deg);
       }
+    }
+
+    @include fd-focus() {
+      outline-offset: 0;
     }
   }
 
