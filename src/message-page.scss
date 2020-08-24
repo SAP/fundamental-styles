@@ -1,8 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
 
-$fd-message-page: 0 !default;
-
 $block: #{$fd-namespace}-message-page;
 
 .#{$block} {
@@ -41,7 +39,7 @@ $block: #{$fd-namespace}-message-page;
     height: 8rem;
   }
 
-  &__icon {
+  &__icon[class*='sap-icon--'] {
     font-size: 6rem;
     color: var(--sapContent_NonInteractiveIconColor);
     opacity: 50%;
@@ -73,7 +71,6 @@ $block: #{$fd-namespace}-message-page;
       flex-wrap: wrap;
     }
 
-    margin-top: 2rem;
     min-height: 2rem;
   }
 
