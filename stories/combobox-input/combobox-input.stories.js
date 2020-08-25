@@ -205,7 +205,11 @@ export const asFormItem = () =>`
 
 asFormItem.parameters = {
     docs: {
-        iframeHeight: 700
+        iframeHeight: 700,
+        storyDescription: `
+Note that the popover body width is restricted to a max of 37.5rem to avoid readability issues in large-width popovers.
+Applications are free to override this in their custom styles if needed and own any readability issues arising from this override.
+`
     }
 };
 
