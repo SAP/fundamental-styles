@@ -33,6 +33,13 @@ The numeral format is the following: **1 of 9**
 ## Empty State
 
 When no pages are loaded, the Carousel displays a MessagePage component with <code class="docs-code">sap-icon--document</code> icon.
+
+
+## Accessibility
+
+The div element with class <code class="docs-code">fd-carousel</code> has a visually hidden sibling div element with <code class="docs-code">role="region"</code> and <code class="docs-code">aria-live="polite"</code>. Its text should be dynamically updated using JavaScript so that content changes of the Carousel are announced to the user.
+
+
 `,
         tags: ['f3', 'a11y', 'theme', 'development']
     }
@@ -43,8 +50,7 @@ export const carouselBottom = () => `
     <h4>Navigation Buttons in Page Indicator</h4>
     <div 
         class="fd-carousel" 
-        data-ride="carousel"
-        aria-live="Displaying item 4 of 4" 
+        data-ride="carousel" 
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__content" style="min-height: 15.5rem;"></div>
         <div class="fd-carousel__page-indicator-container">
@@ -84,11 +90,14 @@ export const carouselBottom = () => `
             </button>
         </div>
     </div>
+    <div style="display: none;" role="region" id="carousel-1" aria-live="polite">
+        Displaying item 1 of 4
+    </div>
+
     <h4>Navigation Buttons in Content</h4>
     <div 
         class="fd-carousel" 
-        data-ride="carousel"
-        aria-live="Displaying item 4 of 4" 
+        data-ride="carousel" 
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__content" style="min-height: 15.5rem;">
             <button 
@@ -128,11 +137,14 @@ export const carouselBottom = () => `
             </ol>
         </div>
     </div>
+    <div style="display: none;" role="region" id="carousel-2" aria-live="polite">
+        Displaying item 1 of 4
+    </div>
+
     <h4>Numeral Format for Page Indicator</h4>
     <div 
         class="fd-carousel" 
-        data-ride="carousel"
-        aria-live="Displaying item 4 of 4" 
+        data-ride="carousel" 
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__content" style="min-height: 15.5rem;"></div>
         <div class="fd-carousel__page-indicator-container">
@@ -151,11 +163,14 @@ export const carouselBottom = () => `
             </button>
         </div>
     </div>
+    <div style="display: none;" role="region" id="carousel-3" aria-live="polite">
+        Displaying item 1 of 4
+    </div>
+
     <h4>No Page Indicator</h4>
     <div 
         class="fd-carousel" 
-        data-ride="carousel"
-        aria-live="Displaying item 4 of 4" 
+        data-ride="carousel" 
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__content" style="min-height: 15.5rem;">
             <button 
@@ -169,6 +184,9 @@ export const carouselBottom = () => `
                 aria-label="Go to next item">
             </button>
         </div>
+    </div>
+    <div style="display: none;" role="region" id="carousel-4" aria-live="polite">
+        Displaying item 1 of 4
     </div>
 </div>
 `;
@@ -187,8 +205,7 @@ export const carouselTop = () => `
     <h4>Navigation Buttons in Page Indicator</h4>
     <div 
         class="fd-carousel" 
-        data-ride="carousel"
-        aria-live="Displaying item 4 of 4" 
+        data-ride="carousel" 
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__page-indicator-container">
             <button 
@@ -227,11 +244,14 @@ export const carouselTop = () => `
         </div>
         <div class="fd-carousel__content" style="min-height: 15.5rem;"></div>
     </div>
+    <div style="display: none;" role="region" id="carousel-5" aria-live="polite">
+        Displaying item 1 of 4
+    </div>
+
     <h4>Navigation Buttons in Content</h4>
     <div 
         class="fd-carousel" 
-        data-ride="carousel"
-        aria-live="Displaying item 4 of 4" 
+        data-ride="carousel" 
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__page-indicator-container">
             <ol class="fd-carousel__page-indicators">
@@ -271,11 +291,14 @@ export const carouselTop = () => `
             </button>
         </div>
     </div>
+    <div style="display: none;" role="region" id="carousel-6" aria-live="polite">
+        Displaying item 1 of 4
+    </div>
+
     <h4>Numeral Format for Page Indicator</h4>
     <div 
         class="fd-carousel" 
-        data-ride="carousel"
-        aria-live="Displaying item 4 of 4" 
+        data-ride="carousel" 
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__page-indicator-container">
             <div class="fd-carousel__page-indicators">
@@ -295,11 +318,14 @@ export const carouselTop = () => `
             </button>
         </div>
     </div>
+    <div style="display: none;" role="region" id="carousel-7" aria-live="polite">
+        Displaying item 1 of 4
+    </div>
+
     <h4>No Page Indicators</h4>
     <div 
         class="fd-carousel" 
-        data-ride="carousel"
-        aria-live="Displaying item 4 of 4" 
+        data-ride="carousel" 
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__page-indicator-container">
             <button 
@@ -328,6 +354,9 @@ export const carouselTop = () => `
                 <img src="http://lorempixel.com/400/400/nature/4/" alt="Carousel Image 4" />
             </div>
         </div>
+    </div>
+    <div style="display: none;" role="region" id="carousel-8" aria-live="polite">
+        Displaying item 1 of 4
     </div>
 </div>
 `;
