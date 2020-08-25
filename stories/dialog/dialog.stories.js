@@ -345,7 +345,9 @@ export const selectDialogExample = () => `
                 <div class="fd-input-group">
                     <input class="fd-input fd-input-group__input fd-input--compact" type="text" placeholder="Search...">
                     <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                        <button class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact sap-icon--search"></button>
+                        <button class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact">
+                            <i class="sap-icon--search"></i>
+                        </button>
                     </span>
                 </div>
             </div>

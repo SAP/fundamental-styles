@@ -21,19 +21,3 @@
     var(--sapButton_Accept_Active_Background)
   );
 }
-
-@mixin positivePressedFocus() {
-  outline-color: var(--sapContent_ContrastFocusColor);
-}
-
-@mixin positiveFocus() {
-  @include buttonFocus();
-}
-
-@mixin positiveDisabled {
-  @include isDisabled();
-  @include positive();
-
-  box-shadow: none;
-  outline: none;
-}

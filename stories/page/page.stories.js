@@ -44,7 +44,9 @@ export const basicPage = () => `
         <div class="fd-bar fd-bar--page fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow" aria-label="Go back"></button>
+                    <button class="fd-button fd-button--transparent" aria-label="Go back"> 
+                        <i class="sap-icon--navigation-left-arrow"></i>
+                    </button>
                 </div>
                 <div class="fd-bar__element">
                      Header Title
@@ -52,7 +54,9 @@ export const basicPage = () => `
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent sap-icon--grid" aria-label="See more"></button>
+                    <button class="fd-button fd-button--transparent" aria-label="See more"> 
+                        <i class="sap-icon--grid"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -88,7 +92,9 @@ export const transparentPage = () => `
         <div class="fd-bar fd-bar--page-m_l fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow" aria-label="Go back"></button>
+                    <button class="fd-button fd-button--transparent" aria-label="Go back"> 
+                        <i class="sap-icon--navigation-left-arrow"></i>
+                    </button>
                 </div>
                 <div class="fd-bar__element">
                      Header Title
@@ -96,7 +102,9 @@ export const transparentPage = () => `
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent sap-icon--overflow" aria-label="See more"></button>
+                    <button class="fd-button fd-button--transparent" aria-label="See more"> 
+                        <i class="sap-icon--overflow"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -146,7 +154,9 @@ export const responsivePage = () => `
         <div class="fd-bar fd-bar--home-page-xl fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow" aria-label="Go back"></button>
+                    <button class="fd-button fd-button--transparent" aria-label="Go back"> 
+                        <i class="sap-icon--navigation-left-arrow"></i>
+                    </button>
                 </div>
                 <div class="fd-bar__element">
                      Header Title
@@ -154,7 +164,9 @@ export const responsivePage = () => `
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent sap-icon--overflow" aria-label="See more"></button>
+                    <button class="fd-button fd-button--transparent" aria-label="See more"> 
+                        <i class="sap-icon--overflow"></i>
+                    </button>
                 </div>
             </div>
         </div>

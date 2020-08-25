@@ -156,7 +156,9 @@ export const layoutOptions = () => `
                 <div class="fd-bar fd-bar--header">
                     <div class="fd-bar__left">
                         <div class="fd-bar__element">
-                            <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                            <button class="fd-button fd-button--transparent">
+                                <i class="sap-icon--navigation-left-arrow"></i>
+                            </button>
                         </div>
                         <div class="fd-bar__element">
                             Header
@@ -223,7 +225,9 @@ export const layoutOptions = () => `
                 <div class="fd-bar fd-bar--header-with-subheader">
                     <div class="fd-bar__left">
                         <div class="fd-bar__element">
-                            <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                            <button class="fd-button fd-button--transparent">
+                                <i class="sap-icon--navigation-left-arrow"></i>
+                            </button>
                         </div>
                         <div class="fd-bar__element">
                             Header
@@ -235,9 +239,15 @@ export const layoutOptions = () => `
                         <div class="fd-bar__element">
                             <div class="fd-form-item">
                                 <div class="fd-segmented-button" role="group" aria-label="Group label">
-                                    <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
-                                    <button class="fd-button fd-button--compact sap-icon--iphone"></button>
-                                    <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
+                                    <button class="fd-button fd-button--compact" aria-pressed="true">
+                                        <i class="sap-icon--email"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--compact">
+                                        <i class="sap-icon--iphone"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--compact">
+                                        <i class="sap-icon--notification-2"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -271,7 +281,9 @@ export const layoutOptions = () => `
                 <div class="fd-bar fd-bar--cozy fd-bar--header-with-subheader">
                     <div class="fd-bar__left">
                         <div class="fd-bar__element">
-                            <button class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                            <button class="fd-button fd-button--transparent">
+                                <i class="sap-icon--navigation-left-arrow"></i>
+                            </button>
                         </div>
                         <div class="fd-bar__element">
                             Header
@@ -284,9 +296,15 @@ export const layoutOptions = () => `
                         <div class="fd-bar__element">
                             <div class="fd-form-item">
                                 <div class="fd-segmented-button" role="group" aria-label="Group label">
-                                    <button class="fd-button fd-button--compact sap-icon--email" aria-pressed="true"></button>
-                                    <button class="fd-button fd-button--compact sap-icon--iphone"></button>
-                                    <button class="fd-button fd-button--compact sap-icon--notification-2"></button>
+                                    <button class="fd-button fd-button--compact" aria-pressed="true">
+                                        <i class="sap-icon--email"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--compact">
+                                        <i class="sap-icon--iphone"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--compact">
+                                        <i class="sap-icon--notification-2"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>

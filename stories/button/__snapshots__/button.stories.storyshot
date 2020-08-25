@@ -468,38 +468,73 @@ exports[`Storyshots Components/Button Icon and Text 1`] = `
   
 
   <button
-    class="fd-button sap-icon--cart"
-  />
+    aria-label="More"
+    class="fd-button"
+  >
+    <i
+      class="sap-icon--cart fd-button__icon-left"
+    />
+  </button>
   
 
   <button
-    class="fd-button fd-button--transparent sap-icon--cart"
-  />
+    aria-label="More"
+    class="fd-button fd-button--emphasized"
+  >
+    <i
+      class="sap-icon--cart fd-button__icon-left"
+    />
+  </button>
   
 
   <button
-    class="fd-button sap-icon--filter"
-  />
+    aria-label="More"
+    class="fd-button fd-button--transparent"
+  >
+    <i
+      class="sap-icon--cart fd-button__icon-left"
+    />
+  </button>
   
 
   <button
-    class="fd-button fd-button--ghost sap-icon--filter"
-  />
+    aria-label="More"
+    class="fd-button fd-button--ghost"
+  >
+    <i
+      class="sap-icon--filter fd-button__icon-left"
+    />
+  </button>
   
 
   <button
-    class="fd-button fd-button--positive sap-icon--accept"
-  />
+    aria-label="More"
+    class="fd-button fd-button--positive"
+  >
+    <i
+      class="sap-icon--accept fd-button__icon-left"
+    />
+  </button>
   
 
   <button
-    class="fd-button fd-button--negative sap-icon--decline"
-  />
+    aria-label="More"
+    class="fd-button fd-button--negative"
+  >
+    <i
+      class="sap-icon--decline fd-button__icon-left"
+    />
+  </button>
   
 
   <button
-    class="fd-button fd-button--attention sap-icon--decline"
-  />
+    aria-label="More"
+    class="fd-button fd-button--attention"
+  >
+    <i
+      class="sap-icon--decline fd-button__icon-left"
+    />
+  </button>
   
 
 </section>
@@ -519,28 +554,52 @@ exports[`Storyshots Components/Button Menu Button 1`] = `
   <button
     class="fd-button fd-button--ghost fd-button--menu"
   >
+    
     Ghost Button
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
   </button>
   
 
   <button
     class="fd-button fd-button--positive fd-button--menu"
   >
+    
     Positive Button
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
   </button>
   
 
   <button
     class="fd-button fd-button--negative fd-button--menu"
   >
+    
     Negative Button
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
   </button>
   
 
   <button
     class="fd-button fd-button--attention fd-button--menu"
   >
+    
     Attention Button
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
   </button>
   
 
@@ -553,7 +612,13 @@ exports[`Storyshots Components/Button Menu Button 1`] = `
     class="fd-button fd-button--menu"
     disabled=""
   >
+    
     Action Button
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
   </button>
   
 
@@ -562,7 +627,13 @@ exports[`Storyshots Components/Button Menu Button 1`] = `
     class="fd-button fd-button--ghost fd-button--menu"
     disabled=""
   >
+    
     Ghost Button
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
   </button>
   
 
@@ -571,7 +642,13 @@ exports[`Storyshots Components/Button Menu Button 1`] = `
     class="fd-button fd-button--positive fd-button--menu"
     disabled=""
   >
+    
     Positive Button
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
   </button>
   
 
@@ -580,7 +657,13 @@ exports[`Storyshots Components/Button Menu Button 1`] = `
     class="fd-button fd-button--negative fd-button--menu"
     disabled=""
   >
+    
     Negative Button
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
   </button>
   
 
@@ -589,7 +672,13 @@ exports[`Storyshots Components/Button Menu Button 1`] = `
     class="fd-button fd-button--attention fd-button--menu"
     disabled=""
   >
+    
     Attention Button
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
   </button>
   
 
@@ -600,42 +689,78 @@ exports[`Storyshots Components/Button Menu Button 1`] = `
   <button
     class="fd-button fd-button--emphasized fd-button--menu"
   >
+    
     Add to Cart
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
   </button>
   
 
   <button
     class="fd-button fd-button--menu"
   >
+    
     Add to Cart
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
   </button>
   
 
   <button
     class="fd-button fd-button--transparent fd-button--menu"
   >
+    
     Add to Cart
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
   </button>
   
 
   <button
     class="fd-button fd-button--emphasized fd-button--menu fd-button--positive"
   >
+    
     Approve
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
   </button>
   
 
   <button
     class="fd-button fd-button--negative fd-button--menu"
   >
+    
     Reject
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
   </button>
   
 
   <button
     class="fd-button fd-button--attention fd-button--menu"
   >
+    
     Attention
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
   </button>
   
 
@@ -644,33 +769,88 @@ exports[`Storyshots Components/Button Menu Button 1`] = `
   
 
   <button
-    class="fd-button fd-button--menu sap-icon--cart"
-  />
+    aria-label="More"
+    class="fd-button fd-button--menu"
+  >
+    
+    
+    <i
+      class="sap-icon--cart"
+    />
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
+  </button>
   
 
   <button
-    class="fd-button fd-button--transparent fd-button--menu sap-icon--cart"
-  />
+    aria-label="More"
+    class="fd-button fd-button--menu fd-button--transparent"
+  >
+    
+    
+    <i
+      class="sap-icon--cart"
+    />
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
+  </button>
   
 
   <button
-    class="fd-button fd-button fd-button--menu sap-icon--filter"
-  />
+    aria-label="More"
+    class="fd-button fd-button--menu fd-button--positive"
+  >
+    
+    
+    <i
+      class="sap-icon--cart"
+    />
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
+  </button>
   
 
   <button
-    class="fd-button fd-button--menu fd-button--positive sap-icon--accept"
-  />
+    aria-label="More"
+    class="fd-button fd-button--menu fd-button--negative"
+  >
+    
+    
+    <i
+      class="sap-icon--cart"
+    />
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
+  </button>
   
 
   <button
-    class="fd-button fd-button--menu fd-button--negative sap-icon--decline"
-  />
-  
+    aria-label="More"
+    class="fd-button fd-button--menu fd-button--attention"
+  >
+    
+    
+    <i
+      class="sap-icon--cart"
+    />
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
 
-  <button
-    class="fd-button fd-button--menu fd-button--attention sap-icon--warning"
-  />
+  </button>
   
 
   <br />
@@ -680,14 +860,26 @@ exports[`Storyshots Components/Button Menu Button 1`] = `
   <button
     class="fd-button fd-button--menu"
   >
+    
     Default
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
   </button>
   
 
   <button
     class="fd-button fd-button--compact fd-button--menu"
   >
+    
     Compact
+    <i
+      class="sap-icon--slim-arrow-down fd-button__icon--right"
+    />
+    
+
   </button>
   
 
@@ -706,8 +898,13 @@ exports[`Storyshots Components/Button Primary 1`] = `
   
     
   <button
-    class="fd-button sap-icon--cart"
-  />
+    aria-label="More"
+    class="fd-button"
+  >
+    <i
+      class="sap-icon--cart fd-button__icon-left"
+    />
+  </button>
   
     
   <button
@@ -737,19 +934,34 @@ exports[`Storyshots Components/Button Segmented Button (previously known as Butt
     
         
     <button
-      class="fd-button sap-icon--survey"
-    />
+      aria-label="More"
+      class="fd-button"
+    >
+      <i
+        class="sap-icon--survey fd-button__icon-left"
+      />
+    </button>
     
         
     <button
+      aria-label="More"
       aria-pressed="true"
-      class="fd-button sap-icon--pie-chart is-selected"
-    />
+      class="fd-button is-selected"
+    >
+      <i
+        class="sap-icon--pie-chart fd-button__icon-left"
+      />
+    </button>
     
         
     <button
-      class="fd-button sap-icon--pool"
-    />
+      aria-label="More"
+      class="fd-button"
+    >
+      <i
+        class="sap-icon--pool fd-button__icon-left"
+      />
+    </button>
     
     
   </div>
@@ -803,23 +1015,43 @@ exports[`Storyshots Components/Button Sizes 1`] = `
   
 
   <button
-    class="fd-button fd-button sap-icon--cart"
-  />
+    aria-label="More"
+    class="fd-button"
+  >
+    <i
+      class="sap-icon--cart fd-button__icon-left"
+    />
+  </button>
   
 
   <button
-    class="fd-button fd-button--ghost sap-icon--cart"
-  />
+    aria-label="More"
+    class="fd-button fd-button--ghost"
+  >
+    <i
+      class="sap-icon--cart fd-button__icon-left"
+    />
+  </button>
   
 
   <button
-    class="fd-button fd-button--emphasized sap-icon--cart"
-  />
+    aria-label="More"
+    class="fd-button fd-button--emphasized"
+  >
+    <i
+      class="sap-icon--cart fd-button__icon-left"
+    />
+  </button>
   
 
   <button
-    class="fd-button fd-button--transparent sap-icon--cart"
-  />
+    aria-label="More"
+    class="fd-button fd-button--transparent"
+  >
+    <i
+      class="sap-icon--cart fd-button__icon-left"
+    />
+  </button>
   
 
   <button
@@ -855,11 +1087,17 @@ exports[`Storyshots Components/Button Sizes 1`] = `
   
 
   <button
-    class="fd-button fd-button--compact fd-button sap-icon--cart"
-  />
+    aria-label="More"
+    class="fd-button fd-button--compact"
+  >
+    <i
+      class="sap-icon--cart fd-button__icon-left"
+    />
+  </button>
   
 
   <button
+    aria-label="More"
     class="fd-button fd-button--ghost fd-button--compact"
   >
     Edit
@@ -867,13 +1105,23 @@ exports[`Storyshots Components/Button Sizes 1`] = `
   
 
   <button
-    class="fd-button fd-button--emphasized fd-button--compact sap-icon--cart"
-  />
+    aria-label="More"
+    class="fd-button fd-button--emphasized fd-button--compact"
+  >
+    <i
+      class="sap-icon--cart fd-button__icon-left"
+    />
+  </button>
   
 
   <button
-    class="fd-button fd-button--transparent fd-button--compact sap-icon--cart"
-  />
+    aria-label="More"
+    class="fd-button fd-button--transparent fd-button--compact"
+  >
+    <i
+      class="sap-icon--cart fd-button__icon-left"
+    />
+  </button>
   
 
   <button
@@ -924,8 +1172,12 @@ exports[`Storyshots Components/Button Split Menu Button 1`] = `
       aria-expanded="false"
       aria-haspopup="true"
       aria-label="More"
-      class="fd-button sap-icon--slim-arrow-down"
-    />
+      class="fd-button"
+    >
+      <i
+        class="sap-icon--slim-arrow-down fd-button__icon-right"
+      />
+    </button>
     
   
     <div
@@ -1028,9 +1280,14 @@ exports[`Storyshots Components/Button Split Menu Button 1`] = `
       aria-expanded="false"
       aria-haspopup="true"
       aria-label="More"
-      class="fd-button fd-button--emphasized sap-icon--slim-arrow-down"
-    />
+      class="fd-button fd-button--emphasized"
+    >
+      <i
+        class="sap-icon--slim-arrow-down fd-button__icon-right"
+      />
+    </button>
     
+
   
     <div
       aria-hidden="true"
@@ -1132,8 +1389,12 @@ exports[`Storyshots Components/Button Split Menu Button 1`] = `
       aria-expanded="false"
       aria-haspopup="true"
       aria-label="More"
-      class="fd-button fd-button--transparent sap-icon--slim-arrow-down"
-    />
+      class="fd-button fd-button--transparent"
+    >
+      <i
+        class="sap-icon--slim-arrow-down fd-button__icon-right"
+      />
+    </button>
     
   
     <div

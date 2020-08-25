@@ -16,7 +16,9 @@ export const primary = () => `
 <div class="fd-notification">
 <div class="fd-notification__header">
     <div class="fd-notification__title">Default Notification Title</div>
-    <button role="button" aria-label="decline-button" class="fd-button fd-button--compact fd-button--transparent sap-icon--decline fd-notification__close"></button>
+    <button role="button" aria-label="decline-button" class="fd-button fd-button--compact fd-button--transparent fd-notification__close">
+        <i class="sap-icon--decline"></i>
+    </button>
 </div>
 <div class="fd-notification__body">
     <div class="fd-notification__content">
@@ -51,7 +53,9 @@ export const success = () => `
     <div class="fd-notification__header">
         <div class="fd-notification__indicator--success"></div>
         <div class="fd-notification__title">This is the notifications title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent sap-icon--decline fd-notification__close"></button>
+        <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent fd-notification__close">
+            <i class="sap-icon--decline"></i>
+        </button>
     </div>
     <div class="fd-notification__body">
         <div class="fd-notification__content">
@@ -89,7 +93,9 @@ export const warning = () => `
     <div class="fd-notification__header">
         <div class="fd-notification__indicator--warning"></div>
         <div class="fd-notification__title">This is the notifications title</div>
-        <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent sap-icon--decline fd-notification__close"></button>
+        <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent fd-notification__close">
+            <i class="sap-icon--decline"></i>
+        </button>
     </div>
     <div class="fd-notification__body">
         <div class="fd-notification__content">
@@ -127,7 +133,9 @@ export const error = () => `
     <div class="fd-notification__header">
         <div class="fd-notification__indicator--error"></div>
         <div class="fd-notification__title">This is the notifications title</div>
-        <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent sap-icon--decline fd-notification__close"></button>
+        <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent fd-notification__close">
+            <i class="sap-icon--decline"></i>
+        </button>
     </div>
     <div class="fd-notification__body">
         <div class="fd-notification__content">
@@ -164,7 +172,9 @@ export const information = () => `
     <div class="fd-notification__header">
         <div class="fd-notification__indicator--information"></div>
         <div class="fd-notification__title">Information notification title</div>
-        <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent sap-icon--decline fd-notification__close"></button>
+        <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent fd-notification__close">
+            <i class="sap-icon--decline"></i>
+        </button>
     </div>
     <div class="fd-notification__body">
         <div class="fd-notification__content">
@@ -202,7 +212,9 @@ export const mediumSize = () => `
     <div class="fd-notification__header">
         <div class="fd-notification__indicator--success"></div>
         <div class="fd-notification__title">This is the notifications title.</div>
-        <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent sap-icon--decline fd-notification__close"></button>
+        <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent fd-notification__close">
+            <i class="sap-icon--decline"></i>
+        </button>
     </div>
     <div class="fd-notification__body">
         <div class="fd-notification__content">
@@ -239,7 +251,9 @@ export const smallSize = () => `
     <div class="fd-notification__header">
         <div class="fd-notification__indicator--information"></div>
         <div class="fd-notification__title">This is the notifications title</div>
-        <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent sap-icon--decline fd-notification__close"></button>
+        <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent fd-notification__close">
+            <i class="sap-icon--decline"></i>
+        </button>
     </div>
     <div class="fd-notification__body">
         <div class="fd-notification__content">
@@ -270,7 +284,9 @@ export const smallSize = () => `
     <div class="fd-notification__header">
         <div class="fd-notification__indicator--information"></div>
         <div class="fd-notification__title">This is the notifications title</div>
-        <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent sap-icon--decline fd-notification__close"></button>
+        <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent fd-notification__close">
+            <i class="sap-icon--decline"></i>
+        </button>
     </div>
     <div class="fd-notification__body">
         <div class="fd-notification__content">
@@ -301,7 +317,9 @@ export const notificationGroup = () => `
         <div class="fd-notification__header">
             <div class="fd-notification__indicator--success"></div>
             <div class="fd-notification__title">This is the notifications title.</div>
-            <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent sap-icon--decline fd-notification__close"></button>
+            <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent fd-notification__close">
+                <i class="sap-icon--decline"></i>
+            </button>
         </div>
         <div class="fd-notification__body">
             <div class="fd-notification__content">
@@ -330,7 +348,9 @@ export const notificationGroup = () => `
         <div class="fd-notification__header">
             <div class="fd-notification__indicator--warning"></div>
             <div class="fd-notification__title">This is the notifications title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-            <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent sap-icon--decline fd-notification__close"></button>
+            <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent fd-notification__close">
+                <i class="sap-icon--decline"></i>
+            </button>
         </div>
         <div class="fd-notification__body">
             <div class="fd-notification__content">
@@ -359,7 +379,9 @@ export const notificationGroup = () => `
         <div class="fd-notification__header">
             <div class="fd-notification__indicator--error"></div>
             <div class="fd-notification__title">This is the notifications title</div>
-            <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent sap-icon--decline fd-notification__close"></button>
+            <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent fd-notification__close">
+                <i class="sap-icon--decline"></i>
+            </button>
         </div>
         <div class="fd-notification__body">
             <div class="fd-notification__content">
@@ -388,7 +410,9 @@ export const notificationGroup = () => `
         <div class="fd-notification__header">
             <div class="fd-notification__indicator--information"></div>
             <div class="fd-notification__title">This is the notifications title</div>
-            <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent sap-icon--decline fd-notification__close"></button>
+            <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent fd-notification__close">
+                <i class="sap-icon--decline"></i>
+            </button>
         </div>
         <div class="fd-notification__body">
             <div class="fd-notification__content">
@@ -425,7 +449,9 @@ export const RTL = () => `
         <div class="fd-notification__header">
             <div class="fd-notification__indicator--success"></div>
             <div class="fd-notification__title">حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانيأسي.</div>
-            <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent sap-icon--decline fd-notification__close"></button>
+            <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent fd-notification__close">
+                <i class="sap-icon--decline"></i>
+            </button>
         </div>
         <div class="fd-notification__body">
             <div class="fd-notification__content">
@@ -454,7 +480,9 @@ export const RTL = () => `
         <div class="fd-notification__header">
             <div class="fd-notification__indicator--warning"></div>
             <div class="fd-notification__title">حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانيأسي.</div>
-            <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent sap-icon--decline fd-notification__close"></button>
+            <button aria-label="decline-button" role="button" class="fd-button fd-button--transparent fd-notification__close">
+                <i class="sap-icon--decline"></i>
+            </button>
         </div>
         <div class="fd-notification__body">
             <div class="fd-notification__content">

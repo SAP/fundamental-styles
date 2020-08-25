@@ -142,14 +142,18 @@ export const productMenuAndSearch = () => `
         <div class="fd-input-group fd-shellbar__input-group">
           <input aria-label="search-input" type="text" class="fd-input fd-input-group__input fd-shellbar__input-group__input" id="F4GcX348b1" value="Search" placeholder="Search...">
           <span class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button">
-            <button aria-label="button-decline" class="fd-shellbar__button fd-button sap-icon--decline"></button>
+            <button aria-label="button-decline" class="fd-shellbar__button fd-button">
+                <i class="sap-icon--decline"></i>
+            </button>
           </span>
         </div>
       </div>
     </div>
   </div>
   <div class="fd-shellbar__action fd-shellbar__action--desktop">
-    <button class="fd-button fd-shellbar__button sap-icon--search" aria-label="Search"></button>
+    <button class="fd-button fd-shellbar__button" aria-label="Search">
+        <i class="sap-icon--search"></i>
+    </button>
   </div>
   <div class="fd-shellbar__action">
     <div class="fd-popover fd-popover--right">
@@ -199,29 +203,39 @@ export const linksWithCollapsibleMenu = () => `
           <div class="fd-input-group fd-shellbar__input-group">
             <input aria-label="search" type="text" class="fd-input fd-input-group__input fd-shellbar__input-group__input" id="UIO6J6881" value="Search" placeholder="Search...">
             <span class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button">
-              <button aria-label="navigation-down-arrow-button" class="fd-shellbar__button fd-button sap-icon--navigation-down-arrow"></button>
+              <button aria-label="navigation-down-arrow-button" class="fd-shellbar__button fd-button">
+                <i class="sap-icon--navigation-down-arrow"></i>
+              </button>
             </span>
           </div>
         </div>
       </div>
     </div>
     <div class="fd-shellbar__action fd-shellbar__action--desktop">
-      <button class="fd-button fd-shellbar__button sap-icon--search" aria-label="Search"></button>
+      <button class="fd-button fd-shellbar__button" aria-label="Search">
+        <i class="sap-icon--search"></i>
+      </button>
     </div>
       <div class="fd-shellbar__action fd-shellbar__action--desktop">
-        <button class="fd-button fd-shellbar__button sap-icon--bell" aria-label="Notifications">
-        <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification" aria-label="Unread count">251234</span></button>
+        <button class="fd-button fd-shellbar__button" aria-label="Notifications">
+            <i class="sap-icon--bell"></i>
+            <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification" aria-label="Unread count">251234</span>
+        </button>
       </div>
       <div class="fd-shellbar__action fd-shellbar__action--desktop">
-        <button class="fd-button fd-shellbar__button sap-icon--pool" aria-label="Pool"></button>
+        <button class="fd-button fd-shellbar__button" aria-label="Pool">
+            <i class="sap-icon--pool"></i>
+        </button>
       </div>
       <div class="fd-shellbar__action fd-shellbar__action--mobile">
         <div class="fd-shellbar-collapse">
           <div class="fd-popover fd-popover--right">
             <div class="fd-popover__control">
               <div class="fd-shellbar-collapse--control" onclick="onPopoverClick('CWaGX278')" aria-controls="CWaGX278" aria-expanded="false" aria-haspopup="true" role="button">
-                <button class="fd-button fd-shellbar__button sap-icon--overflow" aria-controls="undefined" aria-haspopup="true" aria-expanded="false">
-                <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification" aria-label="Unread count">25</span></button>
+                <button class="fd-button fd-shellbar__button" aria-controls="undefined" aria-haspopup="true" aria-expanded="false">
+                    <i class="sap-icon--overflow"></i>
+                    <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification" aria-label="Unread count">25</span>
+                </button>
               </div>
             </div>
             <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="CWaGX278">
