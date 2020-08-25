@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.20...v0.12.0-rc.21) (2020-08-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* icon button(The icon is a separate <i> element), menu button(<i> element for icon, span element for text),  markup updated
+
+### Features
+
+* moving icons from pseudoelements to <i> tag in button ([#1305](https://github.com/SAP/fundamental-styles/issues/1305)) ([0c8f1fb](https://github.com/SAP/fundamental-styles/commit/0c8f1fb0bc273dbc2ef05b3c56643980bc864ab1))
+
 ## [0.12.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.19...v0.12.0-rc.20) (2020-08-24)
 
 
