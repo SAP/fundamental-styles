@@ -10,7 +10,7 @@ global.window = { ...global };
 
 const getMatchOptions = ({ context }) => {
     return {
-        failureThreshold: 0.2,
+        failureThreshold: 0.001,
         failureThresholdType: 'percent',
         customSnapshotIdentifier: () => context.name.replace(/\s/g, ''),
         // Will output base64 string of a diff image to console in case of failed tests (in addition to creating a diff image).
@@ -39,8 +39,9 @@ initStoryshots({
     storyKindRegex: /Visual\/([A-Z])\w+/,
     test: imageSnapshot({
         storybookUrl: 'http://localhost:6006/',
-        customizePage,
-        getMatchOptions,
-        beforeScreenshot
+        customizePage: customizePage,
+        getMatchOptions: getMatchOptions,
+        beforeScreenshot: beforeScreenshot,
+        setupTimeout: 30000
     })
 });

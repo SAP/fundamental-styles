@@ -1,4 +1,5 @@
 import '../../dist/calendar.css';
+import '../../dist/title.css';
 
 export default {
     title: 'Components/Calendar',
@@ -950,7 +951,7 @@ export const mobileModePortraitOrientation = () => `
         <header class="fd-dialog__header fd-bar fd-bar--header fd-bar--cozy">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h3 class="fd-dialog__title">
+                    <h3 class="fd-title fd-title--h5">
                         Pick a date
                     </h3>
                 </div>

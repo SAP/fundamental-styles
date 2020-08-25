@@ -298,10 +298,10 @@ export const footer = () => `
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 4</span>
   </li>
-  <li role="listitem" class="fd-list__footer">
-    Footer text
-  </li>
 </ul>
+<span class="fd-list__footer">
+  Footer text
+</span>
 `;
 
 footer.storyName = 'Footer';
@@ -309,7 +309,7 @@ footer.storyName = 'Footer';
 footer.parameters = {
     docs: {
         iframeHeight: 240,
-        storyDescription: 'To create list footer, create list element with `fd-list__footer` class.'
+        storyDescription: 'To create list footer, add a span element with `fd-list__footer` class, after the unordered list element'
     }
 };
 

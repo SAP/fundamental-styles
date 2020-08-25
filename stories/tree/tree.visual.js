@@ -1,8 +1,5 @@
 import '../../dist/button.css';
 import '../../dist/icon.css';
-import '../../dist/menu.css';
-import '../../dist/popover.css';
-import '../../dist/segmented-button.css';
 import * as stories from './tree.stories.js';
 
 export default {

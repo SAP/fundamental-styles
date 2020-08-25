@@ -56,9 +56,9 @@ export const defaultDialog = () => `
                     Dialog header
                 </div>
                 <div class="fd-bar__element">
-                    <h3 class="fd-dialog__title" id="dialog-title-1">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-1">
                         Dialog title
-                    </h3>
+                    </h2>
                 </div>
             </div>
         </header>
@@ -110,9 +110,9 @@ export const sizeModifiers = () =>`
     <header class="fd-dialog__header fd-bar fd-bar--header">
         <div class="fd-bar__left">
             <div class="fd-bar__element">
-                <h3 class="fd-dialog__title" id="dialog-title-2">
+                <h2 class="fd-title fd-title--h5" id="dialog-title-2">
                     Small Dialog
-                </h3>
+                </h2>
             </div>
         </div>
     </header>
@@ -137,9 +137,9 @@ export const sizeModifiers = () =>`
     <header class="fd-dialog__header fd-bar fd-bar--header">
         <div class="fd-bar__left">
             <div class="fd-bar__element">
-                <h3 class="fd-dialog__title" id="dialog-title-3">
+                <h2 class="fd-title fd-title--h5" id="dialog-title-3">
                     Medium Dialog
-                </h3>
+                </h2>
             </div>
         </div>
     </header>
@@ -164,9 +164,9 @@ export const sizeModifiers = () =>`
     <header class="fd-dialog__header fd-bar fd-bar--header">
         <div class="fd-bar__left">
             <div class="fd-bar__element">
-                <h3 class="fd-dialog__title" id="dialog-title-4">
+                <h2 class="fd-title fd-title--h5" id="dialog-title-4">
                     Large Dialog
-                </h3>
+                </h2>
             </div>
         </div>
     </header>
@@ -191,9 +191,9 @@ export const sizeModifiers = () =>`
     <header class="fd-dialog__header fd-bar fd-bar--header">
         <div class="fd-bar__left">
             <div class="fd-bar__element">
-                <h3 class="fd-dialog__title" id="dialog-title-5">
+                <h2 class="fd-title fd-title--h5" id="dialog-title-5">
                     Extra Large Dialog
-                </h3>
+                </h2>
             </div>
         </div>
     </header>
@@ -248,9 +248,9 @@ export const withResizeHandle = () => `
             <header class="fd-dialog__header fd-bar fd-bar--header">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
-                        <h3 class="fd-dialog__title" id="dialog-title-6">
+                        <h2 class="fd-title fd-title--h5" id="dialog-title-6">
                             Lorem ipsum
-                        </h3>
+                        </h2>
                     </div>
                 </div>
             </header>
@@ -287,9 +287,9 @@ export const draggableMode = () => `
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h3 class="fd-dialog__title" id="dialog-title-7">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-7">
                         Lorem ipsum
-                    </h3>
+                    </h2>
                 </div>
             </div>
         </header>
@@ -329,9 +329,9 @@ export const selectDialogExample = () => `
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h3 class="fd-dialog__title" id="dialog-title-8">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-8">
                         Select Dialog
-                    </h3>
+                    </h2>
                 </div>
             </div>
             <div class="fd-bar__right">
@@ -370,10 +370,10 @@ export const selectDialogExample = () => `
                 <li class="fd-list__item">
                     <span class="fd-list__title">List item 6</span>
                 </li>
-                <li class="fd-list__footer">
-                    2 items selected
-                </li>
             </ul>
+            <span class="fd-list__footer">
+                2 items selected
+            </span>
         </div>
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
@@ -403,9 +403,9 @@ export const loadingDialogExample = () => `
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h1 class="fd-dialog__title" id="dialog-title-9">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-9">
                         Loading Data...
-                    </h1>
+                    </h2>
                 </div>
             </div>
         </header>

@@ -50,7 +50,7 @@ $block: #{$fd-namespace}-button;
   cursor: not-allowed;
 
   &:focus {
-    outline: none;
+    @include buttonFocus();
   }
 }
 
@@ -325,52 +325,32 @@ $block: #{$fd-namespace}-button;
   @include iconOverwrite() {
     box-shadow: none;
 
+    @include standardPressed();
     @include standardPressedFocus();
 
     &.#{$block}--ghost {
+      @include ghostPressed();
       @include ghostPressedFocus();
     }
 
     &.#{$block}--positive {
+      @include positivePressed();
       @include positivePressedFocus();
     }
 
     &.#{$block}--negative {
+      @include negativePressed();
       @include negativePressedFocus();
     }
 
     &.#{$block}--attention {
+      @include attentionPressed();
       @include attentionPressedFocus();
     }
 
     &.#{$block}--emphasized {
-      @include emphasizedPressedFocus();
-    }
-  }
-}
-
-@mixin buttonContainerPressed() {
-  @include iconOverwrite() {
-    @include standardPressed();
-
-    &.#{$block}--ghost {
-      @include ghostPressed();
-    }
-
-    &.#{$block}--positive {
-      @include positivePressed();
-    }
-
-    &.#{$block}--negative {
-      @include negativePressed();
-    }
-
-    &.#{$block}--attention {
-      @include attentionPressed();
-    }
-
-    &.#{$block}--emphasized {
       @include emphasizedPressed();
+      @include emphasizedPressedFocus();
     }
   }
 }
@@ -428,22 +408,21 @@ $block: #{$fd-namespace}-button;
     @include half();
   }
 
+  &__instructions {
+    @include fd-screen-reader-only();
+  }
+
   @include fd-hover() {
     @include buttonContainerHover();
   }
 
-  @include fd-active-pressed-selected() {
-    outline: none;
-
-    @include buttonContainerPressed();
-  }
-
   @include fd-focus() {
     @include buttonContainerFocus();
+  }
 
-    @include fd-active-pressed-selected() {
-      @include buttonContainerPressedFocus();
-    }
+  @include fd-active-pressed-selected() {
+    @include buttonContainerFocus();
+    @include buttonContainerPressedFocus();
   }
 
   @include fd-disabled() {

@@ -9,7 +9,7 @@ export default {
 A checkbox lets the user set a binary value (such as “true/false”). When the user clicks or taps the checkbox, it toggles between checked and unchecked. Checked means that the state described by the checkbox text applies, or that the item has been chosen.
 With checkboxes, all options are visible and the user can make one or more selections. This component can be set disabled and also displayed in a row.
 
-Use the check box if:
+Use the checkbox if:
 
 - Only one option can be selected or deselected, for example to accept terms of use. Use it only if the meaning is obvious.
 - A group or a list of options can be selected independently of each other.

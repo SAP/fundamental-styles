@@ -54,7 +54,7 @@ exports[`Storyshots Components/Generic Tile Badge Tile 1`] = `
           aria-label="Profile Image"
           class="fd-tile__profile-img"
           role="presentation"
-          style="background-image: url('https://placeimg.com/60/60/nature')"
+          style="background-image: url('http://lorempixel.com/60/60/nature/10/')"
         />
         
         
@@ -124,7 +124,7 @@ exports[`Storyshots Components/Generic Tile Badge Tile 1`] = `
           aria-label="Profile Image"
           class="fd-tile__profile-img"
           role="presentation"
-          style="background-image: url('https://placeimg.com/50/50/nature')"
+          style="background-image: url('http://lorempixel.com/60/60/nature/10/')"
         />
         
         
@@ -1574,7 +1574,7 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
           aria-label="Profile Image"
           class="fd-tile__profile-img"
           role="presentation"
-          style="background-image: url('https://placeimg.com/60/60/nature')"
+          style="background-image: url('http://lorempixel.com/60/60/nature/10/')"
         />
         
         
@@ -1637,7 +1637,7 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
           aria-label="Profile Image"
           class="fd-tile__profile-img"
           role="presentation"
-          style="background-image: url('https://placeimg.com/50/50/nature')"
+          style="background-image: url('http://lorempixel.com/50/50/nature/10/')"
         />
         
         
@@ -3995,7 +3995,7 @@ exports[`Storyshots Components/Generic Tile Slide Tile 1`] = `
         
       <div
         class="fd-tile__background-img"
-        style="background-image: url('https://placeimg.com/200/200/nature')"
+        style="background-image: url('http://lorempixel.com/200/200/nature/10/')"
       />
       
         
@@ -4095,7 +4095,7 @@ exports[`Storyshots Components/Generic Tile Slide Tile 1`] = `
         
       <div
         class="fd-tile__background-img"
-        style="background-image: url('https://placeimg.com/200/200/nature')"
+        style="background-image: url('http://lorempixel.com/200/200/nature/10/')"
       />
       
         
@@ -4203,7 +4203,7 @@ exports[`Storyshots Components/Generic Tile Slide Tile 1`] = `
         
       <div
         class="fd-tile__background-img"
-        style="background-image: url('https://placeimg.com/400/200/nature')"
+        style="background-image: url('http://lorempixel.com/400/200/nature/10/')"
       />
       
         
@@ -4313,7 +4313,7 @@ exports[`Storyshots Components/Generic Tile Slide Tile 1`] = `
         
       <div
         class="fd-tile__background-img"
-        style="background-image: url('https://placeimg.com/400/200/nature')"
+        style="background-image: url('http://lorempixel.com/400/200/nature/10/')"
       />
       
         
@@ -4485,7 +4485,7 @@ exports[`Storyshots Components/Generic Tile Tile In Action Mode 1`] = `
           aria-label="Profile Image"
           class="fd-tile__profile-img"
           role="presentation"
-          style="background-image: url('https://placeimg.com/60/60/nature')"
+          style="background-image: url('http://lorempixel.com/60/60/nature/10/')"
         />
         
         
@@ -4566,7 +4566,7 @@ exports[`Storyshots Components/Generic Tile Tile In Action Mode 1`] = `
           aria-label="Profile Image"
           class="fd-tile__profile-img"
           role="presentation"
-          style="background-image: url('https://placeimg.com/50/50/nature')"
+          style="background-image: url('http://lorempixel.com/50/50/nature/10/')"
         />
         
         
@@ -4608,7 +4608,7 @@ exports[`Storyshots Components/Generic Tile Tile In Action Mode 1`] = `
         
       <div
         class="fd-tile__background-img"
-        style="background-image: url('https://placeimg.com/400/200/nature')"
+        style="background-image: url('http://lorempixel.com/400/200/nature/10/')"
       />
       
         
@@ -4736,7 +4736,7 @@ exports[`Storyshots Components/Generic Tile Tile In Action Mode 1`] = `
         
       <div
         class="fd-tile__background-img"
-        style="background-image: url('https://placeimg.com/400/200/nature')"
+        style="background-image: url('http://lorempixel.com/400/200/nature/10/')"
       />
       
         

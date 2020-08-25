@@ -95,6 +95,12 @@
   }
 }
 
+@mixin fd-navigated {
+  &.is-navigated {
+    @content;
+  }
+}
+
 // COMBO MIXINS
 // convenience mixins for various elements like buttons
 

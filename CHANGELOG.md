@@ -2,6 +2,185 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.19...v0.12.0-rc.20) (2020-08-24)
+
+
+### Features
+
+* new component Message Page ([#1402](https://github.com/SAP/fundamental-styles/issues/1402)) ([bed5be2](https://github.com/SAP/fundamental-styles/commit/bed5be2a4af6e7965c081a82c65f77d2c1d60308))
+
+## [0.12.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.18...v0.12.0-rc.19) (2020-08-24)
+
+
+### Bug Fixes
+
+* add recommended columns to form grids ([#1355](https://github.com/SAP/fundamental-styles/issues/1355)) ([3a3768e](https://github.com/SAP/fundamental-styles/commit/3a3768ef904fb69eb7fd17f234ae70bc639ea82c))
+
+## [0.12.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.17...v0.12.0-rc.18) (2020-08-21)
+
+## [0.12.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.16...v0.12.0-rc.17) (2020-08-20)
+
+
+### Bug Fixes
+
+* avatar design updates ([#1395](https://github.com/SAP/fundamental-styles/issues/1395)) ([7bfdd72](https://github.com/SAP/fundamental-styles/commit/7bfdd7295854330d744a452c87d180f4cfee2f6f))
+
+## [0.12.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.15...v0.12.0-rc.16) (2020-08-20)
+
+## [0.12.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.14...v0.12.0-rc.15) (2020-08-19)
+
+
+### Bug Fixes
+
+* button active outline for safari and ff ([#1332](https://github.com/SAP/fundamental-styles/issues/1332)) ([5792c05](https://github.com/SAP/fundamental-styles/commit/5792c05aefc970bd2e51941dd407343693149980))
+
+## [0.12.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.13...v0.12.0-rc.14) (2020-08-19)
+
+
+### Bug Fixes
+
+* border cutting off bottom of product switch item subtitles ([#1337](https://github.com/SAP/fundamental-styles/issues/1337)) ([6cd7ef2](https://github.com/SAP/fundamental-styles/commit/6cd7ef2bfa389017cac56f858121d4ebc2430d05))
+
+## [0.12.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.12...v0.12.0-rc.13) (2020-08-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* List footer is no longer a list item i.e. no longer a part of the list. It is a <span> with class 'fd-list__footer' after the <ul>
+
+### Bug Fixes
+
+* list footer as span ([#1397](https://github.com/SAP/fundamental-styles/issues/1397)) ([142f8fa](https://github.com/SAP/fundamental-styles/commit/142f8fa42ef3facd80a648815b6daa6594e80eac))
+
+## [0.12.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.11...v0.12.0-rc.12) (2020-08-17)
+
+
+### Features
+
+* introduce Object Marker component ([#1194](https://github.com/SAP/fundamental-styles/issues/1194)) ([f4d9ce9](https://github.com/SAP/fundamental-styles/commit/f4d9ce980d4919b05828a81a34fb5897035d5b35))
+
+## [0.12.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.10...v0.12.0-rc.11) (2020-08-14)
+
+## [0.12.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.9...v0.12.0-rc.10) (2020-08-14)
+
+
+### Features
+
+* add new Card component ([#1347](https://github.com/SAP/fundamental-styles/issues/1347)) ([ea9c9cd](https://github.com/SAP/fundamental-styles/commit/ea9c9cd6c30f005dace16c5a30b49fdaabc3f99a))
+
+## [0.12.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.8...v0.12.0-rc.9) (2020-08-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* Removed classes: 
+`fd-tree--header`, `fd-tree__row`, `fd-tree__row--header`, `fd-tree__col`, `fd-tree__col--control`, `fd-tree__control`, `fd-tree__col--actions`, `fd-tree__group`, `fd-tree__group--sublevel-*`
+
+### Features
+
+* Tree component Fiori 3 refactoring ([#1308](https://github.com/SAP/fundamental-styles/issues/1308)) ([4d3fa51](https://github.com/SAP/fundamental-styles/commit/4d3fa5194289372a59f1d8207af80eabb4a79b68))
+
+## [0.12.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.7...v0.12.0-rc.8) (2020-08-13)
+
+## [0.12.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.6...v0.12.0-rc.7) (2020-08-12)
+
+## [0.12.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.5...v0.12.0-rc.6) (2020-08-12)
+
+## [0.12.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.4...v0.12.0-rc.5) (2020-08-12)
+
+## [0.12.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.3...v0.12.0-rc.4) (2020-08-12)
+
+
+### Bug Fixes
+
+* minor fixes for Feed Input component ([#1353](https://github.com/SAP/fundamental-styles/issues/1353)) ([7d7c4a8](https://github.com/SAP/fundamental-styles/commit/7d7c4a822fcee5e4353418e3a375a88526985d52))
+
+## [0.12.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.2...v0.12.0-rc.3) (2020-08-12)
+
+
+### Features
+
+* Title component ([#1338](https://github.com/SAP/fundamental-styles/issues/1338)) ([3d5472f](https://github.com/SAP/fundamental-styles/commit/3d5472f7cd51186582d8de104dba313883d9d5a8))
+
+## [0.12.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.1...v0.12.0-rc.2) (2020-08-12)
+
+
+### Features
+
+* add feed input ([#1326](https://github.com/SAP/fundamental-styles/issues/1326)) ([bbf7c22](https://github.com/SAP/fundamental-styles/commit/bbf7c22b835bf235d3469c57d909875e372d7516))
+
+## [0.12.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.0...v0.12.0-rc.1) (2020-08-12)
+
+## [0.12.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.21...v0.12.0-rc.0) (2020-08-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* `fd-col--span`, `fd-layout-grid` removed
+
+### Bug Fixes
+
+* responsive grid layout with new docs ([#889](https://github.com/SAP/fundamental-styles/issues/889)) ([a2d3d9a](https://github.com/SAP/fundamental-styles/commit/a2d3d9af59c4adb4ddbe249538123084d768e87c))
+
+### [0.11.3-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.20...v0.11.3-rc.21) (2020-08-11)
+
+### [0.11.3-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.19...v0.11.3-rc.20) (2020-08-10)
+
+
+### Bug Fixes
+
+* remove extra border on Input Group button ([#1335](https://github.com/SAP/fundamental-styles/issues/1335)) ([2e6ae1a](https://github.com/SAP/fundamental-styles/commit/2e6ae1a2ec8b0cf00f94870aab5fab08b53759cc))
+
+### [0.11.3-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.18...v0.11.3-rc.19) (2020-08-07)
+
+### [0.11.3-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.17...v0.11.3-rc.18) (2020-08-07)
+
+
+### Bug Fixes
+
+* update shellbar icon color ([#1321](https://github.com/SAP/fundamental-styles/issues/1321)) ([0dbaa58](https://github.com/SAP/fundamental-styles/commit/0dbaa5889719c7c3171ea77cfe487eeacb105e06))
+
+### [0.11.3-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.16...v0.11.3-rc.17) (2020-08-05)
+
+### [0.11.3-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.15...v0.11.3-rc.16) (2020-08-04)
+
+### [0.11.3-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.14...v0.11.3-rc.15) (2020-08-04)
+
+### [0.11.3-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.13...v0.11.3-rc.14) (2020-08-03)
+
+
+### Bug Fixes
+
+* product switch item on hover fix [#1285](https://github.com/SAP/fundamental-styles/issues/1285) ([#1320](https://github.com/SAP/fundamental-styles/issues/1320)) ([241b906](https://github.com/SAP/fundamental-styles/commit/241b9068ddef7020613c44eb600d863fef366e11))
+
+### [0.11.3-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.12...v0.11.3-rc.13) (2020-08-03)
+
+### [0.11.3-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.11...v0.11.3-rc.12) (2020-08-02)
+
+### [0.11.3-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.10...v0.11.3-rc.11) (2020-08-02)
+
+### [0.11.3-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.9...v0.11.3-rc.10) (2020-08-02)
+
+### [0.11.3-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.8...v0.11.3-rc.9) (2020-08-01)
+
+### [0.11.3-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.7...v0.11.3-rc.8) (2020-07-31)
+
+### [0.11.3-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.6...v0.11.3-rc.7) (2020-07-30)
+
+
+### Bug Fixes
+
+* additional styles and docs for focusable disabled button ([#1303](https://github.com/SAP/fundamental-styles/issues/1303)) ([7fac644](https://github.com/SAP/fundamental-styles/commit/7fac644f4956f5bdaf2b8e6d31d8073208585c77))
+
+### [0.11.3-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.5...v0.11.3-rc.6) (2020-07-29)
+
+
+### Features
+
+* add screen-reader-only styles to button ([#1293](https://github.com/SAP/fundamental-styles/issues/1293)) ([7da0f10](https://github.com/SAP/fundamental-styles/commit/7da0f103a5b4f36aef39b74c67e20516a6cc3d33))
+
+### [0.11.3-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.4...v0.11.3-rc.5) (2020-07-28)
+
 ### [0.11.3-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.11.3-rc.3...v0.11.3-rc.4) (2020-07-27)
 
 <a name="0.11.3-rc.3"></a>

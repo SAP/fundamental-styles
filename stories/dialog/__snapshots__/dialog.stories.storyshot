@@ -51,14 +51,14 @@ exports[`Storyshots Components/Dialog Loading Dialog Example 1`] = `
           >
             
                     
-            <h1
-              class="fd-dialog__title"
+            <h2
+              class="fd-title fd-title--h5"
               id="dialog-title-9"
             >
               
                         Loading Data...
                     
-            </h1>
+            </h2>
             
                 
           </div>
@@ -190,14 +190,14 @@ exports[`Storyshots Components/Dialog Select Dialog Example 1`] = `
           >
             
                     
-            <h3
-              class="fd-dialog__title"
+            <h2
+              class="fd-title fd-title--h5"
               id="dialog-title-8"
             >
               
                         Select Dialog
                     
-            </h3>
+            </h2>
             
                 
           </div>
@@ -375,17 +375,17 @@ exports[`Storyshots Components/Dialog Select Dialog Example 1`] = `
                 
           </li>
           
-                
-          <li
-            class="fd-list__footer"
-          >
-            
-                    2 items selected
-                
-          </li>
-          
             
         </ul>
+          
+                
+        <span
+          class="fd-list__footer"
+        >
+          
+                  2 items selected
+              
+        </span>
         
         
       </div>
@@ -479,14 +479,14 @@ exports[`Storyshots Components/Dialog Size Modifiers 1`] = `
           >
             
                 
-            <h3
-              class="fd-dialog__title"
+            <h2
+              class="fd-title fd-title--h5"
               id="dialog-title-2"
             >
               
                     Small Dialog
                 
-            </h3>
+            </h2>
             
             
           </div>
@@ -590,14 +590,14 @@ exports[`Storyshots Components/Dialog Size Modifiers 1`] = `
           >
             
                 
-            <h3
-              class="fd-dialog__title"
+            <h2
+              class="fd-title fd-title--h5"
               id="dialog-title-3"
             >
               
                     Medium Dialog
                 
-            </h3>
+            </h2>
             
             
           </div>
@@ -701,14 +701,14 @@ exports[`Storyshots Components/Dialog Size Modifiers 1`] = `
           >
             
                 
-            <h3
-              class="fd-dialog__title"
+            <h2
+              class="fd-title fd-title--h5"
               id="dialog-title-4"
             >
               
                     Large Dialog
                 
-            </h3>
+            </h2>
             
             
           </div>
@@ -812,14 +812,14 @@ exports[`Storyshots Components/Dialog Size Modifiers 1`] = `
           >
             
                 
-            <h3
-              class="fd-dialog__title"
+            <h2
+              class="fd-title fd-title--h5"
               id="dialog-title-5"
             >
               
                     Extra Large Dialog
                 
-            </h3>
+            </h2>
             
             
           </div>

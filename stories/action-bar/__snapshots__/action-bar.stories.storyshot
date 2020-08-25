@@ -33,11 +33,19 @@ exports[`Storyshots Components/Action Bar Action bar mobile view 1`] = `
         </div>
         
             
-        <h3
+        <div
           class="fd-action-bar__title"
         >
-          Action Bar with description and back button
-        </h3>
+          
+                
+          <h1
+            class="fd-title fd-title--h3"
+          >
+            Action Bar with description and back button
+          </h1>
+          
+            
+        </div>
         
             
         <div
@@ -247,11 +255,19 @@ exports[`Storyshots Components/Action Bar Action bar mobile view 1`] = `
         </div>
         
             
-        <h3
+        <div
           class="fd-action-bar__title"
         >
-          Action Bar with description and back button
-        </h3>
+          
+                
+          <h1
+            class="fd-title fd-title--h3"
+          >
+            Action Bar with description and back button
+          </h1>
+          
+            
+        </div>
         
             
         <div
@@ -450,11 +466,19 @@ exports[`Storyshots Components/Action Bar Action bar with Back button and No des
       </div>
       
         
-      <h3
+      <div
         class="fd-action-bar__title"
       >
-        Page Title
-      </h3>
+        
+            
+        <h1
+          class="fd-title fd-title--h3"
+        >
+          Page Title
+        </h1>
+        
+        
+      </div>
       
         
       <div
@@ -524,11 +548,19 @@ exports[`Storyshots Components/Action Bar Action bar with Back button and No des
       </div>
       
         
-      <h3
+      <div
         class="fd-action-bar__title"
       >
-        Page Title
-      </h3>
+        
+            
+        <h1
+          class="fd-title fd-title--h3"
+        >
+          Page Title
+        </h1>
+        
+        
+      </div>
       
         
       <div
@@ -595,7 +627,14 @@ exports[`Storyshots Components/Action Bar Action bar with Long page title and de
       <div
         class="fd-action-bar__title"
       >
-        Page Title Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long.
+        
+            
+        <h1
+          class="fd-title fd-title--h3"
+        >
+          Page Title Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long.
+        </h1>
+        
         
       </div>
       
@@ -686,7 +725,14 @@ exports[`Storyshots Components/Action Bar Action bar with Long page title and de
       <div
         class="fd-action-bar__title"
       >
-        Page Title Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long.
+        
+            
+        <h1
+          class="fd-title fd-title--h3"
+        >
+          Page Title Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long.
+        </h1>
+        
         
       </div>
       
@@ -768,11 +814,19 @@ exports[`Storyshots Components/Action Bar Action bar with back button, descripti
       </div>
       
         
-      <h3
+      <div
         class="fd-action-bar__title"
       >
-        Page Title
-      </h3>
+        
+            
+        <h1
+          class="fd-title fd-title--h3"
+        >
+          Page Title
+        </h1>
+        
+        
+      </div>
       
         
       <div
@@ -849,11 +903,19 @@ exports[`Storyshots Components/Action Bar Action bar with back button, descripti
       </div>
       
         
-      <h3
+      <div
         class="fd-action-bar__title"
       >
-        Page Title
-      </h3>
+        
+            
+        <h1
+          class="fd-title fd-title--h3"
+        >
+          Page Title
+        </h1>
+        
+        
+      </div>
       
         
       <div
@@ -925,11 +987,19 @@ exports[`Storyshots Components/Action Bar Action bar with back button, descripti
       </div>
       
         
-      <h3
+      <div
         class="fd-action-bar__title"
       >
-        Page Title
-      </h3>
+        
+            
+        <h1
+          class="fd-title fd-title--h3"
+        >
+          Page Title
+        </h1>
+        
+        
+      </div>
       
         
       <div
@@ -1006,11 +1076,19 @@ exports[`Storyshots Components/Action Bar Action bar with back button, descripti
       </div>
       
         
-      <h3
+      <div
         class="fd-action-bar__title"
       >
-        Page Title
-      </h3>
+        
+            
+        <h1
+          class="fd-title fd-title--h3"
+        >
+          Page Title
+        </h1>
+        
+        
+      </div>
       
         
       <div
@@ -1081,11 +1159,19 @@ exports[`Storyshots Components/Action Bar Action bar with back button, descripti
       </div>
       
         
-      <h3
+      <div
         class="fd-action-bar__title"
       >
-        Page Title
-      </h3>
+        
+            
+        <h1
+          class="fd-title fd-title--h3"
+        >
+          Page Title
+        </h1>
+        
+        
+      </div>
       
         
       <div
@@ -1162,11 +1248,19 @@ exports[`Storyshots Components/Action Bar Action bar with back button, descripti
       </div>
       
         
-      <h3
+      <div
         class="fd-action-bar__title"
       >
-        Page Title
-      </h3>
+        
+            
+        <h1
+          class="fd-title fd-title--h3"
+        >
+          Page Title
+        </h1>
+        
+        
+      </div>
       
         
       <div
@@ -1223,11 +1317,19 @@ exports[`Storyshots Components/Action Bar Action bar with no Back button 1`] = `
     >
       
         
-      <h3
+      <div
         class="fd-action-bar__title"
       >
-        Page Title
-      </h3>
+        
+            
+        <h1
+          class="fd-title fd-title--h3"
+        >
+          Page Title
+        </h1>
+        
+        
+      </div>
       
         
       <div
@@ -1290,11 +1392,19 @@ exports[`Storyshots Components/Action Bar Action bar with no Back button 1`] = `
     >
       
         
-      <h3
+      <div
         class="fd-action-bar__title"
       >
-        Page Title
-      </h3>
+        
+            
+        <h1
+          class="fd-title fd-title--h3"
+        >
+          Page Title
+        </h1>
+        
+        
+      </div>
       
         
       <div
