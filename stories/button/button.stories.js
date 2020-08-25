@@ -31,7 +31,7 @@ export default {
 
 export const primary = () => `
     <button class="fd-button">Create</button>
-    <button class="fd-button" aria-label="Add to cart"><i class="sap-icon--cart fd-button__icon--left"></i></button>
+    <button class="fd-button" aria-label="Add to cart"><i class="sap-icon--cart"></i></button>
     <button class="fd-button fd-button--emphasized ">Save</button>
 `;
 
@@ -76,9 +76,9 @@ types.parameters = {
 
 export const segmentedButton = () => `
     <div class="fd-segmented-button" role="group" aria-label="Group label">
-        <button aria-label="Survey" class="fd-button"><i class="sap-icon--survey fd-button__icon--left"></i></button>
-        <button aria-label="Chart" class="fd-button is-selected" aria-pressed="true"><i class="sap-icon--pie-chart fd-button__icon--left"></i></button>
-        <button aria-label="Pool" class="fd-button"><i class="sap-icon--pool fd-button__icon--left"></i></button>
+        <button aria-label="Survey" class="fd-button"><i class="sap-icon--survey"></i></button>
+        <button aria-label="Chart" class="fd-button is-selected" aria-pressed="true"><i class="sap-icon--pie-chart"></i></button>
+        <button aria-label="Pool" class="fd-button"><i class="sap-icon--pool"></i></button>
     </div>
 
     <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -99,94 +99,94 @@ segmentedButton.parameters = {
 export const menuButton = () => `
 <button class="fd-button fd-button--menu">
     <span class="fd-button__text">Action Button</span>
-    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--slim-arrow-down"></i>
 </button>
 <button class="fd-button fd-button--ghost fd-button--menu">
     <span class="fd-button__text">Ghost Button</span>
-    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--slim-arrow-down"></i>
 </button>
 <button class="fd-button fd-button--positive fd-button--menu">
     <span class="fd-button__text">Positive Button</span>
-    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--slim-arrow-down"></i>
 </button>
 <button class="fd-button fd-button--negative fd-button--menu">
     <span class="fd-button__text">Negative Button</span>
-    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--slim-arrow-down"></i>
 </button>
 <button class="fd-button fd-button--attention fd-button--menu">
     <span class="fd-button__text">Attention Button</span>
-    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--slim-arrow-down"></i>
 </button>
 <br /><br />
 <button class="fd-button fd-button--menu" aria-disabled="true" disabled>
     <span class="fd-button__text">Action Button</span>
-    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--slim-arrow-down"></i>
 </button>
 <button class="fd-button fd-button--ghost fd-button--menu" aria-disabled="true" disabled>
     <span class="fd-button__text">Ghost Button</span>
-    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--slim-arrow-down"></i>
 </button>
 <button class="fd-button fd-button--positive fd-button--menu" aria-disabled="true" disabled>
     <span class="fd-button__text">Positive Button</span>
-    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--slim-arrow-down"></i>
 </button>
 <button class="fd-button fd-button--negative fd-button--menu" aria-disabled="true" disabled>
     <span class="fd-button__text">Negative Button</span>
-    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--slim-arrow-down"></i>
 </button>
 <button class="fd-button fd-button--attention fd-button--menu" aria-disabled="true" disabled>
     <span class="fd-button__text">Attention Button</span>
-    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--slim-arrow-down"></i>
 </button>
 <br /><br />
 <button class="fd-button fd-button--emphasized fd-button--menu">
     <span class="fd-button__text">Add to Cart</span>
-    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--slim-arrow-down"></i>
 </button>
 <button class="fd-button fd-button--menu">
     <span class="fd-button__text">Add to Cart</span>
-    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--slim-arrow-down"></i>
 </button>
 <button class="fd-button fd-button--transparent fd-button--menu">
     <span class="fd-button__text">Add to Cart</span>
-    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--slim-arrow-down"></i>
 </button>
 <button class="fd-button fd-button--emphasized fd-button--menu fd-button--positive">
     <span class="fd-button__text">Approve Cart</span>
-    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--slim-arrow-down"></i>
 </button>
 <button class="fd-button fd-button--negative fd-button--menu">
     <span class="fd-button__text">Reject</span>
-    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--slim-arrow-down"></i>
 </button>
 <button class="fd-button fd-button--attention fd-button--menu">
     <span class="fd-button__text">Attention</span>
-    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--slim-arrow-down"></i>
 </button>
 <br /><br />
 <button aria-label="Add to cart" class="fd-button fd-button--menu">
-    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
 </button>
 <button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--transparent">
-    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
 </button>
 <button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--positive">
-    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
 </button>
 <button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--negative">
-    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
 </button>
 <button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--attention">
-    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
 </button>
 <br /><br />
 <button class="fd-button fd-button--menu">
     <span class="fd-button__text">Default</span>
-    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--slim-arrow-down"></i>
 </button>
 <button class="fd-button fd-button--compact fd-button--menu">
     <span class="fd-button__text">Compact</span>
-    <i class="sap-icon--slim-arrow-down fd-button__icon--right"></i>
+    <i class="sap-icon--slim-arrow-down"></i>
 </button>
 `;
 
@@ -201,7 +201,7 @@ menuButton.parameters = {
 export const splitMenuButton = () => `
 <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
   <button class="fd-button" aria-label="button">Button with text</button>
-  <button class="fd-button" aria-controls="t4c0o273" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down fd-button__icon--right"></i></button>
+  <button class="fd-button" aria-controls="t4c0o273" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
   id="t4c0o273">
     <nav class="fd-menu">
@@ -224,7 +224,7 @@ export const splitMenuButton = () => `
 <div class="fd-button-split" role="group" aria-label="button-split">
   <button class="fd-button fd-button--emphasized" aria-label="button">Button with text</button>
   <button class="fd-button fd-button--emphasized" aria-controls="t4c0o2732" 
-  aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down fd-button__icon--right"></i></button>
+  aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
 
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
     id="t4c0o2732">
@@ -247,7 +247,7 @@ export const splitMenuButton = () => `
 
 <div class="fd-button-split" role="group" aria-label="button-split">
   <button class="fd-button fd-button--transparent" aria-label="button">Button with text</button>
-  <button class="fd-button fd-button--transparent" aria-controls="t4c0o27322" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down fd-button__icon--right"></i></button>
+  <button class="fd-button fd-button--transparent" aria-controls="t4c0o27322" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
     id="t4c0o27322">
     <nav class="fd-menu">
@@ -288,19 +288,19 @@ The split menu button can be displayed by using <code class="docs-code>fd-button
 
 export const sizes = () => `
 <button class="fd-button">Save</button>
-<button aria-label="Add to cart" class="fd-button"><i class="sap-icon--cart fd-button__icon--left"></i></button>
-<button aria-label="Add to cart" class="fd-button fd-button--ghost"><i class="sap-icon--cart fd-button__icon--left"></i></button>
-<button aria-label="Add to cart" class="fd-button fd-button--emphasized"><i class="sap-icon--cart fd-button__icon--left"></i></button>
-<button aria-label="Add to cart" class="fd-button fd-button--transparent"><i class="sap-icon--cart fd-button__icon--left"></i></button>
+<button aria-label="Add to cart" class="fd-button"><i class="sap-icon--cart"></i></button>
+<button aria-label="Add to cart" class="fd-button fd-button--ghost"><i class="sap-icon--cart"></i></button>
+<button aria-label="Add to cart" class="fd-button fd-button--emphasized"><i class="sap-icon--cart"></i></button>
+<button aria-label="Add to cart" class="fd-button fd-button--transparent"><i class="sap-icon--cart"></i></button>
 <button class="fd-button fd-button--positive">Approve</button>
 <button class="fd-button fd-button--negative">Reject</button>
 <button class="fd-button fd-button--attention">Attention</button>
 <br><br>
 <button class="fd-button fd-button--compact">Edit</button>
-<button aria-label="Add to cart" class="fd-button fd-button--compact"><i class="sap-icon--cart fd-button__icon--left"></i></button>
+<button aria-label="Add to cart" class="fd-button fd-button--compact"><i class="sap-icon--cart"></i></button>
 <button class="fd-button fd-button--ghost fd-button--compact">Edit</button>
-<button aria-label="Add to cart" class="fd-button fd-button--emphasized fd-button--compact"><i class="sap-icon--cart fd-button__icon--left"></i></button>
-<button aria-label="Add to cart" class="fd-button fd-button--transparent fd-button--compact"><i class="sap-icon--cart fd-button__icon--left"></i></button>
+<button aria-label="Add to cart" class="fd-button fd-button--emphasized fd-button--compact"><i class="sap-icon--cart"></i></button>
+<button aria-label="Add to cart" class="fd-button fd-button--transparent fd-button--compact"><i class="sap-icon--cart"></i></button>
 <button class="fd-button fd-button--positive fd-button--compact ">Approve</button>
 <button class="fd-button fd-button--negative fd-button--compact">Reject</button>
 <button class="fd-button fd-button--attention fd-button--compact">Attention</button>
@@ -325,13 +325,13 @@ export const iconAndText = () => `
 <button class="fd-button fd-button--negative">Reject</button>
 <button class="fd-button fd-button--attention">Attention</button>
 <br><br>
-<button aria-label="Add to cart" class="fd-button"><i class="sap-icon--cart fd-button__icon--left"></i></button>
-<button aria-label="Add to cart" class="fd-button fd-button--emphasized"><i class="sap-icon--cart fd-button__icon--left"></i></button>
-<button aria-label="Add to cart" class="fd-button fd-button--transparent"><i class="sap-icon--cart fd-button__icon--left"></i></button>
-<button aria-label="Filter" class="fd-button fd-button--ghost"><i class="sap-icon--filter fd-button__icon--left"></i></button>
-<button aria-label="Accept" class="fd-button fd-button--positive"><i class="sap-icon--accept fd-button__icon--left"></i></button>
-<button aria-label="Decline" class="fd-button fd-button--negative"><i class="sap-icon--decline fd-button__icon--left"></i></button>
-<button aria-label="Decline" class="fd-button fd-button--attention"><i class="sap-icon--decline fd-button__icon--left"></i></button>
+<button aria-label="Add to cart" class="fd-button"><i class="sap-icon--cart"></i></button>
+<button aria-label="Add to cart" class="fd-button fd-button--emphasized"><i class="sap-icon--cart"></i></button>
+<button aria-label="Add to cart" class="fd-button fd-button--transparent"><i class="sap-icon--cart"></i></button>
+<button aria-label="Filter" class="fd-button fd-button--ghost"><i class="sap-icon--filter"></i></button>
+<button aria-label="Accept" class="fd-button fd-button--positive"><i class="sap-icon--accept"></i></button>
+<button aria-label="Decline" class="fd-button fd-button--negative"><i class="sap-icon--decline"></i></button>
+<button aria-label="Decline" class="fd-button fd-button--attention"><i class="sap-icon--decline"></i></button>
 `;
 
 iconAndText.storyName = 'Icon or text';
@@ -458,18 +458,18 @@ export const RTL = () => `
   <button class="fd-button fd-button--menu">Add to Cart</button>
   <button class="fd-button fd-button--transparent fd-button--menu">Add to Cart</button>
   <br><br>
-  <button aria-label="Add to cart" class="fd-button"><i class="sap-icon--cart fd-button__icon--left"></i></button>
-  <button aria-label="Add to cart" class="fd-button fd-button--emphasized"><i class="sap-icon--cart fd-button__icon--left"></i></button>
-  <button aria-label="Add to cart" class="fd-button fd-button--transparent"><i class="sap-icon--cart fd-button__icon--left"></i></button>
-  <button aria-label="Filter" class="fd-button fd-button--ghost"><i class="sap-icon--filter fd-button__icon--left"></i></button>
-  <button aria-label="Approve" class="fd-button fd-button--positive"><i class="sap-icon--accept fd-button__icon--left"></i></button>
-  <button aria-label="Decline" class="fd-button fd-button--negative"><i class="sap-icon--decline fd-button__icon--left"></i></button>
-  <button aria-label="Decline" class="fd-button fd-button--attention"><i class="sap-icon--decline fd-button__icon--left"></i></button>
+  <button aria-label="Add to cart" class="fd-button"><i class="sap-icon--cart"></i></button>
+  <button aria-label="Add to cart" class="fd-button fd-button--emphasized"><i class="sap-icon--cart"></i></button>
+  <button aria-label="Add to cart" class="fd-button fd-button--transparent"><i class="sap-icon--cart"></i></button>
+  <button aria-label="Filter" class="fd-button fd-button--ghost"><i class="sap-icon--filter"></i></button>
+  <button aria-label="Approve" class="fd-button fd-button--positive"><i class="sap-icon--accept"></i></button>
+  <button aria-label="Decline" class="fd-button fd-button--negative"><i class="sap-icon--decline"></i></button>
+  <button aria-label="Decline" class="fd-button fd-button--attention"><i class="sap-icon--decline"></i></button>
   
   <div class="fd-segmented-button" role="group" aria-label="Group label">
-    <button aria-label="Survey" class="fd-button"><i class="sap-icon--survey fd-button__icon--left"></i></button>
-    <button aria-label="Chart" class="fd-button" aria-pressed="true"><i class="sap-icon--pie-chart fd-button__icon--left"></i></button>
-    <button aria-label="Pool" class="fd-button"><i class="sap-icon--pool fd-button__icon--left"></i></button>
+    <button aria-label="Survey" class="fd-button"><i class="sap-icon--survey"></i></button>
+    <button aria-label="Chart" class="fd-button" aria-pressed="true"><i class="sap-icon--pie-chart"></i></button>
+    <button aria-label="Pool" class="fd-button"><i class="sap-icon--pool"></i></button>
   </div>
 
   <div class="fd-segmented-button" role="group" aria-label="Group label">

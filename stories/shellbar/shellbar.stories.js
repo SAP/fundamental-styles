@@ -218,7 +218,7 @@ export const linksWithCollapsibleMenu = () => `
     </div>
       <div class="fd-shellbar__action fd-shellbar__action--desktop">
         <button class="fd-button fd-shellbar__button" aria-label="Notifications">
-            <i class="sap-icon--bell fd-button__icon--left"></i>
+            <i class="sap-icon--bell"></i>
             <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification" aria-label="Unread count">251234</span>
         </button>
       </div>
@@ -233,7 +233,7 @@ export const linksWithCollapsibleMenu = () => `
             <div class="fd-popover__control">
               <div class="fd-shellbar-collapse--control" onclick="onPopoverClick('CWaGX278')" aria-controls="CWaGX278" aria-expanded="false" aria-haspopup="true" role="button">
                 <button class="fd-button fd-shellbar__button" aria-controls="undefined" aria-haspopup="true" aria-expanded="false">
-                    <i class="sap-icon--overflow fd-button__icon--left"></i>
+                    <i class="sap-icon--overflow"></i>
                     <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification" aria-label="Unread count">25</span>
                 </button>
               </div>
