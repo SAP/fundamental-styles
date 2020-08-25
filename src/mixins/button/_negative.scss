@@ -21,20 +21,3 @@
     var(--sapButton_Reject_Active_Background)
   );
 }
-
-@mixin negativePressedFocus() {
-  &::after {
-    border-color: var(--sapContent_ContrastFocusColor);
-  }
-}
-
-@mixin negativeFocus() {
-  @include buttonFocus();
-}
-
-@mixin negativeDisabled {
-  @include isDisabled();
-  @include negative();
-
-  box-shadow: none;
-}

@@ -21,26 +21,3 @@
     var(--sapButton_Emphasized_Active_Background)
   );
 }
-
-@mixin emphasizedPressedFocus() {
-  &::after {
-    border-color: var(--sapContent_ContrastFocusColor);
-  }
-}
-
-@mixin emphasizedFocus() {
-  @include buttonFocus() {
-    border-color: var(--sapContent_ContrastFocusColor);
-  }
-}
-
-@mixin emphasizedDisabled {
-  @include isDisabled();
-  @include emphasized();
-
-  box-shadow: none;
-
-  &:focus {
-    @include buttonFocus();
-  }
-}

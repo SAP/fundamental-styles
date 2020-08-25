@@ -17,21 +17,3 @@
     var(--sapButton_Active_Background)
   );
 }
-
-@mixin ghostPressedFocus() {
-  &::after {
-    border-color: var(--sapContent_ContrastFocusColor);
-  }
-}
-
-@mixin ghostFocus() {
-  @include buttonFocus();
-}
-
-@mixin ghostDisabled() {
-  @include isDisabled();
-  @include ghost();
-
-  outline: none;
-  box-shadow: none;
-}

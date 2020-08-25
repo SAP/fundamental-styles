@@ -184,30 +184,7 @@ $block: #{$fd-namespace}-button;
 
 @mixin buttonContainerDisabled() {
   @include standardDisabled();
-
-  &.#{$block}--ghost {
-    @include ghostDisabled();
-  }
-
-  &.#{$block}--positive {
-    @include positiveDisabled();
-  }
-
-  &.#{$block}--negative {
-    @include negativeDisabled();
-  }
-
-  &.#{$block}--attention {
-    @include attentionDisabled();
-  }
-
-  &.#{$block}--emphasized {
-    @include emphasizedDisabled();
-  }
-
-  &.#{$block}--transparent {
-    @include transparentDisabled();
-  }
+  @include buttonContainer();
 }
 
 @mixin buttonContainerFocus() {
@@ -215,24 +192,8 @@ $block: #{$fd-namespace}-button;
 
   @include standardFocus();
 
-  &.#{$block}--ghost {
-    @include ghostFocus();
-  }
-
-  &.#{$block}--positive {
-    @include positiveFocus();
-  }
-
-  &.#{$block}--negative {
-    @include negativeFocus();
-  }
-
-  &.#{$block}--attention {
-    @include attentionFocus();
-  }
-
   &.#{$block}--emphasized {
-    @include emphasizedFocus();
+    @include standardPressedFocus();
   }
 }
 
@@ -244,27 +205,22 @@ $block: #{$fd-namespace}-button;
 
   &.#{$block}--ghost {
     @include ghostPressed();
-    @include ghostPressedFocus();
   }
 
   &.#{$block}--positive {
     @include positivePressed();
-    @include positivePressedFocus();
   }
 
   &.#{$block}--negative {
     @include negativePressed();
-    @include negativePressedFocus();
   }
 
   &.#{$block}--attention {
     @include attentionPressed();
-    @include attentionPressedFocus();
   }
 
   &.#{$block}--emphasized {
     @include emphasizedPressed();
-    @include emphasizedPressedFocus();
   }
 }
 
