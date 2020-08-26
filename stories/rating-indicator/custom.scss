@@ -1,0 +1,9 @@
+.example-container {
+  display: flex;
+  align-items: center;
+
+  > span {
+    margin-right: 10px;
+    min-width: 75px;
+  }
+}

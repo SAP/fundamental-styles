@@ -1,0 +1,119 @@
+@import "./new-settings";
+@import "./mixins";
+@import "./icon";
+
+$block: #{$fd-namespace}-rating-indicator;
+
+.#{$block} {
+  $ratedColor: var(--sapContent_RatedColor);
+  $unratedColor: var(--sapContent_UnratedColor);
+  $active-star-hover-opacity-transaction: opacity $fd-animation-speed ease-in;
+  $fd-rating-indicator-sizes: (
+    "cozy": ("fontSize": 1.5rem, "spacingBetweenIcons": 0.1875rem, "controlMargin": 0.8125rem 0),
+    "compact": ("fontSize": 1rem, "spacingBetweenIcons": 0.125rem, "controlMargin": 0.5rem 0),
+    "condensed": ("fontSize": 1rem, "spacingBetweenIcons": 0.125rem),
+    "xs": ("fontSize": 0.75rem, "spacingBetweenIcons": 1px),
+    "s": ("fontSize": 1rem, "spacingBetweenIcons": 0.125rem),
+    "m": ("fontSize": 1.35rem, "spacingBetweenIcons": 0.1875rem),
+    "l": ("fontSize": 2rem, "spacingBetweenIcons": 0.25rem)
+  );
+  $defaultSize: map-get($fd-rating-indicator-sizes, 'm');
+  $disabledOpacity: var(--sapContent_DisabledOpacity);
+
+  %#{$block}-dynamic-text {
+    font-family: var(--sapFontFamily);
+    font-size: var(--sapFontSmallSize);
+    color: var(--sapContent_LabelColor);
+    margin-right: 0.5rem;
+  }
+
+  %#{$block}-input-hidden {
+    position: absolute;
+    opacity: 0.0001;
+  }
+
+  @include fd-reset();
+
+  @include fd-disabled() {
+    pointer-events: none;
+    opacity: $disabledOpacity;
+  }
+
+  @include fd-readonly() {
+    pointer-events: none;
+
+    .#{$block}__label {
+      @include fd-icon-glyph('favorite') {
+        color: $unratedColor;
+      }
+    }
+  }
+
+  @include fd-flex-center();
+
+  &__input {
+    @extend %#{$block}-input-hidden;
+
+    &:checked ~ input + .#{$block}__label {
+      @include fd-icon-glyph('unfavorite') {
+        color: $unratedColor;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__label {
+    @include action-cursor();
+
+    @include fd-icon-glyph('favorite') {
+      font-family: "SAP-icons";
+      color: $ratedColor;
+      font-size: map_get($defaultSize, "fontSize");
+      margin-right: map_get($defaultSize, "spacingBetweenIcons");
+    }
+
+    &:hover::before {
+      opacity: 0.9;
+      transition: $active-star-hover-opacity-transaction;
+    }
+  }
+
+  &--hide-dynamic-text {
+    > .dynamic-text {
+      display: none;
+    }
+  }
+
+  > .dynamic-text {
+    @extend %#{$block}-dynamic-text;
+
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  // BLOCK MODIFIERS ************
+  // sizes
+  @each $set-name, $size-set in $fd-rating-indicator-sizes {
+    &--#{$set-name} {
+      @include fd-reset-spacing();
+      $controlMargin: map_get($size-set, "controlMargin");
+
+      @if $controlMargin {
+        margin: $controlMargin;
+      }
+
+      .#{$block}__label {
+        margin-right: map_get($size-set, "spacingBetweenIcons");
+
+        &::before {
+          font-size: map_get($size-set, "fontSize");
+        }
+      }
+    }
+  }
+}
