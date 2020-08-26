@@ -15,8 +15,7 @@ $color-states: (
 
 .#{$block} {
   // TEXT VARIABLES
-  $fd-object-number-text-font-size: var(--sapFontSize) !default;
-  $fd-object-number-unit-font-size: var(--sapFontSmallSize) !default;
+  $fd-object-number-font-size: var(--sapFontSize) !default;
   $fd-object-number-neutral: var(--sapNeutralTextColor);
 
   // LARGE DESIGN VARIABLES
@@ -30,17 +29,17 @@ $color-states: (
 
   &__text,
   &__unit {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    font-size: $fd-object-number-font-size;
     max-width: 100%;
     display: inline-block;
     vertical-align: middle;
     padding-top: 0.125rem;
-
-    @include fd-ellipsis();
   }
 
   &__text {
-    font-size: $fd-object-number-text-font-size;
-
     &::after {
       content: '\00a0 ';
     }
@@ -51,11 +50,12 @@ $color-states: (
   }
 
   &__unit {
-    font-size: $fd-object-number-unit-font-size;
+    font-family: var(--sapFontLightFamily);
   }
 
   @each $set-name, $color-set in $color-states {
-    &--#{$set-name} {
+    &--#{$set-name} &__text,
+    &--#{$set-name} &__unit {
       color: map_get($color-set, "color");
     }
   }
