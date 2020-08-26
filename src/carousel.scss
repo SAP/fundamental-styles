@@ -30,8 +30,9 @@ $button: #{$fd-namespace}-button;
     .#{$block}__button.#{$button} {
       box-shadow: var(--sapContent_Shadow1);
       position: absolute;
-      top: calc(50% - 1.0625rem);
       margin: 0;
+      top: calc(50%);
+      transform: translateY(-50%);
 
       &.sap-icon--slim-arrow-left {
         left: $fd-carousel-button-content-offset;
@@ -147,7 +148,7 @@ $button: #{$fd-namespace}-button;
     }
   }
 
-  &--touch-device {
+  &--no-navigation {
     .#{$block}__button.#{$button} {
       display: none;
     }

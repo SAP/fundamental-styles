@@ -9,3 +9,8 @@ exports[`Storyshots Components/Carousel Carousel with Page Indicator on Top 1`] 
 
 
 `;
+
+exports[`Storyshots Components/Carousel Hiding the Navigation Buttons 1`] = `
+
+
+`;

@@ -21,7 +21,7 @@ The page indicator wraps on the next line if the content is too long.
 - **Content**- (mandatory) the area displaying either the current item or a set of items.
 - **Page indicator**- (optional) can be above or below the content area. After the pages reach the count of 8, the dots are replaced by numeral representation (valid for all devices).
 The numeral format is the following: **1 of 9**
-- **Buttons**- on non-touch devices, paging buttons either float above the left and right sides of the content area, or appear in the paging indicator area. The buttons are not displayed on touchable devices. The <code class="docs-code">fd-carousel--touch-device</code> modifier class applied with <code class="docs-code">fd-carousel</code> when the device is touchable will hide the buttons.
+- **Buttons**- on non-touch devices, paging buttons either float above the left and right sides of the content area, or appear in the paging indicator area. The buttons are not displayed on touchable devices. The <code class="docs-code">fd-carousel--no-navigation</code> modifier class applied with <code class="docs-code">fd-carousel</code> when the device is touchable will hide the buttons.
 
 ## Behavior and Interaction
 
@@ -366,6 +366,115 @@ carouselTop.parameters = {
     docs: {
         iframeHeight: 900,
         storyDescription: `
+`
+    }
+};
+
+
+export const carouselNoNavigation = () => `
+<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
+    <h4>Hiding Navigation Buttons in Page Indicator</h4>
+    <div 
+        class="fd-carousel fd-carousel--no-navigation" 
+        data-ride="carousel" 
+        style="margin-bottom: 3rem; max-width: 30rem;">
+        <div class="fd-carousel__content" style="min-height: 15.5rem;"></div>
+        <div class="fd-carousel__page-indicator-container">
+            <button 
+                class="fd-button fd-carousel__button sap-icon--slim-arrow-left"
+                data-slide="prev"
+                aria-label="Go to previous item">
+            </button>
+            <ol class="fd-carousel__page-indicators">
+                <li 
+                    data-slide-to="1" 
+                    class="fd-carousel__page-indicator"></li>
+                <li 
+                    data-slide-to="2" 
+                    class="fd-carousel__page-indicator"></li>
+                <li 
+                    data-slide-to="3" 
+                    class="fd-carousel__page-indicator"></li>
+                <li 
+                    data-slide-to="4" 
+                    class="fd-carousel__page-indicator"></li>
+                <li 
+                    data-slide-to="5" 
+                    aria-label="Displaying item 5 of 7" 
+                    class="fd-carousel__page-indicator fd-carousel__page-indicator--active"></li>
+                <li 
+                    data-slide-to="6" 
+                    class="fd-carousel__page-indicator"></li>
+                <li 
+                    data-slide-to="7" 
+                    class="fd-carousel__page-indicator"></li>
+            </ol>
+            <button 
+                class="fd-button fd-carousel__button sap-icon--slim-arrow-right"
+                data-slide="next"
+                aria-label="Go to next item">
+            </button>
+        </div>
+    </div>
+    <div style="display: none;" role="region" id="carousel-1" aria-live="polite">
+        Displaying item 1 of 4
+    </div>
+
+    <h4>Hiding Navigation Buttons in the Content</h4>
+    <div 
+        class="fd-carousel fd-carousel--no-navigation" 
+        data-ride="carousel" 
+        style="margin-bottom: 3rem; max-width: 30rem;">
+        <div class="fd-carousel__page-indicator-container">
+            <ol class="fd-carousel__page-indicators">
+                <li 
+                    data-slide-to="1" 
+                    class="fd-carousel__page-indicator"></li>
+                <li 
+                    data-slide-to="2" 
+                    class="fd-carousel__page-indicator"></li>
+                <li 
+                    data-slide-to="3" 
+                    class="fd-carousel__page-indicator"></li>
+                <li 
+                    data-slide-to="4" 
+                    class="fd-carousel__page-indicator"></li>
+                <li 
+                    data-slide-to="5" 
+                    class="fd-carousel__page-indicator fd-carousel__page-indicator--active"></li>
+                <li 
+                    data-slide-to="6" 
+                    class="fd-carousel__page-indicator"></li>
+                <li 
+                    data-slide-to="7" 
+                    class="fd-carousel__page-indicator"></li>
+            </ol>
+        </div>
+        <div class="fd-carousel__content" style="min-height: 15.5rem;">
+           <button 
+                class="fd-button fd-carousel__button sap-icon--slim-arrow-left"
+                data-slide="prev"
+                aria-label="Go to previous item">
+            </button>
+           <button 
+                class="fd-button fd-carousel__button sap-icon--slim-arrow-right"
+                data-slide="next"
+                aria-label="Go to next item">
+            </button>
+        </div>
+    </div>
+    <div style="display: none;" role="region" id="carousel-6" aria-live="polite">
+        Displaying item 1 of 4
+    </div>
+
+</div>
+`;
+
+carouselNoNavigation.storyName = 'Hiding the Navigation Buttons';
+carouselNoNavigation.parameters = {
+    docs: {
+        iframeHeight: 900,
+        storyDescription: `The <code class="docs-code">fd-carousel--no-navigation</code> modifier class applied with <code class="docs-code">fd-carousel</code> will hide the navigation buttons. On touchable devices the navigation is achieved with a swipe gesture and the buttons are not displayed.
 `
     }
 };
