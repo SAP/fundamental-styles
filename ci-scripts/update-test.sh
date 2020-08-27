@@ -11,7 +11,7 @@ if [[ `git status --porcelain` ]]; then
   git push "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" HEAD:"$TRAVIS_BRANCH"
   if [ "$TRAVIS_PULL_REQUEST" != "false" ] ; then
    curl -H "Authorization: token ${GITHUB_TOKEN}" -X POST \
-    -d "{\"body\": \"CI updated visual tests in this pull request. Please review changes and trigger a rebuild.\"}" \
+    -d "{\"body\": \"fundamental-bot updated visual test files in this pull request. Please review these changes and trigger a rebuild.\"}" \
     "https://api.github.com/repos/${TRAVIS_REPO_SLUG}/issues/${TRAVIS_PULL_REQUEST}/comments"
   fi
   exit 1
