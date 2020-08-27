@@ -11,7 +11,7 @@ git config --global user.name "fundamental-bot"
   echo "$TRAVIS_BRANCH"
   echo "$TRAVIS_REPO_SLUG"
   echo "$TRAVIS_PULL_REQUEST"
-  echo "TRAVIS_PULL_REQUEST_BRANCH"
+  echo "$TRAVIS_PULL_REQUEST_BRANCH"
   # git push "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" HEAD:"$TRAVIS_BRANCH"
   # if [ "$TRAVIS_PULL_REQUEST" != "false" ] ; then
   #  curl -H "Authorization: token ${GITHUB_TOKEN}" -X POST \
