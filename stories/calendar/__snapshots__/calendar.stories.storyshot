@@ -57,9 +57,17 @@ exports[`Storyshots Components/Calendar Years 1`] = `
     			
             <button
               aria-label="Previous"
-              class="fd-button fd-button--transparent sap-icon--slim-arrow-left"
+              class="fd-button fd-button--transparent"
               type="button"
-            />
+            >
+              
+                    
+              <i
+                class="sap-icon--slim-arrow-left"
+              />
+              
+                
+            </button>
             
     		
           </div>
@@ -104,9 +112,17 @@ exports[`Storyshots Components/Calendar Years 1`] = `
     			
             <button
               aria-label="Next"
-              class="fd-button fd-button--transparent sap-icon--slim-arrow-right"
+              class="fd-button fd-button--transparent"
               type="button"
-            />
+            >
+              
+                    
+              <i
+                class="sap-icon--slim-arrow-right"
+              />
+              
+                
+            </button>
             
     		
           </div>
@@ -511,9 +527,17 @@ exports[`Storyshots Components/Calendar Years 1`] = `
     			
             <button
               aria-label="Previous"
-              class="fd-button fd-button--transparent sap-icon--slim-arrow-left"
+              class="fd-button fd-button--transparent"
               type="button"
-            />
+            >
+              
+                    
+              <i
+                class="sap-icon--slim-arrow-left"
+              />
+              
+                
+            </button>
             
     		
           </div>
@@ -558,9 +582,17 @@ exports[`Storyshots Components/Calendar Years 1`] = `
     			
             <button
               aria-label="Next"
-              class="fd-button fd-button--transparent sap-icon--slim-arrow-right"
+              class="fd-button fd-button--transparent"
               type="button"
-            />
+            >
+              
+                    
+              <i
+                class="sap-icon--slim-arrow-right"
+              />
+              
+                
+            </button>
             
     		
           </div>
@@ -854,10 +886,16 @@ exports[`Storyshots Components/Calendar Years 1`] = `
     			
             <button
               aria-label="Previous"
-              class="fd-button fd-button--transparent sap-icon--slim-arrow-left"
+              class="fd-button fd-button--transparent"
               type="button"
             />
             
+                    
+            <i
+              class="sap-icon--slim-arrow-left"
+            />
+            
+                
     		
           </div>
           
@@ -901,9 +939,17 @@ exports[`Storyshots Components/Calendar Years 1`] = `
     			
             <button
               aria-label="Next"
-              class="fd-button fd-button--transparent sap-icon--slim-arrow-right"
+              class="fd-button fd-button--transparent"
               type="button"
-            />
+            >
+              
+                    
+              <i
+                class="sap-icon--slim-arrow-right"
+              />
+              
+                
+            </button>
             
     		
           </div>
@@ -1128,9 +1174,17 @@ exports[`Storyshots Components/Calendar Years 1`] = `
     			
             <button
               aria-label="Previous"
-              class="fd-button fd-button--transparent sap-icon--slim-arrow-left"
+              class="fd-button fd-button--transparent"
               type="button"
-            />
+            >
+              
+                    
+              <i
+                class="sap-icon--slim-arrow-left"
+              />
+              
+                
+            </button>
             
     		
           </div>
@@ -1175,9 +1229,17 @@ exports[`Storyshots Components/Calendar Years 1`] = `
     			
             <button
               aria-label="Next"
-              class="fd-button fd-button--transparent sap-icon--slim-arrow-right"
+              class="fd-button fd-button--transparent"
               type="button"
-            />
+            >
+              
+                    
+              <i
+                class="sap-icon--slim-arrow-right"
+              />
+              
+                
+            </button>
             
     		
           </div>

@@ -260,8 +260,16 @@ exports[`Storyshots Components/Dialog Select Dialog Example 1`] = `
               
                         
               <button
-                class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact sap-icon--search"
-              />
+                class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact"
+              >
+                
+                            
+                <i
+                  class="sap-icon--search"
+                />
+                
+                        
+              </button>
               
                     
             </span>
@@ -377,14 +385,14 @@ exports[`Storyshots Components/Dialog Select Dialog Example 1`] = `
           
             
         </ul>
-          
-                
+        
+            
         <span
           class="fd-list__footer"
         >
           
-                  2 items selected
-              
+                2 items selected
+            
         </span>
         
         

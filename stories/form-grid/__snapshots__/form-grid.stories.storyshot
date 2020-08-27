@@ -1,5 +1,849 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Components/Forms/Form Grid Column Not Recommended 1`] = `
+<section>
+  
+
+  <h1>
+    XL3-L2-M2-S1
+  </h1>
+  
+
+  <div
+    class="fd-container fd-form-layout-grid-container"
+  >
+    
+  
+    <div
+      class="fd-row"
+    >
+       
+    
+      <div
+        class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap"
+      >
+        
+      
+        <div
+          class="fd-row"
+        >
+          
+        
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+          
+            <label
+              class="fd-form-label"
+              for="input-1-name"
+            >
+              Name:
+            </label>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+          
+            <input
+              class="fd-input"
+              id="input-1-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+        
+          </div>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+
+    
+      <div
+        class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap"
+      >
+        
+      
+        <div
+          class="fd-row"
+        >
+          
+        
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+          
+            <label
+              class="fd-form-label"
+              for="input-1a-name"
+            >
+              Name:
+            </label>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+          
+            <input
+              class="fd-input"
+              id="input-1a-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+        
+          </div>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+
+    
+      <div
+        class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap"
+      >
+        
+      
+        <div
+          class="fd-row"
+        >
+          
+        
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+          
+            <label
+              class="fd-form-label"
+              for="input-1b-name"
+            >
+              Name:
+            </label>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+          
+            <input
+              class="fd-input"
+              id="input-1b-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+        
+          </div>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+  
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Forms/Form Grid Column Possible 1`] = `
+<section>
+  
+
+  <h1>
+    XL3-L1-M1-S1
+  </h1>
+  
+
+  <div
+    class="fd-container fd-form-layout-grid-container"
+  >
+    
+  
+    <div
+      class="fd-row"
+    >
+       
+    
+      <div
+        class="fd-col fd-col-xl--4 fd-col--wrap"
+      >
+        
+      
+        <div
+          class="fd-row"
+        >
+          
+        
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+          
+            <label
+              class="fd-form-label"
+              for="input-1-name"
+            >
+              Name:
+            </label>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+          
+            <input
+              class="fd-input"
+              id="input-1-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+        
+          </div>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+
+    
+      <div
+        class="fd-col fd-col-xl--4 fd-col--wrap"
+      >
+        
+      
+        <div
+          class="fd-row"
+        >
+          
+        
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+          
+            <label
+              class="fd-form-label"
+              for="input-1a-name"
+            >
+              Name:
+            </label>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+          
+            <input
+              class="fd-input"
+              id="input-1a-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+        
+          </div>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+
+    
+      <div
+        class="fd-col fd-col-xl--4 fd-col--wrap"
+      >
+        
+      
+        <div
+          class="fd-row"
+        >
+          
+        
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+          
+            <label
+              class="fd-form-label"
+              for="input-1b-name"
+            >
+              Name:
+            </label>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+          
+            <input
+              class="fd-input"
+              id="input-1b-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+        
+          </div>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+  
+    </div>
+    
+
+  </div>
+  
+
+
+  <h1>
+    XL1-L1-M1-S1
+  </h1>
+  
+
+  <div
+    class="fd-container fd-form-layout-grid-container"
+  >
+    
+  
+    <div
+      class="fd-row"
+    >
+       
+    
+      <div
+        class="fd-col fd-col--wrap"
+      >
+        
+      
+        <div
+          class="fd-row"
+        >
+          
+        
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+          
+            <label
+              class="fd-form-label"
+              for="input-2-name"
+            >
+              Name:
+            </label>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+          
+            <input
+              class="fd-input"
+              id="input-2-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+        
+          </div>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+
+    
+      <div
+        class="fd-col fd-col--wrap"
+      >
+        
+      
+        <div
+          class="fd-row"
+        >
+          
+        
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+          
+            <label
+              class="fd-form-label"
+              for="input-2a-name"
+            >
+              Name:
+            </label>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+          
+            <input
+              class="fd-input"
+              id="input-2a-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+        
+          </div>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+  
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Forms/Form Grid Column Recommended 1`] = `
+<section>
+  
+
+  <h1>
+    XL2-L2-M2-S1
+  </h1>
+  
+
+  <div
+    class="fd-container fd-form-layout-grid-container"
+  >
+    
+  
+    <div
+      class="fd-row"
+    >
+       
+    
+      <div
+        class="fd-col fd-col-md--6  fd-col-lg--6 fd-col-xl--6 fd-col--wrap"
+      >
+        
+      
+        <div
+          class="fd-row"
+        >
+          
+        
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+          
+            <label
+              class="fd-form-label"
+              for="input-1-name"
+            >
+              Name:
+            </label>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+          
+            <input
+              class="fd-input"
+              id="input-1-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+        
+          </div>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+
+    
+      <div
+        class="fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap"
+      >
+        
+      
+        <div
+          class="fd-row"
+        >
+          
+        
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+          
+            <label
+              class="fd-form-label"
+              for="input-1a-name"
+            >
+              Name:
+            </label>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+          
+            <input
+              class="fd-input"
+              id="input-1a-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+        
+          </div>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+  
+    </div>
+    
+
+  </div>
+  
+
+
+  <h1>
+    XL2-L2-M1-S1
+  </h1>
+  
+
+  <div
+    class="fd-container fd-form-layout-grid-container"
+  >
+    
+  
+    <div
+      class="fd-row"
+    >
+       
+    
+      <div
+        class="fd-col fd-col-md--12 fd-col-lg--6 fd-col-xl--6 fd-col--wrap"
+      >
+        
+      
+        <div
+          class="fd-row"
+        >
+          
+        
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+          
+            <label
+              class="fd-form-label"
+              for="input-2-name"
+            >
+              Name:
+            </label>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+          
+            <input
+              class="fd-input"
+              id="input-2-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+        
+          </div>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+
+    
+      <div
+        class="fd-col fd-col-md--12 fd-col-lg--6 fd-col-xl--6 fd-col--wrap"
+      >
+        
+      
+        <div
+          class="fd-row"
+        >
+          
+        
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+          
+            <label
+              class="fd-form-label"
+              for="input-2a-name"
+            >
+              Name:
+            </label>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+          
+            <input
+              class="fd-input"
+              id="input-2a-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+        
+          </div>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+  
+    </div>
+    
+
+  </div>
+  
+
+
+  <h1>
+    XL2-L1-M1-S1
+  </h1>
+  
+
+  <div
+    class="fd-container fd-form-layout-grid-container"
+  >
+    
+  
+    <div
+      class="fd-row"
+    >
+       
+    
+      <div
+        class="fd-col fd-col-md--12 fd-col-xl--6 fd-col--wrap"
+      >
+        
+      
+        <div
+          class="fd-row"
+        >
+          
+        
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+          
+            <label
+              class="fd-form-label"
+              for="input-3-name"
+            >
+              Name:
+            </label>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+          
+            <input
+              class="fd-input"
+              id="input-3-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+        
+          </div>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+
+    
+      <div
+        class="fd-col fd-col-md--12 fd-col-xl--6 fd-col--wrap"
+      >
+        
+      
+        <div
+          class="fd-row"
+        >
+          
+        
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+          
+            <label
+              class="fd-form-label"
+              for="input-3a-name"
+            >
+              Name:
+            </label>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+          
+            <input
+              class="fd-input"
+              id="input-3a-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+        
+          </div>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+  
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
+
 exports[`Storyshots Components/Forms/Form Grid Four Seven One Compact Layout 1`] = `
 
 
@@ -36,6 +880,11 @@ exports[`Storyshots Components/Forms/Form Grid M Size Full Screen App Long Label
 `;
 
 exports[`Storyshots Components/Forms/Form Grid M Size Split Screen 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Form Grid RTL 1`] = `
 
 
 `;
