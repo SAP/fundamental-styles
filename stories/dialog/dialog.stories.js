@@ -6,41 +6,39 @@ export default {
     title: 'Components/Dialog',
     parameters: {
         description: `
-The dialog is a container displayed in response to an action.
+The dialog component is a container that appears in response to an action made by the user. It interrupts the app’s current process to prompt the user for either information or a confirmation, which requires them to make a decision before the process can continue. Dialog displays in a fixed position and is activated by adding the <code>fd-dialog--active</code> class.
 
-## Introduction
-
-The dialog control interrupts the current app process to prompt the user for information or for a response. It forces a decision or a confirmation that needs to be signed off by the user.
-
-Use the dialog if:
+##Usage
+**Use the dialog if:**
 
 - You want to display complex content, but don’t want the user to navigate away from the current page.
 - You want to display an additional step or process that needs to be confirmed by a user action.
 - You want to enable the user to create an object with a small number of fields (up to 8 fields).
 
-Do not use the dialog if:
+**Do not use the dialog if:**
 
-- You want to display a simple message. Use the message box instead.
+- You want to display a simple message. Use the **Message Box** component instead.
 - You just want to confirm a successful action.
 - You do not want to interrupt the user.
-- You want to enable users to create an object with more than 8 fields. Use an object page instead.
+- You want to enable users to create an object with more than 8 fields. Use an **Object Page** instead.
+        
 
-## Dialog structure
-Dialog consists of following elements:
+## Structure
 
-- <code class="docs-code">.fd-dialog</code>: Wraps dialog and displays it with position: fixed. Dialog can be made visible by applying .fd-dialog--active class
-  - <code class="docs-code">.fd-dialog\\_\\_content</code>: Dialog window
-    - <code class="docs-code">.fd-dialog\\_\\_header</code>: Header
-      - <code class="docs-code">.fd-dialog\\_\\_title</code>: Dialog title
-    - <code class="docs-code">.fd-dialog\\_\\_subheader</code>: Subheader
-    - <code class="docs-code">.fd-dialog\\_\\_body</code>: Dialog content
-    - <code class="docs-code">.fd-dialog\\_\\_loader</code>: Dialog loader
-    - <code class="docs-code">.fd-dialog\\_\\_footer</code>: Dialog footer
-      - <code class="docs-code">.fd-dialog\\_\\_decisive-button</code>: Footer begin/end button
-    - <code class="docs-code">.fd-dialog\\_\\_resize-handle</code>: Handle for resizing modal
+**Dialog consists of the following elements:**
 
-Dialogs header, subheader and footer elements are composed out of [Bar Component](?path=/docs/components-bar).
-CSS classes provided by Dialog component are used to slightly override Bar behaviour in favour of Dialog styling, but Dialog headers and footer can be customized using Bar component features.
+- <code class="docs-code">fd-dialog</code> Main element
+  - <code class="docs-code">fd-dialog\\_\\_content</code> Dialog window
+    - <code class="docs-code">fd-dialog\\_\\_header</code> Dialog header
+      - <code class="docs-code">fd-dialog\\_\\_title</code> Dialog title
+    - <code class="docs-code">fd-dialog\\_\\_subheader</code> Dialog subheader
+    - <code class="docs-code">fd-dialog\\_\\_body</code> Dialog content
+    - <code class="docs-code">fd-dialog\\_\\_loader</code> Dialog loader
+    - <code class="docs-code">fd-dialog\\_\\_footer</code> Dialog footer
+      - <code class="docs-code">fd-dialog\\_\\_decisive-button</code> Dialog footer's _Begin/End_ button
+    - <code class="docs-code">fd-dialog\\_\\_resize-handle</code> Handle for resizing modal
+
+Note: Dialog's header, subheader and footer are elements from the **Bar** component. This means that dialog headers and footers can be customized using bar component features. To style the elements according to dialog’s needs, CSS classes are used to slightly override bar’s original behaviour.
 `,
         tags: ['f3', 'a11y', 'theme']
     }
@@ -99,12 +97,13 @@ export const defaultDialog = () => `
 defaultDialog.storyName = 'Default';
 defaultDialog.parameters = {
     docs: {
-        iframeHeight: 400
+        iframeHeight: 400,
+        storyDescription: 'The default dialog component displays a container comprising a header, title, and subheader; followed by a body (content area), loader, footer and action buttons. The container also features a resize handle in the bottom-right corner of the footer, see resizable dialog below for more information.'
     }
 };
 
 
-export const sizeModifiers = () =>`
+export const sizes = () =>`
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
 <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
     <header class="fd-dialog__header fd-bar fd-bar--header">
@@ -214,34 +213,45 @@ export const sizeModifiers = () =>`
 </div>
 `;
 
-sizeModifiers.parameters = {
+sizes.parameters = {
     docs: {
         iframeHeight: 800,
         storyDescription: `
-By default dialog body has no horizontal paddings. Header, subheader, body and footer paddings should be applied responsively based on dialogs window width.
-Modifying header/subheader/body/footer horizontal paddings:
+By default, dialog’s body has no horizontal paddings. If horizontal paddings are added, they should behave responsively based on dialog's window width.
 
-- \`.fd-dialog__content--s\`: 1rem - max-width: 599px
-- \`.fd-dialog__content--m\`: 2rem - min-width: 600px and max-width: 1023px
-- \`.fd-dialog__content--l\`: 2rem - min-width: 1024px and max-width: 1439px
-- \`.fd-dialog__content--xl\`: 3rem - min-width: 1440px
+####Horizontal padding
 
-By default dialog body has vertical padding. This behavior might be changed using:
+These modifier classes are used to display horizontal padding for dialog's header, subheader, body and footer in various sizes.
 
-- \`.fd-dialog__body--no-vertical-padding\`: padding-top: 0, padding-bottom: 0
+| rem | min-width | max width | modifier class |
+| ---- | ---------- | ---------- | ----------- |
+| 1rem | _n/a_ | 599px | <code>fd-dialog\\_\\_content--s</code> |
+| 2rem | 600px | 1023px | <code>fd-dialog\\_\\_content--m</code> |
+| 2rem | 1024px | 1439px | <code>fd-dialog\\_\\_content--l</code> |
+| 3rem | 1440px | _n/a_ | <code>fd-dialog\\_\\_content--xl</code> |
 
-By default dialog on mobile devices should take full height and width of the screen. This behaviour can be changed using \`.fd-dialog__content--no-mobile-stretch\` class, which will add additional spacing around dialog.
+####Vertical padding
 
-- \`.fd-dialog__content--mobile\`: dialog takes full height and width
-- \`.fd-dialog__content--no-mobile-stretch\`: margin: 6% 10%
-Please remember that on mobile devices Bar component should be used with \`.fd-bar--cozy\` class.
+The default dialog’s body has vertical padding, however, it can be removed if it's suitable for the use case.
 
-**DIALOG HEADER/BODY/FOOTER HORIZONTAL PADDINGS**
+| Modifier class | Modification |
+| ----------------: | :------------ |
+| <code>fd-dialog\\_\\_body--no-vertical-padding</code> | padding-top: 0, padding-bottom: 0 |
+
+####Mobile
+It is recommended that the default dialog takes the full width and height of the mobile screen. If necessary, this behaviour can be changed using the second modifier class below.
+
+| Modifier class | Modification |
+| ----------------: | :------------ |
+|<code>fd-dialog\\_\\_content--mobile</code> | full width and height of mobile screen |
+| <code>fd-dialog\\_\\_content--no-mobile-stretch</code> | adds additional spacing around the container (margin 6% & 10%) |
+
+Note: On mobile devices, the bar component should be used with the <code>fd-bar--cozy</code> class.
 `
     }
 };
 
-export const withResizeHandle = () => `
+export const Resizable = () => `
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
         <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-6">
             <span class="fd-dialog__resize-handle"></span>
@@ -271,17 +281,17 @@ export const withResizeHandle = () => `
     </div>
 `;
 
-withResizeHandle.parameters = {
+Resizable.parameters = {
     docs: {
         iframeHeight: 300,
         storyDescription: `
-To open Dialog with resize handle add span element with \`.fd-dialog__resize-handle\` class inside \`.fd-dialog__content\` container.
-Horizontal and vertical resize should be enabled only for desktop devices. Resizable Dialog should be desktop only feature.
-`
+Dialog can also be displayed with a resize handle by adding a span element with a \`fd-dialog__resize-handle\` class inside the \`fd-dialog__content\` container.
+
+Note: This feature should be enabled for desktop screens only.`
     }
 };
 
-export const draggableMode = () => `
+export const Draggable = () => `
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
     <div class="fd-dialog__content fd-dialog__content--draggable-grab fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-7">
         <header class="fd-dialog__header fd-bar fd-bar--header">
@@ -310,19 +320,21 @@ export const draggableMode = () => `
 </div>
 `;
 
-draggableMode.parameters = {
+Draggable.parameters = {
     docs: {
         iframeHeight: 300,
         storyDescription: `
-Dialog can be opened in draggable mode, enabling drag dialog over browser view-port area (only for desktop). Draggable mode can be visualized using following classes:
+Dialog can be draggable, enabling the user to drag the container around with their cursor on a desktop screen.
 
-- \`.fd-dialog__content--draggable-grab\`: element can be dragged
-- \`.fd-dialog__content--draggable-grabbing\`: element is being dragged
+| Modifier class | Modification |
+| ----------------: | :------------ |
+| \`fd-dialog__content--draggable-grab\` | Modifies the element to be draggable |
+| \`fd-dialog__content--draggable-grabbing\` | Visualizes the grabbing cursor |
 `
     }
 };
 
-export const selectDialogExample = () => `
+export const Selectable = () => `
 <button class="fd-button" onclick="toggleDialog('select-dialog-example', true)">Open example</button>
 <div class="fd-dialog" id="select-dialog-example">
     <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-8">
@@ -391,14 +403,16 @@ export const selectDialogExample = () => `
 </div>
 `;
 
-selectDialogExample.parameters = {
+Selectable.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 500,
+        storyDescription: `The selectable dialog displays list items in the content area that can be selected. Users can search items from the list, select one or more items, and finalize their choice by selecting the _Select_ button. To display the selectable dialog, include the <code>fd-list fd-list--compact</code> class to the body's container element.
+        `
     }
 };
 
 
-export const loadingDialogExample = () => `
+export const Loading = () => `
 <button class="fd-button" onclick="toggleDialog('loading-dialog-example', true)">Open example</button>
 <div class="fd-dialog" id="loading-dialog-example">
     <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-9">
@@ -429,9 +443,10 @@ export const loadingDialogExample = () => `
     </div>
 </div>
 `;
-loadingDialogExample.parameters = {
+Loading.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 500,
+        storyDescription: 'Dialog can display a busy indicator that signals to the user that data is loading. To display a busy indicator in the content area, add the <code>fd-busy-indicator--l</code> to the <code>fd-dialog\\_\\_loader</code> container element. Although the busy indicator is large in this example, you can choose a smaller size. See **Busy Indicator** for more sizes.'
     }
 };
 
