@@ -9,8 +9,7 @@ jobs:
   include:
   - stage: Lint, Test and Size
     script:
-      - npm run test:update
-      - bash ./ci-scripts/update-test.sh
+      - npm run test
   -
     script: npm run lint
   -
