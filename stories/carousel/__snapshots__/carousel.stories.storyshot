@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Carousel Carousel with Page Indicator on Bottom 1`] = `
+exports[`Storyshots Components/Carousel Bottom page indicator 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Carousel Carousel with Page Indicator on Top 1`] = `
+exports[`Storyshots Components/Carousel Hidden navigation buttons 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Carousel Hiding the Navigation Buttons 1`] = `
+exports[`Storyshots Components/Carousel Top page indicator 1`] = `
 
 
 `;

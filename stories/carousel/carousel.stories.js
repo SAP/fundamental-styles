@@ -3,42 +3,28 @@ import '../../dist/carousel.css';
 export default {
     title: 'Components/Carousel',
     parameters: {
-        description: `The carousel component is used for browsing through a set of images. One or several items can be displayed at a time. The user can navigate to either the next or the previous item.
+        description: `The carousel component is used for browsing through a set of images. One or several items can be displayed at a time, and the user can navigate to either the next or the previous item.
+
+The size of the content area automatically adjusts depending on the available screen space. On non-touchable devices, the buttons on the left and right side of the content are used for navigation. The buttons either float on the left and right side or appear in the page indicator area. On touchable devices, the user navigates with a swipe gesture and the buttons are not displayed.
 
 ## Usage
+**Use the carousel if:**
 
-- to achieve a strong visual representations of the items you want to display
-- to display items sequentially or side by side
+- You want a strong visual representation of the items you want to display.
+- You want to display items sequentially or side by side.
 
-## Responsiveness
+**Do not use the carousel if:**
 
-The size of the content area is adjusted automatically, depending on the screen and the available space.
-On non-touchable devices, the buttons on the left and right of the page indicator or the content are used for navigating to the next or the previous item/s. On touchable devices the navigation is achieved with a swipe gesture and the buttons are not displayed. 
-The page indicator wraps on the next line if the content is too long.
-
-## Layout
-
-- **Content**- (mandatory) the area displaying either the current item or a set of items.
-- **Page indicator**- (optional) can be above or below the content area. After the pages reach the count of 8, the dots are replaced by numeral representation (valid for all devices).
-The numeral format is the following: **1 of 9**
-- **Buttons**- on non-touch devices, paging buttons either float above the left and right sides of the content area, or appear in the paging indicator area. The buttons are not displayed on touchable devices. The <code class="docs-code">fd-carousel--no-navigation</code> modifier class applied with <code class="docs-code">fd-carousel</code> when the device is touchable will hide the buttons.
-
-## Behavior and Interaction
-
-- **Navigation for single items**- when the user navigates from the current item to another item, the current item is moved out of the content area, and the next or previous item slides in (depending on the direction of navigation). If the item set contains only one item, navigation is deactivated.
-- **Navigation for single items**- when the user clicks one of the paging buttons, the rightmost or leftmost item is moved out of the content area, and the next or previous item slides in (depending on the navigation direction).
-- **Looping**- if looping is enabled, the carousel jumps back to the first item once all items have been displayed.
-- **Paging**- the current position inside the set of items is displayed using an optional paging indicator. 
+- The items you want to display are uniform
 
 ## Empty State
 
-When no pages are loaded, the Carousel displays a MessagePage component with <code class="docs-code">sap-icon--document</code> icon.
+When no pages are loaded, carousel displays a **Message Page** with a <code class="docs-code">sap-icon--document</code> icon.
 
 
 ## Accessibility
 
-The div element with class <code class="docs-code">fd-carousel</code> has a visually hidden sibling div element with <code class="docs-code">role="region"</code> and <code class="docs-code">aria-live="polite"</code>. Its text should be dynamically updated using JavaScript so that content changes of the Carousel are announced to the user.
-
+To ensure that the carousel is accessible, a div element with class <code class="docs-code">fd-carousel</code> has a visually hidden sibling div element with <code class="docs-code">role="region"</code> and an <code class="docs-code">aria-live="polite"</code> attribute. This way, the text will be dynamically updated using Javascript so that carousel's content changes are announced to the user by screen readers.
 
 `,
         tags: ['f3', 'a11y', 'theme', 'development']
@@ -47,7 +33,7 @@ The div element with class <code class="docs-code">fd-carousel</code> has a visu
 
 export const carouselBottom = () => `
 <div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
-    <h4>Navigation Buttons in Page Indicator</h4>
+    <h4>Navigation buttons in page indicator</h4>
     <div 
         class="fd-carousel" 
         data-ride="carousel" 
@@ -94,7 +80,7 @@ export const carouselBottom = () => `
         Displaying item 1 of 4
     </div>
 
-    <h4>Navigation Buttons in Content</h4>
+    <h4>Content navigation buttons</h4>
     <div 
         class="fd-carousel" 
         data-ride="carousel" 
@@ -141,7 +127,7 @@ export const carouselBottom = () => `
         Displaying item 1 of 4
     </div>
 
-    <h4>Numeral Format for Page Indicator</h4>
+    <h4>Numeric page indicator</h4>
     <div 
         class="fd-carousel" 
         data-ride="carousel" 
@@ -167,7 +153,7 @@ export const carouselBottom = () => `
         Displaying item 1 of 4
     </div>
 
-    <h4>No Page Indicator</h4>
+    <h4>No page indicator</h4>
     <div 
         class="fd-carousel" 
         data-ride="carousel" 
@@ -191,18 +177,18 @@ export const carouselBottom = () => `
 </div>
 `;
 
-carouselBottom.storyName = 'Carousel with Page Indicator on Bottom';
+carouselBottom.storyName = 'Bottom page indicator';
 carouselBottom.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `
+        storyDescription: `The bottom page indicator carousel displays a content area, navigation buttons and a page indicator at the bottom. The page indicator wraps onto the next line if the content is too long, and after the pages reach a count of 8, the dots are replaced by numerical representation i.e. *1 of 4*.
 `
     }
 };
 
 export const carouselTop = () => `
 <div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
-    <h4>Navigation Buttons in Page Indicator</h4>
+    <h4>Navigation buttons in page indicator</h4>
     <div 
         class="fd-carousel" 
         data-ride="carousel" 
@@ -248,7 +234,7 @@ export const carouselTop = () => `
         Displaying item 1 of 4
     </div>
 
-    <h4>Navigation Buttons in Content</h4>
+    <h4>Navigation buttons in content</h4>
     <div 
         class="fd-carousel" 
         data-ride="carousel" 
@@ -295,7 +281,7 @@ export const carouselTop = () => `
         Displaying item 1 of 4
     </div>
 
-    <h4>Numeral Format for Page Indicator</h4>
+    <h4>Numeral format for page indicator</h4>
     <div 
         class="fd-carousel" 
         data-ride="carousel" 
@@ -322,7 +308,7 @@ export const carouselTop = () => `
         Displaying item 1 of 4
     </div>
 
-    <h4>No Page Indicators</h4>
+    <h4>No page indicators</h4>
     <div 
         class="fd-carousel" 
         data-ride="carousel" 
@@ -361,11 +347,11 @@ export const carouselTop = () => `
 </div>
 `;
 
-carouselTop.storyName = 'Carousel with Page Indicator on Top';
+carouselTop.storyName = 'Top page indicator';
 carouselTop.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `
+        storyDescription: `The top page indicator carousel displays a content area, navigation buttons and a page indicator at the top.
 `
     }
 };
@@ -373,7 +359,7 @@ carouselTop.parameters = {
 
 export const carouselNoNavigation = () => `
 <div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
-    <h4>Hiding Navigation Buttons in Page Indicator</h4>
+    <h4>Hiding navigation buttons in page indicator</h4>
     <div 
         class="fd-carousel fd-carousel--no-navigation" 
         data-ride="carousel" 
@@ -420,7 +406,7 @@ export const carouselNoNavigation = () => `
         Displaying item 1 of 4
     </div>
 
-    <h4>Hiding Navigation Buttons in the Content</h4>
+    <h4>Hiding navigation buttons in the content</h4>
     <div 
         class="fd-carousel fd-carousel--no-navigation" 
         data-ride="carousel" 
@@ -470,11 +456,11 @@ export const carouselNoNavigation = () => `
 </div>
 `;
 
-carouselNoNavigation.storyName = 'Hiding the Navigation Buttons';
+carouselNoNavigation.storyName = 'Hidden navigation buttons';
 carouselNoNavigation.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `The <code class="docs-code">fd-carousel--no-navigation</code> modifier class applied with <code class="docs-code">fd-carousel</code> will hide the navigation buttons. On touchable devices the navigation is achieved with a swipe gesture and the buttons are not displayed.
+        storyDescription: `Carousel can also be displayed without navigation buttons. To hide them, add the <code class="docs-code">fd-carousel--no-navigation</code> modifier class to the <code class="docs-code">fd-carousel</code> class. On touchable devices, the user can navigate with a swipe gesture.
 `
     }
 };
