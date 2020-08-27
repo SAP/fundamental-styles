@@ -188,8 +188,16 @@ exports[`Storyshots Components/Forms/Input Group Input With Actions 1`] = `
             
         <button
           aria-label="Navigation"
-          class="fd-input-group__button fd-button fd-button--icon fd-button--transparent sap-icon--navigation-down-arrow"
-        />
+          class="fd-input-group__button fd-button fd-button--icon fd-button--transparent"
+        >
+           
+                
+          <i
+            class="sap-icon--navigation-down-arrow"
+          />
+          
+            
+        </button>
         
         
       </span>
@@ -238,8 +246,16 @@ exports[`Storyshots Components/Forms/Input Group Input With Actions 1`] = `
             
         <button
           aria-label="Navigation"
-          class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact sap-icon--navigation-down-arrow"
-        />
+          class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact"
+        >
+           
+                
+          <i
+            class="sap-icon--navigation-down-arrow"
+          />
+          
+            
+        </button>
         
         
       </span>

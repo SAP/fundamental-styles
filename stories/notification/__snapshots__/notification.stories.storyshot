@@ -58,9 +58,17 @@ exports[`Storyshots Components/Notification Small Size 1`] = `
         
       <button
         aria-label="decline-button"
-        class="fd-button fd-button--transparent sap-icon--decline fd-notification__close"
+        class="fd-button fd-button--transparent fd-notification__close"
         role="button"
-      />
+      >
+        
+            
+        <i
+          class="sap-icon--decline"
+        />
+        
+        
+      </button>
       
     
     </div>
@@ -190,9 +198,17 @@ exports[`Storyshots Components/Notification Small Size 1`] = `
         
       <button
         aria-label="decline-button"
-        class="fd-button fd-button--transparent sap-icon--decline fd-notification__close"
+        class="fd-button fd-button--transparent fd-notification__close"
         role="button"
-      />
+      >
+        
+            
+        <i
+          class="sap-icon--decline"
+        />
+        
+        
+      </button>
       
     
     </div>

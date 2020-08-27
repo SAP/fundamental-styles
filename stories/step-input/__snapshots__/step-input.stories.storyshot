@@ -45,12 +45,16 @@ exports[`Storyshots Components/StepInput States 1`] = `
       class="
             fd-button
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--less"
+            fd-step-input__button"
       onclick="stepInputValue('step-5', 'down');"
       tabindex="-1"
       type="button"
     >
+      
+                
+      <i
+        class="sap-icon--less"
+      />
       
         
     </button>
@@ -73,12 +77,16 @@ exports[`Storyshots Components/StepInput States 1`] = `
       class="
             fd-button 
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--add"
+            fd-step-input__button"
       onclick="stepInputValue('step-5', 'up');"
       tabindex="-1"
       type="button"
     >
+      
+                
+      <i
+        class="sap-icon--add"
+      />
       
         
     </button>
@@ -107,12 +115,16 @@ exports[`Storyshots Components/StepInput States 1`] = `
       class="
             fd-button
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--less"
+            fd-step-input__button"
       onclick="stepInputValue('step-6', 'down');"
       tabindex="-1"
       type="button"
     >
+      
+                
+      <i
+        class="sap-icon--less"
+      />
       
         
     </button>
@@ -135,12 +147,16 @@ exports[`Storyshots Components/StepInput States 1`] = `
       class="
             fd-button 
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--add"
+            fd-step-input__button"
       onclick="stepInputValue('step-6', 'up');"
       tabindex="-1"
       type="button"
     >
+      
+                
+      <i
+        class="sap-icon--add"
+      />
       
         
     </button>
@@ -168,12 +184,16 @@ exports[`Storyshots Components/StepInput States 1`] = `
       class="
             fd-button
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--less"
+            fd-step-input__button"
       onclick="stepInputValue('step-7', 'down');"
       tabindex="-1"
       type="button"
     >
+      
+                
+      <i
+        class="sap-icon--less"
+      />
       
         
     </button>
@@ -196,12 +216,16 @@ exports[`Storyshots Components/StepInput States 1`] = `
       class="
             fd-button 
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--add"
+            fd-step-input__button"
       onclick="stepInputValue('step-7', 'up');"
       tabindex="-1"
       type="button"
     >
+      
+                
+      <i
+        class="sap-icon--add"
+      />
       
         
     </button>
@@ -231,12 +255,16 @@ exports[`Storyshots Components/StepInput States 1`] = `
       class="
         fd-button
         fd-button--transparent
-        fd-step-input__button
-        sap-icon--less"
+        fd-step-input__button"
       onclick="stepInputValue('step-8', 'down');"
       tabindex="-1"
       type="button"
     >
+      
+            
+      <i
+        class="sap-icon--less"
+      />
       
     
     </button>
@@ -259,12 +287,16 @@ exports[`Storyshots Components/StepInput States 1`] = `
       class="
         fd-button 
         fd-button--transparent
-        fd-step-input__button
-        sap-icon--add"
+        fd-step-input__button"
       onclick="stepInputValue('step-8', 'up');"
       tabindex="-1"
       type="button"
     >
+      
+            
+      <i
+        class="sap-icon--add"
+      />
       
     
     </button>
