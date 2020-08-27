@@ -44,10 +44,14 @@ sizes.parameters = {
     docs: {
         iframeHeight: 250,
 <<<<<<< HEAD
+<<<<<<< HEAD
         storyDescription: 'Icons don’t have predefined sizes because they align with the font size value. They are vector graphics, meaning they can be easily resized without compromising their appearance. And because icons are essentially a font, there are unlimited sizes.'
 =======
         storyDescription: 'Icons don’t have predefined sizes because they align with the font size value. They are vector graphics, meaning they can be easily resized without compromising their appearance. And because Icons are essentially a font, there are unlimited sizes.'
 >>>>>>> updated-docs
+=======
+        storyDescription: 'Icons don’t have predefined sizes because they align with the font size value. They are vector graphics, meaning they can be easily resized without compromising their appearance. And because icons are essentially a font, there are unlimited sizes.'
+>>>>>>> small-change
     }
 };
 
