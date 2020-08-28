@@ -11,7 +11,7 @@ npm run std-version -- --prerelease rc --no-verify --debug
 
 git status
 
-git push --follow-tags "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" "$TRAVIS_BRANCH"
+git push --follow-tags "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" "$TRAVIS_BRANCH"  > /dev/null 2>&1;
 
 #build dist and component folders
 npm run storybook:static
