@@ -9,6 +9,8 @@ if [[ `git status --porcelain` ]]; then
 
   echo "$TRAVIS_PULL_REQUEST_BRANCH"
    if [ "$TRAVIS_PULL_REQUEST" != "false" ] ; then
+     git branch
+     git checkout $TRAVIS_PULL_REQUEST_BRANCH
      git add .
      git commit -a -n -m "chore: update visual regression images [CI SKIP]"
      git push "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" HEAD:"$TRAVIS_PULL_REQUEST_BRANCH"
