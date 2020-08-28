@@ -4,14 +4,19 @@ export default {
     title: 'Components/Info Label',
     parameters: {
         description: `
-Info Label is a small non-interactive numeric or text-based label.
-Its primary use is to add user-defined characteristic to an object. 
-Use the Info Label base class with following modifiers:
+The info label is a non-interactive, non-semantic label with text. The label is used to highlight a characteristic of an object or item such as a state, type, quantity or condition. It can be used in tables, headers, and display forms.
+        
+##Usage
+**Use the info label if:**
 
-- \`fd-info-label\`
-    - \`fd-info-label--accent-color-*\`
-    - \`fd-info-label--icon\`
-    - \`fd-info-label--numeric\`
+- You are designing an administrative or monitoring application.
+- You want to highlight a characteristic of an object.
+        
+**Do not use the info label if:**
+
+- You are designing an SAP Fiori application.
+- You want to indicate the status of an object. 
+        
       `,
         tags: ['f3', 'a11y', 'theme']
     }
@@ -44,7 +49,7 @@ export const colors = () => `
     <span class="fd-info-label fd-info-label--accent-color-10">Info Label</span>
 </div>
 `;
-colors.storyName = 'Color Flavors';
+colors.storyName = 'Colors';
 
 /** Use the `fd-info-label--icon` modifier class and icon type to create Info Label with Icon. */
 
@@ -55,7 +60,7 @@ export const icons = () => `
     <span class="fd-info-label fd-info-label--accent-color-2 fd-info-label--icon sap-icon--upload-to-cloud"></span>
 </div>
 `;
-icons.storyName = 'Info Label with Icon';
+icons.storyName = 'Icon';
 
 /** For Numeric Info Label use the `fd-info-label--numeric` modifier class. */
 
@@ -68,7 +73,7 @@ export const numeric = () => `
     <span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-3">42k</span>
 </div>
 `;
-numeric.storyName = 'Numeric Info Label';
+numeric.storyName = 'Number';
 
 /** Info Label in RTL mode. */
 
@@ -80,4 +85,4 @@ export const rtl = () => `
     <span class="fd-info-label fd-info-label--accent-color-2 fd-info-label--icon sap-icon--upload-to-cloud"></span>
 </div>
 `;
-rtl.storyName = 'Info Label RTL';
+rtl.storyName = 'RTL';
