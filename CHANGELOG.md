@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.22...v0.12.0-rc.23) (2020-08-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* update expand/collapse button(add `i` tag for the icon)
+
+### Bug Fixes
+
+* panel button broken styling fix ([#1526](https://github.com/SAP/fundamental-styles/issues/1526)) ([d12740f](https://github.com/SAP/fundamental-styles/commit/d12740f79890dd8fae1ed8aaac53e0669517e7fa))
+
 ## [0.12.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.21...v0.12.0-rc.22) (2020-08-27)
 
 ## [0.12.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.20...v0.12.0-rc.21) (2020-08-25)
