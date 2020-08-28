@@ -5,54 +5,30 @@
 $block: #{$fd-namespace}-rating-indicator;
 
 .#{$block} {
-  $ratedColor: var(--sapContent_RatedColor);
   $unratedColor: var(--sapContent_UnratedColor);
-  $active-star-hover-opacity-transaction: opacity $fd-animation-speed ease-in;
   $fd-rating-indicator-sizes: (
     "cozy": ("fontSize": 1.5rem, "spacingBetweenIcons": 0.1875rem, "controlMargin": 0.8125rem 0),
     "compact": ("fontSize": 1rem, "spacingBetweenIcons": 0.125rem, "controlMargin": 0.5rem 0),
     "condensed": ("fontSize": 1rem, "spacingBetweenIcons": 0.125rem),
     "xs": ("fontSize": 0.75rem, "spacingBetweenIcons": 1px),
     "s": ("fontSize": 1rem, "spacingBetweenIcons": 0.125rem),
-    "m": ("fontSize": 1.35rem, "spacingBetweenIcons": 0.1875rem),
+    "m": ("fontSize": 1.375rem, "spacingBetweenIcons": 0.1875rem),
     "l": ("fontSize": 2rem, "spacingBetweenIcons": 0.25rem)
   );
-  $defaultSize: map-get($fd-rating-indicator-sizes, 'm');
-  $disabledOpacity: var(--sapContent_DisabledOpacity);
-
-  %#{$block}-dynamic-text {
-    font-family: var(--sapFontFamily);
-    font-size: var(--sapFontSmallSize);
-    color: var(--sapContent_LabelColor);
-    margin-right: 0.5rem;
-  }
-
-  %#{$block}-input-hidden {
-    position: absolute;
-    opacity: 0.0001;
-  }
+  $fd-rating-indicator-default-size: map-get($fd-rating-indicator-sizes, 'm');
 
   @include fd-reset();
 
-  @include fd-disabled() {
-    pointer-events: none;
-    opacity: $disabledOpacity;
+  &__container {
+    @include fd-fiori-focus();
   }
-
-  @include fd-readonly() {
-    pointer-events: none;
-
-    .#{$block}__label {
-      @include fd-icon-glyph('favorite') {
-        color: $unratedColor;
-      }
-    }
-  }
-
-  @include fd-flex-center();
 
   &__input {
-    @extend %#{$block}-input-hidden;
+    @include fd-reset();
+
+    position: absolute;
+    opacity: 0.0001;
+    z-index: -1;
 
     &:checked ~ input + .#{$block}__label {
       @include fd-icon-glyph('unfavorite') {
@@ -66,18 +42,26 @@ $block: #{$fd-namespace}-rating-indicator;
   }
 
   &__label {
+    @include fd-reset();
     @include action-cursor();
 
     @include fd-icon-glyph('favorite') {
       font-family: "SAP-icons";
-      color: $ratedColor;
-      font-size: map_get($defaultSize, "fontSize");
-      margin-right: map_get($defaultSize, "spacingBetweenIcons");
+      color: var(--sapContent_RatedColor);
+      font-size: map_get($fd-rating-indicator-default-size, "fontSize");
+      margin-right: map_get($fd-rating-indicator-default-size, "spacingBetweenIcons");
+    }
+
+    display: block;
+    float: left;
+
+    @include fd-rtl() {
+      float: right;
     }
 
     &:hover::before {
       opacity: 0.9;
-      transition: $active-star-hover-opacity-transaction;
+      transition: opacity $fd-animation-speed ease-in;
     }
   }
 
@@ -88,12 +72,55 @@ $block: #{$fd-namespace}-rating-indicator;
   }
 
   > .dynamic-text {
-    @extend %#{$block}-dynamic-text;
+    @include fd-reset();
+    @include fd-ellipsis();
 
-    font-weight: normal;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: var(--sapFontSmallSize);
+    color: var(--sapContent_LabelColor);
+    margin-left: 0.5rem;
+  }
+
+  @include fd-disabled() {
+    pointer-events: none;
+    opacity: var(--sapContent_DisabledOpacity);
+  }
+
+  @include fd-readonly() {
+    pointer-events: none;
+
+    .#{$block}__input {
+      &:checked ~ input + .#{$block}__label {
+        @include fd-icon-glyph('favorite') {
+          color: $unratedColor;
+        }
+      }
+    }
+  }
+
+  @include fd-flex-center();
+
+  &.is-display-mode {
+    pointer-events: none;
+
+    .#{$block}__label {
+      @include fd-icon-glyph('favorite') {
+        color: var(--sapTextColor);
+      }
+
+      &::before {
+        font-size: 1rem;
+      }
+
+      margin-right: 0.125rem;
+    }
+
+    .#{$block}__input {
+      &:checked ~ input + .#{$block}__label {
+        @include fd-icon-glyph('favorite') {
+          color: $unratedColor;
+        }
+      }
+    }
   }
 
   // BLOCK MODIFIERS ************
