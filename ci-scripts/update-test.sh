@@ -9,6 +9,7 @@ if [[ `git status --porcelain` ]]; then
 
   echo "$TRAVIS_PULL_REQUEST_BRANCH"
    if [ "$TRAVIS_PULL_REQUEST" != "false" ] ; then
+     npm run test:update
      git branch
      git checkout $TRAVIS_PULL_REQUEST_BRANCH
      git add .
