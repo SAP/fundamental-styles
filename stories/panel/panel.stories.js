@@ -32,9 +32,11 @@ export const expandable = () => `
 <div class="fd-panel">
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
-            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="fghqwe321" ></button>
+            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="fghqwe321">
+                <i class="sap-icon--slim-arrow-right"></i>
+            </button>
         </div>
-        <h5 class="fd-panel__title" id="asdASD123">Panel Header</h5>
+        <h5 class="fd-panel__title" id="asdASD123">Panel Header Collapsed</h5>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -45,6 +47,27 @@ export const expandable = () => `
         </div>
     </div>
     <div role="region" aria-labelledby="jhqDKYdf" class="fd-panel__content" aria-hidden="true" id="fghqwe321">
+        <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+        </span>
+    </div>
+</div>
+<div class="fd-panel">
+    <div class="fd-panel__header">
+        <div class="fd-panel__expand">
+            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="true" aria-haspopup="true" aria-controls="fghqwe32122">
+                <i class="sap-icon--slim-arrow-down"></i>
+            </button>
+        </div>
+        <h5 class="fd-panel__title" id="asdASD1234">Panel Header Expanded</h5>
+    </div>
+    <div role="region" aria-labelledby="jhqDKYdf" class="fd-panel__content" aria-hidden="false" id="fghqwe32122">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
@@ -106,7 +129,9 @@ export const compact = () => `
 <div class="fd-panel fd-panel--compact">
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="Gekf63a" aria-labelledby="asdASD234"></button>
+            <button class="fd-button fd-button--compact fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="Gekf63a" aria-labelledby="asdASD234">
+                <i class="sap-icon--slim-arrow-right"></i>
+            </button>
         </div>
         <h5 class="fd-panel__title" id="asdASD234">Panel Header</h5>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
@@ -142,7 +167,9 @@ export const fixedHeightContent = () => `
 <div class="fd-panel">
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
-            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="GJL745SV" aria-labelledby="asdASD345"></button>
+            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="GJL745SV" aria-labelledby="asdASD345">
+                <i class="sap-icon--slim-arrow-right"></i>
+            </button>
         </div>
         <h5 class="fd-panel__title" id="asdASD345">Panel Header</h5>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
