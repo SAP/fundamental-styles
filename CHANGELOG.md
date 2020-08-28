@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.23...v0.12.0-rc.24) (2020-08-28)
+
+
+### Features
+
+* new Fiori 3 component Carousel ([#1429](https://github.com/SAP/fundamental-styles/issues/1429)) ([919b464](https://github.com/SAP/fundamental-styles/commit/919b4642f341c6b0706860af4bb4c4277e5dd43a))
+
 ## [0.12.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.22...v0.12.0-rc.23) (2020-08-28)
 
 
