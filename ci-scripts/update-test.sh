@@ -5,20 +5,20 @@ set -e
 git config --global user.email "fundamental@sap.com"
 git config --global user.name "fundamental-bot"
 
-if [[ `git status --porcelain` ]]; then
+if [ "$TRAVIS_PULL_REQUEST" != "false" ] ; then
 
-  echo "$TRAVIS_PULL_REQUEST_BRANCH"
-   if [ "$TRAVIS_PULL_REQUEST" != "false" ] ; then
-     npm run test:update
-     git branch
-     git checkout $TRAVIS_PULL_REQUEST_BRANCH
-     git add .
-     git commit -a -n -m "chore: update visual regression images [CI SKIP]"
-     git push "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" HEAD:"$TRAVIS_PULL_REQUEST_BRANCH"
-   fi
-    
+  npm run test:update
+
+  if [[ `git status --porcelain` ]]; then
+    git branch
+    git checkout $TRAVIS_PULL_REQUEST_BRANCH
+    git add .
+    git commit -a -n -m "chore: update visual regression images [CI SKIP]"
+    git push "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" HEAD:"$TRAVIS_PULL_REQUEST_BRANCH"
+
     exit 1
- fi  
+  fi
+fi  
 
   #  curl -H "Authorization: token ${GITHUB_TOKEN}" -X POST \
   #   -d "{\"body\": \"fundamental-bot updated visual test files in this pull request. Please review these changes and trigger a rebuild.\"}" \
