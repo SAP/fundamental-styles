@@ -6,8 +6,204 @@ exports[`Storyshots Components/Panel Compact 1`] = `
 `;
 
 exports[`Storyshots Components/Panel Expandable 1`] = `
+<section>
+  
 
+  <div
+    class="fd-panel"
+  >
+    
+    
+    <div
+      class="fd-panel__header"
+    >
+      
+        
+      <div
+        class="fd-panel__expand"
+      >
+        
+            
+        <button
+          aria-controls="fghqwe321"
+          aria-expanded="false"
+          aria-haspopup="true"
+          class="fd-button fd-button--transparent fd-panel__button"
+        >
+          
+                
+          <i
+            class="sap-icon--slim-arrow-right"
+          />
+          
+            
+        </button>
+        
+        
+      </div>
+      
+        
+      <h5
+        class="fd-panel__title"
+        id="asdASD123"
+      >
+        Panel Header Collapsed
+      </h5>
+      
+        
+      <div
+        class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+      >
+        
+            
+        <span
+          class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+        >
+           
+        </span>
+        
+            
+        <div
+          aria-label="Group label"
+          class="fd-segmented-button"
+          role="group"
+        >
+          
+              
+          <button
+            aria-pressed="true"
+            class="fd-button is-selected"
+            id="jhqDKYdf"
+          >
+            Left
+          </button>
+          
+              
+          <button
+            class="fd-button"
+          >
+            Middle
+          </button>
+          
+              
+          <button
+            class="fd-button"
+          >
+            Right
+          </button>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      aria-hidden="true"
+      aria-labelledby="jhqDKYdf"
+      class="fd-panel__content"
+      id="fghqwe321"
+      role="region"
+    >
+      
+        
+      <span>
+        
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+        
+      </span>
+      
+    
+    </div>
+    
 
+  </div>
+  
+
+  <div
+    class="fd-panel"
+  >
+    
+    
+    <div
+      class="fd-panel__header"
+    >
+      
+        
+      <div
+        class="fd-panel__expand"
+      >
+        
+            
+        <button
+          aria-controls="fghqwe32122"
+          aria-expanded="true"
+          aria-haspopup="true"
+          class="fd-button fd-button--transparent fd-panel__button"
+        >
+          
+                
+          <i
+            class="sap-icon--slim-arrow-down"
+          />
+          
+            
+        </button>
+        
+        
+      </div>
+      
+        
+      <h5
+        class="fd-panel__title"
+        id="asdASD1234"
+      >
+        Panel Header Expanded
+      </h5>
+      
+    
+    </div>
+    
+    
+    <div
+      aria-hidden="false"
+      aria-labelledby="jhqDKYdf"
+      class="fd-panel__content"
+      id="fghqwe32122"
+      role="region"
+    >
+      
+        
+      <span>
+        
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+        
+      </span>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Panel Fixed 1`] = `
