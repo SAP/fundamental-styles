@@ -4,6 +4,7 @@ export default {
     title: 'Components/Info Label',
     parameters: {
         description: `
+<<<<<<< HEAD
 The info label is a non-interactive, non-semantic label with text. The label is used to highlight a characteristic of an object or item such as a state, type, quantity or condition. It can be used in tables, headers and display forms.
         
 ##Usage
@@ -20,6 +21,21 @@ The info label is a non-interactive, non-semantic label with text. The label is 
 - You want to indicate the status of an object. 
 
 
+=======
+The info label is a non-interactive, non-semantic label with text. The label is used to highlight a characteristic of an object or item such as a state, type, quantity or condition. It can be used in tables, headers, and display forms.
+        
+##Usage
+**Use the info label if:**
+
+- You are designing an administrative or monitoring application.
+- You want to highlight a characteristic of an object.
+        
+**Do not use the info label if:**
+
+- You are designing an SAP Fiori application.
+- You want to indicate the status of an object. 
+        
+>>>>>>> updated-docs
       `,
         tags: ['f3', 'a11y', 'theme']
     }
