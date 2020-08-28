@@ -7,6 +7,8 @@ git config --global user.name "fundamental-bot"
 
 if [ "$TRAVIS_PULL_REQUEST" != "false" ] ; then
 
+echo "$TRAVIS_BRANCH"
+echo "$TRAVIS_SECURE_ENV_VARS"
   npm run test:update
 
   if [[ `git status --porcelain` ]]; then
