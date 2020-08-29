@@ -51,10 +51,10 @@ $inverted-color-states: (
     "visited": ("color": var(--sapButton_Negative_TextColor), "background": var(--sapButton_Negative_Background)),
   ),
   "informative": (
-    "regular": ("color": var(--sapButton_Information_TextColor), "background": var(--sapInformativeElementColor), "borderColor": var(--sapButton_Information_BorderColor)),
+    "regular": ("color": var(--sapButton_Information_TextColor), "background": var(--sapButton_Information_Background), "borderColor": var(--sapButton_Information_BorderColor)),
     "hover": ("color": var(--sapButton_Information_Hover_TextColor), "background": var(--sapButton_Information_Hover_Background)),
     "active": ("color": var(--sapButton_Active_TextColor), "background": var(--sapButton_Information_Active_Background)),
-    "visited": ("color": var(--sapButton_Information_TextColor), "background": var(--sapInformativeElementColor)),
+    "visited": ("color": var(--sapButton_Information_TextColor), "background": var(--sapButton_Information_Background)),
   ),
 );
 
