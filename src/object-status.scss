@@ -27,34 +27,34 @@ $color-accents: (
 
 $inverted-color-states: (
   "neutral": (
-    "regular": ("color": var(--sapButton_Neutral_TextColor), "background": var(--sapButton_Neutral_Background)),
+    "regular": ("color": var(--sapButton_Neutral_TextColor), "background": var(--sapButton_Neutral_Background), "borderColor": var(--sapButton_Neutral_Hover_BorderColor)),
     "hover": ("color": var(--sapButton_Neutral_Hover_TextColor), "background": var(--sapButton_Neutral_Hover_Background)),
     "active": ("color": var(--sapButton_Active_TextColor), "background": var(--sapButton_Neutral_Active_Background)),
     "visited": ("color": var(--sapButton_Neutral_TextColor), "background": var(--sapButton_Neutral_Background)),
   ),
   "positive": (
-    "regular": ("color": var(--sapButton_Success_TextColor), "background": var(--sapButton_Success_Background)),
+    "regular": ("color": var(--sapButton_Success_TextColor), "background": var(--sapButton_Success_Background), "borderColor": var(--sapButton_Success_BorderColor)),
     "hover": ("color": var(--sapButton_Success_Hover_TextColor), "background": var(--sapButton_Success_Hover_Background)),
     "active": ("color": var(--sapButton_Active_TextColor), "background": var(--sapButton_Success_Active_Background)),
     "visited": ("color": var(--sapButton_Critical_TextColor), "background": var(--sapButton_Success_Background)),
   ),
   "critical": (
-    "regular": ("color": var(--sapButton_Critical_TextColor), "background": var(--sapButton_Critical_Background)),
+    "regular": ("color": var(--sapButton_Critical_TextColor), "background": var(--sapButton_Critical_Background), "borderColor": var(--sapButton_Critical_BorderColor)),
     "hover": ("color": var(sapButton_Critical_Hover_TextColor), "background": var(--sapButton_Critical_Hover_Background)),
     "active": ("color": var(--sapButton_Active_TextColor), "background": var(--sapButton_Critical_Active_Background)),
     "visited": ("color": var(--sapButton_Critical_TextColor), "background": var(--sapButton_Critical_Background)),
   ),
   "negative": (
-    "regular": ("color": var(--sapButton_Negative_TextColor),"background": var(--sapButton_Negative_Background)),
+    "regular": ("color": var(--sapButton_Negative_TextColor),"background": var(--sapButton_Negative_Background), "borderColor": var(--sapButton_Negative_BorderColor)),
     "hover": ("color": var(--sapButton_Negative_Hover_TextColor), "background": var(--sapButton_Negative_Hover_Background)),
     "active": ("color": var(--sapButton_Active_TextColor),"background": var(--sapButton_Negative_Active_Background)),
     "visited": ("color": var(--sapButton_Negative_TextColor), "background": var(--sapButton_Negative_Background)),
   ),
   "informative": (
-    "regular": ("color": var(--sapButton_Information_TextColor), "background": var(--sapInformativeElementColor)),
+    "regular": ("color": var(--sapButton_Information_TextColor), "background": var(--sapButton_Information_Background), "borderColor": var(--sapButton_Information_BorderColor)),
     "hover": ("color": var(--sapButton_Information_Hover_TextColor), "background": var(--sapButton_Information_Hover_Background)),
     "active": ("color": var(--sapButton_Active_TextColor), "background": var(--sapButton_Information_Active_Background)),
-    "visited": ("color": var(--sapButton_Information_TextColor), "background": var(--sapInformativeElementColor)),
+    "visited": ("color": var(--sapButton_Information_TextColor), "background": var(--sapButton_Information_Background)),
   ),
 );
 
@@ -134,6 +134,7 @@ $inverted-color-accents: (
 @mixin inverted-object-interaction-states($variablesSet) {
   color: map_deep_get($variablesSet, "regular", "color");
   background-color: map_deep_get($variablesSet, "regular", "background");
+  border-color: map_deep_get($variablesSet, "regular", "borderColor");
 
   &:visited {
     color: map_deep_get($variablesSet, "visited", "color");
@@ -309,6 +310,8 @@ $inverted-color-accents: (
     border-radius: $fd-object-status-inverted-border-radius;
     font-size: var(--sapFontSmallSize);
     font-weight: $fd-object-status-inverted-text-font-weight;
+    border-width: var(--sapInverted_Object_Border_Width);
+    border-style: solid;
 
     &::before {
       font-size: $fd-object-status-inverted-icon-font-size;
@@ -396,6 +399,8 @@ $inverted-color-accents: (
       @each $set-name, $color-set in $inverted-color-accents {
         &.#{$block}--indication-#{$set-name} {
           @include inverted-object-interaction-states($color-set);
+
+          border-color: var(--sapContent_ForegroundBorderColor);
         }
       }
     }
