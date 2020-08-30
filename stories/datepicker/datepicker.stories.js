@@ -876,8 +876,9 @@ export const mobileLandscape = () => `
               </button>
             </div>
             <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Today</button>
-            <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button fd-calendar__close-button--navigation"
-              aria-label="Close"></button>
+            <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button--navigation" aria-label="Close">
+              <i class="sap-icon--decline"></i>
+            </button>
           </div>
         </div>
         <div class="fd-calendar__content fd-calendar__content--dates" id="Xh8Gr283">
@@ -1078,7 +1079,9 @@ export const mobilePortrait = () => `
       </div>
       <div class="fd-bar__right">
         <div class="fd-bar__element">
-          <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button" aria-label="Close"></button>
+          <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button" aria-label="Close">
+            <i class="sap-icon--decline"></i>
+          </button>
         </div>
       </div>
     </div>

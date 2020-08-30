@@ -36,7 +36,6 @@ The following classes describe the block structure of the calendar component.\n
     - <code class="docs-code">fd-calendar\\_\\_navigation</code> container used for grouping the row of navigation controls
       - <code class="docs-code">fd-calendar\\_\\_action</code> calendar's action buttons
       - <code class="docs-code">fd-calendar\\_\\_close-button--navigation</code> close button inside navigation panel on mobile devices without dialog header
-    - <code class="docs-code">fd-calendar\\_\\_close-button</code> button inside dialog header on mobile devices
   - <code class="docs-code">fd-calendar\\_\\_content</code> calendar's body container
     - <code class="docs-code">fd-calendar\\_\\_table</code> groups table elements representing calendar items
       - <code class="docs-code">fd-calendar\\_\\_group</code> groups calendar rows with the same destination
@@ -554,7 +553,7 @@ export const years = () => `
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
-    			<button type="button" class="fd-button fd-button--transparent" aria-label="Previous"></button>
+    			<button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
                     <i class="sap-icon--slim-arrow-left"></i>
                 </button>
     		</div>
@@ -843,7 +842,9 @@ export const LandscapeMobile = () => `
                                 <i class="sap-icon--slim-arrow-right"></i>
                             </button>
                         </div>
-                        <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button fd-calendar__close-button--navigation" aria-label="Close"></button>
+                        <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button--navigation" aria-label="Close">
+                            <i class="sap-icon--decline"></i>
+                        </button>
                     </div>
                 </header>
                 <div class="fd-calendar__content fd-calendar__content--dates" id="Xh8Gr283">
@@ -996,10 +997,10 @@ While using a mobile in landscape mode, the calendar component is displayed from
 
 Note: For landscape mode, no dialog header element should be used. However, a dialog footer is optional.
         
-**If the** <code>fd-calendar\\_\\_close-button</code> **class is placed within the calendar’s navigation area, then:**
+**If the dismiss button is placed within the calendar’s navigation area, then:**
         
 - <code class="docs-code">fd-calendar\\_\\_navigation</code> requires the <code class="docs-code">fd-calendar\\_\\_navigation--main</code> class.
-- <code class="docs-code">fd-calendar\\_\\_close-button</code> requires the <code class="docs-code">fd-calendar\\_\\_close-button--navigation</code> class.
+- the dismiss button requires the <code class="docs-code">fd-calendar\\_\\_close-button--navigation</code> class.
 `
     }
 };
@@ -1017,7 +1018,9 @@ export const PortraitMobile = () => `
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button" aria-label="Close"></button>
+                    <button type="button" class="fd-button fd-button--transparent" aria-label="Close">
+                        <i class="sap-icon--decline"></i>
+                    </button>
                 </div>
             </div>
         </header>
