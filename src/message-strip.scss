@@ -69,7 +69,6 @@ $block: #{$fd-namespace}-message-strip;
   // Elements
   &__close {
     @include fd-message-strip-close-btn-container();
-    @include fd-icon("decline");
 
     @include fd-rtl() {
       left: 0.125rem;
