@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.26...v0.12.0-rc.27) (2020-08-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update message strip dismiss button markup
+
+### Bug Fixes
+
+* update message strip dismiss button ([#1534](https://github.com/SAP/fundamental-styles/issues/1534)) ([dd2c202](https://github.com/SAP/fundamental-styles/commit/dd2c202824f4146b4aa4c3b7fbe385d8929b50da))
+
 ## [0.12.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.25...v0.12.0-rc.26) (2020-08-31)
 
 ## [0.12.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.24...v0.12.0-rc.25) (2020-08-29)
