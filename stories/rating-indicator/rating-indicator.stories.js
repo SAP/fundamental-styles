@@ -7,7 +7,7 @@ export default {
         description: `
 The rating indicator displays a group of icons or images (usually stars) that indicate a rating.
 It allows users to rate content on a numeric scale, typically from 1 (lowest) to 5 (highest).
-Although the maximum amount is 7 for the icons or images, it is highly recommended to display the default amount of 5."
+Although the maximum amount is 7 for the icons or images, it is highly recommended to display the default amount of 5.
 
 ##Usage
 Use the rating indicator in forms, tables, or in a dialog box.
@@ -222,7 +222,7 @@ Sizes.parameters = {
 
 export const HalfSizes = () => `
 <div class="example-container">
-    <div class="fd-rating-indicator fd-rating-indicator__with-half-star">
+    <div class="fd-rating-indicator fd-rating-indicator--half-star">
         <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
             <input aria-label="half star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-05" name="rating-half-sizes" value="0.5">  
             <label class="fd-rating-indicator__label" for="rating-readonly-05"></label>
@@ -262,10 +262,9 @@ export const HalfSizes = () => `
 HalfSizes.parameters = {
     docs: {
         storyDescription: `
-To make the \`Rating Indicator\` component read-only needs to be added attribute \`[readonly]\` 
-to all inputs, also needs to add one of these (\`.is-readonly\`, \`aria-readonly="true"\`, \`[readonly]\`) 
-selectors to the \`fd-rating-indicator\` element.
-        `
+To make the rating indicator to use half star needs to be added class \`.fd-rating-indicator--half-star\` 
+to the \`fd-rating-indicator\` element.
+`
     }
 };
 
@@ -296,10 +295,12 @@ export const ReadOnly = () => `
 ReadOnly.parameters = {
     docs: {
         storyDescription: `
-To make the \`Rating Indicator\` component read-only needs to be added attribute \`[readonly]\` 
-to all inputs, also needs to add one of these (\`.is-readonly\`, \`aria-readonly="true"\`, \`[readonly]\`) 
-selectors to the \`fd-rating-indicator\` element.
-        `
+To make the rating indicator read-only, the \`[readonly]\` attribute needs to be added to all inputs. 
+Additionally, one of the selectors listed below needs to be added to the \`fd-rating-indicator\` element:
+\`.is-readonly\`
+\`aria-readonly="true"\`
+\`[readonly]\`
+`
     }
 };
 
@@ -330,10 +331,12 @@ export const Disabled = () => `
 Disabled.parameters = {
     docs: {
         storyDescription: `
-To disable the \`Rating Indicator\` component needs to be added attribute \`[disable]\` 
-to all inputs, also needs to add one of these (\`.is-disable\`, \`aria-disable="true"\`, \`[disable]\`) 
-selectors to the \`fd-rating-indicator\` element.
-        `
+To disable rating indicator, the \`[disable]\` attribute needs to be added to all inputs. 
+Additionally, one of the selectors listed below needs to be added to the \`fd-rating-indicator\` element:
+\`.is-disable\`
+\`aria-disable="true"\`
+\`[disable]\`
+`
     }
 };
 
@@ -364,7 +367,9 @@ export const DisplayMode = () => `
 DisplayMode.parameters = {
     docs: {
         storyDescription: `
-To make the \`Rating Indicator\` component display mode needs to be added class \`.is-display-mode\` to the \`fd-rating-indicator\` element.
+Data can be presented as label-value field pairs without editable fields in display-only forms, 
+see <a href="form-grid.html">Form Grid</a> for more details. If you want to include a rating indicator in a display-only form, 
+add the \`.is-display-mode\` to the \`fd-rating-indicator\` element.
 `
     }
 };
@@ -396,13 +401,13 @@ export const Focused = () => `
 Focused.parameters = {
     docs: {
         storyDescription: `
-By default there is built-in focus indicator for \`Rating Indicator\` component, which is not supported by IE11.
-To make focus work on IE11, it should be added by putting \`.is-focus\` class to component
+By default, rating indicator is focusable. However, it is not supported by IE11. 
+To display a focusable rating indicator on IE11, add the \`.is-focus\` class to the component.
 `
     }
 };
 
-export const RatingIndicatorWithDifferentMaxValue = () => `
+export const DifferentValues = () => `
     <div class="example-container">
         <div class="fd-rating-indicator">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
@@ -479,7 +484,17 @@ export const RatingIndicatorWithDifferentMaxValue = () => `
     </div>
 `;
 
-export const Rtl = () => `
+DifferentValues.parameters = {
+    docs: {
+        storyDescription: `
+It is possible to display the rating indicator with a different number of values. 
+It is highly recommended to use 5 as the maximum value, however you can go up to 7 
+if it is ideal for your use case.
+`
+    }
+};
+
+export const RTL = () => `
     <div class="example-container" dir="rtl">
         <div class="fd-rating-indicator">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
@@ -503,7 +518,7 @@ export const Rtl = () => `
     </div>
 `;
 
-Rtl.parameters = {
+RTL.parameters = {
     docs: {
         storyDescription: 'The rating indicator can be displayed from right to left on the screen.'
     }

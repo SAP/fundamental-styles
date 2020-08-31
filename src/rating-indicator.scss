@@ -168,7 +168,7 @@ $block: #{$fd-namespace}-rating-indicator;
     }
   }
 
-  &__with-half-star {
+  &--half-star {
     @include fd-rating-indicator-with-half-star($fd-rating-indicator-default-font-size, $fd-rating-indicator-default-spacing-between-icons);
   }
 
@@ -198,7 +198,7 @@ $block: #{$fd-namespace}-rating-indicator;
         }
       }
 
-      &__with-half-star {
+      &--half-star {
         @include fd-rating-indicator-with-half-star($fd-rating-indicator-sizes-font-size, $fd-rating-indicator-sizes-spacing-between-icons);
       }
     }

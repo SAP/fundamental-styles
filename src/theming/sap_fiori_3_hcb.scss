@@ -4,17 +4,17 @@
 
   /* Rating Indicator */
   // default mode
-  --sapRating_Indicator_Selected_Icon_Color: #d08014;
+  --sapRating_Indicator_Selected_Icon_Color: var(--sapContent_RatedColor);
   --sapRating_Indicator_Selected_Hover_Opacity: 1;
-  --sapRating_Indicator_Unselected_Icon_Color: #89919a;
+  --sapRating_Indicator_Unselected_Icon_Color: var(--sapContent_UnratedColor);
   // Readonly mode
-  --sapRating_Indicator_Readonly_Selected_Color: #d08014;
-  --sapRating_Indicator_Readonly_Unselected_Color: #89919a;
+  --sapRating_Indicator_Readonly_Selected_Color: var(--sapContent_RatedColor);
+  --sapRating_Indicator_Readonly_Unselected_Color: var(--sapContent_UnratedColor);
   // Display Only mode
-  --sapRating_Indicator_Display_Only_Selected_Color: #0854a0;
-  --sapRating_Indicator_Display_Only_Unselected_Color: #89919a;
+  --sapRating_Indicator_Display_Only_Selected_Color: var(--sapContent_IconColor);
+  --sapRating_Indicator_Display_Only_Unselected_Color: var(--sapContent_UnratedColor);
   // Disabled mode
-  --sapRating_Indicator_Disabled_Selected_Color: rgba(50, 54, 58, 0.6);
-  --sapRating_Indicator_Disabled_Unselected_Color: rgba(50, 54, 58, 0.6);
+  --sapRating_Indicator_Disabled_Selected_Color: var(--sapContent_DisabledTextColor);
+  --sapRating_Indicator_Disabled_Unselected_Color: var(--sapContent_DisabledTextColor);
   --sapRating_Indicator_Disabled_Control_Opacity: 1;
 }

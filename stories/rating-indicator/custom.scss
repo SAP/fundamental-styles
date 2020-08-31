@@ -1,3 +1,11 @@
+.sbdocs-h3 {
+  text-transform: lowercase;
+
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
+
 .example-container {
   display: flex;
   align-items: center;
