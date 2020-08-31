@@ -89,7 +89,6 @@ export const primary = () => `
 `;
 primary.parameters = {
     docs: {
-        iframeHeight: 150,
         storyDescription: 'This example shows the minimum shellbar for a single application product with only user settings. If no user thumbnail is available then display initials.'
     }
 };
@@ -185,7 +184,6 @@ export const productMenuAndSearch = () => `
 `;
 productMenuAndSearch.parameters = {
     docs: {
-        iframeHeight: 150,
         storyDescription: 'This example includes the product menu for navigating to applications within the product and shows a search box.'
     }
 };
@@ -293,12 +291,12 @@ export const linksWithCollapsibleMenu = () => `
 `;
 linksWithCollapsibleMenu.parameters = {
     docs: {
-        iframeHeight: 150,
         storyDescription: 'When a product has multiple links, the product links should collapse into an overflow menu on mobile screens. All actions, except for the user menu, should be collapsed. See the placement of the `.fd-shellbar__action--mobile` container below.'
     }
 };
 
-export const productSwitchandCopilot = () => `
+export const productSwitch = () => `
+<div style="height:600px">
  <div class="fd-shellbar">
   <div class="fd-shellbar__group fd-shellbar__group--product">
     <span class="fd-shellbar__logo">
@@ -339,12 +337,13 @@ export const productSwitchandCopilot = () => `
         <div class="fd-product-switch">
             <div class="fd-popover fd-popover--right">
                 <div class="fd-popover__control">
-                    <button class="fd-button fd-button--transparent fd-popover__control fd-product-switch__control sap-icon--grid" 
+                    <button class="fd-button fd-button--transparent fd-popover__control fd-product-switch__control" 
                         aria-label="Image label" 
                         aria-controls="product-switch-body" 
                         aria-expanded="true"
                         aria-haspopup="true"
                         onclick="onPopoverClick('product-switch-body')">
+                      <i class="sap-icon--grid"></i>
                     </button>
                 </div>
                 <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="product-switch-body">
@@ -450,10 +449,11 @@ export const productSwitchandCopilot = () => `
       </div>
   </div>
 </div>
+</div>
 `;
-productSwitchandCopilot.parameters = {
+productSwitch.parameters = {
     docs: {
-        iframeHeight: 600,
-        storyDescription: 'This example shows an application with CoPilot, integration with other products, and a customized logo. For more information about the Product Switch, see [Product Switch](product-switch.html) component.'
+        iframeHeight: 300,
+        storyDescription: 'This example shows an integration with other products, and a customized logo. For more information about the Product Switch, see [Product Switch](product-switch.html) component.'
     }
 };
