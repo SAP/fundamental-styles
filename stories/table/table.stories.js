@@ -1476,7 +1476,7 @@ export const navigationIndicationStates = () => `
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
-            <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
+            <td class="fd-table__cell fd-table__cell--fit-content">
                 <button aria-label="navigation" class="fd-button fd-button--transparent">
                     <i class="sap-icon--navigation-right-arrow"></i>
                 </button>
@@ -1487,7 +1487,7 @@ export const navigationIndicationStates = () => `
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
-            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated" scope="col">
+            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated">
                 <button aria-label="navigation" class="fd-button fd-button--transparent">
                     <i class="sap-icon--navigation-right-arrow"></i>
                 </button>
@@ -1498,7 +1498,7 @@ export const navigationIndicationStates = () => `
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
-            <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
+            <td class="fd-table__cell fd-table__cell--fit-content">
                 <button aria-label="navigation" class="fd-button fd-button--transparent">
                     <i class="sap-icon--navigation-right-arrow"></i>
                 </button>
@@ -1528,7 +1528,7 @@ export const navigationIndicationStates = () => `
                 <td class="fd-table__cell">First Name</td>
                 <td class="fd-table__cell">Last Name</td>
                 <td class="fd-table__cell">01/26/17</td>
-                <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
+                <td class="fd-table__cell fd-table__cell--fit-content">
                     <button aria-label="navigation" class="fd-button fd-button--transparent">
                         <i class="sap-icon--navigation-left-arrow"></i>
                     </button>
@@ -1539,7 +1539,7 @@ export const navigationIndicationStates = () => `
                 <td class="fd-table__cell">First Name</td>
                 <td class="fd-table__cell">Last Name</td>
                 <td class="fd-table__cell">01/26/17</td>
-                <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated" scope="col">
+                <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated">
                     <button aria-label="navigation" class="fd-button fd-button--transparent">
                         <i class="sap-icon--navigation-left-arrow"></i>
                     </button>
@@ -1550,7 +1550,7 @@ export const navigationIndicationStates = () => `
                 <td class="fd-table__cell">First Name</td>
                 <td class="fd-table__cell">Last Name</td>
                 <td class="fd-table__cell">01/26/17</td>
-                <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
+                <td class="fd-table__cell fd-table__cell--fit-content">
                     <button aria-label="navigation" class="fd-button fd-button--transparent">
                         <i class="sap-icon--navigation-left-arrow"></i>
                     </button>
