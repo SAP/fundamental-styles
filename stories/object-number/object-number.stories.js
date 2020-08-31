@@ -11,9 +11,15 @@ export default {
 };
 
 /**
- * Object Number can display the semantic status of an object: negative (class: `fd-object-number--negative`), critical
- * (class: `fd-object-number--critical`), positive (class: `fd-object-number--positive`),
- * informative (class: `fd-object-number--informative`), or none.
+ * There are different semantic statuses that can be applied to the object number by adding a modifier class.
+ *
+ * | **Status**  | **Modifier class**               |
+ * | ----------: | :------------------------------- |
+ * | Positive    | `fd-object-number--positive`     |
+ * | Negative    | `fd-object-number--negative`     |
+ * | Critical    | `fd-object-number--critical`     |
+ * | Informative | `fd-object-number--informative`  |
+ * | None        | `fd-object-number__text` (class) |
  */
 
 export const primary = () => `
@@ -35,7 +41,7 @@ export const primary = () => `
 `;
 
 /**
- * Object Number can be large (class: `fd-object-number--large`)
+ * In some cases, it can be useful to enlarge the text for the object number. To display the object number in large text, add the `--large` modifier class to the element.
  */
 
 export const large = () => `
@@ -57,7 +63,7 @@ export const large = () => `
 `;
 
 /**
- * Object Number text part could be bold (class: `fd-object-number__text--bold`)
+ * When there is a key numeric attribute on the page, it should be emphasized in bold text. To display the object number in bold text, add the `--bold` modifier class to the element.
  */
 
 export const bold = () => `

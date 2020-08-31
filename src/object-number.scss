@@ -14,16 +14,12 @@ $color-states: (
 );
 
 .#{$block} {
-  // TEXT VARIABLES
-  $fd-object-number-font-size: var(--sapFontSize) !default;
-  $fd-object-number-neutral: var(--sapNeutralTextColor);
-
   // LARGE DESIGN VARIABLES
   $fd-object-number-font-size-large: 1.5rem;
 
   @include fd-reset();
 
-  color: $fd-object-number-neutral;
+  color: var(--sapNeutralTextColor);
   max-width: 100%;
   display: inline-block;
 
@@ -32,7 +28,6 @@ $color-states: (
     @include fd-reset();
     @include fd-ellipsis();
 
-    font-size: $fd-object-number-font-size;
     max-width: 100%;
     display: inline-block;
     vertical-align: middle;
