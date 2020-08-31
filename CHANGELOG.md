@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.27...v0.12.0-rc.28) (2020-08-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* update mega menu button by moving the icon in <i> tag
+
+### Bug Fixes
+
+* update shellbar megamenu and shellbar examples ([#1536](https://github.com/SAP/fundamental-styles/issues/1536)) ([a720f05](https://github.com/SAP/fundamental-styles/commit/a720f05f9de84c84ae50d955e7134090ed88aa9f))
+
 ## [0.12.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.26...v0.12.0-rc.27) (2020-08-31)
 
 
