@@ -22,11 +22,15 @@ const getMatchOptions = ({ context }) => {
 
 //This is needed to keep CI from failing due to viewport differences
 const view = {
-    name: 'Desktop 1200x800',
-    userAgent: 'placeholder',
+    name: 'Macbook Pro 15',
+    userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36',
     viewport: {
-        width: 1200,
-        height: 800
+        width: 1400,
+        height: 900,
+        deviceScaleFactor: 2,
+        isMobile: false,
+        hasTouch: false,
+        isLandscape: false
     }
 };
 
