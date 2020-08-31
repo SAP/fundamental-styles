@@ -5,7 +5,6 @@
 $block: #{$fd-namespace}-rating-indicator;
 
 .#{$block} {
-  $unratedColor: var(--sapContent_UnratedColor);
   $fd-rating-indicator-sizes: (
     "cozy": ("fontSize": 1.5rem, "spacingBetweenIcons": 0.1875rem, "controlMargin": 0.8125rem 0),
     "compact": ("fontSize": 1rem, "spacingBetweenIcons": 0.125rem, "controlMargin": 0.5rem 0),
@@ -46,6 +45,7 @@ $block: #{$fd-namespace}-rating-indicator;
   position: relative;
 
   &__container {
+    @include fd-fiori-focus();
     @include fd-fiori-focus-within();
   }
 
@@ -61,7 +61,7 @@ $block: #{$fd-namespace}-rating-indicator;
 
     &:checked ~ input + .#{$block}__label {
       @include fd-icon-glyph('unfavorite') {
-        color: $unratedColor;
+        color: var(--sapRating_Indicator_Unselected_Icon_Color);
       }
 
       &:hover::before {
@@ -76,7 +76,7 @@ $block: #{$fd-namespace}-rating-indicator;
 
     @include fd-icon-glyph('favorite') {
       font-family: "SAP-icons";
-      color: var(--sapContent_RatedColor);
+      color: var(--sapRating_Indicator_Selected_Icon_Color);
       font-size: $fd-rating-indicator-default-font-size;
     }
 
@@ -89,7 +89,7 @@ $block: #{$fd-namespace}-rating-indicator;
     }
 
     &:hover::before {
-      opacity: 0.9;
+      opacity: var(--sapRating_Indicator_Selected_Hover_Opacity);
       transition: opacity $fd-animation-speed ease-in;
     }
   }
@@ -111,16 +111,32 @@ $block: #{$fd-namespace}-rating-indicator;
 
   @include fd-disabled() {
     pointer-events: none;
-    opacity: var(--sapContent_DisabledOpacity);
+    opacity: var(--sapRating_Indicator_Disabled_Control_Opacity);
+
+    .#{$block}__input {
+      @include fd-icon-glyph('favorite') {
+        color: var(--sapRating_Indicator_Disabled_Selected_Color);
+      }
+
+      &:checked ~ input + .#{$block}__label {
+        @include fd-icon-glyph('favorite') {
+          color: var(--sapRating_Indicator_Disabled_Unselected_Color);
+        }
+      }
+    }
   }
 
   @include fd-readonly() {
     pointer-events: none;
 
     .#{$block}__input {
+      @include fd-icon-glyph('favorite') {
+        color: var(--sapRating_Indicator_Readonly_Selected_Color);
+      }
+
       &:checked ~ input + .#{$block}__label {
         @include fd-icon-glyph('favorite') {
-          color: $unratedColor;
+          color: var(--sapRating_Indicator_Readonly_Unselected_Color);
         }
       }
     }
@@ -133,7 +149,7 @@ $block: #{$fd-namespace}-rating-indicator;
 
     .#{$block}__label {
       @include fd-icon-glyph('favorite') {
-        color: var(--sapTextColor);
+        color: var(--sapRating_Indicator_Display_Only_Selected_Color);
       }
 
       &::before {
@@ -146,7 +162,7 @@ $block: #{$fd-namespace}-rating-indicator;
     .#{$block}__input {
       &:checked ~ input + .#{$block}__label {
         @include fd-icon-glyph('favorite') {
-          color: $unratedColor;
+          color: var(--sapRating_Indicator_Display_Only_Unselected_Color);
         }
       }
     }

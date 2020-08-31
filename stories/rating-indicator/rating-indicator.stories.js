@@ -369,6 +369,39 @@ To make the \`Rating Indicator\` component display mode needs to be added class 
     }
 };
 
+export const Focused = () => `    
+    <div class="example-container">
+        <div class="fd-rating-indicator">
+            <div class="fd-rating-indicator__container is-focus" aria-label="Star Rating (out of 5)">
+                <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-focused-1" name="rating-focused" value="1">  
+                <label class="fd-rating-indicator__label" for="rating-focused-1"></label>
+                
+                <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-focused-2" name="rating-focused" value="2" checked>
+                <label class="fd-rating-indicator__label" for="rating-focused-2"></label>
+                
+                <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-focused-3" name="rating-focused" value="3">
+                <label class="fd-rating-indicator__label" for="rating-focused-3"></label>
+                
+                <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-focused-4" name="rating-focused" value=4">
+                <label class="fd-rating-indicator__label" for="rating-focused-4"></label>
+                
+                <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-focused-5" name="rating-focused" value="5">
+                <label class="fd-rating-indicator__label" for="rating-focused-5"></label>
+            </div>
+            <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
+        </div>
+    </div>
+`;
+
+Focused.parameters = {
+    docs: {
+        storyDescription: `
+By default there is built-in focus indicator for \`Rating Indicator\` component, which is not supported by IE11.
+To make focus work on IE11, it should be added by putting \`.is-focus\` class to component
+`
+    }
+};
+
 export const RatingIndicatorWithDifferentMaxValue = () => `
     <div class="example-container">
         <div class="fd-rating-indicator">
