@@ -16,11 +16,37 @@ $block: #{$fd-namespace}-rating-indicator;
     "l": ("fontSize": 2rem, "spacingBetweenIcons": 0.25rem)
   );
   $fd-rating-indicator-default-size: map-get($fd-rating-indicator-sizes, 'm');
+  $fd-rating-indicator-default-font-size: map_get($fd-rating-indicator-default-size, "fontSize");
+  $fd-rating-indicator-default-spacing-between-icons: map_get($fd-rating-indicator-default-size, "spacingBetweenIcons");
+
+  @mixin fd-rating-indicator-with-half-star($iconFontSize, $spacingBetweenIcons) {
+    .#{$block}__input {
+      width: $iconFontSize / 2;
+      height: $iconFontSize;
+    }
+
+    .#{$block}__label {
+      margin-right: 0;
+
+      &:nth-child(4n+4) {
+        margin-right: $spacingBetweenIcons;
+
+        &::before {
+          float: right;
+        }
+      }
+
+      overflow: hidden;
+      width: $iconFontSize / 2;
+    }
+  }
 
   @include fd-reset();
 
+  position: relative;
+
   &__container {
-    @include fd-fiori-focus();
+    @include fd-fiori-focus-within();
   }
 
   &__input {
@@ -29,6 +55,9 @@ $block: #{$fd-namespace}-rating-indicator;
     position: absolute;
     opacity: 0.0001;
     z-index: -1;
+    top: 3px;
+    width: $fd-rating-indicator-default-font-size;
+    height: $fd-rating-indicator-default-font-size;
 
     &:checked ~ input + .#{$block}__label {
       @include fd-icon-glyph('unfavorite') {
@@ -48,12 +77,12 @@ $block: #{$fd-namespace}-rating-indicator;
     @include fd-icon-glyph('favorite') {
       font-family: "SAP-icons";
       color: var(--sapContent_RatedColor);
-      font-size: map_get($fd-rating-indicator-default-size, "fontSize");
-      margin-right: map_get($fd-rating-indicator-default-size, "spacingBetweenIcons");
+      font-size: $fd-rating-indicator-default-font-size;
     }
 
     display: block;
     float: left;
+    margin-right: $fd-rating-indicator-default-spacing-between-icons;
 
     @include fd-rtl() {
       float: right;
@@ -65,19 +94,19 @@ $block: #{$fd-namespace}-rating-indicator;
     }
   }
 
-  &--hide-dynamic-text {
-    > .dynamic-text {
-      display: none;
-    }
-  }
-
-  > .dynamic-text {
+  &__dynamic-text {
     @include fd-reset();
     @include fd-ellipsis();
 
     font-size: var(--sapFontSmallSize);
     color: var(--sapContent_LabelColor);
     margin-left: 0.5rem;
+  }
+
+  &__hide-dynamic-text {
+    > .#{$block}__dynamic-text {
+      display: none;
+    }
   }
 
   @include fd-disabled() {
@@ -123,9 +152,15 @@ $block: #{$fd-namespace}-rating-indicator;
     }
   }
 
+  &__with-half-star {
+    @include fd-rating-indicator-with-half-star($fd-rating-indicator-default-font-size, $fd-rating-indicator-default-spacing-between-icons);
+  }
+
   // BLOCK MODIFIERS ************
   // sizes
   @each $set-name, $size-set in $fd-rating-indicator-sizes {
+    $fd-rating-indicator-sizes-font-size: map_get($size-set, "fontSize");
+    $fd-rating-indicator-sizes-spacing-between-icons: map_get($size-set, "spacingBetweenIcons");
     &--#{$set-name} {
       @include fd-reset-spacing();
       $controlMargin: map_get($size-set, "controlMargin");
@@ -134,12 +169,21 @@ $block: #{$fd-namespace}-rating-indicator;
         margin: $controlMargin;
       }
 
+      .#{$block}__input {
+        width: $fd-rating-indicator-sizes-font-size;
+        height: $fd-rating-indicator-sizes-font-size;
+      }
+
       .#{$block}__label {
-        margin-right: map_get($size-set, "spacingBetweenIcons");
+        margin-right: $fd-rating-indicator-sizes-spacing-between-icons;
 
         &::before {
-          font-size: map_get($size-set, "fontSize");
+          font-size: $fd-rating-indicator-sizes-font-size;
         }
+      }
+
+      &__with-half-star {
+        @include fd-rating-indicator-with-half-star($fd-rating-indicator-sizes-font-size, $fd-rating-indicator-sizes-spacing-between-icons);
       }
     }
   }

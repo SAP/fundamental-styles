@@ -5,7 +5,9 @@ export default {
     title: 'Components/Rating Indicator',
     parameters: {
         description: `
-The rating indicator can be used to rate content or to indicate.
+The rating indicator displays a group of icons or images (usually stars) that indicate a rating.
+It allows users to rate content on a numeric scale, typically from 1 (lowest) to 5 (highest).
+Although the maximum amount is 7 for the icons or images, it is highly recommended to display the default amount of 5."
 
 ##Usage
 Use the rating indicator in forms, tables, or in a dialog box.
@@ -14,11 +16,11 @@ Use the rating indicator in forms, tables, or in a dialog box.
     tags: ['f3', 'a11y', 'theme']
 };
 
-export const customIconSizes = () => `
+export const Sizes = () => `
     <div class="example-container">
         <span>Default:</span>
         <div class="fd-rating-indicator fd-rating-indicator--hide-dynamic-text">
-            <div class="fd-rating-indicator__container" aria-label="Rating of this item is 2 out of 5">
+            <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-1" name="rating" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-1"></label>
                 
@@ -34,14 +36,14 @@ export const customIconSizes = () => `
                 <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-5" name="rating" value="5">
                 <label class="fd-rating-indicator__label" for="rating-5"></label>
             </div>
-            <span class="dynamic-text">(2 of 5)</span>
+            <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
         </div>
     </div>
     
     <div class="example-container">
         <span>XS:</span>
         <div class="fd-rating-indicator fd-rating-indicator--xs">
-            <div class="fd-rating-indicator__container" aria-label="Rating of this item is 2 out of 5">
+            <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-xs-1" name="rating-xs" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-xs-1"></label>
     
@@ -58,14 +60,14 @@ export const customIconSizes = () => `
                 <label class="fd-rating-indicator__label" for="rating-xs-5"></label>
             </div>
 
-            <span class="dynamic-text">(2 of 5)</span>
+            <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
         </div>
     </div>
 
     <div class="example-container">
         <span>S:</span>
         <div class="fd-rating-indicator fd-rating-indicator--s">
-            <div class="fd-rating-indicator__container" aria-label="Rating of this item is 2 out of 5">
+            <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-s-1" name="rating-s" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-s-1"></label>
                 
@@ -82,14 +84,14 @@ export const customIconSizes = () => `
                 <label class="fd-rating-indicator__label" for="rating-s-5"></label>
             </div>
 
-            <span class="dynamic-text">(2 of 5)</span>
+            <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
         </div>
     </div>
 
     <div class="example-container">
         <span>M:</span>
         <div class="fd-rating-indicator fd-rating-indicator--m">
-            <div class="fd-rating-indicator__container" aria-label="Rating of this item is 2 out of 5">
+            <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-m-1" name="rating-m" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-m-1"></label>
                 
@@ -105,14 +107,14 @@ export const customIconSizes = () => `
                 <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-m-5" name="rating-m" value="5">
                 <label class="fd-rating-indicator__label" for="rating-m-5"></label>
             </div>
-            <span class="dynamic-text">(2 of 5)</span>
+            <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
         </div>
     </div>
     
     <div class="example-container">
         <span>L:</span>
         <div class="fd-rating-indicator fd-rating-indicator--l">
-            <div class="fd-rating-indicator__container" aria-label="Rating of this item is 2 out of 5">
+            <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-l-1" name="rating-l" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-l-1"></label>
                 
@@ -128,14 +130,14 @@ export const customIconSizes = () => `
                 <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-l-5" name="rating-l" value="5">
                 <label class="fd-rating-indicator__label" for="rating-l-5"></label>
             </div>
-            <span class="dynamic-text">(2 of 5)</span>
+            <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
         </div>
     </div>
     
     <div class="example-container">
         <span>Cozy:</span>
         <div class="fd-rating-indicator fd-rating-indicator--cozy">
-            <div class="fd-rating-indicator__container" aria-label="Rating of this item is 2 out of 5">
+            <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-cozy-1" name="rating-cozy" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-cozy-1"></label>
                 
@@ -151,14 +153,14 @@ export const customIconSizes = () => `
                 <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-cozy-5" name="rating-cozy" value="5">
                 <label class="fd-rating-indicator__label" for="rating-cozy-5"></label>
             </div>
-            <span class="dynamic-text">(2 of 5)</span>
+            <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
         </div>
     </div>
     
     <div class="example-container">
         <span>Compact:</span>
         <div class="fd-rating-indicator fd-rating-indicator--compact">
-            <div class="fd-rating-indicator__container" aria-label="Rating of this item is 2 out of 5">
+            <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-compact-1" name="rating-compact" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-compact-1"></label>
                 
@@ -174,14 +176,14 @@ export const customIconSizes = () => `
                 <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-compact-5" name="rating-compact" value="5">
                 <label class="fd-rating-indicator__label" for="rating-compact-5"></label>
             </div>
-            <span class="dynamic-text">(2 of 5)</span>
+            <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
         </div>
     </div>
     
     <div class="example-container">
         <span>Condensed:</span>
         <div class="fd-rating-indicator fd-rating-indicator--condensed">
-            <div class="fd-rating-indicator__container" aria-label="Rating of this item is 2 out of 5">
+            <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-condensed-1" name="rating-condensed" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-condensed-1"></label>
                 
@@ -197,12 +199,12 @@ export const customIconSizes = () => `
                 <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-condensed-5" name="rating-condensed" value="5">
                 <label class="fd-rating-indicator__label" for="rating-condensed-5"></label>
             </div>
-            <span class="dynamic-text">(2 of 5)</span>
+            <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
         </div>
     </div>
 `;
 
-customIconSizes.parameters = {
+Sizes.parameters = {
     docs: {
         storyDescription: `
 | **Size**    | **rem**    | **Modifier class**       |
@@ -218,57 +220,127 @@ customIconSizes.parameters = {
     }
 };
 
-export const States = () => `
-    <div class="example-container">
-        <span>Focus:</span>
-        <div class="fd-rating-indicator">
-            <div class="fd-rating-indicator__container is-focus" aria-label="Rating of this item is 2 out of 5">
-                <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-focus-1" name="rating-focus" value="1">  
-                <label class="fd-rating-indicator__label" for="rating-focus-1"></label>
-                
-                <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-focus-2" name="rating-focus" value="2" checked>
-                <label class="fd-rating-indicator__label" for="rating-focus-2"></label>
-                
-                <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-focus-3" name="rating-focus" value="3">
-                <label class="fd-rating-indicator__label" for="rating-focus-3"></label>
-                
-                <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-focus-4" name="rating-focus" value=4">
-                <label class="fd-rating-indicator__label" for="rating-focus-4"></label>
-                
-                <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-focus-5" name="rating-focus" value="5">
-                <label class="fd-rating-indicator__label" for="rating-focus-5"></label>
-            </div>
-            <span class="dynamic-text">(2 of 5)</span>
-        </div>
-    </div>
+export const HalfSizes = () => `
+<div class="example-container">
+    <div class="fd-rating-indicator fd-rating-indicator__with-half-star">
+        <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
+            <input aria-label="half star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-05" name="rating-half-sizes" value="0.5">  
+            <label class="fd-rating-indicator__label" for="rating-readonly-05"></label>
 
-    <div class="example-container">
-        <span>ReadOnly:</span>
-        <div class="fd-rating-indicator" aria-readonly="true">
-            <div class="fd-rating-indicator__container" aria-label="Rating of this item is 2 out of 5">
-                <input aria-label="1 star" type="radio" aria-labelledby="rating-disabled-11" class="fd-rating-indicator__input" id="rating-readonly-1" name="rating-readonly" value="1" disabled>  
-                <label id="rating-disabled-11" class="fd-rating-indicator__label" for="rating-readonly-1"></label>
-                
-                <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-2" name="rating-readonly" value="2" disabled checked>
-                <label class="fd-rating-indicator__label" for="rating-readonly-2"></label>
-                
-                <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-3" name="rating-readonly" value="3" disabled>
-                <label class="fd-rating-indicator__label" for="rating-readonly-3"></label>
-                
-                <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-4" name="rating-readonly" value=4" disabled>
-                <label class="fd-rating-indicator__label" for="rating-readonly-4"></label>
-                
-                <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-5" name="rating-readonly" value="5" disabled>
-                <label class="fd-rating-indicator__label" for="rating-readonly-5"></label>
-            </div>
-            <span class="dynamic-text">(2 of 5)</span>
+            <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-1" name="rating-half-sizes" value="1">
+            <label class="fd-rating-indicator__label" for="rating-readonly-1"></label>
+            
+            <input aria-label="1 and half star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-15" name="rating-half-sizes" value="1.5">
+            <label class="fd-rating-indicator__label" for="rating-readonly-15"></label>
+            
+            <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-2" name="rating-half-sizes" value=2">
+            <label class="fd-rating-indicator__label" for="rating-readonly-2"></label>
+            
+            <input aria-label="2 and half star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-25" name="rating-half-sizes" value="2.5" checked>
+            <label class="fd-rating-indicator__label" for="rating-readonly-25"></label>
+            
+            <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-3" name="rating-half-sizes" value="3">
+            <label class="fd-rating-indicator__label" for="rating-readonly-3"></label>
+            
+            <input aria-label="3 and half star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-35" name="rating-half-sizes" value="3.5">
+            <label class="fd-rating-indicator__label" for="rating-readonly-35"></label>
+            
+            <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-4" name="rating-half-sizes" value="4">
+            <label class="fd-rating-indicator__label" for="rating-readonly-4"></label>
+            
+            <input aria-label="4 and half star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-45" name="rating-half-sizes" value="4.5">
+            <label class="fd-rating-indicator__label" for="rating-readonly-45"></label>
+            
+            <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-5" name="rating-half-sizes" value="5">
+            <label class="fd-rating-indicator__label" for="rating-readonly-5"></label>
         </div>
+        <span class="fd-rating-indicator__dynamic-text">(2.5 of 5)</span>
     </div>
-    
+</div>
+`;
+
+HalfSizes.parameters = {
+    docs: {
+        storyDescription: `
+To make the \`Rating Indicator\` component read-only needs to be added attribute \`[readonly]\` 
+to all inputs, also needs to add one of these (\`.is-readonly\`, \`aria-readonly="true"\`, \`[readonly]\`) 
+selectors to the \`fd-rating-indicator\` element.
+        `
+    }
+};
+
+export const ReadOnly = () => `
+<div class="example-container">
+    <div class="fd-rating-indicator" aria-readonly="true">
+        <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
+            <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-1" name="rating-readonly" value="1" readonly>  
+            <label class="fd-rating-indicator__label" for="rating-readonly-1"></label>
+            
+            <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-2" name="rating-readonly" value="2" readonly checked>
+            <label class="fd-rating-indicator__label" for="rating-readonly-2"></label>
+            
+            <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-3" name="rating-readonly" value="3" readonly>
+            <label class="fd-rating-indicator__label" for="rating-readonly-3"></label>
+            
+            <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-4" name="rating-readonly" value=4" readonly>
+            <label class="fd-rating-indicator__label" for="rating-readonly-4"></label>
+            
+            <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-5" name="rating-readonly" value="5" readonly>
+            <label class="fd-rating-indicator__label" for="rating-readonly-5"></label>
+        </div>
+        <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
+    </div>
+</div>
+`;
+
+ReadOnly.parameters = {
+    docs: {
+        storyDescription: `
+To make the \`Rating Indicator\` component read-only needs to be added attribute \`[readonly]\` 
+to all inputs, also needs to add one of these (\`.is-readonly\`, \`aria-readonly="true"\`, \`[readonly]\`) 
+selectors to the \`fd-rating-indicator\` element.
+        `
+    }
+};
+
+export const Disabled = () => `
+<div class="example-container">
+    <div class="fd-rating-indicator" aria-disabled="true">
+        <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
+            <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-disabled-1" name="rating-disabled" value="1" disabled>  
+            <label class="fd-rating-indicator__label" for="rating-disabled-1"></label>
+            
+            <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-disabled-2" name="rating-disabled" value="2" disabled checked>
+            <label class="fd-rating-indicator__label" for="rating-disabled-2"></label>
+            
+            <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-disabled-3" name="rating-disabled" value="3" disabled>
+            <label class="fd-rating-indicator__label" for="rating-disabled-3"></label>
+            
+            <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-disabled-4" name="rating-disabled" value=4" disabled>
+            <label class="fd-rating-indicator__label" for="rating-disabled-4"></label>
+            
+            <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-disabled-5" name="rating-disabled" value="5" disabled>
+            <label class="fd-rating-indicator__label" for="rating-disabled-5"></label>
+        </div>
+        <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
+    </div>
+</div>
+`;
+
+Disabled.parameters = {
+    docs: {
+        storyDescription: `
+To disable the \`Rating Indicator\` component needs to be added attribute \`[disable]\` 
+to all inputs, also needs to add one of these (\`.is-disable\`, \`aria-disable="true"\`, \`[disable]\`) 
+selectors to the \`fd-rating-indicator\` element.
+        `
+    }
+};
+
+export const DisplayMode = () => `    
     <div class="example-container">
-        <span>Display Mode:</span>
         <div class="fd-rating-indicator is-display-mode">
-            <div class="fd-rating-indicator__container" aria-label="Rating of this item is 2 out of 5">
+            <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-display-mode-1" name="rating-display-mode" value="1" disabled>  
                 <label class="fd-rating-indicator__label" for="rating-display-mode-1"></label>
                 
@@ -284,50 +356,23 @@ export const States = () => `
                 <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-display-mode-5" name="rating-display-mode" value="5" disabled>
                 <label class="fd-rating-indicator__label" for="rating-display-mode-5"></label>
             </div>
-            <span class="dynamic-text">(2 of 5)</span>
-        </div>
-    </div>
-    
-    <div class="example-container">
-        <span>Disabled:</span>
-        <div class="fd-rating-indicator" aria-disabled="true">
-            <div class="fd-rating-indicator__container" aria-label="Rating of this item is 2 out of 5">
-                <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-disabled-1" name="rating-disabled" value="1" disabled>  
-                <label class="fd-rating-indicator__label" for="rating-disabled-1"></label>
-                
-                <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-disabled-2" name="rating-disabled" value="2" disabled checked>
-                <label class="fd-rating-indicator__label" for="rating-disabled-2"></label>
-                
-                <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-disabled-3" name="rating-disabled" value="3" disabled>
-                <label class="fd-rating-indicator__label" for="rating-disabled-3"></label>
-                
-                <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-disabled-4" name="rating-disabled" value=4" disabled>
-                <label class="fd-rating-indicator__label" for="rating-disabled-4"></label>
-                
-                <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-disabled-5" name="rating-disabled" value="5" disabled>
-                <label class="fd-rating-indicator__label" for="rating-disabled-5"></label>
-            </div>
-            <span class="dynamic-text">(2 of 5)</span>
+            <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
         </div>
     </div>
 `;
 
-States.parameters = {
+DisplayMode.parameters = {
     docs: {
-        storyDescription: `These Rating indicator types indicate two states: read-only and disabled.
-
-To disable a \`Rating Indicator\` component, the disabled attribute needs to be added to the \`fd-rating-indicator\` elements.
-The disabled state can also be achieved by adding the \`.is-disable\` class or the \`aria-disabled="true"\` attribute.
-
-To make the \`Rating Indicator\` component read-only, the readonly attribute needs to be added to the \`fd-rating-indicator\` element.
-This can also be done by using the \`.is-readonly\` class or \`aria-readonly="true"\` attribute.`
+        storyDescription: `
+To make the \`Rating Indicator\` component display mode needs to be added class \`.is-display-mode\` to the \`fd-rating-indicator\` element.
+`
     }
 };
 
 export const RatingIndicatorWithDifferentMaxValue = () => `
     <div class="example-container">
         <div class="fd-rating-indicator">
-            <div class="fd-rating-indicator__container" aria-label="Rating of this item is 2 out of 5">
+            <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-5-1" name="rating-max-value-5" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-max-value-5-1"></label>
                 
@@ -343,13 +388,13 @@ export const RatingIndicatorWithDifferentMaxValue = () => `
                 <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-5-5" name="rating-max-value-5" value="5">
                 <label class="fd-rating-indicator__label" for="rating-max-value-5-5"></label>
             </div>
-            <span class="dynamic-text">(2 of 5)</span>
+            <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
         </div>
     </div>
     
     <div class="example-container">
         <div class="fd-rating-indicator">
-            <div class="fd-rating-indicator__container" aria-label="Rating of this item is 2 out of 5">
+            <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-6-1" name="rating-max-value-6" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-max-value-6-1"></label>
                 
@@ -368,13 +413,13 @@ export const RatingIndicatorWithDifferentMaxValue = () => `
                 <input aria-label="6 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-6-6" name="rating-max-value-6" value="6">
                 <label class="fd-rating-indicator__label" for="rating-max-value-6-6"></label>
             </div>
-            <span class="dynamic-text">(2 of 6)</span>
+            <span class="fd-rating-indicator__dynamic-text">(2 of 6)</span>
         </div>
     </div>
     
     <div class="example-container">
         <div class="fd-rating-indicator">
-            <div class="fd-rating-indicator__container" aria-label="Rating of this item is 2 out of 5">
+            <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-7-1" name="rating-max-value-7" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-max-value-7-1"></label>
                 
@@ -396,16 +441,15 @@ export const RatingIndicatorWithDifferentMaxValue = () => `
                 <input aria-label="7 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-7-7" name="rating-max-value-7" value="7">
                 <label class="fd-rating-indicator__label" for="rating-max-value-7-7"></label>
             </div>
-            <span class="dynamic-text">(2 of 7)</span>
+            <span class="fd-rating-indicator__dynamic-text">(2 of 7)</span>
         </div>
     </div>
 `;
 
 export const Rtl = () => `
     <div class="example-container" dir="rtl">
-        <span>Rtl:</span>
         <div class="fd-rating-indicator">
-            <div class="fd-rating-indicator__container" aria-label="Rating of this item is 2 out of 5">
+            <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-rtl-1" name="rating-rtl" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-rtl-1"></label>
                 
@@ -421,13 +465,13 @@ export const Rtl = () => `
                 <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-rtl-5" name="rating-rtl" value="5">
                 <label class="fd-rating-indicator__label" for="rating-rtl-5"></label>
             </div>
-            <span class="dynamic-text">(2 of 5)</span>
+            <span class="fd-rating-indicator__dynamic-text">(2 من 5)</span>
         </div>
     </div>
 `;
 
 Rtl.parameters = {
     docs: {
-        storyDescription: 'This rating indicator is displayed from right-to-left on the screen..'
+        storyDescription: 'The rating indicator can be displayed from right to left on the screen.'
     }
 };
