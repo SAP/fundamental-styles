@@ -7,6 +7,8 @@ $button: #{$fd-namespace}-button;
 .#{$block} {
   $fd-carousel-page-indicator-border: 0.0625rem solid var(--sapPageFooter_BorderColor) !default;
   $fd-carousel-button-size: 2.125rem !default;
+  $fd-carousel-touchable-button-size: 2.625rem !default;
+  $fd-carousel-button-focus-outline-offset: -0.125rem !default;
   $fd-carousel-button-content-offset: 0.5rem !default;
   $fd-carousel-dot-size: 0.25rem !default;
   $fd-carousel-dot-active-size: 0.5rem !default;
@@ -34,7 +36,7 @@ $button: #{$fd-namespace}-button;
       top: calc(50%);
       transform: translateY(-50%);
 
-      &.sap-icon--slim-arrow-left {
+      &.#{$block}__button--left {
         left: $fd-carousel-button-content-offset;
 
         @include fd-rtl() {
@@ -43,7 +45,7 @@ $button: #{$fd-namespace}-button;
         }
       }
 
-      &.sap-icon--slim-arrow-right {
+      &.#{$block}__button--right {
         right: $fd-carousel-button-content-offset;
 
         @include fd-rtl() {
@@ -132,19 +134,26 @@ $button: #{$fd-namespace}-button;
     box-shadow: none;
     margin: 0.25rem;
 
-    &[class*=sap-icon]::before {
-      display: inline-block;
-      margin: 0;
+    &::before {
+      left: -0.25rem;
+      right: -0.25rem;
+      height: $fd-carousel-touchable-button-size;
+      width: $fd-carousel-touchable-button-size;
     }
 
     @include fd-rtl() {
-      &[class*=sap-icon]::before {
+      & > [class*=sap-icon] {
         transform: rotate(180deg);
       }
     }
 
     @include fd-focus() {
-      outline-offset: 0;
+      &::after {
+        top: $fd-carousel-button-focus-outline-offset;
+        bottom: $fd-carousel-button-focus-outline-offset;
+        left: $fd-carousel-button-focus-outline-offset;
+        right: $fd-carousel-button-focus-outline-offset;
+      }
     }
   }
 

@@ -41,9 +41,10 @@ export const carouselBottom = () => `
         <div class="fd-carousel__content" style="min-height: 15.5rem;"></div>
         <div class="fd-carousel__page-indicator-container">
             <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-left"
+                class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
+                <i class="sap-icon--slim-arrow-left"></i>
             </button>
             <ol class="fd-carousel__page-indicators">
                 <li 
@@ -70,9 +71,10 @@ export const carouselBottom = () => `
                     class="fd-carousel__page-indicator"></li>
             </ol>
             <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-right"
+                class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
+                <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
     </div>
@@ -87,14 +89,16 @@ export const carouselBottom = () => `
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__content" style="min-height: 15.5rem;">
             <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-left"
+                class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
+                <i class="sap-icon--slim-arrow-left"></i>
             </button>
             <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-right"
+                class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
+                <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
         <div class="fd-carousel__page-indicator-container">
@@ -135,17 +139,19 @@ export const carouselBottom = () => `
         <div class="fd-carousel__content" style="min-height: 15.5rem;"></div>
         <div class="fd-carousel__page-indicator-container">
             <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-left"
+                class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
+                <i class="sap-icon--slim-arrow-left"></i>
             </button>
             <div class="fd-carousel__page-indicators">
                 <div class="fd-carousel__text">1 of 4</div>
             </div>
             <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-right"
+                class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
+                <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
     </div>
@@ -160,14 +166,16 @@ export const carouselBottom = () => `
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__content" style="min-height: 15.5rem;">
             <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-left"
+                class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
+                <i class="sap-icon--slim-arrow-left"></i>
             </button>
             <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-right"
+                class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
+                <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
     </div>
@@ -195,9 +203,10 @@ export const carouselTop = () => `
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__page-indicator-container">
             <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-left"
+                class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
+                <i class="sap-icon--slim-arrow-left"></i>
             </button>
             <ol class="fd-carousel__page-indicators">
                 <li 
@@ -223,9 +232,10 @@ export const carouselTop = () => `
                     class="fd-carousel__page-indicator"></li>
             </ol>
             <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-right"
+                class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
+                <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
         <div class="fd-carousel__content" style="min-height: 15.5rem;"></div>
@@ -266,14 +276,16 @@ export const carouselTop = () => `
         </div>
         <div class="fd-carousel__content" style="min-height: 15.5rem;">
            <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-left"
+                class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
+                <i class="sap-icon--slim-arrow-left"></i>
             </button>
            <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-right"
+                class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
+                <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
     </div>
@@ -293,14 +305,16 @@ export const carouselTop = () => `
         </div>
         <div class="fd-carousel__content" style="min-height: 15.5rem;">
             <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-left"
+                class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
+                <i class="sap-icon--slim-arrow-left"></i>
             </button>
             <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-right"
+                class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
+                <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
     </div>
@@ -315,15 +329,17 @@ export const carouselTop = () => `
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__page-indicator-container">
             <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-left"
+                class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
+                <i class="sap-icon--slim-arrow-left"></i>
             </button>
             <ol class="fd-carousel__page-indicators"></ol>
             <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-right"
+                class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
+                <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
         <div class="fd-carousel__content" style="text-align: center; padding: 1rem; min-height: 15.5rem;">
@@ -367,9 +383,10 @@ export const carouselNoNavigation = () => `
         <div class="fd-carousel__content" style="min-height: 15.5rem;"></div>
         <div class="fd-carousel__page-indicator-container">
             <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-left"
+                class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
+                <i class="sap-icon--slim-arrow-left"></i>
             </button>
             <ol class="fd-carousel__page-indicators">
                 <li 
@@ -396,9 +413,10 @@ export const carouselNoNavigation = () => `
                     class="fd-carousel__page-indicator"></li>
             </ol>
             <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-right"
+                class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
+                <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
     </div>
@@ -438,21 +456,22 @@ export const carouselNoNavigation = () => `
         </div>
         <div class="fd-carousel__content" style="min-height: 15.5rem;">
            <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-left"
+                class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
+                <i class="sap-icon--slim-arrow-left"></i>
             </button>
            <button 
-                class="fd-button fd-carousel__button sap-icon--slim-arrow-right"
+                class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
+                <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
     </div>
     <div style="display: none;" role="region" id="carousel-6" aria-live="polite">
         Displaying item 1 of 4
     </div>
-
 </div>
 `;
 
