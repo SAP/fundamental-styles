@@ -52,6 +52,7 @@ $block: #{$fd-namespace}-alert;
   // ---------------------------------------------------------------------------
 
   // Block
+
   @include fd-reset();
 
   font-size: var(--sapFontSize);
