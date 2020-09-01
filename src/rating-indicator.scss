@@ -29,10 +29,7 @@ $block: #{$fd-namespace}-rating-indicator;
 
       &:nth-child(4n+4) {
         margin-right: $spacingBetweenIcons;
-
-        &::before {
-          float: right;
-        }
+        justify-content: flex-end;
       }
 
       overflow: hidden;
@@ -44,28 +41,34 @@ $block: #{$fd-namespace}-rating-indicator;
 
   position: relative;
 
-  &__container {
-    @include fd-fiori-focus();
-    @include fd-fiori-focus-within();
-  }
-
   &__input {
     @include fd-reset();
 
     position: absolute;
     opacity: 0.0001;
     z-index: -1;
-    top: 3px;
+    top: 0;
     width: $fd-rating-indicator-default-font-size;
     height: $fd-rating-indicator-default-font-size;
 
-    &:checked ~ input + .#{$block}__label {
-      @include fd-icon-glyph('unfavorite') {
-        color: var(--sapRating_Indicator_Unselected_Icon_Color);
-      }
+    &:checked {
+      @include fd-fiori-focus(0) {
+        + .#{$block}__label {
+          outline-offset: 0;
+          outline-width: var(--sapContent_FocusWidth);
+          outline-color: var(--sapContent_FocusColor);
+          outline-style: var(--sapContent_FocusStyle);
+        }
+      };
 
-      &:hover::before {
-        opacity: 1;
+      ~ input + .#{$block}__label {
+        @include fd-icon-glyph('unfavorite') {
+          color: var(--sapRating_Indicator_Unselected_Icon_Color);
+        }
+
+        &:hover::before {
+          opacity: 1;
+        }
       }
     }
   }
@@ -80,9 +83,15 @@ $block: #{$fd-namespace}-rating-indicator;
       font-size: $fd-rating-indicator-default-font-size;
     }
 
-    display: block;
+    display: flex;
+    align-items: center;
     float: left;
+    height: $fd-rating-indicator-default-font-size;
     margin-right: $fd-rating-indicator-default-spacing-between-icons;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     @include fd-rtl() {
       float: right;
@@ -192,9 +201,14 @@ $block: #{$fd-namespace}-rating-indicator;
 
       .#{$block}__label {
         margin-right: $fd-rating-indicator-sizes-spacing-between-icons;
+        height: $fd-rating-indicator-sizes-font-size;
 
         &::before {
           font-size: $fd-rating-indicator-sizes-font-size;
+        }
+
+        &:last-child {
+          margin-right: 0;
         }
       }
 
