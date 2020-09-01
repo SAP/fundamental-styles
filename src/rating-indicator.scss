@@ -93,10 +93,6 @@ $block: #{$fd-namespace}-rating-indicator;
       margin-right: 0;
     }
 
-    @include fd-rtl() {
-      float: right;
-    }
-
     &:hover::before {
       opacity: var(--sapRating_Indicator_Selected_Hover_Opacity);
       transition: opacity $fd-animation-speed ease-in;
@@ -115,6 +111,22 @@ $block: #{$fd-namespace}-rating-indicator;
   &__hide-dynamic-text {
     > .#{$block}__dynamic-text {
       display: none;
+    }
+  }
+
+  @include fd-rtl() {
+    .#{$block}__input:first-child + label {
+      margin-right: 0;
+    }
+
+    .#{$block}__label {
+      float: right;
+    }
+
+    .fd-rating-indicator__dynamic-text,
+    .#{$block}___dynamic-text {
+      margin-left: 0;
+      margin-right: 0.5rem;
     }
   }
 
