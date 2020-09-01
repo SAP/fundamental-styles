@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.30...v0.12.0-rc.31) (2020-09-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* update calendar dismiss button icon(add <i> tag) and remove class fd-calendar__close-button in calendar and datepicker
+
+### Bug Fixes
+
+* update Calendar dismiss button ([#1533](https://github.com/SAP/fundamental-styles/issues/1533)) ([6c982f9](https://github.com/SAP/fundamental-styles/commit/6c982f9dbc765a53808c3d34c6b6d8b49063d660))
+
 ## [0.12.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.29...v0.12.0-rc.30) (2020-09-01)
 
 ## [0.12.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.28...v0.12.0-rc.29) (2020-09-01)
