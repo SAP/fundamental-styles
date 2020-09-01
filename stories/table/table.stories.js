@@ -380,7 +380,7 @@ export const focusableRows = () => `
 `;
 
 /**
- * A table can be set to have focusable cells by adding `fd-table__row--focusable` and a valid `tabindex` to the cells.
+ * A table can be set to have focusable cells by adding `fd-table__cell--focusable` and a valid `tabindex` to the cells.
  * It is not recommended to use focusable cells simultaneously with focusable rows.
  */
 
