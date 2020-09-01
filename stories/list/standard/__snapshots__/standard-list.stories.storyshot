@@ -217,8 +217,96 @@ exports[`Storyshots Components/List/Standard Borderless 1`] = `
 `;
 
 exports[`Storyshots Components/List/Standard Footer 1`] = `
+<section>
+  
 
+  <ul
+    class="fd-list"
+    role="list"
+  >
+    
+  
+    <li
+      class="fd-list__item"
+      role="listitem"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 1
+      </span>
+      
+  
+    </li>
+    
+  
+    <li
+      class="fd-list__item"
+      role="listitem"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 2
+      </span>
+      
+  
+    </li>
+    
+  
+    <li
+      class="fd-list__item"
+      role="listitem"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 3
+      </span>
+      
+  
+    </li>
+    
+  
+    <li
+      class="fd-list__item"
+      role="listitem"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 4
+      </span>
+      
+  
+    </li>
+    
 
+  </ul>
+  
+
+  <span
+    class="fd-list__footer"
+  >
+    
+  Footer text
+
+  </span>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/List/Standard Groups 1`] = `

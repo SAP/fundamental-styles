@@ -6,8 +6,13 @@ exports[`Storyshots Components/Counter Notification 1`] = `
 
   <button
     aria-label="Notifications"
-    class="fd-button fd-button--transparent sap-icon--bell"
+    class="fd-button fd-button--transparent"
   >
+    
+    
+    <i
+      class="sap-icon--bell"
+    />
     
     
     <span
@@ -24,8 +29,13 @@ exports[`Storyshots Components/Counter Notification 1`] = `
 
   <button
     aria-label="Notifications"
-    class="fd-button fd-button--transparent sap-icon--bell"
+    class="fd-button fd-button--transparent"
   >
+    
+    
+    <i
+      class="sap-icon--bell"
+    />
     
     
     <span
@@ -42,8 +52,13 @@ exports[`Storyshots Components/Counter Notification 1`] = `
 
   <button
     aria-label="Notifications"
-    class="fd-button fd-button--transparent sap-icon--bell"
+    class="fd-button fd-button--transparent"
   >
+    
+    
+    <i
+      class="sap-icon--bell"
+    />
     
     
     <span
@@ -60,8 +75,13 @@ exports[`Storyshots Components/Counter Notification 1`] = `
 
   <button
     aria-label="Notifications"
-    class="fd-button fd-button--transparent sap-icon--bell"
+    class="fd-button fd-button--transparent"
   >
+    
+    
+    <i
+      class="sap-icon--bell"
+    />
     
     
     <span

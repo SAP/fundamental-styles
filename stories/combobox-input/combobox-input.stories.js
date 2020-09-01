@@ -26,7 +26,9 @@ export const cozyAndCompact = () => `
                 <div class="fd-input-group fd-input-group--control">
                     <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Fruit">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
-                        <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-controls="F4GcX348" aria-expanded="true" aria-haspopup="true"></button>
+                        <button class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcX348" aria-expanded="true" aria-haspopup="true">
+                            <i class="sap-icon--navigation-down-arrow"></i>
+                        </button>
                     </span>
                 </div>
             </div>
@@ -92,7 +94,9 @@ export const cozyAndCompact = () => `
                 <div class="fd-input-group fd-input-group--control">
                     <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
                     <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
-                        <button class="fd-input-group__button fd-button fd-button--compact fd-button--transparent sap-icon--navigation-down-arrow fd-select__button" aria-controls="F4GcX34" aria-expanded="true" aria-haspopup="true"></button>
+                        <button class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-select__button" aria-controls="F4GcX34" aria-expanded="true" aria-haspopup="true">
+                            <i class="sap-icon--navigation-down-arrow"></i>
+                        </button>
                     </span>
                 </div>
             </div>
@@ -221,7 +225,9 @@ export const twoItemsAndItemsGrouping = () => `
                 <div class="fd-input-group fd-input-group--control">
                     <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Product">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
-                        <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--navigation-down-arrow fd-select__button" aria-controls="F4GRTGLK6" aria-expanded="true" aria-haspopup="true"></button>
+                        <button class="fd-input-group__button fd-button fd-button--transparent fd-select__button" aria-controls="F4GRTGLK6" aria-expanded="true" aria-haspopup="true">
+                            <i class="sap-icon--navigation-down-arrow"></i>
+                        </button>
                     </span>
                 </div>
             </div>
@@ -253,7 +259,9 @@ export const twoItemsAndItemsGrouping = () => `
                 <div class="fd-input-group fd-input-group--control">
                     <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Ingredient">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
-                        <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-controls="F4GcXLK6" aria-expanded="true" aria-haspopup="true"></button>
+                        <button class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcXLK6" aria-expanded="true" aria-haspopup="true">
+                            <i class="sap-icon--navigation-down-arrow"></i>
+                        </button>
                     </span>
                 </div>
             </div>
@@ -315,7 +323,9 @@ export const matchPopoverBodySize = () => `
         <div class="fd-input-group fd-input-group--control">
             <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Ingredient">
             <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-controls="F4HTFDLK6" aria-expanded="true" aria-haspopup="true"></button>
+                <button class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4HTFDLK6" aria-expanded="true" aria-haspopup="true">
+                    <i class="sap-icon--navigation-down-arrow"></i>
+                </button>
             </span>
         </div>
     </div>
@@ -360,7 +370,9 @@ export const disabledAndReadOnly = () => `
             <div class="fd-input-group fd-input-group--control" aria-disabled="true" disabled>
                 <input type="text" class="fd-input fd-input-group__input" id="" value="Orange" placeholder="Select Fruit">
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--navigation-down-arrow fd-select__button"></button>
+                    <button class="fd-input-group__button fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--navigation-down-arrow"></i>
+                    </button>
                 </span>
             </div>
         </div>
@@ -391,8 +403,10 @@ export const semantic = () => `
                 <div class="fd-input-group fd-input-group--control is-success">
                     <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
                     <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
-                        <button class="fd-input-group__button fd-button fd-button--compact fd-button--transparent sap-icon--navigation-down-arrow fd-select__button" 
-                        aria-controls="F4GcEX34" aria-expanded="true" aria-haspopup="true"></button>
+                        <button class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-select__button" 
+                        aria-controls="F4GcEX34" aria-expanded="true" aria-haspopup="true">
+                            <i class="sap-icon--navigation-down-arrow"></i>
+                        </button>
                     </span>
                 </div>
             </div>
@@ -447,7 +461,9 @@ export const mobile = () => `
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent sap-icon--decline" aria-label="close"></button>
+                    <button class="fd-button fd-button--transparent" aria-label="close">
+                        <i class="sap-icon--decline"></i>
+                    </button>
                 </div>
             </div>
         </header>
@@ -456,7 +472,9 @@ export const mobile = () => `
                 <div class="fd-input-group fd-input-group--control">
                      <input type="text" class="fd-input fd-input-group__input" value="Apple" id="" placeholder="Select Ingredient">
                      <span class="fd-input-group__addon fd-input-group__addon--button">
-                         <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--navigation-down-arrow"></button>
+                         <button class="fd-input-group__button fd-button fd-button--transparent">
+                                <i class="sap-icon--navigation-down-arrow"></i>
+                            </button>
                      </span>
                  </div>
             </div>

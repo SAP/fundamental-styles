@@ -2,16 +2,3 @@
   border-color: var(--sapButton_Lite_BorderColor);
   background-color: var(--sapButton_Lite_Background);
 }
-
-@mixin transparentPressed() {
-  @include fd-disabled() {
-    @include transparentDisabled();
-  }
-}
-
-@mixin transparentDisabled() {
-  @include transparent();
-  @include isDisabled();
-
-  box-shadow: none;
-}

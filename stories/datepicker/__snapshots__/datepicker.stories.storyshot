@@ -67,8 +67,16 @@ exports[`Storyshots Patterns/Date Picker Today Navigation Button 1`] = `
               aria-expanded="true"
               aria-haspopup="true"
               aria-label="Choose Date"
-              class="fd-input-group__button fd-popover__control fd-button fd-button--transparent sap-icon--appointment-2"
-            />
+              class="fd-input-group__button fd-popover__control fd-button fd-button--transparent"
+            >
+               
+            
+              <i
+                class="sap-icon--appointment-2"
+              />
+              
+          
+            </button>
             
         
           </span>
@@ -110,8 +118,16 @@ exports[`Storyshots Patterns/Date Picker Today Navigation Button 1`] = `
                 <button
                   aria-disabled="true"
                   aria-label="Previous"
-                  class="fd-button fd-button--transparent sap-icon--slim-arrow-left"
-                />
+                  class="fd-button fd-button--transparent"
+                >
+                   
+                
+                  <i
+                    class="sap-icon--slim-arrow-left"
+                  />
+                  
+              
+                </button>
                 
             
               </div>
@@ -158,8 +174,16 @@ exports[`Storyshots Patterns/Date Picker Today Navigation Button 1`] = `
               
                 <button
                   aria-label="Next"
-                  class="fd-button fd-button--transparent sap-icon--slim-arrow-right"
-                />
+                  class="fd-button fd-button--transparent"
+                >
+                   
+                
+                  <i
+                    class="sap-icon--slim-arrow-right"
+                  />
+                  
+              
+                </button>
                 
             
               </div>

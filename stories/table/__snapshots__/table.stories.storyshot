@@ -983,8 +983,16 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
                 
           <button
             aria-label="navigation"
-            class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"
-          />
+            class="fd-button fd-button--transparent"
+          >
+            
+                    
+            <i
+              class="sap-icon--navigation-right-arrow"
+            />
+            
+                
+          </button>
           
             
         </td>
@@ -1038,8 +1046,16 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
                 
           <button
             aria-label="navigation"
-            class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"
-          />
+            class="fd-button fd-button--transparent"
+          >
+            
+                    
+            <i
+              class="sap-icon--navigation-right-arrow"
+            />
+            
+                
+          </button>
           
             
         </td>
@@ -1093,8 +1109,16 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
                 
           <button
             aria-label="navigation"
-            class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"
-          />
+            class="fd-button fd-button--transparent"
+          >
+            
+                    
+            <i
+              class="sap-icon--navigation-right-arrow"
+            />
+            
+                
+          </button>
           
             
         </td>
@@ -1244,8 +1268,16 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
                     
             <button
               aria-label="navigation"
-              class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
-            />
+              class="fd-button fd-button--transparent"
+            >
+              
+                        
+              <i
+                class="sap-icon--navigation-left-arrow"
+              />
+              
+                    
+            </button>
             
                 
           </td>
@@ -1299,8 +1331,16 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
                     
             <button
               aria-label="navigation"
-              class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
-            />
+              class="fd-button fd-button--transparent"
+            >
+              
+                        
+              <i
+                class="sap-icon--navigation-left-arrow"
+              />
+              
+                    
+            </button>
             
                 
           </td>
@@ -1354,8 +1394,16 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
                     
             <button
               aria-label="navigation"
-              class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
-            />
+              class="fd-button fd-button--transparent"
+            >
+              
+                        
+              <i
+                class="sap-icon--navigation-left-arrow"
+              />
+              
+                    
+            </button>
             
                 
           </td>
@@ -3415,8 +3463,16 @@ exports[`Storyshots Components/Table Table With Contextual Menu 1`] = `
                 aria-expanded="false"
                 aria-haspopup="true"
                 aria-label="navigation"
-                class="fd-button fd-button--transparent sap-icon--overflow"
-              />
+                class="fd-button fd-button--transparent"
+              >
+                
+                            
+                <i
+                  class="sap-icon--overflow"
+                />
+                
+                        
+              </button>
               
                     
             </div>
@@ -3579,8 +3635,16 @@ exports[`Storyshots Components/Table Table With Contextual Menu 1`] = `
                 aria-expanded="false"
                 aria-haspopup="true"
                 aria-label="navigation"
-                class="fd-button fd-button--transparent sap-icon--overflow"
-              />
+                class="fd-button fd-button--transparent"
+              >
+                
+                            
+                <i
+                  class="sap-icon--overflow"
+                />
+                
+                        
+              </button>
               
                     
             </div>
@@ -3743,8 +3807,16 @@ exports[`Storyshots Components/Table Table With Contextual Menu 1`] = `
                 aria-expanded="false"
                 aria-haspopup="true"
                 aria-label="navigation"
-                class="fd-button fd-button--transparent sap-icon--overflow"
-              />
+                class="fd-button fd-button--transparent"
+              >
+                
+                            
+                <i
+                  class="sap-icon--overflow"
+                />
+                
+                        
+              </button>
               
                     
             </div>
@@ -4136,14 +4208,30 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
                     
             <button
               aria-label="navigation"
-              class="fd-button fd-button--icon fd-button--transparent fd-button--compact sap-icon--arrow-top"
-            />
+              class="fd-button fd-button--icon fd-button--transparent fd-button--compact"
+            >
+              
+                        
+              <i
+                class="sap-icon--arrow-top"
+              />
+              
+                    
+            </button>
             
                     
             <button
               aria-label="navigation"
-              class="fd-button fd-button--icon fd-button--transparent fd-button--compact sap-icon--arrow-bottom"
-            />
+              class="fd-button fd-button--icon fd-button--transparent fd-button--compact"
+            >
+              
+                        
+              <i
+                class="sap-icon--arrow-bottom"
+              />
+              
+                    
+            </button>
             
                 
           </div>
@@ -4173,8 +4261,16 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
                             
                 <button
                   aria-label="navigation"
-                  class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact sap-icon--search"
-                />
+                  class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact"
+                >
+                  
+                                
+                  <i
+                    class="sap-icon--search"
+                  />
+                  
+                            
+                </button>
                 
                         
               </span>
@@ -4453,16 +4549,32 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
     
     <button
       aria-label="navigation"
-      class="fd-button fd-button--compact fd-button--transparent sap-icon--filter"
+      class="fd-button fd-button--compact fd-button--transparent"
       onclick="toggleDialog('filter-dialog-example', true)"
-    />
+    >
+      
+        
+      <i
+        class="sap-icon--filter"
+      />
+      
+    
+    </button>
     
     
     <button
       aria-label="navigation"
-      class="fd-button fd-button--compact fd-button--transparent sap-icon--action-settings"
+      class="fd-button fd-button--compact fd-button--transparent"
       onclick="toggleDialog('settings-dialog-example', true)"
-    />
+    >
+      
+        
+      <i
+        class="sap-icon--action-settings"
+      />
+      
+    
+    </button>
     
 
   </div>

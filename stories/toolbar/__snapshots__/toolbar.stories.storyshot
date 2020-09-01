@@ -351,8 +351,16 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
             aria-expanded="true"
             aria-haspopup="true"
             aria-label="More"
-            class="fd-button fd-button--transparent sap-icon--overflow"
-          />
+            class="fd-button fd-button--transparent"
+          >
+            
+                
+            <i
+              class="sap-icon--overflow"
+            />
+                
+            
+          </button>
           
         
         </div>
@@ -486,8 +494,16 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
           aria-expanded="true"
           aria-haspopup="true"
           aria-label="More"
-          class="fd-button fd-button--compact fd-button--transparent sap-icon--overflow"
-        />
+          class="fd-button fd-button--compact fd-button--transparent"
+        >
+          
+            
+          <i
+            class="sap-icon--overflow"
+          />
+              
+        
+        </button>
         
     
       </div>
@@ -630,8 +646,17 @@ exports[`Storyshots Components/Toolbar Separator 1`] = `
     
     
     <button
-      class="fd-button fd-button--transparent sap-icon--survey"
-    />
+      aria-label="Survey"
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      
+        
+      <i
+        class="sap-icon--survey"
+      />
+      
+    
+    </button>
     
     
     <span
@@ -640,13 +665,31 @@ exports[`Storyshots Components/Toolbar Separator 1`] = `
     
     
     <button
-      class="fd-button fd-button--transparent sap-icon--pool"
-    />
+      aria-label="Pool"
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      
+        
+      <i
+        class="sap-icon--pool"
+      />
+      
+    
+    </button>
     
     
     <button
-      class="fd-button fd-button--transparent sap-icon--pie-chart"
-    />
+      aria-label="Chart"
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      
+        
+      <i
+        class="sap-icon--pie-chart"
+      />
+      
+    
+    </button>
     
 
   </div>

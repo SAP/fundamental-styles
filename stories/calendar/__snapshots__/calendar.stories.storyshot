@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Calendar Compact Mode 1`] = `
+exports[`Storyshots Components/Calendar Compact 1`] = `
 
 
 `;
@@ -10,12 +10,7 @@ exports[`Storyshots Components/Calendar Days 1`] = `
 
 `;
 
-exports[`Storyshots Components/Calendar Mobile Mode Landscape Orientation 1`] = `
-
-
-`;
-
-exports[`Storyshots Components/Calendar Mobile Mode Portrait Orientation 1`] = `
+exports[`Storyshots Components/Calendar Landscape (mobile) 1`] = `
 
 
 `;
@@ -23,6 +18,11 @@ exports[`Storyshots Components/Calendar Mobile Mode Portrait Orientation 1`] = `
 exports[`Storyshots Components/Calendar Months 1`] = `
 
     
+`;
+
+exports[`Storyshots Components/Calendar Portrait (mobile) 1`] = `
+
+
 `;
 
 exports[`Storyshots Components/Calendar Years 1`] = `
@@ -57,9 +57,17 @@ exports[`Storyshots Components/Calendar Years 1`] = `
     			
             <button
               aria-label="Previous"
-              class="fd-button fd-button--transparent sap-icon--slim-arrow-left"
+              class="fd-button fd-button--transparent"
               type="button"
-            />
+            >
+              
+                    
+              <i
+                class="sap-icon--slim-arrow-left"
+              />
+              
+                
+            </button>
             
     		
           </div>
@@ -104,9 +112,17 @@ exports[`Storyshots Components/Calendar Years 1`] = `
     			
             <button
               aria-label="Next"
-              class="fd-button fd-button--transparent sap-icon--slim-arrow-right"
+              class="fd-button fd-button--transparent"
               type="button"
-            />
+            >
+              
+                    
+              <i
+                class="sap-icon--slim-arrow-right"
+              />
+              
+                
+            </button>
             
     		
           </div>
@@ -511,9 +527,17 @@ exports[`Storyshots Components/Calendar Years 1`] = `
     			
             <button
               aria-label="Previous"
-              class="fd-button fd-button--transparent sap-icon--slim-arrow-left"
+              class="fd-button fd-button--transparent"
               type="button"
-            />
+            >
+              
+                    
+              <i
+                class="sap-icon--slim-arrow-left"
+              />
+              
+                
+            </button>
             
     		
           </div>
@@ -558,9 +582,17 @@ exports[`Storyshots Components/Calendar Years 1`] = `
     			
             <button
               aria-label="Next"
-              class="fd-button fd-button--transparent sap-icon--slim-arrow-right"
+              class="fd-button fd-button--transparent"
               type="button"
-            />
+            >
+              
+                    
+              <i
+                class="sap-icon--slim-arrow-right"
+              />
+              
+                
+            </button>
             
     		
           </div>
@@ -854,9 +886,17 @@ exports[`Storyshots Components/Calendar Years 1`] = `
     			
             <button
               aria-label="Previous"
-              class="fd-button fd-button--transparent sap-icon--slim-arrow-left"
+              class="fd-button fd-button--transparent"
               type="button"
-            />
+            >
+              
+                    
+              <i
+                class="sap-icon--slim-arrow-left"
+              />
+              
+                
+            </button>
             
     		
           </div>
@@ -901,9 +941,17 @@ exports[`Storyshots Components/Calendar Years 1`] = `
     			
             <button
               aria-label="Next"
-              class="fd-button fd-button--transparent sap-icon--slim-arrow-right"
+              class="fd-button fd-button--transparent"
               type="button"
-            />
+            >
+              
+                    
+              <i
+                class="sap-icon--slim-arrow-right"
+              />
+              
+                
+            </button>
             
     		
           </div>
@@ -1128,9 +1176,17 @@ exports[`Storyshots Components/Calendar Years 1`] = `
     			
             <button
               aria-label="Previous"
-              class="fd-button fd-button--transparent sap-icon--slim-arrow-left"
+              class="fd-button fd-button--transparent"
               type="button"
-            />
+            >
+              
+                    
+              <i
+                class="sap-icon--slim-arrow-left"
+              />
+              
+                
+            </button>
             
     		
           </div>
@@ -1175,9 +1231,17 @@ exports[`Storyshots Components/Calendar Years 1`] = `
     			
             <button
               aria-label="Next"
-              class="fd-button fd-button--transparent sap-icon--slim-arrow-right"
+              class="fd-button fd-button--transparent"
               type="button"
-            />
+            >
+              
+                    
+              <i
+                class="sap-icon--slim-arrow-right"
+              />
+              
+                
+            </button>
             
     		
           </div>

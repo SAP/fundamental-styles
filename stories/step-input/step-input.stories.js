@@ -32,10 +32,10 @@ export const primary = () => `
         <button aria-label="Step down" class="
             fd-button
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--less"
+            fd-step-input__button"
             onclick="stepInputValue('step-3', 'down');"
             tabindex="-1" type="button">
+                <i class="sap-icon--less"></i>
         </button>
     <input class="
             fd-input 
@@ -45,10 +45,10 @@ export const primary = () => `
         <button aria-label="Step up" class="
             fd-button 
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--add"
+            fd-step-input__button"
             onclick="stepInputValue('step-3', 'up');" 
             tabindex="-1" type="button">
+                <i class="sap-icon--add"></i>
         </button>
 </div>
 `;
@@ -68,10 +68,10 @@ export const compact = () => `
                 fd-button
                 fd-button--compact
                 fd-button--transparent
-                fd-step-input__button
-                sap-icon--less"
+                fd-step-input__button"
                 onclick="stepInputValue('step-1', 'down');"
                 tabindex="-1" type="button">
+                    <i class="sap-icon--less"></i>
             </button>
         <input class="
                 fd-input 
@@ -83,10 +83,10 @@ export const compact = () => `
                 fd-button 
                 fd-button--compact
                 fd-button--transparent
-                fd-step-input__button
-                sap-icon--add"
+                fd-step-input__button"
                 onclick="stepInputValue('step-1', 'up');" 
                 tabindex="-1" type="button">
+                    <i class="sap-icon--add"></i>
             </button>
     </div>
     <span class="fd-form-label fd-form-label--unit-description">PC</span>
@@ -103,10 +103,10 @@ export const focused = () => `
         <button aria-label="Step down" class="
             fd-button
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--less"
+            fd-step-input__button"
             onclick="stepInputValue('step-20', 'down');"
             tabindex="-1" type="button">
+                <i class="sap-icon--less"></i>
         </button>
     <input class="
             fd-input 
@@ -116,10 +116,10 @@ export const focused = () => `
         <button aria-label="Step up" class="
             fd-button 
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--add"
+            fd-step-input__button"
             onclick="stepInputValue('step-20', 'up');" 
             tabindex="-1" type="button">
+                <i class="sap-icon--add"></i>
         </button>
 </div>
 `;
@@ -136,10 +136,10 @@ export const states = () => `
         <button aria-label="Step down" class="
             fd-button
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--less"
+            fd-step-input__button"
             onclick="stepInputValue('step-5', 'down');"
             tabindex="-1" type="button">
+                <i class="sap-icon--less"></i>
         </button>
     <input class="
             fd-input 
@@ -149,10 +149,10 @@ export const states = () => `
         <button aria-label="Step up" class="
             fd-button 
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--add"
+            fd-step-input__button"
             onclick="stepInputValue('step-5', 'up');" 
             tabindex="-1" type="button">
+                <i class="sap-icon--add"></i>
         </button>
 </div>
 
@@ -162,10 +162,10 @@ export const states = () => `
         <button aria-label="Step down" class="
             fd-button
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--less"
+            fd-step-input__button"
             onclick="stepInputValue('step-6', 'down');"
             tabindex="-1" type="button">
+                <i class="sap-icon--less"></i>
         </button>
     <input class="
             fd-input 
@@ -175,10 +175,10 @@ export const states = () => `
         <button aria-label="Step up" class="
             fd-button 
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--add"
+            fd-step-input__button"
             onclick="stepInputValue('step-6', 'up');" 
             tabindex="-1" type="button">
+                <i class="sap-icon--add"></i>
         </button>
 </div>
 <br><br>
@@ -187,10 +187,10 @@ export const states = () => `
         <button aria-label="Step down" class="
             fd-button
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--less"
+            fd-step-input__button"
             onclick="stepInputValue('step-7', 'down');"
             tabindex="-1" type="button">
+                <i class="sap-icon--less"></i>
         </button>
     <input class="
             fd-input 
@@ -200,10 +200,10 @@ export const states = () => `
         <button aria-label="Step up" class="
             fd-button 
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--add"
+            fd-step-input__button"
             onclick="stepInputValue('step-7', 'up');" 
             tabindex="-1" type="button">
+                <i class="sap-icon--add"></i>
         </button>
 </div>
 
@@ -214,10 +214,10 @@ export const states = () => `
     <button aria-label="Step down" class="
         fd-button
         fd-button--transparent
-        fd-step-input__button
-        sap-icon--less"
+        fd-step-input__button"
         onclick="stepInputValue('step-8', 'down');"
         tabindex="-1" type="button">
+            <i class="sap-icon--less"></i>
     </button>
     <input class="
         fd-input 
@@ -227,10 +227,10 @@ export const states = () => `
     <button aria-label="Step up" class="
         fd-button 
         fd-button--transparent
-        fd-step-input__button
-        sap-icon--add"
+        fd-step-input__button"
         onclick="stepInputValue('step-8', 'up');" 
         tabindex="-1" type="button">
+            <i class="sap-icon--add"></i>
     </button>
 </div>
 `;
@@ -247,10 +247,10 @@ export const disabled = () => `
         <button aria-label="Step down" class="
             fd-button
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--less"
+            fd-step-input__button"
             onclick="stepInputValue('step-13', 'down');"
             tabindex="-1" type="button">
+                <i class="sap-icon--less"></i>
         </button>
     <input class="
             fd-input 
@@ -260,10 +260,10 @@ export const disabled = () => `
         <button aria-label="Step up" class="
             fd-button 
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--add"
+            fd-step-input__button"
             onclick="stepInputValue('step-13', 'up');" 
             tabindex="-1" type="button">
+                <i class="sap-icon--add"></i>
         </button>
 </div>
 `;
@@ -273,10 +273,10 @@ export const readOnly = () => `
         <button aria-label="Step down" class="
             fd-button
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--less"
+            fd-step-input__button"
             onclick="stepInputValue('step-14', 'down');"
             tabindex="-1" type="button">
+                <i class="sap-icon--less"></i>
         </button>
     <input class="
             fd-input 
@@ -286,10 +286,10 @@ export const readOnly = () => `
         <button aria-label="Step up" class="
             fd-button 
             fd-button--transparent
-            fd-step-input__button
-            sap-icon--add"
+            fd-step-input__button"
             onclick="stepInputValue('step-14', 'up');" 
             tabindex="-1" type="button">
+                <i class="sap-icon--add"></i>
         </button>
 </div>
 `;

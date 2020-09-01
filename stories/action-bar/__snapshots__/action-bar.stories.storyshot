@@ -26,8 +26,16 @@ exports[`Storyshots Components/Action Bar Action bar mobile view 1`] = `
                 
           <button
             aria-label="button"
-            class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
-          />
+            class="fd-button fd-button--transparent"
+          >
+            
+                    
+            <i
+              class="sap-icon--navigation-left-arrow"
+            />
+            
+                
+          </button>
           
             
         </div>
@@ -68,8 +76,16 @@ exports[`Storyshots Components/Action Bar Action bar mobile view 1`] = `
                 aria-expanded="false"
                 aria-haspopup="true"
                 aria-label="button"
-                class="fd-button fd-button--transparent sap-icon--overflow"
-              />
+                class="fd-button fd-button--transparent"
+              >
+                
+                            
+                <i
+                  class="sap-icon--overflow"
+                />
+                
+                        
+              </button>
               
                     
             </div>
@@ -248,8 +264,16 @@ exports[`Storyshots Components/Action Bar Action bar mobile view 1`] = `
                 
           <button
             aria-label="button"
-            class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"
-          />
+            class="fd-button fd-button--transparent"
+          >
+            
+                    
+            <i
+              class="sap-icon--navigation-right-arrow"
+            />
+            
+                
+          </button>
           
             
         </div>
@@ -290,8 +314,16 @@ exports[`Storyshots Components/Action Bar Action bar mobile view 1`] = `
                 aria-expanded="false"
                 aria-haspopup="true"
                 aria-label="button"
-                class="fd-button fd-button--transparent sap-icon--overflow"
-              />
+                class="fd-button fd-button--transparent "
+              >
+                
+                            
+                <i
+                  class="sap-icon--overflow"
+                />
+                
+                        
+              </button>
               
                     
             </div>
@@ -459,8 +491,16 @@ exports[`Storyshots Components/Action Bar Action bar with Back button and No des
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"
-        />
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-left-arrow"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -541,8 +581,16 @@ exports[`Storyshots Components/Action Bar Action bar with Back button and No des
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"
-        />
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-right-arrow"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -617,8 +665,16 @@ exports[`Storyshots Components/Action Bar Action bar with Long page title and de
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"
-        />
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-left-arrow"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -715,8 +771,16 @@ exports[`Storyshots Components/Action Bar Action bar with Long page title and de
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"
-        />
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-right-arrow"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -807,8 +871,16 @@ exports[`Storyshots Components/Action Bar Action bar with back button, descripti
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"
-        />
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-left-arrow"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -896,8 +968,16 @@ exports[`Storyshots Components/Action Bar Action bar with back button, descripti
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"
-        />
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-left-arrow"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -980,8 +1060,16 @@ exports[`Storyshots Components/Action Bar Action bar with back button, descripti
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"
-        />
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-left-arrow"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -1069,8 +1157,16 @@ exports[`Storyshots Components/Action Bar Action bar with back button, descripti
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"
-        />
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-right-arrow"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -1152,8 +1248,16 @@ exports[`Storyshots Components/Action Bar Action bar with back button, descripti
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"
-        />
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-left-arrow"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -1241,8 +1345,16 @@ exports[`Storyshots Components/Action Bar Action bar with back button, descripti
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-right-arrow"
-        />
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-right-arrow"
+          />
+          
+            
+        </button>
         
         
       </div>

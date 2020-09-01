@@ -142,7 +142,9 @@ export const mobileCozyMode = () => `
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                <button aria-label="fd-button" role="button" class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                <button aria-label="fd-button" role="button" class="fd-button fd-button--transparent">
+                    <i class="sap-icon--navigation-left-arrow"></i>
+                </button>
             </div>
             <div class="fd-bar__element">
                     <h3 class="fd-title fd-title--h5">

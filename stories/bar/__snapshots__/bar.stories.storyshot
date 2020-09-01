@@ -1,6 +1,373 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Bar Bar As Floating Footer 1`] = `
+exports[`Storyshots Components/Bar Cozy 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Bar Default 1`] = `
+<section>
+  
+
+  <div
+    class="fd-bar"
+  >
+    
+    
+    <div
+      class="fd-bar__left"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-left-arrow"
+          />
+          
+            
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <span
+          aria-label="text"
+        >
+          TEXT
+        </span>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__middle"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <div
+          aria-label="Group label"
+          class="fd-segmented-button"
+          role="group"
+        >
+          
+                
+          <button
+            aria-label="button"
+            aria-pressed="true"
+            class="fd-button fd-button--compact"
+          >
+            
+                    
+            <i
+              class="sap-icon--email"
+            />
+            
+                
+          </button>
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact"
+          >
+            
+                    
+            <i
+              class="sap-icon--iphone"
+            />
+            
+                
+          </button>
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact"
+          >
+            
+                    
+            <i
+              class="sap-icon--notification-2"
+            />
+            
+                
+          </button>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__right"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <span
+          aria-label="Image label"
+          class="fd-image--s"
+          style="background-image: url('https://placeimg.com/400/400/nature');"
+        >
+          
+            
+        </span>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--grid"
+          />
+          
+            
+        </button>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+  <br />
+  <br />
+  
+
+  <div>
+    <b>
+      RTL Support
+    </b>
+  </div>
+  
+
+  <br />
+    
+
+  <div
+    class="fd-bar"
+    dir="rtl"
+  >
+    
+    
+    <div
+      class="fd-bar__left"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-right-arrow"
+          />
+          
+            
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+          
+        <span
+          aria-label="text"
+        >
+          TEXT
+        </span>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__middle"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <div
+          aria-label="Group label"
+          class="fd-segmented-button"
+          role="group"
+        >
+          
+                
+          <button
+            aria-label="button"
+            aria-pressed="true"
+            class="fd-button fd-button--compact"
+          >
+            
+                    
+            <i
+              class="sap-icon--email"
+            />
+            
+                
+          </button>
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact"
+          >
+            
+                    
+            <i
+              class="sap-icon--iphone"
+            />
+            
+                
+          </button>
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact"
+          >
+            
+                    
+            <i
+              class="sap-icon--notification-2"
+            />
+            
+                
+          </button>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__right"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <span
+          aria-label="Image label"
+          class="fd-image--s"
+          style="background-image: url('https://placeimg.com/400/400/nature');"
+        >
+          
+            
+        </span>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--grid"
+          />
+          
+            
+        </button>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Bar Floating Footer 1`] = `
 <section>
   
 
@@ -190,7 +557,7 @@ exports[`Storyshots Components/Bar Bar As Floating Footer 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Bar Bar As Footer 1`] = `
+exports[`Storyshots Components/Bar Footer 1`] = `
 <section>
   
 
@@ -380,7 +747,7 @@ exports[`Storyshots Components/Bar Bar As Footer 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Bar Bar As Header 1`] = `
+exports[`Storyshots Components/Bar Header 1`] = `
 <section>
   
 
@@ -411,8 +778,16 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
-        />
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-left-arrow"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -425,8 +800,16 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--home"
-        />
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--home"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -439,8 +822,16 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--account"
-        />
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--account"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -469,20 +860,44 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
           <button
             aria-label="button"
             aria-pressed="true"
-            class="fd-button fd-button--compact sap-icon--email"
-          />
+            class="fd-button fd-button--compact"
+          >
+            
+                    
+            <i
+              class="sap-icon--email"
+            />
+            
+                
+          </button>
           
                 
           <button
             aria-label="button"
-            class="fd-button fd-button--compact sap-icon--iphone"
-          />
+            class="fd-button fd-button--compact"
+          >
+            
+                    
+            <i
+              class="sap-icon--iphone"
+            />
+            
+                
+          </button>
           
                 
           <button
             aria-label="button"
-            class="fd-button fd-button--compact sap-icon--notification-2"
-          />
+            class="fd-button fd-button--compact"
+          >
+            
+                    
+            <i
+              class="sap-icon--notification-2"
+            />
+            
+                
+          </button>
           
             
         </div>
@@ -524,8 +939,16 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--grid"
-        />
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--grid"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -568,8 +991,16 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
-        />
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-left-arrow"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -582,8 +1013,16 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--home"
-        />
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--home"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -596,8 +1035,16 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--account"
-        />
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--account"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -626,20 +1073,44 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
           <button
             aria-label="button"
             aria-pressed="true"
-            class="fd-button fd-button--compact sap-icon--email"
-          />
+            class="fd-button"
+          >
+            
+                    
+            <i
+              class="sap-icon--email"
+            />
+            
+                
+          </button>
           
                 
           <button
             aria-label="button"
-            class="fd-button fd-button--compact sap-icon--iphone"
-          />
+            class="fd-button"
+          >
+            
+                    
+            <i
+              class="sap-icon--iphone"
+            />
+            
+                
+          </button>
           
                 
           <button
             aria-label="button"
-            class="fd-button fd-button--compact sap-icon--notification-2"
-          />
+            class="fd-button"
+          >
+            
+                    
+            <i
+              class="sap-icon--notification-2"
+            />
+            
+                
+          </button>
           
             
         </div>
@@ -681,8 +1152,16 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--grid"
-        />
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--grid"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -726,8 +1205,16 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"
-        />
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-right-arrow"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -740,8 +1227,16 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--home"
-        />
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--home"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -754,8 +1249,16 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--account"
-        />
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--account"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -784,20 +1287,44 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
           <button
             aria-label="button"
             aria-pressed="true"
-            class="fd-button fd-button--compact sap-icon--email"
-          />
+            class="fd-button fd-button--compact"
+          >
+            
+                    
+            <i
+              class="sap-icon--email"
+            />
+            
+                
+          </button>
           
                 
           <button
             aria-label="button"
-            class="fd-button fd-button--compact sap-icon--iphone"
-          />
+            class="fd-button fd-button--compact"
+          >
+            
+                    
+            <i
+              class="sap-icon--iphone"
+            />
+            
+                
+          </button>
           
                 
           <button
             aria-label="button"
-            class="fd-button fd-button--compact sap-icon--notification-2"
-          />
+            class="fd-button fd-button--compact"
+          >
+            
+                    
+            <i
+              class="sap-icon--notification-2"
+            />
+            
+                
+          </button>
           
             
         </div>
@@ -839,8 +1366,16 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--grid"
-        />
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--grid"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -855,7 +1390,7 @@ exports[`Storyshots Components/Bar Bar As Header 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Bar Bar As Subheader 1`] = `
+exports[`Storyshots Components/Bar Header With Subheader 1`] = `
 <section>
   
 
@@ -870,7 +1405,7 @@ exports[`Storyshots Components/Bar Bar As Subheader 1`] = `
   
 
   <div
-    class="fd-bar fd-bar--subheader"
+    class="fd-bar fd-bar--header-with-subheader"
   >
     
     
@@ -886,8 +1421,16 @@ exports[`Storyshots Components/Bar Bar As Subheader 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact sap-icon--navigation-left-arrow"
-        />
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-left-arrow"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -900,8 +1443,107 @@ exports[`Storyshots Components/Bar Bar As Subheader 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact sap-icon--home"
-        />
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--home"
+          />
+          
+            
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--account"
+          />
+          
+            
+        </button>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__middle"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <div
+          aria-label="Group label"
+          class="fd-segmented-button"
+          role="group"
+        >
+          
+                
+          <button
+            aria-label="button"
+            aria-pressed="true"
+            class="fd-button fd-button--compact"
+          >
+            
+                    
+            <i
+              class="sap-icon--email"
+            />
+            
+                
+          </button>
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact"
+          >
+            
+                    
+            <i
+              class="sap-icon--iphone"
+            />
+            
+                
+          </button>
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact"
+          >
+            
+                    
+            <i
+              class="sap-icon--notification-2"
+            />
+            
+                
+          </button>
+          
+            
+        </div>
         
         
       </div>
@@ -940,8 +1582,175 @@ exports[`Storyshots Components/Bar Bar As Subheader 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact sap-icon--grid"
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--grid"
+          />
+          
+            
+        </button>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+  <div
+    class="fd-bar fd-bar--subheader"
+  >
+    
+    
+    <div
+      class="fd-bar__middle"
+    >
+      
+        
+      <div
+        class="fd-bar__element fd-bar__element--full-width"
+      >
+        
+            
+        <input
+          aria-label="input"
+          class="fd-input fd-input--compact fd-input-group__input"
+          id=""
+          name=""
+          type="text"
+          value="1234568910 "
         />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Bar Subheader 1`] = `
+<section>
+  
+
+  <div>
+    <b>
+      Default (desktop)
+    </b>
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-bar fd-bar--subheader"
+  >
+    
+    
+    <div
+      class="fd-bar__left"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-left-arrow"
+          />
+          
+            
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
+                
+          <i
+            class="sap-icon--home"
+          />
+          
+            
+        </button>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__right"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <span
+          aria-label="Image label"
+          class="fd-image--s"
+          style="background-image: url('https://placeimg.com/400/400/nature');"
+        >
+          
+            
+        </span>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--compact fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--grid"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -997,20 +1806,44 @@ exports[`Storyshots Components/Bar Bar As Subheader 1`] = `
             <button
               aria-label="button"
               aria-pressed="true"
-              class="fd-button fd-button--compact sap-icon--email"
-            />
+              class="fd-button fd-button--compact"
+            >
+              
+                        
+              <i
+                class="sap-icon--email"
+              />
+              
+                    
+            </button>
             
                     
             <button
               aria-label="button"
-              class="fd-button fd-button--compact sap-icon--iphone"
-            />
+              class="fd-button fd-button--compact"
+            >
+              
+                        
+              <i
+                class="sap-icon--iphone"
+              />
+              
+                    
+            </button>
             
                     
             <button
               aria-label="button"
-              class="fd-button fd-button--compact sap-icon--notification-2"
-            />
+              class="fd-button fd-button--compact"
+            >
+              
+                        
+              <i
+                class="sap-icon--notification-2"
+              />
+              
+                    
+            </button>
             
                 
           </div>
@@ -1108,8 +1941,16 @@ exports[`Storyshots Components/Bar Bar As Subheader 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--compact fd-button--transparent sap-icon--navigation-right-arrow"
-        />
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-right-arrow"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -1122,8 +1963,16 @@ exports[`Storyshots Components/Bar Bar As Subheader 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--compact fd-button--transparent sap-icon--home"
-        />
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
+                
+          <i
+            class="sap-icon--home"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -1162,8 +2011,16 @@ exports[`Storyshots Components/Bar Bar As Subheader 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--compact fd-button--transparent sap-icon--grid"
-        />
+          class="fd-button fd-button--compact fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--grid"
+          />
+          
+            
+        </button>
         
         
       </div>
@@ -1176,485 +2033,4 @@ exports[`Storyshots Components/Bar Bar As Subheader 1`] = `
   
 
 </section>
-`;
-
-exports[`Storyshots Components/Bar Desktop 1`] = `
-<section>
-  
-
-  <div
-    class="fd-bar"
-  >
-    
-    
-    <div
-      class="fd-bar__left"
-    >
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
-        />
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <span
-          aria-label="text"
-        >
-          TEXT
-        </span>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-    
-    <div
-      class="fd-bar__middle"
-    >
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <div
-          aria-label="Group label"
-          class="fd-segmented-button"
-          role="group"
-        >
-          
-                
-          <button
-            aria-label="button"
-            aria-pressed="true"
-            class="fd-button fd-button--compact sap-icon--email"
-          />
-          
-                
-          <button
-            aria-label="button"
-            class="fd-button fd-button--compact sap-icon--iphone"
-          />
-          
-                
-          <button
-            aria-label="button"
-            class="fd-button fd-button--compact sap-icon--notification-2"
-          />
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-    
-    <div
-      class="fd-bar__right"
-    >
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <span
-          aria-label="Image label"
-          class="fd-image--s"
-          style="background-image: url('https://placeimg.com/400/400/nature');"
-        >
-          
-            
-        </span>
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--grid"
-        />
-        
-        
-      </div>
-      
-    
-    </div>
-    
-
-  </div>
-  
-
-  <br />
-  <br />
-  
-
-  <div>
-    <b>
-      RTL Support
-    </b>
-  </div>
-  
-
-  <br />
-    
-
-  <div
-    class="fd-bar"
-    dir="rtl"
-  >
-    
-    
-    <div
-      class="fd-bar__left"
-    >
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"
-        />
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-          
-        <span
-          aria-label="text"
-        >
-          TEXT
-        </span>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-    
-    <div
-      class="fd-bar__middle"
-    >
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <div
-          aria-label="Group label"
-          class="fd-segmented-button"
-          role="group"
-        >
-          
-                
-          <button
-            aria-label="button"
-            aria-pressed="true"
-            class="fd-button fd-button--compact sap-icon--email"
-          />
-          
-                
-          <button
-            aria-label="button"
-            class="fd-button fd-button--compact sap-icon--iphone"
-          />
-          
-                
-          <button
-            aria-label="button"
-            class="fd-button fd-button--compact sap-icon--notification-2"
-          />
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-    
-    <div
-      class="fd-bar__right"
-    >
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <span
-          aria-label="Image label"
-          class="fd-image--s"
-          style="background-image: url('https://placeimg.com/400/400/nature');"
-        >
-          
-            
-        </span>
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--grid"
-        />
-        
-        
-      </div>
-      
-    
-    </div>
-    
-
-  </div>
-  
-
-</section>
-`;
-
-exports[`Storyshots Components/Bar Header With Subheader 1`] = `
-<section>
-  
-
-  <div>
-    <b>
-      Default (desktop)
-    </b>
-  </div>
-  
-
-  <br />
-  
-
-  <div
-    class="fd-bar fd-bar--header-with-subheader"
-  >
-    
-    
-    <div
-      class="fd-bar__left"
-    >
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
-        />
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--home"
-        />
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--account"
-        />
-        
-        
-      </div>
-      
-    
-    </div>
-    
-    
-    <div
-      class="fd-bar__middle"
-    >
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <div
-          aria-label="Group label"
-          class="fd-segmented-button"
-          role="group"
-        >
-          
-                
-          <button
-            aria-label="button"
-            aria-pressed="true"
-            class="fd-button fd-button--compact sap-icon--email"
-          />
-          
-                
-          <button
-            aria-label="button"
-            class="fd-button fd-button--compact sap-icon--iphone"
-          />
-          
-                
-          <button
-            aria-label="button"
-            class="fd-button fd-button--compact sap-icon--notification-2"
-          />
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-    
-    <div
-      class="fd-bar__right"
-    >
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <span
-          aria-label="Image label"
-          class="fd-image--s"
-          style="background-image: url('https://placeimg.com/400/400/nature');"
-        >
-          
-            
-        </span>
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent sap-icon--grid"
-        />
-        
-        
-      </div>
-      
-    
-    </div>
-    
-
-  </div>
-  
-
-  <div
-    class="fd-bar fd-bar--subheader"
-  >
-    
-    
-    <div
-      class="fd-bar__middle"
-    >
-      
-        
-      <div
-        class="fd-bar__element fd-bar__element--full-width"
-      >
-        
-            
-        <input
-          aria-label="input"
-          class="fd-input fd-input--compact fd-input-group__input"
-          id=""
-          name=""
-          type="text"
-          value="1234568910 "
-        />
-        
-        
-      </div>
-      
-    
-    </div>
-    
-
-  </div>
-  
-
-</section>
-`;
-
-exports[`Storyshots Components/Bar Tablet And Mobile 1`] = `
-
-
 `;
