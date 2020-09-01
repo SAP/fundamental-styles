@@ -1,6 +1,7 @@
 // These mixins ensure that all state selectors — ARIA, pseudos, `is` fallbacks — get applied properly.
 
 // ACTIVE state (press and hold)
+
 @mixin fd-active {
   &:active,
   &.is-active {
@@ -30,6 +31,7 @@
 
 // Newer FOCUS state which follows fiori3 spec (tab onto, click into)
 // `.is-focus` is for demo purposes
+
 @mixin fd-fiori-focus($offset: -0.1875rem) {
   &:focus,
   &.is-focus {
@@ -53,7 +55,9 @@
 }
 
 // HOVER state (mouseover)
+
 // `.is-hover` is for demo purposes
+
 @mixin fd-hover {
   &:hover,
   &.is-hover {
@@ -62,7 +66,9 @@
 }
 
 // Empty state
+
 // `.is-empty` is when empty state can't be applied, because of some internal framework comments
+
 @mixin fd-empty {
   &:empty,
   &.is-empty {
