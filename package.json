@@ -50,7 +50,7 @@
     "@storybook/addon-actions": "6.0.20",
     "@storybook/addon-cssresources": "6.0.20",
     "@storybook/addon-docs": "6.0.20",
-    "@storybook/addon-knobs": "6.0.20",
+    "@storybook/addon-knobs": "6.0.21",
     "@storybook/addon-links": "6.0.20",
     "@storybook/addon-storyshots": "6.0.20",
     "@storybook/addon-storyshots-puppeteer": "6.0.20",
