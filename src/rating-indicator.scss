@@ -17,6 +17,8 @@ $block: #{$fd-namespace}-rating-indicator;
   $fd-rating-indicator-default-size: map-get($fd-rating-indicator-sizes, 'm');
   $fd-rating-indicator-default-font-size: map_get($fd-rating-indicator-default-size, "fontSize");
   $fd-rating-indicator-default-spacing-between-icons: map_get($fd-rating-indicator-default-size, "spacingBetweenIcons");
+  $fd-rating-indicator-default-spacing-between-icons: map_get($fd-rating-indicator-default-size, "spacingBetweenIcons");
+  $fd-rating-indicator-dynamic-text-space: 0.5rem;
 
   @mixin fd-rating-indicator-with-half-star($iconFontSize, $spacingBetweenIcons) {
     .#{$block}__input {
@@ -30,6 +32,19 @@ $block: #{$fd-namespace}-rating-indicator;
       &:nth-child(4n+4) {
         margin-right: $spacingBetweenIcons;
         justify-content: flex-end;
+
+        @include fd-rtl() {
+          margin-right: 0;
+          margin-left: $spacingBetweenIcons;
+
+          &:last-child {
+            margin-left: 0;
+          }
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
       }
 
       overflow: hidden;
@@ -105,7 +120,7 @@ $block: #{$fd-namespace}-rating-indicator;
 
     font-size: var(--sapFontSmallSize);
     color: var(--sapContent_LabelColor);
-    margin-left: 0.5rem;
+    margin-left: $fd-rating-indicator-dynamic-text-space;
   }
 
   &__hide-dynamic-text {
@@ -121,12 +136,16 @@ $block: #{$fd-namespace}-rating-indicator;
 
     .#{$block}__label {
       float: right;
+
+      &:last-child {
+        margin-right: $fd-rating-indicator-default-spacing-between-icons;
+      }
     }
 
     .fd-rating-indicator__dynamic-text,
     .#{$block}___dynamic-text {
       margin-left: 0;
-      margin-right: 0.5rem;
+      margin-right: $fd-rating-indicator-dynamic-text-space;
     }
   }
 
@@ -221,6 +240,12 @@ $block: #{$fd-namespace}-rating-indicator;
 
         &:last-child {
           margin-right: 0;
+        }
+
+        @include fd-rtl() {
+          &:last-child {
+            margin-right: $fd-rating-indicator-sizes-spacing-between-icons;
+          }
         }
       }
 
