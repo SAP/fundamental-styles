@@ -54,7 +54,7 @@
     "@storybook/addon-links": "6.0.20",
     "@storybook/addon-storyshots": "6.0.20",
     "@storybook/addon-storyshots-puppeteer": "6.0.20",
-    "@storybook/addon-viewport": "6.0.20",
+    "@storybook/addon-viewport": "6.0.21",
     "@storybook/addons": "6.0.20",
     "@storybook/html": "6.0.20",
     "@storybook/preset-scss": "^1.0.2",
