@@ -1035,7 +1035,7 @@ export const PortraitMobile = () => `
                     </div>
                     <div class="fd-calendar__navigation">
                         <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                            <button type="button" class="fd-button fd-button--transparent" aria-label="Previous"></button>
+                            <button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
                                 <i class="sap-icon--slim-arrow-left"></i>
                             </button>
                         </div>
