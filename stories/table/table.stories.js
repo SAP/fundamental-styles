@@ -343,7 +343,7 @@ export const focusableRows = () => `
     <h4 style="margin: 0;">Table With Focusable Rows</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
-<table class="fd-table">
+<table class="fd-table" role="grid">
     <thead class="fd-table__header">
         <tr class="fd-table__row fd-table__row--focusable" tabindex="-1">
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -355,25 +355,25 @@ export const focusableRows = () => `
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row fd-table__row--focusable" tabindex="-1">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Middle Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell" role="gridcell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell" role="gridcell">First Name</td>
+            <td class="fd-table__cell" role="gridcell">Middle Name</td>
+            <td class="fd-table__cell" role="gridcell">Last Name</td>
+            <td class="fd-table__cell" role="gridcell">01/26/17</td>
         </tr>
         <tr class="fd-table__row fd-table__row--focusable" tabindex="-1">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Middle Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell" role="gridcell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell" role="gridcell">First Name</td>
+            <td class="fd-table__cell" role="gridcell">Middle Name</td>
+            <td class="fd-table__cell" role="gridcell">Last Name</td>
+            <td class="fd-table__cell" role="gridcell">01/26/17</td>
         </tr>
         <tr class="fd-table__row fd-table__row--focusable" tabindex="-1">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Middle Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell" role="gridcell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell" role="gridcell">First Name</td>
+            <td class="fd-table__cell" role="gridcell">Middle Name</td>
+            <td class="fd-table__cell" role="gridcell">Last Name</td>
+            <td class="fd-table__cell" role="gridcell">01/26/17</td>
         </tr>
     </tbody>
 </table>
@@ -389,37 +389,37 @@ export const focusableCells = () => `
     <h4 style="margin: 0;">Table With Focusable Cells</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
-<table class="fd-table">
+<table class="fd-table" role="grid">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1" scope="col">Column Header</th>
-            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1" scope="col">Column Header</th>
+            <th class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1" scope="col">Column Header</th>
+            <th class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1" scope="col">Column Header</th>
+            <th class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1" scope="col">Column Header</th>
+            <th class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1" scope="col">Column Header</th>
+            <th class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1" scope="col">Column Header</th>
         </tr>
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">First Name</td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">Middle Name</td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">Last Name</td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">01/26/17</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">First Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Middle Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Last Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">First Name</td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">Middle Name</td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">Last Name</td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">01/26/17</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">First Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Middle Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Last Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">First Name</td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">Middle Name</td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">Last Name</td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">01/26/17</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">First Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Middle Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Last Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">01/26/17</td>
         </tr>
     </tbody>
 </table>
