@@ -277,6 +277,10 @@ $block: #{$fd-namespace}-table;
     &--activable {
       @include fd-trigger-element();
     }
+
+    &--focusable {
+      @include fd-fiori-focus();
+    }
   }
 
   &__footer {
