@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.36...v0.12.0-rc.37) (2020-09-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* * fix: remove scope attribute from td
+
+* feat: focusable styles for table rows and cells
+
+* fix: grid roles
+
+* fix: typo
+
+### Features
+
+* focusable table cells and rows ([#1563](https://github.com/SAP/fundamental-styles/issues/1563)) ([6967e56](https://github.com/SAP/fundamental-styles/commit/6967e561bb1ced4ec7a838474fc5af10991c3a85))
+
 ## [0.12.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.35...v0.12.0-rc.36) (2020-09-02)
 
 ## [0.12.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.34...v0.12.0-rc.35) (2020-09-01)
