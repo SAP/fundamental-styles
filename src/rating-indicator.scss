@@ -256,6 +256,7 @@ $block: #{$fd-namespace}-rating-indicator;
 
   // BLOCK MODIFIERS ************
   // sizes
+
   @each $set-name, $size-set in $fd-rating-indicator-sizes {
     $fd-rating-indicator-sizes-font-size: map_get($size-set, "fontSize");
     $fd-rating-indicator-sizes-spacing-between-icons: map_get($size-set, "spacingBetweenIcons");
