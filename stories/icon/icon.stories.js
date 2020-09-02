@@ -9,9 +9,16 @@ import data from './data.json';
 export default {
     title: 'Components/Icon',
     parameters: {
-        description: `Icons are used throughout the UI to save space, allow for visual clarity and focus, and for fun.
-        Icons can be used adaptively if desired, but at this point they are used more as visual elements within other components.
-        See [Getting Started](../getting-started.html#project-configuration) for instructions for making the SAP icon font available on your page.`,
+        description: `Icons are used to provide visual clarity, save screen space, and help guide users as they navigate an application. They can be used adaptively if desired, but they are more often used as visual elements within other components. See [Getting Started](../getting-started.html#project-configuration) for instructions on how to use the SAP icon font on your page.
+
+##Usage
+**Use the icon if:**
+
+- You want to display an icon for illustrative purposes only, without interaction states, acting as a non-interactive icon/pictogram. 
+
+
+Note: If an icon needs to be selected or have any interaction states, it is recommended to use the transparent button style. See **Button** for more details on how to implement it.
+          `,
         tags: ['development']
     }
 };
@@ -28,7 +35,7 @@ export const sizes = () => `
 sizes.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'Icons do not have predefined size options. They take the font size value for it. This give unlimited options for sizes.'
+        storyDescription: 'Icons don’t have predefined sizes because they align with the font size value. They are vector graphics, meaning they can be easily resized without compromising their appearance. And because icons are essentially a font, there are unlimited sizes.'
     }
 };
 
@@ -48,6 +55,7 @@ export const availableIcons = () => {
 
 availableIcons.parameters = {
     docs: {
-        iframeHeight: 200
+        iframeHeight: 200,
+        storyDescription: 'There are several icons available. To display any one of these icons, add the <code>sap-icon--{icon-name}</code> modifier class identifying the icon style to the <code>sap-icon</code> class. For example, for a search icon, add <code>sap-icon sap-icon--search</code> with the desired font size value.'
     }
 };
