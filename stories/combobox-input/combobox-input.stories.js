@@ -131,6 +131,92 @@ cozyAndCompact.parameters = {
     }
 };
 
+export const asFormItem = () =>`
+<div style="height:700px">
+    <div class="fd-form-item">
+        <label class="fd-form-label">Combobox as a form item</label>
+        <div class="fd-popover">
+            <div class="fd-popover__control" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="true">
+                <div class="fd-input-group fd-input-group--control">
+                    <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Fruit">
+                    <span class="fd-input-group__addon fd-input-group__addon--button">
+                        <button
+                            aria-controls="F4GcX348"
+                            aria-expanded="true"
+                            aria-haspopup="true"
+                            class="fd-input-group__button fd-button fd-button--transparent sap-icon--navigation-down-arrow"
+                        ></button>
+                    </span>
+                </div>
+            </div>
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX348">
+                <div class="fd-popover__wrapper docs-max-height">
+                    <ul class="fd-list fd-list--dropdown" role="listbox">
+                        <li role="option" tabindex="0" class="fd-list__item is-selected">
+                            <span class="fd-list__title">
+                                <span class="fd-list__bold">App</span>le
+                            </span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Orange</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Banana</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Kiwi</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Nectarine</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Apricots</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Peache</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Plum</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Mango</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Strawberry</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Blueberry</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Watermelon</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Rockmelon</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Honeydew</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Apple</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+`;
+
+asFormItem.parameters = {
+    docs: {
+        iframeHeight: 700,
+        storyDescription: `
+Note that the popover body width is restricted to a max of 37.5rem to avoid readability issues in large-width popovers.
+Applications are free to override this in their custom styles if needed and own any readability issues arising from this override.
+`
+    }
+};
+
 export const twoItemsAndItemsGrouping = () => `
 <div style="height:500px">
     <div style="display:flex;justify-content:space-around">
