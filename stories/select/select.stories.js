@@ -19,55 +19,55 @@ export default {
 export const cozy = () => `
 <div style="height: 200px">
     <div class="fd-popover">
-    <div class="fd-popover__control">
-        <div class="fd-select">
-            <div
-                aria-controls="h031XCM5"
-                aria-expanded="false"
-                aria-haspopup="listbox"
-                class="fd-select__control"
-                onclick="onControlClick('h0C6A325');"
-                role="combobox"
-                tabindex="0">
-                <span class="fd-select__text-content">Select</span>
-                <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i> 
-                </span>
+        <div class="fd-popover__control">
+            <div class="fd-select">
+                <div
+                    aria-controls="h031XCM5"
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    class="fd-select__control"
+                    onclick="onControlClick('h0C6A325');"
+                    role="combobox"
+                    tabindex="0">
+                    <span class="fd-select__text-content">Select</span>
+                    <span class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down"></i> 
+                    </span>
+                </div>
             </div>
         </div>
-    </div>
-    <div
-        aria-hidden="true"
-        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
-        id="h0C6A325">
-        <ul
-            aria-labelledby="f45564A57"
-            class="fd-list fd-list--dropdown"
-            role="listbox"
-            id="h031XCM5">
-            <li aria-selected="true"
-                class="fd-list__item is-selected"
-                role="option"
-                tabindex="0">
-            <span class="fd-list__title">List item 1</span>
+        <div
+            aria-hidden="true"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+            id="h0C6A325">
+            <ul
+                aria-labelledby="f45564A57"
+                class="fd-list fd-list--dropdown"
+                role="listbox"
+                id="h031XCM5">
+                <li aria-selected="true"
+                    class="fd-list__item is-selected"
+                    role="option"
+                    tabindex="0">
+                <span class="fd-list__title">List item 1</span>
+                </li>
+                <li class="fd-list__item"
+                    role="option"
+                    tabindex="-1">
+                <span class="fd-list__title">List item 2</span>
             </li>
-            <li class="fd-list__item"
-                role="option"
-                tabindex="-1">
-            <span class="fd-list__title">List item 2</span>
-        </li>
-            <li class="fd-list__item"
-                role="option"
-                tabindex="-1">
-            <span class="fd-list__title">List item 3</span>
-            </li>
-            <li class="fd-list__item"
-                role="option"
-                tabindex="-1">
-            <span class="fd-list__title">List item 4</span>
-            </li>
-        </ul>
-    </div>
+                <li class="fd-list__item"
+                    role="option"
+                    tabindex="-1">
+                <span class="fd-list__title">List item 3</span>
+                </li>
+                <li class="fd-list__item"
+                    role="option"
+                    tabindex="-1">
+                <span class="fd-list__title">List item 4</span>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 `;
@@ -79,41 +79,113 @@ cozy.parameters = {
 export const compact = () => `
 <div style="height: 200px">
     <div class="fd-popover">
-    <div class="fd-popover__control">
-        <div class="fd-select fd-select--compact">
-            <div onclick="onControlClick('h0C6A326');" class="fd-select__control" role="combobox" tabindex="0" aria-controls="h037CLM5" aria-expanded="false" aria-haspopup="listbox">
-                <span class="fd-select__text-content">Select</span>
-                <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
-                </span>
+        <div class="fd-popover__control">
+            <div class="fd-select fd-select--compact">
+                <div onclick="onControlClick('h0C6A326');" class="fd-select__control" role="combobox" tabindex="0" aria-controls="h037CLM5" aria-expanded="false" aria-haspopup="listbox">
+                    <span class="fd-select__text-content">Select</span>
+                    <span class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </span>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h0C6A326">
-        <ul tabIndex="-1" aria-labelledby="f45564A58" class="fd-list fd-list--dropdown fd-list--compact" role="listbox" id="h037CLM5">
-            <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
-            <span class="fd-list__title">
-                Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text
-                Very long text, Very long text, Very long text
-            </span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">List item 2</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">List item 3</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">List item 4</span>
-            </li>
-        </ul>
-    </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h0C6A326">
+            <ul tabIndex="-1" aria-labelledby="f45564A58" class="fd-list fd-list--dropdown fd-list--compact" role="listbox" id="h037CLM5">
+                <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
+                <span class="fd-list__title">
+                    Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text
+                    Very long text, Very long text, Very long text
+                </span>
+                </li>
+                <li class="fd-list__item" role="option" tabindex="-1">
+                <span class="fd-list__title">List item 2</span>
+                </li>
+                <li class="fd-list__item" role="option" tabindex="-1">
+                <span class="fd-list__title">List item 3</span>
+                </li>
+                <li class="fd-list__item" role="option" tabindex="-1">
+                <span class="fd-list__title">List item 4</span>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 `;
 
 compact.parameters = {
     docs: { iframeHeight: 300 }
+};
+
+export const asFormItem = () =>`
+<div style="height:310px">
+    <div class="fd-form-item">
+        <div class="fd-popover">
+            <div class="fd-popover__control">
+                <div class="fd-select">
+                    <div
+                        aria-controls="h031TOM5"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        class="fd-select__control"
+                        onclick="onControlClick('h0C6B625');"
+                        role="combobox"
+                        tabindex="0">
+                        <span class="fd-select__text-content">Select</span>
+                        <span class="fd-button fd-button--transparent fd-select__button">
+                            <i class="sap-icon--slim-arrow-down"></i> 
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div
+                aria-hidden="true"
+                class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+                id="h0C6B625">
+                <ul
+                    aria-labelledby="f45564A57"
+                    class="fd-list fd-list--dropdown"
+                    role="listbox"
+                    id="h031TOM5">
+                    <li aria-selected="true"
+                        class="fd-list__item is-selected"
+                        role="option"
+                        tabindex="0">
+                    <span class="fd-list__title">
+                        List item 1 List item 1 List item 1 List item 1 List item 1 List item 1
+                        List item 1 List item 1 List item 1 List item 1 List item 1 List item 1
+                        List item 1 List item 1 List item 1 List item 1
+                    </span>
+                    </li>
+                    <li class="fd-list__item"
+                        role="option"
+                        tabindex="-1">
+                    <span class="fd-list__title">List item 2</span>
+                </li>
+                    <li class="fd-list__item"
+                        role="option"
+                        tabindex="-1">
+                    <span class="fd-list__title">List item 3</span>
+                    </li>
+                    <li class="fd-list__item"
+                        role="option"
+                        tabindex="-1">
+                    <span class="fd-list__title">List item 4</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+`;
+
+asFormItem.parameters = {
+    docs: {
+        iframeHeight: 900,
+        storyDescription: `
+Note that the popover body width is restricted to a max of 37.5rem to avoid readability issues in large-width popovers.
+Applications are free to override this in their custom styles if needed and own any readability issues arising from this override.
+`
+    }
 };
 
 /** The **Select** component can be customized by adding additional information in additional columns. */
