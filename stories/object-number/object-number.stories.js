@@ -4,8 +4,28 @@ import './custom.scss';
 export default {
     title: 'Components/Object Number',
     parameters: {
-        description: `The Object Number displays number and number unit properties for an object.
-        The number can be displayed using semantic colors to provide additional meaning about the object to the user.`
+        description: `
+An object number represents a numeric attribute of an object and its unit. The object number should be displayed with semantics to provide more insight to the user about the object's value.
+
+##Accessibility
+Make sure that the object number is properly described and semantically understandable. For instance, if the color is describing the object number as negative, ensure that it is accompanied by either an icon, label, unit or attribute. Color should not be the only way the value state of the object is conveyed to the user.
+
+##Usage
+**Use the object number if:**
+
+- You want to display the key number of an object.
+- You need to display one or more numeric attributes of an object (for example, for objects you want to compare).
+
+**Emphasize (bold) the object number if:**
+
+- You want to represent the key numeric attributes on the page.
+- It is being used as a line item status in a table.
+
+**Do not use the object number if:**
+
+- You want to display system messages.
+- They are for decorative purposes only.
+        `
     },
     tags: ['f3', 'theme']
 };
