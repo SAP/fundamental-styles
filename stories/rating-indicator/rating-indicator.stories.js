@@ -222,7 +222,7 @@ Sizes.parameters = {
     }
 };
 
-export const HalfSizes = () => `
+export const HalfValues = () => `
 <div class="example-container">
     <div class="fd-rating-indicator fd-rating-indicator--half-star">
         <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
@@ -261,18 +261,19 @@ export const HalfSizes = () => `
 </div>
 `;
 
-HalfSizes.parameters = {
+HalfValues.storyName = 'Half values';
+HalfValues.parameters = {
     docs: {
         storyDescription: `
-To make the rating indicator to use half star needs to be added class \`.fd-rating-indicator--half-star\` 
-to the \`fd-rating-indicator\` element.
+To display half values with the rating indicator i.e 2.5 stars, add the \`fd-rating-indicator--half-star\` 
+modifier class together with the \`fd-rating-indicator\` class.
 `
     }
 };
 
 export const CustomIcons = () => `
 <div class="example-container">
-    <div class="fd-rating-indicator is-icons"
+    <div class="fd-rating-indicator fd-rating-indicator--icon"
     style="--sapRating-indicator-icon-rated: url(${iconRated}); --sapRating-indicator-icon-unrated: url(${iconUnrated})">
         <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
             <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-icon-1" name="rating-icon" value="1">
@@ -295,6 +296,7 @@ export const CustomIcons = () => `
 </div>
 `;
 
+CustomIcons.storyName = 'Custom icons';
 CustomIcons.parameters = {
     docs: {
         storyDescription: `
@@ -329,14 +331,16 @@ export const ReadOnly = () => `
 </div>
 `;
 
+ReadOnly.storyName = 'Read-Only';
 ReadOnly.parameters = {
     docs: {
         storyDescription: `
 To make the rating indicator read-only, the \`[readonly]\` attribute needs to be added to all inputs. 
 Additionally, one of the selectors listed below needs to be added to the \`fd-rating-indicator\` element:
-\`.is-readonly\`
-\`aria-readonly="true"\`
-\`[readonly]\`
+
+- \`.is-readonly\`
+- \`aria-readonly="true"\`
+- \`[readonly]\`
 `
     }
 };
@@ -370,9 +374,10 @@ Disabled.parameters = {
         storyDescription: `
 To disable rating indicator, the \`[disable]\` attribute needs to be added to all inputs. 
 Additionally, one of the selectors listed below needs to be added to the \`fd-rating-indicator\` element:
-\`.is-disable\`
-\`aria-disable="true"\`
-\`[disable]\`
+
+- \`.is-disable\`
+- \`aria-disable="true"\`
+- \`[disable]\`
 `
     }
 };
@@ -401,6 +406,7 @@ export const DisplayMode = () => `
     </div>
 `;
 
+DisplayMode.storyName = 'Display mode';
 DisplayMode.parameters = {
     docs: {
         storyDescription: `
@@ -488,6 +494,7 @@ export const DifferentValues = () => `
     </div>
 `;
 
+DifferentValues.storyName = 'Different values';
 DifferentValues.parameters = {
     docs: {
         storyDescription: `
@@ -522,6 +529,7 @@ export const RTL = () => `
     </div>
 `;
 
+RTL.storyName = 'RTL';
 RTL.parameters = {
     docs: {
         storyDescription: 'The rating indicator can be displayed from right to left on the screen.'

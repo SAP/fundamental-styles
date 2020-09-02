@@ -56,7 +56,7 @@ $block: #{$fd-namespace}-rating-indicator;
       width: $iconFontSize / 2 !important;
     }
 
-    &.is-icons .#{$block}__label {
+    &.#{$block}--icon .#{$block}__label {
       @include fd-rtl() {
         background-position: right;
       }
@@ -232,7 +232,7 @@ $block: #{$fd-namespace}-rating-indicator;
     @include fd-rating-indicator-with-half-star($fd-rating-indicator-default-font-size, $fd-rating-indicator-default-spacing-between-icons);
   }
 
-  &.is-icons {
+  &.#{$block}--icon {
     .#{$block}__label {
       &::after,
       &::before {
@@ -296,7 +296,7 @@ $block: #{$fd-namespace}-rating-indicator;
         @include fd-rating-indicator-with-half-star($fd-rating-indicator-sizes-font-size, $fd-rating-indicator-sizes-spacing-between-icons);
       }
 
-      &.is-icons {
+      &.#{$block}--icon {
         .#{$block}__label {
           width: $fd-rating-indicator-default-font-size;
           height: $fd-rating-indicator-default-font-size;
