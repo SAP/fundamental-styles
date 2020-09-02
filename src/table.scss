@@ -113,6 +113,7 @@ $block: #{$fd-namespace}-table;
 
   &__cell {
     text-align: left;
+    text-shadow: var(--sapContent_TextShadow);
     height: $fd-table-cozy-cell-height;
     padding: 0 $fd-table-cell-padding;
     color: inherit;
